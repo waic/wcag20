@@ -410,17 +410,17 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-contrast">
               <head>最低限のコントラスト</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">画像化された文字</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
                   <p>
                     <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな画像化された文字には、少なくとも 3：1 のコントラスト比がある。</p>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像には、少なくとも 3：1 のコントラスト比がある。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">付随的：</emph> テキスト又は画像化された文字において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                    <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -432,17 +432,17 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-scale">
               <head>テキストのサイズ変更</head>
               <p role="v">
- コンテンツ又は機能を損なうことなく、<termref def="textdef">テキスト</termref>を<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。ただし、<termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">画像化された文字</termref>は除く。
+ コンテンツ又は機能を損なうことなく、<termref def="textdef">テキスト</termref>を<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。ただし、<termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">文字画像</termref>は除く。
               </p>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
-              <head>画像化された文字</head>
-              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的な表現が可能である場合は、<termref def="images-of-textdef">画像化された文字</termref>ではなく<termref def="textdef">テキスト</termref>を用いて情報を伝える。ただし、次に挙げる場合を除く：
+              <head>文字画像</head>
+              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的な表現が可能である場合は、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>を用いて情報を伝える。ただし、次に挙げる場合を除く：
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="bold">カスタマイズ可能：</emph> 画像化された文字が利用者の要求に応じて<termref def="visually-customizeddef">視覚的にカスタマイズ</termref>できる。</p>
+                    <emph role="bold">カスタマイズ可能：</emph> 文字画像が利用者の要求に応じて<termref def="visually-customizeddef">視覚的にカスタマイズ</termref>できる。</p>
                 </item>
                 <item>
                   <p>
@@ -459,17 +459,17 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast7">
               <head>より十分なコントラスト</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">画像化された文字</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
                   <p>
                     <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな画像化された文字には、少なくとも 4.5：1 のコントラスト比がある。</p>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像には、少なくとも 4.5：1 のコントラスト比がある。</p>
                 </item>
                 <item>
                     <p>
-                        <emph role="sc-handle">付随的：</emph> テキスト又は画像化された文字において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -514,8 +514,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </olist>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
-              <head>画像化された文字（例外なし）</head>
-              <p role="v"><termref def="images-of-textdef">画像化された文字</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で表現することが<termref def="essentialdef">必要不可欠</termref>である。</p>
+              <head>文字画像（例外なし）</head>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で表現することが<termref def="essentialdef">必要不可欠</termref>である。</p>
               <note>
                 <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
               </note>
@@ -1350,7 +1350,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p>キャプションは発話のみの字幕と似ているが、次の点において異なる。すなわち、キャプションは、発話コンテンツだけでなく、その番組の内容を理解するために必要となる、発話ではない音声情報と等価な内容も伝える。つまり、効果音、音楽、笑い声、話者の特定、位置なども含まれる。</p>
               <p>クローズド・キャプションは、プレーヤーによっては表示／非表示を切り替えることのできる等価物である。</p>
-              <p>オープン・キャプションは、非表示にすることのできないキャプションである。例えば、キャプションが<termref def="videodef">映像</termref>に埋め込まれた、視覚的に等価な<termref def="images-of-textdef">画像化された文字</termref>である場合がある。</p>
+              <p>オープン・キャプションは、非表示にすることのできないキャプションである。例えば、キャプションが<termref def="videodef">映像</termref>に埋め込まれた、視覚的に等価な<termref def="images-of-textdef">文字画像</termref>である場合がある。</p>
               <p>キャプションは、映像の伝えている情報を分かりにくくしたり遮ったりすべきではない。</p>
               <p>国によっては、キャプションはサブタイトル（字幕）と呼ばれている。</p>
               <p>
@@ -1594,7 +1594,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="images-of-textdef">
-          <label>画像化された文字</label>
+          <label>文字画像</label>
           <def><p>特定の視覚的効果を得るために非テキスト形式（例えば、画像）でレンダリングされたテキスト。</p>
             <note><p>これには、重要なその他の視覚的なコンテンツを含む画像の一部である<termref def="textdef">テキスト</termref>は含まれない。</p></note>
             <example><p>写真に写っている人の名札にある人名は含まれない。</p></example>
