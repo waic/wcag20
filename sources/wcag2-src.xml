@@ -918,7 +918,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
               <head>名前（name）・役割（role）及び値（value）</head>
-              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
+              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割（role）</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
               
               </p>
               <note>
@@ -1957,7 +1957,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="roledef">
-          <label>役割</label>
+          <label>役割（role）</label>
           <def>
             <p>ウェブコンテンツに含まれるコンポーネントの機能を、ソフトウェアが識別するために用いることができるテキスト又は数字。</p>
             <example>
