@@ -630,8 +630,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
             </div5>
             <div5 role="sc" id="time-limits-postponed">
-              <head>中断</head>
-              <p role="v"> 利用者が中断を延期又は抑制することができる。ただし、<termref def="emergencydef">緊急</termref>を要する中断は除く。</p>
+              <head>割り込み</head>
+              <p role="v"> 利用者が割り込みを延期又は抑制することができる。ただし、<termref def="emergencydef">緊急</termref>を要する割り込みは除く。</p>
             </div5>
             <div5 role="sc" id="time-limits-server-timeout">
               <head>再認証</head>
