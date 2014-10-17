@@ -265,7 +265,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">時間の経過に伴って変化するメディア：</emph> 非テキストコンテンツが、時間の経過に伴って変化するメディアであるとき、代替テキストは、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照のこと。）
+                    <emph role="sc-handle">時間依存メディア：</emph> 非テキストコンテンツが、時間に依存したメディアであるとき、代替テキストは、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照のこと。）
                   </p>
                 </item>
                 <item>
@@ -293,15 +293,15 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </div4>
         </div3>
         <div3 role="group1" id="media-equiv">
-          <head> 時間の経過に伴って変化するメディアには代替コンテンツを提供する。</head>
+          <head> 時間依存メディアには代替コンテンツを提供する。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
               <head>収録済の音声しか含まないメディア及び収録済の映像しか含まないメディア</head>
               <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く：</p>
               <ulist>
-                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと等価な情報を提供している。</p></item>
-                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間の経過に伴って変化するメディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと等価な情報を提供している。</p></item>
+                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと等価な情報を提供している。</p></item>
+                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと等価な情報を提供している。</p></item>
               </ulist>
             </div5>
             
@@ -313,7 +313,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-audio-desc">
                 <head>収録済の映像コンテンツの代替コンテンツ又は音声ガイド</head>
               <p role="i">
-<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声ガイド</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
+<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声ガイド</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
               </p>
             </div5>
           </div4>
@@ -347,10 +347,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-text-doc">
                 <head>収録済のメディアの代替コンテンツ</head>
               <p role="i">
-すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>を提供する。</p>
+すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>を提供する。</p>
             </div5><div5 role="sc" id="media-equiv-live-audio-only">
                 <head>ライブの音声しか含まないコンテンツの代替コンテンツ</head>
-                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアの代替コンテンツ</termref>を提供する。
+                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>を提供する。
               </p>
             </div5>
           </div4>
@@ -1224,9 +1224,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
           <gitem id="alt-time-based-mediadef">
-              <label>時間の経過に伴って変化するメディアに対する代替コンテンツ</label>
+              <label>時間依存メディアに対する代替コンテンツ</label>
               <def>
-                  <p>正しい順序で提供されている、時間の経過に伴って変化する視覚的及び聴覚的情報のテキストによる説明（トランスクリプト）を含み、時間の経過に伴って変化する情報のやりとりの結果を得る手段を提供する文書。 
+                  <p>正しい順序で提供されている、時間に依存する視覚的及び聴覚的情報のテキストによる説明（トランスクリプト）を含み、時間に依存する情報のやりとりの結果を得る手段を提供する文書。 
                   </p>
                   <note>
                       <p>同期したメディアのコンテンツを作るために用いられる脚本は、編集が終了した最終版の同期したメディアを正確に描写した脚本に修正されている場合だけ、この定義を満たす。</p>
@@ -1313,7 +1313,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="audio-onlydef">
           <label>音声しか含まない</label>
           <def>
-            <p><termref def="audiodef">音声</termref>のみを含んだ、時間の経過に伴って変化する表現（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
+            <p><termref def="audiodef">音声</termref>のみを含んだ、時間に依存する表現（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="blinksdef">
@@ -2082,7 +2082,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="synchronizedmediadef">
           <label>同期したメディア</label>
           <def>
-            <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間の経過に伴って変化するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
+            <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間に依存するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
 <termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされているものは除く。
             </p>
           </def>
@@ -2181,7 +2181,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem><gitem id="video-onlydef">
           <label>映像しか含まない</label>
           <def>
-            <p><termref def="videodef">映像</termref>しか含まない、時間の経過に伴って変化する表現（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
+            <p><termref def="videodef">映像</termref>しか含まない、時間に依存する表現（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
           </def>
         </gitem>
         <gitem id="viewportdef">
