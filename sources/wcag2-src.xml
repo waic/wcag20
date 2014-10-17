@@ -684,7 +684,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="navigation-mechanisms-refs">
               <head>文脈におけるリンクの目的</head>
               <p role="i">
-<termref def="linkpurposedef">それぞれのリンクの目的</termref>が、リンクのテキストだけから、又は<termref def="pdlinkcontextdef">プログラムが解釈可能なリンクの文脈</termref>をリンクのテキストとあわせたものから解釈できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
+それぞれの<termref def="linkpurposedef">リンクの目的</termref>が、リンクのテキストだけから、又は<termref def="pdlinkcontextdef">プログラムが解釈可能なリンクの文脈</termref>をリンクのテキストとあわせたものから解釈できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
           </div4>
           <div4 role="bp">
