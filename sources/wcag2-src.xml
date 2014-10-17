@@ -260,7 +260,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">コントロール、入力：</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">識別名</termref>を提供している。（コントロール及びユーザの入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照のこと。）
+                    <emph role="sc-handle">コントロール、入力：</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">名前（name）</termref>を提供している。（コントロール及びユーザの入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照のこと。）
                   </p>
                 </item>
                 <item>
@@ -918,7 +918,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
               <head>名前（name）・役割（role）及び値（value）</head>
-              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">識別名</termref>及び<termref def="roledef">役割</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
+              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
               
               </p>
               <note>
@@ -1662,7 +1662,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <note>
               <p>
-ラベルはすべての利用者に提示される。しかし、<termref def="namedef">識別名</termref>は隠されていて支援技術に対してだけ明らかにされる場合がある。多くの場合（すべてではないが）、識別名とラベルは同じである。
+ラベルはすべての利用者に提示される。しかし、<termref def="namedef">名前（name）</termref>は隠されていて支援技術に対してだけ明らかにされる場合がある。多くの場合（すべてではないが）、名前（name）とラベルは同じである。
               </p>
               <p>ラベルという用語は、HTML における label 要素だけに限定されない。
               </p>
@@ -1745,11 +1745,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="namedef">
-          <label>識別名</label>
+          <label>名前（name）</label>
           <def>
             <p>ソフトウェアがこれを用いて、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト</p>
             <note>
-              <p>識別名は隠されていて、支援技術に対してだけ明らかにされる場合もあるが、<termref def="labeldef">ラベル</termref>はすべての利用者に提示される。多くの場合（すべてではないが）、ラベルと識別名は同じである。
+              <p>名前（name）は隠されていて、支援技術に対してだけ明らかにされる場合もあるが、<termref def="labeldef">ラベル</termref>はすべての利用者に提示される。多くの場合（すべてではないが）、ラベルと名前（name）は同じである。
 
                 
               </p>
@@ -2166,7 +2166,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>ユーザインターフェース・コンポーネントには、スクリプトで生成されるコンポーネントやフォーム要素、リンクが含まれる。</p>
             </note>
             <example>
-              <p>アプレットには、コンテンツ内を行ごと、ウェブページごと、又はランダム・アクセスを行うために用いられる「コントロール」がある。これらには、いずれも識別名を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインターフェース・コンポーネント」となる。</p>
+              <p>アプレットには、コンテンツ内を行ごと、ウェブページごと、又はランダム・アクセスを行うために用いられる「コントロール」がある。これらには、いずれも名前（name）を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインターフェース・コンポーネント」となる。</p>
             </example>
           </def>
         </gitem>
