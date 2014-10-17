@@ -297,7 +297,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
-              <head>収録済の音声しか含まないメディア及び収録済の映像しか含まないメディア</head>
+              <head>音声のみ及び映像のみ（収録済）</head>
               <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く：</p>
               <ulist>
                   <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと等価な情報を提供している。</p></item>
@@ -306,12 +306,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             
             <div5 role="sc" id="media-equiv-captions">
-              <head>収録済の音声コンテンツのキャプション</head>
+              <head>キャプション（収録済）</head>
               <p role="i">
                 <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc">
-                <head>収録済の映像コンテンツの代替コンテンツ又は音声ガイド</head>
+                <head>音声解説、又はメディアの代替（収録済）</head>
               <p role="i">
 <termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声ガイド</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
               </p>
@@ -320,12 +320,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="bp">
             <head> </head>
             <div5 role="sc" id="media-equiv-real-time-captions">
-              <head>ライブの音声コンテンツのキャプション</head>
+              <head>キャプション（ライブ）</head>
               <p role="i">
                 <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="livedef">ライブ</termref>の<termref def="audiodef">音声</termref>コンテンツに対して<termref def="captionsdef">キャプション</termref>を提供する。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc-only">
-                <head>収録済の映像コンテンツの音声ガイド</head>
+                <head>音声解説（収録済）</head>
               <p role="i">
                 <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="audiodescdef">音声ガイド</termref>を提供する。
               </p>
@@ -334,22 +334,22 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head/>
             <div5 role="sc" id="media-equiv-sign">
-                <head>収録済の音声コンテンツの手話通訳</head>
+                <head>手話（収録済）</head>
               <p role="v">
                 <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="sign-languageinterpdef">手話通訳</termref>を提供する。
               </p>
             </div5>
             <div5 role="sc" id="media-equiv-extended-ad">
-                <head>収録済の映像コンテンツの拡張した音声ガイド</head>
+                <head>拡張音声解説（収録済）</head>
               <p role="i">
  前景音が、映像と同等の意味を伝達する<termref def="audiodescdef">音声ガイド</termref>を挿入するための十分な長さの（会話やナレーションの）合間を含まない場合、<termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="extended-addef">拡張した音声ガイド</termref>を提供する。</p>
             </div5>
             <div5 role="sc" id="media-equiv-text-doc">
-                <head>収録済のメディアの代替コンテンツ</head>
+                <head>メディアの代替（収録済）</head>
               <p role="i">
 すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>を提供する。</p>
             </div5><div5 role="sc" id="media-equiv-live-audio-only">
-                <head>ライブの音声しか含まないコンテンツの代替コンテンツ</head>
+                <head>音声のみ（ライブ）</head>
                 <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>を提供する。
               </p>
             </div5>
@@ -397,7 +397,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </note>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-dis-audio">
-              <head>音声制御</head>
+              <head>音声の制御</head>
               <p role="v">
  ウェブページ上にある音声が自動的に再生され、その音声が3秒より長く続く場合、その音声を一時停止又は停止する<termref def="mechanismdef">メカニズム</termref>、もしくはシステム全体の音量レベルに影響を与えずに音量レベルを調整できるメカニズムを提供する。</p>
               <note>
@@ -408,7 +408,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="visual-audio-contrast-contrast">
-              <head>最低限のコントラスト</head>
+              <head>コントラスト（最低限）</head>
               <p role="v">
                 <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
               </p>
@@ -457,7 +457,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="visual-audio-contrast7">
-              <head>より十分なコントラスト</head>
+              <head>コントラスト（高度）</head>
               <p role="v">
                 <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
               </p>
@@ -480,7 +480,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
              
             </div5>
             <div5 role="sc" id="visual-audio-contrast-noaudio">
-              <head>小さい背景音又は背景音なし</head>
+              <head>小さな背景音又は背景音なし</head>
                 <p role="v"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツで、(1) 前景に主として発話を含み、(2) 音声<termref def="CAPTCHAdef">CAPTCHA</termref> 又は音声ロゴではなく、かつ、(3)例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
             	<ulist>
             		<item><p><emph role="sc-handle">背景音なし：</emph> 音声は背景音を含まない。</p></item>
@@ -493,7 +493,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             	</ulist>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
-              <head>視覚的な表現</head>
+              <head>視覚的な提示</head>
               <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>（テキストの一文より長いもの）の視覚的な表現には、次を実現する<termref def="mechanismdef">メカニズム</termref>を提供する：</p>
               <olist>
                 <item>
@@ -532,7 +532,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="keyboard-operation-keyboard-operable">
-              <head>キーボード操作</head>
+              <head>キーボード</head>
               <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボードインタフェース</termref>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による始点からの終点まで続く一連の軌跡に依存して実現されている場合は除く。</p>
               <note>
                 <p>上記の例外は、コンテンツの根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法（手書き）は利用者の動作による軌跡（例えば、手書き入力に用いるマウスの動き）に依存した入力を必要とするが、その根本的な機能（テキスト入力）は利用者の動作による軌跡に依存した入力を必要とするものではない。</p>
@@ -540,7 +540,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </note>
             </div5>
             <div5 role="sc" id="keyboard-operation-trapping">
-              <head>フォーカス移動</head>
+              <head>キーボードトラップなし</head>
               <p role="i"><termref def="keybrd-interfacedef">キーボード・インタフェース</termref>を用いてキーボード・フォーカスをそのウェブページのあるコンポーネントに移動できる場合、キーボード・インタフェースだけを用いてそのコンポーネントからフォーカスを外すことが可能である。さらに、その操作が修飾キーを伴わない矢印キー、修飾キーを伴わない Tab キー、又はフォーカスを外すその他の標準的な方法で可能な場合を除き、キーボード・フォーカスをそのコンポーネントから外す方法を利用者に知らせる。</p>
               <note>
                 <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
@@ -550,7 +550,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head/>
             <div5 role="sc" id="keyboard-operation-all-funcs">
-              <head>キーボード操作（例外なし）</head>
+              <head>キーボード（例外なし）</head>
               <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボード・インタフェース</termref>を通じて操作可能である。　　      </p>
             </div5>
           </div4>
@@ -562,7 +562,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="time-limits-required-behaviors">
-              <head>調整可能な制限時間</head>
+              <head>タイミング調整可能</head>
               <p role="i"> コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている：
 
               </p>
@@ -622,7 +622,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="time-limits-no-exceptions">
-              <head>制限時間なし</head>
+              <head>タイミングなし</head>
               <p role="v"> 制限時間が、コンテンツが提示するイベント又は動作の<termref def="essentialdef">必要不可欠</termref>な部分ではない。ただし、インタラクティブではない<termref def="synchronizedmediadef">同期したメディア</termref>及び
                 <termref def="real-time-eventsdef">リアルタイムのイベント</termref>は除く。
                 
@@ -682,7 +682,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順番にナビゲート</termref>できて、そのナビゲーション順序が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは意味及び操作性を保持した順序でフォーカスを受け取る。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-refs">
-              <head>文脈におけるリンクの目的</head>
+              <head>リンクの目的（文脈内）</head>
               <p role="i">
 それぞれの<termref def="linkpurposedef">リンクの目的</termref>が、リンクのテキストだけから、又は<termref def="pdlinkcontextdef">プログラムが解釈可能なリンクの文脈</termref>をリンクのテキストとあわせたものから解釈できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
@@ -690,7 +690,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="navigation-mechanisms-mult-loc">
-              <head>複数の到達手段</head>
+              <head>複数の手段</head>
               <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中からある<termref def="webpagedef">ウェブページ</termref>に到達することのできる複数の手段がある。ただし、ウェブページが<termref def="processdef">プロセス</termref>の結果又はプロセスの中の一つのステップである場合は除く。
 
 
@@ -703,7 +703,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
  見出し及び<termref def="labeldef">ラベル</termref>は、主題又は目的を説明している。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-focus-visible">
-              <head>視覚的に認識可能なフォーカス</head>
+              <head>フォーカスの可視化</head>
               <p role="v"> キーボード操作が可能なユーザインタフェースには、キーボード・フォーカスの状態が視覚的に認識できる操作モードがある。</p>
             </div5>
           </div4>
@@ -714,7 +714,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p role="i"><termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中での利用者の現在位置に関する情報が提供されている。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-link">
-              <head>リンクの目的</head>
+              <head>リンクの目的（リンクのみ）</head>
               <p role="v">
  それぞれのリンクの目的がリンクのテキストだけから特定できる<termref def="mechanismdef">メカニズム</termref>が利用可能である。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
@@ -757,7 +757,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="bp">
             <head> </head>
             <div5 role="sc" id="meaning-other-lang-id">
-              <head>部分的に用いられている言語</head>
+              <head>一部分の言語</head>
               <p role="i"> コンテンツの一節又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。ただし、固有名詞、技術用語、どの言語なのか不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
 
 
@@ -783,7 +783,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 </p>
             </div5>
             <div5 role="sc" id="meaning-pronunciation">
-              <head>発音及び読み仮名</head>
+              <head>発音</head>
               <p role="v"> 文脈において、発音が分からないと単語の意味が不明瞭になる場合、その単語の特定の発音（読み仮名）を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。　
               </p>
             </div5>
@@ -796,13 +796,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="consistent-behavior-receive-focus">
-              <head>オン・フォーカス</head>
+              <head>フォーカス時</head>
               <p role="i"> いずれのコンポーネントも、フォーカスを受け取ったときに
 <termref def="context-changedef">状況の変化</termref>を引き起こさない。
               </p>
             </div5>
             <div5 role="sc" id="consistent-behavior-unpredictable-change">
-              <head>ユーザインタフェース・コンポーネントによる状況の変化</head>
+              <head>入力時</head>
               <p role="v"> 利用者が使用する前にその挙動を知らせてある場合を除いて、
                   <termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>
 の設定を変更することで<termref def="context-changedef">状況の変化</termref>を引き起こさない。
@@ -825,7 +825,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="consistent-behavior-no-extreme-changes-context">
-              <head>利用者の要求による状況の変化</head>
+              <head>要求による状況の変化</head>
               <p role="v">
                 <termref def="context-changedef">状況の変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用可能である。　</p>
             </div5>
@@ -838,13 +838,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="minimize-error-identified">
-              <head>入力エラー箇所の特定</head>
+              <head>エラーの特定</head>
               <p role="v"><termref def="input-errordef">入力エラー</termref>を自動的に発見された場合は、エラーとなっている箇所を特定し、そのエラーを利用者にテキストで説明する。
 
               </p>
             </div5>
             <div5 role="sc" id="minimize-error-cues">
-              <head>ラベル又は説明文</head>
+              <head>ラベル又は説明</head>
               <p role="v">
  コンテンツが利用者の入力を要求する場合は、入力箇所の<termref def="labeldef">ラベル</termref>又は入力方法についての説明文を提供する。</p>
             </div5>
@@ -852,11 +852,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="minimize-error-suggestions">
-              <head>入力エラー修正方法の提示</head>
+              <head>エラー修正の提案</head>
               <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に発見された場合は、その修正方法が明らかであれば、その方法を利用者に提示する。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
-              <head>法的義務・金銭的取引・データ変更・回答送信のエラー回避</head>
+              <head>エラー回避（法的、金融、データ）</head>
               <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法的な義務</termref>もしくは金銭的な取引が生じる、<termref def="user-controllabledef">利用者が自分で制御可能な</termref>データ・ストレージ・システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
               <olist>
                 <item>
@@ -882,7 +882,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用可能である。　</p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible-all">
-              <head>エラー回避に関する例外なし</head>
+              <head>エラー回避（すべて）</head>
               <p role="i"> 利用者に情報の送信を要求する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：
               </p>
               <olist>
@@ -917,7 +917,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </note>
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
-              <head>プログラムが解釈可能な識別名・役割及び設定可能な値</head>
+              <head>名前（name）・役割（role）及び値（value）</head>
               <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">識別名</termref>及び<termref def="roledef">役割</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
               
               </p>
