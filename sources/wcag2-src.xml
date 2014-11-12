@@ -336,7 +336,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-sign">
                 <head>手話（収録済）</head>
               <p role="v">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="sign-languageinterpdef">手話通訳</termref>を提供する。
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="sign-languageinterpdef">手話通訳</termref>が提供されている。
               </p>
             </div5>
             <div5 role="sc" id="media-equiv-extended-ad">
