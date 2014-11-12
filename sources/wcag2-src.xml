@@ -255,7 +255,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head> </head>
             <div5 role="sc" id="text-equiv-all">
               <head>非テキストコンテンツ</head>
-              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">代替テキスト</termref>を提供する。ただし、次の場合は除く：
+              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">代替テキスト</termref>が提供されている。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
