@@ -313,7 +313,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-audio-desc">
                 <head>音声解説、又はメディアの代替（収録済）</head>
               <p role="i">
-<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声ガイド</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
+<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声解説</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
               </p>
             </div5>
           </div4>
@@ -327,7 +327,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-audio-desc-only">
                 <head>音声解説（収録済）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="audiodescdef">音声ガイド</termref>を提供する。
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="audiodescdef">音声解説</termref>を提供する。
               </p>
             </div5>
           </div4>
@@ -342,7 +342,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-extended-ad">
                 <head>拡張音声解説（収録済）</head>
               <p role="i">
- 前景音が、映像と同等の意味を伝達する<termref def="audiodescdef">音声ガイド</termref>を挿入するための十分な長さの（会話やナレーションの）合間を含まない場合、<termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="extended-addef">拡張した音声ガイド</termref>を提供する。</p>
+ 前景音が、映像と同等の意味を伝達する<termref def="audiodescdef">音声解説</termref>を挿入するための十分な長さの（会話やナレーションの）合間を含まない場合、<termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="extended-addef">拡張した音声解説</termref>を提供する。</p>
             </div5>
             <div5 role="sc" id="media-equiv-text-doc">
                 <head>メディアの代替（収録済）</head>
@@ -1297,15 +1297,15 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="audiodescdef">
-          <label>音声ガイド</label>
+          <label>音声解説</label>
           <def>
             <p>主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。</p>
             <note>
               <p>
-<termref def="videodef">映像</termref>の音声ガイドは、動作やしぐさ、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
+<termref def="videodef">映像</termref>の音声解説は、動作やしぐさ、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
               </p>
-              <p>標準的な音声ガイドでは、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張した音声ガイド</termref>も参照のこと。）</p>
-              <p>すべての<termref def="videodef">映像</termref>の情報が既存の<termref def="audiodef">音声</termref>で提供されている場合、補足の音声ガイドは不要である。</p>
+              <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張した音声解説</termref>も参照のこと。）</p>
+              <p>すべての<termref def="videodef">映像</termref>の情報が既存の<termref def="audiodef">音声</termref>で提供されている場合、補足の音声解説は不要である。</p>
               <p>ビデオ説明や「説明ナレーション」とも呼ばれる。</p>
             </note>
           </def>
@@ -1354,7 +1354,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>キャプションは、映像の伝えている情報を分かりにくくしたり遮ったりすべきではない。</p>
               <p>国によっては、キャプションはサブタイトル（字幕）と呼ばれている。</p>
               <p>
-                <termref def="audiodescdef">音声ガイド</termref>は既に視覚的に提示されている情報の説明なので、キャプションにしてもよいが、そうする必要があるわけではない。</p>
+                <termref def="audiodescdef">音声解説</termref>は既に視覚的に提示されている情報の説明なので、キャプションにしてもよいが、そうする必要があるわけではない。</p>
               
             </note>
           </def>
@@ -1500,11 +1500,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="extended-addef">
-          <label>拡張した音声ガイド</label>
+          <label>拡張した音声解説</label>
           <def>
-            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚のプレゼンテーションに付加した音声ガイド。</p>
+            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚のプレゼンテーションに付加した音声解説。</p>
             <note>
-              <p>この達成方法は、追加の<termref def="audiodescdef">音声ガイド</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
+              <p>この達成方法は、追加の<termref def="audiodescdef">音声解説</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
             </note>
           </def>
         </gitem>
