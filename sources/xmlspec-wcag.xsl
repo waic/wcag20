@@ -1048,7 +1048,7 @@
     <xsl:choose>
     <!-- GL handles -->
 <xsl:when test="$handleid='text-equiv'">代替テキスト</xsl:when>
-<xsl:when test="$handleid='media-equiv'">時間の経過に伴って変化するメディア</xsl:when>
+<xsl:when test="$handleid='media-equiv'">時間依存メディア</xsl:when>
 <xsl:when test="$handleid='content-structure-separation'">適応可能</xsl:when>
 <xsl:when test="$handleid='visual-audio-contrast'">判別可能</xsl:when>
 <xsl:when test="$handleid='keyboard-operation'">キーボード操作可能</xsl:when>
