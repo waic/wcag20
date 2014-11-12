@@ -347,7 +347,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-text-doc">
                 <head>メディアの代替（収録済）</head>
               <p role="i">
-すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>を提供する。</p>
+すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>が提供されている。</p>
             </div5><div5 role="sc" id="media-equiv-live-audio-only">
                 <head>音声のみ（ライブ）</head>
                 <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>を提供する。
