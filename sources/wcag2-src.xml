@@ -322,7 +322,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-real-time-captions">
               <head>キャプション（ライブ）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="livedef">ライブ</termref>の<termref def="audiodef">音声</termref>コンテンツに対して<termref def="captionsdef">キャプション</termref>を提供する。</p>
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="livedef">ライブ</termref>の<termref def="audiodef">音声</termref>コンテンツに対して<termref def="captionsdef">キャプション</termref>が提供されている。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc-only">
                 <head>音声解説（収録済）</head>
