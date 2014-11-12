@@ -362,8 +362,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="content-structure-separation-programmatic">
               <head>情報及び関係性</head>
-              <p role="i"><termref def="presentationdef">提示</termref>を通じて伝達されている情報、
-<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。プログラムが解釈可能にすることができないウェブコンテンツ技術を用いる場合は、それらがテキストで提供されている。</p>
+              <p role="i"><termref def="presentationdef">提示</termref>されている情報、
+<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である、又はテキストで提供されている。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-sequence">
               <head>意味のある順序</head>
