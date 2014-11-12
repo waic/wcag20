@@ -300,8 +300,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>音声のみ及び映像のみ（収録済）</head>
               <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く：</p>
               <ulist>
-                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと等価な情報を提供している。</p></item>
-                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと等価な情報を提供している。</p></item>
+                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。</p></item>
+                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
               </ulist>
             </div5>
             
@@ -347,10 +347,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-text-doc">
                 <head>メディアの代替（収録済）</head>
               <p role="i">
-すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>が提供されている。</p>
+すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>が提供されている。
+</p>
             </div5><div5 role="sc" id="media-equiv-live-audio-only">
                 <head>音声のみ（ライブ）</head>
-                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>を提供する。
+                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと同等の情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>を提供する。
               </p>
             </div5>
           </div4>
@@ -1348,7 +1349,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報の両方に対する、同期した視覚的表現又は<termref def="text-altdef">代替テキスト</termref>。</p>
             <note>
-              <p>キャプションは発話のみの字幕と似ているが、次の点において異なる。すなわち、キャプションは、発話コンテンツだけでなく、その番組の内容を理解するために必要となる、発話ではない音声情報と等価な内容も伝える。つまり、効果音、音楽、笑い声、話者の特定、位置なども含まれる。</p>
+              <p>キャプションは発話のみの字幕と似ているが、次の点において異なる。すなわち、キャプションは、発話コンテンツだけでなく、その番組の内容を理解するために必要となる、発話ではない音声情報と同等の内容も伝える。つまり、効果音、音楽、笑い声、話者の特定、位置なども含まれる。</p>
               <p>クローズド・キャプションは、プレーヤーによっては表示／非表示を切り替えることのできる等価物である。</p>
               <p>オープン・キャプションは、非表示にすることのできないキャプションである。例えば、キャプションが<termref def="videodef">映像</termref>に埋め込まれた、視覚的に等価な<termref def="images-of-textdef">文字画像</termref>である場合がある。</p>
               <p>キャプションは、映像の伝えている情報を分かりにくくしたり遮ったりすべきではない。</p>
