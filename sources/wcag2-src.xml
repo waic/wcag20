@@ -367,7 +367,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="content-structure-separation-sequence">
               <head>意味のある順序</head>
-              <p role="i"> コンテンツが提供されている順序がその意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正確な読み上げ順序</termref>は<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。</p>
+              <p role="i"> コンテンツが提示されている順序が意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正しく読む順序</termref>を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-understanding">
               <head>感覚的な特徴</head>
@@ -1484,7 +1484,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="correct-reading-sequencedef">
-          <label>正確な音声読み上げ順序</label>
+          <label>正しく読む順序</label>
           <def>
             <p>コンテンツの意味を変更せずに、単語や段落が提示される順序。</p>
           </def>
