@@ -308,7 +308,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-captions">
               <head>キャプション（収録済）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。</p>
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc">
                 <head>音声解説、又はメディアの代替（収録済）</head>
