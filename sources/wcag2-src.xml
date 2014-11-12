@@ -362,7 +362,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="content-structure-separation-programmatic">
               <head>情報及び関係性</head>
-              <p role="i"><termref def="presentationdef">表現</termref>を通じて伝達されている情報、
+              <p role="i"><termref def="presentationdef">提示</termref>を通じて伝達されている情報、
 <termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。プログラムが解釈可能にすることができないウェブコンテンツ技術を用いる場合は、それらがテキストで提供されている。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-sequence">
@@ -394,7 +394,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 
               </p>
               <note>
-                <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的な表現のコーディングへのプログラムによるアクセスも含めて、<specref ref="content-structure-separation"/>で網羅されている。</p>
+                <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的な提示のコーディングへのプログラムによるアクセスも含めて、<specref ref="content-structure-separation"/>で網羅されている。</p>
               </note>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-dis-audio">
@@ -411,7 +411,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-contrast">
               <head>コントラスト（最低限）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な提示</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
@@ -438,7 +438,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
               <head>文字画像</head>
-              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的な表現が可能である場合は、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>を用いて情報を伝える。ただし、次に挙げる場合を除く：
+              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的な提示が可能である場合は、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>を用いて情報を伝える。ただし、次に挙げる場合を除く：
               </p>
               <ulist>
                 <item>
@@ -447,7 +447,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠：</emph> 文字の特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠：</emph> 文字の特定の提示が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
@@ -460,7 +460,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast7">
               <head>コントラスト（高度）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な提示</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
@@ -495,7 +495,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
               <head>視覚的な提示</head>
-              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>（テキストの一文より長いもの）の視覚的な表現には、次を実現する<termref def="mechanismdef">メカニズム</termref>を提供する：</p>
+              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>（テキストの一文より長いもの）の視覚的な提示には、次を実現する<termref def="mechanismdef">メカニズム</termref>を提供する：</p>
               <olist>
                 <item>
                   <p>利用者が、前景色と背景色を選択できる。</p>
@@ -516,7 +516,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
               <head>文字画像（例外なし）</head>
-              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で表現することが<termref def="essentialdef">必要不可欠</termref>である。</p>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で提示することが<termref def="essentialdef">必要不可欠</termref>である。</p>
               <note>
                 <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
               </note>
@@ -968,7 +968,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <p role="cc"><termref def="conformancedef">適合性</termref>（及び適合レベル）は<termref def="webpagedef">ウェブページ</termref>全体のみに対するものであり、ウェブページの一部が除外されている場合には認められない。
           </p>
           <note>
-            <p> 適合性を判断するときに、例えば、画像の詳細な説明又は映像の代替表現のように、代替コンテンツをそのウェブページから直接得られる場合は、ウェブページの一部のコンテンツに対する代替コンテンツをそのウェブページの一部であるとみなす。</p>
+            <p> 適合性を判断するときに、例えば、画像の詳細な説明又は映像の代替の提示のように、代替コンテンツをそのウェブページから直接得られる場合は、ウェブページの一部のコンテンツに対する代替コンテンツをそのウェブページの一部であるとみなす。</p>
             <p>コンテンツ制作者が制御できないコンテンツがあるために適合できないウェブページについては、<loc href="conformance-partial" linktype="guideline">部分適合に関する記述</loc>を行うことを検討するとよい。</p>
           </note>
         </div3>
@@ -1257,7 +1257,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <note>
               <p>
-支援技術が提供する機能としては、代替のプレゼンテーション（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
+支援技術が提供する機能としては、代替の提示（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
                 
               </p>
               <p>支援技術は、<abbr expansion="Application Programming Interfaces">API</abbr> を用いて監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
@@ -1314,7 +1314,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="audio-onlydef">
           <label>音声しか含まない</label>
           <def>
-            <p><termref def="audiodef">音声</termref>のみを含んだ、時間に依存する表現（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
+            <p><termref def="audiodef">音声</termref>のみを含んだ、時間に依存する提示（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="blinksdef">
@@ -1347,7 +1347,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem><gitem id="captionsdef">
           <label>キャプション</label>
           <def>
-            <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報の両方に対する、同期した視覚的表現又は<termref def="text-altdef">代替テキスト</termref>。</p>
+            <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報の両方に対する、同期した視覚的提示又は<termref def="text-altdef">代替テキスト</termref>。</p>
             <note>
               <p>キャプションは発話のみの字幕と似ているが、次の点において異なる。すなわち、キャプションは、発話コンテンツだけでなく、その番組の内容を理解するために必要となる、発話ではない音声情報と同等の内容も伝える。つまり、効果音、音楽、笑い声、話者の特定、位置なども含まれる。</p>
               <p>クローズド・キャプションは、プレーヤーによっては表示／非表示を切り替えることのできる等価物である。</p>
@@ -1449,7 +1449,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p>
 <termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報および感覚的な体験を指す。コンテンツの
 
-              <termref def="structuredef">構造</termref>、<termref def="presentationdef">表現</termref>、及びインタラクションを定義するソースコードやマークアップを含む。
+              <termref def="structuredef">構造</termref>、<termref def="presentationdef">提示</termref>、及びインタラクションを定義するソースコードやマークアップを含む。
             </p>
           </def>
         </gitem>
@@ -1480,7 +1480,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>達成基準 1.4.3 および 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。</p>
               <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、問題がある。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も問題がある。</p>
               <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。ただし、文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、かさ（暈：ハローや後光、ドロップシャドウ、光彩など）のようになって、文字の細かい字画を埋めていれば、背景色として考慮されることになる。</p>
-              <p>WCAG に適合しているか判断する場合は、典型的な表現において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる表現を考慮する必要はない。ただし、それが制作者のソースコードによって起こる場合は除く。</p>
+              <p>WCAG に適合しているか判断する場合は、典型的な提示において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる提示を考慮する必要はない。ただし、それが制作者のソースコードによって起こる場合は除く。</p>
             </note>
           </def>
         </gitem><gitem id="correct-reading-sequencedef">
@@ -1503,7 +1503,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="extended-addef">
           <label>拡張音声解説</label>
           <def>
-            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚のプレゼンテーションに付加した音声解説。</p>
+            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚の提示に付加した音声解説。</p>
             <note>
               <p>この達成方法は、追加の<termref def="audiodescdef">音声解説</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
             </note>
@@ -1740,7 +1740,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               
             </p>
             <note>
-              <p>テキストの代替メディアは、テキストの代替プレゼンテーションの恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
+              <p>テキストの代替メディアは、テキストの代替の提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
             </note>
           </def>
         </gitem>
@@ -1804,7 +1804,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>収録済</label>
           <def><p><termref def="livedef">ライブ</termref>ではない情報。</p></def>
         </gitem><gitem id="presentationdef">
-          <label>表現</label>
+          <label>提示</label>
           <def>
             <p>
               
@@ -2096,7 +2096,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <note>
               <p>このガイドラインで用いられている「ウェブ技術」および（単独で用いられている）「技術」という用語は、どちらもウェブコンテンツ技術を指す場合がある。</p>
-              <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で用いたり組み合わせて用いたりすることによって、静的なウェブページや同期したメディアによるプレゼンテーション、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
+              <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で用いたり組み合わせて用いたりすることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
               </p>
             </note>
             <example>
@@ -2182,7 +2182,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem><gitem id="video-onlydef">
           <label>映像しか含まない</label>
           <def>
-            <p><termref def="videodef">映像</termref>しか含まない、時間に依存する表現（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
+            <p><termref def="videodef">映像</termref>しか含まない、時間に依存する提示（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
           </def>
         </gitem>
         <gitem id="viewportdef">
