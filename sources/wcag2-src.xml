@@ -840,7 +840,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="minimize-error-identified">
               <head>エラーの特定</head>
-              <p role="v"><termref def="input-errordef">入力エラー</termref>を自動的に発見された場合は、エラーとなっている箇所を特定し、そのエラーを利用者にテキストで説明する。
+              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に発見された場合は、エラーとなっている箇所を特定し、そのエラーが利用者にテキストで説明される。
 
               </p>
             </div5>
