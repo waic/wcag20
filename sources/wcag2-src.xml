@@ -411,7 +411,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-contrast">
               <head>コントラスト（最低限）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な提示</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的な提示</phrase>では、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>が確保されている。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
