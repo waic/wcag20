@@ -722,7 +722,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="navigation-mechanisms-headings">
               <head>セクション見出し</head>
               <p role="v">
-                <termref def="sectiondef">セクション</termref>の見出しを用いてコンテンツを体系化している。
+                <termref def="sectiondef">セクション</termref>の見出しを用いてコンテンツが体系化されている。
                 
               </p>
               <note>
