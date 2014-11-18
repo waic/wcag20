@@ -250,7 +250,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <div2 role="principle" id="perceivable">
         <head>原則 1：知覚可能 - 情報及びユーザインタフェース・コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</head>
         <div3 role="group1" id="text-equiv">
-          <head>すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、代替テキストを提供する。</head>
+          <head>すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、代替テキストを提供すること。</head>
           <div4 role="req">
             <head> </head>
             <div5 role="sc" id="text-equiv-all">
@@ -293,7 +293,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </div4>
         </div3>
         <div3 role="group1" id="media-equiv">
-          <head> 時間依存メディアには代替コンテンツを提供する。</head>
+          <head> 時間依存メディアには代替コンテンツを提供すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
@@ -357,7 +357,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </div4>
         </div3>
         <div3 role="group1" id="content-structure-separation">
-          <head> 情報又は構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作する</head>
+          <head> 情報又は構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="content-structure-separation-programmatic">
@@ -383,7 +383,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="visual-audio-contrast">
           <head>
- コンテンツを、利用者にとって見やすくしたり聞きやすくしたりする。これには、前景と背景を区別することも含む。
+ コンテンツを、利用者にとって見やすくしたり聞きやすくしたりすること。これには、前景と背景を区別することも含む。
           </head>
           <div4 role="req">
             <head/>
@@ -528,7 +528,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <head>原則 2: 操作可能 - ユーザインタフェース・コンポーネント及びナビゲーションは操作可能でなければならない。</head>
         <div3 role="group1" id="keyboard-operation">
           <head>
- すべての機能をキーボードから利用できるようにする。
+ すべての機能をキーボードから利用できるようにすること。
           </head>
           <div4 role="req">
             <head/>
@@ -558,7 +558,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="time-limits">
           <head>
- 利用者がコンテンツを読んだり使用したりするのに十分な時間を提供する。
+ 利用者がコンテンツを読んだり使用したりするのに十分な時間を提供すること。
           </head>
           <div4 role="req">
             <head/>
@@ -641,7 +641,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </div4>
         </div3>
         <div3 role="group1" id="seizure">
-          <head> 発作を引き起こす恐れのないようにコンテンツを設計する。</head>
+          <head> 発作を引き起こす恐れのないようにコンテンツを設計すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="seizure-does-not-violate">
@@ -665,7 +665,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="navigation-mechanisms">
           <head>
- 利用者がナビゲートしたり、コンテンツを探し出したり、現在位置を確認するのを手助けする手段を提供する。
+ 利用者がナビゲートしたり、コンテンツを探し出したり、現在位置を確認するのを手助けする手段を提供すること。
           </head>
           <div4 role="req">
             <head/>
@@ -739,7 +739,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <head>原則 3：理解可能 - 情報及びユーザインタフェースの操作は理解可能でなければならない。</head>
         <div3 role="group1" id="meaning">
           <head>
-テキストのコンテンツを読みやすく理解可能にする。
+テキストのコンテンツを読みやすく理解可能にすること。
           </head>
           <div4 role="req">
             <head/>
@@ -792,7 +792,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="consistent-behavior">
           <head>
-ウェブページの表示や動作を予測可能にする。
+ウェブページの表示や動作を予測可能にすること。
           </head>
           <div4 role="req">
             <head/>
@@ -834,7 +834,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="minimize-error">
           <head>
- 利用者の間違いを防ぎ、間違いの修正を支援する。
+ 利用者の間違いを防ぎ、間違いの修正を支援すること。
           </head>
           <div4 role="req">
             <head/>
@@ -907,7 +907,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <div2 role="principle" id="robust">
         <head>原則 4： 堅牢性 - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。</head>
         <div3 role="group1" id="ensure-compat">
-          <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化する。</head>
+          <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="ensure-compat-parses">
