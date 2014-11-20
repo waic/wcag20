@@ -470,7 +470,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                     <p>
-                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
