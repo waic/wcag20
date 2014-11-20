@@ -438,7 +438,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
               <head>文字画像</head>
-              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的提示が可能である場合は、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>が情報伝達に用いられている。ただし、次に挙げる場合を除く：
+              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的提示が可能である場合、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>が情報伝達に用いられている。ただし、次に挙げる場合を除く：
               </p>
               <ulist>
                 <item>
@@ -447,11 +447,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠：</emph> 文字の特定の提示が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠：</emph> 文字の特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
-                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
+                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであると考えられる。</p>
               </note>
             </div5>
           </div4>
