@@ -516,9 +516,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
               <head>文字画像（例外なし）</head>
-              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で提示することが<termref def="essentialdef">必要不可欠</termref>である。</p>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の表現が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
               <note>
-                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
+                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであると考えられる。</p>
               </note>
             </div5>
           </div4>
