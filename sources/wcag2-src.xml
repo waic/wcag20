@@ -433,8 +433,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-scale">
               <head>テキストのサイズ変更</head>
               <p role="v">
- コンテンツ又は機能を損なうことなく、<termref def="textdef">テキスト</termref>を<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。ただし、<termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">文字画像</termref>は除く。
-              </p>
+ 	    <termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">文字画像</termref>を除き、<termref def="textdef">テキスト</termref>は、コンテンツ又は機能を損なうことなく、<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。
+ 	          </p>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
               <head>文字画像</head>
