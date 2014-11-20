@@ -447,7 +447,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠：</emph> 文字の特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠：</emph> テキストの特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
