@@ -624,7 +624,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="time-limits-no-exceptions">
-              <head>タイミングなし</head>
+              <head>タイミング非依存</head>
               <p role="v"> タイミングは、コンテンツによって提示されるイベント又は動作の<termref def="essentialdef">必要不可欠</termref>な部分ではない。ただし、インタラクティブではない<termref def="synchronizedmediadef">同期したメディア</termref>及び
                 <termref def="real-time-eventsdef">リアルタイムのイベント</termref>は除く。
                 
