@@ -779,7 +779,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="meaning-supplements">
               <head>読解レベル</head>
-              <p role="v"> 固有名詞や（ビデオや書籍などの）タイトルを除いて、テキストが中等教育レベルを超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足的コンテンツ</termref>又は<termref def="lowseceddef">中等教育レベル</termref>を超えた読解力を必要としないバージョンが利用可能である。　
+              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としないバージョンが利用できる。　
 
 
 </p>
@@ -1713,7 +1713,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         
         
         <gitem id="lowseceddef">
-          <label>中等教育レベル</label>
+          <label>前期中等教育レベル</label>
           <def>
             <p>6年間の学校教育後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年間あるいは3年間の教育。
             </p>
