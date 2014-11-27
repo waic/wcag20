@@ -770,7 +770,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="meaning-idioms">
               <head>一般的ではない用語</head>
-              <p role="i"> <termref def="idiomsdef">慣用句</termref>及び<termref def="jargondef">専門用語</termref>を含めて、<termref def="unusual-restricteddef">一般的には使われることのない、又は限定された用法で使われている</termref>単語又は語句の、特定の定義を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+              <p role="i"> <termref def="idiomsdef">慣用句</termref>及び<termref def="jargondef">専門用語</termref>を含めて、<termref def="unusual-restricteddef">一般的ではない、又は限定された用法で使われている</termref>単語又は語句の、明確な定義を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
             </div5>
             <div5 role="sc" id="meaning-located">
               <head>略語</head>
@@ -2128,7 +2128,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="unusual-restricteddef">
-          <label>一般的には使われることのない、または限定された用法で使われている</label>
+          <label>一般的ではない、または限定された用法で使われている</label>
           <def>
             <p>そのコンテンツを正しく理解するために、そこではどの定義が適用されるのかを利用者が正確に理解していることを要求するように用いられる用語。</p>
             <example>
