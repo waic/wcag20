@@ -774,7 +774,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="meaning-located">
               <head>略語</head>
-              <p role="i"> <termref def="abbreviationsdef">略語</termref>の元の語又は意味を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。
+              <p role="i"> <termref def="abbreviationsdef">略語</termref>の元の語、又は意味を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。
               </p>
             </div5>
             <div5 role="sc" id="meaning-supplements">
