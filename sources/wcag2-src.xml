@@ -400,7 +400,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-dis-audio">
               <head>音声の制御</head>
               <p role="v">
- ウェブページ上にある音声が自動的に再生され、3秒より長く続く場合、その音声を一時停止又は停止する<termref def="mechanismdef">メカニズム</termref>、もしくはシステム全体の音量レベルに影響を与えずに音量レベルを調整できるメカニズムが利用可能である。</p>
+ ウェブページ上にある音声が自動的に再生され、3秒より長く続く場合、その音声を一時停止又は停止する<termref def="mechanismdef">メカニズム</termref>、もしくはシステム全体の音量レベルに影響を与えずに音量レベルを調整できるメカニズムが利用できる。</p>
               <note>
                 <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
               </note>
@@ -495,7 +495,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
               <head>視覚的提示</head>
-              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用可能である：</p>
+              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用できる：</p>
               <olist>
                 <item>
                   <p>利用者が、前景色と背景色を選択できる。</p>
