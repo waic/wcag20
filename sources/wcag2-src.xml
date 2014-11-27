@@ -693,7 +693,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="navigation-mechanisms-mult-loc">
               <head>複数の手段</head>
-              <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中からある<termref def="webpagedef">ウェブページ</termref>に到達することのできる複数の手段がある。ただし、ウェブページが<termref def="processdef">プロセス</termref>の結果又はプロセスの中の一つのステップである場合は除く。
+              <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中で、ある<termref def="webpagedef">ウェブページ</termref>を見つける複数の手段が利用できる。ただし、ウェブページが<termref def="processdef">一連のプロセス</termref>の中の1ステップ又は結果である場合は除く。
 
 
 
