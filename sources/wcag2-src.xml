@@ -746,7 +746,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="meaning-doc-lang-id">
               <head>ページの言語</head>
-              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>の主たる<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。
+              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>のデフォルトの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。
 
 
 
