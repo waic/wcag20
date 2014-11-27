@@ -672,7 +672,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="navigation-mechanisms-skip">
               <head>ブロック・スキップ</head>
-              <p role="v"> 複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているコンテンツのブロックをスキップできる<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+              <p role="v"> 複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているコンテンツのブロックをスキップする<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-title">
               <head>ページタイトル</head>
