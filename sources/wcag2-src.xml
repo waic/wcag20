@@ -723,13 +723,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="navigation-mechanisms-headings">
               <head>セクション見出し</head>
               <p role="v">
-                <termref def="sectiondef">セクション</termref>の見出しを用いてコンテンツが体系化されている。
+                <termref def="sectiondef">セクション</termref>見出しを用いて、コンテンツが整理されている。
                 
               </p>
               <note>
                 <p>見出しはその一般的な意味で用いられており、タイトルや様々なタイプのコンテンツに見出しを付加するその他の手段を含む。
                 </p>
-                <p>この達成基準でいうセクションとは、<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>についてではなく、文書におけるセクションを意味している。ユーザインタフェース・コンポーネントは、<loc href="ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>で言及している。<!-- BBC: This one set manually, else links in slices gets messyspecref ref="ensure-compat-rsv"/--></p>
+                <p>この達成基準は、文書におけるセクションを対象としており、<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>は対象としていない。ユーザインタフェース・コンポーネントについては、<loc href="ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>が対象にしている。<!-- BBC: This one set manually, else links in slices gets messyspecref ref="ensure-compat-rsv"/--></p>
               </note>
             </div5>
             
