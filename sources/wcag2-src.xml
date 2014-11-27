@@ -681,7 +681,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="navigation-mechanisms-focus-order">
               <head>フォーカス順序</head>
-              <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順を追ってナビゲート</termref>できて、そのナビゲーション順序が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは意味及び操作性を保持した順序でフォーカスを受け取る。</p>
+              <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順を追ってナビゲート</termref>できて、そのナビゲーション順が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは、意味及び操作性を損なわない順序でフォーカスを受け取る。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-refs">
               <head>リンクの目的（文脈内）</head>
