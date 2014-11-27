@@ -495,7 +495,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
               <head>視覚的提示</head>
-              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>の視覚的提示には、次を実現する<termref def="mechanismdef">メカニズム</termref>が提供されている：</p>
+              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用可能である：</p>
               <olist>
                 <item>
                   <p>利用者が、前景色と背景色を選択できる。</p>
