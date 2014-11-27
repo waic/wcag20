@@ -713,7 +713,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head> </head>
             <div5 role="sc" id="navigation-mechanisms-location">
               <head>現在位置</head>
-              <p role="i"><termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中での利用者の現在位置に関する情報が提供されている。</p>
+              <p role="i"><termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中での利用者の位置に関する情報が利用できる。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-link">
               <head>リンクの目的（リンクのみ）</head>
