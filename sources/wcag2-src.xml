@@ -2065,7 +2065,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="suppcontentdef">
           <label>補足的コンテンツ</label>
           <def>
-            <p>元のコンテンツを説明したり、より明確にしたりするために付加された<termref def="contentdef">コンテンツ</termref>。
+            <p>元のコンテンツを説明、又はより明確にするために付加された<termref def="contentdef">コンテンツ</termref>。
             </p>
             <example>
               <p>
