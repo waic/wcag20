@@ -859,19 +859,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
               <head>エラー回避（法的、金融、データ）</head>
-              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法的な義務</termref>もしくは金銭的な取引が生じる、<termref def="user-controllabledef">利用者が自分で制御可能な</termref>データ・ストレージ・システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
+              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法律行為</termref>もしくは金融取引が生じる、<termref def="user-controllabledef">利用者が制御可能な</termref>データ・ストレージ・システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
               <olist>
                 <item>
                   <p>
-                    <emph role="sc-handle">取消：</emph> 送信した内容を利用者が取り消すことができる。</p>
+                    <emph role="sc-handle">取消：</emph> 送信を取り消すことができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>をチェックし、利用者に修正する機会を提供している。</p>
+                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の点検、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
                 </item>
               </olist>
             </div5>
