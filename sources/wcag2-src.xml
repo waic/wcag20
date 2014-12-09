@@ -835,7 +835,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="minimize-error">
           <head>
- 利用者の間違いを防ぎ、間違いの修正を支援すること。
+ 利用者の間違いを防ぎ、修正を支援すること。
           </head>
           <div4 role="req">
             <head/>
