@@ -848,7 +848,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="minimize-error-cues">
               <head>ラベル又は説明</head>
               <p role="v">
- コンテンツが利用者の入力を要求する場合は、入力箇所の<termref def="labeldef">ラベル</termref>又は入力方法についての説明文が提供されている。</p>
+ コンテンツが利用者の入力を要求する場合は、<termref def="labeldef">ラベル</termref>又は説明文が提供されている。</p>
             </div5>
           </div4>
           <div4 role="bp">
