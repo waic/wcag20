@@ -827,9 +827,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="consistent-behavior-no-extreme-changes-context">
-              <head>要求によるコンテクストの変化</head>
+              <head>要求による変化</head>
               <p role="v">
-                <termref def="context-changedef">コンテクストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用可能である。　</p>
+                <termref def="context-changedef">コンテクストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。　</p>
             </div5>
           </div4>
         </div3>
