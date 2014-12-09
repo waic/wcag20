@@ -270,7 +270,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                      <emph role="sc-handle">テスト：</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になる試験又は演習のとき、代替テキストは、少なくともその非テキストコンテンツを識別できる説明を提供している。
+                      <emph role="sc-handle">テスト：</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になるテスト又は演習のとき、代替テキストは、少なくともその非テキストコンテンツを識別できる説明を提供している。
                   </p>
                 </item>
                 <item>
