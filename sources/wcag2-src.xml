@@ -817,7 +817,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="consistent-behavior-consistent-locations">
               <head>一貫したナビゲーション</head>
               <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中にある複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているナビゲーションのメカニズムは、繰り返されるたびに
-<termref def="samerelorderdef">相対的に同じ順序</termref>で出現する。ただし、利用者がそれを変更した場合は除く。</p>
+<termref def="samerelorderdef">相対的に同じ順序</termref>で出現する。ただし、利用者が変更した場合は除く。</p>
             </div5>
             <div5 role="sc" id="consistent-behavior-consistent-functionality">
               <head>一貫した識別性</head>
