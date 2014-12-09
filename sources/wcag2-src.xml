@@ -881,7 +881,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="minimize-error-context-help">
               <head>ヘルプ</head>
               <p role="v">
-                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用可能である。　</p>
+                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用できる。　</p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible-all">
               <head>エラー回避（すべて）</head>
