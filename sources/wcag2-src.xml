@@ -1849,7 +1849,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="pdlinkcontextdef">
           <label>プログラムが解釈可能なリンクの文脈</label>
           <def>
-            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムが解釈</termref>であり、リンクテキストと結びつけることができ、異なる感覚モダリティで利用者に提示することができる付加的情報。
+            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムが解釈可能</termref>であり、リンクテキストと結びつけることができ、異なる感覚モダリティで利用者に提示することができる付加的情報。
             </p>
             <example>
               <p>HTMLでは、英語で記述されたリンクからプログラムが解釈可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、或いはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
