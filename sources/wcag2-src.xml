@@ -1689,7 +1689,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="legalcommitmentsdef">
-          <label>法的な義務</label>
+          <label>法律行為</label>
           <def>
             <p>法的に拘束力のある義務あるいは利益が発生する取引。</p>
             <example>
@@ -2147,7 +2147,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="user-controllabledef">
-          <label>利用者が自分で制御可能</label>
+          <label>利用者が制御可能</label>
           <def>
             <p>利用者によってアクセスされるためのデータ。</p>
             <note>
