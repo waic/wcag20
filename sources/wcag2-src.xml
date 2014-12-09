@@ -1980,7 +1980,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="samerelorderdef">
-          <label>同じ相対順序</label>
+          <label>相対的に同じ順序</label>
           <def>
             <p>他の項目と相対的に同じ位置。</p>
             <note>
