@@ -793,7 +793,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="group1" id="consistent-behavior">
           <head>
-ウェブページの表示や動作を予測可能にすること。
+ウェブページの表示や挙動を予測可能にすること。
           </head>
           <div4 role="req">
             <head/>
