@@ -855,7 +855,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="minimize-error-suggestions">
               <head>エラー修正の提案</head>
-              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に発見された場合、その修正方法が明らかであれば、その方法が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
+              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出され、修正方法を提案できる場合、その提案が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
               <head>エラー回避（法的、金融、データ）</head>
