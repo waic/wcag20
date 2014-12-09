@@ -805,9 +805,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="consistent-behavior-unpredictable-change">
               <head>入力時</head>
-              <p role="v"> 利用者が使用する前にその挙動を知らせてある場合を除いて、
+              <p role="v"> 
                   <termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>
-の設定を変更することで<termref def="context-changedef">コンテクストの変化</termref>を引き起こさない。
+の設定を変更することが、<termref def="context-changedef">コンテクストの変化</termref>を自動的に引き起こさない。ただし、利用者が使用する前にその挙動を知らせてある場合を除く。
 
 </p>
             </div5>
