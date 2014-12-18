@@ -600,7 +600,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
               </ulist>
               <note>
-                  <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテクストの変化を制限する<specref ref="consistent-behavior-receive-focus"/>と併せて考慮すること。</p>
+                  <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<specref ref="consistent-behavior-receive-focus"/>と併せて考慮すること。</p>
               </note>
             </div5>
               
@@ -800,14 +800,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="consistent-behavior-receive-focus">
               <head>フォーカス時</head>
               <p role="i"> いずれのコンポーネントも、フォーカスを受け取ったときに
-<termref def="context-changedef">コンテクストの変化</termref>を引き起こさない。
+<termref def="context-changedef">コンテキストの変化</termref>を引き起こさない。
               </p>
             </div5>
             <div5 role="sc" id="consistent-behavior-unpredictable-change">
               <head>入力時</head>
               <p role="v"> 
                   <termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>
-の設定を変更することが、<termref def="context-changedef">コンテクストの変化</termref>を自動的に引き起こさない。ただし、利用者が使用する前にその挙動を知らせてある場合を除く。
+の設定を変更することが、<termref def="context-changedef">コンテキストの変化</termref>を自動的に引き起こさない。ただし、利用者が使用する前にその挙動を知らせてある場合を除く。
 
 </p>
             </div5>
@@ -829,7 +829,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="consistent-behavior-no-extreme-changes-context">
               <head>要求による変化</head>
               <p role="v">
-                <termref def="context-changedef">コンテクストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。　</p>
+                <termref def="context-changedef">コンテキストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。　</p>
             </div5>
           </div4>
         </div3>
@@ -1361,7 +1361,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="context-changedef">
-          <label>コンテクストの変化</label>
+          <label>コンテキストの変化</label>
           <def>
             <p><termref def="webpagedef">ウェブページ</termref>のコンテンツにおける大きな変化で、利用者が気づかないと、ウェブページ全体を一度に見ることのできない利用者をまごつかせてしまう恐れのあるもの。</p>
             <p>状況の変化には次に挙げるものの変化が含まれる：</p>
@@ -1383,10 +1383,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-              <p>コンテンツの変化が、必ずコンテクストの変化になるとはかぎらない。アウトライン表示の展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例：フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
+              <p>コンテンツの変化が、必ずコンテキストの変化になるとはかぎらない。アウトライン表示の展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例：フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
             </note>
             <example>
-              <p>新しいウィンドウを開くこと、フォーカスを異なる要素へ移動させること、新しいウェブページへ移動すること（新しいウェブページへ移動したかのように思わせてしまうことも含む）、又はウェブページの内容を大きく再配置することなどは、コンテクストの変化の事例である。</p>
+              <p>新しいウィンドウを開くこと、フォーカスを異なる要素へ移動させること、新しいウェブページへ移動すること（新しいウェブページへ移動したかのように思わせてしまうことも含む）、又はウェブページの内容を大きく再配置することなどは、コンテキストの変化の事例である。</p>
             </example>
           </def>
         </gitem>
