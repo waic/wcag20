@@ -64,7 +64,7 @@
       </p>
         <p>WCAG 2.0 の達成基準は、ウェブコンテンツ技術に依存しない検証可能なものとして記述されている。特定のウェブコンテンツ技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクション及び WCAG の達成方法や教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。
 </p>
-    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/" hreflang="en">ウェブコンテンツ・アクセシビリティ・ガイドライン 1.0</loc>
+    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/" hreflang="en">Web Content Accessibility Guidelines 1.0</loc>
     		<bibref ref="WCAG10"/> の後継となる仕様である。WCAG 1.0 又は WCAG 2.0 のいずれか（あるいは、その両方）に適合することは可能だが、W3C はコンテンツを新規で制作する場合及び既存のコンテンツを更新する場合には WCAG 2.0 を用いることを推奨する。又、W3C は、ウェブ・アクセシビリティに関する方針や政策においても、WCAG 2.0 を参照することを推奨する。</p>
     </abstract>
   	<status>
