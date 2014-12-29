@@ -100,15 +100,15 @@ WCAG Working Groupの目的については、 <loc
   					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity
  </loc>の一つである。</p>
   		<p>この文書は、<loc
-  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">2004年2月5日付の W3C 特許ポリシー
-</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">全開示特許の公開リスト</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
+</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
-  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">エッセンシャル・クレーム
+  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)
 </loc>を含んでいると思われる特許について知識のある人は、<loc
   					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
-W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなければならない。</p>
+section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しなければならない。</p>
   	</status>
   	<langusage>
       <language id="ja"/>
