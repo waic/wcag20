@@ -78,7 +78,7 @@ W3C 勧告</loc> の WCAG 2.0 である。
   		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いること、他の文書で引用することができる。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能及び相互運用性の向上につながる。</p>
   		<p>WCAG 2.0 には、規定ではない関連文書の 
 <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">
-  				Understanding WCAG 2.0</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">WCAG 2.0 達成方法集</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
+  				Understanding WCAG 2.0</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
 
 
 
@@ -198,7 +198,7 @@ WCAG 2.0 関連文書
           <item>
             <p>
               <emph role="bold">
-                <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">WCAG 2.0達成方法集</loc>
+                <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc>
               </emph> - 達成方法集及び既知の失敗事例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
           </item>
             <item>
