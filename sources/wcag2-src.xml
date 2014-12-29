@@ -131,21 +131,21 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/components.php" hreflang="en">ウェブアクセシビリティに必要不可欠な構成要素</loc>
+              <loc href="http://www.w3.org/WAI/intro/components.php" hreflang="en">Essential Components of Web Accessibility</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/uaag.php" hreflang="en">ユーザエージェント・アクセシビリティ・ガイドライン (UAAG) 概要</loc>
+              <loc href="http://www.w3.org/WAI/intro/uaag.php" hreflang="en">User Agent Accessibility Guidelines (UAAG) Overview</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/atag.php" hreflang="en">オーサリングツール・アクセシビリティ・ガイドライン (ATAG) 概要</loc>
+              <loc href="http://www.w3.org/WAI/intro/atag.php" hreflang="en">Authoring Tool Accessibility Guidelines (ATAG) Overview</loc>
             </emph>
           </p>
         </item>
