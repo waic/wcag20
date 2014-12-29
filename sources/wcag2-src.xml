@@ -72,7 +72,7 @@
 
 
 <loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
-  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
+  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
 W3C 勧告</loc> の WCAG 2.0 である。
 </p>
   		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いること、他の文書で引用することができる。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能及び相互運用性の向上につながる。</p>
@@ -2232,7 +2232,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>謝辞</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
         <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル・ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。又、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
-      <p>WCAG Working Groupへの参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc>を参照のこと。
+      <p>Web Contents Accessibility Guidelines Working Group (WCAG WG) への参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">ワーキンググループのホームページ</loc>を参照のこと。
       </p>
       <div2>
         <head>発行時点でアクティブだった WCAG Working Group参加者</head>
