@@ -95,9 +95,9 @@ public-comments-wcag20@w3.org</loc> 宛に電子メールで送信すること�
 </loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
   			href="http://www.w3.org/WAI/" hreflang="en">ウェブアクセシビリティ・イニシアティブ</loc> (WAI) の活動の一環として作成されたものである。
-WCAG ワーキンググループの目的については、 <loc
+WCAG Working Groupの目的については、 <loc
   				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group Charter
-</loc>に記載されている。WCAG ワーキンググループは、<loc
+</loc>に記載されている。WCAG Working Groupは、<loc
   					href="http://www.w3.org/WAI/Technical/Activity">Web Accessibility Initiative (WAI) Technical Activity
  </loc>の一つである。</p>
   		<p>この文書は、<loc
@@ -1216,7 +1216,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-                <p>WCAG ワーキンググループならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照のこと）。</p>
+                <p>WCAG Working Groupならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照のこと）。</p>
                 <p>そのウェブコンテンツ技術に<termref def="reliedupondef">依存</termref>しておらず、<specref ref="cc4"/>及び<specref ref="cc5"/>を含む適合要件をウェブページ全体が満たしている場合は、そのウェブコンテンツ技術をアクセシビリティ・サポーテッドではない方法で用いることができる。</p>
                 <p><termref def="technologydef">ウェブ技術</termref>がアクセシビリティ・サポーテッドな方法で用いられている場合、その技術全体、又はその技術の使用方法すべてがアクセシビリティ・サポーテッドであるということを暗に示すわけではない。ほとんどの技術は、HTML を含めてアクセシビリティ・サポーテッドではない機能、又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、依存する技術のアクセシビリティ・サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。</p>
               <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ・サポーテッドなバージョンを特定すべきである。</p>
@@ -2232,10 +2232,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>謝辞</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
         <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル・ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。又、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
-      <p>WCAG ワーキンググループへの参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc>を参照のこと。
+      <p>WCAG Working Groupへの参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc>を参照のこと。
       </p>
       <div2>
-        <head>発行時点でアクティブだった WCAG ワーキンググループ参加者</head>
+        <head>発行時点でアクティブだった WCAG Working Group参加者</head>
       	<ulist>
       		<item><p>Bruce Bailey (U.S. Access Board) </p></item>
       		<item><p>Frederick Boland (NIST)</p></item>
@@ -2260,7 +2260,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       	</ulist>
       </div2>
       <div2>
-        <head>過去にアクティブであった WCAG ワーキンググループ参加者及びその他の WCAG 2.0 への貢献者</head>
+        <head>過去にアクティブであった WCAG Working Group参加者及びその他の WCAG 2.0 への貢献者</head>
       	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan, Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutierrez y Restrepo, Brian Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs, Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella, Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Chris Ridpath, Lee Roberts, Gregory J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer, Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch, Takayuki Watanabe, Jason White.</p>
       </div2>
     </inform-div1>
