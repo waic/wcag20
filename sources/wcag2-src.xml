@@ -88,9 +88,9 @@ online comment form</loc> を使って送っていただきたい。もしそれ
 <loc href="mailto:public-comments-wcag20@w3.org"> 
 public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することも可能である。
   			<loc
-  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">public-comments-wcag20@w3.org メールのアーカイブ
+  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list
 </loc>は誰でも利用可能である。WCAG 2.0 の勧告文書に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、正誤表あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc
-  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">w3c-wai-gl@w3.org メールのアーカイブ
+  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions
 </loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
   			href="http://www.w3.org/WAI/" hreflang="en">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。
