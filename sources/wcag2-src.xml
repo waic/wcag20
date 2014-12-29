@@ -185,7 +185,7 @@ WCAG 2.0 関連文書
         <olist>
           <item>
             <p>
-                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">WCAG 2.0 を満たす方法</loc></emph> 
+                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">How to Meet WCAG 2.0</loc></emph> 
  - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作、評価する際に用いるガイドライン、達成基準、そして達成方法のすべてを参照できる。
             </p>
           </item>
@@ -202,11 +202,11 @@ WCAG 2.0 関連文書
               </emph> - 達成方法集及び既知の失敗事例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
           </item>
             <item>
-                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">WCAG 2.0 文書群</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
+                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
          
-          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。<phrase>例えば、ウェブ・アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ・ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAIリソース集</loc>に挙げられている。</phrase></p>
+          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。<phrase>例えば、ウェブ・アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ・ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
