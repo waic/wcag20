@@ -1953,9 +1953,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="reliedupondef">
-          <label>依存した（ウェブコンテンツ技術）</label>
+          <label>依存した（技術）</label>
           <def>
-            <p>コンテンツは、その<termref def="technologydef">ウェブコンテンツ技術</termref>が無効になっている場合、又はサポートされていない場合に、コンテンツが<termref def="conformancedef">適合</termref>できない。</p>
+            <p>コンテンツは、その<termref def="technologydef">技術</termref>が無効になっている場合、又はサポートされていない場合に、コンテンツが<termref def="conformancedef">適合</termref>できない。</p>
           </def>
         </gitem>
         <gitem id="roledef">
