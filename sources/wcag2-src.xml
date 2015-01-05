@@ -1842,7 +1842,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <example>
               <p>マークアップ言語では、一般に入手可能な支援技術が、要素及び属性に直接アクセスすることにより解釈できる。</p>
-              <p>非マークアップ言語では、ウェブコンテンツ技術特有のデータ構造から、一般に入手可能な支援技術がサポートするアクセシビリティ <abbr expansion="Application Programming Interface">API</abbr> を通じて支援技術に提供される。</p>
+              <p>非マークアップ言語では、技術特有のデータ構造から、一般に入手可能な支援技術がサポートするアクセシビリティ <abbr expansion="Application Programming Interface">API</abbr> を通じて支援技術に提供される。</p>
             </example>
           </def>
         </gitem>
