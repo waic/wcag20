@@ -934,7 +934,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
     <div1 role="normative" id="conformance">
       <head>適合性</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
-      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>とは何かを説明する。なぜならば、適合においてはウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ・サポーテッドという概念については、<loc href="conformance" linktype="understanding">WCAG 2.0への適合を理解する</loc>でさらに詳しい説明がある。</p>
+      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ・サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ・サポーテッドという概念については、<loc href="conformance" linktype="understanding">WCAG 2.0への適合を理解する</loc>でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
         <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
@@ -981,26 +981,26 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </example>
         </div3>
         <div3 role="front" id="cc4">
-            <head role="cc">ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法のみ</head>
+            <head role="cc">技術のアクセシビリティ・サポーテッドな使用方法のみ</head>
           <p role="cc"> 達成基準を満たすためには、用いる
-<termref def="technologydef">ウェブコンテンツ技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ・サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ・サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照のこと）。
+<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ・サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ・サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照のこと）。
 
           </p>
         </div3>
         <div3 role="front" id="cc5">
           <head role="cc">非干渉</head>
           <p role="cc"> もし<termref def="technologydef">
-ウェブコンテンツ技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>ではない方法で用いられている、又はウェブコンテンツ技術が WCAG 2.0 に適合していない状態で用いられている場合、利用者によるウェブページの他の部分へのアクセスを妨げていないことが必要である。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のすべての条件の下で適合要件を満たしていること：
+技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>ではない方法で用いられている、又は技術が WCAG 2.0 に適合していない状態で用いられている場合、利用者によるウェブページの他の部分へのアクセスを妨げていないことが必要である。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のすべての条件の下で適合要件を満たしていること：
           </p>
           <olist>
             <item>
-              <p>ユーザエージェントで、<termref def="reliedupondef">依存</termref>していないウェブコンテンツ技術が有効になっているとき</p>
+              <p>ユーザエージェントで、<termref def="reliedupondef">依存</termref>していない技術が有効になっているとき</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していないウェブコンテンツ技術が無効になっているとき、及び</p>
+                <p>ユーザエージェントで、依存していない技術が無効になっているとき、及び</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していないウェブコンテンツ技術がサポートされていないとき</p>
+                <p>ユーザエージェントで、依存していない技術がサポートされていないとき</p>
             </item>
           </olist>
             <p role="sctxt">さらに、以下の達成基準が満たされていない場合、ウェブページの利用を妨げる可能性があるため、適合要件を満たす上で依存していないコンテンツも含めて、ウェブページ上の全てのコンテンツはこれらの達成基準を満たしている必要がある。</p>
@@ -1067,7 +1067,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <item>
               <p><emph>
 使用しているが適合には
-<termref def="reliedupondef">依存</termref>していない</emph> ウェブコンテンツ技術のリスト。
+<termref def="reliedupondef">依存</termref>していない</emph> 技術のリスト。
 </p>
             </item>
             <item>
@@ -1080,7 +1080,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 </p>
             </item>
             <item>
-              <p><termref def="reliedupondef">依存</termref>しているウェブコンテンツ技術を示したリストの機械的に読み取れるメタデータ版。
+              <p><termref def="reliedupondef">依存</termref>している技術を示したリストの機械的に読み取れるメタデータ版。
               </p>
             </item>
             <item>
