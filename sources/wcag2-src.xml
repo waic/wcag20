@@ -62,54 +62,53 @@
     	<p>ウェブ・コンテンツ・アクセシビリティ・ガイドライン 2.0（以下、WCAG 2.0）は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。
 このガイドラインに従うことで、全盲又はロービジョン、ろう又は難聴、学習障害、認知障害、運動制限、発話困難、光過敏性発作及びこれらの組合せ等を含んだ、様々な障害のある人に対して、コンテンツをアクセシブルにすることになる。又、このガイドラインに従うと、すべての利用者に対してウェブコンテンツをより使いやすいものにすることにもなる。
       </p>
-        <p>WCAG 2.0 の達成基準は、技術に依存しない検証可能なものとして記述されている。特定の技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクション及び WCAG の達成方法や教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要</loc>を参照のこと。
+        <p>WCAG 2.0 の達成基準は、技術に依存しない検証可能なものとして記述されている。特定の技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクション及び WCAG の達成方法や教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。
 </p>
-    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/" hreflang="en">ウェブコンテンツ・アクセシビリティ・ガイドライン 1.0</loc>
+    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/" hreflang="en">Web Content Accessibility Guidelines 1.0</loc>
     		<bibref ref="WCAG10"/> の後継となる仕様である。WCAG 1.0 又は WCAG 2.0 のいずれか（あるいは、その両方）に適合することは可能だが、W3C はコンテンツを新規で制作する場合及び既存のコンテンツを更新する場合には WCAG 2.0 を用いることを推奨する。又、W3C は、ウェブ・アクセシビリティに関する方針や政策においても、WCAG 2.0 を参照することを推奨する。</p>
     </abstract>
   	<status>
   		<p><emph>この節では、この文書の発行された時点でのステータスを説明する。この文書が、他の文書によって置き換えられている場合もある。現行のW3Cの発行文書及びこのテクニカル・レポートの改訂版は、
 
 
-<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C テクニカルレポート・インデックス</loc>で参照可能である。</emph></p>
-  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
+<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
+  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
 W3C 勧告</loc> の WCAG 2.0 である。
 </p>
   		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いること、他の文書で引用することができる。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能及び相互運用性の向上につながる。</p>
   		<p>WCAG 2.0 には、規定ではない関連文書の 
-<loc href="../UNDERSTANDING-WCAG20/Overview.html">  			    
-
-  				WCAG 2.0 解説書</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">WCAG 2.0 達成方法集</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
+<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">
+  				Understanding WCAG 2.0</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
 
 
 
 </p>
   		<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/" hreflang="en"> 
-オンライン・コメントフォーム</loc> を使って送っていただきたい。もしそれができない場合は、
+online comment form</loc> を使って送っていただきたい。もしそれができない場合は、
 <loc href="mailto:public-comments-wcag20@w3.org"> 
 public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することも可能である。
   			<loc
-  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">public-comments-wcag20@w3.org メールのアーカイブ
+  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list
 </loc>は誰でも利用可能である。WCAG 2.0 の勧告文書に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、正誤表あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc
-  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">w3c-wai-gl@w3.org メールのアーカイブ
+  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions
 </loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
-  			href="http://www.w3.org/WAI/" hreflang="en">ウェブアクセシビリティ・イニシアティブ</loc> (WAI) の活動の一環として作成されたものである。
-WCAG ワーキンググループの目的については、 <loc
-  				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group (WCAG WG) 趣意書
-</loc>に記載されている。WCAG ワーキンググループは、<loc
-  					href="http://www.w3.org/WAI/Technical/Activity">Web Accessibility Initiative (WAI) Technical Activity
+  			href="http://www.w3.org/WAI/" hreflang="en">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。
+WCAG Working Groupの目的については、 <loc
+  				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group Charter
+</loc>に記載されている。WCAG Working Groupは、<loc
+  					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity
  </loc>の一つである。</p>
   		<p>この文書は、<loc
-  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">2004年2月5日付の W3C 特許ポリシー
-</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">全開示特許の公開リスト</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
+</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
-  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">エッセンシャル・クレーム
+  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)
 </loc>を含んでいると思われる特許について知識のある人は、<loc
   					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
-W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなければならない。</p>
+section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しなければならない。</p>
   	</status>
   	<langusage>
       <language id="ja"/>
@@ -126,27 +125,27 @@ W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなけ�
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <p>ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、様々な障害と関係がある。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。又、このガイドラインは、加齢により様々な能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであり、しばしば利用者全般のユーザビリティを向上させる。
       </p>
-      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人及び組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されている。又、自動テスト及び人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要</loc> を参照のこと。</p>
+      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人及び組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されている。又、自動テスト及び人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
       <p>ウェブ・アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールも又ウェブ・アクセシビリティにおいて重要な役割を担っている。こういったウェブ開発やインタラクションが相互にどのように関係しているかの概要については、以下を参照のこと：</p>
       <ulist>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/components.php" hreflang="en">ウェブアクセシビリティに必要不可欠な構成要素</loc>
+              <loc href="http://www.w3.org/WAI/intro/components.php" hreflang="en">Essential Components of Web Accessibility</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/uaag.php" hreflang="en">ユーザエージェント・アクセシビリティ・ガイドライン (UAAG) 概要</loc>
+              <loc href="http://www.w3.org/WAI/intro/uaag.php" hreflang="en">User Agent Accessibility Guidelines (UAAG) Overview</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/atag.php" hreflang="en">オーサリングツール・アクセシビリティ・ガイドライン (ATAG) 概要</loc>
+              <loc href="http://www.w3.org/WAI/intro/atag.php" hreflang="en">Authoring Tool Accessibility Guidelines (ATAG) Overview</loc>
             </emph>
           </p>
         </item>
@@ -157,7 +156,7 @@ W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなけ�
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブ・アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding">アクセシビリティの4つの原則を理解する</loc>も参照のこと。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブ・アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding">Understanding the Four Principles of Accessibility</loc>も参照のこと。</p>
           </item>
           <item>
             <p>
@@ -165,11 +164,11 @@ W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなけ�
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding">適合レベルを理解する</loc>を参照のこと。</p>
+              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding">Understanding Levels of Conformance</loc>を参照のこと。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準を満たすことのできる達成方法及びさらに対応が望まれる達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>達成方法と<emph>さらに対応が望まれる</emph>達成方法である。さらに対応が望まれる達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding">「WCAG 2.0 解説書」における達成基準を満たすことのできる達成方法及び参考にすべき達成方法</loc>も参照のこと。</p>
+              <emph role="bold">達成基準を満たすことのできる達成方法及びさらに対応が望まれる達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>達成方法と<emph>さらに対応が望まれる</emph>達成方法である。さらに対応が望まれる達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照のこと。</p>
           </item>
         </ulist>
         <p>このガイダンスのレイヤー（原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法）はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
@@ -186,28 +185,28 @@ WCAG 2.0 関連文書
         <olist>
           <item>
             <p>
-                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">WCAG 2.0 を満たす方法</loc></emph> 
+                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">How to Meet WCAG 2.0</loc></emph> 
  - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作、評価する際に用いるガイドライン、達成基準、そして達成方法のすべてを参照できる。
             </p>
           </item>
           <item>
             <p>
               <emph role="bold">
-                <loc href="../UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0解説書</loc>
+                <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">Understanding WCAG 2.0</loc>
               </emph> - WCAG 2.0を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.0の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
           </item>
           <item>
             <p>
               <emph role="bold">
-                <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">WCAG 2.0達成方法集</loc>
+                <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc>
               </emph> - 達成方法集及び既知の失敗事例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
           </item>
             <item>
-                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">WCAG 2.0 文書群</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
+                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
          
-          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要</loc>を参照のこと。<phrase>例えば、ウェブ・アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ・ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAIリソース集</loc>に挙げられている。</phrase></p>
+          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。<phrase>例えば、ウェブ・アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ・ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
@@ -1216,7 +1215,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-                <p>WCAG ワーキンググループならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照のこと）。</p>
+                <p>WCAG Working Group ならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照のこと）。</p>
                 <p>そのウェブ技術に<termref def="reliedupondef">依存</termref>しておらず、<specref ref="cc4"/>及び<specref ref="cc5"/>を含む適合要件をウェブページ全体が満たしている場合は、そのウェブ技術をアクセシビリティ・サポーテッドではない方法で用いることができる。</p>
                 <p><termref def="technologydef">ウェブ技術</termref>がアクセシビリティ・サポーテッドな方法で用いられている場合、その技術全体、又はその技術の使用方法すべてがアクセシビリティ・サポーテッドであるということを暗に示すわけではない。ほとんどの技術は、HTML を含めてアクセシビリティ・サポーテッドではない機能、又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、依存する技術のアクセシビリティ・サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。</p>
               <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ・サポーテッドなバージョンを特定すべきである。</p>
@@ -2232,10 +2231,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>謝辞</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
         <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル・ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。又、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
-      <p>WCAG ワーキンググループへの参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc>を参照のこと。
+      <p>Web Contents Accessibility Guidelines Working Group (WCAG WG) への参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">ワーキンググループのホームページ</loc>を参照のこと。
       </p>
       <div2>
-        <head>発行時点でアクティブだった WCAG ワーキンググループ参加者</head>
+        <head>発行時点でアクティブだった WCAG Working Group参加者</head>
       	<ulist>
       		<item><p>Bruce Bailey (U.S. Access Board) </p></item>
       		<item><p>Frederick Boland (NIST)</p></item>
@@ -2260,7 +2259,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       	</ulist>
       </div2>
       <div2>
-        <head>過去にアクティブであった WCAG ワーキンググループ参加者及びその他の WCAG 2.0 への貢献者</head>
+        <head>過去にアクティブであった WCAG Working Group参加者及びその他の WCAG 2.0 への貢献者</head>
       	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan, Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutierrez y Restrepo, Brian Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs, Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella, Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Chris Ridpath, Lee Roberts, Gregory J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer, Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch, Takayuki Watanabe, Jason White.</p>
       </div2>
     </inform-div1>
