@@ -1699,7 +1699,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="linkpurposedef">
           <label>リンクの目的</label>
           <def>
-            <p>ハイパーリンクに対して、マウスによるクリックなどの操作を行った結果として得られる本質。</p>
+            <p>ハイパーリンクを動作させたときに得られる結果の本質。</p>
           </def>
         </gitem><gitem id="livedef">
           <label>ライブ</label>
