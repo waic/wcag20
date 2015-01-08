@@ -778,7 +778,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="meaning-supplements">
               <head>読解レベル</head>
-              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としないバージョンが利用できる。　
+              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。　
 
 
 </p>
@@ -944,17 +944,17 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <ulist>
             <item>
               <p>
-                <emph role="sc-handle">レベル A：</emph> レベル A（適合の最低レベル）で適合するには、<termref def="webpagedef">ウェブページ</termref>がすべてのレベル A 達成基準を<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合した代替バージョン</termref>を提供する。
+                <emph role="sc-handle">レベル A：</emph> レベル A（適合の最低レベル）で適合するには、<termref def="webpagedef">ウェブページ</termref>がすべてのレベル A 達成基準を<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AA：</emph> レベル AA で適合するには、ウェブページはすべてのレベル A 及びレベル AA 達成基準を満たすか、又はレベル AA に適合した代替バージョンを提供する。
+                <emph role="sc-handle">レベル AA：</emph> レベル AA で適合するには、ウェブページはすべてのレベル A 及びレベル AA 達成基準を満たすか、又はレベル AA に適合した代替版を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AAA：</emph> レベル AAA で適合するには、ウェブページがすべてのレベル A、レベル AA、及びレベル AAA 達成基準を満たすか、又はレベル AAA に適合した代替バージョンを提供する。
+                <emph role="sc-handle">レベル AAA：</emph> レベル AAA で適合するには、ウェブページがすべてのレベル A、レベル AA、及びレベル AAA 達成基準を満たすか、又はレベル AAA に適合した代替版を提供する。
               </p>
             </item>
           </ulist>
@@ -1432,7 +1432,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p>この定義において、「到達できるのは・・・からのみ」とは、利用者が適合版から来ていない限り、不適合ページに「到達する」（読み込む）のを防ぐ条件付きリダイレクトのような何らかのメカニズムがある、ということを意味する。</p>
               <p>代替版は、元のページと一対一で対応している必要はない（例えば、適合している代替版は複数のページであってもよい）。</p>
-              <p>複数の言語版がある場合、各言語版に対して、適合している代替版を提供する必要がある。</p>
+              <p>複数の言語版が利用できる場合、各言語版に対して、適合している代替版を提供する必要がある。</p>
               <p>様々な技術環境、又は利用者層に対応するために、複数の代替版を提供してもよい。この場合、各版は可能なかぎり適合したものでなければならず、<loc href="cc1" linktype="guideline">適合要件 1</loc>を満たすためには、そのうちの一つの版が完全に適合したものでなければならない。</p>
                 <p>不適合版と同じように自由に利用可能であるかぎり、適合している代替版は、適合宣言の範囲に含まれている必要はなく、同一のウェブサイト上で提供されている必要もない。</p>
               <p>代替版は、元のページを補助して理解を高める<termref def="suppcontentdef">補足的なコンテンツ</termref>と混同されないようにすべきである。</p>
