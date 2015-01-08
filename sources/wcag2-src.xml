@@ -1447,9 +1447,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>コンテンツ（ウェブコンテンツ）</label>
           <def>
             <p>
-<termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報及び感覚的な体験を指す。コンテンツの
+<termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報及び感覚的な体験。コンテンツの
 
-              <termref def="structuredef">構造</termref>、<termref def="presentationdef">提示</termref>、及びインタラクションを定義するソースコードやマークアップを含む。
+              <termref def="structuredef">構造</termref>、<termref def="presentationdef">提示</termref>、及びインタラクションを定義するコードやマークアップを含む。
             </p>
           </def>
         </gitem>
