@@ -1596,9 +1596,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         <gitem id="images-of-textdef">
           <label>文字画像</label>
-          <def><p>特定の視覚的効果を得るために非テキスト形式（例えば、画像）でレンダリングされたテキスト。</p>
-            <note><p>これには、重要なその他の視覚的なコンテンツを含む画像の一部である<termref def="textdef">テキスト</termref>は含まれない。</p></note>
-            <example><p>写真に写っている人の名札にある人名は含まれない。</p></example>
+          <def><p>特定の視覚的効果を得るために非テキスト形式（例えば画像）でレンダリングされたテキスト。</p>
+            <note><p><termref def="textdef">テキスト</termref>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。</p></note>
+            <example><p>写真に写っている人の名札にある人名。</p></example>
           </def>
         </gitem>
         
