@@ -1769,7 +1769,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
             </p>
             <note>
-              <p>これには、（文字又は記号の空間的配置による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（当て字を用いる）リートスピーク、そして文字を表現している画像が含まれる。
+              <p>これには、（文字による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（文字を置き換える）リートスピーク、そして文字を表現している画像が含まれる。
 </p>
             </note>
           </def>
