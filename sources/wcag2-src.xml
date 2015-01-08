@@ -1512,7 +1512,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="flash-def">
           <label>閃光</label>
           <def>
-            <p>十分な大きさとある周波数において発作を誘発する恐れのある、<termref def="relativeluminancedef">相対輝度</termref>の相反する変化の組合せ。</p>
+            <p><termref def="relativeluminancedef">相対輝度</termref>の交互の変化で、ある程度の面積と特定の頻度によって、一部の人の発作を誘発する恐れがあるもの。</p>
             <note>
               <p>許容されない閃光の種類に関する情報は、<termref def="general-thresholddef">一般閃光閾値及び赤色閃光閾値</termref>を参照のこと。</p>
               <p><termref def="blinksdef">点滅</termref>も参照のこと。</p>
