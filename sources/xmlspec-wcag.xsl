@@ -1188,11 +1188,8 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <xsl:if test="$show.diff.markup = '0'">
     <p>
-      <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
-    </p>
-    <ul>
+      <xsl:text>この文書は、規定ではないフォーマットでも提供されており、</xsl:text>
       <xsl:for-each select="loc">
-        <li>
           <xsl:apply-templates select="."/>
           <!--
           <xsl:if test="position() &gt; 1">
@@ -1203,9 +1200,9 @@
             <xsl:if test="position() = last() - 1">and </xsl:if>
           </xsl:if>
           -->
-        </li>
       </xsl:for-each>
-    </ul>
+<xsl:text>入手できる: </xsl:text>
+    </p>
           </xsl:if>
   </xsl:template>
   <xsl:template match="p" mode="label">
