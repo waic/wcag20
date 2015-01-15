@@ -442,7 +442,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <ulist>
                 <item>
                   <p>
-                    <emph role="bold">カスタマイズ可能：</emph> 文字画像が利用者の要求に応じて<termref def="visually-customizeddef">視覚的にカスタマイズ</termref>できる。</p>
+                    <emph role="bold">カスタマイズ可能：</emph> 文字画像は、利用者の要求に応じた<termref def="visually-customizeddef">視覚的なカスタマイズ</termref>ができる。</p>
                 </item>
                 <item>
                   <p>
