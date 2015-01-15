@@ -1903,18 +1903,18 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="relativeluminancedef">
           <label>相対輝度</label>
           <def>
-            <p>色空間内のすべての点の相対輝度。最も暗い黒を 0 とし、最も明るい白を 1 とする。</p>
+            <p>最も暗い黒を0に、最も明るい白を1に正規化した色空間内の任意の点の相対的な明るさ。</p>
             <note>
-              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 × <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される：</p>
+              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される：</p>
               <ulist>
                 <item>
-                  <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 else <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>G<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">G</emph> ＝ G<sub>sRGB</sub>/12.92 else <emph role="bold">G</emph> ＝ ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>G<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">G</emph> ＝ G<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">G</emph> ＝ ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>B<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">B</emph> ＝ B<sub>sRGB</sub>/12.92 else <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>B<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">B</emph> ＝ B<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
               </ulist>
               <note role="nonumber">
@@ -1934,14 +1934,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <note role="nonumber">
                 <p>^ という記号は、指数演算子である（計算式は、<bibref ref="sRGB"/> 及び <bibref ref="IEC-4WD"/>を参考にしている）。</p>
               </note>
-              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGBエンコーディングを前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて検証する。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding">達成基準1.4.3を理解する</loc>を参照。</p>
+              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGBエンコーディングを前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて計算するべきである。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding">達成基準1.4.3を理解する</loc>を参照。</p>
                 <!-- BBC: the following note was moved down from the definition of contrast ratio and editorially revised. Relates somewhat to 2548. -->
-              <p>ディザリングが発生する場合は、元の色の値が用いられる。発生源でディザリングしている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
-              <p>コントラストと閃光を自動的に検証することができるツールがある。</p>
+              <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
+              <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。</p>
               
               <!--BBC: Remember to update the MathML version should this be revised -->
               <p>
-<loc href="http://www.w3.org/TR/WCAG20/relative-luminance.xml">相対輝度定義のMathMLバージョン（英語：XMLファイル）</loc>も参照可能である。
+<loc href="http://www.w3.org/TR/WCAG20/relative-luminance.xml">MathML version of the relative luminance definition</loc>も参照できる。
                   
                 
               </p>
