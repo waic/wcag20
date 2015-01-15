@@ -2049,11 +2049,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <olist>
               <item>
                 <p><termref def="webpagedef">ウェブページ</termref>
-の各部が相互関係により整理されたありさま。かつ、
+の各部を相互の関係性によりまとめる方法論。及び、
                 </p>
               </item>
               <item>
-                <p>一連の<termref def="webpagedef">ウェブページ</termref>が整理されたありさま。</p>
+                <p>一連の<termref def="webpagedef">ウェブページ</termref>をまとめる方法論。</p>
               </item>
             </olist>
           </def>
