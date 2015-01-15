@@ -2197,9 +2197,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="visually-customizeddef">
-          <label>視覚的にカスタマイズ</label>
+          <label>視覚的なカスタマイズ</label>
           <def>
-            <p>フォント、サイズ、色、及び背景を設定可能。</p>
+            <p>フォント、サイズ、色、及び背景を設定できること。</p>
           </def>
         </gitem>
         
