@@ -2105,7 +2105,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="textdef">
           <label>テキスト</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の連続で、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
+            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
             </p>
           </def>
         </gitem>
