@@ -285,7 +285,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">装飾、整形、非表示：</emph> 非テキストコンテンツが、<termref def="puredecdef">装飾だけを目的</termref>にしている、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
+                    <emph role="sc-handle">装飾、整形、非表示：</emph> 非テキストコンテンツが、<termref def="puredecdef">純粋な装飾</termref>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
                 </item>
               </ulist>
             </div5>
@@ -420,7 +420,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                    <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -469,7 +469,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
                 <item>
                     <p>
-                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -515,7 +515,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
               <head>文字画像（例外なし）</head>
-              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の表現が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">純粋な装飾</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の表現が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
               <note>
                 <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであると考えられる。</p>
               </note>
