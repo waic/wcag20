@@ -303,10 +303,10 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 	</target>
 	
 	<!-- Everything -->
-	<!-- techniques doesn't build and quickref lacks the source file
+	<!-- Only the guidelines target works.
 <target name="all" depends="guidelines, understanding, techniques, quickref" description="Generate entire suite"/>
 -->
-	<target name="all" depends="guidelines, understanding" description="Generate entire suite"/>
+	<target name="all" depends="guidelines" description="Generate entire suite"/>
 	
 	<!-- === Zip files of HTML versions === -->
 	<target name="guidelines.zip" depends="guidelines" description="Create zip and tgz files for the Guidelines">
