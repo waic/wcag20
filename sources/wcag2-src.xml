@@ -156,7 +156,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブ・アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding">Understanding the Four Principles of Accessibility</loc>も参照。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブ・アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
           </item>
           <item>
             <p>
@@ -164,15 +164,15 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding">Understanding Levels of Conformance</loc>を参照。</p>
+              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準を満たすことのできる達成方法及びさらに対応が望まれる達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>達成方法と<emph>さらに対応が望まれる</emph>達成方法である。さらに対応が望まれる達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
+              <emph role="bold">達成基準を満たすことのできる達成方法及びさらに対応が望まれる達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>達成方法と<emph>さらに対応が望まれる</emph>達成方法である。さらに対応が望まれる達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
           </item>
         </ulist>
         <p>このガイダンスのレイヤー（原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法）はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
-        <p>注意すべきなのは、最高レベル (AAA) で適合しているコンテンツでさえも、すべての種類、程度あるいは組合せの障害者にとってアクセシブルではないということである。特に、認知、言語及び学習の面においてはそうである。コンテンツ制作者は、さらに対応が望まれる達成方法を含むすべての達成方法を考慮するとともに、 ウェブコンテンツが彼らに対しても可能な限りアクセシブルであることを確実にするためにも、現状における最善の対応策に関するアドバイスを探し求めることが推奨される。<loc linktype="understanding" href="understanding-metadata">メタデータ</loc>は、そういった利用者のニーズに最適なコンテンツを探し出す上で、利用者を支援できる可能性がある。
+        <p>注意すべきなのは、最高レベル (AAA) で適合しているコンテンツでさえも、すべての種類、程度あるいは組合せの障害者にとってアクセシブルではないということである。特に、認知、言語及び学習の面においてはそうである。コンテンツ制作者は、さらに対応が望まれる達成方法を含むすべての達成方法を考慮するとともに、 ウェブコンテンツが彼らに対しても可能な限りアクセシブルであることを確実にするためにも、現状における最善の対応策に関するアドバイスを探し求めることが推奨される。<loc linktype="understanding" href="understanding-metadata"  hreflang="en">メタデータ</loc>は、そういった利用者のニーズに最適なコンテンツを探し出す上で、利用者を支援できる可能性がある。
         </p>
       </div2>
       <div2 role="front" id="intro-related-docs">
@@ -219,13 +219,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <gitem>
             <label>ウェブページ</label>
             <def>
-              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、このガイドラインにおいては、静的な HTML ページよりも多くのものを指すということに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、ウェブページには、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のようなエクスペリエンス（経験）も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding">「ウェブページ」を理解する</loc>を参照。</p>
+              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、このガイドラインにおいては、静的な HTML ページよりも多くのものを指すということに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、ウェブページには、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のようなエクスペリエンス（経験）も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
             </def>
           </gitem>
           <gitem>
             <label>プログラムが解釈</label>
             <def>
-              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>できるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding">「プログラムが解釈」を理解する</loc>を参照。
+              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>できるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
                 
               </p>
             </def>
@@ -235,7 +235,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <def>
                 <p>技術をアクセシビリティ・サポーテッドな方法で用いるというのは、支援技術 (AT) 及び OS、ブラウザ、その他のユーザエージェントのアクセシビリティ機能と連携する形でその技術を用いるということを意味する。ウェブコンテンツは、その技術を<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な方法で用いている場合のみ、WCAG 2.0 の達成基準を満たすためにその技術に<termref def="reliedupondef">依存</termref>することが可能である。ただし、何らかの達成基準を満たすために用いられていない（つまり、同じ情報あるいは機能が、アクセシビリティ・サポーテッドな他の方法でも利用可能である）かぎり、その技術の機能をアクセシビリティ・サポーテッドではない（支援技術などと連携しない）方法で用いることができる。</p>
               <p>
-アクセシビリティ・サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照。</p>
+アクセシビリティ・サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
             </def>
           </gitem>
         </glist>
@@ -933,7 +933,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
     <div1 role="normative" id="conformance">
       <head>適合性</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
-      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ・サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ・サポーテッドという概念については、<loc href="conformance" linktype="understanding">WCAG 2.0への適合を理解する</loc>でさらに詳しい説明がある。</p>
+      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ・サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ・サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc>でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
         <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
@@ -982,7 +982,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <div3 role="front" id="cc4">
             <head role="cc">技術のアクセシビリティ・サポーテッドな使用方法のみ</head>
           <p role="cc"> 達成基準を満たすためには、用いる
-<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ・サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ・サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照）。
+<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ・サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ・サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc>を参照）。
 
           </p>
         </div3>
@@ -1013,7 +1013,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <div3 role="front">
           <head role="suppressed"/>
           <note><p>もし、あるウェブページが適合できないならば、そのウェブページを適合あるいは適合宣言の範囲に含めることはできない（例えば、適合しない悪い事例を紹介するためのウェブページも適合できない）。</p></note>
-            <p role="sctxt">事例も含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding">適合要件を理解する</loc>を参照。
+            <p role="sctxt">事例も含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding" hreflang="en">Understanding Conformance Requirements</loc>を参照。
           </p>
         </div3>
       </div2>
@@ -1087,8 +1087,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </item>
           </ulist>
           <note>
-            <p>より多くの情報や適合宣言の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding">適合宣言を理解する</loc>を参照。</p>
-              <p>適合宣言内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding">メタデータを理解する</loc>を参照。</p>
+            <p>より多くの情報や適合宣言の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc>を参照。</p>
+              <p>適合宣言内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc>を参照。</p>
           </note>
         </div3>
       </div2>
@@ -1215,11 +1215,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-                <p>WCAG Working Group ならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照）。</p>
+                <p>WCAG Working Group ならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding" hreflang="en">Level of Assistive Technology Support Needed for "Accessibility Support"</loc>を参照）。</p>
                 <p>そのウェブ技術に<termref def="reliedupondef">依存</termref>しておらず、<specref ref="cc4"/>及び<specref ref="cc5"/>を含む適合要件をウェブページ全体が満たしている場合は、そのウェブ技術をアクセシビリティ・サポーテッドではない方法で用いることができる。</p>
                 <p><termref def="technologydef">ウェブ技術</termref>がアクセシビリティ・サポーテッドな方法で用いられている場合、その技術全体、又はその技術の使用方法すべてがアクセシビリティ・サポーテッドであるということを暗に示すわけではない。ほとんどの技術は、HTML を含めてアクセシビリティ・サポーテッドではない機能、又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、依存する技術のアクセシビリティ・サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。</p>
               <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ・サポーテッドなバージョンを特定すべきである。</p>
-                <p>コンテンツ制作者が技術のアクセシビリティ・サポーテッドな使用方法を見つける方法の一つは、アクセシビリティ・サポーテッドであることが文書化されている使用方法の資料を参考にすることである（<loc href="conformance" linktype="understanding" locn-note="uc-documented-lists-head">ウェブ技術のアクセシビリティ・サポーテッドな使用法を理解する</loc>を参照）。コンテンツ制作者、企業、技術ベンダー、あるいはその他の者が、ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法を文書化してもよい。しかし、文書中の技術の使用方法すべては、前述のアクセシビリティ・サポーテッドなウェブコンテンツ技術の定義を満たしていなければならない。
+                <p>コンテンツ制作者が技術のアクセシビリティ・サポーテッドな使用方法を見つける方法の一つは、アクセシビリティ・サポーテッドであることが文書化されている使用方法の資料を参考にすることである（<loc href="conformance" linktype="understanding" locn-note="uc-documented-lists-head" hreflang="en">Understanding Accessibility-Supported Web Technology Uses</loc>を参照）。コンテンツ制作者、企業、技術ベンダー、あるいはその他の者が、ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法を文書化してもよい。しかし、文書中の技術の使用方法すべては、前述のアクセシビリティ・サポーテッドなウェブコンテンツ技術の定義を満たしていなければならない。
               </p>
             </note>
           </def>
@@ -1438,7 +1438,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>代替版は、元のページを補助して理解を高める<termref def="suppcontentdef">補足的なコンテンツ</termref>と混同されないようにすべきである。</p>
               <p>コンテンツ内で利用者が設定を行うことで適合版が作り出される仕組みは、その利用者の設定に用いられている手法がアクセシビリティ・サポーテッドであるかぎり、代替版への到達メカニズムとして条件を満たしているといえる。</p>
             </note>
-            <p role="circref"><loc href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替バージョンを理解する</loc>を参照。
+            <p role="circref"><loc href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding" hreflang="en">Understanding Conforming Alternate Versions</loc>を参照。
             </p>
           </def>
         </gitem>
@@ -1934,7 +1934,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <note role="nonumber">
                 <p>^ という記号は、指数演算子である（計算式は、<bibref ref="sRGB"/> 及び <bibref ref="IEC-4WD"/>を参考にしている）。</p>
               </note>
-              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB符号化を前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて計算するべきである。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding">達成基準1.4.3を理解する</loc>を参照。</p>
+              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB符号化を前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて計算するべきである。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding" hreflang="en">Understanding Success Criterion 1.4.3</loc>を参照。</p>
                 <!-- BBC: the following note was moved down from the definition of contrast ratio and editorially revised. Relates somewhat to 2548. -->
               <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
               <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。</p>
@@ -2119,7 +2119,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 </p>
             </example>
               <note>
-                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding">「代替テキスト」を理解する</loc>を参照。</p>
+                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding" hreflang="en">Understanding Text Alternatives</loc>を参照。</p>
               </note>
           </def>
         </gitem>
