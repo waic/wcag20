@@ -935,7 +935,7 @@
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
         <xsl:text> </xsl:text>
-            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}"><xsl:call-template name="sc-number">Understanding <xsl:with-param name="criterion" select="."/></xsl:call-template>
+            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
         </a></p></div>
        
        
