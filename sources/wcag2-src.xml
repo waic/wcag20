@@ -4,7 +4,7 @@
   <header>
       <title>Web Content Accessibility Guidelines (WCAG)</title>
     <trdisclaimer>
-<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">2008年12月11日付の W3C 勧告「WCAG 2.0」（原文は英語）</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「WCAG 2.0」を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
+<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」（原文は英語）</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「WCAG 2.0」を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
     </trdisclaimer>
     <version>2.0</version>
     <w3c-designation>WCAG20</w3c-designation>
@@ -15,16 +15,16 @@
         <year>2008年</year>
     </pubdate>
     <publoc>
-        <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>
+        <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>
     </publoc>
     <altlocs>
 <loc href="http://www.w3.org/WAI/WCAG20/versions/guidelines/" hreflang="en">Alternate Versions of Web Content Accessibility Guidelines 2.0</loc>
     </altlocs>
     <latestloc>
-      <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>
+      <loc href="http://www.w3.org/TR/WCAG20/" hreflang="en">http://www.w3.org/TR/WCAG20/</loc>
     </latestloc>
     <prevlocs>
-        <loc href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/">http://www.w3.org/TR/2008/PR-WCAG20-20081103/</loc>
+        <loc href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/" hreflang="en">http://www.w3.org/TR/2008/PR-WCAG20-20081103/</loc>
     </prevlocs>
     <authlist>
       <author role="current">
@@ -71,8 +71,8 @@
   		<p><emph>この節では、この文書の発行された時点でのステータスを説明する。この文書が、他の文書によって置き換えられている場合もある。現行のW3Cの発行文書及びこのテクニカル レポートの改訂版は、
 
 
-<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
-  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
+<loc href="http://www.w3.org/TR/" hreflang="en">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
+  		<p>これは、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">Web Content Accessibility Guidelines Working Group</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
 W3C 勧告</loc> の WCAG 2.0 である。
 </p>
   		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いること、他の文書で引用することができる。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能及び相互運用性の向上につながる。</p>
@@ -101,13 +101,13 @@ WCAG Working Groupの目的については、 <loc
  </loc>の一つである。</p>
   		<p>この文書は、<loc
   			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
-</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
-  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)
+  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential" hreflang="en">Essential Claim(s)
 </loc>を含んでいると思われる特許について知識のある人は、<loc
-  					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
+  					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure" hreflang="en">
 section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しなければならない。</p>
   	</status>
   	<langusage>
@@ -115,7 +115,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
     </langusage>
     <revisiondesc>
       <p>
-        <loc href="/WAI/GL/WCAG20/change-history.html">History of Changes to WCAG 2.0 Working Drafts</loc>
+        <loc href="/WAI/GL/WCAG20/change-history.html" hreflang="en">History of Changes to WCAG 2.0 Working Drafts</loc>
       </p>
     </revisiondesc>
   </header>
@@ -125,7 +125,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <p>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、様々な障害と関係がある。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。又、このガイドラインは、加齢により様々な能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであり、しばしば利用者全般のユーザビリティを向上させる。
       </p>
-      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人及び組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されている。又、自動テスト及び人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
+      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人及び組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php" hreflang="en">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されている。又、自動テスト及び人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
       <p>ウェブ アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールも又ウェブ アクセシビリティにおいて重要な役割を担っている。こういったウェブ開発やインタラクションが相互にどのように関係しているかの概要については、以下を参照：</p>
       <ulist>
         <item>
@@ -1032,7 +1032,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <item>
               <p>
                 <emph role="bold">ガイドライン名、バージョン、及び URI
-                </emph> ：例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
+                </emph> ：例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
               </p>
             </item>
             <item>
@@ -2192,7 +2192,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p><termref def="useragentdef">ユーザエージェント</termref>
 は、 一つ以上のビューポートでコンテンツを提示する。ビューポートには、ウィンドウ、フレーム、スピーカー、そして拡大鏡ソフトなどがある。ビューポートは、他のビューポートを含んでいることがある。（例えば、入れ子のフレーム）プロンプト、メニュー、アラートのように、ユーザエージェントが作成するインターフェース コンポーネントは、ビューポートではない。</p>
-              <p>この定義は、<loc href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0: 4. Glossary</loc>をもとにしている。</p>
+              <p>この定義は、<loc href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html" hreflang="en">User Agent Accessibility Guidelines 1.0: 4. Glossary</loc>をもとにしている。</p>
             </note>
           </def>
         </gitem>
@@ -2265,12 +2265,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>参考文献</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <blist>
-        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project<loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
+        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project<loc href="http://www.captcha.net" hreflang="en">http://www.captcha.net</loc>.</bibl>
         <bibl id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
         <bibl id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB. May 5, 1998.</bibl>
-        <bibl id="sRGB">A Standard Default Color Space for the Internet - sRGB, M. Stokes<loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
-        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
-        <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation, 5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. The latest version of WCAG 1.0 is available at <loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>.</bibl>
+        <bibl id="sRGB">A Standard Default Color Space for the Internet - sRGB, M. Stokes<loc href="http://www.w3.org/Graphics/Color/sRGB.html" hreflang="en">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
+        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm" hreflang="en">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
+        <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation, 5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. The latest version of WCAG 1.0 is available at <loc href="http://www.w3.org/TR/WAI-WEBCONTENT/" hreflang="en">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>.</bibl>
       </blist>
     </inform-div1>
   </back>
