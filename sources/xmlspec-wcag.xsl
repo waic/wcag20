@@ -890,7 +890,7 @@
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
           </h3>
-              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
+              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
               </a></p>
           </div>
       </xsl:otherwise>
@@ -935,7 +935,7 @@
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
         <xsl:text> </xsl:text>
-            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
+            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}" hreflang="en">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
         </a></p></div>
        
        
@@ -1098,7 +1098,7 @@
       <xsl:when test="@linktype='understanding'">
 		<xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@href]" mode="slice-understanding-filename"/></xsl:variable>
 		<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
-        <a href="{$guidethisversion}{$filename}{$fragment}">
+        <a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -1226,7 +1226,7 @@
 			<xsl:variable name="fragment"><xsl:if test="../@id != substring-before($filename, '.')">#<xsl:value-of select="../@id"/></xsl:if></xsl:variable>
 					[<xsl:choose>
               <xsl:when test="/spec/@w3c-doctype='review'">
-				<a href="{$guidethisversion}{$filename}{$fragment}">
+				<a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">
 				  How to Meet <xsl:call-template name="sc-number"/>
 				</a>
                 <!--<a href="{$guidethisversion}Overview#{../@id}">How to Meet <xsl:call-template name="sc-number"/>
