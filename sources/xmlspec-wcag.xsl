@@ -890,7 +890,7 @@
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
           </h3>
-              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}">ガイドライン<xsl:number level="multiple" count="div2 | div3" format="1.1"/>を理解する
+              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
               </a></p>
           </div>
       </xsl:otherwise>
@@ -935,7 +935,7 @@
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
         <xsl:text> </xsl:text>
-            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="達成基準{$scnum}を理解する"><xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>を理解する
+            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}"><xsl:call-template name="sc-number">Understanding <xsl:with-param name="criterion" select="."/></xsl:call-template>
         </a></p></div>
        
        
