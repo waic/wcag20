@@ -23,7 +23,7 @@
     <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
 -->
-  <xsl:param name="guidethisversion">../UNDERSTANDING-WCAG20/</xsl:param>
+  <xsl:param name="guidethisversion">http://www.w3.org/TR/UNDERSTANDING-WCAG20/</xsl:param>
 <!--
   <xsl:param name="guidethisversion">
 -->
