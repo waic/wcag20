@@ -930,7 +930,7 @@
         <p class="supportlinks"><xsl:variable name="scnum"><xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template></xsl:variable>
         <xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@id]" mode="slice-understanding-filename"/></xsl:variable>
         <xsl:variable name="fragment"><xsl:if test="@id != substring-before($filename, '.')">#<xsl:value-of select="@id"/></xsl:if></xsl:variable>
-            <a href="{$quickrefthisversion}#qr-{@id}" class="HTMlink" title="How to Meet Success Criterion {$scnum}">How to Meet <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
+            <a href="{$quickrefthisversion}#qr-{@id}" class="HTMlink" title="How to Meet Success Criterion {$scnum}" hreflang="en">How to Meet <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
             </a>
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
