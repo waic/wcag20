@@ -1713,10 +1713,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="lowseceddef">
           <label>前期中等教育レベル (lower secondary education level)</label>
           <def>
-            <p>6年間の学校教育後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年間あるいは3年間の教育。
+            <p>6年間の学校教育卒業の後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年、又は3年の教育期間。
             </p>
             <note>
-              <p>この定義は、教育の国際標準分類 (International Standard Classification of Education) <bibref ref="UNESCO"/>をもとにしている。</p>
+              <p>この定義は、"International Standard Classification of Education" <bibref ref="UNESCO"/>に基づいている。</p>
             </note>
           </def>
         </gitem>
