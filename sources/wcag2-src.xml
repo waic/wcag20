@@ -552,7 +552,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="keyboard-operation-all-funcs">
               <head>キーボード（例外なし）</head>
-              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボード インタフェース</termref>を通じて操作可能である。　　      </p>
+              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボード インタフェース</termref>を通じて操作可能である。
+      </p>
             </div5>
           </div4>
         </div3>
@@ -659,7 +660,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="seizure-three-times">
               <head>3回の閃光</head>
               <p role="v">
-                <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない。　</p>
+                <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない。</p>
             </div5>
           </div4>
         </div3>
@@ -778,14 +779,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="meaning-supplements">
               <head>読解レベル</head>
-              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。　
+              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。
 
 
 </p>
             </div5>
             <div5 role="sc" id="meaning-pronunciation">
               <head>発音</head>
-              <p role="v"> 文脈において、発音が分からないと単語の意味が不明瞭になる場合、その単語の明確な発音を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。　
+              <p role="v"> 文脈において、発音が分からないと単語の意味が不明瞭になる場合、その単語の明確な発音を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。
               </p>
             </div5>
           </div4>
@@ -828,7 +829,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="consistent-behavior-no-extreme-changes-context">
               <head>要求による変化</head>
               <p role="v">
-                <termref def="context-changedef">コンテキストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。　</p>
+                <termref def="context-changedef">コンテキストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
             </div5>
           </div4>
         </div3>
@@ -880,7 +881,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="minimize-error-context-help">
               <head>ヘルプ</head>
               <p role="v">
-                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用できる。　</p>
+                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用できる。</p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible-all">
               <head>エラー回避（すべて）</head>
@@ -1880,7 +1881,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="real-time-eventsdef">
           <label>リアルタイムのイベント</label>
           <def>
-            <p>a)　閲覧と同時に発生し、b) コンテンツだけで生成されるものではないイベント。</p>
+            <p>a)閲覧と同時に発生し、b) コンテンツだけで生成されるものではないイベント。</p>
             <example>
               <p>ライブパフォーマンスのウェブ放送（閲覧と同時に発生していて、収録済ではない）。</p>
               <p>利用者が入札するオンラインのオークション（閲覧と同時に発生している）。
