@@ -2278,15 +2278,15 @@ Takayuki Watanabe, Jason White.</p>
       <head>参考文献</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <blist>
-        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. The project is online at <loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
+        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. このプロジェクトは、<loc href="http://www.captcha.net">http://www.captcha.net</loc>で公開されている。</bibl>
         <bibl id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
         <bibl id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space -
 sRGB. May 5, 1998.</bibl>
         <bibl id="sRGB">"A Standard Default Color Space for the Internet - sRGB," M. Stokes, M. Anderson, S. Chandrasekar, R. Motta, eds., Version 1.10,
-November 5, 1996. A copy of this paper is available at <loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
-        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. A copy of the standard is available at <loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
+November 5, 1996. この文献は、<loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>から入手できる。</bibl>
+        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. この標準は、<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>から入手できる。</bibl>
         <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation,
-5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. The latest version of WCAG 1.0 is available at <loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>.</bibl>
+5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. WCAg 1.0の最新版は、<loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>から入手できる。</bibl>
       </blist>
     </inform-div1>
   </back>
