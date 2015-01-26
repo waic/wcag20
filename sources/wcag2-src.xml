@@ -1817,7 +1817,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>5～7歳の間に始まる6年間の教育で、その前には教育を受けた期間がない場合もある。</p>
             <note>
-              <p>この定義は、教育の国際標準分類 (International Standard Classification of Education) <bibref ref="UNESCO"/>をもとにしている。</p>
+              <p>この定義は、"International Standard Classification of Education" <bibref ref="UNESCO"/>に基づいている。</p>
             </note>
           </def>
         </gitem>
