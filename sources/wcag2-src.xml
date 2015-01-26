@@ -1130,7 +1130,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <glist id="terms">
           <!-- " be sure to double-check that these are in alphabetical order -->
         <gitem id="abbreviationsdef">
-          <label>略語</label>
+          <label>略語 (abbreviation)</label>
           <def>
             <p>単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。
             </p>
@@ -1165,7 +1165,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="accessibility-supporteddef">
-          <label>アクセシビリティ サポーテッド</label>
+          <label (accessibility supported)>アクセシビリティ サポーテッド</label>
           <def>
             <p>利用者の<termref def="atdef">支援技術</termref>と、ブラウザ及びその他の<termref def="useragentdef">ユーザエージェント</termref>にあるアクセシビリティ機能でサポートされていること。
             </p>
@@ -1226,7 +1226,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
           <gitem id="alt-time-based-mediadef">
-              <label>時間依存メディアに対する代替コンテンツ</label>
+              <label>時間依存メディアに対する代替コンテンツ (alternative for time-based media)</label>
               <def>
                   <p>正しい順序で提供されている、時間に依存する視覚的及び聴覚的情報のテキストによる説明（トランスクリプト）を含み、時間に依存する情報のやりとりの結果を得る手段を提供する文書。 
                   </p>
@@ -1236,7 +1236,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </def>
           </gitem>
         <gitem id="ambiguouslinkdef">
-          <label>ほとんどの利用者にとって曖昧</label>
+          <label>ほとんどの利用者にとって曖昧 (ambiguous to users in general)</label>
           <def>
             <p>リンク、及びリンクと同時に利用者に提供されているウェブページのどの情報からも、そのリンクの目的を解釈できない（すなわち、障害のない閲覧者でも、そのリンクを動作させるまで、そのリンクが何をするのか分からない）。</p>
             <example>
@@ -1245,14 +1245,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="asciiartdef">
-          <label>ASCII アート</label>
+          <label>ASCII アート (ASCII art)</label>
           <def>
             <p>文字やグリフの空間的配置によって作られた図画 （典型的には、ASCIIで定義されている95の印字可能文字から作られる）
             </p>
           </def>
         </gitem>
         <gitem id="atdef">
-          <label>（この文書で用いられている）支援技術</label>
+          <label>（この文書で用いられている）支援技術 (assistive technology)</label>
           <def>
             <p><termref def="useragentdef">ユーザエージェント</termref>として機能する、又は主流のユーザエージェントと一緒に機能するハードウェア及び/あるいはソフトウェアで、主流のユーザエージェントで提供されている機能以上の機能を、障害のある利用者の要求を満たすために提供するもの。
             </p>
@@ -1292,14 +1292,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="audiodef">
-          <label>音声</label>
+          <label>音声 (audio)</label>
           <def><p>音声再生の技術。</p>
             <note><p>音声は、合成的に生成されたもの（音声合成を含む）、実世界で録音したもの、又はその両方でもありうる。</p></note>
           </def>
         </gitem>
         
         <gitem id="audiodescdef">
-          <label>音声解説</label>
+          <label>音声解説 (audio description)</label>
           <def>
             <p>主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。</p>
             <note>
@@ -1313,13 +1313,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="audio-onlydef">
-          <label>音声しか含まない</label>
+          <label>音声しか含まない (audio-only)</label>
           <def>
             <p><termref def="audiodef">音声</termref>のみを含んだ、時間に依存する提示（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="blinksdef">
-          <label>点滅</label>
+          <label>点滅 (blinking)</label>
           <def>
             <p>注意を引くために、二つの視覚的な状態を交互に切り替えること。
             </p>
@@ -1330,7 +1330,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="blockstextdef">
-          <label>テキスト ブロック</label>
+          <label>テキスト ブロック (blocks of text)</label>
           <def>
             <p>一文よりも長いテキスト。</p>
           </def>
@@ -1346,7 +1346,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="captionsdef">
-          <label>キャプション</label>
+          <label>キャプション (captions)</label>
           <def>
             <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報に対する、同期した視覚、又は<termref def="text-altdef">テキストによる代替</termref>。</p>
             <note>
@@ -1361,7 +1361,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="context-changedef">
-          <label>コンテキストの変化</label>
+          <label>コンテキストの変化 (changes of context)</label>
           <def>
             <p><termref def="webpagedef">ウェブページ</termref>のコンテンツにおける大きな変化で、利用者が気づかないと、ウェブページ全体を一度に見ることのできない利用者を混乱させる恐れのあるもの。</p>
             <p>状況の変化には次に挙げるものの変化が含まれる：</p>
@@ -1392,7 +1392,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="conformancedef">
-          <label>適合</label>
+          <label>適合 (conformance)</label>
           <def>
             <p>
 定められた標準、ガイドライン、あるいは仕様のすべての要件を満たすこと。
@@ -1401,7 +1401,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="conforming-alternate-versiondef">
-          <label>適合している代替版</label>
+          <label>適合している代替版 (conforming alternate version)</label>
           <def>
             <p>以下の事項を満たす版のことを指す：</p>
             <olist>
@@ -1445,7 +1445,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="contentdef">
-          <label>コンテンツ（ウェブコンテンツ）</label>
+          <label>コンテンツ（ウェブコンテンツ） (content (Web content))</label>
           <def>
             <p>
 <termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報及び感覚的な体験。コンテンツの
@@ -1455,14 +1455,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="context-sensitivehelpdef">
-          <label>状況に応じたヘルプ</label>
+          <label>状況に応じたヘルプ (context-sensitive help)</label>
           <def>
             <p>そのとき実行されている機能に関する情報を提供するヘルプのテキスト。</p>
               <note><p>分かりやすいラベルは、状況に応じたヘルプとして機能しうる。</p></note>
           </def>
         </gitem>
         <gitem id="contrast-ratiodef">
-          <label>コントラスト比</label>
+          <label>コントラスト比 (contrast ratio)</label>
           <def>
             <p>(L1 + 0.05) / (L2 + 0.05)    ここでは、</p>
             <ulist>
@@ -1485,24 +1485,24 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="correct-reading-sequencedef">
-          <label>正しく読む順序</label>
+          <label>正しく読む順序 (correct reading sequence)</label>
           <def>
             <p>コンテンツの意味を変更せずに、単語や段落が提示される順序。</p>
           </def>
         </gitem>
         <gitem id="emergencydef">
-          <label>緊急</label>
+          <label>緊急 (emergency)</label>
           <def>
             <p>健康、安全や財産を守るために直ちに行動をとる必要のある、突然で予期されなかった状況あるいは出来事。</p>
           </def>
         </gitem>
         <gitem id="essentialdef">
-          <label>必要不可欠</label>
+          <label>必要不可欠 (essential)</label>
           <def><p>もし取り除いてしまうと、コンテンツの情報あるいは機能を根本的に変えてしまい、<emph role="bold">かつ、</emph>適合する他の方法では情報及び機能を実現できない。</p> </def>
         </gitem>
         
         <gitem id="extended-addef">
-          <label>拡張音声解説</label>
+          <label>拡張音声解説 (extended audio description)</label>
           <def>
             <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚の提示に付加した音声解説。</p>
             <note>
@@ -1511,7 +1511,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="flash-def">
-          <label>閃光</label>
+          <label>閃光 (flash)</label>
           <def>
             <p><termref def="relativeluminancedef">相対輝度</termref>の交互の変化で、ある程度の面積と特定の頻度によって、一部の人の発作を誘発する恐れがあるもの。</p>
             <note>
@@ -1521,7 +1521,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
 <gitem id="functiondef">
-          <label>機能性</label>
+          <label>機能性 (functionality)</label>
           <def>
             <p>
 利用者の操作により実現可能な<termref def="processdef">プロセス</termref>及び結果。</p>
@@ -1529,7 +1529,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="general-thresholddef">
-          <label>一般閃光閾値及び赤色閃光閾値</label>
+          <label>一般閃光閾値及び赤色閃光閾値 (general flash and red flash thresholds)</label>
           <def>
             <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>、又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる：</p>
            
@@ -1566,7 +1566,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="human-langdef">
-          <label>自然言語</label>
+          <label>自然言語 (human language)</label>
           <def>
             <p>
 人間とコミュニケーションをとるための言語で、話される、書かれる、又は（視覚的あるいは触覚的な手段で）手話にされるもの。
@@ -1577,7 +1577,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="idiomsdef">
-          <label>慣用句</label>
+          <label>慣用句 (idiom)</label>
           <def>
             <p>個々の単語の意味からはその意味を推測できず、そこにある単語を変えると意味が通じなくなる言い回し。</p>
             <note>
@@ -1596,7 +1596,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="images-of-textdef">
-          <label>文字画像</label>
+          <label>文字画像 (image of text)</label>
           <def><p>特定の視覚的効果を得るために非テキスト形式（例えば画像）でレンダリングされたテキスト。</p>
             <note><p><termref def="textdef">テキスト</termref>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。</p></note>
             <example><p>写真に写っている人の名札にある人名。</p></example>
@@ -1605,7 +1605,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         
         
         <gitem id="informativedef">
-          <label>参考情報</label>
+          <label>参考情報 (informative)</label>
           <def>
             <p>情報提供を目的にしたものであり、適合するために必須のものではない。</p>
             <note>
@@ -1615,7 +1615,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="input-errordef">
-          <label>入力エラー</label>
+          <label>入力エラー (input error)</label>
           <def>
             <p>利用者が提供した情報で、受け付けられないもの。</p>
             <note>
@@ -1632,7 +1632,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="jargondef">
-          <label>専門用語</label>
+          <label>専門用語 (jargon)</label>
           <def>
             <p>特定の分野の人々が特定の用法で用いる単語</p>
             <example>
@@ -1641,7 +1641,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="keybrd-interfacedef">
-          <label>キーボード インターフェース</label>
+          <label>キーボード インターフェース (keyboard interface)</label>
           <def>
             <p>キーストローク入力を取得するためにソフトウェアが用いるインターフェース。</p>
             <note>
@@ -1654,7 +1654,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="labeldef">
-          <label>ラベル</label>
+          <label>ラベル (label)</label>
           <def>
             <p>
 ウェブ<termref def="contentdef">コンテンツ</termref>
@@ -1672,7 +1672,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="larger-scaledef">
-          <label>サイズの大きな（テキスト）</label>
+          <label>サイズの大きな（テキスト） (large scale (text))</label>
           <def>
             <p>少なくとも18ポイント、又は14ポイントの太字。あるいは、中国語、日本語、及び韓国語（CJK）のフォントは、それと同等の文字サイズ。
             </p>
@@ -1687,7 +1687,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="legalcommitmentsdef">
-          <label>法律行為</label>
+          <label>法律行為 (legal commitments)</label>
           <def>
             <p>法的に拘束力のある義務あるいは利益が発生する取引。</p>
             <example>
@@ -1698,12 +1698,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         
         
         <gitem id="linkpurposedef">
-          <label>リンクの目的</label>
+          <label>リンクの目的 (link purpose)</label>
           <def>
             <p>ハイパーリンクを動作させたときに得られる結果の本質。</p>
           </def>
         </gitem><gitem id="livedef">
-          <label>ライブ</label>
+          <label>ライブ (live)</label>
           <def><p>実世界のイベントから取り込まれ、放送による遅延以上の遅延なく受け手に送信される情報。</p>
             <note><p>放送の遅延は、短時間の（通常は自動的に挿入される）遅れで、例えば放送局に放送のタイミングの調整や音声（又は映像）の検閲のための時間を与えるものだが、意味のある編集ができるほどの長さではない。</p>
               <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p></note></def>
@@ -1711,7 +1711,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         
         
         <gitem id="lowseceddef">
-          <label>前期中等教育レベル</label>
+          <label>前期中等教育レベル (lower secondary education level)</label>
           <def>
             <p>6年間の学校教育後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年間あるいは3年間の教育。
             </p>
@@ -1721,7 +1721,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="mechanismdef">
-          <label>メカニズム</label>
+          <label>メカニズム (mechanism)</label>
           <def>
             <p>
 結果を得るための<termref def="processdef">プロセス</termref>又は手法。</p>
@@ -1733,7 +1733,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="multimedia-alt-textdef">
-          <label>テキストの代替メディア</label>
+          <label>テキストの代替メディア (media alternative for text)</label>
           <def>
             <p>テキストで（直接又は代替テキストによって）既に提示されている情報以上のものを提示していないメディア。
               
@@ -1758,14 +1758,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="nav-seqdef">
-          <label>順を追ってナビゲート</label>
+          <label>順を追ってナビゲート (navigated sequentially)</label>
           <def>
             <p><termref def="keybrd-interfacedef">キーボード インターフェース</termref>を用いて、フォーカスを前進させるために，指定された順序でナビゲートすること。
             </p>
           </def>
         </gitem>
         <gitem id="non-text-contentdef">
-          <label>非テキストコンテンツ</label>
+          <label>非テキストコンテンツ (non-text content)</label>
           <def>
             <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
             </p>
@@ -1776,7 +1776,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="normativedef">
-          <label>規定</label>
+          <label>規定 (normative)</label>
           <def>
             <p>適合に必須とされるもの</p>
             <note>
@@ -1786,7 +1786,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="fullscreenwindowdef">
-          <label>全画面表示のウィンドウで</label>
+          <label>全画面表示のウィンドウで (on a full-screen window)</label>
           <def><p>最も一般的なデスクトップ/ラップトップのディスプレイで、ビューポートを最大化した状態。</p>
           <note>
               <p>利用者は一般的にコンピュータを数年間使い続けるので、最新のデスクトップやラップトップの画面解像度を基準にするのではなく、数年間にわたって一般的なデスクトップやラップトップの画面解像度を考慮するのが望ましい。
@@ -1794,16 +1794,16 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </note></def>
         </gitem>
         <gitem id="pauseddef">
-          <label>一時停止</label>
+          <label>一時停止 (paused)</label>
           <def>
             <p>利用者の要求により停止し、利用者の要求があるまで再開しない。</p>
           </def>
         </gitem>
         <gitem id="prerecordeddef">
-          <label>収録済</label>
+          <label>収録済 (prerecorded)</label>
           <def><p><termref def="livedef">ライブ</termref>ではない情報。</p></def>
         </gitem><gitem id="presentationdef">
-          <label>提示</label>
+          <label>提示 (presentation)</label>
           <def>
             <p>
               
@@ -1813,7 +1813,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem>
         
         <gitem id="primseceddef">
-          <label>初等教育レベル</label>
+          <label>初等教育レベル (primary education level)</label>
           <def>
             <p>5～7歳の間に始まる6年間の教育で、その前には教育を受けた期間がない場合もある。</p>
             <note>
@@ -1822,7 +1822,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="processdef">
-          <label>プロセス</label>
+          <label>プロセス (process)</label>
           <def>
             <p>ある活動を完了させるために必要な利用者の一連の動作。</p>
             <example>
@@ -1832,7 +1832,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="programmaticallydetermineddef">
-          <label>プログラムが解釈（プログラムが解釈可能）</label>
+          <label>プログラムが解釈（プログラムが解釈可能） (programmatically determined (programmatically determinable))</label>
           <def>
             <p>              <termref def="atdef">支援技術</termref>
 を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
@@ -1844,7 +1844,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="pdlinkcontextdef">
-          <label>プログラムが解釈可能なリンクのコンテキスト</label>
+          <label>プログラムが解釈可能なリンクのコンテキスト (programmatically determined link context)</label>
           <def>
             <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムが解釈可能</termref>であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
             </p>
@@ -1859,7 +1859,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="programmaticallysetdef">
-          <label>プログラムが設定</label>
+          <label>プログラムが設定 (programmatically set)</label>
           <def>
             <p>支援技術を含むユーザエージェントがサポートしている手法を用いてソフトウェアが設定する。
               
@@ -1867,7 +1867,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="puredecdef">
-          <label>純粋な装飾</label>
+          <label>純粋な装飾 (pure decoration)</label>
           <def>
             <p>見栄えのためだけのもので、情報は提供せず、機能性も備えていないもの。</p>
             <note>
@@ -1879,7 +1879,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="real-time-eventsdef">
-          <label>リアルタイムのイベント</label>
+          <label>リアルタイムのイベント (real-time event)</label>
           <def>
             <p>a)閲覧と同時に発生し、b) コンテンツだけで生成されるものではないイベント。</p>
             <example>
@@ -1893,7 +1893,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="relationshipsdef">
-          <label>関係性</label>
+          <label>関係性 (relationships)</label>
           <def>
             <p>
 コンテンツの異なる部分間における意味のある関係。
@@ -1902,7 +1902,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="relativeluminancedef">
-          <label>相対輝度</label>
+          <label>相対輝度 (relative luminance)</label>
           <def>
             <p>最も暗い黒を0に、最も明るい白を1に正規化した色空間内の任意の点の相対的な明るさ。</p>
             <note>
@@ -1950,7 +1950,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="reliedupondef">
-          <label>依存されている（技術）</label>
+          <label>依存されている（技術） (relied upon (technologies that are))</label>
           <def>
             <p>その<termref def="technologydef">技術</termref>が無効になっている場合、又はサポートされていない場合に、コンテンツが<termref def="conformancedef">適合</termref>できないこと。</p>
           </def>
@@ -1965,7 +1965,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="samefunctionalitydef">
-          <label>同じ機能性</label>
+          <label>同じ機能性 (same functionality )</label>
           <def>
             <p>
               
@@ -1977,7 +1977,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="samerelorderdef">
-          <label>相対的に同じ順序</label>
+          <label>相対的に同じ順序 (same relative order)</label>
           <def>
             <p>他の項目との相対位置が同じ。</p>
             <note>
@@ -1986,12 +1986,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="satisfiesdef">
-          <label>達成基準を満たす</label>
+          <label>達成基準を満たす (satisfies a success criterion)</label>
           <def>
             <p>ウェブページに適用した際、その達成基準が「不合格」と判定されない</p>
           </def>
         </gitem><gitem id="sectiondef">
-          <label>セクション</label>
+          <label>セクション (section)</label>
           <def>
             <p>一つ以上の関連するトピック又は考えを扱う自己完結的なコンテンツの一部。</p>
             <note>
@@ -1999,7 +1999,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="set-of-web-pagesdef">
-          <label>ウェブページ一式</label>
+          <label>ウェブページ一式 (set of Web pages)</label>
           <def>
             <p>共通の目的を共有し、同じコンテンツ制作者、グループ、又は組織により制作された<termref def="webpagedef">ウェブページ</termref>の集合。
 
@@ -2013,7 +2013,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         
         
         <gitem id="sign-languagedef">
-          <label>手話</label>
+          <label>手話 (sign language)</label>
           <def>
             <p>手と腕、顔の表情、あるいは身体の位置などの動きを組み合わせて意味を伝える言語。
 
@@ -2021,7 +2021,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="sign-languageinterpdef">
-          <label>手話通訳</label>
+          <label>手話通訳 (sign language interpretation)</label>
           <def>
             <p>ある言語、通常は発話された言葉を、<termref def="sign-languagedef">手話</termref>に訳すこと。
             </p>
@@ -2033,7 +2033,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="sensoryexpdef">
-          <label>特定の感覚的な体験</label>
+          <label>特定の感覚的な体験 (specific sensory experience)</label>
           <def>
             <p>純粋な装飾ではなく、かつ重要な情報の伝達、又は機能の提供を主目的としない感覚的な体験。</p>
             <example>
@@ -2045,7 +2045,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="structuredef">
-          <label>構造</label>
+          <label>構造 (structure)</label>
           <def>
             <olist>
               <item>
@@ -2060,7 +2060,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="suppcontentdef">
-          <label>補足的コンテンツ</label>
+          <label>補足的コンテンツ (supplemental content)</label>
           <def>
             <p>元のコンテンツを説明、又はより明確にするために付加された<termref def="contentdef">コンテンツ</termref>。
             </p>
@@ -2079,7 +2079,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="synchronizedmediadef">
-          <label>同期したメディア</label>
+          <label>同期したメディア (synchronized media)</label>
           <def>
             <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間に依存するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
 <termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされているものは除く。
@@ -2087,7 +2087,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="technologydef">
-          <label>（ウェブコンテンツ）技術</label>
+          <label>（ウェブコンテンツ）技術 (technology (Web content))</label>
           <def>
             <p>
               <termref def="useragentdef">ユーザエージェント</termref>がどのようにレンダリング、再生、又は実行するかを符号化する<termref def="mechanismdef">メカニズム</termref>。
@@ -2104,14 +2104,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="textdef">
-          <label>テキスト</label>
+          <label>テキスト (text)</label>
           <def>
             <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
             </p>
           </def>
         </gitem>
         <gitem id="text-altdef">
-          <label>代替テキスト</label>
+          <label>代替テキスト (text alternative)</label>
           <def>
               <p><termref def="non-text-contentdef">非テキストコンテンツ</termref>とプログラムで関連付けられる<termref def="textdef">テキスト</termref>。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムが解釈可能なテキストである。</p>
             <example>
@@ -2125,7 +2125,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="unusual-restricteddef">
-          <label>一般的ではない、又は限定された用法で使われている</label>
+          <label>一般的ではない、又は限定された用法で使われている (used in an unusual or restricted way)</label>
           <def>
             <p>そのコンテンツを正しく理解するために、そこではどの定義が適用されるのかを利用者が正確に理解していることを要求するように用いられる用語。</p>
             <example>
@@ -2134,7 +2134,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="useragentdef">
-          <label>ユーザエージェント</label>
+          <label>ユーザエージェント (user agent)</label>
           <def>
             <p>ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
             <example>
@@ -2144,7 +2144,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="user-controllabledef">
-          <label>利用者が制御可能</label>
+          <label>利用者が制御可能 (user-controllable)</label>
           <def>
             <p>利用者によってアクセスされることを意図したデータ。</p>
             <note>
@@ -2156,7 +2156,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="user-interface-componentdef">
-          <label>ユーザ インターフェース コンポーネント</label>
+          <label>ユーザ インターフェース コンポーネント (user interface component)</label>
           <def>
             <p>コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。</p>
             <note>
@@ -2170,7 +2170,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="videodef">
-          <label>映像</label>
+          <label>映像 (video)</label>
           <def>
             <p>連続した写真や画像を動かす技術。</p>
             <note>
@@ -2178,13 +2178,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem><gitem id="video-onlydef">
-          <label>映像しか含まない</label>
+          <label>映像しか含まない (video-only)</label>
           <def>
             <p><termref def="videodef">映像</termref>しか含まない、時間に依存する提示（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
           </def>
         </gitem>
         <gitem id="viewportdef">
-          <label>ビューポート</label>
+          <label>ビューポート (viewport)</label>
           <def>
             <p>
 ユーザエージェントがコンテンツを提示するオブジェクト。
@@ -2198,14 +2198,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="visually-customizeddef">
-          <label>視覚的なカスタマイズ</label>
+          <label>視覚的なカスタマイズ (visually customized)</label>
           <def>
             <p>フォント、サイズ、色、及び背景を設定できること。</p>
           </def>
         </gitem>
         
         <gitem id="webpagedef">
-          <label>ウェブページ</label>
+          <label>ウェブページ (Web page)</label>
           <def>
             <p>
 単一の URI から HTTP で得た埋め込まれていないリソースに加え、
