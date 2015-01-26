@@ -1579,18 +1579,18 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="idiomsdef">
           <label>慣用句 (idiom)</label>
           <def>
-            <p>個々の単語の意味からはその意味を推測できず、そこにある単語を変えると意味が通じなくなる言い回し。</p>
+            <p>個々の単語の意味からはその意味を推測できず、特定の単語を変えると意味が通じなくなる言い回し。</p>
             <note>
               <p>慣用句は、単語単位で直接翻訳すると、その（文化的あるいは言語特有の）意味が通じなくなる。
               </p>
             </note>
             <example>
-              <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>"（豆をこぼす） は"<phrase xml:lang="en">revealing a secret</phrase>"（秘密を漏らす）という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>"（豆をひっくり返す）や"<phrase xml:lang="en">spilling the vegetables</phrase>"（野菜をこぼす）は同じ意味にはならない。</p>
+              <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>"（豆をこぼす） は「秘密を漏らす」という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>"（豆をひっくり返す）や"<phrase xml:lang="en">spilling the vegetables</phrase>"（野菜をこぼす）は同じ意味にはならない。</p>
               <p> 日本語では、「さじを投げる」という言い回しは、逐語訳では "<phrase xml:lang="en">he throws a spoon</phrase>"となるが、「どうすることもできずに諦める」という意味である。
 
                 
               </p>
-              <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば"<phrase xml:lang="en">He went to roost with the chickens"</phrase>（彼はニワトリとねぐらについた）となるが、「彼は早く寝た」という意味である。
+              <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば「彼はニワトリとねぐらについた」となるが、「彼は早く寝た」という意味である。
 </p>
             </example>
           </def>
