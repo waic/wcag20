@@ -2237,11 +2237,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       	<ulist>
       		<item><p>Bruce Bailey (U.S. Access Board) </p></item>
       		<item><p>Frederick Boland (NIST)</p></item>
-      		<item><p>Ben Caldwell (Trace R&amp;D Center</p></item>
+      		<item><p>Ben Caldwell (Trace R&amp;D Center, University of Wisconsin)</p></item>
       		<item><p>Sofia Celic (W3C Invited Expert)</p></item>
       		<item><p>Michael Cooper (W3C)</p></item>
-      		<item><p>Roberto Ellero (International Webmasters Association / HTML Writers Guild)
-</p></item>
+      		<item><p>Roberto Ellero (International Webmasters Association / HTML Writers
+      			Guild)</p></item>
       		<item><p>Bengt Farre (Rigab)</p></item>
       		<item><p>Loretta Guarino Reid (Google)</p></item>
       		<item><p>Katie Haritos-Shea</p></item>
@@ -2249,17 +2249,29 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       		<item><p>Drew LaHart (IBM) </p></item>
       		<item><p>Alex Li (SAP AG)</p></item>
       		<item><p>David MacDonald (E-Ramp Inc.)</p></item>
-      		<item><p>Roberto Scano (International Webmasters Association / HTML Writers	Guild)
-</p></item>
+      		<item><p>Roberto Scano (International Webmasters Association / HTML Writers
+      			Guild)</p></item>
       		<item><p>Cynthia Shelly  (Microsoft)</p></item>
       		<item><p>Andi Snow-Weaver (IBM)</p></item>
-      		<item><p>Christophe Strobbe (DocArch</p></item>
+      		<item><p>Christophe Strobbe (DocArch, K.U.Leuven)</p></item>
       		<item><p>Gregg Vanderheiden (Trace R&amp;D Center, University of Wisconsin)</p></item>
       	</ulist>
       </div2>
       <div2>
         <head>過去にアクティブであった WCAG Working Group参加者及びその他の WCAG 2.0 への貢献者</head>
-      	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan, Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutierrez y Restrepo, Brian Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs, Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella, Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Chris Ridpath, Lee Roberts, Gregory J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer, Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch, Takayuki Watanabe, Jason White.</p>
+      	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham,
+Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi
+Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan,
+Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda,
+Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutiérrez y Restrepo, Brian
+Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs,
+Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott
+Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella,
+Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham
+Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Bob Regan, Chris Ridpath, Lee Roberts, Gregory
+J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer,
+Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch,
+Takayuki Watanabe, Jason White.</p>
       </div2>
     </inform-div1>
     <inform-div1 id="references">
