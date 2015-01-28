@@ -1607,9 +1607,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="informativedef">
           <label>参考情報 (informative)</label>
           <def>
-            <p>情報提供を目的にしたものであり、適合するために必須のものではない。</p>
+            <p>情報提供を目的としており、適合するために必須ではないもの。</p>
             <note>
-              <p><termref def="conformancedef">適合</termref>に必須となる部分は、<termref def="normativedef">規定</termref> と呼んでいる。
+              <p><termref def="conformancedef">適合</termref>に必須の内容は、「<termref def="normativedef">規定</termref>」と呼ばれる。
 </p>
             </note>
           </def>
