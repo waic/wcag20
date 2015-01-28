@@ -1521,7 +1521,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
 <gitem id="functiondef">
-          <label>機能性 (functionality)</label>
+          <label>機能 (functionality)</label>
           <def>
             <p>
 利用者の操作により実現可能な<termref def="processdef">プロセス</termref>及び結果。</p>
