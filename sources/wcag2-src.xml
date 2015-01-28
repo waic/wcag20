@@ -1304,10 +1304,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p>主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。</p>
             <note>
               <p>
-<termref def="videodef">映像</termref>の音声解説は、動作やしぐさ、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
+<termref def="videodef">映像</termref>の音声解説は、動作、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
               </p>
               <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張音声解説</termref>も参照。）</p>
-              <p>すべての<termref def="videodef">映像</termref>の情報が既存の<termref def="audiodef">音声</termref>で提供されている場合、補足の音声解説は不要である。</p>
+              <p><termref def="videodef">映像</termref>情報のすべてが既存の<termref def="audiodef">音声</termref>ですでに提供されている場合、補足の音声解説は不要である。</p>
               <p>ビデオ説明や「説明ナレーション」とも呼ばれる。</p>
             </note>
           </def>
