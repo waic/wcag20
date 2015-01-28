@@ -1617,12 +1617,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="input-errordef">
           <label>入力エラー (input error)</label>
           <def>
-            <p>利用者が提供した情報で、受け付けられないもの。</p>
+            <p>利用者が入力した情報で、受け付けられないもの。</p>
             <note>
               <p>以下のものが含まれる：</p>
               <olist>
                 <item>
-                  <p><termref def="webpagedef">ウェブページ</termref>では必須とされているが、利用者が入力を省略した情報</p>
+                  <p>その<termref def="webpagedef">ウェブページ</termref>では必須であるが、利用者が入力しなかった情報</p>
                 </item>
                 <item>
                   <p>利用者が入力したが、要求されたデータ形式あるいは値ではない情報</p>
