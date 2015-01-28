@@ -1760,7 +1760,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="nav-seqdef">
           <label>順を追ってナビゲート (navigated sequentially)</label>
           <def>
-            <p><termref def="keybrd-interfacedef">キーボード インターフェース</termref>を用いて、フォーカスを前進させるために，指定された順序でナビゲートすること。
+            <p><termref def="keybrd-interfacedef">キーボード インターフェース</termref>を用いて（一つの要素から次へ）フォーカスを移動するために、定義された順序でナビゲートすること。
             </p>
           </def>
         </gitem>
