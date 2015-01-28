@@ -1455,10 +1455,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="context-sensitivehelpdef">
-          <label>状況に応じたヘルプ (context-sensitive help)</label>
+          <label>コンテキストに応じたヘルプ (context-sensitive help)</label>
           <def>
             <p>そのとき実行されている機能に関する情報を提供するヘルプのテキスト。</p>
-              <note><p>分かりやすいラベルは、状況に応じたヘルプとして機能しうる。</p></note>
+              <note><p>明解なラベルは、コンテキストに応じたヘルプとして機能しうる。</p></note>
           </def>
         </gitem>
         <gitem id="contrast-ratiodef">
