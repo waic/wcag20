@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE spec SYSTEM "xmlspec.dtd">
 <spec status="final" w3c-doctype="rec">
@@ -1308,8 +1309,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
               <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張音声解説</termref>も参照。）</p>
               <p><termref def="videodef">映像</termref>情報のすべてが既存の<termref def="audiodef">音声</termref>ですでに提供されている場合、補足の音声解説は不要である。</p>
-              <p>ビデオ説明や「説明ナレーション」とも呼ばれる。</p>
+              <p>"video description" や "descriptive narration" とも呼ばれる。</p>
             </note>
+<trnote><p>日本語では「音声ガイド」とも呼ばれる。</p></trnote>
           </def>
         </gitem>
         <gitem id="audio-onlydef">
