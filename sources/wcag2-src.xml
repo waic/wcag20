@@ -1247,7 +1247,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="asciiartdef">
           <label>ASCII アート (ASCII art)</label>
           <def>
-            <p>文字やグリフの空間的配置によって作られた図画 （典型的には、ASCIIで定義されている95の印字可能文字から作られる）
+            <p>文字やグリフの空間的配置によって作られた図画 （典型的には、ASCIIで定義されている95の印字可能文字から作られる）。
             </p>
           </def>
         </gitem>
@@ -1637,7 +1637,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="jargondef">
           <label>専門用語 (jargon)</label>
           <def>
-            <p>特定の分野の人々が特定の用法で用いる単語</p>
+            <p>特定の分野の人々が特定の用法で用いる単語。</p>
             <example>
               <p>StickyKeys（固定キー）という用語は、支援技術 / アクセシビリティの分野における専門用語である。</p>
             </example>
@@ -1747,7 +1747,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="namedef">
           <label>名前（name）</label>
           <def>
-            <p>ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト</p>
+            <p>ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト。</p>
             <note>
               <p>名前（name）は隠されていて、支援技術に対してだけ明らかにされる場合もあるが、<termref def="labeldef">ラベル</termref>はすべての利用者に提示される。多くの場合（すべてではないが）、ラベルと名前（name）は同じである。
 
@@ -1778,7 +1778,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="normativedef">
           <label>規定 (normative)</label>
           <def>
-            <p>適合に必須なもの</p>
+            <p>適合に必須なもの。</p>
             <note>
               <p>この文書には、様々な明確な方法で適合することができる。</p>
               <p>「<termref def="informativedef">参考情報</termref>」又は「規定ではない」とされている内容は、適合のために必須ではない内容である。</p>
@@ -1988,7 +1988,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="satisfiesdef">
           <label>達成基準を満たす (satisfies a success criterion)</label>
           <def>
-            <p>ウェブページに適用した際、その達成基準が「不合格」と判定されない</p>
+            <p>ウェブページに適用した際、その達成基準が「不合格」と判定されない。</p>
           </def>
         </gitem><gitem id="sectiondef">
           <label>セクション (section)</label>
