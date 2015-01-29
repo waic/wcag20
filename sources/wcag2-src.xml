@@ -2119,7 +2119,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="videodef">
           <label>映像 (video)</label>
           <def>
-            <p>連続した写真や画像を動かす技術。</p>
+            <p>写真や画像を動かしたり、連続して表示したりする技術。</p>
             <note>
               <p>映像はアニメーション、実写、もしくはその両方で構成され得る</p>
             </note>
@@ -2127,7 +2127,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </gitem><gitem id="video-onlydef">
           <label>映像しか含まない (video-only)</label>
           <def>
-            <p><termref def="videodef">映像</termref>しか含まない、時間に依存する提示（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
+            <p><termref def="videodef">映像</termref>のみを含んだ、時間に依存する提示（<termref def="videodef">音声</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="viewportdef">
