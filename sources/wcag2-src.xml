@@ -1507,7 +1507,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="extended-addef">
           <label>拡張音声解説 (extended audio description)</label>
           <def>
-            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚の提示に付加した音声解説。</p>
+            <p><termref def="videodef">映像</termref>を一時停止することで追加の説明を付加するための時間を確保し、視聴覚プレゼンテーションに付加した音声解説。</p>
             <note>
               <p>この達成方法は、追加の<termref def="audiodescdef">音声解説</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
             </note>
