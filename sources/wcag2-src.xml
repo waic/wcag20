@@ -1941,7 +1941,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="satisfiesdef">
           <label>達成基準を満たす (satisfies a success criterion)</label>
           <def>
-            <p>ウェブページに適用した際、その達成基準が「不合格」と判定されない。</p>
+            <p>ページに適用した際、その達成基準が 'false' と判定されないこと。</p>
           </def>
         </gitem><gitem id="sectiondef">
           <label>セクション (section)</label>
