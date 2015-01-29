@@ -205,14 +205,12 @@ WCAG 2.0 関連文書
                 <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
-         
           <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブ アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
         <p>
 WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義している。
-          
 
         </p>
         <glist>
@@ -226,7 +224,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <label>プログラムが解釈</label>
             <def>
               <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>できるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
-                
               </p>
             </def>
           </gitem>
@@ -303,7 +300,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
               </ulist>
             </div5>
-            
             <div5 role="sc" id="media-equiv-captions">
               <head>キャプション（収録済）</head>
               <p role="i">
@@ -390,7 +386,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>色の使用</head>
               <p role="v">
  色が、情報を伝える、動作を示す、反応を促す、又は視覚的な要素を判別するための唯一の視覚的手段になっていない。
-               
               </p>
               <note>
                 <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的提示のコーディングへのプログラムによるアクセスも含めて、<specref ref="content-structure-separation"/>で網羅されている。</p>
@@ -477,7 +472,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
  ロゴ又はブランド名の一部である文字には、コントラストの要件はない。</p>
                 </item>
               </ulist>
-             
             </div5>
             <div5 role="sc" id="visual-audio-contrast-noaudio">
               <head>小さな背景音、又は背景音なし</head>
@@ -573,7 +567,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <p>
                     <emph role="sc-handle">解除：</emph> 制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、
 
-                    
                   </p>
                 </item>
                 <item>
@@ -603,7 +596,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<specref ref="consistent-behavior-receive-focus"/>と併せて考慮すること。</p>
               </note>
             </div5>
-              
             <div5 role="sc" id="time-limits-pause">
               <head>一時停止、停止、非表示</head>
               <p role="i">
@@ -627,8 +619,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>タイミング非依存</head>
               <p role="v"> タイミングは、コンテンツによって提示されるイベント又は動作の<termref def="essentialdef">必要不可欠</termref>な部分ではない。ただし、インタラクティブではない<termref def="synchronizedmediadef">同期したメディア</termref>及び
                 <termref def="real-time-eventsdef">リアルタイムのイベント</termref>は除く。
-                
-                
               </p>
             </div5>
             <div5 role="sc" id="time-limits-postponed">
@@ -724,7 +714,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>セクション見出し</head>
               <p role="v">
                 <termref def="sectiondef">セクション</termref>見出しを用いて、コンテンツが整理されている。
-                
               </p>
               <note>
                 <p>見出しはその一般的な意味で用いられており、タイトルや様々なタイプのコンテンツに見出しを付加するその他の手段を含む。
@@ -732,7 +721,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <p>この達成基準は、文書におけるセクションを対象としており、<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>は対象としていない。ユーザ インタフェース コンポーネントについては、<loc href="ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>が対象にしている。<!-- BBC: This one set manually, else links in slices gets messyspecref ref="ensure-compat-rsv"/--></p>
               </note>
             </div5>
-            
           </div4>
         </div3>
       </div2>
@@ -751,8 +739,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 
 
 
-                
-                
               </p>
             </div5>
           </div4>
@@ -921,7 +907,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="ensure-compat-rsv">
               <head>名前（name）・役割（role）及び値（value）</head>
               <p role="i"> すべての<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>（フォームを構成する要素、リンク、スクリプトが生成するコンポーネントなど）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割（role）</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。
-              
               </p>
               <note>
                 <p>この達成基準は、主に独自のユーザ インタフェース コンポーネントを開発、又はスクリプトで実装するコンテンツ制作者に向けたものである。例えば、標準的な HTML のコントロールを仕様に沿って使用していれば、既にこの達成基準を満たしていることになる。</p>
@@ -1152,8 +1137,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <p>
                     <emph role="bold">頭字語</emph>
 は、（名称や語句の中の）頭文字あるいは他の単語の一部から作られた勝利矩形で、一つの単語のように発音されることがあるものである。
-                    
-                    
                   </p>
                   <example>
                     <p>NOAAは、米国の "National Oceanic and Atmospheric Administration" の頭文字による頭字語である。</p>
@@ -1259,7 +1242,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p>
 支援技術が提供する機能としては、代替の提示（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
-                
               </p>
               <p>支援技術は、<abbr expansion="Application Programming Interfaces">API</abbr> を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
               </p>
@@ -1297,7 +1279,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note><p>音声には、合成して作られたもの（音声合成を含む）、実世界の音を収録したもの、又はその両方が含まれる。</p></note>
           </def>
         </gitem>
-        
         <gitem id="audiodescdef">
           <label>音声解説 (audio description)</label>
           <def>
@@ -1360,7 +1341,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 </trnote>
               <p>
                 <termref def="audiodescdef">音声解説</termref>にキャプションをつけることもできるが、つける必要はない。なぜなら、音声解説は既に視覚的に提示されている情報の説明だからである。</p>
-              
             </note>
           </def>
         </gitem><gitem id="context-changedef">
@@ -1393,13 +1373,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </example>
           </def>
         </gitem>
-        
         <gitem id="conformancedef">
           <label>適合 (conformance)</label>
           <def>
             <p>
 定められた標準、ガイドライン、あるいは仕様のすべての要件を満たすこと。
-              
             </p>
           </def>
         </gitem>
@@ -1446,7 +1424,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
           </def>
         </gitem>
-        
         <gitem id="contentdef">
           <label>コンテンツ（ウェブコンテンツ） (content (Web content))</label>
           <def>
@@ -1503,7 +1480,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>必要不可欠 (essential)</label>
           <def><p>もし取り除いてしまうと、コンテンツの情報あるいは機能を根本的に変えてしまい、<emph role="bold">かつ、</emph>適合する他の方法では情報及び機能を実現できない。</p> </def>
         </gitem>
-        
         <gitem id="extended-addef">
           <label>拡張音声解説 (extended audio description)</label>
           <def>
@@ -1530,12 +1506,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 利用者の操作により実現可能な<termref def="processdef">プロセス</termref>及び結果。</p>
           </def>
         </gitem>
-        
         <gitem id="general-thresholddef">
           <label>一般閃光閾値及び赤色閃光閾値 (general flash and red flash thresholds)</label>
           <def>
             <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>、又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる：</p>
-           
             <olist>
               <item>
                 <p>あらゆる1秒間において、
@@ -1547,7 +1521,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 
                 </p>
               </item>
-              
             </olist>
             <p>ここで：</p>
             <ulist>
@@ -1591,7 +1564,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>"（豆をこぼす） は「秘密を漏らす」という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>"（豆をひっくり返す）や"<phrase xml:lang="en">spilling the vegetables</phrase>"（野菜をこぼす）は同じ意味にはならない。</p>
               <p> 日本語では、「さじを投げる」という言い回しは、逐語訳では "<phrase xml:lang="en">he throws a spoon</phrase>"となるが、「どうすることもできずに諦める」という意味である。
 
-                
               </p>
               <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば「彼はニワトリとねぐらについた」となるが、「彼は早く寝た」という意味である。
 </p>
@@ -1605,8 +1577,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <example><p>写真に写っている人の名札にある人名。</p></example>
           </def>
         </gitem>
-        
-        
         <gitem id="informativedef">
           <label>参考情報 (informative)</label>
           <def>
@@ -1695,8 +1665,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </example>
           </def>
         </gitem>
-        
-        
         <gitem id="linkpurposedef">
           <label>リンクの目的 (link purpose)</label>
           <def>
@@ -1708,8 +1676,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note><p>放送遅延は、短時間の（通常は自動的な）遅れで、例えば放送局に放送のタイミングの調整や音声（又は映像）の検閲のための時間を与えるものだが、意味のある編集ができるほどのものではない。</p>
               <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p></note></def>
         </gitem>
-        
-        
         <gitem id="lowseceddef">
           <label>前期中等教育レベル (lower secondary education level)</label>
           <def>
@@ -1736,14 +1702,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>テキストの代替メディア (media alternative for text)</label>
           <def>
             <p>テキストで（直接又は代替テキストによって）既に提示されている情報以上のものを提示していないメディア。
-              
             </p>
             <note>
               <p>テキストの代替メディアは、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
             </note>
           </def>
         </gitem>
-        
         <gitem id="namedef">
           <label>名前（name）</label>
           <def>
@@ -1751,7 +1715,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p>名前（name）は隠されていて、支援技術に対してだけ明らかにされる場合もあるが、<termref def="labeldef">ラベル</termref>はすべての利用者に提示される。多くの場合（すべてではないが）、ラベルと名前（name）は同じである。
 
-                
               </p>
               <p>これは、HTML の name 属性とは関係がない。</p>
             </note>
@@ -1806,12 +1769,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>提示 (presentation)</label>
           <def>
             <p>
-              
 利用者が知覚できる形式で<termref def="contentdef">コンテンツ</termref>をレンダリングすること。
             </p>
           </def>
         </gitem>
-        
         <gitem id="primseceddef">
           <label>初等教育レベル (primary education level)</label>
           <def>
@@ -1862,7 +1823,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>プログラムが設定 (programmatically set)</label>
           <def>
             <p>支援技術を含むユーザエージェントがサポートしている手法を用いてソフトウェアが設定する。
-              
             </p>
           </def>
         </gitem>
@@ -1887,7 +1847,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>人々が入札するオンラインのオークション（閲覧と同時に発生している）。
               </p>
               <p>アバターを用いたバーチャルな世界での、生きた人間のやりとり（コンテンツによって完全に生成されるものではなく、閲覧と同時に発生する）。
-                
               </p>
             </example>
           </def>
@@ -1897,7 +1856,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>
 コンテンツの異なる部分間における意味のあるつながり。
-              
             </p>
           </def>
         </gitem>
@@ -1939,12 +1897,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <!-- BBC: the following note was moved down from the definition of contrast ratio and editorially revised. Relates somewhat to 2548. -->
               <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
               <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。</p>
-              
               <!--BBC: Remember to update the MathML version should this be revised -->
               <p>
 <loc href="http://www.w3.org/TR/WCAG20/relative-luminance.xml">MathML version of the relative luminance definition</loc>も参照できる。
-                  
-                
               </p>
             </note>
           </def>
@@ -1968,7 +1923,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>同じ機能性 (same functionality )</label>
           <def>
             <p>
-              
 使うと同じ結果が得られる。
             </p>
             <example>
@@ -2009,9 +1963,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </note>
           </def>
         </gitem>
-        
-        
-        
         <gitem id="sign-languagedef">
           <label>手話 (sign language)</label>
           <def>
@@ -2026,7 +1977,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <note>
               <p>
-                
 手話は、本来、同じ国や地域で話されている言葉とは関係がない独立したものである。
               </p>
             </note>
@@ -2038,7 +1988,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <example>
               <p>
 フルートのソロ演奏、視覚芸術の作品などが例として挙げられる。
-                
               </p>
             </example>
           </def>
@@ -2065,7 +2014,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <example>
               <p>
-                
 <termref def="webpagedef">ウェブページ</termref>の音声版。
               </p>
               <p>
@@ -2187,7 +2135,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>
 ユーザエージェントがコンテンツを提示するオブジェクト。
-              
             </p>
             <note>
               <p><termref def="useragentdef">ユーザエージェント</termref>
@@ -2202,7 +2149,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p>フォント、サイズ、色、及び背景を設定できること。</p>
           </def>
         </gitem>
-        
         <gitem id="webpagedef">
           <label>ウェブページ (Web page)</label>
           <def>
