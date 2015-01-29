@@ -807,7 +807,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="consistent-behavior-consistent-functionality">
               <head>一貫した識別性</head>
-              <p role="i"> <termref def="webpagedef">ウェブページ</termref>一式の中で<termref def="samefunctionalitydef">同じ機能性</termref>を有するコンポーネントは、一貫して識別できる。</p>
+              <p role="i"> <termref def="webpagedef">ウェブページ</termref>一式の中で<termref def="samefunctionalitydef">同じ機能</termref>を有するコンポーネントは、一貫して識別できる。</p>
             </div5>
           </div4>
           <div4 role="additional">
