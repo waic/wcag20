@@ -294,7 +294,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
               <head>音声のみ及び映像のみ（収録済）</head>
-              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く：</p>
+              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く：</p>
               <ulist>
                   <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。</p></item>
                 <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
@@ -303,12 +303,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="media-equiv-captions">
               <head>キャプション（収録済）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。</p>
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc">
                 <head>音声解説、又はメディアの代替（収録済）</head>
               <p role="i">
-<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声解説</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
+<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声解説</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。
               </p>
             </div5>
           </div4>
@@ -1699,12 +1699,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="multimedia-alt-textdef">
-          <label>テキストの代替メディア (media alternative for text)</label>
+          <label>メディアによるテキストの代替 (media alternative for text)</label>
           <def>
             <p>テキストで（直接又はテキストによる代替によって）既に提示されている情報以上のものを提示していないメディア。
             </p>
             <note>
-              <p>テキストの代替メディアは、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
+              <p>メディアによるテキストの代替は、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
             </note>
           </def>
         </gitem>
@@ -2029,7 +2029,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>同期したメディア (synchronized media)</label>
           <def>
             <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間に依存するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
-<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされているものは除く。
+<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされているものは除く。
             </p>
           </def>
         </gitem>
