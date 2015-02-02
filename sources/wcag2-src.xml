@@ -221,9 +221,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </def>
           </gitem>
           <gitem>
-            <label>プログラムが解釈</label>
+            <label>プログラムによる解釈</label>
             <def>
-              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>できるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
+              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>ができるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
               </p>
             </def>
           </gitem>
@@ -358,11 +358,11 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="content-structure-separation-programmatic">
               <head>情報及び関係性</head>
               <p role="i">何らかの形で<termref def="presentationdef">提示</termref>されている情報、
-<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である、又はテキストで提供されている。</p>
+<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である、又はテキストで提供されている。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-sequence">
               <head>意味のある順序</head>
-              <p role="i"> コンテンツが提示されている順序が意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正しく読む順序</termref>を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。</p>
+              <p role="i"> コンテンツが提示されている順序が意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正しく読む順序</termref>を<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-understanding">
               <head>感覚的な特徴</head>
@@ -734,7 +734,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="meaning-doc-lang-id">
               <head>ページの言語</head>
-              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>のデフォルトの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。
+              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>のデフォルトの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。
 
 
 
@@ -746,7 +746,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head> </head>
             <div5 role="sc" id="meaning-other-lang-id">
               <head>一部分の言語</head>
-              <p role="i"> コンテンツの一節、又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。ただし、固有名詞、技術用語、言語が不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
+              <p role="i"> コンテンツの一節、又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。ただし、固有名詞、技術用語、言語が不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
 
 
 </p>
@@ -906,7 +906,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
               <head>名前（name）・役割（role）及び値（value）</head>
-              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>（フォームを構成する要素、リンク、スクリプトが生成するコンポーネントなど）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割（role）</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。
+              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>（フォームを構成する要素、リンク、スクリプトが生成するコンポーネントなど）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割（role）</termref>は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。
               </p>
               <note>
                 <p>この達成基準は、主に独自のユーザ インタフェース コンポーネントを開発、又はスクリプトで実装するコンテンツ制作者に向けたものである。例えば、標準的な HTML のコントロールを仕様に沿って使用していれば、既にこの達成基準を満たしていることになる。</p>
@@ -1729,7 +1729,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="non-text-contentdef">
           <label>非テキストコンテンツ (non-text content)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
             </p>
             <note>
               <p>これには、（文字による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（文字を置き換える）リートスピーク、そして文字を表現している画像が含まれる。
@@ -1792,7 +1792,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="programmaticallydetermineddef">
-          <label>プログラムが解釈（プログラムが解釈可能） (programmatically determined (programmatically determinable))</label>
+          <label>プログラムによる解釈（プログラムによる解釈可能） (programmatically determined (programmatically determinable))</label>
           <def>
             <p>              <termref def="atdef">支援技術</termref>
 を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
@@ -1806,10 +1806,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="pdlinkcontextdef">
           <label>プログラムが解釈可能なリンクのコンテキスト (programmatically determined link context)</label>
           <def>
-            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムが解釈可能</termref>であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
+            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムによる解釈可能</termref>であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
             </p>
             <example>
-              <p>HTMLでは、英語で記述されたリンクからプログラムが解釈可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、或いはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
+              <p>HTMLでは、英語で記述されたリンクからプログラムによる解釈可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、或いはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
               </p>
             </example>
             <note>
@@ -2053,14 +2053,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="textdef">
           <label>テキスト (text)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
             </p>
           </def>
         </gitem>
         <gitem id="text-altdef">
           <label>テキストによる代替 (text alternative)</label>
           <def>
-              <p><termref def="non-text-contentdef">非テキストコンテンツ</termref>とプログラムで関連付けられる<termref def="textdef">テキスト</termref>。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムが解釈可能なテキストである。</p>
+              <p><termref def="non-text-contentdef">非テキストコンテンツ</termref>とプログラムで関連付けられる<termref def="textdef">テキスト</termref>。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈可能なテキストである。</p>
             <example>
               <p>
               チャートの画像があり、その直後の段落にテキストによる説明がある。チャートに対する短いテキストによる代替で後に説明があることを示している。
