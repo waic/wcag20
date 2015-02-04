@@ -233,7 +233,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <p>技術をアクセシビリティ サポーテッドな方法で用いるというのは、支援技術 (AT) および OS、ブラウザ、その他のユーザエージェントのアクセシビリティ機能と連携してその技術を用いるということを意味する。ウェブコンテンツは、その技術を<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な方法で用いている場合にだけ、WCAG 2.0 の達成基準を満たすためにその技術に<termref def="reliedupondef">依存</termref>することが可能である。ただし、何らかの達成基準を満たすために用いられていない（つまり、同じ情報あるいは機能が、アクセシビリティ サポーテッドな他の方法でも利用可能である）場合にだけ、そのウェブコンテンツ技術をアクセシビリティ サポーテッドではない（支援技術などと連携しない）方法で用いることができる。
 </p>
               <p>
-アクセシビリティ サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>附録 A: 用語集</specref>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
+アクセシビリティ サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
             </def>
           </gitem>
         </glist>
