@@ -913,9 +913,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       </div2>
     </div1>
     <div1 role="normative" id="conformance">
-      <head>適合性</head>
+      <head>適合</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
-      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc>でさらに詳しい説明がある。</p>
+      <p>この節では、WCAG 2.0 への<termref def="conformancedef">適合</termref>に関する要件を列挙する。又、任意である適合表明の作成方法に関する情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc> でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
         <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
@@ -926,65 +926,65 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <ulist>
             <item>
               <p>
-                <emph role="sc-handle">レベル A：</emph> レベル A（適合の最低レベル）で適合するには、<termref def="webpagedef">ウェブページ</termref>がすべてのレベル A 達成基準を<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
+                <emph role="sc-handle">レベルA:</emph> レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AA：</emph> レベル AA で適合するには、ウェブページはすべてのレベル A 及びレベル AA 達成基準を満たすか、又はレベル AA に適合した代替版を提供する。
+                <emph role="sc-handle">レベル AA:</emph> レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合した代替版を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AAA：</emph> レベル AAA で適合するには、ウェブページがすべてのレベル A、レベル AA、及びレベル AAA 達成基準を満たすか、又はレベル AAA に適合した代替版を提供する。
+                <emph role="sc-handle">レベルAAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合した代替版を提供する。
               </p>
             </item>
           </ulist>
           <note>
-            <p>ウェブページは、宣言したレベルでのみ WCAG 2.0 に適合できるが、コンテンツ制作者は、そのレベルよりも高いレベルの達成基準の達成状況を（適合宣言中で）示すことを推奨されている。</p>
-            <p>コンテンツの中には、レベル AAA のすべての達成基準を満たすことのできないものもあるため、サイト全体の制作方針としてレベル AAA での適合を要件とすることは推奨しない。</p>
+            <p> ウェブページは、記載したレベルでのみ WCAG 2.0 に適合できるが、コンテンツ制作者は、その適合レベルよりも高いレベルの達成基準の達成状況を (表明中で) 示すことを推奨されている。</p>
+            <p> コンテンツの中には、レベル AAA 達成基準のすべてを満たすことのできないものもあるため、サイト全体の一般的な方針としてレベル AAA での適合を要件とすることは推奨されない。</p>
           </note>
         </div3>
         <div3 role="front" id="cc2">
           <head role="cc">ウェブページ全体</head>
-          <p role="cc"><termref def="conformancedef">適合性</termref>（及び適合レベル）は<termref def="webpagedef">ウェブページ</termref>全体のみに対するものであり、ウェブページの一部が除外されている場合には認められない。
+          <p role="cc"><termref def="conformancedef">適合</termref> (及び適合レベル) は<termref def="webpagedef">ウェブページ</termref>全体に対するもののみであり、ウェブページの一部が除外されている場合には適合にならない。
           </p>
           <note>
-            <p> 適合性を判断するときに、例えば、画像の詳細な説明、又は映像の代替の提示のように、代替コンテンツをそのウェブページから直接得られる場合は、ウェブページの一部のコンテンツに対する代替コンテンツをそのウェブページの一部であるとみなす。</p>
-            <p>コンテンツ制作者が制御できないコンテンツがあるために適合できないウェブページについては、<loc href="conformance-partial" linktype="guideline">部分適合に関する記述</loc>を行うことを検討するとよい。</p>
+            <p> 適合の判断をするときに、例えば、詳細な説明又は映像の代替の提示のように、代替となるものがそのページから直接得られる場合は、ページのコンテンツの一部に対する代替コンテンツはそのページの一部であるとみなされる。</p>
+            <p> コンテンツ制作者が制御できないコンテンツがあるために適合できないウェブページについては、<loc href="conformance-partial" linktype="guideline">部分適合に関する記述</loc>を行うことを検討するとよい。</p>
           </note>
         </div3>
         <div3 role="front" id="cc3">
-          <head role="cc">一連のプロセス</head>
-          <p role="cc"><termref def="webpagedef">ウェブページ</termref>が<termref def="processdef">プロセス</termref>を提示する一連の流れのウェブページ群（つまり、利用者がある目的を達成するために完了させる必要のある一連の手順）に含まれる場合、そのプロセス中のすべてのウェブページが指定したレベル又はそれ以上のレベルで適合している（もし、プロセス中のウェブページが特定のレベル又はそれ以上のレベルに適合していない場合、そのレベルに適合できない）。</p>
+          <head role="cc">プロセス全体</head>
+          <p role="cc"><termref def="webpagedef">ウェブページ</termref>が<termref def="processdef">プロセス</termref>を提示する一連の流れのウェブページ群 (つまり、ある目的を達成するために完了させる必要のある一連の手順) に含まれる場合、そのプロセス中のすべてのウェブページが指定したレベル又はそれ以上のレベルで適合している (もし、プロセス中のウェブページが一つでも特定のレベル又はそれ以上のレベルに適合していない場合、そのレベルに適合できない)。</p>
           <example>
-            <p>オンラインストアに、製品を選択して購入するための一連のウェブページがあるとする。この場合、最初から最後（支払い）までのすべてのウェブページが適合していなければ、このプロセスに含まれるいずれのウェブページも適合していないことになる。</p>
+            <p> あるオンラインストアには、製品を選択して購入するための一連のウェブページがある。この場合、最初から最後 (支払い) までのすべてのウェブページが適合するには、このプロセスに含まれるどのウェブページも適合していなければならない。</p>
           </example>
         </div3>
         <div3 role="front" id="cc4">
-            <head role="cc">技術のアクセシビリティ サポーテッドな使用方法のみ</head>
-          <p role="cc"> 達成基準を満たすためには、用いる
-<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc>を参照）。
+            <head role="cc">技術のアクセシビリティ サポーテッドな使用方法だけ</head>
+          <p role="cc"> 達成基準を満たすために、用いる
+<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>している。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用できる (<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc>を参照)。
 
           </p>
         </div3>
         <div3 role="front" id="cc5">
           <head role="cc">非干渉</head>
-          <p role="cc"> もし<termref def="technologydef">
-技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>ではない方法で用いられている、又は技術が WCAG 2.0 に適合していない状態で用いられている場合、利用者によるウェブページの他の部分へのアクセスを妨げていないことが必要である。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のすべての条件の下で適合要件を満たしていること：
+          <p role="cc"> <termref def="technologydef">
+技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>ではない方法で用いられている場合、又は適合しない方法で用いられている場合、利用者がウェブページの他の部分へアクセスすることを妨げていない。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のそれぞれの条件の下で適合要件を満たしていること: 
           </p>
           <olist>
             <item>
-              <p>ユーザエージェントで、<termref def="reliedupondef">依存</termref>していない技術が有効になっているとき</p>
+              <p><termref def="reliedupondef">依存</termref>していない技術がユーザエージェントで有効になっているとき</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していない技術が無効になっているとき、及び</p>
+                <p>依存していない技術がユーザエージェントで無効になっているとき、及び</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していない技術がサポートされていないとき</p>
+                <p>依存していない技術がユーザエージェントでサポートされていないとき</p>
             </item>
           </olist>
-            <p role="sctxt">さらに、以下の達成基準が満たされていない場合、ウェブページの利用を妨げる可能性があるため、適合要件を満たす上で依存していないコンテンツも含めて、ウェブページ上の全てのコンテンツはこれらの達成基準を満たしている必要がある。</p>
+            <p role="sctxt">さらに、適合するために依存していないコンテンツも含めて、ページ上の全てのコンテンツには以下の達成基準が適用される。なぜならば、これらを満たしていないことにより、ページの利用を妨げる可能性があるためである。</p>
             <ulist>
                 <item><p><emph role="bold">1.4.2 - 音声制御</emph>、</p></item>
                 <item><p><emph role="bold">2.1.2 - フォーカス移動</emph>、</p></item>
@@ -994,40 +994,40 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
         <div3 role="front">
           <head role="suppressed"/>
-          <note><p>もし、あるウェブページが適合できないならば、そのウェブページを適合あるいは適合宣言の範囲に含めることはできない（例えば、適合しない悪い事例を紹介するためのウェブページも適合できない）。</p></note>
-            <p role="sctxt">事例も含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding" hreflang="en">Understanding Conformance Requirements</loc>を参照。
+          <note><p>もし、あるページが適合できないならば (例えば、適合のテストページや事例のページの場合)、そのページを適合の範囲、あるいは、適合表明の範囲に含めることはできない。</p></note>
+            <p role="sctxt">事例を含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding" hreflang="en">Understanding Conformance Requirements</loc> を参照。
           </p>
         </div3>
       </div2>
       <div2 role="front" id="conformance-claims">
-        <head>適合宣言（任意）
+        <head>適合表明 (任意)
         </head>
-        <p>適合性は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合宣言は1ページ、一連のウェブページ群、又は複数の関連するウェブページに対して行ってもよい。</p>
+        <p>適合は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合表明は1ページ、一連のウェブページ群、又は複数の関連するウェブページに対して行ってもよい。</p>
         <div3 id="conformance-required" role="front">
-          <head>適合宣言の必須要素</head>
-            <p role="sctxt">適合宣言は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合宣言をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合宣言をする場合には、その適合宣言には以下に挙げる情報が含まれてい<emph role="bold">なければならない</emph>：</p>
+          <head>適合表明の必須要素</head>
+            <p role="sctxt">適合表明は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合表明をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合表明をする場合には、その適合表明には以下の情報が含まれてい<emph role="bold">なければならない</emph>:</p>
           <olist>
             <item>
               <p>
-宣言の<emph role="bold">日付</emph></p>
+表明<emph role="bold">日</emph></p>
             </item>
             <item>
               <p>
                 <emph role="bold">ガイドライン名、バージョン、及び URI
-                </emph> ：例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
+                </emph>: 例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
               </p>
             </item>
             <item>
               <p>
-満たしている<emph role="bold">適合レベル</emph>：（レベル A、AA、又は AAA）
+満たしている<emph role="bold">適合レベル</emph>: (レベル A、AA、又は AAA)
 </p>
             </item>
             <item>
               <p>
-                <emph role="bold">対象となるウェブページに関する簡潔な説明：</emph>： 例えば、サブドメインも宣言の対象に含まれているかどうかも含む、宣言の対象となっているURIのリスト。</p>
+                <emph role="bold">対象となるウェブページに関する簡潔な説明:</emph> 例えば、サブドメインも表明の対象に含まれているかどうかも含む、表明の対象となっているURIのリスト。</p>
               <note>
-                <p>対象となるウェブページは、リストを用いて表しても、対象となる全てのウェブページを含む表現を用いて表してもよい。</p>
-                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品の場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
+                <p>表明において、ウェブページはリストを用いて表してもよいし、全ての URI を含む表現を用いて表してもよい。</p>
+                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品がある。その場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
               </note>
             </item>
             <item>
@@ -1035,29 +1035,27 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <termref def="reliedupondef">依存している</termref> <termref def="technologydef">ウェブコンテンツ技術</termref></emph>のリスト</p>
             </item>
           </olist>
-          <note><p>適合のロゴを使用すると、適合を宣言していることとなり、上記の適合宣言の必須要素を明示しなければならない。</p></note>
+          <note><p>適合のロゴを使用するとその表明であるとみなされ、上記の適合表明の必須要素を明示しなければならない。</p></note>
         </div3>
         <div3 id="conformance-optional" role="front">
-          <head>適合宣言の任意要素</head>
-            <p role="sctxt">前述の適合宣言の必須要素に加えて、利用者のために追加で情報を提供することを検討するとよい。追加する情報として推奨するものを以下に挙げる：</p>
+          <head>適合表明の任意要素</head>
+            <p role="sctxt">上記の適合表明の必須要素に加えて、利用者のために追加で情報を提供することを検討する。追加する情報として推奨するものを以下に挙げる:</p>
           <ulist>
             <item>
-              <p>適合宣言したレベルよりも上のレベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
+              <p>表明した適合レベルよりも上の適合レベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
               </p>
             </item>
             <item>
-              <p><emph>
-使用しているが適合には
-<termref def="reliedupondef">依存</termref>していない</emph> 技術のリスト。
+              <p><emph>使用しているが適合には<termref def="reliedupondef">依存</termref>していない</emph>技術のリスト。
 </p>
             </item>
             <item>
-              <p>コンテンツを検証するのに用いた、支援技術を含むユーザエージェントのリスト。
+              <p>コンテンツを試験するのに用いた、支援技術を含むユーザエージェントのリスト。
 
               </p>
             </item>
             <item>
-              <p> アクセシビリティを向上するために達成基準以上に追加で施した措置に関する情報。
+              <p>アクセシビリティを向上させるために達成基準を超えて追加で施した措置に関する情報。
 </p>
             </item>
             <item>
@@ -1065,34 +1063,34 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
             </item>
             <item>
-              <p>適合宣言の機械的に読み取れるメタデータ版。</p>
+              <p>適合表明の機械的に読み取れるメタデータ版。</p>
             </item>
           </ulist>
           <note>
-            <p>より多くの情報や適合宣言の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc>を参照。</p>
-              <p>適合宣言内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc>を参照。</p>
+            <p>より多くの情報や適合表明の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc> を参照。</p>
+              <p>適合表明内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc> を参照。</p>
           </note>
         </div3>
       </div2>
       <div2 role="front" id="conformance-partial">
         <head>部分適合に関する記述 － 第三者によるコンテンツ</head>
-        <p>制作後にコンテンツが追加されるウェブページもある。例えば、電子メールのプログラム、ブログ、利用者がコメントを追加できる記事、又は利用者がコンテンツを提供できるようなアプリケーションである。その他の例としては、複数の提供者から集めたコンテンツで構成されるポータルやニュースサイト、又は動的に挿入される広告のように、他の情報源からその時々にコンテンツが自動的に挿入されるサイトが挙げられる。</p>
-          <p role="sctxt">これらの場合、最初に掲載した時点では、そのウェブページの第三者によるコンテンツがどのようなものになっていくか分からない。第三者によるコンテンツが、コンテンツ制作者が監視・修正できるコンテンツのアクセシビリティにも影響を及ぼす可能性があることに注意することが重要である。そのような場合、次の二つの方法から選択する：</p>
+        <p>場合によっては、制作後にコンテンツが追加されるようにウェブページが作成される。例えば、電子メールのプログラム、ブログ、利用者がコメントを追加できる記事、又は利用者がコンテンツを提供できるようなアプリケーションである。その他の例としては、複数の提供者から集めたコンテンツで構成されるポータルやニュースサイトのページや、又は動的に挿入される広告のように、他の情報源からその時々にコンテンツが自動的に挿入されるサイトが挙げられる。</p>
+          <p role="sctxt">これらの場合、最初に掲載した時点では、そのページにおける制御できないコンテンツがどのようなものになっていくか分からない。制御できないコンテンツが、制御できるコンテンツのアクセシビリティにも影響を及ぼす可能性があることに注意することが重要である。そのような場合、次の二つの方法から選択する:</p>
         <olist>
           <item>
-              <p>適合性の判断は、分かる範囲で下すことができる。もしこの種のウェブページが監視されていて、2営業日以内に修正される（適合していないコンテンツが削除されるか、適合するように修正される）ならば、そのウェブページは適合しているとみなすことができ、そのように外部から提供されたコンテンツにおける不具合が発見後に修正又は削除される場合は、適合性の判断又は宣言を行うことができる。ただし、適合していないコンテンツを監視及び修正できないのであれば、適合宣言を行うことはできない。</p>
+              <p>適合の判定は、分かる範囲で下すことができる。もしこの種のウェブページが監視されていて2営業日以内に修正される (適合していないコンテンツが削除されるか、適合するように修正される) ならば、外部から寄稿されたコンテンツにおける不具合のうち、発見後に修正又は削除できるものを除いて判定又は適合表明ができるので、そのページは適合している。適合していないコンテンツを監視及び修正できない場合は、適合表明を行うことはできない。</p>
             <p>
               <emph role="bold">又は、</emph>
             </p>
           </item>
           <item>
-              <p>そのウェブページ全体としては適合していないが、特定された部分を除外すれば適合した状態になる、という意味の「部分適合に関する記述」をしてもよい。そのような場合の記述は、「ウェブページ全体としては WCAG 2.0 に適合していないが、以下の第三者によるコンテンツを除けば、WCAG 2.0 のレベル X で適合している。」というような形式になる。ただし、第三者によるコンテンツについては、次のすべての条件を満たしている必要がある。</p>
+              <p>適合していないページが特定の部分を除けば適合できる場合、「部分適合に関する記述」ができる。そのような場合の記述は、「このページは適合していないが、制御されていない情報源に起因する以下の部分を除けば、WCAG 2.0 にレベル X で適合していることになる。」というような形式になる。さらに、部分適合の記述に記載される制御できないコンテンツについては、次の条件に当てはまる必要がある。</p>
             <olist>
               <item>
-                <p>コンテンツ制作者が監視及び修正できるコンテンツではない。</p>
+                <p>コンテンツ制作者が制御できるコンテンツではない。</p>
               </item>
               <item>
-                <p>利用者が識別できるように、明確に説明されている（例えば、該当箇所が明確に示されていない場合、「私たちが監視・修正できない部分すべて」という説明をすることはできない）。</p>
+                <p>利用者が識別できるように、記載されている (例えば、該当箇所が明確に示されない限り、「私たちが制御できない部分すべて」という記載をすることはできない)。</p>
               </item>
             </olist>
           </item>
@@ -1100,7 +1098,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       </div2>
         <div2 role="front" id="conformance-partial-lang">
             <head>部分適合に関する記述 － 言語</head>
-            <p>あるウェブページにおいて、そのウェブページは適合していないが、もしウェブページ上で用いられている（全ての）言語において<termref def="accessibility-supporteddef">アクセシビリティ サポート</termref>が存在していれば適合するような場合には、「言語による部分適合に関する記述」をすることができる。その場合の記述形式は、「このウェブページは適合していないが、もし以下の言語にアクセシビリティ サポートがあれば、WCAG 2.0 にレベル X で適合していることになる。」というようになる。</p>
+            <p>ページが適合していないが、そのページ上で用いられている (全ての) 言語において<termref def="accessibility-supporteddef">アクセシビリティ サポート</termref>があれば適合するような場合には、「言語による部分適合に関する記述」を出すことができる。そのような場合の記述形式は、「このページは適合していないが、もし以下の言語においてアクセシビリティ サポートがあれば、WCAG 2.0 にレベル X で適合していることになる。」というようになる。</p>
          </div2>
     </div1>
   </body>
