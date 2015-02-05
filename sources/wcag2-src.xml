@@ -121,7 +121,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <p>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、広範な障害と関係がある。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。また、このガイドラインは、加齢により能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであるとともに、しばしばユーザ全般のユーザビリティを向上させる。
       </p>
-      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに対して、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供することを目的として、<loc href="http://www.w3.org/WAI/intro/w3c-process.php" hreflang="en">W3C process</loc>に従って世界中の個人及び組織の協力のもと作成されている。WCAG 2.0 は WCAG 1.0 [WCAG10WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されており、自動テストと人間による評価の組合せによって検証できるようになっている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
+      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに対して、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供することを目的として、<loc href="http://www.w3.org/WAI/intro/w3c-process.php" hreflang="en">W3C process</loc>に従って世界中の個人及び組織の協力のもと作成されている。WCAG 2.0 は WCAG 1.0 [<bibref ref="WCAG10"/>] をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されており、自動テストと人間による評価の組合せによって検証できるようになっている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
       <p>ウェブ アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールも又ウェブ アクセシビリティにおいて重要な役割を担っている。こういったウェブ開発やインタラクションが相互にどのように関係しているかの概要については、以下を参照：</p>
       <ulist>
         <item>
