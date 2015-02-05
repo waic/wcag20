@@ -917,9 +917,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       </div2>
     </div1>
     <div1 role="normative" id="conformance">
-      <head>適合性</head>
+      <head>適合</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
-      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。又、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc>でさらに詳しい説明がある。</p>
+      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合</termref>に関する要件を列挙する。又、任意である適合表明の作成方法に関する情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc>でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
         <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
