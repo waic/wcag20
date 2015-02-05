@@ -2,9 +2,9 @@
 <!DOCTYPE spec SYSTEM "xmlspec.dtd">
 <spec status="final" w3c-doctype="rec">
   <header>
-      <title>ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG)</title>
+      <title>Web Content Accessibility Guidelines (WCAG)</title>
     <trdisclaimer>
-<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">2008年12月11日付の W3C 勧告「WCAG 2.0」（原文は英語）</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「WCAG 2.0」を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
+<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」（原文は英語）</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「WCAG 2.0」を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
     </trdisclaimer>
     <version>2.0</version>
     <w3c-designation>WCAG20</w3c-designation>
@@ -15,16 +15,16 @@
         <year>2008年</year>
     </pubdate>
     <publoc>
-        <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>
+        <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>
     </publoc>
     <altlocs>
-<loc href="http://www.w3.org/WAI/WCAG20/versions/guidelines/">WCAG 2.0のその他のバージョン（英語）</loc>
+<loc href="http://www.w3.org/WAI/WCAG20/versions/guidelines/" hreflang="en">Alternate Versions of Web Content Accessibility Guidelines 2.0</loc>
     </altlocs>
     <latestloc>
-      <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>
+      <loc href="http://www.w3.org/TR/WCAG20/" hreflang="en">http://www.w3.org/TR/WCAG20/</loc>
     </latestloc>
     <prevlocs>
-        <loc href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/">http://www.w3.org/TR/2008/PR-WCAG20-20081103/</loc>
+        <loc href="http://www.w3.org/TR/2008/PR-WCAG20-20081103/" hreflang="en">http://www.w3.org/TR/2008/PR-WCAG20-20081103/</loc>
     </prevlocs>
     <authlist>
       <author role="current">
@@ -59,64 +59,63 @@
       <errataloc href="http://www.w3.org/WAI/WCAG20/errata/"/>
       <translationloc href="http://www.w3.org/2003/03/Translations/byTechnology?technology=WCAG20"/>
     <abstract>
-    	<p>ウェブ・コンテンツ・アクセシビリティ・ガイドライン 2.0（以下、WCAG 2.0）は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。
-このガイドラインに従うことで、全盲又はロービジョン、ろう又は難聴、学習障害、認知障害、運動制限、発話困難、光過敏性発作およびこれらの組合せ等を含んだ、様々な障害のある人に対して、コンテンツをアクセシブルにすることになる。また、このガイドラインに従うと、すべての利用者に対してウェブコンテンツをより使いやすいものにすることにもなる。
+    	<p>Web Content Accessibility Guidelines (WCAG) 2.0は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。
+このガイドラインに従うことで、全盲又はロービジョン、ろう又は難聴、学習障害、認知障害、運動制限、発話困難、光過敏性発作及びこれらの組合せ等を含んだ、様々な障害のある人に対して、コンテンツをアクセシブルにすることになる。又、このガイドラインに従うと、すべての利用者に対してウェブコンテンツをより使いやすいものにすることにもなる。
       </p>
-        <p>WCAG 2.0 の達成基準は、ウェブコンテンツ技術に依存しない検証可能なものとして記述されている。特定のウェブコンテンツ技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクションおよび WCAG のテクニックや教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。
+        <p>WCAG 2.0 の達成基準は、技術に依存しない検証可能なものとして記述されている。特定の技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクション及び WCAG の達成方法や教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。
 </p>
-    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/">ウェブコンテンツ・アクセシビリティ・ガイドライン 1.0（英語）</loc>
-    		<bibref ref="WCAG10"/> の後継となる仕様である。WCAG 1.0 または WCAG 2.0 のいずれか（あるいは、その両方）に適合することは可能だが、W3C はコンテンツを新規で制作する場合および既存のコンテンツを更新する場合には WCAG 2.0 を用いることを推奨する。また、W3C は、ウェブ・アクセシビリティに関する方針や政策においても、WCAG 2.0 を参照することを推奨する。</p>
+    	<p>WCAG 2.0 は、1999年5月に W3C 勧告として公開された <loc href="http://www.w3.org/TR/WCAG10/" hreflang="en">Web Content Accessibility Guidelines 1.0</loc>
+    		<bibref ref="WCAG10"/> の後継となる仕様である。WCAG 1.0 又は WCAG 2.0 のいずれか（あるいは、その両方）に適合することは可能だが、W3C はコンテンツを新規で制作する場合及び既存のコンテンツを更新する場合には WCAG 2.0 を用いることを推奨する。又、W3C は、ウェブ アクセシビリティに関する方針や政策においても、WCAG 2.0 を参照することを推奨する。</p>
     </abstract>
   	<status>
-  		<p><emph>この節では、この文書の発行された時点でのステータスを説明する。この文書が、他の文書によって置き換えられている場合もある。現行のW3Cの発行文書及びこのテクニカル・レポートの改訂版は、
+  		<p><emph>この節では、この文書の発行された時点でのステータスを説明する。この文書が、他の文書によって置き換えられている場合もある。現行のW3Cの発行文書及びこのテクニカル レポートの改訂版は、
 
 
-<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
-  		<p>これは、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C">
-W3C 勧告（英語）</loc> の WCAG 2.0 である。
+<loc href="http://www.w3.org/TR/" hreflang="en">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
+  		<p>これは、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">Web Content Accessibility Guidelines Working Group</loc> が作成した <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
+W3C 勧告</loc> の WCAG 2.0 である。
 </p>
-  		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いたり、他の文書で引用したりしてもよい。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能および相互運用性の向上につながる。</p>
+  		<p>この文書は、W3C 会員、ソフトウェア開発者、そしてその他の W3C グループや関係者によってレビューされており、W3C のディレクターにより W3C 勧告として承認されたものである。安定した文書であり、参考資料として用いること、他の文書で引用することができる。勧告文書の作成における W3C の役割は、その仕様への関心を引いて、広く普及させていくことにある。これにより、ウェブの機能及び相互運用性の向上につながる。</p>
   		<p>WCAG 2.0 には、規定ではない関連文書の 
-<loc href="../UNDERSTANDING-WCAG20/Overview.html">  			    
-
-  				WCAG 2.0 解説書</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 実装方法集（英語）</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
+<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">
+  				Understanding WCAG 2.0</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
 
 
 
 </p>
-  		<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/"> 
-オンライン・コメントフォーム（英語）</loc> を使って送っていただきたい。もしそれができない場合は、
+  		<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/" hreflang="en"> 
+online comment form</loc> を使って送っていただきたい。もしそれができない場合は、
 <loc href="mailto:public-comments-wcag20@w3.org"> 
 public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することも可能である。
   			<loc
-  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">public-comments-wcag20@w3.org メールのアーカイブ（英語）
-</loc>は誰でも利用可能である。WCAG 2.0 の勧告文書に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、正誤表あるいは WCAG の将来のバージョンに反映されることはある。また、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc
-  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">w3c-wai-gl@w3.org メールのアーカイブ（英語）
+  				href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list
+</loc>は誰でも利用可能である。WCAG 2.0 の勧告文書に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、 errata あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc
+  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions
 </loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
-  			href="http://www.w3.org/WAI/">ウェブアクセシビリティ・イニシアティブ（英語）</loc> (WAI) の活動の一環として作成されたものである。
-WCAG ワーキンググループの目的については、 <loc
-  				href="http://www.w3.org/2004/04/wcag-charter">Web Content Accessibility Guidelines Working Group (WCAG WG) 趣意書（英語）
-</loc>に記載されている。WCAG ワーキンググループは、<loc
-  					href="http://www.w3.org/WAI/Technical/Activity">Web Accessibility Initiative (WAI) Technical Activity
+  			href="http://www.w3.org/WAI/" hreflang="en">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。
+WCAG Working Groupの目的については、 <loc
+  				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group Charter
+</loc>に記載されている。WCAG Working Groupは、<loc
+  					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity
  </loc>の一つである。</p>
   		<p>この文書は、<loc
-  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日付の W3C 特許ポリシー（英語）
-</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">全開示特許の公開リスト</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
+</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
-  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">エッセンシャル・クレーム
+  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential" hreflang="en">Essential Claim(s)
 </loc>を含んでいると思われる特許について知識のある人は、<loc
-  					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">
-W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなければならない。</p>
+  					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure" hreflang="en">
+section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しなければならない。</p>
   	</status>
   	<langusage>
       <language id="ja"/>
     </langusage>
     <revisiondesc>
       <p>
-        <loc href="/WAI/GL/WCAG20/change-history.html">History of Changes to WCAG 2.0 Working Drafts</loc>
+        <loc href="/WAI/GL/WCAG20/change-history.html" hreflang="en">History of Changes to WCAG 2.0 Working Drafts</loc>
       </p>
     </revisiondesc>
   </header>
@@ -124,119 +123,116 @@ W3C 特許ポリシー 第6節</loc>に従ってその情報を開示しなけ�
     <div1 id="intro">
       <head>イントロダクション</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
-      <p>ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、様々な障害と関係がある。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。また、このガイドラインは、加齢により様々な能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであり、しばしばユーザ全般のユーザビリティを向上させる。
+      <p>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、様々な障害と関係がある。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。又、このガイドラインは、加齢により様々な能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであり、しばしば利用者全般のユーザビリティを向上させる。
       </p>
-      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人および組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在および将来の様々なウェブ技術に広く適用できるように設計されている。また、自動テストおよび人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc> を参照のこと。</p>
-      <p>ウェブ・アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールもまたウェブ・アクセシビリティにおいて重要な役割を担っている。こういったウェブ開発やインタラクションが相互にどのように関係しているかの概要については、以下を参照のこと：</p>
+      <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに関する、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供すべく、世界中の個人及び組織と協力して、<loc href="http://www.w3.org/WAI/intro/w3c-process.php" hreflang="en">W3C process</loc>に従って作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されている。又、自動テスト及び人間による評価の組合せによって検証可能であるように作られている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
+      <p>ウェブ アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールも又ウェブ アクセシビリティにおいて重要な役割を担っている。こういったウェブ開発やインタラクションが相互にどのように関係しているかの概要については、以下を参照：</p>
       <ulist>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/components.php">ウェブアクセシビリティに必要不可欠な構成要素（英語）</loc>
+              <loc href="http://www.w3.org/WAI/intro/components.php" hreflang="en">Essential Components of Web Accessibility</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/uaag.php">ユーザエージェント・アクセシビリティ・ガイドライン (UAAG) 概要（英語）</loc>
+              <loc href="http://www.w3.org/WAI/intro/uaag.php" hreflang="en">User Agent Accessibility Guidelines (UAAG) Overview</loc>
             </emph>
           </p>
         </item>
         <item>
           <p>
             <emph role="bold">
-              <loc href="http://www.w3.org/WAI/intro/atag.php">オーサリングツール・アクセシビリティ・ガイドライン (ATAG) 概要（英語）</loc>
+              <loc href="http://www.w3.org/WAI/intro/atag.php" hreflang="en">Authoring Tool Accessibility Guidelines (ATAG) Overview</loc>
             </emph>
           </p>
         </item>
       </ulist>
       <div2 role="front" id="intro-layers-guidance">
         <head>WCAG 2.0 ガイダンスのレイヤー</head>
-          <p>WCAG を用いる個人や組織は、ウェブデザイナーや開発者、方針や政策の立案者、調達担当者、そして講師および学生など実に広汎である。これらの人たちの様々なニーズに応えるために WCAG 2.0 では、<emph>原則</emph>、一般的な<emph>ガイドライン</emph>、検証可能な<emph>達成基準</emph>、そして事例や参考となるリンクおよびソースコードとともに、<emph>達成基準を満たすことのできる実装方法、さらに対応が望まれる実装方法</emph>、および<emph>よくある不適合事例</emph>を示した豊富な文書群を含む、様々なレイヤーのガイダンスが提供されている。</p>
+          <p>WCAG を用いる個人や組織は、ウェブデザイナーや開発者、方針や政策の立案者、調達担当者、そして講師及び学生など実に広汎である。これらの人たちの様々なニーズに応えるために WCAG 2.0 では、<emph>原則</emph>、一般的な<emph>ガイドライン</emph>、検証可能な<emph>達成基準</emph>、そして事例や参考となるリンク及びソースコードとともに、<emph>達成基準を満たすことのできる達成方法、さらに対応が望まれる達成方法</emph>、及び<emph>よくある不適合事例</emph>を示した豊富な文書群を含む、様々なレイヤーのガイダンスが提供されている。</p>
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブ・アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding">アクセシビリティの4つの原則を理解する</loc>も参照のこと。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブ アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、そして堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">ガイドライン</emph> - 原則の下にあるのがガイドラインである。12のガイドラインは、様々な障害のある利用者に対してコンテンツをよりアクセシブルにするために取り組むべき基本的な目標を提供している。これらのガイドラインは検証可能ではないが、コンテンツ制作者が達成基準を理解し、より適した実装方法を用いることができるように、全体像および全般的な目的を提供するものである。</p>
+              <emph role="bold">ガイドライン</emph> - 原則の下にあるのがガイドラインである。12のガイドラインは、様々な障害のある利用者に対してコンテンツをよりアクセシブルにするために取り組むべき基本的な目標を提供している。これらのガイドラインは検証可能ではないが、コンテンツ制作者が達成基準を理解し、より適した達成方法を用いることができるように、全体像及び全般的な目的を提供するものである。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、および契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々なユーザ層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding">適合レベルを理解する</loc>を参照のこと。</p>
+              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合性検査が必要となる際に WCAG 2.0 を用いることが可能である。様々な利用者層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準を満たすことのできる実装方法およびさらに対応が望まれる実装方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>および<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>実装方法</emph>についても広範囲にわたって文書化している。実装方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>実装方法と<emph>さらに対応が望まれる</emph>実装方法である。さらに対応が望まれる実装方法は、個々の達成基準の要件を上回るもので、これらの実装方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる実装方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding">「WCAG 2.0 解説書」における達成基準を満たすことのできる実装方法及び参考にすべき実装方法</loc>も参照のこと。</p>
+              <emph role="bold">達成基準を満たすことのできる達成方法及びさらに対応が望まれる達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>達成基準を満たすことのできる</emph>達成方法と<emph>さらに対応が望まれる</emph>達成方法である。さらに対応が望まれる達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。さらに対応が望まれる達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
           </item>
         </ulist>
-        <p>このガイダンスのレイヤー（原則、ガイドライン、達成基準、十分なテクニックおよび参考テクニック）はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広いユーザのニーズに最大限対処できるように、参考テクニックを含めたすべてのレイヤーを確認して適用することが推奨される。</p>
-        <p>注意すべきなのは、最高レベル (AAA) で適合しているコンテンツでさえも、すべての種類、程度あるいは組合せの障害者にとってアクセシブルではないということである。特に、認知、言語および学習の面においてはそうである。コンテンツ制作者は、さらに対応が望まれる実装方法を含むすべての実装方法を考慮するとともに、 ウェブコンテンツが彼らに対しても可能な限りアクセシブルであることを確実にするためにも、現状における最善の対応策に関するアドバイスを探し求めることが推奨される。<loc linktype="understanding" href="understanding-metadata">メタデータ</loc>は、そういったユーザのニーズに最適なコンテンツを探し出す上で、ユーザを支援できる可能性がある。
+        <p>このガイダンスのレイヤー（原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法）はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
+        <p>注意すべきなのは、最高レベル (AAA) で適合しているコンテンツでさえも、すべての種類、程度あるいは組合せの障害者にとってアクセシブルではないということである。特に、認知、言語及び学習の面においてはそうである。コンテンツ制作者は、さらに対応が望まれる達成方法を含むすべての達成方法を考慮するとともに、 ウェブコンテンツが彼らに対しても可能な限りアクセシブルであることを確実にするためにも、現状における最善の対応策に関するアドバイスを探し求めることが推奨される。<loc linktype="understanding" href="understanding-metadata"  hreflang="en">metadata</loc>は、そういった利用者のニーズに最適なコンテンツを探し出す上で、利用者を支援できる可能性がある。
         </p>
       </div2>
       <div2 role="front" id="intro-related-docs">
         <head>
 WCAG 2.0 関連文書
         </head>
-        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書群は、WCAG 2.0文書に基づいて、WCAG が新しいウェブコンテンツ技術にどのように適用されるかを説明するために更新できるようにすることも含めてその他の重要な役割を果たすものである。関連文書には以下に挙げるものがある：
+        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書群は、WCAG 2.0文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることも含めてその他の重要な役割を果たすものである。関連文書には以下に挙げるものがある：
 
         </p>
         <olist>
           <item>
             <p>
-                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/">WCAG 2.0 を満たす方法（英語）</loc></emph> 
- - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作したり評価したりする際に用いるガイドライン、達成基準、そして実装方法のすべてを参照できる。
+                <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">How to Meet WCAG 2.0</loc></emph> 
+ - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作、評価する際に用いるガイドライン、達成基準、そして達成方法のすべてを参照できる。
             </p>
           </item>
           <item>
             <p>
               <emph role="bold">
-                <loc href="../UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0解説書</loc>
-              </emph> - WCAG 2.0を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.0の各ガイドラインおよび達成基準を「理解する」ための簡潔な文書がある。</p>
+                <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">Understanding WCAG 2.0</loc>
+              </emph> - WCAG 2.0を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.0の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
           </item>
           <item>
             <p>
               <emph role="bold">
-                <loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0実装方法集（英語）</loc>
-              </emph> - 実装方法集および既知の失敗事例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
+                <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc>
+              </emph> - 達成方法集及び既知の失敗事例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
           </item>
             <item>
-                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20">WCAG 2.0 文書群（英語）</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
+                <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
-         
-          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。<phrase>例えば、ウェブ・アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ・ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview">WAIリソース集（英語）</loc>に挙げられている。</phrase></p>
+          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブ アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
         <p>
 WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義している。
-          
 
         </p>
         <glist>
           <gitem>
             <label>ウェブページ</label>
             <def>
-              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、このガイドラインにおいては、静的な HTML ページよりも多くのものを指すということに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、ウェブページには、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のようなエクスペリエンス（経験）も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding">「ウェブページ」を理解する</loc>を参照のこと。</p>
+              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、このガイドラインにおいては、静的な HTML ページよりも多くのものを指すということに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、ウェブページには、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のようなエクスペリエンス（経験）も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
             </def>
           </gitem>
           <gitem>
-            <label>プログラムが解釈</label>
+            <label>プログラムによる解釈</label>
             <def>
-              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムが解釈</termref>できるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding">「プログラムが解釈」を理解する</loc>を参照のこと。
-                
+              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>ができるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを指す。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
               </p>
             </def>
           </gitem>
           <gitem>
-            <label>アクセシビリティ・サポーテッド</label>
+            <label>アクセシビリティ サポーテッド</label>
             <def>
-                <p>ウェブコンテンツ技術をアクセシビリティ・サポーテッドな方法で用いるというのは、支援技術 (AT) および OS、ブラウザ、その他のユーザエージェントのアクセシビリティ機能と連携する形でそのウェブコンテンツ技術を用いるということを意味する。ウェブコンテンツは、そのウェブコンテンツ技術を<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な方法で用いている場合のみ、WCAG 2.0 の達成基準を満たすためにそのウェブコンテンツ技術に<termref def="reliedupondef">依存</termref>することが可能である。ただし、何らかの達成基準を満たすために用いられていない（つまり、同じ情報あるいは機能が、アクセシビリティ・サポーテッドな他の方法でも利用可能である）かぎり、そのウェブコンテンツ技術をアクセシビリティ・サポーテッドではない（支援技術などと連携しない）方法で用いることができる。</p>
+                <p>技術をアクセシビリティ サポーテッドな方法で用いるというのは、支援技術 (AT) 及び OS、ブラウザ、その他のユーザエージェントのアクセシビリティ機能と連携する形でその技術を用いるということを意味する。ウェブコンテンツは、その技術を<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な方法で用いている場合のみ、WCAG 2.0 の達成基準を満たすためにその技術に<termref def="reliedupondef">依存</termref>することが可能である。ただし、何らかの達成基準を満たすために用いられていない（つまり、同じ情報あるいは機能が、アクセシビリティ サポーテッドな他の方法でも利用可能である）かぎり、その技術の機能をアクセシビリティ サポーテッドではない（支援技術などと連携しない）方法で用いることができる。</p>
               <p>
-アクセシビリティ・サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照のこと。</p>
+アクセシビリティ サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
             </def>
           </gitem>
         </glist>
@@ -248,179 +244,178 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>WCAG 2.0 ガイドライン</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
       <div2 role="principle" id="perceivable">
-        <head>原則 1：知覚可能 - 情報及びユーザインタフェース・コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</head>
+        <head>原則 1：知覚可能 - 情報及びユーザ インタフェース コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</head>
         <div3 role="group1" id="text-equiv">
-          <head>すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、代替テキストを提供する。</head>
+          <head>すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、テキストによる代替を提供すること。</head>
           <div4 role="req">
             <head> </head>
             <div5 role="sc" id="text-equiv-all">
               <head>非テキストコンテンツ</head>
-              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">代替テキスト</termref>を提供する。ただし、次の場合は除く：
+              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">テキストによる代替</termref>が提供されている。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">コントロール、入力：</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">識別名</termref>を提供している。（コントロール及びユーザの入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照のこと。）
+                    <emph role="sc-handle">コントロール、入力：</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">名前（name）</termref>を提供している。（コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照。）
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">時間の経過に伴って変化するメディア：</emph> 非テキストコンテンツが、時間の経過に伴って変化するメディアであるとき、代替テキストは、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照のこと。）
+                    <emph role="sc-handle">時間依存メディア：</emph> 非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照。）
                   </p>
                 </item>
                 <item>
                   <p>
-                      <emph role="sc-handle">試験：</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になる試験又は演習のとき、代替テキストは、少なくともその非テキストコンテンツを識別できる説明を提供している。
+                      <emph role="sc-handle">テスト：</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">感覚的：</emph> 非テキストコンテンツが、<termref def="sensoryexpdef">特定の感覚的体験</termref>を創り出すことを主に意図しているとき、代替テキストは、少なくともその非テキストコンテンツを識別できる説明を提供している。
+                    <emph role="sc-handle">感覚的：</emph> 非テキストコンテンツが、<termref def="sensoryexpdef">特定の感覚的体験</termref>を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                   </p>
                 </item>
                 <item>
                   <p>
                     <emph role="sc-handle">
-                      <termref def="CAPTCHAdef">CAPTCHA</termref>：</emph> 非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、代替テキストは、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
+                      <termref def="CAPTCHAdef">CAPTCHA</termref>：</emph> 非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
 </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">装飾、整形、非表示：</emph> 非テキストコンテンツが、<termref def="puredecdef">装飾だけを目的</termref>にしている、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
+                    <emph role="sc-handle">装飾、整形、非表示：</emph> 非テキストコンテンツが、<termref def="puredecdef">純粋な装飾</termref>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
                 </item>
               </ulist>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="media-equiv">
-          <head> 時間の経過に伴って変化するメディアには代替コンテンツを提供する。</head>
+          <head> 時間依存メディアには代替コンテンツを提供すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
-              <head>収録済の音声しか含まないメディア及び収録済の映像しか含まないメディア</head>
-              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く：</p>
+              <head>音声のみ及び映像のみ（収録済）</head>
+              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く：</p>
               <ulist>
-                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと等価な情報を提供している。</p></item>
-                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間の経過に伴って変化するメディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと等価な情報を提供している。</p></item>
+                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。</p></item>
+                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
               </ulist>
             </div5>
-            
             <div5 role="sc" id="media-equiv-captions">
-              <head>収録済の音声コンテンツのキャプション</head>
+              <head>キャプション（収録済）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。</p>
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="captionsdef">キャプション</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc">
-                <head>収録済の映像コンテンツの代替コンテンツ又は音声ガイド</head>
+                <head>音声解説、又はメディアに対する代替（収録済）</head>
               <p role="i">
-<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声ガイド</termref>を提供する。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされている場合は除く。
+<termref def="synchronizedmediadef">同期したメディア</termref>に含まれている<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>又は<termref def="audiodescdef">音声解説</termref>が提供されている。ただし、その同期したメディアが<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く。
               </p>
             </div5>
           </div4>
           <div4 role="bp">
             <head> </head>
             <div5 role="sc" id="media-equiv-real-time-captions">
-              <head>ライブの音声コンテンツのキャプション</head>
+              <head>キャプション（ライブ）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="livedef">ライブ</termref>の<termref def="audiodef">音声</termref>コンテンツに対して<termref def="captionsdef">キャプション</termref>を提供する。</p>
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="livedef">ライブ</termref>の<termref def="audiodef">音声</termref>コンテンツに対して<termref def="captionsdef">キャプション</termref>が提供されている。</p>
             </div5>
             <div5 role="sc" id="media-equiv-audio-desc-only">
-                <head>収録済の映像コンテンツの音声ガイド</head>
+                <head>音声解説（収録済）</head>
               <p role="i">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="audiodescdef">音声ガイド</termref>を提供する。
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="audiodescdef">音声解説</termref>が提供されている。
               </p>
             </div5>
           </div4>
           <div4 role="additional">
             <head/>
             <div5 role="sc" id="media-equiv-sign">
-                <head>収録済の音声コンテンツの手話通訳</head>
+                <head>手話（収録済）</head>
               <p role="v">
-                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="sign-languageinterpdef">手話通訳</termref>を提供する。
+                <termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="audiodef">音声</termref>コンテンツに対して、<termref def="sign-languageinterpdef">手話通訳</termref>が提供されている。
               </p>
             </div5>
             <div5 role="sc" id="media-equiv-extended-ad">
-                <head>収録済の映像コンテンツの拡張した音声ガイド</head>
+                <head>拡張音声解説（収録済）</head>
               <p role="i">
- 前景音が、映像と同等の意味を伝達する<termref def="audiodescdef">音声ガイド</termref>を挿入するための十分な長さの（会話やナレーションの）合間を含まない場合、<termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="extended-addef">拡張した音声ガイド</termref>を提供する。</p>
+前景音の合間が、<termref def="audiodescdef">音声解説</termref>で映像の意味を伝達するのに不十分な場合、<termref def="synchronizedmediadef">同期したメディア</termref>に含まれているすべての<termref def="prerecordeddef">収録済</termref>の<termref def="videodef">映像</termref>コンテンツに対して、<termref def="extended-addef">拡張音声解説</termref>が提供されている。</p>
             </div5>
             <div5 role="sc" id="media-equiv-text-doc">
-                <head>収録済のメディアの代替コンテンツ</head>
+                <head>メディアに対する代替（収録済）</head>
               <p role="i">
-すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアに対する代替コンテンツ</termref>を提供する。</p>
+すべての<termref def="prerecordeddef">収録済</termref>の<termref def="synchronizedmediadef">同期したメディア</termref>及びすべての収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアに対して、<termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>が提供されている。
+</p>
             </div5><div5 role="sc" id="media-equiv-live-audio-only">
-                <head>ライブの音声しか含まないコンテンツの代替コンテンツ</head>
-                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと等価な情報を提示する、<termref def="alt-time-based-mediadef">時間の経過に伴って変化するメディアの代替コンテンツ</termref>を提供する。
+                <head>音声のみ（ライブ）</head>
+                <p role="i"><termref def="livedef">ライブ</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツに対して、それと同等の情報を提示する、<termref def="alt-time-based-mediadef">時間依存メディアの代替コンテンツ</termref>が提供されている。
               </p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="content-structure-separation">
-          <head> 情報又は構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作する</head>
+          <head> 情報、又は構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="content-structure-separation-programmatic">
               <head>情報及び関係性</head>
-              <p role="i"><termref def="presentationdef">表現</termref>を通じて伝達されている情報、
-<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。プログラムが解釈可能にすることができないウェブコンテンツ技術を用いる場合は、それらがテキストで提供されている。</p>
+              <p role="i">何らかの形で<termref def="presentationdef">提示</termref>されている情報、
+<termref def="structuredef">構造</termref>、及び<termref def="relationshipsdef">関係性</termref>は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である、又はテキストで提供されている。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-sequence">
               <head>意味のある順序</head>
-              <p role="i"> コンテンツが提供されている順序がその意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正確な読み上げ順序</termref>は<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。</p>
+              <p role="i"> コンテンツが提示されている順序が意味に影響を及ぼす場合には、<termref def="correct-reading-sequencedef">正しく読む順序</termref>を<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。</p>
             </div5>
             <div5 role="sc" id="content-structure-separation-understanding">
               <head>感覚的な特徴</head>
               <p role="v">
- コンテンツを理解し操作するための説明を、形、大きさ、視覚的な位置、方向、又は音のような、構成要素が持つ感覚的な特徴だけで提供しない。
+ コンテンツを理解し操作するための説明は、形、大きさ、視覚的な位置、方向、又は音のような、構成要素が持つ感覚的な特徴だけに依存していない。
 
               </p>
               <note>
-                <p>色に関する要件は、<specref ref="visual-audio-contrast"/>を参照のこと。</p>
+                <p>色に関する要件は、<specref ref="visual-audio-contrast"/>を参照。</p>
               </note>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="visual-audio-contrast">
           <head>
- コンテンツを、利用者にとって見やすくしたり聞きやすくしたりする。これには、前景と背景を区別することも含む。
+ コンテンツを、利用者にとって見やすく、聞きやすいものにすること。これには、前景と背景を区別することも含む。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="visual-audio-contrast-without-color">
               <head>色の使用</head>
               <p role="v">
- 情報を伝える、何が起こるか又は何が起きたかを示す、ユーザの反応を促す、もしくは視覚的な要素を区別する唯一の視覚的な手段として、色だけを使用しない。
-                
+ 色が、情報を伝える、動作を示す、反応を促す、又は視覚的な要素を判別するための唯一の視覚的手段になっていない。
               </p>
               <note>
-                <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的な表現のコーディングへのプログラムによるアクセスも含めて、<specref ref="content-structure-separation"/>で網羅されている。</p>
+                <p>この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的提示のコーディングへのプログラムによるアクセスも含めて、<specref ref="content-structure-separation"/>で網羅されている。</p>
               </note>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-dis-audio">
-              <head>音声制御</head>
+              <head>音声の制御</head>
               <p role="v">
- ウェブページ上にある音声が自動的に再生され、その音声が3秒より長く続く場合、その音声を一時停止又は停止する<termref def="mechanismdef">メカニズム</termref>、もしくはシステム全体の音量レベルに影響を与えずに音量レベルを調整できるメカニズムを提供する。</p>
+ ウェブページ上にある音声が自動的に再生され、3秒より長く続く場合、その音声を一時停止又は停止する<termref def="mechanismdef">メカニズム</termref>、もしくはシステム全体の音量レベルに影響を与えずに音量レベルを調整できるメカニズムが利用できる。</p>
               <note>
-                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
+                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照。</p>
               </note>
             </div5>
           </div4>
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="visual-audio-contrast-contrast">
-              <head>最低限のコントラスト</head>
+              <head>コントラスト（最低限）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">画像化された文字</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>をもたせる。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>に、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
                   <p>
                     <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな画像化された文字には、少なくとも 3：1 のコントラスト比がある。</p>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像に、少なくとも 3：1 のコントラスト比がある。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">付随的：</emph> テキスト又は画像化された文字において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                    <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -432,44 +427,44 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-scale">
               <head>テキストのサイズ変更</head>
               <p role="v">
- コンテンツ又は機能を損なうことなく、<termref def="textdef">テキスト</termref>を<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。ただし、<termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">画像化された文字</termref>は除く。
-              </p>
+ 	    <termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">文字画像</termref>を除き、<termref def="textdef">テキスト</termref>は、コンテンツ又は機能を損なうことなく、<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。
+ 	          </p>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
-              <head>画像化された文字</head>
-              <p role="v"> 使用しているウェブコンテンツ技術で意図した視覚的な表現が可能である場合は、<termref def="images-of-textdef">画像化された文字</termref>ではなく<termref def="textdef">テキスト</termref>を用いて情報を伝える。ただし、次に挙げる場合を除く：
+              <head>文字画像</head>
+              <p role="v"> 使用している技術で意図した視覚的提示が可能である場合、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>が情報伝達に用いられている。ただし、次に挙げる場合を除く：
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="bold">カスタマイズ可能：</emph> 画像化された文字が利用者の要求に応じて<termref def="visually-customizeddef">視覚的にカスタマイズ</termref>できる。</p>
+                    <emph role="bold">カスタマイズ可能：</emph> 文字画像は、利用者の要求に応じた<termref def="visually-customizeddef">視覚的なカスタマイズ</termref>ができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠：</emph> 文字の特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠：</emph> テキストの特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
-                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
+                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであると考えられる。</p>
               </note>
             </div5>
           </div4>
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="visual-audio-contrast7">
-              <head>より十分なコントラスト</head>
+              <head>コントラスト（高度）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">画像化された文字</termref>の<phrase>視覚的な表現</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
               </p>
               <ulist>
                 <item>
                   <p>
                     <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな画像化された文字には、少なくとも 4.5：1 のコントラスト比がある。</p>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像には、少なくとも 4.5：1 のコントラスト比がある。</p>
                 </item>
                 <item>
                     <p>
-                        <emph role="sc-handle">付随的：</emph> テキスト又は画像化された文字において、次の場合はコントラストの要件は該当しない。アクティブではない<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>の一部である、<termref def="puredecdef">装飾だけを目的</termref>にしている、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
@@ -477,10 +472,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
  ロゴ又はブランド名の一部である文字には、コントラストの要件はない。</p>
                 </item>
               </ulist>
-             
             </div5>
             <div5 role="sc" id="visual-audio-contrast-noaudio">
-              <head>小さい背景音又は背景音なし</head>
+              <head>小さな背景音、又は背景音なし</head>
                 <p role="v"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツで、(1) 前景に主として発話を含み、(2) 音声<termref def="CAPTCHAdef">CAPTCHA</termref> 又は音声ロゴではなく、かつ、(3)例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
             	<ulist>
             		<item><p><emph role="sc-handle">背景音なし：</emph> 音声は背景音を含まない。</p></item>
@@ -493,14 +487,14 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             	</ulist>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
-              <head>視覚的な表現</head>
-              <p role="v"><termref def="blockstextdef">テキスト・ブロック</termref>（テキストの一文より長いもの）の視覚的な表現には、次を実現する<termref def="mechanismdef">メカニズム</termref>を提供する：</p>
+              <head>視覚的提示</head>
+              <p role="v"><termref def="blockstextdef">テキスト ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用できる：</p>
               <olist>
                 <item>
                   <p>利用者が、前景色と背景色を選択できる。</p>
                 </item>
                 <item>
-                  <p>1行の長さを、半角文字（英数字以外も含む）で80文字以内（<abbr expansion="Chinese, Japanese and Korean">日本語、中国語、韓国語</abbr>の場合は、40文字以内）に収めることができる。</p>
+                  <p>幅が80字を越えない（全角文字の場合は、40字）。</p>
                 </item>
                 <item>
                   <p>テキストが、均等割り付けされていない（両端揃えではない）。</p>
@@ -509,60 +503,62 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <p>段落中の行送りは、少なくとも1.5文字分ある。そして、段落の間隔は、その行送りの少なくとも1.5倍以上ある。</p>
                 </item>
                 <item>
-                  <p>支援技術を用いなくても、テキストのサイズを200％まで変更できて、利用者が<termref def="fullscreenwindowdef">全画面表示にしたウィンドウ</termref>で1行のテキストを読むときに横スクロールする必要がない。</p>
+                  <p>テキストは、支援技術なしで200％までサイズ変更でき、利用者が<termref def="fullscreenwindowdef">全画面表示にしたウィンドウ</termref>で1行のテキストを読むときに横スクロールする必要がない。</p>
                 </item>
               </olist>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
-              <head>画像化された文字（例外なし）</head>
-              <p role="v"><termref def="images-of-textdef">画像化された文字</termref>は、<termref def="puredecdef">装飾だけを目的</termref>に用いられているか、その情報を伝える上で<termref def="textdef">テキスト</termref>を特定の形で表現することが<termref def="essentialdef">必要不可欠</termref>である。</p>
+              <head>文字画像（例外なし）</head>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">純粋な装飾</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の表現が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
               <note>
-                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであるとみなす。</p>
+                <p>ロゴタイプ（ロゴ又はブランド名の一部である文字）は必要不可欠なものであると考えられる。</p>
               </note>
             </div5>
           </div4>
         </div3>
       </div2>
       <div2 role="principle" id="operable">
-        <head>原則 2: 操作可能 - ユーザインタフェース・コンポーネント及びナビゲーションは操作可能でなければならない。</head>
+        <head>原則 2: 操作可能 - ユーザ インタフェース コンポーネント及びナビゲーションは操作可能でなければならない。</head>
         <div3 role="group1" id="keyboard-operation">
           <head>
- すべての機能をキーボードから利用できるようにする。
+ すべての機能をキーボードから利用できるようにすること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="keyboard-operation-keyboard-operable">
-              <head>キーボード操作</head>
-              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボードインタフェース</termref>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による始点からの終点まで続く一連の軌跡に依存して実現されている場合は除く。</p>
+              <head>キーボード</head>
+              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボードインタフェース</termref>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による始点から終点まで続く一連の軌跡に依存して実現されている場合は除く。</p>
               <note>
-                <p>上記の例外は、コンテンツの根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法（手書き）は利用者の動作による軌跡（例えば、手書き入力に用いるマウスの動き）に依存した入力を必要とするが、その根本的な機能（テキスト入力）は利用者の動作による軌跡に依存した入力を必要とするものではない。</p>
-                <p>これは、キーボード操作に加えて、マウス入力又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。</p>
+                <p>上記の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法（手書き）は利用者の動作による軌跡に依存した入力を必要とするが、その根本的な機能（テキスト入力）は利用者の動作による軌跡に依存した入力を必要とするものではない。</p>
+                <p>これは、キーボード操作に加えて、マウス入力、又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。</p>
               </note>
             </div5>
             <div5 role="sc" id="keyboard-operation-trapping">
-              <head>フォーカス移動</head>
-              <p role="i"><termref def="keybrd-interfacedef">キーボード・インタフェース</termref>を用いてキーボード・フォーカスをそのウェブページのあるコンポーネントに移動できる場合、キーボード・インタフェースだけを用いてそのコンポーネントからフォーカスを外すことが可能である。さらに、その操作が修飾キーを伴わない矢印キー、修飾キーを伴わない Tab キー、又はフォーカスを外すその他の標準的な方法で可能な場合を除き、キーボード・フォーカスをそのコンポーネントから外す方法を利用者に知らせる。</p>
+              <head>キーボードトラップなし</head>
+              <p role="i"><termref def="keybrd-interfacedef">キーボード インタフェース</termref>を用いてキーボード フォーカスをそのウェブページのあるコンポーネントに移動できる場合、キーボード インタフェースだけを用いてそのコンポーネントからフォーカスを外すことが可能である。さらに、修飾キーを伴わない矢印キー、 Tab キー、又はフォーカスを外すその他の標準的な方法でフォーカスを外せない場合は、フォーカスを外す方法が利用者に通知される。
+</p>
               <note>
-                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
+                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照。</p>
               </note>
             </div5>
           </div4>
           <div4 role="additional">
             <head/>
             <div5 role="sc" id="keyboard-operation-all-funcs">
-              <head>キーボード操作（例外なし）</head>
-              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボード・インタフェース</termref>を通じて操作可能である。　　      </p>
+              <head>キーボード（例外なし）</head>
+              <p role="i"> コンテンツのすべての<termref def="functiondef">機能</termref>は、個々のキーストロークに特定のタイミングを要することなく、<termref def="keybrd-interfacedef">キーボード インタフェース</termref>を通じて操作可能である。
+      </p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="time-limits">
           <head>
- 利用者がコンテンツを読んだり使用したりするのに十分な時間を提供する。
+ 利用者がコンテンツを読み、使用するために十分な時間を提供すること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="time-limits-required-behaviors">
-              <head>調整可能な制限時間</head>
+              <head>タイミング調整可能</head>
               <p role="i"> コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている：
 
               </p>
@@ -571,7 +567,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <p>
                     <emph role="sc-handle">解除：</emph> 制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、
 
-                    
                   </p>
                 </item>
                 <item>
@@ -598,58 +593,55 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
               </ulist>
               <note>
-                  <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者のアクションの結果としてのコンテンツ又は状況の変化を制限する<specref ref="consistent-behavior-receive-focus"/>と併せて考慮すること。</p>
+                  <p>この達成基準は、制限時間の結果として、コンテンツ又は状況の予期せぬ変化を引き起こさないように利用者がタスクを完了できるようにするためのものである。この達成基準は、利用者の動作の結果としてのコンテンツ又はコンテキストの変化を制限する<specref ref="consistent-behavior-receive-focus"/>と併せて考慮すること。</p>
               </note>
             </div5>
-              
             <div5 role="sc" id="time-limits-pause">
               <head>一時停止、停止、非表示</head>
               <p role="i">
- 動きのある、<termref def="blinksdef">点滅</termref>している、スクロールする、又は自動更新する情報に対しては、次のすべての事項を満たしている：</p>
+ 動きのある、<termref def="blinksdef">点滅</termref>している、スクロールする、又は自動更新する情報は、次のすべての事項を満たしている：</p>
                   <ulist>
                     <item><p><emph role="sc-handle">動き、点滅、スクロール：</emph> 動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5秒よりも長く継続し、そして (3) その他のコンテンツと並行して提示される場合、利用者がそれらを<termref def="pauseddef">一時停止</termref>、停止、又は非表示にすることのできるメカニズムがある。ただし、その動き、点滅、又はスクロールが<termref def="essentialdef">必要不可欠</termref>な動作の一部である場合は除く。 </p></item>
                       <item><p><emph role="sc-handle">自動更新：</emph> 自動更新する情報が、(1) 自動的に開始し、 (2) その他のコンテンツと並行して提示される場合、利用者がそれを一時停止、停止、もしくは非表示にする、又はその更新頻度を調整することのできるメカニズムがある。ただし、その自動更新が必要不可欠な動作の一部である場合は除く。</p></item>
                   </ulist>
               <note>
-                <p>画面がちらつく、又は閃光を放つコンテンツに関する要件は、<specref ref="seizure"/>を参照のこと。</p>
-                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
-                  <p>周期的にソフトウェアによって自動的に更新されるコンテンツ、又はユーザエージェントにストリーム配信されるコンテンツでは、コンテンツ再生の一時停止と再開の操作の間に生成又は受信される情報を保持したり、提示したりする必要はない。これは技術的に不可能であることが考えられ、多くの状況において利用者の混乱を招くことにつながる可能性があるためである。
+                <p>画面がちらつく、又は閃光を放つコンテンツに関する要件は、<specref ref="seizure"/>を参照。</p>
+                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照。</p>
+                  <p>定期的にソフトウェアによって自動的に更新されるコンテンツ、又はユーザエージェントにストリーム配信されるコンテンツでは、コンテンツ再生の一時停止と再開の操作の間に生成、又は受信される情報を保持、又は提示する必要はない。これは技術的に不可能であることが考えられ、多くの状況において利用者の混乱を招くことにつながる可能性があるためである。
                 </p>
-                <p>コンテンツの読み込み中やそれに類似した状況の一部として表示されるアニメーションについては、この段階ですべての利用者に対していかなる対話も発生する可能性がなく、かつコンテンツ読み込みの進行状況を表示しないことが利用者の混乱を招いたり、コンテンツが動作を停止した、又はコンテンツが破損しているという誤解を生じたりする可能性がある場合には、必要不可欠なものと考えることができる。</p>
+                <p>コンテンツの読み込み中やそれに類似した状況の一部として表示されるアニメーションについては、この段階ですべての利用者に対していかなるインタラクションも発生する可能性がなく、かつコンテンツ読み込みの進行状況を表示しないことが利用者の混乱を招いたり、コンテンツが動作を停止した、又はコンテンツが破損しているという誤解を生じたりする可能性がある場合には、必要不可欠なものと考えることができる。</p>
               </note> 
             </div5>
           </div4>
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="time-limits-no-exceptions">
-              <head>制限時間なし</head>
-              <p role="v"> 制限時間が、コンテンツが提示するイベント又は動作の<termref def="essentialdef">必要不可欠</termref>な部分ではない。ただし、インタラクティブではない<termref def="synchronizedmediadef">同期したメディア</termref>及び
+              <head>タイミング非依存</head>
+              <p role="v"> タイミングは、コンテンツによって提示されるイベント又は動作の<termref def="essentialdef">必要不可欠</termref>な部分ではない。ただし、インタラクティブではない<termref def="synchronizedmediadef">同期したメディア</termref>及び
                 <termref def="real-time-eventsdef">リアルタイムのイベント</termref>は除く。
-                
-                
               </p>
             </div5>
             <div5 role="sc" id="time-limits-postponed">
-              <head>中断</head>
-              <p role="v"> 利用者が中断を延期又は抑制することができる。ただし、<termref def="emergencydef">緊急</termref>を要する中断は除く。</p>
+              <head>割り込み</head>
+              <p role="v"> 割り込みは、利用者が延期、又は抑制することができる。ただし、<termref def="emergencydef">緊急</termref>を要する割り込みは除く。</p>
             </div5>
             <div5 role="sc" id="time-limits-server-timeout">
               <head>再認証</head>
-              <p role="i"> 認証済のセッションが切れた場合は、再認証後でもデータを失うことなく利用者が操作を継続できるようにしておく。</p>
+              <p role="i"> 認証済のセッションが切れた場合は、再認証後でもデータを失うことなく利用者が操作を継続できる。</p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="seizure">
-          <head> 発作を引き起こす恐れのないようにコンテンツを設計する。</head>
+          <head> 発作を引き起こすようなコンテンツを設計しないこと。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="seizure-does-not-violate">
-              <head>3回の閃光又は閾値以下</head>
+              <head>3回の閃光、又は閾値以下</head>
               <p role="v">
-                <termref def="webpagedef">ウェブページ</termref>にある<termref def="flash-def">閃光</termref>は、どの1秒間においても3回以下である、又は<termref def="general-thresholddef">一般閃光閾値及び赤色閃光閾値</termref>を下回っている。
+                <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない、又は閃光が<termref def="general-thresholddef">一般閃光閾値及び赤色閃光閾値</termref>を下回っている。
               </p>
               <note>
-                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照のこと。</p>
+                <p>この達成基準を満たさないコンテンツでは、利用者がそのウェブページ全体を使用できない恐れがあるため、ウェブページ上のすべてのコンテンツは他の達成基準を満たすために用いられているか否かにかかわらず、この達成基準を満たさなければならない。<specref ref="cc5"/>を参照。</p>
               </note>
             </div5>
           </div4>
@@ -658,19 +650,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="seizure-three-times">
               <head>3回の閃光</head>
               <p role="v">
-                <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない。　</p>
+                <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない。</p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="navigation-mechanisms">
           <head>
- 利用者がナビゲートしたり、コンテンツを探し出したり、現在位置を確認するのを手助けする手段を提供する。
+ 利用者がナビゲートしたり、コンテンツを探し出したり、現在位置を確認したりすることを手助けする手段を提供すること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="navigation-mechanisms-skip">
-              <head>ブロック・スキップ</head>
-              <p role="v"> 複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているコンテンツのブロックをスキップできる<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+              <head>ブロック スキップ</head>
+              <p role="v"> 複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているコンテンツのブロックをスキップする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-title">
               <head>ページタイトル</head>
@@ -679,19 +671,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="navigation-mechanisms-focus-order">
               <head>フォーカス順序</head>
-              <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順番にナビゲート</termref>できて、そのナビゲーション順序が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは意味及び操作性を保持した順序でフォーカスを受け取る。</p>
+              <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順を追ってナビゲート</termref>できて、そのナビゲーション順が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは、意味及び操作性を損なわない順序でフォーカスを受け取る。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-refs">
-              <head>文脈におけるリンクの目的</head>
+              <head>リンクの目的（文脈内）</head>
               <p role="i">
-<termref def="linkpurposedef">それぞれのリンクの目的</termref>が、リンクのテキストだけから、又は<termref def="pdlinkcontextdef">プログラムが解釈可能なリンクの文脈</termref>をリンクのテキストとあわせたものから解釈できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
+それぞれの<termref def="linkpurposedef">リンクの目的</termref>が、リンクのテキスト単独で、又はリンクのテキストと<termref def="pdlinkcontextdef">プログラムによる解釈可能なリンクの文脈</termref>から判断できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">ほとんどの利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
           </div4>
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="navigation-mechanisms-mult-loc">
-              <head>複数の到達手段</head>
-              <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中からある<termref def="webpagedef">ウェブページ</termref>に到達することのできる複数の手段がある。ただし、ウェブページが<termref def="processdef">プロセス</termref>の結果又はプロセスの中の一つのステップである場合は除く。
+              <head>複数の手段</head>
+              <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中で、ある<termref def="webpagedef">ウェブページ</termref>を見つける複数の手段が利用できる。ただし、ウェブページが<termref def="processdef">一連のプロセス</termref>の中の1ステップ又は結果である場合は除く。
 
 
 
@@ -703,62 +695,58 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
  見出し及び<termref def="labeldef">ラベル</termref>は、主題又は目的を説明している。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-focus-visible">
-              <head>視覚的に認識可能なフォーカス</head>
-              <p role="v"> キーボード操作が可能なユーザインタフェースには、キーボード・フォーカスの状態が視覚的に認識できる操作モードがある。</p>
+              <head>フォーカスの可視化</head>
+              <p role="v"> キーボード操作が可能なあらゆるユーザ インタフェースには、フォーカス インジケータが見える操作モードがある。</p>
             </div5>
           </div4>
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="navigation-mechanisms-location">
               <head>現在位置</head>
-              <p role="i"><termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中での利用者の現在位置に関する情報が提供されている。</p>
+              <p role="i"><termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中での利用者の位置に関する情報が利用できる。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-link">
-              <head>リンクの目的</head>
+              <head>リンクの目的（リンクのみ）</head>
               <p role="v">
- それぞれのリンクの目的がリンクのテキストだけから特定できる<termref def="mechanismdef">メカニズム</termref>が利用可能である。ただし、リンクの目的が<termref def="ambiguouslinkdef">一般的にみて利用者にとって曖昧</termref>な場合は除く。</p>
+ それぞれのリンクの目的を、リンクのテキスト単独で特定できる<termref def="mechanismdef">メカニズム</termref>が利用できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">ほとんどの利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-headings">
               <head>セクション見出し</head>
               <p role="v">
-                <termref def="sectiondef">セクション</termref>の見出しを用いてコンテンツを体系化している。
-                
+                <termref def="sectiondef">セクション</termref>見出しを用いて、コンテンツが整理されている。
               </p>
               <note>
                 <p>見出しはその一般的な意味で用いられており、タイトルや様々なタイプのコンテンツに見出しを付加するその他の手段を含む。
                 </p>
-                <p>この達成基準でいうセクションとは、<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>についてではなく、文書におけるセクションを意味している。ユーザインタフェース・コンポーネントは、<loc href="ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>で言及している。<!-- BBC: This one set manually, else links in slices gets messyspecref ref="ensure-compat-rsv"/--></p>
+                <p>この達成基準は、文書におけるセクションを対象としており、<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>は対象としていない。ユーザ インタフェース コンポーネントについては、<loc href="ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>が対象にしている。<!-- BBC: This one set manually, else links in slices gets messyspecref ref="ensure-compat-rsv"/--></p>
               </note>
             </div5>
-            
           </div4>
         </div3>
       </div2>
       <div2 role="principle" id="understandable">
-        <head>原則 3：理解可能 - 情報及びユーザインタフェースの操作は理解可能でなければならない。</head>
+        <head>原則 3：理解可能 - 情報及びユーザ インタフェースの操作は理解可能でなければならない。</head>
         <div3 role="group1" id="meaning">
           <head>
-テキストのコンテンツを読みやすく理解可能にする。
+テキストのコンテンツを読みやすく理解可能にすること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="meaning-doc-lang-id">
               <head>ページの言語</head>
-              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>の主たる<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。
+              <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>のデフォルトの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。
 
 
 
 
-                
-                
               </p>
             </div5>
           </div4>
           <div4 role="bp">
             <head> </head>
             <div5 role="sc" id="meaning-other-lang-id">
-              <head>部分的に用いられている言語</head>
-              <p role="i"> コンテンツの一節又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。ただし、固有名詞、技術用語、どの言語なのか不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
+              <head>一部分の言語</head>
+              <p role="i"> コンテンツの一節、又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるかを、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。ただし、固有名詞、技術用語、言語が不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
 
 
 </p>
@@ -768,44 +756,44 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="meaning-idioms">
               <head>一般的ではない用語</head>
-              <p role="i"> <termref def="idiomsdef">慣用句</termref>及び<termref def="jargondef">専門用語</termref>を含めて、<termref def="unusual-restricteddef">一般的には使われることのない、又は限定された用法で使われている</termref>単語又は語句の、特定の定義を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+              <p role="i"> <termref def="idiomsdef">慣用句</termref>及び<termref def="jargondef">専門用語</termref>を含めて、<termref def="unusual-restricteddef">一般的ではない、又は限定された用法で使われている</termref>単語、又は語句の、明確な定義を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
             </div5>
             <div5 role="sc" id="meaning-located">
               <head>略語</head>
-              <p role="i"> <termref def="abbreviationsdef">略語</termref>の元の語又は意味を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。
+              <p role="i"> <termref def="abbreviationsdef">略語</termref>の元の語、又は意味を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。
               </p>
             </div5>
             <div5 role="sc" id="meaning-supplements">
               <head>読解レベル</head>
-              <p role="v"> 固有名詞や（ビデオや書籍などの）タイトルを除いて、テキストが中等教育レベルを超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足的コンテンツ</termref>又は<termref def="lowseceddef">中等教育レベル</termref>を超えた読解力を必要としないバージョンが利用可能である。　
+              <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足するコンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。
 
 
 </p>
             </div5>
             <div5 role="sc" id="meaning-pronunciation">
-              <head>発音及び読み仮名</head>
-              <p role="v"> 文脈において、発音が分からないと単語の意味が不明瞭になる場合、その単語の特定の発音（読み仮名）を示す<termref def="mechanismdef">メカニズム</termref>が利用可能である。　
+              <head>発音</head>
+              <p role="v"> 文脈において、発音が分からないと単語の意味が不明瞭になる場合、その単語の明確な発音を特定する<termref def="mechanismdef">メカニズム</termref>が利用できる。
               </p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="consistent-behavior">
           <head>
-ウェブページの表示や動作を予測可能にする。
+ウェブページの表示や挙動を予測可能にすること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="consistent-behavior-receive-focus">
-              <head>オン・フォーカス</head>
+              <head>フォーカス時</head>
               <p role="i"> いずれのコンポーネントも、フォーカスを受け取ったときに
-<termref def="context-changedef">状況の変化</termref>を引き起こさない。
+<termref def="context-changedef">コンテキストの変化</termref>を引き起こさない。
               </p>
             </div5>
             <div5 role="sc" id="consistent-behavior-unpredictable-change">
-              <head>ユーザインタフェース・コンポーネントによる状況の変化</head>
-              <p role="v"> 利用者が使用する前にその挙動を知らせてある場合を除いて、
-                  <termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>
-の設定を変更することで<termref def="context-changedef">状況の変化</termref>を引き起こさない。
+              <head>入力時</head>
+              <p role="v"> 
+                  <termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>
+の設定を変更することが、<termref def="context-changedef">コンテキストの変化</termref>を自動的に引き起こさない。ただし、利用者が使用する前にその挙動を知らせてある場合を除く。
 
 </p>
             </div5>
@@ -815,61 +803,61 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="consistent-behavior-consistent-locations">
               <head>一貫したナビゲーション</head>
               <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中にある複数の<termref def="webpagedef">ウェブページ</termref>上で繰り返されているナビゲーションのメカニズムは、繰り返されるたびに
-<termref def="samerelorderdef">相対的に同じ順序</termref>で提供する。ただし、利用者がそれを変更した場合は除く。</p>
+<termref def="samerelorderdef">相対的に同じ順序</termref>で出現する。ただし、利用者が変更した場合は除く。</p>
             </div5>
             <div5 role="sc" id="consistent-behavior-consistent-functionality">
               <head>一貫した識別性</head>
-              <p role="i"> <termref def="webpagedef">ウェブページ</termref>一式の中で<termref def="samefunctionalitydef">同じ機能性</termref>を有するコンポーネントは、一貫して識別できる。</p>
+              <p role="i"> <termref def="webpagedef">ウェブページ</termref>一式の中で<termref def="samefunctionalitydef">同じ機能</termref>を有するコンポーネントは、一貫して識別できる。</p>
             </div5>
           </div4>
           <div4 role="additional">
             <head> </head>
             <div5 role="sc" id="consistent-behavior-no-extreme-changes-context">
-              <head>利用者の要求による状況の変化</head>
+              <head>要求による変化</head>
               <p role="v">
-                <termref def="context-changedef">状況の変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用可能である。　</p>
+                <termref def="context-changedef">コンテキストの変化</termref>は利用者の要求によってだけ生じるか、又は、そのような変化を止める<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
             </div5>
           </div4>
         </div3>
         <div3 role="group1" id="minimize-error">
           <head>
- 利用者の間違いを防ぎ、間違いの修正を支援する。
+ 利用者の間違いを防ぎ、修正を支援すること。
           </head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="minimize-error-identified">
-              <head>入力エラー箇所の特定</head>
-              <p role="v"><termref def="input-errordef">入力エラー</termref>を自動的に発見された場合は、エラーとなっている箇所を特定し、そのエラーを利用者にテキストで説明する。
+              <head>エラーの特定</head>
+              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出された場合は、エラーとなっている箇所が特定され、そのエラーが利用者にテキストで説明される。
 
               </p>
             </div5>
             <div5 role="sc" id="minimize-error-cues">
-              <head>ラベル又は説明文</head>
+              <head>ラベル又は説明</head>
               <p role="v">
- コンテンツが利用者の入力を要求する場合は、入力箇所の<termref def="labeldef">ラベル</termref>又は入力方法についての説明文を提供する。</p>
+ コンテンツが利用者の入力を要求する場合は、<termref def="labeldef">ラベル</termref>又は説明文が提供されている。</p>
             </div5>
           </div4>
           <div4 role="bp">
             <head/>
             <div5 role="sc" id="minimize-error-suggestions">
-              <head>入力エラー修正方法の提示</head>
-              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に発見された場合は、その修正方法が明らかであれば、その方法を利用者に提示する。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
+              <head>エラー修正の提案</head>
+              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出され、修正方法を提案できる場合、その提案が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
-              <head>法的義務・金銭的取引・データ変更・回答送信のエラー回避</head>
-              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法的な義務</termref>もしくは金銭的な取引が生じる、<termref def="user-controllabledef">利用者が自分で制御可能な</termref>データ・ストレージ・システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
+              <head>エラー回避（法的、金融、データ）</head>
+              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法律行為</termref>もしくは金融取引が生じる、<termref def="user-controllabledef">利用者が制御可能な</termref>データ ストレージ システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
               <olist>
                 <item>
                   <p>
-                    <emph role="sc-handle">取消：</emph> 送信した内容を利用者が取り消すことができる。</p>
+                    <emph role="sc-handle">取消：</emph> 送信を取り消すことができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>をチェックし、利用者に修正する機会を提供している。</p>
+                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の点検、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
                 </item>
               </olist>
             </div5>
@@ -879,24 +867,24 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="minimize-error-context-help">
               <head>ヘルプ</head>
               <p role="v">
-                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用可能である。　</p>
+                <termref def="context-sensitivehelpdef">状況に応じたヘルプ</termref>が利用できる。</p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible-all">
-              <head>エラー回避に関する例外なし</head>
+              <head>エラー回避（すべて）</head>
               <p role="i"> 利用者に情報の送信を要求する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：
               </p>
-              <olist>
+<olist>
                 <item>
                   <p>
-                    <emph role="sc-handle">取消：</emph> 送信した内容を利用者が取り消すことができる。</p>
+                    <emph role="sc-handle">取消：</emph> 送信を取り消すことができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">チェック：</emph> 利用者の入力したデータの<termref def="input-errordef">入力エラー</termref>をチェックし、利用者に修正する機会を提供している。</p>
+                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の点検、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用可能である。</p>
+                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
                 </item>
               </olist>
             </div5>
@@ -906,23 +894,22 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <div2 role="principle" id="robust">
         <head>原則 4： 堅牢性 - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。</head>
         <div3 role="group1" id="ensure-compat">
-          <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化する。</head>
+          <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="ensure-compat-parses">
               <head>構文解析</head>
-              <p role="i"> マークアップ言語を用いて実装されているコンテンツにおいては、仕様で認められているものを除いて、要素には完全な開始タグ及び終了タグがあり、要素は仕様に準じて入れ子になっていて、要素には重複した属性がなく、どのIDも一意的である。</p>
+              <p role="i"> マークアップ言語を用いて実装されているコンテンツにおいては、要素には完全な開始タグ及び終了タグがあり、要素は仕様に準じて入れ子になっていて、要素には重複した属性がなく、どのIDも一意的である。ただし、仕様で認められているものを除く。</p>
               <note>
-                <p>重要な記号が欠けているものは完全な開始タグ及び終了タグではない。例えば、閉じる山括弧（&quot;&gt;&quot;）がない、又は属性値の引用符が一致していない場合は、完全な開始タグ及び終了タグとはいえない</p>
+                <p>開始及び終了タグに重要な記号が欠けている場合、例えば、タグを閉じる山括弧がない、又は属性値の引用符が一致していない場合は、完全とはいえない</p>
               </note>
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
-              <head>プログラムが解釈可能な識別名・役割及び設定可能な値</head>
-              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース・コンポーネント</termref>（フォーム、リンク、そしてスクリプトが生成するコンポーネントなどを含む）では、<termref def="namedef">識別名</termref>及び<termref def="roledef">役割</termref>は、<termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能である。また、利用者が設定可能なステータス、プロパティ、そして値は<termref def="programmaticallysetdef">プログラムが設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がこれらの項目が変更された通知を受け取ることができる。
-              
+              <head>名前（name）・役割（role）及び値（value）</head>
+              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>（フォームを構成する要素、リンク、スクリプトが生成するコンポーネントなど）では、<termref def="namedef">名前（name）</termref>及び<termref def="roledef">役割（role）</termref>は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムによる設定</termref>可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。
               </p>
               <note>
-                <p>この達成基準は、主に独自のユーザインタフェース要素を開発したりスクリプトを書いたりするコンテンツ制作者に向けたものである。例えば、標準的な HTML のコントロールは、仕様に準じていればそれで既にこの達成基準を満たしていることになる。</p>
+                <p>この達成基準は、主に独自のユーザ インタフェース コンポーネントを開発、又はスクリプトで実装するコンテンツ制作者に向けたものである。例えば、標準的な HTML のコントロールを仕様に沿って使用していれば、既にこの達成基準を満たしていることになる。</p>
               </note>
             </div5>
           </div4>
@@ -930,9 +917,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       </div2>
     </div1>
     <div1 role="normative" id="conformance">
-      <head>適合性</head>
+      <head>適合</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
-      <p>この節では、WCAG 2.0への<termref def="conformancedef">適合性</termref>に関する要件を列挙する。また、任意である適合宣言の方法についての情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>とは何かを説明する。なぜならば、適合においてはウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ・サポーテッドという概念については、<loc href="conformance" linktype="understanding">WCAG 2.0への適合を理解する</loc>でさらに詳しい説明がある。</p>
+      <p>この節では、WCAG 2.0 への<termref def="conformancedef">適合</termref>に関する要件を列挙する。又、任意である適合表明の作成方法に関する情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc> でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
         <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
@@ -943,108 +930,108 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <ulist>
             <item>
               <p>
-                <emph role="sc-handle">レベル A：</emph> レベル A（適合の最低レベル）で適合するには、<termref def="webpagedef">ウェブページ</termref>がすべてのレベル A 達成基準を<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合した代替バージョン</termref>を提供する。
+                <emph role="sc-handle">レベルA:</emph> レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AA：</emph> レベル AA で適合するには、ウェブページはすべてのレベル A 及びレベル AA 達成基準を満たすか、又はレベル AA に適合した代替バージョンを提供する。
+                <emph role="sc-handle">レベル AA:</emph> レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合した代替版を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AAA：</emph> レベル AAA で適合するには、ウェブページがすべてのレベル A、レベル AA、及びレベル AAA 達成基準を満たすか、又はレベル AAA に適合した代替バージョンを提供する。
+                <emph role="sc-handle">レベルAAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合した代替版を提供する。
               </p>
             </item>
           </ulist>
           <note>
-            <p>ウェブページは、宣言したレベルでのみ WCAG 2.0 に適合できるが、コンテンツ制作者は、そのレベルよりも高いレベルの達成基準の達成状況を（適合宣言中で）示すことを推奨されている。</p>
-            <p>コンテンツの中には、レベル AAA のすべての達成基準を満たすことのできないものもあるため、サイト全体の制作方針としてレベル AAA での適合を要件とすることは推奨しない。</p>
+            <p> ウェブページは、記載したレベルでのみ WCAG 2.0 に適合できるが、コンテンツ制作者は、その適合レベルよりも高いレベルの達成基準の達成状況を (表明中で) 示すことを推奨されている。</p>
+            <p> コンテンツの中には、レベル AAA 達成基準のすべてを満たすことのできないものもあるため、サイト全体の一般的な方針としてレベル AAA での適合を要件とすることは推奨されない。</p>
           </note>
         </div3>
         <div3 role="front" id="cc2">
           <head role="cc">ウェブページ全体</head>
-          <p role="cc"><termref def="conformancedef">適合性</termref>（及び適合レベル）は<termref def="webpagedef">ウェブページ</termref>全体のみに対するものであり、ウェブページの一部が除外されている場合には認められない。
+          <p role="cc"><termref def="conformancedef">適合</termref> (及び適合レベル) は<termref def="webpagedef">ウェブページ</termref>全体に対するもののみであり、ウェブページの一部が除外されている場合には適合にならない。
           </p>
           <note>
-            <p> 適合性を判断するときに、例えば、画像の詳細な説明又は映像の代替表現のように、代替コンテンツをそのウェブページから直接得られる場合は、ウェブページの一部のコンテンツに対する代替コンテンツをそのウェブページの一部であるとみなす。</p>
-            <p>コンテンツ制作者が制御できないコンテンツがあるために適合できないウェブページについては、<loc href="conformance-partial" linktype="guideline">部分適合に関する記述</loc>を行うことを検討するとよい。</p>
+            <p> 適合の判断をするときに、例えば、詳細な説明又は映像の代替の提示のように、代替となるものがそのページから直接得られる場合は、ページのコンテンツの一部に対する代替コンテンツはそのページの一部であるとみなされる。</p>
+            <p> コンテンツ制作者が制御できないコンテンツがあるために適合できないウェブページについては、<loc href="conformance-partial" linktype="guideline">部分適合に関する記述</loc>を行うことを検討するとよい。</p>
           </note>
         </div3>
         <div3 role="front" id="cc3">
-          <head role="cc">一連のプロセス</head>
-          <p role="cc"><termref def="webpagedef">ウェブページ</termref>が<termref def="processdef">プロセス</termref>を提示する一連の流れのウェブページ群（つまり、利用者がある目的を達成するために完了させる必要のある一連の手順）に含まれる場合、そのプロセス中のすべてのウェブページが指定したレベル又はそれ以上のレベルで適合している（もし、プロセス中のウェブページが特定のレベル又はそれ以上のレベルに適合していない場合、そのレベルに適合できない）。</p>
+          <head role="cc">プロセス全体</head>
+          <p role="cc"><termref def="webpagedef">ウェブページ</termref>が<termref def="processdef">プロセス</termref>を提示する一連の流れのウェブページ群 (つまり、ある目的を達成するために完了させる必要のある一連の手順) に含まれる場合、そのプロセス中のすべてのウェブページが指定したレベル又はそれ以上のレベルで適合している (もし、プロセス中のウェブページが一つでも特定のレベル又はそれ以上のレベルに適合していない場合、そのレベルに適合できない)。</p>
           <example>
-            <p>オンラインストアに、製品を選択して購入するための一連のウェブページがあるとする。この場合、最初から最後（支払い）までのすべてのウェブページが適合していなければ、このプロセスに含まれるいずれのウェブページも適合していないことになる。</p>
+            <p> あるオンラインストアには、製品を選択して購入するための一連のウェブページがある。この場合、最初から最後 (支払い) までのすべてのウェブページが適合するには、このプロセスに含まれるどのウェブページも適合していなければならない。</p>
           </example>
         </div3>
         <div3 role="front" id="cc4">
-            <head role="cc">ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法のみ</head>
-          <p role="cc"> 達成基準を満たすためには、用いる
-<termref def="technologydef">ウェブコンテンツ技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>することができる。アクセシビリティ・サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ・サポーテッドな方法でも利用可能であること（<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティ・サポートを理解する</loc>を参照のこと）。
+            <head role="cc">技術のアクセシビリティ サポーテッドな使用方法だけ</head>
+          <p role="cc"> 達成基準を満たすために、用いる
+<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>している。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用できる (<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc>を参照)。
 
           </p>
         </div3>
         <div3 role="front" id="cc5">
           <head role="cc">非干渉</head>
-          <p role="cc"> もし<termref def="technologydef">
-ウェブコンテンツ技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>ではない方法で用いられている、又はウェブコンテンツ技術が WCAG 2.0 に適合していない状態で用いられている場合、利用者によるウェブページの他の部分へのアクセスを妨げていないことが必要である。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のすべての条件の下で適合要件を満たしていること：
+          <p role="cc"> <termref def="technologydef">
+技術</termref>が<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>ではない方法で用いられている場合、又は適合しない方法で用いられている場合、利用者がウェブページの他の部分へアクセスすることを妨げていない。加えて、全体として<termref def="webpagedef">ウェブページ</termref>は、以下のそれぞれの条件の下で適合要件を満たしていること: 
           </p>
           <olist>
             <item>
-              <p>ユーザエージェントで、<termref def="reliedupondef">依存</termref>していないウェブコンテンツ技術が有効になっているとき</p>
+              <p><termref def="reliedupondef">依存</termref>していない技術がユーザエージェントで有効になっているとき</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していないウェブコンテンツ技術が無効になっているとき、及び</p>
+                <p>依存していない技術がユーザエージェントで無効になっているとき、及び</p>
             </item>
             <item>
-                <p>ユーザエージェントで、依存していないウェブコンテンツ技術がサポートされていないとき</p>
+                <p>依存していない技術がユーザエージェントでサポートされていないとき</p>
             </item>
           </olist>
-            <p role="sctxt">さらに、以下の達成基準が満たされていない場合、ウェブページの利用を妨げる可能性があるため、適合要件を満たす上で依存していないコンテンツも含めて、ウェブページ上の全てのコンテンツはこれらの達成基準を満たしている必要がある。</p>
+            <p role="sctxt">さらに、適合するために依存していないコンテンツも含めて、ページ上の全てのコンテンツには以下の達成基準が適用される。なぜならば、これらを満たしていないことにより、ページの利用を妨げる可能性があるためである。</p>
             <ulist>
                 <item><p><emph role="bold">1.4.2 - 音声制御</emph>、</p></item>
                 <item><p><emph role="bold">2.1.2 - フォーカス移動</emph>、</p></item>
-                <item><p><emph role="bold">2.3.1 - 3回の閃光又は閾値以下</emph>、及び</p></item>
+                <item><p><emph role="bold">2.3.1 - 3回の閃光、又は閾値以下</emph>、及び</p></item>
                 <item><p><emph role="bold">2.2.2 - 一時停止、停止、非表示</emph></p></item>
             </ulist>
         </div3>
         <div3 role="front">
           <head role="suppressed"/>
-          <note><p>もし、あるウェブページが適合できないならば、そのウェブページを適合あるいは適合宣言の範囲に含めることはできない（例えば、適合しない悪い事例を紹介するためのウェブページも適合できない）。</p></note>
-            <p role="sctxt">事例も含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding">適合要件を理解する</loc>を参照のこと。
+          <note><p>もし、あるページが適合できないならば (例えば、適合のテストページや事例のページの場合)、そのページを適合の範囲、あるいは、適合表明の範囲に含めることはできない。</p></note>
+            <p role="sctxt">事例を含む、より詳細な情報は、<loc href="conformance" locn-note="uc-conformance-requirements-head" linktype="understanding" hreflang="en">Understanding Conformance Requirements</loc> を参照。
           </p>
         </div3>
       </div2>
       <div2 role="front" id="conformance-claims">
-        <head>適合宣言（任意）
+        <head>適合表明 (任意)
         </head>
-        <p>適合性は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合宣言は1ページ、一連のウェブページ群、または複数の関連するウェブページに対して行ってもよい。</p>
+        <p>適合は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合表明は1ページ、一連のウェブページ群、又は複数の関連するウェブページに対して行ってもよい。</p>
         <div3 id="conformance-required" role="front">
-          <head>適合宣言の必須要素</head>
-            <p role="sctxt">適合宣言は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合宣言をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合宣言をする場合には、その適合宣言には以下に挙げる情報が含まれてい<emph role="bold">なければならない</emph>：</p>
+          <head>適合表明の必須要素</head>
+            <p role="sctxt">適合表明は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合表明をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合表明をする場合には、その適合表明には以下の情報が含まれてい<emph role="bold">なければならない</emph>:</p>
           <olist>
             <item>
               <p>
-宣言の<emph role="bold">日付</emph></p>
+表明<emph role="bold">日</emph></p>
             </item>
             <item>
               <p>
-                <emph role="bold">ガイドライン名、バージョン、および URI
-                </emph> ：例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
+                <emph role="bold">ガイドライン名、バージョン、及び URI
+                </emph>: 例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
               </p>
             </item>
             <item>
               <p>
-満たしている<emph role="bold">適合レベル</emph>：（レベル A、AA、又は AAA）
+満たしている<emph role="bold">適合レベル</emph>: (レベル A、AA、又は AAA)
 </p>
             </item>
             <item>
               <p>
-                <emph role="bold">対象となるウェブページに関する簡潔な説明：</emph>： 例えば、サブドメインも宣言の対象に含まれているかどうかも含む、宣言の対象となっているURIのリスト。</p>
+                <emph role="bold">対象となるウェブページに関する簡潔な説明:</emph> 例えば、サブドメインも表明の対象に含まれているかどうかも含む、表明の対象となっているURIのリスト。</p>
               <note>
-                <p>対象となるウェブページは、リストを用いて表しても、対象となる全てのウェブページを含む表現を用いて表してもよい。</p>
-                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品の場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
+                <p>表明において、ウェブページはリストを用いて表してもよいし、全ての URI を含む表現を用いて表してもよい。</p>
+                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品がある。その場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
               </note>
             </item>
             <item>
@@ -1052,64 +1039,62 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <termref def="reliedupondef">依存している</termref> <termref def="technologydef">ウェブコンテンツ技術</termref></emph>のリスト</p>
             </item>
           </olist>
-          <note><p>適合のロゴを使用すると、適合を宣言していることとなり、上記の適合宣言の必須要素を明示しなければならない。</p></note>
+          <note><p>適合のロゴを使用するとその表明であるとみなされ、上記の適合表明の必須要素を明示しなければならない。</p></note>
         </div3>
         <div3 id="conformance-optional" role="front">
-          <head>適合宣言の任意要素</head>
-            <p role="sctxt">前述の適合宣言の必須要素に加えて、利用者のために追加で情報を提供することを検討するとよい。追加する情報として推奨するものを以下に挙げる：</p>
+          <head>適合表明の任意要素</head>
+            <p role="sctxt">上記の適合表明の必須要素に加えて、利用者のために追加で情報を提供することを検討する。追加する情報として推奨するものを以下に挙げる:</p>
           <ulist>
             <item>
-              <p>適合宣言したレベルよりも上のレベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
+              <p>表明した適合レベルよりも上の適合レベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
               </p>
             </item>
             <item>
-              <p><emph>
-使用しているが適合には
-<termref def="reliedupondef">依存</termref>していない</emph> ウェブコンテンツ技術のリスト。
+              <p><emph>使用しているが適合には<termref def="reliedupondef">依存</termref>していない</emph>技術のリスト。
 </p>
             </item>
             <item>
-              <p>コンテンツを検証するのに用いた、支援技術を含むユーザエージェントのリスト。
+              <p>コンテンツを試験するのに用いた、支援技術を含むユーザエージェントのリスト。
 
               </p>
             </item>
             <item>
-              <p> アクセシビリティを向上するために達成基準以上に追加で施した措置に関する情報。
+              <p>アクセシビリティを向上させるために達成基準を超えて追加で施した措置に関する情報。
 </p>
             </item>
             <item>
-              <p><termref def="reliedupondef">依存</termref>しているウェブコンテンツ技術を示したリストの機械的に読み取れるメタデータ版。
+              <p><termref def="reliedupondef">依存</termref>している技術を示したリストの機械的に読み取れるメタデータ版。
               </p>
             </item>
             <item>
-              <p>適合宣言の機械的に読み取れるメタデータ版。</p>
+              <p>適合表明の機械的に読み取れるメタデータ版。</p>
             </item>
           </ulist>
           <note>
-            <p>より多くの情報や適合宣言の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding">適合宣言を理解する</loc>を参照のこと。</p>
-              <p>適合宣言内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding">メタデータを理解する</loc>を参照のこと。</p>
+            <p>より多くの情報や適合表明の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc> を参照。</p>
+              <p>適合表明内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc> を参照。</p>
           </note>
         </div3>
       </div2>
       <div2 role="front" id="conformance-partial">
         <head>部分適合に関する記述 － 第三者によるコンテンツ</head>
-        <p>制作後にコンテンツが追加されるウェブページもある。例えば、電子メールのプログラム、ブログ、利用者がコメントを追加できる記事、又は利用者がコンテンツを提供できるようなアプリケーションである。その他の例としては、複数の提供者から集めたコンテンツで構成されるポータルやニュースサイト、又は動的に挿入される広告のように、他の情報源からその時々にコンテンツが自動的に挿入されるサイトが挙げられる。</p>
-          <p role="sctxt">これらの場合、最初に掲載した時点では、そのウェブページの第三者によるコンテンツがどのようなものになっていくか分からない。第三者によるコンテンツが、コンテンツ制作者が監視・修正できるコンテンツのアクセシビリティにも影響を及ぼす可能性があることに注意することが重要である。そのような場合、次の二つの方法から選択する：</p>
+        <p>場合によっては、制作後にコンテンツが追加されるようにウェブページが作成される。例えば、電子メールのプログラム、ブログ、利用者がコメントを追加できる記事、又は利用者がコンテンツを提供できるようなアプリケーションである。その他の例としては、複数の提供者から集めたコンテンツで構成されるポータルやニュースサイトのページや、又は動的に挿入される広告のように、他の情報源からその時々にコンテンツが自動的に挿入されるサイトが挙げられる。</p>
+          <p role="sctxt">これらの場合、最初に掲載した時点では、そのページにおける制御できないコンテンツがどのようなものになっていくか分からない。制御できないコンテンツが、制御できるコンテンツのアクセシビリティにも影響を及ぼす可能性があることに注意することが重要である。そのような場合、次の二つの方法から選択する:</p>
         <olist>
           <item>
-              <p>適合性の判断は、分かる範囲で下すことができる。もしこの種のウェブページが監視されていて、2営業日以内に修正される（適合していないコンテンツが削除されるか、適合するように修正される）ならば、そのウェブページは適合しているとみなすことができ、そのように外部から提供されたコンテンツにおける不具合が発見後に修正又は削除される場合は、適合性の判断又は宣言を行うことができる。ただし、適合していないコンテンツを監視及び修正できないのであれば、適合宣言を行うことはできない。</p>
+              <p>適合の判定は、分かる範囲で下すことができる。もしこの種のウェブページが監視されていて2営業日以内に修正される (適合していないコンテンツが削除されるか、適合するように修正される) ならば、外部から寄稿されたコンテンツにおける不具合のうち、発見後に修正又は削除できるものを除いて判定又は適合表明ができるので、そのページは適合している。適合していないコンテンツを監視及び修正できない場合は、適合表明を行うことはできない。</p>
             <p>
               <emph role="bold">又は、</emph>
             </p>
           </item>
           <item>
-              <p>そのウェブページ全体としては適合していないが、特定された部分を除外すれば適合した状態になる、という意味の「部分適合に関する記述」をしてもよい。そのような場合の記述は、「ウェブページ全体としては WCAG 2.0 に適合していないが、以下の第三者によるコンテンツを除けば、WCAG 2.0 のレベル X で適合している。」というような形式になる。ただし、第三者によるコンテンツについては、次のすべての条件を満たしている必要がある。</p>
+              <p>適合していないページが特定の部分を除けば適合できる場合、「部分適合に関する記述」ができる。そのような場合の記述は、「このページは適合していないが、制御されていない情報源に起因する以下の部分を除けば、WCAG 2.0 にレベル X で適合していることになる。」というような形式になる。さらに、部分適合の記述に記載される制御できないコンテンツについては、次の条件に当てはまる必要がある。</p>
             <olist>
               <item>
-                <p>コンテンツ制作者が監視及び修正できるコンテンツではない。</p>
+                <p>コンテンツ制作者が制御できるコンテンツではない。</p>
               </item>
               <item>
-                <p>利用者が識別できるように、明確に説明されている（例えば、該当箇所が明確に示されていない場合、「私たちが監視・修正できない部分すべて」という説明をすることはできない）。</p>
+                <p>利用者が識別できるように、記載されている (例えば、該当箇所が明確に示されない限り、「私たちが制御できない部分すべて」という記載をすることはできない)。</p>
               </item>
             </olist>
           </item>
@@ -1117,7 +1102,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       </div2>
         <div2 role="front" id="conformance-partial-lang">
             <head>部分適合に関する記述 － 言語</head>
-            <p>あるウェブページにおいて、そのウェブページは適合していないが、もしウェブページ上で用いられている（全ての）言語において<termref def="accessibility-supporteddef">アクセシビリティ・サポート</termref>が存在していれば適合するような場合には、「言語による部分適合に関する記述」をすることができる。その場合の記述形式は、「このウェブページは適合していないが、もし以下の言語にアクセシビリティ・サポートがあれば、WCAG 2.0 にレベル X で適合していることになる。」というようになる。</p>
+            <p>ページが適合していないが、そのページ上で用いられている (全ての) 言語において<termref def="accessibility-supporteddef">アクセシビリティ サポート</termref>があれば適合するような場合には、「言語による部分適合に関する記述」を出すことができる。そのような場合の記述形式は、「このページは適合していないが、もし以下の言語においてアクセシビリティ サポートがあれば、WCAG 2.0 にレベル X で適合していることになる。」というようになる。</p>
          </div2>
     </div1>
   </body>
@@ -1128,12 +1113,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <glist id="terms">
           <!-- " be sure to double-check that these are in alphabetical order -->
         <gitem id="abbreviationsdef">
-          <label>略語</label>
+          <label>略語 (abbreviation)</label>
           <def>
             <p>単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。
             </p>
             <note>
-              <p>これには、次のような頭文字語及び頭字語を含む：</p>
+              <p>これは、頭文字語及び頭字語を含む：</p>
               <olist>
                 <item>
                   <p>
@@ -1143,70 +1128,68 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   </note>
                   <example>
                     <p>SNCFは、フランス語の頭文字語で、フランス国有鉄道の "<phrase xml:lang="fr">Societe Nationale des Chemins de Fer</phrase> "の頭文字を含んでいる。</p>
-                    <p>ESPは、"extrasensory perception"（超感覚的知覚）の頭文字語である。</p>
+                    <p>ESPは、"extrasensory perception"の頭文字語である。</p>
                   </example>
                 </item>
                 <item>
                   <p>
                     <emph role="bold">頭字語</emph>
-は、（名称や語句にある）頭文字あるいは他の単語の一部で一つの単語のように発音されるような省略形である。
-                    
-                    
+は、（名称や語句の中の）頭文字あるいは他の単語の一部から作られた勝利矩形で、一つの単語のように発音されることがあるものである。
                   </p>
                   <example>
                     <p>NOAAは、米国の "National Oceanic and Atmospheric Administration" の頭文字による頭字語である。</p>
                   </example>
                 </item>
               </olist>
-              <p>会社名の頭字語だったものをそのまま会社名とする会社がある。そのような場合、その会社の新しい名前は単語（例：Ecma）であり、その単語はもはや頭字語ではない。</p>
+              <p>頭文字語だったものを社名として採用している会社がある。そのような場合、その会社の新しい社名はその文字列であるにすぎず（例：Ecma）、その単語はもはや略語とは考えられない。</p>
             </note>
           </def>
         </gitem>
         <gitem id="accessibility-supporteddef">
-          <label>アクセシビリティ・サポーテッド</label>
+          <label>アクセシビリティ サポーテッド ( (accessibility supported))</label>
           <def>
-            <p>ブラウザおよびその他の<termref def="useragentdef">ユーザエージェント</termref>にあるアクセシビリティ機能と同様に、ユーザの<termref def="atdef">支援技術</termref>でもサポートされている。
+            <p>利用者の<termref def="atdef">支援技術</termref>と、ブラウザ及びその他の<termref def="useragentdef">ユーザエージェント</termref>にあるアクセシビリティ機能でサポートされていること。
             </p>
-            <p>ウェブコンテンツ技術（あるいは、ウェブコンテンツ技術の機能）のアクセシビリティ・サポーテッドな使用であると見なすには、次の 1. と 2. の両方がそのウェブコンテンツ技術（あるいは、機能）で満たされなければならない：
+            <p>あるウェブコンテンツ技術（あるいは、ある技術の機能）の使用方法がアクセシビリティ サポーテッドであると認められるためには、そのウェブコンテンツ技術（あるいは、機能）について、次の 1. と 2. の両方が満たされていなければならない：
             </p>
             <olist>
               <item>
                 <p>
-                    <emph role="bold"><termref def="technologydef">ウェブコンテンツ技術</termref>の使用方法が、ユーザの支援技術 (AT) によりサポートされていなければならない。</emph>これは、そのウェブコンテンツ技術の使用方法がコンテンツの<termref def="human-langdef">自然言語</termref>においてユーザの支援技術との相互運用性を検証されていることを意味する。</p>
+                    <emph role="bold">その<termref def="technologydef">ウェブコンテンツ技術</termref>の使用方法が、利用者の支援技術 (AT) によりサポートされていなければならない。</emph>これは、その技術の使用方法が、そのコンテンツの<termref def="human-langdef">自然言語</termref>における利用者の支援技術との相互運用性について検証されていることを意味する。</p>
                 <p>
                   <emph role="bold">かつ</emph>
                 </p>
               </item>
               <item>
                 <p>
-                  <emph role="bold">そのウェブコンテンツ技術には、利用者が利用可能で、アクセシビリティ・サポーテッドでもあるユーザエージェントがなければならない。</emph>これは、少なくとも次の一つを満たしていることを意味する：</p>
+                  <emph role="bold">そのウェブコンテンツ技術には、アクセシビリティ サポーテッドで、利用者が利用できるユーザエージェントがなければならない。</emph>これは、少なくとも次の4つのうち一つを満たしていることを意味する：</p>
                 <olist>
                   <item>
-                    <p>そのウェブコンテンツ技術が、（HTMLやCSSといったウェブコンテンツ技術がそうであるように、）広く配布されているアクセシビリティ・サポーテッドなユーザエージェントで元々サポートされている。</p>
+                    <p>その技術が (HTMLやCSSのように)、広く配布されているアクセシビリティ サポーテッドなユーザエージェントに標準でサポートされている。</p>
                     <p>
                       <emph role="bold">又は、</emph>
                     </p>
                   </item>
                   <item>
-                    <p>そのウェブコンテンツ技術が、アクセシビリティ・サポーテッドな広く配布されているプラグインでサポートされている。</p>
+                    <p>その技術が、広く配布されているアクセシビリティ サポーテッドなプラグインでサポートされている。</p>
                     <p>
                       <emph role="bold">又は、</emph>
                     </p>
                   </item>
                   <item>
-                    <p>そのコンテンツが、例えば大学あるいは企業内ネットワークのような閉じた環境で利用可能であって、そのウェブコンテンツ技術が必要とし、その組織で使用されているユーザエージェントもアクセシビリティ・サポーテッドである。</p>
+                    <p>そのコンテンツが、大学あるいは企業内ネットワークのような閉じた環境で利用できるものであり、その技術に必要とされていて、その組織で使用されているユーザ エージェントがアクセシビリティ サポーテッドである。</p>
                     <p>
                       <emph role="bold">又は、</emph>
                     </p>
                   </item>
                   <item>
-                    <p>そのウェブコンテンツ技術をサポートするユーザエージェントが、アクセシビリティ・サポーテッドであって、次のようにダウンロードあるいは購入可能である：</p>
+                    <p>その技術をサポートするユーザエージェントが、アクセシビリティ サポーテッドであって、次のようにダウンロードあるいは購入できる：</p>
                     <ulist>
                       <item>
-                        <p>障害のない人よりも障害のある人に時間や労力がかかるようなことはなく、<emph role="bold">かつ、</emph></p>
+                        <p>障害のある人に障害のない人よりも時間や労力がかかるようなことはなく、<emph role="bold">かつ、</emph></p>
                       </item>
                       <item>
-                        <p>障害のない人と同じくらい容易に障害のある人も探して入手することができる。</p>
+                        <p>障害のある人も障害のない人と同じくらい容易に探して入手することができる。</p>
                       </item>
                     </ulist>
                   </item>
@@ -1214,19 +1197,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-                <p>WCAG ワーキンググループならびに W3C は、ウェブコンテンツ技術のある特定の使用方法がアクセシビリティ・サポーテッドであると分類するために、そのウェブコンテンツ技術の特定の使用方法に対して、どの支援技術のサポートあるいは支援技術によるどれだけのサポートが必要なのかを指定しない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding">「アクセシビリティ・サポーテッド」とするのに必要な支援技術によるサポートのレベル</loc>を参照のこと）。</p>
-                <p>そのウェブコンテンツ技術に<termref def="reliedupondef">依存</termref>していなくて、<specref ref="cc4"/>および<specref ref="cc5"/>を含む適合要件をウェブページ全体が満たしているかぎり、そのウェブコンテンツ技術をアクセシビリティ・サポーテッドではない方法で用いることができる。</p>
-                <p><termref def="technologydef">ウェブコンテンツ技術</termref>がアクセシビリティ・サポーテッドな方法で用いられている場合、そのウェブコンテンツ技術全体又はそのウェブコンテンツ技術の使用方法すべてがアクセシビリティ・サポーテッドであるということを暗に示すわけではない。ほとんどのウェブコンテンツ技術は、HTML を含めてアクセシビリティ・サポーテッドではない機能又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。</p>
-              <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ・サポーテッドなバージョンを特定すべきである。</p>
-                <p>コンテンツ制作者がウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法を見つける方法の一つは、アクセシビリティ・サポーテッドであることが文書化されている使用方法の資料を参考にすることである（<loc href="conformance" linktype="understanding" locn-note="uc-documented-lists-head">ウェブ技術のアクセシビリティ・サポーテッドな使用法を理解する</loc>を参照のこと）。コンテンツ制作者、企業、技術ベンダー、あるいはその他の者が、ウェブコンテンツ技術のアクセシビリティ・サポーテッドな使用方法を文書化してもよい。しかし、文書中のウェブコンテンツ技術の使用方法すべては、前述のアクセシビリティ・サポーテッドなウェブコンテンツ技術の定義を満たしていなければならない。
+                <p>WCAG Working Group ならびに W3C は、あるウェブ技術のある特定の使用方法がアクセシビリティ サポーテッドであると分類するために、そのウェブ技術の特定の使用方法に対して、どの支援技術によるどれだけのサポートが必要なのかを定めない（<loc href="conformance" locn-note="uc-support-level-head" linktype="understanding" hreflang="en">Level of Assistive Technology Support Needed for "Accessibility Support"</loc>を参照）。</p>
+                <p>そのウェブ技術に<termref def="reliedupondef">依存</termref>しておらず、<specref ref="cc4"/>及び<specref ref="cc5"/>を含む適合要件をウェブページ全体が満たしている場合は、そのウェブ技術をアクセシビリティ サポーテッドではない方法で用いることができる。</p>
+                <p><termref def="technologydef">ウェブ技術</termref>がアクセシビリティ サポーテッドな方法で用いられている場合、その技術全体、又はその技術の使用方法すべてがアクセシビリティ サポーテッドであるということを暗に示すわけではない。ほとんどの技術は、HTML を含めてアクセシビリティ サポーテッドではない機能、又は使用方法が少なくとも一つある。ウェブページが WCAG に適合するのは、依存する技術のアクセシビリティ サポーテッドな使用方法を用いて WCAG の要件を満たしている場合だけである。</p>
+              <p>複数のバージョンを有するウェブコンテンツ技術を挙げる際は、アクセシビリティ サポーテッドなバージョンを特定すべきである。</p>
+                <p>コンテンツ制作者が技術のアクセシビリティ サポーテッドな使用方法を見つける方法の一つは、アクセシビリティ サポーテッドであることが文書化されている使用方法の資料を参考にすることである（<loc href="conformance" linktype="understanding" locn-note="uc-documented-lists-head" hreflang="en">Understanding Accessibility-Supported Web Technology Uses</loc>を参照）。コンテンツ制作者、企業、技術ベンダー、あるいはその他の者が、ウェブコンテンツ技術のアクセシビリティ サポーテッドな使用方法を文書化してもよい。しかし、文書中の技術の使用方法すべては、前述のアクセシビリティ サポーテッドなウェブコンテンツ技術の定義を満たしていなければならない。
               </p>
             </note>
           </def>
         </gitem>
           <gitem id="alt-time-based-mediadef">
-              <label>時間の経過に伴って変化するメディアに対する代替コンテンツ</label>
+              <label>時間依存メディアに対する代替コンテンツ (alternative for time-based media)</label>
               <def>
-                  <p>正しい順序で提供されている、時間の経過に伴って変化する視覚的及び聴覚的情報のテキストによる説明（トランスクリプト）を含み、時間の経過に伴って変化する情報のやりとりの結果を得る手段を提供する文書。 
+                  <p>時間依存の視覚的及び聴覚的情報を正しい順序で説明したテキストを含み、あらゆる時間依存のインタラクションによる結果を得る手段を提供している文書。
                   </p>
                   <note>
                       <p>同期したメディアのコンテンツを作るために用いられる脚本は、編集が終了した最終版の同期したメディアを正確に描写した脚本に修正されている場合だけ、この定義を満たす。</p>
@@ -1234,101 +1217,100 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </def>
           </gitem>
         <gitem id="ambiguouslinkdef">
-          <label>一般的にみて利用者にとって曖昧</label>
+          <label>ほとんどの利用者にとって曖昧 (ambiguous to users in general)</label>
           <def>
-            <p>リンク及びリンクと同時に利用者に提供されているウェブページのすべての情報から、そのリンクの目的が断定できない（すなわち、障害のない利用者でも、そのリンクに対する操作を行うまで、そのリンクに対する操作結果が分からない）。</p>
+            <p>リンク、及びリンクと同時に利用者に提供されているウェブページのどの情報からも、そのリンクの目的を判断できない（すなわち、障害がない閲覧者でも、そのリンクを動作させるまで、そのリンクが何をするのか分からない）。</p>
             <example>
-              <p>「注目すべき輸出品はグァバです。」という文中にある「グァバ」という単語がリンクである場合、そのリンクは、グァバの定義、輸出されているグァバの量を挙げる図表、又はグァバを収穫している人々の写真へリンクされているかもしれない。この場合、リンクの目的は、そのリンクを選択するまですべての利用者が分からず、障害のある利用者だけが不利な立場にはならない。</p>
+              <p>「注目すべき輸出品のひとつはグァバです」という文中にある「グァバ」という単語がリンクになっている。そのリンク先は、グァバの定義、グァバの輸出量を挙げる図表、又はグァバを収穫している人々の写真のいずれにもなり得る。リンクを動作させるまで、すべての利用者が確信を持てないため、障害のある人が不利な立場に置かれることはない。</p>
             </example>
           </def>
         </gitem>
         <gitem id="asciiartdef">
-          <label>ASCII アート</label>
+          <label>ASCII アート (ASCII art)</label>
           <def>
-            <p>文字あるいは記号文字（通常は、ASCIIで定義されている95の印字可能文字）の空間的配置による図画
+            <p>文字やグリフの空間的配置によって作られた図画 （典型的には、ASCIIで定義されている95の印字可能文字から作られる）。
             </p>
           </def>
         </gitem>
         <gitem id="atdef">
-          <label>（この文書で用いられている）支援技術</label>
+          <label>（この文書で用いられている）支援技術 (assistive technology)</label>
           <def>
             <p><termref def="useragentdef">ユーザエージェント</termref>として機能する、又は主流のユーザエージェントと一緒に機能するハードウェア及び/あるいはソフトウェアで、主流のユーザエージェントで提供されている機能以上の機能を、障害のある利用者の要求を満たすために提供するもの。
             </p>
             <note>
               <p>
-支援技術が提供する機能としては、代替のプレゼンテーション（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
-                
+支援技術が提供する機能としては、代替の提示（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
               </p>
-              <p>支援技術は、<abbr expansion="Application Programming Interfaces">API</abbr> を用いて監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
+              <p>支援技術は、<abbr expansion="Application Programming Interfaces">API</abbr> を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
               </p>
-              <p>主流のユーザエージェントと支援技術とを区別するのに、絶対的な基準などはない。多くの主流のユーザエージェントは、障害者を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者のニーズにより特化した適切なものである。主流のユーザエージェントは、プログラムのオブジェクトからウェブコンテンツを取り出したり、マークアップを識別可能な構造に解釈したりするような、重要な機能を支援技術に対して提供する場合がある。
+              <p>主流のユーザエージェントと支援技術との区別は、絶対的なものではない。多くの主流のユーザエージェントは、障害者を支援する機能を提供している。基本的な差異は、主流のユーザエージェントが障害のある人もない人も含めて、広く多様な利用者を対象にしているのに対し、支援技術は、特定の障害のある利用者という、より狭く限られた人たちを対象にしているということである。支援技術により提供される支援は、対象とする利用者に特化した、よりニーズに適したものである。主流のユーザエージェントは、プログラムオブジェクトからのウェブコンテンツの抽出、マークアップの識別可能な構造への解釈といった、重要な機能を支援技術に対して提供する場合がある。
               </p>
             </note>
             <example>
               <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる：</p>
               <ulist>
                 <item>
-                  <p>画面拡大ソフトおよびその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、および読書困難などの障害のある人が、レンダリング後のテキストおよび画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。</p>
+                  <p>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。</p>
                 </item>
                 <item>
                   <p>スクリーンリーダー。全盲の人がテキスト情報を合成音声あるいは点字で読み取るために使用している。</p>
                 </item>
                 <item>
-                  <p>音声変換ソフトウェア。認知障害、言語障害、および学習障害のある人が、テキストを合成音声に変換するために使用している。</p>
+                  <p>音声変換ソフトウェア。認知障害、言語障害、及び学習障害のある人が、テキストを合成音声に変換するために使用している。</p>
                 </item>
                 <item>
                   <p>音声認識ソフトウェア。何らかの身体障害のある利用者が使用することがある。</p>
                 </item>
                 <item>
-                  <p>代替キーボード。特定の身体障害のある人がキーボードを擬似操作するのに使用している（ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、およびその他の特別な入力デバイスを使った代替キーボードを含む）。</p>
+                  <p>代替キーボード。特定の身体障害のある人がキーボード操作をシミュレートするのに使用している（ヘッドポインタ、シングルスイッチ、呼気・吸気スイッチ、及びその他の特別な入力デバイスを使った代替キーボードを含む）。</p>
                 </item>
                 <item>
-                  <p>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンを擬似操作するのに使用している。</p>
+                  <p>代替ポインティングデバイス。特定の身体障害のある人がマウスポインタとボタンの動きをシミュレートするのに使用している。</p>
                 </item>
               </ulist>
             </example>
           </def>
         </gitem>
         <gitem id="audiodef">
-          <label>音声</label>
-          <def><p>音声再生の技術。</p>
-            <note><p>音声は、合成的に生成されたもの（音声合成を含む）、実世界で録音したもの、又はその両方でもありうる。</p></note>
+          <label>音声 (audio)</label>
+          <def><p>音の再生技術。</p>
+            <note><p>音声には、合成して作られたもの（音声合成を含む）、実世界の音を収録したもの、又はその両方が含まれる。</p></note>
           </def>
         </gitem>
-        
         <gitem id="audiodescdef">
-          <label>音声ガイド</label>
+          <label>音声解説 (audio description)</label>
           <def>
             <p>主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。</p>
             <note>
               <p>
-<termref def="videodef">映像</termref>の音声ガイドは、動作やしぐさ、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
+<termref def="videodef">映像</termref>の音声解説は、動作、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
               </p>
-              <p>標準的な音声ガイドでは、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張した音声ガイド</termref>も参照のこと。）</p>
-              <p>すべての<termref def="videodef">映像</termref>の情報が既存の<termref def="audiodef">音声</termref>で提供されている場合、補足の音声ガイドは不要である。</p>
-              <p>ビデオ説明や「説明ナレーション」とも呼ばれる。</p>
+              <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。（<termref def="extended-addef">拡張音声解説</termref>も参照。）</p>
+              <p><termref def="videodef">映像</termref>情報のすべてが既存の<termref def="audiodef">音声</termref>ですでに提供されている場合、補足の音声解説は不要である。</p>
+              <p>"video description" や "descriptive narration" とも呼ばれる。</p>
             </note>
+<trnote><p>日本語では「音声ガイド」とも呼ばれる。</p></trnote>
           </def>
         </gitem>
         <gitem id="audio-onlydef">
-          <label>音声しか含まない</label>
+          <label>音声しか含まない (audio-only)</label>
           <def>
-            <p><termref def="audiodef">音声</termref>のみを含んだ、時間の経過に伴って変化する表現（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
+            <p><termref def="audiodef">音声</termref>のみを含んだ、時間に依存する提示（<termref def="videodef">映像</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="blinksdef">
-          <label>点滅</label>
+          <label>点滅 (blinking)</label>
           <def>
-            <p>注意を引くために、二つの視覚的な状態を交互に切り替えること。
+            <p>注意を引く意図で、二つの視覚的な状態を交互に切り替えること。
             </p>
             <note>
-              <p><termref def="flash-def">閃光</termref>も参照のこと。ある頻度で、ある程度以上に大きく、明るく点滅することによって、閃光として分類されることもありうる。
+              <p><termref def="flash-def">閃光</termref>も参照。ある程度の面積をもち、ある程度の明るさ、特定の頻度で点滅するものは、閃光に分類されることもありうる。
               </p>
             </note>
           </def>
         </gitem>
         <gitem id="blockstextdef">
-          <label>テキスト・ブロック</label>
+          <label>テキスト ブロック (blocks of text)</label>
           <def>
             <p>一文よりも長いテキスト。</p>
           </def>
@@ -1338,30 +1320,31 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>Completely Automated Public Turing test to tell Computers and Humans Apart（コンピュータと人間とを判別する完全自動化されたチューリングテスト）の頭文字語。</p>
             <note>
-              <p>CAPTCHA のテストは、わざと不明瞭にした画像又は音声ファイルによって提示されるテキストを、利用者に入力するように求めることが多い。</p>
-              <p>チューリングテストは、人間とコンピュータを判別するために設計されたテストの仕組みである。その名は、これを考案した有名なコンピュータ科学者のアラン・チューリングにちなんで名付けられた。この用語は、カーネギーメロン大学の研究者たちによる造語であった。<bibref ref="CAPTCHA"/>
+              <p>CAPTCHA のテストは多くの場合、利用者に対し、不明瞭な画像又は音声ファイルによって提示されたテキストを入力するよう求める。</p>
+              <p>チューリングテストは、人間とコンピュータを区別することを目的としたテストの仕組みである。その名は、高名なコンピュータ科学者のアラン・チューリングにちなんでいる。この用語は、カーネギーメロン大学の研究者たちによる造語である。<bibref ref="CAPTCHA"/>
               </p>
             </note>
           </def>
         </gitem><gitem id="captionsdef">
-          <label>キャプション</label>
+          <label>キャプション (captions)</label>
           <def>
-            <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報の両方に対する、同期した視覚的表現又は<termref def="text-altdef">代替テキスト</termref>。</p>
+            <p>そのメディアのコンテンツを理解するのに必要な、会話及び会話でない音声情報に対する、同期した視覚、又は<termref def="text-altdef">テキストによる代替</termref>。</p>
             <note>
-              <p>キャプションは発話のみの字幕と似ているが、次の点において異なる。すなわち、キャプションは、発話コンテンツだけでなく、その番組の内容を理解するために必要となる、発話ではない音声情報と等価な内容も伝える。つまり、効果音、音楽、笑い声、話者の特定、位置なども含まれる。</p>
-              <p>クローズド・キャプションは、プレーヤーによっては表示／非表示を切り替えることのできる等価物である。</p>
-              <p>オープン・キャプションは、非表示にすることのできないキャプションである。例えば、キャプションが<termref def="videodef">映像</termref>に埋め込まれた、視覚的に等価な<termref def="images-of-textdef">画像化された文字</termref>である場合がある。</p>
-              <p>キャプションは、映像の伝えている情報を分かりにくくしたり遮ったりすべきではない。</p>
-              <p>国によっては、キャプションはサブタイトル（字幕）と呼ばれている。</p>
+              <p>キャプションは会話のみの字幕と似ているが、会話の内容だけを伝えるのではなく、その番組の内容を理解するために必要な効果音、音楽、笑い声、話者の特定、立地などを含む、会話でない音声情報と同等の内容も伝える点が異なる。</p>
+              <p>クローズド キャプションは、音声情報と同等の内容で、プレーヤーによっては表示／非表示を切り替えることができるものを指す。</p>
+              <p>オープン キャプションは、非表示にできないキャプションである。例えば、キャプションが同等の視覚化された<termref def="images-of-textdef">文字画像</termref>で<termref def="videodef">映像</termref>に埋め込まれている場合である。</p>
+              <p>キャプションは、映像に含まれる情報を分かりにくくしたり遮ったりすべきではない。</p>
+              <p>国によっては、キャプションは "subtitle" と呼ばれている。</p>
+<trnote><p>subtitleには、「字幕」の意がある。日本では、キャプションのことを一般に字幕と呼ぶことが多い。</p>
+</trnote>
               <p>
-                <termref def="audiodescdef">音声ガイド</termref>は既に視覚的に提示されている情報の説明なので、キャプションにしてもよいが、そうする必要があるわけではない。</p>
-              
+                <termref def="audiodescdef">音声解説</termref>にキャプションをつけることもできるが、つける必要はない。なぜなら、音声解説は既に視覚的に提示されている情報の説明だからである。</p>
             </note>
           </def>
         </gitem><gitem id="context-changedef">
-          <label>状況の変化</label>
+          <label>コンテキストの変化 (changes of context)</label>
           <def>
-            <p><termref def="webpagedef">ウェブページ</termref>のコンテンツにおける大きな変化で、利用者が気づかないと、ウェブページ全体を一度に見ることのできない利用者をまごつかせてしまう恐れのあるもの。</p>
+            <p><termref def="webpagedef">ウェブページ</termref>のコンテンツにおける大きな変化で、利用者が気づかないと、ウェブページ全体を一度に見ることのできない利用者を混乱させる恐れのあるもの。</p>
             <p>状況の変化には次に挙げるものの変化が含まれる：</p>
             <olist>
               <item>
@@ -1381,86 +1364,83 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-              <p>コンテンツの変化が、必ず状況の変化になるとはかぎらない。アウトライン表示の展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例：フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
+              <p>コンテンツの変化が、必ずコンテキストの変化になるとはかぎらない。アウトラインの展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例：フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
             </note>
             <example>
-              <p>新しいウィンドウを開くこと、フォーカスを異なる要素へ移動させること、新しいウェブページへ移動すること（新しいウェブページへ移動したかのように思わせてしまうことも含む）、又はウェブページの内容を大きく再配置することなどは、状況の変化の事例である。</p>
+              <p>新しいウィンドウを開くこと、フォーカスを異なるコンポーネントへ移動させること、新しいウェブページへ移動すること（新しいウェブページへ移動したかのように思わせてしまうことも含む）、又はウェブページの内容を大きく再配置することなどは、コンテキストの変化の事例である。</p>
             </example>
           </def>
         </gitem>
-        
         <gitem id="conformancedef">
-          <label>適合</label>
+          <label>適合 (conformance)</label>
           <def>
             <p>
 定められた標準、ガイドライン、あるいは仕様のすべての要件を満たすこと。
-              
             </p>
           </def>
         </gitem>
         <gitem id="conforming-alternate-versiondef">
-          <label>適合している代替バージョン</label>
+          <label>適合している代替版 (conforming alternate version)</label>
           <def>
-            <p>以下の事項を満たすバージョンのことを指す：</p>
+            <p>以下の事項を満たす版のことを指す：</p>
             <olist>
               <item>
                 <p>指定されたレベルで適合しており、かつ</p>
               </item>
               <item>
-                <p>同じ情報および<termref def="functiondef">機能</termref>のすべてを同一の<termref def="human-langdef">自然言語</termref>で提供しており、かつ</p>
+                <p>同じ情報及び<termref def="functiondef">機能</termref>のすべてを同一の<termref def="human-langdef">自然言語</termref>で提供しており、かつ</p>
               </item>
               <item>
-                <p>適合していないコンテンツと同時に更新されていて、かつ</p>
+                <p>不適合コンテンツと同時に更新されていて、かつ</p>
               </item>
               <item>
                 <p>以下に挙げる事項のうち少なくとも一つを満たしていること：</p>
                 <olist>
                   <item>
-                    <p><termref def="accessibility-supporteddef">アクセシビリティ・サポーテッド</termref>
-                      <termref def="mechanismdef">メカニズム</termref>を用いて、適合していないウェブページから適合しているバージョンへ移動できる。もしくは、</p>
+                    <p><termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な
+                      <termref def="mechanismdef">メカニズム</termref>を用いて、 不適合ページから適合版へ到達できる。もしくは、</p>
                   </item>
                   <item>
-                    <p>適合しているバージョンからのみ適合していないバージョンへ移動できる。もしくは、</p>
+                    <p>不適合版に到達できるのは、適合版からのみである。</p>
                   </item>
                   <item>
-                    <p>適合しているバージョンへ移動するメカニズムも提供している適合しているウェブページからのみ、適合していないバージョンへ移動できる。</p>
+                    <p>不適合版に到達できるのは、適合版に到達するメカニズムも提供している適合ページからのみである。</p>
                   </item>
                 </olist>
               </item>
             </olist>
             <note>
-              <p>この定義においては、「･･･からのみ･･･へ移動できる」とは、条件付きのリダイレクトのような何らかのメカニズムがあり、利用者が特定のウェブページから来ないかぎり、利用者が適合していないウェブページに「たどり着く」（適合していないウェブページを読み込む）ことがない、ということを意味する。</p>
-              <p>代替バージョンは、元のウェブページと一対一で対応している必要はない（例えば、適合した代替バージョンは複数のウェブページであってもよい）。</p>
-              <p>複数の言語版がある場合、各言語版に対して、適合した代替バージョンを提供する必要がある。</p>
-              <p>様々な技術環境又は利用者層に対応するために、複数の代替バージョンを提供してもよい。この場合、各バージョンは可能なかぎり適合したものでなければならず、<loc href="cc1" linktype="guideline">適合要件 1</loc>を満たすためには、そのうちの一つのバージョンが完全に適合したものでなければならない。</p>
-                <p>適合していないバージョンと同じように自由に利用可能であるかぎり、適合した代替バージョンは、適合宣言の対象のウェブページ群に含まれている必要はなく、元のウェブページと同じウェブサイト上で提供されている必要もない。</p>
-              <p>代替バージョンは、元のウェブページを補助して理解を高める<termref def="suppcontentdef">補足的なコンテンツ</termref>と混同されないようにすべきである。</p>
-              <p>コンテンツ内で利用者が設定を行うことで適合したバージョンが作り出される仕組みは、その利用者の設定に用いられている手法がアクセシビリティ・サポーテッドであるかぎり、代替バージョンへの移動メカニズムとして条件を満たしているといえる。</p>
+              <p>この定義において、「到達できるのは・・・からのみ」とは、利用者が適合版から来ていない限り、不適合ページに「到達する」（読み込む）のを防ぐ条件付きリダイレクトのような何らかのメカニズムがある、ということを意味する。</p>
+              <p>代替版は、元のページと一対一で対応している必要はない（例えば、適合している代替版は複数のページであってもよい）。</p>
+              <p>複数の言語版が利用できる場合、各言語版に対して、適合している代替版を提供する必要がある。</p>
+              <p>様々な技術環境、又は利用者層に対応するために、複数の代替版を提供してもよい。この場合、各版は可能なかぎり適合したものでなければならず、<loc href="cc1" linktype="guideline">適合要件 1</loc>を満たすためには、そのうちの一つの版が完全に適合したものでなければならない。</p>
+                <p>不適合版と同じように自由に利用可能であるかぎり、適合している代替版は、適合宣言の範囲に含まれている必要はなく、同一のウェブサイト上で提供されている必要もない。</p>
+              <p>代替版は、元のページを補助して理解を高める<termref def="suppcontentdef">補足的なコンテンツ</termref>と混同されないようにすべきである。</p>
+              <p>コンテンツ内で利用者が設定を行うことで適合版が作り出される仕組みは、その利用者の設定に用いられている手法がアクセシビリティ サポーテッドであるかぎり、代替版への到達メカニズムとして条件を満たしているといえる。</p>
             </note>
-            <p role="circref"><loc href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替バージョンを理解する</loc>を参照のこと。
+            <p role="circref"><loc href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding" hreflang="en">Understanding Conforming Alternate Versions</loc>を参照。
             </p>
           </def>
         </gitem>
-        
         <gitem id="contentdef">
-          <label>コンテンツ（ウェブコンテンツ）</label>
+          <label>コンテンツ（ウェブコンテンツ） (content (Web content))</label>
           <def>
             <p>
-<termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報および感覚的な体験を指す。コンテンツの
+<termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報及び感覚的な体験。コンテンツの
 
-              <termref def="structuredef">構造</termref>、<termref def="presentationdef">表現</termref>、及びインタラクションを定義するソースコードやマークアップを含む。
+              <termref def="structuredef">構造</termref>、<termref def="presentationdef">提示</termref>、及びインタラクションを定義するコードやマークアップを含む。
             </p>
           </def>
         </gitem>
         <gitem id="context-sensitivehelpdef">
-          <label>状況に応じたヘルプ</label>
+          <label>コンテキストに応じたヘルプ (context-sensitive help)</label>
           <def>
             <p>そのとき実行されている機能に関する情報を提供するヘルプのテキスト。</p>
-              <note><p>分かりやすいラベルは、状況に応じたヘルプとして機能しうる。</p></note>
+              <note><p>明解なラベルは、コンテキストに応じたヘルプとして機能しうる。</p></note>
           </def>
         </gitem>
         <gitem id="contrast-ratiodef">
-          <label>コントラスト比</label>
+          <label>コントラスト比 (contrast ratio)</label>
           <def>
             <p>(L1 + 0.05) / (L2 + 0.05)    ここでは、</p>
             <ulist>
@@ -1476,61 +1456,58 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <note>
               <p>コントラスト比は、1～21の範囲になりうる（通常は、1：1～21：1と記述される）。</p>
               <p>コンテンツ制作者は、テキストのレンダリング（例：フォントのスムージングやアンチエイリアス）に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。</p>
-              <p>達成基準 1.4.3 および 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。</p>
+              <p>達成基準 1.4.3 及び 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。</p>
               <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、問題がある。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も問題がある。</p>
-              <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。ただし、文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、かさ（暈：ハローや後光、ドロップ車道、光彩など）のようになって、文字の細かい字画を埋めていれば、背景色として考慮されることになる。</p>
-              <p>WCAG に適合しているか判断する場合は、典型的な表現において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる表現を考慮する必要はない。ただし、それが制作者のソースコードによって起こる場合は除く。</p>
+              <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、光彩のようになって、文字の内側の細部を塗りつぶしていれば、背景色として考慮されることになる。</p>
+              <p>WCAG に適合しているか判断する場合は、典型的な提示において隣接するであろうと制作者が想定するコンテンツで指定された色の組み合わせについて評価しなければならない。制作者は、ユーザエージェントによる色の変更などのように通常とは異なる提示を考慮する必要はない。ただし、それが制作者のコードによって起こる場合は除く。</p>
             </note>
           </def>
         </gitem><gitem id="correct-reading-sequencedef">
-          <label>正確な音声読み上げ順序</label>
+          <label>正しく読む順序 (correct reading sequence)</label>
           <def>
             <p>コンテンツの意味を変更せずに、単語や段落が提示される順序。</p>
           </def>
         </gitem>
         <gitem id="emergencydef">
-          <label>緊急</label>
+          <label>緊急 (emergency)</label>
           <def>
             <p>健康、安全や財産を守るために直ちに行動をとる必要のある、突然で予期されなかった状況あるいは出来事。</p>
           </def>
         </gitem>
         <gitem id="essentialdef">
-          <label>必要不可欠</label>
-          <def><p>もし取り除いてしまうと、コンテンツの情報あるいは機能を根本的に変えてしまい、<emph role="bold">かつ、</emph>情報および機能が WCAG に適合する他の方法では提供することができない。</p> </def>
+          <label>必要不可欠 (essential)</label>
+          <def><p>もし取り除いてしまうと、コンテンツの情報あるいは機能を根本的に変えてしまい、<emph role="bold">かつ、</emph>適合する他の方法では情報及び機能を実現できない。</p> </def>
         </gitem>
-        
         <gitem id="extended-addef">
-          <label>拡張した音声ガイド</label>
+          <label>拡張音声解説 (extended audio description)</label>
           <def>
-            <p>追加の説明を付加する時間を作るために<termref def="videodef">映像</termref>を一時停止させて、視聴覚のプレゼンテーションに付加した音声ガイド。</p>
+            <p><termref def="videodef">映像</termref>を一時停止することで追加の説明を付加するための時間を確保し、視聴覚プレゼンテーションに付加した音声解説。</p>
             <note>
-              <p>この実装方法は、追加の<termref def="audiodescdef">音声ガイド</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
+              <p>この達成方法は、追加の<termref def="audiodescdef">音声解説</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
             </note>
           </def>
         </gitem>
         <gitem id="flash-def">
-          <label>閃光</label>
+          <label>閃光 (flash)</label>
           <def>
-            <p>十分な大きさとある周波数において発作を誘発する恐れのある、<termref def="relativeluminancedef">相対輝度</termref>の相反する変化の組合せ。</p>
+            <p><termref def="relativeluminancedef">相対輝度</termref>の交互の変化で、ある程度の面積と特定の頻度によって、一部の人の発作を誘発する恐れがあるもの。</p>
             <note>
-              <p>許容されない閃光の種類に関する情報は、<termref def="general-thresholddef">一般閃光閾値および赤色閃光閾値</termref>を参照のこと。</p>
-              <p><termref def="blinksdef">点滅</termref>も参照のこと。</p>
+              <p>許容されない閃光の種類に関する情報は、<termref def="general-thresholddef">一般閃光閾値及び赤色閃光閾値</termref>を参照。</p>
+              <p><termref def="blinksdef">点滅</termref>も参照。</p>
             </note>
           </def>
         </gitem>
 <gitem id="functiondef">
-          <label>機能性</label>
+          <label>機能 (functionality)</label>
           <def>
             <p>
-利用者の操作により実現可能な<termref def="processdef">プロセス</termref>および結果。</p>
+利用者の操作により実現可能な<termref def="processdef">プロセス</termref>及び結果。</p>
           </def>
         </gitem>
-        
         <gitem id="general-thresholddef">
-          <label>一般閃光閾値及び赤色閃光閾値</label>
+          <label>一般閃光閾値及び赤色閃光閾値 (general flash and red flash thresholds)</label>
           <def>
-            <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる：</p>
-           
+            <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>、又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる：</p>
             <olist>
               <item>
                 <p>あらゆる1秒間において、
@@ -1538,89 +1515,85 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 は3回以下である。もしくは、</p>
               </item>
               <item>
-                <p>一般的な画面との距離で、同時に生じている閃光が占める領域の合計が、視野のどの視覚10度においても、画面上で合計0.006ステラジアン（画面上の視野10度の25％）よりも多くを占めていない。
+                <p>一般的な閲覧距離で、同時に生じている閃光が占める領域の合計が、画面上のどの視野10度においても、合計0.006ステラジアン（画面上の視野10度の25％）よりも多くを占めていない。
 
                 </p>
               </item>
-              
             </olist>
             <p>ここで：</p>
             <ulist>
               <item>
-                <p><emph role="bold">一般閃光</emph>とは、暗いほうの<termref def="relativeluminancedef">相対輝度</termref>が0.80未満で、最大相対輝度の10％以上の相対輝度における相反する変化の組合せのことである。ここでいう「相反する変化の組合せ」とは、増加した後に減少する、又は減少した後に増加するものを指す。そして、</p>
+                <p><emph role="bold">一般閃光</emph>とは、暗いほうの<termref def="relativeluminancedef">相対輝度</termref>が0.80未満であるときの、最大相対輝度の10%以上の相対輝度の交互の変化のことである。ここでいう「交互の変化」とは、増加した後に減少する、又は減少した後に増加するものを指す。そして、</p>
               </item>
               <item>
-                <p><emph role="bold">赤色閃光</emph>とは、彩度の高い赤色を含んだ、相反する遷移のあらゆる組合せのことである。</p>
+                <p><emph role="bold">赤色閃光</emph>とは、彩度の高い赤色を含んだ交互の遷移のことである。</p>
               </item>
             </ulist>
             <p>
-              <emph>例外：</emph> ホワイトノイズ又は1辺が（典型的な閲覧距離における視野の）0.1度未満の格子縞模様のように、細かくて整っている模様の閃光は、閾値を破ることにはならない。</p>
+              <emph>例外：</emph> ホワイトノイズ又は1辺が（典型的な閲覧距離における視野の）0.1度未満の市松模様のように、細かくて整っている模様の閃光は、閾値を超えることにはならない。</p>
             <note>
               <p>一般的なソフトウェアやウェブコンテンツでは、コンテンツを 1024 × 768 ピクセルの解像度で閲覧している際の画面上での 341 × 256 ピクセルの矩形が、標準的な画面サイズ及び画面からの距離（例：22～26インチの距離で、15～17インチの画面）における視野角10度に該当する（同じコンテンツでも高解像度のディスプレイでは小さく安全になるので、閾値を定めるには低解像度が用いられている）。</p>
               <p>遷移とは、相対輝度（赤色閃光の相対輝度/色）の計測値を時間軸でプロットしたときの隣接する山と谷の間における相対輝度（赤色閃光の相対輝度/色）の変化である。閃光は、ひと組の逆方向の遷移から成る。</p>
               <p><emph role="bold">彩度の高い赤色を含む相反する遷移の組合せ</emph> の現時点での定義は、各遷移に含まれる状態の一方又は双方とも、R / (R＋G＋B) が 0.8 以上で、(R－G－B) × 320 の値の変化が双方の遷移において 20 より大きい（ただし、(R－G－B) × 320 が負の値になるときはゼロとする）。R、G、Bの値は、相対輝度 の定義で定められているように 0～1 の範囲である。<bibref ref="HARDING-BINNIE"/></p>
-              <p>ビデオの画面キャプチャから分析を行うツールが入手可能である。しかし、閃光があらゆる1秒間の間隔において3回以下であれば、ツールでこの条件を満たしているかどうかを確認する必要はない。コンテンツは自動的に条件を満たしたことになるからである（上記 1. および 2. を参照のこと）。</p>
+              <p>ビデオの画面キャプチャから分析を行うツールを利用できる。しかし、閃光があらゆる1秒間の間隔において3回以下であれば、ツールでこの条件を満たしているかどうかを確認する必要はない。コンテンツは自動的に条件を満たしたことになるからである（上記 1. 及び 2. を参照）。</p>
             </note>
           </def>
         </gitem>
         <gitem id="human-langdef">
-          <label>自然言語</label>
+          <label>自然言語 (human language)</label>
           <def>
             <p>
-人間とコミュニケーションをとるための言語で、話す、書く、又は（視覚的あるいは触覚的な手段で）手話にするもの。
+人間とコミュニケーションをとるための言語で、話される、書かれる、又は（視覚的あるいは触覚的な手段で）手話にされるもの。
             </p>
             <note>
-              <p><termref def="sign-languagedef">手話</termref>も参照のこと。</p>
+              <p><termref def="sign-languagedef">手話</termref>も参照。</p>
             </note>
           </def>
         </gitem>
         <gitem id="idiomsdef">
-          <label>慣用句</label>
+          <label>慣用句 (idiom)</label>
           <def>
-            <p>個々の単語の意味からはその意味を推測できず、そこにある単語を変えると意味が通じなくなる言い回し。</p>
+            <p>個々の単語の意味からはその意味を推測できず、特定の単語を変えると意味が通じなくなる言い回し。</p>
             <note>
               <p>慣用句は、単語単位で直接翻訳すると、その（文化的あるいは言語特有の）意味が通じなくなる。
               </p>
             </note>
             <example>
-              <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>"（豆をこぼす） は"<phrase xml:lang="en">revealing a secret</phrase>"（秘密を漏らす）という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>"（豆をひっくり返す）や"<phrase xml:lang="en">spilling the vegetables</phrase>"（野菜をこぼす）は同じ意味にはならない。</p>
+              <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>"（豆をこぼす） は「秘密を漏らす」という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>"（豆をひっくり返す）や"<phrase xml:lang="en">spilling the vegetables</phrase>"（野菜をこぼす）は同じ意味にはならない。</p>
               <p> 日本語では、「さじを投げる」という言い回しは、逐語訳では "<phrase xml:lang="en">he throws a spoon</phrase>"となるが、「どうすることもできずに諦める」という意味である。
 
-                
               </p>
-              <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば"<phrase xml:lang="en">He went to roost with the chickens"</phrase>（彼はニワトリとねぐらについた）となるが、「彼は早く寝た」という意味である。
+              <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば「彼はニワトリとねぐらについた」となるが、「彼は早く寝た」という意味である。
 </p>
             </example>
           </def>
         </gitem>
         <gitem id="images-of-textdef">
-          <label>画像化された文字</label>
-          <def><p>特定の視覚的効果を得るために非テキスト形式（例えば、画像）でレンダリングされたテキスト。</p>
-            <note><p>これには、重要なその他の視覚的なコンテンツを含む画像の一部である<termref def="textdef">テキスト</termref>は含まれない。</p></note>
-            <example><p>写真に写っている人の名札にある人名は含まれない。</p></example>
+          <label>文字画像 (image of text)</label>
+          <def><p>特定の視覚的効果を得るために非テキスト形式（例えば画像）でレンダリングされたテキスト。</p>
+            <note><p><termref def="textdef">テキスト</termref>以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。</p></note>
+            <example><p>写真に写っている人の名札にある人名。</p></example>
           </def>
         </gitem>
-        
-        
         <gitem id="informativedef">
-          <label>参考情報</label>
+          <label>参考情報 (informative)</label>
           <def>
-            <p>情報提供を目的にしたものであり、適合するために必須のものではない。</p>
+            <p>情報提供を目的としており、適合するために必須ではないもの。</p>
             <note>
-              <p><termref def="conformancedef">適合</termref>に必須となる部分は、<termref def="normativedef">規定</termref> と呼んでいる。
+              <p><termref def="conformancedef">適合</termref>に必須の内容は、「<termref def="normativedef">規定</termref>」と呼ばれる。
 </p>
             </note>
           </def>
         </gitem>
         <gitem id="input-errordef">
-          <label>入力エラー</label>
+          <label>入力エラー (input error)</label>
           <def>
-            <p>利用者が提供した情報で、受け付けられないもの。</p>
+            <p>利用者が入力した情報で、受け付けられないもの。</p>
             <note>
               <p>以下のものが含まれる：</p>
               <olist>
                 <item>
-                  <p><termref def="webpagedef">ウェブページ</termref>では必須とされているが、利用者が入力を省略した情報</p>
+                  <p>その<termref def="webpagedef">ウェブページ</termref>では必須であるが、利用者が入力しなかった情報</p>
                 </item>
                 <item>
                   <p>利用者が入力したが、要求されたデータ形式あるいは値ではない情報</p>
@@ -1630,39 +1603,36 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="jargondef">
-          <label>専門用語</label>
+          <label>専門用語 (jargon)</label>
           <def>
-            <p>特定の分野の人々が特定の用法で用いる単語</p>
+            <p>特定の分野の人々が特定の用法で用いる単語。</p>
             <example>
-              <p>StickyKeys（固定キー）という用語は、支援技術 / アクセシビリティの分野における専門用語である。</p>
+              <p>固定キーという用語は、支援技術やアクセシビリティの分野における専門用語である。</p>
             </example>
           </def>
         </gitem>
         <gitem id="keybrd-interfacedef">
-          <label>キーボード・インターフェース</label>
+          <label>キーボード インターフェース (keyboard interface)</label>
           <def>
             <p>キーストローク入力を取得するためにソフトウェアが用いるインターフェース。</p>
             <note>
-              <p>キーボードがもともと存在しない技術であっても、キーボード・インターフェースによって、利用者がキーストローク入力をプログラムに提供できる。</p>
+              <p>標準ではキーボードが存在しない技術であっても、キーボード インターフェースによって、利用者がキーストローク入力をプログラムに提供できる。</p>
               <example>
-                <p>タッチスクリーンを搭載している PDA には、外部キーボードへのコネクタとあわせて、その OS に組み込まれたキーボード・インターフェースがある。PDA 上のアプリケーションはそのインターフェースを用いて、外部キーボード、あるいは手書き解釈プログラムや「キーボード・エミュレーション」機能付きの音声テキスト変換アプリケーションのような擬似キーボード出力を提供する他のアプリケーションのいずれかからキーボード入力を取得することができる。</p>
+                <p>タッチスクリーンを搭載している PDA には、外部キーボードへのコネクタとあわせて、その OS に組み込まれたキーボード インターフェースがある。PDA 上のアプリケーションはそのインターフェースを用いて、外部キーボード、あるいは手書き解釈プログラムや「キーボード エミュレーション」機能付きの音声テキスト変換アプリケーションのような擬似キーボード出力を提供する他のアプリケーションのいずれかからキーボード入力を取得することができる。</p>
               </example>
-              <p>マウスキーのようなキーボード操作によるマウス・エミュレータによるアプリケーション（又は、そのアプリケーションの一部）の操作は、キーボード・インターフェースからの操作とは見なさない。なぜならば、この場合、プログラムの操作は、キーボード・インターフェースからではなく、そのポインティング・デバイス・インタフェースからの入力によって行われるからである。</p>
+              <p>マウスキーのようなキーボード操作によるマウス エミュレータによるアプリケーション（又は、そのアプリケーションの一部）の操作は、キーボード インターフェースからの操作とは見なさない。なぜならば、この場合、プログラムの操作は、キーボード インターフェースからではなく、そのポインティング デバイス インタフェースからの入力によって行われるからである。</p>
             </note>
           </def>
         </gitem>
         <gitem id="labeldef">
-          <label>ラベル</label>
+          <label>ラベル (label)</label>
           <def>
             <p>
-ウェブ<termref def="contentdef">コンテンツ</termref>
-
-内のコンポーネントを識別するために、利用者に提示されている<termref def="textdef">テキスト</termref>
-又は<termref def="text-altdef">代替テキスト</termref>付きのコンポーネント。
+ウェブ<termref def="contentdef">コンテンツ</termref>内のコンポーネントを識別するために、利用者に提示されている<termref def="textdef">テキスト</termref>、又は<termref def="text-altdef">テキストによる代替</termref>を伴う、それとは別のコンポーネント。
             </p>
             <note>
               <p>
-ラベルはすべての利用者に提示される。しかし、<termref def="namedef">識別名</termref>は隠されていて支援技術に対してだけ明らかにされる場合がある。多くの場合（すべてではないが）、識別名とラベルは同じである。
+ <termref def="namedef">名前（name）</termref>は隠されていて支援技術に対してだけ明らかにされる場合がある一方で、ラベルはすべての利用者に提示される。多くの場合（すべてではないが）、名前（name）とラベルは同じである。 
               </p>
               <p>ラベルという用語は、HTML における label 要素だけに限定されない。
               </p>
@@ -1670,209 +1640,195 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="larger-scaledef">
-          <label>サイズの大きな（テキスト）</label>
+          <label>サイズの大きな（テキスト） (large scale (text))</label>
           <def>
-            <p>少なくとも18ポイント、又はは14ポイントの太字。あるいは、中国語、日本語、そして韓国語のフォントは、それと同等の文字サイズ。
+            <p>少なくとも18ポイント、又は14ポイントの太字。あるいは、中国語、日本語、及び韓国語（CJK）のフォントは、それと同等の文字サイズ。
             </p>
             <note>
               <p>特別に細い線のフォント、又は文字の形が分かりにくくなるような独特の見た目や特徴のあるフォントは、コントラストが低い場合に特に読みづらい。</p>
               <p>ここでいう文字サイズは、コンテンツが提供される際のサイズであり、利用者によるサイズ変更は含まれない。</p>
-                <p>文字の実際のサイズは、コンテンツ制作者が指定したサイズとユーザのディスプレイあるいはユーザエージェントの設定の両方に依存している。多くの主流となっている本文テキストで用いられるフォントにおいて、本文テキストのデフォルトのサイズは、14ポイントと18ポイントは、1.2emと1.5em、または、（本文フォントが100％であると仮定して）デフォルトサイズの120%と150%に、おおよそ同等である。しかし、制作者は、使用する特定のフォントについて、このことをチェックしておく必要がある。フォントが相対単位で定義されている時、実際に表示される文字サイズのポイント数は、ユーザエージェントによって計算される。この達成基準について評価する時には、文字サイズのポイント数は、ユーザエージェントから取得されるべきであり、またはユーザエージェントが行うフォントの計算基準に基づいて計算するべきである。ロービジョンの利用者については、自分で適切な設定を選択することを想定している。
+                <p>利用者が目にする文字の実際のサイズは、コンテンツ制作者が指定したサイズと利用者のディスプレイあるいはユーザエージェントの設定の両方に依存している。多くの主流となっている本文テキストで用いられるフォントにおいて、14ポイントと18ポイントは、1.2emと1.5em、又は、（本文フォントが100％であると仮定して）デフォルトサイズの120%と150%に、おおよそ同等である。しかし、制作者は、使用する特定のフォントについて、このことをチェックしておく必要がある。フォントが相対単位で定義されている時、実際に表示される文字サイズのポイント数は、ユーザエージェントによって計算される。この達成基準について評価する時には、文字サイズのポイント数は、ユーザエージェントから取得されるべきであり、又はユーザエージェントが行うフォントの計算基準に基づいて計算するべきである。ロービジョンの利用者については、自分で適切な設定を選択することを想定している。
               </p>
               <p>フォントサイズを指定せずにテキストを用いる際は、サイズを指定していないテキストに対して主要ブラウザで用いられる最小のフォントサイズをそのテキストのサイズとみなすのが妥当であろう。もし、レベル1の見出しが、主要なブラウザで14ポイントの太字あるいはそれ以上のサイズでレンダリングされるならば、それは「サイズの大きな」テキストであると考えてよい。相対的な拡大縮小は、同様の方法でそのデフォルトのサイズから算出することが可能である。</p>
-                <p>半角の英数字のテキストにおける18ポイントおよび14ポイントのサイズは、拡大印刷の最小サイズ（14ポイント）と標準的な大きい文字サイズ（18ポイント）に基づいている。例えば、中国語、日本語、韓国語など、その他の文字については、「同等な」サイズはその言語での拡大印刷の最小サイズと拡大印刷でその次に大きな標準のサイズとなる。</p>
-		<trnote><p>日本語を含む場合、少なくとも22ポイント、又は18ポイントの太字と考えるとよい。</p>
-		</trnote>
+                <p>半角の英数字のテキストにおける18ポイント及び14ポイントのサイズは、拡大印刷の最小サイズ（14ポイント）と標準的な大きい文字サイズ（18ポイント）に基づいている。例えば、CJK言語のようなその他の文字については、「同等な」サイズはその言語での拡大印刷の最小サイズと拡大印刷でその次に大きな標準のサイズとなる。</p>
             </note>
           </def>
         </gitem>
         <gitem id="legalcommitmentsdef">
-          <label>法的な義務</label>
+          <label>法律行為 (legal commitments)</label>
           <def>
             <p>法的に拘束力のある義務あるいは利益が発生する取引。</p>
             <example>
-              <p>結婚許可証、株取引（金銭上および法的）、遺言、ローン、採用、軍隊への入隊登録、あらゆる契約、など</p>
+              <p>結婚許可証、株取引（金銭上及び法的）、遺言、ローン、採用、軍隊への入隊登録、あらゆる契約、など</p>
             </example>
           </def>
         </gitem>
-        
-        
         <gitem id="linkpurposedef">
-          <label>リンクの目的</label>
+          <label>リンクの目的 (link purpose)</label>
           <def>
-            <p>ハイパーリンクに対して、マウスによるクリックなどの操作を行った結果として得られる本質。</p>
+            <p>ハイパーリンクを動作させたときに得られる結果の本質。</p>
           </def>
         </gitem><gitem id="livedef">
-          <label>ライブ</label>
-          <def><p>実世界のイベントから取り込まれ、放送による遅延以上の遅延なく受け手に送信される情報。</p>
-            <note><p>放送の遅延は、短時間の（通常は自動的に挿入される）遅れで、例えば放送局に放送のタイミングを調整したり、音声（又は映像）を検閲するための時間を与えるものだが、意味のある編集ができるほどの長さではない。</p>
+          <label>ライブ (live)</label>
+          <def><p>現実の出来事から取り込まれ、放送遅延以上の遅延なく受け手に送信される情報。</p>
+            <note><p>放送遅延は、短時間の（通常は自動的な）遅れで、例えば放送局に放送のタイミングの調整や音声（又は映像）の検閲のための時間を与えるものだが、意味のある編集ができるほどのものではない。</p>
               <p>もし情報が完全にコンピュータで生成されたものならば、それはライブではない。</p></note></def>
         </gitem>
-        
-        
         <gitem id="lowseceddef">
-          <label>中等教育レベル</label>
+          <label>前期中等教育レベル (lower secondary education level)</label>
           <def>
-            <p>6年間の学校教育後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年間あるいは3年間の教育。
+            <p>6年間の学校教育卒業の後に始まり、<termref def="primseceddef">初等教育</termref>の開始から9年後に終わる、2年、又は3年の教育期間。
             </p>
             <note>
-              <p>この定義は、教育の国際標準分類 (International Standard Classification of Education) <bibref ref="UNESCO"/>をもとにしている。</p>
+              <p>この定義は、"International Standard Classification of Education" <bibref ref="UNESCO"/>に基づいている。</p>
             </note>
           </def>
         </gitem>
         <gitem id="mechanismdef">
-          <label>メカニズム</label>
+          <label>メカニズム (mechanism)</label>
           <def>
             <p>
 結果を得るための<termref def="processdef">プロセス</termref>又は手法。</p>
             <note>
-              <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>のどちらかで提供されるものに <termref def="reliedupondef">依存</termref>することもある。</p>
+              <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>で提供されるものに <termref def="reliedupondef">依存</termref>することもある。</p>
               <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たさなければならない。
               </p>
             </note>
           </def>
         </gitem>
         <gitem id="multimedia-alt-textdef">
-          <label>テキストの代替メディア</label>
+          <label>メディアによるテキストの代替 (media alternative for text)</label>
           <def>
-            <p>テキストで（直接又は代替テキストによって）既に提示されている情報以上のものを提示していないメディア。
-              
+            <p>テキストで（直接又はテキストによる代替によって）既に提示されている情報以上のものを提示していないメディア。
             </p>
             <note>
-              <p>テキストの代替メディアは、テキストの代替プレゼンテーションの恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
+              <p>メディアによるテキストの代替は、テキストを代替する提示の恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p>
             </note>
           </def>
         </gitem>
-        
         <gitem id="namedef">
-          <label>識別名</label>
+          <label>名前（name）</label>
           <def>
-            <p>ソフトウェアがこれを用いて、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト</p>
+            <p>ソフトウェアが、ウェブコンテンツのコンポーネントを利用者に識別させることができるテキスト。</p>
             <note>
-              <p>識別名は隠されていて、支援技術に対してだけ明らかにされる場合もあるが、<termref def="labeldef">ラベル</termref>はすべての利用者に提示される。多くの場合（すべてではないが）、ラベルと識別名は同じである。
-
-                
+              <p><termref def="labeldef">ラベル</termref>はすべての利用者に提示される一方で、名前（name）は隠されていて、支援技術に対してだけ明らかにされる場合もある。多くの場合（すべてではないが）、ラベルと名前（name）は同じである。
               </p>
               <p>これは、HTML の name 属性とは関係がない。</p>
             </note>
           </def>
         </gitem>
         <gitem id="nav-seqdef">
-          <label>順番にナビゲート</label>
+          <label>順を追ってナビゲート (navigated sequentially)</label>
           <def>
-            <p><termref def="keybrd-interfacedef">キーボード・インターフェース</termref>を用いて、フォーカスを前進させるために，指定された順序でナビゲートすること。
+            <p><termref def="keybrd-interfacedef">キーボード インターフェース</termref>を用いて（一つの要素から次へ）フォーカスを移動するために、定義された順序でナビゲートすること。
             </p>
           </def>
         </gitem>
         <gitem id="non-text-contentdef">
-          <label>非テキストコンテンツ</label>
+          <label>非テキストコンテンツ (non-text content)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
             </p>
             <note>
-              <p>これには、（文字又は記号の空間的配置による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（当て字を用いる）リートスピーク、そして文字を表現している画像が含まれる。
+              <p>これには、（文字による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（文字を置き換える）リートスピーク、そして文字を表現している画像が含まれる。
 </p>
             </note>
           </def>
         </gitem>
         <gitem id="normativedef">
-          <label>規定</label>
+          <label>規定 (normative)</label>
           <def>
-            <p>適合に必須とされるもの</p>
+            <p>適合に必須なもの。</p>
             <note>
-              <p>このガイドラインには、様々な明確な方法で適合することができる。</p>
-              <p><termref def="informativedef">参考情報</termref> あるいは 非規定 となっている部分は、適合のために必要のない部分である。</p>
+              <p>この文書には、様々な明確な方法で適合することができる。</p>
+              <p>「<termref def="informativedef">参考情報</termref>」又は「規定ではない」とされている内容は、適合のために必須ではない内容である。</p>
             </note>
           </def>
         </gitem>
         <gitem id="fullscreenwindowdef">
-          <label>全画面表示のウィンドウで</label>
-          <def><p>最も一般的なデスクトップ/ラップトップのディスプレイで、ビューポートを最大化した状態。</p>
+          <label>全画面表示のウィンドウで (on a full-screen window)</label>
+          <def><p>最も普及したサイズのデスクトップやラップトップのディスプレイで、ビューポートを最大化した状態。</p>
           <note>
-              <p>ユーザは一般的にコンピュータを数年間使い続けるので、最新のデスクトップやラップトップの画面解像度を基準にするのではなく、数年間にわたって一般的なデスクトップやラップトップの画面解像度を考慮するのが望ましい。
+              <p>利用者は一般的にコンピュータを数年間使い続けるので、評価の際は、最新のデスクトップやラップトップの画面解像度を基準にするのではなく、数年間にわたって普及したデスクトップやラップトップの画面解像度を考慮するのが望ましい。
               </p>
           </note></def>
         </gitem>
         <gitem id="pauseddef">
-          <label>一時停止</label>
+          <label>一時停止 (paused)</label>
           <def>
-            <p>ユーザの要求により停止し、ユーザの要求があるまで再開しない。</p>
+            <p>利用者の要求により停止し、利用者の要求があるまで再開しない。</p>
           </def>
         </gitem>
         <gitem id="prerecordeddef">
-          <label>収録済</label>
+          <label>収録済 (prerecorded)</label>
           <def><p><termref def="livedef">ライブ</termref>ではない情報。</p></def>
         </gitem><gitem id="presentationdef">
-          <label>表現</label>
+          <label>提示 (presentation)</label>
           <def>
             <p>
-              
 利用者が知覚できる形式で<termref def="contentdef">コンテンツ</termref>をレンダリングすること。
             </p>
           </def>
         </gitem>
-        
         <gitem id="primseceddef">
-          <label>初等教育レベル</label>
+          <label>初等教育レベル (primary education level)</label>
           <def>
             <p>5～7歳の間に始まる6年間の教育で、その前には教育を受けた期間がない場合もある。</p>
             <note>
-              <p>この定義は、教育の国際標準分類 (International Standard Classification of Education) <bibref ref="UNESCO"/>をもとにしている。</p>
+              <p>この定義は、"International Standard Classification of Education" <bibref ref="UNESCO"/>に基づいている。</p>
             </note>
           </def>
         </gitem>
         <gitem id="processdef">
-          <label>プロセス</label>
+          <label>プロセス (process)</label>
           <def>
             <p>ある活動を完了させるために必要な利用者の一連の動作。</p>
             <example>
               <p>ショッピングサイト上の一連のウェブページで目的を果たすためには、利用者が選択肢となりうる製品、価格及び内容を閲覧した後、製品を選択して注文し、配送先情報及び支払情報を入力する必要がある。</p>
-              <p>アカウント登録ページでは、登録フォームにアクセスする前に CAPTCHA などを用いたチェックを受ける必要がある。</p>
+              <p>アカウント登録ページでは、登録フォームにアクセスする前にチューリングテストに成功する必要がある。</p>
             </example>
           </def>
         </gitem>
         <gitem id="programmaticallydetermineddef">
-          <label>プログラムが解釈（プログラムが解釈可能）</label>
+          <label>プログラムによる解釈（プログラムによる解釈可能） (programmatically determined (programmatically determinable))</label>
           <def>
-            <p>コンテンツ制作者が提供したデータからソフトウェアが解釈できること。またそのときに、
-
-              <termref def="atdef">支援技術</termref>を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が、この情報を抽出して利用者に様々な感覚モダリティで提示できること。
+            <p>              <termref def="atdef">支援技術</termref>
+を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
             </p>
             <example>
-              <p>マークアップ言語では、一般に入手可能な支援技術が、要素および属性に直接アクセスすることにより解釈できる。</p>
-              <p>非マークアップ言語では、ウェブコンテンツ技術特有のデータ構造から、一般に入手可能な支援技術がサポートするアクセシビリティ <abbr expansion="Application Programming Interface">API</abbr> を通じて支援技術に提供される。</p>
+              <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。</p>
+              <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ <abbr expansion="Application Programming Interface">API</abbr> を通じて支援技術に提供される。</p>
             </example>
           </def>
         </gitem>
         <gitem id="pdlinkcontextdef">
-          <label>プログラムが解釈可能なリンクの文脈</label>
+          <label>プログラムによる解釈可能なリンクのコンテキスト (programmatically determined link context)</label>
           <def>
-            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムが解釈</termref>したり、リンクテキストと併用したり、異なる感覚モダリティで利用者に提示したりすることが可能な補足情報。
+            <p>リンクとの<termref def="relationshipsdef">関係性</termref>から<termref def="programmaticallydetermineddef">プログラムによる解釈可能</termref>であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
             </p>
             <example>
-              <p>HTMLでは、英語で記述されたリンクからプログラムが解釈可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、或いはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
+              <p>HTMLでは、英語で記述されたリンクからプログラムによる解釈可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、或いはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
               </p>
             </example>
             <note>
-              <p>スクリーンリーダーは句読点により文の区切りを判断できるので、フォーカスが文中のリンクにある場合は、そのリンクが含まれる文からリンクの目的にあたる文脈的な情報を提供することも可能である。
+              <p>スクリーンリーダーは句読点を解釈するので、フォーカスが文中のリンクにある場合は、その文からコンテキストを提供することも可能である。
               </p>
             </note>
           </def>
         </gitem>
         <gitem id="programmaticallysetdef">
-          <label>プログラムが設定</label>
+          <label>プログラムによる設定 (programmatically set)</label>
           <def>
-            <p>支援技術を含むユーザエージェントがサポートしている手法を用いてソフトウェアが設定する。
-              
+            <p>支援技術を含むユーザエージェントがサポートしている手法を用いて、ソフトウェアによって設定されること。 
             </p>
           </def>
         </gitem>
         <gitem id="puredecdef">
-          <label>装飾だけを目的</label>
+          <label>純粋な装飾 (pure decoration)</label>
           <def>
-            <p>美的な目的だけを果たしていて、情報は提供せず、機能性も備えていない。</p>
+            <p>見栄えのためだけのもので、情報は提供せず、機能性も備えていないもの。</p>
             <note>
-              <p>その単語を手直ししたり置き換えたりしてもその目的が変わらないのであれば、テキストは単に装飾だけを目的にしたものといえる。</p>
+              <p>テキストが純粋な装飾といえるのは、単語を並べ替え、又は置き換えても意図が変わらないときだけである。</p>
             </note>
             <example>
               <p>背景にとても淡い文字で単語がランダムに並んでいる辞書の表紙。</p>
@@ -1880,43 +1836,41 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="real-time-eventsdef">
-          <label>リアルタイムのイベント</label>
+          <label>リアルタイムのイベント (real-time event)</label>
           <def>
-            <p>a)　閲覧と同時に発生し、b) コンテンツだけで生成されるものではないイベント。</p>
+            <p>a)閲覧と同時に発生し、b) コンテンツによる生成だけでは完結しないイベント。</p>
             <example>
               <p>ライブパフォーマンスのウェブ放送（閲覧と同時に発生していて、収録済ではない）。</p>
-              <p>利用者が入札するオンラインのオークション（閲覧と同時に発生している）。
+              <p>人々が入札するオンラインのオークション（閲覧と同時に発生している）。
               </p>
-              <p>アバターを用いたバーチャルな世界での互いのやりとり（コンテンツによって完全に生成されるものではなく、閲覧と同時に発生する）。
-                
+              <p>アバターを用いたバーチャルな世界での、生身の人間のやりとり（コンテンツによる生成だけで完結するものではなく、閲覧と同時に発生する）。
               </p>
             </example>
           </def>
         </gitem>
         <gitem id="relationshipsdef">
-          <label>関係性</label>
+          <label>関係性 (relationships)</label>
           <def>
             <p>
-コンテンツの異なる部分間における意味のある関係。
-              
+コンテンツの異なる部分間における意味のあるつながり。
             </p>
           </def>
         </gitem>
         <gitem id="relativeluminancedef">
-          <label>相対輝度</label>
+          <label>相対輝度 (relative luminance)</label>
           <def>
-            <p>色空間内のすべての点の相対輝度。最も暗い黒を 0 とし、最も明るい白を 1 とする。</p>
+            <p>最も暗い黒を0に、最も明るい白を1に正規化した色空間内の任意の点の相対的な明るさ。</p>
             <note>
-              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 × <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> および <emph role="bold">B</emph> は以下のように定義される：</p>
+              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される：</p>
               <ulist>
                 <item>
-                  <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 else <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>G<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">G</emph> ＝ G<sub>sRGB</sub>/12.92 else <emph role="bold">G</emph> ＝ ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>G<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">G</emph> ＝ G<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">G</emph> ＝ ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>B<sub>sRGB</sub> &lt;＝ 0.03928 の場合、<emph role="bold">B</emph> ＝ B<sub>sRGB</sub>/12.92 else <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>B<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">B</emph> ＝ B<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
               </ulist>
               <note role="nonumber">
@@ -1936,166 +1890,156 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <note role="nonumber">
                 <p>^ という記号は、指数演算子である（計算式は、<bibref ref="sRGB"/> 及び <bibref ref="IEC-4WD"/>を参考にしている）。</p>
               </note>
-              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGBエンコーディングを前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて検証する。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding">達成基準1.4.3を理解する</loc>を参照のこと。</p>
+              <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB符号化を前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者はsRGB色空間を用いて計算するべきである。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding" hreflang="en">Understanding Success Criterion 1.4.3</loc>を参照。</p>
                 <!-- BBC: the following note was moved down from the definition of contrast ratio and editorially revised. Relates somewhat to 2548. -->
-              <p>ディザリングが発生する場合は、元の色の値が用いられる。発生源でディザリングしている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
-              <p>コントラストと閃光を自動的に検証することができるツールがある。</p>
-              
+              <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである（Rの平均値、Gの平均値、及びBの平均値）。</p>
+              <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。</p>
               <!--BBC: Remember to update the MathML version should this be revised -->
               <p>
-<loc href="http://www.w3.org/TR/WCAG20/relative-luminance.xml">相対輝度定義のMathMLバージョン（英語：XMLファイル）</loc>も参照可能である。
-                  
-                
+<loc href="http://www.w3.org/TR/WCAG20/relative-luminance.xml">MathML version of the relative luminance definition</loc>も参照できる。
               </p>
             </note>
           </def>
         </gitem>
         <gitem id="reliedupondef">
-          <label>依存した（ウェブコンテンツ技術）</label>
+          <label>依存されている（技術） (relied upon (technologies that are))</label>
           <def>
-            <p>コンテンツは、その<termref def="technologydef">ウェブコンテンツ技術</termref>が無効になっている場合、又はサポートされていない場合に、コンテンツが<termref def="conformancedef">適合</termref>できない。</p>
+            <p>その<termref def="technologydef">技術</termref>が無効になっている場合、又はサポートされていない場合に、コンテンツが<termref def="conformancedef">適合</termref>できないこと。</p>
           </def>
         </gitem>
         <gitem id="roledef">
-          <label>役割</label>
+          <label>役割（role）</label>
           <def>
-            <p>ウェブコンテンツに含まれるコンポーネントの機能を、ソフトウェアが識別するために用いることができるテキスト又は数字。</p>
+            <p>ウェブコンテンツに含まれるコンポーネントの機能を、ソフトウェアが識別するために用いることができるテキストや数字。</p>
             <example>
-              <p>画像が、ハイパーリンク、コマンドボタン、又はチェックボックスのどれなのかを示している数字。</p>
+              <p>画像の機能が、ハイパーリンク、コマンドボタン、又はチェックボックスのどれなのかを示している数字。</p>
             </example>
           </def>
         </gitem>
         <gitem id="samefunctionalitydef">
-          <label>同じ機能性</label>
+          <label>同じ機能 (same functionality )</label>
           <def>
             <p>
-              
-使うと同じ結果が得られる。
+使うと同じ結果が得られること。
             </p>
             <example>
-              <p>あるウェブページ上にある「検索」ボタンと他のウェブページ上にある「さがす」ボタンは、どちらもキーワードを入力するテキストフィールドがあり、そのウェブサイトにある入力されたキーワードに関係のあるコンテンツをリスト表示する。この場合、同じ機能性を有しながらも、ラベルは一貫していないことになる。</p>
+              <p>あるウェブページ上にある "search" ボタンと他のウェブページ上にある "find" ボタンは、どちらもキーワードを入力するテキストフィールドがあり、そのウェブサイトにある入力されたキーワードに関係のあるコンテンツをリスト表示する。この場合、同じ機能を有しながらも、ラベルは一貫していないことになる。</p>
             </example>
           </def>
         </gitem>
         <gitem id="samerelorderdef">
-          <label>同じ相対順序</label>
+          <label>相対的に同じ順序 (same relative order)</label>
           <def>
-            <p>他の項目と相対的に同じ位置。</p>
+            <p>他の項目との相対位置が同じ。</p>
             <note>
-              <p>当初の順序に対して、別の項目が挿入されていたり削除されていたりしたとしても、項目は相対的に同じ順序になっていると考えられる。例えば、展開するナビゲーションメニューは詳細を示すレベルを追加して挿入し、派生したナビゲーション部分を音声読み上げ順序の中に挿入することがある。</p>
+              <p>当初の順序に対して、別の項目が挿入、又は削除されていたとしても、項目は相対的に同じ順序になっていると考えられる。例えば、展開するナビゲーション メニューに詳細な追加階層が挿入される、又は、読みの順序の途中に副次的なナビゲーション部分が挿入されることがある。</p>
             </note>
           </def>
         </gitem>
         <gitem id="satisfiesdef">
-          <label>達成基準を満たす</label>
+          <label>達成基準を満たす (satisfies a success criterion)</label>
           <def>
-            <p>ウェブページに適用した際、その達成基準が「不合格」と判定されない</p>
+            <p>ページに適用した際、その達成基準が 'false' と判定されないこと。</p>
           </def>
         </gitem><gitem id="sectiondef">
-          <label>セクション</label>
+          <label>セクション (section)</label>
           <def>
-            <p>一つ以上の関連するトピック又は考えを扱う自己完結的なコンテンツの一部。</p>
+            <p>一つ以上の関連する話題、又は考えについて書かれたコンテンツの自己完結している部分。</p>
             <note>
-              <p>セクションは一つ以上の段落から成り、グラフィック、表、リスト、及びサブセクションを含む。</p>
+              <p>
+セクションは一つ以上の段落から成ることがあり、画像、表、リスト、及びサブセクションを含むこともある。</p>
             </note>
           </def>
         </gitem><gitem id="set-of-web-pagesdef">
-          <label>ウェブページ一式</label>
+          <label>ウェブページ一式 (set of Web pages)</label>
           <def>
             <p>共通の目的を共有し、同じコンテンツ制作者、グループ、又は組織により制作された<termref def="webpagedef">ウェブページ</termref>の集合。
 
             </p>
             <note>
-              <p>異なる言語で書かれたウェブページは、異なるウェブページ一式と見なされることもある。</p>
+              <p>他言語版は、異なるウェブページ一式と見なされることもある。</p>
             </note>
           </def>
         </gitem>
-        
-        
-        
         <gitem id="sign-languagedef">
-          <label>手話</label>
+          <label>手話 (sign language)</label>
           <def>
-            <p>手と腕、顔の表情、あるいは身体の位置などの動きを組み合わせて意味を伝える言語。
-
+            <p>意味を伝えるために、手と腕の動き、顔の表情又は身振りなどの組み合わせを用いる言語。
             </p>
           </def>
         </gitem>
         <gitem id="sign-languageinterpdef">
-          <label>手話通訳</label>
+          <label>手話通訳 (sign language interpretation)</label>
           <def>
             <p>ある言語、通常は発話された言葉を、<termref def="sign-languagedef">手話</termref>に訳すこと。
             </p>
             <note>
               <p>
-                
 手話は、本来、同じ国や地域で話されている言葉とは関係がない独立したものである。
               </p>
             </note>
           </def>
         </gitem><gitem id="sensoryexpdef">
-          <label>特定の感覚的な体験</label>
+          <label>特定の感覚的な体験 (specific sensory experience)</label>
           <def>
-            <p>単に装飾だけを目的にしたものではなく、主に重要な情報を伝えたり機能を提供したりするものでもない感覚的な体験。</p>
+            <p>純粋な装飾ではなく、かつ重要な情報の伝達、又は機能の提供を主目的としない感覚的な体験。</p>
             <example>
               <p>
 フルートのソロ演奏、視覚芸術の作品などが例として挙げられる。
-                
               </p>
             </example>
           </def>
         </gitem>
         <gitem id="structuredef">
-          <label>構造</label>
+          <label>構造 (structure)</label>
           <def>
             <olist>
               <item>
                 <p><termref def="webpagedef">ウェブページ</termref>
-の各部が相互関係により整理されたありさま。かつ、
+の各部を相互の関係性によりまとめる方法論。及び、
                 </p>
               </item>
               <item>
-                <p>一連の<termref def="webpagedef">ウェブページ</termref>が整理されたありさま。</p>
+                <p>一連の<termref def="webpagedef">ウェブページ</termref>をまとめる方法論。</p>
               </item>
             </olist>
           </def>
         </gitem>
         <gitem id="suppcontentdef">
-          <label>補足的コンテンツ</label>
+          <label>補足的コンテンツ (supplemental content)</label>
           <def>
-            <p>元のコンテンツを説明したり、より明確にしたりするために付加された<termref def="contentdef">コンテンツ</termref>。
+            <p>元のコンテンツを説明、又はより明確にするために付加された<termref def="contentdef">コンテンツ</termref>。
             </p>
             <example>
               <p>
-                
-<termref def="webpagedef">ウェブページ</termref>の音声バージョン。
+<termref def="webpagedef">ウェブページ</termref>の音声版。
               </p>
               <p>
 複雑な<termref def="processdef">プロセス</termref>を示したイラスト。
               </p>
               <p>
-調査研究でなされた主要な成果および提言を要約する段落。
+調査研究でなされた主要な成果及び提言を要約する段落。
               </p>
             </example>
           </def>
         </gitem>
         <gitem id="synchronizedmediadef">
-          <label>同期したメディア</label>
+          <label>同期したメディア (synchronized media)</label>
           <def>
-            <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間の経過に伴って変化するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
-<termref def="multimedia-alt-textdef">テキストの代替メディア</termref>であって、代替メディアであることが明確にラベル付けされているものは除く。
+            <p>情報を提示するために、他のフォーマットと同期した<termref def="audiodef">音声</termref>もしくは<termref def="videodef">映像</termref>、又は時間に依存するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
+<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされているものは除く。
             </p>
           </def>
         </gitem>
         <gitem id="technologydef">
-          <label>（ウェブコンテンツ）技術</label>
+          <label>（ウェブコンテンツ）技術 (technology (Web content))</label>
           <def>
             <p>
               <termref def="useragentdef">ユーザエージェント</termref>がどのようにレンダリング、再生、又は実行するかを符号化する<termref def="mechanismdef">メカニズム</termref>。
             </p>
             <note>
-              <p>このガイドラインで用いられている「ウェブ技術」および（単独で用いられている）「技術」という用語は、どちらもウェブコンテンツ技術を指す場合がある。</p>
-              <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で用いたり組み早稲テ用いたりすることによって、静的なウェブページや同期したメディアによるプレゼンテーション、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
+              <p>このガイドラインで用いられている「ウェブ技術」及び（単独で用いられている）「技術」という用語は、どちらもウェブコンテンツ技術を指す。</p>
+              <p>ウェブコンテンツ技術には、マークアップ言語、データ形式、及びプログラム言語などがあり、これらをコンテンツ制作者が単独で、又は組み合わせて用いることによって、静的なウェブページや同期したメディアによる提示、さらには動的なウェブアプリケーションに至るまでの様々なエンドユーザ体験を作ることができる。
               </p>
             </note>
             <example>
@@ -2105,48 +2049,49 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="textdef">
-          <label>テキスト</label>
+          <label>テキスト (text)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムが解釈</termref>可能な文字の連続で、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
             </p>
           </def>
         </gitem>
         <gitem id="text-altdef">
-          <label>代替テキスト</label>
+          <label>テキストによる代替 (text alternative)</label>
           <def>
-              <p><termref def="non-text-contentdef">非テキストコンテンツ</termref>とプログラムで関連付けられている<termref def="textdef">テキスト</termref>。又は非テキストコンテンツとプログラムで関連付けられているテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、そのテキスト場所を、非テキストコンテンツからプログラムが解釈可能なテキストである。</p>
+              <p><termref def="non-text-contentdef">非テキストコンテンツ</termref>とプログラムで関連付けられる<termref def="textdef">テキスト</termref>。又は非テキストコンテンツとプログラムで関連付けられるテキストから参照されるテキスト。プログラムで関連付けられたテキストとは、その場所を、非テキストコンテンツからプログラムによる解釈可能なテキストである。</p>
             <example>
-              <p>直後にある段落でテキストで説明されているチャートの画像があり、そのチャートの説明が後に書かれていることが代替テキストによって簡潔に示されている。
-              </p>
+              <p>
+              チャートの画像があり、その直後の段落にテキストによる説明がある。チャートに対する短いテキストによる代替で後に説明があることを示している。
+</p>
             </example>
               <note>
-                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding">「代替テキスト」を理解する</loc>を参照のこと。</p>
+                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding" hreflang="en">Understanding Text Alternatives</loc>を参照。</p>
               </note>
           </def>
         </gitem>
         <gitem id="unusual-restricteddef">
-          <label>一般的には使われることのない、または限定された用法で使われている</label>
+          <label>一般的ではない、又は限定された用法で使われている (used in an unusual or restricted way)</label>
           <def>
-            <p>そのコンテンツを正しく理解するために、そこではどの定義が適用されるのかを利用者が正確に理解していることを要求するように用いられる用語。</p>
+            <p>そのコンテンツを正しく理解するために、どの定義で使われているのかを利用者が正確に知る必要があるような使われ方をしている言葉。</p>
             <example>
-              <p>gig という用語は、音楽コンサートの話の中で使われている場合は、コンピュータのハードディスクドライブの容量に関する記事で使われている場合とは違うことを意味するが、適切な定義は文脈により決まってくる。それに対して、「テキスト」という用語は、WCAG 2.0では非常に特殊な使われ方をしているので、その定義が用語集で提供されている。</p>
+              <p>"gig" という用語は、音楽コンサートの話の中で使われている場合、コンピュータのハードディスクドライブの容量に関する記事とは違うことを意味するが、適切な定義は文脈から判断できる。それに対して、「テキスト」という言葉は、WCAG 2.0では非常に特定された意味で使われており、その定義が用語集で提供されている。</p>
             </example>
           </def>
         </gitem>
         <gitem id="useragentdef">
-          <label>ユーザエージェント</label>
+          <label>ユーザエージェント (user agent)</label>
           <def>
             <p>ウェブコンテンツを取得して利用者に提示するあらゆるソフトウェア。</p>
             <example>
-              <p>ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム。その他のプログラムには、ウェブコンテンの取得、レンダリング、利用（インタラクション）を支援する<termref def="atdef">支援技術</termref>を含む。
+              <p>ウェブブラウザ、メディアプレーヤ、プラグイン、及びその他のプログラム。その他のプログラムには、ウェブコンテンツの取得、レンダリング、やり取りを支援する<termref def="atdef">支援技術</termref>を含む。
               </p>
             </example>
           </def>
         </gitem>
         <gitem id="user-controllabledef">
-          <label>利用者が自分で制御可能</label>
+          <label>利用者が制御可能 (user-controllable)</label>
           <def>
-            <p>利用者によってアクセスされるためのデータ。</p>
+            <p>利用者によってアクセスされることを意図したデータ。</p>
             <note>
               <p>これは、インターネットのログや検索エンジンの監視データのようなものは指していない。</p>
             </note>
@@ -2156,69 +2101,68 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="user-interface-componentdef">
-          <label>ユーザインターフェース・コンポーネント</label>
+          <label>ユーザ インターフェース コンポーネント (user interface component)</label>
           <def>
-            <p>特定の機能を果たすための単一のコントロールとして利用者が知覚する、コンテンツの一部分。</p>
+            <p>コンテンツの一部分で、特定の機能を実現するための単一のコントロールとして利用者が知覚するもの。</p>
             <note>
-              <p>複数のユーザインターフェース・コンポーネントが、単一のプログラムで実装されることがある。ここでいうコンポーネントは、プログラムに関するものではなく、別々のコントロールとして利用者が知覚するものを指す。</p>
+              <p>複数のユーザ インターフェース コンポーネントが、単一のプログラム要素で実装されることもある。ここでいうコンポーネントは、プログラムの手法と結びついたものではなく、利用者が別々のコントロールとして知覚するものを指す。</p>
               <!-- BBC: This note also appears in 4.1.2 -->
-              <p>ユーザインターフェース・コンポーネントには、スクリプトで生成されるコンポーネントやフォーム要素、リンクが含まれる。</p>
+              <p>ユーザ インターフェース コンポーネントには、フォーム要素、リンクだけでなく、スクリプトで生成されるコンポーネントが含まれる。</p>
             </note>
             <example>
-              <p>アプレットには、コンテンツ内を行ごと、ウェブページごと、又はランダム・アクセスを行うために用いられる「コントロール」がある。これらには、いずれも識別名を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザインターフェース・コンポーネント」となる。</p>
+              <p>アプレットには、コンテンツ内を行単位、ページ単位、又はランダム・アクセスで移動するために用いられる「コントロール」がある。これらには、いずれも名前（name）を割り当て、個別に設定できるようにする必要があるため、それぞれが「ユーザ インターフェース コンポーネント」となる。</p>
             </example>
           </def>
         </gitem>
         <gitem id="videodef">
-          <label>映像</label>
+          <label>映像 (video)</label>
           <def>
-            <p>連続した写真や画像を動かす技術。</p>
+            <p>写真や画像を動かしたり、連続して表示したりする技術。</p>
             <note>
-              <p>映像</p>
+              <p>映像はアニメーション、実写、もしくはその両方で構成され得る</p>
             </note>
           </def>
         </gitem><gitem id="video-onlydef">
-          <label>映像しか含まない</label>
+          <label>映像しか含まない (video-only)</label>
           <def>
-            <p><termref def="videodef">映像</termref>しか含まない、時間の経過に伴って変化する表現（<termref def="videodef">音声</termref>を含まず、インタラクションも含まない）。</p>
+            <p><termref def="videodef">映像</termref>のみを含んだ、時間に依存する提示（<termref def="videodef">音声</termref>やインタラクションを含まない）。</p>
           </def>
         </gitem>
         <gitem id="viewportdef">
-          <label>ビューポート</label>
+          <label>ビューポート (viewport)</label>
           <def>
             <p>
 ユーザエージェントがコンテンツを提示するオブジェクト。
-              
             </p>
             <note>
               <p><termref def="useragentdef">ユーザエージェント</termref>
-は、 一つ以上のビューポートでコンテンツを提示する。ビューポートには、ウィンドウ、フレーム、スピーカー、そして拡大鏡ソフトなどがある。ビューポートは、（例えば、入れ子のフレームのように）他のビューポートを含んでいることがある。プロンプト、メニュー、アラートボックスのように、ユーザエージェントが作成するインターフェース要素は、ビューポートではない。</p>
-              <p>この定義は、<loc href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0: 4. Glossary</loc>をもとにしている。</p>
+は、 一つ以上のビューポートでコンテンツを提示する。ビューポートには、ウィンドウ、フレーム、スピーカー、そして拡大鏡ソフトなどがある。ビューポートは、他のビューポートを含んでいることがある（例えば、入れ子のフレーム）。プロンプト、メニュー、アラートのように、ユーザエージェントが作成するインターフェース コンポーネントは、ビューポートではない。</p>
+              <p>この定義は、<loc href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html" hreflang="en">User Agent Accessibility Guidelines 1.0: 4. Glossary</loc>をもとにしている。</p>
             </note>
           </def>
         </gitem>
         <gitem id="visually-customizeddef">
-          <label>視覚的にカスタマイズ</label>
+          <label>視覚的なカスタマイズ (visually customized)</label>
           <def>
-            <p>フォント、サイズ、色、および背景を設定可能。</p>
+            <p>フォント、サイズ、色、及び背景を設定できること。</p>
           </def>
         </gitem>
-        
         <gitem id="webpagedef">
-          <label>ウェブページ</label>
+          <label>ウェブページ (Web page)</label>
           <def>
             <p>
-単一の URI から HTTP で得たリソース（埋め込まれていないリソース）と、
-<termref def="useragentdef">ユーザエージェント</termref>がこのリソースと一緒にレンダリングすることを意図したりレンダリングに用いたりするその他のリソース（埋め込まれているリソース）を合わせたもの。
+単一の URI から HTTP で得た埋め込まれていないリソースに加え、
+レンダリングに使われる、又は<termref def="useragentdef">ユーザエージェント</termref>がこのリソースと一緒にレンダリングすることを意図しているその他のあらゆるリソースを合わせたもの。
             </p>
             <note>
-              <p>どのような「その他のリソース」（埋め込まれているリソース）も主たるリソース（埋め込まれていないリソース）と一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされる必要があるわけではない。</p>
-              <p>このガイドラインの適合範囲に含まれる対象となるウェブページは、「埋め込まれていない」リソースでなければならない。</p>
+              <p>どのような「その他のリソース」も主たるリソースと一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされるとは限らない。</p>
+              <p>このガイドラインの適合範囲に含まれる対象となるウェブページとみなされるためには、リソースが「埋め込まれていない」リソースでなければならない。
+</p>
             </note>
             <example>
               <p>すべての埋め込まれている画像とメディアを含んだウェブリソース。</p>
-              <p>Ajax を用いたウェブメールのプログラム。そのプログラムは http://example.com/mail に存在しており、受信箱、アドレス帳、そしてカレンダーがある。受信箱、アドレス帳やカレンダーを起動するリンク又はボタンがあるが、ウェブページ全体の URI は変わらないもの。</p>
-              <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツのモジュール一式から表示させるコンテンツを選択できるようなもの。</p>
+              <p>Asynchronous JavaScript and XML (AJAX) を用いたウェブメールのプログラム。そのプログラム全体は http://example.com/mail に存在しているが、受信箱、アドレス帳、そしてカレンダーがある。リンクまたはボタンがあり、それを押すと受信箱、アドレス帳やカレンダーを表示するが、ページの URI は全体を通して変わらない。</p>
+              <p>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツ モジュールのセットから表示させるコンテンツを選択できるようなもの。</p>
               <p>ブラウザで"http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは1ページだけのウェブサイトかもしれないし、 ウェブサイトの中のほんの1ページなのかもしれない。</p>
             </example>
           </def>
@@ -2228,19 +2172,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
     <inform-div1 id="acknowledgments">
       <head>謝辞</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
-        <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル・ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。また、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
-      <p>WCAG ワーキンググループへの参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group (WCAG WG)</loc>を参照のこと。
+        <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。又、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
+      <p>Web Contents Accessibility Guidelines Working Group (WCAG WG) への参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">ワーキンググループのホームページ</loc>を参照。
       </p>
       <div2>
-        <head>発行時点でアクティブだった WCAG ワーキンググループ参加者</head>
+        <head>発行時点でアクティブだった WCAG Working Group参加者</head>
       	<ulist>
       		<item><p>Bruce Bailey (U.S. Access Board) </p></item>
       		<item><p>Frederick Boland (NIST)</p></item>
-      		<item><p>Ben Caldwell (Trace R&amp;D Center</p></item>
+      		<item><p>Ben Caldwell (Trace R&amp;D Center, University of Wisconsin)</p></item>
       		<item><p>Sofia Celic (W3C Invited Expert)</p></item>
       		<item><p>Michael Cooper (W3C)</p></item>
-      		<item><p>Roberto Ellero (International Webmasters Association / HTML Writers Guild)
-</p></item>
+      		<item><p>Roberto Ellero (International Webmasters Association / HTML Writers
+      			Guild)</p></item>
       		<item><p>Bengt Farre (Rigab)</p></item>
       		<item><p>Loretta Guarino Reid (Google)</p></item>
       		<item><p>Katie Haritos-Shea</p></item>
@@ -2248,29 +2192,44 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       		<item><p>Drew LaHart (IBM) </p></item>
       		<item><p>Alex Li (SAP AG)</p></item>
       		<item><p>David MacDonald (E-Ramp Inc.)</p></item>
-      		<item><p>Roberto Scano (International Webmasters Association / HTML Writers	Guild)
-</p></item>
+      		<item><p>Roberto Scano (International Webmasters Association / HTML Writers
+      			Guild)</p></item>
       		<item><p>Cynthia Shelly  (Microsoft)</p></item>
       		<item><p>Andi Snow-Weaver (IBM)</p></item>
-      		<item><p>Christophe Strobbe (DocArch</p></item>
+      		<item><p>Christophe Strobbe (DocArch, K.U.Leuven)</p></item>
       		<item><p>Gregg Vanderheiden (Trace R&amp;D Center, University of Wisconsin)</p></item>
       	</ulist>
       </div2>
       <div2>
-        <head>過去にアクティブであった WCAG ワーキンググループ参加者およびその他の WCAG 2.0 への貢献者</head>
-      	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan, Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutierrez y Restrepo, Brian Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs, Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella, Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Chris Ridpath, Lee Roberts, Gregory J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer, Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch, Takayuki Watanabe, Jason White.</p>
+        <head>過去にアクティブであった WCAG Working Group参加者及びその他の WCAG 2.0 への貢献者</head>
+      	<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Avi Arditti, Aries Arditi, Mike Barta, Sandy Bartell, Kynn Bartlett, Marco Bertoni, Harvey Bingham,
+Chris Blouch, Paul Bohman, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Tomas Caspers, Roberto Castaldo, Sambhavi
+Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, James Coltham, James Craig, Tom Croucher, Nir Dagan,
+Daniel Dardailler, Geoff Deering, Pete DeVasto, Don Evans, Neal Ewers, Steve Faulkner, Lainey Feingold, Alan J. Flavell,  Nikolaos Floratos, Kentarou Fukuda,
+Miguel Garcia, P.J. Gardner, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Jon Gunderson, Emmanuelle Gutiérrez y Restrepo, Brian
+Hardy, Eric Hansen, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Chris Hofstader, Yvette Hoitink, Carlos Iglesias, Ian Jacobs,
+Phill Jenkins, Jyotsna Kaki, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, Marja-Riitta Koivunen, Preety Kumar, Gez Lemon, Chuck Letourneau, Scott
+Luebking, Tim Lacy, Jim Ley, William Loughborough, Greg Lowney, Luca Mascaro, Liam McGee, Jens Meiert, Niqui Merret, Alessandro Miele, Mathew J Mirabella,
+Charles McCathieNevile , Matt May, Marti McCuller, Sorcha Moore, Charles F. Munat, Robert Neff, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham
+Oliver, Sean B. Palmer, Sailesh Panchang, Nigel Peck, Anne Pemberton, David Poehlman, Adam Victor Reed, Bob Regan, Chris Ridpath, Lee Roberts, Gregory
+J. Rosmaita, Matthew Ross, Sharron Rush, Gian Sampson-Wild, Joel Sanda,  Gordon Schantz, Lisa Seeman, John Slatin, Becky Smith, Jared Smith, Neil Soiffer,
+Jeanne Spellman, Mike Squillace, Michael Stenitzer, Jim Thatcher, Terry Thompson, Justin Thorp, Makoto Ueki, Eric Velleman, Dena Wainwright, Paul Walsch,
+Takayuki Watanabe, Jason White.</p>
       </div2>
     </inform-div1>
     <inform-div1 id="references">
       <head>参考文献</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
       <blist>
-        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project<loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
+        <bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. このプロジェクトは、<loc href="http://www.captcha.net">http://www.captcha.net</loc>で公開されている。</bibl>
         <bibl id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
-        <bibl id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB. May 5, 1998.</bibl>
-        <bibl id="sRGB">A Standard Default Color Space for the Internet - sRGB, M. Stokes<loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
-        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
-        <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation, 5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. The latest version of WCAG 1.0 is available at <loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>.</bibl>
+        <bibl id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space -
+sRGB. May 5, 1998.</bibl>
+        <bibl id="sRGB">"A Standard Default Color Space for the Internet - sRGB," M. Stokes, M. Anderson, S. Chandrasekar, R. Motta, eds., Version 1.10,
+November 5, 1996. この文献は、<loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>から入手できる。</bibl>
+        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. この標準は、<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>から入手できる。</bibl>
+        <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation,
+5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. WCAg 1.0の最新版は、<loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>から入手できる。</bibl>
       </blist>
     </inform-div1>
   </back>

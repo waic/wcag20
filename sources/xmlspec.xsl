@@ -1453,8 +1453,8 @@
 	</xsl:template>
 	<xsl:template match="errataloc">
 		<p xmlns="http://www.w3.org/1999/xhtml">
-			<xsl:text>規定に対する修正が含まれている場合があるので、この文書の</xsl:text>
-			<a href="{@href}"><strong>正誤表（英語）</strong></a><xsl:text>もあわせて参照のこと。</xsl:text>
+			<xsl:text>規定に対する修正が含まれている場合があるので、この文書の </xsl:text>
+			<a href="{@href}" hreflang="en"><strong>errata</strong></a><xsl:text> もあわせて参照。</xsl:text>
 		</p>
 	</xsl:template>
 	<xsl:template match="preverrataloc">
@@ -1465,8 +1465,8 @@
 		</p>
 	</xsl:template>
 	<xsl:template match="translationloc">
-		<p xmlns="http://www.w3.org/1999/xhtml"><a href="{@href}">
-				<strong>翻訳版（英語）</strong>
+		<p xmlns="http://www.w3.org/1999/xhtml"><a href="{@href}" hreflang="en">
+				<strong>翻訳版</strong>
 			</a>も参照できる。</p>
 	</xsl:template>
 	<!-- pubstmt: statement of publication -->

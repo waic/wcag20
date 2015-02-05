@@ -206,7 +206,7 @@ div.doclinks/* */ {
     position: absolute; 
     right: 1.5em; /* Fix IE5.5 (so that doclinks line up correctly) */
     top: 0em;
-    width: 8em;
+    width: 9em;
     }
  div.sc>div.doclinks/* */ {
          right: -9em; 
@@ -225,7 +225,7 @@ div.doclinks/* */ {
  p.supportlinks {
     margin: 0 5px 0 5px;  /* top, right, bottom, left */
     padding: 0.25em;
-    text-align: left;
+    text-align: right;
     border: solid #006 1px;
     border-right: solid #006 3px;
     background: #f4f4ff; 

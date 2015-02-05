@@ -23,7 +23,7 @@
     <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
 -->
-  <xsl:param name="guidethisversion">../UNDERSTANDING-WCAG20/</xsl:param>
+  <xsl:param name="guidethisversion">http://www.w3.org/TR/UNDERSTANDING-WCAG20/</xsl:param>
 <!--
   <xsl:param name="guidethisversion">
 -->
@@ -890,7 +890,7 @@
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
           </h3>
-              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}">ガイドライン<xsl:number level="multiple" count="div2 | div3" format="1.1"/>を理解する
+              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
               </a></p>
           </div>
       </xsl:otherwise>
@@ -930,12 +930,12 @@
         <p class="supportlinks"><xsl:variable name="scnum"><xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template></xsl:variable>
         <xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@id]" mode="slice-understanding-filename"/></xsl:variable>
         <xsl:variable name="fragment"><xsl:if test="@id != substring-before($filename, '.')">#<xsl:value-of select="@id"/></xsl:if></xsl:variable>
-            <a href="{$quickrefthisversion}#qr-{@id}" class="HTMlink" title="達成基準{$scnum}を満たす方法"><xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>を満たす方法
+            <a href="{$quickrefthisversion}#qr-{@id}" class="HTMlink" title="How to Meet Success Criterion {$scnum}" hreflang="en">How to Meet <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
             </a>
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
         <xsl:text> </xsl:text>
-            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="達成基準{$scnum}を理解する"><xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>を理解する
+            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}" hreflang="en">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
         </a></p></div>
        
        
@@ -1047,10 +1047,10 @@
     <xsl:variable name="handle">
     <xsl:choose>
     <!-- GL handles -->
-<xsl:when test="$handleid='text-equiv'">代替テキスト</xsl:when>
-<xsl:when test="$handleid='media-equiv'">時間の経過に伴って変化するメディア</xsl:when>
+<xsl:when test="$handleid='text-equiv'">テキストによる代替</xsl:when>
+<xsl:when test="$handleid='media-equiv'">時間依存メディア</xsl:when>
 <xsl:when test="$handleid='content-structure-separation'">適応可能</xsl:when>
-<xsl:when test="$handleid='visual-audio-contrast'">識別可能</xsl:when>
+<xsl:when test="$handleid='visual-audio-contrast'">判別可能</xsl:when>
 <xsl:when test="$handleid='keyboard-operation'">キーボード操作可能</xsl:when>
 <xsl:when test="$handleid='time-limits'">十分な時間</xsl:when>
 <xsl:when test="$handleid='seizure'">発作の防止</xsl:when>
@@ -1098,7 +1098,7 @@
       <xsl:when test="@linktype='understanding'">
 		<xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@href]" mode="slice-understanding-filename"/></xsl:variable>
 		<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
-        <a href="{$guidethisversion}{$filename}{$fragment}">
+        <a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -1188,11 +1188,8 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <xsl:if test="$show.diff.markup = '0'">
     <p>
-      <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
-    </p>
-    <ul>
+      <xsl:text>この文書は、規定ではないフォーマットでも提供されており、</xsl:text>
       <xsl:for-each select="loc">
-        <li>
           <xsl:apply-templates select="."/>
           <!--
           <xsl:if test="position() &gt; 1">
@@ -1203,9 +1200,9 @@
             <xsl:if test="position() = last() - 1">and </xsl:if>
           </xsl:if>
           -->
-        </li>
       </xsl:for-each>
-    </ul>
+<xsl:text>より入手できる。</xsl:text>
+    </p>
           </xsl:if>
   </xsl:template>
   <xsl:template match="p" mode="label">
@@ -1229,7 +1226,7 @@
 			<xsl:variable name="fragment"><xsl:if test="../@id != substring-before($filename, '.')">#<xsl:value-of select="../@id"/></xsl:if></xsl:variable>
 					[<xsl:choose>
               <xsl:when test="/spec/@w3c-doctype='review'">
-				<a href="{$guidethisversion}{$filename}{$fragment}">
+				<a href="{$guidethisversion}{$filename}{$fragment}" hreflang="en">
 				  How to Meet <xsl:call-template name="sc-number"/>
 				</a>
                 <!--<a href="{$guidethisversion}Overview#{../@id}">How to Meet <xsl:call-template name="sc-number"/>
