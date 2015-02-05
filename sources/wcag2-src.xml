@@ -1858,13 +1858,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される:</p>
               <ulist>
                 <item>
-                  <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>R<sub>sRGB</sub> &lt;= 0.03928 の場合<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>G<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">G</emph> ＝ G<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">G</emph> ＝ ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>G<sub>sRGB</sub> &lt;= 0.03928 の場合<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
                 <item>
-                  <p>B<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">B</emph> ＝ B<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
+                  <p>B<sub>sRGB</sub> &lt;= 0.03928 の場合<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
                 </item>
               </ulist>
               <note role="nonumber">
@@ -1872,13 +1872,13 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </note>
               <ulist>
                 <item>
-                  <p>R<sub>sRGB</sub> ＝ R<sub>8bit</sub>/255</p>
+                  <p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p>
                 </item>
                 <item>
-                  <p>G<sub>sRGB</sub> ＝ G<sub>8bit</sub>/255</p>
+                  <p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p>
                 </item>
                 <item>
-                  <p>B<sub>sRGB</sub> ＝ B<sub>8bit</sub>/255</p>
+                  <p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p>
                 </item>
               </ulist>
               <note role="nonumber">
