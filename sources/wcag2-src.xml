@@ -1004,34 +1004,34 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
       </div2>
       <div2 role="front" id="conformance-claims">
-        <head>適合宣言（任意）
+        <head>適合表明 (任意)
         </head>
-        <p>適合性は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合宣言は1ページ、一連のウェブページ群、又は複数の関連するウェブページに対して行ってもよい。</p>
+        <p>適合は、<termref def="webpagedef">ウェブページ</termref>に対してのみ定義されている。しかし、適合表明は1ページ、一連のウェブページ群、又は複数の関連するウェブページに対して行ってもよい。</p>
         <div3 id="conformance-required" role="front">
-          <head>適合宣言の必須要素</head>
-            <p role="sctxt">適合宣言は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合宣言をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合宣言をする場合には、その適合宣言には以下に挙げる情報が含まれてい<emph role="bold">なければならない</emph>：</p>
+          <head>適合表明の必須要素</head>
+            <p role="sctxt">適合表明は、<emph role="bold">必須ではない</emph>。コンテンツ制作者は、適合表明をしなくても、WCAG 2.0 に適合することができる。しかし、もし適合表明をする場合には、その適合表明には以下の情報が含まれてい<emph role="bold">なければならない</emph>:</p>
           <olist>
             <item>
               <p>
-宣言の<emph role="bold">日付</emph></p>
+表明<emph role="bold">日</emph></p>
             </item>
             <item>
               <p>
                 <emph role="bold">ガイドライン名、バージョン、及び URI
-                </emph> ：例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
+                </emph>: 例えば、「Web Content Accessibility Guidelines 2.0 (<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">http://www.w3.org/TR/2008/REC-WCAG20-20081211/</loc>) 」
               </p>
             </item>
             <item>
               <p>
-満たしている<emph role="bold">適合レベル</emph>：（レベル A、AA、又は AAA）
+満たしている<emph role="bold">適合レベル</emph>: (レベル A、AA、又は AAA)
 </p>
             </item>
             <item>
               <p>
-                <emph role="bold">対象となるウェブページに関する簡潔な説明：</emph>： 例えば、サブドメインも宣言の対象に含まれているかどうかも含む、宣言の対象となっているURIのリスト。</p>
+                <emph role="bold">対象となるウェブページに関する簡潔な説明:</emph> 例えば、サブドメインも表明の対象に含まれているかどうかも含む、表明の対象となっているURIのリスト。</p>
               <note>
-                <p>対象となるウェブページは、リストを用いて表しても、対象となる全てのウェブページを含む表現を用いて表してもよい。</p>
-                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品の場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
+                <p>表明において、ウェブページはリストを用いて表してもよいし、全ての URI を含む表現を用いて表してもよい。</p>
+                <p>顧客がウェブサイト上でインストールするまで URI が存在しないウェブベースの製品がある。その場合、その製品はインストールされると適合した状態になる、といった記述をすることができる。</p>
               </note>
             </item>
             <item>
@@ -1039,29 +1039,27 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   <termref def="reliedupondef">依存している</termref> <termref def="technologydef">ウェブコンテンツ技術</termref></emph>のリスト</p>
             </item>
           </olist>
-          <note><p>適合のロゴを使用すると、適合を宣言していることとなり、上記の適合宣言の必須要素を明示しなければならない。</p></note>
+          <note><p>適合のロゴを使用するとその表明であるとみなされ、上記の適合表明の必須要素を明示しなければならない。</p></note>
         </div3>
         <div3 id="conformance-optional" role="front">
-          <head>適合宣言の任意要素</head>
-            <p role="sctxt">前述の適合宣言の必須要素に加えて、利用者のために追加で情報を提供することを検討するとよい。追加する情報として推奨するものを以下に挙げる：</p>
+          <head>適合表明の任意要素</head>
+            <p role="sctxt">上記の適合表明の必須要素に加えて、利用者のために追加で情報を提供することを検討する。追加する情報として推奨するものを以下に挙げる:</p>
           <ulist>
             <item>
-              <p>適合宣言したレベルよりも上のレベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
+              <p>表明した適合レベルよりも上の適合レベルで満たしている達成基準のリスト。この情報は、利用者が使用できる形式で提供すべきで、機械的に読み取れるメタデータが好ましい。
               </p>
             </item>
             <item>
-              <p><emph>
-使用しているが適合には
-<termref def="reliedupondef">依存</termref>していない</emph> 技術のリスト。
+              <p><emph>使用しているが適合には<termref def="reliedupondef">依存</termref>していない</emph>技術のリスト。
 </p>
             </item>
             <item>
-              <p>コンテンツを検証するのに用いた、支援技術を含むユーザエージェントのリスト。
+              <p>コンテンツを試験するのに用いた、支援技術を含むユーザエージェントのリスト。
 
               </p>
             </item>
             <item>
-              <p> アクセシビリティを向上するために達成基準以上に追加で施した措置に関する情報。
+              <p>アクセシビリティを向上させるために達成基準を超えて追加で施した措置に関する情報。
 </p>
             </item>
             <item>
@@ -1069,12 +1067,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
             </item>
             <item>
-              <p>適合宣言の機械的に読み取れるメタデータ版。</p>
+              <p>適合表明の機械的に読み取れるメタデータ版。</p>
             </item>
           </ulist>
           <note>
-            <p>より多くの情報や適合宣言の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc>を参照。</p>
-              <p>適合宣言内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc>を参照。</p>
+            <p>より多くの情報や適合表明の事例は、<loc href="conformance" locn-note="uc-conformance-claims-head" linktype="understanding" hreflang="en">Understanding Conformance Claims</loc> を参照。</p>
+              <p>適合表明内でのメタデータの使用に関する詳細な情報は、<loc href="understanding-metadata" linktype="understanding" hreflang="en">Understanding Metadata</loc> を参照。</p>
           </note>
         </div3>
       </div2>
