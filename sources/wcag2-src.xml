@@ -348,7 +348,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </div4>
         </div3>
         <div3 role="group1" id="content-structure-separation">
-          <head> 情報、又は構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作すること。</head>
+          <head>情報、及び構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作すること。</head>
           <div4 role="req">
             <head/>
             <div5 role="sc" id="content-structure-separation-programmatic">
