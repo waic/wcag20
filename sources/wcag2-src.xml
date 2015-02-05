@@ -206,29 +206,29 @@ WCAG 2.0 関連文書
         <head>WCAG 2.0 における重要な用語</head>
         <p>
 WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義する。
-
         </p>
         <glist>
           <gitem>
             <label>ウェブページ</label>
             <def>
-              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、この規格において、静的な HTML ページ以外のものも含むことに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる「ページ」など、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、「ウェブページ」には、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のような経験も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
+              <p>重要なのは、「<termref def="webpagedef">ウェブページ</termref>」という用語が、この規格において、静的な HTML ページ以外のものも含むことに注意することである。バーチャルでインタラクティブなコミュニティ全体を提供できる「ページ」など、ウェブ上に登場してきているより動的なウェブページも含まれる。例えば、「ウェブページ」という用語には、単一の URI で提供される、没入型でインタラクティブな映画のような体験も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
             </def>
           </gitem>
           <gitem>
             <label>プログラムによる解釈</label>
             <def>
-              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>ができるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを意味している。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
+              <p>いくつかの達成基準では、コンテンツ（あるいは、コンテンツのある部分）を「<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>」ができるようにすることを要求している。これは、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>がそのコンテンツから情報を抽出し、様々な感覚モダリティで利用者に提供できることを意味している。より詳細な情報は、<loc href="conformance" locn-note="uc-programmatically-determined-head" linktype="understanding" hreflang="en">Understanding Programmatically Determined</loc>を参照。
               </p>
             </def>
           </gitem>
           <gitem>
             <label>アクセシビリティ サポーテッド</label>
             <def>
-                <p>技術をアクセシビリティ サポーテッドな方法で用いるというのは、支援技術 (AT) 及び OS、ブラウザ、その他のユーザエージェントのアクセシビリティ機能と連携してその技術を用いるということを意味する。ウェブコンテンツは、その技術を<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な方法で用いている場合にだけ、WCAG 2.0 の達成基準を満たすためにその技術に<termref def="reliedupondef">依存</termref>することが可能である。ただし、何らかの達成基準を満たすために用いられていない（つまり、同じ情報あるいは機能が、アクセシビリティ サポーテッドな他の方法でも利用可能である）場合にだけ、そのウェブコンテンツ技術をアクセシビリティ サポーテッドではない（支援技術などと連携しない）方法で用いることができる。
+                <p>技術をアクセシビリティ サポーテッドな方法で用いるとは、支援技術及びオペレーティング システム、ブラウザ、その他のユーザエージェントのアクセシビリティ機能とともにその技術を用いるということを意味する。WCAG 2.0の達成基準を満たすために、ある技術の機能に<termref def="reliedupondef">依存</termref>
+することができるのは、その技術の機能が「<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>」な方法で用いられている場合だけである。ある技術の機能をアクセシビリティ サポーテッドではない (支援技術では使えないなどの) 方法で用いることができるのは、なんらかの達成基準を満たすためにその技術の機能に依存していない (つまり同じ情報又は機能がアクセシビリティー サポーテッドな他の方法でも利用できる) 場合だけである。
 </p>
               <p>
-アクセシビリティ サポーテッドの用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
+「アクセシビリティ サポーテッド」の用語定義は、このガイドラインの<specref ref="glossary"/>で提供されている。より詳細な情報は、<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding Accessibility Support</loc>を参照。</p>
             </def>
           </gitem>
         </glist>
