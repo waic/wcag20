@@ -930,7 +930,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <ulist>
             <item>
               <p>
-                <emph role="sc-handle">レベルA:</emph> レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
+                <emph role="sc-handle">レベル A:</emph> レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
               </p>
             </item>
             <item>
@@ -940,7 +940,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベルAAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合した代替版を提供する。
+                <emph role="sc-handle">レベル AAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合した代替版を提供する。
               </p>
             </item>
           </ulist>
