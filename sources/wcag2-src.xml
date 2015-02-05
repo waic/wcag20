@@ -176,13 +176,12 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
 WCAG 2.0 関連文書
         </head>
         <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.0文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある：
-
         </p>
         <olist>
           <item>
             <p>
                 <emph role="bold"><loc href="http://www.w3.org/WAI/WCAG20/quickref/" hreflang="en">How to Meet WCAG 2.0</loc></emph> 
- - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作したり評価したりする際に用いるガイドライン、達成基準、そして達成方法のすべてを参照できる。
+ - WCAG 2.0 のカスタマイズ可能なクイックリファレンス。コンテンツ制作者がウェブコンテンツを制作したり評価したりする際に用いるガイドライン、達成基準、達成方法のすべてが含まれる。
             </p>
           </item>
           <item>
@@ -195,13 +194,13 @@ WCAG 2.0 関連文書
             <p>
               <emph role="bold">
                 <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc>
-              </emph> - 達成方法集及びよくある失敗例集。個々に別々の文書になっており、解説、事例、ソースコード例、そして検証方法が記述されている。</p>
+              </emph> - 達成方法集及びよくある失敗例集。個々に別々の文書になっており、解説、事例、コード例、テストが含まれる。</p>
           </item>
             <item>
                 <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
-          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブ アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実装プラン作成、そしてアクセシビリティ ポリシーといったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
+          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブ アクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実施計画作成、及びアクセシビリティ方針といったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
