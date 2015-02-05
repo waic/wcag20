@@ -922,7 +922,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <p>この節では、WCAG 2.0 への<termref def="conformancedef">適合</termref>に関する要件を列挙する。又、任意である適合表明の作成方法に関する情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc> でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
-        <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
+        <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない:</p>
         <div3 role="front" id="cc1">
           <head role="cc">適合レベル</head>
           <p role="cc"> 以下に挙げる適合レベルの一つを完全に満たしていること。
@@ -930,17 +930,17 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <ulist>
             <item>
               <p>
-                <emph role="sc-handle">レベル A:</emph> レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
+                <emph role="sc-handle">レベル A:</emph>レベル A (適合の最低レベル) で適合するには、<termref def="webpagedef">ウェブページ</termref>がレベル A 達成基準のすべてを<termref def="satisfiesdef">満たす</termref>か、又は<termref def="conforming-alternate-versiondef">適合している代替版</termref>を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AA:</emph> レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合している代替版を提供する。
+                <emph role="sc-handle">レベル AA:</emph>レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合している代替版を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合している代替版を提供する。
+                <emph role="sc-handle">レベル AAA:</emph>レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合している代替版を提供する。
               </p>
             </item>
           </ulist>
@@ -962,13 +962,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <head role="cc">プロセス全体</head>
           <p role="cc"><termref def="webpagedef">ウェブページ</termref>が<termref def="processdef">プロセス</termref>を提示する一連の流れのウェブページ群 (つまり、ある目的を達成するために完了させる必要のある一連の手順) に含まれる場合、そのプロセス中のすべてのウェブページが指定したレベル又はそれ以上のレベルで適合している (もし、プロセス中のウェブページが一つでも特定のレベル又はそれ以上のレベルに適合していない場合、そのレベルに適合できない)。</p>
           <example>
-            <p> あるオンラインストアには、製品を選択して購入するための一連のウェブページがある。この場合、最初から最後 (支払い) までのすべてのウェブページが適合するには、このプロセスに含まれるどのウェブページも適合していなければならない。</p>
+            <p>あるオンラインストアには、製品を選択して購入するための一連のウェブページがある。このプロセスに含まれるあるウェブページが適合するためには、最初から最後 (支払い) までのすべてのウェブページが適合していなければならない。</p>
           </example>
         </div3>
         <div3 role="front" id="cc4">
             <head role="cc">技術のアクセシビリティ サポーテッドな使用方法だけ</head>
-          <p role="cc"> 達成基準を満たすために、用いる
-<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>している。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用できる (<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc> を参照)。
+          <p role="cc"> 達成基準を満たすために、用いる<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>している。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用できる (<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc> を参照)。
 
           </p>
         </div3>
