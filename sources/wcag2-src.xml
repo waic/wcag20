@@ -205,14 +205,14 @@ WCAG 2.0 関連文書
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
         <p>
-WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義している。
+WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義する。
 
         </p>
         <glist>
           <gitem>
             <label>ウェブページ</label>
             <def>
-              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、この規格において、静的な HTML ページよりも多くを含むことに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる「ページ」など、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、「ウェブページ」には、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のような経験も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
+              <p>重要なのは、<termref def="webpagedef">ウェブページ</termref>という用語が、この規格において、静的な HTML ページ以外のものも含むことに注意することである。完全にバーチャルでインタラクティブなコミュニティを提供できる「ページ」など、ウェブ上に登場してきているますます動的なウェブページも含んでいる。例えば、「ウェブページ」には、単一の URL で提供される、あたかも実体験であるかのようにインタラクティブで映画のような経験も含まれる。より詳細な情報は、<loc href="conformance" locn-note="uc-web-page-head" linktype="understanding" hreflang="en">Understanding "Web Page"</loc>を参照。</p>
             </def>
           </gitem>
           <gitem>
@@ -1373,7 +1373,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>適合 (conformance)</label>
           <def>
             <p>
-定められた標準、ガイドライン、あるいは仕様のすべての要件を満たすこと。
+与えられた規格、ガイドライン、あるいは仕様のすべての要件を満たすこと。
             </p>
           </def>
         </gitem>
@@ -2225,7 +2225,7 @@ Takayuki Watanabe, Jason White.</p>
 sRGB. May 5, 1998.</bibl>
         <bibl id="sRGB">"A Standard Default Color Space for the Internet - sRGB," M. Stokes, M. Anderson, S. Chandrasekar, R. Motta, eds., Version 1.10,
 November 5, 1996. この文献は、<loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>から入手できる。</bibl>
-        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. この標準は、<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>から入手できる。</bibl>
+        <bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. この規格は、<loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>から入手できる。</bibl>
         <bibl id="WCAG10" key="WCAG10">Web Content Accessibility Guidelines 1.0, G. Vanderheiden, W. Chisholm, I. Jacobs,  Editors, W3C Recommendation,
 5 May 1999, http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505/. WCAg 1.0の最新版は、<loc href="http://www.w3.org/TR/WAI-WEBCONTENT/">http://www.w3.org/TR/WAI-WEBCONTENT/</loc>から入手できる。</bibl>
       </blist>
