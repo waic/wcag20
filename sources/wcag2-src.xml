@@ -1035,7 +1035,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </item>
             <item>
               <p><emph role="bold">
-                  <termref def="reliedupondef">依存している</termref> <termref def="technologydef">ウェブコンテンツ技術</termref></emph>のリスト</p>
+                  <termref def="reliedupondef">依存している</termref><termref def="technologydef">ウェブコンテンツ技術</termref></emph>のリスト</p>
             </item>
           </olist>
           <note><p>適合のロゴを使用するとその表明であるとみなされ、上記の適合表明の必須要素を明示しなければならない。</p></note>
