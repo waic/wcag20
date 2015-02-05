@@ -1153,7 +1153,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <olist>
               <item>
                 <p>
-                    <emph role="bold">その<termref def="technologydef">ウェブコンテンツ技術</termref>の使用方法が、利用者の支援技術 (AT) によりサポートされていなければならない。</emph>これは、その技術の使用方法が、そのコンテンツの<termref def="human-langdef">自然言語</termref>における利用者の支援技術との相互運用性について検証されていることを意味する。</p>
+                    <emph role="bold">その<termref def="technologydef">ウェブコンテンツ技術</termref>の使用方法が、利用者の支援技術によりサポートされていなければならない。</emph>これは、その技術の使用方法が、そのコンテンツの<termref def="human-langdef">自然言語</termref>における利用者の支援技術との相互運用性について検証されていることを意味する。</p>
                 <p>
                   <emph role="bold">かつ</emph>
                 </p>
