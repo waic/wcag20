@@ -1723,7 +1723,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="non-text-contentdef">
           <label>非テキストコンテンツ (non-text content)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能な文字の並びではないコンテンツ、又は文字の並びが<termref def="human-langdef">自然言語</termref>においても何をも表現していないコンテンツ。
             </p>
             <note>
               <p>これには、（文字による図画である）<termref def="asciiartdef">ASCII アート</termref>、顔文字、（文字を置き換える）リートスピーク、そして文字を表現している画像が含まれる。
@@ -2047,7 +2047,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="textdef">
           <label>テキスト (text)</label>
           <def>
-            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
+            <p><termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能な文字の並びで、<termref def="human-langdef">自然言語</termref>で何かを表現しているもの。
             </p>
           </def>
         </gitem>
