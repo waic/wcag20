@@ -255,11 +255,11 @@
         <xsl:otherwise>
           <em><xsl:choose>
             <xsl:when test="$notenumber = '1'">
-              <xsl:text>注記： </xsl:text>
+              <xsl:text>注記: </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text>注記 </xsl:text>
-              <xsl:number count="p" format="1"/>：
+              <xsl:number count="p" format="1"/>: 
 					</xsl:otherwise>
           </xsl:choose></em><xsl:text> </xsl:text>
         </xsl:otherwise>
@@ -286,11 +286,11 @@
         <xsl:otherwise>
           <em><xsl:choose>
             <xsl:when test="$notenumber = '1'">
-              <xsl:text>訳注： </xsl:text>
+              <xsl:text>訳注: </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text>訳注 </xsl:text>
-              <xsl:number count="p" format="1"/>：
+              <xsl:number count="p" format="1"/>: 
 					</xsl:otherwise>
           </xsl:choose></em>
         </xsl:otherwise>
@@ -315,11 +315,11 @@
       </xsl:if>
       <em><xsl:choose>
         <xsl:when test="$exnumber = '1'">
-          <xsl:text>事例 ： </xsl:text>
+          <xsl:text>事例: </xsl:text>
         </xsl:when>
         <xsl:otherwise>
           <xsl:text>事例 </xsl:text>
-          <xsl:number count="p" format="1"/>：
+          <xsl:number count="p" format="1"/>: 
 					</xsl:otherwise>
       </xsl:choose></em>
       <xsl:apply-templates/>
@@ -640,7 +640,7 @@
           </strong>
           <xsl:choose>
             <xsl:when test="date"> 								 (<xsl:apply-templates select="date"/>):  							</xsl:when>
-            <xsl:otherwise>： </xsl:otherwise>
+            <xsl:otherwise>: </xsl:otherwise>
           </xsl:choose>
           <xsl:apply-templates select="edtext|issue"/>
         </p>
