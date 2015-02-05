@@ -1140,7 +1140,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="accessibility-supporteddef">
-          <label>アクセシビリティ サポーテッド ( (accessibility supported))</label>
+          <label>アクセシビリティ サポーテッド (accessibility supported)</label>
           <def>
             <p>利用者の<termref def="atdef">支援技術</termref>と、ブラウザ及びその他の<termref def="useragentdef">ユーザエージェント</termref>にあるアクセシビリティ機能でサポートされていること。
             </p>
