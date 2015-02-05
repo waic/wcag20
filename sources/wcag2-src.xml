@@ -424,7 +424,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>テキストのサイズ変更</head>
               <p role="v">
  	    <termref def="captionsdef">キャプション</termref>及び<termref def="images-of-textdef">文字画像</termref>を除き、<termref def="textdef">テキスト</termref>は、コンテンツ又は機能を損なうことなく、<termref def="atdef">支援技術</termref>なしで 200％ までサイズ変更できる。
- 	          </p>
+           </p>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
               <head>文字画像</head>
@@ -596,7 +596,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p role="i">
  動きのある、<termref def="blinksdef">点滅</termref>している、スクロールする、又は自動更新する情報は、次のすべての事項を満たしている:</p>
                   <ulist>
-                    <item><p><emph role="sc-handle">動き、点滅、スクロール:</emph> 動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5秒よりも長く継続し、かつ、(3) その他のコンテンツと並行して提示される場合、利用者がそれらを<termref def="pauseddef">一時停止</termref>、停止、又は非表示にすることのできるメカニズムがある。ただし、その動き、点滅、又はスクロールが<termref def="essentialdef">必要不可欠</termref>な動作の一部である場合は除く。 </p></item>
+                    <item><p><emph role="sc-handle">動き、点滅、スクロール:</emph> 動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5秒よりも長く継続し、かつ、(3) その他のコンテンツと並行して提示される場合、利用者がそれらを<termref def="pauseddef">一時停止</termref>、停止、又は非表示にすることのできるメカニズムがある。ただし、その動き、点滅、又はスクロールが<termref def="essentialdef">必要不可欠</termref>な動作の一部である場合は除く。</p></item>
                       <item><p><emph role="sc-handle">自動更新:</emph> 自動更新する情報が、(1) 自動的に開始し、 (2) その他のコンテンツと並行して提示される場合、利用者がそれを一時停止、停止、もしくは非表示にする、又はその更新頻度を調整することのできるメカニズムがある。ただし、その自動更新が必要不可欠な動作の一部である場合は除く。</p></item>
                   </ulist>
               <note>
@@ -836,7 +836,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="minimize-error-suggestions">
               <head>エラー修正の提案</head>
-              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出され、修正方法を提案できる場合、その提案が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。 </p>
+              <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出され、修正方法を提案できる場合、その提案が利用者に提示される。ただし、セキュリティ又はコンテンツの目的を損なう場合は除く。</p>
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
               <head>エラー回避 (法的、金融、データ) </head>
@@ -1279,7 +1279,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p>
 <termref def="videodef">映像</termref>の音声解説は、動作、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
               </p>
-              <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。 (<termref def="extended-addef">拡張音声解説</termref>も参照。) </p>
+              <p>標準的な音声解説では、ナレーションが会話の合間に挿入される。 (<termref def="extended-addef">拡張音声解説</termref>も参照。)</p>
               <p><termref def="videodef">映像</termref>情報のすべてが既存の<termref def="audiodef">音声</termref>ですでに提供されている場合、補足の音声解説は不要である。</p>
               <p>"video description" や "descriptive narration" とも呼ばれる。</p>
             </note>
