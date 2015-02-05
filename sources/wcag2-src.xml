@@ -2037,7 +2037,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
             </note>
             <example>
-              <p>ウェブコンテンツ技術のよくある事例としては、<abbr expansion="Hypertext Markup Language">HTML</abbr>、<abbr expansion="Cascading Style Sheets">CSS</abbr>、<abbr expansion="Scalable Vector Graphics">SVG</abbr>、<abbr expansion="Portable Network Graphics">PNG</abbr>、<abbr expansion="Portable Document Format">PDF</abbr>、Flash、そして JavaScript がある。
+              <p>ウェブコンテンツ技術のよくある事例としては、<abbr expansion="Hypertext Markup Language">HTML</abbr>、<abbr expansion="Cascading Style Sheets">CSS</abbr>、<abbr expansion="Scalable Vector Graphics">SVG</abbr>、<abbr expansion="Portable Network Graphics">PNG</abbr>、<abbr expansion="Portable Document Format">PDF</abbr>、Flash、 JavaScript などがある。
               </p>
             </example>
           </def>
