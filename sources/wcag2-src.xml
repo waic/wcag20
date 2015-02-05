@@ -935,12 +935,12 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AA:</emph> レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合した代替版を提供する。
+                <emph role="sc-handle">レベル AA:</emph> レベル AA で適合するには、ウェブページはレベル A 及びレベル AA 達成基準のすべてを満たすか、又はレベル AA に適合している代替版を提供する。
               </p>
             </item>
             <item>
               <p>
-                <emph role="sc-handle">レベル AAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合した代替版を提供する。
+                <emph role="sc-handle">レベル AAA:</emph> レベル AAA で適合するには、ウェブページがレベル A、レベル AA、及びレベル AAA 達成基準のすべてを満たすか、又はレベル AAA に適合している代替版を提供する。
               </p>
             </item>
           </ulist>
