@@ -474,7 +474,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <p role="v"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツで、(1) 前景に主として発話を含み、(2) 音声<termref def="CAPTCHAdef">CAPTCHA</termref> 又は音声ロゴではなく、かつ、(3)例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
             	<ulist>
             		<item><p><emph role="sc-handle">背景音なし：</emph> 音声は背景音を含まない。</p></item>
-            		<item><p><emph role="sc-handle">消去：</emph>背景音を消すことができる。</p></item>
+            		<item><p><emph role="sc-handle">消音：</emph>背景音を消すことができる。</p></item>
             		<item><p><emph role="sc-handle">20デシベル: </emph> 背景音は、前景にある発話のコンテンツより少なくとも20デシベルは低い。ただし、継続時間が2秒以内で発生頻度が低い背景音は除く。
 </p>
             		  <note>
