@@ -122,7 +122,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
       <p>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツを障害者にとってよりアクセシブルにする方法を定義している。アクセシビリティは、視覚、聴覚、身体、発話、認知、言語、学習、そして神経の障害を含む、広範な障害に関係している。このガイドラインは、広範囲に及ぶ事項を網羅しているが、障害のすべての種類、程度、そして組合せからくるニーズを満たすことはできない。また、このガイドラインは、加齢により能力が変化している高齢者にとってもウェブコンテンツをより使いやすくするものであるとともに、しばしば利用者全般のユーザビリティを向上させる。
       </p>
       <p>WCAG 2.0 は、ウェブコンテンツのアクセシビリティに対して、様々な国の個人、組織、そして政府のニーズを満たすような共通の基準を提供することを目的として、<loc href="http://www.w3.org/WAI/intro/w3c-process.php" hreflang="en">W3C process</loc>に従って世界中の個人及び組織の協力のもと作成されている。WCAG 2.0 は WCAG 1.0 <bibref ref="WCAG10"/> をふまえ、現在及び将来の様々なウェブ技術に広く適用できるように設計されており、自動テストと人間による評価の組合せによって検証できるようになっている。WCAG のイントロダクションとしては、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照。</p>
-      <p>ウェブ アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールもウェブ アクセシビリティにおいて重要な役割を担っている。ウェブ開発やインタラクションを構成するこれらの要素が相互にどのように関係しているかの概要については、以下を参照：</p>
+      <p>ウェブ アクセシビリティは、アクセシブルなコンテンツだけではなく、アクセシブルなウェブブラウザやその他のユーザエージェントにも依存している。そして、オーサリングツールもウェブ アクセシビリティにおいて重要な役割を担っている。ウェブ開発やインタラクションを構成するこれらの要素が相互にどのように関係しているかの概要については、以下を参照:</p>
       <ulist>
         <item>
           <p>
@@ -152,7 +152,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブ アクセシビリティの土台となる4つの原則がある：<emph>知覚可能、操作可能、理解可能、及び堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブ アクセシビリティの土台となる4つの原則がある: <emph>知覚可能、操作可能、理解可能、及び堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
           </item>
           <item>
             <p>
@@ -160,11 +160,11 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.0 を用いることが可能である。様々なユーザ層や状況からくるニーズを満たすために、3つの適合レベルが定義されている：A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
+              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.0 を用いることが可能である。様々なユーザ層や状況からくるニーズを満たすために、3つの適合レベルが定義されている: A（最低レベル）、AA、AAA（最高レベル）。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される：達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
+              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される: 達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
           </item>
         </ulist>
         <p>このガイダンスのレイヤー（原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法）はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
@@ -175,7 +175,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <head>
 WCAG 2.0 関連文書
         </head>
-        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.0文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある：
+        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.0文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある:
         </p>
         <olist>
           <item>
@@ -240,45 +240,45 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>WCAG 2.0 ガイドライン</head>
       <p>この節は、<termref def="normativedef">規定</termref>である。</p>
       <div2 role="principle" id="perceivable">
-        <head>原則 1：知覚可能 - 情報及びユーザ インタフェース コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</head>
+        <head>原則 1: 知覚可能 - 情報及びユーザ インタフェース コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</head>
         <div3 role="group1" id="text-equiv">
           <head>すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、テキストによる代替を提供すること。</head>
           <div4 role="req">
             <head> </head>
             <div5 role="sc" id="text-equiv-all">
               <head>非テキストコンテンツ</head>
-              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">テキストによる代替</termref>が提供されている。ただし、次の場合は除く：
+              <p role="i"> 利用者に提示されるすべての<termref def="non-text-contentdef">非テキストコンテンツ</termref>には、同等の目的を果たす<termref def="text-altdef">テキストによる代替</termref>が提供されている。ただし、次の場合は除く:
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">コントロール、入力：</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">名前（name）</termref>を提供している。（コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照。）
+                    <emph role="sc-handle">コントロール、入力:</emph> 非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する<termref def="namedef">名前（name）</termref>を提供している。（コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、<specref ref="ensure-compat"/>を参照。）
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">時間依存メディア：</emph> 非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照。）
+                    <emph role="sc-handle">時間依存メディア:</emph> 非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。（メディアに関するその他の要件は、<specref ref="media-equiv"/>を参照。）
                   </p>
                 </item>
                 <item>
                   <p>
-                      <emph role="sc-handle">テスト：</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
+                      <emph role="sc-handle">テスト:</emph> 非テキストコンテンツが、<termref def="textdef">テキスト</termref>で提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">感覚的：</emph> 非テキストコンテンツが、<termref def="sensoryexpdef">特定の感覚的体験</termref>を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
+                    <emph role="sc-handle">感覚的:</emph> 非テキストコンテンツが、<termref def="sensoryexpdef">特定の感覚的体験</termref>を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。
                   </p>
                 </item>
                 <item>
                   <p>
                     <emph role="sc-handle">
-                      <termref def="CAPTCHAdef">CAPTCHA</termref>：</emph> 非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
+                      <termref def="CAPTCHAdef">CAPTCHA</termref>:</emph> 非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。
 </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">装飾、整形、非表示：</emph> 非テキストコンテンツが、<termref def="puredecdef">純粋な装飾</termref>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
+                    <emph role="sc-handle">装飾、整形、非表示:</emph> 非テキストコンテンツが、<termref def="puredecdef">純粋な装飾</termref>である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、<termref def="atdef">支援技術</termref>が無視できるように実装されている。</p>
                 </item>
               </ulist>
             </div5>
@@ -290,10 +290,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="media-equiv-av-only-alt">
               <head>音声のみ及び映像のみ（収録済）</head>
-              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く：</p>
+              <p role="i"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>メディア及び収録済の<termref def="video-onlydef">映像しか含まない</termref>メディアは、次の事項を満たしている。ただし、その音声又は映像が<termref def="multimedia-alt-textdef">メディアによるテキストの代替</termref>であって、メディアによる代替であることが明確にラベル付けされている場合は除く:</p>
               <ulist>
-                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合：</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。</p></item>
-                <item><p><emph role="sc-handle">収録済の映像しか含まない場合：</emph>時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
+                  <item><p><emph role="sc-handle">収録済の音声しか含まない場合:</emph><termref def="alt-time-based-mediadef">時間依存メディアに対する代替コンテンツ</termref>によって、収録済の音声しか含まないコンテンツと同等の情報を提供している。</p></item>
+                <item><p><emph role="sc-handle">収録済の映像しか含まない場合:</emph> 時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。</p></item>
               </ulist>
             </div5>
             <div5 role="sc" id="media-equiv-captions">
@@ -401,21 +401,21 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast-contrast">
               <head>コントラスト（最低限）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>に、少なくとも 4.5：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>に、少なくとも 4.5:1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く:
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像に、少なくとも 3：1 のコントラスト比がある。</p>
+                    <emph role="sc-handle">大きな文字:</emph>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像に、少なくとも 3:1 のコントラスト比がある。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                    <emph role="sc-handle">付随的:</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">ロゴタイプ：</emph>
+                    <emph role="sc-handle">ロゴタイプ:</emph>
  ロゴ又はブランド名の一部である文字には、コントラストの要件はない。</p>
                 </item>
               </ulist>
@@ -428,16 +428,16 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-presentation">
               <head>文字画像</head>
-              <p role="v"> 使用している技術で意図した視覚的提示が可能である場合、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>が情報伝達に用いられている。ただし、次に挙げる場合を除く：
+              <p role="v"> 使用している技術で意図した視覚的提示が可能である場合、<termref def="images-of-textdef">文字画像</termref>ではなく<termref def="textdef">テキスト</termref>が情報伝達に用いられている。ただし、次に挙げる場合を除く:
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="bold">カスタマイズ可能：</emph> 文字画像は、利用者の要求に応じた<termref def="visually-customizeddef">視覚的なカスタマイズ</termref>ができる。</p>
+                    <emph role="bold">カスタマイズ可能:</emph> 文字画像は、利用者の要求に応じた<termref def="visually-customizeddef">視覚的なカスタマイズ</termref>ができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠：</emph> テキストの特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠:</emph> テキストの特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
@@ -450,31 +450,31 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="visual-audio-contrast7">
               <head>コントラスト（高度）</head>
               <p role="v">
-                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>には、少なくとも 7：1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く：
+                <termref def="textdef">テキスト</termref>及び<termref def="images-of-textdef">文字画像</termref>の<phrase>視覚的提示</phrase>には、少なくとも 7:1 の<termref def="contrast-ratiodef">コントラスト比</termref>がある。ただし、次の場合は除く:
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">大きな文字：</emph>
-                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像には、少なくとも 4.5：1 のコントラスト比がある。</p>
+                    <emph role="sc-handle">大きな文字:</emph>
+                    <termref def="larger-scaledef">サイズの大きな</termref>テキスト及びサイズの大きな文字画像には、少なくとも 4.5:1 のコントラスト比がある。</p>
                 </item>
                 <item>
                     <p>
-                        <emph role="sc-handle">付随的：</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
+                        <emph role="sc-handle">付随的:</emph> テキスト又は文字画像において、次の場合はコントラストの要件はない。アクティブではない<termref def="user-interface-componentdef">ユーザ インタフェース コンポーネント</termref>の一部である、<termref def="puredecdef">純粋な装飾</termref>である、誰も視覚的に確認できない、又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">ロゴタイプ：</emph>
+                    <emph role="sc-handle">ロゴタイプ:</emph>
  ロゴ又はブランド名の一部である文字には、コントラストの要件はない。</p>
                 </item>
               </ulist>
             </div5>
             <div5 role="sc" id="visual-audio-contrast-noaudio">
               <head>小さな背景音、又は背景音なし</head>
-                <p role="v"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツで、(1) 前景に主として発話を含み、(2) 音声<termref def="CAPTCHAdef">CAPTCHA</termref> 又は音声ロゴではなく、かつ、(3)例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
+                <p role="v"><termref def="prerecordeddef">収録済</termref>の<termref def="audio-onlydef">音声しか含まない</termref>コンテンツで、(1) 前景に主として発話を含み、(2) 音声<termref def="CAPTCHAdef">CAPTCHA</termref> 又は音声ロゴではなく、かつ、(3)例えば、歌やラップなどのように、主として音楽表現を意図した発声ではないものについては、次に挙げる事項のうち、少なくとも一つを満たしている:</p>
             	<ulist>
-            		<item><p><emph role="sc-handle">背景音なし：</emph> 音声は背景音を含まない。</p></item>
-            		<item><p><emph role="sc-handle">消音：</emph>背景音を消すことができる。</p></item>
+            		<item><p><emph role="sc-handle">背景音なし:</emph> 音声は背景音を含まない。</p></item>
+            		<item><p><emph role="sc-handle">消音:</emph> 背景音を消すことができる。</p></item>
             		<item><p><emph role="sc-handle">20デシベル: </emph> 背景音は、前景にある発話のコンテンツより少なくとも20デシベルは低い。ただし、継続時間が2秒以内で発生頻度が低い背景音は除く。
 </p>
             		  <note>
@@ -484,7 +484,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-visual-presentation">
               <head>視覚的提示</head>
-              <p role="v"><termref def="blockstextdef">テキスト ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用できる：</p>
+              <p role="v"><termref def="blockstextdef">テキスト ブロック</termref>の視覚的提示において、次を実現する<termref def="mechanismdef">メカニズム</termref>が利用できる:</p>
               <olist>
                 <item>
                   <p>利用者が、前景色と背景色を選択できる。</p>
@@ -555,36 +555,35 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <head/>
             <div5 role="sc" id="time-limits-required-behaviors">
               <head>タイミング調整可能</head>
-              <p role="i"> コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている：
-
+              <p role="i"> コンテンツに制限時間を設定する場合は、次に挙げる事項のうち、少なくとも一つを満たしている:
               </p>
               <ulist>
                 <item>
                   <p>
-                    <emph role="sc-handle">解除：</emph> 制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、
+                    <emph role="sc-handle">解除:</emph> 制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、
 
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">調整：</emph> 制限時間があるコンテンツを利用する前に、利用者が少なくともデフォルト設定の10倍を超える、大幅な制限時間の調整をすることができる。又は、</p>
+                    <emph role="sc-handle">調整:</emph> 制限時間があるコンテンツを利用する前に、利用者が少なくともデフォルト設定の10倍を超える、大幅な制限時間の調整をすることができる。又は、</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">延長：</emph> 時間切れになる前に利用者に警告し、かつ少なくとも20秒間の猶予をもって、例えば「スペースキーを押す」などの簡単な操作により、利用者が制限時間を少なくとも10倍以上延長することができる。又は、</p>
+                    <emph role="sc-handle">延長:</emph> 時間切れになる前に利用者に警告し、かつ少なくとも20秒間の猶予をもって、例えば「スペースキーを押す」などの簡単な操作により、利用者が制限時間を少なくとも10倍以上延長することができる。又は、</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">リアルタイムの例外：</emph> リアルタイムのイベント（例えば、オークション）において制限時間が必須の要素で、その制限時間に代わる手段が存在しない。又は、</p>
+                    <emph role="sc-handle">リアルタイムの例外:</emph> リアルタイムのイベント（例えば、オークション）において制限時間が必須の要素で、その制限時間に代わる手段が存在しない。又は、</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">必要不可欠な例外：</emph> 制限時間が<termref def="essentialdef">必要不可欠</termref>なもので、制限時間を延長することがコンテンツの動作を無効にすることになる。又は、
+                    <emph role="sc-handle">必要不可欠な例外:</emph> 制限時間が<termref def="essentialdef">必要不可欠</termref>なもので、制限時間を延長することがコンテンツの動作を無効にすることになる。又は、
                   </p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">20時間の例外：</emph> 制限時間が20時間よりも長い。
+                    <emph role="sc-handle">20時間の例外:</emph> 制限時間が20時間よりも長い。
                   </p>
                 </item>
               </ulist>
@@ -595,10 +594,10 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="time-limits-pause">
               <head>一時停止、停止、非表示</head>
               <p role="i">
- 動きのある、<termref def="blinksdef">点滅</termref>している、スクロールする、又は自動更新する情報は、次のすべての事項を満たしている：</p>
+ 動きのある、<termref def="blinksdef">点滅</termref>している、スクロールする、又は自動更新する情報は、次のすべての事項を満たしている:</p>
                   <ulist>
-                    <item><p><emph role="sc-handle">動き、点滅、スクロール：</emph> 動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5秒よりも長く継続し、そして (3) その他のコンテンツと並行して提示される場合、利用者がそれらを<termref def="pauseddef">一時停止</termref>、停止、又は非表示にすることのできるメカニズムがある。ただし、その動き、点滅、又はスクロールが<termref def="essentialdef">必要不可欠</termref>な動作の一部である場合は除く。 </p></item>
-                      <item><p><emph role="sc-handle">自動更新：</emph> 自動更新する情報が、(1) 自動的に開始し、 (2) その他のコンテンツと並行して提示される場合、利用者がそれを一時停止、停止、もしくは非表示にする、又はその更新頻度を調整することのできるメカニズムがある。ただし、その自動更新が必要不可欠な動作の一部である場合は除く。</p></item>
+                    <item><p><emph role="sc-handle">動き、点滅、スクロール:</emph> 動きのある、点滅している、又はスクロールしている情報が、(1) 自動的に開始し、(2) 5秒よりも長く継続し、そして (3) その他のコンテンツと並行して提示される場合、利用者がそれらを<termref def="pauseddef">一時停止</termref>、停止、又は非表示にすることのできるメカニズムがある。ただし、その動き、点滅、又はスクロールが<termref def="essentialdef">必要不可欠</termref>な動作の一部である場合は除く。 </p></item>
+                      <item><p><emph role="sc-handle">自動更新:</emph> 自動更新する情報が、(1) 自動的に開始し、 (2) その他のコンテンツと並行して提示される場合、利用者がそれを一時停止、停止、もしくは非表示にする、又はその更新頻度を調整することのできるメカニズムがある。ただし、その自動更新が必要不可欠な動作の一部である場合は除く。</p></item>
                   </ulist>
               <note>
                 <p>画面がちらつく、又は閃光を放つコンテンツに関する要件は、<specref ref="seizure"/>を参照。</p>
@@ -721,7 +720,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
       </div2>
       <div2 role="principle" id="understandable">
-        <head>原則 3：理解可能 - 情報及びユーザ インタフェースの操作は理解可能でなければならない。</head>
+        <head>原則 3: 理解可能 - 情報及びユーザ インタフェースの操作は理解可能でなければならない。</head>
         <div3 role="group1" id="meaning">
           <head>
 テキストのコンテンツを読みやすく理解可能にすること。
@@ -841,19 +840,19 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="minimize-error-reversible">
               <head>エラー回避（法的、金融、データ）</head>
-              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法律行為</termref>もしくは金融取引が生じる、<termref def="user-controllabledef">利用者が制御可能な</termref>データ ストレージ システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：</p>
+              <p role="i"> 利用者にとって<termref def="legalcommitmentsdef">法律行為</termref>もしくは金融取引が生じる、<termref def="user-controllabledef">利用者が制御可能な</termref>データ ストレージ システム上のデータを変更もしくは削除する、又は利用者が試験の解答を送信する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている:</p>
               <olist>
                 <item>
                   <p>
-                    <emph role="sc-handle">取消：</emph> 送信を取り消すことができる。</p>
+                    <emph role="sc-handle">取消:</emph> 送信を取り消すことができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
+                    <emph role="sc-handle">チェック:</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
+                    <emph role="sc-handle">確認:</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
                 </item>
               </olist>
             </div5>
@@ -867,20 +866,20 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="minimize-error-reversible-all">
               <head>エラー回避（すべて）</head>
-              <p role="i"> 利用者に情報の送信を要求する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている：
+              <p role="i"> 利用者に情報の送信を要求する<termref def="webpagedef">ウェブページ</termref>では、次に挙げる事項のうち、少なくとも一つを満たしている:
               </p>
 <olist>
                 <item>
                   <p>
-                    <emph role="sc-handle">取消：</emph> 送信を取り消すことができる。</p>
+                    <emph role="sc-handle">取消:</emph> 送信を取り消すことができる。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">チェック：</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
+                    <emph role="sc-handle">チェック:</emph> 利用者が入力したデータの<termref def="input-errordef">入力エラー</termref>がチェックされ、利用者には修正する機会が提供される。</p>
                 </item>
                 <item>
                   <p>
-                    <emph role="sc-handle">確認：</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
+                    <emph role="sc-handle">確認:</emph> 送信を完了する前に、利用者が情報の見直し、確認及び修正をする<termref def="mechanismdef">メカニズム</termref>が利用できる。</p>
                 </item>
               </olist>
             </div5>
@@ -888,7 +887,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
       </div2>
       <div2 role="principle" id="robust">
-        <head>原則 4： 堅牢性 - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。</head>
+        <head>原則 4: 堅牢性 - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。</head>
         <div3 role="group1" id="ensure-compat">
           <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化すること。</head>
           <div4 role="req">
@@ -918,7 +917,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <p>この節では、WCAG 2.0 への<termref def="conformancedef">適合</termref>に関する要件を列挙する。又、任意である適合表明の作成方法に関する情報も提供する。最後に、<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>とは何かを説明する。なぜならば、適合においては技術のアクセシビリティ サポーテッドな使用方法だけに<termref def="reliedupondef">依存</termref>することができるからである。アクセシビリティ サポーテッドという概念については、<loc href="conformance" linktype="understanding" hreflang="en">Understanding Conformance</loc> でさらに詳しい説明がある。</p>
       <div2 role="front" id="conformance-reqs">
         <head>適合要件</head>
-        <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない：</p>
+        <p>ウェブページが WCAG 2.0 に適合するためには、以下に挙げるすべての適合要件を満たしていなければならない:</p>
         <div3 role="front" id="cc1">
           <head role="cc">適合レベル</head>
           <p role="cc"> 以下に挙げる適合レベルの一つを完全に満たしていること。
@@ -1114,7 +1113,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p>単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。
             </p>
             <note>
-              <p>これは、頭文字語及び頭字語を含む：</p>
+              <p>これは、頭文字語及び頭字語を含む:</p>
               <olist>
                 <item>
                   <p>
@@ -1137,7 +1136,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                   </example>
                 </item>
               </olist>
-              <p>頭文字語だったものを社名として採用している会社がある。そのような場合、その会社の新しい社名はその文字列であるにすぎず（例：Ecma）、その単語はもはや略語とは考えられない。</p>
+              <p>頭文字語だったものを社名として採用している会社がある。そのような場合、その会社の新しい社名はその文字列であるにすぎず（例: Ecma）、その単語はもはや略語とは考えられない。</p>
             </note>
           </def>
         </gitem>
@@ -1146,7 +1145,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>利用者の<termref def="atdef">支援技術</termref>と、ブラウザ及びその他の<termref def="useragentdef">ユーザエージェント</termref>にあるアクセシビリティ機能でサポートされていること。
             </p>
-            <p>あるウェブコンテンツ技術（あるいは、ある技術の機能）の使用方法がアクセシビリティ サポーテッドであると認められるためには、そのウェブコンテンツ技術（あるいは、機能）について、次の 1. と 2. の両方が満たされていなければならない：
+            <p>あるウェブコンテンツ技術（あるいは、ある技術の機能）の使用方法がアクセシビリティ サポーテッドであると認められるためには、そのウェブコンテンツ技術（あるいは、機能）について、次の 1. と 2. の両方が満たされていなければならない:
             </p>
             <olist>
               <item>
@@ -1158,7 +1157,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
               <item>
                 <p>
-                  <emph role="bold">そのウェブコンテンツ技術には、アクセシビリティ サポーテッドで、利用者が利用できるユーザエージェントがなければならない。</emph>これは、少なくとも次の4つのうち一つを満たしていることを意味する：</p>
+                  <emph role="bold">そのウェブコンテンツ技術には、アクセシビリティ サポーテッドで、利用者が利用できるユーザエージェントがなければならない。</emph>これは、少なくとも次の4つのうち一つを満たしていることを意味する:</p>
                 <olist>
                   <item>
                     <p>その技術が (HTMLやCSSのように)、広く配布されているアクセシビリティ サポーテッドなユーザエージェントに標準でサポートされている。</p>
@@ -1179,7 +1178,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                     </p>
                   </item>
                   <item>
-                    <p>その技術をサポートするユーザエージェントが、アクセシビリティ サポーテッドであって、次のようにダウンロードあるいは購入できる：</p>
+                    <p>その技術をサポートするユーザエージェントが、アクセシビリティ サポーテッドであって、次のようにダウンロードあるいは購入できる:</p>
                     <ulist>
                       <item>
                         <p>障害のある人に障害のない人よりも時間や労力がかかるようなことはなく、<emph role="bold">かつ、</emph></p>
@@ -1235,7 +1234,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </p>
             <note>
               <p>
-支援技術が提供する機能としては、代替の提示（例：合成音声や拡大表示したコンテンツ）、代替入力手法（例：音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例：テーブルをよりアクセシブルにするもの）などを挙げることができる。
+支援技術が提供する機能としては、代替の提示（例: 合成音声や拡大表示したコンテンツ）、代替入力手法（例: 音声認識）、付加的なナビゲーション又は位置確認のメカニズム、及びコンテンツ変換（例: テーブルをよりアクセシブルにするもの）などを挙げることができる。
               </p>
               <p>支援技術は、<abbr expansion="Application Programming Interfaces">API</abbr> を利用、監視することで、主流のユーザエージェントとデータやメッセージのやりとりをすることが多い。
               </p>
@@ -1243,7 +1242,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </p>
             </note>
             <example>
-              <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる：</p>
+              <p>この文書の文脈において重要な支援技術としては、以下のものが挙げられる:</p>
               <ulist>
                 <item>
                   <p>画面拡大ソフト及びその他の視覚的な表示に関する支援技術。視覚障害、知覚障害、及び読書困難などの障害のある人が、レンダリング後のテキスト及び画像の視覚的な読みやすさを改善するために、テキストのフォント、サイズ、間隔、色、音声との同期などを変更するのに使用している。</p>
@@ -1341,7 +1340,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>コンテキストの変化 (changes of context)</label>
           <def>
             <p><termref def="webpagedef">ウェブページ</termref>のコンテンツにおける大きな変化で、利用者が気づかないと、ウェブページ全体を一度に見ることのできない利用者を混乱させる恐れのあるもの。</p>
-            <p>状況の変化には次に挙げるものの変化が含まれる：</p>
+            <p>状況の変化には次に挙げるものの変化が含まれる:</p>
             <olist>
               <item>
                 <p>
@@ -1360,7 +1359,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </olist>
             <note>
-              <p>コンテンツの変化が、必ずコンテキストの変化になるとはかぎらない。アウトラインの展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例：フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
+              <p>コンテンツの変化が、必ずコンテキストの変化になるとはかぎらない。アウトラインの展開、動的なメニュー、又はタブの切替などのコンテンツの変化は、それが上記のいずれか（例: フォーカス）を変更しないかぎり、状況を変化させるとは限らない。</p>
             </note>
             <example>
               <p>新しいウィンドウを開くこと、フォーカスを異なるコンポーネントへ移動させること、新しいウェブページへ移動すること（新しいウェブページへ移動したかのように思わせてしまうことも含む）、又はウェブページの内容を大きく再配置することなどは、コンテキストの変化の事例である。</p>
@@ -1378,7 +1377,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="conforming-alternate-versiondef">
           <label>適合している代替版 (conforming alternate version)</label>
           <def>
-            <p>以下の事項を満たす版のことを指す：</p>
+            <p>以下の事項を満たす版のことを指す:</p>
             <olist>
               <item>
                 <p>指定されたレベルで適合しており、かつ</p>
@@ -1390,7 +1389,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <p>不適合コンテンツと同時に更新されていて、かつ</p>
               </item>
               <item>
-                <p>以下に挙げる事項のうち少なくとも一つを満たしていること：</p>
+                <p>以下に挙げる事項のうち少なくとも一つを満たしていること:</p>
                 <olist>
                   <item>
                     <p><termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な
@@ -1450,8 +1449,8 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </ulist>
             <note>
-              <p>コントラスト比は、1～21の範囲になりうる（通常は、1：1～21：1と記述される）。</p>
-              <p>コンテンツ制作者は、テキストのレンダリング（例：フォントのスムージングやアンチエイリアス）に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。</p>
+              <p>コントラスト比は、1～21の範囲になりうる（通常は、1:1～21:1と記述される）。</p>
+              <p>コンテンツ制作者は、テキストのレンダリング（例: フォントのスムージングやアンチエイリアス）に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。</p>
               <p>達成基準 1.4.3 及び 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。</p>
               <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、問題がある。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も問題がある。</p>
               <p>文字の周囲に縁取りがある場合、その縁取りがコントラストを強めることもあり、文字とその背景色におけるコントラストの計算に用いられる。文字の周囲の細い縁取りは文字として扱われる。文字の周囲の太い縁取りが、光彩のようになって、文字の内側の細部を塗りつぶしていれば、背景色として考慮されることになる。</p>
@@ -1503,7 +1502,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="general-thresholddef">
           <label>一般閃光閾値及び赤色閃光閾値 (general flash and red flash thresholds)</label>
           <def>
-            <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>、又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる：</p>
+            <p>次のいずれかに該当していれば、連続した<termref def="flash-def">閃光</termref>、又は急速に変化する画像の連続は、閾値を下回っている（すなわち、コンテンツは<emph role="bold">基準を満たしている</emph>）ことになる:</p>
             <olist>
               <item>
                 <p>あらゆる1秒間において、
@@ -1516,7 +1515,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </p>
               </item>
             </olist>
-            <p>ここで：</p>
+            <p>ここで:</p>
             <ulist>
               <item>
                 <p><emph role="bold">一般閃光</emph>とは、暗いほうの<termref def="relativeluminancedef">相対輝度</termref>が0.80未満であるときの、最大相対輝度の10%以上の相対輝度の交互の変化のことである。ここでいう「交互の変化」とは、増加した後に減少する、又は減少した後に増加するものを指す。そして、</p>
@@ -1526,9 +1525,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
             </ulist>
             <p>
-              <emph>例外：</emph> ホワイトノイズ又は1辺が（典型的な閲覧距離における視野の）0.1度未満の市松模様のように、細かくて整っている模様の閃光は、閾値を超えることにはならない。</p>
+              <emph>例外:</emph> ホワイトノイズ又は1辺が（典型的な閲覧距離における視野の）0.1度未満の市松模様のように、細かくて整っている模様の閃光は、閾値を超えることにはならない。</p>
             <note>
-              <p>一般的なソフトウェアやウェブコンテンツでは、コンテンツを 1024 × 768 ピクセルの解像度で閲覧している際の画面上での 341 × 256 ピクセルの矩形が、標準的な画面サイズ及び画面からの距離（例：22～26インチの距離で、15～17インチの画面）における視野角10度に該当する（同じコンテンツでも高解像度のディスプレイでは小さく安全になるので、閾値を定めるには低解像度が用いられている）。</p>
+              <p>一般的なソフトウェアやウェブコンテンツでは、コンテンツを 1024 × 768 ピクセルの解像度で閲覧している際の画面上での 341 × 256 ピクセルの矩形が、標準的な画面サイズ及び画面からの距離（例: 22～26インチの距離で、15～17インチの画面）における視野角10度に該当する（同じコンテンツでも高解像度のディスプレイでは小さく安全になるので、閾値を定めるには低解像度が用いられている）。</p>
               <p>遷移とは、相対輝度（赤色閃光の相対輝度/色）の計測値を時間軸でプロットしたときの隣接する山と谷の間における相対輝度（赤色閃光の相対輝度/色）の変化である。閃光は、ひと組の逆方向の遷移から成る。</p>
               <p><emph role="bold">彩度の高い赤色を含む相反する遷移の組合せ</emph> の現時点での定義は、各遷移に含まれる状態の一方又は双方とも、R / (R＋G＋B) が 0.8 以上で、(R－G－B) × 320 の値の変化が双方の遷移において 20 より大きい（ただし、(R－G－B) × 320 が負の値になるときはゼロとする）。R、G、Bの値は、相対輝度 の定義で定められているように 0～1 の範囲である。<bibref ref="HARDING-BINNIE"/></p>
               <p>ビデオの画面キャプチャから分析を行うツールを利用できる。しかし、閃光があらゆる1秒間の間隔において3回以下であれば、ツールでこの条件を満たしているかどうかを確認する必要はない。コンテンツは自動的に条件を満たしたことになるからである（上記 1. 及び 2. を参照）。</p>
@@ -1586,7 +1585,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>利用者が入力した情報で、受け付けられないもの。</p>
             <note>
-              <p>以下のものが含まれる：</p>
+              <p>以下のものが含まれる:</p>
               <olist>
                 <item>
                   <p>その<termref def="webpagedef">ウェブページ</termref>では必須であるが、利用者が入力しなかった情報</p>
@@ -1857,7 +1856,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>最も暗い黒を0に、最も明るい白を1に正規化した色空間内の任意の点の相対的な明るさ。</p>
             <note>
-              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される：</p>
+              <p>sRGB色空間においては、色の相対輝度は、L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されており、<emph role="bold">R</emph>、<emph role="bold">G</emph> 及び <emph role="bold">B</emph> は以下のように定義される:</p>
               <ulist>
                 <item>
                   <p>R<sub>sRGB</sub> &lt;＝ 0.03928 の場合<emph role="bold">R</emph> ＝ R<sub>sRGB</sub>/12.92 、そうでない場合 <emph role="bold">R</emph> ＝ ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p>
@@ -1870,7 +1869,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 </item>
               </ulist>
               <note role="nonumber">
-                <p>そして、R<sub>sRGB</sub>、G<sub>sRGB</sub>、及び B<sub>sRGB</sub> は、次のように定義される：</p>
+                <p>そして、R<sub>sRGB</sub>、G<sub>sRGB</sub>、及び B<sub>sRGB</sub> は、次のように定義される:</p>
               </note>
               <ulist>
                 <item>
