@@ -1227,7 +1227,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           </def>
         </gitem>
         <gitem id="atdef">
-          <label> (この文書で用いられている) 支援技術 (assistive technology)</label>
+          <label> (この文書で用いられている) 支援技術 (assistive technology (as used in this document))</label>
           <def>
             <p><termref def="useragentdef">ユーザエージェント</termref>として機能する、又は主流のユーザエージェントと一緒に機能するハードウェア及び/あるいはソフトウェアで、主流のユーザエージェントで提供されている機能以上の機能を、障害のある利用者の要求を満たすために提供するもの。
             </p>
