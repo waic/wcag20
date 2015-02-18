@@ -983,14 +983,14 @@
       <xsl:apply-templates/>
       <xsl:text> </xsl:text>
       <xsl:if test="$guide='1'">
-(レベル<xsl:choose>
+(レベル <xsl:choose>
           <xsl:when test="ancestor::div4[@role='req']">A</xsl:when>
           <xsl:when test="ancestor::div4[@role='bp']">AA</xsl:when>
           <xsl:when test="ancestor::div4[@role='additional']">AAA</xsl:when>
         </xsl:choose>)      
       </xsl:if>
       <xsl:if test="$guide='0'">
-					(レベル<xsl:choose>
+					(レベル <xsl:choose>
           <xsl:when test="ancestor::div4[@role='req']">A</xsl:when>
           <xsl:when test="ancestor::div4[@role='bp']">AA</xsl:when>
           <xsl:when test="ancestor::div4[@role='additional']">AAA</xsl:when>
@@ -1243,7 +1243,7 @@
             </xsl:choose>]
 				</xsl:if>
           <xsl:if test="$guide='0'">
-					(レベル<xsl:choose>
+					(レベル <xsl:choose>
               <xsl:when test="ancestor::div4[@role='req']">1</xsl:when>
               <xsl:when test="ancestor::div4[@role='bp']">2</xsl:when>
               <xsl:when test="ancestor::div4[@role='additional']">3</xsl:when>
