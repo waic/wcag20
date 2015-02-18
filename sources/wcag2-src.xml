@@ -4,7 +4,7 @@
   <header>
       <title>Web Content Accessibility Guidelines (WCAG)</title>
     <trdisclaimer>
-<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」 (原文は英語) </loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ基盤委員会 (WAIC)」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
+<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」 (原文は英語)</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ基盤委員会 (WAIC)」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまでW3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
     </trdisclaimer>
     <version>2.0</version>
     <w3c-designation>WCAG20</w3c-designation>
@@ -84,25 +84,19 @@ W3C 勧告</loc> である。
 online comment form</loc> を使って送っていただきたい。もしそれができない場合は、
 <loc href="mailto:public-comments-wcag20@w3.org"> 
 public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することも可能である。
-  			<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list
-</loc>は誰でも利用可能である。WCAG 2.0 の勧告に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、 errata あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキング グループが正式な返答をする予定はない。<loc
-  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions
-</loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキング グループが将来的に対処することがあるかもしれない。</p>
+  			<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list</loc>は誰でも利用可能である。WCAG 2.0 の勧告に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、 errata あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキング グループが正式な返答をする予定はない。<loc
+  					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions</loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキング グループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
   			href="http://www.w3.org/WAI/" hreflang="en">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。
 WCAG Working Groupの目的については、 <loc
-  				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group Charter
-</loc>に記載されている。WCAG Working Groupは、<loc
-  					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity
- </loc>の一つである。</p>
+  				href="http://www.w3.org/2004/04/wcag-charter" hreflang="en">Web Content Accessibility Guidelines Working Group Charter</loc>に記載されている。WCAG Working Groupは、<loc
+  					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity</loc>の一つである。</p>
   		<p>この文書は、<loc
-  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
-</loc>に則って運営するワーキング グループによって作成された。W3C では、ワーキング グループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+  			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy</loc>に則って運営するワーキング グループによって作成された。W3C では、ワーキング グループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
-  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential" hreflang="en">Essential Claim(s)
-</loc>を含んでいると思われる特許について知識のある人は、<loc
+  				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential" hreflang="en">Essential Claim(s)</loc>を含んでいると思われる特許について知識のある人は、<loc
   					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure" hreflang="en">
 section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しなければならない。</p>
   	</status>
