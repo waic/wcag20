@@ -663,9 +663,9 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p role="i"><termref def="webpagedef">ウェブページ</termref>が<termref def="nav-seqdef">順を追ってナビゲート</termref>できて、そのナビゲーション順が意味又は操作に影響を及ぼす場合、フォーカス可能なコンポーネントは、意味及び操作性を損なわない順序でフォーカスを受け取る。</p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-refs">
-              <head>リンクの目的 (文脈内) </head>
+              <head>リンクの目的 (コンテキスト内) </head>
               <p role="i">
-それぞれの<termref def="linkpurposedef">リンクの目的</termref>が、リンクのテキスト単独で、又はリンクのテキストと<termref def="pdlinkcontextdef">プログラムによる解釈が可能なリンクの文脈</termref>から判断できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">ほとんどの利用者にとって曖昧</termref>な場合は除く。</p>
+それぞれの<termref def="linkpurposedef">リンクの目的</termref>が、リンクのテキスト単独で、又はリンクのテキストと<termref def="pdlinkcontextdef">プログラムによる解釈が可能なリンクのコンテキスト</termref>から判断できる。ただし、リンクの目的が<termref def="ambiguouslinkdef">ほとんどの利用者にとって曖昧</termref>な場合は除く。</p>
             </div5>
           </div4>
           <div4 role="bp">
