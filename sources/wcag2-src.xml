@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE spec SYSTEM "xmlspec.dtd">
+<!	DOCTYPE spec SYSTEM "xmlspec.dtd">
 <spec status="final" w3c-doctype="rec">
   <header>
       <title>Web Content Accessibility Guidelines (WCAG)</title>
@@ -80,14 +80,14 @@ W3C 勧告</loc> である。
 <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">
   				Understanding WCAG 2.0</loc> 及び <loc href="http://www.w3.org/TR/WCAG20-TECHS/" hreflang="en">Techniques for WCAG 2.0</loc> がある。それらの文書には、WCAG 2.0 自体が有する正式なステータスはないものの、WCAG の理解及び実装に関する重要な情報を提供している。
 </p>
-  		<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/" hreflang="en"> 
+  		<p>ワーキング グループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/" hreflang="en"> 
 online comment form</loc> を使って送っていただきたい。もしそれができない場合は、
 <loc href="mailto:public-comments-wcag20@w3.org"> 
 public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することも可能である。
   			<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/" hreflang="en">archives for the public comments list
-</loc>は誰でも利用可能である。WCAG 2.0 の勧告に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、 errata あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc
+</loc>は誰でも利用可能である。WCAG 2.0 の勧告に関して寄せられたコメントにより、このバージョンのガイドラインを変更することはできないが、 errata あるいは WCAG の将来のバージョンに反映されることはある。又、コメントに対して、ワーキング グループが正式な返答をする予定はない。<loc
   					href="http://lists.w3.org/Archives/Public/w3c-wai-gl/" hreflang="en">WCAG WG mailing list discussions
-</loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
+</loc>は一般に公開されており、この文書に関して寄せられたコメントについては、ワーキング グループが将来的に対処することがあるかもしれない。</p>
   		<p>この文書は、W3Cの <loc
   			href="http://www.w3.org/WAI/" hreflang="en">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。
 WCAG Working Groupの目的については、 <loc
@@ -97,7 +97,7 @@ WCAG Working Groupの目的については、 <loc
  </loc>の一つである。</p>
   		<p>この文書は、<loc
   			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy
-</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
+</loc>に則って運営するワーキング グループによって作成された。W3C では、ワーキング グループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
 
 
 <loc
@@ -164,7 +164,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
           </item>
           <item>
             <p>
-              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される: 達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
+              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキング グループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される: 達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
           </item>
         </ulist>
         <p>このガイダンスのレイヤー (原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法) はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
@@ -2167,7 +2167,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
       <head>謝辞</head>
       <p>この節は、<termref def="informativedef">参考情報</termref>である。</p>
         <p>この文書の発行にあたっては、契約番号 ED05CO0039 の下、米国教育省、米国障害者リハビリテーション研究所 (NIDRR) からのフェデラル ファンドによる部分的な資金援助を受けている。この文書の内容は、必ずしも米国教育省の見解又は政策を反映したものではない。又、この文書中での商標、商品、あるいは組織の言及は、米国政府による公認を意味するものでもない。</p>
-      <p>Web Contents Accessibility Guidelines Working Group (WCAG WG) への参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">ワーキンググループのホームページ</loc>を参照。
+      <p>Web Contents Accessibility Guidelines Working Group (WCAG WG) への参加に関する詳細な情報は、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">ワーキング グループのホームページ</loc>を参照。
       </p>
       <div2>
         <head>発行時点でアクティブだった WCAG WG 参加者</head>
