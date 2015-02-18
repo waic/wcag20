@@ -1880,7 +1880,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </note>
               <p>ウェブコンテンツを閲覧するのに今日用いられているほとんどすべてのシステムは、sRGB符号化を前提としている。コンテンツを処理して表示するのに他の色空間が用いられているのでなければ、コンテンツ制作者は sRGB 色空間を用いて計算するべきである。もしその他の色空間を用いるのであれば、<loc href="visual-audio-contrast-contrast" linktype="understanding" hreflang="en">Understanding Success Criterion 1.4.3</loc>を参照。</p>
                 <!-- BBC: the following note was moved down from the definition of contrast ratio and editorially revised. Relates somewhat to 2548. -->
-              <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである (Rの平均値、Gの平均値、及び B の平均値)。</p>
+              <p>表示時にディザリングが発生する場合は、元の色の値が用いられる。元々ディザリングがかけられている色については、用いられている色の平均値を用いるべきである (R の平均値、G の平均値、及び B の平均値)。</p>
               <p>コントラストと閃光を検証する際に、この計算を自動で行うツールが利用できる。</p>
               <!--BBC: Remember to update the MathML version should this be revised -->
               <p>
