@@ -4,7 +4,7 @@
   <header>
       <title>Web Content Accessibility Guidelines (WCAG)</title>
     <trdisclaimer>
-<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」 (原文は英語)</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ基盤委員会 (WAIC)」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3C のサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。又、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。 </p>
+<p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" hreflang="en">2008年12月11日付の W3C 勧告「WCAG 2.0」 (原文は英語)</loc>を、情報通信アクセス協議会の「ウェブアクセシビリティ基盤委員会 (WAIC)」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3C のサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。</p>
     </trdisclaimer>
     <version>2.0</version>
     <w3c-designation>WCAG20</w3c-designation>
