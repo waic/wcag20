@@ -69,8 +69,6 @@
     </abstract>
   	<status>
   		<p><emph>この節では、この文書の発行された時点でのステータスを説明する。この文書が、他の文書によって置き換えられている場合もある。現行の W3C の発行文書及びこのテクニカルレポートの改訂版は、
-
-
 <loc href="http://www.w3.org/TR/" hreflang="en">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/" hreflang="en">W3C technical reports index</loc>で参照可能である。</emph></p>
   		<p>これは、<loc href="http://www.w3.org/WAI/GL/" hreflang="en">Web Content Accessibility Guidelines Working Group</loc> が作成した Web Content Accessibility Guidelines (WCAG) 2.0 <loc href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C" hreflang="en">
 W3C 勧告</loc> である。
@@ -93,8 +91,6 @@ WCAG Working Groupの目的については、 <loc
   					href="http://www.w3.org/WAI/Technical/Activity" hreflang="en">WAI Technical Activity</loc>の一つである。</p>
   		<p>この文書は、<loc
   			href="http://www.w3.org/Consortium/Patent-Policy-20040205/" hreflang="en">5 February 2004 W3C Patent Policy</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status" hreflang="en">public list of any patent disclosures</loc>を管理しており、そのページには、特許を開示するにあたっての指示も記載されている。
-
-
 <loc
   				href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential" hreflang="en">Essential Claim(s)</loc>を含んでいると思われる特許について知識のある人は、<loc
   					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure" hreflang="en">
@@ -358,7 +354,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <head>感覚的な特徴</head>
               <p role="v">
  コンテンツを理解し操作するための説明は、形、大きさ、視覚的な位置、方向、又は音のような、構成要素が持つ感覚的な特徴だけに依存していない。
-
               </p>
               <note>
                 <p>色に関する要件は、<specref ref="visual-audio-contrast"/>を参照。</p>
@@ -555,7 +550,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
                 <item>
                   <p>
                     <emph role="sc-handle">解除:</emph> 制限時間があるコンテンツを利用する前に、利用者がその制限時間を解除することができる。又は、
-
                   </p>
                 </item>
                 <item>
@@ -673,9 +667,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="navigation-mechanisms-mult-loc">
               <head>複数の手段</head>
               <p role="v"> <termref def="set-of-web-pagesdef">ウェブページ一式</termref>の中で、ある<termref def="webpagedef">ウェブページ</termref>を見つける複数の手段が利用できる。ただし、ウェブページが<termref def="processdef">一連のプロセス</termref>の中の1ステップ又は結果である場合は除く。
-
-
-
               </p>
             </div5>
             <div5 role="sc" id="navigation-mechanisms-descriptive">
@@ -724,10 +715,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="meaning-doc-lang-id">
               <head>ページの言語</head>
               <p role="i"> それぞれの<termref def="webpagedef">ウェブページ</termref>のデフォルトの<termref def="human-langdef">自然言語</termref>がどの言語であるか、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能である。
-
-
-
-
               </p>
             </div5>
           </div4>
@@ -736,8 +723,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="meaning-other-lang-id">
               <head>一部分の言語</head>
               <p role="i"> コンテンツの一節、又は語句それぞれの<termref def="human-langdef">自然言語</termref>がどの言語であるか、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能である。ただし、固有名詞、技術用語、言語が不明な語句、及びすぐ前後にあるテキストの言語の一部になっている単語又は語句は除く。
-
-
 </p>
             </div5>
           </div4>
@@ -755,8 +740,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="meaning-supplements">
               <head>読解レベル</head>
               <p role="v"> 固有名詞や題名を取り除いた状態で、テキストが<termref def="lowseceddef">前期中等教育レベル</termref>を超えた読解力を必要とする場合は、<termref def="suppcontentdef">補足コンテンツ</termref>又は前期中等教育レベルを超えた読解力を必要としない版が利用できる。
-
-
 </p>
             </div5>
             <div5 role="sc" id="meaning-pronunciation">
@@ -783,7 +766,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               <p role="v"> 
                   <termref def="user-interface-componentdef">ユーザインタフェース コンポーネント</termref>
 の設定を変更することが、<termref def="context-changedef">コンテキストの変化</termref>を自動的に引き起こさない。ただし、利用者が使用する前にその挙動を知らせてある場合を除く。
-
 </p>
             </div5>
           </div4>
@@ -817,7 +799,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <div5 role="sc" id="minimize-error-identified">
               <head>エラーの特定</head>
               <p role="v"><termref def="input-errordef">入力エラー</termref>が自動的に検出された場合は、エラーとなっている箇所が特定され、そのエラーが利用者にテキストで説明される。
-
               </p>
             </div5>
             <div5 role="sc" id="minimize-error-cues">
@@ -957,7 +938,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <div3 role="front" id="cc4">
             <head role="cc">技術のアクセシビリティ サポーテッドな使用方法だけ</head>
           <p role="cc">達成基準を満たすために、用いる<termref def="technologydef">技術</termref>の<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>な使用方法だけに<termref def="reliedupondef">依存</termref>している。アクセシビリティ サポーテッドではない方法で提供されている情報又は機能は、アクセシビリティ サポーテッドな方法でも利用できる (<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding" hreflang="en">Understanding accessibility support</loc> を参照)。
-
           </p>
         </div3>
         <div3 role="front" id="cc5">
@@ -1043,7 +1023,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </item>
             <item>
               <p>コンテンツを試験するのに用いた、支援技術を含むユーザエージェントのリスト。
-
               </p>
             </item>
             <item>
@@ -1415,7 +1394,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <def>
             <p>
 <termref def="useragentdef">ユーザエージェント</termref>によって利用者に伝達される情報及び感覚的な体験。コンテンツの
-
               <termref def="structuredef">構造</termref>、<termref def="presentationdef">提示</termref>、及びインタラクションを定義するコードやマークアップを含む。
             </p>
           </def>
@@ -1504,7 +1482,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
               <item>
                 <p>一般的な閲覧距離で、同時に生じている閃光が占める領域の合計が、画面上のどの視野10度においても、合計0.006ステラジアン (画面上の視野10度の25％) よりも多くを占めていない。
-
                 </p>
               </item>
             </olist>
@@ -1549,7 +1526,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <example>
               <p>英語では、"<phrase xml:lang="en">spilling the beans</phrase>" (豆をこぼす) は「秘密を漏らす」という意味である。しかし、"<phrase xml:lang="en">knocking over the beans</phrase>" (豆をひっくり返す) や"<phrase xml:lang="en">spilling the vegetables</phrase>" (野菜をこぼす) は同じ意味にはならない。</p>
               <p> 日本語では、「さじを投げる」という言い回しは、逐語訳では "<phrase xml:lang="en">he throws a spoon</phrase>"となるが、「どうすることもできずに諦める」という意味である。
-
               </p>
               <p>オランダ語では、"<phrase xml:lang="ne">Hij ging met de kippen op stok</phrase>"は、逐語訳すれば「彼はニワトリとねぐらについた」となるが、「彼は早く寝た」という意味である。
 </p>
@@ -1942,7 +1918,6 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>ウェブページ一式 (set of Web pages)</label>
           <def>
             <p>共通の目的を共有し、同じコンテンツ制作者、グループ、又は組織により制作された<termref def="webpagedef">ウェブページ</termref>の集合。
-
             </p>
             <note>
               <p>他言語版は、異なるウェブページ一式と見なされることもある。</p>
