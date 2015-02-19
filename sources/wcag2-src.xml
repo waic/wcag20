@@ -146,7 +146,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブアクセシビリティの土台となる4つの原則がある: <emph>知覚可能、操作可能、理解可能、及び堅牢性。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブアクセシビリティの土台となる4つの原則がある: <emph>知覚可能、操作可能、理解可能、及び堅牢 (robust)。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
           </item>
           <item>
             <p>
@@ -881,7 +881,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         </div3>
       </div2>
       <div2 role="principle" id="robust">
-        <head>原則 4: 堅牢性 - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢でなければならない。</head>
+        <head>原則 4: 堅牢 (robust) - コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢 (robust) でなければならない。</head>
         <div3 role="group1" id="ensure-compat">
           <head>現在及び将来の、支援技術を含むユーザエージェントとの互換性を最大化すること。</head>
           <div4 role="req">
