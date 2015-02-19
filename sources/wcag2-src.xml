@@ -59,7 +59,7 @@
       <errataloc href="http://www.w3.org/WAI/WCAG20/errata/"/>
       <translationloc href="http://www.w3.org/2003/03/Translations/byTechnology?technology=WCAG20"/>
     <abstract>
-    	<p>Web Content Accessibility Guidelines (WCAG) 2.0は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。
+    	<p>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。
 このガイドラインに従うことで、全盲又はロービジョン、ろう又は難聴、学習障害、認知障害、運動制限、発話困難、光過敏性発作及びこれらの組合せ等を含んだ、様々な障害のある人に対して、コンテンツをアクセシブルにすることができる。又、このガイドラインに従うと、多くの場合、ほとんどの利用者にとってウェブコンテンツがより使いやすくなる。
       </p>
         <p>WCAG 2.0 の達成基準は、技術に依存しない検証可能なものとして記述されている。特定の技術において達成基準を満たすためのガイドについては、達成基準を理解するための一般的な情報とあわせて、別の文書群として提供している。イントロダクション及び WCAG の達成方法や教育に関する資料については、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。
@@ -169,7 +169,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <head>
 WCAG 2.0 関連文書
         </head>
-        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.0文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある:
+        <p>WCAG 2.0 の文書は、安定した参照可能な技術標準を必要とする人たちのニーズを満たすように作成されている。関連文書と呼ばれるその他の文書は、WCAG 2.0 文書に基づいて、WCAG が新しい技術にどのように適用されるかを説明するために更新できるようにすることを含め、その他の重要な役割を果たすものである。関連文書には以下に挙げるものがある:
         </p>
         <olist>
           <item>
@@ -182,7 +182,7 @@ WCAG 2.0 関連文書
             <p>
               <emph role="bold">
                 <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/" hreflang="en">Understanding WCAG 2.0</loc>
-              </emph> - WCAG 2.0を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.0の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
+              </emph> - WCAG 2.0 を理解して実践するための解説書。重要なトピックスとあわせて、WCAG 2.0 の各ガイドライン及び達成基準を「理解する」ための簡潔な文書がある。</p>
           </item>
           <item>
             <p>
@@ -194,7 +194,7 @@ WCAG 2.0 関連文書
                 <p><emph role="bold"><loc href="http://www.w3.org/WAI/intro/wcag20" hreflang="en">The WCAG 2.0 Documents</loc></emph> - 技術文書群がどのように関係していてリンクされているのかを示した図と解説。</p>
             </item>
         </olist>
-          <p>WCAG 2.0に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブアクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実施計画作成、及びアクセシビリティ方針といったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
+          <p>WCAG 2.0 に関する教育資料を含む関連資料の説明は、<loc href="http://www.w3.org/WAI/intro/wcag.php" hreflang="en">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照。<phrase>例えば、ウェブアクセシビリティのビジネスにおける効果、ウェブサイトのアクセシビリティを改善するための実施計画作成、及びアクセシビリティ方針といったトピックに関する補足資料は、<loc href="http://www.w3.org/WAI/Resources/Overview" hreflang="en">WAI Resources</loc>に挙げられている。</phrase></p>
       </div2>
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
@@ -218,7 +218,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <gitem>
             <label>アクセシビリティ サポーテッド</label>
             <def>
-                <p>技術をアクセシビリティ サポーテッドな方法で用いるとは、支援技術及びオペレーティングシステム、ブラウザ、その他のユーザエージェントのアクセシビリティ機能とともにその技術を用いるということを意味する。WCAG 2.0の達成基準を満たすために、ある技術の機能に<termref def="reliedupondef">依存</termref>
+                <p>技術をアクセシビリティ サポーテッドな方法で用いるとは、支援技術及びオペレーティングシステム、ブラウザ、その他のユーザエージェントのアクセシビリティ機能とともにその技術を用いるということを意味する。WCAG 2.0 の達成基準を満たすために、ある技術の機能に<termref def="reliedupondef">依存</termref>
 することができるのは、その技術の機能が「<termref def="accessibility-supporteddef">アクセシビリティ サポーテッド</termref>」な方法で用いられている場合だけである。ある技術の機能をアクセシビリティ サポーテッドではない (支援技術では使えないなどの) 方法で用いることができるのは、なんらかの達成基準を満たすためにその技術の機能に依存していない (つまり同じ情報又は機能がアクセシビリティ サポーテッドな他の方法でも利用できる) 場合だけである。
 </p>
               <p>
@@ -1433,16 +1433,16 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p>(L1 + 0.05) / (L2 + 0.05)    ここでは、</p>
             <ulist>
               <item>
-                <p>L1は、明るいほうの色の
+                <p>L1 は、明るいほうの色の
                     <termref def="relativeluminancedef">相対輝度</termref>である。そして、</p>
               </item>
               <item>
-                <p>L2は、暗いほうの色の
+                <p>L2 は、暗いほうの色の
                     <termref def="relativeluminancedef">相対輝度</termref>である。</p>
               </item>
             </ulist>
             <note>
-              <p>コントラスト比は、1～21の範囲になりうる (通常は、1:1～21:1と記述される)。</p>
+              <p>コントラスト比は、1～21の範囲になりうる (通常は、1:1～21:1 と記述される)。</p>
               <p>コンテンツ制作者は、テキストのレンダリング (例: フォントのスムージングやアンチエイリアス) に関する利用者の設定を制御できないため、アンチエイリアスをオフにした状態でテキストのコントラスト比を評価してもよい。</p>
               <p>達成基準 1.4.3 及び 1.4.6 の目的上、コントラストは通常の使用においてテキストがレンダリングされるときに指定されている背景色に対して測定する。もし背景色の指定がない場合は、背景色には白を想定する。</p>
               <p>背景色は、テキストが通常の使用においてレンダリングされるときに背景となるコンテンツの色として指定された色である。テキストの色は指定されているが背景色が指定されていない場合、利用者のデフォルトの背景色は未知であり、コントラストが十分かどうかを評価することができないため、問題がある。同じ理由で、背景色が指定されているがテキストの色が指定されていない場合も問題がある。</p>
