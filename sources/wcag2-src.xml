@@ -1592,7 +1592,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <label>ラベル (label)</label>
           <def>
             <p>
-ウェブ<termref def="contentdef">コンテンツ</termref>内のコンポーネントを識別するために、利用者に提示されている<termref def="textdef">テキスト</termref>、又は<termref def="text-altdef">テキストによる代替</termref>を伴う、それとは別のコンポーネント。
+<termref def="textdef">テキスト</termref>、又は<termref def="text-altdef">テキストによる代替</termref>を伴うコンポーネントで、ウェブ<termref def="contentdef">コンテンツ</termref>内のコンポーネントを識別するために利用者に提示されているもの。
             </p>
             <note>
               <p>
