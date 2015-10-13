@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G191">
+   <short-name>点滅するコンテンツのないページを読み込むリンク、ボタン、又はその他のメカニズムを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、ウェブページに点滅するコンテンツがあると閲覧できない利用者が点滅をオフにできるようにすることである。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#cc1" linktype="guideline">適合要件 1</loc>では、代替ページを使用することによって適合要件を満たすことが認められている。この実装方法は、達成基準2.2.2に対してこのアプローチを取った例である。</p>
+    <p>点滅するコンテンツのないページが、点滅するコンテンツのあるページと全く同じ情報を提供していることが重要である。</p>
+    <note><p class="prefix"> ウェブページから点滅するコンテンツを取り除くことは、そのコンテンツが点滅しないコンテンツと重複している場合にのみ有効である。</p>
+		<p class="prefix">この実装方法は、表示スタイルを変更して非適合コンテンツに対する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>となるページを提供する実装方法と併せて用いることができる。詳しくは、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29.html" linktype="css">C29：Using a style switcher to provide a conforming alternate version</loc>(CSS)」及び「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" linktype="understanding">適合している代替バージョンを理解する</loc>」を参照のこと。</p>
+</note>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G4"/>
+      <relatedtech idref="G11"/>
+      <relatedtech idref="G152"/>
+      <relatedtech idref="G186"/>
+      <relatedtech idref="G187"/>
+      <relatedtech idref="SCR22"/>
+      <relatedtech idref="SCR33"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>点滅のないウェブページを読み込むメカニズムがある。</p>
+        </item>
+        <item>
+          <p>再読み込みしたウェブページには点滅がない。</p>
+        </item>
+        <item>
+          <p>再読み込みしたウェブページでは、元のページにある情報及び機能が全て提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記、全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

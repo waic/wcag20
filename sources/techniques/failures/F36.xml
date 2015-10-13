@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F36">
+   <short-name>達成基準 3.2.2 の不適合事例 － フォームの最後のコントロールに入力すると、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-unpredictable-change" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>利用者がすべてのフィールドに入力し終わるか、最後のフィールドからフォーカスが外れると、自動的に送信されるように設計されたフォームが多くある。この方法には二つの問題がある。まず、障害のある利用者で前後関係の情報を必要としている人が、フォームの記入方法や、他のテキストに移動するためにフィールドからフォーカスをはずしてしまい、意図せずに送信してしまう場合がある。もう一つは、いくつかのフォームの要素において、それぞれの項目の値がキーボードで移動している間に変化してしまい、誤って送信してしまうことである。送信ボタン及びEnterキーによる標準的なフォームのふるまいに依存している方がよい。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>この不適合事例では、利用者が3つのフィールドで構成される電話番号のフォームの最後のフィールドから離れたときにフォームを送信する。フォームは、利用者が編集を終えてフィールドから離れたときに、たとえタブ順序で前に戻ったとしても送信される。開発者はフォームを送信するためにこの実装方法を使用すべきではなく、送信ボタンやフォームのデフォルトのふるまいである、利用者がテキストフィールドでEnterキーを押したときに送信されるようにすべきである。</p>
+</description>
+      <code><![CDATA[ 
+<form method="get" id="form1">
+  <input type="text" name="text1" size="3" maxlength="3"> - 
+  <input type="text" name="text2" size="3" maxlength="3"> - 
+  <input type="text" name="text3" size="4" maxlength="4" onchange="form1.submit();">
+</form>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>この不適合事例は、利用者がメニューから項目を選択すると、事前の警告なくフォームを送信する。メニューから項目が選択されると、直ちにフォームが送信される。キーボード利用者は、最初のメニュー項目を超えて移動することができない。全盲の利用者や手の震えがある利用者は、ドロップダウンメニューから項目を選ぶときに間違いを起こしやすく、修正する前に間違った行き先に連れて行かれてしまう。</p>
+</description>
+      <code><![CDATA[ 
+<form method="get" id="form2">
+ <input type="text" name="text1">
+  <select name="select1" onchange="form2.submit();">
+    <option>one</option>
+    <option>two</option>
+    <option>three</option>
+    <option>four</option>
+  </select>
+</form>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ページ上のすべてのフィールドに、上から順にデータを入力する。</p>
+        </item>
+        <item>
+          <p>最後のフィールドにデータを入力して抜け出す（タブで抜ける）。</p>
+        </item>
+        <item>
+          <p>最後のフィールドから離れることで、状況の変化が起こるかを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>もしステップ3を満たしている場合、この不適合条件が適用され、コンテンツは達成基準に不適合となる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H51">
+   <short-name>テーブルのマークアップを用いて、表の情報を提示する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、利用者がテーブルを見ることができない場合、又は表現形式が変更された場合でも、含まれる情報の関係を保てる方法で、表の情報を提示することである。情報を表として提示すべきと考えられるのは、テキスト、数値、画像、あるいは他のデータの論理関係が（垂直・水平に）二次元で存在するときである。論理関係は列と行で示され、列と行は論理関係が認識できる状態でなければならない。</p>
+    <p><el>table</el>要素は、子要素<el>tr</el>、<el>th</el>、<el>td</el>といっしょに用いることで、論理関係を認識可能にする。一方、列を整形するのにタブを入れたり、<el>pre</el>要素を利用するのは、純粋に見た目だけを考えた方法である。利用者がテーブルを見ることができない場合、又は表現形式が変更された場合は、視覚的に暗に示された論理関係は失われてしまう。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>列見出しと行見出しが付いた簡単なデータテーブルとしてマークアップしたスケジュール表</head>
+      <description><p>この事例では、簡単なデータテーブルに<el>table</el>要素を利用している。1行目は曜日、1列目は時間である。これらのセルは<el>th</el>要素でマークアップしてあり、列見出しが曜日、行見出しが時間という役割になっている。</p>
+<p>スクリーンリーダーは、利用者がテーブルを読み進めるとき、対応する見出し情報の変化を読み上げる。それゆえ、スクリーンリーダーの利用者が同じ行を左右に動くときは、（もしあれば）予定に対応する曜日（列見出し）の読み上げを、同じ列を上下に移動するときは、対応する時間の読み上げを聞くであろう。</p>
+</description>
+      <code role="html401"><![CDATA[<table>
+  <tr>
+    <td> </td>
+    <th>月</th>
+    <th>火</th>
+    <th>水</th>
+    <th>木</th>
+    <th>金</th>
+  </tr>
+  <tr>
+    <th>8:00から9:00</th>
+    <td>サムと会う</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <th>9:00から10:00</th>
+    <td> </td>
+    <td> </td>
+    <td>ウィリアムズ先生</td>
+    <td>サムとまた会う</td>
+    <td>サン・アントニオから出発</td>
+  </tr>
+</table> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/tables.html#h-11.2.1">Table Element</loc>
+								       </p>
+            </item>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/tables.html#h-11.2.5">Table rows: The TR element</loc>
+								       </p>
+            </item>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/tables.html#h-11.2.6">Table cells: The TH and TD elements</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H39"/>
+      <relatedtech idref="H43"/>
+      <relatedtech idref="H63"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>表形式の情報がある。</p>
+        </item>
+        <item><p>表形式の情報それぞれについて：</p>
+								
+          <olist><item><p>テーブルを、少なくとも<el>table</el>、<el>tr</el>、<el>th</el>、<el>td</el>要素を使ってマークアップしている。</p></item></olist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

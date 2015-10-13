@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H53"><!--MC to update wiki and review output-->
+   <short-name><el>object</el>要素のボディに代替テキストを記述する</short-name>
+   <applicability>
+      <p>メディアを読み込む<el>object</el>要素（HTML及びXHTML）</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-text-doc" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue>
+      <p>この実装方法は、支援技術が十分にサポートしておらず、ブラウザによるサポートも一定していない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この実装方法の目的は、<el>object</el>要素によってレンダリングされるコンテンツに対して、代替テキストを提供することである。<el>object</el>要素のボディは、そのオブジェクトに関する完全な代替テキストを提供するのに用いられるか、または追加的な非テキストコンテンツを代替テキストとともに含むことがある。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>長めの説明を含んだオブジェクト</head>
+      <code><![CDATA[<object classid="http://www.example.com/analogclock.py">
+  <p>オブジェクトとその操作方法に関するテキストをここに書く。</p>
+</object>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>代替テキストのある非テキストコンテンツを含んだオブジェクト</head>
+      <code><![CDATA[<object classid="http://www.example.com/animatedlogo.py">
+  <img src="staticlogo.gif" alt="会社名" />
+</object>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>事例3：機能の簡単な説明を含んだ画像オブジェクト</head>
+      <code><![CDATA[<object data="companylogo.gif" type="image/gif">
+  <p>会社名</p>
+</object>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT">HTML 4.01
+                    OBJECT element</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/article/object-paranoia.php">Object
+                  Paranoia</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="H46"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p><el>object</el>要素のボディに、そのオブジェクトの代替テキストがある</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.満たしている</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

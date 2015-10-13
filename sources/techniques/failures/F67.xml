@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F67">
+   <short-name>達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+      <success-criterion idref="media-equiv-av-only-alt" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、非テキストコンテンツに対する長い説明が非テキストコンテンツと同じ目的を果たしていない、又は非テキストコンテンツと同じ情報を提供していないことによる不適合事例について述べている。このことは非テキストコンテンツを読み取ることができない利用者にとって問題となる。なぜならば、これらの利用者は、非テキストコンテンツが伝達する必要な情報を長い説明から得ているためである。完全な情報を提供する長い説明がないと、ウェブページを理解したり、操作したりすることができない。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G73"/>
+      <relatedtech idref="G74"/>
+      <relatedtech idref="F13"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>長い説明が必要な全ての非テキストコンテンツに対して：</p>
+      <olist>
+        <item>
+          <p>長い説明が非テキストコンテンツと同じ目的を果たす、又は同じ情報を提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たさない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

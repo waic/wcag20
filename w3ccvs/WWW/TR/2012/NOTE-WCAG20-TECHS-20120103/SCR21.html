@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>SCR21: DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/SCR21.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる" href="SCR20.html"><strong>前: </strong>
+        Technique SCR20</a></li><li><a title="SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる" href="SCR22.html"><strong>次: </strong>
+        Technique SCR22</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#SCR21-disclaimer">Important Information about Techniques</a></li><li><a href="#SCR21-applicability">適用（対象）</a></li><li><a href="#SCR21-description">解説</a></li><li><a href="#SCR21-examples">事例</a></li><li><a href="#SCR21-resources">参考リソース</a></li><li><a href="#SCR21-related-techs">関連する実装方法</a></li><li><a href="#SCR21-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SCR21" id="SCR21"> </a>SCR21: DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する</h1><div id="SCR21-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="SCR21-applicability">適用（対象）</h2><div class="textbody"><p>HTML及びXHTMLの中で利用されるECMAScript</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
+				達成基準 1.3.1 (Info and Relationships)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (Info and Relationships)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (Info and Relationships)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
+				達成基準 4.1.2 (Name, Role, Value)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
+						How to Meet 4.1.2 (Name, Role, Value)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/ensure-compat-rsv.html">
+						達成基準 4.1.2 (Name, Role, Value)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua4.8.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR21">User Agent Support Notes for SCR21</a>.</p></div><h2 id="SCR21-description">解説</h2><div class="textbody"><p>この実装方法の目的は、<code>document.write</code>又は<code>object.innerHTML</code>の代わりにDocument Object Model (DOM)の機能を用いて、ページ中にコンテンツを追加することである。<code>document.write()</code>メソッドはXHTMLで正しいMIMEタイプ(application/xhtml+xml)が指定されているときに動作せず、<code>innerHTML</code>プロパティはDOMの仕様ではないため利用すべきでない。もしDOMの機能を利用してコンテンツを追加すれば、ユーザーエージェントはDOMにアクセスしてコンテンツを取り込むことができる。<code>createElement()</code>関数を使ってDOMの中に要素を作成することもできる。<code>createTextNode()</code>は要素に関連付けられたテキストを作成するのに用いられる。<code>appendChild()</code>、<code>removeChild()</code>、<code>insertBefore()</code>及び<code>replaceChild()</code>関数は、要素やノードを追加したり削除したりするのに用いられる。その他のDOM関数は、作成された要素に属性を与えるときに使用される。</p><div class="note"><p class="prefix"><em>注記: </em>フォーカス可能な要素を文書に追加するとき、<code>tabindex</code>属性を用いて明示的なタブ順序を指定してはならない。なぜなら、文書の中央にフォーカス可能な要素を追加するときに問題が発生するからである。<code>tabindex</code>属性を明示的に設定しないことで、デフォルトのタブ順序が新しい要素に割り当てられるようにする。</p></div></div><h2 class="small-head" id="SCR21-examples">事例</h2><h3 class="small-head" id="SCR21-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例では、クライアントサイドスクリプトの使用法として、フォームの検証方法を紹介している。もしエラーがみつかれば、適切なエラーメッセージが表示される。この例ではDOM関数を使用し、タイトル、エラーに関する短い説明、及びエラー一覧の順序付リストを含むエラー通知を追加している。タイトルの内容はリンクとして書かれているので、focusメソッドを使って利用者の注意をエラーに向けることができる。個別のリスト項目もまた、リンクとして書かれているので、そのリンク先に移動したときにエラーのあるフォームのフィールドにフォーカスできるように書かれている。</p><p>この例では、簡単にするために二つのテキストフィールドだけを検証しているが、一般的なフォームハンドラにするために容易に拡張することができる。クライアントサイドの検証は、それを唯一の検証とすべきではなく、サーバーサイドの検証でも確認するべきである。クライアントサイドでの検証の利点は、利用者にすぐにフィードバックを提供することで、サーバーからエラーが帰ってくるまでの間、彼らを待たせることがないこと、及びサーバーへの余計なトラフィックを軽減できることである。</p><p>次の例はフォームにイベント・ハンドラを追加するスクリプトである。もしスクリプトが有効であれば、サーバーにフォームが送信される前にvalidateNumbers()関数がクライアントサイドの検証のために呼び出される。もしスクリプトが有効でなければ、フォームはすぐにサーバー側に送信されるので、検証機能はサーバーにも実装されるべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+window.onload = initialise;
+function initialise()
+{
+  // 標準に準拠したユーザーエージェントが対象
+  if (!document.getElementById || !document.createElement || !document.createTextNode)
+    return;
+
+  // フォームにイベントハンドラを付加
+  var objForm = document.getElementById('numberform');
+  objForm.onsubmit= function(){return validateNumbers(this);};
+} </code></pre></div><div class="textbody"><p>次の例はvalidationの機能である。エラーメッセージの要素を作成するためにcreateElement()、createTextNode()、及びappendChild() DOM関数を使用しているところに注目して欲しい。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+function validateNumbers(objForm)
+{
+  // フィールドを検証
+  var bFirst = isNumber(document.getElementById('num1').value);
+  var bSecond = isNumber(document.getElementById('num2').value);
+  // 問題がある場合、エラーを表示
+  if (!bFirst || !bSecond)
+  {
+    var objExisting = document.getElementById('validationerrors');
+    var objNew = document.createElement('div');
+    var objTitle = document.createElement('h2');
+    var objParagraph = document.createElement('p');
+    var objList = document.createElement('ol');
+    var objAnchor = document.createElement('a');
+    var strID = 'firsterror';
+    var strError;
+    // 見出し要素にリンクを含めることによって、スクリーンリーダーは
+    // フォーカスを置くことができる － そのリンク先はエラー一覧の中で 
+    // 一番最初のエラー項目とする
+    objAnchor.appendChild(document.createTextNode('Errors in Submission'));
+    objAnchor.setAttribute('href', '#firsterror');
+    objTitle.appendChild(objAnchor);
+    objParagraph.appendChild(document.createTextNode('Please review the following'));
+    objNew.setAttribute('id', 'validationerrors');
+    objNew.appendChild(objTitle);
+    objNew.appendChild(objParagraph);
+    // 発見したエラーすべてをエラー一覧に追加
+    if (!bFirst)
+    {
+      strError = '最初の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num1', objForm, strID));
+      strID = '';
+    }
+    if (!bSecond)
+    {
+      strError = '2番目の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num2', objForm, strID));
+      strID = '';
+    }
+    // エラー情報に一覧を追加
+    objNew.appendChild(objList);
+    // 既存のエラーがあった場合、新規のエラーと置き換える
+    // あるいは、新規のエラーをフォームの先頭に追加する
+    if (objExisting)
+      objExisting.parentNode.replaceChild(objNew, objExisting);
+    else
+    {
+      var objPosition = objForm.firstChild;
+      objForm.insertBefore(objNew, objPosition);
+    }
+    // フォーカスを見出しにあるアンカーに置いて、スクリーンリーダーに
+    // 対してエラーがあることを警告する
+    objAnchor.focus();
+    // フォームを送信しない
+    objForm.submitAllowed = false;
+    return false;
+  }
+  return true;
+}
+
+// 数字を検証する関数
+function isNumber(strValue)
+{
+  return (!isNaN(strValue) &amp;amp;&amp;amp; strValue.replace(/^\s+|\s+$/, '') !== '');
+} </code></pre></div><div class="textbody"><p>以下は、エラーメッセージを作成して、関連するフォームのフィールドにフォーカスさせるための補助関数である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+// エラー内容を説明する、エラーのフォームフィールドへのリンクの
+// リスト項目を作成する関数
+function addError(strError, strFragment, objForm, strID)
+{
+  var objAnchor = document.createElement('a');
+  var objListItem = document.createElement('li');
+  objAnchor.appendChild(document.createTextNode(strError));
+  objAnchor.setAttribute('href', strFragment);
+  objAnchor.onclick = function(event){return focusFormField(this, event, objForm);};
+  objAnchor.onkeypress = function(event){return focusFormField(this, event, objForm);};
+  // strIDに値がある場合、これがリストで一番目のエラーとなる
+  if (strID.length &gt; 0)
+    objAnchor.setAttribute('id', strID);
+  objListItem.appendChild(objAnchor);
+  return objListItem;
+}
+
+// エラーのフォームフィールドにフォーカスを置く関数
+function focusFormField(objAnchor, objEvent, objForm)
+{
+  // キーボードナビゲーションを可能にするAllow keyboard navigation over links
+  if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
+    if (objEvent.keyCode != 13 &amp;amp;&amp;amp; objEvent.keyCode != 32)
+      return true;
+  // フォーカスをフォーム・コントロールに設定する
+  var strFormField = objAnchor.href.match(/[^#]\w*$/);
+  objForm[strFormField].focus();
+  return false;
+} </code></pre></div><div class="textbody"><p>以下は事例のフォーム用HTMLである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;title&gt;ECMAScript フォームの検証&lt;/title&gt;
+	&lt;script type="text/javascript" src="validate.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;フォームの検証&lt;/h1&gt;
+&lt;form id="numberform" method="post" action="form.php"&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;数字のフィールド&lt;/legend&gt;
+&lt;p&gt;
+&lt;label for="num1"&gt;最初の数字を入力&lt;/label&gt;
+&lt;input type="text" size="20" name="num1" id="num1"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;label for="num2"&gt;2番目の数字を入力&lt;/label&gt;
+&lt;input type="text" size="20" name="num2" id="num2"&gt;
+&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;p&gt;
+&lt;input type="submit" name="submit" value="フォームを送信"&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </code></pre></div><div class="textbody"><p>この例はクライアントサイドスクリプトに限定しているため、サーバーサイドの検証によって補完されるべきである。例では、クライアントサイドスクリプトが利用できるときのエラーメッセージの作成に限定される。</p><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR21/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR21/ex1.html" class="ex-ref">フォームの検証</a> </p></div></div><h2 id="SCR21-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01  <a href="http://www.webreference.com/js/column44/index.html">The Document Object Model, More methods</a> from Webreference.com
+									</p></li><li><p>
+                  <a href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</a>
+               </p></li></ul></div><h2 id="SCR21-related-techs">関連する実装方法</h2><div class="textbody"><p>(今のところ、なし。)</p></div><h2 id="SCR21-tests">検証</h2><div class="textbody"><h3 class="small-head" id="SCR21-procedure">チェックポイント</h3><p>動的に新しいコンテンツを作成するページに対して：</p><ol class="enumar"><li><p>（ソースコードを検証して、）新しいコンテンツがdocument.write()、innerHTML,、outerHTML、innerText又はouterTextを用いて作成されていない。</p></li></ol><h3 class="small-head" id="SCR21-results">判定基準</h3><ul><li><p>1.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる" href="SCR20.html"><strong>前: </strong>
+        Technique SCR20</a></li><li><a title="SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる" href="SCR22.html"><strong>次: </strong>
+        Technique SCR22</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

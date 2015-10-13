@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G101">
+   <short-name>一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</short-name>
+   <applicability>
+      <p>テキストを含むあらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-idioms" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、一般的ではない、又は限定された用途で用いられているあらゆる単語の定義を提供することである。</p>
+    <p>単語が、一般的ではない、又は限定された用途で用いられているのは、次のような場合である:</p>
+    <ulist>
+      <item>
+        <p>辞書にはその単語の定義がいくつかあるが、コンテンツを理解するためには一つの特定の定義が用いらなければならない。</p>
+      </item>
+      <item>
+        <p>コンテンツを理解するために特定の定義が用いられている、又辞書には、それらの定義はまれな、廃れた、旧式のと書かれている。</p>
+      </item>
+      <item>
+        <p>コンテンツ制作者が、コンテンツを理解するために用いられる新しい定義を作り出す。</p>
+      </item>
+    </ulist>
+    <p>この実装方法は、業界用語、すなわち、特有の専門又は技術分野で用いられる専門用語に対して定義を提供するためにも用いられる。分野外の人には理解できないが、その分野の人には理解できる。</p>
+    <p>この実装方法は慣用表現を定義するためにも用いられる。例えば、同じ言語を話す人でも、特定の地域に住んでいる場合、その地域の人には理解されるが、同じ言語を話す他の地域からの人には理解されない慣用表現を用いるかもしれない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>限定された用途で用いられている専門用語</head>
+      <description><p>「技術」という単語は、原始人が使った石器から携帯電話のような現代のデジタル機器までの全てを含め広く用いられている。しかし、WCAG 2.0では、「技術」という単語はより限定された用途で用いられている: それは、ユーザーエージェントにより描画、再生、又は実行されるように指示をコード化するためのメカニズムを意味しており、ウェブコンテンツを生成及び提供する際に用いられるマークアップ言語、データフォーマット、及びプログラム言語を含んでいる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>一般的にはもう使われていない定義が用いられている用語</head>
+      <description><p>「エーテル」という用語は、宇宙空間に満たされた物質として定義されている: 「彼はエーテルを介して音が伝わると信じていた。」</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>業界用語</head>
+      <description><p>「ドライバー」という用語は、プリンターでは特定の指示をするソフトウェアとして定義されている: 「あなたのプリンタのドライバーをアップデートする必要があるかもしれない。」</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>固有表現</head>
+      <description><p>例えば、「警察署で、ジョーは首相を誘拐するたくらみについて口をすべらした。」のように、「秘密を漏らす」の意味で「口をすべらす」と言う人がいる。
+</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>日本語の慣用表現</head>
+      <description><p>この事例は、日本語の慣用表現の定義を提供するために括弧を使用する。日本語の語句では、「さじを投げる。」と書かれている。これは、彼のできることが何もなく、最終的にあきらめたことを意味している。</p>
+<p><phrase lang="jp" xml:lang="jp">さじを投げる（どうすることもできなくなり、あきらめること）。</phrase></p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>英語で馴染みのない外来語</head>
+      <description><p>利用者は、他の言語からの馴染みのない外来語を理解できないかもしれない: 「我々はすぐに(すばやく)街を離れる必要がある。」</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>日本語で馴染みのない外来語</head>
+      <description><p>日本語では、外来語に対してカタカナが用いられる。単語が利用者にとって馴染みがない場合、利用者が理解できるように意味又は翻訳を提供する。</p>
+<p>「アクセシビリティ（高齢者・障害のある人を含む全ての人が利用できること）」は、Webサイトに不可欠である。 </p>
+<p>レイアウトテーブルとCSSの併用を「ハイブリッド（複合型）」という。 </p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G55"/>
+      <relatedtech idref="G62"/>
+      <relatedtech idref="G70"/>
+      <relatedtech idref="G112"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>一般的でない、又は限定された用途で用いられる個々の単語又は語句に対して:</p>
+      <olist>
+        <item>
+          <p>単語又は語句に対して定義が提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

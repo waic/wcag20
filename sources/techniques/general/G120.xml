@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G120">
+   <short-name>単語のすぐ後に発音（読み）を提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、単語がウェブページの中で少なくとも最初に現れたとき、後ろに読みを提供することにより単語の読み方が分かるようにすることである。</p>
+    <p>同じつづりで異なった読みの単語がウェブページにあるときは、その単語が現れるごとに読みが提供されない場合、この実装方法は読みの提供として適切なものとはならない。</p>
+    <p>この実装方法はウェブページで略語の初出時に適用される。複数の資料をひとつのウェブページに結合するとき、それぞれの資料の冒頭で略語の元の語を示す。しかしながら、この場合、元の語を提供するための異なる実装方法を用いる方が、より適切であるかもしれない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Example 1</head>
+      <description><p>以下の日本語のテキストの例では、漢字の読みを与える情報は、テキストの直後の丸括弧の中に描画される。</p>
+</description>
+      <code><![CDATA[<p> 慶應大学 (けいおうだいがく) </p>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G121"/>
+      <relatedtech idref="G163"/>
+      <relatedtech idref="H62"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>読みを必要とする単語それぞれに:
+							</p>
+      <olist>
+        <item>
+          <p>ウェブページのなかで、その単語の最初の使用箇所を探す。</p>
+        </item>
+        <item>
+          <p>最初の使用箇所の直後にその単語の読みがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

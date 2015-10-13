@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H62">
+   <short-name>ruby要素を用いる</short-name>
+   <applicability>
+      <p>XHTML 1.1</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>XHTML 1.1をサポートしていないユーザーエージェントのために、ルビのマークアップには、代替メカニズムとしての<el>rp</el>要素を含める。ルビのマークアップはXHTML 1.1のみで定義されているにもかかわらず、IE 5.0以降は、<el>ruby</el>、<el>rt</el>、<el>rp</el>要素をHTML 4.01やXHTML 1.0で用いた場合もサポートする。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この実装方法の目的は、読みかたの情報、及び意味が読みかたによって決まる場合の連続するテキストの意味に関する情報を提供するために、ルビを振ることである。</p>
+    <p>多くの言語では、連続するテキストが読み方によって意味が異なる場合がある。これは、ヘブライ語、アラビア語、ほかの諸言語と同様に東アジア言語によくある。また、英語など西ヨーロッパ言語でも起こる。</p>
+    <p>「Ruby Annotation」はXHTML 1.1のモジュールのひとつとして定義されている。コンテンツ制作者は「Ruby Annotation」によって、読み方や、場合によっては定義を提供すべく、「ベーステキスト」に注釈を加えることができる。日本語など東アジア言語のテキストでは、ルビが当たり前に利用される。</p>
+    <p>ルビのマークアップには、単純な方法と複雑な方法の2種類がある。単純ルビマークアップは、連続するテキストをひとまとまりの語句として扱う。これが「ベース」テキスト（<el>rb</el>要素）である。その用語の読み方を示すルビ注釈（<el>rt</el>要素、ルビテキスト）は、小さめのフォントで表示される。（「ルビ」という用語は、印刷でこの目的のために使用される小さい活字が由来）。ルビテキストは通常、ベーステキストの上か直前に、すなわち横書きのテキストでは上に、縦書きのテキストでは右に隣接して描画される。日本語では、テキストの意味を提供するために、読み方のルビに対して（視覚的に）ベーステキストの反対側に、ルビを用いることもある。また、単純ルビマークアップでは、ルビのマークアップをサポートしていない（つまり、XHTML 1.1をサポートしていない）ユーザーエージェントのために、「フォールバック機能」オプションを提供する。</p>
+    <p>複合ルビマークアップでは、ベーステキストを小さな単位に分け、ルビ注釈を別々に関連づけることができる。複合ルビマークアップではフォールバックオプションはサポートされない。</p>
+    <p>読みかたを伝える発音区別符号がUnicodeフォントに含まれているヘブライ語などの言語では、ルビが用いられるのは稀である。また、英語やヨーロッパ言語でも珍しい。</p>
+    <p>注記：ルビ又は他の方法によって読み方を示す主な理由は、読みかたさえ提供されていれば、コンテンツの書かれた言語を読み、理解することが可能な、障害のある利用者がコンテンツにアクセスできるようにするためである。ただし、そのコンテンツが書かれている言語に馴染みがない利用者のために、読みかたを提供する必要はない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>頭文字語の読みかたを提供するルビのマークアップ</head>
+      <description><p>この事例では、Web Content Accessibility Guidelinesという複数の単語の1文字目をとって作った頭文字語（頭字語）の読み方を提供するために、ルビを用いている。WCAGという文字がルビベース（<el>rb</el>要素）であり、読み方をルビテキスト（<el>rt</el>要素）として示す。ルビのカッコを指定する<el>rp</el>要素は、ルビをサポートしていないユーザーエージェントに対して、<el>rt</el>要素で囲まれたテキストが読み方を提供していることを示すために用いられる。ベーステキストの直後にカッコ付きで読み方を描画する（ルビをサポートしているユーザーエージェントでは、カッコは表示されない）。</p>
+</description>
+      <code role="html401"><![CDATA[<p>われわれがこのガイドラインについて話し合うときは、
+  <ruby>
+    <rb>WCAG</rb>
+    <rp>(</rp>
+    <rt>Wuh-KAG</rt>
+    <rp>)</rp>
+  </ruby>
+と呼ぶ。</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>日本語のルビ注釈</head>
+      <description><p>次は、日本語の事例である。日本語では漢字の読み（ふりがな）を提供するのにルビが用いられる。ルビのカッコを指定する<el>rp</el>要素は、読みかたを提供する<el>rt</el>要素のテキスト、つまりルビをサポートしていないユーザーエージェントが利用し、ベーステキストの直後にカッコ付きで読み方を描画する（ルビをサポートしているユーザーエージェントでは、カッコは表示されない） </p>
+</description>
+      <code role="html401"><![CDATA[<p>
+  <ruby>
+    <rb>慶應大学</rb>
+    <rp>(</rp>
+    <rt>けいおうだいがく</rt>
+    <rp>)</rp>
+  </ruby>
+</p> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/ruby/">Ruby Annotation</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/salt/guidelines/sec11.html">IMS Guidelines for
+                    Topic-Specific Accessibility</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/css3-ruby/">CSS 3 Ruby</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/International/techniques/markup#ruby">W3C I18N
+                    Techniques: Markup and text, "Using Ruby"</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G102"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>読みかたを提供するルビ注釈をつけた、連続するテキストについて：</p>
+      <olist>
+        <item>
+          <p><el>rb</el>要素で定義した連続するテキストに、<el>rt</el>要素で読みかたが指定してある。</p>
+        </item>
+        <item>
+          <p>単純ルビマークアップを用いている場合、<el>rp</el>要素を指定して、ルビをサポートしていないユーザーエージェントに対して、<el>rt</el>要素に囲まれたテキストが読み方を提供していることを示している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.及び 2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G131">
+   <short-name>目的や内容が分かるラベルを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-descriptive" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、ウェブコンテンツ内のあらゆるインタラクティブなコンポーネントに対するラベルにより、コンポーネントの目的を明確にすることである。そのウェブコンテンツ技術において、ラベルとインタラクティブなコントロールを関連付けるための適切な実装方法によって、支援技術はラベルを認識し利用者に提示できるようになる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>拡大、縮小機能のコントロールのあるオンライン地図</head>
+      <description><p>ある市の地図をウェブアプリケーションで提供している。利用者は「ズームイン」を使ってより詳細な地図が見られ、「ズームアウト」で市の広い地域を見ることができる。マウスとキーボードのいずれでも操作することができる。コントロールには「ズームイン（Ctrl +Shift + L）」と「ズームアウト（Ctrl + +Shift + R）」というラベルが提供されている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>利用者の名前を入力させるフォーム</head>
+      <description><p>利用者の名前を入力させるフォームがある。そのフォームには、姓と名を入力するために2つのフィールドがある。1つ目のフィールドには「姓」というラベルがあり、2つめには「名」というラベルがある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>必須入力のあるフォーム</head>
+      <description><p>必須の入力項目がいくつかある注文票がある。必須入力のフィールドには、フィールドの項目名に加えて「（必須）」と括弧書きされている。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <p>コンテンツ中のインタフェースコンポーネントに対して：
+			  </p>
+      <olist>
+        <item>
+          <p>インタフェースコンポーネントの目的を特定する。</p>
+        </item>
+        <item>
+          <p>ラベルが提供されている。</p>
+        </item>
+        <item>
+          <p>ラベルはコンポーネントの目的を明確に示している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

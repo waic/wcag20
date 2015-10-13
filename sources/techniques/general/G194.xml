@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G194">
+   <short-name>スペルチェック機能を提供し、テキスト入力の修正候補を提示する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法では、スペルチェック機能やテキストの入力候補の提供について示している。認知障害のある利用者の場合、単語のおよその綴りは分かっても、正しく綴ることが難しいということがしばしばある。スペルチェック・プログラムを用いることで、単語の正しい綴りを調べるという時間のかかる作業を行わなくてもよくなる。これは、視覚障害のある利用者でミスタイプが多い場合にも有効である。また、手に障害があり、額に装着する形のポインティング・ディバイスを使用していたり、スキャン・ソフトウェアでオンスクリーン・キーボードを使用している、入力が困難で時間のかかる利用者にとっても有効である。入力単語の候補を提示し、簡単な仕組みで入力したい単語を選択することでテキストフィールドに入力できるような機能を持つスペルチェック機能は、こういった利用者にとって有効である。</p>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G71"/>
+      <relatedtech idref="G103"/>
+      <relatedtech idref="G120"/>
+      <relatedtech idref="G121"/>
+      <relatedtech idref="H89"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページにテキストフィールドがある。</p>
+        </item>
+        <item>
+          <p>綴りが誤っている単語を入力する。</p>
+        </item>
+        <item>
+          <p>単語の修正候補が提示される。</p>
+        </item>
+        <item>
+          <p>提示された修正候補をフォームに入力するメカニズムがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. 及び 4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G1">
+   <short-name>メインコンテンツエリアへ直接移動するリンクを各ページの先頭に追加する</short-name>
+   <applicability>
+      <p>リンク機能を提供するウェブコンテンツ技術すべて</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、ウェブページのメインコンテンツへ直接移動できるようにすることによって、複数のウェブページ上で繰り返されているコンテンツのブロックをスキップできるメカニズムを提供することである。メインコンテンツの開始位置へのリンクが、そのウェブページの最初のインタラクティブなアイテムとなるようにする。そのリンクを実行することにより、その他のコンテンツを通過して、フォーカスをメインコンテンツへ移動させる。この実装方法は、ウェブページに同じくらい重要なコンテンツエリアが複数ある場合よりも、ウェブページのメインコンテンツエリアが一つである際に最も効果的である。</p>
+    <note><p diff="chg">キーボードで操作している利用者（スイッチの利用者を含む）、キーボード・ストロークを遅めにしている利用者、画面拡大ソフトウェアの利用者、画面を見ている人と一緒に作業しているスクリーンリーダーの利用者、キーボードだけで操作している利用者、及び音声認識ソフトウェアの利用者にとっては、このリンクは常に表示されていることが望ましい。しかし、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="navigation-mechanisms-skip" linktype="guideline">達成基準 2.4.1</loc>は、フォーカスを受け取っていないときには表示されていることを要求してはいない。フォーカスを受け取っているときだけ表示されるリンクも達成基準を満たすことが可能である。</p>
+</note>
+  </description>
+   <examples>
+      <eg-group>
+      <head>オンライン新聞</head>
+      <description><p>あるオンライン新聞には、次のような情報のセクションが多くある：例えば、検索機能、企業ロゴ、関連記事、マイナーな記事、問合せ方法、など。ページの真ん中には、トップ記事が掲載されている。利用者がそのページをTabキーで操作する際、最初のリンクは「トップ記事へスキップ」というリンクである。そのリンクを押下すると、視覚的に認識できるフォーカスがトップ記事へ移動する。その次にTabキーを押下すると、そのトップ記事にある最初のリンクへ移動する。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>「メインコンテンツへスキップ」というリンク</head>
+      <description><p>あるウェブページには、（メインコンテンツの前に）各ページで提供されている様々なナビゲーション機能がある：例えば、パンくずリスト、検索、サイトマップ、そして関連情報の一覧など。そのページの最初のリンクは、「メインコンテンツへスキップ」というリンクである。利用者は、そのリンクを押下すると、それらのナビゲーション機能をスキップすることができる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.jimthatcher.com/skipnav.htm">Skip Navigation Links</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G123"/>
+      <relatedtech idref="G124"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>リンクがそのウェブページ上で最初のフォーカス可能なコントロールである。</p>
+        </item>
+        <item>
+          <p>リンクのラベルがメインコンテンツへのリンクであることを示している。</p>
+        </item>
+        <item>
+          <p>リンクが、常に画面に表示されている、又はキーボード・フォーカスを受け取っている際には画面に表示されている。</p>
+        </item>
+        <item>
+          <p>リンクを押下した後、キーボード・フォーカスがメインコンテンツへ移動する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記のチェック全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

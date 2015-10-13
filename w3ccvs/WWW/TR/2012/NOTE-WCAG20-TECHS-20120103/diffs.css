@@ -1,0 +1,22 @@
+/* Revised diffs */
+
+.diff-add  {background-color: #ffc}
+.diff-delete {text-decoration: line-through; color: #585858 !important}
+.diff-change {background-color: #99FF99}
+span.diff-add span.difftext {font-size: 0.846em}
+div.diff-add span.difftext {font-size: 0.6875em}
+
+span.diff-change span.difftext {font-size: 0.846em}
+div.diff-change span.difftext {font-size: 0.6875em}
+span.diff-delete span.difftext {font-size: 0.8em}
+div.diff-delete span.difftext {font-size: 0.6875em}
+
+/* Styles for display options */
+div#diffexp {background: #fff; color: black; margin: 0 20% 1em; padding: 0.25em 0.5em; border: solid #ccc 1px; text-align: center; font-weight: bold; display: none;}
+div#diffexp ul {margin: 0; padding: 0}
+div#diffexp p {font-size: 0.6875em; margin: 0; color: #000}
+div#diffexp li {font-size: 0.6875em; margin: 0; color: #000; list-style-type: none; margin: 0; padding: 0; display: inline; margin-left: 1em}
+div#diffexp p.options {margin-bottom: 0.5em; color: #585858}
+/**/
+
+.screenreader {position: absolute; left: -1000em}

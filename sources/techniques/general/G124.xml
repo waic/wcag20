@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G124">
+   <short-name>ページの先頭に、コンテンツの各エリアへのリンクを追加する</short-name>
+   <applicability>
+      <p>リンク機能を提供するウェブコンテンツ技術すべて。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、コンテンツの異なるセクションへのリンクのリストを提供することによって、文書のブロックをバイパスするメカニズムを提供することである。このリストにある複数のリンクは、コンテンツの最初にある小さな目次のようなものであり、その中のリンクはコンテンツ内のさまざまなセクションへフォーカスを設定する。この実装方法は、ポータルサイトのような多くの独立したセクションがあるページに対して特に有効である。これはセクション内でのブロックをスキップする他の実装方法と組み合わせることもできる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>サイト内のウェブページはすべて、そのページのメインコンテンツ、検索フィールド、及びナビゲーションバーにナビゲートする3つのリンクで始まる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.jimthatcher.com/skipnav.htm">Skip Navigation Links</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G1"/>
+      <relatedtech idref="G123"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>この目的のために提供されているリンク一式にある各リンクに対して：</p>
+      <olist>
+        <item>
+          <p>ウェブページの中でそのリンクより前にあるコントロールは、その一式にある他のリンクだけである。</p>
+        </item>
+        <item>
+          <p>各リンクの説明（リンクテキスト）がコンテンツ内のあるセクションへのリンクであることを説明している。</p>
+        </item>
+        <item>
+          <p>そのリンクが常に表示されている、又はキーボード・フォーカスを受け取ったときに表示される。</p>
+        </item>
+        <item>
+          <p>そのリンクを起動（実行）すると、コンテンツの目的のセクションへフォーカスを移動させる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><title>Client-side Scripting Techniques  | Techniques for WCAG 2.0
+            </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/client-side-script"/><link rel="stylesheet" type="text/css" href="slicenav.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="bytech.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 実装方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><div class="div1"><a name="maincontent"/><h1 id="techs">Client-side Scripting Techniques for WCAG 2.0</h1><p>This Web page lists Client-side Scripting Techniques from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not replace the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p><p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p><p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p><div class="toc">
+<hr/><h2><a name="contents" id="contents"> </a>目次</h2><ul class="toc"><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#abstract">概要 </a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#status">この文書のステータス</a></li><li><a href="#SCR1">SCR1: 利用者が初期設定の制限時間を延長できるようにする</a></li><li><a href="#SCR2">SCR2: キーボード及びマウスのイベント・ハンドラを両方とも用いる</a></li><li><a href="#SCR14">SCR14: スクリプトを用いて、不可欠ではないアラートの表示を任意にする</a></li><li><a href="#SCR16">SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する</a></li><li><a href="#SCR18">SCR18: クライアントサイドのバリデーション及びアラートを提供する</a></li><li><a href="#SCR19">SCR19: 状況の変化を引き起こすことのないように、select要素のonchangeイベントを用いる</a></li><li><a href="#SCR20">SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</a></li><li><a href="#SCR21">SCR21: DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する</a></li><li><a href="#SCR22">SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる</a></li><li><a href="#SCR24">SCR24: プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</a></li><li><a href="#SCR26">SCR26: 動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する</a></li><li><a href="#SCR27">SCR27: DOMを用いて、ページ上にある複数のセクションを並び替える</a></li><li><a href="#SCR28">SCR28: 展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</a></li><li><a href="#SCR29">SCR29: Adding keyboard-accessible actions to static HTML elements</a></li><li><a href="#SCR30">SCR30: スクリプトを用いて、リンクのラベルを変更する</a></li><li><a href="#SCR31">SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</a></li><li><a href="#SCR32">SCR32: クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</a></li><li><a href="#SCR33">SCR33: スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</a></li><li><a href="#SCR34">SCR34: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</a></li><li><a href="#SCR35">SCR35: アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</a></li><li><a href="#SCR36">SCR36: 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する</a></li><li><a href="#SCR37">SCR37: デバイス非依存な方法でカスタム・ダイアログを作成する</a></li><li><a href="#SCR38">SCR38: Creating a conforming alternate version for a web page designed with progressive enhancement</a></li></ul></div><hr/><div class="body"><div class="div1">
+		<div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR1" id="SCR1"> </a>SCR1: 利用者が初期設定の制限時間を延長できるようにする</h2><div class="applicability"><h3 id="SCR1-applicability">適用（対象）</h3><div class="textbody"><p>
+            クライアントサイドスクリプトによりコントロールされた制限時間。
+</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">
+				達成基準 2.2.1 (Timing Adjustable)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-required-behaviors">
+						How to Meet 2.2.1 (Timing Adjustable)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html">
+						達成基準 2.2.1 (Timing Adjustable)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">SC 2.2.1</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html"> Understanding SC 2.2.1</a> for details.</p></div></li></ul><h3 id="SCR1-description">解説</h3><div class="textbody"><p>この実装方法の目的は、スクリプトがデフォルトの制限時間のある機能を提供する際、その時間を延長するメカニズムを提供することによって、利用者がデフォルトの制限時間を延長できるようにすることである。利用者がより長い制限時間を要求できるようにするために、利用者がより長い制限時間を入力できる、又は
+より多くの時間を必要としていることを示す（例えば）フォームをスクリプトが提供することができる。制限時間が切れそうであることを利用者に警告する場合（<a href="#SCR16"><em>SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する</em></a>を参照）、このフォームを警告のダイアログから利用可能にする。どれぐらいの追加時間が必要かを示すことができるようにするか、繰り返し制限時間を延長できるようにすることによって、利用者はデフォルトの制限時間を少なくとも10倍延長することができる。</p></div><h3 class="small-head" id="SCR1-examples">事例</h3><h3 id="SCR1-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ol class="enumar"><li><p> 
+                  <a href="http://www.phpbuilder.com/tips/item.php?id=141">PHPBuilder Time-out Info</a> 
+               </p></li></ol></div><h3 id="SCR1-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR16">SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する</a></li></ul></div><h3 id="SCR1-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR1-procedure">チェックポイント</h4><ol class="enumar"><li><p>制限時間がスクリプトで設定されているウェブページで、制限時間が切れるまで待つ。</p></li><li><p>制限時間を延長する選択肢が提供されている。</p></li></ol><h4 class="small-head" id="SCR1-results">判定基準</h4><ul><li><p>
+2.を満たしていて、かつインタラクションを完了するために更なる時間が提供されている。
+    </p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR2" id="SCR2"> </a>SCR2: キーボード及びマウスのイベント・ハンドラを両方とも用いる</h2><div class="applicability"><h3 id="SCR2-applicability">適用（対象）</h3><div class="textbody"><p>スクリプトをサポートしているHTML及びXHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (Keyboard)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (Keyboard)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (Keyboard)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
+				達成基準 2.1.3 (Keyboard (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
+						How to Meet 2.1.3 (Keyboard (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-all-funcs.html">
+						達成基準 2.1.3 (Keyboard (No Exception))を理解する
+					</a></li></ul></li></ul><h3 id="SCR2-description">解説</h3><div class="textbody"><p>この実装方法の目的は、マウスやフォーカスのイベントによって装飾画像が変化する、機器に依存しないイベントの使い方を説明することである。<code>onmouseover</code>やonmouseoutイベントを使って、マウスがページ中のある要素に重なるか、又は離れたときに装飾画像が変化するようにする。また、<code>onfocus</code>や<code>onblur</code>イベントを使って、要素がフォーカスされたか、フォーカスを失ったかによって画像を変更する。</p><p>下記の例では、アンカー要素の前に装飾画像がある。利用者がアンカータグにマウスオーバーすると、アンカータグの前の装飾画像が変化する。また、マウスがアンカーを離れると、画像は元に戻る。同じ画像の変化は、利用者がキーボードを使ってアンカー要素にフォーカスしたときにも起こる。フォーカスされたときに画像が変化し、フォーカスを失ったときには元の画像に戻る。これは、アンカー要素に<code>onmouseover</code>、<code>onmouseout</code>、<code>onfocus</code>及び<code>onblur</code>イベント・ハンドラを付加することで実現できる。このイベント・ハンドラはJavaScriptの関数でupdateImage()と呼ばれており、画像のsrc属性を変更する。updateImage()はonmouseover、onmouseout、onfocus、及びonblurイベントの応答として呼ばれる。</p><p>それぞれの画像には固有のIDが与えられている。このIDはどちらの画像が使われるかを表す論理値とともに、updateImage()に渡される:<code>updateImage(imgId, isOver);</code>。論理値trueは、マウスがアンカー要素に乗った場合、又はそれがフォーカスされた場合に渡される。falseは、マウスがアンカー要素から離れた場合、又はそれがフォーカスを失った場合に渡される。 updateImage()関数は、画像のIDを使用して画像を読み込み、その後に論理値の状態に応じてsrc属性を変更する。画像は装飾目的で使用されているので、alt属性値は空であることに注意する。</p><div class="note"><p class="prefix"><em>注記: </em>サイズの近い画像を使用し、画像要素では幅と高さの属性値を指定することが望ましい。これは、画像が更新されることによりページのレイアウトが変化してしまうことを防ぐ。例では、同一サイズの画像が使用されている。</p></div></div><h3 class="small-head" id="SCR2-examples">事例</h3><h4 class="small-head" id="SCR2-ex1">事例 1</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd"&gt;
+ &lt;html lang="ja"&gt;
+ &lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+ &lt;title&gt;デバイス非依存な手法で画像を変化させる&lt;/title&gt;
+ &lt;script type="text/javascript"&gt;
+ /* このfunctionは、img要素のsrc属性値を変更する。
+  * param imgId - 変更する画像オブジェクトのID
+  * param isOver - true：マウスオーバーしたとき、又はオブジェクトがフォーカスを受け取ったとき
+  *                false：マウスオーバーを外したとき、又はフォーカスを外したとき
+ */
+ function updateImage(imgId, isOver) {
+   var theImage = document.getElementById(imgId);
+   if (theImage != null) { //could use a try/catch block for user agents supporting at least JavaScript 1.4
+                           // These browsers support try/catch - NetScape 6, IE 5, Mozilla, Firefox
+      if (isOver) {
+        theImage.setAttribute("src","yellowplus.gif");
+      }
+      else {
+        theImage.setAttribute("src","greyplus.gif");
+      }
+   }
+ }
+ &lt;/script&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;p&gt;次のリンクにマウスオーバーするか、タブ移動でフォーカスを移動させ、
+ 画像が変化するか確認してください。&lt;/p&gt;
+ &lt;a href="http://www.w3.org/wai" onmouseover="updateImage('wai', true);" onfocus="updateImage('wai', true);"
+   onmouseout="updateImage('wai',false);" onblur="updateImage('wai',false);"&gt;
+ &lt;img src="greyplus.gif" border="0" alt="" id="wai"&gt;
+   W3C Web Accessibility Initiative&lt;/a&gt; &amp;amp;
+ &lt;a href="http://www.w3.org/International/" onmouseover="updateImage('i18n', true);" 
+   onfocus="updateImage('i18n',true);" onmouseout="updateImage('i18n',false);"
+   onblur="updateImage('i18n',false);"&gt;
+   &lt;img src="greyplus.gif" border="0" alt="" id="i18n"&gt;
+   W3C Internationalization&lt;/a&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;</code></pre></div></div><h3 id="SCR2-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR2-procedure">チェックポイント</h4><p>ウェブページを読み込み、マウス及びキーボードを用いてイベントを検証する。</p><ol class="enumar"><li><p>ウェブページが読み込まれたとき、“通常の”画像が期待通りに表示されている。</p></li><li><p>マウスを使用</p><ol class="enumla"><li><p>イベント・ハンドラを含む要素の上にマウスを移動する（この事例ではアンカー要素）。元の画像が期待されている画像に変化する。</p></li><li><p>マウスを要素から外す。画像が“通常の”画像に戻る。</p></li></ol></li><li><p>キーボードを使用</p><ol class="enumla"><li><p>キーボードを使ってイベント・ハンドラを含む要素にフォーカスを設定する。元の画像が期待されている画像に変化する。</p></li><li><p>キーボードを使って要素からフォーカスを外す（一般的には別の要素にフォーカスを移す）。イメージが元の“通常の画像”に戻る。</p></li></ol></li><li><p>画像の変更によって、ページ上の他の要素のレイアウトに影響がないかを確認する。</p></li></ol><h4 class="small-head" id="SCR2-results">判定基準</h4><ul><li><p>上記の全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR14" id="SCR14"> </a>SCR14: スクリプトを用いて、不可欠ではないアラートの表示を任意にする</h2><div class="applicability"><h3 id="SCR14-applicability">適用（対象）</h3><div class="textbody"><p>緊急ではない情報提供のアラートにスクリプトを使用するウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-postponed">
+				達成基準 2.2.4 (Interruptions)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-postponed">
+						How to Meet 2.2.4 (Interruptions)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-postponed.html">
+						達成基準 2.2.4 (Interruptions)を理解する
+					</a></li></ul></li></ul><h3 id="SCR14-description">解説</h3><div class="textbody"><p>この実装方法の目的は、メッセージ(アラート)を含むダイアログを利用者に表示することである。アラートが表示されたとき、それがフォーカスされると、利用者はそれを閉じるためにダイアログのOKボタンを押さなければならない。これらのアラートにフォーカスが移ってしまうと、特に、緊急ではない情報に使用されたとき、利用者の気が散ってしまうかもしれない。今日の名言、役に立つ小技、又は特定のイベントまでのカウントダウンなど、緊急ではない目的のアラートは、利用者がウェブページに提供された選択肢でそれらを有効にすることなしには現れないようにする。</p><p>この実装方法では、アラートを表示するかどうかの利用者の選択を保存するJavaScriptのグローバル変数に割り当てる。初期値はfalseにする。 ラッパー関数は、アラートを表示する前にこの変数の値をチェックするために作成される。alert() 関数を直接呼び出すよりもむしろ、アラートを表示するすべての呼び出しをこのラッパー関数にかけるようにする。ページの上部には、ページでのアラートの表示を利用者が有効にするためのボタンを提供する。この実装方法は訪問ベースで1回の訪問ごとに作動する。ページが読みこまれるたび、アラートは無効にされ、利用者は手動でそれらを有効にしなければならない。あるいは、コンテンツ制作者は、利用者の選択をセッションを越えて保存するためにクッキーを使用することができる。</p></div><h3 class="small-head" id="SCR14-examples">事例</h3><h4 class="small-head" id="SCR14-ex1">事例 1</h4><div class="example"><div class="textbody"><p>以下のスクリプトは、利用者が「アラートを利用する」というボタンを選択するなら、10秒ごとにアラートボックスに名言を表示する。利用者は再び「アラートを利用しない」を選択することで、名言のアラートボックスを非表示にすることができる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script type="text/javascript"&gt;
+var bDoAlerts = false;  // アラートを表示するかどうか指定するグローバル変数
+/* アラートを有効／無効にする関数。
+ * param ブーリアン型 bOn - trueでアラートを有効、falseで無効。
+*/
+function modifyAlerts(isEnabled) {
+   bDoAlerts = isEnabled;
+}
+/* アラート表示のラッパー関数。bDoAlertsの値をチェックし
+* bDoAlertsがtrueのときに alert() 関数を呼び出すだけ。
+*/
+function doAlert(aMessage) {
+    if (bDoAlerts) {
+       alert(aMessage);
+    }
+}
+// 例 - 名言を表示するループ。
+var gCounter = -1;  // カウンタを保存するグローバル変数
+// quotes変数は名言のリストで初期化される
+var quotes = new Array("quote 1", "quote 2", "quote 3", "quote 4", "quote 5");
+function showQuotes() {
+   if (++gCounter &amp;amp;gt;= quotes.length) {★「&amp;amp;gt;」は「&gt;」ではないでしょうか？★
+     gCounter = 0;
+   }
+   doAlert(quotes[gCounter]);
+   setTimeout("showQuotes();", 10000);
+}
+showQuotes();
+&lt;/script&gt;</code></pre></div><div class="textbody"><p>ページの本文内には、アラートを有効にしたり無効する方法を含める。以下はひとつの例である：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;body&gt;
+&lt;p&gt;アラートボックスを使用した名言の表示を有効にするには、以下のボタンを押してください。&lt;br /&gt;
+&lt;button id="enableBtn" type="button" onclick="modifyAlerts(true);"&gt;
+アラートを利用する&lt;/button&gt;&lt;br /&gt;
+&lt;button id="disableBtn" type="button" onclick="modifyAlerts(false);"&gt;
+アラートを利用しない&lt;/button&gt;&lt;/p&gt;</code></pre></div><div class="textbody"><p>このコードを実装したサンプル： <a href="/WAI/WCAG20/Techniques/working-examples/SCR14/working-examples/SCR14/enablealerts.html" class="ex-ref">アラートの実装例</a></p></div></div><h3 id="SCR14-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR14-procedure">チェックポイント</h4><p>JavaScriptを使用した緊急ではないアラートをサポートするウェブページにおいて：</p><ol class="enumar"><li><p>ウェブページを読み込んだ際、緊急ではないアラートが表示されない。</p></li><li><p>緊急ではないアラートを有効にするメカニズムがある。</p></li><li><p>緊急ではないアラートを有効にすると、アラートが表示される。</p></li></ol><h4 class="small-head" id="SCR14-results">判定基準</h4><ul><li><p>上記の全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR16" id="SCR16"> </a>SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する</h2><div class="applicability"><h3 id="SCR16-applicability">適用（対象）</h3><div class="textbody"><p>
+スクリプトによって制御された制限時間
+</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">
+				達成基準 2.2.1 (Timing Adjustable)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-required-behaviors">
+						How to Meet 2.2.1 (Timing Adjustable)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html">
+						達成基準 2.2.1 (Timing Adjustable)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">SC 2.2.1</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html"> Understanding SC 2.2.1</a> for details.</p></div></li></ul><h3 id="SCR16-description">解説</h3><div class="textbody"><p>この実装方法の目的は、インタラクションを完了させるための時間がほとんど無いことを利用者に通知することである。スクリプトによって、時間制限のある機能が提供される場合には、そのスクリプトは利用者に制限時間が迫っていることを警告する機能を含み、より多くの時間を要求するためのメカニズムを提供することができる。制限時間の20秒以上前に、そのスクリプトは制限時間が迫っている事を伝え、利用者がさらに時間を必要とするかどうかを尋ねる確認ダイアログを提供する。もし利用者の答えが「はい」の場合、制限時間をリセットする。もし利用者の答えが「いいえ」又は返答がない場合、制限時間の終了を許可する。</p><p>この実装方法は、<code>window.setTimeout()</code>メソッドで設定された制限時間に関係する。例えば、60秒で制限時間が切れる設定の場合、制限時間を40秒に設定して、確認ダイアログを表示させることができる。確認ダイアログが表示された時、新しく時間制限が残り20秒に設定される。「制限時間の猶予期間」の満了時に、当初の設計では60秒の制限時間の満了の時にとられていたであろう処置がとられる。</p></div><h3 class="small-head" id="SCR16-examples">事例</h3><h4 class="small-head" id="SCR16-ex1">事例 1</h4><div class="example"><div class="textbody"><p>ある株式市場相場ページは最新の統計を利用可能な状態を確保するため5分毎にページを更新するスクリプトを使用している。その5分間が終了する20秒前に、確認ダイアログが表示され、利用者がページを更新する前にもっと時間が必要かどうかを尋ねる。これにより、利用者に更新が差し迫っていることを認識させるとともに、もし希望するならそれを回避できるようにする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"&lt;url&gt;http://www.w3.org/TR/html4/loose.dtd"&gt;http://www.w3.org/TR/html4/loose.dtd&lt;/title&gt;"&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+
+&lt;title&gt;株式相場市況&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+function timeControl() {
+	// タイマーを4分40秒に設定し、利用者に確認を求める
+	setTimeout('userCheck()', 280000);
+}
+function userCheck() {
+	// ページの再読み込みを20秒に設定する
+	var id=setTimeout('pageReload()', 20000);
+	// 利用者が「OK」を選択した場合、タイマーがリセットされる
+	// それ以外の場合、サーバーによりページが再読み込みされる
+	if (confirm("このページは20秒後に再読み込みされるように設定されています。
+	それ以上の時間が必要ですか？"))
+	{
+	clearTimeout(id);
+	timeControl();
+	}
+}
+function pageReload() {
+	window.location.reload(true);
+}
+timeControl();
+--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;株式相場市況&lt;/h1&gt;
+
+...その他のコンテンツ...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div><h3 id="SCR16-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR1">SCR1: 利用者が初期設定の制限時間を延長できるようにする</a></li></ul></div><h3 id="SCR16-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR16-procedure">チェックポイント</h4><p>スクリプトによって時間制限を制御しているウェブページにおいて：</p><ol class="enumar"><li><p>ページを読み込み、制限時間より20秒少ないタイマーを開始する。</p></li><li><p>タイマーが切れるとき、差し迫った時間制限を警告する確認ダイアログが表示されることを確認する。</p></li></ol><h4 class="small-head" id="SCR16-results">判定基準</h4><ul><li><p>
+2.を満たしている。
+    </p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR18" id="SCR18"> </a>SCR18: クライアントサイドのバリデーション及びアラートを提供する</h2><div class="applicability"><h3 id="SCR18-applicability">適用（対象）</h3><div class="textbody"><p>利用者の入力を検証するコンテンツ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-identified">
+				達成基準 3.3.1 (Error Identification)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-identified">
+						How to Meet 3.3.1 (Error Identification)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/minimize-error-identified.html">
+						達成基準 3.3.1 (Error Identification)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-suggestions">
+				達成基準 3.3.3 (Error Suggestion)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-suggestions">
+						How to Meet 3.3.3 (Error Suggestion)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/minimize-error-suggestions.html">
+						達成基準 3.3.3 (Error Suggestion)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-reversible">
+				達成基準 3.3.4 (Error Prevention (Legal, Financial, Data))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-reversible">
+						How to Meet 3.3.4 (Error Prevention (Legal, Financial, Data))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/minimize-error-reversible.html">
+						達成基準 3.3.4 (Error Prevention (Legal, Financial, Data))を理解する
+					</a></li></ul></li></ul><h3 id="SCR18-description">解説</h3><div class="textbody"><p>この実装方法の目的は、クライアントサイドのスクリプトによって、各フィールドで利用者が入力する値を確認することである。エラーが見つかった場合、警告ダイアログを表示し、エラーの内容をテキストで示す。警告ダイアログを閉じるとともに、スクリプトによってキーボードフォーカスをエラーが起こったフィールドに移動させれば、それは利用者にとって役立つ。</p></div><h3 class="small-head" id="SCR18-examples">事例</h3><h4 class="small-head" id="SCR18-ex1">事例 1</h4><div class="example"><div class="textbody"><p>以下のスクリプトは、有効な日付がフォームのコントロールに入力されたかをチェックする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;label for="date"&amp;gt;日付：&amp;lt;/label&amp;gt;
+&amp;lt;input type="text" name="date" id="date" 
+onchange="if(isNaN(Date.parse(this.value))) 
+alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" /&amp;gt;</code></pre></div></div><h3 id="SCR18-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G89">G89: 所定のデータ書式及び入力例を提供する</a></li></ul></div><h3 id="SCR18-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR18-procedure">チェックポイント</h4><p>特定の入力を必要とするフォームのフィールドに対して：</p><ol class="enumar"><li><p>無効なデータを入力する。</p></li><li><p>エラーを説明している警告が提供されている。</p></li></ol><h4 class="small-head" id="SCR18-results">判定基準</h4><ul><li><p>2.を満たしている</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR19" id="SCR19"> </a>SCR19: 状況の変化を引き起こすことのないように、select要素のonchangeイベントを用いる</h2><div class="applicability"><h3 id="SCR19-applicability">適用（対象）</h3><div class="textbody"><p>スクリプトをサポートするHTML及びXHTML。この実装方法では、JavaScript 1.4 の try/catch 構文を用いる。</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-no-extreme-changes-context">
+				達成基準 3.2.5 (Change on Request)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-no-extreme-changes-context">
+						How to Meet 3.2.5 (Change on Request)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/consistent-behavior-no-extreme-changes-context.html">
+						達成基準 3.2.5 (Change on Request)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR19">User Agent Support Notes for SCR19</a>.</p></div><h3 id="SCR19-description">解説</h3><div class="textbody"><p>この実装方法の目的は、ウェブページの他の要素を更新するselect要素においてonchangeイベントを正しく使用する方法を示すことである。この実装方法は、状況の変化を引き起こさない。ウェブページに一つかそれ以上のselect要素があるとき、一方のonchangeイベントは、そのウェブページの別のselect要素における選択肢を更新できる。そして、select要素によって必要とされるデータのすべてが、ウェブページの中に含まれている。</p><p>ウェブページでの音声読み上げ順序において、選択によって変更されるアイテムが、トリガーとなるselect要素の後にあることに注意することが重要である。これは、支援技術が変化を察知するのを確実にし、変更されたアイテムがフォーカスされたとき、利用者は新しいデータを認識する。なお、この実装方法は、ユーザーエージェントによるJavaScriptのサポート状況に依存する。</p></div><h3 class="small-head" id="SCR19-examples">事例</h3><h4 class="small-head" id="SCR19-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例には、2つのselect要素がある。最初のselect要素でアイテムが選択されたとき、二つめのselect要素の選択肢が適切に更新される。最初のselect要素には、大陸のリストがある。そして、二つめのselect要素には、選択された大陸に位置する国々の一部のリストがある。onchangeイベントは、大陸の選択に連動している。大陸の選択が変わると、国の選択肢は、ドキュメント・オブジェクト・モデル(DOM)を通してJavaScriptを用いて変更される。必要であるすべてのデータ、国と大陸のリスト、はウェブページの中に含まれている。</p><p>以下のコードの概要：</p><ul><li><p>トリガーとなるselect要素の大陸ごとの国々のリストを含むcountryLists配列
+                                    </p></li><li><p>大陸のselect要素のonchangeイベントによって呼ばれるcountryChange() 関数</p></li><li><p>ウェブページの本文のselect要素を作成するXHTMLコード</p></li></ul></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt; 
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; 
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
+  &lt;head&gt; 
+    &lt;meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /&gt; 
+    &lt;title&gt;動的なセレクトメニュー&lt;/title&gt; 
+
+&lt;script type="text/javascript"&gt;
+ //&lt;![CDATA[ 
+ // 国の選択項目のリストに現れるのと同じ順の選択可能な国の配列 
+ var countryLists = new Array(4) 
+ countryLists["empty"] = ["国を選択してください"]; 
+ countryLists["North America"] = ["カナダ", "アメリカ合衆国", "メキシコ"]; 
+ countryLists["South America"] = ["ブラジル", "アルゼンチン", "チリ", "エクアドル"]; 
+ countryLists["Asia"] = ["ロシア", "中国", "日本"]; 
+ countryLists["Europe"]= ["イギリス", "フランス", "スペイン", "ドイツ"]; 
+ /* CountryChange() はselect要素のonchangeイベントから呼び出される。 
+ * param selectObj - onchangeイベントで生成されるselectオブジェクト。
+ */ 
+ function countryChange(selectObj) { 
+ // 選択された選択肢のインデックスを得る 
+ var idx = selectObj.selectedIndex; 
+ // 選択された選択肢の値を得る 
+ var which = selectObj.options[idx].value; 
+ // countryLists 配列から項目のリストを検索するために選択された選択肢の値を使う 
+ cList = countryLists[which]; 
+ // そのIDを通して国のselect要素を得る
+ var cSelect = document.getElementById("country"); 
+ // 国のリストから現在の選択肢を削除する 
+ var len=cSelect.options.length; 
+ while (cSelect.options.length &gt; 0) { 
+ cSelect.remove(0); 
+ } 
+ var newOption; 
+ // 新しい選択肢を生成する 
+ for (var i=0; i&lt;cList.length; i++) { 
+ newOption = document.createElement("option"); 
+ newOption.value = cList[i];  // 選択肢の文字列と値は同じとする 
+ newOption.text=cList[i]; 
+ // 新しい選択肢を追加する 
+ try { 
+ cSelect.add(newOption);  // これはDOMをサポートするブラウザでは失敗するが、IEには必要 
+ } 
+ catch (e) { 
+ cSelect.appendChild(newOption); 
+ } 
+ } 
+ } 
+//]]&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;このページはJavaScriptが有効で、関数が正しく動作可能である必要があります。&lt;/noscript&gt;
+
+  &lt;h1&gt;動的なセレクトメニュー&lt;/h1&gt;
+  &lt;label for="continent"&gt;大陸を選択&lt;/label&gt;
+  &lt;select id="continent" onchange="countryChange(this);"&gt;
+    &lt;option value="empty"&gt;大陸を選択してください&lt;/option&gt;
+
+    &lt;option value="North America"&gt;北米&lt;/option&gt;
+    &lt;option value="South America"&gt;南米&lt;/option&gt;
+    &lt;option value="Asia"&gt;アジア&lt;/option&gt;
+    &lt;option value="Europe"&gt;ヨーロッパ&lt;/option&gt;
+
+  &lt;/select&gt;
+  &lt;br/&gt;
+  &lt;label for="country"&gt;国を選択&lt;/label&gt;
+  &lt;select id="country"&gt;
+    &lt;option value="0"&gt;国を選択してください&lt;/option&gt;
+
+  &lt;/select&gt;
+&lt;/body&gt;
+ &lt;/html&gt;</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR19/working-examples/SCR19/dynselect.html" class="ex-ref">動的なセレクトメニュー</a>
+              
+                     </p></div></div><h3 id="SCR19-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</a>
+               </p></li></ul></div><h3 id="SCR19-related-techs">関連する実装方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="SCR19-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR19-procedure">チェックポイント</h4><ol class="enumar"><li><p>トリガーとなるselect要素(この事例では、大陸を選択するセレクトメニュー)で、選択肢の値を変える。</p></li><li><p>トリガーによって更新されたselect要素(この事例では、国を選択するセレクトメニュー)へ移動する。</p></li><li><p>適切な選択肢の値が、2. のselect要素に表示されている。</p></li><li><p>選択肢の値を変えることなく、1. のトリガーとなるselect要素へ移動する。</p></li><li><p>適切な選択肢の値が、関連付けられた要素（2. のselect要素）にまだ表示されている。</p></li></ol><p>関連付けられた要素（2. のselect要素）の変化が認識されることを確かめるために、select要素を支援技術を用いて検証することが望ましい。</p><h4 class="small-head" id="SCR19-results">判定基準</h4><ul><li><p>3. 及び 5. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR20" id="SCR20"> </a>SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</h2><div class="applicability"><h3 id="SCR20-applicability">適用（対象）</h3><div class="textbody"><p>機能を実装するためにスクリプトを用いる全てのコンテンツ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (Keyboard)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (Keyboard)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (Keyboard)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
+				達成基準 2.1.3 (Keyboard (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
+						How to Meet 2.1.3 (Keyboard (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-all-funcs.html">
+						達成基準 2.1.3 (Keyboard (No Exception))を理解する
+					</a></li></ul></li></ul><h3 id="SCR20-description">解説</h3><div class="textbody"><p>この実装方法の目的は、イベントと関連付けられたスクリプト機能を含むコードを伴った、キーボード固有及びマウス固有のイベント双方の使用を明示することである。キーボード固有及びマウス固有のイベントを一緒に用いることにより、さまざまな種類の機器でコンテンツを操作できることを保証することができる。例えば、スクリプトがkeypressを認識したときに、マウスボタンをクリックしたときと同じ動作を行うことができるようにする。このテクニックにより、キーボードによるアクセスだけでなく他の機器によるアクセスの達成基準を満たすことができる。</p><p>JavaScriptでよく使用されるイベント・ハンドラには、onblur、onchange、onclick、ondblclick、onfocus、onkeydown、onkeypress、onkeyup、onload、onmousedown、onmousemove、onmouseout、onmouseover、onmouseup、onreset、onselect、onsubmit、onunloadが含まれる。いくつかのマウス固有の機能には、論理的に対応するキーボード固有の機能がある（例えば'onmouseover'と'onfocus'のように）。キーボード向けのイベント・ハンドラは、対応するマウス向けの機能とともに提供すべきである。</p><p>次の表は、マウスイベント・ハンドラに対応するキーボードイベント・ハンドラの候補である。</p><table border="1" cellspacing="0"><caption>
+				対応表
+				</caption><tbody><tr><th scope="col">マウス向け</th><th scope="col">キーボード向け</th></tr><tr><td>
+<code>mousedown</code> </td><td>
+<code>keydown</code> </td></tr><tr><td>
+<code>mouseup</code> </td><td>
+<code>keyup</code> </td></tr><tr><td>
+<code>click </code> <sup>[1]</sup>
+</td><td>
+<code>keypress </code> <sup>[2]</sup>
+</td></tr><tr><td>
+<code>mouseover</code> </td><td>
+<code>focus</code> </td></tr><tr><td>
+<code>mouseout</code> </td><td>
+<code>blur</code> </td></tr></tbody></table><p><sup>1</sup>clickは基本的にはマウスのイベント・ハンドラであるが、ほとんどのHTML及びXHTML向けのユーザーエージェントは、そのコントロールがマウス又はキーボードのどちらで有効化されたかにかかわらず、イベントを処理することができる。そのためこのイベントについては、実際にはキーボード用のイベントを補完する必要はない。ここに含まれているのは、HTML以外のユーザーエージェントで問題があるときのためである。</p><p><sup>2</sup>keypressイベント・ハンドラは、どのキーに対しても有効であることから、そのイベント・ハンドラ関数では、イベントを処理する前に、Enterキーが押されたかどうかをチェックすべきである。そうでなければ、イベント・ハンドラは利用者が任意のキーを押すたびに実行され、コントロールから抜けるためにTabキーを押すような場合にも実行されるので、通常は望ましくない。</p><p>（<code>dblclick</code>及び<code>mousemove</code>のような）いくつかのマウス固有の機能には、対応するキーボード固有の機能がない。つまり、いくつかの機能は機器別に違った実装をしなければならないということである（例えば、実装されているマウス固有の機能と同等の機能を、キーボードから実行するための一連のボタン操作を含むようにする）。</p></div><h3 class="small-head" id="SCR20-examples">事例</h3><h4 class="small-head" id="SCR20-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この画像リンクの例では、利用者がポインタを画像に重ねると画像が変化する。キーボード利用者に同様の体験を提供するには、利用者が画像リンクにTabキーで移動した場合に、画像を変化させればよい。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;a href="menu.php" onmouseover="swapImageOn('menu')" onfocus="swapImageOn('menu')" 
+onmouseout="swapImageOff('menu')" onblur="swapImageOff('menu')"&amp;gt; 
+&amp;lt;img id="menu" src="menu_off.gif" alt="メニュー" /&amp;gt; 
+&amp;lt;/a&amp;gt;</code></pre></div></div><h4 class="small-head" id="SCR20-ex2">事例 2</h4><div class="example"><div class="textbody"><p><span>この事例では、マウスとキーボードの両方を用いて機能を実行できる画像のカスタム・コントロールを紹介している。</span>マウスイベントの<code>onclick</code>は、対応するキーボードイベントの<code>onkeypress</code>によって補完されている。<code>tabindex</code>属性は、キーボードを用いてTabキーで移動した際に、画像の上で停止させるためのものである。この事例では<code>nextPage()</code>関数が、キーボードのキー押下がEnterキーであるかどうかをチェックしていることに注目してほしい。もしチェックしなければ、画像にフォーカスがあるときには、どのキーが押下されても常に反応してしまうため望ましくない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;img onclick="nextPage();" onkeypress="nextPage();" tabindex="0" src="arrow.gif" 
+alt="次のページへ移動"&amp;gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例では<code>img</code>要素にtabindexを用いている。現時点では（文法的に）妥当ではないが、この機能を実装するための古典的なテクニックとして用いられている。<span>このようなカスタム・コントロールでは、コントロールの役割（role）と状態（state）を支援技術に引き渡すためにWAI-ARIAも用いるべきである。</span></p></div></div></div><h3 id="SCR20-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://webaim.org/techniques/javascript/">Overview of Creating Accessible JavaScript</a> 
+               </p></li></ul></div><h3 id="SCR20-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li></ul></div><h3 id="SCR20-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR20-procedure">チェックポイント</h4><ol class="enumar"><li><p>全てのインタラクティブな機能を探す。</p></li><li><p>それらのインタラクティブな機能全てに、キーボードだけを使ってアクセスできる。</p></li></ol><h4 class="small-head" id="SCR20-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR21" id="SCR21"> </a>SCR21: DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する</h2><div class="applicability"><h3 id="SCR21-applicability">適用（対象）</h3><div class="textbody"><p>HTML及びXHTMLの中で利用されるECMAScript</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
+				達成基準 1.3.1 (Info and Relationships)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (Info and Relationships)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (Info and Relationships)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
+				達成基準 4.1.2 (Name, Role, Value)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
+						How to Meet 4.1.2 (Name, Role, Value)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/ensure-compat-rsv.html">
+						達成基準 4.1.2 (Name, Role, Value)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.8.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR21">User Agent Support Notes for SCR21</a>.</p></div><h3 id="SCR21-description">解説</h3><div class="textbody"><p>この実装方法の目的は、<code>document.write</code>又は<code>object.innerHTML</code>の代わりにDocument Object Model (DOM)の機能を用いて、ページ中にコンテンツを追加することである。<code>document.write()</code>メソッドはXHTMLで正しいMIMEタイプ(application/xhtml+xml)が指定されているときに動作せず、<code>innerHTML</code>プロパティはDOMの仕様ではないため利用すべきでない。もしDOMの機能を利用してコンテンツを追加すれば、ユーザーエージェントはDOMにアクセスしてコンテンツを取り込むことができる。<code>createElement()</code>関数を使ってDOMの中に要素を作成することもできる。<code>createTextNode()</code>は要素に関連付けられたテキストを作成するのに用いられる。<code>appendChild()</code>、<code>removeChild()</code>、<code>insertBefore()</code>及び<code>replaceChild()</code>関数は、要素やノードを追加したり削除したりするのに用いられる。その他のDOM関数は、作成された要素に属性を与えるときに使用される。</p><div class="note"><p class="prefix"><em>注記: </em>フォーカス可能な要素を文書に追加するとき、<code>tabindex</code>属性を用いて明示的なタブ順序を指定してはならない。なぜなら、文書の中央にフォーカス可能な要素を追加するときに問題が発生するからである。<code>tabindex</code>属性を明示的に設定しないことで、デフォルトのタブ順序が新しい要素に割り当てられるようにする。</p></div></div><h3 class="small-head" id="SCR21-examples">事例</h3><h4 class="small-head" id="SCR21-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例では、クライアントサイドスクリプトの使用法として、フォームの検証方法を紹介している。もしエラーがみつかれば、適切なエラーメッセージが表示される。この例ではDOM関数を使用し、タイトル、エラーに関する短い説明、及びエラー一覧の順序付リストを含むエラー通知を追加している。タイトルの内容はリンクとして書かれているので、focusメソッドを使って利用者の注意をエラーに向けることができる。個別のリスト項目もまた、リンクとして書かれているので、そのリンク先に移動したときにエラーのあるフォームのフィールドにフォーカスできるように書かれている。</p><p>この例では、簡単にするために二つのテキストフィールドだけを検証しているが、一般的なフォームハンドラにするために容易に拡張することができる。クライアントサイドの検証は、それを唯一の検証とすべきではなく、サーバーサイドの検証でも確認するべきである。クライアントサイドでの検証の利点は、利用者にすぐにフィードバックを提供することで、サーバーからエラーが帰ってくるまでの間、彼らを待たせることがないこと、及びサーバーへの余計なトラフィックを軽減できることである。</p><p>次の例はフォームにイベント・ハンドラを追加するスクリプトである。もしスクリプトが有効であれば、サーバーにフォームが送信される前にvalidateNumbers()関数がクライアントサイドの検証のために呼び出される。もしスクリプトが有効でなければ、フォームはすぐにサーバー側に送信されるので、検証機能はサーバーにも実装されるべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+window.onload = initialise;
+function initialise()
+{
+  // 標準に準拠したユーザーエージェントが対象
+  if (!document.getElementById || !document.createElement || !document.createTextNode)
+    return;
+
+  // フォームにイベントハンドラを付加
+  var objForm = document.getElementById('numberform');
+  objForm.onsubmit= function(){return validateNumbers(this);};
+} </code></pre></div><div class="textbody"><p>次の例はvalidationの機能である。エラーメッセージの要素を作成するためにcreateElement()、createTextNode()、及びappendChild() DOM関数を使用しているところに注目して欲しい。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+function validateNumbers(objForm)
+{
+  // フィールドを検証
+  var bFirst = isNumber(document.getElementById('num1').value);
+  var bSecond = isNumber(document.getElementById('num2').value);
+  // 問題がある場合、エラーを表示
+  if (!bFirst || !bSecond)
+  {
+    var objExisting = document.getElementById('validationerrors');
+    var objNew = document.createElement('div');
+    var objTitle = document.createElement('h2');
+    var objParagraph = document.createElement('p');
+    var objList = document.createElement('ol');
+    var objAnchor = document.createElement('a');
+    var strID = 'firsterror';
+    var strError;
+    // 見出し要素にリンクを含めることによって、スクリーンリーダーは
+    // フォーカスを置くことができる － そのリンク先はエラー一覧の中で 
+    // 一番最初のエラー項目とする
+    objAnchor.appendChild(document.createTextNode('Errors in Submission'));
+    objAnchor.setAttribute('href', '#firsterror');
+    objTitle.appendChild(objAnchor);
+    objParagraph.appendChild(document.createTextNode('Please review the following'));
+    objNew.setAttribute('id', 'validationerrors');
+    objNew.appendChild(objTitle);
+    objNew.appendChild(objParagraph);
+    // 発見したエラーすべてをエラー一覧に追加
+    if (!bFirst)
+    {
+      strError = '最初の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num1', objForm, strID));
+      strID = '';
+    }
+    if (!bSecond)
+    {
+      strError = '2番目の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num2', objForm, strID));
+      strID = '';
+    }
+    // エラー情報に一覧を追加
+    objNew.appendChild(objList);
+    // 既存のエラーがあった場合、新規のエラーと置き換える
+    // あるいは、新規のエラーをフォームの先頭に追加する
+    if (objExisting)
+      objExisting.parentNode.replaceChild(objNew, objExisting);
+    else
+    {
+      var objPosition = objForm.firstChild;
+      objForm.insertBefore(objNew, objPosition);
+    }
+    // フォーカスを見出しにあるアンカーに置いて、スクリーンリーダーに
+    // 対してエラーがあることを警告する
+    objAnchor.focus();
+    // フォームを送信しない
+    objForm.submitAllowed = false;
+    return false;
+  }
+  return true;
+}
+
+// 数字を検証する関数
+function isNumber(strValue)
+{
+  return (!isNaN(strValue) &amp;amp;&amp;amp; strValue.replace(/^\s+|\s+$/, '') !== '');
+} </code></pre></div><div class="textbody"><p>以下は、エラーメッセージを作成して、関連するフォームのフィールドにフォーカスさせるための補助関数である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+// エラー内容を説明する、エラーのフォームフィールドへのリンクの
+// リスト項目を作成する関数
+function addError(strError, strFragment, objForm, strID)
+{
+  var objAnchor = document.createElement('a');
+  var objListItem = document.createElement('li');
+  objAnchor.appendChild(document.createTextNode(strError));
+  objAnchor.setAttribute('href', strFragment);
+  objAnchor.onclick = function(event){return focusFormField(this, event, objForm);};
+  objAnchor.onkeypress = function(event){return focusFormField(this, event, objForm);};
+  // strIDに値がある場合、これがリストで一番目のエラーとなる
+  if (strID.length &gt; 0)
+    objAnchor.setAttribute('id', strID);
+  objListItem.appendChild(objAnchor);
+  return objListItem;
+}
+
+// エラーのフォームフィールドにフォーカスを置く関数
+function focusFormField(objAnchor, objEvent, objForm)
+{
+  // キーボードナビゲーションを可能にするAllow keyboard navigation over links
+  if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
+    if (objEvent.keyCode != 13 &amp;amp;&amp;amp; objEvent.keyCode != 32)
+      return true;
+  // フォーカスをフォーム・コントロールに設定する
+  var strFormField = objAnchor.href.match(/[^#]\w*$/);
+  objForm[strFormField].focus();
+  return false;
+} </code></pre></div><div class="textbody"><p>以下は事例のフォーム用HTMLである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;title&gt;ECMAScript フォームの検証&lt;/title&gt;
+	&lt;script type="text/javascript" src="validate.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;フォームの検証&lt;/h1&gt;
+&lt;form id="numberform" method="post" action="form.php"&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;数字のフィールド&lt;/legend&gt;
+&lt;p&gt;
+&lt;label for="num1"&gt;最初の数字を入力&lt;/label&gt;
+&lt;input type="text" size="20" name="num1" id="num1"&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;label for="num2"&gt;2番目の数字を入力&lt;/label&gt;
+&lt;input type="text" size="20" name="num2" id="num2"&gt;
+&lt;/p&gt;
+&lt;/fieldset&gt;
+&lt;p&gt;
+&lt;input type="submit" name="submit" value="フォームを送信"&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </code></pre></div><div class="textbody"><p>この例はクライアントサイドスクリプトに限定しているため、サーバーサイドの検証によって補完されるべきである。例では、クライアントサイドスクリプトが利用できるときのエラーメッセージの作成に限定される。</p><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR21/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR21/ex1.html" class="ex-ref">フォームの検証</a> </p></div></div><h3 id="SCR21-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01  <a href="http://www.webreference.com/js/column44/index.html">The Document Object Model, More methods</a> from Webreference.com
+									</p></li><li><p>
+                  <a href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</a>
+               </p></li></ul></div><h3 id="SCR21-related-techs">関連する実装方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="SCR21-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR21-procedure">チェックポイント</h4><p>動的に新しいコンテンツを作成するページに対して：</p><ol class="enumar"><li><p>（ソースコードを検証して、）新しいコンテンツがdocument.write()、innerHTML,、outerHTML、innerText又はouterTextを用いて作成されていない。</p></li></ol><h4 class="small-head" id="SCR21-results">判定基準</h4><ul><li><p>1.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR22" id="SCR22"> </a>SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる</h2><div class="applicability"><h3 id="SCR22-applicability">適用（対象）</h3><div class="textbody"><p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
+				達成基準 2.2.2 (Pause, Stop, Hide)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
+						How to Meet 2.2.2 (Pause, Stop, Hide)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-pause.html">
+						達成基準 2.2.2 (Pause, Stop, Hide)を理解する
+					</a></li></ul></li></ul><h3 id="SCR22-description">解説</h3><div class="textbody"><p>この実装方法の目的は、スクリプトによる点滅を、5秒未満で停止する設定にできるよう制御することである。 スクリプトを用いて、コンテンツの点滅効果を開始し、表示と非表示の状態切り替えを制御し、そして5秒以下で停止させる。<code>setTimeout()</code>関数を用いて、点滅するコンテンツの表示と非表示の状態を切り替え、点滅の回数と所要時間の積が5秒近くになった時に停止させる。</p></div><h3 class="small-head" id="SCR22-examples">事例</h3><h4 class="small-head" id="SCR22-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例では、JavaScriptを用いてHTML及びXHTMLコンテンツの点滅を制御する。JavaScriptは、コンテンツの表示状態を制御して点滅効果を生みだす。効果の開始を制御し、5秒以内に停止させる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;div id="blink1" class="highlight"&gt;新商品！&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+// 点滅「on」状態
+function show()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "visible";
+}
+// 点滅「off」状態
+function hide()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "hidden";
+}
+// 点滅効果を出すために「on」と「off」の状態を450ミリ秒ごとに切り替え
+// 4500ミリ秒後に終了（5秒未満）
+for(var i=900; i &lt; 4500; i=i+900)
+{
+	setTimeout("hide()",i);
+	setTimeout("show()",i+450);
+}
+--&gt;
+&lt;/script&gt;
+...</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR22/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR22/ex1.html" class="ex-ref">点滅をコントロールするために、スクリプトを使用する</a></p></div></div><h3 id="SCR22-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR22-procedure">チェックポイント</h4><p>点滅しているコンテンツのそれぞれのインスタンスに対して：</p><ol class="enumar"><li><p>点滅効果が開始される時、5秒間のタイマーを開始させる。</p></li><li><p>タイマーが切れるとき、点滅が停止している。</p></li></ol><h4 class="small-head" id="SCR22-results">判定基準</h4><ul><li><p>点滅しているコンテンツのそれぞれのインスタンスが2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR24" id="SCR24"> </a>SCR24: プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</h2><div class="applicability"><h3 id="SCR24-applicability">適用（対象）</h3><div class="textbody"><p>HTML 4.01 及び XHTML 1.0 </p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-no-extreme-changes-context">
+				達成基準 3.2.5 (Change on Request)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-no-extreme-changes-context">
+						How to Meet 3.2.5 (Change on Request)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/consistent-behavior-no-extreme-changes-context.html">
+						達成基準 3.2.5 (Change on Request)を理解する
+					</a></li></ul></li></ul><h3 id="SCR24-description">解説</h3><div class="textbody"><p>この実装方法の目的は、利用者が要求していない新しいウィンドウの出現によって引き起こされうる混乱を回避することである。突然新しいウィンドウが開くと、利用者は混乱したり、そのことに気づかなかったりする。文書型が<code>target</code>属性を認めていない場合（HTML 4.01 Strict や XHTML 1.0 Strict には存在しない）、又はコンテンツ制作者が<code>target</code>属性の使用を好まない場合には、ECMAScriptを用いて新しいウィンドウを開くことができる。以下にある事例は、スクリプトを用いて新しいウィンドウを開く方法を示している。その事例では、リンク（<code>a</code>要素）にイベントハンドラを追加して、利用者にリンク先のコンテンツが新しいウィンドウで開くことを事前に知らせている。</p></div><h3 class="small-head" id="SCR24-examples">事例</h3><h4 class="small-head" id="SCR24-ex1">事例 1</h4><div class="example"><div class="textbody"><p>マークアップ：</p><p>スクリプトはドキュメントの<code>head</code>要素内に組み込まれており、リンクにはスクリプトのフックとなる<code>id</code>属性がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script type="text/javascript" src="popup.js"&gt;&lt;/script&gt;
+…
+&lt;a href="help.html" id="newwin"&gt;ヘルプを表示&lt;/a&gt;</code></pre></div><div class="textbody"><p>スクリプト：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+// ブラウザによるイベント登録のサポートは不十分だが
+// 従来のイベントモデルを用いる
+window.onload = addHandlers;
+
+function addHandlers()
+{
+  var objAnchor = document.getElementById('newwin');
+
+  if (objAnchor)
+  {
+    objAnchor.firstChild.data = objAnchor.firstChild.data + ' (新しいウィンドウで開く)';
+    objAnchor.onclick = function(event){return launchWindow(this, event);}
+    // UAAG ではユーザーエージェントにデバイス非依存な方法でイベントを処理することを
+    // 要求しているが、そうしないブラウザが多いのでキーボードイベントを追加する
+    objAnchor.onkeypress = function(event){return launchWindow(this, event);}
+  }
+}
+
+function launchWindow(objAnchor, objEvent)
+{
+  var iKeyCode, bSuccess=false;
+
+  // キーボードからのイベントである場合、ユーザーがリンクをリクエストしたときだけ
+  // 新しいウィンドウを開くようにする（リターン又はスペース）
+  if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
+  {
+    if (objEvent.keyCode)
+      iKeyCode = objEvent.keyCode;
+    else if (objEvent.which)
+      iKeyCode = objEvent.which;
+
+    // キャリッジ・リターン又はスペースではない場合、ユーザーエージェントが
+    // アクションの処理を継続するようにtrueを返す
+    if (iKeyCode != 13 &amp;amp;&amp;amp; iKeyCode != 32)
+      return true;
+  }
+
+  bSuccess = window.open(objAnchor.href);
+
+  // ウィンドウが開かなかった場合、ブラウザには同じウィンドウで開くという
+  // デフォルトのアクションを継続させる
+  if (!bSuccess)
+    return true;
+
+  // ウィンドウが開いたら、ブラウザによる処理をそこで止める
+  return false;
+} </code></pre></div></div><h3 id="SCR24-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">Wikipedia: Progressive Enhancement</a>
+               </p></li></ul></div><h3 id="SCR24-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H83">H83: target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する</a></li></ul></div><h3 id="SCR24-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR24-procedure">チェックポイント</h4><ol class="enumar"><li><p>ドキュメントにあるリンクを起動して、新しいウィンドウが開くかどうかをチェックする。</p></li><li><p>新しいウィンドウを開くリンクが、次の全てをスクリプトを用いて実装されている：</p><ol class="enumla"><li><p>リンクが新しいウィンドウを開くことを明示している</p></li><li><p>デバイス非依存のイベントハンドラを用いている</p></li><li><p>新しいウィンドウを開けない場合には、ブラウザが同じウィンドウにリンク先のコンテンツを開くようにしている</p></li></ol></li></ol><h4 class="small-head" id="SCR24-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR26" id="SCR26"> </a>SCR26: 動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する</h2><div class="applicability"><h3 id="SCR26-applicability">適用（対象）</h3><div class="textbody"><p>HTML及びXHTML、スクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (Keyboard)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (Keyboard)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (Keyboard)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-order">
+				達成基準 2.4.3 (Focus Order)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
+						How to Meet 2.4.3 (Focus Order)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-order.html">
+						達成基準 2.4.3 (Focus Order)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible">
+				達成基準 2.4.7 (Focus Visible)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
+						How to Meet 2.4.7 (Focus Visible)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-visible.html">
+						達成基準 2.4.7 (Focus Visible)を理解する
+					</a></li></ul></li></ul><h3 id="SCR26-description">解説</h3><div class="textbody"><p>この実装方法の目的は、Document Object Model（DOM）に挿入されたユーザーインタフェースの要素をタブ順序及びスクリーンリーダーの読み上げ順序がユーザーエージェント標準のふるまいによって正しく設定されるような方法で配置することである。この実装方法は、メニューやダイアログのように隠れているものと表示されているもの、全てのユーザーインタフェース要素に利用することができる。</p><p>スクリーンリーダーの読み上げ順序は、Document Object Model内のHTML又はXHTMLの要素の順序に基づいており、それはタブ順序についても同様である。この実装方法では、新しいコンテンツをDOMのそのトリガーとなる要素の直後に挿入する。トリガーとなる要素は、リンク又はボタンでなければならず、スクリプトはそのonclickイベントにより呼び出されなければならない。これらの要素はもともとフォーカス可能であり、そのonclickイベントはデバイスに依存しない。フォーカスは選択された要素に残り、その後に挿入された新しいコンテンツは、タブ順序及びスクリーンリーダーの読み上げ順序の両方において、次の順番となる。</p><p>この実装方法は同期された更新にも利用できることに注目して欲しい。（AJAXと呼ばれることのある）非同期の更新では、支援技術に非同期のコンテンツが挿入されたことを通知するために追加の実装方法が必要となる。</p></div><h3 class="small-head" id="SCR26-examples">事例</h3><h4 class="small-head" id="SCR26-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例では、リンクがクリックされた際にメニューを生成し、そのリンクの後に挿入する。リンクのonclickイベントは新しいメニューのためのIDをパラメータとして渡すShowHideスクリプトを呼び出すために使用される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;a href="#" onclick="ShowHide('foo',this)"&amp;gt;切り替え&amp;lt;/a&amp;gt; </code></pre></div><div class="textbody"><p>ShowHideスクリプトは新しいメニューを含むdivを生成し、リンクを挿入する。最終行がスクリプトの核心となる。スクリプトのトリガーとなる要素の親を探し、新しい子として生成されたdivをそれに追加する。これにより、新しいdivはDOM内でリンクの次になる。利用者がタブを押したときには、フォーカスがメニュー内で最初のフォーカス可能な項目となる生成されたリンクに移動する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ShowHide関数(id,src)
+{
+	var el = document.getElementById(id);
+	if (!el)
+	{
+		el = document.createElement("div");
+		el.id = id;
+		var link = document.createElement("a");
+		link.href = "javascript:void(0)";
+		link.appendChild(document.createTextNode("Content"));
+		el.appendChild(link);
+		src.parentElement.appendChild(el);
+	}
+	else
+	{
+		el.style.display = ('none' == el.style.display ? 'block' : 'none');
+	}
+} </code></pre></div><div class="textbody"><p>CSSはdivおよびリンクをメニューのように見せるために利用される。</p></div></div><h3 id="SCR26-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR26-procedure">チェックポイント</h4><ol class="enumar"><li><p>ポップアップではないダイアログのトリガーとなる全てのエリアを探す。</p></li><li><p>そのダイアログがボタン又はリンクのクリックイベントによりトリガーされる。</p></li><li><p>スクリプトによって生成されたDOMを調査できるツールを使って、ダイアログがDOM内で次の位置にきている。</p></li></ol><h4 class="small-head" id="SCR26-results">判定基準</h4><ul><li><p>2.及び3.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR27" id="SCR27"> </a>SCR27: DOMを用いて、ページ上にある複数のセクションを並び替える</h2><div class="applicability"><h3 id="SCR27-applicability">適用（対象）</h3><div class="textbody"><p>HTMLおよびXHTML、スクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-order">
+				達成基準 2.4.3 (Focus Order)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
+						How to Meet 2.4.3 (Focus Order)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-order.html">
+						達成基準 2.4.3 (Focus Order)を理解する
+					</a></li></ul></li></ul><h3 id="SCR27-description">解説</h3><div class="textbody"><p>この実装方法の目的は、コンポーネントを再配置するための極めてユーザブルかつアクセシブルなメカニズムを提供することである。再配置するためのメカニズムのうち、もっとも一般的なものは、コンポーネントに番号をつけることができる設定ページに利用者を送ること、又は、コンポーネントをドラッグアンドドロップして希望する位置へ移動できるようにすることのふたつである。ドラッグアンドドロップの方が、ひとつずつ項目を適当な位置に並べることができ、結果を感覚的に得られるため、はるかにユーザブルな方法である。残念なことに、ドラッグアンドドロップはマウスの利用に頼った方法である。この実装方法は、利用者がコンポーネントのメニューを使って、それらを機器に依存することなく適当な位置に再配置することを可能にする。ドラッグアンドドロップによる再配置機能の代替として、もしくはそれと併用して利用することができる。</p><p>メニューはリンクリストで、コンテンツを再配置するスクリプトのトリガーとなる、機器に依存しないonclickイベントを使用している。コンテンツは単に視覚的にだけでなく、Document Object Model (DOM)でも再配置されているので、すべての機器向けに正しい順序となっている。</p></div><h3 class="small-head" id="SCR27-examples">事例</h3><h4 class="small-head" id="SCR27-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例は上下間の再配置を行う。このアプローチはまた、右と左のオプションを追加することで、2次元での再配置にも利用できる。</p><p>この例のコンポーネントは順序無しリストのリスト項目である。順序無しリストは、こうしたコンポーネントのような類似項目のためのとてもよいセマンティックモデルである。メニューを使う方法も、他のタイプのグループ化に使用できる。</p><p>モジュールはリスト項目であり、それぞれのモジュールは、div要素内のコンテンツに加えて、入れ子になったリストとして表されたメニューを含んでいる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+    &amp;lt;ul id="swapper"&amp;gt;
+    &amp;lt;li id="black"&amp;gt;
+        &amp;lt;div class="module"&amp;gt;
+            &amp;lt;div class="module_header"&amp;gt;
+                &amp;lt;!-- メニューへのリンク --&amp;gt;
+                &amp;lt;a href="#" onclick="ToggleMenu(event);"&amp;gt;menu&amp;lt;/a&amp;gt;
+                &amp;lt;!-- メニュー --&amp;gt;
+                &amp;lt;ul class="menu"&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&amp;gt;up&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&amp;gt;down&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div class="module_body"&amp;gt;
+                blackモジュールのテキスト
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
+    ...
+&amp;lt;/ul&amp;gt; </code></pre></div><div class="textbody"><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+MoveNode 関数(evt,dir)
+{
+    HarmonizeEvent(evt);
+    evt.preventDefault();
+
+    var src = evt.target;
+    var menu = src.parentNode.parentNode;
+    var module = menu.parentNode.parentNode.parentNode;
+    var menuLink = module.getElementsByTagName("a")[0];
+    var swap = null;
+    
+    switch(dir)
+    {
+        case 'up':
+        {
+            swap = module.previousSibling;
+            while (swap &amp;amp;&amp;amp; swap.nodeType != 1)
+            {
+                swap = swap.previousSibling;
+            }
+            break;
+        }
+        case 'down':
+        {
+            swap = module.nextSibling;
+            while (swap &amp;amp;&amp;amp; swap.nodeType != 1)
+            {
+                swap = swap.nextSibling;
+            }
+            break;
+        }
+    }
+    if (swap &amp;amp;&amp;amp; swap.tagName == node.tagName)
+    {
+        module.swapNode(swap);
+        PositionElement(menu,menuLink,false,true);
+    }
+    src.focus();
+} </code></pre></div><div class="textbody"><p>ノード入れ替えのCSSは、モジュール及び小さなメニューのサイズや色の調整だけで、前のツリーの例と大きな違いはない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ul#swapper { margin:0px; padding:0px; list-item-style:none; }
+ul#swapper li { padding:0; margin:1em; list-style:none; height:5em; width:15em; 
+    border:1px solid black; }
+ul#swapper li a { color:white; text-decoration:none; font-size:90%; }
+
+ul#swapper li div.module_header { text-align:right; padding:0 0.2em; }
+ul#swapper li div.module_body { padding:0.2em; }
+
+ul#swapper ul.menu { padding:0; margin:0; list-style:none; background-color:#eeeeee; 
+    height:auto; position:absolute; text-align:left; border:1px solid gray; display:none; }
+ul#swapper ul.menu li { height:auto; border:none; margin:0; text-align:left; 
+    font-weight:normal; width:5em; }
+ul#swapper ul.menu li a { text-decoration:none; color:black; padding:0 0.1em; 
+    display:block; width:100%; } </code></pre></div></div><h3 id="SCR27-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR27-procedure">チェックポイント</h4><ol class="enumar"><li><p>ドラッグアンドドロップで再配置可能なウェブユニット内のすべてのコンポーネントを探す。</p></li><li><p>リンクのリストで構成されたメニューでも、それらが再配置可能なメカニズムがあるかどうかもチェックする。</p></li><li><p>メニューがDOM内の再配置可能な項目の中に含まれているかをチェックする。</p></li><li><p>再配置のスクリプトはリンクのonclickイベントだけをトリガーにしているかをチェックする。</p></li><li><p>視覚的にだけではなく、項目がDOMの中でも再配置されているかをチェックする。</p></li></ol><h4 class="small-head" id="SCR27-results">判定基準</h4><ul><li><p>2.～5.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR28" id="SCR28"> </a>SCR28: 展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</h2><div class="applicability"><h3 id="SCR28-applicability">適用（対象）</h3><div class="textbody"><p>クライアントサイド・スクリプティングを提供するウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
+				達成基準 2.4.1 (Bypass Blocks)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-skip">
+						How to Meet 2.4.1 (Bypass Blocks)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-skip.html">
+						達成基準 2.4.1 (Bypass Blocks)を理解する
+					</a></li></ul></li></ul><h3 id="SCR28-description">解説</h3><div class="textbody"><p>この実装方法は、繰り返される構成要素を利用者のコントロールの下でメニューを展開したり折りたたんだりできるメニューの中に置くことで、その構成要素をスキップできるようにする。利用者は、メニューを折りたたむことで繰り返される構成要素をスキップできる。利用者は、メニューの要素を隠したり削除したりするユーザーインターフェースを呼び出すことができる。関連情報には、ナビゲーションをスキップするメカニズムを提供するために利用できるメニュー、ツールバー及びツリーの実装方法をいくつか挙げている。</p><div class="note"><p class="prefix"><em>注記: </em>類似の方法は、サーバーサイドスクリプティングを用いて修正後のウェブページを読み込むことでも実装できる。</p></div></div><h3 class="small-head" id="SCR28-examples">事例</h3><h4 class="small-head" id="SCR28-ex1">事例 1</h4><div class="example"><div class="textbody"><p>ウェブページの先頭にあるナビゲーションリンクは、すべてHTML、CSS及びJavaScriptを用いて実装されているメニュー項目である。ナビゲーションバーが展開しているとき、ナビゲーションのリンクは利用可能になっている。ナビゲーションバーがたたまれているとき、リンクは利用不可能である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+...
+
+  &lt;script type="text/javascript"&gt;
+  function toggle(id){
+    var n = document.getElementById(id);
+    n.style.display =  (n.style.display != 'none' ? 'none' : '' );
+  }
+  &lt;/script&gt;
+
+...
+
+  &lt;a href="#" onclick="toggle("navbar")"&gt;ナビゲーションバー切り替え&lt;/a&gt;
+
+  &lt;ul&gt; id="navbar"&gt;
+  &lt;li&gt;&lt;a href="http://target1.html"&gt;リンク 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target2.html"&gt;リンク 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target3.html"&gt;リンク 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target4.html"&gt;リンク 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+... </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR28/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR28/toggle-navbar.html" class="ex-ref">ナビゲーションバーをリンクで切り替える</a></p></div></div><h4 class="small-head" id="SCR28-ex2">事例 2</h4><div class="example"><div class="textbody"><p>一連のウェブページのための目次はそれぞれのページの先頭近くで繰り返される。目次の先頭にあるボタンで、利用者はそれを消したり復元したりできる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+...
+
+   &lt;script type="text/javascript"&gt;
+  function toggle(id){
+    var n = document.getElementById(id);
+    n.style.display =  (n.style.display != 'none' ? 'none' : '' );
+  }
+  &lt;/script&gt;
+
+  ...
+
+  &lt;button onclick="return toggle('toc');"&gt;目次切り替え&lt;/button&gt;
+  &lt;div id="toc"&gt;
+    ...
+  &lt;/div&gt;
+
+...</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR28/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR28/toggle-toc.html" class="ex-ref">目次をボタンで切り替える</a></p></div></div><h3 id="SCR28-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.bobbyvandersluis.com/articles/unobtrusive-show-hide/">Unobtrusive show/hide behavior reloaded</a>
+               </p></li><li><p>
+                  <a href="http://www.dustindiaz.com/seven-togglers/">Seven ways to toggle an element with JavaScript</a>
+               </p></li></ul></div><h3 id="SCR28-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H69">H69: コンテンツの各セクションの開始位置に見出し要素を提供する</a></li><li/><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H70">H70: フレームを用いて、繰り返されているコンテンツのブロックをグループ化する</a></li></ul></div><h3 id="SCR28-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR28-procedure">チェックポイント</h4><ol class="enumar"><li><p>ユーザーインタフェースコントロールで、繰り返されるコンテンツを展開したり折りたたんだりできるかをチェックする。</p></li><li><p>コンテンツが展開されたとき、それがプログラムで解釈可能なコンテンツに含まれていて、論理的な場所で読み上げ順序があるかをチェックする。</p></li><li><p>コンテンツが折りたたまれているとき、それがプログラムで解釈可能でない部分にあることをチェックする。</p></li></ol><h4 class="small-head" id="SCR28-results">判定基準</h4><ul><li><p>上記のすべての項目を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR29" id="SCR29"> </a>SCR29: Adding keyboard-accessible actions to static HTML elements</h2><div class="applicability"><h3 id="SCR29-applicability">適用（対象）</h3><div class="textbody"><p>HTML and XHTML, Script</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (Keyboard)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (Keyboard)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (Keyboard)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
+				達成基準 2.1.3 (Keyboard (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
+						How to Meet 2.1.3 (Keyboard (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-all-funcs.html">
+						達成基準 2.1.3 (Keyboard (No Exception))を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.14.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR29">User Agent Support Notes for SCR29</a>.</p></div><h3 id="SCR29-description">解説</h3><div class="textbody"><p>The objective of this technique is to demonstrate how to provide keyboard access to a user interface control that is implemented by actions to static HTML elements such as <code>div</code> or <code>span</code>. This technique ensures that the element is focusable by setting the <code>tabindex</code> attribute, and it ensures that the action can be triggered from the keyboard by providing an <code>onkeyup</code> or <code>onkeypress</code> handler in addition to an <code>onclick</code> handler. </p><p>When the <code>tabindex</code> attribute has the value 0, the element can be focused via the keyboard and is included in the tab order of the document. When the <code>tabindex</code> attribute has the value -1, the element cannot be tabbed to, but focus can be set programmatically, using <code>element.focus()</code>.</p><p>Because static HTML elements do not have actions associated with them, it is not possible to provide a backup implementation or explanation in environments in which scripting is not available. This technique should only be used in environments in which client-side scripting can be relied upon.</p><div class="note"><p class="prefix"><em>注記: </em> Such user interface controls must still satisfy Success Criterion 4.1.2. Applying this technique without also providing role, name, and state information about the user interface control will results in Failure F59, Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML.</p></div></div><h3 class="small-head" id="SCR29-examples">事例</h3><h4 class="small-head" id="SCR29-ex1">事例 1:  Adding a JavaScript action to a div element</h4><div class="example"><div class="textbody"><p>The <code>div</code> element on the page is given a unique <code>id</code> attribute and a <code>tabindex</code> attribute with value 0.  A script uses the Document Object Model (DOM) to find the <code>div</code> element by its id and add the <code>onclick</code> handler and the <code>onkeyup</code> handler. The <code>onkeyup</code> handler will invoke the action when the Enter key is pressed. Note that the <code>div</code> element must be loaded into the DOM before it can be found and modified. This is usually accomplished by calling the script from the <code>onload</code> event of the <code>body</code> element.  The script to add the event handlers will only execute if the user agent supports and has JavaScript enabled.   </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+...
+&lt;script type="text/javascript"&gt;
+ // this is the function to perform the action. This simple example toggles a message.
+ function doSomething(event) {
+   var msg=document.getElementById("message");
+   msg.style.display = msg.style.display=="none" ? "" : "none";
+   //return false from the function to make certain that the href of the link does not get invoked
+   return false;
+ }
+ // this is the function to perform the action when the Enter key has been pressed.  
+ function doSomethingOnEnter(event) {
+   var key = 0;
+   // Determine the key pressed, depending on whether window.event or the event object is in use
+   if (window.event) {
+     key = window.event.keyCode;
+   } else if (event) {
+     key = event.keyCode;
+   }
+   // Was the Enter key pressed?
+   if (key == 13) {
+     return doSomething(event);
+   } 
+   // The event has not been handled, so return true
+   return true;
+ }
+ // This setUpActions() function must be called to set the onclick and onkeyup event handlers onto the existing 
+ // div element. This function must be called after the div element with id="active" has been loaded into the DOM.
+ // In this example the setUpActions() function is called from the onload event for the body element.
+ function setUpActions() {
+   // get the div object
+   var active=document.getElementById("active");
+   // assign the onclick handler to the object.
+   // It is important to return false from the onclick handler to prevent the href attribute
+   // from being followed after the function returns.
+   active.onclick=doSomething;
+   // assign the onkeyup handler to the object.
+   active.onkeyup=doSomethingOnEnter;
+ }
+ &lt;/script&gt;
+
+ &lt;body onload="setUpActions();"&gt;
+ &lt;p&gt;Here is the link to modify with a javascript action:&lt;/p&gt;
+ &lt;div&gt;
+  &lt;span id="active" tabindex="0"&gt;Do Something&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div id="message"&gt;Hello, world!&lt;/div&gt;
+...
+</code></pre></div><div class="textbody"><p>Working example of this code: <a href="/WAI/WCAG20/Techniques/working-examples/SCR29/action-on-div.html" class="ex-ref">Creating Divs with Actions using JavaScript</a>.</p></div></div><h3 id="SCR29-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01 <a href="http://www.w3.org/TR/REC-html40/interact/scripts.html">Scripts</a>
+               </p></li><li><p>HTML 4.01 <a href="http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.11">Giving focus to an element</a>
+               </p></li><li><p>Accessible Rich Internet Applications (WAI-ARIA) Version 1.0 <a href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Global States and Properties</a>
+               </p></li><li><p>WAI-ARIA Primer, <a href="http://www.w3.org/TR/wai-aria-primer/#focus">Provision of the keyboard or input focus</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/DOM/DOMTR">Document Object Model (DOM) Technical Reports</a>
+               </p></li><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/ms534654(VS.85).aspx">Internet Explorer, HTML and DHTML Reference, tabIndex Property</a>
+               </p></li></ul></div><h3 id="SCR29-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR20">SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR24">SCR24: プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR35">SCR35: アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F59">F59: 達成基準 4.1.2 の不適合事例 － スクリプトを用いて、HTMLのdiv要素又はspan要素をユーザーインタフェースのコントロールにしている</a></li></ul></div><h3 id="SCR29-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR29-procedure">チェックポイント</h4><p>In a user agent that supports Scripting:</p><ol class="enumar"><li><p>Click on the control with the mouse</p></li><li><p>Check that the scripting action executes properly</p></li><li><p>Check that it is possible to navigate to and give focus to the control via the keyboard</p></li><li><p>Set keyboard focus to the control</p></li><li><p>Check that pressing ENTER invokes the scripting action.</p></li></ol><h4 class="small-head" id="SCR29-results">判定基準</h4><ul><li><p>All of the checks are true</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR30" id="SCR30"> </a>SCR30: スクリプトを用いて、リンクのラベルを変更する</h2><div class="applicability"><h3 id="SCR30-applicability">適用（対象）</h3><div class="textbody"><p>HTML及びXHTMLで使用されるクライアントサイドスクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">
+				達成基準 2.4.4 (Link Purpose (In Context))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
+						How to Meet 2.4.4 (Link Purpose (In Context))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-refs.html">
+						達成基準 2.4.4 (Link Purpose (In Context))を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link">
+				達成基準 2.4.9 (Link Purpose (Link Only))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-link">
+						How to Meet 2.4.9 (Link Purpose (Link Only))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-link.html">
+						達成基準 2.4.9 (Link Purpose (Link Only))を理解する
+					</a></li></ul></li></ul><h3 id="SCR30-description">解説</h3><div class="textbody"><p>この実装方法の目的は、リンクが文脈以外でも理解可能になるように、追加情報をリンクテキストに加えることを利用者が選択できるようにすることである。</p><p>一部の利用者は、リンクの文脈を参照する必要がないように、リンクがすべてを含んでいることを好む。別の利用者は、それぞれのリンクに文脈に関する情報が含まれていると、反復されてサイトの使い勝手が低下すると感じている。支援技術の利用者の間では、どちらが好ましいかに関して、ワーキンググループへのフィードバックは分かれている。この実装方法は、利用者自身にとって良い方法を選ぶことを可能にする。</p><p>どのようなリンクの目的を理解する場合でも追加の文脈が必要とならないようにするため、そのページのリンクのリンクテキストを展開するページの先頭近くにリンクが提供される。展開されるリンクの目的がそのリンクテキストから、常に直接理解可能でなければならない。</p><p>この実装方法では、現在表示されているページのリンクだけを展開する。利用者がそのサイトに対して1度だけ設定を行えば良いようにするために、設定情報をCookie又はサーバーサイドの利用者プロファイルに保存することも可能であり、場合によってはそれが望ましい。</p></div><h3 class="small-head" id="SCR30-examples">事例</h3><h4 class="small-head" id="SCR30-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例では、JavaScript を用いて直接リンクのテキストに文脈上の情報を追加する。linkクラスはどのテキストを追加するかを決定する。「リンクを展開する」リンクが選択されたとき、ページ内のそれぞれのリンクにテキストを追加すべきかがテストされる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;script&gt;
+ var linkContext = {
+   "hist":" 版　Webの歴史",
+   "cook":" 版　Cooking for Nerds"
+ };
+
+ function doExpand() {
+   var links = document.links;
+   var link;
+
+   for (link in links) {
+     var cn = links[link].className;
+     if (linkContext[cn]) {
+       links[link].appendChild(document.createTextNode(linkContext[cn]));
+     }
+   }
+ }
+&lt;/script&gt;
+
+&lt;h1&gt;本のダウンロード&lt;/h1&gt;
+&lt;p&gt;&lt;a href="#" onclick="doExpand();"&gt;リンクを展開する&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webの歴史：
+&lt;a href="history.docx" class="hist"&gt;Word&lt;/a&gt;, 
+&lt;a href="history.pdf" class="hist"&gt;PDF&lt;/a&gt;, 
+&lt;a href="history.html" class="hist"&gt;HTML&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Cooking for Nerds：
+&lt;a href="history.docx" class="cook"&gt;Word&lt;/a&gt;, 
+&lt;a href="history.pdf" class="cook"&gt;PDF&lt;/a&gt;, 
+&lt;a href="history.html" class="cook"&gt;HTML&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+...</code></pre></div></div><h3 id="SCR30-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G91">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33">H33: title属性を用いて、リンクテキストの文言を補足する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C7">C7: CSSを用いて、リンクテキストの一部を非表示にする</a></li></ul></div><h3 id="SCR30-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR30-procedure">チェックポイント</h4><ol class="enumar"><li><p>ページの先頭近くに、リンクを展開するリンクがある。</p></li><li><p>1で確認したリンクがリンクテキストだけで見つけられる。</p></li><li><p>リンクテキストだけで識別できないリンクをページ中から探す。</p></li><li><p>1.のコントロールを有効にする</p></li><li><p>3.で見つけたリンクの目的が、リンクテキストだけで確認できる。</p></li></ol><h4 class="small-head" id="SCR30-results">判定基準</h4><ul><li><p>1., 2.及び5.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR31" id="SCR31"> </a>SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</h2><div class="applicability"><h3 id="SCR31-applicability">適用（対象）</h3><div class="textbody"><p>HTML 及び XHTML、CSS、Script</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible">
+				達成基準 2.4.7 (Focus Visible)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
+						How to Meet 2.4.7 (Focus Visible)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-visible.html">
+						達成基準 2.4.7 (Focus Visible)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.16.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR31">User Agent Support Notes for SCR31</a>.</p></div><h3 id="SCR31-description">解説</h3><div class="textbody"><p>この実装方法の目的は、コンテンツ制作者がCSSを適用してフォーカス表示を通常よりもより見やすくするためにJavaScriptを使えるようにすることである。要素がフォーカスを受ける時、背景色またはボーダーは視覚的に異なるように変化する。要素からフォーカスがはずれたとき元のスタイルにもどる。この実装方法は:focus疑似クラスをサポートしているいないに関わらず、スクリプトやCSSをサポートしているどんなHTMLのユーザエージェントでも用いることができる。</p></div><h3 class="small-head" id="SCR31-examples">事例</h3><h4 class="small-head" id="SCR31-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例において、リンクにフォーカスが当たった時、背景は黄色に変わる。フォーカスがはずれたとき、黄色ではなくなる。もしリンクに背景色がある場合は、スクリプト内で””よりむしろその色を用いることに注意する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;script&gt;
+ function toggleFocus(el)
+ {
+  el.style.backgroundColor =  el.style.backgroundColor=="yellow" ? "inherit" : "yellow";
+ }
+&lt;/script&gt;
+
+...
+
+&lt;a href="example.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)"&gt;ここにフォーカスを置く&lt;/a&gt;
+...</code></pre></div></div><h3 id="SCR31-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C15">C15: CSSを用いて、ユーザーインタフェースコンポーネントがフォーカスを受けとったときの表示を変更する</a></li></ul></div><h3 id="SCR31-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR31-procedure">チェックポイント</h4><ol class="enumar"><li><p>キーボード操作でページ内の各要素にタブ移動する。</p></li><li><p>フォーカス表示が視覚的に認識可能である。</p></li></ol><h4 class="small-head" id="SCR31-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR32" id="SCR32"> </a>SCR32: クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</h2><div class="applicability"><h3 id="SCR32-applicability">適用（対象）</h3><div class="textbody"><p>HTML又はXHTMLで使用されるスクリプト。</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-identified">
+				達成基準 3.3.1 (Error Identification)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-identified">
+						How to Meet 3.3.1 (Error Identification)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/minimize-error-identified.html">
+						達成基準 3.3.1 (Error Identification)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-suggestions">
+				達成基準 3.3.3 (Error Suggestion)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-suggestions">
+						How to Meet 3.3.3 (Error Suggestion)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/minimize-error-suggestions.html">
+						達成基準 3.3.3 (Error Suggestion)を理解する
+					</a></li></ul></li></ul><h3 id="SCR32-description">解説</h3><div class="textbody"><p>この実装方法の目的は、クライアントサイドでフォームフィールドの検証に失敗したときにエラーメッセージを表示する方法について説明することである。アンカー要素はリスト中でエラーメッセージを表示させる際に使用され、検証が必要なフィールドの上に挿入される。フォーカスをエラーメッセージの場所に移し、利用者の注意を引くために、アンカー要素がエラーメッセージに使用される。アンカー要素の<code>href</code>は、エラーがみつかったフィールドへのページ内リンクを含む。</p><p>配置されたアプリケーションにおいて、もしJavaScriptが無効になっていれば、クライアントサイドの検証は行われない。そのため、この実装方法はスクリプトが適合性において信頼できる、又はサーバーサイドの検証技術があらゆるエラーを発見し、エラーを含むフィールドの情報とともにページを返すように用いられている場合のみ、十分であるといえる。</p></div><h3 class="small-head" id="SCR32-examples">事例</h3><h4 class="small-head" id="SCR32-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例は必須のフィールドを検証し、さらに特定の書式が必要なフィールドを検証する。エラーがみつかったとき、スクリプトはエラーメッセージの一覧をDOMに挿入し、フォーカスをそこへ移動する。</p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR32/form2.jpg" class="eximg" alt="サンプルの画面イメージ：スクリーンショットは、正しく記入が行われていないいくつかのフィールドのエラーメッセージをあらわしている。エラーメッセージはリンクリストでフォームの先頭近くに現れる。"/><p> <em>HTML及びJavascriptのコード</em> </p><p>これは事例のフォームのHTMLである：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html lang="ja"&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;    
+        &lt;title&gt;フォームの検証&lt;/title&gt;
+        &lt;link href="css/validate.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;script type="text/javascript" src="scripts/validate.js"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;フォームの検証&lt;/h1&gt;
+
+        &lt;p&gt;以下のフォームは、もしスクリプトが利用可能であれば送信前に検証されるが、
+		そうでなければサーバー上で検証される。任意と書かれた以外のすべての
+		フィールドは必須である。送信時にエラーがみつかった場合、フォームはキャンセルされて
+		エラー一覧がフォームの先頭に表示される。&lt;/p&gt;
+
+        &lt;p&gt; 下に貴方の情報を入力してください。 &lt;/p&gt;
+
+        &lt;h2&gt;フォームの検証&lt;/h2&gt;
+
+        &lt;form id="personalform" method="post" action="index.php"&gt;
+            &lt;div class="validationerrors"/&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;個人情報詳細&lt;/legend&gt;
+                &lt;p&gt;
+                    &lt;label for="forename"&gt;名前を入力してください&lt;/label&gt;
+                    &lt;input type="text" size="20" name="forename" id="forename" class="string"
+                        value=""/&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="age"&gt;年齢を入力してください&lt;/label&gt;
+                    &lt;input type="text" size="20" name="age" id="age" class="number" value=""/&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="email"&gt;電子メールアドレスを入力してください&lt;/label&gt;
+                    &lt;input type="text" size="20" name="email" id="email" class="email" value=""/&gt;
+                &lt;/p&gt;
+            &lt;/fieldset&gt;
+            &lt;p&gt;
+                &lt;input type="submit" name="signup" value="登録"/&gt;
+            &lt;/p&gt;
+        &lt;/form&gt;
+        &lt;h2&gt;2番目のフォーム&lt;/h2&gt;
+        &lt;form id="secondform" method="post" action="index.php#focuspoint"&gt;
+            &lt;div class="validationerrors"/&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;2番目のフォームの詳細&lt;/legend&gt;
+                &lt;p&gt;
+                    &lt;label for="suggestion"&gt;提案内容を入力&lt;/label&gt;
+                    &lt;input type="text" size="20" name="suggestion" id="suggestion" 
+                      class="string" value=""/&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="optemail"&gt;貴方のメールアドレスを入力してください（任意）&lt;/label&gt;
+                    &lt;input type="text" size="20" name="optemail" id="optemail"
+                        class="optional email" value=""/&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="rating"&gt;この提案を評価してください&lt;/label&gt;
+                    &lt;input type="text" size="20" name="rating" id="rating" 
+                      class="number" value=""/&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;label for="jibberish"&gt;合言葉を入力してください（任意）&lt;/label&gt;
+                    &lt;input type="text" size="20" name="jibberish" id="jibberish" value=""/&gt;
+                &lt;/p&gt;
+
+            &lt;/fieldset&gt;
+            &lt;p&gt;
+                &lt;input type="submit" name="submit" value="提案の追加"/&gt;
+            &lt;/p&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></div><div class="textbody"><p>以下は検証を行ってエラーメッセージを挿入するJavaScriptである：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+window.onload = initialise;
+
+function initialise()
+{
+   var objForms = document.getElementsByTagName('form');
+   var iCounter;
+
+   // フォームそれぞれにイベント・ハンドラを追加
+   for (iCounter=0; iCounter&lt;objForms.length; iCounter++)
+   {
+      objForms[iCounter].onsubmit = function(){return validateForm(this);};
+   }
+}
+
+
+// フォームのイベント・ハンドラ
+function validateForm(objForm)
+{
+   var arClass = [];
+   var iErrors = 0;
+   var objField = objForm.getElementsByTagName('input');
+   var objLabel = objForm.getElementsByTagName('label');
+   var objList = document.createElement('ol');
+   var objError, objExisting, objNew, objTitle, objParagraph, objAnchor, objPosition;
+   var strLinkID, iFieldCounter, iClassCounter, iCounter;
+
+   // 部分識別子を固有にするため、
+   // フォームのid又はnameを取得する
+   if (objForm.id)
+   {
+      strLinkID = objForm.id + 'ErrorID';
+   }
+   else
+   {
+      strLinkID = objForm.name + 'ErrorID';
+   }
+
+   // validationクラスを探索するため、inputフォーム・コントロールをループする
+   for (iFieldCounter=0; iFieldCounter&lt;objField.length; iFieldCounter++)
+   {
+      // フィールドのクラスを取得し、適切なクラスを探す
+      arClass = objField[iFieldCounter].className.split(' ');
+      for (iClassCounter=0; iClassCounter&lt;arClass.length; iClassCounter++)
+      {
+         switch (arClass[iClassCounter])
+         {
+            case 'string':
+               if (!isString(objField[iFieldCounter].value, arClass))
+               {
+                  if (iErrors === 0)
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, strLinkID);
+                  }
+                  else
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, '');
+                  }
+                  iErrors++;
+               }
+               break;
+            case 'number':
+               if (!isNumber(objField[iFieldCounter].value, arClass))
+               {
+                  if (iErrors === 0)
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, strLinkID);
+                  }
+                  else
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, '');
+                  }
+                  iErrors++;
+               }
+               break;
+
+            case 'email' :
+               if (!isEmail(objField[iFieldCounter].value, arClass))
+               {
+                  if (iErrors === 0)
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, strLinkID);
+                  }
+                  else
+                  {
+                     logError(objField[iFieldCounter], objLabel, objList, '');
+                  }
+                  iErrors++;
+               }
+               break;
+         }
+      }
+   }
+
+   if (iErrors &gt; 0)
+   {
+      // validではない場合、エラーメッセージを表示する
+      objError = objForm.getElementsByTagName('div');
+      
+      // 存在しているエラーを探す
+      for (iCounter=0; iCounter&lt;objError.length; iCounter++)
+      {
+         if (objError[iCounter].className == 'validationerrors')
+         {
+            objExisting = objError[iCounter];
+         }
+      }
+
+      objNew = document.createElement('div');
+      objTitle = document.createElement('h2');
+      objParagraph = document.createElement('p');
+      objAnchor = document.createElement('a');
+
+      if (iErrors == 1)
+      {
+         objAnchor.appendChild(document.createTextNode('送信した中にエラーが1つあります'));
+      }
+      else
+      {
+         objAnchor.appendChild(document.createTextNode('送信した中にエラーが' + iErrors + '個あります'));
+      }
+      objAnchor.href = '#' + strLinkID;
+      objAnchor.className = 'submissionerror';
+
+      objTitle.appendChild(objAnchor);
+      objParagraph.appendChild(document.createTextNode('以下をご確認ください'));
+
+      objNew.className = 'validationerrors';
+
+      objNew.appendChild(objTitle);
+      objNew.appendChild(objParagraph);
+      objNew.appendChild(objList);
+      
+      // 既にエラーがある場合、新しいエラーと交換する。
+      // それ以外の場合、フォームの先頭に新しいエラーを追加する。
+      if (objExisting)
+      {
+         objExisting.parentNode.replaceChild(objNew, objExisting);
+      }
+      else
+      {
+         objPosition = objForm.firstChild;
+         objForm.insertBefore(objNew, objPosition);
+      }
+
+      // 待ち時間の設定
+      setTimeout(function() { objAnchor.focus(); }, 50);
+      
+      // フォームを送信しない
+      objForm.submitAllowed = false;
+      return false;
+   }
+
+   // フォームを送信
+   return true;
+}
+
+// 問題のあるフィールドコントロールを指すリスト項目にリンクを追加する関数
+function addError(objList, strError, strID, strErrorID)
+{
+   var objListItem = document.createElement('li');
+   var objAnchor = document.createElement('a');
+   
+   // フォーム・コントロールへの部分識別子
+   objAnchor.href='#' + strID;
+
+   // エラーの見出しに向けたターゲットにする
+   if (strErrorID.length &gt; 0)
+   {
+      objAnchor.id = strErrorID;
+   }
+
+   // エラーメッセージ用のラベルプロンプトを使う
+   objAnchor.appendChild(document.createTextNode(strError));
+   // フォーム・コントロールにフォーカスを当てるために、キーボード及びマウスイベントを追加する
+   objAnchor.onclick = function(event){return focusFormField(this, event);};
+   objAnchor.onkeypress = function(event){return focusFormField(this, event);};
+   objListItem.appendChild(objAnchor);
+   objList.appendChild(objListItem);
+}
+
+function focusFormField(objAnchor, objEvent)
+{
+   var strFormField, objForm;
+
+   // キーボードでもリンクが機能するようにする
+   if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
+   {
+      if (objEvent.keyCode != 13 &amp;amp;&amp;amp; objEvent.keyCode != 32)
+      {
+         return true;
+      }
+   }
+
+   // フォーム・コントロールにフォーカスを当てる
+   strFormField = objAnchor.href.match(/[^#]\w*$/);
+   objForm = getForm(strFormField);
+   objForm[strFormField].focus();
+   return false;
+}
+
+// 与えられたフォームフィールドの名前から、フォーム要素を返す関数
+function getForm(strField)
+{
+   var objElement = document.getElementById(strField);
+
+   // 適切なフォームを探す
+   do
+   {
+      objElement = objElement.parentNode;
+   } while (!objElement.tagName.match(/form/i) &amp;amp;&amp;amp; objElement.parentNode);
+
+   return objElement;
+}
+
+// リスト中のエラーを記録する関数
+function logError(objField, objLabel, objList, strErrorID)
+{
+   var iCounter, strError;
+
+   // エラープロンプトのラベルを探す
+   for (iCounter=0; iCounter&lt;objLabel.length; iCounter++)
+   {
+      if (objLabel[iCounter].htmlFor == objField.id)
+      {
+         strError = objLabel[iCounter].firstChild.nodeValue;
+      }
+   }
+
+   addError(objList, strError, objField.id, strErrorID);
+}
+
+// 検証ルーティン - 要求事項として
+
+function isString(strValue, arClass)
+{
+   var bValid = (typeof strValue == 'string' &amp;amp;&amp;amp; strValue.replace(/^\s*|\s*$/g, '') 
+     !== '' &amp;amp;&amp;amp; isNaN(strValue));
+
+   return checkOptional(bValid, strValue, arClass);
+}
+
+function isEmail(strValue, arClass)
+{
+   var objRE = /^[\w-\.\']{1,}\@([\da-zA-Z\-]{1,}\.){1,}[\da-zA-Z\-]{2,}$/;
+   var bValid = objRE.test(strValue);
+
+   return checkOptional(bValid, strValue, arClass);
+}
+
+function isNumber(strValue, arClass)
+{
+   var bValid = (!isNaN(strValue) &amp;amp;&amp;amp; strValue.replace(/^\s*|\s*$/g, '') !== '');
+
+   return checkOptional(bValid, strValue, arClass);
+}
+
+function checkOptional(bValid, strValue, arClass)
+{
+   var bOptional = false;
+   var iCounter;
+
+   // optionalについて確認
+   for (iCounter=0; iCounter&lt;arClass.length; iCounter++)
+   {
+      if (arClass[iCounter] == 'optional')
+      {
+         bOptional = true;
+      }
+   }
+
+   if (bOptional &amp;amp;&amp;amp; strValue.replace(/^\s*|\s*$/g, '') === '')
+   {
+      return true;
+   }
+
+   return bValid;
+   }</code></pre></div><div class="textbody"><p>このコードの実装サンプルは、PHP、JavaScript、CSS及びXHTMLで実装されている：<a href="/WAI/WCAG20/Techniques/working-examples/SCR32/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR32/index.php" class="ex-ref">フォーム検証の例</a></p></div></div><h3 id="SCR32-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83">G83: 入力が完了していない必須項目を特定するために、テキストの説明文を提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85">G85: 利用者の入力が要求されたフォーマット又は値ではなかった際に、テキストの説明文を提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18">SCR18: クライアントサイドのバリデーション及びアラートを提供する</a></li></ul></div><h3 id="SCR32-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR32-procedure">チェックポイント</h4><p>アンカータグと上記の実装方法による適切なスクリプトを用いて、エラーメッセージを作成する。</p><ol class="enumar"><li><p>ページを読み込む。</p></li><li><p>エラーメッセージと結びつけられたフィールドに適切な値を入力し、エラーメッセージが表示されない。</p></li><li><p>エラーメッセージと結びつけられたフィールドに不適切な値を入力し、そのフィールドに適したエラーメッセージが表示される。</p></li><li><p>エラーメッセージにフォーカスが当たる。</p></li><li><p>表示されたエラーメッセージと関連するフィールドに適切な値を入力し、エラーメッセージがなくなる。</p></li><li><p>アンカータグによってエラーメッセージと関連付けられたすべてのフィールドに対して、繰り返す。</p></li></ol><div class="note"><p class="prefix"><em>注記: </em>上記の手順を、支援技術を用いて実行することも推奨する。</p></div><h4 class="small-head" id="SCR32-results">判定基準</h4><ul><li><p>2、3、4 及び 5 の全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR33" id="SCR33"> </a>SCR33: スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</h2><div class="applicability"><h3 id="SCR33-applicability">適用（対象）</h3><div class="textbody"><p>スクリプトでコントロールされる、コンテンツのスクロールをサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">
+				達成基準 2.2.1 (Timing Adjustable)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-required-behaviors">
+						How to Meet 2.2.1 (Timing Adjustable)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html">
+						達成基準 2.2.1 (Timing Adjustable)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
+				達成基準 2.2.2 (Pause, Stop, Hide)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
+						How to Meet 2.2.2 (Pause, Stop, Hide)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-pause.html">
+						達成基準 2.2.2 (Pause, Stop, Hide)を理解する
+					</a></li></ul></li></ul><h3 id="SCR33-description">解説</h3><div class="textbody"><p>この実装方法の目的は、スクロールするコンテンツがスクリプトで作成されている場合に、利用者にそのスクロールを停止する手段を提供することである。スクロールするコンテンツは、ロービジョンや認知障害の利用者にとって読みにくかったり、全く読めなかったりする。また、動くものは、一部の人々にとって、ウェブページのほかの部分に集中することへの妨げとなる。</p></div><h3 class="small-head" id="SCR33-examples">事例</h3><h4 class="small-head" id="SCR33-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この例では、CSS及びJavaScriptを用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p><p>この方法では、JavaScript又はCSSがサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p><p>下のコードは、webSemanticによるアクセシブルなスクローラー（2008年7月）の修正版である。</p><p>XHTML部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;div id="scroller"&gt;
+&lt;p id="tag"&gt;このテキストはスクロールし、JavaScript及びCSSが
+サポートされていて有効なときは、停止/スクロールのリンクが提供される。&lt;/p&gt;
+&lt;/div&gt;
+...</code></pre></div><div class="textbody"><p>CSS部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+body {font:1em verdana,sans-serif; color:#000; margin:0}
+
+/* position:relative及びoverflow:hiddenは必須 */
+#scroller { position:relative; overflow:hidden; width:15em; border:1px solid #008080; }
+
+/* スクロールするテキスト用のフォーマットを追加 */
+#tag { margin:2px 0; }
+
+/* #testPは#tagのテキスト変更に関するプロパティを全て含む */
+#testP { visibility:hidden; position:absolute; white-space:nowrap; } 
+
+/* ページ先頭の目印として利用され、かつ幅を制限する */
+#top { width:350px; margin:auto; }
+...</code></pre></div><div class="textbody"><p>JavaScript部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+var speed=50        // スクロール速度
+var step=3          // 動きのスムーズ度合い
+var StartActionText= "Scroll"  // 開始させるリンクのテキスト
+var StopActionText = "Pause"   // 停止させるリンクのテキスト
+
+var x, scroll, divW, sText=""
+
+function onclickIE(idAttr,handler,call){
+  if ((document.all)&amp;amp;&amp;amp;(document.getElementById)){idAttr[handler]="Javascript:"+call}
+}
+
+function addLink(id,call,txt){
+  var e=document.createElement('a')
+  e.setAttribute('href',call)
+  var linktext=document.createTextNode(txt)
+  e.appendChild(linktext)
+  document.getElementById(id).appendChild(e)
+}
+
+function getElementStyle() {
+    var elem = document.getElementById('scroller');
+    if (elem.currentStyle) {
+        return elem.currentStyle.overflow;
+    } else if (window.getComputedStyle) {
+        var compStyle = window.getComputedStyle(elem, '');
+        return compStyle.getPropertyValue("overflow");
+    }
+    return "";
+}
+
+function addControls(){
+// 最初にCSSサポートをテスト
+// style要素又は外部ファイルで定義されたoverflowプロパティ値をテスト
+if (getElementStyle()=="hidden") {
+  var f=document.createElement('div');
+  f.setAttribute('id','controls');
+  document.getElementById('scroller').parentNode.appendChild(f);
+  addLink('controls','Javascript:clickAction(0)',StopActionText);
+  onclickIE(document.getElementById('controls').childNodes[0],"href",'clickAction(0)');
+  document.getElementById('controls').style.display='block';
+  }
+}
+
+function stopScroller(){clearTimeout(scroll)}
+
+function setAction(callvalue,txt){
+  var c=document.getElementById('controls')
+  c.childNodes[0].setAttribute('href','Javascript:clickAction('+callvalue+')')
+  onclickIE(document.getElementById('controls').childNodes[0],"href",'clickAction
+
+('+callvalue+')')
+  c.childNodes[0].firstChild.nodeValue=txt
+}
+
+function clickAction(no){
+  switch(no) {
+    case 0:
+      stopScroller();
+      setAction(1,StartActionText);
+      break;
+    case 1:
+      startScroller();
+      setAction(0,StopActionText);
+  }
+}
+
+function startScroller(){
+  document.getElementById('tag').style.whiteSpace='nowrap'
+  var p=document.createElement('p')
+  p.id='testP'
+  p.style.fontSize='25%' //mozilla向け修正 使用する前に4倍する
+  x-=step
+  if (document.getElementById('tag').className) p.className=document.getElementById
+
+('tag').className
+  p.appendChild(document.createTextNode(sText))
+  document.body.appendChild(p)
+  pw=p.offsetWidth
+  document.body.removeChild(p)
+  if (x&lt;(pw*4)*-1){x=divW}
+  document.getElementById('tag').style.left=x+'px'
+  scroll=setTimeout('startScroller()',speed)
+}
+
+function initScroller(){
+  if (document.getElementById &amp;amp;&amp;amp; document.createElement &amp;amp;&amp;amp; document.body.appendChild) {
+    addControls();
+    divW=document.getElementById('scroller').offsetWidth;
+    x=divW;
+    document.getElementById('tag').style.position='relative';
+    document.getElementById('tag').style.left=divW+'px';
+    var ss=document.getElementById('tag').childNodes;
+    for (i=0;i&lt;ss.length;i++) {sText+=ss[i].nodeValue+" "};
+    scroll=setTimeout('startScroller()',speed);
+  }
+}
+
+function addLoadEvent(func) {
+  if (!document.getElementById | !document.getElementsByTagName) return
+  var oldonload = window.onload
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload()
+      func()
+    }
+  }
+}
+
+addLoadEvent(initScroller)</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR33/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR33/Overview.html" class="ex-ref">コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</a></p></div></div><h3 id="SCR33-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.websemantics.co.uk/tutorials/accessible_scroller/">webSemantics Accessible Scroller</a>
+               </p></li></ul></div><h3 id="SCR33-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G4">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</a></li></ul></div><h3 id="SCR33-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR33-procedure">チェックポイント</h4><ol class="enumar"><li><p>スクロールするコンテンツを停止する仕組みが提供されている。</p></li><li><p>停止する仕組みを用いて、コンテンツのスクロールが停止する。</p></li><li><p>スクロールが停止し、自動的に再起動しない。</p></li><li><p>停止中のコンテンツを再起動できる仕組みが提供されている。</p></li><li><p>提供されている再起動の仕組みを用いて、コンテンツのスクロールを再起動する。</p></li><li><p>停止していた位置からスクロールが再開される。</p></li></ol><h4 class="small-head" id="SCR33-results">判定基準</h4><ul><li><p>3.及び6.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR34" id="SCR34"> </a>SCR34: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</h2><div class="applicability"><h3 id="SCR34-applicability">適用（対象）</h3><div class="textbody"><p>クライアントサイド・スクリプティング</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">SC 1.4.4</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html"> Understanding SC 1.4.4</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">SC 1.4.8</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html"> Understanding SC 1.4.8</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.19.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/client-side-script#SCR34">User Agent Support Notes for SCR34</a>.</p></div><h3 id="SCR34-description">解説</h3><div class="textbody"><p>この実装方法の目的は、文字サイズが縮小・拡大されるのに従って、適切に拡大・縮小するように要素のサイズ及びポジションを定めることである。</p><p>ここに要素のサイズとポジションを決めるJavaScriptの4つプロパティがある：</p><ul><li><p>
+                        <code>offsetHeight</code> （ピクセルでの要素の高さ）</p></li><li><p>
+                        <code>offsetWidth</code> （ピクセルでの要素の幅）</p></li><li><p>
+                        <code>offsetLeft</code> （ピクセルでの親要素（offsetParent）の左からの距離）</p></li><li><p>
+                        <code>offsetTop</code> （ピクセルでの親要素（offsetParent）の上からの距離）</p></li></ul><p><code>offsetHeight</code>や<code>offsetWidth</code>を用いて高さや幅を定めることは簡単である、しかし、オブジェクトの左とトップの位置を絶対配置の値として定める時、親要素を考える必要がある。下記において、<code>calculatePosition</code>関数は、要素におけるすべての親ノードの最終的な値が決定するまで繰り返されている。
+                 その関数は<code>objElement</code>（当該の要素の名前）とオフセットプロパティ（<code>offsetLeft</code>又は<code>offsetTop</code>）の2つの引数を取っている。</p></div><h3 class="small-head" id="SCR34-examples">事例</h3><h4 class="small-head" id="SCR34-ex1">事例 1</h4><div class="example"><div class="textbody"><p>Javascriptの関数：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+function calculatePosition(objElement, strOffset)
+{
+    var iOffset = 0;
+
+    if (objElement.offsetParent)
+    {
+        do 
+        {
+            iOffset += objElement[strOffset];
+            objElement = objElement.offsetParent;
+        } while (objElement);
+    }
+
+    return iOffset;
+}</code></pre></div><div class="textbody"><p>次の事例は、上の関数がオブジェクトを、参照オブジェクトの下、かつ、左から同じ距離に配置するために用いられていることを示している：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+// Get a reference object
+var objReference = document.getElementById('refobject');
+// Get the object to be aligned
+var objAlign = document.getElementById('lineup');
+
+objAlign.style.position = 'absolute';
+objAlign.style.left = calculatePosition(objReference, 'offsetLeft') + 'px';
+objAlign.style.top = calculatePosition(objReference, 'offsetTop') + objReference.offsetHeight + 'px';</code></pre></div></div><h3 id="SCR34-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It</a>
+               </p></li></ul></div><h3 id="SCR34-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14">C14: em単位を用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C17">C17: Scaling form elements which contain text</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C20">C20: カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C24">C24: コンテナのサイズにCSSのパーセント値を用いる</a></li><li/></ul></div><h3 id="SCR34-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR34-procedure">チェックポイント</h4><ol class="enumar"><li><p>文字サイズの変更とともにテキストコンテナのサイズを調整するように設計されているページを開く。</p></li><li><p>ブラウザの文字サイズ調節を使って200%のサイズまで大きくする。（ズーム機能は使用しない）</p></li><li><p>テキストコンテナのサイズが文字サイズに合わせて調整される。</p></li><li><p>文字サイズを大きくした結果、どの文字も「切り取られ」たり、見えなくなっていたりしない。</p></li></ol><h4 class="small-head" id="SCR34-results">判定基準</h4><ul><li><p>3.及び 4.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR35" id="SCR35"> </a>SCR35: アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</h2><div class="applicability"><h3 id="SCR35-applicability">適用（対象）</h3><div class="textbody"><p>HTML又はXHTMLで使用されるスクリプト。</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (Keyboard)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (Keyboard)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (Keyboard)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
+				達成基準 2.1.3 (Keyboard (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
+						How to Meet 2.1.3 (Keyboard (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/keyboard-operation-all-funcs.html">
+						達成基準 2.1.3 (Keyboard (No Exception))を理解する
+					</a></li></ul></li></ul><h3 id="SCR35-description">解説</h3><div class="textbody"><p>この実装方法の目的は、キーボードでアクセス可能なコントロールに加えることで、キーボードでアクセス可能になるスクリプトの関数を呼び出す方法について説明することである。スクリプトによる動きが確実にキーボードから呼び出されるように、それらの動きは「ネイティブに実行可能な」HTML要素（リンク及びボタン）に関連付けられている。これらの要素のonclickイベントは機器に依存していない。「onclick」という表現はマウスに関連付けられているようにも思えるが、onclickイベントは実際のところ、リンク又はボタンのデフォルトの動きにマッピングされている。デフォルトの動きは、利用者がマウスで要素をクリックしたときに発生するが、要素にフォーカスしてEnterキーやスペースキーを押したとき及び、他のアクセシビリティAPI によってトリガーされたときにも発生する。</p><p>この実装方法はクライアントサイドスクリプトに依存しているが、スクリプトが利用できない環境に対する、代替としての実装又は説明として意味がある。アンカー要素を使ってJavaScriptによるアクションを呼び出すとき、代替としての実装又は説明は<code>href</code>属性によって提供される。ボタンを使用するときは、フォームの送信によって提供される。</p></div><h3 class="small-head" id="SCR35-examples">事例</h3><h4 class="small-head" id="SCR35-ex1">事例 1</h4><div class="example"><div class="textbody"><p>スクリプトを実行するリンクで、スクリプトをサポートしていないブラウザに対して代替手段を持たないもの。この方法は、スクリプトがアクセシビリティ・サポーテッドな技術に依存しているときのみに使用されるべきである。</p><p>このリンクからナビゲートしたくないのではあるが、これを実際のリンクにし、適切なイベントを得るために、<code>a</code>要素上のhref属性を使わなければならない。この事例では、我々は「#」をリンクターゲットとして使用しているが、何を使用しても良い。このリンクからナビゲートされることはない。</p><p>doStuff()イベントハンドリング関数の最後にある「return false;」は、ブラウザにそのURIへ移動しないよう指示している。それがなければ、ページはスクリプト実行後に再読み込みされることになる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script&gt; 
+function doStuff()
+ {
+  //do stuff
+    return false;
+  }
+&lt;/script&gt;
+&lt;a href="#" onclick="return doStuff();"&gt;do stuff&lt;/a&gt; </code></pre></div></div><h4 class="small-head" id="SCR35-ex2">事例 2</h4><div class="example"><div class="textbody"><p>スクリプトを実行するリンクであるが、スクリプトが実行可能でなければ他のページに移動させるもの。この方法はスクリプトに依存しないサイトで、移動先がスクリプトと同じ機能を提供している場合にのみ使用される。この例は、hrefが実在するページであるdostuff.htmに設定されていること以外は、事例 1と同じである。dostuff.htmでは、スクリプトと同じ機能を提供しなければならない。doStuff()イベントハンドリング関数の最後にある「return false;」が、ブラウザにそのURIへ移動しないように指示している。そうでなければ、ブラウザはスクリプト実行後にdostuff.htmに移動してしまう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script&gt; 
+function doStuff() 
+ {  
+  //do stuff  
+  return false; 
+ }
+&lt;/script&gt;
+&lt;a href="dostuff.htm" onclick="return doStuff();"&gt;do stuff&lt;/a&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR35/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jslink.html" class="ex-ref">JavaScriptを用いてアクションリンクを作成</a></p></div></div><h4 class="small-head" id="SCR35-ex3">事例 3</h4><div class="example"><div class="textbody"><p>スクリプトを実行して、かつスクリプトを使わない利用者のためにフォーム送信を代替とするボタン。このアプローチは、スクリプトに依存しないサイトで、フォームの送信がスクリプトと同じ機能を提供できる場合にのみ使用できる。onsubmit="return false;"はフォームから送信されるのを防ぐ。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script&gt;
+  function doStuff()
+ {
+     //do stuff
+ }
+&lt;/script&gt;
+&lt;form action="doStuff.aspx" onsubmit="return false;"&gt;
+ &lt;input type="submit" value="Do Stuff" onclick="doStuff();" /&gt;
+&lt;/form&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR35/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jsbutton.html" class="ex-ref">JavaScriptを用いてアクションボタンを作成</a></p></div></div><h4 class="small-head" id="SCR35-ex4">事例 4</h4><div class="example"><div class="textbody"><p>スクリプトを実行するボタンで、<code>input type="image"</code>を用いて実装されているもの。<code>input</code>には、画像と等価のテキストを提供するために、タイトル属性を追加しなければならないことに注意する。この方法は、スクリプトに依存しているときのみに利用すべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script&gt;
+  function doStuff()
+  {
+     //do stuff
+   return false;
+  }
+&lt;/script&gt;
+&lt;input type="image" src="stuff.gif" title="Do stuff" onclick="return doStuff();" /&gt; </code></pre></div></div><h4 class="small-head" id="SCR35-ex5">事例 5</h4><div class="example"><div class="textbody"><p>スクリプトを実行するボタンで、<code>input type="submit"</code>、<code>input type="reset"</code>又は<code>input type="button"</code>のいずれかを用いて実装されているもの。この方法は、スクリプトに依存しているときのみに利用すべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;input type="submit" onclick="return doStuff();" value="Do Stuff" /&gt;</code></pre></div></div><h4 class="small-head" id="SCR35-ex6">事例 6</h4><div class="example"><div class="textbody"><p>スクリプトを実行するボタンで、 <code>button</code>…<code>/button</code>を用いて実装されているもの。これは、ボタンの見た目をより詳細に調整したいときに有効である。この特定の例では、ボタンはアイコンとテキストの両方を含んでいる。この方法は、スクリプトに依存しているときのみに利用すべきである。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;button onclick="return doStuff();"&gt;
+ &lt;img src="stuff.gif" alt="stuff icon"&gt;
+ Do Stuff
+&lt;/button&gt;</code></pre></div></div><h3 id="SCR35-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/REC-html40/interact/scripts.html">HTML 4.01 Scripts</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/TR/REC-html40/interact/forms.html">HTML 4.01 Forms</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/TR/REC-html40/struct/links.html">HTML 4.01 Links</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/DOM/DOMTR">Document Object Model (DOM) Technical Reports</a>
+               </p></li></ul></div><h3 id="SCR35-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G108">G108: マークアップを用いて、名前及び役割をユーザーエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H91">H91: HTMLのフォーム・コントロール及びリンクを用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR20">SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR24">SCR24: プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F42">F42: 達成基準 1.3.1 及び 達成基準 2.1.1 の不適合事例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F59">F59: 達成基準 4.1.2 の不適合事例 － スクリプトを用いて、HTMLのdiv要素又はspan要素をユーザーインタフェースのコントロールにしている</a></li></ul></div><h3 id="SCR35-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR35-procedure">チェックポイント</h4><p><code>a</code>、<code>button</code>、又は<code>input</code>要素と関連付けられたすべてのスクリプトのアクション：</p><ol class="enumar"><li><p>スクリプトをサポートするユーザーエージェントで：</p><ul><li><p>マウスを用い、コントロールをクリックする。</p></li><li><p>スクリプトのアクションが正しく実行される。</p></li><li><p>もしコントロールがアンカー要素なら、アンカー要素の<code>href</code>属性のURIが呼び出されない。</p></li><li><p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p></li><li><p>キーボードのフォーカスをコントロールにセットする。</p></li><li><p>Enterキーを押すことで、スクリプトのアクションを呼び出すことができる。</p></li><li><p>もしコントロールがアンカー要素なら、アンカー要素の<code>href</code>属性のURIが呼び出されない。</p></li></ul></li><li><p>スクリプトをサポートしていないユーザーエージェントで：</p><ul><li><p>マウスでコントロールをクリックする。</p></li><li><p>もしコントロールがアンカー要素なら、アンカー要素の<code>href</code>属性のURIが呼び出される。</p></li><li><p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p></li><li><p>キーボードのフォーカスをコントロールにセットする。</p></li><li><p>もしコントロールがアンカー要素なら、Enterキーを押すことでアンカー要素の<code>href</code>属性のURIが呼び出される。</p></li></ul></li></ol><h4 class="small-head" id="SCR35-results">判定基準</h4><ul><li><p>上記のチェックポイント全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR36" id="SCR36"> </a>SCR36: 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する</h2><div class="applicability"><h3 id="SCR36-applicability">適用（対象）</h3><div class="textbody"><p>動く、点滅する、又はテキストを更新し、静的なテキスト・ブロックを生成する全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">
+				達成基準 2.2.1 (Timing Adjustable)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-required-behaviors">
+						How to Meet 2.2.1 (Timing Adjustable)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-required-behaviors.html">
+						達成基準 2.2.1 (Timing Adjustable)を理解する
+					</a></li></ul></li></ul><h3 id="SCR36-description">解説</h3><div class="textbody"><p>スペースが限られているために、スクロールするテキストを表示するウェブページがある。小さなテキストウィンドウの中でテキストをスクロールさせることにより、その速度にあわせて読むことができる利用者にはコンテンツが利用可能となるが、それよりも速度が読むのが遅い利用者や、支援技術の利用者にとっては問題となる。この実装方法では、動きを止めて、テキスト・ブロック全体を静的に利用可能にするメカニズムを提供する。テキストは別ウィンドウかページ中の（より大きな）セクションで利用可能になるだろう。そうすることで、利用者はテキストを自分の速度で読むことができる。</p><p>この実装方法は、動いているテキストが全て同時に画面に表示できない場合（例：長いチャットでの会話）には適用されない。</p><div class="note"><p class="prefix"><em>注記: </em><em>Note: </em>この実装方法は、不適合のコンテンツのための<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替バージョン</a>のページを表示するためのスタイルスイッチの実装方法とあわせて利用できる。詳細については、<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29.html" class="tech-ref">C29.html: </a>  (CSS)
+			 (CSS)及び<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/#http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替バージョンを理解する</a>を参照のこと。</p></div></div><h3 class="small-head" id="SCR36-examples">事例</h3><h4 class="small-head" id="SCR36-ex1">事例 1: スクロールするテキストを展開する</h4><div class="example"><div class="textbody"><p>大きなテキスト・ブロックがページ中の小さなマーキーの範囲をスクロールする。ボタンにより、利用者はスクロールを止め、テキスト・ブロック全体を表示することができる。</p><div class="note"><p class="prefix"><em>注記: </em>このコード例ではCSSとJavaScriptの両方が利用可能で有効になっている必要がある。 </p></div><p>CSS部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+#scrollContainer {
+        visibility: visible;
+        overflow: hidden;
+        top: 50px; left: 10px;
+        background-color: darkblue;
+      }
+      .scrolling {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+      }
+      .notscrolling {
+        width: 500px;
+        margin:10px;
+      }
+      #scrollingText {
+        top: 0px;
+        color: white;
+      }
+      .scrolling #scrollingText {
+        position: absolute;
+      }
+      &lt;/a&gt; </code></pre></div><div class="textbody"><p>スクリプト及びHTMLコンテンツ：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;script type="text/javascript"&gt;
+
+      var tid;
+      function init() {
+        var st = document.getElementById('scrollingText');
+        st.style.top = '0px';
+        initScrolling();
+      }
+      function initScrolling () {
+        tid = setInterval('scrollText()', 300);
+      }
+      function scrollText () {
+        var st = document.getElementById('scrollingText');
+        if (parseInt(st.style.top) &gt; (st.offsetHeight*(-1) + 8)) {
+          st.style.top = (parseInt(st.style.top) - 5) + 'px';
+        } else {
+          var sc = document.getElementById('scrollContainer');
+          st.style.top = parseInt(sc.offsetHeight) + 8 + 'px';
+        }
+      }
+      function toggle() {
+        var scr = document.getElementById('scrollContainer');
+        if (scr.className == 'scrolling') {
+          scr.className = 'notscrolling';
+          clearInterval(tid);
+           document.getElementById('scrollButton').value="格納";
+        } else {
+          scr.className = 'scrolling';
+          initScrolling();
+          document.getElementById('scrollButton').value="展開";
+        }
+      }
+  &lt;input type="button" id="scrollButton" value="展開" onclick="toggle()" /&gt;
+  &lt;div id="scrollContainer" class="scrolling"&gt;
+    &lt;div id="scrollingText" class="on"&gt;
+    .... スクロールするテキスト ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+... </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR36/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR36/scrolltext.html" class="ex-ref">スクロールするテキストを展開</a></p></div></div><h3 id="SCR36-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G4">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G187">G187: ユーザーエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR33">SCR33: スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR22">SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる</a></li></ul></div><h3 id="SCR36-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR36-procedure">チェックポイント</h4><p>この実装方法についての検証項目はない。</p><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR37" id="SCR37"> </a>SCR37: デバイス非依存な方法でカスタム・ダイアログを作成する</h2><div class="applicability"><h3 id="SCR37-applicability">適用（対象）</h3><div class="textbody"><p>スクリプトで使用されるHTML及びXHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-order">
+				達成基準 2.4.3 (Focus Order)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
+						How to Meet 2.4.3 (Focus Order)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-order.html">
+						達成基準 2.4.3 (Focus Order)を理解する
+					</a></li></ul></li></ul><h3 id="SCR37-description">解説</h3><div class="textbody"><p>コンテンツ制作者はしばしば、ブラウザによって提供されるポップアップウインドウを使わずに、独自のダイアログを作成したがる。これは通常、ダイアログのコンテンツを<code>div</code>の中に収めて、その<code>div</code>をコンテンツの上にCSSによる重なり順及び絶対配置を用いて配置するというやり方でおこなわれる。</p><p>これらのダイアログをアクセシブルにするには、いくつかの簡単なルールに従う必要がある。</p><ol class="enumar"><li><p>リンクやボタンの<code>onclick</code>イベントからダイアログを起動するスクリプトをトリガーにする。</p></li><li><p>ダイアログの<code>div</code>をDocument Object Model (DOM) の中、トリガーした要素の直後に配置する。トリガーした要素がフォーカスを保持し、ダイアログのコンテンツをその要素のあとに挿入することで、ダイアログの中のコンテンツがスクリーンリーダーの読み上げ順序で次になり、タブ順序も次になる。それでも、ダイアログは視覚的にページ上のあらゆる場所に絶対配置できる。これは、下の例のようにダイアログをHTMLの中で作成し、CSSで非表示にする方法又は、トリガーした要素の直後にスクリプトで挿入する方法のどちらでも実装できる。</p></li><li><p>ダイアログのdiv内部のHTMLが、その他のコンテンツと同じアクセシビリティガイドラインの要件を満たしていることを保証する。</p></li></ol><p>リンクがダイアログを開閉できたり、キーボードのフォーカスが外れるとダイアログが閉じるようにしたりすることはすばらしいが、必ずしも必要なわけではない。</p></div><h3 class="small-head" id="SCR37-examples">事例</h3><h4 class="small-head" id="SCR37-ex1">事例 1: ダイアログを開くオプションボタン</h4><div class="example"><div class="textbody"><p>この例のHTMLには、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能するdivがある。</p><p>トリガーとなる要素はボタンで、スクリプトはonclickイベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術はDOMの中の変化に気がつくことができる。</p><p>この例では、ダイアログ内の送信及びリセットボタンは単純に<code>div</code>に隠れている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> role="xhtml1"&gt;...
+&lt;button onclick="TogglePopup(event,true)"
+	name="pop0001"&gt;オプション&lt;/button&gt;
+
+&lt;div class="popover" id="pop0001"&gt;
+  &lt;h3&gt;並べ替えの情報を編集&lt;/h3&gt;
+  &lt;form action="default.htm" onsubmit="this.parentNode.style.display='none'; return false;" onreset="this.parentNode.style.display='none'; return false;"&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;並び順&lt;/legend&gt; 
+      &lt;input type="radio" name="order" id="order_alpha" /&gt;&lt;label for="order_alpha"&gt;アルファベット順&lt;/label&gt;
+      &lt;input type="radio" name="order" id="order_default" checked="true" /&gt;&lt;label for="order_default"&amp;amp;gt既定&lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;div class="buttons"&gt;
+  &lt;input type="submit" value="OK" /&gt;
+  &lt;input type="reset" value="キャンセル" /&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;
+...</code></pre></div><div class="textbody"><p><code>div</code>、見出し、及び<code>form</code>要素はCSSでダイアログに見えるようにスタイル付けされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+a { color:blue; }
+a.clickPopup img { border:none; width:0; }
+
+div.popover { position:absolute; display:none; border:1px outset; background-color:beige; font-size:80%; background-color:#eeeeee; color:black; }
+div.popover h3 { margin:0; padding:0.1em 0.5em; background-color:navy; color:white; }
+#pop0001 { width:20em; }
+#pop0001 form { margin:0; padding:0.5em; }
+#pop0001 fieldset { margin-bottom:0.3em; padding-bottom:0.5em; }
+#pop0001 input, #pop0001 label { vertical-align:middle; }
+#pop0001 div.buttons { text-align:right; }
+#pop0001 div.buttons input { width:6em; }
+...</code></pre></div><div class="textbody"><p>スクリプトはポップアップする<code>div</code>の表示を切り替え、表示させたり隠したりする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+function TogglePopup(evt,show)
+{
+	HarmonizeEvent(evt);
+	var src = evt.target;
+	if ("click" == evt.type)
+	{
+		evt.returnValue = false;
+	}
+	var popID = src.getAttribute("name");
+	if (popID)
+	{
+		var popup = document.getElementById(popID);
+		if (popup)
+		{
+			if (true == show)
+			{
+				popup.style.display = "block";
+			}
+			else if (false == show)
+			{
+				popup.style.display = "none";
+			}
+			else
+			{
+				popup.style.display = "block" == popup.style.display ? "none" : "block";
+			}
+			if ("block" == popup.style.display)
+			{
+				//window.alert(document.documentElement.scrollHeight);
+				popup.style.top = ((document.documentElement.offsetHeight - popup.offsetHeight) / 2 ) + 'px';
+				popup.style.left = ((document.documentElement.offsetWidth - popup.offsetWidth) / 2) + 'px';
+			}
+		}
+	}
+}
+
+function SubmitForm(elem)
+{ 
+	elem.parentNode.style.display='none'; 
+	return false;
+}
+
+function ResetForm(elem)
+{ 
+	elem.parentNode.style.display='none'; 
+	return false;
+}
+...</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR37/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR37/default.htm" class="ex-ref">ダイアログを開くオプションボタン</a></p></div></div><h3 id="SCR37-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w4a.info/2007/prog/8-shelly.pdf">W4A Paper: Accessibility for Simple to Moderate-Complexity DHTML Web Sites</a>  by Cynthia C. Shelly and George Young, Microsoft Corporation. (PDF Format)</p></li><li><p>Microsoft Developer Network Whitepaper:<a href="http://download.microsoft.com/download/0/f/5/0f5e941c-c495-401a-9031-eab8315da35e/writing_accessible_web_applications.doc"> Writing Accessible Web Applications</a> by Cynthia C. Shelly and George Young. (Microsoft Word Format)</p></li><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/ms695716.aspx">Microsoft Active Accessibility 2.0 SDK</a>. Includes Inspect32.exe and other MSAA tools.</p></li><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx">Instructions for the Inspect tool</a>
+               </p></li><li><p>
+                  <a href="http://www.eramp.com/david/name-role-value-using-inspect.htm">Using the Inspect tool to find name Name, Role and Value for Javascript</a>
+               </p></li><li><p>
+                  <a href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar.</a>. Allows examination of script-generated DOM in Microsoft Internet Explorer</p></li><li><p>
+                  <a href="http://getfirebug.com/">Firebug</a>. Allows examination of script-generated DOM in Firefox. </p></li></ul></div><h3 id="SCR37-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR26">SCR26: 動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G59">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a></li></ul></div><h3 id="SCR37-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR37-procedure">チェックポイント</h4><ol class="enumar"><li><p>ページ内のすべての場所から、ダイアログのトリガーとなるもので、ポップアップウインドウでないものを探す。</p></li><li><p>Tabキーでその場所に移動してEnterキーを押下することで、ダイアログを開くことができる。</p></li><li><p>開いたら、タブ順序でダイアログが次の位置にある。</p></li><li><p>ダイアログがボタン又はリンクのクリックイベントによってトリガーされている。</p></li><li><p>スクリプトによって生成されたDOMを検証できるツールを用いて、DOM内でダイアログが次にある。</p></li></ol><h4 class="small-head" id="SCR37-results">判定基準</h4><ul><li><p>2., 3., 4.及び5.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SCR38" id="SCR38"> </a>SCR38: Creating a conforming alternate version for a web page designed with progressive enhancement</h2><div class="applicability"><h3 id="SCR38-applicability">適用（対象）</h3><div class="textbody"><p>HTML with scripting.</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#cc1">
+					Conformance Requirement 1 (Conformance Level)
+				</a></li></ul><h3 id="SCR38-description">解説</h3><div class="textbody"><p>This objective of this technique is to offer a conforming alternate version for a web page designed with progressive enhancement. The technique demonstrates how to use a scripting technique to accomplish this by:</p><ol class="enumar"><li><p>Storing the initial pre-enhanced version of the web page so that it can act as a "conforming alternate version" for any later enhanced versions of the content; and</p></li><li><p>Inserting a mechanism into all enhanced versions of the web page which allows a user to revert the content back to the stored pre-enhanced Alternate Version.</p></li></ol><p>Web pages designed with progressive enhancement detect features in the web-enabled accessing device (size, capability and software) to allow those supported web technologies to be applied in layers on top of an HTML foundation. The basic content and functionality of such a web page are available through the HTML foundation to anyone using a more simple web-enabled accessing device, whilst enhanced versions of the page are created to suit the different features in more advanced accessing devices.</p><p>The current guidance for web pages delivered in alternate versions reads: "Note 4: Alternate versions may be provided to accommodate different technology environments or user groups. Each version should be as conformant as possible. One version would need to be fully conformant in order to meet conformance requirement 1." With regard to web pages designed with progressive enhancement this leaves the problem of which version to select as the one fully conformant version - all whilst trying to ensure that no set of users is disadvantaged by that choice.</p><p>One solution to this challenge is to select the pre-enhanced version of the web page (e.g. the DOM state created solely from the HTML in the source code in the absence of support for scripts, styles or non-HTML plugins) as the "fully conformant version", due to its broad reach, with regard to support, across all the possible web-enabled devices accessing the content.</p><div class="note"><p class="prefix"><em>注記: </em>This technique removes all scripts, styles, and plugins, but it is important to state that this is not required for conformance with WCAG 2.0. An author could use a similar technique, but retain a reduced set of styles and scripts in the “pre-enhanced” version.</p></div><p>While this technique offers a way to base conformance claims on a single version, authors should continue to work to ensure that each enhanced version of the web page is as conformant as possible.</p></div><h3 class="small-head" id="SCR38-examples">事例</h3><h4 class="small-head" id="SCR38-ex1">事例 1: Using JavaScript</h4><div class="example"><div class="textbody"><p>The example uses JavaScript in the "accToggle.js" file to store the initial pre-enhanced version of the web page, created solely from the HTML in the source code, so that it can act as a "conforming alternate version" for any later enhanced versions of the web page; and inserts a toggle link into all enhanced versions of the web page which allows a user to revert the web page back to the stored pre-enhanced "Conforming Alternate Version". Note: The "sayhello.js" file is simply there as an example payload external file, and is to be replaced by any other external scripts which are desired.</p><p>The script in the acctoggle.js file stores the pre-enhanced version - assigning the version the url postfix #accessible. Clicking the "WCAG 2.0 conforming alternate version" link (inserted as the first child of the <code>body</code> element in any enhanced versions) changes the url to include the postfix "#accessible" which then resets the html located in the <code>body</code> element and the <code>head</code> element to pre-enhanced code. The pre-enhanced state can be reached from the link, or directly from a url typed into the browser. In addition, a link is inserted into the pre-enhanced "Conforming Alternate Version" which allows the user to re-enhance the web page (something which can also be done using the web browser's back button).</p><p>acctoggle.js source code:</p><code>
+window.onload = function(event) {
+
+    // store pre-enhanced element content
+    var initialHead = document.head.innerHTML;
+    var initialBody = document.body.innerHTML;
+    var initialURL = location.href;
+    
+    var runOnce = function() {
+        // payload you want to run per page call - e.g. Google Analytics code
+    }
+    
+    var setup = function() {
+        // create conforming alternate version link
+
+        var toggleEnhanced = document.querySelector("#toggle_enhanced");
+        if (toggleEnhanced) {
+            toggleEnhanced.outerHTML = "";
+        }
+        
+        var nel = document.createElement("a");
+        nel.id = "acctoggle";
+        nel.setAttribute("href", "#accessible");
+        nel.innerHTML = "WCAG 2.0 conforming alternate version";
+        document.body.insertBefore(nel, document.body.firstChild);
+        
+        // payload
+        var s = document.createElement("SCRIPT");
+        s.setAttribute("src", "sayhello.js");
+        document.querySelector("HEAD").appendChild(s);   
+       }
+    
+    setup();
+    runOnce();
+    
+    window.onpopstate = function(event) {
+        if (location.href.indexOf("#accessible") != -1) {
+            // revert element contents to pre-enhanced version
+            document.head.innerHTML = initialHead;
+            document.body.innerHTML = initialBody;
+            
+            // create enhanced version link
+            var el = document.createElement("a");
+            el.id = "toggle_enhanced";
+            el.setAttribute("href", "");
+            el.innerHTML = "Enhanced version";
+            var back = function(e) {
+                 e.preventDefault();
+                 window.history.back();
+            }
+            el.addEventListener("click", back, false);
+            document.body.insertBefore(el, document.body.firstChild);
+        }
+        if (location.href == initialURL) {
+            setup();
+        }
+    };
+}
+		 </code><p>HTML web page source code:</p><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Evaluera Ltd&lt;/title&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;script src="accSwitch.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt; 
+        &lt;h1&gt;Test Page&lt;/h1&gt;
+        &lt;p&gt;Say: &lt;span id="change"&gt;Goodbye&lt;/span&gt;&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;			
+		 </code><p>sayhello.js source code</p><code>
+var change = document.querySelector("#change");
+change.innerText = "Hello";			
+		 </code></div></div><h4 class="small-head" id="SCR38-ex2">事例 2: Using EnhanceJS - A Javascript framework designed to improve the application of Progressive Enhancement</h4><div class="example"><div class="textbody"><p><a href="https://code.google.com/p/enhancejs/">EnhanceJS</a> is an open source JavaScript framework "designed to improve the application of Progressive Enhancement by first testing browser capabilities for key Javascript and CSS support before applying advanced styles and scripts to the page". In addition, the default EnhanceJS script automatically creates a toggle link in any post-enhanced versions of the page which allows a user to return the web page to its pre-enhanced state (in EnhanceJS with default settings this is called the "low bandwidth version"). The setting have been changed in EnhanceJS to indicate that the pre-enhanced state is to be considered the "WCAG 2.0 conforming alternate version", rather than the "low bandwidth version".</p><p>HTML Component:</p><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;script type="text/javascript" src="enhance.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        // Run capabilities test
+        enhance({
+            loadStyles: [
+                "example.css"
+            ], 
+            loadScripts: [
+                "example.js"
+            ],
+            // text shown in enhanced mode
+            forceFailText: "WCAG 2.0 conforming alternate version",
+            // text shown in accessible mode
+            forcePassText: "Enhanced version"
+        });
+    &lt;/script&gt;
+    &lt;/head&gt;
+    ....
+
+</code></div></div><h3 id="SCR38-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29#C29-sa1">Using Cookies</a></p></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29#C29-sa2">Progressive Enhancement and Unobtrusive JavaScript</a></p></li></ul></div><h3 id="SCR38-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G136">G136: 適合していないウェブページの先頭に、適合している代替バージョンへのリンクを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR4">SVR4: 適合している代替バージョンの表示に関する設定を利用者が行えるようにする</a></li></ul></div><h3 id="SCR38-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SCR38-procedure">チェックポイント</h4><ol class="enumar"><li><p>Check enhanced versions of the web page contain a link to the "Conforming Alternate Version".</p></li><li><p>Check that the alternate version is a <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conforming-alternate-versiondef" class="gl-ref">conforming alternate version</a> of the original page and that it conforms to WCAG 2.0 at the claimed conformance level.</p></li></ol><h4 class="small-head" id="SCR38-results">判定基準</h4><ul><li><p>Checks #1 and #2 are true. </p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><hr class="divider" title="End of techniques"/></div></div></div><div class="back"/></div><div class="footer"><p class="copyright">This Web page is part of <a href="Overview.html">Techniques for WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
+              </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

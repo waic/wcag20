@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>H85: optgroup要素を用いて、select要素内のoption要素をグループ化する | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/H85.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H84: select要素とボタンを併用して、アクションを実行するようにする" href="H84.html"><strong>前: </strong>
+        Technique H84</a></li><li><a title="H86: ASCIIアート、顔文字、及びリート語に代替テキストを提供する" href="H86.html"><strong>次: </strong>
+        Technique H86</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#H85-disclaimer">Important Information about Techniques</a></li><li><a href="#H85-applicability">適用（対象）</a></li><li><a href="#H85-description">解説</a></li><li><a href="#H85-examples">事例</a></li><li><a href="#H85-resources">参考リソース</a></li><li><a href="#H85-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="H85" id="H85"> </a>H85: optgroup要素を用いて、select要素内のoption要素をグループ化する</h1><div id="H85-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="H85-applicability">適用（対象）</h2><div class="textbody"><p>利用者の入力項目をまとめているHTML及びXHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
+				達成基準 1.3.1 (Info and Relationships)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (Info and Relationships)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (Info and Relationships)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.49.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/html#H85">User Agent Support Notes for H85</a>.</p></div><h2 id="H85-description">解説</h2><div class="textbody"><p>この実装方法の目的は、セレクトメニューの中の選択肢をグループ化することである。セレクトメニューは、複数選択式リストやコンボボックスといった、フォーム・コントロールの許容値の一組である。セレクトメニューには、関連する選択肢のグループが含まれることがある。単に「ダミー」の選択肢を使ってこれらのグループを区切るのではなく、セマンティンクに特定すべきである。これによって、ユーザーエージェントは、グループごとに選択肢を閉じておき、利用者が選択肢を素早く拾い読みできるようにしたり、利用者にとって興味のある選択肢がどのグループに属しているのかを示すことができる。また、長い項目を視覚的に分割して、利用者が簡単に自分が選びたい選択肢を発見することにも役立つ。</p><p>HTMLでは、<code>select</code>要素は複数選択式リストとコンボボックスの両方の生成に利用される。選択肢それぞれは、<code>option</code>要素で示される。選択肢をグループ化するには、<code>optgroup</code>要素の子要素に、関連する<code>option</code>要素を含める。グループに「<code>label</code>」属性でラベル付けすることで、利用者がそのグループに含まれているものは何か予想できるだろう。</p><p><code>optgroup</code>要素は<code>select</code>要素の直接の子要素、<code>option</code>要素は<code>optgroup</code>要素の直接の子要素として含めるべきとされる。<code>select</code>要素では、<code>optgroup</code>要素に1つだけ<code>option</code>要素を含めることもできるが、実はこのような利用法がデザインを意図したものでないか、コンテンツ制作者は検討すべきである。<code>optgroup</code>要素を入れ子にはできないので、<code>select</code>要素内では1段階のグループ化しかできない。</p></div><h2 class="small-head" id="H85-examples">事例</h2><h3 class="small-head" id="H85-ex1">事例 1</h3><div class="example"><div class="textbody"><p>次のコンボボックスは、好きな食べ物のデータをまとめたものである。利用者が好みのものを素早く選択できるように、食べ物の種類によってグループ化してある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/prog/someprog" method="post"&gt;
+    &lt;label for="food"&gt;あなたの好きな食べ物は？&lt;/label&gt;
+    &lt;select id="food" name="food"&gt;
+      &lt;optgroup label="Fruits"&gt;
+        &lt;option value="1"&gt;りんご&lt;/option&gt;
+        &lt;option value="3"&gt;バナナ&lt;/option&gt;
+        &lt;option value="4"&gt;桃&lt;/option&gt;
+        &lt;option value="5"&gt;...&lt;/option&gt;
+      &lt;/optgroup&gt;
+      &lt;optgroup label="野菜"&gt;
+        &lt;option value="2"&gt;にんじん&lt;/option&gt;
+        &lt;option value="6"&gt;きゅうり&lt;/option&gt;
+       &lt;option value="7"&gt;...&lt;/option&gt;
+     &lt;/optgroup&gt;
+     &lt;optgroup label="焼き菓子"&gt;
+       &lt;option value="8"&gt;アップルパイ&lt;/option&gt;
+       &lt;option value="9"&gt;チョコレートケーキ&lt;/option&gt;
+       &lt;option value="10"&gt;...&lt;/option&gt;
+     &lt;/optgroup&gt;
+   &lt;/select&gt;
+&lt;/form&gt; </code></pre></div></div><h3 class="small-head" id="H85-ex2">事例 2</h3><div class="example"><div class="textbody"><p>次の事例は、複数選択式リストで<code>optrgroup</code>要素をどのように用いるかを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/prog/someprog" method="post"&gt;
+    &lt;label for="related_techniques"&gt;&lt;strong&gt;関連する実装方法：&lt;/strong&gt;&lt;/label&gt;
+    &lt;select name="related_techniques" id="related_techniques" multiple="multiple" size="10"&gt;
+  &lt;optgroup label="一般的な実装方法"&gt;
+    &lt;option value="G1"&gt;G1: Adding a link at the top of each page ... &lt;/option&gt;
+    &lt;option value="G4"&gt;G4: Allowing the content to be paused and restarted ... &lt;/option&gt;
+    &lt;option value="G5"&gt;G5: Allowing users to complete an activity without any time... &lt;/option&gt;
+    &lt;option value="G8"&gt;G8: Creating an extended audio description for the ... &lt;/option&gt;
+    &lt;option value="G9"&gt;G9: Creating captions for live synchronized media... &lt;/option&gt;
+    &lt;option value="G10"&gt;G10: Creating components using a technology that ... &lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="HTMLの実装方法"&gt;
+    &lt;option value="H2"&gt;H2: Combining adjacent image and text links for the same ... &lt;/option&gt;
+    &lt;option value="H4"&gt;H4: Creating a logical tab order through links, form ... &lt;/option&gt;
+    &lt;option value="H24"&gt;H24: Providing text alternatives for the area ...
+    &lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="CSSの実装方法"&gt;
+    &lt;option value="C6"&gt;C6: Positioning content based on structural markup... &lt;/option&gt;
+    &lt;option value="C7"&gt;C7: Using CSS to hide a portion of the link text... &lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="SMILの実装方法"&gt;
+    &lt;option value="SM1"&gt;SM1: Adding extended audio description in SMIL 1.0... &lt;/option&gt;
+    &lt;option value="SM2"&gt;SM2: Adding extended audio description in SMIL 2.0... &lt;/option&gt;
+    &lt;option value="SM6"&gt;SM6: Providing audio description in SMIL 1.0... &lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="ARIAの実装方法"&gt;
+    &lt;option value="ARIA1"&gt;ARIA1: Using WAI-ARIA describedby... &lt;/option&gt;
+    &lt;option value="ARIA2"&gt;ARIA2: Identifying required fields with the "required"... &lt;/option&gt;
+    &lt;option value="ARIA3"&gt;ARIA3: Identifying valid range information with "valuemin" ... &lt;/option&gt;
+    &lt;option value="ARIA4"&gt;ARIA4: Using WAI-ARIA to programmatically identify form  ... &lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="不適合事例"&gt;
+    &lt;option value="F1"&gt;F1: Failure of SC 1.3.2 due to changing the meaning of content by... &lt;/option&gt;
+    &lt;option value="F2"&gt;F2: Failure of SC 1.3.1 due to using changes in text presentation... &lt;/option&gt;
+    &lt;option value="F3"&gt;F3: Failure of SC 1.1.1 due to using CSS to include images  ... &lt;/option&gt;
+    &lt;option value="F4"&gt;F4: Failure of SC 2.2.2 due to using text-decoration:blink ...&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;
+&lt;/form&gt; </code></pre></div></div><h2 id="H85-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT">HTML SELECT element</a></p></li><li><p><a href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP">HTML OPTGROUP element</a></p></li><li><p><a href="http://webaim.org/techniques/forms/">Creating Accessible Forms</a></p></li><li><p><a href="http://www.usability.com.au/resources/wcag2/">Accessible Forms using WCAG 2.0</a></p></li></ul></div><h2 id="H85-tests">検証</h2><div class="textbody"><h3 class="small-head" id="H85-procedure">チェックポイント</h3><ol class="enumar"><li><p>セレクトメニューに含まれる選択肢について、関連する選択肢としてグループ化すべきものがある。</p></li><li><p>関連する選択肢のグループが、<code>optgroup</code>要素でグループ化してある。</p></li></ol><h3 class="small-head" id="H85-results">判定基準</h3><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H84: select要素とボタンを併用して、アクションを実行するようにする" href="H84.html"><strong>前: </strong>
+        Technique H84</a></li><li><a title="H86: ASCIIアート、顔文字、及びリート語に代替テキストを提供する" href="H86.html"><strong>次: </strong>
+        Technique H86</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

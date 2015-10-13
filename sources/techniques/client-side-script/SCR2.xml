@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR2">
+   <short-name>キーボード及びマウスのイベント・ハンドラを両方とも用いる</short-name>
+   <applicability>
+      <p>スクリプトをサポートしているHTML及びXHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、マウスやフォーカスのイベントによって装飾画像が変化する、機器に依存しないイベントの使い方を説明することである。<code>onmouseover</code>やonmouseoutイベントを使って、マウスがページ中のある要素に重なるか、又は離れたときに装飾画像が変化するようにする。また、<code>onfocus</code>や<code>onblur</code>イベントを使って、要素がフォーカスされたか、フォーカスを失ったかによって画像を変更する。</p>
+    <p>下記の例では、アンカー要素の前に装飾画像がある。利用者がアンカータグにマウスオーバーすると、アンカータグの前の装飾画像が変化する。また、マウスがアンカーを離れると、画像は元に戻る。同じ画像の変化は、利用者がキーボードを使ってアンカー要素にフォーカスしたときにも起こる。フォーカスされたときに画像が変化し、フォーカスを失ったときには元の画像に戻る。これは、アンカー要素に<code>onmouseover</code>、<code>onmouseout</code>、<code>onfocus</code>及び<code>onblur</code>イベント・ハンドラを付加することで実現できる。このイベント・ハンドラはJavaScriptの関数でupdateImage()と呼ばれており、画像のsrc属性を変更する。updateImage()はonmouseover、onmouseout、onfocus、及びonblurイベントの応答として呼ばれる。</p>
+    <p>それぞれの画像には固有のIDが与えられている。このIDはどちらの画像が使われるかを表す論理値とともに、updateImage()に渡される:<code>updateImage(imgId, isOver);</code>。論理値trueは、マウスがアンカー要素に乗った場合、又はそれがフォーカスされた場合に渡される。falseは、マウスがアンカー要素から離れた場合、又はそれがフォーカスを失った場合に渡される。 updateImage()関数は、画像のIDを使用して画像を読み込み、その後に論理値の状態に応じてsrc属性を変更する。画像は装飾目的で使用されているので、alt属性値は空であることに注意する。</p>
+    <note><p class="prefix">サイズの近い画像を使用し、画像要素では幅と高さの属性値を指定することが望ましい。これは、画像が更新されることによりページのレイアウトが変化してしまうことを防ぐ。例では、同一サイズの画像が使用されている。</p>
+</note>
+  </description>
+   <examples>
+      <eg-group>
+      <code><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+ <html lang="ja">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>デバイス非依存な手法で画像を変化させる</title>
+ <script type="text/javascript">
+ /* このfunctionは、img要素のsrc属性値を変更する。
+  * param imgId - 変更する画像オブジェクトのID
+  * param isOver - true：マウスオーバーしたとき、又はオブジェクトがフォーカスを受け取ったとき
+  *                false：マウスオーバーを外したとき、又はフォーカスを外したとき
+ */
+ function updateImage(imgId, isOver) {
+   var theImage = document.getElementById(imgId);
+   if (theImage != null) { //could use a try/catch block for user agents supporting at least JavaScript 1.4
+                           // These browsers support try/catch - NetScape 6, IE 5, Mozilla, Firefox
+      if (isOver) {
+        theImage.setAttribute("src","yellowplus.gif");
+      }
+      else {
+        theImage.setAttribute("src","greyplus.gif");
+      }
+   }
+ }
+ </script>
+ </head>
+ <body>
+ <p>次のリンクにマウスオーバーするか、タブ移動でフォーカスを移動させ、
+ 画像が変化するか確認してください。</p>
+ <a href="http://www.w3.org/wai" onmouseover="updateImage('wai', true);" onfocus="updateImage('wai', true);"
+   onmouseout="updateImage('wai',false);" onblur="updateImage('wai',false);">
+ <img src="greyplus.gif" border="0" alt="" id="wai">
+   W3C Web Accessibility Initiative</a> &amp;
+ <a href="http://www.w3.org/International/" onmouseover="updateImage('i18n', true);" 
+   onfocus="updateImage('i18n',true);" onmouseout="updateImage('i18n',false);"
+   onblur="updateImage('i18n',false);">
+   <img src="greyplus.gif" border="0" alt="" id="i18n">
+   W3C Internationalization</a>
+ </body>
+ </html>]]></code>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <p>ウェブページを読み込み、マウス及びキーボードを用いてイベントを検証する。</p>
+      <olist>
+        <item>
+          <p>ウェブページが読み込まれたとき、“通常の”画像が期待通りに表示されている。</p>
+        </item>
+        <item><p>マウスを使用</p>
+				<olist><item><p>イベント・ハンドラを含む要素の上にマウスを移動する（この事例ではアンカー要素）。元の画像が期待されている画像に変化する。</p></item><item><p>マウスを要素から外す。画像が“通常の”画像に戻る。</p></item></olist></item>
+        <item><p>キーボードを使用</p>
+				<olist><item><p>キーボードを使ってイベント・ハンドラを含む要素にフォーカスを設定する。元の画像が期待されている画像に変化する。</p></item><item><p>キーボードを使って要素からフォーカスを外す（一般的には別の要素にフォーカスを移す）。イメージが元の“通常の画像”に戻る。</p></item></olist></item>
+        <item>
+          <p>画像の変更によって、ページ上の他の要素のレイアウトに影響がないかを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

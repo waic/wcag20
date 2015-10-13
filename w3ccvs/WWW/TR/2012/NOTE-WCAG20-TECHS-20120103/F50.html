@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>F50: 達成基準 2.2.2 の不適合事例 － 点滅させるスクリプトを用いていて、その点滅を5秒以内に停止させるメカニズムがない | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/F50.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F49: &#xA;          達成基準 1.3.2 の不適合事例 － リニアライズした際に、意味の通じないHTMLのレイアウトテーブルを用いている" href="F49.html"><strong>前: </strong>Failure F49</a></li><li><a title="F52: 達成基準 3.2.1 の不適合事例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている" href="F52.html"><strong>次: </strong>Failure F52</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#F50-disclaimer">Important Information about Techniques</a></li><li><a href="#F50-applicability">適用（対象）</a></li><li><a href="#F50-description">解説</a></li><li><a href="#F50-examples">事例</a></li><li><a href="#F50-related-techs">関連する実装方法</a></li><li><a href="#F50-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="F50" id="F50"> </a>F50: 達成基準 2.2.2 の不適合事例 － 点滅させるスクリプトを用いていて、その点滅を5秒以内に停止させるメカニズムがない</h1><div id="F50-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="F50-applicability">適用（対象）</h2><div class="textbody"><p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
+				達成基準 2.2.2 (Pause, Stop, Hide)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
+						How to Meet 2.2.2 (Pause, Stop, Hide)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/time-limits-pause.html">
+						達成基準 2.2.2 (Pause, Stop, Hide)を理解する
+					</a></li></ul></li></ul><h2 id="F50-description">解説</h2><div class="textbody"><p>スクリプトを用いてコンテンツの表示、非表示を定期的に切り換えることで、コンテンツを点滅させることができる。スクリプトが5秒以内に点滅を止めるためのメカニズムを含まない場合は不適合となる。点滅を停止させるための実装方法をどのように修正するかについての情報は<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR22.html" class="tech-ref">SCR22.html: </a>  (Scripting)
+			(Scripting) を参照。</p></div><h2 class="small-head" id="F50-examples">事例</h2><div class="failure"><h3 class="small-head" id="F50-failex1">
+					不適合事例 1</h3><div class="example"><div class="textbody"><p>以下の例では点滅するコンテンツのためにスクリプトが使用されているが、点滅は5秒後に止まるのではなく、無期限に点滅し続ける。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+...
+&lt;script type="text/javascript"&gt;
+&lt;!--
+// 点滅「on」状態
+function show()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "visible";
+	settime-out("hide()", 450);
+}
+// 点滅「off」状態
+function hide()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "hidden";
+	settime-out("show()", 450);
+}
+// 開始
+show();
+//--&gt;
+&lt;/script&gt;
+...
+&lt;span id="blink1"&gt;このコンテンツは点滅します。&lt;/span&gt;</code></pre></div></div></div><h2 id="F50-related-techs">関連する実装方法</h2><div class="textbody"><ul><li><a href="SCR22.html">SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる</a></li></ul></div><h2 id="F50-tests">検証</h2><div class="textbody"><h3 class="small-head" id="F50-procedure">チェックポイント</h3><p>点滅しているそれぞれのインスタンスに対して：</p><ol class="enumar"><li><p>点滅が5秒以内で止まる。</p></li></ol><h3 class="small-head" id="F50-results">判定基準</h3><p>1.を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F49: &#xA;          達成基準 1.3.2 の不適合事例 － リニアライズした際に、意味の通じないHTMLのレイアウトテーブルを用いている" href="F49.html"><strong>前: </strong>Failure F49</a></li><li><a title="F52: 達成基準 3.2.1 の不適合事例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている" href="F52.html"><strong>次: </strong>Failure F52</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

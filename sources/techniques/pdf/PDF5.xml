@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF5">
+   <short-name>PDF フォームで必須項目のフォーム・コントロールを特定する</short-name>
+   <applicability>
+     <p>Tagged PDF documents with forms</p>
+  </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+      <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この実装方法は、PDF フォームで入力する必要のあるフィールドが入力されていないことをユーザーに通知することを目的としている。必須フィールドは、フォームフィールドの辞書の /Ff エントリを使用して実装する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>の節 12.7「インタラクティブなフォーム」（英語）の表 220 を参照のこと）。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>エラーが見つかった場合、テキストに含まれているエラーの性質について説明するアラートダイアログボックスが表示される。これは作成者が作成したスクリプトを通じて指定できる（例えば、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18.html" linktype="techniques">SCR18：クライアントサイドのバリデーション及びアラートを提供する</loc>」を参照のこと）。Adobe Acrobat Pro や LiveCycle などのユーザーエージェントでは、（以下の事例で説明されているように）自動的にアラートを表示できる。</p>
+    <p><em>注記</em>: ユーザーがアラートダイアログボックスを閉じた後に、エラーの発生したフィールドにキーボードのフォーカスが移動するようにスクリプトを記述すると役立つ。ただしユーザーによっては、アラートが表示される直前にフォーカスされていたコントロールにフォーカスが残ることを想定する場合がある。作成者は、ユーザーが想定するとおりにフォーカスを移動するよう注意を払う必要がある。例えば、必須の電話番号が入力されていないことを示すアラートが表示された場合に、アラートを閉じると電話番号フィールドにフォーカスが置かれるようにすることは、ユーザーにとって役立ち、想定される動作であると考えられる。ただし場合によっては、これが不可能なことがある。ページ上で複数の入力エラーが発生した場合には、エラーを通知するために別のアプローチをとる必要がある（例えば、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/devnet/acrobat/javascript.html">Adobe： JavaScript for Acrobat（英語）</loc>」を参照のこと）。</p>
+    <p>ユーザーが必ずエラーが発生したことに気付き、何が間違っているのかを判断し、修正できるようにすることは、ソフトウェアのユーザビリティとアクセシビリティにとって重要である。この目的を達成することは、すべてのユーザーが簡単かつ確実にトランザクションを完了できるようにするのに役立つ。</p>
+    <div id="">
+<loc xmlns:xlink="http://www.w3.org/1999/xlink" href=""/>
+<h4>必須フォーム・コントロールのラベル</h4>
+<p>エラーが発生する可能性があることをユーザーが認識することも重要である。この情報は、「日付（必須）」のようなラベルや、赤いアスタリスクによって必須フィールドを示すなどの方法で組み込むことができる（必須フィールドがある各フォームに説明文が必ず表示されるようにする（例："* = 必須フィールド"））。「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10.html">PDF10：PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</loc>」を参照のこと。</p>
+</div>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して PDF フォーム内に必須フィールドを作成する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>フィールドのコンテキストメニューから［プロパティ］ダイアログボックスを選択する。</p></item><item><p>フィールドが必須である場合は、［必須］チェックボックスを選択する。このチェックボックスによって、選択されたフォームフィールドへの入力がユーザーに強制される。必須フィールドが空白のままユーザーがフォームを送信しようとすると、エラーメッセージが表示され、空白の必須フォームフィールドが強調表示される。</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/form4.jpg" alt="スクリーンショット：［テキストフィールドのプロパティ］ダイアログで、「必須」のチェックボックスが選択されている。" height="388" width="642"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/required-fields.pdf" linktype="examples">Acrobat で必須フィールドを作成したサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe LiveCycle Designer ES 8.2.1 を使用して PDF フォーム内に必須フィールドを作成する</head>
+      <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>フォーム・コントロールのコンテキストメニューから、パレット > オブジェクトを選択する。</p></item><item><p>［種類］プルダウンメニューから［ユーザ定義 - 必須］を選択する。</p></item><item><p>［空白のメッセージ］フィールドにエラーメッセージを入力する。このメッセージは、ユーザーが必須フィールドに値を入力せずにフォームを送信しようとした場合に表示される。</p></item></olist>
+<p>必須フィールドが空白のままユーザーがフォームを送信しようとすると、［空白のメッセージ］に入力されたテキストが表示され、空白の必須フォームフィールドが強調表示される。</p>
+<p>次の画像は、「必須」を選択した Adobe LiveCycle のオブジェクトパレットを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/lc-required2.gif" alt="スクリーンショット：［ユーザ定義 - 必須］を選択したAdobe LiveCycle Object のパレット" height="468" width="345"/></p><p>フォームラベルに明示的なテキストを追加して（「（必須）」など)、必須フィールドを示すこともできる。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/required-fields-lc.pdf" linktype="examples">LiveCycle Designer で必須フィールドを作成したサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>/Tx フィールドタイプおよび Ff フラグを使用して、PDF フォームに必須テキストフィールドを追加する</head>
+      <description><p>次のコードフラグメントは、一般的なテキストフィールドのオブジェクト定義で一般的に使用されるコードを示している。テキストフィールドは必須であり、Ff フラグを使用している。これは通常、オーサリングツールを使用して行う。 </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+<< /AP -dict-                                                   
+   /DA /Helv  0 Tf 0 g
+   /DR -dict-
+   /F 0x4
+   /FT Tx              % FT key set to Tx for Text Field
+   /Ff 0x2             % Ff integer 0x2 value indicates required
+   /P -dict-
+   /Rect -array-
+   /StructParent 0x1
+   /Subtype Widget
+   /T First            % Partial field name First
+   /TU First name (required)  % TU tool tip value serves as short description
+   /Type Annot
+   /V Pat Jones
+>>
+...
+<Start Stream>
+ BT
+  /P <</MCID 0 >>BDC
+  /CS0 cs 0  scn 
+  /TT0 1 Tf
+    -0.001 Tc 0.003 Tw 11.04 0 0 11.04 72 709.56 Tm
+    [(P)-6(le)-3(as)10(e)-3( )11(P)-6(rin)2(t)-3( Y)8(o)-7(u)2(r N)4(a)11(m)-6(e)]TJ
+  0 Tc 0 Tw 9.533 0 Td
+  ( )Tj
+  -0.004 Tc 0.004 Tw 0.217 0 Td
+  [(\()-5(R)-4(e)5(q)-1(u)-1(i)-3(r)-3(e)-6(d)-1(\))]TJ
+ EMC
+  /P <</MCID 1 >>BDC
+  0 Tc 0 Tw 4.283 0 Td
+  [( )-2( )]TJ
+   EMC
+   /ArtifactSpan <</MCID 2 >>BDC
+   0.002 Tc -0.002 Tw 0.456 0 Td
+  [(__)11(___)11(___)11(___)11(___)11(_)11(____)11(___)11(___)11(__)]TJ
+  0 Tc 0 Tw 13.391 0 Td
+  ( )Tj
+  EMC
+ ET
+<End Stream> ]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 12.7 (Interactive Forms) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    				1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://partners.adobe.com/public/developer/xml/index_arch.html">Adobe
+    					XML Forms Architecture (XFA)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G83"/>
+      <relatedtech idref="H90"/>
+      <relatedtech idref="SCR18"/>
+      <relatedtech idref="PDF23"/>
+      <relatedtech idref="PDF10"/>
+      <relatedtech idref="PDF22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>それぞれの必須のフォームフィールドについて、次の方法によって、必要な情報や説明文が提供されていることを確認する。</p>
+      <olist>
+        <item>
+          <p>フォーム・コントロールのラベルに必須であることが示されている</p>
+        </item>
+        <item>
+          <p>フィールドを空白のままにしてフォームを送信すると、エラーについて説明するアラートが表示される</p>
+        </item>
+        <item>
+          <p>アクセシビリティ API を通じて文書を表示するツールを使用して、必須プロパティが示されていることを確認する</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1.、2. 及び 3. を満たしている</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Indicating_required_form_controls_in_PDF_forms"/>
+      </source>
+   </admin>
+</technique>

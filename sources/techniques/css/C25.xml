@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C25">
+   <short-name>CSSで、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</short-name>
+   <applicability>
+      <p>CSSを用いているウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法が意図するのは、ボーダー（境界）やレイアウトはCSSを用いて指定するが、文字色と背景色については利用者のブラウザやOSの設定に従って表示できるように指定しないでおく、ということである。
+これによって利用者は、自分が見たい色でテキストを見ることができるようになり、同時に、テキストの段組、セクションの周りのボーダー、又はメニューとメインコンテンツの領域を区切る縦線といったレイアウトやページデザインの外観は保つことができるようになる。
+また、ページにJavaScriptのポップアップ・ボックス又はドロップダウン・メニューが含まれている場合に色が上書きされるという、一部のブラウザで起こる表示の問題も回避することができる。</p>
+    <p>ボーダーやレイアウトを示す表示は、文字色と背景色に関する柔軟性と同様に、認知障害のある多くの人にとって役に立つ。
+しかし、状況によってはこれら2つのニーズは相容れないこともある。それは、利用者がブラウザ上でコンテンツ制作者が選択した文字色と背景色を上書きする必要があるとき、ブラウザがボーダーやレイアウトまでも取り除いてしまうような場合である。
+これは、ページがシングルカラムでひとつのブロックが他のブロックの下に表示されることを意味し、そうなると、不必要な余白ができ、テキストの1行の長さが長くなってしまう。
+また、ポップアップ・ボックスの背景が透過して、ページ上のテキストの上にボックスのテキストが重なってしまったり、ドロップダウン・メニューが透過するかダークグレーの背景になってしまったりすることを意味する。 
+コンテンツ制作者が文字色と背景色を一切指定せず、その一方でボーダーの色やレイアウトを指定した場合、一般的なブラウザのほとんどでは、（コンテンツ制作者が指定した）CSSの他の宣言に影響を与えずにテキストと背景の色を変更することができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>
+あるウェブページは、HTMLを使ってデザインされている。
+ページを構成する各領域を囲うボーダーの色を指定し、メニューがメインコンテンツ領域の左側にフロートするレイアウトにするためにCSSが使用されている。
+文字色も背景色も指定されていない。
+利用者がブラウザで自分の色を設定すると、レイアウトを崩すことなしに、利用者に適した色とコントラストでページを閲覧できる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+    <see-also>
+      <ulist>
+        <item>
+          <p diff="del">BBC's Web page with instructions how to change the browser colors in most browsers</p>
+        </item>
+      </ulist>
+    </see-also>
+  </resources>
+  <related-techniques>
+      <relatedtech idref="G17"/>
+      <relatedtech idref="G18"/>
+      <relatedtech idref="G145"/>
+      <relatedtech idref="G148"/>
+      <relatedtech idref="G156"/>
+      <relatedtech idref="C23"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>HTMLで作られたコンテンツの色を変更できるブラウザでウェブページを開く。</p>
+        </item>
+        <item><p>ブラウザの設定画面で、テキスト、リンク及び背景の色を、現在の設定とは異なる色に変える。</p>
+                        <note><p class="prefix">「ページで指定されている色を無視する」というようなオプションを選択していないことを確認する。</p></note></item>
+        <item>
+          <p>ページに戻って表示を確認すると、新しく設定したテキスト、リンク及び背景の色で表示されている。</p>
+        </item>
+        <item>
+          <p>どのボーダーも消えずに表示されており、レイアウトも崩れていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.及び4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

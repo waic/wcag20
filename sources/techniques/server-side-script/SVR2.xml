@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SVR2">
+   <short-name>.htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</short-name>
+   <applicability>
+      <p>.htaccessをサポートしているウェブサーバー（一般的にはApache）内にあるコンテンツで、コンテンツの適合するバージョンが不適合のバージョンの代替として提供されているもの</p>
+   </applicability>
+   <applies-to>
+      <conformance-criterion idref="cc1" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAGに適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替バージョンが提供されていれば、そのサイト全体が適合していることになる。適合要件 4は代替バージョンが不適合なコンテンツ又はそのURIからたどることができることを要求している。</p>
+    <p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この実装方法では制作者が不適合のコンテンツにその代替バージョンとして提供されるURI、又は不適合のバージョンと代替バージョン双方へのリンクを含むページからしかアクセスできないようにするためにApacheのモジュール「mod_access」を使う方法について説明する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>次の.htaccessファイルは、「accessible.html」からのリクエストではない限り、「inaccessible.html」から「accessible.html」へのリダイレクトを要求するApacheのmod_redirectモジュールを使用している。</p>
+</description>
+      <code role="htaccess"><![CDATA[
+# アクセシブルではないコンテンツへのリクエストがaccessible.html
+# という名前のファイルから来た場合、アクセシブルではないバージョン
+# の表示を許可する環境変数をセットする。
+SetEnvIf Referer .*(accessible.html)$ let_me_in
+<FilesMatch ^(inaccessible.html)$>
+    Order Deny,Allow
+    Deny from all
+    Allow from env=let_me_in
+</FilesMatch>
+
+# リクエストがaccessible.html以外から来た場合、
+# エラーとしてアクセシブルなバージョンがある場所へと
+# リダイレクトする。
+ErrorDocument 403 /example_directory/accessible.html]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつはWCAGに宣言しているレベルで適合しておらず、「jna（全くアクセシブルではない：Just Not Accessible）」というファイル拡張子を使用している。これらのファイルは、.htaccessファイルとともに全て「jna」というフォルダに保存されている。この.htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jnaの拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。/p>
+		</p>
+</description>
+      <code role="htaccess"><![CDATA[
+# アクセシブルではないコンテンツへのリクエストが
+# http://example.com/documents/index.htmlにあるファイルから来た場合、
+# アクセシブルではないバージョンの表示を許可する環境変数をセットする。
+SetEnvIf Referer ^http://example.com/documents/index.html$ let_me_in
+<FilesMatch ^(.*\.jna)$>
+    Order Deny,Allow
+    Deny from all
+    Allow from env=let_me_in
+</FilesMatch>
+
+# リクエストがhttp://example.com/documents/index.html以外から来た場合、
+# エラーとしてアクセシブルなバージョンがある場所へと
+# リダイレクトする。
+ErrorDocument 403 http://example.com/documents/index.html]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/2.2/mod/mod_env.html">Apache Module mod_env</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/2.2/howto/auth.html">Authentication, Authorization and Access Control</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/2.0/howto/htaccess.html">Apache Tutorial: .htaccess files</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G136"/>
+      <relatedtech idref="G190"/>
+      <relatedtech idref="SVR3"/>
+      <relatedtech idref="SVR4"/>
+      <relatedtech idref="C29"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>宣言している適合レベルでWCAGに適合していないページで、.htaccessファイルの使用によってアクセシブルな代替バージョンが提供されているものを特定する。</p>
+        </item>
+        <item>
+          <p>不適合のコンテンツのURIを開く。</p>
+        </item>
+        <item><p>結果となるページが次のうちのひとつである：</p>
+						<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">適合する代替バージョン</loc></p></item><item><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>3.a.又は3.b.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

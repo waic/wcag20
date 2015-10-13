@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H92">
+  <short-name>フォーム・コントロールのラベルに色を用いる際にはテキストで補足する</short-name>
+  <applicability>
+    <p>色及びテキストをサポートするウェブコンテンツ技術すべて</p>
+  </applicability>
+  <applies-to>
+    <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
+  </applies-to>
+  <ua-issues/>
+  <description>
+    <p>この実装方法の目的は、情報を伝えるために色と補足のテキストとを併用することである。ほとんどのユーザーは、ウェブページを素早く見渡して、色の違いを用いることによって伝えられている情報を見つけることができる。色を見ることのできないユーザーは、 補足のテキストを頼りにして、見たり聞いたりすることができる。また、点字ピンディスプレイやその他の触覚インタフェースを使用しているユーザーは、触れることによって補足のテキストを見つけることができる。</p>
+  </description>
+  <examples>
+    <eg-group>
+      <head>HTMLフォームの必須項目</head>
+      <description><p>オンラインフォームの説明文に「必須項目は赤字で、加えて（必須）と書かれています。」とある。そして、補足のテキストである「（必須）」が <el>label</el>要素内に含まれている。</p>
+</description>
+      <code><![CDATA[<label for="lastname" class="required">名前（必須）：</label>
+<input id="lastname" type="text" size="25" value=""/>
+<style type="text/css">
+  .required {
+    color=red;
+  }
+</style> ]]></code>
+    </eg-group>
+  </examples>
+  <resources/>
+  <related-techniques>
+    <relatedtech idref="G14"/>
+  </related-techniques>
+  <tests>
+    <procedure>
+      <p>色の違いを用いて情報を伝えているコンテンツに対して：</p>
+      <olist>
+        <item>
+          <p>同じ情報がテキストで補足されている。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. を満たしている。</p>
+        </item>
+      </ulist>
+    </expected-results>
+  </tests>
+</technique>

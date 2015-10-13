@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F85">
+   <short-name>達成基準 2.4.3 の不適合事例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを用いている</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-order" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、連続するナビゲーション順序の中での順番が原因で、キーボードだけで操作している利用者がウェブページ上に実装されたダイアログ又はメニューのインタフェースコンポーネントの操作が困難になってしまう不適合事例について述べている。ボタン又はリンクを起動してウェブページ上のダイアログ又はメニューを開いたとき、利用者の次の行動は、ダイアログ又はメニューを操作することである。ダイアログ又はメニューが、連続するナビゲーション順序の中で、トリガーとなるコントロールと連続していない場合、キーボードだけで操作している利用者がダイアログ又はメニューを操作することが困難になる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>ウェブページ上のダイアログ又はメニューが連続するナビゲーション順序の最後に追加されている</head>
+      <description><p>DHTMLのメニュー又はダイアログは、起動されると、動的に生成され、視覚的にはトリガーの近くに配置され、DOMの最後に付け加えられる。DOMの最後に付け加えられるため、連続するナビゲーション順序の最後となる。利用者は、メニュー又はダイアログを操作するまでに、ページ上の残りの部分をタブ操作で進んで行かなければならない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head>ページ上に実装されたメニューを閉じるとフォーカスがドキュメントに設定される</head>
+      <description><p>DHTMLのメニューが閉じられるとき、メニューはウェブページから削除又は隠されてフォーカスはドキュメントの先頭に設定される。利用者はメニューを開いた場所までナビゲーション順序の最初からタブを操作しなおさなければならない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR26"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>トリガーとなるコントロールによって開くウェブページ上のあらゆるメニュー又はダイアログに対して：</p>
+      <olist>
+        <item><p>トリガーとなるコントロールをキーボードで起動させる。</p>
+                
+                        <ulist><item><p>a. メニュー又はダイアログにフォーカスがある。</p></item><item><p>b. 連続するナビゲーション順序においてフォーカスを進めていくと、メニュー又はダイアログにフォーカスが置かれる。</p></item></ulist></item>
+        <item><p>メニュー又はダイアログを閉じる。</p>
+                
+                        <ulist><item><p>a. トリガーとなるコントロールにフォーカスがある。</p></item><item><p>b. 連続するナビゲーション順序においてフォーカスを後ろに戻すと、トリガーとなるコントロールにフォーカスが置かれる。</p></item></ulist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1a.及び1b.を両方とも満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。 </p>
+        </item>
+        <item>
+          <p>2a.及び2b.を両方とも満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

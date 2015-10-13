@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="T2">
+   <short-name>リストに、標準的なテキストの書式の表現法を用いる</short-name>
+   <applicability>
+      <p>プレーンテキストのドキュメント。マークアップを含むウェブコンテンツ技術は対象外</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、テキストの書式の規則を用いて、関連する項目のシンプルなリストを作ることである。ただし、階層構造になったリストや入れ子のリストは、この実装方法では表現できないため、別のウェブコンテンツ技術を使って表現すべきである。</p>
+    <p>リストは、連続したリスト項目によって構成される。そして、リスト項目は、ラベルで始まる段落である。順不同のリストでは、アスタリスク、ダッシュ、箇条書きの行頭文字などをラベルとして用いる。ただし、同じリスト内では全ての項目に同じラベル文字を使わなければならない。順序付きリストでは、英数字をラベルとして用い、ピリオドや閉じ括弧をつける。ラベルは、次のいずれかの昇順になっていなければならない。</p>
+    <ulist>
+      <item>
+        <p>数字の場合、数字の順に並んでいなければならない。</p>
+      </item>
+      <item>
+        <p>アルファベットの場合、アルファベット順又はローマ数字として解釈される際は数字の順に並んでいなければならない。</p>
+      </item>
+    </ulist>
+  </description>
+   <examples>
+      <eg-group>
+      <head>順不同リスト</head>
+      <code><![CDATA[
+- 順不同のリスト項目
+ 
+- 順不同のリスト項目
+ 
+- 順不同のリスト項目]]></code>
+    </eg-group>
+    <eg-group>
+      <head>数字の順序付きリスト</head>
+      <code><![CDATA[
+1. 順序付きリスト項目
+ 
+2. 順序付きリスト項目
+ 
+3. 順序付きリスト項目]]></code>
+    </eg-group>
+    <eg-group>
+      <head>ローマ数字の順序付きリスト</head>
+      <code><![CDATA[
+i.   順序付きリスト項目
+ 
+ii.  順序付きリスト項目
+ 
+iii. 順序付きリスト項目
+ 
+iv.  順序付きリスト項目]]></code>
+    </eg-group>
+    <eg-group>
+      <head>アルファベットの順序付きリスト</head>
+      <code><![CDATA[
+A) 順序付きリスト項目
+ 
+B) 順序付きリスト項目
+ 
+C) 順序付きリスト項目]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <p>テキストのコンテンツにあるリストに対して：</p>
+      <olist>
+        <item>
+          <p>各リスト項目が、ラベルで始まる段落である。</p>
+        </item>
+        <item>
+          <p>リスト項目ではない行が、リストに含まれていない。</p>
+        </item>
+        <item>
+          <p>リストにあるリスト項目全てが、同じスタイルのラベルを用いている。</p>
+        </item>
+        <item>
+          <p>順序付きリストのラベルが、連続した順序になっている。</p>
+        </item>
+        <item>
+          <p>順不同リストのラベルが、同じである。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1.～5.の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

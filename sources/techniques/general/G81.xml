@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G81">
+   <short-name>プレーヤーによって別のビューポートに表示する、又は画像上に重ねることのできる、手話通訳の同期した映像を提供する</short-name>
+   <applicability>
+      <p>複数の映像ストリームの同期が可能な、同期したメディアに関する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-sign" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、耳の聞こえない又は、テキストを速く読むことができない利用者が、全ての利用者に向けたコンテンツの表現に影響を与えずに、同期したメディアによるコンテンツにアクセスできるようにすることである。</p>
+    <p>主に手話でコミュニケーションをする利用者にとって、キャプションで提示されている速度ではテキストを読んで理解するのが難しかったり、場合によっては不可能であったりする。そういった利用者に対しては、聴覚情報に手話を提供することが有効である。</p>
+    <p>この実装方法は、元の映像ストリームに同期した、別の映像ストリームとして手話通訳を提供することによって実装可能である。プレーヤーに依存するが、この補助的な映像ストリームは、元の映像の上に重ねる又は別ウィンドウに表示させることができる。また元の映像から手話通訳を分離して拡大させることができ、手話者の手や体及び表情の動きを見やすくすることができる。</p>
+    <p>注記：一般的に、手話は単に墨字を符号化したものではないため、コンテンツ制作者は複数種類あるうちのどの手話を用いるかを決めなければならない。通常は主な利用者が使用している手話を用いる。さまざまな利用者を想定する場合は、複数の手話を用いる。複数の手話のための推奨実装方法を参照のこと【訳注：まだ文書化されていない。】。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>大学では、あらゆる教育プログラムに同期した映像ストリームの手話通訳を提供していて、閲覧者の選択によって表示させることができる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>Guidelines for the Production of Signing Books</p>
+               <ulist>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/deliver/d31/deliv_31_part3-2.html#3.2.2.6">"Sign Language presentation"</loc>
+                      gives a
+                      broad overview of issues to consider when filming
+                      sign language interpreters. Includes discussion of
+                      signing both written and spoken originals.</p>
+                  </item>
+                  <item>
+                     <p>Techniques for filming are discussed in
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">chapter 12, “Filming the Signer(s)"</loc>.</p>
+                  </item>
+                  <item>
+                     <p>Useful information about how to display the sign
+                      language interpreter in relation to the original
+                      synchronized media content is provided in
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide13.htm">Chapter 13, "Editing"</loc>.</p>
+                     <note>
+                        <p>These techniques may need to be adapted for
+                        Web-based presentation.</p>
+                     </note>
+                  </item>
+               </ulist>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G54"/>
+      <relatedtech idref="SM13"/>
+      <relatedtech idref="SM14"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>プレーヤーで手話ウィンドウを表示させる。</p>
+        </item>
+        <item>
+          <p>耳が聞こえて、使用されている手話に精通した人にプログラムを見せる。</p>
+        </item>
+        <item>
+          <p>手話通訳が画面上又は別ウィンドウに表示されている。</p>
+        </item>
+        <item>
+          <p>会話と重要な音が手話通訳によって伝達され、音に同期している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.及び 4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

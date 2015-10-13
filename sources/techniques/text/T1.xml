@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="T1">
+   <short-name>段落に、標準的なテキストの書式の表現法を用いる</short-name>
+   <applicability>
+      <p>プレーンテキストのドキュメント。マークアップを含むウェブコンテンツ技術は対象外</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、プレーンテキストのドキュメントにおいて、段落であることが分かるようにすることである。段落は、まとまりのあるテキストのブロックで、例えば、関連する複数の文章によって1つのトピックを形成したり、より大きなトピックの中でまとまりのある一部分を形成したりするものである。</p>
+    <p>段落の始まりは、次のものによって示される。</p>
+    <ulist>
+      <item>
+        <p>コンテンツの始まり（つまり、その段落が文書内で最初のコンテンツとなっている）、又は</p>
+      </item>
+      <item>
+        <p>段落のテキストの前にある1行の空白行</p>
+      </item>
+    </ulist>
+    <p>段落の終わりは、次のものによって示される。</p>
+    <ulist>
+      <item>
+        <p>コンテンツの終わり（つまり、その段落が文書内で最後のコンテンツとなっている）、又は</p>
+      </item>
+      <item>
+        <p>段落のテキストの後にある1行もしくは複数の空白行</p>
+      </item>
+    </ulist>
+    <p>空白行には、何もないか、又はスペースやタブなどの印刷できない文字が含まれていて、そのすぐ後に新しい行がある。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>2つの段落。それぞれが1行の空白行で始まり、1行の空白行で終わっている。</p>
+</description>
+      <code><![CDATA[
+これが、この段落の最初の文章である。段落は、長いこともあれば短いこともある。
+   
+    この段落では、最初の行がインデントされている。インデントされた文章とインデントされていない文章の両方が許可される。
+段落の行内の空白スペースは、段落の定義では無視されている。完全に空白の行だけが意味を持つ。]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <p>それぞれの段落に対して：</p>
+      <olist>
+        <item>
+          <p>段落の前に1行の空白行がある、又はその段落がウェブページの最初のコンテンツである。</p>
+        </item>
+        <item>
+          <p>段落の後に少なくとも1行の空白行がある、又はその段落がウェブページの最後のコンテンツである。</p>
+        </item>
+        <item>
+          <p>段落内に空白行がない。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>それぞれの段落が、1.～3.の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

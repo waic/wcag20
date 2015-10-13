@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H69">
+   <short-name>コンテンツの各セクションの開始位置に見出し要素を提供する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue name="" version="">
+      <p>JAWS及びWindows-Eyesは、見出し要素を用いたナビゲーション機能を提供しており、見出しレベルに関する情報も提供している。また、Operaは、見出し要素ごとに移動できるメカニズムを提供している。他のユーザーエージェントでも、追加的なプラグインが見出し要素を用いたナビゲーション機能をサポートしている。<phrase diff="add">プラグインに関しては、「参考リソース」のセクションを参照のこと。</phrase></p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この実装方法の目的は、コンテンツの構造を伝達するために、セクションごとに見出しを指定することである。見出しのマークアップは、次のように利用されることがある。</p>
+    <ulist>
+      <item>
+        <p>メインコンテンツの開始位置を示す</p>
+      </item>
+      <item>
+        <p>メインコンテンツ領域にあるセクションの見出しをマークアップする</p>
+      </item>
+      <item>
+        <p>上部又はメインのナビゲーション、左側又はサブのナビゲーション、そしてフッターのナビゲーションなど、さまざまなナビゲーションを含んだセクションを区別する</p>
+      </item>
+      <item>
+        <p>視覚的に見出しのように見える画像（文字情報を含んだもの）をマークアップする</p>
+      </item>
+    </ulist>
+    <p><phrase diff="del">いくつかのウェブコンテンツ技術において、</phrase>見出しは論理的な階層を伝達することを目的としている。下位レベルの見出しを飛ばすと、文書構造がきちんと検討されなかったのではないか、又は一部の見出しが意味ではなく視覚的な表現を得るために選択されたのではないか、といった印象を与えてしまうかもしれない。したがって、コンテンツ制作者には見出しを階層的に入れ子にすることが推奨される。</p>
+    <p>見出しは、コンテンツの中の重要なセクションの開始位置を示すものであるため、支援技術のユーザーが適切な見出しまで直接ジャンプしてから、コンテンツを読み始めることができる。つまり、そのコンテンツに到達するのに時間を要していたユーザーが、見出しのマークアップによってより早く到達できるようになる。</p>
+    <p>CSSをサポートしているウェブコンテンツ技術では、スタイルを指定することによって、見出しの見た目又は読み上げを変えることができる。支援技術には見出しを提供しつつ、視覚的には非表示となるように、CSSを用いて見出しのスタイルを指定することも可能である。しかし、見出しを視覚的に見える状態にしておくことは、認知障害のある利用者を含む幅広い利用者にとって役に立つ。</p>
+  </description>
+   <examples>
+    <eg-group>
+      <description><p>この事例では、各セクションの見出しを<el>h2</el>要素でマークアップすることによって、検索ページ内の複数のセクションを構成している。</p>
+</description>
+      <code role="html401"><![CDATA[<h1>技術関連の定期刊行物の検索</h1>
+ <h2>検索</h2>
+ <form action="search.php">
+  <p><label for="searchInput">検索トピックスを入力：</label>
+  <input type="text" size="30" id="searchInput">
+  <input type="submit" value="検索"></p>
+ </form>
+ <h2>検索可能な定期刊行物</h2>
+ <div class="jlinks">
+  <a href="pcoder.com">プロフェッショナル・コーダー</a> |
+  <a href="algo.com">アルゴリズム</a> |
+  <a href="jse.com">ソフトウェア工学ジャーナル</a>
+ </div>
+ <h2>検索結果</h2>
+ ……このセクションに検索結果を表示……]]></code>
+    </eg-group>
+    <eg-group>
+      <head>コンテンツ全体の構成を示している見出し</head>
+      <description><p>この事例では、ナビゲーションと主要コンテンツを知覚できるように、見出しマークアップを利用している。</p>
+</description>
+      <code role="html401"><![CDATA[<!-- ロゴ、バナー画像、検索フォームなど  -->
+  <h2>ナビゲーション</h2>
+    <ul>
+      <li><a href="about.htm">会社概要</a></li>
+      <li><a href="contact.htm">お問い合わせ</a></li>
+       ...
+    </ul>
+  <h2>見出しに関する全て</h2>
+   <!-- メインコンテンツを構成するテキスト、画像、その他のもの…… -->]]></code>
+    </eg-group>
+    <eg-group>
+      <head>メインコンテンツ部分にあるコンテンツの構成を示している見出し</head>
+      <description><p>留意すべきは、HTML 4.01及びXHTML 1.xにおいては、見出し要素はセクションの開始位置をマークアップするためだけに用いる。つまり、見出し要素はそのコンテンツとして見出し要素を含むことはない。【訳注：WCAGワーキンググループに確認中です。】</p>
+</description>
+      <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>調理技法</title>  
+  </head>   
+  <body>     
+    <h1>調理技法</h1>     
+    <p>       
+      ……ここにテキストが入ります……     
+    </p>           
+    <h2>油を使った調理</h2> 
+    <p> 
+        ……このセクションのテキスト……     
+    </p>           
+    <h2>バターを使った調理</h2>       
+    <p>
+        ……このセクションのテキスト……     
+    </p>   
+  </body> 
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/global.html#h-7.5.5">HTML 4.01
+                    H1-H6 elements</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://meyerweb.com/eric/thoughts/2004/07/21/pick-a-heading/">Pick a
+                    Heading</loc> Eric Meyer</p>
+            </item>
+            <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</loc>
+          </p>
+        </item>
+        <item>
+               <p diff="add">
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.456bereastreet.com/archive/201003/heading_navigation_in_web_browsers/">Heading navigation in web browsers</loc>
+               </p>
+            </item>
+            <item>
+               <p diff="add">Firefoxでは、以下のプラグインがキーボード操作による見出しナビゲーション機能を提供している：</p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H42"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>複数のセクションに分けられているコンテンツ全てに対して：</p>
+      <olist>
+        <item>
+          <p>各セクションの開始位置に、見出し要素でマークアップされた見出しがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

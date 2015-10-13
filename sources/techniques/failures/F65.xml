@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F65">
+   <short-name>達成基準 1.1.1 の不適合事例 － <el>img</el>要素、<el>area</el>要素、及び <code>type "image"</code> の<el>input</el>要素の<att>alt</att>属性を省略している</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、画像の代替テキストに関する不適合条件について解説する。画像に対して<att>alt</att>属性が指定されていない場合、支援技術はその画像を識別するための情報やその画像の目的を利用者に対して伝えることができない。</p>
+    <p>支援技術の中には、altテキストが指定されていない場合に画像のファイル名を読み上げて情報を補おうとするものもあるだろう。しかし、多くの理由から単にファイル名に依存するだけでは不十分である。たとえば、画像ファイルにその目的が分かるような分かりやすい名前がついているとは限らず（例：images/nav01.gif）、また技術仕様上もそういった分かりやすいファイル名をつける必要はない。また、altテキストが指定されていない場合でもその画像ファイル名を読み上げない支援技術もあるだろう。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる altテキストが存在しない場合</head>
+      <description><p>以下のコード例において、スクリーンリーダーを使っている人は画像の目的を知ることはできない。（訳注：スクリーンリーダーを利用しているユーザーに限らず、ブラウザの設定を変更して画像を非表示にしている場合や点字ディスプレイを利用しているユーザーなども同様である。）</p>
+</description>
+      <code role="html401"><![CDATA[
+    <img src="../images/animal.jpg" />]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H67"/>
+      <!-- Using aria-labelledby to provide a text alternative for non-text content-->
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>すべての<el>img</el>要素、<el>area</el>要素および<att>type</att>属性の値が<code>"image"</code>の<el>input</el>要素を特定する</p>
+        </item>
+        <item>
+          <p>これらの要素に対して<att>alt</att>属性が指定されている</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしていない場合、この不適合条件が適用され、達成基準に不適合となる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

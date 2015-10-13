@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G164">
+   <short-name><phrase diff="chg">フォームの送信後に、利用者がそのオンラインでのリクエスト（またはトランザクション）を修正またはキャンセルできる一定の時間を提供する</phrase> <phrase diff="del">フォームの送信後に、利用者が注文を変更又はキャンセルできる一定の時間を提供する</phrase></short-name>
+   <applicability>
+      <p>フォームを提供する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-reversible" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-reversible-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、注文を変更又はキャンセルできる猶予期間を提供することによって、利用者が誤った注文をしてしまった際にその内容を変更又はキャンセルできるようにすることである。一般的には、契約又は注文は法的な義務であり、キャンセルすることができない。しかしながら、ウェブサイトにおいては、この機能を提供し、利用者が注文内容を間違えてしまった際には、注文を変更又はキャンセルできるようにすることが可能である。</p>
+    <p>ウェブコンテンツでは、フォームを送信した後、キャンセル可能期間がどのくらいなのか、及びどのような手続きで注文をキャンセルするかを利用者に伝える必要がある。注文をキャセルする手続きがオンラインでは利用できない場合もあり得る。例えば、ウェブページ上に記載された住所宛に書面による通知が必要な場合である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>オンラインショッピング</head>
+      <description><p>オンラインショッピングのウェブサイトで、24時間以内であれば利用者が購入をキャンセルできるようにしている。そのウェブサイトでは彼らの方針を説明しており、電子メールで利用者に送られる注文確認書の方針の要約も含まれている。24時間以降は購入した物は利用者宛に発送され、キャンセルすることはできない。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>カスタムオーダー</head>
+      <description><p>あるウェブサイトでオーダーメイドのスポーツジャケットを販売している。顧客は生地を選び、身体の寸法を仕立て店に送る。ウェブサイトは注文の変更やキャンセルに対して3日の猶予を与えている。その顧客の寸法に合わせて生地が裁断されると、注文の変更又はキャンセルはできなくなる。そして、会社の方針がウェブサイト上で説明されている。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G98"/>
+      <relatedtech idref="G155"/>
+      <relatedtech idref="G168"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>注文のキャンセル又は変更をすることが可能な期間についてウェブページ上に記述がある。</p>
+        </item>
+        <item>
+          <p>注文のキャンセル、又は変更のための手続きについてウェブページ上に記述がある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び 2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F52">
+   <short-name>達成基準 3.2.1 の不適合事例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている</short-name>
+   <applicability>
+      <p>新しいウィンドウを開くために使用されるスクリプト</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-receive-focus" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>製品又はサービスを宣伝するために、あるウェブサイトではページが読みこまれた時に新しいウィンドウが開く。この実装方法の目的は、ページが読み込まれたと同時に1つ又はそれ以上の新しいウィンドウが開かれることによって、ページが利用者を混乱させないようにすることである。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くためにHTML 4.01で一般的に使用される。</p>
+</description>
+      <code><![CDATA[
+window.onload = showAdvertisement;
+ function showAdvertisement()
+ {
+  window.open('advert.html', '_blank', 'height=200,width=150');
+ }]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くためにXHTMLで一般的に使用される。</p>
+</description>
+      <code><![CDATA[
+if (window.addEventListener) { 
+    window.addEventListener("load", showAdvertisement, true);
+}
+if (window.attachEvent) {
+    window.attachEvent("onload", showAdvertisement);
+}
+function showAdvertisement()
+{
+window.open('noscript.html', '_blank', 'height=200,width=150');
+}]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G107"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>新しいページをロードする。</p>
+        </item>
+        <item>
+          <p>新しいページをロードしたことの結果として新しいウィンドウが開いた。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2．を満たしているならば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

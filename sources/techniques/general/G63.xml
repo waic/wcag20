@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G63">
+   <short-name>サイトマップを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-location" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>これは、達成基準2.4.5の実装に十分なコンテンツを配置するための一連の実装方法のひとつである。サイトマップは、サイトの異なる区分へのリンクを提供するウェブページである。サイト内でサイトマップを利用できるよう、最低でもサイトマップに記載されている全てのページに、サイトマップへのリンクを設ける。</p>
+    <p>サイトマップは次のいくつかの目的に役立つ。</p>
+    <ulist>
+      <item>
+        <p>サイト全体の概要を提供する。</p>
+      </item>
+      <item>
+        <p>利用者が、サイトが何を含んでいて、コンテンツがどのように構成されているか、理解するのを助ける。</p>
+      </item>
+      <item>
+        <p>サイトのいろいろな部分によって異なる、複雑なナビゲーションバーの代替物を提供する。</p>
+      </item>
+    </ulist>
+    <p>サイトマップには、様々なタイプのものがある。最も単純で最も一般的な種類のサイトマップは、それぞれの区分又はサブサイトへのリンクを示した概略である。そのような概略は、サイトのいろいろな区分のページ間のリンクのような、サイト内のより複雑な関係は示さない。大きいサイトへのサイトマップの中には、各区分に関する追加の詳細を示すために展開する見出しを使用しているものもある。</p>
+    <p>サイトマップはサイトのコンテンツと構成について説明する。サイトを更新するときはいつも、サイトマップを更新することが重要である。サイトの全ての区分にリンクしていない、サイトの構成とは異なる構成を提供する、又は、もはや有効ではないリンクを含む、というウェブページは、有効なサイトマップでない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ウェブ・アクセシビリティ・イニシアティブは、ウェブサイトのいろいろな区分を記載した<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/sitemap.html">WAIサイトマップ</loc>を提供している。サイトマップはウェブサイトのいろいろな区分を示すとともに、それらの区分の下部構造のいくつかを示している。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>オンライン・マガジンのためのサイトマップには、マガジンの全ての区分とそれぞれの区分の小区分が記載されている。また、ヘルプ、お問い合わせ、個人情報保護方針、採用情報、定期購読、及びマガジンのHOMEページ、へのリンクを含んでいる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                	<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers">Graphic Organizers</loc>
+                  page at the National Center for Accessible Curriculum provides a useful overview of different kinds of graphic organizers and their uses, plus a summary of relevant research on the effectiveness of graphical organizers for students with learning disabilities.</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.usabilityfirst.com/glossary/?function=display_term&amp;term_id=193">Usability Glossary: sitemap</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G64"/>
+      <relatedtech idref="G125"/>
+      <relatedtech idref="G126"/>
+      <relatedtech idref="G185"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>サイトにサイトマップがある。</p>
+        </item>
+        <item>
+          <p>サイトマップにあるリンクが、サイトの該当する区分に通じている。</p>
+        </item>
+        <item>
+          <p>サイトマップにある各リンクについて、対象のページにサイトマップへのリンクがある。</p>
+        </item>
+        <item>
+          <p>サイトの各ページについて、サイトマップから始まるリンクの組み合わせを辿ることでページに辿りつくことができる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記、全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H50">
+  <short-name>構造を示す要素を用いて、リンクをグループ化する</short-name>
+  <applicability>
+    <p>HTML 及び XHTML</p>
+  </applicability>
+  <applies-to>
+    <success-criterion idref="navigation-mechanisms-skip"
+                       relationship="sufficient"/>
+  </applies-to>
+  <ua-issues/>
+  <description>
+    <p>この実装方法の目的は、リンクを論理的な一組にグループ化する方法を示すことである。リンクを論理的な一組（たとえば、サイト内の各ページに設置するナビゲーションバーやメインメニュー）にグループ化する場合、それらはひとつの単位としてマークアップされるべきである。通常、ナビゲーションバーは、利用者がページ上で遭遇する最初のものである。目の見える利用者はナビゲーションパーツを無視でき、そのページのコンテンツから読み始めることがある。しかし、スクリーンリーダーの利用者は、興味のあるコンテンツを読み始める前に、ナビゲーションバーに含まれるリンクテキストそれぞれの読み上げを聞かなければならない。スクリーンリーダーの利用者がナビゲーションバーを飛ばしたり、そこに含まれる全てのリンクの読み上げを回避したりできるようにする、コンテンツのマークアップの方法は何通りかある。</p>
+    <p>次のメカニズム（上から好ましい順）のどれかを利用して、リンクをグループ化する：</p>
+    <ulist>
+      <item>
+        <p><el>ul</el>要素又は<el>ol</el>要素</p>
+      </item>
+      <item>
+        <p><el>map</el>要素</p>
+      </item>
+    </ulist>
+  </description>
+  <examples>
+    <eg-group>
+      <head>リンクのグループ化にリストを利用</head>
+      <description><p>この事例では、リンクを<el>ul</el>要素と<el>li</el>要素でグループ化している。</p>
+</description>
+      <code><![CDATA[<a name="categories" id="categories"></a><h2>商品カテゴリー</h2>
+<ul class="navigation">
+    <li><p><a href="kitchen.html">キッチン</a></p></li>
+    <li><p><a href="bedbath.html">ベッドとバス</a></p></li>
+    <li><p><a href="dining.html">ダイニング</a></p></li>
+    <li><p><a href="lighting.html">照明</a></p></li>
+    <li><p><a href="storage.html">収納</a><li><p>
+</ul> ]]></code>
+      <description><p>CSSを利用してリスト要素のスタイルを変更できるので、この方法の視覚表現は多様である。</p>
+      <p>次のスタイルでは、リストのビュレットと、インデントを生成している左側のパディングをなくし、各リスト要素を横に並べるように設定している。</p>
+</description>
+      <code><![CDATA[ul.navigation {
+  list-style: none; 
+  padding: 0;
+}
+ul.navigation li {
+  display: inline;
+} ]]></code>
+      <description><p>次のスタイルでは、リストのビュレットと左側のパディングをなくし、各リスト項目を浮動化ブロックとして表示するように設定している。</p>
+</description>
+      <code><![CDATA[ul.navigation {
+ list-style: none; 
+ padding: 0;
+}
+ul.navigation li {
+ display: block; 
+ float: left;
+} ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>リンクのグループ化にmap要素を利用</head>
+      <description><p>この事例では、<el>map</el>要素でリンクを一組にグループ化し、<att>title</att>属性でナビゲーションバーという役割を特定している。</p>
+</description>
+      <code><![CDATA[<map title="ナビゲーションバー">
+  <p>
+    [<a href="home.html">ホーム</a>] 
+    [<a href="search.html">検索</a>] 
+    [<a href="new.html">新着とハイライト</a>] 
+    [<a href="sitemap.html">サイトマップ</a>]
+  </p>
+ </map> ]]></code>
+    </eg-group>
+  </examples>
+  <resources>
+    <see-also>
+      <ulist>
+        <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/lists.html">HTML 4.01 lists</loc>
+          </p>
+        </item>
+        <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/objects.html#edef-MAP">HTML 4.01&#13;
+                    MAP element</loc>
+          </p>
+        </item>
+        <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/global.html#adef-title">HTML 4.01&#13;
+                    title attribute</loc>
+          </p>
+        </item>
+      </ulist>
+    </see-also>
+  </resources>
+  <related-techniques/>
+  <tests>
+    <procedure>
+      <p>コンテンツに一緒にグループ化すべき<el>a</el>要素がある。</p>
+      <olist>
+        <item>
+          <p><el>a</el>要素をリストまたは<el>map</el>要素でグループ化している。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1.を満たしている。</p>
+        </item>
+      </ulist>
+    </expected-results>
+  </tests>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F55">
+   <short-name>
+          達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の不適合事例 － フォーカスを受け取った際に、スクリプトを用いてフォーカスを取り除いている</short-name>
+   <applicability>
+      <p>スクリプトをサポートしているすべてのコンテンツに適用</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="failure"/>
+      <success-criterion idref="navigation-mechanisms-focus-visible" relationship="failure"/>
+      <success-criterion idref="consistent-behavior-receive-focus" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>通常はキーボードでアクセスした場合フォーカスを受け取るコンテンツが、スクリプトによってフォーカスを失うことがある。これは、デザイナーがシステムのフォーカス・インジケータを見えなくしようとするときに時々起きる。しかしながら、システムのフォーカス・インジケータは、キーボード利用者のアクセシビリティにおける重要な一部分である。また、これを実行することによってフォーカスが完全に取り除かれると、コンテンツにはマウスのようなポインティング・デバイスでしかアクセスできなくなる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <code><![CDATA[<input type="submit" onFocus="this.blur();">]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <code><![CDATA[<a onFocus="this.blur()" href="Page.html"><img src="myImage.gif"></a>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <code><![CDATA[<a href="link.html" onfocus="if(this.blur)this.blur();">リンクの文言</a>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>キーボードを使用して、すべてのインタラクティブな要素にキーボードでアクセスできる。</p>
+        </item>
+        <item>
+          <p>それぞれの要素がフォーカスされたとき、利用者がフォーカスを移動するまでそこに残っている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

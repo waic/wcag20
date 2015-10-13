@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G84">
+   <short-name>利用者が認められた値以外の情報を提供した際に、テキストの説明文を提供する</short-name>
+   <applicability>
+      <p>限定された値の入力のみを受け付けるコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この文書の目的は、利用者による入力がバリデートされた結果、エラーが検出された場合に、そのエラーの内容は、利用者がアクセスできる方法で説明することである。一つのアプローチとして、利用者がフォームを送信しようとするときに、エラーのある項目を説明したアラートのダイアログを提示する方法がある。また、もう一つのアプローチとしては、バリデーションがサーバサイドで行われるのであれば、（利用者が入力した項目のデータは残した状態で）フォームを再表示し、ページの上部にテキストでの説明文を表示して、バリデーションで問題が発見されたことを知らせるとともに、その問題の内容を説明して、利用者が問題のあった項目を簡単に見つけられる方法を提供することがある。達成基準に「テキストで」と書かれているのは、項目のラベルにアスタリスクを付けたり、ラベルのテキストを赤色に変えたりしてエラーがあることを示すだけでは十分でないことを強調している。つまり、エラーであることの説明文をテキストで提供すべきである。</p>
+    <p>利用者による入力内容が、許可された値のいずれかでなければならない場合は、テキストでの説明文によってそのことを示すべきである。そして、可能であれば、許可された値のリストを示す、又は入力値に最も近い許可値を提示するとよい。</p>
+  </description>
+   <examples/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>フォーム項目に無効なデータを入力する。</p>
+        </item>
+        <item>
+          <p>エラーに関する情報がテキストで提供される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

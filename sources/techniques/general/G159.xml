@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G159">
+   <short-name>時間の経過に伴って変化するメディアの映像しか含まないコンテンツに対して代替コンテンツを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-av-only-alt" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-text-doc" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、映像しか含まないプレゼンテーションで提示する情報に対して、アクセシブルな代替コンテンツを提供することである。</p>
+    <p>映像しか含まないプレゼンテーションにおいては、アニメーション、テキスト又はグラフィック、また状況及び背景、人物や動物の動き及び表情などを含め、情報はさまざまな方法で提示される。同じ情報をアクセシブルな形式で提示するために、この実装方法では、収録済の映像しか含まないコンテンツと同じストーリーを伝えて同じ情報を提示するドキュメントを作成する。この実装方法において、そのドキュメントはコンテンツの長い説明としての役割を果たし、重要な情報のすべてとプレゼンテーションの一部である風景、動き、表情などの説明を含んでいる。</p>
+    <p>映像しか含まないコンテンツを制作する初めの段階で台本を用いている場合には、それを手始めにすることができる。しかし、制作及び編集過程において、コンテンツの内容が台本からいくぶん変わってしまうことがよくある。この実装方法で台本を用いる際は、もともとの台本を映像しか含まないプレゼンテーションの最終版の内容に合わせて修正する必要がある。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G69"/>
+      <relatedtech idref="G158"/>
+      <relatedtech idref="G78"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>時間の経過に伴って変化するメディアに対する代替コンテンツを参照しながら、映像しか含まないコンテンツを閲覧する。</p>
+        </item>
+        <item>
+          <p>トランスクリプト内の情報によって、映像しか含まないプレゼンテーションと同じ情報が提供されている。</p>
+        </item>
+        <item>
+          <p>映像に複数の登場人物がいる場合、トランスクリプトで説明されている動きに対して、それぞれがどの登場人物によるものかが示されている。</p>
+        </item>
+        <item><p>次のうち少なくとも一つを満たしている：</p>
+					<olist><item><p>トランスクリプト自体が、映像しか含まないコンテンツに対する代替テキストからプログラムで解釈可能である。</p></item><item><p>トランスクリプトが、映像しか含まないコンテンツに対するプログラムで解釈可能な代替テキストから参照されている。</p></item><item><p>代替バージョンが別ページにある場合、利用者が他のバージョンへ移動できるリンクが提供されている。</p></item></olist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記のチェックポイント全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

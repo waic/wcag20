@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>SCR30: スクリプトを用いて、リンクのラベルを変更する | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/SCR30.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR29: Adding keyboard-accessible actions to static HTML elements" href="SCR29.html"><strong>前: </strong>
+        Technique SCR29</a></li><li><a title="SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する" href="SCR31.html"><strong>次: </strong>
+        Technique SCR31</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#SCR30-disclaimer">Important Information about Techniques</a></li><li><a href="#SCR30-applicability">適用（対象）</a></li><li><a href="#SCR30-description">解説</a></li><li><a href="#SCR30-examples">事例</a></li><li><a href="#SCR30-related-techs">関連する実装方法</a></li><li><a href="#SCR30-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SCR30" id="SCR30"> </a>SCR30: スクリプトを用いて、リンクのラベルを変更する</h1><div id="SCR30-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="SCR30-applicability">適用（対象）</h2><div class="textbody"><p>HTML及びXHTMLで使用されるクライアントサイドスクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">
+				達成基準 2.4.4 (Link Purpose (In Context))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
+						How to Meet 2.4.4 (Link Purpose (In Context))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-refs.html">
+						達成基準 2.4.4 (Link Purpose (In Context))を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link">
+				達成基準 2.4.9 (Link Purpose (Link Only))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-link">
+						How to Meet 2.4.9 (Link Purpose (Link Only))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-link.html">
+						達成基準 2.4.9 (Link Purpose (Link Only))を理解する
+					</a></li></ul></li></ul><h2 id="SCR30-description">解説</h2><div class="textbody"><p>この実装方法の目的は、リンクが文脈以外でも理解可能になるように、追加情報をリンクテキストに加えることを利用者が選択できるようにすることである。</p><p>一部の利用者は、リンクの文脈を参照する必要がないように、リンクがすべてを含んでいることを好む。別の利用者は、それぞれのリンクに文脈に関する情報が含まれていると、反復されてサイトの使い勝手が低下すると感じている。支援技術の利用者の間では、どちらが好ましいかに関して、ワーキンググループへのフィードバックは分かれている。この実装方法は、利用者自身にとって良い方法を選ぶことを可能にする。</p><p>どのようなリンクの目的を理解する場合でも追加の文脈が必要とならないようにするため、そのページのリンクのリンクテキストを展開するページの先頭近くにリンクが提供される。展開されるリンクの目的がそのリンクテキストから、常に直接理解可能でなければならない。</p><p>この実装方法では、現在表示されているページのリンクだけを展開する。利用者がそのサイトに対して1度だけ設定を行えば良いようにするために、設定情報をCookie又はサーバーサイドの利用者プロファイルに保存することも可能であり、場合によってはそれが望ましい。</p></div><h2 class="small-head" id="SCR30-examples">事例</h2><h3 class="small-head" id="SCR30-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例では、JavaScript を用いて直接リンクのテキストに文脈上の情報を追加する。linkクラスはどのテキストを追加するかを決定する。「リンクを展開する」リンクが選択されたとき、ページ内のそれぞれのリンクにテキストを追加すべきかがテストされる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;script&gt;
+ var linkContext = {
+   "hist":" 版　Webの歴史",
+   "cook":" 版　Cooking for Nerds"
+ };
+
+ function doExpand() {
+   var links = document.links;
+   var link;
+
+   for (link in links) {
+     var cn = links[link].className;
+     if (linkContext[cn]) {
+       links[link].appendChild(document.createTextNode(linkContext[cn]));
+     }
+   }
+ }
+&lt;/script&gt;
+
+&lt;h1&gt;本のダウンロード&lt;/h1&gt;
+&lt;p&gt;&lt;a href="#" onclick="doExpand();"&gt;リンクを展開する&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webの歴史：
+&lt;a href="history.docx" class="hist"&gt;Word&lt;/a&gt;, 
+&lt;a href="history.pdf" class="hist"&gt;PDF&lt;/a&gt;, 
+&lt;a href="history.html" class="hist"&gt;HTML&lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Cooking for Nerds：
+&lt;a href="history.docx" class="cook"&gt;Word&lt;/a&gt;, 
+&lt;a href="history.pdf" class="cook"&gt;PDF&lt;/a&gt;, 
+&lt;a href="history.html" class="cook"&gt;HTML&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+...</code></pre></div></div><h2 id="SCR30-related-techs">関連する実装方法</h2><div class="textbody"><ul><li><a href="G91.html">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="H30.html">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li><li><a href="H33.html">H33: title属性を用いて、リンクテキストの文言を補足する</a></li><li><a href="C7.html">C7: CSSを用いて、リンクテキストの一部を非表示にする</a></li></ul></div><h2 id="SCR30-tests">検証</h2><div class="textbody"><h3 class="small-head" id="SCR30-procedure">チェックポイント</h3><ol class="enumar"><li><p>ページの先頭近くに、リンクを展開するリンクがある。</p></li><li><p>1で確認したリンクがリンクテキストだけで見つけられる。</p></li><li><p>リンクテキストだけで識別できないリンクをページ中から探す。</p></li><li><p>1.のコントロールを有効にする</p></li><li><p>3.で見つけたリンクの目的が、リンクテキストだけで確認できる。</p></li></ol><h3 class="small-head" id="SCR30-results">判定基準</h3><ul><li><p>1., 2.及び5.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR29: Adding keyboard-accessible actions to static HTML elements" href="SCR29.html"><strong>前: </strong>
+        Technique SCR29</a></li><li><a title="SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する" href="SCR31.html"><strong>次: </strong>
+        Technique SCR31</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

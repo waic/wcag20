@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F1">
+   <short-name>達成基準 1.3.2 の不適合事例 － CSSで情報を配置することにより、コンテンツの意味を変えている</short-name>
+   <applicability>
+      <p>CSSをサポートする全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-sequence" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、コンテンツの視覚的なレイアウトを変更するのに構造的なマークアップではなくCSSが用いられていて、かつ、レイアウトの変更によってコンテンツの意味が変わってしまっているという不適合事例について述べている。CSS2のpositionプロパティを用いると、利用者のビューポート上のどんな位置にでもコンテンツを表示させることができる。その場合、個々のアイテムが画面上に表示される順序は、ソース文書内に登場する順序とは異なる可能性がある。しかし、支援技術は、コンテンツを正しい順序でレンダリングするために、ソースコードでの順序又はプログラムが解釈する順序を用いている。そのため、CSSによってコンテンツの順序を指定する際には、それによってプログラムで解釈される音声読み上げ順序とは異なる意味になってしまうのであれば、CSSを用いてコンテンツの視覚的な位置を指定しないようにすることが重要である。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>次の例では、段組みのレイアウトを作成するためにCSSが不適切に用いられている。また、テキストは、ブラウザの画面ではマークアップの順序とは異なる順序で視覚的に表示される。</p>
+<p>この例では、配置される各オブジェクトに対してクラスが定義されている。スタイルシートが適用されると、テキストは2つの段組みで表示される。まず、「menu1」クラスの要素（製品）と「menu2」の要素（所在地）は、コラムの見出しとして表示される。そして、「電話機」「コンピューター」「ポータブルMP3プレイヤー」は、製品の下に表示され、「アイダホ」と「ウィスコンシン」は、所在地の下に表示される（アイダホとウィスコンシンの順序は、ソースコードの順序とは異なっている）。</p>
+<p>適切な構造要素が使われていないため、スタイルシートが適用されない状況では、全てのテキストがソースの順序に則って1列に提示され、「製品　所在地　電話機　コンピューター　ポータブルMP3プレイヤー　ウィスコンシン　アイダホ」となってしまう。</p>
+<p>HTMLのコンテンツは次の通り：</p>
+</description>
+      <code role="html401"><![CDATA[
+     <div class="box">      
+     <span class="menu1">製品</span>       
+     <span class="menu2">所在地</span>       
+     <span class="item1">電話機</span>       
+     <span class="item2">コンピューター</span>       
+     <span class="item3">ポータブルMP3プレイヤー</span>       
+     <span class="item5">ウィスコンシン</span>       
+     <span class="item4">アイダホ</span>
+</div>]]></code>
+      <description><p>上記コンテンツに対するスタイルは次の通り：</p>
+</description>
+      <code role="html401"><![CDATA[
+.menu1 { 
+     position: absolute; 
+     top: 3em; 
+     left: 0em;     
+     margin: 0px; 
+     font-family: sans-serif;     
+     font-size: 120%; 
+     color: red; 
+     background-color: white 
+}        
+.menu2 { 
+     position: absolute; 
+     top: 3em; 
+     left: 10em;     
+     margin: 0px; 
+     font-family: sans-serif;     
+     font-size: 120%; 
+     color: red; 
+     background-color: white 
+}      
+.item1 { 
+     position: absolute; 
+     top: 7em; 
+     left: 0em; 
+     margin: 0px 
+}      
+.item2 { 
+     position: absolute; 
+     top: 8em; 
+     left: 0em; 
+     margin: 0px 
+}      
+.item3 { 
+     position: absolute; 
+     top: 9em; 
+     left: 0em; 
+     margin: 0px 
+}      
+.item4 { 
+     position: absolute; 
+     top: 7em; 
+     left: 14em; 
+     margin: 0px 
+}      
+.item5 { 
+     position: absolute; 
+     top: 8em; left: 14em; 
+     margin: 0px 
+}      
+#box { 
+     position: absolute; 
+     top: 5em; 
+     left: 5em 
+}]]></code>
+      <description><p>このコンテンツの場合は、テーブル又は定義リストのように、意味のある要素を用いたほうがよいだろう。</p>
+<ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/F1/cssposfailure.html" linktype="examples">CSSによる配置の失敗例</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/F1/cssposfailurenostyle.html" linktype="examples">CSSによる配置の失敗例：スタイルを外したバージョン</loc></p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="C6"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>CSSを用いて配置されているコンテンツに対して：</p>
+      <olist>
+        <item>
+          <p>ドキュメントからスタイル情報を取り除く、又はユーザーエージェントでスタイルシートの適用をオフにする。</p>
+        </item>
+        <item>
+          <p>コンテンツの音声読み上げ順序が正しく、コンテンツの意味が変わっていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G82">
+   <short-name>非テキストコンテンツの目的を特定する代替テキストを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、非テキストコンテンツの完全な機能を提供できないとしても、代替テキストを介して有用な情報を提供することである。</p>
+    <p>代替テキストは、時として、オリジナルの非テキストコンテンツとまったく同じ目的には使えないことがある（例えば、2次元で素早く標的を定めるスキルや目と手の連動スキルを開発するためのアプレットなど）。そういったケースでは、この実装方法を用いて、非テキストコンテンツの目的を説明する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><ulist><item><p>目と手のコーディネーションスキルを開発するためのアプレットに、「マウスと動く標的を使用して目と手の連動スキルを開発するアプレット」という代替テキストが付けられている。</p></item><item><p>丸いディスクの端を押してリモートカメラを制御し、真ん中のスライダーを使ってズームを調整するカメラのアプレットに、「リモートビデオカメラの照準とズームのコントロール」という代替テキストが付けられている。</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G196"/>
+      <relatedtech idref="H35"/>
+      <relatedtech idref="H36"/>
+      <relatedtech idref="H37"/>
+      <relatedtech idref="H53"/>
+      <relatedtech idref="H86"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>非テキストコンテンツを取り除く、非表示にする、又は覆い隠す。</p>
+        </item>
+        <item>
+          <p>非テキストコンテンツを代替テキストに置き換える。</p>
+        </item>
+        <item>
+          <p>非テキストコンテンツそのものはなかったとしても、代替テキストによって同じ情報が得られる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

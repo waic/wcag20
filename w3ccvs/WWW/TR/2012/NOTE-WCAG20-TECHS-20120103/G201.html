@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>G201: 新しいウィンドウを開くときにはユーザーに事前に知らせる | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/G201.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G200: 必要なときにだけリンク先を新しいウィンドウおよびタブで開く" href="G200.html"><strong>前: </strong>
+        Technique G200</a></li><li><a title="G202: すべての機能をキーボードだけでも操作可能にする" href="G202.html"><strong>次: </strong>
+        Technique G202</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#G201-disclaimer">Important Information about Techniques</a></li><li><a href="#G201-applicability">適用（対象）</a></li><li><a href="#G201-description">解説</a></li><li><a href="#G201-examples">事例</a></li><li><a href="#G201-related-techs">関連する実装方法</a></li><li><a href="#G201-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="G201" id="G201"> </a>G201: 新しいウィンドウを開くときにはユーザーに事前に知らせる</h1><div id="G201-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="G201-applicability">適用（対象）</h2><div class="textbody"><p>新しいウィンドウを開くウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-receive-focus">
+				達成基準 3.2.1 (On Focus)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-receive-focus">
+						How to Meet 3.2.1 (On Focus)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/consistent-behavior-receive-focus.html">
+						達成基準 3.2.1 (On Focus)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-unpredictable-change">
+				達成基準 3.2.2 (On Input)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-unpredictable-change">
+						How to Meet 3.2.2 (On Input)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/consistent-behavior-unpredictable-change.html">
+						達成基準 3.2.2 (On Input)を理解する
+					</a></li></ul></li></ul><h2 id="G201-description">解説</h2><div class="textbody"><p>この実装方法の目的は、自動的に新しいウィンドウまたはタブを開く前にユーザーに知らせることである。リンクを押下したときに自動的に新しいウィンドウを開くことは、もし事前にそのことを知らせていなければ、視覚的なコンテンツを知覚するのに困難を伴うユーザーや認知障害のあるユーザーが混乱する原因となりうる。事前に知らせることによって、ユーザーは現在のウィンドウから離れるかどうかを判断することができるようになる。また、ユーザーが新しいウィンドウを開くことを選んだ場合にも、元のウィンドウに戻りやすくなる。さらに、ブラウザの[戻る]ボタンが使えないことや、直前まで自分がいた場所を見つけるためには元のウィンドウに戻らなければならないことをユーザーが理解する手助けにもなる。</p></div><h2 class="small-head" id="G201-examples">事例</h2><h3 class="small-head" id="G201-ex1">事例 1: コントロールを説明するテキストで知らせる</h3><div class="example"><div class="textbody"><p>コントロールを説明する識別名またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+       &lt;a href="knitting.html" target="_blank"&gt;編み物のすべて 
+              （新しいウィンドウで開く）&lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="G201-ex2">事例 2: CSSを用いて、新しいウィンドウが開く前に知らせる</h3><div class="example"><div class="textbody"><p>以下のコードでは、CSSを用いて新しいウィンドウが開く前に知らせている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+       &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;ポップアップによる警告&lt;/title&gt;
+                &lt;style type="text/css"&gt;
+                body {
+                margin-left:2em;
+                margin-right:2em;
+                }
+                :focus { outline: 0; }
+                a.info {
+                position:relative;
+                z-index:24;
+                background-color:#ccc;
+                color:#000;
+                text-decoration:none
+                }
+                a.info:hover, a.info:focus, a.info:active {
+                z-index:25;
+                background-color:#ff0
+                }
+                a.info span {
+                position: absolute;
+                left: -9000px;
+                width: 0;
+                overflow: hidden;
+                }
+                a.info:hover span, a.info:focus span, a.info:active span {
+                display:block;
+                position:absolute;
+                top:1em; left:1em; width:12em;
+                border:1px solid #0cf;
+                background-color:#cff;
+                color:#000;
+                text-align: center
+                }
+                div.example {
+                margin-left: 5em;
+                }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;ポップアップによる警告&lt;/h1&gt;
+                &lt;p&gt; これは &lt;a class="info" href="popup_advisory_technique.html"
+                 target="_blank"&gt;&lt;strong&gt;外部へのリンク&lt;/strong&gt;
+                 &lt;span&gt;新しいウィンドウで開く&lt;/span&gt;&lt;/a&gt;の事例です。
+                &lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;</code></pre></div><div class="textbody"><p>参考：<a href="/WAI/WCAG20/Techniques/working-examples/G201/working-examples/G201/new-window.html" class="ex-ref">CSSを用いて、新しいウィンドウが開く前に知らせるサンプル：英語</a></p></div></div><h2 id="G201-related-techs">関連する実装方法</h2><div class="textbody"><ul><li><a href="H83.html">H83: target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する</a></li><li><a href="SCR24.html">SCR24: プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</a></li><li><a href="G200.html">G200: 必要なときにだけリンク先を新しいウィンドウおよびタブで開く</a></li></ul></div><h2 id="G201-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G201-procedure">チェックポイント</h3><p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して：</p><ol class="enumar"><li><p>このリンクは新しいウィンドウを開くことが支援技術（音声ブラウザ/スクリーンリーダー）によって読み上げられる。</p></li><li><p>このリンクは新しいウィンドウを開くことが視覚的に示されている。</p></li></ol><h3 class="small-head" id="G201-results">判定基準</h3><ul><li><p>1. および 2. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G200: 必要なときにだけリンク先を新しいウィンドウおよびタブで開く" href="G200.html"><strong>前: </strong>
+        Technique G200</a></li><li><a title="G202: すべての機能をキーボードだけでも操作可能にする" href="G202.html"><strong>次: </strong>
+        Technique G202</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

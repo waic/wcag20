@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H86">
+   <short-name>ASCIIアート、顔文字、及びリート語に代替テキストを提供する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <ulist>
+        <item>
+          <p><att>title</att>属性の読み上げについて、支援技術のサポートレベルは異なる。支援技術の一部は、ユーザーが<att>title</att>属性を通じて与えられる情報にアクセスする機能を実装していない。</p>
+        </item>
+        <item>
+          <p><att>title</att>属性がアクセシビリティ・サポーテッドである場合のみ、<att>title</att>属性を用いてこの実装方法で実装することは十分効果的である。この属性がアクセシビリティ・サポーテッドとなるためには、全てのキーボードユーザーが（音声読み上げソフトウェアを利用しているかどうかに関わらず）title属性の内容を利用できなけらばならない。</p>
+        </item>
+        <item>
+          <p>JAWS 6.2以降とWindow-Eyes 5.0以降は、<el>abbr</el>要素と<el>acronym</el>要素をサポートしている。これらの要素があれば、<att>title</att>属性をすべて読み上げるように設定できるが、初期設定ではオフであり、ユーザーが設定をオンにすることも稀である。</p>
+        </item>
+        <item>
+          <p>グラフィカルユーザーエージェントの多くは、<el>abbr</el>要素や<el>acronym</el>要素でマーク付けしたテキストに、点線を引いたり点線で囲んだりして描画する。加えて、要素にマウスオーバーしたときは、<att>title</att>属性の内容をツールチップで表示する。</p>
+        </item>
+        <item>
+          <p>Internet Explorer 7以前では、<el>abbr</el>要素でマーク付けした内容にどのようなスタイルも追加されない。Internet Explorer 6以前では、その内容にマウスオーバーしたときもツールチップのような拡張表示はなされない。</p>
+        </item>
+        <item>
+          <p>あるユーザーエージェントや支援技術では、<el>abbr</el>要素と<el>acronym</el>要素が利用者に対して同じ方法で提示される。</p>
+        </item>
+      </ulist>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>インターネットでグラフィックが広く用いられるようになる前は、ASCII文字を並べて絵やグラフを描くことがよくあった。今ではASCIIアートはウェブではあまり使われないが、もし使うのであれば、スクリーンリーダーでインターネットにアクセスする全盲の人には全く意味が分からないことを覚えておかなかればならない。ASCIIアートを使う場合、その絵が何なのかというテキストによる説明も付けておくべきである。また、そのASCIIアートをスキップするリンクを置いておくほうがよい。（ただし、これは必須ではない）。</p>
+    <p>顔文字は非常に広く利用されている。顔文字は、ASCII文字を組合せて、顔の表情や他の方法にして感情を伝える。ただし、スクリーンリーダーの利用者は意味が分からないかもしれないので、できれば顔文字の代わりに、単純に「笑顔」といった言葉を使ったほうがよい。もし顔文字を使うのであれば、代替テキストを指定すべきである。場合によっては、ブログやフォーラムを構築するソフトウェアで、たとえばプラグインを利用して、顔文字に使用しているASCII文字を代替テキストの付いたHTML画像に自動変換することができる。</p>
+    <p>リート語は、さまざまなASCII文字の組み合わせでラテン文字を置き換える表記法である。リート語はすでに、インターネット文化や俗語の一部となっており、テキストフィルターやスパムフィルターをあざむくのにしばしば利用される。リート語はスクリーンリーダーを利用する全盲の人が理解できないことがあるため、達成基準 1.1.1に準拠するには代替テキストの提供が求められる。</p>
+    <note>
+      <p class="prefix">この実装方法のサポートは限られているため、コンテンツ制作者は代替テキストを提供することが推奨される。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>
+													以下では、イコール記号に数字の8、ハイフン、数字の0をつなげて「恐怖」を表現する顔文字に対する、3通りの代替テキストの指定方法を示している。</p>
+</description>
+      <code>=8-0（恐怖）
+
+&lt;abbr title="恐怖"&gt;=8-0&lt;/abbr&gt;
+
+&lt;img src="fright.gif" alt="恐怖"/&gt;</code>
+    </eg-group>
+    <eg-group>
+      <description><p>この事例では、ASCIIアートの前にその絵の説明を付け、ASCIIアートをスキップするリンクがある。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#H86-ex3">ASCIIアートの事例をスキップして事例 3へ</loc></p>
+</description>
+      <code><![CDATA[さし絵：蝶のASCIIアート
+ <a href="#skipbutterfly">ASCIIアートをスキップ</a>
+                                 
+                                                                LLLLLLLLLLL
+                                                            __LLLLLLLLLLLLLL
+                                                           LLLLLLLLLLLLLLLLL
+                                                         _LLLLLLLLLLLLLLLLLL
+                                                        LLLLLLLLLLLLLLLLLLLL
+                                                      _LLLLLLLLLLLLLLLLLLLLL
+                                                      LLLLLLLLLLLLLLLLLLLLLL
+                                              L     _LLLLLLLLLLLLLLLLLLLLLLL
+                                             LL     LLLLLL~~~LLLLLLLLLLLLLL
+                                            _L    _LLLLL      LLLLLLLLLLLLL
+                                            L~    LLL~        LLLLLLLLLLLLL
+                                           LL   _LLL        _LL   LLLLLLLL
+                                          LL    LL~         ~~     ~LLLLLL
+                                          L   _LLL_LLLL___         _LLLLLL
+                                         LL  LLLLLLLLLLLLLL      LLLLLLLL
+                                         L  LLLLLLLLLLLLLLL        LLLLLL
+                                        LL LLLLLLLLLLLLLLLL        LLLLL~
+                  LLLLLLLL_______       L _LLLLLLLLLLLLLLLL     LLLLLLLL
+                         ~~~~~~~LLLLLLLLLLLLLLLLLLLLLLLLL~       LLLLLL
+                       ______________LLL  LLLLLLLLLLLLLL ______LLLLLLLLL_
+                   LLLLLLLLLLLLLLLLLLLL  LLLLLLLL~~LLLLLLL~~~~~~   ~LLLLLL
+             ___LLLLLLLLLL __LLLLLLLLLLLLL LLLLLLLLLLLLL____       _LLLLLL_
+          LLLLLLLLLLL~~   LLLLLLLLLLLLLLL   LLLLLLLLLLLLLLLLLL     ~~~LLLLL
+      __LLLLLLLLLLL     _LLLLLLLLLLLLLLLLL_  LLLLLLLLLLLLLLLLLL_       LLLLL
+     LLLLLLLLLLL~       LLLLLLLLLLLLLLLLLLL   ~L ~~LLLLLLLLLLLLL      LLLLLL
+   _LLLLLLLLLLLL       LLLLLLLLLLLLLLLLLLLLL_  LL      LLLLLLLLL   LLLLLLLLL
+  LLLLLLLLLLLLL        LLLLLLLLLLLLL~LLLLLL~L   LL       ~~~~~       ~LLLLLL
+ LLLLLLLLLLLLLLL__L    LLLLLLLLLLLL_LLLLLLL LL_  LL_            _     LLLLLL
+LLLLLLLLLLLLLLLLL~     ~LLLLLLLL~~LLLLLLLL   ~L  ~LLLL          ~L   LLLLLL~
+LLLLLLLLLLLLLLLL               _LLLLLLLLLL    LL  LLLLLLL___     LLLLLLLLLL
+LLLLLLLLLLLLLLLL              LL~LLLLLLLL~     LL  LLLLLLLLLLLL   LLLLLLL~
+LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
+ LLLLLLLLLLLLLLLLLLLL        L~  LLLLLLLL      LLLLLLL~LLLLLLLLLLLLLLLL~
+  LLLLLLLLLLLLLLLLLLLL___L_ LL   LLLLLLL       LLLL     LLLLLLLLLLLLLL
+   ~~LLLLLLLLLLLLLLLLLLLLLLLL     LLLLL~      LLLLL        ~~~~~~~~~
+           LLLLLLLLLLLLLLLLLL_ _   LLL       _LLLLL
+               ~~~~~~LLLLLLLLLL~             LLLLLL
+                         LLLLL              _LLLLLL
+                         LLLLL    L     L   LLLLLLL
+                          LLLLL__LL    _L__LLLLLLLL
+                          LLLLLLLLLL  LLLLLLLLLLLL
+                           LLLLLLLLLLLLLLLLLLLLLL
+                            ~LLLLLLLLLLLLLLLLL~~
+                               LLLLLLLLLLLLL
+                                 ~~~~~~~~~
+<a name="skipbutterfly></a> ]]></code>
+    </eg-group>
+    <eg-group id="skipbutterfly">
+      <description><p>以下は、リート語で「Austin Rocks」と書いた例である。 </p>
+</description>
+      <code><![CDATA[<abbr title="Austin Rocks">Au5t1N r0xx0rz</abbr> ]]></code>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>そのページを一般的なブラウザで開く。</p>
+        </item>
+        <item>
+          <p>ASCIIアート、顔文字、及び（又は）リート語がコンテンツに含まれている。</p>
+        </item>
+        <item>
+          <p>全てのASCIIアート、顔文字、及び（又は）リート語のすぐ前か後に、代替テキストがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>3.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

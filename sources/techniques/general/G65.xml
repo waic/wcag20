@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G65">
+   <short-name>パンくずリストを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-location" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>パンくずリストは、コンテンツがどのような構造になっていたのか、及びこれまでにたどってきたウェブページへ戻る方法を、利用者が想起する助けとなり、また一連のウェブページの中で現在位置を特定する。パンくずリストには、利用者がそのウェブページに到達するまでに通ってきた場所、又はサイトの編成における現在のウェブページの位置が表示されている。</p>
+    <p>パンくずリストは、現在のウェブページまでナビゲートする途中にアクセスしたウェブページへのリンクを使って実装される。パンくずリストは、ウェブページ一式の各ウェブページの中で同じ位置に置く。</p>
+    <p>目に見える区切り文字でパンくずリストの中の項目を切り離すと、利用者の助けになる。区切り文字の例には「&gt;」、「|」、「/」、及び「::」がある。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>開発者が、ハイパーリンクを作成する方法を見つけるために、オーサリングツールのメーカーのウェブサイトの中を探している。検索結果を使って、オーサリングツールを使用してハイパーリンクを作成するための詳しい説明があるウェブページへ行く。そのページには、以下のようなリンクでできたパンくずリストがある:</p>
+</description>
+      <code><![CDATA[ホーム :: デベロッパーセンター :: 手引き]]></code>
+      <description><p>この例では、パンくずリストには現在のウェブページのタイトルである「ハイパーリンクを作成する方法」が含まれていない。その情報はウェブページのタイトルとして入手できる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>写真家の作品集のウェブサイトはいろいろなギャラリーに分かれていて、各ギャラリーはさらに分類ごとに分割されている。サイトの中でジェンツーペンギンの写真を含むウェブページに移動する利用者は、ウェブページの冒頭で以下のようなパンくずリストを見る:</p>
+</description>
+      <code><![CDATA[ホーム / ギャラリー / 南極大陸 / ペンギン / ジェンツーペンギン]]></code>
+      <description><p>「ジェンツーペンギン」を除くすべての項目がリンクとして実装されている。現在位置(ジェンツーペンギン)はパンくずリストに含まれているが、リンクとしては実装されていない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G63"/>
+      <relatedtech idref="G128"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>ウェブページの中にパンくずリストが実装されているとき:</p>
+      <olist>
+        <item>
+          <p>あるウェブページに移動する。</p>
+        </item>
+        <item>
+          <p>パンくずリストが表示されている。</p>
+        </item>
+        <item>
+          <p>パンくずリストが、現在位置に達する正しい案内の順序、又はサイト構造において現在位置までの正しい階層の経路を表示している。</p>
+        </item>
+        <item><p>現在位置を含んで<em>いない</em>パンくずリストに:</p>
+                <olist><item><p>パンくずリストのすべての要素がリンクとして実装されている。</p></item></olist></item>
+        <item><p>現在位置を含んでいるパンくずリストに:</p>
+                
+                        <olist><item><p>現在位置を除くすべての要素がリンクとして実行されている。</p></item><item><p>現在位置がリンクとして実装されていない。</p></item></olist></item>
+        <item>
+          <p>すべてのリンクが、パンくずリストによって指定された正しいウェブページへ移動する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item><p>パンくずリストを使用している一連のすべてのウェブページについて：</p>
+                
+                        <ulist><item><p>2.、3.、及び 6.を満たしている。</p></item><item><p>その上で、4.又は 5.のいずれかを満たしている。</p></item></ulist></item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>H81: 入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/H81.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H80: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する" href="H80.html"><strong>前: </strong>
+        Technique H80</a></li><li><a title="H83: target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する" href="H83.html"><strong>次: </strong>
+        Technique H83</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#H81-disclaimer">Important Information about Techniques</a></li><li><a href="#H81-applicability">適用（対象）</a></li><li><a href="#H81-description">解説</a></li><li><a href="#H81-examples">事例</a></li><li><a href="#H81-resources">参考リソース</a></li><li><a href="#H81-related-techs">関連する実装方法</a></li><li><a href="#H81-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="H81" id="H81"> </a>H81: 入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</h1><div id="H81-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="H81-applicability">適用（対象）</h2><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">
+				達成基準 2.4.4 (Link Purpose (In Context))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
+						How to Meet 2.4.4 (Link Purpose (In Context))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-refs.html">
+						達成基準 2.4.4 (Link Purpose (In Context))を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.46.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/html#H81">User Agent Support Notes for H81</a>.</p></div><h2 id="H81-description">解説</h2><div class="textbody"><p>この実装方法の目的は、入れ子になったリストに含まれるリスト項目によって与えられる文脈から、リストの中のリンクの目的を特定することである。このリスト項目によって、リンクテキストだけでは不明瞭なリンクに文脈が与えられることになる。その説明によって、ユーザーがそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。</p><p>現在の支援技術には、親のリスト項目によって与えられる文脈的な情報を照会するコマンドがないため、この実装方法を用いても、ユーザーはリスト項目ひとつひとつに移動する必要がある。そのため、この実装方法は、非常に長く又は深く入れ子になったリストには適していないことがある。</p><div class="note"><p class="prefix"><em>注記: </em>可能なかぎり、文脈による補足を必要とせずにリンクの目的が特定できるリンクテキストを提供すべきである。</p></div></div><h2 class="small-head" id="H81-examples">事例</h2><h3 class="small-head" id="H81-ex1">事例 1: ある文書を3つのファイル形式で提供する場合</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
+&lt;li&gt;2005-2006年版 年次報告書
+  &lt;ul&gt; 
+  &lt;li&gt;&lt;a href="annrep0506.html"&gt;（HTML）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="annrep0506.pdf"&gt;（PDF）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="annrep0506.rtf"&gt;（RTF）&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2006-2007年版 年次報告書
+  &lt;ul&gt; 
+  &lt;li&gt;&lt;a href="annrep0607.html"&gt;（HTML）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="annrep0607.pdf"&gt;（PDF）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="annrep0607.rtf"&gt;（RTF）&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt; </code></pre></div></div><h3 class="small-head" id="H81-ex2">事例 2: 複数のホテルに関する情報のブロック</h3><div class="example"><div class="textbody"><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
+&lt;li&gt;&lt;a href="royal_palm_hotel.html"&gt;ロイヤル・パーム・ホテル&lt;/a&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;地図&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;写真&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html"&gt;案内&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;お客様レビュー&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;予約フォーム&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="hotel_three_rivers.html"&gt;ホテル・スリー・リバー&lt;/a&gt;
+  &lt;ul class="horizontal"&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;地図&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;写真&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;案内&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;お客様レビュー&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;予約フォーム&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt; </code></pre></div></div><h2 id="H81-resources">参考リソース</h2><div class="textbody"><p>この実装方法に関する参考リソースはない。</p></div><h2 id="H81-related-techs">関連する実装方法</h2><div class="textbody"><ul><li><a href="G91.html">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="G53.html">G53: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</a></li><li><a href="H33.html">H33: title属性を用いて、リンクテキストの文言を補足する</a></li><li><a href="C7.html">C7: CSSを用いて、リンクテキストの一部を非表示にする</a></li><li><a href="H77.html">H77: リンクテキストとそれが含まれているリスト項目とを組み合わせて、リンクの目的を特定する</a></li><li><a href="H78.html">H78: リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</a></li><li><a href="H79.html">H79: リンクテキストとそれが含まれているデータセル及び関連づけられた見出しセルとを組み合わせて、リンクの目的を特定する</a></li><li><a href="H80.html">H80: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</a></li></ul></div><h2 id="H81-tests">検証</h2><div class="textbody"><h3 class="small-head" id="H81-procedure">チェックポイント</h3><p>コンテンツの中で、この実装方法を用いているリンクそれぞれに対して：</p><ol class="enumar"><li><p>そのリンクが含まれる<code>ul</code>要素又は<code>ol</code>要素を見つける。</p></li><li><p>そのリスト要素（<code>ul</code>要素又は<code>ol</code>要素）が、<code>li</code>要素の子孫要素である。</p></li><li><p>そのリンクテキストと親のリスト項目を組み合わせると、リンクの目的が説明されている。</p></li></ol><h3 class="small-head" id="H81-results">判定基準</h3><ul><li><p>上記全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H80: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する" href="H80.html"><strong>前: </strong>
+        Technique H80</a></li><li><a title="H83: target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する" href="H83.html"><strong>次: </strong>
+        Technique H83</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F25">
+   <short-name>達成基準 2.4.2 の不適合事例 － ウェブページのページタイトルがコンテンツの内容を示していない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-title" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、ウェブページにページタイトルはあるが、そのページタイトルがウェブページのコンテンツ又は目的を示していないことによる不適合事例について述べている。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>次に挙げるのは、ページタイトルとはいえない文言の例である：</p>
+<ulist><item><p>オーサリングツールの初期設定のページタイトル。例えば、</p>
+                  
+                           <ulist><item><p>"ここにHTMLドキュメントのタイトルを入れてください"</p></item><item><p>"無題ドキュメント"</p></item><item><p>"タイトルなし"</p></item><item><p>"無題ページ"</p></item><item><p>"新しいページ 1"</p></item></ulist></item><item><p>それぞれの内容を示していないファイル名。例えば、"report.html"又は"spk12.html"など。</p></item><item><p>空の（又は、意味のない）テキスト</p></item><item><p>埋め草又はプレースホルダーのテキスト</p></item></ulist>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>テンプレートを用いて生成されたサイトにおいて、サイトの各ページに同じページタイトルがついている。
+					 そのため、ページタイトルによってページの違いを見分けることができない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H25"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>各ウェブページのページタイトルが、そのウェブページのコンテンツ又は目的を示している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

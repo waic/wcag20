@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR33">
+   <short-name>スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</short-name>
+   <applicability>
+      <p>スクリプトでコントロールされる、コンテンツのスクロールをサポートするウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="sufficient"/>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、スクロールするコンテンツがスクリプトで作成されている場合に、利用者にそのスクロールを停止する手段を提供することである。スクロールするコンテンツは、ロービジョンや認知障害の利用者にとって読みにくかったり、全く読めなかったりする。また、動くものは、一部の人々にとって、ウェブページのほかの部分に集中することへの妨げとなる。</p>
+  </description>
+   <examples>
+     <eg-group>
+      <description><p>この例では、CSS及びJavaScriptを用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p>
+<p>この方法では、JavaScript又はCSSがサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p>
+<p>下のコードは、webSemanticによるアクセシブルなスクローラー（2008年7月）の修正版である。</p>
+<p>XHTML部分：</p>
+</description>
+      <code><![CDATA[...
+<div id="scroller">
+<p id="tag">このテキストはスクロールし、JavaScript及びCSSが
+サポートされていて有効なときは、停止/スクロールのリンクが提供される。</p>
+</div>
+...]]></code>
+      <description><p>CSS部分：</p>
+</description>
+      <code><![CDATA[...
+body {font:1em verdana,sans-serif; color:#000; margin:0}
+
+/* position:relative及びoverflow:hiddenは必須 */
+#scroller { position:relative; overflow:hidden; width:15em; border:1px solid #008080; }
+
+/* スクロールするテキスト用のフォーマットを追加 */
+#tag { margin:2px 0; }
+
+/* #testPは#tagのテキスト変更に関するプロパティを全て含む */
+#testP { visibility:hidden; position:absolute; white-space:nowrap; } 
+
+/* ページ先頭の目印として利用され、かつ幅を制限する */
+#top { width:350px; margin:auto; }
+...]]></code>
+      <description><p>JavaScript部分：</p>
+</description>
+      <code><![CDATA[
+var speed=50        // スクロール速度
+var step=3          // 動きのスムーズ度合い
+var StartActionText= "Scroll"  // 開始させるリンクのテキスト
+var StopActionText = "Pause"   // 停止させるリンクのテキスト
+
+var x, scroll, divW, sText=""
+
+function onclickIE(idAttr,handler,call){
+  if ((document.all)&amp;&amp;(document.getElementById)){idAttr[handler]="Javascript:"+call}
+}
+
+function addLink(id,call,txt){
+  var e=document.createElement('a')
+  e.setAttribute('href',call)
+  var linktext=document.createTextNode(txt)
+  e.appendChild(linktext)
+  document.getElementById(id).appendChild(e)
+}
+
+function getElementStyle() {
+    var elem = document.getElementById('scroller');
+    if (elem.currentStyle) {
+        return elem.currentStyle.overflow;
+    } else if (window.getComputedStyle) {
+        var compStyle = window.getComputedStyle(elem, '');
+        return compStyle.getPropertyValue("overflow");
+    }
+    return "";
+}
+
+function addControls(){
+// 最初にCSSサポートをテスト
+// style要素又は外部ファイルで定義されたoverflowプロパティ値をテスト
+if (getElementStyle()=="hidden") {
+  var f=document.createElement('div');
+  f.setAttribute('id','controls');
+  document.getElementById('scroller').parentNode.appendChild(f);
+  addLink('controls','Javascript:clickAction(0)',StopActionText);
+  onclickIE(document.getElementById('controls').childNodes[0],"href",'clickAction(0)');
+  document.getElementById('controls').style.display='block';
+  }
+}
+
+function stopScroller(){clearTimeout(scroll)}
+
+function setAction(callvalue,txt){
+  var c=document.getElementById('controls')
+  c.childNodes[0].setAttribute('href','Javascript:clickAction('+callvalue+')')
+  onclickIE(document.getElementById('controls').childNodes[0],"href",'clickAction
+
+('+callvalue+')')
+  c.childNodes[0].firstChild.nodeValue=txt
+}
+
+function clickAction(no){
+  switch(no) {
+    case 0:
+      stopScroller();
+      setAction(1,StartActionText);
+      break;
+    case 1:
+      startScroller();
+      setAction(0,StopActionText);
+  }
+}
+
+function startScroller(){
+  document.getElementById('tag').style.whiteSpace='nowrap'
+  var p=document.createElement('p')
+  p.id='testP'
+  p.style.fontSize='25%' //mozilla向け修正 使用する前に4倍する
+  x-=step
+  if (document.getElementById('tag').className) p.className=document.getElementById
+
+('tag').className
+  p.appendChild(document.createTextNode(sText))
+  document.body.appendChild(p)
+  pw=p.offsetWidth
+  document.body.removeChild(p)
+  if (x<(pw*4)*-1){x=divW}
+  document.getElementById('tag').style.left=x+'px'
+  scroll=setTimeout('startScroller()',speed)
+}
+
+function initScroller(){
+  if (document.getElementById &amp;&amp; document.createElement &amp;&amp; document.body.appendChild) {
+    addControls();
+    divW=document.getElementById('scroller').offsetWidth;
+    x=divW;
+    document.getElementById('tag').style.position='relative';
+    document.getElementById('tag').style.left=divW+'px';
+    var ss=document.getElementById('tag').childNodes;
+    for (i=0;i<ss.length;i++) {sText+=ss[i].nodeValue+" "};
+    scroll=setTimeout('startScroller()',speed);
+  }
+}
+
+function addLoadEvent(func) {
+  if (!document.getElementById | !document.getElementsByTagName) return
+  var oldonload = window.onload
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload()
+      func()
+    }
+  }
+}
+
+addLoadEvent(initScroller)]]></code>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR33/Overview.html" linktype="examples">コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</loc></p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.websemantics.co.uk/tutorials/accessible_scroller/">webSemantics Accessible Scroller</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G4"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>スクロールするコンテンツを停止する仕組みが提供されている。</p>
+        </item>
+        <item>
+          <p>停止する仕組みを用いて、コンテンツのスクロールが停止する。</p>
+        </item>
+        <item>
+          <p>スクロールが停止し、自動的に再起動しない。</p>
+        </item>
+        <item>
+          <p>停止中のコンテンツを再起動できる仕組みが提供されている。</p>
+        </item>
+        <item>
+          <p>提供されている再起動の仕組みを用いて、コンテンツのスクロールを再起動する。</p>
+        </item>
+        <item>
+          <p>停止していた位置からスクロールが再開される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.及び6.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

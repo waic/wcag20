@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G11">
+   <short-name>5秒未満で点滅が終わるようにコンテンツを制作する</short-name>
+   <applicability>
+      <p>点滅するコンテンツをサポートしているウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、コンテンツが点滅することによって注意がそがれるのを最小限にし、利用者がページ上の他のコンテンツに意識を集中できるようにすることである。</p>
+    <p>点滅するコンテンツは、様々なウェブコンテンツ技術を用いて制作することができる。その多くには、点滅するコンテンツを連続的に繰り返し再生させたり、点滅するコンテンツを表示させる長さを指定したりするオプションがある。点滅するコンテンツの長さを5秒より短い時間に限定することで、点滅が引き起こす混乱を最小限にすることができる。これはあるタイプの学習障害がある人や弱視の利用者の役に立つ。</p>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G152"/>
+      <relatedtech idref="G186"/>
+      <relatedtech idref="G187"/>
+      <relatedtech idref="G191"/>
+      <relatedtech idref="SCR22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>点滅するアイテムをすべて探す。</p>
+        </item>
+        <item>
+          <p>点滅するそれぞれのアイテムは、点滅の始まりから終わりまでの間隔が5秒より短い。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

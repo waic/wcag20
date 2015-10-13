@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H85">
+   <short-name>optgroup要素を用いて、select要素内のoption要素をグループ化する</short-name>
+   <applicability>
+      <p>利用者の入力項目をまとめているHTML及びXHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p><el>optgroup</el>要素はスクリーンリーダーに広くサポートされているわけではない。</p>
+    </ua-issue>
+    <ua-issue>
+      <p>ユーザーエージェントは、<el>option</el>要素と<el>optgroup</el>要素に対する<att>label</att>属性のサポートが一貫しておらず、支援技術にも広くサポートされているわけではない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この実装方法の目的は、セレクトメニューの中の選択肢をグループ化することである。セレクトメニューは、複数選択式リストやコンボボックスといった、フォーム・コントロールの許容値の一組である。セレクトメニューには、関連する選択肢のグループが含まれることがある。単に「ダミー」の選択肢を使ってこれらのグループを区切るのではなく、セマンティンクに特定すべきである。これによって、ユーザーエージェントは、グループごとに選択肢を閉じておき、利用者が選択肢を素早く拾い読みできるようにしたり、利用者にとって興味のある選択肢がどのグループに属しているのかを示すことができる。また、長い項目を視覚的に分割して、利用者が簡単に自分が選びたい選択肢を発見することにも役立つ。</p>
+    <p>HTMLでは、<el>select</el>要素は複数選択式リストとコンボボックスの両方の生成に利用される。選択肢それぞれは、<el>option</el>要素で示される。選択肢をグループ化するには、<el>optgroup</el>要素の子要素に、関連する<el>option</el>要素を含める。グループに「<att>label</att>」属性でラベル付けすることで、利用者がそのグループに含まれているものは何か予想できるだろう。</p>
+    <p><el>optgroup</el>要素は<el>select</el>要素の直接の子要素、<el>option</el>要素は<el>optgroup</el>要素の直接の子要素として含めるべきとされる。<el>select</el>要素では、<el>optgroup</el>要素に1つだけ<el>option</el>要素を含めることもできるが、実はこのような利用法がデザインを意図したものでないか、コンテンツ制作者は検討すべきである。<el>optgroup</el>要素を入れ子にはできないので、<el>select</el>要素内では1段階のグループ化しかできない。</p>
+  </description>
+   <examples>
+    <eg-group>
+      <description><p>次のコンボボックスは、好きな食べ物のデータをまとめたものである。利用者が好みのものを素早く選択できるように、食べ物の種類によってグループ化してある。</p>
+</description>
+      <code><![CDATA[<form action="http://example.com/prog/someprog" method="post">
+    <label for="food">あなたの好きな食べ物は？</label>
+    <select id="food" name="food">
+      <optgroup label="Fruits">
+        <option value="1">りんご</option>
+        <option value="3">バナナ</option>
+        <option value="4">桃</option>
+        <option value="5">...</option>
+      </optgroup>
+      <optgroup label="野菜">
+        <option value="2">にんじん</option>
+        <option value="6">きゅうり</option>
+       <option value="7">...</option>
+     </optgroup>
+     <optgroup label="焼き菓子">
+       <option value="8">アップルパイ</option>
+       <option value="9">チョコレートケーキ</option>
+       <option value="10">...</option>
+     </optgroup>
+   </select>
+</form> ]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>次の事例は、複数選択式リストで<el>optrgroup</el>要素をどのように用いるかを示している。</p>
+</description>
+      <code><![CDATA[<form action="http://example.com/prog/someprog" method="post">
+    <label for="related_techniques"><strong>関連する実装方法：</strong></label>
+    <select name="related_techniques" id="related_techniques" multiple="multiple" size="10">
+  <optgroup label="一般的な実装方法">
+    <option value="G1">G1: Adding a link at the top of each page ... </option>
+    <option value="G4">G4: Allowing the content to be paused and restarted ... </option>
+    <option value="G5">G5: Allowing users to complete an activity without any time... </option>
+    <option value="G8">G8: Creating an extended audio description for the ... </option>
+    <option value="G9">G9: Creating captions for live synchronized media... </option>
+    <option value="G10">G10: Creating components using a technology that ... </option>
+  </optgroup>
+  <optgroup label="HTMLの実装方法">
+    <option value="H2">H2: Combining adjacent image and text links for the same ... </option>
+    <option value="H4">H4: Creating a logical tab order through links, form ... </option>
+    <option value="H24">H24: Providing text alternatives for the area ...
+    </option>
+  </optgroup>
+  <optgroup label="CSSの実装方法">
+    <option value="C6">C6: Positioning content based on structural markup... </option>
+    <option value="C7">C7: Using CSS to hide a portion of the link text... </option>
+  </optgroup>
+  <optgroup label="SMILの実装方法">
+    <option value="SM1">SM1: Adding extended audio description in SMIL 1.0... </option>
+    <option value="SM2">SM2: Adding extended audio description in SMIL 2.0... </option>
+    <option value="SM6">SM6: Providing audio description in SMIL 1.0... </option>
+  </optgroup>
+  <optgroup label="ARIAの実装方法">
+    <option value="ARIA1">ARIA1: Using WAI-ARIA describedby... </option>
+    <option value="ARIA2">ARIA2: Identifying required fields with the "required"... </option>
+    <option value="ARIA3">ARIA3: Identifying valid range information with "valuemin" ... </option>
+    <option value="ARIA4">ARIA4: Using WAI-ARIA to programmatically identify form  ... </option>
+  </optgroup>
+  <optgroup label="不適合事例">
+    <option value="F1">F1: Failure of SC 1.3.2 due to changing the meaning of content by... </option>
+    <option value="F2">F2: Failure of SC 1.3.1 due to using changes in text presentation... </option>
+    <option value="F3">F3: Failure of SC 1.1.1 due to using CSS to include images  ... </option>
+    <option value="F4">F4: Failure of SC 2.2.2 due to using text-decoration:blink ...</option>
+  </optgroup>
+</select>
+</form> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT">HTML SELECT element</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP">HTML OPTGROUP element</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/forms/">Creating Accessible Forms</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.usability.com.au/resources/wcag2/">Accessible Forms using WCAG 2.0</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>セレクトメニューに含まれる選択肢について、関連する選択肢としてグループ化すべきものがある。</p>
+        </item>
+        <item>
+          <p>関連する選択肢のグループが、<el>optgroup</el>要素でグループ化してある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

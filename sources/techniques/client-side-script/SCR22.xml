@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR22">
+   <short-name>スクリプトを用いて、点滅を制御し、5秒以内に停止させる</short-name>
+   <applicability>
+      <p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、スクリプトによる点滅を、5秒未満で停止する設定にできるよう制御することである。 スクリプトを用いて、コンテンツの点滅効果を開始し、表示と非表示の状態切り替えを制御し、そして5秒以下で停止させる。<code>setTimeout()</code>関数を用いて、点滅するコンテンツの表示と非表示の状態を切り替え、点滅の回数と所要時間の積が5秒近くになった時に停止させる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この例では、JavaScriptを用いてHTML及びXHTMLコンテンツの点滅を制御する。JavaScriptは、コンテンツの表示状態を制御して点滅効果を生みだす。効果の開始を制御し、5秒以内に停止させる。</p>
+</description>
+      <code><![CDATA[...
+<div id="blink1" class="highlight">新商品！</div>
+<script type="text/javascript">
+<!--
+// 点滅「on」状態
+function show()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "visible";
+}
+// 点滅「off」状態
+function hide()
+{
+	if (document.getElementById)
+	document.getElementById("blink1").style.visibility = "hidden";
+}
+// 点滅効果を出すために「on」と「off」の状態を450ミリ秒ごとに切り替え
+// 4500ミリ秒後に終了（5秒未満）
+for(var i=900; i < 4500; i=i+900)
+{
+	setTimeout("hide()",i);
+	setTimeout("show()",i+450);
+}
+-->
+</script>
+...]]></code>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR22/ex1.html" linktype="examples">点滅をコントロールするために、スクリプトを使用する</loc></p>
+</description>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <p>点滅しているコンテンツのそれぞれのインスタンスに対して：</p>
+      <olist>
+        <item>
+          <p>点滅効果が開始される時、5秒間のタイマーを開始させる。</p>
+        </item>
+        <item>
+          <p>タイマーが切れるとき、点滅が停止している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>点滅しているコンテンツのそれぞれのインスタンスが2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

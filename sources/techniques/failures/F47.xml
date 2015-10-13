@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F47">
+   <short-name>達成基準 2.2.2 の不適合事例 － blink要素を用いている</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="failure"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="*">
+      <p><el>blink</el> 要素はWindows用Internet Explorer 6ではサポートされていない。ユーザーエージェントのNetscape/Mozillaシリーズ及びWindows用Operaではサポートされている。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p><code>blink</code>要素は正式なHTML又はXHTMLの仕様の一部ではないが、多くのユーザーエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>blink</code>を用いているコンテンツは達成基準を満たしていないことになる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>製品リストのページで、セール価格に注意を引くため、<code>blink</code> 要素を用いている。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p>
+</description>
+      <code><![CDATA[<p>わが社の素晴らしい製品 <blink>セール! 44,995ドル！</blink></p>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink">Mozilla Developer Network: &lt;blink&gt;</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink">Mozilla Developer Network: text-decoration</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コードに<code>blink</code> 要素が存在する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしているならば、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

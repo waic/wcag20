@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F62">
+   <short-name>F62: 達成基準 1.3.1 及び 達成基準 4.1.1 の不適合事例 － XMLで特定の関係性を示すためのDOMにおける情報が不十分である</short-name>
+   <applicability>
+      <p>XMLに対するDocument Object Model (DOM)</p>
+   </applicability>
+   <applies-to>
+    <success-criterion idref="content-structure-separation-programmatic" relationship="failure"/>
+    <success-criterion idref="ensure-compat-parses" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、支援技術を含むユーザーエージェントが一貫性をもってウェブページを解釈できないことによる不適合事例について述べている。ウェブページにおける特定の関係性が曖昧な場合、支援技術を含めて、さまざまなユーザーエージェントは異なる情報を利用者に提示してしまう恐れがある。例えば、支援技術の利用者は、他の主流なユーザーエージェントの利用者とは異なる形で情報を受け取ってしまうかもしれない。マークアップ言語の要素及び属性の中には、一意的な値を持つことが必須とされているものがあり、もし値が一意的ではなかった場合には、その結果としてコンテンツがきちんと提示されなかったり、一意的に解釈できなくなったりする恐れがある。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる例</head>
+      <description><ulist><item><p>一意的ではないid属性の値。</p></item><item><p>SVGドキュメントが、（代替テキストを提供するための）title要素をドキュメント内の他の場所で再び用いるために、すべてのtitle要素にid属性を付けている。しかし、あるtitle要素のid属性値がドキュメント内の他の場所でも用いられているため、曖昧なドキュメントになってしまっている。</p></item><item><p>DAISYドキュメントが、caption要素のimgref属性を用いて、画像のキャプションを示している。しかし、imgref属性値がそのキャプションが関連付けられるべき画像のimg要素のid属性を参照していないため、ユーザーエージェントはその画像のキャプションを見つけることができない。</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ドキュメント内にあるすべてのid属性値が（スキーマによって定義されているように）一意的である。</p>
+        </item>
+        <item>
+          <p>同一のドキュメント内にある一意的な識別子を参照する要素又は属性に、対応するid属性値がある。</p>
+        </item>
+      </olist>
+      <p>DTDによって定義されたXML文書型においては、type ID、IDREF、又はIDREFSの属性が該当する。また、W3CのXMLスキーマによって定義されるXML文書型においては、type ID、IDREF、又はIDREFSの要素又は属性が該当する。（type ID、IDREF、及びIDREFSは、属性にのみ用いるべきだが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/xmlschema-2/#terminology">XML Schema Part 2: Datatypes Second Edition</loc>では、要素で用いることも可能である。）その他のスキーマ言語においては、これに対応した、ID及びIDの参照を特定するためのメカニズムをチェックすること。</p>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.でid属性値が一意的ではない、又は2.でid属性値がない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

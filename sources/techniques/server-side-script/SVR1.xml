@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SVR1">
+   <short-name>クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</short-name>
+   <applicability>
+      <p>サーバーサイド・スクリプト言語、及びリダイレクトためのURL又はURLパターンのあるサーバ環境設定ファイルを含む、サーバーサイドのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、あるページ(利用者によって要求されたページ)が別のページにリダイレクトされたために、2つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかのユーザーエージェントは、利用者を指定された秒数の後に別のページにリダイレクトするHTMLの<el>meta</el>要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx番台のステータスコード、及び転送先のURLのLocationヘッダーを持つ適切な HTTPレスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しいURLのリクエストをする。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>JSP/サーブレット</head>
+      <description><p>Java サーブレット又はJavaServer Pages(JSP)では、開発者は <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> を使用できる。</p>
+</description>
+      <code><![CDATA[…
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+…
+  response.sendRedirect("/newUserLogin.do");
+}]]></code>
+      <description><p>このコードは、302ステータスコード(「Found」)及び新しいURLのLocationヘッダーを含むレスポンスをユーザーエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code> で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
+</description>
+      <code><![CDATA[…
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+…
+  response.sendError(response.SC_MOVED_PERMANENTLY, "/newUserLogin.do");
+}]]></code>
+      <description><p>アプリケーションがセッションに依存するために、アプリケーションがURLのリライトに <code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> を使用するなら、メソッド <code><![CDATA[HttpServletResponse.encodeRedirectURL(String url)]]></code> が <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> の代わりに使用されるべきである。また、<code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> でURLをリライトして、それから <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> にこのURLを渡すことも可能である。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>ASP</head>
+      <description><p>VBScriptで書かれたActive Server Page(ASP)では、開発者は <code>Response.Redirect</code> を使用できる。</p>
+</description>
+      <code><![CDATA[
+Response.Redirect "newUserLogin.asp"]]></code>
+      <description><p>又は</p>
+</description>
+      <code><![CDATA[Response.Redirect("newUserLogin.asp")]]></code>
+      <description><p>以下のコードは、特定のHTTPステータスコードを含む、より完全な例である。</p>
+</description>
+      <code><![CDATA[Response.Clear
+Response.Status = 301
+Response.AddHeader "Location", "newUserLogin.asp"
+Response.Flush
+Response.End]]></code>
+    </eg-group>
+    <eg-group>
+      <head>PHP</head>
+      <description><p>PHPでは、開発者は <code><![CDATA[header]]></code> メソッドで生のHTTPヘッダーを送ることができる。以下のコードは、301ステータスコードと新しい場所を送る。ステータスが明示的に設定されないなら、リダイレクトのレスポンスはHTTPステータスコード302を送る。</p>
+</description>
+      <code><![CDATA[
+<?php
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: http://www.example.com/newUserLogin.php");
+?>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>Apache</head>
+      <description><p>以下の例のようにして、開発者は Apache ウェブサーバがリダイレクトを処理するように構成できる。</p>
+</description>
+      <code><![CDATA[redirect 301 /oldUserLogin.jsp http://www.example.com/newUserLogin.do]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/QA/Tips/reback">Use standard
+                                        redirects: do not break the back button!</loc> (W3C QA Tip).
+                                </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3">HTTP/1.1 Status Code Definitions: Redirection 3xx</loc>.
+                                </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.somacon.com/p145.php">HTTP 301 Permanent
+                                        Redirection Techniques</loc> by Shailesh N. Humbad. </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.3/javadoc/javax/servlet/http/HttpServletResponse.html">Interface javax.servlet.http.HttpServletResponse</loc> in
+                                    the Java Servlets 2.3 API documentation. </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://php.net/manual/en/function.header.php">header</loc> in the PHP
+                                    Manual. </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/2.2/mod/mod_alias.html">Apache Module mod_alias</loc> in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/2.2/">Apache HTTP Server
+                                        Version 2.2 Documentation</loc> describes how redirects can
+                                    be specified in Apache 2.2. </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/1.3/mod/mod_alias.html">Module mod_alias</loc> in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://httpd.apache.org/docs/1.3/">Apache HTTP Server
+                                        Version 1.3 Documentation</loc> describes how redirects can
+                                    be specified in Apache 1.3. </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>別のウェブページへのリンク又はプログラムによる参照を見つける。</p>
+        </item>
+        <item>
+          <p>ウェブページ一式におけるURIのリンク又はプログラムによる参照において、参照されたウェブページがクライアントサイド・リダイレクトを引き起こすコード(例えば、meta要素又はスクリプト)を含んでいない。</p>
+        </item>
+        <item>
+          <p>ウェブページ一式におけるURIのリンクやプログラムによる参照において、参照されたURIがリダイレクトしない、又は、一時停止なしのサーバーサイド・リダイレクトをしない。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>2. 及び 3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

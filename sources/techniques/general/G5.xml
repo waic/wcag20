@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G5">
+   <short-name>利用者が制限時間なしでタスクを完了できるようにする</short-name>
+   <applicability>
+      <p>この実装方法は、機能性のための制限時間付きインタラクションを求めない操作方法をサポートする、あらゆる技術又は手法に適用される。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-no-exceptions" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、利用者が操作の完了に必要な時間を、利用者に提供することである。この実装方法は、制限時間付きインタラクションを必要としない操作方法を提供することにも関連する。利用者には、操作に必要なだけの時間が認められる。</p>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.nngroup.com/articles/top-ten-web-design-mistakes-of-2005/">Top Ten Web Design Mistakes of 2005</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G75"/>
+      <relatedtech idref="G76"/>
+      <relatedtech idref="G80"/>
+      <relatedtech idref="G198"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>制限時間付きのインタラクションがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしていない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

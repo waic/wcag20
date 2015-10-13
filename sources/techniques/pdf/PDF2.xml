@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF2">
+   <short-name>PDF 文書内でしおりを作成する</short-name>
+   <applicability>
+     <p id="pdf.applicability.general">タグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この実装方法の目的は、ユーザーが長い文書でしおり（アウトライン辞書のアウトラインエントリ）を使用してコンテンツを見つけられるようにすることである。</p>
+    <p>認知障害のあるユーザーは、多数のページを読み進めるよりも、文書の概要を提供する階層的なアウトラインを好む場合がある。また、これは文書内を移動する方法として一般的なものであり、どのようなユーザーにとっても役立つものである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Microsoft Word 2007 で作成した目次を変換し、Adobe Reader 9 および Acrobat 9 Pro のしおりを作成する</head>
+      <description><p>この事例は Microsoft Word と Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>Word 文書の最初に目次を作成する。</p>&#13;
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/word-toc.jpg" alt="Wordリボンの［参考資料］タブの［目次］ツール" height="150" width="363"/></p></item><item><p>名前を付けて保存 > PDF（*.pdf） を選択し、次の両方の項目を有効にして Word 文書を PDF に変換する。</p>&#13;
+<ulist><item><p>タグ付き Adobe PDF でアクセシビリティと折り返しを有効にする</p></item><item><p>Word の見出しをしおりに変換</p></item></ulist></item></olist><p>変換された文書の目次エントリは、文書内の見出しにリンクされる。</p>
+<p>さらに、左側のナビゲーションウィンドウに、見出しが PDF のしおりとして表示される。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/bookmarks.jpg" alt="スクリーンショット：Word文書の見出しから生成された目次としおりを表示しているPDF文書" height="249" width="937"/></p><p>文書に用語集やインデックスが含まれている場合、これらのセクションの見出しが目次に（またナビゲーションウィンドウのしおりとして）表示される。また、目次は、しおりも付けられるようにするために、見出しによってマークアップされなければならない。</p>
+<p>このマークアップがオーサリングツールによって行われていない場合は、Adobe Acrobat Pro を使用してタグを設定することができる。変換された見出しを変更する方法または新しい見出しを追加する方法については、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF9.html">PDF9：PDF 文書内のコンテンツを見出しタグでマークすることで見出しを作成する</loc>」を参照のこと。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>OpenOffice.org Writer 2.2 で作成した目次を変換し、Adobe Reader 9 および Acrobat 9 Pro のしおりを作成する</head>
+      <description><p>この事例は、OpenOffice.org Writer と Adobe Acrobat ProおよびReader の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>OpenOffice.org Writer 文書の最初に目次を作成する。</p>
+<ulist><item><p>挿入 > 目次と索引 > 目次と索引 > 目次と索引の挿入</p></item></ulist></item><item><p>ファイル > PDF としてエクスポートを選択し、Options ダイアログボックスでタグ付き PDF を選択して、文書を PDF に変換する。</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/oo-toc.jpg" alt="スクリーンショット：OpenOffice.org Writerの［目次と索引の挿入］ダイアログ" height="583" width="944"/></p><p>変換された文書の目次エントリは、文書内の見出しにリンクされ、左側のナビゲーションウィンドウに PDF のしおりとして表示される。OpenOffice.org の目次としおりは、事例 1 と同様に表示される。</p>
+<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/bookmarks.odt" linktype="examples">working example of creating bookmarks with OpenOffice Writerでしおりを生成するサンプル（Open Document Textファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>変換後に Adobe Acrobat 9 Pro を使用して、しおりを追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>タグ付き PDF に変換した後で、自動的に生成されなかったしおりを追加することができる。変換されたしおりと同様に、タグ付きしおりでも文書内の構造情報が使用される。</p>
+<olist><item><p>しおりパネルでオプションメニューを選択し、［ストラクチャから新規しおり作成］を選択する。</p></item><item><p>構造エレメントダイアログボックスで、タグ付きしおりとして指定するエレメントを選択する。</p></item></olist>
+<p>次の画像は、しおりオプションメニューを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/bookmark1.jpg" alt="スクリーンショット：［しおり］のオプションメニュー" height="521" width="358"/></p><p>次の画像は、しおりを付けるために文書内のリンクを選択するようすを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/bookmark2.jpg" alt="スクリーンショット：「リンク」を選択して、しおり作成に用いられるタグ付けされた要素" height="369" width="506"/></p><p>タグ付きしおりは、タイトルのない新規しおりの下にネストされている。新規しおりのコンテキストメニューから「名前を変更」オプションを選択して、次の画像に示すように新規しおりの名前を変更する。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/link-bookmark.jpg" alt="スクリーンショット：文書中のリンクに対するしおり" height="309" width="943"/></p><p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF2/bookmarks.pdf" linktype="examples">working example of creating bookmarks with Acrobat Proで作成したしおりのサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>アウトライン階層によってしおりを作成する</head>
+      <description><p>次のコードフラグメントは、しおりの作成に使用するアウトライン階層の一部を示している。これは通常、オーサリングツールを使用して行う。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[121 0 obj
+ << /Type /Outlines
+    /First 22 0 R
+    /Last 29 0 R
+    /Count 6
+ >>
+endobj
+22 0 obj
+ << /Title (障害者によるユーザビリティテストにゲリラ戦術を適用する)
+    /Parent 21 0 R
+    /Next 29 0 R
+    /First 25 0 R
+    /Last 28 0 R
+    /Count 4
+    /Dest [3 0 R /XYZ 0 792 0]
+ >>
+endobj
+25 0 obj
+ << /Title (はじめに)
+    /Parent 22 0 R
+    /Next 26 0 R
+    /Dest [3 0 R /XYZ null 701 null]
+ >>
+endobj]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 12.3.3 (Document Outline) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G64"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>しおりパネルにしおりが表示されている。</p>
+        </item>
+        <item>
+          <p>しおりが文書内の正しいセクションにリンクされている。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Creating_bookmarks_in_PDF_documents"/>
+      </source>
+   </admin>
+</technique>

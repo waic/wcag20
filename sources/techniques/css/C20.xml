@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C20">
+   <short-name>カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</short-name>
+   <applicability>
+      <p>CSS</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、1行が平均80字(日本語なら40字)以下になるようにして利用者がコンテンツを見ることができるように、CSSで指定することである。
+こうすることで、テキストの長い行を読む際に、現在読んでいる位置を維持することが困難な読字障害や視覚障害のある利用者が、より効率よくコンテンツをを閲覧したり操作したりできるようになる。
+この実装方法はまた、文字サイズの拡大に合わせてカラム幅を広くすることにもなり、それによって、文字サイズが大きくなるに従ってテキストの一部が欠けて読めなくなるような事態も発生しにくくなる。</p>
+    <p>この実装方法は、コンテンツ制作者に対して、CSSを使ってデフォルトでテキストの各行の幅を80字(日本語は40字)以下に制限することを要求するものではない、という点に注意してほしい。
+それよりもむしろ、CSSレイアウトに相対サイズを用いることを推奨して、利用者が1行80字以下で読むことができないようなカラム幅には、設定しないようにする。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>
+この例では、<el>div</el>要素の幅はスタイルシートでem単位で指定されている。</p>
+<note><p class="prefix">
+CSSプロパティの<code>max-width</code>は、Internet Explorer 6 以前のバージョンではサポートされていない。</p></note>
+</description>
+      <code><![CDATA[#main_content {max-width: 70em}]]></code>
+      <description><p>
+テキストのブロックは、コンテンツ内の<el>div</el>要素の中に収められる。</p>
+</description>
+      <code><![CDATA[<div id="main_content"> 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing ...</p>
+</div>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>
+この例では、<el>div</el>要素の幅はスタイルシートでパーセントで指定されている。</p>
+</description>
+      <code><![CDATA[#main_content {width: 90%}]]></code>
+      <description><p>
+テキストのブロックは、コンテンツ内の<el>div</el>要素の中に収められる。
+</p>
+</description>
+      <code><![CDATA[<div id="main_content"> 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing ...</p>
+</div>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/box.html">CSS 2 Box Model</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/visuren.html">CSS 2 Visual formatting Model</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/visudet.html">CSS 2 Visual formatting Model Details</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.456bereastreet.com/archive/200504/about_fluid_and_fixed_width_layouts/">About fluid and fixed width layouts</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://cookiecrook.com/AIR/2003/train/accessiblecss.php">Accessible CSS</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.maxdesign.com.au/articles/em/">Ideal line length for content</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>カラム幅が、相対的な単位で定義されている。</p>
+        </item>
+        <item>
+          <p>行の長さが、ブラウザのウィンドウをリサイズしても80字（日本語は40字）以下を維持している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

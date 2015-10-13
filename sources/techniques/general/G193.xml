@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G193">
+   <short-name>ウェブページでアシスタントによるヘルプを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、ウェブページを利用する際の支援となるマルチメディアのアバターを使ったヘルプを提供することである。アバターを使ったヘルプは、テキストを読むことが難しい認知障害のある利用者に特に役立つ。また、視覚情報を利用することで、提示された題材に集中するのに役立つことがある。</p>
+    <note>
+      <p class="prefix">マルチメディアのアバターは<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#media-equiv" linktype="guideline">ガイドライン 1.2</loc>の関連する達成基準も満たさなければならない。</p>
+    </note>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G71"/>
+      <relatedtech idref="G103"/>
+      <relatedtech idref="H89"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページにアシスタント機能がある。</p>
+        </item>
+        <item>
+          <p>アシスタントはそのページの内容の理解を手助けする情報を提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

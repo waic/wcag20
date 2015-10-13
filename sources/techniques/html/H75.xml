@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H75">
+   <short-name>ウェブページがwell-formedであることを確認する</short-name>
+   <applicability>
+      <p>すべてのXMLベースのマークアップ言語</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-parses" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、支援技術がコンテンツを解析するときに生じるエラーを避けることである。well-formedについては、文書をXMLパーサーを用いてチェックし、バリデーションレポートがwell-formedに関するエラーを含んでいるかどうかで確認できる。すべてのXMLパーサーには、well-formedをチェックし、well-formedに関するエラーが見つかったときは、通常の処理を停止することが要求される（XMLパーサーは、バリデーションをサポートしていなくてもよい）。</p>
+  </description>
+   <examples>
+     <eg-group>
+      <description><p>XMLファイルは、文書タイプ宣言、a xsi:schemaLocation属性あるいは他のタイプのスキーマへのリファレンスを含む。コンテンツ開発者は、オンラインあるいはオフラインのバリデーター、XMLエディタもしくはXMLサポートのあるIDE（下記参考リソースを参照）を用いて、well-formedであることをチェックできる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性又はスキーマがあるのにスキーマ参照のインストラクションのない処理を含まないとき、関連するスキーマがコマンドラインの指示、利用者ダイアログあるいは（構成）コンフィグレーションファイルで指定されている。そして、XMLファイルがスキーマに対してチェックされている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性あるいはスキーマがあるのにスキーマ参照のインストラクションのない処理を 含まないとき、名前空間がスキーマ文書又は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rddl.org/">RDDL（Resource Directory Description Language ）</loc>を読み出すのに参照されておらず、そしてXMLファイルがスキーマに対してチェックされている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>ウェブサイトが静的な文書ではなく、XMLを動的に生成するとき、コンテンツ開発者は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmlunit.sourceforge.net/">XMLUnit</loc>や<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmltestsuite.sourceforge.net/">XML Test Suite</loc>あるいは類似のフレームワークを用いて、生成されるXMLコードをチェックできる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/2004/REC-xml-20040204/Overview.html#sec-well-formed">Well-Formed XML Documents</loc> in Extensible Markup Language (XML) 1.0 (Third
+                  Edition), W3C Recommendation 04 February 2004. </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/2004/REC-xml11-20040204/#sec-well-formed">Well-Formed XML Documents</loc> in Extensible Markup Language (XML) 1.1, W3C
+                  Recommendation 04 February 2004. </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-xml/#wf-entities">4.3.2 Well-Formed Parsed
+                    Entities</loc> in Extensible Markup Language (XML) 1.1, W3C Recommendation 04
+                  February 2004.</p>
+            </item>
+         </ulist>
+         <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="G134"
+                 linktype="general">ウェブページをバリデートする</loc>の参考リソースを参照のこと。</p>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p> 各ファイルをXMLパーサーにロードする。</p>
+        </item>
+        <item>
+          <p> well-formedに関するエラーがないことをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>2.を満たしている。</p>
+      </expected-results>
+   </tests>
+</technique>

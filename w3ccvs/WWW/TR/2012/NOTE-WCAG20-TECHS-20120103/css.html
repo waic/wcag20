@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><title>CSS Techniques  | Techniques for WCAG 2.0
+            </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="bytech.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 実装方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><div class="div1"><a name="maincontent"/><h1 id="techs">CSS Techniques for WCAG 2.0</h1><p>This Web page lists CSS Techniques from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not replace the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p><p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p><p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p><div class="toc">
+<hr/><h2><a name="contents" id="contents"> </a>目次</h2><ul class="toc"><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#abstract">概要 </a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#status">この文書のステータス</a></li><li><a href="#C6">C6: 構造を示すマークアップをした上で、コンテンツを配置する</a></li><li><a href="#C7">C7: CSSを用いて、リンクテキストの一部を非表示にする</a></li><li><a href="#C8">C8: CSS の letter-spacing プロパティを用いて、単語内の文字間隔を調整する</a></li><li><a href="#C9">C9: CSS を用いて、装飾目的の画像を付加する</a></li><li><a href="#C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="#C13">C13: キーワードを用いてフォントサイズを指定する</a></li><li><a href="#C14">C14: em単位を用いてフォントサイズを指定する</a></li><li><a href="#C15">C15: CSSを用いて、ユーザーインタフェースコンポーネントがフォーカスを受けとったときの表示を変更する</a></li><li><a href="#C17">C17: Scaling form elements which contain text</a></li><li><a href="#C18">C18: Using CSS margin and padding rules instead of spacer images for layout design</a></li><li><a href="#C19">C19: CSSでテキストの配置を左寄せ又は右寄せに指定する</a></li><li><a href="#C20">C20: カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</a></li><li><a href="#C21">C21: 行送りをCSSで指定する</a></li><li><a href="#C22">C22: CSSを用いて、テキストの視覚的な表現を制御する</a></li><li><a href="#C23">C23: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</a></li><li><a href="#C24">C24: コンテナのサイズにCSSのパーセント値を用いる</a></li><li><a href="#C25">C25: CSSで、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</a></li><li><a href="#C27">C27: DOMの順序を表示順序と一致させる</a></li><li><a href="#C28">C28: em単位を用いて、テキストコンテナのサイズを指定する</a></li><li><a href="#C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li><li><a href="#C30">C30: CSSを用いて、テキストを画像化された文字に置き換え、変換するユーザーインタフェースコントロールを提供する</a></li></ul></div><hr/><div class="body"><div class="div1">
+		<div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C6" id="C6"> </a>C6: 構造を示すマークアップをした上で、コンテンツを配置する</h2><div class="applicability"><h3 id="C6-applicability">適用（対象）</h3><div class="textbody"><p>CSSに対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
+				達成基準 2.4.1 (Bypass Blocks)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-skip">
+						How to Meet 2.4.1 (Bypass Blocks)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-skip.html">
+						達成基準 2.4.1 (Bypass Blocks)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">
+				達成基準 1.3.2 (Meaningful Sequence)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-sequence">
+						How to Meet 1.3.2 (Meaningful Sequence)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-sequence.html">
+						達成基準 1.3.2 (Meaningful Sequence)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">SC 1.3.2</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-sequence.html"> Understanding SC 1.3.2</a> for details.</p></div></li></ul><h3 id="C6-description">解説</h3><div class="textbody"><p>この実装方法の目的は、スタイルシートが適用されなくても意味の伝わる表現がなされるようにした上で、スタイルシートを使って見栄えをさらに良くする方法を示すことである。 CSS2の配置関連のプロパティを使用すれば、コンテンツを利用者のビューポート内の任意の位置に配置することができる。構造を示す要素を使っていれば、スタイルが適用されていない際でもコンテンツの意味は正しく伝えられる。</p></div><h3 class="small-head" id="C6-examples">事例</h3><h4 class="small-head" id="C6-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+この事例では、コンテンツに対して構造（定義リスト）を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるためにCSSが使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTMLの定義リストを表示する際に<code>dd</code>要素をインデントするユーザーエージェントのデフォルト値を上書きするために、マージンの値を0にしている。</p><p>表示させるコンテンツは以下の通り：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div class="box"&gt;
+  &lt;dl&gt;
+    &lt;dt class="menu1"&gt;製品&lt;/dt&gt;
+    &lt;dd class="item1"&gt;電話&lt;/dd&gt;
+    &lt;dd class="item2"&gt;コンピューター&lt;/dd&gt;
+    &lt;dd class="item3"&gt;ポータブル　MP3　プレイヤー&lt;/dd&gt;
+    &lt;dt class="menu2"&gt;所在地&lt;/dt&gt;
+    &lt;dd class="item4"&gt;アイダホ&lt;/dd&gt;
+    &lt;dd class="item5"&gt;ウィスコンシン&lt;/dd&gt;
+    &lt;/dt&gt;
+  &lt;/dl&gt;
+ &lt;/div&gt; </code></pre></div><div class="textbody"><p>上記要素の配置及び表示指定をするCSSは以下の通り：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+.item1 {
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 7em;
+ }
+ .item2 {
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 8em;
+ }
+ .item3 {
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 9em;
+ }
+ .item4 {
+   left: 14em;
+   margin: 0;
+   position: absolute;
+   top: 7em;
+ }
+ .item5 {
+   left: 14em;
+   margin: 0;
+   position: absolute;
+   top: 8em;
+ }
+ .menu1 {
+   background-color: #FFFFFF;
+   color: #FF0000;
+   font-family: sans-serif;
+   font-size: 120%;
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 3em;
+ }
+ .menu2 {
+   background-color: #FFFFFF;
+   color: #FF0000;
+   font-family: sans-serif;
+   font-size: 120%;
+   left: 10em;
+   margin: 0;
+   position: absolute;
+   top: 3em;
+ }
+ #box {
+   left: 5em;
+   position: absolute;
+   top: 5em;
+ }  </code></pre></div><div class="textbody"><p>
+スタイルシートが適用されると、データは「製品」と「所在地」の2段組みで表示される。スタイルシートが適用されない場合は、構造と読み上げ順序を保持した状態の定義リストとしてテキストが表示される。</p></div></div><h3 id="C6-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li/><li/></ul></div><h3 id="C6-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F1">F1: 達成基準 1.3.2 の不適合事例 － CSSで情報を配置することにより、コンテンツの意味を変えている</a></li></ul></div><h3 id="C6-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C6-procedure">チェックポイント</h4><p>CSSで表示位置を調整しているコンテンツに対して：</p><ol class="enumar"><li><p>文書からスタイル情報を取り除く、又はユーザーエージェントでスタイルシートを無効にする。</p></li><li><p>構造的な関係及びコンテンツの意味が保持されている。</p></li></ol><h4 class="small-head" id="C6-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C7" id="C7"> </a>C7: CSSを用いて、リンクテキストの一部を非表示にする</h2><div class="applicability"><h3 id="C7-applicability">適用（対象）</h3><div class="textbody"><p>CSSに対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">
+				達成基準 2.4.4 (Link Purpose (In Context))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
+						How to Meet 2.4.4 (Link Purpose (In Context))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-refs.html">
+						達成基準 2.4.4 (Link Purpose (In Context))を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link">
+				達成基準 2.4.9 (Link Purpose (Link Only))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-link">
+						How to Meet 2.4.9 (Link Purpose (Link Only))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-link.html">
+						達成基準 2.4.9 (Link Purpose (Link Only))を理解する
+					</a></li></ul></li></ul><h3 id="C7-description">解説</h3><div class="textbody"><p><font color="red">&lt;br&gt;&lt;/br&gt;</font>この実装方法の目的は、他のリンクとの違いを示すテキストをリンクに付加することで、リンクテキストを補完することである。ただし、付加するテキストには、CSS対応のユーザーエージェントではそのテキストが表示されなくなるようなスタイルを指定する。表示されているリンクテキストの意味を理解するためにその前後の内容も読む必要がある場合、この実装方法を用いることによって、リンクテキストの表示は元の状態のままでありながら、リンクに対する十分な説明を提供することができる。</p><p>この実装方法を用いるには、まず、表示させないテキストを対象とするCSSセレクタを作成する。そのセレクタの規則集合では、overflowプロパティの値がhiddenに指定された縦横1ピクセルのボックスの中にテキストが入るようにし、さらにそのテキストをビューポートの外側に配置する指定を入れる。これによって、テキストは画面上には確実に表示されなくなるが、スクリーンリーダーや点字ディスプレイなどの支援技術に対してはアクセシブルな状態を保持できる。ここで留意すべきは、画面に表示されなくなるだけでなく支援技術に対してもそのテキストを隠してしまうという意図せぬ影響が出る恐れがあるため、この実装方法では<code>visibility:hidden</code>及び<code>display:none</code>を使用していないことである。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>
+リンクテキストを非表示にするこの実装方法は、スクリーンリーダーの利用者や企業のウェブコンテンツ制作者の一部によって支持されている。一部のウェブサイトにおいては効果があることも立証されている。しかし、結果的に説明が冗長になることがある上に、熟練したスクリーンリーダーの利用者にはその冗長な説明の読み上げを制御することを要求することもありうるため、スクリーンリーダーの利用者やアクセシビリティの専門家の中には、一般的な実装方法としてはこれを推奨していない人もいる。WCAGワーキンググループとしては、同じコンテンツが非表示にしたテキストで繰り返されていないのであれば、この実装方法は有用だと考えている。</p><p class="prefix"><em>注記 2:
+					</em>
+この実装方法は、適合していないコンテンツ向けの <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conforming-alternate-versiondef" class="gl-ref">適合している代替バージョン</a>のページで解説されているスタイル・スイッチングを行う実装方法との組み合わせで使用することも可能である。詳しい情報については、<a href="#C29"><em>C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</em></a>及び<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替バージョンを理解する</a>を参照のこと。</p></div></div><h3 class="small-head" id="C7-examples">事例</h3><h4 class="small-head" id="C7-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例は、各記事の概要のあとに「全文」というリンクのあるニュースサイトを示している。非表示にされたリンクテキストが、何の「全文」であるのかを説明している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; 
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /&gt; 
+&lt;link href="access.css" rel="stylesheet" type="text/css" /&gt;
+&lt;title&gt;非表示のテキストリンク｜WCAG 2.0 実装方法集
+&lt;/head&gt;
+&lt;body&gt; 
+&lt;p&gt;ワシントンは経済成長の刺激策を発表した。
+  &lt;a href="#"&gt; &lt;span&gt;ワシントンによる経済成長の刺激策の &lt;/span&gt;
+  全文&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div><h4 class="small-head" id="C7-ex2">事例 2</h4><div class="example"><div class="textbody"><p>この事例では、異なるフォーマットの電子ブックが用意されている場合について説明している。「HTML」「PDF」といったリンクのテキストの前に本の題名が付加されている。非表示にされたリンクテキストでは、何のHTMLファイルであるのか、何のPDFファイルであるのかを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; 
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /&gt; 
+&lt;link href="access.css" rel="stylesheet" type="text/css" /&gt;
+&lt;title&gt;非表示のテキストリンク&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;dl&gt;
+&lt;dt&gt;くまのプーさん &lt;/dt&gt;
+   &lt;dd&gt;&lt;a href="winnie_the_pooh.html"&gt;
+      &lt;span&gt;くまのプーさん &lt;/span&gt;HTML版&lt;/a&gt;&lt;/dd&gt;
+   &lt;dd&gt;&lt;a href="winnie_the_pooh.pdf"&gt;
+         &lt;span&gt;くまのプーさん &lt;/span&gt;PDF版&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;戦争と平和&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="war_and_peace.html"&gt;
+      &lt;span&gt;戦争と平和 &lt;/span&gt;HTML版&lt;/a&gt;&lt;/dd&gt; 
+    &lt;dd&gt;&lt;a href="war_and_peace.pdf"&gt;
+      &lt;span&gt;W戦争と平和 &lt;/span&gt;PDF版&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div><h3 id="C7-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.rnib.org.uk/wacblog/css/hidden-barriers-out-of-sight/">Hidden barriers - out of sight</a>
+               </p></li><li><p>
+                  <a href="http://webaim.org/techniques/css/invisiblecontent/">CSS in Action: Invisible Content Just for Screen Reader Users</a>
+               </p></li></ul></div><h3 id="C7-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G91">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33">H33: title属性を用いて、リンクテキストの文言を補足する</a></li></ul></div><h3 id="C7-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C7-procedure">チェックポイント</h4><p>この実装方法を使用している各<code>a</code>要素に対して：</p><ol class="enumar"><li><p>説明を付加するテキストを提供する要素のスタイルが、1ピクセル四方の中に収められ、かつ「overflow: hidden;」の状態で表示領域の外側に配置されるように定義されている。</p></li><li><p>そのスタイルが定義されている要素が<code>a</code>要素の中に含まれている。</p></li><li><p><code>a</code>要素の中のコンテンツを組み合わせると、何へのリンクであるかの説明になっている。</p></li></ol><h4 class="small-head" id="C7-results">判定基準</h4><ul><li><p>上記すべてを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C8" id="C8"> </a>C8: CSS の letter-spacing プロパティを用いて、単語内の文字間隔を調整する</h2><div class="applicability"><h3 id="C8-applicability">適用（対象）</h3><div class="textbody"><p>CSSに対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">
+				達成基準 1.3.2 (Meaningful Sequence)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-sequence">
+						How to Meet 1.3.2 (Meaningful Sequence)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-sequence.html">
+						達成基準 1.3.2 (Meaningful Sequence)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">SC 1.3.2</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-sequence.html"> Understanding SC 1.3.2</a> for details.</p></div></li></ul><h3 id="C8-description">解説</h3><div class="textbody"><p>この実装方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
+文字間隔の量を調整するには、CSSの<code>letter-spacing</code>プロパティを使用する。
+単語の途中に空白文字を入れると意味や発音のされ方が変わってしまうため、間隔の調整はこの方法で行うことが推奨されている。</p></div><h3 class="small-head" id="C8-examples">事例</h3><h4 class="small-head" id="C8-ex1">事例 1: 単語内の文字間隔を広くする</h4><div class="example"><div class="textbody"><p>
+以下のCSSは、レベル2の見出しに含まれる各文字に対して1文字分に相当する間隔を加える:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+h2 {
+	letter-spacing: 1em;
+} </code></pre></div><div class="textbody"><p>
+マークアップは以下の通り: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h2&gt;博物館&lt;/h2&gt; </code></pre></div><div class="textbody"><p>
+表示結果は、およそ以下のようになる: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>博　物　館</code></pre></div></div><h3 id="C8-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/text.html#spacing-props">CSS 2.0: Letter and word spacing</a> 
+               </p></li></ul></div><h3 id="C8-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F1">F1: 達成基準 1.3.2 の不適合事例 － CSSで情報を配置することにより、コンテンツの意味を変えている</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F32">F32: 達成基準 1.3.2 の不適合事例 － スペースを用いて、単語内の文字間を空けている</a></li></ul></div><h3 id="C8-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C8-procedure">チェックポイント</h4><p>文字間隔が標準ではない状態で表示されている各単語に対して: </p><ol class="enumar"><li><p>文字間隔を調整する手段としてCSSの<code>letter-spacing</code>プロパティが用いられている。</p></li></ol><h4 class="small-head" id="C8-results">判定基準</h4><ul><li><p>1.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C9" id="C9"> </a>C9: CSS を用いて、装飾目的の画像を付加する</h2><div class="applicability"><h3 id="C9-applicability">適用（対象）</h3><div class="textbody"><p>画像を表示させるためにCSSが利用可能なウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
+				達成基準 1.1.1 (Non-text Content)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
+						How to Meet 1.1.1 (Non-text Content)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/text-equiv-all.html">
+						達成基準 1.1.1 (Non-text Content)を理解する
+					</a></li></ul></li></ul><h3 id="C9-description">解説</h3><div class="textbody"><p>この実装方法の目的は、単に装飾することだけが目的の画像と、マークアップを追加することなくウェブコンテンツに対して視覚的な整形を行うための画像を追加する方法を示すことである。
+これによって、支援技術がテキストではないコンテンツを無視することが可能になる。
+文字サイズの拡大やハイコントラストの設定を妨げているCSSの背景画像を消すことができるように、一部のユーザーエージェントでは、利用者の要求に応じてCSSを無視または無効にすることができる。</p><p>背景画像は、以下のCSSプロパティで表示させることができる：</p><ul><li><p><code>background</code>, </p></li><li><p><code>background-image</code>, </p></li><li><p><code>content</code>（<code>:before</code>または<code>:after</code>疑似要素と組み合わせて使用）</p></li><li><p><code>list-style-image</code>. </p></li></ul><p>注: この実装方法は、情報を伝えている画像、なんらかの機能を持っているような画像、主として知覚的なエクスペリエンスを作り出すことを目的としているような画像に対しては使用すべきではない。</p></div><h3 class="small-head" id="C9-examples">事例</h3><h4 class="small-head" id="C9-ex1">事例 1: HTMLページの背景画像</h4><div class="example"><div class="textbody"><p>
+以下のスタイルシートは、ページ全体の背景画像を指定している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
+&lt;style type="text/css"&gt;
+body { background: #ffe url('/images/home-bg.jpg') repeat; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+…</code></pre></div></div><h4 class="small-head" id="C9-ex2">事例 2: CSSによるロールオーバーの背景画像</h4><div class="example"><div class="textbody"><p>
+以下のスタイルシートは、利用者がマウスポインタをリンクの上に置いたときの装飾的なロールオーバー効果を出すためにCSSの<code>background</code>プロパティを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>a:hover { background: #ffe url('/images/hover.gif') repeat; color: #000;
+   text-decoration: none;
+}</code></pre></div></div><h4 class="small-head" id="C9-ex3">事例 3: タブなどの要素の角を丸くするために使われるCSSによる背景画像</h4><div class="example"><div class="textbody"><p>
+以下のスタイルシートでは、要素の角を丸くするために、CSSの<code>background</code>プロパティを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
+&lt;style type="text/css"&gt;
+ div#theComments { width:600px; }
+ div.aComment { background: url('images/middle.gif') repeat-y left top; 
+ margin:0 0 30px 0; }
+ div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
+ margin:0; padding:8px 16px; }
+ div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
+ margin:0; padding-top:30px; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="theComments"&gt;
+ &lt;div class="aComment"&gt;
+  &lt;blockquote&gt;
+   &lt;p&gt;やあ、ジョン。俺はこの実装方法がマジで気に入ったんで、自分のサイトでも使おうと思ってるんだ！&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;div class="submitter"&gt;
+   &lt;p class="cite"&gt;&lt;a href="http://example.com/"&gt;名無しさん&lt;/a&gt; from エルボニア&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="aComment"&gt;
+ …
+ &lt;/div&gt;
+&lt;/div&gt;
+…</code></pre></div></div><h4 class="small-head" id="C9-ex4">事例 4: 見出しの見た目を良くするために使用される画像置換</h4><div class="example"><div class="textbody"><p>
+以下の例では、見出し要素の内容であるテキストを置き換えるために装飾目的の画像が使われている。【訳注：画像置換は達成基準1.1.1の不適合事例であり、このような見出し要素で使用すべきではない。WCAGワーキンググループにこの事例の削除を提案中。】</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;style type="text/css"&gt;
+h3#about {
+width: 480px;
+height: 34px;
+position: relative;
+}
+
+h3#about span {
+background: url(about.gif) no-repeat;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+&lt;/style&gt;
+...
+
+&lt;h3 id="about" title="About example.com"&gt; &lt;span&gt;&lt;/span&gt;example.com について&lt;/h3&gt;</code></pre></div></div><h3 id="C9-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> The <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/colors.html#propdef-background">background property in the CSS 2.0 specification</a> 
+               </p></li><li><p><a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-background">HTML 4.01 specification</a> には、<code>body</code>要素の<code>background</code>属性は非推奨であると記述されている。</p></li><li><p>
+            <a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a>
+          </p></li><li><p>
+            <a href="http://css-discuss.incutio.com/?page=ImageReplacement">ImageReplacement - css-discuss</a>
+          </p></li></ul></div><h3 id="C9-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F3">F3: 達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</a></li></ul></div><h3 id="C9-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C9-procedure">チェックポイント</h4><ol class="enumar"><li><p>装飾目的の画像がある。</p></li><li><p>それらがCSSで表示させられている。</p></li></ol><h4 class="small-head" id="C9-results">判定基準</h4><ul><li><p>1.に該当する場合に、2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C12" id="C12"> </a>C12: パーセントを用いてフォントサイズを指定する</h2><div class="applicability"><h3 id="C12-applicability">適用（対象）</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">SC 1.4.4</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html"> Understanding SC 1.4.4</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.5.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C12">User Agent Support Notes for C12</a>.</p></div><h3 id="C12-description">解説</h3><div class="textbody"><p>この実装方法の目的は、ユーザーエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、比率にもとづく単位でテキストのフォントサイズを指定することである。<code>body</code>要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C12-examples">事例</h3><h4 class="small-head" id="C12-ex1">事例 1: CSSでのパーセントによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code>要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、<code>strong</code>要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: 120%}
+
+...
+
+&lt;h1&gt;&lt;strong&gt;ユーザー&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
+&lt;p&gt;ユーザーだけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
+彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+…</code></pre></div></div><h3 id="C12-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
+               </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</a> 
+               </p></li><li/></ul></div><h3 id="C12-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13">C13: キーワードを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14">C14: em単位を用いてフォントサイズを指定する</a></li></ul></div><h3 id="C12-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C12-procedure">チェックポイント</h4><ol class="enumar"><li><p>フォントサイズを指定しているCSSプロパティの値がパーセントである。</p></li></ol><h4 class="small-head" id="C12-results">判定基準</h4><ul><li><p>1. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C13" id="C13"> </a>C13: キーワードを用いてフォントサイズを指定する</h2><div class="applicability"><h3 id="C13-applicability">適用（対象）</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">SC 1.4.4</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html"> Understanding SC 1.4.4</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">SC 1.4.8</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html"> Understanding SC 1.4.8</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C13">User Agent Support Notes for C13</a>.</p></div><h3 id="C13-description">解説</h3><div class="textbody"><p>この実装方法の目的は、設定したい相対的なフォントサイズを表現するキーワードでフォントサイズを指定することである。これらの値は、継承されたフォントサイズに応じて、ユーザーエージェントが適切なフォントサイズを適用する手がかりを与えるものである。</p></div><h3 class="small-head" id="C13-examples">事例</h3><h4 class="small-head" id="C13-ex1">事例 1: CSSでのキーワードによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような設定であっても、<code>strong</code>要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: larger}
+
+...
+
+&lt;h1&gt;&lt;strong&gt;ユーザー&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
+&lt;p&gt;ユーザーだけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
+彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+…</code></pre></div></div><h3 id="C13-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
+               </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</a> 
+               </p></li><li/></ul></div><h3 id="C13-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14">C14: em単位を用いてフォントサイズを指定する</a></li></ul></div><h3 id="C13-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C13-procedure">チェックポイント</h4><ol class="enumar"><li><p>フォントサイズを指定しているCSSプロパティの値が、<code>xx-small</code>、<code>x-small</code>、<code>small</code>、<code>medium</code>、<code>large</code>、<code>x-large</code>、<code>xx-large</code>、<code>smaller</code>、<code>larger</code>の中のどれか一つである。</p></li></ol><h4 class="small-head" id="C13-results">判定基準</h4><ul><li><p>1. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C14" id="C14"> </a>C14: em単位を用いてフォントサイズを指定する</h2><div class="applicability"><h3 id="C14-applicability">適用（対象）</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">SC 1.4.4</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html"> Understanding SC 1.4.4</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">SC 1.4.8</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html"> Understanding SC 1.4.8</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.7.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C14">User Agent Support Notes for C14</a>.</p></div><h3 id="C14-description">解説</h3><div class="textbody"><p>この実装方法の目的は、ユーザーエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、<code>em</code>単位でテキストのフォントサイズを指定することである。emはフォントのプロパティなので、フォントサイズの変更に応じてサイズが変わる。<code>body</code>要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C14-examples">事例</h3><h4 class="small-head" id="C14-ex1">事例 1: CSSでのemによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code>要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: 1.6em}
+
+...
+
+&lt;h1&gt;&lt;strong&gt;ユーザー&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
+&lt;p&gt;ユーザーだけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
+彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+…</code></pre></div></div><h3 id="C14-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
+               </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</a> 
+               </p></li><li/></ul></div><h3 id="C14-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13">C13: キーワードを用いてフォントサイズを指定する</a></li></ul></div><h3 id="C14-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C14-procedure">チェックポイント</h4><ol class="enumar"><li><p>フォントサイズを指定しているCSSプロパティの値が<code>em</code>単位である。</p></li></ol><h4 class="small-head" id="C14-results">判定基準</h4><ul><li><p>1. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C15" id="C15"> </a>C15: CSSを用いて、ユーザーインタフェースコンポーネントがフォーカスを受けとったときの表示を変更する</h2><div class="applicability"><h3 id="C15-applicability">適用（対象）</h3><div class="textbody"><p>CSS、HTML及びXHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-without-color">
+				達成基準 1.4.1 (Use of Color)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-without-color">
+						How to Meet 1.4.1 (Use of Color)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-without-color.html">
+						達成基準 1.4.1 (Use of Color)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible">
+				達成基準 2.4.7 (Focus Visible)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
+						How to Meet 2.4.7 (Focus Visible)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-visible.html">
+						達成基準 2.4.7 (Focus Visible)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.8.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C15">User Agent Support Notes for C15</a>.</p></div><h3 id="C15-description">解説</h3><div class="textbody"><p>この実装方法の目的は、インタラクティブな要素がフォーカスされたとき、又は利用者がポインティングデバイスを使ってカーソルを上にのせたときに、スタイルシートを使って視覚的なフィードバックを返すようにすることで視覚表現がどれだけ強調されるのかを示すことである。
+フォーカスされた要素又はカーソルが上にのせられた要素をハイライトすることで、その要素がインタラクティブであること、又はインタラクティブな要素の範囲内であるなどの情報を提供することができる。</p><p>複数のモードに対して視覚的なフィードバックを返すことが可能な場合もある。通常、それは要素の上にカーソルをのせるためにマウスを使ったり、又は要素にタブで移動するためのキーボードを使ったりする場合である。</p></div><h3 class="small-head" id="C15-examples">事例</h3><h4 class="small-head" id="C15-ex1">事例 1: : リンク要素</h4><div class="example"><div class="textbody"><p>
+この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSSが使用されている。</p><p>
+表示されるコンテンツは次の通り：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul id="mainnav"&gt;
+  &lt;li class="page_item"&gt;Home&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/services"&gt;サービス&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/projects"&gt;プロジェクト&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/demos"&gt;デモ&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/about-us"&gt;会社概要&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/contact-us"&gt;問合せ先&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/links"&gt;関連リンク&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div><div class="textbody"><p>
+マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+#mainnav a:hover, #mainnav a:active, #mainnav a:focus {
+  background-color: #DCFFFF;
+  color:#000066;
+}</code></pre></div></div><h4 class="small-head" id="C15-ex2">事例 2: : フォーカスを受け取った要素をハイライトする</h4><div class="example"><div class="textbody"><p>
+この事例では、背景色を変更することによって、フォーカスを受け取ったときに入力フィールドのスタイルを変更するために:focus疑似クラスが使用されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      input.text:focus {
+        background-color: #7FFF00; color: #000;
+      }
+      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+        background-color: #FF6: color: #000; 
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form method="post" action="form.php"&gt;
+      &lt;p&gt;&lt;label for="fname"&gt;名前: &lt;/label&gt;
+        &lt;input class="text" type="text" name="fname" id="fname" /&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;input type="radio" name="sex" value="male" id="sm" /&gt; &lt;label for="sm"&gt;男性&lt;/label&gt;&lt;br /&gt;
+        &lt;input type="radio" name="sex" value="female" id="sf" /&gt; &lt;label for="sf"&gt;女性&lt;/label&gt;
+      &lt;p&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div><h3 id="C15-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2.0: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</a>
+								       </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/selector.html#adjacent-selectors">CSS 2.0: 5.7 Adjacent sibling selectors</a> 
+               </p></li></ul></div><h3 id="C15-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C15-procedure">チェックポイント</h4><p>フォーカスを得られる各要素に対して：</p><ol class="enumar"><li><p>マウスを使って要素の上にカーソルをのせる。</p></li><li><p>背景又はボーダーの色が変化する。</p></li><li><p>キーボードでフォーカスを与える前に、マウスを動かして対象からカーソルを外す。</p></li><li><p>キーボードを使って、対象の要素にタブ移動する。</p></li><li><p>背景又はボーダーの色が変化する。</p></li><li><p>その要素がフォーカスを失ったとき、背景又はボーダーの色が元に戻る。</p></li></ol><h4 class="small-head" id="C15-results">判定基準</h4><ul><li><p>上記、2, 5 及び 6 を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C17" id="C17"> </a>C17: Scaling form elements which contain text</h2><div class="applicability"><h3 id="C17-applicability">適用（対象）</h3><div class="textbody"><p>(X)HTML, CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul></li></ul><h3 id="C17-description">解説</h3><div class="textbody"><p>The objective of this technique is to ensure text-based form controls resize when text size is changed in the user agent. This will allow users to enter text and read what they have entered in input boxes because the text is displayed at the size required by the user.</p><p>Text-based form controls include input boxes (text and textarea) as well as buttons.</p></div><h3 class="small-head" id="C17-examples">事例</h3><h4 class="small-head" id="C17-ex1">事例 1: A Contact Form</h4><div class="example"><div class="textbody"><p>A Contact Us form has some introductory information and then form controls for users to enter their first name, last name, telephone number and email address. All of the text and form controls have been implemented in a scalable way. This includes specifying a font size for the form controls themselves because the font size is not inherited in Internet Explorer.</p><p>The XHTML component:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;Contact Us&lt;/h1&gt;
+&lt;p&gt;Please provide us with your details and we will contact you as soon as we can. Note that all of the form fields are required.&lt;/p&gt;
+&lt;label for="fname"&gt;First Name&lt;/label&gt;&lt;input type="text" name="fname" id="fname" /&gt;&lt;br /&gt;
+&lt;label for="lname"&gt;Last Name&lt;/label&gt;&lt;input type="text" name="lname" id="lname" /&gt;&lt;br /&gt;
+&lt;label for="phone"&gt;Telephone&lt;/label&gt;&lt;input type="text" name="phone" id="phone" /&gt;&lt;br /&gt;
+&lt;label for="email"&gt;Email&lt;/label&gt;&lt;input type="text" name="email" id="email" /&gt;&lt;br /&gt;
+&lt;input type="submit" name="Submit" value="Submit" id="Submit" /&gt;</code></pre></div><div class="textbody"><p>The CSS component:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>h1 { font-size: 2em; }
+            p, label, input { font-size: 1em; }</code></pre></div><div class="textbody"><p>Working example of this code: <a href="/WAI/WCAG20/Techniques/working-examples/C17/input-resize.html" class="ex-ref">Example of resizing input with CSS</a>.</p></div></div><h4 class="small-head" id="C17-ex2">事例 2: Radio button</h4><div class="example"><div class="textbody"><p>This example works in IE with its text size feature. However, it doesn't scale in Firefox 2.0.</p><p>The XHTML component:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;input type="radio" name="r1" value="r1" id="r1" class="geomsize" /&gt;
+&lt;input type="checkbox" name="c1" id="c1" value="c1" class="geomsize" /&gt;</code></pre></div><div class="textbody"><p>The CSS component:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.geomsize {
+width: 1.2em;
+height: 1.2em;}</code></pre></div><div class="textbody"><p>Working example of this code: <a href="/WAI/WCAG20/Techniques/working-examples/C17/radio-checkbox-resize.html" class="ex-ref">Example of resizing radio buttons and checkboxes with CSS</a>.</p></div></div><h3 id="C17-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C17-procedure">チェックポイント</h4><ol class="enumar"><li><p>Enter some text into text-based form controls that receive user entered text.</p></li><li><p>Increase the text size of the content by 200%.</p></li><li><p>Check that the text in text-based form controls has increased by 200%.</p></li></ol><h4 class="small-head" id="C17-results">判定基準</h4><ul><li><p>#3 is true.</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C18" id="C18"> </a>C18: Using CSS margin and padding rules instead of spacer images for layout design</h2><div class="applicability"><h3 id="C18-applicability">適用（対象）</h3><div class="textbody"><p>All technologies that support CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
+				達成基準 1.1.1 (Non-text Content)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
+						How to Meet 1.1.1 (Non-text Content)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/text-equiv-all.html">
+						達成基準 1.1.1 (Non-text Content)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.10.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C18">User Agent Support Notes for C18</a>.</p></div><h3 id="C18-description">解説</h3><div class="textbody"><p>Web designers sometimes use spacer images (usually 1x1 pixel, transparent GIFs) for better control over layout, for example in tables or to indent a paragraph. However, Cascading Style Sheets (CSS) allow sufficient control over layout to replace spacer images. The CSS properties for margins and padding can be used on their own or in combination to control the layout. The margin properties ('margin-top', 'margin-right', 'margin-bottom', 'margin-left', and the shorthand 'margin') can be used on any element that is displayed as a block; they add space at the outside of an element. The padding properties ('padding-top', 'padding-right', 'padding-bottom', 'padding-left', and the shorthand 'padding') can be used on any element; they add space inside the element.</p></div><h3 class="small-head" id="C18-examples">事例</h3><h4 class="small-head" id="C18-ex1">事例 1</h4><div class="example"><div class="textbody"><p>The following example consists of two parts: the CSS code, which specifies a margin on all sides of the table, and padding for the table cells; and the HTML code for the table, which does not contain spacer images and is not nested inside another table.</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              
+              table { margin: .5em; border-collapse: collapse; } 
+              td, th { padding: .4em; border: 1px solid #000; }
+            
+            ...
+            
+              &lt;table summary="Titles, authors and publication dates of books in Web development category"&gt;
+                &lt;caption&gt;Books in the category 'Web development'&lt;/caption&gt;
+                &lt;thead&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Title&lt;/th&gt;
+                    &lt;th&gt;Author&lt;/th&gt;
+                    &lt;th&gt;Date&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;How to Think Straight About Web Standards&lt;/td&gt;
+                    &lt;td&gt;Andrew Stanovich&lt;/td&gt;
+                    &lt;td&gt;1 April 2007&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+              &lt;/table&gt;
+            
+            </code></pre></div></div><h3 id="C18-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/box.html#margin-properties">Margin properties: 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', and 'margin' in the CSS2 specification</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512/box.html#padding-properties">Padding properties: 'padding-top', 'padding-right', 'padding-bottom', 'padding-left', and 'padding' in the CSS2 specification</a>
+               </p></li><li><p>
+                  <a href="http://veerle-v2.duoh.com/blog/comments/a_css_styled_table_version_2/">A CSS styled table version 2</a>
+               </p></li><li><p>
+                  <a href="http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug">IE box model bug</a>
+               </p></li><li><p>
+                  <a href="http://www.456bereastreet.com/archive/200612/internet_explorer_and_the_css_box_model/">Internet Explorer and the CSS box model </a>
+               </p></li></ul></div><h3 id="C18-tests">検証</h3><div class="textbody"><p>No tests available for this technique.</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C19" id="C19"> </a>C19: CSSでテキストの配置を左寄せ又は右寄せに指定する</h2><div class="applicability"><h3 id="C19-applicability">適用（対象）</h3><div class="textbody"><p>CSSをサポートする全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul></li></ul><h3 id="C19-description">解説</h3><div class="textbody"><p>この実装方法は、CSSの<code>text-align</code>プロパティを使って、テキストのブロックを左または右に揃える方法を説明している。</p></div><h3 class="small-head" id="C19-examples">事例</h3><h4 class="small-head" id="C19-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+以下の例では、テキストは左揃えになっている。スタイルシートでクラスを定義する：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.left {text-align: left}</code></pre></div><div class="textbody"><p>
+コンテンツで、そのクラスを呼び出す。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="left"&gt; Lorem ipsum dolor sit …&lt;/p&gt;</code></pre></div></div><h4 class="small-head" id="C19-ex2">事例 2</h4><div class="example"><div class="textbody"><p>
+以下の例では、テキストは右揃えになっている。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.right {text-align: right}</code></pre></div><div class="textbody"><p>
+コンテンツで、そのクラスを呼び出す。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="right"&gt; Lorem ipsum dolor sit …&lt;/p&gt;</code></pre></div></div><h3 id="C19-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C19-procedure">チェックポイント</h4><ol class="enumar"><li><p>テキストが、左揃え又は右揃えになっている。</p></li></ol><h4 class="small-head" id="C19-results">判定基準</h4><ul><li><p>1.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C20" id="C20"> </a>C20: カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</h2><div class="applicability"><h3 id="C20-applicability">適用（対象）</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul></li></ul><h3 id="C20-description">解説</h3><div class="textbody"><p>この実装方法の目的は、1行が平均80字(日本語なら40字)以下になるようにして利用者がコンテンツを見ることができるように、CSSで指定することである。
+こうすることで、テキストの長い行を読む際に、現在読んでいる位置を維持することが困難な読字障害や視覚障害のある利用者が、より効率よくコンテンツをを閲覧したり操作したりできるようになる。
+この実装方法はまた、文字サイズの拡大に合わせてカラム幅を広くすることにもなり、それによって、文字サイズが大きくなるに従ってテキストの一部が欠けて読めなくなるような事態も発生しにくくなる。</p><p>この実装方法は、コンテンツ制作者に対して、CSSを使ってデフォルトでテキストの各行の幅を80字(日本語は40字)以下に制限することを要求するものではない、という点に注意してほしい。
+それよりもむしろ、CSSレイアウトに相対サイズを用いることを推奨して、利用者が1行80字以下で読むことができないようなカラム幅には、設定しないようにする。</p></div><h3 class="small-head" id="C20-examples">事例</h3><h4 class="small-head" id="C20-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+この例では、<code>div</code>要素の幅はスタイルシートでem単位で指定されている。</p><div class="note"><p class="prefix"><em>注記: </em>
+CSSプロパティの<code>max-width</code>は、Internet Explorer 6 以前のバージョンではサポートされていない。</p></div></div><div class="code"><p><strong>コード例:</strong></p><pre><code>#main_content {max-width: 70em}</code></pre></div><div class="textbody"><p>
+テキストのブロックは、コンテンツ内の<code>div</code>要素の中に収められる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div id="main_content"&gt; 
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing ...&lt;/p&gt;
+&lt;/div&gt;</code></pre></div></div><h4 class="small-head" id="C20-ex2">事例 2</h4><div class="example"><div class="textbody"><p>
+この例では、<code>div</code>要素の幅はスタイルシートでパーセントで指定されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>#main_content {width: 90%}</code></pre></div><div class="textbody"><p>
+テキストのブロックは、コンテンツ内の<code>div</code>要素の中に収められる。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div id="main_content"&gt; 
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing ...&lt;/p&gt;
+&lt;/div&gt;</code></pre></div></div><h3 id="C20-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/box.html">CSS 2 Box Model</a> 
+               </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/visuren.html">CSS 2 Visual formatting Model</a> 
+               </p></li><li><p> 
+                  <a href="http://www.w3.org/TR/CSS2/visudet.html">CSS 2 Visual formatting Model Details</a> 
+               </p></li><li><p> 
+                  <a href="http://www.456bereastreet.com/archive/200504/about_fluid_and_fixed_width_layouts/">About fluid and fixed width layouts</a> 
+               </p></li><li><p> 
+                  <a href="http://cookiecrook.com/AIR/2003/train/accessiblecss.php">Accessible CSS</a> 
+               </p></li><li><p> 
+                  <a href="http://www.maxdesign.com.au/articles/em/">Ideal line length for content</a> 
+               </p></li></ul></div><h3 id="C20-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C20-procedure">チェックポイント</h4><ol class="enumar"><li><p>カラム幅が、相対的な単位で定義されている。</p></li><li><p>行の長さが、ブラウザのウィンドウをリサイズしても80字（日本語は40字）以下を維持している。</p></li></ol><h4 class="small-head" id="C20-results">判定基準</h4><ul><li><p>1.及び2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C21" id="C21"> </a>C21: 行送りをCSSで指定する</h2><div class="applicability"><h3 id="C21-applicability">適用（対象）</h3><div class="textbody"><p>CSSをサポートする全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul></li></ul><h3 id="C21-description">解説</h3><div class="textbody"><p>認知障害を持つ人の多くは、行間なしのテキストのブロックの中で各行を目で追っていくことに困難を覚える。
+行の高さが文字サイズの1.5～2倍程度あると、前の行を読み終えて次の行へより簡単に読み進めていけるようになる。</p></div><h3 class="small-head" id="C21-examples">事例</h3><h4 class="small-head" id="C21-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+要素の行の高さを1.5に設定。スタイルシートで要素の特性を設定している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p { line-height: 150%; }</code></pre></div><div class="textbody"><p>
+コンテンツ側では、その要素はドキュメント全体を通して行の高さが1.5になる。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt; Lorem ipsum dolor sit …  &lt;/p&gt;</code></pre></div></div><h4 class="small-head" id="C21-ex2">事例 2</h4><div class="example"><div class="textbody"><p>
+クラスを指定した要素の行の高さを1.5（行送り1.5文字）に設定。スタイルシートでクラスの表示を定義。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.tall {line-height:150%}</code></pre></div><div class="textbody"><p>&#xD;
+コンテンツ側では、以下のようにクラスを指定している。&#xD;
+<font color="red">&lt;br&gt;&lt;/br&gt;</font>&#xD;
+In the content, call up the class.</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="tall"&gt; Lorem ipsum dolor sit …  &lt;/p&gt;</code></pre></div></div><h4 class="small-head" id="C21-ex3">事例 3</h4><div class="example"><div class="textbody"><p>
+行間を1行分空けるクラスを設定する。スタイルシートでクラスの表示を定義。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.tall {line-height:200%}</code></pre></div><div class="textbody"><p>
+コンテンツ側では、以下のようにクラスを指定している。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="tall"&gt; Lorem ipsum dolor sit …  &lt;/p&gt;</code></pre></div></div><h3 id="C21-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C21-procedure">チェックポイント</h4><ol class="enumar"><li><p>ブラウザでコンテンツを開く。</p></li><li><p>テキストのブロック内の行送りが1.5～2文字分ある。</p></li></ol><h4 class="small-head" id="C21-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C22" id="C22"> </a>C22: CSSを用いて、テキストの視覚的な表現を制御する</h2><div class="applicability"><h3 id="C22-applicability">適用（対象）</h3><div class="textbody"><p>CSSをサポートする全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
+				達成基準 1.3.1 (Info and Relationships)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (Info and Relationships)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (Info and Relationships)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-presentation">
+				達成基準 1.4.5 (Images of Text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-presentation">
+						How to Meet 1.4.5 (Images of Text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-text-presentation.html">
+						達成基準 1.4.5 (Images of Text)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-images">
+				達成基準 1.4.9 (Images of Text (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-images">
+						How to Meet 1.4.9 (Images of Text (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-text-images.html">
+						達成基準 1.4.9 (Images of Text (No Exception))を理解する
+					</a></li></ul></li></ul><h3 id="C22-description">解説</h3><div class="textbody"><p>この実装方法の目的は、CSSを使ってテキストの視覚的な表現を制御する方法を実践することである。これにより利用者が要求を満たすたように、ユーザーエージェントを通してテキストの視覚的な特徴を変更できるようになる。テキストの特徴にはサイズ、色、書体、相対配置などの外観を含んでいる。</p><p>CSSは主に表現からドキュメント構造を分離することによってアクセシビリティに有益さを与える。スタイルシートは、マークアップの外部から字間、文字配列、ページにおけるオブジェクトの配置、音声やスピーチのアウトプット、フォントなどの正確な制御ができるように設計されている。マークアップからスタイルを分離することにより、コンテンツ制作者はコンテンツの中でマークアップを単純化し、整理することができ、同時によりアクセシブルにすることができる。</p><p>画像内にあるテキストはいくつかのアクセシビリティ上の問題があり、以下のことができない：</p><ul><li><p>ブラウザの設定に応じて大きさを調整する</p></li><li><p>ブラウザの設定、又はユーザー定義のスタイルシートのルールによって指定された色で表示する</p></li><li><p>ハイコントラストといった、オペレーティングシステムの設定を反映させる</p></li></ul><p>適切な視覚的表現を作り出すためには、これらの要素のテキスト部分には、テキストを使い、セマンティックマークアップとスタイルシートの組み合わせを用いるとよい。このことが効果的に作用するために、利用者のシステム上で利用できると思われるフォントを選び、定義された最初のフォントを持たない利用者のために代替フォントを定義する。最新のマシンとユーザーエージェントはしばしばすべてのテキストにスムーズもしくはアンチエイリアスをかけている。そのため見出しやボタンは画像化された文字に頼ることなくこれらのシステム上できれいに表示される。</p><p>次のCSSのプロパティは、テキストのスタイルを指定し、画像化された文字を使う必要性を回避するのに有効である：</p><ul><li><p><code>font-family</code>プロパティをを使って、文字の外観を等幅フォントで表示する。</p></li><li><p><code>text-align</code>プロパティをを使って、表示域の右側にテキストを表示する。</p></li><li><p><code>font-size</code>プロパティをを使って、テキストをより大きいサイズで表示する。</p></li><li><p><code>font-style</code>プロパティを使って、テキストをイタリック体で表示する。</p></li><li><p><code>font-weight</code>プロパティを使って、テキストの文字をどのくらい太く又は細く表示すべきか設定する。</p></li><li><p><code>color</code>プロパティを使って、テキストやテキストコンテナに色を表示する。</p></li><li><p><code>line-height</code>プロパティを使って、テキストのブロックに対してラインの高さを指定する。</p></li><li><p><code>text-transform</code>プロパティを使って、テキストの文字（大文字小文字の区別）を制御する。</p></li><li><p><code>letter-spacing</code>プロパティを使って、テキストの文字間隔を制御する。</p></li><li><p><code>background-image</code>プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p></li><li><p><code>first-line</code>の擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p></li><li><p><code>first-letter</code>の擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p></li><li><p><code>:before</code>と<code>:after</code>の擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p></li></ul></div><h3 class="small-head" id="C22-examples">事例</h3><h4 class="small-head" id="C22-ex1">事例 1: フォントファミリーを制御するためにCSSのfont-familyを使用する。</h4><div class="example"><div class="textbody"><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;Javascriptで文字列を変換して大文字にする方法は&lt;code&gt;toUpperCase()&lt;/code&gt;である。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>code { font-family:"Courier New", Courier, monospace }</code></pre></div></div><h4 class="small-head" id="C22-ex2">事例 2: テキストの配置（配列）を制御するためにCSSのtext-alignを使用する。</h4><div class="example"><div class="textbody"><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="right"&gt;このテキストは表示域の右側にあるべきである。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.right { text-align: right; }</code></pre></div></div><h4 class="small-head" id="C22-ex3">事例 3: テキストのサイズを制御するためにCSSのfont-size&#xD;
+を使用する。</h4><div class="example"><div class="textbody"><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年&lt;strong class="largersize"&gt;3月&lt;/strong&gt;9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong.largersize { font-size: 1.5em; }</code></pre></div></div><h4 class="small-head" id="C22-ex4">事例 4: テキストの色を制御するためにCSSのcolorを使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年&lt;em class="highlight"&gt;3月&lt;/em&gt;9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight{ color: red; }</code></pre></div></div><h4 class="small-head" id="C22-ex5">事例 5: イタリック体のテキストにするためにCSSのfont-styleを使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;この記事は &lt;a href="http://www.example.com" class="featuredsite"&gt;内分泌学のブログ&lt;/a&gt;で入手可能である。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.featuredsite{ font-style:italic; }</code></pre></div></div><h4 class="small-head" id="C22-ex6">事例 6: テキストの太さを制御するためにCSSのfont-weightを使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;この取引は &lt;span class="highlight"&gt;今&lt;/span&gt;利用可能です！&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight { font-weight:bold; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex7">事例 7: テキストの大文字小文字の区別を制御するためにCSSのtext-transformを使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年 &lt;span class="caps"&gt;3月&lt;/span&gt; 9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.caps { text-transform:uppercase; }</code></pre></div></div><h4 class="small-head" id="C22-ex8">事例 8: テキストの行間を制御するためにCSSのline-heightを使用する。</h4><div class="example"><div class="textbody"><p>CSSの<code>line-height</code>プロパティを使って、段落の行間をフォントの高さの２倍に表示する。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;人とその人の運命についての考察はいつも&lt;br /&gt;  
+全ての技術的な試みの最重要な関心を形成する。 &lt;br /&gt;
+あなたの図式と方程式においてそれを忘れてはいけない。 &lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p { line-height:2em; }</code></pre></div><div class="textbody"><p>CSSの<code>line-height</code>プロパティを使って、テキストの行間をフォントの高さより少なく表示させる。テキストの2行目は、テキストの1行目の後に配置されて、あたかも1行目の一部だがやや下がっているように見える。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;本日の&lt;/span&gt;&lt;br /&gt;
+&lt;span class="byline"&gt;ニュース&lt;/span&gt;&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
+.upper { text-transform:uppercase; }
+.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; }</code></pre></div></div><h4 class="small-head" id="C22-ex9">事例 9: 文字間を設定するためにCSSのletter-spacingを使用する。</h4><div class="example"><div class="textbody"><p>CSSの<code>letter-spacing</code>プロパティを使って、テキストの2行目では、文字をより接近させて表示する。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;本日の&lt;/span&gt;&lt;br /&gt;
+&lt;span class="byline"&gt;ニュース&lt;/span&gt;&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
+.upper { text-transform:uppercase; }
+.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; letter-spacing:-0.1em; }</code></pre></div><div class="textbody"><p>CSSの<code>letter-spacing</code>プロパティを使って、テキストの2行目では、文字をより接近させて表示する。【訳注：おそらく原文が間違っています。WCAGワーキンググループに確認中です。】</p><p>XHTMLの構成：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="upper2"&gt;ニュース&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.upper2 { text-transform:uppercase; letter-spacing:1em; }</code></pre></div></div><h4 class="small-head" id="C22-ex10">事例 10: 0：テキストと画像をレイヤー化するためにCSSのbackground-imageを使用する。</h4><div class="example"><div class="textbody"><p>CSSの<code>font-style</code>プロパティを使って、バナーのテキスト要素を表示させ、<code>background-image</code>プロパティを使って、テキストの後ろの画像を表示させる。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div id="banner"&gt;&lt;span id="bannerstyle1"&gt;地域の審議会へ&lt;/span&gt; 
+&lt;span id="bannerstyle2"&gt;ようこそ&lt;/span&gt;&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+#banner { 
+  color:white; 
+  background-image:url(banner-bg.gif); 
+  background-repeat:no-repeat; 
+  background-color:#003399; 
+  width:29em; 
+}
+
+#bannerstyle1 { 
+  text-transform:uppercase; 
+  font-weight:bold; 
+  font-size:2.5em;
+}
+
+#bannerstyle2 { 
+  font-style:italic; 
+  font-weight:bold; 
+  letter-spacing:-0.1em;
+  font-size:1.5em; 
+}</code></pre></div></div><h4 class="small-head" id="C22-ex11">事例 11: 1：テキストの最初の行の表現を制御するためにCSSのfirst-lineを使用する。</h4><div class="example"><div class="textbody"><p>CSSの<code>:first-line</code>擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="startline"&gt;むかしむかし...&lt;br /&gt;
+...遠い地で, 遠くへ...  &lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startline:first-line { font-size:2em; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex12">事例 12: 2： テキストの最初の文字の表現を制御するためにCSSのfirst-letterを使用する。</h4><div class="example"><div class="textbody"><p>CSSの<code>:first-letter</code>擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p><p>XHTML：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="startletter"&gt;むかしむかし...&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startletter:first-letter { font-size:2em; color:#990000; vertical-align:middle; }</code></pre></div></div><h3 id="C22-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/CSS21/">CSS2.1 Specification</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/Style/CSS/learning">Learning CSS</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/TR/CSS-access">CSS and Accessibility</a>
+               </p></li></ul></div><h3 id="C22-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C8">C8: CSS の letter-spacing プロパティを用いて、単語内の文字間隔を調整する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13">C13: キーワードを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14">C14: em単位を用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C21">C21: 行送りをCSSで指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR34">SCR34: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</a></li></ul></div><h3 id="C22-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C22-procedure">チェックポイント</h4><ol class="enumar"><li><p>CSSのプロパティを用いてテキストの視覚的な表現を制御している。</p></li></ol><h4 class="small-head" id="C22-results">判定基準</h4><ul><li><p>1.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C23" id="C23"> </a>C23: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</h2><div class="applicability"><h3 id="C23-applicability">適用（対象）</h3><div class="textbody"><p>CSSを用いているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.15.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C23">User Agent Support Notes for C23</a>.</p></div><h3 id="C23-description">解説</h3><div class="textbody"><p>ウェブページの中には、色を用いてコンテンツをグループ分けをしているものもある。
+この実装方法の目的は、ウェブページの構成やグループ分けを示す視覚的な情報を残しつつも、メインコンテンツ部分においては特定の文字色と背景色の組み合わせを利用者が選択できるようにすることである。
+利用者がページ上のすべてのテキストの文字色と背景色を上書きした場合、ウェブページの構成とグループ分けに関する情報は失われる可能性があり、そうなるとそのページを利用することも理解することも難しくなる。</p><p>コンテンツ制作者がメインコンテンツ部分の文字色と背景色を指定しなければ、ユーザースタイルシートを使うことなしに、ブラウザでそれらの色を変更することが可能になる。
+主要コンテンツ以外に対して文字色と背景色を指定するということは、ブラウザはそれらの色を変更しないことを意味する。</p><p>この実装方法を使うということは、コンテンツ制作者はメインコンテンツの領域に対してデフォルトの文字色と背景色の組み合わせを使うことになる。
+結果として、配色は利用者の好みの色に設定したユーザーエージェントによって全面的に決められる。
+つまり、利用者のニーズに最も合う色の選択となり、利用者にとって最も読みやすい配色となる。</p></div><h3 class="small-head" id="C23-examples">事例</h3><h4 class="small-head" id="C23-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+あるHTMLのウェブページでは、ナビゲーションバー、メニューバー及び目次のような主要ではないコンテンツに対して、テキストと背景の色を指定するためにCSSを使用している。
+しかし、メイン・コンテンツ部分に対しては、テキストにも背景にも色は指定していない。
+利用者は、自分に合った色とコントラストでメイン・コンテンツを閲覧するために、ブラウザで自分好みの色を設定する。
+ページの個々のセクションは、それでもなお視覚的にはっきり区別できる。</p></div></div><h4 class="small-head" id="C23-ex2">事例 2</h4><div class="example"><div class="textbody"><p>
+ある音楽雑誌のサイトには、白い背景に青い文字の記事がある。
+そのサイトのページの先頭近くでは、そのページに対して異なるスタイルシートを適用するリンクを提供している。
+新しいスタイルシートでは、テキストや背景に対しては色を指定していない。</p></div></div><h3 id="C23-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li/></ul></div><h3 id="C23-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148">G148: 背景色及びテキストの色を指定せず、その初期設定を変更するウェブコンテンツ技術の機能を用いない</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156">G156: 一般に入手可能なユーザーエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G175">G175: 背景及び前景の色を複数から選択できるツールをウェブページ上で提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C25">C25: CSSで、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</a></li></ul></div><h3 id="C23-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C23-procedure">チェックポイント</h4><ol class="enumar"><li><p>テキスト、リンク及び背景の色が、デフォルトの色とも、メインではないコンテンツに指定されている色とも異なるように、ブラウザの設定を変える。</p><div class="note"><p class="prefix"><em>注記: </em><em>注：ブラウザがそのページに指定されている色を無視するような設定にはしないこと。</em></p></div></li><li><p>メインコンテンツのテキスト、リンク及び背景が、設定した色に変わる。</p></li><li><p>メインではないコンテンツのテキスト、リンク及び背景の色は変わらない。</p></li></ol><h4 class="small-head" id="C23-results">判定基準</h4><ul><li><p>2.及び 3.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C24" id="C24"> </a>C24: コンテナのサイズにCSSのパーセント値を用いる</h2><div class="applicability"><h3 id="C24-applicability">適用（対象）</h3><div class="textbody"><p>CSSを用いているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">SC 1.4.8</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html"> Understanding SC 1.4.8</a> for details.</p></div></li></ul><h3 id="C24-description">解説</h3><div class="textbody"><p>この実装方法の目的は、テキストを読むためにはテキストサイズ大きくする必要がある利用者が、1行のテキストを横スクロールなしで読めるようにすることである。この実装方法を用いるには、コンテンツ制作者はテキストコンテナの幅をパーセント値で指定する。</p></div><h3 class="small-head" id="C24-examples">事例</h3><h4 class="small-head" id="C24-ex1">事例 1: Example 1</h4><div class="example"><div class="textbody"><p>
+														ある新聞サイトでは、画面の中央にコンテンツを表示させている。コンテンツのコンテナ幅は、ページ全体に対するパーセンテージで指定しているため、ロービジョンの人がフォントサイズを大きくしたときも、ブラウザ画面のサイズにあわせてテキストが折り返しされ、横スクロールバーは表示されない。
+												</p></div></div><h3 id="C24-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C20">C20: カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</a></li></ul></div><h3 id="C24-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C24-procedure">チェックポイント</h4><ol class="enumar"><li><p>全てのコンテナ幅をパーセント値で指定している。</p></li><li><p>テキストサイズを200%にしてみる。</p></li><li><p>どの行のテキストを読むにも、横スクロールの必要がない。</p></li><li><p>全てのテキストが、ページ上に見えたままである。</p></li></ol><h4 class="small-head" id="C24-results">判定基準</h4><ul><li><p>1.、3.及び 4.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C25" id="C25"> </a>C25: CSSで、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</h2><div class="applicability"><h3 id="C25-applicability">適用（対象）</h3><div class="textbody"><p>CSSを用いているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation">
+				達成基準 1.4.8 (Visual Presentation)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
+						How to Meet 1.4.8 (Visual Presentation)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-visual-presentation.html">
+						達成基準 1.4.8 (Visual Presentation)を理解する
+					</a></li></ul></li></ul><h3 id="C25-description">解説</h3><div class="textbody"><p>この実装方法が意図するのは、ボーダー（境界）やレイアウトはCSSを用いて指定するが、文字色と背景色については利用者のブラウザやOSの設定に従って表示できるように指定しないでおく、ということである。
+これによって利用者は、自分が見たい色でテキストを見ることができるようになり、同時に、テキストの段組、セクションの周りのボーダー、又はメニューとメインコンテンツの領域を区切る縦線といったレイアウトやページデザインの外観は保つことができるようになる。
+また、ページにJavaScriptのポップアップ・ボックス又はドロップダウン・メニューが含まれている場合に色が上書きされるという、一部のブラウザで起こる表示の問題も回避することができる。</p><p>ボーダーやレイアウトを示す表示は、文字色と背景色に関する柔軟性と同様に、認知障害のある多くの人にとって役に立つ。
+しかし、状況によってはこれら2つのニーズは相容れないこともある。それは、利用者がブラウザ上でコンテンツ制作者が選択した文字色と背景色を上書きする必要があるとき、ブラウザがボーダーやレイアウトまでも取り除いてしまうような場合である。
+これは、ページがシングルカラムでひとつのブロックが他のブロックの下に表示されることを意味し、そうなると、不必要な余白ができ、テキストの1行の長さが長くなってしまう。
+また、ポップアップ・ボックスの背景が透過して、ページ上のテキストの上にボックスのテキストが重なってしまったり、ドロップダウン・メニューが透過するかダークグレーの背景になってしまったりすることを意味する。 
+コンテンツ制作者が文字色と背景色を一切指定せず、その一方でボーダーの色やレイアウトを指定した場合、一般的なブラウザのほとんどでは、（コンテンツ制作者が指定した）CSSの他の宣言に影響を与えずにテキストと背景の色を変更することができる。</p></div><h3 class="small-head" id="C25-examples">事例</h3><h4 class="small-head" id="C25-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
+あるウェブページは、HTMLを使ってデザインされている。
+ページを構成する各領域を囲うボーダーの色を指定し、メニューがメインコンテンツ領域の左側にフロートするレイアウトにするためにCSSが使用されている。
+文字色も背景色も指定されていない。
+利用者がブラウザで自分の色を設定すると、レイアウトを崩すことなしに、利用者に適した色とコントラストでページを閲覧できる。</p></div></div><h3 id="C25-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li/></ul></div><h3 id="C25-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G17">G17: テキスト（及び画像化された文字）とその背景の間に、少なくとも7:1以上のコントラスト比をもたせる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18">G18: テキスト（及び画像化された文字）とその背景の間に、少なくとも4.5:1以上のコントラスト比をもたせる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G145">G145: テキスト（及び画像化された文字）とその背景の間に、少なくとも3:1以上のコントラスト比をもたせる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148">G148: 背景色及びテキストの色を指定せず、その初期設定を変更するウェブコンテンツ技術の機能を用いない</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156">G156: 一般に入手可能なユーザーエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C23">C23: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</a></li></ul></div><h3 id="C25-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C25-procedure">チェックポイント</h4><ol class="enumar"><li><p>HTMLで作られたコンテンツの色を変更できるブラウザでウェブページを開く。</p></li><li><p>ブラウザの設定画面で、テキスト、リンク及び背景の色を、現在の設定とは異なる色に変える。</p><div class="note"><p class="prefix"><em>注記: </em>「ページで指定されている色を無視する」というようなオプションを選択していないことを確認する。</p></div></li><li><p>ページに戻って表示を確認すると、新しく設定したテキスト、リンク及び背景の色で表示されている。</p></li><li><p>どのボーダーも消えずに表示されており、レイアウトも崩れていない。</p></li></ol><h4 class="small-head" id="C25-results">判定基準</h4><ul><li><p>3.及び4.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C27" id="C27"> </a>C27: DOMの順序を表示順序と一致させる</h2><div class="applicability"><h3 id="C27-applicability">適用（対象）</h3><div class="textbody"><p>HTML及びXHTMLで使用されるCSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">
+				達成基準 1.3.2 (Meaningful Sequence)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-sequence">
+						How to Meet 1.3.2 (Meaningful Sequence)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-sequence.html">
+						達成基準 1.3.2 (Meaningful Sequence)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-order">
+				達成基準 2.4.3 (Focus Order)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
+						How to Meet 2.4.3 (Focus Order)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-focus-order.html">
+						達成基準 2.4.3 (Focus Order)を理解する
+					</a></li></ul></li></ul><h3 id="C27-description">解説</h3><div class="textbody"><p>この実装方法の目的は、ソースコード上のコンテンツの順序が、コンテンツの表示結果の順序と同じになるようにすることだ。
+ソースコード上のコンテンツの順序は、コンテンツ制作者によって、CSSによる表示結果とは異なるものにされる場合がある。
+それぞれの順序はその状態では意味の分かるものになっているかもしれないが、支援技術の利用者にとっては混乱をもたらす可能性がある。
+そのようなことは、（スクリーンリーダーのように）ソースコードに直接アクセスして内容を読み込んでいる場合や、キーボードで操作している場合などに、コンテンツ制作者による表示指定を利用者が無効にすることによって起こり得る。
+もし、スクリーンリーダーを使ってページの内容をソースの順序で読んでいる全盲の利用者が、ページの内容を表示される順序で読んでいる利用者と一緒に働いていたら、異なる順序の情報に出くわすことで混乱するかもしれない。
+スクリーンリーダーと組み合わせて画面拡大ソフトウェアを使用しているロービジョンの利用者は、読み上げている箇所を見失って混乱する可能性もある。
+キーボード利用者は、ソースの順序が表示の順序と違っていると、次のフォーカスの場所が予想と違って困惑することもあるだろう。</p><p>表示結果の順序を前提としなければ、ページの全体を理解することが難しい状況もあるかもしれない。その場合、もしソースの順序が異なっていたら、理解することはさらに難しくなってしまう。</p><p>ソースの順序が表示結果の順序と同じである場合、すべての人が同じ（正しい）順序でコンテンツを読んで情報のやり取りをすることができる。</p><div class="note"><p class="prefix"><em>注記: </em>
+ HTMLの<code>tabindex</code>属性には2つの機能がある。ひとつは要素をフォーカス可能にすることであり、もうひとつは要素にフォーカスの順序を割り当てることである。
+<code>tabindex</code>の値を0にするとその要素はフォーカス可能になるが、フォーカスが追加されるだけで順序はソースの通りになる。
+フォーカスの順序は、tabindexに指定された正の値だけで昇順となる。
+<code>tabindex</code>の値をドキュメント・オブジェクト・モデル(DOM)の要素の順序と異なるように設定することは、支援技術の利用者にとっては不適当な順序となることもある。
+これは主に、tabindexがCSSではなく、HTML又はXHTMLで指定されていることによるものだ。
+この点については、将来の仕様で変更される可能性がある。
+それは、視覚的な表示結果の順序とは異なる可能性もある。</p></div></div><h3 class="small-head" id="C27-examples">事例</h3><h3 id="C27-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar</a>を使用すると、Microsoft の Internet Explorer でスクリプトによって生成されたDOMのチェックが可能になる。</p></li><li><p>
+                  <a href="http://getfirebug.com/">Firebug</a>を使用すると、Firefox でスクリプトによって生成されたDOMのチェックが可能になる。</p></li></ul></div><h3 id="C27-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H4">H4: リンク、フォームのコントロール、およびオブジェクトには、論理的なタブ移動順序を作成する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G57">G57: コンテンツを意味のある順序で並べる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G59">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a></li></ul></div><h3 id="C27-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C27-procedure">チェックポイント</h4><ol class="enumar"><li><p>エンドユーザーに提供されているそのままの状態で、ウェブページのコンテンツの順序を視覚的に検査する。</p></li><li><p>DOMを表示できるツールを使って、DOM内の要素を検査する。</p></li><li><p>ソースコード上でのコンテンツの順序が、ウェブページのコンテンツの表示結果の順序と一致している（例：英語のページなら、順序は上から下へ、左から右へ）。</p></li></ol><h4 class="small-head" id="C27-results">判定基準</h4><ul><li><p>3.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C28" id="C28"> </a>C28: em単位を用いて、テキストコンテナのサイズを指定する</h2><div class="applicability"><h3 id="C28-applicability">適用（対象）</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
+				達成基準 1.4.4 (Resize text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
+						How to Meet 1.4.4 (Resize text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html">
+						達成基準 1.4.4 (Resize text)を理解する
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">SC 1.4.4</a>. See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-scale.html"> Understanding SC 1.4.4</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.19.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/css#C28">User Agent Support Notes for C28</a>.</p></div><h3 id="C28-description">解説</h3><div class="textbody"><p>この実装方法の目的は、テキストを含むボックス又はテキストの入力を受け付けるボックスの幅及び又は高さを、<code>em</code>単位を用いて指定することである。
+これによって、文字サイズを変更できるユーザーエージェントは、文字サイズの設定の変更に連動させてテキストを含むボックスの大きさも変更できるようになる。</p><p>テキストを含むボックスの幅及び又は高さを他の単位を使って指定していると、文字サイズの拡大によってテキストがボックスに入りきらなくなり、その一部が見えなくなってしまう危険性がある。</p><p>大枠のボックス（コンテナ）は、一般にウェブページ内のテキストの配置をコントロールし、そこにはレイアウトのための要素と構造を示す要素、及びフォームのコントロールを含むことができる。</p></div><h3 class="small-head" id="C28-examples">事例</h3><h4 class="small-head" id="C28-ex1">事例 1: :  テキストを含むレイアウト用のボックスのサイズにem単位を使う</h4><div class="example"><div class="textbody"><p>
+この事例では、ウェブページのメインコンテンツ領域の左側にナビゲーション・メニューを配置するために、<code>id</code>属性の値として「nav_menu」を指定した<code>div</code>要素を使用している。
+ナビゲーション・メニューは、<code>id</code>属性の値として「nav_list」を指定したテキストリンクのリストで構成されている。ナビゲーションのリンクを含むコンテナの幅は<code>em</code>単位で指定されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>#nav_menu { width: 20em; height: 100em }
+
+#nav_list { font-size: 100%; }</code></pre></div></div><h4 class="small-head" id="C28-ex2">事例 2: : テキストベースのフォームのコントロールにem単位を使う</h4><div class="example"><div class="textbody"><p>
+この事例では、テキストを含む、又は利用者によるテキスト入力を受け付ける<code>input</code>要素に「form1」というクラス名を指定している。
+フォンサイズを<code>パーセント</code>単位で、これらの要素の幅を<code>em</code>単位で定義するためにCSSの規則が用いられている。
+これによって、フォーム・コントロール内のテキストは、部分的に欠けて見えなくなってしまうことなく文字サイズの変更に合わせてリサイズされるようになる（フォーム・コントロールの幅自身も文字サイズに合わせてリサイズされるようになるため）。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.form1 { font-size: 100%; width: 15em; }</code></pre></div></div><h4 class="small-head" id="C28-ex3">事例 3: : ドロップダウン・ボックスにem単位を使う</h4><div class="example"><div class="textbody"><p>
+この事例では、<code>select</code>要素に「pick」というクラス名を指定している。
+フォンサイズを<code>パーセント</code>単位で、幅を<code>em</code>単位で定義するためにCSSの規則が使用されている。
+これによって、フォーム・コントロール内のテキストは、部分的に欠けて見えなくなってしまうことなく文字サイズの変更に合わせてリサイズされるようになる。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>select.pick { font-size: 100%; width: 10em; }</code></pre></div></div><h4 class="small-head" id="C28-ex4">事例 4: :テキストベースではないフォームのコントロールにem単位を使う</h4><div class="example"><div class="textbody"><p>
+この事例では、チェックボックス又はラジオボタンの<code>input</code>要素に「choose」というクラス名を指定している。
+これらの要素の幅と高さを<code>em</code>単位で定義するためにCSSの規則が使用されている。
+これによって、フォーム・コントロールは、文字サイズの変更に合わせてリサイズされるようになる。
+</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.choose { width: 1.2em; height: 1.2em; }</code></pre></div></div><h3 id="C28-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12">C12: パーセントを用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14">C14: em単位を用いてフォントサイズを指定する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C17">C17: Scaling form elements which contain text</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C20">C20: カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均80字（日本語は40字）以下を維持できるようにする</a></li></ul></div><h3 id="C28-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C28-procedure">チェックポイント</h4><ol class="enumar"><li><p>テキストを含む、又はテキストの入力を受け付けるコンテナを特定する。</p></li><li><p>そのコンテナの幅及び又は高さは<code>em</code>単位で指定されている。</p></li></ol><h4 class="small-head" id="C28-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C29" id="C29"> </a>C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</h2><div class="applicability"><h3 id="C29-applicability">適用（対象）</h3><div class="textbody"><p>クライアントサイド又はサーバーサイドのスクリプトとともに使用されるCSS</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#cc1">
+					Conformance Requirement 1 (Conformance Level)
+				</a></li></ul><h3 id="C29-description">解説</h3><div class="textbody"><p>ウェブページのデフォルトの表示が部分的に達成基準を満たさない場合、「適合要件」の条項(適合要件1)にある「代替バージョン」を用意することで必要条件を満たすことができる。いくつかの必要条件を満たすことが目的なら、ページ全体をそのレベルに適合するような表示に変更できるスタイル・スイッチャーをページ上のリンク又はコントロールによって呼び出すようにすれば、コンテンツ制作者は同じ情報の複数バージョンを作らなくても済む。</p><p>この実装方法の目的は、ウェブページの適合している代替バーションを提供するために、スクリプトと組み合わせてCSSを使う方法を示すことだ。
+この実装方法では、コンテンツの表示を制御するために使用されているCSSを変更するコントロールを提供することで、コンテンツ制作者はコンテンツの代替表示を提供する。
+ウェブページ内で提供されるコントロールは、そのレベルで要求される達成基準を満たすことができるような表示方法を利用者が選択・変更することを可能にする。
+これによって、以下のような状況において、利用者が異なる表示方法を選択できるようになる:</p><ul><li><p>パソコンの知識や権限がないことが原因で、利用者はブラウザやOSの設定を調整できないかもしれない</p></li><li><p>テキストが、ブラウザやOSの設定では対処できない方法で提供されている（テキストが画像の中に書き込まれているなど）</p></li><li><p>コンテンツのデフォルトの表示では、一部のユーザーに対して十分なコントラストがない</p></li></ul><p>この実装方法で達成させるには、以下の3項目を満たしていなければならない。</p><ol class="enumar"><li><p>
+オリジナルのページのリンクまたはコントロールは、それ自身が達成基準を満たしていなければならない。
+たとえば、もしスタイル・スイッチャーがフォントサイズを大きくするために提供されているのに、そのコントロールが小さいフォントで書かれていたら、利用者はそのコントロールを作動させて代わりの表示方法で見ることができないかもしれない。</p></li><li><p>
+新しいページは、オリジナルのページと同じすべての情報と機能を含んでいなければならない。</p></li><li><p>
+新しいページは、希望する適合レベルのすべての達成基準に適合しなければならない。
+たとえば、ひとつの要求は満たすが、それを使うと別の要求に適合しなくなってしまうような代替スタイルシートは使用できない。</p></li></ol><p>スタイル・スイッチャーを使う場合は、以下の課題と制限について検討することが重要である：</p><ul><li><p>
+利用者が行うことのできる変更の数や形式は、ウェブページのコンテンツ制作者によって制御される範囲に限定される。
+できる限り多くの利用者のニーズに対応できるようにするために、バラエティ豊かな表示と設定項目が提供されるべきだ。
+しかしながら、コンテンツ制作者は、利用者に多くのオプションを提供することに起因する、利用者にとっての設定可能な項目と複雑さの相互作用について熟考することも重要だ。</p></li><li><p>
+あるページから別のページに移動しても利用者の設定を保持しておくには、利用者の機器にクッキーで保存したり（詳細はリソースのセクションを参照）、ウェブサーバーに保存されるプロファイルにクエリー文字列として渡して格納するなどの方法で実現できる場合がある。</p></li><li><p>
+スタイル・スイッチャーを実装するための技術的手法は、利用者の環境においていくつかの技術が利用可能であることを前提としている（たとえば、多くのクライアントサイド・ソリューションは、JavaScriptとCSSの両方が利用可能であることを必要とする）。
+これらのウェブコンテンツ技術が適合のために当てにできる場合を除き、クライアントサイドのサポートとウェブコンテンツ技術の利用可能性が保証されない場合には、コンテンツ制作者はサーバーサイドのウェブコンテンツ技術を使うことを検討すべきである。
+その代案としては、これらのウェブコンテンツ技術のサポートを適合のために当てにできない場合に、使用されているいくつかのウェブコンテンツ技術が有効でなくてもコンテンツが確実に適切な表現に変換されるような実装方法を使うことが、より良いページにするための効果的な方法となる。</p></li></ul></div><h3 class="small-head" id="C29-examples">事例</h3><h4 class="small-head" id="C29-ex1">事例 1: 異なる外部スタイルシートファイルを適用するためにJavaScriptのコントロールを使う</h4><div class="example"><div class="textbody"><p>
+この例では、文字色と背景色を変更するリンクをJavaScriptで提供する。
+そのリンクは、利用者の環境でJavaScriptがサポートされており、かつ有効な場合にのみ挿入されるようにすべきだ。
+これは、そのリンク自身を挿入するためにスクリプトを使う（つまりJavaScriptがサポートされており、かつ有効な場合にのみリンクが表示される）ことで実現できる。 </p><p>
+以下のコードは、JavaScriptに依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するためのJavaScriptだ。</p><p>
+この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザー・プロファイルに保存することが望ましい。</p><p>XHTML（抜粋）:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>In &lt;head&gt; section:
+&lt;head&gt;〜&lt;/head&gt;内:
+
+  &lt;link href="main.css" rel="stylesheet" type="text/css" /&gt;
+  &lt;link id="currentCSS" href="defaultColors.css" rel="stylesheet" type="text/css" /&gt;
+
+In &lt;body&gt; section:
+&lt;body&gt;〜&lt;/body&gt;内:
+
+&lt;div id="colorswitch"&gt;
+&lt;p&gt;Change colors:&lt;/p&gt;
+&lt;p&gt;色の変更:&lt;/p&gt;
+  &lt;ul class="inline"&gt;
+    &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors1.css');return false;" 
+      id="altColors1"&gt;文字:紺 背景:白&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors2.css');return false;" 
+      id="altColors2"&gt;文字:黄 背景:黒&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors3.css');return false;" 
+      id="altColors3"&gt;文字:黒 背景:黄&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors4.css');return false;" 
+      id="altColors4"&gt;文字:黒 背景:白&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('defaultColors.css');return false;" 
+      id="default"&gt;デフォルトに戻す&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="mainbody"&gt;
+  &lt;h1&gt;カンファレンス・レポート&lt;/h1&gt;
+  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS（抜粋）:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>main.css内：
+
+body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
+
+#mainbody { 
+    padding: 1em; 
+}
+
+#colorswitch {
+    float: right; 
+    width: 12em; 
+    border: 1px #000066 solid; 
+    padding:0 1em 1em 1em; margin:0;
+}
+
+#colorswitch p { 
+    padding-top:.5em; 
+    font-weight:bold;
+}
+
+
+defaultColors.css内：
+
+body, p { 
+    color:#000000; 
+    background-color:#FFFFFF; 
+}
+
+h1, h2, h3 {
+        color:#990000; 
+        background-color:#FFFFFF;
+}
+
+
+altColors1.css内：
+
+body, h1, h2, h3, p, a { 
+    color:#000066; 
+    background-color:#FFFFFF; 
+}
+
+
+altColors2.css内：
+
+body, h1, h2, h3, p, a { 
+    color:#FFFF33; 
+       background-color:#000000; 
+}
+
+
+altColors3.css内：
+
+body, h1, h2, h3, p, a { 
+    color:#000000; 
+    background-color:#FFFF99; 
+}
+
+
+altColors4.css内：
+
+body, h1, h2, h3, p, a { 
+    color:#000000; 
+    background-color:#FFFFFF; 
+}</code></pre></div><div class="textbody"><p>JavaScript（抜粋）:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColors (newCSS)
+{
+  document.getElementById('currentCSS').href = newCSS; 
+}</code></pre></div><div class="textbody"><p>
+このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/C29/ex1/index.html" class="ex-ref">異なる外部スタイルシートファイルを適用するためにJavaScriptのコントロールを使う</a></p></div></div><h4 class="small-head" id="C29-ex2">事例 2: CSSプロパティを変更するためにクライアントサイドのJavaScriptを使用する</h4><div class="example"><div class="textbody"><p>
+この例はコンテンツの一部分を単純に変更するもので、複雑なサイトやページに対してはあまり実用的なものではないかもしれない。
+この例では、特定のコンテンツを強調表示するための背景として（あらかじめ用意された選択肢から）利用者が選択した色を反映させるために、クラス名を変更する目的でクライアントサイドのJavaScriptを使用している。</p><div class="note"><p class="prefix"><em>注記: </em>
+以下のコードには、実装方法を理解しやすくする目的で、XHTMLコード内からJavaScriptを呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScriptを組み込むためのその時点でのベストプラクティスを採用することが推奨される（アンオブトルーシブJavaScriptとプログレッシブ・エンハンスメントについての詳細はリソースを参照）。</p></div><p>XHTML（抜粋）: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;製品の比較&lt;/h1&gt;
+&lt;p&gt;比較のためにあなたが選択した製品は以下のとおりです。 
+各製品の相違点は強調表示され、イタリック体で表示されています。&lt;/p&gt;
+&lt;p class="inlinePara"&gt;強調表示の色を変更: &lt;/p&gt;
+&lt;ul class="inline"&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightYellow');return false;" 
+    class="hghltLightYellow"&gt;薄い黄色&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightYellow');return false;" 
+    class="hghltBrightYellow"&gt;濃い黄色&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightBlue');return false;" 
+    class="hghltLightBlue"&gt;水色&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightBlue');return false;" 
+    class="hghltBrightBlue"&gt;青&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightRed');return false;" 
+    class="hghltLightRed"&gt;ピンク&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltDrkRed');return false;" 
+    class="hghltDrkRed"&gt;茶色&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table width="400" border="1"&gt;
+  &lt;tr&gt;
+    &lt;td&gt; &lt;/td&gt;
+    &lt;th scope="col"&gt;製品1&lt;/th&gt;
+    &lt;th scope="col"&gt;製品2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope="row"&gt;比較項目1&lt;/th&gt;
+    &lt;td&gt;あり&lt;/td&gt;
+    &lt;td&gt;あり&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope="row"&gt;比較項目2&lt;/th&gt;
+    &lt;td class="hghltLightYellow"&gt;あり&lt;/td&gt;
+    &lt;td class="hghltLightYellow"&gt;なし&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope="row"&gt;比較項目3&lt;/th&gt;
+    &lt;td&gt;対応&lt;/td&gt;
+    &lt;td&gt;対応&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre></div><div class="textbody"><p>CSS（抜粋）: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>body { color:#000000; background-color:#FFFFFF; }
+
+.hghltLightYellow { color: #000000; background-color: #FFFF99; font-style:oblique; }
+.hghltBrightYellow { color: #000000; background-color: #FFFF00; font-style:oblique; }
+.hghltLightBlue { color: #000000; background-color: #33FFFF; font-style:oblique; }
+.hghltBrightBlue { color: #FFFFFF; background-color: #0000FF; font-style:oblique; }
+.hghltLightRed { color: #000000; background-color: #FF6266; font-style:oblique; }
+.hghltDrkRed { color: #FFFFFF; background-color: #993300; font-style:oblique; }
+
+.inlinePara {display:inline; }
+.inline {display: inline; margin-left:0px; padding-left:0px; line-height:3em; }
+.inline li { display:inline; }
+.inline li a {padding: 0.5em 1em; border: 2px solid #000000; }</code></pre></div><div class="textbody"><p>JavaScript（抜粋）: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColor(hghltColor)
+{
+  // 表のセルのデータを配列に入れる
+ 
+ var els = document.getElementsByTagName('td');
+
+  // 配列の要素の中から、"hghlt"で始まるクラス名を探す
+  // 見つかったら、クラスの値を現在選択されているものに変更する
+  // このスクリプトは、td要素のクラスは強調表示のためだけに使用されていることを前提としている点に注意
+
+  for (var i=0; i&lt;els.length; i++)
+  {
+    if (els[i].className.indexOf("hghlt") == 0) { els[i].className = hghltColor; }
+  }
+}</code></pre></div><div class="textbody"><p>
+このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html" class="ex-ref">CSSプロパティを変更するためにクライアントJavaScriptを使う</a></p></div></div><h4 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するためにPHPの「$_GET」を使う</h4><div class="example"><div class="textbody"><p>
+このシンプルな例では、２つあるうちの１つの外部スタイルシートを適用するためにPHPの「$_GET」を使用している。
+同様のことは、PHPの様々な機能を使って実現できる。
+この例では、現在のページの表示だけに適用される。
+実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザープロファイルに保存することが望ましい。</p><p>
+以下のコードはPHPであるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHPとXHTML（抜粋）: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>PHPの冒頭において：
+
+&lt;?php
+$thestyle = $_GET['set'];
+if ($thestyle == "style1")
+	{
+	$thestyle = "style2";
+	}
+else
+	{
+	$thestyle = "style1";
+	}
+?&gt;
+
+
+&lt;head&gt;〜&lt;/head&gt;内：
+
+   &lt;link rel="stylesheet" type="text/css" media="screen" href="&lt;?php echo($thestyle);?&gt;.css" &gt;
+
+
+&lt;body&gt;〜&lt;/body&gt;内：
+
+&lt;?php
+if ($thestyle == "style1") {
+	echo "&lt;a href=\"index.php?set=style1\"&gt;スタイルシート2に変更&lt;/a&gt;";
+	}
+else {
+	echo "&lt;a href=\"index.php?set=style2\"&gt;スタイルシート1に変更&lt;/a&gt;";
+	}
+?&gt;
+
+&lt;div id="mainbody"&gt;
+  &lt;h1&gt;カンファレンス・レポート&lt;/h1&gt;
+  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS（抜粋）：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>style1.css内：
+
+  body, p { color:#000000; background-color:#FFFFFF; }
+  h1, h2, h3 {color:#990000; background-color:#FFFFFF; }
+
+
+style2.css内：
+
+  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }</code></pre></div><div class="textbody"><p>
+このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php" class="ex-ref">異なる外部スタイルシートファイルを適用するためにPHPの「$_GET」を使う</a></p></div></div><h4 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するためにJSPを使用する</h4><div class="example"><div class="textbody"><p>以下の例では2つのファイルを使用している：</p><ul><li><p>
+フォームを含むJava Server Page (JSP)及びフォームの処理コード</p></li><li><p>
+上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>
+サーバーサイドのコードは、利用者が選択したスタイルシートのための通常のlink要素及び他のスタイル用の「alternate stylesheet」のついたlink要素を出力する。そのコードは、２つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含むJSPページ: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+ %&gt;&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+ &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+ &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
+ &lt;head&gt;
+   &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type" /&gt;
+   &lt;title&gt;スタイルを変更する&lt;/title&gt;
+   &lt;%
+     String fStyle = "";
+     String styleName = "style";
+     String defaultStyle = "default";
+     Cookie[] cookies = request.getCookies();
+ 
+     // get style from post request parameters
+     if (request.getMethod().equals("POST") &amp;amp;&amp;amp; request.getParameter("styleSelect") != null) {
+       fStyle = request.getParameter("styleSelect");
+       // code that validates user input (security) not shown
+       
+       if (fStyle.equals("nostyle")) { // user prefers no author style
+       } else { // user requests author style
+         out.println(createStyleLinks(fStyle).toString());
+       }
+       
+       storeStylePreferenceCookie(request, response, fStyle);
+     } else if (request.getMethod().equals("GET")) { 
+     // GET request; get style from cookie; else default style links
+       // get style from cookie
+       if (cookies != null) {
+         // get style from cookies
+         fStyle = getStyleFromCookies(cookies);
+ 
+         if ( !fStyle.equals("NULL_STYLE") ) { // user requests author style
+             out.println(createStyleLinks(fStyle).toString());
+         } else { // no cookie for style; process request for style preference
+           // default style links
+           out.println(createStyleLinks(defaultStyle).toString());
+         }
+       } else { // GET request without cookies: default styles
+         out.println(createStyleLinks(defaultStyle).toString());
+       }//end else cookies
+     }
+   %&gt;
+ &lt;/head&gt;
+ &lt;body id="home"&gt;
+   &lt;form action="_styleSwitch.jsp" method="post" id="styleswitchform" name="styleswitchform"&gt;
+     &lt;p&gt;&lt;label for="styleSelect"&gt;スタイルを選択: &lt;/label&gt;
+       &lt;select id="styleSelect" name="styleSelect"&gt;
+         &lt;option value="default"&gt;デフォルト (緑)&lt;/option&gt;
+         &lt;option value="wonb"&gt;黒背景に白い文字&lt;/option&gt;
+         &lt;option value="bonw"&gt;白背景に黒い文字&lt;/option&gt;
+       &lt;/select&gt;
+       &lt;input type="submit" value="スタイルを変更" /&gt;
+     &lt;/p&gt;
+   &lt;/form&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;</code></pre></div><div class="textbody"><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
+ &lt;%!
+   /**
+    * Get the links (link elements) to the CSS files based on cookies, ...
+   */
+   private String getStyleLinks(HttpServletRequest request) {
+     String styleLinks = "";
+     Cookie[] cookies = request.getCookies();
+     String defaultStyle = "default";
+     String tempStyle = "";
+     // GET request; get style from cookie; else default style links
+     // get style from cookie
+     if (cookies != null) {
+       // get style from cookies
+       tempStyle = getStyleFromCookies(cookies);
+ 
+       if ( tempStyle.equals("NULL_STYLE") ) { 
+         // no cookie for style; process request for style preference
+         // default style links
+         styleLinks = createStyleLinks(defaultStyle).toString();
+       } else { // user requests author style
+         styleLinks = createStyleLinks(tempStyle).toString();
+       }
+     } else { // GET request without cookies: default styles
+       styleLinks = createStyleLinks(defaultStyle).toString();
+     }//end else cookies
+     
+     return styleLinks;
+   }
+ 
+   /**
+    * Get style cookie from request
+   */
+   private String getStyleFromCookies( Cookie[] cookies ) {
+     String fStyle = "NULL_STYLE";
+     for (int i = 0; i &lt; cookies.length; i++) {
+       Cookie cookie = cookies[i];
+       String name = cookie.getName();
+       
+       if ( name.equals("style") ) {
+         fStyle = cookie.getValue();
+         // code that validates cookie value (security) not shown
+       }
+     }
+     return fStyle;
+   }
+ 
+   /**
+    * Store the style preference in a persistent cookie
+   */
+   private void storeStylePreferenceCookie(HttpServletRequest request, 
+     HttpServletResponse response, String theStyle) {
+     final int ONE_YEAR = 60 * 60 * 24 * 365;
+     Cookie styleCookie = new Cookie("style", theStyle);
+     styleCookie.setMaxAge(ONE_YEAR);
+     response.addCookie(styleCookie);
+   }
+ 
+   /**
+    * Create the link elements for the stylesheets
+   */
+   private StringBuffer createStyleLinks(String prefStyle) {
+     StringBuffer theStyleLinks = new StringBuffer();
+     //two-dimensional array with identifiers (adding '.css' gives the name of the CSS file) 
+     // and strings for the title attribute of the link element
+    // the identifiers must correspond to the in the "value" attributes in the "option"
+    // elements in the style switcher form
+     String [] [] styles = {
+       { "default", "Default style"},
+       { "wonb", "White on black"},
+       { "bonw", "Black on white"}
+     };
+ 
+     // loop over 2dim array: if styles[i][1] matches prefStyle, 
+     // output as normal, else as alternate stylesheet
+     for (int i = 0; i &lt; styles.length; i++) {
+       if ( styles[i][0].equals(prefStyle) ) { // output pref stylesheet as normal stylesheet
+         theStyleLinks.append("&lt;link rel=\"stylesheet\" href=\"_css/").append(styles[i][0])
+           .append(".css\" title=\"").append(styles[i][1]).append("\" type=\"text/css\" /&gt;").append("\n");
+       } else { // output other stylesheets as alternate stylesheets
+         theStyleLinks.append("&lt;link rel=\"alternate stylesheet\" href=\"_css/")
+           .append(styles[i][0]).append(".css\" title=\"").append(styles[i][1])
+           .append("\" type=\"text/css\" /&gt;").append("\n");
+       }
+     } // end for loop
+ 
+     return theStyleLinks;
+   }
+ %&gt;</code></pre></div><div class="textbody"><p>
+他のJSPページは、以下のコード（include / scriptlet）を用いてこのコードを使用できる: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;% out.println(getStyleLinks(request)); %&gt;</code></pre></div></div><h3 id="C29-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li/><li><p>
+                  <a href="http://www.456bereastreet.com/archive/200608/build_your_own_php_style_sheet_switcher/">Build your own PHP style sheet switcher</a>
+               </p></li></ul><h4 class="small-head" id="C29-sa1">クッキーを使用する</h4><p>クッキーを通して利用者のコンピュータ上に情報を保管することによって、利用者による設定はページ全体に渡って永続的に保存しておくことができる。
+この機能を利用するには、利用者のコンピュータでクッキーがサポートされており、かつその利用が許可されている必要がある。
+クッキーは、Javascriptのようなクライアントサイドのスクリプト、またはCGIスクリプトのようなサーバーサイドのスクリプトを使用することで、作成・読み込み・変更・削除することができる。
+クライアントサイドの実装に依存するということは、クッキーがサポートされその利用が許可されていることに加えて、利用者のコンピュータでその実装方法がサポートされており、かつ利用可能であることを要求することになる。</p><p>クッキーの生成と使用方法に関する情報はWeb上にある。以下にいくつかの参考となるページを示す。</p><ul><li><p>
+                  <a href="http://www.quirksmode.org/js/cookies.html">JavaScript - Cookies</a>
+               </p></li><li><p>
+                  <a href="http://webdesign.about.com/od/cookies/a/aa083198.htm">Write Your First HTTP Cookie</a>
+               </p></li><li><p>
+                  <a href="http://www.w3schools.com/ASP/asp_cookies.asp">ASP Cookies</a>
+               </p></li><li><p>
+                  <a href="http://ruby-doc.com/docs/ProgrammingRuby/">Programming Ruby</a>
+               </p></li></ul><p>コンテンツ制作者はクッキーをサポートしているかどうかのテストを行い、もしサポートされていなければ別のコントロールを提供することが推奨される。この別のコントロールには、「この設定をすべてのページに適用する」のような設定の有効化に関する情報が含まれるべきである。メッセージや別のコントロールの設定に応じて利用者に向けて表示されるページは、クッキーの動作環境とそれ以外の環境で利用できるオプションについての情報を提供する。
+利用者がクッキーを有効にできない状況において、もし利用者がサイトの閲覧を継続することを選択した場合、それはどうなることを意味するのかということについての説明を含める。そしてクッキーをサポートしている場合と同様の結果を得るにはユーザーエージェントをどう設定すればよいかということについての情報を提供する。</p><p>例：「このブラウザはクッキーを受け付ける設定になっていません。このサイトでは、サイト内の全ページに渡って、あなたの変更した設定を適用するためにはクッキーが有効になっている必要があります。お使いの環境においてクッキーを有効にする方法については<a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;answer=35851">How to Enable Cookies</a>を参照してください。ただし、これを実行するためには、お使いのコンピュータにおける管理者の権限が必要となる場合がありますので注意してください。クッキーが利用できない場合、あなたの設定はこのサイト内の他のページも含めて保存されません。弊社では、この機能をコンピュータの性能に関わらず提供できるよう努力しておりますが、それが実現できるまでの間でも、各ページにおいて設定を変更することは可能です。」</p><h4 class="small-head" id="C29-sa2">プログレッシブ・エンハンスメントとアンオブトルーシブJavaScript</h4><p>HTMLまたはXHTMLページにおけるJavaScript実装のための現在のベストプラクティスは、構造及び表現からコンテンツの動作を分離させた形で使用することだ。「プログレッシブ・エンハンスメント」と「アンオブトルーシブJavaScript」という言葉は、ページの機能を向上させ、さらに良いものにするだけでなく、JavaScriptがサポートされていない場合でもコンテンツが機能し続けられるようにうまく作られているスクリプトを指す用語としてよく使用されている。</p><p>より詳しく知るための推奨される情報:</p><ul><li><p>
+            <a href="http://www.alistapart.com/articles/behavioralseparation">Behavioral Separation</a>
+          </p></li><li><p>
+            <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Wikipedia: Unobtrusive JavaScript</a>
+          </p></li><li><p>
+            <a href="http://javascript.about.com/library/blunobtrusive.htm">About.com: Unobtrusive JavaScript</a>
+          </p></li><li><p>
+            <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">Progressive enhancement</a>
+          </p></li><li><p>
+            <a href="http://domscripting.com/blog/display/41">Hijax</a>
+          </p></li></ul></div><h3 id="C29-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140">G140: 情報と構造を表現から分離して、異なる表現を可能にする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174">G174: 十分なコントラスト比のあるコントロールを提供して、利用者が十分なコントラストのある表現に変換できるようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G178">G178: 利用者がウェブページ上のすべてのテキストを200％まで徐々に変更できるコントロールをウェブページ上で提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G188">G188: 行送りや段落の間隔を広げるボタンをウェブページ上に提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G189">G189: ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G191">G191: 点滅するコンテンツのないページを読み込むリンク、ボタン、又はその他のメカニズムを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C7">C7: CSSを用いて、リンクテキストの一部を非表示にする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22">C22: CSSを用いて、テキストの視覚的な表現を制御する</a></li><li/></ul></div><h3 id="C29-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C29-procedure">チェックポイント</h4><ol class="enumar"><li><p>利用者が代わりの表示を選択できるようなコントロールがウェブページに含まれている。</p></li><li><p>そのコントロールで表示を変更できる。</p></li><li><p>結果として表示されたページは、元のページの「適合する代替バージョン」になっている。 </p></li></ol><h4 class="small-head" id="C29-results">判定基準</h4><ul><li><p>上記のすべてを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C30" id="C30"> </a>C30: CSSを用いて、テキストを画像化された文字に置き換え、変換するユーザーインタフェースコントロールを提供する</h2><div class="applicability"><h3 id="C30-applicability">適用（対象）</h3><div class="textbody"><p>CSSをサポートするすべてのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-presentation">
+				達成基準 1.4.5 (Images of Text)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-presentation">
+						How to Meet 1.4.5 (Images of Text)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-text-presentation.html">
+						達成基準 1.4.5 (Images of Text)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-images">
+				達成基準 1.4.9 (Images of Text (No Exception))</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-images">
+						How to Meet 1.4.9 (Images of Text (No Exception))
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/visual-audio-contrast-text-images.html">
+						達成基準 1.4.9 (Images of Text (No Exception))を理解する
+					</a></li></ul></li></ul><h3 id="C30-description">解説</h3><div class="textbody"><p>この実装方法の目的は、利用者が彼らの好みに従ってコンテンツを見ることができるような方法で構造化されたHTMLテキストを画像化されたテキストに置き換えるためのCSSの用い方を実践することである。この実装方法を用いるには、コンテンツ制作者はページの構造をマークアップするためにセマンティックな要素を用いるHTMLページを作ることから始める。次にコンテンツ制作者はページに対して2またはそれ以上のスタイルシートを作成する。1つめのスタイルシートはHTMLテキストをテキストとして表現し、2つめはいくつかのHTMLテキストをテキストの画像に置き換えるためにCSSの機能を用いている。最後に、server-side 又は client-side scriptingの使用を通して、コンテンツ制作者は利用者が利用するビューを切り替えることができるコントロールを提供する。</p><p>この実装方法は、画像化されたテキストを含まない表現が利用可能であり、かつ、利用者が代替表現に切り替えることができるユーザーインタフェースコントロールが関連する達成基準を満たす限り、達成基準1.4.5又は1.4.9を満たすために用いることができる。可能であれば、コンテンツ制作者はデフォルトの表現として画像化されたテキストを含まない表現を配信すべきである。更に、切り替えのためのコントロールはページの先頭近くに配置されるべきである。</p><p>「画像の置き換え」の実装方法は、さまざまなユーザーエージェント、構成、及び支援技術の課題との互換性（詳細は「参照リソース」を参照）に取り組むために多様なものが開発されてきた。コンテンツ制作者がテキストの置き換えのために用いる数々のアプローチがある一方、その実装方法がスクリプト、CSS、画像（又はそれらの組み合わせ）をオフにした場合に正確に動作するかどうか、支援技術との互換性を考慮することは重要である。すべての場合において動作する単一の解決法を見出すことは難しいので、この実装方法は、利用者が画像置き換えの実装方法を含んでいない表現へ切り替えることのできるコントロールを用いることを推奨している。</p><div class="note"><p class="prefix"><em>注記: </em>この実装方法は、非適合コンテンツのための<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conforming-alternate-versiondef" class="gl-ref">適合している代替バージョン</a>のページを提示するために、スタイル切り替えの実装方法との組み合わせで用いることができる。更なる情報として <a href="#C29"><em>C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</em></a>と<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替バージョンを理解する</a>を参照。</p></div></div><h3 class="small-head" id="C30-examples">事例</h3><h4 class="small-head" id="C30-ex1">事例 1</h4><div class="example"><div class="textbody"><p>デザインスタジオのサイトは、利用者が彼らのウェブページの2種類の表現を見ることができるようにスタイルの切り替えを用いている。デフォルトのバージョンでは、見出しのテキストが画像化されたテキストで置き換えられている。ページ上のコントロールによって利用者はテキストで見出しを表現したバージョンへ切り替えることができる。</p><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+&lt;div id="Header"&gt; 
+  &lt;h1&gt;&lt;span&gt;パッファーフィッシュデザインスタジオ&lt;/span&gt;&lt;/h1&gt; 
+  &lt;h2&gt;&lt;span&gt;驚くべき独自性とデザインソリューション&lt;/span&gt;&lt;/h2&gt; 
+  &lt;/div&gt; 
+...</code></pre></div><div class="textbody"><p>画像化されたテキストを含んだ表現のためのCSSを以下に記す。見出し要素のコンテンツを画面の外に配置して非表示にするためにポジショニングを使用することで、テキストはスクリーンリーダー利用者が利用可能な状態に保持されていることに注意。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+#Header h1 {
+	background-image: url(pufferfish-logo.png);
+	height: 195px;
+	width: 290px;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	position: absolute;
+	}
+#Header h1 span {
+	position: absolute;
+        left: -999em;
+	}
+#Header h2 {
+	background-image: url(beauty.png);
+	background-repeat: no-repeat;
+	height: 234px;
+	width: 33px;
+	margin-left: 8px;
+	position: absolute;
+	margin-top: 250px;
+	}
+#Header h2 span {
+	position: absolute;
+        left: -999em;
+	}</code></pre></div><div class="textbody"><p>画像化されたテキストを含まないプレゼンテーションのためのCSS。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+#Header h1 {
+	font: normal 200%/100% Garamond, "Times New Roman", serif;
+	margin-bottom: 0;
+	color: #000099;
+	background: #ffffff;
+	}
+
+#Header h2 {
+	font: normal 160%/100% Garamond, "Times New Roman", serif;
+	margin-bottom: 0;
+	color: #336600;
+	background: #ffffff;
+	}</code></pre></div></div><h3 id="C30-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+            <a href="http://phark.typepad.com/phark/2003/08/accessible_imag.html">Accessible Image Replacement</a>
+          </p></li><li><p>
+            <a href="http://moronicbajebus.com/wordpress/wp-content/cssplay/image-replacement/">Image Replacement—No Span</a>
+          </p></li><li><p>
+                  <a href="http://wellstyled.com/css-replace-text-by-image.html">Replacing Text By An Image</a>
+               </p></li><li><p>
+                  <a href="http://alistapart.com/article/fir">Facts and Opinion About Fahrner Image Replacement</a>
+               </p></li><li><p>
+                  <a href="http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/">In Defense of Fahrner Image Replacement</a>
+               </p></li><li><p>
+                  <a href="http://en.wikipedia.org/wiki/Fahrner_Image_Replacement">Fahrner Image Replacement</a>
+               </p></li><li><p>
+                  <a href="http://www.w3.org/TR/CSS2/colors.html#background-properties">CSS2: 14.2.1 Background properties: 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position', and 'background'</a>
+               </p></li></ul></div><h3 id="C30-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F3">F3: 達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</a></li></ul></div><h3 id="C30-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C30-procedure">チェックポイント</h4><ol class="enumar"><li><p>ウェブページに利用者が代替表現を選択できるコントロールが含まれている。</p></li><li><p>コントロールがアクティブである時、結果ページは画像化されたテキストが用いられている箇所全てにおいてテキスト（プログラムで解釈可能なテキスト）を含んでいる。</p></li></ol><h4 class="small-head" id="C30-results">判定基準</h4><ul><li><p>上記の全てを満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><hr class="divider" title="End of techniques"/></div></div></div><div class="back"><div class="div1">
+		<dl class="slicerefs"><dt class="label"><a name="CSS1" id="CSS1"/>CSS1</dt><dd>"Cascading Style Sheets, level 1," B. Bos, H. Wium Lie, eds., W3C Recommendation 17 Dec 1996, revised 11 Jan 1999. Available at <a href="http://www.w3.org/TR/REC-CSS1/">http://www.w3.org/TR/REC-CSS1/</a>.</dd><dt class="label"><a name="CSS2" id="CSS2"/>CSS2</dt><dd>"Cascading Style Sheets, level 2," B. Bos, H. Wium Lie, C. Lilley, and I. Jacobs, eds., W3C Recommendation 12 May 1998. Available at <a href="http://www.w3.org/TR/CSS2/">http://www.w3.org/TR/CSS2/</a>.</dd><dt class="label"><a name="CSS21" id="CSS21"/>CSS21</dt><dd>"Cascading Style Sheets, level 2 revision 1,"  B. Bos, T. Çelik,  I. Hickson,   H. Wium Lie, eds., W3C Candidate Recommendation 25 February 2004.  Available at:  <a href="http://www.w3.org/TR/CSS21/">http://www.w3.org/TR/CSS21/</a> 
+            </dd><dt class="label"><a name="CSS3" id="CSS3"/>CSS3</dt><dd>
+					          <a href="http://www.w3.org/Style/CSS/current-work#table"><cite>[CSS 2.1 and CSS 3] Roadmap</cite></a>, CSS WG's table of modules and publication dates.</dd><dt class="label"><a name="HTML4" id="HTML4"/>HTML4</dt><dd>"HTML 4.01 Specification," D. Raggett, A. Le Hors, I. Jacobs, eds.,  W3C Recommendation 24 December 1999. Available at <a href="http://www.w3.org/TR/html401/">http://www.w3.org/TR/html401/</a> 
+            </dd><dt class="label"><a name="WCAG20" id="WCAG20"/>WCAG20</dt><dd>"Web Content Accessibility Guidelines 2.0,"  B. Caldwell, M. Cooper, L. Guarino Reid, and G. Vanderheiden, eds., W3C Working Draft 11 December 2007. This W3C Working Draft is available at <a href="http://www.w3.org/TR/2007/WD-WCAG20-20071211/">http://www.w3.org/TR/2007/WD-WCAG20-20071211/</a>.  The latest version of WCAG 2.0 is available at <a href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</a> 
+            </dd><dt class="label"><a name="XHTML1" id="XHTML1"/>XHTML1</dt><dd>"XHTML 1.0 The Extensible HyperText Markup Language (Second Edition)," S. Pemberton, et al.,  W3C Recommendation 26 January 2000, revised 1 August 2002. Available at:  <a href="http://www.w3.org/TR/xhtml1/">http://www.w3.org/TR/xhtml1/</a>.</dd></dl></div></div></div><div class="footer"><p class="copyright">This Web page is part of <a href="Overview.html">Techniques for WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
+              </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

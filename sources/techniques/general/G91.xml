@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G91">
+   <short-name>リンクの目的を説明したリンクテキストを提供する</short-name>
+   <applicability>
+      <p>リンク機能を含む全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、リンクの目的をリンクテキストで説明することである。その説明により、利用者はこのリンクとウェブページ内にある他のリンクへのリンクとの違いを区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。一般的に、遷移先のURIではそのリンクの目的を説明したことにならない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTMLにおいて、a 要素のテキストコンテンツを用いてリンクの目的を説明する。</head>
+      <code role="html401"><![CDATA[<a href="routes.html">
+  ボルダーズ・クライミング・ジムの現在のルート
+</a>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H30"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>この実装方法を用いるコンテンツ内の各リンクに対して: </p>
+      <olist>
+        <item>
+          <p>リンクテキストがそのリンクの目的を説明している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

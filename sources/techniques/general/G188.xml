@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G188">
+   <short-name>行送りや段落の間隔を広げるボタンをウェブページ上に提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>多くの認知障害を持つ人々は行間がシングル・スペースに設定されたテキストを読む事が困難である。行の高さを増やすボタンは彼らが内容を読む助けとなる。段落の間が離れている状態を維持するためには、段落間の幅は、行送り幅の少なくとも1.5倍の高さになるように広げられるべきである。</p>
+    <note><p class="prefix">
+		この実装方法は、非適合コンテンツに対して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" linktype="glossary">適合している代替バージョンのページ</loc>を提供するための、スタイルスイッチの実装方法と組み合わせて用いることができる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29.html" linktype="css">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</loc> (CSS)、及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" xlink:type="simple" linktype="understanding">適合している代替バージョンを理解する</loc>を参照のこと。
+		</p>
+	</note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ページを変更するための標準的なスタイル・スイッチングを用いる。スタイルシートを切り替えるためのボタン又はリンクをページに用意する。新しいスタイルシートには、行送りを広げるルールと段落の間隔を広げるクラスが含まれている。
+		 </p>
+</description>
+      <code><![CDATA[
+        p {line-height: 150%; margin-bottom: 2em;}
+      ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/article/cognitive-impairment.php">Developing sites for users with Cognitive disabilities and learning difficulties</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="C21"/>
+      <relatedtech idref="C22"/>
+      <relatedtech idref="C29"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ページ内に行送りや段落の間隔を広げるためのボタン又はリンクがあり、そのことがわかるようにラベルづけされている。
+		</p>
+        </item>
+        <item>
+          <p>そのボタン又はリンクを起動する。</p>
+        </item>
+        <item>
+          <p>その機能によって行送りや段落の間隔が広がる。</p>
+        </item>
+        <item>
+          <p>各段落の間隔が行送りの少なくとも1.5倍より広くなる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.、3. 及び 4.を満たしている</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

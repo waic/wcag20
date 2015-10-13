@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H32">
+   <short-name>実行ボタンを提供する</short-name>
+   <applicability>
+      <p>フォームのコントロールを含むコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-unpredictable-change" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行するHTTPリクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>これは送信ボタンを持つフォームの基本的な事例である。</p>
+</description>
+      <code><![CDATA[<form action="http://www.example.com/cgi/subscribe/" method="post"><br /> 
+<p>メールリングリストに登録したい場合は、あなたの
+メールアドレスを入力してください。</p><br /> 
+<label for="address">eメールアドレスを入力してください。:</label>
+<input type="text" id="address" name="address" /> 
+<input type="submit" value="登録" /><br /> 
+</form>  ]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>次の事例では、利用者が要求したページを転送する( <att>action</att> 属性により指定された)サーバーサイド・スクリプトを使用している。</p>
+</description>
+      <code><![CDATA[<form action="http://www.example.com/cgi/redirect/" method="get"><br /> 
+<p>Navigate the site.</p><br /> 
+<select name="dest"><br /> 
+<option value="/index.html">Home</option/><br /> 
+<option value="/blog/index.html">My blog</option/><br /> 
+<option value="/tutorials/index.html">Tutorials</option/><br /> 
+<option value="/search.html">Search</option/><br /> 
+</select><br /> 
+<input type="submit" value="Go" /><br /> 
+</form>  ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.cs.tut.fi/~jkorpela/forms/navmenu.html">Navigational
+                    pulldown menus in HTML</loc> by Jukka Korpela discusses a few techniques that                  work or do not work. </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G80"/>
+      <relatedtech idref="H36"/>
+      <relatedtech idref="H84"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツ内の全てのフォームを見る。</p>
+        </item>
+        <item>
+          <p>それぞれのフォームに、送信ボタン(input type="submit"<span>、input type="image" 又は button type="submit"</span>)がある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.を満たしている。 </p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

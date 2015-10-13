@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G130">
+   <short-name>内容が分かる見出しをつける</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-descriptive" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、ウェブ・コンテンツ内の見出しがコンテンツの内容を表すようなものにすることである。コンテンツの内容が分かるような見出しやタイトル（「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G88.html">G88: ウェブページに対して、コンテンツの内容が分かるページタイトルを提供する</loc>」参照）を用いることで、利用者に対してコンテンツの概要と構成を提示することができる。内容を表す見出しをつけることで、そのセクション（節）のウェブページ中の位置づけと、他のセクションとの関係を明確にすることができる。</p>
+    <p>内容を表す見出しがあれば、利用者は目的のコンテンツを見つけることや、ウェブページ内のどの部分を読んでいるのかを知ることが容易になる。</p>
+    <p>コンテンツ制作者は、最も重要な情報を各見出しの先頭に配置することを検討すると良いだろう。これによって、利用者は斜め読みをして必要な情報を見つけることが容易になる。特に、見出しから見出しへのナビゲーションが可能なブラウザや支援技術を用いている場合には有効である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>災害対策を示すHTMLページで、以下のような見出しが使われている:</p>
+</description>
+      <code role="html401"><![CDATA[
+  <h1>災害対策</h1>
+  <h2>洪水対策</h2>
+  <h2>火災対策</h2>]]></code>
+      <description><p>レベル2の見出しは、先頭に内容を識別できる情報が配置されていることに注意されたい。 (すなわち、「対策 : 洪水」、「対策: 火災」などとはなっていない。)</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>ある町について書かれた短い記事がある。この記事は、町の起こり、拡大、そして現状に関する詳しい説明を含んでいる。ウェブページのタイトルは「私たちの町の歴史」である。最初のセクションのタイトルは「我が町の始まり」で、2番目のセクションのタイトルは「我が町の拡大」である。3番目のセクションのタイトルは「今日の我が町」で、このセクションには、「町の人々」、「町の組織」、「町の施設」というサブセクションがある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページに見出しがある。</p>
+        </item>
+        <item>
+          <p>各見出しが、ウェブページ中の対応するセクションを表す内容になっている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

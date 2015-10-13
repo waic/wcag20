@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H54">
+   <short-name><el>dfn</el>要素を用いて、単語の定義対象を特定する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-idioms" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、その語句の定義を伴って語句が用いられている箇所のマーク付けに<el>dfn</el>要素を用いることである。<el>dfn</el>要素は、囲んだ用語の定義対象であることを示すのに用いる。言い換えれば、その語句がその場所で定義されている場合に、その用語の存在をマーク付けするのである。ただし、用語を囲むのであって、定義を囲むわけではないことに注意すること。この実装方法は、定義方法に関する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">インラインの定義を用いる</loc>とともに用いられる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>次のコードは、<el>dfn</el>要素の使用例である。</p>
+</description>
+      <code role="html401"><![CDATA[<p>ウェブ・コンテンツ・アクセシビリティ・ガイドラインは、非テキストコンテンツに
+対する代替テキストを要求している。&lt;dfn&gt;非テキストコンテンツ&lt;/dfn&gt;とは、
+プログラムで解釈可能な一連の文字列ではないコンテンツや、人間の言葉として
+表現されない一連のものであり、ASCIIアート（文字を使った図柄）、顔文字、
+リート語（文字の代用）、テキストの代わりとなる画像が含まれる。</p>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/text.html#edef-DFN">DFN
+                    Element</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G112"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>テキストの中で、インラインで定義されている単語、つまり単語の近くの文章に定義が出現するものを全て特定する。</p>
+        </item>
+        <item>
+          <p>インラインで定義されているそれぞれの単語が、<el>dfn</el>要素に含まれている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

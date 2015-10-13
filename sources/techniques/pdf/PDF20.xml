@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF20">
+   <short-name>Adobe Acrobat Pro のテーブルエディタを使用して、間違ってタグ付けされているテーブルを修復する</short-name>
+   <applicability>
+     <p>テーブルが含まれているタグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この実装方法の目的は、行と列の間の論理的な関係が維持され、支援技術により認識されるように、PDF 文書内のテーブルセルをマークアップする方法を示すことである。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>ただし、オーサリングツールで正しくマークアップされている場合でも、PDF に変換されたテーブルに、正しく結合または分割されないテーブルセルが存在する場合がある。コンテンツ制作者は、Adobe Acrobat Pro の TouchUp 読み上げ順序ツールのテーブルエディタを使用して、テーブルセルが適切に構造化されていることを確認できる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro の TouchUp 読み上げ順序ツールのテーブルエディターを使用してテーブルセルを修復する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>この事例では、Microsoft Word での作成時に正しくマークアップされていたテーブルを使用する。一部のテーブルヘッダは、ヘッダ行が 2行あり、テーブルヘッダが 2列に分かれている。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-word.jpg" alt="スクリーンショット：複雑なヘッダのある、Word で正しくマークアップされたテーブル（PDF への変換前）&#13;&#10;" height="289" width="516"/></p><p>PDF 文書内のテーブルを確認するには、次の操作を行う。</p>
+<olist><item><p>アドバンスト > アクセシビリティ > TouchUp 読み上げ順序を選択する</p></item><item><p>テーブルの左上隅にある数字（以下の画像の読み上げ順序 3）をクリックしてテーブルを選択する</p></item><item><p>TouchUp 読み上げ順序パネルで［テーブルエディタ］ボタンを選択する。テーブルセルに赤色のアウトラインが表示され、タグによってラベルが付けられる。赤いアウトラインはテーブルセルと厳密に一致するものではないが、それによってセルが正しくタグ付けされているかどうかを確認できる</p></item></olist>
+<p>次の画像は、TouchUp 読み上げ順序ツールのサンプルテーブルを示している。「Results」ヘッダが 2つのサブヘッダにまたがって表示されており、左側にあるその他のヘッダは「Results」ヘッダ内の 2つの行にまたがっている。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-1.jpg" alt="スクリーンショット：TouchUp 読み上げ順序ツール内のテーブル。Word の場合と同様に、テーブルの「Results」ヘッダは 2つのサブヘッダにまたがって表示されており、左側にあるその他のヘッダは「Results」ヘッダ内の 2 つの行にまたがっている。" height="584" width="822"/></p><p>次の画像は、テーブルエディターでのサンプルテーブルを示している。セルには赤色のアウトラインが付けられ、各セルのタブが表示されている。変換時に、「Results」ヘッダが正しく分割されず、2つのサブヘッダにまたがっていない。右側にあるヘッダは 2つのセルに正しく分割されず、「Results」ヘッダにまたがっていない。さらに、正しく分割されなかったセルが 1つのセルに結合されている。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-2.jpg" alt="スクリーンショット：テーブルセルと各セルのタグを示している、テーブルエディターでのサンプルテーブル。テーブルエディターは、「Results」ヘッダが正しく分割されず、2 つのサブヘッダにまたがっていないことを示している。その他のヘッダも正しく分割および結合されていない。" height="285" width="520"/></p><p>「Results」ヘッダを修復するには、次の操作を行う。 </p>
+<olist><item><p>テーブル内でヘッダを選択する（選択されると、青色のアウトラインが表示される）</p></item><item><p>コンテキストメニューにアクセスする</p></item><item><p>［テーブルセルのプロパティ］を選択する</p></item><item><p>［テーブルセルのプロパティ］ダイアログボックスで、「列のスパン」を「1」から「2」に変更する</p></item><item><p>［OK］を押す。変更により正しくないテーブル構造が生じた場合には、警告が表示される。この場合、変更は正しい。変更したセルは、次の画像に示されているように、新しい範囲を示すために色が変わる</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-2a.jpg" alt="スクリーンショット：この事例でタグ付けが間違っているヘッダを修復するために「列のスパン」が「2」に変更された、［テーブルセルのプロパティ］ダイアログボックス" height="473" width="686"/></p><p>同様に、「Results」ヘッダの左側にある正しく分割されていないヘッダセルを修復するには、次の操作を行う。</p>
+<olist><item><p>列内で上部のセルを選択する（選択されると、青色のアウトラインが表示される）</p></item><item><p>コンテキストメニューにアクセスする</p></item><item><p>［テーブルセルのプロパティ］を選択する</p></item><item><p>［テーブルセルのプロパティ］ダイアログボックスで、「行のスパン」を「1」から「2」に変更する</p></item><item><p>［OK］を押す。次の画像は、左側にあるヘッダセルが修正され、最後のヘッダセルが修正された状態を示している</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-2b.jpg" alt="スクリーンショット：この事例でタグ付けが間違っているヘッダを修復するために「行のスパン」が「2」に変更された、［テーブルセルのプロパティ］ダイアログボックス" height="474" width="789"/></p><p>次の画像は、修復されたサンプルテーブルを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table-3a.jpg" alt="スクリーンショット：テーブルエディター内の修復されたサンプルテーブル。これで、元の Word の表と同じテーブル構造になっている。" height="303" width="519"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table.docx" linktype="examples">テーブル構造を修復するサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF20/table.pdf" linktype="examples">テーブル構造を修復するサンプル (PDF ファイル)</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>テーブルの構造エレメントを使用してテーブルをマークアップする</head>
+      <description><p>次のコードフラグメントは、事例 1 ～ 3 に示すような単純なテーブル（ヘッダ行とデータ行）で一般的に使用されるコードを示している。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+95 0 obj                % テーブルの構造エレメント
+ << 
+  /A 39 0 R
+  /K[96 0 R 101 0 R 106 0 R 111 0 R]
+  /P 93 0 R
+  /S/Table              % 標準構造タイプはテーブル
+ >> 
+ endobj
+96 0 obj                % テーブル行の構造エレメント
+ << 
+  /K[97 0 R 98 0 R 99 0 R 100 0 R]
+  /P 95 0 R
+  /S/TR                 % 標準構造タイプはテーブル行
+ >> 
+ endobj
+97 0 obj                % テーブルヘッダの構造エレメント
+ <</A[23 0 R 120 0 R]
+   /K 1
+   /P 96 0 R
+   /S/TH                 % 標準構造タイプはテーブルヘッダ
+   /Pg 8 0 R
+ >> 
+endobj
+104 0 obj                % テーブルデータの構造エレメント（セルのコンテンツ）
+ << 
+  /A 29 0 R
+  /K 7
+  /P 101 0 R
+  /S/TD                  % 標準構造タイプはテーブルデータ
+  /Pg 8 0 R
+ >> 
+endobj]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+            <item>
+               <p> 14.8.4.3.4 (Table Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H51"/>
+      <relatedtech idref="PDF6"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>テーブルエディターで修復されたテーブルについて、次のいずれかの確認を行う。</p>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、テーブルヘッダおよびデータセル間の論理的関係を維持する方法で表の情報が読み上げられる（表のヘッダセルを読み上げるためにヒューリスティック手法が用いられないようにスクリーンリーダーを構成すること）</p></item><item><p>PDF エディターを使用し、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> タグが正しい読み上げ順序でテーブルツリー内の階層に配置されていることを確認する</p></item><item><p>テーブルエレメントを表示できるツールを使用して PDF 文書を開き、テーブル構造を表示して、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> 構造が含まれていることを確認する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、テーブル構造に適切な TR、THおよびTD 構造が含まれ、正しい読み上げ順序と階層になっていることを確認する</p></item></ulist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>#1 is true. </p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_Adobe_Acrobat_Pro%27s_Table_Editor_to_repair_mistagged_tables"/>
+      </source>
+   </admin>
+</technique>

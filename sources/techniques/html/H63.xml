@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H63">
+   <short-name>scope属性を用いて、データテーブルの見出しセルとデータセルを関連付ける</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version=""
+       ><p>JAWSの最新版では、<att>scope</att>属性の<code>row</code>と<code>col</code>という値をほとんどサポートしているが、まだいくつかの問題がある。Window-Eyesは<att>scope</att>属性のサポートが一貫していない。これらのスクリーンリーダーの日本語版も同じである。JAWSのバージョン5以前、Window-Eyesの古いバージョンでは<att>scope</att>属性のサポートが一貫していない。</p>
+            <p>現時点で、見出しが1行目や1列目にないテーブルについて、さまざまな支援技術で一貫したサポートを確保したい場合は、<specref ref="H43"/>にある複雑なテーブルに関する実装方法を採用してもよい。一方、見出しが1行目や1列目にある単純なテーブルについては、<el>th</el>要素と<el>td</el>要素の利用を推奨する。</p>
+</ua-issue>
+   </ua-issues>
+   <description>
+    <p>この実装方法の目的は、<att>scope</att>属性を利用して見出しセルとデータセルを関連付けることである。<att>scope</att>属性を利用するのは、見出しとして利用するあらゆるセルが及ぶ範囲を明確にするためである。範囲とは、そのセルが行、列、行グループ、列グループのどの見出しであるかを特定するものである。<code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code>という値によって範囲を特定することになる。</p>
+    <p>事例 1のように、見出しが1行目や1列目にない単純なテーブルに対してこの実装方法が利用できる。今日のスクリーンリーダーのサポートを考えると、単純なテーブルについて次の2つの状況が当てはまる場合に、この実装方法の利用が示唆される：</p>
+    <ulist>
+      <item>
+        <p><el>td</el>要素でマークアップしてあるデータセルが、行見出し又は列見出しとしても機能する場合</p>
+      </item>
+      <item>
+        <p><el>th</el>要素ではなく<el>td</el>要素でマークアップしてある見出しセルがある場合、コンテンツ制作者は、CSSでコントロールする方法があるがそれを採用せず、<el>th</el>要素の表示特性を避けるために<el>td</el>要素でマークアップすることがある。</p>
+      </item>
+    </ulist>
+    <note><p class="prefix">1行目や1列目に見出しがある単純なテーブルについては、<att>scope</att>属性を指定せずに<att>th</att>要素を利用するだけで十分である。</p>
+    </note>
+    <note>
+      <p class="prefix">複雑なテーブルについては、<specref ref="H43"/> の通り、<att>id</att>属性と<att>headers</att>属性を利用する。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <head>単純なスケジュール表</head>
+      <description><p>次のコード例では、1列目にテーブルの行番号を示す連番が含まれている。行の中でも重要な値は2列目に含まれるため、各セルに<code>scope="row"</code>と指定してある。1行目のセルは<code>td</code>要素でマークアップし、これらにも<code>scope="col"</code>と指定してある。</p>
+</description>
+      <code role="html401"><![CDATA[<table border="1">
+  <caption>連絡先</caption>
+  <tr>
+    <td></td>
+    <td scope="col">名前</td>
+    <td scope="col">電話番号</td>
+    <td scope="col">ファックス番号</td>
+    <td scope="col">市名</td>
+  </tr><tr>
+    <td>1.</td>
+    <td scope="row">ジョエル・ガーナー</td>
+    <td>412-212-5421</td>
+    <td>412-212-5400</td>
+    <td>ピッツバーグ</td>
+  </tr><tr>
+    <td>2.</td>
+    <td scope="row">クライブ・ロイド</td>
+    <td>410-306-1420</td>
+    <td>410-306-5400</td>
+    <td>ボルティモア</td>
+  </tr><tr>
+    <td>3.</td>
+    <td scope="row">ゴードン・グリニッジ</td>
+    <td>281-564-6720</td>
+    <td>281-511-6600</td>
+    <td>ヒューストン</td>
+  </tr>
+</table>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/tables.html#adef-scope ">Table Cells: scope attribute</loc>
+								       </p>
+            </item>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/tables.html#h-11.2.6">Table cells: The TH and TD elements</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.eramp.com/david/tablesample2.htm">Assistive technology
+                    reading tables</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H43"/>
+      <relatedtech idref="H51"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>各データテーブルについて：</p>
+      <olist>
+        <item>
+          <p><el>th</el>要素全てに、<att>scope</att>属性が指定されている。</p>
+        </item>
+        <item>
+          <p>他の要素の見出しとしての役割を果たす全ての<el>td</el>要素に、<att>scope</att>属性が指定されている。</p>
+        </item>
+        <item>
+          <p>全ての<att>scope</att>属性に、値として<code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code>が指定されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF17">
+   <short-name>PDF 文書に一貫性のあるページ番号を指定する</short-name>
+   <applicability>
+     <p id="pdf.applicability.general">タグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-location" relationship="advisory"/>
+      <success-criterion idref="consistent-behavior-consistent-locations"
+                         relationship="advisory"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この実装方法の目的は、PDF ビューアページコントロールに表示されるページ番号付けが文書のページ番号付けと同じであることを確認することにより、ユーザーが文書内の現在位置を確認できるよう支援することである。例えば、Adobe Acrobat Pro および Reader では、ページナビゲーションツールバーにページ番号が表示される。ページ番号の形式は、文書カタログ内の /PageLabels エントリにより指定される。</p>
+    <p>多くの文書では、文書内で特定のページ番号形式を使用する。一般に、前付けは小文字のローマ数字で番号付けされる。1 というページ番号で始まる主要コンテンツは、実際は文書の 5 ページ目または 6 ページ目である場合がある。同様に、付録はページ番号 1 で始まり、付録という英単語の接頭語が付けられる（例えば、「A-1」）。</p>
+    <p>コンテンツ制作者は、変換された文書のページ番号付けが、ユーザーエージェントで表示されるページ番号に反映されていることを確認する必要がある。文書のページ番号表示の一貫性は、文書内の移動をより予測可能で分かりやすいものにするのに役立つ。</p>
+    <p>例えば、ページ番号付けの書式について記述する /PageLabels が提供されていない場合、ページ番号付けスキームが Adobe Acrobat Pro または Reader のページナビゲーションツールバーに反映されない。このツールバーでは、ページ番号がテキストボックスに表示される。ユーザーは、このテキストボックスのページ番号を変更して別のページに移動できる。さらに、ユーザーは、文書内で矢印を選択してページを上下に移動できる。ツールバーには相対的なページ番号の位置も表示される。以下の画像は、現在位置が 1/4 ページであることを示すデフォルトの表示を示している。</p>
+    <p>
+      <img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page_nos-nav.jpg" alt="スクリーンショット：Adobe Acrobat Pro のページナビゲーションツールバーでは、ページ番号がテキストボックス内に表示される。ユーザーは、このテキストボックスのページ番号を変更して別のページに移動できる。さらに、ユーザーは、文書内で矢印を選択してページを上下に移動できる。ツールバーには相対的なページ番号の位置（例えば、1/4 ページ）が表示される。" height="43" width="155"/>
+    </p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して PDF ページ番号の書式の指定を編集する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>Microsoft Word 2007 から変換された事例の文書は 4 ページあり、i、ii、iii、1 という番号が付けられている。以下の画像は、Word で次のコマンドを使用して、小文字のローマ数字のページ番号付けが指定された Word 文書を示している。</p>
+<ulist><item><p>［挿入］リボン &gt; ページ番号 &gt; ページ番号の書式設定</p></item></ulist>
+<p>この文書では、アラビア数字の 1 で始まるページ番号付けを使用して、文書の 4 ページ目に新しいセクションが作成されている。その後、文書は Word から PDF に変換された。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/pages_nos_word.jpg" alt="スクリーンショット：小文字のローマ字のページ番号付けが指定されている、Word のページ番号の書式設定ダイアログボックス" height="380" width="302"/></p><p>Adobe Acrobat Pro で、表示 &gt; ナビゲーションパネル &gt; ページを選択する。次の画像は、ページパネルおよびページナビゲーションツールバーのページサムネイルを示している。サムネイルとツールバーの両方で、アラビア数字のページ番号が使用されている。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page_nos1.jpg" alt="スクリーンショット：ページパネルとページナビゲーションツールバーのページサムネイルの両方で、アラビア数字のページ番号が使用されている" height="415" width="297"/></p><p>ページ番号を修正するには、次の操作を行う。</p>
+<olist><item><p>番号を再設定するページを選択する</p></item><item><p>選択したページのコンテキストメニューから「ページ番号を設定」を選択する</p></item><item><p>ページ番号付けダイアログボックスで、小文字のローマ数字のスタイルと開始ページ（デフォルトでは 1、この場合はそのままで良い）を選択する</p></item><item><p>［OK］を押下する</p></item></olist>
+<p>次の画像は、ページ番号付けダイアログボックスと選択内容を示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page_nos2.jpg" alt="スクリーンショット：3つのページが選択されたページパネルと、新しいページスタイルが指定されたページ番号付けダイアログボックス開始ページは、正しい値である 1（デフォルト）に指定されている。&#13;&#10;" height="487" width="647"/></p><p>同じプロセスに従い、4 ページ目のページ番号をアラビア数字の 1 に変更する。</p>
+<p>以下の画像は、4 ページ目の正しいページ番号を示している。ページ iii がページパネルで選択されており、ページナビゲーションツールバーのテキスト領域に iii が表示されている。さらに、文書内の相対的位置（3/4）がツールバーの右側に表示されている。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page_nos3.jpg" alt="スクリーンショット：i、ii、iii、1 という番号が付いたページが示されている Adobe Acrobat Pro のページパネル。ページナビゲーションツールバーでは、3 ページ目に対して iii が表示されている。相対的なページ位置も「（3/4）」として表示されている" height="414" width="302"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page-numbers.docx" linktype="examples">Word から変換された文書内のページ番号を指定したサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF17/page-numbers.pdf" linktype="examples">Word から変換された文書内のページ番号を指定したサンプル (PDF ファイル)</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>/PageLabels エントリを使用してページ番号を指定する</head>
+      <description><p>次のコードフラグメントは、文書内の複数のページ番号付けスキーマを指定する一般的なコードを示している。</p>
+<p>以下の事例は、次のようなラベルがページに付けられる文書の例である。</p>
+<p class="prefix"><em>事例：</em>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …  </p>
+<p>この番号付けスキームでは、三つのページラベル辞書（小文字のローマ字、アラビア語、接頭語が付いた番号）が必要になる。 </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+1 0 obj
+    &lt;&lt; /Type /Catalog
+       /PageLabels &lt;&lt; /Nums [ 0 &lt;&lt; /S /r &gt;&gt;  % 小文字のローマ数字
+                              4 &lt;&lt; /S /D &gt;&gt;  % アラビア数字
+                              7 &lt;&lt; /S /D     % アラビア数字と...
+                      /P (A-)                % 接頭語 "A-"...
+                      /St 8                  % ページ 8 から開始
+                                &gt;&gt;
+                            ]
+                    &gt;&gt;
+       …
+   &gt;&gt;
+  endobj]]></codeblock>
+      <description><p>ページラベルは次のように指定される。</p>
+<ulist><item><p><code>/S</code>は、ページ番号の番号付けスタイルを指定する。</p>
+<ulist><item><p><code>/D</code> - アラビア数字（1、2、3...）</p></item><item><p><code>/r</code> - 小文字のローマ数字（i、ii、iii...)</p></item><item><p><code>/R</code> - 大文字のローマ数字（I、II、III...)</p></item><item><p><code>/A</code> - 大文字（A ～ Z）</p></item><item><p><code>/a</code> - 小文字（a ～ z）</p></item></ulist></item><item><p><code>/P</code> （オプション） - ページ番号接頭語</p></item><item><p><code>/St</code> （オプション） - 範囲内の最初のページ番号の値（デフォルト：1）</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 12.4.2 (Page Labels) <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="PDF14"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>異なるページネーション形式を使用する文書内の各セクションについて、文書のページで使用されている形式と同じものがページナビゲーション機能で使用されていることを確認する。</p>
+<ulist><item><p>新しいページネーション形式を始めるページを選択すると、同じ形式およびページ番号がページネーション機能で表示される</p></item><item><p>スクリーンリーダーを使用して、ページナビゲーション機能で読み上げられるページ番号が、文書のページで読み上げられるページ番号と同じである</p></item><item><p>/PageLabels エントリを表示できるツールを使用して PDF 文書を開き、エントリを表示する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、/PageLabels エントリが正しく指定されていることを確認する</p></item></ulist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Specifying_consistent_page_numbering_for_PDF_documents_in_Adobe_Acrobat_Pro_or_Reader"/>
+      </source>
+   </admin>
+</technique>

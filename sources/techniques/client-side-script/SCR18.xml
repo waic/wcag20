@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR18">
+   <short-name>クライアントサイドのバリデーション及びアラートを提供する</short-name>
+   <applicability>
+      <p>利用者の入力を検証するコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-reversible" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、クライアントサイドのスクリプトによって、各フィールドで利用者が入力する値を確認することである。エラーが見つかった場合、警告ダイアログを表示し、エラーの内容をテキストで示す。警告ダイアログを閉じるとともに、スクリプトによってキーボードフォーカスをエラーが起こったフィールドに移動させれば、それは利用者にとって役立つ。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>以下のスクリプトは、有効な日付がフォームのコントロールに入力されたかをチェックする。</p>
+</description>
+      <code><![CDATA[
+&lt;label for="date"&gt;日付：&lt;/label&gt;
+&lt;input type="text" name="date" id="date" 
+onchange="if(isNaN(Date.parse(this.value))) 
+alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" /&gt;]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G89"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>特定の入力を必要とするフォームのフィールドに対して：</p>
+      <olist>
+        <item>
+          <p>無効なデータを入力する。</p>
+        </item>
+        <item>
+          <p>エラーを説明している警告が提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

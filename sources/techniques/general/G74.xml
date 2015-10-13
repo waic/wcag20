@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G74">
+   <short-name>短い説明の中で長い説明のある場所を示して、非テキストコンテンツの近くにあるテキストで長い説明を提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、利用者を別の場所にジャンプさせることなく長い説明文を提供することである。非テキストコンテンツの内容の一部が失われる恐れがある利用者にとって有益な説明文が、すべての利用者にも見られるようになる。</p>
+    <p>この実装方法によって、長い説明文が標準のプレゼンテーションの一部として提供される（つまり、すべての利用者が受け取ることができる）。説明文は非テキストコンテンツの近くに配置されるが、隣接させる必要はない。例えばグラフの下にキャプションがあり、長い説明文が次の段落で提供されているといった場合である。</p>
+    <p>非テキストコンテンツを閲覧できないときに、どこを探せば良いかわかるように、簡潔な代替テキストの中に長い説明文の場所を示す。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>棒グラフ</head>
+      <description><p>ウェブページ に上位3名の販売員の売上げを示した棒グラフがある。</p>
+<p>簡潔な代替テキストでは「上位3名の販売員の10月の売上表。グラフに続いてテキストの詳細」と書かれている。</p>
+<p>次の説明文が棒グラフの直下の段落にある。「10月の売上げはメアリーが400個でトップ、マイクが389個の僅差で続き、クリスが350個でトップ3の最後となっている。」</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G73"/>
+      <relatedtech idref="H45"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>簡潔な代替テキストに長い説明文の場所が含まれている。</p>
+        </item>
+        <item>
+          <p>長い説明文が視覚的な配置順及び音声読み上げ順序でも非テキストコンテンツの近くにある。</p>
+        </item>
+        <item>
+          <p>長い説明文が非テキストコンテンツと同じ情報を伝達している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>上記の3つ全てを満たしている。</p>
+      </expected-results>
+   </tests>
+</technique>

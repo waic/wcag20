@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF23">
+   <short-name>PDF 文書内でインタラクティブなフォーム・コントロールを提供する</short-name>
+   <applicability>
+     <ulist>
+      <item>
+        <p>フォームが含まれているタグ付き PDF 文書</p>
+      </item>
+      <item>
+        <p>Adobe LiveCycle Designer で作成された PDF フォーム</p>
+      </item>
+    </ulist>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>このテクニックは、PDF 文書内のインタラクティブなフォーム・コントロールでキーボード操作を行えるようにすることを目的としている。インタラクティブな PDF フォームは通常、PDF のオーサリングツールを使用して作成される。フォーム・コントロールは、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>」の節 12.7「インタラクティブフォーム」または「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://partners.adobe.com/public/developer/xml/index_arch.html">Adobe XML Forms Architecture (XFA)</loc>）」のいずれかで説明されているように PDF 文書に実装される。</p>
+    <p>PDF フォーム・コントロールの種類は、テキスト入力フィールド、チェックボックス、ラジオボタン、コンボボックス、リストボックスおよびボタンである。</p>
+    <p>フォーム・コントロールを使用すると、ユーザーは、情報を入力したり選択肢を指定したりして PDF 文書を操作してから、送信して処理することができる。キーボードアクセスに依存しているユーザーは、視力のあるユーザーと同様に、フォームフィールドを認識して理解し、選択を行い、フォームに入力し、フォームを送信できなければならない。</p>
+    <p>インタラクティブなフォーム・コントロールは、スキャンした紙のフォームをタグ付き PDF に変換することにより作成されたフォーム、または Microsoft Word や Open Office などのオーサリングアプリケーションでフォームを作成し、タグ付き PDF に変換することにより作成されたフォームに対して提供できる。</p>
+    <p>ただし、フォーム設計機能を提供するオーサリングアプリケーションにより作成された文書は、PDF への変換時に、入力可能なフォームフィールドが完全には保持されない可能性がある。特に複雑なフォームでは、変換時にタグ付けされる際に、フォームフィールドおよびラベルが適切に変換されない場合がある。</p>
+    <p>Adobe Acrobat Pro を使用し、変換された文書内のフォームを用いて、次の操作を行うことにより、フォームフィールドがキーボードでアクセス可能で利用可能であることを確認できる。</p>
+    <ulist>
+      <item>
+        <p>フォームフィールドが含まれているタグ付き PDF 文書を開き、フォームフィールド認識の実行ツールを使用して、インタラクティブな PDF フォームエレメントを作成する</p>
+      </item>
+      <item>
+        <p>Adobe Acrobat Pro または Adobe LiveCycle Designer を使用して、入力可能なフォームフィールドを変更するか、フォームフィールドを追加する</p>
+      </item>
+    </ulist>
+    <p>Adobe LiveCycle Designer を使用して、フォームを最初から作成できる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して、インタラクティブなフォームを PDF 文書内の既存のフォームに追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
+<p>（紙のフォームをスキャンするか、オーサリングツールを使用してタグ付き PDF を生成することにより作成された）タグ付き PDF 文書内にフォームが含まれている場合、Adobe Acrobat Pro を使用して、静的なフォームと同じページ位置にあるフォームエレメントをキーボードでアクセス可能にすることができる。</p>
+<olist><item><p>アドバンスト > アクセシビリティ > フォームフィールド認識の実行を使用して、フォームフィールドを自動検出し、入力可能にする</p></item></olist>
+<p>次の画像は、タグ付き PDF に変換される文書内のフォームフィールドを検出するために、フォームフィールド認識の実行ツールが選択されている状態を示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form1.jpg" alt="スクリーンショット：Adobe Acrobat Pro の PDF 文書内のフォームフィールド。アドバンスト／アクセシビリティメニューが選択され、フォームフィールド認識の実行ツールが表示されている。" height="307" width="548"/></p><p>次の画像は、フォームフィールド認識の実行ツールの実行後に表示されるフォームフィールドを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form1a.jpg" alt="スクリーンショット：フォームフィールド認識ツールを実行した後の、Adobe Acrobat Pro の PDF 文書内のフォームフィールド" height="488" width="872"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form-fields-keybd.pdf" linktype="examples">Acrobat のインタラクティブなコントロールのサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用してフォーム・コントロールを PDF 文書内に追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
+<p>次のようにして、キーボードでアクセス可能なフォーム・コントロールをフォームに追加できる。</p>
+<olist><item><p>フォーム > フィールドを追加または編集 を選択する。これにより、フォームがフォーム編集モードになる</p></item><item><p>左上にある新規フィールドを追加メニューを開き、追加するフォームフィールドを選択する。以下の画像はフィールドのメニューを示している</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form1c.jpg" alt="スクリーンショット：使用可能なフォームフィールドの一覧が表示されている、新規フィールドを追加メニュー&#13;&#10;" height="306" width="268"/></p><p>次の画像は、事例 1 のフォームに追加されたチェックボックスを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form1b.jpg" alt="スクリーンショット：フィールドを追加または編集を使用してフォームに追加されたチェックボックス&#13;&#10;" height="157" width="459"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form-fields-keybd-lc.pdf" linktype="examples">LiveCycle Designer のインタラクティブなコントロールのサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して PDF 文書内のフォーム・コントロールを編集する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
+<p>フィールドを編集するには、フィールドのコンテキストメニューを選択し、［プロパティ］を選択する。［テキストフィールドのプロパティ］メニューでは、次の画像に示されているように、テキストフィールドを変更できる。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form5.jpg" alt="テキストフィールドを変更するための［テキストフィールドのプロパティ］ダイアログボックス&#13;&#10;" height="503" width="525"/></p><note><p class="prefix">ツールヒントはキーボードではアクセスできないが、スクリーンリーダーでアクセス可能である。「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF12.html">PDF12：PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</loc>」を参照のこと。</p>
+</note>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe LiveCycle Designer ES 8.2.1 を使用してインタラクティブなフォームを新規作成する</head>
+      <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
+<p>Adobe LiveCycle Designer を使用して、新規フォームを作成することができる。このスタンドアロンツールは、Windows のスタートメニューから起動できる他にも、Adobe Acrobat Pro 内で起動することができる。</p>
+<olist><item><p>フォーム > フォームウィザードの開始を選択する</p></item><item><p>次の画像に示されているように、「既存のフォームなし」ラジオボタンを選択する</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form2.jpg" alt="スクリーンショット：「既存のフォームなし」ラジオボタンが選択されている、フォームウィザードの最初のダイアログボックス" height="355" width="417"/></p><p>「次へ」をクリックして LiveCycle Designer を起動し、次の画像に示されているように、新規フォームアシスタントの最初のページを開く。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form2a.jpg" alt="スクリーンショット：LiveCycle Designer と新規フォームアシスタントの最初のページ" height="314" width="1080"/></p><p>Windows スタートメニューから LiveCycle Designer を起動する場合、フォームウィザードはファイル > 新規作成から使用できる。</p>
+<p>新規フォームアシスタントは空白のフォームを作成する。右側のウィンドウにあるオブジェクトライブラリを使用して、フォーム・コントロールを選択する。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/lc-blank.jpg" alt="スクリーンショット：LiveCycle Designer でオブジェクトライブラリを使用して新規作成された空白のフォーム&#13;&#10;" height="560" width="953"/></p><p>LiveCycle Designer を使用して、一般的に使用されるフォームテンプレートに基づいてフォームを作成することもできる。</p>
+<olist><item><p>「新規」プルダウンからテンプレートアシスタントウィザードを起動する。<img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/lc-new.jpg" alt="スクリーンショット：LiveCycle Designerのフォームテンプレートを選択する新規アイコン" height="32" width="49"/>. </p></item><item><p>フォームを選択し、フォームの適切な種類を選択する。次に、プレースホルダテキスト、グラフィック、フォームフィールドおよびプロパティを、独自に提供または定義したカスタムオブジェクトに置き換えて、フォームをカスタマイズできる</p></item></olist><p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/lc-templates.jpg" alt="スクリーンショット：LiveCycle Designer：フォームテンプレートのリスト" height="620" width="437"/></p></description>
+    </eg-group>
+    <eg-group>
+      <head>/Tx フィールドの種類を使用して PDF 文書内にテキストフィールドを追加する</head>
+      <description><p>次のコードフラグメントは、事例 1 および 2 に示すような単純なテキストフィールドで一般的に使用されるコードを示している。このコードは通常、オーサリングツールにより実行される。 </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+<< /AP -dict-                                                   
+   /DA /Helv  0 Tf 0 g
+   /DR -dict-
+   /F 0x4
+   /FT Tx              % テキストフィールドの Tx に設定された FT キー
+   /P -dict-
+   /Rect -array-
+   /StructParent 0x1
+   /Subtype Widget
+   /T Date you are available   % 日付の部分的なフィールド名
+   /TU Date you are available: use mm/dd/yyyy format % 簡単な説明として機能する TU ツールチップの値
+   /Type Annot
+   /V Pat Jones
+>>
+...
+<Start Stream>
+ BT
+  /P <</MCID 0 >>BDC
+  /CS0 cs 0  scn 
+  /TT0 1 Tf
+    -0.001 Tc 0.003 Tw 11.04 0 0 11.04 72 709.56 Tm
+    [(P)-6(le)-3(as)10(e)-3( )11(P)-6(rin)2(t)-3( Y)8(o)-7(u)2(r N)4(a)11(m)-6(e)]TJ
+  0 Tc 0 Tw 9.533 0 Td
+  ( )Tj
+  -0.004 Tc 0.004 Tw 0.217 0 Td
+  [(\()-5(R)-4(e)5(q)-1(u)-1(i)-3(r)-3(e)-6(d)-1(\))]TJ
+ EMC
+  /P <</MCID 1 >>BDC
+  0 Tc 0 Tw 4.283 0 Td
+  [( )-2( )]TJ
+   EMC
+   /ArtifactSpan <</MCID 2 >>BDC
+   0.002 Tc -0.002 Tw 0.456 0 Td
+  [(__)11(___)11(___)11(___)11(___)11(_)11(____)11(___)11(___)11(__)]TJ
+  0 Tc 0 Tw 13.391 0 Td
+  ( )Tj
+  EMC
+ ET
+<End Stream>]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 12.7 (Interactive Forms) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://partners.adobe.com/public/developer/xml/index_arch.html">Adobe
+    						XML Forms Architecture (XFA)</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G202"/>
+      <relatedtech idref="PDF3"/>
+      <relatedtech idref="PDF12"/>
+      <relatedtech idref="PDF15"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>各フォーム・コントロールについて、各フォーム・コントロールにタブ移動し、アクティブ化できることまたは値をキーボードから変更できることを確認することにより、適切に実装されていることを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_interactive_form_controls_in_PDF_documents"/>
+      </source>
+   </admin>
+</technique>

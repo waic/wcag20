@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR1">
+   <short-name>利用者が初期設定の制限時間を延長できるようにする</short-name>
+   <applicability>
+      <p>
+            クライアントサイドスクリプトによりコントロールされた制限時間。
+</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、スクリプトがデフォルトの制限時間のある機能を提供する際、その時間を延長するメカニズムを提供することによって、利用者がデフォルトの制限時間を延長できるようにすることである。利用者がより長い制限時間を要求できるようにするために、利用者がより長い制限時間を入力できる、又は
+より多くの時間を必要としていることを示す（例えば）フォームをスクリプトが提供することができる。制限時間が切れそうであることを利用者に警告する場合（<specref ref="SCR16"/>を参照）、このフォームを警告のダイアログから利用可能にする。どれぐらいの追加時間が必要かを示すことができるようにするか、繰り返し制限時間を延長できるようにすることによって、利用者はデフォルトの制限時間を少なくとも10倍延長することができる。</p>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <olist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.phpbuilder.com/tips/item.php?id=141">PHPBuilder Time-out Info</loc> 
+               </p>
+            </item>
+         </olist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="SCR16"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>制限時間がスクリプトで設定されているウェブページで、制限時間が切れるまで待つ。</p>
+        </item>
+        <item>
+          <p>制限時間を延長する選択肢が提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>
+2.を満たしていて、かつインタラクションを完了するために更なる時間が提供されている。
+    </p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

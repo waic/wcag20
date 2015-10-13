@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H42">
+   <short-name>h1要素～h6要素を用いて、見出しを特定する</short-name>
+   <applicability>
+      <p>HTML and XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、HTML及びXHTMLの見出しマークアップを用いて、コンテンツ構造を伝達することである。</p>
+    <p>単にテキストの外観を変えるために見出しマークアップを使うのは、コンテンツの構成をうまく伝達できないばかりか、見出しを構造の理解に用いる利用者や、見出しを使ったナビゲーションを用いる利用者を混乱させる恐れがある。逆に、テキストを太字にしたり、<att>"class=heading"</att>と指定したりしたとしても、見た目が見出しのようになるだけで、支援技術はそのテキストを見出しとは認識できないだろう。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>階層的な見出し構造事例 2：3段組レイアウトの見出し設定</head>
+      <description><p>以下の事例では、<el>h3</el>が<el>h2</el>のサブセクションで、<el>h2</el>が<el>h1</el>のサブセクションとなっていて、見出しが階層的なレイアウトに用いられている。</p>
+</description>
+      <code xml:space="preserve"><![CDATA[<h1>Plant Foods that Humans Eat</h1>
+<p>There are an abundant number of plants that humans eat...</p>
+<h2>Fruit</h2>
+<p> A fruit is a structure of a plant that contains its
+  seeds...</p>
+<h3>Apple</h3>
+<p>The apple is the pomaceous fruit of the apple tree...</p>
+<h3>Orange</h3>
+<p>The orange is a hybrid of ancient cultivated origin...</p>
+<h3>Banana</h3>
+<p>Banana is the common name for herbaceous plants ...</p>
+<h2>Vegetables</h2>
+<p>A vegetable is an edible plant or part of a plant other than a
+  sweet fruit ...</p>
+<h3>Broccoli</h3>
+<p>Broccoli is a plant of the mustard/cabbage family ... </p>
+<h3>Brussels sprouts</h3>
+<p>The Brussels sprout of the Brassicaceae family, is a Cultivar
+  group of wild cabbage ...</p>
+<h3>Green beans</h3>
+<p>Green beans have been bred for the fleshiness, flavor, or
+  sweetness of their pods...</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>この事例では、3段組の真ん中にページのメインコンテンツがある。メインコンテンツは、ページ内で最初のコンテンツではないが、そのタイトルはページタイトルと同じで、<el>h1</el>要素でマークアップされている。3段組のうち1番目と3番目のコンテンツは重要度が低いため、タイトルが<el>h2</el>要素でマークアップされている。【訳注：見出しを適切にマークアップする方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H69" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">コンテンツの各セクションの開始位置に見出し要素を提供する</loc>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G141" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">見出しを用いてウェブページを構造化する</loc>を参照するとよい。】</p>
+<note><p diff="add">以下のコード例は、ウェブページの特定のセクションに対して用いるべき見出しレベルを規定するものではないことに留意することが重要である。レイアウトする際には、各カラムの最初に見出しを同じ見出しレベル（例えば、h1）で提示したり、またはコード例にあるようにメインコンテンツに関してその重要度を反映した見出しレベルで提示したりすることが可能である。</p>
+</note>
+</description>
+      <code role="html401"><![CDATA[<head>
+ <title>株式市場アップ・トゥデイ</title>
+ </head>
+
+ <body>
+
+ <!-- left nav -->
+ <div class="left-nav">
+ <h2>サイトナビゲーション</h2>
+ <!-- content here -->
+ </div>
+
+ <!-- main contents -->
+ <div class="main">
+ <h1>株式市場アップ・トゥデイ</h1>
+ <!-- article text here -->
+ </div>
+
+ <!-- right panel -->
+ <div class="left-nav">
+ <h2>関連リンク</h2>
+ <!-- content here -->
+ </div>
+ </body>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/global.html#h-7.5.5">HTML 4.01
+                    H1-H6 elements</loc>
+								       </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://meyerweb.com/eric/thoughts/2004/07/21/pick-a-heading/">Pick a
+                    Heading</loc> Eric Meyer</p>
+            </item>
+            <item><p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</loc>
+          </p>
+        </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H69"/>
+      <relatedtech idref="G141"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツが見出しであるときに、見出しマークアップを利用している。</p>
+        </item>
+        <item>
+          <p>コンテンツが見出しでないときは、見出しマークアップを利用していない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.及び2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H34">
+   <short-name>UnicodeのRLM文字又はLRM文字を用いて、インラインでテキストの方向を混在させる</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、HTMLの双方向性アルゴリズムが望ましくない結果を生じるとき時に、それを無効にするためにUnicode制御文字のright-to-left markとleft-to-right markを用いることである。たとえば、スペース又は句読点のようなニュートラルな文字が異なる方向性のテキストの間に置かれている
+時に必要となることがある。この実装方法で用いられているコンセプトは、W3C文書の「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup（双方向アルゴリズムとインラインマークアップを知るために必要なこと）</loc>」に書かれている。</p>
+    <p>Unicode 制御文字のright-to-left mark及びleft-to-right markは、以下に示すように、
+そのまま、又は文字符号か数字符号の参照によって挿入することが可能である。</p>
+    <ulist>
+      <item>
+        <p>left-to-right mark（LRM）: &amp;lrm; 又は &amp;#x200e; (U+200E)</p>
+      </item>
+      <item>
+        <p>right-to-left mark（RLM）: &amp;rlm; 又は &amp;#x200f; (U+200F)</p>
+      </item>
+    </ulist>
+    <p><acronym title="bidirectional">双方向性</acronym>のアルゴリズムが原因で、ソースコード編集者は期待通りに文字符号や数字符号の参照を表示できないことがある。</p>
+  </description>
+
+   <examples>
+      <eg-group>
+      <description><p>この事例では、英語の文章の間にあるアラビア語のフレーズを示している。感嘆符はアラビア語のフレーズの一部であり、その左側にあるべきである。それはアラビア文字とラテン文字の間であり、段落全体の方向が<abbr expansion="left-to-right">LTR</abbr>（左から右）であるため、双方向性のアルゴリズムはアラビア語のフレーズの右側に感嘆符を置いている。</p>
+<p>The title is "<phrase xml:lang="ar">مفتاح معايير الويب!</phrase>" in Arabic.</p>
+<p>視覚的に並び替えられたASCIIバージョン（右から左へのテキストは大文字、左から右は小文字）：</p>
+<p>the title is "HCTIWS SDRADNATS BEW!" in arabic.</p>
+<p>表示されたテキスト（以下を参照）を見るとき、感嘆符の直後にUnicodeのright-to-left markを
+挿入することによって、感嘆符を正しい位置に置くことになる。right-to-left markを挿入するために、エスケープ文字又は（不可視の）制御文字を使用することができる。</p>
+<p>The title is "<phrase xml:lang="ar">مفتاح معايير الويب!‏</phrase>" in Arabic.</p>
+<p>視覚的に並び替えられたASCIIバージョン：</p>
+<p>the title is "!HCTIWS SDRADNATS BEW" in arabic.</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/i18n-html-tech-bidi/">Authoring Techniques for
+                    XHTML &amp; HTML Internationalization: Handling Bidirectional Text 1.0</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/i18n-html-tech-bidi/#ri20030218.135304584">Mixing
+                    text direction inline</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/International/articles/inline-bidi-markup/">What you
+                    need to know about the bidi algorithm and inline markup</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/International/geo/html-tech/tech-bidi.html#bidisource">Problems with bidirectional source text</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H56"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>テキストの方向が変わっている箇所のソースを調べる。</p>
+        </item>
+        <item>
+          <p>テキストの方向が変わっている際には、スペース又は句読点のようなニュートラルな文字が初期設定ではない方向で表示されたテキストに隣接している。</p>
+        </item>
+        <item>
+          <p>上記2.に該当し、かつHTMLの双方向性のアルゴリズムがニュートラルな文字の誤った配列を生み出している場合、ニュートラルな文字の直後にUnicode制御文字の right-to-left又はleft-to-right markがあり、ニュートラルな文字を前の文字列の一部として配置させている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>3.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

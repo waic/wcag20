@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F76">
+   <short-name>達成基準 3.2.2 の不適合事例 － 利用者が見逃してしまうような位置に、ユーザーインタフェース要素の設定を変更することにより起こる状況の変化に関する説明文を提供している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-unpredictable-change" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>事前の説明がない場合、ユーザーインタフェース要素の設定を変更することによって起こる予期せぬ状況の変化が、利用者を混乱させてしまうことがある。そのような状況が起こる前に利用者が説明を受けられるようにしなければならない。見直す機会がないような方法で説明が提供されると、利用者が混乱してしまう恐れがある。</p>
+    <p>不適合となる事例：</p>
+    <ulist>
+      <item>
+        <p>設定を変更することで状況の変化が発生するユーザーインタフェース要素よりも前に、ウェブページ上で説明が提供されていない。</p>
+      </item>
+      <item>
+        <p>複数のステップからなる処理で、設定の変更によって状況の変化が起きるユーザーインタフェース要素に達するまでに、利用者が特定のステップを通らなければならない場合に、このような状況の変化に直面するステップより前の処理の中で利用者に説明が提供されていない。</p>
+      </item>
+      <item>
+        <p>イントラネット上のウェブアプリケーションにおいて、状況の変化についての説明が提供されていない。</p>
+      </item>
+    </ulist>
+  </description>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ユーザーインタフェースの設定の変更によって状況の変化が生じる。</p>
+        </item>
+        <item>
+          <p>全ての利用者が状況の変化に出くわす前に見直しができるような説明文がある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしていて、2.を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G110">
+   <short-name>クライアントサイドの瞬間的なリダイレクトを用いる</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、クライアントサイドで利用可能なリダイレクトを、利用者を混乱させることなく用いることである。リダイレクトはサーバサイドで実装するほうが望ましい（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1.html">SVR1： クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>［サーバー］を参照）。なぜなら、サーバーサイドのリダイレクトでは、新たなURIにあるコンテンツをサーバが送信する前にコンテンツが表示されてしまうことがないからである。しかし、コンテンツ制作者がサーバサイド技術を管理しているとは限らず、このような場合にはクライアントサイドのリダイレクトを用いることができる。コンテンツを異なるURIから取得すべきことをユーザーエージェントに指示するコードを埋め込むことで、クライアントサイドのリダイレクトが実装できる。リダイレクト元のページには、リダイレクトに関する情報のみを含めておくことが重要である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTML：meta要素のrefreshで、URIを指定し、タイムアウトを指定しない方法</head>
+      <description><p>
+									HTML 4.xとXHTML 1.xでは、mata要素を用いることでクライアントサイドのリダイレクトが実装できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H76.html">H76: meta要素のrefreshを用いて、クライアントサイドで瞬間的にリダイレクトする</loc>（HTML）を参照のこと。
+									
+                            </p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H76"/>
+      <relatedtech idref="SVR1"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>他のウェブページへのリンクやプログラム参照を見つける。</p>
+        </item>
+        <item>
+          <p>各リンクやプログラム参照について、参照先のウェブページにクライアントサイドのリダイレクト用のコード（meta要素やスクリプトなど）が含まれている。</p>
+        </item>
+        <item>
+          <p>クライアントサイドのリダイレクトが生じるリンクやプログラム参照について、リダイレクトは時間制限も遅延もなく実装され、そのページにはリダイレクトに関する情報のみが含まれている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>2.を満たしていない、又は3.を満たしている。</p>
+      </expected-results>
+   </tests>
+</technique>

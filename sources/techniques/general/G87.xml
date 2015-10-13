@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G87">
+   <short-name>クローズド・キャプションを提供する</short-name>
+   <applicability>
+      <p>ユーザーエージェントがクローズドキャプションをサポートしている音声/映像のウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-captions" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-real-time-captions" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、聴覚に障害のある利用者、又は同期したメディアの発話の聞き取りに困難のある利用者に対して、コンテンツを目で見て、発話及び音が伝えている情報を読むための方法を提供する一方で、聴覚に障害のない人にはキャプションを見ることを強制しないようにすることである。この実装方法では、発話及び重要な音が伝えている情報を全てテキストに書き起こして、利用者の要求に応じてキャプションとして画面に表示させる。つまり、そのテキストは必要な時にだけ表示されることになる。そのためには、ユーザーエージェントがキャプションをサポートしている必要がある。</p>
+    <p>注記：キャプションは、字幕とは異なる。字幕は、発話内容のみをテキストで提供するものであって、重要な音の情報を含まない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>例1：耳の聞こえない利用者がインタラクティブな教材を使えるようにするため、大学の音声によるインタラクティブな教材すべてにキャプションが組み込まれ、キャプションをオンにするための手順説明が提供されている。</p>
+<p>例2：メディア会社のオンライン映画すべてにキャプションが含まれていて、クローズドキャプションを実装できるフォーマットで提供されている。</p>
+<p>例3：既存の映画に、同期情報を含む特別なキャプションファイルが提供されている。映画のウィンドウに同期したキャプションを、画面上の別ウィンドウで提供できるプレーヤーが使えるようになっている。</p>
+<p>例4：ローカルニュースのビデオにキャプションが付けられていて、使用しているプレーヤーに応じて映像上又は別ウィンドウにキャプションを表示することができる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <p>Guides to Captioning</p>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.dcmp.org/captioningkey/">Captioning Key:
+                    Guidelines and Preferred Techniques</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://joeclark.org/access/captioning/bpoc/">Best
+                    Practices in Online Captioning</loc>
+                </p>
+            </item>
+         </ulist>
+         <p>SMIL</p>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-smil/">Synchronized
+                    Multimedia Integration Language (SMIL) 1.0</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia
+                    Integration Language (SMIL 2.0)</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL-access/">Accessibility
+                    Features of SMIL</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL
+                    Templates</loc>
+                </p>
+            </item>
+         </ulist>
+         <p>Other Captioning</p>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/">National Center for Accessible
+                    Media</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G93"/>
+      <relatedtech idref="SM11"/>
+      <relatedtech idref="SM12"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>メディアプレーヤーのクロ―ズドキャプション機能をオンにする。</p>
+        </item>
+        <item>
+          <p>同期したメディアのコンテンツを見る。</p>
+        </item>
+        <item>
+          <p>（発話内容及び音の伝えている情報全ての）キャプションが表示されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

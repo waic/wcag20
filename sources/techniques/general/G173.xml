@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G173">
+   <short-name>映像の音声ガイド付きバージョンを提供する</short-name>
+   <applicability>
+      <p>音声及び映像をサポートするあらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、映像コンテンツに対して音声ガイドを提供する別のバージョンを用意することによって、目で見ることのできない利用者が視聴覚コンテンツを理解できるようにすることである。</p>
+    <p>今日のユーザーエージェントのほとんどは複数の音声トラックを一つにまとめることができないため、この実装方法では、映像コンテンツのオリジナルの音声トラックと付加的な音声ガイドを1つの音声トラックにまとめた別のバージョンを提供し、音声による追加の情報を同期したメディアに追加する。この追加された情報は、コンテンツを理解するにあたって重要な行動、登場人物、場面の変化、及びスクリーン上のテキスト（キャプション以外の文字）などに焦点を当てたものである。</p>
+    <p>この新しい情報によって、オリジナルの音声トラックに含まれた重要な音声情報が分かりにくくなってしまう（または、うるさい効果音によって新しい情報が不明瞭になってしまう）のでは役に立たないため、新しい情報は会話や効果音の合間に追加される。このため、コンテンツに追加できる情報の量は限られることになる。</p>
+    <p>ムービーに音声ガイドを一次的な音声トラックとして含んだ別のバージョンを提供することによって、発話内容を聞くだけでなく登場人物の発話内容からだけでは伝わらない文脈や映像の他の側面も聞く必要がある全盲の利用者にとって、このコンテンツをアクセシブルなものにすることができる。</p>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://service.real.com/help/library/guides/realone/ProductionGuide/HTML/htmfiles/realtext.htm">Realtext</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://msdn.microsoft.com/en-us/library/ms971327.aspx">SAMI 1.0</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G78"/>
+      <relatedtech idref="G69"/>
+      <relatedtech idref="SM6"/>
+      <relatedtech idref="SM7"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>主音声のトラックからだけでは理解できない重要な視覚的な情報を含むメディアを開く。</p>
+        </item>
+        <item>
+          <p>映像の音声を聞く。</p>
+        </item>
+        <item>
+          <p>発話の合間を用いて、視覚的に伝えているコンテンツに関する重要な情報を伝えている。</p>
+        </item>
+        <item>
+          <p>代替バージョン（音声ガイド付のバージョン）が別のページにある場合、そのバージョンへのリンクが提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

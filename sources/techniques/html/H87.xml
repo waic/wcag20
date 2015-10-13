@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H87">
+  <short-name>閲覧している画面の幅を狭めた際に、ユーザーエージェントによるテキストの折り返しを妨げない</short-name>
+  <applicability>
+    <p>HTML 及び XHTML</p>
+  </applicability>
+  <applies-to>
+    <success-criterion idref="visual-audio-contrast-visual-presentation" relationship="sufficient"/>
+  </applies-to>
+  <ua-issues/>
+  <description>
+    <p>この実装方法は、横スクロールが発生する状況を避けるのに役立つ。認知障害者や、支援技術を用いていないロービジョンの利用者といった多くの人々は、横スクロールを必要とするテキストブロックの扱いに大いに苦労する。実装方法には、画面の幅を狭めた際に、テキストの折り返しを妨げないことが含まれる。この問題に対する最もよい方法のひとつは、テキストブロックのコンテナの幅をパーセント値で指定することである。</p>
+    <p>HTMLとXHTMLを処理するユーザーエージェントは、コンテンツ制作者がピクセルやポイントといった絶対単位で幅を指定していない限り、狭めたブラウザ画面にあわせてテキストを自動的に折り返す。</p>
+  </description>
+  <examples>
+    <eg-group>
+      <description><p>ある新聞サイトでは、複数のカラム（列）に記事を掲載しており、ユーザーエージェントの画面幅にあわせてレイアウトが調整される。認知障害のある利用者は、カラムを自分の読みやすい幅に狭めることができる。</p>
+</description>
+    </eg-group>
+  </examples>
+  <resources>
+    <see-also>
+      <ulist>
+        <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/CSS2/box.html">CSS Box Model</loc>
+          </p>
+        </item>
+      </ulist>
+    </see-also>
+  </resources>
+  <related-techniques>
+    <relatedtech idref="C20"/>
+  </related-techniques>
+  <tests>
+    <procedure>
+      <olist>
+        <item>
+          <p>テキストブロックを含んだコンテンツを、一般的なブラウザで開く。</p>
+        </item>
+        <item>
+          <p>閲覧している画面を、スクリーン幅の4分の1に狭めてみる。</p>
+        </item>
+        <item>
+          <p>そのコンテンツで、1行のテキストを読むのに、横スクロールを必要としない。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>3.を満たしている。</p>
+        </item>
+      </ulist>
+    </expected-results>
+  </tests>
+</technique>

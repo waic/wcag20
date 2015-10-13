@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H43">
+   <short-name>id属性及びheaders属性を用いて、データテーブルのデータセルを見出しセルと関連付ける</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、（データテーブル内の）各データセルを適切な見出しセルと関連付けることである。まず、各データセル（<el>td</el>要素）に<att>headers</att>属性を付加する。次に、データセルの見出しとなるセルには<att>id</att>属性を指定する。データセルの<att>headers</att>属性で指定するのは、関連付けられる見出しセルの<att>id</att>属性値であり、2つ以上の<att>id</att>を含める場合はスペース区切りで列挙する。</p>
+    <p>この実装方法は、データセルを2つ以上の行見出し及び（又は）列見出しに関連付ける場合に利用する。こうすることで、<el>th</el>要素のみ、または<el>th</el>要素に<att>scope</att>属性を付けただけでは、データセルと見出しセルの関係が複雑すぎて定義できない場合でも、スクリーンリーダーは各データセルと関連付けられている見出しセルを読み上げることができる。また、表現形式が変わったとしても、これらの複雑な関係を知覚しやすくなる。</p>
+    <p>この実装方法を、レイアウトテーブルに利用することは推奨しない。なぜなら、レイアウトのためにテーブルを利用する際には、意味がないにも関らず何らかの関係性を示してしまうことになるからである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>行見出しが複数あるテーブル</head>
+      <code role="html401"><![CDATA[<table>
+   <tr>
+     <th rowspan="2" id="h">予習</th>
+     <th colspan="3" id="e">試験</th>
+     <th colspan="3" id="p">課題</th>
+   </tr>
+   <tr>
+     <th id="e1" headers="e">1</th>
+     <th id="e2" headers="e">2</th>
+     <th id="ef" headers="e">最終</th>
+     <th id="p1" headers="p">1</th>
+     <th id="p2" headers="p">2</th>
+     <th id="pf" headers="p">最終</th>
+   </tr>
+   <tr>
+    <td headers="h">15%</td>
+    <td headers="e e1">15%</td>
+    <td headers="e e2">15%</td>
+    <td headers="e ef">20%</td>
+    <td headers="p p1">10%</td>
+    <td headers="p p2">10%</td>
+    <td headers="p pf">15%</td>
+   </tr>
+  </table> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/tables.html#h-11.4.1">header information with data cells</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H39"/>
+      <relatedtech idref="H51"/>
+      <relatedtech idref="H63"/>
+      <relatedtech idref="H73"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>レイアウトテーブルかどうかを確認、テーブルのセルの内容が同じ行や列に含まれる他セルの内容と関係があるかどうか判断する。「いいえ」の場合、そのテーブルはレイアウトテーブルである。「はい」の場合、そのテーブルはデータテーブルである。</p>
+        </item>
+        <item>
+          <p>データテーブルである場合、2つ以上の行見出し及び（又は）列見出しと関連付けられているあらゆるデータセルの<att>headers</att>属性に、関連付けられている全ての見出しセルの<att>id</att>を指定している。</p>
+        </item>
+        <item><p>データテーブルでは、<att>id</att>属性または<att>headers</att>属性を指定しているあらゆるセルについて：</p>
+                
+                        <olist><item><p>データセルの<att>headers</att>属性で指定した各<att>id</att>が、見出しセルの<att>id</att>属性値と一致している。</p></item><item><p>データセルの<att>headers</att>属性で、そのデータセルと関連付けられた全ての見出しの<att>id</att>属性値を指定している。</p></item><item><p>全ての<att>id</att>が一意的であり、重複して使用していない（つまり、ページの中で2つ以上の要素が同じ<att>id</att>を持つことはできない）。</p></item></olist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>レイアウトテーブルの場合、どのセルにも<att>headers</att>属性又は<att>id</att>属性がない。</p>
+        </item>
+        <item>
+          <p>データテーブルで、<att>id</att>属性を指定した全てのセルについて、3.a、3.b、3.cを満たしている。</p>
+        </item>
+        <item>
+          <p>データテーブルで、2つ以上の行見出し及び（又は）列見出しと関連付けられた全てのデータセルについて、2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

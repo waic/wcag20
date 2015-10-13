@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F78">
+   <short-name>達成基準 2.4.7 の不適合事例：　要素のアウトライン及びボーダーを視覚的なフォーカスインジケーターを除去する又は非表示にするようにスタイル指定する</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-visible" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、ユーザーエージェントでデフォルトに指定されているキーボードフォーカスの視覚的なインジケーターが非表示になっている、又はコンテンツ制作者が提供する視覚的なフォーカスインジケーターが提供されずに、ページ上の他のスタイル指定により非表示にされる時に起こる不適合の条件について述べている。フォーカスインジケーターを非表示に指定することで、ユーザーエージェントはフォーカスインジケーターを表示しなくなる。他のスタイル指定によって、フォーカスインジケーターが提示されていても見づらくなることがある。例えばフォーカスのアウトラインと同じように見えるアウトライン、又はフォーカスインジケーターと同じ色になっているため識別できない太いボーダーといったものである。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>CSSを用いて、フォーカスインジケーターを表示しないようにする</head>
+      <description><p>下記のCSSの事例では、デフォルトのフォーカスインジケーターを除去しているため、視覚的に認識可能なフォーカスインジケーターを提供するという要求に不適合となる。</p>
+</description>
+      <code role="css"><![CDATA[:focus {outline: none}]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head>要素のアウトラインが、フォーカスインジケーターと視覚的に類似している</head>
+      <description><p>下記のCSSの事例は、リンクの周辺にフォーカスインジケーターと同じように見えるアウトラインを生成するものである。たとえユーザーエージェントがフォーカスインジケーターを表示しているとしても、利用者にはどの要素が実際にフォーカスを持つのか判別できない。</p>
+</description>
+      <code role="css"><![CDATA[a {outline: thin dotted black}]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head>要素が、フォーカスインジケーターを覆い隠すボーダーを持つ</head>
+      <description><p>下記のCSSの事例では、フォーカスインジケーターがボーダーの上に表示されたときに、フォーカスインジケーターに対してコントラストが十分でないボーダーをリンクの周辺に生成している。この場合、フォーカスインジケーターがボーダーのすぐ外側に表示されているが、両方とも黒で、ボーダーがフォカスインジケーターよりも太くなっている。これにより、「視覚的に認識可能」の定義を満たさない。</p>
+</description>
+      <code role="css"><![CDATA[a {border: medium solid black}]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>フォーカスを、ページ上のすべてのフォーカス可能な要素に合わせる。</p>
+        </item>
+        <item>
+          <p>フォーカスインジケーターが視覚的に認識可能である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準及を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

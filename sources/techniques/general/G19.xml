@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G19">
+   <short-name>どの1秒間においても、コンテンツに3回よりも多く閃光を放つコンポーネントがないことを確認する</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="seizure-does-not-violate" relationship="sufficient"/>
+      <success-criterion idref="seizure-three-times" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この実装方法の目的は、明るく、その面積が大きいと発作を起こすといわれている速度で閃光を放つことを防ぐことである。
+			   面積を拡大して見ている利用者もいるので、この実装方法ではコンテンツのサイズの大きさに関係なく、1秒間に3回より少ない閃光しか
+			   用いてはいけないとしている。</p>
+    <note>
+      <p class="prefix">注記１：この実装方法は、等級 Aの達成基準より厳しくなっている。
+				 しかし、検証は簡単で、等級Aの達成基準を満たしていることの検証にも用いることができる。
+				 等級Aの達成基準に適合していない閾値の場合、1秒間に3.5回以上の閃光があるからである。多くのコンテンツには閃光を放つものはなく、
+				 点滅があるコンテンツでも一部稀な場合を除いてこれほど速く点滅しない。よって、達成基準で示されているより複雑な検証を実行しなくてもすむようにするために、
+				 この実装方法にあるようにコンテンツが1秒間に1、2回、あるいは最大でも3回までしか閃光を放たないようにしておくとよい。</p>
+    </note>
+    <p>
+      <emph role="bold">3.5回の閃光又は7回の遷移の事例：</emph>
+    </p>
+    <ulist>
+      <item>
+        <p>始まりが暗い色－明るい色－暗い色－明るい色－暗い色－明るい色－暗い色－明るい色で終わる、又は</p>
+      </item>
+      <item>
+        <p>始まりが明るい色－暗い色－明るい色－暗い色－明るい色－暗い色－明るい色－暗い色で終わる</p>
+      </item>
+    </ulist>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G15"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>どの1秒間においても3回よりも多い閃光がない。</p>
+        </item>
+        <item>
+          <p>3回の閃光がある場合、1秒間の最後の明／暗の状態が初めと同じである。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.の両方を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

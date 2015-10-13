@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><title>Server-side Scripting Techniques  | Techniques for WCAG 2.0
+            </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/server-side-script"/><link rel="stylesheet" type="text/css" href="slicenav.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="bytech.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 実装方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><div class="div1"><a name="maincontent"/><h1 id="techs">Server-side Scripting Techniques for WCAG 2.0</h1><p>This Web page lists Server-side Scripting Techniques from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not replace the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p><p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p><p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p><div class="toc">
+<hr/><h2><a name="contents" id="contents"> </a>目次</h2><ul class="toc"><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#abstract">概要 </a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#status">この文書のステータス</a></li><li><a href="#SVR1">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</a></li><li><a href="#SVR2">SVR2: .htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="#SVR3">SVR3: HTTPリファラを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="#SVR4">SVR4: 適合している代替バージョンの表示に関する設定を利用者が行えるようにする</a></li><li><a href="#SVR5">SVR5: HTTPヘッダーで主たる自然言語を指定する</a></li></ul></div><hr/><div class="body"><div class="div1">
+		<div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR1" id="SVR1"> </a>SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</h2><div class="applicability"><h3 id="SVR1-applicability">適用（対象）</h3><div class="textbody"><p>サーバーサイド・スクリプト言語、及びリダイレクトためのURL又はURLパターンのあるサーバ環境設定ファイルを含む、サーバーサイドのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-no-extreme-changes-context">
+				達成基準 3.2.5 (Change on Request)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-no-extreme-changes-context">
+						How to Meet 3.2.5 (Change on Request)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/consistent-behavior-no-extreme-changes-context.html">
+						達成基準 3.2.5 (Change on Request)を理解する
+					</a></li></ul></li></ul><h3 id="SVR1-description">解説</h3><div class="textbody"><p>この実装方法の目的は、あるページ(利用者によって要求されたページ)が別のページにリダイレクトされたために、2つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかのユーザーエージェントは、利用者を指定された秒数の後に別のページにリダイレクトするHTMLの<code>meta</code>要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx番台のステータスコード、及び転送先のURLのLocationヘッダーを持つ適切な HTTPレスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しいURLのリクエストをする。</p></div><h3 class="small-head" id="SVR1-examples">事例</h3><h4 class="small-head" id="SVR1-ex1">事例 1: JSP/サーブレット</h4><div class="example"><div class="textbody"><p>Java サーブレット又はJavaServer Pages(JSP)では、開発者は <code>HttpServletResponse.sendRedirect(String url)</code> を使用できる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+…
+  response.sendRedirect("/newUserLogin.do");
+}</code></pre></div><div class="textbody"><p>このコードは、302ステータスコード(「Found」)及び新しいURLのLocationヘッダーを含むレスポンスをユーザーエージェントに送る。また、<code>response.sendError(int code, String message)</code> で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+…
+  response.sendError(response.SC_MOVED_PERMANENTLY, "/newUserLogin.do");
+}</code></pre></div><div class="textbody"><p>アプリケーションがセッションに依存するために、アプリケーションがURLのリライトに <code>HttpServletResponse.encodeURL(String url)</code> を使用するなら、メソッド <code>HttpServletResponse.encodeRedirectURL(String url)</code> が <code>HttpServletResponse.sendRedirect(String url)</code> の代わりに使用されるべきである。また、<code>HttpServletResponse.encodeURL(String url)</code> でURLをリライトして、それから <code>HttpServletResponse.sendRedirect(String url)</code> にこのURLを渡すことも可能である。</p></div></div><h4 class="small-head" id="SVR1-ex2">事例 2: ASP</h4><div class="example"><div class="textbody"><p>VBScriptで書かれたActive Server Page(ASP)では、開発者は <code>Response.Redirect</code> を使用できる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+Response.Redirect "newUserLogin.asp"</code></pre></div><div class="textbody"><p>又は</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>Response.Redirect("newUserLogin.asp")</code></pre></div><div class="textbody"><p>以下のコードは、特定のHTTPステータスコードを含む、より完全な例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>Response.Clear
+Response.Status = 301
+Response.AddHeader "Location", "newUserLogin.asp"
+Response.Flush
+Response.End</code></pre></div></div><h4 class="small-head" id="SVR1-ex3">事例 3: PHP</h4><div class="example"><div class="textbody"><p>PHPでは、開発者は <code>header</code> メソッドで生のHTTPヘッダーを送ることができる。以下のコードは、301ステータスコードと新しい場所を送る。ステータスが明示的に設定されないなら、リダイレクトのレスポンスはHTTPステータスコード302を送る。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?php
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: http://www.example.com/newUserLogin.php");
+?&gt;</code></pre></div></div><h4 class="small-head" id="SVR1-ex4">事例 4: Apache</h4><div class="example"><div class="textbody"><p>以下の例のようにして、開発者は Apache ウェブサーバがリダイレクトを処理するように構成できる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>redirect 301 /oldUserLogin.jsp http://www.example.com/newUserLogin.do</code></pre></div></div><h3 id="SVR1-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://www.w3.org/QA/Tips/reback">Use standard
+                                        redirects: do not break the back button!</a> (W3C QA Tip).
+                                </p></li><li><p> 
+                  <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3">HTTP/1.1 Status Code Definitions: Redirection 3xx</a>.
+                                </p></li><li><p> 
+                  <a href="http://www.somacon.com/p145.php">HTTP 301 Permanent
+                                        Redirection Techniques</a> by Shailesh N. Humbad. </p></li><li><p> 
+                  <a href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.3/javadoc/javax/servlet/http/HttpServletResponse.html">Interface javax.servlet.http.HttpServletResponse</a> in
+                                    the Java Servlets 2.3 API documentation. </p></li><li><p> 
+                  <a href="http://php.net/manual/en/function.header.php">header</a> in the PHP
+                                    Manual. </p></li><li><p> 
+                  <a href="http://httpd.apache.org/docs/2.2/mod/mod_alias.html">Apache Module mod_alias</a> in the <a href="http://httpd.apache.org/docs/2.2/">Apache HTTP Server
+                                        Version 2.2 Documentation</a> describes how redirects can
+                                    be specified in Apache 2.2. </p></li><li><p> 
+                  <a href="http://httpd.apache.org/docs/1.3/mod/mod_alias.html">Module mod_alias</a> in the <a href="http://httpd.apache.org/docs/1.3/">Apache HTTP Server
+                                        Version 1.3 Documentation</a> describes how redirects can
+                                    be specified in Apache 1.3. </p></li></ul></div><h3 id="SVR1-related-techs">関連する実装方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="SVR1-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR1-procedure">チェックポイント</h4><ol class="enumar"><li><p>別のウェブページへのリンク又はプログラムによる参照を見つける。</p></li><li><p>ウェブページ一式におけるURIのリンク又はプログラムによる参照において、参照されたウェブページがクライアントサイド・リダイレクトを引き起こすコード(例えば、meta要素又はスクリプト)を含んでいない。</p></li><li><p>ウェブページ一式におけるURIのリンクやプログラムによる参照において、参照されたURIがリダイレクトしない、又は、一時停止なしのサーバーサイド・リダイレクトをしない。</p></li></ol><h4 class="small-head" id="SVR1-results">判定基準</h4><ul><li><p>2. 及び 3. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR2" id="SVR2"> </a>SVR2: .htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</h2><div class="applicability"><h3 id="SVR2-applicability">適用（対象）</h3><div class="textbody"><p>.htaccessをサポートしているウェブサーバー（一般的にはApache）内にあるコンテンツで、コンテンツの適合するバージョンが不適合のバージョンの代替として提供されているもの</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#cc1">
+					Conformance Requirement 1 (Conformance Level)
+				</a></li></ul><h3 id="SVR2-description">解説</h3><div class="textbody"><p>この実装方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAGに適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替バージョンが提供されていれば、そのサイト全体が適合していることになる。適合要件 4は代替バージョンが不適合なコンテンツ又はそのURIからたどることができることを要求している。</p><p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この実装方法では制作者が不適合のコンテンツにその代替バージョンとして提供されるURI、又は不適合のバージョンと代替バージョン双方へのリンクを含むページからしかアクセスできないようにするためにApacheのモジュール「mod_access」を使う方法について説明する。</p></div><h3 class="small-head" id="SVR2-examples">事例</h3><h4 class="small-head" id="SVR2-ex1">事例 1</h4><div class="example"><div class="textbody"><p>次の.htaccessファイルは、「accessible.html」からのリクエストではない限り、「inaccessible.html」から「accessible.html」へのリダイレクトを要求するApacheのmod_redirectモジュールを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+# アクセシブルではないコンテンツへのリクエストがaccessible.html
+# という名前のファイルから来た場合、アクセシブルではないバージョン
+# の表示を許可する環境変数をセットする。
+SetEnvIf Referer .*(accessible.html)$ let_me_in
+&lt;FilesMatch ^(inaccessible.html)$&gt;
+    Order Deny,Allow
+    Deny from all
+    Allow from env=let_me_in
+&lt;/FilesMatch&gt;
+
+# リクエストがaccessible.html以外から来た場合、
+# エラーとしてアクセシブルなバージョンがある場所へと
+# リダイレクトする。
+ErrorDocument 403 /example_directory/accessible.html</code></pre></div></div><h4 class="small-head" id="SVR2-ex2">事例 2</h4><div class="example"><div class="textbody"><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつはWCAGに宣言しているレベルで適合しておらず、「jna（全くアクセシブルではない：Just Not Accessible）」というファイル拡張子を使用している。これらのファイルは、.htaccessファイルとともに全て「jna」というフォルダに保存されている。この.htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jnaの拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。/p&gt;
+		</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+# アクセシブルではないコンテンツへのリクエストが
+# http://example.com/documents/index.htmlにあるファイルから来た場合、
+# アクセシブルではないバージョンの表示を許可する環境変数をセットする。
+SetEnvIf Referer ^http://example.com/documents/index.html$ let_me_in
+&lt;FilesMatch ^(.*\.jna)$&gt;
+    Order Deny,Allow
+    Deny from all
+    Allow from env=let_me_in
+&lt;/FilesMatch&gt;
+
+# リクエストがhttp://example.com/documents/index.html以外から来た場合、
+# エラーとしてアクセシブルなバージョンがある場所へと
+# リダイレクトする。
+ErrorDocument 403 http://example.com/documents/index.html</code></pre></div></div><h3 id="SVR2-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+                  <a href="http://httpd.apache.org/docs/2.2/mod/mod_env.html">Apache Module mod_env</a> 
+               </p></li><li><p> 
+                  <a href="http://httpd.apache.org/docs/2.2/howto/auth.html">Authentication, Authorization and Access Control</a> 
+               </p></li><li><p> 
+                  <a href="http://httpd.apache.org/docs/2.0/howto/htaccess.html">Apache Tutorial: .htaccess files</a> 
+               </p></li></ul></div><h3 id="SVR2-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G136">G136: 適合していないウェブページの先頭に、適合している代替バージョンへのリンクを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G190">G190: 適合している代替バージョンへのリンクを、適合していないオブジェクトの直前で提供する、又は適合していないオブジェクトと関連付ける</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR3">SVR3: HTTPリファラを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR4">SVR4: 適合している代替バージョンの表示に関する設定を利用者が行えるようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li></ul></div><h3 id="SVR2-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR2-procedure">チェックポイント</h4><ol class="enumar"><li><p>宣言している適合レベルでWCAGに適合していないページで、.htaccessファイルの使用によってアクセシブルな代替バージョンが提供されているものを特定する。</p></li><li><p>不適合のコンテンツのURIを開く。</p></li><li><p>結果となるページが次のうちのひとつである：</p><ol class="enumla"><li><p>不適合のコンテンツの<a href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef">適合する代替バージョン</a></p></li><li><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></li></ol></li></ol><h4 class="small-head" id="SVR2-results">判定基準</h4><ul><li><p>3.a.又は3.b.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR3" id="SVR3"> </a>SVR3: HTTPリファラを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</h2><div class="applicability"><h3 id="SVR3-applicability">適用（対象）</h3><div class="textbody"><p>サーバサイドのスクリプトを用いて生成されたコンテンツで、コンテンツの適合したバージョンがHTTPリファラによって不適合バージョンの代替として提供されているもの</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#cc1">
+					Conformance Requirement 1 (Conformance Level)
+				</a></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.3.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/server-side-script#SVR3">User Agent Support Notes for SVR3</a>.</p></div><h3 id="SVR3-description">解説</h3><div class="textbody"><p>この実装方法の目的は、不適合及び適合したバージョンが両方提供されているときに、利用者がコンテンツのアクセシブルなバージョンを取得できることを保証することである。</p><p><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#cc1" class="gl-ref">適合要件 1</a>は、「<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替バージョン</a>」がある限り、不適合なページが適合の範囲内に含まれることを認めている。コンテンツ制作者にとって、不適合なコンテンツの中から適合しているコンテンツへのアクセシビリティ・サポーテッドなリンクを含むことは常に可能とはいえない。そこで、不適合のバージョンへは適合しているページからしか到達できないようにするために、コンテンツ制作者はサーバサイドのスクリプト技術（例：PHP、ASP、JSP）に依存しなければならなくなる。</p><p>この実装方法は、不適合のコンテンツへは、適合しているページからしか到達できないことを保証するための、<code>HTTP referer</code>により提供される情報の利用方法について説明する。<code>HTTP referer</code>ヘッダはユーザーエージェントによって設定され、（もしあれば）ユーザーエージェントが不適合なページを参照する際のページのURIを含む。</p><p>この方法を実装するために、コンテンツ制作者は不適合なページそれぞれについて、コンテンツの適合しているバージョンのURIを特定する。ページの不適合なバージョンへのリクエストを受け取った際に、サーバは<code>HTTP referer</code>ヘッダの値と、適合しているバージョンのURIを比較して、不適合バージョンへのリンクが適合しているバージョンからのものであるかどうかを判断する。不適合バージョンは<code>HTTP referer</code>が不適合バージョンのURIと一致したときにだけ提供される。それ以外の時には、利用者はコンテンツの適合したバージョンへとリダイレクトされる。HTTPリファラヘッダ内のURIを比較する際に、URI中にクエリーやtargetのような関連のない変化も考慮に入れる必要があることに注意すべきである。</p></div><h3 class="small-head" id="SVR3-examples">事例</h3><h4 class="small-head" id="SVR3-ex1">事例 1: インタラクティブな物理プロセスのデモ</h4><div class="example"><div class="textbody"><p>オンラインの物理の授業では、インタラクティブな物理プロセスのデモを提供するために専用のモデリング言語を使用する。そのモデリング言語のためのユーザーエージェントは支援技術との互換性がない。そのサイトは利用者が適合するプロセスとモデルの説明を含むページからインタラクティブなデモにアクセスしようとしない限り、サーバがそのリクエストを不適合バージョンへのリンクを含む、適合しているページへとリダイレクトする、HTTPリファラを使用するスクリプトを含んでいる。生徒は不適合のインタラクティブなバージョンへのアクセスを選択する事ができるが、そうしない生徒もプロセスについて学ぶことができる。</p></div></div><h4 class="small-head" id="SVR3-ex2">事例 2: PHPでHttpリファラを使う</h4><div class="example"><div class="textbody"><p>次の例は、この実装方法がPHPでどのように使われるかを説明している。conforming.phpとnon-conforming.phpという不適合なコンテンツへのアクセスが適合しているコンテンツからのみとなるようにするために連携する2つのファイルを含む。</p><p>conforming.php:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+	&lt;head&gt;
+    		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    		&lt;title&gt;適合しているコンテンツ&lt;/title&gt;
+    	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;これは適合しているページです。&lt;/h1&gt;
+		&lt;p&gt;ここから、&lt;a href="non-conforming.php"&gt;不適合なページ&lt;/a&gt;へと移動する
+		ことができます。&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre></div><div class="textbody"><p>non-conforming.php:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?php 
+// リクエストが「conforming.php」という文字列を含むファイルから来た場合、ページをレンダリングする。
+	if(stristr($_SERVER['HTTP_REFERER'], "conforming.php")) {
+?&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+		&lt;title&gt;不適合コンテンツ&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;これは不適合なページです。&lt;/h1&gt;
+		&lt;p&gt; &lt;?php echo $_SERVER['HTTP_REFERER']; ?&gt;から来たので、このページにあるコンテンツを見ることができます。
+	&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+}
+// 参照するページがconforming.phpではない場合、利用者を適合しているバージョンにリダイレクトする。
+else  {
+header("Location: conforming.php");
+}
+?&gt;</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SVR3/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SVR3/non-conforming.php" class="ex-ref">SVR3の実装サンプル</a></p></div></div><h3 id="SVR3-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G136">G136: 適合していないウェブページの先頭に、適合している代替バージョンへのリンクを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G190">G190: 適合している代替バージョンへのリンクを、適合していないオブジェクトの直前で提供する、又は適合していないオブジェクトと関連付ける</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR2">SVR2: .htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR4">SVR4: 適合している代替バージョンの表示に関する設定を利用者が行えるようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li></ul></div><h3 id="SVR3-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR3-procedure">チェックポイント</h4><p>不適合コンテンツに対して、WCAGに適合している代替バージョンが提供されている場合：</p><ol class="enumar"><li><p>宣言している適合レベルでWCAGに適合していないページで、HTTPリファラの使用によってアクセシブルな代替バージョンが提供されているものを特定する。</p></li><li><p>不適合のコンテンツのURIを開く。</p></li><li><p>開いたページが次のうちの一つである：</p><ol class="enumla"><li><p>不適合のコンテンツの<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合する代替バージョン</a></p></li><li><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></li></ol></li></ol><h4 class="small-head" id="SVR3-results">判定基準</h4><ul><li><p>3.a.又は3.b.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR4" id="SVR4"> </a>SVR4: 適合している代替バージョンの表示に関する設定を利用者が行えるようにする</h2><div class="applicability"><h3 id="SVR4-applicability">適用（対象）</h3><div class="textbody"><p>設定を保存するためにサーバサイドのスクリプトを用いて生成されたコンテンツ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#cc1">
+					Conformance Requirement 1 (Conformance Level)
+				</a></li></ul><h3 id="SVR4-description">解説</h3><div class="textbody"><p>この実装方法の目的は、ウェブページの適合している代替バージョンの設定を利用者が選択できるメカニズムを提供することである。</p><p>利用者が適合している代替バージョンを見ることができるような設定を提供するにはいくつかの方法が可能である。一般的な方法としては、ウェブサーバがページを修正する、又は利用者を代替バージョンにリダイレクトするのに使うセッション又は永続的なクッキーを設定するサーバサイドのプロセスのトリガーとなるリンクを提供する方法がある。他の方法には、利用者がウェブページ又はサービスにアクセスする際にサインインするシステムへのログイン情報の一部として利用者ごとの選択肢を提供する方法がある。</p><p>不適合なページで提供されるメカニズムは、代替バージョンを必要とする利用者が、それを探して利用するためにアクセシブルである必要がある。そのメカニズム自体は宣言しているアクセシビリティレベルに適合しているべきである。</p></div><h3 class="small-head" id="SVR4-examples">事例</h3><h4 class="small-head" id="SVR4-ex1">事例 1: 事例1：ユーザー設定を保存するためにセッション又は永続的なクッキーを設定する</h4><div class="example"><div class="textbody"><p>あるウェブサイトは、サイト内のページには「設定」ページへのリンクを提供している。このページには、サイトの代替バージョンを見るためのオプションがある。好みによってページのさまざまな見方があるかもしれないし、利用者はサイトの完全な代替バージョンを見たいかもしれない。その設定はサイト上で動画が含まれる部分ではキャプションを表示するものかもしれない。また、主となるサイトが、代替バージョンからしかわからないアクセシビリティ適合についての問題を含んでいるために提供されているのかもしれない。</p><p>あるウェブページの制作者はクッキーを使って設定を扱うことがある。それは、PHPのようなサーバサイドのスクリプトを用いて扱われるかもしれない。</p><p>設定のページは例えば次のように提供される：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+  &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+      &lt;head&gt;
+      &lt;title&gt;サイト設定&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;サイト設定&lt;/h1&gt;
+      &lt;form id="form1" name="site_prefs" method="post" action="pref.php"&gt;
+          &lt;fieldset&gt;
+              &lt;legend&gt;どのバージョンのサイトを見たいですか？&lt;/legend&gt;
+              &lt;input type="radio" name="site_pref" id="site_pref_reg" value="reg" /&gt;
+              &lt;label for="site_pref_reg"&gt;サイトの主バージョン&lt;/label&gt;
+              &lt;input type="radio" name="site_pref" id="site_pref_axx" value="axx" /&gt;
+              &lt;label for="site_pref_axx"&gt;アクセシビリティ適合バージョン&lt;/label&gt;
+          &lt;/fieldset&gt; 
+      &lt;/form&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></pre></div><div class="textbody"><p>フォームは処理のためにpref.phpのファイルへと送信される。クッキーが設定され、この単純な例では、利用者のブラウザはサイトのトップページへと移動する。</p><p>pref.php: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?php
+    if(isset($site_pref)) {
+        setcookie("site_pref",$site_pref, time() + (86400 * 30)); //30日に設定
+        header("location: http://www.example.com"); //トップページへとリダイレクト
+    }
+?&gt;</code></pre></div><div class="textbody"><p>トップページは利用者の設定を実装するコードから始まる。</p><p>index.php: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?
+if(isset($site_pref)) {
+	if($site_pref="axx") {
+	header("location: ./accessible/index.php");
+}
+?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+...</code></pre></div><div class="textbody"><p>ログインを必要とするシステムでは、設定は利用者のデータベース記録に保存され、ユーザーが見るページを生成するサーバサイドのスクリプトによって参照される。</p></div></div><h3 id="SVR4-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://php.net/setcookie">Setting and using cookies in PHP</a>
+               </p></li></ul></div><h3 id="SVR4-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G136">G136: 適合していないウェブページの先頭に、適合している代替バージョンへのリンクを提供する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G190">G190: 適合している代替バージョンへのリンクを、適合していないオブジェクトの直前で提供する、又は適合していないオブジェクトと関連付ける</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR2">SVR2: .htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR3">SVR3: HTTPリファラを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li></ul></div><h3 id="SVR4-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR4-procedure">チェックポイント</h4><ol class="enumar"><li><p>そのサイトのページの表示方法についての設定を変更する。</p></li><li><p>設定そのもの、又は設定できるページへのリンクが不適合なページそれぞれから到達できる。 </p></li><li><p>ウェブページが選択した設定に応じて表示される。</p></li><li><p>設定が行われた際に、ウェブページが宣言通りに適合している。</p></li><li><p>結果となるページが元のページの適合している代替バージョンとなっている。</p></li></ol><h4 class="small-head" id="SVR4-results">判定基準</h4><ul><li><p>2.及び3.を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR5" id="SVR5"> </a>SVR5: HTTPヘッダーで主たる自然言語を指定する</h2><div class="applicability"><h3 id="SVR5-applicability">適用（対象）</h3><div class="textbody"><p>サーバサイド技術（HTTPヘッダーを設定するサーバサイドのスクリプト言語及びサーバ設定ファイルを含む）</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#meaning-doc-lang-id">
+				達成基準 3.1.1 (Language of Page)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#meaning-doc-lang-id">
+						How to Meet 3.1.1 (Language of Page)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/meaning-doc-lang-id.html">
+						達成基準 3.1.1 (Language of Page)を理解する
+					</a></li></ul></li></ul><h3 id="SVR5-description">解説</h3><div class="textbody"><p>この実装方法の目的は、コンテンツの対象者を特定するために、ウェブページの主たる自然言語に関する情報を提供することである。HTTP Content-Language ヘッダーには、一つ以上の言語コードのリストを含めることが可能で、ユーザーエージェントとサーバとの間での言語ネゴシエーションに用いられる。ユーザーエージェントで言語設定が正しく設定されていれば、言語ネゴシエーションによってユーザーは自分が設定した自然言語に合うコンテンツを見つけることができる。</p><p>ただし、HTTP Content-Language ヘッダーは、コンテンツを処理するのに用いられる自然言語を特定するためのものではないことに注意しなければならない。コンテンツを処理する自然言語は、マークアップ言語のlang属性やxml:lang属性などによって特定することができる。</p><p>この実装方法は、lang属性またはxml:lang属性の例で明記されているように、文書の主たる自然言語をHTTP Content-Language ヘッダーで挙げるようにするものである。</p><p><font color="red">&lt;strong&gt;訳注：&lt;/strong&gt;</font>【WCAGワーキンググループに確認中】言語ネゴシエーション (language negotiation) というのは、Accept-Languageによるコンテント・ネゴシエーションのことを指していると思われますが、このときネゴシエーションに使われるのは "Content-Language" ではなく、クライアントが送る "Accept-Language" の値です。現在、原文の記述に誤りがないかどうかを確認中です。</p></div><h3 class="small-head" id="SVR5-examples">事例</h3><h4 class="small-head" id="SVR5-ex1">事例 1: Javaサーブレット及びJSPによるコンテンツの自然言語設定</h4><div class="example"><div class="textbody"><p>Java サーブレット又はJavaServer Pages(JSP)では、開発者は response.setHeader("Content-Language", lang)を用いることが可能で、"lang" は言語タグを表す（例えば、英語なら "en" ）：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException 
+{
+…
+  response.setHeader("Content-Language", "en");
+  PrintWriter out = response.getWriter();
+…
+}</code></pre></div></div><h4 class="small-head" id="SVR5-ex2">事例 2: PHPによるコンテンツの自然言語設定</h4><div class="example"><div class="textbody"><p>PHPでは、開発者は header メソッドで生のHTTPヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;?php  header('Content-language: fr');  …  ?&amp;gt;</code></pre></div></div><h3 id="SVR5-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><p> 
+            <a href="http://www.w3.org/International/questions/qa-http-and-lang">W3C Internationalization FAQ: HTTP and meta for language information</a>
+						   </p><p> 
+            <a href="http://www.w3.org/TR/2014/NOTE-i18n-html-tech-lang-20140603/#metadata">Declaring metadata about the language(s) of the intended audience</a> in Authoring HTML: Language declarations - W3C Working Group Note 3 June 2014. </p><p> 
+            <a href="http://www.ietf.org/rfc/rfc1945.txt">Hypertext Transfer Protocol -- HTTP/1.0 (IETF Request for Comments 1945)</a> (plain text) </p><p> 
+            <a href="http://www.ietf.org/rfc/rfc2616.txt">Hypertext Transfer Protocol -- HTTP/1.1 (IETF Request for Comments 2616)</a> (plain text) </p><p> 
+            <a href="http://php.net/manual/en/function.header.php">header</a> in the PHP Manual. </p></div><h3 id="SVR5-related-techs">関連する実装方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H57">H57: html要素の言語属性を用いる</a></li></ul></div><h3 id="SVR5-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR5-procedure">チェックポイント</h4><ol class="enumar"><li><p>Live HTTP Header ビューアを用いて、"Content-Language" ヘッダーの値を確認する。</p></li><li><p>その値がウェブページの主たる自然言語と合致している。</p></li></ol><h4 class="small-head" id="SVR5-results">判定基準</h4><ul><li><p>2. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><hr class="divider" title="End of techniques"/></div></div></div><div class="back"/></div><div class="footer"><p class="copyright">This Web page is part of <a href="Overview.html">Techniques for WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
+              </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

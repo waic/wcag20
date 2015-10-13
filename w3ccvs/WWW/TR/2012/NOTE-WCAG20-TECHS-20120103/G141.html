@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>G141: 見出しを用いてウェブページを構造化する | WCAG 2.0 実装方法集
+              </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/G141.html"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G140: 情報と構造を表現から分離して、異なる表現を可能にする" href="G140.html"><strong>前: </strong>
+        Technique G140</a></li><li><a title="G142: ズーム機能をサポートする一般に入手可能なユーザーエージェントのあるウェブコンテンツ技術を用いる" href="G142.html"><strong>次: </strong>
+        Technique G142</a></li></ul><div class="navtoc"><p>On this page:</p><ul id="navbar"><li><a href="#G141-disclaimer">Important Information about Techniques</a></li><li><a href="#G141-applicability">適用（対象）</a></li><li><a href="#G141-description">解説</a></li><li><a href="#G141-examples">事例</a></li><li><a href="#G141-resources">参考リソース</a></li><li><a href="#G141-related-techs">関連する実装方法</a></li><li><a href="#G141-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="G141" id="G141"> </a>G141: 見出しを用いてウェブページを構造化する</h1><div id="G141-disclaimer"><h2>Important Information about Techniques</h2><p>See <a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p></div><div class="applicability"><h2 id="G141-applicability">適用（対象）</h2><div class="textbody"><p>セクションで構成されたコンテンツのあるウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する実装方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
+				達成基準 1.3.1 (Info and Relationships)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (Info and Relationships)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (Info and Relationships)を理解する
+					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-headings">
+				達成基準 2.4.10 (Section Headings)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-headings">
+						How to Meet 2.4.10 (Section Headings)
+					</a></li><li><a href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/navigation-mechanisms-headings.html">
+						達成基準 2.4.10 (Section Headings)を理解する
+					</a></li></ul></li></ul><h2 id="G141-description">解説</h2><div class="textbody"><p>この実装方法の目的は、それぞれのセクションにそれを識別できる見出しがついているようにすることである。<a href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#content-structure-separation-programmatic">達成基準1.3.1</a>では見出しがプログラムで解釈可能な方法でマークアップされていることを要求している。</p><p>HTMLにおいては、これは見出し要素(h1, h2, h3, h4, h5, h6)によって実現されうる。これによりユーザーエージェントは自動的にセクションの見出しを識別できる。他のウェブコンテンツ技術では、また異なる方法で見出しを識別する。ページ内の移動と文書の全体的構造の理解を助けるには、コンテンツ制作者は見出しを適切にネストさせるべきである(たとえばh1にはh2が続き、h2にはh2かh3が続き、h3にはh3またはh4が続き……といったように)。</p></div><h2 class="small-head" id="G141-examples">事例</h2><h3 class="small-head" id="G141-ex1">事例 1: HTMLのページを構造化するために用いられた見出し</h3><div class="example"><div class="textbody"><p>ある調理法を紹介するページでは、h1要素により全体とタイトルを示し、h2要素で大項目としてサラダ油による調理とバターによる調理を示し、h3要素で油による調理の詳細なサブセクションを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;title&gt;調理法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;調理法&lt;/h1&gt;
+... ここにはテキストが入る ...
+&lt;h2&gt;サラダ油による調理&lt;/h2&gt;
+... セクションのテキストが入る ...
+&lt;h3&gt;ソテー&lt;/h3&gt;
+....
+&lt;h3&gt;油揚げ&lt;/h3&gt;
+&lt;h2&gt;バターによる調理&lt;/h2&gt;
+... セクションのテキストが入る ...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div><h2 id="G141-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</a>
+               </p></li><li><p>
+                  <a href="http://accessibility.psu.edu/headingshtml">Heading Tags</a>
+               </p></li></ul></div><h2 id="G141-related-techs">関連する実装方法</h2><div class="textbody"><ul><li><a href="H42.html">H42: h1要素～h6要素を用いて、見出しを特定する</a></li></ul></div><h2 id="G141-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G141-procedure">チェックポイント</h3><ol class="enumar"><li><p>ページの内容がセクションに分けられている。</p></li><li><p>それぞれのセクションに見出しがある。</p></li></ol><h3 class="small-head" id="G141-results">判定基準</h3><ul><li><p>2. を満たしている。</p></li></ul><p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G140: 情報と構造を表現から分離して、異なる表現を可能にする" href="G140.html"><strong>前: </strong>
+        Technique G140</a></li><li><a title="G142: ズーム機能をサポートする一般に入手可能なユーザーエージェントのあるウェブコンテンツ技術を用いる" href="G142.html"><strong>次: </strong>
+        Technique G142</a></li></ul><div class="footer"><p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集&amp;nbsp;WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
