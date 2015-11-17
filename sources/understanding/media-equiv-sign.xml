@@ -4,128 +4,92 @@
 <div2 role="extsrc" id="media-equiv-sign">
    <head>1.2.6</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to enable people who are deaf or hard of hearing and who are fluent in a sign language to understand the content of the audio track of synchronized media presentations. Written text, such as that found in captions, is often a second language. Because sign language provides the ability to provide intonation, emotion and other audio information that is reflected in sign language interpretation, but not in captions, sign language interpretation provides richer and more equivalent access to synchronized media. People who communicate extensively in sign language are also faster in sign language and synchronized media is a time-based presentation. 
-            
-          </p>
-      <div4 role="benefits">
-         <head/>
-         <ulist>
-            <item>
-               <p>People whose human language is a sign language sometimes have limited reading ability. These individuals may not be able to read and comprehend the captions and thus require a sign language interpretation to gain access to the synchronized media content.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <ulist>
-         <item>
-            <p> 
-               <emph role="bold"> Example 1.</emph> A corporation is making an important announcement to all of its employees. The meeting will be held in the main headquarters and streamed to the Web. A sign language interpreter is provided at the meeting location. The live video includes a full view of the sign language interpreter as well as the person presenting.</p>
-         </item>
-         <item>
-            <p> 
-               <emph role="bold"> Example 2.</emph> The same announcement described in example 1 is also Webcast to remote employees. Since there is only one display available for this, the sign language interpreter is shown in the corner of the display.</p>
-         </item>
-         <item>
-            <p> 
-               <emph role="bold"> Example 3.</emph> A university is providing an on-line version of a particular lecture by creating a synchronized media presentation of the professor delivering the lecture. The presentation includes video of the professor speaking and demonstrating a science experiment. A sign language interpretation of the lecture is created and presented on the Web with the synchronized media version.</p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
-							     </p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://www.nidcd.nih.gov/health/hearing/pages/asl.aspx">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 1.2.6</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G54"
-                       linktype="general">Including a sign language interpreter in the corner of the video stream</loc>
-								       </p>
-            </item>
-            <!-- BBC: Not complete as of PR, so commented out. item>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、デフ又は音声が聞こえにくい利用者で手話の分かる利用者が、同期したメディアのプレゼンテーションにおける音声トラックのコンテンツを理解できるようにすることである。例えば、キャプションに書かれているテキストというのは、第二言語であることがよくある。手話は、イントネーション、感情、及び、キャプションには反映されないが手話通訳には反映されるその他の音声情報を提供するので、手話通訳は同期したメディアの内容に対してキャプションよりも豊富でより等価な情報を提供することができる。また、手話で頻繁にコミュニケーションを図っている利用者にとっては、手話で提供された情報のほうがより早く理解できるので、同期したメディアが時間の経過に伴って変化するプレゼンテーションとなる。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>普段使う言語が手話である利用者は、読解力に限界があることがある。そういった利用者は、キャプションを読んで理解することができない恐れがあり、同期したメディアのコンテンツを利用するには手話を必要とする。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">事例 1.</emph>ある企業が、従業員すべてに対して重要な発表をしている。総会は本社で行われていて、その模様がウェブでストリーミング配信されている。総会の場には手話通訳者がいて、ライブの映像にはプレゼンテーションをしている人物及び手話通訳者の全身が映し出されている。</p></item>
+	<item><p>
+                <emph role="bold">事例 2.</emph>事例 1 にあるのと同じ発表が、遠隔地にいる従業員にはウェブキャストで届けられている。画面が一つしかないため、手話通訳者は画面のコーナーに映し出されている。</p></item>
+	<item><p>
+                <emph role="bold">事例 3.</emph>ある大学が、講義をする教授の同期したメディアによるプレゼンテーションを作成して、講義のオンライン版を提供している。そのプレゼンテーションには、化学の実験を解説して実演している教授の映像がある。講義内容の手話通訳を制作して、ウェブ上で同期したメディア版とあわせて提供している。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.nidcd.nih.gov/health/hearing/asl.asp">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc>
+              </p></item>
+	<item><p>
+              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sys-consulting.co.uk/downloads/esign/">eSign Avatar Signing Plugin for Internet Explorer</loc>.
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.2.6 の実装方法及び不適合事例  － 収録済の音声コンテンツの手話通訳</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G54" linktype="general">ビデオストリームに手話通訳者を入れる</loc>
+                </p></item><!-- BBC: Not complete as of PR, so commented out. item>
                 <p>Providing a new page that has the video with the sign language interpretation of the audio track (future link) 
                 </p>
               </item-->
-            <item role="smil">
-               <p> 
-                  <loc href="G81"
-                       linktype="general">Providing a synchronized video of the sign language interpreter that can be displayed in a different viewport or overlaid on the image by the player</loc> using one of the following techniques
-    </p>
-               <ulist>
-                  <item>
-                     <p>
-											             <loc href="SM13" linktype="smil">Providing sign language interpretation through synchronized video streams in SMIL 1.0</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="SM14" linktype="smil">Providing sign language interpretation through synchronized video streams in SMIL 2.0</loc>
-										           </p>
-                  </item>
-               </ulist>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 1.2.5</head>
-         <div5>
-            <head>Metadata Techniques</head>
-            <ulist>
-               <item>
-                  <p> Using metadata to associate sign language alternatives of a video to enable choice of sign language (future link)</p>
-                  <ulist>
-                     <item>
-                        <p>EXAMPLE: Providing, in metadata, URI(s) that point to  several English sign language translations (ASL, SASL, BSL, Auslan,  ISL, NZSL) of a Web page. </p>
-                     </item>
-                  </ulist>
-               </item>
-            </ulist>
-         </div5>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-      </div4>
-   </div3>
+	<item role="smil"><p>
+次の実装方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G81" linktype="general">プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する</loc>
+    </p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM13" linktype="smil">SMIL 1.0 の同期したビデオ・ストリームで手話通訳を提供する</loc>
+                    </p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM14" linktype="smil">SMIL 2.0 の同期したビデオ・ストリームで手話通訳を提供する</loc>
+                    </p></item></ulist></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.2.6 でさらに対応が望まれる実装方法（参考）</head>
+<div5>
+<head>メタデータの実装方法</head>
+<ulist>
+	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする（リンク追加予定）</p><ulist><item><p>事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する</p></item></ulist></item>
+</ulist>
+</div5>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 1.2.6 のよくある不適合事例 </head>
+</div4>
+</div3>
 </div2>

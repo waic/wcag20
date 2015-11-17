@@ -4,122 +4,74 @@
 <div2 id="visual-audio-contrast-dis-audio" role="extsrc">
    <head>1.4.2</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>Individuals who use screen reading software can find it hard to hear the speech output if there is other audio playing at the same time. This difficulty is exacerbated when the screen reader's speech output is software based (as most are today) and is controlled via the same volume control as the sound. Therefore, it is important that the user be able to turn off the background sound. Note: Having control of the volume includes being able to reduce its volume to zero.</p>
-      <note>
-         <p>Playing audio automatically when landing on a page may affect a screen reader user's ability to find the mechanism to stop it because they navigate by listening and automatically started sounds might interfere with that navigation. Therefore, we discourage the practice of automatically starting sounds (especially if they last more than 3 seconds), and encourage that the sound be <emph>started</emph> by an action initiated by the user after they reach the page, rather than requiring that the sound be <emph>stopped</emph> by an action of the user after they land on the page.</p>
-      </note>
-      <p>See also <specref ref="visual-audio-contrast-noaudio"/>.</p>
-      <div4 role="benefits">
-         <head/>
-         <ulist>
-            <item>
-               <p>Individuals who use screen reading technologies can hear the screen reader without other sounds playing. This is especially important for those who are hard of hearing and for those whose screen readers use the system volume (so they cannot turn sound down and screen reader up).</p>
-            </item>
-            <item>
-               <p>This Success Criterion also benefits people who have difficulty focusing on visual content (including text) when audio is playing.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <ulist>
-         <item>
-            <p>An audio file begins playing automatically when a page is opened. However, the audio can be stopped by the user by selecting a "silent" link at the top of the page.</p>
-         </item>
-         <item>
-            <p>
-                A Flash splash page with sound that plays and then stops in less than 3 seconds.
- 
-                
-              </p>
-         </item>
-         <item>
-            <p>
-                A Flash splash page with sound that plays automatically includes a control at the top that allows users to turn the sound off. 
-                
-              </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 1.4.2</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G60"
-                       linktype="general">Playing a sound that turns off automatically within three seconds</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G170"
-                       linktype="general">Providing a control near the top of the Web page that turns off sounds that play automatically</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G171"
-                       linktype="general">Playing sounds only on user request</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="SL24"
-                       linktype="silverlight"/>
-               </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="FLASH18"
-                       linktype="flash">Providing a control to turn off sounds that play automatically in Flash</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="FLASH34"
-                       linktype="flash">Using screen reader detection to turn off sounds that play automatically</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="SL3"
-                       linktype="silverlight"/>
-               </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 1.4.2</head>
-         <ulist>
-            <item>
-               <p>
-        Providing a site-wide preference to turn off audio in addition to providing a control near the top of the Web page that turns off sounds that play automatically (future link)
-    </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F23"
-                       linktype="failure">Failure due to playing a sound longer than 3 seconds where there is no mechanism to turn it off</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-				    <loc href="F93" linktype="failure"/>
-               </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>スクリーンリーダーを使用している利用者は、同時に他の音声が再生されていると、スクリーンリーダーによる読み上げ音声が聞き取りづらくなる。スクリーンリーダーの読み上げ音声が、（今日ではほとんどがそうであるように）ソフトウェアをベースにしたもので、システム全体と同じ音量コントロールによって制御されていると、この状況はさらに悪化する。そのため、重要なのは、利用者が背景音の再生をオフにできることである。注記： 音量コントロールには、その音量をゼロまで下げられることを含む。</p>
+
+<note>
+<p>利用者があるページを閲覧し始めた時に音声が自動再生されると、スクリーンリーダーの利用者はその音声を停止させるメカニズムを探しづらくなることがある。なぜなら、スクリーンリーダーの利用者は、読み上げ音声を聞きながらナビゲートしており、自動的に開始した音声がそのナビゲーションを邪魔してしまうかもしれないからである。そのため、WCAG ワーキンググループでは、音声を自動的に再生しないことを推奨し（特に、3秒よりも長く続く場合）、利用者がそのページを閲覧し始めた後、利用者によって音声の再生を<emph>停止</emph>させるのではなく、利用者の起こしたアクションによって音声が<emph>再生</emph>されることを勧める。</p>
+</note>
+
+<p><specref ref="visual-audio-contrast-noaudio"/>も参照のこと。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>スクリーンリーダーを使用している利用者が、他に再生されている音声に邪魔されることなく、スクリーンリーダーの音声を聞くことができるようになる。難聴の利用者及びシステム全体の音量制御を用いているスクリーンリーダーの利用者にとっては（システム全体の音量を下げて、スクリーンリーダーの音量を上げるということができないため）特に重要である。</p></item><item><p>また、この達成基準は、音声が再生されていると、視覚的なコンテンツ（テキストを含む）に集中するのが困難な利用者に対しても役に立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>ページを開いたときに、音声ファイルの再生が自動的に開始される。しかし、利用者が、そのページの先頭にある「音を消す」というリンクを選択することで、その音声を停止させることができる。</p></item>
+	<item><p>
+音声が再生されるFlashのスプラッシュページがあり、3秒以内にその音声が停止する。</p></item>
+	<item><p>
+音声が自動的に再生されるFlashのスプラッシュページの先頭に、利用者が音声を停止できるコントロールがある。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.4.2 の実装方法及び不適合事例 － 音声制御</head>
+<div4 role="sufficient">
+<head/><olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G60" linktype="general">音声の再生を3秒以内に自動的に停止する</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G170" linktype="general">自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G171" linktype="general">利用者の要求に応じてのみ、音声を再生する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL24.html" linktype="silverlight">Using AutoPlay to Keep Silverlight Media from Playing Automatically</loc></p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH18" linktype="flash">Flash で自動的に再生される音声をオフにするコントロールを提供する</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH34" linktype="flash">スクリーンリーダー検出機能を使用して、自動的に再生される音声をオフにする</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL3.html" linktype="silverlight">Controlling Silverlight MediaElement Audio Volume</loc></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.4.2 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>
+自動的に再生される音を停止できる、ウェブページの先頭付近に提供されるコントロールに加えて、音声を停止できる広域サイト設定を提供する（リンク追加予定）
+    </p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 1.4.2 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F23" linktype="failure">達成基準 1.4.2 の不適合事例 － 3秒よりも長く音声を再生していて、音声を停止するメカニズムを提供していない</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

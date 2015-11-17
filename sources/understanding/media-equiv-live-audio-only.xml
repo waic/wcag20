@@ -4,91 +4,62 @@
 <div2 role="extsrc" id="media-equiv-live-audio-only">
    <head>1.2.9</head>
    <div3 role="intent">
-      <head>Intent</head>
-      <p>The intent of this Success Criterion is to make information conveyed by live audio, such as video conferencing, live speeches and radio Webcasts, accessible through the use of a text alternative. A live text caption service will enable live audio to be accessible to people who are deaf or hard of hearing, or who cannot otherwise hear the audio. Such services use a trained human operator who listens in to what is being said and uses a special keyboard to enter the text with only a small delay. They are able to capture a live event with a high degree of fidelity, and also to insert notes on any non spoken audio which is essential to understanding the event. A transcript is sometimes a possibility if the live audio is following a set script; but a live caption service is preferred because it plays out at the same pace as the audio itself, and can adapt to any deviations from the script that might occur.</p>
-      <p>Using untrained operators, or providing a transcript which differs markedly from what actually happens would not be considered meeting this Success Criterion. </p>
-      <p>This success criterion was intended to apply to broadcast of audio and is not intended to require that two-way audio calls between two or more individuals through web apps must be captioned regardless of the needs of users. Responsibility for providing captions would fall to the content providers (the callers) or the “host” caller, and not the application.</p>
-   </div3>
-   <div3 role="examples">
-      <head>Examples</head>
-      <ulist>
-         <item>
-            <p>A public relations firm uses Web based caption services to cover live events; the output from the service is incorporated in a sub frame of the Web page which includes the streaming audio control.</p>
-         </item>
-         <item>
-            <p>A live radio play of a fringe theatre group is being broadcast to the Web. As the actors stick largely to a set script, and the budget for the program is small, the producers provide a link (with the playwright's permission) to the script of the play.</p>
-         </item>
-         <item>
-            <p>A streaming audio server uses a media format which can also accommodate text and graphics, such as Flash or Silverlight. A stenographer is used to create live captions at an event, and these are mixed on the fly to produce live captions in the media stream which can be viewed by the media player. </p>
-         </item>
-         <item>
-            <p>A CEO is to give a press release by telephone to the media in response to a breaking news story, the audio is being recorded and streamed over the internet, but due to time constraints a Web captioning service cannot be set up in time. As the press release is a set statement which the CEO will be reading out, the company simultaneously provides the transcript of the release.</p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.captioningandsubtitling.com.au/work/internet/">Captioning and Subtitling International</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://webaim.org/techniques/captions/realtime">WebAIM Real time captioning resource</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 1.2.9</head>
-      <div4 role="sufficient">
-         <head>Sufficient</head>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G151"
-                       linktype="general">Providing a link to a text transcript of a prepared statement or script if the script is followed</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G150"
-                       linktype="general">Providing text alternatives for live audio-only content</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G157"
-                       linktype="general">Incorporating a live audio captioning service into a Web page</loc>
-								       </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Optional Techniques (Advisory) for 1.1.2</head>
-         <ulist>
-            <item>
-               <p> Using metadata to associate text transcriptions with audio-only content (future link)</p>
-               <example>
-                  <p>Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file.</p>
-               </example>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Failures</head>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、例えばテレビ会議のような、ライブの音声、ライブの発話、及びラジオのウェブキャストが伝えている情報を、代替テキストを用いることによってアクセシブルにすることである。ライブのキャプション付加サービスは、デフ又は音声の聞こえづらい利用者、あるいは他のやり方で音声を聞くことのできない利用者に対してライブの音声をアクセシブルにすることが可能であろう。そういったサービスでは、訓練された人間のオペレーターが、話の内容を聞きながら、特殊なキーボードを用いてほんの少しの遅延だけでテキストを入力している。オペレーターは、かなり忠実にライブの出来事をテキストで記録することができる。また、内容を理解する上で不可欠な発話以外の音声に関する注記も挿入することができる。ライブの音声が予め用意された現行通りのものであれば、書き起こしテキストを事前に準備しておけることもある。しかし、ライブのキャプション付加サービスのほうが好まれる。なぜなら、キャプションが音声自体と同じペースで表示され、台本にはないことが起こったとしてもそれに対処できるからである。</p><p>訓練されていないオペレーターを使用したり、実際に起こっていることとは明らかに違う書き起こしテキストを提供したりしている場合は、この達成基準を満たしているとはいえない。</p>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.2.9 の事例</head>
+<ulist>
+	<item><p>ある広告会社が、ウェブベースのキャプションサービスを利用して、ライブのイベントのキャプションを提供している。そのサービスによるキャプションは、ストリーミングの音声制御コントロールのあるウェブページのサブフレームに表示されている。</p></item>
+	<item><p>フリンジ劇場のライブのラジオ劇が、ウェブで放送されている。俳優たちが大部分は用意された台本通りに演じていて、番組の予算が限られているため、（脚本家の許諾を得た上で）プロデューサーは劇の台本へのリンクを提供している。</p></item>
+	<item><p>ストリーミングの音声サーバーは、例えば Flash や Silverlight のように、テキスト及びグラフィックも使用可能なメディア形式を利用している。速記者が、あるイベントでライブのキャプションを書き起こしていて、それがその場で組み込まれて、メディアプレーヤーで閲覧可能なメディア配信のライブのキャプションとして使われている。</p></item>
+	<item><p>ある CEO が、ニュース速報の報道に反応して、報道メディア向けに電話による記者発表を行っている。その音声を録音して、インターネット上でも配信したが、時間の制約があって、ウェブ・キャプション付加サービスを間に合わせることができなかった。CEO がそこで読み上げる記者発表の内容は予め準備されていたので、その会社は発表内容の書き起こしテキストを同時に提供することにした。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.captioningandsubtitling.com/webcapt.htm">Captioning and Subtitling International</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/captions/realtime.php">WebAIM Real time captioning resource</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.2.9 の実装方法及び不適合事例 － ライブの音声しか含まないコンテンツの代替</head>
+<div4 role="sufficient">
+<head>十分な</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G151" linktype="general">台本通りに進行する場合、予め準備された原稿、又は台本を書き起こした、テキストのトランスクリプトへのリンクを提供する</loc></p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G150" linktype="general">ライブの音声しか含まないコンテンツに、テキストベースの代替を提供する</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G157" linktype="general">ライブ音声のキャプション提供サービスをウェブページに組み込む</loc></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.2.9 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p>
+<example><p>音声ファイルの様々な書き起こしテキスト（英語、フランス語、ドイツ語）を指し示すURIを、メタデータの中で、提供する。</p></example></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 1.2.9 のよくある不適合事例</head>
+</div4>
+</div3>
 </div2>

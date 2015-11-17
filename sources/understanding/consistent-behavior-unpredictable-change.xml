@@ -4,149 +4,75 @@
 <div2 id="consistent-behavior-unpredictable-change" role="extsrc">
    <head>3.2.2</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that entering data or selecting a form control has predictable effects. Changing the setting of any user interface component is changing some aspect in the control that will persist when the user is no longer interacting with it. So checking a checkbox, entering text into a text field, or changing the selected option in a list control changes its setting, but activating a link or a button does not. Changes in context can confuse users who do not easily perceive the change or are easily distracted by changes. Changes of context are appropriate only when it is clear that such a change will happen in response to the user's action. 
-            </p>
-      <note>
-         <p>This Success Criterion covers changes in context due to changing the setting of a control. Clicking on links or tabs in a tab control is activating the control, not changing the setting of that control.</p>
-      </note>
-      <note>
-         <p>What is meant by "component" and "user interface component" here is also sometimes called "user interface element".</p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>This Success Criterion helps users with disabilities by making interactive content more predictable. Unexpected changes of context can be so disorienting for users with visual disabilities or cognitive limitations that they are unable to use the content. 
-              </p>
-            </item>
-            <item>
-               <p>Individuals who are unable to detect changes of context are less likely to become disoriented while navigating a site. For example:
-              </p>
-               <ulist>
-                  <item>
-                     <p>Individuals who are blind or have low vision may have difficulty knowing when a visual context change has occurred, such as a new window popping up. In this case, warning users of context changes in advance minimizes confusion when the user discovers that the back button no longer behaves as expected. 
-                  </p>
-                  </item>
-               </ulist>
-            </item>
-            <item>
-               <p>Some individuals with low vision, with reading and intellectual disabilities, and others who have difficulty interpreting visual cues may benefit from additional cues in order to detect changes of context.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-                  A form is provided for creating calendar entries in a Web based calendaring and scheduling application.  Along with the standard fields for subject, time and location, there is a set of radio buttons to select the type of calendar entry to create.  The calendar entry type can be meeting, appointment or reminder.  If the user selects the radio for meeting, additional fields are displayed on the page for entering the meeting participants. Different fields appear if the reminder button is chosen. Because only parts of the entry change and the overall structure remains the same the basic context remains for the user.  
-    </p>
-         </item>
-         <item>
-            <p>
-                A form contains fields representing US phone numbers. All
-of the numbers have a three digit area code followed by a three digit prefix and finally a four digit number, and each part of the phone number is entered into a separate field. When the user completes the entry of one field and enter the first digit of the next field, the focus automatically moves to the next field of the phone number. This behavior of phone fields is described for the user at the beginning of the form. 
-                
-                
-              </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.2.2</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p> 
-                  <loc href="G80"
-                       linktype="general">Providing a submit button to initiate a change of context</loc> using a technology-specific technique listed below</p>
-               <ulist>
-                  <item>
-                     <p>
-											             <loc href="H32" linktype="html">Providing submit buttons</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="H84" linktype="html">Using a button with a select element to perform an action (future link)</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="FLASH4"
-                             linktype="flash">Providing submit buttons in Flash</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-                        <loc href="PDF15" linktype="pdf"/>
-                     </p>
-                  </item>
-                  <item>
-                     <p>
-                        <loc href="SL10"
-                             linktype="silverlight"/>
-                     </p>
-                  </item>
-               </ulist>
-            </item>
-            <item>
-               <p>
-									         <loc href="G13"
-                       linktype="general">Describing what will happen before a change to a form control is made</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="SCR19"
-                       linktype="script"/>
-               </p>
-            </item>
-         </olist>
-         <note>
-            <p>A change of content is not always a <loc href="context-changedef"
-                    linktype="glossary">change of context</loc>. This success criterion is automatically met if changes in content are not also changes of context.</p>
-         </note>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.2.2</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="G201"
-                       linktype="general">Giving users advanced warning when opening a new window</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F36"
-                       linktype="failure">Failure due to automatically submitting a form and presenting new content without prior warning when the last field in the form is given a value</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F37"
-                       linktype="failure">Failure due to launching a new window without prior warning when the status of a radio button, check box or select list is changed</loc>
-								       </p>
-            </item>
-            <!-- <item>
-               <p>
-									         <loc href="F76"
-                       linktype="failure">Failure of 3.2.2 due to providing instruction material about the change of context by change of setting in an user interface element at a location that users may bypass</loc>
-								       </p>
-            </item> -->
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、データ入力又はフォーム・コントロールの選択の結果を予測可能にすることである。ユーザーインタフェース要素の設定を変更すると、コントロールの状態を変化させ、その状態は利用者がそのユーザーインタフェース要素とのやりとりを終了した後も持続する。つまり、チェックボックスを選択する、又はテキストフィールドにテキストを入力すると、コンポーネントの設定を変更するが、リンク又はボタンを押下したときはそうはならない。状況の変化は、その変化を知覚しづらい利用者、又は変化によって気を取られやすい利用者を混乱させてしまう恐れがある。状況の変化が起こってもよいのは、そのような変化が<phrase>利用者の操作に反応して起こること</phrase>が明らかなときだけである。</p>
+
+<note>
+<p>この達成基準の対象となるのは、コントロールの設定を変更したことによる状況の変化である。リンクやタブ・コントロール中のタブのクリックは、コントロールの選択・実行であり、コントロールの設定変更ではない。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 3.2.2 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、インタラクティブなコンテンツをより予測可能にすることによって、障害のある利用者に役立つ。予期しない状況の変化によって、視覚障害又は認知能力の低下している利用者はとても混乱してしまうので、コンテンツを利用できなくなってしまう。</p></item>
+	<item><p>状況の変化に気づくことができない利用者は、サイトをナビゲートしている間に混乱した状態になりにくい。例えば、次のような利用者が当てはまる：</p><ulist><item><p>全盲の利用者、又はロービジョンの利用者は、新しいウィンドウがポップアップで開くなどのように、視覚的な状況の変化がいつ起こるのかを把握するのが困難なことがある。この場合、前もって利用者に状況の変化が起こることを知らせておくと、利用者が「戻る」ボタンがいつものように動作しないことに気づいたときの混乱を最小限に抑えることができる。</p></item></ulist></item>
+	<item><p>ロービジョンの利用者、読字及び知的障害のある利用者、そして視覚的な手がかりを解釈しづらい利用者は、コンテンツ制作者が手がかりを追加することによって、状況の変化に気づくようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.2.2 の事例</head>
+<ulist>
+	<item><p>ウェブベースのカレンダー及びスケジュール管理アプリケーションに、カレンダーへのエントリーを作成するフォームがある。件名、時刻、場所を入力する標準的なテキストフィールドとあわせて、カレンダーへのエントリーの種類を選択するラジオボタン一式がある。その種類には、会議、アポイントメント、又はリマインダなどがある。利用者が「会議」のラジオボタンを選択すると、会議の参加者を入力するためのテキストフィールドがページ上に追加で表示される。また、「リマインダ」を選択すれば、異なったテキストフィールドが表示される。この場合、入力部分だけが変化し、全体の構造は同じままなので、基本的に状況は変化していないといえる。</p></item>
+	<item><p>フォームに、米国の電話番号を入力するテキストフィールドがある。すべての電話番号には、3桁のエリアコードがあり、その後に3桁の局番、そして最後に4桁の番号があり、それぞれの番号は別々のテキストフィールドに入力するようになっている。利用者があるテキストフィールドの入力を終えて、次のテキストフィールドの最初の桁を入力しようとすると、フォーカスが自動的に次のフィールドへ移動する。このふるまいは、フォームの先頭で利用者に対して説明されている。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.2.2 の実装方法及び不適合事例 － ユーザーインタフェース要素における状況の変化</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>以下に挙げる技術特有の手法を用いて<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G80" linktype="general">G80： 状況の変化を開始する実行ボタンを提供する</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H32" linktype="html">H32: 実行ボタンを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H84" linktype="html">H84: select要素とボタンを併用して、アクションを実行するようにする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH4" linktype="flash">Flash で送信ボタンを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF15" linktype="pdf">PDF フォームで送信フォームアクションのある送信ボタンを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL10.html" linktype="silverlight">Implementing a Submit-Form Pattern in Silverlight</loc></p></item></ulist></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G13" linktype="general">Describing what will happen before a change to a form control is made</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR19" linktype="script">状況の変化を引き起こすことのないように、select要素のonchangeイベントを用いる</loc>
+                </p></item>
+</olist>
+
+<note>
+<p>コンテンツの変化が常に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="context-changedef" linktype="glossary">状況の変化</loc>であるとは限らない。コンテンツの変化が状況の変化ではない場合、この達成基準は自動的に満たされていることになる。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.2.2 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>新規のウィンドウを開く場合には、利用者に前もって警告する（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 3.2.2 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F36" linktype="failure">F36： フォームの最後のコントロールに入力すると、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F37" linktype="failure">F37: ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F76" linktype="failure">F76: 利用者が見逃してしまうような位置に、ユーザーインタフェース要素の設定を変更することにより起こる状況の変化に関する説明文を提供している</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

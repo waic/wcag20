@@ -4,37 +4,35 @@
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="media-equiv">
    <head>1.2</head>
    <div2 id="media-equiv-intent" role="glintent">
-      <head>Intent</head>
-      <p>The purpose of this guideline is to provide access to time-based and synchronized media.This includes media that is:</p>
-      <ulist>
-         <item>
-            <p>audio-only</p>
-         </item>
-         <item>
-            <p>video-only </p>
-         </item>
-         <item>
-            <p>audio-video </p>
-         </item>
-         <item>
-            <p>audio and/or video combined with interaction </p>
-         </item>
-      </ulist>
-      <p>To make it easy for authors to quickly determine which success criteria apply to their content, the type of media each success criterion applies to is included in its short name. </p>
-      <p>For <emph role="bold">audio-only</emph> or <emph role="bold">video-only</emph> media, you only need to apply the success criteria that say "<emph role="bold">audio-only</emph>" or "<emph role="bold">video-only</emph>" in their short name. If your media is not <emph role="bold">audio-only</emph> or <emph role="bold">video-only</emph>, then all the rest of the success criteria apply.</p>
-      <p>Media can also be <emph role="bold">live</emph> or <emph role="bold">prerecorded</emph>. Each of the success criterion short names clearly tells you if the success criterion applies to <emph role="bold">live</emph> or <emph role="bold">prerecorded</emph> media. </p>
-      <p>
-         <term>Synchronized media</term> is defined in the glossary as:</p>
-      <p id="copysynchronizedmediadef"/>
-      <p>Note that an audio file accompanied by interaction is covered here, as is a video-only file that involves interaction. These are covered because interaction must take place at a particular time. Having a text transcript that said, "for more information, click now," would not be very helpful since the reader would have no idea when the audio said, "now." As a result, synchronized captions would be needed.</p>
-      <p>Sometimes, there is so much dialogue that audio description cannot fit into existing pauses in the dialogue. The option at Level A to provide an alternative for time-based media instead of audio description for synchronized media would allow access to all of the information in the synchronized media. This option also allows access to the visual information in non-visual form when audio description is not provided for some other reason. </p>
-      <p>For synchronized media that includes interaction, interactive elements (for example links) could be embedded in the alternative for time-based media. </p>
-      <p>This guideline also includes (at Level AAA) sign language interpretation for synchronized media as well as an approach called extended audio description. In extended audio description, the video is frozen periodically to allow more audio description to take place than is possible in the existing pauses in the dialogue. This is a case where higher-level Success Criteria build upon the requirements of lower-level Success Criterion with the intention of having cumulative, progressively stronger, requirements. 
-          
-        </p>
-   </div2>
+   <head>Intent</head>
+
+<p>このガイドラインの目的は、時間の経過に伴って変化する、同期したメディアへのアクセスを提供することである。具体的には、次のようなメディアがある：</p>
+<ulist>
+	<item><p>音声しか含まない</p></item>
+	<item><p>映像しか含まない</p></item>
+	<item><p>音声と映像を含む</p></item>
+	<item><p>インタラクションを組み合わせた音声と映像、又は音声あるいは映像のどちらかを含む</p></item>
+</ulist>
+
+<p>コンテンツ制作者が、そのコンテンツにはどの達成基準が適用されるのかを素早く容易に判断できるように、各達成基準が適用されるメディアの種類をその簡潔な名前で示している。</p>
+
+<p><emph role="bold">音声しか含まない</emph>メディア又は<emph role="bold">映像しか含まない</emph>メディアに対しては、達成基準の名前に「<emph role="bold">音声しか含まない</emph>」又は「<emph role="bold">映像しか含まない</emph>」とあるものを適用するだけでよい。そのメディアが、<emph role="bold">音声しか含まない</emph>メディア又は<emph role="bold">映像しか含まない</emph>メディアではない場合、残りの達成基準すべてが適用される。</p><p>そして、メディアは、<emph role="bold">ライブ</emph>又は<emph role="bold">収録済</emph>のどちらかである。その達成基準が<emph role="bold">ライブ</emph>又は<emph role="bold">収録済</emph>のどちらのメディアに適用されるのかが、各達成基準の簡潔な名前ではっきりと分かるようになっている。</p>
+<p><term>同期したメディア</term>は、用語集で次のように定義されている：</p>
+
+<p id="copysynchronizedmediadef"/>
+
+<p>インタラクションに付随する音声ファイルは、インタラクションを伴う映像しか含まないファイルと同様に、このガイドラインの対象であることに留意されたい。これらが対象となっているのは、インタラクションが特定のタイミングで発生しなければならないからである。例えば、「より多くの情報を知るためには、今、クリックしてください」というトランスクリプトをつけるのは、全く役に立たない。なぜなら、利用者にはその音声がどのタイミングで「今」と言ったのかが分からないからである。そのため、同期したキャプションが必要となる。</p>
+<p>時には、音声ガイドを発話内にある合間にぴったり収めることができないくらい沢山の発話があることがある。同期したメディアの音声ガイドではなく、時間の経過に伴って変化するメディアの代替を提供するレベル A での選択肢は、同期したメディアにあるすべての情報へのアクセスを可能にすることである。また、この選択肢は、何らかの理由で音声ガイドが提供されていないとき、視覚的でない形態での視覚的な情報へのアクセスも可能にする。</p>
+<p>インタラクションを伴う同期したメディアの場合、時間の経過に伴って変化するメディアの代替の中にインタラクティブな要素（例えば、リンク）を埋め込むことが可能である。</p>
+<p>また、このガイドラインには、（レベル AAA で）同期したメディアへの手話通訳というアプローチの他に、拡張した音声ガイドと呼ばれるアプローチがある。拡張した音声ガイドでは、映像を一時的に停止させて、実際に存在する発話の合間で可能な量よりも多くの音声ガイドを提供することができる。これは、要件を積み上げていくようにして徐々に強めていくという意図があって、低いレベルの達成基準の上にそれよりも高いレベルの達成基準を設けている一例である。</p>
+</div2>
+
+<div2 id="media-equiv-advisory" role="gladvisory">
+<head>ガイドライン 1.2 の参考にすべき実装方法</head>
+</div2>
+
    <div2 id="media-equiv-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
+    	  <head>Advisory techniques for Guideline N.N</head>
    </div2>
    <xi:include href="media-equiv-av-only-alt.xml"/>
    <xi:include href="media-equiv-captions.xml"/>

@@ -5,24 +5,16 @@
    <head>2.3</head>
    <div2 id="seizure-intent" role="glintent">
       <head>Intent</head>
-      <p>Some people with seizure disorders can have a seizure triggered by flashing visual content. Most people are unaware that they have this disorder until it strikes. In 1997, a cartoon on television in Japan sent over 700 children to the hospital, including about 500 who had seizures<!-- <bibref
-					ref="EPFND"
-					/>-->. Warnings do not work well because they are often  missed, especially by children who may in fact not be able to read them.</p>
-      <!--<ednote>
-					<edtext>Previous statement had a reference to an Epilepsy Foundation document but that specific document has been taken down. An alternate reference on their site should be found.</edtext>
-				</ednote>-->
-      <p>The objective of this guideline is to ensure that content that is marked as conforming to WCAG 2.0 avoids the types of flash that are most likely to cause seizure when viewed even for a second or two.</p>
-   </div2>
-   <div2 id="seizure-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>
-        Ensuring that content does not violate spatial pattern thresholds (future link)
-    </p>
-         </item>
-      </ulist>
-   </div2>
+
+<p>光過敏性発作の疾患のある利用者は、閃光を放つ視覚的なコンテンツによって発作を引き起こす恐れがある。ほとんどの利用者は、発作が起こすまでは自分がこの疾患を持っていることに気づいていない。1997年に、日本でテレビのアニメ番組が700人以上の子どもたちを病院に搬送させる事態を招き、そのうち約500人が発作を引き起こした [EPFND] 。利用者は警告をよく見逃すので、警告はあまり効果がない。特に、それを実際に読むことができない子どもに対してはそうである。</p><p>このガイドラインの意図は、WCAG 2.0 に適合しているとされるコンテンツが、1～2秒間であってもそれを見た利用者が発作を引き起こしそうな閃光の類を避けるようにすることである。</p>
+</div2>
+
+<div2 id="seizure-advisory" role="gladvisory">
+<head>Advisory techniques for Guideline N.N</head>
+<ulist>
+	<item><p>コンテンツは空間分布の閾値を超えないように注意する（リンク追加予定）</p></item>
+</ulist>
+</div2>
    <xi:include href="seizure-does-not-violate.xml"/>
    <xi:include href="seizure-three-times.xml"/>
 </div1>

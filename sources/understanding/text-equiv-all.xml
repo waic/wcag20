@@ -4,821 +4,284 @@
 <div2 role="extsrc" id="text-equiv-all">
    <head>1.1.1</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to make information conveyed by non-text content accessible through the use of a text alternative.  Text alternatives are a primary way for making information accessible because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech. A person who cannot hear an audio file can have the text alternative displayed so that he or she can read it. In the future, text alternatives will also allow information to be more easily translated into sign language or into a simpler form of the same language.</p>
-      <div4>
-         <head>
-              Note on CAPTCHA
-            </head>
-         <p>
-            <abbr expansion="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHAs</abbr> are a controversial topic in the accessibility community. As is described in the paper <loc href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>, CAPTCHAs intrinsically push the edges of human abilities in an attempt to defeat automated processes. Every type of CAPTCHA will be unsolvable by users with certain disabilities. However, they are widely used, and the Web Content Accessibility Guidelines Working Group believes that if CAPTCHAs were forbidden outright, Web sites would choose not to conform to WCAG rather than abandon CAPTCHA. This would create barriers for a great many more users with disabilities. For this reason the Working Group has chosen to structure the requirement about CAPTCHA in a way that meets the needs of most people with disabilities, yet is also considered adoptable by sites. Requiring two different forms of CAPTCHA on a given site ensures that most people with disabilities will find a form they can use.</p>
-         <p>Because some users with disabilities will still not be able to access sites that meet the minimum requirements, the Working Group provides recommendations for additional steps. Organizations motivated to conform to WCAG should be aware of the importance of this topic and should go as far beyond the minimum requirements of the guidelines as possible. Additional recommended steps include:</p>
-         <ulist>
-            <item>
-               <p>Providing more than two modalities of CAPTCHAs</p>
-            </item>
-            <item>
-               <p>Providing access to a human customer service representative who can bypass CAPTCHA</p>
-            </item>
-            <item>
-               <p>Not requiring CAPTCHAs for authorized users</p>
-            </item>
-         </ulist>
-      </div4>
-      <div4>
-         <head>Additional information</head>
-         <p>Non-text content can take a number of forms, and this Success Criterion specifies how each is to be handled.</p>
-         <p> 
-            <emph role="bold">
-For non-text content that is not covered by one of the other situations listed below,</emph>
- such as charts, diagrams, audio recordings, pictures, and animations, text alternatives can make the same information available in a form that can be rendered through any modality (for example, visual, auditory or tactile).  Short and long text alternatives can be used as needed to convey the information in the non-text content.  Note that <emph role="bold">
-prerecorded
- audio-only</emph> and 
-<emph role="bold"> prerecorded
- video-only</emph> files are covered here.  <emph role="bold">
-Live-audio-only</emph> and <emph role="bold">
-Live-video-only</emph> files are covered below (see 3rd paragraph following this one).  </p>
-         <p> 
-            <emph role="bold">
-For non-text content that is a control or accepts user input</emph>, such as images used as submit buttons, image maps or complex animations, a name is provided to describe the purpose of the non-text content so that the person at least knows what the non-text content is and why it is there.</p>
-         <p> 
-            <emph role="bold">
-Non-text content that is time-based media</emph>
-              is made accessible through <specref ref="media-equiv"/>.  However, it is important that users know what it is when they encounter it on a page so they can decide what action if any they want to take with it.  A text alternative that describes the time-based media and/or gives its title is therefore provided.  </p>
-         <p> 
-            <emph role="bold">
- For Live Audio-only and live video-only content</emph>, it can be much more difficult to provide text alternatives that provide equivalent information as live audio-only and live video-only content. For these types of non-text content, text alternatives provide a descriptive label.  
+      <head>この達成基準の意図</head>
+<p>この達成基準の意図は、非テキストコンテンツにより伝達される情報を、代替テキストを用いることによってアクセシブルにすることである。代替テキストは、利用者の要求に合わせてあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）を通じて描画可能なので、情報をアクセシブルにする上では最もよい方法である。代替テキストを提供することにより、情報が様々なユーザーエージェントによって様々な方法で描画されることが可能になる。例えば、写真を見ることのできない利用者は、合成音声を用いてその代替テキストを読み上げさせることができる。また、音声ファイルを聞くことのできない利用者は、それを読むことができるように代替テキストを表示させることができる。将来的には、代替テキストによって、情報を手話や同じ自然言語のより平易なものに、より容易に変換することができるようにもなるだろう。 </p>
+
+<div4>
+<head>CAPTCHA に関する注記</head>
+<p><abbr expansion="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA </abbr>は、アクセシビリティのコミュニティにおいて、議論を呼ぶトピックの一つである。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>という参考資料 (W3C Working Group Note) でも解説されているように、CAPTCHA はもともと、機械的な自動処理を排除して、人間による操作であることを確認するためのものである。特定の障害のある利用者は、どんな種類の CAPTCHA も解釈できないであろう。しかし、CAPTCHA は広く使われており、WCAG ワーキンググループは、もし CAPTCHA が完全に禁止されてしまったとしたら、ウェブサイトでは CAPTCHA の使用を見合わせるのではなく、WCAG に適合しないという選択が行われるだろうと考えた。こうなることは、障害のある、かなり多くの利用者に対しての障壁を生むことになる。この理由から、ワーキンググループは、障害のある利用者のほとんどの要求を満たし、なおかつ ウェブサイトが採用可能だと考えられる方法で、CAPTCHA に関する要件を定めることにした。異なる2つの形態の CAPTCHA をサイト上で提供することを要件として、障害のある利用者のほとんどが自分の利用できるものを見つけられるようにしたのである。</p>
+
+<p>中には、最低限の要件を満たしているサイトにもアクセスできない、障害のある利用者もいるため、ワーキンググループは追加の手段を講じることを推奨している。WCAG に適合したいと考える組織は、このトピックの重要性を認識すべきであり、可能な限りこのガイドラインの最低要件より多くの策を講じるべきである。推奨される追加の手段としては、以下のものがある：</p>
+
+<ulist>
+	<item><p>CAPTCHA を3つ以上のモダリティで提供する</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする</p></item>
+	<item><p>許可した利用者には CAPTCHA を要求しない</p></item>
+</ulist>
+</div4>
+
+<div4>
+<head>補足情報</head>
+<p>非テキストコンテンツには様々な形態があり、この達成基準ではそれぞれをどのように扱うべきかを特定している。</p>
+
+<p><emph role="bold">以下に挙げる状況の他のどれにも該当しない非テキストコンテンツ</emph>
+（例：チャート、ダイアグラム、録音した音声、写真、そしてアニメーション）の場合、代替テキストは同じ情報をあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）によって描画可能な形態で入手可能にすることができる。簡潔な、及び長めの代替テキストは、非テキストコンテンツにある情報を伝達するのに必要に応じて用いられる。<emph role="bold">
+収録済の音声しか含まない</emph>ファイル及び<emph role="bold">収録済の映像しか含まない</emph>ファイルは、ここで扱われている。<emph role="bold">
+ライブの音声しか含まない</emph>ファイル及び<emph role="bold">
+ライブの映像しか含まない</emph>ファイルは、以下で扱われている（この段落後にある3つ目の段落を参照のこと）。</p>
+
+<p><emph role="bold">
+コントロールあるいは利用者の入力を受け入れる非テキストコンテンツ</emph>
+（例：実行ボタンとして用いられる画像、イメージマップ、あるいは複雑なアニメーション）の場合、その非テキストコンテンツが何で、なぜそこにあるのかが、利用者にとって、少なくとも分かるようにするために、識別名を提供してその非テキストコンテンツの目的を説明する。</p><p>
+              <emph role="bold">
+時間の経過に伴って変化するメディアである非テキストコンテンツ</emph>は、
+<specref ref="media-equiv"/>によりアクセシブルになる。しかし、重要なのは利用者がページ上で発見したときにそれが何であるかが分かり、それにより利用者がどのようにしたいかを判断できるようにすることである。そのため、時間の経過に伴って変化するメディアを説明し、場合によってはそのタイトルを示す代替テキストを提供する。</p>
+
+<p><emph role="bold">
+ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツ</emph>の場合、それらと同等の情報を示す代替テキストを提供することは、はるかに困難なこともありうる。このようなタイプの非テキストコンテンツに対しては、代替テキストで内容の分かるラベルを提供する。
 </p>
-         <p> 
-            <emph role="bold">
-                Sometimes a test or exercise must be partially or completely presented in non-text format.</emph>  Audio or visual information is provided that cannot be changed to text because the test or exercise must be conducted using that sense.  For example, a hearing test would be invalid if a text alternative were provided.  A visual skill development exercise would similarly make no sense in text form.  And a spelling test with text alternatives would not be very effective.  For these cases, text alternatives should be provided to describe the purpose of the non-text content; of course, the text alternatives would not provide the same information needed to pass the test. </p>
-         <p> 
-            <emph role="bold">
-Sometimes content is primarily intended to create a specific sensory experience</emph> that words cannot fully capture. Examples include a symphony performance, works of visual art etc. For such content, text alternatives at least identify the non-text content with a descriptive label and where possible, additional descriptive text. If the reason for including the content in the page is known and can be described it is helpful to include that information. </p>
-         <p> 
-            <emph role="bold">Sometimes there are non-text exercises that are used to prove you are human.</emph> To avoid spam robots and other software from gaining access to a site a device called a CAPTCHA is used. These usually involve visual or auditory tasks that are beyond the current capabilities of Web robots. Providing a text alternative to them would however make them operable by Robots, thus defeating their purpose. In this case a text alternative would describe the purpose of the CAPTCHA, and alternate forms using different modalities would be provided to address the needs of people with different disabilities.</p>
-         <p> 
-            <emph role="bold">
-Sometimes there is non-text content that really is not meant to be seen or understood by the user.</emph> Transparent images used to move text over on a page; an invisible image that is used to track usage statistics; and a swirl in the corner that conveys no information but just fills up a blank space to create an aesthetic effect are all examples of this. Putting alternative text on such items just distracts people using screen readers from the content on the page. Not marking the content in any way, though, leaves users guessing what the non-text content is and what information they may have missed (even though they have not missed anything in reality). This type of non-text content, therefore, is marked or implemented in a way that assistive technologies (AT) will ignore it and not present anything to the user.</p>
-      </div4>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>This Success Criterion helps people who have difficulty perceiving visual content. Assistive technology can read text aloud, present it visually, or convert it to braille.</p>
-            </item>
-            <item>
-               <p>Text alternatives may help some people who have difficulty understanding the meaning of photographs, drawings, and other images  (e.g., line drawings, graphic designs, paintings, three-dimensional representations), graphs, charts, animations, etc.
-    </p>
-            </item>
-            <item>
-               <p>
-People who are deaf, are hard of hearing, or who are having trouble understanding audio information for any reason can read the text presentation. Research is ongoing regarding automatic translation of text into sign language. 
-                </p>
-            </item>
-            <item>
-               <p>
-People who are deaf-blind can read the text in braille.
-    </p>
-            </item>
-            <item>
-               <p>
-Additionally, text alternatives support the ability to search for non-text content and to repurpose content in a variety of ways.
-    </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <olist>
-         <item>
-            <p>
-								       <emph role="bold">A data chart</emph>
-							     </p>
-            <p>A bar chart compares how many widgets were sold in June, July, and August. The short label says, "Figure one - Sales in June, July and August." The longer description identifies the type of chart, provides a high-level summary of the data, trends and implications comparable to those available from the chart. Where possible and practical, the actual data is provided in a table. 
+
+<p><emph role="bold">
+試験あるいは演習が、部分的又は全体的に非テキストのフォーマットで提示されなければならないことがある。</emph>その試験あるいは演習は聴覚や視覚を用いて行う必要があるため、テキストに変換することのできない音声あるいは視覚的な情報が提示されるからである。例えば、ヒアリングテストは、もし代替テキストが提供されたとしたら意味を成さないだろう。視覚能力向上のための演習も、テキスト形式では同様に無意味となってしまう。また、代替テキストのあるスペルの試験もあまり効果がない。このような場合には、代替テキストはその非テキストコンテンツの目的を説明するために提供されるべきである。もちろん、その代替テキストは、試験に合格するために必要な情報と同じものは提供しないことになる。</p><p>
+              <emph role="bold">
+特定の感覚的な体験を生むことを主目的にしたコンテンツ</emph>で、言葉では完全に表現できないものもある。例としては、交響楽団の演奏、視覚的な芸術作品などが挙げられる。そのようなコンテンツの場合、代替テキストは、内容の分かるラベルと可能ならば補足説明のテキストによって、その非テキストコンテンツを少なくとも確認できるようにする。もしそのコンテンツがそのページにある理由が明らかで、それが説明できるのであれば、そういった情報も含めると役に立つ。
+</p>
+
+<p><emph role="bold">利用者が人間であることを証明するために用いられる、非テキストの仕掛け。</emph>スパムロボットやその他のソフトウェアがサイトにアクセスしてくるのを回避するために、CAPTCHA と呼ばれている仕掛けが用いられる。CAPTCHA には、今日の ウェブロボットの能力を超えた視覚的あるいは聴覚的な課題が通常は用意されている。しかし、それに対して代替テキストを提供することは、ロボットでも操作可能なものにしてしまい、その目的を果たせなくなってしまう。このような場合、代替テキストは、CAPTCHA の目的を説明し、かつ、様々な障害のある利用者の要求に対処するために、異なるモダリティを用いた代替形式が提供される。</p>
+
+<p><emph role="bold">
+利用者が視覚的に確認したり、理解したりすることを意図していない非テキストコンテンツ。</emph>ページ上でテキストを移動させるために用いる透過画像、ログ解析のために用いる非表示の画像、情報は何も伝えていないが単に空白を埋めて見栄えをよくするための渦 (swirl) などが、この例として挙げられる。このような画像に代替テキストを記述すると、スクリーンリーダーの利用者がそのページのコンテンツを理解する妨げになるだけである。しかし、その非テキストコンテンツを全くマークアップしなければ、利用者にその非テキストコンテンツが何なのか、どんな情報を見逃してしまったのかを推測させてしまうことになる（実際には何も見逃していなかいのであるが）。そのため、このような非テキストコンテンツについては、支援技術 (AT) がそれを無視して、かつ利用者には何も提示しないような方法でマークアップあるいは実装する。</p>
+</div4>
+
+<div4 role="benefits">
+<head>達成基準 1.1.1 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、視覚的なコンテンツを知覚するのが困難な利用者の役に立つ。支援技術が、テキストを読み上げたり、視覚的に提示したり、点字に変換したりすることができるようになる。</p></item>
+	<item><p>代替テキストは、写真、図面、その他の画像（例：　線画、グラフィックデザイン、絵画、3D表現）、グラフ、チャート、アニメーションなどの意味を理解するのが困難な利用者の役に立つことがある。	</p></item>
+	<item><p>
+デフ、音声の聞こえづらい、あるいは何らかの理由で音声情報を理解するのが困難な利用者が、テキストでの表現を読むことができるようになる。テキストを手話に自動変換する研究が現在進められている。</p></item>
+	<item><p>盲ろうの利用者が、テキストを点字で読むことができるようになる。
+    </p></item>
+	<item><p>加えて、代替テキストは非テキストコンテンツの検索を可能とし、コンテンツを様々な方法で再利用できるようにする。
+    </p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.1.1 の事例</head>
+<olist>
+	<item><p>
+                <emph role="bold">データのグラフ</emph>
+              </p>
+	<p>6月、7月、そして8月にどれだけの数の商品が売れたかを比較している棒グラフがある。簡潔なラベルには、「図1：　6月、7月、8月の売上」と書かれている。長めの説明には、グラフの種類が示されていて、そのグラフから見てとれるものに相当する、データの概要、傾向や意味合いが提供されている。可能な場合には、実際のデータが表で提供されている。
                 
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">An audio recording of a speech</emph>
-							     </p>
-            <p>The link to an audio clip says, "Chairman's speech to the assembly." A link to a text transcript is provided immediately after the link to the audio clip.
-    </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">An animation that illustrates how a car engine works</emph>
-							     </p>
-            <p>An animation shows how a car engine works. There is no audio and the animation is part of a tutorial that describes how an engine works. Since the text of the tutorial already provides a full explanation, the image is an alternative for text and the text alternative includes only a brief description of the animation and refers to the tutorial text for more information. 
+              </p></item>
+	<item><p>
+                <emph role="bold">演説を録音した音声</emph>
+              </p><p>「議会での議長の演説」という音声クリップへのリンクがある。そして、書き起こしテキストへのリンクが、その音声クリップへのリンクの直後に提供されている。
+    </p></item>
+	<item><p>
+                <emph role="bold">車のエンジンがどのように動くのかを紹介するアニメーション</emph>
+              </p><p>車のエンジンがどのように動くのかを見せているアニメーションがある。音声はなく、そのアニメーションはエンジンがどのように動くかを解説する指導書の一部である。指導書のテキストがすでにすべてを説明しているため、そのアニメーションはテキストの代替物であり、その代替テキストにはアニメーションの簡潔な説明のみが記述されていて、代替テキストのより詳細な情報は指導書のテキストを参照している。
                 
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">A traffic Web camera</emph>
-							     </p>
-            <p>A Web site allows users to select from a variety of Web cameras positioned throughout a major city. After a camera is selected, the image updates every two minutes. A short text alternative identifies the Web camera as "traffic Web camera." The site also provides a table of travel times for each of the routes covered by the Web cameras. The table is also updated every two minutes.
-    </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">A photograph of an historic event in a news story</emph>
-							     </p>
-            <p>A photograph of two world leaders shaking hands accompanies a news story about an international summit meeting. The text alternative says, "President X of Country X shakes hands with Prime Minister Y of country Y."
-    </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">A photograph of a historic event in content discussing diplomatic relationships</emph>
-							     </p>
-            <p> The same image is used in a different context intended to explain nuances in diplomatic encounters. The image of the president shaking hands with the prime minister appears on a Web site discussing intricate diplomatic relationships. The first text alternative reads, "President X of country X shakes hands with Prime Minister Y of country Y on January 2, 2009." An additional text alternative describes the room where the leaders are standing as well as the expressions on the leaders' faces, and identifies the other people in the room. The additional description might be included on the same page as the photograph or in a separate file associated with the image through a link or other standard programmatic mechanism.
-    </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">An audio recording of a press conference </emph>
-							     </p>
-            <p>A Web page includes a link to an audio recording of a press conference. The link text identifies the audio recording. The page also links to a text transcript of the press conference. The transcript includes a verbatim record of everything the speakers say. It identifies who is speaking as well as noting other significant sounds that are part of the recording, such as applause, laughter, questions from the audience, and so on.
-    </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">
-                  An e-learning application
+              </p></item>
+	<item><p>
+                <emph role="bold">交通情報ウェブカメラ</emph>
+              </p><p>利用者がある大都市の至る所に設置された様々な ウェブカメラを選択することのできる ウェブサイトがある。どれか一つのカメラを選択すると、画像が2分おきに更新される。簡潔な代替テキストでは、そのウェブカメラを「交通情報ウェブカメラ」と説明している。また、そのサイトでは、ウェブカメラの範囲に入るルートのそれぞれの所要時間を表で提供している。そして、その表も2分おきに更新されている。
+    </p></item>
+	<item><p>
+                <emph role="bold">ニュース記事にある歴史的な出来事の写真</emph>
+              </p><p>国際サミット会議に関するニュース記事と一緒に、2人の世界的なリーダーが握手をしている写真がある。代替テキストには、「X国のX大統領が、Y国のY首相と握手している。」と記述されている。
+    </p></item>
+	<item><p>
+                <emph role="bold">外交関係を議論するコンテンツにある歴史的な出来事の写真</emph>
+              </p><p>外交上の衝突におけるニュアンスを説明するために、異なる文脈で同じ写真が使われている。首相と握手している大統領の画像が、もつれた外交関係を議論しているウェブサイトに掲載されている。最初の代替テキストには、「X国のX大統領が、2009年1月2日に、Y国のY首相と握手している。」と書かれている。補足の代替テキストは、両首脳の顔の表情と2人が立っている部屋の説明をしていて、さらに、その部屋にいる他の人たちのことも示している。その補足的な説明は、写真と同じページにあるかもしれないし、リンクあるいはその他の標準的なプログラムによるメカニズムによってその画像と関連付けられた別のファイルにあるかもしれない。
+    </p></item>
+	<item><p>
+                <emph role="bold">記者会見を録音した音声</emph>
+              </p><p>ウェブページに、記者会見を録音した音声へのリンクがある。リンクテキストは、録音された音声を示している。また、そのページには記者会見の書き起こしテキストへのリンクもある。書き起こしテキストには、話者が発言したすべての逐語的な記録がある。そこには、例えば、喝采、笑い、聴衆からの質問など、その録音の一部であるその他の重要な音声とあわせて、誰が話しているのかも記されている。
+    </p></item>
+	<item><p>
+                <emph role="bold">
+E-ラーニングアプリケーション
                 </emph>
-							     </p>
-            <p>
-                An e-learning application uses sound effects to indicate whether or not the answers are correct. The chime sound indicates that the answer is correct and the beep sound indicates that the answer is incorrect. A text description is also included so that people who can't hear or understand the sound understand whether the answer is correct or incorrect. 
+              </p><p>
+回答が正しいかどうかを示すために効果音を用いている E-ラーニングアプリケーションがある。チャイム音はその回答が正解であることを示し、ビープ音はその回答が不正解であることを示している。テキストの説明もあるため、その音を聞いたり理解したりすることができない利用者も、その回答が正解かどうかを理解することができる。
                 
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">
-                  A linked thumbnail image
+              </p></item>
+	<item><p>
+                <emph role="bold">
+リンクのあるサムネール画像
                 </emph>
-							     </p>
-            <p>A thumbnail image of the front page of a newspaper links to the home page of the "Smallville Times". The text alternative says "Smallville Times".
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">
-                  The same image used on different sites
+              </p><p>「スモールヴィル・タイムス」のウェブサイトにリンクしている、新聞の一面のサムネール画像がある。その代替テキストには、「スモールヴィル・タイムス」と記述されている。
+              </p></item><item><p>
+                <emph role="bold">
+異なるサイトで使われている同じ画像
                 </emph>
-							     </p>
-            <p>Different alternatives for an image of the world: An image of the world that is used on a travel site as a link to the International Travel section has the text alternative "International Travel". The same image is used as a link on a university Web site with the text alternative "International Campuses".
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">
-                  An image map
+              </p><p>世界地図の画像に対する異なる代替テキストの例： 旅行サイトで海外旅行コーナーへのリンクとして用いられている世界地図の画像には、「海外旅行」という代替テキストがある。同じ画像が、「国際キャンパス」という代替テキストとともに、ある大学のウェブサイトでリンクとして用いられている。
+              </p></item><item><p>
+                <emph role="bold">
+イメージマップ
                 </emph>
-							     </p>
-            <p>An image of a building floor plan is interactive, allowing the user to select a
-                particular room and navigate to a page containing information about that room.
-                The short text alternative describes the image and its interactive purpose:
-                "Building floor plan. Select a room for more information."</p>
-         </item>
-      </olist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 1.1.1</head>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If a short description can serve the same purpose and present the same information as the non-text content:</head>
-            <olist>
-               <item>
-                  <p>
-                     <loc href="G94"
-                          linktype="general">Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</loc> using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-a-shorttext">Short text alternative techniques for Situation A</loc>
-                     </emph>:</p>
-               </item>
-            </olist>
-            <p id="text-equiv-all-situation-a-shorttext">
-               <emph role="bold">Short text alternative techniques for Situation A</emph>:</p>
-            <ulist id="text-equiv-all-situation-a-shorttext-techs">
-               <item>
-                  <p>
-                     <loc href="ARIA6" linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA10"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="G196"
-                          linktype="general"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH1"
-                          linktype="flash"
-                          role="flash"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH5"
-                          linktype="flash"
-                          role="flash"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH28"
-                          linktype="flash"
-                          role="flash"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H2"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H35"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H37"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H53"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H86"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF1"
-                          linktype="pdf"
-                          role="pdf"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL5"
-                          linktype="silverlight"
-                          role="silverlight"/>
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation B: If a short description can <emph role="bold">not</emph> serve the same purpose and present the same information as the non-text content (e.g., a chart or diagram):</head>
-            <olist>
-               <item>
-                  <p> 
-                     <loc href="G95"
-                          linktype="general">Providing short text alternatives that provide a brief description of the non-text content</loc> using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-b-shorttext">Short text alternative techniques for Situation B</loc>
-                     </emph>
-										           <emph role="bold">AND</emph> one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-b-longtext">Long text alternative techniques for Situation B</loc>
-                     </emph>:</p>
-               </item>
-            </olist>
-            <p id="text-equiv-all-situation-b-shorttext">
-               <emph role="bold">Short text alternative techniques for Situation B</emph>:</p>
-            <p use-id="text-equiv-all-situation-a-shorttext-techs"/>
-            <p id="text-equiv-all-situation-b-longtext">
-               <emph role="bold">Long text alternative techniques for Situation B</emph>:</p>
-            <ulist id="text-equiv-all-situation-b-longtext-techs">
-               <item>
-                  <p>
-                     <loc href="ARIA15"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="G73"
-                          linktype="general"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="G74"
-                          linktype="general"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="G92"
-                          linktype="general"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH2"
-                          linktype="flash"
-                          role="flash"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH11"
-                          linktype="flash"
-                          role="flash"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H45"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H53"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL8"
-                          linktype="silverlight"
-                          role="silverlight"/>
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation C: If non-text content is a control or accepts user input:</head>
-            <olist>
-               <item>
-                  <p> 
-                     <loc href="G82"
-                          linktype="general">Providing a text alternative that identifies the purpose of the non-text content</loc> using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-c-controls">Text alternative techniques for controls and input for Situation C</loc>
-                     </emph>:</p>
-               </item>
-            </olist>
-            <p id="text-equiv-all-situation-c-controls">
-               <emph role="bold">Text alternative techniques for controls and input for Situation C</emph>:</p>
-            <ulist id="text-equiv-all-situation-c-controls-techs">
-               <item>
-                  <p>
-                     <loc href="ARIA6" linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA9" linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH6"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH25"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH27"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH29"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH30"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH32"
-                          linktype="flash"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H24"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H30"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H36"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H44"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H65"
-                          linktype="html"
-                          role="html"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL18"
-                          linktype="silverlight"
-                          role="silverlight"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL26"
-                          linktype="silverlight"
-                          role="silverlight"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL30"
-                          linktype="silverlight"
-                          role="silverlight"/>
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation D: If non-text content is time-based media (including live video-only and live audio-only); a test or exercise that would be invalid if presented in text; or primarily intended to create a specific sensory experience:</head>
-            <olist>
-               <item>
-                  <p>Providing a descriptive label using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</loc>
-                     </emph>:</p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA6" linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA10"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p> 
-                     <loc href="G68"
-                          linktype="general">Providing a descriptive label that describes the purpose of live audio-only and live video-only content</loc> using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</loc>
-                     </emph>:</p>
-               </item>
-               <item>
-                  <p> 
-                     <loc href="G100"
-                          linktype="general">Providing the accepted name or a descriptive name of the non-text content</loc> using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</loc>
-                     </emph>:</p>
-               </item>
-            </olist>
-            <p id="text-equiv-all-situation-d-shorttext">
-               <emph role="bold">Short text alternative techniques for Situation D</emph>:</p>
-            <p use-id="text-equiv-all-situation-a-shorttext-techs"/>
-         </div5>
-         <div5 role="situation">
-            <head>Situation E: If non-text content is a CAPTCHA:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G143"
-                          linktype="general">Providing a text alternative that describes the purpose of the CAPTCHA</loc>
-										           <emph role="bold">AND</emph>
-										           <loc href="G144"
-                          linktype="general">Ensuring that the Web Page contains another CAPTCHA serving the same purpose using a different modality</loc>
-									         </p>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation F: If the non-text content should be ignored by assistive technology:</head>
-            <olist>
-               <item>
-                  <p>Implementing or marking the non-text content so that it will be ignored by assistive technology using one of the following <emph role="bold">
-                        <loc href="#text-equiv-all-situation-f-notrequired">Techniques to indicate that text alternatives are not required for Situation F</loc>
-                     </emph>:</p>
-               </item>
-            </olist>
-            <p id="text-equiv-all-situation-f-notrequired">
-               <emph role="bold">Techniques to indicate that text alternatives are not required for Situation F</emph>:</p>
-            <ulist id="text-equiv-all-situation-f-notrequired-techs">
-               <item>
-                  <p>
-                     <loc href="C9" linktype="css">Using CSS to include decorative images</loc>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="FLASH3"
-                          linktype="flash">Marking objects in Flash so that they can be ignored by AT</loc>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="H67" linktype="html">Using null alt text and no title attribute on img elements for images that AT should ignore</loc>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF4" linktype="pdf"/>
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Optional Techniques (Advisory) for 1.1.1</head>
-         <div5>
-            <head>General Techniques for Informative Non-Text Content (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>Identifying informative non-text content (future link)</p>
-               </item>
-               <item>
-                  <p>Keeping short descriptions short (future link)</p>
-               </item>
-               <item>
-                  <p>Describing images that include text (future link)</p>
-               </item>
-               <item>
-                  <p>Providing a longer description of the non-text content where only a descriptive label is required using a technology-specific technique (for an accessibility-supported content technology) for long description listed above (future link)</p>
-               </item>
-               <item>
-                  <p>Providing different sizes for non-text content when it cannot have an equivalent accessible alternative (future link)</p>
-               </item>
-               <item>
-                  <p>Using server-side scripts to resize images of text (future link)</p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head>General Techniques for Live Non-Text Content (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>Linking to textual information that provides comparable information (e.g., for a traffic Webcam, a municipality could provide a link to the text traffic report.)  (future link)</p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head>General techniques to minimize the barrier of CAPTCHAs</head>
-            <!-- Note: use WG notes to issue 1940 as starter material for these techniques -->
-            <ulist>
-               <item>
-                  <p>Providing more than two modalities of CAPTCHAs (future link)</p>
-               </item>
-               <item>
-                  <p>Providing access to a human customer service representative who can bypass CAPTCHA (future link)</p>
-               </item>
-               <item>
-                  <p>Not requiring CAPTCHAs for authorized users (future link)</p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head>HTML Techniques (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>
-										           <loc href="H46" linktype="html">Using noembed with embed</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                    Writing for browsers that do not support frame (future link)
-                  </p>
-               </item>
-               <item>
-                  <p>
-                    Providing alternative content for iframe (future link)
-                  </p>
-               </item>
-            	<item>
-                  <p>
-                    Not using long descriptions for iframe (future link)
-                  </p>
-               </item>
-               <item>
-                  <p>
-        Providing redundant text links for client-side image maps (future link)
-    </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head role="css">CSS Techniques (Advisory)</head>
-            <ulist>
-               <item role="css">
-                  <p>
-										           <loc href="C18" linktype="css">Using CSS margin and padding rules instead of spacer images</loc>
-									         </p>
-               </item>
-               <item role="css">
-                  <p>
-        Using CSS background, :before or :after rules for decorative images instead of img elements (future link)
-    </p>
-               </item>
-               <item role="css">
-                  <p>Displaying empty table cells (future link)</p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head role="aria">WAI-ARIA Techniques (Advisory)</head>
-            <ulist>
-               <item role="aria">
-                  <p>Using the ARIA presentation role to indicate elements are purely presentational (future link) 
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head role="silverlight">Silverlight Techniques (Advisory)</head>
-            <ulist>
-               <item role="silverlight">
-                  <p>
-                     <loc href="SL19"
-                          linktype="silverlight"/>
-                  </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head>Metadata Techniques (Advisory)</head>
-            <ulist>
-               <item>
-                  <p> Using metadata to associate text transcriptions with a video (future link) </p>
-               </item>
-               <item>
-                  <p> Using metadata to associate text transcriptions with audio-only content (future link)</p>
-                  <ulist>
-                     <item>
-                        <p> EXAMPLE: Providing, in metadata, URI(s) that points to an audio description and a text transcript of a video. </p>
-                     </item>
-                     <item>
-                        <p> EXAMPLE: Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file. </p>
-                     </item>
-                  </ulist>
-               </item>
-            </ulist>
-         </div5>
-      </div4>
-      <div4 role="failures">
-         <head/>
-         <ulist>
-            <item role="css">
-               <p>
-									         <loc href="F3" linktype="failure">Failure due to using CSS to include images that convey important information</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F13"
-                       linktype="failure">Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that does not include information that is conveyed by color differences in the image</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F20"
-                       linktype="failure">Failure due to not updating text alternatives when changes to non-text content occur</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F30"
-                       linktype="failure">Failure due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)</loc>
-								       </p>
-            </item>
-            <item role="html">
-               <p>
-									         <loc href="F38"
-                       linktype="failure">Failure due to omitting the alt-attribute for non-text content used for decorative purposes only in HTML</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F39"
-                       linktype="failure">Failure due to providing a text alternative that is not null. (e.g., alt="spacer" or alt="image") for Images that should be ignored by AT</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F65"
-                       linktype="failure">Failure of 1.1.1 due to omitting the alt attribute on img elements, area elements, and input elements of type "image"</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F67"
-                       linktype="failure">Failure of 1.1.1 due to providing long description for non-text content that does not serve the same purpose or does not present the same information</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F71"
-                       linktype="failure">Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F72"
-                       linktype="failure">Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-</div2>
+              </p><p>ビルのフロアプランのイメージマップ画像は操作可能で、利用者が特定の部屋を選択して、その部屋に関する情報のあるページへ移動することができる。「ビルのフロアプラン。より詳細な情報は部屋を選択してください。」という簡潔な代替テキストが、そのイメージマップの画像全体と操作の目的を説明している。</p></item>
+</olist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc></p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>
+              </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.gawds.org/show.php?contentid=28">GAWDS Writing Better Alt Text</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/images/captcha-if-youre-names-not-down-youre-not-coming-in/">CAPTCHA - if your name’s not down you’re not coming in</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/articles/too-much-accessibility/too-much-accessibility-the-rise-and-fall-of-the-longdesc/">Too much accessibility - the rise and fall of the LONGDESC</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>Techniques for Addressing Success Criterion 1.1.1</head>
+<div4 role="sufficient"><head/>
+<div5 role="situation">
+<head>状況 A： 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示できる場合：</head>
+<olist>
+<item><p>次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、
+<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G94" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する短い代替テキストを提供する</loc>    </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示<emph role="bold">できない</emph>場合（例：チャート又はダイアグラム）：</head>
+<olist>
+	<item><p>
+次に挙げる<emph role="bold">短い</emph>
+代替テキストの実装方法<emph role="bold">及び</emph>次に挙げる<emph role="bold">長い</emph>説明の実装方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G95" linktype="general">非テキストコンテンツを簡潔に説明する短い代替テキストを提供する</loc>
+</p><ulist>
+	<item><p>
+次に挙げる<emph role="bold">長い</emph>
+代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G92" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する長い説明を提供する</loc>
+    </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G74" linktype="general">短い説明の中で長い説明のある場所を示して、非テキストコンテンツの近くにあるテキストで長い説明を提供する</loc>
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G73" linktype="general">非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する</loc>
+                      </p></item></ulist></item></olist></div5><div5 role="situation"><head>状況 C： 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合：</head><olist><item><p>
+次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G82" linktype="general">非テキストコンテンツの目的を示す代替テキストを提供する</loc>
+    </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html">label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash">自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash">フォーム・コンポーネントに label プロパティを設定する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH25" linktype="flash">アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH30" linktype="flash">FLASH30： 画像ボタンにアクセシブルな名前を指定する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH27" linktype="flash">FLASH27： ボタンの目的を説明するラベルを提供する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH6" linktype="flash">非表示のボタンを使用してアクセシブルなホットスポットを作成する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18" linktype="silverlight">Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30" linktype="silverlight">Using Silverlight Control Compositing and AutomationProperties.Name</loc>  
+                  </p></item></olist></div5><div5 role="situation"><head>状況 D： 非テキストコンテンツが時間の経過に伴って変化するメディアである場合（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）； テキストで提示されると無効になる試験又は演習；又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツ：</head><olist><item><p>
+次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、ラベルを記述する。
+    </p></item><item><p>
+次に挙げる<emph role="bold">短い</emph>
+代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G68" linktype="general">ラベルを記述して、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</loc>
+    </p></item><item><p>
+次に挙げる<emph role="bold">短い</emph>
+代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G100" linktype="general">非テキストコンテンツの一般的な名前、又は説明的な名前を提供する</loc>
+    </p></item></olist></div5><div5 role="situation"><head>状況 E： 非テキストコンテンツが CAPTCHA である場合：</head><olist><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G143" linktype="general">代替テキストを提供して、CAPTCHAの目的を説明する</loc>
+                    、<emph role="bold">かつ</emph>、
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G144" linktype="general">異なるモダリティを用いて、同じ目的を果たす CAPTCHA をもう一つウェブページで提供する</loc>
+                  </p></item></olist></div5><div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の実装方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
+    </p><ulist><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="html">支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない　</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C9" linktype="css">CSS を用いて、装飾的な画像を付加する</loc>  
+                      </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH3" linktype="flash">支援技術が無視できるように Flash のオブジェクトにマークを付ける</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF4" linktype="pdf">PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する</loc>  
+                  </p></item></ulist></item></olist></div5><div5><head>
+前述の「達成基準を満たすことのできる実装方法」を用いる際の<emph role="bold">短い</emph>代替テキストの実装方法
+              </head><olist><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H36" linktype="html">送信 / 実行ボタンとして用いる画像の alt 属性を使用する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html">隣り合った画像とテキストリンクを同じリンクの中に入れる</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H37" linktype="html">img 要素の alt 属性を用いる</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H35" linktype="html">applet 要素に代替テキストを提供する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH1" linktype="flash">非テキストオブジェクトに名前プロパティを設定する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF1" linktype="pdf">PDF 文書の Alt エントリによって画像に代替テキストを適用する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H24" linktype="html">イメージマップの area 要素に代替テキストを提供する</loc>  
+                  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H86" linktype="html">ASCII アート、絵文字、及びリート語に代替テキストを提供する</loc>  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH28" linktype="flash">Flash で ASCII アート、顔文字、リート語の代替テキストを提供する</loc>  
+                  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H30" linktype="html">a 要素のリンクの目的を説明するテキストリンクを提供する</loc>  </p><note><p><specref ref="navigation-mechanisms-refs"/>を参照のこと。</p></note></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G196" linktype="general">画像のグループにある一つの画像に代替テキストを提供して、そのグループのすべての画像を説明する</loc> </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH5" linktype="flash">リンク先が同じで隣接している画像とテキストのボタンを結合する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL5" linktype="silverlight">Defining a Focusable Image Class for Silverlight</loc>  
+                  </p></item></olist></div5><div5><head>
+前述の「達成基準を満たすことのできる実装方法」を用いる際の<emph role="bold">長い</emph>代替テキストの実装方法
+              </head><olist><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H45" linktype="html">longdesc 属性を用いる</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH2" linktype="flash">Flash 内の非テキストオブジェクトに説明プロパティを設定する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH11" linktype="flash">オブジェクトについて長いテキストの説明を提供する</loc>  
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL8" linktype="silverlight">Displaying HelpText in Silverlight User Interfaces</loc>  
+                  </p></item></olist></div5></div4><div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる実装方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な実装方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の実装方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な実装方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な実装方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの実装方法（参考）</head><ulist><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc>  
+                  </p></item><item><p>
+フレームをサポートしないブラウザのために作成する（リンク追加予定）
+                  </p></item><item><p>
+iframe要素の代替コンテンツを提供する（リンク追加予定）
+                  </p></item><item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H27" linktype="html">object要素の代替となるテキストと非テキストを提供する</loc>  
+                  </p></item><item><p>
+iframe要素の長い説明を使わない（リンク追加予定）
+                  </p></item><item><p>
+クライアントサイドイメージマップのために冗長なテキストリンクを提供する（リンク追加予定）
+    </p></item></ulist></div5><div5><head role="css">CSSの実装方法（参考）</head><ulist><item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc>  </p></item><item role="css"><p>
+装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う（リンク追加予定）
+    </p></item><item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item></ulist></div5><div5><head role="aria">WAI-ARIAの実装方法（参考）</head><ulist><item role="aria"><p>表現のためだけの要素を示すためにARIA表示を使う（リンク追加予定）
+                  </p></item></ulist></div5><div5><head role="silverlight">Silverlightの実装方法（参考）</head><ulist><item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc>  </p></item></ulist></div5><div5><head>メタデータの実装方法（参考）</head><ulist><item><p>テキストトランスクリプションと映像を関連付けるためにメタデータを使う（リンク追加予定） </p></item><item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p><ulist><item><p>事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する</p></item><item><p>事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する</p></item></ulist></item></ulist></div5></div4><div4 role="failures"><head/><ulist><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F30" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</loc>
+                </p></item><item role="css"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F3" linktype="failure">達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F39" linktype="failure">達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F38" linktype="failure">達成基準 1.1.1 の不適合事例 － HTMLで装飾を目的にして用いられている非テキストコンテンツのalt属性を省略している</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F71" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、テキストのようなものを用いてテキストを表している</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F72" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、ASCIIアートを用いている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F65" linktype="failure">達成基準 1.1.1 の不適合事例 － img要素、area要素、及び type "image" のinput要素のalt属性を省略している</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F67" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F13" linktype="failure">達成基準 1.1.1 及び 達成基準 1.4.1 の不適合事例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない</loc>
+                </p></item></ulist></div4></div3></div2>
+

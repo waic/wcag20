@@ -4,166 +4,76 @@
 <div2 id="navigation-mechanisms-focus-order" role="extsrc">
    <head>2.4.3</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that when users navigate sequentially through content, they encounter information in an order that is consistent with the meaning of the content and can be operated from the keyboard. This reduces confusion by letting users form a consistent mental model of the content. There may be different orders that reflect logical relationships in the content. For example, moving through components in a table one row at a time or one column at a time both reflect the logical relationships in the content. Either order may satisfy this Success Criterion.</p>
-      <p>The way that sequential navigation order is determined in Web content is defined by the technology of the content. For example, simple HTML defines sequential navigation via the notion of tabbing order. Dynamic HTML may modify the navigation sequence using scripting along with the addition of a tabindex attribute to allow focus to additional elements. If no scripting or tabindex attributes are used, the navigation order is the order that components appear in the content stream. (See HTML 4.01 Specification, section 17.11, "Giving focus to an element").</p>
-      <p>An example of keyboard navigation that is not the sequential navigation addressed by this Success Criterion is using arrow key navigation to traverse a tree component. The user can use the up and down arrow keys to move from tree node to tree node. Pressing the right arrow key may expand a node, then using the down arrow key, will move into the newly expanded nodes. This navigation sequence follows the expected sequence for a tree control - as additional items get expanded or collapsed, they are added or removed from the navigation sequence.</p>
-      <p>The focus order may not be identical to the programmatically determined reading order (see Success Criterion 1.3.2) as long as the user can still understand and operate the Web page. Since there may be several possible logical reading orders for the content, the focus order may match any of them. However, when the order of a particular presentation differs from the programmatically determined reading order, users of one of these presentations may find it difficult to understand or operate the Web page. Authors should carefully consider all these users as they design their Web pages.</p>
-      <p>For example, a screen reader user interacts with the programmatically determined reading order, while a sighted keyboard user interacts with the visual presentation of the Web page. Care should be taken so that the focus order makes sense to both of these sets of users and does not appear to either of them to jump around randomly. </p>
-      <p>For clarity:</p>
-      <olist>
-         <item>
-            <p>Focusable components need to receive focus in an order that preserves meaning and operability only when navigation sequences affect meaning and operability.</p>
-         </item>
-         <item>
-            <p>In those cases where it is required, there may be more than one order that will preserve meaning and operability.</p>
-         </item>
-         <item>
-            <p>If there is more than one order that preserves meaning and operability, only one of them needs to be provided.</p>
-         </item>
-      </olist>
-      <div4 role="benefits">
-         <head>Benefits</head>
-         <p>These techniques benefit keyboard users who navigate documents sequentially and expect the focus order to be consistent with the sequential reading order.</p>
-         <ulist>
-            <item>
-               <p>People with mobility impairments who must rely on keyboard access for operating a page benefit from a logical, usable focus order.</p>
-            </item>
-            <item>
-               <p>People with disabilities that make reading difficult can become disoriented when tabbing takes focus someplace unexpected. They benefit from a logical focus order.</p>
-            </item>
-            <item>
-               <p>People with visual impairments can become disoriented when tabbing takes focus someplace unexpected or when they cannot easily find the content surrounding an interactive element.</p>
-            </item>
-            <item>
-               <p>Only a small portion of the page may be visible to an individual using a screen magnifier at a high level of magnification. Such a user may interpret a field in the wrong context if the focus order is not logical.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <olist>
-         <item>
-            <p><!-- modified for comment LC-2461 -->On a web page that contains a tree of interactive controls, the user can use the up and down arrow keys to move from tree node to tree node. Pressing the right arrow key expands a node, then using the down arrow key moves into the newly expanded nodes.</p>
-         </item>
-         <item>
-            <p>A Web page implements modeless dialogs via scripting. When the trigger button is activated, a dialog opens. The interactive elements in the dialog are inserted in the focus order immediately after the button. When the dialog is open, the focus order goes from the button to the elements of the dialog, then to the interactive element following the button. When the dialog is closed, the focus order goes from the button to the following element.</p>
-         </item>
-         <item>
-            <p>A Web page implements modal dialogs via scripting. When the trigger button is activated, a dialog opens and focus is set to the first interactive element in the dialog. As long as the dialog is open, focus is limited to the elements of the dialog. When the dialog is dismissed, focus returns to the button or the element following the button.</p>
-         </item>
-         <item>
-            <p>An HTML Web page is created with the left hand navigation occurring in the HTML after the main body content, and styled with CSS to appear on the left hand side of the page. This is done to allow focus to move to the main body content first without requiring tabIndex attributes or JavaScript.</p>
-            <note>
-               <p>While this example passes the Success Criterion, it is not necessarily true that all CSS positioning would. More complex positioning examples may or may not preserve meaning and operability</p>
-            </note>
-         </item>
-         <item>
-            <p>The following example <emph role="bold">fails to meet the Success Criterion</emph>:</p>
-            <p>A company's Web site includes a form that collects marketing data and allows users to subscribe to several newsletters published by the company. The section of the form for collecting marketing data includes fields such as name, street address, city, state or province, and postal code. Another section of the form includes several checkboxes so that users can indicate newsletters they want to receive. However, the tab order for the form skips between fields in different sections of the form, so that focus moves from the name field to a checkbox, then to the street address, then to another checkbox.</p>
-         </item>
-      </olist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources</head>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 2.4.3</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G59"
-                       linktype="general">Placing the interactive elements in an order that follows sequences and relationships within the content</loc>
-								       </p>
-            </item>
-            <item role="script">
-               <p>Giving focus to elements in an order that follows sequences and relationships within the content using one of the following techniques:</p>
-               <ulist>
-                  <item>
-                     <p>
-											             <loc href="H4" linktype="html">Creating a logical tab order through links, form controls, and objects</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="FLASH15"
-                             linktype="flash">Using the tabIndex property to specify a logical tab order in Flash</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="C27" linktype="css">Making the DOM order match the visual order</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-                        <loc href="PDF3" linktype="pdf"/>
-                     </p>
-                  </item>
-                  <item>
-                     <p>
-                        <loc href="SL34"
-                             linktype="silverlight"/>
-                     </p>
-                  </item>
-               </ulist>
-            </item>
-            <item role="script">
-               <p>Changing a Web page dynamically using one of the following techniques:</p>
-               <ulist>
-                  <item>
-                     <p>
-											             <loc href="SCR26"
-                             linktype="script">Inserting dynamic content into the Document Object Model immediately following its trigger element</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="SCR37"
-                             linktype="script">Creating custom dialogs in a device independent way</loc>
-										           </p>
-                  </item>
-                  <item>
-                     <p>
-											             <loc href="SCR27"
-                             linktype="script">Reordering page sections using the Document Object Model</loc>
-										           </p>
-                  </item>
-               </ulist>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 2.4.6</head>
-         <ulist>
-            <item>
-               <p>Providing a highly visible highlighting mechanism for links or controls when they receive keyboard focus (future link)
-                </p>
-            </item>
-            <item>
-               <p>Creating alternative presentation orders (future link)</p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F44"
-                       linktype="failure">Failure of 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F85"
-                       linktype="failure">Failure of Success Criterion 2.4.3 due to using dialogs or menus that are not adjacent to their trigger control in the sequential navigation order</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、利用者がコンテンツ内を一つずつ順を追いながら行き来している際に、キーボードにより操作可能な順序でコンテンツの意味に添って、情報と出会うようにすることである。このことにより、利用者のコンテンツに対するメンタルモデルを一貫したものとし、利用者が困惑する可能性を引き下げる。コンテンツの論理的な関係性を反映した異なる順序になることもある。例えば、テーブルのある行又は列にある構成要素内を一度に移動する際には、行を移動する際も列を移動する際もコンテンツにおける関係性を反映した順序になる。どちらの順序もこの達成基準を満たすことができる 。</p>
+<p>ウェブコンテンツでのナビゲーションの順番が決まる方法は、コンテンツで用いるウェブコンテンツ技術によって定義されている。例えば、シンプルな HTML は、タブ移動順序によってナビゲーション順序を定義している。動的な HTML では、フォーカスを他の要素にも割り当てることができるように tabindex 属性を付加して、スクリプトを用いてナビゲーション順序を修正することができる。スクリプトも、tabindex 属性も使用していない場合、ナビゲーション順序は、コンポーネントがコンテンツの流れの中で表れる順序になる（HTML 4.01 仕様書の 17.11 "Giving focus to an element"： 日本語訳は「17.11 ある要素にフォーカスを合わせる」を参照のこと）。</p><p>この達成基準で対処しているナビゲーション順序ではない、キーボード・ナビゲーションの一例は、ツリー・コンポーネントを行き来するための矢印キーを用いたナビゲーションである。利用者は、上下の矢印キーを使って、ツリーのノードからノードへと移動することができる。右向き矢印キーを押下するとノードを展開して、それから下向き矢印キーを押下すると新しく展開されたノードへと移動していく。アイテムが展開されたり閉じられたりするたびに、ナビゲーション順序に追加されたり削除されたりするので、このナビゲーション順序は、ツリー・コントロールで予期される順序に従っている。そして、アイテムが展開されたり閉じられたりするたびに、ナビゲーション順序に追加されたり削除されたりする。</p>
+<p>利用者はウェブページを理解して操作できているが、フォーカス順序がプログラムが解釈する音声読み上げ順序（達成基準 1.3.2 を参照）とは一致しないかもしれない。コンテンツに対して考えられうる論理的な音声読み上げ順序が数通りあり、フォーカス順序はそのうちのどれかと合致するのかもしれない。しかし、特定のプレゼンテーションにおける順序が、プログラムが解釈する音声読み上げ順序とは異なるとき、複数あるプレゼンテーションの一つを使う利用者は、そのウェブページを理解したり操作したりするのを難しいと感じるかもしれない。コンテンツ制作者は、ウェブページを設計する際に、すべての利用者のことを注意深く考慮すべきである。</p>
+<p>例えば、画面を見ているキーボードの利用者が、ウェブページの視覚的なプレゼンテーションの順序で情報をやりとりしているのに対し、スクリーンリーダーの利用者は、プログラムで判断される音声読み上げ順序で情報をやりとりしている。フォーカス順序が双方の利用者にとって意味が通じるようにし、どちらかがコンテンツ内をランダムに飛び回るようなことのないように、注意すべきである。</p>
+
+<div4 role="benefits">
+<head>達成基準 2.4.3 の具体的なメリット</head>
+<p>これらの実装方法は、コンテンツ内を順番に行き来していて、フォーカス順序が音声読み上げ順序と一致しているものと考えている、キーボードの利用者の役に立つ。</p>
+<ulist>
+	<item><p>論理的で、使いやすいフォーカス順序は、ページの操作をキーボード使用に依存している運動障害のある利用者の役に立つ。</p></item>
+	<item><p>字を読むのが困難な障害のある利用者は、Tab キーを押下してフォーカスが予期しないどこかへ移動してしまうと、迷子のようになってしまう恐れがある。彼らは論理的なフォーカス順序の恩恵を受けている。</p></item>
+	<item><p>視覚障害のある利用者は、Tab キーを押下してフォーカスが予期しないどこかへ移動してしまったり、インタラクティブな要素に囲まれているコンテンツを容易に見つけることができなかったりすると、迷子のようになってしまう恐れがある。</p></item>
+	<item><p>画面拡大ソフトを使用していて、拡大率を高くしている利用者には、ページのごく小さい一部分だけしか見えないことがある。そのような利用者は、フォーカス順序が論理的でないと、誤った文脈でコンテンツの一部分を解釈してしまう恐れがある。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<olist>
+	<item><p>インタラクティブなコントロールのツリーがあるウェブページ上で、利用者は上下の矢印キーを使って、ツリーのノードからノードへと移動することができる。右向き矢印キーを押下するとノードを展開して、それから下矢印キーを押下すると新しく展開されたノードへと移動していく。</p></item>
+	<item><p>あるウェブページは、スクリプトでモードレス・ダイアログ（ダイアログボックスを閉じなくても作業が続行できるタイプのダイアログボックス）を実装している。起動ボタンを押下すると、ダイアログが開く。ダイアログ内にあるインタラクティブな要素が、起動ボタンのすぐ後のフォーカス順序の位置に挿入される。ダイアログが開いているときには、フォーカス順序は、その起動ボタンからダイアログ内の要素へ移動し、それから起動ボタンの後にあるインタラクティブな要素へと移動する。ダイアログが閉じているときは、フォーカス順序は起動ボタンからその次に続いている要素へ移動する。</p></item>
+	<item><p>あるウェブページは、スクリプトでモーダル・ダイアログ（ダイアログボックスの中だけで強制的に作業をさせるダイアログボックスで、それが閉じられない限り作業の続行ができない）を実装している。起動ボタンを押下すると、ダイアログが開き、そのダイアログにある最初のインタラクティブな要素にフォーカスがあたる。ダイアログが開いている限り、フォーカスはダイアログ内の要素だけに限定される。ダイアログが閉じられると、フォーカスはボタン又はボタンの次にある要素へ戻る。</p></item>
+	<item><p>HTML で制作されたウェブページには、左側にナビゲーションがある。そのナビゲーションは、HTML ではメインコンテンツの後にあり、CSS を用いてページの左側に表示されるように指定されている。tabindex 属性又はJavaScriptを用いずに、フォーカスがメインコンテンツへ移動できるようにするためである。</p><note><p>この事例は達成基準を満たしているが、必ずしもすべての CSS による配置が当てはまるとはかぎらない。配置が複雑な例では、意味及び操作性を保持できることもあれば、できないこともある。</p></note></item><item><p>次の例は、<emph role="bold">この達成基準を満たさない</emph>：</p><p>ある企業のウェブサイトに、マーケティングデータを収集するフォームがあり、利用者がその企業の発行するいくつかのニュースレターに登録できるようになっている。マーケティングデータを収集するためのフォームのセクションには、氏名、郵便番号、県、市町村、番地などのテキストフィールドがある。フォームのその他のセクションには、利用者が配信してほしいニュースレターを指定することができるようにいくつかのチェックボックスがある。しかし、そのフォームのタブ移動順序は、フォームにおける異なるセクションのフィールドを行ったり来たりする。そのため、フォーカスは、氏名のテキストフィールドからあるチェックボックスへ、次に番地のテキストフィールドへ、そしてまた別のチェックボックスへというふうに移動してしまう。</p></item>
+</olist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準を満たすことのできる実装方法</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G59" linktype="general">コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</loc>
+                </p></item>
+	<item><p>次の実装方法の一つを用いて、コンテンツ内の順序及び関係性に従った順序でフォーカスを要素に与える：</p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H4" linktype="html">リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する </loc>
+                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH15" linktype="flash">tabIndex プロパティを使用して Flash 内の論理的な読み上げ順序及びタブ順序を指定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C27" linktype="css">DOM ツリーのノードの順序を視覚的な順序と合致させる </loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF3" linktype="pdf">PDF 文書で正しいタブ順序と読み上げ順序を確保する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL34.html" linktype="silverlight">Using the Silverlight Default Tab Sequence and Altering Tab Sequences With Properties</loc></p></item></ulist></item><item role="script"><p>次の実装方法の一つを用いて、ウェブページを動的に変化させる：</p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR26" linktype="script">動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する (Scripting)</loc>
+                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR37" linktype="script">デバイス非依存な方法でカスタム・ダイアログを作成する (Scripting)</loc></p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR27" linktype="script">DOMを用いて、ページ上にある複数のセクションを並び替える (Scripting)</loc>
+                    </p></item></ulist></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.4.3 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>キーボードフォーカスを受け取ったリンクもしくはコントロールが、強調され非常に目立つメカニズムを提供する（リンク追加予定）
+                </p></item>
+	<item><p>代替となるプレゼンテーション順序を作り出す（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 2.4.3 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F44" linktype="failure">達成基準 2.4.3 の不適合事例 － tabindex属性を用いて、意味及び操作性を保持しないタブ順序を指定している</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F85" linktype="failure">達成基準 2.4.3 の不適合事例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを用いている</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

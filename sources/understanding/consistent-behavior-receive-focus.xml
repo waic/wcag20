@@ -4,111 +4,68 @@
 <div2 role="extsrc" id="consistent-behavior-receive-focus">
    <head>3.2.1</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that functionality is predictable as visitors navigate their way through a document. Any component that is able to trigger an event when it receives focus must not change the context.          Examples of changing context when a component receives focus include, but are not limited to:
-          </p>
-      <ulist>
-         <item>
-            <p>forms submitted automatically when a component receives focus;</p>
-         </item>
-         <item>
-            <p>new windows launched when a component receives focus;</p>
-         </item>
-         <item>
-            <p>focus is changed to another component when that component receives focus;</p>
-         </item>
-      </ulist>
-      <p>Focus may be moved to a control either via the keyboard (<abbr expansion="for example">e.g.</abbr> tabbing to a control) or the mouse (<abbr expansion="for example">e.g.</abbr> clicking on a text field). Moving the mouse over a control does not move the focus unless scripting implements this behavior. Note that for some types of controls, clicking on a control may also activate the control (<abbr expansion="for example">e.g.</abbr> button), which may, in turn, initiate a change in context.
-					</p>
-      <note>
-         <p>What is meant by "component" here is also sometimes called "user interface element" or "user interface component''.</p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>This Success Criterion helps people with visual disabilities, cognitive limitations, and motor impairments by reducing the chance that a change of context will occur unexpectedly.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Example 1:  A dropdown menu</emph>
-							     </p>
-            <p>A dropdown menu on a page allows users to choose between jump destinations. If the person uses the keyboard to move down to a choice and activates it (with a spacebar or enter key) it will jump to a new page.  However, if the person moves down to a choice and either hits the escape or the tab key to move out of the pulldown menu – it does not jump to a new screen as the focus shifts out of the dropdown menu. </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">
-                  Example of a Failure:  A help dialog
-                </emph>
-							     </p>
-            <p>
-                When a field receives focus, a help dialog window describing the field and providing options opens. As a keyboard user tabs through the Web page, the dialog opens, moving the keyboard focus away from the control every time the user attempts to tab past the field.
-              </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.2.1</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G107"
-                       linktype="general">Using "activate" rather than "focus" as a trigger for changes of context</loc>
-								       </p>
-            </item>
-         </olist>
-         <note>
-            <p>A change of content is not always a <loc href="context-changedef"
-                    linktype="glossary">change of context</loc>. This success criterion is automatically met if changes in content are not also changes of context.</p>
-         </note>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.2.1</head>
-         <ulist>
-            <item>
-               <p>Not causing persistent changes of state or value when a component receives focus, or providing an alternate means to reset any changes (future link)</p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G200"
-                       linktype="general">Opening new windows and tabs from a link only when necessary</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G201"
-                       linktype="general">Giving users advanced warning when opening a new window</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item role="script">
-               <p>
-									         <loc href="F52"
-                       linktype="failure">Failure due to opening a new window as soon as a new page is loaded without prior warning</loc>
-								       </p>
-            </item>
-            <item role="script">
-               <p>
-									         <loc href="F55"
-                       linktype="failure">Failure due to using script to remove focus when focus is received</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、利用者がコンテンツ内をナビゲートしている間、コンテンツの機能を予測可能にすることである。フォーカスを受け取ったときにイベントを起動することのできるすべてのコンポーネントは、状況を変化させてはならない。コンポーネントがフォーカスを受け取ったときに起こる状況の変化の例としては、次のようなものが挙げられる：</p>
+<ulist>
+	<item><p>コンポーネントがフォーカスを受け取ると自動的に送信されてしまうフォーム。</p></item>
+	<item><p>フォーカスを受け取ると新しいウィンドウを開くコンポーネント</p></item>
+	<item><p>フォーカスを受け取ると他のコンポーネントにフォーカスを移動するコンポーネント</p></item>
+</ulist>
+<p>フォーカスは、キーボード（例：コントロールへタブ移動）又はマウス（例：テキストフィールドをクリック）のどちらかによって、コントロールへ移動する。マウスポインタをコントロールの上に移動させることは、スクリプトでそのような振る舞いを実装しないかぎり、フォーカスを移動させることにはならない。コントロールの中には、コントロール上でクリックすることによってもそのコントロール（例：ボタン）を起動することがあり、状況の変化を引き起こすことがあることに注意しなければならない。</p>
+
+<div4 role="benefits">
+<head>達成基準 3.2.1 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、状況の変化が予期せず起こる可能性を少なくすることによって、視覚障害、認知能力の低下、及び運動障害のある利用者に役立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.2.1 の事例</head>
+<ulist>
+	<item><p><emph role="bold">事例 1： ドロップダウンメニュー</emph></p><p>ページ上にあるドロップダウンメニューによって、利用者がリンク先を選択できるようになっている。利用者がキーボードを使用して下のほうにある項目を選択して（スペースキー又は Enter キーで）実行すると、新しいページへ移動する。しかし、利用者がドロップダウンメニューにある選択肢に移動した後、Escape キー又は Tab キーでそのプルダウンメニューから抜け出た場合には、フォーカスはドロップダウンの外へ移動するので、新しいページには移動しない。</p></item>
+	<item><p><emph role="bold">不適合事例： ヘルプのダイアログ</emph></p><p>テキストフィールドがフォーカスを受け取ると、そのテキストフィールドについての説明とオプションを提供するヘルプのダイアログウィンドウが開く。キーボードの利用者がウェブページの中を Tab キーで移動していると、利用者がそのテキストフィールドへ Tab キーで移動するたびに、キーボード・フォーカスをコントロールから奪って、ダイアログが開く。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.2.1 の実装方法及び不適合事例 个ｱ オン・フォーカス</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G107" linktype="general">G107： 状況の変化に対するトリガーとして、"focus" ではなく、"activate" を用いる</loc></p></item>
+</olist>
+
+<note>
+<p>コンテンツの変化が常に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="context-changedef" linktype="glossary">状況の変化</loc>であるとは限らない。コンテンツの変化が状況の変化ではない場合、この達成基準は自動的に満たされていることになる。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.2.1 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>コンポーネントがフォーカスを受け取ったときに持続的な状態又は値の変更を発生させない、又はあらゆる変更をリセットするための代替手段を提供する（リンク追加予定）</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G200" linktype="general">必要なときにだけリンク先を新しいウィンドウおよびタブで開く</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G201" linktype="general">新しいウィンドウを開くときにはユーザーに事前に知らせる</loc></p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 3.2.1 のよくある不適合事例</head>
+<ulist>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F52" linktype="failure">F52: 新しいページを読み込むのと同時に、事前の警告なく新しいウィンドウを開いている</loc>
+                </p></item>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F55" linktype="failure">F55： フォーカスを受け取った際に、スクリプトを用いてフォーカスを取り除いている</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

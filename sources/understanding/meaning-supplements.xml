@@ -4,310 +4,135 @@
 <div2 role="extsrc" id="meaning-supplements">
    <head>3.1.5</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>
-            Content should be written as clearly and simply as possible. The intent of this Success Criterion is:</p>
-      <ulist>
-         <item>
-            <p>to ensure that additional content is available to aid the understanding of difficult or complex text;</p>
-         </item>
-         <item>
-            <p>to establish a testable measure indicating when such additional content is required.</p>
-         </item>
-      </ulist>
-      <p>This Success Criterion helps people with reading disabilities while also allowing authors to publish difficult or complex Web content. Text difficulty is described in terms of the level of education required to read the text. Education levels are defined according to the International Standard Classification of Education <bibref ref="UNESCO"/>, which was created to allow international comparison among systems of education. </p>
-      <p>Difficult or complex text may be appropriate for most members of the intended audience (that is, most of the people for whom the content has been created). But there are people with disabilities, including reading disabilities, even among highly educated users with specialized knowledge of the subject matter. It may be possible to accommodate these users by making the text more readable. If the text cannot be made more readable, then supplemental content is needed. Supplemental content is required when text demands reading ability more advanced than the lower secondary education level—that is, more than nine years of school. Such text presents severe obstacles to people with reading disabilities and is considered difficult even for people without disabilities who have completed upper secondary education.</p>
-      <p>Reading disabilities such as dyslexia make it difficult to recognize written or printed words and associate them with the correct sounds. This is called "decoding" the text. Decoding must be automatic in order for people to read fluently. The act of decoding text word by word consumes much of the mental energy that most people are able to use for understanding what they read.
-             Text that uses short, common words and short sentences is easier to decode and usually requires less advanced reading ability than text that uses long sentences and long or unfamiliar words.</p>
-      <p>The education level required to read text content (also called "readability") is measured by analyzing selected passages of text from the Web page. If the Web page includes text written for different purposes or different styles are used, the selected passages include samples of the types of content in the Web page and the different styles in which the content is written. (In many cases, the Web page contains only one kind of text content—e.g., technical documentation, a legal notice, marketing material, etc.—and all the content uses the same style.) </p>
-      <p>Educators can also measure the education level required to read text content. For example, qualified teachers can evaluate text according to local education standards to determine if it requires reading ability beyond what is expected for students in the last year of lower secondary education.</p>
-      <p>Because people's names, the names of cities or other proper names cannot be changed to shorter names with fewer syllables, and because doing so or just referring to everyone by pronouns can make sentences harder to understand, the success criterion specifies that proper names can be ignored or removed from the text before assessing whether it meets the reading ability requirement. Titles refer to the name of documents, books, movies, etc. Titles are removed or ignored for the analysis because changing the words in titles might make the titles easier to read but would make it impossible to understand the item to which the title refers. This would make it harder to read and understand the content. (e.g., a book, academic paper, article, etc.). Therefore, titles are also exempted specifically. </p>
-      <p>When a Web page contains multiple languages, a readability result should be calculated for each language that constitutes at least 5% of the content and that is used in full sentences or paragraphs (not just individual words or phrases). The overall readability of the page should be judged on the language that yields the worst readability results.
-          </p>
-      <p>The readability of content may also be determined by applying a readability formula to the selected passage. Many (though not all) readability formulas base their calculations on passages of 100 words. Such formulas have been developed for many languages.  The number of words in the passage is counted and the length of the words is determined by counting either the number of syllables or the number of characters. Most readability formulas also count the number and length of sentences. The average length of words and sentences in the content is then used to calculate a readability score.  (Some languages, such as Japanese, may include multiple scripts within the same passage. Readability formulas for these languages may use the number and length of such "runs" in their calculations.)  The result may be presented as a number (for example, on a scale from 0-100) or as a grade level.   These results can then be interpreted using the education levels described in the International Standard Classification of Education. Readability formulas are available for at least some languages when running the spell checkers in popular software if you specify in the options of this engine that you want to have the statistics when it has finished checking your documents.
-            
-          </p>
-      <table border="1" id="meaning-supplements_levels">
-         <caption>Levels of education</caption>
-         <tbody>
-            <tr>
-               <th rowspan="1" colspan="1">Primary education </th>
-               <th rowspan="1" colspan="1">Lower secondary education </th>
-               <th rowspan="1" colspan="1">Upper secondary education </th>
-               <th rowspan="1" colspan="1">Advanced education </th>
-            </tr>
-            <tr>
-               <td rowspan="1" colspan="1">First 6 years of school</td>
-               <td rowspan="1" colspan="1">7-9 years of school</td>
-               <td rowspan="1" colspan="1">10-12 years of school</td>
-               <td rowspan="1" colspan="1">More than 12 years of school</td>
-            </tr>
-         </tbody>
-      </table>
-      <p>Adapted from International Standard Classification of Education
-            <bibref ref="UNESCO"/> 
-      </p>
-      <note>
-         <p>According to the Open Society Mental Health Initiative, the concept of Easy to Read cannot be universal, and it will not be possible to write a text that will suit the abilities of all people with literacy and comprehension problems. Using the clearest and simplest language appropriate is highly desirable, but the WCAG Working Group could not find a way to test whether this had been achieved. The use of reading level is a way to introduce testability into a Success Criterion that encourages clear writing. Supplementary content can be a powerful technique for people with some classes of cognitive disability. 
-            </p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <p>This Success Criterion may help people who:</p>
-         <ulist>
-            <item>
-               <p>Have difficulty comprehending and interpreting written language (e.g., articles, instructions, or newspapers in text or braille), for the purpose of obtaining general knowledge or specific information</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <olist>
-         <item>
-            <p>
-								       <emph role="bold">A scientific journal including readable summaries of complex research articles</emph>
-							     </p>
-            <p>A scientific journal includes articles written in highly technical language aimed at specialists in the field.  The journal's Table of Contents page includes a plain-language summary of each article. The summaries are intended for a general audience with eight years of school. The metadata for the journal uses the Dublin Core specification to identify the education level of the articles' intended audience as "advanced," and the education level of the intended audience for the summaries as "lower secondary education."</p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Medical information for members of the public.</emph>
-							     </p>
-            <p>A medical school operates a Web site that explains recent medical and scientific discoveries. The articles on the site are written for people without medical training. Each article uses the Dublin Core metadata specification to identify the education level of the intended audience as "lower secondary education" and includes the Flesch Reading Ease score for the article. A link on each page displays the education level and other metadata. No supplemental content is required because people who read at the lower secondary education level can read the articles.</p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">An e-learning application. </emph>
-							     </p>
-            <p>An on-line course about Spanish cultural history includes a unit on Moorish architecture. The unit includes text written for students with different reading abilities. Photographs and drawings of buildings illustrate architectural concepts and styles. Graphic organizers are used to illustrate complex relationships, and an audio version using synthetic speech is available. The metadata for each version describes the academic level of the content and includes a readability score based on formulas developed for Spanish-language text. The learning application uses this metadata and metadata about the students to provide versions of instructional content that match the needs of individual students.</p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Science information that requires a reading ability at the lower secondary education level.</emph>
-							     </p>
-            <p>The text below (116 words total) requires a reading ability of grade 4.2 in the United States according to the Flesch-Kincaid formula. In the US, grade 4.2 is at the primary education level.</p>
-            <p>Science is about testing — and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p>
-            <p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p>
-            <p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p>
-            <p>Put your window over the thing and look at it closely. Take your time — this is not a race.</p>
-            <p>To help you see more details, draw a picture of what's inside your square.</p>
-            <p>Now let's think about what you've found. </p>
-            <p>
-                  (Source: Howard Hughes Medical Institute "CoolScience for Kids" Project)
-              </p>
-         </item>
-      </olist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>The Plain Language Association INternational (PLAIN) Web site provides many useful resources to help writers produce documents that communicate clearly in a variety of cultural and rhetorical contexts. Refer to: <loc href="http://www.plainlanguagenetwork.org/">http://www.plainlanguagenetwork.org/</loc>.
-</p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://www.plainlanguage.gov ">The US Government's plain language Web site</loc> provides general information about plain language as well as information about use of plain language in US Government documents, including legal requirements</p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://www.plainenglish.co.uk/">The Plain English Campaign Web site</loc> provides useful information and guidance for authors writing in English. </p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</loc> analyzes the readability of all rendered content. 
-                
-              </p>
-         </item>
-         <item>
-            <p>Hall, T., and Strangman, N. CAST: <loc href="http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers">Graphic organizers</loc>. Retrieved 5 April 2005. This article illustrates several different kinds of graphic organizers, explains how each type may be useful, and summarizes research findings that graphic organizers support learning, especially among students with learning disabilities. </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Entry for Audience Education Level. Using Dublin Core – Dublin Core Qualifiers</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.imsglobal.org/profiles/lipinfo01.html#tab6.3">IMS Learner Information Packaging Model Information Specification, Table 6.3  "accessibility" learner information data structure detailed description</loc>
-							     </p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://www.textquest.de/pages/en/analysis-of-texts/readability-analysis.php">TextQuest.de</loc> lists references for readability formulas for different languages, including English, German, Spanish, Dutch, French, and Swedish.</p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://taalunieversum.org/publicaties/geletterd_in_de_lage_landen/richtlijnen.php"
-                    hreflang="de"
-                    xml:lang="de">
-                    Richtlijnen Keurmerk Makkelijk Lezen
-                  </loc> are the guidelines used by the <phrase xml:lang="de">Stichting Makkelijk Lezen</phrase> (Easy Reading Foundation). 
-                
-              </p>
-         </item>
-         <item>
-            <p>
-               <loc href="http://www.leesbaarnederlands.nl/"
-                    xml:lang="nl"
-                    hreflang="nl">
-                    Leesbaar Nederlands
-                  </loc> ("Readable Dutch") contains guidelines for writing text that is accessible for people with a reading disability. These guidelines address language, content and design.  
-                
-              </p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://toetswijzer.kennisnet.nl/html/tg/4.pdf"
-                    hreflang="nl"
-                    xml:lang="nl">
-                    Wetenschappelijke verantwoording van de toetsserie Leestechniek &amp; Leestempo
-                  </loc> describes the CILT (<phrase xml:lang="nl">CITO index voor leestechniek</phrase> - CITO index for reading ability), the formulas developed by the Dutch organization <loc href="http://www.cito.nl/"
-                    hreflang="nl">CITO</loc> that relate readability to education level.   
-                
-              </p>
-         </item>
-         <!--item>
-              <p>
-                <loc href="http://www.who.int/classifications/icf/site/onlinebrowser/icf.cfm?parentlevel=3&amp;childlevel=4&amp;itemslevel=4&amp;ourdimension=d&amp;ourchapter=1&amp;ourblock=3&amp;our2nd=66&amp;our3rd=0&amp;our4th=0">d166 Reading</loc> 2001. International Classification of Functioning, Disabilities, and Health. World Health Organization. See also <loc href="http://www.who.int/classifications/icf/site/onlinebrowser/icf.cfm?parentlevel=5&amp;childlevel=6&amp;itemslevel=6&amp;ourdimension=b&amp;ourchapter=1&amp;ourblock=2&amp;our2nd=67&amp;our3rd=0&amp;our4th=1">b16701  Reception of written language</loc>: mental functions of decoding written messages to obtain their meaning</p>
-            </item-->
-         <item>
-            <p>
-								       <loc href="http://www.inclusion-europe.org/etr/">European Easy-to-Read Guidelines</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests">Flesch-Kincaid Readability Test</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.1.5</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G86"
-                       linktype="general">Providing a text summary that requires reading ability less advanced than the upper secondary education level</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G103"
-                       linktype="general">Providing visual illustrations, pictures, and symbols to help explain ideas, events, and processes</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G79"
-                       linktype="general">Providing a spoken version of the text</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G153"
-                       linktype="general">Making the text easier to read</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G160"
-                       linktype="general">Providing sign language versions of information, ideas, and processes that must be understood in order to use the content</loc>
-								       </p>
-            </item>
-         </olist>
-         <note>
-            <p>Different sites may address this Success Criterion in different ways. An audio version of the content may be helpful to some users. For some people who are deaf, a sign language version of the page may be easier to understand than a written language version since sign language may be their first language. 
-                 Some sites may decide to do both or other combinations. No technique will help all users who have difficulty. So different techniques are provided as sufficient techniques here for authors trying to make their sites more accessible. Any numbered technique or combination above can be used by a particular site and it is considered sufficient by the Working Group.</p>
-         </note>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.1.5</head>
-         <ulist>
-            <item>
-               <p>
-        Providing text for navigational and landing pages that requires reading ability that is less advanced than the lower secondary education level (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Providing text for interior pages that requires reading ability at the lower secondary education level (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Including content summaries in metadata (future link)
-    </p>
-            </item>
-            <item>
-               <p>Using the clearest and simplest language appropriate for the content (future link) 
-                </p>
-            </item>
-            <item>
-               <p>
-        Using RDF to associate supplements with primary content (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Providing a clear representational image on the site's home page (future link)
-    </p>
-            </item>
-            <item>
-               <p>Clearly marking, by use of text or icon, content which has been optimized for easy reading (future link)
-                </p>
-            </item>
-            <item>
-               <p> Using sentences that contain no redundant words, that is, words that do not change the meaning of the sentence (future link) 
-                </p>
-            </item>
-            <item>
-               <p> Using sentences that contain no more than two conjunctions (future link)
-                </p>
-            </item>
-            <item>
-               <p> Using sentences that are no longer than the typical accepted length for secondary education (Note: In English that is 25 words) (future link)
-                </p>
-            </item>
-            <item>
-               <p> Using sentences that do not contain complex words or phrases that could be replaced with more commonly used words without changing the meaning of the sentence (future link)
-                </p>
-            </item>
-            <item>
-               <p> Providing summaries for different sections of text  (future link)
-                </p>
-            </item>
-            <item>
-               <p>Using metadata to associate alternatives at different reading levels. (future link) </p>
-            </item>
-            <item>
-               <p>Using the Dublin Core accessibility element to associate text content with text, graphical, or spoken supplements (future link) </p>
-            </item>
-            <item>
-               <p>Using the ISO AfA accessibility element to associate text  content with text, graphical, or spoken supplements (future link) </p>
-            </item>
-            <item>
-               <p>Using the IMS accessibility element to associate text content with text, graphical, or spoken supplements (future link) </p>
-            </item>
-            <item>
-               <p>Making metadata viewable by humans (future link)</p>
-               <ulist>
-                  <item>
-                     <p>EXAMPLE: Providing, in metadata, URI(s) that point to  a pre-primary-reading-level and a primary-reading-level text transcript  of a new scientific discovery advanced-reading-level article. </p>
-                  </item>
-               </ulist>
-            </item>
-            <item>
-               <p>Providing progressive complexity for site and page content (future link) </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>コンテンツは、可能な限り明快かつ簡潔に書かれているべきである。この達成基準の意図は以下の通りである：</p>
+<ulist>
+	<item><p>難解又は複雑な文章を理解しやすくするために、補足的コンテンツを提供すること。</p></item>
+	<item><p>そのような補足的コンテンツがどういうときに必要なのかを示すテスト可能な基準を定めること。</p></item>
+</ulist>
+<p>この達成基準は、コンテンツ制作者が難しい又は複雑なウェブコンテンツを公開できるようにしながらも、読字障害のある利用者の手助けとなる。文章の難しさは、それを読むのに必要とされる教育の水準という観点から説明されている。教育レベルは、教育システムを国際的に比較できるようにするために作成された国際標準教育分類 <bibref ref="UNESCO"/> に従って定義している。</p>
+<p>難しい又は複雑な文章が、想定した利用者層のほとんど（つまり、コンテンツの対象者のほとんど）に対しては適切なこともある。しかし、その分野における専門的な知識を持つ高学歴の利用者の中にも、読字障害を含めて、障害のある利用者がいる。文章をより読みやすくすることで、そういった利用者にも対処することが可能である。文章をそれ以上読みやすくすることができない場合には、補足的コンテンツが必要となる。補足的コンテンツが必要となるのは、その文章が前期中等教育レベル以上の読解力が求められる場合である。つまり、9年よりも長い学校教育を受けている必要がある場合である。補足的コンテンツが必要となるような文章は、読字障害のある利用者にとっては深刻な障壁となり、後期中等教育を修了した障害のない利用者にとっても難解であると考えられている。</p>
+<p>書かれた単語又は印刷された単語を認識して、正しい音と関連付ける処理を文章の「復号化」という。ディスレクシア（失読症）などの読字障害は、文章の復号化をしづらくする。 復号化は、人がすらすらと読むためには、無意識に行われるものである。文章を1単語ずつ復号化しなければならない場合、多くの人が自分の読んでいるものを理解するために用ている精神的なエネルギーの多くを、この行為に消費しなければならないことになる。簡潔でよく使われる単語及び簡潔な文を用いた文章は復号化しやすく、長文及び長い単語又は馴染みのない単語を用いている文章ほどの読解力を通常は必要としないものである。</p>
+<p>テキストのコンテンツを読むのに必要な教育レベル（リーダビリティ (readability) とも呼ばれる）は、ウェブページ上の文章から抽出した節を解析することで測定することができる。ウェブページに異なる目的で書かれた文章、又は異なるスタイルを用いた文章がある場合は、ウェブページにあるコンテンツの種類のサンプル、及びそのコンテンツが書かれている異なるスタイルのサンプルを含める（多くの場合、ウェブページには、1つの種類のテキストコンテンツしかない。例えば、技術的な文書、法律上の表示、マーケティング素材など。そして、すべてのコンテンツは同じスタイルを用いている）。</p>
+<p>教育者もまた、テキストコンテンツを読むのに必要とされる教育レベルを測定することができる。例えば、資格のある教師は、前期中等教育の最終学年の生徒に要求される以上の読解力を必要とするかどうかを判断するために、ローカルの教育標準に従って文章を評価することができる。</p>
+<p>人名、都市名、又はその他の固有名詞を変更して短くすることはできないため、そしてそうすることや単に代名詞でそれらを指すことは文章を理解しづらくする恐れがあるため、この達成基準では、読解力の要件を満たしているかどうかを検証する際には、固有名詞を無視するか文章から取り除くことができるとしている。タイトルは、文書、書籍、映画などの名前のことを指している。タイトルにある文言を変更してしまうと、読みやすくはなるかもしれないが、そのタイトルがどのアイテムを指しているのかが分からなくなってしまうため、分析する際にはタイトルを削除するか無視してもよい。そのため、タイトルも、明確に適用対象外となる。</p>
+<p>ウェブページに複数の言語があるときは、リーダビリティの検証結果は、コンテンツの少なくとも5％を占めていて、全文又は段落全体で使われている言語ごとに算出すべきである（個々の単語又は語句だけというのは除く）。そして、そのページ全体のリーダビリティは、最も悪い結果を出した言語で判断しなければならない。</p>
+<p>また、コンテンツのリーダビリティは、抽出した節にリーダビリティの計算式を適用することで判断できることもある。（すべてではないが）多くのリーダビリティの計算式は、100ワードで計算している。そのような計算式が、多くの言語に対して作られている。その節にある単語の数を数えて、単語の長さを音節の数又は文字数のどちらかを数えて判断している。ほとんどのリーダビリティ計算式は、文の長さと数も考慮に入れている。そして、コンテンツの単語及び文の平均的な長さを用いて、リーダビリティのスコアを算出している（日本語のような言語では、同じ節の中に2種類の文字が含まれていることがある。このような言語のリーダビリティ計算式は、その「連続」の数及び長さも計算に入れているかもしれない）。計算結果は、数字（例えば、0箸ｷ100の範囲）又は学年で提示される。そして、この結果を国際標準教育分類にある教育レベルを用いて評価することができる。リーダビリティの計算式は、少なくともいくつかの言語では、人気のあるソフトウェアのスペルチェック機能で利用可能で、オプションで文書のチェック完了時にリーダビリティの解析結果も表示するように指定することができる。</p>
+
+<table border="1">
+<caption>教育レベル</caption>
+<tbody>
+<tr>
+	<th rowspan="1" colspan="1">初等教育</th>
+	<th rowspan="1" colspan="1">前期中等教育</th>
+	<th rowspan="1" colspan="1">後期中等教育</th>
+	<th rowspan="1" colspan="1">高等教育</th>
+</tr>
+<tr>
+	<td rowspan="1" colspan="1">学校教育の最初の6年</td>
+	<td rowspan="1" colspan="1">学校教育の7〜9年目</td>
+	<td rowspan="1" colspan="1">学校教育の10〜12年目</td>
+	<td rowspan="1" colspan="1">13年目以降の学校教育</td>
+</tr>
+</tbody>
+</table>
+<p>出典： 国際標準教育分類 <bibref ref="UNESCO"/></p>
+
+<note>
+<p>Open Society Mental Health Initiative によれば、読みやすさの概念は万国共通ではなく、読み書きと理解に問題を抱えたすべての人の能力に合致する文章を書くことは不可能だろうといわれている。最も明快で、かつ最も簡易な言葉遣いを用いることが非常に望ましいが、WCAG ワーキンググループではそれが達成されているかどうかを検証する方法を見つけることができなかった。読解レベルを用いているのは、明快な文章を推奨する達成基準にテスト可能性を持たせるためである。認知の障害の種類や程度によっては、補足的コンテンツを提供することが効果的な実装方法の一つとなりえる。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 3.1.5 の具体的なメリット</head>
+<p>この達成基準は、次のような利用者にメリットがある：</p>
+<ulist>
+	<item><p>一般的な知識又は特定の情報を得るために、書き言葉（例： テキストあるいは点字の記事、説明文、又は新聞記事）を理解して解釈するのが困難である。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準  の事例 3.1.5</head>
+<olist>
+	<item><p><emph role="bold">複雑な研究記事の読みやすい要約がある科学雑誌</emph></p><p>ある科学雑誌には、その分野の専門家を対象とした、とても専門的な言葉遣いで書かれた記事がある。その雑誌の目次ページには、各記事の要約が平易な言葉で書かれている。その要約は、8年間の学校教育を受けた一般読者を想定している。また、雑誌のメタデータには、Dublin Core（ダブリン・コア）の仕様を用いて、記事の想定している読者の教育レベルを「高等教育」、要約の想定している読者の教育レベルを「前期中等教育」と示してある。</p></item>
+	<item><p><emph role="bold">一般会員向けの医療情報</emph></p><p>ある医科大学が、最近の医学的及び科学的発見を説明するウェブサイトを運営している。そのサイトの記事は、医療の知識のない人向けに書かれている。各記事では、Dublin Core（ダブリン・コア）のメタデータの仕様を用いて、想定している読者の教育レベルを「前期中等教育」と示し、その記事の Flesch Reading Ease のスコアも提供している。各ページにあるリンクをたどることで、教育レベル及びその他のメタデータを表示することができる。前期中等教育レベルの読者がその記事を読むことができるので、補足的コンテンツは必要ない。</p></item>
+	<item><p><emph role="bold">E-ラーニング・アプリケーション</emph></p><p>スペインの文化史に関するオンラインコースに、ムーア建築に関する単元がある。その単元のテキストは、様々な読解レベルを持った学生向けに書かれている。建築物の写真や画で、建築のコンセプト及び様式を図示している。グラフィック・オーガナイザーを用いて文章の複雑な関係性を図式化し、合成音声を用いた音声バージョンも提供している。各バージョンのメタデータでコンテンツの教育レベルを示し、スペイン語のテキスト向けに開発された計算式に基づくリーダビリティのスコアもある。この E-ラーニング・アプリケーションは、このメタデータ及び学生に関するメタデータを用いて、個々の学生のニーズに合ったバージョンの教材を提供している。</p></item>
+	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト（合計116ワード）は、Flesch-Kincaid式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>
+                  （出典: Howard Hughes Medical Institute <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.hhmi.org/coolscience/forkids/inchsquare/">http://www.hhmi.org/coolscience/forkids/inchsquare/</loc>）
+              </p></item>
+</olist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>Plain Language Audit Toolは、文書を編集してより明解かつ「簡単な表現」にすることができるかどうかを判定するためのチェックリストを提供している。このチェックリストには、リーダビリティの評価のための項目も含まれている。Plain Language Audit Toolは、カナダの Northwest Territories Literacy Council <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.nwt.literacy.ca/resources/plainlang/auditool/cover.htm">http://www.nwt.literacy.ca/resources/plainlang/auditool/cover.htm</loc>から入手できる。</p></item>
+	<item><p>Plain Language Association INternational (PLAIN)のウェブサイトでは、様々な文化的、修辞的な文脈において、文書制作者がより明解な表現をするための多くのリソースが提供されている。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguagenetwork.org/">http://www.plainlanguagenetwork.org/</loc>参照。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguage.gov/">米国政府の plain languageウェブサイト</loc>では、簡単な表現 (plain language)に関する一般的情報に加えて、法的な要件を含む米国政府関連文書におけるplain languageの使用に関する情報が提供されている。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainenglish.co.uk/">The Plain English Campaignのウェブサイト</loc>では、英語で文書作成を行う場合に有用な情報や指針が提供されている。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</loc>は、表示されたすべてのコンテンツのリーダビリティの解析を行う。</p></item>
+	<item><p>Hall, T., and Strangman, N. CAST: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers">Graphic organizers</loc>. 2005年4月5日現在。この記事では、数種類の異なるグラフィック・オーガナイザについて概観し、それぞれの種類のグラフィック・オーガナイザがどのような場合に有用であるかを説明している。その上で、グラフィック・オーガナイザが学習において、特に学習障害がある学生にとって有用であるという研究結果の概要を示している。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Entry for Audience Education Level. Using Dublin Core ? Dublin Core Qualifiers</loc></p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.imsglobal.org/profiles/lipinfo01.html#tab6.3">IMS Learner Information Packaging Model Information Specification, Table 6.3  "accessibility" learner information data structure detailed description</loc>
+              </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.textquest.de/lesbar.htm">TextQuest.de</loc>には、英語、ドイツ語、スペイン語、オランダ語フランス語及びスウェーデン語を含む多くの原語におけるリーダビリティの計算式のリストが提供されている。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://taalunieversum.org/onderwijs/publicaties/geletterd_in_de_lage_landen/richtlijnen.php">Richtlijnen Keurmerk Makkelijk Lezen</loc>は、Stichting Makkelijk Lezen (Easy Reading Foundation)が用いているガイドラインである。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.leesbaarnederlands.nl/">Leesbaar Nederlands</loc>（"Readable Dutch"「読みやすいオランダ語」）では、読字障害のある人にとってアクセシブルな文書の書き方に関するガイドラインが提供されている。このガイドラインでは、言葉遣い、内容及びデザインについて示されている。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://toetswijzer.kennisnet.nl/html/tg/4.pdf">Wetenschappelijke verantwoording van de toetsserie Leestechniek &amp; Leestempo</loc>は、オランダの組織<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.cito.nl/">CITO</loc>が開発した、リーダビリティと教育レベルを関連づける計算式、CILT (CITO index voor leestechniek - CITO読解力インデックス)について解説している。</p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.inclusion-europe.org/etr/">European Easy-to-Read Guidelines</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://en.wikipedia.org/wiki/Flesch-Kincaid_Readability_Test">Flesch-Kincaid Readability Test</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.1.5 の実装方法及び不適合事例 － 読解レベル</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G86" linktype="general">G86： 中学校教育レベルを超えた読解力を必要としないテキストで要約を提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G103" linktype="general">G103： 視覚的な図画、写真及びシンボルを提供して、アイデア、イベント及びプロセスを説明する手助けをする</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G79" linktype="general">G79： テキストの音声バージョンを提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G153" linktype="general">G153： テキストを読みやすくする</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G160" linktype="general">G160： コンテンツを利用するために理解しなければならない情報、アイデア及びプロセスの手話バージョンを提供する</loc> </p></item>
+</olist>
+
+<note>
+<p>この達成基準には、サイトによって異なる方法で対処することができる。コンテンツの音声バージョンは、ある利用者に対しては有用であるし、また聴覚障害のある利用者にとっては、手話が彼らにとっての第一言語であることもあるので、ページの手話バージョンのほうが書き言葉のバージョンよりも理解しやすいかもしれない。中には、音声と手話の両方のバージョン又はその他の組合せを提供するサイトがあってもよい。どの実装方法も、問題を抱える利用者すべてに役立つわけではない。そのため、サイトをよりアクセシブルにしようとしているコンテンツ制作者のために、ここでは様々な実装方法が達成基準を満たすことのできる実装方法として挙げられている。上記の番号の付いた実装方法又はその組合せを用いることが可能で、WCAG ワーキンググループではこれで達成基準に適合するには十分であると考えている。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.1.5 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>前期中等教育レベル以上の読解力を必要としないテキストを用いて、ナビゲーション用のページとランディングページを提供する（リンク追加予定） </p></item>
+	<item><p>前期中等教育レベル以上の読解力を必要としないテキストを用いて、サイト内のページを提供する（リンク追加予定）</p></item>
+	<item><p>コンテンツの概要をメタデータの一部とし提供する（リンク追加予定）</p></item>
+	<item><p>コンテンツに適した最も明解で最も単純な表現を使用する（リンク追加予定） </p></item>
+	<item><p>RDFを用いて、補足的コンテンツと主たるコンテンツに関連づける（リンク追加予定）</p></item>
+	<item><p>サイトのホームページにそのサイトを表す分かりやすい画像を掲載する（リンク追加予定）</p></item>
+	<item><p>読みやすいように最適化されたコンテンツであることが分かるように、テキストやアイコンを用いて明示する（リンク追加予定）</p></item>
+	<item><p>冗長な単語の使い方、すなわち文の意味を変えない異なる単語を用いないで文を構成する（リンク追加予定）</p></item>
+	<item><p> 二つより多い接続詞を含む文を使わない（リンク追加予定）</p></item>
+	<item><p>中等教育レベルで一般的に容認されている長さを超えない文を用いる（注記: 英語では25ワードである）（リンク追加予定） </p></item>
+	<item><p>複雑な単語又は語句で、より一般的な言葉で置き換えても文の意味が変わらない場合、複雑な単語や語句を含まない文を用いる（リンク追加予定） </p></item>
+	<item><p>テキストの複数の章や節の概要を提供する（リンク追加予定）</p></item>
+	<item><p>メタデータを用いて、異なる読解力を想定して作られた代替コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>ダブリン・コアのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>ISO AFAのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>IMSのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>メタデータを利用者に見えるようにする（リンク追加予定）</p><ulist><item><p>事例：新しい科学的発見に関する高等レベルの記事の初頭レベル以下及び初頭レベルの版へのURIをメタデータとして提供する</p></item></ulist></item>
+	<item><p>サイトとページのコンテンツに進展する複雑性を与える（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 3.1.5 のよくある不適合事例</head>
+</div4>
+</div3>
 </div2>

@@ -5,75 +5,61 @@
    <head>2.1.2</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that that content does not "trap" keyboard focus within subsections of content on a Web page. This is a common problem when multiple formats are combined within a page and rendered using plug-ins or embedded applications.</p>
-      <p>There may be times when the functionality of the Web page restricts the focus to a subsection of the content, as long as the user knows how to leave that state and "untrap" the focus.</p>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>People who rely on a keyboard or keyboard interface to use the Web including people who are blind and people with physical disabilities.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples of this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">A calendar widget</emph>
-							     </p>
-            <p>A calendar widget allows users to add, remove or update items in their calendar using the keyboard. The controls in the widget are part of the tab order within the Web page, allowing users to tab through the controls in the widget as well as to any links or controls that follow.</p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">A puzzle applet</emph>
-							     </p>
-            <p>Once a user tabs into an applet, further tabs and other keystrokes are handled by the applet. Instructions describing the keystroke used to exit the applet are provided prior to the applet as well as within the applet itself.</p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">A modal dialog box</emph>
-							     </p>
-            <p>A Web application brings up a dialog box. At the bottom of the dialog are two buttons, Cancel and OK. When the dialog has been opened, focus is trapped within the dialog; tabbing from the last control in the dialog takes focus to the first control in the dialog. The dialog is dismissed by activating the Cancel button or the OK button.</p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-   </div3>
-   <div3 role="techniques">
-      <head>Technqiues for this Success Criterion</head>
-      <div4 role="sufficient">
-         <head>Sufficient Techniques</head>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G21"
-                       linktype="general">Ensuring that users are not trapped in content</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="FLASH17"
-                       linktype="flash">Preventing a keyboard trap in Flash content</loc>
-								       </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Advisory Techniques</head>
-      </div4>
-      <div4 role="failures">
-         <head/>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F10"
-                       linktype="failure">Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+
+<p>この達成基準の意図は、コンテンツがウェブページ上の一部分にキーボード・フォーカスを「閉じ込める」ことのないようにすることである。これは、1ページ中に複数のフォーマットが組み合わされていて、プラグイン又は埋め込みアプリケーションで描画される際によく起こる問題である。</p>
+<p>ただし、その状態を抜け出してフォーカスを「閉じ込められない」ようにする方法を利用者が分かっているのであれば、ウェブページの機能がフォーカスの移動をコンテンツの一部分に限定しているときがあってもよいのかもしれない。</p>
+
+<div4 role="benefits">
+<head>Benefits of this Success Criterion</head>
+<ulist>
+	<item><p>全盲の利用者及び身体障害のある利用者など、キーボード又はキーボード・インタフェースだけを使用している利用者がウェブコンテンツを利用できるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>Examples of this Success Criterion</head>
+<ulist>
+	<item><p>
+                <emph role="bold">カレンダーのプログラム</emph>
+              </p><p>カレンダーのプログラムは、利用者がキーボードを用いてそのカレンダーに項目の追加、削除又は更新することができるようになっている。プログラムにあるコントロールは、ウェブページ内の Tab キーによるフォーカス移動の一つで、あらゆるリンク又はコントロールと同様に利用者がプログラムのコントロールもTabキーで移動できる。</p></item><item><p>
+                <emph role="bold">パズルのアプレット</emph>
+              </p><p>利用者が Tab キーでフォーカスをアプレットの中に入れると、そこから先のフォーカス移動及びその他の打けんはアプレットが処理することになる。そして、そのアプレットから抜け出すのに用いる打けんに関する命令は、そのアプレットの中にあるのと同様に、アプレットに入る前に提供されている。</p></item>
+	<item><p>
+                      <emph role="bold">モーダル・ダイアログボックス</emph>
+                  </p><p>ウェブアプリケーションが、ダイアログボックスを立ち上げる。そのダイアログボックスの下部には、「キャンセル」と「OK」の二つのボタンがある。ダイアログボックスが開くと、フォーカスはそのダイアログボックスから外へ抜け出せなくなる。ダイアログボックスの最後のコントロールで Tab キーを押すと、フォーカスはダイアログボックスの最初のコントロールへ移動する。「キャンセル」ボタン又は「OK」ボタンを押下すると、そのダイアログボックスは閉じられる。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準2.1.2 の実装方法及び不適合事例 - フォーカス移動</head>
+<div4 role="sufficient">
+<head>達成基準を満たすことのできる実装方法 </head>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G21" linktype="general">利用者がコンテンツ内に閉じ込められないようにする</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH17" linktype="flash">Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する</loc>
+                </p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.1.2 でさらに対応が望まれる実装方法（参考） </head>
+</div4>
+
+<div4 role="failures">
+<head/>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F10" linktype="failure">F10: 達成基準 2.1.2 及び 適合要件 5 の不適合事例 － 利用者が一つのフォーマットの中に閉じ込められてしまうように、複数のコンテンツ・フォーマットを組み合わせている</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

@@ -4,121 +4,62 @@
 <div2 id="consistent-behavior-consistent-locations" role="extsrc">
    <head>3.2.3</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to encourage the use of consistent presentation and layout for users who interact with repeated content within 
-             a set of Web pages and need to locate specific information or functionality more than once.
-            Individuals with low vision who use screen magnification to display a small portion of the screen at a time often use visual cues and page boundaries to quickly locate repeated content.
-            Presenting repeated content in the same order is also important for visual users who use spatial memory or visual cues within the design to locate repeated content.
-          </p>
-      <p>It is important to note that the use of the phrase "same order" in this section is not meant to imply that subnavigation menus cannot be used or that blocks of secondary navigation or page structure cannot be used. Instead, this Success Criterion is intended to assist users who interact with repeated content across Web pages to be able to predict the location of the content they are looking for and find it more quickly when they encounter it again. 
-          </p>
-      <p>Users may initiate a change in the order by using adaptive user agents or by setting preferences so that the information is presented in a way that is most useful to them.
- 
-            
-          </p>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>Ensuring that repeated components occur in the same order on each page of a site helps users become comfortable that they will able to predict where they can find things on each page. This helps users with <emph role="bold">cognitive limitations</emph>, users with <emph role="bold">low vision</emph>, users with <emph role="bold">intellectual disabilities</emph>, and also those who are <emph role="bold">blind</emph>. 
-              </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">A consistently located control</emph>
-							     </p>
-            <p>A search field is the last item on every Web page in a site. users can quickly locate the search function. 
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">An expanding navigation menu</emph>
-							     </p>
-            <p>A navigation menu includes a list of seven items with links to the main sections of a site.
-                When a user selects one of these items, a list of subnavigation items is inserted into the top-level navigation menu.
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Consistently positioned skip navigation controls</emph>
-							     </p>
-            <p>A "skip navigation" (or "skip to main content") link is included as the first link on every page in a Web site. The link allows users to quickly bypass heading information and navigational content and begin interacting with the main content of a page.
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Skip to navigation link</emph>
-							     </p>
-            <p>Navigational content is consistently located at the end of each page in a set of Web pages. A "skip to navigation" link is consistently located at the beginning of each page so that keyboard users can easily locate it when needed. </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>Detweiler, M.C. and Omanson, R.C. (1996), Ameritech Web Page User Interface Standards and Design Guidelines.</p>
-         </item>
-         <item>
-            <p> 
-               <loc href="http://www-03.ibm.com/able/access_ibm/disability.html">Understanding disability issues when designing Web sites</loc>.</p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.2.3</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G61"
-                       linktype="general">Presenting repeated components in the same relative order each time they appear</loc>
-								       </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.2.3</head>
-         <ulist>
-            <item>
-               <p>
-                  <loc href="PDF14" linktype="pdf"/>
-               </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="PDF17" linktype="pdf"/>
-               </p>
-            </item>
-            <item>
-               <p>
-        Using templates to ensure consistency across multiple Web pages (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Creating layout, positioning, layering, and alignment (future link)
-    </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head/>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F66"
-                       linktype="failure">Failure of 3.2.3 due to presenting navigation links in a different relative order on different pages</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、ウェブページ一式の中で繰り返し用いられるコンテンツを利用し、特定の情報又は機能を複数回にわたって見つける必要がある利用者のために、一貫したプレゼンテーション及びレイアウトの使用を推奨することである。画面拡大ソフトを使用して一度に画面の限られた狭い領域を表示しているロービジョンの利用者は、繰り返し用いられてるコンテンツの位置を素早く確認するために、視覚的な手がかり及びページの境界線を用いていることがよくある。繰り返し用いられるコンテンツを同じ順序で提示することは、そのコンテンツの位置を確認するためにデザインの空間的記憶又は視覚的な手がかりを用いている、画面を見ている利用者に対しても重要なことである。</p>
+<p>ここで用いている「同じ順序」という表現が、サブナビゲーション・メニューを使用してはならないとか、サブナビゲーションのブロック又はページ構造を使用してはならないという意味ではないということが重要である。そうではなく、この達成基準が意図しているのは、複数のウェブページで繰り返し用いられているコンテンツを利用している利用者が、自分の探しているコンテンツの位置を予測できるようにして、より素早く見つけることができるようにすることである。</p><p>利用者は、自分に最も有用なかたちで情報が提供されるように、ユーザーエージェントを用いて、又は利用者設定を行って、順序を変更していることがある。</p>
+
+<div4 role="benefits">
+<head>達成基準 3.2.3 の具体的なメリット</head>
+<ulist>
+	<item><p>繰り返し用いられているコンテンツを、サイトの各ページで同じ順序で提示することによって、利用者が各ページのどこにそれがあるのかを予測できるようになり、快適に利用できるようになる。これは、<emph role="bold">認知能力の低下</emph>している利用者、<emph role="bold">ロービジョン</emph>の利用者、<emph role="bold">知的障害</emph>のある利用者に加えて、<emph role="bold">全盲</emph>の利用者にも役立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.2.3 の事例</head>
+<ulist>
+	<item><p><emph role="bold">一貫して配置されているコントロール</emph></p><p>検索のテキストフィールドが、そのサイト上のすべてのページ上で最後に配置されていて、利用者はすぐに検索機能を見つけることができる。</p></item>
+	<item><p><emph role="bold">展開するナビゲーションメニュー</emph></p><p>ナビゲーションメニューに、サイトの主要コーナーへの7つのリンクがある。利用者がその項目の一つを選択すると、サブナビゲーション項目のリストが、ナビゲーションメニューに挿入される。</p></item>
+	<item><p><emph role="bold">一貫して配置されているスキップ・ナビゲーションのコントロール</emph></p><p>ウェブサイトにあるすべてのページ上に、「本文へジャンプする」というリンクが一番最初のリンクとして配置されている。そのリンクによって、利用者はヘッダーの情報及びナビゲーション部分をスキップして、ページのメインコンテンツ部分の開始位置へ移動することができる。 </p></item>
+	<item><p><emph role="bold">ナビゲーションへのスキップリンク</emph></p><p>ウェブサイト内の書くウェブページの最後にナビゲーションがある。キーボード利用者が、必要なときに容易に見つけられるように、「ナビゲーションへジャンプする」リンクは一貫して各ページの先頭にある。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>Detweiler, M.C. and Omanson, R.C. (1996), Ameritech Web Page User Interface Standards and Design Guidelines.</p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www-03.ibm.com/able/access_ibm/disability.html">Understanding disability issues when designing Web sites</loc>.</p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.2.3 の実装方法及び不適合事例 － 一貫したナビゲーション</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G61" linktype="general">G61： 繰り返されるコンポーネントが表示されるたびに、それを相対的に同じ順序で提示する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF14" linktype="pdf">PDF 文書内に連続するヘッダとフッタを提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF17" linktype="pdf">PDF 文書に一貫性のあるページ番号を指定する</loc></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.2.3 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>複数のウェブページの間で一貫性を保つためにテンプレートを利用する（リンク追加予定）</p></item>
+	<item><p>レイアウト、位置、階層、配置を作る（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F66" linktype="failure">F66: 達成基準 3.2.3 の不適合事例：　ナビゲーションリンクを様々なページで相対的に異なる順序で提示する</loc></p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

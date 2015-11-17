@@ -3,23 +3,22 @@
   SYSTEM "../xmlspec.dtd">
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="text-equiv">
    <head>1.1</head>
-   <div2 id="text-equiv-intent" role="glintent">
-      <head>Intent</head>
-      <p>The purpose of this guideline is to ensure that all non-text content is also available in <loc href="textdef"
-              linktype="glossary">text</loc>. "Text" refers to electronic text, not an image of text. Electronic text has the unique advantage that it is presentation neutral. That is, it
-        can be rendered visually, auditorily, tactilely, or by any combination. As a result, information rendered in electronic text can be presented in whatever form best meets the needs of the user. It can also be easily enlarged, spoken aloud so that it is easier for people with reading disabilities to understand, or rendered in whatever tactile form best meets the needs of a user.</p>
-      <note>
-         <p>While changing the content into symbols includes changing it into graphic symbols for people with developmental disorders and speech comprehension difficulties, it is not limited to this use of symbols.</p>
-      </note>
-   </div2>
-   <div2 id="text-equiv-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>Providing sign language videos for audio-only files (future link)
-            </p>
-         </item>
-      </ulist>
-   </div2>
+      <div2 id="text-equiv-intent" role="glintent">
+      <head>意図</head>
+<p>このガイドラインの目的は、すべての非テキストコンテンツが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="textdef" linktype="glossary">テキスト</loc>でも利用可能であるようにすることである。「テキスト」とは、電子テキストのことを指し、画像化された文字のことではない。電子テキストには、表現形態が定まらないという優れた利点がある。すなわち、テキストは、視覚的にも、聴覚的にも、触覚的にも、あるいはそれらのどのような組合せによっても描画可能だということである。つまり、電子テキストで描画される情報は、利用者のニーズを最もよく満たすどのような形態でも提供可能なのである。また、テキストは、容易に拡大することが可能であり、音声読み上げが可能なので、読字障害のある利用者にとっても理解しやすく、利用者のニーズを最もよく満たすどんな触覚的な形態でも描画可能である。
+</p>
+
+<note>
+<p>コンテンツをシンボルに変換することは、発達障害や発話理解困難のある利用者のためにグラフィック・シンボルに変換することを含むが、そういったシンボルの使い方に限定するわけではない。</p>
+</note>
+</div2>
+
+<div2 id="text-equiv-advisory" role="gladvisory">
+<head>ガイドライン N.N の参考にすべき実装方法</head>
+
+<ulist>
+	<item><p>音声しか含まないファイルに手話ビデオを提供する（リンク追加予定）</p></item>
+</ulist>
+</div2>
    <xi:include href="text-equiv-all.xml"/>
 </div1>

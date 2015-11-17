@@ -4,20 +4,18 @@
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="ensure-compat">
    <head>4.1</head>
    <div2 id="ensure-compat-intent" role="glintent">
-      <head>Intent</head>
-      <p>The purpose of this guideline is to support compatibility with current and future user agents, <emph>especially</emph> assistive technologies (AT). This is done both by 1) ensuring that authors do not do things that would break AT (e.g., poorly formed markup) or circumvent AT (e.g., by using unconventional markup or code) and 2) exposing information in the content in standard ways that assistive technologies can recognize and interact with. Since technologies change quickly, and AT developers have much trouble keeping up with rapidly changing technologies, it is important that content follow conventions and be compatible with APIs so that AT can more easily work with new technologies as they evolve.</p>
-   </div2>
-   <div2 id="ensure-compat-adv" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>Avoiding deprecated features of W3C technologies (future link)</p>
-         </item>
-         <item>
-            <p>Not displaying content that relies on technologies that are not accessibility-supported when the technology is turned off or not supported.</p>
-         </item>
-      </ulist>
-   </div2>
+      <head>意図</head>
+
+<p>このガイドラインの目的は、現在及び将来のユーザーエージェントの互換性、<emph>特に</emph>支援技術との互換性をサポートすることである。これは、1）コンテンツ制作者が支援技術の機能を損なうようなこと（例： 形式が整えられていないマークアップ）、又は支援技術をだますようなこと（例：奇抜なマークアップ又はソースコードを用いる）をしないようにして、2）支援技術が認識して情報のやりとりができる標準的な方法によって、コンテンツにある情報を支援技術に引き渡すようにすることで実現することができる。技術の変化は早く、支援技術の開発者が急速に変化する技術に追従していくのは大きな困難を伴うので、支援技術が容易に新しい技術にも対応していけるように、コンテンツが規則に従っていてAPIとの互換性が確保されていることが重要である。</p>
+</div2>
+
+<div2 id="ensure-compat-adv" role="gladvisory">
+<head>ガイドライン 4.1 の参考にすべき実装方法</head>
+<ulist>
+	<item><p>W3Cが策定した技術仕様の中で非推奨とされている機能の使用を避ける（リンク追加予定）</p></item>
+	<item><p>その技術がオフになっている、又はサポートされていないとき、アクセシビリティ・サポーテッドではない技術に依存したコンテンツを表示しない。 </p></item>
+</ulist>
+</div2>
    <xi:include href="ensure-compat-parses.xml"/>
    <xi:include href="ensure-compat-rsv.xml"/>
 </div1>

@@ -5,221 +5,118 @@
    <head>2.2.1</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that users with disabilities are given adequate time to interact with Web content whenever possible. People with disabilities such as blindness, low vision, dexterity impairments, and cognitive limitations may require more time to read content or to perform functions such as filling out on-line forms. If Web functions are time-dependent, it will be difficult for some users to perform the required action before a time limit occurs. This may render the service inaccessible to them. Designing functions that are not time-dependent will help people with disabilities succeed at completing these functions. Providing options to disable time limits, customize the length of time limits, or request more time before a time limit occurs helps those users who require more time than expected to successfully complete tasks. These options are listed in the order that will be most helpful for the user. Disabling time limits is better than customizing the length of time limits, which is better than requesting more time before a time limit occurs. </p>
-      <p>Any process that happens without user initiation after a set time or on a periodic basis is a time limit. This includes partial or full updates of content (for example, page refresh), changes to content, or the expiration of a window of opportunity for a user to react to a request for input. </p>
-      <p>	It also includes content that is advancing or updating at a rate beyond the user's ability to read and/or understand it. In other words, animated, moving or scrolling content introduces a time limit on a users ability to read content.</p>
-      <p>In some cases, however, it is not possible to change the time limit (for example, for an auction or other real-time event) and exceptions are therefore provided for those cases.</p>
-      <p>
-						   <emph role="bold">Notes regarding server time limits</emph>
-					</p>
-      <ulist>
-         <item>
-            <p>Timed server redirects can be found below under Common Failures.</p>
-         </item>
-         <item>
-            <p>Non-timed server redirects (e.g., 3xx response codes) are not applicable because there is no time limit: they work instantly.</p>
-         </item>
-         <item>
-            <p>This Success Criterion applies only to time limits that are set by the content itself. For example, if a time limit is included in order to address security concerns, it would be considered to have been set by the content because it  is designed to be part of the presentation and interaction experience for that content. Time limits set externally to content, such as by the user agent or by factors intrinsic to the Internet are not under the author's control and not subject to WCAG conformance requirements. Time limits set by Web servers should be under the author's/organization's control and are covered. (Success Criteria <loc linktype="guideline"
-                    href="time-limits-no-exceptions">2.2.3</loc>, <loc linktype="guideline"
-                    href="time-limits-postponed">2.2.4</loc> and <loc linktype="guideline"
-                    href="time-limits-server-timeout">2.2.5</loc> may also apply.)</p>
-         </item>
-         <item>
-            <p>Ten times the default was chosen based on clinical experience and other guidelines. For example, if 15 seconds is allowed for a user to respond and hit a switch, 150 seconds would be sufficient to allow almost all users to hit a switch even if they had trouble.
-              </p>
-         </item>
-         <item>
-            <p>20 seconds was also based on clinical experience and other guidelines. 20 seconds to hit 'any switch' is sufficient for almost all users including those with spasticity. Some would fail, but some would fail all lengths of time. A reasonable period for requesting more time is required since an arbitrarily long time can provide security risks to all users, including those with disabilities, for some applications. For example, with kiosks or terminals that are used for financial transactions, it is quite common for people to walk away without signing off. This leaves them vulnerable to those walking up behind them. Providing a long period of inactivity before asking, and then providing a long period for the person to indicate that they are present can leave terminals open for abuse. If there is no activity the system should ask if the user is there. It should then ask for an indication that a person is there ('hit any key') and then wait long enough for almost anyone to respond. For "hit any key," 20 seconds would meet this. If the person indicates that they are still present, the device should return the user to the exact condition that existed before it asked the question.
-              </p>
-         </item>
-         <item>
-            <p>20 hours was chosen as an upper limit because it is longer than a full waking day.
-              </p>
-         </item>
-      </ulist>
-      <p>In cases where timing is not an intrinsic requirement but giving users control over timed events would invalidate the outcome, a third party can control the time limits for the user (for example, granting double time on a test). 
+
+<p>この達成基準の意図は、障害のある利用者がウェブコンテンツを操作するのに十分な時間の提供を、可能な限り保証することである。全盲、ロービジョン、巧緻性障害、及び、認知能力の低下している利用者は、コンテンツを読んだり、オンラインフォームに記入したりするような操作を実行するのに、より長い時間を必要とする場合もある。そのため、ウェブコンテンツの機能が時間の経過に依存している場合、制限時間内に必要な操作を実行することが困難な利用者もいるだろう。このことは、サービスをそういった利用者に対してアクセシブルではないものにしてしまう。そこで、機能を時間の経過に依存しないように設計することで、障害のある利用者がその操作を完了させやすくなる。制限時間を解除する、制限時間の長さを調整する、又は時間切れになる前に制限時間を延長するための選択肢を提供することは、作業を無事に終えると見込まれているよりも多くの時間を必要とする利用者の助けになる。利用者にとって最も有用なものから順に選択肢を挙げている。時間切れになる前に制限時間を延長できるようにすることよりも、制限時間の長さを調整できるようにすることのほうが望ましく、さらにそれよりも制限時間を解除できるようにすることのほうが望ましい。</p><p>利用者による起動がなく、設定時間後又は定期的に発生する処理は、どれも制限時間を表す。コンテンツの一部又は全部の更新（例えば、ページのリフレッシュ）、コンテンツの変更、利用者が入力の要求に対応するウィンドウの有効期限などが含まれる。</p><p>また、利用者が読んだり、理解したり、又はその両方をすることができない速度で進んだり更新したりするコンテンツも含まれる。言い換えれば、アニメーションや動画のコンテンツ、動きのあるコンテンツ、又はスクロールするコンテンツは、利用者がコンテンツを読むのに制限時間を課することになる。</p><p>しかし、ある場合において、（例えば、オークション又は他のリアルタイムのイベントの）制限時間を変更することは不可能であり、それゆえこれらの場合における例外が提供されている。</p>
+<p>
+            <emph role="bold">サーバーの制限時間に関する注記</emph>
           </p>
-      <p>See also <specref ref="time-limits-no-exceptions"/>.</p>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>People with physical disabilities often need more time to react, to type and to complete activities.  People with low vision need more time to locate things on screen and to read.   People who are blind and using screen readers may need more time to understand screen layouts, to find information and to operate controls.  People who have cognitive or language limitations need more time to read and to understand.  People who are deaf and communicate in sign language may need more time to read information printed in text (which may be a second language for some).</p>
-            </item>
-            <item>
-               <p>In circumstances where a sign-language interpreter may be relating audio content to a user who is deaf, control over time limits is also important.</p>
-            </item>
-            <item>
-               <p>People with reading disabilities, cognitive limitations, and learning disabilities who may need more time to read or comprehend information can have additional time to read the information by pausing the content.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>A Web site uses a client side time limit to help protect users who may step away from their computer.   After a period of inactivity the Web page asks if the user needs more time.  If it doesn't get a response – it times out. </p>
-         </item>
-         <item>
-            <p>A Web page has a field that automatically updates with the latest headlines in a rotating fashion. There is an interactive control that allows the user to extend the length of time between each update to as much as ten times the default. The control can be operated with either a mouse or a keyboard. 
-              </p>
-         </item>
-         <item>
-            <p>A Web page includes an animation which includes text that appears and disappears throughout. In some cases, the text is scrolling across the screen and in others, it is only displayed for a short time before it fades into the background. The page includes a pause button so that users who have trouble reading the text before it disappears can read it.</p>
-         </item>
-         <item>
-            <p>In an auction, there is a time limit on the amount of time a user has to submit a bid. Since the time limit applies to all users who want to bid on a particular item, it would be unfair to extend the time limit for any one particular user. Therefore, a time limit is required for this type of activity and no extension, adjustment, or deactivation of the time limit is required by this Success Criteria.
-              </p>
-         </item>
-         <item>
-            <p>An on-line ticket-purchasing site gives the user two minutes to confirm a purchase before the seats are returned to the general pool. Because tickets on such sites can sell out quickly, holding a ticket longer than that may invalidate the nature of the site, so this is a case in which the timing is essential and cannot be extended without invalidating the activity. However, the site does move as much of the process out of the time-critical period as possible, for instance allowing users to provide necessary information like name, payment method, etc., before entering the time-critical stage.
-              </p>
-         </item>
-         <item>
-            <p>A ticket-purchasing site allows the user two minutes to confirm purchase of selected seats, but warns the user when their time is almost out and allows the user to extend this time limit some number of times with a simple action such as clicking a "Extend time limit" button.
-              </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 2.2.1</head>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If there are session time limits:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G133"
-                          linktype="general">Providing a checkbox on the first page of a multipart form that allows users to ask for longer session time limit or no session time limit
-                    </loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G198"
-                          linktype="general">Providing a way for the user to turn the time limit off</loc>
-									         </p>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation B: If a time limit is controlled by a script on the page:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G198"
-                          linktype="general">Providing a way for the user to turn the time limit off</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G180"
-                          linktype="general">Providing the user with a means to set the time limit to 10 times the default time limit</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR16"
-                          linktype="script">Providing a script that warns the user a time limit is about to expire</loc>
-										           <emph role="bold">AND</emph>
-										           <loc href="SCR1"
-                          linktype="script">Allowing the user to extend the default time limit
-                    </loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="FLASH19"
-                          linktype="flash">Providing a script that warns the user a time limit is about to expire and provides a way to extend it</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="FLASH24"
-                          linktype="flash">Allowing the user to extend the default time limit</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL21"
-                          linktype="silverlight"/>
-                  </p>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation C: If there are time limits on reading:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G4" linktype="general">G4: Allowing the content to be paused and restarted from where it was paused</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G198"
-                          linktype="general">Providing a way for the user to turn the time limit off</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR33"
-                          linktype="script">Using script to scroll content, and providing a mechanism to pause it</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR36"
-                          linktype="script">Providing a mechanism to allow user to display moving, scrolling, or repeating text in a static window</loc>
-									         </p>
-               </item>
-            </olist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 2.2.1</head>
-         <ulist>
-            <item role="script">
-               <p>
-        Using a script to poll the server and notify a user if a time limit is present (future link) (Scripting)
-    </p>
-            </item>
-            <item>
-               <p>Using sounds to focus user's attention (future link)</p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F40"
-                       linktype="failure">Failure due to using meta redirect with a time limit
-                  </loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F41"
-                       linktype="failure">Failure due to using meta refresh with a time limit
-                  </loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F58"
-                       linktype="failure">Failure due to using server-side techniques to automatically redirect pages after a time limit
-                  </loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+<ulist>
+	<item><p>制限時間のあるサーバーのリダイレクトは、以下にある「よくある不適合事例」の中で述べられている。</p></item>
+	<item/>
+	<item><p>制限時間のないサーバーのリダイレクト（例： HTTPレスポンスコード 3xx）は、時間の制限がなく、瞬時に作動するので、この達成基準は適用されない。</p></item>
+	<item><p>この達成基準は、コンテンツ自体が設定する制限時間だけに適用される。例えば、セキュリティ上の懸念に対処するために制限時間を設けている場合、そのコンテンツの表現やインタラクションによる体験の一部であるため、コンテンツによって制限時間が設定されているとみなされる。ユーザーエージェント又はインターネット固有の要因などにより、コンテンツ以外のものが設定する制限時間は、コンテンツ制作者が制御できるものではなく、WCAG への適合要件の対象とはならない。ウェブサーバにより設定される制限時間は、コンテンツ制作者や運営組織が制御できるものであり、対象となる（達成基準 2.2.3、2.2.4 および 2.2.5も適用されることがある）。</p></item>
+	<item><p>デフォルトの10倍は、臨床的経験及び他のガイドラインに基づいて選んでいる。例えば、利用者が反応してスイッチを押すのに15秒間与えられていたら、たとえ問題があったとしても、150秒はすべての利用者がスイッチを押すのに十分な時間であろう。</p></item>
+	<item><p>また、20秒間も、臨床的経験及び他のガイドラインに基づいている。「あらゆるスイッチ」を押すのに、20秒あれば、痙性（麻痺している筋肉が自分の意思に関わらず勝手に緊張して収縮する症状）のある利用者も含むほとんどすべての利用者にとって十分である。中にはそれでも足りない利用者もいるかもしれないし、時間をどれだけ延ばしても足りない利用者もいるだろう。任意の長い時間にしてしまうと、あるアプリケーションに対して障害のある利用者を含むすべての利用者を危険な状態にするため、時間の延長を要求するのに妥当な時間を定める必要がある。例えば、金融取引に用いられるキオスク端末又は端末装置は、利用者が取引を終了せずにその場を離れてしまうことが非常によくある。そのままでは、端末を次の人に不正利用されやすい状態にしておくことになる。利用者の確認をせずに休止状態を長時間与えて、長時間にわたって利用者がその場にいるという状態にしておくことは、端末を不正利用の危険にさらすことになる。何も動きがなければ、システムはそこに利用者がいるかどうかを確認しなければならない。そのため、システムは、利用者がそこにいることを確認するように求め（「どれかキーを押してください」）、誰もが応じることができるだけの長さで利用者の反応を待つべきである。「どれかキーを押してください」に対して、20秒という時間は、この条件を満たすであろう。もし利用者が自分はまだそこにいるということを示せば、その端末は利用者に確認する前と同じ状況を利用者に再び提示しなくてはならない。</p></item>
+	<item><p>一日に起きている時間よりも長いので、上限として20時間を選んだ。</p></item>
+</ulist>
+
+<p>制限時間が本質的な要件ではなく、利用者に制限時間のあるイベントを制御できるようにすることが、その結果を無価値にするような場合には、第三者がその利用者のために制限時間を調整することができる（例えば、試験に2倍の時間を与える）。</p>
+<p><specref ref="time-limits-no-exceptions"/>も参照のこと。</p>
+
+<div4 role="benefits">
+<head>Benefits of this Success Criterion</head>
+<ulist>
+	<item><p>身体障害のある利用者は、反応したり、入力したり、タスクを完了したりするのに、より長い時間を要することが多い。ロービジョンの利用者は、画面上で何かを探したり、読んだりするのに時間がかかる。全盲でスクリーンリーダーを使用している利用者は、画面のレイアウトを理解したり、情報を見つけたり、そしてコントロールを操作したりするのに時間がかかるかもしれない。認知能力の低下、又は言語の障害のある利用者は、読んだり、理解したりするのに時間がかかる。音声が聞こえなくて手話でコミュニケーションしている利用者は、（彼らにとっては第二言語のようなものかもしれない）テキストで書かれた情報を読むのに時間がかかるかもしれない。</p></item>
+	<item><p>手話通訳者が、デフの利用者に音声コンテンツを通訳しているような状況では、制限時間を制御できることも重要である。</p></item>
+	<item><p>読字障害、認知の障害及び学習障害のある利用者は、情報を読んだり、理解したりするのに時間がかかることがあり、コンテンツを一時停止させることによって、その情報を読む時間を延長することができる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>Examples for this Success Criterion</head>
+<ulist>
+	<item><p>ウェブサイトは、クライアントサイドの制限時間を用いて、コンピュータから離れてしまう可能性のある利用者を保護している。何も活動がないと、ウェブページは利用者がまだ時間が必要かどうかを確認する。もし利用者からの反応がなければ、そこでタイムアウトになる。</p></item>
+	<item><p>ウェブページには、巡回手段で最新のニュース見出しを自動的に更新するフィールドがある。利用者は更新する時間をデフォルトの10倍の長さに延ばすことができるインタラクティブなコントロールがある。そのコントロールは、マウス又はキーボードのどちらかで操作可能である。</p></item>
+	<item><p>ウェブページには、至るところに現れては消えるテキストが組み込まれたアニメーションがある。テキストがスクロールして画面を横切るものもあれば、表示されると短時間で背景に消えていくものもある。テキストを読むのが困難な利用者がテキストの消えてしまう前に読むことができるように、そのページには一時停止ボタンがある。</p></item>
+	<item><p>オークションにおいて、利用者が入札しなければならない時間に期限がある。その制限時間は、特定に品目に入札したいと思っているすべての利用者に適用されるので、特定の利用者の誰か1人だけに制限時間の延長を認めると公平ではなくなる。そのため、制限時間はこの種のコンテンツには必須であり、この達成基準によって、制限時間の延長、調整、又は解除を要求されることはない。</p></item>
+	<item><p>オンラインチケット購入サイトでは、利用者が席を確保して購入内容を確認するのに2分間の制限時間が与えられている。そのようなサイトのチケットはすぐに売り切れてしまうため、それ以上チケットを確保しておくと、サイト本来の機能を発揮できない可能性がある。そのため、これは制限時間が必要不可欠で、コンテンツを無効にすることなく時間延長することができない事例の一つである。しかし、そのサイトは、時間制約のある段階に入る前に、例えば氏名、支払方法などの必要な情報を利用者が提供できるようにするなどして、できる限り多くのプロセスを制約時間外で行えるようにしている。</p></item>
+	<item><p>チケット購入サイトは、利用者が選択した席の購入を確認するために2分間の制限時間を与えているが、時間切れが近づくと利用者に警告を出し、例えば、「時間を延長する」ボタンを押すなどの簡単な操作で、利用者がこの制限時間を何倍か延長できるようにしている。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>Resources for this Success Criterion </head>
+</div3>
+
+<div3 role="techniques">
+<head>Techniques for Addressing Success Criterion 2.2.1</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A：セッションの制限時間がある場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G133" linktype="general">G133: 複数の画面で構成されるフォームの最初のページに、利用者がセッションの制限時間を延長又は解除できるチェックボックスを提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G198" linktype="general">G198: 利用者が制限時間を解除できる手段を提供する</loc></p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B：制限時間がページ上のスクリプトで制御されている場合：</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G198" linktype="general">G198: 利用者が制限時間を解除できる手段を提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G180" linktype="general">G180: 利用者が初期設定の制限時間を10倍に設定できる手段を提供する</loc>
+    </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR16" linktype="script">SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する</loc>
+                    <emph role="bold">及び</emph>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR1" linktype="script">SCR1: 利用者が初期設定の制限時間を延長できるようにする</loc>
+                  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH19" linktype="flash">スクリプトを用いて、ユーザーに制限時間が間もなく終了することを警告し、制限時間を延長する方法を提供する</loc>
+    </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH24" linktype="flash">利用者がデフォルトの制限時間を延長できるようにする</loc>
+    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL21.html" linktype="silverlight">Replacing A Silverlight Timed Animation With a Nonanimated Element </loc>
+    </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 C：コンテンツを読むのに制限時間がある場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G4" linktype="general">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G198" linktype="general">G198: 利用者が制限時間を解除できる手段を提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR33" linktype="script">SCR33: スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR36" linktype="script">SCR36: 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する</loc></p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>Additional Techniques (Advisory) for 2.2.1</head>
+<ulist>
+	<item role="script"><p>制限時間がある場合、サーバーに問いかけるためにスクリプトを使用し、利用者に通知する。（リンク追加予定）(Scripting)
+    </p></item>
+	<item><p>利用者の注意を集中させるために音を使用する。（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>Common Failures Identified by the Working Group</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F40" linktype="failure">F40: 達成基準 2.2.1 及び 達成基準 2.2.4 の不適合事例 － meta要素による制限時間付きのリダイレクトを用いている</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F41" linktype="failure">F41: 達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の不適合事例 － meta要素によるタイムアウト付きのリフレッシュを用いている</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F58" linktype="failure">F58: 達成基準 2.2.1 の不適合事例 － サーバーサイドの実装方法を用いて、タイムアウト後にページを自動的にリダイレクトしている</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F16" linktype="failure">F16: 達成基準 2.2.2 の不適合事例 － 動きが不可欠ではないところにスクロールするコンテンツがあり、そのコンテンツを一時停止及び再開するメカニズムがない</loc></p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

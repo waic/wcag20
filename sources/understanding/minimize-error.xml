@@ -4,17 +4,17 @@
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="minimize-error">
    <head>3.3</head>
    <div2 id="minimize-error-intent" role="glintent">
-      <head>Intent</head>
-      <p>Everyone makes mistakes. However, people with some disabilities have more difficulty creating error-free input. In addition, it may be harder for them to detect that they have made an error. Typical error indication methods may not be obvious to them because of a limited field of view, limited color perception, or use of assistive technology. This guideline seeks to reduce the number of serious or irreversible errors that are made, increase the likelihood that all errors will be noticed by the user, and help users understand what they should do to correct an error.</p>
-   </div2>
-   <div2 id="minimize-error-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>Hiding optional form fields (future link)</p>
-         </item>
-      </ulist>
-   </div2>
+      <head>意図</head>
+
+<p>誰でもミスをすることがある。しかし、ある種の障害のある利用者は、エラーを起こさずに入力するのがより困難である。さらに、エラーを起こしたことに気づきにくいこともある。視野が限られている、色の知覚に制限がある、又は支援技術を使用しているという理由で、エラーを指摘する一般的な方法が障害のある利用者には分かりにくいことがある。このガイドラインは、重大な又は元の状態に戻すことのできないエラーの数を減らして、利用者がすべてのエラーに気づけるようにするとともに、エラーを修正するにはどうすればよいかを利用者が分かるようにしようとするものである。</p>
+</div2>
+
+<div2 id="minimize-error-advisory" role="gladvisory">
+<head>ガイドライン 3.3 の参考にすべき実装方法</head>
+<ulist>
+	<item><p>"	追加のフォームフィールドを隠しておく（リンク追加予定）</p></item>
+</ulist>
+</div2>
    <xi:include href="minimize-error-identified.xml"/>
    <xi:include href="minimize-error-cues.xml"/>
    <xi:include href="minimize-error-suggestions.xml"/>

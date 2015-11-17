@@ -5,80 +5,59 @@
    <head>2.2.4</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to allow users to turn off updates from the author/server except in emergencies. Emergencies would include civil emergency alert messages or any other messages that warn of danger to health, safety, or property, including data loss, loss of connection, etcetera.</p>
-      <p>This allows access by people with cognitive limitations or attention disorders by enabling them to focus on the content. It also allows users who are blind or have low vision to keep their "viewing" focus on the content they are currently reading.</p>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>Individuals with attention deficit disorders can focus on content without distraction.</p>
-            </item>
-            <item>
-               <p>Individuals with low vision or who use screen readers will not have content updated while they are viewing it (which can lead to discontinuity and misunderstanding if they start reading in one topic and finish in another).</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Example 1. Setting user preferences</emph>
-							     </p>
-            <p>The preferences page of a Web portal includes an option to postpone all updates and alerts until the end of the current session, except for alerts concerning emergencies. </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 2.2.5</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="G75"
-                       linktype="general">Providing a mechanism to postpone any updating of content</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G76"
-                       linktype="general">G76: Providing a mechanism to request an update of the content instead of updating automatically</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="SCR14"
-                       linktype="script">Using scripts to make non-essential alerts optional</loc>
-								       </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 2.2.5</head>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item role="html">
-               <p>
-									         <loc href="F40"
-                       linktype="failure">Failure due to using meta redirect with a time limit
-                  </loc>
-								       </p>
-            </item>
-            <item role="html">
-               <p>
-									         <loc href="F41"
-                       linktype="failure">Failure due to using meta refresh with a time limit
-                  </loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+
+<p>この達成基準の意図は、緊急を要する場合を除いて、利用者がコンテンツ制作者／サーバーからの更新を止めることができるようにすることである。緊急には、市民向け緊急警報メッセージ、又はデータを失ったり，つながりを失ったりするなどを含む、健康、安全、財産の危険を警告するその他のメッセージがある。</p><p>これにより、認知能力の低下、又は注意力欠如のある利用者は、コンテンツに集中することができるようになることで、コンテンツを使用することができる。全盲又はロービジョンの利用者が、現在読んでいるコンテンツに神経を集中し続けられるようにもなる。</p>
+
+<div4 role="benefits">
+<head>Benefits of this Success Criterion</head>
+<ulist>
+	<item><p>注意力欠如障害のある利用者が、注意散漫にならずにコンテンツに集中できるようになる。</p></item>
+	<item><p>ロービジョンの利用者又はスクリーンリーダーを使用している利用者は、（ある話題を読み始め、別の話題で読み終わる場合、話の内容が支離滅裂になり、誤解をしてしまうような）コンテンツを閲覧している間はコンテンツが更新されない。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>Examples for this Success Criterion</head>
+<ulist>
+	<item><p>
+                <emph role="bold">事例 1. 利用者設定</emph>
+              </p><p>緊急時の警告を除き、ウェブポータルの設定ページは、現在のセッションが終了まで、すべての更新及び警告を延長する選択肢がある。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>Resources for this Success Criterion </head>
+</div3>
+
+<div3 role="techniques">
+<head>Techniques for Addressing Success Criterion 2.2.5</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G75" linktype="general">G75: コンテンツの更新を延期するメカニズムを提供する</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G76" linktype="general">G76: 自動的に更新するのではなく、利用者がコンテンツの更新を要求するメカニズムを提供する</loc>  </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR14" linktype="script">SCR14: スクリプトを用いて、不可欠ではないアラートの表示を任意にする</loc>
+                </p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>Additional Techniques (Advisory) for 2.2.5</head>
+</div4>
+
+<div4 role="failures">
+<head>Common Failures Identified by the Working Group</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F40" linktype="failure">F40: 達成基準 2.2.1 及び 達成基準 2.2.4 の不適合事例 － meta要素による制限時間付きのリダイレクトを用いている</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F41" linktype="failure">F41: 達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の不適合事例 － meta要素によるタイムアウト付きのリフレッシュを用いている</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

@@ -4,21 +4,18 @@
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="consistent-behavior">
    <head>3.2</head>
    <div2 id="consistent-behavior-intent" role="glintent">
-      <head>Intent</head>
-      <p>The intent of this Guideline is to help users with disabilities by presenting content in a predictable order from Web page to Web page and by making the behavior of functional and interactive components predictable. It is difficult for some users to form an overview of the Web page: screen readers present content as a one-dimensional stream of synthetic speech that makes it difficult to understand spatial relationships. Users with cognitive limitations may become confused if components appear in different places on different pages.</p>
-      <p>For example, people who use screen magnifiers see only part of the screen at any point in time; a consistent layout makes it easier for them to find navigation bars and other components. Placing repeated components in the same relative order within a set of Web pages allows users with reading disabilities to focus on an area of the screen rather than spending additional time decoding the text of each link. Users with limited use of their hands can more easily determine how to complete their tasks using the fewest keystrokes.</p>
-   </div2>
-   <div2 id="consistent-behavior-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>
-              Positioning labels to maximize predictability of relationships
-              
-            </p>
-         </item>
-      </ulist>
-   </div2>
+      <head>意図</head>
+
+<p>この達成基準の意図は、障害のある利用者のために、複数のウェブページでコンテンツを予測可能な順序で提供すること、及び機能的でインタラクティブなコンポーネントのふるまいを予測可能にすることである。利用者がウェブページ全体の概観を把握するのが困難なことがある。例えば、スクリーンリーダーは、合成音声の一次元的な流れでコンテンツを提示するため、空間的な関係性を理解しづらくする。認知能力が低下した利用者は、コンポーネントがページによって異なる場所に表示されると混乱してしまうことがある。</p>
+<p>例えば、画面拡大ソフトを使用している利用者は、常時画面の一部分だけしか見ていない。そのため、一貫性のあるレイアウトによって、ナビゲーションバーやその他の構成要素が見つけやすくなる。ウェブページ一式の中で、繰り返し用いられる構成要素を相対的に同じ順序で配置することにより、読字障害のある利用者が、各リンクのテキストを復号化するのに無駄な時間を費やすことなく、画面のある領域に集中することができるようになる。そして、手を十分に使えない利用者は、最少のキーストロークでタスクを完了できる方法をより容易に見つけ出すことができる。</p>
+</div2>
+
+<div2 id="consistent-behavior-advisory" role="gladvisory">
+<head>ガイドライン 3.2 の参考にすべき実装方法</head>
+<ulist>
+	<item><p>ラベルを配置することで、関係性を予測できる可能性を最大限に高める</p></item>
+</ulist>
+</div2>
    <xi:include href="consistent-behavior-receive-focus.xml"/>
    <xi:include href="consistent-behavior-unpredictable-change.xml"/>
    <xi:include href="consistent-behavior-consistent-locations.xml"/>

@@ -4,134 +4,93 @@
 <div2 role="extsrc" id="media-equiv-text-doc">
    <head>1.2.8</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to make audio visual material available to individuals whose vision is too poor to reliably read <loc linktype="glossary"
-              href="captionsdef">captions</loc> and whose hearing is too poor to reliably hear dialogue and <loc linktype="glossary"
-              href="audiodescdef">audio description</loc>. This is done by providing an alternative for time-based media.
-          </p>
-      <p>This approach involves providing all of the information in the synchronized media (both visual and auditory) in text form. An alternative for time-based media provides a running description of all that is going on in the synchronized media content. The alternative for time-based media reads something like a book. Unlike audio description, the description of the video portion is not constrained to just the pauses in the existing dialogue. Full descriptions are provided of all visual information, including visual context, actions and expressions of actors, and any other visual material. In addition, non-speech sounds (laughter, off-screen voices, etc.) are described, and transcripts of all dialogue are included. The sequence of descriptions and dialogue transcripts is the same as the sequence in the synchronized media itself. As a result, the alternative for time-based media can provide a much more complete representation of the synchronized media content than audio description alone.</p>
-      <p>If there is any interaction as part of the synchronized media presentation (e.g., "press now to answer the question") then the alternative for time-based media would provide hyperlinks or whatever is needed to provide parallel functionality.</p>
-      <p>Individuals whose vision is too poor to reliably read captions and whose hearing is too poor to reliably hear dialogue can access the alternative for time-based media by using a refreshable braille display.</p>
-      <note>
-         <p>
-              For 1.2.3, 1.2.5, and 1.2.7, if all of the information in the video track is already provided in the audio track, no audio description is necessary. 
-              
-            </p>
-         <p>
-              1.2.3, 1.2.5, and 1.2.8 overlap somewhat with each other. This is to give the author some choice at the minimum conformance level, and to provide additional requirements at higher levels. At Level A in Success Criterion 1.2.3, authors do have the choice of providing either an audio description or a full text alternative. If they wish to conform at Level AA, under Success Criterion 1.2.5 authors must provide an audio description - a requirement already met if they chose that alternative for 1.2.3, otherwise an additional requirement. At Level AAA under Success Criterion 1.2.8 they must provide an extended text description. This is an additional requirement if both 1.2.3 and 1.2.5 were met by providing an audio description only. If 1.2.3 was met, however, by providing a text description, and the 1.2.5 requirement for an audio description was met, then 1.2.8 does not add new requirements.</p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>People who cannot see well or at all and who also cannot hear well or at all can get access to information in audio-visual presentations.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Example 1. alternative for time-based media for a training video</emph>
-							     </p>
-            <p>A community center purchases a Training video for use by its clients and puts it on the center's intranet. The video involves explaining use of a new technology and has a person talking and showing things at the same time. The community center provides <phrase>an</phrase> alternative for time-based media that all clients, including those who can neither see the demonstrations nor hear the explanations in the synchronized media, can use to better understand what is being presented. </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 1.2.8</head>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If the content is prerecorded synchronized media:</head>
-            <olist>
-               <item>
-                  <p> 
-                     <loc href="G69"
-                          linktype="general">Providing an alternative for time-based media including any interaction</loc> using one of the following techniques</p>
-                  <ulist>
-                     <item>
-                        <p>
-												               <loc href="G58"
-                                linktype="general">Placing a link to the transcript immediately next to the non-text content</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL17"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                  </ulist>
-               </item>
-               <item>
-                  <p>Linking to the alternative for time-based media using one of the following techniques
-									</p>
-                  <ulist>
-                     <item>
-                        <p>
-												               <loc href="H53" linktype="html">Using the body of the object element</loc>
-											             </p>
-                     </item>
-                  </ulist>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation B: If the content is prerecorded video-only:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G159"
-                          linktype="general">Providing a full text transcript of the video content</loc>
-									         </p>
-               </item>
-            </olist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 1.2.7</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="H46" linktype="html">Using noembed with embed</loc>
-								       </p>
-            </item>
-            <item>
-               <p>Providing a corrected script (future link)</p>
-            </item>
-            <item>
-               <p>Adding detail to audio description (future link)</p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head>Common Failures Identified by the Working Group</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="F74"
-                       linktype="failure">Failure of 1.2.1 due to not labeling a synchronized media alternative to text as an alternative</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、視力が弱すぎて<loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="glossary" href="captionsdef">キャプション</loc>を確実に読むことができず、なおかつ聴力も弱すぎて発話や<loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="glossary" href="audiodescdef">音声ガイド</loc>を確実に聞くことができない利用者が、視聴覚のコンテンツを利用できるようにすることである。時間の経過に伴って変化するメディアの代替を提供することで、それが可能になる。</p>
+
+<p>このアプローチは、同期したメディアにある（視覚的及び聴覚的な）情報すべてをテキスト形式で提供することである。時間の経過に伴って変化するメディアの代替は、同期したメディアのコンテンツで提供されているすべての情報をそのままに提供するものである。時間の経過に伴って変化するメディアの代替は、本のようなものになる。 音声ガイドとは異なり、映像部分の説明が、既存の発話の合間だけに制限されることはない。 視覚的な状況、登場人物の動きや表情、及びその他のあらゆる視覚的なものを含めて、すべての視覚的な情報について、説明を十分に提供する。さらに、発話ではない音声（笑い声、画面の外から聞こえてくる声など）を説明し、すべての発話の書き起こしテキストを含む。そして、そういった説明と発話の書き起こしテキストの登場順は、同期したメディア自体での登場順と同じである。そして、そういった説明と発話の書き起こしテキストの登場順は、同期したメディア自体での登場順と同じである。結果的に、時間の経過に伴って変化するメディアの代替は、同期したメディアコンテンツについて、音声ガイドだけでの場合よりもずっと多くの完全な説明を提供することが可能である。</p>
+
+<p>同期したメディアのプレゼンテーションの一部分として何らかのインタラクションがある場合（例：「質問に、今、答えてください。」）、時間の経過に伴って変化するメディアの代替は、ハイパーリンク又は同じ機能を提供するのに必要なものを提示することになる。</p>
+
+<p>視力が弱すぎてキャプションを確実に読むことができず、なおかつ聴力も弱すぎて発話を確実に聞き取ることのできない利用者は、点字ピンディスプレイを使うことによって、時間の経過に伴って変化するメディアの代替を利用することができる。</p>
+
+<note>
+<p>達成基準 1.2.3、1.2.5、及び 1.2.7 では、映像トラックにある情報のすべてが音声トラックですでに提供されている場合には、音声ガイドを必要としない。</p>
+<p>達成基準 1.2.3、1.2.5、及び 1.2.8 は、お互いに重なり合う部分がある。 これは、最低限の適合レベルではコンテンツ制作者に選択肢を与え、より高い適合レベルでは付加的な要件を提示するためである。 達成基準 1.2.3 のレベル A では、コンテンツ制作者には、音声ガイド又は完全な代替テキストのどちらかを提供するという選択肢がある。 レベル AA で適合したい場合、達成基準 1.2.5 において、コンテンツ制作者は音声ガイドを提供しなければならない。もし達成基準 1.2.3 を満たすための代替コンテンツとして音声ガイドを選択していれば、レベル AA の要件をすでに満たしていることになるが、そうでなければこれは付加的な要件ということになる。 達成基準 1.2.8 のレベル AAA では、コンテンツ制作者は拡張したテキストの説明を提供しなければならない。達成基準 1.2.3 及び 1.2.5 において音声ガイドだけを提供することで要件を満たしていた場合には、達成基準 1.2.8 が付加的な要件ということになる。 しかし、達成基準 1.2.3 をテキストの説明による代替を提供することで満たし、なおかつ達成基準 1.2.5 の音声ガイドの要件を満たしている場合には、達成基準 1.2.8 は新しい要件を付加することにはならない。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 1.2.8 の具体的なメリット</head>
+<ulist>
+	<item><p>よく見ることができないか全く見ることができず、なおかつよく聞こえないか全く聞くことができない利用者が、視聴覚のプレゼンテーションの情報を利用することができるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.2.8 の事例</head>
+<ulist>
+	<item><p>
+                <emph role="bold">事例 1. ある研修ビデオでの、時間の経過に伴って変化するメディアの代替</emph>
+              </p><p>あるコミュニティ・センターは、その会員向けに研修ビデオを購入し、それをセンターのイントラネットに置いている。そのビデオでは、新しい技術の使い方を説明していて、同時にそれを説明しながら実演する人物が登場している。そのコミュニティ・センターでは、同期したメディアにあるプレゼンテーションを見ることも、説明を聞くこともできない利用者を含めて、すべての会員が提供されている内容をよりよく理解できるように、時間の経過に伴って変化するメディアに代替を提供している。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.2.8 の実装方法及び不適合事例 － 収録済のメディアの代替</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： 収録済の同期したメディアの場合：</head>
+<olist>
+	<item><p>次の実装方法のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G69" linktype="general">時間の経過に伴って変化するメディアに代替を提供する</loc></p><ulist><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G58" linktype="general">非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</loc>
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL17.html" linktype="silverlight">Providing Static Alternative Content for Silverlight Media Playing in a MediaElement</loc>
+                      </p></item></ulist></item><item><p>次の実装方法のどれか一つを用いて、時間の経過に伴って変化するメディアの代替へリンクする
+                      </p><ulist><item><p>
+                            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
+                          </p></item></ulist></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： 収録済の映像しか含まないコンテンツの場合：</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G159" linktype="general">映像しか含まないコンテンツの時間の経過に伴って変化するメディアの代替を提供する</loc> </p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.2.8 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う</loc>  
+                </p></item>
+	<item><p>訂正済みのスクリプトを使う（リンク追加予定）</p></item><item><p>音声ガイドの詳細を追加する（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 1.2.8 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F74" linktype="failure">Failure of 1.2.1 due to not labeling a synchronized media alternative to text as an alternative</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

@@ -4,89 +4,45 @@
 <div2 id="minimize-error-identified" role="extsrc">
    <head>3.3.1</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. 
-						In the case of an unsuccessful form submission, re-displaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, will not know there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. <!--The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.-->Per the definition in WCAG 2.0, an "input error" is information provided by the user that is not accepted. This includes: </p>
-      <ulist>
-         <item>
-            <p>information that is required by the web page but omitted by the user, or</p>
-         </item>
-         <item>
-            <p>information that is provided by the user but that falls outside the required data format or allowed values.</p>
-         </item>
-      </ulist>
-      <p>For example:</p>
-      <ulist>
-         <item>
-            <p>the user fails to enter the proper abbreviation in to state, province, region, etc. field; </p>
-         </item>
-         <item>
-            <p>the user enters a state abbreviation that is not a valid state; </p>
-         </item>
-         <item>
-            <p>the user enters a non existent zip or postal code;</p>
-         </item>
-         <item>
-            <p>the user enters a birth date 2 years in the future;</p>
-         </item>
-         <item>
-            <p>the user enters alphabetic characters or parentheses into their phone number field that only accepts numbers;</p>
-         </item>
-         <item>
-            <p>the user enters a bid that is below the previous bid or the minimum bid increment.</p>
-         </item>
-      </ulist>
-      <note>
-         <p>If a user enters a value that is too high or too low, and the coding on the page automatically changes that value to fall within the allowed range, the user's error would still need to be described to them as required by the success criterion. Such an error description telling the person of the changed value would meet both this success criterion (Error Identification) and <loc href="minimize-error-suggestions"
-                 linktype="understanding">Success Criterion 3.3.3 (Error Suggestion)</loc>. </p>
-      </note>
-      <p>The identification and description of an error can be combined with programmatic information that user agents or assistive technologies can use to identify an error and provide error information to the user. For example, certain technologies can specify that the user's input must not fall outside a specific range, or that a form field is required. Currently, few technologies support this kind of programmatic information, but the Success Criterion does not require, nor prevent it.
-          </p>
-      <p>It is perfectly acceptable to indicate the error in other ways such as image, color etc, in addition to the text description. 
-          </p>
-      <p>See also <specref ref="minimize-error-suggestions"/>.</p>
-      <div4 role="benefits">
-         <head/>
-         <ulist>
-            <item>
-               <p> Providing information about input errors in text allows users who are blind or colorblind to perceive the fact that an error occurred.  </p>
-            </item>
-            <item>
-               <p>
-                  This Success Criterion may help people with cognitive, language, and learning disabilities who have difficulty understanding the meaning represented by icons and other visual cues. 
-                  
-                </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Identifying errors in a form submission</emph>
-							     </p>
-            <p>
-                An airline Web site offers a special promotion on discounted flights. The user is asked to complete a simple form that asks for personal information such as name, address, phone number, seating preference and e-mail address. If any of the fields of the form are either not completed or completed incorrectly, an alert is displayed notifying the user which field or fields were missing or incorrect. 
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、利用者がエラーの発生に気づき、何が誤っていたのかわかるようにすることである。エラーメッセージは、できる限り具体的なものであるべきである。フォームの送信がうまくいかなかった場合に、フォームを再度表示して、エラーになっているテキストフィールドを示すだけでは、エラーの発生を知覚して気がつくに不十分な利用者もいる。例えば、スクリーンリーダーの利用者は、エラー表示が読み上げられるまでは、エラーがあることに気づかない。単にそのページがうまく動作しないのだと考えて、エラーが発生していることに気づく前に、スクリーンリーダーの利用者はそのフォームを使うこと自体をあきらめてしまうかもしれない。</p>
+<p>ユーザーエージェント又は支援技術がエラーを特定して、エラーに関する情報を利用者に提供することのできる、プログラム的な情報を用いて、エラーがあることを示して、その内容を説明することができる。例えば、あるウェブコンテンツ技術では、利用者の入力には文字数制限があること、又はフォームのテキストフィールドが必須項目であることを明示できる。現在、このようなプログラム的な情報をサポートしているウェブコンテンツ技術はほとんどないが、この達成基準ではそういった技術の有無は問わない。</p>
+<p>テキストによる説明に加えて、例えば画像や色などのその他の方法でもエラーを示すことは全く問題ない。</p>
+<p><specref ref="minimize-error-suggestions"/>も参照のこと。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>入力エラーに関する情報をテキストで提供することによって、全盲の利用者又は色弱の利用者はエラーが発生したことを知覚できるようになる。  </p></item>
+	<item><p>この達成基準は、アイコン及びその他の視覚的な手がかりで示された意味を理解するのが困難な、認知の障害、言語の障害、及び学習障害のある利用者にも役立つことがある。
+                </p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">フォーム送信におけるエラーの特定</emph>
+              </p><p>
+                ある航空会社のウェブサイトが、格安便の特別なプロモーションを展開している。利用者は、氏名、住所、電話番号、座席指定、及び電子メール アドレスなどの個人情報をシンプルなフォームに入力することを求められる。フォームにあるテキストフィールドのいずれかが、入力されていないか入力に誤りがある場合、どのテキストフィールドが未入力又はエラーであるかを利用者に知らせるアラートが表示される。
                 
-              </p>
-            <note>
-               <p>This Success Criterion does not mean that color or text styles cannot be used to indicate errors. It simply requires that errors also be identified using text. In this example, two asterisks are used in addition to color.</p>
-            </note>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Providing multiple cues</emph>
-							     </p>
-            <p>The user fails to fill in two fields on the form.  In addition to describing the error and providing a unique character to make it easy to search for the fields, the fields are highlighted in yellow to make it easier to visually search for them as well.
-    </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-      <!-- 
+              </p><note><p>この達成基準は、エラー箇所を示すために、色又はテキストの表示スタイルを用いないほうがよいということを意味しない。単にエラー箇所がテキストでも示されていることを要求しているだけである。この事例では、色に加えて、2つのアスタリスク (*) が用いられている。</p></note></item>
+	<item><p>
+                <emph role="bold">複数の手がかりの提供</emph>
+              </p><p>利用者がフォームにある2つのテキストフィールドに入力し忘れている。エラーの説明及びそのテキストフィールドを見つけやすくするためにエラーであることを示す特定の文字列を提供するだけでなく、テキストフィールドを黄色で強調表示して、視覚的にも見つけやすくしている。
+    </p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<!--div3 role="resources">
+          <head/>
           <ulist>
             <item>
               <p>
@@ -94,151 +50,60 @@
 </p>
             </item>
           </ulist>
-          -->
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.3.1</head>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If a form contains fields for which information from the user is mandatory.</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G83"
-                          linktype="general">Providing a text description that identifies the field as mandatory</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA21"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item role="script">
-                  <p>
-										           <loc href="SCR18"
-                          linktype="script">Providing client-side validation and alert </loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF5" linktype="pdf"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL35"
-                          linktype="silverlight"/>
-                  </p>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation B: If information provided by the user is required to be in a specific data format or of certain values.</head>
-            <olist>
-               <item>
-                  <p>
-                     <loc href="ARIA18"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA19"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA21"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G84"
-                          linktype="general">G84: Providing a text description when the user provides information that is not in the list of allowed values</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G85"
-                          linktype="general">Providing a text description when user input falls outside the required format or values</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR18"
-                          linktype="script">Providing client-side validation and alert</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR32"
-                          linktype="script">Providing client-side validation and adding error text via the DOM</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="FLASH12"
-                          linktype="flash">Providing client-side validation and adding error text via the accessible description</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF22" linktype="pdf"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL35"
-                          linktype="silverlight"/>
-                  </p>
-               </item>
-            </olist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.3.1</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="G139"
-                       linktype="general">G139: Creating a mechanism that allows users to jump to errors</loc>
-								       </p>
-            </item>
-            <item>
-               <p>Validating form submissions on the server (future link)</p>
-            </item>
-            <item>
-               <p>Re-displaying a form with a summary of errors (future link)</p>
-            </item>
-            <item>
-               <p>Providing error notification as the user enters information (future link)</p>
-            </item>
-            <item>
-               <p>Including error notification information in the page title (future link)</p>
-            </item>
-            <item>
-               <p>Highlighting or visually emphasizing errors where they occur (future link)</p>
-            </item>
-            <item>
-               <p>Supplementing text with non-text content when reporting errors (future link) </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G199"
-                       linktype="general">Providing success feedback when data is submitted successfully</loc>
-								       </p>
-            </item>
-            <item>
-               <p>Using sounds to focus user's attention (future link)</p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head/>
-      </div4>
-   </div3>
+        </div3-->
+
+<div3 role="techniques">
+<head>Techniques for Addressing Success Criterion 3.3.1</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： フォームが利用者からの情報が必須である入力フィールドを含む場合</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G83" linktype="general">Providing a text description that identifies the field as mandatory</loc>
+                  </p></item>
+	<item role="script"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">Providing client-side validation and alert </loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF5" linktype="pdf">PDF フォームで必須項目のフォーム・コントロールを特定する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL35.html" linktype="silverlight">Using the Validation and ValidationSummary APIs to Implement Client Side Forms Validation in Silverlight</loc></p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： 利用者によって提供される情報が、特別なデータフォーマットか特定の値であることが求められる場合</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G84" linktype="general">G84: Providing a text description when the user provides information that is not in the list of allowed values</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G85" linktype="general">Providing a text description when user input falls outside the required format or values</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">Providing client-side validation and alert</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">Providing client-side validation and adding error text via the DOM</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">ユーザーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL35.html" linktype="silverlight">Using the Validation and ValidationSummary APIs to Implement Client Side Forms Validation in Silverlight</loc></p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>Additional Techniques (Advisory) for 3.3.1</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G139" linktype="general">G139: Creating a mechanism that allows users to jump to errors</loc>
+                </p></item>
+	<item><p>送信されたフォームが正しいかをサーバーで確認する（リンク追加予定）</p></item>
+	<item><p>エラーの要約とともにフォームを再度表示する（リンク追加予定）</p></item>
+	<item><p>利用者が情報を入力したときにエラーを通知する（リンク追加予定）</p></item>
+	<item><p>ページタイトルにエラーを通知する情報を含める（リンク追加予定）</p></item>
+	<item><p>エラーが起きた場所をハイライトするか視覚的に強調する（リンク追加予定）</p></item>
+	<item><p>エラーを報告する際に、非テキストコンテンツにテキストを補足する（リンク追加予定）</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G199" linktype="general">Providing success feedback when data is submitted successfully</loc></p></item><item><p>利用者の注意を集中させるために音を使う（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
 </div2>

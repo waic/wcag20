@@ -22,7 +22,7 @@
         <xsl:when test="../@role='extsrc'">
 				   <strong><xsl:call-template name="sc-handle">
           <xsl:with-param name="handleid" select="../@id"/>
-        </xsl:call-template></strong><span class="screenreader">:</span><br />Understanding Guideline <xsl:value-of select="../head"/>
+        </xsl:call-template></strong><span class="screenreader">:</span><br />ガイドライン<xsl:value-of select="../head"/>を理解する
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates/>
@@ -32,7 +32,7 @@
     
     <xsl:if test="../@role='extsrc'">
     <blockquote class="glquote">
-          <div><p><strong>Guideline <xsl:value-of select="../head"/>: </strong><xsl:value-of select="$gl-src//div3[@id=current()/../@id]/head"/></p></div>
+          <div><p><strong>ガイドライン<xsl:value-of select="../head"/>: </strong><xsl:value-of select="$gl-src//div3[@id=current()/../@id]/head"/></p></div>
     </blockquote>
     </xsl:if>
   </xsl:template>
@@ -59,7 +59,7 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
           </xsl:call-template>
-			Intent of Guideline <xsl:value-of select="../../head"/>
+			ガイドライン <xsl:value-of select="../../head"/> の意図
         </h3>
       </xsl:when>
            <xsl:when test="../@role='normal'">
@@ -79,13 +79,13 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
           </xsl:call-template>
-			Advisory Techniques for Guideline <xsl:value-of select="../../head"/> (not success criteria specific)</h3>
+			ガイドライン <xsl:value-of select="../../head"/> の参考にすべき実装方法(特定の達成基準に特有ではない実装方法)</h3>
         <div   class="textbody">
-          <p  >Specific techniques for meeting each Success Criterion for this guideline are listed in the understanding sections for each Success Criterion (listed below). If there are techniques, however, for addressing this guideline that do not fall under any of the success criteria, they are listed here. These techniques are not required or sufficient for meeting any success criteria, but can make certain types of Web content more accessible to more people.</p>
+          <p  >このガイドラインにある各達成基準を満たすための実装方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための実装方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった実装方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。</p>
           <xsl:choose>
             <xsl:when test="count(../ulist) = 0">
               <ul  >
-                <li>All advisory techniques for this guideline relate to specific success criteria.</li>
+                <li>このガイドラインの参考にすべき実装方法はすべて、特定の達成基準に関係している。</li>
               </ul>
             </xsl:when>
             <xsl:otherwise/>
@@ -124,25 +124,25 @@
   <!--BBC test to figure out if this is a success or a conformance criterion -->
 <xsl:variable name="criteriontype"> 
   <xsl:choose>
-      <xsl:when test="../../@role='cc'">Conformance</xsl:when>
-      <xsl:otherwise>Success</xsl:otherwise>
+      <xsl:when test="../../@role='cc'">適合</xsl:when>
+      <xsl:otherwise>達成</xsl:otherwise>
     </xsl:choose></xsl:variable> 
     <h3 id="{ancestor::div2/@id}-{../@role}-head" class="section">
       <!--BBC Added a test to replace guideline headings with value from current source-->
       <xsl:choose>
         <xsl:when test="../@role='intent'">
-				Intent of this <xsl:value-of select="$criteriontype" /> Criterion
+				この<xsl:value-of select="$criteriontype" />基準の意図
 			</xsl:when>
         <xsl:when test="../@role='techniques'">
-				Techniques and Failures for <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template><xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
+				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の実装方法及び不適合事例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../@id"/>
     </xsl:call-template>
         </xsl:when>
         <xsl:when test="../@role='examples'">
-				Examples of <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>
+				<xsl:value-of select="$criteriontype" />基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の事例
         </xsl:when>
         <xsl:when test="../@role='resources'">
-				Related Resources
+				関連リソース
 			</xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates mode="text"/>
@@ -156,9 +156,9 @@
     </xsl:choose>
     <xsl:choose>
       <xsl:when test="../@role='resources'">
-        <p  >Resources are for information purposes only, no endorsement implied.</p>
+        <p  >リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div4)">
-          <p  >(none currently documented)</p>
+          <p  >(今のところ、文書化されていない)</p>
         </xsl:if>
       </xsl:when>
     	<xsl:when test="../@role='examples'">
@@ -172,8 +172,8 @@
   <xsl:template match="div4/head">
   <xsl:variable name="criteriontype"> 
   <xsl:choose>
-      <xsl:when test="../../../@role='cc'">Conformance</xsl:when>
-      <xsl:otherwise>Success</xsl:otherwise>
+      <xsl:when test="../../../@role='cc'">適合</xsl:when>
+      <xsl:otherwise>達成</xsl:otherwise>
   </xsl:choose></xsl:variable> 
   	<xsl:variable name="id">
   		<xsl:choose>
@@ -194,21 +194,21 @@
       <!--BBC Added a test to replace guideline headings with value from current source-->
       <xsl:choose>
         <xsl:when test="../@role='sufficient'">
-				Sufficient Techniques  
+				達成基準を満たすことのできる実装方法
 			</xsl:when>
         <xsl:when test="../@role='tech-specific'">
-				Technology-Specific Techniques
+				技術特有の実装方法
 			</xsl:when>
         <xsl:when test="../@role='failures'">
-				 Common Failures for <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+				 <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
-				 Additional Techniques (Advisory) for <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる実装方法（参考）
         </xsl:when>
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
 				<xsl:when test="../@role='benefits'">
-				Specific Benefits of <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>の具体的なメリット
 			</xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates mode="text"/>
@@ -217,29 +217,28 @@
     </h4>
     <xsl:choose>
       <xsl:when test="../@role='failures'">
-        <p >The following are common mistakes that are considered failures of Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.</p>
+        <p >以下に挙げるものは、WCAG ワーキンググループが達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>に適合していないとみなした、よくある不適合事例である。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p  >(No failures currently documented)</p>
+          <p  >(今のところ、文書化されている不適合事例がない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
-        <p >Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.</p>
+        <p >適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p  >(none currently documented)</p>
+          <p  >(まだ文書化されていない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions"  >
-          <strong>Instructions:</strong> Select the situation below that matches your content. Each situation includes numbered techniques (or combinations of techniques) that the Working Group deems to be sufficient for that situation.
-</p>
+          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の実装方法（又は、実装方法の組合せ）がある。</p>
       </xsl:when>
     </xsl:choose>
   </xsl:template>
   <!-- mode: divnum -->
   <xsl:template mode="divnum" match="div1">
-	Guideline <xsl:value-of select="head"/>:<xsl:text> </xsl:text>
+	ガイドライン <xsl:value-of select="head"/>:<xsl:text> </xsl:text>
   </xsl:template>
-  <xsl:template mode="divnum" match="back/div1 | inform-div1">Appendix <xsl:number count="div1 | inform-div1" format="A "/>
+  <xsl:template mode="divnum" match="back/div1 | inform-div1">附録 <xsl:number count="div1 | inform-div1" format="A "/>
   </xsl:template>
   <xsl:template mode="divnum" match="front/div1 | front//div2 | front//div3 | front//div4 | front//div5"/>
   <xsl:template mode="divnum" match="div3">
@@ -249,19 +248,19 @@
     <!--<xsl:number level="multiple" count="div1 | div2 | div3 | technique" format="1.1.1.1"/><xsl:text> </xsl:text>-->
   </xsl:template>
   <xsl:template mode="divnum" match="div2[not(@role='glintent' or @role='gladvisory' or @role='cc' or @role='normal')]">
-		Understanding Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template>  [<xsl:call-template name="sc-handle">
+		達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template>  [<xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="@id"/>
-    </xsl:call-template>]
+    </xsl:call-template>] を理解する
 	</xsl:template>
 	<xsl:template mode="h1handle" match="div2[not(@role='glintent' or @role='gladvisory' or @role='cc' or @role='normal')]">
 		<strong><xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="@id"/>
-    </xsl:call-template></strong><span class="screenreader">:</span><br />Understanding <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> 
+    </xsl:call-template></strong><span class="screenreader">:</span><br /><abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> を理解する
 	</xsl:template>
 	  <xsl:template mode="divnum" match="div2[@role='cc']">
-		Understanding Conformance Requirement <xsl:value-of select="head"/>  [<xsl:call-template name="sc-handle">
+		適合要件 <xsl:value-of select="head"/>  [<xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="@id"/>
-    </xsl:call-template>]
+    </xsl:call-template>] を理解する
 	</xsl:template>
   <xsl:template mode="divnum" match="back//div2">
     <xsl:number level="multiple" count="div1 | div2 | inform-div1" format="A.1 "/>
@@ -309,10 +308,10 @@
         <xsl:text> </xsl:text>
         <xsl:choose>
           <xsl:when test="@role='extsrc'">
-					Understanding Guideline <xsl:value-of select="head"/>
+					ガイドライン <xsl:value-of select="head"/>
             <xsl:text> </xsl:text>[<xsl:call-template name="sc-handle">
           <xsl:with-param name="handleid" select="@id"/>
-        </xsl:call-template>]
+        </xsl:call-template>] を理解する
           </xsl:when>
           <xsl:otherwise>
             <xsl:apply-templates select="head" mode="text"/>
@@ -356,13 +355,13 @@
                             <xsl:value-of select="head"/>: 
 															<xsl:for-each select="div3">
                               <a href="#{ancestor::div2/@id}-{@role}-head">
-                              <xsl:attribute name="title">Success Criterion <xsl:value-of select="head"/> <xsl:value-of select="@role"/></xsl:attribute>
+                              <xsl:attribute name="title">達成基準 <xsl:value-of select="head"/> <xsl:value-of select="@role"/></xsl:attribute>
                                 <xsl:choose>
-                                  <xsl:when test="@role='intent'">Intent</xsl:when>
-                                  <xsl:when test="@role='techniques'">Techniques</xsl:when>
-                                  <xsl:when test="@role='benefits'">Benefits</xsl:when>
-                                  <xsl:when test="@role='examples'">Examples</xsl:when>
-                                  <xsl:when test="@role='resources'">Resources</xsl:when>
+                                  <xsl:when test="@role='intent'">意図</xsl:when>
+                                  <xsl:when test="@role='techniques'">実装方法</xsl:when>
+                                  <xsl:when test="@role='benefits'">メリット</xsl:when>
+                                  <xsl:when test="@role='examples'">事例</xsl:when>
+                                  <xsl:when test="@role='resources'">リソース</xsl:when>
                                   <xsl:otherwise>
                                     <xsl:apply-templates select="." mode="divnum"/>
                                   </xsl:otherwise>
@@ -430,7 +429,7 @@
     <xsl:if test="@role='extsrc'">
     <xsl:variable name="gl" select="$gl-src//*[@id = current()/@id]"/>
     	<xsl:if test="$gl/descendant::termref[not(@diff = 'del')]">
-          <h3 id="{@id}-terms"   class="terms">Key Terms</h3>
+          <h3 id="{@id}-terms"   class="terms">重要な用語</h3>
           <dl>
             <xsl:for-each select="$gl/descendant::termref[not(@diff = 'del')]">
             <xsl:sort data-type="text" select="$gl-src//*[@id = current()/@def]/label"/>
@@ -451,12 +450,12 @@
   <xsl:template match="div5[@role='sc']" mode="specref">
 		<a xmlns="http://www.w3.org/1999/xhtml">
 			<xsl:attribute name="href"><xsl:call-template name="href.target"/></xsl:attribute>
-				Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
+				達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
 		</a>
 	</xsl:template>
       <xsl:template mode="divnum-specref" match="div1"><xsl:apply-templates select="head" mode="text"/></xsl:template>
   <xsl:template mode="divnum-specref" match="div2">
-    Understanding Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template></xsl:template>
+    達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>を理解する</xsl:template>
   <!--BBC suppress anchor names on key terms that are pulled in from guidelines source -->
 	<xsl:template match="gitem">
 		<xsl:apply-templates mode="noid"/>
@@ -570,6 +569,6 @@
     <xsl:template match="div3[@id='conformance-terms']"></xsl:template>
     	
 <xsl:template name="understanding.notrestricted.disclaimer">
-	<p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. However, it is not necessary to use these particular techniques. For information on using other techniques, see <a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
+	<p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p>
 </xsl:template>
 </xsl:transform>

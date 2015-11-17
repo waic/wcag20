@@ -4,109 +4,73 @@
 <div2 id="meaning-doc-lang-id" role="extsrc">
    <head>3.1.1</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>
-            The intent of this Success Criterion is to ensure that content developers provide information in the Web page that user agents need to present text and other linguistic content correctly. Both assistive technologies and conventional user agents can render text more accurately when the language of the Web page is identified. Screen readers can load the correct pronunciation rules. Visual browsers can display characters and scripts correctly. Media players can show captions correctly. As a result, users with disabilities will be better able to understand the content.
-          </p>
-      <p>The default human language of the Web page is the default text-processing language as discussed in <loc href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc>. When a Web page uses several languages, the default text-processing language is the language which is used most. (If several languages are used equally, the first language used should be chosen as the default human language.) 
-          </p>
-      <note>
-         <p>
-              For multilingual sites targeting Conformance Level A, the Working Group strongly encourages developers to follow Success Criterion 3.1.2 as well even though that is a Level AA Success Criterion.
-              
-            </p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <p>This Success Criterion helps:</p>
-         <ulist>
-            <item>
-               <p>people who use screen readers or other technologies that convert text into synthetic speech;</p>
-            </item>
-            <item>
-               <p>people who find it difficult to read written material with fluency and accuracy, such as recognizing characters and alphabets or decoding words;</p>
-            </item>
-            <item>
-               <p>people with certain cognitive, language and learning disabilities who use text-to-speech software
-                </p>
-            </item>
-            <item>
-               <p>people who rely on captions for synchronized media.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Example 1. A Web page with content in two languages</emph>
-							     </p>
-            <p>A Web page produced in Germany and written in HTML includes content in both German and English, but most of the content is in German. The default human language is identified as German (de) by the lang attribute on the html element.
-              </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc>
-							     </p>
-         </item>
-         <!--item>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、ユーザーエージェントがテキスト及びその他の形式の自然言語によるコンテンツを正しく提示するために必要な情報を、コンテンツ制作者がウェブページで適切に提供するようにすることである。支援技術と従来のユーザーエージェントはともに、ウェブページの言語が示されていれば、テキストをより正確に描画することができる。例えば、スクリーンリーダーは、正しい発音規則を読み込むことができ、ビジュアルブラウザは、文字や書体を正しく表示することができる。また、メディアプレーヤーは、キャプションを正しく表示できる。これにより、障害のある利用者がコンテンツをより理解できるようになる。</p>
+<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc> で述べられているように、ウェブページのデフォルトの自然言語が、デフォルトのテキスト処理言語となる。ウェブページがいくつかの言語を使用している際、デフォルトのテキスト処理言語は、最も使われている言語である（もし同じ割合で使われている際には、最初に使われている言語がデフォルトの自然言語となるはずである）。 </p>
+
+<note>
+<p>適合レベル A を目指している多言語サイトについて、WCAG ワーキンググループはコンテンツ制作者に、レベル AA の達成基準ではあるが、達成基準 3.1.2 にも同じように適合することを強く推奨する。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 3.1.1 の具体的なメリット</head>
+<p>この達成基準には、次のような利用者にメリットがある：</p>
+<ulist>
+	<item><p>スクリーンリーダー又はテキストを合成音声に変換するその他の技術を使用している利用者。</p></item>
+	<item><p>例えば、文字及びアルファベットを認識したり、単語を読み取ったりすることのように、書かれたものを流暢かつ正確に読むのが困難な利用者。</p></item>
+	<item><p>テキストを音声に変換するソフトウェアを使用している、特定の認知の障害、言語の障害、及び学習障害のある利用者。</p></item>
+	<item><p>同期したメディアではキャプションを頼りにしている利用者。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p><emph role="bold">2つの言語で書かれたコンテンツのあるウェブページ</emph></p><p>ドイツ語で制作され、HTML でコーディングされているウェブページに、ドイツ語と英語の両方で書かれたコンテンツがあるが、コンテンツのほとんどはドイツ語で書かれている。デフォルトの自然言語は、html 要素にある lang 属性によって、ドイツ語 (de)であることが示されている。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc>
+              </p></item>
+	<!--item>
               <p>
                 <loc href="http://www.who.int/classifications/icf/site/onlinebrowser/icf.cfm?parentlevel=3&amp;childlevel=4&amp;itemslevel=4&amp;ourdimension=d&amp;ourchapter=1&amp;ourblock=2&amp;our2nd=40&amp;our3rd=0&amp;our4th=0">d140 Learning to read</loc>. 2001. International Classification of Functioning, Disabilities, and Health. World Health Organization</p>
             </item-->
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.1.1</head>
-      <div4 role="sufficient">
-         <head/>
-         <olist>
-            <item>
-               <p>
-									         <loc href="H57" linktype="html">Using the lang attribute of the html element</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="FLASH13"
-                       linktype="flash">Using HTML language attributes to specify language in Flash content</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="PDF16" linktype="pdf"/>
-               </p>
-            </item>
-            <item>
-               <p>
-                  <loc href="PDF19" linktype="pdf"/>
-               </p>
-            </item>
-         </olist>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.1.1</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="SVR5"
-                       linktype="server">Specifying the default language in the HTTP header</loc>
-								       </p>
-            </item>
-            <item role="html">
-               <p>Using http or the Content-Language meta tag for metadata (future link)
-    </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head/>
-      </div4>
-   </div3>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.1.1 の実装方法及び不適合事例 － ページの言語</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H57" linktype="html">H57: html要素のlang属性を用いる</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH13" linktype="flash">HTML の言語属性を使用して Flash コンテンツの言語を指定する</loc></p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF16" linktype="pdf">PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する</loc>
+                    </p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF19" linktype="pdf">PDF 文書内で Lang エントリを使用して節や句の言語を指定する</loc>
+                    </p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.1.1 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR5" linktype="svr">HTTPヘッダーで主たる自然言語を指定する</loc></p></item>
+	<item><p>http又はContent-Languageメタ・タグを用いてメタデータを指定する（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
 </div2>

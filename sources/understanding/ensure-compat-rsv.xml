@@ -4,299 +4,108 @@
 <div2 role="extsrc" id="ensure-compat-rsv">
    <head>4.1.2</head>
    <div3 role="intent">
-      <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that Assistive Technologies (AT) can gather information about, activate(or set) and keep up to date on the status of user interface controls in the content.</p>
-      <p>When standard controls from accessible technologies are used, this process is straightforward. If the user interface elements are used according to specification the conditions of this provision will be met. (See examples  of Success Criterion 4.1.2 below)</p>
-      <p>If custom controls are created, however, or interface elements are programmed (in code or script) to have a different role and/or function than usual, then additional measures need to be taken to ensure that the controls provide important information to assistive technologies and allow themselves to be controlled by assistive technologies.</p>
-      <p>A particularly important state of a user interface control is whether or not it has focus. The focus state of a control can be programmatically determined, and notifications about change of focus are sent to user agents and assistive technology. Other examples of user interface control state are whether or not a checkbox or radio button has been selected, or whether or not a collapsible tree or list node is expanded or collapsed.</p>
-      <note>
-         <p>Success Criterion 4.1.2 requires a programmatically determinable name for all user interface components. Names may be visible or invisible. Occasionally, the name must be visible, in which case it is identified as a label. Refer to the definition of name and label in the glossary for more information.</p>
-      </note>
-      <div4 role="benefits">
-         <head>Benefits of this Success Criterion</head>
-         <ulist>
-            <item>
-               <p>Providing role, state, and value information on all user interface components enables compatibility with assistive technology, such as screen readers, screen magnifiers, and speech recognition software, used by people with disabilities.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head>Examples for this Success Criterion</head>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Accessible APIs </emph>
-							     </p>
-            <p>A Java applet uses the accessibility API defined by the language. </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head>Resources for this Success Criterion </head>
-      <ulist>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/WAI/PF/GUI/">Role Taxonomy for Accessible Adaptable Applications</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.w3.org/WAI/PF/adaptable/">States and Adaptable Properties Module</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility, Version 2.0</loc>
-							     </p>
-         </item>
-         <item>
-            <p>
-								       <loc href="http://www.adobe.com/accessibility.htmlproducts/flash/best-practices.html">Adobe Flash accessibility design guidelines</loc>
-							     </p>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 4.1.2</head>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If using a standard user interface component in a markup language (e.g., HTML):</head>
-            <olist>
-               <item>
-                  <p>
-                     <loc href="ARIA14"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="ARIA16"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p> 
-                     <loc href="G108"
-                          linktype="general">Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</loc> using technology-specific techniques below:</p>
-                  <ulist>
-                     <item>
-                        <p>
-												               <loc href="H91" linktype="html">Using HTML form controls and links</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="H44" linktype="html">Using label elements to associate text labels with form controls</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="H64" linktype="html">Using the title attribute of the frame element</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="H65" linktype="html">Using the title attribute to identify form controls when the label element cannot be used</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="H88" linktype="html">Using (X)HTML according to spec</loc>
-											             </p>
-                     </item>
-                  </ulist>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head role="script">Situation B: If using script or code to re-purpose a standard user interface component in a markup language:</head>
-            <olist>
-               <item role="script">
-                  <p>Exposing the names and roles, allowing user-settable properties to be directly set, and providing notification of changes using one of the following techniques:</p>
-                  <ulist>
-                     <item>
-                        <p>
-                           <loc href="ARIA16"
-                                linktype="aria"/>
-                        </p>
-                     </item>
-                  </ulist>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation C: If using a standard user interface component in a programming technology:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G135"
-                          linktype="general">Using the accessibility API features of a technology to expose the names and roles, allow user-settable properties to be directly set, and provide notification of changes</loc> using technology-specific techniques below:
-									</p>
-                  <ulist>
-                     <item>
-                        <p>
-												               <loc href="FLASH32"
-                                linktype="flash">Using auto labeling to associate text labels with form controls</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="FLASH29"
-                                linktype="flash">Setting the label property for form components</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-												               <loc href="FLASH30"
-                                linktype="flash">Specifying accessible names for image buttons</loc>
-											             </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="PDF10" linktype="pdf"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="PDF12" linktype="pdf"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL26"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL32"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                  </ulist>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation D: If creating your own user interface component in a programming language:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G10"
-                          linktype="general">Creating components using a technology that supports the accessibility API features of the platforms on which the user agents will be run to expose the names and roles, allow user-settable properties to be directly set, and provide notification of changes</loc> using technology-specific techniques below:
-									</p>
-                  <ulist>
-                     <item>
-                        <p>
-                           <loc href="ARIA4" linktype="aria"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="ARIA5" linktype="aria"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="ARIA16"
-                                linktype="aria"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL6"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL18"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL20"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                     <item>
-                        <p>
-                           <loc href="SL30"
-                                linktype="silverlight"/>
-                        </p>
-                     </item>
-                  </ulist>
-               </item>
-            </olist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 4.1.2</head>
-         <ulist>
-            <item>
-               <p>Providing
-labels for all form controls that do not have implicit labels (future link)
-                </p>
-            </item>
-         </ulist>
-      </div4>
-      <div4 role="failures">
-         <head/>
-         <ulist>
-            <item role="script">
-               <p>
-									         <loc href="F59"
-                       linktype="failure">Failure due to using script to make div or span a user interface control in HTML</loc>
-								       </p>
-               <note>
-                  <p>This failure may be solved in the future using DHTML roadmap techniques.    </p>
-               </note>
-            </item>
-            <item>
-               <p>
-									         <loc href="F15"
-                       linktype="failure">Failure due to implementing custom controls that do not use an accessibility API</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F20"
-                       linktype="failure">Failure due to not updating text alternatives when changes to non-text content occur</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F68"
-                       linktype="failure">Failure of 1.3.1 and 4.1.2 due to the association of label and user interface controls not being programmatically determinable</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F79"
-                       linktype="failure">Failure of Success Criterion 4.1.2 due to the focus state of a user interface component not being programmatically determinable or no notification of change of focus state available</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F86"
-                       linktype="failure">Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="F89"
-                       linktype="failure">Failure of 2.4.4 due to using null alt on an image where the image is the only content in a link</loc>
-								       </p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、支援技術がコンテンツにあるユーザーインタフェース・コントロールのステータスに関する情報を収集する、選択された状態にする（又は設定する）、そして常に最新の状態を把握できるようにすることである。</p><p>アクセシブルなウェブコンテンツ技術の標準的なコントロールを使用している際は、このプロセスはごく簡単である。ユーザーインタフェース要素を仕様に準じて使用していれば、この達成基準には適合したことになる（以下にある、達成基準 4.1.2 の事例を参照のこと）</p>
+<p>しかし、独自のコントロールを作成する場合、又はインタフェース要素に通常とは異なる役割、及び/又は機能を持たせるように（ソースコード又はスクリプト内に）プログラムする場合には、コントロールが重要な情報を支援技術へ提供し、支援技術がそのコントロールを制御できるようにする手段を追加する必要がある。</p>
+<p>ユーザーインタフェース・コントロールの特に重要なステータスは、フォーカスがあるかどうかである。コントロールにフォーカスがあるステータスは、プログラムで判断することが可能であり、フォーカスの変化に関する通知がユーザーエージェント及び支援技術に送られる。ユーザーインタフェース・コントロールのステータスのその他の例としては、チェックボックス又はラジオボタンが選択されているかどうか、又は折り畳み可能なツリーあるいはリストが展開されているか折り畳まれているか、というのが挙げられる。</p>
+<note>
+<p>達成基準 4.1.2 は、すべてのユーザーインタフェース・コンポーネントに対して、プログラムで判断可能な識別名を要求している。識別名は、視覚的に認識できたり、できなかったりする。識別名が視覚的に認識できなければならないときがある。それは、識別名がラベルの役割も果たすような場合である。より詳しい情報については、用語集にある識別名及びラベルの定義を参照のこと。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 4.1.2 の具体的なメリット</head>
+<ulist>
+	<item><p>すべてのユーザーインタフェース・コンポーネントに、役割、ステータス、及び値の情報を持たせることによって、例えば、スクリーンリーダー、画面拡大ソフト、及び音声認識ソフトウェアなどのように、障害のある利用者が使用している支援技術との互換性を保つことができるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 4.1.2 の事例</head>
+<ulist>
+	<item><p><emph role="bold">アクセシブル API</emph></p><p>Java アプレットは、その言語で定義されたアクセシビリティ API を用いている。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www-03.ibm.com/able/guidelines/java/snsjavag.html">IBM Guidelines for Writing Accessible Applications Using 100% Pure Java</loc> を参照のこと。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://wiki.codetalks.org/wiki/index.php/Main_Page">CodeTalks: Accessible DHTML</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/GUI/">Role Taxonomy for Accessible Adaptable Applications</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/adaptable/">States and Adaptable Properties Module</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility, Version 2.0</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www-03.ibm.com/able/guidelines/java/snsjavag.html">IBM Guidelines for Writing Accessible Applications using 100% Pure Java</loc>
+              </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/accessibility/products/flash/best_practices.html">Adobe Flash accessibility design guidelines</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 4.1.2 の実装方法及び不適合事例 － プログラムが解釈可能な識別名・役割及び設定可能な値</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： マークアップ言語（例： HTML）で標準的なユーザーインタフェース・コンポーネントを使用している場合：</head>
+<olist>
+	<item><p>以下に挙げる技術特有の方法で<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G108" linktype="general">G108： マークアップを用いて、名前及び役割をUAに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H91" linktype="html">H91: HTML のフォーム・コントロール及びリンクを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">H44： label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H64" linktype="html">H64: frame 要素及び iframe 要素の title 属性を用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html">H65： label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H88" linktype="html">H88: 仕様に準拠して HTML を用いる</loc></p></item></ulist></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： スクリプト又はコードを用いて、マークアップ言語の標準的なユーザーインタフェース・コンポーネント再定義する場合：</head>
+<olist>
+	<item role="script"><p>名前及び役割をユーザーエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 C： プログラミング技術で標準的なユーザーインタフェース・コンポーネントを用いる場合：</head>
+<olist>
+	<item><p>次のウェブコンテンツ技術特有の実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G135" linktype="general">G135： ウェブコンテンツ技術のアクセシビリティAPIを用いて、名前及び役割をUAに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash">自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash">フォーム・コンポーネントに label プロパティを設定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH30" linktype="flash">画像ボタンにアクセシブルな名前を指定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10" linktype="pdf">PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF12" linktype="pdf">PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL26.html" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL32.html" linktype="silverlight">Using Silverlight Text Elements for Appropriate Accessibility Role</loc></p></item></ulist></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 D： プログラミング言語で独自のインタフェース・コンポーネントを作成する場合：</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G10" linktype="general">G10： 名前及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するためにユーザーエージェントが動作する、プラットフォームのアクセシビリティAPI機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL6.html" linktype="silverlight">Defining a UI Automation Peer for a Custom Silverlight Control</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL18.html" linktype="silverlight">Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL20.html" linktype="silverlight">Relying on Silverlight AutomationPeer Behavior to Set AutomationProperties.Name</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL30.html" linktype="silverlight">Using Silverlight Control Compositing and AutomationProperties.Name</loc></p></item></ulist></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 4.1.2 でさらに対応が望まれる実装方法（参考）</head>
+<ulist>
+	<item><p>暗黙のラベルを持たないすべてのフォーム・コントロールにラベルを付加する（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+<ulist>
+	<item role="script"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F59" linktype="failure">F59: 達成基準 4.1.2 の不適合事例 スクリプトを用いて、HTMLのdiv要素又はspan要素をユーザーインタフェースのコントロールにしている</loc></p><note><p>この不適合事例は、将来的に DHTML ロードマップ (WAI-ARIA) の実装方法を用いて問題が解決されるかもしれない。</p></note></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F15" linktype="failure">F15: 達成基準 4.1.2 の不適合事例  ウェブコンテンツ技術のアクセシビリティAPIを用いていない、又は完全には用いていないカスタム・コントロールを実装している</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">F20: 達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例  非テキストコンテンツの変更時に代替テキストを更新していない</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F68" linktype="failure">F68: 達成基準 1.3.1 及び 達成基準 4.1.2 の不適合事例  ラベルとユーザーインタフェース・コントロールとの関連付けがプログラムが解釈可能ではない</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F79" linktype="failure">F79: 達成基準 4.1.2 の不適合事例  ユーザーインタフェース・コンポーネントのフォーカスの状態がプログラムが解釈可能ではない、又はフォーカスの状態の変更が通知されていない</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F86" linktype="failure">F86: 達成基準 4.1.2 の不適合事例  例えば電話番号にように、複数に分けられたテキストフィールドのそれぞれに対して、名前が提供されていない</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F89" linktype="failure">F89: 達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の不適合事例 イメージだけがリンクのコンテンツである際に、img要素のalt属性値が空になっている</loc></p></item>
+</ulist>
+</div4>
+</div3>
 </div2>

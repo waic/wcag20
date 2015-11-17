@@ -5,11 +5,13 @@
    <head>2.2</head>
    <div2 id="time-limits-intent" role="glintent">
       <head>Intent</head>
-      <p>Many users who have disabilities need more time to complete tasks than the majority of users: they may take longer to physically respond, they may take longer to read things, they may have low vision and take longer to find things or to read them, or they may be accessing content through an assistive technology that requires more time. This guideline focuses on ensuring that users are able to complete the tasks required by the content with their own individual response times. The primary approaches deal with eliminating time constraints or providing users enough additional time to allow them to complete their tasks. Exceptions are provided for those cases where this is not possible.</p>
-   </div2>
-   <div2 id="time-limits-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-   </div2>
+
+<p>障害のある利用者の多くは、障害のない利用者と比べると、タスクを完了するのにより長い時間を必要とする。それは、身体的に反応するのに時間がかかることがある、何かを読むのに時間がかかることがある、ロービジョンのために何かを見つけたり読んだりするのに時間がかかることがある、又は、より時間を要する支援技術を使用してコンテンツを利用していることがあるからである。このガイドラインは、利用者がコンテンツに要求されるタスクを利用者の必要とする時間をかけて完了できるようにすることに焦点を当てている。主なアプローチとして、制限時間を取り除くこと、又はタスクを完了するために十分な時間を利用者が追加できるようにすることを挙げている。ただし、それが不可能な場合に対する例外が認められている。</p>
+</div2>
+
+<div2 id="time-limits-advisory" role="gladvisory">
+<head>Advisory techniques for Guideline N.N</head>
+</div2>
    <xi:include href="time-limits-required-behaviors.xml"/>
    <xi:include href="time-limits-pause.xml"/>
    <xi:include href="time-limits-no-exceptions.xml"/>

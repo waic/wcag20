@@ -4,44 +4,31 @@
 <div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="navigation-mechanisms">
    <head>2.4</head>
    <div2 id="navigation-mechanisms-intent" role="glintent">
-      <head>Intent</head>
-      <p>The intent of this guideline is to help users find the content they need and allow them to keep track of their location. These tasks are often more difficult for people with disabilities. For finding, navigation, and orientation, it is important that the user can find out what the current location is. For navigation, information about the possible destinations needs to be available. Screen readers convert content to synthetic speech  which, because it is audio, must be presented in linear order.  Some Success Criteria in this guideline explain what provisions need to be taken to ensure that screen reader users can successfully navigate the content. Others allow users to more easily recognize navigation bars and page headers and to bypass this repeated content. Unusual user interface features or behaviors may confuse people with cognitive disabilities.
-          
-        </p>
-      <p>As described in The <loc href="http://www.motive.co.nz/glossary/navigation.php">Motive Web Design Glossary</loc>, navigation has two main functions:</p>
-      <ulist>
-         <item>
-            <p>to tell the user where they are</p>
-         </item>
-         <item>
-            <p>to enable the user to go somewhere else</p>
-         </item>
-      </ulist>
-      <p>This guideline works closely with <loc href="content-structure-separation"
-              linktype="guideline">Guideline 1.3</loc>, which ensures that any structure in the content can be perceived, a key to navigation as well. Headings are particularly important mechanisms for helping users orient themselves within content and navigate through it. Many users of assistive technologies rely on appropriate headings to skim through information and easily locate the different sections of content. Satisfying <loc href="content-structure-separation-programmatic"
-              linktype="guideline">Success Criterion 1.3.1
-          </loc> for headings also addresses some aspects of Guideline 2.4.</p>
-   </div2>
-   <div2 id="navigation-mechanisms-advisory" role="gladvisory">
-      <head>Advisory techniques for Guideline N.N</head>
-      <ulist>
-         <item>
-            <p>Limiting the number of links per page (future link)    </p>
-         </item>
-         <item>
-            <p>
-              Providing mechanisms to navigate to different sections of the content of a Web page (future link) 
-            </p>
-         </item>
-         <item>
-            <p>Making links visually distinct (future link)
-            </p>
-         </item>
-         <item>
-            <p>Highlighting search terms (future link)</p>
-         </item>
-      </ulist>
-   </div2>
+      <head>ガイドライン 2.4 の意図</head>
+
+<p>このガイドラインの意図は、利用者が必要とするコンテンツを見つけるのを手助けして、自分の現在位置を確認し続けられるようにすることである。こういったタスクは、障害のある利用者にとってはより困難であることがしばしばである。発見、ナビゲーション及び位置確認において重要なのは、利用者が現在位置はどこなのかを確かめられることである。ナビゲーションにおいては、考えられうる行き先に関する情報を入手可能にする必要がある。スクリーンリーダーは、コンテンツを合成音声に変換するが、それは音声なので、合成音声は線形順序で提示されなければならない。このガイドラインにある達成基準では、スクリーンリーダーの利用者がコンテンツを無事にナビゲートできるようにするために、どの条項に対応する必要があるのかを説明しているものがある。また、利用者がより容易にナビゲーションバー及びページの見出しを認識できるようにして、そういった繰り返されているコンテンツを通過できるようにする達成基準もある。一般的ではないユーザーインタフェースの機能又はふるまいは、認知の障害のある利用者を困惑させてしまうことがある。</p>
+
+<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.motive.co.nz/glossary/navigation.php">Motive Web Design Glossary</loc>で説明されているように、ナビゲーションには、主に2つの機能がある：</p>
+<ulist>
+	<item><p>利用者に自分がどこにいるのかを知らせる</p></item>
+	<item><p>利用者が他のどこかへ行けるようにする</p></item>
+</ulist>
+<p>このガイドラインは、同様にナビゲーションの鍵を握り、コンテンツのあらゆる構造を知覚可能にするための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="content-structure-separation" linktype="guideline">ガイドライン 1.3</loc> と密接に連動している。見出しは、利用者がコンテンツ内での自分の現在位置を確認して、ナビゲートしていく上で、特に重要なメカニズムである。情報を走り読みして、コンテンツの様々なセクションを容易に見つける際、支援技術の利用者の多くは適切な見出しを頼りにしている。見出しに関して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="content-structure-separation-programmatic" linktype="guideline">達成基準 1.3.1</loc> に適合することは、同時にガイドライン 2.4 にも部分的に対処していることになる。</p>
+</div2>
+
+<div2 id="navigation-mechanisms-advisory" role="gladvisory">
+<head>ガイドライン 2.4 の参考にすべき実装方法（特定の達成基準に特有ではない実装方法）</head>
+<ulist>
+	<item><p>1ページあたりのリンクの数を限定する（リンク追加予定） </p></item>
+	<item><p>
+              ウェブページのコンテンツの異なるセクションにナビゲートするメカニズムを提供する（リンク追加予定） 
+            </p></item>
+	<item><p>視覚的に異なるリンクを用いる（リンク追加予定）
+            </p></item>
+	<item><p>検索ワードをハイライト表示する（リンク追加予定）
+            </p></item>
+</ulist>
+</div2>
    <xi:include href="navigation-mechanisms-skip.xml"/>
    <xi:include href="navigation-mechanisms-title.xml"/>
    <xi:include href="navigation-mechanisms-focus-order.xml"/>

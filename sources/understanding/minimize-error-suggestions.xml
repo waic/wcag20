@@ -5,293 +5,181 @@
    <head>3.3.3</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-      <p>The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG 2.0 definition of "input error" says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.</p>
-      <p>Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred. </p>
-      <p>The content author may provide the description of the error, or the user agent may provide the description of the error based on technology-specific, programmatically determined information.
-          </p>
-      <div4 role="benefits">
-         <head/>
-         <ulist>
-            <item>
-               <p>Providing information about how to correct input errors allows users who have learning disabilities to fill in a form successfully. Users who are blind or have impaired vision understand more easily the nature of the input error and how to correct it. People with motion impairment can reduce the number of times they need to change an input value.</p>
-            </item>
-         </ulist>
-      </div4>
-   </div3>
-   <div3 role="examples">
-      <head/>
-      <ulist>
-         <item>
-            <p>
-								       <emph role="bold">Additional Help for Correcting An Input Error</emph>
-							     </p>
-            <p>The result of a form that was not successfully submitted describes an
-input error in place in the page along with the correct input and offers additional help for the form field that caused the input error. 
-              </p>
-         </item>
-         <item>
-            <p>
-								       <emph role="bold">Suggestions from a Limited Set of Values</emph>
-							     </p>
-            <p> An input field requires that a month name be entered. If the user enters "12," suggestions for correction may include 
-            </p>
-            <ulist>
-               <item>
-                  <p>A list of the acceptable values, e.g., "Choose one of: January, February, March, April, May, June, July, August, September, October, November, December."</p>
-               </item>
-               <item>
-                  <p>A description of the set of values, e.g., "Please provide the name of the month."</p>
-               </item>
-               <item>
-                  <p>The conversion of the input data interpreted as a different month format, e.g., "Do you mean 'December'?"</p>
-               </item>
-            </ulist>
-         </item>
-      </ulist>
-   </div3>
-   <div3 role="resources">
-      <head/>
-   </div3>
-   <div3 role="techniques">
-      <head>Techniques for Addressing Success Criterion 3.3.3</head>
-      <note>
-         <p>
-              In some cases, more than one of these situations may apply. For example, when a mandatory field also requires the data to be in a specific format.
-              
-            </p>
-      </note>
-      <div4 role="sufficient">
-         <head/>
-         <div5 role="situation">
-            <head>Situation A: If a mandatory field contains no information:</head>
-            <olist>
-               <item>
-                  <p>
-										           <loc href="G83"
-                          linktype="general">Providing a text description that identifies the field as mandatory</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="ARIA2" linktype="aria">ARIA2: Identifying required fields with the "required" property</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF5" linktype="pdf"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="SL35"
-                          linktype="silverlight"/>
-                  </p>
-               </item>
-            </olist>
-            <!--<ednote>
-								<edtext>The above two techniques seem more like 3.3.1 than 3.3.3 techniques</edtext>
-							</ednote>-->
-         </div5>
-         <div5 role="situation">
-            <head>Situation B: If information for a field is required to be in a specific data format:</head>
-            <olist>
-               <item>
-                  <p>
-                     <loc href="ARIA18"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G85"
-                          linktype="general">Providing a text description when user input falls outside the required format or values</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G177"
-                          linktype="general">Providing suggested correction text</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR18"
-                          linktype="script">SCR18: Providing client-side validation and alert</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR32"
-                          linktype="script">Providing client-side validation and adding error text via the DOM</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="FLASH12"
-                          linktype="flash">Providing client-side validation and adding error text via the accessible description</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF22" linktype="pdf"/>
-                  </p>
-               </item>
-            </olist>
-         </div5>
-         <div5 role="situation">
-            <head>Situation C: Information provided by the user is required to be one of a limited set of values:</head>
-            <olist>
-               <item>
-                  <p>
-                     <loc href="ARIA18"
-                          linktype="aria"/>
-                  </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G84"
-                          linktype="general">Providing a text description when the user provides information that is not in list of allowed values</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="G177"
-                          linktype="general">Providing suggested correction text</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR18"
-                          linktype="script">SCR18: Providing client-side validation and alert</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="SCR32"
-                          linktype="script">Providing client-side validation and adding error text via the DOM</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-										           <loc href="FLASH12"
-                          linktype="flash">Providing client-side validation and adding error text via the accessible description</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-                     <loc href="PDF22" linktype="pdf"/>
-                  </p>
-               </item>
-            </olist>
-         </div5>
-      </div4>
-      <div4 role="tech-optional">
-         <head>Additional Techniques (Advisory) for 3.3.2</head>
-         <ulist>
-            <item>
-               <p>
-									         <loc href="G139"
-                       linktype="general">G139: Creating a mechanism that allows users to jump to errors</loc>
-								       </p>
-            </item>
-            <item>
-               <p>
-        Making error messages easy to understand and distinguishable from other text in the Web page (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Validating form submissions on the server (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        When mandatory information has not been provided, including descriptions or examples of correct information in addition to identifying the field as mandatory (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Repeating and emphasizing suggestions for correcting each input error in the context of its form field (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Providing a way for the user to skip from each item in a list of suggestions to its corresponding form field (future link)
-    </p>
-            </item>
-            <item>
-               <p>
-        Providing additional contextual help for the form field requiring change (future link)
-    </p>
-            </item>
-            <item>
-               <p>Accepting input data in a variety of formats (future link) 
-                </p>
-            </item>
-            <item>
-               <p>
-									         <loc href="G199"
-                       linktype="general">Providing success feedback when data is submitted successfully</loc>
-								       </p>
-            </item>
-         </ulist>
-         <div5>
-            <head>Techniques for providing suggestions to the user (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>
-        Providing a text description that contains information about the number of input errors, suggestions for corrections to each item, and instructions on how to proceed (future link)
-    </p>
-               </item>
-               <item>
-                  <p>
-        Providing a text description that contains suggestions for correction as the first item (or one of the first items) of content, or emphasizing this information in the content (future link)
-    </p>
-               </item>
-               <item>
-                  <p>
-        Displaying errors and suggestions in the context of the original form (for example, re-displaying a form where input errors and suggestions for correction are highlighted and displayed in the context of the original form) (future link)
-    </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head role="html">HTML Techniques (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>Providing "correct examples" for data and data formats as initial text in mandatory form fields (future link)    </p>
-               </item>
-               <item>
-                  <p>Providing links to suggested correction text "close to" form
-fields, or providing the suggested correction text itself directly on
-the Web page "next to" form fields (future link) </p>
-               </item>
-            </ulist>
-         </div5>
-         <div5>
-            <head role="script">Client-Side Scripting Techniques (Advisory)</head>
-            <ulist>
-               <item>
-                  <p>
-										           <loc href="SCR18"
-                          linktype="script">Providing client-side validation and alert</loc>
-									         </p>
-               </item>
-               <item>
-                  <p>
-        Providing client-side validation and adding error text via the DOM (future link)
-    </p>
-               </item>
-               <item>
-                  <p>
-        Calling a function from the submit action of a form to perform client side validation (future link)
-    </p>
-               </item>
-            </ulist>
-         </div5>
-      </div4>
-      <div4 role="failures">
-         <head/>
-      </div4>
-   </div3>
+
+<p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。</p><p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。</p>
+<p>コンテンツ制作者はエラーを説明することができる。又、ユーザーエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>入力エラーを修正する方法に関する情報を提供することによって、学習障害のある利用者がフォームに問題なく入力できるようになる。そして、全盲の利用者又は視覚に障害のある利用者が、入力エラーの内容及びその修正方法をもっと容易に理解できるようになる。また、運動障害のある利用者は、入力内容を変更せざるを得なくなる回数を減らすことができる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">入力エラーを修正するためのヘルプの追加</emph>
+              </p><p>うまく送信されなかったフォームのエラー画面で、そのページで起こった入力エラーを正しい入力方法とあわせて説明していて、入力エラーになったテキストフィールドのヘルプを追加で提供している。
+              </p></item>
+	<item><p>
+                <emph role="bold">制限のある値の提示</emph>
+              </p><p> 月の名前を入力するテキストフィールドがある。利用者が「12」と入力すると、修正する方法が提示される。
+            </p><ulist><item><p>入力可能な値の一覧。例えば、「どれか一つを選んでください： January, February, March, April, May, June, July, August, September, October, November, December」。</p></item><item><p>入力すべき値を説明する。例えば、「月の名前を入力してください。」</p></item><item><p>入力されたデータを異なるフォーマットに変換して提示する。例えば、「もしかして 'December' ですか?」</p></item></ulist></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準3.3.3 の実装方法及び不適合事例 - 入力エラー修正方法の提示</head>
+
+<note>
+<p>2つ以上の状況が適用される場合もある。例えば、必須フィールドが特別なデータフォーマットを要求する場合である。</p>
+</note>
+
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： 必須のフィールドに情報が入力されていない場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G83" linktype="general">入力が完了していない必須項目を特定するために、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF5" linktype="pdf">PDF フォームで必須項目のフォーム・コントロールを特定する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL35.html" linktype="silverlight">Using the Validation and ValidationSummary APIs to Implement Client Side Forms Validation in Silverlight</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： フィールドの情報に、特別のデータフォーマットが要求される場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G85" linktype="general">利用者の入力が要求されたフォーマット又は値ではなかった際に、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G177" linktype="general">テキストの修正候補を提示する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">ユーザーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 C： 利用者の入力する情報は、複数の限定された値のうちの一つであることが要求される場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G84" linktype="general">利用者が認められた値以外の情報を提供した際に、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G177" linktype="general">テキストの修正候補を提示する</loc>
+                      </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">ユーザーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                  </p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.3.3 でさらに対応が望まれる実装方法（参考） </head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G139" linktype="general">利用者がエラー箇所に移動できるようにするメカニズムを提供する</loc>
+                </p></item>
+	<item><p>
+        エラーメッセージを、ウェブページのその他のテキストと区別しやすくし、容易に理解できるようにする（リンク追加予定）
+    </p></item>
+	<item><p>
+        送信されたフォームが正しいかをサーバーで確認する（リンク追加予定）
+    </p></item>
+	<item><p>
+        必須の情報が入力されない場合に、必須フィールドを識別するだけでなく、正しい情報の説明と事例を提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        フォームフィールドと関連して、各入力エラーを訂正するための提案を繰り返し強調する（リンク追加予定）
+    </p></item>
+	<item><p>
+        提案するリストの各項目から、対応するフォームフィールドへスキップする方法を利用者に提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        変更の必要のあるフォームフィールドに対して、文脈に沿った追加のヘルプを提供する（リンク追加予定）
+    </p></item>
+	<item><p>様々なフォーマットの入力データを受け付ける（リンク追加予定） 
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G199" linktype="general">データの送信が成功した時は、成功したことを示すフィードバックを提供する</loc></p></item>
+</ulist>
+
+<div5>
+<head>利用者に提案を行う実装方法（参考）</head>
+<ulist>
+	<item><p>
+        入力エラーの数についての情報を含むテキストの説明、各項目を訂正するための提案、そして、どのように進めるべきかの指示を提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        コンテンツの最初の項目（あるいは最初の項目の一つ）を訂正するための提案を含むテキストの説明を提供する、又は、コンテンツの中でこの情報を強調する（リンク追加予定）
+    </p></item>
+	<item><p>
+        エラーを表示し、元のフォームの文脈に沿った提案をする（例えば、フォームのどこに入力エラーがあるかを再表示し、訂正のための提案がハイライトされ、元のフォームとの関連を表示する）（リンク追加予定）
+    </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head>HTMLの実装方法（参考）</head>
+<ulist>
+	<item><p>"	必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する（リンク追加予定）  </p></item>
+	<item><p>"	正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する（リンク追加予定） </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head>クライアントサイドのスクリプトの実装方法（参考）</head>
+<ulist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p>
+        クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する（リンク追加予定）
+    </p></item>
+	<item><p>
+        フォームの送信動作をきっかけにクライアントサイドのバリデーションの機能を呼び出す（リンク追加予定）
+    </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head role="aria">ARIAの実装方法（参考）</head>
+<ulist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/ARIA2.html" linktype="aria">ARIA2: Identifying required fields with the "required" property</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/ARIA3.html" linktype="aria">ARIA3: Identifying valid range information with the "valuemin" and "valuemax" properties</loc>
+                  </p></item>
+</ulist>
+</div5>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
 </div2>
