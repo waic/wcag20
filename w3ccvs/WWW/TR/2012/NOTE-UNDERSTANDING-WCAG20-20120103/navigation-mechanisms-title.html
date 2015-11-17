@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 2.4.2 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding SC  2.4.1 [ブロック・スキップ]" href="navigation-mechanisms-skip.html"><strong>前へ: </strong>SC  2.4.1 [ブロック・スキップ]</a></li><li><a title="Understanding SC  2.4.3 [フォーカス順序]" href="navigation-mechanisms-focus-order.html"><strong>次へ: </strong>SC  2.4.3 [フォーカス順序]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#navigation-mechanisms-title-intent-head">意図</a></li><li><a href="#navigation-mechanisms-title-examples-head">事例</a></li><li><a href="#navigation-mechanisms-title-resources-head">関連リソース</a></li><li><a href="#navigation-mechanisms-title-techniques-head">実装方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="navigation-mechanisms-title" id="navigation-mechanisms-title"> </a><strong>ページタイトル</strong><span class="screenreader">:</span><br/><abbr title="Success Criterion">SC</abbr> 2.4.2 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-title">2.4.2</a> ページタイトル:</strong> 
+                <a href="#webpagedef" class="termref">ウェブページ</a>には、主題又は目的を説明したタイトルがある。 
+					(Level A)
+				</p></div></blockquote><div class="intent"><h2 id="navigation-mechanisms-title-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、各ウェブページにその内容を示すページタイトルを付けることによって、利用者がコンテンツを見つけやすく、自分の現在位置を確認しやすくすることである。タイトルがあれば、利用者はページのコンテンツを読んだり解釈したりすることなく、現在位置を確認することができる。タイトルがサイトマップ又は検索結果のリストに表示されたときに、利用者は自分の求めているコンテンツをより素早く確認できるようになる。ユーザーエージェントは、利用者がそのページを確認できるように、ページのタイトルを容易に見つけられるようにする。例えば、ユーザーエージェントは、そのページタイトルをウィンドウのタイトルバーに表示するか、又はそのページを表示しているタブの名前として表示する。</p><div class="benefits"><h3 id="navigation-mechanisms-title-141-head" class="div3head">達成基準 2.4.2の具体的なメリット:
+			</h3><ul><li><p>
+                  この達成基準により、そのウェブページにある情報が自分のニーズに関係があるかどうかを、すべての利用者が素早くかつ容易に確認できるようになる。
+                </p></li><li><p>
+                  視覚障害のある利用者が、複数のページが開いているとき、コンテンツを区別できるようになる。
+                </p></li><li><p>
+                  認知の障害、短期記憶障害、及び読字障害のある利用者も、そのページタイトルでコンテンツを確認できるようになる。
+                </p></li><li><p>
+                  この達成基準は、重度の運動障害があり、ウェブページ間を行き来するとき操作モードを音声に依存する利用者にも役立つ。
+                </p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-title-examples-head" class="section">達成基準 2.4.2の事例
+            </h2><ul><li><p>
+                <strong>HTML のウェブページ</strong>
+              </p><p>HTML で制作したウェブページの内容を示したタイトルが、ユーザーエージェントのタイトルバーに表示されるように、title 要素 でマークアップされている。</p></li><li><p>
+                <strong>文書</strong>
+              </p><font color="red">&lt;trnote&gt;<p>以下、英文原文例をそのまま日本語にした。英文では<a href="http://www.w3.org/TR/2005/WD-WCAG20-20051123/">2005年のWCAGドラフト（英語）</a>が参考にされた模様。</p>&lt;/trnote&gt;</font><p><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</a> のページタイトルが、「ウェブコンテンツ・アクセシビリティ・ガイドライン 2.0」となっている。</p><ul><li><p>主要なページのページタイトルが、「ガイドライン X を理解する」や「達成基準 X を理解する」となっている。</p></li><li><p>ドキュメントのページタイトルが、「WCAG 2.0 ガイドライン」となっている。</p></li><li><p>附録 A のページタイトルが、「用語集」となっている。</p></li><li><p>附録 B のページタイトルが、「謝辞」となっている。</p></li><li><p>附録 C のページタイトルが、「参考文献」となっている。</p></li></ul></li><li><p>
+                <strong>ウェブアプリケーション </strong>
+              </p><p>
+                あるインターネット銀行のアプリケーションでは、利用者が自分の銀行口座をチェックしたり、過去の明細を確認したり、振込をしたりすることができる。そのウェブアプリケーションは、ウェブページごとにページタイトルを動的に生成している。例えば、「ジョン・スミスさんの講座： XYZ 銀行」、「口座番号 1234-5678 の取引明細 － 2005年12月： XYZ 銀行」などである。
+                
+              </p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-title-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p>
+                <a href="http://www.socialpatterns.com/search-engine-optimization/writing-better-titles/">Writing Better Web Page Titles</a> How to write titles for Web pages that will enhance search engine effectiveness.</p></li><li><p>
+                <a href="http://redish.net/content/papers/interactions.html">Guidelines for Accessible and Usable Web Sites: Observing Users Who Work With Screen Readers</a>. Theofanos, M.F., and Redish, J. (2003).  Interactions, Volume X, Issue 6, November-December 2003, pages 38-51, <a href="http://dl.acm.org/citation.cfm?doid=947226.947227">http://dl.acm.org/citation.cfm?doid=947226.947227</a>
+              </p></li></ul></div><div class="div3"><h2 id="navigation-mechanisms-title-techniques-head" class="section">達成基準 2.4.2 の実装方法及び不適合事例
+               - ページタイトル</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="navigation-mechanisms-title-142-head" class="div3head">
+				達成基準を満たすことのできる実装方法 
+			</h3><ol class="enumar"><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G88" class="tech-ref">G88: ウェブページに対して、コンテンツの内容が分かるページタイトルを提供する</a>
+                 、<strong>かつ</strong>、後述のテクニックの一つを使ってウェブページにタイトルを結びつける： 
+                </p><ul><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H25" class="tech-ref">H25: title要素を用いて、ページタイトルを提供する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF18" class="tech-ref">PDF18: PDF 文書の文書情報辞書内の Title エントリを使用して文書のタイトルを指定する</a> (PDF)
+    	
+                    </p></li></ul></li></ol></div><div class="boxed"><h3 id="navigation-mechanisms-title-143-head" class="div3head">2.4.2 でさらに対応が望まれる実装方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G127" class="tech-ref">G127: 技術特有の実装方法を用いて、そのウェブページとその他の多くのウェブページとの関係を示す</a>
+    </p></li><li><p>
+        ウェブページの主題を特定する（リンク追加予定）
+    </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA1" class="tech-ref">ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls</a>  (ARIA)
+			
+                </p></li><li><p>フレームを特定するため意味のある名前を提供する（リンク追加予定）</p></li><li><p>ウェブページに一意なタイトルを使う（リンク追加予定）
+                </p></li><li><p>説明的な内容を説明したトップレベルページの見出しを提供する（リンク追加予定）
+                </p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-title-144-head" class="div3head"><abbr title="Success Criterion">SC</abbr> 2.4.2のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準2.4.2に適合していないとみなした、よくある不適合事例である。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F25" class="tech-ref">F25: 達成基準 2.4.2 の不適合事例 － ウェブページのページタイトルがコンテンツの内容を示していない</a>
+                </p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="webpagedef" id="webpagedef"> </a>ウェブページ</dt><dd><p>
+単一の URI から HTTP で得たリソース（埋め込まれていないリソース）と、
+<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#useragentdef" class="termref">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図したりレンダリングに用いたりするその他のリソース（埋め込まれているリソース）を合わせたもの。
+            </p><div class="note"><p class="prefix"><em>注記 1:
+					</em>どのような「その他のリソース」（埋め込まれているリソース）も主たるリソース（埋め込まれていないリソース）と一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされる必要があるわけではない。</p><p class="prefix"><em>注記 2:
+					</em>このガイドラインの適合範囲に含まれる対象となるウェブページは、「埋め込まれていない」リソースでなければならない。</p></div><div class="example"><p class="prefix"><em>Example 1:
+					</em>すべての埋め込まれている画像とメディアを含んだウェブリソース。</p><p class="prefix"><em>Example 2:
+					</em>Ajax を用いたウェブメールのプログラム。そのプログラムは http://example.com/mail に存在しており、受信箱、アドレス帳、そしてカレンダーがある。受信箱、アドレス帳やカレンダーを起動するリンク又はボタンがあるが、ウェブページ全体の URI は変わらないもの。</p><p class="prefix"><em>Example 3:
+					</em>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツのモジュール一式から表示させるコンテンツを選択できるようなもの。</p><p class="prefix"><em>Example 4:
+					</em>ブラウザで"http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは1ページだけのウェブサイトかもしれないし、 ウェブサイトの中のほんの1ページなのかもしれない。</p></div></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding SC  2.4.1 [ブロック・スキップ]" href="navigation-mechanisms-skip.html"><strong>前へ: </strong>SC  2.4.1 [ブロック・スキップ]</a></li><li><a title="Understanding SC  2.4.3 [フォーカス順序]" href="navigation-mechanisms-focus-order.html"><strong>次へ: </strong>SC  2.4.3 [フォーカス順序]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a> (see the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">latest version of this document</a>)の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。 
+ </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/WAI/GL/2010/WD-UNDERSTANDING-WCAG20-20100128/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2010年3月27日時点での最新のEditor's Draft</a>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 Editor's Draftは、現在W3Cで公開されている<a href="http://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/">2008年12月11日付けの「Understanding WCAG 2.0」</a>が更新されたもので、この版と異なる部分を含んでいる可能性があります。原文の "Understanding WCAG 2.0"自体がまだ<strong>未完成</strong>であり、この文書の内容は、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。あくまでも参考程度にご覧ください。</p></div></body></html>

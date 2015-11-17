@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 1.2.3 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding SC  1.2.2 [収録済の音声コンテンツのキャプション]" href="media-equiv-captions.html"><strong>前へ: </strong>SC  1.2.2 [収録済の音声コンテンツのキャプション]</a></li><li><a title="Understanding SC  1.2.4 [ライブの音声コンテンツのキャプション]" href="media-equiv-real-time-captions.html"><strong>次へ: </strong>SC  1.2.4 [ライブの音声コンテンツのキャプション]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#media-equiv-audio-desc-intent-head">意図</a></li><li><a href="#media-equiv-audio-desc-examples-head">事例</a></li><li><a href="#media-equiv-audio-desc-resources-head">関連リソース</a></li><li><a href="#media-equiv-audio-desc-techniques-head">実装方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="media-equiv-audio-desc" id="media-equiv-audio-desc"> </a><strong>収録済の映像コンテンツの代替コンテンツ又は音声ガイド</strong><span class="screenreader">:</span><br/><abbr title="Success Criterion">SC</abbr> 1.2.3 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc">1.2.3</a> 収録済の映像コンテンツの代替コンテンツ又は音声ガイド:</strong> 
+<a href="#synchronizedmediadef" class="termref">同期したメディア</a>に含まれている<a href="#prerecordeddef" class="termref">収録済</a>の<a href="#videodef" class="termref">映像</a>コンテンツに対して、<a href="#alt-time-based-mediadef" class="termref">時間の経過に伴って変化するメディアに対する代替コンテンツ</a>又は<a href="#audiodescdef" class="termref">音声ガイド</a>を提供する。ただし、その同期したメディアが<a href="#multimedia-alt-textdef" class="termref">テキストの代替メディア</a>であって、代替メディアであることが明確にラベル付けされている場合は除く。
+               
+					(Level A)
+				</p></div></blockquote><div class="intent"><h2 id="media-equiv-audio-desc-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、全盲又は視覚障害のある利用者が、同期したメディアのプレゼンテーションにある視覚的な情報を入手できるようにすることである。この達成基準では、2つのアプローチについて説明しているが、どちらを用いてもよい。</p><p>1つめのアプローチは、映像コンテンツの音声ガイドを提供することである。音声ガイドは、利用者が映像の情報を入手できない場合のために、利用者が必要とする情報をそのプレゼンテーションの音声部分に加えて、映像コンテンツを増補するものである。発話の合間に存在する無音部分を使って、動き、登場人物、シーンの変化、画面上の文字に関する情報のうち、コンテンツを理解する上で重要で、かつ主音声では説明されていなかったり、話されていない情報を、音声ガイドで提供する。</p><p>2つめのアプローチは、同期したメディアにある（視覚的及び聴覚的な）情報すべてをテキスト形式で提供することである。時間の経過に伴って変化するメディアの代替は、同期したメディアのコンテンツで提供されているすべての情報をそのままに提供するものである。時間の経過に伴って変化するメディアの代替は、いわば台本や書物のようなものである。音声ガイドとは異なり、映像部分の説明が、既存の発話の合間だけに制限されることはない。視覚的な状況、登場人物の動きや表情、及びその他のあらゆる視覚的なものを含めて、すべての視覚的な情報について、説明を十分に提供する。さらに、発話ではない音声（笑い声、画面の外から聞こえてくる声など）を説明し、すべての発話の書き起こしテキストを含む。そして、そういった説明と発話の書き起こしテキストの登場順は、同期したメディア自体での登場順と同じである。結果的に、時間の経過に伴って変化するメディアの代替は、同期したメディアコンテンツについて、音声ガイドだけの場合よりもずっと多くの完全な説明を提供することが可能である。</p><p>同期したメディアのプレゼンテーションの一部分として何らかのインタラクションがある場合（例えば、「質問に答えるために、今、ボタンを押してください。」）、時間の経過に伴って変化するメディアの代替は、ハイパーリンク又は同じ機能を提供するのに必要なものを提示することになる。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>
+ 達成基準 1.2.3、1.2.5、及び 1.2.7 では、映像トラックにある情報のすべてが音声トラックですでに提供されている場合には、音声ガイドを必要としない。</p><p class="prefix"><em>注記 2:
+					</em>達成基準 1.2.3、1.2.5、及び 1.2.8 は、お互いに重なり合う部分がある。これは、最低限の適合レベルではコンテンツ制作者に選択肢を与え、より高い適合レベルでは付加的な要件を提示するためである。達成基準 1.2.3 のレベル A では、コンテンツ制作者には、音声ガイド又は完全な代替テキストのどちらかを提供するという選択肢がある。レベル AA で適合したい場合、達成基準 1.2.5 において、コンテンツ制作者は音声ガイドを提供しなければならない。もし達成基準 1.2.3 を満たすための代替コンテンツとして音声ガイドを選択していれば、レベル AA の要件をすでに満たしていることになるが、そうでなければ、音声ガイドの提供は付加的な要件ということになる。達成基準 1.2.8 のレベル AAA では、コンテンツ制作者は拡張したテキストの説明を提供しなければならない。達成基準 1.2.3 及び 1.2.5 において音声ガイドだけを提供することで要件を満たしていた場合には、達成基準 1.2.8 は付加的な要件ということになる。しかし、達成基準 1.2.3 をテキストの説明による代替を提供することで満たし、なおかつ達成基準 1.2.5 の音声ガイドの要件を満たしている場合には、達成基準 1.2.8 は新しい要件を付加することにはならない。</p></div><p><em><a href="media-equiv-audio-desc-only.html">
+    達成基準1.2.5 収録済の映像コンテンツの音声ガイドを理解する</a></em>、<em><a href="media-equiv-extended-ad.html">
+    達成基準1.2.7 収録済の映像コンテンツの拡張した音声ガイドを理解する</a></em>、及び<em><a href="media-equiv-text-doc.html">
+    達成基準1.2.8 収録済のメディアの代替コンテンツを理解する</a></em>も参照のこと。</p><div class="benefits"><h3 id="media-equiv-audio-desc-21-head" class="div3head">達成基準 1.2.3の具体的なメリット:
+			</h3><ul><li><p>この達成基準は、映像コンテンツあるいはその他の同期したメディアのコンテンツを見るのが困難な利用者の役に立つ。これには、動きのある画像を知覚したり理解したりするのが困難な利用者も含む。</p></li></ul></div></div><div class="div3"><h2 id="media-equiv-audio-desc-examples-head" class="section">達成基準 1.2.3の事例
+            </h2><ul><li><p>
+                <strong>音声ガイドを提供している映画</strong>
+              </p><p>
+                <strong>音声ガイド：</strong>タイトル「Teaching Evolution ケーススタディ　ボニー・チェン」くちばしが長くて薄い鳥の写真を、先生が見せている。</p><p>
+                <strong>ボニー・チェン：</strong>「これらの写真はすべて、フロリダのエバーグレイド国立公園で撮影されたものです。」</p><p>
+                <strong>音声ガイド：</strong>先生が生徒ひとりひとりに2つの平らで薄い木の棒切れを手渡ししています。</p><p>
+                <strong>ボニー・チェン：</strong>「今日、皆さんは、こんなくちばしをした、脚の長い鳥になったふりをしてください。」</p><p>
+                <strong>音声ガイド：</strong> 先生が、2つの棒切れを口にあてて、くちばしの形を作っています。</p><p>音声の書き起こしテキストは、「<a href="http://www.pbs.org/wgbh/evolution/educators/teachstuds/tvideos.html">Teaching Evolution ケーススタディ　ボニー・チェン</a>(copyright WGBH and Clear Blue Sky Productions, Inc.)」の冒頭の数分間に基づいいる。</p></li><li><p>
+                <strong>ある研修ビデオでの、時間の経過に伴って変化するメディアの代替</strong>
+              </p><p>ある企業では、従業員のための研修ビデオを購入し、その企業のイントラネット上に置いている。そのビデオでは、新しい技術の使い方を説明していて、同時にそれを説明しながら実演する人物が登場する。ビデオの発話部分の合間に、視覚的なデモの音声ガイドを挿入する時間的な余裕がないため、その企業では、そのデモを見ることができない人を含む従業員すべてがその内容をよりよく理解することができるように、時間の経過に伴って変化するメディアの代替を提供している。</p></li></ul></div><div class="resources"><h2 id="media-equiv-audio-desc-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p>
+                <a href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</a>
+              </p></li><li><p>
+                <a href="http://joeclark.org/access/description/ad-principles.html">Standard Techniques in Audio Description</a>
+              </p></li><li><p>
+                <a href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</a>
+              </p></li><li><p>
+                <a href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</a>
+              </p></li><li><p>
+                <a href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</a>
+              </p></li></ul></div><div class="div3"><h2 id="media-equiv-audio-desc-techniques-head" class="section">達成基準 1.2.3 の実装方法及び不適合事例
+               - 収録済の映像コンテンツの代替コンテンツ又は音声ガイド</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="media-equiv-audio-desc-22-head" class="div3head">
+				達成基準を満たすことのできる実装方法 
+			</h3><ol class="enumar"><li><p>
+次の実装方法のどれか一つを用いて、<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G69" class="tech-ref">G69: 時間の経過の伴い変化するメディアに対して代替コンテンツを提供する</a></p><ul><li><p>
+                                <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G58" class="tech-ref">G58: 非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</a>
+                            </p></li><li><p>
+                                <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL17.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL17.html: </a>
+                            </p></li><li><p>次の実装方法のどれか一つを用いて、時間の経過とともに変化するメディアの代替へのリンクを提供する
+                            </p><ul><li><p>
+                                        <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H53" class="tech-ref">H53: object要素のボディに代替テキストを記述する</a>  (HTML)
+			  
+                                    </p></li></ul></li></ul></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78" class="tech-ref">G78: 音声ガイドを含んだ、利用者が選択可能な副音声トラックを提供する</a> </p></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78" class="tech-ref">G78: 音声ガイドを含んだ、利用者が選択可能な副音声トラックを提供する</a>かつ<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL1.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL1.html: </a></p></li><li><p>
+次のどれか一つを用いて、<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G173" class="tech-ref">G173: 映像の音声ガイド付きバージョンを提供する</a></p><ul><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM6" class="tech-ref">SM6: SMIL 1.0で音声ガイドを提供する</a> (SMIL)
+			
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM7" class="tech-ref">SM7: SMIL 2.0で音声ガイドを提供する</a> (SMIL)
+			
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26" class="tech-ref">FLASH26: Applying audio descriptions to Flash video</a> (Flash)
+    	
+                    </p></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL1.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL1.html: </a></p></li><li><p>音声及び映像をサポートしているプレーヤーを用いる</p></li></ul></li><li><p>
+次のどれか一つを用いて、<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G8" class="tech-ref">G8: ムービーに拡張した音声ガイド付を提供する</a></p><ul><li><p>
+                                <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM1" class="tech-ref">SM1: SMIL 1.0で拡張した音声ガイドを追加する</a> (SMIL)
+			
+                            </p></li><li><p>
+                                <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM2" class="tech-ref">SM2: SMIL 2.0で拡張した音声ガイドを追加する</a> (SMIL)
+			
+                            </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26" class="tech-ref">FLASH26: Applying audio descriptions to Flash video</a> (Flash)
+    	
+                    </p></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL1.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL1.html: </a></p></li><li><p>音声及び映像をサポートしているプレーヤーを用いる</p></li></ul></li></ol></div><div class="boxed"><h3 id="media-equiv-audio-desc-23-head" class="div3head">1.2.3 でさらに対応が望まれる実装方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>
+SMIL 1.0によって多様な言語の音声ガイドを提供する（リンク追加予定）
+                </p></li><li><p>
+SMIL 2.0によって多様な言語の音声ガイドを提供する（リンク追加予定）
+                </p></li></ul></div><div class="boxed"><h3 id="media-equiv-audio-desc-24-head" class="div3head"><abbr title="Success Criterion">SC</abbr> 1.2.3のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準1.2.3に適合していないとみなした、よくある不適合事例である。</p><p>(今のところ、文書化された不適合事例はない)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="multimedia-alt-textdef" id="multimedia-alt-textdef"> </a>テキストの代替メディア</dt><dd><p>テキストで（直接又は代替テキストによって）既に提示されている情報以上のものを提示していないメディア。
+              
+            </p><div class="note"><p class="prefix"><em>注記: </em>テキストの代替メディアは、テキストの代替プレゼンテーションの恩恵を受ける人たちのために提供される。テキストの代替メディアになりうるのは、音声しか含まないメディア、映像しか含まない（手話の映像を含む）メディア、又は音声付映像メディアである。</p></div></dd><dt class="label"><a name="prerecordeddef" id="prerecordeddef"> </a>収録済</dt><dd><p><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#livedef" class="termref">ライブ</a>ではない情報。</p></dd><dt class="label"><a name="synchronizedmediadef" id="synchronizedmediadef"> </a>同期したメディア</dt><dd><p>情報を提示するために、他のフォーマットと同期した<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#audiodef" class="termref">音声</a>もしくは<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#videodef" class="termref">映像</a>、又は時間の経過に伴って変化するインタラクティブな構成要素と同期した音声又は映像。ただし、そのメディアが
+<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#multimedia-alt-textdef" class="termref">テキストの代替メディア</a>であって、代替メディアであることが明確にラベル付けされているものは除く。
+            </p></dd><dt class="label"><a name="videodef" id="videodef"> </a>映像</dt><dd><p>連続した写真や画像を動かす技術。</p><div class="note"><p class="prefix"><em>注記: </em>映像</p></div></dd><dt class="label"><a name="alt-time-based-mediadef" id="alt-time-based-mediadef"> </a>時間の経過に伴って変化するメディアに対する代替コンテンツ</dt><dd><p>正しい順序で提供されている、時間の経過に伴って変化する視覚的及び聴覚的情報のテキストによる説明（トランスクリプト）を含み、時間の経過に伴って変化する情報のやりとりの結果を得る手段を提供する文書。 
+                  </p><div class="note"><p class="prefix"><em>注記: </em>同期したメディアのコンテンツを作るために用いられる脚本は、編集が終了した最終版の同期したメディアを正確に描写した脚本に修正されている場合だけ、この定義を満たす。</p></div></dd><dt class="label"><a name="audiodescdef" id="audiodescdef"> </a>音声ガイド</dt><dd><p>主音声のトラックだけでは理解できない重要で視覚的な詳細を説明するために、音声トラックに追加されたナレーション。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>
+<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#videodef" class="termref">映像</a>の音声ガイドは、動作やしぐさ、登場人物、場面の変化、画面上のテキスト、及びその他の視覚的なコンテンツに関する情報を提供する。
+              </p><p class="prefix"><em>注記 2:
+					</em>標準的な音声ガイドでは、ナレーションが会話の合間に挿入される。（<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#extended-addef" class="termref">拡張した音声ガイド</a>も参照のこと。）</p><p class="prefix"><em>注記 3:
+					</em>すべての<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#videodef" class="termref">映像</a>の情報が既存の<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#audiodef" class="termref">音声</a>で提供されている場合、補足の音声ガイドは不要である。</p><p class="prefix"><em>注記 4:
+					</em>ビデオ説明や「説明ナレーション」とも呼ばれる。</p></div></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding SC  1.2.2 [収録済の音声コンテンツのキャプション]" href="media-equiv-captions.html"><strong>前へ: </strong>SC  1.2.2 [収録済の音声コンテンツのキャプション]</a></li><li><a title="Understanding SC  1.2.4 [ライブの音声コンテンツのキャプション]" href="media-equiv-real-time-captions.html"><strong>次へ: </strong>SC  1.2.4 [ライブの音声コンテンツのキャプション]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a> (see the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">latest version of this document</a>)の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。 
+ </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/WAI/GL/2010/WD-UNDERSTANDING-WCAG20-20100128/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2010年3月27日時点での最新のEditor's Draft</a>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 Editor's Draftは、現在W3Cで公開されている<a href="http://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/">2008年12月11日付けの「Understanding WCAG 2.0」</a>が更新されたもので、この版と異なる部分を含んでいる可能性があります。原文の "Understanding WCAG 2.0"自体がまだ<strong>未完成</strong>であり、この文書の内容は、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。あくまでも参考程度にご覧ください。</p></div></body></html>

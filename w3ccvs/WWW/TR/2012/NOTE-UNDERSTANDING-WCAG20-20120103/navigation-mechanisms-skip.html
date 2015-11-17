@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 2.4.1 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  2.4 [Navigable]" href="navigation-mechanisms.html"><strong>前へ: </strong>ガイドライン  2.4 [Navigable]</a></li><li><a title="Understanding SC  2.4.2 [ページタイトル]" href="navigation-mechanisms-title.html"><strong>次へ: </strong>SC  2.4.2 [ページタイトル]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#navigation-mechanisms-skip-intent-head">意図</a></li><li><a href="#navigation-mechanisms-skip-examples-head">事例</a></li><li><a href="#navigation-mechanisms-skip-resources-head">関連リソース</a></li><li><a href="#navigation-mechanisms-skip-techniques-head">実装方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="navigation-mechanisms-skip" id="navigation-mechanisms-skip"> </a><strong>ブロック・スキップ</strong><span class="screenreader">:</span><br/><abbr title="Success Criterion">SC</abbr> 2.4.1 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">2.4.1</a> ブロック・スキップ:</strong>  複数の<a href="#webpagedef" class="termref">ウェブページ</a>上で繰り返されているコンテンツのブロックをスキップできる<a href="#mechanismdef" class="termref">メカニズム</a>が利用可能である。 
+					(Level A)
+				</p></div></blockquote><div class="intent"><h2 id="navigation-mechanisms-skip-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、コンテンツ内を一つずつ順を追って行き来している利用者がウェブページのメインコンテンツへ直接移動できるようにすることである。ウェブページ及びウェブアプリケーションには、他のページ又は画面でも現れるコンテンツがしばしばある。コンテンツの中で繰り返されているブロックの例としては、ナビゲーション・リンク、見出しのグラフィック、そして広告を表示するフレームなどが挙げられる。個々の単語、フレーズ、又は単独のリンクなどの小さな繰り返される部分は、この達成基準の趣旨においては、ブロックとしてみなされない。</p><p>このことは、画面を見ている利用者が、画面の中央（通常は、メインコンテンツがあるところ）に意識を集中することによって、繰り返しているコンテンツを無視することができることや、マウスを使用している利用者が、目的のリンクの前にあるすべてのリンク又はフォームのコントロールと出くわさずに、1回のクリックでそのリンクを選択できることと対照的である。</p><p>この達成基準の意図は、コンテンツ制作者にユーザーエージェントが提供している機能と重複する手段を提供するように求めることではない。ほとんどのウェブブラウザは、利用者がフォーカスをページの先頭に戻すことのできるキーボード・ショートカットを提供しているので、ナビゲーション・リンク一式をウェブページの下部で提供している場合は、いわゆる「スキップ」リンクを提供する必要はないかもしれない。</p><div class="note"><p class="prefix"><em>注記: </em>この達成基準は、複数のページ上で繰り返されているコンテンツのブロックを取り扱っているが、WCAG ワーキンググループは、達成基準 1.3.1 にあるように、個々のページで構造をマークアップすることも強く奨励する。</p></div><div class="benefits"><h3 id="navigation-mechanisms-skip-137-head" class="div3head">達成基準 2.4.1の具体的なメリット:
+			</h3><ul><li><p>この達成基準を満たしていないと、何らかの障害のある利用者がウェブページのメインコンテンツへ素早くかつ容易に到達するのが困難になることがある。</p></li><li><p>同じサイト上でいくつかのページを訪れるスクリーンリーダーの利用者が、メインコンテンツが読み上げられる前にある、どのページにもあるすべての見出しのグラフィック及びたくさんのナビゲーション・リンクを聞かなくてすむようになる。</p></li><li><p>キーボード又はキーボード・インタフェースだけを使用している利用者が、より少ないキーストロークだけでコンテンツに到達できるようになる。そうでなければ、メインコンテンツ部分にあるリンクに到達するまでにたくさんのキーストロークが必要になってしまうかもしれない。これには長い時間がかかってしまう恐れがあり、利用者によっては深刻な肉体的苦痛を伴うことがある。
+</p></li><li><p>画面拡大ソフトを使用している利用者が、新しいページへ来るたびに、どこからメインコンテンツが始まるのかを見つけようとして、同じ見出し又はその他の情報のブロックの中を探し回らなくてもすむようになる。</p></li><li><p>リンクがリストにまとめられていると、認知に制約のある利用者及びスクリーンリーダーを使用している利用者のためになることがある。</p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-skip-examples-head" class="section">達成基準 2.4.1の事例
+            </h2><ul><li><p>ニュースを配信する組織のホームページには、広告、検索、その他のサービスのためのたくさんのブロック及びサイドバーに囲まれて、ページの中央にメインの記事がある。ページの先頭に、そのメインの記事へジャンプするリンクがある。このリンクを使わないと、キーボードを使用している利用者は、メインの記事へ到達するまでに Tab キーを押下しながら40前後のリンクを通り抜ける必要があり、る。また、スクリーンリーダーの利用者は、200の単語を聞かなければならない。そして、画面拡大ソフトの利用者は、メインの記事の場所を探し回らなければならなくなる。</p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-skip-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p><a href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</a></p></li></ul></div><div class="div3"><h2 id="navigation-mechanisms-skip-techniques-head" class="section">達成基準 2.4.1 の実装方法及び不適合事例
+               - ブロック・スキップ</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="navigation-mechanisms-skip-138-head" class="div3head">
+				達成基準を満たすことのできる実装方法 
+			</h3><ol class="enumar"><li><p>次の実装方法の中から一つを用いて、繰り返されるブロックをスキップするリンクを作成する：</p><ul><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G1" class="tech-ref">G1: メインコンテンツエリアへ直接移動するリンクを各ページの先頭に追加する</a>
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G123" class="tech-ref">G123: 繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</a>
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G124" class="tech-ref">G124: ページの先頭に、コンテンツの各エリアへのリンクを追加する</a>
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL25.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL25.html: </a> (Silverlight)
+    	
+                    </p></li></ul></li><li><p>次の実装方法の中から一つを用いて、スキップ可能な方法で繰り返されるブロックをグループ化する：</p><ul><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H69" class="tech-ref">H69: コンテンツの各セクションの開始位置に見出し要素を提供する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF9" class="tech-ref">PDF9: PDF 文書内のコンテンツを見出しタグでマークアップすることによって見出しを作成する</a> (PDF)
+    	
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H50" class="tech-ref">H50: </a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H70" class="tech-ref">H70: フレームを用いて、繰り返されているコンテンツのブロックをグループ化する</a>  (HTML)
+			
+                      、<strong>かつ</strong>、
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H64" class="tech-ref">H64: frame要素及びiframe要素のtitle属性を用いる</a>  (HTML)
+			
+                    </p></li><li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR28" class="tech-ref">SCR28: 展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</a>  (Scripting)
+			</p></li><li><p>
+                      <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/http://www.w3.org/TR/WCAG-TECHS/SL29.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL29.html: </a> (Silverlight)
+    	
+                    </p></li></ul></li></ol></div><div class="boxed"><h3 id="navigation-mechanisms-skip-139-head" class="div3head">2.4.1 でさらに対応が望まれる実装方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>
+        重要なリンク及びフォーム制御へのキーボードアクセスを提供する（リンク追加予定）
+    </p></li><li><p>
+        ページナビゲーションに拡張したスキップリンクを提供する（リンク追加予定）
+    </p></li><li><p>
+        アクセスキーを提供する（リンク追加予定）
+    </p></li><li><p>ユーザーエージェント及び支援技術による構造化されたナビゲーションを与えるアクセシビリティサポート技術を使う（リンク追加予定）
+                </p></li><li><p>
+                  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C6" class="tech-ref">C6: 構造を示すマークアップをした上で、コンテンツを配置する</a>  (CSS)
+			
+                </p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-skip-140-head" class="div3head"><abbr title="Success Criterion">SC</abbr> 2.4.1のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準2.4.1に適合していないとみなした、よくある不適合事例である。</p><p>(今のところ、文書化された不適合事例はない)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="webpagedef" id="webpagedef"> </a>ウェブページ</dt><dd><p>
+単一の URI から HTTP で得たリソース（埋め込まれていないリソース）と、
+<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#useragentdef" class="termref">ユーザエージェント</a>がこのリソースと一緒にレンダリングすることを意図したりレンダリングに用いたりするその他のリソース（埋め込まれているリソース）を合わせたもの。
+            </p><div class="note"><p class="prefix"><em>注記 1:
+					</em>どのような「その他のリソース」（埋め込まれているリソース）も主たるリソース（埋め込まれていないリソース）と一緒にレンダリングされるであろうが、これらのリソースが同時にレンダリングされる必要があるわけではない。</p><p class="prefix"><em>注記 2:
+					</em>このガイドラインの適合範囲に含まれる対象となるウェブページは、「埋め込まれていない」リソースでなければならない。</p></div><div class="example"><p class="prefix"><em>Example 1:
+					</em>すべての埋め込まれている画像とメディアを含んだウェブリソース。</p><p class="prefix"><em>Example 2:
+					</em>Ajax を用いたウェブメールのプログラム。そのプログラムは http://example.com/mail に存在しており、受信箱、アドレス帳、そしてカレンダーがある。受信箱、アドレス帳やカレンダーを起動するリンク又はボタンがあるが、ウェブページ全体の URI は変わらないもの。</p><p class="prefix"><em>Example 3:
+					</em>カスタマイズ可能なポータルサイトで、利用者が様々なコンテンツのモジュール一式から表示させるコンテンツを選択できるようなもの。</p><p class="prefix"><em>Example 4:
+					</em>ブラウザで"http://shopping.example.com/" へ行くと、映画のようなインタラクティブなショッピング環境になる。そこでは、視覚的に店内を移動して、店内の棚から商品をドラッグして、目の前にある視覚的な買物カゴに商品を入れる。商品をクリックすると、同時に仕様書が浮き上がるように表示される。これは1ページだけのウェブサイトかもしれないし、 ウェブサイトの中のほんの1ページなのかもしれない。</p></div></dd><dt class="label"><a name="mechanismdef" id="mechanismdef"> </a>メカニズム</dt><dd><p>
+結果を得るための<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#processdef" class="termref">プロセス</a>又は手法。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#atdef" class="termref">支援技術</a>を含む<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#useragentdef" class="termref">ユーザエージェント</a>のどちらかで提供されるものに <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#reliedupondef" class="termref">依存</a>することもある。</p><p class="prefix"><em>注記 2:
+					</em>メカニズムは、宣言する適合レベルのすべての達成基準を満たさなければならない。
+              </p></div></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  2.4 [Navigable]" href="navigation-mechanisms.html"><strong>前へ: </strong>ガイドライン  2.4 [Navigable]</a></li><li><a title="Understanding SC  2.4.2 [ページタイトル]" href="navigation-mechanisms-title.html"><strong>次へ: </strong>SC  2.4.2 [ページタイトル]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a> (see the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">latest version of this document</a>)の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。 
+ </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/WAI/GL/2010/WD-UNDERSTANDING-WCAG20-20100128/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2010年3月27日時点での最新のEditor's Draft</a>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 Editor's Draftは、現在W3Cで公開されている<a href="http://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/">2008年12月11日付けの「Understanding WCAG 2.0」</a>が更新されたもので、この版と異なる部分を含んでいる可能性があります。原文の "Understanding WCAG 2.0"自体がまだ<strong>未完成</strong>であり、この文書の内容は、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。あくまでも参考程度にご覧ください。</p></div></body></html>
