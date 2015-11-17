@@ -1,0 +1,236 @@
+
+# Understanding WCAG 2.0 XML化作業メモ
+
+2015年11月16日
+伊敷 政英
+
+## 1. WCAG WGが公開しているXMLファイルに、WAICが公開している日本語訳を埋め込んだ。
+日本語訳がすでにあるものはすべて埋め込み済み。
+
+
+## 2. XSLで出力している部分の書き換え
+
+見出しや定型文などXSLで出力している箇所について、わかる範囲で日本語に置き換えた。
+作業内容は以下の通り。
+
+xmlspec-wcag-howto.xsl
+
+line 25: Understanding Guideline → ガイドラインを理解する
+line 35: Guideline → ガイドライン
+line 62: Intent of Guideline → ガイドラインの意図
+line 82: Advisory Techniques for Guideline (not success criteria specific) → ガイドラインの参考にすべき実装方法(特定の達成基準に特有ではない実装方法)
+line 84: Specific techniques for meeting each Success Criterion for this guideline are listed in the understanding sections for each Success Criterion (listed below). If there are techniques, however, for addressing this guideline that do not fall under any of the success criteria, they are listed here. These techniques are not required or sufficient for meeting any success criteria, but can make certain types of Web content more accessible to more people.
+→ このガイドラインにある各達成基準を満たすための実装方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための実装方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった実装方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。
+
+line 88: All advisory techniques for this guideline relate to specific success criteria. → このガイドラインの参考にすべき実装方法はすべて、特定の達成基準に関係している。
+line 127: Conformance → 適合
+line 128: Success → 達成
+line 134: Intent of this <xsl:value-of select="$criteriontype" /> Criterion → この<xsl:value-of select="$criteriontype" />基準の意図
+line 137: Techniques and Failures for <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template><xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
+→ <xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の実装方法及び不適合事例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
+
+line 142: Examples of <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>
+→ <xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の事例
+
+line 145: Related Resources → 関連リソース
+line 159: Resources are for information purposes only, no endorsement implied. → リソースは、情報提供のみを目的としており、推奨を意味するものではない。
+line 161: none currently documented → 今のところ、文書化されていないline 175: Conformance → 適合
+line 176: Success → 達成
+line 197: Sufficient Techniques → 達成基準を満たすことのできる実装方法
+line 200: Technology-Specific Techniques → 技術特有の実装方法
+line 203: Common Failures for <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+→ <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
+
+line 206: Additional Techniques (Advisory) for <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+→ <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる実装方法（参考）
+
+line 211: Specific Benefits of <xsl:value-of select="$criteriontype" /> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+→ <xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>の具体的なメリット
+
+line 220: The following are common mistakes that are considered failures of Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.
+→ 以下に挙げるものは、WCAG ワーキンググループが達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>に適合していないとみなした、よくある不適合事例である。
+
+line 222: No failures currently documented → 今のところ、文書化されている不適合事例がない
+line 226: Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.
+→ 適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。
+
+line 228: none currently documented → まだ文書化されていない
+line 233: <strong>Instructions:</strong> Select the situation below that matches your content. Each situation includes numbered techniques (or combinations of techniques) that the Working Group deems to be sufficient for that situation.
+→ <strong>使用法：</strong>そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の実装方法（又は、実装方法の組合せ）がある。
+
+line 239: Guideline → ガイドライン
+line 241: Appendix → 附録
+line 251-253: Understanding Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template>  [<xsl:call-template name="sc-handle">
+      <xsl:with-param name="handleid" select="@id"/>
+    </xsl:call-template>]
+→ 達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template>  [<xsl:call-template name="sc-handle">
+      <xsl:with-param name="handleid" select="@id"/>
+    </xsl:call-template>] を理解する
+
+line 258: Understanding → を理解する
+line 261-263: Understanding Conformance Requirement <xsl:value-of select="head"/>  [<xsl:call-template name="sc-handle">
+      <xsl:with-param name="handleid" select="@id"/>
+    </xsl:call-template>]
+→ 適合要件 <xsl:value-of select="head"/>  [<xsl:call-template name="sc-handle">
+      <xsl:with-param name="handleid" select="@id"/>
+    </xsl:call-template>] を理解する
+
+line 311-314: Understanding Guideline <xsl:value-of select="head"/>
+            <xsl:text> </xsl:text>[<xsl:call-template name="sc-handle">
+          <xsl:with-param name="handleid" select="@id"/>
+        </xsl:call-template>]
+→ ガイドライン <xsl:value-of select="head"/>
+            <xsl:text> </xsl:text>[<xsl:call-template name="sc-handle">
+          <xsl:with-param name="handleid" select="@id"/>
+        </xsl:call-template>] を理解する
+
+line 358: Success Criterion → 達成基準
+line 360: Intent → 意図
+line 361: Techniques → 実装方法
+line 362: Benefits → メリット
+line 363: Examples → 事例
+line 364: Resources → リソース
+line 432: Key Terms → 重要な用語
+line 453: Success Criterion → 達成基準
+line 458: Understanding Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template></xsl:template>
+→ 達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>を理解する</xsl:template>
+
+line 572: <p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. However, it is not necessary to use these particular techniques. For information on using other techniques, see <a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
+→ <p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p>
+
+
+slice-understanding-common.xsl
+
+line 44: Understanding WCAG 2.0 → WCAG 2.0解説書
+line 65: On this page: → このページの内容:
+line 70: introduction → イントロダクション
+line 104-107: <xsl:if test="@id!='conformance'">Understanding Guideline<xsl:text> </xsl:text>
+  					</xsl:if>
+  					<xsl:apply-templates select="head" mode="text"/>  | Understanding WCAG 2.0
+→ <xsl:if test="@id!='conformance'">ガイドライン<xsl:text> </xsl:text>
+  					</xsl:if>
+  					<xsl:apply-templates select="head" mode="text"/> を理解する | WCAG 2.0解説書
+line 136: On this page: → このページの内容:
+line 146: On this page: → このページの内容:
+line 167: Success Criteria for this Guideline: → このガイドラインの達成基準:
+line 203: Understanding Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template>  | Understanding WCAG 2.0
+→ 達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> を理解する | WCAG 2.0解説書
+
+line 225: On this page: → このページの内容:
+line 235: Key Terms → 重要な用語
+line 270: Understanding WCAG 2.0 → WCAG 2.0解説書
+line 369: Contents → 目次
+line 372: Intro → イントロダクション
+line 380: Previous → 前へ
+line 395: Next → 次へ
+line 415: Top → ページの先頭へ
+line 418: Contents → 目次
+line 421: Intro → イントロダクション
+line 429: Previous → 前へ
+line 444: Next → 次へ
+line 478: Intent → 意図
+line 483: Examples → 事例
+line 488: Related Resources → 関連リソース
+line 493: Techniques &amp; Failures → 実装方法と不適合事例
+line 498: Key terms → 重要な用語
+line 507: Intent → 意図
+line 510: Advisory Techniques → 参考実装方法
+line 513: Success Criteria → 達成基準
+line 528: Referencing WCAG 2.0 → 他の文書からのWCAG2.0の参照方法
+line 529: Documenting Accessibility Support
+          → ウェブ技術の使用法のアクセシビリティ・サポーテッドを文書化する
+line 530: Understanding Metadata → メタデータを理解する
+line 535: Guideline → ガイドライン
+line 572: Guideline → ガイドライン
+line 586: Intent of Guideline <xsl:value-of select="../../head"/>
+          → ガイドライン <xsl:value-of select="../../head"/>の意図
+line 606: Advisory Techniques for Guideline <xsl:value-of select="../../head"/> (not success criteria specific)
+ → ガイドライン <xsl:value-of select="../../head"/> の参考にすべき実装方法(特定の達成基準に特有ではない実装方法)
+
+line 608: Specific techniques for meeting each Success Criterion for this guideline are listed in the understanding sections for each Success Criterion (listed below). If there are techniques, however, for addressing this guideline that do not fall under any of the success criteria, they are listed here. These techniques are not required or sufficient for meeting any success criteria, but can make certain types of Web content more accessible to more people.
+→ このガイドラインにある各達成基準を満たすための実装方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための実装方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった実装方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。
+
+line 612: All advisory techniques for this guideline relate to specific success criteria and are listed below.
+→ このガイドラインの参考にすべき実装方法はすべて、特定の達成基準に関係している。
+
+line 649: Conformance → 適合
+line 650: Success → 達成
+line 657: Intent of this <xsl:value-of select="$criteriontype"/> Criterion
+          → この<xsl:value-of select="$criteriontype"/>基準の意図
+line 660: Techniques and Failures for <xsl:value-of select="$criteriontype"/> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>
+          → <xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の実装方法及び不適合事例
+
+line 666: Examples of <xsl:value-of select="$criteriontype"/> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>
+          → <xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の事例
+line 669: Related Resources → 関連リソース
+line 683: Resources are for information purposes only, no endorsement implied.
+          → リソースは、情報提供のみを目的としており、推奨を意味するものではない。
+line 685: none currently documented → 今のところ、文書化されていない
+line 690: none currently documented → 今のところ、文書化されていない
+line 702: Conformance → 適合
+line 703: Success → 達成
+line 724: Sufficient Techniques → 達成基準を満たすことのできる実装方法 
+line 730: Common Failures for <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+→ <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
+
+line 733: Additional Techniques (Advisory) for <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>
+→ <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる実装方法（参考）
+
+line 738: Specific Benefits of <xsl:value-of select="$criteriontype"/> Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>:
+→ <xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>の具体的なメリット:
+
+line 747: The following are common mistakes that are considered failures of Success Criterion <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.
+→ 以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>に適合していないとみなした、よくある不適合事例である。
+
+line 749: No failures currently documented → 今のところ、文書化された不適合事例はない
+line 753: Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.
+→ 適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。
+
+line 755: none currently documented → 今のところ、文書化されていない
+line 760: <strong>Instructions:</strong> Select the situation below that matches your content. Each situation includes techniques or combinations of techniques that are known and documented to be sufficient for that situation. 
+→ <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の実装方法（又は、実装方法の組合せ）がある。
+
+line 853: Understanding WCAG 2.0 → WCAG 2.0解説書
+line 855: Skip to Content (Press Enter) → 本文へジャンプ
+line 867: This Web page is part of <a href="Overview.html">Understanding WCAG 2.0: A guide to understanding and implementing WCAG 2.0</a><xsl:call-template name="footer-latest-version-ref"/>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents. To send public comments, please follow the <a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</a>.
+→ このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a><xsl:call-template name="footer-latest-version-ref"/>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。 
+
+line 870: （追記）<p>【注意】 この文書は、<a href="http://www.w3.org/WAI/GL/2010/WD-UNDERSTANDING-WCAG20-20100128/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2010年3月27日時点での最新のEditor's Draft</a>を、情報通信アクセス協議会の「ウェブアクセシビリティ作業部会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 Editor's Draftは、現在W3Cで公開されている<a href="http://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/">2008年12月11日付けの「Understanding WCAG 2.0」</a>が更新されたもので、この版と異なる部分を含んでいる可能性があります。原文の "Understanding WCAG 2.0"自体がまだ<strong>未完成</strong>であり、この文書の内容は、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。あくまでも参考程度にご覧ください。</p>
+
+
+xmlspec-wcag.xsl
+line 257: Note → 注記
+line 260: Note → 注記
+line 394: Status of This Document → この文書のステータス（注：h2のStatus of this document)
+line 435: Techniques for WCAG2.0 → WCAG2.0実装方法集（注：slicesのページ最上部のリンク）反映されず
+
+xmlspec.xsl
+line 208: Abstract → 概要　（h2のAbstract）
+
+
+
+
+33 3. アクションアイテム
+
+以下については今後、日本語訳を探しあるいは作成して置き換えていく。
+
+xmlspec-tech.xsl
+line 456: No tests available for this technique.
+          現在の訳を探すか、新たに作成する。
+
+
+slices-technques-common.xsl
+line 507: Important Information about Techniques
+          日本語訳を作成して埋め込む
+
+以下の文章の日本語訳を作成しXSLに埋め込む。
+（どのファイルのどこに記述されているかは不明）
+
+Important Information about Techniques
+
+See Understanding Techniques for WCAG Success Criteria for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.
+
+
+
+
+
