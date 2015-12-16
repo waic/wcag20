@@ -125,7 +125,7 @@
   -->
 	<!-- ====================================================================== -->
 	<xsl:preserve-space elements="*"/>
-	<xsl:strip-space elements="abstract arg attribute authlist author back bibref blist body case col    colgroup component constant constraint constraintnote copyright def    definitions descr div div1 div2 div3 div4 div5 ednote enum enumerator    example exception footnote front gitem glist graphic group header    htable htbody inform-div1 interface issue item itemizedlist langusage    listitem member method module note notice ol olist orderedlist orglist    param parameters prod prodgroup prodrecap proto pubdate pubstmt raises    reference resolution returns revisiondesc scrap sequence slist    sourcedesc spec specref status struct table tbody tfoot thead tr    typedef ul ulist union vc vcnote wfc wfcnote issue"/>
+	<xsl:strip-space elements="abstract arg attribute authlist author back bibref blist body case col    colgroup component constant constraint constraintnote copyright def    definitions descr div div1 div2 div3 div4 div5 ednote enum enumerator    example exception footnote front gitem glist graphic group header    htable htbody inform-div1 interface issue item itemizedlist langusage    listitem member method module note notice ol olist orderedlist orglist    param parameters prod prodgroup prodrecap proto pubdate pubstmt raises    reference resolution returns revisiondesc scrap sequence slist    sourcedesc spec specref status struct table tbody tfoot thead tr translationcredit trdisclaimer trnote typedef ul ulist union vc vcnote wfc wfcnote issue"/>
 	<xsl:param name="validity.hacks" select="1"/>
 	<xsl:param name="show.diff.markup" select="1"/>
 	<xsl:param name="additional.title"/>
@@ -207,6 +207,13 @@
 				</xsl:call-template>
 				<xsl:text>概要</xsl:text>
 			</h2>
+			<xsl:apply-templates/>
+		</div>
+	</xsl:template>
+	<xsl:template match="trdisclaimer">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<xsl:text>
+</xsl:text>
 			<xsl:apply-templates/>
 		</div>
 	</xsl:template>
@@ -1032,13 +1039,14 @@
 					</xsl:otherwise>
 				</xsl:choose>
 				<xsl:text> </xsl:text>
+				<xsl:apply-templates select="pubdate/year"/>
+				<xsl:text>年 </xsl:text>
+				<xsl:apply-templates select="pubdate/month"/>
+				<xsl:text>月 </xsl:text>
 				<xsl:if test="pubdate/day">
 					<xsl:apply-templates select="pubdate/day"/>
-					<xsl:text> </xsl:text>
+					<xsl:text>日 </xsl:text>
 				</xsl:if>
-				<xsl:apply-templates select="pubdate/month"/>
-				<xsl:text> </xsl:text>
-				<xsl:apply-templates select="pubdate/year"/>
 			</h2>
 			<dl>
 				<xsl:apply-templates select="publoc"/>

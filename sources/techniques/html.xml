@@ -3,7 +3,7 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>HTML and XHTML Techniques</title>
+      <title>HTMLとXHTMLの実装方法</title>
       <w3c-designation>WCAG20-HTML-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>
@@ -47,7 +47,7 @@
    </header>
    <body>
       <div1 id="html">
-         <head>HTML and XHTML Techniques</head>
+         <head>HTMLとXHTMLの実装方法</head>
          <xi:include href="html/H2.xml"/>
          <xi:include href="html/H4.xml"/>
          <xi:include href="html/H24.xml"/>

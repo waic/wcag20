@@ -136,7 +136,7 @@ MAINTAINERS:
                                 %local.speclist.class;">
 <!ENTITY % local.note.class " ">
 <!ENTITY % note.class "note|issue|wfcnote|vcnote
-                                |constraintnote %local.note.class;">
+                                |constraintnote|trnote %local.note.class;">
 <!-- 20040726 WAC moved quote to local.illus.class from emph class -->
 <!ENTITY % local.illus.class "|img|figure|image|audio-clip|quote ">
 <!ENTITY % illus.class "eg|graphic|scrap|table|definitions
@@ -275,7 +275,7 @@ MAINTAINERS:
         (latestloc, prevlocs?))?, authlist, errataloc?, preverrataloc?,
         translationloc?, copyright?,
         ((status, abstract) | (abstract, status)), pubstmt?,
-        sourcedesc?, langusage, revisiondesc">
+        sourcedesc?, langusage, revisiondesc, trdisclaimer?">
 <!ENTITY % pubdate.mdl "day?, month, year">
 <!-- ............................................................... -->
 <!-- Entities for common attributes ................................ -->
@@ -854,6 +854,14 @@ MAINTAINERS:
 <![%abstract.attlist;[
 <!ATTLIST abstract %common.att;>
 ]]>
+<!ENTITY % trdisclaimer.element "INCLUDE">
+<![%trdisclaimer.element;[
+<!ELEMENT trdisclaimer (%hdr.mix;)*>
+]]>
+<!ENTITY % trdisclaimer.attlist "INCLUDE">
+<![%trdisclaimer.attlist;[
+<!ATTLIST trdisclaimer %common.att;>
+]]>
 <!ENTITY % pubstmt.element "INCLUDE">
 <![%pubstmt.element;[
 <!ELEMENT pubstmt (%hdr.mix;)+>
@@ -1078,6 +1086,28 @@ MAINTAINERS:
 <!ENTITY % note.attlist "INCLUDE">
 <![%note.attlist;[
 <!ATTLIST note %common.att;>
+]]>
+<!-- ............................................................... -->
+<!-- Translator notes .............................................. -->
+<!-- ............................................................... -->
+<!ENTITY % trnote.element "INCLUDE">
+<![%trnote.element;[
+<!ELEMENT trnote (%obj.mix;)+>
+]]>
+<!ENTITY % trnote.attlist "INCLUDE">
+<![%trnote.attlist;[
+<!ATTLIST trnote %common.att;>
+]]>
+<!-- ............................................................... -->
+<!-- Translator credit .............................................. -->
+<!-- ............................................................... -->
+<!ENTITY % translationcredit.element "INCLUDE">
+<![%translationcredit.element;[
+<!ELEMENT translationcredit (%obj.mix;)+>
+]]>
+<!ENTITY % translationcredit.attlist "INCLUDE">
+<![%translationcredit.attlist;[
+<!ATTLIST translationcredit %common.att;>
 ]]>
 <!--
 #1998-05-14: maler: Declared issue element.
@@ -2710,7 +2740,7 @@ for conversion of Hebrew and Arabic text to x/html -->
 <!-- technique: main element for grouping information related to a particular technique -->
 <!-- Used by: div1 -->
 <!--ELEMENT technique (short-name, applies-to, checklist-item+, description, technology+, ua-issues*, eg-group*, resources*, test*, admin*)-->
-<!ELEMENT technique (issue*, short-name, applicability, applies-to+, checklist-item*, task*, ua-issues?, description, examples?, resources?, related-techniques?, tests*, tech-info?, admin?)>
+<!ELEMENT technique (issue*, short-name, applicability, applies-to+, checklist-item*, task*, ua-issues?, description, examples?, resources?, related-techniques?, tests*, tech-info?, admin?, translationcredit*)>
 <!-- June 30 2004 BBC - added diff attribute as valid for technique (to highlight changes and addtions) -->
 <!ATTLIST technique
 	id ID #REQUIRED

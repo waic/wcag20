@@ -3,7 +3,7 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>Silverlight Techniques</title>
+      <title>Silverlightの実装方法</title>
       <w3c-designation>WCAG20-SILVERLIGHT-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>
@@ -54,7 +54,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
    </header>
    <body><!-- techniques -->
       <div1 id="silverlight">
-         <head>Silverlight Techniques</head>
+         <head>Silverlightの実装方法</head>
          <div2 id="silverlight_notes">
             <head>Silverlight Technology Notes</head>
             <p>Microsoft Silverlight is a development platform for applications.

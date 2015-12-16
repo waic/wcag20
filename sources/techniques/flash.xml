@@ -3,7 +3,7 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>Flash Techniques</title>
+      <title>Flashの実装方法</title>
       <w3c-designation>WCAG20-FLASH-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>
@@ -54,7 +54,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
    </header>
    <body><!-- techniques -->
       <div1 id="flash">
-         <head>Flash Techniques</head>
+         <head>Flashの実装方法</head>
          <div2 id="flash_notes">
             <head>Flash Technology Notes</head>
             <p>Adobe Flash Player is a cross-platform browser plug-in. Authors  creating content for display by the Flash Player may choose to do so for   a variety of factors,  including video support, authoring preference, vector-based graphics   capabilities, or to take  advantage of available components. The motivation of the author  notwithstanding, it is equally important to ensure that content playing   in the Flash Player meets  the accessibility criteria in WCAG 2.0 as it is for other web content. </p>

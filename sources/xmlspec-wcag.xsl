@@ -39,6 +39,7 @@
       <xsl:when test="$bytech= 1"></xsl:when>
      
       <xsl:otherwise>
+   <xsl:apply-templates select="trdisclaimer"/>
     <p align="center">[<a href="#contents">contents</a>]<xsl:text> </xsl:text>
     </p>
     <div class="head">
@@ -172,7 +173,7 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="default.id" select="'contents'"/>
           </xsl:call-template>
-          <xsl:text>Table of Contents</xsl:text>
+          <xsl:text>目次</xsl:text>
         </h2>
         <ul class="toc">
           <xsl:choose>
@@ -180,8 +181,8 @@
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
             <xsl:otherwise>
-                <li><a href="#abstract">Abstract </a></li>
-            	<li><a href="#status">Status of This Document </a></li>
+                <li><a href="#abstract">概要 </a></li>
+            	<li><a href="#status">この文書のステータス </a></li>
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
@@ -198,15 +199,15 @@
                   <xsl:with-param name="conditional" select="0"/>
                   <xsl:with-param name="default.id" select="'appendices'"/>
                 </xsl:call-template>
-                <xsl:text>Appendi</xsl:text>
-                <xsl:choose>
+                <xsl:text>付録</xsl:text>
+                <!-- xsl:choose>
                   <xsl:when test="count(../back/div1 | ../back/inform-div1) &gt; 1">
                     <xsl:text>ces</xsl:text>
                   </xsl:when>
                   <xsl:otherwise>
                     <xsl:text>x</xsl:text>
                   </xsl:otherwise>
-                </xsl:choose>
+                </xsl:choose -->
               </h3>
               <ul class="toc">
                 <xsl:apply-templates mode="toc" select="../back/div1[not(@id='placeholders')] | ../back/inform-div1"/>
@@ -265,6 +266,42 @@
       </xsl:choose>
       <xsl:apply-templates/>
     </p>
+  </xsl:template>
+  <!-- Translators notes -->
+  <xsl:template match="trnote">
+    <div class="note">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="trnote/p">
+    <xsl:variable name="notenumber">
+      <xsl:value-of select="count(ancestor::trnote/p)"/>
+    </xsl:variable>
+    <p class="prefix">
+      <xsl:if test="../@id">
+        <a name="{../@id}" id="{../@id}"/>
+      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="../@role='nonumber'"/>
+        <xsl:otherwise>
+          <em><xsl:choose>
+            <xsl:when test="$notenumber = '1'">
+              <xsl:text>訳注： </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>訳注 </xsl:text>
+              <xsl:number count="p" format="1"/>：
+					</xsl:otherwise>
+          </xsl:choose></em>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+  <xsl:template match="translationcredit">
+    <div class="translationcredit">
+      <xsl:apply-templates/>
+    </div>
   </xsl:template>
   <!-- note: an example in the spec -->
   <!-- see also note/p -->
@@ -1241,19 +1278,19 @@
   <!--BBC: Added hadling for current vs. previous editors -->
   <xsl:template match="authlist">
     <dt>
-      <xsl:text>Editor</xsl:text>
-      <xsl:if test="count(author) &gt; 1">
+      <xsl:text>編集者</xsl:text>
+      <!-- xsl:if test="count(author) &gt; 1">
         <xsl:text>s</xsl:text>
-      </xsl:if>
+      </xsl:if -->
       <xsl:text>:</xsl:text>
     </dt>
     <xsl:apply-templates select="author[@role='current']"/>
     <xsl:if test="child::author[@role='past']">
       <dt>
-        <xsl:text>Previous Editor</xsl:text>
-        <xsl:if test="count(author) &gt; 1">
+        <xsl:text>過去の編集者</xsl:text>
+        <!-- xsl:if test="count(author) &gt; 1">
           <xsl:text>s</xsl:text>
-        </xsl:if>
+        </xsl:if -->
         <xsl:text>:</xsl:text>
       </dt>
       <xsl:apply-templates select="author[@role='past']"/>
