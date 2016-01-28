@@ -504,7 +504,7 @@
     <xsl:variable name="gl" select="$gl-src//*[@id = current()/@id]"/>
     <ul id="navbar" >
     	<li>
-    		<a href="#{@id}-disclaimer">Important Information about Techniques</a>
+    		<a href="#{@id}-disclaimer">達成方法に関する重要な情報</a>
     	</li>
         <li>
           <a href="#{@id}-applicability">適用（対象）</a>
