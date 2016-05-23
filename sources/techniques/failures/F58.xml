@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F58">
-   <short-name>達成基準 2.2.1 の不適合事例 － サーバサイドの実装方法を用いて、タイムアウト後にページを自動的にリダイレクトしている</short-name>
+   <short-name>達成基準 2.2.1 の不適合事例 － サーバサイドの達成方法を用いて、タイムアウト後にページを自動的にリダイレクトしている</short-name>
    <applicability>
       <ulist>
       <item>

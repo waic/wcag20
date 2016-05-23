@@ -7,7 +7,7 @@
       <head>Intent of this Success Criterion</head>
 
 <p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。</p><p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。</p>
-<p>コンテンツ制作者はエラーを説明することができる。又、ユーザーエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p>
+<p>コンテンツ制作者はエラーを説明することができる。又、利用者ーエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p>
 
 <div4 role="benefits">
 <head/>
@@ -36,7 +36,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準3.3.3 の実装方法及び不適合事例 - 入力エラー修正方法の提示</head>
+<head>達成基準3.3.3 の達成方法及び不適合事例 - 入力エラー修正方法の提示</head>
 
 <note>
 <p>2つ以上の状況が適用される場合もある。例えば、必須フィールドが特別なデータフォーマットを要求する場合である。</p>
@@ -73,7 +73,7 @@
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
 	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">ユーザーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">利用者ーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
                   </p></item>
 </olist>
 </div5>
@@ -92,14 +92,14 @@
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
 	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">ユーザーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">利用者ーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
                   </p></item>
 </olist>
 </div5>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 3.3.3 でさらに対応が望まれる実装方法（参考） </head>
+<head>達成基準 3.3.3 でさらに対応が望まれる達成方法（参考） </head>
 <ulist>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G139" linktype="general">利用者がエラー箇所に移動できるようにするメカニズムを提供する</loc>
@@ -128,7 +128,7 @@
 </ulist>
 
 <div5>
-<head>利用者に提案を行う実装方法（参考）</head>
+<head>利用者に提案を行う達成方法（参考）</head>
 <ulist>
 	<item><p>
         入力エラーの数についての情報を含むテキストの説明、各項目を訂正するための提案、そして、どのように進めるべきかの指示を提供する（リンク追加予定）
@@ -143,7 +143,7 @@
 </div5>
 
 <div5>
-<head>HTMLの実装方法（参考）</head>
+<head>HTMLの達成方法（参考）</head>
 <ulist>
 	<item><p>"	必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する（リンク追加予定）  </p></item>
 	<item><p>"	正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する（リンク追加予定） </p></item>
@@ -151,7 +151,7 @@
 </div5>
 
 <div5>
-<head>クライアントサイドのスクリプトの実装方法（参考）</head>
+<head>クライアントサイドのスクリプトの達成方法（参考）</head>
 <ulist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
@@ -166,7 +166,7 @@
 </div5>
 
 <div5>
-<head role="aria">ARIAの実装方法（参考）</head>
+<head role="aria">ARIAの達成方法（参考）</head>
 <ulist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/ARIA2.html" linktype="aria">ARIA2: Identifying required fields with the "required" property</loc>

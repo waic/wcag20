@@ -40,11 +40,11 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準を満たすことのできる実装方法</head>
+<head>十分な達成方法</head>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>次の実装方法のうち2つ以上を用いる：</p><ulist><item><p>
+	<item><p>次の達成方法のうち2つ以上を用いる：</p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G125" linktype="general">関連するウェブページへナビゲートするリンクを提供する</loc>
                     </p></item><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G64" linktype="general">目次を提供する</loc>
@@ -59,7 +59,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.5 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 2.4.5 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H59" linktype="html">link要素及びナビゲーションツールを用いる</loc>

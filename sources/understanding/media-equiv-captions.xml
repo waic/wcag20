@@ -95,7 +95,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.2 の実装方法及び不適合事例 － 収録済の音声コンテンツのキャプション</head>
+<head>達成基準 1.2.2 の達成方法及び不適合事例 － 収録済の音声コンテンツのキャプション</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -105,7 +105,7 @@
 クローズド・キャプションをサポートしたビデオ・プレーヤーのある、容易に利用可能なメディア・フォーマットを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
                 </p></item>
 	<item role="smil"><p>
-次のいずれかのウェブコンテンツ技術特有の実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
+次のいずれかのウェブコンテンツ技術特有の達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
     </p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM11" linktype="smil">SMIL 1.0 の同期したテキスト・ストリームでキャプションを提供する</loc>
                     </p></item><item><p>
@@ -120,7 +120,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.2 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.2 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
 映像しか含まないクリップに対して、「このクリップには音は使われていません」というノートを提供する（リンク追加予定）

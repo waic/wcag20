@@ -10,7 +10,7 @@
       <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、入れ子になった表記方向が含まれるテキストについて、インライン要素の<att>dir</att>属性で方向の変化を指定することである。入れ子になったテキストの表記方向とは、たとえば英語のパラグラフで、文章が次々と続いている中にヘブライ語の引用文が含まれるといった、表記方向の異なるテキストが混在したテキストの表記方向のことである。表記方向の異なるテキストが混在し、スペースや句読点が含まれていると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">Unicodeの双方向アルゴリズム</loc>だけでは望ましくない結果になってしまうので、テキストを<el>span</el>要素や他のインライン要素で囲み、<att>dir</att>属性を指定する必要がある。この実装方法の考え方は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup</loc>で説明されている。</p>
+    <p>この達成方法の目的は、入れ子になった表記方向が含まれるテキストについて、インライン要素の<att>dir</att>属性で方向の変化を指定することである。入れ子になったテキストの表記方向とは、たとえば英語のパラグラフで、文章が次々と続いている中にヘブライ語の引用文が含まれるといった、表記方向の異なるテキストが混在したテキストの表記方向のことである。表記方向の異なるテキストが混在し、スペースや句読点が含まれていると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">Unicodeの双方向アルゴリズム</loc>だけでは望ましくない結果になってしまうので、テキストを<el>span</el>要素や他のインライン要素で囲み、<att>dir</att>属性を指定する必要がある。この達成方法の考え方は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup</loc>で説明されている。</p>
   </description>
    <examples>
       <eg-group>

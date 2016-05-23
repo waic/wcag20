@@ -62,13 +62,13 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.4.9 の実装方法及び不適合事例 － 画像化された文字（例外なし）</head>
+<head>達成基準 1.4.9 の達成方法及び不適合事例 － 画像化された文字（例外なし）</head>
 <div4 role="sufficient">
-<head>達成基準を満たすことのできる実装方法</head>
+<head>十分な達成方法</head>
 <olist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C22" linktype="css">CSS を用いて、テキストの視覚的な表現を制御する</loc>  </p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL31.html" linktype="silverlight">Using Silverlight Font Properties to Control Text Presentation</loc>  </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C30" linktype="css">テキストを画像化された文字と置き換えるために CSS を用いて、切り替えるユーザーインタフェース・コントロールを提供する</loc>  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C30" linktype="css">テキストを画像化された文字と置き換えるために CSS を用いて、切り替える利用者ーインタフェース・コントロールを提供する</loc>  </p></item>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G140" linktype="general">情報と構造を表現から分離して、異なる表現を可能にする</loc> 
                 </p></item>
@@ -79,15 +79,15 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.4.9 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.4.9 でさらに対応が望まれる達成方法（参考）</head>
 <div5>
-<head>非装飾コンテンツに関する一般的な実装方法</head>
+<head>非装飾コンテンツに関する一般的な達成方法</head>
 <ulist>
 	<item><p>画像化された文字サイズを変更するサーバーサイドスクリプトを用いる（リンク追加予定）</p></item>
 </ulist>
 </div5>
 <div5>
-<head>CSSの実装方法</head>
+<head>CSSの達成方法</head>
 <ulist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C12" linktype="css">文字サイズをパーセントで指定する</loc>  

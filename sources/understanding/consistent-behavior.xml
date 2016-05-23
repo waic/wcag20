@@ -11,7 +11,7 @@
 </div2>
 
 <div2 id="consistent-behavior-advisory" role="gladvisory">
-<head>ガイドライン 3.2 の参考にすべき実装方法</head>
+<head>ガイドライン 3.2 の参考達成方法</head>
 <ulist>
 	<item><p>ラベルを配置することで、関係性を予測できる可能性を最大限に高める</p></item>
 </ulist>

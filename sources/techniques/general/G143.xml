@@ -10,7 +10,7 @@
       <success-criterion idref="text-equiv-all" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、非テキストコンテンツを特定する代替テキストを介して情報を提供することである。これは、<abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr>のテストが、ぼやけた画像又は音声ファイルで提示されるテキストを入力するよう利用者に求めることがしばしばあるためである。この代替テキストによって、利用者は、CAPTCHAがタスクの完了を要求するもので、またそれがどのようなタスクであるかを理解できるようになる。</p>
+    <p>この達成方法の目的は、非テキストコンテンツを特定する代替テキストを介して情報を提供することである。これは、<abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr>のテストが、ぼやけた画像又は音声ファイルで提示されるテキストを入力するよう利用者に求めることがしばしばあるためである。この代替テキストによって、利用者は、CAPTCHAがタスクの完了を要求するもので、またそれがどのようなタスクであるかを理解できるようになる。</p>
     <p>CAPTCHAの代替バージョンがある際には、代替テキストには、その代替バージョンを見つける方法についての説明を含めるべきである。</p>
   </description>
    <examples/>

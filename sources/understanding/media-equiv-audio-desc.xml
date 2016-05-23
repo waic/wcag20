@@ -62,18 +62,18 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.3 の実装方法及び不適合事例 － 収録済の映像コンテンツの音声ガイド又は代替</head>
+<head>達成基準 1.2.3 の達成方法及び不適合事例 － 収録済の映像コンテンツの音声ガイド又は代替</head>
 <div4 role="sufficient">
 <head/>
 <olist>
 	<item><p>
-次の実装方法のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G69" linktype="general">時間の経過に伴って変化するメディアに代替を提供する</loc></p><ulist><item><p>
+次の達成方法のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G69" linktype="general">時間の経過に伴って変化するメディアに代替を提供する</loc></p><ulist><item><p>
                                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G58" linktype="general">非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</loc>
                             </p></item>
 	<item><p>
                                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL17.html" linktype="general">Providing Static Alternative Content for Silverlight Media Playing in a MediaElement</loc>
                             </p></item>
-	<item><p>次の実装方法のどれか一つを用いて、時間の経過とともに変化するメディアの代替へのリンクを提供する
+	<item><p>次の達成方法のどれか一つを用いて、時間の経過とともに変化するメディアの代替へのリンクを提供する
                             </p><ulist><item><p>
                                         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
                                     </p></item>
@@ -100,7 +100,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.3 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.3 でさらに対応が望まれる達成方法（参考）</head>
 <ulist role="smil">
 	<item role="smil"><p>
 SMIL 1.0によって多様な言語の音声ガイドを提供する（リンク追加予定）

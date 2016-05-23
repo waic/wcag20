@@ -10,7 +10,7 @@
       <success-criterion idref="time-limits-pause" relationship="failure"/>
    </applies-to>
    <description>
-    <p>スクリプトを用いてコンテンツの表示、非表示を定期的に切り換えることで、コンテンツを点滅させることができる。スクリプトが5秒以内に点滅を止めるためのメカニズムを含まない場合は不適合となる。点滅を停止させるための実装方法をどのように修正するかについての情報は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR22.html" linktype="script">SCR22： スクリプトを用いて、点滅を制御し、5秒以内に停止させる</loc>(Scripting) を参照。</p>
+    <p>スクリプトを用いてコンテンツの表示、非表示を定期的に切り換えることで、コンテンツを点滅させることができる。スクリプトが5秒以内に点滅を止めるためのメカニズムを含まない場合は不適合となる。点滅を停止させるための達成方法をどのように修正するかについての情報は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR22.html" linktype="script">SCR22： スクリプトを用いて、点滅を制御し、5秒以内に停止させる</loc>(Scripting) を参照。</p>
   </description>
    <examples>
       <eg-group role="failure">

@@ -10,7 +10,7 @@
       <success-criterion idref="meaning-idioms" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、その語句の定義を伴って語句が用いられている箇所のマーク付けに<el>dfn</el>要素を用いることである。<el>dfn</el>要素は、囲んだ用語の定義対象であることを示すのに用いる。言い換えれば、その語句がその場所で定義されている場合に、その用語の存在をマーク付けするのである。ただし、用語を囲むのであって、定義を囲むわけではないことに注意すること。この実装方法は、定義方法に関する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">インラインの定義を用いる</loc>とともに用いられる。</p>
+    <p>この達成方法の目的は、その語句の定義を伴って語句が用いられている箇所のマーク付けに<el>dfn</el>要素を用いることである。<el>dfn</el>要素は、囲んだ用語の定義対象であることを示すのに用いる。言い換えれば、その語句がその場所で定義されている場合に、その用語の存在をマーク付けするのである。ただし、用語を囲むのであって、定義を囲むわけではないことに注意すること。この達成方法は、定義方法に関する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">インラインの定義を用いる</loc>とともに用いられる。</p>
   </description>
    <examples>
       <eg-group>

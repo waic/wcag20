@@ -41,7 +41,7 @@
         	</xsl:if>
         	<head>
             <title>
-              <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 実装方法集
+              <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 達成方法集
             </title>
         		<xsl:call-template name="canonical-link"/>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
@@ -87,7 +87,7 @@
         	</xsl:if>
         	<head>
             <title>
-              <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 実装方法集
+              <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 達成方法集
             </title>
         		<xsl:call-template name="canonical-link"/>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
@@ -139,7 +139,7 @@
     	    	</xsl:if>
     	    	<head>
               <title>
-								<xsl:value-of select="@id"></xsl:value-of>:<xsl:text> </xsl:text><xsl:apply-templates select="short-name" mode="text"/> | WCAG 2.0 実装方法集
+								<xsl:value-of select="@id"></xsl:value-of>:<xsl:text> </xsl:text><xsl:apply-templates select="short-name" mode="text"/> | WCAG 2.0 達成方法集
               </title>
     	    		<xsl:call-template name="canonical-link"/>
               <xsl:call-template name="css"/>
@@ -195,7 +195,7 @@
     	    	</xsl:if>
     	    	<head>
               <title>
-				<xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 実装方法集
+				<xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 達成方法集
               </title>
     	    		<xsl:call-template name="canonical-link"/>
               <xsl:call-template name="css"/>
@@ -245,7 +245,7 @@
       	    	<head>
             <title>
               <xsl:apply-templates select="head" mode="text"/>
-              <xsl:text> </xsl:text> | WCAG 2.0 実装方法集
+              <xsl:text> </xsl:text> | WCAG 2.0 達成方法集
             </title>
       	    		<xsl:call-template name="canonical-link"/>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
@@ -295,7 +295,7 @@
       	    	</xsl:if>
       	    	<head>
             <title>
-              <xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 実装方法集
+              <xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 達成方法集
 						</title>
       	    		<xsl:call-template name="canonical-link"/>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
@@ -524,7 +524,7 @@
       </xsl:if>
             <xsl:if test="related-techniques">
         <li>
-          <a href="#{@id}-related-techs">関連する実装方法</a>
+          <a href="#{@id}-related-techs">関連する達成方法</a>
         </li>
       </xsl:if>
             <xsl:if test="tests">
@@ -695,7 +695,7 @@
 <div class="footer">
 	<!-- p class="copyright">This Web page is part of <a href="Overview.html">Techniques and Failures for Web Content Accessibility Guidelines 2.0</a><xsl:call-template name="footer-latest-version-ref"/>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents. To send public comments, please follow the <a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</a>.
  </p -->
-<p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集<![CDATA[&nbsp;]]>WCAG 2.0の実装方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p>
+<p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 達成方法集<![CDATA[&nbsp;]]>WCAG 2.0の達成方法と不適合事例</a>」の一部である。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 達成方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。</p>
 	<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div>
 </xsl:template>
   

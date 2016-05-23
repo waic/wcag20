@@ -77,7 +77,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準を満たすことのできる実装方法</head>
+<head>十分な達成方法</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -93,19 +93,19 @@
 	<item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH27" linktype="flash">ボタンの目的を説明するラベルを提供する</loc>
                     </p></item>
-	<item><p>次に挙げる実装方法の一つを用いて、利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする：</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G189" linktype="general">ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR30" linktype="script">スクリプトを用いて、リンクのラベルを変更する (Scripting)</loc></p></item><item><p>
+	<item><p>次に挙げる達成方法の一つを用いて、利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする：</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G189" linktype="general">ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR30" linktype="script">スクリプトを用いて、リンクのラベルを変更する (Scripting)</loc></p></item><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH7" linktype="flash">スクリプトを使用してコントロールのラベルを変更する</loc>
                     </p></item></ulist></item>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G53" linktype="general">リンクのラベルとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</loc>
                 </p></item>
-	<item><p>次に挙げる実装方法の一つを用いて、リンクの目的の説明を補足する：</p><ulist><item><p>
+	<item><p>次に挙げる達成方法の一つを用いて、リンクの目的の説明を補足する：</p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H33" linktype="html">title属性を用いて、リンクテキストの文言を補足する </loc>
                     </p></item><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C7" linktype="css">CSSを用いて、リンクのラベルの一部を非表示にする </loc>
                     </p></item></ulist></item>
 	<item><p>
-                  次に挙げる実装方法の一つを用いて、プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する：
+                  次に挙げる達成方法の一つを用いて、プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する：
                 </p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H77" linktype="html">リンクテキストとそれが含まれているリスト項目とを組み合わせて、リンクの目的を特定する</loc>
                     </p></item><item><p>
@@ -118,7 +118,7 @@
                             <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H81" linktype="html">入れ子になったリスト項目にあるリンクのラベルとその親のリスト項目とを組み合わせて、リンクの目的を特定する </loc>
                         </p></item></ulist></item>
 	<item><p>
-                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91" linktype="general">リンクの目的を説明したリンクのラベルを提供する</loc> かつ次の実装方法の一つを用いてセマンティックにリンクを示す：
+                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91" linktype="general">リンクの目的を説明したリンクのラベルを提供する</loc> かつ次の達成方法の一つを用いてセマンティックにリンクを示す：
                 </p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF11" linktype="pdf">PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</loc>
                     </p></item><item><p>
@@ -130,7 +130,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.4 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 2.4.4 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html">隣り合った画像とテキストリンクを同じリンクの中に入れる </loc>

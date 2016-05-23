@@ -10,7 +10,7 @@
       <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、非テキストコンテンツの中で情報を伝達するために色の違いを用いている場合に、色に依存することなく同じ情報を伝達するためにパターン（模様）を併用することである。</p>
+    <p>この達成方法の目的は、非テキストコンテンツの中で情報を伝達するために色の違いを用いている場合に、色に依存することなく同じ情報を伝達するためにパターン（模様）を併用することである。</p>
   </description>
    <examples>
       <eg-group>

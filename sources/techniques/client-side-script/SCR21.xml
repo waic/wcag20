@@ -13,11 +13,11 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
-      <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、ユーザーがページを読み進めていく際に気がつけるようにする。</p>
+      <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、利用者ーがページを読み進めていく際に気がつけるようにする。</p>
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この実装方法の目的は、<code>document.write</code>又は<code>object.innerHTML</code>の代わりにDocument Object Model (DOM)の機能を用いて、ページ中にコンテンツを追加することである。<code>document.write()</code>メソッドはXHTMLで正しいMIMEタイプ(application/xhtml+xml)が指定されているときに動作せず、<code>innerHTML</code>プロパティはDOMの仕様ではないため利用すべきでない。もしDOMの機能を利用してコンテンツを追加すれば、ユーザーエージェントはDOMにアクセスしてコンテンツを取り込むことができる。<code>createElement()</code>関数を使ってDOMの中に要素を作成することもできる。<code>createTextNode()</code>は要素に関連付けられたテキストを作成するのに用いられる。<code>appendChild()</code>、<code>removeChild()</code>、<code>insertBefore()</code>及び<code>replaceChild()</code>関数は、要素やノードを追加したり削除したりするのに用いられる。その他のDOM関数は、作成された要素に属性を与えるときに使用される。</p>
+    <p>この達成方法の目的は、<code>document.write</code>又は<code>object.innerHTML</code>の代わりにDocument Object Model (DOM)の機能を用いて、ページ中にコンテンツを追加することである。<code>document.write()</code>メソッドはXHTMLで正しいMIMEタイプ(application/xhtml+xml)が指定されているときに動作せず、<code>innerHTML</code>プロパティはDOMの仕様ではないため利用すべきでない。もしDOMの機能を利用してコンテンツを追加すれば、利用者ーエージェントはDOMにアクセスしてコンテンツを取り込むことができる。<code>createElement()</code>関数を使ってDOMの中に要素を作成することもできる。<code>createTextNode()</code>は要素に関連付けられたテキストを作成するのに用いられる。<code>appendChild()</code>、<code>removeChild()</code>、<code>insertBefore()</code>及び<code>replaceChild()</code>関数は、要素やノードを追加したり削除したりするのに用いられる。その他のDOM関数は、作成された要素に属性を与えるときに使用される。</p>
     <note><p class="prefix">フォーカス可能な要素を文書に追加するとき、<att>tabindex</att>属性を用いて明示的なタブ順序を指定してはならない。なぜなら、文書の中央にフォーカス可能な要素を追加するときに問題が発生するからである。<att>tabindex</att>属性を明示的に設定しないことで、デフォルトのタブ順序が新しい要素に割り当てられるようにする。</p>
   </note>
   </description>
@@ -31,7 +31,7 @@
 window.onload = initialise;
 function initialise()
 {
-  // 標準に準拠したユーザーエージェントが対象
+  // 標準に準拠した利用者ーエージェントが対象
   if (!document.getElementById || !document.createElement || !document.createTextNode)
     return;
 

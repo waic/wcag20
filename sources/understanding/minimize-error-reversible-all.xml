@@ -27,12 +27,12 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準3.3.6 の実装方法及び不適合事例 - エラー回避に関する例外なし</head>
+<head>達成基準3.3.6 の達成方法及び不適合事例 - エラー回避に関する例外なし</head>
 <div4 role="sufficient">
-<head>達成基準を満たすことのできる実装方法 </head>
+<head>十分な達成方法 </head>
 <olist>
 	<item><p>
-                	利用者に情報の送信を要求するすべてのフォームにおいて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="minimize-error-reversible" linktype="understanding" locn-note="minimize-error-reversible-techniques-head">sufficient techniques for Success Criterion 達成基準3.3.4を満たすことのできる実装方法</loc>に従うこと。</p></item>
+                	利用者に情報の送信を要求するすべてのフォームにおいて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="minimize-error-reversible" linktype="understanding" locn-note="minimize-error-reversible-techniques-head">sufficient techniques for Success Criterion 達成基準3.3.4を満たすことのできる達成方法</loc>に従うこと。</p></item>
 </olist>
 </div4>
 </div3>

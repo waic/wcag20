@@ -10,7 +10,7 @@
       <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
+    <p>この達成方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
 文字間隔の量を調整するには、CSSの<code><![CDATA[letter-spacing]]></code>プロパティを使用する。
 単語の途中に空白文字を入れると意味や発音のされ方が変わってしまうため、間隔の調整はこの方法で行うことが推奨されている。</p>
   </description>

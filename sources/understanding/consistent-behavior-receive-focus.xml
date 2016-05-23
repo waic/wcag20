@@ -35,7 +35,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.2.1 の実装方法及び不適合事例 个ｱ オン・フォーカス</head>
+<head>達成基準 3.2.1 の達成方法及び不適合事例 个ｱ オン・フォーカス</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -48,11 +48,11 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 3.2.1 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 3.2.1 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>コンポーネントがフォーカスを受け取ったときに持続的な状態又は値の変更を発生させない、又はあらゆる変更をリセットするための代替手段を提供する（リンク追加予定）</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G200" linktype="general">必要なときにだけリンク先を新しいウィンドウおよびタブで開く</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G201" linktype="general">新しいウィンドウを開くときにはユーザーに事前に知らせる</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G201" linktype="general">新しいウィンドウを開くときには利用者ーに事前に知らせる</loc></p></item>
 </ulist>
 </div4>
 

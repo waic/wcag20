@@ -11,12 +11,12 @@
    </applies-to>
    <ua-issues>
      <ua-issue>
-      <p>ユーザーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">PDF テクノロジーノート</loc>を参照のこと。</p>
+      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">PDF テクノロジーノート</loc>を参照のこと。</p>
     </ua-issue>
   </ua-issues>
   <description>
-    <p>この実装方法の目的は、ユーザーが長い文書でしおり（アウトライン辞書のアウトラインエントリ）を使用してコンテンツを見つけられるようにすることである。</p>
-    <p>認知障害のあるユーザーは、多数のページを読み進めるよりも、文書の概要を提供する階層的なアウトラインを好む場合がある。また、これは文書内を移動する方法として一般的なものであり、どのようなユーザーにとっても役立つものである。</p>
+    <p>この達成方法の目的は、利用者ーが長い文書でしおり（アウトライン辞書のアウトラインエントリ）を使用してコンテンツを見つけられるようにすることである。</p>
+    <p>認知障害のある利用者ーは、多数のページを読み進めるよりも、文書の概要を提供する階層的なアウトラインを好む場合がある。また、これは文書内を移動する方法として一般的なものであり、どのような利用者ーにとっても役立つものである。</p>
   </description>
    <examples>
       <eg-group>
@@ -62,7 +62,7 @@
  >>
 endobj
 22 0 obj
- << /Title (障害者によるユーザビリティテストにゲリラ戦術を適用する)
+ << /Title (障害者による利用者ビリティテストにゲリラ戦術を適用する)
     /Parent 21 0 R
     /Next 29 0 R
     /First 25 0 R

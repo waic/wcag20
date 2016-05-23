@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G127">
-   <short-name>技術特有の実装方法を用いて、そのウェブページとその他の多くのウェブページとの関係を示す</short-name>
+   <short-name>技術特有の達成方法を用いて、そのウェブページとその他の多くのウェブページとの関係を示す</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>
@@ -11,7 +11,7 @@
       <success-criterion idref="navigation-mechanisms-location" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、利用者がそのウェブページと同じ一式（例：同じウェブサイト）にあるウェブページとの関係性を特定できるようにすることである。場合によっては、プログラムが解釈できるように実装することが可能である。例えば、HTMLでは、<el>link</el>要素の<att>rel</att>属性を用いることができる。また、ウェブページのタイトルに関連する情報を含めることによって、関係性を示す情報を提供することもできる。</p>
+    <p>この達成方法の目的は、利用者がそのウェブページと同じ一式（例：同じウェブサイト）にあるウェブページとの関係性を特定できるようにすることである。場合によっては、プログラムが解釈できるように実装することが可能である。例えば、HTMLでは、<el>link</el>要素の<att>rel</att>属性を用いることができる。また、ウェブページのタイトルに関連する情報を含めることによって、関係性を示す情報を提供することもできる。</p>
   </description>
    <examples>
       <eg-group>

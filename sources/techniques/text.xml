@@ -3,7 +3,7 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>プレーンテキストの実装方法</title>
+      <title>プレーンテキストの達成方法</title>
       <w3c-designation>WCAG20-TEXT-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>
@@ -38,7 +38,7 @@
    </header>
    <body><!-- techniques -->
       <div1 id="text">
-         <head>プレーンテキストの実装方法</head>
+         <head>プレーンテキストの達成方法</head>
          <xi:include href="text/T1.xml"/>
          <xi:include href="text/T2.xml"/>
          <xi:include href="text/T3.xml"/>

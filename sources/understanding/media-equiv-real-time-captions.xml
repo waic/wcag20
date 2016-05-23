@@ -33,7 +33,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.4 の実装方法及び不適合事例  － ライブの音声コンテンツのキャプション</head>
+<head>達成基準 1.2.4 の達成方法及び不適合事例  － ライブの音声コンテンツのキャプション</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -62,7 +62,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.4 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.4 でさらに対応が望まれる達成方法（参考）</head>
 </div4>
 
 <div4 role="failures">

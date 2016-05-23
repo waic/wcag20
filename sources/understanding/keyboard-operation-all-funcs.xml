@@ -21,7 +21,7 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>この達成基準には、特に追加された実装方法があるわけではない。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="keyboard-operation-keyboard-operable" locn-note="keyboard-operation-keyboard-operable-techniques-head" linktype="understanding">達成基準 2.1.1 の実装方法</loc>を参照のこと。アナログで時間の経過に依存した入力があるためにその実装方法が不可能な場合は、このレベル AAA の達成基準に適合することはできない。</p></item>
+	<item><p>この達成基準には、特に追加された達成方法があるわけではない。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="keyboard-operation-keyboard-operable" locn-note="keyboard-operation-keyboard-operable-techniques-head" linktype="understanding">達成基準 2.1.1 の達成方法</loc>を参照のこと。アナログで時間の経過に依存した入力があるためにその達成方法が不可能な場合は、このレベル AAA の達成基準に適合することはできない。</p></item>
 </olist>
 </div4>
 </div3>

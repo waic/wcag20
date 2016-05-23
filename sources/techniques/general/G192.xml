@@ -4,7 +4,7 @@
 <technique id="G192">
    <short-name>仕様に完全に準拠する</short-name>
    <applicability>
-      <p>この実装方法は仕様のある全てのマークアップ言語に関連する</p>
+      <p>この達成方法は仕様のある全てのマークアップ言語に関連する</p>
    </applicability>
    <applies-to>
       <success-criterion idref="ensure-compat-parses" relationship="sufficient"/>

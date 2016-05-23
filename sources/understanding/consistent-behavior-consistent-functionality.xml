@@ -36,11 +36,11 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.2.4 の実装方法及び不適合事例  － 一貫した識別性</head>
+<head>達成基準 3.2.4 の達成方法及び不適合事例  － 一貫した識別性</head>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G197" linktype="general">G197： 同じ機能を有するコンテンツに対して、一貫したラベル、名前及び代替テキストを用いる</loc>、<emph role="bold">かつ</emph>、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="text-equiv-all" linktype="understanding" locn-note="text-equiv-all-techniques-head">達成基準1.1.1を満たすことのできる実装方法</loc>かつ<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ensure-compat-rsv" locn-note="ensure-compat-rsv-techniques-head" linktype="understanding">達成基準4.1.2を満たすことのできる実装方法</loc> に従ってラベル、識別名、代替テキストを提供する。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G197" linktype="general">G197： 同じ機能を有するコンテンツに対して、一貫したラベル、名前及び代替テキストを用いる</loc>、<emph role="bold">かつ</emph>、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="text-equiv-all" linktype="understanding" locn-note="text-equiv-all-techniques-head">達成基準1.1.1を満たすことのできる達成方法</loc>かつ<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ensure-compat-rsv" locn-note="ensure-compat-rsv-techniques-head" linktype="understanding">達成基準4.1.2を満たすことのできる達成方法</loc> に従ってラベル、識別名、代替テキストを提供する。</p></item>
 </olist>
 
 <note>
@@ -50,7 +50,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 3.2.4 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 3.2.4 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>コンポーネントの機能及びそのコンポーネントを利用者が実行したときに何が起こるかが確実に分かるような代替テキストを用いる（リンク追加予定）</p></item>
 	<item><p>可能な限り、特定の機能を表す非テキストコンテンツは同じものにする（リンク追加予定）</p></item>

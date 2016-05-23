@@ -31,7 +31,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.4.7 の実装方法及び不適合事例 － 小さい背景音又は背景音なし</head>
+<head>達成基準 1.4.7 の達成方法及び不適合事例 － 小さい背景音又は背景音なし</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -42,7 +42,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.4.7 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.4.7 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
 前景音と背景音のレベルを独立して調節できる方法を提供する（リンク追加予定）

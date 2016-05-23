@@ -11,7 +11,7 @@
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、あるページ(利用者によって要求されたページ)が別のページにリダイレクトされたために、2つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかのユーザーエージェントは、利用者を指定された秒数の後に別のページにリダイレクトするHTMLの<el>meta</el>要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx番台のステータスコード、及び転送先のURLのLocationヘッダーを持つ適切な HTTPレスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しいURLのリクエストをする。</p>
+    <p>この達成方法の目的は、あるページ(利用者によって要求されたページ)が別のページにリダイレクトされたために、2つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかの利用者ーエージェントは、利用者を指定された秒数の後に別のページにリダイレクトするHTMLの<el>meta</el>要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx番台のステータスコード、及び転送先のURLのLocationヘッダーを持つ適切な HTTPレスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しいURLのリクエストをする。</p>
   </description>
    <examples>
       <eg-group>
@@ -24,7 +24,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 …
   response.sendRedirect("/newUserLogin.do");
 }]]></code>
-      <description><p>このコードは、302ステータスコード(「Found」)及び新しいURLのLocationヘッダーを含むレスポンスをユーザーエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code> で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
+      <description><p>このコードは、302ステータスコード(「Found」)及び新しいURLのLocationヘッダーを含むレスポンスを利用者ーエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code> で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)

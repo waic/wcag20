@@ -11,7 +11,7 @@
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法は、CSSの<code><![CDATA[text-align]]></code>プロパティを使って、テキストのブロックを左または右に揃える方法を説明している。</p>
+    <p>この達成方法は、CSSの<code><![CDATA[text-align]]></code>プロパティを使って、テキストのブロックを左または右に揃える方法を説明している。</p>
   </description>
    <examples>
       <eg-group>

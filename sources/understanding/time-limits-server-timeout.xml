@@ -48,7 +48,7 @@
 </olist>
 
 <note>
-<p>制限時間について通知を提供することに関連した実装方法のための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="time-limits-required-behaviors" linktype="understanding" locn-note="time-limits-required-behaviors-techniques-head">達成基準 2.2.1 の取組みのための実装方法</loc>を参照のこと。</p>
+<p>制限時間について通知を提供することに関連した達成方法のための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="time-limits-required-behaviors" linktype="understanding" locn-note="time-limits-required-behaviors-techniques-head">達成基準 2.2.1 の取組みのための達成方法</loc>を参照のこと。</p>
 </note>
 </div4>
 

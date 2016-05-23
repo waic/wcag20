@@ -16,7 +16,7 @@
     <p>例えば、全体としては横スクロールが必要なスプレッドシートでも、ひとつひとつの列を個別に読むのに横スクロールの必要がなければ容認できる。（すなわち、他の列を読む際にはスクロールが必要だが、ひとつひとつの列の左端又は右端を読むにはスクロールの必要がない、ということ。筆者は、完全に明快な方法で、このことを説明するのは難しいと思っている。）</p>
     <note>
       <p class="prefix">
-この実装方法は、非適合コンテンツに対する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>のページを提供するために、スタイル切り替え手法と組み合わせて用いることができる。詳細な情報は、<specref ref="C29"/>、及び、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance"
+この達成方法は、非適合コンテンツに対する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>のページを提供するために、スタイル切り替え手法と組み合わせて用いることができる。詳細な情報は、<specref ref="C29"/>、及び、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance"
                  locn-note="uc-conforming-alt-versions-head"
                  linktype="understanding">適合している代替バージョンを理解する</loc>を参照のこと。</p>
     </note>

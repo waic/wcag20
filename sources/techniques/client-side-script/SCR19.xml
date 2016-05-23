@@ -4,7 +4,7 @@
 <technique id="SCR19">
    <short-name>状況の変化を引き起こすことのないように、select要素のonchangeイベントを用いる</short-name>
    <applicability>
-      <p>スクリプトをサポートするHTML及びXHTML。この実装方法では、JavaScript 1.4 の try/catch 構文を用いる。</p>
+      <p>スクリプトをサポートするHTML及びXHTML。この達成方法では、JavaScript 1.4 の try/catch 構文を用いる。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-no-extreme-changes-context"
@@ -12,12 +12,12 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
-      <p>この実装方法は、Firefox1.5とIE6の両方で、JAWS 7.0とWindowEyes 5.5を使用したWindows XPで検証されている。ブラウザでJavaScriptを有効にしなければならないことに注意する。</p>
+      <p>この達成方法は、Firefox1.5とIE6の両方で、JAWS 7.0とWindowEyes 5.5を使用したWindows XPで検証されている。ブラウザでJavaScriptを有効にしなければならないことに注意する。</p>
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この実装方法の目的は、ウェブページの他の要素を更新するselect要素においてonchangeイベントを正しく使用する方法を示すことである。この実装方法は、状況の変化を引き起こさない。ウェブページに一つかそれ以上のselect要素があるとき、一方のonchangeイベントは、そのウェブページの別のselect要素における選択肢を更新できる。そして、select要素によって必要とされるデータのすべてが、ウェブページの中に含まれている。</p>
-    <p>ウェブページでの音声読み上げ順序において、選択によって変更されるアイテムが、トリガーとなるselect要素の後にあることに注意することが重要である。これは、支援技術が変化を察知するのを確実にし、変更されたアイテムがフォーカスされたとき、利用者は新しいデータを認識する。なお、この実装方法は、ユーザーエージェントによるJavaScriptのサポート状況に依存する。</p>
+    <p>この達成方法の目的は、ウェブページの他の要素を更新するselect要素においてonchangeイベントを正しく使用する方法を示すことである。この達成方法は、状況の変化を引き起こさない。ウェブページに一つかそれ以上のselect要素があるとき、一方のonchangeイベントは、そのウェブページの別のselect要素における選択肢を更新できる。そして、select要素によって必要とされるデータのすべてが、ウェブページの中に含まれている。</p>
+    <p>ウェブページでの音声読み上げ順序において、選択によって変更されるアイテムが、トリガーとなるselect要素の後にあることに注意することが重要である。これは、支援技術が変化を察知するのを確実にし、変更されたアイテムがフォーカスされたとき、利用者は新しいデータを認識する。なお、この達成方法は、利用者ーエージェントによるJavaScriptのサポート状況に依存する。</p>
   </description>
    <examples>
       <eg-group>

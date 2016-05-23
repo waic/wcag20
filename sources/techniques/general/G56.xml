@@ -10,7 +10,7 @@
       <success-criterion idref="visual-audio-contrast-noaudio" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、聴覚に問題を持つ利用者が主音声を理解しづらくならないように、コンテンツ制作者が音声に背景音を入れられるようにすることである。前景にある主音声を背景音より20デジベル大きくすることで、その主音声は背景音よりも4倍大きいことになる。デシベル（dB）に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels：英語</loc>を参照のこと。</p>
+    <p>この達成方法の目的は、聴覚に問題を持つ利用者が主音声を理解しづらくならないように、コンテンツ制作者が音声に背景音を入れられるようにすることである。前景にある主音声を背景音より20デジベル大きくすることで、その主音声は背景音よりも4倍大きいことになる。デシベル（dB）に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels：英語</loc>を参照のこと。</p>
   </description>
    <examples>
       <eg-group>

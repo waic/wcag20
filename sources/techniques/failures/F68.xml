@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F68">
-   <short-name>達成基準 1.3.1 及び 達成基準 4.1.2 の不適合事例 － ラベルとユーザーインタフェース・コントロールとの関連付けがプログラムで解釈可能ではない
+   <short-name>達成基準 1.3.1 及び 達成基準 4.1.2 の不適合事例 － ラベルと利用者ーインタフェース・コントロールとの関連付けがプログラムで解釈可能ではない
    </short-name>
    <applicability>
       <p>視覚的に確認できるラベルを用いている HTML 及び XHTML のコントロール</p>
@@ -21,7 +21,7 @@
    <examples>
       <eg-group role="failure">
       <head>不適合となる</head>
-      <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザーエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
+      <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、利用者ーエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
  <form>
@@ -37,7 +37,7 @@
     </eg-group>
     <eg-group role="failure">
       <head>不適合となる</head>
-      <description><p>以下のコード例において、ユーザーエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p>
+      <description><p>以下のコード例において、利用者ーエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
 <form action="..." method="post">

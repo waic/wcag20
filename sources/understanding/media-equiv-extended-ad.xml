@@ -46,7 +46,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.7 の実装方法及び不適合事例 － 収録済の映像コンテンツの拡張した音声ガイド</head>
+<head>達成基準 1.2.7 の達成方法及び不適合事例 － 収録済の映像コンテンツの拡張した音声ガイド</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -60,7 +60,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.7 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.7 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item role="smil"><p>
 SMIL1.0で多様な言語における拡張した音声ガイドを追加する（リンク追加予定）

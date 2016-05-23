@@ -161,9 +161,9 @@
 		<xsl:template match="related-techs">
 					<xsl:call-template name="copy-common-atts"/>
 					<xsl:choose>
-      <xsl:when test="$slices=1"><h3 class="small-head" id="{../../@id}-related-techs">関連する実装方法</h3></xsl:when>
-	<xsl:when test="$bytech=1"><h3 class="small-head" id="{../../@id}-related-techs">関連する実装方法</h3></xsl:when>
-      <xsl:otherwise><h5 class="small-head" id="{../../@id}-related-techs">関連する実装方法</h5></xsl:otherwise>
+      <xsl:when test="$slices=1"><h3 class="small-head" id="{../../@id}-related-techs">関連する達成方法</h3></xsl:when>
+	<xsl:when test="$bytech=1"><h3 class="small-head" id="{../../@id}-related-techs">関連する達成方法</h3></xsl:when>
+      <xsl:otherwise><h5 class="small-head" id="{../../@id}-related-techs">関連する達成方法</h5></xsl:otherwise>
     </xsl:choose>
 					
 					<xsl:apply-templates/>
@@ -369,7 +369,7 @@
 			<p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p>
 				<xsl:apply-templates/>
 			</xsl:when>
-			<xsl:otherwise><p>この実装方法に関する参考リソースはない。</p></xsl:otherwise>
+			<xsl:otherwise><p>この達成方法に関する参考リソースはない。</p></xsl:otherwise>
 			</xsl:choose>
 			</div>
 		<!--</div>-->
@@ -389,7 +389,7 @@
         </xsl:choose>
       </xsl:with-param>
 				<xsl:with-param name="id"><xsl:value-of select="../@id"/>-related-techs</xsl:with-param>
-				<xsl:with-param name="text">関連する実装方法</xsl:with-param>
+				<xsl:with-param name="text">関連する達成方法</xsl:with-param>
 			</xsl:call-template>
 		<div class="textbody">
 			<xsl:choose>
@@ -450,7 +450,7 @@
 			      <xsl:apply-templates/>
 			    	<!-- MC: Need a much better way to test technique type -->
 			    	<xsl:if test="not(ancestor::div1[@id = 'failures'])">
-			    		<p>注意：この実装方法が「達成基準を満たすことのできる実装方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの実装方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の実装方法によってその達成基準が満たされていることもありうる。</p>
+			    		<p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p>
 			    	</xsl:if>
 			    </xsl:when>
 			    <xsl:otherwise><p>No tests available for this technique.</p></xsl:otherwise>
@@ -670,7 +670,7 @@
 				<!--BBC changed id="referenced" to class to avoid duplicate ID problem w/ validation -->
 				<xsl:attribute name="class">referenced</xsl:attribute>これは、次の達成基準に関連する<xsl:choose>
       <xsl:when test="ancestor::div1[@role='failures']">failure不適合事例である:</xsl:when>
-      <xsl:otherwise>実装方法である:</xsl:otherwise>
+      <xsl:otherwise>達成方法である:</xsl:otherwise>
     </xsl:choose></xsl:element>
 			<ul>
 				<xsl:apply-templates select="guideline" mode="relates"/>

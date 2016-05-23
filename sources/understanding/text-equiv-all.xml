@@ -5,7 +5,7 @@
    <head>1.1.1</head>
    <div3 role="intent">
       <head>この達成基準の意図</head>
-<p>この達成基準の意図は、非テキストコンテンツにより伝達される情報を、代替テキストを用いることによってアクセシブルにすることである。代替テキストは、利用者の要求に合わせてあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）を通じて描画可能なので、情報をアクセシブルにする上では最もよい方法である。代替テキストを提供することにより、情報が様々なユーザーエージェントによって様々な方法で描画されることが可能になる。例えば、写真を見ることのできない利用者は、合成音声を用いてその代替テキストを読み上げさせることができる。また、音声ファイルを聞くことのできない利用者は、それを読むことができるように代替テキストを表示させることができる。将来的には、代替テキストによって、情報を手話や同じ自然言語のより平易なものに、より容易に変換することができるようにもなるだろう。 </p>
+<p>この達成基準の意図は、非テキストコンテンツにより伝達される情報を、代替テキストを用いることによってアクセシブルにすることである。代替テキストは、利用者の要求に合わせてあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）を通じて描画可能なので、情報をアクセシブルにする上では最もよい方法である。代替テキストを提供することにより、情報が様々な利用者ーエージェントによって様々な方法で描画されることが可能になる。例えば、写真を見ることのできない利用者は、合成音声を用いてその代替テキストを読み上げさせることができる。また、音声ファイルを聞くことのできない利用者は、それを読むことができるように代替テキストを表示させることができる。将来的には、代替テキストによって、情報を手話や同じ自然言語のより平易なものに、より容易に変換することができるようにもなるだろう。 </p>
 
 <div4>
 <head>CAPTCHA に関する注記</head>
@@ -147,7 +147,7 @@ E-ラーニングアプリケーション
 <div5 role="situation">
 <head>状況 A： 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示できる場合：</head>
 <olist>
-<item><p>次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、
+<item><p>次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G94" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する短い代替テキストを提供する</loc>    </p></item>
 </olist>
 </div5>
@@ -157,17 +157,17 @@ E-ラーニングアプリケーション
 <olist>
 	<item><p>
 次に挙げる<emph role="bold">短い</emph>
-代替テキストの実装方法<emph role="bold">及び</emph>次に挙げる<emph role="bold">長い</emph>説明の実装方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G95" linktype="general">非テキストコンテンツを簡潔に説明する短い代替テキストを提供する</loc>
+代替テキストの達成方法<emph role="bold">及び</emph>次に挙げる<emph role="bold">長い</emph>説明の達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G95" linktype="general">非テキストコンテンツを簡潔に説明する短い代替テキストを提供する</loc>
 </p><ulist>
 	<item><p>
 次に挙げる<emph role="bold">長い</emph>
-代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G92" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する長い説明を提供する</loc>
+代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G92" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する長い説明を提供する</loc>
     </p></item><item><p>
                         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G74" linktype="general">短い説明の中で長い説明のある場所を示して、非テキストコンテンツの近くにあるテキストで長い説明を提供する</loc>
                       </p></item><item><p>
                         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G73" linktype="general">非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する</loc>
                       </p></item></ulist></item></olist></div5><div5 role="situation"><head>状況 C： 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合：</head><olist><item><p>
-次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G82" linktype="general">非テキストコンテンツの目的を示す代替テキストを提供する</loc>
+次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G82" linktype="general">非テキストコンテンツの目的を示す代替テキストを提供する</loc>
     </p></item>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc>  
@@ -192,18 +192,18 @@ E-ラーニングアプリケーション
                   </p></item><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30" linktype="silverlight">Using Silverlight Control Compositing and AutomationProperties.Name</loc>  
                   </p></item></olist></div5><div5 role="situation"><head>状況 D： 非テキストコンテンツが時間の経過に伴って変化するメディアである場合（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）； テキストで提示されると無効になる試験又は演習；又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツ：</head><olist><item><p>
-次に挙げる<emph role="bold">短い</emph>代替テキストの実装方法を用いて、ラベルを記述する。
+次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、ラベルを記述する。
     </p></item><item><p>
 次に挙げる<emph role="bold">短い</emph>
-代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G68" linktype="general">ラベルを記述して、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</loc>
+代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G68" linktype="general">ラベルを記述して、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</loc>
     </p></item><item><p>
 次に挙げる<emph role="bold">短い</emph>
-代替テキストの実装方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G100" linktype="general">非テキストコンテンツの一般的な名前、又は説明的な名前を提供する</loc>
+代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G100" linktype="general">非テキストコンテンツの一般的な名前、又は説明的な名前を提供する</loc>
     </p></item></olist></div5><div5 role="situation"><head>状況 E： 非テキストコンテンツが CAPTCHA である場合：</head><olist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G143" linktype="general">代替テキストを提供して、CAPTCHAの目的を説明する</loc>
                     、<emph role="bold">かつ</emph>、
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G144" linktype="general">異なるモダリティを用いて、同じ目的を果たす CAPTCHA をもう一つウェブページで提供する</loc>
-                  </p></item></olist></div5><div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の実装方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
+                  </p></item></olist></div5><div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の達成方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
     </p><ulist><item><p>
                         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="html">支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない　</loc>  
                       </p></item><item><p>
@@ -213,7 +213,7 @@ E-ラーニングアプリケーション
                   </p></item><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF4" linktype="pdf">PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する</loc>  
                   </p></item></ulist></item></olist></div5><div5><head>
-前述の「達成基準を満たすことのできる実装方法」を用いる際の<emph role="bold">短い</emph>代替テキストの実装方法
+前述の「十分な達成方法」を用いる際の<emph role="bold">短い</emph>代替テキストの達成方法
               </head><olist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H36" linktype="html">送信 / 実行ボタンとして用いる画像の alt 属性を使用する</loc>  
                   </p></item><item><p>
@@ -237,7 +237,7 @@ E-ラーニングアプリケーション
                   </p></item><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL5" linktype="silverlight">Defining a Focusable Image Class for Silverlight</loc>  
                   </p></item></olist></div5><div5><head>
-前述の「達成基準を満たすことのできる実装方法」を用いる際の<emph role="bold">長い</emph>代替テキストの実装方法
+前述の「十分な達成方法」を用いる際の<emph role="bold">長い</emph>代替テキストの達成方法
               </head><olist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H45" linktype="html">longdesc 属性を用いる</loc>  
                   </p></item><item><p>
@@ -248,7 +248,7 @@ E-ラーニングアプリケーション
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH11" linktype="flash">オブジェクトについて長いテキストの説明を提供する</loc>  
                   </p></item><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL8" linktype="silverlight">Displaying HelpText in Silverlight User Interfaces</loc>  
-                  </p></item></olist></div5></div4><div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる実装方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な実装方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の実装方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な実装方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な実装方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの実装方法（参考）</head><ulist><item><p>
+                  </p></item></olist></div5></div4><div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる達成方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な達成方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの達成方法（参考）</head><ulist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc>  
                   </p></item><item><p>
 フレームをサポートしないブラウザのために作成する（リンク追加予定）
@@ -260,10 +260,10 @@ iframe要素の代替コンテンツを提供する（リンク追加予定）
 iframe要素の長い説明を使わない（リンク追加予定）
                   </p></item><item><p>
 クライアントサイドイメージマップのために冗長なテキストリンクを提供する（リンク追加予定）
-    </p></item></ulist></div5><div5><head role="css">CSSの実装方法（参考）</head><ulist><item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc>  </p></item><item role="css"><p>
+    </p></item></ulist></div5><div5><head role="css">CSSの達成方法（参考）</head><ulist><item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc>  </p></item><item role="css"><p>
 装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う（リンク追加予定）
-    </p></item><item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item></ulist></div5><div5><head role="aria">WAI-ARIAの実装方法（参考）</head><ulist><item role="aria"><p>表現のためだけの要素を示すためにARIA表示を使う（リンク追加予定）
-                  </p></item></ulist></div5><div5><head role="silverlight">Silverlightの実装方法（参考）</head><ulist><item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc>  </p></item></ulist></div5><div5><head>メタデータの実装方法（参考）</head><ulist><item><p>テキストトランスクリプションと映像を関連付けるためにメタデータを使う（リンク追加予定） </p></item><item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p><ulist><item><p>事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する</p></item><item><p>事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する</p></item></ulist></item></ulist></div5></div4><div4 role="failures"><head/><ulist><item><p>
+    </p></item><item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item></ulist></div5><div5><head role="aria">WAI-ARIAの達成方法（参考）</head><ulist><item role="aria"><p>表現のためだけの要素を示すためにARIA表示を使う（リンク追加予定）
+                  </p></item></ulist></div5><div5><head role="silverlight">Silverlightの達成方法（参考）</head><ulist><item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc>  </p></item></ulist></div5><div5><head>メタデータの達成方法（参考）</head><ulist><item><p>テキストトランスクリプションと映像を関連付けるためにメタデータを使う（リンク追加予定） </p></item><item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p><ulist><item><p>事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する</p></item><item><p>事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する</p></item></ulist></item></ulist></div5></div4><div4 role="failures"><head/><ulist><item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F30" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</loc>
                 </p></item><item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</loc>

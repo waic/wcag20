@@ -21,7 +21,7 @@
 <head>達成基準 2.4.7 の事例</head>
 <ulist>
 	<item><p>テキストフィールドがフォーカスを受け取ると、縦の棒がテキストフィールド内に表示されて、利用者がテキストを挿入入力できることを示す。もしくは、すべてのテキストがハイライト表示され、利用者がそのテキストを上書きできることを示す。</p></item>
-	<item><p>ユーザーインタフェースのコントロールがフォーカスを受け取ると、その周りに視覚的に認識できる枠線が表示される。</p></item>
+	<item><p>利用者ーインタフェースのコントロールがフォーカスを受け取ると、その周りに視覚的に認識できる枠線が表示される。</p></item>
 </ulist>
 </div3>
 
@@ -37,13 +37,13 @@
 <div3 role="techniques">
 <head>Techniques</head>
 <div4 role="sufficient">
-<head>達成基準を満たすことのできる実装方法</head>
+<head>十分な達成方法</head>
 <olist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G149" linktype="general">フォーカスを受け取った際に、ユーザーエージェントによって強調されるユーザーインタフェースコンポーネントを用いる</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G149" linktype="general">フォーカスを受け取った際に、利用者ーエージェントによって強調される利用者ーインタフェースコンポーネントを用いる</loc>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C15" linktype="css">ユーザーインタフェースコンポーネントがフォーカスを受けとった際に、CSSを用いてその表現を変更する </loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C15" linktype="css">利用者ーインタフェースコンポーネントがフォーカスを受けとった際に、CSSを用いてその表現を変更する </loc>
                 </p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G165" linktype="general">視認性に優れた標準のフォーカスインジケータが引き継がれるように、プラットフォーム標準のフォーカスインジケータを用いる</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G195" linktype="general">コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを用いる</loc></p></item>
@@ -61,7 +61,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.7 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 2.4.7 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>リンクもしくはコントロールのそばにマウスが来たとき強調する（リンク追加予定）</p></item>
 	<item><p>キーボードフォーカスを受け取ったときリンクもしくはコントロールが強調され非常に目立つメカニズムを提供する（リンク追加予定）

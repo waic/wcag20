@@ -15,7 +15,7 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この実装方法の目的は、短い代替テキストでは画像の機能や情報が十分に伝達できない場合に、<att>longdesc</att>属性でのファイル指定によって情報を提供することである。<att>longdesc</att>属性には<acronym title="Unifrom Resource Identifier">URI</acronym>を指定する。これは非テキストコンテンツの詳しい説明を含む目的地を意味する。</p>
+    <p>この達成方法の目的は、短い代替テキストでは画像の機能や情報が十分に伝達できない場合に、<att>longdesc</att>属性でのファイル指定によって情報を提供することである。<att>longdesc</att>属性には<acronym title="Unifrom Resource Identifier">URI</acronym>を指定する。これは非テキストコンテンツの詳しい説明を含む目的地を意味する。</p>
   </description>
    <examples>
       <eg-group>

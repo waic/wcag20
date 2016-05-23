@@ -13,7 +13,7 @@
    </applies-to>
    <description>
     <p><code>meta</code><code>http-equiv</code>の{time-out}; url=...はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p>
-    <p>タイムアウトが0に設定されている場合には、<el>meta</el>要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの実装方法を用いることが望ましい。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1.html" linktype="server">SVR1： クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>(SERVER) 参照のこと。</p>
+    <p>タイムアウトが0に設定されている場合には、<el>meta</el>要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1.html" linktype="server">SVR1： クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>(SERVER) 参照のこと。</p>
   </description>
    <examples>
       <eg-group role="failure">

@@ -10,7 +10,7 @@
       <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この実装方法の目的は、単語の発音に関する情報を同じウェブページ又は異なるウェブページ上で提供し、対象となる単語から発音の情報へリンクすることにより、その単語の発音を入手可能にすることである。</p>
+    <p>この達成方法の目的は、単語の発音に関する情報を同じウェブページ又は異なるウェブページ上で提供し、対象となる単語から発音の情報へリンクすることにより、その単語の発音を入手可能にすることである。</p>
   </description>
    <examples>
       <eg-group>

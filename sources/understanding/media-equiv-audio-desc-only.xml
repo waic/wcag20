@@ -57,7 +57,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.5 の実装方法及び不適合事例  － 収録済の映像コンテンツの音声ガイド</head>
+<head>達成基準 1.2.5 の達成方法及び不適合事例  － 収録済の映像コンテンツの音声ガイド</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -82,7 +82,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.5 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.5 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
 SMIL 1.0によって多様な言語の音声ガイドを提供する（リンク追加予定）

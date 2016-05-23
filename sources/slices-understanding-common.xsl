@@ -490,7 +490,7 @@
       </xsl:if>
       <xsl:if test="div3[@role='techniques']">
         <li>
-          <a href="#{@id}-techniques-head">実装方法と不適合事例</a>
+          <a href="#{@id}-techniques-head">達成方法と不適合事例</a>
         </li>
       </xsl:if>
       <xsl:if test="div3[@role='terms'] or $gl/descendant::termref">
@@ -507,7 +507,7 @@
           <a href="#{@id}">意図</a>
         </li>
         <li>
-          <a href="#{@id}">参考実装方法</a>
+          <a href="#{@id}">参考達成方法</a>
         </li>
         <li>
           <a href="#{@id}-sc">達成基準</a>
@@ -603,13 +603,13 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
           </xsl:call-template>
-			ガイドライン <xsl:value-of select="../../head"/> の参考にすべき実装方法(特定の達成基準に特有ではない実装方法)</h2>
+			ガイドライン <xsl:value-of select="../../head"/> の参考にすべき達成方法(特定の達成基準に特有ではない達成方法)</h2>
         <div class="textbody">
-          <p>このガイドラインにある各達成基準を満たすための実装方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための実装方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった実装方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。</p>
+          <p>このガイドラインにある各達成基準を満たすための達成方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための達成方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった達成方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。</p>
           <xsl:choose>
             <xsl:when test="count(../ulist) = 0">
               <ul>
-                <li>このガイドラインの参考にすべき実装方法はすべて、特定の達成基準に関係している。</li>
+                <li>このガイドラインの参考にすべき達成方法はすべて、特定の達成基準に関係している。</li>
               </ul>
             </xsl:when>
             <xsl:otherwise/>
@@ -657,7 +657,7 @@
 				この<xsl:value-of select="$criteriontype"/>基準の意図
 			</xsl:when>
             <xsl:when test="../@role='techniques'">
-				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の実装方法及び不適合事例
+				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の達成方法及び不適合事例
               <xsl:text> </xsl:text>- <xsl:call-template name="sc-handle">
                 <xsl:with-param name="handleid" select="../../@id"/>
               </xsl:call-template>
@@ -721,7 +721,7 @@
       <!--BBC Added a test to replace guideline headings with value from current source-->
       <xsl:choose>
         <xsl:when test="../@role='sufficient'">
-				達成基準を満たすことのできる実装方法 
+				達成基準を満たすことのできる達成方法 
 			</xsl:when>
         <xsl:when test="../@role='tech-specific'">
 				Technology-Specific Techniques  
@@ -730,7 +730,7 @@
 				 <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
-				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる実装方法（参考）
+				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法（参考）
         </xsl:when>
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
@@ -750,14 +750,14 @@
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
-        <p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p>
+        <p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p>(今のところ、文書化されていない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions">
-          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の実装方法（又は、実装方法の組合せ）がある。
+          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組合せ）がある。
 </p>
       </xsl:when>
     </xsl:choose>

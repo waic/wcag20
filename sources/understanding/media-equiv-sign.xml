@@ -58,7 +58,7 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.6 の実装方法及び不適合事例  － 収録済の音声コンテンツの手話通訳</head>
+<head>達成基準 1.2.6 の達成方法及び不適合事例  － 収録済の音声コンテンツの手話通訳</head>
 <div4 role="sufficient">
 <head/>
 <olist>
@@ -69,7 +69,7 @@
                 </p>
               </item-->
 	<item role="smil"><p>
-次の実装方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G81" linktype="general">プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する</loc>
+次の達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G81" linktype="general">プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する</loc>
     </p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM13" linktype="smil">SMIL 1.0 の同期したビデオ・ストリームで手話通訳を提供する</loc>
                     </p></item><item><p>
@@ -79,9 +79,9 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.6 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 1.2.6 でさらに対応が望まれる達成方法（参考）</head>
 <div5>
-<head>メタデータの実装方法</head>
+<head>メタデータの達成方法</head>
 <ulist>
 	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする（リンク追加予定）</p><ulist><item><p>事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する</p></item></ulist></item>
 </ulist>

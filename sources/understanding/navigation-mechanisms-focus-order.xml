@@ -13,7 +13,7 @@
 
 <div4 role="benefits">
 <head>達成基準 2.4.3 の具体的なメリット</head>
-<p>これらの実装方法は、コンテンツ内を順番に行き来していて、フォーカス順序が音声読み上げ順序と一致しているものと考えている、キーボードの利用者の役に立つ。</p>
+<p>これらの達成方法は、コンテンツ内を順番に行き来していて、フォーカス順序が音声読み上げ順序と一致しているものと考えている、キーボードの利用者の役に立つ。</p>
 <ulist>
 	<item><p>論理的で、使いやすいフォーカス順序は、ページの操作をキーボード使用に依存している運動障害のある利用者の役に立つ。</p></item>
 	<item><p>字を読むのが困難な障害のある利用者は、Tab キーを押下してフォーカスが予期しないどこかへ移動してしまうと、迷子のようになってしまう恐れがある。彼らは論理的なフォーカス順序の恩恵を受けている。</p></item>
@@ -38,16 +38,16 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準を満たすことのできる実装方法</head>
+<head>十分な達成方法</head>
 <div4 role="sufficient">
 <head/>
 <olist>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G59" linktype="general">コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</loc>
                 </p></item>
-	<item><p>次の実装方法の一つを用いて、コンテンツ内の順序及び関係性に従った順序でフォーカスを要素に与える：</p><ulist><item><p>
+	<item><p>次の達成方法の一つを用いて、コンテンツ内の順序及び関係性に従った順序でフォーカスを要素に与える：</p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H4" linktype="html">リンク、フォームのコントロール、及びオブジェクトには、論理的なタブ移動順序を作成する </loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH15" linktype="flash">tabIndex プロパティを使用して Flash 内の論理的な読み上げ順序及びタブ順序を指定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C27" linktype="css">DOM ツリーのノードの順序を視覚的な順序と合致させる </loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF3" linktype="pdf">PDF 文書で正しいタブ順序と読み上げ順序を確保する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL34.html" linktype="silverlight">Using the Silverlight Default Tab Sequence and Altering Tab Sequences With Properties</loc></p></item></ulist></item><item role="script"><p>次の実装方法の一つを用いて、ウェブページを動的に変化させる：</p><ulist><item><p>
+                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH15" linktype="flash">tabIndex プロパティを使用して Flash 内の論理的な読み上げ順序及びタブ順序を指定する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C27" linktype="css">DOM ツリーのノードの順序を視覚的な順序と合致させる </loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF3" linktype="pdf">PDF 文書で正しいタブ順序と読み上げ順序を確保する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL34.html" linktype="silverlight">Using the Silverlight Default Tab Sequence and Altering Tab Sequences With Properties</loc></p></item></ulist></item><item role="script"><p>次の達成方法の一つを用いて、ウェブページを動的に変化させる：</p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR26" linktype="script">動的なコンテンツをDOMのそのトリガーとなる要素の直後に挿入する (Scripting)</loc>
                     </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR37" linktype="script">デバイス非依存な方法でカスタム・ダイアログを作成する (Scripting)</loc></p></item><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR27" linktype="script">DOMを用いて、ページ上にある複数のセクションを並び替える (Scripting)</loc>
@@ -56,7 +56,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.3 でさらに対応が望まれる実装方法（参考）</head>
+<head>達成基準 2.4.3 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>キーボードフォーカスを受け取ったリンクもしくはコントロールが、強調され非常に目立つメカニズムを提供する（リンク追加予定）
                 </p></item>
