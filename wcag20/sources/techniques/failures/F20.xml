@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F20">
+   <short-name>達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+      <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、非テキストコンテンツが更新されているが、代替テキストが同時に更新されないことによる不適合事例について述べている。代替テキストの中のテキストが、情報や機能を失なわずに非テキストコンテンツの代わりとして用いることができなくなった場合は、もはや非テキストコンテンツに対する代替テキストは意味をなさなくなる。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>代替テキストが現在表示されている非テキストコンテンツとは異なるコンテンツについて説明している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている場合、代替テキストは現在のアイテムに追随していないため、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

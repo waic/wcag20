@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H83">
+   <short-name>target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する</short-name>
+   <applicability>
+      <p>HTML 4.01 Transitional 及び XHTML 1.0 Transitional</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が要求していない新しいウィンドウの出現によって、利用者が混乱するのを避けることである。利用者によっては、突然開いた新しいウィンドウによって混乱してしまったり、完全に見失ったりしてしまう場合がある。HTML 4.01 TransitionalとXHTML 1.0 Transitionalでは、新しいウィンドウを開くのに、自動ポップアップの代わりに<att>target</att>属性を用いることができる（<att>target</att>属性は、HTML 4.01 StrictとXHTML 1.0 Strictでは廃止されている）。注意すべきは、<att>target</att>属性を用いなければ、利用者が新しいウィンドウを開くべきかどうかを自分で決定できることである。<att>target</att>属性の利用によって、新しいウィンドウを開くというマシンリーダブルな指示が明確に提供される。利用者ーエージェントは、あらかじめ利用者に知らせることができ、新しいウィンドウを開かない設定にすることもできる。利用者が支援技術を利用していない場合も考えて、リンクテキストからも新しいウィンドウを開くという情報が得られるようにしておく。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>次の事例では、新しいウィンドウが開くことが示されたリンクで、<att>target</att>属性が用いられている。</p>
+</description>
+      <code role="HTML4"><![CDATA[<a href="help.html" target="_blank">ヘルプをご覧ください (新しいウィンドウが開きます)</a> ]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR24"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>新しいウィンドウが開くかどうか確認するために、ドキュメント内の各リンクを起動させる。</p>
+        </item>
+        <item>
+          <p>新しいウィンドウを開くリンクに <att>target</att>属性が指定されている。</p>
+        </item>
+        <item>
+          <p>リンクテキストには、新しいウィンドウが開くことを示す情報が含まれている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.及び 3.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

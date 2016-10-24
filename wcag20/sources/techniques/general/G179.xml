@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G179">
+   <short-name>文字サイズを変更しても、テキストコンテナの <phrase diff="chg">幅</phrase>が変更されない際に、コンテンツ又は機能が損なわれないようにする</short-name>
+   <applicability>
+      <p>ウィンドウのサイズを変更するとテキストを折り返す、全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-scale" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>利用者ーエージェントの中には、テキストコンテナの幅又は高さを変えることなく、文字サイズの変更をサポートしているものがある。コンテンツ又は機能の損失は、テキストがその割り当てられたスペースからあふれてしまう時に起こりうる。しかし、レイアウトのプロパティは、コンテンツの表示を効果的に継続する方法を提供することができる。
+                 ブロックのサイズは、200%まで変更した時に文字があふれないほどの十分な幅を定義している。
+                 文字はブロック内に入りきらない時包まり、そしてブロックは、ブロック内にすべての文字が入り続けるために十分な高さとなる。ブロックは変更された文字が入りきらない時、スクロールバーを提供する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>マルチコラムページレイアウト</head>
+      <description>
+        <p>HTMLとCSSはテキストのページのために２つのカラムのレイアウトを作るために使われている。<code>white-space</code>特性と<code>normal</code>のデフォルト値を使うことで文字を包み込んでいる。<br/>&#13;
+                       文字のサイズが200％になると、文字は再びあふれ、、テキストのカラムは長くなる。もしカラムが表示域に対して長すぎると、コンテンツ制作者が<code>overflow:scroll</code> 又は <code>overflow:auto</code>のCSSルールを指定しているため、利用者ーエージェントはスクロールバーを提供し、利用者がビューの中にテキストをスクロールすることができるようにする。</p>
+      </description>
+    </eg-group>
+    <eg-group>
+      <description><p>カラムの中でテキストブロックでレイアウトしている新聞がある。そのブロックは横幅は固定されているが、高さは指定していない。ブラウザでテキストが変更された時、文字は包まれ、ブロックは高さが高くなる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>関係するテキストとコンテナにパーセンテージとem単位を用いてサイズを指定する</head>
+      <description><p>テキストとコンテナの両方に関係する単位を使うことは、テキストに切り捨てすることなく適応させるようにコンテナを拡張することができる。
+                     この画像はインターネットエクスプローラーにおける”標準”サイズの文字である。灰色のボックスはdivのコンテナである。</p>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G179/normal.jpg" alt="スクリーンショット：標準の文字サイズ"/><p>この画像はInternet Explorerの“最大”の文字サイズを用いて同じテキストとコンテナを示している。灰色のボックスはより大きなテキストを囲むために拡張している。</p>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G179/scaled.jpg" alt="スクリーンショット：最大の文字サイズ"/></description>
+      <code><![CDATA[<style type="text/css">
+  div { background-color:#ccc; line-height:120%; position:relative; }
+  div.RelativeRelative { font-size:100%; width:8.1em; height:6.7em; }
+</style>
+
+<div class="RelativeRelative">
+  すべての善良な人々にとって彼らの国を援助するのは今だ。
+</div>]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G146"/>
+      <relatedtech idref="C28"/>
+      <relatedtech idref="SCR34"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>文字サイズが200％に拡大する。</p>
+        </item>
+        <item>
+          <p>すべてのコンテンツと機能が閲覧及び使用可能である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

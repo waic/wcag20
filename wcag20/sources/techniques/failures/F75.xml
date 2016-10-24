@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F75">
+   <short-name>達成基準 1.2.2 の不適合事例 － 同期したメディアがページ上にある情報よりも多くの情報を提示している際、キャプションなしで同期したメディアを提供している</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-captions" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、テキストの代替となる同期したメディアが、元のテキストよりも多くの情報を提供しているが、利用者が元のテキストにはない情報にアクセスするために必要な代替テキストを提供していないという不適合事例について述べている。同期したメディアのほうがテキストよりも効果的なフォーマットである利用者にとっては、テキストの代替となる同期したメディアのほうが利用しやすい。テキストの代替となる同期したメディアは、テキストの代替コンテンツなので、キャプション形式の冗長な代替テキスト、音声による説明又は全文の代替テキストをそれ自身のために用意する必要はない。その元となるテキストよりも多くの情報を同期したメディアが含んでいる場合は、単なるテキストの代替メディアというよりは、それ自体が同期したメディアのコンテンツとなる。こういった場合、キャプションの提供に関しては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#media-equiv-captions" linktype="guideline">達成基準 1.2.2</loc>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#media-equiv-audio-desc" linktype="guideline">達成基準 1.2.3</loc>の要件に従うものとする。</p>
+  </description>
+   <examples/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>同期したメディアに対する代替コンテンツとしてキャプションがある。</p>
+        </item>
+        <item><p>テキストの代替となる同期したメディアは、ページ上にある元のテキストよりも多くの情報を提供していない。</p>
+                
+                        <note><p class="prefix">テキストの代替となる同期したメディアでは、ページ上にあるのとは別の言葉を用いている場合がよくあるが、そのページのトピックについて新しい情報を提示するべきではない。</p></note></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たさない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

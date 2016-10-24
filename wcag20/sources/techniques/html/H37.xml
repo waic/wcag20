@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H37">
+   <short-name><el>img</el> 要素の <att>alt</att> 属性を用いる</short-name>
+   <applicability>
+      <p>HTMLドキュメントで用いられている画像</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p><el>img</el>要素を使用するときは、簡潔な代替テキストを<att>alt</att>属性に指定する。<br/>注記：この属性の値は「ALTテキスト」ともいう。</p>
+    <p>画像がコンテンツを理解するために重要な文字を含むとき、代替テキストにはそれらの文字を含めなくてはならない。これにより、代替テキストはページ上で画像と同じ役割を果たすことができる。 代替テキストは、画像自体の視覚的な特徴を説明する必要はないが、画像と同じ意味を伝えなければらないことに注意する。</p>
+  </description>
+   <examples>
+      <eg-group id="img-alt_example">
+      <description><p>ウェブサイト上にある画像は、無料のニュースレターへのリンクである。画像は次のような文字を含んでいる：「無料のニュースレター：無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら」　画像の代替テキストは、画像にある文字と一致している。</p>
+</description>
+      <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="無料のニュースレター：
+無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら" />]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>ウェブサイト上にある画像は、ビルの間取り図を表現している。その画像は、各部屋の部分がインタラクティブに操作できるイメージマップである。代替テキストは「ビルの間取り図。各部屋の目的又は内容に関する詳しい情報は、部屋を選択してください」である。 「部屋を選択してください」という指示により、画像がインタラクティブであることを示している。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <p>
+							     <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://www.w3.org/TR/html401/struct/objects.html#edef-IMG">HTML 4.01 IMG
+                element</loc>
+						   </p>
+      </see-also>
+      <see-also>
+         <p>
+							     <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://www.w3.org/TR/html401/struct/objects.html#adef-alt">HTML 4.01 alt
+                attribute</loc>
+						   </p>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G82"/>
+      <relatedtech idref="H2"/>
+      <relatedtech idref="H24"/>
+      <relatedtech idref="H30"/>
+      <relatedtech idref="H45"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツに含まれる <el>img</el> 要素それぞれを調べる。</p>
+        </item>
+        <item>
+          <p>意味を伝える <el>img</el> 要素それぞれが、<att>alt</att> 属性を含んでいる。</p>
+        </item>
+        <item>
+          <p>画像にコンテンツを理解するために重要な文字が含まれている場合、その文字が代替テキストに記述されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>2.及び3.を満たしている。</p>
+      </expected-results>
+   </tests>
+</technique>

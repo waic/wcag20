@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G111">
+   <short-name>色とパターンを併用する</short-name>
+   <applicability>
+      <p>画像をサポートするウェブコンテンツ技術全て</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、非テキストコンテンツの中で情報を伝達するために色の違いを用いている場合に、色に依存することなく同じ情報を伝達するためにパターン（模様）を併用することである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>不動産会社のサイトに、米国のいくつかの地域における平均住宅価格の棒グラフがある。それぞれの地域を表す棒は、異なる色とパターンになっている。色とパターンの色とのコントラスト比は十分にあり、達成基準1.4.1を満たしている。凡例にもそれぞれの棒が識別できるように、同じ色とパターンが使用されている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>交通システムのオンライン地図には路線が色分けされている。それぞれの路線上の停車場は菱形、正方形又は円など、区別しやすいアイコンになっており、路線を区別しやすくしている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>プロセスを完了するまでのインタラクティブな一連の手順を示すフローチャートがある。フローチャートでは、緑色の背景に破線の矢印で条件を満たした場合に進む次のステップを示しており、赤の背景に点線の矢印で条件を満たしていない場合に進む次のステップを示している。線と背景色には達成基準1.4.1を満たす十分なコントラストがある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>コンテンツにはインタラクティブなゲームがある。4人分のゲームのコマは、色とパターンの両方を使っておりそれぞれ識別できるようになっている。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G14"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>ウェブページ上にある情報を伝達するために色の違いを用いている画像に対して：</p>
+      <olist>
+        <item>
+          <p>色を用いて伝達されている情報の全てに、色に依存しないパターンも併用している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

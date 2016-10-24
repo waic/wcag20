@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G195">
+   <short-name>コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを用いる</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-visible" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、視認性に優れたフォーカスを作ることによりブラウザのフォーカスインジケータを強調することである。多くのブラウザにおける初期値
+のフォーカスインジケータは、細いドットの黒い線になっている。アウトラインを既に持っているようなフォーム要素を囲っている場合、テーブルセルの中にフォーカス要素が入っている場合、フォーカスされた要素がとても小さい場合、もしくはページの背景の色が濃い色の場合は、そのフォーカスを見ることが困難である。</p>
+    <p>この達成方法において、利用者がマウス、タブキー、矢印キー、キーボードのショートカット、もしくは他の方法を用いて要素にフォーカスを置いている時、アプリケーションは高いコントラスト比を持った色、太字、そして光を放つような視覚的インジケータを用いることによってフォーカスをより視認性のあるものにしている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>リンク</head>
+      <description><p>濃い背景色と明るい文字とリンクを持つウェブページがある。フォーカスがリンクにあたると、そのリンクは3ピクセルの明るい黄色のラインで囲まれる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>フォーム要素</head>
+      <description><p>テーブルの中にフォームが書かれているウェブページがある。テーブルとフォームの要素の両方の境界は細くて黒い線になっている。フォーカスがフォーム要素に当たる時、その要素は部分的に透明になっている5ピクセルの赤い線で囲まれる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>メニュー</head>
+      <description><p>サブメニューを持ったインタラクティブなメニューを含んだウェブページがある。利用者は矢印キーを使ってメニューの中でフォーカスを動かすことができる。フォーカスが動くと、フォーカスが当たっているメニュー項目はその背景を異なる色に変える。その色は周りの項目に対して3:1のコントラスト比を持ち、そのメニューのテキストの色と4.5:1のコントラスト比を持っている。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G149"/>
+      <relatedtech idref="G165"/>
+      <relatedtech idref="C15"/>
+      <relatedtech idref="SCR31"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>マウスを用いてページ上のそれぞれのフォーカスできる利用者インターフェース要素にフォーカスを置く。</p>
+        </item>
+        <item>
+          <p>視認性に優れたフォーカスインジケータがある。</p>
+        </item>
+        <item>
+          <p>キーボードを用いてページ上のそれぞれのフォーカスできる利用者インターフェース要素にフォーカスを置く。</p>
+        </item>
+        <item>
+          <p>視認性に優れたフォーカスインジケータがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び 4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

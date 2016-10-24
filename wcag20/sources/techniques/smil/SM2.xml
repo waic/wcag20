@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SM2">
+   <short-name>SMIL 2.0で拡張した音声ガイドを追加する</short-name>
+   <applicability>
+      <p>SMIL 2.0 プレーヤーが利用可能な場合</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-extended-ad" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声ガイドを、視聴覚素材に付加することである。</p>
+    <p>SMIL 2.0では、特定の音声ファイルを特定のタイミングで再生するよう指定し、音声ファイルが再生される間は、画面が表示されたまま一時停止できる。</p>
+    <p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声ガイドが提供される。そして、音声ガイドが終了すると、映像の再生は自動的に再開する。</p>
+    <p>この拡張した音声ガイドのオン／オフを操作するには、スクリプトを使用して、拡張した音声ガイドを含んだSMILスクリプト及び含まないSMILスクリプトの2つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張した音声ガイドをSMILファイルに追加したりSMILファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p>
+    <p>スクリプトが使用できない場合は、2つのバージョンの映像を提供することによって可能となる。つまり、1つは拡張した音声ガイドを含んだバージョン、もう1つは含まないバージョンを提供するのである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>拡張した音声ガイドのある映像</head>
+      <code><![CDATA[
+<smil xmlns="//www.w3.org/2001/SMIL20/Language"> 
+<head> 
+<layout> 
+<root-layout backgroundColor="black" height="266" width="320"/> 
+<region id="video" backgroundColor="black" top="26" left="0" 
+height="144" width="320"/> 
+</layout> 
+</head> 
+<body>	 
+<excl> 
+<priorityClass peers="pause"> 
+<video src="movie.rm" region="video" title="video" alt="video" /> 
+<audio src="desc1.rm" begin="12.85s" alt="Description 1" /> 
+<audio src="desc2.rm" begin="33.71s" alt="Description 2" /> 
+<audio src="desc3.rm" begin="42.65s" alt="Description 3" /> 
+<audio src="desc4.rm" begin="59.80s" alt="Description 4" /> 
+</priorityClass> 
+</excl> 
+</body> 
+     </smil>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia
+                                        Integration Language (SMIL 2.0)</loc>
+								       </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL-access/">Accessibility
+                                        Features of SMIL</loc>
+								       </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL
+                                    Templates</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G81"/>
+      <relatedtech idref="SM7"/>
+      <relatedtech idref="SM11"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>拡張した音声ガイドのあるファイルを再生する。</p>
+        </item>
+        <item>
+          <p>映像がところどころ一時停止して、拡張した音声ガイドが再生される。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

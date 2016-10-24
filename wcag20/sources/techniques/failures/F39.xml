@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F39">
+   <short-name>達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+   </applies-to>
+   <description>
+    <div class="annotation">
+		<p><strong>日本語訳における注記：</strong></p>
+		<p>この文書（F39）は、W3Cサイトで公開されている英語の文書の日本語訳ですが、内容がF38と全く同じです。F39が文書化されていないのではないか（F38をコピーしただけではないか）と考えられ、WCAGワーキンググループに確認中です。</p>
+</div>
+    <p>この文書は、支援技術によって無視されなければならない画像の代替テキストに対する不適合事例について述べている。alt属性が全くない場合、支援技術は非テキストコンテンツを無視することができない。この達成基準の不適合とならないように、alt属性を検証し、空（alt ="" 又は alt =" "）にしなければならない。</p>
+    <note>
+      <p class="prefix"><code>alt=" "</code>でも有効だが、<code>alt=""</code>とすることを推奨する。</p>
+    </note>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>純粋に装飾目的のコンテンツとして使用されている<el>img</el>要素及び<el>applet</el>要素を特定する。</p>
+        </item>
+        <item>
+          <p>これらの要素に対する<att>alt</att>属性が存在する。</p>
+        </item>
+        <item>
+          <p>これらの要素に対する<att>alt</att>の値が空である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.又は3.を満たさない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

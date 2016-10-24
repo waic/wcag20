@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR24">
+   <short-name>プログレッシブ・エンハンスメントを用いて、利用者の要求に応じて新しいウィンドウを開く</short-name>
+   <applicability>
+      <p>HTML 4.01 及び XHTML 1.0 </p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が要求していない新しいウィンドウの出現によって引き起こされうる混乱を回避することである。突然新しいウィンドウが開くと、利用者は混乱したり、そのことに気づかなかったりする。文書型が<att>target</att>属性を認めていない場合（HTML 4.01 Strict や XHTML 1.0 Strict には存在しない）、又はコンテンツ制作者が<att>target</att>属性の使用を好まない場合には、ECMAScriptを用いて新しいウィンドウを開くことができる。以下にある事例は、スクリプトを用いて新しいウィンドウを開く方法を示している。その事例では、リンク（<el>a</el>要素）にイベントハンドラを追加して、利用者にリンク先のコンテンツが新しいウィンドウで開くことを事前に知らせている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>マークアップ：</p>
+<p>スクリプトはドキュメントの<code>head</code>要素内に組み込まれており、リンクにはスクリプトのフックとなる<code>id</code>属性がある。</p>
+</description>
+      <code><![CDATA[
+<script type="text/javascript" src="popup.js"></script>
+…
+<a href="help.html" id="newwin">ヘルプを表示</a>]]></code>
+      <description><p>スクリプト：</p>
+</description>
+      <code><![CDATA[
+// ブラウザによるイベント登録のサポートは不十分だが
+// 従来のイベントモデルを用いる
+window.onload = addHandlers;
+
+function addHandlers()
+{
+  var objAnchor = document.getElementById('newwin');
+
+  if (objAnchor)
+  {
+    objAnchor.firstChild.data = objAnchor.firstChild.data + ' (新しいウィンドウで開く)';
+    objAnchor.onclick = function(event){return launchWindow(this, event);}
+    // UAAG では利用者ーエージェントにデバイス非依存な方法でイベントを処理することを
+    // 要求しているが、そうしないブラウザが多いのでキーボードイベントを追加する
+    objAnchor.onkeypress = function(event){return launchWindow(this, event);}
+  }
+}
+
+function launchWindow(objAnchor, objEvent)
+{
+  var iKeyCode, bSuccess=false;
+
+  // キーボードからのイベントである場合、利用者ーがリンクをリクエストしたときだけ
+  // 新しいウィンドウを開くようにする（リターン又はスペース）
+  if (objEvent &amp;&amp; objEvent.type == 'keypress')
+  {
+    if (objEvent.keyCode)
+      iKeyCode = objEvent.keyCode;
+    else if (objEvent.which)
+      iKeyCode = objEvent.which;
+
+    // キャリッジ・リターン又はスペースではない場合、利用者ーエージェントが
+    // アクションの処理を継続するようにtrueを返す
+    if (iKeyCode != 13 &amp;&amp; iKeyCode != 32)
+      return true;
+  }
+
+  bSuccess = window.open(objAnchor.href);
+
+  // ウィンドウが開かなかった場合、ブラウザには同じウィンドウで開くという
+  // デフォルトのアクションを継続させる
+  if (!bSuccess)
+    return true;
+
+  // ウィンドウが開いたら、ブラウザによる処理をそこで止める
+  return false;
+} ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://en.wikipedia.org/wiki/Progressive_enhancement">Wikipedia: Progressive Enhancement</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H83"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ドキュメントにあるリンクを起動して、新しいウィンドウが開くかどうかをチェックする。</p>
+        </item>
+        <item><p>新しいウィンドウを開くリンクが、次の全てをスクリプトを用いて実装されている：</p>
+				<olist><item><p>リンクが新しいウィンドウを開くことを明示している</p></item><item><p>デバイス非依存のイベントハンドラを用いている</p></item><item><p>新しいウィンドウを開けない場合には、ブラウザが同じウィンドウにリンク先のコンテンツを開くようにしている</p></item></olist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G123">
+   <short-name>繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</short-name>
+   <applicability>
+      <p>リンクを実装できる全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ブロックの終わりまで飛び越えることで、構成要素のブロックを回避するメカニズムを提供することである。ブロックの最初のリンク又はブロックの直前にあるリンクによって、フォーカスをそのブロックの直後にあるコンテンツに遷移させる。リンクを選択することでキーボードフォーカスはブロックを飛ばして進んでいく。複数のブロックを飛び越える場合は、利用者はこれらのリンクを使ってブロックを一つずつスキップしていく。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>ナビゲーションリンクをスキップする</head>
+      <description><p>ある組織のウェブサイトのページには、サイトの主なセクション、サイトマップ、組織についての情報、及び組織との連絡方法へのリンクを含むナビゲーションバー又はメインメニューがある。このエリアの最初のリンクは「ナビゲーションリンクをスキップする」で、利用者はそのリンクを選択してこれらのリンクをスキップする。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>本の索引</head>
+      <description><p>本の中に何ページかのセットになって区分されている索引がある。索引のそれぞれのページの冒頭にあるコンテンツの中には、アルファベットのそれぞれの文字に対するリンクがあり、その文字で始まる記載内容の索引にリンクしている。そのセットの中の最初のリンクは「リンクをスキップして索引へ」である。利用者は、このリンクを選択して他のリンクをスキップする。 </p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>複数のリンクの集合</head>
+      <description><p>ウェブサイト内の全てのページにはサイトマップ、組織に関する情報、及び組織との連絡方法へのリンクが含まれているセクションがある。サイトにある各セクションの全てのページには、同様にその下位の区分へのリンクの集合がある。1番目のブロックの最初のリンクは「ナビゲーション・リンクをスキップ」で、最初のリンクの集合をスキップする。2番目のブロックの最初のリンクは「セクションのリンクをスキップ」で、そのサブセクションのリンクをスキップする。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>ナビゲーション・リンクのブロックが複数あるHTMLページ</head>
+      <description><p>この事例では、各セクションの冒頭の見出し要素（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H69.html">達成方法 H69</loc>）、及びそれぞれのセクションの最後までスキップするリンクの両方が用いられている。利用する利用者ーエージェントの能力に依存するが、これによってキーボード・ナビゲーション又は見出しナビゲーションを用いて、繰り返されるコンテンツのブロックをスキップすることができる。
+              </p>
+</description>
+      <code/>
+      <description><p>CSS：</p>
+</description>
+      <code/>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.jimthatcher.com/skipnav.htm">Skip Navigation Links</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G1"/>
+      <relatedtech idref="G124"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>リンクが、繰り返されるコンテンツのブロックの前にある最後のフォーカス可能なコントロールである、又はブロック内の最初のリンクである。</p>
+        </item>
+        <item>
+          <p>リンクテキストがブロックをスキップすることを伝えている。</p>
+        </item>
+        <item>
+          <p>リンクは常に表示されている、又はキーボード・フォーカスを受け取ったときに表示される。
+                </p>
+        </item>
+        <item>
+          <p>リンクを選択すると、そのブロックの直後のコンテンツにフォーカスが移動する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

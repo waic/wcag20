@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="media-equiv-real-time-captions">
+   <head>1.2.4</head>
+   <div3 role="intent">
+     <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、デフ又は音声が聞こえにくい利用者が<emph role="bolditalic">リアルタイム</emph>のプレゼンテーションを見られるようにすることである。キャプションは、コンテンツの中で音声トラックを通じて提示されている部分の代替を提供するものである。キャプションには、発話の内容だけを含むのではなく、誰が話しているのかも示し、また、意味のある効果音やその他の重要な音声も含める。 </p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>デフ又は音声の聞こえづらい利用者が、同期したメディアのコンテンツにある音声情報を、キャプションを通じて入手することができるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">ウェブキャスト</emph>
+              </p><p>ニュースの配信者が、ライブのウェブキャストでキャプションを提供している。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><specref ref="media-equiv-captions"/>を参照のこと。</p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.2.4 の達成方法及び不適合事例  － ライブの音声コンテンツのキャプション</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G9" linktype="general">ライブの同期したメディアのキャプションを作成する</loc>
+                  、<emph role="bold">かつ</emph>、
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G93" linktype="general">オープン・キャプション（常に表示）を提供する</loc>
+                </p></item>
+	<item><p>
+クローズド・キャプションをサポートするビデオ・プレーヤーのある、すぐに利用可能なメディア・フォーマットを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G9" linktype="general">ライブの同期したメディアのキャプションを作成する</loc>
+                  、<emph role="bold">かつ</emph>、
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
+                </p></item>
+	<item role="smil"><p>
+次のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G9" linktype="general">ライブの同期したメディアのキャプションを作成する</loc>
+                  、<emph role="bold">かつ</emph>、
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>：</p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM11" linktype="smil">SMIL 1.0 の同期したテキスト・ストリームでキャプションを提供する</loc>
+                    </p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM12" linktype="smil">SMIL 2.0 の同期したテキスト・ストリームでキャプションを提供する</loc>
+                    </p></item></ulist></item></olist>
+
+<note>
+<p>キャプションは、リアルタイムのテキスト変換サービスを用いて生成できるかもしれない。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.2.4 でさらに対応が望まれる達成方法（参考）</head>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

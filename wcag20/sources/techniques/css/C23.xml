@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C23">
+   <short-name>メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</short-name>
+   <applicability>
+      <p>CSSを用いているウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="general" version="">
+      <p>
+ほとんどのブラウザでは、ウェブページのCSS及びHTMLによる配色を、利用者が設定画面で上書きして変更できるようになっている。
+これに関しては、すべてのバージョンのInternet ExplorerとFirefox、Mozilla、Netscape、バージョン6以降のOperaが対応している。</p>
+    </ua-issue>
+    <ua-issue name="firefox" version="all">
+      <p>
+Firefox及びNetscapeで元々指定されている色が上書きされた場合、ほとんどのJavaScriptのポップアップ・ボックスとドロップダウン・メニューは使用できない状態になる。
+ポップアップ・ボックスは背景が透過して、ページ上のテキストの上にボックスのテキストが重なり、ドロップダウン・メニューは透過するかダークグレーの背景となる。
+</p>
+    </ua-issue>
+    <ua-issue name="IE" version="6">
+      <p>
+Internet Explorer 6 は、システム設定で同じ色が選択されない限り背景色を上書きしない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>ウェブページの中には、色を用いてコンテンツをグループ分けをしているものもある。
+この達成方法の目的は、ウェブページの構成やグループ分けを示す視覚的な情報を残しつつも、メインコンテンツ部分においては特定の文字色と背景色の組み合わせを利用者が選択できるようにすることである。
+利用者がページ上のすべてのテキストの文字色と背景色を上書きした場合、ウェブページの構成とグループ分けに関する情報は失われる可能性があり、そうなるとそのページを利用することも理解することも難しくなる。</p>
+    <p>コンテンツ制作者がメインコンテンツ部分の文字色と背景色を指定しなければ、利用者ースタイルシートを使うことなしに、ブラウザでそれらの色を変更することが可能になる。
+主要コンテンツ以外に対して文字色と背景色を指定するということは、ブラウザはそれらの色を変更しないことを意味する。</p>
+    <p>この達成方法を使うということは、コンテンツ制作者はメインコンテンツの領域に対してデフォルトの文字色と背景色の組み合わせを使うことになる。
+結果として、配色は利用者の好みの色に設定した利用者ーエージェントによって全面的に決められる。
+つまり、利用者のニーズに最も合う色の選択となり、利用者にとって最も読みやすい配色となる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>
+あるHTMLのウェブページでは、ナビゲーションバー、メニューバー及び目次のような主要ではないコンテンツに対して、テキストと背景の色を指定するためにCSSを使用している。
+しかし、メイン・コンテンツ部分に対しては、テキストにも背景にも色は指定していない。
+利用者は、自分に合った色とコントラストでメイン・コンテンツを閲覧するために、ブラウザで自分好みの色を設定する。
+ページの個々のセクションは、それでもなお視覚的にはっきり区別できる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>
+ある音楽雑誌のサイトには、白い背景に青い文字の記事がある。
+そのサイトのページの先頭近くでは、そのページに対して異なるスタイルシートを適用するリンクを提供している。
+新しいスタイルシートでは、テキストや背景に対しては色を指定していない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+          <p diff="del">BBC's Web page with instructions how to change the browser colors in most browsers</p>
+        </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G148"/>
+      <relatedtech idref="G156"/>
+      <relatedtech idref="G175"/>
+      <relatedtech idref="C25"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>テキスト、リンク及び背景の色が、デフォルトの色とも、メインではないコンテンツに指定されている色とも異なるように、ブラウザの設定を変える。</p>
+                        <note><p class="prefix"><em>注：ブラウザがそのページに指定されている色を無視するような設定にはしないこと。</em></p></note></item>
+        <item>
+          <p>メインコンテンツのテキスト、リンク及び背景が、設定した色に変わる。</p>
+        </item>
+        <item>
+          <p>メインではないコンテンツのテキスト、リンク及び背景の色は変わらない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び 3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

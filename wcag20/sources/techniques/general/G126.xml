@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G126">
+   <short-name>他の全てのウェブページへのリンク一覧を提供する</short-name>
+   <applicability>
+      <p>リンク機能を提供する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、個々のウェブページを一組として全てのウェブページへのリンク一覧を提供することである。達成基準 2.4.5 を実装するのに十分なコンテンツを配置するための一連の達成方法の一つである。この達成方法は、小規模なウェブページに対してのみ効果がある; リンク一覧がウェブページ内の残りのコンテンツより長い場合、利用者がウェブページを理解して使うことをより困難にするかもしれないからである。</p>
+    <note><p class="prefix">達成基準 2.4.1 は、このリンクの一覧をスキップするための達成方法を要求している。</p>
+	</note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>家族のウェブサイトには、家族の構成員全てのウェブサイト（サブサイト）がある。個々のページには、他の家族構成員のウェブサイトへのリンク一覧がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>電子ブックでは、各章が別々のウェブページに分けられている。個々のウェブページは、本の中の全ての章へのリンクを含む小さな目次で始まる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G1"/>
+      <relatedtech idref="G63"/>
+      <relatedtech idref="G64"/>
+      <relatedtech idref="G123"/>
+      <relatedtech idref="G125"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>個々のウェブページに、サイト内の他のウェブページへのリンク一覧がある。</p>
+        </item>
+        <item>
+          <p>一覧内のリンクが対応するウェブページにリンクしている。</p>
+        </item>
+        <item>
+          <p>一覧には、サイト内の全てのウェブページに対するリンクがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

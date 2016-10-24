@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H30">
+   <short-name>a 要素のリンクの目的を説明するリンクテキストを提供する</short-name>
+   <applicability>
+      <p>リンク(&lt;a href&gt; 要素)を含むHTML及びXHTMLドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+    <description>
+    <p>この達成方法の目的は、リンク先を説明するテキストを<el>a</el>要素のコンテンツとして提供することにより、リンクの目的を説明することである。
+その説明により、利用者はこのリンクとウェブページ内にある他のリンクとの違いが区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。
+一般的に、遷移先のURIでは、そのリンクの目的を説明したことにはならない。</p>
+    <p>画像がリンクの唯一のコンテンツであるとき、画像の代替テキストがそのリンクに固有の機能を説明している。</p>
+    <p>リンクのコンテンツがテキスト及び一つ又はそれ以上の画像を含むとき、テキストがリンクの目的を十分に説明しているならば、画像の代替テキストは空にする。(<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="techniques">支援技術が無視すべき画像の img 要素で、alt 属性値を空にして、title 属性を付与しない</loc>(HTML)を参照。) 
+画像がリンクの目的以外にも情報を伝えるときには、画像に適切な代替テキストも付与しなければならない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p><el>a</el> HTMLにおいて、<el>a</el>要素のテキストコンテンツを用いてリンクの目的を説明する。</p>
+</description>
+      <code role="html401"><![CDATA[<a href="routes.html">
+  ボールダーズクライミングジムでの現状のルート
+</a>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>画像のリンクの目的を説明するために、<el>img</el> 要素に <att>alt</att> 属性を使用する。</p>
+</description>
+      <code role="html401"><![CDATA[<a href="routes.html">
+   <img src="topo.gif" alt="ボールダーズクライミングジムでの現状のルート" />
+</a>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>アンカー (<el>a</el>) 要素が <el>img</el> 要素に加えてリンクの目的を説明するテキストを含むときは、空の<att>alt</att>属性を使用する。
+リンクテキストはページ上で画像の隣りに表示されることに注意する。</p>
+</description>
+      <code role="html401"><![CDATA[<a href="routes.html">
+  <img src="topo.gif" alt="" />
+  ボールダーズクライミングジムでの現状のルート
+</a>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>リンクがアイコンとテキストを含み、サイトのヘルプはアイコンを参照する。
+<el>img</el> はサイトのヘルプのアイコンで使用する名前の代替テキストを持つ、
+それはHOMEページのアイコンをクリックすることを説明している。【訳注：あまり適切な例ではないので、WCAGワーキンググループに改善提案中】</p>
+</description>
+      <code role="html401"><![CDATA[<a href="foo.htm">
+<img src="house.gif" alt="アイコン"/>
+HOMEページ
+</a>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>リンクはテキスト及びアイコンを含み、アイコンはリンク先についての追加情報を提供している。</p>
+</description>
+      <code role="html401"><![CDATA[<a href="WMFP.pdf">
+ウッドエンドミュージックフェスティバルのプログラム
+<img src="pdficon.gif" alt="PDFファイル"/>
+</a>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 -
+                    how to specify alt text</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <!--<relatedtech idref="C7"/>-->
+      <relatedtech idref="H2"/>
+      <relatedtech idref="H24"/>
+      <relatedtech idref="H67"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>この達成方法を使用したコンテンツのそれぞれのリンクに対して：</p>
+      <olist>
+        <item>
+          <p>テキスト又は非テキストコンテンツの代替テキストが <el>a</el> 要素に含まれている。</p>
+        </item>
+        <item>
+          <p><el>img</el> 要素だけが <el>a</el> 要素のコンテンツである場合、<el>img</el>要素の代替テキストがリンクの目的を説明している。</p>
+        </item>
+        <item>
+          <p><el>a</el> 要素が一つ又はそれ以上の <el>img</el> 要素を含み、<el>img</el> 要素の代替テキストが
+空の場合、リンクのテキストがリンクの目的を説明している。</p>
+        </item>
+        <item>
+          <p><el>a</el> 要素がテキストのみを含んでいる場合、テキストがリンクの目的を説明している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記のすべてを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

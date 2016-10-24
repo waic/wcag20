@@ -20,7 +20,7 @@ before_script:
   - git config --global user.name "MINAZUKI, Bakera"
   
 script:
-  - ant -f build.xml -lib saxon9he.jar gh-pages
+  - ant -f wcag20/build.xml -lib saxon9he.jar gh-pages
   
 after_success:
   - cd ..

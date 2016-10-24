@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="content-structure-separation-programmatic" role="extsrc">
+   <head>1.3.1</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、視覚的又は聴覚的な体裁によって暗に伝えられている情報及び関係性を、その表現形式が変わったときにも保つようにすることである。例えば、コンテンツがスクリーンリーダーによって読み上げられたり、コンテンツ制作者が提供するスタイルシートが利用者ー・スタイルシートに置き換えられたりしたときには、表現形式が変わる。</p>
+<p>画面を見ている利用者は、様々な視覚的な手がかりによって構造を知覚する。例えば、見出しは大きめで太字のフォントで、次の段落とはスペースを空けて表示されていることがほとんどである。リスト項目は、その先頭に中黒等があって、字下げされていることが多い。段落と段落の間にはスペースがある。共通の特徴を有する条項は、表の行と列で整理されている。フォームの複数のテキストフィールドは、テキストのラベルを共有するグループとして配置されていることがある。異なる背景色を用いて、いくつかのアイテムが互いに関係のあることを示していることもある。特別な意味を持つ語句は、フォントの種類を変えたり、イタリック、下線付きにすることによって示されているなどである。</p>
+<p>同様に、聴覚的な手がかりを用いることもある。例えば、チャイム音が新しい節の開始位置を示している。声のピッチや発話のスピードを変えて、重要な情報を強調したり、引用されたテキストを示したりしている、など。</p>
+<p>そういった関係性が、ある利用者にとって知覚可能であれば、その関係性をすべての利用者が知覚できるようにすることが可能である。情報をすべての利用者にきちんと提供できたかどうかを判断する一つの方法は、その情報に様々な感覚モダリティで連続してアクセスしてみることである。</p>
+<p>用語集にある用語へのリンクを a 要素（又は、使用している技術特有のリンク要素）を用いて実装して、異なるフォントで示していれば、スクリーンリーダーの利用者は、用語集にある用語のところで、たとえフォントの違いに関する情報は受け取れなかったとしても、それがリンクであることが音声読み上げを聞けば分かるだろう。あるオンラインカタログの価格表示では赤い大きなフォントを使用している。スクリーンリーダーの利用者は赤色の情報は得られないが、価格の前に通貨表示を記載することで情報を得ることができる。</p>
+<p>ウェブコンテンツ技術の中には、ある種の情報及び関係性をプログラムで解釈する手段を提供していないものがある。そういった場合には、その情報及び関係性を説明するテキストを提供すべきである。例えば、「アスタリスク (*) のある項目はすべて必須項目です。」のように説明テキストを提供する。テキストによる説明は、例えば、その親要素又は隣接する要素内などのように、（そのページをリニアライズした際に）テキストが説明している情報の近くに置くべきである。</p>
+<p>また、場合によっては、どんな情報をテキストで示すべきで、何を直接関連付ける必要があるのかは各自の判断に委ねるしかないこともある。しかし、できる限り、テキストによる説明を提供するのではなく、その情報をプログラムが解釈できるようにしなければならない。</p>
+
+<note>
+<p>色の値がプログラムが解釈可能であることは要求していない。色によって伝えられる情報は、その値を明らかにするだけでは、十分に提示することができないからである。そのため、色に特有の問題については、達成基準 1.3.1 ではなく、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="visual-audio-contrast-without-color" linktype="guideline">達成基準 1.4.1</loc>で対処している。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 1.3.1 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、利用者ーエージェントが個々の利用者のニーズに応じてコンテンツに適応できるようにすることによって、様々な障害のある利用者の役に立つ。
+              </p></item>
+	<item><p>全盲の（スクリーンリーダーを使用している）利用者が、色を用いて伝えられている情報をテキストでも得られるようになる（色を用いて情報を伝えている画像の代替テキストを含む）。</p></item>
+	<item><p>点字ピンディスプレイを使用している盲ろうの利用者は、色に依存した情報を利用できないことがある。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.3.1 の事例</head>
+<ulist>
+	<item><p>
+                <emph role="bold">
+必須項目のある入力フォーム
+                </emph>
+              </p><p>
+入力フォームに、いくつかの必須項目がある。必須項目のラベルを、赤で表示している。さらに、各ラベルの最後には、アスタリスクの記号文字 (*) が付いている。フォームへの入力に関する説明文には、「すべての必須項目は赤字で示してあり、アスタリスク (*) が付いています。」と書かれていて、例が後に続いている。 
+                
+              </p></item>
+	<item><p>
+                <emph role="bold">必須項目を示すために色とテキストを用いている入力フォーム</emph>
+              </p><p>入力フォームに、必須項目と任意項目の両方がある。入力フォームの先頭にある説明文には、必須項目のラベルが赤字になっていて、「必須」という代替テキストのあるアイコンも付いている。赤字とアイコンの両方が、フォームのテキストフィールドとプログラムで関連付けられているので、支援技術の利用者はどれが必須項目なのかが判断できる。
+              </p></item>
+	<item><p>
+                <emph role="bold">各セルの見出しをプログラムが解釈可能なバスの時刻表テーブル</emph>
+              </p><p>バスの運行スケジュールが、1列目には縦にバス停の名前が並び、1行目には横に異なるバスが並んでいる表で示されている。各セルには、バスがそのバス停に到着する時刻が書かれている。支援技術が、各セルにある時刻がどのバスとどのバス停とに関連付けられているのかを解釈することができるように、各バス停と各バスのセルは、それぞれの対応する行又は列の見出しとして示されている。
+              </p></item>
+	<item><p>
+                <emph role="bold">チェックボックスのラベルをプログラムが解釈可能な入力フォーム</emph>
+              </p><p>あるフォームでは、各チェックボックスに対するラベルが、支援技術によってプログラムが解釈可能になっている。
+              </p></item>
+	<item><p>
+                <emph role="bold">テキスト文書</emph>
+              </p><p>構造をプログラムが解釈できるように、シンプルなテキスト文書は、タイトルの前に2行の空行があり、アスタリスクを使ってリスト項目を示し、その他の標準的な書式の決まりに従ってフォーマットされている。
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.3.1 の達成方法及び不適合事例 － 情報及び関係性</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供している場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G115" linktype="general">セマンティックな要素を用いて、構造をマークアップする</loc>
+                    、<emph role="bold">かつ</emph>、
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H49" linktype="html">セマンティックなマークアップを用いて、強調したテキスト又は特別なテキストを示す</loc>  
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G117" linktype="general">テキストを用いて、テキストの表現のバリエーションによって伝えている情報を伝達する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G140" linktype="general">情報と構造を表現から分離して、異なる表現を可能にする</loc> 
+                  </p></item>
+	<item><p>次の達成方法を用いて、表現によって伝えられている情報及び関係性をプログラムが解釈できるようにする</p><ulist><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G138" linktype="general">色の手がかりを用いる際は、必ずセマンティックなマークアップを用いる</loc>
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H51" linktype="html">テーブルのマークアップを用いて、表の情報を提示する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF6" linktype="pdf">PDF 文書でテーブルのマークアップにテーブルエレメントを使用する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF20" linktype="pdf">Adobe Acrobat Pro のテーブルエディタを使用して、間違ってタグ付けされているテーブルを修復する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H39" linktype="html">caption 要素を用いて、データテーブルの表題とデータテーブルを関連付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH31" linktype="flash">データグリッドの表題を指定する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H73" linktype="html">table 要素の summary 属性を用いて、データテーブルの概要を提供する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH23" linktype="flash">データグリッドに要約を追加する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H63" linktype="html">scope 属性を用いて、データテーブルの見出しセルとデータセルを関連付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H43" linktype="html">id 属性及び headers 属性を用いて、データテーブルのデータセルを見出しセルと関連付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html">label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10" linktype="pdf">PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF12" linktype="pdf">PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash">自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash">フォーム・コンポーネントに label プロパティを設定する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH25" linktype="flash">アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H71" linktype="html">fieldset 要素及び legend 要素を用いて、フォーム・コントロールのグループに関する説明を提供する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL20.html" linktype="silverlight">Relying on Silverlight AutomationPeer Behavior to Set </loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL26.html" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc>  
+                      </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H85" linktype="html">optgroup 要素を用いて、select 要素内の option 要素をグループ化する</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H48" linktype="html">リストに、ol 要素、ul 要素、dl 要素を用いる</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H42" linktype="html">h1要素～h6要素を用いて、見出しを特定する</loc>   
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF9" linktype="pdf">PDF 文書内のコンテンツを見出しタグでマークアップすることによって見出しを作成する</loc>   
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR21" linktype="script">DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する</loc>
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF11" linktype="pdf">PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</loc>   
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF17" linktype="pdf">PDF 文書に一貫性のあるページ番号を指定する</loc>   
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF21" linktype="pdf">PDF 文書のリストにリストタグを使用する</loc>   
+                      </p></item></ulist></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供していない場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G117" linktype="general">テキストを用いて、テキストの表現のバリエーションによって伝えている情報を伝達する</loc>
+                  </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH8" linktype="flash">フォーム・コントロールのアクセシブルな名前にグループ名を追加する</loc>  
+                      </p></item><item><p>表現によって伝えられている情報及び関係性をプログラムが解釈可能にする、又は次の達成方法を用いてテキストで入手可能にする：</p><ulist><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="T1" linktype="text">段落に、標準的なテキストの書式の表現法を用いる</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="T2" linktype="text">リストに、標準的なテキストの書式の表現法を用いる</loc>  
+                      </p></item><item><p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="T3" linktype="text">見出しに、標準的なテキストの書式の表現法を用いる</loc>  
+                      </p></item></ulist></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.3.1 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C22" linktype="css">CSS を用いて、テキストの視覚的な表現を制御する</loc>  </p></item>
+	<item role="css"><p>ページレイアウトにはテーブルよりもCSSを用いる（リンク追加予定）</p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G162" linktype="general">G162: ラベルを配置して、関係性を最大限に予測できるようにする</loc></p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA1" linktype="aria">"ARIA1: Using Accessible Rich Internet Application describedby property to provide a descriptive, programmatically determined label"</loc>  
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA2" linktype="aria">Identifying required fields with the aria-required property</loc>  
+                </p></item>
+	<item><p>
+絶対的なラベルを持たないすべてのフォームコントロールにラベルを提供する（リンク追加予定）
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G141" linktype="general">G141: 見出しを用いてウェブページを構成する</loc></p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 1.3.1 のよくある不適合事例</head>
+<ulist><item role="css"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="failure" href="F2">達成基準 1.3.1  の不適合事例 － 適切なマークアップ又はテキストを用いずに、テキストの見た目の表現の変化を用いて情報を伝えている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F17" linktype="failure">達成基準 1.3.1 及び 達成基準 4.1.1 の不適合事例 － HTMLで1対1の関係性を示すためのDOMにおける情報が不十分である（例：同じIDを持つラベル間の関係性）</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="failure" href="F33">達成基準 1.3.1 及び 達成基準 1.3.2 の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いて複数の段組みをしている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F34" linktype="failure">達成基準 1.3.1 及び 達成基準 1.3.2  の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いてテーブルをフォーマットしている</loc>
+                </p></item><item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="failure" href="F42">達成基準 1.3.1 及び 達成基準 2.1.1 の不適合事例 － スクリプトのイベントを用いて、プログラムが解釈できない方法で、リンクをエミュレートしている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F43" linktype="failure">達成基準 1.3.1 の不適合事例 － コンテンツにおける関係を表さない方法で、構造を示すマークアップを用いている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F46" linktype="failure">達成基準 1.3.1 の不適合事例 － レイアウトテーブルで、th要素、caption要素、又は空ではないsummary属性を用いている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F48" linktype="failure">達成基準 1.3.1 の不適合事例 － pre要素を用いて、表形式の情報をマークアップしている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F62" linktype="failure">達成基準 1.3.1 及び 達成基準 4.1.1 の不適合事例 － XMLで特定の関係性を示すためのDOMにおける情報が不十分である</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F2" linktype="failure">達成基準 1.3.1  の不適合事例 － 適切なマークアップ又はテキストを用いずに、テキストの見た目の表現の変化を用いて情報を伝えている</loc>
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F68" linktype="failure">達成基準 1.3.1 及び 達成基準 4.1.2 の不適合事例 － ラベルと利用者ーインタフェース・コントロールとの関連付けがプログラムが解釈可能ではない</loc>
+                </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F87" linktype="failure">達成基準 1.3.1 の不適合事例 － CSSの :before や :after 疑似要素及び content プロパティを用いて、装飾目的ではないコンテンツを挿入している</loc></p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

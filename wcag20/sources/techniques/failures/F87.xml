@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F87">
+   <short-name>達成基準 1.3.1 の不適合事例 － CSSの :before や :after 疑似要素及び 'content' プロパティを用いて、装飾目的ではないコンテンツを挿入している</short-name>
+   <applicability>
+      <p>CSSをサポートする全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="failure"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="7-">
+      <p><code><![CDATA[:before]]></code> 及び <code><![CDATA[:after]]></code>は、IE7以下ではサポートされていない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>CSSの<code><![CDATA[:before]]></code>と<code><![CDATA[:after]]></code>の擬似要素が、要素のドキュメントツリーコンテンツの前及び後のコンテンツの位置を指定している。そして、<code><![CDATA[content]]></code>プロパティが、それらの擬似要素とあわせて、何が挿入されるかを指定している。スタイル情報をカスタマイズしたり完全にオフにしたりして、自分のニーズに合わせてコンテンツを閲覧している利用者の場合、CSSを用いて挿入されている情報に支援技術がアクセスできないことがある。そのため、これらのプロパティを使って非装飾的なコンテンツを挿入するのは、不適合となる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>次の例では、<code><![CDATA[:before]]></code> 及び <code><![CDATA[:after]]></code> を用いて話者の切り替わりを示し、また脚本内の引用文を挿入している。</p>
+<p>CSSは、次のようになっている。</p>
+</description>
+      <code role="css"><![CDATA[
+p.jim:before {	content: "Jim: " }
+p.mary:before { content: "Mary: " }
+
+q:before { content: open-quote }
+q:after  { content: close-quote }]]></code>
+      <description><p>これが、次のように使われている。</p>
+</description>
+      <code><p class="jim">
+ <q>彼は間に合うかな？</q>
+</p>
+<p class="mary">
+ <q>無理そうよね。</q>
+</p></code>
+    </eg-group>
+    <eg-group>
+      <head>不適合となる</head>
+      <description><p>この例では、<code>:before</code> を用いて、意見と事実の違いを区別している。</p>
+<p>CSSは、次のようになっている。</p>
+</description>
+      <code>p.fact:before { content: "Fact: "; font-weight: bold; }
+ p.opinion:before { content: "Opinion: "; font-weight: bold; }</code>
+      <description><p>これが、次のように使われている。</p>
+</description>
+      <code role="html401"><![CDATA[
+<p class="fact">
+ 事件発生時、被告人はその犯罪現場にいた。 
+</p>
+<p class="opinion">
+ 被告人がその罪を犯した。 
+</p>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS21/generate.html">CSS 2.1: Generated content, automatic numbering, and lists</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="F3"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p><code><![CDATA[:before]]></code> や <code><![CDATA[:after]]></code> の疑似要素及び <code><![CDATA[content]]></code> プロパティを用いて挿入されている全てのコンテンツを探し出す。</p>
+        </item>
+        <item>
+          <p>コンテンツは、装飾を目的にしたものである。</p>
+        </item>
+        <item>
+          <p>挿入されたコンテンツが装飾を目的にしたものではない場合、その情報が支援技術に対して提供されており、CSSをオフにした際にも入手可能である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. 又は 3. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

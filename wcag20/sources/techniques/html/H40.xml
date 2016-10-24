@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H40">
+   <short-name>定義リストを用いる</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-idioms" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、語句の定義を定義リストの形式で提供することである。定義リストは<el>dl</el>要素を用いてマークアップし、その中では用語それぞれを別の<el>dt</el>要素に含め、直後の<el>dd</el>要素に定義を含める。<el>title</el>属性を用いて、定義リストに関する補足情報を提供することもできる。</p>
+    <p><el>dl</el>要素、<el>dt</el>要素、<el>dd</el>要素を用いることで、表現形式が変更されても、用語と定義の関係が保持され、リスト全体がひとつの単位として扱われる。</p>
+    <p>定義リストの最も簡単な利用法は、アルファベット順に定義を並べることであり、その典型的な例は定義リストを用語集に用いることである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>
+									海事用語の定義リストを、航海に関するウェブサイトで利用している。</p>
+</description>
+      <code role="html401"><![CDATA[<dl title="海事用語">
+  <dt>ノット</dt>
+  <dd>
+    <p><em>ノット</em>は、1時間当たり1海里の速度単位である
+    （1時間当たり1.15マイルまたは1.852キロメートル）。</p>
+  </dd>
+  <dt>左舷</dt>
+  <dd>
+    <p><em>左舷</em>は、人間が船首（船の最前部）から見たときの、
+    船体の左側を表す海事用語である（ボートや船に使用される）。</p>
+  </dd>
+  <dt>右舷</dt>
+  <dd>
+    <p><em>右舷</em>は、人間が船首（船の最前部）から見たときの、
+    船体の右側を表す海事用語である（ボートや船に使用される）。</p>
+  </dd>
+</dl> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-html40/struct/lists.html#edef-DL">Definition
+                    lists: the DL, DT, and DD elements</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G62"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>リストとして表現されている用語と定義の組み合わせについて：</p>
+      <olist>
+        <item>
+          <p>そのリストが、<el>dl</el>要素に含まれている。</p>
+        </item>
+        <item>
+          <p>そのリストの中の用語それぞれが、<el>dt</el>要素に含まれている。</p>
+        </item>
+        <item>
+          <p>各用語の定義が、<el>dt</el>要素の直後の<el>dd</el>要素に含まれている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記の全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

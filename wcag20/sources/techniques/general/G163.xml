@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G163">
+   <short-name>オフにすることが可能な標準的な発音区別符号を用いる</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、標準的な発音区別符号をオンにしたりオフにできるメカニズムを利用者に提供することである。</p>
+    <p>単語の発音を正しく示したり、単語同士の区別に役立つように、多くの言語で発音区別符号が利用されている。一部の言語は、母音、重子音、母音や子音の欠落を示したり、他の目的のために発音区別符号を用いている。発音区別符号がなくてもテキストを読むことはできるが、発音区別符号の追加によって読解可能性（リーダビリティ：Readability）を改善できる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>あるハワイ語で書かれたウェブページには、初期状態で発音区別符号が表示されているが、次のような発音区別符号の表示レベルを利用者が選択できるリンクが提供されている：</p>
+<ulist><item><p>発音区別符号を表示しない</p></item><item><p>ʻokina（オキナ）の記号（‘）は表示するが、長音記号は表示しない</p></item><item><p>全ての発音区別符号を表示する</p></item></ulist>
+<p>訪問者が好みのレベルを選択すれば、その設定はセッションクッキーに保存される。同じセッションの間、後に見る全てのページはクッキーにアクセスをしつづけ、選択したレベルに合わせて発音区別符号が表示されたり非表示になる。</p>
+<p>サーバサイドでは、コンテンツには全ての発音区別符号が含まれている。訪問者が発音区別符号を少なくするか全くない選択肢を選べば、サーバサイドで設定の通りに発音区別符号を置き換えたり取り除いてからページを表示する。
+												</p>
+<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.hawaii.edu/site/info/diacritics.php">Hawaiian language online</loc>がその例である。</p>
+</description>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <p>語彙の区別のために発音区別符号を利用する言語で作った、あらゆるウェブページについて：</p>
+      <olist>
+        <item>
+          <p>コンテンツの初期状態で発音区別符号を用いている。</p>
+        </item>
+        <item>
+          <p>発音区別符号をオンにしたりオフにできるメカニズムがある。</p>
+        </item>
+        <item>
+          <p>発音区別符号をオフにするメカニズムによって、発音区別符号が実際に非表示になる。</p>
+        </item>
+        <item>
+          <p>発音区別符号をオンオフにするメカニズムによって、発音区別符号が実際に表示される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. から 4. の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

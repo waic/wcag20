@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F73">
+   <short-name>達成基準 1.4.1 の不適合事例 － 色覚なしではリンクであることが視覚的にはっきりと分からない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>これは、色の違いを知覚できない利用者がリンクを特定できない不適合事例について述べている。リンクには、下線又は色を使わない他の視覚的な区別が必要である。リンクのなかには、ナビゲーションリンクなどのように、ページのデザインや文脈から視覚的に明らかなリンクもあるが、テキスト内のリンクはしばしば、その表示属性のみから視覚的に理解されている。こうしたリンクの下線を取り除いて色の違いだけを残すと、これがリンクであると視覚的に見分けるための他の（色以外の）識別方法がなくなるため、不適合となる。</p>
+    <note><p class="prefix">色以外の手掛かりが、リンクをマウスオーバーした際、又はリンクがフォーカスを受けた際にだけ提示される場合、それもやはり不適合となる。</p>
+		<p class="prefix">リンクが他のテキストとは異なる色でかつ太字にされている場合、太字は色に依存していないため、不適合とはならない。</p>
+</note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>ウェブページの本文のテキスト内に、多数のリンクが含まれている。これらのリンクは、下線がなく、ボディテキストに非常によく似た色で表示されている。利用者は、本文のテキストとリンクを見分けられないため、このウェブページは不適合である。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>次のコードは、文章内又は段落内のリンクから下線を取り除いていて、なおかつ色以外に別の視覚的な手掛かりを提供していない例である。</p>
+</description>
+      <code role="css"><![CDATA[
+<head>
+<style type="text/css">
+p a:link {text-decoration: none}
+p a:visited {text-decoration: none}
+p a:active {text-decoration: none}
+p a:hover {text-decoration: underline; color: red;}
+</style>
+</head>
+
+<body>
+
+<p>もし<a href="rain_in_spain.htm">スペインでの雨</a>に
+関する情報を見つけたいならば、多くのリソースがある。</p>
+
+</body>]]></code>
+      <description><note><p class="prefix">視覚的な手掛かりが、（上の例のように）マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p>
+</note>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページにある文章中又は段落内（あるいは、リンクではないテキストと区別しづらいその他のエリア）のテキストにあるリンクそれぞれに、下線が付いているか、又は色（色相）に依存することなく視覚的にリンクとして区別できる（太字、イタリックなど）。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

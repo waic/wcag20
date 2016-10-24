@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F22">
+   <short-name>達成基準 3.2.5 の不適合事例：　利用者が要求していないウィンドウを開く</short-name>
+   <applicability>
+      <p>全般</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、利用者が期待しないときに、新しいウィンドウが開くことによる不適合事例について述べている。新しいウィンドウは、利用者が閲覧又は操作している場所からフォーカスを奪ってしまう。利用者が利用者ーインタフェースを操作したことで、オプションダイアログのように新しいウィンドウが開くことがわかっている場合は問題にならないが、予期せずポップアップウィンドウが開いてしまう場合がには問題となる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合事例1:</head>
+      <description><p>ウェブページをナビゲートしているとき、新しいウィンドウが既存の利用者ーエージェントのウィンドウの前面に現れ、フォーカスが新しいウィンドウに移動する。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>利用者がリンクをクリックすると、新しいウィンドウが現れる。元のリンクには新しいウィンドウを開くことを予告するテキストがない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>利用者がウェブページのボディをクリックすると新しいウィンドウが現れる。クリックしたエリアに機能があるということは全く示されていない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>ウェブページ内の装飾されてないテキストを利用者がクリックすると、新しいウィンドウが開く。ウェブページにはそのエリアに機能があるという視覚的な表示は何もない。
+                
+              </p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="SCR24"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページを表示させる。</p>
+        </item>
+        <item>
+          <p>新しい（追加の）ウィンドウが開く。</p>
+        </item>
+        <item>
+          <p>ウェブページ上のリンク及びボタンのような、アクションのある要素を探し出す。</p>
+        </item>
+        <item>
+          <p>各要素を操作する。</p>
+        </item>
+        <item>
+          <p>要素を操作すると新しいウィンドウが開く。</p>
+        </item>
+        <item>
+          <p>ウィンドウを開かせた要素にウィンドウを開くことを示す関連づけられたテキストがある。そのテキストはリンクの中に表示されている、又はHTMLのtitle属性といった非表示の関連づけで利用できる。【訳注：<el>a</el>要素内でアイコン画像を用いる際は、代替テキストで示されていればよい。また、title属性の使用は推奨できない。】</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <item>
+          <p>2.に該当すれば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+        </item>
+        <item>
+          <p>5.に該当して、6.を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+        </item>
+      </expected-results>
+   </tests>
+</technique>

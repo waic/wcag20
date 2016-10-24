@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G8">
+   <short-name>ムービーに拡張した音声ガイド付を提供する</short-name>
+   <applicability>
+      <p>音声及び映像をサポートする、あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-extended-ad" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、映像コンテンツに対して拡張した音声ガイドのある二つめのバージョンを提供することである。一般的な音声ガイドの作成に伴う困難の一つとして、非常に短い発話の合間に、たくさんの情報をナレーションで提供しなければならない状況が時々生じることが挙げられる。発話の止まる合間が適切な音声ガイドを提供するのに十分でない場合は、拡張した音声ガイドを提供するために音声と映像を一時停止して、重要な情報を伝えられるようにする。</p>
+    <p>拡張した音声ガイドのあるムービーという二つめのバージョンを提供することによって、このコンテンツを全盲の利用者にとってアクセシブルにすることができる。全盲の利用者は、発話を聞くだけでなく、登場人物の発話からだけでは理解できない文脈や映像が伝えるその他の情報も聞く必要があり、そのためには主音声の発話が止まる合間だけでは時間が足りないことがあるからである。</p>
+    <p>また、付加的な音声ガイドを必要としない人にとっては視聴の妨げとなるため、多くの場合、この機能のオン・オフを操作する方法が提供されている。また、別の方法として、付加的な音声ガイドを含んだバージョンと含まないバージョンの両方を提供することもできる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>炎に包まれた建物から脱出する家族の様子を描いたオンライン映像の代替バージョンで、子どもたちがどこにいるかを確認しあう夫婦の会話が絶え間なく続けられている。その間にも夫婦の後ろで壁が崩壊するが、これにより建物のこの部分からの脱出が不可能になるため、これは物語にとって重要な情報である。映像は、ここでトラックを停止して（同じフレームが繰り返される）、ナレーターが壁の崩壊についての詳細を説明した後、再び再生が始まる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>研修ビデオで、ほぼ全編にわたって絶え間なくナレーションが続いている。この映像を見るのが困難な利用者のために代替バージョンが用意されており、その代替バージョンでは、映像の再生を停止して、重要な情報の音声ガイドを提供している。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">Accessible SMIL Templates</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/experience_learn/educational_media/e-description-extended-and-enh/edescription-demonstration---a">Extended Audio Description</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G78"/>
+      <relatedtech idref="G69"/>
+      <relatedtech idref="G173"/>
+      <relatedtech idref="SM1"/>
+      <relatedtech idref="SM2"/>
+      <relatedtech idref="SM6"/>
+      <relatedtech idref="SM7"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>拡張した音声ガイドのあるバージョンのムービーを開く。</p>
+        </item>
+        <item>
+          <p>必要なナレーションを入れる十分な間隔が主音声の発話と発話の間にないとき、拡張した音声ガイドを再生するために映像が一時停止する。</p>
+        </item>
+        <item>
+          <p>必要な情報が音声ガイドで提供されている。</p>
+        </item>
+        <item>
+          <p>代替バージョンが別のウェブページにある場合、その別バージョンへのリンクが提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.、3. 及び 4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

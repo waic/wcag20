@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="keyboard-operation-trapping">
+   <head>2.1.2</head>
+   <div3 role="intent">
+      <head>Intent of this Success Criterion</head>
+
+<p>この達成基準の意図は、コンテンツがウェブページ上の一部分にキーボード・フォーカスを「閉じ込める」ことのないようにすることである。これは、1ページ中に複数のフォーマットが組み合わされていて、プラグイン又は埋め込みアプリケーションで描画される際によく起こる問題である。</p>
+<p>ただし、その状態を抜け出してフォーカスを「閉じ込められない」ようにする方法を利用者が分かっているのであれば、ウェブページの機能がフォーカスの移動をコンテンツの一部分に限定しているときがあってもよいのかもしれない。</p>
+
+<div4 role="benefits">
+<head>Benefits of this Success Criterion</head>
+<ulist>
+	<item><p>全盲の利用者及び身体障害のある利用者など、キーボード又はキーボード・インタフェースだけを使用している利用者がウェブコンテンツを利用できるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>Examples of this Success Criterion</head>
+<ulist>
+	<item><p>
+                <emph role="bold">カレンダーのプログラム</emph>
+              </p><p>カレンダーのプログラムは、利用者がキーボードを用いてそのカレンダーに項目の追加、削除又は更新することができるようになっている。プログラムにあるコントロールは、ウェブページ内の Tab キーによるフォーカス移動の一つで、あらゆるリンク又はコントロールと同様に利用者がプログラムのコントロールもTabキーで移動できる。</p></item><item><p>
+                <emph role="bold">パズルのアプレット</emph>
+              </p><p>利用者が Tab キーでフォーカスをアプレットの中に入れると、そこから先のフォーカス移動及びその他の打けんはアプレットが処理することになる。そして、そのアプレットから抜け出すのに用いる打けんに関する命令は、そのアプレットの中にあるのと同様に、アプレットに入る前に提供されている。</p></item>
+	<item><p>
+                      <emph role="bold">モーダル・ダイアログボックス</emph>
+                  </p><p>ウェブアプリケーションが、ダイアログボックスを立ち上げる。そのダイアログボックスの下部には、「キャンセル」と「OK」の二つのボタンがある。ダイアログボックスが開くと、フォーカスはそのダイアログボックスから外へ抜け出せなくなる。ダイアログボックスの最後のコントロールで Tab キーを押すと、フォーカスはダイアログボックスの最初のコントロールへ移動する。「キャンセル」ボタン又は「OK」ボタンを押下すると、そのダイアログボックスは閉じられる。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準2.1.2 の達成方法及び不適合事例 - フォーカス移動</head>
+<div4 role="sufficient">
+<head>十分な達成方法 </head>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G21" linktype="general">利用者がコンテンツ内に閉じ込められないようにする</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH17" linktype="flash">Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する</loc>
+                </p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.1.2 でさらに対応が望まれる達成方法（参考） </head>
+</div4>
+
+<div4 role="failures">
+<head/>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F10" linktype="failure">F10: 達成基準 2.1.2 及び 適合要件 5 の不適合事例 － 利用者が一つのフォーマットの中に閉じ込められてしまうように、複数のコンテンツ・フォーマットを組み合わせている</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

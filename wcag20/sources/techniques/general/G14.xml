@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G14">
+   <short-name>色の違いで伝えている情報をテキストでも入手可能にする</short-name>
+   <applicability>
+      <p>すべての色やテキストをサポートするウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、フォームの必須項目のように、情報を伝えるために色の違いを用いるとき、色の違いによって伝えている情報をテキストも用いて明示することである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>色でコード化されたスケジュール</head>
+      <description><p>技術会議のセッションスケジュールが3つのトラックで構成されている。このとき、トラック 1のセッションが青い背景色で、トラック 2のセッションが黄色い背景で、トラック 3のセッションが緑色の背景で示されているならば、トラック 1はＴ1、
+					 トラック 2はＴ2、トラック 3はＴ3のように、各セッション名に続きテキストでも示されている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>色のアイコンでコード化されたスケジュール</head>
+      <description><p>技術会議のセッションスケジュールが3つのトラックで構成されている。各セッションのタイトルの隣りに
+					 色を用いたアイコンがあり、青はトラック 1、黄はトラック 2、緑はトラック 3であることを示している。それぞれのアイコンには、
+					 トラック 1、トラック 2、トラック 3と適切な代替テキストが提供されている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>必須項目のあるフォーム</head>
+      <description><p>フォームにいくつかの必須項目がある。必須項目のラベルは赤で示されている。
+					 それに加えて、各ラベルの後ろに＊（アスタリスク）がある。フォーム入力の説明文では、入力例に続いて、
+					 「赤字で＊（アスタリスク）の付いた項目は必須項目です。」と示されている。</p>
+<note><p class="prefix">アスタリスクは、スクリーンリーダー（やその読上げモード）によっては読上げられないことがあり、
+					 またデフォルトの文字サイズよりも小さいサイズで表示されるため、弱視の利用者にとっては見づらいかもしれない。コンテンツ制作者としては、
+					 アスタリスクが用いられていることをテキストで示すとともに、表示されるアスタリスクの文字サイズを大きくすることが重要である。【訳注：日本語の場合は、アスタリスクよりも文字で「必須」と示したほうが、音声読み上げと見た目の両方でより確実である。】
+                        </p></note>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>緑色のサブミットボタンのあるフォーム</head>
+      <description><p>オンラインのローン申し込みにおいて、緑色のボタンでプロセスを進め、赤色のボタンでプロセスをキャンセルできると説明がある。
+					 このとき、フォームは、緑色のボタンにはテキストで「Go」と書かれていて、「緑色の[Go]ボタンを押して結果を提出し、
+					 次のステップに進んでください」と指示がある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G205"/>
+      <relatedtech idref="G138"/>
+      <relatedtech idref="G182"/>
+      <relatedtech idref="G183"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>情報を伝えるのに色の違いが用いられている各項目に対して：</p>
+      <olist>
+        <item>
+          <p>伝えられている情報が、テキストでも示されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

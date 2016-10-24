@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G115">
+   <short-name>セマンティックな要素を用いて、構造をマークアップする</short-name>
+   <applicability>
+      <p>HTML 4.01及び XHTML 1.xを含むマークアップ言語</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、適切なセマンティックな要素を用いてウェブコンテンツの構造をマークアップすることである。つまり、要素を、視覚的な見えかたではなく、その意味に基づいて用いることである。</p>
+    <p>適切なセマンティックな要素を用いることで、利用者ーエージェントが構造を利用できるようになる。この中には、コンテンツの意味を理解する際に、異なる構成要素が持っている役割（role）を明示することも含まれる。段落、見出し、強調されたテキスト、テーブルなどのコンテンツの構成要素の性質は、このようにして示すことができる。場合によっては、見出しと小見出し、テーブルとセルといった複数の構成要素間の関係も示されるべきである。そうすることで、利用者ーエージェントは、たとえば、異なる種類の構造に対しては異なる視覚表現にしたり、聴覚表現では、異なる声又は声の高さを用いたりして、利用者に構造を知覚させることができるようになる。</p>
+    <p>例えば、HTMLにおいては、<el>em</el>、<el>abbr</el>及び<el>cite</el>といった語句レベルの要素は、それぞれ、強調させるため、略語及び引用であることを示すためにテキストをマークすることで、文の中でセマンティックな情報を付加する。 数学における構造と表現の重要な区別を保つために設計されたマークアップ言語であるMathMLには、数学的な概念を表すために用いられる複雑な記号のための特別な「表現」のマークアップも、数学的な概念自体のための「コンテンツ」（セマンティック）マークアップも含まれている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>段落には別のページへのハイパーリンクがある。ハイパーリンクは<el>a</el>要素を用いてマークアップされている。 </p>
+</description>
+      <code/>
+    </eg-group>
+    <eg-group>
+      <description><p>結婚の歴史についてのページには、ジェーン・オースティンの小説「高慢と偏見」からの引用が事例として用いられている。本への参照は、<el>cite</el>要素を用いてマークアップされ、引用部分自体は<el>blockquote</el>要素を用いてマークアップされている。</p>
+</description>
+      <code/>
+    </eg-group>
+    <eg-group>
+      <description><p>車の取扱説明書にエンジンのかけ方の説明がある。説明書きには、ギアがニュートラルになっていることを確かめるようにとの警告がある。筆者は、その警告は非常に重要で強調されるべきであると考えていたため、警告は<el>strong</el>要素を用いてマークアップされている。</p>
+</description>
+      <code/>
+    </eg-group>
+    <eg-group>
+      <description><p>この事例では、テキストを強調するために<el>em</el> 及び <el>strong</el>要素をどのように用いたらよいかを示している。</p>
+</description>
+      <code/>
+    </eg-group>
+    <eg-group>
+      <head>強調及び背景色を用いて重要な情報を視覚的かつセマンティックに特定する。</head>
+      <code/>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/">HTML 4.01 specification</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/text.html#h-9.2">HTML 4.01 specification, using phrase elements</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/MathML2/">Mathematical Markup Language (MathML) Version 2.0, Second Edition</loc>
+                </p>
+            </item>
+            <item>
+               <p>Jeffrey Zeldman's book
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://en.wikipedia.org/wiki/Designing_with_Web_Standards">"Designing with Web standards"</loc>
+                </p>
+            </item>
+            <item>
+               <p>Web Design Group's article
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.htmlhelp.com/design/style/docstyle-tags.html">"Document style: Use the right tag for the job"</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H39"/>
+      <relatedtech idref="H42"/>
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H48"/>
+      <relatedtech idref="H51"/>
+      <relatedtech idref="H71"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>セマンティックな機能を有するコンテンツがある。</p>
+        </item>
+        <item>
+          <p>セマンティックな機能がある部分に対応するセマンティックなマークアップがウェブコンテンツ技術に存在する場合、コンテンツがそのセマンティックなマークアップを用いてマークアップされている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

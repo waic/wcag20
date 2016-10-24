@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C13">
+   <short-name>キーワードを用いてフォントサイズを指定する</short-name>
+   <applicability>
+      <p>CSS</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-scale" relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="cosufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="7-">
+      <p>フォントサイズがポイント（pt）やピクセル（px）といった絶対単位（あるいは事実上の絶対単位）で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。【訳注：厳密には、ピクセル（px）は「絶対単位」ではなく「相対単位」ですが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっています。】</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、設定したい相対的なフォントサイズを表現するキーワードでフォントサイズを指定することである。これらの値は、継承されたフォントサイズに応じて、利用者ーエージェントが適切なフォントサイズを適用する手がかりを与えるものである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>CSSでのキーワードによるフォントサイズ指定</head>
+      <description><p>この事例では、どのような設定であっても、<el>strong</el>要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p>
+</description>
+      <code><![CDATA[strong {font-size: larger}
+
+...
+
+<h1><strong>利用者ー</strong>がテキストサイズをコントロールできるようにする</h1>
+<p>利用者ーだけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
+彼がテキストサイズを設定できるようにするのが<strong>とても</strong>重要である。   
+…]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</loc> 
+               </p>
+            </item>
+            <item>
+          <p diff="del">CSS-Discuss Font Size Using Keywords</p>
+        </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="C12"/>
+      <relatedtech idref="C14"/>
+   </related-techniques>
+   <tests diff="chg">
+      <procedure>
+      <olist>
+        <item>
+          <p>フォントサイズを指定しているCSSプロパティの値が、<code><![CDATA[xx-small]]></code>、<code><![CDATA[x-small]]></code>、<code><![CDATA[small]]></code>、<code><![CDATA[medium]]></code>、<code><![CDATA[large]]></code>、<code><![CDATA[x-large]]></code>、<code><![CDATA[xx-large]]></code>、<code><![CDATA[smaller]]></code>、<code><![CDATA[larger]]></code>の中のどれか一つである。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

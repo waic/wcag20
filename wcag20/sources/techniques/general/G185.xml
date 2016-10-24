@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G185">
+   <short-name>HOMEページからサイト上の全てのウェブページにリンクする</short-name>
+   <applicability>
+      <p>リンク機能を提供する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が小規模なウェブサイト内の全ての情報を探し出すことが可能となるように、HOMEページから全てのウェブページへのリンクを提供することである。サイトのページ数が十分に少ない時、HOMEページにおいて直接サイトマップの情報を提供することができる。ウェブサイト内のHOMEページ以外のページは、HOMEページへのリンクを提供する。</p>
+    <p>このように、HOMEページに一つで二つのメカニズムを持たせることができる。一つは各ページへの通常のナビゲーションを提供することであり、もう一つはサイトの事実上のサイトマップにもなることである。</p>
+    <p>サイト内の全てのウェブページは、全ての他のページへのリンクを提供し、一連のそれらのリンクは<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#navigation-mechanisms-mult-loc" linktype="guideline">達成基準 3.2.3 (一貫したナビゲーション)</loc>を満たしている。</p>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G61"/>
+      <relatedtech idref="G63"/>
+      <relatedtech idref="G64"/>
+      <relatedtech idref="G125"/>
+      <relatedtech idref="G126"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>HOMEページは、ウェブサイト内の全ての他のページへのリンクを提供している。</p>
+        </item>
+        <item>
+          <p>ウェブサイト内の他のページは、HOMEページへのリンクを提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

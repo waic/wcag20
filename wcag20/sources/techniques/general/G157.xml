@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G157">
+   <short-name>ライブの音声キャプションサービスをウェブページに組み込む</short-name>
+   <applicability>
+      <p>ライブの音声しか含まない情報を提示する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-live-audio-only" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ライブの音声コンテンツのテキスト版を提供するために、リアルタイムのキャプションサービスを用いることである。このようなサービスは、何が話されているかを聞き取り、専用キーボードによりわずかな遅れでテキスト入力する訓練を受けた人間のオペレーターによって行われる。彼らは非常に忠実にライブのイベントを捉えることができ、そのイベントを理解する上で重要な発話以外の音声についても注記を入れることができる。キャプションのテキストを含むビューポートは、ライブの音声コンテンツと同一のウェブページ上で利用できる。</p>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/captions/realtime">Real-time Captioning</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.captionedtext.com/">Captioned Text</loc>
+                  (provider for relay conference captioning)</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://en.wikipedia.org/wiki/Communication_Access_Real-Time_Translation">Wikipedia entry for CART</loc>
+                  (variously Computer Assisted Real-time Captioning or Communication Access Real-time Translation)</p>
+            </item>
+            <item><!-- this used to be cartinfo.org but may be different org -->
+               <p>
+                	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ncra.org/">Communication Access Information Center</loc>
+                </p>
+            </item>
+            <item>
+               <p>Web conferencing products with integrated support for captioning viewport</p>
+               <ulist>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://onlineconferencingsystems.com/vpat/">IDEAL Conference</loc>
+                    </p>
+                  </item>
+                  <item>
+                     <p>
+                    	   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.adobe.com/products/adobeconnect/feature-details/closed-captioning.html">Acrobat Connect</loc>
+                    </p>
+                  </item>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.captionfirst.com/">Caption First</loc>
+                     </p>
+                  </item>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://sovo-tech.com/">Sovo Closed Captioning and Audio Description Services </loc>
+                     </p>
+                  </item>
+               </ulist>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G150"/>
+      <relatedtech idref="G58"/>
+      <relatedtech idref="G69"/>
+      <!--  Providing a link to a text transcript of a prepared statement or script if the script is followed -->
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ライブの音声コンテンツと関連付けられたビューポートがウェブページ上にある。</p>
+        </item>
+        <item>
+          <p>ライブの音声コンテンツのテキストが、30秒未満の遅れでビューポートに表示される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

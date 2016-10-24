@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="navigation-mechanisms-title" role="extsrc">
+   <head>2.4.2</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、各ウェブページにその内容を示すページタイトルを付けることによって、利用者がコンテンツを見つけやすく、自分の現在位置を確認しやすくすることである。タイトルがあれば、利用者はページのコンテンツを読んだり解釈したりすることなく、現在位置を確認することができる。タイトルがサイトマップ又は検索結果のリストに表示されたときに、利用者は自分の求めているコンテンツをより素早く確認できるようになる。利用者ーエージェントは、利用者がそのページを確認できるように、ページのタイトルを容易に見つけられるようにする。例えば、利用者ーエージェントは、そのページタイトルをウィンドウのタイトルバーに表示するか、又はそのページを表示しているタブの名前として表示する。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>
+                  この達成基準により、そのウェブページにある情報が自分のニーズに関係があるかどうかを、すべての利用者が素早くかつ容易に確認できるようになる。
+                </p></item>
+	<item><p>
+                  視覚障害のある利用者が、複数のページが開いているとき、コンテンツを区別できるようになる。
+                </p></item>
+	<item><p>
+                  認知の障害、短期記憶障害、及び読字障害のある利用者も、そのページタイトルでコンテンツを確認できるようになる。
+                </p></item>
+	<item><p>
+                  この達成基準は、重度の運動障害があり、ウェブページ間を行き来するとき操作モードを音声に依存する利用者にも役立つ。
+                </p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">HTML のウェブページ</emph>
+              </p><p>HTML で制作したウェブページの内容を示したタイトルが、利用者ーエージェントのタイトルバーに表示されるように、title 要素 でマークアップされている。</p></item><item><p>
+                <emph role="bold">文書</emph>
+              </p><trnote><p>以下、英文原文例をそのまま日本語にした。英文では<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2005/WD-WCAG20-20051123/">2005年のWCAGドラフト（英語）</loc>が参考にされた模様。</p></trnote><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc> のページタイトルが、「ウェブコンテンツ・アクセシビリティ・ガイドライン 2.0」となっている。</p><ulist><item><p>主要なページのページタイトルが、「ガイドライン X を理解する」や「達成基準 X を理解する」となっている。</p></item><item><p>ドキュメントのページタイトルが、「WCAG 2.0 ガイドライン」となっている。</p></item><item><p>附録 A のページタイトルが、「用語集」となっている。</p></item><item><p>附録 B のページタイトルが、「謝辞」となっている。</p></item><item><p>附録 C のページタイトルが、「参考文献」となっている。</p></item></ulist></item>
+	<item><p>
+                <emph role="bold">ウェブアプリケーション </emph>
+              </p><p>
+                あるインターネット銀行のアプリケーションでは、利用者が自分の銀行口座をチェックしたり、過去の明細を確認したり、振込をしたりすることができる。そのウェブアプリケーションは、ウェブページごとにページタイトルを動的に生成している。例えば、「ジョン・スミスさんの講座： XYZ 銀行」、「口座番号 1234-5678 の取引明細 － 2005年12月： XYZ 銀行」などである。
+                
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.socialpatterns.com/search-engine-optimization/writing-better-titles/">Writing Better Web Page Titles</loc> How to write titles for Web pages that will enhance search engine effectiveness.</p></item><item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://redish.net/content/papers/interactions.html">Guidelines for Accessible and Usable Web Sites: Observing Users Who Work With Screen Readers</loc>. Theofanos, M.F., and Redish, J. (2003).  Interactions, Volume X, Issue 6, November-December 2003, pages 38-51, <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://dl.acm.org/citation.cfm?doid=947226.947227">http://dl.acm.org/citation.cfm?doid=947226.947227</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>十分な達成方法</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G88" linktype="general">ウェブページに対して、コンテンツの内容が分かるページタイトルを提供する</loc>
+                 、<emph role="bold">かつ</emph>、後述のテクニックの一つを使ってウェブページにタイトルを結びつける： 
+                </p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H25" linktype="html">title要素を用いて、ページタイトルを提供する </loc>
+                    </p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF18" linktype="pdf">PDF 文書の文書情報辞書内の Title エントリを使用して文書のタイトルを指定する</loc>
+                    </p></item></ulist></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.4.2 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G127" linktype="general">ウェブページと、より大きなウェブページの集まりとの関係性を特定する</loc>
+    </p></item>
+	<item><p>
+        ウェブページの主題を特定する（リンク追加予定）
+    </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA1" linktype="aria">ARIA1: 説明的で内容を説明しており、プログラム的に決定されたラベルを提供する アクセシブル・リッチ・インターネット・アプリケーションのdescribedby属性を使う </loc>
+                </p></item><item><p>フレームを特定するため意味のある名前を提供する（リンク追加予定）</p></item>
+	<item><p>ウェブページに一意なタイトルを使う（リンク追加予定）
+                </p></item>
+	<item><p>説明的な内容を説明したトップレベルページの見出しを提供する（リンク追加予定）
+                </p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 2.4.2 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F25" linktype="failure">達成基準 2.4.2 の不適合事例 － ウェブページのタイトルがコンテンツを特定しない</loc>
+                </p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

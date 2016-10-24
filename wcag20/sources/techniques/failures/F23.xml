@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F23">
+   <short-name>達成基準 1.4.2 の不適合事例 － 3秒よりも長く音声を再生していて、音声を停止するメカニズムを提供していない</short-name>
+   <applicability>
+      <p>音声でのインタラクションがあるものを除く、全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-dis-audio" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、音声に関連する達成基準における不適合事例について述べている。音声の再生が3秒以内に自動的に停止せず、その音声を停止させる方法がない場合、達成基準 1.4.2を満たすことができない。3秒よりも長く再生される音声には、コンテンツにその音声を停止するメカニズムがない場合、この不適合事例が適用されることになる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><ulist><item><p> 絶え間なくBGMを再生しているサイト。</p></item></ulist>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><ulist><item><p> 停止するまでに3秒よりも長く続くナレーションがあり、それを停止させるメカニズムのないサイト。 </p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>自動的に再生されて3秒よりも長く続く音声を停止させる方法がウェブページにあることをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>手順 1.でその方法がない場合、そのコンテンツは達成基準 1.4.2を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H73">
+   <short-name>table要素のsummary属性を用いて、データテーブルの概要を提供する</short-name>
+   <applicability>
+      <p>HTML 4.01及びXHTML 1.x</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、テーブルにどのようにデータがまとめられているかという短い概略や、テーブルをどのように読み進めるかという短い説明を提供することである。<el>table</el>要素に<att>summary</att>属性を指定しておくことで、スクリーンリーダーの利用者ーがこのような情報を入手できるが、視覚的には表示されない。</p>
+    <p><att>summary</att>属性は、テーブルの構造が複雑な場合（たとえば、行ヘッダーや列ヘッダーが複数組み合わせてある場合や、行グループや列グループが複数ある場合）に有用である。また、<att>summary</att>属性は、構造は単純でもたくさんの行や列を含んでいるデータテーブルでも役に立つ。</p>
+    <p><att>summary</att>属性は、そのテーブルに<el>caption</el>要素があるかどうかに関わらず指定できる。両方を用いる場合には、<att>summary</att>属性の内容が単に<el>caption</el>要素の繰り返しであってはならない。</p>
+    <p>WCAG 2.0はレイアウトレテーブルの使用を禁止していないが、CSSベースのレイアウトを推奨している。HTMLの<el>table</el>要素に与えられたセマンティックな意義を守り、コンテンツから表現を分離するというコーディング実務に従うためである。レイアウトテーブルを用いる場合には、<att>summary</att>属性は使用しないか、値を空にする。レイアウトテーブルの目的は、コンテンツの配置を制御することのみであって、テーブルそのものは利用者ーから見て「透明（不可視）」であるべきである。<att>summary</att>属性がテーブルの存在を示してしまうと、この透明性を「壊して」しまう。なお、レイアウトテーブルに空の<att>summary</att>属性（<code>summary=""</code>）を指定することは許容範囲である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>summary属性はあるが、caption要素はないデータテーブル</head>
+      <description><p>この事例は、バスの時刻表を表している。<att>summary</att>属性には、運行系統と目的地、時刻表の利用方法が記述されている。</p>
+</description>
+      <code role="html401"><![CDATA[<table summary="7系統、市街地行きの時刻表です。朝4時に運行開始、
+深夜に終了します。経由地は先頭の行に示してあります。
+出発地や目的地に最も近い経由地を見つけ、その列を下のほうに読み進めて、
+バスの出発時刻を見つけてください。">
+  <tr>
+    <th scope="col">一番街</th>
+    <th scope="col">六番街</th>
+    <th scope="col">十五番街</th>
+    <th scope="col">十五番街モリソン通り</th>
+  </tr>
+  <tr>
+    <td>4:00</td>
+    <td>4:05</td>
+    <td>4:11</td>
+    <td>4:19</td>
+  </tr>
+  …
+</table> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>summary属性とcaption要素の両方があるデータテーブル</head>
+      <description><p>この事例では、<att>summary</att>属性と<el>caption</el>要素の両方を用いている。<el>caption</el>要素ではバスの運行系統を特定している。<att>summary</att>属性には、全盲の利用者ーが時刻表の利用方法を理解するのに役立つ内容を記述している。スクリーンリーダーは、まず<el>caption</el>要素を、続いて<att>summary</att>属性を読み上げる。</p>
+</description>
+      <code role="html401"><![CDATA[<table summary="経由地は1行目に示してあります。
+出発地や目的地に最も近い経由地を見つけ、その列を下のほうに読み進めて、
+バスの出発時刻を見つけてください。
+朝4時に運行開始、深夜に終了します。">
+  <caption>7系統、市街地行き（平日）</caption>
+…
+</table> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/tables.html#adef-summary">summary attribute</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H39"/>
+      <relatedtech idref="H51"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>レイアウトテーブルかどうかの確認：セルのコンテンツが同じ行や列に含まれる他のセルのコンテンツと関係があるかどうか判断する。</p>
+                <olist><item><p>関係がない場合、そのテーブルはレイアウトテーブルである。</p></item><item><p>関係がある場合、そのテーブルはデータテーブルである。</p></item></olist></item>
+        <item>
+          <p>そのテーブルがレイアウトテーブルである場合、<att>summary</att>属性を指定していないか、値が空である。</p>
+        </item>
+        <item>
+          <p>そのテーブルがデータテーブルである場合、<att>summary</att>属性を指定している場合は、その<att>summary</att>属性によってテーブルの構成や利用方法を説明している。</p>
+        </item>
+        <item>
+          <p>データテーブルに<att>summary</att>属性と<el>caption</el>要素の両方を指定している場合、<att>summary</att>属性の内容が単に<el>caption</el>要素の繰り返しになっていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>レイアウトテーブルについては、チェックポイント2.を満たしている。</p>
+        </item>
+        <item>
+          <p>データテーブルについては、チェックポイント3.及び4.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="minimize-error-reversible" role="extsrc">
+   <head>3.3.4</head>
+   <div3 role="intent">
+      <head>Intent of this Success Criterion</head>
+
+<p>この達成基準の意図は、障害のある利用者が元の状態に戻すことのできないタスクを行った際、ミスをしたことによる重大な結果を未然に防ぐことができるように することである。例えば、払い戻し不可の航空券の購入、又は証券取引口座での株購入の注文は、重大な結果につながる金銭的な取引である。利用者が発着日を間違えれば、その利用者は交換できない誤った日付の航空券を購入したことになってしまう。利用者が購入する株式の数を間違えると、意図した数よりも多くの株式を購入したことになってしまう。どちらのミスも、すぐに処理される取引であり、後から変更することはできないものであり、また非常に高価である。同様に、旅行サービスのウェブサイトにある旅行履歴のように、後から使用する必要のあるデータベースのデータを無意識に修正又は削除してしまった場合、そのエラーを元の状態には戻せないことがある。また、試験のデータもこの達成基準に当てはまる。なぜなら、試験の妥当性を確保するためには、利用者は一度送信した回答を修正することができないからである。そのため、利用者が自分の送信内容に誤りがないかどうかを確認できるようにする必要がある。</p>
+<p>障害のある利用者は、ミスをしてしまう可能性が高い。読字障害のある利用者は、数字と文字を取り違えてしまうことがあるし、運動障害のある利用者は間違ってキーを押してしまうことがある。元の状態に戻せるようにすることによって、利用者が重大な結果につながる恐れのあるミスを修正できるようになる。また、入力内容を確認して修正できるようにすることで、重大な結果につながることをしてしまう前に、利用者がミスに気づくことができるようになる。</p>
+<p>利用者が自分で制御可能なデータというのは、利用者がアクセスすることを想定したデータのことを指す（例えば、利用者ーアカウントの氏名、住所など）。アクセスログ及び検索エンジンの監視データのようなものを指すわけではない。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>ミスによる重大な結果を未然に防ぐ手段を提供することによって、ミスをする可能性の高い障害のある利用者すべてに役立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph>注文内容の確認</emph>
+              </p><p>ある小売店がウェブでオンラインショッピングのサービスを顧客に提供している。注文が送信されると、利用者が注文内容に間違いがないかを確認できるように、注文した商品、各商品の数、送り先の住所、支払方法などの注文情報が表示される。利用者は、注文内容を確認したり、変更したりすることができる。</p></item>
+	<item><p>
+                <emph>株式売買</emph>
+              </p><p>ある金融サービスのウェブサイトで、利用者は株をオンラインで売買できる。利用者が株の売買の注文を送信すると、システムは市場が開いているかどうかを確認する。時間外だった場合は、利用者にその取引が時間外取引になることを知らせて、通常の取引時間外であることに伴うリスクについても伝える。そして、利用者はその注文をキャンセルするか、確認することができる。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+</div3>
+
+<div3 role="techniques">
+<head>Techniques for Addressing Success Criterion 3.3.3</head>
+<div4 role="sufficient">
+<head>sufficient techniques for Success Criterion 3.3.3</head>
+<div5 role="situation">
+<head>状況 A： アプリケーションで、購入又は所得税申告の提出のように、法的なトランザクションが発生する場合：</head>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G164" linktype="general">Providing a stated period of time after submission of the form when the order can be updated or canceled by the user</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general">Providing the ability for the user to review and correct answers before submitting</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general">Providing a checkbox in addition to a submit button</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： 利用者のアクションによって情報が削除される可能性がある場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G99" linktype="general">Providing the ability to recover deleted information</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G168" linktype="general">G168: Requesting confirmation to continue with selected action</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general">Providing a checkbox in addition to a submit button</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 C： ウェブページに試験を実施するアプリケーションがある場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general">Providing the ability for the user to review and correct answers before submitting</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G168" linktype="general">G168: Requesting confirmation to continue with selected action</loc></p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>Additional Techniques (Advisory) for 3.3.3</head>
+<ulist>
+	<item><p>
+        どのような不可逆のアクションが起きそうになっているかを利用者に知らせる（リンク追加予定）
+    </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">Providing client-side validation and alert</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL35.html" linktype="silverlight">Using the Validation and ValidationSummary APIs to Implement Client Side Forms Validation in Silverlight </loc>
+                </p></item>
+	<item><p>
+                  エラーを含むフィールドにフォーカスを置く（リンク追加予定）
+                  
+                </p></item>
+	<item><p>
+                  プルダウンメニューの各項目の最初では、同じ用語や同じ文字の組み合わせの使用を避ける（リンク追加予定）
+                  
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G199" linktype="general">Providing success feedback when data is submitted successfully</loc></p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>Common Failures Identified by the Working Group</head>
+</div4>
+</div3>
+</div2>

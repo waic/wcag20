@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H84">
+   <short-name>select要素とボタンを併用して、アクションを実行するようにする</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-unpredictable-change"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、<el>select</el>要素の値を選択することで意図せずアクションが実行されるのではなく、アクションの実行を利用者が制御できるようにすることである。利用者は、アクションが実行されるとは思わずに、<el>select</el>要素にどんな値があるのかを調べたり、間違って意図しない値を選んだりするかもしれない。利用者が自分の選択に納得したとき、アクションを実行するボタンを選択できるようにする。</p>
+    <p><el>select</el>要素の選択肢の操作によって(フォームの)コントロールの値が変化する場合、キーボードで<el>select</el>要素の値を選んでいる利用者に対して特に重要である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>カレンダー</head>
+      <description><p>あるウェブページでは、利用者が任意の年の任意の月を選ぶと、その月のカレンダーが表示される。利用者が月と年を指定した後に「表示」ボタンを押すことでカレンダーが表示される。この例では、クライアントサイド・スクリプティングでアクションを実装している。</p>
+</description>
+      <code><![CDATA[<label for="month">月:</label>
+<select name="month" id="month">
+  <option value="1">1月</option>
+
+  <option value="2"> 2月</option>
+  ...
+  <option value="12">12月</option>
+</select> 
+<label for="year">年:</label>
+
+<input type="text" name="year" id="year">
+<input type="button" value="Show" onclick = "..."> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>アクションを選ぶ</head>
+      <description><p><el>select</el> 要素は実行可能なアクションのリストを含んでいる。利用者が「実行」というボタンを押すまで、アクションは実行されない。</p>
+</description>
+      <code><![CDATA[<form action="http://somesite.com/action" method="post">
+  <label for="action">選択肢:</label>
+  <select name="action" id="action">
+    <option value="help">ヘルプ</option>
+
+    <option value="reset">リセット</option>
+    <option value="submit">送信</option>
+  </select> 
+  <button type="submit" name="submit" value="submit">実行 </button>
+
+</form> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.cs.tut.fi/~jkorpela/forms/navmenu.html">Jukka Korpela: Navigational pulldown menus in HTML</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H32"/>
+      <relatedtech idref="G80"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>それぞれの <el>select</el> 要素/ボタンの要素の組み合わせに対して:</p>
+      <olist>
+        <item>
+          <p><el>select</el> 要素の選択肢にフォーカスがあたったとき(キーボード・フォーカスを含む)、どのアクションも実行されない。</p>
+        </item>
+        <item>
+          <p>ボタンを選択すると、現在の <el>select</el> 要素の値に関連付けられたアクションが実行される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G187">
+   <short-name>利用者ーエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を用いる</short-name>
+   <applicability>
+      <p>ウェブコンテンツ技術全て。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、点滅するコンテンツを利用者ーエージェントの機能を使用して止めることができるようにすることである。特定のウェブコンテンツ技術では、利用者ーエージェントによって利用者がアニメーションを止めることができる。利用者がこの機能を実行するとき、点滅も含めたすべてのアニメーションは停止する。<phrase diff="add">この機能は、WCAGに適合したインタラクティブなコントロール、又は明記されたキーボード・ショートカットのいずれかによって提供することが可能である。</phrase></p>
+    <p>利用者がアニメーションを止めるための一般的な方法は、Escapeキーを押すことである。そのキーを押すためのイベントキューの中で先行するプロセスがない限り、動きのあるアニメーションや点滅しているコンテンツを停止するコマンドとして動作する。</p>
+    <p>一般的にこれが機能するとされているウェブコンテンツ技術：</p>
+    <ulist>
+      <item>
+        <p>Graphics Interchange Format(<acronym title="Graphics Interchange Format">GIF</acronym>)</p>
+      </item>
+      <item>
+        <p>Animated Portable Network Graphics(<acronym title="Animated Portable Network Graphics">APNG</acronym>)</p>
+      </item>
+    </ulist>
+  </description>
+   <examples/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>点滅するコンテンツを含むページを読み込む。</p>
+        </item>
+        <item>
+          <p>ブラウザのアニメーションを止めるコマンドを実行する。（通常は、Escapeキー）</p>
+        </item>
+        <item>
+          <p>点滅が止まっている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

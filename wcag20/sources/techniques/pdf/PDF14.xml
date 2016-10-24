@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF14">
+   <short-name>PDF 文書内に連続するヘッダとフッタを提供する</short-name>
+   <applicability>
+     <p id="pdf.applicability.general">タグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-location" relationship="advisory"/>
+      <success-criterion idref="consistent-behavior-consistent-locations"
+                         relationship="advisory"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この達成方法の目的は、ページネーションアーティファクトを通じて、連続するヘッダとフッタを提供することにより、利用者ーが文書内の現在位置を確認できるよう支援することである。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>連続するヘッダとフッタは、一貫性のある予測可能な方法で繰り返される情報を提供することにより、コンテンツの利用と理解を容易にするために役立つ。ヘッダとフッタのコンテンツは、文書の範囲と内容、対象読者および設計上の決定によって大きく異なる。ヘッダとフッタで使用される現在位置情報の事例のいくつかを以下の一覧に示す。情報がヘッダに現れるのかフッタに現れるのかは、設計上の決定である場合が多い。ページ番号は、多くの場合フッタにあるが、ヘッダにあってもかまわない。</p>
+    <ulist>
+      <item>
+        <p>文書のタイトル</p>
+      </item>
+      <item>
+        <p>文書内の現在の章および節</p>
+      </item>
+      <item>
+        <p>「ページ3-4」または「ページ9/15」のような現在位置情報のあるページ番号</p>
+      </item>
+      <item>
+        <p>作成者および日付情報</p>
+      </item>
+    </ulist>
+    <p>一貫性は、認知障害のある利用者ー、スクリーンリーダーの利用者ー、ロービジョン拡大鏡の利用者ーおよび知的障害のある利用者ーがコンテンツを理解しやすくするために役立つ。</p>
+    <p>ページヘッダとフッタを提供する最も容易な方法は、文書のオーサリングツール内で行う方法である。オーサリングツールは通常、ヘッダおよびフッタテキストと情報（ページ番号など）を作成するための機能を提供する。ただし、文書を PDF に変換した後でページヘッダおよびフッタを追加または変更する必要がある場合、Adobe Acrobat Pro のヘッダとフッタのツールのようなオーサリングまたは修正ツールを使用することができる。いかなる場合でも、ツールは一貫性のある予測可能なレイアウト、形式およびテキストでページヘッダおよびフッタを生成する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Microsoft Word 2007 を使用して連続するヘッダとフッタを追加する</head>
+      <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>Microsoft Word で、以下の画像に示されているように、ヘッダ、フッタ、ページ番号情報およびレイアウトを指定できる挿入リボンを使用する。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/word-headerfootertools.jpg" alt="スクリーンショット：Word の挿入リボン上にあるヘッダおよびフッタツール" height="92" width="166"/></p><p>次の画像に示されているように、これらのツールを使用してヘッダとフッタを指定することができる。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/header-word.jpg" alt="スクリーンショット：Word 文書内のページヘッダ" height="208" width="815"/></p><p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/footer-word.jpg" alt="スクリーンショット：Word 文書内のページフッタ" height="121" width="815"/></p><p>PDF への変換時に、ページヘッダおよびフッタが文書内に表示される。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/pdf-page-header.jpg" alt="スクリーンショット：Word から変換されたページヘッダ" height="175" width="700"/></p><p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/pdf-page-footer.jpg" alt="スクリーンショット：Word から変換されたページフッタ" height="97" width="700"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/headers-footers.docx" linktype="examples">Word を使用して連続するヘッダを追加したサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/headers-footers-word.pdf" linktype="examples">Word を使用して連続するヘッダを追加したサンプル (PDF ファイル)</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>OpenOffice.org Writer 2.2 を使用して連続するヘッダとフッタを追加する</head>
+      <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>OpenOffice.org Writer で、以下の画像に示されているように、ヘッダおよびフッタ情報とレイアウトを指定できる挿入 &gt; ヘッダーツールと挿入 &gt; フッターツールを使用する。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/ooheaderfootertools.jpg" alt="スクリーンショット：OpenOffice.org Writer のヘッダーツールとフッターツール" height="256" width="420"/></p><p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/header-oo.jpg" alt="スクリーンショット：OpenOffice.org Writer 文書内のページヘッダ" height="170" width="612"/></p><p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/footer-oo.jpg" alt="スクリーンショット：OpenOffice.org Writer 文書内のページフッタ" height="115" width="612"/></p><p>PDF への変換時に、ページヘッダおよびページフッタは、事例 1 で変換された Word 文書で設定したように文書内に表示される。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/headers-footers.odt" linktype="examples">OpenOffice Writer を使用して連続するヘッダを追加したサンプル (OpenDocument テキスト ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/headers-footers-oo.pdf" linktype="examples">OpenOffice Writer を使用して連続するヘッダを追加したサンプル (PDF ファイル)</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して PDF 文書に連続するヘッダとフッタを追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>Adobe Acrobat Pro で、ヘッダとフッタを追加したり変更したりできる。</p>
+<olist><item><p>文書 &gt; ヘッダとフッタ &gt; 追加を選択する</p></item><item><p>ヘッダとフッタの追加ツールで、文書内のヘッダとフッタのテキストと形式を指定する</p></item><item><p>「プレビュー」を使用して、文書のテキスト、フォントおよびレイアウトが望み通りになっていることを確認する</p></item></olist>
+<p>次の画像は、Acrobat Pro のヘッダとフッタの追加ツールを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF14/pro-header-footer-tool.jpg" alt="スクリーンショット：Adobe Acrobat Pro のヘッダとフッタの追加ツール" height="716" width="813"/></p></description>
+    </eg-group>
+    <eg-group>
+      <head>/Artifact タグまたはプロパティリストを使用して、PDF 文書内で連続するヘッダまたはフッタをページネーションアーティファクトとしてマークする</head>
+      <description><p>PDF 仕様を使用すると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7（ISO 32000-1）</loc>の節 14.8.2.2「実際のコンテンツとアーティファクト」（英語）で定義されているように、連続するヘッダとフッタを「ページネーションアーティファクト」としてマークできるようになる。</p>
+<p>アーティファクトは、/Artifact タグと共に、マークされたコンテンツ順序に含められることで実際のコンテンツと明示的に区別される。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+/Artifact
+BMC
+...
+EMC]]></codeblock>
+      <description><p>または</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+/Artifact propertyList
+BDC
+...
+EMC]]></codeblock>
+      <description><p>前者は一般的なアーティファクトを特定するために使用され、後者はプロパティリストが関連付けられているアーティファクトで使用される。注記：テキストのリフローを可能にするために、アーティファクトは可能な限りプロパティリストを関連付けて定義すべきである。境界ボックスが指定されていないアーティファクトは、リフロー中に削除される可能性がある。</p>
+<p>アーティファクトのプロパティリストのエントリには、Type、BBox、Attached、Subtype などがある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 14.8.2.2 (Real Content and Artifacts) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    			1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G61"/>
+      <relatedtech idref="PDF9"/>
+      <relatedtech idref="PDF2"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>連続するヘッダおよびフッタが提供されていて、利用者ーが文書内での現在位置を確認するために役立つ情報（ページ番号または章番号など）が含まれている</p>
+        </item>
+        <item>
+          <p>連続しているヘッダまたはフッタでセクションヘッダが使用されている場合、セクションヘッダと連続しているヘッダまたはフッタに一貫性がある</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. 及び 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_running_headers_and_footers_in_PDF_documents"/>
+      </source>
+   </admin>
+</technique>

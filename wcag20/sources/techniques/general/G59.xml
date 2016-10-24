@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G59">
+   <short-name>コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</short-name>
+   <applicability>
+      <p>インタラクティブな要素を含み、インタラクティブな要素のデフォルトのタブ移動順序を定義している、全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、インタラクティブな要素がコンテンツ内でのつながりや関係に即した順序で確実にフォーカスを受けるようにすることである。コンテンツを設計する際、リンク及びフォーム・コントロールなどのインタラクティブな要素を、デフォルトのタブ順序がコンテンツ内でのつながりや関係に即した順序になるように、コンテンツ内に配置する。それぞれのウェブコンテンツ技術がデフォルトのタブ順序を定義しているため、コンテンツ内でコントロールを配置するメカニズムは、用いるウェブコンテンツ技術に依存することになる。</p>
+    <p>例えばHTMLでは、デフォルトのフォーカス順序は、コンテンツのソース内で各要素が登場する順序となる。HTMLソースの順序がウェブページの視覚的な順序に合致していれば、Tabキーを押してコンテンツ内を進む順序は、コンテンツの視覚的なレイアウトと同じになる。ソースの順序が視覚的な順序と合致していないときは、Tabキーを押してコンテンツ内を進む順序が、視覚的に表示されたコンテンツの論理的な順序を反映したものとならなければならない。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G57"/>
+      <relatedtech idref="H4"/>
+      <relatedtech idref="C27"/>
+      <relatedtech idref="SCR26"/>
+      <relatedtech idref="SCR27"/>
+      <relatedtech idref="SCR37"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツ内のインタラクティブな要素の順序を確認する</p>
+        </item>
+        <item>
+          <p>インタラクティブな要素の論理的な順序を確認する。</p>
+        </item>
+        <item>
+          <p>コンテンツ内のインタラクティブな要素の順序が、その論理的な順序と一致している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C26">
+   <short-name>利用者が1行のテキストを読むのに横スクロールしないですむレイアウトに変換するオプションをコンテンツ内で提供する</short-name>
+   <applicability>
+      <p>CSSを用いているウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>コンテンツ制作者には、横スクロールが必要なレイアウトを用いなければならない状況があるかもしれない。その場合、利用者が1行のテキストを読むのに横スクロールしないですむレイアウトに変換するオプションをコンテンツ内で提供するとよい。標準的なスタイル切り替え技術を用いることで、これが実現できるだろう。</p>
+    <p>コンテンツのアクセスには横スクロールが必要だが、1行のテキストを読むには横スクロールの必要がない、という方法でレイアウトしてもよいことに注目すべきである。</p>
+    <p>例えば、全体としては横スクロールが必要なスプレッドシートでも、ひとつひとつの列を個別に読むのに横スクロールの必要がなければ容認できる。（すなわち、他の列を読む際にはスクロールが必要だが、ひとつひとつの列の左端又は右端を読むにはスクロールの必要がない、ということ。筆者は、完全に明快な方法で、このことを説明するのは難しいと思っている。）</p>
+    <note>
+      <p class="prefix">
+この達成方法は、非適合コンテンツに対する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>のページを提供するために、スタイル切り替え手法と組み合わせて用いることができる。詳細な情報は、<specref ref="C29"/>、及び、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance"
+                 locn-note="uc-conforming-alt-versions-head"
+                 linktype="understanding">適合している代替バージョンを理解する</loc>を参照のこと。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ある不動産会社が、オンラインの年次報告書を印刷用バージョンと同一のレイアウトで公開しており、1行のテキストを読むのに横スクロールが必要である。ページ上にスタイルシートを切り替えるコントロールがあり、横スクロールの必要がないレイアウトも提供している。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>金融情報のスプレッドシートをオンラインで公開している。1月における住宅市場の変化を説明したテキストが記載されている。スクリーンの右側に隠れている部分には、9月の市場変化の説明が記載された列がある。ウインドウサイズが最大化されていれば、利用者は、9月の部分まで横スクロールをすると、更に横スクロールをせずにテキストのそれぞれの行を読むことができる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="C20"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>横スクロールが必要なコンテンツを最大化したウィンドウで開く。</p>
+        </item>
+        <item>
+          <p>利用者が1行のテキストを読むのに横スクロールしないですむレイアウトに変換するオプションが、コンテンツ内にある。</p>
+        </item>
+        <item>
+          <p>そのオプションを有効にする。</p>
+        </item>
+        <item>
+          <p>テキストのどの行を読むにも横スクロールの必要がない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び 4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

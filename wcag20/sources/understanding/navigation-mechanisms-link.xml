@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="navigation-mechanisms-link" role="extsrc">
+   <head>2.4.9</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、利用者がそのリンク先に行きたいかどうかを判断できるように、コンテンツにあるそれぞれのリンクの目的を理解しやすくすることである。ベストプラクティスとしては、リンク先が同じリンクは同じ記述とすべきである。しかし、目的やリンク先が異なるリンクは、その記述も異なるようにすべきである（同じ機能性を有するコンポーネントの一貫した識別性を要求している<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="consistent-behavior-consistent-functionality" linktype="guideline">達成基準 3.2.4</loc>も参照のこと）。リンクの目的はそのリンクテキストによって確認できれば、例えば利用者ーエージェントがページ上の全てのリンクの一覧を提供する際のように、前後の文脈に関係ない状態でも、利用者はリンクを理解することができるようになる。</p>
+<p>この達成基準には、リンクの目的をウェブページ上にある情報からは判断できないリンクに対して例外が認められている。そのような状況では、障害のある利用者が不利な立場にあるわけではない。リンクの目的を理解するために追加入手可能な文脈が一切ないのである。しかし、この達成基準を満たすためには、そのリンクの目的を解釈するためにそのウェブページ上で利用できる文脈はどんなものであれ、そのリンクテキストで入手可能にしなればならない。 </p>
+<p>「メカニズム」という用語を用いているのは、コンテンツ制作者がすべてのリンクを前後の文脈に関係なく完全に理解できるようにするか、あるいはそのようにする方法を提供できるようにするためである。リンクすべてをリンクテキストだけでも曖昧ではないようにすることで、ページによっては、分かりやすくなる利用者もいれば、分かりづらくなってしまう利用者もいる。リンクを（それ自身により）明らかにするか そうしないか できるようにすることは、障害のある利用者にも無い利用者にも、彼らのニーズに最も合致したフォーマットのページを使えるようにすることである。</p>
+<p>例えば、100冊の書籍のタイトルが並んでいるページに、それぞれの書籍を HTML、PDF、DOC、TXT、MP3、又は AAC でダウンロードするリンクがある場合、たいていは書籍のタイトルの後に「HTML版」のようなリンクがある。そして、「次のバージョンも利用可能：」という文が続いていて、「HTML」、「PDF」、「DOC」、「TXT」、「MP3」、そして「AAC」という短いテキストのリンクがある。レベル AAA では、ある利用者は このようにページを見ることが選べるであろう。それぞれのリンクに書籍のタイトルがあると、分かりづらかったり、使うのに時間がかかってしまったりするからである。その他の利用者は、それぞれのリンクがそれだけで理解できるように、それぞれのリンクの一部に書籍のタイトルがあるようにページを見ることが選べるであろう。前者のグループにも後者のグループにも、いろいろな使い方をしている、又は様々な種類や度合いの障害のある、視覚又は認知の障害のある利用者が含まれるであろう。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>運動障害のある利用者が、関心のないウェブページをスキップできるようになり、関係のないページへ行ってからまた元のページの戻ってくるような無駄なキーストロークを避けることができるようになる。</p></item>
+	<item><p>認知に制約のある利用者が必要のないコンテンツへ行ったり来たりして現在位置を見失う、ということがなくなる。</p></item>
+	<item><p>視覚障害のある利用者は、元のページに戻ってきたときコンテンツのその場所が分からなくなる、ということがなくなり恩恵を受ける。そして、リンク先が説明されているので、情報を探す上で、スクリーンリーダーのリンク一覧がより有益になる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">アイコンとテキストの両方が同じリンク内にある</emph>
+              </p><p>自動投票機のアイコンと「アイルランド政府の電子選挙委員会」というテキストが、一つのリンクになっている。</p></item>
+	<item><p>
+                <emph role="bold">書籍名のリスト</emph>
+              </p><p>リストにある書籍が、HTML、PDF、そして mp3（人が本を読み上げているのを録音したもの）の3つのフォーマットで利用可能である。書籍のタイトルの後に、様々なフォーマットへのリンクがある。例えば、描画されるリンクテキストにはフォーマット名しかないが、それぞれのリンクに関連付けられているテキストには、例えば「ガリバー旅行記　MP3版」というように、書籍のタイトルとフォーマットの両方がある。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc>
+              </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>十分な達成方法</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91" linktype="general">リンクの目的を説明したリンクのラベルを提供する</loc></p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H30" linktype="html">a 要素のリンクの目的を説明するリンクテキストを提供する</loc>
+                    </p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H24" linktype="html">イメージマップの area 要素に代替テキストを提供する</loc>
+                    </p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH27" linktype="flash">ボタンの目的を説明するラベルを提供する</loc>
+                    </p></item>
+	<item><p>次の達成方法の一つを用いて、利用者が短めのリンクテキスト又は長めのリンクテキストを選べるようにする:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G189" linktype="general">ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR30" linktype="script">スクリプトを用いて、リンクのラベルを変更する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH7" linktype="flash">スクリプトを使用してコントロールのラベルを変更する</loc></p></item></ulist></item>
+	<item role="css"><p>次の達成方法の一つを用いて、リンクの目的を補足説明する:    </p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C7" linktype="css">CSSを用いて、リンクのラベルの一部を非表示にする </loc>
+                    </p></item></ulist></item>
+	<item><p>次の達成方法の一つを用いて、セマンティックにリンクを示す:    </p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF11" linktype="pdf">PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</loc>
+                    </p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF13" linktype="pdf">PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する</loc>
+                    </p></item><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL18.html" linktype="silverlight">Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</loc>
+                    </p></item></ulist></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.4.9 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html">隣り合った画像とテキストリンクを同じリンクの中に入れる </loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH5" linktype="flash">リンク先が同じで隣接している画像とテキストのボタンを結合する</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H33" linktype="html">title属性を用いて、リンクテキストの文言を補足する </loc>
+                </p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 2.4.9 のよくある不適合事例</head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F84" linktype="failure">達成基準 2.4.9 の不適合事例：　リンクテキストを具体的なテキストに変更するメカニズムを提供せずに、「ここをクリック」又は「続きを読む」といった不明確なリンクを用いる</loc>
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F89" linktype="failure">達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の不適合事例 － イメージだけがリンクのコンテンツである際に、img要素のalt属性値が空になっている</loc></p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

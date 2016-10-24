@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="minimize-error-suggestions" role="extsrc">
+   <head>3.3.3</head>
+   <div3 role="intent">
+      <head>Intent of this Success Criterion</head>
+
+<p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。</p><p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。</p>
+<p>コンテンツ制作者はエラーを説明することができる。又、利用者ーエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>入力エラーを修正する方法に関する情報を提供することによって、学習障害のある利用者がフォームに問題なく入力できるようになる。そして、全盲の利用者又は視覚に障害のある利用者が、入力エラーの内容及びその修正方法をもっと容易に理解できるようになる。また、運動障害のある利用者は、入力内容を変更せざるを得なくなる回数を減らすことができる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">入力エラーを修正するためのヘルプの追加</emph>
+              </p><p>うまく送信されなかったフォームのエラー画面で、そのページで起こった入力エラーを正しい入力方法とあわせて説明していて、入力エラーになったテキストフィールドのヘルプを追加で提供している。
+              </p></item>
+	<item><p>
+                <emph role="bold">制限のある値の提示</emph>
+              </p><p> 月の名前を入力するテキストフィールドがある。利用者が「12」と入力すると、修正する方法が提示される。
+            </p><ulist><item><p>入力可能な値の一覧。例えば、「どれか一つを選んでください： January, February, March, April, May, June, July, August, September, October, November, December」。</p></item><item><p>入力すべき値を説明する。例えば、「月の名前を入力してください。」</p></item><item><p>入力されたデータを異なるフォーマットに変換して提示する。例えば、「もしかして 'December' ですか?」</p></item></ulist></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準3.3.3 の達成方法及び不適合事例 - 入力エラー修正方法の提示</head>
+
+<note>
+<p>2つ以上の状況が適用される場合もある。例えば、必須フィールドが特別なデータフォーマットを要求する場合である。</p>
+</note>
+
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A： 必須のフィールドに情報が入力されていない場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G83" linktype="general">入力が完了していない必須項目を特定するために、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF5" linktype="pdf">PDF フォームで必須項目のフォーム・コントロールを特定する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL35.html" linktype="silverlight">Using the Validation and ValidationSummary APIs to Implement Client Side Forms Validation in Silverlight</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B： フィールドの情報に、特別のデータフォーマットが要求される場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G85" linktype="general">利用者の入力が要求されたフォーマット又は値ではなかった際に、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G177" linktype="general">テキストの修正候補を提示する</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">利用者ーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                  </p></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 C： 利用者の入力する情報は、複数の限定された値のうちの一つであることが要求される場合：</head>
+<olist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G84" linktype="general">利用者が認められた値以外の情報を提供した際に、テキストの説明文を提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G177" linktype="general">テキストの修正候補を提示する</loc>
+                      </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR32" linktype="script">クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH12" linktype="flash">クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</loc></p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF22" linktype="pdf">利用者ーの入力が PDF フォーム内の必須形式または必須値の範囲外になる場合を指定する</loc>
+                  </p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.3.3 でさらに対応が望まれる達成方法（参考） </head>
+<ulist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G139" linktype="general">利用者がエラー箇所に移動できるようにするメカニズムを提供する</loc>
+                </p></item>
+	<item><p>
+        エラーメッセージを、ウェブページのその他のテキストと区別しやすくし、容易に理解できるようにする（リンク追加予定）
+    </p></item>
+	<item><p>
+        送信されたフォームが正しいかをサーバーで確認する（リンク追加予定）
+    </p></item>
+	<item><p>
+        必須の情報が入力されない場合に、必須フィールドを識別するだけでなく、正しい情報の説明と事例を提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        フォームフィールドと関連して、各入力エラーを訂正するための提案を繰り返し強調する（リンク追加予定）
+    </p></item>
+	<item><p>
+        提案するリストの各項目から、対応するフォームフィールドへスキップする方法を利用者に提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        変更の必要のあるフォームフィールドに対して、文脈に沿った追加のヘルプを提供する（リンク追加予定）
+    </p></item>
+	<item><p>様々なフォーマットの入力データを受け付ける（リンク追加予定） 
+                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G199" linktype="general">データの送信が成功した時は、成功したことを示すフィードバックを提供する</loc></p></item>
+</ulist>
+
+<div5>
+<head>利用者に提案を行う達成方法（参考）</head>
+<ulist>
+	<item><p>
+        入力エラーの数についての情報を含むテキストの説明、各項目を訂正するための提案、そして、どのように進めるべきかの指示を提供する（リンク追加予定）
+    </p></item>
+	<item><p>
+        コンテンツの最初の項目（あるいは最初の項目の一つ）を訂正するための提案を含むテキストの説明を提供する、又は、コンテンツの中でこの情報を強調する（リンク追加予定）
+    </p></item>
+	<item><p>
+        エラーを表示し、元のフォームの文脈に沿った提案をする（例えば、フォームのどこに入力エラーがあるかを再表示し、訂正のための提案がハイライトされ、元のフォームとの関連を表示する）（リンク追加予定）
+    </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head>HTMLの達成方法（参考）</head>
+<ulist>
+	<item><p>"	必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する（リンク追加予定）  </p></item>
+	<item><p>"	正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する（リンク追加予定） </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head>クライアントサイドのスクリプトの達成方法（参考）</head>
+<ulist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script">クライアントサイドのバリデーション及びアラートを提供する</loc>
+                  </p></item>
+	<item><p>
+        クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する（リンク追加予定）
+    </p></item>
+	<item><p>
+        フォームの送信動作をきっかけにクライアントサイドのバリデーションの機能を呼び出す（リンク追加予定）
+    </p></item>
+</ulist>
+</div5>
+
+<div5>
+<head role="aria">ARIAの達成方法（参考）</head>
+<ulist>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/ARIA2.html" linktype="aria">ARIA2: Identifying required fields with the "required" property</loc>
+                  </p></item>
+	<item><p>
+                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/ARIA3.html" linktype="aria">ARIA3: Identifying valid range information with the "valuemin" and "valuemax" properties</loc>
+                  </p></item>
+</ulist>
+</div5>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

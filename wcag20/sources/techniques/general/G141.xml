@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G141">
+   <short-name>見出しを用いてウェブページを構造化する</short-name>
+   <applicability>
+      <p>セクションで構成されたコンテンツのあるウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-headings" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、それぞれのセクションにそれを識別できる見出しがついているようにすることである。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#content-structure-separation-programmatic">達成基準1.3.1</loc>では見出しがプログラムで解釈可能な方法でマークアップされていることを要求している。</p>
+    <p>HTMLにおいては、これは見出し要素(h1, h2, h3, h4, h5, h6)によって実現されうる。これにより利用者ーエージェントは自動的にセクションの見出しを識別できる。他のウェブコンテンツ技術では、また異なる方法で見出しを識別する。ページ内の移動と文書の全体的構造の理解を助けるには、コンテンツ制作者は見出しを適切にネストさせるべきである(たとえばh1にはh2が続き、h2にはh2かh3が続き、h3にはh3またはh4が続き……といったように)。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTMLのページを構造化するために用いられた見出し</head>
+      <description><p>ある調理法を紹介するページでは、h1要素により全体とタイトルを示し、h2要素で大項目としてサラダ油による調理とバターによる調理を示し、h3要素で油による調理の詳細なサブセクションを示している。</p>
+</description>
+      <code role="html401"><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>調理法</title>
+</head>
+<body>
+<h1>調理法</h1>
+... ここにはテキストが入る ...
+<h2>サラダ油による調理</h2>
+... セクションのテキストが入る ...
+<h3>ソテー</h3>
+....
+<h3>油揚げ</h3>
+<h2>バターによる調理</h2>
+... セクションのテキストが入る ...
+</body>
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://accessibility.psu.edu/headingshtml">Heading Tags</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H42"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ページの内容がセクションに分けられている。</p>
+        </item>
+        <item>
+          <p>それぞれのセクションに見出しがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

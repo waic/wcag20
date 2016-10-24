@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F41">
+   <short-name>達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の不適合事例 － meta要素によるタイムアウト付きのリフレッシュを用いている</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="failure"/>
+      <success-criterion idref="time-limits-postponed" relationship="failure"/>
+      <!-- Bruces raises concern this mapping could mislead people, should expand technique to clarify -->
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p><code>meta</code><code>http-equiv</code>のリフレッシュは、定期的にページを更新したり、利用者を別のページにリダイレクトしたりするためにしばしば用いられる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>この非推奨例では、利用者ページが一定間隔で変化する。コンテンツ制作者はこの手法を「プッシュ」テクノロジーのシミュレートに用いるべきではない。制作者は、利用者がページを読むのにどれくらいの時間を必要とするかを予期することはできない。早すぎるリフレッシュは利用者を混乱させることになる。コンテンツ制作者は周期的なリフレッシュを避け、利用者自身にいつ最新の情報がほしいかを選択させるべきである。（<att>content</att>属性内の数字はリフレッシュまでの秒数である。）</p>
+</description>
+      <code><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml">   
+  <head>     
+    <title>WCAG 2.0のためのHTMLの達成方法</title>     
+    <meta http-equiv="refresh" content="60" />   
+  </head>   
+  <body>
+    ...     
+  </body> 
+</html>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>これは、利用者を数秒後に別のページにリダイレクトする非推奨例である。コンテンツ制作者はこの代わりに、サーバーサイドのリダイレクトを使用すべきである。（<att>content</att>属性内の数字はリフレッシュまでの秒数である。）</p>
+</description>
+      <code><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml">   
+  <head>     
+    <title>チューダー朝</title>     
+    <meta http-equiv="refresh" content="10;URL='http://example.com/'" />   
+  </head>   
+  <body>
+    <p>このページは<a href="http://example.com/">example.com</a>へ移動します。
+    私たちは独自のドメイン名を取得しました。数秒後にリダイレクトします。 
+    みなさまのリンクとお気に入りのアップデートをお願いいたします。</p>
+  </body> 
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+     <relatedtech idref="SVR1"/>
+  </related-techniques>
+  <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ドキュメント内の<el>meta</el>要素を探す。</p>
+        </item>
+        <item>
+          <p>それぞれの<el>meta</el>要素に関して、<att>http-equiv</att>属性の値に「refresh」（大文字小文字を区別しない）が含まれており、<att>content</att>属性に0より大きい（秒を表す）値がある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="keyboard-operation-all-funcs">
+   <head>2.1.3</head>
+   <div3 role="intent">
+      <head>この達成基準の意図 </head>
+
+<p>この達成基準の意図は、すべてのコンテンツをキーボードで操作可能にすることである。例外が認められないということを除いては、達成基準 2.1.1 と同じである。ただし、その根本的な機能が単に利用者の動作の終点に依存しておらず、利用者の動作による軌跡に依存した入力を必要とするコンテンツ（つまり、達成基準 2.1.1 では例外とされていたコンテンツ）をキーボードで操作可能にするということではない。正しくは、そういった軌跡に依存した入力を用いるコンテンツは、この達成基準に適合することができないため、ガイドライン 2.1 にレベル AAA で適合することはできないということである。</p>
+</div3>
+
+<div3 role="exmaples">
+<head>達成基準 2.1.3 の事例</head></div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>この達成基準には、特に追加された達成方法があるわけではない。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="keyboard-operation-keyboard-operable" locn-note="keyboard-operation-keyboard-operable-techniques-head" linktype="understanding">達成基準 2.1.1 の達成方法</loc>を参照のこと。アナログで時間の経過に依存した入力があるためにその達成方法が不可能な場合は、このレベル AAA の達成基準に適合することはできない。</p></item>
+</olist>
+</div4>
+</div3>
+</div2>

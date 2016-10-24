@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G172">
+   <short-name>テキストの両端揃えを解除するメカニズムを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、両端揃えをしていないバージョンのページを提供することである。</p>
+    <p>コンテンツ制作者は、レイアウトの目的でテキストを両端揃えにしたいと思う場合があるかもしれない。この場合、テキストの両端揃えを解除する機能を提供すればよい。そのためのコントロールは、探し出しやすく、アクセスしやすいように、ページの先頭の近くにおくとよい。</p>
+    <note><p class="prefix">この達成方法は、適合していないコンテンツに対して<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>のページを提示するために、スタイルを切り替える達成方法と組み合わせて用いられる。詳細は、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29.html" linktype="css">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</loc>」(CSS) 及び「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" linktype="understanding">適合している代替バージョンを理解する</loc>」を参照。</p>
+
+	</note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>両端揃えで、元々出版された作業の外観の再現を試みたオンラインの古典小説がサイトにある。「両端揃えを解除する」と書かれたボタンがページの先頭近くにあり、スタイルシートを切り替えるためにスタイルを切り換える達成方法が使用されている。新しいスタイルシートでは、テキストを左揃えで配置する。 </p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="C19"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>両端揃えのページを開く。</p>
+        </item>
+        <item>
+          <p>両端揃えを解除する機能がある。</p>
+        </item>
+        <item>
+          <p>その機能により、両端揃えが解除できる。 </p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

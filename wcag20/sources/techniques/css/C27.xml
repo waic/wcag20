@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C27">
+   <short-name>DOMの順序を表示順序と一致させる</short-name>
+   <applicability>
+      <p>HTML及びXHTMLで使用されるCSS</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-sequence" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ソースコード上のコンテンツの順序が、コンテンツの表示結果の順序と同じになるようにすることだ。
+ソースコード上のコンテンツの順序は、コンテンツ制作者によって、CSSによる表示結果とは異なるものにされる場合がある。
+それぞれの順序はその状態では意味の分かるものになっているかもしれないが、支援技術の利用者にとっては混乱をもたらす可能性がある。
+そのようなことは、（スクリーンリーダーのように）ソースコードに直接アクセスして内容を読み込んでいる場合や、キーボードで操作している場合などに、コンテンツ制作者による表示指定を利用者が無効にすることによって起こり得る。
+もし、スクリーンリーダーを使ってページの内容をソースの順序で読んでいる全盲の利用者が、ページの内容を表示される順序で読んでいる利用者と一緒に働いていたら、異なる順序の情報に出くわすことで混乱するかもしれない。
+スクリーンリーダーと組み合わせて画面拡大ソフトウェアを使用しているロービジョンの利用者は、読み上げている箇所を見失って混乱する可能性もある。
+キーボード利用者は、ソースの順序が表示の順序と違っていると、次のフォーカスの場所が予想と違って困惑することもあるだろう。</p>
+    <p>表示結果の順序を前提としなければ、ページの全体を理解することが難しい状況もあるかもしれない。その場合、もしソースの順序が異なっていたら、理解することはさらに難しくなってしまう。</p>
+    <p>ソースの順序が表示結果の順序と同じである場合、すべての人が同じ（正しい）順序でコンテンツを読んで情報のやり取りをすることができる。</p>
+    <note>
+      <p class="prefix">
+ HTMLの<att>tabindex</att>属性には2つの機能がある。ひとつは要素をフォーカス可能にすることであり、もうひとつは要素にフォーカスの順序を割り当てることである。
+<att>tabindex</att>の値を0にするとその要素はフォーカス可能になるが、フォーカスが追加されるだけで順序はソースの通りになる。
+フォーカスの順序は、tabindexに指定された正の値だけで昇順となる。
+<att>tabindex</att>の値をドキュメント・オブジェクト・モデル(DOM)の要素の順序と異なるように設定することは、支援技術の利用者にとっては不適当な順序となることもある。
+これは主に、tabindexがCSSではなく、HTML又はXHTMLで指定されていることによるものだ。
+この点については、将来の仕様で変更される可能性がある。
+それは、視覚的な表示結果の順序とは異なる可能性もある。</p>
+    </note>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar</loc>を使用すると、Microsoft の Internet Explorer でスクリプトによって生成されたDOMのチェックが可能になる。</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://getfirebug.com/">Firebug</loc>を使用すると、Firefox でスクリプトによって生成されたDOMのチェックが可能になる。</p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H4"/>
+      <relatedtech idref="G57"/>
+      <relatedtech idref="G59"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>エンド利用者ーに提供されているそのままの状態で、ウェブページのコンテンツの順序を視覚的に検査する。</p>
+        </item>
+        <item>
+          <p>DOMを表示できるツールを使って、DOM内の要素を検査する。</p>
+        </item>
+        <item>
+          <p>ソースコード上でのコンテンツの順序が、ウェブページのコンテンツの表示結果の順序と一致している（例：英語のページなら、順序は上から下へ、左から右へ）。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

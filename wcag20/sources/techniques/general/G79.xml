@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G79">
+   <short-name>テキストの音声バージョンを提供する</short-name>
+   <applicability>
+      <p>音声フォーマットへのリンクをサポートするウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-supplements" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>書かれたテキストの言葉を読んで理解するのが難しい利用者には、テキストの音読を聞くのが非常に役立つことがある。現在このような代替バージョンは、録音した肉声又は合成音声を用いて提供できる。例えば、コンテンツ制作者がテキストを合成音声に変換し、その音声バージョンを音声ファイルとして保存できる製品がたくさんある。音声バージョンへのリンクは、コンテンツ内で提供すればよい。制作コストは、使用する声の品質や、テキストを頻繁に変更するかどうかによって異なる。</p>
+    <ulist>
+      <item><p>短いテキスト及び静的なテキストコンテンツの音声バージョン</p>
+							
+							<p>この方法は、量の少ないテキストや、めったに変更しない文書に効果的である。</p>
+              
+                     <olist><item><p>誰かがテキストを読み上げたものを録音するか、又は個々の文書や一部の段落を合成音声に変換するツールを利用する。できれば、最も聞き取りやすく、魅力的な声を採用するのがよい。</p></item><item><p>音声バージョンを音声ファイルとして保存する。その際、広く利用されていて、多くのメディアプレーヤーがサポートしている音声フォーマットを用いる。</p></item><item><p>音声バージョンへのリンクを提供する。</p></item><item><p>音声フォーマットを明記する（例えば、.MP3、.WAV、.AUなど）。</p></item><item><p>そのフォーマットをサポートしているメディアプレーヤーへのリンクを提供する。</p></item></olist></item>
+      <item><p>よく変更するテキストの音声バージョン</p>
+              
+							<p>ページをよく変更する場合や、利用者の選択によってテキストコンテンツが変わる場合は、サーバサイドで処理する方法が最もよいだろう。サーバサイドで処理するツールの中には、利用者が興味のあるテキストを選択し、聞くことができるものがある。通常は、利用者がテキストから音声への変換を開始するボタンを押せば読み上げられる。</p></item>
+    </ulist>
+  </description>
+   <examples>
+      <eg-group>
+      <head>政府機関のウェブサイト</head>
+      <description><p>ある公営住宅機構のウェブサイトには、全てのページに「このページを読み上げる」というボタンがある。利用者がボタンを選択すると、そのページが合成音声で読み上げられる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツの音声バージョンが利用できる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

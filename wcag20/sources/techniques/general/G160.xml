@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G160">
+   <short-name>コンテンツを利用するのに理解が不可欠な情報、アイデア及びプロセスの手話バージョンを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-supplements" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>聴覚障害や認知障害のある利用者の中には、手話を第一言語としている人がいる。そのような利用者にとっては、文語バージョンよりもページの手話バージョンのほうが理解しやすい可能性がある。この達成方法の目的は、概念やプロセスが記述された難しいテキストについて、手話利用者の理解するのを助ける手話バージョンを提供することである。手話コンテンツはそのテキストに追加で提供する。</p>
+    <p>手話バージョンは補足コンテンツであるため（また、手話はコンテンツを音声で読み上げる目的のものではないため）、主要なコンテンツとは別の部分で見られる状態にすべきだが、必ずしも同期させる必要はない。同期が有用な場合があるとしても、必須ではない。</p>
+    <p>手話バージョンをコンテンツの別の部分で利用可能にするために、ビデオをページに直接埋め込んだり、ビデオプレーヤーを別ウィンドウで起動するリンクを含めてもよい。ビデオ表示用の別ページへのリンクによって、手話バージョンを提供することもできる。</p>
+    <p>手話は、手のひら、腕、肩、頭、顔、唇、舌を使って伝える、三次元の視覚言語である。何が示されているのかを受け手が正しく理解するために、ビデオでは完璧な手話を録画しなければならない。一般的に、手話通訳者は見切れ（ビデオの外に手が出てしまうこと）が発生しない範囲で、できるだけカメラに近づいて手話を行なう。</p>
+    <p>手話通訳者の見つけ方については、後述の参考リソースの部分に載っている。【訳注：ただし、主に英語圏での情報である。】</p>
+    <note><p class="prefix">映像ストリームが小さすぎる場合は、手話通訳が見にくくなる。手話通訳を含む映像ストリームを制作する場合は、映像ストリームをアクセシビリティ・サポーテッドなウェブコンテンツ技術でフルスクリーンで再生するメカニズムがあることを確認する。そうでない場合は、映像の中の手話通訳の部分が、映像ストリームがフルスクリーンになった際のサイズまで調節可能にする。</p>
+               <p class="prefix">一般的に、手話は単に墨字を符号化したものではないため、コンテンツ制作者は複数種類あるうちのどの手話を用いるかを決めなければならない。通常は主な利用者が使用している手話を用いる。さまざまな利用者を想定する場合は、複数の手話を用いる。複数の手話のための推奨達成方法を参照のこと【訳注：まだ文書化されていない。】。</p></note>
+  </description>
+   <examples/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.nidcd.nih.gov/health/hearing/pages/asl.aspx">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p>
+            </item>
+            <item>
+               <p>
+                	<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ieeexplore.ieee.org/application/enterprise/entconfirmation.jsp?arnumber=1251527&amp;icp=false">Perceptually optimised sign language video coding based on eye tracking analysis</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rid.org/">Registry of Interpreters for the Deaf</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.aslnetwork.com/">American Sign Language Interpreter Network</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.signonasl.com/home.html">Sign On - A Sign Language Interpreting Resource, Inc.</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://aslservices.com">American Sign Language Services, Inc.</loc>
+                </p>
+            </item>
+         </ulist>
+         <p>See also
+              <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="media-equiv-sign"
+                 locn-note="media-equiv-sign-resources-head"
+                 linktype="understanding">Related Resources for Success Criterion 1.2.6 - Sign Language</loc>.</p>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G54"/>
+      <relatedtech idref="G81"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツを利用するのに理解が不可欠なアイデアやプロセスを説明しているテキストを見出す。</p>
+        </item>
+        <item>
+          <p>コンテンツの中で、あるいは、コンテンツ内のリンクを通じて、テキストの補足となる手話が利用できる。</p>
+        </item>
+        <item>
+          <p>手話による補足が、テキストで説明している概念やプロセスを伝えている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. 及び 3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

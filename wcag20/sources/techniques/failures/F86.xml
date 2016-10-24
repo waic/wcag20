@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F86">
+   <short-name>達成基準 4.1.2 の不適合事例 － 例えば電話番号にように、複数に分けられたテキストフィールドのそれぞれに対して、識別名が提供されていない</short-name>
+   <applicability>
+      <p>全般</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>これは、複数のテキストフィールドから成るフォームの入力項目で、その一部又は全部に識別名がないことによる達成基準4.1.2の不適合事例について述べている。多くの場合、複数のテキストフィールドから成るフォームの入力項目の全体に対してラベルが1つあり、そのラベルが最初のテキストフィールドに対してプログラム的に関連付けられているか、又はどのテキストフィールドに対してもプログラム的に関連付けられていない必要がある。</p>
+    <note><p class="prefix">識別名は、必ずしも視覚的に表示しなければならないわけではないが、支援技術に対しては明示されている必要がある。</p>
+</note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>米国の電話番号は、3桁の市外局番、3桁の市内局番、それに続く4桁の番号で構成されている。通常はこれが、例えば（206）555-1212のように、（市外局番）市内局番-番号というフォーマットで示される。多くの場合、電話番号の記入を求めるフォームは3つのテキストフィールドに分かれているが、次の例ではラベルが1つしかない。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+電話番号： 
+(<input type="text" size="3">) <input type="text" size="3">-<input type="text" size="4">]]></codeblock>
+      <description><p>この不適合となる事例は、アクセシビリティAPIに3つのテキストフィールドそれぞれに対する識別名（name）がない場合に生じる。支援技術を使っている利用者は、3つの不明確なテキストフィールドを提示されることになる。また、3つのテキストフィールドから成る米国の電話番号の場合、一部の支援技術は、1つ目のフィールドを「（」、2つ目のフィールドを「）」、3つ目のフィールドを「-」とラベル付けすることがあり、これも決して利用者の役に立つものではない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>同じく米国の電話番号で、この事例では、ラベルがプログラム的にどの部分にも関連付けられていない。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+電話番号：
+(<input type="text" size="3">) <input type="text" size="3">-<input type="text" size="4">]]></codeblock>
+      <description><p>支援技術を使っている利用者は、3つの不明確なテキストフィールドを提示されることになる。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head>不適合となる</head>
+      <description><p>同じく米国の電話番号で、この例では、ラベルが1つめのテキストフィールドにプログラム的に関連付けられている。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+<label for="area">電話番号：</label> 
+(<input id="area" type="text" size="3">) <input type="text" size="3">-<input type="text" size="4">]]></codeblock>
+      <description><p>支援技術を使っている利用者は、1つめのテキストフィールドが電話番号全体のためのテキストフィールドであると理解し、2つめと3つめは不明確なテキストフィールドとして認識することになる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://msdn.microsoft.com/en-us/library/ms695716.aspx">Microsoft Active Accessibility 2.0 SDK</loc>. Includes Inspect32.exe and other MSAA tools.</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://developer.gnome.org/atk/unstable/">Gnome Accessibility Toolkit documentation</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar</loc>. Allows examination of script-generated DOM in Microsoft Internet Explorer.</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://getfirebug.com/">Firebug</loc>. Allows examination of script-generated DOM in Firefox.</p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques><!-- the following were not yet aproved when this tech. was published: 
+            -Modeling custom user interfaces in HTML semantics (HTML, CSS, Script) This is a new technique
+            - Using CSS to hide label elements when visible text labels cannot be used (CSS) (this is new technique)  -->
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H71"/>
+      <relatedtech idref="H65"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>
+        <strong>一般的な手順：</strong>
+      </p>
+      <olist>
+        <item>
+          <p>自分の使用しているプラットフォームのアクセシビリティAPIを確認できるツールをインストールする（「参考リソース」を参照）。</p>
+        </item>
+        <item>
+          <p>フォームにあるコントロールそれぞれをチェックする。</p>
+        </item>
+        <item>
+          <p>各コントロールに対して、識別名（name）のプロパティがある。</p>
+        </item>
+      </olist>
+      <p>
+        <strong>HTML及びXHTMLの場合の手順：</strong>
+      </p>
+      <olist>
+        <item>
+          <p>HTMLソースにある<el>input</el>、<el>select</el>、及び<el>textarea</el>要素をチェックする。</p>
+        </item>
+        <item>
+          <p>要素に<att>title</att>属性がある。</p>
+        </item>
+        <item>
+          <p>関連付けられた<el>label</el>要素がある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>
+        <strong>一般的な判定基準：</strong>
+      </p>
+      <ulist>
+        <item>
+          <p>3. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+        </item>
+      </ulist>
+      <p>
+        <strong>HTML及びXHTMLの場合の判定基準：</strong>
+      </p>
+      <ulist>
+        <item>
+          <p>2. 及び 3. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

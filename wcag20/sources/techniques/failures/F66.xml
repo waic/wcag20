@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F66">
+   <short-name>達成基準 3.2.3 の不適合事例：　ナビゲーションリンクをさまざまなページで相対的に異なる順序で提示する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-consistent-locations" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、ウェブページ一式の中にある複数のウェブページ上で繰り返されているナビゲーションメカニズム（達成基準 3.2.3）を含むすべての達成方法における不適合の条件を説明している。メカニズムが、2ページ又はそれ以上のページに異なる順序でリンクの順番を提示する場合に、不適合が起こる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>2つの異なるページで相対的に異なる順序で一連のリンクを提示しているXHTMLメニュー</head>
+      <description><p>異なる順序でリンクを提示するナビゲーションメカニズムの例。</p>
+<p><emph role="bold">1ページ目のメニュー</emph></p>
+</description>
+      <code role="html401"><![CDATA[
+    <div id="menu"> 
+    <a href="Brazil.htm">ブラジル</a><br />
+    <a href="Canada.htm">カナダ</a><br />
+    <a href="Germany.htm">ドイツ</a><br />
+    <a href="Poland.htm">ポーランド</a> 
+</div>]]></code>
+      <description><p><emph role="bold">2ページ目のメニュー</emph></p>
+</description>
+      <code role="html401"><![CDATA[
+    <div id="menu"> 
+    <a href="Canada.htm">カナダ</a><br />
+    <a href="Brazil.htm">ブラジル</a><br />
+    <a href="Germany.htm">ドイツ</a><br />
+    <a href="Poland.htm">ポーランド</a> 
+</div>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ナビゲーションメカニズムが複数のウェブページ上で使用されている。</p>
+        </item>
+        <item>
+          <p>各ページのナビゲーションメカニズムのデフォルトのプレゼンテーションで、リンクリストが各ウェブページ上で相対的に同一の順番になっている。</p>
+        </item>
+      </olist>
+      <note><p class="prefix">「相対的に同一の順番」は、あるページではリンク項目間に二次的なナビゲーション項目があるかもしれないことを意味する。これらが存在しても、この検証の結果に影響を及ぼすことはない。</p>
+	</note>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1．及び2．を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

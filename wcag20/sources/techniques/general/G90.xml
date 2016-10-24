@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G90">
+   <short-name>キーボードがトリガーとなるイベント・ハンドラを提供する</short-name>
+   <applicability>
+      <p>コンテンツに機能性を含んでいるウェブコンテンツ技術すべて</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、キーボード又はキーボード・インターフェースを使用している利用者がコンテンツの機能にアクセスできるようにすることである。そのためには、キーボードではないUIのイベントによって引き起こされるすべてのイベント・ハンドラは、キーボードベースのイベントとも関連づける、又は、他のデバイス特有の機能によって提供された機能を遂行するために冗長なキーボードベースのメカニズムを提供する。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="SCR2"/>
+      <relatedtech idref="SCR20"/>
+      <relatedtech idref="SCR35"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>すべての機能がキーボードだけを使ってアクセスできる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

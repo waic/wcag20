@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H45">
+   <short-name>longdesc属性を用いる</short-name>
+   <applicability>
+      <p>短い代替テキストでは説明しきれない画像を含むHTML及びXHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>古い支援技術の中は、<att>longdesc</att>属性をサポートしていないものもある。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、短い代替テキストでは画像の機能や情報が十分に伝達できない場合に、<att>longdesc</att>属性でのファイル指定によって情報を提供することである。<att>longdesc</att>属性には<acronym title="Unifrom Resource Identifier">URI</acronym>を指定する。これは非テキストコンテンツの詳しい説明を含む目的地を意味する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <code><![CDATA[<p><img src="chart.gif" alt="複雑な図" longdesc="chartdesc.html"/></p> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/articles/too-much-accessibility/too-much-accessibility-the-rise-and-fall-of-the-longdesc/" >Too much accessibility - the rise and fall of the LONGDESC</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G73"/>
+      <relatedtech idref="G74"/>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p><att>longdesc</att>属性を指定した<el>img</el>要素がある。</p>
+        </item>
+        <item>
+          <p><att>longdesc</att>属性の値が、存在するリソースの有効なURIである。</p>
+        </item>
+        <item>
+          <p>URIで指定されたコンテンツには、関連付けられたオリジナルの非テキストコンテンツの詳しい説明が含まれている。</p>
+        </item>
+      </olist>
+    </procedure>
+
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.から3.を全て満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

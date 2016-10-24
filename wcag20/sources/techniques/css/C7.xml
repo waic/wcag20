@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C7">
+   <short-name>CSSを用いて、リンクテキストの一部を非表示にする</short-name>
+   <applicability>
+      <p>CSSに対応しているウェブコンテンツ技術全て</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p><br/>この達成方法の目的は、他のリンクとの違いを示すテキストをリンクに付加することで、リンクテキストを補完することである。ただし、付加するテキストには、CSS対応の利用者ーエージェントではそのテキストが表示されなくなるようなスタイルを指定する。表示されているリンクテキストの意味を理解するためにその前後の内容も読む必要がある場合、この達成方法を用いることによって、リンクテキストの表示は元の状態のままでありながら、リンクに対する十分な説明を提供することができる。</p>
+    <p>この達成方法を用いるには、まず、表示させないテキストを対象とするCSSセレクタを作成する。そのセレクタの規則集合では、overflowプロパティの値がhiddenに指定された縦横1ピクセルのボックスの中にテキストが入るようにし、さらにそのテキストをビューポートの外側に配置する指定を入れる。これによって、テキストは画面上には確実に表示されなくなるが、スクリーンリーダーや点字ディスプレイなどの支援技術に対してはアクセシブルな状態を保持できる。ここで留意すべきは、画面に表示されなくなるだけでなく支援技術に対してもそのテキストを隠してしまうという意図せぬ影響が出る恐れがあるため、この達成方法では<code><![CDATA[visibility:hidden]]></code>及び<code><![CDATA[display:none]]></code>を使用していないことである。</p>
+    <note><p class="prefix">
+リンクテキストを非表示にするこの達成方法は、スクリーンリーダーの利用者や企業のウェブコンテンツ制作者の一部によって支持されている。一部のウェブサイトにおいては効果があることも立証されている。しかし、結果的に説明が冗長になることがある上に、熟練したスクリーンリーダーの利用者にはその冗長な説明の読み上げを制御することを要求することもありうるため、スクリーンリーダーの利用者やアクセシビリティの専門家の中には、一般的な達成方法としてはこれを推奨していない人もいる。WCAGワーキンググループとしては、同じコンテンツが非表示にしたテキストで繰り返されていないのであれば、この達成方法は有用だと考えている。</p>
+
+<p class="prefix">
+この達成方法は、適合していないコンテンツ向けの <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>のページで解説されているスタイル・スイッチングを行う達成方法との組み合わせで使用することも可能である。詳しい情報については、<specref ref="C29"/>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替バージョンを理解する</loc>を参照のこと。</p></note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この事例は、各記事の概要のあとに「全文」というリンクのあるニュースサイトを示している。非表示にされたリンクテキストが、何の「全文」であるのかを説明している。</p>
+</description>
+      <code role="html401"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /> 
+<link href="access.css" rel="stylesheet" type="text/css" />
+<title>非表示のテキストリンク｜WCAG 2.0 達成方法集
+</head>
+<body> 
+<p>ワシントンは経済成長の刺激策を発表した。
+  <a href="#"> <span>ワシントンによる経済成長の刺激策の </span>
+  全文</a></p>
+</body>
+</html>]]></code>
+    </eg-group>
+    <eg-group>
+      <description><p>この事例では、異なるフォーマットの電子ブックが用意されている場合について説明している。「HTML」「PDF」といったリンクのテキストの前に本の題名が付加されている。非表示にされたリンクテキストでは、何のHTMLファイルであるのか、何のPDFファイルであるのかを示している。</p>
+</description>
+      <code role="html401"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /> 
+<link href="access.css" rel="stylesheet" type="text/css" />
+<title>非表示のテキストリンク</title>
+</head>
+<body>
+<dl>
+<dt>くまのプーさん </dt>
+   <dd><a href="winnie_the_pooh.html">
+      <span>くまのプーさん </span>HTML版</a></dd>
+   <dd><a href="winnie_the_pooh.pdf">
+         <span>くまのプーさん </span>PDF版</a></dd>
+<dt>戦争と平和</dt>
+    <dd><a href="war_and_peace.html">
+      <span>戦争と平和 </span>HTML版</a></dd> 
+    <dd><a href="war_and_peace.pdf">
+      <span>W戦争と平和 </span>PDF版</a></dd>
+</dl>
+</body>
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                  	href="http://www.rnib.org.uk/wacblog/css/hidden-barriers-out-of-sight/">Hidden barriers - out of sight</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/css/invisiblecontent/">CSS in Action: Invisible Content Just for Screen Reader Users</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <!--<relatedtech idref="H30"/>-->
+      <relatedtech idref="H33"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>この達成方法を使用している各<el>a</el>要素に対して：</p>
+      <olist>
+        <item>
+          <p>説明を付加するテキストを提供する要素のスタイルが、1ピクセル四方の中に収められ、かつ「overflow: hidden;」の状態で表示領域の外側に配置されるように定義されている。</p>
+        </item>
+        <item>
+          <p>そのスタイルが定義されている要素が<el>a</el>要素の中に含まれている。</p>
+        </item>
+        <item>
+          <p><el>a</el>要素の中のコンテンツを組み合わせると、何へのリンクであるかの説明になっている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記すべてを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

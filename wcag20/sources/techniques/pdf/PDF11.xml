@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF11">
+   <short-name>PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</short-name>
+   <applicability>
+     <p>リンクを含む PDF 文書</p>
+  </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="cosufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この達成方法の目的は、キーボードおよび支援技術の利用者ーが認識できるように PDF 文書内のリンクテキストをマークアップする方法を示すことである。つまり、リンクが別の形式で表示されたときに認識可能であるように、リンク情報をプログラム的に利用可能にする。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>PDF 文書内のリンクは、そのサブツリー内のリンクタグおよびオブジェクトで表わされ、リンクオブジェクト参照（リンク注釈）と 1 つまたは複数のテキストオブジェクトで構成される。リンクタグ内のテキストオブジェクトまたはオブジェクトは、リンクの名前を提供するために支援技術で使用される。</p>
+    <p>WCAG 達成基準に適合するリンクを提供する最も容易な方法は、PDF に変換する前の、文書をオーサリングする段階でリンクを作成することである。</p>
+    <p>ただし、元のオーサリングツールを使用してリンクを作成することができない場合もある。そのような場合は、Adobe Acrobat Pro を使用してリンクを作成することができる。ただし、Adobe Acrobat Pro のリンクダイアログボックスを使用して作成したツールヒントは、スクリーンリーダーからアクセスできないため、そのリンクテキストまたはリンクの文脈で目的を明確にすること。</p>
+    <p>いかなる場合でも、次の一般的なテクニックで説明されているように、リンクの目的を明確にする必要がある。</p>
+    <ulist>
+      <item>
+        <p> <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G53.html" linktype="techniques">G53: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</loc></p>
+      </item>
+      <item>
+        <p> <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91.html" linktype="techniques">G91:	リンクの目的を説明したリンクテキストを提供する</loc></p>
+      </item>
+    </ulist>
+  </description>
+   <examples>
+      <eg-group>
+      <head>PDF に変換する前に Microsoft Word 2007 でハイパーリンクを作成する</head>
+      <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>Microsoft Word でハイパーリンクを作成するには、まずリンク先の項目（Web ページなど）を特定する。次に、以下の作業を行う。</p>
+<olist><item><p>次のいずれかの作業を行う</p>
+<ulist><item><p>リボン上にある「挿入」を選択し、リンクツールの「ハイパーリンク」を選択する/p&gt;</p></item><item><p>Ctrl + K キーボードショートカットを使用する</p></item></ulist></item><item><p>ハイパーリンクの挿入ダイアログボックスで、リンク先とリンクテキストを追加する</p></item><item><p>タグ付き PDF としてファイルを保存する（「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと）</p></item></olist>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>PDF に変換する前に OpenOffice.org Writer 2.2 でハイパーリンクを作成する</head>
+      <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>［挿入］メニューの［ハイパーリンク］を選択する</p></item><item><p>［ハイパーリンク］ダイアログボックスで、「ハイパーリンクの種類」の「ターゲット」フィールドにリンク先の URI を挿入する</p></item><item><p>「詳細設定」の「テキスト」フィールドにリンクテキストを挿入する（このダイアログボックスを表示する前に、文書のテキストからリンクテキストを選択することもできる。選択したテキストが「テキスト」フィールドに挿入される）</p></item><item><p>タグ付き PDF としてファイルを保存する（「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと）</p></item></olist>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe Acrobat 9 Pro でリンクの作成ダイアログボックスを使用してハイパーリンクを作成する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>リンクテキストにするテキストを選択する</p></item><item><p>コンテキストメニューから［リンクの作成］を選択する</p></item></olist>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF11/capelink1.jpg" alt="スクリーンショット：ハイパーリンクを作成するためにテキストが選択されている PDF 文書。コンテキストメニューで［リンクの作成］が選択されている。" height="467" width="424"/></p><p>3. リンクの作成ダイアログボックスの指示に従い、以下に示されているように、リンクの外観を指定する</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF11/capelink2.jpg" alt="スクリーンショット：リンクの作成ダイアログボックスが開き、「リンクの外観」のオプションが選択されている PDF 文書。" height="406" width="509"/></p><p>「次へ」を選択し、URI を指定する。次の画像は、結果として表示されるハイパーリンクとツールヒントを示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF11/capelink3.jpg" alt="スクリーンショット：リンクの作成ダイアログボックスを使用して作成されたハイパーリンクがあり、マウスオーバーによりツールヒントが表示されている PDF 文書。" height="216" width="460"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF11/links.pdf" linktype="examples">PDF でハイパーリンクを作成したサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>/Link 構造エレメントを使用してリンクテキストをマークアップする</head>
+      <description><p>PDF 文書内のリンク注釈は、コンテンツストリームの特定のオブジェクトではなくページの幾何学的領域に関連付けられる。このため、リンク注釈は単独では、視覚障害のある利用者ー、またはハイパーテキストリンクを起動するためにどのコンテンツをアクティブ化できるのかを判断する必要のあるアプリケーションにとって有用ではない。</p>
+<p>タグ付き PDF の /Link エレメントは、PDF の論理構造を使用してコンテンツ項目とリンク注釈の間の関連付けを確立し、HTML ハイパーテキストリンクに相当する機能を提供する。</p>
+<p>HTML の場合、次の事例はハイパーテキストリンクを含むテキストを生成する。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt; inside.]]></codeblock>
+      <description><p>PDF の場合、最初にページが表現され、オブジェクトアクションが発生する領域にリンク注釈が配置される必要がある。</p>
+<p>次のコードフラグメントは、アンダーラインの付いた青色で表示されるリンクテキストを使用する、上述の HTML に相当する PDF を示している。次に続く 2 番目のコードフラグメントは、関連付けられた論理構造階層を示している。これは通常、オーサリングツールを使用して行う。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+/P &lt;&lt;/MCID 0&gt;&gt;                                                % マークされたコンテンツ順序 0（段落）
+  BDC                                                          % マークされたコンテンツ順序の始まり
+   BT                                                          % テキストオブジェクトの始まり
+    /F1 11.04 Tf                                               % テキストのフォントおよびサイズの設定
+    1 0 0 1 72.024 709.54 Tm                                   % テキストマトリクスの設定
+    0 g                                                        % ストローク以外の色を黒に設定
+    0 G                                                        % ストロークの色を黒に設定
+   [(H)3(ere )-4(is s)10(o)5(m)-4(e)9( t)-3(e)9(xt)-3( )] TJ   % リンク " Here is some text" の前にテキストを表示
+   ET                                                          % テキストオブジェクトの終わり
+  EMC                                                          % マークされたコンテンツ順序の終わり
+ 
+ /Span &lt;&lt;/MCID 1&gt;&gt;                                             % マークされたコンテンツ順序 1（下線付きのリンクテキスト）
+  BDC                                                          % マークされたコンテンツ順序の始まり
+   BT                                                          % テキストオブジェクトの始まり
+    1 0 0 1 152.42 709.54 Tm                                   % テキストマトリクスの設定
+    0 0 1 rg                                                   % ストローク以外の色を青に設定
+    0 0 1 RG                                                   % ストロークの色を青に設定
+    [(with a )-2(li)3(n)14(k)] TJ                              % リンクテキスト " with a link" の表示
+   ET                                                          % テキストのオブジェクトの終わり
+    0 0 1 rg                                                   % ストロークの色を青に設定
+    152.42 707.62 45.984 0.72 re                               % 長方形のオペレータ - リンクの対象領域
+    f*                                                         % 偶数奇数ルールを使用してパスを塗りつぶす
+  EMC                                                          % マークされたコンテンツ順序の終わり
+ 
+ /P &lt;&lt;/MCID 2&gt;&gt;                                                % マークされたコンテンツ順序 2（段落）
+  BDC                                                          % マークされたコンテンツ順序の始まり
+   BT                                                          % テキストオブジェクトの始まり
+    1 0 0 1 198.41 709.54 Tm                                   % テキストマトリクスの設定                                             
+    0 g                                                        % ストローク以外の色を黒に設定
+    0 G                                                        % ストロークの色を黒に設定
+    [( )] TJ                                                   % テキストストリングを空にして空白を表示
+   ET                                                          % テキストオブジェクトの終わり
+   BT                                                          % テキストオブジェクトの始まり
+    1 0 0 1 200.93 709.54 Tm                                   % テキストマトリクスの設定
+    [(in)5(sid)5(e.)] TJ                                       % リンクの後にテキスト "inside." を表示
+   ET                                                          % テキストの終わり
+   BT                                                          % テキストオブジェクトの始まり
+    1 0 0 1 229.97 709.54 Tm                                   % テキストマトリクスの設定
+    [( )] TJ                                                   % テキストストリングを空にして空白を表示
+   ET                                                          % テキストオブジェクトの終わり
+  EMC                                                          % マークされたコンテンツ順序の終わり]]></codeblock>
+      <description><p>次のコードフラグメントは、コンテンツ項目とリンク注釈の間の関連付けを確立する論理構造からの抜粋である。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+11 0 obj                                              % オブジェクト ID 11、生成 0、obj キーワード
+  &lt;&lt;/K[1                                               % 構造ツリールートの直接の子
+   &lt;&lt;
+    /Obj 26 0 R                                        % 26 への参照
+    /Type/OBJR                                         % このオブジェクトは間接的なオブジェクト参照を表す
+   &gt;&gt;]
+    /P 12 0 R
+    /Pg 17 0 R
+    /S/Link
+  &gt;&gt;
+ endobj
+ 
+ 26 0 obj                                              % オブジェクト 11 内の OBJR によって参照されるオブジェクト ID 26
+  &lt;&lt;/A 31 0 R
+   /BS
+   &lt;&lt;/S/S
+     /Type/Border
+     /W 0
+   &gt;&gt;
+   /Border[0 0 0]                                      % 色なし境界線
+   /H/I
+   /Rect[150.128 694.558 200.551 720.0]                % リンク注釈がアクティブな対象領域を定義する境界
+   /StructParent 1
+   /Type/Annot                                         % 構造エレメントは注釈
+   /Subtype/Link
+  &gt;&gt;                                                   % リンク注釈                                                 
+ endobj     
+ 31 0 obj                                              % オブジェクト 31、生成 0、obj
+  &lt;&lt;/S/URI                                             % オブジェクトタイプは URI アクション
+    /URI(http://www.w3.org/WAI)                        % 解決する URI
+  &gt;&gt;   
+ endobj]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 14.8.4.4.2 (Link Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G53"/>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="PDF13"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>各ハイパーリンクについて、リンクが正しくタグ付けされており、リンクテキストが適切に表示されることを確認する。</p>
+      <olist>
+        <item>
+          <p>PDF 文書をスクリーンリーダーで読み上げると、リンクが正しく読み上げられ、リンクの目的（例えば、リンク先）が説明されている</p>
+        </item>
+        <item>
+          <p>タグツリーを視覚的にスキャンすると、リンクが正しくタグ付けされ、（スクリーン拡大鏡の利用者ーと、認知障害があるが視力のある利用者ー向けに）リンクテキストが表示される</p>
+        </item>
+        <item>
+          <p>/Link エントリ値を表示できるツールを使用して PDF 文書を開き、ハイパーリンクとリンクテキストを表示する</p>
+        </item>
+        <item>
+          <p>アクセシビリティ API を通じて文書を表示するツールを使用し、リンクに正しいリンクテキストがあることを確認する</p>
+        </item>
+        <item>
+          <p>各リンクにタブ移動し、Enter を押すことによりそのリンク先にアクセスできる</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. ～ 4. のいずれかを満たしている。</p>
+            </item>
+            <item>
+               <p>#5 is true.</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_links_and_link_text_using_the_/Link_structure_element_in_PDF_documents"/>
+      </source>
+   </admin>
+</technique>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SM14">
+   <short-name>SMIL 2.0で、同期した映像ストリームを通じて手話通訳を提供する</short-name>
+   <applicability>
+      <p>SMIL 2.0</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-sign" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p>
+    <p>SMIL 2.0 では、2つの映像のために別々の領域を定義できる。2つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>RealMediaプレーヤーでの SMIL 2.0 手話ビデオのサンプル</head>
+      <code><![CDATA[
+<smil xmlns="//www.w3.org/2001/SMIL20/Language">
+  <head>
+    <layout>
+
+      <root-layout backgroundColor="black" height="310" width="330"/>
+      <region id="video" backgroundColor="black" top="5" left="5" 
+      height="240" width="320"/>
+      <region id="signing" backgroundColor="black" top="250" 
+      height="60" left="5" width="320"/>
+    </layout>
+  </head>
+  <body>
+
+    <par>
+      <video src="salesdemo.mpg" region="video" title="販売の実演" 
+      alt="販売の実演"/>
+      <video src="salesdemo_signing.mpg" 
+      region="signing" systemCaptions="on" 
+      title="手話通訳" 
+      alt="販売の実演の手話通訳"/>
+    </par>
+  </body>
+</smil>]]></code>
+      <description><p>この事例では、2つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia
+                                        Integration Language (SMIL 2.0)</loc>
+								       </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/SMIL-access/">Accessibility
+                                        Features of SMIL</loc>
+								       </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL
+                                    Templates</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="SM13"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>（手話通訳が常に表示されていない場合は、）手話通訳が表示されるように、コンテンツ内又はプレーヤーのコントロールを有効にする。</p>
+        </item>
+        <item>
+          <p>手話通訳を含むファイルを再生する。</p>
+        </item>
+        <item>
+          <p>手話通訳が表示される。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

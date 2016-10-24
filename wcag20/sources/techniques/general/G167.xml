@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G167">
+   <short-name>隣接するボタンを用いて、テキスト・フィールドの目的をラベル付けする</short-name>
+   <applicability>
+      <p>フォームをサポートするウェブコンテンツ技術すべて</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>テキストフィールド上である機能を実行するボタンがあり、ボタンは明確にラベル付けされていて、テキストフィールドと隣り合って表示される場合、ボタンはテキストフィールドに対するラベルとしての役割も果たす。このラベルは、ページ上に新たな反復的なテキストを追加することなく、利用者がこのテキストフィールドの目的を理解するのを助ける。一つのテキストフィールドをラベル付けするボタンは通常はテキストフィールドの後に置かれる。</p>
+    <note>
+      <p class="prefix"><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#ensure-compat-rsv" linktype="guideline">達成基準4.1.2</loc>を満たすため、このボタンはプログラムで解釈可能な識別名（name）を持っていなければならない。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <head>検索機能</head>
+      <description><p>あるウェブページには、利用者が検索文字列を入力するためのテキストフィールドと、検索を実行するための「検索」とラベル付けされたボタンがある。ボタンはテキストフィールドの直後に配置されているため、このテキストフィールドが検索のための文字列を入力するためのものであることが利用者にとって明らかである。</p>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G167/button-as-label.jpg" alt="画面イメージ：フィールドのラベルを提供するボタンが右側にあるテキストフィールド"/></description>
+    </eg-group>
+    <eg-group>
+      <head>フォームの選択</head>
+      <description><p>あるフォームではアメリカ合衆国の利用者に記入を求めている。州によって法律や要求が異なるので、利用者は自分が居住する州に対応したバージョンのフォームを選択しなければならない。ドロップダウンリストから利用者が州を選択するようになっている。隣接するボタンには「この州のフォームを開く」とラベル付けされている。ボタンを押すと、選択した州のためのフォームを表示するウェブページに移動する。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G131"/>
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H65"/>
+      <relatedtech idref="H71"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>この達成方法を用いているテキストフィールドとボタンに対して：</p>
+      <olist>
+        <item>
+          <p>テキストフィールドとボタンが、プログラムで解釈可能な読み上げ順序において、互いに隣接している。</p>
+        </item>
+        <item>
+          <p>テキストフィールドとボタンが互いに隣接して表示されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記のチェックポイント全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

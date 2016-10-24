@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G107">
+   <short-name>状況の変化に対するトリガーとして、"focus" ではなく、"activate" を用いる</short-name>
+   <applicability/>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-receive-focus" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が予測できるように、機能を実行する手法を提供することである。認知障害の利用者及びスクリーンリーダーや画面拡大ソフトを使用している利用者は、フォームが自動的に送信されたり、状況の変化を引き起こす機能が実行されたりするなど、予期せぬイベントによって混乱することがある。</p>
+    <p>この達成方法を用いることにより、状況の全ての変化は利用者の特定の動作によってのみ引き起こされる。さらに、その動作は通常状況の変化を引き起こすものであり、例えばリンクをクリックしたり送信ボタンを押したりすることが挙げられる。単にフォーカスをある要素に移すだけの動作は、状況の変化を引き起こすものではない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><ulist><item><p>ページが新しいウィンドウをポップアップ表示するのは、利用者がフォーカスを移動させたときではなく、ボタンをクリックした（又はスペースバーを使った）ときのみとする。</p></item><item><p>利用者が完了ボタンにタブで移動したときに自動的に次の画面を表示するのではなく、送信ボタンを使用したときに次のデータ入力画面に移動するようにする。</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>キーボードを利用して、全てのコンテンツへフォーカスを移動させる。</p>
+        </item>
+        <item>
+          <p>どの構成要素がフォーカスを受け取っても状況の変化が発生しない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="navigation-mechanisms-location" role="extsrc">
+   <head>2.4.8</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、集中力が長く持たない利用者がウェブページ一式、ウェブサイト、又はウェブアプリケーションの中で自分のいる位置を確認することができ、関連する情報を見つけることができるようにすることである。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>この達成基準は、あるウェブページへたどり着くまでに幾つもの段階を経てナビゲートしているうちに困惑してしまう、集中力の続かない利用者に役立つ。また、利用者がリンクで深い階層にあるページへ直接移動した際に、そのページのコンテンツを理解したり、関連するその他の情報を探したりするために、そのウェブサイト内を行き来する必要があるときなどにも役立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">利用者がサイト内での自分の現在位置を確認しやすくするリンク</emph>
+              </p><p>ある大学の教育学部に研究会がある。研究会のウェブサイトのホームには、学部のウェブサイトのホーム及び大学のウェブサイトのホームへのリンクがある。</p></item>
+	<item><p>
+                <emph role="bold">パンくずリスト</emph>
+              </p><p>ポータルウェブサイトは、トピックをカテゴリごとに整理している。利用者がカテゴリ及びサブカテゴリ内を行き来していると、パンくずリストがカテゴリの階層における現在位置を示してくれる。また、各ページには、ポータルのホームへのリンクもある。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://psychology.wichita.edu/surl/usabilitynews/52/breadcrumb.htm">Breadcrumb Navigation: Further Investigation of Usage</loc>
+              </p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.standards-schmandards.com/index.php?2004/11/06/6-the-sound-of-the-accessible-title-tag-separator">The Sound of the Accessible Title Tag Separator</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>十分な達成方法</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G65" linktype="general">パンくずリストを提供する</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G63" linktype="general">サイトマップを提供する</loc>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G128" linktype="general">ナビゲーションバー内で現在位置を示す</loc>
+                </p></item>
+	<item><p>
+                  次に挙げる達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G127" linktype="general">ウェブページのより大きな集まりと ウェブページとの関係を特定する</loc></p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H59" linktype="html">link要素及びナビゲーションツールを用いる</loc>
+                    </p></item></ulist></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF14" linktype="pdf">PDF 文書内に連続するヘッダとフッタを提供する</loc>
+                    </p></item>
+	<item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF17" linktype="pdf">PDF 文書に一貫性のあるページ番号を指定する</loc>
+                    </p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 2.4.8 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>
+        HOMEページもしくは主要なページへのリンクを提供する（リンク追加予定）
+    </p></item>
+	<item><p>ウェブページの集合の編成について読みやすいバージョンの情報を提供する（リンク追加予定）
+                </p></item>
+	<item><p>ウェブページの集合の編成について手話バージョンの情報を提供する（リンク追加予定）（リンク追加予定）
+                </p></item>
+	<item><p>コンテンツの各セクションの最初に読みやすい概要を提供する（リンク追加予定）
+                </p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 2.4.8 のよくある不適合事例</head>
+</div4>
+</div3>
+</div2>

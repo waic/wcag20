@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G201">
+   <short-name>新しいウィンドウを開くときには利用者ーに事前に知らせる</short-name>
+   <applicability>
+      <p>新しいウィンドウを開くウェブページ</p>
+   </applicability>
+   <applies-to>
+    <success-criterion idref="consistent-behavior-receive-focus"/>
+    <success-criterion idref="consistent-behavior-unpredictable-change"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、自動的に新しいウィンドウまたはタブを開く前に利用者ーに知らせることである。リンクを押下したときに自動的に新しいウィンドウを開くことは、もし事前にそのことを知らせていなければ、視覚的なコンテンツを知覚するのに困難を伴う利用者ーや認知障害のある利用者ーが混乱する原因となりうる。事前に知らせることによって、利用者ーは現在のウィンドウから離れるかどうかを判断することができるようになる。また、利用者ーが新しいウィンドウを開くことを選んだ場合にも、元のウィンドウに戻りやすくなる。さらに、ブラウザの[戻る]ボタンが使えないことや、直前まで自分がいた場所を見つけるためには元のウィンドウに戻らなければならないことを利用者ーが理解する手助けにもなる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>コントロールを説明するテキストで知らせる</head>
+      <description><p>コントロールを説明する識別名またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p>
+</description>
+      <code xml:space="preserve"><![CDATA[
+       <a href="knitting.html" target="_blank">編み物のすべて 
+              （新しいウィンドウで開く）</a>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>CSSを用いて、新しいウィンドウが開く前に知らせる</head>
+      <description><p>以下のコードでは、CSSを用いて新しいウィンドウが開く前に知らせている。</p>
+</description>
+      <code xml:space="preserve"><![CDATA[
+       <html>
+                <head>
+                <title>ポップアップによる警告</title>
+                <style type="text/css">
+                body {
+                margin-left:2em;
+                margin-right:2em;
+                }
+                :focus { outline: 0; }
+                a.info {
+                position:relative;
+                z-index:24;
+                background-color:#ccc;
+                color:#000;
+                text-decoration:none
+                }
+                a.info:hover, a.info:focus, a.info:active {
+                z-index:25;
+                background-color:#ff0
+                }
+                a.info span {
+                position: absolute;
+                left: -9000px;
+                width: 0;
+                overflow: hidden;
+                }
+                a.info:hover span, a.info:focus span, a.info:active span {
+                display:block;
+                position:absolute;
+                top:1em; left:1em; width:12em;
+                border:1px solid #0cf;
+                background-color:#cff;
+                color:#000;
+                text-align: center
+                }
+                div.example {
+                margin-left: 5em;
+                }
+                </style>
+                </head>
+                <body>
+                <h1>ポップアップによる警告</h1>
+                <p> これは <a class="info" href="popup_advisory_technique.html"
+                 target="_blank"><strong>外部へのリンク</strong>
+                 <span>新しいウィンドウで開く</span></a>の事例です。
+                </p>
+                </body>
+                </html>]]></code>
+      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="working-examples/G201/new-window.html" linktype="examples">CSSを用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="H83"/>
+      <relatedtech idref="SCR24"/>
+      <relatedtech idref="G200"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して：</p>
+      <olist>
+        <item>
+          <p>このリンクは新しいウィンドウを開くことが支援技術（音声ブラウザ/スクリーンリーダー）によって読み上げられる。</p>
+        </item>
+        <item>
+          <p>このリンクは新しいウィンドウを開くことが視覚的に示されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

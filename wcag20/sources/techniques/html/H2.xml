@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H2">
+   <short-name>隣り合った画像とテキストリンクを同じリンクの中に入れる</short-name>
+   <applicability>
+      <p>リンク機能を提供するHTML及びXTHMLドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ドキュメント内で互いに隣接したテキストとアイコンを使ったリンクが提供されている時に生じる不要な重複を避けることである。</p>
+    <p>よくあるリンクとして、互いに隣接したテキストとアイコンの両方を用いたリンクがある。 それぞれが視覚的にはわずかに離れていることもあって、そのテキストとアイコンのリンクは別々のリンクであることが多い。視覚的にはそれらは同じ一つのリンクのように見えるが、多くの利用者にとっては二つの別々のリンクであり、それによって混乱させてしまうことがある。これを避けるためには、画像から代替テキストを省略するコンテンツ制作者もいるが、代替テキストがグラフィカルなリンクと同じ目的を果たしていないので、これでは<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#text-equiv-all" linktype="guideline">達成基準 1.1.1</loc>に不適合になる。これに対処するために好ましい方法は、一つのリンクにテキストと画像を一緒に入れて、テキストと画像の代替テキストの内容が重複しないように画像には空の代替テキストを提供することである。</p>
+    <p>ページをレイアウトしやすくするために、テキストとアイコンのリンクを隣接したテーブルセルに分けることがある。WCAG 2.0 ではレイアウトテーブルの使用を禁止していないが、HTMLの<el>table</el>要素に定義されたセマンティックな意味を保持させ、コンテンツから表現を分離するコーティング手法に準拠するためにも、CSSベースのレイアウトが推奨されている。CSSが使用されている場合には、この達成方法を適用して、テキストとアイコンのリンクを一つにまとめることができる。</p>
+  </description>
+     <examples>
+      <eg-group>
+      <description><p>アイコンとテキストが同じ <el>a</el> 要素の中にある。</p>
+      </description>
+      <code role="html5"><![CDATA[ <a href="products.html">
+   <img src="icon.gif" alt="">
+   製品のページ
+ </a>      ]]></code>
+      </eg-group>
+      <eg-group>
+      <description><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<el>img</el> 要素には、サイトのヘルプで使われているアイコンの名前（「HOMEページのアイコン」）が代替テキストとして記述されていて、サイトのヘルプの中では「HOMEページのアイコン」をクリックすることが説明されている。</p>
+</description>
+      <code role="html5"><![CDATA[<a href="home.html">
+  <img src="house.gif" alt="HOMEページのアイコン">
+  HOMEページへ戻る
+</a>     ]]></code>
+      </eg-group>
+    <eg-group role="failure">
+      <description><p>これは、この達成方法の不適合となる事例である。アイコンとテキストが隣り合っている。画像の代替テキストが隣接しているリンクテキストと同じ内容になっているため、同じリンクが二度読まれてしまうことになる。</p>
+</description>
+      <code role="html5"><![CDATA[<a href="products.html">
+   <img src="icon.gif" alt="製品のページ">
+   </a>
+ <a href="products.html">
+   製品のページ
+ </a>     ]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>これは、この達成方法の不適合となる事例である。アイコンとテキストのリンクが隣り合っている。同じリンクが二度読まれないように、画像の代替テキストは空である。しかし、アイコンの画像に代替テキストがないため、画像のリンク先が不明になってしまっている。</p>
+</description>
+      <code role="html5"><![CDATA[<a href="products.html">
+   <img src="icon.gif" alt="">
+ </a>
+ <a href="products.html">
+   製品のページ
+ </a>     ]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>これは、この達成方法を誤って用いた事例である。アイコンとテキストは同じ <el>a</el> 要素の中にある。しかし、リンクテキストと同じ代替テキストをアイコンの画像に記述しているため、同じリンクが二度読まれてしまうことになる。</p>
+</description>
+      <code role="html5"><![CDATA[<a href="products.html">
+   <img src="products.gif" alt="製品のページ">
+   製品のページ
+ </a>     ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 -
+                    how to specify alt text</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="G94"/>
+      <relatedtech idref="H30"/>
+      <relatedtech idref="C9"/>
+      <relatedtech idref="F89"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p><el>img</el> 要素を含む <el>a</el> 要素すべてに対して：</p>
+      <olist>
+        <item>
+          <p>同じ <att>href</att> 属性及び同じリンク先の説明を持つ隣接した <el>a</el> 要素がない。</p>
+        </item>
+      </olist>
+      <p>テーブル内にある <el>a</el> 要素すべてに対して：</p>
+      <olist>
+        <item>
+          <p>同じ <att>href</att> 属性及び同じリンク先の説明を持つ <el>a</el> 要素が隣接したテーブルセルにない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+      <ulist>
+        <item>
+          <p>上記の全てを満たしている。</p>
+        </item>
+      </ulist>
+    </expected-results>
+   </tests>
+</technique>

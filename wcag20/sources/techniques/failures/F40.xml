@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F40">
+   <short-name>達成基準 2.2.1 及び 達成基準 2.2.4 の不適合事例 － meta要素による制限時間付きのリダイレクトを用いている
+        </short-name>
+   <applicability>
+      <p>すべてのページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="failure"/>
+      <success-criterion idref="time-limits-postponed" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p><code>meta</code><code>http-equiv</code>の{time-out}; url=...はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p>
+    <p>タイムアウトが0に設定されている場合には、<el>meta</el>要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1.html" linktype="server">SVR1： クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>(SERVER) 参照のこと。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>以下のページは5秒後にhttp://www.example.com/newpageというURIへリダイレクトされるため、不適合である。</p>
+</description>
+      <code><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>     
+      <title>使用禁止！</title>     
+      <meta http-equiv="refresh"
+      content="5; url=http://www.example.com/newpage" />   
+   </head>   
+   <body>     
+      <p>       
+         ブラウザがリフレッシュをサポートしている場合、5秒後に
+         <a href="http://www.example.com/newpage">新しいサイト</a>        
+         に移動します。サポートしていない場合には、リンクを選択してください。     
+      </p>   
+   </body> 
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4">HTML 4.01 META element</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ページを表示させる。</p>
+        </item>
+        <item>
+          <p>一定の時間が経過しても、ページがリダイレクトされない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <olist>
+            <item>
+               <p>2.を満たしていれば、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </olist>
+      </expected-results>
+   </tests>
+</technique>

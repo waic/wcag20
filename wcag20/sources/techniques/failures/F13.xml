@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F13">
+   <short-name>達成基準 1.4.1 の不適合事例 － イメージ上の色の違いで伝えている情報が、代替テキストに含まれていない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、画像が色の違いを用いて情報を伝えているが、その画像の代替テキストがその情報を伝えていないことによる不適合事例について述べている。
+			   全盲又は色弱の利用者は色の違いによって伝えられている情報を知覚することができないため、そのような利用者に対して問題を引き起こす恐れがある。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツ内で、色の違いによって情報を伝えている画像すべてに対して：</p>
+      <olist>
+        <item>
+          <p>色の違いによって伝えられている情報が、画像の代替テキストに含まれていることをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>手順 1.を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

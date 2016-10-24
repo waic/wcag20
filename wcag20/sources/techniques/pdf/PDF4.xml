@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF4">
+   <short-name>PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する</short-name>
+   <applicability>
+     <p id="pdf.applicability.general">タグ付き PDF 文書</p>
+  </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この達成方法の目的は、/Artifact タグを使用して、支援技術で無視できるように PDF 文書内の純粋に装飾的な画像をマークする方法を示すことである。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>PDF では、一般的にアーティファクトとは、作成されたコンテンツに含まれないグラフィックオブジェクトまたはその他のマーキングを意味する。アーティファクトの例としては、ページのヘッダまたはフッタ情報、ページのセクションを分ける線またはその他のグラフィック、装飾的な画像などがある。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro の TouchUp 読み上げ順序ツールを使用して、背景画像をアーティファクトとしてマークする</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>TouchUp 読み上げ順序ツールを使用して、画像を「背景」としてマークすることができる。これにより画像は文書のタグ構造から削除される。</p>
+<olist><item><p>Acrobat Pro でアドバンスト > アクセシビリティ > TouchUp 読み上げ順序を選択し、TouchUp 読み上げ順序ツールを開く。</p></item><item><p>文書内の装飾的な画像を選択する。</p></item><item><p>TouchUp 読み上げ順序ツールで、［背景］ボタンをクリックし、選択した画像をタグ構造から削除する。</p></item></olist>
+<p>下のスクリーンショットはこの事例を示している。</p>
+<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF4/turo_background.gif" alt="スクリーンショット：TouchUp 読み上げ順序ツールを使用して、タグツリーから画像を削除" height="501" width="267"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF4/decorative-image.docx" linktype="examples">装飾的な画像作成のサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF4/decorative-image.pdf" linktype="examples">装飾的な画像作成のサンプル (PDF ファイル)</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>/Artifact タグまたはプロパティリストを使用して、画像を PDF 文書内のアーティファクトとしてマークする</head>
+      <description><p>PDF 仕様を使用すると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>の節 14.8.2.2「実際のコンテンツとアーティファクト」（英語）に定義されているように、画像を「アーティファクト」としてマークすることができる。アーティファクトは、/Artifact タグと共に、マークされたコンテンツ順序に含められることで実際のコンテンツと明示的に区別される。</p>
+<p>/Artifact </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[BMC  ...  EMC]]></codeblock>
+      <description><p>または</p>
+<p>/Artifact propertyList </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[BDC  ...  EMC]]></codeblock>
+      <description><p>前者は一般的なアーティファクトを特定するために使用され、後者はプロパティリストが関連付けられているアーティファクトで使用される。テキストのリフローを可能にするために、アーティファクトは可能な限りプロパティリストを関連付けて定義すべきである。境界ボックスが指定されていないアーティファクトは、リフロー中に削除される可能性がある。</p>
+<p>アーティファクトのプロパティリストのエントリには、Type、BBox、Attached、Subtype などがある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 14.8.2.2 (Real Content and Artifacts) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>純粋に装飾的な画像について、次のいずれかの方法を使用して確認すると、アーティファクトとしてマークされている。</p>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げた際に、コンテンツが1行単位で読み上げられるときに装飾的な画像が読み上げられない</p></item><item><p>PDF エディターを使用して、装飾的な画像がアーティファクトとしてマークされていることを確認する</p></item><item><p>文書を折り返し表示にすると、装飾的な画像がページに表示されない</p></item><item><p>/Artifact エントリまたはプロパティリストを表示できるツール（aDesigner など）を使用して PDF 文書を開き、装飾的な画像がアーティファクトとしてマークされていることを確認する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、装飾的な画像が API を通じて表示されていないことを確認する</p></item></ulist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Hiding_decorative_images_with_the_Artifact_tag_in_PDF_documents"/>
+      </source>
+   </admin>
+</technique>

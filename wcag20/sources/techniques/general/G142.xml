@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G142">
+   <short-name>ズーム機能をサポートする一般に入手可能な利用者ーエージェントのあるウェブコンテンツ技術を用いる</short-name>
+   <applicability>
+      <p>ズーム機能を提供する利用者ーエージェントのある全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-scale" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="7">
+      <p>Internet Exploler 7.0のズーム機能は、絶対配置が用いられ、ページを縮小した際、常に均一に縮小するとは限らない。IE 7.0は、%、em、又は規定の名前で指定されたフォントセットに対してのズーム機能とテキストサイズ変更機能に対応している。</p>
+    </ua-issue>
+    <ua-issue name="Opera" version="">
+      <p>Opera 9は、ズーム機能に対応している。</p>
+    </ua-issue>
+    <ua-issue name="Firefox" version="">
+      <p>Firefox 2以下は、テキストサイズ変更機能のみに対応しているが、pt、px、 %、 em及び規定の名前で指定されたフォントサイズを変更することができる。</p>
+    </ua-issue>
+    <ua-issue name="FF" version="3">
+      <p>Firefox 3は、ズーム機能とテキストサイズ変更機能の両方に対応している。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、ズーム機能でテキストサイズを変更する利用者ーエージェントによってサポートされたウェブ技術を使用することによって、均一にコンテンツを拡大・縮小できることを保障することである。</p>
+    <p>内容を均一（すなわち、内容へズームする）に拡大・縮小できる利用者ーエージェントによってサポートされたウェブコンテンツ技術で制作されたコンテンツは、この達成基準を満たす。
+	この達成方法は、完全に利用者ーエージェントの機能に依存するため、さまざまな利用者ーエージェントを用いて検証することは重要である。</p>
+    <p>この達成方法では、ズーム機能を用いてもページ上の全ての空間的な関係が保持され、全ての機能が継続して利用可能である必要がある。</p>
+  </description>
+   <examples/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>利用者ーエージェントでコンテンツを表示させる。</p>
+        </item>
+        <item>
+          <p>そのコンテンツを200%に拡大する。</p>
+        </item>
+        <item>
+          <p>全てのコンテンツと機能が利用可能である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

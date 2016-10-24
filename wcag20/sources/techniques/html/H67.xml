@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H67">
+   <short-name>支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない</short-name>
+   <applicability>
+      <p>画像を読み込むHTML及びXHTMLドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、支援技術が無視できるように画像をマークアップする方法を示すことである。</p>
+    <p>title 属性が使用されておらず、代替テキストが空に指定されているなら(例<code>alt=""</code>)、それは画像を無視して差し支えないことを支援技術に示している。</p>
+    <p>注記：<code>alt=" "</code>のように代替テキストとして空白を入れてもよいが、<code>alt=""</code>のように代替テキストを空にする方が望ましい。</p>
+    <p>注記：alt属性の代替テキストを 「空」にするのと、alt属性が指定されていないことは同義ではない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>次の画像は、ウェブページに装飾のための画像を挿入するのに使用される。</p>
+</description>
+      <code role="html401"><![CDATA[<img src="squiggle.gif" width="20" height="20" alt="" />]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+    <see-also>
+      <ulist>
+        <item>
+          <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/images/alt_text.php#null" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">'Null alt&#13;
+                    text' in WebAIM's 'Creating Accessible Images'</loc>also shows how to do this
+                  in Dreamweaver.</p>
+        </item>
+      </ulist>
+    </see-also>
+  </resources>
+  <related-techniques/>
+   <tests>
+      <procedure>
+      <p>無視されるべき各画像に対して、</p>
+      <olist>
+        <item>
+          <p><att>title</att> 属性がない又は空である。</p>
+        </item>
+        <item>
+          <p> <att>alt</att> 属性が存在して、空である又は空白だけを含む(<code>&amp;nbsp;</code>は除く)。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.及び2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

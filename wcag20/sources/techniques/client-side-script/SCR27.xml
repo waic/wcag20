@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR27">
+   <short-name>DOMを用いて、ページ上にある複数のセクションを並び替える</short-name>
+   <applicability>
+      <p>HTMLおよびXHTML、スクリプト</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、コンポーネントを再配置するための極めて利用者ブルかつアクセシブルなメカニズムを提供することである。再配置するためのメカニズムのうち、もっとも一般的なものは、コンポーネントに番号をつけることができる設定ページに利用者を送ること、又は、コンポーネントをドラッグアンドドロップして希望する位置へ移動できるようにすることのふたつである。ドラッグアンドドロップの方が、ひとつずつ項目を適当な位置に並べることができ、結果を感覚的に得られるため、はるかに利用者ブルな方法である。残念なことに、ドラッグアンドドロップはマウスの利用に頼った方法である。この達成方法は、利用者がコンポーネントのメニューを使って、それらを機器に依存することなく適当な位置に再配置することを可能にする。ドラッグアンドドロップによる再配置機能の代替として、もしくはそれと併用して利用することができる。</p>
+    <p>メニューはリンクリストで、コンテンツを再配置するスクリプトのトリガーとなる、機器に依存しないonclickイベントを使用している。コンテンツは単に視覚的にだけでなく、Document Object Model (DOM)でも再配置されているので、すべての機器向けに正しい順序となっている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この例は上下間の再配置を行う。このアプローチはまた、右と左のオプションを追加することで、2次元での再配置にも利用できる。</p>
+<p>この例のコンポーネントは順序無しリストのリスト項目である。順序無しリストは、こうしたコンポーネントのような類似項目のためのとてもよいセマンティックモデルである。メニューを使う方法も、他のタイプのグループ化に使用できる。</p>
+<p>モジュールはリスト項目であり、それぞれのモジュールは、div要素内のコンテンツに加えて、入れ子になったリストとして表されたメニューを含んでいる。</p>
+</description>
+      <code role="xhtml"><![CDATA[
+    &lt;ul id="swapper"&gt;
+    &lt;li id="black"&gt;
+        &lt;div class="module"&gt;
+            &lt;div class="module_header"&gt;
+                &lt;!-- メニューへのリンク --&gt;
+                &lt;a href="#" onclick="ToggleMenu(event);"&gt;menu&lt;/a&gt;
+                &lt;!-- メニュー --&gt;
+                &lt;ul class="menu"&gt;
+                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&gt;up&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&gt;down&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="module_body"&gt;
+                blackモジュールのテキスト
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    ...
+&lt;/ul&gt; ]]></code>
+      <description><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p>
+</description>
+      <code role="script"><![CDATA[
+MoveNode 関数(evt,dir)
+{
+    HarmonizeEvent(evt);
+    evt.preventDefault();
+
+    var src = evt.target;
+    var menu = src.parentNode.parentNode;
+    var module = menu.parentNode.parentNode.parentNode;
+    var menuLink = module.getElementsByTagName("a")[0];
+    var swap = null;
+    
+    switch(dir)
+    {
+        case 'up':
+        {
+            swap = module.previousSibling;
+            while (swap &amp;&amp; swap.nodeType != 1)
+            {
+                swap = swap.previousSibling;
+            }
+            break;
+        }
+        case 'down':
+        {
+            swap = module.nextSibling;
+            while (swap &amp;&amp; swap.nodeType != 1)
+            {
+                swap = swap.nextSibling;
+            }
+            break;
+        }
+    }
+    if (swap &amp;&amp; swap.tagName == node.tagName)
+    {
+        module.swapNode(swap);
+        PositionElement(menu,menuLink,false,true);
+    }
+    src.focus();
+} ]]></code>
+      <description><p>ノード入れ替えのCSSは、モジュール及び小さなメニューのサイズや色の調整だけで、前のツリーの例と大きな違いはない。</p>
+</description>
+      <code role="css"><![CDATA[
+ul#swapper { margin:0px; padding:0px; list-item-style:none; }
+ul#swapper li { padding:0; margin:1em; list-style:none; height:5em; width:15em; 
+    border:1px solid black; }
+ul#swapper li a { color:white; text-decoration:none; font-size:90%; }
+
+ul#swapper li div.module_header { text-align:right; padding:0 0.2em; }
+ul#swapper li div.module_body { padding:0.2em; }
+
+ul#swapper ul.menu { padding:0; margin:0; list-style:none; background-color:#eeeeee; 
+    height:auto; position:absolute; text-align:left; border:1px solid gray; display:none; }
+ul#swapper ul.menu li { height:auto; border:none; margin:0; text-align:left; 
+    font-weight:normal; width:5em; }
+ul#swapper ul.menu li a { text-decoration:none; color:black; padding:0 0.1em; 
+    display:block; width:100%; } ]]></code>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ドラッグアンドドロップで再配置可能なウェブユニット内のすべてのコンポーネントを探す。</p>
+        </item>
+        <item>
+          <p>リンクのリストで構成されたメニューでも、それらが再配置可能なメカニズムがあるかどうかもチェックする。</p>
+        </item>
+        <item>
+          <p>メニューがDOM内の再配置可能な項目の中に含まれているかをチェックする。</p>
+        </item>
+        <item>
+          <p>再配置のスクリプトはリンクのonclickイベントだけをトリガーにしているかをチェックする。</p>
+        </item>
+        <item>
+          <p>視覚的にだけではなく、項目がDOMの中でも再配置されているかをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.～5.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

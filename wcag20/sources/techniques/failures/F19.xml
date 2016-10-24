@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F19">
+   <short-name>適合要件 1 の不適合事例 － 適合していないウェブページの代替となる適合しているバージョンを利用者が見つけられる手段を提供していない</short-name>
+   <applicability>
+      <p>適合していないコンテンツの代替となる適合したバージョンを提供するサイト</p>
+   </applicability>
+   <applies-to>
+      <conformance-criterion idref="cc1" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、コンテンツに対して代替となる適合したバージョンが提供されているにもかかわらず、利用者がそのことを知る方法、又はどこで見つけられるかを知る方法が提供されていない不適合事例について述べている。利用者が適合したバージョンを見つけることができないため、このようなコンテンツは、達成基準を満たしていないことになる。</p>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G136"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>代替となる適合したバージョンがある、適合していないウェブページを特定する。</p>
+        </item>
+        <item>
+          <p>適合していないウェブページは、適合しているバージョンへのリンクを提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <olist>
+            <item>
+               <p>2. を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </olist>
+      </expected-results>
+   </tests>
+</technique>

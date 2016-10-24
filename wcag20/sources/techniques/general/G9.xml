@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G9">
+   <short-name>ライブの同期したメディアに対してキャプションを作成する</short-name>
+   <applicability>
+      <p>視聴覚の情報を提示する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-real-time-captions" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、音声を聞くことができない利用者がリアルタイムに同期したメディア放送にアクセスできるようにすることである。間違いを訂正するか、二度聞き又は単語が正確に再現されていることを確認するため誰かに意見を聞く時間がほとんどないので、正確なリアルタイムのキャプションを作成することはより困難である。情報があまりに速く流れている時は、簡略化又は言い換えもさらに困難である。</p>
+    <p>リアルタイムのタイピングテキスト入力技術には、速記及び高速タイピング技術を使用するものが存在する。復唱による音声・テキスト変換（人が音声を聞き、彼らの音声を覚えこませたコンピューターへ慎重に復唱する）は、今日の電話リレーサービスで使用されており、将来的にはキャプション作成に使用されるかもしれない。ゆくゆくは補正機能を持つ音声・テキスト変換が可能になるだろう。</p>
+  </description>
+   <examples/>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G87"/>
+      <relatedtech idref="G93"/>
+      <relatedtech idref="G157"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>キャプションがリアルタイムに配信されることを保証するため、手順及びポリシーが所定の位置にある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1．を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>
