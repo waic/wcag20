@@ -23,6 +23,7 @@
 	
 	<property name="outputdir" location="." description="Directory within which the output folders are created, normally &quot;../YYYY&quot; unless doing TR in which case it is &quot;../../../TR/&lt;YYYY&gt;&quot;"/>
 	<property name="outputdir.previous" location="." description="Directory in which previous build containing static files is located, almost always &quot;../YYYY&quot;"/>
+	<property name="outputdir.prefix" value="file:///" description="Prefix if any that must be prepended to the outputdir to make it resolve on the platform"/>
 
 	<property name="slices" value="true" description="Set to &quot;true&quot; to output mutliple-file versions"/>
 	
@@ -257,6 +258,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 			<param name="show.issue.links" expression="1" if="slices.diff"/>
 			<param name="show.ednotes" expression="${ednotes}" if="${ednotes}"/>
 			<param name="output.dir" expression="${outputdir.understanding}"/>
+			<param name="output.dir.prefix" expression="${outputdir.prefix}"/>
 			<param name="glthisversion" expression="${guidelines.uri}" if="guidelines.uri"/>
 			<param name="guidethisversion" expression=""/>
 			<param name="techsthisversion" expression="${techniques.uri}" if="techniques.uri"/>
@@ -282,7 +284,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 	</target>
 	<target name="techniques.single" depends="init">
 		<mkdir dir="${outputdir.techniques}"/>
-		<xslt in="${source.techniques}" out="${outputdir.techniques}/complete.html" style="sources/diffspec-tech.xsl" force="true" classpath="C:\Program Files (x86)\Java\jdk1.8.0_60\saxon\saxon9he.jar">
+		<xslt in="${source.techniques}" out="${outputdir.techniques}/complete.html" style="sources/diffspec-tech.xsl" force="true">
 			<factory name="net.sf.saxon.TransformerFactoryImpl">
 				<attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
 			</factory>
@@ -301,7 +303,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 	</target>
 	<target name="techniques.single.diff" depends="init" if="monolithic">
 		<mkdir dir="${outputdir.techniques}"/>
-		<xslt in="${source.techniques}" out="${outputdir.techniques}/complete-diff.html" style="sources/diffspec-tech.xsl" force="true" classpath="C:\Program Files (x86)\Java\jdk1.8.0_60\saxon\saxon9he.jar">
+		<xslt in="${source.techniques}" out="${outputdir.techniques}/complete-diff.html" style="sources/diffspec-tech.xsl" force="true">
 			<factory name="net.sf.saxon.TransformerFactoryImpl">
 				<attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
 			</factory>
@@ -320,7 +322,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 	</target>
 	<target name="techniques.slices" depends="init">
 		<mkdir dir="${outputdir.techniques}"/>
-		<xslt in="${source.techniques}" out="temp.html" style="sources/slices-techniques-common.xsl" force="true" classpath="C:\Program Files (x86)\Java\jdk1.8.0_60\saxon\saxon9he.jar">
+		<xslt in="${source.techniques}" out="temp.html" style="sources/slices-techniques-common.xsl" force="true">
 			<factory name="net.sf.saxon.TransformerFactoryImpl">
 				<attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
 			</factory>
@@ -330,6 +332,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 			<param name="show.issue.links" expression="1" if="slices.diff"/>
 			<param name="show.ednotes" expression="${ednotes}" if="${ednotes}"/>
 			<param name="output.dir" expression="${outputdir.techniques}"/>
+			<param name="output.dir.prefix" expression="${outputdir.prefix}"/>
 			<param name="glthisversion" expression="${guidelines.uri}" if="guidelines.uri"/>
 			<param name="guidethisversion" expression="${understanding.uri}" if="understanding.uri"/>
 			<param name="techsthisversion" expression="${techniques.uri}" if="techniques.uri"/>
@@ -343,7 +346,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 	</target>
 	<target name="techniques.bytech" depends="init">
 		<mkdir dir="${outputdir.techniques}"/>
-		<xslt destdir="${outputdir.techniques}" style="sources/diffspec-tech.xsl" force="true" classpath="C:\Program Files (x86)\Java\jdk1.8.0_60\saxon\saxon9he.jar">
+		<xslt destdir="${outputdir.techniques}" style="sources/diffspec-tech.xsl" force="true">
 			<factory name="net.sf.saxon.TransformerFactoryImpl">
 				<attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
 			</factory>
@@ -586,16 +589,17 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 			<param name="expandable" expression="true"/>
 		</xslt>
 	</target>
+
 	<!-- publish to http://w3c.github.io/wcag/ -->
 	<target name="gh-pages">
 		<antcall target="understanding">
-			<param name="outputdir.understanding" value="Generated/Understanding"/>
+			<param name="outputdir.understanding" value="../../../Generated/Understanding"/>
 			<param name="outputdir.prefix" value=""/>
 			<param name="publoc.understanding" value="http://w3c.github.io/wcag/Understanding"/>
 			<param name="publoc.techniques" value="http://w3c.github.io/wcag/Techniques"/>
 		</antcall>
 		<antcall target="techniques">
-			<param name="outputdir.techniques" value="Generated/Techniques"/>
+			<param name="outputdir.techniques" value="../../../Generated/Techniques"/>
 			<param name="outputdir.prefix" value=""/>
 			<param name="publoc.understanding" value="http://w3c.github.io/wcag/Understanding"/>
 			<param name="publoc.techniques" value="http://w3c.github.io/wcag/Techniques"/>
