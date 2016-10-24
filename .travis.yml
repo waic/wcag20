@@ -13,7 +13,7 @@ git:
   
 branches:
   only:
-    master
+    wg4_translation
 
 before_script:
   - git config --global user.email "bakera@star.email.ne.jp"
