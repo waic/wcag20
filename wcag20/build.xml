@@ -382,7 +382,8 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 			</mapper>
 		</xslt>
 	</target>
-	<target name="techniques" description="Generate Techniques" depends="init, techniques.single, techniques.single.diff, techniques.slices, techniques.bytech"/>
+	<!--target name="techniques" description="Generate Techniques" depends="init, techniques.single, techniques.single.diff, techniques.slices, techniques.bytech"/-->
+	<target name="techniques" description="Generate Techniques" depends="init, techniques.single, techniques.single.diff, techniques.bytech"/>
 	
 	<!-- Quickref -->
 	<target name="quickref" depends="init" description="Generate Quickref">
