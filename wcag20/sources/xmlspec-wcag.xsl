@@ -454,6 +454,7 @@
         		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
         	</xsl:if>
         	<head>
+            <meta chaeset="UTF-8"/>
             <title>
               <xsl:value-of select="//header/title"/>  | Techniques for WCAG 2.0
             </title>
@@ -497,6 +498,7 @@
         		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
         	</xsl:if>
         	<head>
+            <meta chaeset="UTF-8"/>
             <title>
               <xsl:value-of select="header/title"/>
               <xsl:if test="header/version">
