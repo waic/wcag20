@@ -5,7 +5,9 @@
 <header>
 <title>WCAG 2.0 解説書</title>
 <subtitle>WCAG 2.0 を理解して実装するためのガイド</subtitle>
-<trdisclaimer><p>【注意】 この文書は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2012年1月3日版</loc>を、情報通信アクセス協議会の「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/">ウェブアクセシビリティ基盤委員会（WAIC）</loc>」が翻訳して公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】なお、この文書の内容は、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。あくまでも参考程度にご覧ください。</p></trdisclaimer>
+<trdisclaimer><p>【注意】 この文書は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</loc>を、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/">ウェブアクセシビリティ基盤委員会（WAIC）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p>
+<p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p>
+</trdisclaimer>
 <version/>
 <w3c-designation>UNDERSTANDING-WCAG20</w3c-designation>
 <w3c-doctype>W3C ワーキンググループ・ノート</w3c-doctype>
