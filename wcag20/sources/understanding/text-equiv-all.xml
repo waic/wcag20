@@ -222,7 +222,7 @@ E-ラーニングアプリケーション
 <head>状況 D: 非テキストコンテンツが時間の経過に伴って変化するメディアである（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）、テキストで提示されると無効になる試験又は演習である、又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツである場合:</head>
 <olist>
 <item><p>次に挙げる
-Providing a descriptive label using one of the following <emph role="bold"><loc href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、ラベルを記述する:
+<emph role="bold"><loc href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、ラベルを記述する:
 </p></item>
 <item diff="del"><p diff="del"><loc href="ARIA6" linktype="aria"/></p></item>
 <item diff="del"><p diff="del"><loc href="ARIA10" linktype="aria"/></p></item>
@@ -241,11 +241,19 @@ Providing a descriptive label using one of the following <emph role="bold"><loc 
 <p use-id="text-equiv-all-situation-a-shorttext-techs"/>
 </div5>
 
-<div5 role="situation"><head>状況 E： 非テキストコンテンツが CAPTCHA である場合：</head><olist><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G143" linktype="general">代替テキストを提供して、CAPTCHAの目的を説明する</loc>
-                    、<emph role="bold">かつ</emph>、
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G144" linktype="general">異なるモダリティを用いて、同じ目的を果たす CAPTCHA をもう一つウェブページで提供する</loc>
-                  </p></item></olist></div5><div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の達成方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
+<div5 role="situation">
+<head>状況 E: 非テキストコンテンツが CAPTCHA である場合:</head>
+<olist>
+<item><p>
+<loc href="G143" linktype="general">代替テキストを提供して、CAPTCHAの目的を説明する</loc>、
+<emph role="bold">かつ</emph>、
+<loc href="G144" linktype="general">同じ目的を果たす、異なる感覚モダリティを用いたもう一つのCAPTCHAがウェブページにあることを確認する</loc>
+</p></item>
+</olist>
+</div5>
+
+
+<div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の達成方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
     </p><ulist><item><p>
                         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="html">支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない　</loc>  
                       </p></item><item><p>
