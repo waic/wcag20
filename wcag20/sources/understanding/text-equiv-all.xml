@@ -186,45 +186,62 @@ E-ラーニングアプリケーション
 </ulist>
 </div5>
 
+<div5 role="situation">
+<head>状況 C: 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合:</head>
+<olist>
+<item><p>次に挙げる
+<emph role="bold"><loc href="#text-equiv-all-situation-c-controls">状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法</loc></emph>
+のいずれかを用いて、
+<loc href="G82" linktype="general">非テキストコンテンツの目的を特定する代替テキストを提供する</loc>
+:
+</p></item>
+</olist>
+<p id="text-equiv-all-situation-c-controls"><emph role="bold">状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法</emph>:</p>
+<ulist id="text-equiv-all-situation-c-controls-techs">
+<item><p><loc href="ARIA6" linktype="aria"/></p></item>
+<item><p><loc href="ARIA9" linktype="aria"/></p></item>
+<item><p><loc href="FLASH6" linktype="flash" role="html"/></p></item>
+<item><p><loc href="FLASH25" linktype="flash" role="html"/></p></item>
+<item><p><loc href="FLASH27" linktype="flash" role="html"/></p></item>
+<item><p><loc href="FLASH29" linktype="flash" role="html"/></p></item>
+<item><p><loc href="FLASH30" linktype="flash" role="html"/></p></item>
+<item><p><loc href="FLASH32" linktype="flash" role="html"/></p></item>
+<item><p><loc href="H24" linktype="html" role="html"/></p></item>
+<item><p><loc href="H30" linktype="html" role="html"/></p></item>
+<item><p><loc href="H36" linktype="html" role="html"/></p></item>
+<item><p><loc href="H44" linktype="html" role="html"/></p></item>
+<item><p><loc href="H65" linktype="html" role="html"/></p></item>
+<item><p><loc href="SL18" linktype="silverlight" role="silverlight"/></p></item>
+<item><p><loc href="SL26" linktype="silverlight" role="silverlight"/></p></item>
+<item><p><loc href="SL30" linktype="silverlight" role="silverlight"/></p></item>
+</ulist>
+</div5>
 
 
-<div5 role="situation"><head>状況 C： 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合：</head><olist><item><p>
-次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G82" linktype="general">非テキストコンテンツの目的を示す代替テキストを提供する</loc>
-    </p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html">label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash">自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash">フォーム・コンポーネントに label プロパティを設定する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH25" linktype="flash">アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH30" linktype="flash">FLASH30： 画像ボタンにアクセシブルな名前を指定する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH27" linktype="flash">FLASH27： ボタンの目的を説明するラベルを提供する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH6" linktype="flash">非表示のボタンを使用してアクセシブルなホットスポットを作成する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18" linktype="silverlight">Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30" linktype="silverlight">Using Silverlight Control Compositing and AutomationProperties.Name</loc>  
-                  </p></item></olist></div5>
+<div5 role="situation">
+<head>状況 D: 非テキストコンテンツが時間の経過に伴って変化するメディアである（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）、テキストで提示されると無効になる試験又は演習である、又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツである場合:</head>
+<olist>
+<item><p>次に挙げる
+Providing a descriptive label using one of the following <emph role="bold"><loc href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、ラベルを記述する:
+</p></item>
+<item diff="del"><p diff="del"><loc href="ARIA6" linktype="aria"/></p></item>
+<item diff="del"><p diff="del"><loc href="ARIA10" linktype="aria"/></p></item>
+<item><p>次に挙げる
+<emph role="bold"><loc href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替の達成方法</loc></emph>
+のいずれかを用いて、
+<loc href="G68" linktype="general">コンテンツの内容が分かるラベルを提供し、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</loc>:
+</p></item>
+<item><p>次に挙げる
+<emph role="bold"><loc href="#text-equiv-all-situation-d-shorttext">状況 D における短いテキストによる代替の達成方法</loc></emph>
+のいずれかを用いて、
+<loc href="G100" linktype="general">非テキストコンテンツの一般に認められた名前又は内容が分かる名前を提供する</loc>:
+</p></item>
+</olist>
+<p id="text-equiv-all-situation-d-shorttext"><emph role="bold">Short text alternative techniques for Situation D</emph>:</p>
+<p use-id="text-equiv-all-situation-a-shorttext-techs"/>
+</div5>
 
-
-<div5 role="situation"><head>状況 D： 非テキストコンテンツが時間の経過に伴って変化するメディアである場合（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）； テキストで提示されると無効になる試験又は演習；又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツ：</head><olist><item><p>
-次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、ラベルを記述する。
-    </p></item><item><p>
-次に挙げる<emph role="bold">短い</emph>
-代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G68" linktype="general">ラベルを記述して、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</loc>
-    </p></item><item><p>
-次に挙げる<emph role="bold">短い</emph>
-代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G100" linktype="general">非テキストコンテンツの一般的な名前、又は説明的な名前を提供する</loc>
-    </p></item></olist></div5><div5 role="situation"><head>状況 E： 非テキストコンテンツが CAPTCHA である場合：</head><olist><item><p>
+<div5 role="situation"><head>状況 E： 非テキストコンテンツが CAPTCHA である場合：</head><olist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G143" linktype="general">代替テキストを提供して、CAPTCHAの目的を説明する</loc>
                     、<emph role="bold">かつ</emph>、
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G144" linktype="general">異なるモダリティを用いて、同じ目的を果たす CAPTCHA をもう一つウェブページで提供する</loc>
