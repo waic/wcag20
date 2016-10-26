@@ -23,33 +23,22 @@
 <head>補足情報</head>
 <p>非テキストコンテンツには様々な形態があり、この達成基準ではそれぞれをどのように扱うべきかを特定している。</p>
 
-<p><emph role="bold">以下に挙げる状況の他のどれにも該当しない非テキストコンテンツ</emph>
-（例：チャート、ダイアグラム、録音した音声、写真、そしてアニメーション）の場合、代替テキストは同じ情報をあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）によって描画可能な形態で入手可能にすることができる。簡潔な、及び長めの代替テキストは、非テキストコンテンツにある情報を伝達するのに必要に応じて用いられる。<emph role="bold">
-収録済の音声しか含まない</emph>ファイル及び<emph role="bold">収録済の映像しか含まない</emph>ファイルは、ここで扱われている。<emph role="bold">
-ライブの音声しか含まない</emph>ファイル及び<emph role="bold">
-ライブの映像しか含まない</emph>ファイルは、以下で扱われている（この段落後にある3つ目の段落を参照のこと）。</p>
+<p><emph role="bold">以下に挙げる状況の他のどれにも該当しない非テキストコンテンツ</emph>（例：チャート、ダイアグラム、録音した音声、写真、そしてアニメーション）の場合、代替テキストは同じ情報をあらゆる感覚モダリティ（例えば、視覚、聴覚、あるいは触覚）によって描画可能な形態で入手可能にすることができる。簡潔な、及び長めの代替テキストは、非テキストコンテンツにある情報を伝達するのに必要に応じて用いられる。<emph role="bold">収録済の音声しか含まない</emph>ファイル及び<emph role="bold">収録済の映像しか含まない</emph>ファイルは、ここで扱われている。<emph role="bold">ライブの音声しか含まない</emph>ファイル及び<emph role="bold">ライブの映像しか含まない</emph>ファイルは、以下で扱われている（この段落後にある3つ目の段落を参照のこと）。</p>
 
-<p><emph role="bold">
-コントロールあるいは利用者の入力を受け入れる非テキストコンテンツ</emph>
-（例：実行ボタンとして用いられる画像、イメージマップ、あるいは複雑なアニメーション）の場合、その非テキストコンテンツが何で、なぜそこにあるのかが、利用者にとって、少なくとも分かるようにするために、識別名を提供してその非テキストコンテンツの目的を説明する。</p><p>
-              <emph role="bold">
-時間の経過に伴って変化するメディアである非テキストコンテンツ</emph>は、
-<specref ref="media-equiv"/>によりアクセシブルになる。しかし、重要なのは利用者がページ上で発見したときにそれが何であるかが分かり、それにより利用者がどのようにしたいかを判断できるようにすることである。そのため、時間の経過に伴って変化するメディアを説明し、場合によってはそのタイトルを示す代替テキストを提供する。</p>
+<p><emph role="bold">コントロールあるいは利用者の入力を受け入れる非テキストコンテンツ</emph>、例えば、実行ボタンとして用いられる画像、イメージマップ、あるいは複雑なアニメーションなどの場合、名前は、少なくともその非テキストコンテンツが何で、なぜそこにあるのかを認識できるように、その非テキストコンテンツの目的を説明するために提供される。</p>
 
-<p><emph role="bold">
-ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツ</emph>の場合、それらと同等の情報を示す代替テキストを提供することは、はるかに困難なこともありうる。このようなタイプの非テキストコンテンツに対しては、代替テキストで内容の分かるラベルを提供する。
+<p><emph role="bold">時間の経過に伴って変化するメディアである非テキストコンテンツ</emph>は、<specref ref="media-equiv"/>によりアクセシブルになる。しかし、重要なのは利用者がページ上で発見したときにそれが何であるかが分かり、それにより利用者がどのようにしたいかを判断できるようにすることである。そのため、時間の経過に伴って変化するメディアを説明し、場合によってはそのタイトルを示す代替テキストを提供する。</p>
+
+<p><emph role="bold">ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツ</emph>の場合、それらと同等の情報を示す代替テキストを提供することは、はるかに困難なこともありうる。このようなタイプの非テキストコンテンツに対しては、代替テキストで内容の分かるラベルを提供する。
 </p>
 
-<p><emph role="bold">
-試験あるいは演習が、部分的又は全体的に非テキストのフォーマットで提示されなければならないことがある。</emph>その試験あるいは演習は聴覚や視覚を用いて行う必要があるため、テキストに変換することのできない音声あるいは視覚的な情報が提示されるからである。例えば、ヒアリングテストは、もし代替テキストが提供されたとしたら意味を成さないだろう。視覚能力向上のための演習も、テキスト形式では同様に無意味となってしまう。また、代替テキストのあるスペルの試験もあまり効果がない。このような場合には、代替テキストはその非テキストコンテンツの目的を説明するために提供されるべきである。もちろん、その代替テキストは、試験に合格するために必要な情報と同じものは提供しないことになる。</p><p>
-              <emph role="bold">
-特定の感覚的な体験を生むことを主目的にしたコンテンツ</emph>で、言葉では完全に表現できないものもある。例としては、交響楽団の演奏、視覚的な芸術作品などが挙げられる。そのようなコンテンツの場合、代替テキストは、内容の分かるラベルと可能ならば補足説明のテキストによって、その非テキストコンテンツを少なくとも確認できるようにする。もしそのコンテンツがそのページにある理由が明らかで、それが説明できるのであれば、そういった情報も含めると役に立つ。
-</p>
+<p><emph role="bold">試験あるいは演習が、部分的又は全体的に非テキストのフォーマットで提示されなければならないことがある。</emph>その試験あるいは演習は聴覚や視覚を用いて行う必要があるため、テキストに変換することのできない音声あるいは視覚的な情報が提示されるからである。例えば、ヒアリングテストは、もし代替テキストが提供されたとしたら意味を成さないだろう。視覚能力向上のための演習も、テキスト形式では同様に無意味となってしまう。また、代替テキストのあるスペルの試験もあまり効果がない。このような場合には、代替テキストはその非テキストコンテンツの目的を説明するために提供されるべきである。もちろん、その代替テキストは、試験に合格するために必要な情報と同じものは提供しないことになる。</p>
+
+<p><emph role="bold">特定の感覚的な体験を生むことを主目的にしたコンテンツ</emph>で、言葉では完全に表現できないものもある。例としては、交響楽団の演奏、視覚的な芸術作品などが挙げられる。そのようなコンテンツの場合、代替テキストは、内容の分かるラベルと可能ならば補足説明のテキストによって、その非テキストコンテンツを少なくとも確認できるようにする。もしそのコンテンツがそのページにある理由が明らかで、それが説明できるのであれば、そういった情報も含めると役に立つ。</p>
 
 <p><emph role="bold">利用者が人間であることを証明するために用いられる、非テキストの仕掛け。</emph>スパムロボットやその他のソフトウェアがサイトにアクセスしてくるのを回避するために、CAPTCHA と呼ばれている仕掛けが用いられる。CAPTCHA には、今日の ウェブロボットの能力を超えた視覚的あるいは聴覚的な課題が通常は用意されている。しかし、それに対して代替テキストを提供することは、ロボットでも操作可能なものにしてしまい、その目的を果たせなくなってしまう。このような場合、代替テキストは、CAPTCHA の目的を説明し、かつ、様々な障害のある利用者の要求に対処するために、異なるモダリティを用いた代替形式が提供される。</p>
 
-<p><emph role="bold">
-利用者が視覚的に確認したり、理解したりすることを意図していない非テキストコンテンツ。</emph>ページ上でテキストを移動させるために用いる透過画像、ログ解析のために用いる非表示の画像、情報は何も伝えていないが単に空白を埋めて見栄えをよくするための渦 (swirl) などが、この例として挙げられる。このような画像に代替テキストを記述すると、スクリーンリーダーの利用者がそのページのコンテンツを理解する妨げになるだけである。しかし、その非テキストコンテンツを全くマークアップしなければ、利用者にその非テキストコンテンツが何なのか、どんな情報を見逃してしまったのかを推測させてしまうことになる（実際には何も見逃していなかいのであるが）。そのため、このような非テキストコンテンツについては、支援技術 (AT) がそれを無視して、かつ利用者には何も提示しないような方法でマークアップあるいは実装する。</p>
+<p><emph role="bold">利用者が視覚的に確認したり、理解したりすることを意図していない非テキストコンテンツ。</emph>ページ上でテキストを移動させるために用いる透過画像、ログ解析のために用いる非表示の画像、情報は何も伝えていないが単に空白を埋めて見栄えをよくするための渦 (swirl) などが、この例として挙げられる。このような画像に代替テキストを記述すると、スクリーンリーダーの利用者がそのページのコンテンツを理解する妨げになるだけである。しかし、その非テキストコンテンツを全くマークアップしなければ、利用者にその非テキストコンテンツが何なのか、どんな情報を見逃してしまったのかを推測させてしまうことになる（実際には何も見逃していなかいのであるが）。そのため、このような非テキストコンテンツについては、支援技術 (AT) がそれを無視して、かつ利用者には何も提示しないような方法でマークアップあるいは実装する。</p>
 </div4>
 
 <div4 role="benefits">
@@ -130,14 +119,12 @@ E-ラーニングアプリケーション
 <div3 role="resources">
 <head>関連リソース</head>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc></p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>
-              </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.gawds.org/show.php?contentid=28">GAWDS Writing Better Alt Text</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/images/captcha-if-youre-names-not-down-youre-not-coming-in/">CAPTCHA - if your name’s not down you’re not coming in</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/articles/too-much-accessibility/too-much-accessibility-the-rise-and-fall-of-the-longdesc/">Too much accessibility - the rise and fall of the LONGDESC</loc></p></item>
 </ulist>
 </div3>
 
@@ -145,15 +132,62 @@ E-ラーニングアプリケーション
 <head>Techniques for Addressing Success Criterion 1.1.1</head>
 <div4 role="sufficient"><head/>
 <div5 role="situation">
-<head>状況 A： 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示できる場合：</head>
+<head>状況 A: 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示できる場合:</head>
 <olist>
-<item><p>次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、
-<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G94" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する短い代替テキストを提供する</loc>    </p></item>
+<item>
+<p>次に挙げる<emph role="bold"><loc href="#text-equiv-all-situation-a-shorttext">状況 A における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G94" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する短い代替テキストを提供する</loc>:</p>
+</item>
 </olist>
+<p id="text-equiv-all-situation-a-shorttext"><emph role="bold">状況 A における短いテキストによる代替の達成方法</emph>:</p>
+<ulist id="text-equiv-all-situation-a-shorttext-techs">
+	<item><p><loc href="ARIA6" linktype="aria"/></p></item>
+	<item><p><loc href="ARIA10" linktype="aria"/></p></item>
+	<item><p><loc href="G196" linktype="general"/></p></item>
+	<item><p><loc href="FLASH1" linktype="flash" role="flash"/></p></item>
+	<item><p><loc href="FLASH5" linktype="flash" role="flash"/></p></item>
+	<item><p><loc href="FLASH28" linktype="flash" role="flash"/></p></item>
+	<item><p><loc href="H2" linktype="html" role="html"/></p></item>
+	<item><p><loc href="H35" linktype="html" role="html"/></p></item>
+	<item><p><loc href="H37" linktype="html" role="html"/></p></item>
+	<item><p><loc href="H53" linktype="html" role="html"/></p></item>
+	<item><p><loc href="H86" linktype="html" role="html"/></p></item>
+	<item><p><loc href="PDF1" linktype="pdf" role="pdf"/></p></item>
+	<item><p><loc href="SL5" linktype="silverlight" role="silverlight"/></p></item>
+</ulist>
 </div5>
 
 <div5 role="situation">
-<head>状況 B： 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示<emph role="bold">できない</emph>場合（例：チャート又はダイアグラム）：</head>
+<head>状況 B: 短い説明によって、非テキストコンテンツと同じ目的を果たし、同じ情報を提示<emph role="bold">できない</emph>場合（例: チャート又はダイアグラム）:</head>
+<olist><item><p>
+次に挙げる
+<emph role="bold"><loc href="#text-equiv-all-situation-b-shorttext">状況 B における短いテキストによる代替の達成方法</loc></emph>
+のいずれか<emph role="bold">及び</emph>、
+<emph role="bold"><loc href="#text-equiv-all-situation-b-longtext">状況 B における長いテキストによる代替の達成方法</loc></emph>
+のいずれかを用いて、
+<loc href="G95" linktype="general">非テキストコンテンツの簡単な説明を提供する、簡潔な代替テキストを提供する</loc>
+:
+</p></item></olist>
+
+<p id="text-equiv-all-situation-b-shorttext"><emph role="bold">状況 B における短いテキストによる代替の達成方法</emph>:</p>
+<p use-id="text-equiv-all-situation-a-shorttext-techs"/>
+
+<p id="text-equiv-all-situation-b-longtext"><emph role="bold">状況 B における長いテキストによる代替の達成方法</emph>:</p>
+
+<ulist id="text-equiv-all-situation-b-longtext-techs">
+	<item><p><loc href="ARIA15" linktype="aria"/></p></item>
+	<item><p><loc href="G73" linktype="general"/></p></item>
+	<item><p><loc href="G74" linktype="general"/></p></item>
+	<item><p><loc href="G92" linktype="general"/></p></item>
+	<item><p><loc href="FLASH2" linktype="flash" role="flash"/></p></item>
+	<item><p><loc href="FLASH11" linktype="flash" role="flash"/></p></item>
+	<item><p><loc href="H45" linktype="html" role="html"/></p></item>
+	<item><p><loc href="H53" linktype="html" role="html"/></p></item>
+	<item><p><loc href="SL8" linktype="silverlight" role="silverlight"/></p></item>
+</ulist>
+</div5>
+
+
+<div5 role="situation">
 <olist>
 	<item><p>
 次に挙げる<emph role="bold">短い</emph>
