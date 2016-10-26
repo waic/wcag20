@@ -252,17 +252,28 @@ E-ラーニングアプリケーション
 </olist>
 </div5>
 
+<div5 role="situation">
+<head>状況 F: 非テキストコンテンツを支援技術が無視するようにしなければならない場合:</head>
+<olist>
+<item><p>次に挙げる
+<emph role="bold"><loc href="#text-equiv-all-situation-f-notrequired">状況 F における必須ではない代替テキストを示す達成方法</loc></emph>
+のいずれかを用いて、支援技術によって無視することができるように、非テキスト コンテンツを実装またはマーク付けする:
+</p></item>
+</olist>
+<p id="text-equiv-all-situation-f-notrequired">
+<emph role="bold">状況 F における必須ではない代替テキストを示す達成方法</emph>:</p>
+<ulist id="text-equiv-all-situation-f-notrequired-techs">
+<item><p><loc href="C9" linktype="css"></loc></p></item>
+<item><p><loc href="FLASH3" linktype="flash"></loc></p></item>
+<item><p><loc href="H67" linktype="html"></loc></p></item>
+<item><p><loc href="PDF4" linktype="pdf"/></p></item>
+</ulist>
+</div5>
 
-<div5 role="situation"><head>状況 F： 非テキストコンテンツを支援技術が無視するようにしなければならない場合：</head><olist><item><p>次に挙げるウェブコンテンツ技術特有の達成方法を用いて、支援技術が非テキストコンテンツを無視するように実装する、又はマークアップする。
-    </p><ulist><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="html">支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない　</loc>  
-                      </p></item><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C9" linktype="css">CSS を用いて、装飾的な画像を付加する</loc>  
-                      </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH3" linktype="flash">支援技術が無視できるように Flash のオブジェクトにマークを付ける</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF4" linktype="pdf">PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する</loc>  
-                  </p></item></ulist></item></olist></div5><div5><head>
+
+
+
+<div5><head>
 前述の「十分な達成方法」を用いる際の<emph role="bold">短い</emph>代替テキストの達成方法
               </head><olist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H36" linktype="html">送信 / 実行ボタンとして用いる画像の alt 属性を使用する</loc>  
