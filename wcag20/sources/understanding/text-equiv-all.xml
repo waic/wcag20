@@ -187,20 +187,8 @@ E-ラーニングアプリケーション
 </div5>
 
 
-<div5 role="situation">
-<olist>
-	<item><p>
-次に挙げる<emph role="bold">短い</emph>
-代替テキストの達成方法<emph role="bold">及び</emph>次に挙げる<emph role="bold">長い</emph>説明の達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G95" linktype="general">非テキストコンテンツを簡潔に説明する短い代替テキストを提供する</loc>
-</p><ulist>
-	<item><p>
-次に挙げる<emph role="bold">長い</emph>
-代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G92" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する長い説明を提供する</loc>
-    </p></item><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G74" linktype="general">短い説明の中で長い説明のある場所を示して、非テキストコンテンツの近くにあるテキストで長い説明を提供する</loc>
-                      </p></item><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G73" linktype="general">非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する</loc>
-                      </p></item></ulist></item></olist></div5><div5 role="situation"><head>状況 C： 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合：</head><olist><item><p>
+
+<div5 role="situation"><head>状況 C： 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合：</head><olist><item><p>
 次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G82" linktype="general">非テキストコンテンツの目的を示す代替テキストを提供する</loc>
     </p></item>
 	<item><p>
@@ -225,7 +213,10 @@ E-ラーニングアプリケーション
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc>  
                   </p></item><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30" linktype="silverlight">Using Silverlight Control Compositing and AutomationProperties.Name</loc>  
-                  </p></item></olist></div5><div5 role="situation"><head>状況 D： 非テキストコンテンツが時間の経過に伴って変化するメディアである場合（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）； テキストで提示されると無効になる試験又は演習；又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツ：</head><olist><item><p>
+                  </p></item></olist></div5>
+
+
+<div5 role="situation"><head>状況 D： 非テキストコンテンツが時間の経過に伴って変化するメディアである場合（ライブの映像しか含まないコンテンツ及びライブの音声しか含まないコンテンツを含む）； テキストで提示されると無効になる試験又は演習；又は、特定の感覚的体験を創り出すことを主に意図しているコンテンツ：</head><olist><item><p>
 次に挙げる<emph role="bold">短い</emph>代替テキストの達成方法を用いて、ラベルを記述する。
     </p></item><item><p>
 次に挙げる<emph role="bold">短い</emph>
