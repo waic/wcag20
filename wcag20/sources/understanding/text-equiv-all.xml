@@ -272,40 +272,88 @@ E-ラーニングアプリケーション
 </div4>
 
 
-<div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる達成方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な達成方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの達成方法（参考）</head><ulist><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc>  
-                  </p></item><item><p>
-フレームをサポートしないブラウザのために作成する（リンク追加予定）
-                  </p></item><item><p>
-iframe要素の代替コンテンツを提供する（リンク追加予定）
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H27" linktype="html">object要素の代替となるテキストと非テキストを提供する</loc>  
-                  </p></item><item><p>
-iframe要素の長い説明を使わない（リンク追加予定）
-                  </p></item><item><p>
-クライアントサイドイメージマップのために冗長なテキストリンクを提供する（リンク追加予定）
-    </p></item></ulist></div5><div5><head role="css">CSSの達成方法（参考）</head><ulist><item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc>  </p></item><item role="css"><p>
-装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う（リンク追加予定）
-    </p></item><item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item></ulist></div5><div5><head role="aria">WAI-ARIAの達成方法（参考）</head><ulist><item role="aria"><p>表現のためだけの要素を示すためにARIA表示を使う（リンク追加予定）
-                  </p></item></ulist></div5><div5><head role="silverlight">Silverlightの達成方法（参考）</head><ulist><item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc>  </p></item></ulist></div5><div5><head>メタデータの達成方法（参考）</head><ulist><item><p>テキストトランスクリプションと映像を関連付けるためにメタデータを使う（リンク追加予定） </p></item><item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p><ulist><item><p>事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する</p></item><item><p>事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する</p></item></ulist></item></ulist></div5></div4><div4 role="failures"><head/><ulist><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F30" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</loc>
-                </p></item><item role="css"><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F3" linktype="failure">達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F39" linktype="failure">達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F38" linktype="failure">達成基準 1.1.1 の不適合事例 － HTMLで装飾を目的にして用いられている非テキストコンテンツのalt属性を省略している</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F71" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、テキストのようなものを用いてテキストを表している</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F72" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、ASCIIアートを用いている</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F65" linktype="failure">達成基準 1.1.1 の不適合事例 － img要素、area要素、及び type "image" のinput要素のalt属性を省略している</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F67" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F13" linktype="failure">達成基準 1.1.1 及び 達成基準 1.4.1 の不適合事例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない</loc>
-                </p></item></ulist></div4></div3></div2>
+<div4 role="tech-optional">
+<head>達成基準 1.1.1 でさらに対応が望まれる達成方法（参考） </head>
+<div5>
+<head>非テキストコンテンツに関する一般的な達成方法（参考）</head>
+<ulist>
+	<item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item>
+	<item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item>
+	<item><p>テキストを含む画像を説明する（リンク追加予定）</p></item>
+	<item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item>
+	<item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item>
+	<item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5>
+<head>ライブの非テキストコンテンツに関する一般的な達成方法（参考）</head>
+<ulist>
+	<item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5>
+<head>CAPTCHAの障壁を最小化する一般的な達成方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques -->
+<ulist>
+	<item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item>
+	<item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item>
+	<item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5>
+<head>HTMLの達成方法（参考）</head>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc></p></item>
+	<item><p>フレームをサポートしないブラウザのために作成する（リンク追加予定）</p></item>
+	<item><p>iframe要素の代替コンテンツを提供する（リンク追加予定）</p></item>
+	<item><p>iframe要素の長い説明を使わない（リンク追加予定）</p></item>
+	<item><p>クライアントサイドイメージマップのために冗長なテキストリンクを提供する（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5><head role="css">CSSの達成方法（参考）</head>
+<ulist>
+	<item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc></p></item>
+	<item role="css"><p>装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う（リンク追加予定）</p></item>
+	<item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5>
+<head role="aria">WAI-ARIAの達成方法（参考）</head>
+<ulist>
+	<item role="aria"><p>表現のためだけの要素を示すためにARIA表示を使う（リンク追加予定）</p></item>
+</ulist>
+</div5>
+<div5><head role="silverlight">Silverlightの達成方法（参考）</head>
+<ulist>
+	<item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc></p></item>
+</ulist>
+</div5>
+<div5><head>メタデータの達成方法（参考）</head>
+<ulist>
+	<item><p>テキストトランスクリプションと映像を関連付けるためにメタデータを使う（リンク追加予定） </p></item>
+	<item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p>
+		<ulist>
+			<item><p>事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する</p></item>
+			<item><p>事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する</p></item>
+		</ulist>
+	</item>
+</ulist>
+</div5>
+</div4>
 
+<div4 role="failures">
+<head/>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F30" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</loc></p></item>
+	<item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F3" linktype="failure">達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F39" linktype="failure">達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F38" linktype="failure">達成基準 1.1.1 の不適合事例 － HTMLで装飾を目的にして用いられている非テキストコンテンツのalt属性を省略している</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F71" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、テキストのようなものを用いてテキストを表している</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F72" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、ASCIIアートを用いている</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F65" linktype="failure">達成基準 1.1.1 の不適合事例 － img要素、area要素、及び type "image" のinput要素のalt属性を省略している</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F67" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F13" linktype="failure">達成基準 1.1.1 及び 達成基準 1.4.1 の不適合事例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない</loc></p></item>
+</ulist>
+</div4>
+</div3>
+</div2>
