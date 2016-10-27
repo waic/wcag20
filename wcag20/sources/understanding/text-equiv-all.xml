@@ -269,47 +269,10 @@ E-ラーニングアプリケーション
 <item><p><loc href="PDF4" linktype="pdf"/></p></item>
 </ulist>
 </div5>
+</div4>
 
 
-
-
-<div5><head>
-前述の「十分な達成方法」を用いる際の<emph role="bold">短い</emph>代替テキストの達成方法
-              </head><olist><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H36" linktype="html">送信 / 実行ボタンとして用いる画像の alt 属性を使用する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html">隣り合った画像とテキストリンクを同じリンクの中に入れる</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H37" linktype="html">img 要素の alt 属性を用いる</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H35" linktype="html">applet 要素に代替テキストを提供する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH1" linktype="flash">非テキストオブジェクトに名前プロパティを設定する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF1" linktype="pdf">PDF 文書の Alt エントリによって画像に代替テキストを適用する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H24" linktype="html">イメージマップの area 要素に代替テキストを提供する</loc>  
-                  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H86" linktype="html">ASCII アート、絵文字、及びリート語に代替テキストを提供する</loc>  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH28" linktype="flash">Flash で ASCII アート、顔文字、リート語の代替テキストを提供する</loc>  
-                  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H30" linktype="html">a 要素のリンクの目的を説明するテキストリンクを提供する</loc>  </p><note><p><specref ref="navigation-mechanisms-refs"/>を参照のこと。</p></note></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G196" linktype="general">画像のグループにある一つの画像に代替テキストを提供して、そのグループのすべての画像を説明する</loc> </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH5" linktype="flash">リンク先が同じで隣接している画像とテキストのボタンを結合する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL5" linktype="silverlight">Defining a Focusable Image Class for Silverlight</loc>  
-                  </p></item></olist></div5><div5><head>
-前述の「十分な達成方法」を用いる際の<emph role="bold">長い</emph>代替テキストの達成方法
-              </head><olist><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H45" linktype="html">longdesc 属性を用いる</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH2" linktype="flash">Flash 内の非テキストオブジェクトに説明プロパティを設定する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH11" linktype="flash">オブジェクトについて長いテキストの説明を提供する</loc>  
-                  </p></item><item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL8" linktype="silverlight">Displaying HelpText in Silverlight User Interfaces</loc>  
-                  </p></item></olist></div5></div4><div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる達成方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な達成方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの達成方法（参考）</head><ulist><item><p>
+<div4 role="tech-optional"><head>達成基準 1.1.1 でさらに対応が望まれる達成方法（参考） </head><div5><head>非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>参考情報の非テキストコンテンツを識別する（リンク追加予定）</p></item><item><p>簡潔な説明を短く保つ（リンク追加予定）</p></item><item><p>テキストを含む画像を説明する（リンク追加予定）</p></item><item><p>上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する（リンク追加予定）</p></item><item><p>非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する（リンク追加予定）</p></item><item><p>画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う（リンク追加予定）</p></item></ulist></div5><div5><head>ライブの非テキストコンテンツに関する一般的な達成方法（参考）</head><ulist><item><p>同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする（リンク追加予定）</p></item></ulist></div5><div5><head>CAPTCHAの障壁を最小化する一般的な達成方法</head><!-- Note: use WG notes to issue 1940 as starter material for these techniques --><ulist><item><p>CAPTCHAを3つ以上の感覚モダリティで提供する（リンク追加予定）</p></item><item><p>CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする（リンク追加予定）</p></item><item><p>許可した利用者には CAPTCHA を要求しない（リンク追加予定）</p></item></ulist></div5><div5><head>HTMLの達成方法（参考）</head><ulist><item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc>  
                   </p></item><item><p>
 フレームをサポートしないブラウザのために作成する（リンク追加予定）
