@@ -18,7 +18,7 @@
 </pubdate>
 <publoc>
 	<!--<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/</loc>-->
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/">http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/</loc>
+	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc>
 </publoc>
 <altlocs>
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="complete.html">単一ファイル版</loc>
@@ -33,7 +33,7 @@
 	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/ (public review copy)</loc>
       	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/ (internal review copy)</loc>
 	-->
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/">http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/</loc>
+	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/">http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/</loc>
     </prevlocs>
 
 <authlist>
