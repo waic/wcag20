@@ -40,8 +40,6 @@
      
       <xsl:otherwise>
    <xsl:apply-templates select="trdisclaimer"/>
-    <p align="center">[<a href="#contents">contents</a>]<xsl:text> </xsl:text>
-    </p>
     <div class="head">
       <xsl:if test="not(/spec/@role='editors-copy')">
         <p>
