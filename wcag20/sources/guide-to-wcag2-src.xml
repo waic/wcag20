@@ -36,35 +36,43 @@
 	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/">http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/</loc>
     </prevlocs>
 
-<authlist>
-<author role="current">
-	<name>Michael Cooper</name>
-	<affiliation>W3C</affiliation>
-</author>
-<author role="current">
-	<name>Loretta Guarino Reid</name>
-	<affiliation>Google, Inc.</affiliation>
-</author>
-<author role="current">
-	<name>Gregg Vanderheiden</name>
-	<affiliation>Trace R&amp;D  Center, University of Wisconsin-Madison</affiliation>
-</author>
-<author role="past">
-	<name>Ben Caldwell</name>
-	<affiliation>(until September 2010 while at Trace R&amp;D Center, University of Wisconsin-Madison)</affiliation>
-</author>
-<author role="past">
-	<name>Wendy Chisholm</name>
-	<affiliation>(until July 2006 while at W3C)</affiliation>
-</author>
-<author role="past">
-	<name>John Slatin</name>
-	<affiliation>(until June 2006 while at Accessibility Institute, University of Texas at Austin)</affiliation>
-</author>
-</authlist>
-
-
-
+      <authlist>
+         <author role="current">
+            <name>Michael Cooper</name>
+            <affiliation>W3C</affiliation>
+         </author>
+         <author role="current">
+            <name>Andrew Kirkpatrick</name>
+            <affiliation>Adobe Systems Inc.</affiliation>
+         </author>
+         <author role="current">
+            <name>Joshue O Connor</name>
+            <affiliation>InterAccess</affiliation>
+         </author>
+         <author role="past">
+            <name>Loretta Guarino Reid</name>
+            <affiliation>(until May 2013 while at Google, Inc.)</affiliation>
+         </author>
+         <author role="past">
+            <name>Gregg Vanderheiden</name>
+            <affiliation>(until May 2013 while at Trace R&amp;D  Center, University of
+Wisconsin-Madison)</affiliation>
+			</author>
+			<author role="past">
+				<name>Ben Caldwell</name>
+				<affiliation>(until September 2010 while at Trace R&amp;D Center, University of
+    			Wisconsin-Madison)</affiliation>
+			</author>
+			<author role="past">
+				<name>Wendy Chisholm</name>
+				<affiliation>(until July 2006 while at W3C)</affiliation>
+			</author>
+			<author role="past">
+				<name>John Slatin</name>
+				<affiliation>(until June 2006 while at Accessibility Institute, University of Texas at
+Austin)</affiliation>
+			</author>
+		</authlist>
 
 <status>
 <p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
