@@ -330,7 +330,7 @@
   					<xsl:attribute name="onload">jscheck()</xsl:attribute>
   				</xsl:if>
   				
-  				<a name="top"> </a>
+  				<a name="top"><xsl:text> </xsl:text> </a>
   				<xsl:apply-templates/>
   				<xsl:if test="//footnote">
   					<hr/>
