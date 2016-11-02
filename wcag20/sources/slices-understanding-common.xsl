@@ -323,7 +323,6 @@
   					</xsl:if>
   				</title>
   	    		<xsl:call-template name="canonical-link"/>
-  				<link rel="stylesheet" type="text/css" href="additional.css"/>
   				<xsl:call-template name="css"/>
   			</head>
   			<body class="slices">
