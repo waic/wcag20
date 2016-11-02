@@ -2406,7 +2406,7 @@
 	<link media="print" type="text/css" rel="stylesheet" href="print.css" />
 	<link rel="stylesheet" type="text/css" href="additional.css" />
 	<link rel="stylesheet" type="text/css">
-		<xsl:attribute name="href"><xsl:text>http://www.w3.org/StyleSheets/TR/</xsl:text>
+		<xsl:attribute name="href"><xsl:text>http://www.w3.org/StyleSheets/TR/2016/</xsl:text>
 		    <xsl:choose>
 				<!-- Editor's review drafts are a special case. -->
 			    	<xsl:when test="/spec/@role='editors-copy'">W3C-ED</xsl:when>
@@ -2430,7 +2430,7 @@
 	</xsl:template>
         
 	<xsl:template name="additional-head">
-		<!-- nop -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	</xsl:template>
 	<xsl:template name="href.target">
 		<xsl:param name="target" select="."/>
