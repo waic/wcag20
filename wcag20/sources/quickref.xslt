@@ -683,7 +683,7 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
     </p-->
     <div xmlns="http://www.w3.org/1999/xhtml" class="head">
       <xsl:if test="not(/spec/@role='editors-copy')">
-       <p id="logos"><a href="http://www.w3.org/" title="W3C Home"><img src="http://www.w3.org/Icons/w3c_home" alt="W3C logo" width="72" height="48" /></a><a href="http://www.w3.org/WAI/" title="WAI Home"><img src="http://www.w3.org/WAI/images/wai-temp" alt="Web Accessibility Initiative (WAI) logo" height="48" /></a></p>
+       <p id="logos"><a href="http://www.w3.org/" title="W3C Home"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C logo" width="72" height="48" /></a><a href="http://www.w3.org/WAI/" title="WAI Home"><img src="http://www.w3.org/WAI/images/wai-temp" alt="Web Accessibility Initiative (WAI) logo" height="48" /></a></p>
       </xsl:if>
       <xsl:text>
 </xsl:text>

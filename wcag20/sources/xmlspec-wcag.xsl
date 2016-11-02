@@ -44,7 +44,7 @@
       <xsl:if test="not(/spec/@role='editors-copy')">
         <p>
           <a href="http://www.w3.org/">
-            <img src="http://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"/>
+            <img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"/>
           </a>
           <xsl:choose>
             <xsl:when test="/spec/@w3c-doctype='memsub'">
@@ -467,7 +467,7 @@
           </head>
           <body class="slices">
             <div id="masthead">
-              <p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p>
+              <p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p>
               <p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div>
             <div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div>
             <a name="top"><xsl:text> </xsl:text> </a>

@@ -849,7 +849,7 @@
   </xsl:template>
   
 <xsl:template name="skipnav">
-<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home" /></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div>
+<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" /></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div>
 
 <div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p>	</div>
 
