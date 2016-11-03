@@ -558,7 +558,7 @@
         <xsl:when test="../@role='extsrc'">
 				   <strong><xsl:call-template name="sc-handle">
           <xsl:with-param name="handleid" select="../@id"/>
-        </xsl:call-template></strong><span class="screenreader">:</span><br />Understanding Guideline <xsl:value-of select="../head"/>
+        </xsl:call-template></strong><span class="screenreader">:</span><br />ガイドライン <xsl:value-of select="../head"/> を理解する
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates/>
