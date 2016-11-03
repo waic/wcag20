@@ -200,7 +200,7 @@
 				技術特有の達成方法
 			</xsl:when>
         <xsl:when test="../@role='failures'">
-				 <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
+				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
 				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法（参考）
@@ -255,7 +255,7 @@
 	<xsl:template mode="h1handle" match="div2[not(@role='glintent' or @role='gladvisory' or @role='cc' or @role='normal')]">
 		<strong><xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="@id"/>
-    </xsl:call-template></strong><span class="screenreader">:</span><br /><abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> を理解する
+    </xsl:call-template></strong><span class="screenreader">:</span><br />達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> を理解する
 	</xsl:template>
 	  <xsl:template mode="divnum" match="div2[@role='cc']">
 		適合要件 <xsl:value-of select="head"/>  [<xsl:call-template name="sc-handle">
