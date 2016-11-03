@@ -1056,18 +1056,18 @@
     <xsl:variable name="handle">
     <xsl:choose>
     <!-- GL handles -->
- <xsl:when test="$handleid='text-equiv'">Text Alternatives</xsl:when>
-<xsl:when test="$handleid='media-equiv'">Time-based Media</xsl:when>
-<xsl:when test="$handleid='content-structure-separation'">Adaptable</xsl:when>
-<xsl:when test="$handleid='visual-audio-contrast'">Distinguishable</xsl:when>
-<xsl:when test="$handleid='keyboard-operation'">Keyboard Accessible</xsl:when>
-<xsl:when test="$handleid='time-limits'">Enough Time</xsl:when>
-<xsl:when test="$handleid='seizure'">Seizures</xsl:when>
-<xsl:when test="$handleid='navigation-mechanisms'">Navigable</xsl:when>
-<xsl:when test="$handleid='meaning'">Readable</xsl:when>
-<xsl:when test="$handleid='consistent-behavior'">Predictable</xsl:when>
-<xsl:when test="$handleid='minimize-error'">Input Assistance</xsl:when>
-<xsl:when test="$handleid='ensure-compat'">Compatible</xsl:when>
+ <xsl:when test="$handleid='text-equiv'">テキストによる代替</xsl:when>
+<xsl:when test="$handleid='media-equiv'">時間依存メディア</xsl:when>
+<xsl:when test="$handleid='content-structure-separation'">適応可能</xsl:when>
+<xsl:when test="$handleid='visual-audio-contrast'">判別可能</xsl:when>
+<xsl:when test="$handleid='keyboard-operation'">キーボード操作可能</xsl:when>
+<xsl:when test="$handleid='time-limits'">十分な時間</xsl:when>
+<xsl:when test="$handleid='seizure'">発作の防止</xsl:when>
+<xsl:when test="$handleid='navigation-mechanisms'">ナビゲーション可能</xsl:when>
+<xsl:when test="$handleid='meaning'">読みやすさ</xsl:when>
+<xsl:when test="$handleid='consistent-behavior'">予測可能</xsl:when>
+<xsl:when test="$handleid='minimize-error'">入力支援</xsl:when>
+<xsl:when test="$handleid='ensure-compat'">互換性</xsl:when>
     
     <!-- SC handles -->
     <!-- replaced by using <head> of the SC -->
