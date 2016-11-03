@@ -318,10 +318,10 @@
       </xsl:if>
       <em><xsl:choose>
         <xsl:when test="$exnumber = '1'">
-          <xsl:text>Example: </xsl:text>
+          <xsl:text>事例: </xsl:text>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:text>Example </xsl:text>
+          <xsl:text>事例 </xsl:text>
           <xsl:number count="p" format="1"/>:
 					</xsl:otherwise>
       </xsl:choose></em>
