@@ -871,15 +871,15 @@
 </xsl:template>
 
 	<xsl:template name="footer-latest-version-ref">
-		<xsl:text> (see the </xsl:text>
+		<xsl:text>（</xsl:text>
 		<a>
 			<xsl:attribute name="href">
 				<xsl:value-of select="ancestor::spec//latestloc/loc"/>
 				<xsl:apply-templates select="." mode="slice-techniques-filename"/>
 			</xsl:attribute>
-			<xsl:text>latest version of this document</xsl:text>
+			<xsl:text>この文書の最新版（英語）</xsl:text>
 		</a>
-		<xsl:text>)</xsl:text>
+		<xsl:text>を参照してください）</xsl:text>
 	</xsl:template>
 	
 <xsl:template match="div3[@id='conformance-terms']">
