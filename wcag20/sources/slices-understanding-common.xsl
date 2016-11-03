@@ -527,7 +527,7 @@
           <xsl:when test="$target/@id='conformance-referencing'"> 他の文書からのWCAG2.0の参照方法</xsl:when>
            <xsl:when test="$target/@id='accessibility-support-documenting'"> ウェブ技術の使用法のアクセシビリティ・サポーテッドを文書化する</xsl:when>
            <xsl:when test="$target/@id='understanding-metadata'"> メタデータを理解する</xsl:when>
-          <xsl:when test="$prefix = 0">SC  <xsl:value-of select="$target/head"/> [<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$target/@id"/></xsl:call-template>]</xsl:when>
+          <xsl:when test="$prefix = 0">達成基準  <xsl:value-of select="$target/head"/> [<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$target/@id"/></xsl:call-template>]</xsl:when>
           <xsl:when test="$target/@id='intro'"> <xsl:value-of select="$target/head"/></xsl:when>
         	<xsl:when test="$target/@id='understanding-techniques'"> <xsl:value-of select="$target/head"/></xsl:when>
           <xsl:when test="$target/@id='conformance'"> <xsl:value-of select="$target/head"/></xsl:when>
@@ -726,7 +726,7 @@
 				Technology-Specific Techniques  
 			</xsl:when>
         <xsl:when test="../@role='failures'">
-				 <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>のよくある不適合事例
+				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> のよくある不適合事例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
 				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法（参考）
