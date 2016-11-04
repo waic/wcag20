@@ -560,7 +560,7 @@
       <xsl:when test="$target/../@role='failures'">Failure <xsl:value-of select="$target/@id"/></xsl:when>
       <xsl:when test="$target/@id">
         <xsl:value-of select="$target/head"/>
-        Technique <xsl:value-of select="$target/@id"/>
+        達成方法 <xsl:value-of select="$target/@id"/>
       </xsl:when>
       <xsl:otherwise>
 			</xsl:otherwise>
