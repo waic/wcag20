@@ -159,7 +159,7 @@
               </xsl:call-template>
 <!-- Quick TOC for Techniques (@@ needs update) -->
 <div class="navtoc">
-<p>On this page:</p>    
+<p>このページのコンテンツ:</p>    
                 <xsl:apply-templates mode="techniquetoc" select=".">
                   <xsl:with-param name="just.filename" select="'1'"/>
                 </xsl:apply-templates>
