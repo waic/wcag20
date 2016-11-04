@@ -1204,8 +1204,8 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <!--xsl:if test="$show.diff.markup = 1"-->
     <p>
-      <xsl:text>This document is also available </xsl:text>
-      <xsl:text>in these non-normative formats: </xsl:text>
+      <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
+
     </p>
     <ul>
       <xsl:for-each select="loc">
