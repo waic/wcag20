@@ -83,12 +83,17 @@
 	<p>ワーキンググループ・ノートとしての公開は、W3C 会員による承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、いつでも他の文書に置き換えられたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
 	<p>この文書は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日付W3C特許ポリシー（英語）</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc href="http://www.w3.org/2004/01/pp-impl/35422/status" rel="disclosure">一般公開されている特許のリスト（英語）</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">基本的な請求項（英語）</loc>を含む特許について実際に知識のある人は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">W3C 特許ポリシー 第6章（英語）</loc>に従って、その情報を開示することが求められる。</p>
 		</status>
-		<abstract>
+		<!--abstract>
 			<p>&quot;Techniques for WCAG 2.0&quot; は、<loc href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/>の達成基準を満たしたいと考えるウェブコンテンツ制作者に情報を提供する文書である。実装方法は、WCAG 2.0の達成基準を満たすために用いることができる具体的なコンテンツ制作方法である。この文書では、あらゆるウェブコンテンツ技術に適用可能で基本的な方法を説明する &quot;General Techniques&quot;、そして特定のウェブコンテンツ技術に適用可能な情報を提供するウェブコンテンツ技術特有の実装方法を提供している。<phrase diff="del">W3Cでは、独自仕様でないウェブコンテンツ技術の実装方法のみを文書化しており、WCAGワーキンググループはその他のウェブコンテンツ技術のベンダーが、その技術を用いたWCAG 2.0への適合のしかたを説明する同様の実装方法を文書化することを望んでいる。 </phrase><phrase diff="add">ウェブコンテンツ技術特有の実装方法は、「一般（General）」の実装方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般（General）」の実装方法とウェブコンテンツ技術特有の実装方法の双方を考慮に入れる必要がある。</phrase>この文書で提供されている実装方法を用いることによって、ウェブコンテンツはそれらを用いない場合よりも容易にWCAG 2.0の達成基準に適合することができる。</p>
 			<p>この文書で提供されている実装方法以外にも、WCAG 2.0に適合するために用いることのできる実装方法があるかもしれない。WCAGワーキンググループがメンテナンスする実装方法集ができるかぎり包括的なものになるように、そのような実装方法の追加をWCAGワーキンググループが検討できるように、WCAGワーキンググループに対して提案することを奨励する。是非 &quot;<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form（英語）</loc>&quot; を使って、追加すべき実装方法を提案していただきたい。</p>
 			<p diff="add">いくつかの実装方法には、「ユーザーエージェント及び支援技術によるサポート」のセクションがある。時間の経過に伴い、ユーザーエージェントや支援技術のバージョンは最新版ではなくなることがある。しかし、新しいバージョンがリリースされるたびに、このセクションを更新することは約束できない。コンテンツ制作者は、その時点でユーザーが使用しているユーザーエージェント及び支援技術を用いて各実装方法を検証する必要がある。 <loc href="accessibility-support" linktype="understanding">アクセシビリティサポートを理解する</loc>を参照のこと。</p>
 			<p>この文書は、W3C Web Accessibility Initiative (WAI)が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループ・ノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 実装方法集」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
-		</abstract>
+		</abstract-->
+		<abstract>
+			<p id="abstract-general-intro">This <emph>Techniques for WCAG 2.0</emph> document provides guidance for web content authors and evaluators on meeting <loc href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/> success criteria. It is part of a series of documents published by the W3C Web Accessibility Initiative (WAI) to support WCAG 2.0. For an introduction to WCAG, supporting technical documents, and educational material, see <loc href="http://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc>.</p>
+			<p><phrase id="abstract-techniques-informative">Techniques are informative—that means they are not required. The basis for determining conformance to WCAG 2.0 is the success criteria from the <loc href="http://www.w3.org/TR/WCAG20/">WCAG 2.0 standard</loc>—not the techniques.</phrase> <phrase id="abstract-techniques-understanding"><emph role="bold">For important information about techniques, please see the <loc href="understanding-techniques" linktype="understanding">Understanding Techniques for WCAG Success Criteria</loc> section of Understanding WCAG 2.0.</emph></phrase></p>
+			<p id="abstract-not-standalone"><emph>Techniques for WCAG 2.0</emph> is not intended to be used as a stand-alone document. Instead, it is expected that content authors will usually use <loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc> to read the WCAG success criteria, and follow links from there to specific topics in Understanding WCAG 2.0 and to specific techniques.</p>
+</abstract>
 		<langusage>
 			<language id="ja"/>
 		</langusage>
@@ -99,6 +104,33 @@
 		</revisiondesc>
 	</header>
 	<front>
+		<div1 id="intro">
+			<head>Introduction to <emph>Techniques for WCAG 2.0</emph></head>
+			<p use-id="abstract-general-intro"/>
+			<p>WCAG 2.0 itself is a stable document that does not change. This <emph>Techniques for WCAG 2.0</emph> document is updated periodically, about <phrase>twice per</phrase> year, to cover more current best practices and changes in technologies and tools.</p>
+			<p><phrase use-id="abstract-techniques-informative"/>.</p>
+			<note>
+				<p>W3C cautions against requiring W3C's sufficient techniques. The only thing that should be required is meeting the WCAG 2.0 success criteria. To learn more, see:</p>
+				<ulist>
+					<item>
+						<p><loc href="http://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc> in the WCAG 2 FAQ</p>
+					</item>
+					<!--
+							<item>
+								<p>
+									<loc href="http://www.w3.org/2013/02/stdref">Normative References to W3C Standards</loc>
+									<span class="quiet">[@@ Ian asks that we not point to this for now.]</span>
+								</p>
+							</item>
+							-->
+				</ulist>
+			</note>
+			<p use-id="abstract-not-standalone"/>
+			<p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p>
+			<p><phrase use-id="abstract-techniques-understanding"/></p>
+		</div1>
+</front>
+	<!--front>
 		<div1 id="intro">
 			<head>「WCAG 2.0 実装方法集」のイントロダクション</head>
 			<p>この文書は、W3C Web Accessibility Initiative (WAI)が提供する WCAG 2.0 関連文書群の一つである<bibref ref="WCAG20"></bibref>. よりアクセシブルなウェブコンテンツを制作するための具体的な制作方法及び事例を含んだ、さまざまな実装方法が紹介されている。同様に、WCAG 2.0の達成基準を満たしていないよくある失敗例を説明した不適合事例も挙げている。</p>
@@ -138,10 +170,10 @@
 			</div2>
 			<div2 id="intro-tech-types" role="normal">
 				<head>実装方法集の目次</head>
-				<p>以下のリストは、目次の各カテゴリにリンクしている。</p>
+				<p>以下のリストは、目次の各カテゴリにリンクしている。</p-->
 
 <!-- This list was created by XSLT, but is generated manually here. -->
-	<ulist>
+	<!--ulist>
         <item><p><loc href="Overview.html#general">1. 一般（G）</loc></p></item>
         <item><p><loc href="Overview.html#html">2. HTML / XHTML（H)</loc></p></item>
         <item><p><loc href="Overview.html#css">3. CSS（C)</loc></p></item>
@@ -157,7 +189,7 @@
     </ulist>
 			</div2>
 		</div1>
-	</front>
+	</front-->
 	<body>
 		<xi:include href="techniques/general.xml" xpointer="general"/>
 		<xi:include href="techniques/html.xml" xpointer="html"/>
