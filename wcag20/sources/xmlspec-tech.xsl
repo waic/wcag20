@@ -794,24 +794,27 @@
 	</xsl:template>
 	
 	<!-- overriding toc template to do some custom stuff for techniques -->
-		<xsl:template name="toc">
-		    <xsl:if test="$toc.level &gt; 0">
-      <div class="toc">
+	<xsl:template name="toc">
+		<xsl:if test="$toc.level &gt; 0">
+			<xsl:if test="$bytech != 1">
+				<div>
+					<hr/>
+	   				<h2>
+	   				<xsl:call-template name="anchor">
+	   					<xsl:with-param name="conditional" select="0"/>
+	   					<xsl:with-param name="default.id" select="'contents'"/>
+	   				</xsl:call-template>
+	   				<xsl:text>Sections</xsl:text>
+	    			</h2>
+	    			<ul>
+		   				<xsl:apply-templates select="//div1[not(@id = 'placeholders')] | //inform-div1" mode="toc"><xsl:with-param name="local.toc.level" select="1"/></xsl:apply-templates>
+	    			</ul>
+	   			</div>
+	   		</xsl:if>
+      <div id="toc">
+      	<h2>目次</h2>
         <xsl:text>
 </xsl:text>
-        <hr/>
-        <h2>
-          <xsl:call-template name="anchor">
-            <xsl:with-param name="conditional" select="0"/>
-            <xsl:with-param name="default.id" select="'contents'"/>
-          </xsl:call-template>
-          <xsl:text>目次</xsl:text>
-        </h2>
-      	<xsl:if test="$bytech != 1">
-      	<ul>
-      		<xsl:apply-templates select="//div1[not(@id = 'placeholders')] | //inform-div1" mode="toc"><xsl:with-param name="local.toc.level" select="1"/></xsl:apply-templates>
-      	</ul>
-      		</xsl:if>
         <ul class="toc">
           <xsl:choose>
             <xsl:when test="$quickref='1'">
