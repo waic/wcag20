@@ -680,7 +680,7 @@
 	</xsl:template>
 
 <xsl:template name="skipnav">
-<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" /></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div>
+<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" /></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div>
 <div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p>	</div>
 
 <xsl:if test="$show.diff.markup != 0">
