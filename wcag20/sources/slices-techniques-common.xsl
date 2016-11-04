@@ -349,7 +349,7 @@
             <xsl:call-template name="css"/>
           </head>
           <body>
-            <a name="top" > </a>
+            <a name="top"><xsl:text> </xsl:text> </a>
             <xsl:apply-templates/>
             <xsl:if test="//footnote">
               <hr/>
@@ -700,15 +700,15 @@
 </xsl:template>
   
 	<xsl:template name="footer-latest-version-ref">
-		<xsl:text> (see the </xsl:text>
+		<xsl:text>（</xsl:text>
 		<a>
 			<xsl:attribute name="href">
 				<xsl:value-of select="ancestor::spec//latestloc/loc"/>
 				<xsl:apply-templates select="." mode="slice-techniques-filename"/>
 			</xsl:attribute>
-			<xsl:text>latest version of this document</xsl:text>
+			<xsl:text>この文書の最新版（英語）</xsl:text>
 		</a>
-		<xsl:text>)</xsl:text>
+		<xsl:text>を参照してください）</xsl:text>
 	</xsl:template>
 	
 <xsl:template match="relatedtech">
