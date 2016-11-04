@@ -953,7 +953,7 @@
 		<xsl:number level="single" count="div1" format="1"/>.
 		<xsl:text> </xsl:text>
 	</xsl:template>
-	<xsl:template mode="divnum" match="back/div1 | inform-div1">Appendix<xsl:text> </xsl:text><xsl:number count="div1 | inform-div1" format="A"/>:<xsl:text> </xsl:text>
+	<xsl:template mode="divnum" match="back/div1 | inform-div1">附録<xsl:text> </xsl:text><xsl:number count="div1 | inform-div1" format="A"/>:<xsl:text> </xsl:text>
 	</xsl:template>
 	<xsl:template mode="divnum" match="front/div1 | front//div2 | front//div3 | front//div4 | front//div5"/>
 	<!-- BBC commented out b/c numbering is not needed at this level -->
