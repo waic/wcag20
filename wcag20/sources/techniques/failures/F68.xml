@@ -15,7 +15,7 @@
    <description>
     <p>この文書では、視覚的なデザインにおいてはラベルがあるにもかかわらず、フォームのコントロールに対応するラベルが<el>label</el>要素を用いて明示的に指定されていない場合に生じる不適合事例について解説する。</p>
     <note><p class="prefix">明示的なラベル付けが必要な要素は以下の通りである：</p>
-		<ulist><item><p><code>input type="text"</code></p></item><item><p><code>input type="checkbox"</code></p></item><item><p><code>input type="radio"</code></p></item><item><p><code>input type="file"</code></p></item><item><p><code>input type="password"</code></p></item><item><p><code>textarea</code></p></item><item><p><code>select</code></p></item></ulist><p class="prefix">以下の要素については、ラベルをvalue属性（サブミット（送信）およびリセット・ボタン）、al属性（画像を用いたボタン）、あるいは要素の内容そのもの（ボタン）でそれぞれ指定するため、<code>label</code>要素を用い<strong>ない</strong>。</p>
+		<ulist><item><p><code>input type="text"</code></p></item><item><p><code>input type="checkbox"</code></p></item><item><p><code>input type="radio"</code></p></item><item><p><code>input type="file"</code></p></item><item><p><code>input type="password"</code></p></item><item><p><code>textarea</code></p></item><item><p><code>select</code></p></item></ulist><p class="prefix">以下の要素については、ラベルをvalue属性（サブミット（送信）およびリセット・ボタン）、al属性（画像を用いたボタン）、あるいは要素の内容そのもの（ボタン）でそれぞれ指定するため、<code>label</code>要素を用いない。</p>
 		<ulist><item><p>サブミット（送信）及びリセット・ボタン (<code>input type="submit"</code>又は <code>input type="reset"</code>)</p></item><item><p>画像を用いたボタン (<code>input type="image"</code>)</p></item><item><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></item><item><p>スクリプト・ボタン (<code>button</code> 要素又は<code><![CDATA[<input type="button">]]></code>)</p></item></ulist></note>
   </description>
    <examples>
