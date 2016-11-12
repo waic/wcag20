@@ -41,7 +41,7 @@
         <item><p><code>select</code></p></item>
       </ulist>
     <p class="prefix">
-     次の場合には、<el>label</el>要素は利用<strong>しない</strong>。これらの要素に対するラベルは、<att>value</att>属性（送信ボタン及びリセットボタン）、<att>alt</att>属性（画像ボタン）、又は要素それ自体の内容（汎用ボタン）を介して提供されるからである。</p>
+     次の場合には、<el>label</el>要素は利用<emph role="bold">しない</emph>。これらの要素に対するラベルは、<att>value</att>属性（送信ボタン及びリセットボタン）、<att>alt</att>属性（画像ボタン）、又は要素それ自体の内容（汎用ボタン）を介して提供されるからである。</p>
       <ulist>
         <item><p>送信及びリセットボタン（<code>input type="submit"</code>又は<code>input type="reset"</code>）</p></item>
         <item><p>画像ボタン（<code>input type="image"</code>）</p></item>
