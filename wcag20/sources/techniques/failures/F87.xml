@@ -32,12 +32,12 @@ q:before { content: open-quote }
 q:after  { content: close-quote }]]></code>
       <description><p>これが、次のように使われている。</p>
 </description>
-      <code><p class="jim">
+      <code role="html401"><![CDATA[ <p class="jim">
  <q>彼は間に合うかな？</q>
 </p>
 <p class="mary">
  <q>無理そうよね。</q>
-</p></code>
+</p>]]></code>
     </eg-group>
     <eg-group>
       <head>不適合となる</head>
