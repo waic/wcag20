@@ -32,10 +32,7 @@
 </description>
       <code><![CDATA[p.tall {line-height:150%}]]></code>
       <description>
-        <p>&#13;
-コンテンツ側では、以下のようにクラスを指定している。&#13;
-<br/>&#13;
-In the content, call up the class.</p>
+        <p>コンテンツ側では、以下のようにクラスを指定している。</p>
       </description>
       <code><![CDATA[<p class="tall"> Lorem ipsum dolor sit …  </p>]]></code>
     </eg-group>

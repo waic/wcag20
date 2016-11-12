@@ -35,7 +35,7 @@
 </div>
 <p>Now is the time for all good men to come to the aid of their country.</p>]]></code>
       <description>
-        <p>事例 1のサンプルイメージ：<br/></p>
+        <p>事例 1のサンプルイメージ：</p>
         <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-obscured.gif" alt="コンテナの枠の外にあふれ、ページの他のテキストを覆い隠しているテキスト。"/>
       </description>
     </eg-group>
@@ -48,7 +48,7 @@
 </div>
 <p>Now is the time for all good men to come to the aid of their country.</p>]]></code>
       <description>
-        <p>事例 2のサンプルイメージ<br/></p>
+        <p>事例 2のサンプルイメージ</p>
         <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-truncated.gif" alt="拡大したテキストのために端が欠けたテキスト。"/>
       </description>
     </eg-group>

@@ -17,17 +17,17 @@
     <table border="1" cellpadding="5" summary="Table describing how the role, name, value and state are determined for HTML links and form controls.">
       <thead>
         <tr><th>HTML要素</th>
-<th>役割<br/>（Role）</th>
-<th>識別名<br/>（Name）</th>
-<th>値<br/>（Value）</th>
-<th>状態<br/>（State）</th>
+<th>役割<!--br/-->（Role）</th>
+<th>識別名<!--br/-->（Name）</th>
+<th>値<!--br/-->（Value）</th>
+<th>状態<!--br/-->（State）</th>
 </tr>
       </thead>
       <tbody>
         <tr><td> &lt;a&gt; </td>
 <td>リンク</td>
 <td>&#13;
-										<code>&lt;a&gt;</code>要素の<code>title</code>属性、画像リンクの場合は<code>alt</code>属性。<br/>テキストと画像の<code>alt</code>属性を両方が提供されている場合は、両者を結合する。</td>
+										<code>&lt;a&gt;</code>要素の<code>title</code>属性、画像リンクの場合は<code>alt</code>属性。<!--br/-->テキストと画像の<code>alt</code>属性を両方が提供されている場合は、両者を結合する。</td>
 <td>
 <code>href</code>属性</td>
 <td>&#13;
