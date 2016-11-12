@@ -817,7 +817,48 @@ Example 3: W3C key words</h4><div class="example"><div class="textbody"><p>定�
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-skip.html">
 						達成基準 2.4.1 (ブロックスキップ)を理解する
 					</a></li></ul></li></ul><h3 id="G123-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ブロックの終わりまで飛び越えることで、構成要素のブロックを回避するメカニズムを提供することである。ブロックの最初のリンク又はブロックの直前にあるリンクによって、フォーカスをそのブロックの直後にあるコンテンツに遷移させる。リンクを選択することでキーボードフォーカスはブロックを飛ばして進んでいく。複数のブロックを飛び越える場合は、利用者はこれらのリンクを使ってブロックを一つずつスキップしていく。</p></div><h3 class="small-head" id="G123-examples">事例</h3><h4 class="small-head" id="G123-ex1">事例 1: ナビゲーションリンクをスキップする</h4><div class="example"><div class="textbody"><p>ある組織のウェブサイトのページには、サイトの主なセクション、サイトマップ、組織についての情報、及び組織との連絡方法へのリンクを含むナビゲーションバー又はメインメニューがある。このエリアの最初のリンクは「ナビゲーションリンクをスキップする」で、利用者はそのリンクを選択してこれらのリンクをスキップする。</p></div></div><h4 class="small-head" id="G123-ex2">事例 2: 本の索引</h4><div class="example"><div class="textbody"><p>本の中に何ページかのセットになって区分されている索引がある。索引のそれぞれのページの冒頭にあるコンテンツの中には、アルファベットのそれぞれの文字に対するリンクがあり、その文字で始まる記載内容の索引にリンクしている。そのセットの中の最初のリンクは「リンクをスキップして索引へ」である。利用者は、このリンクを選択して他のリンクをスキップする。 </p></div></div><h4 class="small-head" id="G123-ex3">事例 3: 複数のリンクの集合</h4><div class="example"><div class="textbody"><p>ウェブサイト内の全てのページにはサイトマップ、組織に関する情報、及び組織との連絡方法へのリンクが含まれているセクションがある。サイトにある各セクションの全てのページには、同様にその下位の区分へのリンクの集合がある。1番目のブロックの最初のリンクは「ナビゲーション・リンクをスキップ」で、最初のリンクの集合をスキップする。2番目のブロックの最初のリンクは「セクションのリンクをスキップ」で、そのサブセクションのリンクをスキップする。</p></div></div><h4 class="small-head" id="G123-ex4">事例 4: ナビゲーション・リンクのブロックが複数あるHTMLページ</h4><div class="example"><div class="textbody"><p>この事例では、各セクションの冒頭の見出し要素（<a href="H69.html">達成方法 H69</a>）、及びそれぞれのセクションの最後までスキップするリンクの両方が用いられている。利用する利用者ーエージェントの能力に依存するが、これによってキーボード・ナビゲーション又は見出しナビゲーションを用いて、繰り返されるコンテンツのブロックをスキップすることができる。
-              </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code/></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code/></pre></div></div><h3 id="G123-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+              </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;p&gt;&lt;a href="#content"&gt;Content title&lt;/a&gt;&lt;/p&gt;
+                &lt;h2&gt;Main Navigation&lt;/h2&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#subnav"&gt;Sub Navigation&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/a/"&gt;Link A&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/b/"&gt;Link B&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/c/"&gt;Link C&lt;/a&gt;&lt;/li&gt;
+                ...
+                &lt;li&gt;&lt;a href="/j/"&gt;Link J&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class="iekbfix"&gt;
+                &lt;h2 id="subnav"&gt;Sub Navigation&lt;/h2&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#ultranav"&gt;Ultra Sub Navigation&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/suba/"&gt;Sub A&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/subb/"&gt;Sub B&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/subc/"&gt;Sub C&lt;/a&gt;&lt;/li&gt;
+                ...
+                &lt;li&gt;&lt;a href="/subj/"&gt;Sub J&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="iekbfix"&gt;
+                &lt;h2 id="ultranav"&gt;Ultra Sub Navigation&lt;/h2&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#content"&gt;Content title&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/ultraa/"&gt;Ultra A&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/ultrab/"&gt;Ultra B&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/ultrac/"&gt;Ultra C&lt;/a&gt;&lt;/li&gt;
+                ...
+                &lt;li&gt;&lt;a href="/ultraj/"&gt;Ultra J&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                &lt;h2 id="content"&gt;Content title&lt;/h2&gt;
+                &lt;p&gt;Now that I have your attention...&lt;/p&gt;
+                &lt;/div&gt;
+            </code></pre></div><div class="textbody"><p>CSS：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              div.iekbfix {
+                width: 100%;
+                }
+            </code></pre></div></div><h3 id="G123-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.jimthatcher.com/skipnav.htm">Skip Navigation Links</a>
                 </p></li></ul></div><h3 id="G123-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G1">G1: メインコンテンツエリアへ直接移動するリンクを各ページの先頭に追加する</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G124">G124: ページの先頭に、コンテンツの各エリアへのリンクを追加する</a></li></ul></div><h3 id="G123-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G123-procedure">チェックポイント</h4><ol class="enumar"><li><p>リンクが、繰り返されるコンテンツのブロックの前にある最後のフォーカス可能なコントロールである、又はブロック内の最初のリンクである。</p></li><li><p>リンクテキストがブロックをスキップすることを伝えている。</p></li><li><p>リンクは常に表示されている、又はキーボード・フォーカスを受け取ったときに表示される。
                 </p></li><li><p>リンクを選択すると、そのブロックの直後のコンテンツにフォーカスが移動する。</p></li></ol><h4 class="small-head" id="G123-results">判定基準</h4><ul><li><p>上記の全てを満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G124" id="G124"> </a>G124: ページの先頭に、コンテンツの各エリアへのリンクを追加する</h2><div class="applicability"><h3 id="G124-applicability">適用（対象）</h3><div class="textbody"><p>リンク機能を提供するウェブコンテンツ技術すべて。</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
