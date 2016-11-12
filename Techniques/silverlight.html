@@ -2,8 +2,8 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta chaeset="UTF-8"/><title>Silverlightの達成方法  | Techniques for WCAG 2.0
-            </title><link rel="canonical" href="http://www.w3.org/TR/WCAG20-TECHS/silverlight"/><link rel="stylesheet" type="text/css" href="slicenav.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="bytech.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><div class="div1"><a name="maincontent"/><h1 id="techs">Silverlightの達成方法 for WCAG 2.0</h1><p>This Web page lists Silverlightの達成方法 from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not replace the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p><p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p><p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p><div class="toc">
-<hr/><h2><a name="contents" id="contents"> </a>目次</h2><ul class="toc"><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#abstract">概要 </a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#status">この文書のステータス</a></li><li><a href="#silverlight_notes">Silverlight Technology Notes</a></li><li><a href="#SL1">SL1: Accessing Alternate Audio Tracks in Silverlight Media</a></li><li><a href="#SL2">SL2: Changing The Visual Focus Indicator in Silverlight</a></li><li><a href="#SL3">SL3: Controlling Silverlight MediaElement Audio Volume</a></li><li><a href="#SL4">SL4: Declaring Discrete Silverlight Objects to Specify Language Parts
+            </title><link rel="canonical" href="https://www.w3.org/TR/WCAG20-TECHS/silverlight"/><link rel="stylesheet" type="text/css" href="slicenav.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="bytech.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><div class="div1"><a name="maincontent"/><h1 id="techs">Silverlightの達成方法 for WCAG 2.0</h1><p>This Web page lists Silverlightの達成方法 from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not replace the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p><p>Publication of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0 success criteria and conformance requirements. Developers need to be aware of the limitations of specific technologies and provide content in a way that is accessible to people with disabilities. </p><p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p><div id="toc"><h2>目次</h2>
+<ul class="toc"><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/#abstract">概要 </a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/#status">この文書のステータス</a></li><li><a href="#silverlight_notes">Silverlight Technology Notes</a></li><li><a href="#SL1">SL1: Accessing Alternate Audio Tracks in Silverlight Media</a></li><li><a href="#SL2">SL2: Changing The Visual Focus Indicator in Silverlight</a></li><li><a href="#SL3">SL3: Controlling Silverlight MediaElement Audio Volume</a></li><li><a href="#SL4">SL4: Declaring Discrete Silverlight Objects to Specify Language Parts
     			in the HTML DOM</a></li><li><a href="#SL5">SL5: Defining a Focusable Image Class for Silverlight</a></li><li><a href="#SL6">SL6: Defining a UI Automation Peer for a Custom Silverlight Control</a></li><li><a href="#SL7">SL7: Designing a Focused Visual State for Custom Silverlight Controls</a></li><li><a href="#SL8">SL8: Displaying HelpText in Silverlight User Interfaces</a></li><li><a href="#SL9">SL9: Handling Key Events to Enable Keyboard Functionality in Silverlight</a></li><li><a href="#SL10">SL10: Implementing a Submit-Form Pattern in Silverlight</a></li><li><a href="#SL11">SL11: Pausing or Stopping A Decorative Silverlight Animation</a></li><li><a href="#SL12">SL12: Pausing, Stopping, or Playing Media in Silverlight MediaElements</a></li><li><a href="#SL13">SL13: Providing A Style Switcher To Switch To High Contrast</a></li><li><a href="#SL14">SL14: Providing Custom Control Key Handling for Keyboard Functionality
     			in Silverlight</a></li><li><a href="#SL15">SL15: Providing Keyboard Shortcuts that Work Across the Entire Silverlight
     			Application</a></li><li><a href="#SL16">SL16: Providing Script-Embedded Text Captions for MediaElement Content</a></li><li><a href="#SL17">SL17: Providing Static Alternative Content for Silverlight Media Playing
@@ -578,14 +578,14 @@
           in Silverlight techniques. </p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL1" id="SL1"> </a>SL1: Accessing Alternate Audio Tracks in Silverlight Media</h2><div class="applicability"><h3 id="SL1-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc">
 						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-audio-desc.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc">SC 1.2.3</a>. See <a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-audio-desc.html"> Understanding SC 1.2.3</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc-only">
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc">SC 1.2.3</a>. See <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc.html"> Understanding SC 1.2.3</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc-only">
 						How to Meet 1.2.5 (音声解説 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-audio-desc-only.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc-only">SC 1.2.5</a>. See <a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-audio-desc-only.html"> Understanding SC 1.2.5</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.1.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL1">User Agent Support Notes for SL1</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL1-description">解説</h3><div class="textbody"><p>The objective of this technique is to show how to access an alternate
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc-only">SC 1.2.5</a>. See <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc-only.html"> Understanding SC 1.2.5</a> for details.</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.1.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL1">User Agent Support Notes for SL1</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL1-description">解説</h3><div class="textbody"><p>The objective of this technique is to show how to access an alternate
     				audio channel in a prepared media file that is played in a Silverlight <code>MediaElement</code>. </p><p>Silverlight supports media file formats that contains additional audio
     				channels in synchronization, beyond the two tracks for stereo audio
     				that are used by typical media player defaults. Silverlight provides
@@ -690,7 +690,7 @@
     							playing the alternate audio track. </p></li></ol><h4 class="small-head" id="SL1-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL2" id="SL2"> </a>SL2: Changing The Visual Focus Indicator in Silverlight</h2><div class="applicability"><h3 id="SL2-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible">
 				達成基準 2.4.7 (フォーカスの可視化)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
 						How to Meet 2.4.7 (フォーカスの可視化)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-visible.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-visible.html">
 						達成基準 2.4.7 (フォーカスの可視化)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.2.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL2">User Agent Support Notes for SL2</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL2-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the Silverlight "control
     				skinning" scenario and feature set to change the visible focus
@@ -819,7 +819,7 @@
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc903954(VS.95).aspx">Focus
     						Overview</a> 
-               </p></li></ul></div><h3 id="SL2-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR31">SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</a></li></ul></div><h3 id="SL2-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL2-procedure">チェックポイント</h4><p>Note that not all Silverlight applications necessarily will start
+               </p></li></ul></div><h3 id="SL2-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR31">SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</a></li></ul></div><h3 id="SL2-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL2-procedure">チェックポイント</h4><p>Note that not all Silverlight applications necessarily will start
     					with the keyboard focus being somewhere within the Silverlight content
     					area for purpose of Step #2. It may be necessary to press TAB several
     					times to traverse the browser's framing user interface. Also, within
@@ -835,7 +835,7 @@
     								focus. </p></li></ol><h4 class="small-head" id="SL2-results">判定基準</h4><p>#3 and #4 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL3" id="SL3"> </a>SL3: Controlling Silverlight MediaElement Audio Volume</h2><div class="applicability"><h3 id="SL3-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-dis-audio">
 				達成基準 1.4.2 (音声の制御)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-dis-audio">
 						How to Meet 1.4.2 (音声の制御)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-dis-audio.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-dis-audio.html">
 						達成基準 1.4.2 (音声の制御)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.3.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL3">User Agent Support Notes for SL3</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL3-description">解説</h3><div class="textbody"><p>The objective of this technique is to adjust the volume for media
     				that is played in Silverlight applications, as implemented through
@@ -957,7 +957,7 @@
     			in the HTML DOM</h2><div class="applicability"><h3 id="SL4-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#meaning-other-lang-id">
 				達成基準 3.1.2 (一部分の言語)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#meaning-other-lang-id">
 						How to Meet 3.1.2 (一部分の言語)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/meaning-other-lang-id.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/meaning-other-lang-id.html">
 						達成基準 3.1.2 (一部分の言語)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.4.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL4">User Agent Support Notes for SL4</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL4-description">解説</h3><div class="textbody"><p>The objective of this technique is use the HTML <code>Lang</code> attribute on
     				the object tag to describe each Silverlight plug-in instance on the
@@ -993,7 +993,7 @@
     					many aspects of how Silverlight works with language and culture information
     					at run time are not determined by HTML Lang, and are instead determined
     					by the operating system and which culture that operating system is
-    					running. For more information, see <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/#SL27" class="tech-ref">Understanding
+    					running. For more information, see <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/#SL27" class="tech-ref">Understanding
     						Language/Culture Properties as Used by Silverlight Applications and
     						Assistive Technologies</a>. </p></div></div><h3 class="small-head" id="SL4-examples">事例</h3><h4 class="small-head" id="SL4-ex1">事例 1: Two Silverlight object tags, each with different HTML
     					Lang, to support a simple language-translator application as a Web
@@ -1075,14 +1075,14 @@
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/dd833075%28VS.95%29.aspx">How
     						to: Implement Communication Between Local Silverlight-Based Applications</a> 
-               </p></li></ul></div><h3 id="SL4-related-techs">関連する達成方法</h3><div class="textbody"><ul><li/><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H58">H58: 言語属性を用いて、自然言語の変更を指定する</a></li></ul></div><h3 id="SL4-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL4-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL4-related-techs">関連する達成方法</h3><div class="textbody"><ul><li/><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H58">H58: 言語属性を用いて、自然言語の変更を指定する</a></li></ul></div><h3 id="SL4-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL4-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references multiple Silverlight object tags, each with different
     					HTML Lang values. </p></li><li><p> Verify that language settings through HTML Lang on object tags
     						are respected by assistive technologies that can use HTML Lang values
     						for language of parts determination. </p></li></ol><h4 class="small-head" id="SL4-results">判定基準</h4><p>#2 gives expected results. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL5" id="SL5"> </a>SL5: Defining a Focusable Image Class for Silverlight</h2><div class="applicability"><h3 id="SL5-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.5.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL5">User Agent Support Notes for SL5</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL5-description">解説</h3><div class="textbody"><p>The objective of this technique is to wrap the Silverlight <code>Image</code> class
     				inside a UI container class that is focusable. If the image is focusable,
@@ -1235,7 +1235,7 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
                   <a href="https://msdn.microsoft.com/en-us/library/system.windows.automation.automationproperties.name%28VS.95%29.aspx">AutomationProperties.Name
     					Attached Property</a> 
                </p></li><li><p>Tools: <a href="http://firstfloorsoftware.com/silverlightspy">SilverlightSpy</a> or <a href="http://uiautomationverify.codeplex.com/">UIAVerify</a> 
-               </p></li></ul></div><h3 id="SL5-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H37">H37: img 要素の alt 属性を用いる</a></li></ul></div><h3 id="SL5-tests">検証</h3><div class="textbody"><h5 class="small-head">Automation Tree</h5><h4 class="small-head" id="SL5-procedure">チェックポイント</h4><ol class="enumar"><li><p> Open the test HTML page in a Silverlight-supported useragent host;
+               </p></li></ul></div><h3 id="SL5-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H37">H37: img 要素の alt 属性を用いる</a></li></ul></div><h3 id="SL5-tests">検証</h3><div class="textbody"><h5 class="small-head">Automation Tree</h5><h4 class="small-head" id="SL5-procedure">チェックポイント</h4><ol class="enumar"><li><p> Open the test HTML page in a Silverlight-supported useragent host;
     					to use UI Automation, use Microsoft Windows as platform. </p></li><li><p> Use the tab sequence inside the Silverlight content area to focus
     						the control. </p></li><li><p> Using an accessibility framework verification tool, check that
     							the string content is promoted as the default <code>Name</code> applied
@@ -1255,7 +1255,7 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
     							by the screen reader. </p></li></ol><h4 class="small-head" id="SL5-2-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL6" id="SL6"> </a>SL6: Defining a UI Automation Peer for a Custom Silverlight Control</h2><div class="applicability"><h3 id="SL6-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL6">User Agent Support Notes for SL6</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL6-description">解説</h3><div class="textbody"><p>The objective of this technique is to create an <code>AutomationPeer</code> class
     				for a custom Silverlight control. The <code>AutomationPeer</code> exposes
@@ -1375,7 +1375,7 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/ms753388.aspx">Accessibility</a> 
                </p></li><li><p>Tools: <a href="http://firstfloorsoftware.com/silverlightspy">SilverlightSpy</a> or <a href="http://uiautomationverify.codeplex.com/">UIAVerify</a> 
-               </p></li></ul></div><h3 id="SL6-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G10">G10: 識別名及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために利用者ーエージェントが動作する、プラットフォームのアクセシビリティAPI機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する</a></li></ul></div><h3 id="SL6-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL6-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL6-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G10">G10: 識別名及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために利用者ーエージェントが動作する、プラットフォームのアクセシビリティAPI機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する</a></li></ul></div><h3 id="SL6-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL6-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. To see
     					UI Automation, use Microsoft Windows as platform. </p></li><li><p> Use a verification tool that is capable of showing the full automation
     						tree, and an object’s UI Automation properties and patterns as part
@@ -1393,7 +1393,7 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
     										has changed the corresponding read only property values in the tree. </p></li></ol><h4 class="small-head" id="SL6-results">判定基準</h4><p>#3, #4, and #5 (if applicable) are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL7" id="SL7"> </a>SL7: Designing a Focused Visual State for Custom Silverlight Controls</h2><div class="applicability"><h3 id="SL7-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible">
 				達成基準 2.4.7 (フォーカスの可視化)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
 						How to Meet 2.4.7 (フォーカスの可視化)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-visible.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-visible.html">
 						達成基準 2.4.7 (フォーカスの可視化)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.7.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL7">User Agent Support Notes for SL7</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL7-description">解説</h3><div class="textbody"><p>The objective of this technique is to build custom visual states for
     				custom controls that include visible focus indicators in the templates
@@ -1584,7 +1584,7 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc903954(VS.95).aspx">Focus
     						Overview</a> 
-               </p></li></ul></div><h3 id="SL7-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR31">SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</a></li></ul></div><h3 id="SL7-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL7-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL7-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR31">SCR31: スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</a></li></ul></div><h3 id="SL7-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL7-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Using a keyboard, tab to the element where focus characteristics
     						are being examined. </p></li><li><p> Check that the background, border, or other noticable visual indicator
     							of the element changes color. </p></li><li><p> Check that the changes in color for the background, border, or
@@ -1592,12 +1592,12 @@ xmlns:local="clr-namespace:ImageEquivalent"&gt;
     								focus. </p></li></ol><h4 class="small-head" id="SL7-results">判定基準</h4><p>#3 and #4 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL8" id="SL8"> </a>SL8: Displaying HelpText in Silverlight User Interfaces</h2><div class="applicability"><h3 id="SL8-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-cues">
 						How to Meet 3.3.2 (ラベル又は説明)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.8.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL8">User Agent Support Notes for SL8</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL8-description">解説</h3><div class="textbody"><p>The objective of this technique is to provide a long text alternative
     				that replaces content when a short text alternative is not sufficient
@@ -1775,12 +1775,12 @@ door, and one file cabinet against the same wall as the door.”/&gt;
     								can be read aloud. </p></li></ol><h4 class="small-head" id="SL8-results">判定基準</h4><p>#2 and #3 are true. If testing with a screen reader, #4 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL9" id="SL9"> </a>SL9: Handling Key Events to Enable Keyboard Functionality in Silverlight</h2><div class="applicability"><h3 id="SL9-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
 						How to Meet 2.1.1 (キーボード)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-keyboard-operable.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-keyboard-operable.html">
 						達成基準 2.1.1 (キーボード)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
 				達成基準 2.1.3 (キーボード (例外なし) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
 						How to Meet 2.1.3 (キーボード (例外なし) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-all-funcs.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-all-funcs.html">
 						達成基準 2.1.3 (キーボード (例外なし) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.9.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL9">User Agent Support Notes for SL9</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL9-description">解説</h3><div class="textbody"><p>The objective of this technique is to handle key events in a Silverlight
     				application and enable application-specific keyboard functionality
@@ -2001,13 +2001,13 @@ door, and one file cabinet against the same wall as the door.”/&gt;
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc189018(VS.95).aspx">Events
     						Overview for Silverlight</a> 
-               </p></li></ul></div><h3 id="SL9-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li></ul></div><h3 id="SL9-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL9-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL9-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li></ul></div><h3 id="SL9-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL9-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Press TAB key to move keyboard focus to various element parts
     						of the user interface. </p></li><li><p> Verify that any user interface actions that exist for a given
     							element part each have a keyboard equivalent. </p></li></ol><h4 class="small-head" id="SL9-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL10" id="SL10"> </a>SL10: Implementing a Submit-Form Pattern in Silverlight</h2><div class="applicability"><h3 id="SL10-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-unpredictable-change">
 				達成基準 3.2.2 (入力時)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#consistent-behavior-unpredictable-change">
 						How to Meet 3.2.2 (入力時)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-unpredictable-change.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/consistent-behavior-unpredictable-change.html">
 						達成基準 3.2.2 (入力時)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.10.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL10">User Agent Support Notes for SL10</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL10-description">解説</h3><div class="textbody"><p>The objective of this technique is to declare Silverlight user interface
     				elements related to user input and use the Silverlight two-way data
@@ -2100,7 +2100,7 @@ door, and one file cabinet against the same wall as the door.”/&gt;
 </code></pre></div><p>This example is shown in operation in the <a href="/WAI/WCAG20/Techniques/working-examples/SL10/BasicSubmitButtonTestPage.html" class="ex-ref">working example of Basic Submit Button</a>.</p></div></div><h3 id="SL10-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc278072(VS.95).aspx">Data
     						Binding</a> 
-               </p></li></ul></div><h3 id="SL10-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G80">G80: 状況の変化を開始する実行ボタンを提供する</a></li></ul></div><h3 id="SL10-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL10-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL10-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G80">G80: 状況の変化を開始する実行ボタンを提供する</a></li></ul></div><h3 id="SL10-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL10-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. To test
     					UI Automation based behavior such as reading AutomationProperties.HelpText,
     					use Microsoft Windows as platform. </p></li><li><p> Verify that the user interface design of the form includes a clearly
@@ -2111,7 +2111,7 @@ door, and one file cabinet against the same wall as the door.”/&gt;
     								delayed until after the Submit button is activated. </p></li></ol><h4 class="small-head" id="SL10-results">判定基準</h4><p>#2, #3, and #4 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL11" id="SL11"> </a>SL11: Pausing or Stopping A Decorative Silverlight Animation</h2><div class="applicability"><h3 id="SL11-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
 						How to Meet 2.2.2 (一時停止、停止、非表示)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/time-limits-pause.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.11.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL11">User Agent Support Notes for SL11</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL11-description">解説</h3><div class="textbody"><p>The objective of this technique is to associate a "Pause" or "Stop"   action
     				for a Silverlight animation with a user interface control. This enables
@@ -2194,7 +2194,7 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     								mechanism. </p></li></ol><h4 class="small-head" id="SL11-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL12" id="SL12"> </a>SL12: Pausing, Stopping, or Playing Media in Silverlight MediaElements</h2><div class="applicability"><h3 id="SL12-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
 						How to Meet 2.2.2 (一時停止、停止、非表示)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/time-limits-pause.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.12.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL12">User Agent Support Notes for SL12</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL12-description">解説</h3><div class="textbody"><p>The objective of this technique is to create a control user interface
     				for the Silverlight <code>MediaElement</code> object. The controls
@@ -2296,12 +2296,12 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     						pause or stop the media. </p></li><li><p> Check that when activated, the controls stop or pause the media. </p></li></ol><h4 class="small-head" id="SL12-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL13" id="SL13"> </a>SL13: Providing A Style Switcher To Switch To High Contrast</h2><div class="applicability"><h3 id="SL13-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast">
 				達成基準 1.4.3 (コントラスト (最低限) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-contrast">
 						How to Meet 1.4.3 (コントラスト (最低限) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-contrast.html">
 						達成基準 1.4.3 (コントラスト (最低限) )を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast7">
 				達成基準 1.4.6 (コントラスト (高度) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast7">
 						How to Meet 1.4.6 (コントラスト (高度) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast7.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast7.html">
 						達成基準 1.4.6 (コントラスト (高度) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.13.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL13">User Agent Support Notes for SL13</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL13-description">解説</h3><div class="textbody"><p>The objective of this technique is to incorporate high contrast color
     				choices into a user interface visual design for Silverlight, by changing
@@ -2348,12 +2348,12 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     					control option for changing to high contrast in Silverlight UI rather
     					than solely relying on <code>SystemParameters.HighContrast</code>. </p></div><div id="SL13_css"><h5> Silverlight and CSS </h5><p>Silverlight content does not use information that comes from a CSS
     					style as applied to the hosting HTML page. Therefore, techniques as
-    					implemented by browser user agents and described by <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148.html" class="tech-ref">G148:
+    					implemented by browser user agents and described by <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G148.html" class="tech-ref">G148:
     						Not specifying background color, not specifying text color, and not
-    						using technology features that change those defaults</a> or <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156.html" class="tech-ref">G156:
+    						using technology features that change those defaults</a> or <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G156.html" class="tech-ref">G156:
     							Using a technology that has commonly-available user agents that can
     							change the foreground and background of blocks of text</a> do not work
-    					for Silverlight content, and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29.html" class="tech-ref">C29</a> does
+    					for Silverlight content, and <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C29.html" class="tech-ref">C29</a> does
     					not directly apply. For example, the Internet Explorer settings under
     					Options / Appearance do not affect the fonts or contrast in the Silverlight
     					content area. </p></div></div><h3 class="small-head" id="SL13-examples">事例</h3><h4 class="small-head" id="SL13-ex1">事例 1: Silverlight application designed with brush resources
@@ -2363,7 +2363,7 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     						of lines of XAML. Note that the visual appearance of the button is
     						already using a high contrast theme choice for its default state, to
     						assure that the control is visible to anyone that requires a high contrast
-    						theme to see parts of the user interface per <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174.html" class="tech-ref">G174</a>.
+    						theme to see parts of the user interface per <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G174.html" class="tech-ref">G174</a>.
     						To keep the example simple, the visual states (behaviors) associated
     						with mouse-over, click, etc. have not been restyled for high contrast.
     						Only the base appearance is changed. The example also shows a technique
@@ -2487,7 +2487,7 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     					Started with Controls</a> 
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/system.windows.systemparameters.highcontrast%28VS.95%29.aspx">SystemParameters.HighContrast</a> 
-               </p></li></ul></div><h3 id="SL13-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174">G174: 十分なコントラスト比のあるコントロールを提供して、利用者が十分なコントラストのある表現に変換できるようにする</a></li></ul></div><h3 id="SL13-tests">検証</h3><div class="textbody"><h5 class="small-head">UI option for style switching</h5><h4 class="small-head" id="SL13-procedure">チェックポイント</h4><p>To test a Silverlight UI option for style switching (Example 1): </p><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL13-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G174">G174: 十分なコントラスト比のあるコントロールを提供して、利用者が十分なコントラストのある表現に変換できるようにする</a></li></ul></div><h3 id="SL13-tests">検証</h3><div class="textbody"><h5 class="small-head">UI option for style switching</h5><h4 class="small-head" id="SL13-procedure">チェックポイント</h4><p>To test a Silverlight UI option for style switching (Example 1): </p><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Check for a control that indicates it will change the application's
     						appearance to use a high-contrast theme. </p></li><li><p> Activate the control. Check that the Silverlight application's
     							user interface color themes change to an appearance that uses at
@@ -2507,12 +2507,12 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     			in Silverlight</h2><div class="applicability"><h3 id="SL14-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
 						How to Meet 2.1.1 (キーボード)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-keyboard-operable.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-keyboard-operable.html">
 						達成基準 2.1.1 (キーボード)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
 				達成基準 2.1.3 (キーボード (例外なし) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
 						How to Meet 2.1.3 (キーボード (例外なし) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-all-funcs.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-all-funcs.html">
 						達成基準 2.1.3 (キーボード (例外なし) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.14.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL14">User Agent Support Notes for SL14</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL14-description">解説</h3><div class="textbody"><p>The objective of this technique is to implement built-in handling
     				of key events in a custom control. If a custom control is correctly
@@ -2724,7 +2724,7 @@ private void MuteMedia(object sender, RoutedEventArgs e)
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc189018(VS.95).aspx">Events
     						Overview for Silverlight</a> 
-               </p></li></ul></div><h3 id="SL14-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li><li/><li/></ul></div><h3 id="SL14-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL14-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL14-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G90">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a></li><li/><li/></ul></div><h3 id="SL14-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL14-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Press TAB key to move keyboard focus to various element parts
     						of the user interface, and in particular to areas that are known
     						to be custom control implementations. </p></li><li><p> Check that custom key commands exist for all these user interface
@@ -2732,12 +2732,12 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     			Application</h2><div class="applicability"><h3 id="SL15-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
 						How to Meet 2.1.1 (キーボード)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-keyboard-operable.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-keyboard-operable.html">
 						達成基準 2.1.1 (キーボード)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-all-funcs">
 				達成基準 2.1.3 (キーボード (例外なし) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-all-funcs">
 						How to Meet 2.1.3 (キーボード (例外なし) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-all-funcs.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-all-funcs.html">
 						達成基準 2.1.3 (キーボード (例外なし) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.15.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL15">User Agent Support Notes for SL15</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL15-description">解説</h3><div class="textbody"><p>The objective of this technique is to introduce key handling that
     				exists at the application root level of a Silverlight application,
@@ -2912,7 +2912,7 @@ private void MuteMedia(object sender, RoutedEventArgs e)
     					application, and verify that the same keys continue to function application-wide. </p></li></ol><h4 class="small-head" id="SL15-results">判定基準</h4><p>#3, #4 and #5 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL16" id="SL16"> </a>SL16: Providing Script-Embedded Text Captions for MediaElement Content</h2><div class="applicability"><h3 id="SL16-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-captions">
 						How to Meet 1.2.2 (キャプション (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-captions.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-captions.html">
 						達成基準 1.2.2 (キャプション (収録済) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.16.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL16">User Agent Support Notes for SL16</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL16-description">解説</h3><div class="textbody"><p>The objective of this technique is to use text captioning that is
     				embedded in the stream with media displayed in a Silverlight <code>MediaElement</code>,
@@ -2993,17 +2993,17 @@ private void OnMarkerReached(object sender, TimelineMarkerRoutedEventArgs e)
     			in a MediaElement</h2><div class="applicability"><h3 id="SL17-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-av-only-alt">
 				達成基準 1.2.1 (音声のみ及び映像のみ (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-av-only-alt">
 						How to Meet 1.2.1 (音声のみ及び映像のみ (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-av-only-alt.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-av-only-alt.html">
 						達成基準 1.2.1 (音声のみ及び映像のみ (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc">
 						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-audio-desc.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-text-doc">
 				達成基準 1.2.8 (メディアに対する代替 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-text-doc">
 						How to Meet 1.2.8 (メディアに対する代替 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-text-doc.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-text-doc.html">
 						達成基準 1.2.8 (メディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.17.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL17">User Agent Support Notes for SL17</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL17-description">解説</h3><div class="textbody"><p>The objective of this technique is to replace a Silverlight <code>MediaElement</code> with
     				static alternative non-media content that is not time-based. The static
@@ -3015,7 +3015,7 @@ private void OnMarkerReached(object sender, TimelineMarkerRoutedEventArgs e)
     						the best alternative is to provide a full description in text such
     						as a screenplay of the content, this technique addresses <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html" class="understanding-ref">Success
     							Criterion 1.2.3 (Audio Description or Full Text Alternative)</a> and
-    						is similar to <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G69.html" class="tech-ref">G69:
+    						is similar to <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G69.html" class="tech-ref">G69:
     							Providing an alternative for time based media</a>. </p></li></ul><p>A Silverlight application user interface can be adjusted at run time
     				by removing elements from the visual tree, and adding new elements
     				to the visual tree. In this case, the user interface is designed to
@@ -3109,22 +3109,22 @@ First Lady Michelle Obama will serve as honorary chairs of this free event. &lt;
     							interface. </p></li></ol><h4 class="small-head" id="SL17-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL18" id="SL18"> </a>SL18: Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</h2><div class="applicability"><h3 id="SL18-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">
 				達成基準 2.4.4 (リンクの目的 (コンテキスト内) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
 						How to Meet 2.4.4 (リンクの目的 (コンテキスト内) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-refs.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">SC 2.4.4</a>. See <a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-refs.html"> Understanding SC 2.4.4</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link">
+					</a></li></ul><div class="note"><p class="prefix"><em>Note:</em> This technique must be combined with other techniques to meet <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">SC 2.4.4</a>. See <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-refs.html"> Understanding SC 2.4.4</a> for details.</p></div></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link">
 				達成基準 2.4.9 (リンクの目的 (リンクのみ) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-link">
 						How to Meet 2.4.9 (リンクの目的 (リンクのみ) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-link.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.18.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL18">User Agent Support Notes for SL18</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL18-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the Silverlight <code>AutomationProperties.Name</code> property
     				to provide a short text alternative for controls that do not otherwise
@@ -3188,12 +3188,12 @@ First Lady Michelle Obama will serve as honorary chairs of this free event. &lt;
     			Silverlight</h2><div class="applicability"><h3 id="SL19-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-cues">
 						How to Meet 3.3.2 (ラベル又は説明)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.19.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL19">User Agent Support Notes for SL19</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL19-description">解説</h3><div class="textbody"><p>The objective of this technique is to provide a long text alternative
     				that serves the same purpose and presents the same information as the
@@ -3316,12 +3316,12 @@ door, and one file cabinet against the same wall as the door.”/&gt;
     							in the automation tree. </p></li></ol><h4 class="small-head" id="SL19-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL20" id="SL20"> </a>SL20: Relying on Silverlight AutomationPeer Behavior to Set AutomationProperties.Name</h2><div class="applicability"><h3 id="SL20-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
 						How to Meet 1.3.1 (情報及び関係性)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.20.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL20">User Agent Support Notes for SL20</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL20-description">解説</h3><div class="textbody"><p>The objective of this technique is to illustrate how in certain cases,
     				the Silverlight automation peer system can provide an accessibility
@@ -3408,7 +3408,7 @@ door, and one file cabinet against the same wall as the door.”/&gt;
     							is expected is supplying a default Name in the automation tree. </p></li></ol><h4 class="small-head" id="SL20-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL21" id="SL21"> </a>SL21: Replacing A Silverlight Timed Animation With a Nonanimated Element</h2><div class="applicability"><h3 id="SL21-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-required-behaviors">
 				達成基準 2.2.1 (タイミング調整可能)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-required-behaviors">
 						How to Meet 2.2.1 (タイミング調整可能)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/time-limits-required-behaviors.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-required-behaviors.html">
 						達成基準 2.2.1 (タイミング調整可能)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.21.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL21">User Agent Support Notes for SL21</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL21-description">解説</h3><div class="textbody"><p>The objective of this technique is to replace a timed Silverlight
     				animation with a non-timed user interface element that presents equivalent
@@ -3497,7 +3497,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"&gt;
     					zoom </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
 				達成基準 1.4.4 (テキストのサイズ変更)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
 						How to Meet 1.4.4 (テキストのサイズ変更)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-scale.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-scale.html">
 						達成基準 1.4.4 (テキストのサイズ変更)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.22.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL22">User Agent Support Notes for SL22</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL22-description">解説</h3><div class="textbody"><p>The objective of this technique is to support or anticipate existing
     				browser zoom features effectively when users interact with the Silverlight
@@ -3572,7 +3572,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"&gt;
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc707824(VS.95).aspx">Silverlight
     						Accessibility Overview</a> 
-               </p></li></ul></div><h3 id="SL22-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G142">G142: ズーム機能をサポートする一般に入手可能な利用者ーエージェントのあるウェブコンテンツ技術を用いる</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G179">G179: 文字サイズを変更しても、テキストコンテナの 幅が変更されない際に、コンテンツ又は機能が損なわれないようにする</a></li></ul></div><h3 id="SL22-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL22-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL22-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G142">G142: ズーム機能をサポートする一般に入手可能な利用者ーエージェントのあるウェブコンテンツ技術を用いる</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G179">G179: 文字サイズを変更しても、テキストコンテナの 幅が変更されない際に、コンテンツ又は機能が損なわれないようにする</a></li></ul></div><h3 id="SL22-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL22-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. The browser
     					being used for the test must support a browser zoom feature, and
     					the feature must be turned on as a user preference. </p></li><li><p> Verify that the Silverlight application enables auto zoom (no
@@ -3582,7 +3582,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"&gt;
     			Elements</h2><div class="applicability"><h3 id="SL23-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-scale">
 				達成基準 1.4.4 (テキストのサイズ変更)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-scale">
 						How to Meet 1.4.4 (テキストのサイズ変更)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-scale.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-scale.html">
 						達成基準 1.4.4 (テキストのサイズ変更)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.23.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL23">User Agent Support Notes for SL23</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL23-description">解説</h3><div class="textbody"><p>The objective of this technique is to define style switching logic
     				for Silverlight. In particular, the intent is to use the style switcher
@@ -3723,17 +3723,17 @@ private void Undo_Click(object sender, RoutedEventArgs e)
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc189019(VS.95).aspx">Animation
     						Overview</a> 
-               </p></li></ul></div><h3 id="SL23-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li></ul></div><h3 id="SL23-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL23-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL23-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C29">C29: スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</a></li></ul></div><h3 id="SL23-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL23-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Verify that the application provides a control that can increase
     						font size. </p></li><li><p> Activate the control, and check that the font sizes increase. </p></li></ol><h4 class="small-head" id="SL23-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL24" id="SL24"> </a>SL24: Using AutoPlay to Keep Silverlight Media from Playing Automatically</h2><div class="applicability"><h3 id="SL24-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-dis-audio">
 				達成基準 1.4.2 (音声の制御)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-dis-audio">
 						How to Meet 1.4.2 (音声の制御)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-dis-audio.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-dis-audio.html">
 						達成基準 1.4.2 (音声の制御)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
 						How to Meet 2.2.2 (一時停止、停止、非表示)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/time-limits-pause.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.24.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL24">User Agent Support Notes for SL24</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL24-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the <code>AutoPlay</code> property
     				of <code>MediaElement</code> object, which prevents the <code>MediaElement</code> from
@@ -3815,7 +3815,7 @@ private void Undo_Click(object sender, RoutedEventArgs e)
     			in Silverlight</h2><div class="applicability"><h3 id="SL25-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
 				達成基準 2.4.1 (ブロックスキップ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-skip">
 						How to Meet 2.4.1 (ブロックスキップ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-skip.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-skip.html">
 						達成基準 2.4.1 (ブロックスキップ)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.25.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL25">User Agent Support Notes for SL25</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL25-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the combination of Silverlight
     				control activation and programmatic focus to enable the user to skip
@@ -3854,28 +3854,28 @@ private void Undo_Click(object sender, RoutedEventArgs e)
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc707824(VS.95).aspx">Silverlight
     						Accessibility Overview</a> 
-               </p></li></ul></div><h3 id="SL25-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G123">G123: 繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</a></li></ul></div><h3 id="SL25-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL25-procedure">チェックポイント</h4><ol class="enumar"><li><p> Open the test HTML page for a Silverlight application. </p></li><li><p> Check for a control that indicates that activating that control
+               </p></li></ul></div><h3 id="SL25-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G123">G123: 繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</a></li></ul></div><h3 id="SL25-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL25-procedure">チェックポイント</h4><ol class="enumar"><li><p> Open the test HTML page for a Silverlight application. </p></li><li><p> Check for a control that indicates that activating that control
     					can skip to some particular region of the content. </p></li><li><p> Activate that control. Verify that activating the control causes
     						focus to go to that region, and that a repeated block or blocks of
     						content are skipped. </p></li></ol><h4 class="small-head" id="SL25-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL26" id="SL26"> </a>SL26: Using LabeledBy to Associate Labels and Targets in Silverlight</h2><div class="applicability"><h3 id="SL26-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
 						How to Meet 1.3.1 (情報及び関係性)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-cues">
 						How to Meet 3.3.2 (ラベル又は説明)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.26.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL26">User Agent Support Notes for SL26</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL26-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the <code>AutomationProperties.LabeledBy</code> property
     				to associate a non-interactive text label with an interactive field
@@ -3919,7 +3919,7 @@ private void Undo_Click(object sender, RoutedEventArgs e)
     			and Assistive Technologies</h2><div class="applicability"><h3 id="SL27-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#meaning-other-lang-id">
 				達成基準 3.1.2 (一部分の言語)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#meaning-other-lang-id">
 						How to Meet 3.1.2 (一部分の言語)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/meaning-other-lang-id.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/meaning-other-lang-id.html">
 						達成基準 3.1.2 (一部分の言語)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.27.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL27">User Agent Support Notes for SL27</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL27-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the combination of HTML
     				<code>Lang</code> attribute, <code>CultureInfo</code> and <code>Language</code> to
@@ -3929,7 +3929,7 @@ private void Undo_Click(object sender, RoutedEventArgs e)
     				content area, Silverlight uses language definition concepts that relate
     				to XML (<code>Language</code> is a remapping of xml:lang) or .NET
     				Framework programming (<code>CultureInfo</code>). For these reasons,
-    				HTML Lang techniques as described in [<a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H58.html" class="tech-ref">H58</a>]
+    				HTML Lang techniques as described in [<a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H58.html" class="tech-ref">H58</a>]
     				are not useful for Silverlight programming of Silverlight-specific "parts". </p><p>What becomes important in Silverlight application programming then
     				is to make sure that the HTML language concept of Lang and the Silverlight
     				language concept of CultureInfo or Lang are not at odds with one another,
@@ -3955,7 +3955,7 @@ private void Undo_Click(object sender, RoutedEventArgs e)
     					presenting textual information with A SINGLE particular language
     					association, HTML Lang should be assigned to report that specific
     					language either for whole page or at least for the Silverlight object
-    					tag. This enables assistive technologies to pick up the value, per <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H57.html" class="tech-ref">H57:
+    					tag. This enables assistive technologies to pick up the value, per <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H57.html" class="tech-ref">H57:
     						Using language attributes on the html element HTML</a>. Aside from
     					due diligence during development and deployment, Silverlight application
     					code might choose to enforce that its runtime CultureInfo is really
@@ -3973,7 +3973,7 @@ private void Undo_Click(object sender, RoutedEventArgs e)
     					acts, or to any accessibility framework that is reporting the browser
     					content. The preferred way for a Silverlight application to address <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html" class="understanding-ref">SC
     						3.1.1</a> is to correctly specify the HTML Lang value in the hosting
-    					HTML page. This technique should be used in conjunction with <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H57.html" class="tech-ref">H57:
+    					HTML page. This technique should be used in conjunction with <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H57.html" class="tech-ref">H57:
     						Using language attributes on the html element HTML</a>. By using the
     					same language values with both techniques as a better practice, H57
     					will satisfy 3.1.1 while setting the language value of the Silverlight
@@ -4133,7 +4133,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
     								process language information. </p></li></ol><h4 class="small-head" id="SL27-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL28" id="SL28"> </a>SL28: Using Separate Text-Format Text Captions for MediaElement Content</h2><div class="applicability"><h3 id="SL28-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-captions">
 						How to Meet 1.2.2 (キャプション (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/media-equiv-captions.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-captions.html">
 						達成基準 1.2.2 (キャプション (収録済) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.28.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL28">User Agent Support Notes for SL28</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL28-description">解説</h3><div class="textbody"><p>The objective of this technique is to use text captioning that comes
     				from a separate text file, synchronize the captions with the media
@@ -4476,7 +4476,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
     			can be Bypassed</h2><div class="applicability"><h3 id="SL29-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
 				達成基準 2.4.1 (ブロックスキップ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-skip">
 						How to Meet 2.4.1 (ブロックスキップ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-skip.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-skip.html">
 						達成基準 2.4.1 (ブロックスキップ)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.29.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL29">User Agent Support Notes for SL29</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL29-description">解説</h3><div class="textbody"><p>The objective of this technique is to use some of the basic user interface
     				objects in Silveright to produce blocks of content that are identified
@@ -4591,7 +4591,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc707824(VS.95).aspx">Silverlight
     						Accessibility Overview</a> 
-               </p></li></ul></div><h3 id="SL29-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR28">SCR28: 展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G123">G123: 繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</a></li><li/></ul></div><h3 id="SL29-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL29-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL29-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR28">SCR28: 展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G123">G123: 繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</a></li><li/></ul></div><h3 id="SL29-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL29-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Press TAB key to traverse typical tab sequence within the Silverlight
     						application. Verify that common areas in the user interface composition
     						("blocks") that are reporting the List role per this technique
@@ -4604,12 +4604,12 @@ private void button1_Click(object sender, RoutedEventArgs e)
     									properly. </p></li></ol><h4 class="small-head" id="SL29-results">判定基準</h4><p>#2 and #3 are true, and either #4 OR #5 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL30" id="SL30"> </a>SL30: Using Silverlight Control Compositing and AutomationProperties.Name</h2><div class="applicability"><h3 id="SL30-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.30.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL30">User Agent Support Notes for SL30</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL30-description">解説</h3><div class="textbody"><p>The objective of this technique is to properly apply Silverlight control
     				composition techniques that can present text and non-text in UI as
@@ -4631,7 +4631,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
     				an attribute in XAML. In most cases, this text can be the same as the
     				visible text in the control composition, per the definition of 'label'
     				in SC 4.1.2. </p><p>Note that this technique does not result in a duplication of text,
-    				as explained in <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H2.html" class="tech-ref">H2</a>.
+    				as explained in <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H2.html" class="tech-ref">H2</a>.
     				This is because the element parts of control composition are either
     				inherently not focusable separately, or can be specified by instance-specific
     				properties to behave as if they cannot be focused. The parts in Silverlight
@@ -4698,7 +4698,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
                   <a href="https://msdn.microsoft.com/en-us/library/system.windows.automation.automationproperties.name%28VS.95%29.aspx">AutomationProperties.Name
     					Attached Property</a> 
                </p></li><li><p>Tools: <a href="http://firstfloorsoftware.com/silverlightspy">SilverlightSpy</a> or <a href="http://uiautomationverify.codeplex.com/">UIAVerify</a> 
-               </p></li></ul></div><h3 id="SL30-related-techs">関連する達成方法</h3><div class="textbody"><ul><li/><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H2">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a></li></ul></div><h3 id="SL30-tests">検証</h3><div class="textbody"><h5 class="small-head">Automation tree verifier</h5><h4 class="small-head" id="SL30-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL30-related-techs">関連する達成方法</h3><div class="textbody"><ul><li/><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H2">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a></li></ul></div><h3 id="SL30-tests">検証</h3><div class="textbody"><h5 class="small-head">Automation tree verifier</h5><h4 class="small-head" id="SL30-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Use a verification tool that is capable of showing the full automation
     						tree, and an object’s name text alternative as part of the tree.
     						(For example, use UIAVerify or Silverlight Spy; see Resources links.) </p></li><li><p> Check that the <code>AutomationProperties.Name</code> appears
@@ -4712,12 +4712,12 @@ private void button1_Click(object sender, RoutedEventArgs e)
     							screen reader. </p></li></ol><h4 class="small-head" id="SL30-2-results">判定基準</h4><p>#3 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL31" id="SL31"> </a>SL31: Using Silverlight Font Properties to Control Text Presentation</h2><div class="applicability"><h3 id="SL31-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-presentation">
 				達成基準 1.4.5 (文字画像)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-presentation">
 						How to Meet 1.4.5 (文字画像)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-text-presentation.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-text-presentation.html">
 						達成基準 1.4.5 (文字画像)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-text-images">
 				達成基準 1.4.9 (文字画像 (例外なし) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-text-images">
 						How to Meet 1.4.9 (文字画像 (例外なし) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-text-images.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.31.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL31">User Agent Support Notes for SL31</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL31-description">解説</h3><div class="textbody"><p>The objective of this technique is to change the presentation / visual
     				appearance of text, by setting several of the font-specific properties
@@ -4853,7 +4853,7 @@ then is this? Are the green fields gone? What do they here?
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc278068(VS.95).aspx">Control
     						Customization</a> 
-               </p></li></ul></div><h3 id="SL31-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140">G140: 情報と構造を表現から分離して、異なる表現を可能にする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22">C22: CSSを用いて、テキストの視覚的な表現を制御する</a></li></ul></div><h3 id="SL31-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL31-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL31-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G140">G140: 情報と構造を表現から分離して、異なる表現を可能にする</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C22">C22: CSSを用いて、テキストの視覚的な表現を制御する</a></li></ul></div><h3 id="SL31-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL31-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. </p></li><li><p> Test that application of font properties as enabled in application
     						UI changes presentation, but does not change semantic meaning of
     						text. </p></li><li><p> Close the browser. Repeat the test with an accessibility framework
@@ -4862,7 +4862,7 @@ then is this? Are the green fields gone? What do they here?
     							changes. </p></li></ol><h4 class="small-head" id="SL31-results">判定基準</h4><p>#2 and #3 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL32" id="SL32"> </a>SL32: Using Silverlight Text Elements for Appropriate Accessibility Role</h2><div class="applicability"><h3 id="SL32-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.32.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL32">User Agent Support Notes for SL32</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL32-description">解説</h3><div class="textbody"><p>The objective of this technique is to choose a Silverlight text container
     				that provides appropriate behavior and accessibility roles for different
@@ -5054,7 +5054,7 @@ How  then is this? Are the green fields gone? What do they here?
                   <a href="https://msdn.microsoft.com/en-us/library/cc189034(VS.95).aspx">Silverlight
     					Object Trees</a> 
                </p></li><li><p>Tools: <a href="http://firstfloorsoftware.com/silverlightspy">SilverlightSpy</a> or <a href="http://uiautomationverify.codeplex.com/">UIAVerify</a> 
-               </p></li></ul></div><h3 id="SL32-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G115">G115: セマンティックな要素を用いて、構造をマークアップする</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G135">G135: ウェブコンテンツ技術のアクセシビリティAPIを用いて、名前及び役割をUAに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G10">G10: 識別名及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために利用者ーエージェントが動作する、プラットフォームのアクセシビリティAPI機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する</a></li></ul></div><h3 id="SL32-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL32-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL32-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G115">G115: セマンティックな要素を用いて、構造をマークアップする</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G135">G135: ウェブコンテンツ技術のアクセシビリティAPIを用いて、名前及び役割をUAに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</a></li><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G10">G10: 識別名及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために利用者ーエージェントが動作する、プラットフォームのアクセシビリティAPI機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成する</a></li></ul></div><h3 id="SL32-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL32-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. To see
     					UI Automation, use Microsoft Windows as platform. </p></li><li><p> Use a verification tool that is capable of showing the full automation
     						tree. (For example, use UIAVerify or Silverlight Spy; see Resources
@@ -5065,7 +5065,7 @@ How  then is this? Are the green fields gone? What do they here?
     								by techniques that are appropriate for that role. </p></li></ol><h4 class="small-head" id="SL32-results">判定基準</h4><p>#3 and #4 are true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SL33" id="SL33"> </a>SL33: Using Well-Formed XAML to Define a Silverlight User Interface</h2><div class="applicability"><h3 id="SL33-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-parses">
 				達成基準 4.1.1 (構文解析)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-parses">
 						How to Meet 4.1.1 (構文解析)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-parses.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-parses.html">
 						達成基準 4.1.1 (構文解析)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.33.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL33">User Agent Support Notes for SL33</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL33-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the characteristics of the
     				XAML language to support basic parsing requirements that both applications
@@ -5173,7 +5173,7 @@ How  then is this? Are the green fields gone? What do they here?
     							by other Silverlight techniques) are available </p></li></ul></div></div><h3 id="SL33-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="https://msdn.microsoft.com/en-us/library/cc189036(VS.95).aspx">Silverlight
     						XAML Overview on MSDN</a> 
-               </p></li></ul></div><h3 id="SL33-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G192">G192: 仕様に完全に準拠する</a></li></ul></div><h3 id="SL33-tests">検証</h3><div class="textbody"><h5 class="small-head">Pass case</h5><h4 class="small-head" id="SL33-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL33-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G192">G192: 仕様に完全に準拠する</a></li></ul></div><h3 id="SL33-tests">検証</h3><div class="textbody"><h5 class="small-head">Pass case</h5><h4 class="small-head" id="SL33-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. That
     					application is known to consume Silverlight XAML. </p></li><li><p> Verify that the application runs correctly and displays user interface. </p></li></ol><h4 class="small-head" id="SL33-results">判定基準</h4><p>#2 is true. </p><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><h3 id="SL33-tests-2">検証</h3><div class="textbody"><h5 class="small-head">Fail case</h5><h4 class="small-head" id="SL33-2-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. That
@@ -5190,12 +5190,12 @@ How  then is this? Are the green fields gone? What do they here?
     			With Properties</h2><div class="applicability"><h3 id="SL34-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-sequence">
 				達成基準 1.3.2 (意味のある順序)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-sequence">
 						How to Meet 1.3.2 (意味のある順序)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-sequence.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-sequence.html">
 						達成基準 1.3.2 (意味のある順序)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-order">
 				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
 						How to Meet 2.4.3 (フォーカス順序)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-order.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-order.html">
 						達成基準 2.4.3 (フォーカス順序)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.34.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL34">User Agent Support Notes for SL34</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL34-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the default Silverlight
     				tab sequence, or alternatively to apply the options that Silverlight
@@ -5380,17 +5380,17 @@ How  then is this? Are the green fields gone? What do they here?
     			Side Forms Validation in Silverlight</h2><div class="applicability"><h3 id="SL35-applicability">適用（対象）</h3><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-identified">
 				達成基準 3.3.1 (エラーの特定)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-identified">
 						How to Meet 3.3.1 (エラーの特定)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-identified.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-identified.html">
 						達成基準 3.3.1 (エラーの特定)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-suggestions">
 				達成基準 3.3.3 (エラー修正の提案)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-suggestions">
 						How to Meet 3.3.3 (エラー修正の提案)
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-suggestions.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-suggestions.html">
 						達成基準 3.3.3 (エラー修正の提案)を理解する
 					</a></li></ul></li><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#minimize-error-reversible">
 				達成基準 3.3.4 (エラー回避 (法的、金融、データ) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-reversible">
 						How to Meet 3.3.4 (エラー回避 (法的、金融、データ) )
-					</a></li><li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-reversible.html">
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-reversible.html">
 						達成基準 3.3.4 (エラー回避 (法的、金融、データ) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.35.1">ユーザーエージェント及び支援技術によるサポート</h3><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/silverlight#SL35">User Agent Support Notes for SL35</a>. Also see <a href="#silverlight_notes">Silverlight Technology Notes</a>.</p></div><h3 id="SL35-description">解説</h3><div class="textbody"><p>The objective of this technique is to use the Silverlight <code>Validation</code> API.
     				The <code>Validation</code> API associates the validation logic with form input
@@ -5612,7 +5612,7 @@ How  then is this? Are the green fields gone? What do they here?
                </p></li><li><p>
                   <a href="https://msdn.microsoft.com/en-us/magazine/dd419663.aspx">MSDN
     						article: WPF Apps With The Model-View-ViewModel Design Pattern</a> 
-               </p></li></ul></div><h3 id="SL35-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR32">SCR32: クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</a></li></ul></div><h3 id="SL35-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL35-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
+               </p></li></ul></div><h3 id="SL35-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR32">SCR32: クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</a></li></ul></div><h3 id="SL35-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SL35-procedure">チェックポイント</h4><ol class="enumar"><li><p> Using a browser that supports Silverlight, open an HTML page that
     					references a Silverlight application through an object tag. The application
     					is expected to contain form fields, and a Submit pattern for form
     					interaction as described in <a href="#SL10"><em>SL10: Implementing a Submit-Form Pattern in Silverlight</em></a>. </p></li><li><p> Navigate through the items of a form until an editable field is
