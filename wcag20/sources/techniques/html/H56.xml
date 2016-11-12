@@ -15,11 +15,11 @@
    <examples>
       <eg-group>
       <description><p>この事例では、ヘブライ語と英語のように、混在したテキストの表記方向を持つ文章で、右から左へと表記すべき入れ子になったテキストの表記方向を明らかにする。引用全体はヘブライ語であり、右から左に表記されるが、「W3C」というテキストとカンマは、次のようにヘブライ語のテキストの左側に（すなわち、後ろに）現れるべきである：</p>
-<p>The title is "<span lang="he" xml:lang="he" dir="rtl">פעילות הבינאום, W3C</span>" in Hebrew.</p>
+<p>The title is "<phrase lang="he" xml:lang="he" dir="rtl">פעילות הבינאום, W3C</phrase>" in Hebrew.</p>
 <p>視覚的な順序に基づくASCII（右から左へ表記するテキストは大文字で、左から右へ表記するテキストは小文字で書く）では、次の通りである：</p>
 <p>the title is "w3c ,YTIVITCA NOITAZILANOITANRETNI" in hebrew.</p>
 <p>正しく表示するためには、Unicodeの双方向アルゴリズムだけでは不十分なため、次に示すように「W3C」というテキストが引用の中で右側に置かれたままである：</p>
-<p>The title is "<span lang="he" xml:lang="he">פעילות הבינאום</span>, W3C" in Hebrew.</p>
+<p>The title is "<phrase lang="he" xml:lang="he">פעילות הבינאום</phrase>, W3C" in Hebrew.</p>
 <p>視覚的な順序に基づくASCIIでは、次の通りである：</p>
 <p>the title is "YTIVITCA NOITAZILANOITANRETNI, w3c" in hebrew.</p>
 <p>次のようにマークアップすることによって、期待する結果が得られる。</p>

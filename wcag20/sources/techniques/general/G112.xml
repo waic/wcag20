@@ -32,7 +32,7 @@ Example 3: W3C key words</head>
     <eg-group>
       <head>文脈中で定義された日本語の慣用句の表現</head>
       <description><p>この事例では、日本語における慣用句表現の定義を提供するために括弧を使用する。日本語の語句には「彼はさじを投げる。」と書かれている。これは、彼が何もできず、最終的にあきらめたことを意味している。</p>
-<p><span lang="jp" xml:lang="jp">さじを投げる（どうすることもできなくなり、あきらめること）。</span></p>
+<p><phrase lang="jp" xml:lang="jp">さじを投げる（どうすることもできなくなり、あきらめること）。</phrase></p>
 </description>
     </eg-group>
    </examples>
