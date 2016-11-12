@@ -41,7 +41,7 @@
    </tr>
  </table>]]></codeblock>
     </eg-group>
-    <eg-group role="failure">
+    <!--eg-group role="failure">
       <head>不適合となる 定義リストの使用</head>
       <description><p>HTML及びびXHTMLでは、定義リストによって用語とその定義との関連性を提供することができる。したがって、理論上は定義部分に置かれたリンクはその用語部分を文脈として利用できるはずである。ところが、定義リストに対するサポートは著しく進んでおらず、今日の支援技術の利用者が定義リストのみを用いて文脈を発見する手段はない。定義リストは、連想的な関係を提供するのに有用なメカニズムであるが、現時点において<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">達成基準2.4.4</loc>を満たすことができる達成方法ではない。</p>
 </description>
@@ -57,7 +57,7 @@
 　　両親の死にまつわる真相を知らされる1年間を描く。</dd>
     <dd><a href="potter.php?id=125">今すぐ購入</a></dd>
 </dl></code>
-    </eg-group>
+    </eg-group-->
    </examples>
    <resources/>
    <related-techniques/>

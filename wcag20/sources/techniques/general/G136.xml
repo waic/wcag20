@@ -11,7 +11,17 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、本来のコンテンツ又は利用者が特定のURIに訪れた時に遭遇するデフォルトのコンテンツがWCAGに適合していない場合、利用者がWCAGに適合している代替コンテンツにアクセスできるようにすることである。代替ページ又は適合している代替バージョンは、適合するためにいくつかのデザイン又は機能的な譲歩を作る可能性があるが、適合している代替バージョンにするためには定義において記された要件を満たさなければならない。「適合している代替バージョン」の定義とは：</p>
-    <dl>
+      <p id="copyconforming-alternate-versiondef"/>
+      <p>When using this techique, placing a WCAG-conforming link to alternate content at the top of the page allows users to find the link quickly and to move to the conforming alternate version. To ensure users can always find the alternate version, regardless of where they enter the site, each page that does not conform at the specified level would include a link to the conforming alternate version.</p>
+   </description>
+   <examples>
+      <ulist>
+         <item>
+            <p>On a Web site, for each page that does not conform to WCAG at the declared level, the first link on the page is called "Accessible version" (or using other link text that properly conveys the purpose of the link). The target of this link is the alternate version of the page that conforms to WCAG at the declared level.</p>
+         </item>
+      </ulist>
+   </examples>
+    <!--dl>
 <dt class="label">
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="">適合している代替バージョン</loc></dt>
 	<dd>
@@ -29,9 +39,10 @@
 </dl>
     <p>この達成方法を使用している際、ページの最初に代替コンテンツへのWCAGに適合したリンクを配置することで、利用者がそのリンクをすぐに見つけることができ、適合した代替バージョンに移動することができるようになる。利用者がどこからそのサイトに入ったかに関係なく、利用者が常に代替バージョンを見つけることができるようにするためには、特定のレベルで適合していないページには適合している代替バージョンへのリンクを含めることである。</p>
   </description>
-   <examples/>
+   <examples/-->
    <related-techniques>
       <relatedtech idref="SVR2"/>
+      <relatedtech idref="SCR38"/>
    </related-techniques>
    <tests>
       <procedure>
