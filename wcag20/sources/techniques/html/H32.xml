@@ -63,7 +63,7 @@
           <p>コンテンツ内の全てのフォームを見る。</p>
         </item>
         <item>
-          <p>それぞれのフォームに、送信ボタン(input type="submit"<span>、input type="image" 又は button type="submit"</span>)がある。</p>
+          <p>それぞれのフォームに、送信ボタン(input type="submit"、input type="image" 又は button type="submit")がある。</p>
         </item>
       </olist>
     </procedure>
