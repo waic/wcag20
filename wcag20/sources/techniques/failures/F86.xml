@@ -82,7 +82,7 @@
    <tests>
       <procedure>
       <p>
-        <strong>一般的な手順：</strong>
+        一般的な手順：
       </p>
       <olist>
         <item>
@@ -96,7 +96,7 @@
         </item>
       </olist>
       <p>
-        <strong>HTML及びXHTMLの場合の手順：</strong>
+        HTML及びXHTMLの場合の手順：
       </p>
       <olist>
         <item>
@@ -112,7 +112,7 @@
     </procedure>
       <expected-results>
          <p>
-        <strong>一般的な判定基準：</strong>
+        一般的な判定基準：
       </p>
       <ulist>
         <item>
@@ -120,7 +120,7 @@
         </item>
       </ulist>
       <p>
-        <strong>HTML及びXHTMLの場合の判定基準：</strong>
+        HTML及びXHTMLの場合の判定基準：
       </p>
       <ulist>
         <item>
