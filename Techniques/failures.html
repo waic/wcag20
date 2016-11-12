@@ -1041,19 +1041,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
        &lt;img src="download.jpg" width="165" height="32" alt="今すぐダウンロード"&gt;&lt;/a&gt;
        &lt;/td&gt;
    &lt;/tr&gt;
- &lt;/table&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F63-failex3">
-					    不適合事例 3: 不適合となる 定義リストの使用</h4><div class="example"><div class="textbody"><p>HTML及びびXHTMLでは、定義リストによって用語とその定義との関連性を提供することができる。したがって、理論上は定義部分に置かれたリンクはその用語部分を文脈として利用できるはずである。ところが、定義リストに対するサポートは著しく進んでおらず、今日の支援技術の利用者が定義リストのみを用いて文脈を発見する手段はない。定義リストは、連想的な関係を提供するのに有用なメカニズムであるが、現時点において<a href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">達成基準2.4.4</a>を満たすことができる達成方法ではない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code><font color="red">&lt;dl&gt;
-    <font color="red">&lt;dt&gt;ハリー・ポッターと秘密の部屋&lt;/dt&gt;</font>
-    <font color="red">&lt;dd&gt;ヴォルデモート卿と対決しなければならない魔法の力を持った少年の物語。&lt;/dd&gt;</font>
-    <font color="red">&lt;dd&gt;<a href="potter.php?id=123">今すぐ購入</a>&lt;/dd&gt;</font>
-    <font color="red">&lt;dt&gt;ハリー・ポッターと炎のゴブレット&lt;/dt&gt;</font>
-    <font color="red">&lt;dd&gt;三大魔法学校対抗試合でハリーは代表選手に選ばれてしまう。&lt;/dd&gt;</font>
-    <font color="red">&lt;dd&gt;<a href="potter.php?id=124">今すぐ購入</a>&lt;/dd&gt;</font>
-    <font color="red">&lt;dt&gt;ハリー・ポッターとアズカバンの囚人&lt;/dt&gt;</font>
-    <font color="red">&lt;dd&gt;ホグワーツ魔法魔術学校の3年生となったハリー・ポッターが、
-　　両親の死にまつわる真相を知らされる1年間を描く。&lt;/dd&gt;</font>
-    <font color="red">&lt;dd&gt;<a href="potter.php?id=125">今すぐ購入</a>&lt;/dd&gt;</font>
-&lt;/dl&gt;</font></code></pre></div></div></div><h3 id="F63-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F63-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F63-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F63-procedure">チェックポイント</h4><ol class="enumar"><li><p>リンクテキストが示すリンクの目的を理解するために必要なコンテンツを特定する。</p></li><li><p>そのコンテンツが同じ文、段落、リストの項目、又はテーブルのセルに含まれている、もしくは直前の見出しに含まれている。</p></li></ol><h4 class="small-head" id="F63-results">判定基準</h4><ul><li><p>2.を満たしていない場合、達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F65" id="F65"> </a>F65: 達成基準 1.1.1 の不適合事例 － <code>img</code>要素、<code>area</code>要素、及び <code>type "image"</code> の<code>input</code>要素の<code>alt</code>属性を省略している</h2><div class="applicability"><h3 id="F65-applicability">適用（対象）</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
+ &lt;/table&gt;</code></pre></div></div></div><h3 id="F63-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F63-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F63-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F63-procedure">チェックポイント</h4><ol class="enumar"><li><p>リンクテキストが示すリンクの目的を理解するために必要なコンテンツを特定する。</p></li><li><p>そのコンテンツが同じ文、段落、リストの項目、又はテーブルのセルに含まれている、もしくは直前の見出しに含まれている。</p></li></ol><h4 class="small-head" id="F63-results">判定基準</h4><ul><li><p>2.を満たしていない場合、達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F65" id="F65"> </a>F65: 達成基準 1.1.1 の不適合事例 － <code>img</code>要素、<code>area</code>要素、及び <code>type "image"</code> の<code>input</code>要素の<code>alt</code>属性を省略している</h2><div class="applicability"><h3 id="F65-applicability">適用（対象）</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
@@ -1145,12 +1133,12 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 &lt;div style="font-size:100%; width:120px; height:100px; border: thin solid gray;&gt; 
   Now is the time for all good men to come to the aid of their country. 
 &lt;/div&gt;
-&lt;p&gt;Now is the time for all good men to come to the aid of their country.&lt;/p&gt;</code></pre></div><div class="textbody"><p>事例 1のサンプルイメージ：<font color="red">&lt;br&gt;&lt;/br&gt;</font></p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-obscured.gif" class="eximg" alt="コンテナの枠の外にあふれ、ページの他のテキストを覆い隠しているテキスト。"/></div></div></div><div class="failure"><h4 class="small-head" id="F69-failex2">
+&lt;p&gt;Now is the time for all good men to come to the aid of their country.&lt;/p&gt;</code></pre></div><div class="textbody"><p>事例 1のサンプルイメージ：</p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-obscured.gif" class="eximg" alt="コンテナの枠の外にあふれ、ページの他のテキストを覆い隠しているテキスト。"/></div></div></div><div class="failure"><h4 class="small-head" id="F69-failex2">
 					    不適合事例 2</h4><div class="example"><div class="textbody"><p>この事例は、コンテナがテキストを切り取るように設定されることを除けば、前の不適合事例と同じである。テキストは次のパラグラフに流れ出してはいないが、端が欠けている。これも不適合事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;div style="font-size:100%; width:120px; height:100px; overflow: hidden; border: thin solid gray;&gt;
  Now is the time for all good men to come to the aid of their country. 
 &lt;/div&gt;
-&lt;p&gt;Now is the time for all good men to come to the aid of their country.&lt;/p&gt;</code></pre></div><div class="textbody"><p>事例 2のサンプルイメージ<font color="red">&lt;br&gt;&lt;/br&gt;</font></p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-truncated.gif" class="eximg" alt="拡大したテキストのために端が欠けたテキスト。"/></div></div></div><h3 id="F69-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F69-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F69-procedure">チェックポイント</h4><div class="note"><p class="prefix"><em>注記: </em> WCAGワーキンググループは、この不適合事例の検証方法に多くの誤解があることを確認している。この不適合事例の文書を次回の更新時に修正する予定である。それまでは、コンテンツが「十分な達成方法」のいずれかを用いて達成基準を満たしていれば、この不適合事例には該当しないと考えてよい。</p></div><ol class="enumar"><li><p>コンテンツのテキストの文字サイズを200％拡大する。</p></li><li><p>テキストが切り取られたり、端が欠けたり、又は覆い隠されたりしていない。</p></li></ol><h4 class="small-head" id="F69-results">判定基準</h4><ul><li><p>2.を満たしていなければ、不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F70" id="F70"> </a>F70: 達成基準 4.1.1 の不適合事例 － 開始タグ及び終了タグ、又は属性のマークアップが正しくない</h2><div class="applicability"><h3 id="F70-applicability">適用（対象）</h3><div class="textbody"><p>マークアップ言語：HTML、XHTML、及び他のSGML又はXMLベースのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-parses">
+&lt;p&gt;Now is the time for all good men to come to the aid of their country.&lt;/p&gt;</code></pre></div><div class="textbody"><p>事例 2のサンプルイメージ</p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/F69/F69-truncated.gif" class="eximg" alt="拡大したテキストのために端が欠けたテキスト。"/></div></div></div><h3 id="F69-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F69-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F69-procedure">チェックポイント</h4><div class="note"><p class="prefix"><em>注記: </em> WCAGワーキンググループは、この不適合事例の検証方法に多くの誤解があることを確認している。この不適合事例の文書を次回の更新時に修正する予定である。それまでは、コンテンツが「十分な達成方法」のいずれかを用いて達成基準を満たしていれば、この不適合事例には該当しないと考えてよい。</p></div><ol class="enumar"><li><p>コンテンツのテキストの文字サイズを200％拡大する。</p></li><li><p>テキストが切り取られたり、端が欠けたり、又は覆い隠されたりしていない。</p></li></ol><h4 class="small-head" id="F69-results">判定基準</h4><ul><li><p>2.を満たしていなければ、不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F70" id="F70"> </a>F70: 達成基準 4.1.1 の不適合事例 － 開始タグ及び終了タグ、又は属性のマークアップが正しくない</h2><div class="applicability"><h3 id="F70-applicability">適用（対象）</h3><div class="textbody"><p>マークアップ言語：HTML、XHTML、及び他のSGML又はXMLベースのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#ensure-compat-parses">
 				達成基準 4.1.1 (構文解析)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-parses">
 						How to Meet 4.1.1 (構文解析)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-parses.html">
@@ -1365,12 +1353,12 @@ p.jim:before {	content: "Jim: " }
 p.mary:before { content: "Mary: " }
 
 q:before { content: open-quote }
-q:after  { content: close-quote }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code><p>
- <font color="red">&lt;q&gt;彼は間に合うかな？&lt;/q&gt;</font>
-</p>
-<p>
- <font color="red">&lt;q&gt;無理そうよね。&lt;/q&gt;</font>
-</p></code></pre></div></div></div><h4 class="small-head" id="F87-ex2">事例 2: 不適合となる</h4><div class="example"><div class="textbody"><p>この例では、<code>:before</code> を用いて、意見と事実の違いを区別している。</p><p>CSSは、次のようになっている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.fact:before { content: "Fact: "; font-weight: bold; }
+q:after  { content: close-quote }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;p class="jim"&gt;
+ &lt;q&gt;彼は間に合うかな？&lt;/q&gt;
+&lt;/p&gt;
+&lt;p class="mary"&gt;
+ &lt;q&gt;無理そうよね。&lt;/q&gt;
+&lt;/p&gt;</code></pre></div></div></div><h4 class="small-head" id="F87-ex2">事例 2: 不適合となる</h4><div class="example"><div class="textbody"><p>この例では、<code>:before</code> を用いて、意見と事実の違いを区別している。</p><p>CSSは、次のようになっている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.fact:before { content: "Fact: "; font-weight: bold; }
  p.opinion:before { content: "Opinion: "; font-weight: bold; }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;p class="fact"&gt;
  事件発生時、被告人はその犯罪現場にいた。 
