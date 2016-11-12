@@ -19,26 +19,62 @@
       <eg-group>
       <description><p>段落には別のページへのハイパーリンクがある。ハイパーリンクは<el>a</el>要素を用いてマークアップされている。 </p>
 </description>
-      <code/>
+         <code role="html401"><![CDATA[
+              <p>Do you want to try our new tool yourself? A free 
+                demonstration version is available in our 
+                <a href="download.html">download section</a></p>
+            ]]></code>
     </eg-group>
     <eg-group>
       <description><p>結婚の歴史についてのページには、ジェーン・オースティンの小説「高慢と偏見」からの引用が事例として用いられている。本への参照は、<el>cite</el>要素を用いてマークアップされ、引用部分自体は<el>blockquote</el>要素を用いてマークアップされている。</p>
 </description>
-      <code/>
+         <code role="html401"><![CDATA[
+              <p>Marriage was considered a logical step for a bachelor, 
+                as can be seen in the first chapter of the novel 
+                <cite>Pride and Prejudice</cite>:</p>
+                <blockquote>
+                <p>It is a truth universally acknowledged, that a single man in
+                possession of a good fortune, must be in want of a wife.</p>
+                <p>However little known the feelings or views of such a man may
+                be on his first entering a neighbourhood, this truth is so well
+                fixed in the minds of the surrounding families, that he is considered
+                the rightful property of some one or other of their daughters.</p>
+                </blockquote>
+            ]]></code>
     </eg-group>
     <eg-group>
       <description><p>車の取扱説明書にエンジンのかけ方の説明がある。説明書きには、ギアがニュートラルになっていることを確かめるようにとの警告がある。筆者は、その警告は非常に重要で強調されるべきであると考えていたため、警告は<el>strong</el>要素を用いてマークアップされている。</p>
 </description>
-      <code/>
+         <code role="html401"><![CDATA[
+              <h1>How to start the engine</h1>
+                <p>Before starting the engine, <strong>make sure the gear 
+                is in neutral</strong>. Next, turn the key in the ignition. 
+                The engine should start.</p>
+            ]]></code>
     </eg-group>
     <eg-group>
       <description><p>この事例では、テキストを強調するために<el>em</el> 及び <el>strong</el>要素をどのように用いたらよいかを示している。</p>
 </description>
-      <code/>
+         <code role="html401"><![CDATA[
+              <p>What she <em>really</em> meant to say was, 
+                "This is not ok, it is <strong>excellent</strong>!"</p>
+            ]]></code>
     </eg-group>
     <eg-group>
       <head>強調及び背景色を用いて重要な情報を視覚的かつセマンティックに特定する。</head>
-      <code/>
+         <code role="html401"><![CDATA[
+              <style type="text/css">
+                .vocab {
+                background-color:cyan;
+                font-style:normal;
+                }
+                </style>
+                ...
+                <p>New vocabulary words are emphasized and highlighted 
+                with a cyan background</p>
+                <p>The <em class="vocab">scathing</em> review of the play 
+                seemed a bit too harsh... </p>
+            ]]></code>
     </eg-group>
    </examples>
    <resources>
