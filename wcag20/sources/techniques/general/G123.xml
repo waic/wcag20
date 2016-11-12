@@ -33,10 +33,51 @@
       <description><p>この事例では、各セクションの冒頭の見出し要素（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H69.html">達成方法 H69</loc>）、及びそれぞれのセクションの最後までスキップするリンクの両方が用いられている。利用する利用者ーエージェントの能力に依存するが、これによってキーボード・ナビゲーション又は見出しナビゲーションを用いて、繰り返されるコンテンツのブロックをスキップすることができる。
               </p>
 </description>
-      <code/>
+         <code role="html401"><![CDATA[
+              <p><a href="#content">Content title</a></p>
+                <h2>Main Navigation</h2>
+                <ul>
+                <li><a href="#subnav">Sub Navigation</a></li>
+                <li><a href="/a/">Link A</a></li>
+                <li><a href="/b/">Link B</a></li>
+                <li><a href="/c/">Link C</a></li>
+                ...
+                <li><a href="/j/">Link J</a></li>
+                </ul>
+                <div class="iekbfix">
+                <h2 id="subnav">Sub Navigation</h2>
+                <ul>
+                <li><a href="#ultranav">Ultra Sub Navigation</a></li>
+                <li><a href="/suba/">Sub A</a></li>
+                <li><a href="/subb/">Sub B</a></li>
+                <li><a href="/subc/">Sub C</a></li>
+                ...
+                <li><a href="/subj/">Sub J</a></li>
+                </ul>
+                </div>
+                <div class="iekbfix">
+                <h2 id="ultranav">Ultra Sub Navigation</h2>
+                <ul>
+                <li><a href="#content">Content title</a></li>
+                <li><a href="/ultraa/">Ultra A</a></li>
+                <li><a href="/ultrab/">Ultra B</a></li>
+                <li><a href="/ultrac/">Ultra C</a></li>
+                ...
+                <li><a href="/ultraj/">Ultra J</a></li>
+                </ul>
+                </div>
+                <div>
+                <h2 id="content">Content title</h2>
+                <p>Now that I have your attention...</p>
+                </div>
+            ]]></code>
       <description><p>CSS：</p>
 </description>
-      <code/>
+         <code role="css"><![CDATA[
+              div.iekbfix {
+                width: 100%;
+                }
+            ]]></code>
     </eg-group>
    </examples>
    <resources>
