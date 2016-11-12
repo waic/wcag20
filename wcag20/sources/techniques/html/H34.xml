@@ -22,7 +22,7 @@
         <p>right-to-left mark（RLM）: &amp;rlm; 又は &amp;#x200f; (U+200F)</p>
       </item>
     </ulist>
-    <p><acronym title="bidirectional">双方向性</acronym>のアルゴリズムが原因で、ソースコード編集者は期待通りに文字符号や数字符号の参照を表示できないことがある。</p>
+    <p><abbr title="bidirectional">双方向性</abbr>のアルゴリズムが原因で、ソースコード編集者は期待通りに文字符号や数字符号の参照を表示できないことがある。</p>
   </description>
 
    <examples>
