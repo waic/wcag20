@@ -4,8 +4,7 @@
 <technique id="F10">
    <short-name>達成基準 2.1.2 及び 適合要件 5 の不適合事例 － 利用者が一つのフォーマットの中に閉じ込められてしまうように、複数のコンテンツ・フォーマットを組み合わせている</short-name>
    <applicability>
-      <p><br/>&#13;
-        利用者がキーボードを使ってコンテンツに入ることができるが、キーボードでコンテンツから抜け出すことができない状況を作り出すコンテンツ</p>
+      <p>利用者がキーボードを使ってコンテンツに入ることができるが、キーボードでコンテンツから抜け出すことができない状況を作り出すコンテンツ</p>
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-trapping" relationship="failure"/>
