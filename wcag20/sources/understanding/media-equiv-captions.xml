@@ -23,11 +23,23 @@
 <div3 role="examples">
 <head>達成基準 1.2.2 の事例</head>
 <ulist>
-	<item><p>
-                <emph role="bold">キャプションを提供しているチュートリアル</emph>
-              </p><p>結び目の作り方を紹介している映像があり、次のようなキャプションが提供されている。</p><p>「（音楽）</p><p>水兵、兵士、そして木こりのような人たちにとっては、</p><p>ロープを使って結び目を作るのは、重要なスキルでした。」</p><p>Whit Anderson氏による、書き起こしテキストのフォーマットのサンプルより。</p></item>
+	<item>
+		<p><emph role="bold">キャプションを提供しているチュートリアル</emph></p>
+		<p>結び目の作り方を紹介している映像があり、次のようなキャプションが提供されている。</p>
+		<p>「（音楽）</p>
+		<p>水兵、兵士、そして木こりのような人たちにとっては、</p>
+		<p>ロープを使って結び目を作るのは、重要なスキルでした。」</p>
+		<p>Whit Anderson氏による、書き起こしテキストのフォーマットのサンプルより。</p>
+	</item>
 	<item><p>複雑な法律文書には、段落ごとに同期したメディアのクリップがあり、その段落の内容を話している人を表示している。各クリップは、その対応する段落と関連付けられている。その同期したメディアには、キャプションが提供されていない。</p></item>
 	<item><p>取扱説明書で、ある部品に関しての説明とその必要な使用方法を含む取扱説明書では、その部品の正しい使用方法を紹介する同期したメディアのクリップがある。その同期したメディアのクリップには、キャプションが提供されていない。</p></item>
+	<item>
+		<p>オーケストラがコンサート映像にキャプションを提供している。台詞や歌詞を逐語的に提供するだけでなく、タイトル、楽章、作曲者などさまざまな情報を提供することで、利用者が音声の特徴を理解することを助け、歌詞のない音楽も認識できるようにしている。例えば、</p>
+		<p>「[管弦楽組曲第3番 ニ長調 BWV 1068 - 第2曲 G線上のアリア]</p>
+<p>[作曲者 ヨハン・ゼバスティアン・バッハ]</p>
+<p>♪ 遅いテンポの落ち着いたメロディ ♪」</p>
+		<note><p>キャプションのスタイルガイドは言語によって異なる可能性がある。</p></note>
+	</item>
 </ulist>
 </div3>
 
@@ -36,60 +48,33 @@
 <div4>
 <head>キャプションのガイド</head>
 <ulist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.dcmp.org/captioningkey/">Captioning Key: Guidelines and Preferred Techniques</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://joeclark.org/access/captioning/bpoc/">Best Practices in Online Captioning</loc>
-                </p></item>
+	<item><p><loc href="http://www.captioningkey.org/">Captioning Key: Guidelines and Preferred Techniques</loc></p></item>
+	<item><p><loc href="http://joeclark.org/access/captioning/bpoc/">Best Practices in Online Captioning</loc></p></item>
 </ulist>
 </div4>
 
 <div4>
 <head>SMILのリソース</head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
-                </p></item>
+	<item><p><loc href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc></p></item>
+	<item><p><loc href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc></p></item>
 </ulist>
 </div4>
 
 <div4>
 <head>キャプションに関するその他のリソース</head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/">National Center for Accessible Media</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/captions/quicktime/index.php">Quicktime Captioning Tutorial</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/captions/real/index.php">RealPlayer Captioning Tutorial</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/resources/captioning/">WebAIM: Captioning Resource List</loc></p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/captions/windows/index.php">Windows Media Player Captioning Tutorial</loc>
-                </p></item>
+	<item><p><loc href="http://ncam.wgbh.org/">National Center for Accessible Media</loc></p></item>
+	<item><p><loc href="http://webaim.org/techniques/captions/">WebAIM: Captioning Resource List</loc></p></item>
 </ulist>
 </div4>
 
 <div4>
 <head>キャプションに関するツール</head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/webaccess/magpie/">Media Access Generator (MAGpie) </loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://kb.wisc.edu/helpdesk/page.php?id=7096">World Caption Software</loc>
-                </p></item>
+	<item><p><loc href="http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines">Media Access Generator (MAGpie) </loc></p></item>
 </ulist>
 </div4>
 </div3>
@@ -99,52 +84,36 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G93" linktype="general">オープン・キャプション（常に表示）を提供する</loc>
-                </p></item><item><p>
-クローズド・キャプションをサポートしたビデオ・プレーヤーのある、容易に利用可能なメディア・フォーマットを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
-                </p></item>
-	<item role="smil"><p>
-次のいずれかのウェブコンテンツ技術特有の達成方法を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G87" linktype="general">クローズド・キャプションを提供する</loc>
-    </p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM11" linktype="smil">SMIL 1.0 の同期したテキスト・ストリームでキャプションを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM12" linktype="smil">SMIL 2.0 の同期したテキスト・ストリームでキャプションを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH9" linktype="flash">収録済みの同期したメディアにキャプションを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL16.html" linktype="silverlight">Providing Script-Embedded Text Captions for MediaElement Content</loc>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL28.html" linktype="silverlight">Using Separate Text-Format Text Captions for MediaElement Content</loc>
-                    </p></item></ulist></item>
+	<item><p><loc href="G93" linktype="general" /></p></item>
+	<item><p>クローズド・キャプションをサポートしたビデオ・プレーヤーのある、容易に利用可能なメディア・フォーマットを用いて、<loc href="G87" linktype="general"><!--クローズド・キャプションを提供する--></loc></p></item>
+	<item role="smil"><p>次のいずれかのウェブコンテンツ技術特有の達成方法を用いて、<loc href="G87" linktype="general"><!--クローズド・キャプションを提供する--></loc></p>
+	<ulist>
+		<item><p><loc href="SM11" linktype="smil" /></p></item>
+		<item><p><loc href="SM12" linktype="smil" /></p></item>
+		<item><p><loc href="H95" linktype="html"/></p></item>
+		<item><p><loc href="FLASH9" linktype="flash" /></p></item>
+		<item><p><loc href="SL16" linktype="silverlight"/></p></item>
+		<item><p><loc href="SL28" linktype="silverlight"/></p></item>
+	</ulist>
+	</item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.2 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>
-映像しか含まないクリップに対して、「このクリップには音は使われていません」というノートを提供する（リンク追加予定）
-    </p></item>
-	<item role="smil"><p>
-オーディオトラックのすべての言語のキャプションを提供するためにSMIL 1.0を使う（リンク追加予定）
-    </p></item>
-	<item role="smil"><p>
-オーディオトラックのすべての言語のキャプションを提供するためにSMIL 2.0を使う（リンク追加予定）
-    </p></item>
+	<item><p>映像しか含まないクリップに対して、「このクリップには音は使われていません」というノートを提供する（リンク追加予定）</p></item>
+	<item role="smil"><p>オーディオトラックのすべての言語のキャプションを提供するためにSMIL 1.0を使う（リンク追加予定）</p></item>
+	<item role="smil"><p>オーディオトラックのすべての言語のキャプションを提供するためにSMIL 2.0を使う（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
 <head>達成基準 1.2.2 のよくある不適合事例</head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F8" linktype="failure">発話や重要な音響効果がキャプションで省略されているという達成基準1.2.2のよくある不適合事例</loc>
-                </p></item><item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F75" linktype="failure">Failure of Success Criterion 1.2.1 by providing synchronized media without captions when the synchronized media presents more information than is presented in its associated text.</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F74" linktype="failure">Failure of 1.2.1 due to not labeling a synchronized media alternative to text as an alternative</loc>
-                </p></item>
+	<item><p><loc href="F8" linktype="failure" /></p></item>
+	<item><p><loc href="F75" linktype="failure" /></p></item>
+	<item><p><loc href="F74" linktype="failure" /></p></item>
 </ulist>
 </div4>
 </div3>
