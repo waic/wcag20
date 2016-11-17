@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 2.1.1 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  2.1 [キーボード操作可能]" href="keyboard-operation.html"><strong>前へ: </strong>ガイドライン  2.1 [キーボード操作可能]</a></li><li><a title="Understanding 達成基準  2.1.2 [キーボードトラップなし]" href="keyboard-operation-trapping.html"><strong>次へ: </strong>達成基準  2.1.2 [キーボードトラップなし]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#keyboard-operation-keyboard-operable-intent-head">意図</a></li><li><a href="#keyboard-operation-keyboard-operable-examples-head">事例</a></li><li><a href="#keyboard-operation-keyboard-operable-resources-head">関連リソース</a></li><li><a href="#keyboard-operation-keyboard-operable-techniques-head">達成方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="keyboard-operation-keyboard-operable" id="keyboard-operation-keyboard-operable"> </a><strong>キーボード</strong><span class="screenreader">:</span><br/>達成基準 2.1.1 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#keyboard-operation-keyboard-operable">2.1.1</a> キーボード:</strong>  コンテンツのすべての<a href="#functiondef" class="termref">機能</a>は、個々のキーストロークに特定のタイミングを要することなく、<a href="#keybrd-interfacedef" class="termref">キーボードインタフェース</a>を通じて操作可能である。ただし、その根本的な機能が利用者の動作による始点から終点まで続く一連の軌跡に依存して実現されている場合は除く。 
+					(レベル A)
+				</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>上記の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法 (手書き) は利用者の動作による軌跡に依存した入力を必要とするが、その根本的な機能 (テキスト入力) は利用者の動作による軌跡に依存した入力を必要とするものではない。</p><p class="prefix"><em>注記 2:
+					</em>これは、キーボード操作に加えて、マウス入力、又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。</p></div></div></blockquote><div class="intent"><h2 id="keyboard-operation-keyboard-operable-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、可能な限り、コンテンツをキーボード又は（代替キーボードが利用できるような）キーボード・インタフェースで操作できるようにすることである。コンテンツがキーボード又は代替キーボードで操作可能であれば、（目と手を一緒に使うマウスのようなデバイスを使用できない）全盲の利用者にも、代替キーボード又はキーボード・エミュレータのような入力デバイスを使用しなければならない利用者にも操作できることになる。キーボード・エミュレータには、音声認識入力ソフトウェア、呼気/吸気操作ソフトウェア、オンスクリーン・キーボード、スキャニングソフトウェア、そして様々な支援技術及び代替キーボードがある。ロービジョンの利用者は、ポインタを目で追うのが困難なことがあり、キーボードでソフトウェアを操作できれば、ソフトウェアがとても使いやすくなる（又は、単に使えるようになる）。</p><p>「個々のキーストロークに特定のタイミング」の事例としては、利用者が短時間のうちに複数の打けんを繰り返す又は実行する必要がある状況、又は打けんが受け付けられるまでは長い間キーを押下していなければならないような状況がある。</p><p>「ただし、その根本的な機能が単に利用者の動作の終点に依存しておらず、利用者の動作による軌跡に依存して実現されている場合は除く。」というフレーズがあるのは、キーボードから無理なく操作することができないものとを区別するためである。</p><p>ポインティング・デバイスにより実行される操作のほとんどは、キーボードでも実行可能である（例えば、クリックする、選択する、動かす、拡大・縮小する）。しかし、ポインティング・デバイスでは可能だが、ものすごく多くの打けんでないと、あらゆる知られた方法でキーボードでは不可能な入力がある。手書き描画、水彩画、及び障害物訓練コースでのヘリコプター操縦は、どれも軌跡に依存した入力を要する機能の事例である。直線や規則的な幾何学的図形を描くこと、ウィンドウのサイズを変更すること、及びある位置へオブジェクトをドラッグして移動させること（その位置への軌跡に意味がない場合）は、軌跡に依存した入力を必要としない。</p><p>（テンキーでマウスポインタを操作する）マウスキーを使用することでは、この達成基準を満たしたことにはならないだろう。なぜなら、アプリケーションに対して、キーボードと同等ではなく、マウスと同等だからである（つまり、アプリケーションからはマウスのように見えるためである）。</p><p>利用者の入力機能を設計する際に、利用者がそのオペレーティング・システムのキーボード・アクセシビリティ機能を使用する可能性があることを考慮するのは当然のことである。例えば、修飾キーがロックされているかもしれない。しかし、修飾キーのロックとぶつかるイベントを送って予期しない結果が生じることのないように、コンテンツはそのような環境においても機能し続ける必要がある。</p><div class="benefits"><h3 id="keyboard-operation-keyboard-operable-105-head" class="div3head">達成基準 2.1.1の具体的なメリット:
+			</h3><ul><li><p>（目と手を一緒に使うマウスのようなデバイスを使用できない）全盲の利用者</p></li><li><p>（画面上のポインタを見つけたり、目で追ったりするのが困難である）ロービジョンの利用者</p></li><li><p>マウスを使うのがとても困難なため、通常はキーボードを使用している手に震えのある利用者。</p></li></ul></div></div><div class="div3"><h2 id="keyboard-operation-keyboard-operable-examples-head" class="section">達成基準 2.1.1の事例
+            </h2><ul><li><p>
+                <strong>事例 1： 描画プログラム</strong>
+              </p><p>描画プログラムは、利用者がキーボード操作でオブジェクトの作成、サイズ変更、配置及び回転をすることが可能である。</p></li><li><p>
+                <strong>事例 2： ドラッグアンドドロップ機能</strong>
+              </p><p>ドラッグアンドドロップを用いるアプリケーションは、オブジェクトを移動させるための「カット」及び「ペースト」、又はフォーム・コントロールをサポートしている。</p></li><li><p>
+                <strong>事例 3： 離れている点の間の移動及び接続</strong>
+              </p><p>点を結ぶプログラムは、利用者が画面上の点間を移動し、スペースキーで現在の点と直前の点を結ぶことができる。</p></li><li><p>
+                <strong>事例 4： 例外 － お絵描きプログラム</strong>
+              </p><p>水彩画を描くプログラムは、ひと筆の動きが移動の速度及び持続時間にかなり依存して変化するため、例外の一つとして認められる。</p></li><li><p>
+                <strong>事例 5： 例外 － 模型ヘリコプター操縦訓練シミュレータ</strong>
+              </p><p>ヘリコプター操縦訓練シミュレータは、シミュレータの性質上、模型ヘリコプターの動作をリアルタイムで教えるものであるため、例外の一つとして認められる。</p></li><li><p>
+                <strong>事例 6： オプションのキーボード付き PDA</strong>
+              </p><p>通常スタイラスペンで操作する PDA は、オプションで接続可能なキーボードがある。そのキーボードは、標準的な方法ですべてのウェブ閲覧を行うことが可能である。ウェブコンテンツはキーボードのみでも利用できるように設計されているので、そのキーボードでも操作可能である。</p></li></ul></div><div class="resources"><h2 id="keyboard-operation-keyboard-operable-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><p>(今のところ、文書化されていない)</p></div><div class="div3"><h2 id="keyboard-operation-keyboard-operable-techniques-head" class="section">達成基準 2.1.1 の達成方法及び不適合事例
+               - キーボード</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる達成方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-106-head" class="div3head">
+				達成基準を満たすことのできる達成方法 
+			</h3><ol class="enumar"><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G202" class="tech-ref">G202: すべての機能をキーボードだけでも操作可能にする</a></p></li><li><p>次の達成方法の一つを用いて、キーボードで操作できることを保証する。</p><ul><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H91" class="tech-ref">H91: HTMLのフォーム・コントロール及びリンクを用いる</a>  (HTML)
+			</p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF3" class="tech-ref">PDF3: PDF 文書で正しいタブ順序と読み上げ順序を確保する</a> (PDF)
+    	 
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF11" class="tech-ref">PDF11: PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</a> (PDF)
+    	 
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF23" class="tech-ref">PDF23: PDF 文書内でインタラクティブなフォーム・コントロールを提供する</a> (PDF)
+    	 
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL15.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL15.html: </a> (Silverlight)
+    	 
+                </p></li></ul></li><li><p>次の達成方法の一つを用いて、
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G90" class="tech-ref">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a> :     </p><ul><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR20" class="tech-ref">SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</a>  (Scripting)
+			
+                    </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR35" class="tech-ref">SCR35: アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</a>  (Scripting)
+			</p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR2" class="tech-ref">SCR2: キーボード及びマウスのイベント・ハンドラを両方とも用いる</a>  (Scripting)
+			</p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL9.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL9.html: </a> (Silverlight)
+    	 
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL14.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL14.html: </a> (Silverlight)
+    	 
+                </p></li></ul></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH17" class="tech-ref">FLASH17: Providing keyboard access to a Flash object and avoiding a keyboard trap</a> (Flash)
+    	　かつ、必要に応じて次の達成方法を用いる：</p><ul><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH22" class="tech-ref">FLASH22: Adding keyboard-accessible actions to static elements</a> (Flash)
+    	
+                    </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH16" class="tech-ref">FLASH16: Making actions keyboard accessible by using the click event on standard components</a> (Flash)
+    	</p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH14" class="tech-ref">FLASH14: Using redundant keyboard and mouse event handlers in Flash</a> (Flash)
+    	</p></li></ul></li></ol></div><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-107-head" class="div3head">2.1.1 でさらに対応が望まれる達成方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>インタラクティブな利用者ーインタフェース・コンポーネントとして静的な要素に再度目的を持たせる場合、XHTMLの役割、状態、及び値の属性を使用する（リンク追加予定） 及び <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR29" class="tech-ref">SCR29: Adding keyboard-accessible actions to static HTML elements</a>  (Scripting)
+			</p></li><li><p>重要なリンク及びフォームのコントロールへのキーボード・ショートカットを提供する（リンク追加予定）</p></li><li><p>一覧表の各項目を始めるために固有の文字の組合せを使用する（リンク追加予定）</p></li><li><p>	もっとも抽象的なイベント・ハンドラを選択する（リンク追加予定）(Scripting)</p></li><li><p>OnActivateイベントを使用する（リンク追加予定）(Scripting)</p></li><li><p>他の目的で、一般的な利用者ーエージェントのキーボード・コマンドの使用を避ける（リンク追加予定）</p></li></ul></div><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-108-head" class="div3head">
+				 達成基準 2.1.1 のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準2.1.1に適合していないとみなした、よくある不適合事例である。</p><ul><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F54" class="tech-ref">F54: 達成基準 2.1.1 の不適合事例 － ある機能にポインティング・デバイス特有のイベント・ハンドラを用いている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F55" class="tech-ref">F55: 
+          達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の不適合事例 － フォーカスを受け取った際に、スクリプトを用いてフォーカスを取り除いている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F42" class="tech-ref">F42: 達成基準 1.3.1 及び 達成基準 2.1.1 の不適合事例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている</a>
+                </p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="keybrd-interfacedef" id="keybrd-interfacedef"> </a>キーボードインタフェース (keyboard interface)</dt><dd><p>キーストローク入力を取得するためにソフトウェアが用いるインタフェース。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>標準ではキーボードが存在しない技術であっても、キーボードインタフェースによって、利用者がキーストローク入力をプログラムに提供できる。</p><div class="example"><p class="prefix"><em>事例: </em>タッチスクリーンを搭載している PDA には、外部キーボードへのコネクタとあわせて、そのオペレーティングシステムに組み込まれたキーボードインタフェースがある。PDA 上のアプリケーションはそのインタフェースを用いて、外部キーボード、あるいは手書き解釈プログラムや「キーボードエミュレーション」機能付きの音声テキスト変換アプリケーションのような擬似キーボード出力を提供する他のアプリケーションのいずれかからキーボード入力を取得することができる。</p></div><p class="prefix"><em>注記 2:
+					</em>マウスキーのようなキーボード操作によるマウスエミュレータによるアプリケーション (又は、そのアプリケーションの一部) の操作は、キーボードインタフェースからの操作とは見なさない。なぜならば、この場合、プログラムの操作は、キーボードインタフェースからではなく、そのポインティングデバイス インタフェースからの入力によって行われるからである。</p></div></dd><dt class="label"><a name="functiondef" id="functiondef"> </a>機能 (functionality)</dt><dd><p>
+利用者の操作により実現可能な<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#processdef" class="termref">プロセス</a>及び結果。</p></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  2.1 [キーボード操作可能]" href="keyboard-operation.html"><strong>前へ: </strong>ガイドライン  2.1 [キーボード操作可能]</a></li><li><a title="Understanding 達成基準  2.1.2 [キーボードトラップなし]" href="keyboard-operation-trapping.html"><strong>次へ: </strong>達成基準  2.1.2 [キーボードトラップなし]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>（<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p></div></body></html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 2.4.4 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding 達成基準  2.4.3 [フォーカス順序]" href="navigation-mechanisms-focus-order.html"><strong>前へ: </strong>達成基準  2.4.3 [フォーカス順序]</a></li><li><a title="Understanding 達成基準  2.4.5 [複数の手段]" href="navigation-mechanisms-mult-loc.html"><strong>次へ: </strong>達成基準  2.4.5 [複数の手段]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#navigation-mechanisms-refs-intent-head">意図</a></li><li><a href="#navigation-mechanisms-refs-examples-head">事例</a></li><li><a href="#navigation-mechanisms-refs-resources-head">関連リソース</a></li><li><a href="#navigation-mechanisms-refs-techniques-head">達成方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="navigation-mechanisms-refs" id="navigation-mechanisms-refs"> </a><strong>リンクの目的 (コンテキスト内) </strong><span class="screenreader">:</span><br/>達成基準 2.4.4 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs">2.4.4</a> リンクの目的 (コンテキスト内) :</strong> 
+それぞれの<a href="#linkpurposedef" class="termref">リンクの目的</a>が、リンクのテキスト単独で、又はリンクのテキストと<a href="#pdlinkcontextdef" class="termref">プログラムによる解釈が可能なリンクのコンテキスト</a>から判断できる。ただし、リンクの目的が<a href="#ambiguouslinkdef" class="termref">ほとんどの利用者にとって曖昧</a>な場合は除く。 
+					(レベル A)
+				</p></div></blockquote><div class="intent"><h2 id="navigation-mechanisms-refs-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、利用者がそのリンク先へ行きたいかどうかを決めることができるように、各リンクの目的を理解しやすくすることである。可能な限り、その他の文脈が必要ないように、リンクの目的を示すリンクテキストを提供するとよい。支援技術は、そのウェブページにあるリンクの一覧を利用者に提供することが可能である。リンクテキストにできる限り意味を持たせることで、利用者はこのリンクの一覧から選びやすくなる。また、意味のあるリンクテキストは、リンクからリンクへと Tab キーで移動したい利用者にとっても役に立つ。そして、意味のあるリンクは、そのリンク先のページを理解するのに面倒な方法をとることなく、利用者がリンクを選びやすくなるのである。</p><p>ある状況においては、コンテンツ制作者は、リンクの説明の一部を、そのリンクの文脈を提供する論理的に関係のあるテキストで提供したいことがある。この場合、利用者がリンクからフォーカスを移動させずに、そのリンクの目的を確認できなければならない。言い換えれば、利用者があるリンクにやってきて、その位置にいたままで、リンクに関するより多くの情報を探し出すことができる必要がある。これは、同じ文、段落、リスト項目、そのリンクの直前にある見出し、リンクであるテーブルのセル、又はデータテーブル内にあるリンクの見出しセルに、リンクの説明を置くことで可能である。なぜなら、それらはリンク自体と直接関連付けられているからである。</p><p>こういった文脈は、リンクの前にあると、最も使いやすいだろう（例えば、曖昧なリンクテキストを使わなければならない場合、その曖昧な語句をリンクの行き先を説明する文章の初めに置くよりも、リンクの行き先を説明する文章の最後に置いたほうが分かりやすい）。リンクの後に説明がきてしまうと、ウェブページを（先頭から最後まで）順に読んでいるスクリーンリーダーの利用者が、困惑したり、理解しづらかったりする可能性がある。</p><p>リンク先が同じリンクには、（<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-consistent-functionality" class="gl-ref">達成基準 3.2.4</a>により）同じ説明があるべきだが、異なる目的で異なるリンク先であるリンクには異なる説明があるべきである。</p><p>この達成基準には、リンクの目的をウェブページ上にある情報からは判断できないリンクに対して例外が認められている。そのような状況では、障害のある利用者が不利な立場にあるわけではない。リンクの目的を理解するために追加入手可能な文脈が一切ないのである。しかし、ウェブページ上でリンクの目的を解釈するために どんな量であれ文脈が 利用できるなら、この達成基準を満たすためには リンクテキスト内で利用できるか、又はプログラム的にリンクと関連付けられるか、ができなければいけない。</p><div class="note"><p class="prefix"><em>注記: </em>リンクの目的が未知のものである又は隠されているというのが当然であるという状況もありえる。例えば、ゲームには ドア 1、ドア 2、そしてドア 3とだけしか示されていないリンクがある可能性もある。こういう場合は、リンクの目的がすべての利用者をドキドキさせることなので、それらはリンクテキストとして十分であると考えてよい。</p></div><p><em><a href="navigation-mechanisms-link.html">
+    達成基準2.4.9 リンクの目的 (リンクのみ) を理解する</a></em>も参照のこと。</p><div class="benefits"><h3 id="navigation-mechanisms-refs-154-head" class="div3head">達成基準 2.4.4の具体的なメリット:
+			</h3><ul><li><p>この達成基準により、運動障害のある利用者が、リンク先のコンテンツへ行って、また元へ戻ってくるという無駄なキーストロークなしに、必要のないリンクをスキップすることができるようになる。</p></li><li><p>認知に制約のある利用者が必要のないコンテンツへ行ったり来たりして現在位置を見失う、ということがなくなる。</p></li><li><p>
+                  視覚障害のある利用者が、リンクの文脈を探ることによって、リンクの目的を判断できるようになる。
+                  
+                </p></li></ul></div></div><div class="div3"><h2 id="navigation-mechanisms-refs-examples-head" class="section">達成基準 2.4.4の事例
+            </h2><ul><li><p>
+                <strong>リンクがリンク先の URI にある情報を説明するテキストを含んでいる</strong>
+              </p><p>
+                あるページに、「中世の歴史には大量の虐殺があった」という文がある。そして、「中世の歴史」がリンクである。
+              </p></li><li><p>
+                <strong>リンクの前にリンク先の URI にある情報を説明するテキストがある</strong>
+              </p><p>
+                あるページに、「アイルランド政府の電子選挙委員会に関する詳細を『投票に行こう！』で見る」という文がある。そして、「投票に行こう！」がリンクである。
+              </p></li><li><p>
+                <strong>アイコンとテキストの両方が同じリンク内にある</strong>
+              </p><p>
+                自動投票機のアイコンと「アイルランド政府の電子選挙委員会」というテキストが、一つのリンクになっている。リンクの目的がアイコンの隣にあるリンクのテキストで説明されているので、そのアイコンの代替テキストは空である。
+              </p></li><li><p>
+                <strong>書籍名のリスト</strong>
+              </p><p>
+                リストにある書籍が、HTML、PDF、そして mp3（人が本を読み上げているの音声を録音したもの）の3つのフォーマットで利用可能である。各書籍のタイトルを3回（フォーマットごとに1回）聞かないですむように、各書籍の最初のリンクが書籍のタイトルで、2つめのリンクは「PDF」、3つめのリンクは「mp3」となっている。
+              </p></li><li><p>
+                <strong>ニュース記事の要約</strong>
+              </p><p>
+                あるウェブサイト に、ニュース記事が集められている。メインページでは、各記事の最初の部分が少しだけあって、その後に「続きを読む」というリンクがある。スクリーンリーダーでは、現在の段落を読むためのコマンドによって、リンクの目的を解釈するための文脈が得られる。
+                
+              </p></li></ul></div><div class="resources"><h2 id="navigation-mechanisms-refs-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p>
+                <a href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</a>
+              </p></li><li><p>
+                <a href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</a>
+              </p></li><li><p><a href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</a></p></li></ul></div><div class="div3"><h2 id="navigation-mechanisms-refs-techniques-head" class="section">達成基準 2.4.4 の達成方法及び不適合事例
+               - リンクの目的 (コンテキスト内) </h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる達成方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="navigation-mechanisms-refs-155-head" class="div3head">
+				達成基準を満たすことのできる達成方法 
+			</h3><ol class="enumar"><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G91" class="tech-ref">G91: リンクの目的を説明したリンクテキストを提供する</a>
+                </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H30" class="tech-ref">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H24" class="tech-ref">H24: イメージマップのarea要素に代替テキストを提供する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH27" class="tech-ref">FLASH27: Providing button labels that describe the purpose of a button</a> (Flash)
+    	
+                    </p></li><li><p>次に挙げる達成方法の一つを用いて、利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする：</p><ul><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G189" class="tech-ref">G189: ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</a></p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR30" class="tech-ref">SCR30: スクリプトを用いて、リンクのラベルを変更する</a>  (Scripting)
+			</p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH7" class="tech-ref">FLASH7: Using scripting to change control labels</a> (Flash)
+    	
+                    </p></li></ul></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G53" class="tech-ref">G53: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</a>
+                </p></li><li><p>次に挙げる達成方法の一つを用いて、リンクの目的の説明を補足する：</p><ul><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H33" class="tech-ref">H33: title属性を用いて、リンクテキストの文言を補足する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C7" class="tech-ref">C7: CSSを用いて、リンクテキストの一部を非表示にする</a>  (CSS)
+			
+                    </p></li></ul></li><li><p>
+                  次に挙げる達成方法の一つを用いて、プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する：
+                </p><ul><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H77" class="tech-ref">H77: リンクテキストとそれが含まれているリスト項目とを組み合わせて、リンクの目的を特定する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H78" class="tech-ref">H78: リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</a>  (HTML)
+			
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H79" class="tech-ref">H79: リンクテキストとそれが含まれているデータセル及び関連づけられた見出しセルとを組み合わせて、リンクの目的を特定する</a>  (HTML)
+			
+                    </p></li><li><p>
+                            <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H80" class="tech-ref">H80: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</a>  (HTML)
+			
+                        </p></li><li><p>
+                            <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H81" class="tech-ref">H81: 入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</a>  (HTML)
+			
+                        </p></li></ul></li><li><p>
+                 <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G91" class="tech-ref">G91: リンクの目的を説明したリンクテキストを提供する</a> かつ次の達成方法の一つを用いてセマンティックにリンクを示す：
+                </p><ul><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF11" class="tech-ref">PDF11: PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</a> (PDF)
+    	
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF13" class="tech-ref">PDF13: PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する</a> (PDF)
+    	
+                    </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL18.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL18.html: </a> (Silverlight)
+    	
+                    </p></li></ul></li></ol></div><div class="boxed"><h3 id="navigation-mechanisms-refs-156-head" class="div3head">2.4.4 でさらに対応が望まれる達成方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H2" class="tech-ref">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a>  (HTML)
+			
+                </p></li><li><p>
+                      <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH5" class="tech-ref">FLASH5: Combining adjacent image and text buttons for the same resource</a> (Flash)
+    	
+                    </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA1" class="tech-ref">ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls</a>  (ARIA)
+			
+                </p></li></ul></div><div class="boxed"><h3 id="navigation-mechanisms-refs-157-head" class="div3head">
+				 達成基準 2.4.4 のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準2.4.4に適合していないとみなした、よくある不適合事例である。</p><ul><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F63" class="tech-ref">F63: 達成基準 2.4.4 の不適合事例 － リンクと関係のないコンテンツにおいてのみ、リンクの文脈を提供している</a>
+                </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F89" class="tech-ref">F89: 達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の不適合事例 － 画像だけがリンクのコンテンツである際に、img要素のalt属性値が空になっている</a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="ambiguouslinkdef" id="ambiguouslinkdef"> </a>ほとんどの利用者にとって曖昧 (ambiguous to users in general)</dt><dd><p>リンク、及びリンクと同時に利用者に提供されているウェブページのどの情報からも、そのリンクの目的を判断できない (すなわち、障害がない閲覧者でも、そのリンクを動作させるまで、そのリンクが何をするのか分からない)。</p><div class="example"><p class="prefix"><em>事例: </em>「注目すべき輸出品のひとつはグァバです」という文中にある「グァバ」という単語がリンクになっている。そのリンク先は、グァバの定義、グァバの輸出量を挙げる図表、又はグァバを収穫している人々の写真のいずれにもなり得る。リンクを動作させるまで、すべての利用者が確信を持てないため、障害のある人が不利な立場に置かれることはない。</p></div></dd><dt class="label"><a name="pdlinkcontextdef" id="pdlinkcontextdef"> </a>プログラムによる解釈が可能なリンクのコンテキスト (programmatically determined link context)</dt><dd><p>リンクとの<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relationshipsdef" class="termref">関係性</a>から<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#programmaticallydetermineddef" class="termref">プログラムによる解釈が可能</a>であり、リンクテキストと結びつけることができ、様々な感覚モダリティで利用者に提示することができる付加的情報。
+            </p><div class="example"><p class="prefix"><em>事例: </em>HTMLでは、英語で記述されたリンクからプログラムによる解釈が可能な情報には、そのリンクと同じ段落、リスト、又はテーブルのセルにあるテキスト、あるいはリンクのあるテーブルのセルと関連付けられたテーブルの見出しセルにあるテキストなどがある。
+              </p></div><div class="note"><p class="prefix"><em>注記: </em>スクリーンリーダーは句読点を解釈するので、フォーカスが文中のリンクにある場合は、その文からコンテキストを提供することも可能である。
+              </p></div></dd><dt class="label"><a name="linkpurposedef" id="linkpurposedef"> </a>リンクの目的 (link purpose)</dt><dd><p>ハイパーリンクを動作させたときに得られる結果の本質。</p></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding 達成基準  2.4.3 [フォーカス順序]" href="navigation-mechanisms-focus-order.html"><strong>前へ: </strong>達成基準  2.4.3 [フォーカス順序]</a></li><li><a title="Understanding 達成基準  2.4.5 [複数の手段]" href="navigation-mechanisms-mult-loc.html"><strong>次へ: </strong>達成基準  2.4.5 [複数の手段]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>（<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p></div></body></html>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><title>
+    					達成基準 1.3.1 を理解する | WCAG 2.0解説書
+    				</title><link rel="canonical" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html"/><link media="print" type="text/css" rel="stylesheet" href="print.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p></div><div class="mainbody"><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  1.3 [適応可能]" href="content-structure-separation.html"><strong>前へ: </strong>ガイドライン  1.3 [適応可能]</a></li><li><a title="Understanding 達成基準  1.3.2 [意味のある順序]" href="content-structure-separation-sequence.html"><strong>次へ: </strong>達成基準  1.3.2 [意味のある順序]</a></li></ul><div class="navtoc"><p>このページの内容:</p><ul id="navbar"><li><a href="#content-structure-separation-programmatic-intent-head">意図</a></li><li><a href="#content-structure-separation-programmatic-examples-head">事例</a></li><li><a href="#content-structure-separation-programmatic-resources-head">関連リソース</a></li><li><a href="#content-structure-separation-programmatic-techniques-head">達成方法と不適合事例</a></li><li><a href="#key-terms">重要な用語</a></li></ul></div> <div class="skiptarget"><a id="maincontent">-</a></div><h1><a name="content-structure-separation-programmatic" id="content-structure-separation-programmatic"> </a><strong>情報及び関係性</strong><span class="screenreader">:</span><br/>達成基準 1.3.1 を理解する
+	</h1><blockquote class="scquote"><div>
+<p class="sctxt"><strong class="sc-handle"><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#content-structure-separation-programmatic">1.3.1</a> 情報及び関係性:</strong> 何らかの形で<a href="#presentationdef" class="termref">提示</a>されている情報、
+<a href="#structuredef" class="termref">構造</a>、及び<a href="#relationshipsdef" class="termref">関係性</a>は、<a href="#programmaticallydetermineddef" class="termref">プログラムによる解釈</a>が可能である、又はテキストで提供されている。 
+					(レベル A)
+				</p></div></blockquote><div class="intent"><h2 id="content-structure-separation-programmatic-intent-head" class="section">
+				この達成基準の意図
+			</h2><p>この達成基準の意図は、視覚的又は聴覚的な体裁によって暗に伝えられている情報及び関係性を、その表現形式が変わったときにも保つようにすることである。例えば、コンテンツがスクリーンリーダーによって読み上げられたり、コンテンツ制作者が提供するスタイルシートが利用者ー・スタイルシートに置き換えられたりしたときには、表現形式が変わる。</p><p>画面を見ている利用者は、様々な視覚的な手がかりによって構造を知覚する。例えば、見出しは大きめで太字のフォントで、次の段落とはスペースを空けて表示されていることがほとんどである。リスト項目は、その先頭に中黒等があって、字下げされていることが多い。段落と段落の間にはスペースがある。共通の特徴を有する条項は、表の行と列で整理されている。フォームの複数のテキストフィールドは、テキストのラベルを共有するグループとして配置されていることがある。異なる背景色を用いて、いくつかのアイテムが互いに関係のあることを示していることもある。特別な意味を持つ語句は、フォントの種類を変えたり、イタリック、下線付きにすることによって示されているなどである。</p><p>同様に、聴覚的な手がかりを用いることもある。例えば、チャイム音が新しい節の開始位置を示している。声のピッチや発話のスピードを変えて、重要な情報を強調したり、引用されたテキストを示したりしている、など。</p><p>そういった関係性が、ある利用者にとって知覚可能であれば、その関係性をすべての利用者が知覚できるようにすることが可能である。情報をすべての利用者にきちんと提供できたかどうかを判断する一つの方法は、その情報に様々な感覚モダリティで連続してアクセスしてみることである。</p><p>用語集にある用語へのリンクを a 要素（又は、使用している技術特有のリンク要素）を用いて実装して、異なるフォントで示していれば、スクリーンリーダーの利用者は、用語集にある用語のところで、たとえフォントの違いに関する情報は受け取れなかったとしても、それがリンクであることが音声読み上げを聞けば分かるだろう。あるオンラインカタログの価格表示では赤い大きなフォントを使用している。スクリーンリーダーの利用者は赤色の情報は得られないが、価格の前に通貨表示を記載することで情報を得ることができる。</p><p>ウェブコンテンツ技術の中には、ある種の情報及び関係性をプログラムで解釈する手段を提供していないものがある。そういった場合には、その情報及び関係性を説明するテキストを提供すべきである。例えば、「アスタリスク (*) のある項目はすべて必須項目です。」のように説明テキストを提供する。テキストによる説明は、例えば、その親要素又は隣接する要素内などのように、（そのページをリニアライズした際に）テキストが説明している情報の近くに置くべきである。</p><p>また、場合によっては、どんな情報をテキストで示すべきで、何を直接関連付ける必要があるのかは各自の判断に委ねるしかないこともある。しかし、できる限り、テキストによる説明を提供するのではなく、その情報をプログラムが解釈できるようにしなければならない。</p><div class="note"><p class="prefix"><em>注記: </em>色の値がプログラムが解釈可能であることは要求していない。色によって伝えられる情報は、その値を明らかにするだけでは、十分に提示することができないからである。そのため、色に特有の問題については、達成基準 1.3.1 ではなく、<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-without-color" class="gl-ref">達成基準 1.4.1</a>で対処している。</p></div><div class="benefits"><h3 id="content-structure-separation-programmatic-53-head" class="div3head">達成基準 1.3.1の具体的なメリット:
+			</h3><ul><li><p>この達成基準は、利用者ーエージェントが個々の利用者のニーズに応じてコンテンツに適応できるようにすることによって、様々な障害のある利用者の役に立つ。
+              </p></li><li><p>全盲の（スクリーンリーダーを使用している）利用者が、色を用いて伝えられている情報をテキストでも得られるようになる（色を用いて情報を伝えている画像の代替テキストを含む）。</p></li><li><p>点字ピンディスプレイを使用している盲ろうの利用者は、色に依存した情報を利用できないことがある。</p></li></ul></div></div><div class="div3"><h2 id="content-structure-separation-programmatic-examples-head" class="section">達成基準 1.3.1の事例
+            </h2><ul><li><p>
+                <strong>
+必須項目のある入力フォーム
+                </strong>
+              </p><p>
+入力フォームに、いくつかの必須項目がある。必須項目のラベルを、赤で表示している。さらに、各ラベルの最後には、アスタリスクの記号文字 (*) が付いている。フォームへの入力に関する説明文には、「すべての必須項目は赤字で示してあり、アスタリスク (*) が付いています。」と書かれていて、例が後に続いている。 
+                
+              </p></li><li><p>
+                <strong>必須項目を示すために色とテキストを用いている入力フォーム</strong>
+              </p><p>入力フォームに、必須項目と任意項目の両方がある。入力フォームの先頭にある説明文には、必須項目のラベルが赤字になっていて、「必須」という代替テキストのあるアイコンも付いている。赤字とアイコンの両方が、フォームのテキストフィールドとプログラムで関連付けられているので、支援技術の利用者はどれが必須項目なのかが判断できる。
+              </p></li><li><p>
+                <strong>各セルの見出しをプログラムが解釈可能なバスの時刻表テーブル</strong>
+              </p><p>バスの運行スケジュールが、1列目には縦にバス停の名前が並び、1行目には横に異なるバスが並んでいる表で示されている。各セルには、バスがそのバス停に到着する時刻が書かれている。支援技術が、各セルにある時刻がどのバスとどのバス停とに関連付けられているのかを解釈することができるように、各バス停と各バスのセルは、それぞれの対応する行又は列の見出しとして示されている。
+              </p></li><li><p>
+                <strong>チェックボックスのラベルをプログラムが解釈可能な入力フォーム</strong>
+              </p><p>あるフォームでは、各チェックボックスに対するラベルが、支援技術によってプログラムが解釈可能になっている。
+              </p></li><li><p>
+                <strong>テキスト文書</strong>
+              </p><p>構造をプログラムが解釈できるように、シンプルなテキスト文書は、タイトルの前に2行の空行があり、アスタリスクを使ってリスト項目を示し、その他の標準的な書式の決まりに従ってフォーマットされている。
+              </p></li></ul></div><div class="resources"><h2 id="content-structure-separation-programmatic-resources-head" class="section">
+				関連リソース
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p><a href="http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</a></p></li></ul></div><div class="div3"><h2 id="content-structure-separation-programmatic-techniques-head" class="section">達成基準 1.3.1 の達成方法及び不適合事例
+               - 情報及び関係性</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる達成方法により、この達成基準を満たすことができる。</p><div class="boxed"><h3 id="content-structure-separation-programmatic-54-head" class="div3head">
+				達成基準を満たすことのできる達成方法 
+			</h3><p class="instructions"><strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組合せ）がある。
+</p><div><h4><a name="content-structure-separation-programmatic-situation-20-head" id="content-structure-separation-programmatic-situation-20-head"> </a>状況 A： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供している場合：</h4>
+<ol class="enumar"><li><p>
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G115" class="tech-ref">G115: セマンティックな要素を用いて、構造をマークアップする</a>
+                    、<strong>かつ</strong>、
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H49" class="tech-ref">H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする</a>  (HTML)
+			  
+                  </p></li><li><p>
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G117" class="tech-ref">G117: テキストを用いて、テキストの表現のバリエーションによって伝えている情報を伝達する</a>
+                  </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G140" class="tech-ref">G140: 情報と構造を表現から分離して、異なる表現を可能にする</a> 
+                  </p></li><li><p>次の達成方法を用いて、表現によって伝えられている情報及び関係性をプログラムが解釈できるようにする</p><ul><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G138" class="tech-ref">G138: 色の手がかりを用いる際は、必ずセマンティックなマークアップを用いる</a>
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H51" class="tech-ref">H51: テーブルのマークアップを用いて、表の情報を提示する</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF6" class="tech-ref">PDF6: PDF 文書でテーブルのマークアップにテーブルエレメントを使用する</a> (PDF)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF20" class="tech-ref">PDF20: Adobe Acrobat Pro のテーブルエディタを使用して、間違ってタグ付けされているテーブルを修復する</a> (PDF)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H39" class="tech-ref">H39: caption要素を用いて、データテーブルの表題とデータテーブルを関連付ける</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH31" class="tech-ref">FLASH31: Specifying caption text for a DataGrid</a> (Flash)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H73" class="tech-ref">H73: table要素のsummary属性を用いて、データテーブルの概要を提供する</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH23" class="tech-ref">FLASH23: Adding summary information to a DataGrid</a> (Flash)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H63" class="tech-ref">H63: scope属性を用いて、データテーブルの見出しセルとデータセルを関連付ける</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H43" class="tech-ref">H43: id属性及びheaders属性を用いて、データテーブルのデータセルを見出しセルと関連付ける</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H44" class="tech-ref">H44: label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H65" class="tech-ref">H65: label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF10" class="tech-ref">PDF10: PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</a> (PDF)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF12" class="tech-ref">PDF12: PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</a> (PDF)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH32" class="tech-ref">FLASH32: Using auto labeling to associate text labels with form controls</a> (Flash)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH29" class="tech-ref">FLASH29: Setting the label property for form components</a> (Flash)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH25" class="tech-ref">FLASH25: Labeling a form control by setting its accessible name</a> (Flash)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H71" class="tech-ref">H71: fieldset要素及びlegend要素を用いて、フォーム・コントロールのグループに関する説明を提供する</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL20.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL20.html: </a> (Silverlight)
+    	  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL26.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL26.html: </a> (Silverlight)
+    	  
+                      </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H85" class="tech-ref">H85: optgroup要素を用いて、select要素内のoption要素をグループ化する</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H48" class="tech-ref">H48: リストに、ol要素、ul要素、dl要素を用いる</a>  (HTML)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H42" class="tech-ref">H42: h1要素～h6要素を用いて、見出しを特定する</a>  (HTML)
+			   
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF9" class="tech-ref">PDF9: PDF 文書内のコンテンツを見出しタグでマークアップすることによって見出しを作成する</a> (PDF)
+    	   
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR21" class="tech-ref">SCR21: DOM（ドキュメント・オブジェクト・モデル）を用いて、ページにコンテンツを追加する</a>  (Scripting)
+			
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF11" class="tech-ref">PDF11: PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</a> (PDF)
+    	   
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF17" class="tech-ref">PDF17: PDF 文書に一貫性のあるページ番号を指定する</a> (PDF)
+    	   
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF21" class="tech-ref">PDF21: PDF 文書のリストにリストタグを使用する</a> (PDF)
+    	   
+                      </p></li></ul></li></ol></div><div><h4><a name="content-structure-separation-programmatic-situation-21-head" id="content-structure-separation-programmatic-situation-21-head"> </a>状況 B： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供していない場合：</h4>
+<ol class="enumar"><li><p>
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G117" class="tech-ref">G117: テキストを用いて、テキストの表現のバリエーションによって伝えている情報を伝達する</a>
+                  </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH8" class="tech-ref">FLASH8: Adding a group name to the accessible name of a form control</a> (Flash)
+    	  
+                      </p></li><li><p>表現によって伝えられている情報及び関係性をプログラムが解釈可能にする、又は次の達成方法を用いてテキストで入手可能にする：</p><ul><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/T1" class="tech-ref">T1: 段落に、標準的なテキストの書式の表現法を用いる</a>  (Text)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/T2" class="tech-ref">T2: リストに、標準的なテキストの書式の表現法を用いる</a>  (Text)
+			  
+                      </p></li><li><p>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/T3" class="tech-ref">T3: 見出しに、標準的なテキストの書式の表現法を用いる</a>  (Text)
+			  
+                      </p></li></ul></li></ol></div></div><div class="boxed"><h3 id="content-structure-separation-programmatic-55-head" class="div3head">1.3.1 でさらに対応が望まれる達成方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/C22" class="tech-ref">C22: CSSを用いて、テキストの視覚的な表現を制御する</a>  (CSS)
+			  </p></li><li><p>ページレイアウトにはテーブルよりもCSSを用いる（リンク追加予定）</p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G162" class="tech-ref">G162: ラベルを配置して、関係性を最大限に予測できるようにする</a></p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA1" class="tech-ref">ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls</a>  (ARIA)
+			  
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA2" class="tech-ref">http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA2: </a>  (ARIA)
+			  
+                </p></li><li><p>
+絶対的なラベルを持たないすべてのフォームコントロールにラベルを提供する（リンク追加予定）
+                </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G141" class="tech-ref">G141: 見出しを用いてウェブページを構造化する</a></p></li></ul></div><div class="boxed"><h3 id="content-structure-separation-programmatic-56-head" class="div3head">
+				 達成基準 1.3.1 のよくある不適合事例
+			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準1.3.1に適合していないとみなした、よくある不適合事例である。</p><ul><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F2" class="tech-ref">F2: 達成基準 1.3.1  の不適合事例 － 適切なマークアップ又はテキストを用いずに、テキストの見た目の表現の変化を用いて情報を伝えている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F17" class="tech-ref">F17: </a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F33" class="tech-ref">F33: 達成基準 1.3.1 及び 達成基準 1.3.2 の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いて複数の段組みをしている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F34" class="tech-ref">F34: 達成基準 1.3.1 及び 達成基準 1.3.2  の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いてテーブルをフォーマットしている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F42" class="tech-ref">F42: 達成基準 1.3.1 及び 達成基準 2.1.1 の不適合事例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F43" class="tech-ref">F43: 達成基準 1.3.1 の不適合事例 － コンテンツにおける関係を表さない方法で、構造を示すマークアップを用いている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F46" class="tech-ref">F46: 達成基準 1.3.1 の不適合事例 － レイアウトテーブルで、th要素、caption要素、又は空ではないsummary属性を用いている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F48" class="tech-ref">F48: 達成基準 1.3.1 の不適合事例 － pre要素を用いて、表形式の情報をマークアップしている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F62" class="tech-ref">F62: </a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F2" class="tech-ref">F2: 達成基準 1.3.1  の不適合事例 － 適切なマークアップ又はテキストを用いずに、テキストの見た目の表現の変化を用いて情報を伝えている</a>
+                </p></li><li><p>
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F68" class="tech-ref">F68: 達成基準 1.3.1 及び 達成基準 4.1.2 の不適合事例 － ラベルと利用者ーインタフェース・コントロールとの関連付けがプログラムで解釈可能ではない
+   </a>
+                </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F87" class="tech-ref">F87: 達成基準 1.3.1 の不適合事例 － CSSの :before や :after 疑似要素及び 'content' プロパティを用いて、装飾目的ではないコンテンツを挿入している</a></p></li></ul></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="programmaticallydetermineddef" id="programmaticallydetermineddef"> </a>プログラムによる解釈 (プログラムによる解釈が可能) (programmatically determined (programmatically determinable))</dt><dd><p>              <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#atdef" class="termref">支援技術</a>
+を含む様々な<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#useragentdef" class="termref">ユーザエージェント</a>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
+            </p><div class="example"><p class="prefix"><em>事例 1:
+					</em>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。</p><p class="prefix"><em>事例 2:
+					</em>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ <acronym title="Application Programming Interface">API</acronym> を通じて支援技術に提供される。</p></div></dd><dt class="label"><a name="presentationdef" id="presentationdef"> </a>提示 (presentation)</dt><dd><p>
+利用者が知覚できる形式で<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contentdef" class="termref">コンテンツ</a>をレンダリングすること。
+            </p></dd><dt class="label"><a name="structuredef" id="structuredef"> </a>構造 (structure)</dt><dd><ol class="enumar"><li><p><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#webpagedef" class="termref">ウェブページ</a>
+の各部を相互の関係性によりまとめる方法論。及び、
+                </p></li><li><p>一連の<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#webpagedef" class="termref">ウェブページ</a>をまとめる方法論。</p></li></ol></dd><dt class="label"><a name="relationshipsdef" id="relationshipsdef"> </a>関係性 (relationships)</dt><dd><p>
+コンテンツの異なる部分間における意味のあるつながり。
+            </p></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding ガイドライン  1.3 [適応可能]" href="content-structure-separation.html"><strong>前へ: </strong>ガイドライン  1.3 [適応可能]</a></li><li><a title="Understanding 達成基準  1.3.2 [意味のある順序]" href="content-structure-separation-sequence.html"><strong>次へ: </strong>達成基準  1.3.2 [意味のある順序]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>（<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p></div></body></html>
