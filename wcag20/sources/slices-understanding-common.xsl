@@ -41,6 +41,7 @@
   				<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   			</xsl:if>
   			<head>
+  				<meta charset="UTF-8"/>
   				<title>
   					<xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0解説書
   				</title>
@@ -101,6 +102,7 @@
   				<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   			</xsl:if>
   			<head>
+  				<meta charset="UTF-8"/>
   				<title>
   					<xsl:if test="@id!='conformance'">ガイドライン<xsl:text> </xsl:text>
   					</xsl:if>
@@ -200,6 +202,7 @@
     	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
     	    	</xsl:if>
     	    	<head>
+  				<meta charset="UTF-8"/>
     				<title>
     					達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template> を理解する | WCAG 2.0解説書
     				</title>
@@ -267,6 +270,7 @@
   	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   	    	</xsl:if>
   	    	<head>
+  				<meta charset="UTF-8"/>
   				<title>
   					<xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0解説書
   				</title>
@@ -316,6 +320,7 @@
   	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   	    	</xsl:if>
   	    	<head>
+  				<meta charset="UTF-8"/>
   				<title>
   					<xsl:value-of select="header/title"/>
   					<xsl:if test="header/version">
