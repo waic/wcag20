@@ -42,77 +42,67 @@
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://joeclark.org/access/description/ad-principles.html">Standard Techniques in Audio Description</loc>
-              </p></item><item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
-              </p></item>
+	<item><p><loc href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc></p></item>
+	<item><p><loc href="http://joeclark.org/access/description/ad-principles.html">Standard Techniques in Audio Description</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.3 の達成方法及び不適合事例 － 収録済の映像コンテンツの音声ガイド又は代替</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-次の達成方法のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G69" linktype="general">時間の経過に伴って変化するメディアに代替を提供する</loc></p><ulist><item><p>
-                                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G58" linktype="general">非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</loc>
-                            </p></item>
-	<item><p>
-                                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL17.html" linktype="general">Providing Static Alternative Content for Silverlight Media Playing in a MediaElement</loc>
-                            </p></item>
-	<item><p>次の達成方法のどれか一つを用いて、時間の経過とともに変化するメディアの代替へのリンクを提供する
-                            </p><ulist><item><p>
-                                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
-                                    </p></item>
-</ulist></item></ulist></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G78" linktype="general">音声ガイドを含んだ、利用者が選択可能な副音声トラックを提供する</loc> </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G78" linktype="general">音声ガイドを含んだ、利用者が選択可能な副音声トラックを提供する</loc>かつ<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL1.html" linktype="general">Accessing Alternate Audio Tracks in Silverlight Media</loc></p></item>
-	<item role="smil"><p>
-次のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G173" linktype="general">ムービーの音声ガイド付バージョンを提供する</loc></p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM6" linktype="smil">SMIL 1.0 で音声ガイドを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM7" linktype="smil">SMIL 2.0 で音声ガイドを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH26" linktype="flash">Flash ビデオに音声ガイドを提供する</loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL1.html" linktype="general">Accessing Alternate Audio Tracks in Silverlight Media</loc></p></item><item><p>音声及び映像をサポートしているプレーヤーを用いる</p></item></ulist></item><item><p>
-次のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G8" linktype="general">拡張した音声ガイド付のムービーを提供する</loc></p><ulist><item><p>
-                                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM1" linktype="smil">SMIL 1.0 で拡張した音声ガイドを提供する</loc>
-                            </p></item><item><p>
-                                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM2" linktype="smil">SMIL 2.0 で拡張した音声ガイドを提供する</loc>
-                            </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH26" linktype="flash">Flash ビデオに音声ガイドを提供する</loc>
-                    </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL1.html" linktype="general">Accessing Alternate Audio Tracks in Silverlight Media</loc></p></item><item><p>音声及び映像をサポートしているプレーヤーを用いる</p></item></ulist></item>
+	<item><p>次の達成方法のどれか一つを用いて、<loc href="G69" linktype="general"/><!--時間の経過に伴って変化するメディアに代替を提供する--></p>
+		<ulist>
+			<item><p><loc href="G58" linktype="general"/></p></item>
+			<item><p><loc href="SL17" linktype="silverlight"/></p></item>
+		</ulist>
+	</item>
+	<item><p>次の達成方法のどれか一つを用いて、時間の経過とともに変化するメディアの代替へのリンクを提供する</p>
+		<ulist>
+			<item><p><loc href="H53" linktype="html"/></p></item>
+		</ulist>
+	</item>
+	<item><p><loc href="G78" linktype="general" /></p></item>
+	<item role="silverlight"><p><loc href="G78" linktype="general"/>、<emph role="bold">かつ</emph>、<loc href="SL1" linktype="silverlight"/></p></item>
+	<item><p>次のどれか一つを用いて、<loc href="G173" linktype="general"/><!--ムービーの音声ガイド付バージョンを提供する--></p>
+		<ulist>
+			<item><p><loc href="SM6" linktype="smil"/></p></item>
+			<item><p><loc href="SM7" linktype="smil"/></p></item>
+			<item><p><loc href="FLASH26" linktype="flash" /></p></item>
+			<item><p><loc href="SL1" linktype="silverlight"/></p></item>
+			<item><p>音声及び映像をサポートしているプレーヤーを用いる</p></item>
+		</ulist>
+	</item>
+	<item><p>次のどれか一つを用いて、<loc href="G8" linktype="general"/><!--拡張した音声ガイド付のムービーを提供する--></p>
+		<ulist>
+			<item><p><loc href="SM1" linktype="smil" /></p></item>
+			<item><p><loc href="SM2" linktype="smil" /></p></item>
+			<item><p><loc href="FLASH26" linktype="flash"/></p></item>
+			<item><p><loc href="SL1" linktype="silverlight"/></p></item>
+			<item><p>音声及び映像をサポートしているプレーヤーを用いる</p></item>
+		</ulist>
+	</item>
+	<item><p><loc href="G203" linktype="general"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.3 でさらに対応が望まれる達成方法（参考）</head>
-<ulist role="smil">
-	<item role="smil"><p>
-SMIL 1.0によって多様な言語の音声ガイドを提供する（リンク追加予定）
-                </p></item>
-	<item role="smil"><p>
-SMIL 2.0によって多様な言語の音声ガイドを提供する（リンク追加予定）
-                </p></item>
+<head/>
+<ulist>
+	<item><p><loc href="H96" linktype="html"/></p></item>
+	<item role="smil"><p>SMIL 1.0によって多様な言語の音声ガイドを提供する（リンク追加予定）</p></item>
+	<item role="smil"><p>SMIL 2.0によって多様な言語の音声ガイドを提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.2.3 のよくある不適合事例</head>
+<head />
 </div4>
 </div3>
 </div2>
