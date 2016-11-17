@@ -134,7 +134,7 @@
 		<xi:include href="techniques/text.xml" xpointer="text"/>
 		<xi:include href="techniques/aria.xml" xpointer="aria"/>
 		<xi:include href="techniques/flash.xml" xpointer="flash"/>
-<!--		<xi:include href="techniques/silverlight.xml" xpointer="silverlight"/> -->
+		<xi:include href="techniques/silverlight.xml" xpointer="silverlight"/>
 		<xi:include href="techniques/pdf.xml" xpointer="pdf"/>
 		<xi:include href="techniques/failures.xml" xpointer="failures"/>
 	</body>
