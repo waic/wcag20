@@ -48,6 +48,7 @@
   				<xsl:call-template name="canonical-link"/>
   				<xsl:call-template name="css"/>
   				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
+  				<xsl:call-template name="additional-head"/>
   				<xsl:if test="$show.diff.markup != 0">
   					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
   					<link rel="stylesheet" type="text/css" href="diffs.css" />
@@ -111,6 +112,7 @@
   				<xsl:call-template name="canonical-link"/>
   				<xsl:call-template name="css"/>
   				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
+  				<xsl:call-template name="additional-head"/>
   				<xsl:if test="@id='conformance'">
   					<style type="text/css">
   						blockquote.scquote {margin: 0 1em 1em 1em;}
@@ -122,7 +124,7 @@
   					<link rel="stylesheet" type="text/css" href="diffs.css" />
   				</xsl:if>
   			</head>
-  			<body class="slices">
+  			<body class="slices toc-inline">
   				<xsl:if test="$show.diff.markup != 0">
   					<xsl:attribute name="onload">jscheck()</xsl:attribute>
   				</xsl:if>
@@ -209,12 +211,13 @@
     	    		<xsl:call-template name="canonical-link"/>
     				<xsl:call-template name="css"/>
     				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
+    	    		<xsl:call-template name="additional-head"/>
     				<xsl:if test="$show.diff.markup != 0">
     					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
     					<link rel="stylesheet" type="text/css" href="diffs.css" />
     				</xsl:if>
     			</head>
-    			<body class="slices">
+    			<body class="slices toc-inline">
     				<xsl:if test="$show.diff.markup != 0">
     					<xsl:attribute name="onload">jscheck()</xsl:attribute>
     				</xsl:if>
@@ -277,12 +280,13 @@
   	    		<xsl:call-template name="canonical-link"/>
   				<xsl:call-template name="css"/>
   				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
+  	    		<xsl:call-template name="additional-head"/>
   				<xsl:if test="$show.diff.markup != 0">
   					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
   					<link rel="stylesheet" type="text/css" href="diffs.css" />
   				</xsl:if>
   			</head>
-  			<body class="slices">
+  			<body class="slices toc-inline">
   				<xsl:if test="$show.diff.markup != 0">
   					<xsl:attribute name="onload">jscheck()</xsl:attribute>
   				</xsl:if>
@@ -330,17 +334,17 @@
   				</title>
   	    		<xsl:call-template name="canonical-link"/>
   				<xsl:call-template name="css"/>
+  	    		<xsl:call-template name="additional-head"/>
   			</head>
   			<body class="slices">
   				<xsl:if test="$show.diff.markup != 0">
   					<xsl:attribute name="onload">jscheck()</xsl:attribute>
   				</xsl:if>
   				
-  				<a name="top"><xsl:text> </xsl:text> </a>
   				<xsl:apply-templates/>
   				<xsl:if test="//footnote">
-  					<hr/>
   					<div class="endnotes">
+	  					<hr/>
   						<h3>
   							<a name="endnotes">
   								<xsl:text>End Notes</xsl:text>
