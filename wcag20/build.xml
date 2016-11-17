@@ -271,7 +271,7 @@ Enter &quot;ant -projecthelp&quot; to get list of available build tasks</echo>
 		<delete file="temp.html"/>
 	</target>
 	<!--target name="understanding" depends="understanding.single, understanding.single.diff, understanding.slices" description="Generate Understanding"/-->
-	<target name="understanding" depends="understanding.single, understanding.single.diff, understanding.slices" description="Generate Understanding"/>
+	<target name="understanding" depends="understanding.single, understanding.slices" description="Generate Understanding"/>
 
 	<!-- Techniques -->
 	
