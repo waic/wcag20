@@ -70,7 +70,7 @@
   							<xsl:for-each select="descendant::div3">
   							  <xsl:variable name="prefix">
   							    <xsl:choose>
-  							      <xsl:when test="ancestor::div1/@id = 'intro'">イントロダクション</xsl:when>
+  							      <xsl:when test="ancestor::div1/@id = 'intro'">introduction</xsl:when>
   							      <xsl:when test="ancestor::div1/@id = 'understanding-techniques'">ut</xsl:when>
   							      <xsl:otherwise><xsl:message terminate="yes">Unhandled ID prefix in frontmatter TOC</xsl:message></xsl:otherwise>
   							    </xsl:choose>
