@@ -6,11 +6,13 @@
    <div3 role="intent">
       <head>この達成基準の意図</head>
 
-<p>この達成基準の意図は、支援技術を含む利用者ーエージェントが、コンテンツを正確に解釈して解析できるようにすることである。コンテンツをデータ構造として解析できない場合、利用者ーエージェントが異なればそのコンテンツの提示のされ方も異なったものになる、又は利用者ーエージェントがコンテンツを全く解析できない。利用者ーエージェントの中には、独自の「修復技術」を用いて品質の低いソースコードのコンテンツを描画するものもある。</p>
-<p>修復技術は利用者ーエージェントによって異なるため、もしコンテンツがそのウェブコンテンツ技術の正式な文法で定義されている規則に従って制作されていなければ、コンテンツ制作者は、コンテンツはデータ構造として正確に解析される、又は支援技術を含む特殊な利用者ーエージェントによって正しく描画されるものだと考えることはできない。マークアップ言語においては、要素及び属性における構文エラー、及び開始タグと終了タグを適切に入れ子にしていないことによって、利用者ーエージェントがコンテンツの確実な解析をできないというエラーにつながる。そのため、この達成基準では、コンテンツが正式な文法の規則のみを用いて解析できることを要件としている。</p>
+<p>この達成基準の意図は、支援技術を含むユーザエージェントが、コンテンツを正確に解釈して解析できることを確実にするものである。コンテンツをデータ構造に解析できない場合、別のユーザエージェントがそのコンテンツを異なって提示するかもしれない、又はコンテンツを全く解析できないかもしれない。ユーザーエージェントの中には、品質の低いソースコードを描画するために「修復技術」を用いるものもある。</p>
+<p>修復技術はユーザエージェントの間で異なるため、コンテンツがそのウェブコンテンツ技術の正式な文法で定義される規則に従って制作されない限り、コンテンツ制作者は、コンテンツがデータ構造へ正確に解析される、又はコンテンツが支援技術を含む特殊なユーザエージェントによって正しく描画されるものと仮定できない。マークアップ言語においては、要素及び属性における構文エラー、並びに適切な入れ子にした開始タグ及び終了タグを提供できないことは、ユーザエージェントがコンテンツを確実に解析することを妨げるエラーを導く。したがって、この達成基準は、コンテンツが正式な文法の規則のみを用いて解析できることを要件としている。</p>
 
 <note>
-<p>「整形式 (well formed)」という概念は、この達成基準で要件としていることに近い。しかし、正確な解析に求められる要件は、マークアップ言語によって異なる。そして、ほとんどの非 XML ベース言語は整形式であることの要件を明確には定義していない。そこで、マークアップ言語に一般的に適用可能にするために、この達成基準ではより細部まではっきりと述べる必要があった。「整形式 (well formed)」という用語は XML で定義されているだけで、有効 (valid) な HTML は整形式のソースコードを要求していない（終了タグは任意の場合もある）ため、この達成基準では「整形式 (well formed)」という用語を用いていない。</p>
+<p>「整形式 (well formed)」の概念は、この達成基準で要件としているものに近い。しかし、正確な解析に求められる要件は、マークアップ言語によって異なる。そして、ほとんどの非 XML ベース言語は、整形式であることの要件を明確には定義していない。したがって、マークアップ言語に一般的に適用可能にするために、この達成基準でより明確にする必要があった。用語「整形式 (well formed)」用語は XML でのみ定義され、かつ有効 (valid) な HTML は整形式のソースコードを要求しない（終了タグは任意の場合もある）ため、この達成基準では「整形式 (well formed)」という用語を用いていない。</p>
+<p>
+一つの達成基準（<specref ref="visual-audio-contrast-scale"/> テキストのサイズ変更、達成基準で指定された効果が支援技術に依存せずに達成されなければならないと具体的に述べている）を除き、存在しかつ利用者に役立つ場合に、利用者が支援技術（又はユーザエージェントにあるアクセス機能）を利用することを仮定することで、コンテンツ制作者はコンテンツを達成基準に適合できる。</p>
 </note>
 
 <div4 role="benefits">
@@ -34,13 +36,11 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G134" linktype="general">G134： ウェブページをバリデートする</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G192" linktype="general">G192： 仕様に完全に準拠する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H88" linktype="html">H88: 仕様に準拠して HTML を用いる</loc></p></item>
-	<item><p>以下のいずれかの方法で、ウェブページが正しく解析できることを確認する:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H74" linktype="html">H74: 開始タグ及び終了タグを仕様に準じて用いていることを確認する</loc>かつ<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H93" linktype="html">ウェブページのid属性値が一意的（ユニーク）であるようにする</loc>かつ<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H94" linktype="html">要素には重複した属性がないようにする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H75" linktype="html">H75: ウェブページがwell-formedであることを確認する</loc></p></item></ulist></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL33.html" linktype="silverlight">Using Well-Formed XAML to Define a Silverlight User Interface</loc>
-                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G134" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G192" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H88" linktype="html"/></p></item>
+	<item><p>以下のいずれかの方法で、ウェブページが正しく解析できることを確認する:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H74" linktype="html"/><emph role="bold">かつ</emph><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H93" linktype="html"/><emph role="bold">かつ</emph><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H94" linktype="html"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H75" linktype="html"/></p></item></ulist></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL33" linktype="silverlight"/></p></item>
 </olist>
 </div4>
 
@@ -51,10 +51,8 @@
 <div4 role="failures">
 <head/>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F70" linktype="failure">F70: 達成基準 4.1.1 の不適合事例  開始タグ及び終了タグ、又は属性のマークアップが正しくない</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F77" linktype="failure">F77: 達成基準 4.1.1 の不適合事例  ID型の属性の値が重複している</loc> </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F17" linktype="failure">F17: 達成基準 1.3.1 及び 達成基準 4.1.1 の不適合事例  HTMLで1対1の関係性を示すためのDOMにおける情報が不十分である（例：同じIDを持つラベル間の関係性）</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F62" linktype="failure">F62: 達成基準 1.3.1 及び 達成基準 4.1.1 の不適合事例 XMLで特定の関係性を示すためのDOMにおける情報が不十分である</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F70" linktype="failure"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F77" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
