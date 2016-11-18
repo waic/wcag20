@@ -6,13 +6,14 @@
    <div3 role="intent">
       <head/>
 
-<p>この達成基準の意図は、利用者が入力を求められた際にミスをしないようにすることである。ミスをしないようにするためには、情報を入力するためのシンプルな説明文と手がかりを提供することが、よい利用者ーインタフェースデザインである。ある種の障害のある利用者は、障害のない利用者よりもミスをしてしまうことが多かったり、エラーを修正するのがより困難であったりするため、ミスをしないようにすることは障害のある利用者に対しては重要なことである。障害のある利用者は、ページと情報のやりとりをする際に、十分に説明されたフォーム及び手順を頼りにしている。例えば、全盲の利用者は、どんな情報をテキストフィールドに入力すべきなのか、そしてどんな選択肢があるのかを正確に知る必要がある。フォームのコントロールに視覚的に関連付けられているシンプルな説明文は、 認知の障害のある利用者又は画面拡大ソフトを使用している利用者の役に立つ。</p>
+<p>この達成基準の意図は、どのような入力データが期待されているのかを利用者が理解するように、フォーム内のコントロールを識別するための説明文又はラベルをコンテンツ制作者が配置することである。特に一般的なフォーマットではない場合、又は正しい入力のための特定のルールがある場合、入力欄のデータフォーマットを説明文又はラベルで明示してもよい。特に説明が長く詳細である場合、個々のコントロールがフォーカスを受け取ったときだけそのような説明文をユーザーが利用できるように作ることをコンテンツ制作者は選択してもよい。</p>
 <p>この達成基準の意図は、ページを不要な情報だらけにしてしまうことではなく、障害のある利用者に役立つ重要な手がかり及び説明文を提供することである。情報又は説明文が多すぎると、それは単に邪魔なものでしかない。目標は、利用者の混乱を最小限に抑えて、必要以上のナビゲーションを提供することなく、利用者がタスクを完了するために十分な情報を提供することである。</p>
-
+<note><p>input オブジェクトにラベルが提供されている場合、その input オブジェクトとラベル（又はラベルとして提供されている冗長なテキスト）の関係性は<specref ref="content-structure-separation-programmatic"/>によりプログラムで決定できるか又はテキストで利用できなければならない。</p>
+</note>
 <div4 role="benefits">
 <head/>
 <ulist>
-	<item><p>label 要素を用いて input 要素とラベルを関連付けることによって、テキストフィールドがフォーカスを受け取ると、スクリーンリーダーがそのテキストフィールドのラベルを読み上げるようになる。</p></item>
+	<item><p>input 要素と label 要素が関連付けられている場合、入力欄にフォーカスがあたったときにスクリーンリーダーによってラベルが読み上げられ、かつ、ラベル又はコントロールのクリックでコントロールが選択されるために、より大ききなコントロールのクリック範囲によって運動に障害のある利用者は助けられるだろう。</p></item>
 	<item><p>関連付けられたテキストフィールドのすぐ近くにラベルを置くことによって、画面拡大ソフトの利用者にとっては、そのテキストフィールド及びラベルがページを拡大した画面内に収まりやすくなる。</p></item>
 	<item><p>所定のデータフォーマットの例を提供することは、認知の障害、言語の障害、及び学習障害のある利用者が情報を正確に入力するのに役立つ。</p></item>
 	<item><p>必須項目をはっきりと示すことによって、キーボードだけで操作している利用者が、不完全なままフォームを送信して、再度表示されたフォームをナビゲートし、未入力だったテキストフィールドを見つけ出してから情報を入力することを回避できるようになる。</p></item>
@@ -39,42 +40,31 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G131" linktype="general">目的や内容が分かるラベルを提供する</loc>
-                  、<emph role="bold">かつ</emph>、次のどれか一つを用いる</p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G89" linktype="general">求められるデータ形式及び入力例を提供する</loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G184" linktype="general">フォーム又はテキスト・フィールド一式の先頭に、必要とされる入力フォーマットを説明するテキストの説明文を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G162" linktype="general">ラベルを配置して、関係性を最大限に予測できるようにする</loc></p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G83" linktype="general">入力が完了していない必須項目を特定するために、テキストの説明文を提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H90" linktype="html">label要素またはlegend要素を用いて、必須項目のフォーム・コントロールを特定する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH10" linktype="flash">Flashでフォーム・コントロールが必須項目であることを示す</loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF5" linktype="pdf">PDF フォームで必須項目のフォーム・コントロールを特定する</loc></p></item></ulist></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html">label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</loc>
-                </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash">自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash">フォーム・コンポーネントに label プロパティを設定する</loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH25" linktype="flash">アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</loc>
-                    </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10" linktype="pdf">PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL26.html" linktype="silverlight">Using LabeledBy to Associate Labels and Targets in Silverlight</loc></p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H71" linktype="html">fieldset要素及びlegend要素を用いて、フォーム・コントロールのグループに関する説明を提供する</loc>
-                </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH8" linktype="flash">フォーム・コントロールのアクセシブルな名前にグループ名を追加する</loc>
-                    </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html">label要素を用いることができないとき、title属性を用いてフォーム・コントロールを特定する</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL8.html" linktype="silverlight">Displaying HelpText in Silverlight User Interfaces</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G167" linktype="general">G167: 隣接するボタンを用いて、テキスト・フィールドの目的をラベル付けする</loc></p></item>
+  <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G131" linktype="general"/>、<emph role="bold">かつ</emph>、次のどれか一つを用いる</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA1" linktype="aria"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9" linktype="aria"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA17" linktype="aria"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G89" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G184" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G162" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G83" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H90" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH10" linktype="flash"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF5" linktype="pdf"/></p></item>
+    </ulist>
+  </item>
+  <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH25" linktype="flash"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10" linktype="pdf"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL26" linktype="silverlight"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H71" linktype="html"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH8" linktype="flash"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL8" linktype="silverlight"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G167" linktype="general"/></p></item>
 </olist>
 
 <note>
@@ -85,16 +75,8 @@
 <div4 role="tech-optional">
 <head>達成基準 3.3.2 でさらに対応が望まれる達成方法（参考） </head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G13" linktype="general">状況の変化を引き起こすフォームのコントロールが変化する前に、何が起こるのかを説明する</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA1" linktype="aria">ARIA1: Using Accessible Rich Internet Application describedby property to provide a descriptive, programmatically determined label</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/ARIA2" linktype="aria">Identifying required fields with the aria-required property</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL19.html" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G13" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL19" linktype="silverlight"/></p></item>
 	<item><p>線形なフォームのデザインを提供し、同様の項目をグループ化する（リンク追加予定）</p></item>
 </ulist>
 </div4>
@@ -102,9 +84,7 @@
 <div4 role="failures">
 <head>達成基準 3.3.2 のよくある不適合事例 </head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F82" linktype="failure">達成基準 3.3.2 の不適合事例 － 電話番号を入力するテキスト・フィールド一式を視覚的にフォーマットしているが、テキストのラベルが提供されていない</loc>
-                </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F82" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
