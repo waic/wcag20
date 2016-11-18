@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH19">
-   <short-name>Providing a script that warns the user a time limit is about to expire and provides a way to extend it</short-name>
+   <short-name>スクリプトを用いて、ユーザーに制限時間が間もなく終了することを警告し、制限時間を延長する方法を提供する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

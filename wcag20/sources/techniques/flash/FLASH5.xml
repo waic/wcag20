@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH5">
-   <short-name>Combining adjacent image and text buttons for the same resource</short-name>
+   <short-name>リンク先が同じで隣接している画像とテキストのボタンを結合する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH12">
-   <short-name>Providing client-side validation and adding error text via the accessible description</short-name>
+   <short-name>クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

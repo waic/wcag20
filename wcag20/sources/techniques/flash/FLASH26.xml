@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH26">
-   <short-name>Applying audio descriptions to Flash video</short-name>
+   <short-name>Flash ビデオに音声ガイドを提供する</short-name>
    <applicability>
       <ulist>
          <item>

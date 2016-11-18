@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH33">
-   <short-name>Using relative values for Flash object dimensions</short-name>
+   <short-name>Flash オブジェクトのサイズに相対値を使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

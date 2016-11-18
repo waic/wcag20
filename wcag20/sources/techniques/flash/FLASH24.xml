@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH24">
-   <short-name>Allowing the user to extend the default time limit</short-name>
+   <short-name>利用者がデフォルトの制限時間を延長できるようにする</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

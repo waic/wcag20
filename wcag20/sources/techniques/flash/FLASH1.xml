@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH1">
-   <short-name>Setting the name property for a non-text object</short-name>
+   <short-name>非テキストオブジェクトに名前プロパティを設定する</short-name>
    <applicability>
       <ulist id="flash.applicability.general">
          <item>

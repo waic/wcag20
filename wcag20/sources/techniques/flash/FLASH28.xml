@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH28">
-   <short-name>Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash</short-name>
+   <short-name>Flash で ASCII アート、顔文字、リート語の代替テキストを提供する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

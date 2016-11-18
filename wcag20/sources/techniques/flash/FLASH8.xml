@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH8">
-   <short-name>Adding a group name to the accessible name of a form control</short-name>
+   <short-name>フォーム・コントロールのアクセシブルな名前にグループ名を追加する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

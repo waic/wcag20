@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH32">
-   <short-name>Using auto labeling to associate text labels with form controls</short-name>
+   <short-name>自動ラベル機能を使用してフォーム・コントロールにテキストラベルを関連付ける</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

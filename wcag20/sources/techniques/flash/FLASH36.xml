@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH36">
-   <short-name>Using scripts to control blinking and stop it in five seconds or less</short-name>
+   <short-name>スクリプトを使用して点滅を制御し、5秒以内に点滅を停止させる</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

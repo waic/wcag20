@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH18">
-   <short-name>Providing a control to turn off sounds that play automatically in Flash</short-name>
+   <short-name>Flash で自動的に再生される音声をオフにするコントロールを提供する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

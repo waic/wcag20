@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH20">
-   <short-name>Reskinning Flash components to provide highly visible focus indication</short-name>
+   <short-name>フォーカス表示を視覚的により認識しやすくするために Flash コンポーネントのスキンを切り替える</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH31">
-   <short-name>Specifying caption text for a DataGrid</short-name>
+   <short-name>データグリッドの表題を指定する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

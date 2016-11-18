@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH29">
-   <short-name>Setting the label property for form components</short-name>
+   <short-name>フォーム・コンポーネントに label プロパティを設定する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

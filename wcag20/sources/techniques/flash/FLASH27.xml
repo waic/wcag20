@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH27">
-   <short-name>Providing button labels that describe the purpose of a button</short-name>
+   <short-name>ボタンの目的を説明するラベルを提供する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

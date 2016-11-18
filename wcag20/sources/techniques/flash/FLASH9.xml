@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH9">
-   <short-name>Applying captions to prerecorded synchronized media</short-name>
+   <short-name>収録済みの同期したメディアにキャプションを提供する</short-name>
    <applicability>
       <p>Adobe Flash-based Content </p>
       <ulist>

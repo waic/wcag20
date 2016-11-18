@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH14">
-   <short-name>Using redundant keyboard and mouse event handlers in Flash</short-name>
+   <short-name>Flash でキーボード及びマウスのイベントハンドラを両方とも用いる</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

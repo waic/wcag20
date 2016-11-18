@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH11">
-   <short-name>Providing a longer text description of an object</short-name>
+   <short-name>オブジェクトについて長いテキストの説明を提供する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
