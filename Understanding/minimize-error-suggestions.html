@@ -9,7 +9,7 @@
 					(レベル AA)
 				</p></div></blockquote><div class="intent"><h2 id="minimize-error-suggestions-intent-head" class="section">
 				この達成基準の意図
-			</h2><p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。</p><p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。</p><p>コンテンツ制作者はエラーを説明することができる。又、利用者ーエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p><div class="benefits"><h3 id="minimize-error-suggestions-234-head" class="div3head">達成基準 3.3.3の具体的なメリット:
+			</h2><p>この達成基準の意図は、可能であれば、利用者が入力エラーを修正するのに適切な修正方法を入手できるようにすることである。「入力エラー」のWCAG 2.0での定義は、システムによって「利用者が提供した情報で、受け付けられないもの」であるとされている。受け付けられない情報の例には、必須だがユーザーによって省略された情報や、ユーザーによって提供されたが、必要なデータ形式や許容値の範囲外である情報が含まれる。</p><p>達成基準 3.3.1 は、入力エラー箇所を通知するためのものである。しかし、例えば、認知的な制約のある利用者は、入力エラーの修正方法を理解するのが困難なことがある。視覚障害のある利用者は、入力エラーの修正方法を正確に把握することができないことがある。フォーム送信がうまくいかなかった場合、利用者はエラーが発生したことには気づいていたとしても、そのエラーを修正する方法が分からないために、そのフォームを途中であきらめてしまうかもしれない。</p><p>コンテンツ制作者はエラーを説明することができる。又、ユーザエージェントはウェブコンテンツ技術で特定されたプログラムで判断できる情報に基づいてエラーを説明できる。</p><div class="benefits"><h3 id="minimize-error-suggestions-234-head" class="div3head">達成基準 3.3.3の具体的なメリット:
 			</h3><ul><li><p>入力エラーを修正する方法に関する情報を提供することによって、学習障害のある利用者がフォームに問題なく入力できるようになる。そして、全盲の利用者又は視覚に障害のある利用者が、入力エラーの内容及びその修正方法をもっと容易に理解できるようになる。また、運動障害のある利用者は、入力内容を変更せざるを得なくなる回数を減らすことができる。</p></li></ul></div></div><div class="div3"><h2 id="minimize-error-suggestions-examples-head" class="section">達成基準 3.3.3の事例
             </h2><ul><li><p>
                 <strong>入力エラーを修正するためのヘルプの追加</strong>
@@ -27,13 +27,20 @@
 <ol class="enumar"><li><p>
                     <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G83" class="tech-ref">G83: 入力が完了していない必須項目を特定するために、テキストの説明文を提供する</a>
                   </p></li><li><p>
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA2" class="tech-ref">ARIA2: Identifying a required field with the aria-required property</a>  (ARIA)
+			
+                  </p></li><li><p>
                     <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF5" class="tech-ref">PDF5: PDF フォームで必須項目のフォーム・コントロールを特定する</a> (PDF)
     	
                   </p></li><li><p>
-                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL35.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL35.html: </a> (Silverlight)
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SL35" class="tech-ref">SL35: Using the Validation and ValidationSummary APIs to Implement Client
+    			Side Forms Validation in Silverlight</a> (Silverlight)
     	
                   </p></li></ol></div><div><h4><a name="minimize-error-suggestions-situation-51-head" id="minimize-error-suggestions-situation-51-head"> </a>状況 B： フィールドの情報に、特別のデータフォーマットが要求される場合：</h4>
 <ol class="enumar"><li><p>
+                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA18" class="tech-ref">ARIA18: Using aria-alertdialog to Identify Errors</a>  (ARIA)
+			
+                  </p></li><li><p>
                     <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G85" class="tech-ref">G85: 利用者の入力が要求されたフォーマット又は値ではなかった際に、テキストの説明文を提供する</a>
                   </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G177" class="tech-ref">G177: テキストの修正候補を提示する</a>
                   </p></li><li><p>
@@ -80,7 +87,7 @@
     </p></li><li><p>
         エラーを表示し、元のフォームの文脈に沿った提案をする（例えば、フォームのどこに入力エラーがあるかを再表示し、訂正のための提案がハイライトされ、元のフォームとの関連を表示する）（リンク追加予定）
     </p></li></ul></div><div><h4><a name="minimize-error-suggestions-section-54-head" id="minimize-error-suggestions-section-54-head"> </a>HTMLの達成方法（参考）</h4>
-<ul><li><p>"	必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する（リンク追加予定）  </p></li><li><p>"	正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する（リンク追加予定） </p></li></ul></div><div><h4><a name="minimize-error-suggestions-section-55-head" id="minimize-error-suggestions-section-55-head"> </a>クライアントサイドのスクリプトの達成方法（参考）</h4>
+<ul><li><p>必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する（リンク追加予定）</p></li><li><p>正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する（リンク追加予定）</p></li></ul></div><div><h4><a name="minimize-error-suggestions-section-55-head" id="minimize-error-suggestions-section-55-head"> </a>クライアントサイドのスクリプトの達成方法（参考）</h4>
 <ul><li><p>
                     <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR18" class="tech-ref">SCR18: クライアントサイドのバリデーション及びアラートを提供する</a>  (Scripting)
 			
@@ -88,13 +95,6 @@
         クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する（リンク追加予定）
     </p></li><li><p>
         フォームの送信動作をきっかけにクライアントサイドのバリデーションの機能を呼び出す（リンク追加予定）
-    </p></li></ul></div><div><h4><a name="minimize-error-suggestions-section-56-head" id="minimize-error-suggestions-section-56-head"> </a>ARIAの達成方法（参考）</h4>
-<ul><li><p>
-                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/ARIA2.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/ARIA2.html: </a>  (ARIA)
-			
-                  </p></li><li><p>
-                    <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/ARIA3.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/ARIA3.html: </a>  (ARIA)
-			
-                  </p></li></ul></div></div><div class="boxed"><h3 id="minimize-error-suggestions-237-head" class="div3head">
+    </p></li></ul></div></div><div class="boxed"><h3 id="minimize-error-suggestions-237-head" class="div3head">
 				 達成基準 3.3.3 のよくある不適合事例
 			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準3.3.3に適合していないとみなした、よくある不適合事例である。</p><p>(今のところ、文書化された不適合事例はない)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="input-errordef" id="input-errordef"> </a>入力エラー (input error)</dt><dd><p>利用者が入力した情報で、受け付けられないもの。</p><div class="note"><p class="prefix"><em>注記: </em>以下のものが含まれる:</p><ol class="enumar"><li><p>その<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#webpagedef" class="termref">ウェブページ</a>では必須であるが、利用者が入力しなかった情報</p></li><li><p>利用者が入力したが、要求されたデータ形式あるいは値ではない情報</p></li></ol></div></dd></dl></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">ページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="Understanding 達成基準  3.3.2 [ラベル又は説明]" href="minimize-error-cues.html"><strong>前へ: </strong>達成基準  3.3.2 [ラベル又は説明]</a></li><li><a title="Understanding 達成基準  3.3.4 [エラー回避 (法的、金融、データ) ]" href="minimize-error-reversible.html"><strong>次へ: </strong>達成基準  3.3.4 [エラー回避 (法的、金融、データ) ]</a></li></ul></div><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>（<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p><p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p></div></body></html>
