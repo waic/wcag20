@@ -58,21 +58,17 @@
 	<item><p><emph role="bold">複雑な研究記事の読みやすい要約がある科学雑誌</emph></p><p>ある科学雑誌には、その分野の専門家を対象とした、とても専門的な言葉遣いで書かれた記事がある。その雑誌の目次ページには、各記事の要約が平易な言葉で書かれている。その要約は、8年間の学校教育を受けた一般読者を想定している。また、雑誌のメタデータには、Dublin Core（ダブリン・コア）の仕様を用いて、記事の想定している読者の教育レベルを「高等教育」、要約の想定している読者の教育レベルを「前期中等教育」と示してある。</p></item>
 	<item><p><emph role="bold">一般会員向けの医療情報</emph></p><p>ある医科大学が、最近の医学的及び科学的発見を説明するウェブサイトを運営している。そのサイトの記事は、医療の知識のない人向けに書かれている。各記事では、Dublin Core（ダブリン・コア）のメタデータの仕様を用いて、想定している読者の教育レベルを「前期中等教育」と示し、その記事の Flesch Reading Ease のスコアも提供している。各ページにあるリンクをたどることで、教育レベル及びその他のメタデータを表示することができる。前期中等教育レベルの読者がその記事を読むことができるので、補足的コンテンツは必要ない。</p></item>
 	<item><p><emph role="bold">E-ラーニング・アプリケーション</emph></p><p>スペインの文化史に関するオンラインコースに、ムーア建築に関する単元がある。その単元のテキストは、様々な読解レベルを持った学生向けに書かれている。建築物の写真や画で、建築のコンセプト及び様式を図示している。グラフィック・オーガナイザーを用いて文章の複雑な関係性を図式化し、合成音声を用いた音声バージョンも提供している。各バージョンのメタデータでコンテンツの教育レベルを示し、スペイン語のテキスト向けに開発された計算式に基づくリーダビリティのスコアもある。この E-ラーニング・アプリケーションは、このメタデータ及び学生に関するメタデータを用いて、個々の学生のニーズに合ったバージョンの教材を提供している。</p></item>
-	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト（合計116ワード）は、Flesch-Kincaid式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>
-                  （出典: Howard Hughes Medical Institute <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.hhmi.org/coolscience/forkids/inchsquare/">http://www.hhmi.org/coolscience/forkids/inchsquare/</loc>）
-              </p></item>
+	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト（合計116ワード）は、Flesch-Kincaid式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>（出典：Howard Hughes Medical Institute"CoolScience for Kids" Project)</p></item>
 </olist>
 </div3>
 
 <div3 role="resources">
 <head>関連リソース</head>
 <ulist>
-	<item><p>Plain Language Audit Toolは、文書を編集してより明解かつ「簡単な表現」にすることができるかどうかを判定するためのチェックリストを提供している。このチェックリストには、リーダビリティの評価のための項目も含まれている。Plain Language Audit Toolは、カナダの Northwest Territories Literacy Council <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.nwt.literacy.ca/resources/plainlang/auditool/cover.htm">http://www.nwt.literacy.ca/resources/plainlang/auditool/cover.htm</loc>から入手できる。</p></item>
 	<item><p>Plain Language Association INternational (PLAIN)のウェブサイトでは、様々な文化的、修辞的な文脈において、文書制作者がより明解な表現をするための多くのリソースが提供されている。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguagenetwork.org/">http://www.plainlanguagenetwork.org/</loc>参照。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguage.gov/">米国政府の plain languageウェブサイト</loc>では、簡単な表現 (plain language)に関する一般的情報に加えて、法的な要件を含む米国政府関連文書におけるplain languageの使用に関する情報が提供されている。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainenglish.co.uk/">The Plain English Campaignのウェブサイト</loc>では、英語で文書作成を行う場合に有用な情報や指針が提供されている。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</loc>は、表示されたすべてのコンテンツのリーダビリティの解析を行う。</p></item>
-	<item><p>Hall, T., and Strangman, N. CAST: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers">Graphic organizers</loc>. 2005年4月5日現在。この記事では、数種類の異なるグラフィック・オーガナイザについて概観し、それぞれの種類のグラフィック・オーガナイザがどのような場合に有用であるかを説明している。その上で、グラフィック・オーガナイザが学習において、特に学習障害がある学生にとって有用であるという研究結果の概要を示している。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Entry for Audience Education Level. Using Dublin Core ? Dublin Core Qualifiers</loc></p></item>
 	<item><p>
                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.imsglobal.org/profiles/lipinfo01.html#tab6.3">IMS Learner Information Packaging Model Information Specification, Table 6.3  "accessibility" learner information data structure detailed description</loc>
@@ -80,7 +76,6 @@
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.textquest.de/lesbar.htm">TextQuest.de</loc>には、英語、ドイツ語、スペイン語、オランダ語フランス語及びスウェーデン語を含む多くの原語におけるリーダビリティの計算式のリストが提供されている。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://taalunieversum.org/onderwijs/publicaties/geletterd_in_de_lage_landen/richtlijnen.php">Richtlijnen Keurmerk Makkelijk Lezen</loc>は、Stichting Makkelijk Lezen (Easy Reading Foundation)が用いているガイドラインである。</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.leesbaarnederlands.nl/">Leesbaar Nederlands</loc>（"Readable Dutch"「読みやすいオランダ語」）では、読字障害のある人にとってアクセシブルな文書の書き方に関するガイドラインが提供されている。このガイドラインでは、言葉遣い、内容及びデザインについて示されている。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://toetswijzer.kennisnet.nl/html/tg/4.pdf">Wetenschappelijke verantwoording van de toetsserie Leestechniek &amp; Leestempo</loc>は、オランダの組織<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.cito.nl/">CITO</loc>が開発した、リーダビリティと教育レベルを関連づける計算式、CILT (CITO index voor leestechniek - CITO読解力インデックス)について解説している。</p></item>
 	<item><p>
                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.inclusion-europe.org/etr/">European Easy-to-Read Guidelines</loc>
               </p></item>
@@ -95,15 +90,14 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G86" linktype="general">G86： 中学校教育レベルを超えた読解力を必要としないテキストで要約を提供する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G103" linktype="general">G103： 視覚的な図画、写真及びシンボルを提供して、アイデア、イベント及びプロセスを説明する手助けをする</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G79" linktype="general">G79： テキストの音声バージョンを提供する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G153" linktype="general">G153： テキストを読みやすくする</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G160" linktype="general">G160： コンテンツを利用するために理解しなければならない情報、アイデア及びプロセスの手話バージョンを提供する</loc> </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G103" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G79" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G153" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G160" linktype="general"/></p></item>
 </olist>
 
 <note>
-<p>この達成基準には、サイトによって異なる方法で対処することができる。コンテンツの音声バージョンは、ある利用者に対しては有用であるし、また聴覚障害のある利用者にとっては、手話が彼らにとっての第一言語であることもあるので、ページの手話バージョンのほうが書き言葉のバージョンよりも理解しやすいかもしれない。中には、音声と手話の両方のバージョン又はその他の組合せを提供するサイトがあってもよい。どの達成方法も、問題を抱える利用者すべてに役立つわけではない。そのため、サイトをよりアクセシブルにしようとしているコンテンツ制作者のために、ここでは様々な達成方法が十分な達成方法として挙げられている。上記の番号の付いた達成方法又はその組合せを用いることが可能で、WCAG ワーキンググループではこれで達成基準に適合するには十分であると考えている。</p>
+<p>この達成基準には、サイトによって異なる方法で対処することができる。コンテンツの音声バージョンは、ある利用者に対しては有用であるし、また聴覚障害のある利用者にとっては、手話が彼らにとっての第一言語であることもあるので、ページの手話バージョンのほうが書き言葉のバージョンよりも理解しやすいかもしれない。中には、音声と手話の両方のバージョン又はその他の組合せを提供するサイトがあってもよい。どの達成方法も、問題を抱える利用者すべてに役立つわけではない。そのため、サイトをよりアクセシブルにしようとしているコンテンツ制作者のために、ここでは様々な達成方法が達成基準を満たすことのできる達成方法として挙げられている。上記の番号の付いた達成方法又はその組合せを用いることが可能で、WCAG ワーキンググループではこれで達成基準に適合するには十分であると考えている。</p>
 </note>
 </div4>
 

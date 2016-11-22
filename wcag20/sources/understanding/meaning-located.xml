@@ -53,22 +53,43 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.1.4 の達成方法及び不適合事例 个ｱ 略語</head>
+<head>達成基準 3.1.4 の達成方法及び不適合事例 - 略語</head>
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
 <head>状況 A： 略語がそのウェブページ内で一つの意味しか持たない場合：</head>
 <olist>
-	<item><p>ウェブページ上で略語の初出時に、以下のいずれかの方法で<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general">G102： 略語の元の語又は説明を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G97" linktype="general">G97： 元の語のすぐ後に略語を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html">H28: abbr要素及びacronym要素を用いて、 略語の定義を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf">構造エレメントの E エントリによって略語の定義を提供する</loc></p></item></ulist></item>
-	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general">G102： 略語の元の語又は説明を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general">G62： 用語集を用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general">G70： オンライン辞書を検索する機能を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html">H28: abbr要素及びacronym要素を用いて、 略語の定義を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf">構造エレメントの E エントリによって略語の定義を提供する</loc></p></item></ulist></item>
-</olist>
+	<item><p>ウェブページ上で略語の初出時に、以下のいずれかの方法で<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G97" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+  </item>
+	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+    </item>
+  </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 B： 略語が同じウェブページで異なるものを意味している場合：</head>
 <olist>
-	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general">G102： 略語の元の語又は説明を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html">H28: abbr要素及びacronym要素を用いて、 略語の定義を提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf">構造エレメントの E エントリによって略語の定義を提供する</loc></p></item></ulist></item>
-</olist>
+	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+    </item>
+  </olist>
 </div5>
 </div4>
 

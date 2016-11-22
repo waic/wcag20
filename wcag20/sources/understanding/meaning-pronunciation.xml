@@ -44,11 +44,11 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G120" linktype="general">G120： 単語のすぐ後に発音（読み）を提供する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G121" linktype="general">G121： 発音（読み）にリンクする</loc></p></item>
-	<item>そのコンテンツ特有の発音があったり、発音で意味が変わるような単語の発音に関する情報を含む<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general">G62： 用語集を用いる</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G163" linktype="general">G163： オフにすることが可能な標準的な発音区別符号を用いる</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H62" linktype="html">H62: ruby要素を用いる</loc>(XHTML 1.1)</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G120" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G121" linktype="general"/></p></item>
+	<item><p>そのコンテンツ特有の発音があったり、発音で意味が変わるような単語の発音に関する情報を含む<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G163" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H62" linktype="html"/>(XHTML 1.1)</p></item>
 </olist>
 </div4>
 
