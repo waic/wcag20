@@ -18,43 +18,35 @@
 </div3>
 
 <div3 role="examples">
-<head>達成基準 1.4.7 の事例</head>
+<head/>
 </div3>
 
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels</loc>
-              </p></item>
+	<item><p><loc href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.4.7 の達成方法及び不適合事例 － 小さい背景音又は背景音なし</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G56" linktype="general">発話ではない音声が発話の音声コンテンツよりも少なくとも20デシベル低くなるように、音声ファイルを作成する</loc>
-                </p></item>
+	<item><p><loc href="G56" linktype="general"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.4.7 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>
-前景音と背景音のレベルを独立して調節できる方法を提供する（リンク追加予定）
-    </p></item>
-	<item><p>
-発話より少なくとも20デシベル低い背景音を含む同期したメディアに対して、音声トラックを提供する（リンク追加予定）
-    </p></item>
+	<item><p>前景音と背景音のレベルを独立して調節できる方法を提供する（リンク追加予定）</p></item>
+	<item><p>発話より少なくとも20デシベル低い背景音を含む同期したメディアに対して、音声トラックを提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.4.7 のよくある不適合事例</head>
+<head/>
 </div4>
 </div3>
 </div2>
