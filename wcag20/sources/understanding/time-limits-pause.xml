@@ -21,9 +21,9 @@
 	<item><p>一時停止した後、（一時停止を解除した時に）最新の表示へ移ることが、リアルタイム又は本来の「状態」にある情報にとってよりよいことである。例えば、気象レーダー、株価表示、交通情報カメラ、又はオークションのタイマーなどは、コンテンツ再開時に一時停止したことで古い情報が表示されると、誤った情報を提供してしまうことになる。</p><note><p>コンテンツを非表示にすることは、一時停止した後、（一時停止を解除した時に）最新の表示へ移るのと同じ効果が得られる。</p></note></item>
 </olist>
 
-<p>「利用者が一時停止することのできるメカニズム」であると考えられるメカニズムは、利用者またはフォーカスを身動きがとれなくしてウェブページを使うことができないようにすることなく、利用者が一時停止することのできる手段を提供するものでなければならない。ここでいう「一時停止」という言葉は、ボタン以外のメカニズムを用いることも可能だが、「一時停止ボタン」という意味である。利用者がそこにフォーカスを置いているときだけアニメーションを停止させること（利用者がフォーカスをそこから移動させるとすぐに再開するような場合）は、「利用者が一時停止することのできるメカニズム」とはみなされない。なぜなら、そのように再開されてしまえば、利用者はウェブページの他の部分を使用することができなくなってしまい、この達成基準を満たしたことにはならないからである。</p>
+<p>メカニズムが「利用者が一時停止するためのメカニズム」と判断されるためには、それが利用者に一時停止の手段として提供されつつも、利用者やフォーカスをそこに縛り付けてページが使用できなくなるようなものではない必要がある。ここでの「一時停止」という単語は「一時停止ボタン」という意味で使われているが、ボタンではないほかのメカニズムを使用することもできる。利用者がフォーカスしている時だけアニメーションが停止する(そしてフォーカスを解除し次第再開する)ようなものは、その過程でページが使い物にならなくするため「利用者が一時停止するためのメカニズム」とは判断されず、この達成基準も満たさないだろう。</p>
 <note>
-<p>重要なのは、「点滅」と「閃光」という用語は同じコンテンツを指すこともありうるということである。</p>
+<p>「点滅」と「閃光」は、同じコンテンツを指すこともあることに注意することが重要である。</p>
 <ulist>
 	<item><p>「点滅」は、利用者の注意を散漫にさせる問題を引き起こすコンテンツを指している。点滅は、それを停止する（又は停止させることができる）限り、短時間であれば許容することができる。</p></item>
 	<item><p>「閃光」は、（1秒間に3回よりも多く、大きさと明るさが十分な場合には）光過敏性発作を引き起こす恐れのあるコンテンツを指している。これは、光過敏性発作を引き起こす恐れがあるため、たとえ1秒間だけであったとしても許容されない。光過敏性発作は利用者が止める前に引き起こす恐れがあるため、閃光を止めることも選択肢にはならない。</p></item>
@@ -79,34 +79,34 @@
 <head/>
 <olist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G4" linktype="general">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</loc>
+                  <loc href="G4" linktype="general"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL11.html" linktype="silverlight">Pausing or Stopping A Decorative Silverlight Animation</loc>
+                  <loc href="SL11" linktype="silverlight"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL12.html" linktype="silverlight">Pausing, Stopping, or Playing Media in Silverlight MediaElements</loc>
+                  <loc href="SL12" linktype="silverlight"/>
                 </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR33" linktype="script">SCR33: スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</loc></p></item>
+	<item><p><loc href="SCR33" linktype="script"/></p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH35" linktype="flash">スクリプトを使用して、 Flash コンテンツをスクロールする、およびそれを停止するメカニズムを提供する</loc>
+                  <loc href="FLASH35" linktype="flash"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G11" linktype="general">G11: 5秒未満で点滅が終わるようにコンテンツを制作する</loc>
+                  <loc href="G11" linktype="general"/>
                 </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G187" linktype="general">G187: 利用者ーエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を用いる</loc>
+	<item><p><loc href="G187" linktype="general"/>
     </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G152" linktype="general">G152: 数回のループ後（5秒以内）に停止するように、アニメーションGIFを設定する</loc></p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR22" linktype="script">SCR22: スクリプトを用いて、点滅を制御し、5秒以内に停止させる</loc>
+	<item><p><loc href="G152" linktype="general"/></p></item><item><p>
+                      <loc href="SCR22" linktype="script"/>
                     </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH36" linktype="flash">スクリプトを使用して点滅を制御し、5秒以内に点滅を停止させる</loc>
+                  <loc href="FLASH36" linktype="flash"/>
                 </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G186" linktype="general">G186: 動きのあるコンテンツ、点滅するコンテンツ、又は自動更新されるコンテンツを停止させるコントロールを用いる</loc> </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G191" linktype="general">G191: 点滅するコンテンツのないページを読み込むリンク、ボタン、又はその他のメカニズムを提供する</loc>
+	<item><p><loc href="G186" linktype="general"/></p></item>
+	<item><p><loc href="G191" linktype="general"/>
                     </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL24.html" linktype="silverlight">Using AutoPlay to Keep Silverlight Media from Playing Automatically</loc>
+                  <loc href="SL24" linktype="silverlight"/>
                 </p></item>
 </olist>
 </div4>
@@ -123,19 +123,19 @@
 <head>Common Failures Identified by the Working Group</head>
 <ulist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F16" linktype="failure">F16: 達成基準 2.2.2 の不適合事例 － 動きが不可欠ではないところにスクロールするコンテンツがあり、そのコンテンツを一時停止及び再開するメカニズムがない</loc>
+                  <loc href="F16" linktype="failure"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F47" linktype="failure">F47: 達成基準 2.2.2 の不適合事例 － blink要素を用いている</loc>
+                  <loc href="F47" linktype="failure"/>
                 </p></item>
 	<item role="css"><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F4" linktype="failure">F4: 達成基準 2.2.2 の不適合事例 － text-decoration:blinkを用いていて、5秒未満でそれを停止させるメカニズムがない</loc>
+                  <loc href="F4" linktype="failure"/>
                 </p></item>
 	<item role="script"><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F50" linktype="failure">F50: 達成基準 2.2.2 の不適合事例 － 点滅させるスクリプトを用いていて、その点滅を5秒以内に停止させるメカニズムがない</loc>
+                  <loc href="F50" linktype="failure"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F7" linktype="failure">F7: 達成基準 2.2.2 の不適合事例 － 例えばJava又はFlashのようなオブジェクト又はアプレットに点滅するコンテンツがあり、5秒よりも長く点滅するコンテンツを一時停止させるメカニズムがない</loc>
+                  <loc href="F7" linktype="failure"/>
                 </p></item>
 </ulist>
 </div4>
