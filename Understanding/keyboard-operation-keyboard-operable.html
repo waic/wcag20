@@ -11,7 +11,7 @@
 					</em>上記の例外は、根本的な機能に関するものであり、入力手法に関するものではない。例えば、テキスト入力に手書き入力を用いるのであれば、その入力手法 (手書き) は利用者の動作による軌跡に依存した入力を必要とするが、その根本的な機能 (テキスト入力) は利用者の動作による軌跡に依存した入力を必要とするものではない。</p><p class="prefix"><em>注記 2:
 					</em>これは、キーボード操作に加えて、マウス入力、又はその他の入力手段を提供することを禁ずるものでも妨げるものでもない。</p></div></div></blockquote><div class="intent"><h2 id="keyboard-operation-keyboard-operable-intent-head" class="section">
 				この達成基準の意図
-			</h2><p>この達成基準の意図は、可能な限り、コンテンツをキーボード又は（代替キーボードが利用できるような）キーボード・インタフェースで操作できるようにすることである。コンテンツがキーボード又は代替キーボードで操作可能であれば、（目と手を一緒に使うマウスのようなデバイスを使用できない）全盲の利用者にも、代替キーボード又はキーボード・エミュレータのような入力デバイスを使用しなければならない利用者にも操作できることになる。キーボード・エミュレータには、音声認識入力ソフトウェア、呼気/吸気操作ソフトウェア、オンスクリーン・キーボード、スキャニングソフトウェア、そして様々な支援技術及び代替キーボードがある。ロービジョンの利用者は、ポインタを目で追うのが困難なことがあり、キーボードでソフトウェアを操作できれば、ソフトウェアがとても使いやすくなる（又は、単に使えるようになる）。</p><p>「個々のキーストロークに特定のタイミング」の事例としては、利用者が短時間のうちに複数の打けんを繰り返す又は実行する必要がある状況、又は打けんが受け付けられるまでは長い間キーを押下していなければならないような状況がある。</p><p>「ただし、その根本的な機能が単に利用者の動作の終点に依存しておらず、利用者の動作による軌跡に依存して実現されている場合は除く。」というフレーズがあるのは、キーボードから無理なく操作することができないものとを区別するためである。</p><p>ポインティング・デバイスにより実行される操作のほとんどは、キーボードでも実行可能である（例えば、クリックする、選択する、動かす、拡大・縮小する）。しかし、ポインティング・デバイスでは可能だが、ものすごく多くの打けんでないと、あらゆる知られた方法でキーボードでは不可能な入力がある。手書き描画、水彩画、及び障害物訓練コースでのヘリコプター操縦は、どれも軌跡に依存した入力を要する機能の事例である。直線や規則的な幾何学的図形を描くこと、ウィンドウのサイズを変更すること、及びある位置へオブジェクトをドラッグして移動させること（その位置への軌跡に意味がない場合）は、軌跡に依存した入力を必要としない。</p><p>（テンキーでマウスポインタを操作する）マウスキーを使用することでは、この達成基準を満たしたことにはならないだろう。なぜなら、アプリケーションに対して、キーボードと同等ではなく、マウスと同等だからである（つまり、アプリケーションからはマウスのように見えるためである）。</p><p>利用者の入力機能を設計する際に、利用者がそのオペレーティング・システムのキーボード・アクセシビリティ機能を使用する可能性があることを考慮するのは当然のことである。例えば、修飾キーがロックされているかもしれない。しかし、修飾キーのロックとぶつかるイベントを送って予期しない結果が生じることのないように、コンテンツはそのような環境においても機能し続ける必要がある。</p><div class="benefits"><h3 id="keyboard-operation-keyboard-operable-105-head" class="div3head">達成基準 2.1.1の具体的なメリット:
+			</h2><p>ここの達成基準の意図は、可能な限り、コンテンツをキーボード又は（代替キーボードが利用できるような）キーボードインタフェースで操作できるようにすることである。コンテンツがキーボード又は代替キーボードで操作可能であれば、（目と手を一緒に使うマウスのようなデバイスを使用できない）全盲の利用者にも、代替キーボード又はキーボードエミュレータのような入力デバイスを使用しなければならない利用者にも操作できることになる。キーボードエミュレータには、音声認識入力ソフトウェア、呼気/吸気操作ソフトウェア、オンスクリーンキーボード、スキャニングソフトウェア、そして様々な支援技術及び代替キーボードがある。ロービジョンの利用者は、ポインタを目で追うのが困難なことがあり、キーボードでソフトウェアを操作できれば、ソフトウェアがとても使いやすくなる（又は、単に使えるようになる）。</p><p>「個々のキーストロークに特定のタイミング」の事例としては、利用者が短時間のうちに複数の打けんを繰り返す又は実行する必要がある状況、又は打けんが受け付けられるまでは長い間キーを押下していなければならないような状況がある。</p><p>「ただし、その根本的な機能が単に利用者の動作の終点に依存しておらず、利用者の動作による軌跡に依存して実現されている場合は除く。」というフレーズがあるのは、キーボードから無理なく操作することができないものとを区別するためである。</p><p>ポインティング・デバイスにより実行される操作のほとんどは、キーボードでも実行可能である（例えば、クリックする、選択する、動かす、拡大・縮小する）。しかし、ポインティング・デバイスでは可能だが、ものすごく多くの打けんでないと、あらゆる知られた方法でキーボードでは不可能な入力がある。手書き描画、水彩画、及び障害物訓練コースでのヘリコプター操縦は、どれも軌跡に依存した入力を要する機能の事例である。直線や規則的な幾何学的図形を描くこと、ウィンドウのサイズを変更すること、及びある位置へオブジェクトをドラッグして移動させること（その位置への軌跡に意味がない場合）は、軌跡に依存した入力を必要としない。</p><p>（テンキーでマウスポインタを操作する）マウスキーを使用することでは、この達成基準を満たしたことにはならないだろう。なぜなら、アプリケーションに対して、キーボードと同等ではなく、マウスと同等だからである（つまり、アプリケーションからはマウスのように見えるためである）。</p><p>利用者の入力機能を設計する際に、利用者がそのオペレーティング・システムのキーボード・アクセシビリティ機能を使用する可能性があることを考慮するのは当然のことである。例えば、修飾キーがロックされているかもしれない。しかし、修飾キーのロックとぶつかるイベントを送って予期しない結果が生じることのないように、コンテンツはそのような環境においても機能し続ける必要がある。</p><div class="benefits"><h3 id="keyboard-operation-keyboard-operable-105-head" class="div3head">達成基準 2.1.1の具体的なメリット:
 			</h3><ul><li><p>（目と手を一緒に使うマウスのようなデバイスを使用できない）全盲の利用者</p></li><li><p>（画面上のポインタを見つけたり、目で追ったりするのが困難である）ロービジョンの利用者</p></li><li><p>マウスを使うのがとても困難なため、通常はキーボードを使用している手に震えのある利用者。</p></li></ul></div></div><div class="div3"><h2 id="keyboard-operation-keyboard-operable-examples-head" class="section">達成基準 2.1.1の事例
             </h2><ul><li><p>
                 <strong>事例 1： 描画プログラム</strong>
@@ -25,11 +25,11 @@
                 <strong>事例 5： 例外 － 模型ヘリコプター操縦訓練シミュレータ</strong>
               </p><p>ヘリコプター操縦訓練シミュレータは、シミュレータの性質上、模型ヘリコプターの動作をリアルタイムで教えるものであるため、例外の一つとして認められる。</p></li><li><p>
                 <strong>事例 6： オプションのキーボード付き PDA</strong>
-              </p><p>通常スタイラスペンで操作する PDA は、オプションで接続可能なキーボードがある。そのキーボードは、標準的な方法ですべてのウェブ閲覧を行うことが可能である。ウェブコンテンツはキーボードのみでも利用できるように設計されているので、そのキーボードでも操作可能である。</p></li></ul></div><div class="resources"><h2 id="keyboard-operation-keyboard-operable-resources-head" class="section">
+              </p><p>通常スタイラスペンで操作する PDA は、オプションで接続可能なキーボードがある。そのキーボードは、標準的な方法で全てのウェブ閲覧を行うことが可能である。ウェブコンテンツはキーボードのみでも利用できるように設計されているので、そのキーボードでも操作可能である。</p></li></ul></div><div class="resources"><h2 id="keyboard-operation-keyboard-operable-resources-head" class="section">
 				関連リソース
 			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><p>(今のところ、文書化されていない)</p></div><div class="div3"><h2 id="keyboard-operation-keyboard-operable-techniques-head" class="section">達成基準 2.1.1 の達成方法及び不適合事例
                - キーボード</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。他の達成方法についての情報は、<a href="understanding-techniques.html">達成基準を満たすための達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-106-head" class="div3head">
-				達成基準を満たすことのできる達成方法 
+				十分な達成方法 
 			</h3><ol class="enumar"><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G202" class="tech-ref">G202: すべての機能をキーボードだけでも操作可能にする</a></p></li><li><p>次の達成方法の一つを用いて、キーボードで操作できることを保証する。</p><ul><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H91" class="tech-ref">H91: HTMLのフォーム・コントロール及びリンクを用いる</a>  (HTML)
 			</p></li><li><p>
                   <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF3" class="tech-ref">PDF3: PDF 文書で正しいタブ順序と読み上げ順序を確保する</a> (PDF)
@@ -41,7 +41,8 @@
                   <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/PDF23" class="tech-ref">PDF23: PDF 文書内でインタラクティブなフォーム・コントロールを提供する</a> (PDF)
     	 
                 </p></li><li><p>
-                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL15.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL15.html: </a> (Silverlight)
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SL15" class="tech-ref">SL15: Providing Keyboard Shortcuts that Work Across the Entire Silverlight
+    			Application</a> (Silverlight)
     	 
                 </p></li></ul></li><li><p>次の達成方法の一つを用いて、
                   <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G90" class="tech-ref">G90: キーボードがトリガーとなるイベント・ハンドラを提供する</a> :     </p><ul><li><p>
@@ -50,10 +51,11 @@
                     </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR35" class="tech-ref">SCR35: アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</a>  (Scripting)
 			</p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR2" class="tech-ref">SCR2: キーボード及びマウスのイベント・ハンドラを両方とも用いる</a>  (Scripting)
 			</p></li><li><p>
-                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL9.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL9.html: </a> (Silverlight)
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SL9" class="tech-ref">SL9: Handling Key Events to Enable Keyboard Functionality in Silverlight</a> (Silverlight)
     	 
                 </p></li><li><p>
-                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/http://www.w3.org/TR/WCAG-TECHS/SL14.html" class="tech-ref">http://www.w3.org/TR/WCAG-TECHS/SL14.html: </a> (Silverlight)
+                  <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SL14" class="tech-ref">SL14: Providing Custom Control Key Handling for Keyboard Functionality
+    			in Silverlight</a> (Silverlight)
     	 
                 </p></li></ul></li><li><p>
                   <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH17" class="tech-ref">FLASH17: Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する</a> (Flash)
@@ -63,7 +65,7 @@
                     </p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH16" class="tech-ref">FLASH16: 標準コンポーネントに対するクリックイベントを使用して、アクションをキーボードによって操作可能にする</a> (Flash)
     	</p></li><li><p><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/FLASH14" class="tech-ref">FLASH14: Flash でキーボード及びマウスのイベントハンドラを両方とも用いる</a> (Flash)
     	</p></li></ul></li></ol></div><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-107-head" class="div3head">2.1.1 でさらに対応が望まれる達成方法（参考）
-        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>インタラクティブな利用者ーインタフェース・コンポーネントとして静的な要素に再度目的を持たせる場合、XHTMLの役割、状態、及び値の属性を使用する（リンク追加予定） 及び <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR29" class="tech-ref">SCR29: Adding keyboard-accessible actions to static HTML elements</a>  (Scripting)
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p>インタラクティブなユーザインタフェース・コンポーネントとして静的な要素に再度目的を持たせる場合、XHTMLの役割、状態、及び値の属性を使用する（リンク追加予定） 及び <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/SCR29" class="tech-ref">SCR29: Adding keyboard-accessible actions to static HTML elements</a>  (Scripting)
 			</p></li><li><p>重要なリンク及びフォームのコントロールへのキーボード・ショートカットを提供する（リンク追加予定）</p></li><li><p>一覧表の各項目を始めるために固有の文字の組合せを使用する（リンク追加予定）</p></li><li><p>	もっとも抽象的なイベント・ハンドラを選択する（リンク追加予定）(Scripting)</p></li><li><p>OnActivateイベントを使用する（リンク追加予定）(Scripting)</p></li><li><p>他の目的で、一般的な利用者ーエージェントのキーボード・コマンドの使用を避ける（リンク追加予定）</p></li></ul></div><div class="boxed"><h3 id="keyboard-operation-keyboard-operable-108-head" class="div3head">
 				 達成基準 2.1.1 のよくある不適合事例
 			</h3><p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準2.1.1に適合していないとみなした、よくある不適合事例である。</p><ul><li><p>
