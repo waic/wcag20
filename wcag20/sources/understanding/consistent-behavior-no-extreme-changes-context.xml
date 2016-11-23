@@ -6,18 +6,20 @@
    <div3 role="intent">
       <head>この達成基準の意図</head>
 
-<p>この達成基準の意図は、状況の変化を利用者が完全に制御できるようなウェブコンテンツの設計を推奨することである。この達成基準は、自動的に開く新しいウィンドウ、リストから項目を選択すると自動的に送信されるフォームなどのように、予期しない状況の変化によって混乱が引き起こされる可能性を取り除くことを狙いとしている。そのような予期しない状況の変化により、運動障害のある利用者、ロービジョンの利用者、全盲の利用者、及び特定の認知能力の低下している利用者には困難が生じてしまう恐れがあるからである。</p>
-<p>状況の変化の中には、利用者を混乱させず、さらに利用者にとって有用な種類のものもある。例えば、単一のスイッチを使用している利用者は、システムによる状況の変化に依存しているし、ロービジョンの利用者の好みも一度にどれくらいのコンテンツを見ることができるか、どれくらいのセッション構造が作業記憶に残るかに依存している。中にはスライドショーのように、意図した利用者ーエクスペリエンスを提供するために、状況の変化を必要とするコンテンツもある。利用者の設定が許容する際だけ自動的に状況を変化させるコンテンツは、この達成基準に適合することができる。</p>
+<p>この達成基準の意図は、コンテキストの変化を利用者が完全に制御できるようなウェブコンテンツの設計を推奨することである。この達成基準は、自動的に開く新しいウィンドウ、リストから項目を選択すると自動的に送信されるフォームなどのように、予期しないコンテキストの変化によって混乱が引き起こされる可能性を取り除くことを狙いとしている。そのような予期しないコンテキストの変化により、運動障害のある利用者、ロービジョンの利用者、全盲の利用者、及び特定の認知能力の低下している利用者には困難が生じてしまう恐れがあるからである。</p>
+<p>状コンテキストの変化の中には、利用者を混乱させず、さらに利用者にとって有用な種類のものもある。例えば、単一のスイッチを使用している利用者は、システムによるコンテキストの変化に依存しているし、ロービジョンの利用者の好みも一度にどれくらいのコンテンツを見ることができるか、どれくらいのセッション構造が作業記憶に残るかに依存している。中にはスライドショーのように、意図したユーザーエクスペリエンスを提供するために、コンテキストの変化を必要とするコンテンツもある。利用者の設定が許容する際だけ自動的に状況を変化させるコンテンツは、この達成基準に適合することができる。</p>
 
 <note>
-<p>リンクをクリックするのは、「利用者の要求によってだけ生じる」動作の一例である。</p>
+<p>複数のコンテキストの変化を同時に引き起こすことが可能である。例えば、自動的に新規ウィンドウが開くリンクをクリックするのは、コンテンツの変化に関連するコンテキストの変化であり、表示域（ウィンドウ）の変化に関連するコンテキストの変化でもある、２つに分かれた変化の一例である。この場合のコンテンツの変化は、利用者がリンクをクリックした時、彼らの要求によって開始されるが、新規ウィンドウが開くことに利用者が気づかない限り、コンテキストの変化は利用者が開始したとはみなせない。</p>
 </note>
 
 <div4 role="benefits">
 <head>達成基準 3.2.5 の具体的なメリット</head>
 <ulist>
-	<item><p>状況の変化を見つけることができない、又は状況が変化したことに気づかない利用者が、サイトをナビゲートしている間に混乱した状態になりにくい。例えば、次のような利用者が当てはまる：</p><ulist><item><p>全盲の利用者、又はロービジョンの利用者は、新しいウィンドウがポップアップで開くなどのように、視覚的な状況の変化がいつ起こるのかを把握するのが困難なことがある。この場合、前もって利用者に状況の変化が起こることを知らせておくと、利用者が「戻る」ボタンがいつものように動作しないことに気づいたときの混乱を最小限に抑えることができる。</p></item></ulist></item>
-	<item><p>ロービジョンの利用者、読字及び知的障害のある利用者、そして視覚的な手がかりを解釈しづらい利用者は、コンテンツ制作者が手がかりを追加することによって、状況の変化に気づくようになる。</p></item>
+	<item><p>コンテキストの変化を見つけることができない、又は状況が変化したことに気づかない利用者が、サイトをナビゲートしている間に混乱した状態になりにくい。例えば、次のような利用者が当てはまる：</p>
+   <ulist><item><p>全盲の利用者、又はロービジョンの利用者は、新しいウィンドウがポップアップで開くなどのように、視覚的なコンテキストの変化がいつ起こるのかを把握するのが困難なことがある。この場合、前もって利用者にコンテキストの変化が起こることを知らせておくと、利用者が「戻る」ボタンがいつものように動作しないことに気づいたときの混乱を最小限に抑えることができる。</p></item></ulist>
+    </item>
+	<item><p>ロービジョンの利用者、読字及び知的障害のある利用者、そして視覚的な手がかりを解釈しづらい利用者は、コンテンツ制作者が手がかりを追加することによって、コンテキストの変化に気づくようになる。</p></item>
 	<item><p>自動的なリダイレクトを、ブラウザではなくウェブサーバーによって行えば、<emph role="bold">認知能力の低下</emph>している利用者は混乱しないですむ。</p></item>
 </ulist>
 </div4>
@@ -35,44 +37,54 @@
 <head>関連リソース</head>
 <ulist>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/QA/Tips/reback">Use standard redirects: don't break the back button!</loc> (<abbr expansion="World Wide Web Consortium">W3C</abbr>
+                <loc href="http://www.w3.org/QA/Tips/reback">Use standard redirects: don't break the back button!</loc> (<abbr expansion="World Wide Web Consortium">W3C</abbr>
                 <abbr expansion="Quality Assurance">QA</abbr> Tip).
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3">HTTP/1.1 Status Code Definitions: Redirection 3xx</loc>.
+                <loc href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3">HTTP/1.1 Status Code Definitions: Redirection 3xx</loc>.
               </p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.2.5 の達成方法及び不適合事例 个ｱ 利用者の要求による状況の変化</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
 <head>状況 A： ウェブページが自動更新を行う場合：</head>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G76" linktype="general">G76： 自動的に更新するのではなく、利用者がコンテンツの更新を要求するメカニズムを提供する</loc></p></item>
+	<item><p><loc href="G76" linktype="general"/></p></item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 B： 自動リダイレクトが可能な場合：</head>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1" linktype="server">SVR1: クライアントサイドではなく、サーバーサイドで自動リダイレクトを実装する</loc></p></item><item><p>以下のいずれかの方法を用いて<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G110" linktype="general">G110： クライアントサイドの瞬間的なリダイレクトを用いる</loc>:    </p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H76" linktype="html">H76: meta要素のrefreshを用いて、クライアントサイドで瞬間的にリダイレクトする</loc></p></item></ulist></item>
+  <item><p><loc href="SVR1" linktype="server"/></p></item>
+  <item><p>以下のいずれかの方法を用いて<loc href="G110" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc href="H76" linktype="html"/></p></item>
+    </ulist>
+  </item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 C： ウェブページがポップアップウィンドウを用いる場合：</head>
 <olist>
-	<item><p>次の達成方法の一つを用いてポップアップウィンドウを表示する：</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H83" linktype="html">H83: target属性を用いて、利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示する </loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR24" linktype="script">SCR24: progressive enhancementを用いて、利用者の要求に応じて新しいウィンドウを開く</loc></p></item></ulist></item>
+  <item><p>次の達成方法の一つを用いてポップアップウィンドウを表示する：</p>
+    <ulist>
+      <item><p><loc href="H83" linktype="html"/></p></item>
+      <item><p><loc href="SCR24" linktype="script"/></p></item>
+    </ulist>
+  </item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head role="script">状況 D： select要素上でonchangeイベントを用いる場合：</head>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR19" linktype="script">SCR19: 状況の変化を引き起こすことなく、select要素のonchangeイベントを用いる</loc></p></item>
+	<item><p><loc href="SCR19" linktype="script">SCR19: 状況の変化を引き起こすことなく、select要素のonchangeイベントを用いる</loc></p></item>
 </olist>
 </div5>
 </div4>
@@ -81,19 +93,19 @@
 <head>達成基準 3.2.5 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>新しいウィンドウを開く際、target属性を用いず一般的なハイパーリンクを提供する。（リンク追加予定） これは、多くの利用者ーエージェントではリンクを別のウィンドウ又は別のタブで開く機能を提供しているためである。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G200" linktype="general">必要なときにだけリンク先を新しいウィンドウおよびタブで開く</loc></p></item>
+	<item><p><loc href="G200" linktype="general"/></p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
 <head/>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F60" linktype="failure">F60: 利用者が入力フィールドにテキストを入力すると新しいウィンドウを開く</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F61" linktype="failure">F61: 利用者がコンテンツ内で停止させることのできない自動的な更新によってメインコンテンツを変更する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F9" linktype="failure">F9: 利用者がフォーカスをフォーム要素から他の要素へ移動させた際に状況を変化させる</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F22" linktype="failure">F22: 利用者が要求していないウィンドウを開く</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F52" linktype="failure">新しいページを読み込むのと同時に、新しいウィンドウを開いている</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F41" linktype="failure">F41: タイムアウトを指定せずにmeta要素のrefreshを用ている</loc> </p></item>
+	<item><p><loc href="F60" linktype="failure"/></p></item>
+	<item><p><loc href="F61" linktype="failure"/></p></item>
+	<item><p><loc href="F9" linktype="failure"/></p></item>
+	<item><p><loc href="F22" linktype="failure"/></p></item>
+	<item><p><loc href="F52" linktype="failure"/></p></item>
+	<item><p><loc href="F41" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
