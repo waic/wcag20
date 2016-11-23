@@ -30,66 +30,63 @@
 <div3 role="examples">
 <head>達成基準 1.2.8 の事例</head>
 <ulist>
-	<item><p>
-                <emph role="bold">事例 1. ある研修ビデオでの、時間の経過に伴って変化するメディアの代替</emph>
-              </p><p>あるコミュニティ・センターは、その会員向けに研修ビデオを購入し、それをセンターのイントラネットに置いている。そのビデオでは、新しい技術の使い方を説明していて、同時にそれを説明しながら実演する人物が登場している。そのコミュニティ・センターでは、同期したメディアにあるプレゼンテーションを見ることも、説明を聞くこともできない利用者を含めて、すべての会員が提供されている内容をよりよく理解できるように、時間の経過に伴って変化するメディアに代替を提供している。</p></item>
+	<item>
+	<p><emph role="bold">事例 1. ある研修ビデオでの、時間の経過に伴って変化するメディアの代替</emph></p>
+	<p>あるコミュニティ・センターは、その会員向けに研修ビデオを購入し、それをセンターのイントラネットに置いている。そのビデオでは、新しい技術の使い方を説明していて、同時にそれを説明しながら実演する人物が登場している。そのコミュニティ・センターでは、同期したメディアにあるプレゼンテーションを見ることも、説明を聞くこともできない利用者を含めて、すべての会員が提供されている内容をよりよく理解できるように、時間の経過に伴って変化するメディアに代替を提供している。</p>
+	</item>
 </ulist>
 </div3>
 
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
-              </p></item>
+	<item><p><loc href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc></p></item>
+<item><p><loc href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.8 の達成方法及び不適合事例 － 収録済のメディアの代替</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
 <head>状況 A： 収録済の同期したメディアの場合：</head>
 <olist>
-	<item><p>次の達成方法のどれか一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G69" linktype="general">時間の経過に伴って変化するメディアに代替を提供する</loc></p><ulist><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G58" linktype="general">非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</loc>
-                      </p></item><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL17.html" linktype="silverlight">Providing Static Alternative Content for Silverlight Media Playing in a MediaElement</loc>
-                      </p></item></ulist></item><item><p>次の達成方法のどれか一つを用いて、時間の経過に伴って変化するメディアの代替へリンクする
-                      </p><ulist><item><p>
-                            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H53" linktype="html">object 要素のボディに代替テキストを記述する</loc>  
-                          </p></item></ulist></item>
+	<item><p>次の達成方法のどれか一つを用いて、<loc href="G69" linktype="general"/><!--時間の経過に伴って変化するメディアに代替を提供する--></p>
+	<ulist>
+		<item><p><loc href="G58" linktype="general"/></p></item>
+		<item><p><loc href="SL17" linktype="silverlight"/></p></item>
+	</ulist>
+	</item>
+	<item><p>次の達成方法のどれか一つを用いて、時間の経過に伴って変化するメディアの代替へリンクする</p>
+	<ulist>
+		<item><p><loc href="H53" linktype="html"/></p></item>
+	</ulist>
+	</item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 B： 収録済の映像しか含まないコンテンツの場合：</head>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G159" linktype="general">映像しか含まないコンテンツの時間の経過に伴って変化するメディアの代替を提供する</loc> </p></item>
+	<item><p><loc href="G159" linktype="general"/></p></item>
 </olist>
 </div5>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.8 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う</loc>  
-                </p></item>
-	<item><p>訂正済みのスクリプトを使う（リンク追加予定）</p></item><item><p>音声ガイドの詳細を追加する（リンク追加予定）</p></item>
+	<item><p><loc href="H46" linktype="html"/></p></item>
+	<item><p>訂正済みのスクリプトを使う（リンク追加予定）</p></item>
+	<item><p>音声ガイドの詳細を追加する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.2.8 のよくある不適合事例</head>
+<head/>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F74" linktype="failure">Failure of 1.2.1 due to not labeling a synchronized media alternative to text as an alternative</loc>
-                </p></item>
+	<item><p><loc href="F74" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>

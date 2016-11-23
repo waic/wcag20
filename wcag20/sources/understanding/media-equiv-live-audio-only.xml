@@ -6,7 +6,11 @@
    <div3 role="intent">
       <head>この達成基準の意図</head>
 
-<p>この達成基準の意図は、例えばテレビ会議のような、ライブの音声、ライブの発話、及びラジオのウェブキャストが伝えている情報を、代替テキストを用いることによってアクセシブルにすることである。ライブのキャプション付加サービスは、デフ又は音声の聞こえづらい利用者、あるいは他のやり方で音声を聞くことのできない利用者に対してライブの音声をアクセシブルにすることが可能であろう。そういったサービスでは、訓練された人間のオペレーターが、話の内容を聞きながら、特殊なキーボードを用いてほんの少しの遅延だけでテキストを入力している。オペレーターは、かなり忠実にライブの出来事をテキストで記録することができる。また、内容を理解する上で不可欠な発話以外の音声に関する注記も挿入することができる。ライブの音声が予め用意された現行通りのものであれば、書き起こしテキストを事前に準備しておけることもある。しかし、ライブのキャプション付加サービスのほうが好まれる。なぜなら、キャプションが音声自体と同じペースで表示され、台本にはないことが起こったとしてもそれに対処できるからである。</p><p>訓練されていないオペレーターを使用したり、実際に起こっていることとは明らかに違う書き起こしテキストを提供したりしている場合は、この達成基準を満たしているとはいえない。</p>
+<p>この達成基準の意図は、例えばテレビ会議のような、ライブの音声、ライブの発話、及びラジオのウェブキャストが伝えている情報を、代替テキストを用いることによってアクセシブルにすることである。ライブのキャプション付加サービスは、デフ又は音声の聞こえづらい利用者、あるいは他のやり方で音声を聞くことのできない利用者に対してライブの音声をアクセシブルにすることが可能であろう。そういったサービスでは、訓練された人間のオペレーターが、話の内容を聞きながら、特殊なキーボードを用いてほんの少しの遅延だけでテキストを入力している。オペレーターは、かなり忠実にライブの出来事をテキストで記録することができる。また、内容を理解する上で不可欠な発話以外の音声に関する注記も挿入することができる。ライブの音声が予め用意された現行通りのものであれば、書き起こしテキストを事前に準備しておけることもある。しかし、ライブのキャプション付加サービスのほうが好まれる。なぜなら、キャプションが音声自体と同じペースで表示され、台本にはないことが起こったとしてもそれに対処できるからである。</p>
+
+<p>訓練されていないオペレーターを使用したり、実際に起こっていることとは明らかに違う書き起こしテキストを提供したりしている場合は、この達成基準を満たしているとはいえない。</p>
+
+<p>この達成基準は、音声の放送に適用することを意図しており、Webアプリケーションを介し2人ないしそれ以上の個人同士で行う双方向のマルチメディア電話に対し、利用者の要求の有無にかかわらずキャプションの提供を求めることは意図していない。キャプションを提供する責任は、コンテンツの提供者（電話をかけた人）または「ホスト」として電話をかけた人に課せられるもので、アプリケーションには課せられない。</p>
 </div3>
 
 <div3 role="examples">
@@ -20,41 +24,33 @@
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.captioningandsubtitling.com/webcapt.htm">Captioning and Subtitling International</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/captions/realtime.php">WebAIM Real time captioning resource</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc>
-              </p></item>
+	<item><p><loc href="http://www.captioningandsubtitling.com/webcapt.htm">Captioning and Subtitling International</loc></p></item>
+	<item><p><loc href="http://www.webaim.org/techniques/captions/realtime.php">WebAIM Real time captioning resource</loc></p></item>
+	<item><p><loc href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc></p></item>
+	<item><p><loc href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.9 の達成方法及び不適合事例 － ライブの音声しか含まないコンテンツの代替</head>
+<head/>
 <div4 role="sufficient">
-<head>十分な</head>
+<head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G151" linktype="general">台本通りに進行する場合、予め準備された原稿、又は台本を書き起こした、テキストのトランスクリプトへのリンクを提供する</loc></p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G150" linktype="general">ライブの音声しか含まないコンテンツに、テキストベースの代替を提供する</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G157" linktype="general">ライブ音声のキャプション提供サービスをウェブページに組み込む</loc></p></item>
+	<item><p><loc href="G151" linktype="general"/></p></item>
+	<item><p>	<loc href="G150" linktype="general"/></p></item>
+	<item><p><loc href="G157" linktype="general"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.9 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p>
-<example><p>音声ファイルの様々な書き起こしテキスト（英語、フランス語、ドイツ語）を指し示すURIを、メタデータの中で、提供する。</p></example></item>
+	<item>
+	<p>テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う（リンク追加予定）</p>
+	<example><p>音声ファイルの様々な書き起こしテキスト（英語、フランス語、ドイツ語）を指し示すURIを、メタデータの中で、提供する。</p></example>
+	</item>
 </ulist>
 </div4>
 
