@@ -730,7 +730,7 @@
       <!--BBC Added a test to replace guideline headings with value from current source-->
       <xsl:choose>
         <xsl:when test="../@role='sufficient'">
-				達成基準を満たすことのできる達成方法 
+				十分な達成方法 
 			</xsl:when>
         <xsl:when test="../@role='tech-specific'">
 				Technology-Specific Techniques  
