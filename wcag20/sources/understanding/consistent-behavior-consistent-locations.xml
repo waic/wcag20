@@ -22,8 +22,8 @@
 <ulist>
 	<item><p><emph role="bold">一貫して配置されているコントロール</emph></p><p>検索のテキストフィールドが、そのサイト上のすべてのページ上で最後に配置されていて、利用者はすぐに検索機能を見つけることができる。</p></item>
 	<item><p><emph role="bold">展開するナビゲーションメニュー</emph></p><p>ナビゲーションメニューに、サイトの主要コーナーへの7つのリンクがある。利用者がその項目の一つを選択すると、サブナビゲーション項目のリストが、ナビゲーションメニューに挿入される。</p></item>
-	<item><p><emph role="bold">一貫して配置されているスキップ・ナビゲーションのコントロール</emph></p><p>ウェブサイトにあるすべてのページ上に、「本文へジャンプする」というリンクが一番最初のリンクとして配置されている。そのリンクによって、利用者はヘッダーの情報及びナビゲーション部分をスキップして、ページのメインコンテンツ部分の開始位置へ移動することができる。 </p></item>
-	<item><p><emph role="bold">ナビゲーションへのスキップリンク</emph></p><p>ウェブサイト内の書くウェブページの最後にナビゲーションがある。キーボード利用者が、必要なときに容易に見つけられるように、「ナビゲーションへジャンプする」リンクは一貫して各ページの先頭にある。</p></item>
+	<item><p><emph role="bold">一貫して配置されているスキップ・ナビゲーションのコントロール</emph></p><p>ウェブサイトにあるすべてのページ上に、「本文へジャンプする」というリンクが一番最初のリンクとして配置されている。そのリンクによって、利用者はヘッダーの情報及びナビゲーション部分をスキップして、ページのメインコンテンツ部分の開始位置へ移動することができる。</p></item>
+	<item><p><emph role="bold">ナビゲーションへのスキップリンク</emph></p><p>ナビゲーション部分は一貫して各ページの最後にある。キーボード利用者が、必要なときに容易に見つけられるように、「本文へジャンプする」というリンクは一貫して各ページの先頭にある。</p></item>
 </ulist>
 </div3>
 
@@ -41,9 +41,9 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G61" linktype="general">G61： 繰り返されるコンポーネントが表示されるたびに、それを相対的に同じ順序で提示する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF14" linktype="pdf">PDF 文書内に連続するヘッダとフッタを提供する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF17" linktype="pdf">PDF 文書に一貫性のあるページ番号を指定する</loc></p></item>
+	<item><p><loc href="G61" linktype="general"/></p></item>
+	<item><p><loc href="PDF14" linktype="pdf"/></p></item>
+	<item><p><loc href="PDF17" linktype="pdf"/></p></item>
 </olist>
 </div4>
 
@@ -58,7 +58,7 @@
 <div4 role="failures">
 <head/>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F66" linktype="failure">F66: 達成基準 3.2.3 の不適合事例：　ナビゲーションリンクを様々なページで相対的に異なる順序で提示する</loc></p></item>
+	<item><p><loc href="F66" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
