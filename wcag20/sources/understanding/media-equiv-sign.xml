@@ -6,12 +6,12 @@
    <div3 role="intent">
       <head>この達成基準の意図</head>
 
-<p>この達成基準の意図は、デフ又は音声が聞こえにくい利用者で手話の分かる利用者が、同期したメディアのプレゼンテーションにおける音声トラックのコンテンツを理解できるようにすることである。例えば、キャプションに書かれているテキストというのは、第二言語であることがよくある。手話は、イントネーション、感情、及び、キャプションには反映されないが手話通訳には反映されるその他の音声情報を提供するので、手話通訳は同期したメディアの内容に対してキャプションよりも豊富でより等価な情報を提供することができる。また、手話で頻繁にコミュニケーションを図っている利用者にとっては、手話で提供された情報のほうがより早く理解できるので、同期したメディアが時間の経過に伴って変化するプレゼンテーションとなる。</p>
+<p>この達成基準の意図は、ろう者又は難聴の利用者で手話に堪能な利用者が、同期したメディアのプレゼンテーションの音声トラックコンテンツを理解できるようにすることである。例えば、字幕に書かれているようなテキストは、第二言語であることがよくある。手話は、イントネーション、感情、及び、字幕には反映されないが手話通訳には反映されるその他の音声情報を提供するので、手話通訳は同期したメディアの内容に対して字幕よりも豊富でより等価な情報を提供する。手話で頻繁にやりとりする利用者はまた、手話でより早口になり、同期したメディアは、時間依存のプレゼンテーションとなる。</p>
 
 <div4 role="benefits">
 <head/>
 <ulist>
-	<item><p>普段使う言語が手話である利用者は、読解力に限界があることがある。そういった利用者は、キャプションを読んで理解することができない恐れがあり、同期したメディアのコンテンツを利用するには手話を必要とする。</p></item>
+	<item><p>普段使う言語が手話である利用者は、読解力に限界があることがある。そういった利用者は、字幕を読んで理解できない恐れがあり、同期したメディアのコンテンツを利用する機会を得るために手話を必要とする。</p></item>
 </ulist>
 </div4>
 </div3>
@@ -31,65 +31,48 @@
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.nidcd.nih.gov/health/hearing/asl.asp">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc>
-              </p></item>
-	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sys-consulting.co.uk/downloads/esign/">eSign Avatar Signing Plugin for Internet Explorer</loc>.
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc>
-              </p></item>
+	<item><p><loc href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc></p></item>
+	<item><p><loc href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc></p></item>
+	<item><p><loc href="https://www.nidcd.nih.gov/health/american-sign-language">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p></item>
+	<item><p><loc href="http://www.sign-lang.uni-hamburg.de/SigningBooks/SBRC/Grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc></p></item>
+	<item><p><loc href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.2.6 の達成方法及び不適合事例  － 収録済の音声コンテンツの手話通訳</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G54" linktype="general">ビデオストリームに手話通訳者を入れる</loc>
-                </p></item><!-- BBC: Not complete as of PR, so commented out. item>
-                <p>Providing a new page that has the video with the sign language interpretation of the audio track (future link) 
-                </p>
-              </item-->
-	<item role="smil"><p>
-次の達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G81" linktype="general">プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する</loc>
-    </p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM13" linktype="smil">SMIL 1.0 の同期したビデオ・ストリームで手話通訳を提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SM14" linktype="smil">SMIL 2.0 の同期したビデオ・ストリームで手話通訳を提供する</loc>
-                    </p></item></ulist></item>
+	<item><p><loc href="G54" linktype="general"/></p></item>
+	<!-- BBC: Not complete as of PR, so commented out. item><p>Providing a new page that has the video with the sign language interpretation of the audio track (future link)</p></item-->
+	<item role="smil"><p>次の達成方法の一つを用いて、<loc href="G81" linktype="general"/><!--プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する--></p>
+	<ulist>
+		<item><p><loc href="SM13" linktype="smil"/></p></item>
+		<item><p><loc href="SM14" linktype="smil"/></p></item>
+	</ulist>
+	</item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.2.6 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <div5>
 <head>メタデータの達成方法</head>
 <ulist>
-	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする（リンク追加予定）</p><ulist><item><p>事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する</p></item></ulist></item>
+	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする（リンク追加予定）</p>
+	<ulist>
+		<item><p>事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する</p></item>
+	</ulist>
+	</item>
 </ulist>
 </div5>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.2.6 のよくある不適合事例 </head>
+<head/>
 </div4>
 </div3>
 </div2>
