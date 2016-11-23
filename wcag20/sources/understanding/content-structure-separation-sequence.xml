@@ -11,6 +11,13 @@
 <p>ある要素のプログラムが持つ意味が、そのコンテンツに意味のある順序があるかどうかを定義している。例えば、HTMLでは、テキストには常に意味のある順序がある。テーブル及び順序付きリストには意味のある順序があるが、順序なしリストには意味のある順序がない。</p>
 <p>コンテンツの並び順には、常に意味があるとは限らない。例えば、あるウェブページのメイン部分とナビゲーション部分の相対的な順序は、それぞれの意味には影響を及ぼさない。それらは、プログラムで解釈される音声読み上げ順序で、どちらが先にもなりえる。もう一つの例としては、雑誌の記事にはいくつかの補足記事がいくつか含まれている。記事と補足記事の順序は、それぞれの意味に影響を及ぼすことはない。このような場合においては、この達成基準を満たすことのできるウェブページには、異なる音声読み上げ順序が複数あることになる。</p>
 
+<p>明らかにするために:</p>
+<olist>
+<item><p>特定の線形順序を提供することが要求されるのは、意味に影響を与えるときだけである。</p></item>
+<item><p>複数の順序が（WCAG 2.0の定義する）「正しい」読み順となることもありえる。</p></item>
+<item><p>提供される必要があるのは１つの正しい順序に過ぎない。</p></item>
+</olist>
+
 <div4 role="benefits">
 <head>達成基準 1.3.2 の具体的なメリット</head>
 <ulist>
@@ -33,66 +40,42 @@
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.3.2 の達成方法及び不適合事例 － 意味のある順序</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-ウェブページにあるすべてのコンテンツについては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G57" linktype="general">コンテンツを意味のある順序に並べる</loc>
-    </p></item>
-	<item><p>次の達成方法のどれか一つを用いて、コンテンツの並び順を意味のあるものにする、<emph role="bold">かつ</emph>、その並び順については、
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G57" linktype="general">コンテンツを意味のある順序に並べる</loc></p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H34" linktype="html">Unicode の right-to-left マーク (RLM) 又は left-to-right マーク (LRM) を用いて、インラインでテキストの方向を混在させる</loc>  
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H56" linktype="html">インライン要素の dir 属性を用いて、入れ子になったテキストの方向性に伴う問題を解決する</loc>  
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C6" linktype="css">コンテンツを構造のマークアップに基づいて配置する</loc>  
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C8" linktype="css">CSS の letter-spacing プロパティを用いて、単語内の文字間を制御する</loc>  
-                    </p></item></ulist></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C27" linktype="css">DOM ツリーのノードの順序を視覚的な順序と合致させる </loc>  </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH15" linktype="flash">tabIndex プロパティを使用して Flash 内の論理的な読み上げ順序及びタブ順序を指定する</loc>  </p></item><item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF3" linktype="pdf">PDF 文書で正しいタブ順序と読み上げ順序を確保する</loc>   
-                      </p></item>
-	<item><p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL34.html" linktype="silverlight">Using the Silverlight Default Tab Sequence and Altering Tab Sequences With Properties</loc>   
-                      </p></item>
+	<item><p>ウェブページにあるすべてのコンテンツについて、<loc href="G57" linktype="general"/><!--コンテンツを意味のある順序に並べる--></p></item>
+	<item><p>次の達成方法のどれか一つを用いて、コンテンツの並び順を意味のあるものにする、<emph role="bold">かつ</emph>、その並び順については、<loc href="G57" linktype="general"/><!--コンテンツを意味のある順序に並べる--></p>
+	<ulist>
+		<item><p><loc href="H34" linktype="html"/></p></item>
+		<item><p><loc href="H56" linktype="html"/></p></item>
+		<item><p><loc href="C6" linktype="css"/></p></item>
+		<item><p><loc href="C8" linktype="css"/></p></item>
+	</ulist>
+	</item>
+	<item><p><loc href="C27" linktype="css"/></p></item>
+	<item><p><loc href="FLASH15" linktype="flash"/></p></item>
+	<item><p><loc href="PDF3" linktype="pdf"/></p></item>
+	<item><p><loc href="SL34" linktype="silverlight"/></p></item>
 </olist>
 </div4>
 <div4 role="tech-optional">
 <head>達成基準 1.3.2 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
-	<item><p>左から右へ書き綴る言語は左寄せを使い、右から左へ書き綴る言語は右寄せを用いる（リンク追加予定）
-                </p></item>
-	<item><p>
-線形化された描画のリンクを提供する（リンク追加予定）
-</p></item>
-	<item><p>
-表現順序に影響するスタイルシートの切替を提供する（リンク追加予定）
-    </p></item>
+	<item><p>左から右へ書き綴る言語は左寄せを使い、右から左へ書き綴る言語は右寄せを用いる（リンク追加予定）</p></item>
+	<item><p>線形化された描画のリンクを提供する（リンク追加予定）</p></item>
+	<item><p>表現順序に影響するスタイルシートの切替を提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
 <head>達成基準 1.3.2 のよくある不適合事例</head>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F34" linktype="failure">達成基準 1.3.1 及び 達成基準 1.3.2  の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いてテーブルをフォーマットしている</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F33" linktype="failure">達成基準 1.3.1 及び 達成基準 1.3.2 の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いて複数の段組みをしている</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F32" linktype="failure">達成基準 1.3.2 の不適合事例 － スペースを用いて、単語内の文字間を空けている</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F49" linktype="failure">達成基準 1.3.2 の不適合事例 － リニアライズした際に、意味の通じないHTMLのレイアウトテーブルを用いている</loc>
-                </p></item>
-	<item role="css"><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F1" linktype="failure">達成基準 1.3.2 の不適合事例 － CSSで情報を配置することにより、コンテンツの意味を変えている</loc>
-                </p></item>
+	<item><p><loc href="F34" linktype="failure"/></p></item>
+	<item><p><loc href="F33" linktype="failure"/></p></item>
+	<item><p><loc href="F32" linktype="failure"/></p></item>
+	<item role="html"><p><loc href="F49" linktype="failure"/></p></item>
+	<item role="css"><p><loc href="F1" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
