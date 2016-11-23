@@ -17,7 +17,8 @@
 <div4 role="benefits">
 <head/>
 <ulist>
-	<item><p>スクリーンリーダーを使用している利用者が、他に再生されている音声に邪魔されることなく、スクリーンリーダーの音声を聞くことができるようになる。難聴の利用者及びシステム全体の音量制御を用いているスクリーンリーダーの利用者にとっては（システム全体の音量を下げて、スクリーンリーダーの音量を上げるということができないため）特に重要である。</p></item><item><p>また、この達成基準は、音声が再生されていると、視覚的なコンテンツ（テキストを含む）に集中するのが困難な利用者に対しても役に立つ。</p></item>
+	<item><p>スクリーンリーダーの利用者が、他に再生されている音声に邪魔されることなく、スクリーンリーダーの音声を聞くことができるようになる。これは、難聴の利用者及びシステム全体の音量制御を用いるスクリーンリーダーの利用者にとって（システム全体の音量を下げて、スクリーンリーダーの音量を上げることができないため）特に重要である。</p></item>
+	<item><p>この達成基準はまた、音声が再生されているとき、（テキストを含む）視覚的なコンテンツに集中することが困難な利用者に対しても役に立つ。</p></item>
 </ulist>
 </div4>
 </div3>
@@ -26,51 +27,42 @@
 <head/>
 <ulist>
 	<item><p>ページを開いたときに、音声ファイルの再生が自動的に開始される。しかし、利用者が、そのページの先頭にある「音を消す」というリンクを選択することで、その音声を停止させることができる。</p></item>
-	<item><p>
-音声が再生されるFlashのスプラッシュページがあり、3秒以内にその音声が停止する。</p></item>
-	<item><p>
-音声が自動的に再生されるFlashのスプラッシュページの先頭に、利用者が音声を停止できるコントロールがある。</p></item>
+	<item><p>音声を再生するFlashのスプラッシュページがあり、3秒以内にその音声が停止する。</p></item>
+	<item><p>音声を自動的に再生するFlashのスプラッシュページの先頭に、利用者が音声を停止可能にするコントロールがある。</p></item>
 </ulist>
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.4.2 の達成方法及び不適合事例 － 音声制御</head>
+<head/>
 <div4 role="sufficient">
-<head/><olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G60" linktype="general">音声の再生を3秒以内に自動的に停止する</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G170" linktype="general">自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G171" linktype="general">利用者の要求に応じてのみ、音声を再生する</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL24.html" linktype="silverlight">Using AutoPlay to Keep Silverlight Media from Playing Automatically</loc></p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH18" linktype="flash">Flash で自動的に再生される音声をオフにするコントロールを提供する</loc>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH34" linktype="flash">スクリーンリーダー検出機能を使用して、自動的に再生される音声をオフにする</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL3.html" linktype="silverlight">Controlling Silverlight MediaElement Audio Volume</loc></p></item>
+<head/>
+<olist>
+	<item><p><loc href="G60" linktype="general"/></p></item>
+	<item><p><loc href="G170" linktype="general"/></p></item>
+	<item><p><loc href="G171" linktype="general"/></p></item>
+	<item><p><loc href="SL24" linktype="silverlight"/></p></item>
+	<item><p><loc href="FLASH18" linktype="flash"/></p></item>
+	<item><p><loc href="FLASH34" linktype="flash"/></p></item>
+	<item><p><loc href="SL3" linktype="silverlight"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.4.2 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>
-自動的に再生される音を停止できる、ウェブページの先頭付近に提供されるコントロールに加えて、音声を停止できる広域サイト設定を提供する（リンク追加予定）
-    </p></item>
+	<item><p>自動的に再生される音を停止できる、ウェブページの先頭付近に提供されるコントロールに加えて、音声を停止できる広域サイト設定を提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.4.2 のよくある不適合事例</head>
+<head/>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F23" linktype="failure">達成基準 1.4.2 の不適合事例 － 3秒よりも長く音声を再生していて、音声を停止するメカニズムを提供していない</loc>
-                </p></item>
+	<item><p><loc href="F23" linktype="failure"/></p></item>
+	<item><p><loc href="F93" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
