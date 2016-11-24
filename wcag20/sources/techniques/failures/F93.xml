@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F93">
-   <short-name>Failure of Success Criterion 1.4.2 for absence of a way to pause or stop an HTML5 media element that autoplays</short-name>
+   <short-name>達成基準 1.4.2 の失敗例 － 自動再生する HTML5 のメディア要素を一時停止または停止する方法がない</short-name>
    <applicability>
       <p>HTML5</p>
    </applicability>

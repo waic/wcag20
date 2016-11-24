@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H49">
-   <short-name>セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする</short-name>
+   <short-name> 強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

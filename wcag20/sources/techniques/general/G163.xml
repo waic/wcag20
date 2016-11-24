@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G163">
-   <short-name>オフにすることが可能な標準的な発音区別符号を用いる</short-name>
+   <short-name>オフにすることが可能な標準的な発音区別符号を使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

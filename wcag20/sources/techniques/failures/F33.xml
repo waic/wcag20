@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F33">
-   <short-name>達成基準 1.3.1 及び 達成基準 1.3.2 の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いて複数の段組みをしている</short-name>
+   <short-name>達成基準 1.3.1 及び 達成基準 1.3.2 の失敗例 － プレーン・テキストのコンテンツで、複数の段組みにするために、スペースを使用している</short-name>
    <applicability>
       <p>すべてウェブコンテンツ技術</p>
    </applicability>

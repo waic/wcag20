@@ -2,8 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F49">
-   <short-name>
-          達成基準 1.3.2 の不適合事例 － リニアライズした際に、意味の通じないHTMLのレイアウトテーブルを用いている</short-name>
+   <short-name>達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G206">
-   <short-name>Providing options within the content to switch to a layout that does not require the user to scroll horizontally to read a line of text</short-name>
+   <short-name>レイアウトを切り替えるオプションをコンテンツの中で提供して、ユーザーが横スクロールをしなくてもテキストの行を読めるようにする</short-name>
    <applicability>
       <p>All technologies that support style switching</p>
    </applicability>

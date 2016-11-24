@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C27">
-   <short-name>DOMの順序を表示順序と一致させる</short-name>
+   <short-name>DOM の順序を表示順序と一致させる</short-name>
    <applicability>
       <p>HTML及びXHTMLで使用されるCSS</p>
    </applicability>

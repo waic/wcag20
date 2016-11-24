@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G11">
-   <short-name>5秒未満で点滅が終わるようにコンテンツを制作する</short-name>
+   <short-name>5 秒未満で点滅が終わるようにコンテンツを制作する</short-name>
    <applicability>
       <p>点滅するコンテンツをサポートしているウェブコンテンツ技術</p>
    </applicability>

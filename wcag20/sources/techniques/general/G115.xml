@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G115">
-   <short-name>セマンティックな要素を用いて、構造をマークアップする</short-name>
+   <short-name>構造をマークアップするために、セマンティックな要素を使用する</short-name>
    <applicability>
       <p>HTML 4.01及び XHTML 1.xを含むマークアップ言語</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA1">
-   <short-name>Using the aria-describedby property to provide a descriptive label for user interface controls</short-name>
+   <short-name>ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する</short-name>
    <applicability>
       <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>

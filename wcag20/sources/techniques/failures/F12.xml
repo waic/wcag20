@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F12">
-   <short-name>達成基準 2.2.5 の不適合事例：　利用者の入力を保存し再認証時にその情報を回復させるメカニズムがない状態で、セッションの制限時間がある</short-name>
+   <short-name>達成基準 2.2.5 の失敗例 － 利用者の入力を保存し再認証時にその情報を回復させるメカニズムがない状態で、セッションの制限時間がある</short-name>
    <applicability>
       <p>入力を送信するのに利用者のログインが必要で、しばらく操作しない期間の後にセッションを切断するサイト。</p>
    </applicability>

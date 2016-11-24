@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA12">
-   <short-name>Using role=heading to identify headings</short-name>
+   <short-name>見出しを特定するために role=heading を使用する</short-name>
    <applicability>
       <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>

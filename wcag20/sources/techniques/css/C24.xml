@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C24">
-   <short-name>コンテナのサイズにCSSのパーセント値を用いる</short-name>
+   <short-name>コンテナのサイズに CSS のパーセント値を使用する</short-name>
    <applicability>
       <p>CSSを用いているウェブページ</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H88"><!-- This was originallly included as G154 -->
-   <short-name>仕様に準じてHTMLを用いる</short-name>
+   <short-name>仕様に準じて HTML を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

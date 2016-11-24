@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C7">
-   <short-name>CSSを用いて、リンクテキストの一部を非表示にする</short-name>
+   <short-name>リンクテキストの一部を非表示にするために、CSS を使用する</short-name>
    <applicability>
       <p>CSSに対応しているウェブコンテンツ技術全て</p>
    </applicability>

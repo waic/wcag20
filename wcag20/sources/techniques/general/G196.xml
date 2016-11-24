@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G196">
-   <short-name>画像のグループにある一つの画像に代替テキストを提供して、そのグループの全ての画像を説明する</short-name>
+   <short-name>画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する</short-name>
    <applicability>
       <p>非テキストコンテンツのグループを用いて情報又は機能を提示する、全てのウェブコンテンツ技術</p>
    </applicability>

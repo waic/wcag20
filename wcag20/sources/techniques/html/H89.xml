@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H89">
-   <short-name>Using the title attribute to provide context-sensitive help</short-name>
+   <short-name>コンテキストに応じたヘルプを提供するために、title 属性を使用する</short-name>
    <applicability>
       <p>HTML and XHTML </p>
    </applicability>

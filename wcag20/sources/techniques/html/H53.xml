@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H53"><!--MC to update wiki and review output-->
-   <short-name><el>object</el>要素のボディに代替テキストを記述する</short-name>
+   <short-name><el>object</el> 要素のボディを使用する</short-name>
    <applicability>
       <p>メディアを読み込む<el>object</el>要素（HTML及びXHTML）</p>
    </applicability>

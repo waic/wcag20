@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR14">
-   <short-name>スクリプトを用いて、不可欠ではないアラートの表示を任意にする</short-name>
+   <short-name>不可欠ではないアラートの表示を任意にするために、スクリプトを使用する</short-name>
    <applicability>
       <p>緊急ではない情報提供のアラートにスクリプトを使用するウェブコンテンツ技術</p>
    </applicability>

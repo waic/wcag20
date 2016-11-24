@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H58">
-   <short-name>言語属性を用いて、自然言語の変更を指定する</short-name>
+   <short-name>自然言語の変更を指定するために、lang 属性を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

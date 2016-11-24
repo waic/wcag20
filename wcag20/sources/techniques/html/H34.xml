@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H34">
-   <short-name>UnicodeのRLM文字又はLRM文字を用いて、インラインでテキストの方向を混在させる</short-name>
+   <short-name>インラインでテキストの方向を混在させるために、Unicode の RLM 文字又は LRM 文字を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

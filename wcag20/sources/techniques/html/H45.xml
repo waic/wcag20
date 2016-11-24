@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H45">
-   <short-name>longdesc属性を用いる</short-name>
+   <short-name>longdesc 属性を用いる</short-name>
    <applicability>
       <p>短い代替テキストでは説明しきれない画像を含むHTML及びXHTML</p>
    </applicability>

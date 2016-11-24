@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA20">
-   <short-name>Using the region role to identify a region of the page</short-name>
+   <short-name>ページの領域を特定するために region ロールを使用する</short-name>
    <applicability>
       <p>Technologies that support <loc href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</loc>.</p>
    </applicability>

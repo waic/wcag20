@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G110">
-   <short-name>クライアントサイドの瞬間的なリダイレクトを用いる</short-name>
+   <short-name>クライアントサイドの瞬間的なリダイレクトを使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

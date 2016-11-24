@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F79">
-   <short-name>達成基準 4.1.2 の不適合事例 － 利用者ーインタフェース・コンポーネントのフォーカスの状態がプログラムで解釈可能ではない、又はフォーカスの状態の変更が通知されていない</short-name>
+   <short-name>達成基準 4.1.2 の失敗例 － ユーザインタフェース コンポーネントのフォーカスの状態がプログラムで解釈可能ではない、又はフォーカスの状態の変更が通知されていない</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

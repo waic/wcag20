@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F72">
-   <short-name>達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、ASCIIアートを用いている</short-name>
+   <short-name>達成基準 1.1.1 の失敗例 － 代替テキストを提供せずに、ASCII アートを用いている</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

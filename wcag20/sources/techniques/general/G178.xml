@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G178">
-   <short-name>利用者がウェブページ上のすべてのテキストを200％まで徐々に変更できるコントロールをウェブページ上で提供する</short-name>
+   <short-name>利用者がウェブページ上のすべてのテキストを 200％まで徐々に変更できるコントロールをウェブページ上で提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

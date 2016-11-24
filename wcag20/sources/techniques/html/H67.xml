@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H67">
-   <short-name>支援技術が無視すべき画像の img 要素で、alt属性値を空にして、title 属性を付与しない</short-name>
+   <short-name>支援技術が無視すべき画像の img 要素で、alt 属性値を空にして、title 属性を付与しない</short-name>
    <applicability>
       <p>画像を読み込むHTML及びXHTMLドキュメント</p>
    </applicability>

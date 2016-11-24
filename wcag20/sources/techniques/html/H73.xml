@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H73">
-   <short-name>table要素のsummary属性を用いて、データテーブルの概要を提供する</short-name>
+   <short-name>データテーブルの概要を提供するために、table 要素の summary 属性を使用する</short-name>
    <applicability>
       <p>HTML 4.01及びXHTML 1.x</p>
    </applicability>

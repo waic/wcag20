@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H85">
-   <short-name>optgroup要素を用いて、select要素内のoption要素をグループ化する</short-name>
+   <short-name>select 要素内の option 要素をグループ化するために、optgroup 要素を使用する</short-name>
    <applicability>
       <p>利用者の入力項目をまとめているHTML及びXHTML</p>
    </applicability>

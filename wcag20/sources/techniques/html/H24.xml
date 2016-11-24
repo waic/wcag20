@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H24">
-   <short-name>イメージマップの<el>area</el>要素に代替テキストを提供する</short-name>
+   <short-name>イメージマップの <el>area</el> 要素に代替テキストを提供する</short-name>
    <applicability>
       <p><el>area</el>要素を含むHTML及びXHTMLドキュメント</p>
    </applicability>

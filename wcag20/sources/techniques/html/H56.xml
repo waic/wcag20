@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H56">
-   <short-name>インライン要素の<att>dir</att>属性を用いて、入れ子になったテキストの表記方向に伴う問題を解決する</short-name>
+   <short-name>入れ子になったテキストの表記方向に伴う問題を解決するために、インライン要素の <att>dir</att> 属性を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

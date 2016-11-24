@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H70">
-   <short-name>フレームを用いて、繰り返されているコンテンツのブロックをグループ化する</short-name>
+   <short-name>繰り返されているコンテンツのブロックをグループ化するために、frame 要素を使用する</short-name>
    <applicability>
       <p>フレームを用いているHTML及びXHTMLドキュメント</p>
    </applicability>

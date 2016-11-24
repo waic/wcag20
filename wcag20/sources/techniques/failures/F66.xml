@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F66">
-   <short-name>達成基準 3.2.3 の不適合事例：　ナビゲーションリンクをさまざまなページで相対的に異なる順序で提示する</short-name>
+   <short-name>達成基準 3.2.3 の失敗例 － ナビゲーションリンクをさまざまなページで相対的に異なる順序で提示する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

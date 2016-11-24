@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH21">
-   <short-name>DataGrid コンポーネントを使用して列見出しとデータセルを関連付ける</short-name>
+   <short-name>列見出しとデータセルを関連付けるために、DataGrid コンポーネントを使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

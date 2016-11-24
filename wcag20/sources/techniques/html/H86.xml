@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H86">
-   <short-name>ASCIIアート、顔文字、及びリート語に代替テキストを提供する</short-name>
+   <short-name>ASCII アート、顔文字、及びリート語に代替テキストを提供する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

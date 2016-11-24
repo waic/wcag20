@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H51">
-   <short-name>テーブルのマークアップを用いて、表の情報を提示する</short-name>
+   <short-name>表の情報を提示するために、テーブルのマークアップを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

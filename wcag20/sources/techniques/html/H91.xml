@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H91">
-   <short-name>HTMLのフォーム・コントロール及びリンクを用いる</short-name>
+   <short-name>HTML のフォーム・コントロール及びリンクを使用する</short-name>
    <applicability>
       <p>HTMLのフォーム・コントロール及びリンク</p>
    </applicability>

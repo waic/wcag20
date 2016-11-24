@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H76">
-   <short-name>meta要素のrefreshを用いて、クライアントサイドで瞬間的にリダイレクトする</short-name>
+   <short-name>クライアントサイドで瞬間的にリダイレクトするたために、meta 要素の refresh を使用する</short-name>
    <applicability>
       <p> HTML 及び XHTML</p>
    </applicability>

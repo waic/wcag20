@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH7">
-   <short-name>スクリプトを使用してコントロールのラベルを変更する</short-name>
+   <short-name>コントロールのラベルを変更するために、スクリプトを使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

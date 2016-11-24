@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F13">
-   <short-name>達成基準 1.4.1 の不適合事例 － イメージ上の色の違いで伝えている情報が、代替テキストに含まれていない</short-name>
+   <short-name>達成基準 1.4.1 の失敗例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G146">
-   <short-name>リキッドレイアウトを用いる</short-name>
+   <short-name>リキッドレイアウトを使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SM2">
-   <short-name>SMIL 2.0で拡張した音声ガイドを追加する</short-name>
+   <short-name>SMIL 2.0 で拡張した音声ガイドを追加する</short-name>
    <applicability>
       <p>SMIL 2.0 プレーヤーが利用可能な場合</p>
    </applicability>

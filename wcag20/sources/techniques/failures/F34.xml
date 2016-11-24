@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F34">
-   <short-name>達成基準 1.3.1 及び 達成基準 1.3.2  の不適合事例 － プレーン・テキストのコンテンツで、スペースを用いてテーブルをフォーマットしている</short-name>
+   <short-name>達成基準 1.3.1 及び 達成基準 1.3.2 の失敗例 － プレーン・テキストのコンテンツで、テーブルをフォーマットするために、スペースを使用している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術。</p>
    </applicability>

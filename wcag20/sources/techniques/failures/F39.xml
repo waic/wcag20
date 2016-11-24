@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F39">
-   <short-name>達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</short-name>
+   <short-name>達成基準 1.1.1 の失敗例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

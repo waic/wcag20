@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H96">
-   <short-name>Using the track element to provide audio descriptions</short-name>
+   <short-name>音声解説を提供するために、track 要素を使用する</short-name>
    <applicability>
       <p>HTML5</p>
    </applicability>

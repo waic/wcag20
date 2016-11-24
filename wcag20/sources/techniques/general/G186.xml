@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G186">
-   <short-name>動きのあるコンテンツ、点滅するコンテンツ、又は自動更新されるコンテンツを停止させるコントロールを用いる</short-name>
+   <short-name>動きのあるコンテンツ、点滅するコンテンツ、又は自動更新されるコンテンツを停止させるコントロールを使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

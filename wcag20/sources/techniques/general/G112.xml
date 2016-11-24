@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G112">
-   <short-name>インラインの定義を用いる</short-name>
+   <short-name>インラインの定義を使用する</short-name>
    <applicability>
       <p>テキストを含むあらゆるウェブコンテンツ技術</p>
    </applicability>

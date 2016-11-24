@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G187">
-   <short-name>ユーザエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を用いる</short-name>
+   <short-name>ユーザエージェントによって点滅するコンテンツを停止できるウェブコンテンツ技術を使用する</short-name>
    <applicability>
       <p>ウェブコンテンツ技術全て。</p>
    </applicability>

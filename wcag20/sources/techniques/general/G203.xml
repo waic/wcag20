@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G203">
-   <short-name>Using a static text alternative to describe a talking head video</short-name>
+   <short-name>話者が話すのみの映像を説明するために、静的な代替テキストを使用する</short-name>
    <applicability>
       <p>Videos of only a speaker</p>
    </applicability>

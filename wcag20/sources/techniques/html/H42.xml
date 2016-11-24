@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H42">
-   <short-name>h1要素～h6要素を用いて、見出しを特定する</short-name>
+   <short-name>見出しを特定するために、h1 要素～ h6 要素を使用する</short-name>
    <applicability>
       <p>HTML and XHTML</p>
    </applicability>

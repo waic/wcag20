@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA21">
-   <short-name>Using Aria-Invalid to Indicate An Error Field</short-name>
+   <short-name>エラー項目を示すために aria-invalid を使用する</short-name>
    <applicability>
       <p>HTML with <loc href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications</loc>.</p>
    </applicability>

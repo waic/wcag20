@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C8">
-   <short-name>CSS の letter-spacing プロパティを用いて、単語内の文字間隔を調整する</short-name>
+   <short-name>単語内の文字間隔を調整するために、CSS の letter-spacing プロパティを使用する</short-name>
    <applicability>
       <p>CSSに対応しているウェブコンテンツ技術全て</p>
    </applicability>

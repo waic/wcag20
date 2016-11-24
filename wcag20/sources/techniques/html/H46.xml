@@ -2,8 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H46">
-   <short-name>Using <el>noembed</el> with <el>embed</el>
-				</short-name>
+   <short-name><el>embed</el> 要素と一緒に <el>noembed</el> 要素を用いる</short-name>
    <applicability>
       <p>Documents that load plugins with the <el>embed</el> element.</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G68">
-   <short-name><phrase diff="del">コンテンツの内容が分かるラベル</phrase><phrase diff="add">簡潔な代替テキスト</phrase>を提供し、ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明する</short-name>
+   <short-name>ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明するために、簡潔な代替テキストを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

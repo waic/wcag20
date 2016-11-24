@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C14">
-   <short-name>em単位を用いてフォントサイズを指定する</short-name>
+   <short-name>フォントサイズに em 単位を使用する</short-name>
    <applicability>
       <p>CSS</p>
    </applicability>

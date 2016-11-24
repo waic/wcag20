@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G149">
-   <short-name>フォーカスを受け取った際に、利用者ーエージェントによってハイライトされる利用者ーインタフェースコンポーネントを用いる</short-name>
+   <short-name>フォーカスを受け取った際に、ユーザエージェントによって強調されるユーザインタフェースコンポーネントを使用する</short-name>
    <applicability>
       <p>利用者ーエージェントによって提供されるフォーカスのハイライトを用いる全てのウェブコンテンツ技術</p>
    </applicability>

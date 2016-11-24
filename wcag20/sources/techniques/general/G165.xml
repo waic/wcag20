@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G165">
-   <short-name>視認性に優れた標準のフォーカスインジケータが引き継がれるように、プラットフォーム標準のフォーカスインジケータを用いる</short-name>
+   <short-name>視認性に優れた標準のフォーカスインジケータが引き継がれるように、プラットフォーム標準のフォーカスインジケータを使用する</short-name>
    <applicability>
       <p>フォーカス可能な要素を提供する全てのウェブコンテンツ技術</p>
    </applicability>

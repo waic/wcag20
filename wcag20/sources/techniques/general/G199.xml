@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G199">
-   <short-name>Providing success feedback when data is submitted successfully</short-name>
+   <short-name>データが問題なく送信されたことを伝えるフィードバックを提供する</short-name>
    <applicability>
       <p>Content that accepts user data input.</p>
    </applicability>

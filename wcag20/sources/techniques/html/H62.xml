@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H62">
-   <short-name>ruby要素を用いる</short-name>
+   <short-name>ruby 要素を使用する</short-name>
    <applicability>
       <p>XHTML 1.1</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH15"><!-- FLASH37 merged into this -->
-   <short-name>tabIndex プロパティを使用して Flash 内の論理的な読み上げ順序及びタブ順序を指定する</short-name>
+   <short-name>Flash 内の論理的な読み上げ順序及びタブ順序を指定するために、tabIndex プロパティを使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

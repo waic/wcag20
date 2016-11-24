@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C22">
-   <short-name>CSSを用いて、テキストの視覚的な表現を制御する</short-name>
+   <short-name>テキストの視覚的な表現を制御するために、CSS を使用する</short-name>
    <applicability>
       <p>CSSをサポートする全てのウェブコンテンツ技術</p>
    </applicability>

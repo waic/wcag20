@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H37">
-   <short-name><el>img</el> 要素の <att>alt</att> 属性を用いる</short-name>
+   <short-name><el>img</el> 要素の <att>alt</att> 属性を使用する</short-name>
    <applicability>
       <p>HTMLドキュメントで用いられている画像</p>
    </applicability>

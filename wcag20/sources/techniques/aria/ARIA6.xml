@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA6">
-   <short-name>Using aria-label to provide labels for objects</short-name>
+   <short-name>オブジェクトのラベルを提供するために aria-label を使用する</short-name>
    <applicability>
       <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>

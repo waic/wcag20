@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F54">
-   <short-name>達成基準 2.1.1 の不適合事例 － ある機能にポインティング・デバイス特有のイベント・ハンドラを用いている</short-name>
+   <short-name>達成基準 2.1.1 の失敗例 － ある機能にポインティング・デバイス特有のイベント・ハンドラを使用している</short-name>
    <applicability>
       <p>ポインティング・デバイス特有のイベント・ハンドラを用いたウェブコンテンツ技術</p>
    </applicability>

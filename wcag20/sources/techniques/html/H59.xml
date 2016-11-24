@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H59">
-   <short-name>link要素及びナビゲーションツールを用いる</short-name>
+   <short-name>link 要素及びナビゲーションツールを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

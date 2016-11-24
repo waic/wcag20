@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H60">
-   <short-name>link要素を用いて、用語集にリンクする</short-name>
+   <short-name>用語集にリンクするために、link 要素を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

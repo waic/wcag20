@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR35">
-   <short-name>アンカー及びボタンのonclickイベントを用いて、アクションをキーボードで操作可能にする</short-name>
+   <short-name>アクションをキーボードで操作可能にするために、アンカー及びボタンのonclickイベントを使用する</short-name>
    <applicability>
       <p>HTML又はXHTMLで使用されるスクリプト。</p>
    </applicability>

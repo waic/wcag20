@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H63">
-   <short-name>scope属性を用いて、データテーブルの見出しセルとデータセルを関連付ける</short-name>
+   <short-name>データテーブルの見出しセルとデータセルを関連付けるために、scope 属性を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

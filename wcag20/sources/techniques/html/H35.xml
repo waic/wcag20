@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H35">
-   <short-name><el>applet</el>要素に代替テキストを提供する</short-name>
+   <short-name><el>applet</el> 要素に代替テキストを提供する</short-name>
    <applicability>
       <p><el>applet</el>要素が非推奨ではない場合に、Javaアプレットを読み込んでいるHTML及びXHTMLドキュメント</p>
    </applicability>

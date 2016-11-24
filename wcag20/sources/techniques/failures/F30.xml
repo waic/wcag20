@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F30">
-   <short-name>達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</short-name>
+   <short-name>達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 代替ではない代替テキストを使用している（例：ファイル名、プレースホルダー・テキストなど）</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SM14">
-   <short-name>SMIL 2.0で、同期した映像ストリームを通じて手話通訳を提供する</short-name>
+   <short-name>SMIL 2.0 で、同期した映像ストリームを通じて手話通訳を提供する</short-name>
    <applicability>
       <p>SMIL 2.0</p>
    </applicability>

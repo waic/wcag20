@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G15">
-   <short-name>ツールを用いて、コンテンツが一般閃光閾値及び赤色閃光閾値を越えていないことを確認する</short-name>
+   <short-name>コンテンツが一般閃光閾値及び赤色閃光閾値を越えていないことを確認するためにツールを使用する</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

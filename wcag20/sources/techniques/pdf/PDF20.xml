@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF20">
-   <short-name>Adobe Acrobat Pro のテーブルエディタを使用して、間違ってタグ付けされているテーブルを修復する</short-name>
+   <short-name>間違ってタグ付けされているテーブルを修復するために、Adobe Acrobat Pro のテーブルエディタを使用する</short-name>
    <applicability>
      <p>テーブルが含まれているタグ付き PDF 文書</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H25">
-   <short-name>title要素を用いて、ページタイトルを提供する</short-name>
+   <short-name>title 要素を用いて、ページタイトルを提供する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

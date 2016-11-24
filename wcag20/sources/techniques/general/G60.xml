@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G60">
-   <short-name>音声の再生を3秒以内に自動的に停止する</short-name>
+   <short-name>音声の再生を 3 秒以内に自動的に停止する</short-name>
    <applicability>
       <p>音声のインタラクション機能があるものを除く全てのウェブコンテンツ技術</p>
    </applicability>

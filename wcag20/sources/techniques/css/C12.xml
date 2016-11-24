@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C12">
-   <short-name>パーセントを用いてフォントサイズを指定する</short-name>
+   <short-name>フォントサイズにパーセントを使用する</short-name>
    <applicability>
       <p>CSS</p>
    </applicability>

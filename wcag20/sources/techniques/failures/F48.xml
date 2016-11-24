@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F48">
-   <short-name>達成基準 1.3.1 の不適合事例 － <code>pre</code>要素を用いて、表形式の情報をマークアップしている</short-name>
+   <short-name>達成基準 1.3.1 の失敗例 － 表形式の情報をマークアップするために、<code>pre</code> 要素を使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

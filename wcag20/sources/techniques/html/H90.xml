@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H90">
-   <short-name>label要素またはlegend要素を用いて、必須項目のフォーム・コントロールを特定する</short-name>
+   <short-name>必須項目のフォーム・コントロールを特定するために、label 要素又は legend 要素を使用するる</short-name>
    <applicability>
       <p>外部ラベルを用いている HTML 及び XHTML のコントロール</p>
    </applicability>

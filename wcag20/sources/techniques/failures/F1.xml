@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F1">
-   <short-name>達成基準 1.3.2 の不適合事例 － CSSで情報を配置することにより、コンテンツの意味を変えている</short-name>
+   <short-name>達成基準 1.3.2 の失敗例 － CSS で情報を配置することにより、コンテンツの意味を変えている</short-name>
    <applicability>
       <p>CSSをサポートする全てのウェブコンテンツ技術</p>
    </applicability>

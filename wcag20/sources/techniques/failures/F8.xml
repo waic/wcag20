@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F8">
-   <short-name>達成基準 1.2.2 の不適合事例 － キャプションがいくつかの発話内容又は重要な効果音を省略している</short-name>
+   <short-name>達成基準 1.2.2 の失敗例 － キャプションがいくつかの発話内容又は重要な効果音を省略している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F37">
-   <short-name>達成基準 3.2.2 の不適合事例 － ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている</short-name>
+   <short-name>達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G107">
-   <short-name>状況の変化に対するトリガーとして、"focus" ではなく、"activate" を用いる</short-name>
+   <short-name>状況の変化に対するトリガーとして、"focus" ではなく、"activate" を使用する</short-name>
    <applicability/>
    <applies-to>
       <success-criterion idref="consistent-behavior-receive-focus" relationship="sufficient"/>

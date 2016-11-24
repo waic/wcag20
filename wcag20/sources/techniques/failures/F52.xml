@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F52">
-   <short-name>達成基準 3.2.1 の不適合事例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている</short-name>
+   <short-name>達成基準 3.2.1 の失敗例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている</short-name>
    <applicability>
       <p>新しいウィンドウを開くために使用されるスクリプト</p>
    </applicability>

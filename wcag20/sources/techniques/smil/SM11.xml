@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SM11">
-   <short-name>SMIL 1.0で同期したテキストストリームによるキャプションを提供する</short-name>
+   <short-name>SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</short-name>
    <applicability>
       <p>SMIL 1.0</p>
    </applicability>

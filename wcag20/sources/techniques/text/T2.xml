@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="T2">
-   <short-name>リストに、標準的なテキストの書式の表現法を用いる</short-name>
+   <short-name>リストに、標準的なテキストの書式の表現法を使用する</short-name>
    <applicability>
       <p>プレーンテキストのドキュメント。マークアップを含むウェブコンテンツ技術は対象外</p>
    </applicability>

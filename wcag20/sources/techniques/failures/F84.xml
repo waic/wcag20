@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F84">
-   <short-name>達成基準 2.4.9 の不適合事例：リンクテキストを具体的なテキストに変更するメカニズムを提供せずに、「ここをクリック」又は「続きを読む」といった不明確なリンクを用いる</short-name>
+   <short-name>達成基準 2.4.9 の失敗例 － リンクテキストを具体的なテキストに変更するメカニズムを提供せずに、「ここをクリック」又は「続きを読む」といった不明確なリンクを使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

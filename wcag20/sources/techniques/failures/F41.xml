@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F41">
-   <short-name>達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の不適合事例 － meta要素によるタイムアウト付きのリフレッシュを用いている</short-name>
+   <short-name>達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の失敗例 － meta要素によるタイムアウト付きのリフレッシュを使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

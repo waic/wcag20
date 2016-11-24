@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F69">
-   <short-name>達成基準 1.4.4 の不適合事例：　視覚的に描画されたテキストを200％まで拡大した際に、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする</short-name>
+   <short-name>達成基準 1.4.4 の失敗例 － 視覚的に描画されたテキストを 200％まで拡大した際に、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする</short-name>
    <applicability>
       <p>HTML、XHTML及びCSS</p>
    </applicability>

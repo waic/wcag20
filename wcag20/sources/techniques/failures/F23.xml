@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F23">
-   <short-name>達成基準 1.4.2 の不適合事例 － 3秒よりも長く音声を再生していて、音声を停止するメカニズムを提供していない</short-name>
+   <short-name>達成基準 1.4.2 の失敗例 － 3秒よりも長く音声を再生していて、音声を停止するメカニズムを提供していない</short-name>
    <applicability>
       <p>音声でのインタラクションがあるものを除く、全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR28">
-   <short-name>展開可能及び折り畳み可能なメニューを用いて、コンテンツのブロックをバイパスする</short-name>
+   <short-name>コンテンツのブロックをバイパスするために、展開可能及び折り畳み可能なメニューを使用する</short-name>
    <applicability>
       <p>クライアントサイド・スクリプティングを提供するウェブコンテンツ技術</p>
    </applicability>

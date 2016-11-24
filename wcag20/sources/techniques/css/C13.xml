@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C13">
-   <short-name>キーワードを用いてフォントサイズを指定する</short-name>
+   <short-name>フォントサイズにキーワードを使用する</short-name>
    <applicability>
       <p>CSS</p>
    </applicability>

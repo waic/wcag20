@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G204">
-   <short-name>Not interfering with the user agent's reflow of text as the viewing window is narrowed</short-name>
+   <short-name>閲覧画面の幅を狭めたときに、ユーザエージェントによるテキストの折り返しを妨げない</short-name>
    <applicability>
       <p>All technologies</p>
    </applicability>

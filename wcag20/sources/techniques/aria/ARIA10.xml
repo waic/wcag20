@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA10">
-   <short-name>Using aria-labelledby to provide a text alternative for non-text content</short-name>
+   <short-name>非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</short-name>
    <applicability>
       <p>This technique applies to HTML with <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>.</p>

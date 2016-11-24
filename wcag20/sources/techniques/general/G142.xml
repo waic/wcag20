@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G142">
-   <short-name>ズーム機能をサポートする一般に入手可能な利用者ーエージェントのあるウェブコンテンツ技術を用いる</short-name>
+   <short-name>ズーム機能をサポートする一般に入手可能なユーザエージェントのあるウェブコンテンツ技術を使用する</short-name>
    <applicability>
       <p>ズーム機能を提供する利用者ーエージェントのある全てのウェブコンテンツ技術</p>
    </applicability>

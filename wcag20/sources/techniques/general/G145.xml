@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G145">
-   <short-name>テキスト（及び画像化された文字）とその背景の間に、少なくとも3:1以上のコントラスト比をもたせる</short-name>
+   <short-name>テキスト（及び画像化された文字）とその背景の間に、少なくとも 3:1 以上のコントラスト比をもたせる</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F4">
-   <short-name>達成基準 2.2.2 の不適合事例 － text-decoration:blinkを用いていて、5秒未満でそれを停止させるメカニズムがない</short-name>
+   <short-name>達成基準 2.2.2 の失敗例 － 5 秒未満でそれを停止させるメカニズムを提供せずに、text-decoration:blink を使用している</short-name>
    <applicability>
       <p>カスケーディング・スタイルシート（CSS）</p>
    </applicability>

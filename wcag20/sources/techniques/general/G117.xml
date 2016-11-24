@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G117">
-   <short-name>テキストを用いて、テキストの表現のバリエーションによって伝えている情報を伝達する</short-name>
+   <short-name>テキストの表現のバリエーションによって伝えている情報を伝達するために、テキストを使用する</short-name>
    <applicability>
       <p>テキストの視覚的な表現のバリエーションをサポートするウェブコンテンツ技術</p>
    </applicability>

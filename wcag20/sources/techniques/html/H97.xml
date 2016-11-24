@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H97">
-   <short-name>Grouping related links using the nav element</short-name>
+   <short-name>関連したリンクをグループ化するために、nav 要素を使用する</short-name>
    <applicability>
       <p>HTML5 documents that contain related links.</p>
    </applicability>

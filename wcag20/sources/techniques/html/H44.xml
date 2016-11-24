@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H44">
-   <short-name>label要素を用いて、テキストのラベルとフォーム・コントロールを関連付ける</short-name>
+   <short-name>テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する</short-name>
    <applicability>
       <p>ラベルを用いているHTML及びXHTMLのフォーム・コントロール</p>
    </applicability>

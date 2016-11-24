@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F73">
-   <short-name>達成基準 1.4.1 の不適合事例 － 色覚なしではリンクであることが視覚的にはっきりと分からない</short-name>
+   <short-name>達成基準 1.4.1 の失敗例 － 色覚なしではリンクであることが視覚的にはっきりと分からない</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

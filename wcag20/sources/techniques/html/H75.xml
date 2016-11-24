@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H75">
-   <short-name>ウェブページがwell-formedであることを確認する</short-name>
+   <short-name>ウェブページが well-formed であることを確認する</short-name>
    <applicability>
       <p>すべてのXMLベースのマークアップ言語</p>
    </applicability>

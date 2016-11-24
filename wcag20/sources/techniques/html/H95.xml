@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H95">
-   <short-name>Using the track element to provide captions</short-name>
+   <short-name>キャプションを提供するために、track要素を使用する</short-name>
    <applicability>
       <p>HTML5</p>
    </applicability>

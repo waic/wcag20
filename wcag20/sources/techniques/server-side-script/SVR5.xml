@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SVR5">
-   <short-name>HTTPヘッダーで主たる自然言語を指定する</short-name>
+   <short-name>HTTP ヘッダーで主たる自然言語を指定する</short-name>
    <applicability>
       <p>サーバサイド技術（HTTPヘッダーを設定するサーバサイドのスクリプト言語及びサーバ設定ファイルを含む）</p>
    </applicability>

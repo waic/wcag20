@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F67">
-   <short-name>達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</short-name>
+   <short-name>達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

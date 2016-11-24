@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C23">
-   <short-name>メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</short-name>
+   <short-name>メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色を CSS で指定する</short-name>
    <applicability>
       <p>CSSを用いているウェブページ</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G205">
-   <short-name>Including a text cue for colored form control labels</short-name>
+   <short-name>フォーム・コントロールの、色がついたラベルに対して、テキストによる手がかりを提供する</short-name>
    <applicability>
       <p>All technologies that support color and text.</p>
    </applicability>

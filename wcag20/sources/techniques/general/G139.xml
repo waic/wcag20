@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G139">
-   <short-name>Creating a mechanism that allows users to jump to errors</short-name>
+   <short-name>利用者がエラー箇所に移動できるメカニズムを作成する</short-name>
    <applicability>
       <p>Content that accepts user data input, with restrictions on the format, value, and/or type of the input.</p>
    </applicability>

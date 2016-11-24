@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F47">
-   <short-name>達成基準 2.2.2 の不適合事例 － blink要素を用いている</short-name>
+   <short-name>達成基準 2.2.2 の失敗例 － blink 要素を使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

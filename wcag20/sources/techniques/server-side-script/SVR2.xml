@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SVR2">
-   <short-name>.htaccessを用いて、適合しているコンテンツからしか適合していないコンテンツにアクセスできないようにする</short-name>
+   <short-name>適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、.htaccess を使用する</short-name>
    <applicability>
       <p>.htaccessをサポートしているウェブサーバー（一般的にはApache）内にあるコンテンツで、コンテンツの適合するバージョンが不適合のバージョンの代替として提供されているもの</p>
    </applicability>

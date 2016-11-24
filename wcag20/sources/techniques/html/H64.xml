@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H64">
-   <short-name>frame要素及びiframe要素のtitle属性を用いる</short-name>
+   <short-name>frame 要素及び iframe 要素の title 属性を使用する</short-name>
    <applicability>
       <p><el>frame</el>要素又は<el>iframe</el>要素を用いているHTML及びXHTMLドキュメント</p>
    </applicability>

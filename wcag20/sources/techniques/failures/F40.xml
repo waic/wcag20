@@ -2,8 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F40">
-   <short-name>達成基準 2.2.1 及び 達成基準 2.2.4 の不適合事例 － meta要素による制限時間付きのリダイレクトを用いている
-        </short-name>
+   <short-name>達成基準 2.2.1 及び 達成基準 2.2.4 の失敗例 － meta 要素による制限時間付きのリダイレクトを使用している</short-name>
    <applicability>
       <p>すべてのページ</p>
    </applicability>

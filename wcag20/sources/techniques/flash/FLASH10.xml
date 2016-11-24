@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH10">
-   <short-name>Flashでフォーム・コントロールが必須項目であることを示す</short-name>
+   <short-name>Flash でフォーム・コントロールが必須項目であることを示す</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H84">
-   <short-name>select要素とボタンを併用して、アクションを実行するようにする</short-name>
+   <short-name>アクションを実行するために、select 要素とボタンを併用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

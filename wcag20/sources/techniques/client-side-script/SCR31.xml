@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR31">
-   <short-name>スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更する</short-name>
+   <short-name>フォーカスのある要素の背景色又はボーダーを変更するために、スクリプトを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML、CSS、Script</p>
    </applicability>

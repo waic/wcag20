@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H40">
-   <short-name>定義リストを用いる</short-name>
+   <short-name>説明リストを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

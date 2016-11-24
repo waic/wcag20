@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F86">
-   <short-name>達成基準 4.1.2 の不適合事例 － 例えば電話番号にように、複数に分けられたテキストフィールドのそれぞれに対して、識別名が提供されていない</short-name>
+   <short-name> 達成基準 4.1.2 の失敗例 － 例えば電話番号にように、複数に分けられたテキストフィールドのそれぞれに対して、識別名が提供されていない</short-name>
    <applicability>
       <p>全般</p>
    </applicability>

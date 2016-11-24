@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C18">
-   <short-name>Using CSS margin and padding rules instead of spacer images for layout design</short-name>
+   <short-name>レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する</short-name>
    <applicability>
       <p>All technologies that support CSS</p>
    </applicability>

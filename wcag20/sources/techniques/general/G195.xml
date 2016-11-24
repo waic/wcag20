@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G195">
-   <short-name>コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを用いる</short-name>
+   <short-name>コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

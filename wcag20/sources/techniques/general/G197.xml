@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G197">
-   <short-name>同じ機能を有するコンテンツに対して、一貫したラベル、識別名及び代替テキストを用いる</short-name>
+   <short-name>同じ機能を有するコンテンツに対して、一貫したラベル、識別名及び代替テキストを使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

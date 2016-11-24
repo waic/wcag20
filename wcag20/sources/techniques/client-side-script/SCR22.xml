@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR22">
-   <short-name>スクリプトを用いて、点滅を制御し、5秒以内に停止させる</short-name>
+   <short-name>点滅を制御し、5 秒以内に停止させるために、スクリプトを使用する</short-name>
    <applicability>
       <p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C29">
-   <short-name>スタイル・スイッチャーを用いて、適合している代替バージョンを提供する</short-name>
+   <short-name>適合している代替バージョンを提供するために、スタイル・スイッチャーを使用する</short-name>
    <applicability>
       <p>クライアントサイド又はサーバーサイドのスクリプトとともに使用されるCSS</p>
    </applicability>

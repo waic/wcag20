@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G138">
-   <short-name>色の手がかりを用いる際は、必ずセマンティックなマークアップを用いる</short-name>
+   <short-name>色の手がかりを用いる際は、必ずセマンティックなマークアップを使用する</short-name>
    <applicability>
       <p>色及びテキストをサポートするウェブコンテンツ技術すべて。</p>
    </applicability>

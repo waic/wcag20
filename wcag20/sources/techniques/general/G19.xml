@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G19">
-   <short-name>どの1秒間においても、コンテンツに3回よりも多く閃光を放つコンポーネントがないことを確認する</short-name>
+   <short-name>どの 1 秒間においても、コンテンツに 3 回よりも多く閃光を放つコンポーネントがないことを確認する</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

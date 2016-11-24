@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H39">
-   <short-name>caption要素を用いて、データテーブルの表題とデータテーブルを関連付ける</short-name>
+   <short-name>データテーブルの表題とデータテーブルを関連付けるために、caption 要素を使用する</short-name>
    <applicability>
       <p>HTML及びXHTMLのデータテーブル</p>
    </applicability>

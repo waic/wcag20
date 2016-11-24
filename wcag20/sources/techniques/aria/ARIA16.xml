@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA16">
-   <short-name>Using aria-labelledby to provide a name for user interface controls</short-name>
+   <short-name>ユーザインターフェース コントロールの名前（name）を提供するために、aria-labelledby を使用する</short-name>
    <applicability>
       <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H74">
-   <short-name>開始タグ及び終了タグを仕様に準じて用いていることを確認する</short-name>
+   <short-name>開始タグ及び終了タグを仕様に準じて使用していることを確認する</short-name>
    <applicability>
       <p> HTML 及び XHTML</p>
    </applicability>

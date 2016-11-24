@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C9">
-   <short-name>CSS を用いて、装飾目的の画像を付加する</short-name>
+   <short-name> 装飾目的の画像を付加するために、CSS を使用する</short-name>
    <applicability>
       <p>画像を表示させるためにCSSが利用可能なウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F85">
-   <short-name>達成基準 2.4.3 の不適合事例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを用いている</short-name>
+   <short-name>達成基準 2.4.3 の失敗例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを使用している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

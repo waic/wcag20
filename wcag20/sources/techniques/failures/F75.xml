@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F75">
-   <short-name>達成基準 1.2.2 の不適合事例 － 同期したメディアがページ上にある情報よりも多くの情報を提示している際、キャプションなしで同期したメディアを提供している</short-name>
+   <short-name>達成基準 1.2.2 の失敗例 － 同期したメディアがページ上にある情報よりも多くの情報を提示している際、キャプションなしで同期したメディアを提供している</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

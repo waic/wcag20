@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G156">
-   <short-name>一般に入手可能な利用者ーエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を用いる</short-name>
+   <short-name>一般に入手可能なユーザエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を使用する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

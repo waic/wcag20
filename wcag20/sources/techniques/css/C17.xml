@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C17">
-   <short-name>Scaling form elements which contain text</short-name>
+   <short-name>テキストを含むフォームの要素を拡大する</short-name>
    <applicability>
       <p>(X)HTML, CSS</p>
    </applicability>

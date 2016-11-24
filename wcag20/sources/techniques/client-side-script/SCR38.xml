@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR38">
-   <short-name>Creating a conforming alternate version for a web page designed with progressive enhancement</short-name>
+   <short-name>プログレッシブ・エンハンスメントで設計されたウェブページに対して、適合した代替バージョンを作成する</short-name>
    <applicability>
       <p>HTML with scripting.</p>
    </applicability>

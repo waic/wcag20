@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH35">
-   <short-name>スクリプトを使用して、 Flash コンテンツをスクロールする、およびそれを停止するメカニズムを提供する</short-name>
+   <short-name>Flash コンテンツをスクロールさせて、それを停止させるメカニズムを提供するために、スクリプトを使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

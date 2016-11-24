@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR32">
-   <short-name>クライアントサイドのバリデーションを提供し、DOMを介してエラーテキストを追加する</short-name>
+   <short-name>クライアントサイドのバリデーションを提供し、DOM を介してエラーテキストを追加する</short-name>
    <applicability>
       <p>HTML又はXHTMLで使用されるスクリプト。</p>
    </applicability>
