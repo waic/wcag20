@@ -40,37 +40,39 @@
 <head>Resources for this Success Criterion</head>
 <ulist>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.hardingfpa.com/">Harding FPA Web Site</loc>
+                <loc href="http://www.hardingfpa.com/">Harding FPA Web Site</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</loc>
+                <loc href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</loc>
+                <loc href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.epilepsy.org.uk">Epilepsy Action</loc>
+                <loc href="http://www.epilepsy.org.uk">Epilepsy Action</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.epilepsyfoundation.org/about/photosensitivity/">Epilepsy Foundation</loc>
+                <loc href="http://www.epilepsyfoundation.org/about/photosensitivity/">Epilepsy Foundation</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</loc>
+                <loc href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</loc>
               </p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>Techniques for Addressing Success Criterion 2.3.1</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G19" linktype="general">G19: どの1秒間においても、コンテンツに3回よりも多く閃光を放つコンポーネントがないことを確認する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G176" linktype="general">G176: 閃光を放つエリアを十分に小さくする</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G15" linktype="general">G15: ツールを用いて、コンテンツが一般閃光閾値及び赤色閃光閾値を越えていないことを確認する</loc></p></item>
+	<item><p><loc href="G19" linktype="general"/></p></item>
+    <item><p><loc href="G176" linktype="general"/></p></item>
+    <item><p><loc href="G15" linktype="general"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>Additional Techniques (Advisory) for 2.3.1</head>
+<head/>
 <ulist>
 	<item><p>閃光を放つあらゆるコンテンツに対してコントラストを下げる（リンク追加予定）</p></item>
 	<item><p>閃光を放つあらゆるコンテンツに対して赤色閃光閾値を完全に避ける（リンク追加予定）</p></item>
