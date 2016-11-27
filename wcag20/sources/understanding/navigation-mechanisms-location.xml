@@ -4,7 +4,7 @@
 <div2 id="navigation-mechanisms-location" role="extsrc">
    <head>2.4.8</head>
    <div3 role="intent">
-      <head>この達成基準の意図</head>
+      <head/>
 
 <p>この達成基準の意図は、集中力が長く持たない利用者がウェブページ一式、ウェブサイト、又はウェブアプリケーションの中で自分のいる位置を確認することができ、関連する情報を見つけることができるようにすることである。</p>
 
@@ -32,43 +32,40 @@
 <head/>
 <ulist>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://psychology.wichita.edu/surl/usabilitynews/52/breadcrumb.htm">Breadcrumb Navigation: Further Investigation of Usage</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.standards-schmandards.com/index.php?2004/11/06/6-the-sound-of-the-accessible-title-tag-separator">The Sound of the Accessible Title Tag Separator</loc>
+                <loc href="http://www.standards-schmandards.com/2004/title-text-separators/">The Sound of the Accessible Title Tag Separator</loc>
               </p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>十分な達成方法</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G65" linktype="general">パンくずリストを提供する</loc>
+                  <loc href="G65" linktype="general"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G63" linktype="general">サイトマップを提供する</loc>
+                  <loc href="G63" linktype="general"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G128" linktype="general">ナビゲーションバー内で現在位置を示す</loc>
+                  <loc href="G128" linktype="general"/>
                 </p></item>
 	<item><p>
-                  次に挙げる達成方法の一つを用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G127" linktype="general">ウェブページのより大きな集まりと ウェブページとの関係を特定する</loc></p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H59" linktype="html">link要素及びナビゲーションツールを用いる</loc>
+                  次に挙げる達成方法の一つを用いて、<loc href="G127" linktype="general"/></p><ulist><item><p>
+                      <loc href="H59" linktype="html"/>
                     </p></item></ulist></item>
 	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF14" linktype="pdf">PDF 文書内に連続するヘッダとフッタを提供する</loc>
+                      <loc href="PDF14" linktype="pdf"/>
                     </p></item>
 	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF17" linktype="pdf">PDF 文書に一貫性のあるページ番号を指定する</loc>
+                      <loc href="PDF17" linktype="pdf"/>
                     </p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.8 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
 	<item><p>
         HOMEページもしくは主要なページへのリンクを提供する（リンク追加予定）
@@ -83,7 +80,7 @@
 </div4>
 
 <div4 role="failures">
-<head>達成基準 2.4.8 のよくある不適合事例</head>
+<head/>
 </div4>
 </div3>
 </div2>

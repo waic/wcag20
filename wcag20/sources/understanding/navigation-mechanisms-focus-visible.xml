@@ -4,12 +4,14 @@
 <div2 id="navigation-mechanisms-focus-visible" role="extsrc">
    <head>2.4.7</head>
    <div3 role="intent">
-      <head>この達成基準の意図</head>
+      <head/>
 
-<p>この達成基準の意図は、キーボード・フォーカスの表示が視覚的に確認できる操作モードが少なくとも一つあるようにすることである。</p>
+<p>この達成基準の意図は、キーボード フォーカスを持っている要素を利用者が認識しやすくすることである。</p>
+<p>この達成基準の意図は、複数の要素のうち、どの要素がキーボード フォーカスを持っているか利用者が認識しやすくすることである。スクリーン上にキーボード操作可能な要素が1つだけある場合には、視覚的にはキーボード操作可能な要素を1つだけ提示するため、達成基準が満たされることになる。</p>
+<note><p>キーボードのフォーカスインジケータは異なる形態をとることができる点に注意すべきである。一般的な方法の1つとして、テキストフィールドがキーボード フォーカスを持っていることを示すための、テキストフィールド内のキャレット表示がある。別の方法としては、ボタンがキーボード フォーカスを持っていることを示すために、ボタンを視覚的に変化させるといった方法がある。</p></note>
 
 <div4 role="benefits">
-<head>達成基準 2.4.7 の具体的なメリット</head>
+<head/>
 <ulist>
 	<item><p>キーボードだけでそのページを操作している利用者が、キーボードで操作しているコンポーネントを視覚的に常時確認できるようになる。</p></item>
 	<item><p>注意力欠如、短期記憶の制約、又は遂行機能における制限のある利用者が、フォーカスがどこにあるのかを見つけることができるようになる。</p></item>
@@ -18,15 +20,15 @@
 </div3>
 
 <div3 role="examples">
-<head>達成基準 2.4.7 の事例</head>
+<head/>
 <ulist>
 	<item><p>テキストフィールドがフォーカスを受け取ると、縦の棒がテキストフィールド内に表示されて、利用者がテキストを挿入入力できることを示す。もしくは、すべてのテキストがハイライト表示され、利用者がそのテキストを上書きできることを示す。</p></item>
-	<item><p>利用者ーインタフェースのコントロールがフォーカスを受け取ると、その周りに視覚的に認識できる枠線が表示される。</p></item>
+	<item><p>ユーザインタフェースのコントロールがフォーカスを受け取ると、その周りに視覚的に認識できる枠線が表示される。</p></item>
 </ulist>
 </div3>
 
 <div3 role="resources">
-<head>Resources</head>
+<head/>
 <ulist>
 	<item><p>
                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.456bereastreet.com/archive/200701/styling_form_controls_with_css_revisited/">Styling form controls with CSS, revisited</loc>
@@ -35,48 +37,41 @@
 </div3>
 
 <div3 role="techniques">
-<head>Techniques</head>
+<head/>
 <div4 role="sufficient">
-<head>十分な達成方法</head>
+<head/>
 <olist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G149" linktype="general">フォーカスを受け取った際に、利用者ーエージェントによって強調される利用者ーインタフェースコンポーネントを用いる</loc>
+                  <loc href="G149" linktype="general"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C15" linktype="css">利用者ーインタフェースコンポーネントがフォーカスを受けとった際に、CSSを用いてその表現を変更する </loc>
+                  <loc href="C15" linktype="css"/>
                 </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G165" linktype="general">視認性に優れた標準のフォーカスインジケータが引き継がれるように、プラットフォーム標準のフォーカスインジケータを用いる</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G195" linktype="general">コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを用いる</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR31" linktype="script">スクリプトを用いて、フォーカスのある要素の背景色又はボーダーを変更するUsing script to change the background color or border of the element with focus</loc></p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH20" linktype="flash">フォーカス表示を視覚的により認識しやすくするために Flash コンポーネントのスキンを切り替える</loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL2.html" linktype="silverlight">Changing The Visual Focus Indicator in Silverlight</loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL7.html" linktype="silverlight">Designing a Focused Visual State for Custom Silverlight Controls</loc>
-                    </p></item>
+	<item><p><loc href="G165" linktype="general"/></p></item>
+	<item><p><loc href="G195" linktype="general"/></p></item>
+	<item><p><loc href="SCR31" linktype="script"/></p></item>
+	<item><p><loc href="FLASH20" linktype="flash"/></p></item>
+	<item><p><loc href="SL2" linktype="silverlight"/></p></item>
+	<item><p><loc href="SL7" linktype="silverlight"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.7 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
 	<item><p>リンクもしくはコントロールのそばにマウスが来たとき強調する（リンク追加予定）</p></item>
-	<item><p>キーボードフォーカスを受け取ったときリンクもしくはコントロールが強調され非常に目立つメカニズムを提供する（リンク追加予定）
-                </p></item>
+	<item><p>キーボードフォーカスを受け取ったときリンクもしくはコントロールが強調され非常に目立つメカニズムを提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 2.4.7 のよくある不適合事例</head>
+<head></head>
 <ulist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F55" linktype="failure">達成基準2.1.1, 2.4.7, 及び 3.2.1 の不適合事例：　フォーカスを受け取ったときフォーカスを消すスクリプトを使う</loc>
+                  <loc href="F55" linktype="failure"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F78" linktype="failure">達成基準 2.4.7 の不適合事例：　要素のアウトライン及びボーダーを視覚的なフォーカスインジケータを除去する又は非表示にするようにスタイル指定する</loc>
+                  <loc href="F78" linktype="failure"/>
                 </p></item>
 </ulist>
 </div4>

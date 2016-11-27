@@ -45,16 +45,16 @@
 <head/>
 <olist>
 	<item><p>次の達成方法のうち2つ以上を用いる：</p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G125" linktype="general">関連するウェブページへナビゲートするリンクを提供する</loc>
+                      <loc href="G125" linktype="general"/>
                     </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G64" linktype="general">目次を提供する</loc>
+                      <loc href="G64" linktype="general"/>
                     </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF2" linktype="pdf">PDF 文書内でしおりを作成する</loc>
+                      <loc href="PDF2" linktype="pdf"/>
                     </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G63" linktype="general">サイトマップを提供する</loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G161" linktype="general">検索機能を提供して、利用者がコンテンツを見つけるのを手助けする</loc></p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G126" linktype="general">他の全てのウェブページへのリンク一覧を提供する</loc>
-                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G185" linktype="general">HOMEページからサイト上の全てのウェブページにリンクする</loc></p></item></ulist></item>
+                      <loc href="G63" linktype="general"/>
+                    </p></item><item><p><loc href="G161" linktype="general"/></p></item><item><p>
+                      <loc href="G126" linktype="general"/>
+                    </p></item><item><p><loc href="G185" linktype="general"/></p></item></ulist></item>
 </olist>
 </div4>
 
@@ -62,7 +62,7 @@
 <head>達成基準 2.4.5 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H59" linktype="html">link要素及びナビゲーションツールを用いる</loc>
+                  <loc href="H59" linktype="html"/>
                 </p></item>
 	<item><p>
         コンテンツ及びコンセプトマップの表にプレゼンテーションモードについての情報を含める（リンク追加予定）
