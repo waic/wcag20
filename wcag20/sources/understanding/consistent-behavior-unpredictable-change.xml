@@ -34,49 +34,47 @@
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.2.2 の達成方法及び不適合事例 － 入力時</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>以下に挙げる技術特有の手法を用いて<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G80" linktype="general"/></p>
+	<item><p>以下に挙げる技術特有の手法を用いて<loc href="G80" linktype="general"/></p>
     <ulist>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H32" linktype="html">H32: 実行ボタンを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H84" linktype="html"/></p></item>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH4" linktype="flash">Flash で送信ボタンを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF15" linktype="pdf"/></p></item>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL10" linktype="silverlight"/></p></item>
+      <item><p><loc href="H32" linktype="html"/></p></item><item><p><loc href="H84" linktype="html"/></p></item>
+      <item><p><loc href="FLASH4" linktype="flash"/></p></item><item><p><loc href="PDF15" linktype="pdf"/></p></item>
+      <item><p><loc href="SL10" linktype="silverlight"/></p></item>
     </ulist>
   </item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G13" linktype="general"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR19" linktype="script"/></p></item>
+	<item><p><loc href="G13" linktype="general"/></p></item>
+	<item><p><loc href="SCR19" linktype="script"/></p></item>
 </olist>
 
 <note>
-<p>コンテンツの変化が常に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="context-changedef" linktype="glossary">コンテキストの変化</loc>であるとは限らない。コンテンツの変化がコンテキストの変化ではない場合、この達成基準は自動的に満たされていることになる。</p>
+<p>コンテンツの変化が常に<loc href="context-changedef" linktype="glossary">コンテキストの変化</loc>であるとは限らない。コンテンツの変化がコンテキストの変化ではない場合、この達成基準は自動的に満たされていることになる。</p>
 </note>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 3.2.2 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G201" linktype="general"/></p></item>
+	<item><p><loc href="G201" linktype="general"/></p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 3.2.2 のよくある不適合事例</head>
+<head/>
 <ulist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F36" linktype="failure">F36： フォームの最後のコントロールに入力すると、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</loc>
+                  <loc href="F36" linktype="failure"/>
                 </p></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F37" linktype="failure">F37: ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている</loc>
+                  <loc href="F37" linktype="failure"/>
                 </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F76" linktype="failure">F76: 利用者が見逃してしまうような位置に、ユーザインタフェース要素の設定を変更することにより起こる状況の変化に関する説明文を提供している</loc>
-                </p></item>
+
 </ulist>
 </div4>
 </div3>
