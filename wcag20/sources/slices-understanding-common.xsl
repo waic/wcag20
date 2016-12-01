@@ -361,6 +361,7 @@
   				</xsl:call-template>
   				<!--BBC: Removed because pubrules doesn't like multiple copyright notices
   					xsl:call-template name="footer"></xsl:call-template-->
+				<script src="https://www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script>
   			</body>
   		</html>
   	</xsl:result-document>
