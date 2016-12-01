@@ -811,7 +811,7 @@
 	    			</ul>
 	   			</div>
 	   		</xsl:if>
-      <div id="toc">
+      <nav id="toc">
       	<h2>目次</h2>
         <xsl:text>
 </xsl:text>
@@ -868,7 +868,7 @@
             -->
           </xsl:otherwise>
         </xsl:choose>
-      </div>
+      </nav>
       <hr/>
     </xsl:if>
 

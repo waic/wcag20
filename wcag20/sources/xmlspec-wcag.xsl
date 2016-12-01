@@ -163,7 +163,7 @@
 	
 	<xsl:template name="toc">
 		    <xsl:if test="$toc.level &gt; 0">
-      <div class="toc">
+      <nav id="toc">
         <xsl:text>
 </xsl:text>
         <hr/>
@@ -222,7 +222,7 @@
             </xsl:if>
           </xsl:otherwise>
         </xsl:choose>
-      </div>
+      </nav>
       <hr/>
     </xsl:if>
 

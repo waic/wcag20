@@ -370,7 +370,7 @@
        notes) -->
 	<xsl:template match="body">
 		<xsl:if test="$toc.level &gt; 0">
-			<div class="toc">
+			<nav id="toc">
 				<xsl:text>
 </xsl:text>
 				<h2>
@@ -413,7 +413,7 @@
 						</a>
 					</p>
 				</xsl:if>
-			</div>
+			</nav>
 			<hr/>
 		</xsl:if>
 		<div class="body">
@@ -1649,7 +1649,7 @@
 						</dl>
 					</div>
 				</xsl:if>
-				<script src="//www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script>
+				<script src="https://www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script>
 			</body>
 		</html>
 	</xsl:template>
