@@ -19,7 +19,7 @@
   <!-- BBC: added link to guidelines -->
   <!-- BBC: pulled this in to call a variation on the "css" template with custom styles -->
   <xsl:template match="spec">
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    <html>
       <xsl:if test="header/langusage/language">
         <xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
       	<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>

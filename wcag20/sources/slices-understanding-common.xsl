@@ -38,7 +38,6 @@
   		<html>
   			<xsl:if test="/spec/header/langusage/language">
   				<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
-  				<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   			</xsl:if>
   			<head>
   				<meta charset="UTF-8"/>
@@ -100,7 +99,6 @@
   		<html>
   			<xsl:if test="/spec/header/langusage/language">
   				<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
-  				<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   			</xsl:if>
   			<head>
   				<meta charset="UTF-8"/>
@@ -201,7 +199,6 @@
     	    <html>
     	    	<xsl:if test="/spec/header/langusage/language">
     	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
-    	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
     	    	</xsl:if>
     	    	<head>
   				<meta charset="UTF-8"/>
@@ -270,7 +267,6 @@
   	    <html>
   	    	<xsl:if test="/spec/header/langusage/language">
   	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
-  	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   	    	</xsl:if>
   	    	<head>
   				<meta charset="UTF-8"/>
@@ -321,7 +317,6 @@
   	    <html>
   	    	<xsl:if test="/spec/header/langusage/language">
   	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
-  	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
   	    	</xsl:if>
   	    	<head>
   				<meta charset="UTF-8"/>

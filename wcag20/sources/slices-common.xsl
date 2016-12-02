@@ -52,10 +52,9 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xmlns="http://www.w3.org/1999/xhtml">
+				<html>
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
-						<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
 					<head>
 						<title>
@@ -100,10 +99,9 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xml:lang="en-US" lang="en-US">
+				<html xml:lang="en-US">
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
-						<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
 					<head>
 						<title>
@@ -148,10 +146,9 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xmlns="http://www.w3.org/1999/xhtml">
+				<html>
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
-						<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
 					<head>
 						<title><xsl:value-of select="head"/><xsl:text> </xsl:text>
@@ -200,10 +197,9 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xmlns="http://www.w3.org/1999/xhtml">
+				<html>
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
-						<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
 					<head>
 						<title>
@@ -246,10 +242,9 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xmlns="http://www.w3.org/1999/xhtml">
+				<html>
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
-						<xsl:attribute name="xml:lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
 					<head>
 						<title>
