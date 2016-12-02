@@ -275,10 +275,10 @@ Austin)</affiliation>
                   <emph>十分な達成方法</emph> は達成基準を満たすのに信頼できる方法である。</p>
 					<ulist>
 						<item>
-							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれがユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ・サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
+							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれがユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
 						</item>
 						<item>
-							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ・サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
+							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
                <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3Cの<loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。 <emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
@@ -301,7 +301,7 @@ Austin)</affiliation>
 							<p>まだ安定していない技術に基づいている;</p>
 						</item>
 						<item>
-							<p>多くの場合において <loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ・サポーテッド</loc> でない (例えば、支援技術が達成方法に対応できていない);</p>
+							<p>多くの場合において <loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でない (例えば、支援技術が達成方法に対応できていない);</p>
 						</item>
 						<item>
 							<p>テスト可能でない;</p>
@@ -382,7 +382,7 @@ Austin)</affiliation>
 							<p>技術特有の達成方法の検証を通過したコンテンツは、必ずしもすべての WCAG 達成基準を満たしていない。いくつかの達成基準は一般的な達成方法のみを持っており、技術特有の達成方法を持っていない。</p>
 						</item>
 						<item>
-							<p>コンテンツはそのユーザに対して<loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ・サポーテッド</loc> でなければならない。いくつかの十分な達成方法は、一部のユーザが持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
+							<p>コンテンツはそのユーザに対して<loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でなければならない。いくつかの十分な達成方法は、一部のユーザが持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
 						</item>
 					</ulist>
 					<p>このように達成方法はコンテンツの評価において有益であるが、コンテンツが WCAG 達成基準にどのくらい適合しているか評価するためには、評価は十分な達成方法をただ検証することを超えて行わなければならない。</p>
@@ -391,7 +391,7 @@ Austin)</affiliation>
 				</div3>
 				<div3 id="understanding-techniques-support" role="normal">
 					<head>ユーザエージェント及び支援技術のサポートに関する注記</head>
-					<p>いくつかの達成方法では、ウェブコンテンツのユーザに対して、その達成方法が<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ・サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph> の節は、アクセシビリティ・サポーテッドを判断するのに役立つ情報を含んでいる。</p>
+					<p>いくつかの達成方法では、ウェブコンテンツのユーザに対して、その達成方法が<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph> の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。</p>
 					<div4 id="understanding-techniques-support-change" role="normal">
 						<head>サポートに関する注記は時間とともに変化する</head>
 						<p>時間の経過に伴い、列挙されているユーザエージェント（ブラウザなど）や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、ユーザが現時点で利用可能なユーザエージェントや支援技術を用いて達成方法を検証することが望ましい。<loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">Understanding Accessibility Support</loc>も参照のこと.</p>
@@ -516,18 +516,18 @@ Austin)</affiliation>
 	<item><p>ウェブコンテンツ技術をサポートする支援技術のそれぞれについて：</p><ulist><item><p>支援技術のバージョン。使用する OS 又はプラットフォームを含む。</p></item></ulist></item>
 	<item><p>支援技術のこのバージョンによりサポートされている、ホストユーザーエージェントのそれぞれについて：</p><ulist><item><p>このユーザーエージェントに対する支援技術がサポートしている技術の使用法。</p></item><item><p>このユーザーエージェントで支援技術を用いることにより<phrase>達成基準を満たす</phrase>ウェブコンテンツ技術の<phrase>使用法</phrase>へのサポートにおける既知の制限。</p></item></ulist></item>
 </ulist>
-<p>ターゲットとする環境は、その利用者にとって入手可能なユーザーエージェント及び支援技術によって決まる。アクセシビリティ・サポートの文書化には、達成基準を満たす技術の機能の使用法、そしてユーザーエージェント及び支援技術の機能に関する詳細な理解が必要である。このために、ウェブ技術及びユーザーエージェントの開発者とベンダーには、製品のアクセシビリティ・サポートに関する情報を提供することが望まれる。同様に、支援技術の開発者とベンダーにも、その製品がサポート<phrase>する</phrase>ウェブコンテンツ技術の<phrase>使用法</phrase>に関する情報を提供することが望まれる。コンテンツ制作者は、<phrase>ある技術の使用法</phrase>に関してベンダーあるいは検証者のグループから信頼できる文書が提供されていないときのみ、その技術のアクセシビリティ・サポーテッドな<phrase>使用法</phrase>を<phrase>文書化する必要がある</phrase>。</p>
-<p>例えば企業の職場などのように、制御された環境においては、利用可能なユーザーエージェント及び支援技術は、特定のプラットフォーム上における特定のバージョンのユーザーエージェントである可能性がある。ウェブコンテンツ技術の<phrase>使用法</phrase>が、そのターゲットとなる環境においてアクセシビリティ・サポーテッドであるかどうかを判断するためには、コンテンツ制作者は、利用可能なユーザーエージェント及び支援技術が、アクセシビリティ・サポート文書の中で挙げられている、サポートしているユーザーエージェント及び支援技術に該当するかどうかを確認する必要がある。</p>
+<p>ターゲットとする環境は、その利用者にとって入手可能なユーザーエージェント及び支援技術によって決まる。アクセシビリティ・サポートの文書化には、達成基準を満たす技術の機能の使用法、そしてユーザーエージェント及び支援技術の機能に関する詳細な理解が必要である。このために、ウェブ技術及びユーザーエージェントの開発者とベンダーには、製品のアクセシビリティ・サポートに関する情報を提供することが望まれる。同様に、支援技術の開発者とベンダーにも、その製品がサポート<phrase>する</phrase>ウェブコンテンツ技術の<phrase>使用法</phrase>に関する情報を提供することが望まれる。コンテンツ制作者は、<phrase>ある技術の使用法</phrase>に関してベンダーあるいは検証者のグループから信頼できる文書が提供されていないときのみ、その技術のアクセシビリティ サポーテッドな<phrase>使用法</phrase>を<phrase>文書化する必要がある</phrase>。</p>
+<p>例えば企業の職場などのように、制御された環境においては、利用可能なユーザーエージェント及び支援技術は、特定のプラットフォーム上における特定のバージョンのユーザーエージェントである可能性がある。ウェブコンテンツ技術の<phrase>使用法</phrase>が、そのターゲットとなる環境においてアクセシビリティ サポーテッドであるかどうかを判断するためには、コンテンツ制作者は、利用可能なユーザーエージェント及び支援技術が、アクセシビリティ・サポート文書の中で挙げられている、サポートしているユーザーエージェント及び支援技術に該当するかどうかを確認する必要がある。</p>
 <p>ターゲットとするのがインターネットのような環境である場合は、コンテンツ制作者は旧バージョンを含むユーザーエージェントと様々なプラットフォーム上でのより多様な組合せを考慮する必要があるかもしれない。</p>
-<p>異なる自然言語を用いる環境は、ターゲットとなる環境も異なってくる。例えば、ウェブ技術のアクセシビリティ・サポーテッドな使用法は、英語の環境とアラビア言語の環境とでは異なる可能性がある。なぜなら、それぞれの言語をサポートするユーザーエージェント及び支援技術が異なるかもしれないからである。</p><p>文書化する際には、すべての支援技術及びすべてのユーザーエージェント、そしてそれぞれが互いに情報のやりとりをする方法に関するバージョン特有の情報を含める。それらのユーザーエージェントにおけるサポートが似通っていれば、コンテンツ制作者が文書化されているウェブコンテンツ技術の使用法がアクセシビリティ・サポーテッドかどうかを判断するのは簡単であろう。サポートされている<phrase>使用法</phrase>がバージョンによって異なる場合、コンテンツ制作者は、アクセシビリティ・サポートかどうかを判断する際には、利用者が使用可能なバージョンにおいてサポートされている<phrase>使用法</phrase>だけに依存することだけができる。</p>
-<p>ウェブコンテンツ技術のある使用法が適合する上で依存されていなければ、その使用法がアクセシビリティ・サポートでなかったとしても、ウェブページの適合を妨げることにはならない。サポートされていない使用法がコンテンツで発生しない場合、あるいはそのコンテンツの適合しているバージョンが利用可能である場合、そのウェブページは適合していることになる。例えば、あるウェブコンテンツ技術のインタラクティブなコントロールにアクセシビリティ・サポートが欠如していたとしても、アクセシビリティ・サポーテッドであるインタラクティブでないコンテンツでそのウェブコンテンツ技術を使用することを禁じるものではない</p>
+<p>異なる自然言語を用いる環境は、ターゲットとなる環境も異なってくる。例えば、ウェブ技術のアクセシビリティ サポーテッドな使用法は、英語の環境とアラビア言語の環境とでは異なる可能性がある。なぜなら、それぞれの言語をサポートするユーザーエージェント及び支援技術が異なるかもしれないからである。</p><p>文書化する際には、すべての支援技術及びすべてのユーザーエージェント、そしてそれぞれが互いに情報のやりとりをする方法に関するバージョン特有の情報を含める。それらのユーザーエージェントにおけるサポートが似通っていれば、コンテンツ制作者が文書化されているウェブコンテンツ技術の使用法がアクセシビリティ サポーテッドかどうかを判断するのは簡単であろう。サポートされている<phrase>使用法</phrase>がバージョンによって異なる場合、コンテンツ制作者は、アクセシビリティ・サポートかどうかを判断する際には、利用者が使用可能なバージョンにおいてサポートされている<phrase>使用法</phrase>だけに依存することだけができる。</p>
+<p>ウェブコンテンツ技術のある使用法が適合する上で依存されていなければ、その使用法がアクセシビリティ・サポートでなかったとしても、ウェブページの適合を妨げることにはならない。サポートされていない使用法がコンテンツで発生しない場合、あるいはそのコンテンツの適合しているバージョンが利用可能である場合、そのウェブページは適合していることになる。例えば、あるウェブコンテンツ技術のインタラクティブなコントロールにアクセシビリティ サポートが欠如していたとしても、アクセシビリティ サポーテッドであるインタラクティブでないコンテンツでそのウェブコンテンツ技術を使用することを禁じるものではない</p>
 </inform-div1>
 
 <inform-div1 id="understanding-metadata">
 <head>メタデータを理解する</head>
 <p>この節では、WCAG 2.0 の達成基準に適合するために用いることのできるメタデータの達成方法について説明する。メタデータに関するより詳細な情報は、以下にあるリソースを参照のこと。</p>
 <p>最も基本的なレベルでは、メタデータは本質的に 'データに関するデータ' であり、リソースを説明するため及び探すための両方に用いられる。</p>
-<p>メタデータは、ウェブページ及びウェブページのアクセシブルなコンポーネントを説明するためにも、ウェブコンテンツの代替バージョンをお互いに関連付けるためにも用いることのできる強力なツールである。言い換えると、メタデータによる説明によって、利用者が自分の求めている又は好んでいる特定の情報を見つけることができるようになる。</p><p>WCAG と併用することで、メタデータは次のような数多くの役割を果たすことができる：</p>
+<p>メタデータは、ウェブページ及びウェブページのアクセシブルなコンポーネントを説明するためにも、ウェブコンテンツの代替バージョンをお互いに関連付けるためにも用いることのできる強力なツールである。言い換えると、メタデータによる説明によって、利用者が自分の求めている又は好んでいる特定の情報を見つけることができるようになる。</p><p>WCAG と併用することで、メタデータは次のような数多くの役割を果たすことができる:</p>
 <olist>
 	<item><p>利用者が自分の使うことのできない不適合のページにやってきたときに、適合している代替バージョンを見つけられるようにするために、メタデータを用いてウェブページの適合している代替バージョンと適合していないウェブページとを関連付けることができる。</p></item>
 	<item><p>制作されたページに複数のバージョンがあるとき、特に代替ページが様々な障害のある利用者に最適化されている場合に、その代替ページの場所を示して説明するために、メタデータを用いることができる。利用者はメタデータを用いて、代替バージョンを見つけることも、そのバージョンの特徴を確認することもできる。それによって、利用者は自分のニーズに最も合うものを探すことができる。</p></item>
@@ -537,31 +537,18 @@ Austin)</affiliation>
 <head>メタデータに関するリソース</head><p>メタデータによる説明は、リソースの題目又はその発行日などのように、定義済みの合意されたボキャブラリの値を提供する。そして、機械的に読み取ることが可能である。用いられているメタデータのスキームを理解しているソフトウェアは、有用なタスクを行うことができる。通常は、メタデータを持つオブジェクトには、そのようなメタデータによる説明が一つ以上ある。</p>
 <p>メタデータのよく知られている仕様（スキーマ）には、次のようなものがある：</p>
 <ulist>
-	<item><p>
-              <loc href="http://www.loc.gov/standards/mets/">Metadata Encoding and Transmission Standard (METS) scheme</loc>
-            </p></item>
-	<item><p>
-              <loc href="http://dublincore.org">Dublin Core Metadata Initiative (DCMI) terms for cross-disciplinary resources</loc>
-            </p></item>
-	<item><p>
-              <loc href="http://www.ieeeltsc.org/standards">IEEE Standard for Learning Object Metadata 1484.12.1-2002</loc>
-            </p></item><!-- BBC: Commented out Dec. 2008 (broken linkserver non-responsive) item>
-            <p>
-              <loc href="http://jtc1sc36.org/Workgroups/Work%20Group%20Seven">ISO/IEC JTC1 Individualized Adaptability and Accessibility for Learning, Education and Training 24751</loc> otherwise known as the Access For All (AfA) Metadata </p>
-          </item-->
+	<item><p><loc href="http://www.loc.gov/standards/mets/">Metadata Encoding and Transmission Standard (METS) scheme</loc></p></item>
+	<item><p><loc href="http://dublincore.org">Dublin Core Metadata Initiative (DCMI) terms for cross-disciplinary resources</loc></p></item>
+	<item><p><loc href="http://www.ieee.org/index.html">IEEE Standards</loc></p></item>
 </ulist>
 <p>リソースの説明を提供するツールがいくつか入手可能である。あるいは、その説明は人的に提供することが可能である。メタデータの作成及びリソースの作成又は発行時点でのメタデータの収集がもっと容易になればなるほど、プロセスはより効果的になり、より多く使われるようになるはずである。</p>
 <p>次のような例がある：</p>
 <ulist>
-	<item><p>
-              <loc href="http://www.ukoln.ac.uk/metadata/dcdot/">DC-dot</loc>
-            </p></item>
+	<item><p><loc href="http://www.ukoln.ac.uk/metadata/dcdot/">DC-dot</loc></p></item>
 </ulist>
 <p>アクセシビリティ・メタデータの実装には、次のようなものがある：</p>
 <ulist>
-	<item><p>
-              <loc href="http://barrierfree.ca/tile/">The Inclusive Learning Exchange (TILE)</loc>
-            </p></item>
+	<item><p><loc href="http://barrierfree.ca/tile/">The Inclusive Learning Exchange (TILE)</loc></p></item>
 </ulist>
 </div2>
 <!--div2 role="normal">
@@ -667,7 +654,7 @@ Austin)</affiliation>
 	<bibl id="ARDITI-KNOBLAUCH-1994" key="ARDITI-KNOBLAUCH">Arditi, A. and Knoblauch, K. (1994). Choosing effective display colors for the partially-sighted. Society for Information Display International Symposium Digest of Technical Papers, 25, 32-35.</bibl>
 	<bibl id="ARDITI-KNOBLAUCH-1996" key="ARDITI-KNOBLAUCH-1996">Arditi, A. and Knoblauch, K. (1996). Effective color contrast and low vision. In B. Rosenthal and R. Cole (Eds.) Functional Assessment of Low Vision. St. Louis, Mosby, 129-135.</bibl>
 	<bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. The project is online at <loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
-	<bibl id="EPFND" key="EPFND"> Experts Issue Recommendations to Protect Public from Seizures Induced by TV / Videogames. A copy of the standard is available at <loc href="http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm">http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm</loc>.</bibl>
+	<!-- <bibl id="EPFND" key="EPFND"> Experts Issue Recommendations to Protect Public from Seizures Induced by TV / Videogames. A copy of the standard is available at <loc href="http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm">http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm</loc>.</bibl> -->
 	<bibl id="GITTINGS-FOZARD" key="GITTINGS-FOZARD">Gittings, NS and Fozard, JL (1986). Age related changes in visual acuity. Experimental Gerontology, 21(4-5), 423-433.</bibl>
 	<bibl id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
 	<bibl id="HEARING-AID-INT" key="HEARING-AID-INT">Levitt, H., Kozma-Spytek, L., &amp; Harkins, J. (2005). In-the-ear measurements of interference in hearing aids from digital wireless telephones. Seminars in Hearing, 26(2), 87.</bibl>
