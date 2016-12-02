@@ -5,7 +5,7 @@
 <header>
 <title>WCAG 2.0 解説書</title>
 <subtitle>WCAG 2.0 を理解して実装するためのガイド</subtitle>
-<trdisclaimer><p>【注意】 この文書は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</loc>を、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/">ウェブアクセシビリティ基盤委員会（WAIC）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p>
+<trdisclaimer><p>【注意】 この文書は、<loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</loc>を、「<loc href="http://waic.jp/">ウェブアクセシビリティ基盤委員会（WAIC）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p>
 <p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p>
 </trdisclaimer>
 <version/>
@@ -18,22 +18,22 @@
 </pubdate>
 <publoc>
 	<!--<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/</loc>-->
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc>
+	<loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc>
 </publoc>
 <altlocs>
-<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="complete.html">単一ファイル版</loc>
+<loc href="complete.html">単一ファイル版</loc>
 	<!--loc href="complete-diff.html">差分を示した単一ファイル版</loc-->
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/WCAG20/versions/understanding/">Understanding WCAG 2.0のその他のバージョン（英語）</loc>
+	<loc href="http://www.w3.org/WAI/WCAG20/versions/understanding/">Understanding WCAG 2.0のその他のバージョン（英語）</loc>
 </altlocs>
 <latestloc>
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">http://www.w3.org/TR/UNDERSTANDING-WCAG20/</loc>
+	<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">http://www.w3.org/TR/UNDERSTANDING-WCAG20/</loc>
 	<!-- <loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/">http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/</loc> --></latestloc>
 <prevlocs>
 	<!-- 
 	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/ (public review copy)</loc>
       	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/ (internal review copy)</loc>
 	-->
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/">http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/</loc>
+	<loc href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/">http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/</loc>
     </prevlocs>
 
       <authlist>
@@ -75,33 +75,33 @@ Austin)</affiliation>
 		</authlist>
 
 <status>
-<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
+<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
 
-<p>これは、ワーキンググループ・ノートの「WCAG 2.0 解説書」である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>では、この文書は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="../WCAG20/">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり（ガイダンスを提供している）、規定文書ではない（WCAG 2.0 に適合するための要件を定めていない）ことに留意してほしい。</p>
+<p>これは、ワーキンググループ・ノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>では、この文書は <loc href="../WCAG20/">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり（ガイダンスを提供している）、規定文書ではない（WCAG 2.0 に適合するための要件を定めていない）ことに留意してほしい。</p>
 
-<p>WCAG 2.0 解説書は、ワーキンググループ・ノートとして<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">2008年12月11日に発行</loc>され、2010年10月14日、2012年1月3日、2013年9月5日、2014年3月3日、2014年4月8日、2014年9月16日、2015年2月26日に更新された。この新版では、WCAG2.0の補足情報を更新している。WCAG2.0自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、第三者によるコンテンツに起因する部分適合表明に関する説明を追加したことである。</p>
+<p>WCAG 2.0 解説書は、ワーキンググループ・ノートとして<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">2008年12月11日に発行</loc>され、2010年10月14日、2012年1月3日、2013年9月5日、2014年3月3日、2014年4月8日、2014年9月16日、2015年2月26日に更新された。この新版では、WCAG2.0の補足情報を更新している。WCAG2.0自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、第三者によるコンテンツに起因する部分適合表明に関する説明を追加したことである。</p>
 
 <!--<phrase role="ext-review">The purpose of this draft is to collect public feedback on proposed changes since the <loc href="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/">Understanding WCAG 2.0 Working Group Note of 14 October 2010</loc>. The Working Group intends to publish an updated Note once feedback from this review has been incorporated. <emph role="bold">The existing Understanding document remains in place as a W3C Note</emph> while this separate draft update is under review and the WCAG Working Group addresses comments.</phrase> Updates include addition of PDF and Silverlight techniques, and clarifications based on input from the public and translators.--> 
 
 
-<p>変更点は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="complete-diff">diff-marked 版</loc>においてハイライト表示している。</p>
+<p>変更点は <loc href="complete-diff">diff-marked 版</loc>においてハイライト表示している。</p>
 
-<p>ワーキンググループへのコメントは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc>を使って送っていただきたい。もしそれができない場合は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>宛に電子メールで送信することもできる。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://lists.w3.org/Archives/Public/public-comments-wcag20/"> archives for the public comments list</loc>は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<!--なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。--><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://lists.w3.org/Archives/Public/w3c-wai-gl/"> WCAG WG mailing list discussions</loc>も一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
+<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc>を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/"> archives for the public comments list</loc>は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<!--なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。--><loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/"> WCAG WG mailing list discussions</loc>も一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
 
-<p>この文書は、W3Cの <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/">Web Accessibility Initiative</loc>(WAI)の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/GL/new-charter-2000.html">WCAG Working Group charter</loc>に記載されている。WCAG ワーキンググループは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc>の一つである。</p>
+<p>この文書は、W3Cの <loc href="http://www.w3.org/WAI/">Web Accessibility Initiative</loc>(WAI)の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="http://www.w3.org/WAI/GL/new-charter-2000.html">WCAG Working Group charter</loc>に記載されている。WCAG ワーキンググループは、<loc href="http://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc>の一つである。</p>
 <p>ワーキンググループ・ノートとしての公開は、W3C 会員によって承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、他の文書によって置き換えられたり、廃止されたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
-<p>この文書は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc xmlns:xlink="http://www.w3.org/1999/xlink" role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc>を含む特許について実際に知識のある人は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc>に従って、その情報を開示することが求められる。 </p>
-<p>この文書は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc>によって管理されている。</p>
+<p>この文書は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc>を含む特許について実際に知識のある人は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc>に従って、その情報を開示することが求められる。 </p>
+<p>この文書は<loc href="http://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc>によって管理されている。</p>
 </status>
 
 <abstract>
-<p>この文書、「WCAG 2.0 解説書」は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="../WCAG20/">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
+<p>この文書、「WCAG 2.0 解説書」は、<loc href="../WCAG20/">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
 
-<p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術（例えば、HTML、CSS、XML）を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、（それ単体もしくは他の達成方法との併用により、）ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、（テスト可能ではない、あるいは、完全な支援ができないので、）それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
+<p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術（例えば、HTML、CSS、XML）を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、（それ単体もしくは他の達成方法との併用により、）ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、（テスト可能ではない、あるいは、完全な支援ができないので、）それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
 
 <p>達成基準を満たす達成方法に加えて、「よくある失敗例」も文書化されている。これらの「よくある失敗例」はWCAG2.0への不適合を引き起こすものとして知られている制作方法である。制作者は、WCAG2.0の達成基準を満たすためにそれらの方法を避けなければならない。</p>
 
-<p>この文書は、W3C Web Accessibility Initiative (WAI)が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループ・ノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 解説書」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
+<p>この文書は、W3C Web Accessibility Initiative (WAI)が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループ・ノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 解説書」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
 </abstract>
 
 <langusage>
@@ -109,7 +109,7 @@ Austin)</affiliation>
 </langusage>
 <revisiondesc>
 <p>
-	<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/GL/WCAG20/change-history.html">WCAG 2.0原案の変更履歴（英語）</loc>
+	<loc href="http://www.w3.org/WAI/GL/WCAG20/change-history.html">WCAG 2.0原案の変更履歴（英語）</loc>
 </p>
 </revisiondesc>
 </header>
@@ -121,7 +121,7 @@ Austin)</affiliation>
 <head>Intro</head>
 
 <p>「WCAG 2.0 解説書」は、"WCAG (Web Content Accessibility Guidelines) 2.0" <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の規定となる定義や要件はすべて WCAG 2.0 自体の文書で読むことができるが、その考え方や条項に馴染みのない方もいるかもしれない。「WCAG 2.0 解説書」は、読者の皆さんがその意図やどのようにガイドラインと達成基準が連携しているのかをよりよく理解できるように、各ガイドライン、及び、各達成基準について、WCAG 2.0 の規定にはならない詳細な解説を提供している。また、それぞれの達成基準を満たすのに十分であることをワーキンググループが確認した達成方法、及び、達成方法の組合せの事例も紹介している。そして、それぞれの達成方法の詳細にもリンクを提供している。</p>
-<p>この文書は、入門書ではなく、ガイドラインとその達成基準に関する詳細な技術解説である。WCAG やその関連技術文書、教育用素材などへのイントロダクションは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要</loc>を参照のこと。</p>
+<p>この文書は、入門書ではなく、ガイドラインとその達成基準に関する詳細な技術解説である。WCAG やその関連技術文書、教育用素材などへのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要</loc>を参照のこと。</p>
 
 <p>「WCAG 2.0 解説書」は、ガイドラインごとに構成されている。各ガイドラインには、ガイドライン X.X を理解する という節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。<emph>ガイドライン X.X を理解する</emph>という節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。</p>
 
@@ -139,8 +139,8 @@ Austin)</affiliation>
 	<item><p>この達成基準における重要な用語（WCAG 2.0 の用語集から引用）</p></item>
 </ulist>
 
-<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph> という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の <emph>達成基準 X.X.X を理解する</emph> という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で関心のある達成方法を参照のこと。</p>
-<p>様々な障害や支援技術に関する情報については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://en.wikipedia.org/wiki/Disabilities">Wikipedia にある「障害 (disabilities)」（英語）</loc>を参照のこと。</p>
+<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph> という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の <emph>達成基準 X.X.X を理解する</emph> という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で関心のある達成方法を参照のこと。</p>
+<p>様々な障害や支援技術に関する情報については、<loc href="http://en.wikipedia.org/wiki/Disabilities">Wikipedia にある「障害 (disabilities)」（英語）</loc>を参照のこと。</p>
 
 <div3 id="fourprincs" role="normal">
 <head>アクセシビリティの4つの原則を理解する</head>
@@ -176,13 +176,13 @@ Austin)</affiliation>
 <div4 id="layers-guidelines" role="normal">
 <head>ガイドライン</head>
 
-<p>それぞれの原則の下には、その原則に対応するガイドラインのリストがある。全部で12のガイドラインがある。ガイドラインだけの一覧は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="contents" linktype="guideline">WCAG 2.0 目次</loc>で見ることができる。ガイドラインの重要な目的の一つは、コンテンツが、できるだけ多くの利用者にとってそのままでアクセシブルであるようにすることであり、様々な利用者の感覚的、身体的及び認知的能力に合った様々な形態で再提示できるようにすることである。</p>
+<p>それぞれの原則の下には、その原則に対応するガイドラインのリストがある。全部で12のガイドラインがある。ガイドラインだけの一覧は、<loc href="contents" linktype="guideline">WCAG 2.0 目次</loc>で見ることができる。ガイドラインの重要な目的の一つは、コンテンツが、できるだけ多くの利用者にとってそのままでアクセシブルであるようにすることであり、様々な利用者の感覚的、身体的及び認知的能力に合った様々な形態で再提示できるようにすることである。</p>
 </div4>
 
 <div4 id="layers-sc" role="normal">
 <head>達成基準</head>
 
-<p>それぞれのガイドラインの下には、WCAG 2.0 に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformancedef" linktype="guideline">適合</loc>するためには何をしなければならないのかを具体的に記述した達成基準がある。それは、WCAG 1.0 における「チェックポイント」によく似たものである。それぞれの達成基準は、特定のウェブコンテンツをその達成基準によってテストしたときに適合もしくは不適合が判別できるように記述されている。そして、達成基準はウェブコンテンツ技術に依存しないように書かれている。</p>
+<p>それぞれのガイドラインの下には、WCAG 2.0 に<loc href="conformancedef" linktype="guideline">適合</loc>するためには何をしなければならないのかを具体的に記述した達成基準がある。それは、WCAG 1.0 における「チェックポイント」によく似たものである。それぞれの達成基準は、特定のウェブコンテンツをその達成基準によってテストしたときに適合もしくは不適合が判別できるように記述されている。そして、達成基準はウェブコンテンツ技術に依存しないように書かれている。</p>
 
 <p>WCAG 2.0 の達成基準はすべて、コンテンツがその達成基準を満たしているかどうかを客観的に判断するテスト可能な基準として記述されている。テストには、評価プログラムのソフトウェアを用いた自動化可能なものもあれば、その一部又は全部に人間によるテストを必要とするものもある。</p>
 
@@ -413,9 +413,9 @@ Austin)</affiliation>
 				</div3>
 			</div2>
 		</div1>
-<!-- p>WCAG 2.0 の中にウェブコンテンツ技術特有の達成方法を記述するのではなく、ガイドライン及び達成基準自体は、ウェブコンテンツ技術に依存しない方法で記述されている。特定のウェブコンテンツ技術（例えば、HTML）を用いてガイドラインを満たすためのガイダンスや事例を提供するために、ワーキンググループは達成基準ごとにその達成基準を満たすのに十分であると考えられる<emph role="bolditalic">十分な達成方法</emph>というものを特定した。十分な達成方法は、番号付きリストで提供されており、各リスト項目は達成基準を満たすために用いることが可能な単一の達成方法又は複数の達成方法の組み合わせとなっている。番号付きのリスト項目で 「及び（かつ）」 によってつながれている複数の達成方法がある場合には、その全ての達成方法を用いなければならない。例えば、「達成基準 2.2.1を理解する」の「状況B」では、「SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する (Scripting) 及び SCR1: 利用者が初期設定の制限時間を延長できるようにする (Scripting) 」という組み合わせを三番目の達成方法として挙げている。</p><p>十分な達成方法の一覧は、「WCAG 2.0 文書群」の中で維持管理されている（「WCAG 2.0を満たす方法」にも反映されている）。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/docs/WCAG-TECHS/intro.html">「WCAG 2.0 達成方法集」のイントロダクション</loc>では、現時点で十分な達成方法があるウェブコンテンツ技術を挙げている。 WCAG 2.0の規定文書（勧告文書）とそのガイドラインにある達成基準を満たすために用いられる達成方法とを別々の文書にすることによって、新しい達成方法が見つかったときやウェブコンテンツ技術及び支援技術の進化に応じて、その一覧を更新していくことが可能である。</p>
+<!-- p>WCAG 2.0 の中にウェブコンテンツ技術特有の達成方法を記述するのではなく、ガイドライン及び達成基準自体は、ウェブコンテンツ技術に依存しない方法で記述されている。特定のウェブコンテンツ技術（例えば、HTML）を用いてガイドラインを満たすためのガイダンスや事例を提供するために、ワーキンググループは達成基準ごとにその達成基準を満たすのに十分であると考えられる<emph role="bolditalic">十分な達成方法</emph>というものを特定した。十分な達成方法は、番号付きリストで提供されており、各リスト項目は達成基準を満たすために用いることが可能な単一の達成方法又は複数の達成方法の組み合わせとなっている。番号付きのリスト項目で 「及び（かつ）」 によってつながれている複数の達成方法がある場合には、その全ての達成方法を用いなければならない。例えば、「達成基準 2.2.1を理解する」の「状況B」では、「SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する (Scripting) 及び SCR1: 利用者が初期設定の制限時間を延長できるようにする (Scripting) 」という組み合わせを三番目の達成方法として挙げている。</p><p>十分な達成方法の一覧は、「WCAG 2.0 文書群」の中で維持管理されている（「WCAG 2.0を満たす方法」にも反映されている）。<loc href="http://waic.jp/docs/WCAG-TECHS/intro.html">「WCAG 2.0 達成方法集」のイントロダクション</loc>では、現時点で十分な達成方法があるウェブコンテンツ技術を挙げている。 WCAG 2.0の規定文書（勧告文書）とそのガイドラインにある達成基準を満たすために用いられる達成方法とを別々の文書にすることによって、新しい達成方法が見つかったときやウェブコンテンツ技術及び支援技術の進化に応じて、その一覧を更新していくことが可能である。</p>
 
-<p>留意すべきは、すべての達成方法は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="informativedef" linktype="glossary">参考情報</loc>であるということである。「十分な達成方法」は、WCAG ワーキンググループがその達成基準を満たすのに十分であると考えたものである。しかし、必ずしもそれらの特定の達成方法を用いる必要はない。もし、ワーキンググループが挙げた達成方法以外のものを用いるのであれば、その十分な達成方法として確立する何らかの手段が必要となるであろう。</p>
+<p>留意すべきは、すべての達成方法は<loc href="informativedef" linktype="glossary">参考情報</loc>であるということである。「十分な達成方法」は、WCAG ワーキンググループがその達成基準を満たすのに十分であると考えたものである。しかし、必ずしもそれらの特定の達成方法を用いる必要はない。もし、ワーキンググループが挙げた達成方法以外のものを用いるのであれば、その十分な達成方法として確立する何らかの手段が必要となるであろう。</p>
 
 <p>ほとんどの達成基準では、十分な達成方法が複数、記載されている。記載されている十分な達成方法のいずれかを用いて、達成基準を満たすことができる。他にも、ワーキンググループが文書化していない、十分な達成方法があるかもしれない。十分な達成方法が新たに確認されれば、追加されることだろう。</p>
 
@@ -454,7 +454,7 @@ Austin)</affiliation>
 <inform-div1 id="conformance-referencing">
 <head>他の文書からの WCAG 2.0 の参照方法</head>
 
-<p>以下の事例は、さまざまな状況におけるWCAG 2.0の参照方法を示すものである。他のガイダンスについては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/intro/linking.html">Referencing and Linking to WAI Guidelines and Technical Documents</loc>を参照のこと。</p>
+<p>以下の事例は、さまざまな状況におけるWCAG 2.0の参照方法を示すものである。他のガイダンスについては、<loc href="http://www.w3.org/WAI/intro/linking.html">Referencing and Linking to WAI Guidelines and Technical Documents</loc>を参照のこと。</p>
 <p>WCAG 2.0 を参照するために用いる次の言葉を文書に挿入することが可能である。</p>
 
 <div2 role="normal" id="conformance-referencing-information">
@@ -538,13 +538,13 @@ Austin)</affiliation>
 <p>メタデータのよく知られている仕様（スキーマ）には、次のようなものがある：</p>
 <ulist>
 	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.loc.gov/standards/mets/">Metadata Encoding and Transmission Standard (METS) scheme</loc>
+              <loc href="http://www.loc.gov/standards/mets/">Metadata Encoding and Transmission Standard (METS) scheme</loc>
             </p></item>
 	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://dublincore.org">Dublin Core Metadata Initiative (DCMI) terms for cross-disciplinary resources</loc>
+              <loc href="http://dublincore.org">Dublin Core Metadata Initiative (DCMI) terms for cross-disciplinary resources</loc>
             </p></item>
 	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ieeeltsc.org/standards">IEEE Standard for Learning Object Metadata 1484.12.1-2002</loc>
+              <loc href="http://www.ieeeltsc.org/standards">IEEE Standard for Learning Object Metadata 1484.12.1-2002</loc>
             </p></item><!-- BBC: Commented out Dec. 2008 (broken linkserver non-responsive) item>
             <p>
               <loc href="http://jtc1sc36.org/Workgroups/Work%20Group%20Seven">ISO/IEC JTC1 Individualized Adaptability and Accessibility for Learning, Education and Training 24751</loc> otherwise known as the Access For All (AfA) Metadata </p>
@@ -554,13 +554,13 @@ Austin)</affiliation>
 <p>次のような例がある：</p>
 <ulist>
 	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ukoln.ac.uk/metadata/dcdot/">DC-dot</loc>
+              <loc href="http://www.ukoln.ac.uk/metadata/dcdot/">DC-dot</loc>
             </p></item>
 </ulist>
 <p>アクセシビリティ・メタデータの実装には、次のようなものがある：</p>
 <ulist>
 	<item><p>
-              <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://barrierfree.ca/tile/">The Inclusive Learning Exchange (TILE)</loc>
+              <loc href="http://barrierfree.ca/tile/">The Inclusive Learning Exchange (TILE)</loc>
             </p></item>
 </ulist>
 </div2>
@@ -661,27 +661,27 @@ Austin)</affiliation>
 <inform-div1 id="references">
 <head>参考文献</head>
 <blist>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ANSI-HFES-100-1988" key="ANSI-HFES-100-1988">ANSI/HFS 100-1988, American National Standard for Human Factors Engineering of Visual Display Terminal Workstations, Section 6, pp. 17-20.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ARDITI" key="ARDITI">Arditi, A. (2002). Effective color contrast: designing for people with partial sight and color deficiencies. New York, Arlene R. Gordon Research Institute, Lighthouse International. Also available at <loc href="http://www.lighthouse.org/accessibility/effective-color-contrast/">http://www.lighthouse.org/color_contrast.htm</loc>.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ARDITI-FAYE" key="ARDITI-FAYE">Arditi, A. and Faye, E. (2004). Monocular and binocular letter contrast sensitivity and letter acuity in a diverse ophthalmologic practice. Supplement to Optometry and Vision Science, 81 (12S), 287.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ARDITI-KNOBLAUCH-1994" key="ARDITI-KNOBLAUCH">Arditi, A. and Knoblauch, K. (1994). Choosing effective display colors for the partially-sighted. Society for Information Display International Symposium Digest of Technical Papers, 25, 32-35.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ARDITI-KNOBLAUCH-1996" key="ARDITI-KNOBLAUCH-1996">Arditi, A. and Knoblauch, K. (1996). Effective color contrast and low vision. In B. Rosenthal and R. Cole (Eds.) Functional Assessment of Low Vision. St. Louis, Mosby, 129-135.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. The project is online at <loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="EPFND" key="EPFND"> Experts Issue Recommendations to Protect Public from Seizures Induced by TV / Videogames. A copy of the standard is available at <loc href="http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm">http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm</loc>.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="GITTINGS-FOZARD" key="GITTINGS-FOZARD">Gittings, NS and Fozard, JL (1986). Age related changes in visual acuity. Experimental Gerontology, 21(4-5), 423-433.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="HEARING-AID-INT" key="HEARING-AID-INT">Levitt, H., Kozma-Spytek, L., &amp; Harkins, J. (2005). In-the-ear measurements of interference in hearing aids from digital wireless telephones. Seminars in Hearing, 26(2), 87.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB. May 5, 1998.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="ISO-9241-3">ISO 9241-3, Ergonomic requirements for office work with visual display terminals (VDTs) - Part 3: Visual display requirements. Amendment 1.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="I18N-CHAR-ENC" key="I18N-CHAR-ENC">
+	<bibl id="ANSI-HFES-100-1988" key="ANSI-HFES-100-1988">ANSI/HFS 100-1988, American National Standard for Human Factors Engineering of Visual Display Terminal Workstations, Section 6, pp. 17-20.</bibl>
+	<bibl id="ARDITI" key="ARDITI">Arditi, A. (2002). Effective color contrast: designing for people with partial sight and color deficiencies. New York, Arlene R. Gordon Research Institute, Lighthouse International. Also available at <loc href="http://www.lighthouse.org/accessibility/effective-color-contrast/">http://www.lighthouse.org/color_contrast.htm</loc>.</bibl>
+	<bibl id="ARDITI-FAYE" key="ARDITI-FAYE">Arditi, A. and Faye, E. (2004). Monocular and binocular letter contrast sensitivity and letter acuity in a diverse ophthalmologic practice. Supplement to Optometry and Vision Science, 81 (12S), 287.</bibl>
+	<bibl id="ARDITI-KNOBLAUCH-1994" key="ARDITI-KNOBLAUCH">Arditi, A. and Knoblauch, K. (1994). Choosing effective display colors for the partially-sighted. Society for Information Display International Symposium Digest of Technical Papers, 25, 32-35.</bibl>
+	<bibl id="ARDITI-KNOBLAUCH-1996" key="ARDITI-KNOBLAUCH-1996">Arditi, A. and Knoblauch, K. (1996). Effective color contrast and low vision. In B. Rosenthal and R. Cole (Eds.) Functional Assessment of Low Vision. St. Louis, Mosby, 129-135.</bibl>
+	<bibl id="CAPTCHA" key="CAPTCHA">The CAPTCHA Project, Carnegie Mellon University. The project is online at <loc href="http://www.captcha.net">http://www.captcha.net</loc>.</bibl>
+	<bibl id="EPFND" key="EPFND"> Experts Issue Recommendations to Protect Public from Seizures Induced by TV / Videogames. A copy of the standard is available at <loc href="http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm">http://www.epilepsyfoundation.org/aboutus/pressroom/pr20050919.cfm</loc>.</bibl>
+	<bibl id="GITTINGS-FOZARD" key="GITTINGS-FOZARD">Gittings, NS and Fozard, JL (1986). Age related changes in visual acuity. Experimental Gerontology, 21(4-5), 423-433.</bibl>
+	<bibl id="HARDING-BINNIE">Harding G. F. A. and Binnie, C.D., Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape. 2002.</bibl>
+	<bibl id="HEARING-AID-INT" key="HEARING-AID-INT">Levitt, H., Kozma-Spytek, L., &amp; Harkins, J. (2005). In-the-ear measurements of interference in hearing aids from digital wireless telephones. Seminars in Hearing, 26(2), 87.</bibl>
+	<bibl id="IEC-4WD">IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB. May 5, 1998.</bibl>
+	<bibl id="ISO-9241-3">ISO 9241-3, Ergonomic requirements for office work with visual display terminals (VDTs) - Part 3: Visual display requirements. Amendment 1.</bibl>
+	<bibl id="I18N-CHAR-ENC" key="I18N-CHAR-ENC">
 "Tutorial: Character sets &amp; encodings in XHTML, HTML and CSS," R. Ishida, ed., This tutorial is available at <loc href="http://www.w3.org/International/tutorials/tutorial-char-enc/">http://www.w3.org/International/tutorials/tutorial-char-enc/</loc>. 
 </bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="KNOBLAUCH" key="KNOBLAUCH">Knoblauch, K., Arditi, A. and Szlyk, J. (1991). Effects of chromatic and luminance contrast on reading. Journal of the Optical Society of America A, 8, 428-439.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="LAALS" key="LAALS">Bakke, M. H., Levitt, H., Ross, M., &amp; Erickson, F. (1999). <loc href="http://www.naric.com/research/rehab/download.cfm?ID=101662">Large area assistive listening systems (ALS): Review and recommendations</loc> (Final Report. NARIC Accession Number: O16430). Jackson Heights, NY: Lexington School for the Deaf/Center for the Deaf Rehabilitation Research Engineering Center on Hearing Enhancement.
+	<bibl id="KNOBLAUCH" key="KNOBLAUCH">Knoblauch, K., Arditi, A. and Szlyk, J. (1991). Effects of chromatic and luminance contrast on reading. Journal of the Optical Society of America A, 8, 428-439.</bibl>
+	<bibl id="LAALS" key="LAALS">Bakke, M. H., Levitt, H., Ross, M., &amp; Erickson, F. (1999). <loc href="http://www.naric.com/research/rehab/download.cfm?ID=101662">Large area assistive listening systems (ALS): Review and recommendations</loc> (Final Report. NARIC Accession Number: O16430). Jackson Heights, NY: Lexington School for the Deaf/Center for the Deaf Rehabilitation Research Engineering Center on Hearing Enhancement.
 </bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="sRGB">"A Standard Default Color Space for the Internet - sRGB," M. Stokes, M. Anderson, S. Chandrasekar, R. Motta, eds., Version 1.10, November 5, 1996. A copy of this paper is available at <loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. A copy of the standard is available at <loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
-	<bibl xmlns:xlink="http://www.w3.org/1999/xlink" id="WCAG20" key="WCAG20">"Web Content Accessibility Guidelines 2.0,"  B. Caldwell, M Cooper, L Guarino Reid, and G. Vanderheiden, eds., W3 Recommendation 12 December 2008, <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211</loc>. The latest version of WCAG 2.0 is available at <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>.
+	<bibl id="sRGB">"A Standard Default Color Space for the Internet - sRGB," M. Stokes, M. Anderson, S. Chandrasekar, R. Motta, eds., Version 1.10, November 5, 1996. A copy of this paper is available at <loc href="http://www.w3.org/Graphics/Color/sRGB.html">http://www.w3.org/Graphics/Color/sRGB.html</loc>.</bibl>
+	<bibl id="UNESCO" key="UNESCO">International Standard Classification of Education, 1997. A copy of the standard is available at <loc href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</loc>.</bibl>
+	<bibl id="WCAG20" key="WCAG20">"Web Content Accessibility Guidelines 2.0,"  B. Caldwell, M Cooper, L Guarino Reid, and G. Vanderheiden, eds., W3 Recommendation 12 December 2008, <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211</loc>. The latest version of WCAG 2.0 is available at <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>.
         </bibl>
 </blist>
 </inform-div1>
