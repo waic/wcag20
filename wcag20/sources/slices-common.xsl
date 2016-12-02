@@ -99,7 +99,7 @@
 				<xsl:apply-templates select="." mode="slice-filename"/>
 			</xsl:with-param>
 			<xsl:with-param name="content">
-				<html xml:lang="en-US">
+				<html lang="en-US">
 					<xsl:if test="header/langusage/language">
 						<xsl:attribute name="lang"><xsl:value-of select="header/langusage/language/@id"/></xsl:attribute>
 					</xsl:if>
