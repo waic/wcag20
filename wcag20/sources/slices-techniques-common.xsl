@@ -33,7 +33,7 @@
     <xsl:variable name="prev" select="(preceding::div1)[last()]"/>
     <xsl:variable name="next" select="(following::technique | following::div2)[1]"/>
       	<xsl:variable name="filename"><xsl:apply-templates select="." mode="slice-techniques-filename"/></xsl:variable>
-      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
         <html>
         	<xsl:if test="/spec/header/langusage/language">
         		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -79,7 +79,7 @@
   	<xsl:variable name="filename">
   		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
   	</xsl:variable>
-  	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+  	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
         <html>
         	<xsl:if test="/spec/header/langusage/language">
         		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -131,7 +131,7 @@
     	<xsl:variable name="filename">
     		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
     	</xsl:variable>
-    	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+    	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
     	    <html>
     	    	<xsl:if test="/spec/header/langusage/language">
     	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -187,7 +187,7 @@
     	<xsl:variable name="filename">
     		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
     	</xsl:variable>
-    	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+    	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
     	    <html>
     	    	<xsl:if test="/spec/header/langusage/language">
     	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -236,7 +236,7 @@
       	<xsl:variable name="filename">
       		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
       	</xsl:variable>
-      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
       	    <html>
       	    	<xsl:if test="/spec/header/langusage/language">
       	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -287,7 +287,7 @@
       	<xsl:variable name="filename">
       		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
       	</xsl:variable>
-      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+      	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
       	    <html>
       	    	<xsl:if test="/spec/header/langusage/language">
       	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
@@ -330,7 +330,7 @@
   	<xsl:variable name="filename">
   		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
   	</xsl:variable>
-  	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+  	<xsl:result-document method="xml" href="file:///{$output.dir}/{$filename}" encoding="UTF-8" doctype-system="about:legacy-compat" indent="no">
         <html>
         	<xsl:if test="/spec/header/langusage/language">
         		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
