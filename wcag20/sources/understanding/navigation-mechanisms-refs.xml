@@ -4,12 +4,14 @@
 <div2 id="navigation-mechanisms-refs" role="extsrc">
    <head>2.4.4</head>
    <div3 role="intent">
-      <head>この達成基準の意図</head>
+      <head/>
 
 <p>この達成基準の意図は、利用者がそのリンク先へ行きたいかどうかを決めることができるように、各リンクの目的を理解しやすくすることである。可能な限り、その他の文脈が必要ないように、リンクの目的を示すリンクテキストを提供するとよい。支援技術は、そのウェブページにあるリンクの一覧を利用者に提供することが可能である。リンクテキストにできる限り意味を持たせることで、利用者はこのリンクの一覧から選びやすくなる。また、意味のあるリンクテキストは、リンクからリンクへと Tab キーで移動したい利用者にとっても役に立つ。そして、意味のあるリンクは、そのリンク先のページを理解するのに面倒な方法をとることなく、利用者がリンクを選びやすくなるのである。</p>
-<p>ある状況においては、コンテンツ制作者は、リンクの説明の一部を、そのリンクの文脈を提供する論理的に関係のあるテキストで提供したいことがある。この場合、利用者がリンクからフォーカスを移動させずに、そのリンクの目的を確認できなければならない。言い換えれば、利用者があるリンクにやってきて、その位置にいたままで、リンクに関するより多くの情報を探し出すことができる必要がある。これは、同じ文、段落、リスト項目、そのリンクの直前にある見出し、リンクであるテーブルのセル、又はデータテーブル内にあるリンクの見出しセルに、リンクの説明を置くことで可能である。なぜなら、それらはリンク自体と直接関連付けられているからである。</p>
+<p>リンクのテキスト又はリンクに関連付けられたテキストは、リンクの目的を説明することを意図している。リンクが文書又はウェブアプリケーションに遷移する場合、その文書又はウェブアプリケーションの名称は、（その文書又はウェブアプリケーションへ遷移する）リンクの目的を説明するのに十分だろう。ここで注意すべきなのは、文書又はウェブアプリケーションの名称の使用が必要とされないことである。他のものがリンクの目的を説明する場合もあるだろう。</p>
+<p><loc href="navigation-mechanisms-title" linktype="understanding">達成基準 2.4.2</loc> は、ページのタイトルを取り扱っている。ここでも、ページに表示されている、文書又はウェブアプリケーションの名称は、ページの目的を説明するのに十分だろう。リンクとタイトルが一致する、又は非常に類似したものであることはよい習慣であり、「クリックされた」リンクと利用者が到達するウェブページとの間に連続性を与える。</p>
+<p>状況によっては、コンテンツ制作者は、リンクの文脈を提供する関係のあるテキストに論理的にリンクの説明の一部を提供したいことがある。この場合、利用者がリンクからフォーカスを移動させずに、そのリンクの目的を確認できることが推奨される。言い換えれば、利用者があるリンクに到達でき、その位置を失うことなく、リンクに関するより多くの情報を探し出すことができる。これは、リンク自体と直接関連付けられているため、リンクと同じ文、段落、リスト項目、又はテーブルのセルにおける、又はデータテーブル内にあるリンクのテーブル見出しセルにおける、リンクの説明を置くことで達成可能である。あるいは、コンテンツ制作者は、ARIA技術を用いてページ上の追加テキストをリンクに関連付けることもできる。</p>
 <p>こういった文脈は、リンクの前にあると、最も使いやすいだろう（例えば、曖昧なリンクテキストを使わなければならない場合、その曖昧な語句をリンクの行き先を説明する文章の初めに置くよりも、リンクの行き先を説明する文章の最後に置いたほうが分かりやすい）。リンクの後に説明がきてしまうと、ウェブページを（先頭から最後まで）順に読んでいるスクリーンリーダーの利用者が、困惑したり、理解しづらかったりする可能性がある。</p>
-<p>リンク先が同じリンクには、（<loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="guideline" href="consistent-behavior-consistent-functionality">達成基準 3.2.4</loc>により）同じ説明があるべきだが、異なる目的で異なるリンク先であるリンクには異なる説明があるべきである。</p>
+<p>同じ宛先のリンクには一貫した説明があることがベストプラクティスとなる（これは、<loc linktype="guideline" href="consistent-behavior-consistent-functionality">達成基準 3.2.4</loc>によるセットでページの要件である）。さまざまな目的や目的地を持つリンクが異なる記述を持つこともベストプラクティスとなる。</p>
 <p>この達成基準には、リンクの目的をウェブページ上にある情報からは判断できないリンクに対して例外が認められている。そのような状況では、障害のある利用者が不利な立場にあるわけではない。リンクの目的を理解するために追加入手可能な文脈が一切ないのである。しかし、ウェブページ上でリンクの目的を解釈するために どんな量であれ文脈が 利用できるなら、この達成基準を満たすためには リンクテキスト内で利用できるか、又はプログラム的にリンクと関連付けられるか、ができなければいけない。</p>
 
 <note>
@@ -23,10 +25,7 @@
 <ulist>
 	<item><p>この達成基準により、運動障害のある利用者が、リンク先のコンテンツへ行って、また元へ戻ってくるという無駄なキーストロークなしに、必要のないリンクをスキップすることができるようになる。</p></item>
 	<item><p>認知に制約のある利用者が必要のないコンテンツへ行ったり来たりして現在位置を見失う、ということがなくなる。</p></item>
-	<item><p>
-                  視覚障害のある利用者が、リンクの文脈を探ることによって、リンクの目的を判断できるようになる。
-                  
-                </p></item>
+	<item><p>視覚障害のある利用者が、リンクの文脈を探ることによって、リンクの目的を判断できるようになる。</p></item>
 </ulist>
 </div4>
 </div3>
@@ -34,123 +33,72 @@
 <div3 role="examples">
 <head/>
 <ulist>
-	<item><p>
-                <emph role="bold">リンクがリンク先の URI にある情報を説明するテキストを含んでいる</emph>
-              </p><p>
-                あるページに、「中世の歴史には大量の虐殺があった」という文がある。そして、「中世の歴史」がリンクである。
-              </p></item>
-	<item><p>
-                <emph role="bold">リンクの前にリンク先の URI にある情報を説明するテキストがある</emph>
-              </p><p>
-                あるページに、「アイルランド政府の電子選挙委員会に関する詳細を『投票に行こう！』で見る」という文がある。そして、「投票に行こう！」がリンクである。
-              </p></item>
-	<item><p>
-                <emph role="bold">アイコンとテキストの両方が同じリンク内にある</emph>
-              </p><p>
-                自動投票機のアイコンと「アイルランド政府の電子選挙委員会」というテキストが、一つのリンクになっている。リンクの目的がアイコンの隣にあるリンクのテキストで説明されているので、そのアイコンの代替テキストは空である。
-              </p></item>
-	<item><p>
-                <emph role="bold">書籍名のリスト</emph>
-              </p><p>
-                リストにある書籍が、HTML、PDF、そして mp3（人が本を読み上げているの音声を録音したもの）の3つのフォーマットで利用可能である。各書籍のタイトルを3回（フォーマットごとに1回）聞かないですむように、各書籍の最初のリンクが書籍のタイトルで、2つめのリンクは「PDF」、3つめのリンクは「mp3」となっている。
-              </p></item>
-	<item><p>
-                <emph role="bold">ニュース記事の要約</emph>
-              </p><p>
-                あるウェブサイト に、ニュース記事が集められている。メインページでは、各記事の最初の部分が少しだけあって、その後に「続きを読む」というリンクがある。スクリーンリーダーでは、現在の段落を読むためのコマンドによって、リンクの目的を解釈するための文脈が得られる。
-                
-              </p></item>
+	<item><p><emph role="bold">リンクがリンク先の URI にある情報を説明するテキストを含んでいる</emph></p><p>あるページに、「中世の歴史には大量の虐殺があった」という文がある。そして、「中世の歴史」がリンクである。</p></item>
+	<item><p><emph role="bold">リンクの前にリンク先の URI にある情報を説明するテキストがある</emph></p><p>あるページに、「アイルランド政府の電子選挙委員会に関する詳細を『投票に行こう！』で見る」という文がある。そして、「投票に行こう！」がリンクである。</p></item>
+	<item><p><emph role="bold">アイコンとテキストの両方が同じリンク内にある</emph></p><p>自動投票機のアイコンと「アイルランド政府の電子選挙委員会」というテキストが、一つのリンクになっている。リンクの目的がアイコンの隣にあるリンクのテキストで説明されているので、そのアイコンの代替テキストは空である。</p></item>
+	<item><p><emph role="bold">書籍名のリスト</emph></p><p>リストにある書籍が、HTML、PDF、そして mp3（人が本を読み上げているの音声を録音したもの）の3つのフォーマットで利用可能である。各書籍のタイトルを3回（フォーマットごとに1回）聞かないですむように、各書籍の最初のリンクが書籍のタイトルで、2つめのリンクは「PDF」、3つめのリンクは「mp3」となっている。</p></item>
+	<item><p><emph role="bold">ニュース記事の要約</emph></p><p>あるウェブサイト に、ニュース記事が集められている。メインページでは、各記事の最初の部分が少しだけあって、その後に「続きを読む」というリンクがある。スクリーンリーダーでは、現在の段落を読むためのコマンドによって、リンクの目的を解釈するための文脈が得られる。</p></item>
 </ulist>
 </div3>
 
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc>
-              </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
+	<item><p><loc href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</loc></p></item>
+	<item><p><loc href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc></p></item>
+	<item><p><loc href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>十分な達成方法</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91" linktype="general">リンクの目的を説明したリンクのラベルを提供する</loc>
-                </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H30" linktype="html">a 要素のリンクの目的を説明するリンクテキストを提供する</loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H24" linktype="html">イメージマップの area 要素に代替テキストを提供する </loc>
-                    </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH27" linktype="flash">ボタンの目的を説明するラベルを提供する</loc>
-                    </p></item>
-	<item><p>次に挙げる達成方法の一つを用いて、利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする：</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G189" linktype="general">ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR30" linktype="script">スクリプトを用いて、リンクのラベルを変更する (Scripting)</loc></p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH7" linktype="flash">スクリプトを使用してコントロールのラベルを変更する</loc>
-                    </p></item></ulist></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G53" linktype="general">リンクのラベルとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</loc>
-                </p></item>
-	<item><p>次に挙げる達成方法の一つを用いて、リンクの目的の説明を補足する：</p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H33" linktype="html">title属性を用いて、リンクテキストの文言を補足する </loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C7" linktype="css">CSSを用いて、リンクのラベルの一部を非表示にする </loc>
-                    </p></item></ulist></item>
-	<item><p>
-                  次に挙げる達成方法の一つを用いて、プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する：
-                </p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H77" linktype="html">リンクテキストとそれが含まれているリスト項目とを組み合わせて、リンクの目的を特定する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H78" linktype="html">リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H79" linktype="html">リンクのラベルとそれが含まれているデータセル及び関連づけられた見出しセルとを組み合わせて、リンクの目的を特定する </loc>
-                    </p></item><item><p>
-                            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H80" linktype="html">リンクのラベルとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する </loc>
-                        </p></item><item><p>
-                            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H81" linktype="html">入れ子になったリスト項目にあるリンクのラベルとその親のリスト項目とを組み合わせて、リンクの目的を特定する </loc>
-                        </p></item></ulist></item>
-	<item><p>
-                 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G91" linktype="general">リンクの目的を説明したリンクのラベルを提供する</loc> かつ次の達成方法の一つを用いてセマンティックにリンクを示す：
-                </p><ulist><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF11" linktype="pdf">PDF 文書内で /Link 構造エレメントを使用してリンクとリンクテキストを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF13" linktype="pdf">PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する</loc>
-                    </p></item><item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL18.html" linktype="silverlight">Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</loc>
-                    </p></item></ulist></item>
+	<item><p><loc href="G91" linktype="general"/></p></item>
+	<item><p><loc href="H30" linktype="html"/></p></item>
+	<item><p><loc href="H24" linktype="html"/></p></item>
+	<item><p><loc href="FLASH27" linktype="flash"/></p></item>
+	<item><p>次に挙げる達成方法の一つを用いて、利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする：</p><ulist>
+		<item><p><loc href="G189" linktype="general"/></p></item>
+		<item><p><loc href="SCR30" linktype="script"/></p></item>
+		<item><p><loc href="FLASH7" linktype="flash"/></p></item></ulist>
+	</item>
+	<item><p><loc href="G53" linktype="general"/></p></item>
+	<item><p>次に挙げる達成方法の一つを用いて、リンクの目的の説明を補足する：</p><ulist>
+		<item><p><loc href="H33" linktype="html"/></p></item>
+		<item><p><loc href="C7" linktype="css"/></p></item></ulist>
+	</item>
+	<item><p>次に挙げる達成方法の一つを用いて、プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する：</p><ulist>
+		<item><p><loc href="ARIA7" linktype="aria"/></p></item>
+		<item><p><loc href="ARIA8" linktype="aria"/></p></item>
+		<item><p><loc href="H77" linktype="html"/></p></item>
+		<item><p><loc href="H78" linktype="html"/></p></item>
+		<item><p><loc href="H79" linktype="html"/></p></item>
+		<item><p><loc href="H81" linktype="html"/></p></item></ulist>
+	</item>
+	<item><p><loc href="G91" linktype="general"/>かつ次の達成方法の一つを用いてセマンティックにリンクを示す：</p><ulist>
+		<item><p><loc href="PDF11" linktype="pdf"/></p></item>
+		<item><p><loc href="PDF13" linktype="pdf"/></p></item>
+		<item><p><loc href="SL18" linktype="silverlight"/></p></item></ulist>
+	</item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 2.4.4 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html">隣り合った画像とテキストリンクを同じリンクの中に入れる </loc>
-                </p></item>
-	<item><p>
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH5" linktype="flash">リンク先が同じで隣接している画像とテキストのボタンを結合する</loc>
-                    </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA1" linktype="aria">内容を説明しており、プログラム的に決定されたラベルを提供する、アクセシブル・リッチ。インターネット・アプリケーションの describedby属性を使う </loc>
-                </p></item>
+	<item><p><loc href="H2" linktype="html"/></p></item>
+	<item><p><loc href="FLASH5" linktype="flash"/></p></item>
+	<item><p><loc href="H80" linktype="html"/></p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 2.4.4 のよくある不適合事例</head>
+<head/>
 <ulist>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F63" linktype="failure">達成基準 2.4.4 の不適合事例 － リンクと関係のないコンテンツにおいてのみ、リンクの文脈を提供している</loc>
-                </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F89" linktype="failure">達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の不適合事例 － イメージだけがリンクのコンテンツである際に、img要素のalt属性値が空になっている</loc></p></item>
+	<item><p><loc href="F63" linktype="failure"/></p></item>
+	<item><p><loc href="F89" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>

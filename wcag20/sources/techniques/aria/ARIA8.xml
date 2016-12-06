@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA8">
-   <short-name>リンクの目的を示すために aria-labelledby を使用する</short-name>
+   <short-name>リンクの目的を示すために aria-label を使用する</short-name>
    <applicability>
       <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
