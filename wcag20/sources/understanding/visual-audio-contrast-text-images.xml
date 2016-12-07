@@ -68,7 +68,7 @@
 <olist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C22" linktype="css">CSS を用いて、テキストの視覚的な表現を制御する</loc>  </p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL31.html" linktype="silverlight">Using Silverlight Font Properties to Control Text Presentation</loc>  </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C30" linktype="css">テキストを画像化された文字と置き換えるために CSS を用いて、切り替える利用者ーインタフェース・コントロールを提供する</loc>  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C30" linktype="css">テキストを画像化された文字と置き換えるために CSS を用いて、切り替えるユーザインタフェース・コントロールを提供する</loc>  </p></item>
 	<item><p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G140" linktype="general">情報と構造を表現から分離して、異なる表現を可能にする</loc> 
                 </p></item>
