@@ -44,9 +44,9 @@
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p><loc href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</loc></p></item>
-	<item><p><loc href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc></p></item>
-	<item><p><loc href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
+	<item><p><loc href="https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/">Using Link Titles to Help Users Predict Where They Are Going</loc></p></item>
+	<item><p><loc href="http://webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc></p></item>
+	<item><p><loc href="http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
 </ulist>
 </div3>
 
