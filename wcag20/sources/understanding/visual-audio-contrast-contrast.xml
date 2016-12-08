@@ -65,7 +65,7 @@
 <div3 role="resources" id="luminosityresources">
 <head>関連リソース</head>
 <ulist>
-	<item><p><loc href="http://www.paciellogroup.com/resources/contrast-analyser.html">Contrast Analyser - Application</loc></p>
+	<item><p><loc href="https://www.paciellogroup.com/resources/contrastanalyser/">Contrast Analyser - Application</loc></p>
 	<trnote><p><loc href="http://www.infoaxia.com/tools/cca/index.html">日本語版のContrast Analyser - Application</loc>も公開されている</p></trnote>
 	</item>
 	<item><p><loc href="http://juicystudio.com/services/luminositycontrastratio.php">Contrast Ratio Analyser - online service</loc></p></item>
