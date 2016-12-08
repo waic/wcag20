@@ -44,42 +44,30 @@
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.alistapart.com/articles/cssatten">CSS Web fonts</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://clagnut.com/blog/2042/">Weblog comments: WebKit now supports CSS @font-face rules</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows">Creating Cross Browser Compatible CSS Text Shadows</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.yourhtmlsource.com/stylesheets/csstext.html">CSS and text</loc>
-              </p></item>
+	<item><p><loc href="http://www.alistapart.com/articles/cssatten">CSS Web fonts</loc></p></item>
+	<item><p><loc href="http://clagnut.com/blog/2042/">Weblog comments: WebKit now supports CSS @font-face rules</loc></p></item>
+	<item><p><loc href="http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows">Creating Cross Browser Compatible CSS Text Shadows</loc></p></item>
+	<item><p><loc href="http://www.yourhtmlsource.com/stylesheets/csstext.html">CSS and text</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 1.4.9 の達成方法及び不適合事例 － 画像化された文字（例外なし）</head>
+<head/>
 <div4 role="sufficient">
-<head>十分な達成方法</head>
+<head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C22" linktype="css">CSS を用いて、テキストの視覚的な表現を制御する</loc>  </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG-TECHS/SL31.html" linktype="silverlight">Using Silverlight Font Properties to Control Text Presentation</loc>  </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C30" linktype="css">テキストを画像化された文字と置き換えるために CSS を用いて、切り替えるユーザインタフェース・コントロールを提供する</loc>  </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G140" linktype="general">情報と構造を表現から分離して、異なる表現を可能にする</loc> 
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF7" linktype="pdf">スキャンされた PDF 文書で OCR を実行し、実際のテキストを生成する</loc> 
-                </p></item>
+	<item><p><loc href="C22" linktype="css"/></p></item>
+	<item><p><loc href="SL31" linktype="silverlight"/></p></item>
+	<item><p><loc href="C30" linktype="css"/></p></item>
+	<item><p><loc href="G140" linktype="general"/></p></item>
+	<item><p><loc href="PDF7" linktype="pdf"/></p></item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 1.4.9 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <div5>
 <head>非装飾コンテンツに関する一般的な達成方法</head>
 <ulist>
@@ -89,28 +77,18 @@
 <div5>
 <head>CSSの達成方法</head>
 <ulist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C12" linktype="css">文字サイズをパーセントで指定する</loc>  
-                  </p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C13" linktype="css">文字サイズをサイズ名で指定する</loc>  
-                  </p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C14" linktype="css">文字サイズを em で指定する</loc>  
-                  </p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C8" linktype="css">CSS の letter-spacing プロパティを用いて、単語内の文字間を制御する</loc>  
-                  </p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C6" linktype="css">コンテンツを構造のマークアップに基づいて配置する</loc>  
-                  </p></item>
+	<item><p><loc href="C12" linktype="css"/></p></item>
+	<item><p><loc href="C13" linktype="css"/></p></item>
+	<item><p><loc href="C14" linktype="css"/></p></item>
+	<item><p><loc href="C8" linktype="css"/></p></item>
+	<item><p><loc href="C6" linktype="css"/></p></item>
 	<item><p>1文字以内でデザインされるテキスト文字を避ける（リンク追加予定）</p></item>
 </ulist>
 </div5>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 1.4.9 のよくある不適合事例</head>
+<head/>
 </div4>
 </div3>
 </div2>
