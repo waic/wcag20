@@ -7,7 +7,7 @@
       <head>Intent of this Success Criterion</head>
 
 <p>この達成基準の意図は、光過敏性発作を引き起こす可能性をさらに引き下げることである。とても過敏な利用者もいるため、光過敏性発作の可能性を完全に取り除くことはできない。しかし、画面のあらゆる領域にわたって1秒間に3回閃光を放つものをすべて取り除くことにより、利用者が発作を起こす可能性は、達成基準 2.3.1でそうしているように、単に今日の国際的な標準規格で通常用いられている基準を満たしているときよりも、さらに引き下げられる。</p>
-<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="seizure-does-not-violate" linktype="guideline">達成基準 2.3.1 </loc>では、十分に薄暗い又は領域が十分に小さい閃光を許容しているが、達成基準 2.3.2 は、その明るさ又はサイズに関係なく、1秒間に3回よりも多く閃光を放つことを認めていない。結果として、1ピクセルの閃光であっても、この達成基準には反することになる。その意図は、1ピクセルよりも大きい閃光を防ぐことにあるが、コンテンツ制作者が知る術のない画面拡大又はハイコントラストの設定が適用されているかもしれないため、あらゆる閃光を禁じているのである。</p>
+<p><loc href="seizure-does-not-violate" linktype="guideline">達成基準 2.3.1 </loc>では、十分に薄暗い又は領域が十分に小さい閃光を許容しているが、達成基準 2.3.2 は、その明るさ又はサイズに関係なく、1秒間に3回よりも多く閃光を放つことを認めていない。結果として、1ピクセルの閃光であっても、この達成基準には反することになる。その意図は、1ピクセルよりも大きい閃光を防ぐことにあるが、コンテンツ制作者が知る術のない画面拡大又はハイコントラストの設定が適用されているかもしれないため、あらゆる閃光を禁じているのである。</p>
 
 <note>
 <p>場合によっては、WCAG ワーキンググループが「点滅」と称しているものと「閃光」と称しているものが、わずかに重なり合うことがあるかもしれない。この二つに対して異なる用語を用いているのは、「点滅」は利用者を注意散漫にさせる問題を引き起こすが、停止する（又は停止させることが可能である）限り、短い間であれば許容できるのに対して、「閃光」は発作を引き起こすものであり、許容できないものだからである。発作は、ほとんどの利用者が閃光をオフにすることができるのよりも早く起こるものである。そのため、「点滅」はゆっくりと繰り返す変化で、利用者が気を取られるものを指している。そして、「閃光」は十分に明るい又は十分に長く持続すると発作を引き起こす恐れのある変化を指している。通常、点滅は1秒間に3回以上の速度にはならないし、点滅と閃光が部分的に一致することもまずない。しかし、点滅が1秒間に3回以上の速度の場合には、部分的に一致することもありえる。点滅に関するより詳細な情報は、<specref ref="time-limits-pause"/>を参照のこと。</p>
@@ -32,22 +32,22 @@
 <head>Resources for this Success Criterion</head>
 <ulist>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.hardingfpa.com/">Harding FPA Web Site</loc>
+                <loc href="http://www.hardingfpa.com/">Harding FPA Web Site</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</loc>
+                <loc href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</loc>
+                <loc href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.epilepsy.org.uk">Epilepsy Action</loc>
+                <loc href="https://www.epilepsy.org.uk/">Epilepsy Action</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.epilepsyfoundation.org/about/photosensitivity/">Epilepsy Foundation</loc>
+                <loc href="http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures">Epilepsy Foundation</loc>
               </p></item>
 	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</loc>
+                <loc href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</loc>
               </p></item>
 </ulist>
 </div3>
@@ -58,7 +58,7 @@
 <head>Sufficient Techniques</head>
 <olist>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G19" linktype="general">G19: どの1秒間においても、コンテンツに3回よりも多く閃光を放つコンポーネントがないことを確認する</loc>
+                  <loc href="G19" linktype="general">G19: どの1秒間においても、コンテンツに3回よりも多く閃光を放つコンポーネントがないことを確認する</loc>
                 </p></item>
 </olist>
 </div4>
