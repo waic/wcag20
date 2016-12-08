@@ -49,9 +49,8 @@
                 <loc href="http://www.usability.gov/methods/collecting_writing.html">Methods for Designing Usable Web Sites</loc> Methods for collecting, writing, and revising Web content to make it easy to use.</p>
             </item>
 -->
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.useit.com/alertbox/9710a.html">How Users Read on the Web</loc> A study showing that most users scan Web pages rather than reading them word by word.</p></item><item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.useit.com/papers/webwriting/rewriting.html">Applying Writing Guidelines to Web Pages</loc> A report on the effects of making Web sites concise, easy to scan, and objective. </p></item>
+	<item><p><loc href="https://www.nngroup.com/articles/how-users-read-on-the-web/">How Users Read on the Web</loc> A study showing that most users scan Web pages rather than reading them word by word.</p></item>
+	<item><p><loc href="https://www.nngroup.com/articles/applying-writing-guidelines-web-pages/">Applying Writing Guidelines to Web Pages</loc> A report on the effects of making Web sites concise, easy to scan, and objective. </p></item>
 </ulist>
 </div3>
 
@@ -60,12 +59,8 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc href="G130" linktype="general"/>
-                </p></item>
-	<item><p>
-                  <loc href="G131" linktype="general"/>
-                </p></item>
+	<item><p><loc href="G130" linktype="general"/></p></item>
+	<item><p><loc href="G131" linktype="general"/></p></item>
 </olist>
 
 <note>
@@ -76,12 +71,8 @@
 <div4 role="tech-optional">
 <head/>
 <ulist>
-	<item><p>
-        ウェブページに一意なセクション見出しを用いる（リンク追加予定）
-    </p></item>
-	<item><p>
-        一意な情報からセクション見出しをはじめる（リンク追加予定）
-    </p></item>
+	<item><p>ウェブページに一意なセクション見出しを用いる（リンク追加予定）</p></item>
+	<item><p>一意な情報からセクション見出しをはじめる（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
