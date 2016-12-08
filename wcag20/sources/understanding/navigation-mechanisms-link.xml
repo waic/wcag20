@@ -6,7 +6,6 @@
    <div3 role="intent">
       <head/>
 
-<!--p>この達成基準の意図は、利用者がそのリンク先に行きたいかどうかを判断できるように、コンテンツにあるそれぞれのリンクの目的を理解しやすくすることである。ベストプラクティスとしては、リンク先が同じリンクは同じ記述とすべきである。しかし、目的やリンク先が異なるリンクは、その記述も異なるようにすべきである（同じ機能性を有するコンポーネントの一貫した識別性を要求している<loc href="consistent-behavior-consistent-functionality" linktype="guideline">達成基準 3.2.4</loc>も参照のこと）。リンクの目的はそのリンクテキストによって確認できれば、例えばユーザエージェントがページ上の全てのリンクの一覧を提供する際のように、前後の文脈に関係ない状態でも、利用者はリンクを理解することができるようになる。</p-->
 <p>この達成基準の意図は、利用者がコンテンツ内にある各リンクの目的を理解するのを手助けすることで、彼らはそれを辿ることを望むかどうかを、彼らが決めることができる（同じ機能を持っているコンポーネントの識別に一貫性を求めるための<loc href="consistent-behavior-consistent-functionality" linktype="guideline">達成基準 3.2.4</loc> も見よ）。リンクの目的は、そのリンク テキストから識別されることができるので、ユーザエージェントが、ページ上にある全てのリンクの一覧を提供するときのように、リンクは、それらが文脈の中にあるとき、理解することができる。</p>
 <p>リンク内のテキストは、リンクの目的を説明するように意図されている。リンクが、文書又はウェブ アプリケーションの一つへ導く場合は、文書またはウェブ アプリケーションの名前は、（文書またはウェブ アプリケーションにあなたを導く）リンクの目的を説明するのに十分であろう。文書又はウェブ アプリケーションの名前を使用する必要がないことに注意されたい。他のものが、リンクの目的を説明することもできる。</p>
 <p> <loc href="navigation-mechanisms-title" linktype="understanding">達成基準 2.4.2</loc>は、ページのタイトルに取り組んでいる。ここでもまた、ページに表示されている文書とウェブ アプリケーションの名前は、ページの目的を説明するのに十分であろう。リンクとタイトルが一致する又はとても似ていることは、良い習慣であり、リンクの「クリック」と利用者が着地するウェブ ページ間の継続性を提供する。</p>
@@ -39,13 +38,9 @@
 <div3 role="resources">
 <head/>
 <ulist>
-	<item><p>
-                <loc href="http://www.useit.com/alertbox/980111.html">Using Link Titles to Help Users Predict Where They Are Going</loc>
-              </p></item>
-	<item><p>
-                <loc href="http://www.webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc>
-              </p></item>
-	<item><p><loc href="http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
+	<item><p><loc href="https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/">Using Link Titles to Help Users Predict Where They Are Going</loc></p></item>
+	<item><p><loc href="http://webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</loc></p></item>
+	<item><p><loc href="http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers">Hidden barriers - out of sight</loc></p></item>
 </ulist>
 </div3>
 
@@ -54,52 +49,45 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc href="G91" linktype="general"/></p></item>
-	<item><p>
-                      <loc href="H30" linktype="html"/>
-                    </p></item>
-	<item><p>
-                      <loc href="H24" linktype="html"/>
-                    </p></item>
-	<item><p>
-                      <loc href="FLASH27" linktype="flash"/>
-                    </p></item>
-	<item><p>次の達成方法の一つを用いて、利用者が短めのリンクテキスト又は長めのリンクテキストを選べるようにする:</p><ulist><item><p><loc href="G189" linktype="general"/></p></item><item><p><loc href="SCR30" linktype="script"/></p></item><item><p><loc  href="FLASH7" linktype="flash"/></p></item></ulist></item>
-	<item role="css"><p>次の達成方法の一つを用いて、リンクの目的を補足説明する:</p><ulist><item><p>
-                      <loc href="C7" linktype="css"/>
-                    </p></item></ulist></item>
-	<item><p>次の達成方法の一つを用いて、セマンティックにリンクを示す:</p><ulist><item><p>
-                      <loc href="PDF11" linktype="pdf"/>
-                    </p></item><item><p>
-                      <loc href="PDF13" linktype="pdf"/>
-                    </p></item><item><p>
-                      <loc href="SL18" linktype="silverlight"/>
-                    </p></item></ulist></item>
+	<item><p><loc href="G91" linktype="general"/></p></item>
+	<item><p><loc href="H30" linktype="html"/></p></item>
+	<item><p><loc href="H24" linktype="html"/></p></item>
+	<item><p><loc href="FLASH27" linktype="flash"/></p></item>
+	<item><p>次の達成方法の一つを用いて、利用者が短めのリンクテキスト又は長めのリンクテキストを選べるようにする:</p>
+	<ulist>
+		<item><p><loc href="G189" linktype="general"/></p></item>
+		<item><p><loc href="SCR30" linktype="script"/></p></item>
+		<item><p><loc href="FLASH7" linktype="flash"/></p></item>
+	</ulist>
+	</item>
+	<item role="css"><p>次の達成方法の一つを用いて、リンクの目的を補足説明する:</p>
+	<ulist>
+		<item><p><loc href="C7" linktype="css"/></p></item>
+	</ulist>
+	</item>
+	<item><p>次の達成方法の一つを用いて、セマンティックにリンクを示す:</p>
+	<ulist>
+		<item><p><loc href="PDF11" linktype="pdf"/></p></item>
+		<item><p><loc href="PDF13" linktype="pdf"/></p></item>
+		<item><p><loc href="SL18" linktype="silverlight"/></p></item>
+	</ulist>
+	</item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
 <head/>
 <ulist>
-	<item><p>
-                  <loc href="H2" linktype="html"/>
-                </p></item>
-	<item><p>
-                  <loc href="FLASH5" linktype="flash"/>
-                </p></item>
-	<item><p>
-                  <loc href="H33" linktype="html"/>
-                </p></item>
+	<item><p><loc href="H2" linktype="html"/></p></item>
+	<item><p><loc href="FLASH5" linktype="flash"/></p></item>
+	<item><p><loc href="H33" linktype="html"/></p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
 <head/>
 <ulist>
-	<item><p>
-                  <loc href="F84" linktype="failure"/>
-                </p></item>
+	<item><p><loc href="F84" linktype="failure"/></p></item>
 	<item><p><loc href="F89" linktype="failure"/></p></item>
 </ulist>
 </div4>
