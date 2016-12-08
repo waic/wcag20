@@ -9,7 +9,7 @@
 
 <div4>
 <head>CAPTCHA に関する注記</head>
-<p><abbr expansion="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA </abbr>は、アクセシビリティのコミュニティにおいて、議論を呼ぶトピックの一つである。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>という参考資料 (W3C Working Group Note) でも解説されているように、CAPTCHA はもともと、機械的な自動処理を排除して、人間による操作であることを確認するためのものである。特定の障害のある利用者は、どんな種類の CAPTCHA も解釈できないであろう。しかし、CAPTCHA は広く使われており、WCAG ワーキンググループは、もし CAPTCHA が完全に禁止されてしまったとしたら、ウェブサイトでは CAPTCHA の使用を見合わせるのではなく、WCAG に適合しないという選択が行われるだろうと考えた。こうなることは、障害のある、かなり多くの利用者に対しての障壁を生むことになる。この理由から、ワーキンググループは、障害のある利用者のほとんどの要求を満たし、なおかつ ウェブサイトが採用可能だと考えられる方法で、CAPTCHA に関する要件を定めることにした。異なる2つの形態の CAPTCHA をサイト上で提供することを要件として、障害のある利用者のほとんどが自分の利用できるものを見つけられるようにしたのである。</p>
+<p><abbr expansion="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA </abbr>は、アクセシビリティのコミュニティにおいて、議論を呼ぶトピックの一つである。<loc href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc>という参考資料 (W3C Working Group Note) でも解説されているように、CAPTCHA はもともと、機械的な自動処理を排除して、人間による操作であることを確認するためのものである。特定の障害のある利用者は、どんな種類の CAPTCHA も解釈できないであろう。しかし、CAPTCHA は広く使われており、WCAG ワーキンググループは、もし CAPTCHA が完全に禁止されてしまったとしたら、ウェブサイトでは CAPTCHA の使用を見合わせるのではなく、WCAG に適合しないという選択が行われるだろうと考えた。こうなることは、障害のある、かなり多くの利用者に対しての障壁を生むことになる。この理由から、ワーキンググループは、障害のある利用者のほとんどの要求を満たし、なおかつ ウェブサイトが採用可能だと考えられる方法で、CAPTCHA に関する要件を定めることにした。異なる2つの形態の CAPTCHA をサイト上で提供することを要件として、障害のある利用者のほとんどが自分の利用できるものを見つけられるようにしたのである。</p>
 
 <p>中には、最低限の要件を満たしているサイトにもアクセスできない、障害のある利用者もいるため、ワーキンググループは追加の手段を講じることを推奨している。WCAG に適合したいと考える組織は、このトピックの重要性を認識すべきであり、可能な限りこのガイドラインの最低要件より多くの策を講じるべきである。推奨される追加の手段としては、以下のものがある：</p>
 
@@ -119,12 +119,12 @@ E-ラーニングアプリケーション
 <div3 role="resources">
 <head>関連リソース</head>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</loc></p></item>
+	<item><p><loc href="http://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</loc></p></item>
+	<item><p><loc href="http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</loc></p></item>
+	<item><p><loc href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</loc></p></item>
+	<item><p><loc href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</loc></p></item>
+	<item><p><loc href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</loc></p></item>
 </ulist>
 </div3>
 
@@ -302,7 +302,7 @@ E-ラーニングアプリケーション
 <div5>
 <head>HTMLの達成方法（参考）</head>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc></p></item>
+	<item><p><loc href="H46" linktype="html">embed要素とともにnoembed要素を使う </loc></p></item>
 	<item><p>フレームをサポートしないブラウザのために作成する（リンク追加予定）</p></item>
 	<item><p>iframe要素の代替コンテンツを提供する（リンク追加予定）</p></item>
 	<item><p>iframe要素の長い説明を使わない（リンク追加予定）</p></item>
@@ -311,7 +311,7 @@ E-ラーニングアプリケーション
 </div5>
 <div5><head role="css">CSSの達成方法（参考）</head>
 <ulist>
-	<item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc></p></item>
+	<item role="css"><p><loc href="C18" linktype="css">レイアウトデザインのためのスペーサ画像の代わりに、CSSのmarginとpaddingルールを使う</loc></p></item>
 	<item role="css"><p>装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う（リンク追加予定）</p></item>
 	<item role="css"><p>空のtable要素のセルを表示する（リンク追加予定）</p></item>
 </ulist>
@@ -324,7 +324,7 @@ E-ラーニングアプリケーション
 </div5>
 <div5><head role="silverlight">Silverlightの達成方法（参考）</head>
 <ulist>
-	<item role="silverlight"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19" linktype="silverlight">Providing User Instructions With AutomationProperties.HelpText in Silverlight</loc></p></item>
+	<item role="silverlight"><p><loc href="SL19" linktype="silverlight"/></p></item>
 </ulist>
 </div5>
 <div5><head>メタデータの達成方法（参考）</head>
@@ -343,16 +343,16 @@ E-ラーニングアプリケーション
 <div4 role="failures">
 <head/>
 <ulist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F30" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 代替ではない代替テキストを用いている（例：ファイル名、プレースホルダー・テキストなど）</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure">達成基準 1.1.1 及び 達成基準 4.1.2 の不適合事例 － 非テキストコンテンツの変更時に代替テキストを更新していない</loc></p></item>
-	<item role="css"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F3" linktype="failure">達成基準 1.1.1 の不適合事例 － CSSを用いて、重要な情報を伝える画像を表示させている</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F39" linktype="failure">達成基準 1.1.1 の不適合事例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F38" linktype="failure">達成基準 1.1.1 の不適合事例 － HTMLで装飾を目的にして用いられている非テキストコンテンツのalt属性を省略している</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F71" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、テキストのようなものを用いてテキストを表している</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F72" linktype="failure">達成基準 1.1.1 の不適合事例 － 代替テキストを提供せずに、ASCIIアートを用いている</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F65" linktype="failure">達成基準 1.1.1 の不適合事例 － img要素、area要素、及び type "image" のinput要素のalt属性を省略している</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F67" linktype="failure">達成基準 1.1.1 及び 達成基準 1.2.1 の不適合事例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F13" linktype="failure">達成基準 1.1.1 及び 達成基準 1.4.1 の不適合事例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない</loc></p></item>
+	<item role="css"><p><loc href="F3" linktype="failure"/></p></item>
+	<item><p><loc href="F13" linktype="failure"/></p></item>
+	<item><p><loc href="F20" linktype="failure"/></p></item>
+	<item><p><loc href="F30" linktype="failure"/></p></item>
+	<item><p><loc href="F38" linktype="failure"/></p></item>
+	<item><p><loc href="F39" linktype="failure"/></p></item>
+	<item><p><loc href="F65" linktype="failure"/></p></item>
+	<item><p><loc href="F67" linktype="failure"/></p></item>
+	<item><p><loc href="F71" linktype="failure"/></p></item>
+	<item><p><loc href="F72" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
