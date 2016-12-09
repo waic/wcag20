@@ -139,8 +139,8 @@ Austin)</affiliation>
 	<item><p>この達成基準における重要な用語（WCAG 2.0 の用語集から引用）</p></item>
 </ulist>
 
-<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph> という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の <emph>達成基準 X.X.X を理解する</emph> という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で関心のある達成方法を参照のこと。</p>
-<p>様々な障害や支援技術に関する情報については、<loc href="http://en.wikipedia.org/wiki/Disabilities">Wikipedia にある「障害 (disabilities)」（英語）</loc>を参照のこと。</p>
+<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph> という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の <emph>達成基準 X.X.X を理解する</emph> という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="https://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で関心のある達成方法を参照のこと。</p>
+<p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Wikipedia にある「障害 (disabilities)」（英語）</loc>を参照のこと。</p>
 
 <div3 id="fourprincs" role="normal">
 <head>アクセシビリティの4つの原則を理解する</head>
@@ -211,8 +211,8 @@ Austin)</affiliation>
 			<div2 id="ut" role="suppressed">
 				<head>WCAG 達成基準のための達成方法を理解する (抑制された)</head>
 				<p>WCAG 2.0 のガイドライン及び達成基準は、動的アプリケーション、モバイル、デジタルテレビなどを含む現在及び将来のウェブ技術に対して広く適用可能となるよう設計されている。これらは安定しており変わることはない。</p>
-            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3Cの <loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書は概ね<phrase>年に2回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
-				<p><loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> における3つのタイプのガイダンスを以下に説明する:</p>
+            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3Cの <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書は概ね<phrase>年に2回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
+				<p><loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> における3つのタイプのガイダンスを以下に説明する:</p>
 				<ulist>
 					<item>
 						<p>十分な達成方法</p>
