@@ -14,21 +14,16 @@
 			</h3><p>この達成基準には、次のような利用者にメリットがある：</p><ul><li><p>スクリーンリーダー又はテキストを合成音声に変換するその他の技術を使用している利用者。</p></li><li><p>例えば、文字及びアルファベットを認識したり、単語を読み取ったりすることのように、書かれたものを流暢かつ正確に読むのが困難な利用者。</p></li><li><p>テキストを音声に変換するソフトウェアを使用している、特定の認知の障害、言語の障害、及び学習障害のある利用者。</p></li><li><p>同期したメディアではキャプションを頼りにしている利用者。</p></li></ul></div></div><div class="div3"><h2 id="meaning-doc-lang-id-examples-head" class="section">達成基準 3.1.1の事例
             </h2><ul><li><p><strong>2つの言語で書かれたコンテンツのあるウェブページ</strong></p><p>ドイツ語で制作され、HTML でコーディングされているウェブページに、ドイツ語と英語の両方で書かれたコンテンツがあるが、コンテンツのほとんどはドイツ語で書かれている。デフォルトの自然言語は、html 要素にある lang 属性によって、ドイツ語 (de)であることが示されている。</p></li></ul></div><div class="resources"><h2 id="meaning-doc-lang-id-resources-head" class="section">
 				関連リソース
-			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p>
-                <a href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</a>
-              </p></li></ul></div><div class="div3"><h2 id="meaning-doc-lang-id-techniques-head" class="section">達成基準 3.1.1 の達成方法及び不適合事例
+			</h2><p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</a></p></li></ul></div><div class="div3"><h2 id="meaning-doc-lang-id-techniques-head" class="section">達成基準 3.1.1 の達成方法及び不適合事例
                - ページの言語</h2><p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。他の達成方法についての情報は、<a href="understanding-techniques.html">達成基準を満たすための達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p><div class="boxed"><h3 id="meaning-doc-lang-id-183-head" class="div3head">
 				十分な達成方法 
 			</h3><ol class="enumar"><li><p><a href="http://waic.jp/docs/WCAG-TECHS/H57" class="tech-ref">H57: html 要素の lang 属性を使用する</a>  (HTML)
 			</p></li><li><p><a href="http://waic.jp/docs/WCAG-TECHS/FLASH13" class="tech-ref">FLASH13: Flash コンテンツの言語を指定するために、HTML の lang 属性を使用する</a> (Flash)
-    	</p></li><li><p>
-                      <a href="http://waic.jp/docs/WCAG-TECHS/PDF16" class="tech-ref">PDF16: PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する</a> (PDF)
-    	
-                    </p></li><li><p>
-                      <a href="http://waic.jp/docs/WCAG-TECHS/PDF19" class="tech-ref">PDF19: PDF 文書内で Lang エントリを使用して節や句の言語を指定する</a> (PDF)
-    	
-                    </p></li></ol></div><div class="boxed"><h3 id="meaning-doc-lang-id-184-head" class="div3head">3.1.1 でさらに対応が望まれる達成方法（参考）
-        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p><a href="SVR5">HTTPヘッダーで主たる自然言語を指定する</a></p></li><li><p>http又はContent-Languageメタ・タグを用いてメタデータを指定する（リンク追加予定）</p></li></ul></div><div class="boxed"><h3 id="meaning-doc-lang-id-185-head" class="div3head">
+    	</p></li><li><p><a href="http://waic.jp/docs/WCAG-TECHS/PDF16" class="tech-ref">PDF16: PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する</a> (PDF)
+    	</p></li><li><p><a href="http://waic.jp/docs/WCAG-TECHS/PDF19" class="tech-ref">PDF19: PDF 文書内で Lang エントリを使用して節や句の言語を指定する</a> (PDF)
+    	</p></li></ol></div><div class="boxed"><h3 id="meaning-doc-lang-id-184-head" class="div3head">3.1.1 でさらに対応が望まれる達成方法（参考）
+        </h3><p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p><ul><li><p><a href="http://waic.jp/docs/WCAG-TECHS/SVR5" class="tech-ref">SVR5: HTTP ヘッダーで主たる自然言語を指定する</a> (SERVER)
+			</p></li><li><p>http 又は Content-Language メタ・タグを用いてメタデータを指定する（リンク追加予定）</p></li></ul></div><div class="boxed"><h3 id="meaning-doc-lang-id-185-head" class="div3head">
 				 達成基準 3.1.1 のよくある不適合事例
 			</h3><p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準3.1.1に適合していないとみなした、よくある不適合事例である。</p><p>(今のところ、文書化された不適合事例はない)</p></div></div><div class="div3"><h2 id="key-terms" class="terms">重要な用語</h2><dl class="keyterms"><dt class="label"><a name="webpagedef" id="webpagedef"> </a>ウェブページ (Web page)</dt><dd><p>
 単一の URI から HTTP で得た埋め込まれていないリソースに加え、
