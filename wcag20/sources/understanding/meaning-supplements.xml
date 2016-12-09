@@ -4,7 +4,7 @@
 <div2 role="extsrc" id="meaning-supplements">
    <head>3.1.5</head>
    <div3 role="intent">
-      <head>この達成基準の意図</head>
+      <head/>
 
 <p>コンテンツは、可能な限り明快かつ簡潔に書かれているべきである。この達成基準の意図は以下の通りである：</p>
 <ulist>
@@ -44,7 +44,7 @@
 </note>
 
 <div4 role="benefits">
-<head>達成基準 3.1.5 の具体的なメリット</head>
+<head/>
 <p>この達成基準は、次のような利用者にメリットがある：</p>
 <ulist>
 	<item><p>一般的な知識又は特定の情報を得るために、書き言葉（例： テキストあるいは点字の記事、説明文、又は新聞記事）を理解して解釈するのが困難である。</p></item>
@@ -53,47 +53,41 @@
 </div3>
 
 <div3 role="examples">
-<head>達成基準  の事例 3.1.5</head>
+<head/>
 <olist>
 	<item><p><emph role="bold">複雑な研究記事の読みやすい要約がある科学雑誌</emph></p><p>ある科学雑誌には、その分野の専門家を対象とした、とても専門的な言葉遣いで書かれた記事がある。その雑誌の目次ページには、各記事の要約が平易な言葉で書かれている。その要約は、8年間の学校教育を受けた一般読者を想定している。また、雑誌のメタデータには、Dublin Core（ダブリン・コア）の仕様を用いて、記事の想定している読者の教育レベルを「高等教育」、要約の想定している読者の教育レベルを「前期中等教育」と示してある。</p></item>
 	<item><p><emph role="bold">一般会員向けの医療情報</emph></p><p>ある医科大学が、最近の医学的及び科学的発見を説明するウェブサイトを運営している。そのサイトの記事は、医療の知識のない人向けに書かれている。各記事では、Dublin Core（ダブリン・コア）のメタデータの仕様を用いて、想定している読者の教育レベルを「前期中等教育」と示し、その記事の Flesch Reading Ease のスコアも提供している。各ページにあるリンクをたどることで、教育レベル及びその他のメタデータを表示することができる。前期中等教育レベルの読者がその記事を読むことができるので、補足的コンテンツは必要ない。</p></item>
 	<item><p><emph role="bold">E-ラーニング・アプリケーション</emph></p><p>スペインの文化史に関するオンラインコースに、ムーア建築に関する単元がある。その単元のテキストは、様々な読解レベルを持った学生向けに書かれている。建築物の写真や画で、建築のコンセプト及び様式を図示している。グラフィック・オーガナイザーを用いて文章の複雑な関係性を図式化し、合成音声を用いた音声バージョンも提供している。各バージョンのメタデータでコンテンツの教育レベルを示し、スペイン語のテキスト向けに開発された計算式に基づくリーダビリティのスコアもある。この E-ラーニング・アプリケーションは、このメタデータ及び学生に関するメタデータを用いて、個々の学生のニーズに合ったバージョンの教材を提供している。</p></item>
-	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト（合計116ワード）は、Flesch-Kincaid式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>（出典：Howard Hughes Medical Institute"CoolScience for Kids" Project)</p></item>
+	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト（合計116ワード）は、Flesch-Kincaid 式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>（出典：Howard Hughes Medical Institute"CoolScience for Kids" Project)</p></item>
 </olist>
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 <ulist>
-	<item><p>Plain Language Association INternational (PLAIN)のウェブサイトでは、様々な文化的、修辞的な文脈において、文書制作者がより明解な表現をするための多くのリソースが提供されている。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguagenetwork.org/">http://www.plainlanguagenetwork.org/</loc>参照。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainlanguage.gov/">米国政府の plain languageウェブサイト</loc>では、簡単な表現 (plain language)に関する一般的情報に加えて、法的な要件を含む米国政府関連文書におけるplain languageの使用に関する情報が提供されている。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.plainenglish.co.uk/">The Plain English Campaignのウェブサイト</loc>では、英語で文書作成を行う場合に有用な情報や指針が提供されている。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</loc>は、表示されたすべてのコンテンツのリーダビリティの解析を行う。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Entry for Audience Education Level. Using Dublin Core ? Dublin Core Qualifiers</loc></p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.imsglobal.org/profiles/lipinfo01.html#tab6.3">IMS Learner Information Packaging Model Information Specification, Table 6.3  "accessibility" learner information data structure detailed description</loc>
-              </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.textquest.de/lesbar.htm">TextQuest.de</loc>には、英語、ドイツ語、スペイン語、オランダ語フランス語及びスウェーデン語を含む多くの原語におけるリーダビリティの計算式のリストが提供されている。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://taalunieversum.org/onderwijs/publicaties/geletterd_in_de_lage_landen/richtlijnen.php">Richtlijnen Keurmerk Makkelijk Lezen</loc>は、Stichting Makkelijk Lezen (Easy Reading Foundation)が用いているガイドラインである。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.leesbaarnederlands.nl/">Leesbaar Nederlands</loc>（"Readable Dutch"「読みやすいオランダ語」）では、読字障害のある人にとってアクセシブルな文書の書き方に関するガイドラインが提供されている。このガイドラインでは、言葉遣い、内容及びデザインについて示されている。</p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.inclusion-europe.org/etr/">European Easy-to-Read Guidelines</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://en.wikipedia.org/wiki/Flesch-Kincaid_Readability_Test">Flesch-Kincaid Readability Test</loc>
-              </p></item>
+	<item><p>Plain Language Association INternational (PLAIN) のウェブサイトでは、様々な文化的、修辞的な文脈において、文書制作者がより明解な表現をするための多くのリソースが提供されている。<loc href="http://plainlanguagenetwork.org/">http://plainlanguagenetwork.org/</loc> 参照。</p></item>
+	<item><p><loc href="http://www.plainlanguage.gov/">米国政府の plain language ウェブサイト</loc>では、簡単な表現 (plain language) に関する一般的情報に加えて、法的な要件を含む米国政府関連文書における plain language の使用に関する情報が提供されている。</p></item>
+	<item><p><loc href="http://www.plainenglish.co.uk/">The Plain English Campaign のウェブサイト</loc>では、英語で文書作成を行う場合に有用な情報や指針が提供されている。</p></item>
+	<item><p><loc href="http://juicystudio.com/services/readability.php">Juicy Studio's Readability Test</loc> は、表示されたすべてのコンテンツのリーダビリティの解析を行う。</p></item>
+	<item><p><loc href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Entry for Audience Education Level. Using Dublin Core ? Dublin Core Qualifiers</loc></p></item>
+	<item><p><loc href="http://www.imsglobal.org/profiles/lipinfo01.html#tab6.3">IMS Learner Information Packaging Model Information Specification, Table 6.3  "accessibility" learner information data structure detailed description</loc></p></item>
+	<item><p><loc href="http://www.textquest.de/pages/en/analysis-of-texts/readability-analysis.php">TextQuest.de</loc> には、英語、ドイツ語、スペイン語、オランダ語フランス語及びスウェーデン語を含む多くの原語におけるリーダビリティの計算式のリストが提供されている。</p></item>
+	<item><p><loc href="http://taalunieversum.org/publicaties/geletterd_in_de_lage_landen/richtlijnen.php">Richtlijnen Keurmerk Makkelijk Lezen</loc> は、Stichting Makkelijk Lezen (Easy Reading Foundation) が用いているガイドラインである。</p></item>
+	<item><p><loc href="http://www.leesbaarnederlands.nl/">Leesbaar Nederlands</loc>（"Readable Dutch"「読みやすいオランダ語」）では、読字障害のある人にとってアクセシブルな文書の書き方に関するガイドラインが提供されている。このガイドラインでは、言葉遣い、内容及びデザインについて示されている。</p></item>
+	<item><p><loc href="http://inclusion-europe.eu/">European Easy-to-Read Guidelines</loc></p></item>
+	<item><p><loc href="https://en.wikipedia.org/wiki/Flesch-Kincaid_Readability_Test">Flesch-Kincaid Readability Test</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.1.5 の達成方法及び不適合事例 － 読解レベル</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G103" linktype="general"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G79" linktype="general"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G153" linktype="general"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G160" linktype="general"/></p></item>
+	<item><p><loc href="G103" linktype="general"/></p></item>
+	<item><p><loc href="G79" linktype="general"/></p></item>
+	<item><p><loc href="G153" linktype="general"/></p></item>
+	<item><p><loc href="G160" linktype="general"/></p></item>
 </olist>
 
 <note>
@@ -102,7 +96,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 3.1.5 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
 	<item><p>前期中等教育レベル以上の読解力を必要としないテキストを用いて、ナビゲーション用のページとランディングページを提供する（リンク追加予定） </p></item>
 	<item><p>前期中等教育レベル以上の読解力を必要としないテキストを用いて、サイト内のページを提供する（リンク追加予定）</p></item>
@@ -112,21 +106,21 @@
 	<item><p>サイトのホームページにそのサイトを表す分かりやすい画像を掲載する（リンク追加予定）</p></item>
 	<item><p>読みやすいように最適化されたコンテンツであることが分かるように、テキストやアイコンを用いて明示する（リンク追加予定）</p></item>
 	<item><p>冗長な単語の使い方、すなわち文の意味を変えない異なる単語を用いないで文を構成する（リンク追加予定）</p></item>
-	<item><p> 二つより多い接続詞を含む文を使わない（リンク追加予定）</p></item>
-	<item><p>中等教育レベルで一般的に容認されている長さを超えない文を用いる（注記: 英語では25ワードである）（リンク追加予定） </p></item>
+	<item><p>二つより多い接続詞を含む文を使わない（リンク追加予定）</p></item>
+	<item><p>中等教育レベルで一般的に容認されている長さを超えない文を用いる（注記: 英語では 25 ワードである）（リンク追加予定） </p></item>
 	<item><p>複雑な単語又は語句で、より一般的な言葉で置き換えても文の意味が変わらない場合、複雑な単語や語句を含まない文を用いる（リンク追加予定） </p></item>
 	<item><p>テキストの複数の章や節の概要を提供する（リンク追加予定）</p></item>
 	<item><p>メタデータを用いて、異なる読解力を想定して作られた代替コンテンツを関連づける（リンク追加予定） </p></item>
 	<item><p>ダブリン・コアのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
-	<item><p>ISO AFAのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
-	<item><p>IMSのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>ISO AFA のアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
+	<item><p>IMS のアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける（リンク追加予定） </p></item>
 	<item><p>メタデータを利用者に見えるようにする（リンク追加予定）</p><ulist><item><p>事例：新しい科学的発見に関する高等レベルの記事の初頭レベル以下及び初頭レベルの版へのURIをメタデータとして提供する</p></item></ulist></item>
 	<item><p>サイトとページのコンテンツに進展する複雑性を与える（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
 <div4 role="failures">
-<head>達成基準 3.1.5 のよくある不適合事例</head>
+<head/>
 </div4>
 </div3>
 </div2>
