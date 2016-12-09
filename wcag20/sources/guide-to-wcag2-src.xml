@@ -77,7 +77,7 @@ Austin)</affiliation>
 <status>
 <p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
 
-<p>これは、ワーキンググループ・ノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>では、この文書は <loc href="../WCAG20/">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり（ガイダンスを提供している）、規定文書ではない（WCAG 2.0 に適合するための要件を定めていない）ことに留意してほしい。</p>
+<p>これは、ワーキンググループ・ノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>では、この文書は <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり（ガイダンスを提供している）、規定文書ではない（WCAG 2.0 に適合するための要件を定めていない）ことに留意してほしい。</p>
 
 <p>WCAG 2.0 解説書は、ワーキンググループ・ノートとして<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">2008年12月11日に発行</loc>され、2010年10月14日、2012年1月3日、2013年9月5日、2014年3月3日、2014年4月8日、2014年9月16日、2015年2月26日に更新された。この新版では、WCAG2.0の補足情報を更新している。WCAG2.0自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、第三者によるコンテンツに起因する部分適合表明に関する説明を追加したことである。</p>
 
@@ -95,7 +95,7 @@ Austin)</affiliation>
 </status>
 
 <abstract>
-<p>この文書、「WCAG 2.0 解説書」は、<loc href="../WCAG20/">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
+<p>この文書、「WCAG 2.0 解説書」は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
 
 <p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術（例えば、HTML、CSS、XML）を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc href="http://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法（英語）</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、（それ単体もしくは他の達成方法との併用により、）ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、（テスト可能ではない、あるいは、完全な支援ができないので、）それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
 
@@ -243,7 +243,7 @@ Austin)</affiliation>
 					</item>
 				</ulist>
             <p>
-               <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</loc> では、<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance#uc-accessibility-support-head">understanding accessibility support</loc>に関するものを含む関連情報を提供している。</p>
+               <loc href="conformance.html">Understanding Conformance</loc> では、<loc href="conformance.html#uc-accessibility-support-head">understanding accessibility support</loc>に関するものを含む関連情報を提供している。</p>
 				<div3 id="understanding-techniques-informative" role="normal">
 					<head>達成方法は参考情報である</head>
 					<p>
@@ -275,17 +275,17 @@ Austin)</affiliation>
                   <emph>十分な達成方法</emph> は達成基準を満たすのに信頼できる方法である。</p>
 					<ulist>
 						<item>
-							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれがユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
+							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれがユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
 						</item>
 						<item>
-							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
+							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
                <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3Cの<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。 <emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
                </p>
 					<div4 id="understanding-techniques-sufficient-lists-and" role="normal">
 						<head>番号付きリスト、"かつ"</head>
-                  <p>W3C文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。1つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければ名rない。例えば、<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/complete#content-structure-separation-programmatic-techniques-head">達成基準1.3.1を満たすことのできる達成方法</loc> では: "G115: セマンティックな要素を用いて、構造をマークアップする 、かつ、 H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
+                  <p>W3C文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。1つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければ名rない。例えば、<loc href="content-structure-separation-programmatic.html#content-structure-separation-programmatic-techniques-head">達成基準1.3.1を満たすことのできる達成方法</loc> では: "G115: セマンティックな要素を用いて、構造をマークアップする 、かつ、 H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
                </div4>
 				</div3>
 				<div3 id="understanding-techniques-advisory" role="normal">
@@ -301,7 +301,7 @@ Austin)</affiliation>
 							<p>まだ安定していない技術に基づいている;</p>
 						</item>
 						<item>
-							<p>多くの場合において <loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でない (例えば、支援技術が達成方法に対応できていない);</p>
+							<p>多くの場合において <loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でない (例えば、支援技術が達成方法に対応できていない);</p>
 						</item>
 						<item>
 							<p>テスト可能でない;</p>
@@ -351,7 +351,7 @@ Austin)</affiliation>
 							<p>それらが達成基準を満たし、かつ</p>
 						</item>
 						<item>
-							<p>すべての<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html">WCAG 2.0 適合要件</loc> が満たされている。</p>
+							<p>すべての<loc href="conformance.html">WCAG 2.0 適合要件</loc> が満たされている。</p>
 						</item>
 					</ulist>
 					<div4 id="understanding-techniques-submitting" role="normal">
@@ -382,7 +382,7 @@ Austin)</affiliation>
 							<p>技術特有の達成方法の検証を通過したコンテンツは、必ずしもすべての WCAG 達成基準を満たしていない。いくつかの達成基準は一般的な達成方法のみを持っており、技術特有の達成方法を持っていない。</p>
 						</item>
 						<item>
-							<p>コンテンツはそのユーザに対して<loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でなければならない。いくつかの十分な達成方法は、一部のユーザが持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
+							<p>コンテンツはそのユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でなければならない。いくつかの十分な達成方法は、一部のユーザが持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
 						</item>
 					</ulist>
 					<p>このように達成方法はコンテンツの評価において有益であるが、コンテンツが WCAG 達成基準にどのくらい適合しているか評価するためには、評価は十分な達成方法をただ検証することを超えて行わなければならない。</p>
@@ -391,10 +391,10 @@ Austin)</affiliation>
 				</div3>
 				<div3 id="understanding-techniques-support" role="normal">
 					<head>ユーザエージェント及び支援技術のサポートに関する注記</head>
-					<p>いくつかの達成方法では、ウェブコンテンツのユーザに対して、その達成方法が<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph> の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。</p>
+					<p>いくつかの達成方法では、ウェブコンテンツのユーザに対して、その達成方法が<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph> の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。</p>
 					<div4 id="understanding-techniques-support-change" role="normal">
 						<head>サポートに関する注記は時間とともに変化する</head>
-						<p>時間の経過に伴い、列挙されているユーザエージェント（ブラウザなど）や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、ユーザが現時点で利用可能なユーザエージェントや支援技術を用いて達成方法を検証することが望ましい。<loc href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">Understanding Accessibility Support</loc>も参照のこと.</p>
+						<p>時間の経過に伴い、列挙されているユーザエージェント（ブラウザなど）や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、ユーザが現時点で利用可能なユーザエージェントや支援技術を用いて達成方法を検証することが望ましい。<loc href="conformance.html#uc-accessibility-support-head">Understanding Accessibility Support</loc>も参照のこと.</p>
 					</div4>
 				</div3>
 				<div3 id="understanding-techniques-using" role="normal">
