@@ -266,7 +266,7 @@ Austin)</affiliation>
 							-->
 						</ulist>
                   <p>
-                     <loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
+                     <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
 					</note>
 				</div3>
 				<div3 id="understanding-techniques-sufficient" role="normal">
@@ -281,7 +281,7 @@ Austin)</affiliation>
 							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
-               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3Cの<loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。 <emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
+               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3Cの<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。 <emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
                </p>
 					<div4 id="understanding-techniques-sufficient-lists-and" role="normal">
 						<head>番号付きリスト、"かつ"</head>
@@ -339,7 +339,7 @@ Austin)</affiliation>
 				</div3>
 				<div3  id="understanding-techniques-othertechs" role="normal">
 					<head>その他の達成方法</head>
-					<p>W3C の <loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
+					<p>W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
 					<p>
 						<emph role="strong">ウェブコンテンツは、WCAG 2.0 に適合するために W3C が公開している達成方法を用いなくてもよい。</emph>
 						<emph>(上記の<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
@@ -356,7 +356,7 @@ Austin)</affiliation>
 					</ulist>
 					<div4 id="understanding-techniques-submitting" role="normal">
 						<head>達成方法の提出</head>
-						<p>The WCAG Working Group では、<loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書の更新において取り入れることを検討できるように、新しい達成方法を提出することを推奨する。<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>を用いて、検討のための達成方法を提出いただきたい。</p>
+						<p>The WCAG Working Group では、<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書の更新において取り入れることを検討できるように、新しい達成方法を提出することを推奨する。<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>を用いて、検討のための達成方法を提出いただきたい。</p>
 					</div4>
 				</div3>
 				<div3 id="understanding-techniques-tests" role="normal">
@@ -400,7 +400,7 @@ Austin)</affiliation>
 				<div3 id="understanding-techniques-using" role="normal">
 					<head>達成方法集の使用</head>
                <p>
-                  <loc href="/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために<loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
+                  <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために<loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
 					<div4 id="understanding-techniques-using-alternatives" role="normal">
 						<head>代替バージョンは達成基準を満たしていなければならない</head>
 						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="http://www.w3.org/TR/WCAG20-HTML-TECHS/G73">G73: Providing a long description in another location...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>
