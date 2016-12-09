@@ -4,7 +4,7 @@
 <div2 role="extsrc" id="ensure-compat-rsv">
    <head>4.1.2</head>
    <div3 role="intent">
-      <head>この達成基準の意図</head>
+      <head/>
 
 <p>この達成基準の意図は、支援技術がコンテンツにあるユーザインタフェース コントロールの状態に関する情報を収集する、その状態をアクティブにする（又は設定する）、及び最新の状態を保つように保証することである。</p>
 <p>アクセシブルなウェブコンテンツ技術由来の標準コントロールを使用するとき、このプロセスはごく簡単である。ユーザインタフェース要素を仕様に準じて使用している場合、この達成基準に適合したことになる。（下記の達成基準4.1.2の事例を参照のこと）</p>
@@ -15,7 +15,7 @@
 </note>
 
 <div4 role="benefits">
-<head>達成基準 4.1.2 の具体的なメリット</head>
+<head/>
 <ulist>
 	<item><p>すべてのユーザインタフェース コンポーネントに、役割、状態、及び値の情報を持たせることによって、例えば、スクリーンリーダー、画面拡大ソフトウェア、及び音声認識ソフトウェアなどの、障害のある利用者が使用する支援技術との互換性を保つことを可能にする。</p></item>
 </ulist>
@@ -23,7 +23,7 @@
 </div3>
 
 <div3 role="examples">
-<head>達成基準 4.1.2 の事例</head>
+<head/>
 <ulist>
   <item><p><emph role="bold">アクセシビリティ API</emph></p>
   <p>Java アプレットは、Java 言語で定義されたアクセシビリティ API を用いている。</p></item>
@@ -31,49 +31,39 @@
 </div3>
 
 <div3 role="resources">
-<head>関連リソース</head>
+<head/>
 <ulist>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/GUI/">Role Taxonomy for Accessible Adaptable Applications</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/adaptable/">States and Adaptable Properties Module</loc>
-              </p></item>
-	<item><p>
-                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility, Version 2.0</loc>
-              </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/accessibility/products/flash/best_practices.html">Adobe Flash accessibility design guidelines</loc>
-              </p></item>
+	<item><p><loc href="http://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</loc></p></item>
+	<item><p><loc href="http://www.w3.org/WAI/PF/GUI/">Role Taxonomy for Accessible Adaptable Applications</loc></p></item>
+	<item><p><loc href="http://www.w3.org/WAI/PF/adaptable/">States and Adaptable Properties Module</loc></p></item>
+	<item><p><loc href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">Microsoft Active Accessibility, Version 2.0</loc></p></item>
+	<item><p><loc href="http://www.adobe.com/accessibility.htmlproducts/flash/best-practices.html">Adobe Flash accessibility design guidelines</loc></p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 4.1.2 の達成方法及び不適合事例 － プログラムが解釈可能な識別名・役割及び設定可能な値</head>
+<head/>
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： マークアップ言語（例えば HTML）で標準的なユーザインタフェース コンポーネントを使用している場合：</head>
+<head>状況 A：マークアップ言語（例えば HTML）で標準的なユーザインタフェース コンポーネントを使用している場合：</head>
 <olist>
   <item><p><loc href="ARIA14" linktype="aria"/></p></item>
   <item><p><loc href="ARIA16" linktype="aria"/></p></item>
-  <item><p>下記の達成方法固有の技術を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G108" linktype="general"/>:</p>
+  <item><p>下記の達成方法固有の技術を用いて、<loc href="G108" linktype="general"/>:</p>
   <ulist>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H91" linktype="html"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H44" linktype="html"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H64" linktype="html"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H65" linktype="html"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H88" linktype="html"/></p></item>
+    <item><p><loc href="H91" linktype="html"/></p></item>
+    <item><p><loc href="H44" linktype="html"/></p></item>
+    <item><p><loc href="H64" linktype="html"/></p></item>
+    <item><p><loc href="H65" linktype="html"/></p></item>
+    <item><p><loc href="H88" linktype="html"/></p></item>
   </ulist>
   </item>
 </olist>
 </div5>
 
 <div5 role="situation">
-<head>状況 B： スクリプト又はコードを用いて、マークアップ言語の標準的なユーザインタフェース コンポーネント再定義する場合：</head>
+<head>状況 B：スクリプト又はコードを用いて、マークアップ言語の標準的なユーザインタフェース コンポーネント再定義する場合：</head>
 <olist>
   <item role="script">
     <p>名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</p>
@@ -85,31 +75,31 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 C： プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合：</head>
+<head>状況 C：プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合：</head>
 <olist>
-  <item><p>下記の達成方法固有の技術を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G135" linktype="general"/>:</p>
+  <item><p>下記の達成方法固有の技術を用いて、<loc href="G135" linktype="general"/>:</p>
   <ulist>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH32" linktype="flash"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH29" linktype="flash"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH30" linktype="flash"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF10" linktype="pdf"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF12" linktype="pdf"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL26" linktype="silverlight"/></p></item>
-    <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL32" linktype="silverlight"/></p></item>
+    <item><p><loc href="FLASH32" linktype="flash"/></p></item>
+    <item><p><loc href="FLASH29" linktype="flash"/></p></item>
+    <item><p><loc href="FLASH30" linktype="flash"/></p></item>
+    <item><p><loc href="PDF10" linktype="pdf"/></p></item>
+    <item><p><loc href="PDF12" linktype="pdf"/></p></item>
+    <item><p><loc href="SL26" linktype="silverlight"/></p></item>
+    <item><p><loc href="SL32" linktype="silverlight"/></p></item>
   </ulist>
   </item>
 </olist>
 </div5>
 
 <div5 role="situation">
-<head>状況 D： プログラミング言語で独自のインタフェース・コンポーネントを作成する場合：</head>
+<head>状況 D：プログラミング言語で独自のインタフェース・コンポーネントを作成する場合：</head>
 <olist>
-  <item><p>下記の達成方法固有の技術を用いて、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G10" linktype="general"/>:</p>
+  <item><p>下記の達成方法固有の技術を用いて、<loc href="G10" linktype="general"/>:</p>
     <ulist>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL6" linktype="silverlight"/></p></item>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL18" linktype="silverlight"/></p></item>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL20" linktype="silverlight"/></p></item>
-      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL30" linktype="silverlight"/></p></item>
+      <item><p><loc href="SL6" linktype="silverlight"/></p></item>
+      <item><p><loc href="SL18" linktype="silverlight"/></p></item>
+      <item><p><loc href="SL20" linktype="silverlight"/></p></item>
+      <item><p><loc href="SL30" linktype="silverlight"/></p></item>
     </ulist>
   </item>
 </olist>
@@ -117,7 +107,7 @@
 </div4>
 
 <div4 role="tech-optional">
-<head>達成基準 4.1.2 でさらに対応が望まれる達成方法（参考）</head>
+<head/>
 <ulist>
 	<item><p>暗黙のラベルを持たないすべてのフォーム コントロールにラベルを付加する（リンク追加予定）</p></item>
 </ulist>
@@ -126,13 +116,13 @@
 <div4 role="failures">
 <head/>
 <ulist>
-	<item role="script"><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F59" linktype="failure"/></p><note><p>この不適合事例は、将来的に DHTML ロードマップの達成方法を用いて問題が解決されるかもしれない。</p></note></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F15" linktype="failure"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F20" linktype="failure"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F68" linktype="failure"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F79" linktype="failure"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F86" linktype="failure"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F89" linktype="failure"/></p></item>
+	<item role="script"><p><loc href="F59" linktype="failure"/></p><note><p>この不適合事例は、将来的に DHTML ロードマップの達成方法を用いて問題が解決されるかもしれない。</p></note></item>
+	<item><p><loc href="F15" linktype="failure"/></p></item>
+	<item><p><loc href="F20" linktype="failure"/></p></item>
+	<item><p><loc href="F68" linktype="failure"/></p></item>
+	<item><p><loc href="F79" linktype="failure"/></p></item>
+	<item><p><loc href="F86" linktype="failure"/></p></item>
+	<item><p><loc href="F89" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
