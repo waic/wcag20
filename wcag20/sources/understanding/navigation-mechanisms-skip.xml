@@ -64,7 +64,6 @@
 		<item><p><loc href="ARIA11" linktype="aria"/></p></item>
 		<item><p><loc href="H69" linktype="html"/></p></item>
 		<item><p><loc href="PDF9" linktype="pdf"/></p></item>
-		<item><p><loc href="H50" linktype="html"/></p></item>
 		<item><p><loc href="H70" linktype="html"/>、<emph role="bold">かつ</emph>、<loc  href="H64" linktype="html"/></p></item>
 		<item><p><loc href="SCR28" linktype="script"/></p></item>
 		<item><p><loc href="SL29" linktype="silverlight"/></p></item>
@@ -80,7 +79,7 @@
 	<item><p>ページナビゲーションに拡張したスキップリンクを提供する（リンク追加予定）</p></item>
 	<item><p>アクセスキーを提供する（リンク追加予定）</p></item>
 	<item><p>ユーザエージェント及び支援技術による構造化されたナビゲーションを与えるアクセシビリティサポート技術を使う（リンク追加予定）</p></item>
-	<item><p><loc href="C6" linktype="css">コンテンツを構造のマークアップに基づいて配置する </loc></p></item>
+	<item><p><loc href="C6" linktype="css"/></p></item>
 </ulist>
 </div4>
 
