@@ -1,0 +1,102 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>SCR37: デバイス非依存な方法でカスタム・ダイアログを作成する | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR36: 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する" href="SCR36.html"><strong>前: </strong>
+        達成方法 SCR36</a></li><li><a title="SCR38: プログレッシブ・エンハンスメントで設計されたウェブページに対して、適合した代替バージョンを作成する" href="SCR38.html"><strong>次: </strong>
+        達成方法 SCR38</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#SCR37-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#SCR37-applicability">適用（対象）</a></li><li><a href="#SCR37-description">解説</a></li><li><a href="#SCR37-examples">事例</a></li><li><a href="#SCR37-resources">参考リソース</a></li><li><a href="#SCR37-related-techs">関連する達成方法</a></li><li><a href="#SCR37-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SCR37" id="SCR37"> </a>SCR37: デバイス非依存な方法でカスタム・ダイアログを作成する</h1><div id="SCR37-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="SCR37-applicability">適用（対象）</h2><div class="textbody"><p>スクリプトで使用されるHTML及びXHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
+				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-order">
+						How to Meet 2.4.3 (フォーカス順序)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-order.html">
+						達成基準 2.4.3 (フォーカス順序)を理解する
+					</a></li></ul></li></ul><h2 id="SCR37-description">解説</h2><div class="textbody"><p>コンテンツ制作者はしばしば、ブラウザによって提供されるポップアップウインドウを使わずに、独自のダイアログを作成したがる。これは通常、ダイアログのコンテンツを<code>div</code>の中に収めて、その<code>div</code>をコンテンツの上にCSSによる重なり順及び絶対配置を用いて配置するというやり方でおこなわれる。</p><p>これらのダイアログをアクセシブルにするには、いくつかの簡単なルールに従う必要がある。</p><ol class="enumar"><li><p>リンクやボタンの<code>onclick</code>イベントからダイアログを起動するスクリプトをトリガーにする。</p></li><li><p>ダイアログの<code>div</code>をDocument Object Model (DOM) の中、トリガーした要素の直後に配置する。トリガーした要素がフォーカスを保持し、ダイアログのコンテンツをその要素のあとに挿入することで、ダイアログの中のコンテンツがスクリーンリーダーの読み上げ順序で次になり、タブ順序も次になる。それでも、ダイアログは視覚的にページ上のあらゆる場所に絶対配置できる。これは、下の例のようにダイアログをHTMLの中で作成し、CSSで非表示にする方法又は、トリガーした要素の直後にスクリプトで挿入する方法のどちらでも実装できる。</p></li><li><p>ダイアログのdiv内部のHTMLが、その他のコンテンツと同じアクセシビリティガイドラインの要件を満たしていることを保証する。</p></li></ol><p>リンクがダイアログを開閉できたり、キーボードのフォーカスが外れるとダイアログが閉じるようにしたりすることはすばらしいが、必ずしも必要なわけではない。</p></div><h2 class="small-head" id="SCR37-examples">事例</h2><h3 class="small-head" id="SCR37-ex1">事例 1: ダイアログを開くオプションボタン</h3><div class="example"><div class="textbody"><p>この例のHTMLには、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能するdivがある。</p><p>トリガーとなる要素はボタンで、スクリプトはonclickイベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術はDOMの中の変化に気がつくことができる。</p><p>この例では、ダイアログ内の送信及びリセットボタンは単純に<code>div</code>に隠れている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> role="xhtml1"&gt;...
+&lt;button onclick="TogglePopup(event,true)"
+	name="pop0001"&gt;オプション&lt;/button&gt;
+
+&lt;div class="popover" id="pop0001"&gt;
+  &lt;h3&gt;並べ替えの情報を編集&lt;/h3&gt;
+  &lt;form action="default.htm" onsubmit="this.parentNode.style.display='none'; return false;" onreset="this.parentNode.style.display='none'; return false;"&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;並び順&lt;/legend&gt; 
+      &lt;input type="radio" name="order" id="order_alpha" /&gt;&lt;label for="order_alpha"&gt;アルファベット順&lt;/label&gt;
+      &lt;input type="radio" name="order" id="order_default" checked="true" /&gt;&lt;label for="order_default"&amp;amp;gt既定&lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;div class="buttons"&gt;
+  &lt;input type="submit" value="OK" /&gt;
+  &lt;input type="reset" value="キャンセル" /&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;
+...</code></pre></div><div class="textbody"><p><code>div</code>、見出し、及び<code>form</code>要素はCSSでダイアログに見えるようにスタイル付けされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+a { color:blue; }
+a.clickPopup img { border:none; width:0; }
+
+div.popover { position:absolute; display:none; border:1px outset; background-color:beige; font-size:80%; background-color:#eeeeee; color:black; }
+div.popover h3 { margin:0; padding:0.1em 0.5em; background-color:navy; color:white; }
+#pop0001 { width:20em; }
+#pop0001 form { margin:0; padding:0.5em; }
+#pop0001 fieldset { margin-bottom:0.3em; padding-bottom:0.5em; }
+#pop0001 input, #pop0001 label { vertical-align:middle; }
+#pop0001 div.buttons { text-align:right; }
+#pop0001 div.buttons input { width:6em; }
+...</code></pre></div><div class="textbody"><p>スクリプトはポップアップする<code>div</code>の表示を切り替え、表示させたり隠したりする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+function TogglePopup(evt,show)
+{
+	HarmonizeEvent(evt);
+	var src = evt.target;
+	if ("click" == evt.type)
+	{
+		evt.returnValue = false;
+	}
+	var popID = src.getAttribute("name");
+	if (popID)
+	{
+		var popup = document.getElementById(popID);
+		if (popup)
+		{
+			if (true == show)
+			{
+				popup.style.display = "block";
+			}
+			else if (false == show)
+			{
+				popup.style.display = "none";
+			}
+			else
+			{
+				popup.style.display = "block" == popup.style.display ? "none" : "block";
+			}
+			if ("block" == popup.style.display)
+			{
+				//window.alert(document.documentElement.scrollHeight);
+				popup.style.top = ((document.documentElement.offsetHeight - popup.offsetHeight) / 2 ) + 'px';
+				popup.style.left = ((document.documentElement.offsetWidth - popup.offsetWidth) / 2) + 'px';
+			}
+		}
+	}
+}
+
+function SubmitForm(elem)
+{ 
+	elem.parentNode.style.display='none'; 
+	return false;
+}
+
+function ResetForm(elem)
+{ 
+	elem.parentNode.style.display='none'; 
+	return false;
+}
+...</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR37/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR37/default.htm" class="ex-ref">ダイアログを開くオプションボタン</a></p></div></div><h2 id="SCR37-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w4a.info/2007/prog/8-shelly.pdf">W4A Paper: Accessibility for Simple to Moderate-Complexity DHTML Web Sites</a>  by Cynthia C. Shelly and George Young, Microsoft Corporation. (PDF Format)</p></li><li><p>Microsoft Developer Network Whitepaper:<a href="http://download.microsoft.com/download/0/f/5/0f5e941c-c495-401a-9031-eab8315da35e/writing_accessible_web_applications.doc"> Writing Accessible Web Applications</a> by Cynthia C. Shelly and George Young. (Microsoft Word Format)</p></li><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/ms695716.aspx">Microsoft Active Accessibility 2.0 SDK</a>. Includes Inspect32.exe and other MSAA tools.</p></li><li><p>
+                  <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx">Instructions for the Inspect tool</a>
+               </p></li><li><p>
+                  <a href="http://www.eramp.com/david/name-role-value-using-inspect.htm">Using the Inspect tool to find name Name, Role and Value for Javascript</a>
+               </p></li><li><p>
+                  <a href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar.</a>. Allows examination of script-generated DOM in Microsoft Internet Explorer</p></li><li><p>
+                  <a href="http://getfirebug.com/">Firebug</a>. Allows examination of script-generated DOM in Firefox. </p></li></ul></div><h2 id="SCR37-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="SCR26.html">SCR26: 動的なコンテンツを DOM のそのトリガーとなる要素の直後に挿入する</a></li><li><a href="G59.html">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a></li></ul></div><h2 id="SCR37-tests">検証</h2><div class="textbody"><h3 class="small-head" id="SCR37-procedure">チェックポイント</h3><ol class="enumar"><li><p>ページ内のすべての場所から、ダイアログのトリガーとなるもので、ポップアップウインドウでないものを探す。</p></li><li><p>Tabキーでその場所に移動してEnterキーを押下することで、ダイアログを開くことができる。</p></li><li><p>開いたら、タブ順序でダイアログが次の位置にある。</p></li><li><p>ダイアログがボタン又はリンクのクリックイベントによってトリガーされている。</p></li><li><p>スクリプトによって生成されたDOMを検証できるツールを用いて、DOM内でダイアログが次にある。</p></li></ol><h3 class="small-head" id="SCR37-results">判定基準</h3><ul><li><p>2., 3., 4.及び5.を満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR36: 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する" href="SCR36.html"><strong>前: </strong>
+        達成方法 SCR36</a></li><li><a title="SCR38: プログレッシブ・エンハンスメントで設計されたウェブページに対して、適合した代替バージョンを作成する" href="SCR38.html"><strong>次: </strong>
+        達成方法 SCR38</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/SCR37.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

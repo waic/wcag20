@@ -1,0 +1,121 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>FLASH18: Flash で自動的に再生される音声をオフにするコントロールを提供する | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH17: Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する" href="FLASH17.html"><strong>前: </strong>
+        達成方法 FLASH17</a></li><li><a title="FLASH19: 利用者に制限時間が間もなく終了することを警告して、制限時間を延長する方法を提示するスクリプトを提供する" href="FLASH19.html"><strong>次: </strong>
+        達成方法 FLASH19</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#FLASH18-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#FLASH18-applicability">適用（対象）</a></li><li><a href="#FLASH18-description">解説</a></li><li><a href="#FLASH18-examples">事例</a></li><li><a href="#FLASH18-related-techs">関連する達成方法</a></li><li><a href="#FLASH18-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="FLASH18" id="FLASH18"> </a>FLASH18: Flash で自動的に再生される音声をオフにするコントロールを提供する</h1><div id="FLASH18-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="FLASH18-applicability">適用（対象）</h2><div class="textbody"><ul><li><p>Adobe Flash Professional version MX and higher </p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-dis-audio">
+				達成基準 1.4.2 (音声の制御)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-dis-audio">
+						How to Meet 1.4.2 (音声の制御)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-dis-audio.html">
+						達成基準 1.4.2 (音声の制御)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua9.18.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH18">User Agent Support Notes for FLASH18</a>. Also see <a href="flash_notes.html">Flash Technology Notes</a>.</p></div><h2 id="FLASH18-description">解説</h2><div class="textbody"><p>The intent of this technique is to allow a user to turn off sounds   that start automatically when a Flash movie loads. The control to turn   off the sounds should be located near the beginning of the page to allow   the control to be easily and quickly discovered by users . This is   useful for those who utilize assistive technologies (such as screen   readers, screen magnifiers, switch mechanisms, etc.) and those who may   not (such as those with cognitive, learning and language disabilities). </p><p>In this technique, an author includes a control that makes it   possible for users to turn off any sounds that are played automatically.   For maximum accessibility, the control can be added to the HTML   document rather than to the Flash movie. The HTML control will   communicate with the Flash movie through the ExternalInterface class.   This means that the user can control the sound playback without having   to interact with Flash content. If this is not practical, the control   can be provided within the Flash content, provided that the control is   keyboard operable, located early in the tab and reading order, and   clearly labeled to indicate that it will turn off the sounds that are   playing. </p></div><h2 class="small-head" id="FLASH18-examples">事例</h2><h3 class="small-head" id="FLASH18-ex1">事例 1: Providing a button in the Flash to stop sound</h3><div class="example"><div class="textbody"><p>This example demonstrates the addition of a button within the Flash   movie to allow the user to stop sounds from playing.  A class called   SoundHandler is created which automatically starts playing an mp3 file   when the movie loads. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>package wcagSamples {
+  import flash.display.Sprite;
+  import flash.net.URLRequest;
+  import flash.media.Sound;
+  import flash.media.SoundChannel;
+  
+  import fl.controls.Button;
+  import fl.accessibility.ButtonAccImpl;
+  
+  import flash.events.MouseEvent;
+  public class SoundHandler extends Sprite {
+    private var snd: Sound = new Sound();
+    private var button: Button = new Button();
+    private var req: URLRequest = new URLRequest("http://av.adobe.com/podcast\
+      /csbu_dev_podcast_epi_2.mp3");
+    private var channel: SoundChannel = new SoundChannel();
+    
+    public function SoundHandler() {
+      ButtonAccImpl.enableAccessibility();
+      button.label = "Stop Sound";
+      button.x = 10;
+      button.y = 10;
+      button.addEventListener(MouseEvent.CLICK, clickHandler);
+      this.addChild(button);
+      snd.load(req);
+      channel = snd.play();
+    }
+    private function clickHandler(e: MouseEvent): void {
+      if (button.label == "Stop Sound") {
+        button.label = "Start Sound";
+        channel.stop();
+      } else {
+        channel = snd.play();
+        button.label = "Stop Sound";
+      }
+    }
+  }
+}</code></pre></div><div class="textbody"><p>This is demonstrated in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.html" class="ex-ref">working example of Providing a button in the Flash to stop sound</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.fla" class="ex-ref">source of Providing a button in the Flash to stop sound</a> is available.</p></div></div><h3 class="small-head" id="FLASH18-ex2">事例 2: Providing a button in the HTML before the Flash object to stop sound</h3><div class="example"><div class="textbody"><p>A class called SoundHandler is created which automatically starts   playing an mp3 file when the movie loads. An HTML button is placed in   the HTML document containing the Flash movie. When the button is clicked   the action is communicated between the HTML page and the Flash movie   via the Flash Player JavaScript API, resulting in the toggleSound   method being called on the SoundHandler class. </p><h4 id="FLASH18-subhead-23">ActionScript 3.0 code for Example 2</h4></div><div class="code"><p><strong>コード例:</strong></p><pre><code>package wcagSamples {
+  import flash.display.Sprite;
+  import flash.external.ExternalInterface;
+  import flash.net.URLRequest;
+  import flash.media.Sound;
+  import flash.media.SoundChannel;
+  
+  import flash.events.MouseEvent;
+  public class SoundHandler extends Sprite {
+    private var snd: Sound = new Sound();
+    private var soundOn: Boolean = true;
+    private var req: URLRequest = new URLRequest("http://av.adobe.com/podcast/\
+      csbu_dev_podcast_epi_2.mp3");
+    private var channel: SoundChannel = new SoundChannel();
+    
+    public function SoundHandler() {
+      if (ExternalInterface.available)
+      ExternalInterface.addCallback("toggleSound", this.toggleSound);
+      snd.load(req);
+      channel = snd.play();
+    }
+    
+    private function toggleSound(enable: Boolean): void {
+      if (! enable) {
+        channel.stop();
+        soundOn = true;
+      } else {
+        channel = snd.play();
+        soundOn = true
+      }
+    }
+  }
+}</code></pre></div><div class="textbody"><h4 id="FLASH18-subhead-24">HTML code for Example 2</h4></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;
+    &lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/&gt;
+    &lt;title&gt;Flash Sound Toggle example&lt;/title&gt;
+    &lt;script src="swfobject.js" type="text/javascript"/&gt;
+    &lt;script type="text/javascript"&gt;
+    function $(id) {
+        return document.getElementById(id);
+    }
+    
+    swfobject.embedSWF("html_control_to_toggle_audio_as3.swf", 
+      "flashPlaceHolder", "0", "0", "8");
+    function init() {
+            var soundOn = true;
+            $("soundToggle").onclick = function(event){
+                soundOn = !soundOn;
+                $("flashPlaceHolder").toggleSound(soundOn);
+                event.target.value = soundOn ? "Stop Sound" : "Start Sound";
+            };
+    }
+    window.onload = init;
+&lt;/script&gt;
+
+  &lt;/head&gt;
+  &lt;body id="header"&gt;
+    &lt;h1&gt;Flash Automatic Sound Demo&lt;/h1&gt;
+    &lt;p&gt;This page contains a Flash movie that automatically starts
+      playing sound. Use the button below to stop or start the
+      sound&lt;/p&gt;
+    &lt;input id="soundToggle" type="button" value="Stop Sound"/&gt;
+    &lt;p id="flashPlaceHolder"&gt;Flash needs to be installed for this
+      example to work&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><div class="textbody"><p>This is demonstrated in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.html" class="ex-ref">working example of Providing a button in the HTML before the Flash object to stop sound</a>. The source of <a href="/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.zip" class="ex-ref">source of Providing a button in the HTML before the Flash object to stop sound</a> is available.</p></div></div><h2 id="FLASH18-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="G170.html">G170: 自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</a></li></ul></div><h2 id="FLASH18-tests">検証</h2><div class="textbody"><h3 class="small-head" id="FLASH18-procedure">チェックポイント</h3><p>For Flash movies that automatically start playing sound after   loading: </p><ol class="enumar"><li><p> Confirm that an HTML control that conforms to WCAG 2.0 is placed at the   beginning of the document's tab order </p></li><li><p> If there is no HTML-based control, confirm that an accessible   control is placed at the beginning of the Flash movie's tab order. </p></li><li><p> Activate the HTML or Flash-based control </p></li><li><p> Verify that audio playback stops </p></li></ol><h3 class="small-head" id="FLASH18-results">判定基準</h3><ul><li><p> Check #1 or #2 is true, and #4 is true. </p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH17: Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する" href="FLASH17.html"><strong>前: </strong>
+        達成方法 FLASH17</a></li><li><a title="FLASH19: 利用者に制限時間が間もなく終了することを警告して、制限時間を延長する方法を提示するスクリプトを提供する" href="FLASH19.html"><strong>次: </strong>
+        達成方法 FLASH19</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH18.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

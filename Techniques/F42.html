@@ -1,0 +1,87 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>F42: 達成基準 1.3.1 及び 達成基準 2.1.1 の失敗例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F41: 達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の失敗例 － meta要素によるタイムアウト付きのリフレッシュを使用している" href="F41.html"><strong>前: </strong>Failure F41</a></li><li><a title="F43: 達成基準 1.3.1 の失敗例 － コンテンツにおける関係を表さない方法で、構造を示すマークアップを使用している" href="F43.html"><strong>次: </strong>Failure F43</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#F42-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#F42-applicability">適用（対象）</a></li><li><a href="#F42-description">解説</a></li><li><a href="#F42-examples">事例</a></li><li><a href="#F42-resources">参考リソース</a></li><li><a href="#F42-related-techs">関連する達成方法</a></li><li><a href="#F42-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="F42" id="F42"> </a>F42: 達成基準 1.3.1 及び 達成基準 2.1.1 の失敗例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている</h1><div id="F42-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="F42-applicability">適用（対象）</h2><div class="textbody"><p>スクリプトを含むHTML及びXHTML。</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
+				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (情報及び関係性)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (情報及び関係性)を理解する
+					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
+				達成基準 2.1.1 (キーボード)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#keyboard-operation-keyboard-operable">
+						How to Meet 2.1.1 (キーボード)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/keyboard-operation-keyboard-operable.html">
+						達成基準 2.1.1 (キーボード)を理解する
+					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#ensure-compat-rsv">
+				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
+						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
+						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
+					</a></li></ul></li></ul><h2 id="F42-description">解説</h2><div class="textbody"><p>この不適合は、JavaScriptのイベント・ハンドラが要素と関連づけられて「リンクをエミュレート」するときに起こる。この方法で作成されたコントロール又はリンクは、キーボードのタブで行き来できず、他のコントロールやリンクのようにキーボードでフォーカスできない。スクリプトのイベントがリンクをエミュレートするように使用されていた場合、支援技術を含む利用者ーエージェントはコンテンツ内のリンクをリンクとして認識できない可能性がある。支援技術にはインタラクティブなコントロールとして認識されないか、インタラクティブなコントロールとして認識されたとしても、リンクだとは認識されない可能性がある。そのような要素は利用者ーエージェントや支援技術によって生成されたリンクリストには表れない。</p><p><code>&lt;a href&gt;</code>及び<code>&lt;area&gt;</code>要素はリンクをマークアップするように意図されたものである。要素はリンクをマークアップすることを意図したものである。</p><p>例えば<code>span</code>及び<code>div</code>といった、通常インタラクティブではない要素にイベント・ハンドラを結びつけることは、多くの利用者を混乱させる。たとえそれらの要素へのキーボードアクセスが提供されていたとしても、利用者はコンテンツ内からインタラクティブなコントロールがあることを探し出すのが困難であるか、又はどのようなふるまいが期待されるのかを理解しづらい。例えば、利用者はその要素を有効にするために、どのキー操作がスクリプトでサポートされているかを知らないかもしれない。そのうえ、これらの要素はオペレーティングシステム共通のインタラクティブなイベントを生成しないので、利用者がそれらを有効にした場合に支援技術には伝わらない可能性がある。</p></div><h2 class="small-head" id="F42-examples">事例</h2><div class="failure"><h3 class="small-head" id="F42-failex1">
+					不適合事例 1: &lt;span&gt;要素のスクリプト</h3><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが<code>span</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;span onclick="this.location.href='newpage.html'"&gt;
+    偽のリンク
+&lt;/span&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F42-failex2">
+					不適合事例 2: &lt;img&gt; 要素のスクリプト</h3><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+src="go.gif" 
+   alt="新しいページへ移動" 
+   onclick="this.location.href='newpage.html'"</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F42-failex3">
+					不適合事例 3: &lt;img&gt;要素のスクリプトにキーボードサポートのあるもの</h3><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又は利用者ーエージェントが要素をタブ移動可能な範囲に含まれる場合にはEnterキーで機能する。それでもなお、この要素はリンクとしては認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+function doNav(url)
+{
+   window.location.href = url;
+}
+
+function doKeyPress(url)
+{
+   //Enterキーが押された場合
+   if (window.event.type == "keypress" &amp;amp;&amp;amp;
+       window.event.keyCode == 13)
+   {
+      doNav(url);
+   }
+}</code></pre></div><div class="textbody"><p>画像のためのマークアップ：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;
+	&lt;img src="bargain.jpg"
+		tabindex="0" 
+		alt="バーゲンを見る"
+		onclick="doNav('viewbargains.html');"
+		onkeypress="doKeyPress('viewbargains.html');"
+	&gt;
+&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F42-failex4">
+					不適合事例 4: &lt;div&gt;要素のスクリプト</h3><div class="example"><div class="textbody"><p>この例では、<code>div</code>要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベント・ハンドラをマークアップから切り離しているが、この<code>div</code>要素は支援技術にリンクとして認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+window.onload = init;
+
+function init()
+{
+	var objAnchor = document.getElementById('linklike');
+
+	objAnchor.onclick = function(event){return changeLocation(event,
+'surveyresults.html');};
+	objAnchor.onkeypress = function(event){return changeLocation(event,
+'surveyresults.html');};
+}
+
+function changeLocation(objEvent, strLocation)
+{
+	var iKeyCode;
+
+	if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
+	{
+		if (objEvent.keyCode)
+			iKeyCode = objEvent.keyCode;
+		else if (objEvent.which)
+			iKeyCode = objEvent.which;
+
+		if (iKeyCode != 13 &amp;amp;&amp;amp; iKeyCode != 32)
+			return true;
+	}
+
+	window.location.href = strLocation;
+}</code></pre></div><div class="textbody"><p><code>div</code>要素のためのマークアップ：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;div id="linklike"&gt;
+アンケートの結果を見る。
+&lt;/div&gt;</code></pre></div></div></div><h2 id="F42-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+                  <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) Version 1.0</a>
+               </p></li></ul></div><h2 id="F42-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="G115.html">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li></ul></div><h2 id="F42-tests">検証</h2><div class="textbody"><h3 class="small-head" id="F42-procedure">チェックポイント</h3><ol class="enumar"><li><p>リンクをエミュレートしている要素に関連付けられたJavaScriptのイベント・ハンドラがあるかどうかを確認する。</p></li><li><p>その要素のプログラムで解釈可能なロールが<em>リンク</em>であるかを確認する。</p></li></ol><h3 class="small-head" id="F42-results">判定基準</h3><ul><li><p>1.を満たしていて、2.を満たしていない場合、この不適合条件が適用され、コンテンツは達成基準に不適合となる。</p></li></ul></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F41: 達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の失敗例 － meta要素によるタイムアウト付きのリフレッシュを使用している" href="F41.html"><strong>前: </strong>Failure F41</a></li><li><a title="F43: 達成基準 1.3.1 の失敗例 － コンテンツにおける関係を表さない方法で、構造を示すマークアップを使用している" href="F43.html"><strong>次: </strong>Failure F43</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/F42.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

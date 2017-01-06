@@ -1,0 +1,63 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>F49: 達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F48: 達成基準 1.3.1 の失敗例 － 表形式の情報をマークアップするために、pre 要素を使用している" href="F48.html"><strong>前: </strong>Failure F48</a></li><li><a title="F50: 達成基準 2.2.2 の失敗例 － 点滅させるスクリプトを用いていて、その点滅を 5 秒以内に停止させるメカニズムがない" href="F50.html"><strong>次: </strong>Failure F50</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#F49-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#F49-applicability">適用（対象）</a></li><li><a href="#F49-description">解説</a></li><li><a href="#F49-examples">事例</a></li><li><a href="#F49-resources">参考リソース</a></li><li><a href="#F49-related-techs">関連する達成方法</a></li><li><a href="#F49-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="F49" id="F49"> </a>F49: 達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している</h1><div id="F49-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="F49-applicability">適用（対象）</h2><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-sequence">
+				達成基準 1.3.2 (意味のある順序)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-sequence">
+						How to Meet 1.3.2 (意味のある順序)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-sequence.html">
+						達成基準 1.3.2 (意味のある順序)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua12.38.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/failures#F49">User Agent Support Notes for F49</a>.</p></div><h2 id="F49-description">解説</h2><div class="textbody"><p>WCAG 2.0はレイアウトテーブルの使用を禁止してはいないが、HTMLの<code>table</code>要素に定義されたセマンティックな意味を維持するため、また構造を表現から分離するコーディング上の慣習に従うためにも、CSSに基づくレイアウトを推奨する。それでもレイアウトテーブルを用いる場合には、コンテンツを線形化しても意味が通るようにすることが重要である。</p><p>ここで述べる不適合事例は、コンテンツの視覚的配置のために使用されるHTMLテーブルによってコンテンツが正しく「線形化（リニアライズ）」されないために、表現によって伝えられている意味のある順序が失われることによって生じる。テーブルはコンテンツを縦横の二つの次元で視覚的に表現する。しかし、スクリーンリーダーはこの2次元のコンテンツを、コンテンツがソースに記述された線形的順序、すなわち1行目の一つ目のセルに始まり最終行の最後のセルで終わるような順序で表現する。スクリーンリーダーはテーブルを上から下に読み上げ、ある行のすべての内容を読み上げてから次の行の内容を読み上げる。それぞれの行のそれぞれのセルのすべての内容が、そのセルに含まれるネストされたテーブルのすべての内容も含めて読み上げられる。これを「線形化」と呼んでいる。</p><p>あるウェブページが22行9列のテーブルによってレイアウトされているとしよう。スクリーンリーダーは最初に1行目の第1セル、続いて第2、第3、第4と第9セルまで読み上げる。しかし、いずれかのセルがネストされたテーブルを含む場合、スクリーンリーダーはネストされたテーブルのすべての内容を、元の(外側の)テーブルの次のセルよりも先に読み上げる。
+たとえば6行目3列のセルに、5行6列のテーブルが含まれる場合、含まれたテーブルのすべてのセルが、元の(外側の)テーブルの6行目4列のセルよりも先に読み上げられる。その結果、視覚的表現によって伝えられている意味のある順序がスクリーンリーダーによる読み上げでは知覚できないかもしれない。</p></div><h2 class="small-head" id="F49-examples">事例</h2><div class="failure"><h3 class="small-head" id="F49-failex1">
+					不適合事例 1: 不適合となる正しく線形化できないレイアウトテーブル</h3><div class="example"><div class="textbody"><p>ある広告では視覚的配置をうまく用いているが、線形化されると意味が変わってしまう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;table&gt;
+&lt;tr&gt;
+  &lt;td &gt;&lt;img src="logo.gif" alt="XYZ mountaineering"&gt;&lt;/td&gt;
+  &lt;td rowspan="2" valign="bottom"&gt;top!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;XYZ gets you to the&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre></div><div class="textbody"><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p><ul><li><p>XYZ mountaineering top! </p></li><li><p>XYZ gets you to the</p></li></ul><p>訳注：本来は「XYZ mountaineering  XYZ gets you to the top!」となるべきである</p></div></div></div><div class="failure"><h3 class="small-head" id="F49-failex2">
+					不適合事例 2: 不適合となる 線形化されると意味のある列が分割されてしまうレイアウトテーブル</h3><div class="example"><div class="textbody"><p>ある美術館の展覧会に関するウェブページでは、リンクの長い一覧を含むナビゲーションバーをページ左側に配置している。そのナビゲーションバーの右側には展覧会に展示される絵の一つが置かれている。その絵の右側には、美術館でその絵の横の壁にみられるであろうプラカードのテキストが置かれている。そのテキストの下には、「Description,」という見出しと、その見出しの下にその絵の説明が置かれている。絵、プラカードのテキスト、説明の見出し、そして絵の説明というのが意味のある順序となっている。</p><p>ページ中で各要素を配置するためにレイアウトテーブルが用いられている。ナビゲーションバー中の一連のリンクは、最も左の列の異なるセルに分割されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;table&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 1&lt;/a&gt;&lt;/td&gt;
+	&lt;td rowspan="20"&gt;&lt;img src="img.png" alt="美術館の絵"&gt;&lt;/td&gt;
+	&lt;td rowspan="6"&gt;&lt;img src="placard.png" alt="プラカードのテキスト"&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 3&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 4&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 5&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 6&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 7&lt;/a&gt;&lt;/td&gt;
+	&lt;td rowspan="2"&gt;&lt;h2&gt;説明の見出し&lt;/h2&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 8&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 9&lt;/a&gt;&lt;/td&gt;
+	&lt;td rowspan="12"&gt;Description of the image&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 10&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+ ...
+&lt;tr&gt;
+	&lt;td&gt;&lt;a href="#"&gt;リンク 20&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre></div><div class="textbody"><p>この例の読み順は次のようになってしまうだろう：</p><ul><li><p>リンク 1</p></li><li><p>美術館の絵</p></li><li><p>プラカードのテキスト</p></li><li><p>リンク 2</p></li><li><p>リンク 3</p></li><li><p>リンク 4</p></li><li><p>リンク 5</p></li><li><p>リンク 6</p></li><li><p>リンク 7</p></li><li><p>説明の見出し</p></li><li><p>リンク 8</p></li><li><p>リンク 9</p></li><li><p>リンク 10</p></li><li><p>...</p></li><li><p>リンク 20</p></li></ul><p>ナビゲーションバーの一連のリンクに絵を説明するコンテンツが割り込んでいるため、スクリーンリーダーは視覚的な順序に対応した意味のある順序でコンテンツを提示することができない。</p></div></div></div><h2 id="F49-resources">参考リソース</h2><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h2 id="F49-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="C6.html">C6: 構造を示すマークアップをした上で、コンテンツを配置する</a></li></ul></div><h2 id="F49-tests">検証</h2><div class="textbody"><h3 class="small-head" id="F49-procedure">チェックポイント</h3><ol class="enumar"><li><p>以下のいずれかの方法によってコンテンツを線形化する:</p><ul><li><p>コンテンツをソースコード中の順序で表示する</p></li><li><p>コンテンツを囲むテーブルのマークアップを除去する</p></li></ul></li><li><p>線形化した読み上げ順序が、表現によって伝えられている意味のある順序と合致する</p></li></ol><h3 class="small-head" id="F49-results">判定基準</h3><ul><li><p>2.を満たしていない場合、この不適合条件が適用され、達成基準に不適合となる。</p></li></ul></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F48: 達成基準 1.3.1 の失敗例 － 表形式の情報をマークアップするために、pre 要素を使用している" href="F48.html"><strong>前: </strong>Failure F48</a></li><li><a title="F50: 達成基準 2.2.2 の失敗例 － 点滅させるスクリプトを用いていて、その点滅を 5 秒以内に停止させるメカニズムがない" href="F50.html"><strong>次: </strong>Failure F50</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/F49.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

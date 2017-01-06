@@ -1,0 +1,68 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>H86: ASCII アート、顔文字、及びリート語に代替テキストを提供する | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H85: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する" href="H85.html"><strong>前: </strong>
+        達成方法 H85</a></li><li><a title="H88: 仕様に準じて HTML を使用する" href="H88.html"><strong>次: </strong>
+        達成方法 H88</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#H86-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#H86-applicability">適用（対象）</a></li><li><a href="#H86-description">解説</a></li><li><a href="#H86-examples">事例</a></li><li><a href="#H86-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="H86" id="H86"> </a>H86: ASCII アート、顔文字、及びリート語に代替テキストを提供する</h1><div id="H86-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="H86-applicability">適用（対象）</h2><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
+						How to Meet 1.1.1 (非テキストコンテンツ)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
+						達成基準 1.1.1 (非テキストコンテンツ)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.50.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/html#H86">User Agent Support Notes for H86</a>.</p></div><h2 id="H86-description">解説</h2><div class="textbody"><p>インターネットでグラフィックが広く用いられるようになる前は、ASCII文字を並べて絵やグラフを描くことがよくあった。今ではASCIIアートはウェブではあまり使われないが、もし使うのであれば、スクリーンリーダーでインターネットにアクセスする全盲の人には全く意味が分からないことを覚えておかなかればならない。ASCIIアートを使う場合、その絵が何なのかというテキストによる説明も付けておくべきである。また、そのASCIIアートをスキップするリンクを置いておくほうがよい。（ただし、これは必須ではない）。</p><p>顔文字は非常に広く利用されている。顔文字は、ASCII文字を組合せて、顔の表情や他の方法にして感情を伝える。ただし、スクリーンリーダーの利用者は意味が分からないかもしれないので、できれば顔文字の代わりに、単純に「笑顔」といった言葉を使ったほうがよい。もし顔文字を使うのであれば、代替テキストを指定すべきである。場合によっては、ブログやフォーラムを構築するソフトウェアで、たとえばプラグインを利用して、顔文字に使用しているASCII文字を代替テキストの付いたHTML画像に自動変換することができる。</p><p>リート語は、さまざまなASCII文字の組み合わせでラテン文字を置き換える表記法である。リート語はすでに、インターネット文化や俗語の一部となっており、テキストフィルターやスパムフィルターをあざむくのにしばしば利用される。リート語はスクリーンリーダーを利用する全盲の人が理解できないことがあるため、達成基準 1.1.1に準拠するには代替テキストの提供が求められる。</p><div class="note"><p class="prefix"><em>注記: </em>この達成方法のサポートは限られているため、コンテンツ制作者は代替テキストを提供することが推奨される。</p></div></div><h2 class="small-head" id="H86-examples">事例</h2><h3 class="small-head" id="H86-ex1">事例 1</h3><div class="example"><div class="textbody"><p>
+													以下では、イコール記号に数字の8、ハイフン、数字の0をつなげて「恐怖」を表現する顔文字に対する、3通りの代替テキストの指定方法を示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>=8-0（恐怖）
+
+&lt;abbr title="恐怖"&gt;=8-0&lt;/abbr&gt;
+
+&lt;img src="fright.gif" alt="恐怖"/&gt;</code></pre></div></div><h3 class="small-head" id="H86-ex2">事例 2</h3><div class="example"><div class="textbody"><p>この事例では、ASCIIアートの前にその絵の説明を付け、ASCIIアートをスキップするリンクがある。<a href="#H86-ex3">ASCIIアートの事例をスキップして事例 3へ</a></p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>さし絵：蝶のASCIIアート
+ &lt;a href="#skipbutterfly"&gt;ASCIIアートをスキップ&lt;/a&gt;
+                                 
+                                                                LLLLLLLLLLL
+                                                            __LLLLLLLLLLLLLL
+                                                           LLLLLLLLLLLLLLLLL
+                                                         _LLLLLLLLLLLLLLLLLL
+                                                        LLLLLLLLLLLLLLLLLLLL
+                                                      _LLLLLLLLLLLLLLLLLLLLL
+                                                      LLLLLLLLLLLLLLLLLLLLLL
+                                              L     _LLLLLLLLLLLLLLLLLLLLLLL
+                                             LL     LLLLLL~~~LLLLLLLLLLLLLL
+                                            _L    _LLLLL      LLLLLLLLLLLLL
+                                            L~    LLL~        LLLLLLLLLLLLL
+                                           LL   _LLL        _LL   LLLLLLLL
+                                          LL    LL~         ~~     ~LLLLLL
+                                          L   _LLL_LLLL___         _LLLLLL
+                                         LL  LLLLLLLLLLLLLL      LLLLLLLL
+                                         L  LLLLLLLLLLLLLLL        LLLLLL
+                                        LL LLLLLLLLLLLLLLLL        LLLLL~
+                  LLLLLLLL_______       L _LLLLLLLLLLLLLLLL     LLLLLLLL
+                         ~~~~~~~LLLLLLLLLLLLLLLLLLLLLLLLL~       LLLLLL
+                       ______________LLL  LLLLLLLLLLLLLL ______LLLLLLLLL_
+                   LLLLLLLLLLLLLLLLLLLL  LLLLLLLL~~LLLLLLL~~~~~~   ~LLLLLL
+             ___LLLLLLLLLL __LLLLLLLLLLLLL LLLLLLLLLLLLL____       _LLLLLL_
+          LLLLLLLLLLL~~   LLLLLLLLLLLLLLL   LLLLLLLLLLLLLLLLLL     ~~~LLLLL
+      __LLLLLLLLLLL     _LLLLLLLLLLLLLLLLL_  LLLLLLLLLLLLLLLLLL_       LLLLL
+     LLLLLLLLLLL~       LLLLLLLLLLLLLLLLLLL   ~L ~~LLLLLLLLLLLLL      LLLLLL
+   _LLLLLLLLLLLL       LLLLLLLLLLLLLLLLLLLLL_  LL      LLLLLLLLL   LLLLLLLLL
+  LLLLLLLLLLLLL        LLLLLLLLLLLLL~LLLLLL~L   LL       ~~~~~       ~LLLLLL
+ LLLLLLLLLLLLLLL__L    LLLLLLLLLLLL_LLLLLLL LL_  LL_            _     LLLLLL
+LLLLLLLLLLLLLLLLL~     ~LLLLLLLL~~LLLLLLLL   ~L  ~LLLL          ~L   LLLLLL~
+LLLLLLLLLLLLLLLL               _LLLLLLLLLL    LL  LLLLLLL___     LLLLLLLLLL
+LLLLLLLLLLLLLLLL              LL~LLLLLLLL~     LL  LLLLLLLLLLLL   LLLLLLL~
+LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
+ LLLLLLLLLLLLLLLLLLLL        L~  LLLLLLLL      LLLLLLL~LLLLLLLLLLLLLLLL~
+  LLLLLLLLLLLLLLLLLLLL___L_ LL   LLLLLLL       LLLL     LLLLLLLLLLLLLL
+   ~~LLLLLLLLLLLLLLLLLLLLLLLL     LLLLL~      LLLLL        ~~~~~~~~~
+           LLLLLLLLLLLLLLLLLL_ _   LLL       _LLLLL
+               ~~~~~~LLLLLLLLLL~             LLLLLL
+                         LLLLL              _LLLLLL
+                         LLLLL    L     L   LLLLLLL
+                          LLLLL__LL    _L__LLLLLLLL
+                          LLLLLLLLLL  LLLLLLLLLLLL
+                           LLLLLLLLLLLLLLLLLLLLLL
+                            ~LLLLLLLLLLLLLLLLL~~
+                               LLLLLLLLLLLLL
+                                 ~~~~~~~~~
+&lt;a name="skipbutterfly&gt;&lt;/a&gt; </code></pre></div></div><h3 class="small-head" id="H86-ex3">事例 3</h3><div class="example"><div class="textbody"><p>以下は、リート語で「Austin Rocks」と書いた例である。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;abbr title="Austin Rocks"&gt;Au5t1N r0xx0rz&lt;/abbr&gt; </code></pre></div></div><h2 id="H86-tests">検証</h2><div class="textbody"><h3 class="small-head" id="H86-procedure">チェックポイント</h3><ol class="enumar"><li><p>そのページを一般的なブラウザで開く。</p></li><li><p>ASCIIアート、顔文字、及び（又は）リート語がコンテンツに含まれている。</p></li><li><p>全てのASCIIアート、顔文字、及び（又は）リート語のすぐ前か後に、代替テキストがある。</p></li></ol><h3 class="small-head" id="H86-results">判定基準</h3><ul><li><p>3.を満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H85: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する" href="H85.html"><strong>前: </strong>
+        達成方法 H85</a></li><li><a title="H88: 仕様に準じて HTML を使用する" href="H88.html"><strong>次: </strong>
+        達成方法 H88</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/H86.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

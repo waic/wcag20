@@ -1,0 +1,52 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>F68: 達成基準4.1.2の失敗例 － ユーザインタフェース コントロールがプログラム的に解釈される名前（name）を持っていない | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F67: 達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している" href="F67.html"><strong>前: </strong>Failure F67</a></li><li><a title="F69: 達成基準 1.4.4 の失敗例 － 視覚的に描画されたテキストを 200％まで拡大した際に、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする" href="F69.html"><strong>次: </strong>Failure F69</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#F68-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#F68-applicability">適用（対象）</a></li><li><a href="#F68-description">解説</a></li><li><a href="#F68-examples">事例</a></li><li><a href="#F68-resources">参考リソース</a></li><li><a href="#F68-related-techs">関連する達成方法</a></li><li><a href="#F68-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="F68" id="F68"> </a>F68: 達成基準4.1.2の失敗例 － ユーザインタフェース コントロールがプログラム的に解釈される名前（name）を持っていない</h1><div id="F68-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="F68-applicability">適用（対象）</h2><div class="textbody"><p>視覚的に確認できるラベルを用いている HTML 及び XHTML のコントロール</p></div></div><p class="referenced">これは、次の達成基準に関連するfailure不適合事例である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
+				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
+						How to Meet 1.3.1 (情報及び関係性)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
+						達成基準 1.3.1 (情報及び関係性)を理解する
+					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#ensure-compat-rsv">
+				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#ensure-compat-rsv">
+						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
+						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
+					</a></li></ul></li></ul><h2 id="F68-description">解説</h2><div class="textbody"><p>この文書では、視覚的なデザインにおいてはラベルがあるにもかかわらず、フォームのコントロールに対応するラベルが<code>label</code>要素を用いて明示的に指定されていない場合に生じる不適合事例について解説する。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>明示的なラベル付けが必要な要素は以下の通りである：</p><ul><li><p><code>input type="text"</code></p></li><li><p><code>input type="checkbox"</code></p></li><li><p><code>input type="radio"</code></p></li><li><p><code>input type="file"</code></p></li><li><p><code>input type="password"</code></p></li><li><p><code>textarea</code></p></li><li><p><code>select</code></p></li></ul><p class="prefix"><em>注記 2:
+					</em>以下の要素については、ラベルをvalue属性（サブミット（送信）およびリセット・ボタン）、al属性（画像を用いたボタン）、あるいは要素の内容そのもの（ボタン）でそれぞれ指定するため、<code>label</code>要素を用いない。</p><ul><li><p>サブミット（送信）及びリセット・ボタン (<code>input type="submit"</code>又は <code>input type="reset"</code>)</p></li><li><p>画像を用いたボタン (<code>input type="image"</code>)</p></li><li><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></li><li><p>スクリプト・ボタン (<code>button</code> 要素又は<code>&lt;input type="button"&gt;</code>)</p></li></ul></div></div><h2 class="small-head" id="F68-examples">事例</h2><div class="failure"><h3 class="small-head" id="F68-failex1">
+					不適合事例 1: 不適合となる</h3><div class="example"><div class="textbody"><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、利用者ーエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p></div><div class="code"><pre><code>
+ &lt;form&gt;
+ 姓：
+ &lt;input type="text" name="lastname"&gt;
+ &lt;br /&gt;
+ 名： 
+ &lt;input type="text" name="firstname"&gt;
+ &lt;br /&gt;
+ 犬を飼っている &lt;input type="checkbox" name="pet" value="dog" /&gt;
+ 猫を飼っている &lt;input type="checkbox" name="pet" value="cat" /&gt;
+&lt;/form&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F68-failex2">
+					不適合事例 2: 不適合となる</h3><div class="example"><div class="textbody"><p>以下のコード例において、利用者ーエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p></div><div class="code"><pre><code>
+&lt;form action="..." method="post"&gt;
+&lt;p&gt;
+&lt;label&gt;
+   姓
+   &lt;input type="text" name="lastname"&gt;
+&lt;/label&gt;
+&lt;label&gt;
+   名
+   &lt;input type="text" name="firstname"&gt;
+&lt;/label&gt;
+&lt;/p&gt;
+&lt;/form&gt;</code></pre></div><div class="code"><pre><code>
+&lt;form action="..." method="post"&gt; 
+&lt;p&gt; 
+&lt;label&gt;姓&lt;/label&gt; 
+&lt;input type="text" name="lastname"&gt; 
+&lt;label&gt;名 &lt;/label&gt;
+&lt;input type="text" name="firstname"&gt; 
+&lt;/p&gt; 
+&lt;/form&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F68-failex3">
+					不適合事例 3: 不適合となる</h3><div class="example"><div class="textbody"><p>以下の例では、検索用のテキストフィールドに名前がついていない。<code>title</code>属性を用いるか、CSSによって非表示にした<code>label</code>要素を用いることで名前をつけることができる。</p></div><div class="code"><pre><code>
+&lt;input type="text" value="検索文字列を入力"&gt;&lt;input type="submit" type="submit" value="検索"&gt;</code></pre></div></div></div><h2 id="F68-resources">参考リソース</h2><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h2 id="F68-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="H44.html">H44: テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する</a></li><li><a href="H65.html">H65: label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する</a></li></ul></div><h2 id="F68-tests">検証</h2><div class="textbody"><h3 class="small-head" id="F68-procedure">チェックポイント</h3><p>ウェブページ上にある、<code>type</code>が<code>radio</code>, <code>checkbox</code>, <code>text</code>, <code>file</code> 又は <code>password</code>のすべての<code>input</code>要素、すべての<code>textareas</code>要素、及びすべての<code>select</code>要素について：</p><ol class="enumar"><li><p>視覚的デザインにおいて、フォーム・コントロールの目的が分かるようなテキストのラベルが用いられている</p></li><li><p><code>label</code>要素を用いて、テキストとフォーム・コントロールの要素が関連づけられている</p></li></ol><h3 class="small-head" id="F68-results">判定基準</h3><ul><li><p>1.が該当して、2.が満たされていない場合、この不適合条件が適用され、達成基準に不適合となる。</p></li></ul></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="F67: 達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している" href="F67.html"><strong>前: </strong>Failure F67</a></li><li><a title="F69: 達成基準 1.4.4 の失敗例 － 視覚的に描画されたテキストを 200％まで拡大した際に、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする" href="F69.html"><strong>次: </strong>Failure F69</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/F68.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>

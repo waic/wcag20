@@ -1,0 +1,75 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><meta charset="UTF-8"/><title>FLASH20: フォーカス表示を視覚的により認識しやすくするために Flash コンポーネントのスキンを切り替える | WCAG 2.0 達成方法集
+              </title><link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/2016/W3C-WG-NOTE.css"/><link rel="stylesheet" type="text/css" href="additional.css"/><link rel="stylesheet" type="text/css" href="slicenav.css"/></head><body class="slices"><div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"/></a></p><p class="collectiontitle"><a href="./">WCAG 2.0 達成方法集</a></p></div><div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div><a name="top"> </a><!-- TOP NAVIGATION BAR --><ul id="navigation"><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH19: 利用者に制限時間が間もなく終了することを警告して、制限時間を延長する方法を提示するスクリプトを提供する" href="FLASH19.html"><strong>前: </strong>
+        達成方法 FLASH19</a></li><li><a title="FLASH21: 列見出しとデータセルを関連付けるために、DataGrid コンポーネントを使用する" href="FLASH21.html"><strong>次: </strong>
+        達成方法 FLASH21</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#FLASH20-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#FLASH20-applicability">適用（対象）</a></li><li><a href="#FLASH20-description">解説</a></li><li><a href="#FLASH20-examples">事例</a></li><li><a href="#FLASH20-resources">参考リソース</a></li><li><a href="#FLASH20-related-techs">関連する達成方法</a></li><li><a href="#FLASH20-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="FLASH20" id="FLASH20"> </a>FLASH20: フォーカス表示を視覚的により認識しやすくするために Flash コンポーネントのスキンを切り替える</h1><div id="FLASH20-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG2.0達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> を参照のこと。
+適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG2.0を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="FLASH20-applicability">適用（対象）</h2><div class="textbody"><ul><li><p>Adobe Flash Professional version MX and higher </p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-visible">
+				達成基準 2.4.7 (フォーカスの可視化)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-focus-visible">
+						How to Meet 2.4.7 (フォーカスの可視化)
+					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-visible.html">
+						達成基準 2.4.7 (フォーカスの可視化)を理解する
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua9.20.1">ユーザーエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH20">User Agent Support Notes for FLASH20</a>. Also see <a href="flash_notes.html">Flash Technology Notes</a>.</p></div><h2 id="FLASH20-description">解説</h2><div class="textbody"><p>The purpose of this technique is to allow the author to use   ActionScript and component skins to apply a strong visual indication   when a component receives focus. In this particular technique, both the   component's background color and border will change. When the component   loses focus, it returns to its normal styling. </p><p>The visual highlights will be applied by switching some of the   component's skin parts. The Standard Flash components each have their   own set of skins that make up the component's visual appearance. Each   part is represented by a MovieClip which can be edited or replaced in   order to customize how the component looks. The most relevant skin for   this technique is the focusRectSkin skin, which is shared   by all components. By default this skin applies a subtle visual   highlight when the component receives focus. </p><p>This technique can be applied through the following steps: </p><ol class="enumar"><li><p> Create a customized version of focusRectSkin. </p></li><li><p> Use scripting to associate the component with the customized   skin. </p></li></ol><p>There are two ways to customize a skin: </p><ol class="enumar"><li><p>Duplicating Existing Skin</p><p>With this approach you create a copy of the existing focusRect skin   for modification. You will manually have to apply the skin for each   individual component instance (as indicated in step 5 below). </p><ol class="enumla"><li><p> Drag the components you want to style to the stage. This will   ensure the appropriate component related skins are added to the movie's   library. </p></li><li><p> Open the Library panel, and navigate to the "Component Assets   &gt; Shared" folder. </p></li><li><p> Right-click (or Ctrl-click on a Mac) on the focusRectSkin   MovieClip, and choose "Duplicate" from the context menu. </p></li><li><p> Edit the visual border in the skin's MovieClip. For example,   the focus rectangle can be made thicker to stand out more (This step is   illustrated in the screenshot below this list). </p></li><li><p> Using ActionScript, associate form component instances with   your customized version of focusRectSkin. This can be achieved using the   setStyle method. </p></li></ol><p>
+								       <img class="eximg" src="/WAI/WCAG20/Techniques/working-examples/FLASH20/editing_focusrect.png" alt="editing a duplicate of focusRectSkin"/>
+							     </p></li><li><p> Modifying Existing Skin </p><p>With this approach, the original focusRect skin is modified. This   means that the changes you make will be applied to the visual focus   indication of _every_ focusable component. </p><ol class="enumla"><li><p> Drag the components you want to style to the stage. This will   ensure the appropriate component related skins are added to the movie's   library. </p></li><li><p> Open the Library panel, and navigate to the "Component Assets   &gt; Shared" folder. </p></li><li><p> Open the focusRectSkin MovieClip for editing by double   clicking on it. </p></li><li><p> Edit the visual border in the skin's MovieClip. For example,   the focus rectangle can be made thicker to stand out more. </p></li></ol><div class="note"><p class="prefix"><em>注記: </em>With this approach you will override the existing skin. If   you don't want this, follow the "Duplicate Existing Skin" approach   instead. </p></div></li></ol><p>The focusRect skin applies to all focusable Flash components. If you   want to modify other highlights (for example highlights that occur when   hovering over a component with the mouse), you will have to edit   component specific skins individually. For example, to edit the   mouseover highlights for the checkbox component, you will have to modify   or duplicate both Checkbox_overIcon and Checkbox_selectedOverIcon.   Similarly, for the Button component you will have to modify the   Button_over skin. </p><p>Also, keep in mind that the existing skins are automatically   applied on certain events (focus, mouseover, etc.). It is however also   possible to manually switch a skin at a moment of your own choosing   (e.g. to indicate invalid content for a text field). this can also be   achieved this by calling the setStyle method. </p></div><h2 class="small-head" id="FLASH20-examples">事例</h2><h3 class="small-head" id="FLASH20-ex1">事例 1: A thick blue border to indicate focus</h3><div class="example"><div class="textbody"><p>The code below shows an example where form component instances are   associated with a modified version of the focusRectSkin MovieClip. The   result is that the components receive a thick blue border rather than   the default thin border Flash provides. The code makes a reference to a   modified skin called Focus_custom, which has been added to   the movie's library in advance. </p><p>Note that the custom version of focusRectSkin also sets a   transparent yellow background to increase the visual highlight further.   Components such as Buttons and checkboxes will show this background, but   TextInput components will not. To ensure the yellow background will   still be applied to the TextInput instance, the following workaround is   applied: </p><ol class="enumar"><li><p> A duplicate version of the TextInput "normal" skin (which can   be found in the library at "Component Asssets &gt; TextInputSkins &gt;   TextInput_upSkin") is created and edited to show a yellow background. </p></li><li><p> FocusIn, FocusOut, MouseOver and MouseOut handlers are   assigned to the TextInput instance, which temporarily swap the default   "normal" skin with the custom "normal" skin while the component is   focused or hovered over. </p></li></ol><p>Additionally, the button_over skin is duplicated and modified to   change the default mouseover highlights for the button component   instance. The checkbox_overIcon and checkbox_selectedOverIcon skins are   directly modified, which means those changes will be applied to all   checkbox instances. </p><p>The result of this technique can be found in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html" class="ex-ref">working version of A thick blue border to indicate focus</a>. </p><h4 id="FLASH20-subhead-25">Code for Example 1 (ActionScript 3.0)</h4></div><div class="code"><p><strong>コード例:</strong></p><pre><code>package wcagSamples {
+  import fl.accessibility.ButtonAccImpl;
+  import fl.accessibility.CheckBoxAccImpl;
+  import fl.controls.CheckBox;
+  import fl.controls.Button;
+  import fl.controls.Label;
+  import fl.controls.TextInput;
+  import flash.display.Sprite;
+  import flash.events.FocusEvent;
+  import flash.events.MouseEvent;
+  
+  public class FocusStyler extends Sprite {
+    public function FocusStyler() {
+      ButtonAccImpl.enableAccessibility()
+      CheckBoxAccImpl.enableAccessibility()
+      
+      var lbl1: Label = new Label();
+      lbl1.text = "name";
+      lbl1.x = lbl1.y = 20;
+      addChild(lbl1);
+      
+      var txt1: TextInput = new TextInput();
+      txt1.x = 60;
+      txt1.y = 20;
+      txt1.width = 200;
+      txt1.addEventListener(FocusEvent.FOCUS_IN, handleFocusIn);
+      txt1.addEventListener(FocusEvent.FOCUS_OUT, handleFocusOut);
+      txt1.addEventListener(MouseEvent.MOUSE_OVER, handleFocusIn);
+      txt1.addEventListener(MouseEvent.MOUSE_OUT, handleFocusOut);
+      txt1.setStyle("focusRectSkin", "focus_custom");
+      addChild(txt1);
+      
+      var chk1: CheckBox = new CheckBox();
+      chk1.label = "Check Me";
+      chk1.x = 60;
+      chk1.y = 70;
+      chk1.setStyle("focusRectSkin", "focus_custom");
+      addChild(chk1);
+      
+      var btn1: Button = new Button();
+      btn1.label = "Click Me";
+      btn1.x = 60;
+      btn1.y = 110;
+      btn1.setStyle("focusRectSkin", "focus_custom");
+      btn1.setStyle("overSkin", "Button_over_custom");
+      addChild(btn1);
+    }
+    
+    private function handleFocusIn(event) {
+      event.currentTarget.setStyle("upSkin", "TextInput_upSkin_custom");
+    }
+    
+    private function handleFocusOut(event) {
+      event.currentTarget.setStyle("upSkin", "TextInput_upSkin");
+    }
+  }
+}</code></pre></div><div class="textbody"><p>This is demonstrated in <a href="/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html" class="ex-ref">working version of A thick blue border to indicate focus</a>. The source of <a href="/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.zip" class="ex-ref">working version of A thick blue border to indicate focus</a> is available.</p></div></div><h2 id="FLASH20-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+									         <a href="http://www.adobe.com/devnet/archive/flash/articles/creating_as3_components_pt5.html">Creating ActionScript 3.0 components in Flash – Part 5:   Styles and skins</a>
+								       </p></li></ul></div><h2 id="FLASH20-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="SCR31.html">SCR31: フォーカスのある要素の背景色又はボーダーを変更するために、スクリプトを使用する</a></li></ul></div><h2 id="FLASH20-tests">検証</h2><div class="textbody"><h3 class="small-head" id="FLASH20-procedure">チェックポイント</h3><p>When a Flash movie contains focusable components, confirm that: </p><ol class="enumar"><li><p> The visual highlight is applied by modifying the component's   skins </p></li><li><p> A visual highlight is shown when the components receive focus </p></li></ol><h3 class="small-head" id="FLASH20-results">判定基準</h3><ul><li><p>#1 and #2 are true </p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH19: 利用者に制限時間が間もなく終了することを警告して、制限時間を延長する方法を提示するスクリプトを提供する" href="FLASH19.html"><strong>前: </strong>
+        達成方法 FLASH19</a></li><li><a title="FLASH21: 列見出しとデータセルを関連付けるために、DataGrid コンポーネントを使用する" href="FLASH21.html"><strong>次: </strong>
+        達成方法 FLASH21</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH20.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
