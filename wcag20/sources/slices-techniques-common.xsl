@@ -40,6 +40,7 @@
         		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
         	</xsl:if>
         	<head>
+        	<meta charset="UTF-8"/>
             <title>
               <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 達成方法集
             </title>
@@ -86,6 +87,7 @@
         		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
         	</xsl:if>
         	<head>
+        	<meta charset="UTF-8"/>
             <title>
               <xsl:apply-templates select="head" mode="text"/>  | WCAG 2.0 達成方法集
             </title>
@@ -138,6 +140,7 @@
     	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
     	    	</xsl:if>
     	    	<head>
+              <meta charset="UTF-8"/>
               <title>
 								<xsl:value-of select="@id"></xsl:value-of>:<xsl:text> </xsl:text><xsl:apply-templates select="short-name" mode="text"/> | WCAG 2.0 達成方法集
               </title>
@@ -194,6 +197,7 @@
     	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
     	    	</xsl:if>
     	    	<head>
+              <meta charset="UTF-8"/>
               <title>
 				<xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 達成方法集
               </title>
@@ -243,6 +247,7 @@
       	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
       	    	</xsl:if>
       	    	<head>
+            <meta charset="UTF-8"/>
             <title>
               <xsl:apply-templates select="head" mode="text"/>
               <xsl:text> </xsl:text> | WCAG 2.0 達成方法集
@@ -294,6 +299,7 @@
       	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
       	    	</xsl:if>
       	    	<head>
+            <meta charset="UTF-8"/>
             <title>
               <xsl:apply-templates select="head" mode="text"/> | WCAG 2.0 達成方法集
 						</title>
@@ -337,6 +343,7 @@
         		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
         	</xsl:if>
         	<head>
+            <meta charset="UTF-8"/>
             <title>
               <xsl:value-of select="header/title"/>
               <xsl:if test="header/version">
