@@ -11,11 +11,11 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="*">
-      <p><el>blink</el> 要素はWindows用Internet Explorer 6ではサポートされていない。利用者ーエージェントのNetscape/Mozillaシリーズ及びWindows用Operaではサポートされている。</p>
+      <p><el>blink</el> 要素はWindows用Internet Explorer 6ではサポートされていない。ユーザエージェントのNetscape/Mozillaシリーズ及びWindows用Operaではサポートされている。</p>
     </ua-issue>
    </ua-issues>
    <description>
-    <p><code>blink</code>要素は正式なHTML又はXHTMLの仕様の一部ではないが、多くの利用者ーエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>blink</code>を用いているコンテンツは達成基準を満たしていないことになる。</p>
+    <p><code>blink</code>要素は正式なHTML又はXHTMLの仕様の一部ではないが、多くのユーザエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>blink</code>を用いているコンテンツは達成基準を満たしていないことになる。</p>
   </description>
    <examples>
       <eg-group role="failure">

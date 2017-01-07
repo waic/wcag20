@@ -12,11 +12,11 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
-      <p>利用者ーエージェントの一部では、link要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML：英語</loc>を参照。</p>
+      <p>ユーザエージェントの一部では、link要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML：英語</loc>を参照。</p>
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、用語集の場所を示すメカニズムを提供することである。コンテンツの中にある用語が、別の用語集ページで定義されている場合、用語集を用いるドキュメントの<el>head</el>要素の範囲内に<el>link</el>要素を指定することで、その用語集が参照できる。<el>link</el>要素の<att>rel</att>属性に「glossary」という値を指定し、<att>href</att>属性には用語集ページのURIを指定する。これで、利用者が素早く簡単に用語集にアクセスするのを利用者ーエージェントが支援できるようになる。</p>
+    <p>この達成方法の目的は、用語集の場所を示すメカニズムを提供することである。コンテンツの中にある用語が、別の用語集ページで定義されている場合、用語集を用いるドキュメントの<el>head</el>要素の範囲内に<el>link</el>要素を指定することで、その用語集が参照できる。<el>link</el>要素の<att>rel</att>属性に「glossary」という値を指定し、<att>href</att>属性には用語集ページのURIを指定する。これで、利用者が素早く簡単に用語集にアクセスするのをユーザエージェントが支援できるようになる。</p>
   </description>
    <examples>
       <eg-group>

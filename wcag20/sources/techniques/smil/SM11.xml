@@ -10,7 +10,7 @@
       <success-criterion idref="media-equiv-real-time-captions" relationship="sufficient"/>
    </applies-to>
    <ua-issues>
-     <ua-issue name="" version=""><p>SMIL 1.0でキャプションを示す世界共通の標準フォーマットは存在しない。さまざまな利用者ーエージェントが、さまざまなキャプションのフォーマットをサポートしている。キャプションのテキストストリームには、テキストストリームのsrc引数として、サポートされているフォーマットのファイルが提供されなければならない。</p>
+     <ua-issue name="" version=""><p>SMIL 1.0でキャプションを示す世界共通の標準フォーマットは存在しない。さまざまなユーザエージェントが、さまざまなキャプションのフォーマットをサポートしている。キャプションのテキストストリームには、テキストストリームのsrc引数として、サポートされているフォーマットのファイルが提供されなければならない。</p>
 		<p>QuickTimeは、QTTextキャプションファイルをサポートしている。RealPlayer や GRiNSなどのRealベースのプレーヤーは、RealTextキャプションファイルをサポートしている。WindowsMediaは、SAMIファイルをサポートしているが、SMILをサポートしていない。Flashは、特定のファイル形式をサポートしていないが、XMLベースのキャプションファイルを解析することが可能でああり、実際にFLVPlaybackコンポーネントのSMILに対するサポートは、movie/server urlのようなパラメータ又は<![CDATA[<switch>]]>タグで指定されたmulti-bandwidthを検出するようになっている。</p>
   </ua-issue>
    </ua-issues>

@@ -12,13 +12,13 @@
    </applies-to>
    <ua-issues>
     <ua-issue>
-     <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+     <p>ユーザエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
     </ua-issue>
   </ua-issues>
   <description>
     <p>この達成方法の目的は、リストエレメントを目的に応じて適切に使用して、関連項目のリストを作成することである。リストを含む PDF フォームは通常、PDF のオーサリングツールを使用して作成または修復される。</p>
     <p>マークアップを使用して項目を視覚的にリストであるかのように書式設定したときに、リストの関係性が示されない場合は、情報間の移動が難しくなることがある。このような視覚的な書式設定の簡単な例としては、改行を使用したリスト項目の分割がある。</p>
-    <p>一部の支援技術では、利用者ーはリスト間または項目間を移動できる。リストがリストタグで正しく書式設定されていない場合、利用者ーはリストコンテンツを理解するのが難しくなる。</p>
+    <p>一部の支援技術では、利用者はリスト間または項目間を移動できる。リストがリストタグで正しく書式設定されていない場合、利用者はリストコンテンツを理解するのが難しくなる。</p>
     <p>PDF コンテンツ内にリストを作成する最も簡単な方法は、オーサリングツール（Microsoft Word や OpenOffice.org Writer など）のリストマークアップを使用して正しく書式設定することである。ただし、ソースファイルやオーサリングツールを利用できない場合は、Adobe Acrobat Pro の TouchUp 読み上げ順序ツールおよびタグパネルを使用できる。</p>
     <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3「リストエレメント」（英語）でリスト構造を定義している（リストエレメント）。PDF 文書のリストの構造タイプを以下に示す。</p>
     <ulist>
@@ -56,7 +56,7 @@
       <head>Adobe Acrobat 9 Pro を使用して、リストを正しく書式設定する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>表示 &gt; ナビゲーションパネル... &gt; タグ</p></item><item><p>文書内のリストを検査して、書式設定に誤りがないかどうかを確認する。</p></item></olist>
-<p>次の画像では、3番目のリストがテキストとして書式設定されている。このリスト項目は改行によってのみ分割されている。そのため、支援技術では、利用者ーに対してこれをリストとして分かりやすく表現できない。</p>
+<p>次の画像では、3番目のリストがテキストとして書式設定されている。このリスト項目は改行によってのみ分割されている。そのため、支援技術では、利用者に対してこれをリストとして分かりやすく表現できない。</p>
 <p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/unformattedlist.jpg" alt="スクリーンショット：タグパネルでは、書式設定に誤りのあるリストは、リストタグの下にネストされるのではなく、Textbodyタグの下にテキストとして表示される。" height="427" width="550"/></p><p>リストを修復するには、［タグ］パネルを使用してコンテンツ内にリストタグを作成する。</p>
 <p>次の画像は、結果として作成された、正しく書式設定された最初のリスト項目を示している。</p>
 <p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/listrepair.jpg" alt="スクリーンショット：［タグ］パネルで、リストタグの下に正しくネストされた最初のリスト項目" height="448" width="556"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/lists.pdf" linktype="examples">Acrobat Pro でリストが適切に書式設定されたサンプル（PDFファイル）</loc>がある。</p>

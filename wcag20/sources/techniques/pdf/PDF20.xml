@@ -12,7 +12,7 @@
    </applies-to>
    <ua-issues>
      <ua-issue>
-      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+      <p>ユーザエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
     </ua-issue>
   </ua-issues>
   <description>

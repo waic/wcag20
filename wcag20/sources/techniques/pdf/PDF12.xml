@@ -13,7 +13,7 @@
    </applies-to>
    <ua-issues>
      <ua-issue>
-      <p>利用者ーエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+      <p>ユーザエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
     </ua-issue>
   </ua-issues>
   <description>
@@ -46,7 +46,7 @@
 <tr>
 <th scope="row">V</th>
 <td>値</td>
-<td>値エントリは、値を必要とするコントロールと対話する利用者ーにより設定される。</td>
+<td>値エントリは、値を必要とするコントロールと対話する利用者により設定される。</td>
 </tr>
 <tr>
 <th scope="row">DV</th>
@@ -70,7 +70,7 @@
 <td>テキスト <code>/Tx</code>
 </td>
 <td>ツールチップ</td>
-<td>デフォルト値（フィールド辞書の DV エントリ）はプロパティダイアログボックスで設定できる。値は利用者ーにより入力される。</td>
+<td>デフォルト値（フィールド辞書の DV エントリ）はプロパティダイアログボックスで設定できる。値は利用者により入力される。</td>
 <td>Read Only, Required, Multiline, Password</td>
 </tr>
 <tr valign="top">
@@ -92,14 +92,14 @@
 <td>コンボボックス</td>
 <td>コンボボックス　<code>/Ch</code>（フィールドフラグを「Combo」に設定する）</td>
 <td>ツールチップ</td>
-<td>デフォルト値（/DV）はプロパティダイアログボックスで設定できる。値は利用者ーの選択によって決定される。</td>
+<td>デフォルト値（/DV）はプロパティダイアログボックスで設定できる。値は利用者の選択によって決定される。</td>
 <td>Read Only, Required</td>
 </tr>
 <tr valign="top">
 <td>リストボックス</td>
 <td>ドロップダウンリスト　<code>/Ch</code> </td>
 <td>ツールチップ</td>
-<td>デフォルト値（/DV）はプロパティダイアログボックスで設定できる。値は利用者ーの選択によって決定される。</td>
+<td>デフォルト値（/DV）はプロパティダイアログボックスで設定できる。値は利用者の選択によって決定される。</td>
 <td>Read Only, Required</td>
 </tr>
 <tr valign="top">
@@ -114,7 +114,7 @@
 <td>テキスト　<code>/Sig</code>
 </td>
 <td>ツールチップ</td>
-<td>デフォルト値（フィールド辞書の DV エントリ）はプロパティダイアログボックスで設定できる。値は利用者ーにより入力される。</td>
+<td>デフォルト値（フィールド辞書の DV エントリ）はプロパティダイアログボックスで設定できる。値は利用者により入力される。</td>
 <td>Read Only, Required</td>
 </tr>
 </tbody>
