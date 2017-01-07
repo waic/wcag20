@@ -16,7 +16,7 @@
 					</a></li></ul></li></ul><h2 id="F68-description">解説</h2><div class="textbody"><p>この文書では、視覚的なデザインにおいてはラベルがあるにもかかわらず、フォームのコントロールに対応するラベルが<code>label</code>要素を用いて明示的に指定されていない場合に生じる不適合事例について解説する。</p><div class="note"><p class="prefix"><em>注記 1:
 					</em>明示的なラベル付けが必要な要素は以下の通りである：</p><ul><li><p><code>input type="text"</code></p></li><li><p><code>input type="checkbox"</code></p></li><li><p><code>input type="radio"</code></p></li><li><p><code>input type="file"</code></p></li><li><p><code>input type="password"</code></p></li><li><p><code>textarea</code></p></li><li><p><code>select</code></p></li></ul><p class="prefix"><em>注記 2:
 					</em>以下の要素については、ラベルをvalue属性（サブミット（送信）およびリセット・ボタン）、al属性（画像を用いたボタン）、あるいは要素の内容そのもの（ボタン）でそれぞれ指定するため、<code>label</code>要素を用いない。</p><ul><li><p>サブミット（送信）及びリセット・ボタン (<code>input type="submit"</code>又は <code>input type="reset"</code>)</p></li><li><p>画像を用いたボタン (<code>input type="image"</code>)</p></li><li><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></li><li><p>スクリプト・ボタン (<code>button</code> 要素又は<code>&lt;input type="button"&gt;</code>)</p></li></ul></div></div><h2 class="small-head" id="F68-examples">事例</h2><div class="failure"><h3 class="small-head" id="F68-failex1">
-					不適合事例 1: 不適合となる</h3><div class="example"><div class="textbody"><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、利用者ーエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p></div><div class="code"><pre><code>
+					不適合事例 1: 不適合となる</h3><div class="example"><div class="textbody"><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p></div><div class="code"><pre><code>
  &lt;form&gt;
  姓：
  &lt;input type="text" name="lastname"&gt;
@@ -27,7 +27,7 @@
  犬を飼っている &lt;input type="checkbox" name="pet" value="dog" /&gt;
  猫を飼っている &lt;input type="checkbox" name="pet" value="cat" /&gt;
 &lt;/form&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F68-failex2">
-					不適合事例 2: 不適合となる</h3><div class="example"><div class="textbody"><p>以下のコード例において、利用者ーエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p></div><div class="code"><pre><code>
+					不適合事例 2: 不適合となる</h3><div class="example"><div class="textbody"><p>以下のコード例において、ユーザエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p></div><div class="code"><pre><code>
 &lt;form action="..." method="post"&gt;
 &lt;p&gt;
 &lt;label&gt;

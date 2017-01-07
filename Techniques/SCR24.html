@@ -26,7 +26,7 @@ function addHandlers()
   {
     objAnchor.firstChild.data = objAnchor.firstChild.data + ' (新しいウィンドウで開く)';
     objAnchor.onclick = function(event){return launchWindow(this, event);}
-    // UAAG では利用者ーエージェントにデバイス非依存な方法でイベントを処理することを
+    // UAAG ではユーザエージェントにデバイス非依存な方法でイベントを処理することを
     // 要求しているが、そうしないブラウザが多いのでキーボードイベントを追加する
     objAnchor.onkeypress = function(event){return launchWindow(this, event);}
   }
@@ -36,7 +36,7 @@ function launchWindow(objAnchor, objEvent)
 {
   var iKeyCode, bSuccess=false;
 
-  // キーボードからのイベントである場合、利用者ーがリンクをリクエストしたときだけ
+  // キーボードからのイベントである場合、利用者がリンクをリクエストしたときだけ
   // 新しいウィンドウを開くようにする（リターン又はスペース）
   if (objEvent &amp;amp;&amp;amp; objEvent.type == 'keypress')
   {
@@ -45,7 +45,7 @@ function launchWindow(objAnchor, objEvent)
     else if (objEvent.which)
       iKeyCode = objEvent.which;
 
-    // キャリッジ・リターン又はスペースではない場合、利用者ーエージェントが
+    // キャリッジ・リターン又はスペースではない場合、ユーザエージェントが
     // アクションの処理を継続するようにtrueを返す
     if (iKeyCode != 13 &amp;amp;&amp;amp; iKeyCode != 32)
       return true;
