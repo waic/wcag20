@@ -4,7 +4,7 @@
 <technique id="H2">
    <short-name>隣り合った画像とテキストリンクを同じリンクの中に入れる</short-name>
    <applicability>
-      <p>リンク機能を提供するHTML及びXTHMLドキュメント</p>
+      <p>リンク機能を提供する HTML4、HTML5 及び XTHML ドキュメント</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -12,9 +12,11 @@
       <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、ドキュメント内で互いに隣接したテキストとアイコンを使ったリンクが提供されている時に生じる不要な重複を避けることである。</p>
-    <p>よくあるリンクとして、互いに隣接したテキストとアイコンの両方を用いたリンクがある。 それぞれが視覚的にはわずかに離れていることもあって、そのテキストとアイコンのリンクは別々のリンクであることが多い。視覚的にはそれらは同じ一つのリンクのように見えるが、多くの利用者にとっては二つの別々のリンクであり、それによって混乱させてしまうことがある。これを避けるためには、画像から代替テキストを省略するコンテンツ制作者もいるが、代替テキストがグラフィカルなリンクと同じ目的を果たしていないので、これでは<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#text-equiv-all" linktype="guideline">達成基準 1.1.1</loc>に不適合になる。これに対処するために好ましい方法は、一つのリンクにテキストと画像を一緒に入れて、テキストと画像の代替テキストの内容が重複しないように画像には空の代替テキストを提供することである。</p>
-    <p>ページをレイアウトしやすくするために、テキストとアイコンのリンクを隣接したテーブルセルに分けることがある。WCAG 2.0 ではレイアウトテーブルの使用を禁止していないが、HTMLの<el>table</el>要素に定義されたセマンティックな意味を保持させ、コンテンツから表現を分離するコーティング手法に準拠するためにも、CSSベースのレイアウトが推奨されている。CSSが使用されている場合には、この達成方法を適用して、テキストとアイコンのリンクを一つにまとめることができる。</p>
+    <p>この達成方法の目的は、テキストとアイコンの両方でリンクを提供する際、キーボード利用者や支援技術の利用者にとって混乱や困難を招くような Web ページを作らないようにすることである。様々な利用者がテキストとアイコンを使いやすいと見出していることから、両方を提供することでリンクのアクセシビリティを向上させることができる。</p>
+    <p>よくあるリンクとして、テキストとアイコンの両方が互いに隣接しながらも、別々の要素としてレンダリングされているものがある。視覚的にはそれらは単一のリンクのように見えるが、それらを同様のリンクが隣接しているものとして受け取る利用者も多い。キーボード利用者の場合、冗長なリンクを通過していくのは面倒である。支援技術の利用者にとって、連続する同様のリンクに遭遇すると混乱する可能性がある。アイコンの代替テキストがリンクテキストの複製である場合、スクリーンリーダーは読み上げを2度繰り返すことになる。</p>
+    <p>制作者がリンク画像の代替テキストを省略した場合、代替テキストが視覚的なリンクと同じ目的を果たさないため、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="text-equiv-all" linktype="guideline">達成基準 1.1.1</loc>を満たせなくなる。</p>
+    <p>この達成方法は、テキストと画像を 1 つの <el>a</el> 要素にまとめ、イメージに空の代替テキストを指定してテキストの重複を排除することによって、混乱や困難がないリンクを提供するものである。このようにすることで、リンクにおける両方の表現が提供されつつも、キーボード利用者にとってリンクは1つだけとなり、Web ページのリンク先リストを利用者に提供する補助技術も重複リンクを含まなくなる。</p>
+    <p>ページをレイアウトしやすくするために、テキストとアイコンのリンクを隣接したテーブルセルに分けることがある。WCAG 2.0 ではレイアウトテーブルの使用を禁止していないが、HTML の <el>table</el> 要素に定義されたセマンティックな意味を保持させ、コンテンツから表現を分離するコーティング手法に準拠するためにも、CSS ベースのレイアウトが推奨されている。CSS が使用されている場合には、この達成方法を適用して、テキストとアイコンのリンクを一つにまとめることができる。</p>
   </description>
      <examples>
       <eg-group>
@@ -26,51 +28,19 @@
  </a>      ]]></code>
       </eg-group>
       <eg-group>
-      <description><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<el>img</el> 要素には、サイトのヘルプで使われているアイコンの名前（「HOMEページのアイコン」）が代替テキストとして記述されていて、サイトのヘルプの中では「HOMEページのアイコン」をクリックすることが説明されている。</p>
+      <description><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<el>img</el> 要素には、サイトのヘルプで使われているアイコンの名前（「HOMEページのアイコン」）が代替テキストとして記述されていて、サイトのヘルプの中では「HOMEページのアイコン」をクリックすることが説明されている。(HTML4 又は  HTML5)</p>
 </description>
       <code role="html5"><![CDATA[<a href="home.html">
   <img src="house.gif" alt="HOMEページのアイコン">
   HOMEページへ戻る
 </a>     ]]></code>
       </eg-group>
-    <eg-group role="failure">
-      <description><p>これは、この達成方法の不適合となる事例である。アイコンとテキストが隣り合っている。画像の代替テキストが隣接しているリンクテキストと同じ内容になっているため、同じリンクが二度読まれてしまうことになる。</p>
-</description>
-      <code role="html5"><![CDATA[<a href="products.html">
-   <img src="icon.gif" alt="製品のページ">
-   </a>
- <a href="products.html">
-   製品のページ
- </a>     ]]></code>
-    </eg-group>
-    <eg-group role="failure">
-      <description><p>これは、この達成方法の不適合となる事例である。アイコンとテキストのリンクが隣り合っている。同じリンクが二度読まれないように、画像の代替テキストは空である。しかし、アイコンの画像に代替テキストがないため、画像のリンク先が不明になってしまっている。</p>
-</description>
-      <code role="html5"><![CDATA[<a href="products.html">
-   <img src="icon.gif" alt="">
- </a>
- <a href="products.html">
-   製品のページ
- </a>     ]]></code>
-    </eg-group>
-    <eg-group role="failure">
-      <description><p>これは、この達成方法を誤って用いた事例である。アイコンとテキストは同じ <el>a</el> 要素の中にある。しかし、リンクテキストと同じ代替テキストをアイコンの画像に記述しているため、同じリンクが二度読まれてしまうことになる。</p>
-</description>
-      <code role="html5"><![CDATA[<a href="products.html">
-   <img src="products.gif" alt="製品のページ">
-   製品のページ
- </a>     ]]></code>
-    </eg-group>
-   </examples>
+    </examples>
    <resources>
       <see-also>
          <ulist>
             <item>
-               <p>
-									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 -
-                    how to specify alt text</loc>
-								       </p>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 - how to specify alt text</loc></p>
             </item>
          </ulist>
       </see-also>
@@ -84,16 +54,13 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p><el>img</el> 要素を含む <el>a</el> 要素すべてに対して：</p>
+      <p>この達成方法を適用しているすべての <el>a</el> 要素に対して:</p>
       <olist>
-        <item>
-          <p>同じ <att>href</att> 属性及び同じリンク先の説明を持つ隣接した <el>a</el> 要素がない。</p>
+        <item chg="del">
+          <p><el>a</el> 要素に含まれるすべての <el>img</el> 要素の <att>alt</att> 属性値が空に設定されていることを確認する。</p>
         </item>
-      </olist>
-      <p>テーブル内にある <el>a</el> 要素すべてに対して：</p>
-      <olist>
         <item>
-          <p>同じ <att>href</att> 属性及び同じリンク先の説明を持つ <el>a</el> 要素が隣接したテーブルセルにない。</p>
+          <p><el>a</el> 要素に空の <att>alt</att> 属性値またはリンクテキストを補足し画像を説明する値を持つ <el>img</el> 要素が含まれていることを確認する</p>
         </item>
       </olist>
     </procedure>
