@@ -1973,10 +1973,10 @@ Lorem ipsum dolor sit amet, ...
 						How to Meet 2.4.9 (リンクの目的 (リンクのみ) )
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
-					</a></li></ul></li></ul><h4 id="H2-description">解説</h4><div class="textbody"><p>この達成方法の目的は、テキストとアイコンの両方でリンクを提供する際、キーボード利用者や支援技術の利用者にとって混乱や困難を招くような Web ページを作らないようにすることである。様々な利用者がテキストとアイコンを使いやすいと見出していることから、両方を提供することでリンクのアクセシビリティを向上させることができる。</p><p>よくあるリンクとして、テキストとアイコンの両方が互いに隣接しながらも、別々の要素としてレンダリングされているものがある。視覚的にはそれらは単一のリンクのように見えるが、それらを同様のリンクが隣接しているものとして受け取る利用者も多い。キーボード利用者の場合、冗長なリンクを通過していくのは面倒である。支援技術の利用者にとって、連続する同様のリンクに遭遇すると混乱する可能性がある。アイコンの代替テキストがリンクテキストの複製である場合、スクリーンリーダーは読み上げを2度繰り返すことになる。</p><p>制作者がリンク画像の代替テキストを省略した場合、代替テキストが視覚的なリンクと同じ目的を果たさないため、<a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all" class="gl-ref">達成基準 1.1.1</a>を満たせなくなる。</p><p>この達成方法は、テキストと画像を 1 つの <code>a</code> 要素にまとめ、イメージに空の代替テキストを指定してテキストの重複を排除することによって、混乱や困難がないリンクを提供するものである。このようにすることで、リンクにおける両方の表現が提供されつつも、キーボード利用者にとってリンクは1つだけとなり、Web ページのリンク先リストを利用者に提供する補助技術も重複リンクを含まなくなる。</p><p>ページをレイアウトしやすくするために、テキストとアイコンのリンクを隣接したテーブルセルに分けることがある。WCAG 2.0 ではレイアウトテーブルの使用を禁止していないが、HTML の <code>table</code> 要素に定義されたセマンティックな意味を保持させ、コンテンツから表現を分離するコーティング手法に準拠するためにも、CSS ベースのレイアウトが推奨されている。CSS が使用されている場合には、この達成方法を適用して、テキストとアイコンのリンクを一つにまとめることができる。</p></div><h4 class="small-head" id="H2-examples">事例</h4><h5 class="small-head" id="H2-ex1">事例 1</h5><div class="example"><div class="textbody"><p>アイコンとテキストが同じ <code>a</code> 要素の中にある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;a href="products.html"&gt;
+					</a></li></ul></li></ul><h4 id="H2-description">解説</h4><div class="textbody"><p>この達成方法の目的は、テキストとアイコンの両方でリンクを提供する際、キーボード利用者や支援技術の利用者にとって混乱や困難を招くような ウェブページを作らないようにすることである。様々な利用者がテキストとアイコンを使いやすいと見出していることから、両方を提供することでリンクのアクセシビリティを向上させることができる。</p><p>よくあるリンクとして、テキストとアイコンの両方が互いに隣接しながらも、別々の要素としてレンダリングされているものがある。視覚的にはそれらは単一のリンクのように見えるが、それらを同様のリンクが隣接しているものとして受け取る利用者も多い。キーボード利用者の場合、冗長なリンクを通過していくのは面倒である。支援技術の利用者にとって、連続する同様のリンクに遭遇すると混乱する可能性がある。アイコンの代替テキストがリンクテキストの複製である場合、スクリーンリーダーは読み上げを2度繰り返すことになる。</p><p>制作者がリンク画像の代替テキストを省略した場合、代替テキストが視覚的なリンクと同じ目的を果たさないため、<a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all" class="gl-ref">達成基準 1.1.1</a>を満たせなくなる。</p><p>この達成方法は、テキストと画像を 1 つの <code>a</code> 要素にまとめ、イメージに空の代替テキストを指定してテキストの重複を排除することによって、混乱や困難がないリンクを提供するものである。このようにすることで、リンクにおける両方の表現が提供されつつも、キーボード利用者にとってリンクは1つだけとなり、ウェブページのリンク先リストを利用者に提供する補助技術も重複リンクを含まなくなる。</p><p>ページをレイアウトしやすくするために、テキストとアイコンのリンクを隣接したテーブルセルに分けることがある。WCAG 2.0 ではレイアウトテーブルの使用を禁止していないが、HTML の <code>table</code> 要素に定義されたセマンティックな意味を保持させ、コンテンツから表現を分離するコーティング手法に準拠するためにも、CSS ベースのレイアウトが推奨されている。CSS が使用されている場合には、この達成方法を適用して、テキストとアイコンのリンクを一つにまとめることができる。</p></div><h4 class="small-head" id="H2-examples">事例</h4><h5 class="small-head" id="H2-ex1">事例 1</h5><div class="example"><div class="textbody"><p>アイコンとテキストが同じ <code>a</code> 要素の中にある。(HTML4 又は HTML5)</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;a href="products.html"&gt;
    &lt;img src="icon.gif" alt=""&gt;
    製品のページ
- &lt;/a&gt;      </code></pre></div></div><h5 class="small-head" id="H2-ex2">事例 2</h5><div class="example"><div class="textbody"><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<code>img</code> 要素には、サイトのヘルプで使われているアイコンの名前（「HOMEページのアイコン」）が代替テキストとして記述されていて、サイトのヘルプの中では「HOMEページのアイコン」をクリックすることが説明されている。(HTML4 又は  HTML5)</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="home.html"&gt;
+ &lt;/a&gt;      </code></pre></div></div><h5 class="small-head" id="H2-ex2">事例 2</h5><div class="example"><div class="textbody"><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<code>img</code> 要素には、サイトのヘルプで使われているアイコンの名前（「HOMEページのアイコン」）が代替テキストとして記述されていて、サイトのヘルプの中では「HOMEページのアイコン」をクリックすることが説明されている。(HTML4 又は HTML5)</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="home.html"&gt;
   &lt;img src="house.gif" alt="HOMEページのアイコン"&gt;
   HOMEページへ戻る
 &lt;/a&gt;     </code></pre></div></div><h4 id="H2-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 - how to specify alt text</a></p></li></ul></div><h4 id="H2-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G91">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/G94">G94: 非テキストコンテンツに対して、それと同じ目的を果たし、同じ情報を提供する、簡潔な代替テキストを提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/C9">C9:  装飾目的の画像を付加するために、CSS を使用する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/F89">F89: 達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の失敗例 － 画像のみがリンクのコンテンツの場合に、アクセシブルな名前（name）が提供されていない</a></li></ul></div><h4 id="H2-tests">検証</h4><div class="textbody"><h5 class="small-head" id="H2-procedure">チェックポイント</h5><p>この達成方法を適用しているすべての <code>a</code> 要素に対して:</p><ol class="enumar"><li><p><code>a</code> 要素に含まれるすべての <code>img</code> 要素の <code>alt</code> 属性値が空に設定されていることを確認する。</p></li><li><p><code>a</code> 要素に空の <code>alt</code> 属性値またはリンクテキストを補足し画像を説明する値を持つ <code>img</code> 要素が含まれていることを確認する</p></li></ol><h5 class="small-head" id="H2-results">判定基準</h5><ul><li><p>上記の全てを満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="H4" id="H4"> </a>H4: リンク、フォームのコントロール、およびオブジェクトには、論理的なタブ移動順序を作成する</h3><div class="applicability"><h4 id="H4-applicability">適用（対象）</h4><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
@@ -1984,49 +1984,43 @@ Lorem ipsum dolor sit amet, ...
 						How to Meet 2.4.3 (フォーカス順序)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-focus-order.html">
 						達成基準 2.4.3 (フォーカス順序)を理解する
-					</a></li></ul></li></ul><h4 id="H4-description">解説</h4><div class="textbody"><p>この達成方法の目的は、初期設定のタブ順番が十分でない時に、論理的なタブ順番を提供することである。 多くの場合、「<a href="http://waic.jp/docs/WCAG-TECHS/G59.html" class="tech-ref">G59.html: </a>」を用いることで十分であり、この達成方法は必要ではない。表示とは異なるタブ順番を設定すると、ユーザビリティ上の不具合を生じさせる可能性が高くなる。</p><p>場合によって、コンテンツ制作者はコード内のインタラクティブな要素の順番に従うことなく、コンテンツの関係をたどるタブ順番を指定しようとするかもしれない。この場合、インタラクティブな要素の<code>tabindex</code>属性を使用することで選択肢の順番を指定できる。<code>tabindex</code>属性には、0 から 32767 の間の値を付与する。</p><p>インタラクティブな要素がタブキーを使ってナビゲートされる時、要素は<code>tabindex</code>属性の値の増える順にフォーカスが与えられる。0 よりも大きな<code>tabindex</code>値を持つ要素は、<code>tabindex</code>がない又は 0 の<code>tabindex</code>の要素の前にフォーカスを受けることになる。0 よりも大きな tabindexを持つ全ての要素がフォーカスを受け取った後、残りのインタラクティブな要素はウェブページに現れる順番でフォーカスが与えられる。</p></div><h4 class="small-head" id="H4-examples">事例</h4><h5 class="small-head" id="H4-ex1">事例 1</h5><div class="example"><div class="textbody"><p>系図の検索フォームで結婚記録を検索する。検索フォームには花嫁及び花婿用のいくつかの入力フィールドがある。フォームは、データテーブルを用いてマークアップされ、1列目に花婿、2列目に花嫁のフィールドがある。コンテンツの順番は行ごとであるが、コンテンツ制作者はフォームを列ごとにナビゲートする方がより論理的であると感じている。この方法では、全ての花婿の条件は花嫁の条件へ移る前に記入できる。入力フィールドの <code>tabindex</code> 属性は、列ごとにナビゲートするタブ順番を指定するのに使用される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="#" method="post"&gt;
-		   &lt;table summary="1列目に花婿の検索条件、2列目に花嫁の検索条件がある"&gt;
-		&lt;caption&gt;結婚記録の検索&lt;/caption&gt;
-		&lt;tr&gt;
-		   &lt;th&gt;検索基準&lt;/th&gt;
-	           &lt;th&gt;花婿&lt;/th&gt;
-		   &lt;th&gt;花嫁&lt;/th&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		   &lt;th&gt;名&lt;/th&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="groomfirst" 
-		     title="花婿の名" tabindex="1"&gt;&lt;/td&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridefirst" 
-		     title="花嫁の名" tabindex="4"&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		   &lt;th&gt;姓&lt;/th&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="groomlast" 
-		     title="花婿の姓" tabindex="2"&gt;&lt;/td&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridelast" 
-		     title="花嫁の姓" tabindex="5"&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		   &lt;th&gt;出生地&lt;/th&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="groombirth" 
-		     title="花婿の出生地" tabindex="3"&gt;&lt;/td&gt;
-		   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridebirth" 
-		     title="花嫁の出生地" tabindex="6"&gt;&lt;/td&gt;
-		   &lt;/tr&gt;
-		&lt;/table&gt;
-		&lt;/form&gt;</code></pre></div></div><h5 class="small-head" id="H4-ex2">事例 2</h5><div class="example"><div class="textbody"><p>ウェブページは上部の右端に検索フィールドを提供している。コンテンツの順番が最初ではないが、タブ順番が最初になるようにフィールドには tabindex="1" が与えられている。</p></div></div><h5 class="small-head" id="H4-ex3">事例 3</h5><div class="example"><div class="textbody"><p><code>tabindex</code> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ<code>tabindex</code> 値を持つ要素は、その文字の出現順にナビゲートされる。そのため、下記の事例ではタブ順番は1、3、2、4となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="" tabindex="1"&gt;1&lt;/a&gt;
-		&lt;a href="" tabindex="2"&gt;2&lt;/a&gt;
-		&lt;a href="" tabindex="1"&gt;3&lt;/a&gt;
-		&lt;a href="" tabindex="2"&gt;4&lt;/a&gt; </code></pre></div><div class="textbody"><p>タブ順番がコンテンツ順番に従っているコンテンツのセクションにおいて、個々の要素に異なる<code>tabindex</code>値を指定するよりも,
-		全ての要素に同じ値を与えることでエラーを起こりにくくすることが可能である。それらの要素を再配列する、又は新しい要素を加える、及び論理的なタブ順番を設定することは容易である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="xxx" tabindex = "1"&gt;リストの1番目のリンク&lt;/a&gt;
-		&lt;a href="xxx" tabindex = "1"&gt;リストの2番目のリンク&lt;/a&gt;
-		&lt;a href="xxx" tabindex = "1"&gt;初めにリストが作られて大分たってから追加されたリンク&lt;/a&gt;
-		&lt;a href="xxx" tabindex = "1"&gt;リストの3番目のリンク&lt;/a&gt;
-		  ...
-		&lt;a href="xxx" tabindex = "1"&gt;リストの20番目のリンク&lt;/a&gt; </code></pre></div></div><h4 id="H4-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
-									         <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">Tabbing
-                    navigation in the HTML 4.01 specification</a>
-								       </p></li></ul></div><h4 id="H4-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G59">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/F44">F44: 達成基準 2.4.3 の失敗例 － tabindex 属性を用いて、意味及び操作性を保持しないタブ順序を指定している</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/F85">F85: 達成基準 2.4.3 の失敗例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを使用している</a></li></ul></div><h4 id="H4-tests">検証</h4><div class="textbody"><h5 class="small-head" id="H4-procedure">チェックポイント</h5><ol class="enumar"><li><p><code>tabindex</code> が使われている。</p></li><li><p><code>tabindex</code> が使われているならば、<code>tabindex</code> 属性により指定されたタブ順番がコンテンツの関係に従っている。</p></li></ol><h5 class="small-head" id="H4-results">判定基準</h5><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="H24" id="H24"> </a>H24: イメージマップの <code>area</code> 要素に代替テキストを提供する</h3><div class="applicability"><h4 id="H24-applicability">適用（対象）</h4><div class="textbody"><p><code>area</code>要素を含むHTML及びXHTMLドキュメント</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+					</a></li></ul></li></ul><h4 id="H4-description">解説</h4><div class="textbody"><p>この達成方法の目的は、初期設定のタブ順番が十分でない時に、論理的なタブ順番を提供することである。 多くの場合、「<a href="http://waic.jp/docs/WCAG-TECHS/G59" class="tech-ref">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a>」を用いることで十分であり、この達成方法は必要ではない。表示とは異なるタブ順番を設定すると、ユーザビリティ上の不具合を生じさせる可能性が高くなる。</p><p>場合によって、コンテンツ制作者はコード内のインタラクティブな要素の順番に従うことなく、コンテンツの関係をたどるタブ順番を指定しようとするかもしれない。この場合、インタラクティブな要素の<code>tabindex</code>属性を使用することで選択肢の順番を指定できる。<code>tabindex</code>属性には、0 から 32767 の間の値を付与する。</p><p>インタラクティブな要素がタブキーを使ってナビゲートされる時、要素は<code>tabindex</code>属性の値の増える順にフォーカスが与えられる。0 よりも大きな<code>tabindex</code>値を持つ要素は、<code>tabindex</code>がない又は 0 の<code>tabindex</code>の要素の前にフォーカスを受けることになる。0 よりも大きな tabindexを持つ全ての要素がフォーカスを受け取った後、残りのインタラクティブな要素はウェブページに現れる順番でフォーカスが与えられる。</p></div><h4 class="small-head" id="H4-examples">事例</h4><h5 class="small-head" id="H4-ex1">事例 1</h5><div class="example"><div class="textbody"><p>系図の検索フォームで結婚記録を検索する。検索フォームには花嫁及び花婿用のいくつかの入力フィールドがある。フォームは、データテーブルを用いてマークアップされ、1列目に花婿、2列目に花嫁のフィールドがある。コンテンツの順番は行ごとであるが、コンテンツ制作者はフォームを列ごとにナビゲートする方がより論理的であると感じている。この方法では、全ての花婿の条件は花嫁の条件へ移る前に記入できる。入力フィールドの <code>tabindex</code> 属性は、列ごとにナビゲートするタブ順番を指定するのに使用される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="#" method="post"&gt;
+ &lt;table summary="1列目に花婿の検索条件、2列目に花嫁の検索条件がある"&gt;
+  &lt;caption&gt;結婚記録の検索&lt;/caption&gt;
+  &lt;tr&gt;
+   &lt;th&gt;検索基準&lt;/th&gt;
+   &lt;th&gt;花婿&lt;/th&gt;
+   &lt;th&gt;花嫁&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th&gt;名&lt;/th&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="groomfirst" 
+        title="花婿の名" tabindex="1"&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridefirst" 
+        title="花嫁の名" tabindex="4"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th&gt;姓&lt;/th&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="groomlast" 
+        title="花婿の姓" tabindex="2"&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridelast" 
+        title="花嫁の姓" tabindex="5"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th&gt;出生地&lt;/th&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="groombirth" 
+        title="花婿の出生地" tabindex="3"&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type="text" size="30" value="" name="bridebirth" 
+        title="花嫁の出生地" tabindex="6"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/table&gt;
+&lt;/form&gt;</code></pre></div></div><h5 class="small-head" id="H4-ex2">事例 2</h5><div class="example"><div class="textbody"><p>ウェブページは上部の右端に検索フィールドを提供している。コンテンツの順番が最初ではないが、タブ順番が最初になるようにフィールドには tabindex="1" が与えられている。</p></div></div><h5 class="small-head" id="H4-ex3">事例 3</h5><div class="example"><div class="textbody"><p><code>tabindex</code> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ <code>tabindex</code> 値を持つ要素は、その文字の出現順にナビゲートされる。</p></div><div class="textbody"><p>タブ順番がコンテンツ順番に従っているコンテンツのセクションにおいて、個々の要素に異なる<code>tabindex</code>値を指定するよりも,
+		全ての要素に同じ値を与えることでエラーを起こりにくくすることが可能である。それらの要素を再配列する、又は新しい要素を加える、及び論理的なタブ順番を設定することは容易である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;a href="xxx" tabindex = "1"&gt;リストの1番目のリンク&lt;/a&gt;
+ &lt;a href="xxx" tabindex = "1"&gt;リストの2番目のリンク&lt;/a&gt;
+ &lt;a href="xxx" tabindex = "1"&gt;初めにリストが作られて大分たってから追加されたリンク&lt;/a&gt;
+ &lt;a href="xxx" tabindex = "1"&gt;リストの3番目のリンク&lt;/a&gt;
+ ...
+ &lt;a href="xxx" tabindex = "1"&gt;リストの20番目のリンク&lt;/a&gt; </code></pre></div></div><h4 id="H4-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">Tabbing navigation in the HTML 4.01 specification</a></p></li></ul></div><h4 id="H4-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G59">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/F44">F44: 達成基準 2.4.3 の失敗例 － tabindex 属性を用いて、意味及び操作性を保持しないタブ順序を指定している</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/F85">F85: 達成基準 2.4.3 の失敗例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを使用している</a></li></ul></div><h4 id="H4-tests">検証</h4><div class="textbody"><h5 class="small-head" id="H4-procedure">チェックポイント</h5><ol class="enumar"><li><p><code>tabindex</code> が使われている。</p></li><li><p><code>tabindex</code> が使われているならば、<code>tabindex</code> 属性により指定されたタブ順番がコンテンツの関係に従っている。</p></li></ol><h5 class="small-head" id="H4-results">判定基準</h5><ul><li><p>2.を満たしている。</p></li></ul><p>注意：この達成方法が「達成基準を満たすことのできる達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="H24" id="H24"> </a>H24: イメージマップの <code>area</code> 要素に代替テキストを提供する</h3><div class="applicability"><h4 id="H24-applicability">適用（対象）</h4><div class="textbody"><p><code>area</code>要素を含むHTML及びXHTMLドキュメント</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
