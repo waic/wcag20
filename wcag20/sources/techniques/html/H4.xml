@@ -10,7 +10,7 @@
       <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、初期設定のタブ順番が十分でない時に、論理的なタブ順番を提供することである。 多くの場合、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G59.html" linktype="general">G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</loc>」を用いることで十分であり、この達成方法は必要ではない。表示とは異なるタブ順番を設定すると、ユーザビリティ上の不具合を生じさせる可能性が高くなる。</p>
+    <p>この達成方法の目的は、初期設定のタブ順番が十分でない時に、論理的なタブ順番を提供することである。 多くの場合、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G59" linktype="general"/>」を用いることで十分であり、この達成方法は必要ではない。表示とは異なるタブ順番を設定すると、ユーザビリティ上の不具合を生じさせる可能性が高くなる。</p>
     <p>場合によって、コンテンツ制作者はコード内のインタラクティブな要素の順番に従うことなく、コンテンツの関係をたどるタブ順番を指定しようとするかもしれない。この場合、インタラクティブな要素の<att>tabindex</att>属性を使用することで選択肢の順番を指定できる。<att>tabindex</att>属性には、0 から 32767 の間の値を付与する。</p>
     <p>インタラクティブな要素がタブキーを使ってナビゲートされる時、要素は<att>tabindex</att>属性の値の増える順にフォーカスが与えられる。0 よりも大きな<att>tabindex</att>値を持つ要素は、<att>tabindex</att>がない又は 0 の<att>tabindex</att>の要素の前にフォーカスを受けることになる。0 よりも大きな tabindexを持つ全ての要素がフォーカスを受け取った後、残りのインタラクティブな要素はウェブページに現れる順番でフォーカスが与えられる。</p>
   </description>
@@ -19,68 +19,59 @@
       <description><p>系図の検索フォームで結婚記録を検索する。検索フォームには花嫁及び花婿用のいくつかの入力フィールドがある。フォームは、データテーブルを用いてマークアップされ、1列目に花婿、2列目に花嫁のフィールドがある。コンテンツの順番は行ごとであるが、コンテンツ制作者はフォームを列ごとにナビゲートする方がより論理的であると感じている。この方法では、全ての花婿の条件は花嫁の条件へ移る前に記入できる。入力フィールドの <att>tabindex</att> 属性は、列ごとにナビゲートするタブ順番を指定するのに使用される。</p>
 </description>
       <code role="html401"><![CDATA[<form action="#" method="post">
-		   <table summary="1列目に花婿の検索条件、2列目に花嫁の検索条件がある">
-		<caption>結婚記録の検索</caption>
-		<tr>
-		   <th>検索基準</th>
-	           <th>花婿</th>
-		   <th>花嫁</th>
-		</tr>
-		<tr>
-		   <th>名</th>
-		   <td><input type="text" size="30" value="" name="groomfirst" 
-		     title="花婿の名" tabindex="1"></td>
-		   <td><input type="text" size="30" value="" name="bridefirst" 
-		     title="花嫁の名" tabindex="4"></td>
-		</tr>
-		<tr>
-		   <th>姓</th>
-		   <td><input type="text" size="30" value="" name="groomlast" 
-		     title="花婿の姓" tabindex="2"></td>
-		   <td><input type="text" size="30" value="" name="bridelast" 
-		     title="花嫁の姓" tabindex="5"></td>
-		</tr>
-		<tr>
-		   <th>出生地</th>
-		   <td><input type="text" size="30" value="" name="groombirth" 
-		     title="花婿の出生地" tabindex="3"></td>
-		   <td><input type="text" size="30" value="" name="bridebirth" 
-		     title="花嫁の出生地" tabindex="6"></td>
-		   </tr>
-		</table>
-		</form>]]></code>
+ <table summary="1列目に花婿の検索条件、2列目に花嫁の検索条件がある">
+  <caption>結婚記録の検索</caption>
+  <tr>
+   <th>検索基準</th>
+   <th>花婿</th>
+   <th>花嫁</th>
+  </tr>
+  <tr>
+   <th>名</th>
+   <td><input type="text" size="30" value="" name="groomfirst" 
+        title="花婿の名" tabindex="1"></td>
+   <td><input type="text" size="30" value="" name="bridefirst" 
+        title="花嫁の名" tabindex="4"></td>
+  </tr>
+  <tr>
+   <th>姓</th>
+   <td><input type="text" size="30" value="" name="groomlast" 
+        title="花婿の姓" tabindex="2"></td>
+   <td><input type="text" size="30" value="" name="bridelast" 
+        title="花嫁の姓" tabindex="5"></td>
+  </tr>
+  <tr>
+   <th>出生地</th>
+   <td><input type="text" size="30" value="" name="groombirth" 
+        title="花婿の出生地" tabindex="3"></td>
+   <td><input type="text" size="30" value="" name="bridebirth" 
+        title="花嫁の出生地" tabindex="6"></td>
+  </tr>
+ </table>
+</form>]]></code>
     </eg-group>
     <eg-group>
       <description><p>ウェブページは上部の右端に検索フィールドを提供している。コンテンツの順番が最初ではないが、タブ順番が最初になるようにフィールドには tabindex="1" が与えられている。</p>
       </description>
     </eg-group>
     <eg-group>
-      <description><p><att>tabindex</att> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ<att>tabindex</att> 値を持つ要素は、その文字の出現順にナビゲートされる。そのため、下記の事例ではタブ順番は1、3、2、4となる。</p>
+      <description><p><att>tabindex</att> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ <att>tabindex</att> 値を持つ要素は、その文字の出現順にナビゲートされる。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="" tabindex="1">1</a>
-		<a href="" tabindex="2">2</a>
-		<a href="" tabindex="1">3</a>
-		<a href="" tabindex="2">4</a> ]]></code>
       <description><p>タブ順番がコンテンツ順番に従っているコンテンツのセクションにおいて、個々の要素に異なる<att>tabindex</att>値を指定するよりも,
-		全ての要素に同じ値を与えることでエラーを起こりにくくすることが可能である。それらの要素を再配列する、又は新しい要素を加える、及び論理的なタブ順番を設定することは容易である。</p>
-</description>
-      <code role="html401"><![CDATA[<a href="xxx" tabindex = "1">リストの1番目のリンク</a>
-		<a href="xxx" tabindex = "1">リストの2番目のリンク</a>
-		<a href="xxx" tabindex = "1">初めにリストが作られて大分たってから追加されたリンク</a>
-		<a href="xxx" tabindex = "1">リストの3番目のリンク</a>
-		  ...
-		<a href="xxx" tabindex = "1">リストの20番目のリンク</a> ]]></code>
+		全ての要素に同じ値を与えることでエラーを起こりにくくすることが可能である。それらの要素を再配列する、又は新しい要素を加える、及び論理的なタブ順番を設定することは容易である。</p></description>
+      <code role="html401"><![CDATA[ <a href="xxx" tabindex = "1">リストの1番目のリンク</a>
+ <a href="xxx" tabindex = "1">リストの2番目のリンク</a>
+ <a href="xxx" tabindex = "1">初めにリストが作られて大分たってから追加されたリンク</a>
+ <a href="xxx" tabindex = "1">リストの3番目のリンク</a>
+ ...
+ <a href="xxx" tabindex = "1">リストの20番目のリンク</a> ]]></code>
       </eg-group>
    </examples>
    <resources>
       <see-also>
          <ulist>
             <item>
-               <p>
-									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">Tabbing
-                    navigation in the HTML 4.01 specification</loc>
-								       </p>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">Tabbing navigation in the HTML 4.01 specification</loc></p>
             </item>
          </ulist>
       </see-also>
