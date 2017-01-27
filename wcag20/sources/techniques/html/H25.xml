@@ -17,7 +17,8 @@
       <eg-group>
       <description><p>この事例はドキュメントのタイトルを定義している。</p>
 </description>
-      <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
+      <code role="html401"><![CDATA[
+		<html xmlns="http://www.w3.org/1999/xhtml">
 		   <head>
 		      <title>ワールドワイドウェブコンソーシアム</title>
 		   </head>

@@ -34,45 +34,39 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、<el>abbr</el>要素と<el>acronym</el>要素を用いることで、略語に対して元の語又は定義を提供することである</p>
-    <p><el>abbr</el>要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML及びXHTMLでは、頭文字語や頭字語は<el>acronym</el>要素を用いてマークアップすることもできる。XHTML 2.0では、<el>acronym</el>要素を廃止し、より一般的な<el>abbr</el>要素の利用が提案されている。</p>
+    <p>この達成方法の目的は、<el>abbr</el> 要素を用いることで、略語に対して元の語又は定義を提供することである</p>
+    <p><el>abbr</el> 要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML4 及び XHTML では、頭文字語や頭字語は <el>acronym</el> 要素を用いてマークアップすることもできる。abbr要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML5 以降では、より一般的な <el>abbr</el> 要素の利用が提案され、<el>acronym</el> 要素は廃止されている。</p>
   </description>
    <examples>
       <eg-group>
-      <head>abbr要素を用いて略語の元の語を示す</head>
+      <head><el>abbr</el> 要素を用いて略語の元の語を示す</head>
       <code role="html401"><![CDATA[<p>普通、砂糖は 5 <abbr title="pound">lb.<abbr> の袋入りで売られている。</p>
 <p><abbr title="World Wide Web">WWW</abbr> へようこそ！</p> ]]></code>
     </eg-group>
     <eg-group>
-      <head>abbr要素を用いて略語の定義を示す</head>
+      <head><el>abbr</el> 要素を用いて略語の定義を示す</head>
       <code role="html401"><![CDATA[<p>タシニ <abbr title="及びその他">et al.</abbr> <abbr title="対">v.</abbr>
 ニューヨーク・タイムズ紙 <abbr title="及びその他">et al.</abbr> は、全米著述業組合
 による象徴的な訴訟事件であり……</p> ]]></code>
     </eg-group>
     <eg-group>
-      <head>acronym要素を用いて頭字語の元の語を示す</head>
-      <code role="html401"><![CDATA[<p><acronym title="Keep It Simple Stupid">KISS</acronym>の使用が…の間で広まってきた。</p> ]]></code>
+      <head><el>abbr</el> 要素を用いて頭字語の元の語を示す</head>
+      <code role="html401"><![CDATA[<p><abbr title="Keep It Simple Stupid">KISS</abbr>の使用が…の間で広まってきた。</p> ]]></code>
     </eg-group>
     <eg-group>
-      <head>acronym要素を用いて頭文字語の元の語を示す</head>
-      <code role="html401"><![CDATA[<p><acronym title="World Wide Web">WWW</acronym></p> ]]></code>
+      <head><el>abbr</el> 要素を用いて頭文字語の元の語を示す</head>
+      <code role="html401"><![CDATA[<p><abbr title="World Wide Web">WWW</abbr></p> ]]></code>
     </eg-group>
    </examples>
    <resources>
       <see-also>
          <ulist>
             <item>
-               <p>
-									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/html401/struct/text.html#edef-ABBR">HTML 4.01 ABBR
-                    element</loc>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/text.html#edef-ABBR">HTML 4.01 ABBR element</loc>
 								       </p>
             </item>
             <item>
-               <p>
-									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/xhtml2/mod-text.html#sec_9.1.">XHTML 2.0 abbr
-                    element</loc>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-abbr-element">HTML5 abbr element</loc>
 								       </p>
             </item>
             <item>
@@ -91,7 +85,7 @@
      <procedure>
       <olist>
         <item>
-          <p>略語それぞれに、<el>abbr</el>要素又は<el>acronym</el>要素で元の語や定義を指定している。</p>
+          <p>略語それぞれに、<el>abbr</el> 要素で元の語や定義を指定している。</p>
         </item>
       </olist>
      </procedure>
