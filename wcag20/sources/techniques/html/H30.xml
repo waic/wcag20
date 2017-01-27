@@ -16,7 +16,7 @@
 その説明により、利用者はこのリンクとウェブページ内にある他のリンクとの違いが区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。
 一般的に、遷移先のURIでは、そのリンクの目的を説明したことにはならない。</p>
     <p>画像がリンクの唯一のコンテンツであるとき、画像の代替テキストがそのリンクに固有の機能を説明している。</p>
-    <p>リンクのコンテンツがテキスト及び一つ又はそれ以上の画像を含むとき、テキストがリンクの目的を十分に説明しているならば、画像の代替テキストは空にする。(<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H67" linktype="techniques">支援技術が無視すべき画像の img 要素で、alt 属性値を空にして、title 属性を付与しない</loc>(HTML)を参照。) 
+    <p>リンクのコンテンツがテキスト及び一つ又はそれ以上の画像を含むとき、テキストがリンクの目的を十分に説明しているならば、画像の代替テキストは空にする。(<loc href="H67" linktype="html"/>を参照。) 
 画像がリンクの目的以外にも情報を伝えるときには、画像に適切な代替テキストも付与しなければならない。</p>
   </description>
    <examples>
@@ -44,14 +44,10 @@
 </a>]]></code>
     </eg-group>
     <eg-group>
-      <description><p>リンクがアイコンとテキストを含み、サイトのヘルプはアイコンを参照する。
-<el>img</el> はサイトのヘルプのアイコンで使用する名前の代替テキストを持つ、
-それはHOMEページのアイコンをクリックすることを説明している。【訳注：あまり適切な例ではないので、WCAGワーキンググループに改善提案中】</p>
+      <description><p>サイトでは、製品の詳細ページの「フィードバック」リンクをクリックすることで、利用者がログインしたときに製品に関するフィードバックを提供することができる。他の利用者又は製品メーカーは、フィードバックに応答することができる。フィードバックのリンクは、利用者のフィードバックへの応答が利用可能な場合に、「フィードバック」テキストの前にアイコンを表示する。ヘルプ情報は、このアイコンを二重引用符を含む吹き出しとして説明し、アイコン自体を例として示している。 ヘルプテキストにおけるアイコンのテキストによる代替は、「応答受信アイコン」である。複数のモダリティを使用してこのアイコンを識別できるように、製品の詳細ページ（応答が利用可能な場合）で同じテキストによる代替が使用される。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="foo.htm">
-<img src="house.gif" alt="アイコン"/>
-HOMEページ
-</a>]]></code>
+      <code role="html401"><![CDATA[<a href="prod_123_feedback.htm">Feedback 
+<img src="response.gif" width="15" height="15" alt="レスポンス受信アイコン" /></a>]]></code>
     </eg-group>
     <eg-group>
       <description><p>リンクはテキスト及びアイコンを含み、アイコンはリンク先についての追加情報を提供している。</p>
@@ -61,15 +57,38 @@ HOMEページ
 <img src="pdficon.gif" alt="PDFファイル"/>
 </a>]]></code>
     </eg-group>
+      <eg-group>
+         <description>
+            <p>MyCorp 社の年次レポートは企業のウェブサイト上から PDF ファイルとして入手でき、年次企業予算は Excel ファイルとして入手できる。</p>
+            <note>
+               <p>多くの利用者は、ファイルを開く際に新しいアプリケーションが開く場合は、あらかじめファイルの種類を知りたいので、このような追加情報を含めるのはしばしば便利であると考えられる。 ただし、この達成基準を満たすには必須ではない。</p>
+            </note>
+         </description>
+         <code><![CDATA[<p>
+<a href=”2009mycorp_report.pdf”>MyCorp 2009 年次レポート (pdf)</a><br />
+<a href=”2009mycorp_budget.xls”>MyCorp 2009 年次予算 (Excel)</a>
+</p>]]></code>
+      </eg-group>
+      <eg-group>
+         <description>
+            <p>HTML5 においてブロックレベル要素をリンクで囲む。</p>
+         </description>
+         <code role="html5"><![CDATA[<article>
+<a href="news.html">
+<h3>議会で続く予算討議</h3>
+<p class="subhead"><img class="alertimg" src="alerticon.png" alt="ニュース速報" height="30" width="30">議会の議員は、来年の予算をめぐる3つの挑戦的な問題について、激しい議論を続けた。</p>
+<p>もっと読む</p>
+</a>
+</article>]]></code>
+            <p><loc href="link-wraps-block.html" linktype="examples">ブロックレベル要素をリンクで囲む実例</loc>を示す。
+            </p>
+      </eg-group> 
    </examples>
    <resources>
       <see-also>
          <ulist>
             <item>
-               <p>
-									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 -
-                    how to specify alt text</loc>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 - how to specify alt text</loc>
 								       </p>
             </item>
          </ulist>
