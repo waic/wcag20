@@ -12,9 +12,9 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、見た目でテーブルの表題を付ける場合に、プログラムで解釈できるようにデータテーブルと表題を関連付けることである。表題はテーブルの識別子であり、タイトル又は見出しのような働きをする。</p>
-    <p><el>caption</el>要素は表題のテキストのための適切なマークアップであり、（初期状態では）表示上も、テーブルの識別子がそのテーブルに関連付けられていることを保証するものである。さらに、<el>caption</el>要素を用いることによって、音声読み上げソフトウェアがテーブルの表題に利用者を直接誘導することも可能になる。</p>
-    <p><el>caption</el>要素は、テーブルに<att>summary</att>属性を指定しているかどうかに関わらず利用できる。<el>caption</el>要素はテーブルを特定するもの、<att>summary</att>属性はテーブルの概要を提供したり、見方を説明するものである。両方とも指定する場合、<el>caption</el>要素に<att>summary</att>属性と同じ情報を含めるべきではない。</p>
-    <p>WCAG 2.0はレイアウトテーブルの利用を禁止していないが、CSSベースのレイアウトを推奨している。HTML及びXHTMLの<el>table</el>要素に与えられたセマンティックな意義を守り、コンテンツから表現を分離するというコーディングの実践に沿うためである。テーブルをレイアウトのために利用する場合、<el>caption</el>要素は使用しない。レイアウトテーブルの目的は、コンテンツの配置を制御することのみであって、テーブルそのものは利用者から見て「透明」であるべきである。<el>caption</el>要素を用いることによってテーブルの存在を示してしまうと、この透明性を壊すことになる。</p>
+    <p><el>caption</el> 要素は表題のテキストのための適切なマークアップであり、（初期状態では）表示上も、テーブルの識別子がそのテーブルに関連付けられていることを保証するものである。さらに、<el>caption</el> 要素を用いることによって、音声読み上げソフトウェアがテーブルの表題に利用者を直接誘導することも可能になる。</p>
+    <p><el>caption</el> 要素は、テーブルに <att>summary</att> 属性を指定しているかどうかに関わらず利用できる。<el>caption</el> 要素はテーブルを特定するもの、<att>summary</att> 属性はテーブルの概要を提供したり、見方を説明したりするものである。両方とも指定する場合、<att>summary</att> 属性に <el>caption</el> 要素と同じ情報を含めるべきではない。</p>
+    <note><p>WCAG 2.0 はレイアウトテーブルの利用を禁止していないが、CSS ベースのレイアウトを推奨している。HTML 及び XHTML の <el>table</el> 要素に与えられたセマンティックな意義を守り、コンテンツから表現を分離するというコーディングの実践に沿うためである。テーブルをレイアウトのために利用する場合、<el>caption</el> 要素は使用しない。レイアウトテーブルの目的は、コンテンツの配置を制御することのみであって、テーブルそのものは利用者から見て「透明」であるべきである。<el>caption</el> 要素を用いることによってテーブルの存在を示してしまうと、この透明性を壊すことになる。<loc href="F46" linktype="failure"/>を参照のこと。</p></note>
   </description>
    <examples>
       <eg-group>
@@ -36,36 +36,28 @@
       </see-also>
    </resources>
    <related-techniques>
-      <relatedtech idref="H43"/>
-      <relatedtech idref="H63"/>
+      <relatedtech idref="H51"/>
       <relatedtech idref="H73"/>
+      <relatedtech idref="F46"/>
    </related-techniques>
    <tests>
       <procedure>
-      <olist>
-        <item><p>レイアウトテーブルかどうかを確認：テーブルのセルの内容が同じ行や列に含まれる他のセルの内容と関係があるかどうか判断する。</p>
-                
-          <olist><item><p>「いいえ」の場合、そのテーブルはレイアウトテーブルである。</p></item><item><p>「はい」の場合、そのテーブルはデータテーブルである。</p></item></olist></item>
-        <item>
-          <p>テーブルがレイアウトテーブルである場合、<el>caption</el>要素を用いていない。</p>
-        </item>
-        <item>
-          <p>テーブルがデータテーブルであり、<el>caption</el>要素を用いている場合、その<el>caption</el>要素によってテーブルが特定できる。</p>
-        </item>
-        <item>
-          <p>データテーブルに、<att>summary</att>属性と<el>caption</el>要素の両方を指定している場合、<att>summary</att>属性の内容が<el>caption</el>要素の繰り返しではない。</p>
-        </item>
-      </olist>
-    </procedure>
+         <p>各データテーブルごとに:</p>
+         <olist>
+            <item>
+               <p>テーブルに <el>caption</el> 要素が含まれていることを確認する。</p>
+            </item>
+            <item>
+               <p><el>caption</el> 要素の内容がテーブルを識別しているかどうかを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
       <expected-results>
          <ulist>
-        <item>
-          <p>レイアウトテーブルでは、2.を満たしている。</p>
-        </item>
-        <item>
-          <p>データテーブルでは、3.及び4.を満たしている。</p>
-        </item>
-      </ulist>
+            <item>
+               <p>1. 及び 2. を満たしている。</p>
+            </item>
+         </ulist>
       </expected-results>
    </tests>
 </technique>
