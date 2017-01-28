@@ -47,8 +47,8 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、リンクを説明する追加情報を提供するための、a要素の<att>title</att>属性の利用方法を示すことである。<att>title</att>属性は、リンクの目的を明らかにしたり、詳しく説明したりするのに役立つ追加情報の指定に用いる。もし<att>title</att>属性を通して提供する補足情報が、警告文のように利用者がリンクをたどる前に知っておくべき内容であれば、<att>title</att>属性ではなくリンクテキストとして提供すべきである。</p>
-    <p><att>title</att>属性へのアクセス方法について、ユーザエージェントごとにサポートが大きく異なるため、コンテンツ制作者はこの達成方法を用いるときは注意を払うべきである。この理由から、コンテンツ制作者は達成方法<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C7" linktype="css">C7： CSSを用いて、リンクテキストの一部を非表示にする</loc>（CSS）又は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H30" linktype="techniques">H30： a 要素のリンクの目的を説明するテキストリンクを提供する</loc>（HTML）を利用することが望ましい。</p>
+    <p>この達成方法の目的は、リンクを説明する追加情報を提供するための、a 要素の <att>title</att> 属性の利用方法を示すことである。<att>title</att> 属性は、リンクの目的を明らかにしたり、詳しく説明したりするのに役立つ追加情報の指定に用いる。もし <att>title</att> 属性を通して提供する補足情報が、警告文のように利用者がリンクをたどる前に知っておくべき内容であれば、<att>title</att> 属性ではなくリンクテキストとして提供すべきである。</p>
+    <p><att>title</att> 属性へのアクセス方法について、ユーザエージェントごとにサポートが大きく異なるため、コンテンツ制作者はこの達成方法を用いるときは注意を払うべきである。この理由から、コンテンツ制作者は達成方法<loc href="C7" linktype="css"/>又は<loc href="H30" linktype="html"/>を利用することが望ましい。</p>
   </description>
    <examples>
       <eg-group>
@@ -58,27 +58,26 @@ title="象の避難の失敗について続きを読む">
 巨大な荷物のせいで、避難はさんざんな結果に
 </a> ]]></code>
     </eg-group>
-    <eg-group>
-      <head>新規ウインドウを開くリンク</head>
-      <description><p>HTML 4.01では、<att>href</att>属性で指定したURIを新規ウインドウで表示するために、<el>a</el>要素で<att>target="_blank"</att>を利用できる。この事例では、新規ウインドウを開くリンクであるという情報を提供するのに、<el>a</el>要素の<att>title</att>属性を利用している。</p>
-</description>
-      <code role="html401"><![CDATA[<a href="http://example.com/subscribe.html" 
-target="_blank" title="新規ウインドウを開く">
-ニュース速報のメール通知に申し込む
-</a> ]]></code>
-    </eg-group>
    </examples>
-   <resources/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc href="http://www.brothercake.com/site/resources/scripts/tooltips/">Displaying tooltips when elements receive focus</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
    <related-techniques>
       <relatedtech idref="C7"/>
       <relatedtech idref="H30"/>
    </related-techniques>
    <tests>
       <procedure>
-      <p><el>a</el>要素のソースコードについて、次のことを調べる。</p>
+      <p><el>a</el> 要素のソースコードについて、次のことを調べる。</p>
       <olist>
         <item>
-          <p><att>title</att>属性のある<el>a</el>要素では、リンクテキストの文言とともに<att>title</att>属性がそのリンクの目的を示している。</p>
+          <p><att>title</att> 属性のある <el>a</el> 要素では、リンクテキストの文言とともに <att>title</att> 属性がそのリンクの目的を示している。</p>
         </item>
       </olist>
     </procedure>
