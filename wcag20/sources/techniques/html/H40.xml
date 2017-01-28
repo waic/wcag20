@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H40">
-   <short-name>説明リストを使用する</short-name>
+   <short-name>記述リストを使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>
@@ -10,14 +10,13 @@
       <success-criterion idref="meaning-idioms" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、語句の定義を定義リストの形式で提供することである。定義リストは<el>dl</el>要素を用いてマークアップし、その中では用語それぞれを別の<el>dt</el>要素に含め、直後の<el>dd</el>要素に定義を含める。<el>title</el>属性を用いて、定義リストに関する補足情報を提供することもできる。</p>
-    <p><el>dl</el>要素、<el>dt</el>要素、<el>dd</el>要素を用いることで、表現形式が変更されても、用語と定義の関係が保持され、リスト全体がひとつの単位として扱われる。</p>
-    <p>定義リストの最も簡単な利用法は、アルファベット順に定義を並べることであり、その典型的な例は定義リストを用語集に用いることである。</p>
+    <p>この達成方法の目的は、名前または用語の説明を記述リストの形式で提供することである。リストは <el>dl</el> 要素を用いてマークアップし、その中では用語それぞれを個別の <el>dt</el> 要素に含め、直後の <el>dd</el> 要素に説明を含める。意味のある順序が確保されていれば、複数の用語を単一の説明に、単一の用語を複数の説明に関連付けることもできる。<att>title</att> 属性を用いて、記述リストに関する補足情報を提供することもできる。記述リストを使用することで、表現が変化しても、用語とその説明が 1 つの単位としてグループ化され、意味的な関連が保証される。</p>
+    <p>説明がアルファベット順に並べられている場合は、記述リストを使用するのが最も容易である。記述リストの一般的な使用法は用語集である。</p>
+    <note><p>HTML5 では、「記述リスト」という名前が導入された。以前のバージョンでは、これらのリストは「定義リスト」と呼ばれていた。</p></note>
   </description>
    <examples>
       <eg-group>
-      <description><p>
-									海事用語の定義リストを、航海に関するウェブサイトで利用している。</p>
+      <description><p>海事用語の記述リストを、航海に関するウェブサイトで利用している。</p>
 </description>
       <code role="html401"><![CDATA[<dl title="海事用語">
   <dt>ノット</dt>
@@ -42,10 +41,10 @@
       <see-also>
          <ulist>
             <item>
-               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/REC-html40/struct/lists.html#edef-DL">Definition
-                    lists: the DL, DT, and DD elements</loc>
-								       </p>
+               <p><loc href="https://www.w3.org/TR/html5/grouping-content.html#the-dl-element">HTML5 Description lists</loc></p>
+            </item>
+            <item>
+               <p><loc href="http://www.w3.org/TR/REC-html40/struct/lists.html#edef-DL">HTML 4 Definition lists: the DL, DT, and DD elements</loc></p>
             </item>
          </ulist>
       </see-also>
@@ -55,16 +54,22 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>リストとして表現されている用語と定義の組み合わせについて：</p>
+      <p>用語とそれに関する説明の組み合わせについて：</p>
       <olist>
         <item>
           <p>そのリストが、<el>dl</el>要素に含まれている。</p>
         </item>
         <item>
-          <p>そのリストの中の用語それぞれが、<el>dt</el>要素に含まれている。</p>
+          <p>リストの各用語が <el>dt</el> 要素内に含まれていることを確認する。</p>
         </item>
         <item>
-          <p>各用語の定義が、<el>dt</el>要素の直後の<el>dd</el>要素に含まれている。</p>
+          <p>同じ説明を共有する複数の用語があるときに互いの <el>dt</el> 要素が連続することを確認する。</p>
+        </item>
+        <item>
+          <p>各用語に対する説明が 1 つ以上の <el>dd</el> 要素に含まれていることを確認する。</p>
+        </item>
+        <item>
+          <p>用語を含む 1 つ以上の <el>dt</el> 要素の直後に、1 つ以上の <el>dd</el> 要素があることを確認する。</p>
         </item>
       </olist>
     </procedure>
