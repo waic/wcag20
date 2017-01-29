@@ -4,20 +4,19 @@
 <technique id="H42">
    <short-name>見出しを特定するために、h1 要素～ h6 要素を使用する</short-name>
    <applicability>
-      <p>HTML and XHTML</p>
+      <p>HTML 及び XHTML</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、HTML及びXHTMLの見出しマークアップを用いて、コンテンツ構造を伝達することである。</p>
-    <p>単にテキストの外観を変えるために見出しマークアップを使うのは、コンテンツの構成をうまく伝達できないばかりか、見出しを構造の理解に用いる利用者や、見出しを使ったナビゲーションを用いる利用者を混乱させる恐れがある。逆に、テキストを太字にしたり、<att>"class=heading"</att>と指定したりしたとしても、見た目が見出しのようになるだけで、支援技術はそのテキストを見出しとは認識できないだろう。</p>
+    <p>この手法の目的は、HTML 及び XHTML の見出しマークアップを用いて、コンテンツの見出しにセマンティックなコードを提供することである。見出しマークアップは、支援技術がテキストの見出し状態を利用者に提示することを可能にする。スクリーンリーダーは、コードを認識し、そのレベル、ビープ音、又は他の聴覚インジケーターを備えた見出しとしてテキストをアナウンスすることができる。スクリーンリーダーはまた、見出しマークアップをナビゲートすることもできる。これは、スクリーンリーダー利用者が関心のあるコンテンツをより迅速に見つけるための効果的な方法である。オーサリングされた視覚表示を変更する支援技術はまた、見出しマークアップで識別できる見出しのための適切な代替視覚表示を提供することもできる。</p>
   </description>
    <examples>
       <eg-group>
-      <head>階層的な見出し構造事例 2：3段組レイアウトの見出し設定</head>
-      <description><p>以下の事例では、<el>h3</el>が<el>h2</el>のサブセクションで、<el>h2</el>が<el>h1</el>のサブセクションとなっていて、見出しが階層的なレイアウトに用いられている。</p>
+      <head>階層的な見出し構造</head>
+      <description><p>以下の事例では、<el>h3</el> が <el>h2</el> のサブセクションで、<el>h2</el> が <el>h1</el> のサブセクションとなっていて、見出しが階層的なレイアウトに用いられている。</p>
 </description>
       <code xml:space="preserve"><![CDATA[<h1>Plant Foods that Humans Eat</h1>
 <p>There are an abundant number of plants that humans eat...</p>
@@ -43,12 +42,13 @@
   sweetness of their pods...</p> ]]></code>
     </eg-group>
     <eg-group>
-      <description><p>この事例では、3段組の真ん中にページのメインコンテンツがある。メインコンテンツは、ページ内で最初のコンテンツではないが、そのタイトルはページタイトルと同じで、<el>h1</el>要素でマークアップされている。3段組のうち1番目と3番目のコンテンツは重要度が低いため、タイトルが<el>h2</el>要素でマークアップされている。【訳注：見出しを適切にマークアップする方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H69" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">コンテンツの各セクションの開始位置に見出し要素を提供する</loc>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G141" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">見出しを用いてウェブページを構造化する</loc>を参照するとよい。】</p>
+    <head>3段組レイアウトの見出し設定</head>
+      <description><p>この事例では、3 段組の真ん中にページのメインコンテンツがある。メインコンテンツは、ページ内で最初のコンテンツではないが、そのタイトルはページタイトルと同じで、<el>h1</el> 要素でマークアップされている。3 段組のうち 1 番目と 3 番目のコンテンツは重要度が低いため、タイトルが <el>h2</el> 要素でマークアップされている。<!--【訳注：見出しを適切にマークアップする方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H69" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">コンテンツの各セクションの開始位置に見出し要素を提供する</loc>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G141" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">見出しを用いてウェブページを構造化する</loc>を参照するとよい。】--></p>
 <note><p diff="add">以下のコード例は、ウェブページの特定のセクションに対して用いるべき見出しレベルを規定するものではないことに留意することが重要である。レイアウトする際には、各カラムの最初に見出しを同じ見出しレベル（例えば、h1）で提示したり、またはコード例にあるようにメインコンテンツに関してその重要度を反映した見出しレベルで提示したりすることが可能である。</p>
 </note>
 </description>
       <code role="html401"><![CDATA[<head>
- <title>株式市場アップ・トゥデイ</title>
+ <title>今日の株式市場</title>
  </head>
 
  <body>
@@ -61,7 +61,7 @@
 
  <!-- main contents -->
  <div class="main">
- <h1>株式市場アップ・トゥデイ</h1>
+ <h1>今日の株式市場</h1>
  <!-- article text here -->
  </div>
 
@@ -87,16 +87,26 @@
                        href="http://meyerweb.com/eric/thoughts/2004/07/21/pick-a-heading/">Pick a
                     Heading</loc> Eric Meyer</p>
             </item>
-            <item><p>
-            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</loc>
-          </p>
-        </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://accessibility.psu.edu/headingshtml/">Heading Tags</loc>
+               </p>
+            </item>
          </ulist>
       </see-also>
    </resources>
    <related-techniques>
       <relatedtech idref="H69"/>
       <relatedtech idref="G141"/>
+      <relatedtech idref="F2"/>
+      <relatedtech idref="F43"/>
    </related-techniques>
    <tests>
       <procedure>
