@@ -25,10 +25,11 @@
       <ulist><item><p>JAWS 6.0以降では、<el>label</el>要素と<att>title</att>属性が異なるとき、その両方を読み上げるように設定できる。しかし、この設定方法に気づいている利用者は非常に少ない。</p></item><item><p>Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目の追加情報を読み上げるホットキー（ins+E）がある。</p></item></ulist></ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、フォーム・コントロールとラベルを明示的に関連付けるために、<el>label</el>要素を利用することである。ラベルは、<el>label</el>要素の<att>for</att>属性によって特定のフォーム・コントロールと結びつけることができる。この場合、<att>for</att>属性値はフォーム・コントロールの<att>id</att>属性値と同じでなければならない。</p>
-    <p><att>id</att>属性が<att>name</att>属性と同じ値で、両方とも指定しなければならない場合でも、その<att>id</att>はそのウェブページ内で一意的なものとして、重複して使用してはならない。</p>
-    <p>この達成方法は、<el>label</el>要素が見えているかどうか、つまりCSSで非表示にしているかどうかに関わらず、達成基準 1.1.1、1.3.1、4.1.2を満たすことができる。しかし、達成基準 3.3.2では、<el>label</el>要素を入力フィールドの理解に役立てたい全ての利用者のために、見える状態にしておかなければならない、としている。</p>
-    <p><el>input</el>要素の<att>type="checkbox"</att>と<att>type="radio"</att>では、<el>label</el>要素をその後に配置することに注意する。</p>
+    <p>この達成方法の目的は、フォーム・コントロールとラベルを明示的に関連付けるために、<el>label</el> 要素を利用することである。ラベルは、<el>label</el> 要素の <att>for</att> 属性によって特定のフォーム・コントロールと結びつけることができる。この場合、<att>for</att> 属性値はフォーム・コントロールの <att>id</att> 属性値と同じでなければならない。</p>
+    <p><att>id</att> 属性が <att>name</att> 属性と同じ値で、両方とも指定しなければならない場合でも、その <att>id</att> はそのウェブページ内で一意的なものとして、重複して使用してはならない。</p>
+    <p>この達成方法は、<el>label</el> 要素が見えているかどうか、つまり CSS で非表示にしているかどうかに関わらず、達成基準 1.1.1、1.3.1、4.1.2 を満たすことができる。しかし、達成基準 3.3.2 では、<el>label</el> 要素を入力フィールドの理解に役立てたい全ての利用者のために、見える状態にしておかなければならない、としている。</p>
+    <p>ラベルまたはコントロールをクリックするとコントロールがアクティブなるため、コントロールのクリック可能な領域を大きくすることは、この達成方法の更なるメリットである。これは運動制御が不十分な利用者に役立つ。</p>
+    <p><el>input</el> 要素の <att>type="checkbox"</att> と <att>type="radio"</att> では、<el>label</el> 要素をその後に配置することに注意する。</p>
     <note><p class="prefix">
 	明示的なラベルを利用する要素は次の通りである：</p>
      <ulist>
@@ -41,18 +42,18 @@
         <item><p><code>select</code></p></item>
       </ulist>
     <p class="prefix">
-     次の場合には、<el>label</el>要素は利用<emph role="bold">しない</emph>。これらの要素に対するラベルは、<att>value</att>属性（送信ボタン及びリセットボタン）、<att>alt</att>属性（画像ボタン）、又は要素それ自体の内容（汎用ボタン）を介して提供されるからである。</p>
+     次の場合には、<el>label</el> 要素は利用<emph role="bold">しない</emph>。これらの要素に対するラベルは、<att>value</att> 属性（送信ボタン及びリセットボタン）、<att>alt</att> 属性（画像ボタン）、又は要素それ自体の内容（汎用ボタン）を介して提供されるからである。</p>
       <ulist>
-        <item><p>送信及びリセットボタン（<code>input type="submit"</code>又は<code>input type="reset"</code>）</p></item>
+        <item><p>送信及びリセットボタン（<code>input type="submit"</code> 又は <code>input type="reset"</code>）</p></item>
         <item><p>画像ボタン（<code>input type="image"</code>）</p></item>
         <item><p>隠しフィールド（<code>input type="hidden"</code>）</p></item>
-        <item><p>スクリプトボタン（<code>button</code>要素又は<code>input type="button"</code>）</p></item>
+        <item><p>スクリプトボタン（<code>button</code> 要素又は <code>input type="button"</code>）</p></item>
       </ulist></note>
   </description>
    <examples>
       <eg-group>
       <head>テキスト入力フィールド</head>
-      <description><p>この事例では、テキスト入力フィールドに「お名前」という明示的なラベルが付けてある。<el>label</el>要素の<att>for</att>属性値は、<el>input</el>要素の<att>id</att>属性値と一致している。</p>
+      <description><p>この事例では、テキスト入力フィールドに「お名前」という明示的なラベルが付けてある。<el>label</el> 要素の <att>for</att> 属性値は、<el>input</el> 要素の <att>id</att> 属性値と一致している。</p>
 </description>
       <code role="html401"><![CDATA[<label for="firstname">お名前:</label> 
 <input type="text" name="firstname" id="firstname" /> ]]></code>
@@ -65,7 +66,7 @@
     <eg-group>
       <head>ラジオボタンのグループ</head>
       <description><p>関連するラジオボタンの小さなグループについて、簡単な説明が付けてあり、さらに個々の要素にラベルが付けてある。</p>
-<note>ラジオボタンの数が多く、それらの関連付けや操作説明を必要とする場合は、<specref ref="H71"/> の方法を考慮すべきである。</note>
+<note>ラジオボタンの数が多く、それらの関連付けや操作説明を必要とする場合は、<specref ref="H71"/>の方法を考慮すべきである。</note>
 </description>
       <code role="html401"><![CDATA[<h1>ドーナツ</h1>
 
@@ -107,35 +108,35 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページ内の<att>type="text"</att>、<att>type="file"</att>、<att>type="password"</att>を指定した<el>input</el>要素、<el>textarea</el>要素、<el>select</el>要素全てについて：</p>
+      <p>ウェブページ内の <att>type="text"</att>、<att>type="file"</att>、<att>type="password"</att> を指定した <el>input</el> 要素、<el>textarea</el> 要素、<el>select</el> 要素全てについて：</p>
       <olist>
         <item>
-          <p><el>input</el>要素、<el>textarea</el>要素及び<el>select</el>要素の前に、そのコントロールの目的が特定できる<el>label</el>要素がある。</p>
+          <p><el>input</el> 要素、<el>textarea</el> 要素及び <el>select</el> 要素の前に、そのコントロールの目的が特定できる <el>label</el> 要素がある。</p>
         </item>
         <item>
-          <p><el>label</el>要素の<att>for</att>属性値が、<el>input</el>要素、<el>textarea</el>要素及び<el>select</el>要素の<el>id</el>と一致している。</p>
+          <p><el>label</el> 要素の <att>for</att> 属性値が、<el>input</el> 要素、<el>textarea</el> 要素及び <el>select</el> 要素の <el>id</el> と一致している。</p>
         </item>
         <item>
-          <p><el>label</el>要素のラベルが視覚的に認識できる状態である。</p>
+          <p><el>label</el> 要素のラベルが視覚的に認識できる状態である。</p>
         </item>
       </olist>
-      <p>ウェブページ内の<att>type="checkbox"</att>及び<att>type="radio"</att>を指定した<el>input</el>要素全てについて：</p>
+      <p>ウェブページ内の <att>type="checkbox"</att> 及び <att>type="radio"</att> を指定した <el>input</el> 要素全てについて：</p>
       <olist>
         <item>
-          <p><el>input</el>要素の後に、そのコントロールの目的が特定できる<el>label</el>要素があるか確認する。</p>
+          <p><el>input</el> 要素の後に、そのコントロールの目的が特定できる <el>label</el> 要素があるか確認する。</p>
         </item>
         <item>
-          <p><el>label</el>要素の<att>for</att>属性が、<el>input</el>要素の<att>id</att>属性と一致している。</p>
+          <p><el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性と一致している。</p>
         </item>
         <item>
-          <p><el>label</el>要素のラベルが視覚的に認識できる状態である。</p>
+          <p><el>label</el> 要素のラベルが視覚的に認識できる状態である。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1.及び2.を満たしている。達成基準 3.3.2に関しては、3.も満たしている。</p>
+          <p>1.及び2.を満たしている。達成基準 3.3.2 に関しては、3.も満たしている。</p>
         </item>
       </ulist>
       </expected-results>
