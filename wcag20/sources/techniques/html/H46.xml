@@ -4,7 +4,7 @@
 <technique id="H46">
    <short-name><el>embed</el> 要素と一緒に <el>noembed</el> 要素を用いる</short-name>
    <applicability>
-      <p>Documents that load plugins with the <el>embed</el> element.</p>
+      <p><el>embed</el> 要素でプラグインを読み込むドキュメント</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -22,29 +22,20 @@
       </ua-issue>
    </ua-issues>
    <description id="noembed_desc">
-      <p>The objective of this technique is to provide alternative content for the
-            <el>embed</el> element in a <el>noembed</el> element. The <el>noembed</el> is rendered
-            only if the <el>embed</el> is not supported. While it can be positioned anywhere on the
-            page, it is a good idea to include it as a child element of <el>embed</el> so that it is
-            clear to assistive technologies that a text alternative is associated with the
-            <el>embed</el> element it describes.</p>
+      <p>この実装方法の目的は、<el>embed</el> 要素の代替コンテンツとして <el>noembed</el> を提供することである。<el>noembed</el> 要素は <el>embed</el> 要素がサポートされていない場合のみレンダリングされる。ページのどこにでも配置できるが、<el>embed</el> 要素の子要素として組み込むことを推奨する。これにより代替テキストが <el>embed</el> 要素に付与されてることで補助技術が明らかになる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>
-							     <el>noembed</el> is provided inside an <el>embed</el>
-						   </head>
+         <head><el>noembed</el> 要素が <el>embed</el> 要素の内側にある</head>
          <code><![CDATA[<embed src="../movies/history_of_rome.mov"
   height="60" width="144" autostart="false">
   <noembed>
-    <a href="../transcripts/transcript_history_rome.htm">Transcript of "The history of Rome"</a>
+    <a href="../transcripts/transcript_history_rome.htm">"ローマの歴史"のコピー</a>
   </noembed>
 </embed>]]></code>
       </eg-group>
       <eg-group>
-         <head>
-							     <el>noembed</el> is provided beside an <el>embed</el>
-						   </head>
+         <head><el>noembed</el> 要素が <el>embed</el> 要素のそばにある</head>
          <code><![CDATA[<embed src="moviename.swf" width="100" height="80"
   pluginspage="http://example.com/shockwave/download/" />
 <noembed>
@@ -59,18 +50,17 @@
       <procedure>
          <olist>
             <item>
-               <p>Check if <el>embed</el> element has a child <el>noembed</el> element </p>
+               <p><el>embed</el> 要素に子 <el>noembed</el> 要素があるかどうかを確認する</p>
             </item>
             <item>
-               <p>Check if <el>embed</el> element has a <el>noembed</el> element that
-                  immediately follows it. </p>
+               <p><el>embed</el> 要素の直下に <el>noembed</el> 要素があるかどうかを確認する</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 is true or #2 is true </p>
+               <p>1. 又は2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
