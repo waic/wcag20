@@ -579,9 +579,9 @@
 		<div class="ua-issues">
 			<xsl:call-template name="copy-common-atts"/>
 			<xsl:choose>
-    <xsl:when test="$slices=1"><h2 class="small-head" id="{$uanumber}">ユーザーエージェント及び支援技術によるサポート</h2></xsl:when>
-    <xsl:when test="$bytech=1"><h3 class="small-head" id="{$uanumber}">ユーザーエージェント及び支援技術によるサポート</h3></xsl:when>
-    <xsl:otherwise><h4 class="small-head" id="{$uanumber}">ユーザーエージェント及び支援技術によるサポート</h4></xsl:otherwise>
+    <xsl:when test="$slices=1"><h2 class="small-head" id="{$uanumber}">ユーザエージェント及び支援技術によるサポート</h2></xsl:when>
+    <xsl:when test="$bytech=1"><h3 class="small-head" id="{$uanumber}">ユーザエージェント及び支援技術によるサポート</h3></xsl:when>
+    <xsl:otherwise><h4 class="small-head" id="{$uanumber}">ユーザエージェント及び支援技術によるサポート</h4></xsl:otherwise>
   </xsl:choose>
 			
 			<p>See <a href="/WAI/WCAG20/Techniques/ua-notes/{ancestor::div1/@id}#{ancestor::technique/@id}">User Agent Support Notes for <xsl:value-of select="ancestor::technique/@id"/></a>.<xsl:if test="ancestor::div1/div2"> Also see <a><xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="ancestor::div1/div2[1]"/></xsl:call-template></xsl:attribute><xsl:value-of select="ancestor::div1/div2[1]/head"/></a>.</xsl:if></p>
