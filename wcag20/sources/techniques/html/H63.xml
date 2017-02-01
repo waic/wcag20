@@ -17,26 +17,26 @@
 </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、<att>scope</att>属性を利用して見出しセルとデータセルを関連付けることである。<att>scope</att>属性を利用するのは、見出しとして利用するあらゆるセルが及ぶ範囲を明確にするためである。範囲とは、そのセルが行、列、行グループ、列グループのどの見出しであるかを特定するものである。<code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code>という値によって範囲を特定することになる。</p>
-    <p>事例 1のように、見出しが1行目や1列目にない単純なテーブルに対してこの達成方法が利用できる。今日のスクリーンリーダーのサポートを考えると、単純なテーブルについて次の2つの状況が当てはまる場合に、この達成方法の利用が示唆される：</p>
+    <p>この達成方法の目的は、<att>scope</att> 属性を利用して見出しセルとデータセルを関連付けることである。 <att>scope</att> 属性を利用するのは、見出しとして利用するあらゆるセルが及ぶ範囲を明確にするためである。範囲とは、そのセルが行、列、行グループ、列グループのどの見出しであるかを特定するものである。<code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code> という値によって範囲を特定することになる。</p>
+    <p>事例 1 のように、見出しが 1 行目や 1 列目にない単純なテーブルに対してこの達成方法が利用できる。今日のスクリーンリーダーのサポートを考えると、単純なテーブルについて次の 2 つの状況が当てはまる場合に、この達成方法の利用が示唆される：</p>
     <ulist>
       <item>
-        <p><el>td</el>要素でマークアップしてあるデータセルが、行見出し又は列見出しとしても機能する場合</p>
+        <p><el>td</el> 要素でマークアップしてあるデータセルが、行見出し又は列見出しとしても機能する場合</p>
       </item>
       <item>
-        <p><el>th</el>要素ではなく<el>td</el>要素でマークアップしてある見出しセルがある場合、コンテンツ制作者は、CSSでコントロールする方法があるがそれを採用せず、<el>th</el>要素の表示特性を避けるために<el>td</el>要素でマークアップすることがある。</p>
+        <p><el>th</el> 要素ではなく <el>td</el> 要素でマークアップしてある見出しセルがある場合、コンテンツ制作者は、CSS でコントロールする方法があるがそれを採用せず、<el>th</el> 要素の表示特性を避けるために <el>td</el> 要素でマークアップすることがある。</p>
       </item>
     </ulist>
-    <note><p class="prefix">1行目や1列目に見出しがある単純なテーブルについては、<att>scope</att>属性を指定せずに<att>th</att>要素を利用するだけで十分である。</p>
-    </note>
     <note>
-      <p class="prefix">複雑なテーブルについては、<specref ref="H43"/> の通り、<att>id</att>属性と<att>headers</att>属性を利用する。</p>
+      <p>1 行目や 1 列目に見出しがある単純なテーブルについては、<att>scope</att> 属性を指定せずに <att>th</att> 要素を利用するだけで十分である。</p>
+      <p>複雑なテーブルについては、<specref ref="H43"/>の通り、<att>id</att> 属性と <att>headers</att> 属性を利用する。</p>
+       <p>1つの複雑な表よりも、単純な複数の表を用いて作業するほうが簡単だと思う利用者もいるだろう。制作者は、複雑な表を1つ以上の単純な表に変換できるかどうかを検討したい場合がある。</p>
     </note>
   </description>
    <examples>
       <eg-group>
       <head>単純なスケジュール表</head>
-      <description><p>次のコード例では、1列目にテーブルの行番号を示す連番が含まれている。行の中でも重要な値は2列目に含まれるため、各セルに<code>scope="row"</code>と指定してある。1行目のセルは<code>td</code>要素でマークアップし、これらにも<code>scope="col"</code>と指定してある。</p>
+      <description><p>次のコード例では、1 列目にテーブルの行番号を示す連番が含まれている。行の中でも重要な値は 2 列目に含まれるため、各セルに<code>scope="row"</code> と指定してある。1 行目のセルは <code>td</code> 要素でマークアップし、これらにも <code>scope="col"</code> と指定してある。</p>
 </description>
       <code role="html401"><![CDATA[<table border="1">
   <caption>連絡先</caption>
@@ -100,13 +100,13 @@
       <p>各データテーブルについて：</p>
       <olist>
         <item>
-          <p><el>th</el>要素全てに、<att>scope</att>属性が指定されている。</p>
+          <p><el>th</el> 要素全てに、<att>scope</att> 属性が指定されている。</p>
         </item>
         <item>
-          <p>他の要素の見出しとしての役割を果たす全ての<el>td</el>要素に、<att>scope</att>属性が指定されている。</p>
+          <p>他の要素の見出しとしての役割を果たす全ての <el>td</el> 要素に、<att>scope</att> 属性が指定されている。</p>
         </item>
         <item>
-          <p>全ての<att>scope</att>属性に、値として<code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code>が指定されている。</p>
+          <p>全ての <att>scope</att> 属性に、値として <code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code> が指定されている。</p>
         </item>
       </olist>
     </procedure>
