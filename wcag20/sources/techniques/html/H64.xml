@@ -4,7 +4,7 @@
 <technique id="H64">
    <short-name>frame 要素及び iframe 要素の title 属性を使用する</short-name>
    <applicability>
-      <p><el>frame</el>要素又は<el>iframe</el>要素を用いているHTML及びXHTMLドキュメント</p>
+      <p><el>frame</el> 要素又は <el>iframe</el> 要素を用いている HTML 及び XHTML ドキュメント</p>
    </applicability>
    <applies-to>
       <success-criterion idref="navigation-mechanisms-skip" relationship="cosufficient"/>
@@ -16,13 +16,14 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、フレームの内容を説明するための、<el>frame</el>要素又は<el>iframe</el>要素での<att>title</att>属性の使用方法を示すことである。<att>title</att>属性はフレームのラベルを提供するものなので、利用者はどのフレームの中に入ってその詳細を見て回るかどうかを判断できる。<att>title</att>属性は、フレームセットの中の個々のページ（<el>frame</el>要素）やインラインフレーム（<el>iframe</el>要素）のラベルを付けるものではない。</p>
+    <p>この達成方法の目的は、フレームの内容を説明するための、<el>frame</el> 要素又は <el>iframe</el> 要素での <att>title</att> 属性の使用方法を示すことである。<att>title</att> 属性はフレームのラベルを提供するものなので、利用者はどのフレームの中に入ってその詳細を見て回るかどうかを判断できる。<att>title</att> 属性は、フレームセットの中の個々のページ（<el>frame</el> 要素）やインラインフレーム（<el>iframe</el> 要素）のラベルを付けるものではない。</p>
     <p><att>title</att>属性はフレームにラベルを付けるものであって、文書にラベルを付ける<att>title</att>要素とは異なることに注意しよう。<att>title</att>属性は利用者が複数のフレームの間を移動しやすくし、また<att>title</att>要素は利用者の現在位置を明確にするものであり、双方を提供すべきである。</p>
-    <p><att>title</att>属性を<att>name</att>属性に置き換えることはできない。<att>title</att>属性は利用者のためにフレームにラベルを付けるものであるのに対して、<att>name</att>属性はスクリプトによる操作やウィンドウのターゲットを決めるためにフレームにラベルを付けるものだからである。つまり、<att>name</att>属性は利用者に提供されるものではなく、<att>title</att>属性だけがその役割を果たしている。</p>
+    <p><att>title</att> 属性を <att>name</att> 属性に置き換えることはできない。<att>title</att> 属性は利用者のためにフレームにラベルを付けるものであるのに対して、<att>name</att> 属性はスクリプトによる操作やウィンドウのターゲットを決めるためにフレームにラベルを付けるものだからである。つまり、<att>name</att> 属性は利用者に提供されるものではなく、<att>title</att> 属性だけがその役割を果たしている。</p>
+    <p>HTML5 では、<el>frame</el> 要素が廃止されている。<el>iframe</el> 要素は未だに HTML5 仕様の一部である。</p>
   </description>
    <examples>
      <eg-group>
-      <description><p>この事例は、ナビゲーションバーと主要コンテンツを別の文書として読み込んでいるフレームそれぞれを説明するために、<el>frame</el>要素に<att>title</att>属性を指定する方法を示している。</p>
+      <description><p>この事例は、ナビゲーションバーと主要コンテンツを別の文書として読み込んでいるフレームそれぞれを説明するために、<el>frame</el> 要素に <att>title</att> 属性を指定する方法を示している。</p>
 </description>
       <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -41,7 +42,7 @@
 </html> ]]></code>
     </eg-group>
     <eg-group>
-      <description><p>この事例は、インラインフレームの内容を説明するために、<el>iframe</el>要素に<att>title</att>属性を指定する方法を示している。さらに、<el>iframe</el>要素を解釈できない古いブラウザのために、読み込むページへの代替リンクを<el>iframe</el>要素の内容に含めてある。</p>
+      <description><p>この事例は、インラインフレームの内容を説明するために、<el>iframe</el> 要素に <att>title</att> 属性を指定する方法を示している。さらに、<el>iframe</el> 要素を解釈できない古いブラウザのために、読み込むページへの代替リンクを <el>iframe</el> 要素の内容に含めてある。</p>
 </description>
       <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -81,10 +82,10 @@
      <procedure>
       <olist>
         <item>
-          <p>HTML又はXHTMLのソースコードにある<el>frame</el>要素と<el>iframe</el>要素のそれぞれに、<att>title</att>属性が指定されている。</p>
+          <p>HTML 又は XHTML のソースコードにある <el>frame</el> 要素と <el>iframe</el> 要素のそれぞれに、<att>title</att> 属性が指定されている。</p>
         </item>
         <item>
-          <p><att>title</att>属性の値として、そのフレームを特定できるテキストがある。</p>
+          <p><att>title</att> 属性の値として、そのフレームを特定できるテキストがある。</p>
         </item>
       </olist>
     </procedure>
