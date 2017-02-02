@@ -4,7 +4,7 @@
 <technique id="H89">
    <short-name>コンテキストに応じたヘルプを提供するために、title 属性を使用する</short-name>
    <applicability>
-      <p>HTML and XHTML </p>
+      <p>HTML 及び XHTML </p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
@@ -31,30 +31,29 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide context sensitive help for users as they enter data in forms by providing the help information in a <att>title</att> attribute. The help may include format information or examples of input. </p>
+      <p>この達成方法の目的は、<att>title</att> 属性にヘルプ情報を提供することで、フォームにデータを入力する利用者にコンテキストに応じたヘルプを提供することである。ヘルプは書式情報もしくは入力例を含んでもよい。</p>
       <note>
-         <p>Current user agents and assistive technologies do not always provide the information contained in the <att>title</att> attribute to users. Avoid using this technique in isolation until the <att>title</att> attribute has wide-spread support. </p>
+         <p>現在のユーザエージェントおよび支援技術は <att>title</att> 属性に含まれた情報を利用者に常には提供しない。<att>title</att> 属性が広範囲にサポートされるまではこの達成方法を単独で利用することは避けるべきである。</p>
       </note>
    </description>
    <examples>
       <eg-group>
          <description>
-            <p>A mapping application provides a form consisting of a label "Address:", an input box and a submit button with value "Find map". The input box has a <att>title</att> attribute value with an example of the address format the user should enter. </p>
+            <p>地図検索アプリケーションはラベル"住所:"で構成されるフォームと、入力ボックスと、"地図検索"という値の実行ボタンを提供する。インプットボックスは利用者が入力するアドレス書式の例を <att>title</att> 属性に持つ。</p>
          </description>
          <code><![CDATA[
-<label for="searchAddress">Address: </label>
+<label for="searchAddress">住所: </label>
 <input id="searchAddress" type="text" size="30" value="" name="searchAddress" 
- title="Address example: 101 Collins St, Melbourne, Australia" />
+ title="ドレスの例: 101 Collins St, Melbourne, Australia" />
              ]]></code>
       </eg-group>
       <eg-group>
          <description>
-            <p>A form that allows users to pay their bill online requires the user to enter their account number. The input box associated with the "Account number" label has a <att>title</att> attribute providing information on locating the account number. </p>
+            <p>利用者が請求書をオンラインで支払うことを可能にするフォームでは、利用者は自分の口座番号を入力する必要がある。ラベル「口座番号」がついたインプットボックスは、口座番号の特定に関する情報を提供する　<att>title</att> 属性を持つ。</p>
          </description>
          <code><![CDATA[
-<label for="accNum1">Account number: </label>
-<input id="accNum1" type="text" size="10" value="" title="Your account number 
- can be found in the top right-hand corner of your bill." />
+<label for="accNum1">口座番号: </label>
+<input id="accNum1" type="text" size="10" value="" title="口座番号は、請求書の右上隅に表示されます。" />
              ]]></code>
       </eg-group>
    </examples>
@@ -66,20 +65,20 @@
       <procedure>
          <olist>
             <item>
-               <p>Identify form controls that require text input. </p>
+               <p>テキスト入力を要求しているフォーム・コントロールを識別する。</p>
             </item>
             <item>
-               <p>Check that each form control has an explicitly associated label </p>
+               <p>各フォーム・コントロールに明示的に関連付けられたラベルがあることを確認する。</p>
             </item>
             <item>
-               <p>Check that each form control has context-sensitive help provided in the <att>title</att> attribute. </p>
+               <p>各フォーム・コントロールがコンテキストに応じたヘルプを <att>title</att> 属性で提供していることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Checks #2 and #3 are true.</p>
+               <p>上記 2. 及び 3.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
