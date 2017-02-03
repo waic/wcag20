@@ -14,16 +14,16 @@
 		<note><p>While this is currently an advisory technique, if it becomes a sufficient technique it will be sufficient for success criterion 1.2.7 only if the user agent has the ability to pause the video to allow the extended audio description to play completely without overlapping other important audio in the primary program.</p></note>
    </applies-to>
    <description>
-      <p>The objective of this technique is to use the HTML5 <el>track</el> element to specify a descriptions timed text track for a <el>video</el> element. Audio description timed text tracks contain textual descriptions of the video component of the media resource, intended for audio synthesis when the visual component is obscured, unavailable, or not usable. The user agent makes the cues available to the user in a non-visual fashion, for instance, by synthesizing them into speech.</p>
-		<p>The <att>src</att> attribute of the <el>track</el> element is an URL providing the text track data.</p>
-		<p>The audio description cues must fit into the gaps available in the audio component of the media resource. If there is not enough time to synthesize the description text in the track cue's time interval, user agents may truncate the speech. This limits the amount of supplementary information that can be added.</p>
-<p>User agents may also support extended audio descriptions by halting the video until the description has been completely synthesized, then restarting the video.</p>
+      <p>この達成方法の目的は、タイミングを指定したテキストの音声解説トラックを <el>video</el> 構成要素に指定するために HTML5 <el>track</el> 要素を用いることである。タイミングの指定されたテキストの音声解説トラックは、視覚的な構成要素が隠れていたり、使えなかったり、使うのに不適であったりしたときの音声合成のための、メディア資源のビデオ構成要素のテキスト記述を含む。ユーザエージェントは視覚的でない方法で、例えばそれらを音声合成することによって、利用者にきっかけを使えるようにする。</p>
+		<p><el>track</el> 要素の <att>src</att> 属性は URL であり、これはテキストトラックデータのアドレスである。</p>
+		<p>音声解説のきっかけは、メディア資源の聴覚的な構成要素で利用可能なギャップに収まる必要がある。トラックキューの時間間隔内に記述テキストを合成するのに十分な時間がない場合、ユーザエージェントはスピーチを切り捨てることがある。 これにより、追加可能な補足情報の量が制限される。</p>
+<p>ユーザエージェントは、解説が完全に同期するまでビデオを一時停止し、そしてビデオを再開することで拡張音声解説もサポートしうる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Audio description in one language</head>
+         <head>複数言語における音声解説</head>
          <description>
-            <p>A <el>video</el> element for a video in the English language. The audio descriptions are provided in the WebVTT format.</p>
+            <p>英語ビデオのための <el>video</el> 要素。音声解説は WebVTT フォーマットで提供されている。</p>
          </description>
          <code role="html5"><![CDATA[
 			 <video poster="myvideo.png" controls>
@@ -33,9 +33,9 @@
             ]]></code>
       </eg-group>
       <eg-group>
-         <head>Audio description in multiple languages</head>
+         <head>複数言語における音声解説</head>
          <description>
-            <p>A <el>video</el> element for a video with both an English and French language source element, and with an English and a French audio description track using the WebVTT (vtt) file format.</p>
+            <p>ビデオに英語とフランス語両方のソース要素を含み、WevVTT (vtt) ファイルフォーマットを使った英語とフランス語の音声解説を持つ <el>video</el> 要素。</p>
          </description>
          <code role="html5"><![CDATA[
 			 <video poster="myvideo.png" controls>
@@ -46,9 +46,9 @@
 			  </video>            ]]></code>
       </eg-group>
       <eg-group>
-         <head>Captions in multiple languages</head>
+         <head>一つの言語におけるキャプション</head>
          <description>
-            <p>A <el>video</el>, "Google self-driving car". with an audio description track.</p>
+            <p>音声解説トラックを持つ「グーグル自動走行車」の <el>video</el>。</p>
          </description>
          <code role="html5"><![CDATA[
 			<video controls tabindex="1">
@@ -64,7 +64,7 @@
          <ulist>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/html/wg/drafts/html/CR/embedded-content-0.html#the-track-element">HTML5, the track element</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element">HTML5, the track element</loc>
                </p>
             </item>
             <item>
@@ -81,17 +81,17 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For each <el>video</el> element used to play a video:</p>
+         <p>ビデオを再生するための各 <el>video</el> 要素において:</p>
          <olist>
             <item>
-               <p>Check that the video contains a <el>track</el> element of <att>kind</att> descriptions in the language of the video.</p>
+               <p>ビデオが言語に応じた <att>kind</att> のキャプションの <el>track</el> 要素を含むことを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Check #1 is true.</p>
+               <p>上記 1. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
