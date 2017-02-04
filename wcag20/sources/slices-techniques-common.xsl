@@ -320,7 +320,7 @@
               <xsl:with-param name="prev" select="$prev"/>
               <xsl:with-param name="next" select="$next"/>
             </xsl:call-template>
-            <div class="div1">
+            <div class="div1"><xsl:text> </xsl:text>
               <xsl:apply-templates/>
             </div>
             <xsl:call-template name="navigation.bottom">
