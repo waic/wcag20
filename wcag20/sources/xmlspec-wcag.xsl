@@ -455,7 +455,7 @@
         	<head>
             <meta charset="UTF-8"/>
             <title>
-              <xsl:value-of select="//header/title"/>  | Techniques for WCAG 2.0
+              <xsl:value-of select="//header/title"/> | WCAG 2.0 達成方法集
             </title>
         		<xsl:call-template name="canonical-link"/>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
