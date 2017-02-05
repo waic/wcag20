@@ -669,7 +669,7 @@
 			<xsl:element name="p">
 				<!--BBC changed id="referenced" to class to avoid duplicate ID problem w/ validation -->
 				<xsl:attribute name="class">referenced</xsl:attribute>これは、次の達成基準に関連する<xsl:choose>
-      <xsl:when test="ancestor::div1[@role='failures']">failure不適合事例である:</xsl:when>
+      <xsl:when test="ancestor::div1[@role='failures']">失敗例である:</xsl:when>
       <xsl:otherwise>達成方法である:</xsl:otherwise>
     </xsl:choose></xsl:element>
 			<ul>
