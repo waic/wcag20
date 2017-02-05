@@ -727,7 +727,7 @@
 		<xsl:for-each select="$wcag-src//div3[@id=current()/@idref]">
 			<li>
 				<a href="{$gl-src//publoc/loc[@href]}#{$id}">
-					Conformance Requirement<xsl:text> </xsl:text><xsl:call-template name="cc-number"/> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>)
+					適合要件<xsl:text> </xsl:text><xsl:call-template name="cc-number"/> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>)
 				</a> 
 			</li>
 			<!--BBC Add a similar template below for htmrelates-->
