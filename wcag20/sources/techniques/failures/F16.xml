@@ -10,7 +10,7 @@
       <success-criterion idref="time-limits-pause" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この不適合事例では、動きのあるコンテンツ又はスクロールするコンテンツを利用者が一時停止したり再開したりすることができない。この場合、ロービジョンの利用者又は認知障害のある利用者のなかには、コンテンツを知覚できないことがある。</p>
+    <p>この失敗例では、動きのある又はスクロールするコンテンツを利用者が一時停止したり再開したりすることができない。この場合、ロービジョンの又は認知障害のある利用者のなかには、コンテンツを知覚できないことがある。</p>
   </description>
    <examples/>
    <related-techniques>
