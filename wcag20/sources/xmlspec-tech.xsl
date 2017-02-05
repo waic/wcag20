@@ -106,11 +106,11 @@
 					<xsl:call-template name="copy-common-atts"/>
 					<xsl:choose>
           <xsl:when test="$slices=1"><h3 class="small-head" id="{../../@id}-failex{$exnumber}">
-					不適合事例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h3></xsl:when>
+					失敗例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h3></xsl:when>
 					  <xsl:when test="$bytech=1"><h4 class="small-head" id="{../../@id}-failex{$exnumber}">
-					    不適合事例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h4></xsl:when>
+					    失敗例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h4></xsl:when>
           <xsl:otherwise><h5 class="small-head" id="{../../@id}-failex{$exnumber}">
-					不適合事例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h5></xsl:otherwise>
+					失敗例 <xsl:value-of select="$exnumber"></xsl:value-of><xsl:if test="head"><xsl:text>: </xsl:text></xsl:if><xsl:value-of select="head"></xsl:value-of></h5></xsl:otherwise>
         </xsl:choose>
 					
 							<div class="example">
