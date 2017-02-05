@@ -151,13 +151,13 @@
         </item>
       </olist>
       <note><p class="prefix">色と背景色は外部のスタイルシート又は継承ルールによって、先行する一連のセレクターのあらゆるレベルで指定することができる。</p>
-                  <p class="prefix">背景色はCSSの「background-image」プロパティ又は「background」（画像のURL、例えば、 'background: url("images/bg.gif")'）プロパティで背景画像を用いて
+                  <p class="prefix">背景色は CSS の「background-image」プロパティ又は「background」（画像の URL、例えば、'background: url("images/bg.gif")'）プロパティで背景画像を用いて
 指定されているかもしれない。背景画像があるとしても背景色を指定する必要がある。なぜならば利用者は
 ブラウザ上で画像を非表示にしているかもしれないからである。よって、背景画像と背景色をチェックする。</p>
                   </note>
     </procedure>
       <expected-results>
-         <p>2.を満たしているが 3.を満たしていない、又は、3.を満たしているが 2.を満たしていない場合、この不適合の条件が適用され、コンテンツは達成基準に不適合となる。</p>
+         <p>2. を満たしているが 3. を満たしていない、又は、3. を満たしているが 2. を満たしていない場合、この不適合の条件が適用され、コンテンツは達成基準に不適合となる。</p>
       </expected-results>
    </tests>
 </technique>

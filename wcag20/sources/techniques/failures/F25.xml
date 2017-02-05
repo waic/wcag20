@@ -10,7 +10,7 @@
       <success-criterion idref="navigation-mechanisms-title" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書は、ウェブページにページタイトルはあるが、そのページタイトルがウェブページのコンテンツ又は目的を示していないことによる不適合事例について述べている。</p>
+    <p>これは、ウェブページにページタイトルはあるが、そのページタイトルがウェブページのコンテンツ又は目的を示していないことによる失敗例について述べている。</p>
   </description>
    <examples>
       <eg-group role="failure">
