@@ -4,7 +4,7 @@
 <technique id="H73">
    <short-name>データテーブルの概要を提供するために、table 要素の summary 属性を使用する</short-name>
    <applicability>
-      <p>HTML 4.01及びXHTML 1.x</p>
+      <p>HTML 4.01 及び XHTML 1.x</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
