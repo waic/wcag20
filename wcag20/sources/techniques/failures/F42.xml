@@ -12,13 +12,13 @@
       <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この不適合は、JavaScriptのイベント・ハンドラが要素と関連づけられて「リンクをエミュレート」するときに起こる。この方法で作成されたコントロール又はリンクは、キーボードのタブで行き来できず、他のコントロールやリンクのようにキーボードでフォーカスできない。スクリプトのイベントがリンクをエミュレートするように使用されていた場合、支援技術を含むユーザエージェントはコンテンツ内のリンクをリンクとして認識できない可能性がある。支援技術にはインタラクティブなコントロールとして認識されないか、インタラクティブなコントロールとして認識されたとしても、リンクだとは認識されない可能性がある。そのような要素はユーザエージェントや支援技術によって生成されたリンクリストには表れない。</p>
-    <p><code><![CDATA[<a href>]]></code>及び<code><![CDATA[<area>]]></code>要素はリンクをマークアップするように意図されたものである。要素はリンクをマークアップすることを意図したものである。</p>
-    <p>例えば<el>span</el>及び<el>div</el>といった、通常インタラクティブではない要素にイベント・ハンドラを結びつけることは、多くの利用者を混乱させる。たとえそれらの要素へのキーボードアクセスが提供されていたとしても、利用者はコンテンツ内からインタラクティブなコントロールがあることを探し出すのが困難であるか、又はどのようなふるまいが期待されるのかを理解しづらい。例えば、利用者はその要素を有効にするために、どのキー操作がスクリプトでサポートされているかを知らないかもしれない。そのうえ、これらの要素はオペレーティングシステム共通のインタラクティブなイベントを生成しないので、利用者がそれらを有効にした場合に支援技術には伝わらない可能性がある。</p>
+    <p>この失敗は、JavaScript のイベントハンドラが、リンクをエミュレートするために要素に付加されている場合に発生する。この方法で作成されたリンクは、キーボードでタブ移動することができず、他のコントロール及び/又はリンクのようにキーボードでフォーカスを受け取れない。スクリプトのイベントがリンクをエミュレートするために使用される場合、支援技術を含むユーザエージェントは、コンテンツ内のリンクをリンクとして識別できないかもしれない。インタラクティブなコントロールとして認識されてもリンクとして認識されないかもしれない。そのような要素は、ユーザエージェントや支援技術によって生成されたリンクリストには現れない。</p>
+    <p><note>支援技術がリンクコントロールとして不明な要素を識別するために、ARIA <att>role</att> 属性を使用することは可能である。しかし、ARIA の最善の対応策としては、<loc href="http://www.w3.org/TR/aria-in-html/#first-rule-of-aria-use">可能な限りネイティブな要素を使用すること</loc>が求められ、不明な要素をリンクとして識別するために <att>role</att> 属性を使用することは推奨しない。</note></p>
+    <p><el>a</el> と <el>area</el> 要素は、リンクをマークアップするためのものである。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <head><![CDATA[<span>]]>要素のスクリプト</head>
+      <head><el>span</el> 要素のスクリプト</head>
       <description><p>スクリプトによるイベントハンドリングが<code>span</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
       <code role="html401"><![CDATA[
@@ -27,16 +27,16 @@
 </span>]]></code>
     </eg-group>
     <eg-group role="failure">
-      <head><![CDATA[<img>]]> 要素のスクリプト</head>
+      <head><el>img</el> 要素のスクリプト</head>
       <description><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
       <code role="html401"><![CDATA[
-src="go.gif" 
+<img src="go.gif" 
    alt="新しいページへ移動" 
-   onclick="this.location.href='newpage.html'"]]></code>
+   onclick="this.location.href='newpage.html'">]]></code>
     </eg-group>
     <eg-group role="failure">
-      <head><![CDATA[<img>]]>要素のスクリプトにキーボードサポートのあるもの</head>
+      <head>キーボードサポートがある <el>img</el> 要素のスクリプト</head>
       <description><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合にはEnterキーで機能する。それでもなお、この要素はリンクとしては認識されない。</p>
 </description>
       <code role="html401"><![CDATA[
@@ -67,7 +67,7 @@ function doKeyPress(url)
 </p>]]></code>
     </eg-group>
     <eg-group role="failure">
-      <head><![CDATA[<div>]]>要素のスクリプト</head>
+      <head><el>div</el> 要素のスクリプト</head>
       <description><p>この例では、<code>div</code>要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベント・ハンドラをマークアップから切り離しているが、この<code>div</code>要素は支援技術にリンクとして認識されない。</p>
 </description>
       <code role="html401"><![CDATA[
@@ -100,7 +100,7 @@ function changeLocation(objEvent, strLocation)
 
 	window.location.href = strLocation;
 }]]></code>
-      <description><p><el>div</el>要素のためのマークアップ：</p>
+      <description><p><el>div</el> 要素のためのマークアップ：</p>
 </description>
       <code role="html401"><![CDATA[
 <div id="linklike">
@@ -122,22 +122,24 @@ function changeLocation(objEvent, strLocation)
    </resources>
    <related-techniques>
       <relatedtech idref="G115"/>
+      <relatedtech idref="F59"/>
    </related-techniques>
    <tests>
       <procedure>
+       <p>要素がリンクをエミュレートするために JavaScript のイベントハンドラを使用したリンクとして提示されるすべての要素について:</p>
       <olist>
         <item>
-          <p>リンクをエミュレートしている要素に関連付けられたJavaScriptのイベント・ハンドラがあるかどうかを確認する。</p>
+          <p>プログラムによって解釈された要素のロールがリンクかどうかを確認する。</p>
         </item>
         <item>
-          <p>その要素のプログラムで解釈可能なロールが<em>リンク</em>であるかを確認する。</p>
+          <p>エミュレートされたリンクについて、キーボード操作で有効にできるかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしていて、2.を満たしていない場合、この不適合条件が適用され、コンテンツは達成基準に不適合となる。</p>
+               <p>1. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 1.3.1及び 4.1.2を満たしていないことになる。2. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 2.1.1及び 2.1.3を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>
