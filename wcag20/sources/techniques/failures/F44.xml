@@ -10,13 +10,13 @@
       <success-criterion idref="navigation-mechanisms-focus-order" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書は、タブ順序がコンテンツの論理的な関係性及び順序に従っていない不適合事例について述べている。</p>
-    <p>リンク及びフォーム要素のようなフォーカス可能な要素には、<att>tabindex</att>属性がある。要素は、<att>tabindex</att>属性の値が小さいものから大きいものへという順序でフォーカスを受け取る。<att>tabindex</att>属性の値が、コンテンツ内での関係性及び順序とは異なる順序で割り当てられていると、もはやタブ順序はコンテンツの関係性及び順序に従っていないことになる。</p>
-    <p>この不適合事例は、以前より<att>tabindex</att>属性が用いられてきたページを編集する際に最もよく起こる。コンテンツが編集されているのに、<att>tabindex</att>属性がコンテンツの変更に応じて更新されていないと、タブ順序及びコンテンツの順序が一致しなくなる。</p>
+    <p>この文書は、タブ順序がコンテンツの論理的な関係性及び順序に従っていない失敗例について述べている。</p>
+    <p>リンク及びフォーム要素のようなフォーカス可能な要素には、<att>tabindex</att> 属性がある。要素は、<att>tabindex</att> 属性の値が小さいものから大きいものへという順序でフォーカスを受け取る。<att>tabindex</att> 属性の値が、コンテンツ内での関係性及び順序とは異なる順序で割り当てられていると、もはやタブ順序はコンテンツの関係性及び順序に従っていないことになる。</p>
+    <p>この失敗例の最も一般的な原因の1つは、<att>tabindex</att> が使用されているページを編集するときに発生する。コンテンツが編集されても、<att>tabindex</att> 属性がコンテンツの変更を反映するように更新されない場合、タブの順序とコンテンツの順序が一致しなくなり易い。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次の事例は、代替のタブ順序を指定するためにtabindexを誤って用いている。</p>
+      <description><p>次の事例は、代替のタブ順序を指定するために tabindex を誤って用いている。</p>
 </description>
       <code role="html401"><![CDATA[
 <phrase diff="chg"><ol></phrase>
@@ -25,13 +25,11 @@
    <li><a href="chapter2.html" tabindex="3">第2章</a></li>
    <li><a href="chapter3.html" tabindex="2">第3章</a></li>
 <phrase diff="chg"></ol></phrase>]]></code>
-      <description><p>このリストをTabキーを用いてナビゲートする場合、リストは、ホーム、第3章、第2章、第1章、という順序でナビゲートされ、コンテンツにおける順序通りではなくなってしまう。</p>
+      <description><p>このリストを Tab キーを用いてナビゲートする場合、リストは、ホーム、第 3 章、第 2 章、第 1 章、という順序でナビゲートされ、コンテンツにおける順序通りではなくなってしまう。</p>
 </description>
     </eg-group>
     <eg-group role="failure">
-      <description><p>すべてのテキストフィールドに対して<code>tabindex</code>属性を提供することによって、ウェブページでのタブ順序が明確に設定されていた。
-					 後に、そのページには新しいテキストフィールドがページの中央付近に追加されたが、コンテンツ制作者はその新しいテキストフィールドに<att>tabindex</att>属性を付加し忘れてしまった。
-					 結果として、新しいテキストフィールドのタブ順序がそのページの最後になってしまっている。</p>
+      <description><p>すべてのテキストフィールドに対して <code>tabindex</code> 属性を提供することによって、ウェブページでのタブ順序が明確に設定されていた。後に、そのページには新しいテキストフィールドがページの中央付近に追加されたが、コンテンツ制作者はその新しいテキストフィールドに <code>tabindex</code> 属性を付加し忘れてしまった。結果として、新しいテキストフィールドのタブ順序がそのページの最後になってしまっている。</p>
 </description>
     </eg-group>
    </examples>
@@ -53,14 +51,14 @@
       <procedure>
       <olist>
         <item>
-          <p><att>tabindex</att>属性を用いている場合、<att>tabindex</att>属性によって指定されているタブ順序がコンテンツの関係性に従っている。</p>
+          <p><code>tabindex</code> 属性を用いている場合、<code>tabindex</code> 属性によって指定されているタブ順序がコンテンツの関係性に従っている。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準に不適合となる。</p>
+               <p>1. を満たしていない場合、この失敗基準が適用され、そのコンテンツは達成基準に不適合となる。</p>
             </item>
          </ulist>
       </expected-results>
