@@ -26,7 +26,7 @@
 &lt;img src="go.gif" 
    alt="新しいページへ移動" 
    onclick="this.location.href='newpage.html'"&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F42-failex3">
-					失敗例 3: キーボードサポートがある img 要素のスクリプト</h3><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合にはEnterキーで機能する。それでもなお、この要素はリンクとしては認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 3: キーボードサポートがある img 要素のスクリプト</h3><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合には Enter キーで機能する。それでもなお、この要素はリンクとしては認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 function doNav(url)
 {
    window.location.href = url;
@@ -49,7 +49,7 @@ function doKeyPress(url)
 		onkeypress="doKeyPress('viewbargains.html');"
 	&gt;
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F42-failex4">
-					失敗例 4: div 要素のスクリプト</h3><div class="example"><div class="textbody"><p>この例では、<code>div</code>要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベント・ハンドラをマークアップから切り離しているが、この<code>div</code>要素は支援技術にリンクとして認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 4: div 要素のスクリプト</h3><div class="example"><div class="textbody"><p>この例では、<code>div</code> 要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベントハンドラをマークアップから切り離しているが、この <code>div</code> 要素は支援技術にリンクとして認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 window.onload = init;
 
 function init()
