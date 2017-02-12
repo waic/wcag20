@@ -11,15 +11,15 @@
       <success-criterion idref="time-limits-postponed" relationship="failure"/>
    </applies-to>
    <description>
-    <p><code>meta</code><code>http-equiv</code>の{time-out}; url=...はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p>
-    <p>タイムアウトが0に設定されている場合には、<el>meta</el>要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1.html" linktype="server">SVR1： クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>(SERVER) 参照のこと。</p>
+    <p><code>meta</code> <code>http-equiv</code>の{time-out}; url=...はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p>
+    <p>タイムアウトが0に設定されている場合には、<el>meta</el> 要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1" linktype="server"/>を参照のこと。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>以下のページは5秒後にhttp://www.example.com/newpageというURIへリダイレクトされるため、不適合である。</p>
+      <description><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、不適合である。</p>
 </description>
       <code><![CDATA[
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
    <head>     
       <title>使用禁止！</title>     
       <meta http-equiv="refresh"
@@ -47,7 +47,10 @@
          </ulist>
       </see-also>
    </resources>
-   <related-techniques/>
+   <related-techniques>
+      <relatedtech idref="SVR1"/>
+      <relatedtech idref="H76"/>
+   </related-techniques>
    <tests>
       <procedure>
       <olist>
@@ -62,7 +65,7 @@
       <expected-results>
          <olist>
             <item>
-               <p>2.を満たしていれば、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>2. を満たしていれば、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </olist>
       </expected-results>
