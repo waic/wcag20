@@ -10,36 +10,36 @@
       <success-criterion idref="text-equiv-all" relationship="failure"/>
    </applies-to>
    <description>
-    <div class="annotation">
-		<p><emph role="bold">日本語訳における注記：</emph></p>
-		<p>この文書（F39）は、W3Cサイトで公開されている英語の文書の日本語訳ですが、内容がF38と全く同じです。F39が文書化されていないのではないか（F38をコピーしただけではないか）と考えられ、WCAGワーキンググループに確認中です。</p>
-</div>
-    <p>この文書は、支援技術によって無視されなければならない画像の代替テキストに対する不適合事例について述べている。alt属性が全くない場合、支援技術は非テキストコンテンツを無視することができない。この達成基準の不適合とならないように、alt属性を検証し、空（alt ="" 又は alt =" "）にしなければならない。</p>
-    <note>
-      <p class="prefix"><code>alt=" "</code>でも有効だが、<code>alt=""</code>とすることを推奨する。</p>
-    </note>
+      <p>この達成方法は、支援技術によって無視されることが望ましい画像に対する失敗条件について述べている。画像のテキストによる代替は、画像の意味を伝えることが望ましい。ページ内に意味のないコンテンツの一部である装飾、スペーシング又は他の目的で画像が使用される場合、画像は意味を持たず、支援技術では無視することが望ましい。</p>
+      <p>空のテキストによる代替（<code>alt=""</code>）を提供すると、支援技術によって画像が無視され、この達成基準の失敗を回避できるだろう。</p>
   </description>
-   <examples/>
+   <examples>
+      <eg-group role="failure">
+         <head><att>alt</att> 属性を持たない装飾画像</head>
+         <description>
+            <p>コンテンツ間に空白領域を作成するために、それ自体は意味を持たない画像が使用されている。その画像の代替テキストの値は"spacer"である。テキストによる代替が同等の目的を果たさないため、この画像は達成基準に適合しない。その画像は無視されることを意図されているが、代替テキスト"spacer"はスクリーンリーダーによって読み上げられ、いくつかの代替カラースキームでは表示される。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div>Tree type: <img src="spacer.gif" width="100" height="1" alt="spacer"/>Cedrus deodara</div>
+]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
    <resources/>
    <related-techniques/>
    <tests>
       <procedure>
-      <olist>
-        <item>
-          <p>純粋に装飾目的のコンテンツとして使用されている<el>img</el>要素及び<el>applet</el>要素を特定する。</p>
-        </item>
-        <item>
-          <p>これらの要素に対する<att>alt</att>属性が存在する。</p>
-        </item>
-        <item>
-          <p>これらの要素に対する<att>alt</att>の値が空である。</p>
-        </item>
-      </olist>
-    </procedure>
+         <olist>
+            <item>
+               <p>装飾、スペーシング、又はページ内の意味のあるコンテンツに含まれない他の目的に使用される img 要素を特定する</p>
+            </item>
+            <item>
+               <p>これらの要素に対する alt の値が空である。</p>
+            </item>
+         </olist>
+      </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.又は3.を満たさない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>2. を満たさない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>
