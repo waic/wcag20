@@ -37,7 +37,7 @@
     </eg-group>
     <eg-group role="failure">
       <head>キーボードサポートがある <el>img</el> 要素のスクリプト</head>
-      <description><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合にはEnterキーで機能する。それでもなお、この要素はリンクとしては認識されない。</p>
+      <description><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合には Enter キーで機能する。それでもなお、この要素はリンクとしては認識されない。</p>
 </description>
       <code role="html401"><![CDATA[
 function doNav(url)
@@ -68,7 +68,7 @@ function doKeyPress(url)
     </eg-group>
     <eg-group role="failure">
       <head><el>div</el> 要素のスクリプト</head>
-      <description><p>この例では、<code>div</code>要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベント・ハンドラをマークアップから切り離しているが、この<code>div</code>要素は支援技術にリンクとして認識されない。</p>
+      <description><p>この例では、<el>div</el> 要素がリンクとして機能するようにスクリプトを使用している。制作者は、完璧なキーボードアクセスを提供し、コンテンツの再利用を可能にするためイベントハンドラをマークアップから切り離しているが、この <el>div</el> 要素は支援技術にリンクとして認識されない。</p>
 </description>
       <code role="html401"><![CDATA[
 window.onload = init;
