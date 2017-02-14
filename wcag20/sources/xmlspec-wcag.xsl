@@ -476,7 +476,7 @@
             <ul id="navigation"><li><strong><a href="Overview#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li></ul> -->
             <div class="div1"><a name="maincontent"><xsl:text> </xsl:text></a>
               <h1 id="techs"> <xsl:value-of select="//header/title"/></h1>
-            	<p>この文書では、<a href="Overview.html">WCAG 2.0 達成方法集（WCAG 2.0 の達成方法と失敗例）</a>から、 <xsl:value-of select="//header/title"/>のための達成方法を列挙している。ウェブコンテンツ技術特有の達成方法は、「一般（General）」の達成方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般（General）」の達成方法とウェブコンテンツ技術特有の達成方法の双方を考慮に入れる必要がある。</p>
+            	<p>このウェブページは、「<a href="Overview.html">WCAG 2.0達成方法集 : WCAG 2.0の達成方法と失敗例</a>」における<xsl:value-of select="//header/title"/>を掲載している。ウェブコンテンツ技術特有の達成方法は、「一般（General）」の達成方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般（General）」の達成方法とウェブコンテンツ技術特有の達成方法の双方を考慮に入れる必要がある。</p>
             	<p>ウェブコンテンツ技術特有の達成方法は、あらゆる状況で WCAG 2.0 の達成基準と適合要件を満たすコンテンツを作るために使うことができる技術を指しているわけではない。 コンテンツ制作者はその技術の限界に注意を払い、障害のある人にアクセシブルな方法でコンテンツを提供す必要がある。</p>
             	<p>達成方法についての情報は、<a href="intro.html">WCAG 2.0 達成方法集のイントロダクション</a>を参照のこと。他のウェブコンテンツ技術の達成方法一覧については、<a href="Overview.html#contents">目次</a>を参照のこと。</p>
             <xsl:apply-templates/>
