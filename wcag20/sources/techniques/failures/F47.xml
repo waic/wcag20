@@ -15,7 +15,7 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p><code>blink</code>要素は正式なHTML又はXHTMLの仕様の一部ではないが、多くのユーザエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>blink</code>を用いているコンテンツは達成基準を満たしていないことになる。</p>
+    <p><code>blink</code> 要素は正式な HTML 又は XHTML の仕様の一部ではないが、多くのユーザエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>blink</code> を用いているコンテンツは達成基準を満たしていないことになる。</p>
   </description>
    <examples>
       <eg-group role="failure">
@@ -34,7 +34,7 @@
             </item>
             <item>
                <p> 
-                  <loc href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink">Mozilla Developer Network: text-decoration</loc> 
+                  <loc href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">Mozilla Developer Network: text-decoration</loc> 
                </p>
             </item>
          </ulist>
@@ -44,14 +44,14 @@
       <procedure>
       <olist>
         <item>
-          <p>コードに<code>blink</code> 要素が存在する。</p>
+          <p>コードに <code>blink</code> 要素が存在する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしているならば、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>1. を満たしているならば、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>
