@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G78">
-   <short-name>音声ガイドを含んだ、利用者が選択可能な副音声トラックを提供する</short-name>
+   <short-name>音声解説を含んだ、利用者が選択可能な副音声トラックを提供する</short-name>
    <applicability>
       <p>音声トラック及び視覚的なコンテンツのあるウェブコンテンツ技術</p>
    </applicability>
