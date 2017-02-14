@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SM6">
-   <short-name>SMIL 1.0 で音声ガイドを提供する</short-name>
+   <short-name>SMIL 1.0 で音声解説を提供する</short-name>
    <applicability>
       <p>SMIL 1.0 プレーヤーが利用可能な場合</p>
    </applicability>
