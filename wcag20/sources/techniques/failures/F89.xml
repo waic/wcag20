@@ -17,9 +17,8 @@
     </ua-issue>
   </ua-issues>
   <description>
-    <p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクに対して、その非テキストコンテンツが支援技術によって無視される方法で実装されている不適合事例について述べている。
-リンクはインタラクティブなコントロールであるため、利用者はリンクにタブ移動し、リンクを起動することができる。識別名として用いられるテキストコンテンツがリンク内にない場合、支援技術はリンクに使用する何らかの識別名を見つけるために様々な修復方法を用いる。</p>
-    <p>ページ上でテキスト及び画像の両方が、同じリンク先にリンクするために用いられることがよくある。 これによって、2つの隣接したリンクが同じ識別名を持つときに音声読み上げでは同じ読み上げが繰り返されるため、コンテンツ制作者は画像に対して空のalt属性を提供することによりその冗長性を排除しようとする。困ったことに、この対応が往々にして問題を悪化させることがある。「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2.html">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</loc>」(HTML)は、別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
+    <p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクについて、そしてそのリンクがアクセシブルな名前で特定できないときに起こる失敗例について述べている。リンクのアクセシブルな名前（name）は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation</loc>によって決定される。</p>
+    <p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適合する。このケースでは、実装方法<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html"/>は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
   </description>
    <examples>
       <eg-group role="failure">
@@ -57,6 +56,8 @@
    <related-techniques>
       <relatedtech idref="H2"/>
       <relatedtech idref="H30"/>
+      <relatedtech idref="ARIA7"/>
+      <relatedtech idref="ARIA8"/>
    </related-techniques>
    <tests>
       <procedure>
@@ -65,14 +66,17 @@
           <p>リンクが非テキストコンテンツのみを提供している。</p>
         </item>
         <item>
-          <p>非テキストコンテンツが支援技術により無視される方法で実装されている。</p>
+          <p>非テキストコンテンツが支援技術により無視される方法、<code>role="presentation"</code> や空の <code>alt</code> 属性で実装されている。</p>
+        </item>
+        <item>
+          <p><att>aria-label</att> や <att>aria-labelledby</att>のようなほかの方法でアクセシブルな名前（name）を持たないリンクをチェックする</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>全てを満たしているならば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>もしチェックが正なら、失敗例に当たり、そのコンテンツは達成基準を満たさない。</p>
             </item>
          </ulist>
       </expected-results>
