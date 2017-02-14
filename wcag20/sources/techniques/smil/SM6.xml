@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SM6">
-   <short-name>SMIL 1.0 で音声ガイドを提供する</short-name>
+   <short-name>SMIL 1.0 で音声解説を提供する</short-name>
    <applicability>
       <p>SMIL 1.0 プレーヤーが利用可能な場合</p>
    </applicability>
@@ -10,11 +10,11 @@
       <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声ガイドによって、映像の説明が提供される。</p>
+    <p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声解説によって、映像の説明が提供される。</p>
   </description>
    <examples>
       <eg-group>
-      <head>QuickTimeプレーヤー向けのSMIL 1.0の音声ガイドの例</head>
+      <head>QuickTimeプレーヤー向けのSMIL 1.0の音声解説の例</head>
       <code><![CDATA[ 
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
@@ -37,7 +37,7 @@
 </smil>]]></code>
     </eg-group>
     <eg-group>
-      <head>RealTimeプレーヤー向けのSMIL 1.0の音声ガイドの例</head>
+      <head>RealTimeプレーヤー向けのSMIL 1.0の音声解説の例</head>
       <code><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns="http://www.w3.org/TR/REC-smil">
@@ -125,13 +125,13 @@
       <procedure>
       <olist>
         <item>
-          <p>（デフォルトで常に再生されている場合を除いて、）コンテンツ／プレーヤーから音声ガイドを再生する方法を見つける。</p>
+          <p>（デフォルトで常に再生されている場合を除いて、）コンテンツ／プレーヤーから音声解説を再生する方法を見つける。</p>
         </item>
         <item>
-          <p>音声ガイドのあるファイルを再生する。</p>
+          <p>音声解説のあるファイルを再生する。</p>
         </item>
         <item>
-          <p>音声ガイドが再生される。</p>
+          <p>音声解説が再生される。</p>
         </item>
       </olist>
     </procedure>
