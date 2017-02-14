@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G8">
-   <short-name>ムービーに拡張した音声ガイド付を提供する</short-name>
+   <short-name>拡張音声解説が付いたムービーを提供する</short-name>
    <applicability>
       <p>音声及び映像をサポートする、あらゆるウェブコンテンツ技術</p>
    </applicability>
