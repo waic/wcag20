@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G173">
-   <short-name>映像の音声ガイド付きバージョンを提供する</short-name>
+   <short-name>映像の音声解説付きバージョンを提供する</short-name>
    <applicability>
       <p>音声及び映像をサポートするあらゆるウェブコンテンツ技術</p>
    </applicability>
