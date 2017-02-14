@@ -5,8 +5,8 @@
 <spec status="final" w3c-doctype="wgnote" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<header>
 <trdisclaimer>
-<p>【重要】 この文書は、W3Cワーキンググループノート「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</loc>」（原文は英語: 2016年10月7日公開）を情報通信アクセス協議会の「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="/committee/wg4/">ウェブアクセシビリティ基盤委員会（WAIC） 実装ワーキンググループ（WG4）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3Cが公開している原文（英語）にてご確認ください。</p>
-<p>【注意】 実装方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文（英語）にリンクしています。</p>
+<p>【重要】 この文書は、W3Cワーキンググループノート「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</loc>」（原文は英語: 2016年10月7日公開）を情報通信アクセス協議会の「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="/committee/wg4/">ウェブアクセシビリティ基盤委員会（WAIC） 翻訳ワーキンググループ（WG4）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3Cが公開している原文（英語）にてご確認ください。</p>
+<p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文（英語）にリンクしています。</p>
 </trdisclaimer>
 		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 達成方法集</title>
 		<subtitle>WCAG 2.0の達成方法と不適合事例</subtitle>
@@ -76,9 +76,9 @@
 		</authlist>
 		<status>
 			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
-	<p>これは、ワーキンググループ・ノートの「WCAG 2.0 実装方法集」である。この実装方法集は、<loc href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>によって作成されたものである。各実装方法は、<loc href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び<loc href="http://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG	2.0（英語）</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
+	<p>これは、ワーキンググループ・ノートの「WCAG 2.0 達成方法集」である。この達成方法集は、<loc href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>によって作成されたものである。各達成方法は、<loc href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び<loc href="http://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG	2.0（英語）</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
 	<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/">オンライン・コメントフォーム（英語）</loc>を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">公開メーリングリストのアーカイブ（英語）</loc>は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG ワーキンググループのメーリングリスト（英語）</loc>での議論のアーカイブは一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
-	<p>実装方法を新たに文書化する上で手助けとなる皆さんからの提案を特に歓迎している。実装方法を提案する際には、<loc href="http://www.w3.org/WAI/WCAG1-Conformance">実装方法提案フォーム（英語）</loc>を使っていただきたい。</p>
+	<p>達成方法を新たに文書化する上で手助けとなる皆さんからの提案を特に歓迎している。達成方法を提案する際には、<loc href="http://www.w3.org/WAI/WCAG1-Conformance">達成方法提案フォーム（英語）</loc>を使っていただきたい。</p>
 	<p>この文書は、W3Cの <loc href="http://www.w3.org/WAI/">ウェブアクセシビリティ・イニシアティブ（英語）</loc>(WAI)の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="http://www.w3.org/WAI/GL/new-charter-2000.html">ワーキンググループ趣意書（英語）</loc>に記載されている。WCAG ワーキンググループは、<loc href="http://www.w3.org/WAI/Technical/Activity">WAI テクニカル・アクティビティ（英語）</loc>の一つである。</p>
 	<p>ワーキンググループ・ノートとしての公開は、W3C 会員による承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、いつでも他の文書に置き換えられたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
 	<p>この文書は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日付W3C特許ポリシー（英語）</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc href="http://www.w3.org/2004/01/pp-impl/35422/status" rel="disclosure">一般公開されている特許のリスト（英語）</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">基本的な請求項（英語）</loc>を含む特許について実際に知識のある人は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">W3C 特許ポリシー 第6章（英語）</loc>に従って、その情報を開示することが求められる。</p>
@@ -104,7 +104,7 @@
 			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この<emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ1年に<phrase>2回</phrase>、定期的に更新する文書である。</p>
 			<p><phrase use-id="abstract-techniques-informative"/></p>
 			<note>
-				<p>W3C は、必要とするW3Cの十分な実装方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
+				<p>W3C は、必要とするW3Cの十分な達成方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
 				<ulist>
 					<item>
 						<p>WCAG 2 FAQ における<loc href="http://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
@@ -120,7 +120,7 @@
 				</ulist>
 			</note>
 			<p use-id="abstract-not-standalone"/>
-			<p>特定の技術に対する実装方法の公表は、WCAG 2.0 達成基準及び適合性要求を満たすコンテンツを作成するためにすべての状況において試用できることを意味しない。開発者は、特定の技術の限界を認識し、障害をもつ人々にアクセシブルな方法でコンテンツを提供する必要がある。</p>
+			<p>特定の技術に対する達成方法の公表は、WCAG 2.0 達成基準及び適合性要求を満たすコンテンツを作成するためにすべての状況において試用できることを意味しない。開発者は、特定の技術の限界を認識し、障害をもつ人々にアクセシブルな方法でコンテンツを提供する必要がある。</p>
 			<p><phrase use-id="abstract-techniques-understanding"/></p>
 		</div1>
 	</front>
