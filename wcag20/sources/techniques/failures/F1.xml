@@ -10,7 +10,7 @@
       <success-criterion idref="content-structure-separation-sequence" relationship="failure"/>
    </applies-to>
    <description>
-    <p>これは、コンテンツの視覚的なレイアウトを変更するのに構造的なマークアップではなく　CSS が用いられていて、かつ、レイアウトの変更によってコンテンツの意味が変わってしまっているという失敗例について述べている。CSS2 の position プロパティを用いると、利用者のビューポート上のどんな位置にでもコンテンツを表示させることができる。その場合、個々のアイテムが画面上に表示される順序は、ソース文書内に登場する順序とは異なる可能性がある。しかし、支援技術は、コンテンツを正しい順序でレンダリングするために、ソースコードでの順序又はプログラムが解釈する順序を用いている。そのため、CSS によってコンテンツの順序を指定する際には、それによってプログラムで解釈される音声読み上げ順序とは異なる意味になってしまうのであれば、CSS を用いてコンテンツの視覚的な位置を指定しないようにすることが重要である。</p>
+    <p>これは、コンテンツの視覚的なレイアウトを変更するのに構造的なマークアップではなく CSS が用いられていて、かつ、レイアウトの変更によってコンテンツの意味が変わってしまっているという失敗例について述べている。CSS2 の position プロパティを用いると、利用者のビューポート上のどんな位置にでもコンテンツを表示させることができる。その場合、個々のアイテムが画面上に表示される順序は、ソース文書内に登場する順序とは異なる可能性がある。しかし、支援技術は、コンテンツを正しい順序でレンダリングするために、ソースコードでの順序又はプログラムが解釈する順序を用いている。そのため、CSS によってコンテンツの順序を指定する際には、それによってプログラムで解釈される音声読み上げ順序とは異なる意味になってしまうのであれば、CSS を用いてコンテンツの視覚的な位置を指定しないようにすることが重要である。</p>
   </description>
    <examples>
       <eg-group role="failure">
@@ -88,8 +88,8 @@
 }]]></code>
       <description><p>このコンテンツの場合は、テーブル又は定義リストのように、意味のある要素を用いたほうがよいだろう。</p>
 <ulist>
-<item><p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F1/cssposfailure.html">CSSによる配置の失敗例</loc></p></item>
-<item><p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F1/cssposfailurenostyle.html">CSSによる配置の失敗例：スタイルを外したバージョン</loc></p></item>
+<item><p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F1/cssposfailure.html">CSS による配置の失敗例</loc></p></item>
+<item><p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F1/cssposfailurenostyle.html">CSS による配置の失敗例：スタイルを外したバージョン</loc></p></item>
 </ulist>
 </description>
     </eg-group>
@@ -100,7 +100,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>CSSを用いて配置されているコンテンツに対して：</p>
+      <p>CSS を用いて配置されているコンテンツに対して：</p>
       <olist>
         <item>
           <p>ドキュメントからスタイル情報を取り除く、又はユーザエージェントでスタイルシートの適用をオフにする。</p>
