@@ -13,7 +13,7 @@
      &lt;h1&gt;H&amp;amp;nbsp;E&amp;amp;nbsp;L&amp;amp;nbsp;L&amp;amp;nbsp;O&lt;/h1&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F32-failex2">
 					失敗例 2: 単語の途中に入れた空白によって意味が変わってしまう</h3><div class="example"><div class="textbody"><p>日本語においては、一つの漢字がそれぞれ意味の異なるいくつかの読み方を持っていることがある。この例では、スクリーンリーダーは空白文字があるためにこれらの文字列を一つの単語と認識できず、誤った読み方をしてしまう可能性がある。この文字列は「東京（とうきょう）」を意味しているが、スクリーンリーダーは「ひがし　きょう」と読み上げてしまう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
      &lt;h1&gt;東　京&lt;/h1&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F32-failex3">
-					失敗例 3: 不適合となる 縦書きのテキストを表現するために改行文字を使用している</h3><div class="example"><div class="textbody"><p>データテーブルの行見出しセルに日本語が含まれる場合に、制作者は改行文字を使用して縦書きのテキストを表現することがよくある。しかし、単語中に改行文字があるために、スクリーンリーダーはこのような縦書き文字列にある単語を正しく読み上げることができない。次の例は「東京都（とうきょうと）」ではなく「ひがし　きょう　みやこ」と読み上げられてしまう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 3: 縦書きのテキストを表現するために改行文字を使用している</h3><div class="example"><div class="textbody"><p>データテーブルの行見出しセルに日本語が含まれる場合に、制作者は改行文字を使用して縦書きのテキストを表現することがよくある。しかし、単語中に改行文字があるために、スクリーンリーダーはこのような縦書き文字列にある単語を正しく読み上げることができない。次の例は「東京都（とうきょうと）」ではなく「ひがし　きょう　みやこ」と読み上げられてしまう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;table&gt;
 &lt;caption&gt;表1.　都道府県別一覧表&lt;/caption&gt;
 &lt;tr&gt;
