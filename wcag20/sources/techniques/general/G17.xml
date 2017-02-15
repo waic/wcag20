@@ -22,50 +22,42 @@
          <ulist>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.paciellogroup.com/resources/contrastanalyser/">Contrast Analyser – Application</loc>
+                  <loc href="http://www.paciellogroup.com/resources/contrastanalyser/">Contrast Analyser – Application</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://juicystudio.com/services/luminositycontrastratio.php">Contrast Ratio Analyser - online service</loc>
+                  <loc href="http://juicystudio.com/services/luminositycontrastratio.php">Contrast Ratio Analyser - online service</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php">Colour Contrast Analyser - Firefox Extension</loc>
+                  <loc href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php">Colour Contrast Analyser - Firefox Extension</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://trace.wisc.edu/contrast-ratio-examples/">Color Contrast Samples</loc>
+                  <loc href="http://trace.wisc.edu/contrast-ratio-examples/">Color Contrast Samples</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/Graphics/atypical-color-response">Atypical colour response</loc>
+                  <loc href="http://www.w3.org/Graphics/atypical-color-response">Atypical colour response</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.colorsontheweb.com/colorcontrast.asp">Colors On the Web Color Contrast Analyzer</loc>
+                  <loc href="http://www.colorsontheweb.com/colorcontrast.asp">Colors On the Web Color Contrast Analyzer</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.vischeck.com/daltonize/runDaltonize.php">Tool to convert images based on color loss so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)</loc>
+                  <loc href="http://www.vischeck.com/daltonize/runDaltonize.php">Tool to convert images based on color loss so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)</loc>
                 </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">List of color contrast tools</loc>
+                  <loc href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">List of color contrast tools</loc>
                 </p>
             </item>
          </ulist>
@@ -90,7 +82,7 @@
         </item>
         <item><p> 次の公式を用いて、コントラスト比を算出する。</p>
 <ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
-<ulist><item><p>L1は前景または背景色の明るい方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2は前景または背景色の暗い方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
+<ulist><item><p>L1は前景または背景色の明るい方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2は前景または背景色の暗い方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
         <item>
           <p> コントラスト比が7：1と同じ、又はそれ以上である。【訳注：この計算式を用いているチェックツールで、コントラスト比が7：1以上であることを確認すればよい。】</p>
         </item>
