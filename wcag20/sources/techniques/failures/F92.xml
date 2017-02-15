@@ -4,39 +4,36 @@
 <technique id="F92">
    <short-name>セマンティックな情報を伝えるコンテンツに presentation ロールを使用している</short-name>
    <applicability>
-      <p>HTML and XHTML</p>
+      <p>HTML 及び XHTML</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
                          relationship="failure"/>
    </applies-to>
    <description>
-      <p>This failure occurs when a role of presentation is applied to an element whose purpose is to convey information or relationships in the content. Elements such as <el>table</el>, can convey information about the content contained in them via their semantic markup. The WAI-ARIA role of <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/roles#presentation">
-            <attval>presentation</attval>
-         </loc> on the other hand, is intended to suppress semantic information of content from the accessibility API and prevent user agents from conveying that information to the user. Use of the <attval>presentation</attval> role for content which should convey semantic information may prevent the user from understanding that content.
+      <p>この失敗例は、情報あるいはコンテンツの関係性を伝達する目的で用いられる要素に表現の役割が適用されるときに起こる。<el>table</el> のような要素はセマンティックなマークアップによってコンテンツがもつ情報を伝達することができる。一方 WAI-ARIA の <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#presentation"><attval>presentation</attval></loc> のロールは、アクセシビリティ API からコンテンツのセマンティックな情報を抑制し、利用者への情報の伝達をユーザーエージェントが行わないよう意図されている。<attval>presentation</attval> ロールをセマンティックな情報を伝達するべきコンテンツに用いるのは利用者のコンテンツの理解を妨げるだろう。
 </p>
    </description>
    <examples>
       <eg-group role="failure">
          <head/>
          <description>
-            <p>In this example, tabular data is marked up with <code><![CDATA[role=presentation]]></code>. Though design layout tables can be marked up in such a way, data tables need to retain their semantic information and should therefore not be marked up with <code><![CDATA[role=presentation]]></code>.</p>
-            <p>Example Code:</p>
+            <p>この例では、表のデータは <code>role=presentation</code> でマークアップされている。そのようなレイアウトテーブルのデザインのマークアップに関わらず、データテーブルはセマンティックな情報を維持する必要がありそれゆえ <code>role=presentation</code> でマークアップされるべきではない。</p>
+            <p>例:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <table role="presentation">
-   <caption>Fruits and their colors</caption>
+   <caption>フルーツとその色</caption>
    <tr>
-     <th>Name</th>
-     <th>Color</th>
+     <th>名称</th>
+     <th>色</th>
    </tr>
    <tr>
-    <td scope="row">banana</td>
-    <td>yellow</td>
+    <td scope="row">バナナ</td>
+    <td>黄色</td>
    </tr>
    <tr>
-    <td scope="row">orange</td>
-    <td>orange</td>
+    <td scope="row">オレンジ</td>
+    <td>オレンジ</td>
    </tr>
   </table>
                             ]]></codeblock>
@@ -59,19 +56,17 @@
       <procedure>
          <olist>
             <item>
-               <p>Check if an element which conveys information, structure, or relationships through its semantic markup
-</p>
+               <p>もしセマンティックなマークアップを通じて情報や構造や関係性を伝えている要素を確認するなら</p>
             </item>
             <item>
-               <p>Element has the attribute <code><![CDATA[role="presentation"]]></code>.
-</p>
+               <p>要素が <code>role="presentation"</code> 属性を持っている</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>If check #2 is true, then this failure condition applies and the content fails the Success Criterion.</p>
+               <p>もし確認 #2 が真なら、失敗例に当たり、コンテンツは達成基準を満たしていない。</p>
             </item>
          </ulist>
       </expected-results>
