@@ -8,13 +8,13 @@
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
 					</a></li></ul></li></ul><h2 id="F63-description">解説</h2><div class="textbody"><p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという不適合事例について解説する。リンクの文脈がそのリンクと同じ文、段落、リストの項目又はテーブルのセルではない場合、利用者はそのリンクがどこに誘導するものかを容易に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この不適合事例に該当する。</p></div><h2 class="small-head" id="F63-examples">事例</h2><div class="failure"><h3 class="small-head" id="F63-failex1">
-					失敗例 1: 不適合となる ニュースサービス</h3><div class="example"><div class="textbody"><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p></div><div class="code"><pre><code>
+					失敗例 1: ニュースサービス</h3><div class="example"><div class="textbody"><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p></div><div class="code"><pre><code>
 &lt;p&gt;ある英国のビジネスマンが200万マイルの
 マイレージを獲得していて、世界初の消費者向け
 宇宙旅行の旅に出ようと計画している。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="ff.html"&gt;続きを読む...&lt;/a&gt;&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F63-failex2">
-					失敗例 2: 不適合となる 無償プレーヤーのダウンロード</h3><div class="example"><div class="textbody"><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p></div><div class="code"><pre><code>
+					失敗例 2: 無償プレーヤーのダウンロード</h3><div class="example"><div class="textbody"><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p></div><div class="code"><pre><code>
    &lt;table&gt;
    &lt;tr&gt; 
        &lt;td&gt;ブラウザで音楽を聴く&lt;/td&gt;
