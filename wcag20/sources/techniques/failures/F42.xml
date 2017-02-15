@@ -9,6 +9,7 @@
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic" relationship="failure"/>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="failure"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="failure"/>
       <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
    </applies-to>
    <description>
