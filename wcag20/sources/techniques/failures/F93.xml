@@ -10,18 +10,18 @@
       <success-criterion idref="visual-audio-contrast-dis-audio" relationship="failure"/>
    </applies-to>
    <description>
-<p>This failure occurs when an <el>audio</el> or <el>video</el> element with an audio track contains the <att>autoplay</att> attribute and does not contain the <att>muted</att> attribute, and no controls or commands have been provided to pause or stop the media resource.</p>
-<p>When the <att>autoplay</att> attribute is present, the user agent will automatically begin playback of the media resource as soon as it can do so without stopping. When the <att>muted</att> attribute is present, the user agent will initially mute the media resource's audio output, overriding any user preference.</p>
-<p>If the media element is shorter than 3 seconds, the failure does not occur. If the user agent provides user preferences to override autoplay behavior, the failure does not occur.</p>
-<p>The HTML spec contains the following notes:</p>
-<ulist><item><p>User agents do not need to support autoplay, and it is suggested that user agents honor user preferences on the matter. Authors are urged to use the <att>autoplay</att> attribute rather than using script to force the video to play, so as to allow the user to override the behavior if so desired.</p></item>
-<item><p>Authors are urged to use the <att>autoplay</att> attribute rather than using script to trigger automatic playback, as this allows the user to override the automatic playback when it is not desired, e.g. when using a screen reader. Authors are also encouraged to consider not using the automatic playback behavior at all, and instead to let the user agent wait for the user to start playback explicitly.</p></item></ulist>
+<p>この失敗例は、<el>audio</el> あるいは <el>video</el> 要素が <att>autoplay</att> 属性をもつ音声トラックを含むときや、<att>muted</att> 属性を含まなかったり、メディアの停止または一時停止のコントロール機能かコマンドがないときに起きる。</p>
+<p><att>autoplay</att>属性が存在している場合、ユーザエージェントはできる限り停止させずに自動的にメディアの再生をはじめる。<att>muted</att> 属性がもし存在していたら、ユーザエージェントは最初にメディアの音声出力を無音にし、ユーザ設定で上書きする。</p>
+<p>メディア要素が 3 秒より短い場合、失敗は起こらない。もしユーザエージェントが自動再生の挙動を上書きする利用者設定と提供していたら、失敗例は起こらない。</p>
+<p>HTML の仕様は次の注を含む:</p>
+<ulist><item><p>ユーザエージェントは自動再生のサポートを必要としないが、それはユーザエージェントが事例についての利用者設定を優先することを示している。製作者は動画を再生するスクリプトを使うより、利用者が望むような挙動を上書きすることを許すのと同じように、<att>autoplay</att>属性を使うよう促される。</p></item>
+<item><p>制作者は、スクリーンリーダーを使用している場合のように、利用者が望まない場合に自動再生状態を上書きできるよう、自動再生を行うスクリプトよりむしろ <att>autoplay</att> 属性を使用することを促されている。制作者は、利用者が再生を開始するのをユーザエージェントが待つかわりに、自動再生を行わないよう考慮することもすすめられている。</p></item></ulist>
    </description>
    <examples>
       <eg-group>
-         <head>An auto-playing audio track</head>
+         <head>音声の自動再生</head>
          <description>
-            <p>In this example, the advertising video contains an audio track. The video will play continuously because of the <att>loop</att> attribute, and the video will start automatically because of the <att>autoplay</att> attribute and because there does not appear to be any controls to allow the user to stop the video.</p>
+            <p>この例では、動画広告が音声トラックを含む。動画は <att>loop</att> 属性をもっているため連続再生され、動画は <att>autoplay</att> 属性のため及び利用者が動画を停止できるどんなコントロール方法もないために自動的に開始される。</p>
          </description>
          <code role="html5"><![CDATA[
 				 <video src="ads.cgi?kind=video" autoplay loop></video>
@@ -33,7 +33,7 @@
          <ulist>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/html/wg/drafts/html/CR/">HTML5</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/">HTML5</loc>
                </p>
             </item>
             <item>
@@ -49,26 +49,26 @@
       <procedure>
          <olist>
             <item>
-               <p>Check if an <el>audio</el> or <el>video</el> element has an active audio track.</p>
+               <p>アクティブな音声トラックに <el>audio</el> もしくは <el>video</el> 要素が含まれていないか確認する。</p>
             </item>
             <item>
-               <p>Check if the audio or video lasts longer than 3 seconds.</p>
+               <p>音声あるいは動画が3秒以上続くか確認する。</p>
             </item>
             <item>
-               <p>Check if the element has an <att>autoplay</att> attribute.</p>
+               <p>要素が <att>autoplay</att> 属性を持っているか確認する。</p>
             </item>
             <item>
-               <p>Check if the element does not have a <att>muted</att> attribute.</p>
+               <p>要素が <att>muted</att> 属性を持っていないか確認する。</p>
             </item>
             <item>
-               <p>Check if no command or control has been provided to stop or pause the media element.</p>
+               <p>メディア要素が停止または一時停止するためのコマンドやコントロール方法を持っていないか確認する。</p>
             </item>
           </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>If checks 1-5 are true, then this failure condition applies and the content fails the Success Criterion.</p>
+               <p>もし 1-5 までが真なら、失敗例に適合しコンテンツは達成基準を満たさない。</p>
             </item>
          </ulist>
       </expected-results>
