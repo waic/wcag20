@@ -20,7 +20,6 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合となる</head>
       <description><p>次の例では、<code><![CDATA[:before]]></code> 及び <code><![CDATA[:after]]></code> を用いて話者の切り替わりを示し、また脚本内の引用文を挿入している。</p>
 <p>CSSは、次のようになっている。</p>
 </description>
@@ -39,8 +38,7 @@ q:after  { content: close-quote }]]></code>
  <q>無理そうよね。</q>
 </p>]]></code>
     </eg-group>
-    <eg-group>
-      <head>不適合となる</head>
+    <eg-group role="failure">
       <description><p>この例では、<code>:before</code> を用いて、意見と事実の違いを区別している。</p>
 <p>CSSは、次のようになっている。</p>
 </description>

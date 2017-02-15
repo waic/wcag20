@@ -15,12 +15,12 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合事例:</head>
+      <head/>
       <description><p>不適合となる推奨できない事例：利用者が郵便の宛先の入力をしている。郵便番号の入力をすると、彼の町で利用できるサービスの広告が記載された新しいウィンドウが開く。</p>
 </description>
     </eg-group>
     <eg-group role="failure">
-      <head>適合事例:</head>
+      <head/>
       <description><p>許容できる事例：利用者がフォームの郵便の宛先の入力をしている。郵便番号のフィールドを入力をすると、有効な郵便番号であるかどうかを検証するスクリプトが実行される。値が無効な場合はフィールドへの入力方法を説明したウィンドウが開く。</p>
 </description>
     </eg-group>

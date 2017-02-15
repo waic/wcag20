@@ -14,7 +14,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合となる ニュースサービス</head>
+      <head>ニュースサービス</head>
       <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
@@ -25,7 +25,7 @@
 <p><a href="ff.html">続きを読む...</a></p>]]></codeblock>
     </eg-group>
     <eg-group role="failure">
-      <head>不適合となる 無償プレーヤーのダウンロード</head>
+      <head>無償プレーヤーのダウンロード</head>
       <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[

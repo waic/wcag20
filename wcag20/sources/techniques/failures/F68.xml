@@ -19,7 +19,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合となる</head>
+      <head/>
       <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント（支援技術を含む）がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
@@ -35,7 +35,7 @@
 </form>]]></codeblock>
     </eg-group>
     <eg-group role="failure">
-      <head>不適合となる</head>
+      <head/>
       <description><p>以下のコード例において、ユーザエージェント（支援技術を含む）は入力コントロールに対応するラベルを適切に判断することができない。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
@@ -62,7 +62,7 @@
 </form>]]></codeblock>
     </eg-group>
     <eg-group role="failure">
-      <head>不適合となる</head>
+      <head/>
       <description><p>以下の例では、検索用のテキストフィールドに名前がついていない。<code>title</code>属性を用いるか、CSSによって非表示にした<code>label</code>要素を用いることで名前をつけることができる。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[

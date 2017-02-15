@@ -14,7 +14,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合となる代替テキストのないASCIIアートのチャート</head>
+      <head>代替テキストのないASCIIアートのチャート</head>
       <description><p>次のASCIIアートのチャートは、代替テキストがないため、達成基準1.1.1を満たしていない。事実、この不適合となる事例を含んでいるため、このウェブページは適合していないページとなっている。ただし、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#F72-related-techs">ASCIIアートの例をスキップする</loc>ことはできる。</p>
 </description>
       <code role="xhtml"><![CDATA[

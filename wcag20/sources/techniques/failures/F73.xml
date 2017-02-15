@@ -17,12 +17,12 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合となる</head>
+      <head/>
       <description><p>ウェブページの本文のテキスト内に、多数のリンクが含まれている。これらのリンクは、下線がなく、ボディテキストに非常によく似た色で表示されている。利用者は、本文のテキストとリンクを見分けられないため、このウェブページは不適合である。</p>
 </description>
     </eg-group>
     <eg-group role="failure">
-      <head>不適合となる</head>
+      <head/>
       <description><p>次のコードは、文章内又は段落内のリンクから下線を取り除いていて、なおかつ色以外に別の視覚的な手掛かりを提供していない例である。</p>
 </description>
       <code role="css"><![CDATA[

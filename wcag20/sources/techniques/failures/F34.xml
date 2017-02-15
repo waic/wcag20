@@ -18,7 +18,6 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>不適合事例1</head>
       <description><p>次の事例では、空白を不適切に使ってメニューを見かけ上のテーブル形式にしている。</p>
 </description>
       <code role="html401"><![CDATA[
