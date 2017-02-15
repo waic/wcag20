@@ -4,7 +4,7 @@
 <technique id="F91">
    <short-name>達成基準 1.3.1 の失敗例 － テーブルの見出しセルを正しくマークアップしていない</short-name>
    <applicability>
-      <p>HTML and XHTML.</p>
+      <p>HTML 及び XHTML。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -34,48 +34,47 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>This failure occurs when data tables do not use header elements (<code><![CDATA[th]]></code>) or other appropriate table mark-up (the <code><![CDATA[scope]]></code> attribute, <code><![CDATA[headers]]></code> and <code><![CDATA[id]]></code> or the ARIA roles <code><![CDATA[columnheader]]></code> / <code><![CDATA[rowheader]]></code>) to make the headers programatically determinable from within table content.  Making headers programmatically determinable is especially important when data cells are only intelligible together with header information. When screen reader users navigate through the table content horizontally or vertically, the headers that change can be read out to provide the necessary context for the information in the data cells.</p>
+      <p>見出し要素（<code>th</code>）やテーブルコンテンツの中からプログラム的に見出しを算出させるためにほかの適切なテーブルマークアップ（<code>scope</code>属性、<code>headers</code>及び<code>id</code>あるいはARIA ロール <code>columnheader</code> や <code>rowheader</code>）が使われていないときにこの失敗例は起こる。データセルが見出し情報と組み合わせるときだけはっきりする場合、見出しをプログラム的に算出可能にするのは特別に重要である。スクリーンリーダーの利用者がテーブルコンテンツを縦あるいは横に閲覧する場合、見出しは必要な文脈を提供するために読み上げられる。</p>
    </description>
    <examples>
       <eg-group role="failure">
-         <head>Headers not marked up appropriately</head>
+         <head>見出しが適切にマークアップされていない</head>
          <description>
-            <p>This table does not use <code><![CDATA[th]]></code> (or other appropriate header markup) for headers. Instead, it uses <code><![CDATA[td]]></code> elements for all cells. Navigating cell by cell, screen readers will often fail to read the header cells associated with content.
-							</p>
+            <p>このテーブルは見出しとして <code>th</code>（あるいはほかの適切なヘッダマークアップ）を使っていない。かわりに、すべてのセルに <code>td</code> 要素が使われている。セルからセルへ移動するのに、スクリーンリーダーは見出しセルに関連付けられたコンテンツの読み上げにしばしば失敗する。</p>
             <p>Example Code:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <table>
    
    <tr>
-      <td>Name</td>
-      <td>Age</td>
-      <td>Height (cm)</td>
-      <td>Weight (kg)</td>
+      <td>氏名</td>
+      <td>年齢</td>
+      <td>身長 (cm)</td>
+      <td>体重 (kg)</td>
    </tr>   
    
    <tr>
-      <td>Linda</td>
+      <td>リンダ</td>
       <td>33</td>
       <td>169</td>
       <td>59</td>
    </tr>   
    
    <tr>
-      <td>Jack</td>
+      <td>ジャック</td>
       <td>37</td>
       <td>184</td>
       <td>74</td>
    </tr>    
    
    <tr>
-      <td>Kira</td>
+      <td>キラ</td>
       <td>8</td>
       <td>120</td>
       <td>21</td>
    </tr>   
    
    <tr>
-      <td>Daniel</td>
+      <td>ダニエル</td>
       <td>3</td>
       <td>79</td>
       <td>14</td>
@@ -99,33 +98,28 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For all data tables, check if table headers can be correctly programmatically determined by use of one of the following mechanisms: 
-						</p>
+         <p>全てのデータテーブルにとって、テーブル見出しが正しくプログラム的に設定されているかどうかを次の仕組みのどれか一つを使って確認する:</p>
          <olist>
             <item>
-            	<p> headers marked up with table header (<el>th</el>) elements
-						</p>
+            	<p>テーブル見出し要素（<el>th</el>）でマークアップされた見出し</p>
             </item>
-         	<item><p><att>scope</att> attributes on <el>th</el> for tables with more than a single row or column of table headers.</p></item>
-			<item><p><att>scope</att> attributes on <el>th</el> for tables with more than a single row or column of table headers.</p></item>
+         	<item><p>テーブル見出しが1行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
+			<item><p>テーブル見出しが1行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
             <item>
-               <p> headers and data cells associated using <att>headers</att> and <att>id</att> attributes
-						</p>
+               <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられたヘッダとデータのセル</p>
             </item>
             <item>
-               <p> headers marked up as <el>td</el> elements with the <att>scope</att> attribute
-						</p>
+               <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされたヘッダ</p>
             </item>
             <item>
-               <p> headers marked up with ARIA role attributes <att>rowheader</att> or <att>columnheader</att>
-						         </p>
+               <p>ARIAのロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>If all checks are false, then this failure condition applies and the content fails the Success Criterion.</p>
+               <p>もし全部が偽なら、これは失敗例に当たり、コンテンツは達成基準を満たさない。</p>
             </item>
          </ulist>
       </expected-results>
