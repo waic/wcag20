@@ -30,7 +30,7 @@
          <p>Placeholder - actual abstract text for WCAG20-TECHS is included in the XSLT, techs-merge.xslt. This file contains the XML for general techniques and can be used in conjunction with techs-sample-output.xsl to check that techniques will output correctly. </p>
       </abstract>
       <langusage>
-         <language id="en-US"/>
+         <language id="ja"/>
       </langusage>
       <revisiondesc>
          <p/>
