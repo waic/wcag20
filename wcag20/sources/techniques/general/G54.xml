@@ -16,31 +16,29 @@
     <note><p class="prefix">映像ストリームが小さすぎる場合は、手話通訳が見にくくなる。手話通訳を含む映像ストリームを制作する場合は、映像ストリームをアクセシビリティ・サポーテッドなウェブコンテンツ技術でフルスクリーンで再生するメカニズムがあることを確認する。そうでない場合は、映像の中の手話通訳の部分が、映像ストリームがフルスクリーンになった際のサイズまで調節可能にする。</p>
                <p class="prefix">一般的に、手話は単に墨字を符号化したものではないため、コンテンツ制作者は複数種類あるうちのどの手話を用いるかを決めなければならない。通常は主な利用者が使用している手話を用いる。さまざまな利用者を想定する場合は、複数の手話を用いる。複数の手話のための推奨達成方法を参照のこと【訳注：まだ文書化されていない。】。</p></note>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>あるテレビ局が、オンラインニュース映像の角の方、又は傍らで手話通訳を提供している。</p>
+         </item>
+      </ulist>
+   </examples>
    <resources>
       <see-also>
          <ulist>
             <item>
-               <p>Guidelines for the Production of Signing Books</p>
+               <p>手話を作成するための指針</p>
                <ulist>
                   <item>
-                     <p>
-                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/deliver/d31/deliv_31_part3-2.html#3.2.2.6">"Sign Language presentation"</loc>
-                      gives a broad overview of issues to consider when filming sign language interpreters. Includes discussion of signing both written and spoken originals.</p>
+                     <p><loc href="http://www.sign-lang.uni-hamburg.de/signingbooks/deliver/d31/deliv_31_part3-2.html#3.2.2.6">"Sign Language presentation"</loc>では、手話通訳者を撮影する際の留意点の概要を知ることができる。元の素材が書き言葉の場合と話し言葉の場合の両方についての議論も含まれている。</p>
                   </item>
                   <item>
-                     <p>Techniques for filming are discussed in
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">chapter 12, “Filming the Signer(s)"</loc>.</p>
+                     <p>撮影のテクニックについては <loc href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">chapter 12, “Filming the Signer(s)"</loc> で考察されている。</p>
                   </item>
                   <item>
-                     <p>Useful information about how to display the sign language interpreter  in relation to the original synchronized media content is provided in
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide13.htm">Chapter 13, "Editing"</loc>
-                    </p>
+                     <p>オリジナルの同期したメディアコンテンツに関連して手話通訳を表示させる方法についての有益な情報は <loc href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide13.htm">Chapter 13, "Editing"</loc>で提供されている。</p>
                      <note>
-                        <p>These techniques may need to be adapted for Web-based presentation.</p>
+                        <p>これらの実装方法はウェブベースのプレゼンテーションにも適用される必要がある。</p>
                      </note>
                   </item>
                </ulist>
