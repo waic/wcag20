@@ -12,7 +12,7 @@
    <description>
     <p>パンくずリストは、コンテンツがどのような構造になっていたのか、及びこれまでにたどってきたウェブページへ戻る方法を、利用者が想起する助けとなり、また一連のウェブページの中で現在位置を特定する。パンくずリストには、利用者がそのウェブページに到達するまでに通ってきた場所、又はサイトの編成における現在のウェブページの位置が表示されている。</p>
     <p>パンくずリストは、現在のウェブページまでナビゲートする途中にアクセスしたウェブページへのリンクを使って実装される。パンくずリストは、ウェブページ一式の各ウェブページの中で同じ位置に置く。</p>
-    <p>目に見える区切り文字でパンくずリストの中の項目を切り離すと、利用者の助けになる。区切り文字の例には「&gt;」、「|」、「/」、及び「::」がある。</p>
+    <p>目に見える区切り文字でパンくずリストの中の項目を切り離すと、利用者の助けになる。区切り文字の例には「>」、「|」、「/」、「::」、及び「→」がある。</p>
   </description>
    <examples>
       <eg-group>
@@ -29,8 +29,48 @@
       <description><p>「ジェンツーペンギン」を除くすべての項目がリンクとして実装されている。現在位置(ジェンツーペンギン)はパンくずリストに含まれているが、リンクとしては実装されていない。</p>
 </description>
     </eg-group>
+      <eg-group>
+        <description>
+          <p>eコマースサイトの情報設計が、一般から特定の製品区分に徐々に分類されている。</p>
+          <p>現在位置： Acme Company → 電化製品 → コンピューター → ノートパソコン</p>
+          <p>パンくずリストが「現在位置」で始まり、現在利用者がいるページで終わる。リストに入っている項目は、「現在位置」及び「ノートパソコン」を除いて、クリック又はタップ可能なリンクである。この例は、右向き矢印 (→) を区切り位置として使用している。</p>
+          <p>この例では、<el>h2</el>要素、<att>aria-label</att>属性を指定した<el>nav</el>要素、非順序のリストがセマンティクスを提供するために使われている。このマークアップは、CSSによるスタイル指定によって水平のパンくずリストとして表示されるだろう。</p>
+          <p>この例に対するHTML</p>
+        </description>
+        <code role="html5"><![CDATA[ 
+          <nav aria-label="Breadcrumbs"> 
+            <h2>現在位置:</h2> 
+            <ul>
+              <li><a href="/">Acme Company</a> &#8594;</li> 
+              <li><a href="/electronics/">電化製品</a> &#8594;</li>
+              <li><a href="/electronics/computers/">コンピューター</a> &#8594;</li>
+              <li>ノートパソコン</li>
+            </ul> 
+          </nav>
+      ]]></code>
+      <description>
+          <p>この例に対するCSS</p>
+      </description>
+              <code role="CSS"><![CDATA[ 
+      nav, h2, ul, ul li{ display: inline;}
+      nav > h2{ font-size: 1em; } 
+      ul { padding-left: 0em; }
+      ]]></code>
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="ex3.html"
+                    linktype="examples">Breadcrumb example</loc></p>
+
+      </eg-group>
    </examples>
-   <resources/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc href="http://www.w3.org/TR/html5/common-idioms.html#rel-up">HTML5 Bread crumb navigation</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
    <related-techniques>
       <relatedtech idref="G63"/>
       <relatedtech idref="G128"/>
