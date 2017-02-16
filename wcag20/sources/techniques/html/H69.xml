@@ -111,10 +111,17 @@
                     Heading</loc> Eric Meyer</p>
             </item>
             <item>
-          <p>
-            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/">Quick tips for accessible headings</loc>
-          </p>
-        </item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://accessibility.psu.edu/headingshtml/">Heading Tags</loc>
+               </p>
+            </item>
         <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
