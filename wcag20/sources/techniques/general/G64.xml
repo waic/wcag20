@@ -30,8 +30,9 @@
 </description>
     </eg-group>
     <eg-group>
-      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/enterprise/accessibility/reader/index.html">Using Accessible PDF Documents with Adobe Reader 7.0: A Guide for People with Disabilities</loc>【訳注：原文がリンク切れ。WCAGワーキンググループに確認中です。】の最初のページには、ガイドの区分を記載した目次がある。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/enterprise/accessibility/reader/pdfs/reader7_accessibility.pdf">PDF version of the Guide for People with Disabilities</loc>には3ページ目にドキュメント全体のより詳細な目次がある。</p>
-</description>
+         <description>
+            <p><loc href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">Accessing PDF Documents with Assistive Technology: A Screen Reader User's Guide</loc>の目次は2ページ目から始まっている。</p>
+         </description>
     </eg-group>
    </examples>
    <resources/>
