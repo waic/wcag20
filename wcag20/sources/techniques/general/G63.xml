@@ -25,7 +25,19 @@
       </item>
     </ulist>
     <p>サイトマップには、様々なタイプのものがある。最も単純で最も一般的な種類のサイトマップは、それぞれの区分又はサブサイトへのリンクを示した概略である。そのような概略は、サイトのいろいろな区分のページ間のリンクのような、サイト内のより複雑な関係は示さない。大きいサイトへのサイトマップの中には、各区分に関する追加の詳細を示すために展開する見出しを使用しているものもある。</p>
-    <p>サイトマップはサイトのコンテンツと構成について説明する。サイトを更新するときはいつも、サイトマップを更新することが重要である。サイトの全ての区分にリンクしていない、サイトの構成とは異なる構成を提供する、又は、もはや有効ではないリンクを含む、というウェブページは、有効なサイトマップでない。</p>
+
+<p>サイトマップはサイトのコンテンツと構成について説明する。サイトを更新するときはいつも、サイトマップを更新することが重要である。例えば、下記の1つでも満たしている時、サイトマップは有効ではない：</p>
+      <olist>
+         <item>
+            <p>サイトの全ての区分にリンクしていない、又は</p>
+         </item>
+         <item>
+            <p>サイトの構成とは異なる構成を提供する、又は</p>
+         </item>
+         <item>
+            <p>もはや有効ではないリンクを含む</p>
+         </item>
+      </olist>
   </description>
    <examples>
       <eg-group>
@@ -42,14 +54,7 @@
          <ulist>
             <item>
                <p>
-                	<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers">Graphic Organizers</loc>
-                  page at the National Center for Accessible Curriculum provides a useful overview of different kinds of graphic organizers and their uses, plus a summary of relevant research on the effectiveness of graphical organizers for students with learning disabilities.</p>
-            </item>
-            <item>
-               <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.usabilityfirst.com/glossary/?function=display_term&amp;term_id=193">Usability Glossary: sitemap</loc>
+                  <loc href="http://www.usabilityfirst.com/glossary/?function=display_term&amp;term_id=193">Usability Glossary: sitemap</loc>
                 </p>
             </item>
          </ulist>
