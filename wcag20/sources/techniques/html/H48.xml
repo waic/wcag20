@@ -68,7 +68,8 @@
 dt{clear:both;font-weight: bold}
 dt span{display: inline-block; width: 70px;}
 dd span{display: inline-block; margin-right: 5px;} ]]></codeblock>
-      <description><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/working-examples/H48/ContactInfoDL.html" linktype="examples">定義リストを用いた連絡先情報のサンプル</loc>がある。</p>
+      <description><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H48/ContactInfoDL.html">定義リストを用いた連絡先情報のサンプル</loc>がある。</p>
+
 </description>
     </eg-group>
     <eg-group>
