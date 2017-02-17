@@ -55,7 +55,7 @@
 <p>スタイルを使用して、見出しの書式（見出し 1、見出し 2、見出し 3 など）を作成する。スタイルが論理的な構成になるようにする（見出し 2 が見出し 1 より後に来るようにするなど）。</p>
 <p>次の手順に従い、PDF としてエクスポートする。</p>
 <olist><item><p>ファイルメニューの「PDF としてエクスポート」を選択する</p></item><item><p>初めて PDF としてエクスポートする場合には、オプションダイアログボックスが表示される</p></item><item><p>「タグ付き PDF」を選択して、［エクスポート］を押下する</p></item></olist>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF9/openofficecooking.jpg" alt="スクリーンショット：OpenOffice.org Writer で見出しスタイルを選択し、PDF にエクスポートする。" height="380" width="628"/></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/openofficecooking.jpg" height="380" width="628"/><alt>スクリーンショット：OpenOffice.org Writer で見出しスタイルを選択し、PDF にエクスポートする。</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>/Headn エレメントを使用して見出しをマークアップする</head>

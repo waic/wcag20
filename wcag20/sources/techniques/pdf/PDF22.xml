@@ -32,22 +32,22 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <p>電話番号、郵便番号、日付など、多くのフィールドでは、特定の形式またはパターンに従ってデータを入力する必要がある。</p>
 <olist><item><p>特定の形式を必要とするフォーム・コントロールのコンテキストメニューにアクセスする</p></item><item><p>［プロパティ］を選択する</p></item><item><p>［書式］タブで、「形式カテゴリ」（この場合は「日付」）を選択すると、「日付オプション」が表示される</p></item><item><p>このフォーム・コントロールの書式（この場合、mm/dd/yyyy）を選択する</p></item><item><p>［一般］タブで、コントロールの名前およびツールチップとして「日付（mm/dd/yyyy）」を指定する</p></item></olist>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/dateformat.jpg" alt="スクリーンショット：Adobe Acrobat 9 Pro を使用して入力フィールド形式の必須形式を指定する" height="611" width="661"/></p><p>認識されている日付形式を利用者が入力すると、その日付形式は指定した形式に自動的に変換される。日付形式または値が認識されない場合、以下の画像に示されているように、エラーアラートが表示され、詳細情報が提示される。</p>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/dateerror.jpg" alt="スクリーンショット：認識されない形式または値の日付に関するエラーアラート" height="210" width="501"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/required-fields.pdf" linktype="examples">Acrobat の必須項目フィールドのサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/dateformat.jpg" height="611" width="661"/><alt>スクリーンショット：Adobe Acrobat 9 Pro を使用して入力フィールド形式の必須形式を指定する</alt></image></p><p>認識されている日付形式を利用者が入力すると、その日付形式は指定した形式に自動的に変換される。日付形式または値が認識されない場合、以下の画像に示されているように、エラーアラートが表示され、詳細情報が提示される。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/dateerror.jpg" height="210" width="501"/><alt>スクリーンショット：認識されない形式または値の日付に関するエラーアラート</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/required-fields.pdf" linktype="examples">Acrobat の必須項目フィールドのサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>Adobe LiveCycle Designer ES 8.2.1 を使用して入力フィールド形式の検証を提供する</head>
       <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <olist><item><p>必須形式のあるフォーム・コントロールを選択する</p></item><item><p>［オブジェクト］パレットで、［検証パターン］ボタンを押下する</p></item><item><p>これは日付フィールドなので、パターン - 日付フィールドダイアログボックスが表示される。利用者が入力する必要のあるパターンまたは書式を選択する。［OK］をクリックする</p>&#13;
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/form-validation.jpg" alt="スクリーンショット：LiveCycle を使用して、パターン検証を必要とするフォームフィールドを指定する" height="510" width="903"/></p></item><item><p>［オブジェクト］パレットで、「検証パターンのメッセージ」ボックスを使用して警告メッセージを入力する。必要なパターンが含まれていることを確認する。このメッセージは、利用者が無効な日付書式を使用してフォームを発行しようとしたときに表示される</p></item></olist><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/required-fields-lc.pdf" linktype="examples">LiveCycle Designer の必須フィールドのサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/form-validation.jpg" height="510" width="903"/><alt>スクリーンショット：LiveCycle を使用して、パターン検証を必要とするフォームフィールドを指定する</alt></image></p></item><item><p>［オブジェクト］パレットで、「検証パターンのメッセージ」ボックスを使用して警告メッセージを入力する。必要なパターンが含まれていることを確認する。このメッセージは、利用者が無効な日付書式を使用してフォームを発行しようとしたときに表示される</p></item></olist><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/required-fields-lc.pdf" linktype="examples">LiveCycle Designer の必須フィールドのサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>Adobe Acrobat Pro 9 を使用して、JavaScript を使用した PDF フォームで必須日付形式を検証する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <p>次の JavaScript コードは、フォームフィールド（この場合は日付フィールド）を検証するために使用されるスクリプトを示している。このスクリプトをフォームフィールドに追加するには、事例 1 に示されているように、［テキストフィールドのプロパティ］ダイアログボックスを開き、［検証］タブの「編集」を選択する。</p>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF22/jscript.jpg" alt="スクリーンショット：JavaScript 検証コードを指定するために［検証］タブが開かれている、［テキストフィールドのプロパティ］ダイアログボックス" height="462" width="506"/></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/jscript.jpg" height="462" width="506"/><alt>スクリーンショット：JavaScript 検証コードを指定するために［検証］タブが開かれている、［テキストフィールドのプロパティ］ダイアログボックス</alt></image></p></description>
       <codeblock xml:space="preserve"><![CDATA[
 // 日付マスク書式 MM/DD/YYYY 用の JavaScript コード
 var re = /^[mdy0-9]{2}\/[mdy0-9]{2}\/[mdy0-9]{4}$/

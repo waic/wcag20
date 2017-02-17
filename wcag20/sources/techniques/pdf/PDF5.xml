@@ -32,7 +32,7 @@
       <head>Adobe Acrobat 9 Pro を使用して PDF フォーム内に必須フィールドを作成する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>フィールドのコンテキストメニューから［プロパティ］ダイアログボックスを選択する。</p></item><item><p>フィールドが必須である場合は、［必須］チェックボックスを選択する。このチェックボックスによって、選択されたフォームフィールドへの入力が利用者に強制される。必須フィールドが空白のまま利用者がフォームを送信しようとすると、エラーメッセージが表示され、空白の必須フォームフィールドが強調表示される。</p></item></olist>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/form4.jpg" alt="スクリーンショット：［テキストフィールドのプロパティ］ダイアログで、「必須」のチェックボックスが選択されている。" height="388" width="642"/></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/required-fields.pdf" linktype="examples">Acrobat で必須フィールドを作成したサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF5/form4.jpg" height="388" width="642"/><alt>スクリーンショット：［テキストフィールドのプロパティ］ダイアログで、「必須」のチェックボックスが選択されている。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/required-fields.pdf" linktype="examples">Acrobat で必須フィールドを作成したサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -41,7 +41,7 @@
 <olist><item><p>フォーム・コントロールのコンテキストメニューから、パレット > オブジェクトを選択する。</p></item><item><p>［種類］プルダウンメニューから［利用者定義 - 必須］を選択する。</p></item><item><p>［空白のメッセージ］フィールドにエラーメッセージを入力する。このメッセージは、利用者が必須フィールドに値を入力せずにフォームを送信しようとした場合に表示される。</p></item></olist>
 <p>必須フィールドが空白のまま利用者がフォームを送信しようとすると、［空白のメッセージ］に入力されたテキストが表示され、空白の必須フォームフィールドが強調表示される。</p>
 <p>次の画像は、「必須」を選択した Adobe LiveCycle のオブジェクトパレットを示している。</p>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/lc-required2.gif" alt="スクリーンショット：［利用者定義 - 必須］を選択したAdobe LiveCycle Object のパレット" height="468" width="345"/></p><p>フォームラベルに明示的なテキストを追加して（「（必須）」など)、必須フィールドを示すこともできる。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF5/lc-required2.gif" height="468" width="345"/><alt>スクリーンショット：［利用者定義 - 必須］を選択したAdobe LiveCycle Object のパレット"</alt></image></p><p>フォームラベルに明示的なテキストを追加して（「（必須）」など)、必須フィールドを示すこともできる。</p>
 <p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF5/required-fields-lc.pdf" linktype="examples">LiveCycle Designer で必須フィールドを作成したサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>

@@ -23,7 +23,7 @@
       <head>Adobe Acrobat 9 Pro を使用して、デフォルト文書言語を指定するために /Lang エントリを追加する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>Adobe Acrobat Pro で文書を開く</p></item><item><p>［ファイル］メニューで［プロパティ］を選択する</p></item><item><p>［プロパティ］ダイアログボックスで、［アドバンスト］タブを選択する</p></item><item><p>「読み上げオプション」フィールドで「言語」コンボボックスからデフォルトの言語を選択する</p></item></olist>
-<p><img class="eximg" src="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF16/docprop.gif" alt="スクリーンショット：Adobe Acrobat の［プロパティ］ダイアログボックスでデフォルト言語を指定" height="322" width="263"/></p><note><p class="prefix">Acrobat には 16 種類のプリセット言語が用意されている。一覧にない言語（ロシア語など）を指定する必要がある場合は、言語の名前ではなくその言語の ISO 639 コードを入力する必要がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/docprop.gif" height="322" width="263"/><alt>スクリーンショット：Adobe Acrobat の［プロパティ］ダイアログボックスでデフォルト言語を指定</alt></image></p><note><p class="prefix">Acrobat には 16 種類のプリセット言語が用意されている。一覧にない言語（ロシア語など）を指定する必要がある場合は、言語の名前ではなくその言語の ISO 639 コードを入力する必要がある。</p>
 </note>
 <p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF16/language-en.pdf" linktype="examples">Acrobat Pro を使用して /Lang エントリを追加したサンプル（PDFファイル）</loc>がある。</p>
 </description>
