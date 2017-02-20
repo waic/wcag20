@@ -8,6 +8,7 @@
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="failure"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="failure"/>
       <success-criterion idref="navigation-mechanisms-focus-visible" relationship="failure"/>
       <success-criterion idref="consistent-behavior-receive-focus" relationship="failure"/>
    </applies-to>
@@ -41,7 +42,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>2. を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>
