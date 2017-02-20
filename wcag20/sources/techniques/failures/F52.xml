@@ -8,13 +8,15 @@
    </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-receive-focus" relationship="failure"/>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context" relationship="failure"/>
    </applies-to>
    <description>
-    <p>製品又はサービスを宣伝するために、あるウェブサイトではページが読みこまれた時に新しいウィンドウが開く。この達成方法の目的は、ページが読み込まれたと同時に1つ又はそれ以上の新しいウィンドウが開かれることによって、ページが利用者を混乱させないようにすることである。</p>
+    <p>製品又はサービスを宣伝するために、あるウェブサイトではページが読みこまれた時に新しいウィンドウが開く。この達成方法の目的は、ページが読み込まれたと同時に 1 つ以上の新しいウィンドウが開かれることによって、ページが利用者を混乱させないようにすることである。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くためにHTML 4.01で一般的に使用される。</p>
+      <head/>
+      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くために HTML 4.01 で一般的に使用される。</p>
 </description>
       <code><![CDATA[
 window.onload = showAdvertisement;
@@ -24,7 +26,8 @@ window.onload = showAdvertisement;
  }]]></code>
     </eg-group>
     <eg-group role="failure">
-      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くためにXHTMLで一般的に使用される。</p>
+      <head/>
+      <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くために XHTML で一般的に使用される。</p>
 </description>
       <code><![CDATA[
 if (window.addEventListener) { 
@@ -49,10 +52,13 @@ window.open('noscript.html', '_blank', 'height=200,width=150');
       <procedure>
       <olist>
         <item>
-          <p>新しいページをロードする。</p>
+          <p>新しいページをロードする</p>
         </item>
         <item>
-          <p>新しいページをロードしたことの結果として新しいウィンドウが開いた。</p>
+          <p>新しいページをロードしたことの結果として新しいウィンドウが開いた</p>
+        </item>
+        <item>
+          <p>新しいウィンドウに自動的にフォーカスが移っている</p>
         </item>
       </olist>
     </procedure>
