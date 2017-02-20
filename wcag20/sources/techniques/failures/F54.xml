@@ -8,6 +8,7 @@
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="failure"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="failure"/>
    </applies-to>
    <description>
     <p>ポインティング・デバイスに特有のイベント・ハンドラだけがコンテンツ上の機能を呼び出すメカニズムであるとき、（マウスのような、目と手による連携が必要な機器を利用できない）全盲の利用者をはじめとした、代替キーボード又はキーボードエミュレーターとして動作する入力機器を用いなければならない利用者は、コンテンツの機能にアクセスできない。</p>
@@ -37,7 +38,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>1. を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
          <!--<p>Test n.n will fail the test (<code>onMouseDown</code> is used and  keyboard-specific event handler is not used)</p>
