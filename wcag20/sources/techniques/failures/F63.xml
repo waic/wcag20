@@ -10,11 +10,23 @@
       <success-criterion idref="navigation-mechanisms-refs" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという不適合事例について解説する。リンクの文脈がそのリンクと同じ文、段落、リストの項目又はテーブルのセルではない場合、利用者はそのリンクがどこに誘導するものかを容易に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この不適合事例に該当する。</p>
+    <p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合：</p>
+      <ulist>
+         <item>
+            <p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p>
+         </item>
+         <item>
+            <p>前の見出しの場合</p>
+         </item>
+         <item>
+            <p><att>aria-label</att> や <att>aria-labelledby</att> などの適切な ARIA プロパティを介する場合</p>
+         </item>
+      </ulist>
+    <p>ユーザーはリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <head>ニュースサービス</head>
+      <head>隣接する段落のリンク</head>
       <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
@@ -25,7 +37,7 @@
 <p><a href="ff.html">続きを読む...</a></p>]]></codeblock>
     </eg-group>
     <eg-group role="failure">
-      <head>無償プレーヤーのダウンロード</head>
+      <head>レイアウトテーブル内の隣接セルのリンク</head>
       <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
@@ -41,41 +53,45 @@
    </tr>
  </table>]]></codeblock>
     </eg-group>
-    <!--eg-group role="failure">
-      <head>不適合となる 定義リストの使用</head>
-      <description><p>HTML及びびXHTMLでは、定義リストによって用語とその定義との関連性を提供することができる。したがって、理論上は定義部分に置かれたリンクはその用語部分を文脈として利用できるはずである。ところが、定義リストに対するサポートは著しく進んでおらず、今日の支援技術の利用者が定義リストのみを用いて文脈を発見する手段はない。定義リストは、連想的な関係を提供するのに有用なメカニズムであるが、現時点において<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">達成基準2.4.4</loc>を満たすことができる達成方法ではない。</p>
-</description>
-      <code><dl>
-    <dt>ハリー・ポッターと秘密の部屋</dt>
-    <dd>ヴォルデモート卿と対決しなければならない魔法の力を持った少年の物語。</dd>
-    <dd><a href="potter.php?id=123">今すぐ購入</a></dd>
-    <dt>ハリー・ポッターと炎のゴブレット</dt>
-    <dd>三大魔法学校対抗試合でハリーは代表選手に選ばれてしまう。</dd>
-    <dd><a href="potter.php?id=124">今すぐ購入</a></dd>
-    <dt>ハリー・ポッターとアズカバンの囚人</dt>
-    <dd>ホグワーツ魔法魔術学校の3年生となったハリー・ポッターが、
-　　両親の死にまつわる真相を知らされる1年間を描く。</dd>
-    <dd><a href="potter.php?id=125">今すぐ購入</a></dd>
-</dl></code>
-    </eg-group-->
    </examples>
-   <resources/>
-   <related-techniques/>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA8"/>
+      <relatedtech idref="ARIA7"/>
+   </related-techniques>
    <tests>
       <procedure>
-      <olist>
-        <item>
-          <p>リンクテキストが示すリンクの目的を理解するために必要なコンテンツを特定する。</p>
-        </item>
-        <item>
-          <p>そのコンテンツが同じ文、段落、リストの項目、又はテーブルのセルに含まれている、もしくは直前の見出しに含まれている。</p>
-        </item>
-      </olist>
-    </procedure>
+         <p>リンクの目的を理解するために、追加が必要なリンクの文脈を探す。各リンクについて：</p>
+         <olist>
+            <item>
+               <p>文脈が同じ文章、段落、リスト項目、テーブルのセル、関連するテーブルのヘッダー、または前の見出しに含まれているかどうかを確認する。</p>
+            </item>
+            <item>
+               <p>たとえば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分な文脈を提供するなど、リンクの文脈をプログラムで決定できるかどうかを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしていない場合、達成基準に不適合となる。</p>
+               <p>1 及び 2 が偽である場合、このコンテンツは達成基準に合格しない。</p>
             </item>
          </ulist>
       </expected-results>
