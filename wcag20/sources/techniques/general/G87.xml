@@ -16,16 +16,29 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>例1：耳の聞こえない利用者がインタラクティブな教材を使えるようにするため、大学の音声によるインタラクティブな教材すべてにキャプションが組み込まれ、キャプションをオンにするための手順説明が提供されている。</p>
-<p>例2：メディア会社のオンライン映画すべてにキャプションが含まれていて、クローズドキャプションを実装できるフォーマットで提供されている。</p>
-<p>例3：既存の映画に、同期情報を含む特別なキャプションファイルが提供されている。映画のウィンドウに同期したキャプションを、画面上の別ウィンドウで提供できるプレーヤーが使えるようになっている。</p>
-<p>例4：ローカルニュースのビデオにキャプションが付けられていて、使用しているプレーヤーに応じて映像上又は別ウィンドウにキャプションを表示することができる。</p>
-</description>
-    </eg-group>
+         <description>
+            <p>耳の聞こえない利用者がインタラクティブな教材を使えるようにするため、大学の音声によるインタラクティブな教材すべてにキャプションが組み込まれ、キャプションをオンにするための手順説明が提供されている。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <description>
+            <p>メディア会社のオンライン映画すべてにキャプションが含まれていて、クローズドキャプションを実装できるフォーマットで提供されている。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <description>
+            <p>：既存の映画に、同期情報を含む特別なキャプションファイルが提供されている。映画のウィンドウに同期したキャプションを、画面上の別ウィンドウで提供できるプレーヤーが使えるようになっている。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <description>
+            <p>ローカルニュースのビデオにキャプションが付けられていて、使用しているプレーヤーに応じて映像上又は別ウィンドウにキャプションを表示することができる。</p>
+         </description>
+      </eg-group>
    </examples>
    <resources>
       <see-also>
-         <p>Guides to Captioning</p>
+         <p>キャプションのガイダンス</p>
          <ulist>
             <item>
                <p>
@@ -73,12 +86,11 @@
                 </p>
             </item>
          </ulist>
-         <p>Other Captioning</p>
+         <p>その他のキャプション関連</p>
          <ulist>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/">National Center for Accessible
-                    Media</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://ncam.wgbh.org/">National Center for Accessible Media</loc>
                 </p>
             </item>
          </ulist>
