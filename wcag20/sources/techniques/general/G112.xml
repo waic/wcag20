@@ -24,9 +24,8 @@
 </description>
     </eg-group>
     <eg-group>
-      <head>W3Cのキーワード&#13;
-Example 3: W3C key words</head>
-      <description><p>定義: この基準でしなければならない、してはならない、しなければならない、しなければならない、してはならない、することが望ましい、しないほうがよい、することが望ましい、してもよい、及びしてもよいのキーワードは、 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.faqs.org/rfcs/rfc2119.html">RFC 2119</loc> に記載されている解釈による。</p>
+      <head>W3Cのキーワード</head>
+      <description><p>定義: この基準で、「しなければならない（must）」、「してはならない（must not）」、「しなければならない（required）」、「しなければならない（shall）」、「してはならない（shall not）」、「することが望ましい（should）」、「しないほうがよい（should not）」、「することが望ましい（recommended）」、「してもよい（my）」、及び「してもよい（optional）」のキーワードは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.faqs.org/rfcs/rfc2119.html">RFC 2119</loc>に記載されている解釈による。</p>
 </description>
     </eg-group>
     <eg-group>
