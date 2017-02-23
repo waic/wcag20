@@ -28,6 +28,7 @@
 <p>さらに、左側のナビゲーションウィンドウに、見出しが PDF のしおりとして表示される。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.jpg" height="249" width="937"/><alt>スクリーンショット：Word文書の見出しから生成された目次としおりを表示しているPDF文書</alt></image></p><p>文書に用語集やインデックスが含まれている場合、これらのセクションの見出しが目次に（またナビゲーションウィンドウのしおりとして）表示される。また、目次は、しおりも付けられるようにするために、見出しによってマークアップされなければならない。</p>
 <p>このマークアップがオーサリングツールによって行われていない場合は、Adobe Acrobat Pro を使用してタグを設定することができる。変換された見出しを変更する方法または新しい見出しを追加する方法については、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF9.html">PDF9：PDF 文書内のコンテンツを見出しタグでマークすることで見出しを作成する</loc>」を参照のこと。</p>
+<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" ref="bookmarks.docx" linktype="examples">working example of creating bookmarks with Word 2007</loc>でしおりを作成するサンプル（Wordファイル）がある。</p>
 </description>
     </eg-group>
     <eg-group>
