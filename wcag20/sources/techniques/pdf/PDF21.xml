@@ -55,11 +55,14 @@
     <eg-group>
       <head>Adobe Acrobat 9 Pro を使用して、リストを正しく書式設定する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<olist><item><p>表示 &gt; ナビゲーションパネル... &gt; タグ</p></item><item><p>文書内のリストを検査して、書式設定に誤りがないかどうかを確認する。</p></item></olist>
+<olist><item><p>表示 &gt; ナビゲーションパネル... &gt; タグ</p></item>
+<item><p>文書内のリストを検査して、書式設定に誤りがないかどうかを確認する。</p></item></olist>
 <p>次の画像では、3番目のリストがテキストとして書式設定されている。このリスト項目は改行によってのみ分割されている。そのため、支援技術では、利用者に対してこれをリストとして分かりやすく表現できない。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/unformattedlist.jpg" alt="スクリーンショット：タグパネルでは、書式設定に誤りのあるリストは、リストタグの下にネストされるのではなく、Textbodyタグの下にテキストとして表示される。" height="427" width="550"/></image></p><p>リストを修復するには、［タグ］パネルを使用してコンテンツ内にリストタグを作成する。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/unformattedlist.jpg" alt="スクリーンショット：タグパネルでは、書式設定に誤りのあるリストは、リストタグの下にネストされるのではなく、Textbodyタグの下にテキストとして表示される。" height="427" width="550"/></image></p>
+<p>リストを修復するには、［タグ］パネルを使用してコンテンツ内にリストタグを作成する。</p>
 <p>次の画像は、結果として作成された、正しく書式設定された最初のリスト項目を示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/listrepair.jpg" alt="スクリーンショット：［タグ］パネルで、リストタグの下に正しくネストされた最初のリスト項目" height="448" width="556"/></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/lists.pdf" linktype="examples">Acrobat Pro でリストが適切に書式設定されたサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/listrepair.jpg" alt="スクリーンショット：［タグ］パネルで、リストタグの下に正しくネストされた最初のリスト項目" height="448" width="556"/></image></p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/lists.pdf" linktype="examples">Acrobat Pro でリストが適切に書式設定されたサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -156,7 +159,7 @@ endobj
 
 400 0 obj
   &lt;&lt; /Type /StructElem
-     /S /L                   % リスト階層内の最上位の構造エレメント                
+     /S /L                   % リスト階層内の最上位の構造エレメント
      /K [201 0 R 211 0 R 212 0 R 213 0 R]
   &gt;&gt;
 endobj]]></codeblock>
@@ -166,21 +169,12 @@ endobj]]></codeblock>
       <see-also>
          <ulist>
             <item>
-               <p> Section 14.8.4.3.3 (List Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
-    					1.7 (ISO 32000-1)</loc> 
+               <p> Section 14.8.4.3.3 (List Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc> 
                </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://help.adobe.com/en_US/acrobat/X/pro/using/WS58a04a822e3e50102bd615109794195ff-7ce6.w.html">Edit Tags in the Tag Panel documentation</loc> 
-               </p>
-            </item>
-            <item>
-               <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
                </p>
             </item>
          </ulist>
@@ -193,7 +187,10 @@ endobj]]></codeblock>
       <procedure>
       <olist>
         <item><p>PDF 文書内のリストについて、次のいずれかの方法で確認する。</p>
-<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げ、コンテンツが 1 行単位で読み上げられるときにリストが正しく読み上げられる</p></item><item><p>リストを表示できるツールを使用して PDF 文書を開くと、リストを表示してリストが正しく構造化されている</p></item><item><p>タグツリーを検査すると、リストが PDF 仕様に基づいて構造化されている</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、リストが正しく構造化されていることを確認する</p></item></ulist></item>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げ、コンテンツが 1 行単位で読み上げられるときにリストが正しく読み上げられる</p></item>
+<item><p>リストを表示できるツールを使用して PDF 文書を開くと、リストを表示してリストが正しく構造化されている</p></item>
+<item><p>タグツリーを検査すると、リストが PDF 仕様に基づいて構造化されている</p></item>
+<item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、リストが正しく構造化されていることを確認する</p></item></ulist></item>
       </olist>
     </procedure>
     <expected-results>
@@ -206,8 +203,7 @@ endobj]]></codeblock>
    </tests>
    <admin>
       <source>
-         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_List_tags_for_lists_in_PDF_documents"/>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_List_tags_for_lists_in_PDF_documents"/>
       </source>
    </admin>
 </technique>
