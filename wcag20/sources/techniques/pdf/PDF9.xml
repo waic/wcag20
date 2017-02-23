@@ -17,7 +17,7 @@
     </ua-issue>
   </ua-issues>
   <description>
-    <p>この達成方法の目的は、支援技術で認識されるように PDF 文書内の見出しをマークアップする方法を示すことである。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>この実装方法の目的は、支援技術で認識されるように PDF 文書内の見出しをマークアップする方法を示すことである。 見出しは構造ツリーの中で見出しエレメント（H, H1, H2, ... H6)を用いてマークアップされる。これは通常、PDF のオーサリングツールを使用して行う。</p>
     <p>見出しマークアップは次の目的のために使用できる。</p>
     <ulist>
       <item>
@@ -33,9 +33,7 @@
         <p>視覚的な見出しの外観のある図（テキストを含む）をマークアップする</p>
       </item>
     </ulist>
-    <p>ウェブコンテンツ技術によっては、見出しで論理階層を定義するよう設計されている。見出しの順序のスキップレベルで、文書の構造が適切に熟慮されている、または意味よりも視覚的な表現のために特定の見出しが選択されているという印象が形成される場合がある。作成者は、見出しを階層的に組み込むことが推奨される。</p>
     <p>見出しでコンテンツの重要なセクションの始まりが示されるので、支援技術の利用者は見出しのリストにアクセスして、適切な見出しに直接ジャンプし、コンテンツを読み始めることができる。見出しでコンテンツを「ざっと読み」、興味のあるコンテンツに直接移動できるこの機能は、そうしなければコンテンツへのアクセスが遅くなってしまう利用者にとって、操作が非常にスピードアップする。</p>
-    <p>例えば HTML 文書では、H1 ～ H6 の HTML タグを正しく使用することで、HTML の見出しが、正しくタグ付けされた PDF の見出しに変換される。見出しの使用方法については、一般的な達成方法として「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G141.html">G141：見出しを用いてウェブページを構造化する</loc>」を参照のこと。</p>
   </description>
    <examples>
       <eg-group>
@@ -58,9 +56,9 @@
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/openofficecooking.jpg" height="380" width="628"/><alt>スクリーンショット：OpenOffice.org Writer で見出しスタイルを選択し、PDF にエクスポートする。</alt></image></p></description>
     </eg-group>
     <eg-group>
-      <head>/Headn エレメントを使用して見出しをマークアップする</head>
-      <description><p>PDF 文書内の見出しは、構造ツリー内の /Head<em>n</em> エレメントを使用してマークアップできる。ここで、<em>n</em> は 1 ～ 6 の数字である（/Head1、/Head2 など）。 </p>
-<p>次のコードフラグメントは、/Head<em>n</em> エレメントを使用してコンテンツをマークアップする一般的なコードを示している。これは通常、オーサリングツールを使用して行う。</p>
+      <head>/H<emph>n</emph> エレメントを使用して見出しをマークアップする</head>
+      <description><p>PDF 文書内の見出しは、構造ツリー内の /H<em>n</em> エレメントを使用してマークアップできる。ここで、<em>n</em> は 1 ～ 6 の数字である（/H1、/H2 など）。 </p>
+<p>次のコードフラグメントは、/H<em>n</em> エレメントを使用してコンテンツをマークアップする一般的なコードを示している。なお、この例においては、/H1 は /Head1 にroleがマップされている。これは通常、オーサリングツールを使用して行う。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
 0 obj% Document catalog
@@ -130,22 +128,17 @@ ET				% テキストオブジェクトの終わり ]]></codeblock>
       <see-also>
          <ulist>
             <item>
-               <p> Section 14.8.4.3.2 (Paragraphlike Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
-    					1.7 (ISO 32000-1)</loc> 
+               <p>Section 14.8.4.3.2 (Paragraphlike Elements) in <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc> 
                </p>
             </item>
             <item>
                <p> 
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="https://accessdp.wordpress.com/fixing-pdfs-for-accessibility/headings/">PDF
-    							Accessibility Documentation:headings</loc> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://accessdp.wordpress.com/fixing-pdfs-for-accessibility/headings/">PDF Accessibility Documentation:headings</loc> 
                </p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
                </p>
             </item>
          </ulist>
@@ -158,7 +151,10 @@ ET				% テキストオブジェクトの終わり ]]></codeblock>
       <procedure>
       <olist>
         <item><p>別個のセクションに分割されているすべての PDF コンテンツについて、次のいずれかの方法を使用して、見出しが正しくタグ付けされていることを確認する。</p>
-<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、見出しのリストが正しく読み上げられる</p></item><item><p>PDF エディターを使用して、見出しが正しくタグ付けされていることを確認する</p></item><item><p>/Head<em>n</em> エントリを表示できるツールを使用して PDF 文書を開き、見出しが正しくタグ付けされていることを確認する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、見出しが正しくタグ付けされていることを確認する</p></item></ulist></item>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、見出しのリストが正しく読み上げられる</p></item>
+<item><p>PDF エディターを使用して、見出しが正しくタグ付けされていることを確認する</p></item>
+<item><p>/Head<em>n</em> エントリを表示できるツールを使用して PDF 文書を開き、見出しが正しくタグ付けされていることを確認する</p></item>
+<item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、見出しが正しくタグ付けされていることを確認する</p></item></ulist></item>
       </olist>
     </procedure>
     <expected-results>
