@@ -49,7 +49,7 @@
       <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>箇条書きと番号付けツールを使用して、OpenOffice.org Writer 文書内でリストを作成または修復する。PDF への変換時にリストが正しく書式設定されていることを確認するには、この方法が最も簡単である。</p>
 <p>次の画像では、リストツールを使用して番号付きリストと箇条書きリストが作成されている。3番目のリストにはリストツール（ツールバーを参照）を使用しなかったため、PDF への変換時にリストがリストエレメントとしてタグ付けされない。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists-oo.jpg" height="517" width="451"/><alt>スクリーンショット：OpenOffice.org Writerファイルで正しく書式設定された番号付きリストおよび記号付きリスト。3番目のセクションのテキストは、リストであるかのように表示されているが、OpenOffice.org Writer のリスト書式設定ツールは使用されていない。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/lists.odt" linktype="examples">OpenOffice Writer 文書にリストを追加したサンプル（OpenDocumentテキストファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists-oo.jpg" height="517" width="451"/><alt>スクリーンショット：OpenOffice.org Writerファイルで正しく書式設定された番号付きリストおよび記号付きリスト。3番目のセクションのテキストは、リストであるかのように表示されているが、OpenOffice.org Writer のリスト書式設定ツールは使用されていない。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.odt"><!-- linktype="examples"-->OpenOffice Writer 文書にリストを追加したサンプル（OpenDocument テキストファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -62,7 +62,7 @@
 <p>リストを修復するには、［タグ］パネルを使用してコンテンツ内にリストタグを作成する。</p>
 <p>次の画像は、結果として作成された、正しく書式設定された最初のリスト項目を示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/listrepair.jpg" alt="スクリーンショット：［タグ］パネルで、リストタグの下に正しくネストされた最初のリスト項目" height="448" width="556"/></image></p>
-<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF21/lists.pdf" linktype="examples">Acrobat Pro でリストが適切に書式設定されたサンプル（PDFファイル）</loc>がある。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.pdf"><!-- linktype="examples"-->Acrobat Pro でリストが適切に書式設定されたサンプル（PDF ファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>

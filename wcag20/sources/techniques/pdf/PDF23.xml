@@ -47,7 +47,7 @@
 <olist><item><p>アドバンスト > アクセシビリティ > フォームフィールド認識の実行を使用して、フォームフィールドを自動検出し、入力可能にする</p></item></olist>
 <p>次の画像は、タグ付き PDF に変換される文書内のフォームフィールドを検出するために、フォームフィールド認識の実行ツールが選択されている状態を示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1.jpg" height="307" width="548"/><alt>スクリーンショット：Adobe Acrobat Pro の PDF 文書内のフォームフィールド。アドバンスト／アクセシビリティメニューが選択され、フォームフィールド認識の実行ツールが表示されている。</alt></image></p><p>次の画像は、フォームフィールド認識の実行ツールの実行後に表示されるフォームフィールドを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1a.jpg" height="488" width="872"/><alt>スクリーンショット：フォームフィールド認識ツールを実行した後の、Adobe Acrobat Pro の PDF 文書内のフォームフィールド</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form-fields-keybd.pdf" linktype="examples">Acrobat のインタラクティブなコントロールのサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1a.jpg" height="488" width="872"/><alt>スクリーンショット：フォームフィールド認識ツールを実行した後の、Adobe Acrobat Pro の PDF 文書内のフォームフィールド</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form-fields-keybd.pdf"><!-- linktype="examples"-->Acrobat のインタラクティブなコントロールのサンプル（PDF ファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -56,7 +56,7 @@
 <p>次のようにして、キーボードでアクセス可能なフォーム・コントロールをフォームに追加できる。</p>
 <olist><item><p>フォーム > フィールドを追加または編集 を選択する。これにより、フォームがフォーム編集モードになる</p></item><item><p>左上にある新規フィールドを追加メニューを開き、追加するフォームフィールドを選択する。以下の画像はフィールドのメニューを示している</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1c.jpg" height="306" width="268"/><alt>スクリーンショット：使用可能なフォームフィールドの一覧が表示されている、新規フィールドを追加メニュー&#13;&#10;</alt></image></p><p>次の画像は、事例 1 のフォームに追加されたチェックボックスを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1b.jpg" height="157" width="459"/><alt>スクリーンショット：フィールドを追加または編集を使用してフォームに追加されたチェックボックス&#13;&#10;</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF23/form-fields-keybd-lc.pdf" linktype="examples">LiveCycle Designer のインタラクティブなコントロールのサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form1b.jpg" height="157" width="459"/><alt>スクリーンショット：フィールドを追加または編集を使用してフォームに追加されたチェックボックス&#13;&#10;</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form-fields-keybd-lc.pdf"><!-- linktype="examples"-->LiveCycle Designer のインタラクティブなコントロールのサンプル（PDFファイル）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>

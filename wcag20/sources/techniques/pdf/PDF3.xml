@@ -38,14 +38,16 @@
       <head>Microsoft Word 2007 を使用して 2 段組みの文書を作成する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>Word のページレイアウト > 段組みツールを使用して作成した複数列の文書は通常、タグ付き PDF に変換したときに正しい読み上げ順序になる。次の画像は Word の段組みツールを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/word-col-tool.jpg" height="381" width="835"/><alt>スクリーンショット：Wordの段組みツールで、ページを二段組みにするために「2段」が選択されている。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order-2cols-word.docx" linktype="examples">Word 2007 を使用した 2 段組み文書のサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order-2cols-word.pdf" linktype="examples">Word 2007 を使用した 2 段組み文書のサンプル (PDF ファイル)</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/word-col-tool.jpg" height="381" width="835"/><alt>スクリーンショット：Wordの段組みツールで、ページを二段組みにするために「2段」が選択されている。</alt></image></p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order-2cols-word.docx"><!-- linktype="examples"-->Word 2007 を使用した 2 段組み文書のサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order-2cols-word.pdf"><!-- linktype="examples"-->Word 2007 を使用した 2 段組み文書のサンプル (PDF ファイル)</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>OpenOffice.org Writer 2.2 を使用して 2 段組みの文書を作成する</head>
       <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>OpenOffice.org Writer の書式 > 段組みツールを使用して作成した複数列の文書は通常、タグ付き PDF に変換したときに正しい読み上げ順序になる。次の画像は OpenOffice.org Writer の段組みツールを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/oo-2col-tool.jpg" height="532" width="891"/><alt>スクリーンショット：OpenOffice.org Writerの段組みツールで、ページを二段組みにするために「2段」が選択されている。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order-2cols-oo.odt" linktype="examples">OpenOffice Writer を使用した 2 段組み文書のサンプル (OpenOffice ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order-2cols-oo.pdf" linktype="examples">OpenOffice Writer を使用した 2 段組み文書のサンプル (PDF ファイル)</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/oo-2col-tool.jpg" height="532" width="891"/><alt>スクリーンショット：OpenOffice.org Writerの段組みツールで、ページを二段組みにするために「2段」が選択されている。</alt></image></p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order-2cols-oo.odt"><!-- linktype="examples"-->OpenOffice Writer を使用した 2 段組み文書のサンプル (OpenOffice ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order-2cols-oo.pdf"><!-- linktype="examples"-->OpenOffice Writer を使用した 2 段組み文書のサンプル (PDF ファイル)</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -98,45 +100,14 @@
             </table>
 
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/page-props.jpg" height="430" width="566"/><alt>スクリーンショット：Adobe Acrobat Professionalの［ページのプロパティ］ダイアログ。選択肢として、行の順序を使用、列の順序を使用、文書構造を使用、指定しないの四つがあり、「文書構造を使用する」が選択されている。これがデフォルトである。</alt></image></p>
-<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order.docx" linktype="examples">タブ順序設定のサンプル (Word ファイル)</loc> and <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF3/reading-order.pdf" linktype="examples">タブ順序設定のサンプル (PDF ファイル)</loc>がある。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order.docx"><!-- linktype="examples"-->タブ順序設定のサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reading-order.pdf"><!-- linktype="examples"-->タブ順序設定のサンプル (PDF ファイル)</loc>がある。</p>
 </description>
     </eg-group>
-    <!--eg-group>
-      <head>Adobe Acrobat 9 Pro で折り返しを使用して読み上げ順序を確認する</head>
-      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>PDF 文書の読み上げ順序をすばやく確認するには、次のように Adobe Acrobat Pro の折り返し表示を使用する。</p>
-<ulist><item><p>表示 > ズーム > 折り返し</p></item></ulist>
-<p>タグ付き PDF が正しい読み上げ順序でリフローしない場合は、オーサリングツールを使用して読み上げ順序の問題を修正し、文書をタグ付き PDF に再変換する。元の文書とオーサリングツールを使用できない場合は、TouchUp 読み上げ順序ツールの順序パネルを使用して、読み上げ順序の問題を解決できる（事例 3 および4 を参照のこと）。</p>
-<p>次の画像は、2 段組みの文書がタグ付き PDF に変換されるようすを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reflow1.jpg" height="539" width="509"/><alt>スクリーンショット：Adobe Acrobat Proの二段組みの文書</alt></image></p><p>次の画像は、同じ 2 段組みの文書をリフロービューで表示したようすを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/reflow2.jpg" height="322" width="844"/><alt>スクリーンショット：Adobe Acrobat Proで折り返し表示にした二段組みの文書</alt></image></p></description>
-    </eg-group-->
-    <!--eg-group>
-      <head>Adobe Acrobat 9 Pro の順序パネルを使用して読み上げ順序を確認する</head>
-      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>文書の読み上げ順序を表示するには、次の操作を行う。</p>
-<olist><item><p>アドバンスト > アクセシビリティ > TouchUp 読み上げ順序を選択する。</p></item><item><p>［順序パネルを表示］ボタンをクリックする。</p></item></olist>
-<p>TouchUp 読み上げ順序ツールで、［ページのコンテンツの順序を表示］チェックボックスを選択する。隣接ページコンテンツの各セクションが別個の領域として強調表示され、読み上げ順序内の配置に従って番号が付けられる。</p>
-<p>次の画像では、読み上げ順序の中で必須フィールドのテキストがヘッダの前になっている。これはヘッダの後でなければならない。これらはコンテンツ順序の項目 6 と 7 である。事例 6 は順序を修正する方法を示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/readingorder1.jpg" height="633" width="622"/><alt>Adobe Acrobat ProでのPDF文書テキストとフォーム・フィールド。読み上げ順序が［順序］パネルで示されており、ページのコンテンツのハイライトされたセクションに番号が振られている。</alt></image></p></description>
-    </eg-group-->
-    <!--eg-group>
-      <head>Adobe Acrobat 9 Pro の順序パネルを使用して読み上げ順序を修正する</head>
-      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>事例 5 の読み上げ順序を修正するには、［順序］パネルを使用する。</p>
-<olist><item><p>次のいずれかの操作を行う。</p>
-<ulist><item><p>必須フィールドのテキストの前にヘッダをドラッグ＆ドロップ</p></item><item><p>テキストを切り取り、ヘッダの後に貼り付け</p></item></ulist></item></olist>
-<p>次の画像では、テキストとヘッダの読み上げ順序が正しくなっている。つまり、6 と 7 の番号が付いたコンテンツのエレメントが、正しい読み上げ順序に従って入れ替えられたことになる。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/readingorder2.jpg" height="514" width="637"/><alt>スクリーンショット：Adobe Acrobat Proで修正された読み上げ順序。6 と 7 の番号が付いたコンテンツが入れ替えられ、正しい順序になっている。</alt></image></p><p>この修正を行うと、すべてのコンテンツが正しい読み上げ順序（テキスト、フォーム、フォームフィールド、フォーム、テキストの順序）になる。利用者は正しい順序で、テキストからフォームフィールドに移動し、またフォームフィールドから移動できる。</p>
-<note><p class="prefix">［順序］パネルを使用してコンテンツの順序を変更する方法は、PDF 内の単純なテキストコンテンツに適している。その理由は、［順序］パネルを使用した変更が、読み上げ順序だけでなく、PDF に含まれているコンテンツの基盤の構造にも影響するからである。それによって、特定のコンテンツが他のコンテンツの背後に隠れるようになるなど、ページ上のコンテンツの z 順序に影響する場合がある。作成者は、［順序］パネルを使用する前に作業を保存して、変更によって文書に適切でない影響が生じていないかどうかを確認する必要がある。</p>
-</note>
-</description>
-    </eg-group-->
     <eg-group>
       <head>Adobe Acrobat 9 Pro のタグパネルを使用して読み上げ順序を修正する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>事例 5 の読み上げ順序を修正するには、［タグ］パネルで次のいずれかの操作を行う。</p>
-<ulist><item><p><code>H1</code> タグを必須フィールドのテキスト（<code>H2</code> タグ）の前にドラッグ＆ドロップ</p></item><item><p><code>H2</code> タグを切り取り、<code>H1</code> タグの後に貼り付け</p></item></ulist>
+<ulist><item><p><el>H1</el> タグを必須フィールドのテキスト（<el>H2</el> タグ）の前にドラッグ＆ドロップ</p></item><item><p><code>H2</code> タグを切り取り、<code>H1</code> タグの後に貼り付け</p></item></ulist>
 <p>次の画像では、テキストとヘッダの読み上げ順序が正しくなっている。つまり、コンテンツのエレメント <code>H1</code> と <code>H2</code> が、正しい読み上げ順序に従って入れ替えられたことになる。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/tab-order.jpg"/><alt>スクリーンショット：Adobe Acrobat Proで修正された読み上げ順序。H1タグとH2タグが入れ替えられて、正しい順序になっている。</alt></image></p></description>
     </eg-group>
