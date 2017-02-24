@@ -8,13 +8,14 @@
    </applicability>
    <applies-to>
       <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
    </applies-to>
    <description>
     <p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声解説によって、映像の説明が提供される。</p>
   </description>
    <examples>
       <eg-group>
-      <head>QuickTimeプレーヤー向けのSMIL 1.0の音声解説の例</head>
+      <head>QuickTime プレーヤー向けの SMIL 1.0 の音声解説の例</head>
       <code><![CDATA[ 
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
@@ -37,7 +38,7 @@
 </smil>]]></code>
     </eg-group>
     <eg-group>
-      <head>RealTimeプレーヤー向けのSMIL 1.0の音声解説の例</head>
+      <head>RealTime プレーヤー向けの SMIL 1.0 の音声解説の例</head>
       <code><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns="http://www.w3.org/TR/REC-smil">
@@ -98,12 +99,6 @@
             <item>
                <p> 
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://service.real.com/help/library/guides/realone/ProductionGuide/HTML/htmfiles/realtext.htm">Realtext</loc> 
-               </p>
-            </item>
-            <item>
-               <p> 
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="https://msdn.microsoft.com/en-us/library/ms971327.aspx">SAMI 1.0</loc> 
                </p>
             </item>
@@ -138,7 +133,7 @@
     <expected-results>
       <ulist>
         <item>
-          <p>3.を満たしている。</p>
+          <p>3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

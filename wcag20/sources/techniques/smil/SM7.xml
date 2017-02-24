@@ -8,13 +8,14 @@
    </applicability>
    <applies-to>
       <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
    </applies-to>
    <description>
     <p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声解説によって、映像の説明が提供される。</p>
   </description>
    <examples>
       <eg-group>
-      <head>RealMediaプレーヤー向けのSMIL 2.0の音声解説の例</head>
+      <head>RealMedia プレーヤー向けの SMIL 2.0 の音声解説の例</head>
       <code><![CDATA[
 <smil xmlns="//www.w3.org/2001/SMIL20/Language">
   <head>
@@ -82,7 +83,7 @@
     <expected-results>
       <ulist>
         <item>
-          <p>3.を満たしている。</p>
+          <p>3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
