@@ -31,7 +31,7 @@
     <eg-group>
       <head>Microsoft Word 2007 を使用して PDF 文書内のデフォルト文書言語を指定する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>Microsoft Word で作成された文書：「場合によっては、ソースファイルで文書の言語が指定されていても、その情報が PDFMaker に伝達されないことがある。文書のプロパティダイアログボックスで文書全体の言語を設定すると（事例 1 を参照のこと）、このオプションに関連するすべてのエラーが修正される」（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/accessibility/products/acrobat/pdf/A9-accessible-pdf-from-word.pdf">Adobe®
+<p>Microsoft Word で作成された文書：「場合によっては、ソースファイルで文書の言語が指定されていても、その情報が PDFMaker に伝達されないことがある。文書のプロパティダイアログボックスで文書全体の言語を設定すると（事例 1 を参照のこと）、このオプションに関連するすべてのエラーが修正される」（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/A9-accessible-pdf-from-word.pdf">Adobe®
 Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from Microsoft®	Word</loc>）</p>
 </description>
     </eg-group>

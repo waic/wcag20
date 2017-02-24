@@ -79,7 +79,7 @@
 <p>解説に記載されているように、オーサリングツールで追加され PDF に変換されたテキストラベルは、フィールドに視覚的に関連付けられていても、プログラムで関連付けられていないため、ツールヒントを提供する必要がある。</p>
 <olist><item><p>［フォーム］メニューで［フィールドを追加または編集］を選択する</p></item><item><p>編集するフィールドのコンテキストメニューから［プロパティ］ダイアログボックスを選択する</p></item><item><p>［プロパティ］ダイアログボックスの［一般］タブで、「ツールヒント」フィールドにフォームフィールドの説明を入力する</p></item><item><p>すべてのフォームフィールドについて同じ操作を繰り返す</p></item></olist>
 <p>次の画像は、［プロパティ］ダイアログボックスの「ツールヒント」フィールドに説明が入力された状態を示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF10/form5.jpg" height="503" width="525"/><alt>スクリーンショット：フォームフィールドのプロパティダイアログボックス。フィールドで要求される形式を含む簡単な説明を入力すると、ツールヒントとして表示される。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/PDF10/form" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">フォームツールを使用してラベルを表示させるサンプル（PDFフォーム）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF10/form5.jpg" height="503" width="525"/><alt>スクリーンショット：フォームフィールドのプロパティダイアログボックス。フィールドで要求される形式を含む簡単な説明を入力すると、ツールヒントとして表示される。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF10/form">フォームツールを使用してラベルを表示させるサンプル（PDFフォーム）</loc>がある。</p>
 </description>
     </eg-group>
     <eg-group>
