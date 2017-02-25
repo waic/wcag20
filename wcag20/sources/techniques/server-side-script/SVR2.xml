@@ -95,7 +95,7 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
           <p>不適合のコンテンツのURIを開く。</p>
         </item>
         <item><p>結果となるページが次のうちのひとつである：</p>
-						<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest">適合する代替バージョン</loc></p></item><item><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+						<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合する代替バージョン</loc></p></item><item><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
       </olist>
     </procedure>
     <expected-results>
