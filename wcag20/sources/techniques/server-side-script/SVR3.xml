@@ -72,7 +72,7 @@ else  {
 header("Location: conforming.php");
 }
 ?>]]></code>
-      <description><p>実装例として <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SVR3/non-conforming.php" linktype="examples">Conforming content</loc> が利用できる。</p>
+      <description><p>実装例として <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SVR3/non-conforming.php"><!-- linktype="examples"-->Conforming content</loc> が利用できる。</p>
 </description>
     </eg-group>
    </examples>
