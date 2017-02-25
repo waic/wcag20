@@ -63,7 +63,8 @@
       <head>Adobe Acrobat 9 Pro を使用して PDF 文書内のフォーム・コントロールを編集する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <p>フィールドを編集するには、フィールドのコンテキストメニューを選択し、［プロパティ］を選択する。［テキストフィールドのプロパティ］メニューでは、次の画像に示されているように、テキストフィールドを変更できる。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form5.jpg" height="503" width="525"/><alt>テキストフィールドを変更するための［テキストフィールドのプロパティ］ダイアログボックス&#13;&#10;</alt></image></p><note><p class="prefix">ツールヒントはキーボードではアクセスできないが、スクリーンリーダーでアクセス可能である。「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF12.html">PDF12：PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</loc>」を参照のこと。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF23/form5.jpg" height="503" width="525"/><alt>テキストフィールドを変更するための［テキストフィールドのプロパティ］ダイアログボックス</alt></image></p>
+<note><p>ツールヒントはキーボードではアクセスできないが、スクリーンリーダーでアクセス可能である。<specref ref="PDF12"/>を参照のこと。</p>
 </note>
 </description>
     </eg-group>

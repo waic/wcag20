@@ -44,7 +44,7 @@
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>表のヘッダ行のコンテキストメニューから［表のプロパティ］を選択する</p></item><item><p>［行］タブを選択する</p></item><item><p>次の画像に示すように、「各ページにタイトル行を表示する」を選択する</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF6/word-table.jpg" height="440" width="414"/><alt>スクリーンショット：Wordの表の1行目に対して、［表のプロパティ］ダイアログの［行］タブを開き、「各ページにタイトル行を表示する」をチェックして、1行目が見出しセルとしてマークアップされるようにしている。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF6/table-example-noheaderrow.docx"><!-- linktype="examples"-->Word 2007 でのタグ付きテーブル見出しのサンプル（Wordファイル）</loc>がある。</p>
-<note><p class="prefix">Microsoft Word では、セルは行見出しではなく列見出しとしてのみマークアップできる。すべての表の列について、見出しとしてマークできるのは最初の行だけである。表に行見出しまたはさらに複雑な見出し構造がある場合、このマークアップは Acrobat Pro などの PDF エディターで追加する必要がある。</p>
+<note><p>Microsoft Word では、セルは行見出しではなく列見出しとしてのみマークアップできる。すべての表の列について、見出しとしてマークできるのは最初の行だけである。表に行見出しまたはさらに複雑な見出し構造がある場合、このマークアップは Acrobat Pro などの PDF エディターで追加する必要がある。</p>
 </note>
 </description>
     </eg-group>
@@ -53,7 +53,7 @@
       <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>表のコンテキストメニューから［表］を選択する</p></item><item><p>［体裁］タブを選択する。/p></p></item><item><p>次の画像に示すように、「見出しの繰り返し」を選択し、「最初の n 行」リストボックスで「1」を選択する。</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF6/openofficetableheads.jpg" height="445" width="556"/><alt>スクリーンショット：OpenOffice.org Writerの［表］ダイアログで、［体裁］タブを選択して、「見出しの繰り返し」をチェックして、「最初の n 行」リストボックスで「1」を選択し、1行目が見出しセルとしてマークアップされるようにしている。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF6/table-example-noheaderrow.odt"><!-- linktype="examples"-->OpenOffice Writerでのタグ付きテーブル見出しのサンプル（OpenDocumentテキストファイル）</loc>がある。</p>
-<note><p class="prefix">OpenOffice.org Writer では、セルは行見出しではなく列見出しとしてのみマークアップできる。すべての表の列について、見出しとしてマークできるのは最初の行だけである。表に行見出しまたはさらに複雑な見出し構造がある場合、このマークアップは Acrobat Pro などの PDF エディターで追加する必要がある。</p>
+<note><p>OpenOffice.org Writer では、セルは行見出しではなく列見出しとしてのみマークアップできる。すべての表の列について、見出しとしてマークできるのは最初の行だけである。表に行見出しまたはさらに複雑な見出し構造がある場合、このマークアップは Acrobat Pro などの PDF エディターで追加する必要がある。</p>
 </note>
 </description>
     </eg-group>

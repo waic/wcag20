@@ -31,7 +31,7 @@
  <p>この章では、この製品の詳しい使い方について
  ........
  </p>]]></code>
-      <description><note><p class="prefix">この事例で用いるべき適切な手法は、HTML の <el>h1</el> 要素を対象にした CSS を用いて見た目を制御する方法である。</p>
+      <description><note><p>この事例で用いるべき適切な手法は、HTML の <el>h1</el> 要素を対象にした CSS を用いて見た目を制御する方法である。</p>
 </note>
 </description>
     </eg-group>

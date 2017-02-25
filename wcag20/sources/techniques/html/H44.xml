@@ -30,7 +30,7 @@
     <p>この達成方法は、<el>label</el> 要素が見えているかどうか、つまり CSS で非表示にしているかどうかに関わらず、達成基準 1.1.1、1.3.1、4.1.2 を満たすことができる。しかし、達成基準 3.3.2 では、<el>label</el> 要素を入力フィールドの理解に役立てたい全ての利用者のために、見える状態にしておかなければならない、としている。</p>
     <p>ラベルまたはコントロールをクリックするとコントロールがアクティブなるため、コントロールのクリック可能な領域を大きくすることは、この達成方法の更なるメリットである。これは運動制御が不十分な利用者に役立つ。</p>
     <p><el>input</el> 要素の <att>type="checkbox"</att> と <att>type="radio"</att> では、<el>label</el> 要素をその後に配置することに注意する。</p>
-    <note><p class="prefix">
+    <note><p>
 	明示的なラベルを利用する要素は次の通りである：</p>
      <ulist>
         <item><p><code>input type="text"</code></p></item>
@@ -41,7 +41,7 @@
         <item><p><code>textarea</code></p></item>
         <item><p><code>select</code></p></item>
       </ulist>
-    <p class="prefix">
+    <p>
      次の場合には、<el>label</el> 要素は利用<emph role="bold">しない</emph>。これらの要素に対するラベルは、<att>value</att> 属性（送信ボタン及びリセットボタン）、<att>alt</att> 属性（画像ボタン）、又は要素それ自体の内容（汎用ボタン）を介して提供されるからである。</p>
       <ulist>
         <item><p>送信及びリセットボタン（<code>input type="submit"</code> 又は <code>input type="reset"</code>）</p></item>

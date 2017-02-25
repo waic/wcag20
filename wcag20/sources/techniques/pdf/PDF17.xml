@@ -49,7 +49,7 @@
       <head>/PageLabels エントリを使用してページ番号を指定する</head>
       <description><p>次のコードフラグメントは、文書内の複数のページ番号付けスキーマを指定する一般的なコードを示している。</p>
 <p>以下の事例は、次のようなラベルがページに付けられる文書の例である。</p>
-<p class="prefix"><em>事例：</em>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …  </p>
+<p><em>事例：</em>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …  </p>
 <p>この番号付けスキームでは、三つのページラベル辞書（小文字のローマ字、アラビア語、接頭語が付いた番号）が必要になる。 </p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[

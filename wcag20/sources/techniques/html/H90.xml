@@ -33,7 +33,7 @@
 </description>
       <code><![CDATA[<label for="firstname">名前（必須）:</label> 
 <input type="text" name="firstname" id="firstname" /> ]]></code>
-      <description><note><p class="prefix">英語では、必須項目の "required" を略して "req." とするコンテンツ制作者もいるが、この略語は分かりにくいという報告がある。</p>
+      <description><note><p>英語では、必須項目の "required" を略して "req." とするコンテンツ制作者もいるが、この略語は分かりにくいという報告がある。</p>
 </note>
 </description>
     </eg-group>

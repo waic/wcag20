@@ -68,7 +68,7 @@
     <label for="philosopher_aristotle">アリストテレス</label>
   </fieldset>
   </form>]]></code>
-      <description><note><p class="prefix">関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
+      <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
 </description>
     </eg-group>
     <eg-group>
