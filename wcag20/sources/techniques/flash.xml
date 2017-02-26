@@ -3,13 +3,13 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>Flashの達成方法</title>
+      <title>Flash Techniques</title>
       <w3c-designation>WCAG20-FLASH-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>
          <day>3</day>
          <month>January</month>
-         <year>2016</year>
+         <year>2012</year>
       </pubdate>
       <publoc>
 			      <loc href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-FLASH-TECHS-20060331/">http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-FLASH-TECHS-20060331/</loc>
@@ -46,7 +46,7 @@
 Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
       </abstract>
       <langusage>
-         <language id="ja"/>
+         <language id="en-US"/>
       </langusage>
       <revisiondesc>
          <p/>
@@ -54,80 +54,80 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
    </header>
    <body><!-- techniques -->
       <div1 id="flash">
-         <head>Flashの達成方法</head>
+         <head>Flash Techniques</head>
          <div2 id="flash_notes">
-            <head>Flash Technology Notes</head>
-            <p>Adobe Flash Player is a cross-platform browser plug-in. Authors  creating content for display by the Flash Player may choose to do so for   a variety of factors,  including video support, authoring preference, vector-based graphics   capabilities, or to take  advantage of available components. The motivation of the author  notwithstanding, it is equally important to ensure that content playing   in the Flash Player meets  the accessibility criteria in WCAG 2.0 as it is for other web content. </p>
+            <head>Flash テクノロジーノート</head>
+            <p>Adobe Flash Player は、クロスプラットフォームなブラウザのプラグインである。Flash Player によって表示されるコンテンツの制作者は、映像サポート、オーサリングの好み、ベクターベースのグラフィック能力などの様々な要因から Flash Player を用いてコンテンツを提供したり、Flashの標準コンポーネントを利活用したりすることを選択する。コンテンツ制作者が Flash を用いるそういった動機が何であれ、他のウェブコンテンツ技術を用いたウェブコンテンツと同様に、Flash Player で提供されるコンテンツが WCAG 2.0 のアクセシビリティ基準を満たすようにすることは重要である。</p>
             <div3 id="flash_ua_support">
-               <head>User Agent Support for Flash</head>
-               <p>The Flash Player  provides a combination of built-in support for accessibility and   capabilities that authors and  authoring tools can take advantage of in order to enable support for   accessible content.  Flash authors may use any of a few tools for authoring accessible Flash   content,  including but not limited to: </p>
+               <head>Flash のユーザエージェントによるサポート</head>
+               <p>Flash Player は、アクセシビリティのビルトインでのサポートと、コンテンツ制作者およびオーサリングツールがコンテンツをアクセシブルにするために利活用できる性能とのコンビネーションを提供している。Flash コンテンツ制作者は、アクセシブルな Flash コンテンツを制作するためには次のどのツールを用いてもよい（ただし、必ずしもこれらに限定されない）。</p>
                <ulist>
                   <item>
-                     <p> Flash MX, MX2004, 8, CS3, CS4, CS5 </p>
+                     <p>Flash MX, MX2004, 8, CS3, CS4, CS5</p>
                   </item>
                   <item>
-                     <p> Flex 1.5 and newer </p>
+                     <p>Flex 1.5 以降</p>
                   </item>
                   <item>
-                     <p> Flex Builder 2, Flex Builder 3, Flash Builder 4 </p>
+                     <p>Flex Builder 2, Flex Builder 3, Flash Builder 4</p>
                   </item>
                   <item>
-                     <p> Flash Catalyst 4 </p>
+                     <p>Flash Catalyst 4</p>
                   </item>
                   <item>
-                     <p> Other tools, including Adobe Presenter and Adobe Captivate </p>
+                     <p>その他、Adobe Presenter、Adobe Captivate など</p>
                   </item>
                </ulist>
-               <p>For blind, low-vision, and other assistive technology users the Flash   Player  introduced support for an accessibility API in 2001 with Flash Player 6.   Flash  accessibility support for assistive technology relies on the Microsoft   Active  Accessibility (MSAA) interface and a Flash Player-specific interface to   properly  convey information about Flash content for assistive technologies.   Support for  assistive technologies is provided for users viewing content using   combinations of: </p>
+               <p>全盲の利用者、ロービジョンの利用者およびその他の支援技術利用者向けに、Flash Player は 2001 年に Flash Player 6 でアクセシビリティ API のサポートを実現した。Flash のアクセシビリティに関する支援技術サポートは、Flash コンテンツに関する情報を支援技術に正しく伝えるという点においては、MSAA（Microsoft Active Accessibility）インタフェースと Flash Player 特有のインタフェースに依存している。支援技術のサポートは、次の組み合わせによる閲覧環境の利用者に対して提供されている:</p>
                <ulist>
                   <item>
-                     <p> Microsoft Internet Explorer 6 or later, in combination with   Flash Player 6 or newer on Windows. </p>
+                     <p>Windows OS 上での Internet Explorer 6 以降と Flash Player 6 以降の組み合わせ</p>
                   </item>
                   <item>
-                     <p> Mozilla Firefox 3 or later, in combination with Flash Player 9   or later on Windows. </p>
+                     <p>Windows OS 上での Mozilla Firefox 3 以降と Flash Player 9 以降の組み合わせ</p>
                   </item>
                </ulist>
-               <p>Assistive technology support for MSAA is provided in several   assistive technologies,  including but not limited to: </p>
+               <p>支援技術によるMSAAのサポートは、次のような支援技術製品で提供されている（ただし、必ずしもこれらに限定されない）。</p>
                <ulist>
                   <item>
-                     <p> JAWS (4.5 and newer) </p>
+                     <p>JAWS (4.5 以降)</p>
                   </item>
                   <item>
-                     <p> Window-Eyes (4.2 and newer) </p>
+                     <p>Window-Eyes (4.2 以降)</p>
                   </item>
                   <item>
-                     <p> NVDA </p>
+                     <p>NVDA</p>
                   </item>
                   <item>
-                     <p> ZoomText (8 and newer) </p>
+                     <p>ZoomText (8 以降)</p>
                   </item>
                </ulist>
             </div3>
             <div3 id="flash_accessibility_support">
-               <head>Flash Accessibility Support</head>
-               <p>Flash Player also supports keyboard access for users who are unable   to use a mouse.  Keyboard support is best within the ActiveX version of the player used   in Internet Explorer,  but techniques to provide support within Mozilla Firefox are also   available. Flash authors can  control the tab order of content within published Flash content, as is   demonstrated in the WCAG  2.0 techniques for Flash. </p>
-               <p>Flash Player is often used to display video, and it provides   support for text tracks which can be  used to provide closed captions or subtitles in any language, and it   also supports multiple tracks  of audio, thereby enabling support for video description, and it supports multiple video tracks, enabling the delivery of sign language interpretation for audio-visual   content. </p>
-               <p>The Flash Player does not currently support high-contrast mode or   text resizing via the  Windows operating system. However, Flash authors may take advantage of   Flash's support  for Cascading Stylesheets (CSS), other built-in style support, or   Flash's display filter features to  offer alternative views of a Flash-based interface with larger text,   alternative fonts, or alternative  or high-contrast color schemes. </p>
-               <p>Flash accessibility support for assistive technology relies on use in Windows operating systems, using Internet Explorer 6 or later (with Flash Player 6 or later) or Mozilla Firefox 3 or later (with Flash Player 9 or later).</p>
-               <p>For additional general information about the Flash Player, visit   the <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash   Player FAQ</loc>. </p>
+               <head>Flash によるアクセシビリティのサポート</head>
+               <p>Flash Player は、マウスを使用することのできない利用者向けにキーボード操作もサポートしている。キーボード操作のサポートに関しては、Internet Explorer で用いられている Flash Player の ActiveX 版が最も高いレベルだが、Mozilla Firefox でのサポートを提供するための実装方法もこの文書で提供されている。「WCAG 2.0 実装方法集」で紹介されているように、Flash コンテンツ制作者はパブリッシュしたコンテンツ内でのタブ順序を制御することができる。</p>
+               <p>Flash player は、映像を表示するのに用いられることが多く、あらゆる言語のクローズド・キャプションやサブタイトルを提供することのできるテキストトラックがある。また、音声ガイドを提供できるように複数の音声トラックも用意されている。さらに、視聴覚コンテンツに手話通訳の提供を可能にする映像トラックも複数ある。</p>
+               <p>現時点では、Flash Player は Windows OS によるハイコントラスト・モードやテキストのサイズ変更をサポートしていない。しかし、Flash コンテンツ制作者は、Flash によるカスケーディング・スタイルシート（CSS）のサポート、その他の標準搭載スタイルのサポート、あるいは Flash の画面フィルタ機能を利用することによって、Flashベースのインタフェースを大きめのテキストで閲覧可能な代替ビュー、代替フォント、あるいは代替ハイコントラスト・カラースキームなどを提供することが可能である。</p>
+               <p>支援技術向けのFlashによるアクセシビリティのサポートは、Windows OS 上で、Internet Explorer 6 以降（Flash Player 6 以降）または Mozilla Firefox 3 以降（Flash Player 9 以降）を使用した場合に限られている。</p>
+               <p>Flash Player に関する詳細な情報は、Adobe サイトで提供されている <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash Player FAQ（英語）</loc>を参照のこと。</p>
             </div3>
             <div3 id="flash_conformance_considerations">
-               <head> Special   Considerations for WCAG 2.0 Compliance </head>
+               <head>WCAG 2.0 適合に向けた特記事項</head>
                <ulist>
                   <item>
                      <p>
 								                <loc href="navigation-mechanisms-title"
-                             linktype="guideline">2.4.2 Page Titled</loc> - In order to meet 2.4.2, Flash content must   be embedded within an HTML page that has a page title in the HTML title   element. See <loc href="H25" linktype="html">H25</loc>.</p>
+                             linktype="guideline">2.4.2 ページタイトル</loc> - 達成基準 2.4.2 を満たすためには、Flash コンテンツは title 要素によるページタイトルを有した HTML のウェブページ内に埋め込まれていなければならない。<loc href="H25" linktype="html">H25</loc>を参照のこと。</p>
                   </item>
                   <item>
                      <p>
 								                <loc href="meaning-doc-lang-id"
-                             linktype="guideline">3.1.1 Language of Page</loc> - The language of Flash content is   established by the lang attribute of the containing object element in   HTML, not within the Flash SWF file itself. Authors may include more   than one Flash SWF in a single web page, each with a different language   indicated in the object element's lang attribute. See <specref ref="FLASH13"/>.</p>
+                             linktype="guideline">3.1.1 ページの言語</loc> - Flash コンテンツの言語は、Flash の SWF ファイル自体ではなく、HTML にある object 要素を含んだ部分の lang 属性によって示される。また、コンテンツ制作者は、object 要素の lang 属性によって異なる言語をそれぞれに示した複数の Flash の SWF ファイルを一つのウェブページ内に埋め込むことができる。<specref ref="FLASH13"/>を参照のこと。</p>
                   </item>
                   <item>
                      <p>
 								                <loc href="meaning-other-lang-id"
-                             linktype="guideline">3.1.2 Language of Parts</loc> - Since the language of Flash content   is not established within the Flash SWF file, it is not currently   possible to indicate changes of language within a single SWF file. </p>
+                             linktype="guideline">3.1.2 部分的に用いられている言語</loc> - Flash コンテンツの言語は、Flash の SWF ファイル内では示すことができないため、現時点では SWF ファイル内での言語の変更を示すことはできない。</p>
                   </item>
                </ulist>
             </div3>
