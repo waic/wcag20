@@ -6,7 +6,7 @@
    <applicability>
       <ulist id="flash.applicability.general">
          <item>
-            <p>Adobe Flash Professional version MX and higher </p>
+            <p>Adobe Flash Professional バージョン MX 以降</p>
          </item>
          <item>
             <p>Adobe Flex</p>
@@ -22,57 +22,57 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to show how non-text objects in Flash can be marked so that they can be read by assistive technology.</p>
-      <p>The Flash Player supports text alternatives to non-text objects using the <prop>name</prop> property in the accessibility object, which can be defined in ActionScript or within Flash authoring tools.</p>
-      <p>When an object contains words that are important to understanding the content, the <prop>name</prop> property should include those words. This will allow the <prop>name</prop> property to play the same function on the page as the object. Note that it does not necessarily describe the visual characteristics of the object itself but must convey the same meaning as the object. </p>
+      <p>この実装方法の目的は、支援技術による読み上げが可能になるように Flash 内の非テキストオブジェクトをマークする方法を示すことである。</p>
+      <p>Flash Player は、非テキストオブジェクトについて、アクセシビリティオブジェクト内の <prop>name</prop> プロパティを使用したテキストによる代替をサポートしている。このテキストによる代替は ActionScript 又は Flash オーサリングツールで定義することができる。</p>
+      <p>オブジェクトがコンテンツを理解する上で重要な語句を含んでいる場合は、<prop>name</prop> プロパティにそれらの語句を含める必要がある。これにより、<prop>name</prop> プロパティがオブジェクトと同等の機能をページ上で果たすことが可能になる。名前プロパティにはオブジェクトの見た目の特徴を記述するのではなく、オブジェクトの意味を伝える必要があることに注意する。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Applying a textual alternative for a symbol (graphic, button or movieclip)</head>
+         <head>シンボル（グラフィック、ボタン、ムービークリップ）に代替テキストを適用する</head>
          <description>
-            <p>The Flash Professional authoring tool's Accessibility panel lets  authors provide accessibility information to assistive technology and  set accessibility options for individual Flash objects or entire Flash  applications. </p>
+            <p>Flash Professional のオーサリングツールのアクセシビリティパネルを使用すると、コンテンツ制作者は、支援技術にアクセシビリティ情報を提供したり、Flash の個々のオブジェクトや Flash アプリケーション全体に対してアクセシビリティ関連オプションを設定できる。</p>
             <olist>
                <item>
-                  <p>For a text alternative to be applied to a non-text object, it must be saved as a symbol in the movie's library. <emph>Note:</emph> Flash does not support text alternatives for graphic symbols. Instead,  the graphic must be converted to or stored in a movie clip or button  symbol.</p>
+                  <p>非テキストオブジェクトに代替テキストを適用する際には、代替テキストをシンボルとしてムービーのライブラリに保存する必要がある。<emph>注記</emph>: Flash ではグラフィックシンボル用の代替テキストを使用することはできない。グラフィックをムービークリップまたはボタンシンボルに変換するか、これらに保存する必要がある。</p>
                </item>
                <item>
-                  <p>Bring up the Accessibility panel by selecting "Window &gt;  Other Panels &gt; Accessibility" in the application menu, or through  the shortcut ALT + F11. Ensure that the 'Make object accessible'  checkbox is checked.</p>
+                  <p>アプリケーションメニューで［ウィンドウ］&gt;［他のパネル］&gt;［アクセシビリティ］を選択するか、ショートカットキーの Alt + F11 を使用してアクセシビリティパネルを表示する。「オブジェクトをアクセス可能にする」チェックボックスがオンになっていることを確認する。</p>
                </item>
                <item>
-                  <p>Select the non-text instance on the movie stage, the fields in the Accessibility panel become editable.</p>
+                  <p>ムービーステージ上で非テキストインスタンスを選択すると、アクセシビリティパネル内のフィールドが編集可能になる。</p>
                </item>
                <item>
-                  <p>Enter a meaningful text alternative in the 'name' field, properly describing the purpose of the symbol.</p>
+                  <p>非テキストオブジェクトのコンテンツを簡潔に説明した文章を入力する。</p>
                </item>
             </olist>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH1/acc_name_scrn.jpg"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH1/acc_name_scrn.jpg"
                        width="541"
                        height="218"/>
-                  <alt>The Accessibility panel in the Flash authoring environment.</alt>
+                  <alt>画面スクリーンショット：Flash オーサリング環境のアクセシビリティパネル</alt>
                </image>
 							     </p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Applying textual alternatives programmatically in ActionScript 2.0</head>
+         <head>ActionScript 2.0 でプログラムによる説明を適用する</head>
          <description>
-            <p>To manage an object's text equivalent programmatically using  ActionScript 2, the _accProps object must be used. This references an  object containing accessibility related properties set for the object.  The code example below shows a simple example of how the _accProps  object is used to set an objects name in ActionScript. </p>
+            <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、_accProps オブジェクトを使用する必要がある。このオブジェクトは、オブジェクトに対して設定されているアクセシビリティ関連プロパティが含まれているオブジェクトを参照する。以下に、_accProps オブジェクトを使用して ActionScript によってオブジェクトの名前と説明を設定する簡単なコード例を示す。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'print_btn' is an instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'print_btn' は、ムービーのメインのタイムライン上に置かれたインスタンスである
 _root.print_btn._accProps = new Object();
-_root.print_btn._accProps.name = "Print";]]></code>
+_root.print_btn._accProps.name = "印刷する";]]></code>
       </eg-group>
       <eg-group>
-         <head>Applying textual alternatives programmatically in ActionScript 3.0</head>
+         <head>ActionScript 3.0 でプログラムによる代替テキストを適用する</head>
          <description>
-            <p>To manage an object's text equivalents programmatically using  ActionScript 3, the <obj>AccessibilityProperties</obj> object and <prop>name</prop> property  must be used. The code example below shows a simple example of how the  <prop>name</prop> property is used to set an objects name in ActionScript. </p>
+            <p>ActionScript 3 を使用してプログラムによりオブジェクトの等価テキストを制御するには、<obj>AccessibilityProperties</obj> オブジェクトと <prop>name</prop> プロパティを使用する必要がある。以下に、<prop>name</prop> プロパティを使用して ActionScript でオブジェクトの名前を設定する簡単なコード例を示す。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'print_btn' is an instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'print_btn' は、ムービーのメインのタイムライン上に置かれたインスタンスである
 print_btn.accessibilityProperties = new AccessibilityProperties();
-print_btn.accessibilityProperties.name = "Print";]]></code>
+print_btn.accessibilityProperties.name = "印刷する";]]></code>
       </eg-group>
    </examples>
    <related-techniques>
@@ -82,27 +82,27 @@ print_btn.accessibilityProperties.name = "Print";]]></code>
       <procedure>
          <olist>
             <item>
-               <p>Publish the SWF file</p>
+               <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p>Open the SWF file in Internet Explorer 6 or higher (using  Flash Player 6 or higher), or Firefox 3 or higher (using Flash Player 9  or higher)</p>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
             </item>
             <item>
-               <p>Use a tool which is capable of showing an object's name text alternative, such as ACTF aDesigner 1.0 to open the Flash movie.</p>
+               <p>オブジェクトの長い説明を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
-               <p>In the GUI summary panel, loop over each object which is  contained by the Flash movie and ensure the object that was provided a  name has a proper name attribute appearing in the tool's display.</p>
+               <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックし、オブジェクトに説明が設定されている場合、ツールの画面にその説明が適切に表示されることを確認する。</p>
             </item>
             <item>
-               <p>Authors may also test with a screen reader, by reading the  Flash content and listening to hear that the equivalent text is read  when tabbing to the non-text object (if it is tabbable) or hearing the  alternative text read when reading the content line-by-line.</p>
+               <p>また、場合によってはスクリーンリーダーを使用して Flash コンテンツの読み上げをテストする。このテストでは、タブ移動の可能な非テキストオブジェクトにタブを移動したときに、そのオブジェクトの説明が読み上げられること、またはコンテンツを 1 行ずつ読み上げたときに説明が読み上げられることを確認する。</p>
             </item>
             <item>
-               <p>All non-text objects have text equivalents that can serve  the same purpose and convey the same information as the non-text object</p>
+               <p>すべての非テキストオブジェクトの説明として、そのオブジェクトと同じ目的を持ち、同じ情報を伝える等価なテキストが設定されていることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
-         <p>Check #6 is true. </p>
+         <p>6. を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -112,3 +112,4 @@ print_btn.accessibilityProperties.name = "Print";]]></code>
 					</source>
    </admin>
 </technique>
+
