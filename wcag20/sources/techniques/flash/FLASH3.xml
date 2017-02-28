@@ -13,36 +13,36 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to show how images can be marked so that they can be ignored by Assistive Technology. </p>
-      <p>The Flash Player supports the ability for authors to control  which graphics appear to assistive technologies using the <prop>silent</prop>  property of the accessibility object, as indicated in the examples  below. </p>
+      <p>この実装方法は、支援技術が無視できるように画像にマークを付ける方法を示すことである。</p>
+      <p>Flash Player では、以下の事例に示すように、アクセシビリティオブジェクトの <prop>silent</prop> プロパティを使用すると、どのグラフィックを支援技術に認識させるかをコンテンツ制作者が制御できる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Hiding a graphic in the Flash Professional authoring tool</head>
+         <head>Flash Professional のオーサリングツールでグラフィックを非表示にする</head>
          <description>
-            <p>The Flash Professional authoring tool's Accessibility panel lets  authors provide accessibility information to assistive technology and  set accessibility options for individual Flash objects or entire Flash  applications. </p>
+            <p>Flash Professional のオーサリングツールのアクセシビリティパネルを使用すると、コンテンツ制作者は、支援技術にアクセシビリティ情報を提供したり、Flash の個々のオブジェクトや Flash アプリケーション全体に対してアクセシビリティ関連オプションを設定できる。</p>
             <olist>
                <item>
-                  <p> To apply changes to accessibility properties for a graphic, it must be saved as a symbol in the movie's library. <emph role="strong">Note:</emph> Flash does not support text alternatives for graphic symbols. Instead,  the graphic must be converted to or stored in a movie clip or button  symbol. </p>
+                  <p>グラフィックのアクセシビリティ関連プロパティに対する変更を適用するには、変更したものをシンボルとしてムービーのライブラリに保存する必要がある。<emph role="strong">注記:</emph> Flash ではグラフィックシンボル用の代替テキストを使用することはできない。グラフィックをムービークリップまたはボタンシンボルに変換するか、これらに保存する必要がある。</p>
                </item>
                <item>
-                  <p> Bring up the Accessibility panel by selecting "Window &gt;  Other Panels &gt; Accessibility" in the application menu, or through  the shortcut ALT + F11. </p>
+                  <p>アプリケーションメニューで［ウィンドウ］&gt;［他のパネル］&gt;［アクセシビリティ］を選択するか、ショートカットキーの Alt + F11 を使用してアクセシビリティパネルを表示する。</p>
                </item>
                <item>
-                  <p> Select the graphic object </p>
+                  <p>グラフィックオブジェクトを選択する。</p>
                </item>
                <item>
-                  <p> If the 'Make object accessible' checkbox in the Accessibility  control panel is checked, uncheck this option to remove the graphic  from the accessiblity information conveyed to assistive technologies. </p>
+                  <p>アクセシビリティパネルで「オブジェクトをアクセス可能にする」チェックボックスがオンになっている場合は、このオプションをオフにして、支援技術に伝達するアクセシビリティ情報からグラフィックを削除する。</p>
                </item>
             </olist>
          </description>
       </eg-group>
       <eg-group>
-         <head>Applying textual alternatives programmatically in ActionScript 2.0</head>
+         <head>ActionScript 2.0 でプログラムによる代替テキストを適用する</head>
          <description>
-            <p>To manage an object's text equivalents programmatically using  ActionScript, the <prop>_accProps</prop> property must be used. This references an  object containing accessibility related properties set for the object.  The code example below shows a simple example of how the <prop>_accProps</prop>  property is used to remove an object from the accessibility information  for the movie using ActionScript. </p>
+            <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<prop>_accProps</prop> プロパティを使用する必要がある。このオブジェクトは、オブジェクトに対して設定されているアクセシビリティ関連プロパティが含まれているオブジェクトを参照する。以下に、<prop>_accProps</prop> プロパティを使用して、ActionScript を使用しているムービー用のアクセシビリティ情報からオブジェクトを削除するための簡単なコードの例を示す。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'decorative_mc' is an instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'decorative_mc' は、ムービーのメインのタイムラインに置かれたインスタンスである
 _root.decorative_mc._accProps = new Object();
 _root.decorative_mc._accProps.silent = true; ]]></code>
       </eg-group>
@@ -72,27 +72,27 @@ _root.decorative_mc._accProps.silent = true; ]]></code>
       <procedure>
          <olist>
             <item>
-               <p> Publish the SWF file </p>
+               <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p> Open the SWF file in Internet Explorer 6 or higher (using  Flash Player 6 or higher), or Firefox 3 or higher (using Flash Player 9  or higher) </p>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
             </item>
             <item>
-               <p> Use a tool which is capable of showing an object's accessibility information, such as ACTF aDesigner 1.0 to open the Flash movie. </p>
+               <p>オブジェクトのアクセシビリティ情報を表示できる aDesigner2 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
-               <p> In the GUI summary panel, loop over each object which is  contained by the Flash movie and ensure the object that was designed to  be hidden does not appear in the tool's display. </p>
+               <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックすると、表示されないように設定されているオブジェクトがツールの画面に表示されていない。</p>
             </item>
             <item>
-               <p> Authors may also test with a screen reader, by reading the  Flash content and listening to hear that object is not mentioned when  the page is read. </p>
+               <p>コンテンツ制作者は、テストにスクリーンリーダーを使用することもできる。その場合は、Flash コンテンツを読み上げて音声を聞くと、読み上げたページの内容にオブジェクトが含まれていない。</p>
             </item>
             <item>
-               <p> Non-text objects that are coded to be hidden from assistive technologies are not available to assistive technology. </p>
+               <p>支援技術に無視されるようにコーディングされている非テキストオブジェクトは、支援技術からは認識できない。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
-         <p>Check #6 is true. </p>
+         <p>6. を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -102,3 +102,4 @@ _root.decorative_mc._accProps.silent = true; ]]></code>
 					</source>
    </admin>
 </technique>
+
