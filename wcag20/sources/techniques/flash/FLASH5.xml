@@ -15,67 +15,67 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to avoid unnecessary duplication  that occurs when adjacent text and iconic versions of a button are  contained in a Flash movie. </p>
-      <p>Many kinds of buttons have both a text and iconic button  adjacent to each other. Often the text and the icon button are rendered  in separate buttons, in part to create a slight visual separation from  each other. Although the sighted user can see this slight visual  separation, a blind or low vision user may not be able to recognize the  separation, and be confused by the redundant buttons. To avoid this,  some authors omit specifying the accessible name for the image, but  this would fail Success Criterion 1.1.1 because the text alternative  would not serve the same purpose as the graphical button. The preferred  method to address this is to put the text and image together in one  button symbol instance, and provide a single accessible name for the  button to eliminate duplication of text. </p>
+      <p>この実装方法の目的は、隣接するテキストとボタンアイコンを Flash ムービーに含める際の不要な重複を回避することである。</p>
+      <p>テキストとボタンアイコンが隣接しているボタンがよく用いられている。視覚上多少離れた位置に配置するなどの目的で、テキストとアイコンボタンが個別のボタンとして表現されることも多い。視覚に問題のない利用者はこれらの位置が多少離れていることを視覚的に認識できるが、全盲やロービジョンの利用者は位置の距離を認識できないためボタンの重複に混乱する。これを避けるため、コンテンツ制作者によっては画像のアクセシブルな名前の指定を省略する場合があるが、そのような方法ではグラフィックボタンと同じ目的を果たす代替テキストがなくなってしまい、達成基準 1.1.1 を満たすことができない。この問題への対処として望ましいのは、テキストと画像を 1 つのボタンシンボルインスタンスに含め、ボタンに対して 1 つのアクセシブルな名前を割り当てることによってテキストの重複を回避する方法である。</p>
    </description>
    <examples>
-      <p>The following examples are for a situation where a button instance  comprised of both an image and text is on the stage. The combined  button in this example uses the instance name 'flashLink1'. </p>
-      <p>To create the combined button in Flash Professional: </p>
+      <p>以下に示すのは、ステージ上の 1 つのボタンインスタンスに画像とテキストの両方が含まれている場合の例である。この例のテキストと画像の結合ボタンでは、「flashLink1」というインスタンス名が使用されている。</p>
+      <p>Flash Professional で結合ボタンを作成するには、次のようにする。</p>
       <olist>
          <item>
-            <p> Add a graphic object and text to the stage </p>
+            <p>ステージにグラフィックオブジェクトとテキストを追加する。</p>
          </item>
          <item>
-            <p> Select both objects </p>
+            <p>両方のオブジェクトを選択する。</p>
          </item>
          <item>
-            <p> Select 'New Symbol' from the Insert menu or hit Ctrl+F8 to create a new button object </p>
+            <p>［挿入］メニューから「新規シンボル」を選択するか、Ctrl+F8 キーを押して、新しいボタンオブジェクトを作成する。</p>
          </item>
          <item>
-            <p> Click on the button object on the stage and enter an instance name in the Properties panel. </p>
+            <p>ステージ上のボタンオブジェクトをクリックし、プロパティパネルでインスタンス名を入力する。</p>
          </item>
          <item>
-            <p> Continue under example 1, 2, or 3 below. </p>
+            <p>さらに、以下の事例 1 から事例 3 までのそれぞれの説明に従う。</p>
          </item>
       </olist>
       <p>
 						   <image>
             <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                 source="/WAI/WCAG20/Techniques/working-examples/FLASH5/adjacentbtns.jpg"
+                 source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/adjacentbtns.jpg"
                  height="221"
                  width="411"/>
-            <alt>screen shot showing the combined button with an instance name 'flashLink1'</alt>
+            <alt>画面スクリーンショット：プロパティパネルでインスタンス名を 'flashLink1' とした結合ボタン</alt>
          </image>
 					</p>
       <eg-group>
-         <head>Using the Accessibility panel to specify the accessible name</head>
+         <head>アクセシビリティパネルを使用してアクセシブルな名前を指定する</head>
          <description>
-            <p>The Accessibility panel is used to specify the accessible name (which in this case is the same as the visual text).</p>
+            <p>アクセシビリティパネルを使用してアクセシブルな名前（この例の場合は表示されているテキストと同じ）を指定する。</p>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH5/findoutmore.jpg"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/findoutmore.jpg"
                        height="152"
                        width="530"/>
-                  <alt>screen shot showing use of the Accessibility control panel to provide a name for the combined button</alt>
+                  <alt>画面スクリーンショット：結合ボタンの「名前」を記述したアクセシビリティパネル</alt>
                </image>
 							     </p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Using ActionScript to specify the accessible name</head>
+         <head>ActionScript を利用してアクセシブルな名前を指定する</head>
          <description>
-            <p>ActionScript 3 can be used instead of the Accessibility control  panel to define the accessibility name for the combined button, as  follows: </p>
+            <p>次のように、アクセシビリティパネルの代わりに ActionScript 3 を使用して、結合ボタンのアクセシビリティ名を指定することもできる。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'flashLink1' is an instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'flashLink1' は、ムービーのメインのタイムラインに置かれたインスタンスである
 flashLink1.accessibilityProperties = new AccessibilityProperties();
-flashLink1.accessibilityProperties.name = "Learn more about Flash";]]></code>
+flashLink1.accessibilityProperties.name = "Flash についてさらに学ぶ";]]></code>
          <description>
-            <p>ActionScript 2 can be used instead of the Accessibility control  panel to define the accessibility name for the combined button, as  follows </p>
+            <p>また、次のように、アクセシビリティパネルの代わりに ActionScript 2 を使用して、結合ボタンのアクセシビリティ名を指定することもできる。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'flashLink1' is an instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'flashLink1' は、ムービーのメインのタイムラインに置かれたインスタンスである
 flashLink1._accProps = new Object();
-flashLink1._accProps.name = "Learn more about Flash";]]></code>
+flashLink1._accProps.name = "Flash についてさらに学ぶ";]]></code>
       </eg-group>
    </examples>
    <related-techniques>
@@ -86,21 +86,21 @@ flashLink1._accProps.name = "Learn more about Flash";]]></code>
       <procedure>
          <olist>
             <item>
-               <p> Publish the SWF file </p>
+               <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p> Open the SWF file in Internet Explorer 6 or higher (using  Flash Player 6 or higher), or Firefox 3 or higher (using Flash Player 9  or higher) </p>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SFW ファイルを開く。</p>
             </item>
             <item>
-               <p> Use a tool which is capable of showing an object's name text alternative, such as ACTF aDesigner 1.0 to open the Flash movie. </p>
+               <p>オブジェクト名のテキストによる代替を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
-               <p> If you are using ACTF aDesigner 1.0, use the GUI Summary panel to  check each image button in the Flash movie and ensure that there is no  separate, redundant text control adjacent to the image that performs  the same action. </p>
+               <p>ACTFaDesigner 1.0 を使用する場合は、GUI 概要パネルを使用して Flash ムービー内の各画像ボタンを確認し、画像と同じ機能を持つ別の重複したテキストコントロールが画像の近くにないことを確かめる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
-         <p>#4 is true. </p>
+         <p>4 を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -110,3 +110,4 @@ flashLink1._accProps.name = "Learn more about Flash";]]></code>
 					</source>
    </admin>
 </technique>
+
