@@ -14,13 +14,13 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to use submit buttons to allow  users to take actions that cause changes of context rather than  allowing changes in context to occur when the value or state of a  non-submit button control is modified. The intended use of a submit  button in this technique is to generate an HTTP request that submits  data entered in a form or to perform an action that triggers a change  in context, so it is an appropriate control to use to initiate this  change. </p>
+      <p>この実装方法の目的は、状況の変化を送信ボタンを使用して引き起こすようにし、送信ボタン以外のコントロールの値または状態が変更された場合は状況の変化が発生しないようにすることである。この実装方法での送信ボタンの用途は、フォームに入力されたデータを送信する HTTP 要求を生成すること、または状況の変化をトリガーするアクションを実行することである（状況の変化を開始するのに適したコントロールがボタンの場合）。</p>
    </description>
    <examples>
       <eg-group>
-         <head>ActionScript 3 combobox with submit button</head>
+         <head>ActionScript 3 によるコンボボックスと送信ボタンの実装</head>
          <description>
-            <p>This is a basic ActionScript 3 example of a combobox component with  a submit button to redirect the user to a different resource. </p>
+            <p>これは、コンボボックスコンポーネントと送信ボタンによって利用者を別のリソースにリダイレクトする、ActionScript 3 の基本的な事例である。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.ComboBoxAccImpl;
 import flash.net.navigateToURL;
@@ -34,9 +34,9 @@ function submitHandler(e) {
 }]]></code>
       </eg-group>
       <eg-group>
-         <head>ActionScript 2 combobox with submit button</head>
+         <head>ActionScript 2 によるコンボボックスと送信ボタンの実装</head>
          <description>
-            <p>This is a basic ActionScript 2 example of a combobox component with  a submit button to redirect the user to a different resource - the same  example as in example 1 except in ActionScript 2: </p>
+            <p>これは、コンボボックスコンポーネントと送信ボタンによって利用者を別のリソースにリダイレクトする、ActionScript 2 の基本的な事例である。ActionScript 2 を使用していること以外は、事例 1 と同じである。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.ComboBoxAccImpl;
 ComboBoxAccImpl.enableAccessibility();
@@ -53,15 +53,15 @@ function submitHandler(e) {
       <procedure>
          <olist>
             <item>
-               <p> Find all interactive control instances (that are not submit  buttons) in the flash movie that can initiate a change of context, e.g.  a combobox, radio button or checkbox. </p>
+               <p>Flash ムービー内で状況の変化を開始するすべてのインタラクティブコントロールのインスタンス（送信ボタン以外）を見つける（コンボボックス、ラジオボタン、チェックボックスなど）。</p>
             </item>
             <item>
-               <p> For each instance, confirm that the event handler(s)  responsible for the change of context are not associated with the  controls themselves, but with a separate button instead. </p>
+               <p>それぞれのインスタンスについて、状況の変化を実行するイベントハンドラが、上記のコントロール自体ではなく個別のボタンに関連付けられている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
-         <p> #2 is true </p>
+         <p>2. を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -71,3 +71,4 @@ function submitHandler(e) {
 					</source>
    </admin>
 </technique>
+
