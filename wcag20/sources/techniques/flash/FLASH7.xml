@@ -14,35 +14,35 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to allow users to choose to have  additional information added to the label of a button or other control  so that it can be understood out of context. </p>
-      <p>Some users prefer to have control labels that are  self-contained, where there is no need to explore the context of the  control. Other users find including the context information in each  button to be repetitive and to reduce their ability to use a site.  Among users of assistive technology, the feedback to the working group  on which is preferable has been divided. This technique allows users to  pick the approach that works best for them. </p>
-      <p>A control is provided near the beginning of the page that will  expand the labels for controls on the page so that no  additional context is needed to understand the purpose of those  controls. It must always be possible to understand purpose of the  control directly from its label. </p>
-      <p>This technique expands the control labels only for the current  page view. It is also possible, and in some cases would be advisable,  to save this preference in a cookie or server-side user profile, so  that users would only have to make the selection once per site. </p>
+      <p>この実装方法の目的は、前後の文脈を把握しなくても理解できるように、利用者がボタンなどのコントロールのラベルに付加情報を追加できるようにすることである。</p>
+      <p>コントロールの前後にある文脈をわざわざ把握しなくてもすむように、コントロールのラベルによって十分な情報が提供されることを望む利用者がいる。その一方で、すべてのボタンに文脈を含む情報があるのはあまりにも冗長であり、サイトの利便性を低下させると考えるユーザーもいる。また、支援技術の利用者からワーキンググループに寄せられるフィードバックでも、どちらが好ましいかについて意見が分かれている。この実装方法は、ユーザー自身が好むほうを選択できるようにするものである。</p>
+      <p>ページの先頭近くにページ上のコントロールのラベルを拡張するためのコントロールを配置し、前後の文脈を加味しなくてもコントロールの目的を理解できるようにする。必ずコントロールの目的をラベルから直接理解できるようにすることが必要である。</p>
+      <p>この実装方法によってコントロールのラベルが拡張されるのは、現在参照しているページのみである。ただし、サイト全体で1回選択すればすむように、cookie やサーバー側のユーザープロファイルにこの設定を保存しておく方法もある。場合によっては、そのほうが望ましいかもしれない。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Using ActionScript to add contextual information  directly to the label of a button</head>
+         <head>ActionScript を使用してボタンのラベルに文脈の情報を直接追加する</head>
          <description>
-            <p>This example uses ActionScript to add contextual information  directly to the label of a button. When the "Expand Button Labels"  button is toggled, each button on the page has its <prop>label</prop> property  modified. </p>
+            <p>この事例では、ActionScript を使用してボタンのラベルに文脈の情報を直接追加している。「より詳細なボタン名に変更」ボタンをクリックすることによって、ページ上の各ボタンの <prop>label</prop> プロパティが変更される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl;
 ButtonAccImpl.enableAccessibility();
 btn1.addEventListener(MouseEvent.CLICK, clickHandler);
 
 function clickHandler(e) {
-  btn2.label = btn1.selected? "PDF version of 2010 brochure": "PDF";
+  btn2.label = btn1.selected? "2010 年版パンフレット PDF 版": "PDF";
   btn2.width = btn1.selected? 200: 100;
-  btn3.label = btn1.selected? "Text version of 2010 brochure": "Text";
+  btn3.label = btn1.selected? "2010 年版パンフレット テキスト版": "Text";
   btn3.width = btn1.selected? 200: 100;
-  btn4.label = btn1.selected? "Word version of 2010 brochure": "Word";
+  btn4.label = btn1.selected? "2010 年版パンフレット Word 版": "Word";
   btn4.width = btn1.selected? 200: 100;
 }]]></code>
          <description>
-            <p>The result can be seen in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="change_button_label.html"
-                    linktype="examples">working example of adding contextual information to a button label</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="change_button_label.fla"
-                    linktype="examples">source of adding contextual information to a button label</loc> is available.</p>
+            <p>この結果は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.html">
+                    <!--linktype="examples"-->ボタンのラベルにコンテキスト情報を追加するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.fla">
+                    <!--linktype="examples"-->ボタンのラベルにコンテキスト情報を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -51,10 +51,10 @@ function clickHandler(e) {
    </related-techniques>
    <tests>
       <procedure>
-         <p>When a Flash Movie contains content with context dependent labels,  confirm that a separate toggle control is provided that allows the user  to expand the labels so that they are no longer context dependent. </p>
+         <p>Flash ムービーに前後の文脈に依存したラベルが含まれている場合、利用者がラベルに前後の文脈を加味しなくてもすむように、ラベルを拡張するためのトグルコントロールが提供されている。</p>
       </procedure>
       <expected-results>
-         <p>The above is true. </p>
+         <p>上記チェックポイントを満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -64,3 +64,4 @@ function clickHandler(e) {
 					</source>
    </admin>
 </technique>
+
