@@ -14,11 +14,13 @@
 						How to Meet 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua9.8.1">ユーザエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH8">User Agent Support Notes for FLASH8</a>. Also see <a href="flash_notes.html">Flash テクノロジーノート</a>.</p></div><h2 id="FLASH8-description">解説</h2><div class="textbody"><p>The objective of this technique is to provide a semantic grouping for   related form controls. This allows users to understand the relationship   of the controls and interact with the form more quickly and   effectively. </p><p>In Flash, when related form controls are grouped, this grouping   can be indicated by adding the group's name to each form control's   accessible name. </p><p>Grouping controls is most important for related radio buttons and   checkboxes. A set of radio buttons or checkboxes is related when they   all submit values for a single named field. They work in the same way as   selection lists, allowing the user to choose from a set of options,   except selection lists are single controls while radio buttons and   checkboxes are multiple controls. Because they are multiple controls, it   is particularly important that they be grouped semantically so they can   be more easily treated as a single control. Often, user agents will   present the value of the legend before the label of each control, to   remind users that they are part of the same group. </p><p>It can also be useful to group other sets of controls that are   not as tightly related as sets of radio buttons and checkboxes. For   instance, several fields that collect a user's address might be grouped   together with a legend of "Address". </p></div><h2 class="small-head" id="FLASH8-examples">事例</h2><h3 class="small-head" id="FLASH8-ex1">事例 1: Adding a group name to the accessible name of radio buttons</h3><div class="example"><div class="textbody"><p>This example shows how the group name for radio buttons in a group   can be made accessible by adding it to each button's accessible name: </p><ol class="enumar"><li><p> Add radio button components to the stage: </p></li><li><p> Enter each button's label using its <code>label</code> property </p></li><li><p> Add the visual group label to the left or above the buttons   added in step 1 </p></li><li><p> Select each radio button. In the Accessibility panel, add the   group name to the "Name" field; </p></li></ol><p>Flash will concatenate the group name with each button's individual   name, such as "gender male". </p><p>This approach is illustrated in the screenshot below: </p><p>
-								       <img class="eximg" src="/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png" alt="Using the Accessibility panel to add a group name to a form control" height="236" width="584"/>
-							     </p><div class="note"><p class="prefix"><em>注記: </em>To make the radio buttons in this example accessible, the   following two lines need to be added to the movie's script: <code>import fl.accessibility.RadioButtonAccImpl;
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua9.8.1">ユーザエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH8">User Agent Support Notes for FLASH8</a>. Also see <a href="flash_notes.html">Flash テクノロジーノート</a>.</p></div><h2 id="FLASH8-description">解説</h2><div class="textbody"><p>この実装方法の目的は、関連するフォーム・コントロールをセマンティックにグループ化することである。これにより、利用者が複数のコントロール間の関係を理解し、より早くかつ効率的にフォームを操作することができる。</p><p>Flash では、関連するフォーム・コントロールがグループ化されている場合、グループの名前を各フォーム・コントロールのアクセシブルな名前に追加することで、そのグループを示すことができる。</p><p>コントロールのグループ化は、関係性があるラジオボタンとチェックボックスの場合に最も重要である。ラジオボタンまたはチェックボックスの一式は、それらすべてが単一の名前付きフィールドに値を送信する場合に関係性があるといえる。これらは、選択リストと同じように機能し、ユーザーは複数の選択肢の中からどれかを選択できる。ただし、選択リストが一つのコントロールであるのに対して、ラジオボタンやチェックボックスは複数のコントロールである点が異なる。ラジオボタンやチェックボックスは、複数のコントロールであるため、これらを意味的にグループ化して一つのコントロールとして簡単に扱えるようにすることが特に重要である。多くの場合、ユーザーエージェントは、各コントロールのラベルの前にグループ名を示し、それらが同じグループのものであることをユーザーに知らせる。 </p><p>ラジオボタンやチェックボックスの一式ほど密接な関係性があるわけではない他のコントロール一式でも、その一式をグループ化すると便利な場合がある。例えば、ユーザーに住所に関する情報を入力してもらう幾つかのテキストフィールドを「住所」という名前でグループ化することができる。</p></div><h2 class="small-head" id="FLASH8-examples">事例</h2><h3 class="small-head" id="FLASH8-ex1">事例 1: ラジオボタンのアクセシブルな名前にグループ名を追加する</h3><div class="example"><div class="textbody"><p>この事例は、グループ内のラジオボタンのグループ名を各ボタンのアクセシブルな名前に追加して、それらのグループをアクセシブルにする方法を示している。</p><ol class="enumar"><li><p>ラジオボタンのコンポーネントをステージに追加する。</p></li><li><p><code>label</code> プロパティを使用して各ボタンのラベルを入力する。</p></li><li><p>視覚的なグループラベルを手順 1 で追加したボタンの左側または上に追加する。</p></li><li><p>各ラジオボタンを選択する。アクセシビリティパネルで、「名前」フィールドにグループ名を追加する。</p></li></ol><p>Flash は、「性別 男性」というように、グループ名を各ボタンの個別の名前に連結する。 </p><p>次のスクリーンショットは、このアプローチについて示したものである。</p><p>
+								       <img class="eximg" src="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png" alt="画面スクリーンショット：アクセシビリティパネルを用いて、フォーム・コントロールにグループ名を追加" height="236" width="584"/>
+							     </p><div class="note"><p class="prefix"><em>注記: </em>この事例のラジオボタンをアクセシブルにするには、次の2行をムービーのスクリプトに追加する必要がある。<code>import fl.accessibility.RadioButtonAccImpl;
 RadioButtonAccImpl.enableAccessibility();</code>
-								       </p></div><p>For an illustration of this approach, see the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html" class="ex-ref">working version of Adding a group name to the accessible name of radio buttons</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla" class="ex-ref">source of Adding a group name to the accessible name of radio buttons</a> is available.</p></div></div><h3 class="small-head" id="FLASH8-ex2">事例 2: Programmatically adding a group name with the accessible name of radio buttons</h3><div class="example"><div class="textbody"><p>The code example below shows a basic proof of concept of a class that   automatically places a set of form controls inside a fieldset like   rectangle, including a legend. For each added control an <code>AccessibilityProperties</code>   object is created, and its <code>name</code> property is set to a   combination of the legend text and the actual form control label. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+								       </p></div><p>このアプローチの実例については、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html">
+                    ラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</a>を参照のこと。<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla">
+                    ラジオボタンのアクセシブルな名前にグループ名を追加するのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 class="small-head" id="FLASH8-ex2">事例 2: プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する</h3><div class="example"><div class="textbody"><p>次のコード例は、グループ名を含むフォーム・コントロール一式を長方形のようなフィールドセット内に配置するクラスの基本的な概念実証を示している。追加される各コントロールに対して <code>AccessibilityProperties</code> オブジェクトが作成され、その <code>name</code> プロパティが、グループ名のテキストと実際のフォーム・コントロールのラベルの組み合わせに設定される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 package wcagSamples {
   import flash.display. *;
   import flash.text. *;
@@ -28,12 +30,12 @@ package wcagSamples {
   
   
   /**
-  *  Basic example that demonstrates how to simulate a fieldset, as provided
-  *  in HTML. The FieldSet class takes a group of controls and places them 
-  *  inside a fieldset rectangle with the legend text at the top. For each form 
-  *  control, the legend text is prepended to the control's accessible name
+  *  HTMLで提供されているfieldset要素を模倣する方法を実演する基本的なサンプル。
+  *  FieldSet クラスは、複数のコントロールをグループ化してfieldsetの矩形内に配置し、
+  *  その先頭にグループ名となるテキストを置く。各フォーム・コントロールに対して、
+  *  グループ名のテキストはコントロールのアクセシブルな名前の前に追加される。
   *
-  *  Note: This is only a proof of concept, not a fully functional class
+  *  注記：これは概念の実証を目的にしたものであり、完全に機能するクラスではない。
   *
   *  @langversion 3.0
   *  @playerversion Flash 10
@@ -49,16 +51,16 @@ package wcagSamples {
     
     /**
     *  CONSTRUCTOR
-    *  Legend specifies the FieldSet's legend text, items is an array 
-    *  describing the controls to be added to the FieldSet
+    *  Legend は、FieldSetのグループ名となるテキストを特定する
+    *  itemsは、そのFieldSetに追加されるコントロールを説明する
     */
     
     public function FieldSet(legend: String, items: Array) {
-      // enable accessibility for components used in this example
+       // この事例で使われているコンポーネントのアクセシビリティを有効にする
       RadioButtonAccImpl.enableAccessibility();
       CheckBoxAccImpl.enableAccessibility();
       
-      //create FieldSet rectangle and legend
+      //FieldSet の矩形とグループ名を生成する
       legend = legend;
       bBox = new Shape();
       bBox.graphics.lineStyle(1);
@@ -77,22 +79,22 @@ package wcagSamples {
       fieldSetLegend.autoSize = TextFieldAutoSize.LEFT;
       addChild(fieldSetLegend);
       
-      // add controls
+      // コントロールを追加する
       for (var i = 0; i &lt; items.length; i++) {
         processItem(items[i]);
       }
     }
     
     /**
-    * Adds the control to the Fieldset and sets its accessible name. A 
-    * control is represented as an array, containing the following values:
-    * [0] : A string describing the component type 
-    *   (can be "TextInput", TextArea", Checkbox" or "RadioGroup").
-    * [1] : The label used to identify the control
-    * [2] : If [0] is "RadioGroup", then [2] needs to contain an array of the 
-    *    labels for each individual radio button. if [0] is "CheckBox", then 
-    *    [1] can either be empty or a question (e.g. "Do you smoke?"), and 
-    *    [2] the CheckBox label (e.g. "Yes").
+    * コントロールをFieldsetに追加し、アクセシブルな名前を設定する。 
+    * コントロールは配列で表されており、次の値を含んでいる。
+    * [0] : コンポーネントのタイプを表す文字列 
+    *   (例： "TextInput", TextArea", Checkbox" または "RadioGroup")
+    * [1] : コントロールを特定するために用いられるラベル
+    * [2] : もし [0] が "RadioGroup" だった場合、[2] は個々のラジオボタンに対する 
+    *    ラベルの配列を含んでいる必要がある。もし [0] が "CheckBox" だった場合、 
+    *    [1] は空または質問（例：「喫煙しますか？」）のどちらかで、
+    *    [2] は CheckBox のラベル（例：「はい」）となる。
     *
     */
     function processItem(item: Array) {
@@ -116,7 +118,7 @@ package wcagSamples {
         case "TextArea":
         newControl = item[0] == "TextInput"? new TextInput(): new TextArea();
         newControl.x = FieldSet.CONTROL_OFFSET_X;
-        //concatenate accessible name, combining legend and label
+         //グループ名とラベルをつなげて、アクセシブルな名前にする。
         setAccName(newControl, legend + " " + item[1]);
         break;
         case "CheckBox":
@@ -152,7 +154,7 @@ package wcagSamples {
     }
     
     /**
-    * Creates an AccessibilityProperties object for an object and sets its name property
+     * オブジェクトに対するAccessibilityProperties オブジェクトを生成し、その name プロパティを設定する
     */
     public function setAccName(obj, accName) {
       var accProps: AccessibilityProperties = new AccessibilityProperties();
@@ -160,13 +162,13 @@ package wcagSamples {
       obj.accessibilityProperties = accProps;
     }
   }
-}</code></pre></div><div class="textbody"><p>This example class can be initialized as follows: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>var myFieldSet = new FieldSet("Personal Details",  // the legend 
-  [["TextInput", "Name"],                          // text field
-  ["RadioGroup", "Gender", ["Male", "Female"]],    // radio button group
-  ["CheckBox", "Do you smoke", "yes"],             // checkbox
-  ["TextArea", "Comments"],                        // text area
+}</code></pre></div><div class="textbody"><p>この事例のクラスの初期化は次のように行う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>var myFieldSet = new FieldSet("Personal Details",  // グループ名 
+  [["TextInput", "名前"],                          // テキストフィールド
+  ["RadioGroup", "性別", ["男性", "女性"]],          // ラジオボタンのグループ
+  ["CheckBox", "喫煙しますか？", "はい"],             // チェックボックス
+  ["TextArea", "コメント"],                        // テキストエリア
 ]);
 addChild(myFieldSet);
-</code></pre></div><div class="textbody"><p>For an illustration of this approach, see the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.html" class="ex-ref">working version of Programmatically adding a group name with the accessible name of radio buttons</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.zip" class="ex-ref">source of Programmatically adding a group name with the accessible name of radio buttons</a> is available.</p><div class="note"><p class="prefix"><em>注記: </em>Adobe Flex allows you to perform this type of behavior by   using the &lt;form&gt;, &lt;formitem&gt; and &lt;formheading&gt;   elements </p></div></div></div><h2 id="FLASH8-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="FLASH25.html">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h2 id="FLASH8-tests">検証</h2><div class="textbody"><h3 class="small-head" id="FLASH8-procedure">チェックポイント</h3><p>When a Flash Movie contains grouped form controls, confirm that   either : </p><ul><li><p> The group's name is included in the Accessibility panel's   "name" field for each control. </p></li><li><p> Each control has an <code>AccessibilityProperties.name</code> property,   which contains both the group's name and the control's label text </p></li></ul><h3 class="small-head" id="FLASH8-results">判定基準</h3><ul><li><p> One of the above is true </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH7: コントロールのラベルを変更するために、スクリプトを使用する" href="FLASH7.html"><strong>前: </strong>
+</code></pre></div><div class="textbody"><p>このアプローチの実例については、<a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.html" class="ex-ref">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</a>を参照のこと。<a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.zip" class="ex-ref">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</a>がダウンロードできる。</p><div class="note"><p class="prefix"><em>注記: </em>Adobe Flex を使用すれば、&lt;form&gt;, &lt;formitem&gt; および &lt;formheading&gt; 要素を使用して、このタイプの動作を実現できる。</p></div></div></div><h2 id="FLASH8-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="FLASH25.html">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h2 id="FLASH8-tests">検証</h2><div class="textbody"><h3 class="small-head" id="FLASH8-procedure">チェックポイント</h3><p>Flash ムービーにグループ化されたフォーム・コントロールが含まれている場合は、次のいずれかを満たしていることを確認する。</p><ul><li><p>各コントロールのアクセシビリティパネルの「名前」フィールドにグループ名が含まれている。</p></li><li><p>各コントロールに <code>AccessibilityProperties.name</code> プロパティがあり、グループ名とコントロールのラベルとなるテキストの両方を含んでいる。</p></li></ul><h3 class="small-head" id="FLASH8-results">判定基準</h3><ul><li><p>上記チェックポイントのいずれかを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="FLASH7: コントロールのラベルを変更するために、スクリプトを使用する" href="FLASH7.html"><strong>前: </strong>
         達成方法 FLASH7</a></li><li><a title="FLASH9: 収録済みの同期したメディアにキャプションを提供する" href="FLASH9.html"><strong>次: </strong>
         達成方法 FLASH9</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>（<a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH8.html">この文書の最新版（英語）</a>を参照してください）の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【重要】 この文書は、W3Cワーキンググループノート「<a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</a>」（原文は英語: 2016年10月7日公開）を情報通信アクセス協議会の「<a href="http://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会（WAIC） 翻訳ワーキンググループ（WG4）</a>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3Cが公開している原文（英語）にてご確認ください。</p><p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文（英語）にリンクしています。</p></div></body></html>

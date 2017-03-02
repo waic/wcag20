@@ -8192,18 +8192,20 @@ flashLink1._accProps.name = "Flash についてさらに学ぶ";</code></pre></d
 						How to Meet 2.4.9 (リンクの目的 (リンクのみ) )
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.7.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH7">User Agent Support Notes for FLASH7</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH7-description">解説</h4><div class="textbody"><p>The purpose of this technique is to allow users to choose to have  additional information added to the label of a button or other control  so that it can be understood out of context. </p><p>Some users prefer to have control labels that are  self-contained, where there is no need to explore the context of the  control. Other users find including the context information in each  button to be repetitive and to reduce their ability to use a site.  Among users of assistive technology, the feedback to the working group  on which is preferable has been divided. This technique allows users to  pick the approach that works best for them. </p><p>A control is provided near the beginning of the page that will  expand the labels for controls on the page so that no  additional context is needed to understand the purpose of those  controls. It must always be possible to understand purpose of the  control directly from its label. </p><p>This technique expands the control labels only for the current  page view. It is also possible, and in some cases would be advisable,  to save this preference in a cookie or server-side user profile, so  that users would only have to make the selection once per site. </p></div><h4 class="small-head" id="FLASH7-examples">事例</h4><h5 class="small-head" id="FLASH7-ex1">事例 1: Using ActionScript to add contextual information  directly to the label of a button</h5><div class="example"><div class="textbody"><p>This example uses ActionScript to add contextual information  directly to the label of a button. When the "Expand Button Labels"  button is toggled, each button on the page has its <code>label</code> property  modified. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.ButtonAccImpl;
+					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.7.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH7">User Agent Support Notes for FLASH7</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH7-description">解説</h4><div class="textbody"><p>この実装方法の目的は、前後の文脈を把握しなくても理解できるように、利用者がボタンなどのコントロールのラベルに付加情報を追加できるようにすることである。</p><p>コントロールの前後にある文脈をわざわざ把握しなくてもすむように、コントロールのラベルによって十分な情報が提供されることを望む利用者がいる。その一方で、すべてのボタンに文脈を含む情報があるのはあまりにも冗長であり、サイトの利便性を低下させると考えるユーザーもいる。また、支援技術の利用者からワーキンググループに寄せられるフィードバックでも、どちらが好ましいかについて意見が分かれている。この実装方法は、ユーザー自身が好むほうを選択できるようにするものである。</p><p>ページの先頭近くにページ上のコントロールのラベルを拡張するためのコントロールを配置し、前後の文脈を加味しなくてもコントロールの目的を理解できるようにする。必ずコントロールの目的をラベルから直接理解できるようにすることが必要である。</p><p>この実装方法によってコントロールのラベルが拡張されるのは、現在参照しているページのみである。ただし、サイト全体で1回選択すればすむように、cookie やサーバー側のユーザープロファイルにこの設定を保存しておく方法もある。場合によっては、そのほうが望ましいかもしれない。</p></div><h4 class="small-head" id="FLASH7-examples">事例</h4><h5 class="small-head" id="FLASH7-ex1">事例 1: ActionScript を使用してボタンのラベルに文脈の情報を直接追加する</h5><div class="example"><div class="textbody"><p>この事例では、ActionScript を使用してボタンのラベルに文脈の情報を直接追加している。「より詳細なボタン名に変更」ボタンをクリックすることによって、ページ上の各ボタンの <code>label</code> プロパティが変更される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.ButtonAccImpl;
 ButtonAccImpl.enableAccessibility();
 btn1.addEventListener(MouseEvent.CLICK, clickHandler);
 
 function clickHandler(e) {
-  btn2.label = btn1.selected? "PDF version of 2010 brochure": "PDF";
+  btn2.label = btn1.selected? "2010 年版パンフレット PDF 版": "PDF";
   btn2.width = btn1.selected? 200: 100;
-  btn3.label = btn1.selected? "Text version of 2010 brochure": "Text";
+  btn3.label = btn1.selected? "2010 年版パンフレット テキスト版": "Text";
   btn3.width = btn1.selected? 200: 100;
-  btn4.label = btn1.selected? "Word version of 2010 brochure": "Word";
+  btn4.label = btn1.selected? "2010 年版パンフレット Word 版": "Word";
   btn4.width = btn1.selected? 200: 100;
-}</code></pre></div><div class="textbody"><p>The result can be seen in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.html" class="ex-ref">working example of adding contextual information to a button label</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.fla" class="ex-ref">source of adding contextual information to a button label</a> is available.</p></div></div><h4 id="FLASH7-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SCR30">SCR30: リンクのラベルを変更するために、スクリプトを使用する</a></li></ul></div><h4 id="FLASH7-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH7-procedure">チェックポイント</h5><p>When a Flash Movie contains content with context dependent labels,  confirm that a separate toggle control is provided that allows the user  to expand the labels so that they are no longer context dependent. </p><h5 class="small-head" id="FLASH7-results">判定基準</h5><p>The above is true. </p><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH8" id="FLASH8"> </a>FLASH8: フォーム・コントロールのアクセシブルな名前にグループ名を追加する</h3><div class="applicability"><h4 id="FLASH8-applicability">適用（対象）</h4><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
+}</code></pre></div><div class="textbody"><p>この結果は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.html">
+                    ボタンのラベルにコンテキスト情報を追加するのサンプル（英語）</a>で確認できる。また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH7/change_button_label.fla">
+                    ボタンのラベルにコンテキスト情報を追加するのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h4 id="FLASH7-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SCR30">SCR30: リンクのラベルを変更するために、スクリプトを使用する</a></li></ul></div><h4 id="FLASH7-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH7-procedure">チェックポイント</h5><p>Flash ムービーに前後の文脈に依存したラベルが含まれている場合、利用者がラベルに前後の文脈を加味しなくてもすむように、ラベルを拡張するためのトグルコントロールが提供されている。</p><h5 class="small-head" id="FLASH7-results">判定基準</h5><p>上記チェックポイントを満たしている。</p><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH8" id="FLASH8"> </a>FLASH8: フォーム・コントロールのアクセシブルな名前にグループ名を追加する</h3><div class="applicability"><h4 id="FLASH8-applicability">適用（対象）</h4><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#content-structure-separation-programmatic">
 						How to Meet 1.3.1 (情報及び関係性)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
@@ -8213,11 +8215,13 @@ function clickHandler(e) {
 						How to Meet 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.8.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH8">User Agent Support Notes for FLASH8</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH8-description">解説</h4><div class="textbody"><p>The objective of this technique is to provide a semantic grouping for   related form controls. This allows users to understand the relationship   of the controls and interact with the form more quickly and   effectively. </p><p>In Flash, when related form controls are grouped, this grouping   can be indicated by adding the group's name to each form control's   accessible name. </p><p>Grouping controls is most important for related radio buttons and   checkboxes. A set of radio buttons or checkboxes is related when they   all submit values for a single named field. They work in the same way as   selection lists, allowing the user to choose from a set of options,   except selection lists are single controls while radio buttons and   checkboxes are multiple controls. Because they are multiple controls, it   is particularly important that they be grouped semantically so they can   be more easily treated as a single control. Often, user agents will   present the value of the legend before the label of each control, to   remind users that they are part of the same group. </p><p>It can also be useful to group other sets of controls that are   not as tightly related as sets of radio buttons and checkboxes. For   instance, several fields that collect a user's address might be grouped   together with a legend of "Address". </p></div><h4 class="small-head" id="FLASH8-examples">事例</h4><h5 class="small-head" id="FLASH8-ex1">事例 1: Adding a group name to the accessible name of radio buttons</h5><div class="example"><div class="textbody"><p>This example shows how the group name for radio buttons in a group   can be made accessible by adding it to each button's accessible name: </p><ol class="enumar"><li><p> Add radio button components to the stage: </p></li><li><p> Enter each button's label using its <code>label</code> property </p></li><li><p> Add the visual group label to the left or above the buttons   added in step 1 </p></li><li><p> Select each radio button. In the Accessibility panel, add the   group name to the "Name" field; </p></li></ol><p>Flash will concatenate the group name with each button's individual   name, such as "gender male". </p><p>This approach is illustrated in the screenshot below: </p><p>
-								       <img class="eximg" src="/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png" alt="Using the Accessibility panel to add a group name to a form control" height="236" width="584"/>
-							     </p><div class="note"><p class="prefix"><em>注記: </em>To make the radio buttons in this example accessible, the   following two lines need to be added to the movie's script: <code>import fl.accessibility.RadioButtonAccImpl;
+					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.8.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH8">User Agent Support Notes for FLASH8</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH8-description">解説</h4><div class="textbody"><p>この実装方法の目的は、関連するフォーム・コントロールをセマンティックにグループ化することである。これにより、利用者が複数のコントロール間の関係を理解し、より早くかつ効率的にフォームを操作することができる。</p><p>Flash では、関連するフォーム・コントロールがグループ化されている場合、グループの名前を各フォーム・コントロールのアクセシブルな名前に追加することで、そのグループを示すことができる。</p><p>コントロールのグループ化は、関係性があるラジオボタンとチェックボックスの場合に最も重要である。ラジオボタンまたはチェックボックスの一式は、それらすべてが単一の名前付きフィールドに値を送信する場合に関係性があるといえる。これらは、選択リストと同じように機能し、ユーザーは複数の選択肢の中からどれかを選択できる。ただし、選択リストが一つのコントロールであるのに対して、ラジオボタンやチェックボックスは複数のコントロールである点が異なる。ラジオボタンやチェックボックスは、複数のコントロールであるため、これらを意味的にグループ化して一つのコントロールとして簡単に扱えるようにすることが特に重要である。多くの場合、ユーザーエージェントは、各コントロールのラベルの前にグループ名を示し、それらが同じグループのものであることをユーザーに知らせる。 </p><p>ラジオボタンやチェックボックスの一式ほど密接な関係性があるわけではない他のコントロール一式でも、その一式をグループ化すると便利な場合がある。例えば、ユーザーに住所に関する情報を入力してもらう幾つかのテキストフィールドを「住所」という名前でグループ化することができる。</p></div><h4 class="small-head" id="FLASH8-examples">事例</h4><h5 class="small-head" id="FLASH8-ex1">事例 1: ラジオボタンのアクセシブルな名前にグループ名を追加する</h5><div class="example"><div class="textbody"><p>この事例は、グループ内のラジオボタンのグループ名を各ボタンのアクセシブルな名前に追加して、それらのグループをアクセシブルにする方法を示している。</p><ol class="enumar"><li><p>ラジオボタンのコンポーネントをステージに追加する。</p></li><li><p><code>label</code> プロパティを使用して各ボタンのラベルを入力する。</p></li><li><p>視覚的なグループラベルを手順 1 で追加したボタンの左側または上に追加する。</p></li><li><p>各ラジオボタンを選択する。アクセシビリティパネルで、「名前」フィールドにグループ名を追加する。</p></li></ol><p>Flash は、「性別 男性」というように、グループ名を各ボタンの個別の名前に連結する。 </p><p>次のスクリーンショットは、このアプローチについて示したものである。</p><p>
+								       <img class="eximg" src="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png" alt="画面スクリーンショット：アクセシビリティパネルを用いて、フォーム・コントロールにグループ名を追加" height="236" width="584"/>
+							     </p><div class="note"><p class="prefix"><em>注記: </em>この事例のラジオボタンをアクセシブルにするには、次の2行をムービーのスクリプトに追加する必要がある。<code>import fl.accessibility.RadioButtonAccImpl;
 RadioButtonAccImpl.enableAccessibility();</code>
-								       </p></div><p>For an illustration of this approach, see the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html" class="ex-ref">working version of Adding a group name to the accessible name of radio buttons</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla" class="ex-ref">source of Adding a group name to the accessible name of radio buttons</a> is available.</p></div></div><h5 class="small-head" id="FLASH8-ex2">事例 2: Programmatically adding a group name with the accessible name of radio buttons</h5><div class="example"><div class="textbody"><p>The code example below shows a basic proof of concept of a class that   automatically places a set of form controls inside a fieldset like   rectangle, including a legend. For each added control an <code>AccessibilityProperties</code>   object is created, and its <code>name</code> property is set to a   combination of the legend text and the actual form control label. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+								       </p></div><p>このアプローチの実例については、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html">
+                    ラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</a>を参照のこと。<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla">
+                    ラジオボタンのアクセシブルな名前にグループ名を追加するのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h5 class="small-head" id="FLASH8-ex2">事例 2: プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する</h5><div class="example"><div class="textbody"><p>次のコード例は、グループ名を含むフォーム・コントロール一式を長方形のようなフィールドセット内に配置するクラスの基本的な概念実証を示している。追加される各コントロールに対して <code>AccessibilityProperties</code> オブジェクトが作成され、その <code>name</code> プロパティが、グループ名のテキストと実際のフォーム・コントロールのラベルの組み合わせに設定される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 package wcagSamples {
   import flash.display. *;
   import flash.text. *;
@@ -8227,12 +8231,12 @@ package wcagSamples {
   
   
   /**
-  *  Basic example that demonstrates how to simulate a fieldset, as provided
-  *  in HTML. The FieldSet class takes a group of controls and places them 
-  *  inside a fieldset rectangle with the legend text at the top. For each form 
-  *  control, the legend text is prepended to the control's accessible name
+  *  HTMLで提供されているfieldset要素を模倣する方法を実演する基本的なサンプル。
+  *  FieldSet クラスは、複数のコントロールをグループ化してfieldsetの矩形内に配置し、
+  *  その先頭にグループ名となるテキストを置く。各フォーム・コントロールに対して、
+  *  グループ名のテキストはコントロールのアクセシブルな名前の前に追加される。
   *
-  *  Note: This is only a proof of concept, not a fully functional class
+  *  注記：これは概念の実証を目的にしたものであり、完全に機能するクラスではない。
   *
   *  @langversion 3.0
   *  @playerversion Flash 10
@@ -8248,16 +8252,16 @@ package wcagSamples {
     
     /**
     *  CONSTRUCTOR
-    *  Legend specifies the FieldSet's legend text, items is an array 
-    *  describing the controls to be added to the FieldSet
+    *  Legend は、FieldSetのグループ名となるテキストを特定する
+    *  itemsは、そのFieldSetに追加されるコントロールを説明する
     */
     
     public function FieldSet(legend: String, items: Array) {
-      // enable accessibility for components used in this example
+       // この事例で使われているコンポーネントのアクセシビリティを有効にする
       RadioButtonAccImpl.enableAccessibility();
       CheckBoxAccImpl.enableAccessibility();
       
-      //create FieldSet rectangle and legend
+      //FieldSet の矩形とグループ名を生成する
       legend = legend;
       bBox = new Shape();
       bBox.graphics.lineStyle(1);
@@ -8276,22 +8280,22 @@ package wcagSamples {
       fieldSetLegend.autoSize = TextFieldAutoSize.LEFT;
       addChild(fieldSetLegend);
       
-      // add controls
+      // コントロールを追加する
       for (var i = 0; i &lt; items.length; i++) {
         processItem(items[i]);
       }
     }
     
     /**
-    * Adds the control to the Fieldset and sets its accessible name. A 
-    * control is represented as an array, containing the following values:
-    * [0] : A string describing the component type 
-    *   (can be "TextInput", TextArea", Checkbox" or "RadioGroup").
-    * [1] : The label used to identify the control
-    * [2] : If [0] is "RadioGroup", then [2] needs to contain an array of the 
-    *    labels for each individual radio button. if [0] is "CheckBox", then 
-    *    [1] can either be empty or a question (e.g. "Do you smoke?"), and 
-    *    [2] the CheckBox label (e.g. "Yes").
+    * コントロールをFieldsetに追加し、アクセシブルな名前を設定する。 
+    * コントロールは配列で表されており、次の値を含んでいる。
+    * [0] : コンポーネントのタイプを表す文字列 
+    *   (例： "TextInput", TextArea", Checkbox" または "RadioGroup")
+    * [1] : コントロールを特定するために用いられるラベル
+    * [2] : もし [0] が "RadioGroup" だった場合、[2] は個々のラジオボタンに対する 
+    *    ラベルの配列を含んでいる必要がある。もし [0] が "CheckBox" だった場合、 
+    *    [1] は空または質問（例：「喫煙しますか？」）のどちらかで、
+    *    [2] は CheckBox のラベル（例：「はい」）となる。
     *
     */
     function processItem(item: Array) {
@@ -8315,7 +8319,7 @@ package wcagSamples {
         case "TextArea":
         newControl = item[0] == "TextInput"? new TextInput(): new TextArea();
         newControl.x = FieldSet.CONTROL_OFFSET_X;
-        //concatenate accessible name, combining legend and label
+         //グループ名とラベルをつなげて、アクセシブルな名前にする。
         setAccName(newControl, legend + " " + item[1]);
         break;
         case "CheckBox":
@@ -8351,7 +8355,7 @@ package wcagSamples {
     }
     
     /**
-    * Creates an AccessibilityProperties object for an object and sets its name property
+     * オブジェクトに対するAccessibilityProperties オブジェクトを生成し、その name プロパティを設定する
     */
     public function setAccName(obj, accName) {
       var accProps: AccessibilityProperties = new AccessibilityProperties();
@@ -8359,19 +8363,19 @@ package wcagSamples {
       obj.accessibilityProperties = accProps;
     }
   }
-}</code></pre></div><div class="textbody"><p>This example class can be initialized as follows: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>var myFieldSet = new FieldSet("Personal Details",  // the legend 
-  [["TextInput", "Name"],                          // text field
-  ["RadioGroup", "Gender", ["Male", "Female"]],    // radio button group
-  ["CheckBox", "Do you smoke", "yes"],             // checkbox
-  ["TextArea", "Comments"],                        // text area
+}</code></pre></div><div class="textbody"><p>この事例のクラスの初期化は次のように行う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>var myFieldSet = new FieldSet("Personal Details",  // グループ名 
+  [["TextInput", "名前"],                          // テキストフィールド
+  ["RadioGroup", "性別", ["男性", "女性"]],          // ラジオボタンのグループ
+  ["CheckBox", "喫煙しますか？", "はい"],             // チェックボックス
+  ["TextArea", "コメント"],                        // テキストエリア
 ]);
 addChild(myFieldSet);
-</code></pre></div><div class="textbody"><p>For an illustration of this approach, see the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.html" class="ex-ref">working version of Programmatically adding a group name with the accessible name of radio buttons</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.zip" class="ex-ref">source of Programmatically adding a group name with the accessible name of radio buttons</a> is available.</p><div class="note"><p class="prefix"><em>注記: </em>Adobe Flex allows you to perform this type of behavior by   using the &lt;form&gt;, &lt;formitem&gt; and &lt;formheading&gt;   elements </p></div></div></div><h4 id="FLASH8-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/FLASH25">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h4 id="FLASH8-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH8-procedure">チェックポイント</h5><p>When a Flash Movie contains grouped form controls, confirm that   either : </p><ul><li><p> The group's name is included in the Accessibility panel's   "name" field for each control. </p></li><li><p> Each control has an <code>AccessibilityProperties.name</code> property,   which contains both the group's name and the control's label text </p></li></ul><h5 class="small-head" id="FLASH8-results">判定基準</h5><ul><li><p> One of the above is true </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH9" id="FLASH9"> </a>FLASH9: 収録済みの同期したメディアにキャプションを提供する</h3><div class="applicability"><h4 id="FLASH9-applicability">適用（対象）</h4><div class="textbody"><p>Adobe Flash-based Content </p><ul><li><p> Adobe Flash CS3 and later </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
+</code></pre></div><div class="textbody"><p>このアプローチの実例については、<a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.html" class="ex-ref">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</a>を参照のこと。<a href="/WAI/WCAG20/Techniques/working-examples/FLASH8/grouped_form_controls.zip" class="ex-ref">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</a>がダウンロードできる。</p><div class="note"><p class="prefix"><em>注記: </em>Adobe Flex を使用すれば、&lt;form&gt;, &lt;formitem&gt; および &lt;formheading&gt; 要素を使用して、このタイプの動作を実現できる。</p></div></div></div><h4 id="FLASH8-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/FLASH25">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h4 id="FLASH8-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH8-procedure">チェックポイント</h5><p>Flash ムービーにグループ化されたフォーム・コントロールが含まれている場合は、次のいずれかを満たしていることを確認する。</p><ul><li><p>各コントロールのアクセシビリティパネルの「名前」フィールドにグループ名が含まれている。</p></li><li><p>各コントロールに <code>AccessibilityProperties.name</code> プロパティがあり、グループ名とコントロールのラベルとなるテキストの両方を含んでいる。</p></li></ul><h5 class="small-head" id="FLASH8-results">判定基準</h5><ul><li><p>上記チェックポイントのいずれかを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH9" id="FLASH9"> </a>FLASH9: 収録済みの同期したメディアにキャプションを提供する</h3><div class="applicability"><h4 id="FLASH9-applicability">適用（対象）</h4><div class="textbody"><p>Adobe Flashをベースにしたコンテンツ</p><ul><li><p>Adobe Flash CS3 以降</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-captions">
 						How to Meet 1.2.2 (キャプション (収録済) )
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-captions.html">
 						達成基準 1.2.2 (キャプション (収録済) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.9.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH9">User Agent Support Notes for FLASH9</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH9-description">解説</h4><div class="textbody"><p>The objective of this technique is to provide an option for people   who have hearing impairments or otherwise have trouble hearing the sound   and dialogue in synchronized media to be able to choose to view   captions as an alternative to audio information. With this technique all   of the dialogue and important sounds are provided as text in a fashion   that allows the text to be hidden unless the user requests it. As a   result they are visible only when needed. This can be achieved using the   FLVPlayback and FLVPlaybackCaptioning   components.  Note: when using FLVPlayback skins the closed   caption button is accessible by default, but if implementing custom   skins authors need to test to verify that the button is accessible. </p></div><h4 class="small-head" id="FLASH9-examples">事例</h4><h5 class="small-head" id="FLASH9-ex1">事例 1: Adding a timed text caption file to Flash</h5><div class="example"><div class="textbody"><ol class="enumar"><li><p> Use an external tool (such as Magpie or a simple text editor)   to create a timed Text captions xml file. Stop and play the video   content, and for each relevant part of audio information (including   speech, important background noises and event sounds) include the start   and end time code as well as the textual alternative. Tools like Magpie   have advanced features to make this process easier, whereas a text   editor requires you to read the timecodes from your media player and   include them in the XML as illustrated in the sample captions document   below </p></li><li><p> In Flash, create a new instance of the FLVPlayback component   on your stage, and set its contentPath value to your flv video file   using the 'Component inspector' or 'Parameters' panel. </p></li><li><p> Set the 'Skin' parameter to use a skin which includes the CC   (closed captions) button. </p></li><li><p> From the components list also create an instance of the   FLVPlayback captioning component. In the 'Component inspector' panel set   its 'Source' parameter to the name of your timed text xml file. The   captions will automatically placed at the bottom of the player's frame. </p></li></ol></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua9.9.1">ユーザエージェント及び支援技術によるサポート</h4><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH9">User Agent Support Notes for FLASH9</a>. Also see <a href="#flash_notes">Flash テクノロジーノート</a>.</p></div><h4 id="FLASH9-description">解説</h4><div class="textbody"><p>この実装方法の目的は、聴覚障害のある利用者や同期したメディア内の音声や会話を聞くことが困難な利用者が、音声情報の代替手段としてキャプションを見るように選択できるオプションを提供することである。この実装方法では、すべての会話と重要な音がテキストとして提供されるが、それらのテキストは利用者が要求した場合以外は表示されない。結果として、必要な場合にのみ表示される。これは、FLVPlayback コンポーネントと FLVPlaybackCaptioning コンポーネントを使用して実現できる。注記：FLVPlayback のスキンを使用すると、クローズドキャプションボタンがデフォルトでアクセシブルになる。ただし、カスタムスキンを実装する場合は、クローズドキャプションボタンがアクセシブルかどうかをコンテンツ制作者がテストする必要がある。</p></div><h4 class="small-head" id="FLASH9-examples">事例</h4><h5 class="small-head" id="FLASH9-ex1">事例 1: Timed Textのキャプションファイルを Flash に追加する</h5><div class="example"><div class="textbody"><ol class="enumar"><li><p>外部ツール（Magpie やシンプルなテキストエディタなど）を使用して、Timed Textを用いたキャプションの XML ファイルを作成する。ビデオコンテンツを停止して再生し、音声情報の適切な部分（会話、重要な背景音、イベントサウンドなど）ごとに開始と終了のタイムコードおよび代替テキストを挿入する。Magpie のようなツールにはこの作業を簡単に行うことができる高度な機能がある。これに対し、テキストエディタでは次のキャプション文書の例に示すようにメディアプレーヤーからタイムコードを読み取って XML に含める必要がある。</p></li><li><p>Flash では、ステージに FLVPlayback コンポーネントの新しいインスタンスを作成し、［コンポーネントインスペクタ］パネルまたは［パラメータ］パネルを使用して contentPath 値を flv ビデオファイルに設定する。</p></li><li><p>CC（クローズドキャプション）ボタンを含むスキンを使用するように「Skin」パラメータを設定する。</p></li><li><p>さらに、コンポーネントのリストから FLVPlayback キャプションコンポーネントのインスタンスを作成する。［コンポーネントインスペクタ］パネルで、「Source」パラメータをTimed TextのXMLファイルの名前に設定する。キャプションは、プレーヤーのフレームの下部に自動的に配置される。</p></li></ol></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"
   xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling"&gt;
   &lt;head&gt;
@@ -8410,13 +8414,13 @@ addChild(myFieldSet);
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/tt&gt;
-</code></pre></div><div class="textbody"><p>This is demonstrated in <a href="/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.html" class="ex-ref">working example of Adding a timed text caption file to Flash</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.zip" class="ex-ref">working example of Adding a timed text caption file to Flash</a> is available.</p></div></div><h4 id="FLASH9-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><p>
+</code></pre></div><div class="textbody"><p>この実例は、<a href="/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.html" class="ex-ref">Timed Textのキャプションファイルを Flash に追加する」のサンプル（英語）</a>で確認できる。また、<a href="/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.zip" class="ex-ref">Timed Textのキャプションファイルを Flash に追加する」のサンプル</a>をダウンロードすることもできる。</p></div></div><h4 id="FLASH9-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><p>
 							     <a href="http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines">http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines</a>
 						   </p><p>
 							     <a href="http://www.buraks.com/captionate/">http://www.buraks.com/captionate/</a>
 						   </p><p>
 							     <a href="http://www.w3.org/AudioVideo/TT/">http://www.w3.org/AudioVideo/TT/</a>
-						   </p></div><h4 id="FLASH9-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G87">G87: クローズド・キャプションを提供する</a></li></ul></div><h4 id="FLASH9-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH9-procedure">チェックポイント</h5><p>Watch all video content displayed by your Flash movie. Ensure that: </p><ol class="enumar"><li><p> Captions are available for all audio content, either turned on   by default or as a user preference. </p></li><li><p> The captions properly describe all audio information contained   in the video. </p></li></ol><h5 class="small-head" id="FLASH9-results">判定基準</h5><ul><li><p> #1 and #2 are true </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH10" id="FLASH10"> </a>FLASH10: Flash でフォーム・コントロールが必須項目であることを示す</h3><div class="applicability"><h4 id="FLASH10-applicability">適用（対象）</h4><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
+						   </p></div><h4 id="FLASH9-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G87">G87: クローズド・キャプションを提供する</a></li></ul></div><h4 id="FLASH9-tests">検証</h4><div class="textbody"><h5 class="small-head" id="FLASH9-procedure">チェックポイント</h5><p>Flash ムービーで表示されるすべてのビデオコンテンツを見て、次のことを確認する。</p><ol class="enumar"><li><p>すべての音声コンテンツでキャプションを利用でき、デフォルトまたはユーザー環境設定によってオンになる。</p></li><li><p>ビデオに含まれるすべての音声情報がキャプションで適切に説明されている。</p></li></ol><h5 class="small-head" id="FLASH9-results">判定基準</h5><ul><li><p>1. および 2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="FLASH10" id="FLASH10"> </a>FLASH10: Flash でフォーム・コントロールが必須項目であることを示す</h3><div class="applicability"><h4 id="FLASH10-applicability">適用（対象）</h4><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#minimize-error-cues">
 						How to Meet 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/minimize-error-cues.html">
