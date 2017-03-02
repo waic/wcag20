@@ -4,10 +4,10 @@
 <technique id="FLASH9">
    <short-name>収録済みの同期したメディアにキャプションを提供する</short-name>
    <applicability>
-      <p>Adobe Flash-based Content </p>
+      <p>Adobe Flashをベースにしたコンテンツ</p>
       <ulist>
          <item>
-            <p> Adobe Flash CS3 and later </p>
+            <p>Adobe Flash CS3 以降</p>
          </item>
       </ulist>
    </applicability>
@@ -18,24 +18,24 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide an option for people   who have hearing impairments or otherwise have trouble hearing the sound   and dialogue in synchronized media to be able to choose to view   captions as an alternative to audio information. With this technique all   of the dialogue and important sounds are provided as text in a fashion   that allows the text to be hidden unless the user requests it. As a   result they are visible only when needed. This can be achieved using the   FLVPlayback and FLVPlaybackCaptioning   components.  Note: when using FLVPlayback skins the closed   caption button is accessible by default, but if implementing custom   skins authors need to test to verify that the button is accessible. </p>
+      <p>この実装方法の目的は、聴覚障害のある利用者や同期したメディア内の音声や会話を聞くことが困難な利用者が、音声情報の代替手段としてキャプションを見るように選択できるオプションを提供することである。この実装方法では、すべての会話と重要な音がテキストとして提供されるが、それらのテキストは利用者が要求した場合以外は表示されない。結果として、必要な場合にのみ表示される。これは、FLVPlayback コンポーネントと FLVPlaybackCaptioning コンポーネントを使用して実現できる。注記：FLVPlayback のスキンを使用すると、クローズドキャプションボタンがデフォルトでアクセシブルになる。ただし、カスタムスキンを実装する場合は、クローズドキャプションボタンがアクセシブルかどうかをコンテンツ制作者がテストする必要がある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Adding a timed text caption file to Flash</head>
+         <head>Timed Textのキャプションファイルを Flash に追加する</head>
          <description>
             <olist>
                <item>
-                  <p> Use an external tool (such as Magpie or a simple text editor)   to create a timed Text captions xml file. Stop and play the video   content, and for each relevant part of audio information (including   speech, important background noises and event sounds) include the start   and end time code as well as the textual alternative. Tools like Magpie   have advanced features to make this process easier, whereas a text   editor requires you to read the timecodes from your media player and   include them in the XML as illustrated in the sample captions document   below </p>
+                  <p>外部ツール（Magpie やシンプルなテキストエディタなど）を使用して、Timed Textを用いたキャプションの XML ファイルを作成する。ビデオコンテンツを停止して再生し、音声情報の適切な部分（会話、重要な背景音、イベントサウンドなど）ごとに開始と終了のタイムコードおよび代替テキストを挿入する。Magpie のようなツールにはこの作業を簡単に行うことができる高度な機能がある。これに対し、テキストエディタでは次のキャプション文書の例に示すようにメディアプレーヤーからタイムコードを読み取って XML に含める必要がある。</p>
                </item>
                <item>
-                  <p> In Flash, create a new instance of the FLVPlayback component   on your stage, and set its contentPath value to your flv video file   using the 'Component inspector' or 'Parameters' panel. </p>
+                  <p>Flash では、ステージに FLVPlayback コンポーネントの新しいインスタンスを作成し、［コンポーネントインスペクタ］パネルまたは［パラメータ］パネルを使用して contentPath 値を flv ビデオファイルに設定する。</p>
                </item>
                <item>
-                  <p> Set the 'Skin' parameter to use a skin which includes the CC   (closed captions) button. </p>
+                  <p>CC（クローズドキャプション）ボタンを含むスキンを使用するように「Skin」パラメータを設定する。</p>
                </item>
                <item>
-                  <p> From the components list also create an instance of the   FLVPlayback captioning component. In the 'Component inspector' panel set   its 'Source' parameter to the name of your timed text xml file. The   captions will automatically placed at the bottom of the player's frame. </p>
+                  <p>さらに、コンポーネントのリストから FLVPlayback キャプションコンポーネントのインスタンスを作成する。［コンポーネントインスペクタ］パネルで、「Source」パラメータをTimed TextのXMLファイルの名前に設定する。キャプションは、プレーヤーのフレームの下部に自動的に配置される。</p>
                </item>
             </olist>
          </description>
@@ -80,11 +80,11 @@
 </tt>
 ]]></code>
          <description>
-            <p>This is demonstrated in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="adding_captions_to_Flash_video_as3.html"
-                    linktype="examples">working example of Adding a timed text caption file to Flash</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples">Timed Textのキャプションファイルを Flash に追加する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="adding_captions_to_Flash_video_as3.zip"
-                    linktype="examples">working example of Adding a timed text caption file to Flash</loc> is available.</p>
+                    linktype="examples">Timed Textのキャプションファイルを Flash に追加する」のサンプル</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -113,20 +113,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>Watch all video content displayed by your Flash movie. Ensure that: </p>
+         <p>Flash ムービーで表示されるすべてのビデオコンテンツを見て、次のことを確認する。</p>
          <olist>
             <item>
-               <p> Captions are available for all audio content, either turned on   by default or as a user preference. </p>
+               <p>すべての音声コンテンツでキャプションを利用でき、デフォルトまたはユーザー環境設定によってオンになる。</p>
             </item>
             <item>
-               <p> The captions properly describe all audio information contained   in the video. </p>
+               <p>ビデオに含まれるすべての音声情報がキャプションで適切に説明されている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> #1 and #2 are true </p>
+               <p>1. および 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -138,3 +138,4 @@
 					</source>
    </admin>
 </technique>
+
