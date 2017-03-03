@@ -13,55 +13,55 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide a clear indication that   a specific form control in a Web application or form is required for   successful data submission. The word "required" is added to the form   control's accessible name, and a visual indicator is placed next to the   label. </p>
+      <p>この実装方法の目的は、利用者がデータを正しく送信できるように、ウェブアプリケーションまたはフォームに含まれる特定のフォーム・コントロールが必須項目であることを明示することである。フォーム・コントロールのアクセシブルな名前に「必須」という語を追加し、視覚的な表示をラベルの横に配置する。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Adding the word "required" to the control's accessible name</head>
+         <head>コントロールのアクセシブルな名前に「必須」という語を追加する</head>
          <description>
-            <p>This example shows how to use the Accessibility panel to indicate a   field as being 'required' to users: </p>
+            <p>この事例では、アクセシビリティパネルを使用して、フィールドが「必須」であることを利用者に知らせる方法を示している。</p>
             <olist>
                <item>
-                  <p> Visually, place asterisk character or some other indication   adjacent to the form control's label. </p>
+                  <p>フォーム・コントロールのラベルの近くに、アスタリスク文字などの視覚的なマークを配置する。</p>
                </item>
                <item>
-                  <p> Use the Accessibility panel to combine the word "required"   with the control's label in the "Name" field. </p>
+                  <p>アクセシビリティパネルを使用して、「名前」フィールドに記述したコントロールのラベルのすぐ後に「（必須）」と記述する。</p>
                </item>
             </olist>
-            <p>This approach is illustrated in the screenshot below: </p>
+            <p>次のスクリーンショットは、このアプローチについて説明したものである。</p>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH10/required_flash_control.png"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_flash_control.png"
                        height="312"
                        width="546"/>
-                  <alt>Using the Accessibility panel to indicate a form control as being   required</alt>
+                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、フォーム・コントロールが必須項目であることを明示</alt>
                </image>
 							     </p>
-            <p>This is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="required_form_fields_as2.html"
-                    linktype="examples">working example of Adding the word "required" to the control's accessible name</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="required_form_fields_as2.fla"
-                    linktype="examples">source of Adding the word "required" to the control's accessible name</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.html">
+                    <!--linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.fla"><!--
+                    linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加する」のソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
    <tests>
       <procedure>
-         <p>For each required form control within a Flash movie, confirm that: </p>
+         <p>Flash ムービーに含まれる必須項目のフォーム・コントロールごとに、次のことを確認する。</p>
          <ulist>
             <item>
-               <p> The required state is indicated visually </p>
+               <p>必須項目であることが視覚的に示されている。</p>
             </item>
             <item>
-               <p> The required state is indicated textually using the 'Name'   field in the Accessibility panel </p>
+               <p>必須項目であることが、アクセシビリティパネルの「名前」フィールドを使用してテキストで記述されている。</p>
             </item>
          </ulist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Each of the above is true </p>
+               <p>上記の二点を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -73,3 +73,4 @@
 					</source>
    </admin>
 </technique>
+
