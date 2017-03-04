@@ -13,14 +13,14 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The intent of this technique is to allow a user to turn off sounds   that start automatically when a Flash movie loads. The control to turn   off the sounds should be located near the beginning of the page to allow   the control to be easily and quickly discovered by users . This is   useful for those who utilize assistive technologies (such as screen   readers, screen magnifiers, switch mechanisms, etc.) and those who may   not (such as those with cognitive, learning and language disabilities). </p>
-      <p>In this technique, an author includes a control that makes it   possible for users to turn off any sounds that are played automatically.   For maximum accessibility, the control can be added to the HTML   document rather than to the Flash movie. The HTML control will   communicate with the Flash movie through the ExternalInterface class.   This means that the user can control the sound playback without having   to interact with Flash content. If this is not practical, the control   can be provided within the Flash content, provided that the control is   keyboard operable, located early in the tab and reading order, and   clearly labeled to indicate that it will turn off the sounds that are   playing. </p>
+      <p>この実装方法の目的は、Flash ムービーの読み込み時に自動的に開始される音声を、利用者がオフにできるようにすることである。音声をオフにするコントロールは、利用者が素早く簡単に見つけられるようにページの先頭近くに置く必要がある。これは、スクリーンリーダー、画面拡大ソフト、スイッチメカニズムなどの支援技術を利用するユーザーにも利用しない利用者（認知障害、学習障害、言語障害のある利用者）にも役立つ。</p>
+      <p>この実装方法では、自動的に再生される音声を利用者がオフにできるようにするコントロールをコンテンツ制作者が実装する。アクセシビリティを最大化するためには、 Flash ムービーではなく HTML 文書にコントロールを追加する。HTML コントロールは、ExternalInterface クラスを通じて Flash ムービーと通信する。つまり、利用者は Flash コンテンツを操作しなくても、音声の再生を制御できるということである。実際のコンテンツでこの方法が適していない場合は、Flash コンテンツの内部にコントロールを配置することができる。その場合、このコントロールはキーボードで操作できるようにし、またタブ順序と読み上げ順序の最初に配置し、再生中の音声をオフにできることを明確に示すラベルを付ける。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Providing a button in the Flash to stop sound</head>
+         <head>Flash 内に音声を停止するボタンを提供する</head>
          <description>
-            <p>This example demonstrates the addition of a button within the Flash   movie to allow the user to stop sounds from playing.  A class called   SoundHandler is created which automatically starts playing an mp3 file   when the movie loads. </p>
+            <p>この事例は、利用者が音声の再生を停止できるように Flash ムービーの内部にボタンを実装する方法を示している。ムービーがロードされると自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import flash.display.Sprite;
@@ -61,18 +61,18 @@
   }
 }]]></code>
          <description>
-            <p>This is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="control_to_toggle_audio_as3.html"
-                    linktype="examples">working example of Providing a button in the Flash to stop sound</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="control_to_toggle_audio_as3.fla"
-                    linktype="examples">source of Providing a button in the Flash to stop sound</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.html"><!--
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.fla"><!--
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Providing a button in the HTML before the Flash object to stop sound</head>
+         <head>Flash オブジェクトの前に音声を停止するボタンを提供する</head>
          <description>
-            <p>A class called SoundHandler is created which automatically starts   playing an mp3 file when the movie loads. An HTML button is placed in   the HTML document containing the Flash movie. When the button is clicked   the action is communicated between the HTML page and the Flash movie   via the Flash Player JavaScript API, resulting in the toggleSound   method being called on the SoundHandler class. </p>
-            <exsubhead>ActionScript 3.0 code for Example 2</exsubhead>
+            <p>ムービーがロードされると自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。HTML のボタンは、Flash ムービーを含む HTML 文書に配置される。このボタンをクリックすると、Flash Player JavaScript API を通じて HTML ページと Flash ムービーの間でアクションが通知され、その結果として SoundHandler クラスの toggleSound メソッドが呼び出される。</p>
+            <exsubhead>事例 2 の ActionScript 3.0 のコード</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import flash.display.Sprite;
@@ -108,7 +108,7 @@
   }
 }]]></code>
          <description>
-            <exsubhead>HTML code for Example 2</exsubhead>
+            <exsubhead>事例 2 の HTML コード</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -149,11 +149,11 @@
 </html>
 ]]></code>
          <description>
-            <p>This is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="html_control_to_toggle_audio_as3.html"
-                    linktype="examples">working example of Providing a button in the HTML before the Flash object to stop sound</loc>. The source of <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="html_control_to_toggle_audio_as3.zip"
-                    linktype="examples">source of Providing a button in the HTML before the Flash object to stop sound</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.html"><!--
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.zip"><!--
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -162,26 +162,26 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For Flash movies that automatically start playing sound after   loading: </p>
+         <p>ロード後に自動的に音声の再生を開始する Flash ムービーについて:</p>
          <olist>
             <item>
-               <p> Confirm that an HTML control that conforms to WCAG 2.0 is placed at the   beginning of the document's tab order </p>
+               <p>ドキュメントのタブ順序の先頭にアクセシブルな HTML コントロールが配置されている。</p>
             </item>
             <item>
-               <p> If there is no HTML-based control, confirm that an accessible   control is placed at the beginning of the Flash movie's tab order. </p>
+               <p>HTML ベースのコントロールがない場合は、Flash ムービーのタブ順序の先頭にアクセシブルなコントロールが配置されている。</p>
             </item>
             <item>
-               <p> Activate the HTML or Flash-based control </p>
+               <p>HTML コントロールまたは Flash ベースのコントロールを操作する。</p>
             </item>
             <item>
-               <p> Verify that audio playback stops </p>
+               <p>音声の再生が停止される。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Check #1 or #2 is true, and #4 is true. </p>
+               <p>1. 又は 2. を満たしていて、かつ 4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

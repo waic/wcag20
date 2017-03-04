@@ -14,13 +14,13 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to demonstrate how to invoke a   scripting function in a way that is keyboard accessible by attaching it   to keyboard-accessible, standard Flash components provided by the Adobe   Flash Professional authoring tool. In order to ensure that scripted   actions can be invoked from the keyboard, they are associated with   standard Flash components such as the Button component. The click event   of these components is device independent. While the "CLICK" event is a   mouse event, it is actually mapped to the default action of a button.   The default action occurs when the user clicks the element with a mouse,   but it also occurs when the user focuses the element and hits the space   key, and when the element is triggered via the accessibility API. </p>
+      <p>この実装方法の目的は、Adobe Flash Profressional のオーサリングツールにより提供されるキーボード操作が可能な標準 Flash コンポーネントに関連付けることで、キーボード操作でスクリプト機能を呼び出す方法を示すことである。スクリプトで記述されたアクションをキーボードから呼び出せるようにするため、アクションを Button コンポーネントなどの標準的な Flash コンポーネントに関連付ける。これらのコンポーネントのクリックイベントは、デバイスに依存しない。"CLICK"イベントがマウスイベントである場合、このイベントは実際にボタンのデフォルトのアクションにマッピングされる。利用者がマウスで要素をクリックするとデフォルトのアクションが実行されるが、利用者が要素にフォーカスを移動してスペースキーを押した場合やアクセシビリティ API により要素がトリガされた場合も、デフォルトのアクションが実行される。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Click event on a button</head>
+         <head>ボタンのクリックイベント</head>
          <description>
-            <p>This example shows a button that uses the MouseEvent.CLICK   event to change its label. This event will fire both on mouse click and   when the space key is pressed </p>
+            <p>この事例では、MouseEvent.CLICK イベントを使用してそのラベルを変更するボタンを示している。このイベントは、マウスをクリックするかスペースキーを押した場合にトリガされる。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.controls.Button;
 import fl.accessibility.ButtonAccImpl;
@@ -37,15 +37,15 @@ function clickHandler(e) {
   e.target.label = "Thanks";
 }]]></code>
          <description>
-            <p>This approach is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="device_independent_event_handler_on_component_as3.html"
-                    linktype="examples">working version of click event on a button</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="device_independent_event_handler_on_component_as3.fla"
-                    linktype="examples">source of click event on a button</loc> is available. </p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH16/device_independent_event_handler_on_component_as3.html"><!--
+                    linktype="examples"-->ボタンのクリックイベントのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH16/device_independent_event_handler_on_component_as3.fla"><!--
+                    linktype="examples"-->ボタンのクリックイベントのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Pending example</head>
+         <head>（作成中）</head>
          <description>
             <ednote id="FLASH16_note">
                <edtext>The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -59,20 +59,20 @@ function clickHandler(e) {
    </related-techniques>
    <tests>
       <procedure>
-         <p>When a Flash Movie contains interactive controls, confirm that: </p>
+         <p>Flash ムービーにインタラクティブなコントロールが含まれている場合は、次のことを確認する。</p>
          <olist>
             <item>
-               <p> Standard Flash components are used for the controls </p>
+               <p>コントロールに標準の Flash コンポーネントが使用されている。</p>
             </item>
             <item>
-               <p> The controls use the "click" event </p>
+               <p>コントロールで "click" イベントを使用している。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> #1 and #2 are true </p>
+               <p>1. および 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

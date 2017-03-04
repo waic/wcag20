@@ -18,69 +18,69 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to allow keyboard focus to move to and from Flash content embedded in a web page. In browsers other than Internet   Explorer, there is a problem related to keyboard accessibility of   embedded Flash content. The problem is that, while both the Flash   content and the HTML content around it may be keyboard accessible, many browsers do not support moving keyboard focus between the Flash content and HTML   content without using a mouse. Once focus is placed inside the Flash   content, a keyboard user will be trapped there. Similarly, when focus is   placed somewhere else on the HTML content (outside the Flash content), it   will be impossible to move focus into the content.  This technique is designed to let the Flash author address this issue and provide support for moving focus between the Flash content and the HTML content via the keyboard. </p>
-      <p>This issue has been around for a long time, and is related to the   way browsers implement embedded plug-ins. Until this problem is fixed,   it is up to the Flash developer to come up with a work around. This   technique is one of those workarounds. The approach behind this   technique is the following: </p>
+      <p>この実装方法の目的は、キーボード・フォーカスがウェブページに埋め込まれた Flash コンテンツに入ったり、Flash コンテンツから出たりできるようにすることである。Internet Explorer 以外のブラウザでは、埋め込まれた Flash コンテンツのキーボード・アクセシビリティに関連した問題がある。その問題とは、Flash コンテンツとその周囲の HTML コンテンツのいずれもキーボードでアクセスが可能な場合、マウスを使用せずに Flash コンテンツと HTML コンテンツの間でキーボードフォーカスを移動させることができない点である。つまり、Flash コンテンツの内部にフォーカスがあると、キーボードのユーザーはフォーカスを移動できない。同様に、HTML コンテンツ（Flash ムービーの外部）のいずれかにフォーカスがあると、Flash コンテンツにフォーカスを移動することができなくなる。</p>
+      <p>これは長い間存在している問題であり、ブラウザによる埋め込みプラグインの実装方法に関連している。この問題が修正されるまで、回避策を用意するのは Flash 開発者の義務である。この実装方法は、その回避策の一つである。この実装方法の背景にある考え方は以下のとおりである。</p>
       <ulist>
          <item>
-            <p> Two 'neighbor' focusable HTML objects are identified for each   Flash content in the document (one before and one after the content). These   elements can be any HTML elements that are part of the web page's tab   order (such as links and form controls). </p>
+            <p>ドキュメント内の各 Flash コンテンツに関して、隣接する二つのフォーカス可能な HTML オブジェクト（コンテンツの前後のオブジェクト）を特定する。これらの要素は、ウェブページ内でタブ順序が適用される任意の HTML 要素である（リンクやフォーム・コントロールなど）。</p>
          </item>
          <item>
-            <p> The Flash content object itself is added to the document tab   order as well, making it possible to tab into the content. </p>
+            <p>Flash コンテンツのオブジェクト自体をドキュメントのタブ順序にも追加する。これにより、コンテンツにタブを移動することが可能になる。</p>
          </item>
          <item>
-            <p> Inside the Flash content, the Flash Player maintains its own tab   order. Normally, when the start or end of the Flash tab order is   reached (when tabbing through the content), focus will wrap to the   beginning or end of the content's tab order, and it will not be possible   to (shift) tab out of it. With this technique however, when a 'focus   wrap' is detected focus will instead be moved to the neighboring element   in the HTML tab order (allowing a keyboard user to 'break out' of the   Flash tab order). </p>
+            <p>Flash コンテンツの内部では、Flash Player が独自のタブ順序を管理する。通常、Flash コンテンツの中をタブ移動していて、タブ順序の先頭または最後に到達したとき、フォーカスはラップされて　Flash コンテンツのタブ順序の反対側の先頭または最後に移動する。つまり、フォーカスを Tab キー（または Shift + Tab キー）によって Flash コンテンツから抜け出させることができない。しかし、この実装方法を使用することによって、「フォーカスのラップ」が検出された場合に HTML のタブ順序内の隣接する要素に移動するようになる（キーボードを使用して Flash コンテンツのタブ順序から抜け出すことが可能になる）。</p>
          </item>
       </ulist>
-      <p>When the SWFFocus class is imported into a Flash project, the   following will happen: </p>
+      <p>Flash プロジェクトに SWFFocus クラスをインポートすると、次のようになる。</p>
       <ulist>
          <item>
-            <p> A JavaScript &lt;script&gt; tag will be generated   and added to the HTML document containing the Flash content. This   JavaScript code will:</p>
+            <p>JavaScript の &lt;script&gt; タグが生成され、Flash コンテンツが格納されている HTML ドキュメントに追加される。この JavaScript コードは以下の処理を行う。</p>
             <ulist>
                <item>
-                  <p> Set a tabIndex value of "0" on the &lt;object&gt; element of   each Flash content found in the page. This causes the Flash objects to   become part of the tab order. </p>
+                  <p>ページ内の各 Flash コンテンツの &lt;object&gt; 要素に対して、タブインデックス値 "0" を設定する。これにより、Flash オブジェクトがタブ順序に含まれるようになる。</p>
                </item>
                <item>
-                  <p> Optionally, create a hidden anchor element before and after   the Flash content, which is used by the SWFFocus class to move focus out   of the Flash content back into the HTML page. Alternatively, the developer   can specify existing focusable HTML elements as adjacent tab stops for   the Flash content. </p>
+                  <p>オプションで、Flash コンテンツの前後に非表示のアンカー要素を作成する。この要素は、SWFFocus によってフォーカスを Flash コンテンツから HTML ページに戻すために使用される。または、開発者自身が、既存のフォーカス可能な HTML 要素を Flash コンテンツの前後のタブストップとして指定することもできる。</p>
                </item>
                <item>
-                  <p> Set event handlers for the Flash content object, so that when it   receives focus, the SWFFocus class is notified to manage the content's   internal tab order. </p>
+                  <p>Flash コンテンツのオブジェクトのイベントハンドラを設定する。これによって、Flash コンテンツのオブジェクトがフォーカスを受け取った際に SWFFocus クラスに通知され、Flash コンテンツ内部のタブ順序を管理できるようにする。</p>
                </item>
             </ulist>
          </item>
          <item>
-            <p> The SWFFocus class monitors changes in focus within the Flash   content. When a focus wrap is detected in the content, a JavaScript function   will be called to instead move focus back to the neighboring HTML   content. </p>
+            <p>SWFFocus クラスは Flash コンテンツ内のフォーカスの変更を監視する。コンテンツ内でフォーカスのラップが検出されたら JavaScript の関数が呼び出され、これによって隣接する HTML コンテンツにフォーカスが戻される。</p>
          </item>
       </ulist>
-      <p>As indicated above, there are two ways in which this technique can be   used: </p>
+      <p>上記で示したように、このテクニックの使用方法は二通りある。</p>
       <olist>
          <item>
-            <p>Letting the SWFFocus class generate neighboring focusable   elements in the HTML tab order for each Flash content (demonstrated in   example 1 below)</p>
-            <p>By default, the SWFFocus class will create a hidden link   element before and after an embedded Flash content. These elements are   needed as 'anchor' to move focus to when (shift) tabbing out of the   Flash content. This approach is the easiest to implement, as it does not   require any additional work by the developer. The downside is that the   hidden links will clutter the HTML tab order with meaningless elements   (although these elements are only used as tab stops when tabbing _out   of_ the Flash content, not when tabbing _into_ it). Because of this, it is   recommended to use the following approach instead:</p>
+            <p>HTML のタブ順序内で各 Flash コンテンツに隣接するフォーカス可能な要素を、SWFFocus クラスに生成させる（下記の事例 1 で示す）。</p>
+            <p>デフォルトでは、SWFFocus クラスは埋め込まれた Flash コンテンツの前後に非表示のリンク要素を作成する。これらの要素は、Flash コンテンツの外部にタブ移動（または shift キーを押しながらタブ移動）する際に、フォーカスを移動するための「アンカー」として必要になる。この手法は、開発者による追加作業が必要ないため実装が最も簡単である。この手法の欠点は、非表示のリンクという意味のない要素が HTML のタブ順序の中に紛れ込むことである（これらの要素は、Flash コンテンツの外部にタブ移動する際のタブストップのみとして使用される。Flash コンテンツの内部にタブ移動する場合には使用されない）。以上の点から、この手法ではなく次の 2. の手法を使用することが推奨される。</p>
          </item>
          <item>
-            <p>Explicitly identifying focusable HTML elements that come before   and after the a Flash content in the HTML tab order (demonstrated in   example 2 below)</p>
-            <p>With this approach, the developer can use ID values to   identify the elements that come before and after the Flash content in the   HTML tab order. This is done by setting special class names on the Flash   content's &lt;object&gt; element. This is the preferred   approach, as it does not cause an unnecessary cluttering of the tab   order. However, it does require more work and awareness by the developer   (who has to manually set ID values). Also, in some scenarios there   simply may not be a next or previous focusable element for a Flash   content.</p>
+            <p>HTML のタブ順序内における各 Flash コンテンツの前後のフォーカス可能な HTML 要素を明示的に指定する（下記の事例 2 で示す）。</p>
+            <p>この手法では、開発者は ID 値を使用することによって、HTML のタブ順序内で Flash コンテンツの前後に当たる要素を指定できる。これは、Flash コンテンツの &lt;object&gt; 要素に特別なクラス名を設定することによって実現される。タブ順序内に不必要な要素が入り込むことがないため、この手法を用いることがより好ましい。ただし、開発者自身がこの点を意識して追加作業を行う必要がある（ID 値を手動で設定する必要がある）。また、状況によっては、Flash コンテンツの前後にフォーカス可能な要素が存在しない場合もありうる。</p>
          </item>
       </olist>
    </description>
    <examples>
-      <p>The two examples below are shown in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="keyboard_trap_fix_custom_as3.html"
-              linktype="examples">working example of Preventing a keyboard trap in Flash content</loc>. The example html file has two Flash contents embedded in it. The first Flash content is embedded with the approach described in example 1. The second example is embedded with the approach described in example 2. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="keyboard_trap_fix_custom_as3.zip"
-              linktype="examples">source of Preventing a keyboard trap in Flash content</loc> is available. The source zip file contains the SWFFocus class.</p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH17/keyboard_trap_fix_custom_as3.html"><!--
+              linktype="examples"-->Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する」のサンプル（英語）</loc>でこれらの二つの事例が示されている。このサンプルの HTML ファイルには二つの Flash コンテンツが埋め込まれている。最初の Flash コンテンツは事例 1 で説明されている手法によって埋め込まれており、二つ目の Flash コンテンツは事例 2 で説明されている手法によって埋め込まれている。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH17/keyboard_trap_fix_custom_as3.zip"><!--
+              linktype="examples"-->Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する」のソース（英語）</loc>をダウンロードすることもできる。ソースの zip ファイルには SWFFocus クラスが含まれている。</p>
       <note>
-         <p>To run the example from a local drive (as opposed to running it from a web server), the local directory needs to be added to Flash Player's security settings. </p>
+         <p>このサンプルをウェブサーバからではなく、ローカルドライブから実行するには、Flash Player のセキュリティ設定にローカルディレクトリを追加する必要がある。</p>
       </note>
       <eg-group>
-         <head>Using automatically generated links</head>
+         <head>自動生成されるリンクを使用する</head>
          <description>
-            <p>In this example, the SWFFocus class is used without explicitly   identifying focusable HTML elements. This will cause SWFFocus to   dynamically insert hidden links before and after the Flash content. </p>
-            <exsubhead>Loading the Flash Content</exsubhead>
-            <p>The Flash object in this example is added using <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject's dynamic publishing method</loc>, which means   that the object tag is created dynamically by JavaScript in a way that   the browser supports. While this is the recommended approach, it is not a   requirement for using this technique. The SWFFocus class will also work   when the object tag is hardcoded into the HTML document. </p>
-            <p>The sample code below shows how to load the content dynamically   with SWFObject. </p>
-            <exsubhead>HTML and Javascript Code Sample for Example 1 </exsubhead>
+            <p>この事例では、フォーカス可能な HTML 要素を明示的に指定することなく、SWFFocus クラスを使用している。SWFFocus によって、Flash コンテンツの前後に非表示のリンクが動的に挿入される。</p>
+            <exsubhead>Flash コンテンツをロードする</exsubhead>
+            <p>この事例では、Flash オブジェクトは <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject's SWFObject による動的なパブリッシュ手法（英語）</loc>によって追加されている。この手法では、JavaScript （ブラウザによってサポートされる方法）により動的に object タグが生成される。これは推奨される手法ではあるが、この実装方法を使用することは必須ではない。なお、HTML ドキュメント内に object タグがハードコーディングされている場合であっても SWFFocus クラスは動作する。</p>
+            <p>以下のサンプルコードは、SWFObject を使用して動的にコンテンツをロードする方法を示している。</p>
+            <exsubhead>事例 1 の HTML および Javascript のサンプルコード</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
@@ -115,39 +115,39 @@
   </body>
 </html>]]></code>
          <description>
-            <exsubhead>Importing and Initializing the SWFFocus class in Flash</exsubhead>
-            <p>The SWFFocus class needs to be added to a Flash or Flex project's source   path. The easiest way to achieve this is to import the SWFFocus.swc into Library path for your project or to copy the   com/swffocus/SWFFocus.as file (including the nested directory structure)   to the project's root directory. </p>
-            <p>When the SWFFocus class is added to the content's source path, it   needs to be initialized with the following code: </p>
+            <exsubhead>Flash 内に SWFFocus クラスをインポートし初期化する</exsubhead>
+            <p>Flash プロジェクトのソースパスに SWFFocus クラスを追加する必要がある。これを行うための最も簡単な方法は、com/swffocus/SWFFocus.as ファイル（ネストしたディレクトリ構造も含む）をプロジェクトのルートディレクトリにコピーすることである。</p>
+            <p>コンテンツのソースパスに SWFFocus クラスを追加したら、以下のコードによってこのクラスを初期化する必要がある。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import com.adobe.swffocus.SWFFocus;
 SWFFocus.init(stage);]]></code>
          <description>
-            <p>The code for the class itself can be found in the source files.</p>
+            <p>このクラス自身のコードはソースファイル内にある。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Explicitly identifying existing focusable html element</head>
+         <head>既存のフォーカス可能な HTML の要素を明示的に指定する</head>
          <description>
-            <p>For a large part, this technique is the same as example 1 : </p>
+            <p>この実装方法の大部分は事例 1 と同じである。</p>
             <ulist>
                <item>
-                  <p> The dynamic loading approach by SWFObject is used to load the   Flash content </p>
+                  <p>SWFObject による動的ロードの手法を使用して Flash コンテンツをロードする。</p>
                </item>
                <item>
-                  <p> The SWFFocus class needs to be added to the content's sourcepath   and initialized in the Flash content </p>
+                  <p>コンテンツのソースパスに SWFFocus クラスを追加し、Flash コンテンツ内で初期化する必要がある。</p>
                </item>
             </ulist>
-            <p>For more details about these steps, see example 1. </p>
-            <p>In this case however, special class names are added to the Flash   content object. These class names indicate the ID values of the elements   previous and next of the content in the HTML tab order. The class names   are: </p>
+            <p>これらの手順の詳細については、事例 1 を参照のこと。</p>
+            <p>しかし、このケースでは、Flash コンテンツのオブジェクトに特別なクラス名が追加される。これらのクラス名は、HTML のタブ順序においてコンテンツの前後に置かれる要素の ID 値を示す。このクラス名は以下のようになる。</p>
             <ulist>
                <item>
-                  <p> 'swfPref-&lt;previous ID&gt;', where '&lt;previous element&gt;'   should be the ID value of the previous element in the tab order. </p>
+                  <p>'swfPref-&lt;previous ID&gt;'。この '&lt;previous element&gt;' にはタブ順序における前の要素の ID 値が設定される。</p>
                </item>
                <item>
-                  <p> 'swfNext-&lt;next ID&gt;', where '&lt;next element&gt;' should   be the ID value of the next element in the tab order. </p>
+                  <p>'swfNext-&lt;next ID&gt;'。この '&lt;next element&gt;' にはタブ順序における次の要素の ID 値が設定される。</p>
                </item>
             </ulist>
-            <p>For example, the HTML code could look like this (notice the added   class names on the object tag): </p>
+            <p>以下に HTML コードの例を示す（object タグに追加されたクラス名に注目）。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<a href="http://www.lipsum.com/" id="focus1">test 1</a>
 <object class="swfPrev-focus1 swfNext-focus2"
@@ -155,8 +155,8 @@ SWFFocus.init(stage);]]></code>
   type="application/x-shockwave-flash"/>
 <a href="http://www.lipsum.com/" id="focus2">test 2</a>]]></code>
          <description>
-            <p>Since this example uses SWFObject's dynamic loading, the class names   will have to be specified as attribute when SWFObject is initialized.   This is demonstrated in the code example below. </p>
-            <exsubhead>HTML and Javascript Code Sample for Example 2 </exsubhead>
+            <p>この事例では SWFObject の動的ロードが使用されているため、このクラス名は SWFObject の初期化時に属性として指定される必要がある。次のコード例はこの処理を示したものである。</p>
+            <exsubhead>事例 2 の HTML および Javascript のサンプルコード</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
@@ -196,12 +196,12 @@ SWFFocus.init(stage);]]></code>
   </body>
 </html>]]></code>
          <description>
-            <p>Note: this example assumes that the focusable HTML elements exist and   have an ID value at the time SWFObject is called to insert the Flash   content. However, in some situations it is also possible that these   elements do not yet exist when the Flash content is created, or that the   elements will be deleted dynamically at a later point. If this happens,   it is possible to reassign ID values for previous and next focusable   elements. To do this, call the SWFsetFocusIds() method on the Flash   content object, like so: </p>
+            <p>注記: この事例では、Flash コンテンツの挿入で SWFObject が呼び出される時点で、フォーカス可能な HTML 要素が既に存在し、ID 値が設定されているものと想定している。ただし、Flash コンテンツが作成される時点ではまだこれらの要素が存在しないこともありうる。また、後になってこれらの要素が動的に削除されることもありうる。こうした状況であっても、前後のフォーカス可能な要素に ID 値の再割り当てを行うことで対応できる。これを行うには、Flash コンテンツのオブジェクト上で SWFsetFocusIds() メソッドを呼び出す。以下にその例を示す。</p>
          </description>
          <code xml:space="preserve"><![CDATA[var o = document.getElementById("FlashSample1SWF");
 o.SWFsetFocusIds('prevId', 'nextId');]]></code>
          <description>
-            <p>From that point on the updated IDs will be used to move focus to when   tabbing out of the Flash content. </p>
+            <p>以降は、Flash コンテンツの外部にタブ移動する際にフォーカスを移動するために、更新された ID が使用される。</p>
          </description>
       </eg-group>
    </examples>
@@ -225,26 +225,26 @@ o.SWFsetFocusIds('prevId', 'nextId');]]></code>
    </resources>
    <tests>
       <procedure>
-         <p>For a Flash content on a web page: </p>
+         <p>ウェブページ上の Flash コンテンツについて:</p>
          <olist>
             <item>
-               <p> If possible, confirm that the source of the Flash content imports   and initializes the SWFFocus class </p>
+               <p>可能であれば、Flash コンテンツのソースが SWFFocus クラスをインポートし、初期化している。</p>
             </item>
             <item>
-               <p> Press the tab key to move through tabbable items on the page </p>
+               <p>Tab キーを押してページ上のタブ移動可能なアイテム間を移動する。</p>
             </item>
             <item>
-               <p> Confirm that it is possible to tab into the Flash content </p>
+               <p>Flash コンテンツの内部にタブ移動できる。</p>
             </item>
             <item>
-               <p> Continue tabbing and confirm that it is possible to tab out of   the flash content </p>
+               <p>さらに Tab キーを押し、Flash コンテンツの外部にタブ移動できる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Checks 3 and 4 are true </p>
+               <p>3. および 4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

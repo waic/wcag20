@@ -13,14 +13,14 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to notify users that they are   almost out of time to complete an interaction. When scripts provide   functionality that has time limits, the script can include functionality   to warn the user of imminent time limits and provide a mechanism to   request more time. 20 seconds or more before the time limit occurs, the   script provides a confirm dialog that states that a time limit is   imminent and asks if the user needs more time. If the user answers "yes"   then the time limit is reset. If the user answers "no" or does not   respond, the time limit is allowed to expire. </p>
-      <p>This technique involves time limits set with the setTimeout()   method. If, for example, the time limit should be 60 seconds, you can   set the time limit for 40 seconds (20 seconds less than the desired   timeout) and show a confirm dialog. The confirm dialog sets a new   timeout for the remaining 20 seconds. If the user requests more time, a   new timeout is set. However, if the 20-second "grace period time limit"   expires (meaning 60 seconds have now elapsed), the action appropriate   for the expiry of the 60 second time limit in the original design is   taken. </p>
+      <p>この実装方法の目的は、ユーザーにインタラクションを完了させるための時間が終了することを通知することである。スクリプトで制限時間のある機能を提供している場合、スクリプトを用いて、ユーザーに制限時間が間もなく終了することを警告し、制限時間の延長を要求できるメカニズムを提供することが可能である。少なくとも制限時間の 20 秒前に、制限時間が間もなく終了することを通知して時間の延長が必要かどうかを利用者に確認する確認ダイアログをスクリプトにより提供する。利用者が「はい」と回答した場合は、制限時間をリセットする。利用者が「いいえ」と回答した場合、または応答がない場合は、制限時間の終了が認められる。</p>
+      <p>この実装方法では、setTimeout() メソッドで制限時間を設定する。例えば、制限時間を 60 秒にする場合、40 秒の制限時間を設定し（目的のタイムアウトよりも 20 秒前）、確認ダイアログを表示するという方法がある。この確認ダイアログで、残りの 20 秒間のタイムアウトを新たに設定する。利用者がより長い時間を必要としている場合は、新しいタイムアウトを設定する。ただし、20 秒間の「制限時間の猶予期間」が終了すると（つまり 60 秒が経過すると）、元々の設計で 60 秒の制限時間が終了するときに想定されている動作が実行される。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Using ActionScript to offer a time limit extension before the timeout expires</head>
+         <head>ActionScript を使用してタイムアウトに到達する前に制限時間の延長機能を提供する</head>
          <description>
-            <p>This is a basic AS2 example of a time limit that can be extended by   the user.  An alert is shown after 40 seconds of inactivity, warning that the   session is about to expire. The user is given 20 seconds to press the   space bar or click on the "Yes" button.  Note that the 40 second   duration would be insufficient for most tasks and is artificially short   for ease of demonstration. </p>
+            <p>これは、ユーザーにより延長可能な制限時間の AS2 の基本例である。40 秒間操作しない場合は警告が表示され、セッションが間もなく終了すると警告される。ユーザーは、所定の 20 秒で、スペースバーを押すか、「はい」ボタンを押下する。40 秒という長さは、ほとんどのタスクで不十分であり、デモを簡単に行うために意図的に短くしていることに留意すること。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import mx.controls.Alert;
 import flash.accessibility.Accessibility;
@@ -59,11 +59,11 @@ function handleAlertClick(e) {
   resetTimeout();
 }]]></code>
          <description>
-            <p>For a demonstration, see a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="timeout_extension_as2.html"
-                    linktype="examples">working example of Using ActionScript to offer a time limit extension before the timeout expires</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="timeout_extension_as2.fla"
-                    linktype="examples">source of Using ActionScript to offer a time limit extension before the timeout expires</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH19/timeout_extension_as2.html"><!--
+                    linktype="examples"-->ActionScript を使用してタイムアウトに到達する前に制限時間の延長機能を提供するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH19/timeout_extension_as2.fla"><!--
+                    linktype="examples"-->ActionScript を使用してタイムアウトに到達する前に制限時間の延長機能を提供するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -74,15 +74,15 @@ function handleAlertClick(e) {
       <procedure>
          <olist>
             <item>
-               <p> load the page and start a timer that is 20 seconds less than   the time limit. </p>
+               <p>ページをロードし、制限時間の 20 秒前まで待つ。</p>
             </item>
             <item>
-               <p> when the timer expires, check that a confirmation dialog is   displayed warning of the impending time limit and allows the user to   extend the limit within 20 seconds. </p>
+               <p>制限時間の 20 秒前になったとき、制限時間が間もなく終了することを警告する確認ダイアログが表示され、利用者が 20 秒以内に制限時間を延長できる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
-         <p>Check #2 is true </p>
+         <p>2. を満たしている。</p>
       </expected-results>
    </tests>
    <admin>

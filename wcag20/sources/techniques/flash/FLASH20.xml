@@ -13,92 +13,92 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to allow the author to use   ActionScript and component skins to apply a strong visual indication   when a component receives focus. In this particular technique, both the   component's background color and border will change. When the component   loses focus, it returns to its normal styling. </p>
-      <p>The visual highlights will be applied by switching some of the   component's skin parts. The Standard Flash components each have their   own set of skins that make up the component's visual appearance. Each   part is represented by a MovieClip which can be edited or replaced in   order to customize how the component looks. The most relevant skin for   this technique is the focusRectSkin skin, which is shared   by all components. By default this skin applies a subtle visual   highlight when the component receives focus. </p>
-      <p>This technique can be applied through the following steps: </p>
+      <p>この実装方法の目的は、コンテンツ制作者が ActionScript やコンポーネントのスキンを使用して、コンポーネントにフォーカスがあるときに視覚的な強調表示を行えるようにすることである。このテクニックでは、コンポーネントの背景色と境界線の両方を変更する。コンポーネントがフォーカスを失ったら、通常のスタイルに戻る。</p>
+      <p>視覚的な強調表示は、コンポーネントのスキンの一部を切り替えることによって行う。標準の Flash コンポーネントは、それぞれコンポーネントの外観を構成する独自のスキンのセットを持っている。各部分はムービークリップによって表現される。このムービークリップを編集するか、または置き換えることによって、コンポーネントの外観をカスタマイズすることができる。このテクニックに最も適したスキンは focusRectSkin スキンであり、これはすべてのコンポーネント間で共有される。このスキンのデフォルトでは、コンポーネントがフォーカスを受け取ると、わずかに視覚的な強調表示が行われる。</p>
+      <p>この実装方法は、次の手順で行うことができる。</p>
       <olist>
          <item>
-            <p> Create a customized version of focusRectSkin. </p>
+            <p>focusRectSkin のカスタマイズバージョンを作成する。</p>
          </item>
          <item>
-            <p> Use scripting to associate the component with the customized   skin. </p>
+            <p>スクリプトを使用して、カスタマイズしたスキンにコンポーネントを関連付ける。</p>
          </item>
       </olist>
-      <p>There are two ways to customize a skin: </p>
+      <p>スキンをカスタマイズするには次の 2 つの方法がある。</p>
       <!-- exsubhead? -->
       <olist>
          <item>
-            <p>Duplicating Existing Skin</p>
-            <p>With this approach you create a copy of the existing focusRect skin   for modification. You will manually have to apply the skin for each   individual component instance (as indicated in step 5 below). </p>
+            <p>既存のスキンを複製する</p>
+            <p>この方法では、既存の focusRect スキンのコピーを作成して、それを変更する。このスキンは、コンポーネントの各インスタンスに手動で適用する必要がある（下記の手順 5）。</p>
             <olist>
                <item>
-                  <p> Drag the components you want to style to the stage. This will   ensure the appropriate component related skins are added to the movie's   library. </p>
+                  <p>スタイルを適用するコンポーネントをステージにドラッグする。この操作により、スキンに関連付けられた適切なコンポーネントがムービーのライブラリに追加される。</p>
                </item>
                <item>
-                  <p> Open the Library panel, and navigate to the "Component Assets   &gt; Shared" folder. </p>
+                  <p>「ライブラリ」パネルを開き、Component Assets フォルダー &gt; Shared フォルダーの順に移動する。</p>
                </item>
                <item>
-                  <p> Right-click (or Ctrl-click on a Mac) on the focusRectSkin   MovieClip, and choose "Duplicate" from the context menu. </p>
+                  <p>focusRectSkin ムービークリップを右クリック（Mac では Ctrl キーを押しながらクリック）し、コンテキストメニューから「複製」を選択する。</p>
                </item>
                <item>
-                  <p> Edit the visual border in the skin's MovieClip. For example,   the focus rectangle can be made thicker to stand out more (This step is   illustrated in the screenshot below this list). </p>
+                  <p>スキンのムービークリップの境界線の外観を編集する。例えば、より目立つようにフォーカス矩形の境界線を太くする（この手順は、以下のスクリーンショットで示されている）。</p>
                </item>
                <item>
-                  <p> Using ActionScript, associate form component instances with   your customized version of focusRectSkin. This can be achieved using the   setStyle method. </p>
+                  <p>ActionScript を使用して、フォームコンポーネントのインスタンスを focusRectSkin のカスタマイズバージョンに関連付ける。これは、setStyle メソッドを使用して実現できる。</p>
                </item>
             </olist>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH20/editing_focusrect.png"/>
-                  <alt>editing a duplicate of focusRectSkin</alt>
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/editing_focusrect.png"/>
+                  <alt>画面スクリーンショット：複製した focusRectSkin ムービークリップの編集</alt>
                </image>
 							     </p>
          </item>
          <item>
-            <p> Modifying Existing Skin </p>
-            <p>With this approach, the original focusRect skin is modified. This   means that the changes you make will be applied to the visual focus   indication of _every_ focusable component. </p>
+            <p>既存のスキンを変更する</p>
+            <p>この方法では、元の focusRect スキンを変更する。つまり、この変更はフォーカス可能なすべてのコンポーネントのフォーカス視覚表示に適用される。</p>
             <olist>
                <item>
-                  <p> Drag the components you want to style to the stage. This will   ensure the appropriate component related skins are added to the movie's   library. </p>
+                  <p>スタイルを適用するコンポーネントをステージにドラッグする。この操作により、スキンに関連付けられた適切なコンポーネントがムービーのライブラリに追加される。</p>
                </item>
                <item>
-                  <p> Open the Library panel, and navigate to the "Component Assets   &gt; Shared" folder. </p>
+                  <p>「ライブラリ」パネルを開き、Component Assets フォルダー &gt; Shared フォルダーの順に移動する。</p>
                </item>
                <item>
-                  <p> Open the focusRectSkin MovieClip for editing by double   clicking on it. </p>
+                  <p>focusRectSkin ムービークリップをダブルクリックして、編集用として開く。</p>
                </item>
                <item>
-                  <p> Edit the visual border in the skin's MovieClip. For example,   the focus rectangle can be made thicker to stand out more. </p>
+                  <p>スキンのムービークリップの境界線の外観を編集する。例えば、より目立つようにフォーカス矩形の境界線を太くする。</p>
                </item>
             </olist>
             <note>
-               <p>With this approach you will override the existing skin. If   you don't want this, follow the "Duplicate Existing Skin" approach   instead. </p>
+               <p>この方法では、既存のスキンが上書きされることになる。上書きしたくない場合は、この方法ではなく「1. 既存のスキンを複製する」方法を用いること。</p>
             </note>
          </item>
       </olist>
-      <p>The focusRect skin applies to all focusable Flash components. If you   want to modify other highlights (for example highlights that occur when   hovering over a component with the mouse), you will have to edit   component specific skins individually. For example, to edit the   mouseover highlights for the checkbox component, you will have to modify   or duplicate both Checkbox_overIcon and Checkbox_selectedOverIcon.   Similarly, for the Button component you will have to modify the   Button_over skin. </p>
-      <p>Also, keep in mind that the existing skins are automatically   applied on certain events (focus, mouseover, etc.). It is however also   possible to manually switch a skin at a moment of your own choosing   (e.g. to indicate invalid content for a text field). this can also be   achieved this by calling the setStyle method. </p>
+      <p>focusRect スキンは、フォーカス可能なすべての Flash コンポーネントに適用される。他の強調表示（例えばコンポーネントの上にマウスを移動させた際に適用される強調表示など）を変更する場合は、各コンポーネントのスキンを個別に編集する必要がある。例えば、チェックボックスコンポーネントのマウスオーバーの強調表示を編集するには、 Checkbox_overIcon と Checkbox_selectedOverIcon の両方を変更するか、または複製する必要がある。同様に、ボタンコンポーネントのマウスオーバーの強調表示を編集するには、Button_over スキンを変更する必要がある。</p>
+      <p>また、特定のイベント（フォーカス、マウスオーバーなど）では、既存のスキンが自動的に適用されることを念頭に置く必要がある。ただし、開発者が選ぶタイミングでスキンを手動で切り替えることも可能である（例えば、テキストフィールドに無効なコンテンツが入力されていることを示す場合など）。これを行うには、setStyle メソッドを呼び出す。</p>
    </description>
    <examples>
       <eg-group>
-         <head>A thick blue border to indicate focus</head>
+         <head>フォーカスを太い青の境界線で表示する</head>
          <description>
-            <p>The code below shows an example where form component instances are   associated with a modified version of the focusRectSkin MovieClip. The   result is that the components receive a thick blue border rather than   the default thin border Flash provides. The code makes a reference to a   modified skin called Focus_custom, which has been added to   the movie's library in advance. </p>
-            <p>Note that the custom version of focusRectSkin also sets a   transparent yellow background to increase the visual highlight further.   Components such as Buttons and checkboxes will show this background, but   TextInput components will not. To ensure the yellow background will   still be applied to the TextInput instance, the following workaround is   applied: </p>
+            <p>次のコードは、フォームコンポーネントのインスタンスを、focusRectSkin ムービークリップの変更されたバージョンに関連付ける例を示している。この結果として、コンポーネントには Flash が提供するデフォルトの細い境界線ではなく、太い青の境界線が表示されるようになる。このコードは、Focus_custom という名前の変更されたスキンを参照しており、このスキンは事前にムービーのライブラリに追加されている。</p>
+            <p>focusRectSkin のこのカスタムバージョンでは、視覚的な強調表示をさらに高めるため、透過性のある黄色の背景も設定している。ボタンやチェックボックスなどのコンポーネントではこの背景が表示されるが、TextInput コンポーネントでは表示されない。TextInput のインスタンスにもこの黄色の背景が適用されるようにするには、次の手法を利用する。</p>
             <olist>
                <item>
-                  <p> A duplicate version of the TextInput "normal" skin (which can   be found in the library at "Component Asssets &gt; TextInputSkins &gt;   TextInput_upSkin") is created and edited to show a yellow background. </p>
+                  <p>TextInput の「normal」スキン（これはライブラリの「Component Asssets &gt; TextInputSkins &gt; TextInput_upSkin」にある）の複製バージョンを作成し、黄色の背景を表示するように編集する。</p>
                </item>
                <item>
-                  <p> FocusIn, FocusOut, MouseOver and MouseOut handlers are   assigned to the TextInput instance, which temporarily swap the default   "normal" skin with the custom "normal" skin while the component is   focused or hovered over. </p>
+                  <p>TextInput のインスタンスには FocusIn、FocusOut、MouseOver、MouseOut のハンドラが割り当てられており、これを利用して、コンポーネントにフォーカスがある間、またはコンポーネント上にマウスが置かれている間、デフォルトの「normal」スキンをカスタムの「normal」スキンに一時的に切り替えることができる。</p>
                </item>
             </olist>
-            <p>Additionally, the button_over skin is duplicated and modified to   change the default mouseover highlights for the button component   instance. The checkbox_overIcon and checkbox_selectedOverIcon skins are   directly modified, which means those changes will be applied to all   checkbox instances. </p>
-            <p>The result of this technique can be found in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="change_styles_on_focus_as3.html"
-                    linktype="examples">working version of A thick blue border to indicate focus</loc>. </p>
-            <exsubhead>Code for Example 1 (ActionScript 3.0)</exsubhead>
+            <p>また、button_over スキンを複製して変更することによって、ボタンコンポーネントインスタンスのデフォルトのマウスオーバーの強調表示を変更する。 checkbox_overIcon スキン、および checkbox_selectedOverIcon スキンは直接変更する。これにより、チェックボックスのすべてのインスタンスに対してこの変更が適用されることになる。</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html"><!--
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル（英語）</loc>で確認できる。</p>
+            <exsubhead>事例 1 のコード（ActionScript 3.0）</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import fl.accessibility.ButtonAccImpl;
@@ -158,11 +158,11 @@
   }
 }]]></code>
          <description>
-            <p>This is demonstrated in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="change_styles_on_focus_as3.html"
-                    linktype="examples">working version of A thick blue border to indicate focus</loc>. The source of <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="change_styles_on_focus_as3.zip"
-                    linktype="examples">working version of A thick blue border to indicate focus</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html"><!--
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.zip"><!--
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -183,20 +183,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>When a Flash movie contains focusable components, confirm that: </p>
+         <p>Flash ムービーにフォーカス可能なコンポーネントが含まれている場合は、次のことを確認する。</p>
          <olist>
             <item>
-               <p> The visual highlight is applied by modifying the component's   skins </p>
+               <p>視覚的な強調表示が、コンポーネントのスキンを変更することによって適用されている。</p>
             </item>
             <item>
-               <p> A visual highlight is shown when the components receive focus </p>
+               <p>コンポーネントがフォーカスを受け取ると、視覚的な強調された表示になる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 and #2 are true </p>
+               <p>1. および 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
