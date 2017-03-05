@@ -14,48 +14,33 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide a brief overview of
-    				how data has been organized into a DataGrid or a brief explanation
-    				of how to navigate the grid. </p>
-      <p>As Flash does not provide a summary attribute, this descriptive text
-    				will be added to the DataGrid's accessible desription instead. This
-    				approach will make the summary information available to people who
-    				use screen readers; the information is not displayed visually. </p>
-      <p>The summary is useful when the table has a complex structure (for
-    				example, when there are several sets of row or column headers, or when
-    				there are multiple groups of columns or rows). The summary may also
-    				be helpful for simple data tables that contain many columns or rows
-    				of data. </p>
+      <p>この実装方法の目的は、データグリッド内でデータがどのように提示されているかについて要約を提供したり、グリッド内での移動方法について簡単に説明したりすることである。</p>
+      <p>Flash は summary 属性を提供しないので、代わりにこの説明的なテキストがデータグリッドのアクセシブルな説明に追加される。このアプローチでは、スクリーンリーダーを使用する利用者が要約の情報を利用できるようになる。情報は視覚的に表示されない。</p>
+      <p>要約は、テーブルの構造が複雑な場合（例えば、行見出しまたは列見出しのセットが複数ある場合や、列または行のグループが複数ある場合）に役立つ。また、要約は、多くのデータ列またはデータ行を含む単純なデータテーブルでも役に立つ場合がある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Adding a summary to a DataGrid in the Accessibility control panel</head>
+         <head>アクセシビリティパネルを使用してデータグリッドに一覧を追加する</head>
          <description>
-            <p>This is an example of a DataGrid being added to the stage in Flash
-    						Professional from the Components panel. The description field is used
-    						in the Accessibility control panel in Flash to serve as the summary
-    						information for the DataGrid. </p>
+            <p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。データグリッドの要約を提供するために、Flash のアクセシビリティパネルの「説明」フィールドを使用する。</p>
             <olist>
                <item>
-                  <p> Create a new Flash file (.fla) or open an existing one to put
-    						a DataGrid into. </p>
+                  <p>新しい Flash ファイル（.fla）を作成する、又は既存のファイルを開いてデータグリッドを挿入する。</p>
                </item>
                <item>
-                  <p> Open the Flash components panel from the Window menu </p>
+                  <p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p>
                </item>
                <item>
-                  <p> Drag a DataGrid component onto the stage and position as desired. </p>
+                  <p>データグリッドコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p>
                </item>
                <item>
-                  <p> Select the DataGrid component and add the summary information
-    							to the description field for DataGrid, using the Accessibility control
-    							panel. </p>
+                  <p>データグリッドコンポーネントを選択し、アクセシビリティパネルを使用して、データグリッドの要約を「説明」フィールドに追加する。</p>
                </item>
             </olist>
          </description>
       </eg-group>
       <eg-group>
-         <head>Adding a summary to a DataGrid with ActionScript 3</head>
+         <head>ActionScript 3 を使用してデータグリッドに一覧を追加する</head>
          <description>
             <p>This is a basic AS3 example of a DataGrid component that has summary
     						text added as its accessible description. </p>
@@ -72,7 +57,7 @@ DataGridAccImpl.enableAccessibility();
 
 createGrid();
 
-//set the summary text as accessible description
+//要約テキストをアクセシブルな「説明」として設定する
 var accProps: AccessibilityProperties = new AccessibilityProperties();
 accProps.description = "The first column shows the player's name," +
   "the second and third column shows the player's gaming statistics." +
@@ -84,7 +69,7 @@ Accessibility.updateProperties();
 
 function createGrid() {
   
-  //create and add the components
+  //コンポーネントを作成して追加する
   var aDg: DataGrid = new DataGrid();
   addChild(aDg);
   aDg.move(50, 50);
@@ -114,22 +99,20 @@ function bldRosterGrid(dg: DataGrid) {
   dg.columns[4].width = 120;
 };]]></code>
          <description>
-            <p>For a demonstration, see the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="datagrid_with_summary_as3.html"
-                    linktype="examples">working version of Adding a summary to a DataGrid with ActionScript 3</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="datagrid_with_summary_as3.fla"
-                    linktype="examples">source of Adding a summary to a DataGrid with ActionScript 3</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.html"><!--
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのサンプル（英語）で確認できる。</loc>また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.fla"><!--
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
    <tests>
       <procedure>
-         <p>If the Flash movie contains a DataGrid component, confirm that summary
-    					text has been added to it through the corresponding accessible description
-    					property. </p>
+         <p>Flash ムービーにデータグリッドコンポーネントが含まれている場合、対応するアクセシブルな説明プロパティを使用して、要約テキストが追加されている。</p>
       </procedure>
       <expected-results>
-         <p>The above is true. </p>
+         <p>上記チェックポイントを満たしている。</p>
       </expected-results>
    </tests>
    <admin>
@@ -139,3 +122,4 @@ function bldRosterGrid(dg: DataGrid) {
 					</source>
    </admin>
 </technique>
+

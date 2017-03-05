@@ -14,25 +14,25 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The intent of this Technique is to ensure that information and   relationships that are implied visually by data tables are also made   available programmatically. Specifically, the association between table   column headers and their corresponding cells must be exposed to   assistive technology. In Flash, the DataGrid component can be used to   achieve this. When accessibility is enabled for the DataGrid component,   Flash will automatically prepend the column name in front of each cell   value when exposing the grid row's accessible name to assistive   technology. For example, the row in the screenshot below would be   announced by a screen reader as "Row 6 of 13 Name Patty Crawford Bats L   Throws L Year Jr Home Whittier, CA". </p>
+      <p>この実装方法の目的は、データテーブルで視覚的に示されている情報とそれらの関連性を、プログラムが解釈できるようにすることである。具体的には、テーブルの列見出しとそれに対応するデータセルの関連性を支援技術が解釈できるようにする必要がある。Flash では、この実現方法として DataGrid コンポーネントを使用できる。DataGrid コンポーネントでアクセシビリティを有効にした場合、Flash はグリッドの行のアクセシブルな名前を支援技術に渡す際に、各セルの値の前に自動的に列名を付加する。例えば、次のスクリーンショットの行は、スクリーンリーダーによって「13行中の6行目 Name Patty Crawford Bats L Throws L Year Jr Home Whittier, CA」と読み上げられる。</p>
       <note>
-         <p>The DataGrid component in Flash only supports column   headings, not row headings. </p>
+         <p>Flash の DataGrid コンポーネントは列見出しのみをサポートし、行見出しはサポートしていない。</p>
       </note>
       <p>
 						   <image>
             <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                 source="/WAI/WCAG20/Techniques/working-examples/FLASH21/highlighted_row_in_flash_datagrid.png"
+                 source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH21/highlighted_row_in_flash_datagrid.png"
                  width="424"
                  height="283"/>
-            <alt>screenshot of highlighted row in grid component</alt>
+            <alt>画面スクリーンショット：6行目が強調表示されたDataGrid コンポーネント</alt>
          </image>
 					</p>
    </description>
    <examples>
       <eg-group>
-         <head>A statistical data table</head>
+         <head>統計データのテーブル</head>
          <description>
-            <p>In this example, statistical data is used as data provider for a   dynamically created DataGrid component. The lines <code><![CDATA[import   fl.accessibility.DataGridAccImpl;   DataGridAccImpl.enableAccessibility();]]></code> are required to enable   accessibility for the Datagrid Component. </p>
+            <p>この事例では、DataGrid コンポーネントを動的に作成し、そのデータプロバイダとして静的なデータが使用されている。<code>import fl.accessibility.DataGridAccImpl; DataGridAccImpl.enableAccessibility();</code> は、Datagrid コンポーネントのアクセシビリティを有効にするために必要な行である。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.DataGridAccImpl;
 DataGridAccImpl.enableAccessibility();
@@ -69,39 +69,39 @@ function bldRosterGrid(dg: DataGrid) {
   dg.move(50, 50);
 };]]></code>
          <description>
-            <p>This is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="using_datagrid_to_associate_headers_with_cells_as3.html"
-                    linktype="examples">working version of A statistical data table</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="using_datagrid_to_associate_headers_with_cells_as3.fla"
-                    linktype="examples">source of A statistical data table</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH21/using_datagrid_to_associate_headers_with_cells_as3.html"><!--
+                    linktype="examples"-->統計データのテーブルのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH21/using_datagrid_to_associate_headers_with_cells_as3.fla"><!--
+                    linktype="examples"-->統計データのテーブルのソース</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
    <tests>
       <procedure>
-         <p>For Flash content that contains tabular data: </p>
+         <p>テーブル形式のデータを含む Flash コンテンツで以下を実行する。</p>
          <olist>
             <item>
-               <p> Open the SWF file in Internet Explorer 6 or higher (using Flash   Player 6 or higher), or Firefox 3 or higher (using Flash Player 9 or   higher) </p>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
             </item>
             <item>
-               <p> Use a tool which is capable of showing an object's   accessibility name, such as ACTF aDesigner 1.0 to open the Flash movie. </p>
+               <p>オブジェクトのアクセシビリティ名を表示できる ACTFa Designer 1.0 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
-               <p> In the GUI summary panel, inspect the accessibility name for   the DataGrid rows and cells to ensure that the heading data is presented   in conjunction with the data cell data. </p>
+               <p>GUI 概要パネルでデータグリッドの行とセルのアクセシビリティ名を調べて、見出しデータとデータセルのデータがともに存在する。</p>
             </item>
             <item>
-               <p> Authors may also test with a screen reader, by reading the   Flash content and listening to hear that the heading and data cell data   are read when reading the DataGrid. </p>
+               <p>コンテンツ制作者は、テストにスクリーンリーダーを使用することもできる。その場合は、Flash コンテンツを読み上げて音声を聞き、データグリッドが読み上げられる際に見出しとデータセルのデータが読み上げられる。</p>
             </item>
             <item>
-               <p> Authors may also verify in the Flash authoring tool that the   DataGrid component is used to structure the data and that the DataGrid   has been made accessible using the <function>DataGridAccImpl.enableAccessibility</function>   method. </p>
+               <p>または、Flash オーサリングツールで、DataGrid コンポーネントを使用してデータが構造化されており、<function>DataGridAccImpl.enableAccessibility</function> メソッドによって DataGrid がアクセシブルになっている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Check 3, 4, or 5 is true </p>
+               <p>3., 4. 又は 5. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -113,3 +113,4 @@ function bldRosterGrid(dg: DataGrid) {
 					</source>
    </admin>
 </technique>
+
