@@ -13,85 +13,69 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>ASCII characters, emoticons, and leetspeek are sometimes used
-    			and present accessibility challenges since the meaning is conveyed
-    			through the visual appearance of groupings of individual characters. </p>
-      <p>In Flash, such groupings of characters can be made accessible
-    				by wrapping them in a MovieClip, and providing an accessible
-    				name. It is crucial that  the <prop>forceSimple</prop> property for the
-    				MovieClip is set to true also. This will hide the actual ASCII
-    				characters from assistive technology. </p>
+      <p>ASCII 文字、顔文字、リート語（当て字）が使用されると、アクセシビリティ上の問題が発生することがある。その理由は、文字のグループの見た目によって意味を伝えているからである。</p>
+      <p>Flash では、このような文字のグループをムービークリップにラップし、アクセシブルな名前を提供することによってアクセシブルにすることが出来る。ムービークリップの <prop>forceSimple</prop> プロパティに true を設定することも重要である。この設定により、実際の ASCII 文字が支援技術から隠される。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Providing a text alternative for ASCII art in the Accessibility control panel</head>
+         <head>アクセシビリティパネルを使用して ASCII アートの代替テキストを提供する</head>
          <description>
-            <p>This example contains words written in ASCII art using leetspeek
-    						(the text says "WCAG 2 rulez"). To make this text
-    						accessible, the following steps are followed: </p>
+            <p>この事例には、当て字を使用した ASCII アートによる語が含まれている（テキストは「WCAG 2 rulez」を表している）。次の手順で、このテキストのアクセシビリティを確保する。</p>
             <olist>
                <item>
-                  <p> Place the ASCII characters in a MovieClip instance </p>
+                  <p>ムービークリップインスタンスに ASCII 文字を配置する。</p>
                </item>
                <item>
-                  <p> Select the MovieClip instance containing the text, and
-    							make the following changes in the Accessibility panel:</p>
+                  <p>テキストが配置されたムービークリップインスタンスを選択し、アクセシビリティパネルで次の変更を行う。</p>
                   <ulist>
                      <item>
-                        <p> Add a meaningful text alternative for the ASCII art,
-	    							without leetspeak (such as "WCAG 2 RULEZ"). </p>
+                        <p>ASCII アートに対して、当て字を使用していない意味のある代替テキストを追加する（「WCAG 2 RULEZ」など）。</p>
                      </item>
                      <item>
-                        <p> Uncheck the "Make child objects accessible" checkbox,
-    								so that the ASCII characters will not be read by screen
-    								readers </p>
+                        <p>「子オブジェクトをアクセス可能にする」チェックボックスをオフにし、ASCII 文字がスクリーンリーダーによって読み上げられないようにする。</p>
                      </item>
                   </ulist>
                </item>
             </olist>
-            <p>These steps are ilustrated in the screenshot below: </p>
+            <p>上記の手順を次のスクリーンショットで示す。</p>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternative.png"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternative.png"
                        height="308"
                        width="695"/>
-                  <alt>Adding text alternative for ASCII art using the Accessibility panel</alt>
+                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、ASCIIアートの代替テキストを提供</alt>
                </image>
 							     </p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Providing a text alternative for ASCII art using ActionScript</head>
+         <head>ActionScript を使用して ASCII アートの代替テキストを提供する</head>
          <description>
-            <p>This example is the same as example 1, except using ActionScript
-    						instead of the Accessibility control panel in the Flash Professional
-    						authoring tool. </p>
+            <p>この事例では、Flash Professional のオーサリングツールのアクセシビリティパネルの代わりに ActionScript を使用している。それ以外は事例 1 と同じである。</p>
             <olist>
                <item>
-                  <p> Place the ASCII characters in a MovieClip instance </p>
+                  <p>ムービークリップインスタンスに ASCII 文字を配置する。</p>
                </item>
                <item>
-                  <p> Provide an instance name for the MovieClip instance (e.g. myASCII) </p>
+                  <p>ムービークリップインスタンスのインスタンス名（myASCII など）を指定する。</p>
                </item>
                <item>
-                  <p> Set the accessible name for the MovieClip and set the
-    							<prop>forceSimple</prop> property to true to hide the text inside the
-    							MovieClip. </p>
+                  <p>ムービークリップにアクセシブルな名前を設定し、ムービークリップ内部のテキストをアクセス不可にするために <prop>forceSimple</prop> プロパティを true に設定する。</p>
                </item>
             </olist>
          </description>
-         <code xml:space="preserve"><![CDATA[// 'myASCII' is a MovieClip instance placed on the movie's main timeline
+         <code xml:space="preserve"><![CDATA[// 'myASCII' はムービーのメインのタイムライン上に置かれたムービークリップインスタンスである
 myASCII.accessibilityProperties = new AccessibilityProperties();
 myASCII.accessibilityProperties.name = "WCAG 2 Rulez";
 myASCII.accessibilityProperties.forceSimple = true;
 ]]></code>
          <description>
-            <p>This technique is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ascii_art_alternatives_as3.html"
-                    linktype="examples">working version of Providing a text alternative for ASCII art using ActionScript</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ascii_art_alternatives_as3.html"
-                    linktype="examples">source of Providing a text alternative for ASCII art using ActionScript</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternatives_as3.html"><!--
+                    linktype="examples"-->ActionScript を使用して ASCII アートの代替テキストを提供するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternatives_as3.html"><!--
+                    linktype="examples"-->ActionScript を使用して ASCII アートの代替テキストを提供するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -99,30 +83,23 @@ myASCII.accessibilityProperties.forceSimple = true;
       <procedure>
          <olist>
             <item>
-               <p> Publish the SWF file </p>
+               <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p> Use a tool which is capable of showing an object's name
-    					to open the Flash movie. </p>
+               <p>オブジェクトの名前を表示できるツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
-               <p> Locate the ASCII grouping, leet speak, or emoticon and
-    						verify in the tool that the accessibility name represents
-    						the same information. </p>
+               <p>グループ化された ASCII 文字、当て字、顔文字に、同じ情報がアクセシビリティの name プロパティによって提供されている。</p>
             </item>
             <item>
-               <p> Authors may also test with a screen reader, by reading
-    							the Flash content and listening to hear that the equivalent
-    							text is read when tabbing to the non-text object (if it is
-    							tabbable) or hearing the alternative text read when reading
-    							the content line-by-line. </p>
+               <p>また、場合によってはスクリーンリーダーを使用して Flash コンテンツの読み上げをテストする。このテストでは、タブ移動の可能な非テキストオブジェクトにタブ移動したときにそのオブジェクトの代替テキストが読み上げられる。または、コンテンツを 1 行ずつ読み上げたときに代替テキストが読み上げられる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> #3 or #4 above is true </p>
+               <p>3. または 4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -134,3 +111,4 @@ myASCII.accessibilityProperties.forceSimple = true;
 					</source>
    </admin>
 </technique>
+

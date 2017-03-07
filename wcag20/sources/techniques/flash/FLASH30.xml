@@ -14,26 +14,20 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>For image based Button components the accessible name needs to be
-    				set to provide a functional label. This label indicates the button's
-    				function, but does not attempt to describe the image. The label is
-    				especially important if there are multiple buttons on the page that
-    				each lead to different results. </p>
-      <p>The accessible name for a button may need to be updated if the button
-    				changes during the use of the Flash movie. </p>
+      <p>画像ベースの Button コンポーネントには、機能的なラベルを提供するためにアクセシブルな名前を設定する必要がある。このラベルはボタンの機能を示すもので、画像を説明するものではない。ページ内に異なる結果をもたらす複数のボタンがある場合、ラベルは特に重要である。</p>
+      <p>Flash ムービーの使用中にボタンが変更されるときは、ボタンのアクセシブルな名前も更新しなければならない場合がある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Accessible name for a simple image button</head>
+         <head>シンプルな画像ボタンにアクセシブルな名前を設定する</head>
          <description>
-            <p>In this example, an icon based button is given an accessible name
-    					through scripting. When the button is clicked a web page is opened. </p>
+            <p>この事例では、スクリプトによってアイコンベースのボタンにアクセシブルな名前を設定している。ボタンをクリックするとウェブページが開かれる。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[//provide text equivalent for image button
+         <code xml:space="preserve"><![CDATA[//画像ボタンの代替テキストを提供する
 this.check_btn.accessibilityProperties = new AccessibilityProperties();
 this.check_btn.accessibilityProperties.name = "Check page validation";
 
-//set up event listener and function to navigate to URL
+//URLにナビゲートするイベントリスナーと関数を設定する
 
 this.check_btn.addEventListener(MouseEvent.CLICK, onClickHandler);
 
@@ -44,15 +38,15 @@ function onClickHandler(e: MouseEvent): void {
   navigateToURL(request, '_blank');
 }]]></code>
          <description>
-            <p>The result is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="Text_description_for_simpleimage_buttons_as3.html"
-                    linktype="examples">working version of Accessible name for a simple image button</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="Text_description_for_simpleimage_buttons_as3.fla"
-                    linktype="examples">source of Accessible name for a simple image button</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/Text_description_for_simpleimage_buttons_as3.html"><!--
+                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/Text_description_for_simpleimage_buttons_as3.fla"><!--
+                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Accessible name for a dynamic image button</head>
+         <head>動的な画像ボタンにアクセシブルな名前を設定する</head>
          <description/>
          <code xml:space="preserve"><![CDATA[import fl.controls.Button;
 import fl.accessibility.ButtonAccImpl;
@@ -83,11 +77,11 @@ function updateAccName(obj, newName: String) {
   Accessibility.updateProperties();
 }]]></code>
          <description>
-            <p>The result is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="text_description_for_image_buttons_as3.html"
-                    linktype="examples">working version of Accessible name for a dynamic image button</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="text_description_for_image_buttons_as3.fla"
-                    linktype="examples">source of Accessible name for a dynamic image button</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/text_description_for_image_buttons_as3.html"><!--
+                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/text_description_for_image_buttons_as3.fla"><!--
+                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -96,22 +90,20 @@ function updateAccName(obj, newName: String) {
    </related-techniques>
    <tests>
       <procedure>
-         <p>When a Flash Movie contains image based buttons, confirm that: </p>
+         <p>Flash ムービーに画像ベースのボタンが含まれている場合は、次のことを確認する。</p>
          <olist>
             <item>
-               <p> An accessible name is provided for the button that describes the
-    					button's action </p>
+               <p>ボタンのアクションを説明したアクセシブルな名前がボタンに設定されている。</p>
             </item>
             <item>
-               <p> If the button's action changes (for example when it is clicked)
-    					the accessible name changes correspondingly </p>
+               <p>ボタンのアクションが変更された場合（クリックされた場合など）は、それに応じてアクセシブルな名前も変更される。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> #1 and #2 are true </p>
+               <p>1. および 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -123,3 +115,4 @@ function updateAccName(obj, newName: String) {
 					</source>
    </admin>
 </technique>
+

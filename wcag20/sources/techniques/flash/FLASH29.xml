@@ -17,11 +17,8 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to explicitly associate a form
-    				component with its label text by setting the component's <prop>label</prop> property.
-    				Setting this property will visually place a label next to the component,
-    				and exposes the label text to assistive technology. </p>
-      <p>Components that support the <prop>label</prop> property are: </p>
+      <p>この実装方法の目的は、フォーム・コンポーネントに <prop>label</prop> プロパティを設定することによって、フォーム・コンポーネントにラベルテキストを明示的に関連付けることを目的としている。このプロパティを設定することにより、コンポーネントの隣にラベルが視覚的に配置されるようになり、支援技術に対してラベルテキストが提示されるようになる。</p>
+      <p><prop>label</prop>  プロパティをサポートするコンポーネントは以下のとおりである。</p>
       <ulist>
          <item>
             <p>
@@ -42,9 +39,7 @@
 							     </p>
          </item>
       </ulist>
-      <p>For other components, the label text has to placed adjacent to the
-    				form component manually. For these components, the label text can be
-    				associated with the form component using one of these approaches: </p>
+      <p>その他のコンポーネントについては、手動でフォーム・コンポーネントの隣にラベルテキストを配置する必要がある。これらのコンポーネントについては、以下のいずれかのアプローチを用いて、フォーム・コンポーネントにラベルテキストを関連付けることができる。</p>
       <ulist>
          <item>
             <p>
@@ -59,55 +54,50 @@
       </ulist>
    </description>
    <examples>
-      <p>In order for these form controls to be accessible to assistive
-    				technology, the following lines of code will have to be added once
-    				to the movie's script: </p>
-      <p> When the Button component is used: </p>
+      <p>支援技術からこれらのフォーム・コントロールにアクセスできるようにするには、以下のコード行をムービーのスクリプトに一度追加する必要がある。</p>
+      <p>Button コンポーネントを使用する場合:</p>
       <p>
 						   <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl;
 ButtonAccImpl.enableAccessibility();]]></code>
 					</p>
-      <p> When the RadioButton component is used: </p>
+      <p>RadioButton コンポーネントを使用する場合:</p>
       <p>
 						   <code xml:space="preserve"><![CDATA[import fl.accessibility.RadioButtonAccImpl;
 RadioButtonAccImpl.enableAccessibility();]]></code>
 					</p>
-      <p> When the CheckBox component is used: </p>
+      <p>CheckBox コンポーネントを使用する場合:</p>
       <p>
 						   <code xml:space="preserve"><![CDATA[import fl.accessibility.CheckBoxAccImpl;
 CheckBoxAccImpl.enableAccessibility();]]></code>
 					</p>
       <eg-group>
-         <head>Setting the label using the Component Inspector panel</head>
+         <head>コンポーネントインスペクタパネルを使用してラベルを設定する</head>
          <description>
             <olist>
                <item>
-                  <p> Add the Button, CheckBox or RadioButton component to the movie
-    						by dragging it on the the stage from the 'Components' panel. </p>
+                  <p>コンポーネントパネルから Button、CheckBox、RadioButton のいずれかのコンポーネントをステージにドラッグしてムービーに追加する。</p>
                </item>
                <item>
-                  <p> With the component selected, open the 'Component Inspector' panel
-    						by selecting it in the 'Window' menu or using the Shift + F7 shortcut. </p>
+                  <p>コンポーネントを選択した状態で、「ウィンドウ」メニューまたは Shift + F7 ショートカットを使用して、コンポーネントインスペクタパネルを開く。</p>
                </item>
                <item>
-                  <p> In the Component Inspector, under the 'Parameters' tab, enter
-    						the label text for the 'label' parameter. </p>
+                  <p>コンポーネントインスペクタの「パラメータ」タブで、「label」パラメータにラベルテキストを入力する。</p>
                </item>
             </olist>
-            <p>The screenshot below illustrates this technique.</p>
+            <p>下のスクリーンショットはこの実装方法を示している。</p>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH29/component_inspector_label.png"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH29/component_inspector_label.png"
                        height="349"
                        width="513"/>
-                  <alt>Setting a component's label in the Component Inspector Panel</alt>
+                  <alt>画面スクリーンショット：コンポーネントインスペクタパネルで、コンポーネントのラベルを設定</alt>
                </image>
 							     </p>
          </description>
       </eg-group>
       <eg-group>
-         <head>Setting the label on a Button, CheckBox and RadioButton component using ActionScript 3.0</head>
+         <head>ActionScript 3.0 を使用して、Button、CheckBox、RadioButton の各コンポーネントのラベルを設定する</head>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl
 import fl.accessibility.CheckBoxAccImpl
 import fl.accessibility.RadioButtonAccImpl
@@ -136,11 +126,11 @@ myRadioButton.x = 10;
 myRadioButton.y = 60;
 addChild(myRadioButton);]]></code>
          <description>
-            <p>This technique is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="setting_label_property_as3.html"
-                    linktype="examples">working example of Setting the label on a Button, CheckBox and RadioButton component using ActionScript 3.0</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="setting_label_property_as3.fla"
-                    linktype="examples">source of Setting the label on a Button, CheckBox and RadioButton component using ActionScript 3.0</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH29/setting_label_property_as3.html"><!--
+                    linktype="examples"-->ActionScript 3.0 を使用して、Button、CheckBox、RadioButton の各コンポーネントのラベルを設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH29/setting_label_property_as3.fla"><!--
+                    linktype="examples"-->ActionScript 3.0 を使用して、Button、CheckBox、RadioButton の各コンポーネントのラベルを設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -150,18 +140,17 @@ addChild(myRadioButton);]]></code>
    </related-techniques>
    <tests>
       <procedure>
-         <p>When the Button, CheckBox or RadioButton components are used: </p>
+         <p>Button、CheckBox、RadioButton の各コンポーネントを使用している場合、次のことを確認する。</p>
          <olist>
             <item>
-               <p> confirm that labels describing the purpose of the button have
-    					been provided through the component's label <prop>label</prop> property. </p>
+               <p>コンポーネントの <prop>label</prop> プロパティによって、ボタンの目的を説明したラベルが提供されている</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <olist>
             <item>
-               <p> #1 is true </p>
+               <p>1. を満たしている。</p>
             </item>
          </olist>
       </expected-results>
@@ -173,3 +162,4 @@ addChild(myRadioButton);]]></code>
 					</source>
    </admin>
 </technique>
+

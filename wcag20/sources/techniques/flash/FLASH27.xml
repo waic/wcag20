@@ -15,21 +15,12 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to describe the purpose
-    				of a button by providing descriptive text as the button's accessible
-    				name. The description lets a user distinguish this button from
-    				other buttons in the Flash movie and helps the user determine
-    				whether to activate the button. An empty string is not sufficient
-    				as a button's accessible name. </p>
-      <p>For buttons with text labels, the label text will be used
-    				as a buttons accessible name. If a button is image based and
-    				does not have a text label, the button's accessible name will
-    				have to be set separately using the Accessibility panel or
-    				through scripting. </p>
+      <p>この実装方法の目的は、ボタンのアクセシブルな名前として説明的なテキストを提供して、ボタンの目的を記述することである。この説明により、利用者はこのボタンとその他の Flash ムービーのボタンを区別でき、このボタンを有効化するかどうかを決定できる。ボタンのアクセシブルな名前として、空の文字列では不十分である。</p>
+      <p>テキストラベル付きのボタンの場合、ラベルテキストがボタンのアクセシブルな名前として使用される。画像ベースのボタンでテキストラベルが付いていない場合、このボタンのアクセシブルな名前は、アクセシビリティパネルを使用するか、またはスクリプトによって、別途設定する必要がある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Using the label property to describe the button's purpose</head>
+         <head>ラベルプロパティを使用してボタンの目的を記述する</head>
          <code xml:space="preserve"><![CDATA[import fl.controls.Button;
 import fl.accessibility.ButtonAccImpl;
 
@@ -40,9 +31,9 @@ myButton.label = "View Items in Cart";
 ]]></code>
       </eg-group>
       <eg-group>
-         <head>Using scripting to set the accessible name for an image button using Actionscript 3.0</head>
+         <head>スクリプトを使用して、ActionScript 3.0 により画像ボタンのアクセシブルな名前を設定する</head>
          <description>
-            <p>In this example, the button's <prop>label</prop> property is deliberately set to an empty string. To be perceivable to assistive technology, the button's <prop>accessibilityProperties.name</prop> property is set.</p>
+            <p>この事例では、ボタンの <prop>label</prop> プロパティで意図的に空の文字列を設定する。支援技術で認識できるようにするには、ボタンの <prop>accessibilityProperties.name</prop> プロパティを設定する。</p>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.controls.Button;
 import fl.accessibility.ButtonAccImpl;
@@ -86,27 +77,23 @@ function updateAccName(obj, newName:String) {
    </related-techniques>
    <tests>
       <procedure>
-         <p>For each button in the Flash movie that uses this technique: </p>
+         <p>この実装方法を用いている Flash ムービーの各ボタンについて、次のことを確認する。</p>
          <olist>
             <item>
-               <p> Check that the button's label text correctly describes
-    					the button's purpose </p>
+               <p>ボタンのラベルテキストがボタンの目的を正しく説明している</p>
             </item>
             <item>
-               <p> If a button does not have a text label, confirm that descriptive
-    					text has been added as the button's accessible name. </p>
+               <p>ボタンにテキストラベルがない場合、ボタンのアクセシブルな名前として説明的なテキストが追加されている</p>
             </item>
             <item>
-               <p> If a button contains both label text and an accessible
-    							name, confirm that the combination of the two makes sense
-    							as a description for the button's purpose. </p>
+               <p>ボタンにラベルテキストとアクセシブルな名前の両方が含まれている場合、その二つの組み合わせが、ボタンの目的の説明として正しいものである</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Checks #1, #2, and #3 are true. </p>
+               <p>1., 2. または 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -118,3 +105,4 @@ function updateAccName(obj, newName:String) {
 					</source>
    </admin>
 </technique>
+
