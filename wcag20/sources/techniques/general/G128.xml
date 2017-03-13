@@ -30,7 +30,10 @@
    </examples>
    <resources/>
    <related-techniques>
-      <relatedtech idref="G122" />
+      <relatedtech idref="G14" />
+      <relatedtech idref="G205"/>
+      <relatedtech idref="G182" />
+      <relatedtech idref="G183" />
    </related-techniques>
    <tests>
       <procedure>
