@@ -584,7 +584,7 @@
     <xsl:otherwise><h4 class="small-head" id="{$uanumber}">ユーザエージェント及び支援技術によるサポート</h4></xsl:otherwise>
   </xsl:choose>
 			
-			<p><a href="/WAI/WCAG20/Techniques/ua-notes/{ancestor::div1/@id}#{ancestor::technique/@id}"><xsl:value-of select="ancestor::technique/@id"/>に関するユーザーエージェントサポートノート</a>を参照のこと。<xsl:if test="ancestor::div1/div2"><a><xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="ancestor::div1/div2[1]"/></xsl:call-template></xsl:attribute><xsl:value-of select="ancestor::div1/div2[1]/head"/></a>も参照。</xsl:if></p>
+			<p><a href="/WAI/WCAG20/Techniques/ua-notes/{ancestor::div1/@id}#{ancestor::technique/@id}"><xsl:value-of select="ancestor::technique/@id"/>に関するユーザエージェントサポートノート</a>を参照のこと。<xsl:if test="ancestor::div1/div2"><a><xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="ancestor::div1/div2[1]"/></xsl:call-template></xsl:attribute><xsl:value-of select="ancestor::div1/div2[1]/head"/></a>も参照。</xsl:if></p>
 		</div>
 	</xsl:template>
 	<xsl:template match="ua-issue">
