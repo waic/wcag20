@@ -7,7 +7,7 @@
 						How to Meet 3.2.2 (入力時)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/consistent-behavior-unpredictable-change.html">
 						達成基準 3.2.2 (入力時)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua12.27.1">ユーザエージェント及び支援技術によるサポート</h2><p>See <a href="/WAI/WCAG20/Techniques/ua-notes/failures#F37">User Agent Support Notes for F37</a>.</p></div><h2 id="F37-description">解説</h2><div class="textbody"><p>この文書では、ラジオボタン、チェックボックス、またはセレクトリスト内の項目の選択を変更すると、新しいウィンドウが開く失敗例について解説する。要素が選択されたとき、コンテキストの変更（フォームの送信、新しいページを開く、新しいウィンドウ）を引き起こす <code>input</code> 要素を生成するために、スクリプトを使用することができる。
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua12.27.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="/WAI/WCAG20/Techniques/ua-notes/failures#F37">F37に関するユーザーエージェントサポートノート</a>を参照のこと。</p></div><h2 id="F37-description">解説</h2><div class="textbody"><p>この文書では、ラジオボタン、チェックボックス、またはセレクトリスト内の項目の選択を変更すると、新しいウィンドウが開く失敗例について解説する。要素が選択されたとき、コンテキストの変更（フォームの送信、新しいページを開く、新しいウィンドウ）を引き起こす <code>input</code> 要素を生成するために、スクリプトを使用することができる。
   開発者は代わりに送信ボタンを使用する（<a href="http://waic.jp/docs/WCAG-TECHS/G80" class="tech-ref">G80: 状況の変化を開始する実行ボタンを提供する</a>を参照）、又はそこで起こる動作を明確に示す必要がある。</p></div><h2 class="small-head" id="F37-examples">事例</h2><div class="failure"><h3 class="small-head" id="F37-failex1">
 					失敗例 1</h3><div class="example"><div class="textbody"><p>下記の例では、送信ボタンを使うのではなく、ラジオボタンが選択されたときにフォームが処理されるため、達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;script type="text/JavaScript"&gt; 
