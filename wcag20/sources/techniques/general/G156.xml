@@ -7,6 +7,8 @@
       <p>全てのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="sufficient"/>
    </applies-to>
