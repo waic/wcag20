@@ -43,7 +43,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p><phrase diff="del">1.及び 2.</phrase><phrase diff="add">2. ～ 4. </phrase>を満たしている。</p>
+               <p>2. ～ 5. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
