@@ -63,7 +63,7 @@
                   checking HTML, CSS and XML.</p>
             </item>
          </ulist>
-         <p>Validating HTML and XHTML</p>
+         <p>HTML及びXHTMLのバリデーション</p>
          <ulist>
             <item>
                <p>
@@ -345,22 +345,11 @@
           <p>バリデーションエラーがない。</p>
         </item>
       </olist>
-      <p>CSSに対して：</p>
-      <olist>
-        <item>
-          <p>外部又は内部スタイルシートをCSSバリデータにかける。</p>
-        </item>
-        <item>
-          <p>バリデーションエラーがない。</p>
-        </item>
-      </olist>
       <p>その他のウェブコンテンツ技術に対して：</p>
       <p>用いているウェブコンテンツ技術に対してバリデーションの手順が定められていれば、それに従う。</p>
     </procedure>
       <expected-results>
          <p>HTML、SGMLベース、及びXMLベースのウェブコンテンツ技術に対して：</p>
-      <p>2. を満たしている。</p>
-      <p>CSSに対して：</p>
       <p>2. を満たしている。</p>
       </expected-results>
    </tests>
