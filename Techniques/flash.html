@@ -1446,24 +1446,7 @@ function updateAccName(obj, newName: String) {
 						How to Meet 1.3.1 (情報及び関係性)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.31.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH31">FLASH31に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH31-description">解説</h3><div class="textbody"><p>The objective of this technique is to programmatically associate captions
-    				for DataGrids where captions are provided in the presentation. Normally,
-    				the caption for a table is a table identifier and acts like a title
-    				or heading for the table. </p><p>Flash does not have a caption element for the DataGrid component,
-    				but the same effect can be achieved through the following approach: </p><ol class="enumar"><li><p> Place a label component or textfield above the DataGrid, containing
-    				the grid's caption text. </p></li><li><p> Duplicate the caption text and add it as the grid's accessible
-    					name. This can either be achieved by setting a value to the grid's   "name" field
-    					in the Accessibility panel or by setting the grid's <code>AccessibilityProperties.name</code>
-    					property. </p></li></ol></div><h3 class="small-head" id="FLASH31-examples">事例</h3><h4 class="small-head" id="FLASH31-ex1">事例 1: Associating a label with a DataGrid</h4><div class="example"><div class="textbody"><p>This is an example of a DataGrid being added to the stage in Flash
-    						Professional from the Components panel. A label element is also added
-    						from the Components panel to contain the caption text and the caption
-    						text is used in the Accessibility control panel in Flash to serve as
-    						the accessibility name for the DataGrid. </p><ul><li><p> Create a new Flash file (.fla) or open an existing one to put
-    						a DataGrid into. </p></li><li><p> Open the Flash components panel from the Window menu </p></li><li><p> Drag a DataGrid component onto the stage and position as desired. </p></li><li><p> Drag a label component onto the stage and position as desired. </p></li><li><p> Add text to the label component. </p></li><li><p> Select the DataGrid component and add the same text as is used
-    							in the label component to the name field for DataGrid, using the
-    							Accessibility control panel. </p></li></ul></div></div><h4 class="small-head" id="FLASH31-ex2">事例 2: Associating a caption with a DataGrid using ActiveScript 3</h4><div class="example"><div class="textbody"><p>This is a basic AS3 example of a DataGrid generated through scripting.
-    						Additionally a label element is created, containing the caption text,
-    						and the caption text is added to the grid as an accessible name. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.DataGridAccImpl;
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.31.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH31">FLASH31に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH31-description">解説</h3><div class="textbody"><p>この実装方法の目的は、見た目で表題が提供されている場合に、プログラムによって表題をデータグリッドに関連付けることである。通常、テーブルの表題はテーブルの識別子であり、テーブルのタイトルまたは見出しとして機能する。</p><p>Flash には DataGrid コンポーネント用の caption 要素はない。ただし、以下のアプローチによって同じ効果を得ることができる。</p><ol class="enumar"><li><p>データグリッドの上にラベルコンポーネント又はテキストフィールドを配置し、グリッドの表題を設定する。</p></li><li><p>表題のテキストを複製し、グリッドのアクセシブルな名前として追加する。これを行うには、グリッドのアクセシビリティパネルの「名前」フィールドに値を設定するか、又はグリッドの <code>AccessibilityProperties.name</code> プロパティを設定する。</p></li></ol></div><h3 class="small-head" id="FLASH31-examples">事例</h3><h4 class="small-head" id="FLASH31-ex1">事例 1: データグリッドにラベルを関連付ける</h4><div class="example"><div class="textbody"><p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。また、コンポーネントパネルから表題となるテキストを格納するためのラベル要素も追加される。この表題は Flash のアクセシビリティパネルで使用され、データグリッドのアクセシビリティ用の名前として機能する。</p><ul><li><p>新しい Flash ファイル（.fla）を作成するか、既存のファイルを開いてデータグリッドを挿入する。</p></li><li><p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p></li><li><p>データグリッドコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p></li><li><p>ラベルコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p></li><li><p>ラベルコンポーネントにテキストを追加する。</p></li><li><p>データグリッドコンポーネントを選択し、アクセシビリティパネルを使用して、データグリッドの「名前」フィールドにラベルコンポーネントで使用しているのと同じテキストを追加する。</p></li></ul></div></div><h4 class="small-head" id="FLASH31-ex2">事例 2: ActiveScript 3 を使用してデータグリッドにキャプションを関連付ける</h4><div class="example"><div class="textbody"><p>ここでは、AS3 のスクリプトによってデータグリッドを生成する基本的な事例を示す。また、表題となるテキストを格納するラベル要素も作成する。この表題は、アクセシブルな名前としてグリッドに追加する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.DataGridAccImpl;
 import fl.controls.DataGrid;
 import fl.controls.Label;
 import fl.data.DataProvider;
@@ -1471,15 +1454,15 @@ import flash.accessibility.Accessibility;
 import flash.accessibility.AccessibilityProperties;
 import flash.system.Capabilities;
 
-// enable accessibility for the DataGrid
+// データグリッドのアクセシビリティを有効にする
 DataGridAccImpl.enableAccessibility();
 
 createGrid();
 
-// set the data grid caption text
+// データグリッドの表題を設定する
 var gridCaptionText: String = "Game Results";
 gridCaption.text = gridCaptionText;
-//add the caption text as the DataGrid's accessible name
+//表題をデータグリッドのアクセシブルな名前として追加する
 var accProps: AccessibilityProperties = new AccessibilityProperties();
 accProps.name = gridCaptionText;
 aDg.accessibilityProperties = accProps;
@@ -1488,7 +1471,7 @@ Accessibility.updateProperties();
 
 function createGrid() {
   
-  //create and add the components
+  //コンポーネントを作成して追加する
   var aDg: DataGrid = new DataGrid();
   var gridCaption: Label = new Label();
   addChild(aDg);
@@ -1502,7 +1485,7 @@ function createGrid() {
   gridCaption.width = 300;
   gridCaption.height = 100;
   bldRosterGrid(aDg);
-  //prepare the data
+  //データを準備する
   var aRoster: Array = new Array();
   aRoster =[ 
     {Name: "Wilma Carter", Bats: "R", Throws: "R", Year: "So", Home: "Redlands, CA"},
@@ -1522,12 +1505,7 @@ function bldRosterGrid(dg: DataGrid) {
   dg.columns[2].width = 50;
   dg.columns[3].width = 40;
   dg.columns[4].width = 120;
-};</code></pre></div><div class="textbody"><p>Notes on this code sample:</p><ul><li><p> For a demonstration, see the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.html" class="ex-ref">working version of Associating a caption with a DataGrid using ActiveScript 3</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.fla" class="ex-ref">source of Associating a caption with a DataGrid using ActiveScript 3</a> is available.</p></li><li><p> The accessible name can also be applied to the DataGrid using
-    						the Accessibility panel in the Flash authoring tool. </p></li><li><p> In the above example, the text used for the DataGrid caption will
-    								be read twice, once as the text label that is offered for sighted
-    								users, and again as the accessible name for the DataGrid. Authors
-    								can avoid duplicate voicing by setting the <code>silent</code> property for the
-    								label text to <code>true</code>. </p></li></ul></div></div><h3 id="FLASH31-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルの表題とデータテーブルを関連付けるために、caption 要素を使用する</a></li></ul></div><h3 id="FLASH31-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH31-procedure">チェックポイント</h4><ol class="enumar"><li><p> Check whether the Flash movie contains a DataGrid component. </p></li><li><p> Confirm that each DataGrid's caption text has been added to the component as an accessible name. </p></li></ol><h4 class="small-head" id="FLASH31-results">判定基準</h4><p>Step 2 is true. </p><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH32" id="FLASH32"> </a>FLASH32: フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する</h2><div class="applicability"><h3 id="FLASH32-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+};</code></pre></div><div class="textbody"><p>このコード例に関する注記:</p><ul><li><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.html">ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのサンプル（英語）</a>で確認できる。また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.fla">ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのソース（英語）</a>をダウンロードすることもできる。</p></li><li><p>Flash のオーサリングツールのアクセシビリティパネルを使用することによって、データグリッドにアクセシブルな名前を適用することもできる。</p></li><li><p>上記の事例では、データグリッドの表題として使用されるテキストは2回読み上げられる。1回目は視覚に問題のない利用者向けのテキストラベルとして、2回目はデータグリッドのアクセシブルな名前としてである。コンテンツ制作者は、ラベルテキストの <code>silent</code> プロパティを <code>true</code> に設定することによって、読み上げが重複するのを回避することができる。</p></li></ul></div></div><h3 id="FLASH31-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルの表題とデータテーブルを関連付けるために、caption 要素を使用する</a></li></ul></div><h3 id="FLASH31-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH31-procedure">チェックポイント</h4><ol class="enumar"><li><p>Flash ムービーに DataGrid コンポーネントが含まれているかどうかを確認する。</p></li><li><p>各データグリッドの表題となるテキストが、アクセシブルな名前としてコンポーネントに追加されている</p></li></ol><h4 class="small-head" id="FLASH31-results">判定基準</h4><p>2. を満たしている。</p><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH32" id="FLASH32"> </a>FLASH32: フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する</h2><div class="applicability"><h3 id="FLASH32-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#text-equiv-all">
 						How to Meet 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/text-equiv-all.html">
@@ -1547,64 +1525,13 @@ function bldRosterGrid(dg: DataGrid) {
 						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.32.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH32">FLASH32に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH32-description">解説</h3><div class="textbody"><p>Except for the <code>CheckBox</code> and <code>RadioButton</code> component, the built in Flash
-    				components are not automatically provided an associated label. For
-    				these components, label text has to be placed adjacent to their control
-    				manually, using the <code>Label</code> component. If the 'auto-label' feature is
-    				enabled in the Accessibility panel, then the Flash Player will automatically
-    				associate the label text for the <code>TextInput</code> and <code>TextArea</code> components.
-    				This means that for these components, it is not necessary to duplicate
-    				the label text for the control using the Accessibility panel. The auto
-    				label feature is enabled by default. </p><p>Additionally, the auto label feature will enable the Flash Player
-    				to automatically add text contained by Button symbols as the symbol's
-    				accessible name. This will only work if the Button symbol only consists
-    				of one layer, containing the text label. </p><div class="note"><p class="prefix"><em>注記: </em>Since auto-labeling associates labels without human intervention
-    				the accuracy of the association should be verified. For more predictable
-    				results authors are encouraged to explicitly add labels to all controls. </p></div><p>To auto labeling, perform the following steps: </p><ol class="enumar"><li><p> Ensure that the textual descriptions for each form control within
-    				the flash application are placed adjacent to the control itself. Text
-    				eligible to be used for auto-labeling must not be set to be hidden
-    				from assistive technology. </p></li><li><p> Select the movie stage, and open the Accessibility panel. </p></li><li><p> Ensure that the 'Auto Label' option is checked. This will automatically
-    					associate labels with their TextInput and TextArea controls, and
-    					add text inside custom button symbols as their accessible name. </p></li><li><p> If the auto label behavior is inappropriate to your Flash content,
-    						uncheck the 'Auto label' option, and ensure that each control receives
-    						a meaningful 'name' value in the Accessibility panel. </p></li><li><p> To disable auto labeling for a particular object but not the whole
-    							movie, convert the text to the 'dynamic text' type using the 'Property
-    							inspector'. Then select it, and uncheck its 'Make object accessible'
-    							option in the Accessibility panel. </p></li></ol><div class="note"><p class="prefix"><em>注記: </em>As an alternative to using the Accessibility panel, the auto
-    				label feature can also be turned off by setting the <code>AccessibilityProperties.noAutoLabel</code>
-    				to <code>true</code> for the stage object. </p></div></div><h3 class="small-head" id="FLASH32-examples">事例</h3><h4 class="small-head" id="FLASH32-ex1">事例 1: Using the "Auto Label" option in the Accessibility panel</h4><div class="example"><div class="textbody"><p>This example shows two TextInput components, a TextArea component
-    						and a custom button symbol instance. For the TextInput components,
-    						a separate label element has been placed to the left of the control.
-    						For the TextArea component, the label has been placed above the control.
-    						For the custom button, the label text is placed inside the button symbol.
-    						Because the "Auto Label" option is enabled in the Accessibility
-    						panel, all these controls will be provided an accessible name based
-    						on their label. </p><p>The screenshot below illustrates the example: <img class="eximg" src="/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_label.png" alt="Using the Auto Label feature in the Flash Authoring Environment" height="300" width="593"/>
-							     </p><p>The results of this technique can be viewed in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.html" class="ex-ref">working version of Using the "Auto Label" option in the Accessibility panel</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.fla" class="ex-ref">source of Using the "Auto Label" option in the Accessibility panel</a> is available.</p></div></div><h3 id="FLASH32-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/FLASH25">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h3 id="FLASH32-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH32-procedure">チェックポイント</h4><p>If a Flash form contains TextInput or TextArea components, or custom
-    					button symbols with text labels, confirm that: </p><ol class="enumar"><li><p> The Auto Label option is enabled in the movie's Accessibility
-    					panel </p></li><li><p> Use a screen reader or MSAA checker to ensure that the label text
-    					is indeed exposed as the control's accessible name </p></li></ol><h4 class="small-head" id="FLASH32-results">判定基準</h4><ul><li><p> #1 and #2 are true </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH33" id="FLASH33"> </a>FLASH33: Flash オブジェクトのサイズに相対値を使用する</h2><div class="applicability"><h3 id="FLASH33-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.32.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH32">FLASH32に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH32-description">解説</h3><div class="textbody"><p><code>CheckBox</code> コンポーネントおよび <code>RadioButton</code> コンポーネント以外の Flash 標準コンポーネントでは、関連付けられたラベルが自動的に提供されることはない。これらのコンポーネントについては、<code>Label</code> コンポーネントを使用して、コントロールの隣にラベルテキストを手動で配置する必要がある。アクセシビリティパネルで「自動ラベル」機能を有効にしてある場合は、<code>TextInput</code> コンポーネントおよび <code>TextArea</code> コンポーネントについては Flash Player が自動的にラベルテキストを関連付ける。つまり、これらのコンポーネントでは、アクセシビリティパネルを使用してコントロールのラベルテキストを複製する必要はない。自動ラベル機能はデフォルトで有効になっている。</p><p>また、自動ラベル機能によって、Flash Player はボタンシンボルに含まれているテキストをシンボルのアクセシブルな名前として自動的に追加することが可能になる。これは、ボタンシンボルがテキストラベルを含む一つのレイヤーだけで構成されている場合のみ有効である。</p><div class="note"><p class="prefix"><em>注記: </em>自動ラベル機能は人間が操作することなくラベルを関連付けるため、関連付けの正確性を検証する必要がある。予測可能な結果を得るためには、すべてのコントロールに対して明示的にラベルを追加することが推奨される。</p></div><p>次の手順で自動ラベル機能を利用する。</p><ol class="enumar"><li><p>Flash アプリケーションに含まれる各フォーム・コントロールの近くに、説明テキストが配置されていることを確認する。自動ラベル機能で使用されるテキストは、支援技術からアクセス可能にする必要がある。</p></li><li><p>ムービーステージを選択し、アクセシビリティパネルを開く。</p></li><li><p>「自動ラベル」オプションがオンになっていることを確認する。この結果、TextInput コントロールおよび TextArea コントロールにラベルが自動的に関連付けられ、カスタムボタンシンボル内のテキストがアクセシブルな名前として追加される。</p></li><li><p>自動ラベル動作が適さない Flash コンテンツの場合は「自動ラベル」オプションをオフにし、アクセシビリティパネルで各コントロールに分かりやすい「名前」の値を設定する。</p></li><li><p>自動ラベル機能を、ムービー全体に対してでなく特定のオブジェクトに対して無効にするには、プロパティインスペクタを使用してテキストのタイプを「ダイナミックテキスト」に変更する。次にそのテキストを選択し、アクセシビリティパネルで「オブジェクトをアクセス可能にする」オプションをオフにする。</p></li></ol><div class="note"><p class="prefix"><em>注記: </em>アクセシビリティパネルを使用する以外にも、ステージオブジェクトの <code>AccessibilityProperties.noAutoLabel</code> を <code>true</code> に設定することによって自動ラベル機能をオフにすることができる。</p></div></div><h3 class="small-head" id="FLASH32-examples">事例</h3><h4 class="small-head" id="FLASH32-ex1">事例 1: アクセシビリティパネルで「自動ラベル」オプションを使用する</h4><div class="example"><div class="textbody"><p>この事例では、二つの TextInput コンポーネントと、TextArea コンポーネントとカスタムボタンシンボルのインスタンスが一つずつ表示される。各 TextInput コンポーネントには、コントロールの左に個別のラベル要素が配置されている。TextArea コンポーネントには、コントロールの上にラベルが配置されている。カスタムボタンには、ボタンシンボルの内部にラベルテキストが配置されている。アクセシビリティパネルで「自動ラベル」オプションを有効にしているため、すべてのコントロールに対してラベルに基づいたアクセシブルな名前が提供される。</p><p>次のスクリーンショットは、この事例を示したものである。 <img class="eximg" src="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_label.png" alt="画面スクリーンショット：Flashオーサリング環境で自動ラベル機能を使用" height="300" width="593"/>
+							     </p><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.html">アクセシビリティパネルで「自動ラベル」オプションを使用するのサンプル（英語）で確認できる。</a>また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.fla">アクセシビリティパネルで「自動ラベル」オプションを使用するのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 id="FLASH32-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/FLASH25">FLASH25: アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</a></li></ul></div><h3 id="FLASH32-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH32-procedure">チェックポイント</h4><p>Flash フォームに TextInput コンポーネント、TextArea コンポーネント、またはテキストラベルを使用したカスタムボタンシンボルが含まれている場合、次のことを確認する。</p><ol class="enumar"><li><p>ムービーのアクセシビリティパネルで「自動ラベル」オプションが有効になっている。</p></li><li><p>スクリーンリーダーまたは MSAA チェッカーを使用して確認すると、ラベルテキストがコントロールのアクセシブルな名前として実際に利用されている。</p></li></ol><h4 class="small-head" id="FLASH32-results">判定基準</h4><ul><li><p>1. および 2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH33" id="FLASH33"> </a>FLASH33: Flash オブジェクトのサイズに相対値を使用する</h2><div class="applicability"><h3 id="FLASH33-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">
 				達成基準 1.4.8 (視覚的提示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-visual-presentation">
 						How to Meet 1.4.8 (視覚的提示)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-visual-presentation.html">
 						達成基準 1.4.8 (視覚的提示)を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">達成基準 1.4.8</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-visual-presentation.html">達成基準 1.4.8 を理解する</a>を参照すること。</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.33.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH33">FLASH33に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH33-description">解説</h3><div class="textbody"><p>The objective of this technique is to specify the width and/or height
-    				of an embedded Flash object using relative units such as <code>em</code> values.
-    				The size of the Flash object is allowed to expand to fill the size
-    				of its container (a parent element) by setting the movie width and
-    				height to 100%. The container's width and height is set with relative
-    				units. This will allow user agents that support text resizing to resize
-    				the Flash object in line with changes in text size settings. When the
-    				Flash object's dimensions are adjusted its contents will be scaled,
-    				making it easier to read for low vision users. </p><div class="note"><p class="prefix"><em>注記: </em>This technique is not necessary to support users who use zoom
-    				functionality in their browsers. </p></div></div><h3 class="small-head" id="FLASH33-examples">事例</h3><h4 class="small-head" id="FLASH33-ex1">事例 1: Scaling text while keeping a minimum size</h4><div class="example"><div class="textbody"><p>In this example, a Flash object is loaded into an HTML document using <a href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject's
-    						dynamic publishing method</a>. The Flash object's container element
-    						is given a class name of "flashPlaceHolder". This class
-    						name is then targeted using CSS to set its width and height using
-    						relative em values. When the user increases or decreases the browser's
-    						text size, the Flash object will scale accordingly. To ensure that
-    						the object does not become too small when text size is decreased,
-    						the <code>min-width</code> and <code>min-height</code> properties are set to the default dimensions. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">達成基準 1.4.8</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-visual-presentation.html">達成基準 1.4.8 を理解する</a>を参照すること。</p></div></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.33.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH33">FLASH33に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH33-description">解説</h3><div class="textbody"><p>この実装方法の目的は、<code>em</code> の値など相対的な単位を使用して、埋め込みの Flash オブジェクトの幅や高さを指定することである。Flash オブジェクトのサイズは、ムービーの幅と高さを 100% に設定することによって、コンテナ（親要素）のサイズに合わせて拡大することができる。コンテナの幅と高さは、相対的な単位を使用して設定する。これにより、テキストサイズの変更をサポートするユーザーエージェントは、テキストサイズの設定の変更に応じて Flash オブジェクトのサイズを変更することが可能になる。Flash オブジェクトのサイズが調整されると、そのコンテンツが拡大または縮小され、ロービジョンの利用者でも読みやすくなる。</p><div class="note"><p class="prefix"><em>注記: </em>この実装方法では、ブラウザでズーム機能を使用する利用者をサポートする必要はない。</p></div></div><h3 class="small-head" id="FLASH33-examples">事例</h3><h4 class="small-head" id="FLASH33-ex1">事例 1: テキストのサイズを変更する（最低限のサイズは維持する）</h4><div class="example"><div class="textbody"><p>この事例では、<a href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject による動的なパブリッシュ手法（英語）</a>を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <code>min-width</code> および <code>min-height</code> プロパティを設定している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
   &lt;head&gt;
@@ -1633,39 +1560,15 @@ function bldRosterGrid(dg: DataGrid) {
       example to work&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-</code></pre></div><div class="textbody"><p>The result of this technique can be viewed in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.html" class="ex-ref">working version of Scaling text while keeping a minimum size</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.fla" class="ex-ref">source of Scaling text while keeping a minimum size</a> is available.</p></div></div><h3 id="FLASH33-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/C24">C24: コンテナのサイズに CSS のパーセント値を使用する</a></li></ul></div><h3 id="FLASH33-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH33-procedure">チェックポイント</h4><ol class="enumar"><li><p> Open a web page containing an embedded flash object </p></li><li><p> View the HTML to confirm that the width and height dimensions
-    					for the object containing the Flash object are specified using relative
-    					units such as em or percent (%). </p></li></ol><h4 class="small-head" id="FLASH33-results">判定基準</h4><ul><li><p> Check #2 is true. </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH34" id="FLASH34"> </a>FLASH34: スクリーンリーダー検出機能を使用して、自動的に再生される音声をオフにする</h2><div class="applicability"><h3 id="FLASH34-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-dis-audio">
+</code></pre></div><div class="textbody"><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.html">テキストのサイズを変更する（最低限のサイズは維持する）のサンプル（英語）</a>で確認できる。また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.fla">テキストのサイズを変更する（最低限のサイズは維持する）のソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 id="FLASH33-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/C24">C24: コンテナのサイズに CSS のパーセント値を使用する</a></li></ul></div><h3 id="FLASH33-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH33-procedure">チェックポイント</h4><ol class="enumar"><li><p>Flash オブジェクトが埋め込まれているウェブページを開く。</p></li><li><p>HTML ソースコードで、Flash オブジェクトが格納されているオブジェクトの幅および高さのサイズが、em またはパーセント（%）などの相対的な単位で指定されている</p></li></ol><h4 class="small-head" id="FLASH33-results">判定基準</h4><ul><li><p>2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH34" id="FLASH34"> </a>FLASH34: スクリーンリーダー検出機能を使用して、自動的に再生される音声をオフにする</h2><div class="applicability"><h3 id="FLASH34-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-dis-audio">
 				達成基準 1.4.2 (音声の制御)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#visual-audio-contrast-dis-audio">
 						How to Meet 1.4.2 (音声の制御)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/visual-audio-contrast-dis-audio.html">
 						達成基準 1.4.2 (音声の制御)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.34.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH34">FLASH34に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH34-description">解説</h3><div class="textbody"><p>The intent of this technique is to prevent sounds from playing when
-    				the Flash movie loads. This is useful for those who utilize assistive
-    				technologies (such as screen readers, screen magnifiers, switch mechanisms,
-    				etc.) and those who may not (such as those with cognitive, learning
-    				and language disabilities). By default, the sound will be played automatically.
-    				When a screen reader such as JAWS is detected however, the sound will
-    				have to be started manually. </p><p>To perform screen reader detection, Flash provides the <code>flash.accessibility.Accessibility.active</code>
-    				property. If this property is set to <code>true</code>, it means that the Flash
-    				player has detected running assistive technology. Based on this flag,
-    				the Flash developer can choose to run different functionality. </p><div class="note"><p class="prefix"><em>注記 1:
-					</em>The Flash Player requires some time to detect active assistive
-    				technology and set the <code>Accessibility.active</code> property. To get accurate
-    				results, do not check for this property immediately on the first frame
-    				of the movie. Instead, perform the check 5 frames in or based on a
-    				timed event. </p><p class="prefix"><em>注記 2:
-					</em>Not every screen reader will be detected using this mechanism.
-    				In general, the property will be set to true when any  <abbr title="Microsoft Active Accessibility">MSAA</abbr> client
-    				is running. </p><p class="prefix"><em>注記 3:
-					</em>Other assistive technology tools, including screen magnifiers,
-    				or tools not used as assistive technologies may also utilize MSAA in
-    				ways that result in <code>Accessibility.active</code> being set to <code>true</code>. </p></div></div><h3 class="small-head" id="FLASH34-examples">事例</h3><h4 class="small-head" id="FLASH34-ex1">事例 1: A SoundHandler class</h4><div class="example"><div class="textbody"><p>A class called SoundHandler is created which automatically starts
-    						playing an MP3 file only when <code>Accessibility.active</code> is set to <code>false</code>.
-    						Note that this example also checks the <code>flash.system.Capabilities.hasAccessibility</code>
-    						property. This property does not check whether a screen reader is running,
-    						but instead indicates whether the Flash Player is running in an environment
-    						that supports MSAA (which basically means the Windows operating system). </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>package wcagSamples {
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.34.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH34">FLASH34に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH34-description">解説</h3><div class="textbody"><p>この実装方法の目的は、Flash ムービーがロードされたときに音声が再生されないようにすることである。これは、スクリーンリーダー、スクリーン拡大鏡、スイッチメカニズムなどの支援技術の利用者や支援技術を使用しない利用者（認知障害、学習障害、言語障害を持つ人々）に役立つ。デフォルトでは、音声は自動的に再生される。ただし、JAWS などのスクリーンリーダーが検出された場合は、音声は手動で開始される必要がある。</p><p>Flash は、スクリーンリーダーを検出するための <code>flash.accessibility.Accessibility.active</code> プロパティを提供している。このプロパティが <code>true</code> に設定されている場合は、支援技術が実行されていることを Flash Player が検出したことを意味する。このフラグに基づいて、Flash のコンテンツ制作者は別の機能を実行するように選択できる。</p><div class="note"><p class="prefix"><em>注記 1:
+					</em>Flash Player が、実行されている支援技術を検出し、<code>Accessibility.active</code> プロパティを設定するまでには多少時間がかかる。したがって、正確な結果を得るためには、ムービーの最初のフレームですぐにこのプロパティをチェックしてはならない。5 フレーム後、またはタイムイベントを使用してチェックを行うようにする。</p><p class="prefix"><em>注記 2:
+					</em>このメカニズムでは検出されないスクリーンリーダーも存在する。一般的に、このプロパティが true に設定されるのは、<abbr title="Microsoft Active Accessibility">MSAA</abbr> クライアントが実行されている場合である。</p><p class="prefix"><em>注記 3:
+					</em>注記 3: 他の支援技術ツール（スクリーン拡大鏡など）、または支援技術としては使用されないツールの中にも MSAA を利用するものがあり、その結果として <code>Accessibility.active</code> が <code>true</code> に設定される場合がある。</p></div></div><h3 class="small-head" id="FLASH34-examples">事例</h3><h4 class="small-head" id="FLASH34-ex1">事例 1: SoundHandler クラス</h4><div class="example"><div class="textbody"><p><code>Accessibility.active</code> が <code>false</code> に設定されている場合のみ自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。この事例では <code>flash.system.Capabilities.hasAccessibility</code> プロパティもチェックしていることに注意する。このプロパティはスクリーンリーダーが実行されているかどうかをチェックするものではなく、Flash Player が MSAA （基本的には Windows オペレーティングシステムを意味する）をサポートする環境で実行されているかどうかを示すものである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>package wcagSamples {
   import flash.accessibility.Accessibility;
   import flash.display.Sprite;
   import flash.net.URLRequest;
@@ -1716,28 +1619,16 @@ function bldRosterGrid(dg: DataGrid) {
       }
     }
   }
-}</code></pre></div><div class="textbody"><p>This technique can be viewed in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.html" class="ex-ref">working version of A SoundHandler class</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.fla" class="ex-ref">source of A SoundHandler class</a> is available.</p></div></div><h3 id="FLASH34-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+}</code></pre></div><div class="textbody"><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.html">SoundHandler クラスのサンプル（英語）</a>で確認できる。また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.fla">SoundHandler クラスのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 id="FLASH34-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
 									         <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/accessibility/Accessibility.html#active">ActionScript 3.0 Language and Components Reference: Accessibility.active property</a>
 								       </p></li><li><p>
 									         <a href="http://www.paciellogroup.com/blog/2008/04/developer-beware-using-flash-to-detect-screen-readers/">Developer Beware: Using Flash to Detect Screen Readers</a>
-								       </p></li></ul></div><h3 id="FLASH34-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G170">G170: 自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</a></li></ul></div><h3 id="FLASH34-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH34-procedure">チェックポイント</h4><ol class="enumar"><li><p> Start a screen reader that supports MSAA. </p></li><li><p> Open a page containing a Flash movie that starts playing audio
-    					automatically when a screen reader is not running </p></li><li><p> Confirm that the audio is stopped. </p></li></ol><h4 class="small-head" id="FLASH34-results">判定基準</h4><ol class="enumar"><li><p> #3 is true </p></li></ol><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH35" id="FLASH35"> </a>FLASH35: Flash コンテンツをスクロールさせて、それを停止させるメカニズムを提供するために、スクリプトを使用する</h2><div class="applicability"><h3 id="FLASH35-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
+								       </p></li></ul></div><h3 id="FLASH34-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G170">G170: 自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</a></li></ul></div><h3 id="FLASH34-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH34-procedure">チェックポイント</h4><ol class="enumar"><li><p>MSAA をサポートしているスクリーンリーダーを起動する。</p></li><li><p>スクリーンリーダーが実行されていない場合は、自動的に音声を再生する Flash ムービーが含まれているページを開く。</p></li><li><p>音声の再生が停止している。</p></li></ol><h4 class="small-head" id="FLASH34-results">判定基準</h4><ol class="enumar"><li><p>3. を満たしている。</p></li></ol><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH35" id="FLASH35"> </a>FLASH35: Flash コンテンツをスクロールさせて、それを停止させるメカニズムを提供するために、スクリプトを使用する</h2><div class="applicability"><h3 id="FLASH35-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
 						How to Meet 2.2.2 (一時停止、停止、非表示)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.35.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH35">FLASH35に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH35-description">解説</h3><div class="textbody"><p>The objective of this technique is to provide a way for users to stop
-    				scrolling content when the scrolling is created by a script. Scrolling
-    				content can be difficult or impossible to read by users with low vision
-    				or with cognitive disabilities. The movement can also be distracting
-    				for some people making it difficult for them to concentrate on other
-    				parts of the Web page. </p></div><h3 class="small-head" id="FLASH35-examples">事例</h3><h4 class="small-head" id="FLASH35-ex1">事例 1: A toggle button to pause and resume scrolling</h4><div class="example"><div class="textbody"><p>In this example, text scrolls from left to right. A toggle button
-    						is provided that allows the user to pause and resume the scrolling
-    						behavior. Additionally, a checkbox is provided which can be used to
-    						slow down the scrolling speed. </p><div class="note"><p class="prefix"><em>注記: </em>Users may prefer a greater variety of scrolling speed options
-    						than are offered in this example. Developers might choose to provide
-    						several speed choices with a slider or drop down list control in order
-    						to accomplish this. </p></div></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.ButtonAccImpl;
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.35.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH35">FLASH35に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH35-description">解説</h3><div class="textbody"><p>この実装方法の目的は、コンテンツのスクロールがスクリプトによって生成された場合に、そのスクロールを停止する方法を利用者に提供することである。コンテンツをスクロールさせると、ロービジョンの利用者または認知障害を持つ利用者にとって読解が困難または不可能になる場合がある。また、利用者によっては、スクロールの動きに気を取られてしまい、ウェブページの他の部分に集中できなくなる場合がある。</p></div><h3 class="small-head" id="FLASH35-examples">事例</h3><h4 class="small-head" id="FLASH35-ex1">事例 1: スクロールの一時停止と再開を行うためのトグルボタン</h4><div class="example"><div class="textbody"><p>この事例では、テキストを左から右にスクロールさせている。利用者がこのスクロール動作を停止および再開できるようにするためのトグルボタンが用意されている。また、スクロールの速度を落とすためのチェックボックスも用意されている。</p><div class="note"><p class="prefix"><em>注記: </em>スクロール速度のオプションについて、この事例で紹介されているよりも多くのオプションを希望する利用者もいる。こうした要求を満たすために、コンテンツ制作者はスライダやドロップダウンリストなどのコントロールを使用して、複数の速度オプションを提供することも可能である。</p></div></div><div class="code"><p><strong>コード例:</strong></p><pre><code>import fl.accessibility.ButtonAccImpl;
 import fl.accessibility.CheckBoxAccImpl;
 
 ButtonAccImpl.enableAccessibility();
@@ -1760,7 +1651,7 @@ function handleBtnClick(e) {
   e.target.label = scrollingPaused? "Resume Scrolling": "Stop Scrolling";
 }
 
-//slow down scrolling speed
+//スクロール速度を下げる
 function handleChkClick(e) {
   intervalLength = e.target.selected? 50: 15;
   if (! scrollingPaused) {
@@ -1769,7 +1660,7 @@ function handleChkClick(e) {
   }
 }
 
-//pause or resume scrolling
+//スクロールを一時停止または再開する
 function toggleScroll(noToggle: Boolean) {
   if (noToggle || scrollingPaused)
   scrollInterval = setInterval(moveText, intervalLength); else
@@ -1784,24 +1675,19 @@ function moveText() {
   scrollText.x -= 1;
 }
 
-//initiate scrolling
+//スクロールを開始する
 toggleScroll(false);
-</code></pre></div><div class="textbody"><p>The technique is demonstrated in the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.html" class="ex-ref">working version of A toggle button to pause and resume scrolling</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.fla" class="ex-ref">source of A toggle button to pause and resume scrolling</a> is available.</p></div></div><h3 id="FLASH35-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G4">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</a></li></ul></div><h3 id="FLASH35-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH35-procedure">チェックポイント</h4><p>When a Flash Movie contains scrolling content:</p><ol class="enumar"><li><p>Confirm that a button is provided that allows users to pause and resume the scrolling behavior</p></li><li><p>Confirm that pressing the button stops the scrolling</p></li><li><p>Confirm that pressing the button again restarts the scrolling</p></li></ol><h4 class="small-head" id="FLASH35-results">判定基準</h4><ul><li><p>Checks #1, #2, and #3 are true.</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH36" id="FLASH36"> </a>FLASH36: 点滅を制御し、5 秒以内に点滅を停止させるために、スクリプトを使用する</h2><div class="applicability"><h3 id="FLASH36-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
+</code></pre></div><div class="textbody"><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.html">スクロールの一時停止と再開を行うためのトグルボタンのサンプル（英語）</a>で確認できる。また、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.fla">スクロールの一時停止と再開を行うためのトグルボタンのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 id="FLASH35-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G4">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</a></li></ul></div><h3 id="FLASH35-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH35-procedure">チェックポイント</h4><p>Flash ムービーにスクロールするコンテンツが含まれている場合、次のことを確認する。</p><ol class="enumar"><li><p>利用者がスクロールを一時停止したり再開したりすることのできるボタンが提供されている。</p></li><li><p>ボタンを押すと、スクロールが停止する。</p></li><li><p>もう一度ボタンを押すと、スクロールが再開する。</p></li></ol><h4 class="small-head" id="FLASH35-results">判定基準</h4><ul><li><p>1., 2. および 3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="FLASH36" id="FLASH36"> </a>FLASH36: 点滅を制御し、5 秒以内に点滅を停止させるために、スクリプトを使用する</h2><div class="applicability"><h3 id="FLASH36-applicability">適用（対象）</h3><div class="textbody"><ul><li><p>Adobe Flash Professional バージョン MX 以降</p></li><li><p>Adobe Flex</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#time-limits-pause">
 						How to Meet 2.2.2 (一時停止、停止、非表示)
 					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.36.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH36">FLASH36に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH36-description">解説</h3><div class="textbody"><p>The objective of this technique is to control blinking with script
-    				so it can be set to stop in less than five seconds by the script. The
-    				ActionScript <code>setTimeout()</code> method is used to stop the MovieClip's blinking
-    				behavior in less than 5 seconds. </p></div><h3 class="small-head" id="FLASH36-examples">事例</h3><h4 class="small-head" id="FLASH36-ex1">事例 1: Stopping blinking after a timeout</h4><div class="example"><div class="textbody"><p>In this example a MovieClip (blinkingTextMC) uses its timeline to
-    						generate a blinking effect. Before 5 seconds has passed, the MovieClip's
-    						<code>gotoAndStop()</code> method is called, which stops the blinking effect. </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>setTimeout(stopBlinking, 4500);
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.36.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="/WAI/WCAG20/Techniques/ua-notes/flash#FLASH36">FLASH36に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#flash_notes">Flash テクノロジーノート</a>も参照。</p></div><h3 id="FLASH36-description">解説</h3><div class="textbody"><p>この実装方法の目的は、スクリプトを使用して点滅を制御し、点滅を 5 秒以内に停止させることである。ActionScript の <code>setTimeout()</code> メソッドを使用して、ムービークリップの点滅動作を 5 秒以内に停止させる。</p></div><h3 class="small-head" id="FLASH36-examples">事例</h3><h4 class="small-head" id="FLASH36-ex1">事例 1: タイムアウト後に点滅を停止させる</h4><div class="example"><div class="textbody"><p>この事例では、ムービークリップ（blinkingTextMC）でタイムラインを使用して点滅効果を生成している。5 秒経過する前にムービークリップの <code>gotoAndStop()</code> メソッドが呼び出され、このメソッドにより点滅が停止する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>setTimeout(stopBlinking, 4500);
 function stopBlinking() {
   var blinkingTextMC = getChildByName('blinkingTextMC');
   blinkingTextMC.gotoAndStop(1);
 }
-</code></pre></div><div class="textbody"><p>For a demonstration, view the <a href="/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.html" class="ex-ref">working version of Stopping blinking after a timeout</a>. The <a href="/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.fla" class="ex-ref">source of Stopping blinking after a timeout</a> is available. </p></div></div><h3 id="FLASH36-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH36-procedure">チェックポイント</h4><p>For each instance of blinking content: </p><ol class="enumar"><li><p> Start a timer for 5 seconds at the start of the blink effect. </p></li><li><p> When the timer expires, determine if the blinking has stopped. </p></li></ol><h4 class="small-head" id="FLASH36-results">判定基準</h4><ul><li><p> For each instance of blinking content, #2 is true. </p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><hr class="divider" title="End of techniques"/></div></div></div><div class="back"> <div class="div1">
+</code></pre></div><div class="textbody"><p>この実例は、<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.html">タイムアウト後に点滅を停止させるのサンプル（英語）</a>で確認できる。<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.fla">タイムアウト後に点滅を停止させるのソース（英語）</a>をダウンロードすることもできる。</p></div></div><h3 id="FLASH36-tests">検証</h3><div class="textbody"><h4 class="small-head" id="FLASH36-procedure">チェックポイント</h4><p>点滅するコンテンツのインスタンスすべてについて、次のことを確認する。</p><ol class="enumar"><li><p>点滅が開始したら 5 秒経過するまで待つ。</p></li><li><p>5 秒経過した時点で、点滅が停止する。</p></li></ol><h4 class="small-head" id="FLASH36-results">判定基準</h4><ul><li><p>点滅するコンテンツのインスタンスすべてについて、2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><hr class="divider" title="End of techniques"/></div></div></div><div class="back"> <div class="div1">
 		<dl class="slicerefs"><dt class="label"><a name="CSS1" id="CSS1"/>CSS1</dt><dd>"Cascading Style Sheets, level 1," B. Bos, H. Wium Lie, eds., W3C Recommendation 17 Dec 1996, revised 11 Jan 1999. Available at <a href="http://www.w3.org/TR/REC-CSS1/">http://www.w3.org/TR/REC-CSS1/</a>.</dd><dt class="label"><a name="CSS2" id="CSS2"/>CSS2</dt><dd>"Cascading Style Sheets, level 2," B. Bos, H. Wium Lie, C. Lilley, and I. Jacobs, eds., W3C Recommendation 12 May 1998. Available at <a href="http://www.w3.org/TR/CSS2/">http://www.w3.org/TR/CSS2/</a>.</dd><dt class="label"><a name="CSS21" id="CSS21"/>CSS21</dt><dd>"Cascading Style Sheets, level 2 revision 1,"  B. Bos, T. Çelik,  I. Hickson,   H. Wium Lie, eds., W3C Candidate Recommendation 25 February 2004.  Available at:  <a href="http://www.w3.org/TR/CSS21/">http://www.w3.org/TR/CSS21/</a>
 				        </dd><dt class="label"><a name="CSS3" id="CSS3"/>CSS3</dt><dd>
 					          <a href="http://www.w3.org/Style/CSS/current-work#table"><cite>[CSS 2.1 and CSS 3] Roadmap</cite></a>, CSS WG's table of modules and publication dates.</dd><dt class="label"><a name="FLASH" id="FLASH"/>FLASH</dt><dd>"Flash", Adobe Systems. Available at <a href="http://www.adobe.com/devnet/swf.html">http://www.adobe.com/devnet/swf.html</a>.</dd><dt class="label"><a name="HTML4" id="HTML4"/>HTML4</dt><dd>"HTML 4.01 Specification," D. Raggett, A. Le Hors, I. Jacobs, eds.,  W3C Recommendation 24 December 1999. Available at <a href="http://www.w3.org/TR/html401/">http://www.w3.org/TR/html401/</a>
