@@ -13,18 +13,13 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to control blinking with script
-    				so it can be set to stop in less than five seconds by the script. The
-    				ActionScript <function>setTimeout()</function> method is used to stop the MovieClip's blinking
-    				behavior in less than 5 seconds. </p>
+      <p>この実装方法の目的は、スクリプトを使用して点滅を制御し、点滅を 5 秒以内に停止させることである。ActionScript の <function>setTimeout()</function> メソッドを使用して、ムービークリップの点滅動作を 5 秒以内に停止させる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Stopping blinking after a timeout</head>
+         <head>タイムアウト後に点滅を停止させる</head>
          <description>
-            <p>In this example a MovieClip (blinkingTextMC) uses its timeline to
-    						generate a blinking effect. Before 5 seconds has passed, the MovieClip's
-    						<function>gotoAndStop()</function> method is called, which stops the blinking effect. </p>
+            <p>この事例では、ムービークリップ（blinkingTextMC）でタイムラインを使用して点滅効果を生成している。5 秒経過する前にムービークリップの <function>gotoAndStop()</function> メソッドが呼び出され、このメソッドにより点滅が停止する。</p>
          </description>
          <code xml:space="preserve"><![CDATA[setTimeout(stopBlinking, 4500);
 function stopBlinking() {
@@ -33,30 +28,30 @@ function stopBlinking() {
 }
 ]]></code>
          <description>
-            <p>For a demonstration, view the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="control_blinking_with_script_as3.html"
-                    linktype="examples">working version of Stopping blinking after a timeout</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="control_blinking_with_script_as3.fla"
-                    linktype="examples">source of Stopping blinking after a timeout</loc> is available. </p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.html"><!--
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのサンプル（英語）</loc>で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.fla"><!--
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
    <tests>
       <procedure>
-         <p>For each instance of blinking content: </p>
+         <p>点滅するコンテンツのインスタンスすべてについて、次のことを確認する。</p>
          <olist>
             <item>
-               <p> Start a timer for 5 seconds at the start of the blink effect. </p>
+               <p>点滅が開始したら 5 秒経過するまで待つ。</p>
             </item>
             <item>
-               <p> When the timer expires, determine if the blinking has stopped. </p>
+               <p>5 秒経過した時点で、点滅が停止する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> For each instance of blinking content, #2 is true. </p>
+               <p>点滅するコンテンツのインスタンスすべてについて、2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -68,3 +63,4 @@ function stopBlinking() {
 					</source>
    </admin>
 </technique>
+

@@ -14,33 +14,17 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to specify the width and/or height
-    				of an embedded Flash object using relative units such as <unit>em</unit> values.
-    				The size of the Flash object is allowed to expand to fill the size
-    				of its container (a parent element) by setting the movie width and
-    				height to 100%. The container's width and height is set with relative
-    				units. This will allow user agents that support text resizing to resize
-    				the Flash object in line with changes in text size settings. When the
-    				Flash object's dimensions are adjusted its contents will be scaled,
-    				making it easier to read for low vision users. </p>
+      <p>この実装方法の目的は、<unit>em</unit> の値など相対的な単位を使用して、埋め込みの Flash オブジェクトの幅や高さを指定することである。Flash オブジェクトのサイズは、ムービーの幅と高さを 100% に設定することによって、コンテナ（親要素）のサイズに合わせて拡大することができる。コンテナの幅と高さは、相対的な単位を使用して設定する。これにより、テキストサイズの変更をサポートするユーザーエージェントは、テキストサイズの設定の変更に応じて Flash オブジェクトのサイズを変更することが可能になる。Flash オブジェクトのサイズが調整されると、そのコンテンツが拡大または縮小され、ロービジョンの利用者でも読みやすくなる。</p>
       <note>
-         <p>This technique is not necessary to support users who use zoom
-    				functionality in their browsers. </p>
+         <p>この実装方法では、ブラウザでズーム機能を使用する利用者をサポートする必要はない。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head>Scaling text while keeping a minimum size</head>
+         <head>テキストのサイズを変更する（最低限のサイズは維持する）</head>
          <description>
-            <p>In this example, a Flash object is loaded into an HTML document using <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject's
-    						dynamic publishing method</loc>. The Flash object's container element
-    						is given a class name of "flashPlaceHolder". This class
-    						name is then targeted using CSS to set its width and height using
-    						relative em values. When the user increases or decreases the browser's
-    						text size, the Flash object will scale accordingly. To ensure that
-    						the object does not become too small when text size is decreased,
-    						the <prop>min-width</prop> and <prop>min-height</prop> properties are set to the default dimensions. </p>
+            <p>この事例では、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject による動的なパブリッシュ手法（英語）</loc>を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <prop>min-width</prop> および <prop>min-height</prop> プロパティを設定している。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -73,11 +57,11 @@
 </html>
 ]]></code>
          <description>
-            <p>The result of this technique can be viewed in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="scale_movie_dimensions_on_text_resize_as3.html"
-                    linktype="examples">working version of Scaling text while keeping a minimum size</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="scale_movie_dimensions_on_text_resize_as3.fla"
-                    linktype="examples">source of Scaling text while keeping a minimum size</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.html"><!--
+                    linktype="examples"-->テキストのサイズを変更する（最低限のサイズは維持する）のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.fla"><!--
+                    linktype="examples"-->テキストのサイズを変更する（最低限のサイズは維持する）のソース（英語）</loc>をダウンロードすることもできる。</p>
             <!--<ednote>
 								<edtext>The test zip contained a "swfobject" folder, which contained a number of files that looked redundant. Not sure if it needs to be packaged with the above .fla file, for the moment it's omitted.</edtext>
 							</ednote>-->
@@ -91,19 +75,17 @@
       <procedure>
          <olist>
             <item>
-               <p> Open a web page containing an embedded flash object </p>
+               <p>Flash オブジェクトが埋め込まれているウェブページを開く。</p>
             </item>
             <item>
-               <p> View the HTML to confirm that the width and height dimensions
-    					for the object containing the Flash object are specified using relative
-    					units such as em or percent (%). </p>
+               <p>HTML ソースコードで、Flash オブジェクトが格納されているオブジェクトの幅および高さのサイズが、em またはパーセント（%）などの相対的な単位で指定されている</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> Check #2 is true. </p>
+               <p>2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -115,3 +97,4 @@
 					</source>
    </admin>
 </technique>
+

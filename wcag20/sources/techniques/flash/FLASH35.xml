@@ -15,26 +15,15 @@
    <description><!--<ednote>
 						<edtext>The wiki indicated this applies to 2.2.1 but that doesn't seem right because it's just about scrolling, removed that.</edtext>
 					</ednote>-->
-      <p>The objective of this technique is to provide a way for users to stop
-    				scrolling content when the scrolling is created by a script. Scrolling
-    				content can be difficult or impossible to read by users with low vision
-    				or with cognitive disabilities. The movement can also be distracting
-    				for some people making it difficult for them to concentrate on other
-    				parts of the Web page. </p>
+      <p>この実装方法の目的は、コンテンツのスクロールがスクリプトによって生成された場合に、そのスクロールを停止する方法を利用者に提供することである。コンテンツをスクロールさせると、ロービジョンの利用者または認知障害を持つ利用者にとって読解が困難または不可能になる場合がある。また、利用者によっては、スクロールの動きに気を取られてしまい、ウェブページの他の部分に集中できなくなる場合がある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>A toggle button to pause and resume scrolling</head>
+         <head>スクロールの一時停止と再開を行うためのトグルボタン</head>
          <description>
-            <p>In this example, text scrolls from left to right. A toggle button
-    						is provided that allows the user to pause and resume the scrolling
-    						behavior. Additionally, a checkbox is provided which can be used to
-    						slow down the scrolling speed. </p>
+            <p>この事例では、テキストを左から右にスクロールさせている。利用者がこのスクロール動作を停止および再開できるようにするためのトグルボタンが用意されている。また、スクロールの速度を落とすためのチェックボックスも用意されている。</p>
             <note>
-               <p>Users may prefer a greater variety of scrolling speed options
-    						than are offered in this example. Developers might choose to provide
-    						several speed choices with a slider or drop down list control in order
-    						to accomplish this. </p>
+               <p>スクロール速度のオプションについて、この事例で紹介されているよりも多くのオプションを希望する利用者もいる。こうした要求を満たすために、コンテンツ制作者はスライダやドロップダウンリストなどのコントロールを使用して、複数の速度オプションを提供することも可能である。</p>
             </note>
          </description>
          <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl;
@@ -60,7 +49,7 @@ function handleBtnClick(e) {
   e.target.label = scrollingPaused? "Resume Scrolling": "Stop Scrolling";
 }
 
-//slow down scrolling speed
+//スクロール速度を下げる
 function handleChkClick(e) {
   intervalLength = e.target.selected? 50: 15;
   if (! scrollingPaused) {
@@ -69,7 +58,7 @@ function handleChkClick(e) {
   }
 }
 
-//pause or resume scrolling
+//スクロールを一時停止または再開する
 function toggleScroll(noToggle: Boolean) {
   if (noToggle || scrollingPaused)
   scrollInterval = setInterval(moveText, intervalLength); else
@@ -84,15 +73,15 @@ function moveText() {
   scrollText.x -= 1;
 }
 
-//initiate scrolling
+//スクロールを開始する
 toggleScroll(false);
 ]]></code>
          <description>
-            <p>The technique is demonstrated in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="pause_scrolling_as3.html"
-                    linktype="examples">working version of A toggle button to pause and resume scrolling</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="pause_scrolling_as3.fla"
-                    linktype="examples">source of A toggle button to pause and resume scrolling</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.html"><!--
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.fla"><!--
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -101,23 +90,23 @@ toggleScroll(false);
    </related-techniques>
    <tests>
       <procedure>
-         <p>When a Flash Movie contains scrolling content:</p>
+         <p>Flash ムービーにスクロールするコンテンツが含まれている場合、次のことを確認する。</p>
          <olist>
             <item>
-               <p>Confirm that a button is provided that allows users to pause and resume the scrolling behavior</p>
+               <p>利用者がスクロールを一時停止したり再開したりすることのできるボタンが提供されている。</p>
             </item>
             <item>
-               <p>Confirm that pressing the button stops the scrolling</p>
+               <p>ボタンを押すと、スクロールが停止する。</p>
             </item>
             <item>
-               <p>Confirm that pressing the button again restarts the scrolling</p>
+               <p>もう一度ボタンを押すと、スクロールが再開する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Checks #1, #2, and #3 are true.</p>
+               <p>1., 2. および 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -129,3 +118,4 @@ toggleScroll(false);
 					</source>
    </admin>
 </technique>
+

@@ -17,83 +17,51 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>Except for the <obj>CheckBox</obj> and <obj>RadioButton</obj> component, the built in Flash
-    				components are not automatically provided an associated label. For
-    				these components, label text has to be placed adjacent to their control
-    				manually, using the <obj>Label</obj> component. If the 'auto-label' feature is
-    				enabled in the Accessibility panel, then the Flash Player will automatically
-    				associate the label text for the <obj>TextInput</obj> and <obj>TextArea</obj> components.
-    				This means that for these components, it is not necessary to duplicate
-    				the label text for the control using the Accessibility panel. The auto
-    				label feature is enabled by default. </p>
-      <p>Additionally, the auto label feature will enable the Flash Player
-    				to automatically add text contained by Button symbols as the symbol's
-    				accessible name. This will only work if the Button symbol only consists
-    				of one layer, containing the text label. </p>
+      <p><obj>CheckBox</obj> コンポーネントおよび <obj>RadioButton</obj> コンポーネント以外の Flash 標準コンポーネントでは、関連付けられたラベルが自動的に提供されることはない。これらのコンポーネントについては、<obj>Label</obj> コンポーネントを使用して、コントロールの隣にラベルテキストを手動で配置する必要がある。アクセシビリティパネルで「自動ラベル」機能を有効にしてある場合は、<obj>TextInput</obj> コンポーネントおよび <obj>TextArea</obj> コンポーネントについては Flash Player が自動的にラベルテキストを関連付ける。つまり、これらのコンポーネントでは、アクセシビリティパネルを使用してコントロールのラベルテキストを複製する必要はない。自動ラベル機能はデフォルトで有効になっている。</p>
+      <p>また、自動ラベル機能によって、Flash Player はボタンシンボルに含まれているテキストをシンボルのアクセシブルな名前として自動的に追加することが可能になる。これは、ボタンシンボルがテキストラベルを含む一つのレイヤーだけで構成されている場合のみ有効である。</p>
       <note>
-         <p>Since auto-labeling associates labels without human intervention
-    				the accuracy of the association should be verified. For more predictable
-    				results authors are encouraged to explicitly add labels to all controls. </p>
+         <p>自動ラベル機能は人間が操作することなくラベルを関連付けるため、関連付けの正確性を検証する必要がある。予測可能な結果を得るためには、すべてのコントロールに対して明示的にラベルを追加することが推奨される。</p>
       </note>
-      <p>To auto labeling, perform the following steps: </p>
+      <p>次の手順で自動ラベル機能を利用する。</p>
       <olist>
          <item>
-            <p> Ensure that the textual descriptions for each form control within
-    				the flash application are placed adjacent to the control itself. Text
-    				eligible to be used for auto-labeling must not be set to be hidden
-    				from assistive technology. </p>
+            <p>Flash アプリケーションに含まれる各フォーム・コントロールの近くに、説明テキストが配置されていることを確認する。自動ラベル機能で使用されるテキストは、支援技術からアクセス可能にする必要がある。</p>
          </item>
          <item>
-            <p> Select the movie stage, and open the Accessibility panel. </p>
+            <p>ムービーステージを選択し、アクセシビリティパネルを開く。</p>
          </item>
          <item>
-            <p> Ensure that the 'Auto Label' option is checked. This will automatically
-    					associate labels with their TextInput and TextArea controls, and
-    					add text inside custom button symbols as their accessible name. </p>
+            <p>「自動ラベル」オプションがオンになっていることを確認する。この結果、TextInput コントロールおよび TextArea コントロールにラベルが自動的に関連付けられ、カスタムボタンシンボル内のテキストがアクセシブルな名前として追加される。</p>
          </item>
          <item>
-            <p> If the auto label behavior is inappropriate to your Flash content,
-    						uncheck the 'Auto label' option, and ensure that each control receives
-    						a meaningful 'name' value in the Accessibility panel. </p>
+            <p>自動ラベル動作が適さない Flash コンテンツの場合は「自動ラベル」オプションをオフにし、アクセシビリティパネルで各コントロールに分かりやすい「名前」の値を設定する。</p>
          </item>
          <item>
-            <p> To disable auto labeling for a particular object but not the whole
-    							movie, convert the text to the 'dynamic text' type using the 'Property
-    							inspector'. Then select it, and uncheck its 'Make object accessible'
-    							option in the Accessibility panel. </p>
+            <p>自動ラベル機能を、ムービー全体に対してでなく特定のオブジェクトに対して無効にするには、プロパティインスペクタを使用してテキストのタイプを「ダイナミックテキスト」に変更する。次にそのテキストを選択し、アクセシビリティパネルで「オブジェクトをアクセス可能にする」オプションをオフにする。</p>
          </item>
       </olist>
       <note>
-         <p>As an alternative to using the Accessibility panel, the auto
-    				label feature can also be turned off by setting the <prop>AccessibilityProperties.noAutoLabel</prop>
-    				to <propval>true</propval> for the stage object. </p>
+         <p>アクセシビリティパネルを使用する以外にも、ステージオブジェクトの <prop>AccessibilityProperties.noAutoLabel</prop> を <propval>true</propval> に設定することによって自動ラベル機能をオフにすることができる。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head>Using the "Auto Label" option in the Accessibility panel</head>
+         <head>アクセシビリティパネルで「自動ラベル」オプションを使用する</head>
          <description>
-            <p>This example shows two TextInput components, a TextArea component
-    						and a custom button symbol instance. For the TextInput components,
-    						a separate label element has been placed to the left of the control.
-    						For the TextArea component, the label has been placed above the control.
-    						For the custom button, the label text is placed inside the button symbol.
-    						Because the "Auto Label" option is enabled in the Accessibility
-    						panel, all these controls will be provided an accessible name based
-    						on their label. </p>
-            <p>The screenshot below illustrates the example: <image>
+            <p>この事例では、二つの TextInput コンポーネントと、TextArea コンポーネントとカスタムボタンシンボルのインスタンスが一つずつ表示される。各 TextInput コンポーネントには、コントロールの左に個別のラベル要素が配置されている。TextArea コンポーネントには、コントロールの上にラベルが配置されている。カスタムボタンには、ボタンシンボルの内部にラベルテキストが配置されている。アクセシビリティパネルで「自動ラベル」オプションを有効にしているため、すべてのコントロールに対してラベルに基づいたアクセシブルな名前が提供される。</p>
+            <p>次のスクリーンショットは、この事例を示したものである。 <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
-                       source="/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_label.png"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_label.png"
                        height="300"
                        width="593"/>
-                  <alt>Using the Auto Label feature in the Flash Authoring Environment</alt>
+                  <alt>画面スクリーンショット：Flashオーサリング環境で自動ラベル機能を使用</alt>
                </image>
 							     </p>
-            <p>The results of this technique can be viewed in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="using_auto_labeling_to_associate_label_text_with_controls_as3.html"
-                    linktype="examples">working version of Using the "Auto Label" option in the Accessibility panel</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="using_auto_labeling_to_associate_label_text_with_controls_as3.fla"
-                    linktype="examples">source of Using the "Auto Label" option in the Accessibility panel</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.html"><!--
+                    linktype="examples"-->アクセシビリティパネルで「自動ラベル」オプションを使用するのサンプル（英語）で確認できる。</loc>また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.fla"><!--
+                    linktype="examples"-->アクセシビリティパネルで「自動ラベル」オプションを使用するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -102,23 +70,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>If a Flash form contains TextInput or TextArea components, or custom
-    					button symbols with text labels, confirm that: </p>
+         <p>Flash フォームに TextInput コンポーネント、TextArea コンポーネント、またはテキストラベルを使用したカスタムボタンシンボルが含まれている場合、次のことを確認する。</p>
          <olist>
             <item>
-               <p> The Auto Label option is enabled in the movie's Accessibility
-    					panel </p>
+               <p>ムービーのアクセシビリティパネルで「自動ラベル」オプションが有効になっている。</p>
             </item>
             <item>
-               <p> Use a screen reader or MSAA checker to ensure that the label text
-    					is indeed exposed as the control's accessible name </p>
+               <p>スクリーンリーダーまたは MSAA チェッカーを使用して確認すると、ラベルテキストがコントロールのアクセシブルな名前として実際に利用されている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> #1 and #2 are true </p>
+               <p>1. および 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
@@ -130,3 +95,4 @@
 					</source>
    </admin>
 </technique>
+

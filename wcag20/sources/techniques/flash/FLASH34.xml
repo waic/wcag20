@@ -13,41 +13,19 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>The intent of this technique is to prevent sounds from playing when
-    				the Flash movie loads. This is useful for those who utilize assistive
-    				technologies (such as screen readers, screen magnifiers, switch mechanisms,
-    				etc.) and those who may not (such as those with cognitive, learning
-    				and language disabilities). By default, the sound will be played automatically.
-    				When a screen reader such as JAWS is detected however, the sound will
-    				have to be started manually. </p>
-      <p>To perform screen reader detection, Flash provides the <prop>flash.accessibility.Accessibility.active</prop>
-    				property. If this property is set to <propval>true</propval>, it means that the Flash
-    				player has detected running assistive technology. Based on this flag,
-    				the Flash developer can choose to run different functionality. </p>
+      <p>この実装方法の目的は、Flash ムービーがロードされたときに音声が再生されないようにすることである。これは、スクリーンリーダー、スクリーン拡大鏡、スイッチメカニズムなどの支援技術の利用者や支援技術を使用しない利用者（認知障害、学習障害、言語障害を持つ人々）に役立つ。デフォルトでは、音声は自動的に再生される。ただし、JAWS などのスクリーンリーダーが検出された場合は、音声は手動で開始される必要がある。</p>
+      <p>Flash は、スクリーンリーダーを検出するための <prop>flash.accessibility.Accessibility.active</prop> プロパティを提供している。このプロパティが <propval>true</propval> に設定されている場合は、支援技術が実行されていることを Flash Player が検出したことを意味する。このフラグに基づいて、Flash のコンテンツ制作者は別の機能を実行するように選択できる。</p>
       <note>
-         <p>The Flash Player requires some time to detect active assistive
-    				technology and set the <prop>Accessibility.active</prop> property. To get accurate
-    				results, do not check for this property immediately on the first frame
-    				of the movie. Instead, perform the check 5 frames in or based on a
-    				timed event. </p>
-         <p>Not every screen reader will be detected using this mechanism.
-    				In general, the property will be set to true when any  <abbr expansion="Microsoft Active Accessibility">MSAA</abbr> client
-    				is running. </p>
-         <p>Other assistive technology tools, including screen magnifiers,
-    				or tools not used as assistive technologies may also utilize MSAA in
-    				ways that result in <prop>Accessibility.active</prop> being set to <propval>true</propval>. </p>
+         <p>Flash Player が、実行されている支援技術を検出し、<prop>Accessibility.active</prop> プロパティを設定するまでには多少時間がかかる。したがって、正確な結果を得るためには、ムービーの最初のフレームですぐにこのプロパティをチェックしてはならない。5 フレーム後、またはタイムイベントを使用してチェックを行うようにする。</p>
+         <p>このメカニズムでは検出されないスクリーンリーダーも存在する。一般的に、このプロパティが true に設定されるのは、<abbr expansion="Microsoft Active Accessibility">MSAA</abbr> クライアントが実行されている場合である。</p>
+         <p>注記 3: 他の支援技術ツール（スクリーン拡大鏡など）、または支援技術としては使用されないツールの中にも MSAA を利用するものがあり、その結果として <prop>Accessibility.active</prop> が <propval>true</propval> に設定される場合がある。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head>A SoundHandler class</head>
+         <head>SoundHandler クラス</head>
          <description>
-            <p>A class called SoundHandler is created which automatically starts
-    						playing an MP3 file only when <prop>Accessibility.active</prop> is set to <propval>false</propval>.
-    						Note that this example also checks the <prop>flash.system.Capabilities.hasAccessibility</prop>
-    						property. This property does not check whether a screen reader is running,
-    						but instead indicates whether the Flash Player is running in an environment
-    						that supports MSAA (which basically means the Windows operating system). </p>
+            <p><prop>Accessibility.active</prop> が <propval>false</propval> に設定されている場合のみ自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。この事例では <prop>flash.system.Capabilities.hasAccessibility</prop> プロパティもチェックしていることに注意する。このプロパティはスクリーンリーダーが実行されているかどうかをチェックするものではなく、Flash Player が MSAA （基本的には Windows オペレーティングシステムを意味する）をサポートする環境で実行されているかどうかを示すものである。</p>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import flash.accessibility.Accessibility;
@@ -102,11 +80,11 @@
   }
 }]]></code>
          <description>
-            <p>This technique can be viewed in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="screen_reader_detection_to_prevent_autoplay_as3.html"
-                    linktype="examples">working version of A SoundHandler class</loc>. The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="screen_reader_detection_to_prevent_autoplay_as3.fla"
-                    linktype="examples">source of A SoundHandler class</loc> is available.</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.html"><!--
+                    linktype="examples"-->SoundHandler クラスのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.fla"><!--
+                    linktype="examples"-->SoundHandler クラスのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -135,21 +113,20 @@
       <procedure>
          <olist>
             <item>
-               <p> Start a screen reader that supports MSAA. </p>
+               <p>MSAA をサポートしているスクリーンリーダーを起動する。</p>
             </item>
             <item>
-               <p> Open a page containing a Flash movie that starts playing audio
-    					automatically when a screen reader is not running </p>
+               <p>スクリーンリーダーが実行されていない場合は、自動的に音声を再生する Flash ムービーが含まれているページを開く。</p>
             </item>
             <item>
-               <p> Confirm that the audio is stopped. </p>
+               <p>音声の再生が停止している。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <olist>
             <item>
-               <p> #3 is true </p>
+               <p>3. を満たしている。</p>
             </item>
          </olist>
       </expected-results>
@@ -161,3 +138,4 @@
 					</source>
    </admin>
 </technique>
+
