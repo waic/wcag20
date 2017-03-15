@@ -7,8 +7,7 @@
       <p>新しいウィンドウを開くウェブページ</p>
    </applicability>
    <applies-to>
-    <success-criterion idref="consistent-behavior-receive-focus"/>
-    <success-criterion idref="consistent-behavior-no-extreme-changes-context"/>
+	   <guideline idref="consistent-behavior" relationship="advisory"/>
    </applies-to>
    <description>
     <p>この達成方法の目的は、ウェブコンテンツ内で新しいウィンドウまたはタブを開くリンクまたはボタンの使用を限定することである。一般的に、新しいウィンドウやタブを開かないほうがよい。なぜなら、特に視覚的なコンテンツを知覚するのに困難を伴う利用者をはじめ、利用者にとっては混乱の原因となりうるからである。しかし、アクセシビリティの観点から、新しいウィンドウやタブを開くことが望ましい状況というのもある。例えば、次の二つのような場合である：</p>
