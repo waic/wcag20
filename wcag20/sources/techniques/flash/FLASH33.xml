@@ -24,7 +24,7 @@
          <head>テキストのサイズを変更する（最低限のサイズは維持する）</head>
          <description>
             <p>この事例では、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject による動的なパブリッシュ手法（英語）</loc>を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <prop>min-width</prop> および <prop>min-height</prop> プロパティを設定している。</p>
+                    href="https://github.com/swfobject/swfobject">SWFObject による動的なパブリッシュ手法（英語）</loc>を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <prop>min-width</prop> および <prop>min-height</prop> プロパティを設定している。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -81,10 +81,10 @@
 ]]></code>
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="adding_captions_to_Flash_video_as3.html"
-                    linktype="examples">Timed Textのキャプションファイルを Flash に追加する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="adding_captions_to_Flash_video_as3.zip"
-                    linktype="examples">Timed Textのキャプションファイルを Flash に追加する」のサンプル</loc>をダウンロードすることもできる。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.html"><!--
+                    linktype="examples"-->Timed Textのキャプションファイルを Flash に追加する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.zip"><!--
+                    linktype="examples"-->Timed Textのキャプションファイルを Flash に追加する」のサンプル</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

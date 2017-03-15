@@ -65,7 +65,7 @@
          <head>埋め込まれた Flash のみに言語を適用する</head>
          <description>
             <p>この事例では、Flash ムービーのコンテンツをフランス語に定義する。Flash ムービーは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://code.google.com/p/swfobject/wiki/documentation#How_to_embed_Flash_Player_content_using_SWFObject_static_publish">SWFObject's SWFObject による静的なパブリッシュ手法（英語）</loc>を使用して埋め込まれている。この手法では 二つのネストした object 要素が使用され、外側の要素は Internet Explorer 向け、内側の要素はその他のブラウザ向けである。このため、lang 属性および xml:lang 属性を二つ追加する必要がある。</p>
+                    href="https://github.com/swfobject/swfobject">SWFObject's SWFObject による静的なパブリッシュ手法（英語）</loc>を使用して埋め込まれている。この手法では 二つのネストした object 要素が使用され、外側の要素は Internet Explorer 向け、内側の要素はその他のブラウザ向けである。このため、lang 属性および xml:lang 属性を二つ追加する必要がある。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
   height="420" id="myMovie" lang="fr" width="780" xml:lang="fr">

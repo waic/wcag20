@@ -97,8 +97,8 @@
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.html"><!--
                     linktype="examples"-->2 カラムレイアウトでタブ順序を制御するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.fla"
-                    linktype="examples">2 カラムレイアウトでタブ順序を制御するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.fla"><!--
+                    linktype="examples"-->2 カラムレイアウトでタブ順序を制御するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

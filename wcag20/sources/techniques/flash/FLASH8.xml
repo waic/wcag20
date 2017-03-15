@@ -223,10 +223,10 @@ addChild(myFieldSet);
 ]]></code>
          <description>
             <p>このアプローチの実例については、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="grouped_form_controls.html"
-                    linktype="examples">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="grouped_form_controls.zip"
-                    linktype="examples">プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</loc>がダウンロードできる。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html"><!--
+                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla"><!--
+                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</loc>がダウンロードできる。</p>
             <note>
                <p>Adobe Flex を使用すれば、&lt;form&gt;, &lt;formitem&gt; および &lt;formheading&gt; 要素を使用して、このタイプの動作を実現できる。</p>
             </note>
