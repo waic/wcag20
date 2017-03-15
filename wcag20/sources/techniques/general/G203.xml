@@ -4,30 +4,24 @@
 <technique id="G203">
    <short-name>話者が話すのみの映像を説明するために、静的な代替テキストを使用する</short-name>
    <applicability>
-      <p>Videos of only a speaker</p>
+      <p>話者が話すのみの映像</p>
    </applicability>
    <applies-to>
       <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
       <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
    </applies-to>
    <description>
-      <p>The purpose of this technique is to provide an alternative to audio description for synchronized media that has no important time based information contained in the video portion of the media. This particularly applies to "talking head" videos where a person is talking in front of an unchanging background, such as a press conference, company president talk, or government announcement, etc. In this case there are no "important visual details" which would warrant audio description.
-    			</p>
-      <p>Audio description is not necessary when there is one person speaking against an unchanging background because there is no time-based visual information in the video that is "important" to the understanding of the content. The environment is static and therefore can be described in a non-multimedia static format such as alternative text that is programmatically associated with the video.
-    			</p>
-      <p>All that is necessary in this case is a static text alternative which would contain a general description of the context of the environment, any opening/closing credits, any text that appears in the bottom of the video with the name of the speaker, and other basic information, if these are seen on the screen and cannot be heard in the audio.
-    			</p>
-      <p>This technique does NOT apply to a situation where there are multiple speakers and where the identity of each new speaker is not evident in the audio track but is identified on screen with visual text as they speak. In this case, audio description should be used, and this  technique would not apply.
-    			</p>
+      <p>この達成方法の目的は、映像部分に含まれる、重要なタイムベースの情報がない同期されたメディアの音声についての解説に対する代替手段を提供することである。これは、特に、記者会見や社長の会見、政府の公式発表などの変化しない背景の前で話している人物の「語り手の顔」のビデオを指す。この場合、音声解説が保障するであろう「重要な視覚的詳細情報」はない。</p>
+      <p>一人の人物が変化しない背景の前で話している場合は、音声解説は必ずしも必要ない。なぜなら、この映像には、内容を理解するために「重要」な時間依存の視覚的情報がないためである。周囲の状況が変化しないため、映像にプログラム的に関連付けられた代替テキストのような、マルチメディアではない静的なフォーマットで記述できる。</p>
+      <p>この場合、静的なテキストによる代替を用意し、周囲の状況や文脈の説明、オープニング/クロージングクレジット、語り手の名前、その他基本的な情報など、画面に映りながら音声として聞くことができないものの一般的な解説をすれば足りる。</p>
+      <p>この達成方法は、複数の語り手がおり、音声ではそれぞれの新しい語り手が明確でないが、視覚的なテキストで明確にされているような状況では適用されない。その場合は音声解説を用いるべきであり、この達成方法は適用されない。</p>
    </description>
    <examples>
       <eg-group>
-         <head>A video of a CEO speaking to shareholders</head>
+         <head>事例１： 株主に語りかけているCEOの映像</head>
          <description>
-            <p>A CEO is speaking to shareholders from his office. The video has a title page at the beginning of the video giving the date. When the speaker begins, there is a strip of text at the bottom of the video saying "John Doe, President of XYZ Cooperation". At the end of the video are title credits that say "produced by the Honest TV Productions Ltd."
-    					</p>
-            <p>As an alternative, there is a paragraph below the video which is associated with the video file using aria-describedby which says: "July 22, 2011, John Doe, President of XYZ cooperation, speaking from his office. Video produced by produced by the Honest TV Productions Ltd."
-    					</p>
+            <p>CEOがオフィスで株主に語りかけている。この映像の冒頭には、日付の入ったタイトルカットがある。話が始まると、映像の下部に「XYZ社 社長 John Doe」とテキストが出てくる。映像の最後には「制作 Honest TV Productions Ltd.」とタイトルクレジットが出てくる。</p>
+            <p>代替として、映像の下にaria-describedby属性で映像ファイルと関連づけられた段落があり、「6月22日 John Doe XYZ社 社長 オフィスにて撮影。Honest TV Productions Ltd.制作」と書かれている。</p>
          </description>
       </eg-group>
    </examples>
@@ -35,20 +29,17 @@
       <procedure>
          <olist>
             <item>
-               <p> Check that there is no important time-based information in the video track
-    				</p>
+               <p>映像トラックの中に時間依存の重要な情報がない。</p>
             </item>
             <item>
-               <p> Check that the programmatically associated description of the media contains any context of the content that is not contained in the audio track (e.g. speaker identification, credits, context)
-    				</p>
+               <p>そのメディアにプログラムで関連付けられた解説が、音声に含まれていない内容の文脈を説明している（例えば、語り手の紹介、クレジット、文脈など）。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p> All checks are true.
-    				</p>
+               <p>すべてを満たしている。</p>
             </item>
          </ulist>
       </expected-results>
