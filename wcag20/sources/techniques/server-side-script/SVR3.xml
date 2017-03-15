@@ -16,7 +16,7 @@
   </ua-issues>
   <description>
     <p>この達成方法の目的は、不適合及び適合したバージョンが両方提供されているときに、利用者がコンテンツのアクセシブルなバージョンを取得できることを保証することである。</p>
-    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="cc1" linktype="guideline">適合要件 1</loc>は、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替バージョン</loc>」がある限り、不適合なページが適合の範囲内に含まれることを認めている。コンテンツ制作者にとって、不適合なコンテンツの中から適合しているコンテンツへのアクセシビリティ・サポーテッドなリンクを含むことは常に可能とはいえない。そこで、不適合のバージョンへは適合しているページからしか到達できないようにするために、コンテンツ制作者はサーバサイドのスクリプト技術（例：PHP、ASP、JSP）に依存しなければならなくなる。</p>
+    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="cc1" linktype="guideline">適合要件 1</loc>は、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>」がある限り、不適合なページが適合の範囲内に含まれることを認めている。コンテンツ制作者にとって、不適合なコンテンツの中から適合しているコンテンツへのアクセシビリティ・サポーテッドなリンクを含むことは常に可能とはいえない。そこで、不適合のバージョンへは適合しているページからしか到達できないようにするために、コンテンツ制作者はサーバサイドのスクリプト技術（例：PHP、ASP、JSP）に依存しなければならなくなる。</p>
     <p>この達成方法は、不適合のコンテンツへは、適合しているページからしか到達できないことを保証するための、<code><![CDATA[HTTP referer]]></code> により提供される情報の利用方法について説明する。<code><![CDATA[HTTP referer]]></code> ヘッダはユーザエージェントによって設定され、（もしあれば）ユーザエージェントが不適合なページを参照する際のページの URI を含む。</p>
     <p>この方法を実装するために、コンテンツ制作者は不適合なページそれぞれについて、コンテンツの適合しているバージョンの URI を特定する。ページの不適合なバージョンへのリクエストを受け取った際に、サーバは <code><![CDATA[HTTP referer]]></code> ヘッダの値と、適合しているバージョンの URI を比較して、不適合バージョンへのリンクが適合しているバージョンからのものであるかどうかを判断する。不適合バージョンは <code><![CDATA[HTTP referer]]></code> が不適合バージョンの URI と一致したときにだけ提供される。それ以外の時には、利用者はコンテンツの適合したバージョンへとリダイレクトされる。HTTP リファラヘッダ内の URI を比較する際に、URI 中にクエリーや target のような関連のない変化も考慮に入れる必要があることに注意すべきである。</p>
   </description>
@@ -85,17 +85,17 @@ header("Location: conforming.php");
    </related-techniques>
    <tests>
       <procedure>
-      <p>不適合コンテンツに対して、WCAG に適合している代替バージョンが提供されている場合：</p>
+      <p>不適合コンテンツに対して、WCAG に適合している代替版が提供されている場合：</p>
       <olist>
         <item>
-          <p>宣言している適合レベルで WCAG に適合していないページで、HTTP リファラの使用によってアクセシブルな代替バージョンが提供されているものを特定する。</p>
+          <p>宣言している適合レベルで WCAG に適合していないページで、HTTP リファラの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
         </item>
         <item>
           <p>不適合のコンテンツの URI を開く。</p>
         </item>
         <item><p>開いたページが次のうちの一つである：</p>
-					<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合する代替バージョン</loc></p></item>
-          <item><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+					<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc></p></item>
+          <item><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
       </olist>
     </procedure>
     <expected-results>

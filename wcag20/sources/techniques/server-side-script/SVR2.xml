@@ -4,14 +4,14 @@
 <technique id="SVR2">
    <short-name>適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、.htaccess を使用する</short-name>
    <applicability>
-      <p>.htaccessをサポートしているウェブサーバー（一般的にはApache）内にあるコンテンツで、コンテンツの適合するバージョンが不適合のバージョンの代替として提供されているもの</p>
+      <p>.htaccessをサポートしているウェブサーバー（一般的にはApache）内にあるコンテンツで、コンテンツの適合版が不適合版の代替として提供されているもの</p>
    </applicability>
    <applies-to>
       <conformance-criterion idref="cc1" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAGに適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替バージョンが提供されていれば、そのサイト全体が適合していることになる。適合要件 4は代替バージョンが不適合なコンテンツ又はそのURIからたどることができることを要求している。</p>
-    <p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この達成方法では制作者が不適合のコンテンツにその代替バージョンとして提供されるURI、又は不適合のバージョンと代替バージョン双方へのリンクを含むページからしかアクセスできないようにするためにApacheのモジュール「mod_access」を使う方法について説明する。</p>
+    <p>この達成方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAGに適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替版が提供されていれば、そのサイト全体が適合していることになる。適合要件 4は代替版が不適合なコンテンツ又はそのURIからたどることができることを要求している。</p>
+    <p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この達成方法では制作者が不適合のコンテンツにその代替版として提供されるURI、又は不適合のバージョンと代替版双方へのリンクを含むページからしかアクセスできないようにするためにApacheのモジュール「mod_access」を使う方法について説明する。</p>
   </description>
    <examples>
       <eg-group>
@@ -89,13 +89,15 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
       <procedure>
       <olist>
         <item>
-          <p>宣言している適合レベルでWCAGに適合していないページで、.htaccessファイルの使用によってアクセシブルな代替バージョンが提供されているものを特定する。</p>
+          <p>宣言している適合レベルでWCAGに適合していないページで、.htaccessファイルの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
         </item>
         <item>
           <p>不適合のコンテンツのURIを開く。</p>
         </item>
         <item><p>結果となるページが次のうちのひとつである：</p>
-						<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合する代替バージョン</loc></p></item><item><p>適合する代替バージョンと不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+						<olist>
+						<item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc></p></item>
+						<item><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
       </olist>
     </procedure>
     <expected-results>
