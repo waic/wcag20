@@ -4,20 +4,20 @@
 <technique id="G204">
    <short-name>閲覧画面の幅を狭めたときに、ユーザエージェントによるテキストの折り返しを妨げない</short-name>
    <applicability>
-      <p>All technologies</p>
+      <p>全てのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="sufficient"/>
    </applies-to>
    <description>
-      <p>This technique helps avoid situations where horizontal scrolling may occur. Many people with cognitive disabilities and low vision users who do not use assistive technology have a great deal of trouble with blocks of text that require horizontal scrolling. It involves not interfering with the reflow of text if the window is narrowed. One of the best ways to do this is to define widths of text block containers in percentages.</p>
-      <p>HTML and XHTML user agents automatically reflow text as the browser window is narrowed as long as the author does not specify widths using absolute measurements such as pixels or points. </p>
+      <p>この達成方法は、横スクロールが起こる状況を回避することを助けるものである。ブロックやテキストの横スクロールは、支援技術を用いていない認識障害がある人々やロービジョンの利用者にとっては大きな問題となる。ウィンドウ幅が狭い時にテキストのリフローを妨げないことも含まれる。最善の方法のひとつは、テキストブロックコンテナの横幅をパーセントで定義することである。</p>
+      <p>制作者が横幅をピクセルやポイントなどの絶対値で定義していない限り、ウィンドウ幅が狭い時、HTML及びXHTMLユーザエージェントは自動的にテキストをリフローする。</p>
    </description>
    <examples>
       <eg-group>
          <description>
-            <p>A newspaper site includes articles with columns that adjust with the user agents window width. Users with cognitive disabilities can narrow the column to a width that makes it easier to read. </p>
+            <p>新聞社のサイトがユーザエージェントのウィンドウ幅に合わせたカラム数の記事を含んでいる。認知障害の利用者は、読みやすいようにカラムを狭めることができる。</p>
          </description>
       </eg-group>
    </examples>
@@ -40,23 +40,23 @@
       <procedure>
          <olist>
             <item>
-               <p>Open the content that contains a block of text in a common user agent. </p>
+               <p>一般的なユーザエージェントで、テキストブロックを含むコンテンツを開く。</p>
             </item>
 			<item>
-				<p>Check to see if the user agent has a setting that needs to be enabled to allow for reflow, and if so, enable it.</p>
+				<p>ユーザエージェントにリフローを許可する設定があるか確認し、あれば有効にする。</p>
 			</item>
             <item>
-               <p>Narrow the viewing window to 1/4 of the screen width. </p>
+               <p>ウィンドウ幅をスクリーン幅の1/4に縮める。</p>
             </item>
             <item>
-               <p>Check to see that the content does not require horizontal scrolling to read a line of text. </p>
+               <p>1行の文章を読むために、コンテンツを横スクロールする必要がない。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Check #4 is true.</p>
+               <p>4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
