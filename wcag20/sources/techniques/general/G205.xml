@@ -4,22 +4,22 @@
 <technique id="G205">
    <short-name>フォーム・コントロールの、色がついたラベルに対して、テキストによる手がかりを提供する</short-name>
    <applicability>
-      <p>All technologies that support color and text.</p>
+      <p>色とテキストをサポートするすべてのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
    </applies-to>
    <description>
-      <p>The objective of this technique is to combine color and text or character cues to convey information. Most users can quickly scan the content to locate information conveyed by using color differences. Users who cannot see color can look or listen for text cues; people using Braille displays or other tactile interfaces can detect text cues by touch.</p>
-      <p>The text cue must be included as part of the programmatically determinable name for the control.</p>
+      <p>この達成方法の目的は、情報を伝えるために、色と、テキスト又は文字による手がかりを併用することである。ほとんどの利用者は色の差を用いた情報を素早く認識できる。色を識別できない利用者は、視覚的又は聴覚的にテキストによる手がかりを認識する。点字ディスプレイや、他の触覚インタフェースを使っている人々は触ることでテキストによる手がかりを見つけられる。</p>
+      <p>テキストによる手がかりは、フォームコントロールの、プログラムで解釈可能な名前の一部に含まれていなければならない。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Required fields in an HTML form</head>
+         <head>HTMLフォームの必須項目</head>
          <description>
-            <p>The instructions for an online form say, "Required fields are shown in red and marked with (required)." The cue "(required)" is included within the <code><![CDATA[label]]></code> element.</p>
+            <p>オンラインフォームで「必須項目は赤で示され、（必須）とマーク付けされている。」と指示されている。「（必須）」という手がかりが<code><![CDATA[label]]></code>要素の中に含まれる。</p>
          </description>
-         <code role="html401"><![CDATA[<label for="lastname" class="required">Last name (required): </label>
+         <code role="html401"><![CDATA[<label for="lastname" class="required">名前 (必須): </label>
 <input id="lastname" type="text" size="25" value=""/>
 <style type="text/css">
   .required {
@@ -34,18 +34,17 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For any content where color differences are used to convey information:
-    				</p>
+         <p>色の差で情報を表示しているコンテンツの場合：</p>
          <olist>
             <item>
-               <p>Check that the same information is available through text or character cues. </p>
+               <p>同じ情報がテキスト又は文字による手がかりでも認識できる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Check #1 is true.</p>
+               <p>1. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
