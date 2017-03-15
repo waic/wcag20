@@ -84,10 +84,10 @@
          <description>
             <p>この事例には、列としてグループ化された動的な TextField インスタンスが含まれている。列の構造に従って読み上げ順序が設定されるようにする。TextField インスタンスには、テキストコンテンツに応じたタブインデックス値が指定されている（例えば、テキスト「Sample text 3」が格納されている TextField にはタブインデックス値 3 が設定されている）。また、タブインデックス値を設定していない TextField が 1 つ追加されている。このフィールドには、テキスト「Not in tab order」が格納されている。このフィールドは見かけ上は「Sample text 2」と「Sample text 3」の間に配置されているが、タブインデックス値が割り当てられていないため、カスタムタブ順序の中では最後に配置される。</p>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_reading_order_as3.html"
-                    linktype="examples">タブインデックスを使用して列の構造をナビゲートするのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_reading_order_as3.fla"
-                    linktype="examples">タブインデックスを使用して列の構造をナビゲートするのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_reading_order_as3.html"><!--
+                    linktype="examples"-->タブインデックスを使用して列の構造をナビゲートするのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_reading_order_as3.fla"><!--
+                    linktype="examples"-->タブインデックスを使用して列の構造をナビゲートするのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -95,8 +95,8 @@
          <description>
             <p>この事例では、Flash ベースのフォームが2カラムでレイアウトされている。タブ順序がカラム構造に従うようにするには、アクセシビリティパネルを用いて各フォーム・コントロールにタブインデックス値を割り当てる。</p>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.html"
-                    linktype="examples">2 カラムレイアウトでタブ順序を制御するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.html"><!--
+                    linktype="examples"-->2 カラムレイアウトでタブ順序を制御するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/custom_tab_order_as3.fla"
                     linktype="examples">2 カラムレイアウトでタブ順序を制御するのソース（英語）</loc>をダウンロードすることもできる。</p>
          </description>
