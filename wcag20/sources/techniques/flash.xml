@@ -54,7 +54,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
    </header>
    <body><!-- techniques -->
       <div1 id="flash">
-         <head>Flash Techniques</head>
+         <head>Flashの達成方法</head>
          <div2 id="flash_notes">
             <head>Flash テクノロジーノート</head>
             <p>Adobe Flash Player は、クロスプラットフォームなブラウザのプラグインである。Flash Player によって表示されるコンテンツの制作者は、映像サポート、オーサリングの好み、ベクターベースのグラフィック能力などの様々な要因から Flash Player を用いてコンテンツを提供したり、Flashの標準コンポーネントを利活用したりすることを選択する。コンテンツ制作者が Flash を用いるそういった動機が何であれ、他のウェブコンテンツ技術を用いたウェブコンテンツと同様に、Flash Player で提供されるコンテンツが WCAG 2.0 のアクセシビリティ基準を満たすようにすることは重要である。</p>
