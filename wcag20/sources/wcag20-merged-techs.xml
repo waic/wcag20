@@ -23,18 +23,16 @@
 		</publoc>
 		<altlocs>
 			<loc href="complete.html">Single file version</loc>
+<!-- diff版はいったんナシ
 			<loc href="complete-diff.html">Single file diff-marked version showing revisions since 17 March 2015</loc>
 			<loc href="/WAI/WCAG20/versions/techniques/">Alternate Versions of Techniques for WCAG 2.0</loc>
+-->
 		</altlocs>
 		<latestloc>
 			<loc href="https://www.w3.org/TR/WCAG20-TECHS/">https://www.w3.org/TR/WCAG20-TECHS/</loc>
 			<!-- <loc href="http://www.w3.org/WAI/GL/WCAG20-TECHS/">http://www.w3.org/WAI/GL/WCAG20-TECHS/</loc> -->
 		</latestloc>
 		<prevlocs>
-			<!--
-				<loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110621/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110621/ (public review copy)</loc>
-		  	<loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110310/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110310/ (internal review copy)</loc>
-			-->
 			<loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/">https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/</loc>
 		</prevlocs>
 		<authlist>
