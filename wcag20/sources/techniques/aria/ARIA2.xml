@@ -2,10 +2,10 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA2">
-   <short-name>aria-required プロパティによって必須項目を特定する</short-name>
+   <short-name>aria-required プロパティを用いて必須項目を特定する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -18,20 +18,19 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide programmatic indication that a form field (which shown through presentation to be required) is mandatory for successful submission of a form.</p>
-      <p>The fact that the element is required is often visually presented (via a text or non-text symbol, or text indicating input is required or color / styling) but this is not programmatically determinable as part of the field's name.</p>
-      <p>The WAI-ARIA <prop>aria-required</prop> property indicates that user input is required before submission. The <prop>aria-required</prop> property can have values of <attval>true</attval> or <attval>false</attval>. For example, if a user must fill in an address field, then <att>aria-required</att> is set to <attval>true</attval>.</p>
+      <p>この達成方法の目的は、（プレゼンテーションを通して必須であることが示されている）フォームフィールドが、フォームの正常送信のために必須であることを、プログラムによって解釈できる指標として提供することである。</p>
+      <p>要素が必須であるという事実は多くの場合、（テキスト又は非テキストのシンボル、又は入力が必須であることを示すテキスト、又は色/スタイルを介して）視覚的に提示されるが、これは、フィールド名の一部としてプログラムによって解釈することができない。</p>
+      <p>WAI-ARIA <prop>aria-required</prop>プロパティは、送信前に利用者の入力が必須であることを示す。<prop>aria-required</prop>プロパティは、<attval>true</attval>又は<attval>false</attval>の値を持つことができる。たとえば、利用者が住所のフィールドに入力しなければならない場合、<att>aria-required</att>は<attval>true</attval>に設定される。</p>
       <note>
-         <p>Note: Use of <code><![CDATA[aria-required="true"]]></code> might be beneficial even when an asterisk or other text symbol is programmatically associated with the field as it may reinforce its <prop>required</prop> property for some assistive technology users.</p>
-         <p>The fact that the element is required is often visually   presented (such as a sign or symbol after the control). Using the <prop>aria-required</prop> property in addition to the visual presentation makes it much easier   for user agents to pass on this important information to the user in a   user agent-specific manner.  Refer to <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                 href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting   ARIA in XHTML and HTML 4.01</loc> for information on how to provide   WAI-ARIA States and Properties with XHTML and HTML. WAI-ARIA States and   Properties is compatible with other languages as well; refer to documentation in those languages. </p>
+         <p><code><![CDATA[aria-required="true"]]></code>の使用は、アスタリスクや他のテキストシンボルがプログラム的にフィールドに関連付けられている場合であっても、一部の支援技術の利用者に対して<prop>required</prop>プロパティによって補強できるので、有益であるかもしれない。</p>
+         <p>多くの場合、要素が必須であるという事実は、（コントロールの後の符号や記号のように）視覚的に提示される。視覚的なプレゼンテーションに加えて<prop>aria-required</prop>プロパティを使用することは、ユーザエージェントが、この重要な情報をユーザエージェント固有の方法で利用者に伝えることを、はるかに簡単にする。XHTMLやHTMLとともにWAI-ARIAステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting   ARIA in XHTML and HTML 4.01</loc>を参照のこと。なお、WAI-ARIAステート及びプロパティは他の言語とも互換性がある。詳しくはその言語における文書の活用を参照のこと。</p>
       </note>
    </description>
    <examples>
       <eg-group>
          <head/>
          <description>
-            <p>The <prop>required</prop> property is indicated by an asterisk placed next to the label element:</p>
+            <p><prop>required</prop>プロパティがlabel要素の後に置かれるアスタリスクによって示されている:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
   <p>Note: [*]denotes mandatory field</p>
@@ -53,7 +52,7 @@
       <eg-group>
          <head/>
          <description>
-            <p>The <prop>required</prop> property is indicated by the word "required" placed next to the <el>label</el> element:</p>
+            <p><prop>required</prop>プロパティがlabel要素の後に置かれる単語"required"によって示されている:</p>
             <codeblock xml:space="preserve"><![CDATA[<head>
 <form action="#" method="post" id="step1" onsubmit="return errorCheck2()">
   <p>
@@ -89,30 +88,27 @@
       <eg-group>
          <head/>
          <description>
-            <p>Required fields are indicated by a red border around the fields and a star icon rendered via CSS using <code role="css"><![CDATA[content:before]]></code>. This example also uses custom radio buttons with <code><![CDATA[role=radio]]></code> but the script to make the span actually work like radio buttons is not included in this example. The CSS properties are available below the form.
-</p>
-            <codeblock xml:space="preserve"><![CDATA[<head>
+            <p>
+            必須フィールドは、フィールドの周りの赤いボーダーと<code role="css"><![CDATA[content:before]]></code>を使用するCSSによってレンダリングされる星のアイコンで示される。この例はまた、<code><![CDATA[role=radio]]></code>をもつカスタムラジオボタンを使用するが、spanを実際にラジオボタンのように動作させるためのスクリプトは、この例に含まれていない。CSSプロパティはフォームの下にある。</p>
+            <codeblock xml:space="preserve"><![CDATA[
 <form action="#" method="post" id="alerts1">
   <label for="acctnum" data-required="true">Account Number</label>
-  <input size="12" type="text"
+  <input size="12" type="text" id="acctnum"
       aria-required="true" name="acctnum" />
 
- <p id="radio_label">Please send an alert when balance exceeds $3,000.</p>
+ <p id="radio_label" data-required="true">Please send an alert when balance exceeds $3,000.</p>
 
- <ul  id="rg" role="radiogroup" aria-labelledby="radio_label">
-    <li id="rb1" role="radio" aria-required="true">Yes</li>
-    <li id="rb2" role="radio" aria-required="true">No</li>
+ <ul  id="rg" role="radiogroup" aria-required="true" aria-labelledby="radio_label">
+    <li id="rb1" role="radio">Yes</li>
+    <li id="rb2" role="radio">No</li>
  </ul>
 </form>
  ]]></codeblock>
-            <codeblock xml:space="preserve"><![CDATA[<head>
+<p>この例に対する関連するCSSスタイル定義:</p>
+            <codeblock xml:space="preserve"><![CDATA[
 [aria-required=true] {
   border: red thin solid;
 }
-[aria-required=true]:before {
-  content: url('/iconStar.gif');
-}
-
 [data-required=true]:after {
   content: url('/iconStar.gif');
 }
@@ -120,9 +116,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>A required text input field in XHTML</head>
+         <head>XHTMLにおける必須のテキスト入力フィールド</head>
          <description>
-            <p>The following example shows an XHTML document using the <prop>aria-required</prop> property to indicate that a form field must be submitted. The mandatory   nature of the field is also indicated in the label as a fallback for   user agents that do not support WAI-ARIA. </p>
+            <p>次の例は、フォームフィールドが送信されなければならないことを示すために<prop>aria-required</prop>プロパティを使用するXHTML文書を示す。フィールドの必須の性質は、WAI-ARIAをサポートしないユーザエージェントのための予備として、ラベルでも表示される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
@@ -152,12 +148,12 @@
 		]]></code>
       </eg-group>
       <eg-group>
-         <head>Adding <prop>aria-required</prop> property via script</head>
+         <head>スクリプト経由で<prop>aria-required</prop>プロパティを追加する</head>
          <description>
-            <p>This example uses scripting to add the <prop>aria-required</prop> property to a form element. The required property is assigned using the <function>setAttribute()</function>   API. </p>
-            <p>The array variable, <var>requiredIds</var>, is created with the   ids of the elements which need to be marked as required. The <function>setRequired()</function>   function is called from the <event>onload</event> event of the <obj>window</obj>   object. </p>
-            <p>The <function>setRequired()</function> function loops through all of the   ids provided, retrieves the element and assigns the <prop>aria-required</prop> property of true using the setAttribute() function. </p>
-            <p>When this page is accessed using Firefox 3.0 or later and a   screen reader that supports WAI-ARIA, the screen reader will speak   "required" when reading the label for the input fields. </p>
+            <p>この例は、フォーム要素に<prop>aria-required</prop>プロパティを追加するためにスクリプトを使用する。必須プロパティは、<function>setAttribute()</function> APIを使用して割り当てられる。</p>
+            <p>配列変数<var>requiredIds</var>は、必須としてマークされる必要がある要素のIDとともに作成される。<function>setRequired()</function>関数は、<obj>window</obj>オブジェクトの<event>onload</event>イベントから呼び出される。</p>
+            <p><function>setRequired()</function>関数は、提供されたIDのすべてをループし、要素を取得し、setAttribute()関数を使用して<prop>aria-required</prop>プロパティをtrueにする。</p>
+            <p>このページがFirefox 3.0以降及びWAI-ARIAをサポートするスクリーンリーダーを使用してアクセスされる場合、入力フィールドのラベルを読む際にスクリーンリーダーは"required"と伝える。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<head>
  <script type="text/javascript">
@@ -227,20 +223,20 @@
 				-->
    <tests>
       <procedure>
-         <p>For each control which is shown via presentation to be required.</p>
+         <p>必須であることがプレゼンテーションを経由して示される各コントロールに対して。</p>
          <olist>
 			<item>
-				<p>Check whether the <att>aria-required</att> attribute is present:</p>
+				<p><att>aria-required</att>属性が存在するかどうかをチェックする:</p>
 			</item>
             <item>
-               <p>Check whether the value of the <att>aria-required</att> attribute is the correct required state of the user interface component.</p>
+               <p><att>aria-required</att>属性値が、そのユーザインタフェースコンポーネントに対する正しいrequiredステートであるかどうかをチェックする。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Checks #1 and #2 are true</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
