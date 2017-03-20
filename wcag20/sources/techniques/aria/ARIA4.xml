@@ -4,8 +4,8 @@
 <technique id="ARIA4">
    <short-name>ユーザインターフェース コンポーネントの役割（role）を明らかにするために、WAI-ARIA ロールを使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>.</p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
@@ -16,15 +16,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to define the role of an element using the <att>role</att> attribute with one of the non-abstract values defined in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/roles#role_definitions">WAI-ARIA Definition of Roles</loc>. The WAI-ARIA specification provides an informative description of each role, how it relates to other roles, and the states and properties for each role. When rich internet applications define new user interface widgets, exposing the roles enables users to understand the widget and how to interact with it.</p>
+      <p>この達成方法の目的は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#role_definitions">WAI-ARIA Definition of Roles</loc>で定義されたいずれかの非抽象の値を持つ<att>role</att>属性を用いて要素のロールを定義することである。WAI-ARIA仕様は、各ロールについて、他のロールとどのように関係するか、どのようなステート及びプロパティがあるかといった、参考となる説明を提供している。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ロールを公開することで、利用者がウィジェット及びウィジェットと対話する方法を理解できるようになる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>A simple toolbar</head>
+         <head>単純なツールバー</head>
          <description>
-            <p>The WAI-ARIA Authoring Practices document <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://www.w3.org/TR/2010/WD-wai-aria-practices-20100916/#accessiblewidget">demonstrates a toolbar containing three buttons</loc>. The <el>div</el> element has a role of "toolbar", and the <el>img</el> elements have "button" roles:</p>
+            <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、3つのボタンを含むツールバーのデモがある。<el>div</el>要素は"toolbar"のロールを持ち、<el>img</el>要素は"button"のロールを持つ:</p>
             <codeblock xml:space="preserve"><![CDATA[
     <div role="toolbar"
       tabindex="0" 
@@ -55,15 +54,15 @@
            title="Help"> 
  </div>  
                         ]]></codeblock>
-            <p>The AEGIS project website includes a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://access.aol.com/aegis/#goto_menubar">working example of a menubar</loc>.</p>
+            <p>Authoring Practicesのツールバーパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/#toolbar">ツールバーの実装例</loc>を提供している。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>A Tree Widget</head>
+         <head>ツリーウィジェット</head>
          <description>
-            <p>The WAI-ARIA Primer <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://www.w3.org/TR/wai-aria-primer/#exampletree">demonstrates a tree widget</loc>. Note the use of the roles "tree", "treeitem", and "group" to identify the tree and its structure. Here is a simplified excerpt from the code:</p>
+            <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、ツリーウィジェットのデモがある。ツリーとその構造を識別するためのロール"tree"、"treeitem"、"group"に注目してほしい。コードを単純化して抜粋したものは以下のとおり:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <ul role="tree" tabindex="0">
   <li role="treeitem">Birds</li>
@@ -82,7 +81,7 @@
           <li role="treeitem">Japanese Chin</li>
         </ul>
       </li>
-      <li role="treeitem"">Medium Breeds
+      <li role="treeitem">Medium Breeds
         <ul role="group">
           <li role="treeitem">Beagle</li>
           <li role="treeitem">Cocker Spaniel</li>
@@ -100,8 +99,8 @@
   </li>
 </ul>
 ]]></codeblock>
-            <p>The AEGIS project website includes a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="http://access.aol.com/aegis/#goto_tree">working example of a tree</loc>.</p>
+            <p>Authoring Practicesのツリービューパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView">ツリーの実装例</loc>を提供している。</p>
          </description>
       </eg-group>
    </examples>
@@ -123,25 +122,19 @@
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/html-aapi/#html-element-to-accessibility-api-role-mapping-matrix">HTML to Platform Accessibility APIs Implementation Guide: HTML Element to Accessibility API Role Mapping Matrix</loc>
+                       href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</loc>
+               </p>
+            </item>
+         	<item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA 1.1 Authoring Practices</loc> 
                </p>
             </item>
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/wai-aria-primer/">WAI-ARIA 1.0 Primer</loc>
-               </p>
-            </item>
-            <item>
-               <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
-               </p>
-            </item>
-            <item>
-               <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/aria-in-html/">Using WAI-ARIA in HTML</loc> 
+                       href="http://www.w3.org/TR/aria-in-html/">Notes on using ARIA in HTML</loc> 
                </p>
             </item>
          </ulist>
@@ -150,20 +143,20 @@
    <related-techniques/>
    <tests>
       <procedure>
-         <p>For a user interface component using the <att>role</att> attribute:</p>
+         <p>role属性を使用するユーザインタフェースコンポーネントの場合:</p>
          <olist>
             <item>
-               <p>Check that the value of the role attribute is one of the non-abstract roles from the values defined in the WAI-ARIA specification.</p>
+               <p>role属性の値が、WAI-ARIA仕様で定義された値に由来する非抽象ロールのいずれかである。</p>
             </item>
             <item>
-               <p>Check that the characteristics of the user interface component are described by the role.</p>
+               <p>ユーザインタフェースコンポーネントの特性がロールで記述されている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 and #2 are true.</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
