@@ -4,8 +4,7 @@
 <technique id="ARIA10">
    <short-name>非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</short-name>
    <applicability>
-      <p>This technique applies to HTML with <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>.</p>
+      <p>この達成方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>を用いるHTMLに適用される。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -23,13 +22,13 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide a short description for an element that can be read by assistive technologies (AT) by using the <att>aria-labelledby</att> attribute. The <att>aria-labelledby</att> attribute associates an element with text that is visible elsewhere on the page by using an ID reference value that matches the ID attribute of the labeling element. Assistive technology such as screen readers use the text of the element identified by the value of the <att>aria-labelledby</att> attribute as the text alternative for the element with the attribute.</p>
+      <p>この達成方法の目的は、<att>aria-labelledby</att>属性を使用することで支援技術（AT）によって読み取ることのできる要素に対する短い説明を提供することである。<att>aria-labelledby</att>属性は、ラベル付けする要素のID属性とマッチするID参照値を使用することで、ページ上のどこかで可視になっているテキストと要素とを関連づける。スクリーンリーダーのような支援技術は、<att>aria-labelledby</att>属性値によって特定される要素のテキストを、その属性をもつ要素に対する代替テキストとして使用する。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Providing a short description for a complex graphic</head>
+         <head>複雑な図形に短い説明を提供する</head>
          <description>
-            <p>This example shows how to use the <att>aria-labelledby</att> attribute to provide a short text description for a read-only complex graphic of an star rating pattern; the graphic is composed of several image elements. The text alternative for the graphic is the label, visible on the page beneath the star pattern.</p>
+            <p>この例は、図形が複数の画像要素から構成されている読み取り専用の星評価パターンに対して、どのように<att>aria-labelledby</att>属性を用いて短いテキストの説明を提供するのかを示している。図形に対するテキストによる代替はラベルであり、ページ内の星パターンのすぐ下に見える形で置かれている。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="img" aria-labelledby="star_id">
 <img src="fullstar.png" alt=""/>
 <img src="fullstar.png" alt=""/>
@@ -39,10 +38,9 @@
 </div>
 
 <div id="star_id">4 of 5</div>]]></codeblock>
-            <p>Working example: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="ARIA10-example1.html"
-                    linktype="examples">Providing a short description for a complex graphic</loc>.
-</p>
+                    linktype="examples">複雑な図形に短い説明を提供する</loc></p>
          </description>
       </eg-group>
    </examples>
@@ -78,20 +76,20 @@
       <procedure>
          <olist>
             <item>
-               <p>Examine each element where the <att>aria-labelledby</att> attribute is present and the element does not support the <att>alt</att> attribute.</p>
+               <p><att>aria-labelledby</att>属性が存在してかつ要素が<att>alt</att>属性をサポートしない場合に各要素を検査する。</p>
             </item>
             <item>
-               <p>Check whether the value of the <att>aria-labelledby</att> attribute is the id of an element on the web page.</p>
+               <p><att>aria-labelledby</att>属性値がウェブページ上の要素のidである。</p>
             </item>
             <item>
-               <p>Determine that the text of the element identified by the <att>aria-labelledby</att> attribute accurately labels the element, provides a description of its purpose, or provides equivalent information.</p>
+               <p><att>aria-labelledby</att>属性によって特定される要素のテキストが、正確に要素をラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#2 and #3 are true.</p>
+               <p>2.及び3.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
