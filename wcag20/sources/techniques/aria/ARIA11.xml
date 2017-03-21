@@ -4,8 +4,8 @@
 <technique id="ARIA11">
    <short-name>ページの領域を特定するために ARIA ランドマークを使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -40,61 +40,46 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide programmatic access to sections of a web page.  Landmark roles (or "landmarks") programmatically identify sections of a page. Landmarks help assistive technology (AT) users orient themselves to a page and help them navigate easily to various sections of a page. 
-</p>
-      <p>They also provide an easy way for users of assistive technology to skip over blocks of content that are repeated on multiple pages and notify them of programmatic structure of a page. For instance, if there is a common navigation menu found on every page, landmark roles (or "landmarks") can be used to skip over it and navigate from section to section. This will save assistive technology users and keyboard users the trouble and time of tabbing through a large amount of content to find what they are really after, much like a traditional "skip links" mechanism. (Refer to User Agent Notes above for specifics of AT support). A blind user who may be familiar with a news site's menu, and is only interested in getting to the top story could easily navigate to the "main" landmark, and bypass dozens of menu links. In another circumstance, a user who is blind may want to quickly find a navigation menu, and can do so by jumping to the navigation landmark. 
-</p>
-      <p>Landmarks also can help sighted keyboard-only users navigate to sections of a page using a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-      	href="http://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">browser plugin</loc>. 
-</p>
-      <p>Landmarks are inserted into the page using the role attribute on an element that marks the section. The value of the attribute is the name of the landmark. These role values are listed below:
-</p>
+      <p>この達成方法の目的は、ウェブページのセクションに対して、プログラムによるアクセスを提供することである。ランドマークロール（又はランドマーク）は、ページのセクションをプログラムによって識別できるようにする。ランドマークは、支援技術（AT）利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。</p>
+      <p>ランドマークはまた、支援技術の利用者に、複数ページで繰り返されるコンテンツのブロックをスキップする容易な方法を提供するとともに、ページの構造をプログラムによって理解できるようにする。たとえば、すべてのページに見られる共通のナビゲーションメニューが存在する場合、ランドマークロール（又はランドマーク）は、ナビゲーションメニューをスキップし、セクションからセクションにナビゲートするために使用できる。これは、伝統的な「スキップリンク」メカニズムそっくりに、支援技術利用者とキーボード利用者が、実際に後続にあるものを見つけるために大量のコンテンツの中をタブ移動するための時間と手間を省く（支援技術サポートの詳細については上記のユーザエージェントノートを参照のこと）。ニュースサイトのメニューに精通しているだろう、トップニュースを得ることにのみ関心がある目の不自由な利用者は、より容易に"main"ランドマークにナビゲートして、多数のメニューリンクを無視できる。別の状況で、目の不自由な利用者は、すぐにナビゲーションメニューを検索したいかもしれず、ナビゲーションランドマークにジャンプすることでこれを実現できる。</p>
+      <p>ランドマークはまた、目の見えるキーボード利用者が<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+      	href="http://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">ブラウザプラグイン</loc>を使用して、ページのセクションにナビゲートするのを支援することもできる。</p>
+      <p>ランドマークは、セクションをマークする要素上のrole属性を使用してページに挿入される。属性値は、ランドマークの名前である。ロールの値は次のとおりである:</p>
       <ulist>
          <item>
-            <p>banner: A region that contains the prime heading or internal title of a page.
-</p>
+            <p>banner: ページの主見出し又は内部タイトルを含む領域。</p>
          </item>
          <item>
-            <p>complementary: Any section of the document that supports the main content, yet is separate and meaningful on its own.
-</p>
+            <p>complementary: 主要コンテンツをサポートしているが、独立しかつ意味のある、文書の任意のセクション。</p>
          </item>
          <item>
-            <p>contentinfo:  A region that contains information about the parent document such as copyrights and links to privacy statements.
-</p>
+            <p>contentinfo: 著作権やプライバシーに関する声明へのリンクなど、親文書に関する情報を含む領域。</p>
          </item>
          <item>
-            <p>form: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
-</p>
+            <p>form: フォーム関連要素のコレクションを表す文書の領域であり、その一部は編集可能な、処理するためにサーバーに送信可能な値を表すことができる。</p>
          </item>
          <item>
-            <p>main: Main content in a document. In almost all cases a page will have only one role="main".
-</p>
+            <p>main: 文書における主要コンテンツ。ほとんどの場合において、1つのページは1つのみのrole="main"を持つ。</p>
          </item>
          <item>
-            <p>navigation: A collection of links suitable for use when navigating the document or related documents.
-</p>
+            <p>navigation: 文書内の、又は関連する文書へのナビゲートに適したリンクのコレクション。</p>
          </item>
          <item>
-            <p>search: The search tool of a Web document.
-</p>
+            <p>search: ウェブ文書の検索ツール。</p>
          </item>
          <item>
-            <p>application: A region declared as a web application, as opposed to a web document. (note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)
-</p>
+            <p>application: ウェブ文書とは対照的な、ウェブアプリケーションとして宣言された領域。（注記: applicationロールは、スクリーンリーダーに対して通常のウェブナビゲーションコントロールをオフにする信号を与えるため、注意して使用すべきである。一般に、単純なウィジェットには application ロールを与えるべきでなく、また、全くウェブページのように利用されておらず、かつ支援技術を用いた利用者のテストが十分に行われている場合を除き、ウェブページの全体に application ロールを与えるべきではない。）</p>
          </item>
       </ulist>
-      <p>There are cases when a particular landmark role could be used more than once on a page, such as on primary and secondary navigation menus. In these cases, identical roles should be disambiguated from each other using a valid technique for labelling regions (see examples below).
-</p>
-      <p>Landmarks should supplement native semantic markup such as HTML headings, lists and other structural markup. Landmarks are interpretable by WAI-ARIA-aware assistive technologies and are not exposed by browsers directly to users.
-</p>
-      <p>It is a best practice to include ALL content on the page in landmarks, so that screen reader users who rely on them to navigate from section to section do not lose track of content.
-</p>
+      <p>特定のランドマークロールがページ上で複数回使用できる場合があり、主要及び補助のナビゲーションメニューのようなものを表すことができる。この場合、同一ロールは、領域にラベル付けを行うための有効な技術を用いて、互いに曖昧さをなくすべきである（下記の例を参照）。</p>
+      <p>ランドマークは、HTMLの見出し、リスト、及びその他の構造的マークアップのようなネイティブセマンティックマークアップの補足となるべきである。ランドマークは、WAI-ARIA対応の支援技術によって解釈可能であり、ブラウザによって利用者に直接公開されるものではない。</p>
+      <p>ページ上のすべてのコンテンツをランドマークに含めることがベストプラクティスであり、そうすればセクションからセクションへナビゲートするためにランドマークに依存するスクリーンリーダー利用者がコンテンツの経路を見失うことはなくなる。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Simple landmarks</head>
+         <head>単純なランドマーク</head>
          <description>
-            <p>The following example shows how landmarks might be added to an HTML4 or XHTML 1.0 document:</p>
+            <p>次の例は、ランドマークがどのようにHTML4やXHTML 1.0文書に追加され得るのかを示している:</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="header" role="banner">A banner image and introductory title</div>
 <div id="sitelookup" role="search">....</div>
 <div id="nav" role="navigation">...a list of links here ... </div>
@@ -104,11 +89,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>Multiple landmarks of the same type and aria-labelledby</head>
+         <head>同じ種類の複数のランドマークとaria-labelledby</head>
          <description>
-            <p>The following example shows a best practice of how landmarks might be added to an HTML4 or XHTML 1.0 document in situations where there are more than two of the same type of landmark on the same page. For instance, if a navigation role is used multiple times on a Web page, each instance may have a unique label specified using <att>aria-labelledby</att>:
-
-</p>
+            <p>次の例は、同じページで2つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのようにHTML4やXHTML1.0文書に追加されうるのかのベストプラクティスを示している。たとえば、navigationロールがウェブページ上で複数回使用される場合、各インスタンスは<att>aria-labelledby</att>を使用して、指定された一意のラベルを持ってもよい:</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-labelledby="leftnavheading">
 <h2 id="leftnavheading">Institutional Links</h2>
 <ul><li>...a list of links here ...</li> </ul></div>
@@ -118,9 +101,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>Multiple landmarks of the same type and aria-label</head>
+         <head>同じ種類の複数のランドマークとaria-label</head>
          <description>
-            <p>The following example shows a best practice of how landmarks might be added to an HTML4 or XHTML 1.0 document in situations where there are more than two of the same type of landmark on the same page, and there is no existing text on the page that can be referenced as the label.</p>
+            <p>次の例は、同じページで2つ以上の同じ種類のランドマークが存在する状況で、ラベルとして参照できるページでテキストが存在しない場合、ランドマークがどのようにHTML4やXHTML1.0文書に追加されうるのかのベストプラクティスを示している。</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-label="Primary">
 <ul><li>...a list of links here ...</li></ul> </div>
 <div id="rightnav" role="navigation" aria-label="Secondary">
@@ -128,9 +111,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>Search form</head>
+         <head>検索フォーム</head>
          <description>
-            <p>The following example shows a search form with a "search" landmark. The search role typically goes on the form field or a div surrounding the search form.</p>
+            <p>次の例は、"search"ランドマークをもつ検索フォームを示す。searchロールは一般的に、フォームフィールドや、検索フォームを囲むdivに適用する。</p>
             <codeblock xml:space="preserve"><![CDATA[<form role="search">
 <label for="s6">search</label><input id="s6" type="text" size="20">
 ...
@@ -188,20 +171,17 @@
       <procedure>
          <olist>
             <item>
-               <p>Examine each element with a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark role</loc>.
-</p>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>をもつ各要素を検査する。</p>
             </item>
             <item>
-               <p>Examine whether the landmark role attribute is applied to the section of the page that corresponds with that role. (i.e., the "navigation" role is applied to a navigation section, the "main" role is applied to where the main content begins.)
-</p>
+               <p>ランドマークロール属性が、そのロールに対応するページのセクションに適用されている（すなわち、"navigation"ロールはナビゲーションセクションで適用され、"main"ロールはメインコンテンツが始まる場所に適用される）。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 and #2 are true.</p>
+               <p>1.及び2.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
