@@ -4,8 +4,8 @@
 <technique id="ARIA6">
    <short-name>オブジェクトのラベルを提供するために aria-label を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -38,16 +38,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide a label for objects that can be read by assistive technology. The <att>aria-label</att> attribute provides the text label for an object, such as a button. When a screen reader encounters the object, the <att>aria-label</att> text is read so that the user will know what it is.</p>
-      <p>Authors should be aware that <att>aria-label</att> may be disregarded by assistive technologies in situations where <att>aria-labelledby</att> is used for the same object. For more information on the naming hierarchy please consult the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA specification</loc> and the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc> in the HTML to Platform Accessibility APIs Implementation Guide. Authors should be aware that use of <att>aria-label</att> will override any native naming such as <att>alt</att> on images or <el>label</el> associated with a form field using the <att>for</att> attribute.</p>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるオブジェクトのラベルを提供することである。<att>aria-label</att>属性は、ボタンなど、オブジェクトのテキストラベルを提供する。スクリーンリーダーがオブジェクトに遭遇した際、<att>aria-label</att>テキストが読み込まれ、利用者はそのオブジェクトがどのようなものかを知ることができる。</p>
+      <p>制作者は、<att>aria-labelledby</att>が同じオブジェクトに使用される状況では、<att>aria-label</att>が支援技術によって無視される場合があることに注意すべきである。名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA仕様</loc>及びHTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc>を参照。制作者は、<att>aria-label</att>の使用が画像の<att>alt</att>や<att>for</att>属性を用いてフォームフィールドに関係付けられた<el>label</el>などのネイティブな名前付けを全て上書きすることに注意すべきである。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Distinguishing navigation landmarks</head>
+         <head>ナビゲーションランドマークを区別する</head>
          <description>
-            <p>The following example shows how <att>aria-label</att> could be used to distinguish two navigation landmarks in a HTML4 and XHTML 1.0 document, where there are more than two of the same type of landmark on the same page, and there is no existing text on the page that can be referenced as the label.</p>
+            <p>次の例は、同じページに同じ種類のランドマークが2個以上存在し、かつページ内にラベルとして参照できる既存のテキストが存在しない場合に、HTML4及びXHTML1.0文書内で2つのナビゲーションランドマークを識別するために<att>aria-label</att>をどのように使用するのかを示している。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="navigation" aria-label="Primary">
 <ul><li>...a list of links here ...</li></ul> </div>
 <div role="navigation" aria-label="Secondary">
@@ -55,18 +53,18 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>Identifying region landmarks</head>
+         <head>領域のランドマークを識別する</head>
          <description>
-            <p>The following example shows how a generic "region" landmark might be added to a weather portlet. There is no existing text on the page that can be referenced as the label, so it is labelled with <att>aria-label</att>.</p>
+            <p>次の例は、気象ポートレットに一般的な"region"ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att>でラベル付けされている。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="region" aria-label="weather portlet"> 
 ...
 </div>]]></codeblock>
          </description>
       </eg-group>
       <eg-group>
-         <head>Providing a label for Math</head>
+         <head>数学のラベルを提供する</head>
          <description>
-            <p>Below is an example of a MathML function, using the math role, appropriate label, and MathML rendering:</p>
+            <p>以下はmathロール、適切なラベル、およびMathMLのレンダリングを使用する、MathMLの機能の例である。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="math" aria-label="6 divided by 4 equals 1.5">
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mfrac>
@@ -92,7 +90,7 @@
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA Authoring Practices 1.1</loc> 
                </p>
             </item>
          </ulist>
@@ -104,17 +102,17 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For each element where a <att>aria-label</att> attribute is present.</p>
+         <p><att>aria-label</att>属性が存在する各要素に対して。</p>
          <olist>
             <item>
-               <p>Examine whether the text description accurately labels the object or provides a description of its purpose or provides equivalent information.</p>
+               <p>テキストの説明が正確にオブジェクトをラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供するかどうかを検査する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 is true.</p>
+               <p>1.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
