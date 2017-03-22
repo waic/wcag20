@@ -4,8 +4,8 @@
 <technique id="ARIA15">
    <short-name>画像の説明を提供するために aria-describedby を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -40,19 +40,15 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to provide descriptions of images when a short text alternative does not adequately convey the function or information provided in the object. 
-</p>
-      <p>A feature of WAI-ARIA is the ability to associate descriptive text with a section, drawing, form element, picture, and so on using the <prop>aria-describedby</prop> property. This is similar to the <att>longdesc</att> attribute in that both are useful for providing additional information to help users understand complex images. Like <att>longdesc</att>, descriptive text provided using <att>aria-describedby</att> is separate from the short name provided using the <att>alt</att> attribute in HTML. Unlike <att>longdesc</att>, <att>aria-describedby</att> cannot reference descriptions outside of the page containing the image. An advantage of providing long descriptions using content from the same page as the image is that the alternative is available to all, including sighted people who do not have assistive technology. It is worth noting that as of the time of writing (October 2013) some assistive technologies read <att>aria-describedby</att> content immediately after an image's alt attribute information without user activation - whereas most implementations of <att>longdesc</att> require the user to take explicit action to read the additional description.
-</p>
-      <p>Like <att>aria-labelledby</att>, <att>aria-describedby</att> can accept multiple ids to point to other regions of the page using a space separated list. It is also limited to ids for defining these sets.
-</p>
+      <p>この達成方法の目的は、簡潔な代替テキストがオブジェクトで提供される機能や情報を適切に伝達しない場合に、画像の説明を提供することである。</p>
+      <p>WAI-ARIAには、<prop>aria-describedby</prop>プロパティを使用して、セクション、描画、フォーム要素、画像などと説明テキストを関連付けできる機能がある。これは、利用者が複雑な画像を理解するのを助ける追加情報を提供するのに両者が有用であるという点において<att>longdesc</att>属性に似ている。<att>longdesc</att>のように、<att>aria-describedby</att>を使用して提供される説明テキストは、HTMLで<att>alt</att>属性を使用して提供される短い名前とは別のものである。<att>longdesc</att>と異なり、<att>aria-describedby</att>は画像を含むページの外の記述を参照できない。画像と同じページのコンテンツを使用して長い説明を提供する利点は、支援技術を持たない、目の見える人を含め、その代替が誰でも利用できることである。執筆時点（2013年10月）で、一部の支援技術が利用者の操作なしに画像のalt属性情報の直後に<att>aria-describedby</att>の内容を読みあげることは注目に値する――これは、<att>longdesc</att>属性のほとんどの実装が、追加の説明を読むために利用者の明示的な操作を必要とすることとは対照的である。</p>
+      <p><att>aria-labelledby</att>のように、<att>aria-describedby</att>は、スペース区切りのリストを使用してページの他の領域を指すための複数のIDを受け入れることができる。この集合を定義するものはIDに限定されている。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Describing an image</head>
+         <head>画像を説明する</head>
          <description>
-            <p>The following example shows how <att>aria-describedby</att> can be applied to an image to provide a long description, where that text description is on the same page as the image. 
-</p>
+            <p>次の例は、テキストの説明が画像と同じページ上にある場所で、長い説明を提供するためにどのように<att>aria-describedby</att>が画像に適用されるかを示す。</p>
             <codeblock xml:space="preserve"><![CDATA[<img src="ladymacbeth.jpg" alt="Lady MacBeth" aria-describedby="p1">
 <p id="p1">This painting dates back to 1730 and is oil on canvas. It was created by 
 Jean-Guy Millome, and represents ...</p>]]></codeblock>
@@ -87,23 +83,20 @@ Jean-Guy Millome, and represents ...</p>]]></codeblock>
       <procedure>
          <olist>
             <item>
-               <p>Examine each image element where a <att>aria-describedby</att> attribute is present.
-</p>
+               <p><att>aria-describedby</att>属性が存在する各画像要素を調べる。</p>
             </item>
             <item>
-               <p>Examine whether the <att>aria-describedby</att> attribute  programatically associates an element with its text description, via the <att>id</att> attribute on the element where the text to be used as the description is found. 
-</p>
+               <p>その<att>aria-describedby</att>属性が、その説明として用いられるテキストを含む要素の<att>id</att>を介して、要素とテキストの説明とをプログラム的に関連付けている。</p>
             </item>
             <item>
-               <p>Examine whether the combined text equivalent and associated text description accurately describe or provide the equivalent purpose to the object.
-</p>
+               <p>結合された同等のテキスト及び関連付けられたテキストの説明が、オブジェクトに同等の目的を正確に説明する又は提供している。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1, #2, and #3 are true.</p>
+               <p>1.、2. 及び 3. を満たしている</p>
             </item>
          </ulist>
       </expected-results>
