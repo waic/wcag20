@@ -4,8 +4,8 @@
 <technique id="ARIA12">
    <short-name>見出しを特定するために role=heading を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -27,28 +27,16 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide a way for Assistive Technologies (AT) to identify 
-a piece of content as a heading. Applying <code><![CDATA[role="heading"]]></code> to an element causes an AT (like a 
-screen reader) to treat it as though it were a heading. 
-</p>
-      <p>If there is more than one heading on the page and the heading hierarchy is defined through the 
-visual presentation, the <att>aria-level</att> attribute should be used to indicate the hierarchical level of 
-the heading. 
-</p>
-      <p>When possible, use native heading mark-up directly. For example, it is preferable 
-to use <el>h1</el> rather than using <code><![CDATA[<div role="heading" aria-level="1">]]></code>. However, the use of the 
-heading role, instead of heading mark-up, may be necessary. For example, when retrofitting a legacy site where scripts depend on the existing element hierarchy.
-</p>
-      <p>The use of the <prop>heading</prop> role and nesting levels is discussed in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/WAI/PF/aria-practices/#kbd_layout_nesting">WAI-ARIA 1.0 Authoring Practices</loc>.
-</p>
+      <p>この達成方法の目的は、支援技術（AT）に見出しとしてひとまとまりのコンテンツを識別するための手段を提供することである。要素に <code><![CDATA[role="heading"]]></code> を適用することで、（スクリーンリーダーなどの）支援技術に、あたかもそれが見出しであったかのように扱わせることができる。</p>
+      <p>ページ上に複数の見出しがあり、かつ見出し階層が視覚的なプレゼンテーションを通して定義される場合、見出しの階層レベルを示すために<att>aria-level</att>属性が使用されるべきである。</p>
+      <p>可能な場合、ネイティブな見出しマークアップを直接使用すること。たとえば、<code><![CDATA[<div role="heading" aria-level="1">]]></code>を使用するのではなく、<el>h1</el>を使用するのが好ましい。しかし、見出しマークアップの代わりに heading ロールを使用することが必要な場合がある。たとえば、スクリプトが既存の要素の階層構造に依存しているレガシーサイトを改装する場合などである。</p>
+      <p><prop>heading</prop>ロールとネスティングレベルの用途については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/aria-practices/#kbd_layout_nesting">WAI-ARIA 1.0 Authoring Practices</loc>で説明されている。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Simple headings</head>
+         <head>単純な見出し</head>
          <description>
-            <p>This example demonstrates how to implement simple headings using role="heading" when retrofitting a legacy site where scripts depend on the existing element hierarchy or the level is unknown. For example, web content which is syndicated from various sources may be constructed without knowledge of what the final presentation will be.
-</p>
+            <p>この例は、スクリプトが既存の要素の階層構造に依存する、又はレベルが不明であるレガシーなサイトを改装する際に、role="heading"を使用した簡単な見出しを実装する方法を示す。たとえば、さまざまなソースからシンジケートされたウェブコンテンツを、最終的なプレゼンテーションがどうなるかの知識なしで構築できるかもしれない。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="heading">Global News items</div>
 ... a list of global news with editorial comment....
 
@@ -57,9 +45,9 @@ heading role, instead of heading mark-up, may be necessary. For example, when re
          </description>
       </eg-group>
       <eg-group>
-         <head>Additional heading levels</head>
+         <head>追加の見出しレベル</head>
          <description>
-            <p>This example demonstrates how to implement a level 7 heading using role="heading" and the <att>aria-level</att> attribute. Since HTML only supports headings through level 6, there is no native element to provide these semantics.</p>
+            <p>この例は、role="heading"と<att>aria-level</att>属性を用いてレベル7見出しを実装する方法を示す。HTMLはレベル6までの見出しのみをサポートしているため、このセマンティックスを提供するためのネイティブ要素は存在しない。</p>
             <codeblock xml:space="preserve"><![CDATA[...
 <h5>Fruit Trees</h5>
 ...
@@ -99,23 +87,20 @@ heading role, instead of heading mark-up, may be necessary. For example, when re
       <procedure>
          <olist>
             <item>
-               <p> Examine each element with the attribute role="heading".
-</p>
+               <p>属性role="heading"をもつ各要素を調べる。</p>
             </item>
             <item>
-               <p> Determine whether the content of the element is appropriate as a heading.
-</p>
+               <p>要素の内容が見出しとして適切である。</p>
             </item>
             <item>
-               <p> If the element has an <att>aria-level</att> attribute, determine whether the value is the appropriate hierarchical level.
-</p>
+               <p>要素が<att>aria-level</att>属性を持つ場合、値が適切な階層レベルである。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#2 and #3 are true.</p>
+               <p>2.及び3.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
