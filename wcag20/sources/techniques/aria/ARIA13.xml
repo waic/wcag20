@@ -4,8 +4,8 @@
 <technique id="ARIA13">
    <short-name>領域とランドマークに名前（name）を付けるために、aria-labelledby を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -17,18 +17,15 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide names for regions of a page that can be read by assistive technology.  The <att>aria-labelledby</att> attribute provides a way to associate an section of the page marked up as a region or landmarks with text that is on the page that labels it.
-</p>
-      <p>Landmark roles (or "landmarks") programmatically identify sections of a page. Landmarks help assistive technology (AT) users orient themselves to a page and help them navigate easily to various sections of a page.
-</p>
-      <p>Like <att>aria-describedby</att>, <att>aria-labelledby</att> can accept multiple ids to point to other regions of the page using a space separated list. It is also limited to ids for defining these sets.
-</p>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるページの領域に対して名前を提供することである。<att>aria-labelledby</att>属性は、領域又はランドマークとしてマークアップされたページ内のセクションと、そのセクションを分類するページ内のテキストを関連付ける方法を提供する。</p>
+      <p>ランドマークロール（又はランドマーク）は、ページのセクションをプログラムで識別できるようにする。</p>
+      <p>ランドマークは、支援技術（AT）利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。<att>aria-describedby</att>のように、<att>aria-labelledby</att>は、スペース区切りのリストを使用して、ページの他の領域を指すための複数のIDを受け入れることができる。また、この集合を定義するのはIDに限定されている。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Identify a landmark with on-page text</head>
+         <head>ページ上のテキストをもつランドマークを識別する</head>
          <description>
-            <p>Below is an example of <att>aria-labelledby</att> used on a complementary Landmark. The region of the document to which the heading pertains could be marked with the <att>aria-labelledby</att> property containing the value of the <att>id</att> for the header.</p>
+            <p>以下は、complementaryランドマークに<att>aria-labelledby</att>を使用した一例である。この文書内の見出しがついている領域は、見出しの<att>id</att>値を含む<att>aria-labelledby</att>プロパティによってマークすることができる。</p>
             <codeblock xml:space="preserve"><![CDATA[<p role="complementary" aria-labelledby="hdr1">
  <h1 id="hdr1">
     Top News Stories
@@ -37,9 +34,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>Identification for Application landmarks</head>
+         <head>アプリケーションランドマークの識別</head>
          <description>
-            <p>The following code snippet for application landmarks with static prose. If you have a regional landmark of type application and static descriptive text is available, then on the application landmark, include an aria-describedby reference to associate the application and the static text as shown here:</p>
+            <p>次のコード断片は、静的な文を含むapplicationランドマークである。タイプapplicationの領域ランドマークがあり、かつ静的な説明テキストが利用可能であるため、applicationランドマークには、そのアプリケーションと静的テキストを関連付けるためのaria-describedbyによる参照を含めている。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="application" aria-labelledby="p123" aria-describedby="info">
 <h1 id="p123">Calendar<h1>
 <p id="info">
@@ -82,24 +79,21 @@ This calendar shows the game schedule for the Boston Red Sox.
       <procedure>
          <olist>
             <item>
-               <p>Examine each element with attribute <code><![CDATA[role=region]]></code> or with a <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">landmark role</loc>, where an <code><![CDATA[aria-labelledby]]></code> attribute is also present.
-</p>
+               <p>属性 role=region 又は<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>を持ち、<code><![CDATA[aria-labelledby]]></code> 属性も存在している各要素を調べる。</p>
             </item>
             <item>
-               <p>Check that the value of the <code><![CDATA[aria-labelledby]]></code> attribute is the <code><![CDATA[id]]></code> of an element on the page. 
-</p>
+               <p><code><![CDATA[aria-labelledby]]></code>属性値が、ページ上の要素のidである。</p>
             </item>
             <item>
-               <p>Check that the text of the element with that <code><![CDATA[id]]></code> accurately labels the section of the page.
-</p>
+               <p>その <code><![CDATA[id]]></code> を持つ要素のテキストが、ページのセクションを正確にラベル付けしている。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#2 and #3 are true.</p>
+               <p>2.及び3.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
