@@ -4,7 +4,7 @@
 <technique id="SCR29">
    <short-name>静的なHTML要素にキーボード操作可能なアクションを追加する</short-name>
    <applicability>
-      <p>HTML and XHTML, Script</p>
+      <p>HTML 及び XHTML、スクリプト</p>
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
@@ -19,72 +19,71 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The objective of this technique is to demonstrate how to provide keyboard access to a user interface control that is implemented by actions to static HTML elements such as <code><![CDATA[div]]></code> or <code><![CDATA[span]]></code>. This technique ensures that the element is focusable by setting the <code><![CDATA[tabindex]]></code> attribute, and it ensures that the action can be triggered from the keyboard by providing an <code><![CDATA[onkeyup]]></code> or <code><![CDATA[onkeypress]]></code> handler in addition to an <code><![CDATA[onclick]]></code> handler. </p>
-      <p>When the <code><![CDATA[tabindex]]></code> attribute has the value 0, the element can be focused via the keyboard and is included in the tab order of the document. When the <code><![CDATA[tabindex]]></code> attribute has the value -1, the element cannot be tabbed to, but focus can be set programmatically, using <code><![CDATA[element.focus()]]></code>.</p>
-      <p>Because static HTML elements do not have actions associated with them, it is not possible to provide a backup implementation or explanation in environments in which scripting is not available. This technique should only be used in environments in which client-side scripting can be relied upon.</p>
+      <p>この達成方法の目的は、 <code><![CDATA[div]]></code> や <code><![CDATA[span]]></code> などの静的な HTML 要素により実行されるユーザインターフェース コントロールにキーボードアクセスを提供する方法を示すことである。この達成方法は <code><![CDATA[tabindex]]></code> 属性を設定することで要素をフォーカス可能にし、<code><![CDATA[onclick]]></code> ハンドラに加えて <code><![CDATA[onkeyup]]></code> 又は <code><![CDATA[onkeypress]]></code> ハンドラを提供することでキーボードから動作を実行することができるようにするものである。</p>
+      <p><code><![CDATA[tabindex]]></code> 属性の値が 0 の際、要素はキーボードでフォーカス可能であり、文書のタブ順序に含まれる。<code><![CDATA[tabindex]]></code> 属性の値が -1 の際、要素はタブ移動できないが、<code><![CDATA[element.focus()]]></code> を使用することによりフォーカスをプログラムで制御できる。</p>
+      <p>静的な HTML 要素にはそれらに関連した動作がないため、スクリプトが利用できない環境に対する、代替としての実装又は説明を提供することはできない。この達成方法はクライアントサイド スクリプティングが利用できる環境でのみ使用されるべきである。</p>
       <note>
-         <p> Such user interface controls must still satisfy Success Criterion 4.1.2. Applying this technique without also providing role, name, and state information about the user interface control will results in Failure F59, Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML.</p>
+         <p>そのようなユーザインターフェース コントロールは SC 4.1.2 を達成しなければならない。ユーザインターフェース コントロールの役割、名前及び状態についての情報がないままこの達成基準を適用する場合、失敗例 F59 に該当し、スクリプトを用いて、HTML の div 要素又は span 要素をユーザインタフェースのコントロールにしたことによる達成基準 4.1.2 の失敗例となる。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head> Adding a JavaScript action to a div element</head>
+         <head>div要素にJavaScriptによるアクションを追加する</head>
          <description>
-            <p>The <code><![CDATA[div]]></code> element on the page is given a unique <code><![CDATA[id]]></code> attribute and a <code><![CDATA[tabindex]]></code> attribute with value 0.  A script uses the Document Object Model (DOM) to find the <code><![CDATA[div]]></code> element by its id and add the <code><![CDATA[onclick]]></code> handler and the <code><![CDATA[onkeyup]]></code> handler. The <code><![CDATA[onkeyup]]></code> handler will invoke the action when the Enter key is pressed. Note that the <code><![CDATA[div]]></code> element must be loaded into the DOM before it can be found and modified. This is usually accomplished by calling the script from the <code><![CDATA[onload]]></code> event of the <code><![CDATA[body]]></code> element.  The script to add the event handlers will only execute if the user agent supports and has JavaScript enabled.   </p>
+            <p>ページにある <code><![CDATA[div]]></code> 要素には一意の <code><![CDATA[id]]></code> a属性及び値が 0 の <code><![CDATA[tabindex]]></code> 属性が付与されている。スクリプトはドキュメントオブジェクトモデル（DOM）を利用し、idによって <code><![CDATA[div]]></code> 要素を見つけ <code><![CDATA[onclick]]></code> ハンドラ及び <code><![CDATA[onkeyup]]></code> ハンドラを追加する。<code><![CDATA[onkeyup]]></code> ハンドラはエンターキーが押下された際、アクションを実行する。<code><![CDATA[div]]></code> 要素を見つけて変更するには、<code><![CDATA[div]]></code> 要素が DOM の中に読み込まれた状態でなければならないことに注意する。これは、通常、<code><![CDATA[body]]></code>要素の <code><![CDATA[onload]]></code> イベントでスクリプトを呼び出すことで達成される。イベントハンドラを追加するスクリプトはユーザーエージェントがJavaScriptをサポートし、かつ有効にしている場合にのみ実行される。</p>
          </description>
          <code><![CDATA[
 ...
 <script type="text/javascript">
- // this is the function to perform the action. This simple example toggles a message.
+ // これはアクションを実行する関数である。このシンプルな例はメッセージを開閉する。
  function doSomething(event) {
    var msg=document.getElementById("message");
    msg.style.display = msg.style.display=="none" ? "" : "none";
-   //return false from the function to make certain that the href of the link does not get invoked
+   // リンクのhref属性が実行されないよう、関数からfalseを返す
    return false;
  }
- // this is the function to perform the action when the Enter key has been pressed.  
+ // これはエンターキーが押された際にアクションが実行される関数である。
  function doSomethingOnEnter(event) {
    var key = 0;
-   // Determine the key pressed, depending on whether window.event or the event object is in use
+   // window.event 又はイベントオブジェクトが使用されているかに応じて押されたキーを判定する。
    if (window.event) {
      key = window.event.keyCode;
    } else if (event) {
      key = event.keyCode;
    }
-   // Was the Enter key pressed?
+   // エンターキーが押されたか？
    if (key == 13) {
      return doSomething(event);
    } 
-   // The event has not been handled, so return true
+   // イベントが処理されなかったため、trueを返す
    return true;
  }
- // This setUpActions() function must be called to set the onclick and onkeyup event handlers onto the existing 
- // div element. This function must be called after the div element with id="active" has been loaded into the DOM.
- // In this example the setUpActions() function is called from the onload event for the body element.
+ // このsetUpActions()関数は存在するdiv要素にonclick及びonkeyupイベントハンドラを設定するために呼び出されなければならない。
+ // この関数はid="active"の付与されたdiv要素がDOMに読み込まれた後に呼び出されなければならない。
+ // この例では、setUpActions()関数はbody要素のonloadイベントから呼び出されている。
  function setUpActions() {
-   // get the div object
+   // divオブジェクトを取得する
    var active=document.getElementById("active");
-   // assign the onclick handler to the object.
-   // It is important to return false from the onclick handler to prevent the href attribute
-   // from being followed after the function returns.
+   // onclickハンドラをオブジェクトに割り当てる
+   // 関数が返された後、href属性を止めるため、onclickハンドラからfalseを返すことが重要である
    active.onclick=doSomething;
-   // assign the onkeyup handler to the object.
+   // onkeyupハンドラをオブジェクトに割り当てる
    active.onkeyup=doSomethingOnEnter;
  }
  </script>
 
  <body onload="setUpActions();">
- <p>Here is the link to modify with a javascript action:</p>
+ <p>javascriptの動作を用いて変更をもたらすリンク:</p>
  <div>
-  <span id="active" tabindex="0">Do Something</span>
+  <span id="active" tabindex="0">何かをする</span>
  </div>
- <div id="message">Hello, world!</div>
+ <div id="message">こんにちは世界</div>
 ...
 ]]></code>
          <description>
-            <p>Working example of this code: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="action-on-div.html"
-                    linktype="examples">Creating Divs with Actions using JavaScript</loc>.</p>
+            <p>このコードの実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR29/action-on-div.html">
+                    <!--linktype="examples"-->JavaScriptによる制御を用いてdiv要素を作成する</loc>。</p>
          </description>
       </eg-group>
    </examples>
@@ -134,29 +133,29 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>In a user agent that supports Scripting:</p>
+         <p>スクリプトをサポートするユーザエージェントで:</p>
          <olist>
             <item>
-               <p>Click on the control with the mouse</p>
+               <p>マウスを用い、コントロールをクリックする。</p>
             </item>
             <item>
-               <p>Check that the scripting action executes properly</p>
+               <p>スクリプトのアクションが正しく実行される。</p>
             </item>
             <item>
-               <p>Check that it is possible to navigate to and give focus to the control via the keyboard</p>
+               <p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p>
             </item>
             <item>
-               <p>Set keyboard focus to the control</p>
+               <p>キーボードのフォーカスをコントロールにセットする。</p>
             </item>
             <item>
-               <p>Check that pressing ENTER invokes the scripting action.</p>
+               <p>Enterキーを押すことで、スクリプトのアクションを呼び出すことができる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>All of the checks are true</p>
+               <p>チェックポイント全てを満たしている。</p>
             </item>
          </ulist>
       </expected-results>
