@@ -12,14 +12,18 @@
    <description>
     <p>スペースが限られているために、スクロールするテキストを表示するウェブページがある。小さなテキストウィンドウの中でテキストをスクロールさせることにより、その速度にあわせて読むことができる利用者にはコンテンツが利用可能となるが、それよりも速度が読むのが遅い利用者や、支援技術の利用者にとっては問題となる。この達成方法では、動きを止めて、テキスト・ブロック全体を静的に利用可能にするメカニズムを提供する。テキストは別ウィンドウかページ中の（より大きな）セクションで利用可能になるだろう。そうすることで、利用者はテキストを自分の速度で読むことができる。</p>
     <p>この達成方法は、動いているテキストが全て同時に画面に表示できない場合（例：長いチャットでの会話）には適用されない。</p>
-    <note><p class="prefix"><em>Note: </em>この達成方法は、不適合のコンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを表示するためのスタイルスイッチの達成方法とあわせて利用できる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29.html" linktype="css">C29： スタイル・スイッチャーを用いて、適合している代替版を提供する</loc> (CSS)及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
+    <note><p>この達成方法は、不適合のコンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="conforming-alternate-versiondef"
+                 linktype="glossary">適合している代替版</loc>のページを表示するためのスタイルスイッチの達成方法とあわせて利用できる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance"
+                 locn-note="uc-conforming-alt-versions-head"
+                 linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
 		</note>
   </description>
    <examples>
       <eg-group>
       <head>スクロールするテキストを展開する</head>
       <description><p>大きなテキスト・ブロックがページ中の小さなマーキーの範囲をスクロールする。ボタンにより、利用者はスクロールを止め、テキスト・ブロック全体を表示することができる。</p>
-<note><p class="prefix">このコード例ではCSSとJavaScriptの両方が利用可能で有効になっている必要がある。 </p>
+<note><p>このコード例ではCSSとJavaScriptの両方が利用可能で有効になっている必要がある。</p>
 				</note>
 <p>CSS部分：</p>
 </description>
@@ -89,7 +93,7 @@
     </div>
   </div>
 ... ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR36/scrolltext.html" linktype="examples">スクロールするテキストを展開</loc></p>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR36/scrolltext.html"><!-- linktype="examples"-->スクロールするテキストを展開</loc></p>
 </description>
     </eg-group>
    </examples>
