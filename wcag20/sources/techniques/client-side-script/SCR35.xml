@@ -42,7 +42,7 @@ function doStuff()
  }
 </script>
 <a href="dostuff.htm" onclick="return doStuff();">do stuff</a> ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jslink.html" linktype="examples">JavaScriptを用いてアクションリンクを作成</loc></p>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jslink.html"><!-- linktype="examples"-->JavaScriptを用いてアクションリンクを作成</loc></p>
 </description>
     </eg-group>
     <eg-group>
@@ -58,7 +58,7 @@ function doStuff()
 <form action="doStuff.aspx" onsubmit="return false;">
  <input type="submit" value="Do Stuff" onclick="doStuff();" />
 </form> ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jsbutton.html" linktype="examples">JavaScriptを用いてアクションボタンを作成</loc></p>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jsbutton.html"><!-- linktype="examples"-->JavaScriptを用いてアクションボタンを作成</loc></p>
 </description>
     </eg-group>
     <eg-group>
