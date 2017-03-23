@@ -377,7 +377,7 @@ function checkOptional(bValid, strValue, arClass)
 
    return bValid;
    }]]></code>
-      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS及びXHTMLで実装されている：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR32/index.php" linktype="examples">フォーム検証の例</loc></p>
+      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS及びXHTMLで実装されている：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR32/index.php"><!-- linktype="examples"-->フォーム検証の例</loc></p>
 </description>
     </eg-group>
    </examples>
