@@ -103,7 +103,7 @@
   </select>
 </body>
  </html>]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="working-examples/SCR19/dynselect.html" linktype="examples">動的なセレクトメニュー</loc>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR19/dynselect.html"><!-- linktype="examples"-->動的なセレクトメニュー</loc>
               
                      </p>
 </description>
