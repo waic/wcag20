@@ -173,7 +173,7 @@ function focusFormField(objAnchor, objEvent, objForm)
 </body>
 </html> ]]></code>
       <description><p>この例はクライアントサイドスクリプトに限定しているため、サーバーサイドの検証によって補完されるべきである。例では、クライアントサイドスクリプトが利用できるときのエラーメッセージの作成に限定される。</p>
-<p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR21/ex1.html" linktype="examples">フォームの検証</loc> </p>
+<p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR21/ex1.html"><!-- linktype="examples"-->フォームの検証</loc> </p>
 </description>
     </eg-group>
    </examples>
