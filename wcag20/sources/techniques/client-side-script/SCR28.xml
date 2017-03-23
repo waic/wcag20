@@ -11,7 +11,7 @@
    </applies-to>
    <description>
     <p>この達成方法は、繰り返される構成要素を利用者のコントロールの下でメニューを展開したり折りたたんだりできるメニューの中に置くことで、その構成要素をスキップできるようにする。利用者は、メニューを折りたたむことで繰り返される構成要素をスキップできる。利用者は、メニューの要素を隠したり削除したりするユーザインタフェースを呼び出すことができる。関連情報には、ナビゲーションをスキップするメカニズムを提供するために利用できるメニュー、ツールバー及びツリーの達成方法をいくつか挙げている。</p>
-    <note><p class="prefix">類似の方法は、サーバーサイドスクリプティングを用いて修正後のウェブページを読み込むことでも実装できる。</p>
+    <note><p>類似の方法は、サーバーサイドスクリプティングを用いて修正後のウェブページを読み込むことでも実装できる。</p>
 		</note>
   </description>
    <examples>
@@ -40,7 +40,7 @@
   </ul>
 
 ... ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR28/toggle-navbar.html" linktype="examples">ナビゲーションバーをリンクで切り替える</loc></p>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-navbar.html"><!-- linktype="examples"-->ナビゲーションバーをリンクで切り替える</loc></p>
 </description>
     </eg-group>
     <eg-group>
@@ -64,7 +64,7 @@
   </div>
 
 ...]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR28/toggle-toc.html" linktype="examples">目次をボタンで切り替える</loc></p>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-toc.html"><!-- linktype="examples"-->目次をボタンで切り替える</loc></p>
 </description>
     </eg-group>
    </examples>
@@ -88,7 +88,6 @@
    </resources>
    <related-techniques>
       <relatedtech idref="H69"/>
-      <relatedtech idref="H50"/>
       <relatedtech idref="H70"/>
       <!--  @@  the following were unaccepted wiki drafts at the time this tech was xmlized
                     # Using lists and links to make a click menu
