@@ -21,23 +21,55 @@
       <description><p>この例では、JavaScript を用いて直接リンクのテキストに文脈上の情報を追加する。linkクラスはどのテキストを追加するかを決定する。「リンクを展開する」リンクが選択されたとき、ページ内のそれぞれのリンクにテキストを追加すべきかがテストされる。</p>
 </description>
       <code><![CDATA[...
-<script>
- var linkContext = {
-   "hist":" 版　Webの歴史",
-   "cook":" 版　Cooking for Nerds"
- };
+<script type="text/javascript">
+var expanded = false;
+var linkContext = {
+	"hist":" 版　Webの歴史",
+	"cook":" 版 Cooking for Nerds"
+};
 
- function doExpand() {
-   var links = document.links;
-   var link;
+function doExpand() {
+	var links = document.links;
+	
+	for (link of links) {
+		var cn = link.className;
+		if (linkContext[cn]) {
+			span = link.appendChild(document.createElement("span"));
+			span.setAttribute("class", "linkexpansion");
+			span.appendChild(document.createTextNode(linkContext[cn]));
+		}
+	}
+	objUpdate = document.getElementById('expand');
+	if (objUpdate)
+	{
+		objUpdate.childNodes[0].nodeValue = "リンクをたたむ";
+	}
+	expanded = true;
+}
 
-   for (link in links) {
-     var cn = links[link].className;
-     if (linkContext[cn]) {
-       links[link].appendChild(document.createTextNode(linkContext[cn]));
-     }
-   }
- }
+function doCollapse() {
+	objUpdate = document.getElementById('expand');
+	var spans = document.getElementsByTagName("span");
+	var span;
+
+	// リンク一式を戻り、文頭から削除することで配列の添え数を変更する
+	// そして処理を乱す
+	for (i = spans.length - 1; i >= 0; i--) {
+		span = spans[i];
+		if (span.getAttribute("class") == "linkexpansion")
+			span.parentNode.removeChild(span);
+	}
+	if (objUpdate)
+	{
+		objUpdate.childNodes[0].nodeValue = "リンクを展開する";
+	}
+	expanded = false;
+}
+
+function toggle() {
+	if (expanded) doCollapse();
+	else doExpand();
+}
 </script>
 
 <h1>本のダウンロード</h1>
@@ -58,7 +90,11 @@
 </ul>
 
 ...]]></code>
-    </eg-group>
+         <description>
+            <p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR30/expand-links"><!--
+                    linktype="examples"-->要求に応じてリンクを展開する</loc>。</p>
+         </description>    </eg-group>
    </examples>
    <related-techniques>
       <relatedtech idref="G91"/>
@@ -73,23 +109,23 @@
           <p>ページの先頭近くに、リンクを展開するリンクがある。</p>
         </item>
         <item>
-          <p>1で確認したリンクがリンクテキストだけで見つけられる。</p>
+          <p>1. で確認したリンクがリンクテキストだけで見つけられる。</p>
         </item>
         <item>
           <p>リンクテキストだけで識別できないリンクをページ中から探す。</p>
         </item>
         <item>
-          <p>1.のコントロールを有効にする</p>
+          <p>1. のコントロールを有効にする</p>
         </item>
         <item>
-          <p>3.で見つけたリンクの目的が、リンクテキストだけで確認できる。</p>
+          <p>3. で見つけたリンクの目的が、リンクテキストだけで確認できる。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1., 2.及び5.を満たしている。</p>
+               <p>1., 2. 及び 5. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
