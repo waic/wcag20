@@ -30,7 +30,7 @@ function doStuff()
   return false; 
  }
 &lt;/script&gt;
-&lt;a href="dostuff.htm" onclick="return doStuff();"&gt;do stuff&lt;/a&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR35/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jslink.html" class="ex-ref">JavaScriptを用いてアクションリンクを作成</a></p></div></div><h3 class="small-head" id="SCR35-ex3">事例 3</h3><div class="example"><div class="textbody"><p>スクリプトを実行して、かつスクリプトを使わない利用者のためにフォーム送信を代替とするボタン。このアプローチは、スクリプトに依存しないサイトで、フォームの送信がスクリプトと同じ機能を提供できる場合にのみ使用できる。onsubmit="return false;"はフォームから送信されるのを防ぐ。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;a href="dostuff.htm" onclick="return doStuff();"&gt;do stuff&lt;/a&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jslink.html">JavaScriptを用いてアクションリンクを作成</a></p></div></div><h3 class="small-head" id="SCR35-ex3">事例 3</h3><div class="example"><div class="textbody"><p>スクリプトを実行して、かつスクリプトを使わない利用者のためにフォーム送信を代替とするボタン。このアプローチは、スクリプトに依存しないサイトで、フォームの送信がスクリプトと同じ機能を提供できる場合にのみ使用できる。onsubmit="return false;"はフォームから送信されるのを防ぐ。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;script&gt;
   function doStuff()
  {
@@ -39,7 +39,7 @@ function doStuff()
 &lt;/script&gt;
 &lt;form action="doStuff.aspx" onsubmit="return false;"&gt;
  &lt;input type="submit" value="Do Stuff" onclick="doStuff();" /&gt;
-&lt;/form&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="/WAI/WCAG20/Techniques/working-examples/SCR35/http://www.w3.org/TR/WCAG20-TECHS/working-examples/SCR35/jsbutton.html" class="ex-ref">JavaScriptを用いてアクションボタンを作成</a></p></div></div><h3 class="small-head" id="SCR35-ex4">事例 4</h3><div class="example"><div class="textbody"><p>スクリプトを実行するボタンで、<code>input type="image"</code>を用いて実装されているもの。<code>input</code>には、画像と等価のテキストを提供するために、タイトル属性を追加しなければならないことに注意する。この方法は、スクリプトに依存しているときのみに利用すべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;/form&gt; </code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jsbutton.html">JavaScriptを用いてアクションボタンを作成</a></p></div></div><h3 class="small-head" id="SCR35-ex4">事例 4</h3><div class="example"><div class="textbody"><p>スクリプトを実行するボタンで、<code>input type="image"</code>を用いて実装されているもの。<code>input</code>には、画像と等価のテキストを提供するために、タイトル属性を追加しなければならないことに注意する。この方法は、スクリプトに依存しているときのみに利用すべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;script&gt;
   function doStuff()
   {
