@@ -16,14 +16,64 @@
   </description>
    <examples>
       <eg-group>
+      <head>イベントハンドラで単一のコントロールをチェックする</head>
       <description><p>以下のスクリプトは、有効な日付がフォームのコントロールに入力されたかをチェックする。</p>
 </description>
       <code><![CDATA[
-&lt;label for="date"&gt;日付：&lt;/label&gt;
-&lt;input type="text" name="date" id="date" 
+<label for="date">日付：</label>
+<input type="text" name="date" id="date" 
 onchange="if(isNaN(Date.parse(this.value))) 
-alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" /&gt;]]></code>
+alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" />]]></code>
     </eg-group>
+   	<eg-group>
+   		<head>利用者がフォームを送信したときに複数のコントロールをチェックする</head>
+   		<description>
+   			<p>次の例はフォーム内の複数のコントロールを表している。<el>form</el> 要素は、利用者がフォームを送信しようとした際、検証スクリプトを実行するために、イベントハンドラを作成する <att>onsubmit</att> 属性を用いている。検証で問題がない場合、イベントは <propval>true</propval> を返し、フォームの送信を続行する。検証でエラーが検出された場合は、利用者が問題を修正できるようエラーメッセージを表示し、送信を取り消すために <propval>false</propval> を返す。</p>
+   			<note>
+   				<p>この事例は簡潔さのためにアラートを用いて説明している。利用者により役立つ通知は、問題のあるコントロールをハイライトし、エラーの内容とデータの修正が必要なコントロールに移動する方法をページ上に示すことである。</p>
+   				<p>この事例では簡潔さのために <el>form</el> 要素に <att>onsubmit</att> 属性を用いているが、通常であればページがロードした際にフォーム送信用のイベントリスナーを作成する。</p>
+   			</note>
+   			<p>スクリプトコード:</p>
+   			<codeblock><![CDATA[
+function validate() {
+	// initialize error message
+	var msg = "";
+	
+	//validate name
+	var pattern = /^[a-zA-Z\s]+$/;
+	var el = document.getElementById("name");
+	if (!pattern.test(el.value))  msg += "名前は文字及びスペースのみ含むことができます。";
+	
+	// validate number
+	var pattern = /^[\d\-+\.\s]+$/;
+	var el = document.getElementById("tel");
+	if (!pattern.test(el.value))  msg += "電話番号は数字及びセパレーターのみ含むことができます。";
+	
+	if (msg != "") {
+		alert(msg);
+		return false;
+	} else return true;
+}
+]]></codeblock>
+   			<p>フォームコード:</p>
+   			<codeblock><![CDATA[
+<form action="multiple-controls.html" onsubmit="return validate()">
+	<p>
+		<label for="name">名前: </label>
+		<input type="text" name="name" id="name" />
+	</p>
+	<p>
+		<label for="tel">電話番号: </label>
+		<input type="text" name="tel" id="tel" />				
+	</p>
+	<p>
+		<input type="submit" />
+	</p>
+</form>
+]]></codeblock>
+   			<p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR18/multiple-controls.html"><!-- linktype="examples"-->利用者がフォームを送信したときに複数のコントロールをチェックする実装例</loc>にこの実装方法のデモがある。</p>
+   		</description>
+   	</eg-group>
    </examples>
    <related-techniques>
       <relatedtech idref="G89"/>
@@ -43,7 +93,7 @@ alert('alert('このコントロールは日付が正しくありません。値
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている</p>
+               <p>2. を満たしている</p>
             </item>
          </ulist>
       </expected-results>
