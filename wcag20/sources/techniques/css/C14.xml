@@ -8,8 +8,11 @@
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-scale" relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="6">
@@ -23,12 +26,12 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、<code>em</code>単位でテキストのフォントサイズを指定することである。emはフォントのプロパティなので、フォントサイズの変更に応じてサイズが変わる。<el>body</el>要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p>
+    <p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、<code>em</code> 単位でテキストのフォントサイズを指定することである。emはフォントのプロパティなので、フォントサイズの変更に応じてサイズが変わる。<el>body</el> 要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p>
   </description>
    <examples>
       <eg-group>
-      <head>CSSでのemによるフォントサイズ指定</head>
-      <description><p>この事例では、どのような場合でも、<el>strong</el>要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p>
+      <head>CSS での em によるフォントサイズ指定</head>
+      <description><p>この事例では、どのような場合でも、<el>strong</el> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p>
 </description>
       <code><![CDATA[strong {font-size: 1.6em}
 
@@ -69,7 +72,7 @@
       <procedure>
       <olist>
         <item>
-          <p>フォントサイズを指定しているCSSプロパティの値が<code><![CDATA[em]]></code>単位である。</p>
+          <p>フォントサイズを指定している CSS プロパティの値が <code><![CDATA[em]]></code> 単位である。</p>
         </item>
       </olist>
     </procedure>
