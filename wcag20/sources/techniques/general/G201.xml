@@ -74,7 +74,7 @@
                 </p>
                 </body>
                 </html>]]></code>
-      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="working-examples/G201/new-window.html" linktype="examples">CSSを用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
+      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSSを用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
 </description>
     </eg-group>
    </examples>

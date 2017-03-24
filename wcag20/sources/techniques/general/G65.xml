@@ -57,8 +57,8 @@
       ul { padding-left: 0em; }
       ]]></code>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ex3.html"
-                    linktype="examples">Breadcrumb example</loc></p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G65/ex3.html"><!--
+                    linktype="examples"-->Breadcrumb example</loc></p>
 
       </eg-group>
    </examples>
