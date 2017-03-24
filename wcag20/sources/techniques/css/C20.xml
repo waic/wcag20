@@ -7,26 +7,27 @@
       <p>CSS</p>
    </applicability>
    <applies-to>
+      <success-criterion idref="visual-audio-contrast-scale" relationship="sufficient"/>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、1行が平均80字(日本語なら40字)以下になるようにして利用者がコンテンツを見ることができるように、CSSで指定することである。
+    <p>この達成方法の目的は、1 行が平均 80 字(日本語なら 40 字)以下になるようにして利用者がコンテンツを見ることができるように、CSS で指定することである。
 こうすることで、テキストの長い行を読む際に、現在読んでいる位置を維持することが困難な読字障害や視覚障害のある利用者が、より効率よくコンテンツをを閲覧したり操作したりできるようになる。
 この達成方法はまた、文字サイズの拡大に合わせてカラム幅を広くすることにもなり、それによって、文字サイズが大きくなるに従ってテキストの一部が欠けて読めなくなるような事態も発生しにくくなる。</p>
-    <p>この達成方法は、コンテンツ制作者に対して、CSSを使ってデフォルトでテキストの各行の幅を80字(日本語は40字)以下に制限することを要求するものではない、という点に注意してほしい。
-それよりもむしろ、CSSレイアウトに相対サイズを用いることを推奨して、利用者が1行80字以下で読むことができないようなカラム幅には、設定しないようにする。</p>
+    <p>この達成方法は、コンテンツ制作者に対して、CSS を使ってデフォルトでテキストの各行の幅を 80 字 (日本語は 40 字) 以下に制限することを要求するものではない、という点に注意してほしい。
+それよりもむしろ、CSS レイアウトに相対サイズを用いることを推奨して、利用者が 1 行 80 字以下で読むことができないようなカラム幅には、設定しないようにする。</p>
   </description>
    <examples>
       <eg-group>
       <description><p>
-この例では、<el>div</el>要素の幅はスタイルシートでem単位で指定されている。</p>
-<note><p class="prefix">
-CSSプロパティの<code>max-width</code>は、Internet Explorer 6 以前のバージョンではサポートされていない。</p></note>
+この例では、<el>div</el> 要素の幅はスタイルシートでem単位で指定されている。</p>
+<note><p>
+CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前のバージョンではサポートされていない。</p></note>
 </description>
       <code><![CDATA[#main_content {max-width: 70em}]]></code>
       <description><p>
-テキストのブロックは、コンテンツ内の<el>div</el>要素の中に収められる。</p>
+テキストのブロックは、コンテンツ内の <el>div</el> 要素の中に収められる。</p>
 </description>
       <code><![CDATA[<div id="main_content"> 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing ...</p>
@@ -34,11 +35,11 @@ CSSプロパティの<code>max-width</code>は、Internet Explorer 6 以前の�
     </eg-group>
     <eg-group>
       <description><p>
-この例では、<el>div</el>要素の幅はスタイルシートでパーセントで指定されている。</p>
+この例では、<el>div</el> 要素の幅はスタイルシートでパーセントで指定されている。</p>
 </description>
       <code><![CDATA[#main_content {width: 90%}]]></code>
       <description><p>
-テキストのブロックは、コンテンツ内の<el>div</el>要素の中に収められる。
+テキストのブロックは、コンテンツ内の <el>div</el> 要素の中に収められる。
 </p>
 </description>
       <code><![CDATA[<div id="main_content"> 
@@ -95,14 +96,14 @@ CSSプロパティの<code>max-width</code>は、Internet Explorer 6 以前の�
           <p>カラム幅が、相対的な単位で定義されている。</p>
         </item>
         <item>
-          <p>行の長さが、ブラウザのウィンドウをリサイズしても80字（日本語は40字）以下を維持している。</p>
+          <p>行の長さが、ブラウザのウィンドウをリサイズしても 80 字（日本語は 40 字）以下を維持している。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.及び2.を満たしている。</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

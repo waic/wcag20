@@ -186,7 +186,7 @@
       <code><![CDATA[.upper2 { text-transform:uppercase; letter-spacing:1em; }]]></code>
     </eg-group>
     <eg-group>
-      <head>0：テキストと画像をレイヤー化するためにCSSのbackground-imageを使用する。</head>
+      <head>テキストと画像をレイヤー化するためにCSSのbackground-imageを使用する。</head>
       <description><p>CSSの<code>font-style</code>プロパティを使って、バナーのテキスト要素を表示させ、<code>background-image</code>プロパティを使って、テキストの後ろの画像を表示させる。</p>
 <p>XHTML：</p>
 </description>
@@ -217,7 +217,7 @@
 }]]></code>
     </eg-group>
     <eg-group>
-      <head>1：テキストの最初の行の表現を制御するためにCSSのfirst-lineを使用する。</head>
+      <head>テキストの最初の行の表現を制御するためにCSSのfirst-lineを使用する。</head>
       <description><p>CSSの<code>:first-line</code>擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p>
 <p>XHTML：</p>
 </description>
@@ -228,7 +228,7 @@
       <code><![CDATA[.startline:first-line { font-size:2em; color:#990000; }]]></code>
     </eg-group>
     <eg-group>
-      <head>2： テキストの最初の文字の表現を制御するためにCSSのfirst-letterを使用する。</head>
+      <head>テキストの最初の文字の表現を制御するためにCSSのfirst-letterを使用する。</head>
       <description><p>CSSの<code>:first-letter</code>擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p>
 <p>XHTML：</p>
 </description>
