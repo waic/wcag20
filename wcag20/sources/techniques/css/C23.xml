@@ -46,8 +46,11 @@ Internet Explorer 6 は、システム設定で同じ色が選択されない限
       <see-also>
          <ulist>
             <item>
-          <p diff="del">BBC's Web page with instructions how to change the browser colors in most browsers</p>
-        </item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.bbc.co.uk/accessibility/guides/change_colours/ ">BBC's Web page with instructions how to change the browser colors in most browsers</loc>
+               </p>
+            </item>
          </ulist>
       </see-also>
    </resources>
