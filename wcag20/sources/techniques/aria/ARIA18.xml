@@ -4,8 +4,8 @@
 <technique id="ARIA18">
    <short-name>エラーを特定するために aria-alertdialog を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
@@ -23,49 +23,40 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to alert people that an input error has occured. Using <code><![CDATA[role="alertdialog"]]></code> creates a notification. This notification should be modal with the following characteristics:
-</p>
+      <p>この達成方法の目的は、入力エラーが発生していることを利用者に警告することにある。<code><![CDATA[role="alertdialog"]]></code>を使用することで、通知を作成することができる。この通知は、次のような特徴をもつモーダルであるべきである:</p>
       <ulist>
          <item>
-            <p>
-               <att>aria-label</att> or <att>aria-labelledby</att> attribute gives the alertdialog an accessible name.
-</p>
+            <p><att>aria-label</att>又は<att>aria-labelledby</att>属性で、アラートダイアログにアクセシブルな名前を与えている。</p>
          </item>
          <item>
-            <p>
-               <att>aria-describedby</att> provides a reference to the text of the alert.
-</p>
+            <p><att>aria-describedby</att>で、アラートのテキストへの参照を提供している。</p>
          </item>
          <item>
-            <p>The alertdialog contains at least one focusable control, and the focus should move to that control when the alertdialog opens.
-</p>
+            <p>そのアラートダイアログは、少なくとも1つのフォーカス可能なコントロールを含んでおり、アラートダイアログが開く際にフォーカスがそのコントロールに移動すべきである。</p>
          </item>
          <item>
-            <p>The tab order is constrained within the alertdialog whilst it is open.
-</p>
+            <p>タブ順序は、タブが開いている間アラートダイアログの内部に拘束される。</p>
          </item>
          <item>
-            <p>When the dialog is dismissed, the focus moves back to the position it had before the dialog opened, if possible.
-</p>
+            <p>ダイアログが閉じられる場合、可能であれば、フォーカスはダイアログが開く前の位置に戻る。</p>
          </item>
       </ulist>
-      <p>Note that the alertdialog should not be present in a way that it will be accessed by AT until it is needed. One way to do this is not to include it in the static HTML and instead to insert it into the DOM via script when the error condition is triggered. The insertion would correspond to the following HTML sample.
-</p>
+      <p>アラートダイアログは、必要とされるまで、支援技術によってアクセスされる方法で存在すべきではないことに注意。これを行う1つの方法は、静的なHTMLに含めない代わりに、エラー状態がトリガーされた時にスクリプトを通してDOMに挿入することである。この挿入は、次のHTMLサンプルに対応する。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Alert dialog</head>
+         <head>アラートダイアログ</head>
          <description>
-            <p>This example shows how a notification using <code><![CDATA[role="alertdialog"]]></code> can be used to notify someone they have entered invalid information.</p>
+            <p>この例は、<code><![CDATA[role="alertdialog"]]></code>を使用する通知が、無効な情報を入力した人に通知するためにどのように使用できるかを示す。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="alertdialog" aria-labelledby="alertHeading" aria-describedby="alertText">
 <h1 id="alertHeading">Error</h1>
 <div id="alertText">Employee's Birth Date is after their hire date. Please verify the birth date and hire date.</div>
 <button>Save and Continue</button>
 <button>Return to page and correct error</button>
 </div>]]></codeblock>
-            <p>Working example: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="aria-role-alertdialog.html"
-                    linktype="examples">Alert dialog</loc>.</p>
+                    linktype="examples">アラートダイアログ</loc>。</p>
          </description>
       </eg-group>
    </examples>
@@ -86,39 +77,32 @@
       <procedure>
          <olist>
             <item>
-               <p>Trigger the error that causes the alertdialog to appear.
-</p>
+               <p>アラートダイアログが表示される原因となるエラーをトリガーする。</p>
             </item>
             <item>
-               <p>Determine that the alertdialog contains at least one focusable control, and the focus moves to that control when the alertdialog opens.
-</p>
+               <p>アラートダイアログは少なくとも1つのフォーカス可能なコントロールを含み、アラートダイアログが開いた際にフォーカスがそのコントロールに移動する。</p>
             </item>
             <item>
-               <p>Determine that the tab order is constrained within the alertdialog while it is open, and when the dialog is dismissed, the focus moves back to the position it had before the dialog opene, if possible.
-</p>
+               <p>タブ順序は、タブが開いている間アラートダイアログ内に拘束され、ダイアログを閉じた際に、可能ならば、フォーカスはダイアログが開く前の位置に戻る。</p>
             </item>
             <item>
-               <p>Examine the element with <code><![CDATA[role="alertdialog"]]></code> applied.
-</p>
+               <p>適用された<code><![CDATA[role="alertdialog"]]></code>をもつ要素を調べる。</p>
             </item>
             <item>
-               <p>Determine that either the <att>aria-label</att> or <att>aria-labelledby</att> attribute has been correctly used to give the alertdialog an accessible name.
-</p>
+               <p><att>aria-label</att>又は<att>aria-labelledby</att>属性のいずれかが、適切にアラートダイアログにアクセシブルな名前を与えるために使用されている。</p>
             </item>
             <item>
-               <p>Determine that the contents of the alertdialog identifies the input error.
-</p>
+               <p>アラートダイアログのコンテンツが入力エラーを識別している。</p>
             </item>
             <item>
-               <p>Determine whether contents of the alertdialog suggests how to fix the error.
-</p>
+               <p>アラートダイアログのコンテンツがエラーを修正する方法を提案している。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>Checks 2, 3, 5 and 6 are true. For SC 3.3.3, Check 7 is also true.</p>
+               <p>2.、3.、5.及び6.を満たしている。達成基準3.3.3を達成するためには、7も満たしている必要がある。</p>
             </item>
          </ulist>
       </expected-results>
