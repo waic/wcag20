@@ -12,8 +12,8 @@
    </applies-to>
    <description>
     <p>多くの認知障害を持つ人々は行間がシングル・スペースに設定されたテキストを読む事が困難である。行の高さを増やすボタンは彼らが内容を読む助けとなる。段落の間が離れている状態を維持するためには、段落間の幅は、行送り幅の少なくとも1.5倍の高さになるように広げられるべきである。</p>
-    <note><p class="prefix">
-		この達成方法は、非適合コンテンツに対して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef" linktype="glossary">適合している代替版のページ</loc>を提供するための、スタイルスイッチの達成方法と組み合わせて用いることができる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29.html" linktype="css">C29: スタイル・スイッチャーを用いて、適合している代替版を提供する</loc> (CSS)、及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" xlink:type="simple" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
+    <note><p>
+		この達成方法は、非適合コンテンツに対して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版のページ</loc>を提供するための、スタイルスイッチの達成方法と組み合わせて用いることができる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>、及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
 	</note>
   </description>
    <examples>

@@ -35,7 +35,7 @@
           <p>そのページには、適合している代替版へのリンクがある。</p>
         </item>
         <item>
-          <p>代替版が、オリジナルページの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html#conforming-alternate-versiondef">適合している代替版</loc>であり、かつ要求された適合レベルでWCAG2.0に適合している。</p>
+          <p>代替版が、オリジナルページの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>であり、かつ要求された適合レベルでWCAG2.0に適合している。</p>
         </item>
       </olist>
     </procedure>
