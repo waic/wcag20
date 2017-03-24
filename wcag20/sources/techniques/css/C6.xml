@@ -4,19 +4,22 @@
 <technique id="C6">
    <short-name>構造を示すマークアップをした上で、コンテンツを配置する</short-name>
    <applicability>
-      <p>CSSに対応しているウェブコンテンツ技術全て</p>
+      <p>CSS に対応しているウェブコンテンツ技術全て</p>
    </applicability>
    <applies-to>
       <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
       <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、スタイルシートが適用されなくても意味の伝わる表現がなされるようにした上で、スタイルシートを使って見栄えをさらに良くする方法を示すことである。 CSS2の配置関連のプロパティを使用すれば、コンテンツを利用者のビューポート内の任意の位置に配置することができる。構造を示す要素を使っていれば、スタイルが適用されていない際でもコンテンツの意味は正しく伝えられる。</p>
+    <p>この達成方法の目的は、スタイルシートが適用されなくても意味の伝わる表現がなされるようにした上で、スタイルシートを使って見栄えをさらに良くする方法を示すことである。CSS2 の配置関連のプロパティを使用すれば、コンテンツを利用者のビューポート内の任意の位置に配置することができる。構造を示す要素を使っていれば、スタイルが適用されていない際でもコンテンツの意味は正しく伝えられる。</p>
   </description>
    <examples>
       <eg-group>
       <description><p>
-この事例では、コンテンツに対して構造（定義リスト）を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるためにCSSが使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTMLの定義リストを表示する際に<el>dd</el>要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を0にしている。</p>
+この事例では、コンテンツに対して構造（定義リスト）を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <el>dd</el> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p>
 <p>表示させるコンテンツは以下の通り：</p>
 </description>
       <code role="html401"><![CDATA[<div class="box">
@@ -31,7 +34,7 @@
     </dt>
   </dl>
  </div> ]]></code>
-      <description><p>上記要素の配置及び表示指定をするCSSは以下の通り：</p>
+      <description><p>上記要素の配置及び表示指定をする CSS は以下の通り：</p>
 </description>
       <code role="html401"><![CDATA[
 .item1 {
@@ -90,28 +93,16 @@
    top: 5em;
  }  ]]></code>
       <description><p>
-スタイルシートが適用されると、データは「製品」と「所在地」の2段組みで表示される。スタイルシートが適用されない場合は、構造と読み上げ順序を保持した状態の定義リストとしてテキストが表示される。</p>
+スタイルシートが適用されると、データは「製品」と「所在地」の 2 段組みで表示される。スタイルシートが適用されない場合は、構造と読み上げ順序を保持した状態の定義リストとしてテキストが表示される。</p>
 </description>
     </eg-group>
    </examples>
-   <resources>
-    <see-also>
-      <ulist>
-        <item>
-          <p diff="del">CSS-Discuss Home Page</p>
-        </item>
-        <item>
-          <p diff="del">CSS-Discuss on CSS Layouts</p>
-        </item>
-      </ulist>
-    </see-also>
-  </resources>
   <related-techniques>
       <relatedtech idref="F1"/>
    </related-techniques>
    <tests>
       <procedure>
-      <p>CSSで表示位置を調整しているコンテンツに対して：</p>
+      <p>CSS で表示位置を調整しているコンテンツに対して：</p>
       <olist>
         <item>
           <p>文書からスタイル情報を取り除く、又はユーザエージェントでスタイルシートを無効にする。</p>
@@ -124,7 +115,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>2.を満たしている。</p>
+          <p>2. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>
