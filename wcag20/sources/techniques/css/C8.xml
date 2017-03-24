@@ -8,6 +8,9 @@
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
    </applies-to>
    <description>
     <p>この達成方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
@@ -20,10 +23,7 @@
       <description><p>
 以下のCSSは、レベル2の見出しに含まれる各文字に対して1文字分に相当する間隔を加える:</p>
 </description>
-      <code role="html401"><![CDATA[
-h2 {
-	letter-spacing: 1em;
-} ]]></code>
+      <code role="html401"><![CDATA[h2 {	letter-spacing: 1em; }]]></code>
       <description><p>
 マークアップは以下の通り: </p>
 </description>
@@ -40,7 +40,7 @@ h2 {
             <item>
                <p> 
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1998/REC-CSS2-19980512/text.html#spacing-props">CSS 2.0: Letter and word spacing</loc> 
+                       href="https://www.w3.org/TR/CSS2/text.html#spacing-props">CSS 2: Letter and word spacing</loc> 
                </p>
             </item>
          </ulist>
@@ -55,14 +55,14 @@ h2 {
       <p>文字間隔が標準ではない状態で表示されている各単語に対して: </p>
       <olist>
         <item>
-          <p>文字間隔を調整する手段としてCSSの<code><![CDATA[letter-spacing]]></code>プロパティが用いられている。</p>
+          <p>文字間隔を調整する手段として CSS の<code> <![CDATA[letter-spacing]]></code> プロパティが用いられている。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1.を満たしている。</p>
+          <p>1. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>
