@@ -25,7 +25,7 @@
         </item>
         <item>
           <p>
-            <phrase diff="add">代替テキストが提供されているかどうかをランダムにチェックすると、手順とポリシーの通りである。</phrase>
+            代替テキストが提供されているかどうかをランダムにチェックすると、手順とポリシーの通りである。
           </p>
         </item>
       </olist>
@@ -33,7 +33,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.<phrase diff="add"> 及び 2. </phrase>を満たしている。</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

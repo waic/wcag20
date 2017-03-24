@@ -65,7 +65,7 @@
       <relatedtech idref="C12"/>
       <relatedtech idref="C13"/>
    </related-techniques>
-   <tests diff="chg">
+   <tests>
       <procedure>
       <olist>
         <item>

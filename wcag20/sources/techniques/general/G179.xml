@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G179">
-   <short-name>文字サイズを変更しても、テキストコンテナの <phrase diff="chg">幅</phrase>が変更されない際に、コンテンツ又は機能が損なわれないようにする</short-name>
+   <short-name>文字サイズを変更しても、テキストコンテナの幅が変更されない際に、コンテンツ又は機能が損なわれないようにする</short-name>
    <applicability>
       <p>ウィンドウのサイズを変更するとテキストを折り返す、全てのウェブコンテンツ技術</p>
    </applicability>

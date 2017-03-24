@@ -121,7 +121,7 @@
        <p>関連するコントロールのグループにおいて、各コントロールの個々のラベルが十分な記述を提供しておらず、追加でグループレベルの記述が必要な場合</p>
       <olist>
         <item>
-          <p diff="chg">論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、1 つの <el>fieldset</el> 要素内に含められている。</p>
+          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、1 つの <el>fieldset</el> 要素内に含められている。</p>
         </item>
         <item>
           <p>各 <el>fieldset</el> 要素には、そのグループの説明を含めた <el>legend</el> 要素が指定されている。</p>

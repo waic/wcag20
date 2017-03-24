@@ -147,9 +147,9 @@
 </description>
       <code role="xhtml"><![CDATA[<label for="text_1">果物の種類</label>
 <input id="text_1" type="text" value="バナナ"> ]]></code>
-      <description><exsubhead>事例 3b</exsubhead><p>事例 3b では、入力フィールドが事例 3a と同じ役割（Role）<phrase diff="del">と値（Value）</phrase>を持つが、<phrase diff="add">値（Value）がなく、</phrase>識別名（Name）を <att>title</att> 属性で指定している点が異なる。</p>
+      <description><exsubhead>事例 3b</exsubhead><p>事例 3b では、入力フィールドが事例 3a と同じ役割（Role）を持つが、<phrase>値（Value）がなく、</phrase>識別名（Name）を <att>title</att> 属性で指定している点が異なる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input id="text_1" type="text" <phrase diff="del">value="バナナ" </phrase>title="果物の種類"> ]]></code>
+      <code role="xhtml"><![CDATA[<input id="text_1" type="text" title="果物の種類">]]></code>
     </eg-group>
     <eg-group>
       <head>チェックボックス</head>
@@ -168,7 +168,7 @@
     </eg-group>
     <eg-group>
       <head>セレクトメニュー</head>
-      <description><exsubhead>事例 6a</exsubhead><p>事例 6a は、<el>select</el> 要素によって「リストボックス」という役割（Role）を持っている。識別名（Name）は「数量」で、<el>label</el> 要素から与えられている。<el>select</el>要素に識別名を付け忘れるのは、よくあるエラーの一つである。値（Value）は、<att>selected</att> 属性<phrase diff="chg">（XHTMLでは値を "<code>selected</code>" と指定）のある</phrase><el>option</el>要素であり、初期値は「2個」ということになる。</p>
+      <description><exsubhead>事例 6a</exsubhead><p>事例 6a は、<el>select</el> 要素によって「リストボックス」という役割（Role）を持っている。識別名（Name）は「数量」で、<el>label</el> 要素から与えられている。<el>select</el>要素に識別名を付け忘れるのは、よくあるエラーの一つである。値（Value）は、<att>selected</att> 属性（XHTMLでは値を "<code>selected</code>" と指定）のある<el>option</el>要素であり、初期値は「2個」ということになる。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="s1">数量</label>
 <select id="s1" size="1">
@@ -190,7 +190,7 @@
 </description>
       <code role="xhtml"><![CDATA[<label for="ta_1">あなたの発言をここに入力</label>
 <textarea id="ta_1" >87年前</textarea> ]]></code>
-      <description><exsubhead>事例 7b</exsubhead><p><phrase diff="chg">事例 7bは、同じ役割（Role）を持ち、識別名（Name）は<el>title</el>属性を用いて指定していて、値（Value）は空である。</phrase></p>
+      <description><exsubhead>事例 7b</exsubhead><p>事例 7bは、同じ役割（Role）を持ち、識別名（Name）は<el>title</el>属性を用いて指定していて、値（Value）は空である。</p>
 </description>
       <code role="xhtml"><![CDATA[<textarea id="ta_1" title="あなたの発言をここに入力" >87年前</textarea> ]]></code>
     </eg-group>

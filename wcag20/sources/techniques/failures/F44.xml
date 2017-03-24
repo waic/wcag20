@@ -19,12 +19,12 @@
       <description><p>次の事例は、代替のタブ順序を指定するために tabindex を誤って用いている。</p>
 </description>
       <code role="html401"><![CDATA[
-<phrase diff="chg"><ol></phrase>
+  <ol>
    <li><a href="main.html" tabindex="1">ホーム</a></li>
    <li><a href="chapter1.html" tabindex="4">第1章</a></li>
    <li><a href="chapter2.html" tabindex="3">第2章</a></li>
    <li><a href="chapter3.html" tabindex="2">第3章</a></li>
-<phrase diff="chg"></ol></phrase>]]></code>
+  </ol>]]></code>
       <description><p>このリストを Tab キーを用いてナビゲートする場合、リストは、ホーム、第 3 章、第 2 章、第 1 章、という順序でナビゲートされ、コンテンツにおける順序通りではなくなってしまう。</p>
 </description>
     </eg-group>
