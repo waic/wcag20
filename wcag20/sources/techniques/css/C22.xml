@@ -104,7 +104,7 @@
     </eg-group>
     <eg-group>
       <head>テキストの色を制御するためにCSSのcolorを使用する。</head>
-      <description><note><p class="prefix">この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p>
+      <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p>
                      </note>
 <p>XHTML：</p>
 </description>
@@ -115,7 +115,7 @@
     </eg-group>
     <eg-group>
       <head>イタリック体のテキストにするためにCSSのfont-styleを使用する。</head>
-      <description><note><p class="prefix">この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
+      <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML：</p>
 </description>
       <code><![CDATA[<p>この記事は <a href="http://www.example.com" class="featuredsite">内分泌学のブログ</a>で入手可能である。</p>]]></code>
@@ -125,7 +125,7 @@
     </eg-group>
     <eg-group>
       <head>テキストの太さを制御するためにCSSのfont-weightを使用する。</head>
-      <description><note><p class="prefix">この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
+      <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML：</p>
 </description>
       <code><![CDATA[<p>この取引は <span class="highlight">今</span>利用可能です！</p>]]></code>
@@ -135,7 +135,7 @@
     </eg-group>
     <eg-group>
       <head>テキストの大文字小文字の区別を制御するためにCSSのtext-transformを使用する。</head>
-      <description><note><p class="prefix">この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
+      <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML：</p>
 </description>
       <code><![CDATA[<p>2008年 <span class="caps">3月</span> 9日</p>]]></code>

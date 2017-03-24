@@ -409,7 +409,7 @@ function checkOptional(bValid, strValue, arClass)
           <p>アンカータグによってエラーメッセージと関連付けられたすべてのフィールドに対して、繰り返す。</p>
         </item>
       </olist>
-      <note><p class="prefix">上記の手順を、支援技術を用いて実行することも推奨する。</p>
+      <note><p>上記の手順を、支援技術を用いて実行することも推奨する。</p>
 		</note>
     </procedure>
       <expected-results>

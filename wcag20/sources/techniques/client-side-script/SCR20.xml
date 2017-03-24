@@ -77,7 +77,7 @@ onmouseout="swapImageOff('menu')" onblur="swapImageOff('menu')"&gt;
       <code><![CDATA[
 &lt;img onclick="nextPage();" onkeypress="nextPage();" tabindex="0" src="arrow.gif" 
 alt="次のページへ移動"&gt;]]></code>
-      <description><note><p class="prefix">この例では <el>img</el> 要素に tabindex を用いている。現時点では（文法的に）妥当ではないが、この機能を実装するための古典的なテクニックとして用いられている。このようなカスタム・コントロールでは、コントロールの役割（role）と状態（state）を支援技術に引き渡すために WAI-ARIA も用いるべきである。</p>
+      <description><note><p>この例では <el>img</el> 要素に tabindex を用いている。現時点では（文法的に）妥当ではないが、この機能を実装するための古典的なテクニックとして用いられている。このようなカスタム・コントロールでは、コントロールの役割（role）と状態（state）を支援技術に引き渡すために WAI-ARIA も用いるべきである。</p>
 				</note>
 </description>
     </eg-group>
