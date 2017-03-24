@@ -3,7 +3,9 @@
   SYSTEM "../../xmlspec.dtd">
 <technique id="G107">
    <short-name>状況の変化に対するトリガーとして、"focus" ではなく、"activate" を使用する</short-name>
-   <applicability/>
+   <applicability>
+      <p>全てのウェブコンテンツ技術に適用する。</p>
+   </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-receive-focus" relationship="sufficient"/>
    </applies-to>
