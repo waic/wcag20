@@ -4,7 +4,7 @@
 <technique id="C9">
    <short-name> 装飾目的の画像を付加するために、CSS を使用する</short-name>
    <applicability>
-      <p>画像を表示させるためにCSSが利用可能なウェブコンテンツ技術</p>
+      <p>画像を表示させるために CSS が利用可能なウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -12,8 +12,8 @@
    <description>
     <p>この達成方法の目的は、単に装飾することだけが目的の画像と、マークアップを追加することなくウェブコンテンツに対して視覚的な整形を行うための画像を追加する方法を示すことである。
 これによって、支援技術がテキストではないコンテンツを無視することが可能になる。
-文字サイズの拡大やハイコントラストの設定を妨げているCSSの背景画像を消すことができるように、一部のユーザエージェントでは、利用者の要求に応じてCSSを無視または無効にすることができる。</p>
-    <p>背景画像は、以下のCSSプロパティで表示させることができる：</p>
+文字サイズの拡大やハイコントラストの設定を妨げているCSSの背景画像を消すことができるように、一部のユーザエージェントでは、利用者の要求に応じて CSS を無視または無効にすることができる。</p>
+    <p>背景画像は、以下の CSS プロパティで表示させることができる：</p>
     <ulist>
       <item>
         <p><code><![CDATA[background]]></code>, </p>
@@ -22,7 +22,7 @@
         <p><code><![CDATA[background-image]]></code>, </p>
       </item>
       <item>
-        <p><code><![CDATA[content]]></code>（<code><![CDATA[:before]]></code>または<code><![CDATA[:after]]></code>疑似要素と組み合わせて使用）</p>
+        <p><code><![CDATA[content]]></code>（<code><![CDATA[:before]]> </code> 又は <code><![CDATA[:after]]></code> 疑似要素と組み合わせて使用）</p>
       </item>
       <item>
         <p><code><![CDATA[list-style-image]]></code>. </p>
@@ -115,12 +115,12 @@ height: 100%;
          <ulist>
             <item>
                <p> The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1998/REC-CSS2-19980512/colors.html#propdef-background">background property in the CSS 2.0 specification</loc> 
+                       href="https://www.w3.org/TR/CSS2/colors.html#propdef-background">background property in the CSS 2 specification</loc> 
                </p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-background">HTML 4.01 specification</loc> には、<code>body</code>要素の<code>background</code>属性は非推奨であると記述されている。</p>
+                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-background">HTML 4.01 specification</loc> には、<code>body</code> 要素の <code>background</code> 属性は非推奨であると記述されている。</p>
             </item>
             <item>
           <p>
@@ -136,6 +136,7 @@ height: 100%;
       </see-also>
    </resources>
    <related-techniques>
+      <relatedtech idref="C30"/>
       <relatedtech idref="F3"/>
    </related-techniques>
    <tests>
@@ -145,14 +146,14 @@ height: 100%;
           <p>装飾目的の画像がある。</p>
         </item>
         <item>
-          <p>それらがCSSで表示させられている。</p>
+          <p>それらが CSS で表示させられている。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>1.に該当する場合に、2.を満たしている。</p>
+          <p>1. に該当する場合に、2. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>
