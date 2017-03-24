@@ -4,7 +4,7 @@
 <technique id="C15"><!-- This technique was combined with C16 -->
    <short-name>ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSSを使用する</short-name>
    <applicability>
-      <p>CSS、HTML及びXHTML</p>
+      <p>CSS、HTML 及び XHTML</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
@@ -35,9 +35,9 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
   </description>
    <examples>
       <eg-group>
-      <head>: リンク要素</head>
+      <head>リンク要素</head>
       <description><p>
-この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSSが使用されている。</p>
+この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSS が使用されている。</p>
 <p>
 表示されるコンテンツは次の通り：</p>
 </description>
@@ -60,9 +60,9 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
 }]]></code>
     </eg-group>
     <eg-group>
-      <head>: フォーカスを受け取った要素をハイライトする</head>
+      <head>フォーカスを受け取った要素をハイライトする</head>
       <description><p>
-この事例では、背景色を変更することによって、フォーカスを受け取ったときに入力フィールドのスタイルを変更するために:focus疑似クラスが使用されている。</p>
+この事例では、背景色を変更することによって、フォーカスを受け取ったときに入力フィールドのスタイルを変更するために :focus 疑似クラスが使用されている。</p>
 </description>
       <code role="xhtml"><![CDATA[
 <html>
@@ -88,6 +88,11 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
     </form>
   </body>
 </html>]]></code>
+         <description>
+            <p>このコードの使用例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
+                    <!--linktype="examples"-->フォーカスを受け取る要素を強調表示する例</loc>。</p>
+         </description>
     </eg-group>
    </examples>
    <resources>
@@ -96,13 +101,13 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
             <item>
                <p> 
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2.0: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</loc>
+                       href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</loc>
 								       </p>
             </item>
             <item>
                <p> 
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/CSS2/selector.html#adjacent-selectors">CSS 2.0: 5.7 Adjacent sibling selectors</loc> 
+                       href="http://www.w3.org/TR/CSS2/selector.html#adjacent-selectors">CSS 2: 5.7 Adjacent sibling selectors</loc> 
                </p>
             </item>
          </ulist>
