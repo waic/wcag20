@@ -4,7 +4,7 @@
 <technique id="ARIA10">
    <short-name>非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</short-name>
    <applicability>
-      <p>この達成方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>を用いるHTMLに適用される。</p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>を用いるHTML。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
