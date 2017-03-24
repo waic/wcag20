@@ -8,8 +8,11 @@
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-scale" relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="cosufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="7-">
@@ -22,7 +25,7 @@
    <examples>
       <eg-group>
       <head>CSSでのキーワードによるフォントサイズ指定</head>
-      <description><p>この事例では、どのような設定であっても、<el>strong</el>要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p>
+      <description><p>この事例では、どのような設定であっても、<el>strong</el> 要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p>
 </description>
       <code><![CDATA[strong {font-size: larger}
 
@@ -63,7 +66,7 @@
       <procedure>
       <olist>
         <item>
-          <p>フォントサイズを指定しているCSSプロパティの値が、<code><![CDATA[xx-small]]></code>、<code><![CDATA[x-small]]></code>、<code><![CDATA[small]]></code>、<code><![CDATA[medium]]></code>、<code><![CDATA[large]]></code>、<code><![CDATA[x-large]]></code>、<code><![CDATA[xx-large]]></code>、<code><![CDATA[smaller]]></code>、<code><![CDATA[larger]]></code>の中のどれか一つである。</p>
+          <p>フォントサイズを指定している CSS プロパティの値が、<code><![CDATA[xx-small]]></code>、<code><![CDATA[x-small]]></code>、<code><![CDATA[small]]></code>、<code><![CDATA[medium]]></code>、<code><![CDATA[large]]></code>、<code><![CDATA[x-large]]></code>、<code><![CDATA[xx-large]]></code>、<code><![CDATA[smaller]]></code>、<code><![CDATA[larger]]></code>の中のどれか一つである。</p>
         </item>
       </olist>
     </procedure>
