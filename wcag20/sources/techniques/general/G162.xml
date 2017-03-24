@@ -21,23 +21,22 @@
       <eg-group>
       <head>テキストフィールドの上側のラベル</head>
       <description>
-        <p>&#13;
-&#13;
-                        <img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G162/lbl-position_01.gif" alt="すぐ上にラベルが配置された二つのテキストフィールド"/></p>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_01.gif" alt="すぐ上にラベルが配置された二つのテキストフィールド"/></p>
       </description>
     </eg-group>
     <eg-group>
       <head>テキストフィールドの左側のラベル</head>
       <description>
-        <p>&#13;
-                        <img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G162/lbl-position_02.gif" alt="すぐ左側にラベルが配置されたふたつのフィールド."/></p>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_02.gif" alt="すぐ左側にラベルが配置されたふたつのフィールド."/></p>
       </description>
     </eg-group>
     <eg-group>
       <head>ラジオボタンの右側のラベル</head>
       <description>
-        <p>&#13;
-                        <img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G162/lbl-position_03.gif" alt="ラジオボタンの右側にラベルが配置されたふたつのラジオボタンを含むフォームのコントロールのグループ"/></p>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_03.gif" alt="ラジオボタンの右側にラベルが配置されたふたつのラジオボタンを含むフォームのコントロールのグループ"/></p>
       </description>
     </eg-group>
    </examples>
