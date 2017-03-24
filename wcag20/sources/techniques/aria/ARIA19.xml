@@ -4,8 +4,8 @@
 <technique id="ARIA19">
    <short-name>エラーを特定するために、ARIA role=alert 又はライブ領域（Live Regions）を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
@@ -58,21 +58,17 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to notify Assistive Technologies (AT) when an input error occurs. The <att>aria-live</att> attribute makes it possible for an AT (such as a screen reader) to be notified when error messages are injected into a Live Region container. The content within the <att>aria-live</att> region is automatically read by the AT, without the AT having to focus on the place where the text is displayed.
-</p>
-      <p>There are also a number of <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/WAI/PF/aria-practices/#chobet">special case live region roles</loc> which can be used instead of applying live region properties directly.</p>
+      <p>この達成方法の目的は、入力エラーが発生した場合に支援技術（AT）に通知することである。<att>aria-live</att>属性は、エラーメッセージがライブ領域のコンテナに注入された際に、AT（スクリーンリーダーなど）による通知を可能にする。<att>aria-live</att>領域内部のコンテンツは、テキストが表示されている場所でATがフォーカスする必要なしに、ATによって自動的に読みあげられる。</p>
+      <p>ライブ領域のプロパティを直接適用する代わりに使用できる<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/WAI/PF/aria-practices/#chobet">特殊ケースのライブ領域のロール</loc>も多数ある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Injecting error messages into a container with role=alert already present in the DOM</head>
+         <head>DOM内にすでに存在するrole=alertをもつコンテナの中にエラーメッセージを注入する</head>
          <description>
-            <p>The following example uses <code><![CDATA[role=alert]]></code> which is equivalent to using <code><![CDATA[aria-live=assertive]]></code>.
-</p>
-            <p>In the example there is an empty error message container element with <code><![CDATA[aria-atomic=true]]></code> and an <code><![CDATA[aria-live]]></code> property or <code><![CDATA[alert]]></code> role present in the DOM on page load. The error container must be present in the DOM on page load for the error message to be spoken by most screen readers. <code><![CDATA[aria-atomic=true]]></code> is necessary to make Voiceover on iOS read the error messages after more than one invalid submission. 
-</p>
-            <p>jQuery is used to test if the inputs are empty on submit and inject error messages into the live region containers if so. Each time a new submit is attempted the previous error messages are removed from the container and new error messages injected.
-</p>
+            <p>次の例は、<code><![CDATA[aria-live=assertive]]></code>を使用しているのと同等の<code><![CDATA[role=alert]]></code>を使用する。</p>
+            <p>例において、ページロード時にDOMに存在する<code><![CDATA[aria-atomic=true]]></code>及び<code><![CDATA[aria-live]]></code>プロパティ又は<code><![CDATA[alert]]></code>ロールをもつ空のエラーメッセージコンテナ要素が存在する。エラーコンテナは、ほとんどのスクリーンリーダーでエラーメッセージが読み上げられるために、ページロード時にDOMに存在しなければならない。<code><![CDATA[aria-atomic=true]]></code>は、複数の無効な投稿をした後にエラーメッセージをiOSのVoiceoverに読み上げさせるために必要である。</p>
+            <p>jQueryは、送信時に入力が空であるかどうかをテストし、そうであれば、ライブ領域コンテナにエラーメッセージを注入するために使用される。新しい送信が試みられるたびに、前のエラーメッセージがコンテナから削除され、新しいエラーメッセージが挿入される。</p>
             <codeblock xml:space="preserve"><![CDATA[<script src="http://code.jquery.com/jquery.js"></script>
 <script>
 $(document).ready(function(e) {
@@ -110,9 +106,9 @@ $(document).ready(function(e) {
     <input type="submit" name="button" id="button" value="Submit">
   </p>
 </form>]]></codeblock>
-            <p>Working example: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="aria-alert-validation.html"
-                    linktype="examples">Using role=alert to identify errors</loc>.</p>
+                    linktype="examples">エラーを識別するためにrole=alertを使用する</loc>。</p>
          </description>
       </eg-group>
    </examples>
@@ -169,15 +165,13 @@ $(document).ready(function(e) {
       <procedure>
          <olist>
             <item>
-               <p>Determine that an empty error container <code><![CDATA[role=alert]]></code> or <code><![CDATA[aria-live=assertive]]></code> attribute is present in the DOM at page load.</p>
+               <p><code><![CDATA[role=alert]]></code>又は<code><![CDATA[aria-live=assertive]]></code>属性が指定された空のエラーコンテナが、ページの読み込み時のDOMに存在する。</p>
             </item>
             <item>
-               <p> Trigger the error that causes the content in the live region to appear or update.
-</p>
+               <p>ライブ領域のコンテンツの表示又更新を引き起こすエラーをトリガーする。</p>
             </item>
             <item>
-               <p> Determine that the error message was injected into the already present error container.
-</p>
+               <p>1.及び3.を満たしている。</p>
             </item>
          </olist>
       </procedure>
