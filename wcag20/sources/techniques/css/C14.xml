@@ -58,9 +58,6 @@
                        href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</loc> 
                </p>
             </item>
-        <item>
-          <p diff="del">CSS-Discuss Font Size Using Ems</p>
-        </item>
          </ulist>
       </see-also>
    </resources>

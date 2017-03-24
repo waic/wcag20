@@ -52,9 +52,6 @@
                        href="http://www.w3.org/TR/CSS2/fonts.html#font-size-props">CSS 2 Font Size Property</loc> 
                </p>
             </item>
-            <item>
-          <p diff="del">CSS-Discuss Font Size Using Keywords</p>
-        </item>
          </ulist>
       </see-also>
    </resources>
@@ -62,7 +59,7 @@
       <relatedtech idref="C12"/>
       <relatedtech idref="C14"/>
    </related-techniques>
-   <tests diff="chg">
+   <tests>
       <procedure>
       <olist>
         <item>
