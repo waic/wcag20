@@ -4,8 +4,8 @@
 <technique id="ARIA16">
    <short-name>ユーザインターフェース コントロールの名前（name）を提供するために、aria-labelledby を使用する</short-name>
    <applicability>
-      <p>Technologies that support <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>. </p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -40,59 +40,50 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>The purpose of this technique is to provide names for user interface controls that can be read by assistive technology.  WAI-ARIA provides a way to associate text with a section, drawing, form element, picture, and so on, using the <att>aria-labelledby</att> property. This techniques uses the <att>aria-labelledby</att> attribute to associate a user interface control, such as a form field, with text on the page that labels it.
-</p>
-      <p>Like <att>aria-describedby</att>, <att>aria-labelledby</att> can accept multiple ids to point to other elements of the page using a space separated list. This capability makes <att>aria-labelledby</att> especially useful in situations where sighted users use information from the surrounding context to identify a control. <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">Using aria-labelledby to concatenate a label from several text nodes</loc> contains more examples of situations where names are created from several other text elements on the page.
-</p>
-      <p>While the function of aria-labelledby appears similar to the native HTML label element, there are some differences:
-</p>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるユーザインタフェースコントロールの名前を提供することである。WAI-ARIAは、<att>aria-labelledby</att>プロパティを使用して、セクション、描画、フォーム要素、画像などとテキストを関連付けるための方法を提供する。この達成方法では、<att>aria-labelledby</att>属性を使用して、フォームフィールドなどのユーザインタフェースコントロールと、それをラベル付けするページ上のテキストとを関連付ける。</p>
+      <p><att>aria-describedby</att>のように、<att>aria-labelledby</att>は、スペース区切りのリストを使用して、ページの他の要素を指すように複数のIDを受け入れることができる。この機能は、目の見える利用者がコントロールを識別するために周囲のコンテキストからの情報を使用する状況において、<att>aria-labelledby</att>を特に有用にする。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</loc>でも、名前がページ上の他の複数のテキスト要素から構成される場合の事例を紹介している。</p>
+      <p>aria-labelledbyの機能はネイティブなHTMLのlabel要素と似ているように見えるが、いくつか違いがある:</p>
       <ulist>
          <item>
-            <p> 
-               <att>aria-labelledby</att> can reference more than one text element; <el>label</el> can only reference one.</p>
+            <p><att>aria-labelledby</att>は複数のテキスト要素を参照することができる。<el>label</el>が参照できるのは1つだけである。</p>
          </item>
          <item>
-            <p> 
-               <att>aria-labelledby</att> can be used for a variety of elements while the <el>label</el> element can only be used on form elements.</p>
+            <p><el>label</el>要素がフォーム要素のみに使用できる一方で、<att>aria-labelledby</att>はさまざまな要素に対して使用できる。</p>
          </item>
          <item>
-            <p> Clicking on a <el>label</el> focuses the associated form field. This does not occur with <att>aria-labelledby</att>. If this behaviour is required then use <el>label</el> or implement this functionality using scripting.
-</p>
+            <p><el>label</el>をクリックすると、関連付けられたフォームフィールドをフォーカスする。これは<att>aria-labelledby</att>では起こらない。この動作が必要な場合、<el>label</el>を使用するか、スクリプトを使用してこの機能を実装する。</p>
          </item>
       </ulist>
-      <p>Note that as of December 2013, <el>label</el> has better support than <att>aria-labelledby</att>, especially in older browsers and assistive technologies.
-</p>
+      <p>2013年12月の時点で、特に古いブラウザや支援技術で、<el>label</el>のほうが<att>aria-labelledby</att>よりもより良くサポートされていることに注意すること。</p>
    </description>
    <examples>
       <eg-group>
-         <head>Labelling a simple text field</head>
+         <head>単純なテキストフィールドをラベル付けする</head>
          <description>
-            <p>The following is an example of <att>aria-labelledby</att> used on a simple text field to provide a label in a situation where there is no text available for a dedicated label but there is other text on the page that can be used to accurately label the control.</p>
+            <p>以下は、ラベル専用のテキストがないものの、正確にコントロールをラベル付けするためにページ上の他のテキストが使用できる状況で、<att>aria-labelledby</att>を使用して単純なテキストフィールドにラベルを提供している例である。</p>
             <codeblock xml:space="preserve"><![CDATA[<input name="searchtxt" type="text" aria-labelledby="searchbtn">
 <input name="searchbtn" id="searchbtn" type="submit" value="Search">]]></codeblock>
          </description>
       </eg-group>
       <eg-group>
-         <head>Labelling a slider</head>
+         <head>スライダーをラベル付けする</head>
          <description>
-            <p>Below is an example of <att>aria-labelledby</att> used to provide a label for a slider control. In this case the label text is selected from within a longer adjacent text string. Please note that this example is simplified to show only the labeling relationship; authors implementing custom controls also need to ensure that controls meet other success criteria.</p>
+            <p>以下は、スライダーコントロールにラベルを提供するために<att>aria-labelledby</att>を使用している例である。このケースでは、ラベルテキストが、より長い隣接するテキスト文字列の中から選択される。この例は、単にラベル付けの関係を示すために簡略化されていることに注意すること。カスタムコントロールを実装するコンテンツ制作者は、コントロールが他の達成基準を満たしていることも確認する必要がある。</p>
             <codeblock xml:space="preserve"><![CDATA[<p>Please select the <span id="mysldr-lbl">number of days for your trip</span></p>
 <div id="mysldr" role="slider" aria-labelledby="mysldr-lbl"></div>]]></codeblock>
          </description>
       </eg-group>
       <eg-group>
-         <head>A label from multiple sources</head>
+         <head>例3: 複数のソースからのラベル</head>
          <description>
-            <p>The following example of <att>aria-labelledby</att> with multiple references uses the <el>label</el> element. For additional detail on concatenating multiple sources of information into a label with <att>aria-labelledby</att>, please view the technique <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">Using ARIA labelledby to concatenate a label from several text nodes</loc>.
-</p>
+            <p>以下は、<el>label</el>要素を使用した複数の参照を伴う<att>aria-labelledby</att>の例である。<att>aria-labelledby</att>をもつラベルに複数のソースを連結する方法の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</loc>を参照すること。</p>
             <codeblock xml:space="preserve"><![CDATA[<label id="l1" for="f3">Notify me</label>
 <select name="amt" id="f3" aria-labelledby="l1 f3 l2">
   <option value="1">1</option>
   <option value="2">2</option>
 </select>
 <span id="l2" tabindex="-1">days in advance</span>]]></codeblock>
-            <p>Note: The use of the <el>label</el> element is included for a number of reasons. If the user clicks on the text of the <el>label</el> element, the corresponding form field will receive focus, which makes the clicking target larger for people with dexterity problems. Also the <el>label</el> element will always be exposed via the accessibility API. A <el>span</el> could have been used (but if so, it should receive a <code><![CDATA[tabindex="-1"]]></code> so that it will be exposed via the accessibility API in all versions of Internet Explorer). However, a <el>span</el> would lose the advantage of the larger clickable region.
-</p>
+            <p>注: <el>label</el>要素を使うことには多くの理由がある。利用者が<el>label</el>要素のテキストをクリックすれば、対応するフォームフィールドがフォーカスを受け取るため、器用さの問題を持つ人に対してクリックターゲットを大きくすることができる。また、<el>label</el>要素は常にアクセシビリティAPIを介して公開される。<el>span</el>が使われるかもしれない（ただしその場合、spanがInternet ExplorerのすべてのバージョンでアクセシビリティAPIを介して公開されるように、spanは<code><![CDATA[tabindex="-1"]]></code>を与えるべきである）。しかし、<el>span</el>では、クリック可能な領域が大きくなるという利点が失われることになるだろう。</p>
          </description>
       </eg-group>
    </examples>
@@ -125,23 +116,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>For each user interface control element where an <att>aria-labelledby</att> attribute is present:
-</p>
+         <p><att>aria-labelledby</att>属性が存在する場合に各ユーザインタフェースコントロール要素に対して:</p>
          <olist>
             <item>
-               <p>Check that the value of the <att>aria-labelledby</att> attribute is the <att>id</att> of an element or a space separated list of <att>id</att>s on the web page. 
-</p>
+               <p><att>aria-labelledby</att>属性の値は、ある要素の<att>id</att>、又はウェブページ上の複数<att>id</att>のスペース区切りのリストである。</p>
             </item>
             <item>
-               <p>Check that the text of the referenced element or elements accurately labels the user interface control.
-</p>
+               <p>参照される要素又は複数要素のテキストが正確にユーザインタフェースコントロールにラベル付けする。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 and #2 are true.</p>
+               <p>1.及び2.を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
