@@ -453,7 +453,7 @@
 			    		<p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p>
 			    	</xsl:if>
 			    </xsl:when>
-			    <xsl:otherwise><p>No tests available for this technique.</p></xsl:otherwise>
+			    <xsl:otherwise><p>この達成方法に利用可能な検証はない。</p></xsl:otherwise>
 			  </xsl:choose>
 			</div>
 		<!--</div>-->

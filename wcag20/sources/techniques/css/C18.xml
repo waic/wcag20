@@ -4,7 +4,7 @@
 <technique id="C18">
    <short-name>レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する</short-name>
    <applicability>
-      <p>All technologies that support CSS</p>
+      <p>CSS をサポートするすべての達成方法</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -15,12 +15,12 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>Web designers sometimes use spacer images (usually 1x1 pixel, transparent GIFs) for better control over layout, for example in tables or to indent a paragraph. However, Cascading Style Sheets (CSS) allow sufficient control over layout to replace spacer images. The CSS properties for margins and padding can be used on their own or in combination to control the layout. The margin properties ('margin-top', 'margin-right', 'margin-bottom', 'margin-left', and the shorthand 'margin') can be used on any element that is displayed as a block; they add space at the outside of an element. The padding properties ('padding-top', 'padding-right', 'padding-bottom', 'padding-left', and the shorthand 'padding') can be used on any element; they add space inside the element.</p>
+      <p>ウェブデザイナーは、レイアウト、例えばテーブルまたは段落の字下げをよりよくコントロールするために、しばしばスペーサー画像（通常は 1 x 1 ピクセルの透過GIF）を使用する。しかしながら、カスケーディング スタイル シート（CSS）は、スペーサー画像を置き換えることで、レイアウトを十分によりよくコントロールすることができる。マージンとパディングの CSS プロパティは、レイアウトを制御するために単独または組み合わせて使用できる。マージンプロパティ（「margin-top」、「margin-right」, 「margin-bottom」、「margin-left」とショートハンドの「margin」）は、ブロックとして表示される任意の要素に使用でき、要素の外側にスペースを追加する。パディングプロパティ（「padding-top」、「padding-right」、「padding-bottom」、「padding-left」とショートハンドの「padding」）は、任意の要素に使用でき、要素の内側にスペースを追加する。</p>
    </description>
    <examples>
       <eg-group>
          <description>
-            <p>The following example consists of two parts: the CSS code, which specifies a margin on all sides of the table, and padding for the table cells; and the HTML code for the table, which does not contain spacer images and is not nested inside another table.</p>
+            <p>次の例は、二つの部品で構成されている。テーブルの全ての面にマージンとテーブルセルにパディングを指定している CSS コードと、スペース画像を含まず、他のテーブル内にネストされていないテーブルの HTML コード。</p>
          </description>
          <code role="xhtml"><![CDATA[
               
@@ -29,8 +29,8 @@
             
             ...
             
-              <table summary="Titles, authors and publication dates of books in Web development category">
-                <caption>Books in the category 'Web development'</caption>
+              <table summary="ウェブ開発カテゴリの本のタイトルと著者、出版日">
+                <caption>「ウェブ開発」カテゴリーの本</caption>
                 <thead>
                   <tr>
                     <th>Title</th>
@@ -40,9 +40,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>How to Think Straight About Web Standards</td>
+                    <td>ウェブ標準について真剣に考える方法</td>
                     <td>Andrew Stanovich</td>
-                    <td>1 April 2007</td>
+                    <td>2007年4月1日</td>
                   </tr>
                 </tbody>
               </table>
@@ -56,13 +56,13 @@
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1998/REC-CSS2-19980512/box.html#margin-properties">Margin properties: 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', and 'margin' in the CSS2 specification</loc>
+                       href="https://www.w3.org/TR/CSS2/box.html#margin-properties">Margin properties: 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', and 'margin' in the CSS2 specification</loc>
                </p>
             </item>
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1998/REC-CSS2-19980512/box.html#padding-properties">Padding properties: 'padding-top', 'padding-right', 'padding-bottom', 'padding-left', and 'padding' in the CSS2 specification</loc>
+                       href="https://www.w3.org/TR/CSS2/box.html#padding-properties">Padding properties: 'padding-top', 'padding-right', 'padding-bottom', 'padding-left', and 'padding' in the CSS2 specification</loc>
                </p>
             </item>
             <item>
