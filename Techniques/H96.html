@@ -7,22 +7,22 @@
         達成方法 H97</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#H96-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#H96-applicability">適用（対象）</a></li><li><a href="#H96-description">解説</a></li><li><a href="#H96-examples">事例</a></li><li><a href="#H96-resources">参考リソース</a></li><li><a href="#H96-related-techs">関連する達成方法</a></li><li><a href="#H96-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="H96" id="H96"> </a>H96: 音声解説を提供するために、track 要素を使用する</h1><div id="H96-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="H96-applicability">適用（対象）</h2><div class="textbody"><p>HTML5</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-av-only-alt">
 				達成基準 1.2.1 (音声のみ及び映像のみ (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-av-only-alt">
 						How to Meet 1.2.1 (音声のみ及び映像のみ (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-av-only-alt.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">
 						達成基準 1.2.1 (音声のみ及び映像のみ (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc">
 						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc-only">
 						How to Meet 1.2.5 (音声解説 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc-only.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-extended-ad">
 				達成基準 1.2.7 (拡張音声解説 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-extended-ad">
 						How to Meet 1.2.7 (拡張音声解説 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-extended-ad.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h2 id="H96-description">解説</h2><div class="textbody"><p>この達成方法の目的は、タイミングを指定したテキストの音声解説トラックを <code>video</code> 構成要素に指定するために HTML5 <code>track</code> 要素を用いることである。タイミングの指定されたテキストの音声解説トラックは、視覚的な構成要素が隠れていたり、使えなかったり、使うのに不適であったりしたときの音声合成のための、メディア資源のビデオ構成要素のテキスト記述を含む。ユーザエージェントは視覚的でない方法で、例えばそれらを音声合成することによって、利用者にきっかけを使えるようにする。</p><p><code>track</code> 要素の <code>src</code> 属性は URL であり、これはテキストトラックデータのアドレスである。</p><p>音声解説のきっかけは、メディア資源の聴覚的な構成要素で利用可能なギャップに収まる必要がある。トラックキューの時間間隔内に記述テキストを合成するのに十分な時間がない場合、ユーザエージェントはスピーチを切り捨てることがある。 これにより、追加可能な補足情報の量が制限される。</p><p>ユーザエージェントは、解説が完全に同期するまでビデオを一時停止し、そしてビデオを再開することで拡張音声解説もサポートしうる。</p></div><h2 class="small-head" id="H96-examples">事例</h2><h3 class="small-head" id="H96-ex1">事例 1: 複数言語における音声解説</h3><div class="example"><div class="textbody"><p>英語ビデオのための <code>video</code> 要素。音声解説は WebVTT フォーマットで提供されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 			 &lt;video poster="myvideo.png" controls&gt;

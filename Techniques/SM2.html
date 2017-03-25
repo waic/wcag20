@@ -7,17 +7,17 @@
         達成方法 SM6</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#SM2-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#SM2-applicability">適用（対象）</a></li><li><a href="#SM2-description">解説</a></li><li><a href="#SM2-examples">事例</a></li><li><a href="#SM2-resources">参考リソース</a></li><li><a href="#SM2-related-techs">関連する達成方法</a></li><li><a href="#SM2-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SM2" id="SM2"> </a>SM2: SMIL 2.0 で拡張音声解説を追加する</h1><div id="SM2-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="SM2-applicability">適用（対象）</h2><div class="textbody"><p>SMIL 2.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc">
 						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-audio-desc-only">
 						How to Meet 1.2.5 (音声解説 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-audio-desc-only.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-extended-ad">
 				達成基準 1.2.7 (拡張音声解説 (収録済) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#media-equiv-extended-ad">
 						How to Meet 1.2.7 (拡張音声解説 (収録済) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/media-equiv-extended-ad.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h2 id="SM2-description">解説</h2><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 2.0では、特定の音声ファイルを特定のタイミングで再生するよう指定し、音声ファイルが再生される間は、画面が表示されたまま一時停止できる。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生は自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだSMILスクリプト及び含まないSMILスクリプトの2つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説をSMILファイルに追加したりSMILファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、2つのバージョンの映像を提供することによって可能となる。つまり、1つは拡張音声解説を含んだバージョン、もう1つは含まないバージョンを提供するのである。</p></div><h2 class="small-head" id="SM2-examples">事例</h2><h3 class="small-head" id="SM2-ex1">事例 1: 拡張音声解説のある映像</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;smil xmlns="//www.w3.org/2001/SMIL20/Language"&gt; 

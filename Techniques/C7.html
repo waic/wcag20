@@ -7,12 +7,12 @@
         達成方法 C8</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#C7-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#C7-applicability">適用（対象）</a></li><li><a href="#C7-description">解説</a></li><li><a href="#C7-examples">事例</a></li><li><a href="#C7-resources">参考リソース</a></li><li><a href="#C7-related-techs">関連する達成方法</a></li><li><a href="#C7-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="C7" id="C7"> </a>C7: リンクテキストの一部を非表示にするために、CSS を使用する</h1><div id="C7-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="C7-applicability">適用（対象）</h2><div class="textbody"><p>CSSに対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-refs">
 				達成基準 2.4.4 (リンクの目的 (コンテキスト内) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-refs">
 						How to Meet 2.4.4 (リンクの目的 (コンテキスト内) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-refs.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-link">
 				達成基準 2.4.9 (リンクの目的 (リンクのみ) )</a><ul><li><a href="http://www.w3.org/WAI/WCAG20/quickref/20150226/#navigation-mechanisms-link">
 						How to Meet 2.4.9 (リンクの目的 (リンクのみ) )
-					</a></li><li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/navigation-mechanisms-link.html">
+					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li></ul><h2 id="C7-description">解説</h2><div class="textbody"><p>この達成方法の目的は、CSS をサポートするユーザエージェントによって画面に表示されないよう、リンクの一意の機能を記述する追加のテキストを追加し、そして追加のテキストをスタイリングすることによってリンクテキストを補うことである。表示されているリンクテキストの意味を理解するために、その前後の内容も読む必要がある場合、この達成方法を用いることによって、リンクテキストの表示は元の状態のままでありながら、リンクに対する十分な説明を提供することができる。</p><p>この達成方法を用いるには、まず、表示させないテキストを対象とする CSS セレクタを作成する。そのセレクタの規則集合では、overflow プロパティの値が hidden に指定された縦横 1 ピクセルのボックスの中にテキストが入るようにし、さらにそのテキストをビューポートの外側に配置する指定を入れる。これによって、テキストは画面上には確実に表示されなくなるが、スクリーンリーダーや点字ディスプレイなどの支援技術に対してはアクセシブルな状態を保持できる。ここで留意すべきは、画面に表示されなくなるだけでなく支援技術に対してもそのテキストを隠してしまうという意図せぬ影響が出る恐れがあるため、この達成方法では <code>visibility:hidden</code> 及び <code>display:none</code> を使用していないことである。</p><div class="note"><p class="prefix"><em>注記 1:
 					</em>
