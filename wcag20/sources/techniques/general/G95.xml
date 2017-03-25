@@ -27,7 +27,13 @@
       </item>
     </ulist>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>10 月の売上げを示している図表には「10 月の売上表」という短い代替テキストがある。 その図表の全ての情報を提供する長い説明もある。</p>
+         </item>
+      </ulist>
+   </examples>
    <resources>
       <see-also/>
    </resources>

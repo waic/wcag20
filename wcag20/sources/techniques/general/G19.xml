@@ -30,7 +30,13 @@
       </item>
     </ulist>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>コンテンツに閃光を放つものがある。コンテンツは、続けて 2 回又は 3 回しか光らないように設計されている。</p>
+         </item>
+      </ulist>
+   </examples>
    <resources>
       <see-also>
          <ulist>

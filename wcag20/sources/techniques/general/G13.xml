@@ -27,7 +27,16 @@
       </item>
     </ulist>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>トップページで、ドイツ語、フランス語とスペイン語という選択肢がラジオボタンで示されている。 ボタンの前には、利用者に対して、選択肢を選ぶことで言語が変更されるという説明が示されている。</p>
+         </item>
+         <item>
+            <p>オンライン調査で 50 問の質問が 1 つずつ表示される。 調査の初めに、利用者が各質問に対して回答を選ぶと次の質問に進むことができるという説明が表示されている。</p>
+         </item>
+      </ulist>
+   </examples>
    <resources/>
    <related-techniques>
       <relatedtech idref="G80"/>
