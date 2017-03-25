@@ -50,7 +50,7 @@ label.failed {
     &lt;input type="submit" name="button" id="button" value="Submit"&gt;
   &lt;/p&gt;
 &lt;/form&gt;
-            </code></pre></div><p><a href="/WAI/WCAG20/Techniques/working-examples/ARIA21/Form-AriaLiveWithJQ.html" class="ex-ref">動作する例</a>。</p></div></div><h3 class="small-head" id="ARIA21-ex2">事例 2: データフォーマットのエラーを識別する</h3><div class="example"><div class="textbody"><p><code>Aria-invalid</code>及び<code>aria-describedby</code>が、個人識別番号（PIN）、電子メールアドレス、又は開始日が期待される形式でない場合に、エラーを示すために一緒に使用されている。エラーメッセージは、<code>aria-describedby</code>を使うことでフィールドに関連付けられており、<code>aria-invalid</code>によって、エラーになっているフィールドをプログラムによって簡単に見つけられるようになっている。</p><p>以下は、事例1において電子メールアドレスフィールドにレンダリングされるHTMLコードである。（sam@example.comの代わりに）"samexample.com"のような不正な電子メールアドレスが利用者によって入力された場合、HTMLコードは次のようになる:</p><div class="code"><pre><code>
+            </code></pre></div><p><a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/Form-AriaLiveWithJQ.html">動作する例</a>。</p></div></div><h3 class="small-head" id="ARIA21-ex2">事例 2: データフォーマットのエラーを識別する</h3><div class="example"><div class="textbody"><p><code>Aria-invalid</code>及び<code>aria-describedby</code>が、個人識別番号（PIN）、電子メールアドレス、又は開始日が期待される形式でない場合に、エラーを示すために一緒に使用されている。エラーメッセージは、<code>aria-describedby</code>を使うことでフィールドに関連付けられており、<code>aria-invalid</code>によって、エラーになっているフィールドをプログラムによって簡単に見つけられるようになっている。</p><p>以下は、事例1において電子メールアドレスフィールドにレンダリングされるHTMLコードである。（sam@example.comの代わりに）"samexample.com"のような不正な電子メールアドレスが利用者によって入力された場合、HTMLコードは次のようになる:</p><div class="code"><pre><code>
 &lt;div class="control"&gt;
 &lt;p&gt;&lt;label for="email"&gt;Email address: [*]&lt;/label&gt; 
 &lt;input type="text" name="email" id="email" class="error" aria-invalid="true" aria-describedBy="err_1" /&gt;&lt;/p&gt; 
@@ -74,7 +74,7 @@ span.errtext {
 	background-image:url('images/iconError.gif');
 	background-repeat:no-repeat; 	background-position:right;	
 }
-            </code></pre></div><p><a href="/WAI/WCAG20/Techniques/working-examples/ARIA21/form-alert3.html" class="ex-ref">動作する例</a>.</p></div></div><h2 id="ARIA21-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+            </code></pre></div><p><a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/form-alert3.html">動作する例</a>.</p></div></div><h2 id="ARIA21-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria-1.1/#states_and_properties">Supported States and Properties: WAI-ARIA 1.1</a>
                </p></li><li><p>
                	<a href="http://www.deque.com/blog/aria-invalid-error-indication/">Using Aria-invalid for Error Indication</a>

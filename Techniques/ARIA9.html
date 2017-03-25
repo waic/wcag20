@@ -20,7 +20,7 @@
 &lt;input type="text" size="3" id="timeout-duration" value="20" 
     aria-labelledby="timeout-label timeout-duration timeout-unit"&gt;
 &lt;span id="timeout-unit" tabindex="-1"&gt; minutes&lt;/span&gt;&lt;/p&gt;
-&lt;/form&gt;</code></pre></div><p>実装例 <a href="/WAI/WCAG20/Techniques/working-examples/ARIA9/ex1.html" class="ex-ref">連結されたラベルをもつタイムアウト入力フィールド</a> は、Marco Zeheによってまとめられた Easy ARIA tip #2:<code>aria-labelledby</code> and <code>aria-describedby</code> から翻案した。</p></div></div><h3 class="small-head" id="ARIA9-ex2">事例 2: テキスト入力を含む単純なデータテーブル</h3><div class="example"><div class="textbody"><p>テキスト入力を含む単純なデータテーブルがある。入力ラベルは、それぞれの列及び行のヘッダーを参照する<code>aria-labelledby</code>を通して連結される。</p><div class="code"><pre><code>&lt;table&gt;
+&lt;/form&gt;</code></pre></div><p>実装例 <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex1.html">連結されたラベルをもつタイムアウト入力フィールド</a> は、Marco Zeheによってまとめられた Easy ARIA tip #2:<code>aria-labelledby</code> and <code>aria-describedby</code> から翻案した。</p></div></div><h3 class="small-head" id="ARIA9-ex2">事例 2: テキスト入力を含む単純なデータテーブル</h3><div class="example"><div class="textbody"><p>テキスト入力を含む単純なデータテーブルがある。入力ラベルは、それぞれの列及び行のヘッダーを参照する<code>aria-labelledby</code>を通して連結される。</p><div class="code"><pre><code>&lt;table&gt;
 	&lt;tr&gt;
 		&lt;td&gt;&lt;/td&gt;
 		&lt;th id="tpayer"&gt;Taxpayer&lt;/th&gt;
@@ -38,7 +38,7 @@
 		&lt;td&gt;&lt;input type="text" size="20" aria-labelledby="tpayer div" /&gt;&lt;/td&gt;
 		&lt;td&gt;&lt;input type="text" size="20" aria-labelledby="sp div" /&gt;&lt;/td&gt;
 	&lt;/tr&gt;
-&lt;/table&gt;</code></pre></div><p>実装例 <a href="/WAI/WCAG20/Techniques/working-examples/ARIA9/ex2.html" class="ex-ref">テキスト入力をもつ単純なテーブルに対するaria-labelledbyを使用する</a> は、Jim Thatcherによる例に基づく。</p></div></div><h3 class="small-head" id="ARIA9-ex3">事例 3: 会議ワークショップ予約テーブル</h3><div class="example"><div class="textbody"><p>2つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック（1又は2）、タイトル、及び隣接するチェックボックスのラベル"Attend"に続くワークショップのスピーカーは、<code>aria-labelledby</code>を介してチェックボックスに対する連結ラベルとして提供される。</p><p>一部のブラウザ/スクリーンリーダーの組み合わせ（たとえばMozilla FirefoxとNVDA）は、さらに関連するテーブルセルのヘッダーを伝える。</p><div class="code"><pre><code>&lt;h1&gt;Dinosaur Conference workshops timetable Thursday, 14.  &amp; Friday, 15. March 2013&lt;/h1&gt;
+&lt;/table&gt;</code></pre></div><p>実装例 <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex2.html">テキスト入力をもつ単純なテーブルに対するaria-labelledbyを使用する</a> は、Jim Thatcherによる例に基づく。</p></div></div><h3 class="small-head" id="ARIA9-ex3">事例 3: 会議ワークショップ予約テーブル</h3><div class="example"><div class="textbody"><p>2つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック（1又は2）、タイトル、及び隣接するチェックボックスのラベル"Attend"に続くワークショップのスピーカーは、<code>aria-labelledby</code>を介してチェックボックスに対する連結ラベルとして提供される。</p><p>一部のブラウザ/スクリーンリーダーの組み合わせ（たとえばMozilla FirefoxとNVDA）は、さらに関連するテーブルセルのヘッダーを伝える。</p><div class="code"><pre><code>&lt;h1&gt;Dinosaur Conference workshops timetable Thursday, 14.  &amp; Friday, 15. March 2013&lt;/h1&gt;
 &lt;table&gt;
 &lt;caption&gt;Dinosaur Conference workshop booking table&lt;/caption&gt;
 &lt;tbody&gt;&lt;tr&gt;
@@ -118,7 +118,7 @@
 	&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</code></pre></div><p>実装例: <a href="/WAI/WCAG20/Techniques/working-examples/ARIA9/ex3.html" class="ex-ref">会議ワークショップ予約時間表</a></p></div></div><h2 id="ARIA9-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+&lt;/table&gt;</code></pre></div><p>実装例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex3.html">会議ワークショップ予約時間表</a></p></div></div><h2 id="ARIA9-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</a> 
                </p></li><li><p>
                   <a href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a> 
