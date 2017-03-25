@@ -102,7 +102,7 @@
     aria-labelledby="timeout-label timeout-duration timeout-unit">
 <span id="timeout-unit" tabindex="-1"> minutes</span></p>
 </form>]]></codeblock>
-            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ex1.html" linktype="examples">連結されたラベルをもつタイムアウト入力フィールド</loc> は、Marco Zeheによってまとめられた Easy ARIA tip #2:<att>aria-labelledby</att> and <att>aria-describedby</att> から翻案した。</p>
+            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex1.html"><!-- linktype="examples"-->連結されたラベルをもつタイムアウト入力フィールド</loc> は、Marco Zeheによってまとめられた Easy ARIA tip #2:<att>aria-labelledby</att> and <att>aria-describedby</att> から翻案した。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -128,7 +128,7 @@
 		<td><input type="text" size="20" aria-labelledby="sp div" /></td>
 	</tr>
 </table>]]></codeblock>
-            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ex2.html" linktype="examples">テキスト入力をもつ単純なテーブルに対するaria-labelledbyを使用する</loc> は、Jim Thatcherによる例に基づく。</p>
+            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex2.html"><!-- linktype="examples"-->テキスト入力をもつ単純なテーブルに対するaria-labelledbyを使用する</loc> は、Jim Thatcherによる例に基づく。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -218,8 +218,8 @@
 </tbody>
 </table>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ex3.html"
-                    linktype="examples">会議ワークショップ予約時間表</loc></p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex3.html"><!--
+                    linktype="examples"-->会議ワークショップ予約時間表</loc></p>
          </description>
       </eg-group>
    </examples>

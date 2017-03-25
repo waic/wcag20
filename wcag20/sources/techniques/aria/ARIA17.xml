@@ -49,8 +49,8 @@
    <input size="4" type="text" aria-required="true" title="Last 4 digits" />
 </div>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ssn.html"
-                    linktype="examples">複数パートに分かれたフィールドのグループ化</loc>。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA17/ssn.html"><!--
+                    linktype="examples"-->複数パートに分かれたフィールドのグループ化</loc>。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -86,8 +86,8 @@
   border: black thin solid;
 } ]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="grouping-roles-example.html"
-                    linktype="examples">関連するフォームコントロールを識別するためにグループ化ロールを使用する</loc>。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA17/grouping-roles-example.html"><!--
+                    linktype="examples"-->関連するフォームコントロールを識別するためにグループ化ロールを使用する</loc>。</p>
          </description>
       </eg-group>
    </examples>

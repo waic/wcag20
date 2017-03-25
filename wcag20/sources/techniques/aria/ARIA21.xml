@@ -68,7 +68,7 @@ label.failed {
   </p>
 </form>
             ]]></codeblock>
-            <p><loc href="Form-AriaLiveWithJQ.html" linktype="examples">動作する例</loc>。</p>
+            <p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/Form-AriaLiveWithJQ.html"><!-- linktype="examples"-->動作する例</loc>。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -108,7 +108,7 @@ span.errtext {
 	background-repeat:no-repeat; 	background-position:right;	
 }
             ]]></codeblock>
-            <p><loc href="form-alert3.html" linktype="examples">動作する例</loc>.</p>
+            <p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA21/form-alert3.html"><!-- linktype="examples"-->動作する例</loc>.</p>
          </description>
       </eg-group>
    </examples>

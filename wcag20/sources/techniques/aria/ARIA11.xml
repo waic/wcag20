@@ -43,7 +43,7 @@
       <p>この達成方法の目的は、ウェブページのセクションに対して、プログラムによるアクセスを提供することである。ランドマークロール（又はランドマーク）は、ページのセクションをプログラムによって識別できるようにする。ランドマークは、支援技術（AT）利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。</p>
       <p>ランドマークはまた、支援技術の利用者に、複数ページで繰り返されるコンテンツのブロックをスキップする容易な方法を提供するとともに、ページの構造をプログラムによって理解できるようにする。たとえば、すべてのページに見られる共通のナビゲーションメニューが存在する場合、ランドマークロール（又はランドマーク）は、ナビゲーションメニューをスキップし、セクションからセクションにナビゲートするために使用できる。これは、伝統的な「スキップリンク」メカニズムそっくりに、支援技術利用者とキーボード利用者が、実際に後続にあるものを見つけるために大量のコンテンツの中をタブ移動するための時間と手間を省く（支援技術サポートの詳細については上記のユーザエージェントノートを参照のこと）。ニュースサイトのメニューに精通しているだろう、トップニュースを得ることにのみ関心がある目の不自由な利用者は、より容易に"main"ランドマークにナビゲートして、多数のメニューリンクを無視できる。別の状況で、目の不自由な利用者は、すぐにナビゲーションメニューを検索したいかもしれず、ナビゲーションランドマークにジャンプすることでこれを実現できる。</p>
       <p>ランドマークはまた、目の見えるキーボード利用者が<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-      	href="http://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">ブラウザプラグイン</loc>を使用して、ページのセクションにナビゲートするのを支援することもできる。</p>
+      	href="https://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">ブラウザプラグイン</loc>を使用して、ページのセクションにナビゲートするのを支援することもできる。</p>
       <p>ランドマークは、セクションをマークする要素上のrole属性を使用してページに挿入される。属性値は、ランドマークの名前である。ロールの値は次のとおりである:</p>
       <ulist>
          <item>
@@ -145,7 +145,7 @@
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                  	href="http://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">Enabling landmark-based keyboard navigation in Firefox</loc>
+                  	href="https://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">Enabling landmark-based keyboard navigation in Firefox</loc>
                </p>
             </item>
             <item>

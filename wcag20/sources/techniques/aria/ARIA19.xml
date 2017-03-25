@@ -107,8 +107,8 @@ $(document).ready(function(e) {
   </p>
 </form>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="aria-alert-validation.html"
-                    linktype="examples">エラーを識別するためにrole=alertを使用する</loc>。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA19/aria-alert-validation.html"><!--
+                    linktype="examples"-->エラーを識別するためにrole=alertを使用する</loc>。</p>
          </description>
       </eg-group>
    </examples>
@@ -124,7 +124,7 @@ $(document).ready(function(e) {
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                  	href="http://www.paciellogroup.com/blog/2012/06/html5-accessibility-chops-aria-rolealert-browser-support/">HTML5 Accessibility Chops: ARIA role=alert browser support</loc>
+                  	href="https://www.paciellogroup.com/blog/2012/06/html5-accessibility-chops-aria-rolealert-browser-support/">HTML5 Accessibility Chops: ARIA role=alert browser support</loc>
                </p>
             </item>
             <item>
@@ -171,14 +171,14 @@ $(document).ready(function(e) {
                <p>ライブ領域のコンテンツの表示又更新を引き起こすエラーをトリガーする。</p>
             </item>
             <item>
-               <p>1.及び3.を満たしている。</p>
+               <p>エラーメッセージが既に存在するエラーコンテナに挿入されたことをチェックする。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>#1 and #3 are true.</p>
+               <p>1. 及び 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

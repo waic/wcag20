@@ -55,8 +55,8 @@
 <button>Return to page and correct error</button>
 </div>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="aria-role-alertdialog.html"
-                    linktype="examples">アラートダイアログ</loc>。</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA18/aria-role-alertdialog.html"><!--
+                    linktype="examples"-->アラートダイアログ</loc>。</p>
          </description>
       </eg-group>
    </examples>

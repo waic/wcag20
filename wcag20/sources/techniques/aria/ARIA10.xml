@@ -39,8 +39,8 @@
 
 <div id="star_id">4 of 5</div>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ARIA10-example1.html"
-                    linktype="examples">複雑な図形に短い説明を提供する</loc></p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA10/ARIA10-example1.html"><!--
+                    linktype="examples"-->複雑な図形に短い説明を提供する</loc></p>
          </description>
       </eg-group>
    </examples>

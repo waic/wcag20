@@ -41,8 +41,8 @@
 return you back to the main page</div>
 ]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="describedby-close.html"
-                    linktype="examples">事例 1</loc>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA1/describedby-close.html"><!--
+                    linktype="examples"-->事例 1</loc>
             </p>
          </description>
       </eg-group>

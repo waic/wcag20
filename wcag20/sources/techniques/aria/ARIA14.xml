@@ -192,8 +192,8 @@
    <button aria-label="Close" onclick="document.getElementById('box').style.display='none';" class="close-button">X</button>				
 </div>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="box.html"
-                    linktype="examples">閉じるボタンの例</loc>。
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA14/box.html"><!--
+                    linktype="examples"-->閉じるボタンの例</loc>。
 </p>
          </description>
       </eg-group>
