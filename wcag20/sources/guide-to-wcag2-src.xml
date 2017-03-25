@@ -18,7 +18,8 @@
 </pubdate>
 <publoc>
 	<!--<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/</loc>-->
-	<loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc>
+	<!--loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc-->
+    <loc href="http://waic.jp/docs/UNDERSTANDING-WCAG20/">http://waic.jp/docs/UNDERSTANDING-WCAG20/</loc>
 </publoc>
 <altlocs>
 <loc href="complete.html">単一ファイル版</loc>
