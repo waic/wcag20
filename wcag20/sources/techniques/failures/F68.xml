@@ -10,7 +10,7 @@
       <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この失敗例は、フォームコントロールの名前が支援技術に公開されていない場合に発生する問題を説明する。その結果、一部のユーザーはフォームコントロールの目的を特定できなくなる。名前（name）は、<el>label</el> 要素を含む複数の方法で指定できる。他のオプションには、アクセシビリティ名に使用されるテキストを直接提供するために使用される <att>title</att> 属性および <att>aria-label</att> の使用、又はその名前（name）を提供しているページ上の他のテキストとの関連を示す <att>aria-labelledby</att> が含まれる。ボタンコントロールには、以下に示すように、別の方法で名前（name）を割り当てることができるが、特定の状況では<att>label</att>、<att>title</att>、<att>aria-label</att>、または <att>aria-labelledby</att> の使用が必要な場合がある。</p>
+    <p>この失敗例は、フォームコントロールの名前が支援技術に公開されていない場合に発生する問題を説明する。その結果、一部の利用者はフォームコントロールの目的を特定できなくなる。名前（name）は、<el>label</el> 要素を含む複数の方法で指定できる。他のオプションには、アクセシビリティ名に使用されるテキストを直接提供するために使用される <att>title</att> 属性および <att>aria-label</att> の使用、又はその名前（name）を提供しているページ上の他のテキストとの関連を示す <att>aria-labelledby</att> が含まれる。ボタンコントロールには、以下に示すように、別の方法で名前（name）を割り当てることができるが、特定の状況では<att>label</att>、<att>title</att>、<att>aria-label</att>、または <att>aria-labelledby</att> の使用が必要な場合がある。</p>
     <note><p>明示的に関連付けられた <el>label</el> を使用できる要素は次のとおりとなる。</p>
       <ulist>
         <item><p><el>input</el></p></item>

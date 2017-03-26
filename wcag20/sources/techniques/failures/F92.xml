@@ -11,7 +11,7 @@
                          relationship="failure"/>
    </applies-to>
    <description>
-      <p>この失敗例は、情報あるいはコンテンツの関係性を伝達する目的で用いられる要素に表現の役割が適用されるときに起こる。<el>table</el> のような要素はセマンティックなマークアップによってコンテンツがもつ情報を伝達することができる。一方 WAI-ARIA の <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#presentation"><attval>presentation</attval></loc> のロールは、アクセシビリティ API からコンテンツのセマンティックな情報を抑制し、利用者への情報の伝達をユーザーエージェントが行わないよう意図されている。<attval>presentation</attval> ロールをセマンティックな情報を伝達するべきコンテンツに用いるのは利用者のコンテンツの理解を妨げるだろう。
+      <p>この失敗例は、情報あるいはコンテンツの関係性を伝達する目的で用いられる要素に表現の役割が適用されるときに起こる。<el>table</el> のような要素はセマンティックなマークアップによってコンテンツがもつ情報を伝達することができる。一方 WAI-ARIA の <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#presentation"><attval>presentation</attval></loc> のロールは、アクセシビリティ API からコンテンツのセマンティックな情報を抑制し、利用者への情報の伝達をユーザエージェントが行わないよう意図されている。<attval>presentation</attval> ロールをセマンティックな情報を伝達するべきコンテンツに用いるのは利用者のコンテンツの理解を妨げるだろう。
 </p>
    </description>
    <examples>
