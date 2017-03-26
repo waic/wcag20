@@ -93,7 +93,7 @@ function updateAccName(obj, newName:String) {
       <expected-results>
          <ulist>
             <item>
-               <p>1., 2. または 3. を満たしている。</p>
+               <p>1., 2. 及び 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

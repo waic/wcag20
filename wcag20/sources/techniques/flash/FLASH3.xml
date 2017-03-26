@@ -78,7 +78,7 @@ _root.decorative_mc._accProps.silent = true; ]]></code>
                <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
             </item>
             <item>
-               <p>オブジェクトのアクセシビリティ情報を表示できる aDesigner2 などのツールを使用して Flash ムービーを開く。</p>
+               <p>オブジェクトのアクセシビリティ情報を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
                <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックすると、表示されないように設定されているオブジェクトがツールの画面に表示されていない。</p>

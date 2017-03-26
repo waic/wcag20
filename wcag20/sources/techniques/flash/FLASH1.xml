@@ -88,7 +88,7 @@ print_btn.accessibilityProperties.name = "印刷する";]]></code>
                <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
             </item>
             <item>
-               <p>オブジェクトの長い説明を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
+               <p>オブジェクト名のテキストによる代替を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
             </item>
             <item>
                <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックし、オブジェクトに説明が設定されている場合、ツールの画面にその説明が適切に表示されることを確認する。</p>
