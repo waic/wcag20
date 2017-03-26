@@ -7,7 +7,7 @@
 						How to Meet 2.4.4 (リンクの目的 (コンテキスト内) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
-					</a></li></ul></li></ul><h2 id="F63-description">解説</h2><div class="textbody"><p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合：</p><ul><li><p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p></li><li><p>前の見出しの場合</p></li><li><p><code>aria-label</code> や <code>aria-labelledby</code> などの適切な ARIA プロパティを介する場合</p></li></ul><p>ユーザーはリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p></div><h2 class="small-head" id="F63-examples">事例</h2><div class="failure"><h3 class="small-head" id="F63-failex1">
+					</a></li></ul></li></ul><h2 id="F63-description">解説</h2><div class="textbody"><p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合：</p><ul><li><p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p></li><li><p>前の見出しの場合</p></li><li><p><code>aria-label</code> や <code>aria-labelledby</code> などの適切な ARIA プロパティを介する場合</p></li></ul><p>利用者はリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p></div><h2 class="small-head" id="F63-examples">事例</h2><div class="failure"><h3 class="small-head" id="F63-failex1">
 					失敗例 1: 隣接する段落のリンク</h3><div class="example"><div class="textbody"><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p></div><div class="code"><pre><code>
 &lt;p&gt;ある英国のビジネスマンが200万マイルの
 マイレージを獲得していて、世界初の消費者向け
