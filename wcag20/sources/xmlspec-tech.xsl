@@ -804,7 +804,7 @@
 	   					<xsl:with-param name="conditional" select="0"/>
 	   					<xsl:with-param name="default.id" select="'contents'"/>
 	   				</xsl:call-template>
-	   				<xsl:text>目次</xsl:text>
+	   				<xsl:text>章目次</xsl:text>
 	    			</h2>
 	    			<ul>
 		   				<xsl:apply-templates select="//div1[not(@id = 'placeholders')] | //inform-div1" mode="toc"><xsl:with-param name="local.toc.level" select="1"/></xsl:apply-templates>
