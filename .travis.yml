@@ -18,6 +18,7 @@ script:
 - ant -f wcag20/build.xml -lib saxon9he.jar gh-pages
 after_success:
 - cd ../..
+- ls
 - mkdir gh-pages
 - cd gh-pages
 - git clone --depth=1 --branch=gh-pages https://${GH_REF}
