@@ -796,7 +796,7 @@
 	<!-- overriding toc template to do some custom stuff for techniques -->
 	<xsl:template name="toc">
 		<xsl:if test="$toc.level &gt; 0">
-			<xsl:if test="$slices != 1">
+			<xsl:if test="($slices != 1) and ($bytech != 1)">
 				<div>
 					<hr/>
 	   				<h2>
