@@ -59,7 +59,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
             <head>PDF テクノロジーノート</head>
             <div3 id="pdf_notes_intro">
                <head>イントロダクション</head>
-               <p>Portable Document Format（PDF）は、文書の作成に使用したアプリケーションソフトウェア、ハードウェアおよびオペレーティングシステムや、表示または印刷に使用する出力デバイスに依存せずに文書を表示できるファイル形式である。PDF ファイルは、信頼性が高くデバイスに依存しない方法で、文書内のページの表示を指定する。PDF 仕様は、1993 年に Adobe Systems によって一般公開向けの標準として発表された。2008 年 1 月には、PDF 1.7 が ISO 規格（ISO 32000-1）<!--bibref ref="ISO32000"/--> になった。</p>
+               <p>Portable Document Format（PDF）は、文書の作成に使用したアプリケーションソフトウェア、ハードウェアおよびオペレーティングシステムや、表示または印刷に使用する出力デバイスに依存せずに文書を表示できるファイル形式である。PDF ファイルは、信頼性が高くデバイスに依存しない方法で、文書内のページの表示を指定する。PDF 仕様は、1993 年に Adobe Systems によって一般公開向けの標準として発表された。2008 年 1 月には、PDF 1.7 が ISO 規格（ISO 32000-1）<bibref ref="ISO32000"/> になった。</p>
                <p>アクセシビリティについては、2012 年 7 月に ISO規格となり、2014年に改正されたPDF/UA（ユニバーサルアクセシビリティ）に規定されている（ISO 14289-1:2014 (<loc href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=64599">PDF/UA (ISO 14289-1:2014)</loc>を参照）。PDF/UA は、テクニック（ハウツー）仕様を示すものではなく、よりアクセシブルな PDF を作成するための一連のガイドラインを提供することを目的としたものである。この仕様では、必須のコンポーネントと禁止されているコンポーネントを示すとともに、障害のある人を含め、可能な限り幅広い人々がファイルを利用できるようにすること目的に、それらのコンポーネントを PDF ファイルに含めるか否かを規定する条件について説明している。それらのコンポーネントを PDF ストリームに含めるための機構は、個々の開発者、PDF 作成者または PDF 表示エージェントの裁量に任されている。PDF/UA は、適合するリーダーの動作を規定するルールも指定している。</p>
             </div3>
             <div3 id="pdf_notes_acc-sup">
@@ -817,8 +817,9 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
             </bibl>
             <bibl id="CSS3" key="CSS3">
                <titleref href="http://www.w3.org/Style/CSS/current-work#table">[CSS 2.1 and CSS 3] Roadmap</titleref>, CSS WG's table of modules and publication dates.</bibl>
-            <bibl id="PDF" key="PDF">"PDF", Adobe Systems. Available at <loc href="http://www.adobe.com/devnet/pdf.html">http://www.adobe.com/devnet/pdf.html</loc>.</bibl>
             <bibl id="HTML4" key="HTML4">"HTML 4.01 Specification," D. Raggett, A. Le Hors, I. Jacobs, eds.,  W3C Recommendation 24 December 1999. Available at <loc href="http://www.w3.org/TR/html401/">http://www.w3.org/TR/html401/</loc>
+            </bibl>
+<bibl id="ISO32000" key="ISO32000">"Document management - Portable document format - Part 1: PDF 1.7", ISO/TC 171/SC 2. ISO. Available at <loc href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=51502">http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=51502</loc>. ISO-approved copy available at: <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf</loc>.
             </bibl>
             <bibl id="WCAG20" key="WCAG20">"Web Content Accessibility Guidelines 2.0,"  B. Caldwell, M. Cooper, L. Guarino Reid, and G. Vanderheiden, eds., W3C Working Draft 11 December 2007. This W3C Working Draft is available at <loc href="http://www.w3.org/TR/2007/WD-WCAG20-20071211/">http://www.w3.org/TR/2007/WD-WCAG20-20071211/</loc>.  The latest version of WCAG 2.0 is available at <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>
             </bibl>
