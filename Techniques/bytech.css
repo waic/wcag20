@@ -1,0 +1,18 @@
+div.technique h3 {
+border-bottom:thin solid #666666;
+display:block;
+padding-bottom:0.25em;
+}
+
+div.technique h4 {
+border-bottom:none;
+display:block;
+padding-bottom:0.25em;
+}
+
+h3, h4, h5 {color:#000; background:inherit;}
+
+h2 {border-bottom:none;}
+
+h4.small-head {font-style: italic;}
+h3.small-head {font-style:normal; font-size: 1.1em;}
