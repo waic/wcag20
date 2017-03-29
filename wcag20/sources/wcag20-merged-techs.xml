@@ -22,7 +22,7 @@
 			<loc href="http://waic.jp/docs/WCAG-TECHS/">http://waic.jp/docs/WCAG-TECHS/</loc>
 		</publoc>
 		<altlocs>
-			<loc href="complete.html">Single file version</loc>
+			<loc href="complete.html">単一ファイル版</loc>
 <!-- diff版はいったんナシ
 			<loc href="complete-diff.html">Single file diff-marked version showing revisions since 17 March 2015</loc>
 			<loc href="/WAI/WCAG20/versions/techniques/">Alternate Versions of Techniques for WCAG 2.0</loc>
