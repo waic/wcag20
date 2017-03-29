@@ -610,7 +610,7 @@
 	        <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" type="text/css" href="diffs.css" />
 	    </xsl:if>
 	    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" type="text/css">
-	        <xsl:attribute name="href"><xsl:text>http://www.w3.org/StyleSheets/TR/2016/</xsl:text>
+	        <xsl:attribute name="href"><xsl:text>https://www.w3.org/StyleSheets/TR/2016/</xsl:text>
 	        	<xsl:choose>
 	        		<!-- Editor's review drafts are a special case. -->
 	        		<xsl:when test="/spec/@role='editors-copy'">W3C-ED</xsl:when>
