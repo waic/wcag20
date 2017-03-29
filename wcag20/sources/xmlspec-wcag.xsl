@@ -25,10 +25,7 @@
   <xsl:param name="glthisversion">
       <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
-  <xsl:param name="guidethisversion">
-      <!--BBC change as needed based on whether the guidelines should point the latest version or not -->
-    <xsl:value-of select="$guide-src//latestloc/loc[@href]"/>
-  </xsl:param>
+  <xsl:param name="guidethisversion">http://waic.jp/docs/UNDERSTANDING-WCAG20/<!--BBC change as needed based on whether the guidelines should point the latest version or not --><!--xsl:value-of select="$guide-src//latestloc/loc[@href]"/--></xsl:param>
   <xsl:param name="techsthisversion">
     <xsl:value-of select="$techs-src//publoc/loc[@href]"/>
   </xsl:param>
