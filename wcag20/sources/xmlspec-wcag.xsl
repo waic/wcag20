@@ -104,12 +104,12 @@
         </xsl:choose>
         <xsl:text> </xsl:text>
         <xsl:apply-templates select="pubdate/year"/>
-        <xsl:text>年 </xsl:text>
+        <xsl:text> 年 </xsl:text>
         <xsl:apply-templates select="pubdate/month"/>
-        <xsl:text>月 </xsl:text>
+        <xsl:text> 月 </xsl:text>
         <xsl:if test="pubdate/day">
           <xsl:apply-templates select="pubdate/day"/>
-          <xsl:text>日 </xsl:text>
+          <xsl:text> 日</xsl:text>
         </xsl:if>
         <xsl:if test="$additional.title != ''">
           <xsl:text> -- </xsl:text>
