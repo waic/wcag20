@@ -979,7 +979,7 @@
 		<div class="head">
 			<xsl:if test="not(/spec/@role='editors-copy')">
 				<p>
-					<a href="http://www.w3.org/">
+					<a href="https://www.w3.org/">
 						<img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"/>
 					</a>
 					<xsl:choose>
