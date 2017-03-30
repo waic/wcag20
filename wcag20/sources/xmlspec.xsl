@@ -1065,13 +1065,13 @@
 				</xsl:when>
 				<xsl:otherwise>
 					<p class="copyright">
-						<a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">
+						<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">
 							<xsl:text>Copyright</xsl:text>
 						</a>
 						<xsl:text> © </xsl:text>
 						<xsl:apply-templates select="pubdate/year"/>
 						<xsl:text> </xsl:text>
-						<a href="http://www.w3.org/">
+						<a href="https://www.w3.org/">
 							<abbr title="World Wide Web Consortium">W3C</abbr>
 						</a>
 						<sup>®</sup>
@@ -1088,11 +1088,11 @@
 						<xsl:text>, </xsl:text>
 						<a href="http://ev.buaa.edu.cn/">Beihang</a>
 						<xsl:text>). W3C </xsl:text>
-						<a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>
+						<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>
 						<xsl:text>, </xsl:text>
-						<a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
+						<a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
 						<xsl:text> and </xsl:text>
-						<a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+						<a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
 						<xsl:text> rules apply.</xsl:text>
 					</p>
 				</xsl:otherwise>
