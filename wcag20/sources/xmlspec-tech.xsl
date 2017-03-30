@@ -811,6 +811,7 @@
 	    			</ul>
 	   			</div>
 	   		</xsl:if>
+      <hr/>
       <nav id="toc">
       	<h2>目次</h2>
         <xsl:text>
