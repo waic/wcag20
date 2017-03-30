@@ -5,11 +5,11 @@
 <spec status="final" w3c-doctype="wgnote" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<header>
 <trdisclaimer>
-<p>【重要】 この文書は、W3Cワーキンググループノート「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</loc>」（原文は英語: 2016年10月7日公開）を情報通信アクセス協議会の「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="http://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会（WAIC） 翻訳ワーキンググループ（WG4）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3Cが公開している原文（英語）にてご確認ください。</p>
-<p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文（英語）にリンクしています。</p>
+<p>【重要】 この文書は、W3C ワーキンググループノート <loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</loc> (原文は英語: 2016 年 10 月 7 日公開) を情報通信アクセス協議会の<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="http://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)</loc> が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3C のサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3C が公開している原文 (英語)にてご確認ください。</p>
+<p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </trdisclaimer>
 		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 達成方法集</title>
-		<subtitle>WCAG 2.0の達成方法と不適合事例</subtitle>
+		<subtitle>WCAG 2.0 の達成方法と不適合事例</subtitle>
 		<w3c-designation>WCAG20-TECHS</w3c-designation>
 		<w3c-doctype>W3C ワーキンググループノート</w3c-doctype>
 		<pubdate>
@@ -73,27 +73,27 @@
 			</author>
 		</authlist>
 		<status>
-			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C technical reports index</loc>で参照可能である。</emph></p>
-			<p>これは、<phrase role="final">ワーキンググループ・ノート</phrase>の「WCAG 2.0 達成方法集」である。この達成方法集は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc>によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び<loc href="https://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG 2.0</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
-			<p>「WCAG 2.0 達成方法集」は、ワーキンググループ ノートとして2008年12月11日に公開されて以来、2010年10月14日、2012年1月3日、2013年9月5日、2014年3月3日、2014年9月16日、2015年2月26日、2016年3月17日に更新されてきた。この新しいバージョンは、「WCAG 2.0」に対して提供されている参考情報を更新している。なお、「WCAG 2.0」自体は変更されておらず、参考情報だけが更新されたことに留意していただきたい。主な変更点には、皆さんや翻訳者からの指摘に基づいた加筆修正である。このバージョンにおける変更点には、<loc href="G136" linktype="general">G136</loc>、<loc href="ARIA2" linktype="aria">ARIA2</loc>、<loc href="F68" linktype="failure">F68</loc>などが挙げられる。</p>
-			<p>変更箇所は、<loc href="https://www.w3.org/TR/WCAG20-TECHS/complete-diff">diff-marked version</loc>で強調されている。【訳注: 日本語訳のdiff-marked versionは用意されていない。】</p>
+			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C technical reports index</loc> で参照可能である。</emph></p>
+			<p>これは、<phrase role="final">ワーキンググループノート</phrase>の WCAG 2.0 達成方法集 である。この達成方法集は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び <loc href="https://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG 2.0</loc> から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
+			<p>WCAG 2.0 達成方法集は、ワーキンググループ ノートとして 2008 年 12 月 11 日に公開されて以来、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新されてきた。この新しいバージョンは、WCAG 2.0 に対して提供されている参考情報を更新している。なお、WCAG 2.0 自体は変更されておらず、参考情報だけが更新されたことに留意していただきたい。主な変更点には、皆さんや翻訳者からの指摘に基づいた加筆修正である。このバージョンにおける変更点には、<loc href="G136" linktype="general">G136</loc>、<loc href="ARIA2" linktype="aria">ARIA2</loc>、<loc href="F68" linktype="failure">F68</loc>などが挙げられる。</p>
+			<p>変更箇所は、<loc href="https://www.w3.org/TR/WCAG20-TECHS/complete-diff">diff-marked version</loc> で強調されている。【訳注: 日本語訳の diff-marked version は用意されていない。】</p>
 
-			<p>ワーキンググループでは、「<loc href="https://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc>」で文書化されている選択肢を用いて、コメントを送っていただきたいと考えている。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>宛に電子メールで送信することもできる。「<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives for the public comments list</loc>」は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。「<loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list discussions</loc>」での議論のアーカイブは一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
-			<p>達成方法を新たに文書化する上で手助けとなる皆さんからの提案を特に歓迎している。達成方法を提案する際には、<loc href="https://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>を使っていただきたい。</p>
-	<p>この文書は、W3Cの <loc href="https://www.w3.org/WAI/">Web Accessibility Initiative</loc>(WAI)の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="https://www.w3.org/WAI/GL/charter">WCAG Working Group charter</loc>に記載されている。WCAG ワーキンググループは、<loc href="https://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc>の一つである。</p>
-			<p>ワーキンググループ・ノートとしての公開は、W3C 会員による承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、いつでも他の文書に置き換えられたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
-	<p>この文書は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc role="disclosures" href="https://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc>を含む特許について実際に知識のある人は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc>に従って、その情報を開示することが求められる。</p>
-			<p>この文書は、<loc id="w3c_process_revision" href="https://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc>に従っている。</p>
+			<p>ワーキンググループでは、<loc href="https://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc> で文書化されている選択肢を用いて、コメントを送っていただきたいと考えている。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives for the public comments list</loc> は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list discussions</loc> での議論のアーカイブは一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
+			<p>達成方法を新たに文書化する上で手助けとなる皆さんからの提案を特に歓迎している。達成方法を提案する際には、<loc href="https://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc> を使っていただきたい。</p>
+	<p>この文書は、W3C の <loc href="https://www.w3.org/WAI/">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="https://www.w3.org/WAI/GL/charter">WCAG Working Group charter</loc> に記載されている。WCAG ワーキンググループは、<loc href="https://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc> の一つである。</p>
+			<p>ワーキンググループノートとしての公開は、W3C 会員による承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、いつでも他の文書に置き換えられたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
+	<p>この文書は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc> に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="https://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc> を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc> を含む特許について実際に知識のある人は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc> に従って、その情報を開示することが求められる。</p>
+			<p>この文書は、<loc id="w3c_process_revision" href="https://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc> に従っている。</p>
 		</status>
 
 		<abstract>
 			<p id="abstract-general-intro">
-この文書「<emph>WCAG 2.0 達成方法集</emph>」は、ウェブコンテンツ制作者および評価者向けに「<loc href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc>」<bibref ref="WCAG20"/>の達成基準を満たすためのガイダンスを提供している。W3CのWeb Accessibility Initiative (WAI) が、WCAG 2.0を補足するために公開している一連の文書の1つである。「WCAG 2.0」のイントロダクション、補足する技術文書、そして教材については「<loc href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc>」を参照のこと。</p>
+この文書<emph>WCAG 2.0 達成方法集</emph>は、ウェブコンテンツ制作者および評価者向けに <loc href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/>の達成基準を満たすためのガイダンスを提供している。W3C の Web Accessibility Initiative (WAI) が、WCAG 2.0 を補足するために公開している一連の文書の1つである。WCAG 2.0 のイントロダクション、補足する技術文書、そして教材については <loc href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
 			<p>
-				<phrase id="abstract-techniques-informative">達成方法は、参考情報である。つまり、達成方法は必須要件ではない。WCAG 2.0への適合の判断は、<loc href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</loc>の達成基準に基づくものであり、達成方法ではない。</phrase>
-				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、「WCAG 2.0 解説書」の<loc href="understanding-techniques" linktype="understanding">WCAG達成基準の達成方法を理解する</loc> のセクションを参照のこと。</emph></phrase>
+				<phrase id="abstract-techniques-informative">達成方法は、参考情報である。つまり、達成方法は必須要件ではない。WCAG 2.0 への適合の判断は、<loc href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</loc> の達成基準に基づくものであり、達成方法ではない。</phrase>
+				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、WCAG 2.0 解説書の<loc href="understanding-techniques" linktype="understanding">WCAG達成基準の達成方法を理解する</loc> のセクションを参照のこと。</emph></phrase>
 			</p>
-			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は「<loc href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc>」を利用して、WCAGの達成基準を読み、そこから「WCAG 2.0 解説書」にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
+			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は <loc href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc> を利用して、WCAGの達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
 		</abstract>
 		<langusage>
 			<language id="ja"/>
@@ -111,7 +111,7 @@
 			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この<emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ1年に<phrase>2回</phrase>、定期的に更新する文書である。</p>
 			<p><phrase use-id="abstract-techniques-informative"/></p>
 			<note>
-				<p>W3C は、必要とするW3Cの十分な達成方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
+				<p>W3C は、必要とする W3C の十分な達成方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
 				<ulist>
 					<item>
 						<p>WCAG 2 FAQ における<loc href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
@@ -149,10 +149,10 @@
 		<!-- BBC - This is the master list. Some of these refs also appear in the Understanding Doc. -->
 		<inform-div1 id="acknowledgements">
 			<head>謝辞</head>
-			<p>この出版物は、初期は契約番号ED-OSE-10-C-0067、現在は契約番号HHSP23301500054Cのもとで米国教育省・障害者リハビリテーション研究所（NIDILRR）の政府資金によって一部賄われている。この出版物の内容は、必ずしも米国教育省の見解や政策を反映するものではなく、また商品名、商用製品、組織の言及は米国政府による支持を意味するものではない。</p>
-			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG)への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc>で提供している。</p>
+			<p>この出版物は、初期は契約番号 ED-OSE-10-C-0067、現在は契約番号 HHSP23301500054C のもとで米国教育省・障害者リハビリテーション研究所 (NIDILRR) の政府資金によって一部賄われている。この出版物の内容は、必ずしも米国教育省の見解や政策を反映するものではなく、また商品名、商用製品、組織の言及は米国政府による支持を意味するものではない。</p>
+			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG) への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc>で提供している。</p>
 			<div2 id="ack_participants-active" role="normal">
-				<head>この文書の作成に貢献したWCAG WGの参加者</head>
+				<head>この文書の作成に貢献した WCAG WG の参加者</head>
 				<ulist>
 					<item>
 						<p>Paul Adam (Deque)</p>
@@ -250,7 +250,7 @@
 				</ulist>
 			</div2>
 			<div2 id="ack_participants-previous" role="normal">
-				<head>過去のWCAG WG参加者及び「WCAG 2.0」または関連文書への貢献者</head>
+				<head>過去の WCAG WG 参加者及び WCAG 2.0 又は関連文書への貢献者</head>
 				<p>Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Wilhelm Joys Andersen, Andrew Arch, Avi Arditti, Aries Arditi, Jon Avila, Mark Barratt, Mike Barta, Sandy Bartell, Kynn Bartlett, Chris Beer, Charles Belov, Marco Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Frederick Boland, Denis Boudreau, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown, Doyle Burnett, Raven Calais, Ben Caldwell, Alastair Campbell, Laura Carlson, Tomas Caspers, Roberto Castaldo, Sofia Celic-Li, Sambhavi Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan Chuter, David M Clark, Joe Clark, Darcy Clarke, James Coltham, Vivienne Conway, Earl Cousins, James Craig, Tom Croucher, Pierce Crowell, Nir Dagan, Daniel Dardailler, Geoff Deering, Sébastien Delorme, Pete DeVasto, Wayne Dick, Iyad Abu Doush, Sylvie Duchateau, Cherie Eckholm, Roberto Ellero, Don Evans, Gavin Evans, Neal Ewers, Steve Faulkner, Bengt Farre, Lainey Feingold, Wilco Fiers, Michel Fitos, Alan J. Flavell, Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J. Gardner, Alistair Garrison, Greg Gay, Becky Gibson, Al Gilman, Kerstin Goldsmith, Michael Grade, Karl Groves, Jon Gunderson, Emmanuelle Gutiérrez y Restrepo, Brian Hardy, Eric Hansen, Benjamin Hawkes-Lewis, Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann, Allen Hoffman, Chris Hofstader, Yvette Hoitink, Martijn Houtepen, Carlos Iglesias, Jonas Jacek, Ian Jacobs, Phill Jenkins, Duff Johnson, Jyotsna Kaki, Shilpi Kapoor, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness, John Kirkwood, Jason Kiss, Johannes Koch, Marja-Riitta Koivunen, Maureen Kraft, Preety Kumar, Kristjan Kure, Andrew LaHart, Gez Lemon, Chuck Letourneau, Aurélien Levy, Harry Loots, Scott Luebking, Tim Lacy, Jim Ley, Alex Li, William Loughborough, Greg Lowney, N Maffeo, Mark Magennis, Kapsi Maria, Luca Mascaro, Matt May, Sheena McCullagh, Liam McGee, Jens Meiert, Niqui Merret, Jonathan Metz, Alessandro Miele, Steven Miller, Mathew J Mirabella, Matt May, Marti McCuller, Sorcha Moore, Mary Jo Mueller, Charles F. Munat, Robert Neff, Charles Nevile, Liddy Nevile, Dylan Nicholson, Bruno von Niman, Tim Noonan, Sebastiano Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Devarshi Pant, Nigel Peck, Anne Pemberton, David Poehlman, Ian Pouncey, Charles Pritchard, Kerstin Probiesch, W Reagan, Adam Victor Reed, Chris Reeve, Chris Ridpath, Lee Roberts, Mark Rogers, Raph de Rooij, Gregory J. Rosmaita, Matthew Ross, Sharron Rush, Joel Sanda, Janina Sajka, Roberto Scano, Gordon Schantz, Tim van Schie, Wolf Schmidt, Stefan Schnabel, Lisa Seeman, Cynthia Shelly, Glenda Sims, John Slatin, Becky Smith, Jared Smith, Andi Snow-Weaver, Neil Soiffer, Jeanne Spellman, Mike Squillace, Michael Stenitzer, Diane Stottlemyer, Christophe Strobbe, Sarah J Swierenga, Jim Thatcher, Terry Thompson, Justin Thorp, David Todd, Mary Utt, Jean Vanderdonckt, Carlos A Velasco, Eric Velleman, Gijs Veyfeyken, Dena Wainwright, Paul Walsch, Daman Wandke, Richard Warren, Elle Waters, Takayuki Watanabe, Léonie Watson, Gian Wild, David Wooley, Wu Wei, Leona Zumbo.</p>
 			</div2>
 </inform-div1>
