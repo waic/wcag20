@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G184">
-   <short-name>フォーム又はテキスト・フィールド一式の先頭に、必要とされる入力フォーマットを説明するテキストの説明文を提供するt</short-name>
+   <short-name>フォーム又はテキスト・フィールド一式の先頭に、必要とされる入力フォーマットを説明するテキストの説明文を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>
