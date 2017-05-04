@@ -125,7 +125,7 @@ if (System.capabilities.hasAccessibility) {
          </description>
       </eg-group>
       <eg-group>
-         <head>事例 3： ActionScript 3.0 を使用してアクセシブルな名前を設定する</head>
+         <head>ActionScript 3.0 を使用してアクセシブルな名前を設定する</head>
          <description>
             <p>次のコード例は、ListBox コンポーネントを作成してアクセシブルな名前を割り当てる方法を示している。</p>
          </description>

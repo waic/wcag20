@@ -19,7 +19,7 @@
 </description>
     </eg-group>
     <eg-group>
-      <head>事例2：ナレーターの音声と背景音楽との十分な音声コントラスト</head>
+      <head>ナレーターの音声と背景音楽との十分な音声コントラスト</head>
       <description><p>この事例では、ナレーターの音声と背景音楽があり、主音声は背景音楽よりもちょうど20デシベル大きい。主音声（前景）は-17.52デシベル（二乗平均平方根）、音楽（背景）は-37.52デシベルで録音しているため、前景は背景よりも20デシベル大きいことになる。
 								</p>
 <exsubhead>音声サンプル</exsubhead><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Good-contrast.mp3"><!-- linktype="examples"-->音声サンプル：前景音声が背景音楽よりも20デシベル大きい（mp3形式）</loc></p>
@@ -29,7 +29,7 @@
 <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Audio_3.jpg" alt="スクリーンショット：音声エディタを用いて、十分なコントラストのある音声を視覚的に示したもの"/></description>
     </eg-group>
     <eg-group role="failure">
-      <head>不適合事例：ナレーターの音声と背景音楽との不十分な音声コントラスト</head>
+      <head>ナレーターの音声と背景音楽との不十分な音声コントラスト</head>
       <description><exsubhead>不適合となる音声サンプル</exsubhead><p>この事例では、ナレーターの音声と背景音楽があり、主音声は背景音楽よりも20デシベル以上は大きくない。主音声（前景）は-18デシベル、音楽（背景）は-16デシベルで録音しているため、前景は背景よりも2デシベルしか大きくない。</p>
 <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Bad-contrast.mp3"><!-- linktype="examples"-->音声サンプル：前景音声と背景音楽の差が20デシベル未満である（mp3形式）</loc></p>
 <p>音声サンプル（不十分なコントラスト）のトランスクリプト：</p>

@@ -17,7 +17,6 @@
   </description>
    <examples>
       <eg-group>
-      <head>事例１</head>
       <description><p>日付を入力するHTMLのフォーム・コントロールでは、<el>label</el>要素内において、入力する日付はアメリカ合衆国の多くの利用者が想定する月-日-年の書式ではなく、日-月-年の書式でなければならないことを示している。</p>
 </description>
       <code><![CDATA[<label for="date">日付 (dd-mm-yyyy)</label>

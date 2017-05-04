@@ -15,7 +15,7 @@
   </description>
    <examples>
       <eg-group>
-      <head>事例１：HTMLドキュメント内のMOVドキュメント</head>
+      <head>HTMLドキュメント内のMOVドキュメント</head>
       <description><p>「Olympic_Sports.htm」という名のページ内のコード</p>
 </description>
       <code><![CDATA[<a name="Olympic_Wrestling"></a>
@@ -24,7 +24,7 @@
 </a></p>]]></code>
     </eg-group>
     <eg-group>
-      <head>事例２：HTMLドキュメント内の.MOVドキュメントへ戻る</head>
+      <head>HTMLドキュメント内の.MOVドキュメントへ戻る</head>
       <description><p>olympic_wrestling_transcript.htmのページ内のコード</p>
 </description>
       <code><![CDATA[<p>スポーツアナウンサー １：これは、イングランドのウィルジョンソンと
