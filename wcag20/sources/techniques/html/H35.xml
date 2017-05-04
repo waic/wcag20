@@ -27,7 +27,6 @@
    <examples>
       <eg-group>
       <head>三目並べゲームのアプレット</head>
-      <description/>
       <code><![CDATA[<applet code="tictactoe.class" width="250" height="250" alt="三目並べゲーム">
    三目並べゲーム
 </applet> ]]></code>
