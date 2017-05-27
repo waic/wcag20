@@ -42,40 +42,26 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>
-                  <loc href="G65" linktype="general"/>
-                </p></item>
-	<item><p>
-                  <loc href="G63" linktype="general"/>
-                </p></item>
-	<item><p>
-                  <loc href="G128" linktype="general"/>
-                </p></item>
-	<item><p>
-                  次に挙げる達成方法の一つを用いて、<loc href="G127" linktype="general"/></p><ulist><item><p>
-                      <loc href="H59" linktype="html"/>
-                    </p></item></ulist></item>
-	<item><p>
-                      <loc href="PDF14" linktype="pdf"/>
-                    </p></item>
-	<item><p>
-                      <loc href="PDF17" linktype="pdf"/>
-                    </p></item>
+	<item><p><loc href="G65" linktype="general"/></p></item>
+	<item><p><loc href="G63" linktype="general"/></p></item>
+	<item><p><loc href="G128" linktype="general"/></p></item>
+	<item><p>次に挙げる達成方法の一つを用いて、<loc href="G127" linktype="general"/></p>
+	<ulist>
+		<item><p><loc href="H59" linktype="html"/></p></item>
+	</ulist>
+	</item>
 </olist>
 </div4>
 
 <div4 role="tech-optional">
 <head/>
 <ulist>
-	<item><p>
-        HOMEページもしくは主要なページへのリンクを提供する（リンク追加予定）
-    </p></item>
-	<item><p>ウェブページの集合の編成について読みやすいバージョンの情報を提供する（リンク追加予定）
-                </p></item>
-	<item><p>ウェブページの集合の編成について手話バージョンの情報を提供する（リンク追加予定）（リンク追加予定）
-                </p></item>
-	<item><p>コンテンツの各セクションの最初に読みやすい概要を提供する（リンク追加予定）
-                </p></item>
+	<item><p><loc href="PDF14" linktype="pdf"/></p></item>
+	<item><p><loc href="PDF17" linktype="pdf"/></p></item>
+	<item><p>HOMEページもしくは主要なページへのリンクを提供する（リンク追加予定）</p></item>
+	<item><p>ウェブページの集合の編成について読みやすいバージョンの情報を提供する（リンク追加予定）</p></item>
+	<item><p>ウェブページの集合の編成について手話バージョンの情報を提供する（リンク追加予定）（リンク追加予定）</p></item>
+	<item><p>コンテンツの各セクションの最初に読みやすい概要を提供する（リンク追加予定）</p></item>
 </ulist>
 </div4>
 
