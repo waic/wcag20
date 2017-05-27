@@ -28,12 +28,9 @@
 </div2>
 
 <div2 id="media-equiv-advisory" role="gladvisory">
-<head>ガイドライン 1.2 の参考達成方法</head>
+<head/>
 </div2>
 
-   <div2 id="media-equiv-advisory" role="gladvisory">
-    	  <head>Advisory techniques for Guideline N.N</head>
-   </div2>
    <xi:include href="media-equiv-av-only-alt.xml"/>
    <xi:include href="media-equiv-captions.xml"/>
    <xi:include href="media-equiv-audio-desc.xml"/>
