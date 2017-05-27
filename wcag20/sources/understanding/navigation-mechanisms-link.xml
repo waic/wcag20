@@ -49,6 +49,7 @@
 <div4 role="sufficient">
 <head/>
 <olist>
+	<item><p><loc href="ARIA8" linktype="aria"/></p></item>
 	<item><p><loc href="G91" linktype="general"/></p></item>
 	<item><p><loc href="H30" linktype="html"/></p></item>
 	<item><p><loc href="H24" linktype="html"/></p></item>
