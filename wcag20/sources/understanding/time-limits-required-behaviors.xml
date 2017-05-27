@@ -105,16 +105,9 @@
 <div4 role="failures">
 <head>Common Failures Identified by the Working Group</head>
 <ulist>
-	<item><p>
-                  <loc href="F40" linktype="failure"/>
-                </p></item>
-	<item><p>
-                  <loc href="F41" linktype="failure"/>
-                </p></item>
-	<item><p>
-                  <loc href="F58" linktype="failure"/>
-                </p></item>
-	<item><p><loc href="F16" linktype="failure"/></p></item>
+	<item><p><loc href="F40" linktype="failure"/></p></item>
+	<item><p><loc href="F41" linktype="failure"/></p></item>
+	<item><p><loc href="F58" linktype="failure"/></p></item>
 </ulist>
 </div4>
 </div3>
