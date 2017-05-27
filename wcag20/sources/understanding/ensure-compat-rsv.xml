@@ -96,6 +96,9 @@
 <olist>
   <item><p>下記の達成方法固有の技術を用いて、<loc href="G10" linktype="general"/>:</p>
     <ulist>
+      <item><p><loc href="ARIA4" linktype="aria"/></p></item>
+      <item><p><loc href="ARIA5" linktype="aria"/></p></item>
+      <item><p><loc href="ARIA16" linktype="aria"/></p></item>
       <item><p><loc href="SL6" linktype="silverlight"/></p></item>
       <item><p><loc href="SL18" linktype="silverlight"/></p></item>
       <item><p><loc href="SL20" linktype="silverlight"/></p></item>
