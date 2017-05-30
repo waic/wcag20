@@ -371,16 +371,16 @@
     <xsl:comment> TOP NAVIGATION BAR </xsl:comment>
     <ul id="navigation">
       <li>
-        <strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong>
+        <strong><a href="Overview.html#contents">目次</a></strong>
       </li>
       <li>
-        <strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong>
+        <strong><a href="intro.html">イントロダクション</a></strong>
       </li>
       <xsl:choose>
         <xsl:when test="$prev">
           <li>
             <a>
-              <xsl:attribute name="title"><xsl:if test="not($prev/ancestor::front)">Understanding </xsl:if><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template></xsl:attribute>
+              <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template><xsl:if test="not($prev/ancestor::front)">を理解する</xsl:if></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$prev"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
               <xsl:element name="strong">前へ:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav">
@@ -395,7 +395,7 @@
         <xsl:when test="$next">
           <li>
             <a>
-            	<xsl:attribute name="title"><xsl:if test="not($next/ancestor::front)">Understanding </xsl:if><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template></xsl:attribute>
+            	<xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template><xsl:if test="not($next/ancestor::front)">を理解する</xsl:if></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$next"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
               <xsl:element name="strong">次へ:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav">
@@ -420,16 +420,16 @@
         <strong><a href="#top">ページの先頭へ</a></strong>
       </li>
       <li>
-          <strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong>
+          <strong><a href="Overview.html#contents">目次</a></strong>
       </li>
        <li>
-        <strong><a href="intro.html" title="Introduction to Understanding WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong>
+        <strong><a href="intro.html">イントロダクション</a></strong>
       </li>
       <xsl:choose>
         <xsl:when test="$prev">
           <li>
             <a>
-              <xsl:attribute name="title">Understanding <xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template></xsl:attribute>
+              <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template><xsl:if test="not($prev/ancestor::front)">を理解する</xsl:if></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$prev"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
               <xsl:element name="strong">前へ:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav">
@@ -444,7 +444,7 @@
         <xsl:when test="$next">
           <li>
             <a>
-              <xsl:attribute name="title">Understanding <xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template></xsl:attribute>
+              <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template>を理解する</xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$next"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
               <xsl:element name="strong">次へ:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav">
@@ -530,10 +530,10 @@
         </xsl:variable>
         <xsl:choose>
           <xsl:when test="$target/@id='references'"> <xsl:value-of select="$target/head"/></xsl:when>
-          <xsl:when test="$target/@id='conformance-referencing'"> 他の文書からのWCAG2.0の参照方法</xsl:when>
-           <xsl:when test="$target/@id='accessibility-support-documenting'"> ウェブ技術の使用法のアクセシビリティ・サポーテッドを文書化する</xsl:when>
-           <xsl:when test="$target/@id='understanding-metadata'"> メタデータを理解する</xsl:when>
-          <xsl:when test="$prefix = 0">達成基準  <xsl:value-of select="$target/head"/> [<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$target/@id"/></xsl:call-template>]</xsl:when>
+          <xsl:when test="$target/@id='conformance-referencing'">他の文書からの WCAG 2.0 の参照方法</xsl:when>
+           <xsl:when test="$target/@id='accessibility-support-documenting'">ウェブ技術の使用法のアクセシビリティ サポーテッドを文書化する</xsl:when>
+           <xsl:when test="$target/@id='understanding-metadata'">メタデータを理解する</xsl:when>
+          <xsl:when test="$prefix = 0">達成基準 <xsl:value-of select="$target/head"/> [<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$target/@id"/></xsl:call-template>]</xsl:when>
           <xsl:when test="$target/@id='intro'"> <xsl:value-of select="$target/head"/></xsl:when>
         	<xsl:when test="$target/@id='understanding-techniques'"> <xsl:value-of select="$target/head"/></xsl:when>
           <xsl:when test="$target/@id='conformance'"> <xsl:value-of select="$target/head"/></xsl:when>
@@ -608,7 +608,7 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
           </xsl:call-template>
-			ガイドライン <xsl:value-of select="../../head"/> の参考にすべき達成方法(特定の達成基準に特有ではない達成方法)</h2>
+			ガイドライン <xsl:value-of select="../../head"/> の参考にすべき達成方法 (特定の達成基準に特有ではない達成方法)</h2>
         <div class="textbody">
           <p>このガイドラインにある各達成基準を満たすための達成方法は、この後に達成基準ごとに挙げられている。しかし、このガイドラインに対処するための達成方法がどの達成基準にも該当しない場合は、ここで挙げている。そういった達成方法は、どの達成基準を満たす上でも必須ではないし、十分でもないが、ウェブコンテンツの種類によってはより多くの利用者にとってよりアクセシブルにすることができるものである。</p>
           <xsl:choose>
@@ -735,7 +735,7 @@
 				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> のよくある不適合事例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
-				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法（参考）
+				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法 (参考)
         </xsl:when>
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
@@ -762,7 +762,7 @@
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions">
-          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組合せ）がある。
+          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組合せ) がある。
 </p>
       </xsl:when>
     </xsl:choose>
@@ -855,7 +855,7 @@
   </xsl:template>
   
 <xsl:template name="skipnav">
-<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" /></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0解説書</a></p></div>
+<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" /></a></p><p class="collectiontitle"><a href="Overview.html">WCAG 2.0 解説書</a></p></div>
 
 <div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へジャンプ</a></p>	</div>
 
@@ -869,23 +869,23 @@
 
 <xsl:template name="footer">
 <div class="footer">
-	<p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a><xsl:call-template name="footer-latest-version-ref"/>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents（英語）</a>に従ってください。</p>
+	<p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a><xsl:call-template name="footer-latest-version-ref"/>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents (英語) </a>に従ってください。</p>
 	<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
-<p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」（原文は英語）の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。（財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。）この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p>
+<p>【注意】 この文書は、<a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">W3Cワーキンググループノート「Understanding WCAG 2.0」 (原文は英語) の2016年3月17日時点での最新版</a>を、「ウェブアクセシビリティ基盤委員会」が翻訳と修正をおこなって公開しているものです。(財団法人日本規格協会情報技術標準化研究センター「情報アクセシビリティ国際標準化に関する調査研究開発委員会・ウェブアクセシビリティ国際規格調査研究部会」が、「Understanding WCAG 2.0」の重要部分を翻訳して2009年1月に公開した文書が元になっています。) この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。また、リンク先が英語の場合、あるいはダミーのページである場合もあります。ご了承ください。</p>
 <p>【重要】 原文の "Understanding WCAG 2.0"自体、WCAGワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は、あくまでも参考程度にご覧ください。</p>
 </div>
 </xsl:template>
 
 	<xsl:template name="footer-latest-version-ref">
-		<xsl:text>（</xsl:text>
+		<xsl:text> (</xsl:text>
 		<a>
 			<xsl:attribute name="href">
 				<xsl:value-of select="ancestor::spec//latestloc/loc"/>
 				<xsl:apply-templates select="." mode="slice-techniques-filename"/>
 			</xsl:attribute>
-			<xsl:text>この文書の最新版（英語）</xsl:text>
+			<xsl:text>この文書の最新版 (英語) </xsl:text>
 		</a>
-		<xsl:text>を参照してください）</xsl:text>
+		<xsl:text>を参照してください) </xsl:text>
 	</xsl:template>
 	
 <xsl:template match="div3[@id='conformance-terms']">
