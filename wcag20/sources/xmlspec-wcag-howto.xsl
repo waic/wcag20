@@ -139,7 +139,7 @@
     </xsl:call-template>
         </xsl:when>
         <xsl:when test="../@role='examples'">
-				<xsl:value-of select="$criteriontype" />基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の事例
+				<xsl:value-of select="$criteriontype" />基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の事例
         </xsl:when>
         <xsl:when test="../@role='resources'">
 				関連リソース
@@ -208,7 +208,7 @@
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
 				<xsl:when test="../@role='benefits'">
-				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>の具体的なメリット
+				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の具体的なメリット
 			</xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates mode="text"/>
@@ -217,20 +217,20 @@
     </h4>
     <xsl:choose>
       <xsl:when test="../@role='failures'">
-        <p >以下に挙げるものは、WCAG ワーキンググループが達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>に適合していないとみなした、よくある不適合事例である。</p>
+        <p>以下に挙げるものは、WCAG ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> に適合していないとみなした、よくある不適合事例である。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p  >(今のところ、文書化されている不適合事例がない)</p>
+          <p>(今のところ、文書化されている不適合事例がない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
-        <p >適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p>
+        <p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p  >(まだ文書化されていない)</p>
+          <p>(まだ文書化されていない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
-        <p class="instructions"  >
-          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組合せ）がある。</p>
+        <p class="instructions">
+          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組合せ）がある。</p>
       </xsl:when>
     </xsl:choose>
   </xsl:template>
@@ -569,6 +569,6 @@
     <xsl:template match="div3[@id='conformance-terms']"></xsl:template>
     	
 <xsl:template name="understanding.notrestricted.disclaimer">
-	<p>この節にある番号付の項目は、WCAG ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。他の達成方法についての情報は、<a href="understanding-techniques.html">達成基準を満たすための達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p>
+	<p>この節にある番号付の項目は、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組合せを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。他の達成方法についての情報は、<a href="understanding-techniques.html">達成基準を満たすための達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p>
 </xsl:template>
 </xsl:transform>

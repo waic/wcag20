@@ -668,7 +668,7 @@
               </xsl:call-template>
         </xsl:when>
             <xsl:when test="../@role='examples'">
-				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の事例
+				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の事例
             </xsl:when>
             <xsl:when test="../@role='resources'">
 				関連リソース
@@ -740,7 +740,7 @@
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
         <xsl:when test="../@role='benefits'">
-				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>の具体的なメリット:
+				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の具体的なメリット:
 			</xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates mode="text"/>
@@ -762,7 +762,7 @@
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions">
-          <strong>使用法：</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組合せ) がある。
+          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組合せ) がある。
 </p>
       </xsl:when>
     </xsl:choose>
