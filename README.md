@@ -15,7 +15,7 @@ GitHub 上でビルドされたファイルはそれぞれ
 - Apache Ant
 この 2 つを予めインストールする必要があります。Debian であれば、
 
-    # apt install libsaxonhe-java ant
+     apt install libsaxonhe-java ant
 
 でよかったはずです。
 
