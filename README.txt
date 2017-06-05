@@ -1,3 +1,5 @@
+ブランチ wg4_translation を参照してください。
+----
 2010年4月公開版。
 
 ant guidelines
