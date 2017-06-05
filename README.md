@@ -1,6 +1,7 @@
 # WCAG 2.0 解説書 および WCAG 2.0 達成方法集
 
 [ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0 解説書](http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) および [WCAG 2.0 達成方法集](http://waic.jp/docs/WCAG-TECHS/Overview.html) のレポジトリです。
+
 GitHub 上でビルドされたファイルはそれぞれ
 
 - https://waic.github.io/wcag20/Understanding/Overview.html
@@ -13,9 +14,12 @@ GitHub 上でビルドされたファイルはそれぞれ
 
 - Saxon
 - Apache Ant
+
 この 2 つを予めインストールする必要があります。Debian であれば、
 
-    apt install libsaxonhe-java ant
+```
+apt install libsaxonhe-java ant
+```
 
 でよかったはずです。
 
@@ -36,11 +40,13 @@ GitHub 上でビルドされたファイルはそれぞれ
 
 
 ## 主要なディレクトリー構成
-
+```
 - wcag20/                       # ant タスク用の設定ファイル
 - wcag20/sources/               # 共通の XSLT など
 - wcag20/sources/techniques/    # 達成方法集の XML (General, HTML などの技術別にサブフォルダーがあります)
 - wcag20/sources/understanding/ # 解説書の XML
+```
+
 XML のファイル名は URL に対応します。
 
 
