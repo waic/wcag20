@@ -749,20 +749,20 @@
     </h3>
     <xsl:choose>
       <xsl:when test="../@role='failures'">
-        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template>に適合していないとみなした、よくある不適合事例である。</p>
+        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の不適合事例とみなした、よくある間違いである。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p>(今のところ、文書化された不適合事例はない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
-        <p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な達成方法もあわせて検討するとよい。ただし、すべての状況において、すべての達成方法が使用可能、または効果的であるとは限らない。</p>
+        <p>適合のために必須ではないが、コンテンツをよりアクセシブルにするために、次の追加の達成方法を検討することが望ましい。ただし、すべての状況において、すべての達成方法が使用可能、又は効果的であるとは限らない。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p>(今のところ、文書化されていない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions">
-          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組合せ) がある。
+          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組み合わせ) がある。
 </p>
       </xsl:when>
     </xsl:choose>
