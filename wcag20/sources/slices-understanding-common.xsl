@@ -588,7 +588,7 @@
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
           </xsl:call-template>
-			ガイドライン <xsl:value-of select="../../head"/>の意図
+			ガイドライン <xsl:value-of select="../../head"/> の意図
         </h2>
       </xsl:when>
       <xsl:when test="../@role='normal'">
