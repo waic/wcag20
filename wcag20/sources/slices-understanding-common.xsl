@@ -495,7 +495,7 @@
       </xsl:if>
       <xsl:if test="div3[@role='techniques']">
         <li>
-          <a href="#{@id}-techniques-head">達成方法と不適合事例</a>
+          <a href="#{@id}-techniques-head">達成方法と失敗例</a>
         </li>
       </xsl:if>
       <xsl:if test="div3[@role='terms'] or $gl/descendant::termref">
@@ -662,7 +662,7 @@
 				この<xsl:value-of select="$criteriontype"/>基準の意図
 			</xsl:when>
             <xsl:when test="../@role='techniques'">
-				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の達成方法及び不適合事例
+				<xsl:value-of select="$criteriontype"/>基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の達成方法及び失敗例
               <xsl:text> </xsl:text>- <xsl:call-template name="sc-handle">
                 <xsl:with-param name="handleid" select="../../@id"/>
               </xsl:call-template>
@@ -732,7 +732,7 @@
 				Technology-Specific Techniques  
 			</xsl:when>
         <xsl:when test="../@role='failures'">
-				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> のよくある不適合事例
+				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> のよくある失敗例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
 				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法 (参考)
@@ -749,9 +749,9 @@
     </h3>
     <xsl:choose>
       <xsl:when test="../@role='failures'">
-        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の不適合事例とみなした、よくある間違いである。</p>
+        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の失敗例とみなした、よくある間違いである。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p>(今のところ、文書化された不適合事例はない)</p>
+          <p>(今のところ、文書化された失敗例はない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
