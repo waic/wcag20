@@ -134,7 +134,7 @@
 				この<xsl:value-of select="$criteriontype" />基準の意図
 			</xsl:when>
         <xsl:when test="../@role='techniques'">
-				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の達成方法及び不適合事例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
+				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の達成方法及び失敗例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../@id"/>
     </xsl:call-template>
         </xsl:when>
@@ -217,9 +217,9 @@
     </h4>
     <xsl:choose>
       <xsl:when test="../@role='failures'">
-        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の不適合事例とみなした、よくある間違いである。</p>
+        <p>以下に挙げるものは、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループが達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の失敗例とみなした、よくある間違いである。</p>
       	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
-          <p>(今のところ、文書化されている不適合事例がない)</p>
+          <p>(今のところ、文書化されている失敗例がない)</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">

@@ -119,7 +119,7 @@
 <div4 role="failures">
 <head/>
 <ulist>
-	<item role="script"><p><loc href="F59" linktype="failure"/></p><note><p>この不適合事例は、将来的に DHTML ロードマップの達成方法を用いて問題が解決されるかもしれない。</p></note></item>
+	<item role="script"><p><loc href="F59" linktype="failure"/></p><note><p>この失敗例は、将来的に DHTML ロードマップの達成方法を用いて問題が解決されるかもしれない。</p></note></item>
 	<item><p><loc href="F15" linktype="failure"/></p></item>
 	<item><p><loc href="F20" linktype="failure"/></p></item>
 	<item><p><loc href="F68" linktype="failure"/></p></item>
