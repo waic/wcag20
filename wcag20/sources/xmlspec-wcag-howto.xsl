@@ -569,6 +569,6 @@
     <xsl:template match="div3[@id='conformance-terms']"></xsl:template>
     	
 <xsl:template name="understanding.notrestricted.disclaimer">
-	<p>この節にある番号付きの各項目は、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組み合わせを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。その他の達成方法についての詳細は、<a href="understanding-techniques.html">達成基準を満たすための達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p>
+	<p>この節にある番号付きの各項目は、<abbr title="Web Content Accessibility Guidelines">WCAG</abbr> ワーキンググループがこの達成基準を満たすのに十分であると判断する達成方法、又は複数の達成方法の組み合わせを表している。しかしながら、必ずしもこれらの達成方法を用いる必要はない。その他の達成方法についての詳細は、<a href="understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>の「その他の達成方法」を参照のこと。</p>
 </xsl:template>
 </xsl:transform>
