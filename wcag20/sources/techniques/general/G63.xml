@@ -41,11 +41,11 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>ウェブ・アクセシビリティ・イニシアティブは、ウェブサイトのいろいろな区分を記載した<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/sitemap.html">WAIサイトマップ</loc>を提供している。サイトマップはウェブサイトのいろいろな区分を示すとともに、それらの区分の下部構造のいくつかを示している。</p>
+      <description><p>ウェブアクセシビリティイニシアティブは、ウェブサイトのいろいろな区分を記載した<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/sitemap.html">WAIサイトマップ</loc>を提供している。サイトマップはウェブサイトのいろいろな区分を示すとともに、それらの区分の下部構造のいくつかを示している。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>オンライン・マガジンのためのサイトマップには、マガジンの全ての区分とそれぞれの区分の小区分が記載されている。また、ヘルプ、お問い合わせ、個人情報保護方針、採用情報、定期購読、及びマガジンのHOMEページ、へのリンクを含んでいる。</p>
+      <description><p>オンラインマガジンのためのサイトマップには、マガジンの全ての区分とそれぞれの区分の小区分が記載されている。また、ヘルプ、お問い合わせ、個人情報保護方針、採用情報、定期購読、及びマガジンのHOMEページ、へのリンクを含んでいる。</p>
 </description>
     </eg-group>
    </examples>
