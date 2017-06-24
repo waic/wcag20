@@ -212,8 +212,8 @@ Austin)</affiliation>
 			<div2 id="ut" role="suppressed">
 				<head>WCAG 達成基準のための達成方法を理解する (抑制された)</head>
 				<p>WCAG 2.0 のガイドライン及び達成基準は、動的アプリケーション、モバイル、デジタルテレビなどを含む現在及び将来のウェブ技術に対して広く適用可能となるよう設計されている。これらは安定しており変わることはない。</p>
-            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3Cの <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書は概ね<phrase>年に2回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
-				<p><loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> における3つのタイプのガイダンスを以下に説明する:</p>
+            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> (日本語訳は <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>) 文書は概ね<phrase>年に 2 回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
+				<p><loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>における 3 つのタイプのガイダンスを以下に説明する:</p>
 				<ulist>
 					<item>
 						<p>十分な達成方法</p>
@@ -228,10 +228,10 @@ Austin)</affiliation>
 				<p>また以下についても説明する:</p>
 				<ulist>
 					<item>
-						<p>達成基準を満たすことのできる、または参考にすることができる一般的な及び技術特有の達成方法</p>
+						<p>達成基準を満たすことのできる、又は参考にすることができる、一般的な及び技術特有の達成方法</p>
 					</item>
 					<item>
-						<p>その他の達成方法 - W3C発行文書をこえて</p>
+						<p>W3C の発行文書を超えた、その他の達成方法</p>
 					</item>
 					<item>
 						<p>達成方法の検証</p>
@@ -240,22 +240,22 @@ Austin)</affiliation>
 						<p>ユーザエージェント及び支援技術のサポート</p>
 					</item>
 					<item>
-						<p>達成方法の使用 - 重要な考慮とともに</p>
+						<p>重要な考慮とともに、達成方法を使用する</p>
 					</item>
 				</ulist>
             <p>
-               <loc href="conformance.html">Understanding Conformance</loc> では、<loc href="conformance.html#uc-accessibility-support-head">understanding accessibility support</loc>に関するものを含む関連情報を提供している。</p>
+               <loc href="conformance.html">WCAG 2.0 への適合を理解する</loc>では、<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティサポートを理解する</loc>に関するものを含む関連情報を提供している。</p>
 				<div3 id="understanding-techniques-informative" role="normal">
 					<head>達成方法は参考情報である</head>
 					<p>
-						<emph role="strong">達成方法は参考情報であり、これはそれらが要求事項ではないことを意味している。WCAG 2.0 への適合を判断する根拠は、WCAG 2.0で規定している達成基準であり、達成方法ではない。</emph>
+						<emph role="strong">達成方法は参考情報であり、これは達成方法が要求事項ではないことを意味している。WCAG 2.0 への適合を判断する根拠は、WCAG 2.0 で規定している達成基準であり、達成方法ではない。</emph>
 					</p>
 					<note>
-						<p>W3C は、W3Cの十分な達成方法の要求に対して注意を促す。求められる唯一のことはWCAG 2.0 達成基準を満たすことである。 より詳しくは, 以下を参照のこと:</p>
+						<p>W3C は、W3C の十分な達成方法の要求に対して注意を促す。求められる唯一のことは WCAG 2.0 達成基準を満たすことである。より詳しくは、以下を参照のこと:</p>
 						<ulist>
 							<item>
                         <p>
-                           <loc href="http://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc> in the WCAG 2 FAQ</p>
+                           WCAG 2 FAQ における <loc href="http://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
 							</item>
 							<!--
 							<item>
@@ -267,59 +267,59 @@ Austin)</affiliation>
 							-->
 						</ulist>
                   <p>
-                     <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
+                     <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
 					</note>
 				</div3>
 				<div3 id="understanding-techniques-sufficient" role="normal">
 					<head>十分な達成方法</head>
                <p>
-                  <emph>十分な達成方法</emph> は達成基準を満たすのに信頼できる方法である。</p>
+                  <emph>十分な達成方法</emph>は達成基準を満たすのに信頼できる方法である。</p>
 					<ulist>
 						<item>
-							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれがユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
+							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれが利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
 						</item>
 						<item>
-							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツのユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない; ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
+							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツの利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない。ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
-               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3Cの<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。 <emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
+               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3C の <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。<emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
                </p>
 					<div4 id="understanding-techniques-sufficient-lists-and" role="normal">
 						<head>番号付きリスト、"かつ"</head>
-                  <p>W3C文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。1つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければ名rない。例えば、<loc href="content-structure-separation-programmatic.html#content-structure-separation-programmatic-techniques-head">達成基準1.3.1を満たすことのできる達成方法</loc> では: "G115: セマンティックな要素を用いて、構造をマークアップする 、かつ、 H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
+                  <p>W3C 文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。1 つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければならない。例えば、<loc href="content-structure-separation-programmatic.html#content-structure-separation-programmatic-techniques-head">達成基準 1.3.1 を満たすことのできる達成方法</loc>では "G115: セマンティックな要素を用いて、構造をマークアップする、かつ、H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
                </div4>
 				</div3>
 				<div3 id="understanding-techniques-advisory" role="normal">
 					<head>参考達成方法</head>
                <p>
-                  <emph>参考達成方法</emph> はアクセシビリティを改善するために推奨される方法である。これは一部のユーザにとっては非常に有用であり、またあるユーザがある種のコンテンツにアクセスできる唯一の方法となることもあるかもしれない。</p>
+                  <emph>参考達成方法</emph>はアクセシビリティを改善するために推奨される方法である。これは一部の利用者にとっては非常に有用であり、またある利用者がある種のコンテンツにアクセスできる唯一の方法となることもあるかもしれない。</p>
 					<p>参考達成方法は以下のようなさまざまな理由で、十分な達成方法とはならない:</p>
 					<ulist>
 						<item>
-							<p>達成基準のすべての要求事項を満たすのに十分でない;</p>
+							<p>達成基準のすべての要求事項を満たすのに十分でない。</p>
 						</item>
 						<item>
-							<p>まだ安定していない技術に基づいている;</p>
+							<p>まだ安定していない技術に基づいている。</p>
 						</item>
 						<item>
-							<p>多くの場合において <loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でない (例えば、支援技術が達成方法に対応できていない);</p>
+							<p>多くの場合において <loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>でない (例えば、支援技術が達成方法に対応できていない)。</p>
 						</item>
 						<item>
-							<p>テスト可能でない;</p>
+							<p>テスト可能でない。</p>
 						</item>
 						<item>
-							<p>ある状況においてその達成方法が適用可能でないあるいは実用的でなく、かつその他のユーザに対してはアクセシビリティを向上させる一方、一部のユーザに対してアクセシビリティを低下させる可能性がある;</p>
+							<p>ある状況においてその達成方法が適用可能でないあるいは実用的でなく、かつその他の利用者に対してはアクセシビリティを向上させる一方、一部の利用者に対してアクセシビリティを低下させる可能性がある。</p>
 						</item>
 						<item>
 							<p>達成基準そのものには対処しておらず、代わりに関連するアクセシビリティ上の利点を提供している。</p>
 						</item>
 					</ulist>
-					<p>制作者には、最も幅広いユーザのニーズに対処するのに最適なすべての達成方法を適用することが推奨される。</p>
+					<p>制作者には、最も幅広い利用者のニーズに対処するのに最適なすべての達成方法を適用することが推奨される。</p>
 				</div3>
 				<div3 id="understanding-techniques-failures" role="normal">
 					<head>失敗例</head>
                <p>
-                  <emph>失敗例</emph> はアクセシビリティ上のバリアを引き起こし、特定の達成基準への不適合を招くものである。文書化された <emph>失敗例</emph> は以下の点で有益である:</p>
+                  <emph>失敗例</emph>はアクセシビリティ上のバリアを引き起こし、特定の達成基準への不適合を招くものである。文書化された<emph>失敗例</emph>は以下の点で有益である:</p>
 					<ulist>
 						<item>
 							<p>制作者にとっては、避けるべきことを知ることができる。</p>
@@ -329,35 +329,35 @@ Austin)</affiliation>
 						</item>
 					</ulist>
 					<p><emph>失敗例</emph>にあるコンテンツは、失敗例にない代替版が提供されていなければ、WCAG 達成基準を満たしていない。</p>
-					<p>文書化された失敗例が正しくないような状況を確認した場合は、修正もしくは適切に削除できるように<loc href="http://www.w3.org/WAI/WCAG20/comments/">WCAG コメントとしてその状況を報告していただきたい</loc></p>
+					<p>文書化された失敗例が正しくないような状況を確認した場合は、修正もしくは適切に削除できるように <loc href="http://www.w3.org/WAI/WCAG20/comments/">WCAG コメントとしてその状況を報告していただきたい (英語)</loc>。</p>
 				</div3>
 				<div3 id="understanding-techniques-general-tech-specific" role="normal">
-					<head> 一般的及び技術特有の達成方法</head>
+					<head>一般的及び技術特有の達成方法</head>
                <p>
-                  <emph>一般的な達成方法</emph> には、すべての技術に適用する基本事例を記載している。<emph>技術特有の達成方法</emph> は個別の技術に適用する。</p>
+                  <emph>一般的な達成方法</emph>には、すべての技術に適用する基本事例を記載している。<emph>技術特有の達成方法</emph>は個別の技術に適用する。</p>
 					<p>いくつかの達成基準は技術特有の達成方法を持っておらず、一般的な達成方法のみによりカバーされる。したがって、一般的な達成方法と、それに関連する技術特有の達成方法の両方を考慮するとよい。</p>
                <p>特定の技術に対する達成方法を公開しているからといって、WCAG 2.0 達成基準及び適合要件を満たすコンテンツを制作するあらゆる状況においてその技術が用いられるわけではない。開発者は個々の技術の限界を知り、障害を持つ人にとってアクセシブルな方法でコンテンツを提供する必要がある。</p>
 				</div3>
 				<div3  id="understanding-techniques-othertechs" role="normal">
 					<head>その他の達成方法</head>
-					<p>W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
+					<p>W3C の <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
 					<p>
 						<emph role="strong">ウェブコンテンツは、WCAG 2.0 に適合するために W3C が公開している達成方法を用いなくてもよい。</emph>
-						<emph>(上記の<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc> も参照のこと。)</emph>
+						<emph>(上記の<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
 					</p>
-					<p>コンテンツ制作やはさまざまな達成方法を開発できる。例えば、制作者は HTML5 や<loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA</loc>、あるいはその他の新しい技術に対する達成方法を開発できる。他の組織が WCAG 2.0 達成基準を満たす達成方法集を開発してもよい。</p>
+					<p>コンテンツ制作者はさまざまな達成方法を開発できる。例えば、制作者は HTML5 や <loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA</loc>、あるいはその他の新しい技術に対する達成方法を開発できる。他の組織が WCAG 2.0 達成基準を満たす達成方法集を開発してもよい。</p>
 					<p>任意の達成方法は、以下のような場合に達成基準を満たすことができる:</p>
 					<ulist>
 						<item>
 							<p>それらが達成基準を満たし、かつ</p>
 						</item>
 						<item>
-							<p>すべての<loc href="conformance.html">WCAG 2.0 適合要件</loc> が満たされている。</p>
+							<p>すべての <loc href="conformance.html">WCAG 2.0 適合要件</loc>が満たされている。</p>
 						</item>
 					</ulist>
 					<div4 id="understanding-techniques-submitting" role="normal">
 						<head>達成方法の提出</head>
-						<p>The WCAG Working Group では、<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>文書の更新において取り入れることを検討できるように、新しい達成方法を提出することを推奨する。<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>を用いて、検討のための達成方法を提出いただきたい。</p>
+						<p>WCAG Working Group では、<loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> 文書の更新において取り入れることを検討できるように、新しい達成方法を提出することを推奨する。<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc> を用いて、検討のための達成方法を提出いただきたい。</p>
 					</div4>
 				</div3>
 				<div3 id="understanding-techniques-tests" role="normal">
@@ -374,34 +374,34 @@ Austin)</affiliation>
 					<p>この検証は達成方法に対してのみのものであり、WCAG 達成基準への適合を検証するものではない。</p>
 					<ulist>
 						<item>
-							<p>達成方法は離散的であり（すなわち、特定の1点のみを扱っており）、かつこれらは要求事項ではないため、達成方法の検証失敗は必ずしも WCAG への不適合を意味していない。</p>
+							<p>達成方法は離散的であり (すなわち、特定の 1 点のみを扱っており)、かつこれらは要求事項ではないため、達成方法の検証失敗は必ずしも WCAG への不適合を意味していない。</p>
 						</item>
 						<item>
-							<p>コンテンツは、W3Cが公開している十分な達成方法以外にも様々な方法で WCAG 達成基準を満たすことができる。</p>
+							<p>コンテンツは、W3C が公開している十分な達成方法以外にも様々な方法で WCAG 達成基準を満たすことができる。</p>
 						</item>
 						<item>
 							<p>技術特有の達成方法の検証を通過したコンテンツは、必ずしもすべての WCAG 達成基準を満たしていない。いくつかの達成基準は一般的な達成方法のみを持っており、技術特有の達成方法を持っていない。</p>
 						</item>
 						<item>
-							<p>コンテンツはそのユーザに対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc> でなければならない。いくつかの十分な達成方法は、一部のユーザが持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
+							<p>コンテンツはその利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>でなければならない。いくつかの十分な達成方法は、一部の利用者が持っていないかもしれないブラウザ、支援技術またはその他のサポートを必要とする。</p>
 						</item>
 					</ulist>
 					<p>このように達成方法はコンテンツの評価において有益であるが、コンテンツが WCAG 達成基準にどのくらい適合しているか評価するためには、評価は十分な達成方法をただ検証することを超えて行わなければならない。</p>
                <p>
-                  <emph>失敗例</emph> は、（失敗のない代替版が提供されていない場合）不適合を意味するため、評価において特に有益である。</p>
+                  <emph>失敗例</emph>は、(失敗のない代替版が提供されていない場合) 不適合を意味するため、評価において特に有益である。</p>
 				</div3>
 				<div3 id="understanding-techniques-support" role="normal">
 					<head>ユーザエージェント及び支援技術のサポートに関する注記</head>
-					<p>いくつかの達成方法では、ウェブコンテンツのユーザに対して、その達成方法が<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph> の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。</p>
+					<p>いくつかの達成方法では、ウェブコンテンツの利用者に対して、その達成方法が<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>となるために、特定のブラウザや支援技術を持つことを求めている。個々の達成方法における<emph role="strong">ユーザエージェント及び支援技術のサポートに関する注記</emph>の節は、アクセシビリティ サポーテッドを判断するのに役立つ情報を含んでいる。</p>
 					<div4 id="understanding-techniques-support-change" role="normal">
 						<head>サポートに関する注記は時間とともに変化する</head>
-						<p>時間の経過に伴い、列挙されているユーザエージェント（ブラウザなど）や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、ユーザが現時点で利用可能なユーザエージェントや支援技術を用いて達成方法を検証することが望ましい。<loc href="conformance.html#uc-accessibility-support-head">Understanding Accessibility Support</loc>も参照のこと.</p>
+						<p>時間の経過に伴い、列挙されているユーザエージェント (ブラウザなど) や支援技術のバージョンが最新のバージョンではなくなるかもしれない。ワーキンググループでは、新しいバージョンが公開されてもこれらの注記の多くを更新しないだろう。制作者は、利用者が現時点で利用可能なユーザエージェントや支援技術を用いて達成方法を検証することが望ましい。<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティサポートを理解する</loc>も参照のこと。</p>
 					</div4>
 				</div3>
 				<div3 id="understanding-techniques-using" role="normal">
 					<head>達成方法集の使用</head>
                <p>
-                  <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために<loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
+                  <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc> を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
 					<div4 id="understanding-techniques-using-alternatives" role="normal">
 						<head>代替版は達成基準を満たしていなければならない</head>
 						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="http://www.w3.org/TR/WCAG20-HTML-TECHS/G73">G73: Providing a long description in another location...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>
