@@ -619,7 +619,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="req">
             <head/>
             <div5 role="sc" id="seizure-does-not-violate">
-              <head>3回の閃光、又は閾値以下</head>
+              <head>3 回の閃光、又は閾値以下</head>
               <p role="v">
                 <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない、又は閃光が<termref def="general-thresholddef">一般閃光閾値及び赤色閃光閾値</termref>を下回っている。
               </p>
@@ -631,7 +631,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
           <div4 role="additional">
             <head/>
             <div5 role="sc" id="seizure-three-times">
-              <head>3回の閃光</head>
+              <head>3 回の閃光</head>
               <p role="v">
                 <termref def="webpagedef">ウェブページ</termref>には、どの1秒間においても3回を超える<termref def="flash-def">閃光</termref>を放つものがない。</p>
             </div5>
