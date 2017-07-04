@@ -12,7 +12,7 @@
 <div2 id="minimize-error-advisory" role="gladvisory">
 <head>ガイドライン 3.3 の参考達成方法</head>
 <ulist>
-	<item><p>"	追加のフォームフィールドを隠しておく（リンク追加予定）</p></item>
+	<item><p>追加のフォームフィールドを隠しておく (リンク追加予定)</p></item>
 </ulist>
 </div2>
    <xi:include href="minimize-error-identified.xml"/>
