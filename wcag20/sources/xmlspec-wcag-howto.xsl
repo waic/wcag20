@@ -22,7 +22,7 @@
         <xsl:when test="../@role='extsrc'">
 				   <strong><xsl:call-template name="sc-handle">
           <xsl:with-param name="handleid" select="../@id"/>
-        </xsl:call-template></strong><span class="screenreader">:</span><br />ガイドライン<xsl:value-of select="../head"/>を理解する
+        </xsl:call-template></strong><span class="screenreader">:</span><br />ガイドライン <xsl:value-of select="../head"/> を理解する
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates/>
@@ -32,7 +32,7 @@
     
     <xsl:if test="../@role='extsrc'">
     <blockquote class="glquote">
-          <div><p><strong>ガイドライン<xsl:value-of select="../head"/>: </strong><xsl:value-of select="$gl-src//div3[@id=current()/../@id]/head"/></p></div>
+          <div><p><strong>ガイドライン <xsl:value-of select="../head"/>: </strong><xsl:value-of select="$gl-src//div3[@id=current()/../@id]/head"/></p></div>
     </blockquote>
     </xsl:if>
   </xsl:template>
@@ -134,7 +134,7 @@
 				この<xsl:value-of select="$criteriontype" />基準の意図
 			</xsl:when>
         <xsl:when test="../@role='techniques'">
-				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template>の達成方法及び失敗例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
+				<xsl:value-of select="$criteriontype" />基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../@id"/></xsl:call-template> の達成方法及び失敗例<xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../@id"/>
     </xsl:call-template>
         </xsl:when>
@@ -208,7 +208,7 @@
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
 				<xsl:when test="../@role='benefits'">
-				<xsl:value-of select="$criteriontype" />基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の具体的なメリット
+				<xsl:value-of select="$criteriontype" />基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> の具体的なメリット
 			</xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates mode="text"/>
