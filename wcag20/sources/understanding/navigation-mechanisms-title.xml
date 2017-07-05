@@ -24,7 +24,7 @@
 <head/>
 <ulist>
 	<item><p><emph role="bold">HTML のウェブページ</emph></p><p>HTML で制作したウェブページの内容を示したタイトルが、ユーザエージェントのタイトルバーに表示されるように、title 要素でマークアップされている。</p></item>
-	<item><p><emph role="bold">文書</emph></p><trnote><p>以下、英文原文例をそのまま日本語にした。英文では<loc href="http://www.w3.org/TR/2005/WD-WCAG20-20051123/">2005年のWCAGドラフト（英語）</loc>が参考にされた模様。</p></trnote><p><loc href="http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>のページタイトルが、「ウェブコンテンツ アクセシビリティ ガイドライン 2.0」となっている。</p>
+	<item><p><emph role="bold">文書</emph></p><trnote><p>以下、英文原文例をそのまま日本語にした。英文では<loc href="http://www.w3.org/TR/2005/WD-WCAG20-20051123/">2005 年の WCAG ドラフト (英語)</loc> が参考にされた模様。</p></trnote><p><loc href="http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>のページタイトルが、「ウェブコンテンツ アクセシビリティ ガイドライン 2.0」となっている。</p>
 	<ulist><item><p>主要なページのページタイトルが、「ガイドライン X を理解する」や「達成基準 X を理解する」となっている。</p></item>
 	<item><p>ドキュメントのページタイトルが、「WCAG 2.0 ガイドライン」となっている。</p></item>
 	<item><p>附録 A のページタイトルが、「用語集」となっている。</p></item>
