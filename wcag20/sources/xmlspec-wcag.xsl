@@ -282,7 +282,7 @@
         <xsl:otherwise>
           <em><xsl:choose>
             <xsl:when test="$notenumber = '1'">
-              <xsl:text>訳注： </xsl:text>
+              <xsl:text>訳注: </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text>訳注 </xsl:text>
