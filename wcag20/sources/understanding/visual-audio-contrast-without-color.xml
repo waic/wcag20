@@ -61,7 +61,7 @@
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： 特定の語句、背景、又は他のコンテンツの色を用いて情報を示している場合：</head>
+<head>状況 A: 特定の語句、背景、又は他のコンテンツの色を用いて情報を示している場合:</head>
 <olist>
 	<item><p><loc href="G14" linktype="general"/></p></item>
 	<item><p><loc href="G205" linktype="general"/></p></item>
@@ -71,7 +71,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 B： 情報を伝える画像の中で色を用いている場合：</head>
+<head>状況 B: 情報を伝える画像の中で色を用いている場合:</head>
 <olist>
 	<item><p><loc href="G111" linktype="general"/></p></item>
 	<item><p><loc href="G14" linktype="general"/></p></item>

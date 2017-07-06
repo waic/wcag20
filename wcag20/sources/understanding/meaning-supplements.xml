@@ -6,7 +6,7 @@
    <div3 role="intent">
       <head/>
 
-<p>コンテンツは、可能な限り明快かつ簡潔に書かれているべきである。この達成基準の意図は以下の通りである：</p>
+<p>コンテンツは、可能な限り明快かつ簡潔に書かれているべきである。この達成基準の意図は以下の通りである:</p>
 <ulist>
 	<item><p>難解又は複雑な文章を理解しやすくするために、補足的コンテンツを提供すること。</p></item>
 	<item><p>そのような補足的コンテンツがどういうときに必要なのかを示すテスト可能な基準を定めること。</p></item>
@@ -37,7 +37,7 @@
 </tr>
 </tbody>
 </table>
-<p>出典： 国際標準教育分類 <bibref ref="UNESCO"/></p>
+<p>出典: 国際標準教育分類 <bibref ref="UNESCO"/></p>
 
 <note>
 <p>Open Society Mental Health Initiative によれば、読みやすさの概念は万国共通ではなく、読み書きと理解に問題を抱えたすべての人の能力に合致する文章を書くことは不可能だろうといわれている。最も明快で、かつ最も簡易な言葉遣いを用いることが非常に望ましいが、WCAG ワーキンググループではそれが達成されているかどうかを検証する方法を見つけることができなかった。読解レベルを用いているのは、明快な文章を推奨する達成基準にテスト可能性を持たせるためである。認知の障害の種類や程度によっては、補足的コンテンツを提供することが効果的な達成方法の一つとなりえる。</p>
@@ -45,9 +45,9 @@
 
 <div4 role="benefits">
 <head/>
-<p>この達成基準は、次のような利用者にメリットがある：</p>
+<p>この達成基準は、次のような利用者にメリットがある:</p>
 <ulist>
-	<item><p>一般的な知識又は特定の情報を得るために、書き言葉 (例： テキストあるいは点字の記事、説明文、又は新聞記事)を理解して解釈するのが困難である。</p></item>
+	<item><p>一般的な知識又は特定の情報を得るために、書き言葉 (例: テキストあるいは点字の記事、説明文、又は新聞記事) を理解して解釈するのが困難である。</p></item>
 </ulist>
 </div4>
 </div3>
@@ -58,7 +58,7 @@
 	<item><p><emph role="bold">複雑な研究記事の読みやすい要約がある科学雑誌</emph></p><p>ある科学雑誌には、その分野の専門家を対象とした、とても専門的な言葉遣いで書かれた記事がある。その雑誌の目次ページには、各記事の要約が平易な言葉で書かれている。その要約は、8 年間の学校教育を受けた一般読者を想定している。また、雑誌のメタデータには、Dublin Core (ダブリンコア)の仕様を用いて、記事の想定している読者の教育レベルを「高等教育」、要約の想定している読者の教育レベルを「前期中等教育」と示してある。</p></item>
 	<item><p><emph role="bold">一般会員向けの医療情報</emph></p><p>ある医科大学が、最近の医学的及び科学的発見を説明するウェブサイトを運営している。そのサイトの記事は、医療の知識のない人向けに書かれている。各記事では、Dublin Core (ダブリンコア)のメタデータの仕様を用いて、想定している読者の教育レベルを「前期中等教育」と示し、その記事の Flesch Reading Ease のスコアも提供している。各ページにあるリンクをたどることで、教育レベル及びその他のメタデータを表示することができる。前期中等教育レベルの読者がその記事を読むことができるので、補足的コンテンツは必要ない。</p></item>
 	<item><p><emph role="bold">e ラーニングアプリケーション</emph></p><p>スペインの文化史に関するオンラインコースに、ムーア建築に関する単元がある。その単元のテキストは、様々な読解レベルを持った学生向けに書かれている。建築物の写真や図面で、建築のコンセプト及び様式を図示している。グラフィックオーガナイザーを用いて文章の複雑な関係性を図式化し、合成音声を用いた音声バージョンも提供している。各バージョンのメタデータでコンテンツの教育レベルを示し、スペイン語のテキスト向けに開発された計算式に基づくリーダビリティのスコアもある。この e ラーニングアプリケーションは、このメタデータ及び学生に関するメタデータを用いて、個々の学生のニーズに合ったバージョンの教材を提供している。</p></item>
-	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト (合計 116 ワード)は、Flesch-Kincaid 式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p> (出典：Howard Hughes Medical Institute"CoolScience for Kids" Project)</p></item>
+	<item><p><emph role="bold">前期中等教育レベルの読解力を要する科学情報</emph></p><p>次のテキスト (合計 116 ワード)は、Flesch-Kincaid 式によると、米国ではグレード 4.2 の読解力を必要とする。米国では、グレード 4.2 は初等教育レベルである。</p><p>Science is about testing ? and about looking closely. Some scientists use microscopes to take a close look. We're going to use a simple piece of paper.</p><p>Here's what you do: Print this page and cut out the square to make a "window" one inch square. (It's easiest to fold the page in half before you cut.)</p><p>Choose something interesting: a tree trunk, a leaf, flower, the soil surface, or a slice of soil from a shovel.</p><p>Put your window over the thing and look at it closely. Take your time ? this is not a race.</p><p>To help you see more details, draw a picture of what's inside your square.</p><p>Now let's think about what you've found. </p><p>(出典: Howard Hughes Medical Institute"CoolScience for Kids" Project)</p></item>
 </olist>
 </div3>
 

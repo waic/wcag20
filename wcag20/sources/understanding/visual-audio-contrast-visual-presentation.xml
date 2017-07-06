@@ -110,10 +110,10 @@
 </div5>
 
 <div5>
-<head>要件 5: 利用者が全画面表示にしたウィンドウで 1 行のテキストを読む際に横スクロールする必要がない状態で、支援技術を用いなくてもテキストを 200％までサイズ変更できるようにする達成方法：</head>
+<head>要件 5: 利用者が全画面表示にしたウィンドウで 1 行のテキストを読む際に横スクロールする必要がない状態で、支援技術を用いなくてもテキストを 200％までサイズ変更できるようにする達成方法:</head>
 <olist>
 	<item><p><loc href="G204" linktype="general"/>、又は、</p></item>
-	<item><p><loc href="G146" linktype="general"/>、<emph>かつ</emph>、次の達成方法の一つ以上を用いて、コンテンツにあるその他の大きさと相対的な大きさにする：</p>
+	<item><p><loc href="G146" linktype="general"/>、<emph>かつ</emph>、次の達成方法の一つ以上を用いて、コンテンツにあるその他の大きさと相対的な大きさにする:</p>
 	<ulist>
 		<item><p><loc href="C12" linktype="css"/>、又は、</p></item>
 		<item><p><loc href="C13" linktype="css"/>、又は、</p></item>

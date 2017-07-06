@@ -62,9 +62,9 @@
 <div5>
 <head>メタデータの達成方法</head>
 <ulist>
-	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする（リンク追加予定）</p>
+	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする (リンク追加予定)</p>
 	<ulist>
-		<item><p>事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する</p></item>
+		<item><p>事例: ウェブページの様々な英国式の手話通訳 (ASL, SASL, BSL, Auslan, ISL, NZSL) を指し示す URI を、メタデータの中で、提供する</p></item>
 	</ulist>
 	</item>
 </ulist>

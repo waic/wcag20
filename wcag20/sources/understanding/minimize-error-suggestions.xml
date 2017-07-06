@@ -28,7 +28,7 @@
 	<item><p>
                 <emph role="bold">制限のある値の提示</emph>
               </p><p> 月の名前を入力するテキストフィールドがある。利用者が「12」と入力すると、修正する方法が提示される。
-            </p><ulist><item><p>入力可能な値の一覧。例えば、「どれか一つを選んでください： January, February, March, April, May, June, July, August, September, October, November, December」。</p></item><item><p>入力すべき値を説明する。例えば、「月の名前を入力してください。」</p></item><item><p>入力されたデータを異なるフォーマットに変換して提示する。例えば、「もしかして 'December' ですか?」</p></item></ulist></item>
+            </p><ulist><item><p>入力可能な値の一覧。例えば、「どれか一つを選んでください: January, February, March, April, May, June, July, August, September, October, November, December」。</p></item><item><p>入力すべき値を説明する。例えば、「月の名前を入力してください。」</p></item><item><p>入力されたデータを異なるフォーマットに変換して提示する。例えば、「もしかして 'December' ですか?」</p></item></ulist></item>
 </ulist>
 </div3>
 

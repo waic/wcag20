@@ -39,7 +39,7 @@
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： アプリケーションで、購入又は所得税申告の提出のように、法的なトランザクションが発生する場合：</head>
+<head>状況 A: アプリケーションで、購入又は所得税申告の提出のように、法的なトランザクションが発生する場合:</head>
 <olist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G164" linktype="general"/></p></item>
 	<item><p>
@@ -51,7 +51,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 B： 利用者のアクションによって情報が削除される可能性がある場合：</head>
+<head>状況 B: 利用者のアクションによって情報が削除される可能性がある場合:</head>
 <olist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G99" linktype="general"/>
@@ -63,7 +63,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 C： ウェブページに試験を実施するアプリケーションがある場合：</head>
+<head>状況 C: ウェブページに試験を実施するアプリケーションがある場合:</head>
 <olist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general"/>

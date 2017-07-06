@@ -51,7 +51,7 @@
 <div4 role="sufficient">
 <head/>
 <olist>
-	<item><p>次の達成方法の中から一つを用いて、繰り返されるブロックをスキップするリンクを作成する：</p>
+	<item><p>次の達成方法の中から一つを用いて、繰り返されるブロックをスキップするリンクを作成する:</p>
 	<ulist>
 		<item><p><loc href="G1" linktype="general"/></p></item>
 		<item><p><loc href="G123" linktype="general"/></p></item>
@@ -59,7 +59,7 @@
 		<item><p><loc href="SL25" linktype="silverlight"/></p></item>
 	</ulist>
 	</item>
-	<item><p>次の達成方法の中から一つを用いて、スキップ可能な方法で繰り返されるブロックをグループ化する：</p>
+	<item><p>次の達成方法の中から一つを用いて、スキップ可能な方法で繰り返されるブロックをグループ化する:</p>
 	<ulist>
 		<item><p><loc href="ARIA11" linktype="aria"/></p></item>
 		<item><p><loc href="H69" linktype="html"/></p></item>

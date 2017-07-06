@@ -58,14 +58,14 @@
 	<item><p><loc href="SL23" linktype="silverlight"/></p></item>
 	<item><p>テキストのサイズを変更した際に、テキストコンテナもサイズ変更するようにする、<emph role="bold">かつ</emph>、次の達成方法の一つ以上を用いて、コンテンツにあるその他の大きさと相対的な大きさにする</p>	<ulist>
 		<item><p><loc href="C28" linktype="css"/></p></item>
-		<item role="css"><p>相対的な大きさの達成方法：</p>
+		<item role="css"><p>相対的な大きさの達成方法:</p>
 		<ulist>
 			<item><p><loc href="C12" linktype="css"/></p></item>
 			<item><p><loc href="C13" linktype="css"/></p></item>
 			<item><p><loc href="C14" linktype="css"/></p></item>
 		</ulist>
 		</item>
-		<item><p>テキストコンテナのサイズを可変にする達成方法：</p>
+		<item><p>テキストコンテナのサイズを可変にする達成方法:</p>
 		<ulist>
 			<item><p><loc href="SCR34" linktype="script"/></p></item>
 			<item><p><loc href="G146" linktype="general"/></p></item>

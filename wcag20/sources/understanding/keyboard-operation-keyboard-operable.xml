@@ -27,22 +27,22 @@
 <head>2.1.1 examples</head>
 <ulist>
 	<item><p>
-                <emph role="bold">事例 1： 描画プログラム</emph>
+                <emph role="bold">事例 1: 描画プログラム</emph>
               </p><p>描画プログラムは、利用者がキーボード操作でオブジェクトの作成、サイズ変更、配置及び回転をすることが可能である。</p></item>
 	<item><p>
-                <emph role="bold">事例 2： ドラッグアンドドロップ機能</emph>
+                <emph role="bold">事例 2: ドラッグアンドドロップ機能</emph>
               </p><p>ドラッグアンドドロップを用いるアプリケーションは、オブジェクトを移動させるための「カット」及び「ペースト」、又はフォームコントロールをサポートしている。</p></item>
 	<item><p>
-                <emph role="bold">事例 3： 離れている点の間の移動及び接続</emph>
+                <emph role="bold">事例 3: 離れている点の間の移動及び接続</emph>
               </p><p>点を結ぶプログラムは、利用者が画面上の点間を移動し、スペースキーで現在の点と直前の点を結ぶことができる。</p></item>
 	<item><p>
-                <emph role="bold">事例 4： 例外 － お絵描きプログラム</emph>
+                <emph role="bold">事例 4: 例外 － お絵描きプログラム</emph>
               </p><p>水彩画を描くプログラムは、ひと筆の動きが移動の速度及び持続時間にかなり依存して変化するため、例外の一つとして認められる。</p></item>
 	<item><p>
-                <emph role="bold">事例 5： 例外 － 模型ヘリコプター操縦訓練シミュレータ</emph>
+                <emph role="bold">事例 5: 例外 － 模型ヘリコプター操縦訓練シミュレータ</emph>
               </p><p>ヘリコプター操縦訓練シミュレータは、シミュレータの性質上、模型ヘリコプターの動作をリアルタイムで教えるものであるため、例外の一つとして認められる。</p></item>
 	<item><p>
-                <emph role="bold">事例 6： オプションのキーボード付き PDA</emph>
+                <emph role="bold">事例 6: オプションのキーボード付き PDA</emph>
               </p><p>通常スタイラスペンで操作する PDA は、オプションで接続可能なキーボードがある。そのキーボードは、標準的な方法で全てのウェブ閲覧を行うことが可能である。ウェブコンテンツはキーボードのみでも利用できるように設計されているので、そのキーボードでも操作可能である。</p></item>
 </ulist>
 </div3>
@@ -75,7 +75,7 @@
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL14" linktype="silverlight"/> 
                 </p></item></ulist></item>
 	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH17" linktype="flash"/>　かつ、必要に応じて次の達成方法を用いる：</p><ulist><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH17" linktype="flash"/>　かつ、必要に応じて次の達成方法を用いる:</p><ulist><item><p>
                       <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH22" linktype="flash"/>
                     </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH16" linktype="flash"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH14" linktype="flash"/></p></item></ulist></item>
 </olist>

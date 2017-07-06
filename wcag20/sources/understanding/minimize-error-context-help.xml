@@ -37,7 +37,7 @@
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： フォームがテキスト入力を求める場合：</head>
+<head>状況 A: フォームがテキスト入力を求める場合:</head>
 <olist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G71" linktype="general">Providing a help link on every Web page</loc>
@@ -54,7 +54,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 B： フォームが所定のデータフォーマットでのテキスト入力を求める場合：</head>
+<head>状況 B: フォームが所定のデータフォーマットでのテキスト入力を求める場合:</head>
 <olist>
 	<item><p>
                     <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G89" linktype="general">Providing expected data format and example</loc>
