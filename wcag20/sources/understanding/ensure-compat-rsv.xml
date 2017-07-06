@@ -46,7 +46,7 @@
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A：マークアップ言語（例えば HTML）で標準的なユーザインタフェース コンポーネントを使用している場合：</head>
+<head>状況 A: マークアップ言語 (例えば HTML) で標準的なユーザインタフェース コンポーネントを使用している場合:</head>
 <olist>
   <item><p><loc href="ARIA14" linktype="aria"/></p></item>
   <item><p><loc href="ARIA16" linktype="aria"/></p></item>
@@ -63,7 +63,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 B：スクリプト又はコードを用いて、マークアップ言語の標準的なユーザインタフェース コンポーネント再定義する場合：</head>
+<head>状況 B: スクリプト又はコードを用いて、マークアップ言語の標準的なユーザインタフェース コンポーネント再定義する場合:</head>
 <olist>
   <item role="script">
     <p>名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する</p>
@@ -75,7 +75,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 C：プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合：</head>
+<head>状況 C: プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合:</head>
 <olist>
   <item><p>下記の達成方法固有の技術を用いて、<loc href="G135" linktype="general"/>:</p>
   <ulist>
@@ -92,7 +92,7 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 D：プログラミング言語で独自のインタフェース・コンポーネントを作成する場合：</head>
+<head>状況 D: プログラミング言語で独自のインタフェースコンポーネントを作成する場合:</head>
 <olist>
   <item><p>下記の達成方法固有の技術を用いて、<loc href="G10" linktype="general"/>:</p>
     <ulist>

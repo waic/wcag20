@@ -46,7 +46,7 @@
 
 <note>
 <p>コントラスト比を用いてウェブコンテンツのコントラストを分析するツールの一覧は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#visual-audio-contrast-contrast-resources-head">関連リソース</loc>を参照のこと。</p>
-<p>キーボード・フォーカスを示すための達成方法については、<specref ref="navigation-mechanisms-focus-visible"/>も参照のこと。</p><p>コンテンツを閲覧するのに特定の色の組合せを必要とする利用者が、好みの色の配置でコンテンツを閲覧できるようにするために、コンテンツ制作者がページの特定の部分に色を指定しないことが役に立つことがある。より詳細な情報は、<specref ref="visual-audio-contrast-text-presentation"/>を参照のこと。</p>
+<p>キーボードフォーカスを示すための達成方法については、<specref ref="navigation-mechanisms-focus-visible"/>も参照のこと。</p><p>コンテンツを閲覧するのに特定の色の組合せを必要とする利用者が、好みの色の配置でコンテンツを閲覧できるようにするために、コンテンツ制作者がページの特定の部分に色を指定しないことが役に立つことがある。より詳細な情報は、<specref ref="visual-audio-contrast-text-presentation"/>を参照のこと。</p>
 </note>
 </div4>
 

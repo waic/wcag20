@@ -59,7 +59,7 @@
 <head/>
 <ulist>
 	<item><p><loc href="SVR5" linktype="server"/></p></item>
-	<item><p>http 又は Content-Language メタ・タグを用いてメタデータを指定する（リンク追加予定）</p></item>
+	<item><p>http 又は Content-Language メタタグを用いてメタデータを指定する (リンク追加予定)</p></item>
 </ulist>
 </div4>
 
