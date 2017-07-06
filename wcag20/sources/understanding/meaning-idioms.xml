@@ -39,28 +39,28 @@
 </note>
 
 <ulist>
-	<item><p>無料で利用できる多くの原語の辞書が、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freedict.org/"> Freedict.orgのウェブサイト（英語）</loc>から入手可能である。同サイトに明記されているが、これらの辞書の品質と規模は辞書によってまちまちである。この情報は2005年4月9日現在のものである。</p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stars21.com/index.html?lang=en&amp;pname=african">The WorldStar Free Dictionaries, Translators and Search Engines</loc>のサイトでは、無料で利用できる多くの原語のオンライン辞書やサーチエンジンが提供されている。この情報は2005年11月18日現在のものである。</p></item><item><p>他にも、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.yourdictionary.com/">your dictionary</loc>、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freelang.com/">freelang.com</loc>（英語、スペイン語、フランス語）など多くのサイトで辞書が提供されている。</p></item>
+	<item><p>無料で利用できる多くの原語の辞書が、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freedict.org/"> Freedict.org のウェブサイト (英語)</loc>から入手可能である。同サイトに明記されているが、これらの辞書の品質と規模は辞書によってまちまちである。この情報は 2005 年 4 月 9 日現在のものである。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stars21.com/index.html?lang=en&amp;pname=african">The WorldStar Free Dictionaries, Translators and Search Engines</loc>のサイトでは、無料で利用できる多くの原語のオンライン辞書やサーチエンジンが提供されている。この情報は 2005 年 11 月 18 日現在のものである。</p></item><item><p>他にも、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.yourdictionary.com/">your dictionary</loc>、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freelang.com/">freelang.com</loc>（英語、スペイン語、フランス語）など多くのサイトで辞書が提供されている。</p></item>
 </ulist>
 </div3>
 
 <div3 role="techniques">
-<head>達成基準 3.1.3 の達成方法及び不適合事例 个ｱ 一般的ではない用語</head>
+<head>達成基準 3.1.3 の達成方法及び不適合事例 - 一般的ではない用語</head>
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： 単語又は語句にそのウェブページ特有の意味がある場合：</head>
+<head>状況 A: 単語又は語句にそのウェブページ特有の意味がある場合:</head>
 <olist>
-	<item><p>ウェブページ上で単語や語句の初出時に、以下のいずれかの方法で<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general">G101： 一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: Using definition lists</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item>
+	<item><p>ウェブページ上で単語や語句の初出時に、以下のいずれかの方法で <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general"/>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: Using definition lists</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">G112： インラインの定義を用いる</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H54" linktype="html">H54: dfn要素を用いて、単語の定義インスタンスを特定する</loc></p></item></ulist></item></ulist></item>
-	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general">G101： 一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general">G62： 用語集を用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general">G70： オンライン辞書を検索する機能を提供する</loc></p></item></ulist></item>
+	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general"/>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general">G62： 用語集を用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general">G70： オンライン辞書を検索する機能を提供する</loc></p></item></ulist></item>
 </olist>
 </div5>
 
 <div5 role="situation">
-<head>状況 B： 単語又は語句の意味が、同じウェブページ内で異なる場合：</head>
+<head>状況 B: 単語又は語句の意味が、同じウェブページ内で異なる場合:</head>
 <olist>
-	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general">G101： 一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">G112： インラインの定義を用いる</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H54" linktype="html">H54: dfn要素を用いて、単語の定義インスタンスを特定する</loc></p></item></ulist></item></ulist></item>
+	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general">G101： 一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</loc>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general">G55： 定義にリンクする</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general">G112： インラインの定義を用いる</loc></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H54" linktype="html">H54: dfn要素を用いて、単語の定義インスタンスを特定する</loc></p></item></ulist></item></ulist></item>
 </olist>
 </div5>
 </div4>

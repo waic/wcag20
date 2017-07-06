@@ -51,17 +51,17 @@
 <div4 role="sufficient">
 <head/>
 <div5 role="situation">
-<head>状況 A： ウェブページが自動更新を行う場合：</head>
+<head>状況 A: ウェブページが自動更新を行う場合:</head>
 <olist>
 	<item><p><loc href="G76" linktype="general"/></p></item>
 </olist>
 </div5>
 
 <div5 role="situation">
-<head>状況 B： 自動リダイレクトが可能な場合：</head>
+<head>状況 B: 自動リダイレクトが可能な場合:</head>
 <olist>
   <item><p><loc href="SVR1" linktype="server"/></p></item>
-  <item><p>以下のいずれかの方法を用いて<loc href="G110" linktype="general"/>:</p>
+  <item><p>以下のいずれかの方法を用いて <loc href="G110" linktype="general"/>:</p>
     <ulist>
       <item><p><loc href="H76" linktype="html"/></p></item>
     </ulist>
@@ -70,9 +70,9 @@
 </div5>
 
 <div5 role="situation">
-<head>状況 C： ウェブページがポップアップウィンドウを用いる場合：</head>
+<head>状況 C: ウェブページがポップアップウィンドウを用いる場合:</head>
 <olist>
-  <item><p>次の達成方法の一つを用いてポップアップウィンドウを表示する：</p>
+  <item><p>次の達成方法の一つを用いてポップアップウィンドウを表示する:</p>
     <ulist>
       <item><p><loc href="H83" linktype="html"/></p></item>
       <item><p><loc href="SCR24" linktype="script"/></p></item>
@@ -82,9 +82,9 @@
 </div5>
 
 <div5 role="situation">
-<head role="script">状況 D： select要素上でonchangeイベントを用いる場合：</head>
+<head role="script">状況 D: select 要素上で onchange イベントを用いる場合：</head>
 <olist>
-	<item><p><loc href="SCR19" linktype="script">SCR19: 状況の変化を引き起こすことなく、select要素のonchangeイベントを用いる</loc></p></item>
+	<item><p><loc href="SCR19" linktype="script"/></p></item>
 </olist>
 </div5>
 </div4>
@@ -92,7 +92,7 @@
 <div4 role="tech-optional">
 <head>達成基準 3.2.5 でさらに対応が望まれる達成方法（参考）</head>
 <ulist>
-	<item><p>新しいウィンドウを開く際、target属性を用いず一般的なハイパーリンクを提供する。（リンク追加予定） これは、多くのユーザエージェントではリンクを別のウィンドウ又は別のタブで開く機能を提供しているためである。</p></item>
+	<item><p>新しいウィンドウを開く際、target 属性を用いず一般的なハイパーリンクを提供する。(リンク追加予定) これは、多くのユーザエージェントではリンクを別のウィンドウ又は別のタブで開く機能を提供しているためである。</p></item>
 	<item><p><loc href="G200" linktype="general"/></p></item>
 </ulist>
 </div4>

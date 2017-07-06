@@ -31,7 +31,7 @@
 </ulist>
 
 <note>
-<p>日本語では、「発音」というよりも「読み仮名」を示すために<code><![CDATA[ruby]]></code> 要素を用いる。</p>
+<p>日本語では、「発音」というよりも「読み仮名」を示すために <code><![CDATA[ruby]]></code> 要素を用いる。</p>
 </note>
 </div3>
 
@@ -46,7 +46,7 @@
 <olist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G120" linktype="general"/></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G121" linktype="general"/></p></item>
-	<item><p>そのコンテンツ特有の発音があったり、発音で意味が変わるような単語の発音に関する情報を含む<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item>
+	<item><p>そのコンテンツ特有の発音があったり、発音で意味が変わるような単語の発音に関する情報を含む <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G163" linktype="general"/></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H62" linktype="html"/> (XHTML 1.1)</p></item>
 </olist>

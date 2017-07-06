@@ -13,7 +13,7 @@
 <p>ほとんどの専門的な職業では、もともとは外国語からきた技術用語を頻繁に使うことを必要とする。そのような用語は、通常すべての言語に翻訳されるわけではない。技術用語は広く共通のものが用いられる傾向があり、専門家の間でのコミュニケーションの促進につながっている。</p>
 <p>技術用語のよくある例としては、次のようなものがある： ホモ・サピエンス (Homo sapiens)、アルファケンタウリ (Alpha Centauri)、ヘルツ (hertz)、ヘイビアス・コーパス (habeas corpus) など。</p><p>言語の変化を示すことは、多くの理由から重要である：</p>
 <ulist>
-	<item><p>点訳ソフトウェアが言語の変化に従うことができるようになる。例えば、アクセント文字を適切な符号に置き換えたり、必要な符号を挿入し、2級点字の縮字の誤りを回避したりすることができる。</p></item>
+	<item><p>点訳ソフトウェアが言語の変化に従うことができるようになる。例えば、アクセント文字を適切な符号に置き換えたり、必要な符号を挿入し、2 級点字の縮字の誤りを回避したりすることができる。</p></item>
 	<item><p>複数の言語をサポートしている合成音声を用いて、テキストを適切なアクセントと正確な発音で読み上げさせることができるようになる。言語の変化が示されていない場合、合成音声のシステムはその単語をデフォルトの言語として読み上げるのに最善を尽くそうとする。したがって、フランス語で自動車を表す "voiture" は、英語をデフォルトの言語として用いている合成音声では "voyture" というような音で発音されてしまう。</p></item>
 	<item><p>言語の変化を示すことで、将来の技術の開発にも役立つことがある。例えば、複数の言語の間での翻訳をすることができない利用者が、機械翻訳を使って馴染みのない言語を扱うことができるようになるかもしれない。</p></item>
 	<item><p>また、言語の変化を示しておけば、ユーザエージェントが辞書を用いて用語の定義を提供するのを支援することもできるだろう。</p></item>
@@ -35,7 +35,7 @@
 <head>達成基準 3.1.2 の事例</head>
 <olist>
 	<item><p><emph role="bold">英語の文章中にあるドイツ語の一節</emph></p><p>文章中に "He maintained that the DDR (German Democratic Republic) was just a '<phrase xml:lang="de" lang="de"> Treppenwitz der Weltgeschichte</phrase>'," とあり、ドイツ語の一節 '<phrase xml:lang="de" lang="de">Treppenwitz der Weltgeschichte</phrase>' がドイツ語であることが示されている。マークアップ言語によっては、特定している箇所を除いては英語を文書全体の言語として示すこともできるし、段落レベルで示すこともできる。スクリーンリーダーがドイツ語の一節を読み上げる際は、その単語を正確に発音するために、発音規則を英語からドイツ語に変更する。</p></item>
-	<item><p><emph role="bold">代わりの言語へのリンク</emph></p><p>ある HTML のウェブページには、そのページの他言語版へのリンクがある（例： Deutsch, Français, Nederlands, Castellanoなど）。それぞれのリンクのテキストは言語名で、その言語で書かれている。リンクの言語はそれぞれ、<code><![CDATA[lang]]></code> 属性で示されている。</p></item>
+	<item><p><emph role="bold">代わりの言語へのリンク</emph></p><p>ある HTML のウェブページには、そのページの他言語版へのリンクがある (例: Deutsch, Français, Nederlands, Castellano など)。それぞれのリンクのテキストは言語名で、その言語で書かれている。リンクの言語はそれぞれ、<code><![CDATA[lang]]></code> 属性で示されている。</p></item>
 	<item><p><emph role="bold">フランス語の文章中で使われている "Podcast"</emph></p><p>"podcast" は、次の引用ではすぐ周囲にあるテキストの言語の一部である。"<phrase xml:lang="fr">A l'occasion de l'exposition "Energie eternelle. 1500 arts d'art indien", le Palais des Beaux-Arts de Bruxelles a lance son premier podcast. Vous pouvez telecharger ce podcast au format M4A et MP3</phrase>," この場合、言語の変化を示す必要はない。</p></item>
 </olist>
 </div3>
