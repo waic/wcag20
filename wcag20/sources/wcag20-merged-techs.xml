@@ -5,8 +5,8 @@
 <spec status="final" w3c-doctype="wgnote" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<header>
 <trdisclaimer>
-<p>【重要】 この文書は、W3C ワーキンググループノート <loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0</loc> (原文は英語: 2016 年 10 月 7 日公開) を情報通信アクセス協議会の<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="http://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)</loc> が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3C のサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3C が公開している原文 (英語) にてご確認ください。</p>
-<p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
+<p>【注意】 この文書は、W3C ワーキンググループノート <loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の2016年10月7日時点での最新版</loc>を、<loc href="http://waic.jp/">ウェブアクセシビリティ基盤委員会（WAIC）</loc> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="http://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
+<p>【重要】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </trdisclaimer>
 		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 達成方法集</title>
 		<subtitle>WCAG 2.0 の達成方法と不適合事例</subtitle>
