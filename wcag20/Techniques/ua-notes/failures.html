@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
  <head>
-  <title>User Agent Support Notes for for Common Failures</title>
+  <title>よくある不適合事例のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
  </head>
  <body>
-  <h1>User Agent Support Notes for Common Failures</h1>
-  <p>This page documents user agent support notes for 
-<a href="/docs/WCAG-TECHS/failures">Common Failures</a>.</p>
+  <h1>よくある不適合事例のためのユーザーエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/failures">よくある不適合事例</a>のためのユーザーエージェントサポートノートを記載する。</p>
   <ul class="toc">
    <li class="toc">
     <a href="#F4">達成基準 2.2.2 の失敗例 － 5 秒未満でそれを停止させるメカニズムを提供せずに、text-decoration:blink を使用している</a>
    </li>
    <li class="toc">
-    <a href="#F37">Failure of Success Criterion 3.2.2 due to launching a new window without prior warning
-                    when the status of a radio button, check box or select list is changed</a>
+    <a href="#F37">達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストの状態を変更すると、事前の予告なしに新しいウィンドウを開いている</a>
+    （訳注： この達成方法は、最新の達成方法では「達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている」とされている）  
    </li>
    <li class="toc">
     <a href="#F47">達成基準 2.2.2 の失敗例 － blink 要素を使用している</a>
@@ -46,12 +45,12 @@
   </section>
   <section id="F37">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/F37.html">F37</a>: Failure of Success Criterion 3.2.2 due to launching a new window without prior warning
-                    when the status of a radio button, check box or select list is changed</h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/F37.html">F37</a>: 達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストの状態を変更すると、事前の予告なしに新しいウィンドウを開いている</h2>
    <div class="ua-issue">
     <p>Internet Explorer 6 also triggers the onclick event when a radio button
                             with onclick receives focus; adding other event handlers (onxxx
                             attributes) to prevent this does not work. </p>
+	<p>（訳注： この達成方法は、最新の達成方法では「達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている」とされている）</p>                            
    </div>
   </section>
   <section id="F47">
