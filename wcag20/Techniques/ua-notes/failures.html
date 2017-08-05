@@ -22,7 +22,7 @@
     <a href="#F49">達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している</a>
    </li>
    <li class="toc">
-    <a href="#F58">達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトしているために、サーバサイドの実装方法を使用している</a>
+    <a href="#F58">達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトしているために、サーバサイドの達成方法を使用している</a>
    </li>
    <li class="toc">
     <a href="#F87">達成基準 1.3.1 の失敗例 － CSS の :before や :after 疑似要素及び 'content' プロパティを用いて、装飾目的ではないコンテンツを挿入している</a>
@@ -35,21 +35,14 @@
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/F4.html">F4</a>: 達成基準 2.2.2 の失敗例 － 5 秒未満でそれを停止させるメカニズムを提供せずに、text-decoration:blink を使用している</h2>
    <div class="ua-issue">
-    <p>The 
-<code>blink</code> value of the 
-<code>text-decoration</code> property
-                            is not supported by Internet Explorer. It is supported in
-                            Netscape/Mozilla family browsers. Not tested in others (e.g., Safari,
-                            Opera).</p>
+    <p><code>text-decoration</code> プロパティの <code>blink</code> という値は、Internet Explorerによってサポートされていない。Netscape/Mozillaファミリーのブラウザではサポートされている。その他のブラウザ（例： Safari、Operaなど）では未検証である。</p>
    </div>
   </section>
   <section id="F37">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/F37.html">F37</a>: 達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストの状態を変更すると、事前の予告なしに新しいウィンドウを開いている</h2>
    <div class="ua-issue">
-    <p>Internet Explorer 6 also triggers the onclick event when a radio button
-                            with onclick receives focus; adding other event handlers (onxxx
-                            attributes) to prevent this does not work. </p>
+    <p>onclickを持つラジオボタンがフォーカスを受け取る時、Internet Explorer 6 は onclickイベントも引き起こす。この動作を防ぐためには他のイベント・ハンドラ（onxxx属性）を追加する。</p>
 	<p>（訳注： この達成方法は、最新の達成方法では「達成基準 3.2.2 の失敗例 － ラジオボタン、チェックボックス、又はセレクトリストを変更すると、事前の予告なしに新しいウィンドウを開いている」とされている）</p>                            
    </div>
   </section>
@@ -58,29 +51,23 @@
     <a href="http://waic.jp/docs/WCAG-TECHS/F47.html">F47</a>: 達成基準 2.2.2 の失敗例 － blink 要素を使用している</h2>
    <div class="ua-issue">
     <p>The 
-<code>blink</code> element is not supported by Internet Explorer 6 on Windows. It is supported in Netscape/Mozilla family of user agents and Opera on Windows.           </p>
+<code>blink</code> 要素はWindows用Internet Explorer 6ではサポートされていない。ユーザーエージェントのNetscape/Mozillaシリーズ及びWindows用Operaではサポートされている。</p>
    </div>
   </section>
   <section id="F49">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/F49.html">F49</a>: 達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している</h2>
    <div class="ua-issue">
-    <p>Early screen readers literally read Web content from the screen, which
-                            lead to problems when tables were used for layout where one table cell
-                            was meant to be read in its entirety before reading the next table cell.
-                            Today's screen readers work with the underlying markup, which means that
-                            they do read a table cell in its entirety before moving on to the next
-                            cell, but layout tables may still inadvertently introduce problems with
-                            the natural reading order of the content.</p>
+    <p>初期のスクリーンリーダーは文字通りウェブコンテンツを画面から読み取っていた。そのため、テーブルの一つのセルの内容全体が次のセルより先に読まれることを意図しているようなレイアウトテーブルは問題になっていた。
+    	今日のスクリーンリーダーは基礎となっているマークアップを利用して動作するため、一つのセルの内容全体を次のセルより先に読み上げることが可能である。
+    	しかしレイアウトのためのテーブルは現在でもコンテンツの自然な読み上げ順序に関する問題を生じさせることがある。</p>
    </div>
   </section>
   <section id="F58">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/F58.html">F58</a>: 達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトしているために、サーバサイドの実装方法を使用している</h2>
    <div class="ua-issue">
-    <p> The Refresh header is not defined in HTTP/1.1 or HTTP/1.0, but it is
-                            widely supported by browsers (tested in Firefox 1.0 and IE 6 on
-                            Windows).</p>
+    <p>Refreshヘッダは、HTTP/1.1、HTTP/1.0ともに定義されていないが、多くのブラウザでサポートされている（Windows のFirefox 1.0とIE 6で検証。）</p>
    </div>
   </section>
   <section id="F87">
@@ -88,31 +75,30 @@
     <a href="http://waic.jp/docs/WCAG-TECHS/F87.html">F87</a>: 達成基準 1.3.1 の失敗例 － CSS の :before や :after 疑似要素及び 'content' プロパティを用いて、装飾目的ではないコンテンツを挿入している</h2>
    <div class="ua-issue">
     <p>
-     <code>:before</code> and 
-<code>:after</code> are not supported by IE7 and lower</p>
+     <code>:before</code> 及び　<code>:after</code> は、IE7以下ではサポートされていない。</p>
    </div>
   </section>
   <section id="F91">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/F91.html">F91</a>: 達成基準 1.3.1 の失敗例 － テーブルの見出しセルを正しくマークアップしていない</h2>
    <div class="ua-issue">
-    <p>Screen reader support for navigating data tables with and without correct header mark-up varies.</p>
+    <p>正しいヘッダーのマークアップの有無にかかわらず、データテーブルをナビゲートするためのスクリーンリーダーのサポートは異なる。</p>
     <ul>
      <li>
-      <p> JAWS has many keyboard shortcuts to navigate between data cells and read associated header information. The default behavior for JAWS with version 12 and later is to read only headers that have been properly marked as headers by the author of a table.
-						</p>
+      <p>JAWS は、データセル間を移動して関連するヘッダー情報を読み取るための多くのキーボードショートカットがある。
+	バージョン 12 以降の JAWS のデフォルトの動作は、テーブルの制作者がヘッダーとして適切にマークしたヘッダーのみを読み取る。</p>
      </li>
      <li>
-      <p> Window-Eyes has different customization options for row and column announcement: both column and row headers, just column or just row headers, just the header that changes, and even defining a specific row or column to compensate for missing markup. For example, "R 1, C 1" would be the first row and column of the table.
-						</p>
+      <p>Window-Eyesは、列と行の両方のヘッダー、列のみ又は行のみのヘッダー、変更されるヘッダーのみ、行又は列の不足を補うための特定の行又は列の定義など、行及び列のアナウンスの異なるカスタマイズオプションがある。
+      	例えば、"R 1,C 1"はテーブルの最初の行と最初の列である。</p>
      </li>
      <li>
-      <p> VoiceOver announces column headers when traversing a table horizontally. It does not currently read row headers even when they are marked up, though it will identify the row number. 
-						</p>
+      <p>VoiceOverは、テーブルを水平方向に移動するときに列ヘッダーを知らせる。行ヘッダーがマークアップされていても現在は読み取られないが、行番号を識別する。</p>
      </li>
      <li>
-      <p> NVDA has shortcuts for moving between table cells horizontally or vertically, reading the header that changes when navigating. When moving through data cells vertically, NVDA (2011.3 with Firefox 11) will read the first cell of a row even when it is not marked up as header. However, when moving through data cells horizontally, it will only read out the cells in the first row as column headers if they are correctly marked up.
-						</p>
+      <p>NVDAは、ナビゲート時に変更されるヘッダーを読み取り、テーブルセル間を水平または垂直に移動するためのショートカットを持つ。
+	データセルを垂直方向に移動するとき、NVDA（Firefox11と2011.3）はヘッダーとしてマークアップされない場合でも行の最初のセルを読み上げる。
+	しかし、データセルを水平方向に移動するとき、正しくマークアップされている場合は、列ヘッダーとして最初の行のセルをのみ読み上げる。</p>
      </li>
     </ul>
    </div>

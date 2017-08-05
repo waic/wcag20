@@ -28,14 +28,14 @@
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/SCR19.html">SCR19</a>: 状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</h2>
    <div class="ua-issue">
-    <p>This technique has been tested on Windows XP using JAWS 7.0 and WindowEyes 5.5 with both Firefox 1.5 and IE 6. Note that JavaScript must be enabled in the browser. </p>
+    <p>この達成方法はWindows XP上で、Firefox1.5とIE6の両方で、JAWS 7.0とWindowEyes 5.5を使用して検証されている。ブラウザでJavaScriptを有効にしなければならないことに注意する。</p>    
    </div>
   </section>
   <section id="SCR21">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/SCR21.html">SCR21</a>: ページにコンテンツを追加するために、DOM（ドキュメント・オブジェクト・モデル）を使用する</h2>
    <div class="ua-issue">
-    <p>This example was successfully tested on Windows XP with IE 6 and Firefox 1.5.0.1 using both JAWS 7 and WindowEyes 5.5. Note that when adding new content onto a page, the screen readers may not automatically speak the new content.  In order to ensure that new content is spoken, set focus to the new element or make certain that it is added below the current location and will be encountered as the user continues to traverse the page.</p>
+    <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。 ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、ユーザーがページを読み進めていく際に気がつけるようにする。</p>
    </div>
   </section>
   <section id="SCR29">
@@ -43,32 +43,31 @@
     <a href="http://waic.jp/docs/WCAG-TECHS/SCR29.html">SCR29</a>: 静的なHTML要素にキーボード操作可能なアクションを追加する</h2>
    <div class="ua-issue">
     <p>
-     <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">HTML 4.01</a> only defines the tabindex attribute for 
+     <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">HTML 4.01</a>はtabindex属性を 
 <code>a</code>, 
 <code>area</code>, 
 <code>button</code>, 
 <code>input</code>, 
 <code>object</code>, 
-<code>select</code>, and 
-<code>textarea</code>, and limits its value to the range between 0 and 32767. The use of 
-<code>tabindex</code> with other element types and the tabindex value -1 is supported in Internet Explorer 5.01 and higher, and Firefox 1.5 and higher, Opera 9.5 and higher and Camino. Note that modifying focus through script can cause unpredictable behavior in screen readers that use a virtual cursor. 
-                </p>
+<code>select</code>, 及び
+<code>textarea</code> にのみ定義し、その値を0から32767の間に限定する。 その他の要素に
+<code>tabindex</code> 属性を付与すること、またtabindex属性値を-1にすることがサポートされているのは、Internet Explorer 5.01以上、Firefox 1.5以上、Opera 9.5以上、及びCaminoである。バーチャルカーソルを使用しているスクリーン リーダーではスクリプトを用いてフォーカスを変更することは予測不能な事態を引き起こす可能性があることに注意する。</p>
    </div>
   </section>
   <section id="SCR31">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/SCR31.html">SCR31</a>: フォーカスのある要素の背景色又はボーダーを変更するために、スクリプトを使用する</h2>
    <div class="ua-issue">
-    <p>This technique can be used on user agents that don't support the 
-<code>:focus</code> pseudoclass but do support script, including Microsoft Internet Explorer.</p>
+    <p>この達成方法は<code>:focus</code>疑似クラスをサポートしていないがスクリプトをサポートしている、マイクロソフトのInternet Explorerを含むユーザエージェント上で用いることができる。</p>
    </div>
   </section>
   <section id="SCR34">
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/SCR34.html">SCR34</a>: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</h2>
    <div class="ua-issue">
-    <p>Calculating size and position can be complex and different browsers can produce different results. This can occur when the CSS styling mixes padding, margins and widths for an object, or when it mixes an offset and plain value, e.g., offsetWidth and width. Some of these behave differently in reaction to zooming. See 
-<a href="http://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It</a> for an explanation of the way that Internet Explorer 6 and later differ from earlier versions of Internet Explorer. </p>
+    <p>サイズ及びポジションを定めることは複雑であり、異なるブラウザは異なる結果をだすことになる。これはCSSスタイリングでpadding、 margins及びwidthを一つのオブジェクトに対して組み合わせて使用したとき、又はオフセット値及び単純な値、例えばoffsetWidthとwidthを組合せて使用したときに起こりうる。 これらのうちのいくつかはズームに対して異なる動きをする。
+    Internet Explorer 6及びそれ以降のバージョンと、IEのそれより前のバージョンとの違いについての説明は、
+<a href="http://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It (英語)</a> を参照すること。</p>
    </div>
   </section>
  </body>
