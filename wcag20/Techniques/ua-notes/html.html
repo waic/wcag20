@@ -171,16 +171,13 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>HTML 4.01仕様書は、<code>alt</code>属性のテキストを、ある要素が通常通り描画されないときに表示されるもの、と説明している。そのため、視覚系ユーザーエージェントでは、画像が表示されないときに<code>alt</code>属性のテキストを表示する。一方、<code>title</code>属性は追加情報を提供するものとされる。ユーザーエージェントは一般的に、<code>title</code>属性が指定された要素にマウスオーバーしたときに、その<code>title</code>属性のテキストを表示する。Internet Explorerは、<code>title</code>属性のテキストが指定されていなければ、マウスオーバー時に<code>alt</code>属性のテキストを表示する。一方、FirefoxやOperaは、<code>title</code>属性のテキストのみをマウスオーバー時に表示し、<code>alt</code>属性のテキストは表示しない。したがって、<code>alt</code>属性のテキストをマウスオーバー時に表示したければ、同じテキストを<code>title</code>属性にも指定しておくべきである。【訳注：本段落最後の一文は、<code>alt</code>属性の誤用を助長する恐れがあるので、WCAG　WGに削除を提案している。】</p>
      </li>
      <li>
-      <p>Assistive technologies provide different levels of support for speaking title attributes. Some do not include features that allow users to access information provided via the title attribute.
-支援技術ごとにtitle属性の音声読み上げサポートが異なる。一部の支援技術には、利用者がtitle属性によって提供される情報にアクセスする機能が含まれていない。</p>
+      <p>支援技術ごとにtitle属性の音声読み上げサポートが異なる。一部の支援技術には、利用者がtitle属性によって提供される情報にアクセスする機能が含まれていない。</p>
      </li>
      <li>
-      <p>JAWS 7.0 and above will speak the value of title attributes depending upon a JAWS setting. This setting can be changed temporarily or permanently within JAWS.
-JAWS 7.0以降では、設定によってtitle属性値を読み上げることができる。この設定は、一時的な変更も固定的な変更も可能である。</p>
+      <p>JAWS 7.0以降では、設定によってtitle属性値を読み上げることができる。この設定は、一時的な変更も固定的な変更も可能である。</p>
      </li>
      <li>
-      <p>WindowEyes 5.5 and above has a hot key, ins-E, that will speak additional information, including the title attribute, for the item with focus. 
-Window-Eyes 5.5以降には、（title属性を含む）フォーカスを受けた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
+      <p>Window-Eyes 5.5以降には、（title属性を含む）フォーカスを受けた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
      </li>
      <li>
       <p>この実装方法は、<code>title</code>属性がアクセシビリティサポーテッドである場合のみ達成基準を満たすことができる。<code>title</code>属性がアクセシビリティサポーテッドであるためには、全てのキーボードの利用者が（音声読み上げソフトウェアを利用しているかどうかに関わらず）この属性の内容を利用できる必要がある。</p>
@@ -223,17 +220,10 @@ Window-Eyes 5.5以降には、（title属性を含む）フォーカスを受け
     <p>JAWSとWindow-Eyesでは、フォーム・コントロールがフォーカスを受けたとき、もし<code>label</code>要素が指定されていなければ、<code>title</code>属性を読み上げる。</p>
     <ul>
      <li>
-      <p>JAWS 6.0 and later can be set to speak both 
-<code>label</code> and
-                  
-<code>title</code> when the two items are different; however, very few users are
-                  aware of this setting.
-JAWS 6.0以降では、<code>label</code>要素と<code>title</code>属性が異なるとき、その両方を読み上げるように設定できる。しかし、この設定方法に気づいているユーザーは非常に少ない。</p>
+      <p>JAWS 6.0以降では、<code>label</code>要素と<code>title</code>属性が異なるとき、その両方を読み上げるように設定できる。しかし、この設定方法に気づいているユーザーは非常に少ない。</p>
      </li>
      <li>
-      <p>WindowEyes 5.5 has a hot key, ins-E, that will display additional information,
-                  including the title attribute, for the item with focus. 
-Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
+      <p>Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
      </li>
     </ul>
    </div>
@@ -260,7 +250,7 @@ Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/H48.html">H48</a>: リストに、ol 要素、ul 要素、dl 要素を用いる</h2>
    <div class="ua-issue">
-    <p>番号やビュレットの形式を指定する<code>type</code>属性について、支援技術のサポートが一致していない。</p>
+    <p>番号やビュレットの形式を指定する<code>type</code>属性について、支援技術のサポートが一貫していない。</p>
    </div>
   </section>
   <section id="H49">
@@ -383,10 +373,7 @@ Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目
    <h2>
     <a href="http://waic.jp/docs/WCAG-TECHS/H69.html">H69</a>: コンテンツの各セクションの開始位置に見出し要素を提供する</h2>
    <div class="ua-issue">
-    <p>Most screen readers provide navigation via headings and provide information
-              about the level of the heading. The Opera browser provides a mechanism to navigate by
-              headings. Additional plugins support navigation by headings in other user agents. See the Resources section for references to some of these plugins.
-JAWS及びWindows-Eyesは、見出し要素を用いたナビゲーション機能を提供しており、見出しレベルに関する情報も提供している。また、Operaは、見出し要素ごとに移動できるメカニズムを提供している。他のユーザーエージェントでも、追加的なプラグインが見出し要素を用いたナビゲーション機能をサポートしている。プラグインに関しては、「参考リソース」のセクションを参照のこと。</p>
+    <p>ほとんどのスクリーンリーダーは、見出し要素を用いたナビゲーション機能を提供しており、見出しレベルに関する情報も提供している。また、Operaは、見出し要素ごとに移動できるメカニズムを提供している。他のユーザーエージェントでも、追加的なプラグインが見出し要素を用いたナビゲーション機能をサポートしている。プラグインに関しては、「参考リソース」のセクションを参照のこと。</p>
     <div class="revnote">
      <p>
       <a name="H69_note" id="H69_note">
@@ -408,7 +395,7 @@ JAWS及びWindows-Eyesは、見出し要素を用いたナビゲーション機�
       <p>Alt+右矢印：次の文を読む</p>
      </li>
      <li>
-      <pAlt+テンキーの5：現在の文を読む</p>
+      <p>Alt+テンキーの5：現在の文を読む</p>
      </li>
      <li>
       <p>Ctrl+テンキーの5：現在のパラグラフを読む</p>
@@ -490,7 +477,7 @@ JAWS及びWindows-Eyesは、見出し要素を用いたナビゲーション機�
     </ul>
    </div>
    <div class="ua-issue">
-    <p><a href="http://www.firevox.clcworld.net/">Fire Vox</a>の「親要素の読み上げ」というコマンド（Ctrl+Shift+U）は、事例3をサポートしている【訳者注：この文書には事例1しかありません。WCAGワーキンググループに確認中です。】。このキーストロークは、フォーカス位置の変更なしに動作する。Fire Vox（英語）は、Firefox 1.0以降のために設計されたフリーのスクリーンリーダーであり、Windows、Macintosh、Linux用のFirefoxでサポートされている。</p>
+    <p><a href="http://www.firevox.clcworld.net/">Fire Vox</a>の「親要素の読み上げ」というコマンド（Ctrl+Shift+U）は、フォーカス位置の変更なしに動作する。Fire Vox（英語）は、Firefox 1.0以降のために設計されたフリーのスクリーンリーダーであり、Windows、Macintosh、Linux用のFirefoxでサポートされている。</p>
    </div>
   </section>
   <section id="H80">
