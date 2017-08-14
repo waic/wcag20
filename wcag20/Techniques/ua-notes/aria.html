@@ -153,9 +153,7 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
    </div>
    <div class="ua-issue">
-    <p>IE 8 only supports 
-<code>aria-labelledby</code> with a single id value and it partially supports 
-<code>aria-describedby</code>.</p>
+    <p>IE 8 は一つのIDの値についてのみ <code>aria-labelledby</code> をサポートし、また、 <code>aria-describedby</code>を部分的にサポートする。</p>
    </div>
   </section>
   <section id="ARIA2">
@@ -190,19 +188,19 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p>Jaws V.11 and greater has complete support.</p>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
      </li>
      <li>
-      <p>ChromeVox V.1 and greater has complete support </p>
+      <p>ChromeVox V.1 以降は完全にサポートしている。</p>
      </li>
      <li>
-      <p>VoiceOver V.3 and greater supports</p>
+      <p>VoiceOver V.3 以降はサポートする。</p>
      </li>
      <li>
-      <p>NVDA 2 supports Aria Describedby</p>
+      <p>NVDA 2 は Aria Describedby をサポートする。</p>
      </li>
      <li>
-      <p>Window Eyes as of V.7.</p>
+      <p>Window Eyes V.7現在　（訳注： 原文のまま翻訳）</p>
      </li>
     </ul>
    </div>
@@ -213,10 +211,10 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>Screen reader testing as of October 2012</p>
+    <p>2012年10月現在のスクリーンリーダーテスト</p>
     <ul>
      <li>
-      <p>Not supported:</p>
+      <p>サポートなし：</p>
       <ul>
        <li>
         <p>Win 7, IE 9, JAWS 13</p>
@@ -233,21 +231,21 @@
       </ul>
      </li>
      <li>
-      <p>Partial support (both link text and element referenced by aria-labeledby are read):</p>
+      <p>部分的サポート (リンクテキストと、aria-labeledby で参照された要素の双方が読み上げられる)：</p>
       <ul>
        <li>
-        <p>Win 7, IE9, NVDA 2012.2.1 (but Example 2 not supported)</p>
+        <p>Win 7, IE9, NVDA 2012.2.1 (ただし、例2はサポートされていない)</p>
        </li>
        <li>
-        <p>Win XP, IE 8, NVDA 2011.3 (but Example 2 not supported)</p>
+        <p>Win XP, IE 8, NVDA 2011.3 (ただし、例2はサポートされていない)</p>
        </li>
       </ul>
      </li>
      <li>
-      <p>Supported:</p>
+      <p>サポート：</p>
       <ul>
        <li>
-        <p>Win 7, FF 13, JAWS 13 (but Example 2 has only partial/buggy support: "Sales report 2012" is read twice)</p>
+        <p>Win 7, FF 13, JAWS 13 (ただし、例2は部分的かつバグのあるサポート： "Sales report 2012" が2度読み上げられる)</p>
        </li>
        <li>
         <p>Mac OS 10.5.8, VoiceOver</p>
@@ -256,22 +254,23 @@
      </li>
     </ul>
     <p>
-     <a href="http://3needs.org/en/testing/code/aria-labelledby-for-link-purpose.html">See full testing results for Example 1</a>
+     <a href="http://3needs.org/en/testing/code/aria-labelledby-for-link-purpose.html">例1の全てのテスト結果を参照する （英語）</a>
     </p>
     <p>
-     <a href="http://3needs.org/en/testing/code/aria-labelledby-filetype.html">See full testing results for Example 2</a>
+     <a href="http://3needs.org/en/testing/code/aria-labelledby-filetype.html">例2の全てのテスト結果を参照する （英語）</a>
     </p>
-    <p>David 
-<a href="http://davidmacd.com/test/labelledby-on-a-link.html">tested</a> on Aug 25, 2013... Example 2 and 3 are still not sufficiently supported.</p>
+    <p>David は2013年8月25日に<a href="http://davidmacd.com/test/labelledby-on-a-link.html">テスト</a>した... 例2と3はまだ十分にサポートされていない。</p>
     <ul>
      <li>
-      <p>Example 1 ok on JAWS, VoiceOver. NVDA ignores labelledby on an anchor</p>
+      <p>例1は、JAWS、VoiceOverでOK。 NVDAはアンカーに対する labelledby を無視する。</p>
      </li>
      <li>
-      <p>Example 2: JAWS 14 in FF, IE 10 read the entire paragraph for each link which is confusing and chatty. VoiceOver for Mountain Lion in Safari 6 same as JAWS. NVDA ignores labelledby on an anchor (unsuccessful implementation)</p>
+      <p>例2： JAWS 14は、FFとIE 10において、各リンクの全てのパラグラフを読み上げるが、それはお喋りで紛らわしい。 
+      VoiceOverは、Mountain LionのSafari 6において、JAWSと同じ。 NVDAはアンカーに対する labelledby を無視する(失敗した実装)。</p>
      </li>
      <li>
-      <p>Example 3: JAWS 14 in FF, IE 10 read the entire paragraph for each link which is confusing and chatty, VoiceOver for Mountain Lion in Safari 6 OK. NVDA ignores labelledby on an anchor (unsuccessful implementation)</p>
+      <p>例3: JAWS 14は、FFとIE 10において、 各リンクの全てのパラグラフを読み上げるが、それはお喋りで紛らわしい。VoiceOverは、Mountain LionのSafari 6においてOK。
+      NVDAはアンカーに対する labelledby を無視する(失敗した実装)。</p>
      </li>
     </ul>
    </div>
@@ -284,13 +283,13 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p>Jaws V.11 and greater has complete support.</p>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
      </li>
      <li>
-      <p>ChromeVox V.1 and greater has complete support </p>
+      <p>ChromeVox V.1 以降は、完全にサポートする。</p>
      </li>
      <li>
-      <p>VoiceOver V.3 and greater</p>
+      <p>VoiceOver V.3 以降 （訳注： 原文のまま翻訳）</p>
      </li>
     </ul>
    </div>
@@ -301,18 +300,17 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>Note: In order to support IE, the attribute 
-<code>tabindex="-1"</code> may need to be provided on non-interactive elements that are referenced by aria-labelledby attributes. For more details see 
-<a href="http://www.w3.org/TR/aria-in-html/#aria-labelledby-and-aria-describedby">Using WAI-ARIA in HTML</a>.</p>
+    <p>注記： IEをサポートするためには、aria-labelledby 要素で参照された非インタラクティブ要素に対して、属性<code>tabindex="-1"</code>を付与する必要がある。
+	 詳細については、<a href="http://www.w3.org/TR/aria-in-html/#aria-labelledby-and-aria-describedby">Using WAI-ARIA in HTML</a>（英語）を参照のこと。</p>
     <ul>
      <li>
-      <p> Full support:</p>
+      <p>完全サポート：</p>
       <ul>
        <li>
-        <p> WIN7 / FF16 / NVDA 2012.2.1 (Example 2: also reads column headers)</p>
+        <p> WIN7 / FF16 / NVDA 2012.2.1 (例2： 列見出しも読み上げる)</p>
        </li>
        <li>
-        <p> WIN7 / FF16 / JAWS 13  (Example 2: also reads column headers)</p>
+        <p> WIN7 / FF16 / JAWS 13  (例2： 列見出しも読み上げる)</p>
        </li>
        <li>
         <p> WIN7 / IE9  / JAWS 13</p>
@@ -328,22 +326,20 @@
     </ul>
     <ul>
      <li>
-      <p> Partial support:</p>
+      <p>部分的サポート：</p>
       <ul>
        <li>
-        <p> WIN7 / IE9  / NVDA 2012.2.1 (Example 1: drops default text of text field: 
-<em>"Extend time-out to minutes edit selected 20"</em>)</p>
+        <p> WIN7 / IE9  / NVDA 2012.2.1 (例1： テキストフィールドのデフォルトのテキストが脱落する： <em>"Extend time-out to minutes edit selected 20"</em>)</p>
        </li>
       </ul>
      </li>
     </ul>
     <ul>
      <li>
-      <p> Not supported:</p>
+      <p>サポートなし：</p>
       <ul>
        <li>
-        <p> WIN XP / IE8 / NVDA 2001.3  Example 1: Does not read text referenced by 
-<code>aria-labelledby</code> ('20','minutes'): 
+        <p> WIN XP / IE8 / NVDA 2001.3  例1：  <code>aria-labelledby</code> ('20','minutes') で参照されたテキストを読み上げない：
 <em>"Extend time-out to edit selected 20"</em>
         </p>
        </li>
@@ -363,18 +359,14 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p> NVDA 2012.3 supports Example 1 with FF</p>
+      <p> NVDA 2012.3 はFFとの組み合わせで例1をサポート</p>
      </li>
     </ul>
-    <p>As of March 2014, there is much wider 
-<a href="accessibility-supporteddef">accessibility support</a> for the use of the 
-<code>alt</code> attribute than for 
-<code>aria-labelledby</code>. The use of the 
-<code>alt</code> attribute is best practice and strongly encouraged. Especially for elements where the 
-<code>alt</code> attribute can be used to provide text alternatives, authors must confirm accessibility support for 
-<code>aria-labelledby</code> before relying on this technique in place of 
-<a href="http://waic.jp/docs/WCAG-TECHS/H37.html">H37: Using 
-<code>alt</code> attributes on img elements</a>.</p>
+    <p>2014年3月現在、 <code>aria-labelledby</code>に比べて、<code>alt</code>属性の使用がより幅広く
+    <a href="https://www.w3.org/WAI/WCAG20/Techniques/ua-notes/accessibility-supporteddef">アクセシビリティ サポート （訳注： 原文においてリンク切れ）</a>されている。
+    <code>alt</code>属性の使用がベストプラクティスであり、強く推奨される。特に、<code>alt</code>属性をテキストによる代替の提供に使用できる要素については、制作者は
+    <a href="http://waic.jp/docs/WCAG-TECHS/H37.html">H37: img 要素の <code>alt</code> 属性を使用する </a>の代わりにこの達成方法に依存する前に
+    <code>aria-labelledby</code>のアクセシビリティサポートを確認しなければならない。</p>
    </div>
   </section>
   <section id="ARIA11">
@@ -385,19 +377,19 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p>Jaws V.11 and greater has complete support.</p>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
      </li>
      <li>
-      <p>ChromeVox V.1 and greater has complete support </p>
+      <p>ChromeVox V.1 以降は、完全にサポートする。</p>
      </li>
      <li>
-      <p>VoiceOver V.3 and greater supports all landmarks except “form”.</p>
+      <p>VoiceOver V.3 以降は、“form”以外の全てのランドマークをサポートする。</p>
      </li>
      <li>
-      <p>NVDA 2 supports all landmarks except it will not support navigation to “application”</p>
+      <p>NVDA 2 は、“application”に対するナビゲーションをサポートしないことを除いて、全てのランドマークをサポートする。</p>
      </li>
      <li>
-      <p>Window Eyes as of V.7 does not support ARIA landmarks.</p>
+      <p>Window EyesはV.7現在、ARIAランドマークをサポートしない。</p>
      </li>
     </ul>
    </div>
@@ -410,10 +402,10 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p> Jaws 13 and higher supports this technique.</p>
+      <p> Jaws 13 以降は、この達成方法をサポートする。</p>
      </li>
      <li>
-      <p> NVDA 2012.3 supports this technique.</p>
+      <p> NVDA 2012.3 は、この達成方法をサポートする。</p>
      </li>
     </ul>
    </div>
@@ -432,45 +424,36 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>Screen reader support varies depending on browser:</p>
+    <p>スクリーンリーダーのサポートは、ブラウザによって変化する：</p>
     <ul>
      <li>
-      <p> System Access To Go (IE8) does not recognise 
-<code>aria-label</code>
+      <p> System Access To Go (IE8) は<code>aria-label</code>を認識しない。
       </p>
      </li>
      <li>
-      <p> Using NVDA with Firefox (FF), 
-<code>aria-label</code> is only spoken on custom controls</p>
+      <p>NVDA　を Firefox (FF)と用いた場合、 <code>aria-label</code> はカスタムコントロール上でのみ読み上げられる。</p>
      </li>
      <li>
-      <p> Using NVDA with Internet Explorer (IE), 
-<code>aria-label</code> is only spoken on native controls</p>
+      <p>NVDA を Internet Explorer (IE)と用いた場合、 <code>aria-label</code> はネイティブコントロール上でのみ読み上げられる。</p>
      </li>
      <li>
-      <p> JAWS has the best support of 
-<code>aria-label</code>
+      <p> JAWS は<code>aria-label</code>を最も良くサポートしている。
       </p>
      </li>
     </ul>
-    <p>Here are the results of some detailed testing: </p>
+    <p>詳細なテストの結果は以下の通り: </p>
     <ul>
      <li>
       <p>JAWS 13 (WIN7, FF13)</p>
       <ul>
        <li>
-        <p>Example 1: JAWS speaks 
-<code>aria-label</code> of 
-<code>div</code> set to 
-<code>contentEditable</code> but not the content of the div (the word to be corrected)</p>
+        <p>例1：  JAWS は<code>contentEditable</code>がセットされた<code>div</code>の<code>aria-label</code>を読み上げるが、div のコンテンツ（修正すべき単語）は読み上げない。</p>
        </li>
        <li>
-        <p>Example 2: JAWS speaks 
-<code>aria-label</code>: "close button"</p>
+        <p>例2： JAWS は<code>aria-label</code>を読み上げる： "close button"</p>
        </li>
        <li>
-        <p>Example 3: JAWS does not speak the 
-<code>aria-label</code>, just says "button"</p>
+        <p>例3： JAWS <code>aria-label</code>を読み上げず、単に "button" と読み上げる。</p>
        </li>
       </ul>
      </li>
@@ -480,19 +463,14 @@
       <p>JAWS 13 (WIN7, IE9)</p>
       <ul>
        <li>
-        <p>Example 1: JAWS speaks 
-<code>aria-label</code>, but the content of 
-<code>div</code> boxes is only spoken in Virtual PC cursor mode, not when tabbing to the 
-<code>div</code>s</p>
+        <p>例1： JAWS は<code>aria-label</code>を読み上げるが、<code>div</code>ボックスは、<code>div</code>にタブ移動したときには読み上げられず、
+         バーチャルPCカーソルモードの場合にのみ読み上げられる。</p>
        </li>
        <li>
-        <p>Example 2: JAWS speaks content of 
-<code>div</code> box (focus is being moved to its beginning through the skip link) followed by 
-<code>aria-label</code>: "close button"</p>
+        <p>例2： JAWS は<code>div</code>ボックスのコンテンツを読み上げ（フォーカスはスキップリンクを介してその冒頭に移動する）、続けて<code>aria-label</code>: "close button"を読み上げる。</p>
        </li>
        <li>
-        <p>Example 3: JAWS speaks the 
-<code>aria-label</code>
+        <p>例3： JAWS は<code>aria-label</code>を読み上げる。
         </p>
        </li>
       </ul>
@@ -503,18 +481,15 @@
       <p>NVDA 2011.3 (XP, FF13) </p>
       <ul>
        <li>
-        <p>Example 1: NVDA speaks specified 
-<code>aria-label</code> of 
-<code>div</code> set to 
-<code>contentEditable</code>, followed by announcing "section editable" and, for mis-spelled words, "spelling error"</p>
+        <p>例1： NVDA は<code>contentEditable</code>がセットされた<code>div</code>に指定された
+        <code>aria-label</code>を読み上げ、続けて"section editable"および、スペルミスのある単語に対して"spelling error"と知らせる。</p>
        </li>
        <li>
-        <p>Example 2: NVDA does not speak the 
-<code>aria-label</code>, just "X button"</p>
+        <p>例2： NVDA は<code>aria-label</code>を読み上げず、単に"X button"と読み上げる。</p>
        </li>
        <li>
-        <p>Example 3: NVDA does not speak the 
-<code>aria-label</code>, just "button" (- and + are dropped, but this may be customizable in screen reader settings)</p>
+        <p>例3： NVDA は<code>aria-label</code>を読み上げず、単に"button"と読み上げる。
+		(- と + は脱落するが、これはスクリーンリーダーの設定でカスタマイズ可能である。)</p>
        </li>
       </ul>
      </li>
@@ -524,18 +499,16 @@
       <p>NVDA 2011.3 (XP, IE8) </p>
       <ul>
        <li>
-        <p>Example 1: Browser focuses 
-<code>div contentEditable</code> but apparently does not expose them to the accessibility API so NVDA does not speak associated contents of 
-<code>aria-label</code>
-        </p>
+        <p>例1： ブラウザは<code>div contentEditable</code> をフォーカスするが、アクセシビリティAPIにそれらを明らかにしていないようだ。
+        そのため、NVDAは<code>aria-label</code>に関連付けられたコンテンツを読み上げない。
+		</p>
        </li>
        <li>
-        <p>Example 2: NVDA speaks the 
-<code>aria-label</code> content, "button close", instead of the text included in the button (X)</p>
+        <p>例2： NVDA は、ボタンにに含まれているテキスト (X) の代わりに、<code>aria-label</code>の内容 "button close" を読み上げる。 </p>
        </li>
        <li>
-        <p>Example 3: NVDA speaks the 
-<code>aria-label</code> content</p>
+        <p>例3： NVDA <code>aria-label</code>の内容を読み上げる。
+		</p>
        </li>
       </ul>
      </li>
@@ -545,17 +518,14 @@
       <p>NVDA 2012.2.1 (WIN7, IE9)</p>
       <ul>
        <li>
-        <p>Example 1: Same as under (XP, IE8): 
-<code>div contentEditable</code> received focus but 
-<code>aria-label</code> is not exposed to accessibilty API</p>
+        <p>例1： (XP, IE8)と同様: 
+<code>div contentEditable</code>はフォーカスを受け取るが、<code>aria-label</code>は アクセシビリティAPIに明らかにされない。</p>
        </li>
        <li>
-        <p>Example 2: NVDA speaks 
-<code>aria-label</code> "This is a div box button close" in browse mode and "close button" in focus mode</p>
+        <p>例2： NVDAはブラウズモードでは"This is a div box button close"、フォーカスモードでは"close button" と、<code>aria-label</code> を読み上げる。 </p>
        </li>
        <li>
-        <p>Example 3: Content of 
-<code>aria-label</code> spoken</p>
+        <p>例3：<code>aria-label</code>の内容を読み上げる。</p>
        </li>
       </ul>
      </li>
@@ -565,38 +535,33 @@
       <p>NVDA 2012.2.1 (WIN7, FF13)</p>
       <ul>
        <li>
-        <p>Example 1: NVDA speaks specified 
-<code>aria-label</code> for custom div set to contentEditable, followed by announcing "section editable" (but no announcement of mis-spelled words here)</p>
+        <p>例1： NVDA contentEditableとセットされたdivに指定された<code>aria-label</code>を読み上げ、続けて"section editable"と知らせる。
+        	（しかし、ここではスペルミスのある単語に対するアナウンスはない。）</p>
        </li>
        <li>
-        <p>Example:2 Does not speak 
-<code>aria-label</code> of X-button</p>
+        <p>例2：  Xボタンの<code>aria-label</code>を読み上げない。 （訳注： 原文では"Example:2"とされていたが、翻訳時に"例2："と訂正）</p>
        </li>
        <li>
-        <p>Example 3: NVDA does not speak 
-<code>aria-label</code> for + and - button (- and + are dropped, but this may be customizable in screen reader settings)</p>
+        <p>例3： NVDA は + と - のボタンに対する<code>aria-label</code>を読み上げない。
+		(- と + は脱落するが、これはスクリーンリーダーの設定でカスタマイズ可能である。)</p>
        </li>
       </ul>
      </li>
     </ul>
     <ul>
      <li>
-      <p> System Access To Go (XP, IE8): In all three examples, SAToGo does not recognise 
-<code>aria-label</code>
+      <p> System Access To Go (XP, IE8): 3つの例の全てについて、 SAToGo は<code>aria-label</code>を認識しない。
       </p>
       <ul>
        <li>
-        <p>Example 1: SAToGo speaks "editable text" followed by the text in 
-<code>div contentEditable</code>
+        <p>例1： SAToGo は、"editable text"に続いて、<code>div contentEditable</code>の中のテキストを読み上げる。
         </p>
        </li>
        <li>
-        <p>Example 2: After activating Link, SAToGo speaks content of the pop-up 
-<code>div</code> followed by "button X</p>
+        <p>例2： リンクをアクティベートした後、SAToGo　はポップアップした<code>div</code>のコンテンツに続けて"button X"と読み上げる。　（訳注： 原文では "button X とされていたが、翻訳時に " を補完。）</p>
        </li>
        <li>
-        <p>Example 3: By default, SAToGo speaks "plus button" and "hyphen button" - not the content of 
-<code>aria-label</code>
+        <p>例3： デフォルトでは、SAToGo は<code>aria-label</code>の内容ではなく、"plus button"、"hyphen button"と読み上げる。 
         </p>
        </li>
       </ul>
