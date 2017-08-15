@@ -359,7 +359,7 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p> NVDA 2012.3 はFFとの組み合わせで例1をサポート</p>
+      <p> NVDA 2012.3 はFFとの組み合わせで例1をサポートする。</p>
      </li>
     </ul>
     <p>2014年3月現在、 <code>aria-labelledby</code>に比べて、<code>alt</code>属性の使用がより幅広く
@@ -575,24 +575,27 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>Updated July 16, 2013</p>
+    <p>2013年7月16日更新</p>
     <ul>
      <li>
-      <p>Jaws V.11 and greater has complete support. IE10 JAWS 14. Speaks alt and then "press JAWS key + alt +r to hear descriptive text". IE 10 intermittent support, sometimes works, sometimes need to reload the page for JAWs to read it properly. </p>
+      <p>Jaws V.11 以降は、完全にサポートする。 IE10 JAWS 14。 altを読み上げた後、"press JAWS key + alt +r to hear descriptive text"と読み上げる。 
+      IE 10 は断続的なサポート、 ある時は動作し、ある時はJAWSにそれを正しく読みあげさせるためにページのリロードが必要。
+      	 （訳注： 原文ではJAWSが"JAWs"と記載されていた点を修正。文章の区切り等は原文のまま。）</p>
      </li>
      <li>
-      <p>ChromeVox V.1 and greater has complete support? </p>
+      <p>ChromeVox V.1 以降は、完全にサポートする? </p>
      </li>
      <li>
-      <p>VoiceOver V.3 and greater supports but replaces ALT text if both are present</p>
+      <p>VoiceOver V.3 以降はサポートしているが、双方が存在している場合にはALTテキストを置き換える。</p>
      </li>
      <li>
-      <p>NVDA 2 reads ALT text if both are present but not Describedby unless it is alone</p>
+      <p>NVDA 2 は双方が存在している場合はALTテキストを読み上げるが、単独でない限りDescribedbyは読み上げない。</p>
      </li>
      <li>
-      <p>Window Eyes as of V.7&nbsp;???.</p>
+      <p>Window Eyes V.7現在&nbsp;???.</p>
      </li>
     </ul>
+ 	（訳注：　疑問符"?"等の記載は原文のまま。）
    </div>
   </section>
   <section id="ARIA16">
@@ -603,21 +606,22 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p>Jaws V.11 and greater has complete support.</p>
+      <p>Jaws V.11 以降は、完全にサポートする</p>
      </li>
      <li>
-      <p>ChromeVox V.1 and greater has complete support </p>
+      <p>ChromeVox V.1 以降は、完全にサポートする</p>
      </li>
      <li>
-      <p>VoiceOver V.3 and greater supports&nbsp;???</p>
+      <p>VoiceOver V.3 以降は、サポートする&nbsp;???</p>
      </li>
      <li>
-      <p>NVDA 2 supports Aria Describedby&nbsp;???</p>
+      <p>NVDA 2 は Aria Describedby をサポートする&nbsp;???</p>
      </li>
      <li>
-      <p>Window Eyes as of V.7&nbsp;???.</p>
+      <p>Window Eyes V.7現在&nbsp;???.</p>
      </li>
     </ul>
+ 	（訳注：　疑問符"?"等の記載は原文のまま。）
    </div>
   </section>
   <section id="ARIA17">
@@ -626,17 +630,17 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>This technique works with:</p>
+    <p>この達成方法は、以下との組み合わせで動作する：</p>
     <ul>
      <li>
-      <p>JAWS 13 / 14 with Internet Explorer 8 / 9, Firefox</p>
+      <p>JAWS 13 / 14 と Internet Explorer 8 / 9、 Firefox</p>
      </li>
      <li>
-      <p>NVDA 2012 / 2013 with Firefox</p>
+      <p>NVDA 2012 / 2013 と Firefox</p>
      </li>
      <li>
-      <p>VoiceOver with Safari on OSX 10.7.4  on MacBook Pro but not on later versions like OSX 10.8.
-(This has been reported to Apple along with broken support for the HTML "title" attribute)</p>
+      <p>VoiceOver と  MacBook Pro　の OSX 10.7.4 上の Safari、しかし、OSX 10.8 等の、それ以降のバージョンでは動作しない。
+	(これは、HTMLの"title"属性のサポートが壊れていることと併せてAppleに報告されている。)</p>
      </li>
     </ul>
    </div>
@@ -649,7 +653,7 @@
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
     <ul>
      <li>
-      <p> Jaws 13 and higher supports this technique.</p>
+      <p> Jaws 13 以降はこの達成方法をサポートする。</p>
      </li>
     </ul>
    </div>
@@ -660,7 +664,7 @@
    <div class="ua-issue">
     <p>ユーザーエージェントによるサポートに関する全般的な情報は、
 <a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
-    <p>Supports this technique:</p>
+    <p>この達成方法をサポートする：</p>
     <ul>
      <li>
       <p> OS X 10.8.4 + Safari + VoiceOver</p>
@@ -675,22 +679,25 @@
       <p> Windows 7 + Firefox 20 + JAWS 14</p>
      </li>
      <li>
-      <p> Windows 7 + IE 8 + JAWS 14 (aria-live=assertive ONLY)</p>
+      <p> Windows 7 + IE 8 + JAWS 14 (aria-live=assertive のみ)</p>
      </li>
      <li>
-      <p> Windows 7 + IE 7 + JAWS 14 (aria-live=assertive ONLY)</p>
+      <p> Windows 7 + IE 7 + JAWS 14 (aria-live=assertive のみ)</p>
      </li>
     </ul>
-    <p>Does NOT support this technique:</p>
+    <p>この達成方法をサポートしない：</p>
     <ul>
      <li>
-      <p> Windows 7 + IE 8 + NVDA 2013.1 (NO support)</p>
+      <p> Windows 7 + IE 8 + NVDA 2013.1 (サポートなし)</p>
      </li>
     </ul>
-    <p>Support Notes:</p>
-    <p>Internet Explorer versions 7 through 11 do not support notifications as described in this technique when using role="alert".  However, using aria-live="assertive" as described in example 1 does function correctly.</p>
-    <p>When using Firefox with JAWS and NVDA role=alert is announced as "Alert" and aria-live=assertive does not include that extra text. There is NO support for NVDA 2013.1 + IE 8. The third example uses BOTH role=alert &amp; aria-live=assertive on the error container for wider UA/AT support working in all combinations listed.</p>
-    <p>There are different methods to display an alert or assertive live region on the page and depending on how you create the error container or inject the error messages determines if it will work in the more difficult browsers/screen reader combinations like IE 8 + JAWS 14 or VoiceOver + Safari.</p>
+    <p>サポートに関する注記：</p>
+    <p>Internet Explorer バージョン 7 から 11 は、role="alert" を用いた場合は、この達成方法に記載されている通知をサポートしない。　
+	しかし、例1に記載されている aria-live="assertive" は正しく機能する。</p>
+    <p>Firefox を JAWS もしくは NVDA と用いた場合、 role=alert は "Alert" と通知され、aria-live=assertive は追加のテキストを含めない。
+    NVDA 2013.1 + IE 8 はサポートなし。幅広いユーザーエージェント（UA）/支援技術（AT）のサポートのために role=alert と aria-live=assertive　の双方を用いている3個目の例は、列挙された全ての組み合わせで動作している。</p>
+    <p>alert や assertive のライブ領域をページ上に表示するには様々な方法があり、どの様にエラーコンテナを作成するか、もしくはエラーメッセージを挿入するかによって、
+    IE 8 + JAWS 14 や  VoiceOver + Safari の様な難しいブラウザとスクリーンリーダーの組み合わせで動作するかどうかが決まる。</p>
    </div>
   </section>
  </body>
