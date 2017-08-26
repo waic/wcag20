@@ -12,8 +12,8 @@
 <w3c-designation>UNDERSTANDING-WCAG20</w3c-designation>
 <w3c-doctype>W3C ワーキンググループノート</w3c-doctype>
 <pubdate>
-	<day>17</day>
-	<month>3</month>
+	<day>7</day>
+	<month>10</month>
 	<year>2016</year>
 </pubdate>
 <publoc>
@@ -34,7 +34,7 @@
 	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110621/ (public review copy)</loc>
       	<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110310/ (internal review copy)</loc>
 	-->
-	<loc href="http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/">http://www.w3.org/TR/2015/NOTE-UNDERSTANDING-WCAG20-20150226/</loc>
+	<loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc>
     </prevlocs>
 
       <authlist>
@@ -80,7 +80,7 @@ Austin)</affiliation>
 
 <p>これは、ワーキンググループノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ (英語)</loc>では、この文書は <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり (ガイダンスを提供している)、規定文書ではない (WCAG 2.0 に適合するための要件を定めていない) ことに留意してほしい。</p>
 
-<p>WCAG 2.0 解説書は、ワーキンググループノートとして <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">2008 年 12 月 11 日に発行</loc>され、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 4 月 8 日、2014 年 9 月 16 日、2015 年 2 月 26 日に更新された。この新版では、WCAG 2.0 の補足情報を更新している。WCAG 2.0 自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、第三者によるコンテンツに起因する部分適合表明に関する説明を追加したことである。</p>
+<p>WCAG 2.0 解説書は、ワーキンググループノートとして <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">2008 年 12 月 11 日に発行</loc>され、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 4 月 8 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新された。この新版では、WCAG 2.0 の補足情報を更新している。WCAG 2.0 自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、第三者によるコンテンツに起因する部分適合表明に関する説明を追加したことである。</p>
 
 <!--<phrase role="ext-review">The purpose of this draft is to collect public feedback on proposed changes since the <loc href="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/">Understanding WCAG 2.0 Working Group Note of 14 October 2010</loc>. The Working Group intends to publish an updated Note once feedback from this review has been incorporated. <emph role="bold">The existing Understanding document remains in place as a W3C Note</emph> while this separate draft update is under review and the WCAG Working Group addresses comments.</phrase> Updates include addition of PDF and Silverlight techniques, and clarifications based on input from the public and translators.--> 
 
