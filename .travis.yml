@@ -1,6 +1,5 @@
 language: java
-jdk:
-  - oraclejdk7
+dist: precise
 env:
   global:
   - GH_REF: github.com/waic/wcag20.git
