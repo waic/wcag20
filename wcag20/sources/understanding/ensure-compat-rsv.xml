@@ -50,7 +50,7 @@
 <olist>
   <item><p><loc href="ARIA14" linktype="aria"/></p></item>
   <item><p><loc href="ARIA16" linktype="aria"/></p></item>
-  <item><p>下記の達成方法固有の技術を用いて、<loc href="G108" linktype="general"/>:</p>
+  <item><p>下記の技術固有の達成方法を用いて、<loc href="G108" linktype="general"/>:</p>
   <ulist>
     <item><p><loc href="H91" linktype="html"/></p></item>
     <item><p><loc href="H44" linktype="html"/></p></item>
@@ -77,7 +77,7 @@
 <div5 role="situation">
 <head>状況 C: プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合:</head>
 <olist>
-  <item><p>下記の達成方法固有の技術を用いて、<loc href="G135" linktype="general"/>:</p>
+  <item><p>下記の技術固有の達成方法を用いて、<loc href="G135" linktype="general"/>:</p>
   <ulist>
     <item><p><loc href="FLASH32" linktype="flash"/></p></item>
     <item><p><loc href="FLASH29" linktype="flash"/></p></item>
@@ -94,7 +94,7 @@
 <div5 role="situation">
 <head>状況 D: プログラミング言語で独自のインタフェースコンポーネントを作成する場合:</head>
 <olist>
-  <item><p>下記の達成方法固有の技術を用いて、<loc href="G10" linktype="general"/>:</p>
+  <item><p>下記の技術固有の達成方法を用いて、<loc href="G10" linktype="general"/>:</p>
     <ulist>
       <item><p><loc href="ARIA4" linktype="aria"/></p></item>
       <item><p><loc href="ARIA5" linktype="aria"/></p></item>
