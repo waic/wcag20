@@ -1482,9 +1482,8 @@
 	</xsl:template>
 	<xsl:template match="errataloc">
 		<p>
-			<xsl:text>Please refer to the </xsl:text>
-			<a href="{@href}"><strong>errata</strong></a><xsl:text> for this document, which may
-      include normative corrections.</xsl:text>
+			<xsl:text>規定に対する修正が含まれている場合があるので、この文書の </xsl:text>
+			<a href="{@href}"><strong>errata</strong></a><xsl:text> もあわせて参照。</xsl:text>
 		</p>
 	</xsl:template>
 	<xsl:template match="preverrataloc">
@@ -1495,9 +1494,9 @@
 		</p>
 	</xsl:template>
 	<xsl:template match="translationloc">
-		<p>See also <a href="{@href}">
-				<strong>translations</strong>
-			</a>.</p>
+		<p><a href="{@href}">
+				<strong>翻訳版</strong>
+			</a>も参照できる。</p>
 	</xsl:template>
 	<!-- pubstmt: statement of publication -->
 	<!-- not currently output -->
