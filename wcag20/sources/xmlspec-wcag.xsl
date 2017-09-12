@@ -177,8 +177,8 @@
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
             <xsl:otherwise>
-                <li><a href="#abstract">概要 </a></li>
-            	<li><a href="#status">この文書のステータス </a></li>
+                <!--li><a href="#abstract">概要 </a></li>
+            	<li><a href="#status">この文書のステータス </a></li-->
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
@@ -195,7 +195,7 @@
                   <xsl:with-param name="conditional" select="0"/>
                   <xsl:with-param name="default.id" select="'appendices'"/>
                 </xsl:call-template>
-                <xsl:text>付録</xsl:text>
+                <xsl:text>附録</xsl:text>
                 <!-- xsl:choose>
                   <xsl:when test="count(../back/div1 | ../back/inform-div1) &gt; 1">
                     <xsl:text>ces</xsl:text>
@@ -1207,10 +1207,10 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <!--xsl:if test="$show.diff.markup = 1"-->
     <p>
-      <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
-
+      <xsl:text>この文書は、規定ではないフォーマットでも提供されており、</xsl:text>
+<a href="http://www.w3.org/WAI/WCAG20/versions/guidelines/" hreflang="en">Alternate Versions of Web Content Accessibility Guidelines 2.0</a> より入手できる。
     </p>
-    <ul>
+    <!--ul>
       <xsl:for-each select="loc">
         <li>
           <xsl:apply-templates select="."/>
@@ -1223,7 +1223,7 @@
           </xsl:if>
         </li>
       </xsl:for-each>
-    </ul>
+    </ul-->
           <!--/xsl:if-->
   </xsl:template>
   <xsl:template match="p" mode="label">
