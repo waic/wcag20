@@ -2030,7 +2030,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 </p>
             </example>
               <note>
-                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding" hreflang="en">テキストによる代替を理解する</loc>を参照。</p>
+                  <p>より詳細な情報は、<loc href="conformance" locn-note="uc-text-alternatives-head" linktype="understanding" hreflang="en">Understanding Text Alternatives</loc> を参照。</p>
               </note>
           </def>
         </gitem>
