@@ -605,7 +605,7 @@
   </xsl:template>
   <!--BBC: Created to fix extra spaces for inline specrefs -->
   <xsl:template mode="divnum-specref" match="div3 | technique">ガイドライン <xsl:number level="multiple" count="div2 | div3" format="1.1"/></xsl:template>
-	<xsl:template mode="divnum-specref" match="div3[head/@role = 'cc']">達成基準 <xsl:value-of select="count(preceding-sibling::div3[not(@diff = 'del')]) + 1"/>: <xsl:value-of select="head"/></xsl:template>
+	<xsl:template mode="divnum-specref" match="div3[head/@role = 'cc']">適合要件 <xsl:value-of select="count(preceding-sibling::div3[not(@diff = 'del')]) + 1"/>: <xsl:value-of select="head"/></xsl:template>
   <xsl:template mode="divnum-alt" match="div3 | technique"> <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
     <xsl:text> </xsl:text>
   </xsl:template>
