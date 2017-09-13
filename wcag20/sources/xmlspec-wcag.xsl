@@ -177,8 +177,8 @@
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
             <xsl:otherwise>
-                <li><a href="#abstract">概要 </a></li>
-            	<li><a href="#status">この文書のステータス </a></li>
+                <!--li><a href="#abstract">概要 </a></li>
+            	<li><a href="#status">この文書のステータス </a></li-->
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
@@ -195,7 +195,7 @@
                   <xsl:with-param name="conditional" select="0"/>
                   <xsl:with-param name="default.id" select="'appendices'"/>
                 </xsl:call-template>
-                <xsl:text>付録</xsl:text>
+                <xsl:text>附録</xsl:text>
                 <!-- xsl:choose>
                   <xsl:when test="count(../back/div1 | ../back/inform-div1) &gt; 1">
                     <xsl:text>ces</xsl:text>
@@ -362,10 +362,10 @@
                   <a>
                     <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>
                     <xsl:choose>
-                      <xsl:when test="@id='perceivable'">1 Perceivable</xsl:when>
-                      <xsl:when test="@id='operable'">2 Operable</xsl:when>
-                      <xsl:when test="@id='understandable'">3 Understandable</xsl:when>
-                      <xsl:when test="@id='robust'">4 Robust</xsl:when>
+                      <xsl:when test="@id='perceivable'">1 知覚可能</xsl:when>
+                      <xsl:when test="@id='operable'">2 操作可能</xsl:when>
+                      <xsl:when test="@id='understandable'">3 理解可能</xsl:when>
+                      <xsl:when test="@id='robust'">4 堅牢性</xsl:when>
                       <xsl:otherwise><xsl:apply-templates select="head" mode="text"/></xsl:otherwise>
                     </xsl:choose>
                     
@@ -408,7 +408,7 @@
         <xsl:apply-templates select="head" mode="text"/>
       </a>
       <xsl:if test="@role='normative'">
-        <xsl:text> (Normative)</xsl:text>
+        <xsl:text> (規定)</xsl:text>
       </xsl:if>
     </li>
     <xsl:text> </xsl:text>
@@ -567,7 +567,6 @@
                 </dl>
               </div>
             </xsl:if>
-            <script src="//www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script>
           </body>
         </html>
       </xsl:otherwise>
@@ -595,10 +594,10 @@
     <xsl:template mode="divnum-specref" match="div1 | div2">
     <xsl:apply-templates select="head" mode="text"/>
   </xsl:template>
-  <xsl:template mode="divnum" match="back/div1 | inform-div1">Appendix <xsl:number count="div1 | inform-div1" format="A"/>: </xsl:template>
+  <xsl:template mode="divnum" match="back/div1 | inform-div1">附録 <xsl:number count="div1 | inform-div1" format="A"/>: </xsl:template>
   <xsl:template mode="divnum" match="front/div1 | front//div2 | front//div3 | front//div4 | front//div5"/>
   <!-- BBC commented out b/c numbering is not needed at this level -->
-  <xsl:template mode="divnum" match="div3 | technique"> 	Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
+  <xsl:template mode="divnum" match="div3 | technique"> 	ガイドライン <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
     <xsl:text> </xsl:text><xsl:call-template name="sc-handle">
           <xsl:with-param name="handleid" select="@id"/>
         </xsl:call-template>:<xsl:text> </xsl:text>
@@ -1207,10 +1206,10 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <!--xsl:if test="$show.diff.markup = 1"-->
     <p>
-      <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
-
+      <xsl:text>この文書は、規定ではないフォーマットでも提供されており、</xsl:text>
+<a href="http://www.w3.org/WAI/WCAG20/versions/guidelines/" hreflang="en">Alternate Versions of Web Content Accessibility Guidelines 2.0</a> より入手できる。
     </p>
-    <ul>
+    <!--ul>
       <xsl:for-each select="loc">
         <li>
           <xsl:apply-templates select="."/>
@@ -1223,7 +1222,7 @@
           </xsl:if>
         </li>
       </xsl:for-each>
-    </ul>
+    </ul-->
           <!--/xsl:if-->
   </xsl:template>
   <xsl:template match="p" mode="label">
