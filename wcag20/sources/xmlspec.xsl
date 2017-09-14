@@ -2420,7 +2420,7 @@
                         <xsl:when test="/spec/@w3c-doctype='per'">W3C-PER</xsl:when>
                         <xsl:when test="/spec/@w3c-doctype='cr'">W3C-CR</xsl:when>
                         <xsl:when test="/spec/@w3c-doctype='note'">W3C-NOTE</xsl:when>
-                        <xsl:when test="/spec/@w3c-doctype='wgnote'">W3C-WG-NOTE</xsl:when>
+                        <xsl:when test="/spec/@w3c-doctype='wgnote'">/2016/W3C-WG-NOTE</xsl:when>
                         <xsl:when test="/spec/@w3c-doctype='memsub'">W3C-Member-SUBM</xsl:when>
                         <xsl:when test="/spec/@w3c-doctype='teamsub'">W3C-Team-SUBM</xsl:when>
 	                <xsl:otherwise>base</xsl:otherwise>
