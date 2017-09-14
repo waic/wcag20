@@ -176,9 +176,12 @@
             <xsl:when test="$quickref='1'">
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
-            <xsl:otherwise>
-                <!--li><a href="#abstract">概要 </a></li>
-            	<li><a href="#status">この文書のステータス </a></li-->
+            <xsl:when test="$guide='1'">
+              <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
+            </xsl:when>
+            <xsl:otherwise>  
+              <li><a href="#abstract">概要</a></li>
+            	<li><a href="#status">この文書のステータス</a></li> 
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
