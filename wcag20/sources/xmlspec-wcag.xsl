@@ -37,14 +37,22 @@
      
       <xsl:otherwise>
    <xsl:apply-templates select="trdisclaimer"/>
-     <xsl:if test="spec/@w3c-doctype='rec'">
+     <xsl:if test="/spec/@w3c-doctype='rec'">
        <p align="center">[<a href="#contents">目次</a>] </p>
      </xsl:if>
     <div class="head">
       <xsl:if test="not(/spec/@role='editors-copy')">
         <p>
+
           <a href="https://www.w3.org/">
-            <img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"/>
+          <xsl:choose>
+            <xsl:when test="/spec/@w3c-doctype='wgnote'">
+              <img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"/>
+</xsl:when>
+<xsl:otherwise>
+              <img src="http://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"/>
+</xsl:otherwise>
+</xsl:choose>
           </a>
           <xsl:choose>
             <xsl:when test="/spec/@w3c-doctype='memsub'">
