@@ -26,6 +26,7 @@
       <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
   <xsl:param name="guidethisversion">http://waic.jp/docs/UNDERSTANDING-WCAG20/<!--BBC change as needed based on whether the guidelines should point the latest version or not --><!--xsl:value-of select="$guide-src//latestloc/loc[@href]"/--></xsl:param>
+  <xsl:param name="originalunderstanding">https://www.w3.org/TR/UNDERSTANDING-WCAG20/</xsl:param>
   <xsl:param name="techsthisversion">
     <xsl:value-of select="$techs-src//publoc/loc[@href]"/>
   </xsl:param>
@@ -929,7 +930,7 @@
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
           </h3>
-              <p class="und-gl-link"><a href="{$guidethisversion}{$filename}{$fragment}">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
+              <p class="und-gl-link"><a href="{$originalunderstanding}{$filename}{$fragment}">Understanding Guideline <xsl:number level="multiple" count="div2 | div3" format="1.1"/>
               </a></p>
           </div>
       </xsl:otherwise>
@@ -974,7 +975,7 @@
          <xsl:text> </xsl:text>
             <span class="screenreader">|</span>
         <xsl:text> </xsl:text>
-            <a href="{$guidethisversion}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
+            <a href="{$originalunderstanding}{$filename}{$fragment}" class="HTMlink" title="Understanding Success Criterion {$scnum}">Understanding <xsl:call-template name="sc-number"><xsl:with-param name="criterion" select="."/></xsl:call-template>
         </a></p></div>
        
        
