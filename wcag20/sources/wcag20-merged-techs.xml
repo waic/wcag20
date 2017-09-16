@@ -21,6 +21,9 @@
 			<!-- <loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/</loc> -->
 			<loc href="http://waic.jp/docs/WCAG-TECHS/">http://waic.jp/docs/WCAG-TECHS/</loc>
 		</publoc>
+		<publocori>
+			<loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/</loc>
+		</publocori>
 		<altlocs>
 			<loc href="complete.html">単一ファイル版</loc>
 <!-- diff版はいったんナシ

@@ -1049,7 +1049,7 @@
 				</xsl:if>
 			</h2>
 			<dl>
-				<xsl:apply-templates select="publoc"/>
+				<xsl:apply-templates select="publocori"/>
 				<xsl:apply-templates select="latestloc"/>
 				<xsl:apply-templates select="prevlocs"/>
 				<xsl:apply-templates select="authlist"/>
@@ -1457,7 +1457,13 @@
 	<!-- called directly from header -->
 	<!-- publoc: location of current version of spec -->
 	<!-- called from header in <dl> context -->
-	<xsl:template match="publoc">
+	<!--xsl:template match="publoc">
+		<dt>このバージョン:</dt>
+		<dd>
+			<xsl:apply-templates/>
+		</dd>
+	</xsl:template-->
+	<xsl:template match="publocori">
 		<dt>このバージョン:</dt>
 		<dd>
 			<xsl:apply-templates/>

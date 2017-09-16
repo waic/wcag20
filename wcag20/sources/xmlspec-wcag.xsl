@@ -117,7 +117,7 @@
         </xsl:if>
       </h2>
       <dl>
-        <xsl:apply-templates select="publoc"/>
+        <xsl:apply-templates select="publocori"/>
         <xsl:apply-templates select="latestloc"/>
         <xsl:apply-templates select="prevlocs"/>
         <xsl:apply-templates select="authlist"/>

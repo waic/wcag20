@@ -271,7 +271,7 @@ MAINTAINERS:
 -->
 <!ENTITY % spec.mdl "header, front?, body, back?">
 <!ENTITY % header.mdl "title, subtitle?, version?, w3c-designation, w3c-doctype,
-        pubdate, notice*, publoc, altlocs?, ((prevlocs, latestloc?) |
+        pubdate, notice*, publoc, publocori?, altlocs?, ((prevlocs, latestloc?) |
         (latestloc, prevlocs?))?, authlist, errataloc?, preverrataloc?,
         translationloc?, copyright?,
         ((status, abstract) | (abstract, status)), pubstmt?,
@@ -703,6 +703,15 @@ MAINTAINERS:
 <!ENTITY % publoc.attlist "INCLUDE">
 <![%publoc.attlist;[
 <!ATTLIST publoc %common.att;>
+]]>
+<!-- オリジナルURL格納要素 -->
+<!ENTITY % publocori.element "INCLUDE">
+<![%publocori.element;[
+<!ELEMENT publocori (%p.pcd.mix;)*>
+]]>
+<!ENTITY % publocori.attlist "INCLUDE">
+<![%publocori.attlist;[
+<!ATTLIST publocori %common.att;>
 ]]>
 <!--
 #2002-08-15: nwalsh: Added altlocs element.
