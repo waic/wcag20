@@ -153,7 +153,7 @@
               <abbr title="Massachusetts Institute of Technology">MIT</abbr>
             </a>, <a href="http://www.ercim.eu/">
               <abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr>
-            </a>, <a href="http://www.keio.ac.jp/">Keio</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+            </a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
         </xsl:when>
         <xsl:otherwise>
           <p class="copyright">
