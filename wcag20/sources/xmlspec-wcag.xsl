@@ -595,6 +595,8 @@
                 </dl>
               </div>
             </xsl:if>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><xsl:text> </xsl:text></script>
+<script src="waic_link.js"><xsl:text> </xsl:text></script>
           </body>
         </html>
       </xsl:otherwise>
