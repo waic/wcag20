@@ -1138,7 +1138,7 @@
       <xsl:when test="@linktype='understanding'">
 		<xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@href]" mode="slice-understanding-filename"/></xsl:variable>
 		<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
-        <a href="{$guidethisversion}{$filename}{$fragment}" class="understanding-ref">
+        <a href="{$originalunderstanding}{$filename}{$fragment}" class="understanding-ref">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
