@@ -37,6 +37,9 @@
      
       <xsl:otherwise>
    <xsl:apply-templates select="trdisclaimer"/>
+     <xsl:if test="spec/@w3c-doctype='rec'">
+       <p align="center">[<a href="#contents">目次</a>] </p>
+     </xsl:if>
     <div class="head">
       <xsl:if test="not(/spec/@role='editors-copy')">
         <p>
