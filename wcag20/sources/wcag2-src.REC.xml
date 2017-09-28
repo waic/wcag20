@@ -961,7 +961,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             <p role="sctxt">さらに、適合するために依存していないコンテンツも含めて、ページ上のすべてのコンテンツには以下の達成基準が適用される。なぜならば、これらを満たしていないことにより、ページの利用を妨げる可能性があるためである。</p>
             <ulist>
                 <item><p><emph role="bold">1.4.2 - 音声制御</emph>、</p></item>
-                <item><p><emph role="bold">2.1.2 - フォーカス移動</emph>、</p></item>
+                <item><p><emph role="bold">2.1.2 - キーボードトラップなし</emph>、</p></item>
                 <item><p><emph role="bold">2.3.1 - 3回の閃光、又は閾値以下</emph>、及び</p></item>
                 <item><p><emph role="bold">2.2.2 - 一時停止、停止、非表示</emph></p></item>
             </ulist>
