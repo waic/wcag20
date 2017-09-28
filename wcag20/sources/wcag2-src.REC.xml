@@ -1660,8 +1660,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
 結果を得るための<termref def="processdef">プロセス</termref>又は手法。</p>
             <note>
               <p>メカニズムは、コンテンツ内で明示的に提供されることもあれば、プラットフォーム又は<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>で提供されるものに <termref def="reliedupondef">依存</termref>することもある。</p>
-              <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たさなければならない。
-              </p>
+              <p>メカニズムは、宣言する適合レベルのすべての達成基準を満たす必要がある。</p>
             </note>
           </def>
         </gitem>
