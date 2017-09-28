@@ -393,7 +393,7 @@
                       <xsl:when test="@id='perceivable'">1 知覚可能</xsl:when>
                       <xsl:when test="@id='operable'">2 操作可能</xsl:when>
                       <xsl:when test="@id='understandable'">3 理解可能</xsl:when>
-                      <xsl:when test="@id='robust'">4 堅牢性</xsl:when>
+                      <xsl:when test="@id='robust'">4 堅牢 (robust)</xsl:when>
                       <xsl:otherwise><xsl:apply-templates select="head" mode="text"/></xsl:otherwise>
                     </xsl:choose>
                     
