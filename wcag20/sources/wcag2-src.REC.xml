@@ -878,8 +878,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
             </div5>
             <div5 role="sc" id="ensure-compat-rsv">
               <head>名前 (name) ・役割 (role) 及び値 (value) </head>
-              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース コンポーネント</termref> (フォームを構成する要素、リンク、スクリプトが生成するコンポーネントなど) では、<termref def="namedef">名前 (name) </termref>及び<termref def="roledef">役割 (role) </termref>は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムによる設定</termref>が可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。
-              </p>
+              <p role="i"> すべての<termref def="user-interface-componentdef">ユーザインタフェース コンポーネント</termref> (フォームを構成する要素、リンク、スクリプトが生成するコンポーネントを含むがこれに限定されない) では、<termref def="namedef">名前 (name)</termref> 及び<termref def="roledef">役割 (role)</termref> は、<termref def="programmaticallydetermineddef">プログラムによる解釈</termref>が可能である。又、状態、プロパティ、利用者が設定可能な値は<termref def="programmaticallysetdef">プログラムによる設定</termref>が可能である。そして、<termref def="atdef">支援技術</termref>を含む<termref def="useragentdef">ユーザエージェント</termref>が、これらの項目に対する変更通知を利用できる。</p>
               <note>
                 <p>この達成基準は、主に独自のユーザインタフェース コンポーネントを開発、又はスクリプトで実装するコンテンツ制作者に向けたものである。例えば、標準的な HTML のコントロールを仕様に沿って使用していれば、既にこの達成基準を満たしていることになる。</p>
               </note>
