@@ -1759,9 +1759,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
         <gitem id="programmaticallydetermineddef">
           <label>プログラムによる解釈 (プログラムによる解釈が可能) (programmatically determined (programmatically determinable))</label>
           <def>
-            <p>              <termref def="atdef">支援技術</termref>
-を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。
-            </p>
+            <p><termref def="atdef">支援技術</termref>を含む様々な<termref def="useragentdef">ユーザエージェント</termref>が抽出でき、利用者に様々な感覚モダリティで提示できるような形のデータがコンテンツ制作者によって提供されたとき、そのデータがソフトウェアによって解釈されること。</p>
             <example>
               <p>マークアップ言語で、一般に入手可能な支援技術が直接アクセスできる要素と属性から解釈される。</p>
               <p>非マークアップ言語の技術特有のデータ構造から解釈され、一般に入手可能な支援技術がサポートするアクセシビリティ <abbr expansion="Application Programming Interface">API</abbr> を通じて支援技術に提供される。</p>
