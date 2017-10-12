@@ -48,7 +48,22 @@
       <relatedtech idref="C22"/>
    </related-techniques>
    <tests>
-    <procedure/>
-    <expected-results/>
+      <procedure>
+         <olist>
+            <item>
+               <p>テキストの提示における変化が情報を伝えるために使用される項目を見つける。</p>
+            </item>
+            <item>
+               <p>これらの項目について、視覚的に伝達される情報がテキストにも明示的に記載されているかどうかを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2 を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
    </tests>
 </technique>

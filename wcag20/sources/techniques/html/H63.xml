@@ -38,34 +38,34 @@
       <head>単純なスケジュール表</head>
       <description><p>次のコード例では、1 列目にテーブルの行番号を示す連番が含まれている。行の中でも重要な値は 2 列目に含まれるため、各セルに<code>scope="row"</code> と指定してある。1 行目のセルは <code>td</code> 要素でマークアップし、これらにも <code>scope="col"</code> と指定してある。</p>
 </description>
-      <code role="html401"><![CDATA[<table border="1">
-  <caption>連絡先</caption>
+         <code role="html401"><![CDATA[ <table border="1">
+  <caption>Contact Information</caption>
   <tr>
     <td></td>
-    <td scope="col">名前</td>
-    <td scope="col">電話番号</td>
-    <td scope="col">ファックス番号</td>
-    <td scope="col">市名</td>
+    <th scope="col">Name</th>
+    <th scope="col">Phone#</th>
+    <th scope="col">Fax#</th>
+    <th scope="col">City</th>
   </tr><tr>
     <td>1.</td>
-    <td scope="row">ジョエル・ガーナー</td>
+    <th scope="row">Joel Garner</th>
     <td>412-212-5421</td>
     <td>412-212-5400</td>
-    <td>ピッツバーグ</td>
+    <td>Pittsburgh</td>
   </tr><tr>
     <td>2.</td>
-    <td scope="row">クライブ・ロイド</td>
+    <th scope="row">Clive Lloyd</th>
     <td>410-306-1420</td>
     <td>410-306-5400</td>
-    <td>ボルティモア</td>
+    <td>Baltimore</td>
   </tr><tr>
     <td>3.</td>
-    <td scope="row">ゴードン・グリニッジ</td>
+    <th scope="row">Gordon Greenidge</th>
     <td>281-564-6720</td>
     <td>281-511-6600</td>
-    <td>ヒューストン</td>
+    <td>Houston</td>
   </tr>
-</table>]]></code>
+</table> ]]></code>
     </eg-group>
    </examples>
    <resources>
