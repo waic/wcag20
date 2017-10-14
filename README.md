@@ -1,9 +1,10 @@
-# WCAG 2.0 解説書 および WCAG 2.0 達成方法集
+# WCAG 2.0 本体、解説書および達成方法集
 
-[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0 解説書](http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) および [WCAG 2.0 達成方法集](http://waic.jp/docs/WCAG-TECHS/Overview.html) のレポジトリです。
+[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0](http://waic.jp/docs/WCAG20/Overview.html) 、[WCAG 2.0 解説書](http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) および [WCAG 2.0 達成方法集](http://waic.jp/docs/WCAG-TECHS/Overview.html) のレポジトリです。
 
 GitHub 上でビルドされたファイルはそれぞれ
 
+- https://waic.github.io/wcag20/WCAG20/Overview.html
 - https://waic.github.io/wcag20/Understanding/Overview.html
 - https://waic.github.io/wcag20/Techniques/Overview.html
 
