@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH3">
+   <short-name>支援技術が無視できるように Flash のオブジェクトにマークを付ける</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法は、支援技術が無視できるように画像にマークを付ける方法を示すことである。</p>
+      <p>Flash Player では、以下の事例に示すように、アクセシビリティオブジェクトの <prop>silent</prop> プロパティを使用すると、どのグラフィックを支援技術に認識させるかをコンテンツ制作者が制御できる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>Flash Professional のオーサリングツールでグラフィックを非表示にする</head>
+         <description>
+            <p>Flash Professional のオーサリングツールのアクセシビリティパネルを使用すると、コンテンツ制作者は、支援技術にアクセシビリティ情報を提供したり、Flash の個々のオブジェクトや Flash アプリケーション全体に対してアクセシビリティ関連オプションを設定できる。</p>
+            <olist>
+               <item>
+                  <p>グラフィックのアクセシビリティ関連プロパティに対する変更を適用するには、変更したものをシンボルとしてムービーのライブラリに保存する必要がある。<emph role="strong">注記:</emph> Flash ではグラフィックシンボル用の代替テキストを使用することはできない。グラフィックをムービークリップまたはボタンシンボルに変換するか、これらに保存する必要がある。</p>
+               </item>
+               <item>
+                  <p>アプリケーションメニューで［ウィンドウ］&gt;［他のパネル］&gt;［アクセシビリティ］を選択するか、ショートカットキーの Alt + F11 を使用してアクセシビリティパネルを表示する。</p>
+               </item>
+               <item>
+                  <p>グラフィックオブジェクトを選択する。</p>
+               </item>
+               <item>
+                  <p>アクセシビリティパネルで「オブジェクトをアクセス可能にする」チェックボックスがオンになっている場合は、このオプションをオフにして、支援技術に伝達するアクセシビリティ情報からグラフィックを削除する。</p>
+               </item>
+            </olist>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 2.0 でプログラムによる代替テキストを適用する</head>
+         <description>
+            <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<prop>_accProps</prop> プロパティを使用する必要がある。このオブジェクトは、オブジェクトに対して設定されているアクセシビリティ関連プロパティが含まれているオブジェクトを参照する。以下に、<prop>_accProps</prop> プロパティを使用して、ActionScript を使用しているムービー用のアクセシビリティ情報からオブジェクトを削除するための簡単なコードの例を示す。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[// 'decorative_mc' は、ムービーのメインのタイムラインに置かれたインスタンスである
+_root.decorative_mc._accProps = new Object();
+_root.decorative_mc._accProps.silent = true; ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=00000619.html">Flash 10 Documention _accProps property</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.eclipse.org/actf/downloads/tools/aDesigner/">aDesigner</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>SWF ファイルを発行する。</p>
+            </item>
+            <item>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
+            </item>
+            <item>
+               <p>オブジェクトのアクセシビリティ情報を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
+            </item>
+            <item>
+               <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックすると、表示されないように設定されているオブジェクトがツールの画面に表示されていない。</p>
+            </item>
+            <item>
+               <p>コンテンツ制作者は、テストにスクリーンリーダーを使用することもできる。その場合は、Flash コンテンツを読み上げて音声を聞くと、読み上げたページの内容にオブジェクトが含まれていない。</p>
+            </item>
+            <item>
+               <p>支援技術に無視されるようにコーディングされている非テキストオブジェクトは、支援技術からは認識できない。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>6. を満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Marking_objects_in_Flash_so_that_they_can_be_ignored_by_AT"/>
+					</source>
+   </admin>
+</technique>
+

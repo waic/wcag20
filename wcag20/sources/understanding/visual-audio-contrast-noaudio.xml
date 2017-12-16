@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="visual-audio-contrast-noaudio" role="extsrc">
+   <head>1.4.7</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、発話ではないあらゆる音が、音声の聞こえづらい利用者が発話を背景音又は前景にある不要な他の発話コンテンツと区別することができるようにすることである。</p>
+<p>20 dB（デシベル）という値は、 Large area assistive listening systems (ALS): Review and recommendations <bibref ref="LAALS"/>と、In-the-ear measurements of interference in hearing aids from digital wireless telephones <bibref ref="HEARING-AID-INT"/> に基づいている。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>音声の聞こえづらい利用者は、発話と背景音を区別しづらいことがしばしばある。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><loc href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc href="G56" linktype="general"/></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head/>
+<ulist>
+	<item><p>前景音と背景音のレベルを独立して調節できる方法を提供する（リンク追加予定）</p></item>
+	<item><p>発話より少なくとも20デシベル低い背景音を含む同期したメディアに対して、音声トラックを提供する（リンク追加予定）</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

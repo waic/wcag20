@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G71">
+   <short-name>すべてのウェブページにヘルプへのリンクを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、各ウェブページに少なくとも１つのヘルプ情報へのリンクを用意して、利用者がフォームにデータを入力する際に、状況依存のヘルプを提供することである。リンクは、そのウェブページのための情報があるヘルプページへ遷移する。もう一つの方法は、インタラクティブなコントロールのひとつひとつにヘルプページへのリンクを提供する。このリンクを当該コントロールのすぐ前か後に配置することで、そのコントロールで問題があった場合、利用者が簡単にそのリンクまでタブで移動することができる。そのヘルプ情報をブラウザの新しいウィンドウで表示することで、それまでにフォームに入力されたデータは失われずに済む。注意：リンクがヘルプ情報を提供する唯一の手段ではない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>下記の達成方法の例は、ヘルプ情報へのリンクを含んだラベル要素を示している。ラベル要素内にヘルプ情報へのリンクを置く事で、スクリーンリーダーの利用者が入力フォームのコントロールを利用する際にヘルプのリンクにアクセスすることが可能になる。</p>
+</description>
+      <code><![CDATA[
+      <form action="test.html">
+	<label for="test">テストコントロール
+	<a href="help.html" target="_blank">ヘルプ</a></label>
+	<input type="text" name="test" id="test" />
+</form>]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G184"/>
+      <relatedtech idref="G193"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>フォームが含まれるウェブページを特定する。</p>
+        </item>
+        <item>
+          <p>そのページ内に、このウェブページ又は、その他のリソース内に含まれる、フォームの全ての項目を入力するためのヘルプ情報へのリンクが一つ以上提供されている。</p>
+        </item>
+        <item>
+          <p>インタラクティブなコントロールのすぐ前、又は後ろに、そのコントロールのためのヘルプ情報へのリンクがある。
+		</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.又は3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

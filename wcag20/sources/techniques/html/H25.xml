@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H25">
+   <short-name>title 要素を用いて、ページタイトルを提供する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-title" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、フレームセットの個々のフレームに含まれるものを含む全てのHTML及びXHTMLドキュメントにおいて、<el>head</el>要素のセクション内で<el>title</el>要素を用いてドキュメントの目的を簡単な文言で定義することである。これにより、ページの本文でオリエンテーション情報を探すことなく、利用者はサイト内の自分のいる場所を素早く見つけることができる。</p>
+    <p>ドキュメント内で一度しか現れない(必須の)<el>title</el>要素は、ほとんど全てのHTML及びXHTMLの要素で利用されるかもしれない<att>title</att>属性と異なることに注意する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この事例はドキュメントのタイトルを定義している。</p>
+</description>
+      <code role="html401"><![CDATA[
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		   <head>
+		      <title>ワールドワイドウェブコンソーシアム</title>
+		   </head>
+		   <body>
+		      ...
+		   </body>
+		</html>]]></code>
+     </eg-group>
+    </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.2">HTML 4.01
+                    TITLE element</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G88"/>
+      <relatedtech idref="G127"/>
+   </related-techniques>
+   <tests>
+     <procedure>
+      <olist>
+        <item>
+          <p>HTML又はXHTMLドキュメントのソースコードに、<el>head</el> 要素内に空でない<el>title</el>要素がある。</p>
+        </item>
+        <item>
+          <p><el>title</el> 要素がドキュメントを説明している。</p>
+        </item>
+      </olist>
+    </procedure> 
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.及び2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

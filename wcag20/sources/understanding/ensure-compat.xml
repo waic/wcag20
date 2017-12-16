@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div1
+  SYSTEM "../xmlspec.dtd">
+<div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="ensure-compat">
+   <head>4.1</head>
+   <div2 id="ensure-compat-intent" role="glintent">
+      <head>意図</head>
+
+<p>このガイドラインの目的は、現在及び将来のユーザエージェントの互換性、特に支援技術との互換性をサポートすることである。これは、1) コンテンツ制作者が支援技術の機能を損なったり (例： 形式が整えられていないマークアップ)、又は支援技術を回避したり(例: 奇抜なマークアップ又はソースコードを用いる) しないことを保証する、2）支援技術が認識して情報のやりとりができる標準的な方法でコンテンツにある情報を公開することの両方で達成できる。技術の変化は早く、支援技術の開発者が急速に変化する技術に追従していくことは大きな困難を伴うので、支援技術が容易に新しい技術にも対応していけるように、コンテンツが規則に従っていてAPIとの互換性が確保されていることが重要である。</p>
+</div2>
+
+<div2 id="ensure-compat-adv" role="gladvisory">
+<head>ガイドライン 4.1 の参考達成方法</head>
+<ulist>
+	<item><p>W3C が策定した技術仕様の中で非推奨とされている機能の使用を避ける (リンク追加予定)</p></item>
+	<item><p>その技術がオフになっている、又はサポートされていないとき、アクセシビリティ サポーテッドではない技術に依存したコンテンツを表示しない。 </p></item>
+</ulist>
+</div2>
+   <xi:include href="ensure-compat-parses.xml"/>
+   <xi:include href="ensure-compat-rsv.xml"/>
+</div1>

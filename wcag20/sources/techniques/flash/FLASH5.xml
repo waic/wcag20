@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH5">
+   <short-name>リンク先が同じで隣接している画像とテキストのボタンを結合する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、隣接するテキストとボタンアイコンを Flash ムービーに含める際の不要な重複を回避することである。</p>
+      <p>テキストとボタンアイコンが隣接しているボタンがよく用いられている。視覚上多少離れた位置に配置するなどの目的で、テキストとアイコンボタンが個別のボタンとして表現されることも多い。視覚に問題のない利用者はこれらの位置が多少離れていることを視覚的に認識できるが、全盲やロービジョンの利用者は位置の距離を認識できないためボタンの重複に混乱する。これを避けるため、コンテンツ制作者によっては画像のアクセシブルな名前の指定を省略する場合があるが、そのような方法ではグラフィックボタンと同じ目的を果たす代替テキストがなくなってしまい、達成基準 1.1.1 を満たすことができない。この問題への対処として望ましいのは、テキストと画像を 1 つのボタンシンボルインスタンスに含め、ボタンに対して 1 つのアクセシブルな名前を割り当てることによってテキストの重複を回避する方法である。</p>
+   </description>
+   <examples>
+      <p>以下に示すのは、ステージ上の 1 つのボタンインスタンスに画像とテキストの両方が含まれている場合の例である。この例のテキストと画像の結合ボタンでは、「flashLink1」というインスタンス名が使用されている。</p>
+      <p>Flash Professional で結合ボタンを作成するには、次のようにする。</p>
+      <olist>
+         <item>
+            <p>ステージにグラフィックオブジェクトとテキストを追加する。</p>
+         </item>
+         <item>
+            <p>両方のオブジェクトを選択する。</p>
+         </item>
+         <item>
+            <p>［挿入］メニューから「新規シンボル」を選択するか、Ctrl+F8 キーを押して、新しいボタンオブジェクトを作成する。</p>
+         </item>
+         <item>
+            <p>ステージ上のボタンオブジェクトをクリックし、プロパティパネルでインスタンス名を入力する。</p>
+         </item>
+         <item>
+            <p>さらに、以下の事例 1 から事例 3 までのそれぞれの説明に従う。</p>
+         </item>
+      </olist>
+      <p>
+						   <image>
+            <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                 source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/adjacentbtns.jpg"
+                 height="221"
+                 width="411"/>
+            <alt>画面スクリーンショット：プロパティパネルでインスタンス名を 'flashLink1' とした結合ボタン</alt>
+         </image>
+					</p>
+      <eg-group>
+         <head>アクセシビリティパネルを使用してアクセシブルな名前を指定する</head>
+         <description>
+            <p>アクセシビリティパネルを使用してアクセシブルな名前（この例の場合は表示されているテキストと同じ）を指定する。</p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/findoutmore.jpg"
+                       height="152"
+                       width="530"/>
+                  <alt>画面スクリーンショット：結合ボタンの「名前」を記述したアクセシビリティパネル</alt>
+               </image>
+							     </p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript を利用してアクセシブルな名前を指定する</head>
+         <description>
+            <p>次のように、アクセシビリティパネルの代わりに ActionScript 3 を使用して、結合ボタンのアクセシビリティ名を指定することもできる。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[// 'flashLink1' は、ムービーのメインのタイムラインに置かれたインスタンスである
+flashLink1.accessibilityProperties = new AccessibilityProperties();
+flashLink1.accessibilityProperties.name = "Flash についてさらに学ぶ";]]></code>
+         <description>
+            <p>また、次のように、アクセシビリティパネルの代わりに ActionScript 2 を使用して、結合ボタンのアクセシビリティ名を指定することもできる。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[// 'flashLink1' は、ムービーのメインのタイムラインに置かれたインスタンスである
+flashLink1._accProps = new Object();
+flashLink1._accProps.name = "Flash についてさらに学ぶ";]]></code>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G94"/>
+      <relatedtech idref="G53"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>SWF ファイルを発行する。</p>
+            </item>
+            <item>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SFW ファイルを開く。</p>
+            </item>
+            <item>
+               <p>オブジェクト名のテキストによる代替を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
+            </item>
+            <item>
+               <p>ACTFaDesigner 1.0 を使用する場合は、GUI 概要パネルを使用して Flash ムービー内の各画像ボタンを確認し、画像と同じ機能を持つ別の重複したテキストコントロールが画像の近くにないことを確かめる。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>4 を満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Combining_adjacent_image_and_text_buttons_for_the_same_resource"/>
+					</source>
+   </admin>
+</technique>
+

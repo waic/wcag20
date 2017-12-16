@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H56">
+   <short-name>入れ子になったテキストの表記方向に伴う問題を解決するために、インライン要素の <att>dir</att> 属性を使用する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、入れ子になった表記方向が含まれるテキストについて、インライン要素の<att>dir</att>属性で方向の変化を指定することである。入れ子になったテキストの表記方向とは、たとえば英語のパラグラフで、文章が次々と続いている中にヘブライ語の引用文が含まれるといった、表記方向の異なるテキストが混在したテキストの表記方向のことである。表記方向の異なるテキストが混在し、スペースや句読点が含まれていると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">Unicodeの双方向アルゴリズム</loc>だけでは望ましくない結果になってしまうので、テキストを<el>span</el>要素や他のインライン要素で囲み、<att>dir</att>属性を指定する必要がある。この達成方法の考え方は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup</loc>で説明されている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この事例では、ヘブライ語と英語のように、混在したテキストの表記方向を持つ文章で、右から左へと表記すべき入れ子になったテキストの表記方向を明らかにする。引用全体はヘブライ語であり、右から左に表記されるが、「W3C」というテキストとカンマは、次のようにヘブライ語のテキストの左側に（すなわち、後ろに）現れるべきである：</p>
+<p>The title is "<phrase lang="he" xml:lang="he" dir="rtl">פעילות הבינאום, W3C</phrase>" in Hebrew.</p>
+<p>視覚的な順序に基づくASCII（右から左へ表記するテキストは大文字で、左から右へ表記するテキストは小文字で書く）では、次の通りである：</p>
+<p>the title is "w3c ,YTIVITCA NOITAZILANOITANRETNI" in hebrew.</p>
+<p>正しく表示するためには、Unicodeの双方向アルゴリズムだけでは不十分なため、次に示すように「W3C」というテキストが引用の中で右側に置かれたままである：</p>
+<p>The title is "<phrase lang="he" xml:lang="he">פעילות הבינאום</phrase>, W3C" in Hebrew.</p>
+<p>視覚的な順序に基づくASCIIでは、次の通りである：</p>
+<p>the title is "YTIVITCA NOITAZILANOITANRETNI, w3c" in hebrew.</p>
+<p>次のようにマークアップすることによって、期待する結果が得られる。</p>
+</description>
+      <code role="html401"><![CDATA[<p>The title says "<span lang="he" 
+dir="rtl"><span dir="rtl">פעילות הבינאום, W3C</span></span>" in Hebrew.</p>]]></code>
+      <description><p>【訳注：このコード例には<el>xml:lang</el>属性がありません。XHTML 1.0では、<el>lang</el>属性と<el>xml:lang</el>属性を一緒に指定するのが普通です。WCAGワーキンググループに確認中。】</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/dirlang.html#blocklevel-bidi">Inheritance of text direction information</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/i18n-html-tech-bidi/">Authoring Techniques for
+                    XHTML &amp; HTML Internationalization: Handling Bidirectional Text 1.0</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H34"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>文書内のテキストの表記方向を調べる。</p>
+        </item>
+        <item>
+          <p>テキストの表記方向が右から左であれば、先祖要素に<att>dir</att>属性が指定され、値に「<att>rtl</att>」が指定されている。</p>
+        </item>
+        <item>
+          <p>テキストの表記方向が左から右であれば、先祖要素に<att>dir</att>属性が指定されていない、又は先祖要素に<att>dir</att>属性が指定され、値に「<code>ltr</code>」が指定されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.と3.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

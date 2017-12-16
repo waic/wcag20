@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA19">
+   <short-name>エラーを特定するために、ARIA role=alert 又はライブ領域（Live Regions）を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <p>Supports this technique:
+</p>
+         <ulist>
+            <item>
+               <p> OS X 10.8.4 + Safari + VoiceOver
+</p>
+            </item>
+            <item>
+               <p> iOS 6 &amp; 7 + Mobile Safari + VoiceOver
+</p>
+            </item>
+            <item>
+               <p> Windows 7 + Firefox 20 + NVDA 2013.1
+</p>
+            </item>
+            <item>
+               <p> Windows 7 + Firefox 20 + JAWS 14
+</p>
+            </item>
+            <item>
+               <p> Windows 7 + IE 8 + JAWS 14 (aria-live=assertive ONLY)
+</p>
+            </item>
+            <item>
+               <p> Windows 7 + IE 7 + JAWS 14 (aria-live=assertive ONLY)
+</p>
+            </item>
+         </ulist>
+         <p>Does NOT support this technique:
+</p>
+         <ulist>
+            <item>
+               <p> Windows 7 + IE 8 + NVDA 2013.1 (NO support)
+</p>
+            </item>
+         </ulist>
+         <p>Support Notes:
+</p>
+         <p>When using Firefox with JAWS and NVDA role=alert is announced as "Alert" and aria-live=assertive does not include that extra text. There is NO support for NVDA 2013.1 + IE 8. The third example uses BOTH role=alert &amp; aria-live=assertive on the error container for wider UA/AT support working in all combinations listed.
+</p>
+         <p>There are different methods to display an alert or assertive live region on the page and depending on how you create the error container or inject the error messages determines if it will work in the more difficult browsers/screen reader combinations like IE 8 + JAWS 14 or VoiceOver + Safari.
+</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、入力エラーが発生した場合に支援技術（AT）に通知することである。<att>aria-live</att>属性は、エラーメッセージがライブ領域のコンテナに注入された際に、AT（スクリーンリーダーなど）による通知を可能にする。<att>aria-live</att>領域内部のコンテンツは、テキストが表示されている場所でATがフォーカスする必要なしに、ATによって自動的に読みあげられる。</p>
+      <p>ライブ領域のプロパティを直接適用する代わりに使用できる<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/WAI/PF/aria-practices/#chobet">特殊ケースのライブ領域のロール</loc>も多数ある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>DOM内にすでに存在するrole=alertをもつコンテナの中にエラーメッセージを注入する</head>
+         <description>
+            <p>次の例は、<code><![CDATA[aria-live=assertive]]></code>を使用しているのと同等の<code><![CDATA[role=alert]]></code>を使用する。</p>
+            <p>例において、ページロード時にDOMに存在する<code><![CDATA[aria-atomic=true]]></code>及び<code><![CDATA[aria-live]]></code>プロパティ又は<code><![CDATA[alert]]></code>ロールをもつ空のエラーメッセージコンテナ要素が存在する。エラーコンテナは、ほとんどのスクリーンリーダーでエラーメッセージが読み上げられるために、ページロード時にDOMに存在しなければならない。<code><![CDATA[aria-atomic=true]]></code>は、複数の無効な投稿をした後にエラーメッセージをiOSのVoiceoverに読み上げさせるために必要である。</p>
+            <p>jQueryは、送信時に入力が空であるかどうかをテストし、そうであれば、ライブ領域コンテナにエラーメッセージを注入するために使用される。新しい送信が試みられるたびに、前のエラーメッセージがコンテナから削除され、新しいエラーメッセージが挿入される。</p>
+            <codeblock xml:space="preserve"><![CDATA[<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('#signup').submit(function() {
+		$('#errors').html('');
+		if ($('#first').val() === '') {
+			$('#errors').append('<p>Please enter your first name.</p>');
+		}
+		if ($('#last').val() === '') {
+			$('#errors').append('<p>Please enter your last name.</p>');
+		} 
+		if ($('#email').val() === '') {
+			$('#errors').append('<p>Please enter your email address.</p>');
+		} 
+		return false;
+	});
+});
+</script>
+
+<form name="signup" id="signup" method="post" action="">
+  <p id="errors" role="alert" aria-atomic="true"></p>
+  <p>
+    <label for="first">First Name (required)</label><br>
+    <input type="text" name="first" id="first">
+  </p>
+  <p>
+    <label for="last">Last Name (required)</label><br>
+    <input type="text" name="last" id="last">
+  </p>
+  <p>
+    <label for="email">Email (required)</label><br>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <input type="submit" name="button" id="button" value="Submit">
+  </p>
+</form>]]></codeblock>
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA19/aria-alert-validation.html"><!--
+                    linktype="examples"-->エラーを識別するためにrole=alertを使用する</loc>。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0, Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                  	href="https://www.paciellogroup.com/blog/2012/06/html5-accessibility-chops-aria-rolealert-browser-support/">HTML5 Accessibility Chops: ARIA role=alert browser support</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://html.cita.illinois.edu/nav/form/aria/">Form Labels, ARIA Examples (Experimental)</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.msfw.com/accessibility/">MSF&amp;W Accessibility</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/2011/CR-wai-aria-20110118/states_and_properties#aria-describedby">ARIA 1.0, Supported States and Properties, aria-describedby</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/2011/CR-wai-aria-20110118/roles#alert">WAI-ARIA 1.0, The Roles model, alert</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/2011/WD-html5-20110525/">HTML5, A vocabulary and associated APIs for HTML and XHTML</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p><code><![CDATA[role=alert]]></code>又は<code><![CDATA[aria-live=assertive]]></code>属性が指定された空のエラーコンテナが、ページの読み込み時のDOMに存在する。</p>
+            </item>
+            <item>
+               <p>ライブ領域のコンテンツの表示又更新を引き起こすエラーをトリガーする。</p>
+            </item>
+            <item>
+               <p>エラーメッセージが既に存在するエラーコンテナに挿入されたことをチェックする。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 及び 3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

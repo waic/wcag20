@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH9">
+   <short-name>収録済みの同期したメディアにキャプションを提供する</short-name>
+   <applicability>
+      <p>Adobe Flashをベースにしたコンテンツ</p>
+      <ulist>
+         <item>
+            <p>Adobe Flash CS3 以降</p>
+         </item>
+      </ulist>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-captions" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、聴覚障害のある利用者や同期したメディア内の音声や会話を聞くことが困難な利用者が、音声情報の代替手段としてキャプションを見るように選択できるオプションを提供することである。この実装方法では、すべての会話と重要な音がテキストとして提供されるが、それらのテキストは利用者が要求した場合以外は表示されない。結果として、必要な場合にのみ表示される。これは、FLVPlayback コンポーネントと FLVPlaybackCaptioning コンポーネントを使用して実現できる。注記：FLVPlayback のスキンを使用すると、クローズドキャプションボタンがデフォルトでアクセシブルになる。ただし、カスタムスキンを実装する場合は、クローズドキャプションボタンがアクセシブルかどうかをコンテンツ制作者がテストする必要がある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>Timed Textのキャプションファイルを Flash に追加する</head>
+         <description>
+            <olist>
+               <item>
+                  <p>外部ツール（Magpie やシンプルなテキストエディタなど）を使用して、Timed Textを用いたキャプションの XML ファイルを作成する。ビデオコンテンツを停止して再生し、音声情報の適切な部分（会話、重要な背景音、イベントサウンドなど）ごとに開始と終了のタイムコードおよび代替テキストを挿入する。Magpie のようなツールにはこの作業を簡単に行うことができる高度な機能がある。これに対し、テキストエディタでは次のキャプション文書の例に示すようにメディアプレーヤーからタイムコードを読み取って XML に含める必要がある。</p>
+               </item>
+               <item>
+                  <p>Flash では、ステージに FLVPlayback コンポーネントの新しいインスタンスを作成し、［コンポーネントインスペクタ］パネルまたは［パラメータ］パネルを使用して contentPath 値を flv ビデオファイルに設定する。</p>
+               </item>
+               <item>
+                  <p>CC（クローズドキャプション）ボタンを含むスキンを使用するように「Skin」パラメータを設定する。</p>
+               </item>
+               <item>
+                  <p>さらに、コンポーネントのリストから FLVPlayback キャプションコンポーネントのインスタンスを作成する。［コンポーネントインスペクタ］パネルで、「Source」パラメータをTimed TextのXMLファイルの名前に設定する。キャプションは、プレーヤーのフレームの下部に自動的に配置される。</p>
+               </item>
+            </olist>
+         </description>
+         <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"
+  xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+  <head>
+    <styling>
+      <style id="defaultSpeaker" tts:backgroundColor="black"
+        tts:color="white" tts:fontFamily="SansSerif" tts:fontSize="12"
+        tts:fontStyle="normal" tts:fontWeight="normal"
+        tts:textAlign="left" tts:textDecoration="none"/>
+      <style id="defaultCaption" tts:backgroundColor="black"
+        tts:color="white" tts:fontFamily="Arial" tts:fontSize="12"
+        tts:fontStyle="normal" tts:fontWeight="normal"
+        tts:textAlign="center" tts:textDecoration="none"/>
+    </styling>
+  </head>
+  <body id="thebody" style="defaultCaption">
+    <div xml:lang="en">
+      <p begin="0:00:00.20" end="0:00:02.20">If there were nothing in
+        our universe</p>
+      <p begin="0:00:02.20" end="0:00:05.65">the fabric of space-time
+        would be flat.</p>
+      <p begin="0:00:05.65" end="0:00:08.88">But add a mass, and
+        dimples form within it.</p>
+      <p begin="0:00:16.61" end="0:00:19.84">Smaller objects that
+        approach that large mass</p>
+      <p begin="0:00:19.84" end="0:00:23.41">will follow the curve in
+        space-time around it.</p>
+      <p begin="0:00:32.64" end="0:00:36.84">Our nearest star, the
+        sun, has formed such a dimple</p>
+      <p begin="0:00:36.84" end="0:00:38.00">and our tiny planet
+        Earth</p>
+      <p begin="0:00:38.00" end="0:00:41.50">goes along for the ride
+        in the curve of its dimple</p>
+      <p begin="0:00:41.50" end="0:00:43.80">staying in orbit around
+        the sun.</p>
+      <p begin="0:00:45.67" end="0:01:55.00"/>
+    </div>
+  </body>
+</tt>
+]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.html"><!--
+                    linktype="examples"-->Timed Textのキャプションファイルを Flash に追加する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH9/adding_captions_to_Flash_video_as3.zip"><!--
+                    linktype="examples"-->Timed Textのキャプションファイルを Flash に追加する」のサンプル</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <p>
+							     <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines">http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines</loc>
+						   </p>
+      </see-also>
+      <see-also>
+         <p>
+							     <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://www.buraks.com/captionate/">http://www.buraks.com/captionate/</loc>
+						   </p>
+      </see-also>
+      <see-also>
+         <p>
+							     <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://www.w3.org/AudioVideo/TT/">http://www.w3.org/AudioVideo/TT/</loc>
+						   </p>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G87"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーで表示されるすべてのビデオコンテンツを見て、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>すべての音声コンテンツでキャプションを利用でき、デフォルトまたは利用者環境設定によってオンになる。</p>
+            </item>
+            <item>
+               <p>ビデオに含まれるすべての音声情報がキャプションで適切に説明されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Applying_captions_to_prerecorded_synchronized_media"/>
+					</source>
+   </admin>
+</technique>
+

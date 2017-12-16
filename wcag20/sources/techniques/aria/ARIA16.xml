@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA16">
+   <short-name>ユーザインターフェース コントロールの名前（name）を提供するために、aria-labelledby を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <ulist>
+            <item>
+               <p>Jaws V.11 and greater has complete support.
+</p>
+            </item>
+            <item>
+               <p>ChromeVox V.1 and greater has complete support 
+</p>
+            </item>
+            <item>
+               <p>VoiceOver V.3 and greater supports ???
+</p>
+            </item>
+            <item>
+               <p>NVDA 2 supports Aria Describedby ???
+</p>
+            </item>
+            <item>
+               <p>Window Eyes as of V.7 ???.
+</p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるユーザインタフェースコントロールの名前を提供することである。WAI-ARIAは、<att>aria-labelledby</att>プロパティを使用して、セクション、描画、フォーム要素、画像などとテキストを関連付けるための方法を提供する。この達成方法では、<att>aria-labelledby</att>属性を使用して、フォームフィールドなどのユーザインタフェースコントロールと、それをラベル付けするページ上のテキストとを関連付ける。</p>
+      <p><att>aria-describedby</att>のように、<att>aria-labelledby</att>は、スペース区切りのリストを使用して、ページの他の要素を指すように複数のIDを受け入れることができる。この機能は、目の見える利用者がコントロールを識別するために周囲のコンテキストからの情報を使用する状況において、<att>aria-labelledby</att>を特に有用にする。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</loc>でも、名前がページ上の他の複数のテキスト要素から構成される場合の事例を紹介している。</p>
+      <p>aria-labelledbyの機能はネイティブなHTMLのlabel要素と似ているように見えるが、いくつか違いがある:</p>
+      <ulist>
+         <item>
+            <p><att>aria-labelledby</att>は複数のテキスト要素を参照することができる。<el>label</el>が参照できるのは1つだけである。</p>
+         </item>
+         <item>
+            <p><el>label</el>要素がフォーム要素のみに使用できる一方で、<att>aria-labelledby</att>はさまざまな要素に対して使用できる。</p>
+         </item>
+         <item>
+            <p><el>label</el>をクリックすると、関連付けられたフォームフィールドをフォーカスする。これは<att>aria-labelledby</att>では起こらない。この動作が必要な場合、<el>label</el>を使用するか、スクリプトを使用してこの機能を実装する。</p>
+         </item>
+      </ulist>
+      <p>2013年12月の時点で、特に古いブラウザや支援技術で、<el>label</el>のほうが<att>aria-labelledby</att>よりもより良くサポートされていることに注意すること。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>単純なテキストフィールドをラベル付けする</head>
+         <description>
+            <p>以下は、ラベル専用のテキストがないものの、正確にコントロールをラベル付けするためにページ上の他のテキストが使用できる状況で、<att>aria-labelledby</att>を使用して単純なテキストフィールドにラベルを提供している例である。</p>
+            <codeblock xml:space="preserve"><![CDATA[<input name="searchtxt" type="text" aria-labelledby="searchbtn">
+<input name="searchbtn" id="searchbtn" type="submit" value="Search">]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>スライダーをラベル付けする</head>
+         <description>
+            <p>以下は、スライダーコントロールにラベルを提供するために<att>aria-labelledby</att>を使用している例である。このケースでは、ラベルテキストが、より長い隣接するテキスト文字列の中から選択される。この例は、単にラベル付けの関係を示すために簡略化されていることに注意すること。カスタムコントロールを実装するコンテンツ制作者は、コントロールが他の達成基準を満たしていることも確認する必要がある。</p>
+            <codeblock xml:space="preserve"><![CDATA[<p>Please select the <span id="mysldr-lbl">number of days for your trip</span></p>
+<div id="mysldr" role="slider" aria-labelledby="mysldr-lbl"></div>]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>例3: 複数のソースからのラベル</head>
+         <description>
+            <p>以下は、<el>label</el>要素を使用した複数の参照を伴う<att>aria-labelledby</att>の例である。<att>aria-labelledby</att>をもつラベルに複数のソースを連結する方法の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</loc>を参照すること。</p>
+            <codeblock xml:space="preserve"><![CDATA[<label id="l1" for="f3">Notify me</label>
+<select name="amt" id="f3" aria-labelledby="l1 f3 l2">
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>
+<span id="l2" tabindex="-1">days in advance</span>]]></codeblock>
+            <p>注: <el>label</el>要素を使うことには多くの理由がある。利用者が<el>label</el>要素のテキストをクリックすれば、対応するフォームフィールドがフォーカスを受け取るため、器用さの問題を持つ人に対してクリックターゲットを大きくすることができる。また、<el>label</el>要素は常にアクセシビリティAPIを介して公開される。<el>span</el>が使われるかもしれない（ただしその場合、spanがInternet ExplorerのすべてのバージョンでアクセシビリティAPIを介して公開されるように、spanは<code><![CDATA[tabindex="-1"]]></code>を与えるべきである）。しかし、<el>span</el>では、クリック可能な領域が大きくなるという利点が失われることになるだろう。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA10"/>
+      <relatedtech idref="ARIA6"/>
+      <relatedtech idref="ARIA9"/>
+      <relatedtech idref="ARIA7"/>
+      <relatedtech idref="ARIA13"/>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="H45"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p><att>aria-labelledby</att>属性が存在する場合に各ユーザインタフェースコントロール要素に対して:</p>
+         <olist>
+            <item>
+               <p><att>aria-labelledby</att>属性の値は、ある要素の<att>id</att>、又はウェブページ上の複数<att>id</att>のスペース区切りのリストである。</p>
+            </item>
+            <item>
+               <p>参照される要素又は複数要素のテキストが正確にユーザインタフェースコントロールにラベル付けする。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

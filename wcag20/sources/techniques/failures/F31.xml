@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F31">
+   <short-name>達成基準 3.2.4 の失敗例 － ウェブページ一式の様々なウェブページ上にある同じ機能に対して、2つの異なるラベルを使用している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-consistent-functionality"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>異なるウェブページ上にある同じ機能のコンポーネントは、一貫して同じラベルが用いられているとより容易に認知されやすくなる。名称に一貫性がない場合、利用者が混乱してしまうことがある。</p>
+    <note>
+      <p>"一貫性を保った"テキストによる代替が常に"同一のもの"であるとは限らない。例えば、次のページへのリンクになっている矢印の画像がウェブページの一番下にある。テキストによる代替は"4 ページへ"となっている。当然、これと全く同じテキストによる代替を次のウェブページで繰り返すことは適切でない。"5 ページへ"とする方が適切である。これらのテキストによる代替は同一のものではないが、一貫性を保っており、この達成基準の失敗例とはならない。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head/>
+      <description><p>同じ機能のコンポーネントに対して一貫性のないラベルを使用している例で最もよく見かけるのは、どちらも同じ機能であるのに、あるページでは「検索」という名称のボタンを使用し、別のページでは「探す」という名称のボタンを使用している場合である。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head/>
+      <description><p>オンラインのオーサリングツールで、あるページでは「ページを保存」というボタン、別のページでは「保存」をそれぞれ同じ機能に対して使用している。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページ一式の中で、複数のページで繰り返し使用されている同じ機能を持つコンポーネントを探す。</p>
+        </item>
+        <item>
+          <p>1.で見つけた同じ機能の個々のコンポーネントに対して、名称が一貫して同じである。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>2.を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+      </expected-results>
+   </tests>
+</technique>

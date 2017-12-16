@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F60">
+   <short-name>達成基準 3.2.5 の失敗例 － 利用者が入力フィールドにテキストを入力すると新しいウィンドウを開く</short-name>
+   <applicability>
+      <p>全般</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、エラーの通知以外で、利用者のテキストフィールドへの入力に反応して新しいウィンドウが開く不適合事例について述べている。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head/>
+      <description><p>不適合となる推奨できない事例：利用者が郵便の宛先の入力をしている。郵便番号の入力をすると、彼の町で利用できるサービスの広告が記載された新しいウィンドウが開く。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head/>
+      <description><p>許容できる事例：利用者がフォームの郵便の宛先の入力をしている。郵便番号のフィールドを入力をすると、有効な郵便番号であるかどうかを検証するスクリプトが実行される。値が無効な場合はフィールドへの入力方法を説明したウィンドウが開く。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="F37"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>全てのテキストフィールドを探し出す。</p>
+        </item>
+        <item>
+          <p>各テキストフィールドの値を変更する。</p>
+        </item>
+        <item>
+          <p>新しいウィンドウが開く。</p>
+        </item>
+        <item>
+          <p>新しく開いたウィンドウにエラーメッセージがあり、ウィンドウを閉じて元のフォーム要素にフォーカスを戻すボタンがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.に該当して、4.を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

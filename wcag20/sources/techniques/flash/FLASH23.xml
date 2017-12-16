@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH23">
+   <short-name>データグリッドに要約を追加する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、データグリッド内でデータがどのように提示されているかについて要約を提供したり、グリッド内での移動方法について簡単に説明したりすることである。</p>
+      <p>Flash は summary 属性を提供しないので、代わりにこの説明的なテキストがデータグリッドのアクセシブルな説明に追加される。このアプローチでは、スクリーンリーダーを使用する利用者が要約の情報を利用できるようになる。情報は視覚的に表示されない。</p>
+      <p>要約は、テーブルの構造が複雑な場合（例えば、行見出しまたは列見出しのセットが複数ある場合や、列または行のグループが複数ある場合）に役立つ。また、要約は、多くのデータ列またはデータ行を含む単純なデータテーブルでも役に立つ場合がある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>アクセシビリティパネルを使用してデータグリッドに一覧を追加する</head>
+         <description>
+            <p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。データグリッドの要約を提供するために、Flash のアクセシビリティパネルの「説明」フィールドを使用する。</p>
+            <olist>
+               <item>
+                  <p>新しい Flash ファイル（.fla）を作成する、又は既存のファイルを開いてデータグリッドを挿入する。</p>
+               </item>
+               <item>
+                  <p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p>
+               </item>
+               <item>
+                  <p>データグリッドコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p>
+               </item>
+               <item>
+                  <p>データグリッドコンポーネントを選択し、アクセシビリティパネルを使用して、データグリッドの要約を「説明」フィールドに追加する。</p>
+               </item>
+            </olist>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 3 を使用してデータグリッドに一覧を追加する</head>
+         <description>
+            <p>This is a basic AS3 example of a DataGrid component that has summary
+    						text added as its accessible description. </p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import fl.accessibility.DataGridAccImpl;
+import fl.controls.DataGrid;
+import fl.controls.Label;
+import fl.data.DataProvider;
+import flash.accessibility.Accessibility;
+import flash.accessibility.AccessibilityProperties;
+import flash.system.Capabilities;
+
+DataGridAccImpl.enableAccessibility();
+
+createGrid();
+
+//要約テキストをアクセシブルな「説明」として設定する
+var accProps: AccessibilityProperties = new AccessibilityProperties();
+accProps.description = "The first column shows the player's name," +
+  "the second and third column shows the player's gaming statistics." +
+  "the fourth column shows the player's year as FR (Freshman), JR (junior) or SO (Sophomore)." +
+  "The fifth column shows the player's home city and state";
+aDg.accessibilityProperties = accProps;
+if (Capabilities.hasAccessibility)
+Accessibility.updateProperties();
+
+function createGrid() {
+  
+  //コンポーネントを作成して追加する
+  var aDg: DataGrid = new DataGrid();
+  addChild(aDg);
+  aDg.move(50, 50);
+  bldRosterGrid(aDg);
+  
+  var aRoster: Array = new Array();
+  aRoster =[ {
+    Name: "Wilma Carter", Bats: "R", Throws: "R", Year: "So", Home: "Redlands, CA"
+  }, {
+    Name: "Sue Pennypacker", Bats: "L", Throws: "R", Year: "Fr", Home: "Athens, GA"
+  }, {
+    Name: "Jill Smithfield", Bats: "R", Throws: "L", Year: "Sr", Home: "Spokane, WA"
+  }, {
+    Name: "Betty Kay", Bats: "R", Throws: "R", Year: "Fr", Home: "Palo Alto, CA"
+  },];
+  aDg.dataProvider = new DataProvider(aRoster);
+  aDg.rowCount = aDg.length;
+}
+
+function bldRosterGrid(dg: DataGrid) {
+  dg.setSize(400, 300);
+  dg.columns =[ "Name", "Bats", "Throws", "Year", "Home"];
+  dg.columns[0].width = 120;
+  dg.columns[1].width = 50;
+  dg.columns[2].width = 50;
+  dg.columns[3].width = 40;
+  dg.columns[4].width = 120;
+};]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.html"><!--
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのサンプル（英語）で確認できる。</loc>また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.fla"><!--
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+         <p>Flash ムービーにデータグリッドコンポーネントが含まれている場合、対応するアクセシブルな説明プロパティを使用して、要約テキストが追加されている。</p>
+      </procedure>
+      <expected-results>
+         <p>上記チェックポイントを満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Adding_summary_information_to_a_DataGrid"/>
+					</source>
+   </admin>
+</technique>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA20">
+   <short-name>ページの領域を特定するために region ロールを使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic" relationship="sufficient"/>
+   </applies-to>
+   <description>
+<p>この達成方法は、ユーザエージェント及び支援技術がプログラム的にページのセクションを識別できるように、そのページのセクションに一般的な<prop>region</prop>ロールを割り当てる方法を示す。<prop>region</prop>ロールは、より容易に発見可能かつナビゲート可能であるように、重要なコンテンツを含むページの区切りを定める。一般的な領域は、セクションが標準の文書ランドマークロールによってマークアップできない場合に使用されるべきである（<loc href="ARIA11" linktype="aria">ARIA11</loc>を参照）。</p>
+<p>
+領域は一般的なグループ化された要素であり、かつ利用者がどの領域にいるのかを伝えるための手段が必要になるため、領域に名前を付けることは重要である。領域には、<att>aria-labelledby</att>や<att>aria-label</att>、その他の手法を使用して名前を付けることができる。そうすることで、ページ上のコンテンツと情報の関係をより良く公開する助けとなる。過剰に使用した場合、スクリーンリーダーの利用者に対してページを過度に冗長にすることがあるので、<prop>region</prop>のロールは、慎重に使用するべきである。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>ニュースサイト上の領域</head>
+         <description>
+            <p>毎週変更する世論調査を含むニュースサイトのホームページ上のセクションが、<code><![CDATA[role="region"]]></code>でマークアップされている。フォーム上部のh3テキストは、<att>aria-labelledby</att>を使うことで領域の名前として参照されている。</p>
+         <codeblock role="html5"><![CDATA[
+<div role="region" aria-labelledby="pollhead">
+<h3 id="pollhead">This week's Poll</h3>
+<form method="post" action="#">
+  <fieldset>
+    <legend>Do you believe the tax code needs to be overhauled?</legend>
+    <input type="radio" id="r1" name="poll" />
+    <label for="r1">No, it's fine the way it is</label>
+    <input type="radio" id="r2" name="poll" />
+    <label for="r2">Yes, the wealthy need to pay more</label>
+    <input type="radio" id="r3" name="poll" />
+    <label for="r3">Yes, we need to close corporate loopholes</label>
+    <input type="radio" id="r4" name="poll" />
+    <label for="r4">Changes should be made across the board</label>
+  </fieldset>
+</form>
+<a href="results.php">See Poll Results</a>
+</div>			
+            ]]></codeblock>
+            <!--<p><loc href="aria20_ex1.html" linktype="examples">Live example</loc>.</p>-->
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>銀行サイト上の領域を識別する</head>
+         <description>
+            <p>利用者は、銀行のウェブサイトにログインした後、リンクを展開することで定期預金口座の詳細を確認できるようになっている。詳細は、<prop>region</prop>ロールでマークアップされた範囲の中にある。その領域の見出しは<code><![CDATA[role=heading]]></code>を持ち、その領域に名前を付ける<att>aria-labelledby</att>の中に含まれている。</p>
+         <codeblock role="html5"><![CDATA[
+<ol>
+	<li><a id="l1" href="#" aria-expanded="false" title="Show details" aria-controls="block1" >John Henry's Account</a><img src="images/panel_expand.gif" alt="" />
+		 <div id="block1" class="nowHidden" tabindex="-1" aria-labelledby="l1 cd1" role="region"><span id="cd1" role="heading" aria-level="3">Certificate of  Deposit:</span>
+		 <table>
+			 <tr><th scope="row">Account:</th> <td>25163522</td></tr>
+			 <tr><th scope="row">Start date:</th> <td>February 1, 2014</td></tr>
+			 <tr><th scope="row">Maturity date:</th><td>February 1, 2016</td></tr>
+			 <tr><th scope="row">Deposit Amount:</th> <td>$ 3,000.00</td></tr>
+			 <tr><th scope="row">Maturity Amount:</th> <td>$ 3,072.43</td></tr>
+		 </table>
+		 </div>
+	 </li>
+ </ol>
+            ]]></codeblock>
+            <!--<p><loc href="aria20_ex2.html" linktype="examples">Live example</loc>.</p>-->
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>一般的な領域とポートレットを同一視する</head>
+         <description>
+            <p>次の例は、気象ポートレットに一般的な"region"ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att>でラベル付けされている。</p>
+         </description>
+         <code role="html5"><![CDATA[
+<div role="region" aria-label="weather portlet"> 
+	...
+</div>            ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#region">The Roles Model (role=region)</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA11"/>
+      <relatedtech idref="ARIA12"/>
+      <relatedtech idref="ARIA13"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p><code><![CDATA[role="region"]]></code>でマークアップされる各セクションに対して:</p>
+         <olist>
+            <item>
+               <p>コンテンツが、独立したランドマークを持つのに十分なほど重要である。</p>
+            </item>
+            <item>
+               <p>標準のランドマークロールがこのコンテンツに適さない。</p>
+            </item>
+            <item>
+               <p>領域がプログラムによって解釈される名前を持つ。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.から3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

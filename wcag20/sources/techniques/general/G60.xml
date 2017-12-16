@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G60">
+   <short-name>音声の再生を 3 秒以内に自動的に停止する</short-name>
+   <applicability>
+      <p>音声のインタラクション機能があるものを除く全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-dis-audio" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、スクリーンリーダーの利用者が、コンテンツで再生される音によって邪魔されてスクリーンリーダーを使えないことがないようにして、コンテンツ制作者がウェブページ上で音を再生できるようにすることである。さらに、音を制御するコントロールを置かなくてもよいようにすることも目的の一つである。スクリーンリーダーの利用者が、（スクリーンリーダーの音が聞こえないために）コントロールを探せないという問題が起こらないようにすることである。</p>
+    <p>この達成方法はシンプルで、音を3秒又はそれより短く再生し、自動的に停止するようにすればよい。</p>
+  </description>
+   <examples>
+      <ulist>
+         <item>
+            <p>事例 1: ウェブページを開くと、トランペットのファンファーレが鳴り、静かになる。</p>
+         </item>
+         <item>
+            <p>事例 2: ウェブページを開くと、「品質がビジネスでは一番重要です」という社長の声が聞こえ、静かになる。</p>
+         </item>
+         <item>
+            <p>事例 3: 「エンターキーを押して始めてください」という始め方の操作説明が流れる。</p>
+         </item>
+         <item>
+            <p>事例 4: ウェブページを開くと警告音が鳴り、静かになる。</p>
+         </item>
+      </ulist>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G170"/>
+      <relatedtech idref="G171"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>ウェブページをロードする。</p></item>
+        <item><p>自動的に再生される全ての音が3秒又はそれより早く停止される。</p></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="media-equiv-av-only-alt">
+   <head>1.2.1</head>
+   <div3 role="intent">
+   <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、収録済の音声しか含まないコンテンツ及び収録済の映像しか含まないコンテンツの伝える情報を、すべての利用者が入手できるようにすることである。テキストは利用者のニーズに合った、あらゆる感覚モダリティ (例えば、視覚、聴覚、又は触覚) を通じてレンダリング可能であるため、時間依存メディアの代替は、情報をアクセシブルにする。将来的には、テキストを記号、手話、又はその言語のより単純な形態に変えることも可能になるかもしれない。</p>
+
+<p>音声情報や利用者のインタラクションを伴わない収録済の映像の例は、無声映画である。書き起こしの目的は、視覚的に提示されるものと同等のものを提供することである。収録済の映像コンテンツの場合、コンテンツ制作者には音声トラックを提供するという選択肢がある。音声による代替の目的は、映像と同等のものになることである。これにより、視覚障害の有無に関係なく、利用者はコンテンツを同時に楽しむことが可能になる。このアプローチはまた、映像と音声の並行した提示を提供するため、認知障害、言語障害、及び学習障害のある利用者がコンテンツを理解しやすくすることができる。</p>
+
+<note><p>音声情報がない映像に対し同等として提供されている音声に対しては、テキストによる代替は必要ない。例えば、無声映画の代替として提供されている映像による説明にキャプションを付与する必要はない。</p></note>
+<p><specref ref="media-equiv-live-audio-only"/>も参照のこと。</p>
+
+<div4 role="benefits">
+<head>達成基準 1.2.1 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、視覚的なコンテンツを知覚するのが困難な利用者の役に立つ。支援技術が、テキストによる代替を音声で読み上げる、視覚的に提示する、又は点字に変換することが可能になる。</p></item>
+	<item><p>テキストベースの時間依存メディアの代替は、収録済の映像コンテンツの意味を理解するのが困難な利用者の役に立つことがある。</p></item>
+	<item><p>ろう、難聴、又は何らかの理由で音声情報を理解するのが困難な利用者が、テキストによる表現を読むことができるようになる。テキストを手話に自動変換する研究が現在進められている。</p></item>
+	<item><p>盲ろうの利用者が、テキストを点字で読むことができるようになる。</p></item><item><p>加えて、テキストは、非テキストコンテンツを検索可能なものにし、コンテンツを様々な方法で再利用できるようにする。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.2.1 の事例</head>
+<ulist>
+	<item>
+	<p><emph role="bold">演説を録音した音声</emph></p>
+	<p>「議会での議長の演説」という音声クリップへのリンクがある。テキストによる書き起こしへのリンクが、その音声クリップへのリンクの直後に提供されている。</p>
+	</item>
+	<item>
+	<p><emph role="bold">記者会見の音声録音</emph></p>
+	<p>ウェブページに、録音音声であることが分かる記者会見の録音音声へのリンクがある。そのページには、記者会見のテキストによる書き起こしへのリンクもある。その書き起こしは、話者が発言したすべての逐語的な記録がある。その記録には、誰が話しているのかだけでなく、喝采、笑い、聴衆からの質問など、その録音の一部であるその他の重要な音声も特定する。</p>
+	</item>
+	<item>
+	<p><emph role="bold">車のエンジンがどのように動くのかを説明するアニメーション</emph></p>
+	<p>車のエンジンがどのように動くのかを見せているアニメーションがある。音声はなく、そのアニメーションはエンジンがどのように動くかを説明するチュートリアルの一部である。チュートリアルのテキストがすでに完全な説明をしているため、そのアニメーションはテキストの代替物であり、画像はテキストの代替物であり、テキストによる代替はそのアニメーションの簡潔な説明のみを含み、詳細についてはチュートリアルのテキストを参照している。</p>
+	</item>
+	<item>
+	<p><emph role="bold">音声トラック付きの、映像しか含まないファイル</emph></p>
+	<p>無音映画に、映像の動きを説明している音声トラックがある。</p>
+	</item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p><loc href="http://www.rnib.org.uk/travel-downloads-podcasts-and-apps?List=be9c76d3-7ad0-4e03-a1a0-e6f6953b8178&amp;ID=16">Overcoming the challenge of podcast transcription</loc></p></item>
+	<item><p><loc href="http://www.uiaccess.com/transcripts/transcript_services.html">uiAccess list of transcription services</loc></p></item>
+	<item><p><loc href="http://www.uiaccess.com/transcripts/transcripts_on_the_web.html">Transcripts on the Web: Getting people to your podcasts and videos</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 1.2.1 の達成方法及び不適合事例 － 収録済の音声しか含まないコンテンツ及び映像しか含まないコンテンツ</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A: 収録済の音声しか含まないコンテンツの場合:</head>
+<olist>
+	<item><p><loc href="G158" linktype="general"/></p></item>
+	<item><p><loc href="SL17" linktype="silverlight"/></p><!--<ednote><edtext>Unsure whether SL17 applies to this situation</edtext></ednote>--></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B: 収録済の映像しか含まないコンテンツの場合:</head>
+<olist>
+	<item><p><loc href="G159" linktype="general"/></p></item>
+	<item><p><loc href="G166" linktype="general"/></p></item>
+	<item><p><loc href="SL17" linktype="silverlight"/></p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 1.2.1 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p><loc href="H96" linktype="html"/></p></item>
+	<item><p>事後に、ライブの音声しか含まない提示の書き起こしを提供する (リンク追加予定)</p></item>
+	<item><p>同等の情報を提供するテキスト情報 (例えば、交通のウェブカメラに対して、自治体が提供するテキストの交通情報へのリンク) にリンクする (リンク追加予定)</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head> 達成基準 1.2.1 のよくある不適合事例</head>
+<ulist>
+	<item><p><loc href="F30" linktype="failure"/></p></item>
+	<item><p><loc href="F67" linktype="failure"/></p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

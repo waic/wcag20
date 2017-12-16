@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G170">
+   <short-name>自動的に再生される音声を停止するコントロールを、ウェブページの先頭付近で提供する</short-name>
+   <applicability>
+      <p>自動的に再生される音を含むウェブコンテンツ技術全て</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-dis-audio" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ページが読みこまれたときに自動的に開始する音声を、利用者が停止できるようにすることである。利用者が容易に素早く見つけることができるように、音声を停止するコントロールはページの先頭付近に配置しなければならない。これは、支援技術(スクリーンリーダー、画面拡大ツール、入力装置(スイッチ)など）を利用する人々及びそうでない人々(認知、学習及び言語障害のある人々)の役に立つ。</p>
+    <p>この達成方法では、コンテンツ制作者は、自動的に再生されたあらゆる音声を利用者が停止できるコントロールを組み込む。コントロールは、キーボードで操作が可能で、タブと読み込みの順序が早くなるよう配置され、再生されている音声を停止することを示すよう明確にラベルづけされていなければならない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ウェブページは、草刈り機のエンジンを修理する方法を示す動画と音声トラックを含む、時間の経過に伴って変化するメディア・プレゼンテーションがある。ページは「一時停止」と「停止」というふたつのボタンを含んでおり、時間の経過に伴って変化するメディアが再生されるとき、これらは利用者にコントロールを提供する。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>ウェブページには短編映画が埋め込まれている。ページには「映画を一時停止する」というボタンがあり、利用者が映画を一時停止させることができる。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>ウェブページには動画と音声を含むFlashプレゼンテーションがある。ページには「マルチメディアを停止する」というボタンがあり、再生されているあらゆる動画と音声を利用者が停止できる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G60"/>
+      <relatedtech idref="G171"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページをロードする。</p>
+        </item>
+        <item>
+          <p>自動的に開始する音楽や音声を確認する。</p>
+        </item>
+        <item>
+          <p>利用者が音声を停止することができるコントロールが、ページの先頭付近で提供されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

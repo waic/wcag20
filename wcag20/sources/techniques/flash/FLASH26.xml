@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH26">
+   <short-name>Flash ビデオに音声解説を提供する</short-name>
+   <applicability>
+      <ulist>
+         <item>
+            <p>Flash CS3 以上</p>
+         </item>
+         <item>
+            <p>ActionScript 3.0 以上</p>
+         </item>
+      </ulist>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc-only" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、全盲の利用者または視聴覚素材の映像を見ることが困難な利用者がコンテンツの内容を理解できるようにする方法を提供することである。この実装方法では、視聴覚素材の会話の合間に、映像だけで伝えられている情報を説明する音声ガイドを挿入する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>キューポイントに到達したときにガイドを再生する</head>
+         <description>
+            <p>この事例では、FLVPlayback コンポーネントを使用してビデオプレーヤーを作成する。AudioDescriptions という名前のカスタムクラスを追加して、拡張音声ガイドの再生を管理する。このクラスは、メディア内で音声ガイドのプロバイダによって識別されるキューポイントをリッスンするイベントリスナーを提供する。これらのキューポイントに到達すると、対応するガイドを含む mp3 ファイルの再生が開始される。録音されたガイドはムービーの会話の合間に収まる時間に設定されている。</p>
+            <p>音声ガイドはデフォルトで有効になる。ビデオプレーヤーの下に用意されているボタンによって、利用者は音声ガイドをオンまたはオフにできる（このボタンは他の達成基準を満たすためにアクセシブルである必要がある）。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[package {
+  import fl.video. *;
+  import flash.events. *;
+  import flash.media.Sound;
+  import flash.media.SoundChannel;
+  import flash.net.URLRequest;
+  import flash.display.Sprite;
+  
+  public class AudioDescriptions extends Sprite {
+    private var channel: SoundChannel = new SoundChannel;
+    private var myPlayer: FLVPlayback;
+    private var _enabled: Boolean = true;
+    private var _toggleBtn: Button;
+    private var snd: Sound = new Sound();
+    public function AudioDescriptions() {
+      // point myPlayer to the FLVPlayback component instance on the stage, 
+      // which should be loaded with a valid video source.
+      myPlayer = my_FLVPlybk;
+      // add cue points. When any of these are reached, the 
+      // MetadataEvent.CUE_POINT event will fire
+      myPlayer.addASCuePoint(8.35, "ASpt1");
+      myPlayer.addASCuePoint(23.23, "ASpt2");
+      
+      enable();
+      
+      enable_AD_btn.addEventListener(MouseEvent.CLICK, handleBtnClick);
+    }
+    
+    private function handleBtnClick(e) {
+      _enabled = ! _enabled;
+      if (! _enabled) {
+        disable();
+        enable_AD_btn.label = "Enable Audio Descriptions";
+      } else {
+        enable();
+        enable_AD_btn.label = "Disable Audio Descriptions";
+      }
+    }
+    
+    public function enable() {
+      // set up an event handler which will be called each time a cue point is reached
+      myPlayer.addEventListener(MetadataEvent.CUE_POINT, cp_listener);
+    }
+    
+    public function disable() {
+      // remove the event handler called each time a cue point is reached, so 
+      // that audio description is disabled.
+      myPlayer.removeEventListener(MetadataEvent.CUE_POINT, cp_listener);
+    }
+    
+    private function cp_listener(eventObject: MetadataEvent): void {
+      snd = new Sound();
+      //recreate sound object as it can only load one mp3 file
+      //check to see which cue point was reached
+      switch (eventObject.info.name) {
+        case "ASpt1":
+        snd.load(new URLRequest("sphere.mp3"));
+        //create a new Sound object, and load the appropriate mp3
+        channel = snd.play();
+        // play the audio description, and assign it to the SoundChannel object
+        break;
+        case "ASpt2":
+        snd.load(new URLRequest("transfrm.mp3"));
+        channel = snd.play();
+        break;
+      }
+    }
+  }
+}]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH26/audio_descriptions_as3.html"><!--
+                    linktype="examples"-->キューポイントに到達したときにガイドを再生するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH26/audio_descriptions_as3.zip"><!--
+                    linktype="examples"-->キューポイントに到達したときにガイドを再生するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ガイドのための追加の音声トラックを提供する</head>
+         <description>
+            <p>音声ガイドは、追加の音声トラックを通して提供することもできる。この場合、追加の音声トラックはメインのメディアと同じ長さにし、同期して再生させる。ただし、音声ガイドの再生が必要な箇所のみに音声を含め、他の部分は無音にする。Flash 制作者は、リスナーの好みに応じてこの追加の音声トラックのオン/オフを切り替えるための機能を提供することができる。追加のトラックが有効になっている場合は、二つの音声トラック（一つはメイン音声、もう一つは音声ガイドのみが含まれているトラック）が並行して再生される。音声ガイドとメイン音声は、音声が重なって聞き取りが困難になることのないようにする必要がある。この手法は、事例 1 で使用されている手法と同じ効果が期待できる。ただし、Flash 制作者に提供される音声ガイドファイルの種類によっては、こちらの手法を選択したほうがいい場合もある。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G78"/>
+      <relatedtech idref="G69"/>
+      <relatedtech idref="G173"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash コンテンツに音声サウンドトラック付きの映像が含まれている場合は、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>別の音声ファイルを使用した音声ガイドが利用可能である</p>
+            </item>
+            <item>
+               <p>利用者が音声ガイドを有効または無効にするためのボタンが用意されている</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Applying_audio_descriptions_to_Flash_video"/>
+					</source>
+   </admin>
+</technique>
+

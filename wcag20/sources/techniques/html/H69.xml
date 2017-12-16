@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H69">
+   <short-name>コンテンツの各セクションの開始位置に見出し要素を提供する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-headings" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue name="" version="">
+      <p>JAWS及びWindows-Eyesは、見出し要素を用いたナビゲーション機能を提供しており、見出しレベルに関する情報も提供している。また、Operaは、見出し要素ごとに移動できるメカニズムを提供している。他のユーザエージェントでも、追加的なプラグインが見出し要素を用いたナビゲーション機能をサポートしている。プラグインに関しては、「参考リソース」のセクションを参照のこと。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、コンテンツの構造を伝達するために、セクションごとに見出しを指定することである。見出しのマークアップは、次のように利用されることがある。</p>
+    <ulist>
+      <item>
+        <p>メインコンテンツの開始位置を示す</p>
+      </item>
+      <item>
+        <p>メインコンテンツ領域にあるセクションの見出しをマークアップする</p>
+      </item>
+      <item>
+        <p>上部又はメインのナビゲーション、左側又はサブのナビゲーション、そしてフッターのナビゲーションなど、さまざまなナビゲーションを含んだセクションを区別する</p>
+      </item>
+      <item>
+        <p>見出しとして用いられる文字画像をマークアップする</p>
+      </item>
+      <item>
+        <p>セクションによって利用者がページをナビゲートできるように、または、繰り返される情報のブロックをスキップできるようにする</p>
+      </item>
+    </ulist>
+    <p>見出しは論理的な階層を伝えるためにデザインされている。見出しの階層の中のレベルを飛ばすと、文書構造がきちんと検討されなかったのではないか、又は一部の見出しが意味ではなく視覚的な表現を得るために選択されたのではないか、といった印象を与えてしまうかもしれない。著者には見出しを階層的に入れ子にすることが推奨される。見出しが階層的である場合、もっとも重要な情報には最も高い論理レベルが与えられ、下位のセクションにはその後の論理レベルが与えられる（すなわち、h2 は h1 の下位セクションである）。このような種類の見出しを与えることは、コンテンツの全体的な構成を、利用者がより簡単に理解することに役立つ。</p>
+    <p>見出しは、コンテンツの中の重要なセクションの開始位置を示すものであるため、支援技術のユーザーが適切な見出しまで直接ジャンプしてから、コンテンツを読み始めることができる。これにより、他の方法でそのコンテンツに到達するのに時間を要していた利用者のインタラクションが大幅に速くなる。見出しによって、スクリーンリーダ―を利用する全盲の人や、情報のグループを作る支援技術を利用する認知的な障害のある人、あるいは、コミュニケーション障害や読書のときにスクリーンリーダ―に支援される文盲の人のような、障害者がより簡単に見つけられる情報の塊を作ることができる。</p>
+    <note><p>全ての達成方法は、特別なユーザエージェント（支援技術や特別なプラグインを含む）を必要とする人たちが入手でき、そうした種類のユーザエージェント（例えば、スクリーンリーダ―、あるいは適切にマークアップされたコンテンツのナビゲーションにキーボードが使えるようにするプラグインなど）を利用できることを仮定している。</p></note>
+  </description>
+   <examples>
+    <eg-group>
+      <description><p>この事例では、各セクションの見出しを <el>h2</el> 要素でマークアップすることによって、検索ページ内の複数のセクションを構成している。</p>
+</description>
+      <code role="html401"><![CDATA[<h1>技術関連の定期刊行物の検索</h1>
+ <h2>検索</h2>
+ <form action="search.php">
+  <p><label for="searchInput">検索トピックスを入力：</label>
+  <input type="text" size="30" id="searchInput">
+  <input type="submit" value="検索"></p>
+ </form>
+ <h2>検索可能な定期刊行物</h2>
+ <div class="jlinks">
+  <a href="pcoder.com">プロフェッショナルコーダー</a> |
+  <a href="algo.com">アルゴリズム</a> |
+  <a href="jse.com">ソフトウェア工学ジャーナル</a>
+ </div>
+ <h2>検索結果</h2>
+ ……このセクションに検索結果を表示……]]></code>
+    </eg-group>
+    <eg-group>
+      <head>コンテンツ全体の構成を示している見出し</head>
+      <description><p>この事例では、ナビゲーションとメインコンテンツを知覚できるように、見出しマークアップを利用している。</p>
+</description>
+      <code role="html401"><![CDATA[<!-- ロゴ、バナー画像、検索フォームなど  -->
+  <h2>ナビゲーション</h2>
+    <ul>
+      <li><a href="about.htm">会社概要</a></li>
+      <li><a href="contact.htm">お問い合わせ</a></li>
+       ...
+    </ul>
+  <h2>見出しに関する全て</h2>
+   <!-- メインコンテンツを構成するテキスト、画像、その他のもの…… -->]]></code>
+    </eg-group>
+    <eg-group>
+      <head>メインコンテンツ部分にあるコンテンツの構成を示している見出し</head>
+      <description><p>留意すべきは、HTML 4.01 及び XHTML 1.x においては、見出し要素はセクションの開始位置をマークアップするためだけに用いる。つまり、見出し要素はそのコンテンツとして見出し要素を含むことはない。【訳注：WCAGワーキンググループに確認中です。】</p>
+</description>
+      <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>調理手法</title>  
+  </head>   
+  <body>     
+    <h1>調理手法</h1>     
+    <p>       
+      ……ここにテキストが入ります……     
+    </p>           
+    <h2>油を使った調理</h2> 
+    <p> 
+        ……このセクションのテキスト……     
+    </p>           
+    <h2>バターを使った調理</h2>       
+    <p>
+        ……このセクションのテキスト……     
+    </p>   
+  </body> 
+</html>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/global.html#h-7.5.5">HTML 4.01
+                    H1-H6 elements</loc></p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://meyerweb.com/eric/thoughts/2004/07/21/pick-a-heading/">Pick a
+                    Heading</loc> Eric Meyer</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://accessibility.psu.edu/headingshtml/">Heading Tags</loc>
+               </p>
+            </item>
+        <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.456bereastreet.com/archive/201003/heading_navigation_in_web_browsers/">Heading navigation in web browsers</loc>
+               </p>
+            </item>
+            <item>
+               <p>Firefoxでは、以下のプラグインがキーボード操作による見出しナビゲーション機能を提供している：</p>
+               <ulist>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/">Accessibility Evaluation Toolbar</loc>
+                     </p>
+                  </item>
+                  <item>
+                     <p>
+                        <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://juicystudio.com/article/heading-navigation-greasemonkey-user-script.php">Heading Navigation Greasemonkey User Script</loc>
+                     </p>
+                  </item>
+               </ulist>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H42"/>
+      <relatedtech idref="F2"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+			<item><p>コンテンツが複数のセクションに分けられていることを確認する。</p></item>
+            <item>
+               <p>そのページの各セクションが見出しで始まることを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.4.1 には、＃2 を満たすことを確認する。</p>
+            </item>
+			<item><p>2.4.10 には、＃1 と ＃2 を満たすことを確認する。</p></item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

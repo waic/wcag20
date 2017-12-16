@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G196">
+   <short-name>画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する</short-name>
+   <applicability>
+      <p>非テキストコンテンツのグループを用いて情報又は機能を提示する、全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、隣り合う非テキストコンテンツのグループを用いて情報又は機能を提示する際に生じる不要な重複を回避することである。</p>
+    <p>ウェブページでは、画像のグループを提示して情報を伝えることがある。一緒に提示する、又は特定の組み合わせで提示することにより、こうしたグループは様々なタイプの情報を伝えることができる。例えば、2つの星の画像のうち1つを白黒、もう1つをカラーで表示し、利用者評価を表すために使用することができる。また、塗りつぶした3つの星に続いて塗りつぶしていない2つの星を提示すれば、利用者評価が満点の5つ星のうちの3つ星であることを示すこともできる。</p>
+    <p>この達成方法を用いるには、コンテンツ制作者が、グループ全体と等価の目的を果たす代替テキストをそのグループにあるどれか一つのアイテムに関連付けて提供する。そして、グループ内のその他のアイテムは、支援技術が無視できるようにする。こうすることによって、利用者は、より効率的にそのグループの目的を理解して、グループ内の各アイテムに代替テキストが提供した際に生じる重複又は混乱を回避することができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTMLでの評価システム</head>
+      <description><p>次の例では、塗りつぶされた星3つと塗りつぶされていない星2つで評価が示されている。代替テキストは、5つの画像それぞれに提供することもできるが、このコンテンツ制作者は、1つ目の画像に「5つ星のうちの3つ星」として画像のグループが伝えている評価を提供し、他の画像には空の代替テキストを用いている。 </p>
+</description>
+      <code role="html401"><![CDATA[
+   <p>評価：
+   <img src="star1" alt="5つ星のうちの3つ星">
+   <img src="star1" alt="">
+   <img src="star1" alt="">
+   <img src="star2" alt="">
+   <img src="star2" alt="">
+  </p>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>XHTMLで画像のグループによって作成されたボタン</head>
+      <description><p>この例では、宣言しているWCAGへの適合レベルを示すために、各ボタンが複数の画像一式を用いている。このアプローチによって、支援技術は「画像A、画像A、画像A」などのように読み上げるのを回避できるようになる。</p>
+</description>
+      <code role="xhtml1"><![CDATA[
+ <p>適合レベル：</p>
+ <button name="A"><img src="a.png" alt="レベル A" /></button> <br />
+ <button name="AA"><img src="a.png" alt="レベル AA" /><img src="a.png" alt="" /></button> <br />
+ <button name="AAA"><img src="a.png" alt="レベル AAA" /><img src="a.png" alt="" /><img src="a.png" alt="" /></button>]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G94"/>
+      <relatedtech idref="H2"/>
+      <relatedtech idref="H67"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>グループ内の一つのアイテムに、そのグループ全体の目的と等価な代替テキストがある。</p>
+        </item>
+        <item>
+          <p>グループ内のその他のアイテムは、支援技術が無視できるようにマークされている。 </p>
+        </item>
+        <item>
+          <p>支援技術が無視できるようにマークされたアイテムが、グループ全体に対する代替テキストのあるアイテムと隣り合っている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

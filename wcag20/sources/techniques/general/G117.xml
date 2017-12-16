@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G117">
+   <short-name>テキストの表現のバリエーションによって伝えている情報を伝達するために、テキストを使用する</short-name>
+   <applicability>
+      <p>テキストの視覚的な表現のバリエーションをサポートするウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、テキストの書式のバリエーションを通じて伝達される情報を同様にテキストで伝達することである。テキストの視覚的な見た目を変えて情報を伝達する際には、テキストでその情報を明確に提示すべきである。フォントの書体、サイズ、下線、取り消し線及びその他の様々なテキスト属性を変えることによって、視覚的な見た目にバリエーションをもたせることができる。このようなバリエーションが何らかの情報を伝達している際には、その情報がコンテンツのどこか他の場所でテキストによっても入手可能である必要がある。ドキュメント内に補足説明を加えること、又はテキストの表現のバリエーションを用いている箇所にインラインで説明を加えることによって、その情報を伝達することができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>新しいコンテンツをボールドの文字とテキストで示す</head>
+      <description>
+            <p>以下の例はアクセシビリティ標準のリストである。WCAG 2.0は新しいため、ボールドで表示されている。視覚のみで情報が提供されることを避けるため、「(new)」という単語も後ろにつけている。</p>
+      </description>
+      <code><![CDATA[
+          <h2>Web Accessibility Guidelines</h2>
+            <ul>
+            <li><strong>WCAG 2.0 (New)</strong></li>
+            <li>WCAG 1.0</li>
+            <li>Section 508</li>
+            <li>JIS X 8341-3</li>
+            ...
+            </ul>
+      ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>フォントのバリエーション及び明確な提示</head>
+      <description><p>オンライン上のある文書が、ドラフトを更新しながら版を重ねている。挿入部分には下線を引き、削除部分は取り消し線を引いている。ドラフトの最後に、「変更履歴」があり、それぞれのドラフトに対する変更箇所の全てをリスト化している。</p>
+</description>
+    </eg-group>
+      <eg-group>
+         <head>テキスト内のどの単語に異なるフォントが当てられているか知るための代替手段を提供する</head>
+         <description>
+            <p>あるオンラインテストでは、学生に対し、長い文章の短い要約を書くことを求めている。その要約には、原文にあるいくつかの単語を含めなければならない。原文では、要約に用いなければならない単語やフレーズが、他と異なるフォントで表示されている。独立したセクションにおいても、要約で用いなければならない単語やフレーズすべてがリスト化されてる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H49"/>
+      <relatedtech idref="C22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>テキストの表現のバリエーションが情報を伝えるために使用される項目を見つける。</p>
+            </item>
+            <item>
+               <p>これらの項目について、視覚的に伝達される情報がテキストにも明示的に記載されているかどうかを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2 を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F83">
+   <short-name>達成基準 1.4.3 及び 1.4.6 の失敗例 － 前景にあるテキスト（又は画像化された文字）とのコントラストが十分ではない背景画像を使用している</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="failure"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この不適合事例は、弱視の利用者が背景画像の上に表示されているテキストを読むことができない場合に関するものである。背景画像とテキストのコントラストが十分ではない時、背景画像はテキストと混同し、正確に読むことを困難にさせることがある。</p>
+    <p>達成基準1.4.3と1.4.6を満たすためには、テキストとその背景画像の間に十分なコントラストを確保しなければならない。画像に対して、これはテキストの背後にあってテキストにとても似ている画像の一部とテキストの間に十分なコントラストが必要であることを意味している。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>黒いテキストが黒い線の画像と重なっている。その線は文字の背景にあり、F'sをまるでE'sのように見せている。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>黒いテキストが濃い灰色の場所のある画像と重なっている。テキストが濃い灰色のどこの場所で交差していても、コントラストがとても不十分なため、テキストを読むことができない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p><emph role="bold">クイックチェック:</emph> まず初めに、テキストとその場所の一番暗い部分（色の濃いテキストに対して）又は一番明るい部分（色の明るいテキストに対して）のコントラストが達成基準（1.4.3又はは1.4.5）による要求事項を満たしている、又は上回っている。</p>
+        </item>
+        <item>
+          <p>クイックチェックを満たしていないとき、各文字の背後にある背景がその文字と十分なコントラストがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記1.を満たしておらず、2.も同様に満たしていなければ、この不適合の条件が適用され、そしてこのコンテンツはコントラストの達成基準に不適合となる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

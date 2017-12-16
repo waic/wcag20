@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F63">
+   <short-name>達成基準 2.4.4 の失敗例 － リンクと関係のないコンテンツにおいてのみ、リンクの文脈を提供している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合：</p>
+      <ulist>
+         <item>
+            <p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p>
+         </item>
+         <item>
+            <p>前の見出しの場合</p>
+         </item>
+         <item>
+            <p><att>aria-label</att> や <att>aria-labelledby</att> などの適切な ARIA プロパティを介する場合</p>
+         </item>
+      </ulist>
+    <p>利用者はリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>隣接する段落のリンク</head>
+      <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+<p>ある英国のビジネスマンが200万マイルの
+マイレージを獲得していて、世界初の消費者向け
+宇宙旅行の旅に出ようと計画している。</p>
+
+<p><a href="ff.html">続きを読む...</a></p>]]></codeblock>
+    </eg-group>
+    <eg-group role="failure">
+      <head>レイアウトテーブル内の隣接セルのリンク</head>
+      <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+   <table>
+   <tr> 
+       <td>ブラウザで音楽を聴く</td>
+   </tr>
+   <tr>
+       <td>
+       <a href="http://www.example.com/download.htm">
+       <img src="download.jpg" width="165" height="32" alt="今すぐダウンロード"></a>
+       </td>
+   </tr>
+ </table>]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA8"/>
+      <relatedtech idref="ARIA7"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>リンクの目的を理解するために、追加が必要なリンクの文脈を探す。各リンクについて：</p>
+         <olist>
+            <item>
+               <p>文脈が同じ文章、段落、リスト項目、テーブルのセル、関連するテーブルのヘッダー、または前の見出しに含まれているかどうかを確認する。</p>
+            </item>
+            <item>
+               <p>たとえば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分な文脈を提供するなど、リンクの文脈をプログラムで決定できるかどうかを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1 及び 2 が偽である場合、このコンテンツは達成基準に合格しない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G180">
+   <short-name>利用者が初期設定の制限時間を 10 倍に設定できる手段を提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、障害のない利用者に比べて障害のある利用者が長時間必要とするかもしれないタスクにおいて、障害のある利用者に完了するための十分な時間を提供することである。環境設定又はページ上のコントロールのようなメカニズムによって、利用者がデフォルトの制限時間の少なくとも10倍まで制限時間を延長できるようにする。可能であれば、このメカニズムはさまざまな調整機能を備え、利用者が制限時間を範囲内の任意の値に変えられるだけでなく、任意の増減幅で変えられる方法も提供するとよい。これにより、利用者は、制限時間のあるセッションを始める前に、制限時間を変更できるようになる。</p>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G133"/>
+      <relatedtech idref="SCR1"/>
+      <relatedtech idref="SCR16"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>制限時間をデフォルトの10倍に設定できるメカニズムがある。</p>
+        </item>
+        <item>
+          <p>制限時間をデフォルトの10倍にあたる新しい値に変更する。</p>
+        </item>
+        <item>
+          <p>制限時間のあるタスクを遂行する。</p>
+        </item>
+        <item>
+          <p>デフォルトの制限時間が経過するのを待つ。</p>
+        </item>
+        <item>
+          <p>上記 2. で設定した制限時間になるまで時間切れにならない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 及び 5. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

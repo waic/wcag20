@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G156">
+   <short-name>一般に入手可能なユーザエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を使用する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>IE、Firefoxの全てのバージョン、Mozilla、Operaのバージョン6以降を含む大部分のブラウザでは、利用者が色設定を変更することによって、コンテンツ制作者のCSSとHTMLのカラースキームを上書きできる。
+											</p>
+    </ua-issue>
+    <ua-issue name="Firefox" version="1.5+">
+      <p>FirefoxとNetscapeでは、特定の色を上書きした際、JavaScriptのポップアップボックスやドロップダウンメニューのほとんどが利用できなくなる問題がある。ポップアップボックスの背景が透明になり、そのボックスのテキストがページ上のテキストに重なってしまったり、ドロップダウンメニューが透明になるか、暗いグレーの背景になる。</p>
+    </ua-issue>
+    <ua-issue name="IE" version="6">
+      <p>IE 6では、背景色がシステム設定上で選択されていない限り、その色でブラウザ画面の背景色を上書きできない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>認知障害のある利用者は、ウェブページのコンテンツをうまく理解するために、前景のテキストと背景を特定の色の組み合わせを必要としていることがある。一般に利用されるブラウザの大部分が、ブラウザ内部の機能として、色設定を変更するオプションを提供している。この機能によって、コンテンツ制作者が指定した前景色や背景色を、利用者が選択した色で上書きできる。</p>
+    <p>この達成基準を満たすためには、コンテンツ制作者はこのようなコントロールを備えるブラウザでウェブページが利用できるようにデザインし、この機能を無効にするような実装を行なってはならない。</p>
+    <p>ページ上の全てのテキストの前景色と背景色を上書きすると、ページのグループ化や組織化に関する視覚的な手がかりが失われ、かえって理解や利用が困難になる恐れがある。ページ上の各領域の境界を示すのに背景色を用いている場合、この達成方法が適切ではない可能性がある。背景色をページ上の各領域の境界を示すのに用いているならば、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C23" linktype="css">C23: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色をCSSで指定する</loc>」に基づき、ページの視覚的な構造は保ちつつ、利用者が主要なテキストの色をコントロールできるようにするとよい。</p>
+  </description>
+   <examples>
+      <ulist>
+         <item>
+            <p>前景色と背景色の指定のために、HTML と CSS を用いてデザインしているウェブページがある。利用者はInternet Explorer 7 で自分の望む色に設定し、選択した前景色と背景色でコンテンツを見ることができる。</p>
+         </item>
+         <item>
+            <p>HTML と CSS を用いてデザインしているウェブページがある。さまざまなブラウザでどのように色を設定するかを説明したページへのリンクを設置している。</p>
+         </item>
+      </ulist>
+   </examples>
+   <resources/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>HTML コンテンツの色を利用者が変更できるブラウザで、ウェブページを開く。</p>
+        </item>
+        <item>
+          <p>ブラウザ設定で、コンテンツに指定された色とは異なる前景色と背景色に変更する。
+												 </p>
+        </item>
+        <item>
+          <p>ページに戻ると、ブラウザで設定した別の前景色と背景色が、コンテンツに指定された色を上書きしている。
+												</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

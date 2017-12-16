@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA15">
+   <short-name>画像の説明を提供するために aria-describedby を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <p>Updated July 16, 2013
+</p>
+         <ulist>
+            <item>
+               <p>Jaws V.11 and greater has complete support. IE10 JAWS 14. Speaks alt and then "press JAWS key + alt +r to hear descriptive text". IE 10 intermittent support, sometimes works, sometimes need to reload the page for JAWs to read it properly. 
+</p>
+            </item>
+            <item>
+               <p>ChromeVox V.1 and greater has complete support? 
+</p>
+            </item>
+            <item>
+               <p>VoiceOver V.3 and greater supports but replaces ALT text if both are present
+</p>
+            </item>
+            <item>
+               <p>NVDA 2 reads ALT text if both are present but not Describedby unless it is alone
+</p>
+            </item>
+            <item>
+               <p>Window Eyes as of V.7 ???.
+</p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、簡潔な代替テキストがオブジェクトで提供される機能や情報を適切に伝達しない場合に、画像の説明を提供することである。</p>
+      <p>WAI-ARIAには、<prop>aria-describedby</prop>プロパティを使用して、セクション、描画、フォーム要素、画像などと説明テキストを関連付けできる機能がある。これは、利用者が複雑な画像を理解するのを助ける追加情報を提供するのに両者が有用であるという点において<att>longdesc</att>属性に似ている。<att>longdesc</att>のように、<att>aria-describedby</att>を使用して提供される説明テキストは、HTMLで<att>alt</att>属性を使用して提供される短い名前とは別のものである。<att>longdesc</att>と異なり、<att>aria-describedby</att>は画像を含むページの外の記述を参照できない。画像と同じページのコンテンツを使用して長い説明を提供する利点は、支援技術を持たない、目の見える人を含め、その代替が誰でも利用できることである。執筆時点（2013年10月）で、一部の支援技術が利用者の操作なしに画像のalt属性情報の直後に<att>aria-describedby</att>の内容を読みあげることは注目に値する――これは、<att>longdesc</att>属性のほとんどの実装が、追加の説明を読むために利用者の明示的な操作を必要とすることとは対照的である。</p>
+      <p><att>aria-labelledby</att>のように、<att>aria-describedby</att>は、スペース区切りのリストを使用してページの他の領域を指すための複数のIDを受け入れることができる。この集合を定義するものはIDに限定されている。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>画像を説明する</head>
+         <description>
+            <p>次の例は、テキストの説明が画像と同じページ上にある場所で、長い説明を提供するためにどのように<att>aria-describedby</att>が画像に適用されるかを示す。</p>
+            <codeblock xml:space="preserve"><![CDATA[<img src="ladymacbeth.jpg" alt="Lady MacBeth" aria-describedby="p1">
+<p id="p1">This painting dates back to 1730 and is oil on canvas. It was created by 
+Jean-Guy Millome, and represents ...</p>]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA6"/>
+      <relatedtech idref="ARIA16"/>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="H45"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p><att>aria-describedby</att>属性が存在する各画像要素を調べる。</p>
+            </item>
+            <item>
+               <p>その<att>aria-describedby</att>属性が、その説明として用いられるテキストを含む要素の<att>id</att>を介して、要素とテキストの説明とをプログラム的に関連付けている。</p>
+            </item>
+            <item>
+               <p>結合された同等のテキスト及び関連付けられたテキストの説明が、オブジェクトに同等の目的を正確に説明する又は提供している。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.、2. 及び 3. を満たしている</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

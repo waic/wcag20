@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C9">
+   <short-name> 装飾目的の画像を付加するために、CSS を使用する</short-name>
+   <applicability>
+      <p>画像を表示させるために CSS が利用可能なウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、単に装飾することだけが目的の画像と、マークアップを追加することなくウェブコンテンツに対して視覚的な整形を行うための画像を追加する方法を示すことである。
+これによって、支援技術がテキストではないコンテンツを無視することが可能になる。
+文字サイズの拡大やハイコントラストの設定を妨げているCSSの背景画像を消すことができるように、一部のユーザエージェントでは、利用者の要求に応じて CSS を無視または無効にすることができる。</p>
+    <p>背景画像は、以下の CSS プロパティで表示させることができる：</p>
+    <ulist>
+      <item>
+        <p><code><![CDATA[background]]></code>, </p>
+      </item>
+      <item>
+        <p><code><![CDATA[background-image]]></code>, </p>
+      </item>
+      <item>
+        <p><code><![CDATA[content]]></code>（<code><![CDATA[:before]]> </code> 又は <code><![CDATA[:after]]></code> 疑似要素と組み合わせて使用）</p>
+      </item>
+      <item>
+        <p><code><![CDATA[list-style-image]]></code>. </p>
+      </item>
+    </ulist>
+    <p>注: この達成方法は、情報を伝えている画像、なんらかの機能を持っているような画像、主として知覚的なエクスペリエンスを作り出すことを目的としているような画像に対しては使用すべきではない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTMLページの背景画像</head>
+      <description><p>
+以下のスタイルシートは、ページ全体の背景画像を指定している。</p>
+</description>
+      <code><![CDATA[…
+<style type="text/css">
+body { background: #ffe url('/images/home-bg.jpg') repeat; }
+</style>
+</head>
+<body>
+…]]></code>
+    </eg-group>
+    <eg-group>
+      <head>CSSによるロールオーバーの背景画像</head>
+      <description><p>
+以下のスタイルシートは、利用者がマウスポインタをリンクの上に置いたときの装飾的なロールオーバー効果を出すためにCSSの<code>background</code>プロパティを使用している。</p>
+</description>
+      <code><![CDATA[a:hover { background: #ffe url('/images/hover.gif') repeat; color: #000;
+   text-decoration: none;
+}]]></code>
+    </eg-group>
+    <eg-group>
+      <head>タブなどの要素の角を丸くするために使われるCSSによる背景画像</head>
+      <description><p>
+以下のスタイルシートでは、要素の角を丸くするために、CSSの<code>background</code>プロパティを使用している。</p>
+</description>
+      <code><![CDATA[…
+<style type="text/css">
+ div#theComments { width:600px; }
+ div.aComment { background: url('images/middle.gif') repeat-y left top; 
+ margin:0 0 30px 0; }
+ div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
+ margin:0; padding:8px 16px; }
+ div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
+ margin:0; padding-top:30px; }
+</style>
+</head>
+<body>
+<div id="theComments">
+ <div class="aComment">
+  <blockquote>
+   <p>やあ、ジョン。俺はこの達成方法がマジで気に入ったんで、自分のサイトでも使おうと思ってるんだ！</p>
+  </blockquote>
+  <div class="submitter">
+   <p class="cite"><a href="http://example.com/">名無しさん</a> from エルボニア</p>
+  </div>
+ </div>
+ <div class="aComment">
+ …
+ </div>
+</div>
+…]]></code>
+    </eg-group>
+    <eg-group>
+      <head>見出しの見た目を良くするために使用される画像置換</head>
+      <description><p>
+以下の例では、見出し要素の内容であるテキストを置き換えるために装飾目的の画像が使われている。【訳注：画像置換は達成基準1.1.1の不適合事例であり、このような見出し要素で使用すべきではない。WCAGワーキンググループにこの事例の削除を提案中。】</p>
+</description>
+      <code><![CDATA[
+<style type="text/css">
+h3#about {
+width: 480px;
+height: 34px;
+position: relative;
+}
+
+h3#about span {
+background: url(about.gif) no-repeat;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+</style>
+...
+
+<h3 id="about" title="About example.com"> <span></span>example.com について</h3>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> The <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/CSS2/colors.html#propdef-background">background property in the CSS 2 specification</loc> 
+               </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-background">HTML 4.01 specification</loc> には、<code>body</code> 要素の <code>background</code> 属性は非推奨であると記述されている。</p>
+            </item>
+            <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</loc>
+          </p>
+        </item>
+        <item>
+          <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://css-discuss.incutio.com/?page=ImageReplacement">ImageReplacement - css-discuss</loc>
+          </p>
+        </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="C30"/>
+      <relatedtech idref="F3"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>装飾目的の画像がある。</p>
+        </item>
+        <item>
+          <p>それらが CSS で表示させられている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+       <ulist>
+        <item>
+          <p>1. に該当する場合に、2. を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

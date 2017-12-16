@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF15">
+   <short-name>PDF フォームで送信フォームアクションのある送信ボタンを提供する</short-name>
+   <applicability>
+     <p>フォームが含まれているタグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-unpredictable-change"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この達成方法の目的は、PDF フォームの送信フォームアクションを使用して、利用者が明示的に文脈の変更を要求できるメカニズムを提供することがある。送信ボタンの使用目的は、フォームに入力されたデータを送信する HTTP 要求を生成することなので、送信ボタンは文脈を変更するための適切なコントロールである。PDF 文書の送信ボタンは通常、PDF のオーサリングツールを使用して実装される。</p>
+    <p>事例 1 および 2 は、特定のオーサリングツールを使用して送信ボタンを追加する方法を示している。同様の機能を実行する PDF ツールは他にも存在する。「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」により提供される機能を参照のこと。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して送信ボタンを追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>ツールバーからフォーム &gt; フォームツール &gt; ボタンを選択し、フォーム上にボタンを作成する</p></item><item><p>ボタンのコンテキストメニューから「プロパティ」を選択し、［ボタンのプロパティ］ダイアログボックスを開く</p></item><item><p>［一般］タブで、ボタンのツールヒントを入力する</p></item><item><p>［オプション］タブで、ボタンラベルかアイコンイメージまたはその両方に対して、レイアウトメニューのオプションを選択する。次に、ボタンを送信ボタンとして指定するために「ラベル」ボックスにテキストを入力したり、「アイコンを選択」をクリックして、使用するイメージファイルを配置したりする</p></item><item><p>［アクション］タブで次の操作を行う</p>
+<ulist><item><p>「トリガを選択」で「マウスアップ」を選択する（Mouse Upイベントは、キーボードでアクセス可能である。また、Mouse Upイベントでは、Mouse Enterイベントなどが発生しても、ボタンで予想外にコンテキストが変更されない）</p></item><item><p>「アクションを選択」で「フォームを送信」を選択する</p></item><item><p>［追加］を押下する</p></item></ulist></item><item><p>［追加］ダイアログボックスで、サーバー上のデータを収集したり、電子メールの添付ファイルとしてフォームデータを収集したりするための URL を入力する</p></item></olist>
+<p>次の画像は、ボタンのプロパティダイアログボックスの［オプション］タブを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button2.jpg" height="481" width="562"/><alt>レイアウトおよびラベルボタンのプロパティが表示されている、［ボタンのプロパティ］ダイアログボックスの［オプション］タブ</alt></image></p><p>次の画像は、ボタンのプロパティダイアログボックスの「アクション」タブを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button.jpg" height="570" width="560"/><alt>スクリーンショット：「アクションを選択」オプションが指定されている、［ボタンのプロパティ］ダイアログボックスの［アクション］タブ</alt></image></p></description>
+    </eg-group>
+    <eg-group>
+      <head>Adobe LiveCycle Designer ES 8.2.1 を使用して送信ボタンを追加する</head>
+      <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>挿入 &gt; 標準メニューで、「HTTP 送信ボタン」項目を選択する</p></item><item><p>「HTTP 送信ボタン」の［オブジェクト］パネルに、フォーム送信処理の URL を挿入する</p></item></olist>
+<p>次の画像は、フォーム・コントロールの一覧が表示されている標準メニューを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/http.gif" height="257" width="399"/><alt>スクリーンショット：「HTTP 送信ボタン」が選択されている、フォーム・コントロールの一覧が表示されている標準メニュー</alt></image></p><p>次の画像は、URL とボタンの外観に関するその他のフィールドが表示されたオブジェクトパネルを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-panel.gif" height="287" width="239"/><alt>スクリーンショット：URL と送信ボタンの外観およびアクションを指定するためのその他のフィールドが表示されている［オブジェクト］パネル</alt></image></p></description>
+    </eg-group>
+    <eg-group>
+      <head>JavaScript を使用して PDF 文書内の送信ボタンにスクリプトアクションを追加する</head>
+      <description><p>次の JavaScript コードは、送信フォームアクションを指定するために使用されるスクリプトを示している。このスクリプトをフォームフィールドに追加するには、次の操作を行う。</p>
+<olist><item><p>事例 1 に示されているように、［ボタンのプロパティ］ダイアログボックスを開き、［アクション］タブを選択する</p></item><item><p>ドロップダウンリストから「JavaScript を実行」を選択し、「追加」ボタンを選択する</p></item><item><p>［JavaScript エディター］ダイアログボックスで、次のような JavaScript コードを入力する</p></item></olist>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+var aSubmitFields = new Array( "name", "id", "juser" );
+this.submitForm({
+  cURL: "http://www.example.com/cgi-bin/myscript.cgi#FDF",
+  aFields: aSubmitFields,
+  cSubmitAs: "FDF" // デフォルト、ここでは不要
+});]]></codeblock>
+      <description><p>次の画像は、このプロセスを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button1.jpg" height="552" width="587"/><alt>スクリーンショット：送信ボタンの［ボタンのプロパティ］ダイアログボックス</alt></image></p><p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button3.jpg" height="443" width="518"/><alt>スクリーンショット：［ボタンのプロパティ］ダイアログボックスの［アクション］タブに追加された JavaScript</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button-js.pdf"><!-- linktype="examples"-->スクリプトアクションを送信ボタンに追加したサンプル</loc>がある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 12.7.5.2 (Submit-Form Action) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://kb2.adobe.com/cps/332/332289.html">Create
+    						submission forms in LiveCycle Designer</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://partners.adobe.com/public/developer/en/xml/xfa_spec_2_5.pdf">XML
+    							Forms Architecture (XFA) Specification Version 2.5</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G80"/>
+      <relatedtech idref="PDF23"/>
+      <relatedtech idref="PDF12"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>フォームを送信するページごとに、送信ボタンが含まれているフォームを視覚的に確認し、以下のいずれかを確認する。</p>
+<ulist><item><p>ボタンにタブ移動し、ボタンを選択する利用者のアクションに反応してフォームが送信される</p></item><item><p>送信フォームアクションを示すことができるツールを使用して PDF 文書を開き、ボタンアクションがフォームの送信であることを確認する</p></item></ulist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>フォームが含まれている各ページにおいて、1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_submit_buttons_with_the_submit-form_action_in_PDF_forms"/>
+      </source>
+   </admin>
+</technique>

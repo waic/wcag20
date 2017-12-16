@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G140">
+   <short-name>情報と構造を表現から分離して、異なる表現を可能にする</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、表現的なエンコーディングからコンテンツの構造的なエンコーディングを論理的に分離することによって、支援技術のコンテンツとのインタラクションを容易にすることである。構造的なエンコーディングとは、見出し、段落、リスト、テーブルなどの要素を指定することであり、そういった目的のために用意されたウェブコンテンツ技術の機能を使用することによって行われる。一方、表現的なエンコーディングとは、書体、色、サイズ、位置、ボーダーのような書式効果の指定であり、ウェブコンテンツ技術の機能によってもサポートされている。</p>
+    <p>表現的な特性は視覚的に構造を暗示する、つまり利用者は用いられている書式設定の慣例から、見出し、段落、リストなどを判断できる。その一方で、これらの特性は、支援技術によるそのページとの効果的なインタラクションに十分なほど曖昧さのないように構造をエンコードしているわけではない。分離した構造、機能そして表現のレイヤーを提供することにより、書式設定によって暗示された意味を構造のレイヤーを通してプログラムが解釈できるようになる。</p>
+    <p>この達成方法を用いることによって、ユーザエージェントでは次のことが可能になる：</p>
+    <ulist>
+      <item>
+        <p>セクションの並び替え、又はセクションのリストやリンクのリストの生成のように、コンテンツの既存の構造をベースにした意味ある構造の変換を実行する。</p>
+      </item>
+      <item>
+        <p>表現的な情報のみに基づいて支援技術が決定できない、構造上の特徴に基づいたコンテンツとのインタラクションをサポートする。たとえば、リスト項目の数を示す、又はリストの終了位置までスキップすることによって、リストとの特別なインタラクションを提供することは望ましいかもしれないが、これが可能なのはリストの構造がリストの表現に加えてコード化されている場合のみである。</p>
+      </item>
+      <item>
+        <p>構造の特性に付随した代替の表現ルールを代用することによって、コンテンツの表現を改良する。</p>
+      </item>
+    </ulist>
+  </description>
+   <examples>
+      <eg-group>
+      <head>: CSS付きのHTML</head>
+      <description><p>HTMLドキュメントは、段落、リスト、見出しなどHTMLの構造特性を用いていて、書体の変更、レイアウトのヒントなどのような表現的な特性を用いることを避けている。そして、構造的なプロパティに基づいてドキュメントをフォーマットするために、CSSが用いられている。HTMLにおいてよく考えて設計されたclass属性は、必要に応じて構造的なマークアップの意味を拡張し、より柔軟なフォーマットをCSSによって可能にする。支援技術は、CSSを代用又は拡張して表現を改良する、もしくはCSSを無視して構造的なエンコーディングと直接やりとりをする。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>:タグ付きPDF</head>
+      <description><p>PDF文書は、書式設定情報が組み込まれているコンテンツでほとんど成り立っている。構造に関する情報は、XMLのようなタグを使用しているドキュメントの別セクションの中で提供されており、これは「タグ付きPDF」と呼ばれている。それらのタグの中にある情報は、支援技術が意味のある構造の変換に用いる（例えば、セクションのリストを生成する）ため、又は構造的な特徴に基づいたコンテンツとのインタラクションをサポートする（例えば、フォームの先頭にジャンプする）ために使用可能である。</p>
+</description>
+    </eg-group>
+   </examples>
+   <!-- Removed per http://www.w3.org/WAI/GL/wiki/SC_1.3.1_and_Low_Vision
+      	<resources>
+      		<see-also>
+      			<ulist>
+      				<item><p><loc href="http://www.clarosoftware.com/index.php?cPath=355&amp;s=bgrrjpjkvotks1d4lcgccgnkq1">ClaroRead</loc></p></item>
+      			</ulist>
+      		</see-also>
+      	</resources>
+      	-->
+   <related-techniques>
+      <relatedtech idref="C29"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ドキュメントのコードを調べる。</p>
+        </item>
+        <item>
+          <p>構造的な情報と機能性が明白に提供され、表象的な情報から論理的に分離されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H40">
+   <short-name>記述リストを使用する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-idioms" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、名前または用語の説明を記述リストの形式で提供することである。リストは <el>dl</el> 要素を用いてマークアップし、その中では用語それぞれを個別の <el>dt</el> 要素に含め、直後の <el>dd</el> 要素に説明を含める。意味のある順序が確保されていれば、複数の用語を単一の説明に、単一の用語を複数の説明に関連付けることもできる。<att>title</att> 属性を用いて、記述リストに関する補足情報を提供することもできる。記述リストを使用することで、表現が変化しても、用語とその説明が 1 つの単位としてグループ化され、意味的な関連が保証される。</p>
+    <p>説明がアルファベット順に並べられている場合は、記述リストを使用するのが最も容易である。記述リストの一般的な使用法は用語集である。</p>
+    <note><p>HTML5 では、「記述リスト」という名前が導入された。以前のバージョンでは、これらのリストは「定義リスト」と呼ばれていた。</p></note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>海事用語の記述リストを、航海に関するウェブサイトで利用している。</p>
+</description>
+      <code role="html401"><![CDATA[<dl title="海事用語">
+  <dt>ノット</dt>
+  <dd>
+    <p><em>ノット</em>は、1時間当たり1海里の速度単位である
+    （1時間当たり1.15マイルまたは1.852キロメートル）。</p>
+  </dd>
+  <dt>左舷</dt>
+  <dd>
+    <p><em>左舷</em>は、人間が船首（船の最前部）から見たときの、
+    船体の左側を表す海事用語である（ボートや船に使用される）。</p>
+  </dd>
+  <dt>右舷</dt>
+  <dd>
+    <p><em>右舷</em>は、人間が船首（船の最前部）から見たときの、
+    船体の右側を表す海事用語である（ボートや船に使用される）。</p>
+  </dd>
+</dl> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc href="https://www.w3.org/TR/html5/grouping-content.html#the-dl-element">HTML5 Description lists</loc></p>
+            </item>
+            <item>
+               <p><loc href="http://www.w3.org/TR/REC-html40/struct/lists.html#edef-DL">HTML 4 Definition lists: the DL, DT, and DD elements</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G62"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>用語とそれに関する説明の組み合わせについて：</p>
+      <olist>
+        <item>
+          <p>そのリストが、<el>dl</el>要素に含まれている。</p>
+        </item>
+        <item>
+          <p>リストの各用語が <el>dt</el> 要素内に含まれていることを確認する。</p>
+        </item>
+        <item>
+          <p>同じ説明を共有する複数の用語があるときに互いの <el>dt</el> 要素が連続することを確認する。</p>
+        </item>
+        <item>
+          <p>各用語に対する説明が 1 つ以上の <el>dd</el> 要素に含まれていることを確認する。</p>
+        </item>
+        <item>
+          <p>用語を含む 1 つ以上の <el>dt</el> 要素の直後に、1 つ以上の <el>dd</el> 要素があることを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記の全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

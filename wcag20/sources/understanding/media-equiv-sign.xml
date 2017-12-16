@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="media-equiv-sign">
+   <head>1.2.6</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、ろう者又は難聴の利用者で手話に堪能な人が、同期したメディアのプレゼンテーションの音声トラックコンテンツを理解できるようにすることである。例えば、キャプションに書かれているようなテキストは、第二言語であることがよくある。手話は、イントネーション、感情、及び、キャプションには反映されないが手話通訳には反映されるその他の音声情報を提供するので、手話通訳は同期したメディアの内容に対して字幕よりも豊富でより等価な情報を提供する。手話で頻繁にやりとりする人はまた、手話でより早口になり、同期したメディアは、時間依存のプレゼンテーションとなる。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>普段使う言語が手話である人は、読解力に限界があることがある。そういった利用者は、キャプションを読んで理解できない恐れがあり、同期したメディアのコンテンツを利用する機会を得るために手話を必要とする。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p>
+                <emph role="bold">事例 1.</emph> ある企業が、すべての従業員に重要な発表をしている。総会は本社で行われていて、ウェブでストリーミング配信されている。総会の場には手話通訳者がいる。ライブの映像には、プレゼンテーションをしている人物だけでなく手話通訳者も全身が映し出されている。</p></item>
+	<item><p>
+                <emph role="bold">事例 2.</emph> 事例 1 にあるのと同じ発表が、遠隔地にいる従業員にはウェブキャストで届けられている。利用可能な画面が一つしかないため、画面のコーナーに手話通訳者が映し出されている。</p></item>
+	<item><p>
+                <emph role="bold">事例 3.</emph> ある大学が、講義をする教授の同期したメディアによるプレゼンテーションを作成して、講義のオンライン版を提供している。そのプレゼンテーションには、化学の実験を解説して実演している教授の映像がある。講義内容の手話通訳を制作して、ウェブ上で同期したメディア版とあわせて提供している。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><loc href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia Integration Language (SMIL 2.0)</loc></p></item>
+	<item><p><loc href="http://www.w3.org/TR/SMIL-access/">Accessibility Features of SMIL</loc></p></item>
+	<item><p><loc href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</loc></p></item>
+	<item><p><loc href="https://www.nidcd.nih.gov/health/american-sign-language">National Institute on Deafness and other Communication Disorders</loc>: Information on American Sign Language</p></item>
+	<item><p><loc href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">Techniques for filming sign language interpreters</loc></p></item>
+	<item><p><loc href="http://www.actiononhearingloss.org.uk/">Royal National Institute for Deaf People (RNID)</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc href="G54" linktype="general"/></p></item>
+	<!-- BBC: Not complete as of PR, so commented out. item><p>Providing a new page that has the video with the sign language interpretation of the audio track (future link)</p></item-->
+	<item role="smil"><p>次の達成方法の一つを用いて、<loc href="G81" linktype="general"/><!--プレーヤーが異なるビューポートに表示可能な、又は画像上に重ねることが可能な手話通訳者の同期した映像を提供する--></p>
+	<ulist>
+		<item><p><loc href="SM13" linktype="smil"/></p></item>
+		<item><p><loc href="SM14" linktype="smil"/></p></item>
+	</ulist>
+	</item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head/>
+<div5>
+<head>メタデータの達成方法</head>
+<ulist>
+	<item><p>メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする (リンク追加予定)</p>
+	<ulist>
+		<item><p>事例: ウェブページの様々な英国式の手話通訳 (ASL, SASL, BSL, Auslan, ISL, NZSL) を指し示す URI を、メタデータの中で、提供する</p></item>
+	</ulist>
+	</item>
+</ulist>
+</div5>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

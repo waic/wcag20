@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F3">
+   <short-name>達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を表示させるために、CSS を使用している</short-name>
+   <applicability>
+      <p>CSS に対応しているウェブコンテンツ技術全て</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>CSS の background-image プロパティは、HTML コード内での参照なしに、画像を CSS で文書に含める方法を提供する。CSS の background-image プロパティは装飾のために使用するものであるため、CSS で組み込まれる画像に代替テキストを付けることはできない。 テキストによる代替は、重要な情報を伝える画像を見ることのできない人にとって必須のものである。 したがって、このプロパティを重要な情報を伝える画像を追加するために使用した場合は失敗となる。この失敗は、背景画像が HTML の style 属性で宣言された場合、及び背景画像宣言がクライアントスクリプトで動的に作成された場合（下の失敗例 3: を参照）にも同様に適用される。</p>
+    <note>
+      <p>
+背景画像の中に情報を組み込むことは、読みやすくする目的で背景を変えている人や、OS のハイコントラスト・モードの利用者に対しても問題を引き起こす。これらの利用者は、代替テキストが存在しないことで背景画像に含まれている情報を失うことになる。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head/>
+      <description><p>
+以下の例では、コンテンツの一部として CSS によってのみ表示させられている画像が含まれている。その画像 (TopRate.png) は 180×200 ピクセルで「基準金利 年 19.3%」というテキストを含んでいる。</p>
+</description>
+      <code><![CDATA[
+CSS内: 
+p#bestinterest {
+  padding-left: 200px;
+  background: transparent url(/images/TopRate.png) no-repeat top left;
+}]]></code>
+      <description><p>上記コードの適用先:</p>
+</description>
+      <code><![CDATA[
+<p id="bestinterest">
+  これ以上の金利を発見できましたか？
+</p>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head/>
+      <description><p>
+ある書籍販売業者は、「新刊」「限定版」「在庫あり」「在庫なし」を示すためのアイコンとして背景画像を使用している。</p>
+<p>CSS内： </p>
+</description>
+      <code><![CDATA[
+ul#booklist li {
+  padding-left: 20px;
+}
+
+ul#booklist li.new {
+  background: transparent url(new.png) no-repeat top left; 
+}
+                            
+ul#booklist li.limited {
+  background: transparent url(limited.png) no-repeat top left; 
+}
+                            
+ul#booklist li.instock {
+  background: transparent url(instock.png) no-repeat top left; 
+}
+
+ul#booklist li.outstock {
+  background: transparent url(outstock.png) no-repeat top left; 
+}]]></code>
+      <description><p>上記コードの適用先：</p>
+</description>
+      <code><![CDATA[
+<ul id="booklist">
+  <li class="new">ある書籍</li>
+  <li class="instock">他の書籍</li>
+  <li class="limited">オススメできない書籍</li>
+  ...
+  <li class="outstock">あなたの本当に欲しい書籍</li>
+</ul>]]></code>
+    </eg-group>
+      <eg-group role="failure">
+         <head/>
+         <description>
+            <p>失敗例 1 のコードで使用されている、同じ背景画像が HTML style 属性で宣言されている。</p>
+            <codeblock xml:space="preserve"><![CDATA[<p id="bestinterest" style="background: transparent url(/images/TopRate.png) no-repeat top left;" >
+これ以上の金利を発見できましたか?
+<p>]]></codeblock>
+            <p>次のコードでは、背景画像の宣言がクライアントスクリプト内で作成されている。</p>
+            <codeblock xml:space="preserve"><![CDATA[<script type="text/javascript">
+var newP = document.createElement('p');
+var newPText = document.createTextNode('Where else would you find a better interest rate?');
+newP.appendChild(newPText);
+newP.style.background = 'transparent url(/images/TopRate.png) no-repeat top left';
+document.body.appendChild(newP);
+</script> ]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H37"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>CSS によってコンテンツに追加されているすべての画像を検査対象とする。</p>
+        </item>
+        <item>
+          <p>画像は重要な情報を伝えていない。</p>
+        </item>
+        <item>
+          <p>画像が重要な情報を伝えている場合、その情報は支援技術にも伝えられ、かつCSSによる画像が表示されない場合でも伝えられるようになっている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2と3の両方を満たさない場合は不適合となり、コンテンツは達成基準を満たさないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

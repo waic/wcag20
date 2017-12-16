@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H97">
+   <short-name>関連したリンクをグループ化するために、nav 要素を使用する</short-name>
+   <applicability>
+      <p>関係のあるリンクを含むHTML5文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic" relationship="sufficient"/>
+   </applies-to>
+   <description>
+      <p>この達成方法の目的は、HTML5 <el>nav</el> 要素を使ってナビゲーションリンクをグループ化することである。<el>nav</el> 要素は、HTML5 のいくつかの区分される要素の 1 つである。このマークアップを使うと、スクリーンリーダーのような支援技術の利用者が過去に場所を確認してスキップしたリンクを分類するのが容易になる。セマンティックな構造を使うと、カスタムスタイルシートでそれらの関係性を維持しながらリンクのグループの表現を変更できる。<el>nav</el> 要素がページ上で複数回使用されている場合は、<att>aria-label</att> 又は <att>aria-labelledby</att> 属性を使用してナビゲーショングループを区別する。</p>
+      <p>リンクのグループ全てを　<el>nav</el> 要素でマークアップする必要は無い。例として、リンクはリストのような他の構造にグループ化されることもあり、またはページの分離されたセクションを表現しない場合 ARIA マークアップを使うこともある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>1 つの nav 要素に囲まれたナビゲーションリンク</head>
+         <description>
+            <p>この例は、アクセシビリティカリキュラムにおけるナビゲーションリンクを分類するために <el>nav</el> 要素を使う。</p>
+         </description>
+         <code role="html5"><![CDATA[
+				 <nav>
+				    <a href="../webaccessibility.html">ウェブアクセシビリティ</a>
+				    <a href="../docaccessibility.html">ドキュメントアクセシビリティ</a>
+					<a href="../mobileaccessibility.html">モバイルアクセシビリティ</a>
+				 </nav>
+            ]]></code>
+      </eg-group>
+      <eg-group>
+         <head>多くのnav要素</head>
+         <description>
+            <p>この例は、文書中に1つ以上のnav要素があるときに、ナビゲーション分類を識別するためにaria-label属性とnav要素を使う。</p>
+         </description>
+         <code role="html5"><![CDATA[
+			<nav aria-label="Site menu">
+			  <ul>
+				  <li>...ここにサイトナビゲーションのリンク一覧 ...</li>
+			  </ul>
+			</nav>
+			...
+			<article>
+			  <nav aria-label="Related links">
+				...ここに関連するリンク一覧 ...
+			  </nav>
+			</article>          ]]></code>
+      </eg-group>
+      <eg-group>
+         <head>一般的な多くの nav 要素</head>
+         <description>
+            <p>以下の例は、同じページに 2 つ以上のナビゲーションメニューが存在し、ラベルとして参照されうるページ上に既存のテキストが無いという状況での良い事例である。</p>
+         </description>
+         <code role="html5"><![CDATA[
+			<nav aria-label="primary">
+				<a href="home.html">ホーム</a>
+				<a href="about-us.html">私たちについて</a>
+				<a href="products.html">商品</a>
+			</nav>
+
+			<nav aria-label="secondary">
+				<a href="adverts.html">広告主</a>
+				<a href="related.html">関連するリンク</a>
+				<a href="subsidiaries.html">補足</a>
+			</nav>            ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <!--loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-markup/nav.html">HTML5 nav element</loc--><!-- オリジナルのリンク（404）元文書から改変。元文書のリンクが変更されたらあわせること -->
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html51/sections.html#the-nav-element">HTML5 nav element</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA11"/>
+      <relatedtech idref="G141"/>
+      <relatedtech idref="G140"/>
+      <relatedtech idref="H42"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>視覚的に寄せ集められておりページのセクションを表現するリンクが <el>nav</el> 要素で囲まれていることを確認する。</p>
+            </item>
+          </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記 1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

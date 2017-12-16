@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F61">
+   <short-name>達成基準 3.2.5 の失敗例 － 利用者がコンテンツ内で停止させることのできない自動的な更新によってメインコンテンツを完全に変更する</short-name>
+   <applicability>
+      <p>全般</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="consistent-behavior-no-extreme-changes-context"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この文書では、メインの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="viewportdef" linktype="glossary">ビューポート</loc>に表示されているコンテンツが自動的に更新され、コンテンツに利用者がこの振る舞いを停止するための選択肢をがない不適合事例について述べている。</p>
+    <p>達成基準 3.2.5 の不適合事例となるかどうかを検証するためのチェックポイントが「検証」のセクションで挙げられている。チェックポイント 1. が可能であることが望ましく、コンテンツ制作者がビューポートのコンテンツを生成するコードを確認できることを想定している。</p>
+    <p>しかし、それが可能ではないケースも考えられる（例えば、CMS、djangoやruby-on-railsなどのアプリケーション環境、またはサードパーティによるAjaxやPHPなどのスクリプト言語によって生成されるコンテンツなど）。そのため、チェックポイント 2. がそのような場合の検証のために提示されている。時間枠は指標でしかなく、その他のチェックポイントを満たしていなければ、一定の時間が経過した後に生じるあらゆる変化は不適合事例としてみなすべきである。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>ニュースサイトで、常に最新の見出しが表示されるように、コンテンツが自動的に更新される。この振る舞いを停止させる選択肢がない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>スライドショーがビューポートの全体に表示されていて、自動的に次のスライドに進んでいく。停止ボタンはない。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>検索エンジンが自動的に検索結果を生成し、利用者の入力に応じてコンテンツを動的に更新する。この振る舞いを停止する選択肢がない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>平均的な利用者がページに費やす時間を測定または推定する。</p>
+            </item>
+            <item>
+               <p>ページに移動する</p>
+            </item>
+            <item>
+               <p>平均的な利用者がページに滞在する10倍の時間を待つ。 （ステップ1から）</p>
+            </item>
+            <item>
+               <p>この間にコンテキストに変化があるかどうか確認する。</p>
+            </item>
+            <item>
+               <p>コンテキストの変化がない場合、終了する。</p>
+            </item>
+            <item>
+               <p>コンテキストの変化がある場合は、そのコンテキストの変化を止めるメカニズムがページに存在するかどうかを確認する。</p>
+            </item>
+            <item>
+               <p>コンテキストの変化を止めるメカニズムがある場合は、そのメカニズムを使用してコンテキストの変化を止めて、テストをやり直す。</p>
+            </item>
+            <item>
+               <p>コンテキストの変化があり、コンテキストの変化を止めるメカニズムがない場合は失敗となる。</p>
+            </item>
+         </olist>
+         <note>
+            <p>ステップ 1 の時間を測定または推定する1つの方法は、ウェブサイトの解析結果から平均的な利用者がページをどのくらいの時間見ているかを確認する。</p>
+            <p>ステップ 6 の例は、自動更新をオフにするメカニズムである。</p>
+         </note>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>ステップ 8 に達すると、コンテンツはこの達成基準に合格しない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

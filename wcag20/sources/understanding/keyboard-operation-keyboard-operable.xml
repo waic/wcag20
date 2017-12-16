@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="keyboard-operation-keyboard-operable">
+   <head>2.1.1</head>
+   <div3 role="intent">
+      <head>Intent of this Success Criterion</head>
+
+<p>この達成基準の意図は、可能な限り、コンテンツをキーボード又は (代替キーボードが利用できるような) キーボードインタフェースで操作できるようにすることである。コンテンツがキーボード又は代替キーボードで操作可能であれば、(目と手を一緒に使うマウスのようなデバイスを使用できない) 全盲の人にも、代替キーボード又はキーボードエミュレータのような入力デバイスを使用しなければならない人にも操作できることになる。キーボードエミュレータには、音声認識入力ソフトウェア、呼気/吸気操作ソフトウェア、オンスクリーンキーボード、スキャニングソフトウェア、そして様々な支援技術及び代替キーボードがある。ロービジョンの利用者は、ポインタを目で追うのが困難なことがあり、キーボードでソフトウェアを操作できれば、ソフトウェアがとても使いやすくなる (又は、単に使えるようになる)。</p>
+<p>「個々のキーストロークに特定のタイミング」の事例としては、利用者が短時間のうちに複数の打けんを繰り返す又は実行する必要がある状況、又は打けんが受け付けられるまでは長い間キーを押下していなければならないような状況がある。</p>
+<p>「ただし、その根本的な機能が単に利用者の動作の終点に依存しておらず、利用者の動作による軌跡に依存して実現されている場合は除く。」というフレーズは、キーボードから無理なく操作することができないものとを区別するために含まれている。</p>
+<p>ポインティングデバイスにより実行される操作のほとんどは、(例えば、クリックする、選択する、動かす、拡大、縮小するなど) キーボードでも実行可能である。しかし、過度のキーストローク数を必要としない既知の方法でキーボードから実行できないポインティングデバイスで行われる細かな入力の分類がある。手書き描画、水彩画、及び障害物訓練コースでのヘリコプター操縦は、どれも軌跡に依存した入力を要する機能の事例である。直線や規則的な幾何学的図形を描く、ウィンドウのサイズを変更する及びある位置へオブジェクトをドラッグして移動させること (その位置への軌跡に意味がない場合) は、軌跡に依存した入力を必要としない。</p>
+<p>(テンキーでマウスポインタを操作する) マウスキーの使用は、アプリケーションと同等のキーボードではないので、この達成基準を満たさないだろう。これはマウスに相当する (つまり、アプリケーションにはマウスのように見える)。</p>
+<p>利用者の入力機能を設計する際、オペレーティングシステムのキーボードアクセシビリティ機能を使用する可能性があることを考慮するのは当然のことである。例えば、修飾キーがロックされているかもしれない。そのような環境でコンテンツは引き続き機能し、予期しない結果を生じるために修飾キーロックと衝突するイベントは送信されない。</p>
+
+<div4 role="benefits">
+<head>Benefits: How Success Criterion 2.1.1 helps people with disabilities</head>
+<ulist>
+	<item><p>(目と手を一緒に使うマウスのようなデバイスを使用できない) 全盲の人</p></item>
+	<item><p>(画面上のポインタを見つけたり、目で追ったりするのが困難である) ロービジョンの人</p></item>
+	<item><p>マウスを使うのがとても困難なため、通常はキーボードを使用している手に震えのある人</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>2.1.1 examples</head>
+<ulist>
+	<item><p>
+                <emph role="bold">事例 1: 描画プログラム</emph>
+              </p><p>描画プログラムは、利用者がキーボード操作でオブジェクトの作成、サイズ変更、配置及び回転をすることが可能である。</p></item>
+	<item><p>
+                <emph role="bold">事例 2: ドラッグアンドドロップ機能</emph>
+              </p><p>ドラッグアンドドロップを用いるアプリケーションは、オブジェクトを移動させるための「カット」及び「ペースト」、又はフォームコントロールをサポートしている。</p></item>
+	<item><p>
+                <emph role="bold">事例 3: 離れている点の間の移動及び接続</emph>
+              </p><p>点を結ぶプログラムは、利用者が画面上の点間を移動し、スペースキーで現在の点と直前の点を結ぶことができる。</p></item>
+	<item><p>
+                <emph role="bold">事例 4: 例外 － お絵描きプログラム</emph>
+              </p><p>水彩画を描くプログラムは、ひと筆の動きが移動の速度及び持続時間にかなり依存して変化するため、例外の一つとして認められる。</p></item>
+	<item><p>
+                <emph role="bold">事例 5: 例外 － 模型ヘリコプター操縦訓練シミュレータ</emph>
+              </p><p>ヘリコプター操縦訓練シミュレータは、シミュレータの性質上、模型ヘリコプターの動作をリアルタイムで教えるものであるため、例外の一つとして認められる。</p></item>
+	<item><p>
+                <emph role="bold">事例 6: オプションのキーボード付き PDA</emph>
+              </p><p>通常スタイラスペンで操作する PDA は、オプションで接続可能なキーボードがある。そのキーボードは、標準的な方法で全てのウェブ閲覧を行うことが可能である。ウェブコンテンツはキーボードのみでも利用できるように設計されているので、そのキーボードでも操作可能である。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 2.1.1 の達成方法及び不適合事例 － キーボード操作</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G202" linktype="general"/></p></item>
+	<item><p>次の達成方法の一つを用いて、キーボードで操作できることを保証する。</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H91" linktype="html"/></p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF3" linktype="pdf"/> 
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF11" linktype="pdf"/> 
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF23" linktype="pdf"/> 
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL15" linktype="silverlight"/> 
+                </p></item></ulist></item>
+	<item role="script"><p>次の達成方法の一つを用いて、
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G90" linktype="general"/> :     </p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR20" linktype="script">SCR20: キーボードとその他のデバイス特有の機能を両方とも用いる</loc>
+                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR35" linktype="script"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR2" linktype="script"/></p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL9" linktype="silverlight"/> 
+                </p></item><item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL14" linktype="silverlight"/> 
+                </p></item></ulist></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH17" linktype="flash"/>　かつ、必要に応じて次の達成方法を用いる:</p><ulist><item><p>
+                      <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH22" linktype="flash"/>
+                    </p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH16" linktype="flash"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="FLASH14" linktype="flash"/></p></item></ulist></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head>Additional Techniques (Advisory) for 3.1.1</head>
+<ulist>
+	<item><p>インタラクティブなユーザインタフェースコンポーネントとして静的な要素に再度目的を持たせる場合、XHTML の役割、状態、及び値の属性を使用する (リンク追加予定) 及び <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR29" linktype="script">静的な HTML 要素に対してキーボードのアクセスしやすさを加える</loc></p></item>
+	<item><p>重要なリンク及びフォームのコントロールへのキーボードショートカットを提供する (リンク追加予定)</p></item>
+	<item><p>一覧表の各項目を始めるために固有の文字の組合せを使用する (リンク追加予定)</p></item><item role="script"><p>	もっとも抽象的なイベントハンドラを選択する (リンク追加予定) (Scripting)</p></item>
+	<item role="script"><p>OnActivate イベントを使用する (リンク追加予定) (Scripting)</p></item>
+	<item><p>他の目的で、一般的なユーザエージェントのキーボードコマンドの使用を避ける (リンク追加予定)</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+<ulist>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F54" linktype="failure"/>
+                </p></item>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F55" linktype="failure"/>
+                </p></item>
+	<item><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F42" linktype="failure"/>
+                </p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="media-equiv-real-time-captions">
+   <head>1.2.4</head>
+   <div3 role="intent">
+     <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、ろう又は難聴の利用者が<emph role="bolditalic">リアルタイム</emph>の提示を見られるようにすることである。キャプションは、音声トラックを通じて利用可能なコンテンツの一部を提供する。キャプションには、会話を含めるだけでなく、誰が話しているのかも特定し、そして、効果音及びその他の重要な音声を表記する。</p>
+
+<p>この達成基準は、同期したメディアの放送に適用することを意図しており、ウェブアプリケーションを介し 2 人以上の個人間で行う双方向のマルチメディア電話に対し、利用者のニーズにかかわらずキャプションの提供を求めることを意図していない。キャプションを提供する責任は、コンテンツの提供者 (電話をかける人) 又は「ホスト」として電話をかける人に課せられるもので、アプリケーションには課せられない。</p>
+
+<div4 role="benefits">
+<head/>
+<ulist>
+	<item><p>ろう又は難聴の利用者が、同期したメディアのコンテンツにある音声情報を、キャプションを通じて入手することができるようになる。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item>
+	<p><emph role="bold">ウェブキャスト</emph></p>
+	<p>報道機関が、ライブのキャプション付きウェブキャストを提供している。</p>
+	</item>
+	<item>
+	<p><emph role="bold">音楽のウェブキャスト</emph></p>
+	<p>オーケストラが、個々のリアルタイムウェブパフォーマンスのコミュニケーション アクセス リアルタイム トランスレーション (CART) によりキャプションを提供している。CART サービスは、歌詞や会話を取り込むだけでなく、タイトル及び楽章、作曲者、利用者が音楽の性質を理解するのに役立つあらゆる情報によって、歌のない音楽を特定する。</p>
+	</item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><specref ref="media-equiv-captions"/>を参照のこと。</p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item>	<p><loc href="G9" linktype="general"/>、<emph role="bold">かつ</emph>、<loc href="G93" linktype="general"/><!--オープン・キャプション（常に表示）を提供する--></p></item>
+	<item><p>クローズドキャプションをサポートするビデオプレーヤーのある、すぐに利用可能なメディア形式を用いて、<loc href="G9" linktype="general"/>、<emph role="bold">かつ</emph>、<loc href="G87" linktype="general"/><!--クローズド・キャプションを提供する--></p></item>
+	<item role="smil"><p>次のどれか一つを用いて、<loc href="G9" linktype="general"/>、<emph role="bold">かつ</emph>、<loc href="G87" linktype="general"/>:</p>
+	<ulist>
+		<item><p><loc href="SM11" linktype="smil"/></p></item>
+		<item><p><loc href="SM12" linktype="smil"/></p></item>
+	</ulist>
+	</item>
+</olist>
+<note>
+<p>キャプションは、リアルタイムのテキスト変換サービスを用いて生成できるかもしれない。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head/>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

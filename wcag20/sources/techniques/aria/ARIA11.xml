@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA11">
+   <short-name>ページの領域を特定するために ARIA ランドマークを使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <ulist>
+            <item>
+               <p>Jaws V.11 and greater has complete support.
+</p>
+            </item>
+            <item>
+               <p>ChromeVox V.1 and greater has complete support 
+</p>
+            </item>
+            <item>
+               <p>VoiceOver V.3 and greater supports all landmarks except “form”.
+</p>
+            </item>
+            <item>
+               <p>NVDA 2 supports all landmarks except it will not support navigation to “application”
+</p>
+            </item>
+            <item>
+               <p>Window Eyes as of V.7 does not support ARIA landmarks.
+</p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、ウェブページのセクションに対して、プログラムによるアクセスを提供することである。ランドマークロール（又はランドマーク）は、ページのセクションをプログラムによって識別できるようにする。ランドマークは、支援技術（AT）利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。</p>
+      <p>ランドマークはまた、支援技術の利用者に、複数ページで繰り返されるコンテンツのブロックをスキップする容易な方法を提供するとともに、ページの構造をプログラムによって理解できるようにする。たとえば、すべてのページに見られる共通のナビゲーションメニューが存在する場合、ランドマークロール（又はランドマーク）は、ナビゲーションメニューをスキップし、セクションからセクションにナビゲートするために使用できる。これは、伝統的な「スキップリンク」メカニズムそっくりに、支援技術利用者とキーボード利用者が、実際に後続にあるものを見つけるために大量のコンテンツの中をタブ移動するための時間と手間を省く（支援技術サポートの詳細については上記のユーザエージェントノートを参照のこと）。ニュースサイトのメニューに精通しているだろう、トップニュースを得ることにのみ関心がある目の不自由な利用者は、より容易に"main"ランドマークにナビゲートして、多数のメニューリンクを無視できる。別の状況で、目の不自由な利用者は、すぐにナビゲーションメニューを検索したいかもしれず、ナビゲーションランドマークにジャンプすることでこれを実現できる。</p>
+      <p>ランドマークはまた、目の見えるキーボード利用者が<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+      	href="https://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">ブラウザプラグイン</loc>を使用して、ページのセクションにナビゲートするのを支援することもできる。</p>
+      <p>ランドマークは、セクションをマークする要素上のrole属性を使用してページに挿入される。属性値は、ランドマークの名前である。ロールの値は次のとおりである:</p>
+      <ulist>
+         <item>
+            <p>banner: ページの主見出し又は内部タイトルを含む領域。</p>
+         </item>
+         <item>
+            <p>complementary: 主要コンテンツをサポートしているが、独立しかつ意味のある、文書の任意のセクション。</p>
+         </item>
+         <item>
+            <p>contentinfo: 著作権やプライバシーに関する声明へのリンクなど、親文書に関する情報を含む領域。</p>
+         </item>
+         <item>
+            <p>form: フォーム関連要素のコレクションを表す文書の領域であり、その一部は編集可能な、処理するためにサーバーに送信可能な値を表すことができる。</p>
+         </item>
+         <item>
+            <p>main: 文書における主要コンテンツ。ほとんどの場合において、1つのページは1つのみのrole="main"を持つ。</p>
+         </item>
+         <item>
+            <p>navigation: 文書内の、又は関連する文書へのナビゲートに適したリンクのコレクション。</p>
+         </item>
+         <item>
+            <p>search: ウェブ文書の検索ツール。</p>
+         </item>
+         <item>
+            <p>application: ウェブ文書とは対照的な、ウェブアプリケーションとして宣言された領域。（注記: applicationロールは、スクリーンリーダーに対して通常のウェブナビゲーションコントロールをオフにする信号を与えるため、注意して使用すべきである。一般に、単純なウィジェットには application ロールを与えるべきでなく、また、全くウェブページのように利用されておらず、かつ支援技術を用いた利用者のテストが十分に行われている場合を除き、ウェブページの全体に application ロールを与えるべきではない。）</p>
+         </item>
+      </ulist>
+      <p>特定のランドマークロールがページ上で複数回使用できる場合があり、主要及び補助のナビゲーションメニューのようなものを表すことができる。この場合、同一ロールは、領域にラベル付けを行うための有効な技術を用いて、互いに曖昧さをなくすべきである（下記の例を参照）。</p>
+      <p>ランドマークは、HTMLの見出し、リスト、及びその他の構造的マークアップのようなネイティブセマンティックマークアップの補足となるべきである。ランドマークは、WAI-ARIA対応の支援技術によって解釈可能であり、ブラウザによって利用者に直接公開されるものではない。</p>
+      <p>ページ上のすべてのコンテンツをランドマークに含めることがベストプラクティスであり、そうすればセクションからセクションへナビゲートするためにランドマークに依存するスクリーンリーダー利用者がコンテンツの経路を見失うことはなくなる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>単純なランドマーク</head>
+         <description>
+            <p>次の例は、ランドマークがどのようにHTML4やXHTML 1.0文書に追加され得るのかを示している:</p>
+            <codeblock xml:space="preserve"><![CDATA[<div id="header" role="banner">A banner image and introductory title</div>
+<div id="sitelookup" role="search">....</div>
+<div id="nav" role="navigation">...a list of links here ... </div>
+<div id="content" role="main"> ... Ottawa is the capital of Canada ...</div>
+<div id="rightsideadvert" role="complementary">....an advertisement here...</div>
+<div id="footer" role="contentinfo">(c)The Freedom Company, 123 Freedom Way, Helpville, USA</div>]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>同じ種類の複数のランドマークとaria-labelledby</head>
+         <description>
+            <p>次の例は、同じページで2つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのようにHTML4やXHTML1.0文書に追加されうるのかのベストプラクティスを示している。たとえば、navigationロールがウェブページ上で複数回使用される場合、各インスタンスは<att>aria-labelledby</att>を使用して、指定された一意のラベルを持ってもよい:</p>
+            <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-labelledby="leftnavheading">
+<h2 id="leftnavheading">Institutional Links</h2>
+<ul><li>...a list of links here ...</li> </ul></div>
+<div id="rightnav" role="navigation" aria-labelledby="rightnavheading">
+<h2 id="rightnavheading">Related topics</h2>
+<ul><li>...a list of links here ...</li></ul></div>]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>同じ種類の複数のランドマークとaria-label</head>
+         <description>
+            <p>次の例は、同じページで2つ以上の同じ種類のランドマークが存在する状況で、ラベルとして参照できるページでテキストが存在しない場合、ランドマークがどのようにHTML4やXHTML1.0文書に追加されうるのかのベストプラクティスを示している。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-label="Primary">
+<ul><li>...a list of links here ...</li></ul> </div>
+<div id="rightnav" role="navigation" aria-label="Secondary">
+<ul><li>...a list of links here ...</li> </ul></div>]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>検索フォーム</head>
+         <description>
+            <p>次の例は、"search"ランドマークをもつ検索フォームを示す。searchロールは一般的に、フォームフィールドや、検索フォームを囲むdivに適用する。</p>
+            <codeblock xml:space="preserve"><![CDATA[<form role="search">
+<label for="s6">search</label><input id="s6" type="text" size="20">
+...
+</form> ]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/usage#usage_intro">Accessible Rich Internet Applications (WAI-ARIA) 1.0, Using WAI-ARIA Roles</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/states_and_properties">Accessible Rich Internet Applications (WAI-ARIA) 1.0, Supported States and Properties</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                  	href="https://www.paciellogroup.com/blog/2013/07/enabling-landmark-based-keyboard-navigation-in-firefox/">Enabling landmark-based keyboard navigation in Firefox</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://accessibleculture.org/articles/2011/02/not-all-aria-widgets-deserve-role-application/">Not All ARIA Widgets Deserve role="application"</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                  	href="https://developer.yahoo.com/blogs/ydn/aria-role-application-53608.html">When Should You Use ARIA Role="Application"?</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H69"/>
+      <relatedtech idref="SCR28"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>をもつ各要素を検査する。</p>
+            </item>
+            <item>
+               <p>ランドマークロール属性が、そのロールに対応するページのセクションに適用されている（すなわち、"navigation"ロールはナビゲーションセクションで適用され、"main"ロールはメインコンテンツが始まる場所に適用される）。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

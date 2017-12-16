@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA12">
+   <short-name>見出しを特定するために role=heading を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <ulist>
+            <item>
+               <p> Jaws 13 and higher supports this technique.
+</p>
+            </item>
+            <item>
+               <p> NVDA 2012.3 supports this technique.
+</p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、支援技術（AT）に見出しとしてひとまとまりのコンテンツを識別するための手段を提供することである。要素に <code><![CDATA[role="heading"]]></code> を適用することで、（スクリーンリーダーなどの）支援技術に、あたかもそれが見出しであったかのように扱わせることができる。</p>
+      <p>ページ上に複数の見出しがあり、かつ見出し階層が視覚的なプレゼンテーションを通して定義される場合、見出しの階層レベルを示すために<att>aria-level</att>属性が使用されるべきである。</p>
+      <p>可能な場合、ネイティブな見出しマークアップを直接使用すること。たとえば、<code><![CDATA[<div role="heading" aria-level="1">]]></code>を使用するのではなく、<el>h1</el>を使用するのが好ましい。しかし、見出しマークアップの代わりに heading ロールを使用することが必要な場合がある。たとえば、スクリプトが既存の要素の階層構造に依存しているレガシーサイトを改装する場合などである。</p>
+      <p><prop>heading</prop>ロールとネスティングレベルの用途については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/aria-practices/#kbd_layout_nesting">WAI-ARIA 1.0 Authoring Practices</loc>で説明されている。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>単純な見出し</head>
+         <description>
+            <p>この例は、スクリプトが既存の要素の階層構造に依存する、又はレベルが不明であるレガシーなサイトを改装する際に、role="heading"を使用した簡単な見出しを実装する方法を示す。たとえば、さまざまなソースからシンジケートされたウェブコンテンツを、最終的なプレゼンテーションがどうなるかの知識なしで構築できるかもしれない。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div role="heading">Global News items</div>
+... a list of global news with editorial comment....
+
+<div role="heading">Local News items</div>
+... a list of local news, with editorial comment ...]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>追加の見出しレベル</head>
+         <description>
+            <p>この例は、role="heading"と<att>aria-level</att>属性を用いてレベル7見出しを実装する方法を示す。HTMLはレベル6までの見出しのみをサポートしているため、このセマンティックスを提供するためのネイティブ要素は存在しない。</p>
+            <codeblock xml:space="preserve"><![CDATA[...
+<h5>Fruit Trees</h5>
+...
+<h6>Apples</h6>
+<p>Apples grow on trees in areas known as orchards...</p>
+...
+<div role="heading" aria-level="7">Jonagold/div>
+<p>Jonagold is a cross between the Golden Delicious and Jonathan varieties...</p>]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/roles#heading">Accessible Rich Internet Applications (WAI-ARIA) 1.0, Heading in the Roles Model</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H42"/>
+      <relatedtech idref="H69"/>
+      <relatedtech idref="G141"/>
+      <relatedtech idref="F2"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>属性role="heading"をもつ各要素を調べる。</p>
+            </item>
+            <item>
+               <p>要素の内容が見出しとして適切である。</p>
+            </item>
+            <item>
+               <p>要素が<att>aria-level</att>属性を持つ場合、値が適切な階層レベルである。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

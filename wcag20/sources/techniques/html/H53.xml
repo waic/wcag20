@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H53"><!--MC to update wiki and review output-->
+   <short-name><el>object</el> 要素のボディを使用する</short-name>
+   <applicability>
+      <p>メディアを読み込む<el>object</el>要素（HTML及びXHTML）</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-audio-desc" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-text-doc" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue>
+      <p>この達成方法は、支援技術が十分にサポートしておらず、ブラウザによるサポートも一定していない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、<el>object</el> 要素によってレンダリングされるコンテンツに対して、テキストによる代替を提供することである。<el>object</el> 要素のボディは、そのオブジェクトに関する完全なテキストによる代替を提供するのに用いられるか、または追加的な非テキストコンテンツをテキストによる代替とともに含むことがある。</p>
+    <p><el>object</el> 要素のフォールバックコンテンツは、ユーザエージェントによってメディアに要素が読み込まれなかった場合、つまり、ユーザエージェントがメディアテクノロジーまたは利用者の指定によるレンダリングできない場合のみ使用可能である。その状況ではフォールバックコンテンツが利用者に提示される。もしメディアがフォールバックコンテンツなしにレンダリングされた場合、メディアは直接アクセスできることが不可欠である。制作者は、適合基準にメディア技術の直接アクセス可能性に頼っておらず、利用者がフォールバックにアクセスできることを予期できるのであれば、達成基準を満たすためにのみこの達成方法に頼ることができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>長めの説明を含んだオブジェクト</head>
+      <code><![CDATA[<object classid="http://www.example.com/analogclock.py">
+  <p>ここにオブジェクトとその操作方法に関するテキストを記述する。</p>
+</object>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>代替テキストのある非テキストコンテンツを含んだオブジェクト</head>
+      <code><![CDATA[<object classid="http://www.example.com/animatedlogo.py">
+  <img src="staticlogo.gif" alt="会社名" />
+</object>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>機能の簡単な説明を含んだ画像オブジェクト</head>
+      <code><![CDATA[<object data="companylogo.gif" type="image/gif">
+  <p>会社名</p>
+</object>]]></code>
+    </eg-group>
+      <eg-group>
+         <description>
+            <p>この例は、情報の代替表現が提供するために <el>object</el> 要素がネストされている事実を利用している。</p>
+         </description>
+         <code role="xhtml10"><![CDATA[<object classid="java:Press.class" width="500" height="500">
+  <object data="Pressure.mpeg" type="video/mpeg">
+    <object data="Pressure.gif" type="image/gif">
+      温度は上昇し、バルーンの中の分子は…
+    </object>
+  </object>
+</object>  ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT">HTML 4.01
+                    OBJECT element</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/article/object-paranoia.php">Object
+                  Paranoia</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="H46"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p><el>object</el>要素のボディに、そのオブジェクトの代替テキストがある</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.満たしている</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

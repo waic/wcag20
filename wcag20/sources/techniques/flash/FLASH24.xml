@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH24">
+   <short-name>利用者がデフォルトの制限時間を延長できるようにする</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、スクリプトでデフォルトの制限時間が設定されている場合に、制限時間を延長するメカニズムを提供して、利用者がデフォルトの制限時間を延長できるようにすることである。利用者が制限時間の延長を要求できるように、利用者が長い制限時間を入力したり長い時間が必要なことを指定したりできるフォームなどをスクリプトで提供することができる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>ドロップダウンリストを使用してタイムアウトを変更する</head>
+         <description>
+            <p>ここでは、利用者がドロップダウンリストを使用してタイムアウト時間を変更できる、基本的な AS2 の例を示す。この例には、sessionLimitDuration というインスタンス名のコンボボックスがある。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import mx.controls.Alert;
+import mx.accessibility.AlertAccImpl;
+import mx.accessibility.ComboBoxAccImpl;
+
+ComboBoxAccImpl.enableAccessibility();
+AlertAccImpl.enableAccessibility();
+
+var sessionTimeout;
+var sessionNotificationTimeout;
+var timeLimit: Number;
+var sessionAlert: Alert;
+
+adjustTimeoutDuration();
+// インタラクションが発生したらタイムアウトをリセットする
+testField.addEventListener("change", resetTimeout);
+
+//
+//combobox の値が変更されたら制限時間を更新する
+//
+sessionLimitDuration.addEventListener("change", adjustTimeoutDuration);
+
+function adjustTimeoutDuration(e) {
+  timeLimit = sessionLimitDuration.value * 1000;
+  resetTimeout();
+  timeoutDescription.text = "A session timeout will be simulated after " + 
+    sessionLimitDuration.selectedLabel + " without interaction in the form field below."
+}
+
+function resetTimeout() {
+  clearTimeout(sessionTimeout);
+  sessionTimeout = setTimeout(endSession, timeLimit);
+}
+
+function endSession() {
+  sessionAlert.deletePopUp();
+  Alert.show("please log in again",
+  "Your session has expired");
+}]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH24/checkbox_for_extending_timelimit_as3.html"><!--
+                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH24/checkbox_for_extending_timelimit_as3.fla"><!--
+                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのソース（英語）</loc>をダウンロードすることもできる。なお、このサンプルではデモンストレーションが目的であるため、セッション時間を意図的に短くしてある。コンテンツ制作者は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="time-limits-required-behaviors"
+                    linktype="understanding">「達成基準 2.2.1 （調整可能な制限時間）」</loc>の要件を満たすための十分な時間を提供する必要がある。</p>
+            <!--<ednote>
+								<edtext>The test zip was updated but seems completely changed from the previous version. And it seems to be a checkbox, while the example in the wiki source mentions a drop-down list. Is this one correct, or does the inline example need updating, or a second example added, or something? For the moment the working example references the updated version.</edtext>
+							</ednote>-->
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR1"/>
+      <relatedtech idref="G133"/>
+      <relatedtech idref="G198"/>
+      <relatedtech idref="G180"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>制限時間を含む Flash コンテンツで次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>ページの先頭に制限時間を調整するためのコントロールがあり、利用者がデフォルトの 10 倍以上の時間に調整できる</p>
+            </item>
+            <item>
+               <p>ページのデフォルトの制限時間が、普通の 10 倍の時間が必要な利用者でも 1. のコントロールに簡単に移動できる長さである</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>1. および 2. を満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Allowing_the_user_to_extend_the_default_time_limit"/>
+					</source>
+   </admin>
+</technique>
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH12">
+   <short-name>クライアントサイドのバリデーションを提供し、エラーメッセージのテキストをアクセシブルな「説明」によって追加する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+      <!--<success-criterion idref="minimize-error-reversible"/>-->
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、各フィールドに利用者が入力した値をクライアントサイドのスクリプトを用いてバリデートすることである。エラーが見つかった場合、無効なデータのあるコントロールにエラーメッセージが追加される。エラーメッセージは、コントロールのすぐ横に視覚的に配置される。また、エラーメッセージのテキストがコントロールのアクセシブルな「説明」に追加され、コントロールがフォーカスを受け取るときに、支援技術で読みやすくなる。</p>
+      <!--<ednote>
+						<edtext>In the wiki this technique was indicated as applying to SC 3.3.4. However, don't see how that fits and removed that.</edtext>
+					</ednote>-->
+   </description>
+   <examples>
+      <eg-group>
+         <head>テキストフィールドのバリデート</head>
+         <description>
+            <p>この事例では、二つのテキストフィールド（「name」および「zip code」）を含むサンプルフォームが示されている。どちらのフィールドも必須入力である。フォームの「submit」ボタンが押されると、テキストフィールドの値が検証される。テキストフィールドに無効な値が含まれていると、<obj>_accProps</obj> オブジェクトがそのテキストフィールドに対して生成され、<prop>description</prop> プロパティにエラーメッセージが設定される。</p>
+            <note>
+               <p>注記： アクセシブルな「説明」（<prop>_accProps.description</prop> プロパティ）を使用する代わりに、エラーテキストをアクセシブルな「名前」（<prop>_accProps.name</prop>）に追加することもできる。これは、_accProps.descriptionよりも広範囲の支援技術でサポートされている。</p>
+            </note>
+            <p>ActionScript 2.0 のコード</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import flash.accessibility. *;
+import mx.accessibilty.ButtonAccImpl;
+import mx.controls.Alert;
+import mx.accessibility.AlertAccImpl;
+
+AlertAccImpl.enableAccessibility();
+ButtonAccImpl.enableAccessibility;
+
+resetTextFieldAccNames();
+Accessibility.updateProperties();
+
+submit_btn.addEventListener("click", handleClick);
+function handleClick(e) {
+  //reset values
+  resetTextFieldAccNames();
+  resetTextFieldAccDescriptions();
+  resetErrorLabels();
+  //perform validation
+  var errors =[];
+  if (name_txt.text == '')
+    errors.push([name_txt, "You must enter your name", name_error_lbl]);
+  if (zipcode_txt.text == '')
+    errors.push([zipcode_txt, "You must enter your zip code", zipcode_error_lbl]);
+  else if (zipcode_txt.text.length != 5 || isNaN(zipcode_txt.text))
+    errors.push([zipcode_txt, "Zip code must be 5 digits", zipcode_error_lbl]);
+  
+  //add validation error messages, if any
+  var field, errorMsg, errorLabel;
+  if (errors.length > 0) {
+    //loop over encountered errors
+    for (var i = 0; i < errors.length; i++) {
+      field = errors[i][0];
+      errorMsg = errors[i][1];
+      errorLabel = errors[i][2];
+      
+      updateAccDescription(field, "Warning: " + errorMsg);
+      errorLabel.text = errorMsg;
+    }
+  } else {
+    Alert.show("Form field values were entered correctly");
+  }
+  Accessibility.updateProperties();
+}
+
+function updateAccName(obj, newName: String) {
+  if (! obj._accProps)
+  obj._accProps = new Object();
+  obj._accProps.name = newName;
+}
+
+function updateAccDescription(obj, newDescription: String) {
+  if (! obj._accProps)
+  obj._accProps = new Object();
+  obj._accProps.description = newDescription;
+}
+
+function getAccName(obj) {
+  return obj._accProps? obj._accProps.name: "";
+}
+
+function resetTextFieldAccNames() {
+  updateAccName(name_txt, "name, required");
+  updateAccName(zipcode_txt, "zip code, required");
+}
+
+function resetTextFieldAccDescriptions() {
+  updateAccDescription(name_txt, "");
+  updateAccDesciption(zipcode_txt, "");
+}
+
+function resetErrorLabels() {
+  name_error_lbl.text = "";
+  zipcode_error_lbl.text = "";
+}]]></code>
+         <description>
+            <p>この方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.html"><!--                    linktype="examples"-->テキストフィールドのバリデートのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"                href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.fla"><!--
+                    linktype="examples"-->テキストフィールドの検証のソース（英語）</loc>をダウンロードすることもできる。</p>
+            <!--<ednote>
+								<edtext>These files seem to be different from what was expected in the wiki. The files I was expecting were named client_side_validation_flash_forms_using_accessible_description_as2.*, while what we have are client_side_validation_flash_forms_using_alert_as2.*. And reading over the example in the wiki and looking at the example files, it seems they don't match. The example files use an alert, but the wiki describes updating the accessible name. The example seems good, but like it applies to a different technique, which maybe we should document. Either that, we should update the technique, particularly the example it claims to be a working example of, or get the correct example files in place.</edtext>
+							</ednote>-->
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR32"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーが送信可能でインタラクティブなフォームを提供する場合、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>エラーメッセージ（アラート）が、視覚的にコントロールのすぐ隣に配置されている。</p>
+            </item>
+            <item>
+               <p>エラーメッセージ（アラート）が、コントロールのアクセシブルな「名前」または「説明」に追加されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_client-side_validation_and_adding_error_text_via_the_accessible_description"/>
+					</source>
+   </admin>
+</technique>
+

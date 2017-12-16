@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H81">
+   <short-name>入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>文脈に関する情報をプログラムが解釈できるようにリンクと関連付けたとしても、支援技術にはそのリンクからフォーカスを移動させずに親要素であるリスト項目を読み上げるコマンドがない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、入れ子になったリストに含まれるリスト項目によって与えられる文脈から、リストの中のリンクの目的を特定することである。このリスト項目によって、リンクテキストだけでは不明瞭なリンクに文脈が与えられることになる。その説明によって、利用者がそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。</p>
+    <p>現在の支援技術には、親のリスト項目によって与えられる文脈的な情報を照会するコマンドがないため、この達成方法を用いても、利用者はリスト項目ひとつひとつに移動する必要がある。そのため、この達成方法は、非常に長く又は深く入れ子になったリストには適していないことがある。</p>
+    <note>
+      <p>可能なかぎり、文脈による補足を必要とせずにリンクの目的が特定できるリンクテキストを提供すべきである。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <head>ある文書を3つのファイル形式で提供する場合</head>
+      <code role="xhtml"><![CDATA[<ul>
+<li>2005-2006年版 年次報告書
+  <ul> 
+  <li><a href="annrep0506.html">（HTML）</a></li>
+  <li><a href="annrep0506.pdf">（PDF）</a></li>
+  <li><a href="annrep0506.rtf">（RTF）</a></li>
+  </ul>
+</li>
+<li>2006-2007年版 年次報告書
+  <ul> 
+  <li><a href="annrep0607.html">（HTML）</a></li>
+  <li><a href="annrep0607.pdf">（PDF）</a></li>
+  <li><a href="annrep0607.rtf">（RTF）</a></li>
+  </ul>
+</li>
+</ul> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>複数のホテルに関する情報のブロック</head>
+      <description><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p>
+</description>
+      <code role="xhtml"><![CDATA[<ul>
+<li><a href="royal_palm_hotel.html">ロイヤル・パーム・ホテル</a>
+  <ul class="horizontal">
+    <li><a href="royal_palm_hotel_map.html">地図</a></li>
+    <li><a href="royal_palm_hotel_photos.html">写真</a></li>
+    <li><a href="hroyal_palm_hotel_directions.html">案内</a></li>
+    <li><a href="royal_palm_hotel_reviews.html">お客様レビュー</a></li>
+    <li><a href="royal_palm_hotel_book.html">予約フォーム</a></li>
+  </ul>
+</li>
+<li><a href="hotel_three_rivers.html">ホテル・スリー・リバー</a>
+  <ul class="horizontal">
+    <li><a href="hotel_three_rivers_map.html">地図</a></li>
+    <li><a href="hotel_three_rivers_photos.html">写真</a></li>
+    <li><a href="hotel_three_rivers_directions.html">案内</a></li>
+    <li><a href="hotel_three_rivers_reviews.html">お客様レビュー</a></li>
+    <li><a href="hotel_three_rivers_book.html">予約フォーム</a></li>
+  </ul>
+</li>
+</ul> ]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="G53"/>
+      <relatedtech idref="H33"/>
+      <relatedtech idref="C7"/>
+      <relatedtech idref="H77"/>
+      <relatedtech idref="H78"/>
+      <relatedtech idref="H79"/>
+      <relatedtech idref="H80"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して：</p>
+      <olist>
+        <item>
+          <p>そのリンクが含まれる<el>ul</el>要素又は<el>ol</el>要素を見つける。</p>
+        </item>
+        <item>
+          <p>そのリスト要素（<el>ul</el>要素又は<el>ol</el>要素）が、<el>li</el>要素の子孫要素である。</p>
+        </item>
+        <item>
+          <p>そのリンクテキストと親のリスト項目を組み合わせると、リンクの目的が説明されている。</p>
+        </item>
+      </olist>
+    </procedure>
+     <expected-results>
+      <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

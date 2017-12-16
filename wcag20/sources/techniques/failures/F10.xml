@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F10">
+   <short-name>達成基準 2.1.2 及び 適合要件 5 の失敗例 － 利用者が一つのフォーマットの中に閉じ込められてしまうように、複数のコンテンツ・フォーマットを組み合わせている</short-name>
+   <applicability>
+      <p>利用者がキーボードを使ってコンテンツに入ることができるが、キーボードでコンテンツから抜け出すことができない状況を作り出すコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-trapping" relationship="failure"/>
+      <conformance-criterion idref="cc5" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>コンテンツに複数のフォーマットが含まれている場合、そのコンテンツを利用者に正しく提示するのに、しばしば 1 つ以上のユーザエージェント又はプラグインが必要となる。例えば、XHTML、SVG、SMIL、XForms を含んだウェブページは、利用者がコンテンツと情報のやり取りを行えるように、ブラウザに 3 つもの数のプラグインを要求することがある。一部のプラグインでは、キーボードのフォーカスがプラグインで「閉じ込められ」て、キーボードのみの利用者は他のコンテンツに戻ることができないという共通の状況が発生する。</p>
+  </description>
+   <examples>
+      <ulist>
+         <item>
+            <p><emph role="bold">利用者を閉じ込めるプラグイン： </emph>利用者が Tab キーを押してプラグインに入ると、プラグインの外のコンテンツにキーボードを使って戻ることができなくなる。元の状態に戻って、新しいウェブページにナビゲートするには、利用者はブラウザを再起動しなければならず、このプラグインのコンテンツの後に続くコンテンツへは、アクセスできない。</p>
+         </item>
+      </ulist>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G21"/>
+      <relatedtech idref="SCR20"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>キーボードを使って、コンテンツ内を行き来する。</p>
+        </item>
+        <item>
+          <p>キーボードフォーカスが「閉じ込め」られることはなく、また、ユーザエージェントを閉じたり、OS を再起動したりすることなく、キーボードフォーカスをプラグインのコンテンツの外に移動させることが可能である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>キーボードフォーカスが「閉じ込められている」場合、この不適合の条件が適用され、そのコンテンツは達成基準及び適合要件 5 を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH31">
+   <short-name>データグリッドの表題を指定する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、見た目で表題が提供されている場合に、プログラムによって表題をデータグリッドに関連付けることである。通常、テーブルの表題はテーブルの識別子であり、テーブルのタイトルまたは見出しとして機能する。</p>
+      <p>Flash には DataGrid コンポーネント用の caption 要素はない。ただし、以下のアプローチによって同じ効果を得ることができる。</p>
+      <olist>
+         <item>
+            <p>データグリッドの上にラベルコンポーネント又はテキストフィールドを配置し、グリッドの表題を設定する。</p>
+         </item>
+         <item>
+            <p>表題のテキストを複製し、グリッドのアクセシブルな名前として追加する。これを行うには、グリッドのアクセシビリティパネルの「名前」フィールドに値を設定するか、又はグリッドの <prop>AccessibilityProperties.name</prop> プロパティを設定する。</p>
+         </item>
+      </olist>
+   </description>
+   <examples>
+      <eg-group>
+         <head>データグリッドにラベルを関連付ける</head>
+         <description>
+            <p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。また、コンポーネントパネルから表題となるテキストを格納するためのラベル要素も追加される。この表題は Flash のアクセシビリティパネルで使用され、データグリッドのアクセシビリティ用の名前として機能する。</p>
+            <ulist>
+               <item>
+                  <p>新しい Flash ファイル（.fla）を作成するか、既存のファイルを開いてデータグリッドを挿入する。</p>
+               </item>
+               <item>
+                  <p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p>
+               </item>
+               <item>
+                  <p>データグリッドコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p>
+               </item>
+               <item>
+                  <p>ラベルコンポーネントをステージ上にドラッグし、目的の位置に配置する。</p>
+               </item>
+               <item>
+                  <p>ラベルコンポーネントにテキストを追加する。</p>
+               </item>
+               <item>
+                  <p>データグリッドコンポーネントを選択し、アクセシビリティパネルを使用して、データグリッドの「名前」フィールドにラベルコンポーネントで使用しているのと同じテキストを追加する。</p>
+               </item>
+            </ulist>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActiveScript 3 を使用してデータグリッドにキャプションを関連付ける</head>
+         <description>
+            <p>ここでは、AS3 のスクリプトによってデータグリッドを生成する基本的な事例を示す。また、表題となるテキストを格納するラベル要素も作成する。この表題は、アクセシブルな名前としてグリッドに追加する。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import fl.accessibility.DataGridAccImpl;
+import fl.controls.DataGrid;
+import fl.controls.Label;
+import fl.data.DataProvider;
+import flash.accessibility.Accessibility;
+import flash.accessibility.AccessibilityProperties;
+import flash.system.Capabilities;
+
+// データグリッドのアクセシビリティを有効にする
+DataGridAccImpl.enableAccessibility();
+
+createGrid();
+
+// データグリッドの表題を設定する
+var gridCaptionText: String = "Game Results";
+gridCaption.text = gridCaptionText;
+//表題をデータグリッドのアクセシブルな名前として追加する
+var accProps: AccessibilityProperties = new AccessibilityProperties();
+accProps.name = gridCaptionText;
+aDg.accessibilityProperties = accProps;
+if (Capabilities.hasAccessibility)
+Accessibility.updateProperties();
+
+function createGrid() {
+  
+  //コンポーネントを作成して追加する
+  var aDg: DataGrid = new DataGrid();
+  var gridCaption: Label = new Label();
+  addChild(aDg);
+  addChild(gridCaption);
+  aDg.move(50, 50);
+  gridCaption.move(50, 20);
+  
+  var captionFormat: TextFormat = new TextFormat();
+  captionFormat.size = 24;
+  gridCaption.setStyle("textFormat", captionFormat);
+  gridCaption.width = 300;
+  gridCaption.height = 100;
+  bldRosterGrid(aDg);
+  //データを準備する
+  var aRoster: Array = new Array();
+  aRoster =[ 
+    {Name: "Wilma Carter", Bats: "R", Throws: "R", Year: "So", Home: "Redlands, CA"},
+    {Name: "Sylvia Munson", Bats: "R", Throws: "R", Year: "Jr", Home: "Pasadena, CA"}, 
+    {Name: "Carla Gomez", Bats: "R", Throws: "L", Year: "Sr", Home: "Corona, CA"}, 
+    {Name: "Betty Kay", Bats: "R", Throws: "R", Year: "Fr", Home: "Palo Alto, CA"},
+  ];
+  aDg.dataProvider = new DataProvider(aRoster);
+  aDg.rowCount = aDg.length;
+};
+
+function bldRosterGrid(dg: DataGrid) {
+  dg.setSize(400, 300);
+  dg.columns =[ "Name", "Bats", "Throws", "Year", "Home"];
+  dg.columns[0].width = 120;
+  dg.columns[1].width = 50;
+  dg.columns[2].width = 50;
+  dg.columns[3].width = 40;
+  dg.columns[4].width = 120;
+};]]></code>
+         <description>
+            <p>このコード例に関する注記:</p>
+            <ulist>
+               <item>
+                  <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                          href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.html"><!--
+                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                          href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.fla"><!--
+                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのソース（英語）</loc>をダウンロードすることもできる。</p>
+               </item>
+               <item>
+                  <p>Flash のオーサリングツールのアクセシビリティパネルを使用することによって、データグリッドにアクセシブルな名前を適用することもできる。</p>
+               </item>
+               <item>
+                  <p>上記の事例では、データグリッドの表題として使用されるテキストは2回読み上げられる。1回目は視覚に問題のない利用者向けのテキストラベルとして、2回目はデータグリッドのアクセシブルな名前としてである。コンテンツ制作者は、ラベルテキストの <prop>silent</prop> プロパティを <propval>true</propval> に設定することによって、読み上げが重複するのを回避することができる。</p>
+               </item>
+            </ulist>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="H39"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>Flash ムービーに DataGrid コンポーネントが含まれているかどうかを確認する。</p>
+            </item>
+            <item>
+               <p>各データグリッドの表題となるテキストが、アクセシブルな名前としてコンポーネントに追加されている</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>2. を満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Specifying_caption_text_for_a_DataGrid"/>
+					</source>
+   </admin>
+</technique>
+

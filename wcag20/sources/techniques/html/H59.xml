@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H59">
+   <short-name>link 要素及びナビゲーションツールを使用する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-location" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <ulist>
+        <item>
+          <p>link要素について、ユーザエージェントと支援技術のサポートが一貫していない。</p>
+        </item>
+        <item><p>ユーザエージェントの一部は、link要素で指定されている情報を表示する追加的なナビゲーションバーを提供する。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。</p>
+            <p><el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="//www.subotnik.net/html/link">(X)HTMLにおける「link」要素（英語）</loc>を参照。</p></item>
+      </ulist>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、link要素を用いて、あるHTMLページがウェブページ一式の中でどのような位置にあるのかを示すメタデータを提供する方法、及び利用者がウェブページ一式の中で特定のコンテンツを発見することを支援する方法について解説することである。rel属性の値が、どのような関係性が定義されているのかを示し、href属性がその関係を持つドキュメントへのリンクを提供する。複数のlink要素を用いることで、複数の関係を示すこともできる。<att>rel</att>属性の値としては、以下のようなものが有用である:</p>
+    <ulist>
+      <item>
+        <p>Start：複数のドキュメントの中の最初のドキュメントへのリンク</p>
+      </item>
+      <item>
+        <p>Next：一連のドキュメントにおける次のドキュメントへのリンク</p>
+      </item>
+      <item>
+        <p>Prev：一連のドキュメントにおける前のドキュメントへのリンク</p>
+      </item>
+      <item>
+        <p>Contents：目次の役割を果たすドキュメントへのリンク</p>
+      </item>
+      <item>
+        <p>Index：現在のドキュメントに対して索引を提供するドキュメントへのリンク</p>
+      </item>
+    </ulist>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>オンライン書籍の第2章のウェブページがあり、<el>head</el>要素セクションに次のリンクが含まれている。</p>
+</description>
+      <code role="html401"><![CDATA[<link rel="Contents" href="Contents.html" title="目次"  />
+<link rel="Index" href="Index.html" title="索引" />
+<link rel="Prev" href="Chapter01.html" title="01. なぜ進んでやるのか？" />
+<link rel="Next" href="Chapter03.html" title="03. 誰が進んでやるのか？" /> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-html40/struct/links.html#edef-LINK">HTML 4.01
+                    LINK element</loc>
+								       </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-html40/types.html#type-links">HTML 4.01 link
+                    types</loc>
+								       </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://cdn.mozdev.org/linkToolbar/">Link Toolbar extension for
+                  Firefox</loc>
+								       </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/QA/Tips/use-links">Use &lt;link&gt;s in your
+                    document</loc> from W3C's Quality Web Tips </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.htmlhelp.com/reference/html40/head/link.html">LINK -
+                    Document Relationship</loc> from Web Design Group </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G1"/>
+      <relatedtech idref="G63"/>
+      <relatedtech idref="G64"/>
+      <relatedtech idref="G123"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>一連のまたは集合的なウェブページにおける、あるウェブページについて：</p>
+      <olist>
+        <item>
+          <p>ナビゲーションに関する全ての<el>link</el>要素が、その文書の<el>head</el>要素セクションに含まれている</p>
+        </item>
+        <item><p>その文書の<el>head</el>要素セクション内のナビゲーションに関する各<el>link</el>要素に、少なくとも以下が指定されている：</p>
+                
+                        <olist><item><p>リンクタイプを特定するための<att>rel</att>属性</p></item><item><p>該当するリソースの場所を示すための妥当な<att>href</att>属性</p></item></olist></item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

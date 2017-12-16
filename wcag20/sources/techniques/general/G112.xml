@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G112">
+   <short-name>インラインの定義を使用する</short-name>
+   <applicability>
+      <p>テキストを含むあらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-idioms" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、一般的ではない、又は限定された用途で用いられているあらゆる用語に対して文脈の中で定義を提供することである。定義は、単語が使われている直前又は直後のいずれかに、テキストで提供される。定義は、定義される単語として同じ文章の中、又は異なる文章の中に記載されることが望ましい。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>エーテル</head>
+      <description><p>彼はエーテルを介して音が伝わると信じていた。それは、宇宙空間に満たされている物質と考えられていた。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>ドライバー</head>
+      <description><p>プリンタのドライバーをアップデートする必要があるかもしれない (ドライバーはプリンタの特定の指示を含んでいるソフトウェアである)。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>W3Cのキーワード</head>
+      <description><p>定義: この基準で、「しなければならない（must）」、「してはならない（must not）」、「しなければならない（required）」、「しなければならない（shall）」、「してはならない（shall not）」、「することが望ましい（should）」、「しないほうがよい（should not）」、「することが望ましい（recommended）」、「してもよい（my）」、及び「してもよい（optional）」のキーワードは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.faqs.org/rfcs/rfc2119.html">RFC 2119</loc>に記載されている解釈による。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>文脈中で定義された日本語の慣用句の表現</head>
+      <description><p>この事例では、日本語における慣用句表現の定義を提供するために括弧を使用する。日本語の語句には「彼はさじを投げる。」と書かれている。これは、彼が何もできず、最終的にあきらめたことを意味している。</p>
+<p><phrase lang="jp" xml:lang="jp">さじを投げる（どうすることもできなくなり、あきらめること）。</phrase></p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G55"/>
+      <relatedtech idref="G62"/>
+      <relatedtech idref="G70"/>
+      <relatedtech idref="H54"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>一般的ではない、又は限定された用途で使われる個々の単語又は語句に対して:</p>
+      <olist>
+        <item>
+          <p>単語の初出箇所の前か後ろのいずれかで、単語がテキストで定義されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

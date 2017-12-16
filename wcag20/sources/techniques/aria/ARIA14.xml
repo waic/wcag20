@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA14">
+   <short-name>可視ラベルが使用できない場合に不可視ラベルを提供するために、aria-label を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <p>Screen reader support varies depending on browser:
+</p>
+         <ulist>
+            <item>
+               <p> System Access To Go (IE8) does not recognise <code><![CDATA[aria-label]]></code>
+               </p>
+            </item>
+            <item>
+               <p> Using NVDA with Firefox (FF), <code><![CDATA[aria-label]]></code> is only spoken on custom controls
+</p>
+            </item>
+            <item>
+               <p> Using NVDA with Internet Explorer (IE), <code><![CDATA[aria-label]]></code> is only spoken on native controls
+</p>
+            </item>
+            <item>
+               <p> JAWS has the best support of <code><![CDATA[aria-label]]></code> 
+               </p>
+            </item>
+         </ulist>
+         <p>Here are the results of some detailed testing: 
+</p>
+         <ulist>
+            <item>
+               <p>JAWS 13 (WIN7, FF13)
+<ulist>
+                     <item>
+                        <p>Example 1: JAWS speaks <code><![CDATA[aria-label]]></code> of <code><![CDATA[div]]></code> set to <code><![CDATA[contentEditable]]></code> but not the content of the div (the word to be corrected)
+</p>
+                     </item>
+                     <item>
+                        <p>Example 2: JAWS speaks <code><![CDATA[aria-label]]></code>: "close button"
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: JAWS does not speak the <code><![CDATA[aria-label]]></code>, just says "button"
+</p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p>JAWS 13 (WIN7, IE9)
+<ulist>
+                     <item>
+                        <p>Example 1: JAWS speaks <code><![CDATA[aria-label]]></code>, but the content of <code><![CDATA[div]]></code> boxes is only spoken in Virtual PC cursor mode, not when tabbing to the <code><![CDATA[div]]></code>s
+</p>
+                     </item>
+                     <item>
+                        <p>Example 2: JAWS speaks content of <code><![CDATA[div]]></code> box (focus is being moved to its beginning through the skip link) followed by <code><![CDATA[aria-label]]></code>: "close button"
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: JAWS speaks the <code><![CDATA[aria-label]]></code>
+                        </p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p>NVDA 2011.3 (XP, FF13) 
+<ulist>
+                     <item>
+                        <p>Example 1: NVDA speaks specified <code><![CDATA[aria-label]]></code> of <code><![CDATA[div]]></code> set to <code><![CDATA[contentEditable]]></code>, followed by announcing "section editable" and, for mis-spelled words, "spelling error"
+</p>
+                     </item>
+                     <item>
+                        <p>Example 2: NVDA does not speak the <code><![CDATA[aria-label]]></code>, just "X button"
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: NVDA does not speak the <code><![CDATA[aria-label]]></code>, just "button" (- and + are dropped, but this may be customizable in screen reader settings)
+</p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p>NVDA 2011.3 (XP, IE8) 
+<ulist>
+                     <item>
+                        <p>Example 1: Browser focuses <code><![CDATA[div contentEditable]]></code> but apparently does not expose them to the accessibility API so NVDA does not speak associated contents of <code><![CDATA[aria-label]]></code>
+                        </p>
+                     </item>
+                     <item>
+                        <p>Example 2: NVDA speaks the <code><![CDATA[aria-label]]></code> content, "button close", instead of the text included in the button (X)
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: NVDA speaks the <code><![CDATA[aria-label]]></code> content
+</p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p>NVDA 2012.2.1 (WIN7, IE9)
+<ulist>
+                     <item>
+                        <p>Example 1: Same as under (XP, IE8): <code><![CDATA[div contentEditable]]></code> received focus but <code><![CDATA[aria-label]]></code> is not exposed to accessibilty API
+</p>
+                     </item>
+                     <item>
+                        <p>Example 2: NVDA speaks <code><![CDATA[aria-label]]></code> "This is a div box button close" in browse mode and "close button" in focus mode
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: Content of <code><![CDATA[aria-label]]></code> spoken
+</p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p>NVDA 2012.2.1 (WIN7, FF13)
+<ulist>
+                     <item>
+                        <p>Example 1: NVDA speaks specified <code><![CDATA[aria-label]]></code> for custom div set to contentEditable, followed by announcing "section editable" (but no announcement of mis-spelled words here)
+</p>
+                     </item>
+                     <item>
+                        <p>Example:2 Does not speak <code><![CDATA[aria-label]]></code> of X-button
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: NVDA does not speak <code><![CDATA[aria-label]]></code> for + and - button (- and + are dropped, but this may be customizable in screen reader settings)
+</p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+         <ulist>
+            <item>
+               <p> System Access To Go (XP, IE8): In all three examples, SAToGo does not recognise <code><![CDATA[aria-label]]></code>
+                  <ulist>
+                     <item>
+                        <p>Example 1: SAToGo speaks "editable text" followed by the text in <code><![CDATA[div contentEditable]]></code>
+                        </p>
+                     </item>
+                     <item>
+                        <p>Example 2: After activating Link, SAToGo speaks content of the pop-up <code><![CDATA[div]]></code> followed by "button X
+</p>
+                     </item>
+                     <item>
+                        <p>Example 3: By default, SAToGo speaks "plus button" and "hyphen button" - not the content of <code><![CDATA[aria-label]]></code>
+                        </p>
+                     </item>
+                  </ulist>
+               </p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>目の見える利用者の場合、要素のコンテキスト及び外観は目的を決定するために十分な手がかりを提供できる。一例は、ポップアップのdiv（ライトボックス）を閉じるためのコントロールを示すために、このdivの右上隅でよく使用される'X'である。</p>
+      <p>設計手法やレイアウトによって、可視のラベルが存在しないが、コンテキストと視覚的な外観によってコントロールの目的が明確になっているような場合、要素には、アクセシブルな名前を提供するために、<att>aria-label</att>属性を与えられることがある。</p>
+      <p>この他、ネイティブHTMLラベル要素がコントロールでサポートされない場合、要素には、アクセシブルな名前を提供するために属性<att>aria-label</att>が与えられることがある――たとえば、よりリッチなテキスト編集体験を提供するために、<el>div</el>が<att>contentEditable</att>に設定され、<code><![CDATA[input type="text"]]></code>や<el>textarea</el>などのネイティブフォーム要素の代わりに使用される場合である。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>ポップアップボックスにおける閉じるボタン（X）</head>
+         <description>
+            <p>ページ上で、リンクは追加情報をもつポップアップボックス（div）を表示する。そのclose（閉じる）要素は、単に文字'x'を含むボタンとして実装される。プロパティ<code><![CDATA[aria-label="close"]]></code>は、ボタンにアクセシブルな名前を提供するために使用される。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div id="box">
+   This is a pop-up box.
+   <button aria-label="Close" onclick="document.getElementById('box').style.display='none';" class="close-button">X</button>				
+</div>]]></codeblock>
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA14/box.html"><!--
+                    linktype="examples"-->閉じるボタンの例</loc>。
+</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>複数のフィールドを持つ電話番号</head>
+         <description>
+            <codeblock xml:space="preserve"><![CDATA[<div role="group" aria-labelledby="groupLabel">
+  <span id="groupLabel>Work Phone</span>
+  +<input type="number" aria-label="country code">
+  <input type="number" aria-label="area code">
+  <input type="number" aria-label="subscriber number">
+</div>]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA6"/>
+      <relatedtech idref="ARIA16"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p><att>aria-label</att>を使用する要素に対して:</p>
+         <olist>
+            <item>
+               <p>利用者の入力が要求される場所で<att>aria-label</att>属性の値が適切に要素の目的を説明している</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

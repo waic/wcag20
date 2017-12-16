@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G127">
+   <short-name>技術特有の達成方法を用いて、そのウェブページとその他の多くのウェブページとの関係を示す</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-title" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-location" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者がそのウェブページと同じ一式（例：同じウェブサイト）にあるウェブページとの関係性を特定できるようにすることである。場合によっては、プログラムが解釈できるように実装することが可能である。例えば、HTMLでは、<el>link</el>要素の<att>rel</att>属性を用いることができる。また、ウェブページのタイトルに関連する情報を含めることによって、関係性を示す情報を提供することもできる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>サブサイト名を含んだウェブページのタイトル</head>
+      <description><p>ある大規模なウェブサイトに、数々のウェブコンテンツ技術に関するチュートリアルとリファレンスがある。各ウェブページのタイトルには、そのサイトを提供している組織名とサブサイト名とがある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>特定できる情報を含んだメタデータ</head>
+      <description><p>あるウェブページには、それが文書一式の目次であることを示すメタデータがある。その文書一式にある各文書のメタデータは、一式の中におけるその文書の位置付けを特定しており、目次への参照を提供している。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>オンライン教科書の各章</head>
+      <description><p>あるオンライン教科書が幾つかの章に分けられている。各ウェブページのタイトルには、教科書のタイトルに加えて、その章の章番号とタイトルがある。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G65"/>
+      <relatedtech idref="G88"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページのタイトルが、そのウェブページの属するウェブページ一式との関係性を示している。</p>
+        </item>
+        <item>
+          <p>ウェブページに、そのウェブページの属するウェブページ一式との関係性を特定するメタデータがある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 又は 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

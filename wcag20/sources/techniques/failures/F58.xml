@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F58">
+   <short-name>達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトしているために、サーバサイドの実装方法を使用している</short-name>
+   <applicability>
+      <ulist>
+      <item>
+        <p>サーバサイドのスクリプト言語全て</p>
+      </item>
+      <item>
+        <p>制限時間に関する達成基準の例外に当てはまらないコンテンツ</p>
+      </item>
+    </ulist>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-required-behaviors" relationship="failure"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="6.0">
+      <p>Refreshヘッダは、HTTP/1.1、HTTP/1.0ともに定義されていないが、多くのブラウザでサポートされている（Windows のFirefox 1.0とIE 6で検証。）</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>開発者は、サーバサイドのスクリプト言語を使って、標準ではないHTTPヘッダ「Refresh」を、タイムアウト（単位：秒）及び指定されたタイムアウト時間後にリダイレクトするURIとともに指定することができる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
+    <p>HTTPヘッダは、<code>Refresh: {秒で表された時間}; url={新しい場所のURI}</code>のように設定する。URIを省略することも可能で、周期的にページを更新し続けることになる。これも同様の問題を引き起こす。この場合に設定されるHTTPヘッダは<code>Refresh: {秒で表された時間}</code>となる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがJavaサーブレット又はJavaServer Pages（JSP）により実装されているため、不適合である。</p>
+</description>
+      <code><![CDATA[
+public void doGet (HttpServletRequest request, HttpServletResponse response)
+      throws IOException, ServletException {
+        response.setContentType("text/html");
+	PrintWriter out = response.getWriter();
+	response.setHeader("Refresh", "10; URL=TargetPage.html");
+	out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+	 \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
+	out.println("<html><head><title>リダイレクト</title></head><body>");
+	out.println("<p>このページは10秒後にリダイレクトします。</p>");
+	out.println("</body></html>");
+  }]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがVBScriptを伴ったActive Server Pages（ASP）により実装されているため、不適合である。</p>
+</description>
+      <code><![CDATA[
+ <% @Language = "VBScript" %>
+ <% option explicit 
+ Response.Clear
+ Response.AddHeader "Refresh", "5; URL=TargetPage.htm"
+ %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+ …
+ <!--リダイレクトが実行される前に表示されるコンテンツのHTMLソース-->]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.ietf.org/rfc/rfc1945.txt">Hypertext
+                                        Transfer Protocol -- HTTP/1.0 (IETF Request for Comments
+                                        1945)</loc> (plain text) </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.ietf.org/rfc/rfc2616.txt">Hypertext
+                                        Transfer Protocol -- HTTP/1.1 (IETF Request for Comments
+                                        2616)</loc> (plain text) </p>
+            </item>
+            <!-- BBC Commented out as it redirects to netscape.aol.com item>
+                <p>
+                  <loc href="http://wp.netscape.com/assist/net_sites/pushpull.html">An Exploration of Dynamic Documents</loc> by Netscape
+                                    describes the nonstandard Refresh header that was introduced
+                                    with Netscape Navigator 1.1. </p>
+              </item-->
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="F40"/>
+      <relatedtech idref="F41"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページが描画された際、利用者の行動を伴わず、一定時間後に自動的に他のページへリダイレクトされる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>そのようなリダイレクトがみつかった場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH22">
+   <short-name>キーボードで操作可能なアクションを静的エレメントに追加する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="cosufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="cosufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、デフォルトではキーボードで操作できない Flash ムービークリップをキーボードで操作可能にする方法を示すことである。この実装方法では、<prop>tabEnabled</prop> プロパティを設定してエレメントをフォーカス可能にし、click ハンドラに加えて keydown ハンドラを提供してキーボードからアクションをトリガできるようにする。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>ムービークリップをボタンとして使用する</head>
+         <description>
+            <p>この事例では、カスタムムービークリップをボタンとして使用する。キーボードでの操作を可能にするため、tabEnabled を使用してムービークリップをタブの順序に配置する。さらに、カスタムボタンがマウスクリックとスペースバーの打鍵の両方に反応するように、冗長なイベントハンドラを追加する。最後に、ムービークリップの <obj>AccessibilityProperties</obj> オブジェクトを使用して、カスタムボタンにアクセシブルな名前を付ける。これにより、支援技術でボタンのラベルを認識できるようになる。</p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH22/event_handlers_to_static_objects_as3.html"><!--
+                    linktype="examples"-->ムービークリップをボタンとして使用するのサンプル（英語）</loc>で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH22/event_handlers_to_static_objects_as3.fla"><!--
+                    linktype="examples"-->ムービークリップをボタンとして使用するのソース（英語）</loc> をダウンロードすることもできる。</p>
+            <note>
+               <p>カスタムボタンはボタンではなくフォーカス可能なグラフィックとして認識されるので、汎用のムービークリップを使用することは一般的に推奨されない。代わりに、標準の Flash の Button コンポーネントを使用するか、「button」タイプの新規シンボルを作成することが望ましい。</p>
+            </note>
+         </description>
+         <code xml:space="preserve"><![CDATA[import flash.accessibility. *
+import flash.events.KeyboardEvent;
+import flash.events.MouseEvent;
+import flash.net.navigateToURL;
+import flash.net.URLRequest;
+
+testMC.tabEnabled = true;
+updateAccName(testMC);
+testMC.addEventListener(MouseEvent.CLICK, clickHandler, false);
+testMC.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);
+
+updateAccName(testMC);
+
+function clickHandler(e) {
+  testMC.labelText.text = "THANKS";
+  updateAccName(testMC);
+}
+
+function keyDownHandler(e) {
+  if (e.keyCode == 32)
+  clickHandler(e);
+}
+
+function updateAccName(mc: MovieClip) {
+  if (! mc.accessibilityProperties)
+  mc.accessibilityProperties = new AccessibilityProperties();
+  mc.accessibilityProperties.name = mc.labelText.text;
+  Accessibility.updateProperties();
+}]]></code>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR29"/>
+      <relatedtech idref="FLASH17"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>インタラクティブコントロールとして使用されるムービークリップの汎用インスタンスが Flash ムービーに含まれている場合は、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>ムービークリップインスタンスの <prop>tabEnabled</prop> プロパティが true に設定されている。</p>
+            </item>
+            <item>
+               <p>ムービークリップインスタンスにマウスとキーボードの両方のイベントに対応するイベントハンドラがある。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Adding_keyboard-accessible_actions_to_static_elements"/>
+					</source>
+   </admin>
+</technique>
+

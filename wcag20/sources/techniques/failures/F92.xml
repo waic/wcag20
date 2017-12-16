@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F92">
+   <short-name>達成基準 1.3.1 の失敗例 － セマンティックな情報を伝えるコンテンツに presentation ロールを使用している</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+      <p>この失敗例は、情報あるいはコンテンツの関係性を伝達する目的で用いられる要素に表現の役割が適用されるときに起こる。<el>table</el> のような要素はセマンティックなマークアップによってコンテンツがもつ情報を伝達することができる。一方 WAI-ARIA の <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#presentation"><attval>presentation</attval></loc> のロールは、アクセシビリティ API からコンテンツのセマンティックな情報を抑制し、利用者への情報の伝達をユーザエージェントが行わないよう意図されている。<attval>presentation</attval> ロールをセマンティックな情報を伝達するべきコンテンツに用いるのは利用者のコンテンツの理解を妨げるだろう。
+</p>
+   </description>
+   <examples>
+      <eg-group role="failure">
+         <head/>
+         <description>
+            <p>この例では、表のデータは <code>role=presentation</code> でマークアップされている。そのようなレイアウトテーブルのデザインのマークアップに関わらず、データテーブルはセマンティックな情報を維持する必要がありそれゆえ <code>role=presentation</code> でマークアップされるべきではない。</p>
+            <p>例:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<table role="presentation">
+   <caption>フルーツとその色</caption>
+   <tr>
+     <th>名称</th>
+     <th>色</th>
+   </tr>
+   <tr>
+    <td scope="row">バナナ</td>
+    <td>黄色</td>
+   </tr>
+   <tr>
+    <td scope="row">オレンジ</td>
+    <td>オレンジ</td>
+   </tr>
+  </table>
+                            ]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/roles#presentation">The Roles Model</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>もしセマンティックなマークアップを通じて情報や構造や関係性を伝えている要素を確認するなら</p>
+            </item>
+            <item>
+               <p>要素が <code>role="presentation"</code> 属性を持っている</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>もし確認 #2 が真なら、失敗例に当たり、コンテンツは達成基準を満たしていない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

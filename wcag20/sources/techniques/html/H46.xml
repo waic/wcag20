@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H46">
+   <short-name><el>embed</el> 要素と一緒に <el>noembed</el> 要素を用いる</short-name>
+   <applicability>
+      <p><el>embed</el> 要素でプラグインを読み込むドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="media-equiv-text-doc" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="general" version="">
+         <note>
+            <p>Although <el>embed</el> is widely supported in user agents - it is not a valid part
+                of HTML or XHTML.</p>
+            <!--BBC: Commenting out for now, issue response okay without this info for now. ednote>
+            <edtext>@@ add user agent notes section to reflect details about user agents that support this. Refer to <loc href="http://www.w3.org/2006/02/lc-comments-tracker/35422/understandingwcag20/786">LC-786</loc>.</edtext>
+          </ednote-->
+         </note>
+      </ua-issue>
+   </ua-issues>
+   <description id="noembed_desc">
+      <p>この達成方法の目的は、<el>embed</el> 要素の代替コンテンツとして <el>noembed</el> を提供することである。<el>noembed</el> 要素は <el>embed</el> 要素がサポートされていない場合のみレンダリングされる。ページのどこにでも配置できるが、<el>embed</el> 要素の子要素として組み込むことを推奨する。これにより代替テキストが <el>embed</el> 要素に付与されてることで補助技術が明らかになる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head><el>noembed</el> 要素が <el>embed</el> 要素の内側にある</head>
+         <code><![CDATA[<embed src="../movies/history_of_rome.mov"
+  height="60" width="144" autostart="false">
+  <noembed>
+    <a href="../transcripts/transcript_history_rome.htm">"ローマの歴史"のコピー</a>
+  </noembed>
+</embed>]]></code>
+      </eg-group>
+      <eg-group>
+         <head><el>noembed</el> 要素が <el>embed</el> 要素のそばにある</head>
+         <code><![CDATA[<embed src="moviename.swf" width="100" height="80"
+  pluginspage="http://example.com/shockwave/download/" />
+<noembed>
+  <img alt="Still from Movie" src="moviename.gif" 
+    width="100" height="80" />
+</noembed>;]]></code>
+      </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p><el>embed</el> 要素に子 <el>noembed</el> 要素があるかどうかを確認する</p>
+            </item>
+            <item>
+               <p><el>embed</el> 要素の直下に <el>noembed</el> 要素があるかどうかを確認する</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 又は2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

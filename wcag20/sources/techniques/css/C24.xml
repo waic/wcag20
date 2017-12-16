@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C24">
+   <short-name>コンテナのサイズに CSS のパーセント値を使用する</short-name>
+   <applicability>
+      <p>CSS を用いているウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、テキストを読むためにはテキストサイズ大きくする必要がある利用者が、1 行のテキストを横スクロールなしで読めるようにすることである。この達成方法を用いるには、コンテンツ制作者はテキストコンテナの幅をパーセント値で指定する。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ある新聞サイトでは、画面の中央にコンテンツを表示させている。コンテンツのコンテナ幅は、ページ全体に対するパーセンテージで指定しているため、ロービジョンの人がフォントサイズを大きくしたときも、ブラウザ画面のサイズにあわせてテキストが折り返しされ、横スクロールバーは表示されない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="C20"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>全てのコンテナ幅をパーセント値で指定している。</p>
+        </item>
+        <item>
+          <p>テキストサイズを 200% にしてみる。</p>
+        </item>
+        <item>
+          <p>どの行のテキストを読むにも、横スクロールの必要がない。</p>
+        </item>
+        <item>
+          <p>全てのテキストが、ページ上に見えたままである。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.、3. 及び 4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

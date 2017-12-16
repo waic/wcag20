@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C25">
+   <short-name>CSS で、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</short-name>
+   <applicability>
+      <p>CSS を用いているウェブページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>Most browsers allow the user to change the color settings to override Web author's CSS and HTML color schemes. This includes IE, all versions of Firefox, Mozilla, and Opera after version 6.</p>
+      </ua-issue>
+      <ua-issue name="Firefox" version="1.5+">
+         <p>When specified colors are overridden in Netscape and versions of Firefox before Firefox 3.0, most Javascript pop-up boxes and drop-down menus become unusable. Pop-up boxes gain a transparent background, superimposing the text of the box on the text of the page, and drop-down menus either become transparent or gain a dark-grey background.</p>
+      </ua-issue>
+      <ua-issue name="IE" version="6">
+         <p>IE 6 will not override background colors in the browser unless the same background color has also been selected in the system settings.</p>
+      </ua-issue>
+      <ua-issue name="Safari" version="all">
+         <p>There are no color settings in Safari so it is not possible to over-ride specified colors. Similarly where colors are not specified Safari displays the page in black text on a white background, ignoring any color preferences from within the system settings.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法が意図するのは、ボーダー（境界）やレイアウトは CSS を用いて指定するが、文字色と背景色については利用者のブラウザや OS の設定に従って表示できるように指定しないでおく、ということである。これによって利用者は、自分が見たい色でテキストを見ることができるようになり、同時に、テキストの段組、セクションの周りのボーダー、又はメニューとメインコンテンツの領域を区切る縦線といったレイアウトやページデザインの外観は保つことができるようになる。また、ページに JavaScript のポップアップ・ボックス又はドロップダウン・メニューが含まれている場合に色が上書きされるという、一部のブラウザで起こる表示の問題も回避することができる。</p>
+    <p>ボーダーやレイアウトを示す表示は、文字色と背景色に関する柔軟性と同様に、認知障害のある多くの人にとって役に立つ。しかし、状況によってはこれら 2 つのニーズは相容れないこともある。それは、利用者がブラウザ上でコンテンツ制作者が選択した文字色と背景色を上書きする必要があるとき、ブラウザがボーダーやレイアウトまでも取り除いてしまうような場合である。これは、ページがシングルカラムでひとつのブロックが他のブロックの下に表示されることを意味し、そうなると、不必要な余白ができ、テキストの 1 行の長さが長くなってしまう。また、ポップアップ・ボックスの背景が透過して、ページ上のテキストの上にボックスのテキストが重なってしまったり、ドロップダウン・メニューが透過するかダークグレーの背景になってしまったりすることを意味する。コンテンツ制作者が文字色と背景色を一切指定せず、その一方でボーダーの色やレイアウトを指定した場合、一般的なブラウザのほとんどでは、（コンテンツ制作者が指定した）CSS の他の宣言に影響を与えずにテキストと背景の色を変更することができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>あるウェブページは、HTML を使ってデザインされている。ページを構成する各領域を囲うボーダーの色を指定し、メニューがメインコンテンツ領域の左側にフロートするレイアウトにするために CSS が使用されている。文字色も背景色も指定されていない。利用者がブラウザで自分の色を設定すると、レイアウトを崩すことなしに、利用者に適した色とコントラストでページを閲覧できる。</p>
+</description>
+    </eg-group>
+   </examples>
+  <related-techniques>
+      <relatedtech idref="G17"/>
+      <relatedtech idref="G18"/>
+      <relatedtech idref="G145"/>
+      <relatedtech idref="G148"/>
+      <relatedtech idref="G156"/>
+      <relatedtech idref="C23"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>HTML で作られたコンテンツの色を変更できるブラウザでウェブページを開く。</p>
+        </item>
+        <item><p>ブラウザの設定画面で、テキスト、リンク及び背景の色を、現在の設定とは異なる色に変える。</p>
+                        <note><p>「ページで指定されている色を無視する」というようなオプションを選択していないことを確認する。</p></note></item>
+        <item>
+          <p>ページに戻って表示を確認すると、新しく設定したテキスト、リンク及び背景の色で表示されている。</p>
+        </item>
+        <item>
+          <p>どのボーダーも消えずに表示されており、レイアウトも崩れていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3. 及び 4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

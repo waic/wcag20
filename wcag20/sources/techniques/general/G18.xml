@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G18">
+   <short-name>テキスト（及び画像化された文字）とその背景の間に、少なくとも 4.5:1 以上のコントラスト比をもたせる</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。達成基準1.4.3に関しては、この達成方法は18pt（太字ではない：日本語の場合は22pt）未満と14pt（太字：日本語の場合は18pt）未満のテキストのための最小コントラスト比を説明している。さらに、達成基準1.4.6においては、この達成方法は少なくとも18pt（太字ではない：日本語の場合は22pt）又は少なくとも14pt（太字：日本語の場合は18pt）のテキストに対して7:1のコントラスト比を要求している。</p>
+      <note>
+        <p>この達成基準を評価する際、フォントサイズのポイント数は、ユーザエージェントから得られるか、あるいはユーザエージェントが行うフォントメトリクスによって計算されるであろう。ポイントのサイズは、CSSのptを定義する <loc ref="https://www.w3.org/TR/css3-values/#absolute-lengths">CSS3 Values</loc> に基づく。ポイントとCSSのピクセルとの比率は 1pt = 1.333px であるため、14pt と 18pt はそれぞれおよそ 18.5px と 24px に等しい。</p>
+      </note>
+    <p>もし背景が無地の色（または真っ黒、真白）の場合、各テキストの文字が背景とのコントラスト比を4.5：1で保持することによってテキストの相対輝度を維持することができる。</p>
+    <p>背景または文字が相対輝度において変化する（またはパターン化されている）場合、たとえ背景全体とのコントラスト比を4.5:1で保持していなくとも、文字の周囲の背景又は陰影によって、文字と背景のコントラスト比を維持することができる。</p>
+    <p>例えば、文字の上部が下部よりも明るい場合、文字と背景のコントラスト比を文字の周り全体で維持することが難しい。その場合、文字と背景のコントラスト比4.5:1以上を保持するため、背景を暗くするか、細い黒枠線（少なくとも1ピクセル）を追加する。</p>
+    <p>コントラスト比は、背景の相対輝度がページをまたがって変化する時に、文字の相対輝度も変化させることによって維持されることもある。</p>
+    <p>例えば、ページの一端が非常に明るく、反対側の非常に暗い一端に向かってフェードする場合、ページ全体を通してコントラストの基準を満たす色は存在しない。対応する方法のひとつは、文字のその時の背景に対してコントラスト比を満たすように、文字の明るさを変化させることだろう。</p>
+    <p>もし、背景画像または背景色が標準的に相対輝度で十分に違いがない場合は、他の方法として必要なコントラスト比を提供したテキストの周りに後光を提供する方法もある。</p>
+  </description>
+   <examples>
+      <ulist>
+         <item>
+            <p>黒い背景を選ぶことによって、企業ロゴに合った明るい色の文字を使うことができる。</p>
+         </item>
+         <item>
+            <p>テキストが大学のキャンパスの写真の上に書かれている。 幅広いさまざまな色や色合いが写真に現れているので、テキストの下のエリアが霧のような白にすることで、写真はとてもかすみ、一番暗い所は写真の上に書かれている黒いテキストとの 4.5：1 のコントラスト比を維持するのに 十分な明るさである。</p>
+            <p>参考リソースのコントラストについてのサンプル（"Color Contrst Samples"）も見ること。</p>
+         </item>
+      </ulist>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc href="https://www.paciellogroup.com/resources/contrastanalyser/">Contrast Analyser – Application</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://juicystudio.com/services/luminositycontrastratio.php">Contrast Ratio Analyser - online service</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php">Colour Contrast Analyser - Firefox Extension</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://trace.wisc.edu/contrast-ratio-examples/">Color Contrast Samples</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://www.w3.org/Graphics/atypical-color-response">Atypical colour response</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://www.colorsontheweb.com/colorcontrast.asp">Colors On the Web Color Contrast Analyzer</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://www.vischeck.com/daltonize/runDaltonize.php">Tool to convert images based on color loss so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">List of color contrast tools</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p> 以下の公式を用いて、各文字（すべて同一ではない限り）の相対輝度を測る： </p>
+<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の<emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は：</p>
+<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合： <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub>は以下のように定義される：</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から2ピクセルの部分の相対輝度の値を使用する。</p>
+</note></item>
+        <item>
+          <p> 同じ公式を用いて、文字のすぐ隣の背景のピクセルの相対輝度を測る。 </p>
+        </item>
+        <item><p> 次の公式を用いて、コントラスト比を算出する。</p>
+<ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
+<ulist><item><p>L1は前景または背景色の明るい方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2は前景または背景色の暗い方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
+        <item>
+          <p> コントラスト比が4.5：1と同じ、又はそれ以上である。【訳注：この計算式を用いているチェックツールで、コントラスト比が4.5:1以上であることを確認すればよい。】</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

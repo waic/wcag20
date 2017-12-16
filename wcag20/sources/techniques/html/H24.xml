@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H24">
+   <short-name>イメージマップの <el>area</el> 要素に代替テキストを提供する</short-name>
+   <applicability>
+      <p><el>area</el>要素を含むHTML及びXHTMLドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+    <ua-issue name="" version="">
+     <p>HTML 4.01仕様書は、<att>alt</att>属性のテキストを、その要素が通常通り描画されないときに表示されるもの、と説明している。ユーザエージェントは、画像が表示されないときに<att>alt</att>属性のテキストを表示する。しかし、視覚系ユーザエージェントは現状、イメージマップの<el>area</el>要素については、キーボードでアクセスした場合、又は画像そのものが表示されない場合には、<att>alt</att>属性のテキストを表示しない。また、画像の内在寸法が指定されていない場合【訳注−<el>img</el>要素の<att>width属性</att>や<att>height</att>属性で画像のサイズが示されていない場合など】、<el>area</el>要素を切り抜いて表示することもある。さらに、マウスオーバー時に反応して表示される<att>alt</att>属性のテキストは、ユーザエージェントでのフォントサイズや色の組み合わせの設定通りに表示されない。</p>
+     <p><att>title</att>属性は追加情報を提供するものとされている。しかし、ユーザエージェントにおける現在の実装では、<att>title</att>属性と<att>alt</att>属性のどちらかにはアクセスできるが、両方同時にはアクセスできない。ユーザエージェントは一般的に、<att>title属性</att>が指定された要素にマウスオーバーしたとき、その<att>title</att>属性のテキストを表示する。たとえば、Internet Explorerは、<att>title</att>属性のテキストが指定されていなければ、マウスオーバー時に<att>alt</att>属性のテキストを表示するが、FirefoxやOperaは、<att>title</att>属性のテキストのみをマウスオーバー時に表示し、<att>alt</att>属性のテキストは表示しない。したがって、<att>alt</att>属性のテキストをマウスオーバー時に表示させるには、同じテキストを<att>title</att>属性にも指定しておくべきである。</p>
+     <p>このようなことから、イメージマップを用いる際、この達成方法を正しく実装するには次のどちらかが必要となる。</p>
+      <ulist>
+       <item><p><el>area</el>要素の<att>alt</att>属性値が、画像が読み込まれていても読み込まれていなくても、フォーカス（キーボードによるフォーカスを含む）を受けたときに表示されるようにすること。または、</p>
+       </item>
+       <item><p><el>area</el>要素と同じ目的を果たせる代わりのメカニズムが、ウェブページに存在すること。</p>
+       </item>
+      </ulist>
+     </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、イメージマップ上の選択可能領域と同じ役割を果たす代替テキストを提供することである。イメージマップは、<el>area</el>要素によって定義された選択可能領域によって分割されている1枚の画像である。各領域は、他のウェブページや、現在のウェブページ内の他の場所へのリンクである。各<el>area</el>要素の<att>alt</att>属性は、その画像の選択可能領域と同じ目的を果たすものである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この事例では、イメージマップ上の各領域の目的を示したテキストを提供するのに、<el>area</el>要素の<att>alt</att>属性を利用している。</p>
+</description>
+      <code><![CDATA[<img src="welcome.gif" usemap="#map1" 
+    alt="図書館の各エリア。詳細を見るには、各エリアを選択してください。" /> 
+<map id="map1" name="map1">
+  <area shape="rect" coords="0,0,30,30"
+    href="reference.html" alt="資料室" />
+  <area shape="rect" coords="34,34,100,100"
+    href="media.html" alt="視聴覚室" />
+</map>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.6.1">HTML 4.01
+                    client-side image maps</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 -
+                    how to specify alt text</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="H30"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>イメージマップ上の各<el>area</el>要素について:</p>
+      <olist>
+        <item>
+          <p>その<el>area</el>要素に<att>alt</att>属性を指定している。</p>
+        </item>
+        <item>
+          <p><att>alt</att>属性で指定した代替テキストが、<el>area</el>要素で定義したイメージマップ上の領域と同じ目的を果たしている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+       <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

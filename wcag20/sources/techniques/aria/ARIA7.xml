@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA7">
+   <short-name>リンクの目的を示すために aria-labelledby を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <p>Screen reader testing as of October 2012</p>
+         <ulist>
+            <item>
+               <p>Not supported:</p>
+               <ulist>
+                  <item>
+                     <p>Win 7, IE 9, JAWS 13</p>
+                  </item>
+                  <item>
+                     <p>Win 7, FF 13, NVDA 2012.2.1</p>
+                  </item>
+                  <item>
+                     <p>Win XP, FF 15.0, NVDA 2011.3</p>
+                  </item>
+                  <item>
+                     <p>Win XP, IE 8, SaToGo</p>
+                  </item>
+               </ulist>
+            </item>
+            <item>
+               <p>Partial support (both link text and element referenced by aria-labeledby are read):</p>
+               <ulist>
+                  <item>
+                     <p>Win 7, IE9, NVDA 2012.2.1 (but Example 2 not supported)</p>
+                  </item>
+                  <item>
+                     <p>Win XP, IE 8, NVDA 2011.3 (but Example 2 not supported)</p>
+                  </item>
+               </ulist>
+            </item>
+            <item>
+               <p>Supported:</p>
+               <ulist>
+                  <item>
+                     <p>Win 7, FF 13, JAWS 13 (but Example 2 has only partial/buggy support: "Sales report 2012" is read twice)</p>
+                  </item>
+                  <item>
+                     <p>Mac OS 10.5.8, VoiceOver</p>
+                  </item>
+               </ulist>
+            </item>
+         </ulist>
+         <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://3needs.org/en/testing/code/aria-labelledby-for-link-purpose.html">See full testing results for Example 1</loc>
+         </p>
+         <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://3needs.org/en/testing/code/aria-labelledby-filetype.html">See full testing results for Example 2</loc>
+         </p>
+         <p>David <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://davidmacd.com/test/labelledby-on-a-link.html">tested</loc> on Aug 25, 2013... Example 2 and 3 are still not sufficiently supported.</p>
+         <ulist>
+            <item>
+               <p>Example 1 ok on JAWS, VoiceOver. NVDA ignores labelledby on an anchor</p>
+            </item>
+            <item>
+               <p>Example 2: JAWS 14 in FF, IE 10 read the entire paragraph for each link which is confusing and chatty. VoiceOver for Mountain Lion in Safari 6 same as JAWS. NVDA ignores labelledby on an anchor (unsuccessful implementation)</p>
+            </item>
+            <item>
+               <p>Example 3: JAWS 14 in FF, IE 10 read the entire paragraph for each link which is confusing and chatty, VoiceOver for Mountain Lion in Safari 6 OK. NVDA ignores labelledby on an anchor (unsuccessful implementation)</p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p><att>aria-labelledby</att>属性を用いることで、制作者は、ページ上の可視テキスト要素を、フォーカス可能な要素（フォームコントロール又はリンク）のラベルとして使用できる。たとえば、"read more..."【訳注：続きを読む】のリンクは、リンクの目的を明確にするために、先行するセクションの見出しテキストと関連付けることができるかもしれない（事例1を参照）。</p>
+      <p><att>aria-labelledby</att>の助けを借りてフォーカス可能な要素にテキストを関連付ける場合、ターゲットのテキスト要素は、フォーカス可能な要素の<att>aria-labelledby</att>属性値の中で参照されるIDによって与えられる。</p>
+      <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<att>aria-labelledby</att>属性の値においてIDs（IDREF）の文字列として参照される一意なIDを与えられなければならない。そして、ラベルテキストは<att>aria-labelledby</att>属性の値におけるIDの順序に従って連結されるべきである。</p>
+      <p>リンクに適用する場合、<att>aria-labelledby</att>は、目の見える利用者に対して直ちに明白かもしれないが、スクリーンリーダーの利用者にはあまり明らかではないリンクの目的を識別するために使用できる。</p>
+      <p><att>aria-labelledby</att>の指定された動作は、関連付けられたラベルテキストが（リンクテキストに加えられるのではなく）リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<att>aria-labelledby</att>属性の値を構成するIDsの文字列の中で、リンクのIDも参照されるべきである。</p>
+      <p>名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA specification</loc>及びHTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#a-element">accessible name and description calculation for links</loc>を参照。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>リンクに追加情報を提供する</head>
+         <description>
+            <p>この例は、画面に表示されるリンクテキストが、リンクに対するアクセシブルな名前の最初に使用されることを意図している。JAWSやNVDAのようなポピュラーなスクリーンリーダーは、これを "Read more ...Stormshit east coast" のように告知し、リンクだけを閲覧することがあるスクリーンリーダーの利用者にとって有益なリンク一覧にも同じテキストを表示する。</p>
+            <codeblock xml:space="preserve"><![CDATA[<h2 id="headline">Storms hit east coast</h2>
+
+<p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns.
+<a id="p123" href="news.html" aria-labelledby="p123 headline">Read more...</a></p>]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>複数のソースからのリンクテキストを連結する</head>
+         <description>
+            <p>制作者は、参照したいコードのセクションを囲むタグを配置することもあるだろう。</p>
+            <note>
+            <p><el>span</el>要素上の<code><![CDATA[tabindex="-1"]]></code>の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ（IE9、IE10）がアクセシビリティツリーに<el>span</el>要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att>による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc>を参照。</p>
+            </note>
+            <codeblock xml:space="preserve"><![CDATA[<p>Download <span id="report-title" tabindex="-1">2012 Sales Report</span>:
+<a aria-labelledby="report-title pdf" href="#" id="pdf">PDF</a> |
+<a aria-labelledby="report-title doc" href="#" id="doc">Word</a> |
+<a aria-labelledby="report-title ppt" href="#" id="ppt">Powerpoint</a></p>]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <p><att>aria-labelledby</att>属性を持つ各リンクに対して:</p>
+         <olist>
+            <item>
+               <p><att>aria-labelledby</att>属性の値に含まれる各IDが、リンクの目的の一部として使用されるテキスト要素のIDと一致する。</p>
+            </item>
+            <item>
+               <p><att>aria-labelledby</att>属性に含まれる1つ以上のIDによって参照されるテキストを合成した値が、link要素の目的を適切に説明している。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH11">
+   <short-name>オブジェクトについて長いテキストの説明を提供する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、画像のアクセシブルな名前として適切な、画像についての長くて詳細なテキスト情報を提供することである。画像の隣にアクセシブルなボタンを配置し、そのボタンによって画像の長いテキストの説明を含む新しいパネルを表示するようにする。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>非表示の説明を利用者の要求に応じて表示する</head>
+         <description>
+            <p>この事例では、統計データを含む画像が用いられている。画像には、短い代替テキストが提供されている（「グラフ：一つ以上の障害があることを申告した米国の施設に入っていない16～64歳の人口比率」）。画像の下にあるボタンを押すことによって、利用者は統計情報自体の長いテキストの説明を表示することができる。ボタンを押すと、次のように動作する。</p>
+            <ulist>
+               <item>
+                  <p>長いテキストの説明を含むムービークリップが表示され、<prop>AccessibilityProperties.silent</prop> プロパティが false に設定され、支援技術で認識可能となる。そして、そのコンテンツがタブ順序に配置される。</p>
+               </item>
+               <item>
+                  <p>元の画像とボタンは、支援技術とタブ順序からは一時的に隠された状態になる。</p>
+               </item>
+            </ulist>
+            <p>画像と説明テキストは、<phrase>既に WebAIM.org に公開されていた HTML example for long image descriptions</phrase> から引用した。</p>
+            <p>この実装方法の実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH11/long_description_for_image_as3.html"><!--
+                    linktype="examples"-->非表示の説明を利用者の要求に応じて表示する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH11/long_description_for_image_as3.fla"><!--
+                    linktype="examples"-->非表示の説明を利用者の要求に応じて表示するのソース（英語）</loc> をダウンロードすることもできる。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import flash.accessibility. *;
+import fl.accessibility.ButtonAccImpl;
+import flash.system.Capabilities;
+
+ButtonAccImpl.enableAccessibility();
+
+//set accessibility properties
+graph_mc.accessibilityProperties = new AccessibilityProperties();
+graph_mc.accessibilityProperties.name = "Graph of percentage of total U.S. \ 
+  noninsitutionalized population age 16-64 declaring one or more disabilities";
+longDescBtn.accessibilityProperties = new AccessibilityProperties();
+longDesc_mc.accessibilityProperties = new AccessibilityProperties();
+longDesc_mc.accessibilityProperties.forceSimple = false;
+hideLongDesc();
+
+//set click handlers for button
+longDescBtn.addEventListener("click", function () {
+  showLongDesc()
+});
+longDesc_mc.longDescCloseBtn.addEventListener("click", function () {
+  hideLongDesc()
+});
+
+function showLongDesc() {
+  // hide the original content from screen readers
+  graph_mc.accessibilityProperties.silent = true;
+  graph_mc.tabEnabled = false;
+  graph_mc.alpha = 0.2;
+  longDescBtn.enabled = false;
+  longDescBtn.accessibilityProperties.silent = true;
+  longDesc_mc.accessibilityProperties.silent = false;
+  // make the long description panel visible, both visually and to screen readers
+  longDesc_mc.visible = true;
+  longDesc_mc.tabEnabled = true;
+  longDesc_mc.longDescTitle.stage.focus = longDesc_mc.longDescTitle;
+  if (Capabilities.hasAccessibility)
+  Accessibility.updateProperties();
+}
+
+function hideLongDesc() {
+  //do the opposite to what showLongDesc does
+  graph_mc.accessibilityProperties.silent = false;
+  graph_mc.tabEnabled = true;
+  graph_mc.alpha = 1;
+  longDescBtn.enabled = true;
+  longDescBtn.accessibilityProperties.silent = false;
+  longDesc_mc.visible = false;
+  longDesc_mc.accessibilityProperties.silent = true;
+  longDesc_mc.tabEnabled = false;
+  longDescBtn.stage.focus = longDescBtn;
+  if (Capabilities.hasAccessibility)
+  Accessibility.updateProperties();
+}
+]]></code>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G73"/>
+      <relatedtech idref="G74"/>
+      <relatedtech idref="G92"/>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーに長い説明を要する画像が含まれている場合、近くにあるボタンを押すことによって長い説明が表示される。</p>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記のチェックポイントを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_a_longer_text_description_of_an_object"/>
+					</source>
+   </admin>
+</technique>
+

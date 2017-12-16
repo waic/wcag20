@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="meaning-idioms">
+   <head>3.1.3</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>特定の障害は、文字通りの意味ではない言葉の使い方や特殊な言葉又は使い方の理解を困難にする。特定の障害は、比喩的な言い回し又は特殊な使い方の理解を困難にする。当該のメカニズムを提供することは、これらの障害のある利用者に対して不可欠である。専門家ではない読者に対する専門知識は、レベル A 又はレベル AA 適合のみを求める場合でも、この達成基準に適合することを推奨する。</p>
+
+<div4 role="benefits">
+<head>達成基準 3.1.3 の具体的なメリット</head>
+<p>この達成基準は、認知の障害、言語の障害、及び学習障害のある次のような利用者に役立つ:</p>
+<ulist>
+	<item><p>文字から単語を復号しづらい。</p></item>
+	<item><p>単語及び語句を理解しづらい。</p></item>
+	<item><p>前後の文脈を用いて理解するのが困難である。</p></item>
+</ulist>
+<p>また、視覚障害のある次のような利用者にも役立つ:</p>
+<ulist>
+	<item><p>画面拡大ソフトで拡大していて前後の文脈を見失っている。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.1.3 の事例</head>
+<ulist>
+	<item><p><emph role="bold">一般的ではない使われ方をしている単語の定義があるテキスト</emph></p><p>「カスケード表示」に他の情報源からの定義を表示するのではなく、定義検索で意図した定義が見つかるように、辞書及びその他の情報源のリスト又は「カスケード表示」を整理する。(「カスケード表示」は、辞書及びその他の参考文献を、正しい定義の提示を最もしそうな順序の一覧である。これは、定義を検索するときに従う順序を制御している。)</p></item>
+	<item><p><emph role="bold">用語集に定義を掲載する</emph></p><p>WCAG 2.0 では、特別な用法で単語「テキスト」を用いている。したがって、WCAG 2.0 で単語「テキスト」が用いられる場合、同じウェブページにある用語集で提供されている「テキスト」の定義へリンクしている。</p></item>
+	<item><p><emph role="bold">ページ末尾で単語の具体的な定義を提供する</emph></p><p>単語から対応する定義への内部リンクもページ内に提供されている。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<note>
+<p>次のリストにある製品名又はベンダー企業名は、WCAG ワーキンググループ又は W3C の WAI による推薦を意味するものではない。このリストは、単に便宜を提供するだけのものであり、どのようなリソースが参照可能なのかを知らせるだけのものである。</p>
+</note>
+
+<ulist>
+	<item><p>無料で利用できる多くの原語の辞書が、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freedict.org/"> Freedict.org のウェブサイト (英語)</loc>から入手可能である。同サイトに明記されているが、これらの辞書の品質と規模は辞書によってまちまちである。この情報は 2005 年 4 月 9 日現在のものである。</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.stars21.com/index.html?lang=en&amp;pname=african">The WorldStar Free Dictionaries, Translators and Search Engines</loc>のサイトでは、無料で利用できる多くの原語のオンライン辞書やサーチエンジンが提供されている。この情報は 2005 年 11 月 18 日現在のものである。</p></item><item><p>他にも、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.yourdictionary.com/">your dictionary</loc>、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.freelang.com/">freelang.com</loc> (英語、スペイン語、フランス語) など多くのサイトで辞書が提供されている。</p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.1.3 の達成方法及び不適合事例 - 一般的ではない用語</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A: 単語又は語句にそのウェブページ特有の意味がある場合:</head>
+<olist>
+	<item><p>ウェブページ上で単語や語句の初出時に、以下のいずれかの方法で <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general"/>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: Using definition lists</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general"/></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H54" linktype="html"/></p></item></ulist></item></ulist></item>
+	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general"/>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general"/></p></item></ulist></item>
+</olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B: 単語又は語句の意味が、同じウェブページ内で異なる場合:</head>
+<olist>
+	<item><p>以下のいずれかの方法を用いて、その単語又は語句がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G101" linktype="general"/>:</p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H40" linktype="html">H40: 定義リストを用いる</loc></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html">H60: link要素を用いて、 用語集にリンクする</loc></p></item></ulist></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G112" linktype="general"/></p><ulist><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H54" linktype="html">H54: dfn要素を用いて、単語の定義インスタンスを特定する</loc></p></item></ulist></item></ulist></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.1.3 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>特殊な意味を持つ言葉を利用者が認識できるようなマークアップや視覚的フォーマットを行う (リンク追加予定)</p></item>
+	<item><p>音声で検索できる辞書を提供し、キーボードの操作や単語を綴ることが難しい利用者が発声することで言葉の意味を検索できるようにする (リンク追加予定)</p></item>
+	<item><p>手話による辞書を提供し、ろう者が言葉の意味を検索するのを支援する (リンク追加予定)</p></item>
+	<item><p>テキストコンテンツ中のすべての言葉の定義を検索できるようなメカニズムを提供する (リンク追加予定)</p></item>
+	<item><p>テキストコンテンツ中のすべての単語や語句について、その意味を判断するためのメカニズムを提供する (リンク追加予定)</p></item>
+	<item><p>一般的でない外来語の使用を避ける (リンク追加予定)</p></item><item><p>一連の辞書をカスケード式に表示して意味を提供する (リンク追加予定)</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

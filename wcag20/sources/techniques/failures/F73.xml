@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F73">
+   <short-name>達成基準 1.4.1 の失敗例 － 色覚なしではリンクであることが視覚的にはっきりと分からない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この失敗例の目的は、色の違いを認識できない人々がリンクを識別できない状況（色覚を持つ人々がリンクを識別できる場合）を避けることである。リンクのアンダーラインや他の色に依存しない視覚的な区別が必要である（リンクが色覚を持つ人に識別可能な場合）。</p>
+    <p>ナビゲーションリンクなど、いくつかのリンクは、ページデザインや文脈から視覚的に明らかであるが、テキスト内のリンクは、しばしばそれら自身の表示属性からのみ視覚的に理解される。下線を削除し、そのようなリンクの色差のみを残すことは、それがリンクであるという他の視覚的な表示（色以外に）がないため、失敗である。</p>
+    <note>
+        <p>赤とピンクは同じ色（色相）だが、明度が異なる（色彩ではない）。赤とピンクは明度（コントラスト）の差が 3 : 1 以上である限り、明度（色彩ではない）によって異なるため、「色（色相）のみで区別できない」という要件を満たす。（例えば、周囲のテキストが赤でリンクがピンクならば合格となる。同様に明るい緑と暗い赤は色と明度の両方で異なるため、フォーカスやポインティングする前にコントラスト（明度）の差が 3 : 1 以上の場合は通過する）</p>
+        <p>色覚を持つ人が知覚できない場合には、色を知覚できない人がリンクを識別できるようにするという要件はない。（例えば、ゲームやテストのようにリンクがすべての利用者に表示されない場合）。</p>
+       <p>色以外の手掛かりが、リンクをマウスオーバーした際、又はリンクがフォーカスを受けた際にだけ提示される場合、それもやはり不適合となる。</p>
+	    <p>リンクが他のテキストとは異なる色でかつ太字にされている場合、太字は色に依存していないため、不適合とはならない。</p>
+</note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head/>
+      <description><p>ウェブページの本文のテキスト内に、多数のリンクが含まれている。これらのリンクは、下線がなく、ボディテキストに非常によく似た色で表示されている。利用者は、本文のテキストとリンクを見分けられないため、このウェブページは不適合である。</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head/>
+      <description><p>次のコードは、文章内又は段落内のリンクから下線を取り除いていて、なおかつ色以外に別の視覚的な手掛かりを提供していない例である。</p>
+</description>
+      <code role="css"><![CDATA[
+<head>
+<style type="text/css">
+p a:link {text-decoration: none}
+p a:visited {text-decoration: none}
+p a:active {text-decoration: none}
+p a:hover {text-decoration: underline; color: red;}
+</style>
+</head>
+
+<body>
+
+<p>もし<a href="rain_in_spain.htm">スペインでの雨</a>に
+関する情報を見つけたいならば、多くのリソースがある。</p>
+
+</body>]]></code>
+      <description><note><p>視覚的な手掛かりが、（上の例のように）マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p>
+</note>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページにある文章中又は段落内（あるいは、リンクではないテキストと区別しづらいその他のエリア）のテキストにあるリンクそれぞれに、下線が付いているか、又は色（色相）に依存することなく視覚的にリンクとして区別できる（太字、イタリックなど）。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

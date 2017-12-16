@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR28">
+   <short-name>コンテンツのブロックをバイパスするために、展開可能及び折り畳み可能なメニューを使用する</short-name>
+   <applicability>
+      <p>クライアントサイド・スクリプティングを提供するウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法は、繰り返される構成要素を利用者のコントロールの下でメニューを展開したり折りたたんだりできるメニューの中に置くことで、その構成要素をスキップできるようにする。利用者は、メニューを折りたたむことで繰り返される構成要素をスキップできる。利用者は、メニューの要素を隠したり削除したりするユーザインタフェースを呼び出すことができる。関連情報には、ナビゲーションをスキップするメカニズムを提供するために利用できるメニュー、ツールバー及びツリーの達成方法をいくつか挙げている。</p>
+    <note><p>類似の方法は、サーバーサイドスクリプティングを用いて修正後のウェブページを読み込むことでも実装できる。</p>
+		</note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ウェブページの先頭にあるナビゲーションリンクは、すべてHTML、CSS及びJavaScriptを用いて実装されているメニュー項目である。ナビゲーションバーが展開しているとき、ナビゲーションのリンクは利用可能になっている。ナビゲーションバーがたたまれているとき、リンクは利用不可能である。</p>
+</description>
+      <code><![CDATA[
+...
+
+  <script type="text/javascript">
+  function toggle(id){
+    var n = document.getElementById(id);
+    n.style.display =  (n.style.display != 'none' ? 'none' : '' );
+  }
+  </script>
+
+...
+
+  <a href="#" onclick="toggle("navbar")">ナビゲーションバー切り替え</a>
+
+  <ul> id="navbar">
+  <li><a href="http://target1.html">リンク 1</a></li>
+  <li><a href="http://target2.html">リンク 2</a></li>
+  <li><a href="http://target3.html">リンク 3</a></li>
+  <li><a href="http://target4.html">リンク 4</a></li>
+  </ul>
+
+... ]]></code>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-navbar.html"><!-- linktype="examples"-->ナビゲーションバーをリンクで切り替える</loc></p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>一連のウェブページのための目次はそれぞれのページの先頭近くで繰り返される。目次の先頭にあるボタンで、利用者はそれを消したり復元したりできる。</p>
+</description>
+      <code><![CDATA[
+...
+
+   <script type="text/javascript">
+  function toggle(id){
+    var n = document.getElementById(id);
+    n.style.display =  (n.style.display != 'none' ? 'none' : '' );
+  }
+  </script>
+
+  ...
+
+  <button onclick="return toggle('toc');">目次切り替え</button>
+  <div id="toc">
+    ...
+  </div>
+
+...]]></code>
+      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-toc.html"><!-- linktype="examples"-->目次をボタンで切り替える</loc></p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.bobbyvandersluis.com/articles/unobtrusive-show-hide/">Unobtrusive show/hide behavior reloaded</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.dustindiaz.com/seven-togglers/">Seven ways to toggle an element with JavaScript</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H69"/>
+      <relatedtech idref="H70"/>
+      <!--  @@  the following were unaccepted wiki drafts at the time this tech was xmlized
+                    # Using lists and links to make a click menu
+                    # Using lists and links to make a hover menu
+                    # Using lists and links to make a toolbar
+                    # Using lists and links to make a menu bar
+                    # Using lists and links to make a tree control -->
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ユーザインタフェースコントロールで、繰り返されるコンテンツを展開したり折りたたんだりできるかをチェックする。</p>
+        </item>
+        <item>
+          <p>コンテンツが展開されたとき、それがプログラムで解釈可能なコンテンツに含まれていて、論理的な場所で読み上げ順序があるかをチェックする。</p>
+        </item>
+        <item>
+          <p>コンテンツが折りたたまれているとき、それがプログラムで解釈可能でない部分にあることをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記のすべての項目を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

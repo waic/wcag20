@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H90">
+   <short-name>必須項目のフォーム・コントロールを特定するために、label 要素又は legend 要素を使用する</short-name>
+   <applicability>
+      <p>外部ラベルを用いている HTML 及び XHTML のコントロール</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+   </applies-to>
+   <!-- these ua issues also appear in H44 -->
+   <ua-issues>
+      <ua-issue name="" version=""><p>HTML 及び XHTML の仕様では、明示的なラベルと黙示的なラベルの両方を認めている。しかし、支援技術の中には、黙示的なラベルを正しく扱えないものがある（例えば、<code><![CDATA[<label>名前 <input type="text" name="firstname"></label>]]></code>)。</p>
+		<ulist><item><p>JAWS 7.10 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、仮想PCカーソルモードとフォームモードの両方で、テキストフィールドの明示的なラベルと黙示的なラベルを読み上げる。フォームモードでは、チェックボックスとラジオボタンの黙示的なラベルを読み上げない。</p></item><item><p>Window-Eyes 5.5 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、明示的にラベル付されたフォーム・フィールドを読み上げる。ブラウズモードでは、黙示的にラベル付されたフォーム・コントロールは読み上げられないが、ブラウズオフモードでコントロールからコントロールへ移動する際には、明示的なラベルは読み上げられる。</p></item></ulist></ua-issue>
+    <ua-issue name="" version="">
+      <p>ユーザエージェントは、<att>title</att>属性のある<el>input</el>要素上にマウスオーバーすると、ツールチップを表示する。<att>title</att>属性値は支援技術に引き渡され、多くのグラフィカル・ブラウザではツールチップとして表示される。ツールチップはキーボード操作では表示されないため、その情報は画面を見ているキーボード利用者には提供されないと考えたほうがよい。</p>
+    </ua-issue>
+    <ua-issue name="" version=""><p><el>label</el>要素がない場合、そのフォーム・コントロールがフォーカスを受け取ったときに、JAWS と Window-Eyes は <att>title</att> 属性値を読み上げる。</p>
+		<ulist><item><p>JAWS 6.0 以降では、<el>label</el> 要素のラベルと <att>title</att> 属性値が異なる場合には、その両方を読み上げるように設定することが可能である。しかし、この設定があることを知っているゆーざーはほとんどいない。</p></item><item><p>WindowEyes 5.5 では、ホットキーの Insert + E で、フォーカスのあるアイテムの title 属性値を含む追加の情報を提示できる。</p></item></ulist></ua-issue>
+    <!-- BBC: This UA issue (below) is not shared with H44 -->
+    <ua-issue name="" version="">
+      <p>ユーザエージェントの中には、デフォルトではフォームのラベルにあるアスタリスク文字を読み上げないものがある（具体的には、Window-Eyes）。Window-Eyesの利用者は、この設定を変更することができるが、多くの利用者はその設定変更を行っていないと思われる。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、ウェブアプリケーションまたはフォームで特定のフォーム・コントロールが必須項目であることを明確に示すことである。コントロールが必須項目であることを示す記号またはテキストは、<el>label</el> 要素、又は <el>fieldset</el> 要素でグループ化されたコントロールに対する <el>legend</el> 要素を用いて、プログラムが解釈できるようにそのコントロールと関連付ける必要がある。記号が用いられている場合には、事前に利用者にその意味を説明する必要がある。</p>
+   </description>
+   <examples>
+      <eg-group>
+      <head>テキストを用いて必須項目であることを示す</head>
+      <description><p>以下のコード例にあるテキストフィールドには、明示的なラベル「名前（必須）」がある。<el>label</el> 要素の <att>for</att> 属性値が、<el>input</el> 要素の <att>id</att> 属性値と合致していて、<el>label</el> 要素でマークアップされたテキストによってそのコントロールが必須項目であることを示している。</p>
+</description>
+      <code><![CDATA[<label for="firstname">名前（必須）:</label> 
+<input type="text" name="firstname" id="firstname" /> ]]></code>
+      <description><note><p>英語では、必須項目の "required" を略して "req." とするコンテンツ制作者もいるが、この略語は分かりにくいという報告がある。</p>
+</note>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>アスタリスクを用いて必須項目であることを示す</head>
+      <description><p>以下のコード例にあるテキストフィールドには、必須項目であることを示すアスタリスクを含んだ明示的なラベルがある。アスタリスクの意味をフォームの先頭で定義することが重要である。このコード例では、アスタリスクは <el>abbr</el> 要素内にあって、アスタリスク文字にスタイルを指定できるようになっている。この CSS は、アスタリスク文字は視覚に障害のある利用者にとっては見えづらいため、デフォルトのアスタリスク文字よりもサイズを大きくしている。</p>
+</description>
+      <code><![CDATA[CSS:
+.req {font-size: 150%} 
+
+HTML:
+
+<p> 必須項目には、アスタリスク (<abbr class="req" title="必須">*</abbr>)が付いています。</p>
+<form action="http://www.test.com" method="post">
+<label for="firstname">名前 <abbr class="req" title="必須">*</abbr>:</label> 
+<input type="text" name="firstname" id="firstname" /> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>画像を用いて必須項目であることを示す</head>
+      <description><p>以下のコード例にあるテキストフィールドには、コントロールが必須項目であることを示す画像を含む明示的なラベルがある。画像の意味をフォームの先頭で定義することが重要である。</p>
+</description>
+      <code><![CDATA[<p><img src="req_img.gif" alt="（必須）" /> は、そのフォーム・コントロールが必須項目であることを示しています。</p>
+<form action="http://www.test.com" method="post">
+<label for="firstname">名前 <img src="req_img.gif" alt="（必須）" />:</label> 
+<input type="text" name="firstname" id="firstname" />
+... ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>ラジオボタンまたはチェックボックスのグループが必須項目であることを示す</head>
+      <description><p>ラジオボタン及びチェックボックスは、個々のラジオボタンやチェックボックスではなく、そのグループ全体で一つの必須項目となるため、他のインタラクティブなコントロールとは異なった扱われかたをする。事例 1～3 で用いられている方法をラジオボタンやチェックボックスに適用する際には、必須項目であることを <el>label</el> 要素ではなく <el>legend</el> 要素内で示すべきである。</p>
+</description>
+      <code><![CDATA[<fieldset>
+<legend>私が関心のあるもの（必須）:</legend>
+<input type="checkbox" id="photo" name="interests" value="ph">
+<label for="photo">写真</label></br>
+<input type="checkbox" id="watercol" name="interests" checked="checked" value="wa">
+<label for="watercol">水彩画</label></br>
+<input type="checkbox" id="acrylic" name="interests" checked="checked" value="ac">
+<label for="acrylic">アクリル画</label>
+…
+</fieldset> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html401/interact/forms.html#h-17.9">HTML 4.01 form labels</loc></p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H65"/>
+      <relatedtech idref="H71"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>必須項目であるフォーム・コントロールに対して、必須項目であることがフォーム・コントロールの <el>label</el> 要素又は <el>legend</el> 要素で示されている。</p>
+        </item>
+        <item>
+          <p>必須項目であることを示すテキスト以外のものに対して、それを使用しているフォーム・コントロールよりも前にその意味が説明されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>上記の全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

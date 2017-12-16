@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G200">
+   <short-name>必要なときにだけリンク先を新しいウィンドウおよびタブで開く</short-name>
+   <applicability>
+      <p>新しいウィンドウを開くウェブページ</p>
+   </applicability>
+   <applies-to>
+	   <guideline idref="consistent-behavior" relationship="advisory"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ウェブコンテンツ内で新しいウィンドウまたはタブを開くリンクまたはボタンの使用を限定することである。一般的に、新しいウィンドウやタブを開かないほうがよい。なぜなら、特に視覚的なコンテンツを知覚するのに困難を伴う利用者をはじめ、利用者にとっては混乱の原因となりうるからである。しかし、アクセシビリティの観点から、新しいウィンドウやタブを開くことが望ましい状況というのもある。例えば、次の二つのような場合である：</p>
+    <olist>
+      <item>
+        <p>例えば、ヘルプの説明文またはカレンダーを用いたデート・ピッカー（日付選択）のようなフォーム入力の代替手段のように、状況に応じた情報を含むウェブページを開く際に、もしそういったウェブページが同じウィンドウやタブで開かれるとしたら、フォームを入力したり送信したりするような複数のステップから成るワークフローを著しく中断させることになる。</p>
+      </item>
+      <item>
+        <p>利用者がセキュアなサイトにログインしていて、そのサイト外にあるページへのリンクをたどっていくとログインした状態が打ち切られてしまう。この場合、外部へのリンクを別のウィンドウで開くことによって、利用者は元のウィンドウでログインした状態を保ちながら関連するリソースにアクセスすることができるようになる。</p>
+      </item>
+    </olist>
+    <p>リンク先のウェブページが新しいウィンドウで開かれる際には、利用者に事前に知らせることが推奨される。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>オンラインフォーム</head>
+      <description><p>各入力項目に対する状況に応じたヘルプをフォーム上で提供するには文字量が多すぎるため、別のウェブページで提供しているオンラインフォームがある。すでに入力済みのフォームデータが失われないように、状況に応じたヘルプへのリンクは新しいウィンドウまたはタブを開くようになっている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>セキュアなウェブサイト</head>
+      <description><p>セキュアなウェブサイト内のあるウェブページにセキュアなセッション外にあるウェブページへのリンクがある。そのリンクを同じウィンドウで開くとセキュアなセッションが無効になってしまうため、新しいウィンドウまたはタブで開くようになっている。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>デート・ピッカー（日付選択）</head>
+      <description><p>オンラインフォームに日付のフィールドがあり、利用者は日付を入力するか、別ページのカレンダーを用いたデート・ピッカーから日付を選択することができるようになっている。すでに入力済みのフォームデータが失われないように、カレンダーを用いたデート・ピッカーへのリンクは新しいウィンドウまたはタブを開くようになっている。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <p>
+              <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              	href="http://www.webcredible.com/blog/beware-opening-links-new-window/">Beware of opening links in a new window</loc>
+            </p>
+      </see-also>
+      <see-also>
+         <p>
+              <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/">Top-10 New Mistakes of Web Design</loc>
+            </p>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H83"/>
+      <relatedtech idref="SCR24"/>
+   </related-techniques>
+</technique>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div1
+  SYSTEM "../xmlspec.dtd">
+<div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="text-equiv">
+   <head>1.1</head>
+      <div2 id="text-equiv-intent" role="glintent">
+      <head>意図</head>
+<p>このガイドラインの目的は、すべての非テキストコンテンツが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="textdef" linktype="glossary">テキスト</loc>でも利用可能であるようにすることである。「テキスト」とは、画像文字ではなく、電子テキストを指す。電子テキストには、表現中立であるという類を見ない利点がある。すなわち、テキストは、視覚的、聴覚的、触覚的、又は任意の組み合わせによってレンダリング可能だということである。結果として、電子テキストでレンダリングされる情報は、利用者のニーズを最もよく満たすどのような形態であれ提供可能なのである。テキストはまた、容易に拡大する、読字障害のある利用者にとっても理解しやすい形で音声読み上げをする、利用者のニーズを最もよく満たす触覚形式でレンダリング可能である。
+</p>
+
+<note>
+<p>コンテンツをシンボルに変換することは、発達障害や発話理解困難のある利用者のために図記号に変換することを含むが、シンボルはこういった用途に限定されない。</p>
+</note>
+<trnote><p>シンボルとは、対象となる事物を分かりやすく表現した「絵」のことを指す。シンボルの具体的な例については、<loc href="http://j-pic.net/menu001d.html">JIS 絵記号と PIC シンボル - 日本 PIC 研究会</loc>及び<loc href="http://www8.cao.go.jp/shougai/whitepaper/h19hakusho/zenbun/column/cl41.html">障害者白書 平成 19 年版 コラム コミュニケーション支援用絵記号の例</loc>を参照のこと。</p></trnote>
+</div2>
+
+<div2 id="text-equiv-advisory" role="gladvisory">
+<head>ガイドライン N.N の参考達成方法</head>
+
+<ulist>
+	<item><p>音声しか含まないファイルに手話ビデオを提供する（リンク追加予定）</p></item>
+</ulist>
+</div2>
+   <xi:include href="text-equiv-all.xml"/>
+</div1>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H71">
+   <short-name>フォーム・コントロールのグループに関する説明を提供するために、fieldset 要素及び legend 要素を使用する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、関連するフォーム・コントロールをセマンティックにグループ化する方法を提供することである。これによって、利用者はフォーム・コントロールの関係が理解でき、より早く効率的にフォームを利用できるようになる。</p>
+    <p>フォーム・コントロールは、<el>fieldset</el> 要素で囲むことによってグループ化できる。つまり、<el>fieldset</el> 要素内にある全てのフォームコントロールが関連付けられることになる。<el>fieldset</el> 要素内での最初の要素は<el>legend</el> 要素でなければならず、<el>legend</el> 要素はそのグループのラベルや説明を提供するものである。なお、利用者を混乱させてしまう恐れがあるため、コンテンツ制作者は必要以上に <el>fieldsets</el> 要素を入れ子にすることを避けるべきである。</p>
+    <p>フォーム・コントロールのグループ化が最も重要なのは、関連するラジオボタンやチェックボックスをまとめるときである。ラジオボタンやチェックボックスは、<att>name</att> 属性で同じ値が指定されている場合に、一組のコントロールとして関連付けられる。これらは、選択肢の中から自由に選択できるセレクトメニューと同じように動作することになるが、セレクトメニューは単一のコントロールであるのに対し、ラジオボタンとチェックボックスは複数のコントロールである点が異なる。それぞれのラジオボタンやチェックボックスの個々のラベルは、そのグループの説明となる文脈を十分に伝えられないことがある。この場合、セマンティックにグループ化しておくことが特に重要であり、それによって単一のコントロールのように簡単に操作できるようになり、またグループの説明を補足することができる。ユーザエージェントは、その説明を提供し、複数のコントロールが同じグループの一部であることを利用者に伝えるために、各コントロールのラベルよりも先に <el>legend</el> 要素の内容を提示することが多い。</p>
+    <p>ラジオボタンやチェックボックスほどには明確に関連していないコントロールをグループ化することが有用になることがある。たとえば、利用者の住所を入力するフィールドがいくつかに分かれている場合、「住所」という <el>legend</el> 要素を付けてグループ化しておくとよい。</p>
+<p>ただし、（単一の名前付きフィールドの値を持つ場合でも）関連するラジオボタン又はチェックボックスのグループに明らかな指示及び明確な選択肢が含まれている（すなわち、特定の各コントロールに関連付けられた個々のラベルが十分な記述を提供する）場合、<el>fieldset</el> 及び <el>legend</el> 要素は必須ではない。この場合は、<specref ref="H44"/>で十分である。</p>
+    <p>ブラウザの初期状態では、<el>fieldset</el> 要素によってグループ化したコントロール全体を枠で囲むという表示であるため、コンテンツ制作者は <el>fieldset</el> 要素の利用を避けたい場合がある。しかし、このような視覚的なグループ化も有益であり、その状態のままにしておくこと（あるいは、何らかの形で視覚的にグループ化すること）をしっかり検討すべきである。見た目のスタイルについては、CSS で <el>fieldset</el> 要素に対する「border」プロパティを上書きしたり、<el>fieldset</el> 要素に対する「position」プロパティを上書きしたりすることによって変更できる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>選択式のテスト</head>
+      <description><p>この事例では、1つの質問に対して5つの解答の中からどれかを選べるテスト項目を示している。解答はそれぞれラジオボタン（<code>input type="radio"</code>）で提示されており、<el>fieldset</el>要素に含めてある。テストの質問内容は<el>legend</el>要素でタグ付けしてある。</p>
+</description>
+      <code role="html401"><![CDATA[<fieldset>
+  <legend>戯曲<cite>ハムレット</cite>を書いたのは</legend>
+  <input type="radio" id="shakesp" name="hamlet" checked="checked" value="a">
+  <label for="shakesp">ウィリアム シェークスピア</label><br />
+  <input type="radio" id="kipling" name="hamlet" value="b">
+  <label for="kipling">ラドヤード キップリング</label><br />
+  <input type="radio" id="gbshaw" name="hamlet" value="c">
+  <label for="gbshaw">ジョージ バーナード ショー</label><br />
+  <input type="radio" id="hem" name="hamlet" value="d">
+  <label for="hem">アーネスト ヘミングウェイ</label><br />
+  <input type="radio" id="dickens" name="hamlet" value="e">
+  <label for="dickens">チャールズ ディケンズ</label>
+</fieldset>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>チェックボックスのグループ</head>
+      <description><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス（<code>input type="checkbox"</code>）には、<el>label</el> がある。すべてのチェックボックスは、<el>fieldset</el> 要素に含められており、<el>legend</el> 要素にはチェックボックスのグループ全体の説明がある。</p>
+</description>
+      <code role="html401"><![CDATA[<fieldset>
+  <legend>次のことに興味があります（全て選択することも可）</legend>
+  <input type="checkbox" id="photo" name="interests" value="ph">
+  <label for="photo">写真</label><br />
+  <input type="checkbox" id="watercol" name="interests" checked="checked" value="wa">
+  <label for="watercol">水彩画</label><br />
+  <input type="checkbox" id="acrylic" name="interests" checked="checked" value="ac">
+  <label for="acrylic">アクリル画</label>
+  …
+</fieldset>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>同じ名前を付けたフィールドとして送信されるラジオボタン</head>
+      <description><p>この事例では、1人の哲学者を選ぶように利用者に求めている。各ラジオボタンが関連している（同じフィールドとして送信される）ことを示すために「<att>name</att>」属性で同じ値を指定し、見た目としてもグループ化すべき点に注意しよう。また、「<att>name</att>」属性は同じ値であっても、「<att>id</att>」属性はそれぞれ一意的な値でなければならない点にも注意しよう。</p>
+</description>
+      <code><![CDATA[<form action="http://example.com/vote" method="post">
+  <fieldset>
+    <legend>あなたが好きな哲学者</legend>
+    <input type="radio" name="philosopher" id="philosopher_socrates" value="socrates"/>
+    <label for="philosopher_socrates">ソクラテス</label>
+    <input type="radio" name="philosopher" id="philosopher_plato" value="plato"/>
+    <label for="philosopher_plato">プラトン</label>
+    <input type="radio" name="philosopher" id="philosopher_aristotle" value="aristotle"/>
+    <label for="philosopher_aristotle">アリストテレス</label>
+  </fieldset>
+  </form>]]></code>
+      <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>論理的に関連付けたコントロール</head>
+      <description><p>この事例では、居住地と郵送先のフィールドを別々に <el>fieldset</el> 要素でグループ化し、<el>legend</el> 要素で異なる内容を指定している。</p>
+</description>
+      <code role="html401"><![CDATA[<form action="http://example.com/adduser" method="post">
+   <fieldset>
+     <legend>居住地</legend>
+     <label for="raddress">住所: </label>
+     <input type="text" id="raddress" name="raddress" />
+     <label for="rzip">郵便番号: </label>
+     <input type="text" id="rzip" name="rzip" />
+     ……居住地の入力内容が続く……
+   </fieldset>
+   <fieldset>
+     <legend>郵送先</legend>
+     <label for="paddress">住所: </label>
+     <input type="text" id="paddress" name="paddress" />
+     <label for="pzip">郵便番号: </label>
+     <input type="text" id="pzip" name="pzip" />
+     ……郵送先の入力内容が続く……
+   </fieldset>
+</form> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/interact/forms.html#adef-checked">Checkboxes</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H65"/>
+   </related-techniques>
+   <tests>
+     <procedure>
+       <p>関連するコントロールのグループにおいて、各コントロールの個々のラベルが十分な記述を提供しておらず、追加でグループレベルの記述が必要な場合</p>
+      <olist>
+        <item>
+          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、1 つの <el>fieldset</el> 要素内に含められている。</p>
+        </item>
+        <item>
+          <p>各 <el>fieldset</el> 要素には、そのグループの説明を含めた <el>legend</el> 要素が指定されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+       <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

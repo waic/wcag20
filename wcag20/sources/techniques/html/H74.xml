@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H74">
+   <short-name>開始タグ及び終了タグを仕様に準じて使用していることを確認する</short-name>
+   <applicability>
+      <p> HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-parses" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、支援技術がコンテンツを解析するときに生じる（ことで知られている）キーエラーを回避することである。このエラーは、コンテンツが、仕様に準じて用いられていない開始タグや終了タグを含むときに起こる。HTML あるいは XHTML のメカニズムをウェブコンテンツ技術やウェブコンテンツ技術のバージョンを特定するために用いたり、このようなタイプのエラーがないようにウェブページを制作したりすることで回避できる。バリデーターにはコンテンツ開発者が利用可能なものがいくつかあり、バリデーターのレポートではこのようなタイプのエラーが指摘される。この達成方法は、間違って形成された開始タグと終了タグに関連するエラーのみを対象としている。文書型宣言は、この検証では必ずしも必要ではないが、文書型宣言をしておくことでバリデーターを活用しやすくなる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>HTML</head>
+      <description><p>HTML ページが文書型宣言を含んでいる（<code>!DOCTYPE</code> として示されることが多い）。コンテンツ開発者はオフラインあるいはオンラインでバリデーターを利用できる（下記の参考リソース参照）。バリデーターでは、すべての id 属性の値が一意的で、かつ開始タグと終了タグが仕様に準じて用いられていることをチェックできる。</p>
+<note><p>どの要素が終了タグを必要とするかの仕様が、HTML5 の導入とともに変更された。</p><!-- 原文の矛盾を訳文で訂正。 --></note>
+
+</description>
+    </eg-group>
+    <eg-group>
+      <head>XHTML</head>
+      <description><p>XHTML その他の XML ベースの文書同様に、XHTML 文書は、文書型定義 (DTD) や他のタイプの XML スキーマを参照する。コンテンツ開発者はオンラインあるいはオフラインでバリデーターを利用でき（エディターに組み込まれているバリデーションツールを含む）、開始タグや終了タグが仕様に準じて用いられていることをチェックする。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>検証のフレームワークを用いる</head>
+      <description><p>ウェブサイトが静的なページではなく、HTML あるいは XHTML のページが動的に生成されるときは、コンテンツ開発者は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xhtmlunit.sourceforge.net/">XHTMLUnit</loc> や <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmltestsuite.sourceforge.net/">XML Test Suite</loc> あるいは類似のフレームワークを用いて生成される XHTML コードのチェックを行うことができる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/QA/Tips/Doctype">Do not forget to add a doctype</loc>（W3C Quality Assurance Initiative）は、文書型がどういうもので、なぜそれを用いるべきかについて説明している。</p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/QA/2002/04/valid-dtd-list.html">Recommended DTDs to use in your Web document</loc> （W3C Quality Assurance Initiative）は、よく用いられる宣言のリストである。</p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.chami.com/html-kit/faq/pages/validate_tools.html">How do I validate my code or check for possible errors?</loc> は、フリーエディタの HTML-Kit にある、HTML、CSS 及び XML をチェックするためのツールを説明している。</p>
+            </item>
+         </ulist>
+         <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="G134"
+                 linktype="general">ウェブページをバリデートする</loc>の参考リソースを参照のこと。</p>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>終了タグが必要なすべての要素に対して、終了タグがあることをチェックする。</p>
+        </item>
+        <item>
+          <p>終了タグが禁止されているすべての要素に対して、終了タグがないことをチェックする。</p>
+        </item>
+        <item>
+          <p>入れ子になっているすべての要素の開始タグと終了タグが正しく入れ子になっていることをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+        <p>1. から 3. 全てを満たしている。</p>
+      </expected-results>
+   </tests>
+</technique>

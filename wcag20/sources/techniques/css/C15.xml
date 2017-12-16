@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C15"><!-- This technique was combined with C16 -->
+   <short-name>ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSSを使用する</short-name>
+   <applicability>
+      <p>CSS、HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-without-color" relationship="sufficient"/>
+      <success-criterion idref="navigation-mechanisms-focus-visible" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>
+Windows版のInternet Explorer 6.0とそれ以前のバージョンでは、ハイパーリンクの要素を除いてダイナミック疑似クラスをサポートしていない。Internet Explorer 7 は、ハイパーリンクの要素を除いて:focusスタイルをサポートしていない。Internet Explorerの(X)HTMLのリンク（a要素）において:focusと同じ効果を出すには、CSSの:active疑似クラスを追加すればよい。</p>
+    </ua-issue>
+    <ua-issue name="" version="">
+      <p>
+Windows版のFirefox 1.5とFirefox 2.0、SeaMonkey 1.1は、1行の入力フィールド、複数行の入力フィールド、ラジオボタン、チェックボックス、select要素、送信／リセットボタン及びbutton要素においてダイナミック疑似クラスをサポートしている。しかし、ラジオボタンやチェックボックスがフォーカスを受け取ったときに色やボーダーを変更することには対応していない。</p>
+    </ua-issue>
+    <ua-issue name="" version="">
+      <p>
+Windows版のOpera 9.02は、1行の入力フィールド、複数行の入力フィールド、ラジオボタン、チェックボックス、select要素、送信／リセットボタンにおいてダイナミック疑似クラスをサポートしているが、button要素ではサポートしていない。</p>
+    </ua-issue>
+    <ua-issue name="" version="">
+      <p>
+Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベルに対する隣接兄弟セレクタにも対応している。Windows版のFirefox 1.5、Internet Explorer 6.0とそれ以前のバージョンは、フォームのラベルに対する隣接兄弟セレクタには対応していない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、インタラクティブな要素がフォーカスされたとき、又は利用者がポインティングデバイスを使ってカーソルを上にのせたときに、スタイルシートを使って視覚的なフィードバックを返すようにすることで視覚表現がどれだけ強調されるのかを示すことである。
+フォーカスされた要素又はカーソルが上にのせられた要素をハイライトすることで、その要素がインタラクティブであること、又はインタラクティブな要素の範囲内であるなどの情報を提供することができる。</p>
+    <p>複数のモードに対して視覚的なフィードバックを返すことが可能な場合もある。通常、それは要素の上にカーソルをのせるためにマウスを使ったり、又は要素にタブで移動するためのキーボードを使ったりする場合である。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>リンク要素</head>
+      <description><p>
+この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSS が使用されている。</p>
+<p>
+表示されるコンテンツは次の通り：</p>
+</description>
+      <code role="xhtml"><![CDATA[<ul id="mainnav">
+  <li class="page_item">Home</li>
+  <li class="page_item"><a href="/services">サービス</a></li>
+  <li class="page_item"><a href="/projects">プロジェクト</a></li>
+  <li class="page_item"><a href="/demos">デモ</a></li>
+  <li class="page_item"><a href="/about-us">会社概要</a></li>
+  <li class="page_item"><a href="/contact-us">問合せ先</a></li>
+  <li class="page_item"><a href="/links">関連リンク</a></li>
+</ul>]]></code>
+      <description><p>
+マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り：</p>
+</description>
+      <code role="css"><![CDATA[
+#mainnav a:hover, #mainnav a:active, #mainnav a:focus {
+  background-color: #DCFFFF;
+  color:#000066;
+}]]></code>
+    </eg-group>
+    <eg-group>
+      <head>フォーカスを受け取った要素をハイライトする</head>
+      <description><p>
+この事例では、背景色を変更することによって、フォーカスを受け取ったときに入力フィールドのスタイルを変更するために :focus 疑似クラスが使用されている。</p>
+</description>
+      <code role="xhtml"><![CDATA[
+<html>
+  <head>
+    <style type="text/css">
+      input.text:focus {
+        background-color: #7FFF00; color: #000;
+      }
+      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+        background-color: #FF6: color: #000; 
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="form.php">
+      <p><label for="fname">名前: </label>
+        <input class="text" type="text" name="fname" id="fname" />
+      </p>
+      <p>
+        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">男性</label><br />
+        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">女性</label>
+      <p>
+    </form>
+  </body>
+</html>]]></code>
+         <description>
+            <p>このコードの使用例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
+                    <!--linktype="examples"-->フォーカスを受け取る要素を強調表示する例</loc>。</p>
+         </description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</loc>
+								       </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/selector.html#adjacent-selectors">CSS 2: 5.7 Adjacent sibling selectors</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <p>フォーカスを得られる各要素に対して：</p>
+      <olist>
+        <item>
+          <p>マウスを使って要素の上にカーソルをのせる。</p>
+        </item>
+        <item>
+          <p>背景又はボーダーの色が変化する。</p>
+        </item>
+        <item>
+          <p>キーボードでフォーカスを与える前に、マウスを動かして対象からカーソルを外す。</p>
+        </item>
+        <item>
+          <p>キーボードを使って、対象の要素にタブ移動する。</p>
+        </item>
+        <item>
+          <p>背景又はボーダーの色が変化する。</p>
+        </item>
+        <item>
+          <p>その要素がフォーカスを失ったとき、背景又はボーダーの色が元に戻る。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記、2, 5 及び 6 を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

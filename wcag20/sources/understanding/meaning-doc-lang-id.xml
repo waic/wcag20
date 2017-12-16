@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="meaning-doc-lang-id" role="extsrc">
+   <head>3.1.1</head>
+   <div3 role="intent">
+      <head/>
+
+<p>この達成基準の意図は、ユーザエージェントがテキスト及びその他の形式の言語学上の言語によるコンテンツを正しく提示するために必要なウェブページの情報を、コンテンツ制作者が提供することを保証することである。支援技術と従来のユーザエージェントはともに、ウェブページの言語が識別されるとき、テキストをより正確に描画することができる。スクリーンリーダーは、正しい発音規則を読み込むことができる。ビジュアルブラウザは、文字や書体を正しく表示することができる。メディアプレーヤーは、キャプションを正しく表示できる。結果として、障害のある利用者がコンテンツをより理解できるようになる。</p>
+<p><loc href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc> 述べられているように、ウェブページのデフォルトの自然言語が、デフォルトのテキスト処理言語となる。ウェブページがいくつかの言語を使用している時、デフォルトのテキスト処理言語は、最も使われている言語である。(複数の言語が同じ割合で使われている場合、最初に使われている言語をデフォルトの自然言語として選択する必要がある。)</p>
+
+<note>
+<p>適合レベル A を目指している多言語サイトについて、WCAG ワーキンググループはコンテンツ制作者に、レベル AA の達成基準ではあるが、達成基準 3.1.2 にも同じように適合することを強く推奨する。</p>
+</note>
+
+<div4 role="benefits">
+<head/>
+<p>この達成基準には、次のような利用者にメリットがある:</p>
+<ulist>
+	<item><p>スクリーンリーダー又はテキストを合成音声に変換するその他の技術を使用している利用者。</p></item>
+	<item><p>例えば、文字及びアルファベットを認識したり、単語を読み取ったりすることのように、流暢かつ正確に書かれたものを読むことが困難な利用者。</p></item>
+	<item><p>テキストを音声に変換するソフトウェアを使用している、特定の認知の障害、言語の障害、及び学習障害のある利用者。</p></item>
+	<item><p>同期したメディアのコンテンツの音声トラックでの言語の変化を識別するのに、キャプションを頼りにしている利用者。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head/>
+<ulist>
+	<item><p><emph role="bold">2 つの言語で書かれたコンテンツのあるウェブページ</emph></p>
+<p>ドイツで制作され、HTML で書かれたウェブページに、ドイツ語と英語の両方のコンテンツが含まれているが、コンテンツのほとんどはドイツ語である。デフォルトの自然言語は、html 要素の lang 属性によって、ドイツ語 (de)として識別される。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><loc href="http://www.w3.org/TR/i18n-html-tech-lang/">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</loc></p></item>
+	<!--item>
+              <p>
+                <loc href="http://www.who.int/classifications/icf/site/onlinebrowser/icf.cfm?parentlevel=3&amp;childlevel=4&amp;itemslevel=4&amp;ourdimension=d&amp;ourchapter=1&amp;ourblock=2&amp;our2nd=40&amp;our3rd=0&amp;our4th=0">d140 Learning to read</loc>. 2001. International Classification of Functioning, Disabilities, and Health. World Health Organization</p>
+            </item-->
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc href="H57" linktype="html"/></p></item>
+	<item><p><loc href="FLASH13" linktype="flash"/></p></item>
+	<item><p><loc href="PDF16" linktype="pdf"/></p></item>
+	<item><p><loc href="PDF19" linktype="pdf"/></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head/>
+<ulist>
+	<item><p><loc href="SVR5" linktype="server"/></p></item>
+	<item><p>http 又は Content-Language メタタグを用いてメタデータを指定する (リンク追加予定)</p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>

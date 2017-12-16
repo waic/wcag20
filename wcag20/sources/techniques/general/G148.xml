@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G148">
+   <short-name>背景色及びテキストの色を指定せず、その初期設定を変更するウェブコンテンツ技術の機能を使用しない</short-name>
+   <applicability>
+      <p>テキストと背景の色が別々に指定されている、及びブラウザが初期設定の色を制御できるあらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。この達成方法では、コンテンツ制作者は単純にテキストの色と背景色を指定しないことで、コントラストに関する処置を行わない。その結果、両方の色はユーザエージェントによって完全に決定される。</p>
+      <p>視覚障害を持つ人々の中には、彼らが見づらい何色かを上書きするようユーザエージェントを設定している人がいる。この達成方法は、ユーザエージェントとウェブサイトがコンフリクトを起こし、結果として文字色と背景色が同じ色になってしまうことで、ブラウザや支援技術で独自の色設定をしている利用者にとって不可視の状態になるという場合を避けるためのものである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>コンテンツ制作者はテキストの色も背景も指定していない。CSSも使用していない。その結果、利用者は彼らにとって都合のよい色とコントラストを提供するブラウザの初期設定を利用可能となる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.paciellogroup.com/resources/contrastanalyser/">Contrast Analyser – Application</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/services/luminositycontrastratio.php">Contrast Ratio Analyser - online service</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php">Colour Contrast Analyser - Firefox Extension</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://trace.wisc.edu/contrast-ratio-examples/">Color Contrast Samples</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/Graphics/atypical-color-response">Atypical colour response</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.colorsontheweb.com/colorcontrast.asp">Colors On the Web Color Contrast Analyzer</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.vischeck.com/daltonize/runDaltonize.php">Tool to convert images based on color loss so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">List of color contrast tools</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G18"/>
+      <relatedtech idref="G156"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+          <p>テキストの色を指定できる箇所全てを見る。</p>
+        </item>
+        <item>
+          <p> テキストの色が指定されていない。</p>
+        </item>
+        <item>
+          <p> 背景として用いられている背景色又は画像が指定されている箇所全てを見る。</p>
+        </item>
+        <item>
+          <p> 背景として用いられている背景色又は画像が指定されていない。</p>
+        </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.と4.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

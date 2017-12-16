@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH35">
+   <short-name>Flash コンテンツをスクロールさせて、それを停止させるメカニズムを提供するために、スクリプトを使用する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to><!--success-criterion idref="time-limits-required-behaviors"/-->
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description><!--<ednote>
+						<edtext>The wiki indicated this applies to 2.2.1 but that doesn't seem right because it's just about scrolling, removed that.</edtext>
+					</ednote>-->
+      <p>この実装方法の目的は、コンテンツのスクロールがスクリプトによって生成された場合に、そのスクロールを停止する方法を利用者に提供することである。コンテンツをスクロールさせると、ロービジョンの利用者または認知障害を持つ利用者にとって読解が困難または不可能になる場合がある。また、利用者によっては、スクロールの動きに気を取られてしまい、ウェブページの他の部分に集中できなくなる場合がある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>スクロールの一時停止と再開を行うためのトグルボタン</head>
+         <description>
+            <p>この事例では、テキストを左から右にスクロールさせている。利用者がこのスクロール動作を停止および再開できるようにするためのトグルボタンが用意されている。また、スクロールの速度を落とすためのチェックボックスも用意されている。</p>
+            <note>
+               <p>スクロール速度のオプションについて、この事例で紹介されているよりも多くのオプションを希望する利用者もいる。こうした要求を満たすために、コンテンツ制作者はスライダやドロップダウンリストなどのコントロールを使用して、複数の速度オプションを提供することも可能である。</p>
+            </note>
+         </description>
+         <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl;
+import fl.accessibility.CheckBoxAccImpl;
+
+ButtonAccImpl.enableAccessibility();
+CheckBoxAccImpl.enableAccessibility();
+
+var scrollInterval: int;
+var intervalLength: int = 15;
+
+var expandedViewer: MovieClip = exampleScroller.expandedViewer;
+var scrollText: MovieClip = exampleScroller.scrollText;
+var scrollViewer: MovieClip = exampleScroller.scrollViewer;
+
+var scrollingPaused: Boolean = true;
+
+scrollStopper.addEventListener(MouseEvent.CLICK, handleBtnClick, false);
+slowDown_chk.addEventListener(MouseEvent.CLICK, handleChkClick, false);
+
+function handleBtnClick(e) {
+  toggleScroll(false);
+  e.target.label = scrollingPaused? "Resume Scrolling": "Stop Scrolling";
+}
+
+//スクロール速度を下げる
+function handleChkClick(e) {
+  intervalLength = e.target.selected? 50: 15;
+  if (! scrollingPaused) {
+    clearTimeout(scrollInterval);
+    toggleScroll(true);
+  }
+}
+
+//スクロールを一時停止または再開する
+function toggleScroll(noToggle: Boolean) {
+  if (noToggle || scrollingPaused)
+  scrollInterval = setInterval(moveText, intervalLength); else
+  clearTimeout(scrollInterval);
+  if (! noToggle)
+  scrollingPaused = ! scrollingPaused;
+}
+
+function moveText() {
+  if (scrollText.x + scrollText.width < scrollViewer.x)
+  scrollText.x = scrollViewer.x + scrollViewer.width;
+  scrollText.x -= 1;
+}
+
+//スクロールを開始する
+toggleScroll(false);
+]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.html"><!--
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.fla"><!--
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G4"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーにスクロールするコンテンツが含まれている場合、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>利用者がスクロールを一時停止したり再開したりすることのできるボタンが提供されている。</p>
+            </item>
+            <item>
+               <p>ボタンを押すと、スクロールが停止する。</p>
+            </item>
+            <item>
+               <p>もう一度ボタンを押すと、スクロールが再開する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1., 2. および 3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_script_to_scroll_Flash_content,_and_providing_a_mechanism_to_pause_it"/>
+					</source>
+   </admin>
+</technique>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="consistent-behavior-receive-focus">
+   <head>3.2.1</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、訪問者がドキュメント内をナビゲートする際に、機能が予測可能であることを保証することである。フォーカスを受け取ったときにイベントを起動することのできるすべてのコンポーネントは、コンテキストを変化させてはならない。コンポーネントがフォーカスを受け取ったときにコンテキストを変更する例には、次のものがあるが、これに限定されない:</p>
+<ulist>
+	<item><p>コンポーネントがフォーカスを受け取るときにフォームが自動的に送信される。</p></item>
+	<item><p>コンポーネントがフォーカスを受け取るときに新しいウィンドウを開く。</p></item>
+	<item><p>コンポーネントがフォーカスを受け取るときにフォーカスが別のコンポーネントに変更される。</p></item>
+</ulist>
+<p>フォーカスはキーボード操作 (例: コントロールにタブ移動する) 又はマウス操作 (例: テキストフィールドをクリックする) のいずれかを介してコントロールに移動させてもよい。スクリプトがこの動作を実装しない限り、コントロール上にマウスを移動しても、フォーカスは移動しない。順番にコンテキストの変更を開始することのある一部の種類のコントロールでは、コントロールをクリックするとそのコントロール (例: ボタン) もアクティブにする場合があることに注意されたい。</p>
+<note>
+<p>ここでの "コンポーネント" が意味するものは "ユーザインタフェース 要素" や "ユーザインタフェース コンポーネント" と呼ばれる。</p>
+</note>
+
+<div4 role="benefits">
+<head>達成基準 3.2.1 の具体的なメリット</head>
+<ulist>
+	<item><p>この達成基準は、コンテキストの変化が予期せず起こる可能性を少なくすることによって、視覚障害、認知能力の低下、及び運動障害のある利用者に役立つ。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.2.1 の事例</head>
+<ulist>
+	<item><p><emph role="bold">事例 1: ドロップダウンメニュー</emph></p><p>ページ上にあるドロップダウンメニューによって、利用者はジャンプ先を選択できる。その人がキーボードを用いて選択肢に移動し、それを (スペースキー又はエンターキーで) 実行すると、新しいページにジャンプする。しかし、その人が選択肢に移動して、エスケープ又はタブキーを押してプルダウンメニューから抜け出た場合には、フォーカスはドロップダウンから移動するので、新しいページにジャンプしない。</p></item>
+	<item><p><emph role="bold">失敗例: ヘルプのダイアログ</emph></p><p>フィールドがフォーカスを受け取ると、フィールドを説明し、オプションを提供するヘルプのダイアログウィンドウが開く。キーボードの利用者がウェブページの中をタブ移動すると、ダイアログが開いて、利用者がフィールドを過ぎてタブを移動しようとするたびにコントロールからキーボード フォーカスが離れる。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.2.1 の達成方法及び不適合事例 - フォーカス時</head>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G107" linktype="general"/></p></item>
+</olist>
+
+<note>
+<p>コンテンツの変化が常に<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="context-changedef" linktype="glossary">コンテキストの変化</loc>であるとは限らない。コンテンツの変化がコンテキストの変化ではない場合、この達成基準は自動的に満たされていることになる。</p>
+</note>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.2.1 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>コンポーネントがフォーカスを受け取ったときに持続的な状態又は値の変更を発生させない、又はあらゆる変更をリセットするための代替手段を提供する (リンク追加予定)</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G200" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G201" linktype="general"/></p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>達成基準 3.2.1 のよくある不適合事例</head>
+<ulist>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F52" linktype="failure"/>
+                </p></item>
+	<item role="script"><p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="F55" linktype="failure"/>
+                </p></item>
+</ulist>
+</div4>
+</div3>
+</div2>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G99">
+   <short-name>消去した情報を元に戻せるようにする</short-name>
+   <applicability>
+      <p>利用者の操作によって削除されるコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-reversible" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-reversible-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ウェブアプリケーションで情報を削除できる場合、利用者によって誤って削除された情報を復元する手段をサーバーが提供することである。一つの方法として、削除をするものにマークを付けるだけにする、又は（ゴミ箱のように）情報を保持する領域に移動させるなど、データの削除に時間差を設けて、実際に削除するまでにしばらくの間待機することが考えられる。この間、利用者はデータを復元したり、一時的な保持領域から取り出したりすることができる。他には、wiki及びソースコントロールアプリケーションで編集履歴が保持されているように、利用者が必要なときにデータを復元できるように全ての削除操作を記録しておく方法がある。トランザクションの修正が必要となる情報は保存し、利用者が取り出し可能なようにしておくべきである。</p>
+  </description>
+   <examples/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツを削除する機能を特定する。</p>
+        </item>
+        <item>
+          <p>コンテンツを削除して、復元してみる。</p>
+        </item>
+        <item>
+          <p>削除された情報が復元されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H95">
+   <short-name>キャプションを提供するために、track要素を使用する</short-name>
+   <applicability>
+      <p>HTML5</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="media-equiv-captions" relationship="sufficient"/>
+   </applies-to>
+   <description>
+      <p>この達成方法の目的は、タイミングを指定したテキストのキャプショントラックをvideo要素に指定するためにHTML5 <el>track</el> 要素を用いることである。タイミングのとれたテキストのキャプショントラックはダイアログ、音響効果、音楽的なきっかけ、他関連する、音声が利用できない、もしくは明瞭に聞き取れないときにも適用される音声情報の表記または翻訳を含む。</p>
+      <p><el>track</el> 要素の <att>src</att> 属性は URL であり、これはテキストトラックデータのアドレスである。</p>
+      <p><el>track</el> 要素の <att>kind</att> 属性はタイミングを指定したテキストの情報の種類を指示している。キャプションテキストトラックはダイアログおよび他ビデオを理解するために重要な音声のテキストバージョンを提供している。字幕は発話コンテンツのみを含んでいる。もしほかの音声情報がビデオを理解するために重要なのであれば、字幕トラックは達成基準を満たすために十分ではない。</p>
+      <note>
+      <p>一部の領域では、オーディオトラックの表示可能なテキスト表示に「字幕」という用語が使われている。 制作者は、<code><![CDATA[kind=captions]]></code> ではなく、<code><![CDATA[kind=subtitles]]></code> として、オーディオトラックの言語でタイミングを指定したテキストのトラックをマークアップすることができ、関連するオーディオ情報を追加することある。 そのようなタイミングを指定したテキストトラックは<loc href="media-equiv-captions" linktype="understanding">達成基準 1.2.2</loc> の要件を満たすつもりであったのに、キャプションを見つけようとする利用者を混乱させる可能性があるので、この状況で字幕を使用することは好事例ではない。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <head>一つの言語におけるキャプション</head>
+         <description>
+            <p>英語のキャプショントラックを持つ、英語ビデオのための <el>video</el> 要素。キャプションは WebVTT フォーマットで提供されている。</p>
+         </description>
+         <code role="html5"><![CDATA[
+			 <video poster="myvideo.png" controls>
+				 <source src="myvideo.mp4" srclang="en" type="video/mp4">
+				 <track src="myvideo_en.vtt" kind="captions" srclang="en" label="English">
+			  </video>
+            ]]></code>
+            <!--<p>See <loc href="html5-video-a11y.html" linktype="examples">live example</loc>.</p>-->
+      </eg-group>
+      <eg-group>
+         <head>複数の言語におけるキャプション</head>
+         <description>
+            <p>英語のキャプショントラックを持つ、英語ビデオのための <el>video</el> 要素。キャプションは WebVTT フォーマットで提供されている。</p>
+         </description>
+         <code role="html5"><![CDATA[
+			  <video poster="myvideo.png" controls>
+				<source src="myvideo.mp4" srclang="en" type="video/mp4">
+				<source src="myvideo.webm" srclang="fr" type="video/webm">
+				<track src="myvideo_en.vtt" kind="captions" srclang="en" label="English">
+				<track src="myvideo_fr.ttml" kind="captions" srclang="fr" label="French">
+			  </video>            ]]></code>
+            <!--<p>See <loc href="html5-video-a11y.html" linktype="examples">live example</loc>.</p>-->
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element">HTML5, the track element</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/ttaf1-dfxp/">Timed Text Markup Language</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://github.com/w3c/webvtt">WebVTT: The Web Video Text Tracks Format</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://captionatorjs.com/">Captionator Polyfill</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G87"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>ビデオを再生するための各 video 要素において:</p>
+         <olist>
+            <item>
+               <p>ビデオが言語に応じた <att>kind</att> キャプションの <el>track</el> 要素を含むことを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記 1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

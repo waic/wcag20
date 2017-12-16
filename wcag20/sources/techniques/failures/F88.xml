@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F88">
+   <short-name>達成基準 1.4.8 の失敗例 － 両端揃え（左右両端を揃えた配置）のテキストを使用している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>認知障害のある利用者の多くは、両端揃え(左右両端を揃えた配置)されたテキストのブロックで重大なトラブルに陥ることがある。単語間のスペースによって、ページ上を流れる「余白（隙間）の川」ができる。それによって、一部の人々はテキストを読むことが困難になる。この不適合事例は、この混乱させるテキストレイアウトが発生する状況について説明している。この問題を回避する最良の方法は、両端揃え(左右両端を揃えた配置)されたテキストレイアウトにしないことである。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>次の不適合事例では、HTMLの<code>align</code>要素が両端揃えのテキストを生成するために用いられている。</p>
+</description>
+      <code role="html"><![CDATA[ 
+<p align="justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum sit amet pede. Phasellus 
+nec sem id mauris vehicula tincidunt. Morbi ac arcu. Maecenas vehicula velit et orci. Donec 
+ullamcorper porttitor velit. Sed arcu lorem, cursus sit amet, auctor eu, convallis ut, purus. 
+Vivamus imperdiet accumsan nunc. Maecenas pellentesque nunc a libero. Vestibulum ante ipsum 
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur pharetra commodo 
+justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum et, mauris.
+</p>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>この不適合事例では、CSSの<code>text-align</code>属性が両端揃えのテキストを生成するために用いられている。</p>
+</description>
+      <code role="css"><![CDATA[ 
+...
+p {text-align: justify}
+
+...
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum sit amet pede. Phasellus 
+nec sem id mauris vehicula tincidunt. Morbi ac arcu. Maecenas vehicula velit et orci. Donec 
+ullamcorper porttitor velit. Sed arcu lorem, cursus sit amet, auctor eu, convallis ut, purus. 
+Vivamus imperdiet accumsan nunc. Maecenas pellentesque nunc a libero. Vestibulum ante ipsum 
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur pharetra commodo 
+justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum et, mauris.</p>]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="C22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>一般的なブラウザでページを開く。</p>
+        </item>
+        <item>
+          <p>コンテンツが両端揃え(左右両端を揃えた配置)されていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たしていないならは、この不適合の条件が適用され、コンテンツは達成基準 1.4.8 を満たすことができない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

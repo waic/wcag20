@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G186">
+   <short-name>動きのあるコンテンツ、点滅するコンテンツ、又は自動更新されるコンテンツを停止させるコントロールを使用する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、動きのあるコンテンツや点滅するコンテンツを、利用者が停止できるコントロールを提供することである。このようなコントロールがウェブページ上にあれば、そのコントロール自体は適切なレベルでのWCAGの適合要件、たとえば適切なコントラストであること、特定できる名前を持つこと、キーボードによるアクセスが可能であることに合致する。コントロールはページの先頭か、動きのあるコンテンツの近くに配置する。動きのあるコンテンツ又は点滅するコンテンツのすべてを1つのコントロールで停止できるか、コンテンツの別々の部分を別々のコントロールで停止できればよい。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>株式市場のティッカーテープ</head>
+      <description><p>
+													あるウェブページに、株式市場の最新結果を表示する「ティッカーテープ」があり、画面の下に向かって自動スクロールする。利用者は「一時停止」ボタンでティッカーテープの動きを停止させることができる。一時停止を解除すれば、現在の株式市場の情報表示を再開する。
+												</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>電子会議ツール</head>
+      <description><p>
+													電子会議用のウェブページに、発言待ちのスピーカーの一覧がある。利用者は、新しい人が加わったり外れたりするときに一覧を自動更新するか、それとも「更新」ボタンを押したときにだけ更新するかを、ページ上のチェックボックスで選択できる。一覧が自動更新に設定されている場合、更新ボタンは非活性になっている。
+													</p>
+</description>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G4"/>
+      <relatedtech idref="G191"/>
+      <relatedtech idref="SCR22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>コンテンツの動き、点滅、自動更新を停止させるコントロールがウェブページ上にある。</p>
+        </item>
+        <item>
+          <p>そのコントロールを有効にする。</p>
+        </item>
+        <item>
+          <p>コンテンツの動き、点滅、自動更新が停止する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F59">
+   <short-name>達成基準 4.1.2 の失敗例 － スクリプトを用いて、コントロールに役割（role）を提供することなしに、HTML の div 要素又は span 要素をユーザインタフェースのコントロールにしている</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この不適合事例では、ユーザインタフェース・コントロールを生成するために汎用的なHTML要素を用いたとき、どのようにしてコントロールが支援技術に対してアクセシブルでなくなるかを示している。コンポーネントについての情報を利用者に伝達する際、支援技術は、コンポーネントのロール及びカレント・ステートの情報に依存している。多くの HTML 要素は、リンク、ボタン、テキストフィールドなどといった明確なロールを持っている。<el>div</el> 及び <el>span</el> などの汎用的な要素は、事前に定義されたロールがない。これらの汎用的な要素が、HTML でユーザインタフェース・コントロールを生成するために使用されると、支援技術は、コントロールを表現したり、コントロールとやり取りしたりするために必要な情報を得られないかもしれない。</p>
+    <p>通常、インタラクティブではない要素（<el>span</el> や <el>div</el> など）にイベントハンドラを設定すると、利用者に混乱を招く可能性がある。そのような要素へのキーボードアクセスを提供することに注意が払われても、利用者はコンテンツにインタラクティブなコントロールを見つけたり、その要素の振る舞いを理解することが困難な場合がある。たとえば、利用者が要素をアクティブにするためにスクリプトでサポートされているキーストロークがわからない場合がある。さらに、これらの要素はインタラクティブ要素と同じオペレーティングシステムイベントを生成しないため、利用者がそれらをアクティブにしても支援技術に通知されないことがある。</p>
+    <p>W3C勧告の「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</loc>」は、完全にアクセシブルなユーザインターフェイスコントロールを作成するために必要な役割（role）と状態（state）の情報を提供するメカニズムについて説明する。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>span 及び画像を使用したチェックボックスを生成するため、下記の事例は不適合となる。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+  <p> 
+  <span  onclick="toggleCheckbox('chkbox')"> 
+  <img src="unchecked.gif"  id="chkbox" alt=""> 署名を含む
+  </span> 
+  </p>]]></codeblock>
+    </eg-group>
+    <eg-group role="failure">
+      <description><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+  var CHECKED = "check.gif"; 
+  var UNCHECKED = "unchecked.gif"; 
+  function toggleCheckbox(imgId) { 
+  var theImg = document.getElementById(imgId); 
+  if ( theImg.src.lastIndexOf(CHECKED)!= -1 ) { 
+  theImg.src = UNCHECKED; 
+  // チェックをはずすアクションを実装するための追加コード
+  } 
+  else { 
+  theImg.src = CHECKED; 
+  // チェックをつけるアクションを実装するための追加コード
+  } 
+  }]]></codeblock>
+      <description><p>このような方法で生成されたチェックボックスは、チェックボックスとして識別する情報がないため、支援技術では機能しない。加えて、この事例はキーボードからも操作できず、ガイドライン 2.1 に不適合となる。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="F42"/>
+      <relatedtech idref="ARIA4"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>解析されたソースコードで、マークアップ内またはスクリプトを介して割り当てられたイベントハンドラを持つ要素（ユーザインターフェイスコントロールであることを示す要素）を検証する。</p>
+        </item>
+        <item>
+          <p>コントロールの役割（role）がマークアップ言語でネイティブに定義されているかどうかを確認する。</p>
+        </item>
+        <item>
+          <p>適切な WAI-ARIA の役割（role）の割り当てのように、他の有効なメソッドを使用してコントロールの役割（role）を定義しているかどうかを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <p>2. 及び 3. を満たしていないのであれば、失敗条件が適用される。</p>
+      </expected-results>
+   </tests>
+</technique>

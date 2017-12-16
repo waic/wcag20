@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH14">
+   <short-name>Flash でキーボード及びマウスのイベントハンドラを両方とも使用する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="cosufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="cosufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、マウスイベント、フォーカスイベントそれぞれに対応するイベントハンドラを指定することによって、デバイスに依存しない操作を提供する方法を示すことである。マウスイベントとキーボードイベントの両方をサポートすることにより、利用者は使用している入力デバイスに関係なく、同じ情報を受け取ることができるようになる。イベントによってコントロールの状態が変更される場合は、イベントハンドラ内でコントロールの説明的な名前を変更することが重要になる場合がある。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>複数のイベントハンドラを使用してボタンのテキストを更新する</head>
+         <description>
+            <p>この事例では、ボタンのグループに対して、flash.events.FocusEvent.FOCUS_IN イベントと flash.events.MouseEvent.MOUSE_OVER イベントに同じイベントハンドラを割り当てている。ボタンがフォーカスを受け取るか、またはマウスをボタンの上に移動すると、ボタンを説明するテキストが更新される。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import fl.accessibility.ButtonAccImpl;
+import fl.controls.Button;
+import flash.accessibility. *
+import flash.events.FocusEvent;
+import flash.events.MouseEvent;
+import flash.net.navigateToURL;
+import flash.net.URLRequest;
+
+ButtonAccImpl.enableAccessibility();
+var states: Object = {
+  "Alabama": "Alabama is a state located in the southeastern region of the \
+    United States of America.",
+  "California": "California is the most populous state in the United States",
+  "New York": "New York is a state in the Mid-Atlantic and Northeastern \
+    regions of the United States"
+};
+
+var buttons: Array =[];
+var button: Button;
+var accProps: AccessibilityProperties;
+var count = 0;
+for (var i in states) {
+  button = new Button();
+  button.label = i;
+  button.addEventListener(MouseEvent.CLICK, clickHandler);
+  button.addEventListener(MouseEvent.MOUSE_OVER, highlightHandler);
+  button.addEventListener(MouseEvent.MOUSE_OUT, unHighlightHandler);
+  button.addEventListener(FocusEvent.FOCUS_IN, highlightHandler);
+  button.addEventListener(FocusEvent.FOCUS_OUT, unHighlightHandler);
+  accProps = new AccessibilityProperties();
+  accProps.description = states[i];
+  button.accessibilityProperties = accProps;
+  addChild(button);
+  button.x = 30
+  button.y = 30 + count * 30;
+  buttons[i] = button;
+  count++;
+}
+
+function highlightHandler(e) {
+  descText.text = states[e.target.label];
+}
+
+function unHighlightHandler(e) {
+  descText.text = "";
+}
+
+
+function clickHandler(e) {
+  var url: URLRequest = new URLRequest("http://www.wikipedia.org/wiki/" + e.target.label);
+  navigateToURL(url, "_self");
+}]]></code>
+         <description>
+            <note>
+               <p>スクリーンリーダーを使用している利用者のアクセシビリティを向上させるには、説明文のテキストをアクセシブルな説明としてボタン自体に付加する。また、ボタンコンポーネントの MouseEvent.CLICK イベントは、マウスクリックだけではなく Enter キーを押したときにも発生することに注意しなければならない。</p>
+            </note>
+            <p>この実装方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH14/redundant_event_handlers_as3.html"><!--
+                    linktype="examples"-->複数のイベントハンドラを使用してボタンのテキストを更新するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH14/redundant_event_handlers_as3.fla"><!--
+                    linktype="examples"-->複数のイベントハンドラを使用してボタンのテキストを更新するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="SCR2"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーのスクリプト内のすべてのイベントハンドラについて、次の手順を実行する。</p>
+         <olist>
+            <item>
+               <p>マウスとキーボードの両方のイベントにイベントハンドラが割り当てられている</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_redundant_keyboard_and_mouse_event_handlers_in_Flash"/>
+					</source>
+   </admin>
+</technique>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G174">
+   <short-name>十分なコントラスト比のあるコントロールを提供して、利用者が十分なコントラストのある表現に変換できるようにする</short-name>
+   <applicability>
+      <p>あらゆるウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
+      <conformance-criterion idref="cc1" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>テキストとそのページの一部の背景の間のコントラストが<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="visual-audio-contrast-contrast" linktype="guideline">達成基準1.4.3</loc>または<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="visual-audio-contrast7" linktype="guideline">1.4.6</loc>のコントラストレベルを満たすように作られていない場合、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="cc1" linktype="guideline">適合要件 1</loc>における「代替版」を用いる
+ことでこれらのガイドラインを満たすことが可能である。ページのリンク又はコントロールは、ページを変更することによって
+全ての側面を適合させたり、閲覧者を求められるレベルに適合した新しいバージョンのページに導いたりすることができる。<phrase>また、そのリンクまたはコントロールをウェブページ上の目立つところに置くことによって、利用者が適合しているコンテンツにアクセスしやすくなる。</phrase></p>
+    <p>この達成方法を正しく用いるためには、次の三つを満たさなければならない。</p>
+    <olist>
+      <item>
+        <p>オリジナルページにあるリンクやコントロール自身は、求められる達成基準のコントラスト要求を満たさなければならない（もし利用者がコントロールを見ることができない場合、新しいページに行くためにそれを使用することができないかもしれない）。</p>
+      </item>
+      <item>
+        <p>新しいページはオリジナルページと同様に全ての情報と機能性を含んでいなければならない。</p>
+      </item>
+      <item>
+        <p>新しいページは求められる適合レベルのための全ての達成基準に適合すべきである（つまり、新しいページは求められたコントラストレベルは確保しているが他は適合していないということであってはならない）。</p>
+      </item>
+    </olist>
+    <p>この達成方法は、ページの代替版のテキスト（又はテキストの画像）に背景と4.5:1のコントラストがある、及び大きいサイズのテキスト（又は大きなテキストの画像）に背景と3:1のコントラストがあることによって達成基準1.4.3を満たすために用いることができる。もしページの代替版に7:1のコントラストのあるテキスト（テキストの画像）と4.5:1のコントラストのある大きいサイズのテキスト（又は大きなテキストの画像）があるならば、それは達成基準1.4.3と1.4.6の両方を満たしている。</p>
+    <note>
+      <p>この達成方法は、非適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="guideline">適合している代替版</loc>である現在のページにスタイルを切り替える達成方法と組み合わせることで用いることができる。詳しくは、
+<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css">C29: スタイル・スイッチャーを用いて、適合している代替版を提供する</loc>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
+    </note>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G17"/>
+      <relatedtech idref="G18"/>
+      <relatedtech idref="G145"/>
+      <relatedtech idref="G148"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>オリジナルページ上に代替版へのアクセスを提供するリンクやコントロールがある。</p>
+        </item>
+        <item>
+          <p>オリジナルページのリンクやコントロールが、該当する適合レベルの全ての達成基準に適合している。</p>
+        </item>
+        <item>
+          <p>代替版のページが、コントラスト及び該当する適合レベルの他の全ての達成基準を満たしている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

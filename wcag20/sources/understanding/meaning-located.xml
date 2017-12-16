@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 role="extsrc" id="meaning-located">
+   <head>3.1.4</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、利用者が略語の元の語句にアクセスできるようにすることである。</p>
+
+<div4 role="benefits">
+<head>達成基準 3.1.4 の具体的なメリット</head>
+<p>この達成基準は、次のような利用者にメリットがある:</p>
+<ulist>
+	<item><p>文字から単語を復号化しづらい。</p></item>
+	<item><p>画面拡大ソフトに依存している（画面を拡大すると、前後の文脈の手がかりをつかみづらくなる）。</p></item>
+	<item><p>記憶力に限界がある。</p></item>
+	<item><p>前後の文脈を用いて理解するのが困難である。</p></item>
+</ulist>
+
+<p>略語は様々なかたちで利用者を混乱させることがある:</p>
+<ulist>
+	<item><p>略語の中には、普通の単語のようには見えなくて、その言語の通常の規則に従って発音できないものがある。例えば、英語の単語 "room" は "rm" と略されるが、英語のどの単語又は音素にも該当するものがない。利用者は、正しく読むために、"rm" は単語 "room" の略語であることを知る必要がある。</p></item>
+	<item><p>時には、同じ略語であっても、異なる文脈において異なる意味になることがある。例えば、英語の文章 "Dr. Johnson lives on Boswell Dr.," は、最初の "Dr." は "Doctor" の略語で、2 つめは "Drive" の略語である (「通り」を意味する単語)。利用者は、その略語がどういう意味なのかを知るために、文脈を理解できなければならない。</p></item>
+	<item><p>頭字語の中には、一般的な単語の綴りだが、異なる意味で用いられるものがある。例えば、"JAWS" は "Job Access with Speech" というスクリーンリーダーの頭字語である。それはまた、歯を保持する口の一部を指す一般的な英語の単語である。頭字語は、一般的な単語とは異なって用いられている。</p></item>
+	<item><p>頭字語の中には、一般的な単語と同じように発音するが、綴りが異なるものもある。例えば、Synchronized Multimedia Integration Language の頭字語である S M I L は、英語の単語 "smile" のように発音する。</p></item>
+</ulist>
+<p>また、視覚障害のある次のような利用者にも役立つ:</p>
+<ulist>
+	<item><p>画面拡大ソフトで拡大していて前後の文脈を見失っている。</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 3.1.4 の事例</head>
+<ulist>
+	<item><p><emph role="bold">コンテンツ中で初めて使用されているところで元の語句が提供されている略語</emph></p><p>"World Wide Web Consortium" という名前が、組織のウェブページの最初の見出しとして表示されている。略語の "W3C" が、同じ見出しに括弧で囲まれている。</p></item>
+	<item><p><emph role="bold">辞書検索フォーム</emph></p><p>ウェブサイトには、オンライン頭字語サービスによって提供される検索フォームが含まれている。利用者が頭字語を入力すると、フォームは検索した情報源から展開可能なリストが返される。</p></item>
+	<item><p><emph role="bold">医療系ウェブサイト</emph></p><p>医療のウェブサイトは、医者と患者の両方に情報を提供している。そのサイトには、カスケード表示の辞書のセットが含まれている。とても専門的な医学辞書が最初にあり、一般向けの医学辞書が二番目に続いている。カスケード表示には、サイト固有の頭字語及び略語のリストも含まれ、最後に標準的な辞書もある。リストの最後にある標準的な辞書は、テキストにあるほとんどの単語の定義を提供している。専門的な医学辞書は、一般的ではない医学用語の定義をもたらしている。複数の辞書に現れる単語の定義は、カスケード表示の順序で一覧にされる。頭字語及び略語の意味は、頭字語及び略語の一覧によって提供される。</p></item>
+	<item><p><emph role="bold">略語の元の語句</emph></p><p>それぞれの略語の元の語句は、プログラムで判断可能な方法で利用可能である。テキストを読み上げるユーザエージェントは、略語を知らせるために元の語句を用いることができる。その他のユーザエージェントは、略語のツールチップ又は状況に応じたヘルプとして利用できる元の語句となるかもしれない。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head>関連リソース</head>
+<ulist>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.acronymfinder.com/">Acronym finder</loc> - このサイトでは、頭字語の完全一致検索、前方一致検索、ワイルドカード検索、逆引きを行うことができる。</p></item>
+	<item><p>
+                <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.abbreviations.com/">Abbreviations.com</loc>
+              </p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head>達成基準 3.1.4 の達成方法及び不適合事例 - 略語</head>
+<div4 role="sufficient">
+<head/>
+<div5 role="situation">
+<head>状況 A: 略語がそのウェブページ内で一つの意味しか持たない場合:</head>
+<olist>
+	<item><p>ウェブページ上で略語の初出時に、以下のいずれかの方法で <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G97" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+  </item>
+	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G62" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H60" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G70" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+    </item>
+  </olist>
+</div5>
+
+<div5 role="situation">
+<head>状況 B: 略語が同じウェブページで異なるものを意味している場合:</head>
+<olist>
+	<item><p>以下のいずれかの方法を用いて、その略語がウェブページ上に出現する度に <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G102" linktype="general"/>:</p>
+    <ulist>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G55" linktype="general"/></p></item>
+      <item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H28" linktype="html"/></p></item><item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="PDF8" linktype="pdf"/></p></item>
+    </ulist>
+    </item>
+  </olist>
+</div5>
+</div4>
+
+<div4 role="tech-optional">
+<head>達成基準 3.1.4 でさらに対応が望まれる達成方法（参考）</head>
+<ulist>
+	<item><p>そのウェブページ上で一意な略語を用いる（リンク追加予定）</p></item>
+	<item><p>利用者が略語を認識しやすいような視覚的フォーマットを用いる（リンク追加予定）</p></item>
+	<item><p>音声読み上げ機能がある辞書の利用を可能にし、表示された文字情報を復号化することが困難な利用者を支援する（リンク追加予定） </p></item>
+	<item><p> 音声で検索できる辞書を提供し、キーボードの操作や単語を綴ることが難しい利用者が発声することで言葉の意味を検索できるようにする（リンク追加予定） </p></item>
+</ulist>
+</div4>
+
+<div4 role="failures">
+<head>Common Failures Identified by the Working Group</head>
+</div4>
+</div3>
+</div2>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR21">
+   <short-name>ページにコンテンツを追加するために、DOM（ドキュメント・オブジェクト・モデル）を使用する</short-name>
+   <applicability>
+      <p>HTML及びXHTMLの中で利用されるECMAScript</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="ensure-compat-rsv"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、利用者がページを読み進めていく際に気がつけるようにする。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、<code>document.write</code>又は<code>object.innerHTML</code>の代わりにDocument Object Model (DOM)の機能を用いて、ページ中にコンテンツを追加することである。<code>document.write()</code>メソッドはXHTMLで正しいMIMEタイプ(application/xhtml+xml)が指定されているときに動作せず、<code>innerHTML</code>プロパティはDOMの仕様ではないため利用すべきでない。もしDOMの機能を利用してコンテンツを追加すれば、ユーザエージェントはDOMにアクセスしてコンテンツを取り込むことができる。<code>createElement()</code>関数を使ってDOMの中に要素を作成することもできる。<code>createTextNode()</code>は要素に関連付けられたテキストを作成するのに用いられる。<code>appendChild()</code>、<code>removeChild()</code>、<code>insertBefore()</code>及び<code>replaceChild()</code>関数は、要素やノードを追加したり削除したりするのに用いられる。その他のDOM関数は、作成された要素に属性を与えるときに使用される。</p>
+    <note><p>フォーカス可能な要素を文書に追加するとき、<att>tabindex</att>属性を用いて明示的なタブ順序を指定してはならない。なぜなら、文書の中央にフォーカス可能な要素を追加するときに問題が発生するからである。<att>tabindex</att>属性を明示的に設定しないことで、デフォルトのタブ順序が新しい要素に割り当てられるようにする。</p>
+  </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>この例では、クライアントサイドスクリプトの使用法として、フォームの検証方法を紹介している。もしエラーがみつかれば、適切なエラーメッセージが表示される。この例ではDOM関数を使用し、タイトル、エラーに関する短い説明、及びエラー一覧の順序付リストを含むエラー通知を追加している。タイトルの内容はリンクとして書かれているので、focusメソッドを使って利用者の注意をエラーに向けることができる。個別のリスト項目もまた、リンクとして書かれているので、そのリンク先に移動したときにエラーのあるフォームのフィールドにフォーカスできるように書かれている。</p>
+<p>この例では、簡単にするために二つのテキストフィールドだけを検証しているが、一般的なフォームハンドラにするために容易に拡張することができる。クライアントサイドの検証は、それを唯一の検証とすべきではなく、サーバーサイドの検証でも確認するべきである。クライアントサイドでの検証の利点は、利用者にすぐにフィードバックを提供することで、サーバーからエラーが帰ってくるまでの間、彼らを待たせることがないこと、及びサーバーへの余計なトラフィックを軽減できることである。</p>
+<p>次の例はフォームにイベント・ハンドラを追加するスクリプトである。もしスクリプトが有効であれば、サーバーにフォームが送信される前にvalidateNumbers()関数がクライアントサイドの検証のために呼び出される。もしスクリプトが有効でなければ、フォームはすぐにサーバー側に送信されるので、検証機能はサーバーにも実装されるべきである。</p>
+</description>
+      <code role="html401"><![CDATA[
+window.onload = initialise;
+function initialise()
+{
+  // 標準に準拠したユーザエージェントが対象
+  if (!document.getElementById || !document.createElement || !document.createTextNode)
+    return;
+
+  // フォームにイベントハンドラを付加
+  var objForm = document.getElementById('numberform');
+  objForm.onsubmit= function(){return validateNumbers(this);};
+} ]]></code>
+      <description><p>次の例はvalidationの機能である。エラーメッセージの要素を作成するためにcreateElement()、createTextNode()、及びappendChild() DOM関数を使用しているところに注目して欲しい。</p>
+</description>
+      <code role="html401"><![CDATA[
+function validateNumbers(objForm)
+{
+  // フィールドを検証
+  var bFirst = isNumber(document.getElementById('num1').value);
+  var bSecond = isNumber(document.getElementById('num2').value);
+  // 問題がある場合、エラーを表示
+  if (!bFirst || !bSecond)
+  {
+    var objExisting = document.getElementById('validationerrors');
+    var objNew = document.createElement('div');
+    var objTitle = document.createElement('h2');
+    var objParagraph = document.createElement('p');
+    var objList = document.createElement('ol');
+    var objAnchor = document.createElement('a');
+    var strID = 'firsterror';
+    var strError;
+    // 見出し要素にリンクを含めることによって、スクリーンリーダーは
+    // フォーカスを置くことができる － そのリンク先はエラー一覧の中で 
+    // 一番最初のエラー項目とする
+    objAnchor.appendChild(document.createTextNode('Errors in Submission'));
+    objAnchor.setAttribute('href', '#firsterror');
+    objTitle.appendChild(objAnchor);
+    objParagraph.appendChild(document.createTextNode('Please review the following'));
+    objNew.setAttribute('id', 'validationerrors');
+    objNew.appendChild(objTitle);
+    objNew.appendChild(objParagraph);
+    // 発見したエラーすべてをエラー一覧に追加
+    if (!bFirst)
+    {
+      strError = '最初の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num1', objForm, strID));
+      strID = '';
+    }
+    if (!bSecond)
+    {
+      strError = '2番目の数字には、数値を入力してください。';
+      objList.appendChild(addError(strError, '#num2', objForm, strID));
+      strID = '';
+    }
+    // エラー情報に一覧を追加
+    objNew.appendChild(objList);
+    // 既存のエラーがあった場合、新規のエラーと置き換える
+    // あるいは、新規のエラーをフォームの先頭に追加する
+    if (objExisting)
+      objExisting.parentNode.replaceChild(objNew, objExisting);
+    else
+    {
+      var objPosition = objForm.firstChild;
+      objForm.insertBefore(objNew, objPosition);
+    }
+    // フォーカスを見出しにあるアンカーに置いて、スクリーンリーダーに
+    // 対してエラーがあることを警告する
+    objAnchor.focus();
+    // フォームを送信しない
+    objForm.submitAllowed = false;
+    return false;
+  }
+  return true;
+}
+
+// 数字を検証する関数
+function isNumber(strValue)
+{
+  return (!isNaN(strValue) &amp;&amp; strValue.replace(/^\s+|\s+$/, '') !== '');
+} ]]></code>
+      <description><p>以下は、エラーメッセージを作成して、関連するフォームのフィールドにフォーカスさせるための補助関数である。</p>
+</description>
+      <code role="html401"><![CDATA[
+// エラー内容を説明する、エラーのフォームフィールドへのリンクの
+// リスト項目を作成する関数
+function addError(strError, strFragment, objForm, strID)
+{
+  var objAnchor = document.createElement('a');
+  var objListItem = document.createElement('li');
+  objAnchor.appendChild(document.createTextNode(strError));
+  objAnchor.setAttribute('href', strFragment);
+  objAnchor.onclick = function(event){return focusFormField(this, event, objForm);};
+  objAnchor.onkeypress = function(event){return focusFormField(this, event, objForm);};
+  // strIDに値がある場合、これがリストで一番目のエラーとなる
+  if (strID.length > 0)
+    objAnchor.setAttribute('id', strID);
+  objListItem.appendChild(objAnchor);
+  return objListItem;
+}
+
+// エラーのフォームフィールドにフォーカスを置く関数
+function focusFormField(objAnchor, objEvent, objForm)
+{
+  // キーボードナビゲーションを可能にするAllow keyboard navigation over links
+  if (objEvent &amp;&amp; objEvent.type == 'keypress')
+    if (objEvent.keyCode != 13 &amp;&amp; objEvent.keyCode != 32)
+      return true;
+  // フォーカスをフォーム・コントロールに設定する
+  var strFormField = objAnchor.href.match(/[^#]\w*$/);
+  objForm[strFormField].focus();
+  return false;
+} ]]></code>
+      <description><p>以下は事例のフォーム用HTMLである。</p>
+</description>
+      <code role="html401"><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ECMAScript フォームの検証</title>
+	<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<h1>フォームの検証</h1>
+<form id="numberform" method="post" action="form.php">
+
+<fieldset>
+<legend>数字のフィールド</legend>
+<p>
+<label for="num1">最初の数字を入力</label>
+<input type="text" size="20" name="num1" id="num1">
+</p>
+<p>
+
+<label for="num2">2番目の数字を入力</label>
+<input type="text" size="20" name="num2" id="num2">
+</p>
+</fieldset>
+<p>
+<input type="submit" name="submit" value="フォームを送信">
+</p>
+</form>
+
+</body>
+</html> ]]></code>
+      <description><p>この例はクライアントサイドスクリプトに限定しているため、サーバーサイドの検証によって補完されるべきである。例では、クライアントサイドスクリプトが利用できるときのエラーメッセージの作成に限定される。</p>
+<p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR21/ex1.html"><!-- linktype="examples"-->フォームの検証</loc> </p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.webreference.com/js/column44/index.html">The Document Object Model, More methods</loc> from Webreference.com
+									</p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <p>動的に新しいコンテンツを作成するページに対して：</p>
+      <olist>
+        <item>
+          <p>（ソースコードを検証して、）新しいコンテンツがdocument.write()、innerHTML,、outerHTML、innerText又はouterTextを用いて作成されていない。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

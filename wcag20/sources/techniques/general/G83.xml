@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G83">
+   <short-name>入力が完了していない必須項目を特定するために、テキストの説明文を提供する</short-name>
+   <applicability>
+      <p>利用者の入力が必須の項目があるコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、入力の必要な項目が未入力であることを利用者に知らせることである。利用者が必須のフォーム項目に入力しなかった場合には、どの項目を入力しなかったのかが利用者に分かるように、その情報をテキストで提示する。一つのアプローチとして、クライアントサイドでのバリデーションを用いて、未入力のままになっている必須項目を特定するアラートのダイアログボックスを提供する方法がある。また、もう一つのアプローチとしては、サーバサイドでのバリデーションを用いて、フォームを再表示し（すでに入力されたデータも含む）、未入力のままになっている必須項目の場所にテキストでの説明を入れるか、テキストでの説明文によって未入力のままになっている項目を特定する方法がある。</p>
+      <note>
+         <p>エラーが起きたことに気づかぬまま、フォームが正常に機能していないと仮定する利用者もいるので、メッセージやアラートを提示するのは良い方法である。また、ページタイトル（title要素）でエラーを知らせるのも、良い方法である。なぜならスクリーン・リーダーの利用者は、新しいページが返ってくるやいなや、そのページのメインコンテンツエリアを読むことなく、ページが正常に送信されたと信じて別のページに遷移しがちだからである。</p>
+      </note>
+  </description>
+   <examples/>
+   <related-techniques>
+      <relatedtech idref="G85"/>
+      <relatedtech idref="SCR18"/>
+      <relatedtech>エラーを知らせる情報をページタイトルに含める。（リンク追加予定）</relatedtech>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>一つ又は複数の必須項目への入力を故意にせず、フォームを記入してから送信する。</p>
+        </item>
+        <item>
+          <p>未入力のままになっている必須項目を特定する説明がテキストで提供される。</p>
+        </item>
+        <item>
+           <p>そのデータが再表示されることが適切ではない、セキュリティに関連するフィールド（例：パスワード）にない限り、利用者によって入力済みのデータが再表示される。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

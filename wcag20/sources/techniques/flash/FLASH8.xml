@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH8">
+   <short-name>フォーム・コントロールのアクセシブルな名前にグループ名を追加する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、関連するフォーム・コントロールをセマンティックにグループ化することである。これにより、利用者が複数のコントロール間の関係を理解し、より早くかつ効率的にフォームを操作することができる。</p>
+      <p>Flash では、関連するフォーム・コントロールがグループ化されている場合、グループの名前を各フォーム・コントロールのアクセシブルな名前に追加することで、そのグループを示すことができる。</p>
+      <p>コントロールのグループ化は、関係性があるラジオボタンとチェックボックスの場合に最も重要である。ラジオボタンまたはチェックボックスの一式は、それらすべてが単一の名前付きフィールドに値を送信する場合に関係性があるといえる。これらは、選択リストと同じように機能し、利用者は複数の選択肢の中からどれかを選択できる。ただし、選択リストが一つのコントロールであるのに対して、ラジオボタンやチェックボックスは複数のコントロールである点が異なる。ラジオボタンやチェックボックスは、複数のコントロールであるため、これらを意味的にグループ化して一つのコントロールとして簡単に扱えるようにすることが特に重要である。多くの場合、ユーザエージェントは、各コントロールのラベルの前にグループ名を示し、それらが同じグループのものであることを利用者に知らせる。 </p>
+      <p>ラジオボタンやチェックボックスの一式ほど密接な関係性があるわけではない他のコントロール一式でも、その一式をグループ化すると便利な場合がある。例えば、利用者に住所に関する情報を入力してもらう幾つかのテキストフィールドを「住所」という名前でグループ化することができる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>ラジオボタンのアクセシブルな名前にグループ名を追加する</head>
+         <description>
+            <p>この事例は、グループ内のラジオボタンのグループ名を各ボタンのアクセシブルな名前に追加して、それらのグループをアクセシブルにする方法を示している。</p>
+            <olist>
+               <item>
+                  <p>ラジオボタンのコンポーネントをステージに追加する。</p>
+               </item>
+               <item>
+                  <p><prop>label</prop> プロパティを使用して各ボタンのラベルを入力する。</p>
+               </item>
+               <item>
+                  <p>視覚的なグループラベルを手順 1 で追加したボタンの左側または上に追加する。</p>
+               </item>
+               <item>
+                  <p>各ラジオボタンを選択する。アクセシビリティパネルで、「名前」フィールドにグループ名を追加する。</p>
+               </item>
+            </olist>
+            <p>Flash は、「性別 男性」というように、グループ名を各ボタンの個別の名前に連結する。 </p>
+            <p>次のスクリーンショットは、このアプローチについて示したものである。</p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png"
+                       height="236"
+                       width="584"/>
+                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、フォーム・コントロールにグループ名を追加</alt>
+               </image>
+							     </p>
+            <note>
+               <p>この事例のラジオボタンをアクセシブルにするには、次の2行をムービーのスクリプトに追加する必要がある。<code xml:space="preserve"><![CDATA[import fl.accessibility.RadioButtonAccImpl;
+RadioButtonAccImpl.enableAccessibility();]]></code>
+								       </p>
+            </note>
+            <p>このアプローチの実例については、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html">
+                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla">
+                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する</head>
+         <description>
+            <p>次のコード例は、グループ名を含むフォーム・コントロール一式を長方形のようなフィールドセット内に配置するクラスの基本的な概念実証を示している。追加される各コントロールに対して <obj>AccessibilityProperties</obj> オブジェクトが作成され、その <prop>name</prop> プロパティが、グループ名のテキストと実際のフォーム・コントロールのラベルの組み合わせに設定される。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[
+package wcagSamples {
+  import flash.display. *;
+  import flash.text. *;
+  import fl.controls. *
+  import flash.accessibility. *;
+  import fl.accessibility. *;
+  
+  
+  /**
+  *  HTMLで提供されているfieldset要素を模倣する方法を実演する基本的なサンプル。
+  *  FieldSet クラスは、複数のコントロールをグループ化してfieldsetの矩形内に配置し、
+  *  その先頭にグループ名となるテキストを置く。各フォーム・コントロールに対して、
+  *  グループ名のテキストはコントロールのアクセシブルな名前の前に追加される。
+  *
+  *  注記：これは概念の実証を目的にしたものであり、完全に機能するクラスではない。
+  *
+  *  @langversion 3.0
+  *  @playerversion Flash 10
+  *
+  */
+  public class FieldSet extends Sprite {
+    private var legend: String;
+    private var bBox: Shape;
+    private var currentY: int = 20;
+    
+    public static var LABEL_OFFSET_X: int = 20;
+    public static var CONTROL_OFFSET_X: int = 110;
+    
+    /**
+    *  CONSTRUCTOR
+    *  Legend は、FieldSetのグループ名となるテキストを特定する
+    *  itemsは、そのFieldSetに追加されるコントロールを説明する
+    */
+    
+    public function FieldSet(legend: String, items: Array) {
+       // この事例で使われているコンポーネントのアクセシビリティを有効にする
+      RadioButtonAccImpl.enableAccessibility();
+      CheckBoxAccImpl.enableAccessibility();
+      
+      //FieldSet の矩形とグループ名を生成する
+      legend = legend;
+      bBox = new Shape();
+      bBox.graphics.lineStyle(1);
+      bBox.graphics.drawRect(10, 10, 300, 250);
+      bBox.graphics.beginFill(0x0000FF, 1);
+      addChild(bBox);
+      
+      var fieldSetLegend: TextField = new TextField();
+      fieldSetLegend.text = legend;
+      fieldSetLegend.x = 20;
+      fieldSetLegend.y = 3;
+      fieldSetLegend.background = true;
+      fieldSetLegend.backgroundColor = 0xFFFFFF;
+      fieldSetLegend.border = true;
+      fieldSetLegend.borderColor = 0x000000;
+      fieldSetLegend.autoSize = TextFieldAutoSize.LEFT;
+      addChild(fieldSetLegend);
+      
+      // コントロールを追加する
+      for (var i = 0; i < items.length; i++) {
+        processItem(items[i]);
+      }
+    }
+    
+    /**
+    * コントロールをFieldsetに追加し、アクセシブルな名前を設定する。 
+    * コントロールは配列で表されており、次の値を含んでいる。
+    * [0] : コンポーネントのタイプを表す文字列 
+    *   (例： "TextInput", TextArea", Checkbox" または "RadioGroup")
+    * [1] : コントロールを特定するために用いられるラベル
+    * [2] : もし [0] が "RadioGroup" だった場合、[2] は個々のラジオボタンに対する 
+    *    ラベルの配列を含んでいる必要がある。もし [0] が "CheckBox" だった場合、 
+    *    [1] は空または質問（例：「喫煙しますか？」）のどちらかで、
+    *    [2] は CheckBox のラベル（例：「はい」）となる。
+    *
+    */
+    function processItem(item: Array) {
+      if (item.length < 2)
+      return;
+      currentY += 30;
+      var newControl;
+      //create visual label
+      var lbl: Label;
+      lbl = new Label();
+      lbl.text = item[1] + ": ";
+      lbl.x = FieldSet.LABEL_OFFSET_X;
+      lbl.y = currentY;
+      lbl.width = FieldSet.CONTROL_OFFSET_X;
+      lbl.autoSize = TextFieldAutoSize.RIGHT;
+      lbl.wordWrap = true;
+      addChild(lbl);
+      
+      switch (item[0]) {
+        case "TextInput":
+        case "TextArea":
+        newControl = item[0] == "TextInput"? new TextInput(): new TextArea();
+        newControl.x = FieldSet.CONTROL_OFFSET_X;
+         //グループ名とラベルをつなげて、アクセシブルな名前にする。
+        setAccName(newControl, legend + " " + item[1]);
+        break;
+        case "CheckBox":
+        newControl = new CheckBox();
+        newControl.label = item[2];
+        newControl.x = FieldSet.CONTROL_OFFSET_X;
+        setAccName(newControl, legend + " " + item[1] + " " + item[2]);
+        break;
+        case "RadioGroup":
+        if (item[2] && item[2].length > 0) {
+          var radioGroup: RadioButtonGroup = new RadioButtonGroup(item[0]);
+          var newBtn: RadioButton;;
+          for (var i = 0; i < item[2].length; i++) {
+            newBtn = new RadioButton();
+            // concatenate the legend, the group label, and the button label
+            setAccName(newBtn, legend + " " + item[1] + " " + item[2][i]);
+            newBtn.label = item[2][i];
+            newBtn.group = radioGroup;
+            newBtn.x = FieldSet.CONTROL_OFFSET_X;
+            newBtn.y = currentY;
+            addChild(newBtn);
+            if (i < item[2].length - 1)
+            currentY += 30;
+          }
+        }
+        break;
+      }
+      
+      if (newControl) {
+        newControl.y = currentY;
+        addChild(newControl);
+      }
+    }
+    
+    /**
+     * オブジェクトに対するAccessibilityProperties オブジェクトを生成し、その name プロパティを設定する
+    */
+    public function setAccName(obj, accName) {
+      var accProps: AccessibilityProperties = new AccessibilityProperties();
+      accProps.name = accName;
+      obj.accessibilityProperties = accProps;
+    }
+  }
+}]]></code>
+         <description>
+            <p>この事例のクラスの初期化は次のように行う。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[var myFieldSet = new FieldSet("Personal Details",  // グループ名 
+  [["TextInput", "名前"],                          // テキストフィールド
+  ["RadioGroup", "性別", ["男性", "女性"]],          // ラジオボタンのグループ
+  ["CheckBox", "喫煙しますか？", "はい"],             // チェックボックス
+  ["TextArea", "コメント"],                        // テキストエリア
+]);
+addChild(myFieldSet);
+]]></code>
+         <description>
+            <p>このアプローチの実例については、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html"><!--
+                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla"><!--
+                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</loc>がダウンロードできる。</p>
+            <note>
+               <p>Adobe Flex を使用すれば、&lt;form&gt;, &lt;formitem&gt; および &lt;formheading&gt; 要素を使用して、このタイプの動作を実現できる。</p>
+            </note>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="FLASH25"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash ムービーにグループ化されたフォーム・コントロールが含まれている場合は、次のいずれかを満たしていることを確認する。</p>
+         <ulist>
+            <item>
+               <p>各コントロールのアクセシビリティパネルの「名前」フィールドにグループ名が含まれている。</p>
+            </item>
+            <item>
+               <p>各コントロールに <prop>AccessibilityProperties.name</prop> プロパティがあり、グループ名とコントロールのラベルとなるテキストの両方を含んでいる。</p>
+            </item>
+         </ulist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記チェックポイントのいずれかを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Adding_a_group_name_to_the_accessible_name_of_a_form_control"/>
+					</source>
+   </admin>
+</technique>
+

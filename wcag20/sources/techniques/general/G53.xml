@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G53">
+   <short-name>リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</short-name>
+   <applicability>
+      <p>リンクが含まれる全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="JAWS" version="5.0+"><p>JAWS 5.0及び以降のバージョンには、次のキーストロークがある。</p>
+            
+                  <ulist><item><p>alt + 左矢印キー：前の文を読む</p></item><item><p>alt + 右矢印キー：次の文を読む</p></item><item><p>alt + 数字キー 5：現在の文を読む</p></item><item><p>Ctrl + 数字キー 5：現在のパラグラフを読む</p></item></ulist></ua-issue>
+    <ua-issue name="WinEyes" version="5.5"><p>Window-Eyes 5.5には、現在の文及びパラグラフを読むためのホットキーがある。</p>
+            
+                  <p>Window-Eyesでインターネットを見るには、ブラウズモードにしなければならない。現在の文及びパラグラフのホットキーはバージョン6.1のブラウズモードでは動作しない。</p>
+            
+                  <p>周囲にあるリンクの文脈の読み上げに関する工場出荷時の初期設定は、次の通りである。</p>
+            
+                  <p>デスクトップマシンの設定：</p>
+            
+                  <ulist><item><p>文字 = CTRL - 数字キー - 左矢印キー</p></item><item><p>単語 = CTRL - 数字キー - 右矢印キー</p></item><item><p>ライン = CTRL - 数字キー - CENTER</p></item><item><p>文 = ブラウズモードでは使用不可</p></item><item><p>(次の文への移動コマンドはデスクトップモードのデフォルトで定義されていないが、次の行への移動は下矢印キーである。)</p></item><item><p>次のパラグラフ = P</p></item><item><p>前のパラグラフ = Shift P</p></item><item><p>現在のパラグラフ = ブラウズモードでは使用不可</p></item></ulist><p>ラップトップ</p>
+            
+                  <ulist><item><p>文字 = ALT - SHIFT - &lt;</p></item><item><p>前の単語 = ALT - SHIFT - J</p></item><item><p>単語 = ALT - SHIFT - K</p></item><item><p>次の単語= ALT - SHIFT - L</p></item><item><p>前の文 = ALT - SHIFT - 7</p></item><item><p>文 = ブラウズモードでは使用不可</p></item><item><p>次の文 = ブラウズモードでは使用不可</p></item><item><p>パラグラフ = ラップトップではデフォルトで定義されていない</p></item><item><p>前の行 = ALT - SHIFT - U</p></item><item><p>行 = ALT - SHIFT - I</p></item><item><p>次の行 = ALT - SHIFT - O</p></item></ulist>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、リンク及びその文脈からリンクの目的を特定することである。そのリンクを含んでいる文章によって、リンクテキストだけでは不明瞭なリンクに文脈が与えられることになる。その説明によって、利用者がそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。一般的に、リンクテキストとして単に目的地のURIを示すだけでは、リンク先の説明として不十分であることに注意すべきである。</p>
+    <note>
+      <p>このような説明が利用者にとって最も役立つのは、リンクを理解するのに必要な追加情報が、そのリンクよりも前に書かれている場合である。追加情報がリンクの後に書かれていると、ページを（先頭から最後へと）順番に読むスクリーンリーダーの利用者には混乱や支障が生じることがある。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>ウェブページに「このページ上で広告を掲載する場合は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://example.com">ここをクリック</loc>。」という文章がある。</p>
+<p>リンクテキストの「ここをクリック」は、リンク先を理解するのに十分ではないが、必要な情報は同じ文の中でそのリンクの前にある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>ウェブページに「最初の移住者は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://example.com">メイフラワー号</loc>に乗ってアメリカにきた。」という文章がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <description><p>「スモールヴィル・タイムズの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://example.com">リポート</loc>によれば、教育委員会が8月27日にスタートする2007年スクールカレンダーを選んだとのことです。」という文章を含んでいるニュースのサマリーの中で、「リポート」が教育委員会の会議についてのスモールヴィルタイムズの記事へのリンクとなっている。</p>
+<note><p>この事例は、達成基準を満たしてはいるが、このようにリンクの後にそのリンクを理解するために必要な情報を置くと、スクリーンリーダーでドキュメントを読んでいる人にとっては分かりにくいものである。</p></note>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="H2"/>
+      <relatedtech idref="H30"/>
+      <relatedtech idref="H33"/>
+      <relatedtech idref="H77"/>
+      <relatedtech idref="H78"/>
+      <relatedtech idref="H79"/>
+      <relatedtech idref="H80"/>
+      <relatedtech idref="H81"/>
+      <relatedtech idref="C7"/>
+      <relatedtech idref="ARIA1"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して：</p>
+      <olist>
+        <item>
+          <p>そのリンクが文の一部である。</p>
+        </item>
+        <item>
+          <p>そのリンクテキストと文を組み合わせると、リンクの目的が説明されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH10">
+   <short-name>Flash でフォーム・コントロールが必須項目であることを示す</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、利用者がデータを正しく送信できるように、ウェブアプリケーションまたはフォームに含まれる特定のフォーム・コントロールが必須項目であることを明示することである。フォーム・コントロールのアクセシブルな名前に「必須」という語を追加し、視覚的な表示をラベルの横に配置する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>コントロールのアクセシブルな名前に「必須」という語を追加する</head>
+         <description>
+            <p>この事例では、アクセシビリティパネルを使用して、フィールドが「必須」であることを利用者に知らせる方法を示している。</p>
+            <olist>
+               <item>
+                  <p>フォーム・コントロールのラベルの近くに、アスタリスク文字などの視覚的なマークを配置する。</p>
+               </item>
+               <item>
+                  <p>アクセシビリティパネルを使用して、「名前」フィールドに記述したコントロールのラベルのすぐ後に「（必須）」と記述する。</p>
+               </item>
+            </olist>
+            <p>次のスクリーンショットは、このアプローチについて説明したものである。</p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_flash_control.png"
+                       height="312"
+                       width="546"/>
+                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、フォーム・コントロールが必須項目であることを明示</alt>
+               </image>
+							     </p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.html">
+                    <!--linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.fla"><!--
+                    linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加する」のソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+         <p>Flash ムービーに含まれる必須項目のフォーム・コントロールごとに、次のことを確認する。</p>
+         <ulist>
+            <item>
+               <p>必須項目であることが視覚的に示されている。</p>
+            </item>
+            <item>
+               <p>必須項目であることが、アクセシビリティパネルの「名前」フィールドを使用してテキストで記述されている。</p>
+            </item>
+         </ulist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の二点を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Indicating_required_form_controls_in_Flash"/>
+					</source>
+   </admin>
+</technique>
+

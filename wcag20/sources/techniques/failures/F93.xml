@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F93">
+   <short-name>達成基準 1.4.2 の失敗例 － 自動再生する HTML5 のメディア要素を一時停止または停止する方法がない</short-name>
+   <applicability>
+      <p>HTML5</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-dis-audio" relationship="failure"/>
+   </applies-to>
+   <description>
+<p>この失敗例は、<el>audio</el> あるいは <el>video</el> 要素が <att>autoplay</att> 属性をもつ音声トラックを含むときや、<att>muted</att> 属性を含まなかったり、メディアの停止または一時停止のコントロール機能かコマンドがないときに起きる。</p>
+<p><att>autoplay</att>属性が存在している場合、ユーザエージェントはできる限り停止させずに自動的にメディアの再生をはじめる。<att>muted</att> 属性がもし存在していたら、ユーザエージェントは最初にメディアの音声出力を無音にし、ユーザ設定で上書きする。</p>
+<p>メディア要素が 3 秒より短い場合、失敗は起こらない。もしユーザエージェントが自動再生の挙動を上書きする利用者設定と提供していたら、失敗例は起こらない。</p>
+<p>HTML の仕様は次の注を含む:</p>
+<ulist><item><p>ユーザエージェントは自動再生のサポートを必要としないが、それはユーザエージェントが事例についての利用者設定を優先することを示している。製作者は動画を再生するスクリプトを使うより、利用者が望むような挙動を上書きすることを許すのと同じように、<att>autoplay</att>属性を使うよう促される。</p></item>
+<item><p>制作者は、スクリーンリーダーを使用している場合のように、利用者が望まない場合に自動再生状態を上書きできるよう、自動再生を行うスクリプトよりむしろ <att>autoplay</att> 属性を使用することを促されている。制作者は、利用者が再生を開始するのをユーザエージェントが待つかわりに、自動再生を行わないよう考慮することもすすめられている。</p></item></ulist>
+   </description>
+   <examples>
+      <eg-group>
+         <head>音声の自動再生</head>
+         <description>
+            <p>この例では、動画広告が音声トラックを含む。動画は <att>loop</att> 属性をもっているため連続再生され、動画は <att>autoplay</att> 属性のため及び利用者が動画を停止できるどんなコントロール方法もないために自動的に開始される。</p>
+         </description>
+         <code role="html5"><![CDATA[
+				 <video src="ads.cgi?kind=video" autoplay loop></video>
+            ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/">HTML5</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://html.spec.whatwg.org/">HTML5 Living Standard</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>アクティブな音声トラックに <el>audio</el> もしくは <el>video</el> 要素が含まれていないか確認する。</p>
+            </item>
+            <item>
+               <p>音声あるいは動画が3秒以上続くか確認する。</p>
+            </item>
+            <item>
+               <p>要素が <att>autoplay</att> 属性を持っているか確認する。</p>
+            </item>
+            <item>
+               <p>要素が <att>muted</att> 属性を持っていないか確認する。</p>
+            </item>
+            <item>
+               <p>メディア要素が停止または一時停止するためのコマンドやコントロール方法を持っていないか確認する。</p>
+            </item>
+          </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>もし 1-5 までが真なら、失敗例に適合しコンテンツは達成基準を満たさない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

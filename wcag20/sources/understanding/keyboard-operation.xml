@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div1
+  SYSTEM "../xmlspec.dtd">
+<div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="keyboard-operation">
+   <head>2.1</head>
+   <div2 id="keyboard-operation-intent" role="glintent">
+      <head>Intent</head>
+
+<p>すべての<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="functiondef" linktype="glossary">機能</loc>がキーボードを用いて利用可能であれば、キーボードの利用者、(キーボード入力を生成する) 音声入力、(オンスクリーンキーボードを使用する) マウス、及び出力として疑似的な打けんを生成する様々な支援技術により、その機能を実現することができる。キーボード入力が時間に依存しない限り、柔軟性があり、広く一般にサポートされて、そして様々な障害のある人が操作可能な入力形態は他にはない。</p>
+<p>汎用キーボードの入力を提供することは、他の入力方法をサポートしないという意味ではないことに留意すること。最適化された音声入力、最適化されたマウス/ポインタ入力などもまた有効である。重要な点は、キーボード入力及び制御を提供することである。</p>
+<p>例えば、PDA 又は携帯電話のような機器の中には、もともとキーボードを搭載していないものもある。しかし、これらの機器にウェブ閲覧機能がある場合には、テキスト又は「打けん」を生成する何らかの手段があるはずである。このガイドラインでは、キーボード、キーボードエミュレータ、又はキーボード入力やテキスト入力を生成するその他のハードウェアもしくはソフトウェアで生成される打けんにより、ウェブコンテンツが制御される必要があることを認識するために、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" linktype="glossary" href="keybrd-interfacedef">キーボードインタフェース</loc>」という用語を用いている。</p>
+</div2>
+
+<div2 id="keyboard-operation-advisory" role="gladvisory">
+<head>Advisory techniques for Guideline N.N</head>
+</div2>
+   <xi:include href="keyboard-operation-keyboard-operable.xml"/>
+   <xi:include href="keyboard-operation-trapping.xml"/>
+   <xi:include href="keyboard-operation-all-funcs.xml"/>
+</div1>

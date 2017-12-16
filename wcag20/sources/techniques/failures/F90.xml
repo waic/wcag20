@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F90">
+   <short-name>達成基準 1.3.1 の失敗例 － headers 属性及び id 属性によってテーブルの見出しセルとデータセルが不正確に関連付けられている</short-name>
+   <applicability>
+      <p>HTML 及び XHTML。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+      <p>コンテンツ制作者にとってデータセルと見出しセルを明示的に関連付けるひとつの方法は <code>id</code> 属性及び <code>headers</code> 属性を使用することである。これによりコンテンツ制作者は複数の見出しセルに特定のデータセルを関連付けられる。これは複数の見出しをレベルをもつ複雑なデータテーブルの場合に必要になる。</p>
+      <p>データセルと関連する見出しセルの関係がプログラム的に正しく設定されていない場合、<code>id</code> 属性と <code>headers</code> 属性の関連付けが間違っているために失敗例となる。例えば、テーブルのコードをコピーしたりコードのアップデートを忘れたときにおこる。</p>
+   </description>
+   <examples>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H43" linktype="html"></loc>の例1のような複雑なデータテーブルが存在することによる。</p>
+      <eg-group role="failure">
+         <head>ネストされた見出しと正しく関連付けられていないテーブルコンテンツ</head>
+         <description>
+            <p>この例では、ネストされた見出しが使われているが、コンテンツのセルは <code>id</code> 属性及び <code>headers</code>属性によって正しく関連付けられていない。全セルは「練習」（id="e")のようなトップレベル見出しを参照する - これは「プロジェクト」見出しを参照すべき最後の3つのセルにとって正しくない。また、第2レベルの列見出しの参照はコンテンツ（1, 2, ファイナル）が繰り返されるようなこちらの例と違いはなくても、誤って取り違えられる。</p>
+            <p>Example Code:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<table>
+   <tr>
+     <th rowspan="2" id="h">宿題</th>
+     <th colspan="3" id="e">練習</th>
+     <th colspan="3" id="p">プロジェクト</th>
+   </tr>
+   <tr>
+     <th id="e1" headers="e">1</th>
+     <th id="e2" headers="e">2</th>
+     <th id="ef" headers="e">最終</th>
+     <th id="p1" headers="p">1</th>
+     <th id="p2" headers="p">2</th>
+     <th id="pf" headers="p">最終</th>
+   </tr>
+   <tr>
+     <td headers="h">15%</td>       
+     <td headers="e p1">15%</td>  // 「e e1」とすべき
+     <td headers="e p2">15%</td>  // 「e e2」とすべき
+     <td headers="e pf">20%</td>  // 「e ef」とすべき
+     <td headers="e e1">10%</td>  // 「p p1」とすべき
+     <td headers="e e2">10%</td>  // 「p p2」とすべき
+     <td headers="e ef">15%</td>  // 「p pf」とすべき
+   </tr>
+</table>
+							]]></codeblock>
+            <p>
+               <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="incorrectassociation"
+                    linktype="examples">Failure example of table incorrectly associating headers attributes in table content (td) to table headers (th)</loc>.</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="H43"/>
+      <relatedtech idref="F46"/>
+      <relatedtech idref="G115"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>データセルが <code>id</code> 属性と <code>header</code> 属性によって見出しセルと関連付けられたテーブルのために、プログラム的な関連付けが正しいかどうか確認する</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>チェック #1 が偽の場合、この失敗条件は適用され、コンテンツは達成基準を満たさない。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

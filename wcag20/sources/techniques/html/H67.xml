@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H67">
+   <short-name>支援技術が無視すべき画像の img 要素で、alt 属性値を空にして、title 属性を付与しない</short-name>
+   <applicability>
+      <p>画像を読み込む HTML 及び XHTML ドキュメント</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、支援技術が無視できるように画像をマークアップする方法を示すことである。</p>
+    <p>title 属性が使用されておらず、代替テキストが空に指定されているなら(例 <code>alt=""</code>)、それは画像を無視して差し支えないことを支援技術に示している。</p>
+    <note>
+    <p><att>alt</att> 属性の代替テキストを 「空」にするのと、<att>alt</att> 属性が指定されていないことは同義ではない。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>次の画像は、ウェブページに装飾のための画像を挿入するのに使用される。</p>
+</description>
+      <code role="html401"><![CDATA[<img src="squiggle.gif" width="20" height="20" alt="" />]]></code>
+    </eg-group>
+   </examples>
+   <resources />
+  <related-techniques/>
+   <tests>
+      <procedure>
+      <p>無視されるべき各画像に対して、</p>
+      <olist>
+        <item>
+          <p><att>title</att> 属性がない又は空である。</p>
+        </item>
+        <item>
+          <p><att>alt</att> 属性が存在し、空であることを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.及び2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

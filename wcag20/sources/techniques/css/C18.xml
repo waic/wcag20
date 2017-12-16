@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C18">
+   <short-name>レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する</short-name>
+   <applicability>
+      <p>CSS をサポートするすべての達成方法</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="6+">
+         <p>On the Microsoft Windows platform, Internet Explorer 5, Internet Explorer 5.5, Internet Explorer 6.0 in "quirks mode" and Internet Explorer 7 in "quirks mode" use a box model that deviates from the W3C CSS specification: in these browser versions, right and left padding, and right and left borders do not increase the total width of an element, so the space for the content inside such an element will be narrower. (This behavior is known as the "box model bug".) Internet Explorer 5.5 on Mac OS, and Internet Explorer 6 and 7 on Windows in "standards compliant mode" use the box model defined in the W3C CSS specification.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>ウェブデザイナーは、レイアウト、例えばテーブルまたは段落の字下げをよりよくコントロールするために、しばしばスペーサー画像（通常は 1 x 1 ピクセルの透過GIF）を使用する。しかしながら、カスケーディング スタイル シート（CSS）は、スペーサー画像を置き換えることで、レイアウトを十分によりよくコントロールすることができる。マージンとパディングの CSS プロパティは、レイアウトを制御するために単独または組み合わせて使用できる。マージンプロパティ（「margin-top」、「margin-right」, 「margin-bottom」、「margin-left」とショートハンドの「margin」）は、ブロックとして表示される任意の要素に使用でき、要素の外側にスペースを追加する。パディングプロパティ（「padding-top」、「padding-right」、「padding-bottom」、「padding-left」とショートハンドの「padding」）は、任意の要素に使用でき、要素の内側にスペースを追加する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <description>
+            <p>次の例は、二つの部品で構成されている。テーブルの全ての面にマージンとテーブルセルにパディングを指定している CSS コードと、スペース画像を含まず、他のテーブル内にネストされていないテーブルの HTML コード。</p>
+         </description>
+         <code role="xhtml"><![CDATA[
+              
+              table { margin: .5em; border-collapse: collapse; } 
+              td, th { padding: .4em; border: 1px solid #000; }
+            
+            ...
+            
+              <table summary="ウェブ開発カテゴリの本のタイトルと著者、出版日">
+                <caption>「ウェブ開発」カテゴリーの本</caption>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ウェブ標準について真剣に考える方法</td>
+                    <td>Andrew Stanovich</td>
+                    <td>2007年4月1日</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+            ]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/CSS2/box.html#margin-properties">Margin properties: 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', and 'margin' in the CSS2 specification</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/CSS2/box.html#padding-properties">Padding properties: 'padding-top', 'padding-right', 'padding-bottom', 'padding-left', and 'padding' in the CSS2 specification</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://veerle-v2.duoh.com/blog/comments/a_css_styled_table_version_2/">A CSS styled table version 2</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug">IE box model bug</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.456bereastreet.com/archive/200612/internet_explorer_and_the_css_box_model/">Internet Explorer and the CSS box model </loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests/>
+</technique>

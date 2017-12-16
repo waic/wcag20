@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G162">
+   <short-name>ラベルを配置して、関係性を最大限に予測できるようにする</short-name>
+   <applicability>
+      <p>フォームをサポートするウェブコンテンツ技術全て</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+   </applies-to>
+   <description>
+    <p>フォームのフィールドに対するラベルを、視覚的に利用者が予想しやすい位置に置くと、複雑なフォームを理解したり、特定のフィールドを見つけるのが容易になる。ほとんどのフィールドに対するラベルは、そのフィールドの直前、すなわち、書字方向が左から右の言語の場合、そのフィールドの左か上に、書字方向が右から左の言語の場合、そのフィールドの右か上に置かれる。ラジオボタン及びチェックボックスのためのラベルはそのフィールドの後に置かれる。</p>
+    <p>これらの配置は自明である。フィールド、ラジオボタン、及びチェックボックスのラベルを置く一般的な(そのために最も予測できる)位置だからである。</p>
+    <p>入力フィールドはさまざまな長さになることがあるため、ラベルはフィールドの前に置かれる。フィールドの前にそれらを置くことでラベルを整列させることができる。また、ラベルがフィールドの直前にあるため、画面拡大ツール使用時でもラベルの場所を見つけることが容易になり、また、(フィールドの始まりが縦に整列しているとき)縦の列の中でも見つけることができる。最後に、フィールドにデータが入力されているならば、ラベルを読んでから内容を読むほうが、逆の場合よりもデータを理解したりチェックすることが容易になる。</p>
+    <p>チェックボックス及びラジオボタンは一定の幅を持っているが、それらのラベルは往々にしてそうではない。チェックボックス又はラジオボタンを最初に置くことで、ボタンとラベルの両方を縦に整列させることができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>テキストフィールドの上側のラベル</head>
+      <description>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_01.gif" alt="すぐ上にラベルが配置された二つのテキストフィールド"/></p>
+      </description>
+    </eg-group>
+    <eg-group>
+      <head>テキストフィールドの左側のラベル</head>
+      <description>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_02.gif" alt="すぐ左側にラベルが配置されたふたつのフィールド."/></p>
+      </description>
+    </eg-group>
+    <eg-group>
+      <head>ラジオボタンの右側のラベル</head>
+      <description>
+        <p>
+                        <graphic source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G162/lbl-position_03.gif" alt="ラジオボタンの右側にラベルが配置されたふたつのラジオボタンを含むフォームのコントロールのグループ"/></p>
+      </description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://juicystudio.com/article/label-positioning.php">Label Positioning</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://webaim.org/techniques/forms/#labels">Creating Accessible Forms</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.jimthatcher.com/webcourse8.htm">Accessible Forms</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                	<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.lukew.com/ff/entry.asp?1502">Web Application Form Design</loc>
+                </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php">Label Placement in Forms</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H44"/>
+      <relatedtech idref="H71"/>
+      <relatedtech idref="H65"/>
+      <relatedtech idref="G131"/>
+      <relatedtech idref="G167"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>ウェブページの各フォームのフィールドに対して:</p>
+      <olist>
+        <item>
+          <p>フォームのフィールドに目に見えるラベルがある。</p>
+        </item>
+        <item>
+          <p>フォームのフィールドがチェックボックス又はラジオボタンであれば、ラベルがそのフィールドの直後にある。</p>
+        </item>
+        <item>
+          <p>フォームのフィールドがチェックボックス又はラジオボタンでなければ、ラベルがそのフィールドの直前にある。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

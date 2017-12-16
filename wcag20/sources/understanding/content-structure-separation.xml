@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div1
+  SYSTEM "../xmlspec.dtd">
+<div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="content-structure-separation">
+   <head>1.3</head>
+   <div2 id="content-structure-separation-intent" role="glintent">
+      <head>意図</head>
+
+<p>このガイドラインの目的は、例えば、音声で読み上げたり、あるいはより単純なレイアウトで提示したりというように、すべての情報をすべての利用者が知覚できるように提供することである。すべての情報が、ソフトウェアによって解釈できるように提供されていれば、情報を様々な方法で (視覚的、聴覚的、触覚的、又はその他の方法で) 提示することが可能である。もし、支援技術によって構造及び情報をプログラムが解釈できないような方法で、情報がある特定の表現形態で提供されていたとしたら、その情報は利用者が必要とするその他の形式では描画できない。</p>
+<p>このガイドラインにある達成基準はすべて、ある表現形態で提供されている様々な種類の情報を、その他の感覚モダリティでも提示可能であるように提供するためのものである。</p>
+<ulist>
+	<item><p>
+              <termdef id="structuredefinline" term="構造">ウェブページの構成要素が相互に関係して系統的に整理されている状態で、かつウェブページの集合が整理されている状態。</termdef>
+            </p></item>
+	<item><p>
+              <termdef id="presentationdefinline" term="表現">利用者が知覚できる形でのコンテンツの描画。</termdef>
+            </p></item>
+</ulist>
+</div2>
+
+   <xi:include href="content-structure-separation-programmatic.xml"/>
+   <xi:include href="content-structure-separation-sequence.xml"/>
+   <xi:include href="content-structure-separation-understanding.xml"/>
+</div1>

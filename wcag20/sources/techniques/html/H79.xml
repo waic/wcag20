@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H79">
+   <short-name>リンクテキストとそれが含まれているデータセル及び関連づけられた見出しセルとを組み合わせて、リンクの目的を特定する</short-name>
+   <applicability>
+      <p>リンクが含まれる全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、リンクとそれを含んでいるデータテーブルの文脈から、リンクの目的を特定することである。文脈とは、そのリンクを含んでいるテーブルセルと、そのセルに関連付けられたテーブルの見出しセルとの関係を指している。データテーブルの文脈によって、リンクを含んでいるセルが、先祖要素であるブロックレベル要素の中で最もそのリンクに近い場合、リンクテキストだけでは不明瞭なリンクに目的が与えられる。それによって、利用者がそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。リンクテキストとして単に目的地の URI を示すだけでは、障害のある利用者、特に認知障害のある利用者にとってはリンク先の説明として不十分であることに注意すべきである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>レンタカー会社の料金比較表</head>
+      <code><![CDATA[<table>
+<tr>
+  <th></th>
+  <th id="a1">Alamo社</th>
+  <th id="a2">Budget社</th>
+  <th id="a3">National社</th>
+  <th id="a4">Avis社</th>
+  <th id="a5">Hertz社</th>
+</tr>
+<tr>
+  <th id="b1">低燃費車</th>
+  <td headers="a1 b1"><a href="econ_ala.htm">1日 67ドル</a></td>
+  <td headers="a2 b1"><a href="econ_bud.htm">1日 68ドル</a></td>
+  <td headers="a3 b1"><a href="econ_nat.htm">1日 72ドル</a></td>
+  <td headers="a4 b1"><a href="econ_av.htm">1日 74ドル</a></td>
+  <td headers="a5 b1"><a href="econ_hz.htm">1日 74ドル</a></td>
+</tr>
+<tr>
+  <th id="b2">小型車</th>
+  <td headers="a1 b2"><a href="comp_ala.htm">1日 68ドル</a></td>
+  <td headers="a2 b2"><a href="comp_bud.htm">1日 69ドル</a></td>
+  <td headers="a3 b2"><a href="comp_nat.htm">1日 74ドル</a></td>
+  <td headers="a4 b2"><a href="comp_av.htm">1日 76ドル</a></td>
+  <td headers="a5 b2"><a href="comp_hz.htm">1日 76ドル</a></td>
+</tr>
+<tr>
+  <th id="b3">中型車</th>
+  <td headers="a1 b3"><a href="mid_ala.htm">1日 79ドル</a></td>
+  <td headers="a2 b3"><a href="mid_bud.htm">1日 80ドル</a></td>
+  <td headers="a3 b3"><a href="mid_nat.htm">1日 83ドル</a></td>
+  <td headers="a4 b3"><a href="mid_av.htm">1日 85ドル</a></td>
+  <td headers="a5 b3"><a href="mid_hz.htm">1日 85ドル</a></td>
+</tr>
+<tr>
+  <th id="b4">大型車</th>
+  <td headers="a1 b4"><a href="full_ala.htm">1日 82ドル</a></td>
+  <td headers="a2 b4"><a href="full_bud.htm">1日 83ドル</a></td>
+  <td headers="a3 b4"><a href="full_nat.htm">1日 89ドル</a></td>
+  <td headers="a4 b4"><a href="full_av.htm">1日 91ドル</a></td>
+  <td headers="a5 b4"><a href="full_hz.htm">1日 91ドル</a></td>
+</tr>
+</table>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G53"/>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="H33"/>
+      <relatedtech idref="H77"/>
+      <relatedtech idref="H78"/>
+      <relatedtech idref="H80"/>
+      <relatedtech idref="H81"/>
+      <relatedtech idref="C7"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して：</p>
+      <olist>
+        <item>
+          <p>そのリンクがテーブルセルの中にある。</p>
+        </item>
+        <item>
+          <p>そのリンクテキストと関連付けられたテーブル見出しセルを組み合わせると、リンクの目的が説明されていることを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+       <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

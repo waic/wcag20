@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F26">
+   <short-name>達成基準 1.3.3 の失敗例 － 情報を伝えるために、グラフィカルなシンボルだけを使用している</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-understanding"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、グラフィカルなシンボルを用いて情報を伝えることによって、コンテンツを理解することを困難にしてしまう失敗例について述べることである。グラフィカルなシンボルには、言葉を使わないで情報を伝える、画像、画像化された文字、あるいは絵で表した又は装飾的な文字のシンボルがある。グラフィカルなシンボルの例としては、斜線の入った赤い円、"スマイリー"と呼ばれる顔文字、 あるいはチェックマーク、矢印又はその意味を持つ文字ではないその他のシンボルなどを表すグリフが挙げられる。支援技術の利用者は、そのようなグラフィカルなシンボルの意味を判断するのが困難なことがある。 グラフィカルなシンボルを用いて情報を提供する場合、ウェブコンテンツ技術の機能を用いて代替物を提供する、又はそのグラフィカルなシンボルの代替を示すことが可能な異なるメカニズムを用いるべきである。例えば、グリフの代わりに、テキストによる代替のある画像を用いることができる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>ステータスを示すために用いるグリフ</head>
+      <description><p>ショッピングカートが2つのシンプルなグリフを用いて、その商品がすぐに発送可能かどうかを示している。具体的には、チェックマークが商品の在庫があり発送可能であることを示し、"×"マークが商品は入荷待ちの状態ですぐには発送できないことを示している。このようにグリフを用いているため、支援技術の利用者は、その商品の現在のステータスを把握することができなかった。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="H37"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ページで情報を伝えているグラフィカルなシンボルを抽出する。</p>
+        </item>
+        <item>
+          <p>グラフィカルなシンボルによって伝えている情報を把握できる他の手段があるかどうかをチェックする。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. で他の手段がない場合、この失敗基準が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

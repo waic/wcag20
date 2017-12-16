@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F49">
+   <short-name>達成基準 1.3.2 の失敗例 － リニアライズした際に、意味の通じない HTML のレイアウトテーブルを使用している</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-sequence" relationship="failure"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <p>初期のスクリーンリーダーは文字通りウェブコンテンツを画面から読み取っていた。そのため、テーブルの一つのセルの内容全体が次のセルより先に読まれることを意図しているようなレイアウトテーブルは問題になっていた。今日のスクリーンリーダーは基礎となっているマークアップを利用して動作するため、一つのセルの内容全体を次のセルより先に読み上げることが可能である。しかしレイアウトのためのテーブルは現在でもコンテンツの自然な読み上げ順序に関する問題を生じさせることがある。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>WCAG 2.0 はレイアウトテーブルの使用を禁止してはいないが、HTML の <el>table</el> 要素に定義されたセマンティックな意味を維持するため、また構造を表現から分離するコーディング上の慣習に従うためにも、CSS に基づくレイアウトを推奨する。それでもレイアウトテーブルを用いる場合には、コンテンツを線形化しても意味が通るようにすることが重要である。</p>
+    <p>この失敗例は、コンテンツの視覚的配置を制御するために使用されるHTMLテーブルが正しく「線形化（リニアライズ）」されないことによって、提示を通じて伝えられる意味のあるコンテンツの順序が失われた場合に発生する。テーブルは、横及び縦の 2 つの視覚的な次元でコンテンツを提示する。しかし、スクリーンリーダーは、この 2 次元コンテンツを最初の行の最初のセルから最後の行の最後のセルまで、ソース内のコンテンツの線形的順序で提示する。スクリーンリーダーは、上から下にテーブルを読み上げ、次の行に移動する前に各行の内容全体を読み上げる。セル内にネストされたテーブルのすべての内容を含む、各行の各セルのすべての内容が読み上げられる。これは線形化と呼ばれる。</p>
+    <p>あるウェブページが 22 行 9 列のテーブルによってレイアウトされているとしよう。スクリーンリーダーは最初に 1 行目の第 1 セル、続いて第 2、第 3、第 4と第 9セルまで読み上げる。しかし、いずれかのセルがネストされたテーブルを含む場合、スクリーンリーダーはネストされたテーブルのすべての内容を、元の (外側の) テーブルの次のセルよりも先に読み上げる。
+たとえば 6 行目 3 列のセルに、5 行 6 列のテーブルが含まれる場合、含まれたテーブルのすべてのセルが、元の (外側の) テーブルの 6 行目 4 列のセルよりも先に読み上げられる。その結果、視覚的表現によって伝えられている意味のある順序がスクリーンリーダーによる読み上げでは知覚できないかもしれない。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>正しく線形化できないレイアウトテーブル</head>
+      <description><p>ある広告では視覚的配置をうまく用いているが、線形化されると意味が変わってしまう。</p>
+</description>
+      <code role="html401"><![CDATA[
+<table>
+<tr>
+  <td ><img src="logo.gif" alt="XYZ mountaineering"></td>
+  <td rowspan="2" valign="bottom">top!</td>
+</tr>
+<tr>
+  <td>XYZ gets you to the</td>
+</tr>
+</table>]]></code>
+      <description><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p>
+<ulist><item><p>XYZ mountaineering top! </p></item><item><p>XYZ gets you to the</p></item></ulist>
+<p>訳注：本来は「XYZ mountaineering  XYZ gets you to the top!」となるべきである</p>
+</description>
+    </eg-group>
+    <eg-group role="failure">
+      <head>線形化されると意味のある列が分割されてしまうレイアウトテーブル</head>
+      <description><p>ある美術館の展覧会に関するウェブページでは、リンクの長い一覧を含むナビゲーションバーをページ左側に配置している。そのナビゲーションバーの右側には展覧会に展示される絵の一つが置かれている。その絵の右側には、美術館でその絵の横の壁にみられるであろうプラカードのテキストが置かれている。そのテキストの下には、「Description,」という見出しと、その見出しの下にその絵の説明が置かれている。絵、プラカードのテキスト、説明の見出し、そして絵の説明というのが意味のある順序となっている。</p>
+<p>ページ中で各要素を配置するためにレイアウトテーブルが用いられている。ナビゲーションバー中の一連のリンクは、最も左の列の異なるセルに分割されている。</p>
+</description>
+      <code role="html401"><![CDATA[
+<table>
+<tr>
+	<td><a href="#">リンク 1</a></td>
+	<td rowspan="20"><img src="img.png" alt="美術館の絵"></td>
+	<td rowspan="6"><img src="placard.png" alt="プラカードのテキスト"></td> 
+</tr> 
+<tr>
+	<td><a href="#">リンク 2</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 3</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 4</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 5</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 6</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 7</a></td>
+	<td rowspan="2"><h2>説明の見出し</h2></td> 
+</tr> 
+<tr>
+	<td><a href="#">リンク 8</a></td>
+</tr>
+<tr>
+	<td><a href="#">リンク 9</a></td>
+	<td rowspan="12">Description of the image</td> 
+</tr> 
+<tr>
+	<td><a href="#">リンク 10</a></td>
+</tr>
+ ...
+<tr>
+	<td><a href="#">リンク 20</a></td>
+</tr>
+</table>]]></code>
+      <description><p>この例の読み順は次のようになってしまうだろう：</p>
+<ulist><item><p>リンク 1</p></item><item><p>美術館の絵</p></item><item><p>プラカードのテキスト</p></item><item><p>リンク 2</p></item><item><p>リンク 3</p></item><item><p>リンク 4</p></item><item><p>リンク 5</p></item><item><p>リンク 6</p></item><item><p>リンク 7</p></item><item><p>説明の見出し</p></item><item><p>リンク 8</p></item><item><p>リンク 9</p></item><item><p>リンク 10</p></item><item><p>...</p></item><item><p>リンク 20</p></item></ulist>
+<p>ナビゲーションバーの一連のリンクに絵を説明するコンテンツが割り込んでいるため、スクリーンリーダーは視覚的な順序に対応した意味のある順序でコンテンツを提示することができない。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="C6"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>以下のいずれかの方法によってコンテンツを線形化する:</p>
+                
+                        <ulist><item><p>コンテンツをソースコード中の順序で表示する</p></item><item><p>コンテンツを囲むテーブルのマークアップを除去する</p></item></ulist></item>
+        <item>
+          <p>線形化した読み上げ順序が、表現によって伝えられている意味のある順序と合致する</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たしていない場合、この不適合条件が適用され、達成基準に不適合となる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

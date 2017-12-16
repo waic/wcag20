@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H80">
+   <short-name>リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-refs" relationship="advisory"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="JAWS" version="">
+      <p>JAWSでこの達成方法を利用するためのコマンドは、「JAWSキー+T」である。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、リンクとその直前にある見出しの文脈から、リンクの目的を特定することである。直前にある見出しは、リンクテキストだけでは不明瞭なリンクに文脈を提供する。それによって、利用者がそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。</p>
+    <note>
+      <p>可能なかぎり、文脈による補足を必要とせずにリンクの目的が特定できるリンクテキストを提供すべきである。</p>
+    </note>
+  </description>
+   <examples>
+      <eg-group>
+      <head>複数のホテルに関する情報のブロック</head>
+      <description><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p>
+</description>
+      <code role="xhtml"><![CDATA[<h2><a href="royal_palm_hotel.html">ロイヤル・パーム・ホテル</a></h2>
+  <ul class="horizontal">
+    <li><a href="royal_palm_hotel_map.html">地図</a></li>
+    <li><a href="royal_palm_hotel_photos.html">写真</a></li>
+    <li><a href="hroyal_palm_hotel_directions.html">案内</a></li>
+    <li><a href="royal_palm_hotel_reviews.html">お客様レビュー</a></li>
+    <li><a href="royal_palm_hotel_book.html">予約フォーム</a></li>
+  </ul>
+
+<h2><a href="hotel_three_rivers.html">ホテル・スリー・リバー</a></h2>
+  <ul class="horizontal">
+    <li><a href="hotel_three_rivers_map.html">地図</a></li>
+    <li><a href="hotel_three_rivers_photos.html">写真</a></li>
+    <li><a href="hotel_three_rivers_directions.html">案内</a></li>
+    <li><a href="hotel_three_rivers_reviews.html">お客様レビュー</a></li>
+    <li><a href="hotel_three_rivers_book.html">予約フォーム</a></li>
+  </ul> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>ある文書を3つのファイル形式で提供する場合</head>
+      <code role="xhtml"><![CDATA[<h2>2006-2007年版 年次報告書</h2>
+<p> 
+  <a href="annrep0607.html">（HTML）</a>&nbsp;
+  <a href="annrep0607.pdf">（PDF）</a>&nbsp;
+  <a href="annrep0607.rtf">（RTF）</a>
+</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head>新聞社のウェブサイト</head>
+      <code role="xhtml"><![CDATA[<h2><a href="Stockmarket_05052007.htm>株式市場が急騰、強含みに</a></h2>
+<p>今週は金への投資が2％上昇し、株式市場にとっては華々しい週になった。
+<a href="Stockmarket_05052007.htm>全文を読む</a></p> ]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <relatedtech idref="G53"/>
+      <relatedtech idref="H33"/>
+      <relatedtech idref="C7"/>
+      <relatedtech idref="H77"/>
+      <relatedtech idref="H78"/>
+      <relatedtech idref="H79"/>
+      <relatedtech idref="H81"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して：</p>
+      <olist>
+        <item>
+          <p>そのリンクの直前にある見出し要素を見つける。</p>
+        </item>
+        <item>
+          <p>そのリンクテキストと直前にある見出しを組み合わせると、リンクの目的が説明されている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>2.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

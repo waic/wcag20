@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H89">
+   <short-name>コンテキストに応じたヘルプを提供するために、title 属性を使用する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML </p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <ulist>
+            <item>
+               <p>Some current assistive technology provide feedback to the user when form fields have title attribute content available. </p>
+            </item>
+            <item>
+               <p>Some graphical user agents will display a tool tip when the mouse hovers above a form field containing a <att>title</att> attribute. However, current user agents do not provide access to the <att>title</att> attribute content via the keyboard. </p>
+            </item>
+            <item>
+               <p>The tool tip in some common user agents disappears after a short period of time (approximately 5 seconds). This can cause difficulty accessing title attribute content for those users who can use a mouse but have fine motor skill impairment, and may result in difficulties for users who need more time to read the tool tip. </p>
+            </item>
+            <item>
+               <p>It is difficult for most users to resize, adjust background colors, reposition or otherwise control the presentation of title attribute content in many current user agents. </p>
+            </item>
+            <item>
+               <p>This technique can only be used when the element has an explicitly associated label. In the absence of a label, the title will be used as the Name in the accessibility API of current user agents that support one. The help text described below makes a poor name. </p>
+            </item>
+         </ulist>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、<att>title</att> 属性にヘルプ情報を提供することで、フォームにデータを入力する利用者にコンテキストに応じたヘルプを提供することである。ヘルプは書式情報もしくは入力例を含んでもよい。</p>
+      <note>
+         <p>現在のユーザエージェントおよび支援技術は <att>title</att> 属性に含まれた情報を利用者に常には提供しない。<att>title</att> 属性が広範囲にサポートされるまではこの達成方法を単独で利用することは避けるべきである。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <description>
+            <p>地図検索アプリケーションはラベル"住所:"で構成されるフォームと、入力ボックスと、"地図検索"という値の実行ボタンを提供する。インプットボックスは利用者が入力するアドレス書式の例を <att>title</att> 属性に持つ。</p>
+         </description>
+         <code><![CDATA[
+<label for="searchAddress">住所: </label>
+<input id="searchAddress" type="text" size="30" value="" name="searchAddress" 
+ title="ドレスの例: 101 Collins St, Melbourne, Australia" />
+             ]]></code>
+      </eg-group>
+      <eg-group>
+         <description>
+            <p>利用者が請求書をオンラインで支払うことを可能にするフォームでは、利用者は自分の口座番号を入力する必要がある。ラベル「口座番号」がついたインプットボックスは、口座番号の特定に関する情報を提供する　<att>title</att> 属性を持つ。</p>
+         </description>
+         <code><![CDATA[
+<label for="accNum1">口座番号: </label>
+<input id="accNum1" type="text" size="10" value="" title="口座番号は、請求書の右上隅に表示されます。" />
+             ]]></code>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="H65"/>
+      <relatedtech idref="G71"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>テキスト入力を要求しているフォーム・コントロールを識別する。</p>
+            </item>
+            <item>
+               <p>各フォーム・コントロールに明示的に関連付けられたラベルがあることを確認する。</p>
+            </item>
+            <item>
+               <p>各フォーム・コントロールがコンテキストに応じたヘルプを <att>title</att> 属性で提供していることを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記 2. 及び 3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

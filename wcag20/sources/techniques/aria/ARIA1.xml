@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA1">
+   <short-name>ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+      </ua-issue>
+      <ua-issue name="Internet Explorer" version="8">
+         <p>IE 8 only supports <prop>aria-labelledby</prop> with a single id value and it partially supports <prop>aria-describedby</prop>.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、プログラム的に決定される、ユーザインタフェース要素に関する説明的な情報を提供するために、どのようにWAI-ARIA  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</loc>プロパティを使用するかを示すことにある。<att>aria-describedby</att>プロパティは、ID参照リストの使用を通して1つ以上の要素の説明的情報と結びつけるために使用してもよいものである。ID参照リストは、1つ以上のユニークな要素IDを含む。</p>
+      <p>XHTMLやHTMLとともにWAI-ARIAステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc>を参照のこと。WAI-ARIAステート及びプロパティは他の言語とも互換性がある。詳しくはそれらの言語の説明文書を参照のこと。</p>
+      <note>
+         <p>注記: <att>aria-describedby</att>プロパティは、外部リソース上の説明を参照するように設計されていない――これはIDなので、同一DOM文書内の要素を参照しなければならない。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <head>「閉じる」ボタンの動作を記述するためにaria-describedbyプロパティを使用する</head>
+         <description>
+            <p>ダイアログ上の「閉じる」ボタンとして機能するボタンが、文書中の他の場所で説明されている。<att>aria-describedby</att>プロパティは、リンクと説明を関連付けるために使用される。</p>
+            <codeblock xml:space="preserve"><![CDATA[<button aria-label="Close" aria-describedby="descriptionClose"
+    onclick="myDialog.close()">X</button>
+
+...
+
+<div id="descriptionClose">Closing this window will discard any information entered and
+return you back to the main page</div>
+]]></codeblock>
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA1/describedby-close.html"><!--
+                    linktype="examples"-->事例 1</loc>
+            </p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>フォームフィールドと指示を関連付けるためにaria-describedbyを使用する</head>
+         <description>
+            <p>フォームフィールドに対してフォームラベルを用意するとともに、<att>aria-describedby</att>で指示を関連付けているサンプルフォームフィールド。</p>
+            <codeblock xml:space="preserve"><![CDATA[<form>
+<label for="fname">First name</label>
+<input name="" type="text" id="fname" aria-describedby="int2">
+<p id="int2">A bit of instructions for this field linked with aria-describedby. </p>
+</form>
+]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>例3: ボタンに関するより詳細な情報を提供するためにaria-describedbyプロパティを使用する</head>
+         <description>
+            <codeblock xml:space="preserve"><![CDATA[<p><span id="fontDesc">Select the font faces and sizes to be used on this page</span>
+ <button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">Fonts</button>
+</p>
+<p><span id="colorDesc">Select the colors to be used on this page</span>
+ <button id="colorB" onclick="doAction('Colors');" aria-describedby="colorDesc">Colors</button>
+</p>
+<p><span id="customDesc">Customize the layout and styles used on this page</span>
+ <button id="customB" onclick="doAction('Customize');" aria-describedby="customDesc">Customize</button>
+</p>
+]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>フォームフィールドとツールチップを関連付けるためにaria-describedbyを使用する</head>
+         <description>
+            <p>次のコードスニペットは、フォーカスが要素に置かれたときに、ツールチップを表示するために、<att>aria-describedby</att>とonfocus="tooltipShow()"関数を使用する方法を示す。</p>
+            <codeblock xml:space="preserve"><![CDATA[<html lang="en-us">
+<head>
+   <title>inline: Tooltip Example 1</title>
+   <link rel="stylesheet" href="css/tooltip1_inline.css" type="text/css">
+   <script type="text/javascript" src="js/tooltip1_inline.js"></script>
+   <script type="text/javascript" src="../js/widgets_inline.js"></script>
+   <script type="text/javascript" src="../js/globals.js"></script>
+   <link rel="icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
+</head>
+   ...
+
+<body onload="initApp()">
+
+<div id="container">
+
+<h1>Tooltip Example 1</h1>
+<h2>Create Account</h2>
+<div class="text">
+<label for="first">First Name:</label>
+
+<input type="text" id="first" name="first" size="20"
+      onmouseover="tooltipShow(event, this, 'tp1');"
+      onfocus="tooltipShow(event, this, 'tp1');"
+      aria-describedby="tp1"
+      aria-required="false"/>
+
+<div id="tp1" role="tooltip" aria-hidden="true">Your first name is optional. </div>
+</div>
+]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>XHTML</head>
+         <description>
+            <p>この例は、XHTMLでコーディングされ、application/xhtml+xmlのMIMEタイプで提供されている。このMIMEタイプは、すべてのユーザエージェントでサポートされているわけではない。aria-describedbyプロパティは、XHTMLマークアップに直接追加され、追加のスクリプトを必要としない。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN"
+"http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<title>Demonstration of aria-describedby property</title>
+<style type="text/css">
+div.form p { clear:left; margin: 0.3em 0;}
+.left {
+  float:left;
+  width:400px;
+}
+.right {
+  width:100px;
+  text-align:right;
+}
+</style>
+</head>
+<body>
+<p>The buttons on this page use the Accessible Rich Internet Applications aria-describedby property
+to provide more detailed information about the button action</p>
+<div class="form">
+<p><span class="left" id="fontDesc" >Select the font faces and sizes to be used on this page</span>
+<span class="right"><button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">
+Fonts </button></span></p>
+<p><span class="left" id="colorDesc" >Select the colors to be used on this page</span>
+<span class="right"><button id="colorB" onclick="doAction('Colors');" aria-describedby="colorDesc">
+Colors </button></span></p>
+<p><span class="left" id="customDesc" >Customize the layout and styles used on this page</span>
+<span class="right"><button id="customB" onclick="doAction('Customize');" aria-describedby="customDesc">
+Customize </button></span></p>
+</div>
+</body>
+</html>
+]]></code>
+      </eg-group>
+      <eg-group>
+         <head>HTML</head>
+         <description>
+            <p>この例は、ページ上のボタンにaria-describedbyプロパティを追加するためにスクリプトを使用している。この例は、説明テキストを含む要素のidを保持するためにbuttonIds配列変数を作成する。setDescribedBy()関数は、windowオブジェクトのonloadイベントから呼び出される。</p>
+            <p>setDescribedBy()関数は、ボタン要素のすべてをループし、aria-describedbyプロパティを設定するために各ボタン要素上でsetAttribute()を呼び出す。各ボタンのaria-describedbyプロパティは、その説明のテキストを含む要素のidに設定される。</p>
+            <p>WAI-ARIAをサポートするユーザエージェント及び/又は支援技術を使用すれば、ユーザインタフェースコントロールがフォーカスを受け取る際に説明が提供される。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[<html lang="en-us">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Demonstration of aria-describedby property</title>
+<style type="text/css">
+div.form p { clear:left; margin: 0.3em 0;}
+.left {
+  float:left;
+  width:400px;
+}
+.right {
+  width:100px;
+  text-align:right;
+}
+</style>
+<script type="text/javascript">
+//<![CDATA[
+
+// array entries for each button on the page that associates the button id
+// with the id of the element containing the text which describes the button
+var buttonIds = new Array();
+buttonIds["fontB"]= "fontDesc";
+buttonIds["colorB"] = "colorDesc";
+buttonIds["customB"] = "customDesc";
+
+// function that is run after the page has loaded to set the aria-describedBy
+// property on each of the elements referenced by the array of id values
+function setDescribedBy(){
+  if (buttonIds){
+    var buttons = document.getElementsByTagName("button");
+    if (buttons){
+      var buttonId;
+      for(var i=0; i<buttons.length; i++){
+        buttonId = buttons[i].id;
+        if (buttonId && buttonIds[buttonId]){
+          buttons[i].setAttribute("aria-describedby", buttonIds[buttonId]);
+        }
+      }
+    }
+  }
+}
+
+// simulated action function - currently just displays an alert
+function doAction(theAction){
+  alert("Perform the " + theAction + " action");
+}
+
+window.onload=setDescribedBy;
+
+//]]]]><![CDATA[>
+</script>
+</head>
+<body>
+<p>The buttons on this page use the Accessible Rich Internet Applications
+aria-describedby property to provide more detailed information
+about the button action.
+</p>
+<div class="form">
+<p><span class="left" id="fontDesc" >Select the font faces and sizes to be used on this page</span>
+  <span class="right"><button id="fontB" onclick="doAction('Fonts');"> Fonts </button></span>
+</p>
+<p><span class="left" id="colorDesc" >Select the colors to be used on this page</span>
+  <span class="right"><button id="colorB" onclick="doAction('Colors');"> Colors </button></span>
+</p>
+<p><span class="left" id="customDesc" >Customize the layout and styles used on this page</span>
+  <span class="right"><button id="customB" onclick="doAction('Customize');"> Customize </button></span>
+</p>
+</div>
+</body>
+]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute">Using the aria-describedby attribute (MDN)</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/aria-in-html/">Using WAI-ARIA in HTML</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="ARIA2"/>
+      <relatedtech idref="ARIA7"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>一意なIDを経由して1つ以上の要素を参照する<att>aria-describedby</att>属性を持つユーザインタフェースコントロールがあることをチェックする。</p>
+            </item>
+            <item>
+               <p>参照される要素（1つまたは複数）が、ユーザインタフェースコントロールに関する追加情報を提供することをチェックする。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.及び2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

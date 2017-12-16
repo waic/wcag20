@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="PDF16">
+   <short-name>PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する</short-name>
+   <applicability>
+    <p id="pdf.applicability.general">タグ付き PDF 文書</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-doc-lang-id" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+     <ua-issue>
+      <p>ユーザエージェント及び支援技術に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>を参照のこと。</p>
+    </ua-issue>
+  </ua-issues>
+  <description>
+    <p>この達成方法の目的は、文書カタログ内の /Lang エントリを設定することにより、文書のデフォルト言語を指定することである。これは通常、PDF のオーサリングツールを使用して行う。</p>
+    <p>支援技術と従来のユーザエージェントはどちらも、文書の言語が指定されている場合に、より正確にテキストを表現できる。スクリーンリーダーは正しい発音規則をロードできる。視覚的なブラウザは文字やスクリプトを正しく表示できる。メディアプレイヤーはキャプションを正しく表示できる。このため、障害のある利用者にとってコンテンツが分かりやすくなる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>Adobe Acrobat 9 Pro を使用して、デフォルト文書言語を指定するために /Lang エントリを追加する</head>
+      <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<olist><item><p>Adobe Acrobat Pro で文書を開く</p></item><item><p>［ファイル］メニューで［プロパティ］を選択する</p></item><item><p>［プロパティ］ダイアログボックスで、［アドバンスト］タブを選択する</p></item><item><p>「読み上げオプション」フィールドで「言語」コンボボックスからデフォルトの言語を選択する</p></item></olist>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/docprop.gif" height="322" width="263"/><alt>スクリーンショット：Adobe Acrobat の［プロパティ］ダイアログボックスでデフォルト言語を指定</alt></image></p>
+<note><p>Acrobat には 16 種類のプリセット言語が用意されている。一覧にない言語（ロシア語など）を指定する必要がある場合は、言語の名前ではなくその言語の ISO 639 コードを入力する必要がある。</p>
+</note>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/language-en.pdf"><!-- linktype="examples"-->Acrobat Pro を使用して /Lang エントリを追加したサンプル（PDFファイル）</loc>がある。</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>Microsoft Word 2007 を使用して PDF 文書内のデフォルト文書言語を指定する</head>
+      <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<p>Microsoft Word で作成された文書：「場合によっては、ソースファイルで文書の言語が指定されていても、その情報が PDFMaker に伝達されないことがある。文書のプロパティダイアログボックスで文書全体の言語を設定すると（事例 1 を参照のこと）、このオプションに関連するすべてのエラーが修正される」（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/A9-accessible-pdf-from-word.pdf">Adobe®
+Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from Microsoft®	Word</loc>）</p>
+</description>
+    </eg-group>
+    <eg-group>
+      <head>/Lang エントリを使用して PDF 文書内のデフォルト文書言語を指定する</head>
+      <description><p>文書内のテキストに対して使用される自然言語は、オプションの /Lang エントリがいくつかの考えられる位置のいずれかに存在するかどうかに基づいて階層的に決定される。最高レベルで、文書のデフォルト言語は文書カタログ内の /Lang エントリにより指定できる。</p>
+<p>次のコードフラグメントは、文書のデフォルト言語（この場合、英語）の文書カタログ内で /Lang エントリを使用する一般的なコードを示している（これは通常、オーサリングツールを使用して行う）。 </p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[
+1 0 obj
+   << /Type /Catalog
+      ...
+      /Lang (en-US)
+      ...
+   >> 
+ endobj]]></codeblock>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> Section 14.9.2 (Natural Language Specification) in <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+    					1.7 (ISO 32000-1)</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.loc.gov/standards/iso639-2/php/code_list.php">ISO
+    						639-2 Codes</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://partners.adobe.com/public/developer/en/pdf/PDFReference16.pdf#page=886">PDF
+    							Reference 1.6, 10.8.1 Natural Language Specification (PDF 8.7 Mb)</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://pdf.editme.com/pdfua-naturalLanguageSpecification">PDF
+    								Standards: Natural Language Specification</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/A9-accessible-pdf-from-word.pdf">Adobe®
+    									Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from
+    									Microsoft® Word</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility/products/acrobat.html">PDF and Accessibility</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="PDF19"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item><p>次のいずれかにより、文書のデフォルト言語が正しく指定されていることを確認する。</p>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、正しい自然言語でテキストが読み上げられる</p></item><item><p>PDF エディタを使用して、言語がデフォルト文書言語に設定されていることを確認する</p></item><item><p>文書カタログ内の /Lang エントリ値を表示できるツールを使用して PDF 文書を開き、言語設定を表示する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、言語がデフォルト言語に設定されていることを確認する</p></item></ulist></item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>1. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Setting_the_default_language_using_the_/Lang_entry_in_the_document_catalog_of_a_PDF_document"/>
+      </source>
+   </admin>
+</technique>

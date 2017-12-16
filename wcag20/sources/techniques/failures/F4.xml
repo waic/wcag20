@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F4">
+   <short-name>達成基準 2.2.2 の失敗例 － 5 秒未満でそれを停止させるメカニズムを提供せずに、text-decoration:blink を使用している</short-name>
+   <applicability>
+      <p>カスケーディング・スタイルシート（CSS）</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="failure"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="IE" version="*">
+      <p><code>text-decoration</code> プロパティの<code>blink</code> という値は、Internet Explorerによってサポートされていない。Netscape/Mozillaファミリーのブラウザではサポートされている。その他のブラウザ（例： Safari、Operaなど）では未検証である。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>CSSでは、<code>text-decoration</code>プロパティに<code>blink</code>という値を定義している。これを用いると、このプロパティを持つ要素のあらゆるテキストが、あらかじめ設定された間隔で点滅する。これは、利用者が中断することはできず、またユーザエージェントの環境設定によって無効にすることもできない。つまり、ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が3秒より長く続く可能性があることから、<code>text-decoration:blink</code>を用いているコンテンツは達成基準を満たしていないことになる。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>製品リストのページで、セール価格に注意を引くため、その要素を<code>text-decoration:blink</code>でスタイル指定している。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p>
+</description>
+      <code><![CDATA[<p>良品<span style="text-decoration:blink">セール!たったの44,995ドル!</span></p>]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/text.html#propdef-text-decoration">CSS 2 text-decoration property</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="SCR22"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>インラインでのスタイル指定、ドキュメント内のスタイルシート及びドキュメント外部のスタイルシートに、"blink" の値を持つ<code>text-decoration</code> プロパティがある。</p>
+        </item>
+        <item>
+          <p>プロパティを用いている場合、このプロパティが定義されているセレクタによって特定されるID、クラス又は要素がドキュメント内で用いられている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 及び 2. が該当すれば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G204">
+   <short-name>閲覧画面の幅を狭めたときに、ユーザエージェントによるテキストの折り返しを妨げない</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-visual-presentation"
+                         relationship="sufficient"/>
+   </applies-to>
+   <description>
+      <p>この達成方法は、横スクロールが起こる状況を回避することを助けるものである。ブロックやテキストの横スクロールは、支援技術を用いていない認識障害がある人々やロービジョンの利用者にとっては大きな問題となる。ウィンドウ幅が狭い時にテキストのリフローを妨げないことも含まれる。最善の方法のひとつは、テキストブロックコンテナの横幅をパーセントで定義することである。</p>
+      <p>制作者が横幅をピクセルやポイントなどの絶対値で定義していない限り、ウィンドウ幅が狭い時、HTML及びXHTMLユーザエージェントは自動的にテキストをリフローする。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <description>
+            <p>新聞社のサイトがユーザエージェントのウィンドウ幅に合わせたカラム数の記事を含んでいる。認知障害の利用者は、読みやすいようにカラムを狭めることができる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/box.html">CSS Box Model</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="C20"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>一般的なユーザエージェントで、テキストブロックを含むコンテンツを開く。</p>
+            </item>
+			<item>
+				<p>ユーザエージェントにリフローを許可する設定があるか確認し、あれば有効にする。</p>
+			</item>
+            <item>
+               <p>ウィンドウ幅をスクリーン幅の1/4に縮める。</p>
+            </item>
+            <item>
+               <p>1行の文章を読むために、コンテンツを横スクロールする必要がない。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

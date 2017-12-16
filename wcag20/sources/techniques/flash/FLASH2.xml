@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH2">
+   <short-name>Flash 内の非テキストオブジェクトに説明プロパティを設定する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、元の非テキストコンテンツと同じ目的を果たし、同じ情報を提示する際に、短い代替テキストでは不十分な場合、長い代替テキストを提供することを目的としている。</p>
+      <p>Flash Player は非テキストオブジェクトに対する長い代替テキストをサポートしている。長い代替テキストは ActionScript または Flash オーサリングツールで <prop>description</prop> プロパティを使用して定義することができる。以下の事例ではこの方法について説明する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>シンボル（グラフィック、ボタン、ムービークリップ）に説明を適用する</head>
+         <description>
+            <p>Flash Professional のオーサリングツールのアクセシビリティパネルを使用すると、コンテンツ制作者は、支援技術にアクセシビリティ情報を提供したり、Flash の個々のオブジェクトや Flash アプリケーション全体に対してアクセシビリティ関連オプションを設定できる。</p>
+            <olist>
+               <item>
+                  <p>非テキストオブジェクトに代替テキストを適用する際には、代替テキストをシンボルとしてムービーのライブラリに保存する必要がある。<emph role="strong">注記:</emph>  Flash ではグラフィックシンボル用の代替テキストを使用することはできない。グラフィックをムービークリップまたはボタンシンボルに変換するか、これらに保存する必要がある。</p>
+               </item>
+               <item>
+                  <p>アプリケーションメニューで［ウィンドウ］&gt;［他のパネル］&gt;［アクセシビリティ］を選択するか、ショートカットキーの Alt + F11 を使用してアクセシビリティパネルを表示する。「オブジェクトをアクセス可能にする」チェックボックスがオンになっていることを確認する。</p>
+               </item>
+               <item>
+                  <p>ムービーステージ上で非テキストインスタンスを選択すると、アクセシビリティパネル内のフィールドが編集可能になる。</p>
+               </item>
+               <item>
+                  <p>非テキストオブジェクトのコンテンツを簡潔に説明した文章を入力する。例えば図の場合、図が伝える情報を示す「名前」を付け、「説明」フィールドには情報の完全な詳細を記述する。また、自動車の修理方法に関するムービーの一部としてアニメーションが使用されている場合、そのアニメーションの名前は「パンクしたタイヤを取り替える方法」とし、長い説明文ではその方法の詳細な手順を示すことができる。</p>
+               </item>
+            </olist>
+            <p>
+								       <emph role="strong">重要:</emph> 「説明」フィールドは、オブジェクトの目的を説明するのに短い代替テキストでは不十分な場合にのみ使用する。それ以外の場合は、「説明」フィールドは空のままにしておくこと。</p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH2/acc_name_scrn.jpg"
+                       width="541"
+                       height="218"/>
+                  <alt>画面スクリーンショット：Flash オーサリング環境のアクセシビリティパネル</alt>
+               </image>
+							     </p>
+            <!--<ednote>
+								<edtext>I suggest this should be a separate image from FLASH1, showing the description field filled out.</edtext>
+							</ednote>-->
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 2.0 でプログラムによる説明を適用する</head>
+         <description>
+            <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<obj>_accProps</obj> オブジェクトを使用する必要がある。このオブジェクトは、オブジェクトに対して設定されているアクセシビリティ関連プロパティが含まれているオブジェクトを参照する。以下に、<obj>_accProps</obj> オブジェクトを使用して ActionScript によってオブジェクトの名前と説明を設定する簡単なコード例を示す。</p>
+            <p>10 月の売上実績を示すグラフがあり、「10月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[// 'chart_mc' は、ムービーのメインのタイムライン上に置かれたインスタンスである
+_root.chart_mc._accProps = new Object();
+_root.chart_mc._accProps.name = "10月の売上実績グラフ";
+_root.chart_mc._accProps.description = "10月の売上実績を示す棒グラフ。\
+  6名の営業がいて、マリアが最も高くて349件。その次が、フランシスで\
+  301件。そして、ジュアンが256件、スーが250件、リーが200件、最後にマックスが\
+  195件と続いている。棒グラフの用途は成績を示すことなので、件数の多い順に\
+  紹介している。";]]></code>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 3.0 でプログラムによる説明を適用する</head>
+         <description>
+            <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<obj>AccessibilityProperties</obj> オブジェクトを使用する必要がある。以下に、<obj>AccessibilityProperties</obj> オブジェクトを使用して ActionScript によってオブジェクトの名前と説明を設定する簡単なコード例を示す。</p>
+            <p>10 月の売上実績を示すグラフがあり、「10月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[// 'chart_mc' は、ムービーのメインのタイムライン上に置かれたインスタンスである
+chart_mc.accessibilityProperties = new AccessibilityProperties();
+chart_mc.accessibilityProperties.name = "10月の売上実績グラフ";
+chart_mc.accessibilityProperties.description = "10月の売上実績を示す棒グラフ。\
+  6名の営業がいて、マリアが最も高くて349件。その次が、フランシスで\
+  301件。そして、ジュアンが256件、スーが250件、リーが200件、最後にマックスが\
+  195件と続いている。棒グラフの用途は成績を示すことなので、件数の多い順に\
+  紹介している。";]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.adobe.com/accessibility.htmlproducts/flash/text.html">Adobe Flash Documentation for Text Equivalents</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.eclipse.org/actf/downloads/tools/aDesigner/">aDesigner</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://msdn.microsoft.com/en-us/library/ms695716.aspx">MS Active Accessibility 2.0 inspection tools</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="FLASH1"/>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>SWF ファイルを発行する。</p>
+            </item>
+            <item>
+               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
+            </item>
+            <item>
+               <p>オブジェクトの長い説明を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>
+            </item>
+            <item>
+               <p>GUI 概要パネルで、Flash ムービーに含まれている各オブジェクトをチェックし、オブジェクトに説明が設定されている場合、ツールの画面にその説明が適切に表示されることを確認する。</p>
+            </item>
+            <item>
+               <p>また、場合によってはスクリーンリーダーを使用して Flash コンテンツの読み上げをテストする。このテストでは、タブ移動の可能な非テキストオブジェクトにタブを移動したときに、そのオブジェクトの説明が読み上げられること、またはコンテンツを 1 行ずつ読み上げたときに説明が読み上げられることを確認する。</p>
+            </item>
+            <item>
+               <p>すべての非テキストオブジェクトの説明として、そのオブジェクトと同じ目的を持ち、同じ情報を伝える等価なテキストが設定されていることを確認する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>6. を満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Setting_the_description_property_for_a_non-text_object_in_Flash"/>
+					</source>
+   </admin>
+</technique>
+

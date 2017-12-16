@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA10">
+   <short-name>非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>を用いるHTML。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+         <ulist>
+            <item>
+               <p> NVDA 2012.3 supports Example 1 with FF</p>
+            </item>
+         </ulist>
+         <p>As of March 2014, there is much wider <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="accessibility-supporteddef">accessibility support</loc> for the use of the <att>alt</att> attribute than for <att>aria-labelledby</att>. The use of the <att>alt</att> attribute is best practice and strongly encouraged. Especially for elements where the <att>alt</att> attribute can be used to provide text alternatives, authors must confirm accessibility support for <att>aria-labelledby</att> before relying on this technique in place of <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H37">H37: Using <att>alt</att> attributes on img elements</loc>.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、<att>aria-labelledby</att>属性を使用することで支援技術（AT）によって読み取ることのできる要素に対する短い説明を提供することである。<att>aria-labelledby</att>属性は、ラベル付けする要素のID属性とマッチするID参照値を使用することで、ページ上のどこかで可視になっているテキストと要素とを関連づける。スクリーンリーダーのような支援技術は、<att>aria-labelledby</att>属性値によって特定される要素のテキストを、その属性をもつ要素に対する代替テキストとして使用する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>複雑な図形に短い説明を提供する</head>
+         <description>
+            <p>この例は、図形が複数の画像要素から構成されている読み取り専用の星評価パターンに対して、どのように<att>aria-labelledby</att>属性を用いて短いテキストの説明を提供するのかを示している。図形に対するテキストによる代替はラベルであり、ページ内の星パターンのすぐ下に見える形で置かれている。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div role="img" aria-labelledby="star_id">
+<img src="fullstar.png" alt=""/>
+<img src="fullstar.png" alt=""/>
+<img src="fullstar.png" alt=""/>
+<img src="fullstar.png" alt=""/>
+<img src="emptystar.png" alt=""/>
+</div>
+
+<div id="star_id">4 of 5</div>]]></codeblock>
+            <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA10/ARIA10-example1.html"><!--
+                    linktype="examples"-->複雑な図形に短い説明を提供する</loc></p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc> 
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</loc>
+               </p>
+            </item>
+            <item>
+               <p> 
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Rich Internet Applications (WAI-ARIA) 1.0, Section 5.2.7.3. Text Alternative Computation</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H37"/>
+      <relatedtech idref="F65"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p><att>aria-labelledby</att>属性が存在してかつ要素が<att>alt</att>属性をサポートしない場合に各要素を検査する。</p>
+            </item>
+            <item>
+               <p><att>aria-labelledby</att>属性値がウェブページ上の要素のidである。</p>
+            </item>
+            <item>
+               <p><att>aria-labelledby</att>属性によって特定される要素のテキストが、正確に要素をラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

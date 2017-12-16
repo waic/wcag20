@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SCR29">
+   <short-name>静的なHTML要素にキーボード操作可能なアクションを追加する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML、スクリプト</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>
+            <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                 href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">HTML 4.01</loc> only defines the tabindex attribute for <code><![CDATA[a]]></code>, <code><![CDATA[area]]></code>, <code><![CDATA[button]]></code>, <code><![CDATA[input]]></code>, <code><![CDATA[object]]></code>, <code><![CDATA[select]]></code>, and <code><![CDATA[textarea]]></code>, and limits its value to the range between 0 and 32767. The use of <code><![CDATA[tabindex]]></code> with other element types and the tabindex value -1 is supported in Internet Explorer 5.01 and higher, and Firefox 1.5 and higher, Opera 9.5 and higher and Camino. Note that modifying focus through script can cause unpredictable behavior in screen readers that use a virtual cursor. 
+                </p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、 <code><![CDATA[div]]></code> や <code><![CDATA[span]]></code> などの静的な HTML 要素により実行されるユーザインターフェース コントロールにキーボードアクセスを提供する方法を示すことである。この達成方法は <code><![CDATA[tabindex]]></code> 属性を設定することで要素をフォーカス可能にし、<code><![CDATA[onclick]]></code> ハンドラに加えて <code><![CDATA[onkeyup]]></code> 又は <code><![CDATA[onkeypress]]></code> ハンドラを提供することでキーボードから動作を実行することができるようにするものである。</p>
+      <p><code><![CDATA[tabindex]]></code> 属性の値が 0 の際、要素はキーボードでフォーカス可能であり、文書のタブ順序に含まれる。<code><![CDATA[tabindex]]></code> 属性の値が -1 の際、要素はタブ移動できないが、<code><![CDATA[element.focus()]]></code> を使用することによりフォーカスをプログラムで制御できる。</p>
+      <p>静的な HTML 要素にはそれらに関連した動作がないため、スクリプトが利用できない環境に対する、代替としての実装又は説明を提供することはできない。この達成方法はクライアントサイド スクリプティングが利用できる環境でのみ使用されるべきである。</p>
+      <note>
+         <p>そのようなユーザインターフェース コントロールは SC 4.1.2 を達成しなければならない。ユーザインターフェース コントロールの役割、名前及び状態についての情報がないままこの達成基準を適用する場合、失敗例 F59 に該当し、スクリプトを用いて、HTML の div 要素又は span 要素をユーザインタフェースのコントロールにしたことによる達成基準 4.1.2 の失敗例となる。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <head>div要素にJavaScriptによるアクションを追加する</head>
+         <description>
+            <p>ページにある <code><![CDATA[div]]></code> 要素には一意の <code><![CDATA[id]]></code> a属性及び値が 0 の <code><![CDATA[tabindex]]></code> 属性が付与されている。スクリプトはドキュメントオブジェクトモデル（DOM）を利用し、idによって <code><![CDATA[div]]></code> 要素を見つけ <code><![CDATA[onclick]]></code> ハンドラ及び <code><![CDATA[onkeyup]]></code> ハンドラを追加する。<code><![CDATA[onkeyup]]></code> ハンドラはエンターキーが押下された際、アクションを実行する。<code><![CDATA[div]]></code> 要素を見つけて変更するには、<code><![CDATA[div]]></code> 要素が DOM の中に読み込まれた状態でなければならないことに注意する。これは、通常、<code><![CDATA[body]]></code>要素の <code><![CDATA[onload]]></code> イベントでスクリプトを呼び出すことで達成される。イベントハンドラを追加するスクリプトはユーザエージェントがJavaScriptをサポートし、かつ有効にしている場合にのみ実行される。</p>
+         </description>
+         <code><![CDATA[
+...
+<script type="text/javascript">
+ // これはアクションを実行する関数である。このシンプルな例はメッセージを開閉する。
+ function doSomething(event) {
+   var msg=document.getElementById("message");
+   msg.style.display = msg.style.display=="none" ? "" : "none";
+   // リンクのhref属性が実行されないよう、関数からfalseを返す
+   return false;
+ }
+ // これはエンターキーが押された際にアクションが実行される関数である。
+ function doSomethingOnEnter(event) {
+   var key = 0;
+   // window.event 又はイベントオブジェクトが使用されているかに応じて押されたキーを判定する。
+   if (window.event) {
+     key = window.event.keyCode;
+   } else if (event) {
+     key = event.keyCode;
+   }
+   // エンターキーが押されたか？
+   if (key == 13) {
+     return doSomething(event);
+   } 
+   // イベントが処理されなかったため、trueを返す
+   return true;
+ }
+ // このsetUpActions()関数は存在するdiv要素にonclick及びonkeyupイベントハンドラを設定するために呼び出されなければならない。
+ // この関数はid="active"の付与されたdiv要素がDOMに読み込まれた後に呼び出されなければならない。
+ // この例では、setUpActions()関数はbody要素のonloadイベントから呼び出されている。
+ function setUpActions() {
+   // divオブジェクトを取得する
+   var active=document.getElementById("active");
+   // onclickハンドラをオブジェクトに割り当てる
+   // 関数が返された後、href属性を止めるため、onclickハンドラからfalseを返すことが重要である
+   active.onclick=doSomething;
+   // onkeyupハンドラをオブジェクトに割り当てる
+   active.onkeyup=doSomethingOnEnter;
+ }
+ </script>
+
+ <body onload="setUpActions();">
+ <p>javascriptの動作を用いて変更をもたらすリンク:</p>
+ <div>
+  <span id="active" tabindex="0">何かをする</span>
+ </div>
+ <div id="message">こんにちは世界</div>
+...
+]]></code>
+         <description>
+            <p>このコードの実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR29/action-on-div.html">
+                    <!--linktype="examples"-->JavaScriptによる制御を用いてdiv要素を作成する</loc>。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-html40/interact/scripts.html">Scripts</loc>
+               </p>
+            </item>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.11">Giving focus to an element</loc>
+               </p>
+            </item>
+            <item>
+               <p>Accessible Rich Internet Applications (WAI-ARIA) Version 1.0 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/states_and_properties#global_states">Global States and Properties</loc>
+               </p>
+            </item>
+            <item>
+               <p>WAI-ARIA Primer, <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-primer/#focus">Provision of the keyboard or input focus</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/DOM/DOMTR">Document Object Model (DOM) Technical Reports</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://msdn.microsoft.com/en-us/library/ms534654(VS.85).aspx">Internet Explorer, HTML and DHTML Reference, tabIndex Property</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="SCR20"/>
+      <relatedtech idref="SCR24"/>
+      <relatedtech idref="SCR35"/>
+      <relatedtech idref="F59"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>スクリプトをサポートするユーザエージェントで:</p>
+         <olist>
+            <item>
+               <p>マウスを用い、コントロールをクリックする。</p>
+            </item>
+            <item>
+               <p>スクリプトのアクションが正しく実行される。</p>
+            </item>
+            <item>
+               <p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p>
+            </item>
+            <item>
+               <p>キーボードのフォーカスをコントロールにセットする。</p>
+            </item>
+            <item>
+               <p>Enterキーを押すことで、スクリプトのアクションを呼び出すことができる。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>チェックポイント全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div1
+  SYSTEM "../xmlspec.dtd">
+<div1 xmlns:xi="http://www.w3.org/2001/XInclude" role="extsrc" id="navigation-mechanisms">
+   <head>2.4</head>
+   <div2 id="navigation-mechanisms-intent" role="glintent">
+      <head/>
+
+<p>このガイドラインの意図は、利用者が必要とするコンテンツを見つけるのを手助けして、自分の現在位置を確認し続けられるようにすることである。こういったタスクは、障害のある人にとってはより困難であることがしばしばである。発見、ナビゲーション及び位置確認において、利用者が現在位置を知ることが重要である。ナビゲーションにおいては、考えられうる行き先に関する情報を入手可能にする必要がある。スクリーンリーダーは、コンテンツを合成音声に変換するが、それは音声なので、合成音声は線形順序で提示されなければならない。このガイドラインにある達成基準では、スクリーンリーダーの利用者がコンテンツを正常にナビゲートできるようにするために、どの条項に対応する必要があるのかを説明しているものがある。また、利用者がより容易にナビゲーションバー及びページの見出しを認識できるようにして、この繰り返されているコンテンツを通過できるようにする。一般的ではないユーザインタフェースの機能又はふるまいは、認知の障害のある利用者を困惑させてしまうことがある。</p>
+
+<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.motive.co.nz/glossary/navigation.php">Motive Web Design Glossary</loc> で説明されているように、ナビゲーションには、主に 2 つの機能がある:</p>
+<ulist>
+	<item><p>利用者に自分がどこにいるのかを知らせる</p></item>
+	<item><p>利用者が他のどこかへ行けるようにする</p></item>
+</ulist>
+<p>このガイドラインは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="content-structure-separation" linktype="guideline">ガイドライン 1.3</loc> と密接に連動しており、コンテンツのあらゆる構造を理解することを保証し、同様にナビゲーションの鍵となる。見出しは、利用者がコンテンツ内での自分の現在位置を確認して、ナビゲートしていく上で、特に重要なメカニズムである。支援技術の利用者の多くは、情報を流し読みするために適切な見出しを頼りにし、コンテンツの様々なセクションを容易に見つける。見出しに関して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="content-structure-separation-programmatic" linktype="guideline">達成基準 1.3.1</loc> に適合することは、同時にガイドライン 2.4 にも部分的に対処していることになる。</p>
+</div2>
+
+<div2 id="navigation-mechanisms-advisory" role="gladvisory">
+<head/>
+<ulist>
+	<item><p>1 ページあたりのリンクの数を限定する (リンク追加予定)</p></item>
+	<item><p>ウェブページのコンテンツの異なるセクションにナビゲートするメカニズムを提供する (リンク追加予定)</p></item>
+	<item><p>視覚的に異なるリンクを用いる (リンク追加予定)</p></item>
+	<item><p>検索ワードをハイライト表示する (リンク追加予定)</p></item>
+</ulist>
+</div2>
+   <xi:include href="navigation-mechanisms-skip.xml"/>
+   <xi:include href="navigation-mechanisms-title.xml"/>
+   <xi:include href="navigation-mechanisms-focus-order.xml"/>
+   <xi:include href="navigation-mechanisms-refs.xml"/>
+   <xi:include href="navigation-mechanisms-mult-loc.xml"/>
+   <xi:include href="navigation-mechanisms-descriptive.xml"/>
+   <xi:include href="navigation-mechanisms-focus-visible.xml"/>
+   <xi:include href="navigation-mechanisms-location.xml"/>
+   <xi:include href="navigation-mechanisms-link.xml"/>
+   <xi:include href="navigation-mechanisms-headings.xml"/>
+</div1>

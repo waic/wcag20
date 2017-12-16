@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH25">
+   <short-name>アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、Flash で提供されるフォーム・コンポーネントに組み込むアクセシブルな名前を設定することである。ラジオボタン、チェックボックス、ボタンなど、コンポーネントによっては自身に固有な <prop>label</prop> プロパティが既に与えられているが、その他のコンポーネントについては、コンテンツ制作者がコンポーネントのアクセシブルな名前となるラベルテキストを指定する必要がある。そのためには、アクセシビリティパネルを使用するか（オーサリング中にステージ上にコンポーネントを配置する場合）、スクリプトを使用する（実行時に動的にコンポーネントを生成する場合）。</p>
+      <!-- exsubhead? -->
+      <p>ActionScript 2</p>
+      <p>ActionScript 2 では、コンポーネントの <prop>_accProps</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティはオブジェクトでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者がカスタムオブジェクトを作成して <prop>_accProps</prop> プロパティに割り当てる必要がある。場合によっては、1 つのオブジェクトに対し、アクセシブルな名前を指定する <prop>_accProps.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>_accProps</prop> プロパティを変更した場合、コンテンツ制作者は、<function>Accessibility.UpdateProperties()</function> を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>System.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
+      <p>ActionScript 2 には、以下のアクセシブルなコンポーネントが用意されている。</p>
+      <ulist>
+         <item>
+            <p>SimpleButton</p>
+         </item>
+         <item>
+            <p>CheckBox</p>
+         </item>
+         <item>
+            <p>RadioButton</p>
+         </item>
+         <item>
+            <p>Label</p>
+         </item>
+         <item>
+            <p>TextInput</p>
+         </item>
+         <item>
+            <p>TextArea</p>
+         </item>
+         <item>
+            <p>ComboBox</p>
+         </item>
+         <item>
+            <p>ListBox</p>
+         </item>
+         <item>
+            <p>Window</p>
+         </item>
+         <item>
+            <p>Alert</p>
+         </item>
+         <item>
+            <p>DataGrid</p>
+         </item>
+      </ulist>
+      <!-- exsubhead? -->
+      <p>ActionScript 3</p>
+      <p>ActionScript 3 では、コンポーネントの <prop>accessibilityProperties</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティは <obj>flash.accessibility.AccessibilityProperties</obj> のインスタンスでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者が新しい <obj>AccessibilityProperties</obj> インスタンスを作成して <prop>accessibilityProperties</prop> プロパティに割り当てる必要がある。場合によっては、1 つのオブジェクトに対し、アクセシブルな名前を指定する <prop>accessibilityProperties.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>accessibilityProperties</prop> プロパティを変更した場合、コンテンツ制作者は、<function>flash.accessibility.Accessibility.UpdateProperties()</function>を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>flash.system.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
+      <p>ActionScript 3 には、以下のアクセシブルなコンポーネントが用意されている。</p>
+      <ulist>
+         <item>
+            <p>Button</p>
+         </item>
+         <item>
+            <p>CheckBox</p>
+         </item>
+         <item>
+            <p>ComboBox</p>
+         </item>
+         <item>
+            <p>List</p>
+         </item>
+         <item>
+            <p>RadioButton</p>
+         </item>
+         <item>
+            <p>TileList</p>
+         </item>
+      </ulist>
+   </description>
+   <examples>
+      <eg-group>
+         <head>アクセシビリティパネルを使用してコンポーネントのアクセシブルな名前を設定する</head>
+         <description>
+            <p>コンポーネントコントロールを追加してラベルを付ける手順は次の通りである。</p>
+            <olist>
+               <item>
+                  <p>コンポーネントパネルからコンポーネントをステージへドラッグするか、スクリプトを使用して新しいインスタンスを作成する。</p>
+               </item>
+               <item>
+                  <p>新しく作成したコンポーネントインスタンスを選択した状態で、対応するラベルテキストをアクセシビリティパネルの「名前」フィールドに入力する。</p>
+               </item>
+            </olist>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 2.0 を使用してアクセシブルな名前を設定する</head>
+         <description>
+            <p>次のコード例は、ListBox コンポーネントを作成してアクセシブルな名前を割り当てる方法を示している。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[mx.accessibility.ListAccImpl.enableAccessibility();
+
+this.createClassObject(mx.controls.List, "my_list", 1);
+my_list.addItem({label: "R. Davis", data: 1});
+my_list.addItem({label: "V. Mann", data: 2});
+my_list.addItem({label: "L. Heart", data: 3});
+my_list.addItem({label: "P. Hill", data: dt4});
+my_list.addItem({label: "D. Gribble", data: 5});
+my_list.move(10, 10);
+
+if (System.capabilities.hasAccessibility) {
+  my_list._accProps = new Object();
+  my_list._accProps.name = "Staff Members";
+  Accessibility.updateProperties();
+}]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH25/accessible_name_for_form_components_as2.html"><!--
+                    linktype="examples"-->ActionScript 2.0 を使用してアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH25/accessible_name_for_form_components_as2.fla"><!--
+                    linktype="examples"-->ActionScript 2.0 を使用してアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ActionScript 3.0 を使用してアクセシブルな名前を設定する</head>
+         <description>
+            <p>次のコード例は、ListBox コンポーネントを作成してアクセシブルな名前を割り当てる方法を示している。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[import fl.controls.List;
+import fl.accessibility.ListAccImpl;
+import flash.system.Capabilities;
+import flash.accessibility.*;
+
+ListAccImpl.enableAccessibility();
+var my_list:List = new List();
+my_list.addItem({label:"R. Davis", data:1});
+my_list.addItem({label:"V. Mann", data:2});
+my_list.addItem({label:"L. Heart", data:3});
+my_list.addItem({label:"P. Hill", data:4});
+my_list.addItem({label:"D. Gribble", data:5});
+my_list.x = my_list.y = 10;
+
+if (Capabilities.hasAccessibility) {
+  var accProps:AccessibilityProperties = new AccessibilityProperties();
+  accProps.name = "Staff Members";
+  my_list.accessibilityProperties = accProps;
+  Accessibility.updateProperties();
+}
+addChild(my_list);]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH25/accessible_name_for_form_components_as3.html"><!--
+                    linktype="examples"-->ActionScript 3.0 を使用してアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH25/accessible_name_for_form_components_as3.fla"><!--
+                    linktype="examples"-->ActionScript 3.0 を使用してアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G94"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>フォームコンポーネントを含む Flash ムービーについて、以下のいずれかを満たしているか確認する。</p>
+         <olist>
+            <item>
+               <p>選択されているコンポーネントのラベルテキストがアクセシビリティパネルの「名前」フィールドで指定されている。</p>
+            </item>
+            <item>
+               <p>（ActionScript 2.0 の場合）スクリプトを使用してコンポーネントの <prop>_accProps.name</prop> プロパティが動的に設定されている。</p>
+            </item>
+            <item>
+               <p>（ActionScript 3.0 の場合）スクリプトを使用してコンポーネントの <prop>accessibilityProperties.name</prop> プロパティが動的に設定されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <p>上記のどれか一つを満たしている。</p>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Labeling_a_form_control_by_setting_its_accessible_name"/>
+					</source>
+   </admin>
+</technique>
+

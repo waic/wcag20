@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH36">
+   <short-name>点滅を制御し、5 秒以内に点滅を停止させるために、スクリプトを使用する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="time-limits-pause" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、スクリプトを使用して点滅を制御し、点滅を 5 秒以内に停止させることである。ActionScript の <function>setTimeout()</function> メソッドを使用して、ムービークリップの点滅動作を 5 秒以内に停止させる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>タイムアウト後に点滅を停止させる</head>
+         <description>
+            <p>この事例では、ムービークリップ（blinkingTextMC）でタイムラインを使用して点滅効果を生成している。5 秒経過する前にムービークリップの <function>gotoAndStop()</function> メソッドが呼び出され、このメソッドにより点滅が停止する。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[setTimeout(stopBlinking, 4500);
+function stopBlinking() {
+  var blinkingTextMC = getChildByName('blinkingTextMC');
+  blinkingTextMC.gotoAndStop(1);
+}
+]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.html"><!--
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのサンプル（英語）</loc>で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.fla"><!--
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <tests>
+      <procedure>
+         <p>点滅するコンテンツのインスタンスすべてについて、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>点滅が開始したら 5 秒経過するまで待つ。</p>
+            </item>
+            <item>
+               <p>5 秒経過した時点で、点滅が停止する。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>点滅するコンテンツのインスタンスすべてについて、2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_scripts_to_control_blinking_and_stop_it_in_five_seconds_or_less"/>
+					</source>
+   </admin>
+</technique>
+

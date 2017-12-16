@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H28">
+   <short-name>abbr要素を用いて、略語の定義を提供する</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-located" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+      <ulist>
+        <item>
+          <p>支援技術によって、<att>title</att>属性の音声読み上げのサポートレベルが異なる。支援技術の一部は、title属性を通じて提供される情報に利用者がアクセスする機能を実装していない。</p>
+        </item>
+        <item>
+          <p>この達成方法に<att>title</att>属性を組み合わせて実装する場合は、<att>title</att> 属性がアクセシビリティ サポーテッドでなければらない。 <att>title</att>属性がアクセシビリティ サポーテッドとなるためには、全てのキーボード利用者が（音声読み上げソフトウェアを利用しているかどうかに関わらず）<att>title</att>属性の内容を利用できなければならない。</p>
+        </item>
+        <item>
+          <p>JAWS 6.2以降とWindow-Eyes 5.0以降は、<el>abbr</el>要素と<el>acronym</el>要素をサポートしている。これらの要素が現れるたびに、title属性を読み上げるように設定できるが、初期設定ではオフであり、利用者が設定をオンにすることも稀である。</p>
+        </item>
+        <item>
+          <p>グラフィカルユーザエージェントの多くは、<el>abbr</el>要素や<el>acronym</el>要素でマーク付けしたテキストに、点線で下線を引いたり点線で囲んで描画する。加えて、要素にマウスオーバーしたときは、元の語句をツールチップで表示する。</p>
+        </item>
+        <item>
+          <p>Internet Explorer 7以前では、<el>abbr</el>要素でマーク付けした内容には、どのようなスタイルも追加されない。Internet Explorer 6以前では、その項目にマウスオーバーしても、元の語句はツールチップとして表示されない。</p>
+        </item>
+        <item>
+          <p>特定のユーザエージェントや支援技術では、<el>abbr</el>要素と<el>acronym</el>要素が利用者に対して同じ方法で表現される。</p>
+        </item>
+      </ulist>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、<el>abbr</el> 要素を用いることで、略語に対して元の語又は定義を提供することである</p>
+    <p><el>abbr</el> 要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML4 及び XHTML では、頭文字語や頭字語は <el>acronym</el> 要素を用いてマークアップすることもできる。abbr要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML5 以降では、より一般的な <el>abbr</el> 要素の利用が提案され、<el>acronym</el> 要素は廃止されている。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head><el>abbr</el> 要素を用いて略語の元の語を示す</head>
+      <code role="html401"><![CDATA[<p>普通、砂糖は 5 <abbr title="pound">lb.<abbr> の袋入りで売られている。</p>
+<p><abbr title="World Wide Web">WWW</abbr> へようこそ！</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head><el>abbr</el> 要素を用いて略語の定義を示す</head>
+      <code role="html401"><![CDATA[<p>タシニ <abbr title="及びその他">et al.</abbr> <abbr title="対">v.</abbr>
+ニューヨークタイムズ紙 <abbr title="及びその他">et al.</abbr> は、全米著述業組合
+による象徴的な訴訟事件であり……</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head><el>abbr</el> 要素を用いて頭字語の元の語を示す</head>
+      <code role="html401"><![CDATA[<p><abbr title="Keep It Simple Stupid">KISS</abbr>の使用が…の間で広まってきた。</p> ]]></code>
+    </eg-group>
+    <eg-group>
+      <head><el>abbr</el> 要素を用いて頭文字語の元の語を示す</head>
+      <code role="html401"><![CDATA[<p><abbr title="World Wide Web">WWW</abbr></p> ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html401/struct/text.html#edef-ABBR">HTML 4.01 ABBR element</loc>
+								       </p>
+            </item>
+            <item>
+               <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-abbr-element">HTML5 abbr element</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                  	href="https://www.paciellogroup.com/blog/2010/11/using-the-html-title-attribute/">HTML title attribute</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G102"/>
+   </related-techniques>
+   <tests>
+     <procedure>
+      <olist>
+        <item>
+          <p>略語それぞれに、<el>abbr</el> 要素で元の語や定義を指定している。</p>
+        </item>
+      </olist>
+     </procedure>
+      <expected-results>
+         <ulist>
+        <item>
+          <p>1.を満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

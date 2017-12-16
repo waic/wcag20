@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA4">
+   <short-name>ユーザインターフェース コンポーネントの役割（role）を明らかにするために、WAI-ARIA ロールを使用する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#role_definitions">WAI-ARIA Definition of Roles</loc>で定義されたいずれかの非抽象の値を持つ<att>role</att>属性を用いて要素のロールを定義することである。WAI-ARIA仕様は、各ロールについて、他のロールとどのように関係するか、どのようなステート及びプロパティがあるかといった、参考となる説明を提供している。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ロールを公開することで、利用者がウィジェット及びウィジェットと対話する方法を理解できるようになる。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>単純なツールバー</head>
+         <description>
+            <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、3つのボタンを含むツールバーのデモがある。<el>div</el>要素は"toolbar"のロールを持ち、<el>img</el>要素は"button"のロールを持つ:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+    <div role="toolbar"
+      tabindex="0" 
+      id="customToolbar" 
+      onkeydown="return optionKeyEvent(event);"
+      onkeypress="return optionKeyEvent(event);"
+      onclick="return optionClickEvent(event);"
+      onblur="hideFocus()"
+      onfocus="showFocus()"
+      > 
+      <img src="img/btn1.gif" 
+           role="button" 
+           tabindex="-1" 
+           alt="Home" 
+           id="b1" 
+           title="Home">
+      <img src="img/btn2.gif" 
+           role="button" 
+           tabindex="-1" 
+           alt="Refresh" 
+           id="b2" 
+           title="Refresh">
+     <img src="img/btn3.gif" 
+           role="button" 
+           tabindex="-1" 
+           alt="Help" 
+           id="b3" 
+           title="Help"> 
+ </div>  
+                        ]]></codeblock>
+            <p>Authoring Practicesのツールバーパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/#toolbar">ツールバーの実装例</loc>を提供している。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>ツリーウィジェット</head>
+         <description>
+            <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、ツリーウィジェットのデモがある。ツリーとその構造を識別するためのロール"tree"、"treeitem"、"group"に注意。コードを単純化して抜粋したものは以下のとおり:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<ul role="tree" tabindex="0">
+  <li role="treeitem">Birds</li>
+  <li role="treeitem">Cats
+    <ul role="group">
+      <li role="treeitem">Siamese</li>
+      <li role="treeitem">Tabby</li>
+    </ul>
+  </li>
+  <li role="treeitem">Dogs
+    <ul role="group">
+      <li role="treeitem">Small Breeds
+        <ul role="group">
+          <li role="treeitem">Chihuahua</li>
+          <li role="treeitem">Italian Greyhound</li>
+          <li role="treeitem">Japanese Chin</li>
+        </ul>
+      </li>
+      <li role="treeitem">Medium Breeds
+        <ul role="group">
+          <li role="treeitem">Beagle</li>
+          <li role="treeitem">Cocker Spaniel</li>
+          <li role="treeitem">Pit Bull</li>
+        </ul>
+      </li>
+      <li role="treeitem">Large Breeds
+        <ul role="group">
+          <li role="treeitem">Afghan</li>
+          <li role="treeitem">Great Dane</li>
+          <li role="treeitem">Mastiff</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+]]></codeblock>
+            <p>Authoring Practicesのツリービューパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView">ツリーの実装例</loc>を提供している。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/usage#usage_intro">Accessible Rich Internet Applications (WAI-ARIA) 1.0, Roles</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria/roles">Accessible Rich Internet Applications (WAI-ARIA) 1.0, The Roles Model</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/html-aam-1.0/">HTML Accessibility API Mappings 1.0</loc>
+               </p>
+            </item>
+         	<item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA 1.1 Authoring Practices</loc> 
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/aria-in-html/">Notes on using ARIA in HTML</loc> 
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <p>role属性を使用するユーザインタフェースコンポーネントの場合:</p>
+         <olist>
+            <item>
+               <p>role属性の値が、WAI-ARIA仕様で定義された値に由来する非抽象ロールのいずれかである。</p>
+            </item>
+            <item>
+               <p>ユーザインタフェースコンポーネントの特性がロールで記述されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 及び 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

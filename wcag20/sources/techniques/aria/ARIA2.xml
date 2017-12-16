@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="ARIA2">
+   <short-name>aria-requiredプロパティによって必須項目を特定する</short-name>
+   <applicability>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+   	<success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue name="" version="">
+         <p>See <specref ref="wai-aria_ua_support"/> for general information on user agent support.</p>
+      </ua-issue>
+   </ua-issues>
+   <description>
+      <p>この達成方法の目的は、（プレゼンテーションを通して必須であることが示されている）フォームフィールドが、フォームの正常送信のために必須であることを、プログラムによって解釈できる指標として提供することである。</p>
+      <p>要素が必須であるという事実は多くの場合、（テキスト又は非テキストのシンボル、又は入力が必須であることを示すテキスト、又は色/スタイルを介して）視覚的に提示されるが、これは、フィールド名の一部としてプログラムによって解釈することができない。</p>
+      <p>WAI-ARIA <prop>aria-required</prop>プロパティは、送信前に利用者の入力が必須であることを示す。<prop>aria-required</prop>プロパティは、<attval>true</attval>又は<attval>false</attval>の値を持つことができる。たとえば、利用者が住所のフィールドに入力しなければならない場合、<att>aria-required</att>は<attval>true</attval>に設定される。</p>
+      <note>
+         <p><code><![CDATA[aria-required="true"]]></code>の使用は、アスタリスクや他のテキストシンボルがプログラム的にフィールドに関連付けられている場合であっても、一部の支援技術の利用者に対して<prop>required</prop>プロパティによって補強できるので、有益であるかもしれない。</p>
+         <p>多くの場合、要素が必須であるという事実は、（コントロールの後の符号や記号のように）視覚的に提示される。視覚的なプレゼンテーションに加えて<prop>aria-required</prop>プロパティを使用することは、ユーザエージェントが、この重要な情報をユーザエージェント固有の方法で利用者に伝えることを、はるかに簡単にする。XHTMLやHTMLとともにWAI-ARIAステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting   ARIA in XHTML and HTML 4.01</loc>を参照のこと。なお、WAI-ARIAステート及びプロパティは他の言語とも互換性がある。詳しくはその言語における文書の活用を参照のこと。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <head/>
+         <description>
+            <p><prop>required</prop>プロパティがlabel要素の後に置かれるアスタリスクによって示されている:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
+  <p>Note: [*]denotes mandatory field</p>
+  <p>
+    <label for="usrname">Login name: </label>
+    <input type="text" name="usrname" id="usrname" aria-required="true"/>[*]
+  </p>
+  <p>
+    <label for="pwd">Password</label>
+    <input type="password" name="pwd" id="pwd" size="12" aria-required="true" />[*]
+  </p>
+  <p>
+    <input type="submit" value="Login" id="next_btn" name="next_btn"/>
+  </p>
+
+</form>		]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head/>
+         <description>
+            <p><prop>required</prop>プロパティがlabel要素の後に置かれる単語"required"によって示されている:</p>
+            <codeblock xml:space="preserve"><![CDATA[<head>
+<form action="#" method="post" id="step1" onsubmit="return errorCheck2()">
+  <p>
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="mname">Middle name: </label>
+    <input type="text" id="mname" />
+  </p>
+  <p>
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="email">Email address: </label>
+    <input type="text" id="email" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <label for="zip_post">Zip / Postal code: </label>
+    <input type="text" id="zip_post" size="6" aria-required="true" />
+    [required]
+  </p>
+  <p>
+    <input type="submit" value="Next Step" id="step_btn" name="step_btn" />
+  </p>
+</form> ]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head/>
+         <description>
+            <p>
+            必須フィールドは、フィールドの周りの赤いボーダーと<code role="css"><![CDATA[content:before]]></code>を使用するCSSによってレンダリングされる星のアイコンで示される。この例はまた、<code><![CDATA[role=radio]]></code>をもつカスタムラジオボタンを使用するが、spanを実際にラジオボタンのように動作させるためのスクリプトは、この例に含まれていない。CSSプロパティはフォームの下にある。</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<form action="#" method="post" id="alerts1">
+  <label for="acctnum" data-required="true">Account Number</label>
+  <input size="12" type="text" id="acctnum"
+      aria-required="true" name="acctnum" />
+
+ <p id="radio_label" data-required="true">Please send an alert when balance exceeds $3,000.</p>
+
+ <ul  id="rg" role="radiogroup" aria-required="true" aria-labelledby="radio_label">
+    <li id="rb1" role="radio">Yes</li>
+    <li id="rb2" role="radio">No</li>
+ </ul>
+</form>
+ ]]></codeblock>
+<p>この例に対する関連するCSSスタイル定義:</p>
+            <codeblock xml:space="preserve"><![CDATA[
+[aria-required=true] {
+  border: red thin solid;
+}
+[data-required=true]:after {
+  content: url('/iconStar.gif');
+}
+ ]]></codeblock>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>XHTMLにおける必須のテキスト入力フィールド</head>
+         <description>
+            <p>次の例は、フォームフィールドが送信されなければならないことを示すために<prop>aria-required</prop>プロパティを使用するXHTML文書を示す。フィールドの必須の性質は、WAI-ARIAをサポートしないユーザエージェントのための予備として、ラベルでも表示される。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1
+    For Accessible Adaptable Applications//EN"
+  "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+          xml:lang="en">
+  <head>
+    <title>Required Input</title>
+  </head>
+  <body>
+    <h1>Required Input</h1>
+    <p>The following form input field must be completed by the user
+    before the form can be submitted.</p>
+    <form action="http://example.com/submit">
+      <p>
+        <label for="test">Test (required)</label>
+        <input name="ariaexample" id="example" aria-required="true" aria-label="Test"/>
+      </p>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </body>
+</html>
+		]]></code>
+      </eg-group>
+      <eg-group>
+         <head>スクリプト経由で<prop>aria-required</prop>プロパティを追加する</head>
+         <description>
+            <p>この例は、フォーム要素に<prop>aria-required</prop>プロパティを追加するためにスクリプトを使用する。必須プロパティは、<function>setAttribute()</function> APIを使用して割り当てられる。</p>
+            <p>配列変数<var>requiredIds</var>は、必須としてマークされる必要がある要素のIDとともに作成される。<function>setRequired()</function>関数は、<obj>window</obj>オブジェクトの<event>onload</event>イベントから呼び出される。</p>
+            <p><function>setRequired()</function>関数は、提供されたIDのすべてをループし、要素を取得し、setAttribute()関数を使用して<prop>aria-required</prop>プロパティをtrueにする。</p>
+            <p>このページがFirefox 3.0以降及びWAI-ARIAをサポートするスクリーンリーダーを使用してアクセスされる場合、入力フィールドのラベルを読む際にスクリーンリーダーは"required"と伝える。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[<head>
+ <script type="text/javascript">
+ //<![CDATA[
+
+ // array or ids on the required fields on this page
+ var requiredIds = new Array( "firstName", "lastName");
+
+ // function that is run after the page has loaded to set the aria-required property on each of the
+ //elements in requiredIds array of id values
+ function setRequired(){
+ 	if (requiredIds){
+ 		var field;
+ 		for (var i = 0; i< requiredIds.length; i++){
+ 			field = document.getElementById(requiredIds[i]);
+ 			field.setAttribute("aria-required", "true");
+ 		}
+ 	}
+ }
+ window.onload=setRequired;
+//]]]]><![CDATA[>
+ </script>
+ </head>
+ <body>
+ <p>Please enter the following data.  Required fields have been programmatically identified
+ as required and  marked with an asterisk (*) following the field label.</p>
+ <form action="submit.php">
+ <p>
+ <label for="firstName">First Name *: </label><input type="text" name="firstName"
+    id="firstName" value="" />
+ <label for="lastName">Last Name *: </label><input type="text" name="lastName"
+    id="lastName"  value="" />
+ </p>
+ </form>
+ </body>
+]]></code>
+      </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+									         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/WAI/intro/aria">WAI-ARIA   Overview</loc>
+								       </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.deque.com/blog/aria-requiredtrue-wcag-2-compliance-practice/">Aria-required=true: WCAG 2 Compliance versus Best Practice</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <!--
+				<related-techniques>
+					<relatedtech idref="ARIA3"/>
+				</related-techniques>
+				-->
+   <tests>
+      <procedure>
+         <p>必須であることがプレゼンテーションを経由して示される各コントロールに対して。</p>
+         <olist>
+			<item>
+				<p><att>aria-required</att>属性が存在するかどうかをチェックする:</p>
+			</item>
+            <item>
+               <p><att>aria-required</att>属性値が、そのユーザインタフェースコンポーネントに対する正しいrequiredステートであるかどうかをチェックする。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 及び 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

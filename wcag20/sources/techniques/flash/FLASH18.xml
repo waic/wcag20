@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH18">
+   <short-name>Flash で自動的に再生される音声をオフにするコントロールを提供する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-dis-audio" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、Flash ムービーの読み込み時に自動的に開始される音声を、利用者がオフにできるようにすることである。音声をオフにするコントロールは、利用者が素早く簡単に見つけられるようにページの先頭近くに置く必要がある。これは、スクリーンリーダー、画面拡大ソフト、スイッチメカニズムなどの支援技術を利用する利用者にも利用しない利用者（認知障害、学習障害、言語障害のある利用者）にも役立つ。</p>
+      <p>この実装方法では、自動的に再生される音声を利用者がオフにできるようにするコントロールをコンテンツ制作者が実装する。アクセシビリティを最大化するためには、 Flash ムービーではなく HTML 文書にコントロールを追加する。HTML コントロールは、ExternalInterface クラスを通じて Flash ムービーと通信する。つまり、利用者は Flash コンテンツを操作しなくても、音声の再生を制御できるということである。実際のコンテンツでこの方法が適していない場合は、Flash コンテンツの内部にコントロールを配置することができる。その場合、このコントロールはキーボードで操作できるようにし、またタブ順序と読み上げ順序の最初に配置し、再生中の音声をオフにできることを明確に示すラベルを付ける。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>Flash 内に音声を停止するボタンを提供する</head>
+         <description>
+            <p>この事例は、利用者が音声の再生を停止できるように Flash ムービーの内部にボタンを実装する方法を示している。ムービーがロードされると自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。</p>
+         </description>
+         <code xml:space="preserve"><![CDATA[package wcagSamples {
+  import flash.display.Sprite;
+  import flash.net.URLRequest;
+  import flash.media.Sound;
+  import flash.media.SoundChannel;
+  
+  import fl.controls.Button;
+  import fl.accessibility.ButtonAccImpl;
+  
+  import flash.events.MouseEvent;
+  public class SoundHandler extends Sprite {
+    private var snd: Sound = new Sound();
+    private var button: Button = new Button();
+    private var req: URLRequest = new URLRequest("http://av.adobe.com/podcast\
+      /csbu_dev_podcast_epi_2.mp3");
+    private var channel: SoundChannel = new SoundChannel();
+    
+    public function SoundHandler() {
+      ButtonAccImpl.enableAccessibility();
+      button.label = "Stop Sound";
+      button.x = 10;
+      button.y = 10;
+      button.addEventListener(MouseEvent.CLICK, clickHandler);
+      this.addChild(button);
+      snd.load(req);
+      channel = snd.play();
+    }
+    private function clickHandler(e: MouseEvent): void {
+      if (button.label == "Stop Sound") {
+        button.label = "Start Sound";
+        channel.stop();
+      } else {
+        channel = snd.play();
+        button.label = "Stop Sound";
+      }
+    }
+  }
+}]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.html"><!--
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.fla"><!--
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+      <eg-group>
+         <head>Flash オブジェクトの前に音声を停止するボタンを提供する</head>
+         <description>
+            <p>ムービーがロードされると自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。HTML のボタンは、Flash ムービーを含む HTML 文書に配置される。このボタンをクリックすると、Flash Player JavaScript API を通じて HTML ページと Flash ムービーの間でアクションが通知され、その結果として SoundHandler クラスの toggleSound メソッドが呼び出される。</p>
+            <exsubhead>事例 2 の ActionScript 3.0 のコード</exsubhead>
+         </description>
+         <code xml:space="preserve"><![CDATA[package wcagSamples {
+  import flash.display.Sprite;
+  import flash.external.ExternalInterface;
+  import flash.net.URLRequest;
+  import flash.media.Sound;
+  import flash.media.SoundChannel;
+  
+  import flash.events.MouseEvent;
+  public class SoundHandler extends Sprite {
+    private var snd: Sound = new Sound();
+    private var soundOn: Boolean = true;
+    private var req: URLRequest = new URLRequest("http://av.adobe.com/podcast/\
+      csbu_dev_podcast_epi_2.mp3");
+    private var channel: SoundChannel = new SoundChannel();
+    
+    public function SoundHandler() {
+      if (ExternalInterface.available)
+      ExternalInterface.addCallback("toggleSound", this.toggleSound);
+      snd.load(req);
+      channel = snd.play();
+    }
+    
+    private function toggleSound(enable: Boolean): void {
+      if (! enable) {
+        channel.stop();
+        soundOn = true;
+      } else {
+        channel = snd.play();
+        soundOn = true
+      }
+    }
+  }
+}]]></code>
+         <description>
+            <exsubhead>事例 2 の HTML コード</exsubhead>
+         </description>
+         <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>Flash Sound Toggle example</title>
+    <script src="swfobject.js" type="text/javascript"/>
+    <script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+    
+    swfobject.embedSWF("html_control_to_toggle_audio_as3.swf", 
+      "flashPlaceHolder", "0", "0", "8");
+    function init() {
+            var soundOn = true;
+            $("soundToggle").onclick = function(event){
+                soundOn = !soundOn;
+                $("flashPlaceHolder").toggleSound(soundOn);
+                event.target.value = soundOn ? "Stop Sound" : "Start Sound";
+            };
+    }
+    window.onload = init;
+</script>
+
+  </head>
+  <body id="header">
+    <h1>Flash Automatic Sound Demo</h1>
+    <p>This page contains a Flash movie that automatically starts
+      playing sound. Use the button below to stop or start the
+      sound</p>
+    <input id="soundToggle" type="button" value="Stop Sound"/>
+    <p id="flashPlaceHolder">Flash needs to be installed for this
+      example to work</p>
+  </body>
+</html>
+]]></code>
+         <description>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.html"><!--
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.zip"><!--
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G170"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>ロード後に自動的に音声の再生を開始する Flash ムービーについて:</p>
+         <olist>
+            <item>
+               <p>ドキュメントのタブ順序の先頭にアクセシブルな HTML コントロールが配置されている。</p>
+            </item>
+            <item>
+               <p>HTML ベースのコントロールがない場合は、Flash ムービーのタブ順序の先頭にアクセシブルなコントロールが配置されている。</p>
+            </item>
+            <item>
+               <p>HTML コントロールまたは Flash ベースのコントロールを操作する。</p>
+            </item>
+            <item>
+               <p>音声の再生が停止される。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. 又は 2. を満たしていて、かつ 4. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Providing_a_control_to_turn_off_sounds_that_play_automatically_in_Flash"/>
+					</source>
+   </admin>
+</technique>

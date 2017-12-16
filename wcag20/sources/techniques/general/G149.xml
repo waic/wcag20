@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G149">
+   <short-name>フォーカスを受け取った際に、ユーザエージェントによって強調されるユーザインタフェースコンポーネントを使用する</short-name>
+   <applicability>
+      <p>ユーザエージェントによって提供されるフォーカスのハイライトを用いる全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="navigation-mechanisms-focus-visible" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ユーザエージェントのサポートにより、利用者が、フォーカス可能なコンポーネントを視覚的に識別できるようにすることである。フォーカスを受け取った際に、何らかの方法で標準的なコンポーネントを強調することはユーザエージェントでは一般的である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WAI-USERAGENT/guidelines.html#tech-interaction-highlight">UAAGのチェックポイント　10.2「選択状態の強調、コンテンツのフォーカス、活性の要素、訪問済みリンク」（英語）</loc>を満たす場合、UAAGに適合したユーザエージェントでは標準的なコンポーネントは強調される。ユーザエージェントがサポートしている標準的なコントロールをウェブ制作者が使用すれば、利用者は、フォーカスの置かれている場所を標準的で予測可能な方法で知ることができる。</p>
+  </description>
+   <examples>
+      <ulist>
+         <item>
+            <p>HTML のテキスト入力フィールドがフォーカスを受け取ったとき、ブラウザーが、テキストフィールドの中の入力箇所に点滅する垂直なバーを表示する。</p>
+         </item>
+         <item>
+            <p>HTML のリンクがフォーカスを受け取ったとき、フォーカスを強調する長方形の点線で囲まれる。</p>
+         </item>
+      </ulist>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/UAAG10/guidelines.html#tech-interaction-highlight">User Agent Accessibility Guidelines 10.2: Highlight selection, content focus, enabled elements, visited links</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <tests>
+      <procedure>
+      <p>ウェブページ上のフォーカス可能な各コンポーネントに対して：</p>
+      <olist>
+        <item>
+          <p>そのコントロールにフォーカスを設定する。</p>
+        </item>
+        <item>
+          <p>何らかの方法でユーザエージェントがコントロールをハイライトしている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

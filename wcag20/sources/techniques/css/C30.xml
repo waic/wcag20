@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="C30">
+   <short-name>テキストを画像化された文字に置き換え、変換するユーザインタフェースコントロールを提供するために、CSS を使用する</short-name>
+   <applicability>
+      <p>CSS をサポートするすべてのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="visual-audio-contrast-text-presentation"
+                         relationship="sufficient"/>
+      <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が彼らの好みに従ってコンテンツを見ることができるような方法で構造化された HTML テキストを画像化されたテキストに置き換えるための CSS の用い方を実践することである。この達成方法を用いるには、コンテンツ制作者はページの構造をマークアップするためにセマンティックな要素を用いる HTML ページを作ることから始める。次にコンテンツ制作者はページに対して2またはそれ以上のスタイルシートを作成する。1 つめのスタイルシートは HTML テキストをテキストとして表現し、2 つめはいくつかの HTML テキストをテキストの画像に置き換えるために CSS の機能を用いている。最後に、server-side 又は client-side scripting の使用を通して、コンテンツ制作者は利用者が利用するビューを切り替えることができるコントロールを提供する。</p>
+    <p>この達成方法は、画像化されたテキストを含まない表現が利用可能であり、かつ、利用者が代替表現に切り替えることができるユーザインタフェースコントロールが関連する達成基準を満たす限り、達成基準 1.4.5 又は 1.4.9 を満たすために用いることができる。可能であれば、コンテンツ制作者はデフォルトの表現として画像化されたテキストを含まない表現を配信すべきである。更に、切り替えのためのコントロールはページの先頭近くに配置されるべきである。</p>
+    <p>「画像の置き換え」の達成方法は、さまざまなユーザエージェント、構成、及び支援技術の課題との互換性（詳細は「参照リソース」を参照）に取り組むために多様なものが開発されてきた。コンテンツ制作者がテキストの置き換えのために用いる数々のアプローチがある一方、その達成方法がスクリプト、CSS、画像（又はそれらの組み合わせ）をオフにした場合に正確に動作するかどうか、支援技術との互換性を考慮することは重要である。すべての場合において動作する単一の解決法を見出すことは難しいので、この達成方法は、利用者が画像置き換えの達成方法を含んでいない表現へ切り替えることのできるコントロールを用いることを推奨している。</p>
+    <note><p>この達成方法は、非適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを提示するために、スタイル切り替えの達成方法との組み合わせで用いることができる。更なる情報として <specref ref="C29"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
+               </note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>デザインスタジオのサイトは、利用者が彼らのウェブページの 2 種類の表現を見ることができるようにスタイルの切り替えを用いている。デフォルトのバージョンでは、見出しのテキストが画像化されたテキストで置き換えられている。ページ上のコントロールによって利用者はテキストで見出しを表現したバージョンへ切り替えることができる。</p>
+<p>CSS：</p>
+</description>
+      <code><![CDATA[...
+<div id="Header"> 
+  <h1><span>パッファーフィッシュデザインスタジオ</span></h1> 
+  <h2><span>驚くべき独自性とデザインソリューション</span></h2> 
+  </div> 
+...]]></code>
+      <description><p>画像化されたテキストを含んだ表現のための CSS を以下に記す。見出し要素のコンテンツを画面の外に配置して非表示にするためにポジショニングを使用することで、テキストはスクリーンリーダー利用者が利用可能な状態に保持されていることに注意。</p>
+</description>
+      <code><![CDATA[...
+#Header h1 {
+	background-image: url(pufferfish-logo.png);
+	height: 195px;
+	width: 290px;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	position: absolute;
+	}
+#Header h1 span {
+	position: absolute;
+        left: -999em;
+	}
+#Header h2 {
+	background-image: url(beauty.png);
+	background-repeat: no-repeat;
+	height: 234px;
+	width: 33px;
+	margin-left: 8px;
+	position: absolute;
+	margin-top: 250px;
+	}
+#Header h2 span {
+	position: absolute;
+        left: -999em;
+	}]]></code>
+      <description><p>画像化されたテキストを含まないプレゼンテーションのための CSS。</p>
+</description>
+      <code><![CDATA[...
+#Header h1 {
+	font: normal 200%/100% Garamond, "Times New Roman", serif;
+	margin-bottom: 0;
+	color: #000099;
+	background: #ffffff;
+	}
+
+#Header h2 {
+	font: normal 160%/100% Garamond, "Times New Roman", serif;
+	margin-bottom: 0;
+	color: #336600;
+	background: #ffffff;
+	}]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist><!-- BBC: Broken link, commenting out item><p><loc href="http://www.kryogenix.org/code/browser/lir/">Another image replacement technique</loc></p></item-->
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://wellstyled.com/css-replace-text-by-image.html">Replacing Text By An Image</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://alistapart.com/article/fir">Facts and Opinion About Fahrner Image Replacement</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.digital-web.com/articles/in_defense_of_fahrner_image_replacement/">In Defense of Fahrner Image Replacement</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="https://en.wikipedia.org/wiki/Fahrner_Image_Replacement">Fahrner Image Replacement</loc>
+               </p>
+            </item>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/CSS2/colors.html#background-properties">CSS2: 14.2.1 Background properties: 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position', and 'background'</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="C29"/>
+      <relatedtech idref="F3"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ウェブページに利用者が代替表現を選択できるコントロールが含まれている。</p>
+        </item>
+        <item>
+          <p>コントロールがアクティブである時、結果ページは画像化されたテキストが用いられている箇所全てにおいてテキスト（プログラムで解釈可能なテキスト）を含んでいる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>上記の全てを満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

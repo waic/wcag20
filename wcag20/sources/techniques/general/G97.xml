@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G97">
+   <short-name>略語の初出時にその直前か直後に元の語を提供する</short-name>
+   <applicability>
+      <p>テキストを提供する全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="meaning-located" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ウェブページの中で略語が最初に現れたとき、元の語を略語に関連付けることで、略語の元の語を分かるようにすることである。ウェブページで最初の使用箇所を探すことで、すべての略語の元の語を見つけることができる。</p>
+    <p>英語では、単語、句または名前を、略語、頭文字語、頭字語、又は他の短縮表記によって短くするときは、省略された表記を提供する前に完全な表記を提供する。こうすることで、テキストが読みやすくなり、多くのスタイルガイドでも勧められている。その他の言語では異なる慣習があることもある。</p>
+    <p>略語の中には、元の語より説明を必要とするものがあることに注意する。そのような略語には、この達成方法は適切ではない。</p>
+    <p>この達成方法はウェブページで略語の初出時に適用される。複数の資料をひとつのウェブページに結合するとき、それぞれの資料の冒頭で略語の元の語が示される。しかしながら、この場合、元の語を提供するための異なる達成方法を使うことが、より適切であるかもしれない。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>「国際連合難民高等弁務官事務所(UNHCR)は、1950年に難民の保護と支援を提供するために設立された。」</p>
+</description>
+      <description><p>WAI (Web Accessibility Initiative) があることは、W3Cのアクセシビリティへの取り組みの証のようなものである。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                	<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.chicagomanualofstyle.org/qanda/data/faq/topics/Abbreviations.html?old=Abbreviations_questions01.html">Chicago Manual of Style - Q&amp;A - Abbreviations</loc>
+                </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G55"/>
+      <relatedtech idref="G102"/>
+      <relatedtech idref="H28"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <p>コンテンツにある略語それぞれに対して:</p>
+      <olist>
+        <item>
+          <p>その略語の最初の使用箇所を探す。</p>
+        </item>
+        <item>
+          <p>最初の使用箇所の直前又は直後に、略語の元の語がある。</p>
+        </item>
+        <item>
+          <p>その元の語が、略語の使用として正しい元の語である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. 及び 3. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH6">
+   <short-name>非表示のボタンを使用してアクセシブルなホットスポットを作成する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p>この実装方法の目的は、画像のクリック可能なホットスポットと同じ目的を果たす代替テキストを提供することである。ホットスポットというのは、アクション（例えば、ホットスポットに対応する Web ページを開くこと等）をトリガできる画像内のクリック可能な領域である。ホットスポットは、非表示の Flash ボタンとして実装し、それぞれにホットスポットのリンク先を説明するアクセシブルな名前を指定する。</p>
+   </description>
+   <examples>
+      <eg-group>
+         <head>アクセシブルなクリック可能領域を含むグラフィック</head>
+         <description>
+            <olist>
+               <item>
+                  <p>クリック可能なホットスポットを置く必要があるオリジナルのグラフィックをステージに追加する。</p>
+               </item>
+               <item>
+                  <p>各ホットスポットについて、次の作業を行う。</p>
+                  <olist>
+                     <item>
+                        <p>Flash Professional の［挿入］メニューから「新規シンボル」を選択するか Ctrl + F8 キーを押して、新しいボタンシンボルを作成する。</p>
+                     </item>
+                     <item>
+                        <p>ボタンシンボルの中に、クリック可能な領域に一致するシェイプを作成する。</p>
+                     </item>
+                     <item>
+                        <p>新しく作成したボタンを元のグラフィックの上に置く。</p>
+                     </item>
+                     <item>
+                        <p>ボタンのプロパティパネルを開き、「カラー効果」の下にある「スタイル」ドロップダウンリストから「アルファ」を選択する。表示される「アルファ」スライダの値を 0 に変更し、ボタンを非表示にする。</p>
+                     </item>
+                     <item>
+                        <p>アクセシビリティパネルを使用して「タブインデックス」フィールドの値を指定し、タブ順序内におけるボタンの論理的な位置を指定する。</p>
+                     </item>
+                     <item>
+                        <p>アクセシビリティパネルを使用して、ホットスポットの目的を説明するアクセシブルな名前を指定する。</p>
+                     </item>
+                  </olist>
+               </item>
+            </olist>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_graphic.png"
+                       height="181"
+                       width="274"/>
+                  <alt>画面スクリーンショット 1：Flashのオーサリングステージにグラフィックを追加</alt>
+               </image>
+							     </p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_invisible.png"
+                       height="297"
+                       width="429"/>
+                  <alt>画面スクリーンショット 2：プロパティパネルの「アルファ」スライダの値を 0 に変更して、ボタンを非表示に</alt>
+               </image>
+							     </p>
+            <p>
+								       <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_accessibleName.png"
+                       height="303"
+                       width="384"/>
+                  <alt>画面スクリーンショット 3：アクセシビリティパネルを用いて、ボタンの名前を設定</alt>
+               </image>
+							     </p>
+         </description>
+         <description>
+            <p>この結果は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/invisible_buttons_as_image_map_regions.html">
+                    <!--linktype="examples"-->非表示のボタンを使用してアクセシブルなホットスポットを作成するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/invisible_buttons_as_image_map_regions.fla">
+                    <!--linktype="examples"-->「非表示のボタンを使用してアクセシブルなホットスポットを作成する」のソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G91"/>
+      <!--relatedtech idref="@@">http://trace.wisc.edu/wcag_wiki/index.php?title=Supplementing_button_labels_with_additional_text</relatedtech-->
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>ホットスポットが含まれるすべての画像を見つけて、各ホットスポットについて次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>ホットスポットが非表示のボタンとして実装されている。</p>
+            </item>
+            <item>
+               <p>アクセシビリティパネルまたは ActionScript を使用してホットスポットにアクセシブルな名前が指定されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Creating_accessible_hotspots_using_invisible_buttons"/>
+					</source>
+   </admin>
+</technique>
+

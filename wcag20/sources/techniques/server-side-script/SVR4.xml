@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="SVR4">
+   <short-name>適合している代替版の表示に関する設定を利用者が行えるようにする</short-name>
+   <applicability>
+      <p>設定を保存するためにサーバサイドのスクリプトを用いて生成されたコンテンツ</p>
+   </applicability>
+   <applies-to>
+      <conformance-criterion idref="cc1" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、ウェブページの適合している代替版の設定を利用者が選択できるメカニズムを提供することである。</p>
+    <p>利用者が適合している代替版を見ることができるような設定を提供するにはいくつかの方法が可能である。一般的な方法としては、ウェブサーバがページを修正する、又は利用者を代替版にリダイレクトするのに使うセッション又は永続的なクッキーを設定するサーバサイドのプロセスのトリガーとなるリンクを提供する方法がある。他の方法には、利用者がウェブページ又はサービスにアクセスする際にサインインするシステムへのログイン情報の一部として利用者ごとの選択肢を提供する方法がある。</p>
+    <p>不適合なページで提供されるメカニズムは、代替版を必要とする利用者が、それを探して利用するためにアクセシブルである必要がある。そのメカニズム自体は宣言しているアクセシビリティレベルに適合しているべきである。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>利用者設定を保存するためにセッション又は永続的なクッキーを設定する</head>
+      <description><p>あるウェブサイトは、サイト内のページには「設定」ページへのリンクを提供している。このページには、サイトの代替版を見るためのオプションがある。好みによってページのさまざまな見方があるかもしれないし、利用者はサイトの完全な代替版を見たいかもしれない。その設定はサイト上で動画が含まれる部分ではキャプションを表示するものかもしれない。また、主となるサイトが、代替版からしかわからないアクセシビリティ適合についての問題を含んでいるために提供されているのかもしれない。</p>
+<p>あるウェブページの制作者はクッキーを使って設定を扱うことがある。それは、PHPのようなサーバサイドのスクリプトを用いて扱われるかもしれない。</p>
+<p>設定のページは例えば次のように提供される：</p>
+</description>
+      <code><![CDATA[
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+      <title>サイト設定</title>
+  </head>
+  <body>
+      <h1>サイト設定</h1>
+      <form id="form1" name="site_prefs" method="post" action="pref.php">
+          <fieldset>
+              <legend>どのバージョンのサイトを見たいですか？</legend>
+              <input type="radio" name="site_pref" id="site_pref_reg" value="reg" />
+              <label for="site_pref_reg">サイトの主バージョン</label>
+              <input type="radio" name="site_pref" id="site_pref_axx" value="axx" />
+              <label for="site_pref_axx">アクセシビリティ適合バージョン</label>
+          </fieldset> 
+      </form>
+  </body>
+  </html>]]></code>
+      <description><p>フォームは処理のためにpref.phpのファイルへと送信される。クッキーが設定され、この単純な例では、利用者のブラウザはサイトのトップページへと移動する。</p>
+<p>pref.php: </p>
+</description>
+      <code><![CDATA[
+<?php
+    if(isset($site_pref)) {
+        setcookie("site_pref",$site_pref, time() + (86400 * 30)); //30日に設定
+        header("location: http://www.example.com"); //トップページへとリダイレクト
+    }
+?>]]></code>
+      <description><p>トップページは利用者の設定を実装するコードから始まる。</p>
+<p>index.php: </p>
+</description>
+      <code><![CDATA[<?
+if(isset($site_pref)) {
+	if($site_pref="axx") {
+	header("location: ./accessible/index.php");
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+...]]></code>
+      <description><p>ログインを必要とするシステムでは、設定は利用者のデータベース記録に保存され、利用者が見るページを生成するサーバサイドのスクリプトによって参照される。</p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://php.net/setcookie">PHP: setcookie - Manual</loc>
+               </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G136"/>
+      <relatedtech idref="G190"/>
+      <relatedtech idref="SCR38"/>
+      <relatedtech idref="SVR2"/>
+      <relatedtech idref="SVR3"/>
+      <relatedtech idref="C29"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>そのサイトのページの表示方法についての設定を変更する。</p>
+        </item>
+        <item>
+          <p>設定そのもの、又は設定できるページへのリンクが不適合なページそれぞれから到達できる。 </p>
+        </item>
+        <item>
+          <p>ウェブページが選択した設定に応じて表示される。</p>
+        </item>
+        <item>
+          <p>設定が行われた際に、ウェブページが宣言通りに適合している。</p>
+        </item>
+        <item>
+          <p>結果となるページが元のページの適合している代替版となっている。</p>
+        </item>
+      </olist>
+    </procedure>
+    <expected-results>
+      <ulist>
+        <item>
+          <p>2.及び3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

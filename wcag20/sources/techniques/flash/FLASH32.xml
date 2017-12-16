@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="FLASH32">
+   <short-name>フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する</short-name>
+   <applicability>
+      <p use-id="flash.applicability.general"/>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <success-criterion idref="minimize-error-cues" relationship="sufficient"/>
+      <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
+   </applies-to>
+   <ua-issues>
+      <ua-issue use-id="flash.ua-issue.general"/>
+   </ua-issues>
+   <description>
+      <p><obj>CheckBox</obj> コンポーネントおよび <obj>RadioButton</obj> コンポーネント以外の Flash 標準コンポーネントでは、関連付けられたラベルが自動的に提供されることはない。これらのコンポーネントについては、<obj>Label</obj> コンポーネントを使用して、コントロールの隣にラベルテキストを手動で配置する必要がある。アクセシビリティパネルで「自動ラベル」機能を有効にしてある場合は、<obj>TextInput</obj> コンポーネントおよび <obj>TextArea</obj> コンポーネントについては Flash Player が自動的にラベルテキストを関連付ける。つまり、これらのコンポーネントでは、アクセシビリティパネルを使用してコントロールのラベルテキストを複製する必要はない。自動ラベル機能はデフォルトで有効になっている。</p>
+      <p>また、自動ラベル機能によって、Flash Player はボタンシンボルに含まれているテキストをシンボルのアクセシブルな名前として自動的に追加することが可能になる。これは、ボタンシンボルがテキストラベルを含む一つのレイヤーだけで構成されている場合のみ有効である。</p>
+      <note>
+         <p>自動ラベル機能は人間が操作することなくラベルを関連付けるため、関連付けの正確性を検証する必要がある。予測可能な結果を得るためには、すべてのコントロールに対して明示的にラベルを追加することが推奨される。</p>
+      </note>
+      <p>次の手順で自動ラベル機能を利用する。</p>
+      <olist>
+         <item>
+            <p>Flash アプリケーションに含まれる各フォーム・コントロールの近くに、説明テキストが配置されていることを確認する。自動ラベル機能で使用されるテキストは、支援技術からアクセス可能にする必要がある。</p>
+         </item>
+         <item>
+            <p>ムービーステージを選択し、アクセシビリティパネルを開く。</p>
+         </item>
+         <item>
+            <p>「自動ラベル」オプションがオンになっていることを確認する。この結果、TextInput コントロールおよび TextArea コントロールにラベルが自動的に関連付けられ、カスタムボタンシンボル内のテキストがアクセシブルな名前として追加される。</p>
+         </item>
+         <item>
+            <p>自動ラベル動作が適さない Flash コンテンツの場合は「自動ラベル」オプションをオフにし、アクセシビリティパネルで各コントロールに分かりやすい「名前」の値を設定する。</p>
+         </item>
+         <item>
+            <p>自動ラベル機能を、ムービー全体に対してでなく特定のオブジェクトに対して無効にするには、プロパティインスペクタを使用してテキストのタイプを「ダイナミックテキスト」に変更する。次にそのテキストを選択し、アクセシビリティパネルで「オブジェクトをアクセス可能にする」オプションをオフにする。</p>
+         </item>
+      </olist>
+      <note>
+         <p>アクセシビリティパネルを使用する以外にも、ステージオブジェクトの <prop>AccessibilityProperties.noAutoLabel</prop> を <propval>true</propval> に設定することによって自動ラベル機能をオフにすることができる。</p>
+      </note>
+   </description>
+   <examples>
+      <eg-group>
+         <head>アクセシビリティパネルで「自動ラベル」オプションを使用する</head>
+         <description>
+            <p>この事例では、二つの TextInput コンポーネントと、TextArea コンポーネントとカスタムボタンシンボルのインスタンスが一つずつ表示される。各 TextInput コンポーネントには、コントロールの左に個別のラベル要素が配置されている。TextArea コンポーネントには、コントロールの上にラベルが配置されている。カスタムボタンには、ボタンシンボルの内部にラベルテキストが配置されている。アクセシビリティパネルで「自動ラベル」オプションを有効にしているため、すべてのコントロールに対してラベルに基づいたアクセシブルな名前が提供される。</p>
+            <p>次のスクリーンショットは、この事例を示したものである。 <image>
+                  <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                       source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_label.png"
+                       height="300"
+                       width="593"/>
+                  <alt>画面スクリーンショット：Flashオーサリング環境で自動ラベル機能を使用</alt>
+               </image>
+							     </p>
+            <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.html"><!--
+                    linktype="examples"-->アクセシビリティパネルで「自動ラベル」オプションを使用するのサンプル（英語）で確認できる。</loc>また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH32/using_auto_labeling_to_associate_label_text_with_controls_as3.fla"><!--
+                    linktype="examples"-->アクセシビリティパネルで「自動ラベル」オプションを使用するのソース（英語）</loc>をダウンロードすることもできる。</p>
+         </description>
+      </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="FLASH25"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+         <p>Flash フォームに TextInput コンポーネント、TextArea コンポーネント、またはテキストラベルを使用したカスタムボタンシンボルが含まれている場合、次のことを確認する。</p>
+         <olist>
+            <item>
+               <p>ムービーのアクセシビリティパネルで「自動ラベル」オプションが有効になっている。</p>
+            </item>
+            <item>
+               <p>スクリーンリーダーまたは MSAA チェッカーを使用して確認すると、ラベルテキストがコントロールのアクセシブルな名前として実際に利用されている。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. および 2. を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+   <admin>
+      <source>
+						   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="http://trace.wisc.edu/wcag_wiki/index.php?title=Using_auto_labeling_to_associate_text_labels_with_form_controls"/>
+					</source>
+   </admin>
+</technique>
+

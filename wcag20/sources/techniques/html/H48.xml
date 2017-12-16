@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="H48">
+   <short-name>リストに、ol 要素、ul 要素、dl 要素を用いる</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="sufficient"/>
+      <!--success-criterion idref="navigation-mechanisms-skip"/-->
+   </applies-to>
+   <ua-issues>
+    <ua-issue name="" version="">
+      <p>番号やビュレットの形式を指定する<att>type</att>属性について、支援技術のサポートが一致していない。</p>
+    </ua-issue>
+   </ua-issues>
+   <description>
+    <p>この達成方法の目的は、リスト要素を役割に合わせて適切に利用し、関連する項目のリストを生成することである。<el>ol</el> 要素は順序のあるリストに、<el>ul</el> 要素は順序のないリストに利用する。定義リスト（<el>dl</el> 要素）は、用語とその定義をまとめるのに利用する。このようなマークアップを用いることで、リストを読みやすくできるとはいえ、すべてのリストをリスト要素でマークアップする必要はない。たとえば、文章に含まれるカンマ区切りのリストを、リスト要素でマークアップする必要はない。</p>
+    <p>リストの関係を示すためではなく、見た目をリストのようにしたいためにマークアップを用いることで、利用者が情報を利用しにくくなる恐れがある。リストのような見た目にする例としては、リスト項目の最初にアスタリスクを付け、<el>br</el> 要素を用いて各リスト項目を分けるといったことが挙げられる。</p>
+    <p>支援技術の中には、利用者をリストからリストへ、またはリスト項目からリスト項目へと誘導する機能を備えているものがある。スタイルシートを利用すれば、リストという役割の整合性を保ったまま、表現を変更することができる。</p>
+    <p>リスト構造（<el>ul</el> / <el>ol</el>）はハイパーリンクをグループ化するのにも役立つ。これが完了すると、スクリーンリーダーがリストの最初の項目からリストの最後までナビゲートする、または次のリストにジャンプするのに役立つ。 この選択により、リンクグループをバイパス化することができる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <head>連続するステップを示すリスト</head>
+      <description><p>この事例では、プロセスの連続するステップを示すために順序リスト（<el>ol</el> 要素）を利用している。</p>
+</description>
+      <code role="html401"><![CDATA[<ol>
+  <li>卵と牛乳をボールの中で混ぜる。</li>
+  <li>塩とコショウを加える。</li>
+</ol>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>材料のリスト</head>
+      <description><p>この事例では、お店で購入する品目を順不同リスト（<el>ul</el> 要素）で示している。</p>
+</description>
+      <code role="html401"><![CDATA[<ul>
+  <li>牛乳</li>
+  <li>卵</li>
+  <li>バター</li>
+</ul>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>言葉とその定義</head>
+      <description><p>この事例では、用語とそれを明確にする定義をまとめるのに定義リスト（<el>dl</el> 要素）を利用している。</p>
+</description>
+      <code role="html401"><![CDATA[><dl>
+  <dt>点滅</dt>
+  <dd>1 秒当たり 0.5 回から 3 回、ついたり消えたりすること
+  </dd>
+</dl>]]></code>
+    </eg-group>
+    <eg-group>
+      <head>定義リストを用いた連絡先情報</head>
+      <description><p>この事例では、定義リストを用いて、対になる関連するアイテムをマークアップしている。対になっているアイテムは、それ自体が論理的に関連したリストである。定義リスト要素の CSS スタイルはブラウザによるサポートが十分ではないため、スタイル目的のためだけに span 要素がマークアップに含められているが、これは必須ではない。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[<dl>
+<dt><span>名前：</span></dt><dd><span>John Doe</span></dd>
+<dt><span>電話番号：</span></dt><dd><span>01-2345678</span></dd>
+<dt><span>FAX：</span></dt><dd><span>02-3456789</span></dd>
+<dt><span>Eメール：</span></dt><dd><span>johndoe@someemail.com</span></dd>
+</dl>]]></codeblock>
+      <description><p>以下の CSS スタイルは、対になっているアイテムそれぞれをテーブルのようなレイアウトにして一行に並べるために用いることが可能である。</p>
+</description>
+      <codeblock xml:space="preserve"><![CDATA[dt, dd{float: left;margin: 0;padding: 0;}
+dt{clear:both;font-weight: bold}
+dt span{display: inline-block; width: 70px;}
+dd span{display: inline-block; margin-right: 5px;} ]]></codeblock>
+      <description><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H48/ContactInfoDL.html">定義リストを用いた連絡先情報のサンプル</loc>がある。</p>
+
+</description>
+    </eg-group>
+    <eg-group>
+      <head>リストを用いてリンクをグループ化する</head>
+      <description><p>この事例では、リンクが <el>ul</el> 要素と <el>li</el> 要素を用いてグループ化されている。</p>
+</description>
+      <code role="html401"><![CDATA[<a name="categories" id="categories"></a><h2>製品カテゴリ</h2>
+<ul class="navigation">
+    <li><a href="kitchen.html">キッチン</a></li>
+    <li><a href="bedbath.html">ベッド&amp;amp; Bath</a></li>
+    <li><a href="dining.html">ダイニング</a></li>
+    <li><a href="lighting.html">照明</a></li>
+    <li><a href="storage.html">収納</a><li>
+</ul> ]]></code>
+      <description><p>リスト要素のスタイルを指定するのに CSS を使用することが可能で、この達成方法はさまざまなビジュアルデザインで用いることができる。</p>
+<p>この CSS では、リストのビュレットとインデントする左側の余白を削除して、各リスト要素を水平に並べている。</p>
+</description>
+      <code>ul.navigation {
+  list-style: none; 
+  padding: 0;
+}
+ul.navigation li {
+  display: inline;
+}</code>
+      <description><p>このスタイルは、リストのビュレットと左側の余白を削除し、リスト項目を横並びのブロックにして表示する。</p>
+</description>
+      <code role="html401"><![CDATA[ul.navigation {
+ list-style: none; 
+ padding: 0;
+}
+ul.navigation li {
+ display: block; 
+ float: left;
+} ]]></code>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also>
+         <ulist>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/lists.html#h-10.2">Unordered lists (UL), ordered lists (OL), and list items (LI)</loc>
+								       </p>
+            </item>
+            <item>
+               <p>HTML 4.01 <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/TR/html4/struct/lists.html#h-10.3">Definition lists: the DL, DT, and DD elements</loc>
+								       </p>
+            </item>
+         </ulist>
+      </see-also>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="H40"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>リストの視覚表現（ビュレットがあるかどうかに関わらず）を含んだコンテンツが、順不同リストとしてマークアップされている。</p>
+        </item>
+        <item>
+          <p>番号の付いたリストの視覚表現を含んだコンテンツが、順序リストとしてマークアップされている。</p>
+        </item>
+        <item>
+          <p>用語とその定義をリストという形式で表現する場合、そのコンテンツが定義リストとしてマークアップされている。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+      <ulist>
+        <item>
+          <p>上記全てを満たしている。</p>
+        </item>
+      </ulist>
+      </expected-results>
+   </tests>
+</technique>

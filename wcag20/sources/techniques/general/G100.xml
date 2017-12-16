@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G100">
+   <short-name>非テキストコンテンツの一般に認められた名前又は内容が分かる名前となる簡潔な代替テキストを提供する</short-name>
+   <applicability>
+      <p>全てのウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、非テキストコンテンツが特定の感覚的体験を提供することを意図している場合においても、利用者が非テキストコンテンツを特定できるようにすることである。例えば、耳が聞こえない利用者は、たとえ聞くことができなくとも、音声ファイルがどのようなものか知りたいと思うだろう。同じように、全盲の利用者も、たとえ見ることができなくとも視覚的な映像の題材がどのようなものか知りたいと思うだろう。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><ulist><item><p>モナリザの絵には「モナリザ。レオナルド・ダ･ビンチ作」という代替テキスト がある。</p></item><item><p>音声ファイルには「テルミンを演奏している5人の小学生」という代替テキストがある。
+                                    </p></item><item><p>有名なモダンアートの作品には「赤、青、及び黄色。ピエト　モンドリアン作」という表題が付けられている。</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="G68"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>簡潔な代替テキストで内容が分かる名前を提供している。</p>
+        </item>
+        <item>
+          <p>簡潔な代替テキストで非テキストコンテンツに作者や他の人によって以前から付けられている名前を提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1.又は2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

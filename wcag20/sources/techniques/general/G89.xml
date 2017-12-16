@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G89">
+   <short-name>所定のデータ書式及び入力例を提供する</short-name>
+   <applicability>
+      <p>利用者から情報を集め、利用者が入力できる書式に制約のあるページ</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="minimize-error-cues" relationship="cosufficient"/>
+      <success-criterion idref="minimize-error-context-help" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、利用者が入力しなければならないデータ書式の制約を通知することによって、利用者が入力エラーを回避しやすくすることである。これは、書式の特徴を記述するか、入力データに求められる書式の例を提供することによって対処できる。</p>
+    <note><p>日付や時刻のように、様々な記述方法があるデータ書式については、利用者にとって最も入力しやすい書式を選択できるオプションを提供するとよい。</p>
+	</note>
+  </description>
+   <examples>
+      <eg-group>
+      <description><p>日付を入力するHTMLのフォーム・コントロールでは、<el>label</el>要素内において、入力する日付はアメリカ合衆国の多くの利用者が想定する月-日-年の書式ではなく、日-月-年の書式でなければならないことを示している。</p>
+</description>
+      <code><![CDATA[<label for="date">日付 (dd-mm-yyyy)</label>
+<input type="text" name="date" id="date" />]]></code>
+    </eg-group>
+   </examples>
+   <related-techniques>
+      <relatedtech idref="G184"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>所定の書式でしか利用者の入力データを受け付けないフォーム・コントロールを特定する。</p>
+        </item>
+        <item>
+          <p>1.で特定した各フォーム・コントロールが、求めている書式情報を提供している。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

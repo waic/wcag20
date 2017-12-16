@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="G135">
+   <short-name>名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために、ウェブコンテンツ技術のアクセシビリティ API を使用する</short-name>
+   <applicability>
+      <p>アクセシビリティAPIと連動するようにプログラムされた標準コンポーネントを持つプログラミングウェブコンテンツ技術。</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
+   </applies-to>
+   <description>
+    <p>この達成方法の目的は、支援技術が代替のユーザインタフェースを通して利用者に等価の情報を伝えることができるように、支援技術がウェブコンテンツを理解できるようにすることである。</p>
+    <p>コンテンツは、マークアップ言語を用いず、プログラミング言語又はツールを用いて制作されることがある。多くの場合、これらのウェブコンテンツ技術には、既にアクセシビリティAPIと連動するようにプログラムされたインタフェースコンポーネントがある。コンテンツ制作者がそういったコンポーネントを使用して、プロパティ（例えば名前など）を記述すれば、生成されたコンテンツのユーザインタフェースコンポーネントは支援技術に対してアクセシブルとなる。</p>
+  </description>
+   <examples>
+      <eg-group>
+      <description><ulist><item><p> ウェブページがアプレットを作るためにJavaを使用している。Java Swingオブジェクト（例えばプッシュボタン）が使われているのは、Javaで書かれた支援技術からアクセスできる標準搭載のアクセシビリティプロパティ、及びJava Access BridgeとともにOSのアクセシビリティAPIを用いる他の言語で書かれたアクセシビリティプロパティを持っているためである。コンテンツ制作者がそのコンポーネントに対して値を記述することによって、そのコンポーネントは支援技術にとってアクセシブルなものとなる。</p></item></ulist>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques/>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p> アクセシブルなユーザエージェントを用いてコンテンツを描画する。</p>
+        </item>
+        <item>
+          <p> 各ユーザインタフェースコンポーネントを評価するために、ユーザエージェントのアクセシビリティAPIに対応して設計されたアクセシビリティツールを使用する。</p>
+        </item>
+        <item>
+          <p> 各インタフェースコンポーネントの名前（name）及び役割（role）が、そのツールによって確認できる。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>各インターフェース要素について、3.を満たしている。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F43">
+   <short-name>達成基準 1.3.1 の失敗例 － コンテンツにおける関係を表さない方法で、構造を示すマークアップを使用している</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="content-structure-separation-programmatic"
+                         relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>この失敗例では、プレゼンテーション上の効果を実現するために用いられている構造的マークアップが、コンテンツ上には存在しない関係を示している場合に発生する失敗について解説する。この不適合は、コンテンツ上の構造的関係を頼りにナビゲーションを行ったり、コンテンツの一部と他の部分の関係を理解している利用者の混乱を招く。なお、<code><![CDATA[<th>]]></code> 要素や <code><![CDATA[<caption>]]></code> 要素など、不適切な構造的マークアップが含まれていない限り、HTML テーブルをレイアウトに使用することはこの失敗例には当たらない。</p>
+      <note>
+         <p>要素のセマンティックな意味は一般的に支援技術に受け渡されているが、WAI-ARIA presentation roleは、要素のネイティブなセマンティクスを隠してアクセシビリティ API にマップされないようにするために使用できる。要素の <att>role</att> を presentation に設定すると、その要素のセマンティクスを利用者から隠すことでこの失敗を避けられるかもしれない。</p>
+      </note>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <head>視覚的効果の実現のみのために用いられている見出し</head>
+      <description><p>この例では、太字の大きな文字で連絡先住所を表示するために見出しが用いられている。しかし、この連絡先住所がページ中の新しい章や節の開始を示しているわけではないので、見出しとしてマークアップするのは不適切である。</p>
+</description>
+      <code role="html401"><![CDATA[
+<p>詳細に興味をお持ちでしたら、以下までご連絡ください。</p> 
+<h4>3333 Third Avenue, Suite 300 · New York City</h4>
+
+<p>完全な情報を一切無料でお送りします。</p>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head>プレゼンテーション上の効果を目的とした見出し要素の使用</head>
+      <description><p>この例では、見出し要素が文書構造を表すため、そして視覚的な効果を実現するための二つの異なる目的で用いられている。<code>h1</code> 及び <code>h2</code> 要素はそれぞれ、文書全体の始まりと概要を示す目的で適切に使用されている一方で、タイトルと概要の間にある <code>h3</code> 及び <code>h4</code> 要素は、作者の名前と日付を表示するためのフォントを制御する目的で使用されている。</p>
+</description>
+      <code role="html401"><![CDATA[
+<h1>ウェブページにおける見出し要素の利用に関する研究</h1>
+<h3>Joe Jones and Mary Smith<h3>
+<h4>2006年3月14日</h4>
+<h2>概要</h2>
+<p>研究は2006年初頭に行われ ...
+</p>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head>追加の字下げを目的とした <code>blockquote</code> 要素の使用</head>
+      <description><p>以下の例では、視覚的な表示を行うブラウザにおいてテキストを目立たせる目的で、引用文ではないテキストに対して <code>blockquote</code> 要素が使用されている。</p>
+</description>
+      <code role="html401"><![CDATA[
+<p>同社のウェブサイトに関する詳細な検討の結果、タスクフォースは
+以下の問題がサイト全体に多く見られることを指摘した。</p>
+
+<blockquote>
+<p>視覚的効果を目的としたマークアップの利用により、ページが
+スクリーンリーダーの利用者にとって分かりづらいものになっている。</p>
+</blockquote>
+
+<p>委員会では、これによってもたらされる問題の具体例を以下に
+示している。</p>]]></code>
+    </eg-group>
+    <eg-group role="failure">
+      <head>テキストの枠線を表示する目的で <code>fieldset</code> 要素と <code>legend</code> 要素を使用する</head>
+      <code role="html401"><![CDATA[
+<fieldset>
+<legend>バーゲンコーナー</legend>
+<p>今購入すると20パーセント割引</p>
+</fieldset>]]></code>
+    </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques>
+      <relatedtech idref="F46"/>
+      <relatedtech idref="G115"/>
+      <relatedtech idref="H39"/>
+      <relatedtech idref="H42"/>
+      <relatedtech idref="H73"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>要素のセマンティックな意味が支援技術に受け渡され、かつ要素の内容に対して適切であることを確認する。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. が満たされない場合、この失敗条件が適用される。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

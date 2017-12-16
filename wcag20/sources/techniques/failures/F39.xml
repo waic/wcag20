@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F39">
+   <short-name>達成基準 1.1.1 の失敗例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt="spacer" 又は alt="image"）</short-name>
+   <applicability>
+      <p>HTML 及び XHTML</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="text-equiv-all" relationship="failure"/>
+   </applies-to>
+   <description>
+      <p>この達成方法は、支援技術によって無視されることが望ましい画像に対する失敗条件について述べている。画像のテキストによる代替は、画像の意味を伝えることが望ましい。ページ内に意味のないコンテンツの一部である装飾、スペーシング又は他の目的で画像が使用される場合、画像は意味を持たず、支援技術では無視することが望ましい。</p>
+      <p>空のテキストによる代替（<code>alt=""</code>）を提供すると、支援技術によって画像が無視され、この達成基準の失敗を回避できるだろう。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+         <head><att>alt</att> 属性を持たない装飾画像</head>
+         <description>
+            <p>コンテンツ間に空白領域を作成するために、それ自体は意味を持たない画像が使用されている。その画像の代替テキストの値は"spacer"である。テキストによる代替が同等の目的を果たさないため、この画像は達成基準に適合しない。その画像は無視されることを意図されているが、代替テキスト"spacer"はスクリーンリーダーによって読み上げられ、いくつかの代替カラースキームでは表示される。</p>
+            <codeblock xml:space="preserve"><![CDATA[<div>Tree type: <img src="spacer.gif" width="100" height="1" alt="spacer"/>Cedrus deodara</div>
+]]></codeblock>
+         </description>
+      </eg-group>
+   </examples>
+   <resources/>
+   <related-techniques/>
+   <tests>
+      <procedure>
+         <olist>
+            <item>
+               <p>装飾、スペーシング、又はページ内の意味のあるコンテンツに含まれない他の目的に使用される img 要素を特定する</p>
+            </item>
+            <item>
+               <p>これらの要素に対する alt の値が空である。</p>
+            </item>
+         </olist>
+      </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>2. を満たさない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+      </expected-results>
+   </tests>
+</technique>

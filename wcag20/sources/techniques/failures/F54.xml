@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique
+  SYSTEM "../../xmlspec.dtd">
+<technique id="F54">
+   <short-name>達成基準 2.1.1 の失敗例 － ある機能にポインティング・デバイス特有のイベント・ハンドラを使用している</short-name>
+   <applicability>
+      <p>ポインティング・デバイス特有のイベント・ハンドラを用いたウェブコンテンツ技術</p>
+   </applicability>
+   <applies-to>
+      <success-criterion idref="keyboard-operation-keyboard-operable" relationship="failure"/>
+      <success-criterion idref="keyboard-operation-all-funcs" relationship="failure"/>
+   </applies-to>
+   <description>
+    <p>ポインティング・デバイスに特有のイベント・ハンドラだけがコンテンツ上の機能を呼び出すメカニズムであるとき、（マウスのような、目と手による連携が必要な機器を利用できない）全盲の利用者をはじめとした、代替キーボード又はキーボードエミュレーターとして動作する入力機器を用いなければならない利用者は、コンテンツの機能にアクセスできない。</p>
+  </description>
+   <examples>
+      <eg-group role="failure">
+      <description><p>次に示すのは、マウスでのクリックに反応して他のページに移動する画像の例である。これは、キーボードを用いて次のページに移動できないため不適合である。
+      <code><![CDATA[
+<p><img onmousedown="nextPage();" src="nextarrow.gif" alt="次のページへ移動"></p>]]></code></p>
+</description>
+    </eg-group>
+   </examples>
+   <resources>
+      <see-also/>
+   </resources>
+   <related-techniques>
+      <relatedtech idref="SCR20"/>
+   </related-techniques>
+   <tests>
+      <procedure>
+      <olist>
+        <item>
+          <p>ポインティング・デバイスに特有のイベント・ハンドラだけが、スクリプトの機能を呼び出す唯一の方法である。</p>
+        </item>
+      </olist>
+    </procedure>
+      <expected-results>
+         <ulist>
+            <item>
+               <p>1. を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+            </item>
+         </ulist>
+         <!--<p>Test n.n will fail the test (<code>onMouseDown</code> is used and  keyboard-specific event handler is not used)</p>
+            <p>
+              <code><![CDATA[   
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01  
+  Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Script has device dependent event handler (onmousedown)</title>
+  </head>
+  <body>
+    <p>
+      <a onMouseDown="window.location.href='nextpage.html';">mouse-only link</a>
+    </p>
+  </body>
+</html>]]></code>
+            </p>
+            <p>Test n.n will fail the test (<code>onMouseOver</code> is used and  keyboard-specific event handler is not used)</p>
+            <p>
+              <code><![CDATA[ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01  
+         Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+         <html> 
+         <head> 
+         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+         <title>Script has device dependent event handler (onmouseover)</title> 
+         </head> 
+         <body> 
+         <p><a onMouseOver="this.value='this will not work with the keyboard';">mouse-only link</a></p> 
+         </body> 
+         </html> ]]></code>
+            </p>-->
+      </expected-results>
+   </tests>
+</technique>

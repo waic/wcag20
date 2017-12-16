@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+ <head>
+  <title>SMILの達成方法のためのユーザーエージェントサポートノート</title>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <h1>SMILの達成方法のためのユーザーエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/smil">SMILの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+  <ul class="toc">
+   <li class="toc">
+    <a href="#SM11">SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</a>
+   </li>
+   <li class="toc">
+    <a href="#SM12">SMIL 2.0 で同期したテキストストリームによるキャプションを提供する</a>
+   </li>
+  </ul>
+  <section id="SM11">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/SM11.html">SM11</a>: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</h2>
+   <div class="ua-issue">
+    <p>SMIL 1.0でキャプションを示す世界共通の標準フォーマットは存在しない。さまざまなユーザーエージェントが、さまざまなキャプションのフォーマットをサポートしている。キャプションのテキストストリームには、テキストストリームのsrc引数として、サポートされているフォーマットのファイルが提供されなければならない。</p>
+    <p>QuickTimeは、QTTextキャプションファイルをサポートしている。RealPlayer や GRiNSなどのRealベースのプレーヤーは、RealTextキャプションファイルをサポートしている。WindowsMediaは、SAMIファイルをサポートしているが、SMILをサポートしていない。
+    Flashは、特定のファイル形式をサポートしていないが、XMLベースのキャプションファイルを解析することが可能であり、実際にFLVPlaybackコンポーネントのSMILに対するサポートは、movie/server urlのようなパラメータ又は &lt;switch&gt;タグで指定されたmulti-bandwidthを検出するようになっている。</p>
+   </div>
+  </section>
+  <section id="SM12">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/SM12.html">SM12</a>: SMIL 2.0 で同期したテキストストリームによるキャプションを提供する</h2>
+   <div class="ua-issue">
+    <p>RealPlayerだけが、SMIL 2.0をサポートしている。</p>
+   </div>
+  </section>
+ </body>
+</html>

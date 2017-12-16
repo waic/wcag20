@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE div2
+  SYSTEM "../xmlspec.dtd">
+<div2 id="visual-audio-contrast-text-presentation" role="extsrc">
+   <head>1.4.5</head>
+   <div3 role="intent">
+      <head>この達成基準の意図</head>
+
+<p>この達成基準の意図は、テキストによる特定の視覚的な提示を必要とする人が、必要に応じてテキストによる提示を調整できるように、所望のデフォルトの視覚的提示を達成できる技術をコンテンツ制作者に推奨することである。これは、テキストに、特定のフォントサイズ、前景色及び背景色、書体、行間、又は配置を必要とする人を含む。</p>
+<p>コンテンツ制作者が同じ視覚的な効果を達成するためにテキストを使用できる場合、コンテンツ制作者は情報を提示するのに画像を用いるのではなく、テキストを用いることが望ましい。何らかの理由により、コンテンツ制作者が同じ効果を得るためにテキストの書式を整えることができない場合、その効果が一般に入手可能なユーザエージェントでは確実に提示できない、又はこの達成基準を満たすウェブコンテンツ技術を用いることが達成基準 1.4.4 などの他の達成基準を満たすことの妨げになる場合、文字画像を使用できる。これは、書体のサンプル、ロゴタイプ、ブランドなどのような、伝えている情報にとってテキストの特定の提示が必要不可欠な場合を含む。文字画像はまた、広く普及していないかコンテンツ制作者が再配布する権利を持っていないかのいずれかで特定の書体を用いるために、又はそのテキストがすべてのユーザエージェントでアンチエイリアスをかけた状態になるようにするために使われることもある。</p>
+<p>利用者が文字画像を自分の好みに合わせてカスタマイズできる場合にも、文字画像を用いてもよい。</p>
+<p>文字画像の定義には、「注記: テキスト以外の部分が重要な視覚的コンテンツである場合、画像に含まれるテキストは該当しない。」とある。そのような画像の例として、テキストのみよりも視覚的に重要な情報を伝えるグラフ、スクリーンショット、ダイアグラムが含まれる。</p>
+<p>この達成基準を満たすための達成方法は、達成基準 1.4.9 と同じである。ただし、その視覚的な表現がコンテンツ制作者の用いるウェブコンテンツ技術で実現可能な場合に適用されるという点だけが異なる。達成基準 1.4.9 では、利用者がカスタマイズできるときのみ、十分な達成方法が適用される。</p>
+
+<p><specref ref="visual-audio-contrast-text-images"/>も参照のこと。</p>
+
+<div4 role="benefits">
+<head>達成基準 1.4.5 の具体的なメリット</head>
+<ulist>
+	<item><p>ロービジョンの人 (コンテンツ制作者の指定した書体、サイズ、及び／又は色では、テキストが読みづらいことがある)</p></item>
+	<item><p>視線移動に問題のある人 (コンテンツ制作者の指定した行間及び／又は配置では、テキストが読みづらいことがある)</p></item>
+	<item><p>読字に影響を及ぼす認知障害のある人</p></item>
+</ulist>
+</div4>
+</div3>
+
+<div3 role="examples">
+<head>達成基準 1.4.5 の事例</head>
+<ulist>
+	<item><p><emph role="bold">スタイルを指定した見出し</emph></p>
+	<p>ビットマップ画像を用いて特定のフォント及びサイズで見出しを提示するのではなく、コンテンツ制作者は CSS を用いて同じ見栄えにする。</p>
+	</item>
+	<item><p><emph role="bold">動的に生成された画像</emph></p>
+	<p>あるウェブページでは、サーバーサイドのスクリプトを用いてテキストを画像として提示している。そのページには、利用者が生成される画像のフォントサイズ及び前景色と背景色を調節することのできるコントロールがある。</p></item>
+	<!-- The following examples are copied from 1.4.9 -->
+	<item><p><emph role="bold">引用</emph></p>
+	<p>あるウェブページに引用が含まれている。その引用部分自体は、イタリックのテキストで、左側をインデントした状態で提示されている。その引用した部分の人名は、引用の下に 1.5 倍の行間を空けて、左側からさらにインデントした状態になっている。CSS は、テキストの書体、サイズ、色及び装飾だけでなく、テキストの配置、行間スペースの指定に使用される。</p></item>
+	<item><p><emph role="bold">ナビゲーション</emph></p>
+	<p>ウェブページは、リンク先を表すアイコンとテキストの両方を持つナビゲーションリンクのメニューを含んでいる。CSSは、ナビゲーションリンク間の間隔だけでなく、テキストの書体、サイズ、前景色及び背景色を表示するために使用される。</p></item>
+	<item><p><emph role="bold">文字を含んだロゴ</emph></p>
+	<p>ウェブサイトは、各ウェブページの左上のコーナーに組織のロゴを含んでいる。ロゴには、ロゴタイプ（ロゴの一部又は全部に文字）が含まれている。文字の視覚的な表現は、そのロゴのアイデンティティに不可欠であり、その文字の特徴を変更することができないGIF画像である。画像は、テキストによる代替を持つ。</p></item>
+	<item><p><emph role="bold">書体のサンプル</emph></p>
+	<p>ウェブページは、特定の書体に関する情報を含んでいる。その書体を他の書体に置き換えると、表現の目的は損なわれるだろう。この表現は、テキストの特徴を変更できないJPEG画像として含まれている。画像は、テキストによる代替を持つ。</p></item>
+	<item><p><emph role="bold">手紙の写し</emph></p>
+	<p>ウェブページは、手紙の原本を描写したものを含んでいる。オリジナルの体裁でその手紙を表現するには、手紙の書かれた時代について伝える情報が不可欠である。手紙は、文字の特徴を変更することができない GIF 画像である。画像は、テキストによる代替を持つ。</p></item>
+	<item><p><emph role="bold">記号的な文字</emph></p>
+	<p>フォームは、利用者がテキストのブロックの入力を可能にする。そのフォームは、テキストのスタイルやスペルチェックなどの機能を含む、多くのボタンを提供している。ボタンの中には、自然言語で何かを表現している順序を整列させていないテキストの文字を用いている。例えば、フォントを太字にするには "B"、テキストをイタリックにするには "I"、そしてスペルチェックをするのには "ABC" である。記号的な文字は、その文字の特徴を変更することができない GIF 画像として含まれている。ボタンは、テキストによる代替を持つ。</p></item>
+	<item><p><emph role="bold">文字画像のカスタマイズ可能なフォント設定</emph></p>
+	<p>あるウェブサイトでは、利用者がフォントを設定できるようになっており、このウェブサイトのすべての文字画像は、その設定に基づいて提供される。</p></item>
+</ulist>
+</div3>
+
+<div3 role="resources">
+<head/>
+<ulist>
+	<item><p><loc href="http://www.alistapart.com/articles/cssatten">CSS Web fonts</loc></p></item>
+<item><p><loc href="http://clagnut.com/blog/2042/">Weblog comments: WebKit now supports CSS @font-face rules</loc></p></item>
+<item><p><loc href="http://www.workingwith.me.uk/articles/css/cross-browser-drop-shadows">Creating Cross Browser Compatible CSS Text Shadows</loc></p></item>
+<item><p><loc href="http://www.yourhtmlsource.com/stylesheets/csstext.html">CSS and text</loc></p></item>
+</ulist>
+</div3>
+
+<div3 role="techniques">
+<head/>
+<div4 role="sufficient">
+<head/>
+<olist>
+	<item><p><loc href="C22" linktype="css"/></p></item>
+	<item><p><loc href="SL31" linktype="silverlight"/></p></item>
+	<item><p><loc href="C30" linktype="css"/></p></item>
+	<item><p><loc href="G140" linktype="general"/></p></item>
+	<item><p><loc href="PDF7" linktype="pdf"/></p></item>
+</olist>
+</div4>
+
+<div4 role="tech-optional">
+<head/>
+<div5>
+<head>非テキストコンテンツ向けの一般的な達成方法</head>
+<olist>
+	<item><p>情報を提供する非テキストコンテンツを識別する（リンク追加予定）</p></item>
+</olist>
+</div5>
+
+<div5>
+<head>CSS による達成方法</head>
+<olist>
+	<item><p><loc href="C12" linktype="css"/></p></item>
+	<item><p><loc href="C13" linktype="css"/></p></item>
+	<item><p><loc href="C14" linktype="css"/></p></item>
+	<item><p><loc href="C8" linktype="css"/></p></item>
+	<item><p><loc href="C6" linktype="css"/></p></item>
+	<item><p>1文字以内でデザインされるテキスト文字を避ける（リンク追加予定）</p></item>
+</olist>
+</div5>
+</div4>
+
+<div4 role="failures">
+<head/>
+</div4>
+</div3>
+</div2>
