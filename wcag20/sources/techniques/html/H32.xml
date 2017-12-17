@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H32">
-   <short-name>実行ボタンを提供する</short-name>
+   <short-name>送信ボタンを提供する</short-name>
    <applicability>
       <p>フォームのコントロールを含むコンテンツ</p>
    </applicability>

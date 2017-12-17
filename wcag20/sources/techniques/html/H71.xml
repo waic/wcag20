@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H71">
-   <short-name>フォーム・コントロールのグループに関する説明を提供するために、fieldset 要素及び legend 要素を使用する</short-name>
+   <short-name>fieldset 要素及び legend 要素を使用して、フォームコントロールのグループに関する説明を提供する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

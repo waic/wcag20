@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H80">
-   <short-name>リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</short-name>
+   <short-name>リンクテキストと先行する見出し要素とを組み合わせて、リンクの目的を特定する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

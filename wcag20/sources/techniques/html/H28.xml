@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H28">
-   <short-name>abbr要素を用いて、略語の定義を提供する</short-name>
+   <short-name>abbr 要素を用いて、略語の定義を提供する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

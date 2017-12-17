@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H48">
-   <short-name>リストに、ol 要素、ul 要素、dl 要素を用いる</short-name>
+   <short-name>リンクのリスト又はグループに、ol 要素、ul 要素、dl 要素を用いる</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H4">
-   <short-name>リンク、フォームのコントロール、およびオブジェクトには、論理的なタブ移動順序を作成する</short-name>
+   <short-name>リンク、フォームコントロール、及びオブジェクトを通して、論理的なタブ順序を作成する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>
