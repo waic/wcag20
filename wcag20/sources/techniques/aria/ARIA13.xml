@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA13">
-   <short-name>領域とランドマークに名前（name）を付けるために、aria-labelledby を使用する</short-name>
+   <short-name>リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>

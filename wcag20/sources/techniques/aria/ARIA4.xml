@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA4">
-   <short-name>ユーザインターフェース コンポーネントの役割（role）を明らかにするために、WAI-ARIA ロールを使用する</short-name>
+   <short-name>ユーザインターフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>

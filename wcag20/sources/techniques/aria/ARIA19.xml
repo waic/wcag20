@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA19">
-   <short-name>エラーを特定するために、ARIA role=alert 又はライブ領域（Live Regions）を使用する</short-name>
+   <short-name>エラーを特定するために、ARIA role=alert 又はライブリージョン (Live Regions) を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>

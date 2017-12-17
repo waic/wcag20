@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="ARIA9">
-   <short-name>複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</short-name>
+   <short-name>複数のテキストノードをつなげて一つのラベルにするために、aria-labelledby を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
