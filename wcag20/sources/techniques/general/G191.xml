@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G191">
-   <short-name>点滅するコンテンツのないページを読み込むリンク、ボタン、又はその他のメカニズムを提供する</short-name>
+   <short-name>点滅するコンテンツのないページを再読み込みするリンク、ボタン、又はその他のメカニズムを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

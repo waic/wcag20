@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G203">
-   <short-name>話者が話すのみの映像を説明するために、静的な代替テキストを使用する</short-name>
+   <short-name>話者が話すのみの映像を説明するために、静的なテキストによる代替を使用する</short-name>
    <applicability>
       <p>話者が話すのみの映像</p>
    </applicability>

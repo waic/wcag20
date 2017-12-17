@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G84">
-   <short-name>利用者が認められた値以外の情報を提供した際に、テキストの説明文を提供する</short-name>
+   <short-name>利用者が許可された値のリストにない情報を提供する場合、テキストの説明を提供する</short-name>
    <applicability>
       <p>限定された値の入力のみを受け付けるコンテンツ</p>
    </applicability>

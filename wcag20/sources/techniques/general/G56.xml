@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G56">
-   <short-name>発話ではない音が発話の音声コンテンツより少なくとも 20 デシベル以上低くなるように、音声ファイルを編集する</short-name>
+   <short-name>非発話音が発話音声コンテンツより少なくとも 20 デシベル低くなるように、音声ファイルを編集する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G99">
-   <short-name>消去した情報を元に戻せるようにする</short-name>
+   <short-name>削除した情報を復元する機能を提供する</short-name>
    <applicability>
       <p>利用者の操作によって削除されるコンテンツ</p>
    </applicability>

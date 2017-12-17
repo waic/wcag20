@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G135">
-   <short-name>名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために、ウェブコンテンツ技術のアクセシビリティ API を使用する</short-name>
+   <short-name>名前及び役割を公開し、利用者が設定可能なプロパティを直接設定可能にして、変更の通知を提供するためのウェブコンテンツ技術のアクセシビリティ API 機能を使用する</short-name>
    <applicability>
       <p>アクセシビリティAPIと連動するようにプログラムされた標準コンポーネントを持つプログラミングウェブコンテンツ技術。</p>
    </applicability>

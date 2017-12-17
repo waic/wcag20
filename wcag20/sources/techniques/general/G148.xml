@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G148">
-   <short-name>背景色及びテキストの色を指定せず、その初期設定を変更するウェブコンテンツ技術の機能を使用しない</short-name>
+   <short-name>背景色及び文字色を指定せず、その初期設定を変更するウェブコンテンツ技術の機能を使用しない</short-name>
    <applicability>
       <p>テキストと背景の色が別々に指定されている、及びブラウザが初期設定の色を制御できるあらゆるウェブコンテンツ技術</p>
    </applicability>

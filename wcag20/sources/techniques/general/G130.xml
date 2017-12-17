@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G130">
-   <short-name>内容が分かる見出しをつける</short-name>
+   <short-name>説明的な見出しをつける</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

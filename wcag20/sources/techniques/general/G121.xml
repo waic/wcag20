@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G121">
-   <short-name>発音（読み）にリンクする</short-name>
+   <short-name>発音 (読み) にリンクする</short-name>
    <applicability>
       <p>リンクを含む全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G68">
-   <short-name>ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明するために、簡潔な代替テキストを提供する</short-name>
+   <short-name>ライブの音声のみのコンテンツ及びライブの映像のみのコンテンツの目的を説明するために、簡潔なテキストによる代替を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

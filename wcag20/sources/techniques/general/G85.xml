@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G85">
-   <short-name>利用者の入力が要求されたフォーマット又は値ではなかった際に、テキストの説明文を提供する</short-name>
+   <short-name>利用者の入力が要求されたフォーマット又は値の範囲外の場合に、テキストの説明を提供する</short-name>
    <applicability>
       <p>利用者のデータ入力を受け付け、そのフォーマット、値及び/又は入力の種類に制限があるコンテンツ</p>
    </applicability>

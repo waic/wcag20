@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G88">
-   <short-name>ウェブページに対して、コンテンツの内容が分かるページタイトルを提供する</short-name>
+   <short-name>ウェブページに説明的なタイトルを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

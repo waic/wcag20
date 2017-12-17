@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G174">
-   <short-name>十分なコントラスト比のあるコントロールを提供して、利用者が十分なコントラストのある表現に変換できるようにする</short-name>
+   <short-name>利用者が十分なコントラストのある提示に切り替えられるように、十分なコントラスト比のあるコントロールを提供する</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

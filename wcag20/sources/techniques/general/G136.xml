@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G136">
-   <short-name>適合していないウェブページの先頭に、適合している代替版へのリンクを提供する</short-name>
+   <short-name>不適合なウェブページの先頭に、適合している代替版を指すリンクを提供する</short-name>
    <applicability>
       <p>本来のコンテンツはWCAGに適合していないが、WCAGに適合している代替版は存在している。この達成方法を用いることができるのは、ウェブコンテンツ技術が代替版へのアクセシブルなリンクを作ることを可能としている場合のみである。</p>
    </applicability>

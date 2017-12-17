@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G162">
-   <short-name>ラベルを配置して、関係性を最大限に予測できるようにする</short-name>
+   <short-name>関係性を最大限に予測できるようにするためにラベルを配置する</short-name>
    <applicability>
       <p>フォームをサポートするウェブコンテンツ技術全て</p>
    </applicability>

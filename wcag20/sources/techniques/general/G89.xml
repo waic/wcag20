@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G89">
-   <short-name>所定のデータ書式及び入力例を提供する</short-name>
+   <short-name>期待されるデータ書式及び入力例を提供する</short-name>
    <applicability>
       <p>利用者から情報を集め、利用者が入力できる書式に制約のあるページ</p>
    </applicability>

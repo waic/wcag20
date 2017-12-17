@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G188">
-   <short-name>行送りや段落の間隔を広げるボタンをウェブページ上に提供する</short-name>
+   <short-name>行間及び段落の間隔を広げるボタンをウェブページ上に提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

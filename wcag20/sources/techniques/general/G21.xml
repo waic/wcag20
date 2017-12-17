@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G21">
-   <short-name>利用者がコンテンツ内に閉じ込められないようにする</short-name>
+   <short-name>利用者がコンテンツ内に閉じ込められないことを確認する</short-name>
    <applicability>
       <p>インタラクティブな操作をサポートするウェブコンテンツ技術すべて</p>
    </applicability>

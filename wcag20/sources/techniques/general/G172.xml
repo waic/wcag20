@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G172">
-   <short-name>テキストの両端揃えを解除するメカニズムを提供する</short-name>
+   <short-name>テキストの両端揃えを解除するためのメカニズムを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

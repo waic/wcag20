@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G185">
-   <short-name>HOME ページからサイト上の全てのウェブページにリンクする</short-name>
+   <short-name>ホームページからサイト上の全てのウェブページにリンクする</short-name>
    <applicability>
       <p>リンク機能を提供する全てのウェブコンテンツ技術</p>
    </applicability>

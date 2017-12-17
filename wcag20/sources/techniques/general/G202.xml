@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G202">
-   <short-name>すべての機能をキーボードだけでも操作可能にする</short-name>
+   <short-name>すべての機能に対してキーボード制御を確保する</short-name>
    <applicability>
       <p>インタフェース操作をサポートするウェブコンテンツ技術すべて</p>
    </applicability>

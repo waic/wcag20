@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G80">
-   <short-name>状況の変化を開始する実行ボタンを提供する</short-name>
+   <short-name>状況の変化を開始する送信ボタンを提供する</short-name>
    <applicability>
       <p>フォームを含むコンテンツ</p>
    </applicability>

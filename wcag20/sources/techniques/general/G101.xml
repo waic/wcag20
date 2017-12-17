@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G101">
-   <short-name>一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する</short-name>
+   <short-name>一般的ではない、又は限定された用法で用いられている単語又は語句の定義を提供する</short-name>
    <applicability>
       <p>テキストを含むあらゆるウェブコンテンツ技術</p>
    </applicability>
