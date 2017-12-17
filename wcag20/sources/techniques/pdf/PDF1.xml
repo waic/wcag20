@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF1">
-   <short-name>PDF 文書の Alt エントリによって画像に代替テキストを適用する</short-name>
+   <short-name>PDF 文書の Alt エントリによって画像にテキストによる代替を適用する</short-name>
    <applicability>
       <p>画像が含まれているタグ付き PDF 文書</p>
    </applicability>

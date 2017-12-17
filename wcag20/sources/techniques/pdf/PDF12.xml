@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF12">
-   <short-name>PDF 文書内のフォームフィールドの名前、役割、値情報を提供する</short-name>
+   <short-name>PDF 文書内のフォームフィールドの名前 (name)、役割 (role)、値 (value) 情報を提供する</short-name>
    <applicability>
      <p>インタラクティブなフォームフィールドが含まれているタグ付き PDF 文書</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF7">
-   <short-name>スキャンされた PDF 文書で OCR を実行し、実際のテキストを生成する</short-name>
+   <short-name>スキャンされた PDF 文書で OCR を実行し、実際のテキストを提供する</short-name>
    <applicability>
       <p>スキャンされた PDF 文書</p>
    </applicability>

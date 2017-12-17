@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF13">
-   <short-name>PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する</short-name>
+   <short-name>PDF 文書内のリンクに対して /Alt エントリを使用して置換テキストを提供する</short-name>
    <applicability>
      <p>Tagged リンクを含む PDF 文書. </p>
    </applicability>

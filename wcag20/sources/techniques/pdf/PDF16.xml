@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF16">
-   <short-name>PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する</short-name>
+   <short-name>PDF 文書の文書カタログ内の /Lang エントリを使用して主たる言語を設定する</short-name>
    <applicability>
     <p id="pdf.applicability.general">タグ付き PDF 文書</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF8">
-   <short-name>構造エレメントの E エントリによって略語の定義を提供する</short-name>
+   <short-name>構造要素の E エントリによって略語の定義を提供する</short-name>
    <applicability>
      <p>略語または頭字語を含んでいるタグ付きPDF文書</p>
    </applicability>

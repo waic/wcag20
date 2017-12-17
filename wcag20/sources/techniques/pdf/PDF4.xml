@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF4">
-   <short-name>PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する</short-name>
+   <short-name>PDF 文書の Artifact タグによって装飾的な画像を隠す</short-name>
    <applicability>
      <p id="pdf.applicability.general">タグ付き PDF 文書</p>
   </applicability>
