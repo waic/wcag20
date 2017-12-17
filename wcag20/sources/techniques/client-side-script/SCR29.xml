@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR29">
-   <short-name>静的なHTML要素にキーボード操作可能なアクションを追加する</short-name>
+   <short-name>静的なHTML要素にキーボードアクセシブルなアクションを追加する</short-name>
    <applicability>
       <p>HTML 及び XHTML、スクリプト</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR36">
-   <short-name>静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する</short-name>
+   <short-name>静的なウィンドウ又は領域にある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する</short-name>
    <applicability>
       <p>動く、点滅する、又はテキストを更新し、静的なテキスト・ブロックを生成する全てのウェブコンテンツ技術</p>
    </applicability>

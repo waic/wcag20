@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR30">
-   <short-name>リンクのラベルを変更するために、スクリプトを使用する</short-name>
+   <short-name>リンクテキストを変更するために、スクリプトを使用する</short-name>
    <applicability>
       <p>HTML及びXHTMLで使用されるクライアントサイドスクリプト</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR34">
-   <short-name>テキストサイズに応じて拡大するように、サイズ及びポジションを定める</short-name>
+   <short-name>テキストサイズに応じて拡大縮小するように、サイズ及びポジションを定める</short-name>
    <applicability>
       <p>クライアントサイド・スクリプティング</p>
    </applicability>
