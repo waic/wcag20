@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH8">
-   <short-name>フォーム・コントロールのアクセシブルな名前にグループ名を追加する</short-name>
+   <short-name>フォームコントロールのアクセシブルな名前 (accessible name) にグループ名を追加する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

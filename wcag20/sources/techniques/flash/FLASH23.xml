@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH23">
-   <short-name>データグリッドに要約を追加する</short-name>
+   <short-name>DataGridに要約を追加する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH17">
-   <short-name>Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する</short-name>
+   <short-name>Flash オブジェクトにキーボードアクセスを提供して、キーボードトラップを回避する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

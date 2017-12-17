@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH13">
-   <short-name>Flash コンテンツの言語を指定するために、HTML の lang 属性を使用する</short-name>
+   <short-name>Flash コンテンツの言語を指定するために、HTML の言語属性を使用する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

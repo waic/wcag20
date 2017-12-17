@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH22">
-   <short-name>キーボードで操作可能なアクションを静的エレメントに追加する</short-name>
+   <short-name>キーボードアクセシブルな操作を静的エレメントに追加する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
