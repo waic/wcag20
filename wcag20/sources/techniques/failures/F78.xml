@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F78">
-   <short-name>達成基準 2.4.7 の失敗例 － 要素のアウトライン及びボーダーを視覚的なフォーカスインジケータを除去する又は非表示にするようにスタイル指定する</short-name>
+   <short-name>達成基準 2.4.7 の失敗例 － 視覚的なフォーカスインジケータを除去する又は不可視にするような方法で、要素のアウトライン及びボーダーをスタイル指定する</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術</p>
    </applicability>

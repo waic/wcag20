@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F93">
-   <short-name>達成基準 1.4.2 の失敗例 － 自動再生する HTML5 のメディア要素を一時停止または停止する方法がない</short-name>
+   <short-name>達成基準 1.4.2 の失敗例 － 自動再生する HTML5 のメディア要素を一時停止又は停止する方法がない</short-name>
    <applicability>
       <p>HTML5</p>
    </applicability>

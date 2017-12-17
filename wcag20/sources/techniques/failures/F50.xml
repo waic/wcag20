@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F50">
-   <short-name>達成基準 2.2.2 の失敗例 － 点滅させるスクリプトを用いていて、その点滅を 5 秒以内に停止させるメカニズムがない</short-name>
+   <short-name>達成基準 2.2.2 の失敗例 － 5 秒以内に点滅を停止するメカニズムなしに、点滅効果を引き起こすスクリプト</short-name>
    <applicability>
       <p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p>
    </applicability>

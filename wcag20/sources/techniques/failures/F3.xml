@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F3">
-   <short-name>達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を表示させるために、CSS を使用している</short-name>
+   <short-name>達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を付加するために、CSS を使用している</short-name>
    <applicability>
       <p>CSS に対応しているウェブコンテンツ技術全て</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F42">
-   <short-name>達成基準 1.3.1 及び 達成基準 2.1.1 の失敗例 － スクリプトのイベントを用いて、プログラムで解釈できない方法で、リンクをエミュレートしている</short-name>
+   <short-name>リンクをエミュレートしている場合の達成基準 1.3.1、達成基準 2.1.1、達成基準 2.1.3、又は達成基準 4.1.2の失敗例</short-name>
    <applicability>
       <p>スクリプトを含むHTML及びXHTML。</p>
    </applicability>

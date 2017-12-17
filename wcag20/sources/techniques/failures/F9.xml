@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F9">
-   <short-name>達成基準 3.2.5 の失敗例 － 利用者がフォーカスをフォーム要素から他の要素へ移動させた際に状況を変化させる</short-name>
+   <short-name>達成基準 3.2.5 の失敗例 － 利用者がフォーカスをフォーム要素から除去するときに状況を変化させる</short-name>
    <applicability>
       <p>全般</p>
    </applicability>

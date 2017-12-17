@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F44">
-   <short-name>達成基準 2.4.3 の失敗例 － tabindex 属性を用いて、意味及び操作性を保持しないタブ順序を指定している</short-name>
+   <short-name>達成基準 2.4.3 の失敗例 － 意味及び操作性を保持しないタブ順序を作成するために、tabindex 属性を使用している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

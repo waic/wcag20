@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F81">
-   <short-name>達成基準 1.4.1 の失敗例 － 色の違いだけで、必須項目又はエラー項目を示している</short-name>
+   <short-name>達成基準 1.4.1 の失敗例 － 色の違いだけで、必須又はエラーフィールドを特定している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

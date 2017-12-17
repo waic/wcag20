@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F7">
-   <short-name>達成基準 2.2.2 の失敗例 － 例えば Java 又は Flash のようなオブジェクト又はアプレットに点滅するコンテンツがあり、5 秒よりも長く点滅するコンテンツを一時停止させるメカニズムがない</short-name>
+   <short-name>達成基準 2.2.2 の失敗例 － 5 秒よりも長く点滅するコンテンツを一時停止するメカニズムなしでコンテンツを点滅している、Java 又は Flash などのオブジェクト又はアプレット</short-name>
    <applicability>
       <p>オブジェクト、アプレット又はプラグインにおいて、点滅するコンテンツをサポートするウェブコンテンツ技術</p>
    </applicability>

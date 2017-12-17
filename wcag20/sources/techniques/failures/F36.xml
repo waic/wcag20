@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F36">
-   <short-name>達成基準 3.2.2 の失敗例 － フォームの最後のコントロールに入力すると、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</short-name>
+   <short-name>達成基準 3.2.2 の失敗例 － フォームの最後のフィールドに値を与えたときに、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

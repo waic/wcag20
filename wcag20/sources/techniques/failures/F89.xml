@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F89">
-   <short-name>達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の失敗例 － 画像のみがリンクのコンテンツの場合に、アクセシブルな名前（name）が提供されていない</short-name>
+   <short-name>達成基準 2.4.4、達成基準 2.4.9、及び 達成基準 4.1.2 の失敗例 － リンクで唯一のコンテンツである画像にアクセシブルな名前 (アクセシブルネーム) が提供されていない</short-name>
    <applicability>
       <p>リンクを提供するコンテンツ</p>
    </applicability>

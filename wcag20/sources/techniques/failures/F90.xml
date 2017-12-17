@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F90">
-   <short-name>達成基準 1.3.1 の失敗例 － headers 属性及び id 属性によってテーブルの見出しセルとデータセルが不正確に関連付けられている</short-name>
+   <short-name>達成基準 1.3.1 の失敗例 － headers 属性及び id 属性によってテーブルの見出しとコンテンツが不正確に関連付けられている</short-name>
    <applicability>
       <p>HTML 及び XHTML。</p>
    </applicability>
