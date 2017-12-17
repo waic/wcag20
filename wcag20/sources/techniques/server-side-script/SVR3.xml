@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SVR3">
-   <short-name>適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、HTTP リファラを使用する</short-name>
+   <short-name>適合しているコンテンツからのみ、適合していないコンテンツにアクセスできるように、HTTP リファラを使用する</short-name>
    <applicability>
       <p>サーバサイドのスクリプトを用いて生成されたコンテンツで、コンテンツの適合したバージョンが HTTP リファラによって不適合バージョンの代替として提供されているもの</p>
    </applicability>
