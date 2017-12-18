@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G194">
-   <short-name>スペルチェック機能を提供し、テキスト入力の修正候補を提示する</short-name>
+   <short-name>テキスト入力に対するスペルチェック及び修正候補を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

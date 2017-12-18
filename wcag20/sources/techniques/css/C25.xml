@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C25">
-   <short-name>CSS で、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</short-name>
+   <short-name>テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトをCSSで指定する</short-name>
    <applicability>
       <p>CSS を用いているウェブページ</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G131">
-   <short-name>目的や内容が分かるラベルを提供する</short-name>
+   <short-name>説明的なラベルを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

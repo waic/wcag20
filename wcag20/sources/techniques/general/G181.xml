@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G181">
-   <short-name>利用者のデータを、再認証したページで非表示データ又は暗号化されたデータとしてエンコードする</short-name>
+   <short-name>利用者のデータを、再認証したページで非表示データ又は暗号化されたデータとしてエンコーディングする</short-name>
    <applicability>
       <p>データを送信するのに、利用者認証を求め制限時間のあるウェブページ</p>
    </applicability>

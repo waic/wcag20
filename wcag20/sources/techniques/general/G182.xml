@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G182">
-   <short-name>テキストの色の違いで情報を伝える際は、視覚的な手がかりを補足する</short-name>
+   <short-name>文字色の違いが情報を伝えるために使用される場合に、利用可能な追加の視覚的な手がかりを確保する</short-name>
    <applicability>
       <p>次のように、色を用いて情報を伝えている際の色つきのテキスト：</p>
 			<ulist><item><p>パラグラフ内でリンクになっている語句</p></item><item><p>リスト内で、他のリスト項目とは異なり、色つきのテキストで提示されているリスト項目</p></item></ulist>

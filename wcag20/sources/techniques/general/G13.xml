@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G13">
-   <short-name>状況の変化を引き起こすフォームのコントロールが変化する前に、何が起こるのかを説明する</short-name>
+   <short-name>状況の変化を引き起こすフォームコントロールへの変更が行われる前に、何が起こるのかを説明する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

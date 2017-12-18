@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H36">
-   <short-name>送信 / 実行ボタンとして用いる画像の alt 属性を使用する</short-name>
+   <short-name>送信ボタンとして用いる画像の alt 属性を使用する</short-name>
    <applicability>
       <p>画像の送信/実行ボタンを使用するコンテンツに適用する。</p>
    </applicability>

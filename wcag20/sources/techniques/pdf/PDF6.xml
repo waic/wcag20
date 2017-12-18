@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF6">
-   <short-name>PDF 文書でテーブルのマークアップにテーブルエレメントを使用する</short-name>
+   <short-name>PDF 文書でテーブルのマークアップにテーブル要素を使用する</short-name>
    <applicability>
      <p>テーブルのあるタグ付き PDF 文書</p>
   </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H78">
-   <short-name>リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</short-name>
+   <short-name>リンクテキストとそれが含まれている段落とを組み合わせて、リンクの目的を特定する</short-name>
    <applicability>
       <p>リンクが含まれる全てのウェブコンテンツ技術</p>
    </applicability>

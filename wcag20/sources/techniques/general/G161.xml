@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G161">
-   <short-name>検索機能を提供して、利用者がコンテンツを見つけるのを手助けする</short-name>
+   <short-name>利用者がコンテンツを見つけるのを手助けするために検索機能を提供する</short-name>
    <applicability>
       <p>フォームを含む全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C17">
-   <short-name>テキストを含むフォームの要素を拡大する</short-name>
+   <short-name>テキストを含むフォーム要素を拡大縮小する</short-name>
    <applicability>
       <p>(X)HTML, CSS</p>
    </applicability>

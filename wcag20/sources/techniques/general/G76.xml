@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G76">
-   <short-name>自動的に更新するのではなく、利用者がコンテンツの更新を要求するメカニズムを提供する</short-name>
+   <short-name>自動的に更新する代わりに、利用者がコンテンツの更新を要求するメカニズムを提供する</short-name>
    <applicability>
       <p>自動更新をサポートする全てのウェブコンテンツ技術又はウェブコンテンツ技術の組み合わせ</p>
    </applicability>

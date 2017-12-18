@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G189">
-   <short-name>ウェブページの先頭近くに、リンクのラベルを変更するコントロールを提供する</short-name>
+   <short-name>ウェブページの先頭近くに、リンクテキストを変更するコントロールを提供する</short-name>
    <applicability>
       <p>リンクを実装できる全てのウェブコンテンツ技術</p>
    </applicability>

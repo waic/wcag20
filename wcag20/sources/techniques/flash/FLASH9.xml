@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH9">
-   <short-name>収録済みの同期したメディアにキャプションを提供する</short-name>
+   <short-name>収録済みの同期したメディアにキャプションをあてる</short-name>
    <applicability>
       <p>Adobe Flashをベースにしたコンテンツ</p>
       <ulist>

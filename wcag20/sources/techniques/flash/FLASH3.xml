@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH3">
-   <short-name>支援技術が無視できるように Flash のオブジェクトにマークを付ける</short-name>
+   <short-name>支援技術によって無視されるように Flash のオブジェクトにマークを付ける</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

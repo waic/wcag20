@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F25">
-   <short-name>達成基準 2.4.2 の失敗例 － ウェブページのページタイトルがコンテンツの内容を示していない</short-name>
+   <short-name>達成基準 2.4.2 の失敗例 － コンテンツを特定しないウェブページのタイトル</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

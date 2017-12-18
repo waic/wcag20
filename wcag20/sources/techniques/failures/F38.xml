@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F38">
-   <short-name>達成基準 1.1.1 の失敗例 － HTML で装飾を目的にして用いられている非テキストコンテンツの alt 属性を省略している</short-name>
+   <short-name>達成基準 1.1.1 の失敗例 － 支援技術が装飾的な画像を無視できる方法で、HTML でその画像をマークアップしていない</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

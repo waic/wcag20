@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G58">
-   <short-name>非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く</short-name>
+   <short-name>非テキストコンテンツのすぐ隣に、時間依存メディアの代替へのリンクを配置する</short-name>
    <applicability>
       <p>特定のウェブコンテンツ技術に依存しない。リンクをサポートする全てのウェブコンテンツ技術</p>
    </applicability>

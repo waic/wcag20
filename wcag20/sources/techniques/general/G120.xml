@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G120">
-   <short-name>単語のすぐ後に発音（読み）を提供する</short-name>
+   <short-name>単語の直後に発音 (読み) を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

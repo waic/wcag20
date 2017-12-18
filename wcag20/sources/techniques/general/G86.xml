@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G86">
-   <short-name>前期中等教育レベルを超えた読解力を必要としないテキストで要約を提供する</short-name>
+   <short-name>前期中等教育レベルの読解力をもつ人が理解できるテキストの要約を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

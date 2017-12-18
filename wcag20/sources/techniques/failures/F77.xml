@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F77">
-   <short-name>達成基準 4.1.1 の失敗例 － id 属性の値が重複している</short-name>
+   <short-name>達成基準 4.1.1 の失敗例 － ID 型の値が重複している</short-name>
    <applicability>
       <p>HTML5 及び、HTML4 と SVG を含むあらゆる XML ベースのマークアップ言語</p>
    </applicability>

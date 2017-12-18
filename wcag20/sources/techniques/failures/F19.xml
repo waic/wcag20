@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F19">
-   <short-name>適合基準 1 の失敗例 － 適合していないウェブページの代替となる適合しているバージョンを利用者が見つけられる手段を提供していない</short-name>
+   <short-name>適合要件 1 の失敗例 － 利用者に対して、不適合なウェブページの適合している代替版を見つける手段を提供していない</short-name>
    <applicability>
       <p>適合していない元のコンテンツの代替となる WCAG 適合バージョンを提供するサイト。</p>
    </applicability>

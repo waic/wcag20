@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G92">
-   <short-name>非テキストコンテンツに対して、それと同じ目的を果たし、同じ情報を提供する長い説明を提供する</short-name>
+   <short-name>非テキストコンテンツに対して、それと同じ目的を果たし、かつ同じ情報を示す長い説明を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

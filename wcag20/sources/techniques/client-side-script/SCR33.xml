@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR33">
-   <short-name>スクリプトを用いてコンテンツをスクロールし、それを一時停止できるメカニズムを提供する</short-name>
+   <short-name>コンテンツをスクロールし、かつそれを一時停止するメカニズムを提供するためにスクリプトを使用する</short-name>
    <applicability>
       <p>スクリプトでコントロールされる、コンテンツのスクロールをサポートするウェブコンテンツ技術</p>
    </applicability>

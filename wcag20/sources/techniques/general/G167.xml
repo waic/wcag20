@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G167">
-   <short-name>隣接するボタンを用いて、テキスト・フィールドの目的をラベル付けする</short-name>
+   <short-name>テキストフィールドの目的をラベル付けするために隣接するボタンを用いる</short-name>
    <applicability>
       <p>フォームをサポートするウェブコンテンツ技術すべて</p>
    </applicability>

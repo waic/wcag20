@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G87">
-   <short-name>クローズド・キャプションを提供する</short-name>
+   <short-name>クローズドキャプションを提供する</short-name>
    <applicability>
       <p>ユーザエージェントがクローズドキャプションをサポートしている音声/映像のウェブコンテンツ技術</p>
    </applicability>

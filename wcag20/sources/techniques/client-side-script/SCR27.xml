@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR27">
-   <short-name>DOM を用いて、ページ上にある複数のセクションを並び替える</short-name>
+   <short-name>Document Object Model を用いて、ページ上にある複数のセクションを並び替える</short-name>
    <applicability>
       <p>HTMLおよびXHTML、スクリプト</p>
    </applicability>

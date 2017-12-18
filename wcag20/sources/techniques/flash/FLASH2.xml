@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH2">
-   <short-name>Flash 内の非テキストオブジェクトに説明プロパティを設定する</short-name>
+   <short-name>Flash 内の非テキストオブジェクトに description プロパティを設定する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

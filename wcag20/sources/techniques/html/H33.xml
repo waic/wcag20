@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H33">
-   <short-name>title 属性を用いて、リンクテキストの文言を補足する</short-name>
+   <short-name>title 属性を用いて、リンクテキストを補足する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

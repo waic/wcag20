@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR20">
-   <short-name>キーボードとその他のデバイス特有の機能を両方とも使用する</short-name>
+   <short-name>キーボードとその他のデバイス固有の機能を両方とも使用する</short-name>
    <applicability>
       <p>機能を実装するためにスクリプトを用いる全てのコンテンツ</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G200">
-   <short-name>必要なときにだけリンク先を新しいウィンドウおよびタブで開く</short-name>
+   <short-name>必要なときにのみリンク先を新しいウィンドウ及びタブで開く</short-name>
    <applicability>
       <p>新しいウィンドウを開くウェブページ</p>
    </applicability>

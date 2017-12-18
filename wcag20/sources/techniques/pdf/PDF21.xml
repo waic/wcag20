@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF21">
-   <short-name>PDF 文書のリストにリストタグを使用する</short-name>
+   <short-name>PDF 文書内のリストにリストタグを使用する</short-name>
    <applicability>
      <p>リストが含まれているタグ付き PDF 文書</p>
    </applicability>

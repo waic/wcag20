@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G69">
-   <short-name>時間の経過の伴い変化するメディアに対して代替コンテンツを提供する</short-name>
+   <short-name>時間依存メディアに対する代替コンテンツを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

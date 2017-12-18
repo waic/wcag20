@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F55">
-   <short-name>達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の失敗例 －  フォーカスを受け取った際に、フォーカスを取り除くために、スクリプトを使用している</short-name>
+   <short-name>達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の失敗例 － フォーカスを受け取ったときに、フォーカスを取り除くために、スクリプトを使用している</short-name>
    <applicability>
       <p>スクリプトをサポートしているすべてのコンテンツに適用</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G160">
-   <short-name>コンテンツを利用するのに理解が不可欠な情報、アイデア及びプロセスの手話バージョンを提供する</short-name>
+   <short-name>コンテンツを利用するために理解が不可欠な情報、アイデア及びプロセスの手話バージョンを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G123">
-   <short-name>繰り返しているコンテンツのブロックの開始位置に、そのブロックの終了位置へのリンクを追加する</short-name>
+   <short-name>繰り返しているコンテンツのブロックの先頭に、そのブロックの末尾へのリンクを追加する</short-name>
    <applicability>
       <p>リンクを実装できる全てのウェブコンテンツ技術</p>
    </applicability>

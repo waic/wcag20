@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G204">
-   <short-name>閲覧画面の幅を狭めたときに、ユーザエージェントによるテキストの折り返しを妨げない</short-name>
+   <short-name>閲覧画面の幅を狭めたときに、ユーザエージェントによるテキストのリフローを妨げない</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G53">
-   <short-name>リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</short-name>
+   <short-name>リンクテキストとそれが含まれている文中のテキストとを組み合わせて、リンクの目的を特定する</short-name>
    <applicability>
       <p>リンクが含まれる全てのウェブコンテンツ技術</p>
    </applicability>

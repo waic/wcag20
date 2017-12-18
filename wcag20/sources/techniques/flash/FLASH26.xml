@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH26">
-   <short-name>Flash ビデオに音声解説を提供する</short-name>
+   <short-name>Flash ビデオに音声解説をつける</short-name>
    <applicability>
       <ulist>
          <item>

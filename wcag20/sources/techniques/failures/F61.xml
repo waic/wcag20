@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F61">
-   <short-name>達成基準 3.2.5 の失敗例 － 利用者がコンテンツ内で停止させることのできない自動的な更新によってメインコンテンツを完全に変更する</short-name>
+   <short-name>達成基準 3.2.5 の失敗例 － 利用者がコンテンツの中から無効にできない自動的な更新によってメインコンテンツの変更を完了する</short-name>
    <applicability>
       <p>全般</p>
    </applicability>

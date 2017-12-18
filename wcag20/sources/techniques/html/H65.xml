@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H65">
-   <short-name>label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する</short-name>
+   <short-name>label 要素を使用することができないとき、フォームコントロールを特定するために、title 属性を使用する</short-name>
    <applicability>
       <p><att>value</att>属性、<att>alt</att>属性、または要素内容で特定できないHTML及びXHTMLのフォーム・コントロール</p>
    </applicability>

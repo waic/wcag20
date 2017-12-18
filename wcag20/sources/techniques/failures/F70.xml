@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F70">
-   <short-name>達成基準 4.1.1 の失敗例 － 開始タグ及び終了タグ、又は属性のマークアップが正しくない</short-name>
+   <short-name>達成基準 4.1.1 の失敗例 － 開始タグ及び終了タグ、又は属性のマークアップを誤って使用している</short-name>
    <applicability>
       <p>マークアップ言語：HTML、XHTML、及び他のSGML又はXMLベースのウェブコンテンツ技術</p>
    </applicability>

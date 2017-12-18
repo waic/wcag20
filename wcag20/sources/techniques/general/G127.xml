@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G127">
-   <short-name>技術特有の達成方法を用いて、そのウェブページとその他の多くのウェブページとの関係を示す</short-name>
+   <short-name>あるウェブページと、より大きな一連のウェブページとの関係性を特定する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

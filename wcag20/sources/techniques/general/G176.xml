@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G176">
-   <short-name>閃光を放つエリアを十分に小さくする</short-name>
+   <short-name>閃光を放つ領域を十分に小さくする</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

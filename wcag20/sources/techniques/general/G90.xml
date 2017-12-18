@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G90">
-   <short-name>キーボードがトリガーとなるイベント・ハンドラを提供する</short-name>
+   <short-name>キーボードがトリガーとなるイベントハンドラを提供する</short-name>
    <applicability>
       <p>コンテンツに機能性を含んでいるウェブコンテンツ技術すべて</p>
    </applicability>

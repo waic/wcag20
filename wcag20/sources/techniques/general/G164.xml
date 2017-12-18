@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G164">
-   <short-name>フォームの送信後に、利用者がそのオンラインでのリクエスト（またはトランザクション）を修正またはキャンセルできる一定の時間を提供する</short-name>
+   <short-name>オンラインリクエスト後に、利用者がそのリクエスト (又はトランザクション) を修正又はキャンセルできる一定の時間を提供する</short-name>
    <applicability>
       <p>フォームを提供する全てのウェブコンテンツ技術</p>
    </applicability>

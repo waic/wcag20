@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR19">
-   <short-name>状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</short-name>
+   <short-name>select 要素の onchange イベントは、状況の変化を引き起こすことのないように使用する</short-name>
    <applicability>
       <p>スクリプトをサポートするHTML及びXHTML。この達成方法では、JavaScript 1.4 の try/catch 構文を用いる。</p>
    </applicability>

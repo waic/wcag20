@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G190">
-   <short-name>適合している代替版へのリンクを、適合していないオブジェクトの直前で提供する、又は適合していないオブジェクトと関連付ける</short-name>
+   <short-name>適合している代替版へのリンクを、不適合のオブジェクトに隣接して、又は関連付けて提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術。</p>
    </applicability>

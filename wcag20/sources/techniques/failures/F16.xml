@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F16">
-   <short-name>達成基準 2.2.2 の失敗例 － 動きが不可欠ではないところにスクロールするコンテンツがあり、そのコンテンツを一時停止及び再開するメカニズムがない</short-name>
+   <short-name>達成基準 2.2.2 の失敗例 － コンテンツを一時停止及び再開するメカニズムなしで、動きが操作に不可欠ではないところにスクロールするコンテンツを含んでいる</short-name>
    <applicability>
       <p>目で見える動きやスクロールをサポートする全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G180">
-   <short-name>利用者が初期設定の制限時間を 10 倍に設定できる手段を提供する</short-name>
+   <short-name>利用者がデフォルトの制限時間を 10 倍に設定できる手段を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

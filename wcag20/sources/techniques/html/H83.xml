@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H83">
-   <short-name>利用者の要求に応じて新しいウィンドウを開き、そのことをリンクテキストで明示するために、target 属性を使用する</short-name>
+   <short-name>利用者の要求に応じて新しいウィンドウを開くためにtarget 属性を使用して、そのことをリンクテキストで明示する</short-name>
    <applicability>
       <p>HTML5、HTML 4.01 Transitional 及び XHTML 1.0 Transitional</p>
    </applicability>

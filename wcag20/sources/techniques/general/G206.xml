@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G206">
-   <short-name>レイアウトを切り替えるオプションをコンテンツの中で提供して、利用者が横スクロールをしなくてもテキストの行を読めるようにする</short-name>
+   <short-name>利用者が横スクロールをしなくてもテキストの行を読めるようにするような、レイアウトを切り替えるオプションをコンテンツの中で提供する</short-name>
    <applicability>
       <p>スタイル切り替えをサポートしている全てのウェブコンテンツ技術</p>
    </applicability>

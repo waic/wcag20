@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C20">
-   <short-name>カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均 80 字（日本語は 40 字）以下を維持できるようにする</short-name>
+   <short-name>カラム幅に相対サイズを用いて、ブラウザの画面サイズを変更しても各行の文字数が平均 80 字以下を維持できるようにする</short-name>
    <applicability>
       <p>CSS</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G5">
-   <short-name>利用者が制限時間なしでタスクを完了できるようにする</short-name>
+   <short-name>利用者が制限時間なしで操作を完了できるようにする</short-name>
    <applicability>
       <p>この達成方法は、機能性のための制限時間付きインタラクションを求めない操作方法をサポートする、あらゆる技術又は手法に適用される。</p>
    </applicability>

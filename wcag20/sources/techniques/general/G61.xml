@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G61">
-   <short-name>繰り返される一連のコンポーネントは毎回同じ相対的順序で提示する</short-name>
+   <short-name>毎回同じ相対的順序で繰り返されるコンポーネントを提示する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

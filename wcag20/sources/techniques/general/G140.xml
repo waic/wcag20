@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G140">
-   <short-name>情報と構造を表現から分離して、異なる表現を可能にする</short-name>
+   <short-name>異なる提示を可能にするために、情報と構造を表現から分離する</short-name>
    <applicability>
       <p>あらゆるウェブコンテンツ技術。</p>
    </applicability>

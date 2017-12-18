@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G205">
-   <short-name>フォーム・コントロールの、色がついたラベルに対して、テキストによる手がかりを提供する</short-name>
+   <short-name>色のついたフォームコントロールのラベルに対して、テキストによる手がかりを含める</short-name>
    <applicability>
       <p>色とテキストをサポートするすべてのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H2">
-   <short-name>隣り合った画像とテキストリンクを同じリンクの中に入れる</short-name>
+   <short-name>同じリソースに対して隣接する画像とテキストリンクを結合する</short-name>
    <applicability>
       <p>リンク機能を提供する HTML4、HTML5 及び XTHML ドキュメント</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F31">
-   <short-name>達成基準 3.2.4 の失敗例 － ウェブページ一式の様々なウェブページ上にある同じ機能に対して、2つの異なるラベルを使用している</short-name>
+   <short-name>達成基準 3.2.4 の失敗例 － ウェブページ一式の中で異なるウェブページ上の同じ機能に対して、2 つの異なるラベルを使用している</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

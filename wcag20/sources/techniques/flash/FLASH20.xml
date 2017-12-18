@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH20">
-   <short-name>フォーカス表示を視覚的により認識しやすくするために Flash コンポーネントのスキンを切り替える</short-name>
+   <short-name>非常に目立つフォーカス表示を提供するために Flash コンポーネントのスキンを切り替える</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

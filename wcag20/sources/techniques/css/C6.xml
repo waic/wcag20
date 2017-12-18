@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C6">
-   <short-name>構造を示すマークアップをした上で、コンテンツを配置する</short-name>
+   <short-name>構造を示すマークアップに基づいてコンテンツを配置する</short-name>
    <applicability>
       <p>CSS に対応しているウェブコンテンツ技術全て</p>
    </applicability>

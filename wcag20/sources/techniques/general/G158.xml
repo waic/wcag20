@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G158">
-   <short-name>時間の経過に伴って変化するメディアの音声しか含まないコンテンツに対して代替コンテンツを提供する</short-name>
+   <short-name>音声のみの時間依存メディアに対する代替コンテンツを提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術。</p>
    </applicability>

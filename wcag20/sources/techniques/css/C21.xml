@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C21">
-   <short-name>行送りを CSS で指定する</short-name>
+   <short-name>行送り幅を CSS で指定する</short-name>
    <applicability>
       <p>CSSをサポートする全てのウェブコンテンツ技術</p>
    </applicability>

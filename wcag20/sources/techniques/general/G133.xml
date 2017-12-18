@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G133">
-   <short-name>複数の画面で構成されるフォームの最初のページに、利用者がセッションの制限時間を延長又は解除できるチェックボックスを提供する</short-name>
+   <short-name>複数部分で構成されるフォームの最初のページに、利用者がセッションの制限時間を延長又は解除を要求できるチェックボックスを提供する</short-name>
    <applicability>
       <p>複数の画面で構成されるフォームのあるコンテンツ</p>
    </applicability>

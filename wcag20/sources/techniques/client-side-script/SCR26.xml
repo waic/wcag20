@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR26">
-   <short-name>動的なコンテンツを DOM のそのトリガーとなる要素の直後に挿入する</short-name>
+   <short-name>動的なコンテンツを、Document Object Model の、そのトリガーとなる要素の直後に挿入する</short-name>
    <applicability>
       <p>HTML及びXHTML、スクリプト</p>
    </applicability>
