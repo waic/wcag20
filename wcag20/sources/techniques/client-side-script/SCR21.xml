@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR21">
-   <short-name>ページにコンテンツを追加するために、Document Object Model (DOM)の機能を使用する</short-name>
+   <short-name>ページにコンテンツを追加するために、Document Object Model (DOM) の機能を使用する</short-name>
    <applicability>
       <p>HTML及びXHTMLの中で利用されるECMAScript</p>
    </applicability>

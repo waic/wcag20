@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F74">
-   <short-name>達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する同期したメディアによる代替であることを代替としてラベル付けしていない</short-name>
+   <short-name>達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する同期したメディアによる代替を、代替としてラベル付けしていない</short-name>
    <applicability>
       <p>テキストに対する代替である同期したメディアを提供しているウェブページ</p>
    </applicability>
