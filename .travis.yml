@@ -11,7 +11,7 @@ install:
 git:
   depth: 3
 branches:
-  only: wg4_translation
+  only: master
 before_script:
 - git config --global user.email "bakera@star.email.ne.jp"
 - git config --global user.name "MINAZUKI, Bakera"
