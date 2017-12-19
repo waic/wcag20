@@ -10,6 +10,7 @@ GitHub 上でビルドされたファイルはそれぞれ
 
 から閲覧可能です。
 
+なお、[WCAG 2.0 クイックリファレンス](https://waic.jp/docs/WCAG20/quickref/) のレポジトリは、[waic/wai-wcag-quickref](https://github.com/waic/wai-wcag-quickref) になります。
 
 ## ローカルでのビルド方法
 
