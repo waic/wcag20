@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF5">
-   <short-name>PDF フォームで必須項目のフォーム・コントロールを示す</short-name>
+   <short-name>PDF フォームで必須項目のフォームコントロールを示す</short-name>
    <applicability>
      <p>フォームを持つタグ付き PDF 文書</p>
   </applicability>

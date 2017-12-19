@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF23">
-   <short-name>PDF 文書内でインタラクティブなフォーム・コントロールを提供する</short-name>
+   <short-name>PDF 文書内でインタラクティブなフォームコントロールを提供する</short-name>
    <applicability>
      <ulist>
       <item>

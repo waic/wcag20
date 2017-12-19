@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR37">
-   <short-name>デバイス非依存な方法でカスタム・ダイアログを作成する</short-name>
+   <short-name>デバイス非依存な方法でカスタムダイアログを作成する</short-name>
    <applicability>
       <p>スクリプトで使用されるHTML及びXHTML</p>
    </applicability>
