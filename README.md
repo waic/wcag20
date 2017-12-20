@@ -10,6 +10,7 @@ GitHub 上でビルドされたファイルはそれぞれ
 
 から閲覧可能です。
 
+なお、[WCAG 2.0 クイックリファレンス](https://waic.jp/docs/WCAG20/quickref/) のレポジトリは、[waic/wai-wcag-quickref](https://github.com/waic/wai-wcag-quickref) になります。
 
 ## ローカルでのビルド方法
 
@@ -53,7 +54,17 @@ XML のファイル名は URL に対応します。
 
 ## Pull Request 等について
 
-Pull Request は、ブランチ `wg4_translation` にお願いします。XML なので難易度が高い (このファイルは手を抜いているので、XSLT については一切解説していません) という場合は、issue を立ててもらっても構いません。どちらの方法でも歓迎します。
-`wg4_translation` に push されれば、Travis CI により `gh_pages` に出力されるようになっています。
+Pull Request は、ブランチ `master` にお願いします。XML なので難易度が高い (このファイルは手を抜いているので、XSLT については一切解説していません) という場合は、issue を立ててもらっても構いません。どちらの方法でも歓迎します。
+`master` に push されれば、Travis CI により `gh_pages` に出力されるようになっています。
 メールで込み入った質問等をしたい場合は、[WAIC のお問い合わせページ](http://waic.jp/contact/)にお願いします。
+
+### ブランチの運用（参考情報）
+
+基本、GitHub Flow での運用を考えています。以下のようなフローを想定しています。
+
+- `master` ブランチがリリース可能な最新の状態となるようにする (GitHub Pages でも `master` の内容が見えるようにする)
+- 作業時にはブランチを切って作業を開始する　ブランチの名前は作業の性質に応じたものとする
+- 作業中は適宜ブランチを push する
+- 作業が終わったところでプルリクエストを出す
+- 作業内容に問題ないことが確認出来たら `master` にマージする
 
