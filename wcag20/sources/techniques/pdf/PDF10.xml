@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF10">
-   <short-name>PDF 文書内のインタラクティブなフォーム・コントロールにラベルを付ける</short-name>
+   <short-name>PDF 文書内のインタラクティブなフォームコントロールにラベルを付ける</short-name>
    <applicability>
      <ulist>
       <item>

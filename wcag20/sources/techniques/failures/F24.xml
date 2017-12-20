@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE technique SYSTEM "../../xmlspec.dtd">
 <technique id="F24">
-   <short-name>達成基準 1.4.3、1.4.6 及び 1.4.8 の失敗例 － 背景色を指定せずに前景色を指定する（又は、前景色を指定せずに背景色を指定する）</short-name>
+   <short-name>達成基準 1.4.3、1.4.6 及び 1.4.8 の失敗例 － 背景色を指定せずに前景色を指定する (又は、前景色を指定せずに背景色を指定する)</short-name>
    <applicability>
       <p>ユーザエージェントが個人のスタイルシート又は他の方法を通して前景と背景の色を制御することを可能にする全てのウェブコンテンツ技術</p>
    </applicability>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H93">
-   <short-name>ウェブページの <att>id</att> 属性値が一意的（ユニーク）であるようにする</short-name>
+   <short-name>ウェブページの <att>id</att> 属性値が一意的 (ユニーク) であるようにする</short-name>
    <applicability>
       <p>HTMLのウェブページすべて</p>
    </applicability>

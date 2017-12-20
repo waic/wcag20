@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="SCR2">
-   <short-name>キーボード及びマウスのイベント・ハンドラを両方とも使用する</short-name>
+   <short-name>キーボード及びマウスのイベントハンドラを両方とも使用する</short-name>
    <applicability>
       <p>スクリプトをサポートしているHTML及びXHTML</p>
    </applicability>
