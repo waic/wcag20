@@ -24,6 +24,7 @@
       </item>
     </olist>
     <p>リンクがダイアログを開閉できたり、キーボードのフォーカスが外れるとダイアログが閉じるようにしたりすることはすばらしいが、必ずしも必要なわけではない。</p>
+      <a11ysuprorted rating="pass" exnumber="0"/>
   </description>
    <examples>
       <eg-group>

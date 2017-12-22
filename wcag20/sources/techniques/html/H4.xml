@@ -49,10 +49,12 @@
   </tr>
  </table>
 </form>]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>ウェブページは上部の右端に検索フィールドを提供している。コンテンツの順番が最初ではないが、タブ順番が最初になるようにフィールドには tabindex="1" が与えられている。</p>
       </description>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <description><p><att>tabindex</att> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ <att>tabindex</att> 値を持つ要素は、その文字の出現順にナビゲートされる。</p>
