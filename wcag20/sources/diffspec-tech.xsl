@@ -377,4 +377,42 @@ BBC: This is all called in a previous XSLT, so commented out here. -->
 <xsl:template match="termref[ancestor-or-self::*[@diff='del']] | specref[ancestor-or-self::*[@diff='del']]">
 	<xsl:value-of select="key('ids', @def)/label"/>
 </xsl:template>
+
+<!-- AS情報 -->
+<xsl:template match="a11ysuprorted">
+<xsl:variable name="rate" select="@rating"/>
+<xsl:variable name="id" select="ancestor::technique/@id"/>
+<xsl:variable name="subid" select="@exnumber"/>
+<div class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+<xsl:choose>
+  <xsl:when test="$subid != 0">
+    <xsl:value-of select="$id"/>-<xsl:value-of select="$subid"/>
+  </xsl:when>
+  <xsl:otherwise>
+    <xsl:value-of select="$id"/>
+  </xsl:otherwise>
+</xsl:choose>
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p>
+<p>2014 年 6 月版の<xsl:choose>
+  <xsl:when test="$subid != 0">
+    <a href="https://waic.jp/docs/as/info/201406/{$id}-{$subid}.html">アクセシビリティ・サポーテッド（AS）情報：<xsl:value-of select="$id"/>-<xsl:value-of select="$subid"/></a>
+  </xsl:when>
+  <xsl:otherwise>
+    <a href="https://waic.jp/docs/as/info/201406/{$id}.html">アクセシビリティ・サポーテッド（AS）情報：<xsl:value-of select="$id"/></a> 
+  </xsl:otherwise>
+</xsl:choose>
+
+<xsl:choose>
+  <xsl:when test="$rate = 'good'">
+    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
+  </xsl:when>
+  <xsl:when test="$rate = 'pass'">
+    では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
+  </xsl:when>
+  <xsl:when test="$rate = 'bad'">
+    では、「達成不可能」と評価されている。WAIC はウェブ制作者がこの達成方法を使用することを推奨しない。
+  </xsl:when>
+</xsl:choose>
+</p></div>
+</xsl:template>
 </xsl:stylesheet>
