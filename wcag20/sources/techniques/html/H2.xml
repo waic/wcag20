@@ -34,6 +34,7 @@
   <img src="house.gif" alt="HOMEページのアイコン">
   HOMEページへ戻る
 </a>     ]]></code>
+    <a11ysuprorted rating="pass" exnumber="2"/>
       </eg-group>
     </examples>
    <resources>

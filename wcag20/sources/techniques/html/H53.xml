@@ -26,18 +26,21 @@
       <code><![CDATA[<object classid="http://www.example.com/analogclock.py">
   <p>ここにオブジェクトとその操作方法に関するテキストを記述する。</p>
 </object>]]></code>
+    <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>代替テキストのある非テキストコンテンツを含んだオブジェクト</head>
       <code><![CDATA[<object classid="http://www.example.com/animatedlogo.py">
   <img src="staticlogo.gif" alt="会社名" />
 </object>]]></code>
+    <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>機能の簡単な説明を含んだ画像オブジェクト</head>
       <code><![CDATA[<object data="companylogo.gif" type="image/gif">
   <p>会社名</p>
 </object>]]></code>
+    <a11ysuprorted rating="bad" exnumber="3"/>
     </eg-group>
       <eg-group>
          <description>

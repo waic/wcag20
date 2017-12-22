@@ -19,10 +19,12 @@
 </description>
       <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="無料のニュースレター：
 無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら" />]]></code>
+      <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>ウェブサイト上にある画像は、ビルの間取り図を表現している。その画像は、各部屋の部分がインタラクティブに操作できるイメージマップである。代替テキストは「ビルの間取り図。各部屋の目的又は内容に関する詳しい情報は、部屋を選択してください」である。 「部屋を選択してください」という指示により、画像がインタラクティブであることを示している。</p>
 </description>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>
    <resources>
