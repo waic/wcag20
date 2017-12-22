@@ -40,6 +40,7 @@
   </ul>
 </li>
 </ul> ]]></code>
+      <a11ysuprorted rating="bad" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>複数のホテルに関する情報のブロック</head>
@@ -65,6 +66,7 @@
   </ul>
 </li>
 </ul> ]]></code>
+      <a11ysuprorted rating="bad" exnumber="2"/>
     </eg-group>
    </examples>
    <resources/>

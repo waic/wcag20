@@ -30,6 +30,7 @@
     <a href="mkguitars.htm">ギター作りについて</a>
   </li>
 </ul>]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>ビデオゲームのダウンロードリスト</head>
@@ -55,6 +56,7 @@
     <a href="Warhammer_40k.mpeg">（デモのダウンロード）</a>
   </li>
 </ul>]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>
    <resources/>
