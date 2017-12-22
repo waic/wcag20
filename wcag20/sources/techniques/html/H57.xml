@@ -53,6 +53,7 @@
 	...document écrit en français...   
 </body>
 </html>]]></code>
+      <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、text/htmlというコンテンツタイプのXHTML 1.0文書の内容がフランス語であることを明確にしている。XHTML仕様の要求に合致しつつ、HTMLとの後方互換性を確保するために、<att>lang</att>属性と<att>xml:lang</att>属性の両方を指定している。</p>
@@ -68,6 +69,7 @@
 ...document écrit en français...      
 </body>
 </html>]]></code>
+      <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、application/xhtml+xmlというコンテンツタイプのXHTML 1.1文書の内容がフランス語であることを明確にしている。<att>xml:lang</att>属性のみを指定している。</p>
@@ -83,6 +85,7 @@
 	...document écrit en français... 
 </body>
 </html>]]></code>
+      <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
    </examples>
    <resources>
