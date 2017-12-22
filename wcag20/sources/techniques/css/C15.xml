@@ -58,6 +58,7 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
   background-color: #DCFFFF;
   color:#000066;
 }]]></code>
+      <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>フォーカスを受け取った要素をハイライトする</head>
