@@ -119,6 +119,7 @@
       <description><exsubhead>事例 1c</exsubhead><p>事例 1c では、画像の代替テキストとリンクテキストをが組み合わせるときにいくつかの支援技術では空白文字を自動的に挿入しない。テキストが空白文字抜きで組み合わないようにするときは、画像と隣接した単語の間に空白を入れるのが最も安全であり、それらの単語が合流しない。</p>
 </description>
       <code role="xhtml"><![CDATA[<a href="www.example.com">テキスト<img src="example_logo.gif" alt="例"></a> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1c"/>
     </eg-group>
     <eg-group>
       <head>ボタン</head>
