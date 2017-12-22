@@ -32,6 +32,7 @@
       <p>複雑なテーブルについては、<specref ref="H43"/>の通り、<att>id</att> 属性と <att>headers</att> 属性を利用する。</p>
        <p>1つの複雑な表よりも、単純な複数の表を用いて作業するほうが簡単だと思う利用者もいるだろう。制作者は、複雑な表を1つ以上の単純な表に変換できるかどうかを検討したい場合がある。</p>
     </note>
+      <a11ysuprorted rating="pass" exnumber="0"/>
   </description>
    <examples>
       <eg-group>

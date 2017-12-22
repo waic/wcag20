@@ -50,6 +50,7 @@
      </optgroup>
    </select>
 </form> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>次の事例は、複数選択式リストで <el>optrgroup</el> 要素をどのように用いるかを示している。</p>
@@ -94,6 +95,7 @@
   </optgroup>
 </select>
 </form> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>
    <resources>

@@ -40,6 +40,7 @@
   </tr>
   …
 </table> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head><att>summary</att> 属性と <el>caption</el> 要素の両方があるデータテーブル</head>
@@ -52,6 +53,7 @@
   <caption>7系統、市街地行き（平日）</caption>
 …
 </table> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>
    <resources>

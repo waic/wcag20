@@ -41,6 +41,7 @@
 の正当な所有物であると考えられるようになる。</p>
 </blockquote>
       ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <description><p>車の取扱説明書にエンジンのかけ方の説明がある。説明書きには、ギアがニュートラルになっていることを確かめるようにとの警告がある。筆者は、その警告は非常に重要で強調されるべきであると考えていたため、警告は<el>strong</el>要素を用いてマークアップされている。</p>
@@ -51,6 +52,7 @@
 次にキーを点火の位置まで回す。
 エンジンは始動する。</p>
             ]]></code>
+      <a11ysuprorted rating="pass" exnumber="3"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、テキストを強調するために<el>em</el> 及び <el>strong</el>要素をどのように用いたらよいかを示している。</p>
@@ -59,6 +61,7 @@
 <p>彼女が<em>本当に</em> 言おうとしていたのは、
 「良いのではない、<strong>すばらしい</strong>のだ!」</p>
             ]]></code>
+      <a11ysuprorted rating="pass" exnumber="4"/>
     </eg-group>
     <eg-group>
       <head>強調及び背景色を用いて重要な情報を視覚的かつセマンティックに特定する。</head>
@@ -73,6 +76,7 @@ font-style:normal;
 <p>新出単語は強調され、背景色が空色になっている</p>
 <p>その芝居への<em class="vocab">痛烈な</em>批評はやや行きすぎのようであった。 </p>
             ]]></code>
+      <a11ysuprorted rating="pass" exnumber="5"/>
     </eg-group>
    </examples>
    <resources>
