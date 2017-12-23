@@ -12,15 +12,27 @@
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.20.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="https://www.w3.org/WAI/WCAG20/Techniques/ua-notes/html#H48">H48 に関するユーザエージェントサポートノート (英語)</a>を参照のこと。</p></div><h2 id="H48-description">解説</h2><div class="textbody"><p>この達成方法の目的は、リスト要素を役割に合わせて適切に利用し、関連する項目のリストを生成することである。<code>ol</code> 要素は順序のあるリストに、<code>ul</code> 要素は順序のないリストに利用する。定義リスト（<code>dl</code> 要素）は、用語とその定義をまとめるのに利用する。このようなマークアップを用いることで、リストを読みやすくできるとはいえ、すべてのリストをリスト要素でマークアップする必要はない。たとえば、文章に含まれるカンマ区切りのリストを、リスト要素でマークアップする必要はない。</p><p>リストの関係を示すためではなく、見た目をリストのようにしたいためにマークアップを用いることで、利用者が情報を利用しにくくなる恐れがある。リストのような見た目にする例としては、リスト項目の最初にアスタリスクを付け、<code>br</code> 要素を用いて各リスト項目を分けるといったことが挙げられる。</p><p>支援技術の中には、利用者をリストからリストへ、またはリスト項目からリスト項目へと誘導する機能を備えているものがある。スタイルシートを利用すれば、リストという役割の整合性を保ったまま、表現を変更することができる。</p><p>リスト構造（<code>ul</code> / <code>ol</code>）はハイパーリンクをグループ化するのにも役立つ。これが完了すると、スクリーンリーダーがリストの最初の項目からリストの最後までナビゲートする、または次のリストにジャンプするのに役立つ。 この選択により、リンクグループをバイパス化することができる。</p></div><h2 class="small-head" id="H48-examples">事例</h2><h3 class="small-head" id="H48-ex1">事例 1: 連続するステップを示すリスト</h3><div class="example"><div class="textbody"><p>この事例では、プロセスの連続するステップを示すために順序リスト（<code>ol</code> 要素）を利用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ol&gt;
   &lt;li&gt;卵と牛乳をボールの中で混ぜる。&lt;/li&gt;
   &lt;li&gt;塩とコショウを加える。&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div></div><h3 class="small-head" id="H48-ex2">事例 2: 材料のリスト</h3><div class="example"><div class="textbody"><p>この事例では、お店で購入する品目を順不同リスト（<code>ul</code> 要素）で示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
+&lt;/ol&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+H48-1
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H48-1.html">アクセシビリティ・サポーテッド（AS）情報：H48-1</a>
+    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
+  </p></div></div><h3 class="small-head" id="H48-ex2">事例 2: 材料のリスト</h3><div class="example"><div class="textbody"><p>この事例では、お店で購入する品目を順不同リスト（<code>ul</code> 要素）で示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
   &lt;li&gt;牛乳&lt;/li&gt;
   &lt;li&gt;卵&lt;/li&gt;
   &lt;li&gt;バター&lt;/li&gt;
-&lt;/ul&gt;</code></pre></div></div><h3 class="small-head" id="H48-ex3">事例 3: 言葉とその定義</h3><div class="example"><div class="textbody"><p>この事例では、用語とそれを明確にする定義をまとめるのに定義リスト（<code>dl</code> 要素）を利用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&gt;&lt;dl&gt;
+&lt;/ul&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+H48-2
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H48-2.html">アクセシビリティ・サポーテッド（AS）情報：H48-2</a>
+    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
+  </p></div></div><h3 class="small-head" id="H48-ex3">事例 3: 言葉とその定義</h3><div class="example"><div class="textbody"><p>この事例では、用語とそれを明確にする定義をまとめるのに定義リスト（<code>dl</code> 要素）を利用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&gt;&lt;dl&gt;
   &lt;dt&gt;点滅&lt;/dt&gt;
   &lt;dd&gt;1 秒当たり 0.5 回から 3 回、ついたり消えたりすること
   &lt;/dd&gt;
-&lt;/dl&gt;</code></pre></div></div><h3 class="small-head" id="H48-ex4">事例 4: 定義リストを用いた連絡先情報</h3><div class="example"><div class="textbody"><p>この事例では、定義リストを用いて、対になる関連するアイテムをマークアップしている。対になっているアイテムは、それ自体が論理的に関連したリストである。定義リスト要素の CSS スタイルはブラウザによるサポートが十分ではないため、スタイル目的のためだけに span 要素がマークアップに含められているが、これは必須ではない。</p></div><div class="code"><pre><code>&lt;dl&gt;
+&lt;/dl&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+H48-3
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H48-3.html">アクセシビリティ・サポーテッド（AS）情報：H48-3</a>
+    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
+  </p></div></div><h3 class="small-head" id="H48-ex4">事例 4: 定義リストを用いた連絡先情報</h3><div class="example"><div class="textbody"><p>この事例では、定義リストを用いて、対になる関連するアイテムをマークアップしている。対になっているアイテムは、それ自体が論理的に関連したリストである。定義リスト要素の CSS スタイルはブラウザによるサポートが十分ではないため、スタイル目的のためだけに span 要素がマークアップに含められているが、これは必須ではない。</p></div><div class="code"><pre><code>&lt;dl&gt;
 &lt;dt&gt;&lt;span&gt;名前：&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;John Doe&lt;/span&gt;&lt;/dd&gt;
 &lt;dt&gt;&lt;span&gt;電話番号：&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;01-2345678&lt;/span&gt;&lt;/dd&gt;
 &lt;dt&gt;&lt;span&gt;FAX：&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;&lt;span&gt;02-3456789&lt;/span&gt;&lt;/dd&gt;
