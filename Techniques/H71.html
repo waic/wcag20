@@ -26,11 +26,7 @@
   &lt;label for="hem"&gt;アーネスト ヘミングウェイ&lt;/label&gt;&lt;br /&gt;
   &lt;input type="radio" id="dickens" name="hamlet" value="e"&gt;
   &lt;label for="dickens"&gt;チャールズ ディケンズ&lt;/label&gt;
-&lt;/fieldset&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
-H71-1
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H71-1.html">アクセシビリティ・サポーテッド（AS）情報：H71-1</a>
-    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h3 class="small-head" id="H71-ex2">事例 2: チェックボックスのグループ</h3><div class="example"><div class="textbody"><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス（<code>input type="checkbox"</code>）には、<code>label</code> がある。すべてのチェックボックスは、<code>fieldset</code> 要素に含められており、<code>legend</code> 要素にはチェックボックスのグループ全体の説明がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;
+&lt;/fieldset&gt;</code></pre></div></div><h3 class="small-head" id="H71-ex2">事例 2: チェックボックスのグループ</h3><div class="example"><div class="textbody"><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス（<code>input type="checkbox"</code>）には、<code>label</code> がある。すべてのチェックボックスは、<code>fieldset</code> 要素に含められており、<code>legend</code> 要素にはチェックボックスのグループ全体の説明がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;
   &lt;legend&gt;次のことに興味があります（全て選択することも可）&lt;/legend&gt;
   &lt;input type="checkbox" id="photo" name="interests" value="ph"&gt;
   &lt;label for="photo"&gt;写真&lt;/label&gt;&lt;br /&gt;
@@ -39,11 +35,7 @@ H71-1
   &lt;input type="checkbox" id="acrylic" name="interests" checked="checked" value="ac"&gt;
   &lt;label for="acrylic"&gt;アクリル画&lt;/label&gt;
   …
-&lt;/fieldset&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
-H71-2
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H71-2.html">アクセシビリティ・サポーテッド（AS）情報：H71-2</a>
-    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h3 class="small-head" id="H71-ex3">事例 3: 同じ名前を付けたフィールドとして送信されるラジオボタン</h3><div class="example"><div class="textbody"><p>この事例では、1人の哲学者を選ぶように利用者に求めている。各ラジオボタンが関連している（同じフィールドとして送信される）ことを示すために「<code>name</code>」属性で同じ値を指定し、見た目としてもグループ化すべき点に注意しよう。また、「<code>name</code>」属性は同じ値であっても、「<code>id</code>」属性はそれぞれ一意的な値でなければならない点にも注意しよう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/vote" method="post"&gt;
+&lt;/fieldset&gt;</code></pre></div></div><h3 class="small-head" id="H71-ex3">事例 3: 同じ名前を付けたフィールドとして送信されるラジオボタン</h3><div class="example"><div class="textbody"><p>この事例では、1人の哲学者を選ぶように利用者に求めている。各ラジオボタンが関連している（同じフィールドとして送信される）ことを示すために「<code>name</code>」属性で同じ値を指定し、見た目としてもグループ化すべき点に注意しよう。また、「<code>name</code>」属性は同じ値であっても、「<code>id</code>」属性はそれぞれ一意的な値でなければならない点にも注意しよう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/vote" method="post"&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;あなたが好きな哲学者&lt;/legend&gt;
     &lt;input type="radio" name="philosopher" id="philosopher_socrates" value="socrates"/&gt;
@@ -53,11 +45,7 @@ H71-2
     &lt;input type="radio" name="philosopher" id="philosopher_aristotle" value="aristotle"/&gt;
     &lt;label for="philosopher_aristotle"&gt;アリストテレス&lt;/label&gt;
   &lt;/fieldset&gt;
-  &lt;/form&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></div></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
-H71-3
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H71-3.html">アクセシビリティ・サポーテッド（AS）情報：H71-3</a>
-    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h3 class="small-head" id="H71-ex4">事例 4: 論理的に関連付けたコントロール</h3><div class="example"><div class="textbody"><p>この事例では、居住地と郵送先のフィールドを別々に <code>fieldset</code> 要素でグループ化し、<code>legend</code> 要素で異なる内容を指定している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/adduser" method="post"&gt;
+  &lt;/form&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></div></div></div><h3 class="small-head" id="H71-ex4">事例 4: 論理的に関連付けたコントロール</h3><div class="example"><div class="textbody"><p>この事例では、居住地と郵送先のフィールドを別々に <code>fieldset</code> 要素でグループ化し、<code>legend</code> 要素で異なる内容を指定している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://example.com/adduser" method="post"&gt;
    &lt;fieldset&gt;
      &lt;legend&gt;居住地&lt;/legend&gt;
      &lt;label for="raddress"&gt;住所: &lt;/label&gt;
@@ -74,11 +62,7 @@ H71-3
      &lt;input type="text" id="pzip" name="pzip" /&gt;
      ……郵送先の入力内容が続く……
    &lt;/fieldset&gt;
-&lt;/form&gt; </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
-H71-4
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H71-4.html">アクセシビリティ・サポーテッド（AS）情報：H71-4</a>
-    では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h2 id="H71-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01 <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-checked">Checkboxes</a>
+&lt;/form&gt; </code></pre></div></div><h2 id="H71-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01 <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-checked">Checkboxes</a>
 								       </p></li><li><p>
 									         <a href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</a>
 								       </p></li></ul></div><h2 id="H71-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="H44.html">H44: テキストラベルとフォームコントロールを関連付けるために、label 要素を使用する</a></li><li><a href="H65.html">H65: label 要素を使用することができないとき、フォームコントロールを特定するために、title 属性を使用する</a></li></ul></div><h2 id="H71-tests">検証</h2><div class="textbody"><h3 class="small-head" id="H71-procedure">チェックポイント</h3><p>関連するコントロールのグループにおいて、各コントロールの個々のラベルが十分な記述を提供しておらず、追加でグループレベルの記述が必要な場合</p><ol class="enumar"><li><p>論理的に関連している <code>input</code> 要素又は <code>select</code> 要素のグループが、1 つの <code>fieldset</code> 要素内に含められている。</p></li><li><p>各 <code>fieldset</code> 要素には、そのグループの説明を含めた <code>legend</code> 要素が指定されている。</p></li></ol><h3 class="small-head" id="H71-results">判定基準</h3><ul><li><p>上記全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="H70: 繰り返されているコンテンツのブロックをグループ化するために、frame 要素を使用する" href="H70.html"><strong>前: </strong>

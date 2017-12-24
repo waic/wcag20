@@ -9,11 +9,7 @@
 						How to Meet 1.3.1 (情報及び関係性)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
-					</a></li></ul></li></ul><h2 id="H43-description">解説</h2><div class="textbody"><p>この達成方法の目的は、（データテーブル内の）各データセルを適切な見出しセルと関連付けることである。まず、各データセル（<code>td</code>要素）に<code>headers</code>属性を付加する。次に、データセルの見出しとなるセルには<code>id</code>属性を指定する。データセルの<code>headers</code>属性で指定するのは、関連付けられる見出しセルの<code>id</code>属性値であり、2つ以上の<code>id</code>を含める場合はスペース区切りで列挙する。</p><p>この達成方法は、データセルを2つ以上の行見出し及び（又は）列見出しに関連付ける場合に利用する。こうすることで、<code>th</code>要素のみ、または<code>th</code>要素に<code>scope</code>属性を付けただけでは、データセルと見出しセルの関係が複雑すぎて定義できない場合でも、スクリーンリーダーは各データセルと関連付けられている見出しセルを読み上げることができる。また、表現形式が変わったとしても、これらの複雑な関係を知覚しやすくなる。</p><p>この達成方法を、レイアウトテーブルに利用することは推奨しない。なぜなら、レイアウトのためにテーブルを利用する際には、意味がないにも関らず何らかの関係性を示してしまうことになるからである。</p><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
-H43
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H43.html">アクセシビリティ・サポーテッド（AS）情報：H43</a>
-    では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
-  </p></div></div><h2 class="small-head" id="H43-examples">事例</h2><h3 class="small-head" id="H43-ex1">事例 1: 行見出しが複数あるテーブル</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;table&gt;
+					</a></li></ul></li></ul><h2 id="H43-description">解説</h2><div class="textbody"><p>この達成方法の目的は、（データテーブル内の）各データセルを適切な見出しセルと関連付けることである。まず、各データセル（<code>td</code>要素）に<code>headers</code>属性を付加する。次に、データセルの見出しとなるセルには<code>id</code>属性を指定する。データセルの<code>headers</code>属性で指定するのは、関連付けられる見出しセルの<code>id</code>属性値であり、2つ以上の<code>id</code>を含める場合はスペース区切りで列挙する。</p><p>この達成方法は、データセルを2つ以上の行見出し及び（又は）列見出しに関連付ける場合に利用する。こうすることで、<code>th</code>要素のみ、または<code>th</code>要素に<code>scope</code>属性を付けただけでは、データセルと見出しセルの関係が複雑すぎて定義できない場合でも、スクリーンリーダーは各データセルと関連付けられている見出しセルを読み上げることができる。また、表現形式が変わったとしても、これらの複雑な関係を知覚しやすくなる。</p><p>この達成方法を、レイアウトテーブルに利用することは推奨しない。なぜなら、レイアウトのためにテーブルを利用する際には、意味がないにも関らず何らかの関係性を示してしまうことになるからである。</p></div><h2 class="small-head" id="H43-examples">事例</h2><h3 class="small-head" id="H43-ex1">事例 1: 行見出しが複数あるテーブル</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;table&gt;
    &lt;tr&gt;
      &lt;th rowspan="2" id="h"&gt;予習&lt;/th&gt;
      &lt;th colspan="3" id="e"&gt;試験&lt;/th&gt;
