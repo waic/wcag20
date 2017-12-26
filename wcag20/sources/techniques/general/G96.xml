@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G96">
-   <short-name>理解させる必要のあるアイテムを感覚的にだけ伝えるのではなく、テキストによる識別情報もあわせて提供する。</short-name>
+   <short-name>理解させる必要のあるアイテムを感覚的にだけ伝えるのではなく、テキストによる識別情報もあわせて提供する</short-name>
    <applicability>
       <p>利用者に対して、コンテンツの説明を描画して提示する全てのウェブコンテンツ技術</p>
    </applicability>
