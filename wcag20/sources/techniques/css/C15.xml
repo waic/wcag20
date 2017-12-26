@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C15"><!-- This technique was combined with C16 -->
-   <short-name>ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSSを使用する</short-name>
+   <short-name>ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSS を使用する</short-name>
    <applicability>
       <p>CSS、HTML 及び XHTML</p>
    </applicability>
