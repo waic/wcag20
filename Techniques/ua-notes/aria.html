@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+ <head>
+  <title>ARIA の達成方法のためのユーザエージェントサポートノート</title>
+  <meta charset="UTF-8">
+ </head>
+ <body>
+  <h1>ARIA の達成方法のためのユーザエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/aria">ARIA の達成方法</a>のためのユーザエージェントサポートノートを記載する。</p>
+  <ul class="toc">
+   <li class="toc">
+    <a href="#ARIA1">ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA2">aria-requiredプロパティによって必須項目を特定する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA4">ユーザインターフェース コンポーネントの役割（role）を明らかにするために、WAI-ARIA ロールを使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA5">ユーザインターフェース コンポーネントの状態（state）を明らかにするために、WAI-ARIA ステート及びプロパティ属性を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA6">オブジェクトのラベルを提供するために aria-label を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA7">リンクの目的を示すために aria-labelledby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA8">リンクの目的を示すために aria-label を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA10">非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA11">ページの領域を特定するために ARIA ランドマークを使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA12">見出しを特定するために role=heading を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA13">領域とランドマークに名前（name）を付けるために、aria-labelledby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA14">可視ラベルが使用できない場合に不可視ラベルを提供するために、aria-label を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA15">画像の説明を提供するために aria-describedby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA16">ユーザインターフェース コントロールの名前（name）を提供するために、aria-labelledby を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA17">関連するフォームコントロールを特定するために、グループ化するロールを使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA18">エラーを特定するために aria-alertdialog を使用する</a>
+   </li>
+   <li class="toc">
+    <a href="#ARIA19">エラーを特定するために、ARIA role=alert 又はライブ領域（Live Regions）を使用する</a>
+   </li>
+  </ul>
+  <section id="wai-aria_notes">
+   <div class="skiptarget">
+    <a id="maincontent">-</a>
+   </div>
+   <h3>
+    <a name="wai-aria_notes" id="wai-aria_notes">
+    </a>WAI-ARIA テクノロジーノート</h3>
+   <p>WAI-ARIA は、アクセシビリティを向上させるために、ウェブページやリッチインターネットウィジェットに次のセマンティック情報を追加するオプションをウェブ開発者に提供する。その結果、そのセマンティック情報はブラウザに公開される。</p>
+   <ul>
+    <li>
+     <p>"menu"、"treeitem"、"slider"、"progressbar" のような、提示されたウィジェットの種類を記述するためのロール。</p>
+    </li>
+    <li>
+     <p>見出し、領域、検索領域及びナビゲーション領域のような、ウェブページの構造を記述するためのロール。
+</p>
+    </li>
+    <li>
+     <p>チェックボックスのための "checked"、サブメニューやその他のポップアップを描画するメニューのための"haspopup"、及びツリーノードのための"expanded/collapsed"のような、ステート ウィジェットを記述するためのプロパティ。</p>
+    </li>
+    <li>
+     <p>(たとえば株価情報のような) 更新情報を取得する可能性が高いページの<a href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions">ライブ領域</a>だけでなく、この更新情報に対する割込みポリシーを定義するためのプロパティ。支援技術は、重要な更新情報がレンダリングされるとすぐに提示してもよい。しかし、付随的な更新情報は、現在のタスクを完了した後のみに提示される。たとえば、スクリーンリーダーは、現在の段落を読み終えた後にのみ付随的な更新情報を利用者に通知する。</p>
+    </li>
+    <li>
+     <p>ドラッグソース及びドロップターゲットを記述するドラッグ アンド ドロップのプロパティ。</p>
+    </li>
+    <li>
+     <p>リッチインターネットウィジェットにキーボードナビゲーションを提供するための方法。</p>
+    </li>
+   </ul>
+   <p>これらの機能と DOM 構造によって伝えられる構造情報の組み合わせは、著者が支援技術に相互運用可能な解決策を作り出すことを可能にする。(出典: <a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</a>)</p>
+   <div class="div3">
+    <h3>
+     <a name="wai-aria_ua_support" id="wai-aria_ua_support">
+     </a>WAI-ARIA に対するユーザエージェントのサポート</h3>
+    <p>WAI-ARIA に対するユーザエージェントのサポートは変化するが、全般的な WAI-ARIA のサポートは改善している。WAI-ARIA をサポートするブラウザは、プラットフォームアクセシビリティ API に WAI-ARIA ロール及びプロパティを対応づける。</p>
+    <ul>
+     <li>
+      <p>Firefox 1.5 と Firefox 2.0 は部分的に WAI-ARIA をサポートするが、名前空間を使用する必要があり、ライブ領域の使用をサポートしない。</p>
+     </li>
+     <li>
+      <p>Firefox 3 以上はライブ領域を含む、WAI-ARIAに対するより良いサポートを含む。</p>
+     </li>
+     <li>
+      <p>IE8 は、部分的に WAI-ARIA をサポートする。</p>
+     </li>
+     <li>
+      <p>JAWS 8 及び Window-Eyes 5.5 以上は、部分的に WAI-ARIA をサポートする。</p>
+     </li>
+     <li>
+      <p>Jaws 10 以上は WAI-ARIA をサポートする。</p>
+     </li>
+     <li>
+      <p>Firefox の音声拡張である FireVox はまた、直接の DOM アクセスを経由して WAI-ARIA をサポートする。</p>
+     </li>
+     <li>
+      <p>NVDA は、部分的に WAI-ARIA をサポートする。</p>
+     </li>
+    </ul>
+   </div>
+   <div class="div3">
+    <h3>
+     <a name="wai-aria_accessibility_support" id="wai-aria_accessibility_support">
+     </a>WAI-ARIA に対するアクセシビリティサポート</h3>
+    <p>アクセシビリティ サポーテッドな方法で技術を使用することは、適合性要求のために必要である。詳細は
+<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/appendixB.html#accessibility-support-documenting">アクセシビリティサポートについて</a>を参照のこと。 
+<!-- https://www.w3.org/WAI/WCAG20/Techniques/ua-notes/aria　ではまだ削除されていない 2017/08/07
+<span class="diff-delete">
+      <span class="difftext">[begin delete] </span>
+-->      
+      WCAG ワーキンググループは、Accessible Rich Internet Application 仕様が W3C 勧告の状態に到達する際に、WAI-ARIA 達成方法が十分であるかどうかの見直しをする予定である。
+<!-- https://www.w3.org/WAI/WCAG20/Techniques/ua-notes/aria　ではまだ削除されていない 2017/08/07
+<span class="difftext">[end delete]</span>
+     </span>
+-->      
+     WAI-ARIA のステータスに関する最新情報については、<a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</a>を参照のこと。</p>
+   </div>
+  </section>
+  <section id="ARIA1">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA1.html">ARIA1</a>: ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+   </div>
+   <div class="ua-issue">
+    <p>IE 8 は一つの ID の値についてのみ <code>aria-labelledby</code> をサポートし、また、<code>aria-describedby</code> を部分的にサポートする。</p>
+   </div>
+  </section>
+  <section id="ARIA2">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA2.html">ARIA2</a>: aria-requiredプロパティによって必須項目を特定する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+   </div>
+  </section>
+  <section id="ARIA4">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA4.html">ARIA4</a>: ユーザインターフェース コンポーネントの役割 (role) を明らかにするために、WAI-ARIA ロールを使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+   </div>
+  </section>
+  <section id="ARIA5">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA5.html">ARIA5</a>: ユーザインターフェース コンポーネントの状態 (state) を明らかにするために、WAI-ARIA ステート及びプロパティ属性を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+   </div>
+  </section>
+  <section id="ARIA6">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA6.html">ARIA6</a>: オブジェクトのラベルを提供するために aria-label を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
+     </li>
+     <li>
+      <p>ChromeVox V.1 以降は完全にサポートしている。</p>
+     </li>
+     <li>
+      <p>VoiceOver V.3 以降はサポートする。</p>
+     </li>
+     <li>
+      <p>NVDA 2 は Aria Describedby をサポートする。</p>
+     </li>
+     <li>
+      <p>Window Eyes V.7現在 (訳注： 原文のまま翻訳)</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA7">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA7.html">ARIA7</a>: リンクの目的を示すために aria-labelledby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>2012年10月現在のスクリーンリーダーテスト</p>
+    <ul>
+     <li>
+      <p>サポートなし:</p>
+      <ul>
+       <li>
+        <p>Win 7, IE 9, JAWS 13</p>
+       </li>
+       <li>
+        <p>Win 7, FF 13, NVDA 2012.2.1</p>
+       </li>
+       <li>
+        <p>Win XP, FF 15.0, NVDA 2011.3</p>
+       </li>
+       <li>
+        <p>Win XP, IE 8, SaToGo</p>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <p>部分的サポート (リンクテキストと、aria-labeledby で参照された要素の双方が読み上げられる):</p>
+      <ul>
+       <li>
+        <p>Win 7, IE9, NVDA 2012.2.1 (ただし、例 2 はサポートされていない)</p>
+       </li>
+       <li>
+        <p>Win XP, IE 8, NVDA 2011.3 (ただし、例 2 はサポートされていない)</p>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <p>サポート:</p>
+      <ul>
+       <li>
+        <p>Win 7, FF 13, JAWS 13 (ただし、例 2 は部分的かつバグのあるサポート: "Sales report 2012" が 2 度読み上げられる)</p>
+       </li>
+       <li>
+        <p>Mac OS 10.5.8, VoiceOver</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <p>
+     <a href="http://3needs.org/en/testing/code/aria-labelledby-for-link-purpose.html">例 1 の全てのテスト結果を参照する (英語)</a>
+    </p>
+    <p>
+     <a href="http://3needs.org/en/testing/code/aria-labelledby-filetype.html">例 2 の全てのテスト結果を参照する (英語)</a>
+    </p>
+    <p>David は 2013 年 8 月 25 日に<a href="http://davidmacd.com/test/labelledby-on-a-link.html">テスト</a>した...例 2 と 3 はまだ十分にサポートされていない。</p>
+    <ul>
+     <li>
+      <p>例1は、JAWS、VoiceOverでOK。 NVDAはアンカーに対する labelledby を無視する。</p>
+     </li>
+     <li>
+      <p>例2: JAWS 14 は、FF と IE 10 において、各リンクの全てのパラグラフを読み上げるが、それはお喋りで紛らわしい。VoiceOver は、Mountain Lion の Safari 6 において、JAWS と同じ。 NVDA はアンカーに対する labelledby を無視する (失敗した実装)。</p>
+     </li>
+     <li>
+      <p>例3: JAWS 14 は、FF と IE 10 において、 各リンクの全てのパラグラフを読み上げるが、それはお喋りで紛らわしい。VoiceOver は、Mountain Lion の Safari 6 においてOK。NVDA はアンカーに対する labelledby を無視する (失敗した実装)。</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA8">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA8.html">ARIA8</a>: リンクの目的を示すために aria-label を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
+     </li>
+     <li>
+      <p>ChromeVox V.1 以降は、完全にサポートする。</p>
+     </li>
+     <li>
+      <p>VoiceOver V.3 以降 (訳注: 原文のまま翻訳)</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA9">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA9.html">ARIA9</a>: 複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>注記: IE をサポートするためには、aria-labelledby 要素で参照された非インタラクティブ要素に対して、属性 <code>tabindex="-1"</code> を付与する必要がある。詳細については、<a href="http://www.w3.org/TR/aria-in-html/#aria-labelledby-and-aria-describedby">Using WAI-ARIA in HTML</a>(英語) を参照のこと。</p>
+    <ul>
+     <li>
+      <p>完全サポート:</p>
+      <ul>
+       <li>
+        <p>WIN7 / FF16 / NVDA 2012.2.1 (例 2: 列見出しも読み上げる)</p>
+       </li>
+       <li>
+        <p> WIN7 / FF16 / JAWS 13  (例2: 列見出しも読み上げる)</p>
+       </li>
+       <li>
+        <p> WIN7 / IE9  / JAWS 13</p>
+       </li>
+       <li>
+        <p> WIN XP /FF16 / NVDA 2011.3</p>
+       </li>
+       <li>
+        <p> iOS X / VoiceOver</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>部分的サポート:</p>
+      <ul>
+       <li>
+        <p>WIN7 / IE9  / NVDA 2012.2.1 (例 1: テキストフィールドのデフォルトのテキストが脱落する: <em>"Extend time-out to minutes edit selected 20"</em>)</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>サポートなし:</p>
+      <ul>
+       <li>
+        <p>WIN XP / IE8 / NVDA 2001.3  例1: <code>aria-labelledby</code> ('20','minutes') で参照されたテキストを読み上げない: 
+<em>"Extend time-out to edit selected 20"</em>
+        </p>
+       </li>
+       <li>
+        <p>System Access To Go (IE8)</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA10">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA10.html">ARIA10</a>: 非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>NVDA 2012.3 は FF との組み合わせで例 1 をサポートする。</p>
+     </li>
+    </ul>
+    <p>2014 年 3 月現在、<code>aria-labelledby</code> に比べて、<code>alt</code> 属性の使用がより幅広く<a href="https://www.w3.org/WAI/WCAG20/Techniques/ua-notes/accessibility-supporteddef">アクセシビリティ サポート (訳注: 原文においてリンク切れ)</a>されている。<code>alt</code> 属性の使用がベストプラクティスであり、強く推奨される。特に、<code>alt</code> 属性をテキストによる代替の提供に使用できる要素については、制作者は <a href="http://waic.jp/docs/WCAG-TECHS/H37.html">H37: img 要素の <code>alt</code> 属性を使用する</a>の代わりにこの達成方法に依存する前に <code>aria-labelledby</code> のアクセシビリティサポートを確認しなければならない。</p>
+   </div>
+  </section>
+  <section id="ARIA11">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA11.html">ARIA11</a>: ページの領域を特定するために ARIA ランドマークを使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>Jaws V.11 以降は、完全にサポートする。</p>
+     </li>
+     <li>
+      <p>ChromeVox V.1 以降は、完全にサポートする。</p>
+     </li>
+     <li>
+      <p>VoiceOver V.3 以降は、“form”以外の全てのランドマークをサポートする。</p>
+     </li>
+     <li>
+      <p>NVDA 2 は、“application”に対するナビゲーションをサポートしないことを除いて、全てのランドマークをサポートする。</p>
+     </li>
+     <li>
+      <p>Window EyesはV.7現在、ARIAランドマークをサポートしない。</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA12">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA12.html">ARIA12</a>: 見出しを特定するために role=heading を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザーエージェントによるサポートに関する全般的な情報は、
+<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p> Jaws 13 以降は、この達成方法をサポートする。</p>
+     </li>
+     <li>
+      <p> NVDA 2012.3 は、この達成方法をサポートする。</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA13">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA13.html">ARIA13</a>: 領域とランドマークに名前 (name) を付けるために、aria-labelledby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIA に対するユーザエージェントのサポート</a>を参照のこと。</p>
+   </div>
+  </section>
+  <section id="ARIA14">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA14.html">ARIA14</a>: 可視ラベルが使用できない場合に不可視ラベルを提供するために、aria-label を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>スクリーンリーダーのサポートは、ブラウザによって変化する:</p>
+    <ul>
+     <li>
+      <p> System Access To Go (IE8) は <code>aria-label</code> を認識しない。
+      </p>
+     </li>
+     <li>
+      <p>NVDA を Firefox (FF) と用いた場合、<code>aria-label</code> はカスタムコントロール上でのみ読み上げられる。</p>
+     </li>
+     <li>
+      <p>NVDA を Internet Explorer (IE) と用いた場合、<code>aria-label</code> はネイティブコントロール上でのみ読み上げられる。</p>
+     </li>
+     <li>
+      <p>JAWS は <code>aria-label</code> を最も良くサポートしている。
+      </p>
+     </li>
+    </ul>
+    <p>詳細なテストの結果は以下の通り:</p>
+    <ul>
+     <li>
+      <p>JAWS 13 (WIN7, FF13)</p>
+      <ul>
+       <li>
+        <p>例 1: JAWS は <code>contentEditable</code> がセットされた <code>div</code> の <code>aria-label</code> を読み上げるが、div のコンテンツ (修正すべき単語) は読み上げない。</p>
+       </li>
+       <li>
+        <p>例 2: JAWS は <code>aria-label</code> を読み上げる: "close button"</p>
+       </li>
+       <li>
+        <p>例 3: JAWS は <code>aria-label</code> を読み上げず、単に "button" と読み上げる。</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>JAWS 13 (WIN7, IE9)</p>
+      <ul>
+       <li>
+        <p>例 1: JAWS は <code>aria-label</code> を読み上げるが、<code>div</code> ボックスは、<code>div</code> にタブ移動したときには読み上げられず、バーチャル PC カーソルモードの場合にのみ読み上げられる。</p>
+       </li>
+       <li>
+        <p>例 2: JAWS は <code>div</code> ボックスのコンテンツを読み上げ (フォーカスはスキップリンクを介してその冒頭に移動する)、続けて<code>aria-label</code>: "close button" を読み上げる。</p>
+       </li>
+       <li>
+        <p>例3: JAWS は <code>aria-label</code> を読み上げる。
+        </p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>NVDA 2011.3 (XP, FF13) </p>
+      <ul>
+       <li>
+        <p>例1: NVDA は <code>contentEditable</code> がセットされた <code>div</code> に指定された <code>aria-label</code> を読み上げ、続けて "section editable" および、スペルミスのある単語に対して "spelling error" と知らせる。</p>
+       </li>
+       <li>
+        <p>例2: NVDA は <code>aria-label</code> を読み上げず、単に "X button" と読み上げる。</p>
+       </li>
+       <li>
+        <p>例3: NVDA は <code>aria-label</code> を読み上げず、単に "button" と読み上げる。(- と + は脱落するが、これはスクリーンリーダーの設定でカスタマイズ可能である。)</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>NVDA 2011.3 (XP, IE8) </p>
+      <ul>
+       <li>
+        <p>例 1: ブラウザは <code>div contentEditable</code> をフォーカスするが、アクセシビリティAPIにそれらを明らかにしていないようだ。そのため、NVDA は <code>aria-label</code> に関連付けられたコンテンツを読み上げない。
+	</p>
+       </li>
+       <li>
+        <p>例 2: NVDA は、ボタンにに含まれているテキスト (X) の代わりに、<code>aria-label</code> の内容 "button close" を読み上げる。</p>
+       </li>
+       <li>
+        <p>例 3: NVDA <code>aria-label</code> の内容を読み上げる。
+	</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>NVDA 2012.2.1 (WIN7, IE9)</p>
+      <ul>
+       <li>
+        <p>例 1: (XP, IE8)と同様: <code>div contentEditable</code> はフォーカスを受け取るが、<code>aria-label</code> はアクセシビリティ API に公開されない。</p>
+       </li>
+       <li>
+        <p>例 2: NVDA はブラウズモードでは "This is a div box button close"、フォーカスモードでは "close button" と、<code>aria-label</code> を読み上げる。</p>
+       </li>
+       <li>
+        <p>例 3: <code>aria-label</code> の内容を読み上げる。</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>NVDA 2012.2.1 (WIN7, FF13)</p>
+      <ul>
+       <li>
+        <p>例 1: NVDA は contentEditable とセットされた div に指定された <code>aria-label</code> を読み上げ、続けて "section editable" と知らせる。(しかし、ここではスペルミスのある単語に対するアナウンスはない。)</p>
+       </li>
+       <li>
+        <p>例 2: X ボタンの <code>aria-label</code> を読み上げない。(訳注: 原文では "Example:2" とされていたが、翻訳時に "例 2:" と訂正）</p>
+       </li>
+       <li>
+        <p>例 3： NVDA は + と - のボタンに対する <code>aria-label</code> を読み上げない。(- と + は脱落するが、これはスクリーンリーダーの設定でカスタマイズ可能である。)</p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <p>System Access To Go (XP, IE8): 3 つの例の全てについて、 SAToGo は <code>aria-label</code> を認識しない。
+      </p>
+      <ul>
+       <li>
+        <p>例 1: SAToGo は、"editable text" に続いて、<code>div contentEditable</code> の中のテキストを読み上げる。
+        </p>
+       </li>
+       <li>
+        <p>例 2: リンクをアクティベートした後、SAToGo はポップアップした <code>div</code> のコンテンツに続けて "button X" と読み上げる。(訳注: 原文では "button X とされていたが、翻訳時に " を補完。)</p>
+       </li>
+       <li>
+        <p>例 3: デフォルトでは、SAToGo は <code>aria-label</code> の内容ではなく、"plus button"、"hyphen button" と読み上げる。 
+        </p>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA15">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA15.html">ARIA15</a>: 画像の説明を提供するために aria-describedby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>2013 年 7 月 16 日更新</p>
+    <ul>
+     <li>
+      <p>Jaws V.11 以降は、完全にサポートする。IE10 JAWS 14。alt を読み上げた後、"press JAWS key + alt +r to hear descriptive text" と読み上げる。IE 10 は断続的なサポート、ある時は動作し、ある時は JAWS にそれを正しく読みあげさせるためにページのリロードが必要。(訳注: 原文では JAWS が "JAWs" と記載されていた点を修正。文章の区切り等は原文のまま。)</p>
+     </li>
+     <li>
+      <p>ChromeVox V.1 以降は、完全にサポートする? </p>
+     </li>
+     <li>
+      <p>VoiceOver V.3 以降はサポートしているが、双方が存在している場合には ALT テキストを置き換える。</p>
+     </li>
+     <li>
+      <p>NVDA 2 は双方が存在している場合は ALT テキストを読み上げるが、単独でない限り Describedby は読み上げない。</p>
+     </li>
+     <li>
+      <p>Window Eyes V.7 現在&nbsp;???.</p>
+     </li>
+    </ul>
+ 	(訳注：　疑問符 "?" 等の記載は原文のまま。)
+   </div>
+  </section>
+  <section id="ARIA16">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA16.html">ARIA16</a>: ユーザインターフェース コントロールの名前 (name) を提供するために、aria-labelledby を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>Jaws V.11 以降は、完全にサポートする</p>
+     </li>
+     <li>
+      <p>ChromeVox V.1 以降は、完全にサポートする</p>
+     </li>
+     <li>
+      <p>VoiceOver V.3 以降は、サポートする&nbsp;???</p>
+     </li>
+     <li>
+      <p>NVDA 2 は Aria Describedby をサポートする&nbsp;???</p>
+     </li>
+     <li>
+      <p>Window Eyes V.7現在&nbsp;???.</p>
+     </li>
+    </ul>
+ 	(訳注:　疑問符 "?" 等の記載は原文のまま。)
+   </div>
+  </section>
+  <section id="ARIA17">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA17.html">ARIA17</a>: 関連するフォームコントロールを特定するために、グループ化するロールを使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>この達成方法は、以下との組み合わせで動作する:</p>
+    <ul>
+     <li>
+      <p>JAWS 13 / 14 と Internet Explorer 8 / 9、 Firefox</p>
+     </li>
+     <li>
+      <p>NVDA 2012 / 2013 と Firefox</p>
+     </li>
+     <li>
+      <p>VoiceOver と MacBook Pro の OSX 10.7.4 上の Safari、しかし、OSX 10.8 等の、それ以降のバージョンでは動作しない。(これは、HTMLの "title" 属性のサポートが壊れていることと併せて Apple に報告されている。)</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA18">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA18.html">ARIA18</a>: エラーを特定するために aria-alertdialog を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <ul>
+     <li>
+      <p>Jaws 13 以降はこの達成方法をサポートする。</p>
+     </li>
+    </ul>
+   </div>
+  </section>
+  <section id="ARIA19">
+   <h2>
+    <a href="http://waic.jp/docs/WCAG-TECHS/ARIA19.html">ARIA19</a>: エラーを特定するために、ARIA role=alert 又はライブ領域 (Live Regions) を使用する</h2>
+   <div class="ua-issue">
+    <p>ユーザエージェントによるサポートに関する全般的な情報は、<a href="http://waic.jp/docs/WCAG-TECHS/wai-aria_notes.html#wai-aria_ua_support">WAI-ARIAに対するユーザエージェントのサポート</a>を参照のこと。</p>
+    <p>この達成方法をサポートする:</p>
+    <ul>
+     <li>
+      <p> OS X 10.8.4 + Safari + VoiceOver</p>
+     </li>
+     <li>
+      <p> iOS 6 &amp; 7 + Mobile Safari + VoiceOver</p>
+     </li>
+     <li>
+      <p> Windows 7 + Firefox 20 + NVDA 2013.1</p>
+     </li>
+     <li>
+      <p> Windows 7 + Firefox 20 + JAWS 14</p>
+     </li>
+     <li>
+      <p> Windows 7 + IE 8 + JAWS 14 (aria-live=assertive のみ)</p>
+     </li>
+     <li>
+      <p> Windows 7 + IE 7 + JAWS 14 (aria-live=assertive のみ)</p>
+     </li>
+    </ul>
+    <p>この達成方法をサポートしない:</p>
+    <ul>
+     <li>
+      <p> Windows 7 + IE 8 + NVDA 2013.1 (サポートなし)</p>
+     </li>
+    </ul>
+    <p>サポートに関する注記:</p>
+    <p>Internet Explorer バージョン 7 から 11 は、role="alert" を用いた場合は、この達成方法に記載されている通知をサポートしない。しかし、例 1 に記載されている aria-live="assertive" は正しく機能する。</p>
+    <p>Firefox を JAWS もしくは NVDA と用いた場合、 role=alert は "Alert" と通知され、aria-live=assertive は追加のテキストを含めない。NVDA 2013.1 + IE 8 はサポートなし。幅広いユーザーエージェント (UA)/ 支援技術 (AT) のサポートのために role=alert と aria-live=assertive　の双方を用いている3個目の例は、列挙された全ての組み合わせで動作している。</p>
+    <p>alert や assertive のライブ領域をページ上に表示するには様々な方法があり、どの様にエラーコンテナを作成するか、もしくはエラーメッセージを挿入するかによって、IE 8 + JAWS 14 や VoiceOver + Safari のような難しいブラウザとスクリーンリーダーの組み合わせで動作するかどうかが決まる。</p>
+   </div>
+  </section>
+ </body>
+</html>
