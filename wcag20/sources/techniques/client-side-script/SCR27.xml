@@ -42,8 +42,7 @@
 </ul>]]></code>
       <description><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p>
 </description>
-      <code role="script"><![CDATA[
-MoveNode 関数(evt,dir)
+         <code role="script"><![CDATA[function MoveNode(evt,dir)
 {
     HarmonizeEvent(evt);
     evt.preventDefault();
