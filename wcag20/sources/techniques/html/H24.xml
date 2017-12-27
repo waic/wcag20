@@ -26,6 +26,7 @@
    </ua-issues>
    <description>
     <p>この達成方法の目的は、イメージマップ上の選択可能領域と同じ役割を果たす代替テキストを提供することである。イメージマップは、<el>area</el>要素によって定義された選択可能領域によって分割されている1枚の画像である。各領域は、他のウェブページや、現在のウェブページ内の他の場所へのリンクである。各<el>area</el>要素の<att>alt</att>属性は、その画像の選択可能領域と同じ目的を果たすものである。</p>
+    <a11ysuprorted rating="good" exnumber="0"/>
   </description>
    <examples>
       <eg-group>

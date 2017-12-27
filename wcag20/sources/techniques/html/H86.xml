@@ -50,6 +50,7 @@
 &lt;abbr title="恐怖"&gt;=8-0&lt;/abbr&gt;
 
 &lt;img src="fright.gif" alt="恐怖"/&gt;</code>
+      <a11ysuprorted rating="bad" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、ASCII アートの前にその絵の説明を付け、ASCII アートをスキップするリンクがある。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#H86-ex3">ASCII アートの事例をスキップして事例 3へ</loc></p>
@@ -103,11 +104,13 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
                                LLLLLLLLLLLLL
                                  ~~~~~~~~~
 <a name="skipbutterfly></a> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group id="skipbutterfly">
       <description><p>以下は、リート語で「Austin Rocks」と書いた例である。 </p>
 </description>
       <code><![CDATA[<abbr title="Austin Rocks">Au5t1N r0xx0rz</abbr> ]]></code>
+      <a11ysuprorted rating="bad" exnumber="3"/>
     </eg-group>
    </examples>
    <tests>

@@ -23,6 +23,7 @@
    </ua-issues>
    <description>
     <p>この達成方法の目的は、アプレットのラベルを提供する<att>alt</att>属性を用いること及び<el>applet</el>要素のボディに代替テキストを提供することによって、アプレットに対する代替テキストを提供することである。この達成方法では、ユーザエージェントごとに、<att>alt</att>属性及び<el>applet</el>要素のボディのサポート状況が異なるため、両方のメカニズムを必要としている。</p>
+    <a11ysuprorted rating="pass" exnumber="0"/>
   </description>
    <examples>
       <eg-group>

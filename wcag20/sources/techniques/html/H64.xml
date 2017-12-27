@@ -40,6 +40,7 @@
     </noframes>
   </frameset>
 </html> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>この事例は、インラインフレームの内容を説明するために、<el>iframe</el> 要素に <att>title</att> 属性を指定する方法を示している。さらに、<el>iframe</el> 要素を解釈できない古いブラウザのために、読み込むページへの代替リンクを <el>iframe</el> 要素の内容に含めてある。</p>
@@ -55,6 +56,7 @@
 </iframe>
 ...
 </html> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>
    <resources>

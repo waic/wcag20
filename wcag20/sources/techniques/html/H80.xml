@@ -42,6 +42,7 @@
     <li><a href="hotel_three_rivers_reviews.html">お客様レビュー</a></li>
     <li><a href="hotel_three_rivers_book.html">予約フォーム</a></li>
   </ul> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>ある文書を3つのファイル形式で提供する場合</head>
@@ -51,6 +52,7 @@
   <a href="annrep0607.pdf">（PDF）</a>&nbsp;
   <a href="annrep0607.rtf">（RTF）</a>
 </p> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>新聞社のウェブサイト</head>
@@ -58,6 +60,7 @@
 <p>今週は金への投資が2％上昇し、株式市場にとっては華々しい週になった。
 <a href="Stockmarket_05052007.htm>全文を読む</a></p> ]]></code>
     </eg-group>
+      <a11ysuprorted rating="pass" exnumber="3"/>
    </examples>
    <resources/>
    <related-techniques>

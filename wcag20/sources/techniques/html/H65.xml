@@ -38,6 +38,7 @@
 <select title="検索対象" id="scope">
 …
 </select>]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>電話番号の入力フィールド</head>
@@ -51,6 +52,7 @@ type="text" size="3" value="" >
 <input id="lastDigits" name="lastDigits" title="電話番号の下4桁" 
 type="text" size="4" value="" >
 </fieldset>]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>検索機能</head>
@@ -58,6 +60,7 @@ type="text" size="4" value="" >
 </description>
       <code role="html401"><![CDATA[<input type="text" title="ここに検索語を入力"/> 
 <input type="submit" value="検索"/>]]></code>
+      <a11ysuprorted rating="pass" exnumber="3"/>
     </eg-group>
       <eg-group>
          <head>フォーム・コントロールのデータテーブル</head>

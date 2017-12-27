@@ -37,6 +37,7 @@
   <input type="radio" id="dickens" name="hamlet" value="e">
   <label for="dickens">チャールズ ディケンズ</label>
 </fieldset>]]></code>
+      <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>チェックボックスのグループ</head>
@@ -52,6 +53,7 @@
   <label for="acrylic">アクリル画</label>
   …
 </fieldset>]]></code>
+      <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>同じ名前を付けたフィールドとして送信されるラジオボタン</head>
@@ -70,6 +72,7 @@
   </form>]]></code>
       <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
 </description>
+      <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
     <eg-group>
       <head>論理的に関連付けたコントロール</head>
@@ -93,6 +96,7 @@
      ……郵送先の入力内容が続く……
    </fieldset>
 </form> ]]></code>
+      <a11ysuprorted rating="good" exnumber="4"/>
     </eg-group>
    </examples>
    <resources>

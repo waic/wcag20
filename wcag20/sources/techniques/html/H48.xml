@@ -31,6 +31,7 @@
   <li>卵と牛乳をボールの中で混ぜる。</li>
   <li>塩とコショウを加える。</li>
 </ol>]]></code>
+      <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>材料のリスト</head>
@@ -41,6 +42,7 @@
   <li>卵</li>
   <li>バター</li>
 </ul>]]></code>
+      <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>言葉とその定義</head>
@@ -51,6 +53,7 @@
   <dd>1 秒当たり 0.5 回から 3 回、ついたり消えたりすること
   </dd>
 </dl>]]></code>
+      <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
     <eg-group>
       <head>定義リストを用いた連絡先情報</head>

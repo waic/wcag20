@@ -38,6 +38,7 @@
 </description>
       <code role="html401"><![CDATA[……彼女が<em>本当に</em>言いたかったのは、&quot;オーケーどころか、 
  <strong>すばらしい</strong>&quot;ということでした！…… ]]></code>
+      <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、長い引用文をマークアップするのに <el>blockquote</el> 要素を利用している。<el>blockquote</el> 要素ではパラグラフ分けが必要となる場合もある。また、参考資料を示すのに <el>cite</el> 要素も利用している。</p>
@@ -49,6 +50,7 @@
   そこで気分が良くなったあと、私は落ち着く場所を探しに行き、
   涼しい葉と草に熱くなった顔を隠しました。</p>
  </blockquote> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、短い引用文のマークアップに <el>q</el> 要素を利用している。<el>q</el> 要素を引用符で囲んであるのは、ユーザエージェントの多くがいまだにこの要素をサポートせず、適切に表示しないからである（前述「ユーザエージェント及び支援技術によるサポート」を参照）。CSS で引用符を自動生成しないように設定し、<el>q</el> 要素をサポートしているユーザエージェントに適用することで、自動生成された引用符とコンテンツ制作者が付けた引用符が二重に表示されてしまう問題を避けている。将来、<el>q</el> 要素が広くサポートされるようになれば、引用符を付けたり、ブラウザの引用符生成を避けたりする必要はなくなるだろう。</p>
@@ -57,12 +59,14 @@
 q:after { content: ""; } ]]></code>
       <code role="html401"><![CDATA[<p>ヘレン・ケラーは、"<q>自己憐憫は私たちの最大の的であり、もし屈してしまうなら、 
 私たちはこの世で何も良い事を行えない。</q>"と述べている。</p> ]]></code>
+      <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
     <eg-group>
       <description><p>上付き文字と下付き文字を、<el>sup</el> 要素と <el>sub</el> 要素を使って生成している。</p>
 </description>
       <code role="html401"><![CDATA[<p>ベスは第9<sup>回目</sup>の科学大会で1<sup>位</sup>になりました。<p>
 <p>水の化学式は、H<sub>2</sub>O です。</p> ]]></code>
+      <a11ysuprorted rating="pass" exnumber="4"/>
     </eg-group>
    </examples>
    <resources>

@@ -15,6 +15,7 @@
     <note>
     <p><att>alt</att> 属性の代替テキストを 「空」にするのと、<att>alt</att> 属性が指定されていないことは同義ではない。</p>
     </note>
+    <a11ysuprorted rating="good" exnumber="0"/>
   </description>
    <examples>
       <eg-group>
