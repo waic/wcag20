@@ -77,7 +77,7 @@
 		</authlist>
 		<status>
 			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C technical reports index</loc> で参照可能である。</emph></p>
-			<p>これは、<phrase role="final">ワーキンググループノート</phrase>の WCAG 2.0 達成方法集 である。この達成方法集は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び <loc href="https://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG 2.0</loc> から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
+			<p>これは、<phrase role="final">ワーキンググループノート</phrase>の WCAG 2.0 達成方法集 である。この達成方法集は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
 			<p>WCAG 2.0 達成方法集は、ワーキンググループノートとして 2008 年 12 月 11 日に公開されて以来、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新されてきた。この新しいバージョンは、WCAG 2.0 に対して提供されている参考情報を更新している。なお、WCAG 2.0 自体は変更されておらず、参考情報だけが更新されたことに留意していただきたい。主な変更点には、皆さんや翻訳者からの指摘に基づいた加筆修正である。このバージョンにおける変更点には、<loc href="G136" linktype="general">G136</loc>、<loc href="ARIA2" linktype="aria">ARIA2</loc>、<loc href="F68" linktype="failure">F68</loc>などが挙げられる。</p>
 			<p>変更箇所は、<loc href="https://www.w3.org/TR/WCAG20-TECHS/complete-diff">diff-marked version</loc> で強調されている。【訳注: 日本語訳の diff-marked version は用意されていない。】</p>
 
@@ -96,7 +96,7 @@
 				<phrase id="abstract-techniques-informative">達成方法は、参考情報である。つまり、達成方法は必須要件ではない。WCAG 2.0 への適合の判断は、<loc href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</loc> の達成基準に基づくものであり、達成方法ではない。</phrase>
 				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、WCAG 2.0 解説書の <loc href="understanding-techniques" linktype="understanding">WCAG 達成基準の達成方法を理解する</loc>のセクションを参照のこと。</emph></phrase>
 			</p>
-			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は <loc href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc> を利用して、WCAGの達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
+			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は<loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を利用して、WCAGの達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
 		</abstract>
 		<langusage>
 			<language id="ja"/>
