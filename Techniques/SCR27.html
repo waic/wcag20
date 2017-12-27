@@ -6,30 +6,32 @@
         達成方法 SCR26</a></li><li><a title="SCR28: コンテンツのブロックをバイパスするために、展開可能及び折り畳み可能なメニューを使用する" href="SCR28.html"><strong>次: </strong>
         達成方法 SCR28</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#SCR27-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#SCR27-applicability">適用（対象）</a></li><li><a href="#SCR27-description">解説</a></li><li><a href="#SCR27-examples">事例</a></li><li><a href="#SCR27-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SCR27" id="SCR27"> </a>SCR27: Document Object Model を用いて、ページ上にある複数のセクションを並び替える</h1><div id="SCR27-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="SCR27-applicability">適用（対象）</h2><div class="textbody"><p>HTMLおよびXHTML、スクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
 				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-focus-order">
-						How to Meet 2.4.3 (フォーカス順序)
+						クイックリファレンス 2.4.3 (フォーカス順序)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">
 						達成基準 2.4.3 (フォーカス順序)を理解する
-					</a></li></ul></li></ul><h2 id="SCR27-description">解説</h2><div class="textbody"><p>この達成方法の目的は、コンポーネントを再配置するための極めてユーザブルかつアクセシブルなメカニズムを提供することである。再配置するためのメカニズムのうち、もっとも一般的なものは、コンポーネントに番号をつけることができる設定ページに利用者を送ること、又は、コンポーネントをドラッグアンドドロップして希望する位置へ移動できるようにすることのふたつである。ドラッグアンドドロップの方が、ひとつずつ項目を適当な位置に並べることができ、結果を感覚的に得られるため、はるかにユーザブルな方法である。残念なことに、ドラッグアンドドロップはマウスの利用に頼った方法である。この達成方法は、利用者がコンポーネントのメニューを使って、それらを機器に依存することなく適当な位置に再配置することを可能にする。ドラッグアンドドロップによる再配置機能の代替として、もしくはそれと併用して利用することができる。</p><p>メニューはリンクリストで、コンテンツを再配置するスクリプトのトリガーとなる、機器に依存しないonclickイベントを使用している。コンテンツは単に視覚的にだけでなく、Document Object Model (DOM)でも再配置されているので、すべての機器向けに正しい順序となっている。</p></div><h2 class="small-head" id="SCR27-examples">事例</h2><h3 class="small-head" id="SCR27-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例は上下間の再配置を行う。このアプローチはまた、右と左のオプションを追加することで、2次元での再配置にも利用できる。</p><p>この例のコンポーネントは順序無しリストのリスト項目である。順序無しリストは、こうしたコンポーネントのような類似項目のためのとてもよいセマンティックモデルである。メニューを使う方法も、他のタイプのグループ化に使用できる。</p><p>モジュールはリスト項目であり、それぞれのモジュールは、div要素内のコンテンツに加えて、入れ子になったリストとして表されたメニューを含んでいる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul id="swapper"&gt;
-    &lt;li id="black"&gt;
-        &lt;div class="module"&gt;
-            &lt;div class="module_header"&gt;
-                &lt;!-- menu link --&gt;
-                &lt;a href="#" onclick="ToggleMenu(event);"&gt;menu&lt;/a&gt;
-                &lt;!-- menu --&gt;
-                &lt;ul class="menu"&gt;
-                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
-                        onkeypress="OnMenuKeypress(event);"&gt;up&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
-                        onkeypress="OnMenuKeypress(event);"&gt;down&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;
-            &lt;div class="module_body"&gt;
-                Text in the black module
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/li&gt;
+					</a></li></ul></li></ul><h2 id="SCR27-description">解説</h2><div class="textbody"><p>この達成方法の目的は、コンポーネントを再配置するための極めてユーザブルかつアクセシブルなメカニズムを提供することである。再配置するためのメカニズムのうち、もっとも一般的なものは、コンポーネントに番号をつけることができる設定ページに利用者を送ること、又は、コンポーネントをドラッグアンドドロップして希望する位置へ移動できるようにすることのふたつである。ドラッグアンドドロップの方が、ひとつずつ項目を適当な位置に並べることができ、結果を感覚的に得られるため、はるかにユーザブルな方法である。残念なことに、ドラッグアンドドロップはマウスの利用に頼った方法である。この達成方法は、利用者がコンポーネントのメニューを使って、それらを機器に依存することなく適当な位置に再配置することを可能にする。ドラッグアンドドロップによる再配置機能の代替として、もしくはそれと併用して利用することができる。</p><p>メニューはリンクリストで、コンテンツを再配置するスクリプトのトリガーとなる、機器に依存しないonclickイベントを使用している。コンテンツは単に視覚的にだけでなく、Document Object Model (DOM)でも再配置されているので、すべての機器向けに正しい順序となっている。</p></div><h2 class="small-head" id="SCR27-examples">事例</h2><h3 class="small-head" id="SCR27-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例は上下間の再配置を行う。このアプローチはまた、右と左のオプションを追加することで、2次元での再配置にも利用できる。</p><p>この例のコンポーネントは順序無しリストのリスト項目である。順序無しリストは、こうしたコンポーネントのような類似項目のためのとてもよいセマンティックモデルである。メニューを使う方法も、他のタイプのグループ化に使用できる。</p><p>モジュールはリスト項目であり、それぞれのモジュールは、div要素内のコンテンツに加えて、入れ子になったリストとして表されたメニューを含んでいる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+    &amp;lt;ul id="swapper"&amp;gt;
+    &amp;lt;li id="black"&amp;gt;
+        &amp;lt;div class="module"&amp;gt;
+            &amp;lt;div class="module_header"&amp;gt;
+                &amp;lt;!-- メニューへのリンク --&amp;gt;
+                &amp;lt;a href="#" onclick="ToggleMenu(event);"&amp;gt;menu&amp;lt;/a&amp;gt;
+                &amp;lt;!-- メニュー --&amp;gt;
+                &amp;lt;ul class="menu"&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&amp;gt;up&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;lt;a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);"&amp;gt;down&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div class="module_body"&amp;gt;
+                blackモジュールのテキスト
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/li&amp;gt;
     ...
-&lt;/ul&gt;</code></pre></div><div class="textbody"><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function MoveNode(evt,dir)
+&amp;lt;/ul&amp;gt; </code></pre></div><div class="textbody"><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+MoveNode 関数(evt,dir)
 {
     HarmonizeEvent(evt);
     evt.preventDefault();

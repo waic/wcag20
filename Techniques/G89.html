@@ -6,12 +6,12 @@
         達成方法 G88</a></li><li><a title="G90: キーボードがトリガーとなるイベントハンドラを提供する" href="G90.html"><strong>次: </strong>
         達成方法 G90</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#G89-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#G89-applicability">適用（対象）</a></li><li><a href="#G89-description">解説</a></li><li><a href="#G89-examples">事例</a></li><li><a href="#G89-related-techs">関連する達成方法</a></li><li><a href="#G89-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="G89" id="G89"> </a>G89: 期待されるデータ書式及び入力例を提供する</h1><div id="G89-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="G89-applicability">適用（対象）</h2><div class="textbody"><p>利用者から情報を集め、利用者が入力できる書式に制約のあるページ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-cues">
-						How to Meet 3.3.2 (ラベル又は説明)
+						クイックリファレンス 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-cues.html">
 						達成基準 3.3.2 (ラベル又は説明)を理解する
 					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">達成基準 3.3.2</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-cues.html">達成基準 3.3.2 を理解する</a>を参照すること。</p></div></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-context-help">
 				達成基準 3.3.5 (ヘルプ)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-context-help">
-						How to Meet 3.3.5 (ヘルプ)
+						クイックリファレンス 3.3.5 (ヘルプ)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-context-help.html">
 						達成基準 3.3.5 (ヘルプ)を理解する
 					</a></li></ul></li></ul><h2 id="G89-description">解説</h2><div class="textbody"><p>この達成方法の目的は、利用者が入力しなければならないデータ書式の制約を通知することによって、利用者が入力エラーを回避しやすくすることである。これは、書式の特徴を記述するか、入力データに求められる書式の例を提供することによって対処できる。</p><div class="note"><p class="prefix"><em>注記: </em>日付や時刻のように、様々な記述方法があるデータ書式については、利用者にとって最も入力しやすい書式を選択できるオプションを提供するとよい。</p></div></div><h2 class="small-head" id="G89-examples">事例</h2><h3 class="small-head" id="G89-ex1">事例 1</h3><div class="example"><div class="textbody"><p>日付を入力するHTMLのフォーム・コントロールでは、<code>label</code>要素内において、入力する日付はアメリカ合衆国の多くの利用者が想定する月-日-年の書式ではなく、日-月-年の書式でなければならないことを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="date"&gt;日付 (dd-mm-yyyy)&lt;/label&gt;

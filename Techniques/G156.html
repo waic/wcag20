@@ -6,17 +6,17 @@
         達成方法 G155</a></li><li><a title="G157: ライブの音声キャプションサービスをウェブページに組み込む" href="G157.html"><strong>次: </strong>
         達成方法 G157</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#G156-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#G156-applicability">適用（対象）</a></li><li><a href="#G156-description">解説</a></li><li><a href="#G156-examples">事例</a></li><li><a href="#G156-resources">参考リソース</a></li><li><a href="#G156-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="G156" id="G156"> </a>G156: テキストのブロックの前景及び背景を変更できる、一般に入手可能なユーザエージェントが備えるウェブコンテンツ技術を使用する</h1><div id="G156-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="G156-applicability">適用（対象）</h2><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-contrast">
 				達成基準 1.4.3 (コントラスト (最低限) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast-contrast">
-						How to Meet 1.4.3 (コントラスト (最低限) )
+						クイックリファレンス 1.4.3 (コントラスト (最低限) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">
 						達成基準 1.4.3 (コントラスト (最低限) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast7">
 				達成基準 1.4.6 (コントラスト (高度) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast7">
-						How to Meet 1.4.6 (コントラスト (高度) )
+						クイックリファレンス 1.4.6 (コントラスト (高度) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">
 						達成基準 1.4.6 (コントラスト (高度) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">
 				達成基準 1.4.8 (視覚的提示)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast-visual-presentation">
-						How to Meet 1.4.8 (視覚的提示)
+						クイックリファレンス 1.4.8 (視覚的提示)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">
 						達成基準 1.4.8 (視覚的提示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua1.100.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/general.html#G156">G156 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="G156-description">解説</h2><div class="textbody"><p>認知障害のある利用者は、ウェブページのコンテンツをうまく理解するために、前景のテキストと背景を特定の色の組み合わせを必要としていることがある。一般に利用されるブラウザの大部分が、ブラウザ内部の機能として、色設定を変更するオプションを提供している。この機能によって、コンテンツ制作者が指定した前景色や背景色を、利用者が選択した色で上書きできる。</p><p>この達成基準を満たすためには、コンテンツ制作者はこのようなコントロールを備えるブラウザでウェブページが利用できるようにデザインし、この機能を無効にするような実装を行なってはならない。</p><p>ページ上の全てのテキストの前景色と背景色を上書きすると、ページのグループ化や組織化に関する視覚的な手がかりが失われ、かえって理解や利用が困難になる恐れがある。ページ上の各領域の境界を示すのに背景色を用いている場合、この達成方法が適切ではない可能性がある。背景色をページ上の各領域の境界を示すのに用いているならば、「<a href="http://waic.jp/docs/WCAG-TECHS/C23" class="tech-ref">C23: メインコンテンツのテキスト及び背景の色を指定せず、バナー、機能及びナビゲーションなどのような補助的なコンテンツのテキスト及び背景の色を CSS で指定する</a>  (CSS)

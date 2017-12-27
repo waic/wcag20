@@ -6,22 +6,22 @@
         達成方法 SL17</a></li><li><a title="SL19: Providing User Instructions With AutomationProperties.HelpText in&#xA;    &#x9;&#x9;&#x9;Silverlight" href="SL19.html"><strong>次: </strong>
         達成方法 SL19</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#SL18-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#SL18-applicability">適用（対象）</a></li><li><a href="#SL18-description">解説</a></li><li><a href="#SL18-examples">事例</a></li><li><a href="#SL18-resources">参考リソース</a></li><li><a href="#SL18-related-techs">関連する達成方法</a></li><li><a href="#SL18-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SL18" id="SL18"> </a>SL18: Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</h1><div id="SL18-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="SL18-applicability">適用（対象）</h2><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
-						How to Meet 1.1.1 (非テキストコンテンツ)
+						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-refs">
 				達成基準 2.4.4 (リンクの目的 (コンテキスト内) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-refs">
-						How to Meet 2.4.4 (リンクの目的 (コンテキスト内) )
+						クイックリファレンス 2.4.4 (リンクの目的 (コンテキスト内) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
 					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-refs">達成基準 2.4.4</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">達成基準 2.4.4 を理解する</a>を参照すること。</p></div></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-link">
 				達成基準 2.4.9 (リンクの目的 (リンクのみ) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-link">
-						How to Meet 2.4.9 (リンクの目的 (リンクのみ) )
+						クイックリファレンス 2.4.9 (リンクの目的 (リンクのみ) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#ensure-compat-rsv">
 				達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#ensure-compat-rsv">
-						How to Meet 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
+						クイックリファレンス 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua10.18.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/silverlight.html#SL18">SL18 に関するユーザエージェントサポートノート</a>を参照のこと。<a href="silverlight_notes.html">Silverlight Technology Notes</a>も参照。</p></div><h2 id="SL18-description">解説</h2><div class="textbody"><p>The objective of this technique is to use the Silverlight <code>AutomationProperties.Name</code> property

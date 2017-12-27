@@ -8,17 +8,17 @@
         達成方法 pdf_notes</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#SL35-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#SL35-applicability">適用（対象）</a></li><li><a href="#SL35-description">解説</a></li><li><a href="#SL35-examples">事例</a></li><li><a href="#SL35-resources">参考リソース</a></li><li><a href="#SL35-related-techs">関連する達成方法</a></li><li><a href="#SL35-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="SL35" id="SL35"> </a>SL35: Using the Validation and ValidationSummary APIs to Implement Client
     			Side Forms Validation in Silverlight</h1><div id="SL35-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="SL35-applicability">適用（対象）</h2><div class="textbody"><ul><li><p> Microsoft Silverlight, versions 3 and greater </p></li><li><p> Silverlight managed programming model and Silverlight XAML </p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-identified">
 				達成基準 3.3.1 (エラーの特定)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-identified">
-						How to Meet 3.3.1 (エラーの特定)
+						クイックリファレンス 3.3.1 (エラーの特定)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-identified.html">
 						達成基準 3.3.1 (エラーの特定)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-suggestions">
 				達成基準 3.3.3 (エラー修正の提案)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-suggestions">
-						How to Meet 3.3.3 (エラー修正の提案)
+						クイックリファレンス 3.3.3 (エラー修正の提案)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">
 						達成基準 3.3.3 (エラー修正の提案)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-reversible">
 				達成基準 3.3.4 (エラー回避 (法的、金融、データ) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-reversible">
-						How to Meet 3.3.4 (エラー回避 (法的、金融、データ) )
+						クイックリファレンス 3.3.4 (エラー回避 (法的、金融、データ) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-reversible.html">
 						達成基準 3.3.4 (エラー回避 (法的、金融、データ) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua10.35.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/silverlight.html#SL35">SL35 に関するユーザエージェントサポートノート</a>を参照のこと。<a href="silverlight_notes.html">Silverlight Technology Notes</a>も参照。</p></div><h2 id="SL35-description">解説</h2><div class="textbody"><p>The objective of this technique is to use the Silverlight <code>Validation</code> API.
