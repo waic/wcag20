@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G82">
-   <short-name>非テキストコンテンツの目的を特定する代替テキストを提供する</short-name>
+   <short-name>非テキストコンテンツの目的を特定するテキストによる代替を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

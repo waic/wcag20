@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF11">
-   <short-name>PDF 文書内でLink アノテーションと /Link 構造要素を使用してリンクとリンクテキストを提供する</short-name>
+   <short-name>PDF 文書内で Link アノテーションと /Link 構造要素を使用してリンクとリンクテキストを提供する</short-name>
    <applicability>
      <p>リンクを含む PDF 文書</p>
   </applicability>

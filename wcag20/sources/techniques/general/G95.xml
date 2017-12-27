@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G95">
-   <short-name>非テキストコンテンツの簡単な説明を提供する、簡潔な代替テキストを提供する</short-name>
+   <short-name>非テキストコンテンツの簡単な説明を提供する、簡潔なテキストによる代替を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>
