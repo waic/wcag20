@@ -5,7 +5,7 @@
 <header>
 <title>WCAG 2.0 解説書</title>
 <subtitle>WCAG 2.0 を理解して実装するためのガイド</subtitle>
-<trdisclaimer><p>【注意】 この文書は、W3C ワーキンググループノート <loc href="https://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/">Understanding WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</loc>を、<loc href="http://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</loc> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="http://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
+<trdisclaimer><p>【注意】 この文書は、W3C ワーキンググループノート <loc href="https://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/">Understanding WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</loc>を、<loc href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</loc> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
 <p>【重要】 原文の Understanding WCAG 2.0 自体、WCAG ワーキンググループによって今後も継続的に修正されていくものと思われます。この文書の内容は古くなっていることがあります。あくまでも参考程度にご覧ください。</p>
 </trdisclaimer>
 <version/>
@@ -19,7 +19,7 @@
 <publoc>
 	<!--<loc href="http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/">http://www.w3.org/WAI/GL/2011/WD-UNDERSTANDING-WCAG20-20110929/</loc>-->
 	<!--loc href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/">http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/</loc-->
-    <loc href="http://waic.jp/docs/UNDERSTANDING-WCAG20/">http://waic.jp/docs/UNDERSTANDING-WCAG20/</loc>
+    <loc href="https://waic.jp/docs/UNDERSTANDING-WCAG20/">https://waic.jp/docs/UNDERSTANDING-WCAG20/</loc>
 </publoc>
 <publocori>
     <loc href="https://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/">https://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/</loc>
@@ -81,7 +81,7 @@ Austin)</affiliation>
 <status>
 <p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C テクニカルレポートインデックス (英語)</loc>で参照可能である。</emph></p>
 
-<p>これは、ワーキンググループノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ (英語)</loc>では、この文書は <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり (ガイダンスを提供している)、規定文書ではない (WCAG 2.0 に適合するための要件を定めていない) ことに留意してほしい。</p>
+<p>これは、ワーキンググループノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ (英語)</loc>では、この文書は <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり (ガイダンスを提供している)、規定文書ではない (WCAG 2.0 に適合するための要件を定めていない) ことに留意してほしい。</p>
 
 <p>WCAG 2.0 解説書は、ワーキンググループノートとして 2008 年 12 月 11 日に発行され、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 4 月 8 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新された。この新版では、WCAG 2.0 の補足情報を更新している。WCAG 2.0 自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、<loc href="conformance.html#uc-partial-third-head">第三者によるコンテンツに起因する部分適合表明に関する説明を追加した</loc>ことである。</p>
 
@@ -99,9 +99,9 @@ Austin)</affiliation>
 </status>
 
 <abstract>
-<p>この文書、「WCAG 2.0 解説書」は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツアクセシビリティガイドライン (WCAG) 概要 (英語)</loc>を参照のこと。</p>
+<p>この文書、「WCAG 2.0 解説書」は、<loc href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツアクセシビリティガイドライン (WCAG) 概要 (英語)</loc>を参照のこと。</p>
 
-<p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0 の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術 (例えば、HTML、CSS、XML) を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc href="http://waic.jp/docs/WCAG-TECHS/Overview.html">WCAG 2.0 達成方法集</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、(それ単体もしくは他の達成方法との併用により、) ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、(テスト可能ではない、あるいは、完全な支援ができないので、) それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
+<p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0 の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術 (例えば、HTML、CSS、XML) を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc href="https://waic.jp/docs/WCAG-TECHS/Overview.html">WCAG 2.0 達成方法集</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、(それ単体もしくは他の達成方法との併用により、) ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、(テスト可能ではない、あるいは、完全な支援ができないので、) それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
 
 <p>達成基準を満たす達成方法に加えて、「よくある失敗例」も文書化されている。これらの「よくある失敗例」は WCAG 2.0 への不適合を引き起こすものとして知られている制作方法である。制作者は、WCAG 2.0 の達成基準を満たすためにそれらの方法を避けなければならない。</p>
 
@@ -215,8 +215,8 @@ Austin)</affiliation>
 			<div2 id="ut" role="suppressed">
 				<head>WCAG 達成基準のための達成方法を理解する (抑制された)</head>
 				<p>WCAG 2.0 のガイドライン及び達成基準は、動的アプリケーション、モバイル、デジタルテレビなどを含む現在及び将来のウェブ技術に対して広く適用可能となるよう設計されている。これらは安定しており変わることはない。</p>
-            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> (日本語訳は <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>) 文書は概ね<phrase>年に 2 回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
-				<p><loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>における 3 つのタイプのガイダンスを以下に説明する:</p>
+            <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> (日本語訳は <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>) 文書は概ね<phrase>年に 2 回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
+				<p><loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>における 3 つのタイプのガイダンスを以下に説明する:</p>
 				<ulist>
 					<item>
 						<p>十分な達成方法</p>
@@ -270,7 +270,7 @@ Austin)</affiliation>
 							-->
 						</ulist>
                   <p>
-                     <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
+                     <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>では、その達成方法のガイダンスを明確にするためにのみ "しなければならない" 及び "することが望ましい" という用語を用いており、WCAG への要求事項を伝えるためには用いない。</p>
 					</note>
 				</div3>
 				<div3 id="understanding-techniques-sufficient" role="normal">
@@ -285,7 +285,7 @@ Austin)</affiliation>
 							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツの利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない。ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
-               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3C の <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。<emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
+               <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3C の <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。<emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
                </p>
 					<div4 id="understanding-techniques-sufficient-lists-and" role="normal">
 						<head>番号付きリスト、"かつ"</head>
@@ -343,7 +343,7 @@ Austin)</affiliation>
 				</div3>
 				<div3  id="understanding-techniques-othertechs" role="normal">
 					<head>その他の達成方法</head>
-					<p>W3C の <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
+					<p>W3C の <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある達成方法に加えて、<emph role="strong">WCAG 達成基準を満たすその他の方法がある</emph>。W3C の達成方法は包括的なものではなく、より新しい技術や状況をカバーしていないかもしれない。</p>
 					<p>
 						<emph role="strong">ウェブコンテンツは、WCAG 2.0 に適合するために W3C が公開している達成方法を用いなくてもよい。</emph>
 						<emph>(上記の<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
@@ -404,7 +404,7 @@ Austin)</affiliation>
 				<div3 id="understanding-techniques-using" role="normal">
 					<head>達成方法集の使用</head>
                <p>
-                  <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
+                  <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
 					<div4 id="understanding-techniques-using-alternatives" role="normal">
 						<head>代替版は達成基準を満たしていなければならない</head>
 						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="http://www.w3.org/TR/WCAG20-HTML-TECHS/G73">G73: Providing a long description in another location...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>
@@ -417,7 +417,7 @@ Austin)</affiliation>
 				</div3>
 			</div2>
 		</div1>
-<!-- p>WCAG 2.0 の中にウェブコンテンツ技術特有の達成方法を記述するのではなく、ガイドライン及び達成基準自体は、ウェブコンテンツ技術に依存しない方法で記述されている。特定のウェブコンテンツ技術（例えば、HTML）を用いてガイドラインを満たすためのガイダンスや事例を提供するために、ワーキンググループは達成基準ごとにその達成基準を満たすのに十分であると考えられる<emph role="bolditalic">十分な達成方法</emph>というものを特定した。十分な達成方法は、番号付きリストで提供されており、各リスト項目は達成基準を満たすために用いることが可能な単一の達成方法又は複数の達成方法の組み合わせとなっている。番号付きのリスト項目で 「及び（かつ）」 によってつながれている複数の達成方法がある場合には、その全ての達成方法を用いなければならない。例えば、「達成基準 2.2.1を理解する」の「状況B」では、「SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する (Scripting) 及び SCR1: 利用者が初期設定の制限時間を延長できるようにする (Scripting) 」という組み合わせを三番目の達成方法として挙げている。</p><p>十分な達成方法の一覧は、「WCAG 2.0 文書群」の中で維持管理されている（「WCAG 2.0を満たす方法」にも反映されている）。<loc href="http://waic.jp/docs/WCAG-TECHS/intro.html">「WCAG 2.0 達成方法集」のイントロダクション</loc>では、現時点で十分な達成方法があるウェブコンテンツ技術を挙げている。 WCAG 2.0の規定文書（勧告文書）とそのガイドラインにある達成基準を満たすために用いられる達成方法とを別々の文書にすることによって、新しい達成方法が見つかったときやウェブコンテンツ技術及び支援技術の進化に応じて、その一覧を更新していくことが可能である。</p>
+<!-- p>WCAG 2.0 の中にウェブコンテンツ技術特有の達成方法を記述するのではなく、ガイドライン及び達成基準自体は、ウェブコンテンツ技術に依存しない方法で記述されている。特定のウェブコンテンツ技術（例えば、HTML）を用いてガイドラインを満たすためのガイダンスや事例を提供するために、ワーキンググループは達成基準ごとにその達成基準を満たすのに十分であると考えられる<emph role="bolditalic">十分な達成方法</emph>というものを特定した。十分な達成方法は、番号付きリストで提供されており、各リスト項目は達成基準を満たすために用いることが可能な単一の達成方法又は複数の達成方法の組み合わせとなっている。番号付きのリスト項目で 「及び（かつ）」 によってつながれている複数の達成方法がある場合には、その全ての達成方法を用いなければならない。例えば、「達成基準 2.2.1を理解する」の「状況B」では、「SCR16: 制限時間が切れようとしていることを利用者に警告するスクリプトを提供する (Scripting) 及び SCR1: 利用者が初期設定の制限時間を延長できるようにする (Scripting) 」という組み合わせを三番目の達成方法として挙げている。</p><p>十分な達成方法の一覧は、「WCAG 2.0 文書群」の中で維持管理されている（「WCAG 2.0を満たす方法」にも反映されている）。<loc href="https://waic.jp/docs/WCAG-TECHS/intro.html">「WCAG 2.0 達成方法集」のイントロダクション</loc>では、現時点で十分な達成方法があるウェブコンテンツ技術を挙げている。 WCAG 2.0の規定文書（勧告文書）とそのガイドラインにある達成基準を満たすために用いられる達成方法とを別々の文書にすることによって、新しい達成方法が見つかったときやウェブコンテンツ技術及び支援技術の進化に応じて、その一覧を更新していくことが可能である。</p>
 
 <p>留意すべきは、すべての達成方法は<loc href="informativedef" linktype="glossary">参考情報</loc>であるということである。「十分な達成方法」は、WCAG ワーキンググループがその達成基準を満たすのに十分であると考えたものである。しかし、必ずしもそれらの特定の達成方法を用いる必要はない。もし、ワーキンググループが挙げた達成方法以外のものを用いるのであれば、その十分な達成方法として確立する何らかの手段が必要となるであろう。</p>
 

@@ -16,7 +16,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc>は、ガイドラインと達成基準の中で使われる用語を定義したドキュメントへのリンク、異なる達成基準をどのように満たすかを説明したドキュメントへのリンク、
+      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc>は、ガイドラインと達成基準の中で使われる用語を定義したドキュメントへのリンク、異なる達成基準をどのように満たすかを説明したドキュメントへのリンク、
 		そのセクションの異なるサブセクションへのリンクを含む各セクションの目次、及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/WCAG20/from10/comparison/">Comparison of WCAG 1.0 checkpoints to WCAG 2.0（英語）</loc>へのリンクを含んでいる。利用者がこのドキュメントを拾い読みするときは、これらのリンクをたどって関連情報を探すことができる。</p>
 </description>
     </eg-group>

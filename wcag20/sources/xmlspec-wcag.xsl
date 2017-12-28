@@ -25,7 +25,7 @@
   <xsl:param name="glthisversion">
       <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
-  <xsl:param name="guidethisversion">http://waic.jp/docs/UNDERSTANDING-WCAG20/<!--BBC change as needed based on whether the guidelines should point the latest version or not --><!--xsl:value-of select="$guide-src//latestloc/loc[@href]"/--></xsl:param>
+  <xsl:param name="guidethisversion">https://waic.jp/docs/UNDERSTANDING-WCAG20/<!--BBC change as needed based on whether the guidelines should point the latest version or not --><!--xsl:value-of select="$guide-src//latestloc/loc[@href]"/--></xsl:param>
   <xsl:param name="originalunderstanding">https://www.w3.org/TR/UNDERSTANDING-WCAG20/</xsl:param>
   <xsl:param name="techsthisversion">
     <xsl:value-of select="$techs-src//publoc/loc[@href]"/>
@@ -516,7 +516,7 @@
               </p-->
 <p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と不適合事例</a>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。</p>
 <p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
-<p>【注意】 この文書は、W3C ワーキンググループノート <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</a>を、<a href="http://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="http://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
+<p>【注意】 この文書は、W3C ワーキンググループノート <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</a>を、<a href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
 <p>【注意】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </div><script src="//www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script></body></html>
       </xsl:when>
@@ -1486,7 +1486,7 @@
 				<xsl:attribute name="id"><xsl:value-of select="$id"/></xsl:attribute>
 			</xsl:if>
 			<h2>達成方法に関する重要な情報</h2>
-			<p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<!--a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a--><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p>
+			<p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<!--a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a--><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p>
 		</div>
 	</xsl:template>
 	
