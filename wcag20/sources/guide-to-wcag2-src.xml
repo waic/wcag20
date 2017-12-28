@@ -404,7 +404,7 @@ Austin)</affiliation>
 				<div3 id="understanding-techniques-using" role="normal">
 					<head>達成方法集の使用</head>
                <p>
-                  <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0: A customizable quick reference</loc> を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
+                  <loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
 					<div4 id="understanding-techniques-using-alternatives" role="normal">
 						<head>代替版は達成基準を満たしていなければならない</head>
 						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="http://www.w3.org/TR/WCAG20-HTML-TECHS/G73">G73: Providing a long description in another location...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>

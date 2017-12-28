@@ -701,7 +701,7 @@
 			<ul>
 				<li>
 				    <a href="http://waic.jp/docs/WCAG20/quickref/#{$id}">
-						How to Meet <xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$id"/></xsl:call-template>)
+						クイックリファレンス <xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$id"/></xsl:call-template>)
 					</a>
 				</li>
 				<li>
