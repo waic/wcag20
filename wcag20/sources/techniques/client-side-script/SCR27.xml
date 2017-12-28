@@ -19,32 +19,30 @@
 <p>この例のコンポーネントは順序無しリストのリスト項目である。順序無しリストは、こうしたコンポーネントのような類似項目のためのとてもよいセマンティックモデルである。メニューを使う方法も、他のタイプのグループ化に使用できる。</p>
 <p>モジュールはリスト項目であり、それぞれのモジュールは、div要素内のコンテンツに加えて、入れ子になったリストとして表されたメニューを含んでいる。</p>
 </description>
-      <code role="xhtml"><![CDATA[
-    &lt;ul id="swapper"&gt;
-    &lt;li id="black"&gt;
-        &lt;div class="module"&gt;
-            &lt;div class="module_header"&gt;
-                &lt;!-- メニューへのリンク --&gt;
-                &lt;a href="#" onclick="ToggleMenu(event);"&gt;menu&lt;/a&gt;
-                &lt;!-- メニュー --&gt;
-                &lt;ul class="menu"&gt;
-                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
-                        onkeypress="OnMenuKeypress(event);"&gt;up&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#" onclick="OnMenuClick(event)" 
-                        onkeypress="OnMenuKeypress(event);"&gt;down&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;
-            &lt;div class="module_body"&gt;
-                blackモジュールのテキスト
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/li&gt;
+         <code role="xhtml"><![CDATA[<ul id="swapper">
+    <li id="black">
+        <div class="module">
+            <div class="module_header">
+                <!-- menu link -->
+                <a href="#" onclick="ToggleMenu(event);">menu</a>
+                <!-- menu -->
+                <ul class="menu">
+                    <li><a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);">up</a></li>
+                    <li><a href="#" onclick="OnMenuClick(event)" 
+                        onkeypress="OnMenuKeypress(event);">down</a></li>
+                </ul>
+            </div>
+            <div class="module_body">
+                Text in the black module
+            </div>
+        </div>
+    </li>
     ...
-&lt;/ul&gt; ]]></code>
+</ul>]]></code>
       <description><p>ここまでは、簡単なツリーの例でメニューを出したり隠したりする方法をとりあげてきたので、モジュールを入れ替えるコードについても着目する。イベントを同期させてデフォルトのリンクアクションをキャンセルしてから、作業に移動する。最初に、これから作業する要素、メニュー、再配置されるモジュール、メニューリンクのための一連のローカル変数をセットする。それから、再配置の方向を確認した後に、入れ替えるノードの取得を試みる。ノードを見つけた場合、swapNode()を呼び出して二つのモジュールを入れ替え、 PositionElement()でモジュールと共に絶対配置されたメニューを移動し、すべてが完了したメニュー項目にフォーカスを設定する。</p>
 </description>
-      <code role="script"><![CDATA[
-MoveNode 関数(evt,dir)
+         <code role="script"><![CDATA[function MoveNode(evt,dir)
 {
     HarmonizeEvent(evt);
     evt.preventDefault();
