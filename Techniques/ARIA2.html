@@ -6,12 +6,12 @@
         達成方法 ARIA1</a></li><li><a title="ARIA4: ユーザインターフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する" href="ARIA4.html"><strong>次: </strong>
         達成方法 ARIA4</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#ARIA2-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#ARIA2-applicability">適用（対象）</a></li><li><a href="#ARIA2-description">解説</a></li><li><a href="#ARIA2-examples">事例</a></li><li><a href="#ARIA2-resources">参考リソース</a></li><li><a href="#ARIA2-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="ARIA2" id="ARIA2"> </a>ARIA2: aria-required プロパティによって必須項目を特定する</h1><div id="ARIA2-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="ARIA2-applicability">適用（対象）</h2><div class="textbody"><p><a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</a>をサポートするウェブコンテンツ技術。</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#content-structure-separation-programmatic">
-						How to Meet 1.3.1 (情報及び関係性)
+						クイックリファレンス 1.3.1 (情報及び関係性)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-suggestions">
 				達成基準 3.3.3 (エラー修正の提案)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-suggestions">
-						How to Meet 3.3.3 (エラー修正の提案)
+						クイックリファレンス 3.3.3 (エラー修正の提案)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">
 						達成基準 3.3.3 (エラー修正の提案)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua8.2.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/aria.html#ARIA2">ARIA2 に関するユーザエージェントサポートノート</a>を参照のこと。<a href="wai-aria_notes.html">WAI-ARIA技術ノート</a>も参照。</p></div><h2 id="ARIA2-description">解説</h2><div class="textbody"><p>この達成方法の目的は、（プレゼンテーションを通して必須であることが示されている）フォームフィールドが、フォームの正常送信のために必須であることを、プログラムによって解釈できる指標として提供することである。</p><p>要素が必須であるという事実は多くの場合、（テキスト又は非テキストのシンボル、又は入力が必須であることを示すテキスト、又は色/スタイルを介して）視覚的に提示されるが、これは、フィールド名の一部としてプログラムによって解釈することができない。</p><p>WAI-ARIA <code>aria-required</code>プロパティは、送信前に利用者の入力が必須であることを示す。<code>aria-required</code>プロパティは、"true"又は"false"の値を持つことができる。たとえば、利用者が住所のフィールドに入力しなければならない場合、<code>aria-required</code>は"true"に設定される。</p><div class="note"><p class="prefix"><em>注記 1:
