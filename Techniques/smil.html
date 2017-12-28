@@ -6,17 +6,17 @@
 <ul class="toc"><li><a href="http://waic.jp/docs/WCAG-TECHS/#abstract">概要 </a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/#status">この文書のステータス</a></li><li><a href="#SM1">SM1: SMIL 1.0 で拡張音声解説を追加する</a></li><li><a href="#SM2">SM2: SMIL 2.0 で拡張音声解説を追加する</a></li><li><a href="#SM6">SM6: SMIL 1.0 で音声解説を提供する</a></li><li><a href="#SM7">SM7: SMIL 2.0 で音声解説を提供する</a></li><li><a href="#SM11">SM11: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</a></li><li><a href="#SM12">SM12: SMIL 2.0 で同期したテキストストリームによるキャプションを提供する</a></li><li><a href="#SM13">SM13: SMIL 1.0 で、同期した映像ストリームを通じて手話通訳を提供する</a></li><li><a href="#SM14">SM14: SMIL 2.0 で、同期した映像ストリームを通じて手話通訳を提供する</a></li></ul></nav><hr/><div class="body"><div class="div1">
 		<div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM1" id="SM1"> </a>SM1: SMIL 1.0 で拡張音声解説を追加する</h2><div class="applicability"><h3 id="SM1-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 1.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc">
-						クイックリファレンス 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
+						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc-only">
-						クイックリファレンス 1.2.5 (音声解説 (収録済) )
+						How to Meet 1.2.5 (音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-extended-ad">
 				達成基準 1.2.7 (拡張音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-extended-ad">
-						クイックリファレンス 1.2.7 (拡張音声解説 (収録済) )
+						How to Meet 1.2.7 (拡張音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM1-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 1.0 にはこれを達成する簡単な方法がないが、連続して順番に再生される複数のファイルに、音声ファイル及び映像ファイルを分割することによって実装できる。この方法によって追加した音声解説は、視聴覚コンテンツが停止している間に再生される。映像ファイルの最後のフレームは、画面に表示されたまま一時停止し、その間に音声ファイルが再生される。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生が自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだSMILスクリプト及び含まないSMILスクリプトの2つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説をSMILファイルに追加したりSMILファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、2つのバージョンの映像を提供することによって可能となる。つまり、1つは拡張音声解説を含んだバージョン、もう1つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM1-examples">事例</h3><h4 class="small-head" id="SM1-ex1">事例 1: 拡張音声解説のあるSMIL 1.0の映像、メインのメディアを4箇所で停止して拡張音声解説を挿入している</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -73,17 +73,17 @@ xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
                                     Templates</a>
 								       </p></li></ul></div><h3 id="SM1-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM2">SM2: SMIL 2.0 で拡張音声解説を追加する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM6">SM6: SMIL 1.0 で音声解説を提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/G81">G81: プレーヤーによって別のビューポートに表示する、又は画像上に重ねることのできる、手話通訳の同期した映像を提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM11">SM11: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</a></li></ul></div><h3 id="SM1-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM1-procedure">チェックポイント</h4><ol class="enumar"><li><p>拡張音声解説のあるファイルを再生する。</p></li><li><p>音声解説のあるファイルを再生する。</p></li><li><p>映像がところどころ一時停止して、拡張音声解説が再生される。</p></li></ol><h4 class="small-head" id="SM1-results">判定基準</h4><ul><li><p>3.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM2" id="SM2"> </a>SM2: SMIL 2.0 で拡張音声解説を追加する</h2><div class="applicability"><h3 id="SM2-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 2.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc">
-						クイックリファレンス 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
+						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc-only">
-						クイックリファレンス 1.2.5 (音声解説 (収録済) )
+						How to Meet 1.2.5 (音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-extended-ad">
 				達成基準 1.2.7 (拡張音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-extended-ad">
-						クイックリファレンス 1.2.7 (拡張音声解説 (収録済) )
+						How to Meet 1.2.7 (拡張音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM2-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 2.0では、特定の音声ファイルを特定のタイミングで再生するよう指定し、音声ファイルが再生される間は、画面が表示されたまま一時停止できる。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生は自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだSMILスクリプト及び含まないSMILスクリプトの2つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説をSMILファイルに追加したりSMILファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、2つのバージョンの映像を提供することによって可能となる。つまり、1つは拡張音声解説を含んだバージョン、もう1つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM2-examples">事例</h3><h4 class="small-head" id="SM2-ex1">事例 1: 拡張音声解説のある映像</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -117,12 +117,12 @@ height="144" width="320"/&gt;
                                     Templates</a>
 								       </p></li></ul></div><h3 id="SM2-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/G81">G81: プレーヤーによって別のビューポートに表示する、又は画像上に重ねることのできる、手話通訳の同期した映像を提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM7">SM7: SMIL 2.0 で音声解説を提供する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM11">SM11: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</a></li></ul></div><h3 id="SM2-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM2-procedure">チェックポイント</h4><ol class="enumar"><li><p>拡張音声解説のあるファイルを再生する。</p></li><li><p>映像がところどころ一時停止して、拡張音声解説が再生される。</p></li></ol><h4 class="small-head" id="SM2-results">判定基準</h4><ul><li><p>2.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM6" id="SM6"> </a>SM6: SMIL 1.0 で音声解説を提供する</h2><div class="applicability"><h3 id="SM6-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 1.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc">
-						クイックリファレンス 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
+						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc-only">
-						クイックリファレンス 1.2.5 (音声解説 (収録済) )
+						How to Meet 1.2.5 (音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM6-description">解説</h3><div class="textbody"><p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声解説によって、映像の説明が提供される。</p></div><h3 class="small-head" id="SM6-examples">事例</h3><h4 class="small-head" id="SM6-ex1">事例 1: QuickTime プレーヤー向けの SMIL 1.0 の音声解説の例</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
@@ -181,12 +181,12 @@ height="144" width="320"/&gt;
                                         Features of SMIL</a>
 								       </p></li></ul></div><h3 id="SM6-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM2">SM2: SMIL 2.0 で拡張音声解説を追加する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM7">SM7: SMIL 2.0 で音声解説を提供する</a></li></ul></div><h3 id="SM6-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM6-procedure">チェックポイント</h4><ol class="enumar"><li><p>（デフォルトで常に再生されている場合を除いて、）コンテンツ／プレーヤーから音声解説を再生する方法を見つける。</p></li><li><p>音声解説のあるファイルを再生する。</p></li><li><p>音声解説が再生される。</p></li></ol><h4 class="small-head" id="SM6-results">判定基準</h4><ul><li><p>3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM7" id="SM7"> </a>SM7: SMIL 2.0 で音声解説を提供する</h2><div class="applicability"><h3 id="SM7-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 2.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc">
-						クイックリファレンス 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
+						How to Meet 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
 						達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc-only">
 				達成基準 1.2.5 (音声解説 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc-only">
-						クイックリファレンス 1.2.5 (音声解説 (収録済) )
+						How to Meet 1.2.5 (音声解説 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">
 						達成基準 1.2.5 (音声解説 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM7-description">解説</h3><div class="textbody"><p>この達成方法の目的は、全盲又は視聴覚素材の映像を見るのが困難な利用者が、その素材の情報を得られるようにすることである。この達成方法では、視聴覚素材の会話の合間に入る音声解説によって、映像の説明が提供される。</p></div><h3 class="small-head" id="SM7-examples">事例</h3><h4 class="small-head" id="SM7-ex1">事例 1: RealMedia プレーヤー向けの SMIL 2.0 の音声解説の例</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -214,12 +214,12 @@ height="144" width="320"/&gt;
                   <a href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</a>
 								       </p></li></ul></div><h3 id="SM7-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM2">SM2: SMIL 2.0 で拡張音声解説を追加する</a></li><li><a href="http://waic.jp/docs/WCAG-TECHS/SM6">SM6: SMIL 1.0 で音声解説を提供する</a></li></ul></div><h3 id="SM7-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM7-procedure">チェックポイント</h4><ol class="enumar"><li><p>（デフォルトで常に再生されている場合を除いて、）コンテンツ／プレーヤーから音声解説を再生する方法を見つける。</p></li><li><p>音声解説のあるファイルを再生する。</p></li><li><p>音声解説が再生される。</p></li></ol><h4 class="small-head" id="SM7-results">判定基準</h4><ul><li><p>3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM11" id="SM11"> </a>SM11: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</h2><div class="applicability"><h3 id="SM11-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 1.0</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-captions">
-						クイックリファレンス 1.2.2 (キャプション (収録済) )
+						How to Meet 1.2.2 (キャプション (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-captions.html">
 						達成基準 1.2.2 (キャプション (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-real-time-captions">
 				達成基準 1.2.4 (キャプション (ライブ) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-real-time-captions">
-						クイックリファレンス 1.2.4 (キャプション (ライブ) )
+						How to Meet 1.2.4 (キャプション (ライブ) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html">
 						達成基準 1.2.4 (キャプション (ライブ) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.5.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/smil.html#SM11">SM11 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="SM11-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳の聞こえない利用者や視聴覚素材の会話の聞き取りが困難な利用者が、その素材を見て理解できるようにすることである。この達成方法では、会話と重要な音をすべて、画面上のキャプション領域に表示されるテキストストリームで提供する。</p><p>SMIL 1.0 では、映像とキャプションに別々の領域を定義することができる。キャプションと映像の再生は同期されて、キャプションのテキストが画面上のある領域に表示される間、それに対応する映像が別の領域に表示される。</p></div><h3 class="small-head" id="SM11-examples">事例</h3><h4 class="small-head" id="SM11-ex1">事例 1: Quicktime プレーヤー向けの SMIL 1.0 のキャプションの例</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
@@ -305,12 +305,12 @@ height="144" width="320"/&gt;
                   <a href="https://msdn.microsoft.com/en-us/library/ms971327.aspx">SAMI 1.0</a>
                </p></li></ul></div><h3 id="SM11-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM12">SM12: SMIL 2.0 で同期したテキストストリームによるキャプションを提供する</a></li></ul></div><h3 id="SM11-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM11-procedure">チェックポイント</h4><ol class="enumar"><li><p>プレーヤーにキャプションの設定がある場合には、キャプションの表示を選択する。</p></li><li><p>キャプションのあるファイルを再生する。</p></li><li><p>キャプションが表示される。</p></li></ol><h4 class="small-head" id="SM11-results">判定基準</h4><ul><li><p>3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM12" id="SM12"> </a>SM12: SMIL 2.0 で同期したテキストストリームによるキャプションを提供する</h2><div class="applicability"><h3 id="SM12-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 2.0</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-captions">
-						クイックリファレンス 1.2.2 (キャプション (収録済) )
+						How to Meet 1.2.2 (キャプション (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-captions.html">
 						達成基準 1.2.2 (キャプション (収録済) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-real-time-captions">
 				達成基準 1.2.4 (キャプション (ライブ) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-real-time-captions">
-						クイックリファレンス 1.2.4 (キャプション (ライブ) )
+						How to Meet 1.2.4 (キャプション (ライブ) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html">
 						達成基準 1.2.4 (キャプション (ライブ) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/smil.html#SM12">SM12 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="SM12-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳の聞こえない利用者や視聴覚素材の会話の聞き取りが困難な利用者が、その素材を見て理解できるようにすることである。この達成方法では、会話と重要な音をすべて、画面上のキャプション領域に表示されるテキストストリームで提供する。</p><p>SMIL 2.0 では、映像とキャプションに別々の領域を定義することができる。キャプションと映像の再生は同期されて、キャプションのテキストが画面上のある領域に表示され、それに対応する映像が別の領域に表示される。</p></div><h3 class="small-head" id="SM12-examples">事例</h3><h4 class="small-head" id="SM12-ex1">事例 1: RealMedia プレーヤー向けの SMIL 2.0 のキャプションの例</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -378,7 +378,7 @@ height="144" width="320"/&gt;
                   <a href="https://msdn.microsoft.com/en-us/library/ms971327.aspx">SAMI 1.0</a>
                </p></li></ul></div><h3 id="SM12-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM11">SM11: SMIL 1.0 で同期したテキストストリームによるキャプションを提供する</a></li></ul></div><h3 id="SM12-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM12-procedure">チェックポイント</h4><ol class="enumar"><li><p>プレーヤーにキャプションの設定がある場合には、キャプションの表示を選択する。</p></li><li><p>キャプションのあるファイルを再生する。</p></li><li><p>キャプションが表示される。</p></li></ol><h4 class="small-head" id="SM12-results">判定基準</h4><ul><li><p>3.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM13" id="SM13"> </a>SM13: SMIL 1.0 で、同期した映像ストリームを通じて手話通訳を提供する</h2><div class="applicability"><h3 id="SM13-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 1.0 プレーヤーが利用可能な場合</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-sign">
 				達成基準 1.2.6 (手話 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-sign">
-						クイックリファレンス 1.2.6 (手話 (収録済) )
+						How to Meet 1.2.6 (手話 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-sign.html">
 						達成基準 1.2.6 (手話 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM13-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 1.0 では、2つの映像のために別々の領域を定義できる。2つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM13-examples">事例</h3><h4 class="small-head" id="SM13-ex1">事例 1: QuickTimeプレーヤーでの SMIL 1.0 による手話通訳のサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -439,7 +439,7 @@ height="144" width="320"/&gt;
                   <a href="http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide/guideline-h-multimedia#techH12">NCAM Rich Media Accessibility, Accessible SMIL Templates</a>
 								       </p></li></ul></div><h3 id="SM13-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="http://waic.jp/docs/WCAG-TECHS/SM14">SM14: SMIL 2.0 で、同期した映像ストリームを通じて手話通訳を提供する</a></li></ul></div><h3 id="SM13-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SM13-procedure">チェックポイント</h4><ol class="enumar"><li><p>（手話通訳が常に表示されていない場合は、）手話通訳が表示されるように、コンテンツ内又はプレーヤーのコントロールを有効にする。</p></li><li><p>手話通訳を含むファイルを再生する。</p></li><li><p>手話通訳が表示される。</p></li></ol><h4 class="small-head" id="SM13-results">判定基準</h4><ul><li><p>3.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SM14" id="SM14"> </a>SM14: SMIL 2.0 で、同期した映像ストリームを通じて手話通訳を提供する</h2><div class="applicability"><h3 id="SM14-applicability">適用（対象）</h3><div class="textbody"><p>SMIL 2.0</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#media-equiv-sign">
 				達成基準 1.2.6 (手話 (収録済) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#media-equiv-sign">
-						クイックリファレンス 1.2.6 (手話 (収録済) )
+						How to Meet 1.2.6 (手話 (収録済) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-sign.html">
 						達成基準 1.2.6 (手話 (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="SM14-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 2.0 では、2つの映像のために別々の領域を定義できる。2つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM14-examples">事例</h3><h4 class="small-head" id="SM14-ex1">事例 1: RealMediaプレーヤーでの SMIL 2.0 手話ビデオのサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>

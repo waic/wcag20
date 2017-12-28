@@ -6,22 +6,22 @@
         達成方法 G198</a></li><li><a title="G200: 必要なときにのみリンク先を新しいウィンドウ及びタブで開く" href="G200.html"><strong>次: </strong>
         達成方法 G200</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#G199-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#G199-applicability">適用（対象）</a></li><li><a href="#G199-description">解説</a></li><li><a href="#G199-examples">事例</a></li><li><a href="#G199-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="G199" id="G199"> </a>G199: データが問題なく送信されたことを伝えるフィードバックを提供する</h1><div id="G199-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="G199-applicability">適用（対象）</h2><div class="textbody"><p>利用者のデータインプットを受け入れているコンテンツ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-identified">
 				達成基準 3.3.1 (エラーの特定)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-identified">
-						クイックリファレンス 3.3.1 (エラーの特定)
+						How to Meet 3.3.1 (エラーの特定)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-identified.html">
 						達成基準 3.3.1 (エラーの特定)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-suggestions">
 				達成基準 3.3.3 (エラー修正の提案)</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-suggestions">
-						クイックリファレンス 3.3.3 (エラー修正の提案)
+						How to Meet 3.3.3 (エラー修正の提案)
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">
 						達成基準 3.3.3 (エラー修正の提案)を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-reversible">
 				達成基準 3.3.4 (エラー回避 (法的、金融、データ) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-reversible">
-						クイックリファレンス 3.3.4 (エラー回避 (法的、金融、データ) )
+						How to Meet 3.3.4 (エラー回避 (法的、金融、データ) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-reversible.html">
 						達成基準 3.3.4 (エラー回避 (法的、金融、データ) )を理解する
 					</a></li></ul></li><li><a href="http://waic.jp/docs/WCAG20/Overview.html#minimize-error-reversible-all">
 				達成基準 3.3.6 (エラー回避 (すべて) )</a><ul><li><a href="http://waic.jp/docs/WCAG20/quickref/#minimize-error-reversible-all">
-						クイックリファレンス 3.3.6 (エラー回避 (すべて) )
+						How to Meet 3.3.6 (エラー回避 (すべて) )
 					</a></li><li><a href="http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html">
 						達成基準 3.3.6 (エラー回避 (すべて) )を理解する
 					</a></li></ul></li></ul><h2 id="G199-description">解説</h2><div class="textbody"><p>この達成方法の目的は、利用者にアクションを確認させる手間（例えば、ウェブフォームを送信した時に、それが正常に完遂されたことを利用者に確認させる）をなくすことである。アクションが成功したかを確認させるように促す代わりに、アクションが成功したか明確に示すフィードバックを常に提供することで達成することができる。</p><p>アクションを確認するために、情報に目を通すことが容易ではない利用者の大きな手間が費やされる時がある（例えば、データベースにデータが正常に送信されたか、人に送られたのか、または編集されているコンテンツに追加されたのか）。</p></div><h2 class="small-head" id="G199-examples">事例</h2><ul><li><p>利用者がシステムにログインする際、応答として「正常にログインできました」と表示される。そのため、利用者はログインできたかどうかを知るための手がかりとして、利用者名があるか、ログインリンクがログアウトリンクに変わったか、などを探して画面中を見てまわる必要がない。それらを探すことは、時間の浪費となる可能性がある。</p></li><li><p>利用者がクイズやテストを送信する。応答において、テストが正常に送信されたと知らせている。そのため、利用者は送信が正常に行われたかを確認するために、送信されたテストのリストなどを探し回る必要がない。</p></li><li><p>訪問者がウェブサイトでアカウントを作る。フォームを送信した後に、「登録が正常に送信されました……」とフィードバックされる。もし登録の後に自動的にログインするのであれば、フィードバックに「……ログインしました。」と追記される。もし確認が必要である場合、フィードバックは「……登録の確認を求めるEメールを送信しました」と続く。</p></li><li><p>利用者がサポートスタッフに直接充てた情報をフォームで送信する。フィードバックは「メッセージは正常に送信されました。48時間以内に回答が届きます。」と示す。</p></li></ul><h2 id="G199-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G199-procedure">チェックポイント</h3><ol class="enumar"><li><p>エラーがないようにフォームに入力する。</p></li><li><p>フォームを送信する。</p></li><li><p>正常に送信できたことが、フィードバックメッセージとして表示されている。</p></li></ol><h3 class="small-head" id="G199-results">判定基準</h3><ul><li><p>3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G198: 利用者が制限時間を解除するための手段を提供する" href="G198.html"><strong>前: </strong>
