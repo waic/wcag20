@@ -68,7 +68,7 @@
   endobj]]></codeblock>
       <description><p>ページラベルは次のように指定される。</p>
 <ulist><item><p><code>/S</code>は、ページ番号の番号付けスタイルを指定する。</p>
-<ulist><item><p><code>/D</code> - アラビア数字 (1、2、3...)</p></item><item><p><code>/r</code> - 小文字のローマ数字（i、ii、iii...)</p></item><item><p><code>/R</code> - 大文字のローマ数字（I、II、III...)</p></item><item><p><code>/A</code> - 大文字 (A ～ Z)</p></item><item><p><code>/a</code> - 小文字 (a ～ z)</p></item></ulist></item><item><p><code>/P</code> (オプション) - ページ番号接頭語</p></item><item><p><code>/St</code> (オプション) - 範囲内の最初のページ番号の値 (デフォルト：1)</p></item></ulist>
+<ulist><item><p><code>/D</code> - アラビア数字 (1、2、3...)</p></item><item><p><code>/r</code> - 小文字のローマ数字 (i、ii、iii...)</p></item><item><p><code>/R</code> - 大文字のローマ数字 (I、II、III...)</p></item><item><p><code>/A</code> - 大文字 (A ～ Z)</p></item><item><p><code>/a</code> - 小文字 (a ～ z)</p></item></ulist></item><item><p><code>/P</code> (オプション) - ページ番号接頭語</p></item><item><p><code>/St</code> (オプション) - 範囲内の最初のページ番号の値 (デフォルト：1)</p></item></ulist>
 </description>
     </eg-group>
    </examples>
