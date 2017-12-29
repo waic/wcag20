@@ -10,7 +10,7 @@
       <success-criterion idref="navigation-mechanisms-focus-visible" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、ユーザエージェントのサポートにより、利用者が、フォーカス可能なコンポーネントを視覚的に識別できるようにすることである。フォーカスを受け取った際に、何らかの方法で標準的なコンポーネントを強調することはユーザエージェントでは一般的である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WAI-USERAGENT/guidelines.html#tech-interaction-highlight">UAAGのチェックポイント　10.2「選択状態の強調、コンテンツのフォーカス、活性の要素、訪問済みリンク」（英語）</loc>を満たす場合、UAAGに適合したユーザエージェントでは標準的なコンポーネントは強調される。ユーザエージェントがサポートしている標準的なコントロールをウェブ制作者が使用すれば、利用者は、フォーカスの置かれている場所を標準的で予測可能な方法で知ることができる。</p>
+    <p>この達成方法の目的は、ユーザエージェントのサポートにより、利用者が、フォーカス可能なコンポーネントを視覚的に識別できるようにすることである。フォーカスを受け取った際に、何らかの方法で標準的なコンポーネントを強調することはユーザエージェントでは一般的である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WAI-USERAGENT/guidelines.html#tech-interaction-highlight">UAAGのチェックポイント　10.2「選択状態の強調、コンテンツのフォーカス、活性の要素、訪問済みリンク」(英語)</loc>を満たす場合、UAAGに適合したユーザエージェントでは標準的なコンポーネントは強調される。ユーザエージェントがサポートしている標準的なコントロールをウェブ制作者が使用すれば、利用者は、フォーカスの置かれている場所を標準的で予測可能な方法で知ることができる。</p>
   </description>
    <examples>
       <ulist>

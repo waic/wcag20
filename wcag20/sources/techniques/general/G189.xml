@@ -46,9 +46,9 @@
 
   <ul>
   <li>ウェブの歴史：
-  <a href="history.docx" class="hist">ウェブの歴史（Word形式）</a>, 
-  <a href="history.pdf" class="hist">ウェブの歴史（PDF形式）</a>, 
-  <a href="history.html" class="hist">ウェブの歴史（HTML形式）</a>
+  <a href="history.docx" class="hist">ウェブの歴史 (Word形式)</a>, 
+  <a href="history.pdf" class="hist">ウェブの歴史 (PDF形式)</a>, 
+  <a href="history.html" class="hist">ウェブの歴史 (HTML形式)</a>
   </li>
   ...
   </ul>]]></code>

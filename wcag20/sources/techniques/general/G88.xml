@@ -47,7 +47,7 @@
     </eg-group>
     <eg-group>
       <head>例3：3つの部分から成る、コンテンツの内容が分かるページタイトルが付与されたウェブページ</head>
-      <description><p>ウェブページでは、クローズド・キャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで3つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2つ目はウェブページが属するサブサイト名、そして3つ目はウェブページ自体を特定している（具体例としては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</loc>を参照。)</p>
+      <description><p>ウェブページでは、クローズド・キャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで3つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2つ目はウェブページが属するサブサイト名、そして3つ目はウェブページ自体を特定している (具体例としては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</loc>を参照。)</p>
 </description>
     </eg-group>
     <eg-group>

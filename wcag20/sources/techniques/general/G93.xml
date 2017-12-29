@@ -4,7 +4,7 @@
 <technique id="G93">
    <short-name>オープン (常に見える) キャプションを提供する</short-name>
    <applicability>
-      <p>（クローズドキャプションをサポートしていないものを含む）あらゆる同期したメディアのウェブコンテンツ技術</p>
+      <p>(クローズドキャプションをサポートしていないものを含む) あらゆる同期したメディアのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="media-equiv-captions" relationship="sufficient"/>
@@ -35,7 +35,7 @@
           <p>クローズドキャプションをオフにした状態で同期したメディアを見る。</p>
         </item>
         <item>
-          <p>（発話内容及び重要な音の伝えている情報全ての）キャプションが表示されている。</p>
+          <p>(発話内容及び重要な音の伝えている情報全ての) キャプションが表示されている。</p>
         </item>
       </olist>
     </procedure>
