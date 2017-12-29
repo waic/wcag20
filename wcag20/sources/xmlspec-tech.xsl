@@ -467,7 +467,7 @@
 			<xsl:call-template name="heading">
         <xsl:with-param name="level" select="$headlevel"/>
 				<xsl:with-param name="id"><xsl:value-of select="../@id"/>-applicability</xsl:with-param>
-				<xsl:with-param name="text">適用（対象）</xsl:with-param>
+				<xsl:with-param name="text">適用 (対象)</xsl:with-param>
 			</xsl:call-template>
 			<div class="textbody">
 				<xsl:apply-templates/>

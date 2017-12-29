@@ -203,7 +203,7 @@
 				 達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> のよくある失敗例
 			</xsl:when>
         <xsl:when test="../@role='tech-optional'">
-				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法（参考）
+				 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> でさらに対応が望まれる達成方法 (参考)
         </xsl:when>
         <xsl:when test="../@role='sufficient'">
 				</xsl:when>
@@ -230,7 +230,7 @@
       </xsl:when>
       <xsl:when test="../div5[@role='situation']">
         <p class="instructions">
-          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法（又は、達成方法の組み合わせ）がある。</p>
+          <strong>使用法:</strong> そのコンテンツに合致する状況を以下から選択すること。それぞれの状況には、WCAG ワーキンググループがその状況において十分であると判断する、番号付の達成方法 (又は、達成方法の組み合わせ) がある。</p>
       </xsl:when>
     </xsl:choose>
   </xsl:template>
