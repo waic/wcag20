@@ -20,11 +20,11 @@
   </ua-issues>
   <description>
     <p>この達成方法の目的は、PDF ビューアページコントロールに表示されるページ番号付けが文書のページ番号付けと同じであることを確認することにより、利用者が文書内の現在位置を確認できるよう支援することである。例えば、Adobe Acrobat Pro および Reader では、ページナビゲーションツールバーにページ番号が表示される。ページ番号の形式は、文書カタログ内の /PageLabels エントリにより指定される。</p>
-    <p>多くの文書では、文書内で特定のページ番号形式を使用する。一般に、前付けは小文字のローマ数字で番号付けされる。1 というページ番号で始まる主要コンテンツは、実際は文書の 5 ページ目または 6 ページ目である場合がある。同様に、付録はページ番号 1 で始まり、付録という英単語の接頭語が付けられる（例えば、「A-1」）。</p>
+    <p>多くの文書では、文書内で特定のページ番号形式を使用する。一般に、前付けは小文字のローマ数字で番号付けされる。1 というページ番号で始まる主要コンテンツは、実際は文書の 5 ページ目または 6 ページ目である場合がある。同様に、付録はページ番号 1 で始まり、付録という英単語の接頭語が付けられる (例えば、「A-1」)。</p>
     <p>コンテンツ制作者は、変換された文書のページ番号付けが、ユーザエージェントで表示されるページ番号に反映されていることを確認する必要がある。文書のページ番号表示の一貫性は、文書内の移動をより予測可能で分かりやすいものにするのに役立つ。</p>
     <p>例えば、ページ番号付けの書式について記述する /PageLabels が提供されていない場合、ページ番号付けスキームが Adobe Acrobat Pro または Reader のページナビゲーションツールバーに反映されない。このツールバーでは、ページ番号がテキストボックスに表示される。利用者は、このテキストボックスのページ番号を変更して別のページに移動できる。さらに、利用者は、文書内で矢印を選択してページを上下に移動できる。ツールバーには相対的なページ番号の位置も表示される。以下の画像は、現在位置が 1/4 ページであることを示すデフォルトの表示を示している。</p>
     <p>
-      <image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos-nav.jpg" height="43" width="155"/><alt>スクリーンショット：Adobe Acrobat Pro のページナビゲーションツールバーでは、ページ番号がテキストボックス内に表示される。利用者は、このテキストボックスのページ番号を変更して別のページに移動できる。さらに、利用者は、文書内で矢印を選択してページを上下に移動できる。ツールバーには相対的なページ番号の位置（例えば、1/4 ページ）が表示される。</alt></image>
+      <image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos-nav.jpg" height="43" width="155"/><alt>スクリーンショット：Adobe Acrobat Pro のページナビゲーションツールバーでは、ページ番号がテキストボックス内に表示される。利用者は、このテキストボックスのページ番号を変更して別のページに移動できる。さらに、利用者は、文書内で矢印を選択してページを上下に移動できる。ツールバーには相対的なページ番号の位置 (例えば、1/4 ページ) が表示される。</alt></image>
     </p>
   </description>
    <examples>
@@ -36,11 +36,11 @@
 <p>この文書では、アラビア数字の 1 で始まるページ番号付けを使用して、文書の 4 ページ目に新しいセクションが作成されている。その後、文書は Word から PDF に変換された。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/pages_nos_word.jpg" height="380" width="302"/><alt>スクリーンショット：小文字のローマ字のページ番号付けが指定されている、Word のページ番号の書式設定ダイアログボックス</alt></image></p><p>Adobe Acrobat Pro で、表示 &gt; ナビゲーションパネル &gt; ページを選択する。次の画像は、ページパネルおよびページナビゲーションツールバーのページサムネイルを示している。サムネイルとツールバーの両方で、アラビア数字のページ番号が使用されている。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos1.jpg" height="415" width="297"/><alt>スクリーンショット：ページパネルとページナビゲーションツールバーのページサムネイルの両方で、アラビア数字のページ番号が使用されている</alt></image></p><p>ページ番号を修正するには、次の操作を行う。</p>
-<olist><item><p>番号を再設定するページを選択する</p></item><item><p>選択したページのコンテキストメニューから「ページ番号を設定」を選択する</p></item><item><p>ページ番号付けダイアログボックスで、小文字のローマ数字のスタイルと開始ページ（デフォルトでは 1、この場合はそのままで良い）を選択する</p></item><item><p>［OK］を押下する</p></item></olist>
+<olist><item><p>番号を再設定するページを選択する</p></item><item><p>選択したページのコンテキストメニューから「ページ番号を設定」を選択する</p></item><item><p>ページ番号付けダイアログボックスで、小文字のローマ数字のスタイルと開始ページ (デフォルトでは 1、この場合はそのままで良い) を選択する</p></item><item><p>［OK］を押下する</p></item></olist>
 <p>次の画像は、ページ番号付けダイアログボックスと選択内容を示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos2.jpg" height="487" width="647"/><alt>スクリーンショット：3つのページが選択されたページパネルと、新しいページスタイルが指定されたページ番号付けダイアログボックス開始ページは、正しい値である 1（デフォルト）に指定されている。&#13;&#10;</alt></image></p><p>同じプロセスに従い、4 ページ目のページ番号をアラビア数字の 1 に変更する。</p>
-<p>以下の画像は、4 ページ目の正しいページ番号を示している。ページ iii がページパネルで選択されており、ページナビゲーションツールバーのテキスト領域に iii が表示されている。さらに、文書内の相対的位置（3/4）がツールバーの右側に表示されている。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos3.jpg" height="414" width="302"/><alt>スクリーンショット：i、ii、iii、1 という番号が付いたページが示されている Adobe Acrobat Pro のページパネル。ページナビゲーションツールバーでは、3 ページ目に対して iii が表示されている。相対的なページ位置も「（3/4）」として表示されている</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.docx"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.pdf"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (PDF ファイル)</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos2.jpg" height="487" width="647"/><alt>スクリーンショット：3つのページが選択されたページパネルと、新しいページスタイルが指定されたページ番号付けダイアログボックス開始ページは、正しい値である 1 (デフォルト) に指定されている。&#13;&#10;</alt></image></p><p>同じプロセスに従い、4 ページ目のページ番号をアラビア数字の 1 に変更する。</p>
+<p>以下の画像は、4 ページ目の正しいページ番号を示している。ページ iii がページパネルで選択されており、ページナビゲーションツールバーのテキスト領域に iii が表示されている。さらに、文書内の相対的位置 (3/4) がツールバーの右側に表示されている。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos3.jpg" height="414" width="302"/><alt>スクリーンショット：i、ii、iii、1 という番号が付いたページが示されている Adobe Acrobat Pro のページパネル。ページナビゲーションツールバーでは、3 ページ目に対して iii が表示されている。相対的なページ位置も「(3/4)」として表示されている</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.docx"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.pdf"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (PDF ファイル)</loc>がある。</p>
 <p>より直接的にあるページへの移動を行うには、表示 &gt; ナビゲーションパネル &gt; ページ メニュー項目へのショートカットを用いる方法がある。Windowsにおいては、ショートカットは「Ctrl + Shift + N」、Mac OSでは「Cmd + Shift + N」である。この方法により、特定のページ番号を入力するためのダイアログボックスが表示される。
 </p>
 </description>
@@ -50,7 +50,7 @@
       <description><p>次のコードフラグメントは、文書内の複数のページ番号付けスキーマを指定する一般的なコードを示している。</p>
 <p>以下の事例は、次のようなラベルがページに付けられる文書の例である。</p>
 <p><em>事例：</em>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …  </p>
-<p>この番号付けスキームでは、三つのページラベル辞書（小文字のローマ字、アラビア語、接頭語が付いた番号）が必要になる。 </p>
+<p>この番号付けスキームでは、三つのページラベル辞書 (小文字のローマ字、アラビア語、接頭語が付いた番号) が必要になる。 </p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
 1 0 obj
@@ -68,7 +68,7 @@
   endobj]]></codeblock>
       <description><p>ページラベルは次のように指定される。</p>
 <ulist><item><p><code>/S</code>は、ページ番号の番号付けスタイルを指定する。</p>
-<ulist><item><p><code>/D</code> - アラビア数字（1、2、3...）</p></item><item><p><code>/r</code> - 小文字のローマ数字（i、ii、iii...)</p></item><item><p><code>/R</code> - 大文字のローマ数字（I、II、III...)</p></item><item><p><code>/A</code> - 大文字（A ～ Z）</p></item><item><p><code>/a</code> - 小文字（a ～ z）</p></item></ulist></item><item><p><code>/P</code> （オプション） - ページ番号接頭語</p></item><item><p><code>/St</code> （オプション） - 範囲内の最初のページ番号の値（デフォルト：1）</p></item></ulist>
+<ulist><item><p><code>/D</code> - アラビア数字 (1、2、3...)</p></item><item><p><code>/r</code> - 小文字のローマ数字（i、ii、iii...)</p></item><item><p><code>/R</code> - 大文字のローマ数字（I、II、III...)</p></item><item><p><code>/A</code> - 大文字 (A ～ Z)</p></item><item><p><code>/a</code> - 小文字 (a ～ z)</p></item></ulist></item><item><p><code>/P</code> (オプション) - ページ番号接頭語</p></item><item><p><code>/St</code> (オプション) - 範囲内の最初のページ番号の値 (デフォルト：1)</p></item></ulist>
 </description>
     </eg-group>
    </examples>

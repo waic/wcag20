@@ -24,22 +24,22 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>Adobe Acrobat Pro で文書を開く</p></item><item><p>［ファイル］メニューで［プロパティ］を選択する</p></item><item><p>［プロパティ］ダイアログボックスで、［アドバンスト］タブを選択する</p></item><item><p>「読み上げオプション」フィールドで「言語」コンボボックスからデフォルトの言語を選択する</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/docprop.gif" height="322" width="263"/><alt>スクリーンショット：Adobe Acrobat の［プロパティ］ダイアログボックスでデフォルト言語を指定</alt></image></p>
-<note><p>Acrobat には 16 種類のプリセット言語が用意されている。一覧にない言語（ロシア語など）を指定する必要がある場合は、言語の名前ではなくその言語の ISO 639 コードを入力する必要がある。</p>
+<note><p>Acrobat には 16 種類のプリセット言語が用意されている。一覧にない言語 (ロシア語など) を指定する必要がある場合は、言語の名前ではなくその言語の ISO 639 コードを入力する必要がある。</p>
 </note>
-<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/language-en.pdf"><!-- linktype="examples"-->Acrobat Pro を使用して /Lang エントリを追加したサンプル（PDFファイル）</loc>がある。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF16/language-en.pdf"><!-- linktype="examples"-->Acrobat Pro を使用して /Lang エントリを追加したサンプル (PDFファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>Microsoft Word 2007 を使用して PDF 文書内のデフォルト文書言語を指定する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>Microsoft Word で作成された文書：「場合によっては、ソースファイルで文書の言語が指定されていても、その情報が PDFMaker に伝達されないことがある。文書のプロパティダイアログボックスで文書全体の言語を設定すると（事例 1 を参照のこと）、このオプションに関連するすべてのエラーが修正される」（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/A9-accessible-pdf-from-word.pdf">Adobe®
-Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from Microsoft®	Word</loc>）</p>
+<p>Microsoft Word で作成された文書：「場合によっては、ソースファイルで文書の言語が指定されていても、その情報が PDFMaker に伝達されないことがある。文書のプロパティダイアログボックスで文書全体の言語を設定すると (事例 1 を参照のこと)、このオプションに関連するすべてのエラーが修正される」(<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/A9-accessible-pdf-from-word.pdf">Adobe®
+Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from Microsoft®	Word</loc>)</p>
 </description>
     </eg-group>
     <eg-group>
       <head>/Lang エントリを使用して PDF 文書内のデフォルト文書言語を指定する</head>
       <description><p>文書内のテキストに対して使用される自然言語は、オプションの /Lang エントリがいくつかの考えられる位置のいずれかに存在するかどうかに基づいて階層的に決定される。最高レベルで、文書のデフォルト言語は文書カタログ内の /Lang エントリにより指定できる。</p>
-<p>次のコードフラグメントは、文書のデフォルト言語（この場合、英語）の文書カタログ内で /Lang エントリを使用する一般的なコードを示している（これは通常、オーサリングツールを使用して行う）。 </p>
+<p>次のコードフラグメントは、文書のデフォルト言語 (この場合、英語) の文書カタログ内で /Lang エントリを使用する一般的なコードを示している (これは通常、オーサリングツールを使用して行う)。 </p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
 1 0 obj

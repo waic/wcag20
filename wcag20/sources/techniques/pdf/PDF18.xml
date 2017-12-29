@@ -28,7 +28,7 @@
 <p>ユーザエージェントのタイトルバー内に文書のタイトルを表示するには、次の操作を行う。</p>
 <olist><item><p>ファイル > プロパティを選択する</p></item><item><p>［初期表示］タブを選択する</p></item><item><p>「ウィンドウオプション」セクションで、「表示」プルダウンリストの「文書のタイトル」を選択する</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF18/doc-title.jpg" height="671" width="610"/><alt>スクリーンショット：文書のタイトルがタイトルバーに表示されるように指定する。「ウィンドウオプション」の「表示」で「文書のタイトル」が選択されている。</alt></image></p><p>以下の画像に示されているように、タイトルがタイトルバーに表示される。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF18/title-bar.jpg" height="34" width="492"/><alt>スクリーンショット：文書のタイトルが表示されている Adobe Acrobat Pro タイトルバーの画像。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF18/title-bar.pdf"><!-- linktype="examples"-->文書のタイトルをタイトルバーに表示したサンプル（PDF ファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF18/title-bar.jpg" height="34" width="492"/><alt>スクリーンショット：文書のタイトルが表示されている Adobe Acrobat Pro タイトルバーの画像。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF18/title-bar.pdf"><!-- linktype="examples"-->文書のタイトルをタイトルバーに表示したサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>
