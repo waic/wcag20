@@ -14,7 +14,7 @@
    <ua-issues>
       <ua-issue name="" version="">
       <p>サイズ及びポジションを定めることは複雑であり、異なるブラウザは異なる結果をだすことになる。これはCSSスタイリングでpadding、 margins及びwidthを一つのオブジェクトに対して組み合わせて使用したとき、又はオフセット値及び単純な値、例えばoffsetWidthとwidthを組合せて使用したときに起こりうる。これらのうちのいくつかはズームに対して異なる動きをする。
-                  Internet Explorer 6及びそれ以降のバージョンと、IEのそれより前のバージョンとの違いについての説明は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It（英語）</loc>を参照すること。</p>
+                  Internet Explorer 6及びそれ以降のバージョンと、IEのそれより前のバージョンとの違いについての説明は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It (英語)</loc> を参照すること。</p>
     </ua-issue>
    </ua-issues>
    <description>
@@ -23,23 +23,23 @@
     <ulist>
       <item>
         <p>
-                        <code><![CDATA[offsetHeight]]></code> （ピクセルでの要素の高さ）</p>
+                        <code><![CDATA[offsetHeight]]></code> (ピクセルでの要素の高さ)</p>
       </item>
       <item>
         <p>
-                        <code><![CDATA[offsetWidth]]></code> （ピクセルでの要素の幅）</p>
+                        <code><![CDATA[offsetWidth]]></code> (ピクセルでの要素の幅)</p>
       </item>
       <item>
         <p>
-                        <code><![CDATA[offsetLeft]]></code> （ピクセルでの親要素（offsetParent）の左からの距離）</p>
+                        <code><![CDATA[offsetLeft]]></code> (ピクセルでの親要素 (offsetParent) の左からの距離)</p>
       </item>
       <item>
         <p>
-                        <code><![CDATA[offsetTop]]></code> （ピクセルでの親要素（offsetParent）の上からの距離）</p>
+                        <code><![CDATA[offsetTop]]></code> (ピクセルでの親要素 (offsetParent) の上からの距離)</p>
       </item>
     </ulist>
     <p><code>offsetHeight</code>や<code>offsetWidth</code>を用いて高さや幅を定めることは簡単である、しかし、オブジェクトの左とトップの位置を絶対配置の値として定める時、親要素を考える必要がある。下記において、<code>calculatePosition</code>関数は、要素におけるすべての親ノードの最終的な値が決定するまで繰り返されている。
-                 その関数は<code>objElement</code>（当該の要素の名前）とオフセットプロパティ（<code>offsetLeft</code>又は<code>offsetTop</code>）の2つの引数を取っている。</p>
+                 その関数は<code>objElement</code> (当該の要素の名前) とオフセットプロパティ (<code>offsetLeft</code>又は<code>offsetTop</code>) の2つの引数を取っている。</p>
   </description>
    <examples>
       <eg-group>
@@ -101,7 +101,7 @@ objAlign.style.top = calculatePosition(objReference, 'offsetTop') + objReference
           <p>文字サイズの変更とともにテキストコンテナのサイズを調整するように設計されているページを開く。</p>
         </item>
         <item>
-          <p>ブラウザの文字サイズ調節を使って200%のサイズまで大きくする。（ズーム機能は使用しない）</p>
+          <p>ブラウザの文字サイズ調節を使って200%のサイズまで大きくする。(ズーム機能は使用しない)</p>
         </item>
         <item>
           <p>テキストコンテナのサイズが文字サイズに合わせて調整される。</p>
