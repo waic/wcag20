@@ -13,7 +13,7 @@
    <ua-issues>
       <ua-issue name="" version="">
       <p>
-Windows版のInternet Explorer 6.0とそれ以前のバージョンでは、ハイパーリンクの要素を除いてダイナミック疑似クラスをサポートしていない。Internet Explorer 7 は、ハイパーリンクの要素を除いて:focusスタイルをサポートしていない。Internet Explorerの(X)HTMLのリンク（a要素）において:focusと同じ効果を出すには、CSSの:active疑似クラスを追加すればよい。</p>
+Windows版のInternet Explorer 6.0とそれ以前のバージョンでは、ハイパーリンクの要素を除いてダイナミック疑似クラスをサポートしていない。Internet Explorer 7 は、ハイパーリンクの要素を除いて:focusスタイルをサポートしていない。Internet Explorerの(X)HTMLのリンク (a要素) において:focusと同じ効果を出すには、CSSの:active疑似クラスを追加すればよい。</p>
     </ua-issue>
     <ua-issue name="" version="">
       <p>
