@@ -10,8 +10,8 @@
       <success-criterion idref="text-equiv-all" relationship="failure"/>
    </applies-to>
    <description>
-    <p>これは、支援技術によって無視されるべき画像のテキストによる代替に対する失敗条件を記述する。alt 属性が全くない場合、支援技術は非テキストコンテンツを無視することができない。この達成基準の失敗を回避するには、alt 属性を指定し、空値（<code>alt=""</code>）を指定しなければならない。</p>
-    <p>これは、支援技術（AT）によって無視されるべき画像のためのテキストによる代替の失敗条件を記述する。画像が属性<code>role="presentation"</code>を持つ場合、テキストによる代替はATによって無視される。ただし、<code>role="presentation"</code>を持たない場合、かつ <att>alt</att> 属性が全くない場合は、支援技術は画像を無視することはできない。AT によって無視される必要のある装飾画像の場合、この達成基準の失敗を避けるために、<code>role="presentation"</code>を使用するか、又は空値（<code>alt=""</code>）の値を持つ <att>alt</att> 属性を提供しなければならない。</p>
+    <p>これは、支援技術によって無視されるべき画像のテキストによる代替に対する失敗条件を記述する。alt 属性が全くない場合、支援技術は非テキストコンテンツを無視することができない。この達成基準の失敗を回避するには、alt 属性を指定し、空値 (<code>alt=""</code>) を指定しなければならない。</p>
+    <p>これは、支援技術 (AT) によって無視されるべき画像のためのテキストによる代替の失敗条件を記述する。画像が属性<code>role="presentation"</code>を持つ場合、テキストによる代替はATによって無視される。ただし、<code>role="presentation"</code>を持たない場合、かつ <att>alt</att> 属性が全くない場合は、支援技術は画像を無視することはできない。AT によって無視される必要のある装飾画像の場合、この達成基準の失敗を避けるために、<code>role="presentation"</code>を使用するか、又は空値 (<code>alt=""</code>) の値を持つ <att>alt</att> 属性を提供しなければならない。</p>
   </description>
    <examples>
       <ulist>
