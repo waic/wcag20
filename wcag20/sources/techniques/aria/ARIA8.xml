@@ -38,7 +38,7 @@
       <eg-group>
          <head>aria-labelを使用して、HTML内のリンクの目的を説明する</head>
          <description>
-            <p>場合によっては、デザイナーが、ページ上のリンクの見た目をコンパクトにするために、"read more"【訳注： 続きを読む】のような短く、繰り返されるリンクテキストを選択することがある。こういった状況は、より単純で非説明的な"read more"というページ上のテキストを、より説明的なリンクのラベルで置き換えることができるという点で、aria-labelの望ましいユースケースとなる。単語"read more"は、利用者間の一貫性のあるコミュニケーションを可能にするために（元のアンカーテキスト"[Read more...]"を置き換える）aria-labelの中にも繰り返される。</p>
+            <p>場合によっては、デザイナーが、ページ上のリンクの見た目をコンパクトにするために、"read more"【訳注： 続きを読む】のような短く、繰り返されるリンクテキストを選択することがある。こういった状況は、より単純で非説明的な"read more"というページ上のテキストを、より説明的なリンクのラベルで置き換えることができるという点で、aria-labelの望ましいユースケースとなる。単語"read more"は、利用者間の一貫性のあるコミュニケーションを可能にするために (元のアンカーテキスト"[Read more...]"を置き換える) aria-labelの中にも繰り返される。</p>
             <codeblock xml:space="preserve"><![CDATA[ <h4>Neighborhood News</h4>
  <p>Seminole tax hike:  Seminole city managers are proposing a 75% increase in 
  property taxes for the coming fiscal year.
