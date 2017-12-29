@@ -24,9 +24,9 @@
       <eg-group>
          <head>テキストフィールドのバリデート</head>
          <description>
-            <p>この事例では、二つのテキストフィールド（「name」および「zip code」）を含むサンプルフォームが示されている。どちらのフィールドも必須入力である。フォームの「submit」ボタンが押されると、テキストフィールドの値が検証される。テキストフィールドに無効な値が含まれていると、<obj>_accProps</obj> オブジェクトがそのテキストフィールドに対して生成され、<prop>description</prop> プロパティにエラーメッセージが設定される。</p>
+            <p>この事例では、二つのテキストフィールド (「name」および「zip code」) を含むサンプルフォームが示されている。どちらのフィールドも必須入力である。フォームの「submit」ボタンが押されると、テキストフィールドの値が検証される。テキストフィールドに無効な値が含まれていると、<obj>_accProps</obj> オブジェクトがそのテキストフィールドに対して生成され、<prop>description</prop> プロパティにエラーメッセージが設定される。</p>
             <note>
-               <p>注記： アクセシブルな「説明」（<prop>_accProps.description</prop> プロパティ）を使用する代わりに、エラーテキストをアクセシブルな「名前」（<prop>_accProps.name</prop>）に追加することもできる。これは、_accProps.descriptionよりも広範囲の支援技術でサポートされている。</p>
+               <p>注記： アクセシブルな「説明」(<prop>_accProps.description</prop> プロパティ) を使用する代わりに、エラーテキストをアクセシブルな「名前」(<prop>_accProps.name</prop>) に追加することもできる。これは、_accProps.descriptionよりも広範囲の支援技術でサポートされている。</p>
             </note>
             <p>ActionScript 2.0 のコード</p>
          </description>
@@ -105,8 +105,8 @@ function resetErrorLabels() {
   zipcode_error_lbl.text = "";
 }]]></code>
          <description>
-            <p>この方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.html"><!--                    linktype="examples"-->テキストフィールドのバリデートのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"                href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.fla"><!--
-                    linktype="examples"-->テキストフィールドの検証のソース（英語）</loc>をダウンロードすることもできる。</p>
+            <p>この方法は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.html"><!--                    linktype="examples"-->テキストフィールドのバリデートのサンプル(英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"                href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH12/client_side_validation_flash_forms_using_alert_as2.fla"><!--
+                    linktype="examples"-->テキストフィールドの検証のソース(英語)</loc> をダウンロードすることもできる。</p>
             <!--<ednote>
 								<edtext>These files seem to be different from what was expected in the wiki. The files I was expecting were named client_side_validation_flash_forms_using_accessible_description_as2.*, while what we have are client_side_validation_flash_forms_using_alert_as2.*. And reading over the example in the wiki and looking at the example files, it seems they don't match. The example files use an alert, but the wiki describes updating the accessible name. The example seems good, but like it applies to a different technique, which maybe we should document. Either that, we should update the technique, particularly the example it claims to be a working example of, or get the correct example files in place.</edtext>
 							</ednote>-->
@@ -121,10 +121,10 @@ function resetErrorLabels() {
          <p>Flash ムービーが送信可能でインタラクティブなフォームを提供する場合、次のことを確認する。</p>
          <olist>
             <item>
-               <p>エラーメッセージ（アラート）が、視覚的にコントロールのすぐ隣に配置されている。</p>
+               <p>エラーメッセージ (アラート) が、視覚的にコントロールのすぐ隣に配置されている。</p>
             </item>
             <item>
-               <p>エラーメッセージ（アラート）が、コントロールのアクセシブルな「名前」または「説明」に追加されている。</p>
+               <p>エラーメッセージ (アラート) が、コントロールのアクセシブルな「名前」または「説明」に追加されている。</p>
             </item>
          </olist>
       </procedure>

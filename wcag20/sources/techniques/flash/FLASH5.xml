@@ -50,7 +50,7 @@
       <eg-group>
          <head>アクセシビリティパネルを使用してアクセシブルな名前を指定する</head>
          <description>
-            <p>アクセシビリティパネルを使用してアクセシブルな名前（この例の場合は表示されているテキストと同じ）を指定する。</p>
+            <p>アクセシビリティパネルを使用してアクセシブルな名前 (この例の場合は表示されているテキストと同じ) を指定する。</p>
             <p>
 								       <image>
                   <img xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -89,7 +89,7 @@ flashLink1._accProps.name = "Flash についてさらに学ぶ";]]></code>
                <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SFW ファイルを開く。</p>
+               <p>Internet Explorer 6 以降 (Flash Player 6 以降を使用)、または Firefox 3 以降 (Flash Player 9 以降を使用) で SFW ファイルを開く。</p>
             </item>
             <item>
                <p>オブジェクト名のテキストによる代替を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>

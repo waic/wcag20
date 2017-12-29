@@ -23,9 +23,9 @@
             <p>この事例では、カスタムムービークリップをボタンとして使用する。キーボードでの操作を可能にするため、tabEnabled を使用してムービークリップをタブの順序に配置する。さらに、カスタムボタンがマウスクリックとスペースバーの打鍵の両方に反応するように、冗長なイベントハンドラを追加する。最後に、ムービークリップの <obj>AccessibilityProperties</obj> オブジェクトを使用して、カスタムボタンにアクセシブルな名前を付ける。これにより、支援技術でボタンのラベルを認識できるようになる。</p>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH22/event_handlers_to_static_objects_as3.html"><!--
-                    linktype="examples"-->ムービークリップをボタンとして使用するのサンプル（英語）</loc>で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ムービークリップをボタンとして使用するのサンプル (英語)</loc> で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH22/event_handlers_to_static_objects_as3.fla"><!--
-                    linktype="examples"-->ムービークリップをボタンとして使用するのソース（英語）</loc> をダウンロードすることもできる。</p>
+                    linktype="examples"-->ムービークリップをボタンとして使用するのソース (英語)</loc> をダウンロードすることもできる。</p>
             <note>
                <p>カスタムボタンはボタンではなくフォーカス可能なグラフィックとして認識されるので、汎用のムービークリップを使用することは一般的に推奨されない。代わりに、標準の Flash の Button コンポーネントを使用するか、「button」タイプの新規シンボルを作成することが望ましい。</p>
             </note>

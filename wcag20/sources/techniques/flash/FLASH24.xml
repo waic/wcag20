@@ -62,11 +62,11 @@ function endSession() {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH24/checkbox_for_extending_timelimit_as3.html"><!--
-                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH24/checkbox_for_extending_timelimit_as3.fla"><!--
-                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのソース（英語）</loc>をダウンロードすることもできる。なお、このサンプルではデモンストレーションが目的であるため、セッション時間を意図的に短くしてある。コンテンツ制作者は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ドロップダウンリストを使用してタイムアウトを変更するのソース (英語)</loc> をダウンロードすることもできる。なお、このサンプルではデモンストレーションが目的であるため、セッション時間を意図的に短くしてある。コンテンツ制作者は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="time-limits-required-behaviors"
-                    linktype="understanding">「達成基準 2.2.1 （調整可能な制限時間）」</loc>の要件を満たすための十分な時間を提供する必要がある。</p>
+                    linktype="understanding">「達成基準 2.2.1 (調整可能な制限時間)」</loc>の要件を満たすための十分な時間を提供する必要がある。</p>
             <!--<ednote>
 								<edtext>The test zip was updated but seems completely changed from the previous version. And it seems to be a checkbox, while the example in the wiki source mentions a drop-down list. Is this one correct, or does the inline example need updating, or a second example added, or something? For the moment the working example references the updated version.</edtext>
 							</ednote>-->

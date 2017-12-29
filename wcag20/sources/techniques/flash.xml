@@ -60,7 +60,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
             <p>Adobe Flash Player は、クロスプラットフォームなブラウザのプラグインである。Flash Player によって表示されるコンテンツの制作者は、映像サポート、オーサリングの好み、ベクターベースのグラフィック能力などの様々な要因から Flash Player を用いてコンテンツを提供したり、Flashの標準コンポーネントを利活用したりすることを選択する。コンテンツ制作者が Flash を用いるそういった動機が何であれ、他のウェブコンテンツ技術を用いたウェブコンテンツと同様に、Flash Player で提供されるコンテンツが WCAG 2.0 のアクセシビリティ基準を満たすようにすることは重要である。</p>
             <div3 id="flash_ua_support">
                <head>Flash のユーザエージェントによるサポート</head>
-               <p>Flash Player は、アクセシビリティのビルトインでのサポートと、コンテンツ制作者およびオーサリングツールがコンテンツをアクセシブルにするために利活用できる性能とのコンビネーションを提供している。Flash コンテンツ制作者は、アクセシブルな Flash コンテンツを制作するためには次のどのツールを用いてもよい（ただし、必ずしもこれらに限定されない）。</p>
+               <p>Flash Player は、アクセシビリティのビルトインでのサポートと、コンテンツ制作者およびオーサリングツールがコンテンツをアクセシブルにするために利活用できる性能とのコンビネーションを提供している。Flash コンテンツ制作者は、アクセシブルな Flash コンテンツを制作するためには次のどのツールを用いてもよい (ただし、必ずしもこれらに限定されない)。</p>
                <ulist>
                   <item>
                      <p>Flash MX, MX2004, 8, CS3, CS4, CS5</p>
@@ -78,7 +78,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                      <p>その他、Adobe Presenter、Adobe Captivate など</p>
                   </item>
                </ulist>
-               <p>全盲の利用者、ロービジョンの利用者およびその他の支援技術利用者向けに、Flash Player は 2001 年に Flash Player 6 でアクセシビリティ API のサポートを実現した。Flash のアクセシビリティに関する支援技術サポートは、Flash コンテンツに関する情報を支援技術に正しく伝えるという点においては、MSAA（Microsoft Active Accessibility）インタフェースと Flash Player 特有のインタフェースに依存している。支援技術のサポートは、次の組み合わせによる閲覧環境の利用者に対して提供されている:</p>
+               <p>全盲の利用者、ロービジョンの利用者およびその他の支援技術利用者向けに、Flash Player は 2001 年に Flash Player 6 でアクセシビリティ API のサポートを実現した。Flash のアクセシビリティに関する支援技術サポートは、Flash コンテンツに関する情報を支援技術に正しく伝えるという点においては、MSAA (Microsoft Active Accessibility) インタフェースと Flash Player 特有のインタフェースに依存している。支援技術のサポートは、次の組み合わせによる閲覧環境の利用者に対して提供されている:</p>
                <ulist>
                   <item>
                      <p>Windows OS 上での Internet Explorer 6 以降と Flash Player 6 以降の組み合わせ</p>
@@ -87,7 +87,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                      <p>Windows OS 上での Mozilla Firefox 3 以降と Flash Player 9 以降の組み合わせ</p>
                   </item>
                </ulist>
-               <p>支援技術によるMSAAのサポートは、次のような支援技術製品で提供されている（ただし、必ずしもこれらに限定されない）。</p>
+               <p>支援技術によるMSAAのサポートは、次のような支援技術製品で提供されている (ただし、必ずしもこれらに限定されない)。</p>
                <ulist>
                   <item>
                      <p>JAWS (4.5 以降)</p>
@@ -107,9 +107,9 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                <head>Flash によるアクセシビリティのサポート</head>
                <p>Flash Player は、マウスを使用することのできない利用者向けにキーボード操作もサポートしている。キーボード操作のサポートに関しては、Internet Explorer で用いられている Flash Player の ActiveX 版が最も高いレベルだが、Mozilla Firefox でのサポートを提供するための実装方法もこの文書で提供されている。「WCAG 2.0 実装方法集」で紹介されているように、Flash コンテンツ制作者はパブリッシュしたコンテンツ内でのタブ順序を制御することができる。</p>
                <p>Flash player は、映像を表示するのに用いられることが多く、あらゆる言語のクローズド・キャプションやサブタイトルを提供することのできるテキストトラックがある。また、音声ガイドを提供できるように複数の音声トラックも用意されている。さらに、視聴覚コンテンツに手話通訳の提供を可能にする映像トラックも複数ある。</p>
-               <p>現時点では、Flash Player は Windows OS によるハイコントラスト・モードやテキストのサイズ変更をサポートしていない。しかし、Flash コンテンツ制作者は、Flash によるカスケーディング・スタイルシート（CSS）のサポート、その他の標準搭載スタイルのサポート、あるいは Flash の画面フィルタ機能を利用することによって、Flashベースのインタフェースを大きめのテキストで閲覧可能な代替ビュー、代替フォント、あるいは代替ハイコントラスト・カラースキームなどを提供することが可能である。</p>
-               <p>支援技術向けのFlashによるアクセシビリティのサポートは、Windows OS 上で、Internet Explorer 6 以降（Flash Player 6 以降）または Mozilla Firefox 3 以降（Flash Player 9 以降）を使用した場合に限られている。</p>
-               <p>Flash Player に関する詳細な情報は、Adobe サイトで提供されている <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash Player FAQ（英語）</loc>を参照のこと。</p>
+               <p>現時点では、Flash Player は Windows OS によるハイコントラスト・モードやテキストのサイズ変更をサポートしていない。しかし、Flash コンテンツ制作者は、Flash によるカスケーディング・スタイルシート (CSS) のサポート、その他の標準搭載スタイルのサポート、あるいは Flash の画面フィルタ機能を利用することによって、Flashベースのインタフェースを大きめのテキストで閲覧可能な代替ビュー、代替フォント、あるいは代替ハイコントラスト・カラースキームなどを提供することが可能である。</p>
+               <p>支援技術向けのFlashによるアクセシビリティのサポートは、Windows OS 上で、Internet Explorer 6 以降 (Flash Player 6 以降) または Mozilla Firefox 3 以降 (Flash Player 9 以降) を使用した場合に限られている。</p>
+               <p>Flash Player に関する詳細な情報は、Adobe サイトで提供されている <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash Player FAQ (英語)</loc> を参照のこと。</p>
             </div3>
             <div3 id="flash_conformance_considerations">
                <head>WCAG 2.0 適合に向けた特記事項</head>

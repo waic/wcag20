@@ -16,7 +16,7 @@
    <description>
       <p>この実装方法の目的は、データグリッド内でデータがどのように提示されているかについて要約を提供したり、グリッド内での移動方法について簡単に説明したりすることである。</p>
       <p>Flash は summary 属性を提供しないので、代わりにこの説明的なテキストがデータグリッドのアクセシブルな説明に追加される。このアプローチでは、スクリーンリーダーを使用する利用者が要約の情報を利用できるようになる。情報は視覚的に表示されない。</p>
-      <p>要約は、テーブルの構造が複雑な場合（例えば、行見出しまたは列見出しのセットが複数ある場合や、列または行のグループが複数ある場合）に役立つ。また、要約は、多くのデータ列またはデータ行を含む単純なデータテーブルでも役に立つ場合がある。</p>
+      <p>要約は、テーブルの構造が複雑な場合 (例えば、行見出しまたは列見出しのセットが複数ある場合や、列または行のグループが複数ある場合) に役立つ。また、要約は、多くのデータ列またはデータ行を含む単純なデータテーブルでも役に立つ場合がある。</p>
    </description>
    <examples>
       <eg-group>
@@ -25,7 +25,7 @@
             <p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。データグリッドの要約を提供するために、Flash のアクセシビリティパネルの「説明」フィールドを使用する。</p>
             <olist>
                <item>
-                  <p>新しい Flash ファイル（.fla）を作成する、又は既存のファイルを開いてデータグリッドを挿入する。</p>
+                  <p>新しい Flash ファイル (.fla) を作成する、又は既存のファイルを開いてデータグリッドを挿入する。</p>
                </item>
                <item>
                   <p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p>
@@ -101,9 +101,9 @@ function bldRosterGrid(dg: DataGrid) {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.html"><!--
-                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのサンプル（英語）で確認できる。</loc>また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH23/datagrid_with_summary_as3.fla"><!--
-                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->ActionScript 3 を使用してデータグリッドに一覧を追加するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

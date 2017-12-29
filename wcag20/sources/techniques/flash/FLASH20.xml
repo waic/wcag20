@@ -29,7 +29,7 @@
       <olist>
          <item>
             <p>既存のスキンを複製する</p>
-            <p>この方法では、既存の focusRect スキンのコピーを作成して、それを変更する。このスキンは、コンポーネントの各インスタンスに手動で適用する必要がある（下記の手順 5）。</p>
+            <p>この方法では、既存の focusRect スキンのコピーを作成して、それを変更する。このスキンは、コンポーネントの各インスタンスに手動で適用する必要がある (下記の手順 5)。</p>
             <olist>
                <item>
                   <p>スタイルを適用するコンポーネントをステージにドラッグする。この操作により、スキンに関連付けられた適切なコンポーネントがムービーのライブラリに追加される。</p>
@@ -38,10 +38,10 @@
                   <p>「ライブラリ」パネルを開き、Component Assets フォルダー &gt; Shared フォルダーの順に移動する。</p>
                </item>
                <item>
-                  <p>focusRectSkin ムービークリップを右クリック（Mac では Ctrl キーを押しながらクリック）し、コンテキストメニューから「複製」を選択する。</p>
+                  <p>focusRectSkin ムービークリップを右クリック (Mac では Ctrl キーを押しながらクリック) し、コンテキストメニューから「複製」を選択する。</p>
                </item>
                <item>
-                  <p>スキンのムービークリップの境界線の外観を編集する。例えば、より目立つようにフォーカス矩形の境界線を太くする（この手順は、以下のスクリーンショットで示されている）。</p>
+                  <p>スキンのムービークリップの境界線の外観を編集する。例えば、より目立つようにフォーカス矩形の境界線を太くする (この手順は、以下のスクリーンショットで示されている)。</p>
                </item>
                <item>
                   <p>ActionScript を使用して、フォームコンポーネントのインスタンスを focusRectSkin のカスタマイズバージョンに関連付ける。これは、setStyle メソッドを使用して実現できる。</p>
@@ -77,8 +77,8 @@
             </note>
          </item>
       </olist>
-      <p>focusRect スキンは、フォーカス可能なすべての Flash コンポーネントに適用される。他の強調表示（例えばコンポーネントの上にマウスを移動させた際に適用される強調表示など）を変更する場合は、各コンポーネントのスキンを個別に編集する必要がある。例えば、チェックボックスコンポーネントのマウスオーバーの強調表示を編集するには、 Checkbox_overIcon と Checkbox_selectedOverIcon の両方を変更するか、または複製する必要がある。同様に、ボタンコンポーネントのマウスオーバーの強調表示を編集するには、Button_over スキンを変更する必要がある。</p>
-      <p>また、特定のイベント（フォーカス、マウスオーバーなど）では、既存のスキンが自動的に適用されることを念頭に置く必要がある。ただし、開発者が選ぶタイミングでスキンを手動で切り替えることも可能である（例えば、テキストフィールドに無効なコンテンツが入力されていることを示す場合など）。これを行うには、setStyle メソッドを呼び出す。</p>
+      <p>focusRect スキンは、フォーカス可能なすべての Flash コンポーネントに適用される。他の強調表示 (例えばコンポーネントの上にマウスを移動させた際に適用される強調表示など) を変更する場合は、各コンポーネントのスキンを個別に編集する必要がある。例えば、チェックボックスコンポーネントのマウスオーバーの強調表示を編集するには、 Checkbox_overIcon と Checkbox_selectedOverIcon の両方を変更するか、または複製する必要がある。同様に、ボタンコンポーネントのマウスオーバーの強調表示を編集するには、Button_over スキンを変更する必要がある。</p>
+      <p>また、特定のイベント (フォーカス、マウスオーバーなど) では、既存のスキンが自動的に適用されることを念頭に置く必要がある。ただし、開発者が選ぶタイミングでスキンを手動で切り替えることも可能である (例えば、テキストフィールドに無効なコンテンツが入力されていることを示す場合など)。これを行うには、setStyle メソッドを呼び出す。</p>
    </description>
    <examples>
       <eg-group>
@@ -88,7 +88,7 @@
             <p>focusRectSkin のこのカスタムバージョンでは、視覚的な強調表示をさらに高めるため、透過性のある黄色の背景も設定している。ボタンやチェックボックスなどのコンポーネントではこの背景が表示されるが、TextInput コンポーネントでは表示されない。TextInput のインスタンスにもこの黄色の背景が適用されるようにするには、次の手法を利用する。</p>
             <olist>
                <item>
-                  <p>TextInput の「normal」スキン（これはライブラリの「Component Asssets &gt; TextInputSkins &gt; TextInput_upSkin」にある）の複製バージョンを作成し、黄色の背景を表示するように編集する。</p>
+                  <p>TextInput の「normal」スキン (これはライブラリの「Component Asssets &gt; TextInputSkins &gt; TextInput_upSkin」にある) の複製バージョンを作成し、黄色の背景を表示するように編集する。</p>
                </item>
                <item>
                   <p>TextInput のインスタンスには FocusIn、FocusOut、MouseOver、MouseOut のハンドラが割り当てられており、これを利用して、コンポーネントにフォーカスがある間、またはコンポーネント上にマウスが置かれている間、デフォルトの「normal」スキンをカスタムの「normal」スキンに一時的に切り替えることができる。</p>
@@ -97,8 +97,8 @@
             <p>また、button_over スキンを複製して変更することによって、ボタンコンポーネントインスタンスのデフォルトのマウスオーバーの強調表示を変更する。 checkbox_overIcon スキン、および checkbox_selectedOverIcon スキンは直接変更する。これにより、チェックボックスのすべてのインスタンスに対してこの変更が適用されることになる。</p>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html"><!--
-                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル（英語）</loc>で確認できる。</p>
-            <exsubhead>事例 1 のコード（ActionScript 3.0）</exsubhead>
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル (英語)</loc> で確認できる。</p>
+            <exsubhead>事例 1 のコード (ActionScript 3.0)</exsubhead>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import fl.accessibility.ButtonAccImpl;
@@ -160,9 +160,9 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.html"><!--
-                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH20/change_styles_on_focus_as3.zip"><!--
-                    linktype="examples"-->フォーカスを太い青の境界線で表示するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->フォーカスを太い青の境界線で表示するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

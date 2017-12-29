@@ -17,9 +17,9 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この実装方法の目的は、Flash が含まれるページの HTML 要素または object 要素に lang 属性または xml:lang 属性（またはその両方）を指定することによって、Flash コンテンツのデフォルトの言語を特定することである。埋め込まれた Flash コンテンツは、この方法で指定された言語を継承する。Web ページ全体で 1 つの言語を使用する場合は、ページの HTML 要素に lang 属性および xml:lang 属性を指定することができる。これについては、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+      <p>この実装方法の目的は、Flash が含まれるページの HTML 要素または object 要素に lang 属性または xml:lang 属性 (またはその両方) を指定することによって、Flash コンテンツのデフォルトの言語を特定することである。埋め込まれた Flash コンテンツは、この方法で指定された言語を継承する。Web ページ全体で 1 つの言語を使用する場合は、ページの HTML 要素に lang 属性および xml:lang 属性を指定することができる。これについては、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://waic.jp/docs/WCAG-TECHS/H57.html">H57： html要素の言語属性を用いる</loc>で説明されている。</p>
-      <p>Flash は HTML 要素または object 要素から言語を継承する。したがって、Flash コンテンツ内のすべてのテキストは、そのようにして継承された言語であると想定される。これは、ある言語のページに別の言語の Flash オブジェクトを配置すること、また、異なる言語の複数の Flash オブジェクトを配置することが可能であることを意味する。ただし、この実装方法を使用して、一つの Flash オブジェクト<emph>内で</emph>コンテンツの言語（人間が使用する言語）を変更するように指定することはできない。</p>
+      <p>Flash は HTML 要素または object 要素から言語を継承する。したがって、Flash コンテンツ内のすべてのテキストは、そのようにして継承された言語であると想定される。これは、ある言語のページに別の言語の Flash オブジェクトを配置すること、また、異なる言語の複数の Flash オブジェクトを配置することが可能であることを意味する。ただし、この実装方法を使用して、一つの Flash オブジェクト<emph>内で</emph>コンテンツの言語 (人間が使用する言語) を変更するように指定することはできない。</p>
    </description>
    <examples>
       <eg-group>
@@ -56,16 +56,16 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH13/language_en.html"><!--
-                    linktype="examples"-->埋め込まれた Flash 内でページ全体の言語を使用するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->埋め込まれた Flash 内でページ全体の言語を使用するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH13/languages.fla"><!--
-                    linktype="examples"-->埋め込まれた Flash 内でページ全体の言語を使用するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->埋め込まれた Flash 内でページ全体の言語を使用するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
          <head>埋め込まれた Flash のみに言語を適用する</head>
          <description>
             <p>この事例では、Flash ムービーのコンテンツをフランス語に定義する。Flash ムービーは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://github.com/swfobject/swfobject">SWFObject's SWFObject による静的なパブリッシュ手法（英語）</loc>を使用して埋め込まれている。この手法では 二つのネストした object 要素が使用され、外側の要素は Internet Explorer 向け、内側の要素はその他のブラウザ向けである。このため、lang 属性および xml:lang 属性を二つ追加する必要がある。</p>
+                    href="https://github.com/swfobject/swfobject">SWFObject's SWFObject による静的なパブリッシュ手法 (英語)</loc> を使用して埋め込まれている。この手法では 二つのネストした object 要素が使用され、外側の要素は Internet Explorer 向け、内側の要素はその他のブラウザ向けである。このため、lang 属性および xml:lang 属性を二つ追加する必要がある。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
   height="420" id="myMovie" lang="fr" width="780" xml:lang="fr">
@@ -110,7 +110,7 @@
                <p>SWF への参照が含まれている HTML ドキュメントの html 要素および object 要素を確認する。</p>
             </item>
             <item>
-               <p>Flash コンテンツの言語（人間が使用する言語）が、object 要素で継承されている言語（HTML 4.01 仕様書の「Inheritance of language codes」を参照）と同じである</p>
+               <p>Flash コンテンツの言語 (人間が使用する言語) が、object 要素で継承されている言語 (HTML 4.01 仕様書の「Inheritance of language codes」を参照) と同じである</p>
             </item>
             <item>
                <p>lang 属性の値が、「BCP 47: Tags for the Identification of Languages」、またはその後続の仕様に準拠しており、Flash コンテンツで使用されている主要言語を反映したものである。</p>

@@ -39,13 +39,13 @@ function clickHandler(e) {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH16/device_independent_event_handler_on_component_as3.html"><!--
-                    linktype="examples"-->ボタンのクリックイベントのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ボタンのクリックイベントのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH16/device_independent_event_handler_on_component_as3.fla"><!--
-                    linktype="examples"-->ボタンのクリックイベントのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->ボタンのクリックイベントのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
-         <head>（作成中）</head>
+         <head>(作成中)</head>
          <description>
             <ednote id="FLASH16_note">
                <edtext>The <loc xmlns:xlink="http://www.w3.org/1999/xlink"

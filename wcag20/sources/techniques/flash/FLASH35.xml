@@ -79,9 +79,9 @@ toggleScroll(false);
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.html"><!--
-                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH35/pause_scrolling_as3.fla"><!--
-                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->スクロールの一時停止と再開を行うためのトグルボタンのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

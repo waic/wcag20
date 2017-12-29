@@ -57,9 +57,9 @@ RadioButtonAccImpl.enableAccessibility();]]></code>
             </note>
             <p>このアプローチの実例については、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html">
-                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル (英語)</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla">
-                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    <!--linktype="examples"-->ラジオボタンのアクセシブルな名前にグループ名を追加するのソース (英語)</loc>をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -140,8 +140,8 @@ package wcagSamples {
     * [1] : コントロールを特定するために用いられるラベル
     * [2] : もし [0] が "RadioGroup" だった場合、[2] は個々のラジオボタンに対する 
     *    ラベルの配列を含んでいる必要がある。もし [0] が "CheckBox" だった場合、 
-    *    [1] は空または質問（例：「喫煙しますか？」）のどちらかで、
-    *    [2] は CheckBox のラベル（例：「はい」）となる。
+    *    [1] は空または質問 (例：「喫煙しますか？」) のどちらかで、
+    *    [2] は CheckBox のラベル (例：「はい」) となる。
     *
     */
     function processItem(item: Array) {
@@ -224,7 +224,7 @@ addChild(myFieldSet);
          <description>
             <p>このアプローチの実例については、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.html"><!--
-                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル（英語）</loc>を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加するのサンプル (英語)</loc> を参照のこと。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/radio_button_group_as3.fla"><!--
                     linktype="examples"-->プログラムによってラジオボタンのアクセシブルな名前にグループ名を追加する」のソース</loc>がダウンロードできる。</p>
             <note>

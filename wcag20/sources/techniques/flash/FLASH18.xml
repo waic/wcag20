@@ -13,7 +13,7 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>この実装方法の目的は、Flash ムービーの読み込み時に自動的に開始される音声を、利用者がオフにできるようにすることである。音声をオフにするコントロールは、利用者が素早く簡単に見つけられるようにページの先頭近くに置く必要がある。これは、スクリーンリーダー、画面拡大ソフト、スイッチメカニズムなどの支援技術を利用する利用者にも利用しない利用者（認知障害、学習障害、言語障害のある利用者）にも役立つ。</p>
+      <p>この実装方法の目的は、Flash ムービーの読み込み時に自動的に開始される音声を、利用者がオフにできるようにすることである。音声をオフにするコントロールは、利用者が素早く簡単に見つけられるようにページの先頭近くに置く必要がある。これは、スクリーンリーダー、画面拡大ソフト、スイッチメカニズムなどの支援技術を利用する利用者にも利用しない利用者 (認知障害、学習障害、言語障害のある利用者) にも役立つ。</p>
       <p>この実装方法では、自動的に再生される音声を利用者がオフにできるようにするコントロールをコンテンツ制作者が実装する。アクセシビリティを最大化するためには、 Flash ムービーではなく HTML 文書にコントロールを追加する。HTML コントロールは、ExternalInterface クラスを通じて Flash ムービーと通信する。つまり、利用者は Flash コンテンツを操作しなくても、音声の再生を制御できるということである。実際のコンテンツでこの方法が適していない場合は、Flash コンテンツの内部にコントロールを配置することができる。その場合、このコントロールはキーボードで操作できるようにし、またタブ順序と読み上げ順序の最初に配置し、再生中の音声をオフにできることを明確に示すラベルを付ける。</p>
    </description>
    <examples>
@@ -63,9 +63,9 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.html"><!--
-                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/control_to_toggle_audio_as3.fla"><!--
-                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->Flash 内に音声を停止するボタンを提供するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -151,9 +151,9 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.html"><!--
-                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH18/html_control_to_toggle_audio_as3.zip"><!--
-                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->Flash オブジェクトの前に音声を停止するボタンを提供する」のソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

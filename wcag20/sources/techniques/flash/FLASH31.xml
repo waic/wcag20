@@ -32,7 +32,7 @@
             <p>ここでは、Flash Professional でコンポーネントパネルからステージに追加されるデータグリッドの例を示す。また、コンポーネントパネルから表題となるテキストを格納するためのラベル要素も追加される。この表題は Flash のアクセシビリティパネルで使用され、データグリッドのアクセシビリティ用の名前として機能する。</p>
             <ulist>
                <item>
-                  <p>新しい Flash ファイル（.fla）を作成するか、既存のファイルを開いてデータグリッドを挿入する。</p>
+                  <p>新しい Flash ファイル (.fla) を作成するか、既存のファイルを開いてデータグリッドを挿入する。</p>
                </item>
                <item>
                   <p>ウィンドウメニューから Flash のコンポーネントパネルを開く。</p>
@@ -123,9 +123,9 @@ function bldRosterGrid(dg: DataGrid) {
                <item>
                   <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                           href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.html"><!--
-                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                           href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH31/datagrid_with_caption_as3.fla"><!--
-                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのソース（英語）</loc>をダウンロードすることもできる。</p>
+                          linktype="examples"-->ActiveScript 3 を使用してデータグリッドにキャプションを関連付けるのソース (英語)</loc> をダウンロードすることもできる。</p>
                </item>
                <item>
                   <p>Flash のオーサリングツールのアクセシビリティパネルを使用することによって、データグリッドにアクセシブルな名前を適用することもできる。</p>
