@@ -11,8 +11,8 @@
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、クライアントサイドで利用可能なリダイレクトを、利用者を混乱させることなく用いることである。リダイレクトはサーバサイドで実装するほうが望ましいが（<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1" linktype="server">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>［サーバ］を参照）、コンテンツ制作者がサーバサイド技術を管理しているとは限らない。</p>
-    <p>HTML及びXHTMLでは、<el>meta</el>要素に<att>http-equiv</att>属性には「Refresh」という値、<att>content</att>属性の値には「0」（ゼロ秒を意味する）を、ブラウザが要求すべきURIを後に伴って指定することができる。重要なのは、新たなページを読み込む前にコンテンツが表示されるのを避けるために、タイムアウトをゼロに設定することである。リダイレクトのコードを指定したページには、リダイレクトに関する情報のみを含めるべきである。</p>
+    <p>この達成方法の目的は、クライアントサイドで利用可能なリダイレクトを、利用者を混乱させることなく用いることである。リダイレクトはサーバサイドで実装するほうが望ましいが (<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SVR1" linktype="server">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</loc>［サーバ］を参照)、コンテンツ制作者がサーバサイド技術を管理しているとは限らない。</p>
+    <p>HTML及びXHTMLでは、<el>meta</el>要素に<att>http-equiv</att>属性には「Refresh」という値、<att>content</att>属性の値には「0」(ゼロ秒を意味する) を、ブラウザが要求すべきURIを後に伴って指定することができる。重要なのは、新たなページを読み込む前にコンテンツが表示されるのを避けるために、タイムアウトをゼロに設定することである。リダイレクトのコードを指定したページには、リダイレクトに関する情報のみを含めるべきである。</p>
   </description>
    <examples>
       <eg-group>
@@ -49,7 +49,7 @@
           <p>ドキュメント内の<el>meta</el>要素を全て見つける。</p>
         </item>
         <item>
-          <p>各<el>meta</el>要素について、値が「refresh」（大文字と小文字の区別なし）の<att>http-equiv</att>属性、及び<att>content</att>属性で0より大きい数字、その後に続いて<code>;'URL=anyURL'</code>（anyURLは、現在のページから切替わるURIを表す）という値が含まれている。</p>
+          <p>各<el>meta</el>要素について、値が「refresh」(大文字と小文字の区別なし) の<att>http-equiv</att>属性、及び<att>content</att>属性で0より大きい数字、その後に続いて<code>;'URL=anyURL'</code> (anyURLは、現在のページから切替わるURIを表す) という値が含まれている。</p>
         </item>
       </olist>
     </procedure>

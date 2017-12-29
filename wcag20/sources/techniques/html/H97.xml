@@ -69,7 +69,7 @@
          <ulist>
             <item>
                <p>
-                  <!--loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-markup/nav.html">HTML5 nav element</loc--><!-- オリジナルのリンク（404）元文書から改変。元文書のリンクが変更されたらあわせること -->
+                  <!--loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-markup/nav.html">HTML5 nav element</loc--><!-- オリジナルのリンク (404) 元文書から改変。元文書のリンクが変更されたらあわせること -->
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/TR/html51/sections.html#the-nav-element">HTML5 nav element</loc>
                </p>
             </item>
