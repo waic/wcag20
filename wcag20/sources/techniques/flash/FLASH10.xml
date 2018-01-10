@@ -25,7 +25,7 @@
                   <p>フォーム・コントロールのラベルの近くに、アスタリスク文字などの視覚的なマークを配置する。</p>
                </item>
                <item>
-                  <p>アクセシビリティパネルを使用して、「名前」フィールドに記述したコントロールのラベルのすぐ後に「（必須）」と記述する。</p>
+                  <p>アクセシビリティパネルを使用して、「名前」フィールドに記述したコントロールのラベルのすぐ後に「(必須)」と記述する。</p>
                </item>
             </olist>
             <p>次のスクリーンショットは、このアプローチについて説明したものである。</p>
@@ -40,9 +40,9 @@
 							     </p>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.html">
-                    <!--linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <!--linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加するのサンプル(英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH10/required_form_fields_as2.fla"><!--
-                    linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加する」のソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->コントロールのアクセシブルな名前に「必須」という語を追加するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

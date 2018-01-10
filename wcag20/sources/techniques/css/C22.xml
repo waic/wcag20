@@ -54,7 +54,7 @@
         <p><code><![CDATA[line-height]]></code>プロパティを使って、テキストのブロックに対してラインの高さを指定する。</p>
       </item>
       <item>
-        <p><code><![CDATA[text-transform]]></code>プロパティを使って、テキストの文字（大文字小文字の区別）を制御する。</p>
+        <p><code><![CDATA[text-transform]]></code>プロパティを使って、テキストの文字 (大文字小文字の区別) を制御する。</p>
       </item>
       <item>
         <p><code><![CDATA[letter-spacing]]></code>プロパティを使って、テキストの文字間隔を制御する。</p>
@@ -84,7 +84,7 @@
       <code><![CDATA[code { font-family:"Courier New", Courier, monospace }]]></code>
     </eg-group>
     <eg-group>
-      <head>テキストの配置（配列）を制御するためにCSSのtext-alignを使用する。</head>
+      <head>テキストの配置 (配列) を制御するためにCSSのtext-alignを使用する。</head>
       <description><p>XHTML：</p>
 </description>
       <code><![CDATA[<p class="right">このテキストは表示域の右側にあるべきである。</p>]]></code>

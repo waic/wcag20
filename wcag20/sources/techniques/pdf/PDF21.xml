@@ -19,11 +19,11 @@
     <p>この達成方法の目的は、リストエレメントを目的に応じて適切に使用して、関連項目のリストを作成することである。リストを含む PDF フォームは通常、PDF のオーサリングツールを使用して作成または修復される。</p>
     <p>マークアップを使用して項目を視覚的にリストであるかのように書式設定したときに、リストの関係性が示されない場合は、情報間の移動が難しくなることがある。このような視覚的な書式設定の簡単な例としては、改行を使用したリスト項目の分割がある。</p>
     <p>一部の支援技術では、利用者はリスト間または項目間を移動できる。リストがリストタグで正しく書式設定されていない場合、利用者はリストコンテンツを理解するのが難しくなる。</p>
-    <p>PDF コンテンツ内にリストを作成する最も簡単な方法は、オーサリングツール（Microsoft Word や OpenOffice.org Writer など）のリストマークアップを使用して正しく書式設定することである。ただし、ソースファイルやオーサリングツールを利用できない場合は、Adobe Acrobat Pro の TouchUp 読み上げ順序ツールおよびタグパネルを使用できる。</p>
-    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3「リストエレメント」（英語）でリスト構造を定義している（リストエレメント）。PDF 文書のリストの構造タイプを以下に示す。</p>
+    <p>PDF コンテンツ内にリストを作成する最も簡単な方法は、オーサリングツール (Microsoft Word や OpenOffice.org Writer など) のリストマークアップを使用して正しく書式設定することである。ただし、ソースファイルやオーサリングツールを利用できない場合は、Adobe Acrobat Pro の TouchUp 読み上げ順序ツールおよびタグパネルを使用できる。</p>
+    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3「リストエレメント」(英語) でリスト構造を定義している (リストエレメント)。PDF 文書のリストの構造タイプを以下に示す。</p>
     <ulist>
       <item>
-        <p> L - リストタグ（1 つ以上の LI タグを含む）</p>
+        <p> L - リストタグ (1 つ以上の LI タグを含む)</p>
       </item>
       <item>
         <p> LI - リスト項目タグ。リスト項目タグには、Lbl タグと LBody タグを含めることができる</p>
@@ -41,15 +41,15 @@
       <head>Microsoft Word 2007 文書にリストを追加する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>［ホーム］リボンのリストツールを使用して、Word 文書内でリストを作成または修復する。PDF への変換時にリストが正しく書式設定されていることを確認するには、この方法が最も簡単である。</p>
-<p>次の画像では、リストツールを使用して番号付きリストと箇条書きリストが作成されている。3番目のリストにはリストツール（リボンを参照）を使用しなかったため、PDF への変換時にリストがリストエレメントとしてタグ付けされない。</p>
+<p>次の画像では、リストツールを使用して番号付きリストと箇条書きリストが作成されている。3番目のリストにはリストツール (リボンを参照) を使用しなかったため、PDF への変換時にリストがリストエレメントとしてタグ付けされない。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists-word.jpg" height="563" width="481"/><alt>スクリーンショット：Wordファイルで正しく書式設定された番号付きリストおよび記号付きリスト。3番目のセクションのテキストは、リストであるかのように表示されているが、Microsoft Word のリスト書式設定ツールは使用されていない。</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>OpenOffice.org Writer 2.2 文書にリストを追加する</head>
       <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>箇条書きと番号付けツールを使用して、OpenOffice.org Writer 文書内でリストを作成または修復する。PDF への変換時にリストが正しく書式設定されていることを確認するには、この方法が最も簡単である。</p>
-<p>次の画像では、リストツールを使用して番号付きリストと箇条書きリストが作成されている。3番目のリストにはリストツール（ツールバーを参照）を使用しなかったため、PDF への変換時にリストがリストエレメントとしてタグ付けされない。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists-oo.jpg" height="517" width="451"/><alt>スクリーンショット：OpenOffice.org Writerファイルで正しく書式設定された番号付きリストおよび記号付きリスト。3番目のセクションのテキストは、リストであるかのように表示されているが、OpenOffice.org Writer のリスト書式設定ツールは使用されていない。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.odt"><!-- linktype="examples"-->OpenOffice Writer 文書にリストを追加したサンプル（OpenDocument テキストファイル）</loc>がある。</p>
+<p>次の画像では、リストツールを使用して番号付きリストと箇条書きリストが作成されている。3番目のリストにはリストツール (ツールバーを参照) を使用しなかったため、PDF への変換時にリストがリストエレメントとしてタグ付けされない。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists-oo.jpg" height="517" width="451"/><alt>スクリーンショット：OpenOffice.org Writerファイルで正しく書式設定された番号付きリストおよび記号付きリスト。3番目のセクションのテキストは、リストであるかのように表示されているが、OpenOffice.org Writer のリスト書式設定ツールは使用されていない。</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.odt"><!-- linktype="examples"-->OpenOffice Writer 文書にリストを追加したサンプル (OpenDocument テキストファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -62,7 +62,7 @@
 <p>リストを修復するには、［タグ］パネルを使用してコンテンツ内にリストタグを作成する。</p>
 <p>次の画像は、結果として作成された、正しく書式設定された最初のリスト項目を示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/listrepair.jpg" alt="スクリーンショット：［タグ］パネルで、リストタグの下に正しくネストされた最初のリスト項目" height="448" width="556"/></image></p>
-<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.pdf"><!-- linktype="examples"-->Acrobat Pro でリストが適切に書式設定されたサンプル（PDF ファイル）</loc>がある。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF21/lists.pdf"><!-- linktype="examples"-->Acrobat Pro でリストが適切に書式設定されたサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>

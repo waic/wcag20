@@ -14,17 +14,17 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>この実装方法の目的は、<unit>em</unit> の値など相対的な単位を使用して、埋め込みの Flash オブジェクトの幅や高さを指定することである。Flash オブジェクトのサイズは、ムービーの幅と高さを 100% に設定することによって、コンテナ（親要素）のサイズに合わせて拡大することができる。コンテナの幅と高さは、相対的な単位を使用して設定する。これにより、テキストサイズの変更をサポートするユーザエージェントは、テキストサイズの設定の変更に応じて Flash オブジェクトのサイズを変更することが可能になる。Flash オブジェクトのサイズが調整されると、そのコンテンツが拡大または縮小され、ロービジョンの利用者でも読みやすくなる。</p>
+      <p>この実装方法の目的は、<unit>em</unit> の値など相対的な単位を使用して、埋め込みの Flash オブジェクトの幅や高さを指定することである。Flash オブジェクトのサイズは、ムービーの幅と高さを 100% に設定することによって、コンテナ (親要素) のサイズに合わせて拡大することができる。コンテナの幅と高さは、相対的な単位を使用して設定する。これにより、テキストサイズの変更をサポートするユーザエージェントは、テキストサイズの設定の変更に応じて Flash オブジェクトのサイズを変更することが可能になる。Flash オブジェクトのサイズが調整されると、そのコンテンツが拡大または縮小され、ロービジョンの利用者でも読みやすくなる。</p>
       <note>
          <p>この実装方法では、ブラウザでズーム機能を使用する利用者をサポートする必要はない。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head>テキストのサイズを変更する（最低限のサイズは維持する）</head>
+         <head>テキストのサイズを変更する (最低限のサイズは維持する)</head>
          <description>
             <p>この事例では、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://github.com/swfobject/swfobject">SWFObject による動的なパブリッシュ手法（英語）</loc>を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <prop>min-width</prop> および <prop>min-height</prop> プロパティを設定している。</p>
+                    href="https://github.com/swfobject/swfobject">SWFObject による動的なパブリッシュ手法 (英語)</loc> を使用して HTML ドキュメント内に Flash オブジェクトをロードしている。Flash オブジェクトのコンテナ要素には、「flashPlaceHolder」というクラス名が付けられている。このクラス名は、CSS で相対的な em 値を使用して幅および高さを設定する際のターゲットとなる。利用者がブラウザのテキストサイズを拡大または縮小すると、それに応じて Flash オブジェクトも拡大または縮小される。テキストサイズを縮小したときにオブジェクトが小さくなりすぎることがないように、デフォルトのサイズに対して <prop>min-width</prop> および <prop>min-height</prop> プロパティを設定している。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -59,9 +59,9 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.html"><!--
-                    linktype="examples"-->テキストのサイズを変更する（最低限のサイズは維持する）のサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->テキストのサイズを変更する (最低限のサイズは維持する) のサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH33/scale_movie_dimensions_on_text_resize_as3.fla"><!--
-                    linktype="examples"-->テキストのサイズを変更する（最低限のサイズは維持する）のソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->テキストのサイズを変更する (最低限のサイズは維持する) のソース (英語)</loc> をダウンロードすることもできる。</p>
             <!--<ednote>
 								<edtext>The test zip contained a "swfobject" folder, which contained a number of files that looked redundant. Not sure if it needs to be packaged with the above .fla file, for the moment it's omitted.</edtext>
 							</ednote>-->
@@ -78,7 +78,7 @@
                <p>Flash オブジェクトが埋め込まれているウェブページを開く。</p>
             </item>
             <item>
-               <p>HTML ソースコードで、Flash オブジェクトが格納されているオブジェクトの幅および高さのサイズが、em またはパーセント（%）などの相対的な単位で指定されている</p>
+               <p>HTML ソースコードで、Flash オブジェクトが格納されているオブジェクトの幅および高さのサイズが、em またはパーセント (%) などの相対的な単位で指定されている</p>
             </item>
          </olist>
       </procedure>

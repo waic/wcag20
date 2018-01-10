@@ -19,7 +19,7 @@
       <eg-group>
          <head>タイムアウト後に点滅を停止させる</head>
          <description>
-            <p>この事例では、ムービークリップ（blinkingTextMC）でタイムラインを使用して点滅効果を生成している。5 秒経過する前にムービークリップの <function>gotoAndStop()</function> メソッドが呼び出され、このメソッドにより点滅が停止する。</p>
+            <p>この事例では、ムービークリップ (blinkingTextMC) でタイムラインを使用して点滅効果を生成している。5 秒経過する前にムービークリップの <function>gotoAndStop()</function> メソッドが呼び出され、このメソッドにより点滅が停止する。</p>
          </description>
          <code xml:space="preserve"><![CDATA[setTimeout(stopBlinking, 4500);
 function stopBlinking() {
@@ -30,9 +30,9 @@ function stopBlinking() {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.html"><!--
-                    linktype="examples"-->タイムアウト後に点滅を停止させるのサンプル（英語）</loc>で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのサンプル (英語)</loc> で確認できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH36/control_blinking_with_script_as3.fla"><!--
-                    linktype="examples"-->タイムアウト後に点滅を停止させるのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->タイムアウト後に点滅を停止させるのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

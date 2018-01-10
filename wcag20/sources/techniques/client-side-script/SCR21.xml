@@ -201,7 +201,7 @@ function focusFormField(objAnchor, objEvent, objForm)
       <p>動的に新しいコンテンツを作成するページに対して：</p>
       <olist>
         <item>
-          <p>（ソースコードを検証して、）新しいコンテンツがdocument.write()、innerHTML,、outerHTML、innerText又はouterTextを用いて作成されていない。</p>
+          <p>(ソースコードを検証して、) 新しいコンテンツがdocument.write()、innerHTML,、outerHTML、innerText又はouterTextを用いて作成されていない。</p>
         </item>
       </olist>
     </procedure>

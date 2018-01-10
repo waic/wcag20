@@ -18,16 +18,16 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="6.0">
-      <p>Refreshヘッダは、HTTP/1.1、HTTP/1.0ともに定義されていないが、多くのブラウザでサポートされている（Windows のFirefox 1.0とIE 6で検証。）</p>
+      <p>Refreshヘッダは、HTTP/1.1、HTTP/1.0ともに定義されていないが、多くのブラウザでサポートされている (Windows のFirefox 1.0とIE 6で検証。)</p>
     </ua-issue>
    </ua-issues>
    <description>
-    <p>開発者は、サーバサイドのスクリプト言語を使って、標準ではないHTTPヘッダ「Refresh」を、タイムアウト（単位：秒）及び指定されたタイムアウト時間後にリダイレクトするURIとともに指定することができる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
+    <p>開発者は、サーバサイドのスクリプト言語を使って、標準ではないHTTPヘッダ「Refresh」を、タイムアウト (単位：秒) 及び指定されたタイムアウト時間後にリダイレクトするURIとともに指定することができる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
     <p>HTTPヘッダは、<code>Refresh: {秒で表された時間}; url={新しい場所のURI}</code>のように設定する。URIを省略することも可能で、周期的にページを更新し続けることになる。これも同様の問題を引き起こす。この場合に設定されるHTTPヘッダは<code>Refresh: {秒で表された時間}</code>となる。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがJavaサーブレット又はJavaServer Pages（JSP）により実装されているため、不適合である。</p>
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがJavaサーブレット又はJavaServer Pages (JSP) により実装されているため、不適合である。</p>
 </description>
       <code><![CDATA[
 public void doGet (HttpServletRequest request, HttpServletResponse response)
@@ -43,7 +43,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
   }]]></code>
     </eg-group>
     <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがVBScriptを伴ったActive Server Pages（ASP）により実装されているため、不適合である。</p>
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトがVBScriptを伴ったActive Server Pages (ASP) により実装されているため、不適合である。</p>
 </description>
       <code><![CDATA[
  <% @Language = "VBScript" %>

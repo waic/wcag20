@@ -23,7 +23,7 @@
           <p>JAWSは、<el>blockquote</el>及び<el>cite</el>をサポートしている。Window-Eyesは、<el>blockquote</el>、<el>q</el>及び<el>cite</el>をサポートしている。</p>
         </item>
         <item>
-          <p>Firefox 1.0以降、Opera 7.54以降、Mozilla 1.7.3以降（以上、Windows版）は、<el>q</el>要素の前後に自動的に引用符を生成するが、Windows用Internet Explorer 6は生成しない。</p>
+          <p>Firefox 1.0以降、Opera 7.54以降、Mozilla 1.7.3以降 (以上、Windows版) は、<el>q</el>要素の前後に自動的に引用符を生成するが、Windows用Internet Explorer 6は生成しない。</p>
         </item>
       </ulist>
     </ua-issue>
@@ -34,7 +34,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>この事例では、テキストの強調に <el>em</el> 要素と <el>strong</el> 要素を利用する方法を示している。<el>em</el> 要素と <el>strong</el> 要素は、構造的な強調を示すのに用意されているものであり、さまざまな形式で描画されうる（フォントスタイルの変更、読み上げ時の抑揚の変更など）。</p>
+      <description><p>この事例では、テキストの強調に <el>em</el> 要素と <el>strong</el> 要素を利用する方法を示している。<el>em</el> 要素と <el>strong</el> 要素は、構造的な強調を示すのに用意されているものであり、さまざまな形式で描画されうる (フォントスタイルの変更、読み上げ時の抑揚の変更など)。</p>
 </description>
       <code role="html401"><![CDATA[……彼女が<em>本当に</em>言いたかったのは、&quot;オーケーどころか、 
  <strong>すばらしい</strong>&quot;ということでした！…… ]]></code>
@@ -53,7 +53,7 @@
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
-      <description><p>この事例では、短い引用文のマークアップに <el>q</el> 要素を利用している。<el>q</el> 要素を引用符で囲んであるのは、ユーザエージェントの多くがいまだにこの要素をサポートせず、適切に表示しないからである（前述「ユーザエージェント及び支援技術によるサポート」を参照）。CSS で引用符を自動生成しないように設定し、<el>q</el> 要素をサポートしているユーザエージェントに適用することで、自動生成された引用符とコンテンツ制作者が付けた引用符が二重に表示されてしまう問題を避けている。将来、<el>q</el> 要素が広くサポートされるようになれば、引用符を付けたり、ブラウザの引用符生成を避けたりする必要はなくなるだろう。</p>
+      <description><p>この事例では、短い引用文のマークアップに <el>q</el> 要素を利用している。<el>q</el> 要素を引用符で囲んであるのは、ユーザエージェントの多くがいまだにこの要素をサポートせず、適切に表示しないからである (前述「ユーザエージェント及び支援技術によるサポート」を参照)。CSS で引用符を自動生成しないように設定し、<el>q</el> 要素をサポートしているユーザエージェントに適用することで、自動生成された引用符とコンテンツ制作者が付けた引用符が二重に表示されてしまう問題を避けている。将来、<el>q</el> 要素が広くサポートされるようになれば、引用符を付けたり、ブラウザの引用符生成を避けたりする必要はなくなるだろう。</p>
 </description>
       <code role="css"><![CDATA[q:before { content: ""; } 
 q:after { content: ""; } ]]></code>
@@ -108,7 +108,7 @@ q:after { content: ""; } ]]></code>
           <p>コンテンツにテキストの表現を変えることで伝達できる情報がある。</p>
         </item>
         <item>
-          <p>適切なセマンティックマークアップ（<el>em</el>、<el>strong</el>、<el>cite</el>、<el>blockquote</el>、<el>quote</el>、<el>sub</el>など）が、テキストの変化を通じて情報を伝達するテキストをマークアップに用いられていることを確認する。</p>
+          <p>適切なセマンティックマークアップ (<el>em</el>、<el>strong</el>、<el>cite</el>、<el>blockquote</el>、<el>quote</el>、<el>sub</el>など) が、テキストの変化を通じて情報を伝達するテキストをマークアップに用いられていることを確認する。</p>
         </item>
       </olist>
     </procedure>

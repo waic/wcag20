@@ -501,7 +501,7 @@
             <ul id="navigation"><li><strong><a href="Overview#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li></ul> -->
             <div class="div1"><a name="maincontent"><xsl:text> </xsl:text></a>
               <h1 id="techs"> <xsl:value-of select="//header/title"/></h1>
-            	<p>このウェブページは、「<a href="Overview.html">WCAG 2.0達成方法集 : WCAG 2.0の達成方法と失敗例</a>」における<xsl:value-of select="//header/title"/>を掲載している。ウェブコンテンツ技術特有の達成方法は、「一般（General）」の達成方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般（General）」の達成方法とウェブコンテンツ技術特有の達成方法の双方を考慮に入れる必要がある。</p>
+            	<p>このウェブページは、「<a href="Overview.html">WCAG 2.0達成方法集 : WCAG 2.0の達成方法と失敗例</a>」における<xsl:value-of select="//header/title"/>を掲載している。ウェブコンテンツ技術特有の達成方法は、「一般 (General)」の達成方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般 (General)」の達成方法とウェブコンテンツ技術特有の達成方法の双方を考慮に入れる必要がある。</p>
             	<p>ウェブコンテンツ技術特有の達成方法は、あらゆる状況で WCAG 2.0 の達成基準と適合要件を満たすコンテンツを作るために使うことができる技術を指しているわけではない。 コンテンツ制作者はその技術の限界に注意を払い、障害のある人にアクセシブルな方法でコンテンツを提供す必要がある。</p>
             	<p>達成方法についての情報は、<a href="intro.html">WCAG 2.0 達成方法集のイントロダクション</a>を参照のこと。他のウェブコンテンツ技術の達成方法一覧については、<a href="Overview.html#contents">目次</a>を参照のこと。</p>
             <xsl:apply-templates/>
@@ -1486,7 +1486,7 @@
 				<xsl:attribute name="id"><xsl:value-of select="$id"/></xsl:attribute>
 			</xsl:if>
 			<h2>達成方法に関する重要な情報</h2>
-			<p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<!--a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a--><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用（対象）セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p>
+			<p>これらの達成方法(参考)の使用法及び、それらがWCAG 2.0 達成基準(規定)とどのように関係するかに関する重要な情報については、<!--a href="{$guide-src//publoc/loc[@href]}understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a--><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用 (対象) セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p>
 		</div>
 	</xsl:template>
 	

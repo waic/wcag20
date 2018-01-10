@@ -89,10 +89,10 @@
     <h3>
      <a name="pdf_notes_intro" id="pdf_notes_intro">
      </a>イントロダクション</h3>
-    <p>Portable Document Format（PDF）は、文書の作成に使用したアプリケーションソフトウェア、ハードウェアおよびオペレーティングシステムや、表示または印刷に使用する出力デバイスに依存せずに文書を表示できるファイル形式である。PDF ファイルは、信頼性が高くデバイスに依存しない方法で、文書内のページの表示を指定する。PDF 仕様は、1993 年に Adobe Systems によって一般公開向けの標準として発表された。2008 年 1 月には、PDF 1.7 が ISO 規格（ISO 32000-1）になった。</p>
-    <p>アクセシビリティについては、2012 年 7 月に ISO規格になった PDF/UA（ユニバーサルアクセシビリティ）に規定されている(ISO 14289-1:2012 
+    <p>Portable Document Format (PDF) は、文書の作成に使用したアプリケーションソフトウェア、ハードウェアおよびオペレーティングシステムや、表示または印刷に使用する出力デバイスに依存せずに文書を表示できるファイル形式である。PDF ファイルは、信頼性が高くデバイスに依存しない方法で、文書内のページの表示を指定する。PDF 仕様は、1993 年に Adobe Systems によって一般公開向けの標準として発表された。2008 年 1 月には、PDF 1.7 が ISO 規格 (ISO 32000-1) になった。</p>
+    <p>アクセシビリティについては、2012 年 7 月に ISO規格になった PDF/UA (ユニバーサルアクセシビリティ) に規定されている(ISO 14289-1:2012 
     (<a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=54564">PDF/UA (ISO 14289-1:2012)</a> を参照のこと。))
-    PDF/UA は、テクニック（ハウツー）仕様を示すものではなく、よりアクセシブルな PDF を作成するための一連のガイドラインを提供することを目的としたものである。
+    PDF/UA は、テクニック (ハウツー) 仕様を示すものではなく、よりアクセシブルな PDF を作成するための一連のガイドラインを提供することを目的としたものである。
     この仕様では、必須のコンポーネントと禁止されているコンポーネントを示すとともに、障害のある人を含め、可能な限り幅広い人々がファイルを利用できるようにすること目的に、それらのコンポーネントを PDF ファイルに含めるか否かを規定する条件について説明している。
     それらのコンポーネントを PDF ストリームに含めるための機構は、個々の開発者、PDF 作成者または PDF 表示エージェントの裁量に任されている。PDF/UA は、適合するリーダーの動作を規定するルールも指定している。</p>
     
@@ -107,21 +107,21 @@
      <h4>
       <a name="pdf_notes_acc-sup_structure" id="pdf_notes_acc-sup_structure">
       </a>論理構造</h4>
-     <p>PDF の論理構造機能（PDF 1.3 で導入）は、文書のコンテンツに関する構造情報を PDF ファイルに組み込むための機構を提供する。このような情報の例としては、章、見出し、段落、セクションなどの文書の編成や、図、表、脚注などの特殊エレメント情報がある。
+     <p>PDF の論理構造機能 (PDF 1.3 で導入) は、文書のコンテンツに関する構造情報を PDF ファイルに組み込むための機構を提供する。このような情報の例としては、章、見出し、段落、セクションなどの文書の編成や、図、表、脚注などの特殊エレメント情報がある。
      	論理構造機能は拡張可能であり、どのような構造情報を組み込んで、それをどのように表示するかは、PDF ファイルを作成するアプリケーションが選択できる。一方で、PDF ユーザーは作成側の構造上の仕組みを知らなくてもファイル内を移動できる。</p>
      <p>PDF の論理構造の基本的な機能は、HTML、SGML、XML などの標準的な文書マークアップ言語と共通している。文書の論理構造は、辞書オブジェクトとしての構造エレメントの階層として表される。
      	他のマークアップ言語の構造エレメントと同様に、PDF の構造エレメントにはコンテンツと属性を持たせることができる。PDF では、HTML、SGMLおよびXMLでのテキストの役割を、レンダリングされた文書コンテンツが担っている。</p>
      <p>PDF 文書の論理構造は、視覚的に認識できるコンテンツとは別個に保存され、相互にポインタで結ばれている。このように分けられているため、論理エレメントの順序と階層構造を、文書のページ上のグラフィックオブジェクトの順序と位置から完全に独立して扱うことができる。</p>
      <p>文書の論理構造は、構造階層または構造ツリーと呼ばれる、オブジェクトの階層によって記述される。この階層のルートにあるのが、構造ツリールートと呼ばれる辞書オブジェクトであり、文書カタログの StructTreeRoot エントリによって指定することができる。
-	<a href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</a>の節 14.7.2（「構造階層」（英語））を参照すると、表 322 に構造ツリールート辞書内のエントリが示されている。
+	<a href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</a>の節 14.7.2 (「構造階層」(英語)) を参照すると、表 322 に構造ツリールート辞書内のエントリが示されている。
 	K エントリは、構造エレメントである、構造ツリールートの直接の子を指定する。</p>
     </div>
     <div class="div4">
      <h4>
       <a name="pdf_notes_acc-sup_tagged" id="pdf_notes_acc-sup_tagged">
       </a>タグ付き PDF</h4>
-     <p>タグ付き PDF（PDF 1.4）は、PDF をスタイル化して使用するためのものであり、PDF の論理構造フレームワーク上に構築される。
-     	タグ付き PDF では一連の標準的な構造タイプと属性が定義され、ページのコンテンツ（テキスト、グラフィックおよび画像）を抽出して他の目的に再利用することができる。これは、次のような操作を行うためのツールで使用することを意図している。</p>
+     <p>タグ付き PDF (PDF 1.4) は、PDF をスタイル化して使用するためのものであり、PDF の論理構造フレームワーク上に構築される。
+     	タグ付き PDF では一連の標準的な構造タイプと属性が定義され、ページのコンテンツ (テキスト、グラフィックおよび画像) を抽出して他の目的に再利用することができる。これは、次のような操作を行うためのツールで使用することを意図している。</p>
      <ul>
       <li>
        <p>単純にテキストとグラフィックを抽出して、他のアプリケーションに貼り付ける。</p>
@@ -133,7 +133,7 @@
        <p>検索、インデックス付け、スペルチェックなどの目的でテキストを処理する。</p>
       </li>
       <li>
-       <p>文書構造と基本的なスタイル情報を保持しながら、他の一般的なファイル形式（HTML、XML、RTF など）に変換する。</p>
+       <p>文書構造と基本的なスタイル情報を保持しながら、他の一般的なファイル形式 (HTML、XML、RTF など) に変換する。</p>
       </li>
       <li>
        <p>支援技術に依存するユーザーがコンテンツを操作できるようにする。</p>
@@ -158,11 +158,11 @@
      	これに対して、PDF を直接生成しないアプリケーションでは、PDF 出力が間接的に行われる。間接的な方法としては、主に次の 2 つがある。</p>
      <ul>
       <li>
-       <p>Microsoft® Windows® の GDI や Apple Mac OS の QuickDraw などのアプリケーションプログラミングインターフェイス（API）を呼び出すことで、アプリケーションが印刷可能な出力を記述する。
+       <p>Microsoft® Windows® の GDI や Apple Mac OS の QuickDraw などのアプリケーションプログラミングインターフェイス (API) を呼び出すことで、アプリケーションが印刷可能な出力を記述する。
        	プリンタードライバーと呼ばれるソフトウェアコンポーネントがこれらの呼び出しをインターセプトして解釈し、PDF 形式の出力を生成する。</p>
       </li>
       <li>
-       <p>アプリケーションが、印刷可能な出力を他のファイル形式（PostScript、PCL、HPGL、DVI など）で直接生成し、それが別の変換プログラムによって PDF に変換される。</p>
+       <p>アプリケーションが、印刷可能な出力を他のファイル形式 (PostScript、PCL、HPGL、DVI など) で直接生成し、それが別の変換プログラムによって PDF に変換される。</p>
       </li>
      </ul>
      <p>これらの間接的な方法を使用すれば既存のアプリケーションから簡単に PDF 出力が得られるが、この方法によって作成される PDF ファイルでは、文書のセマンティックを明らかにする高度な PDF 画像モデルが十分に活用されない場合がある。
@@ -205,7 +205,7 @@
        	  CommonLook Officeはコンテンツ作成者が Microsoft Word およびPowerPointの環境でアクセシビリティテストを実行し、アクセシビリティに関する問題を修正できるツールを備えている。</p>
       </li>
       <li>
-       <p>Xenos Axess™ for Accessible Statements - この PDF ソフトウェアを組織の既存のエンタープライズコンテンツマネジメント（ECM）インフラストラクチャと統合することで、大量の印刷ストリームをキャプチャし、タグ付き PDF に自動的に変換できる。</p>
+       <p>Xenos Axess™ for Accessible Statements - この PDF ソフトウェアを組織の既存のエンタープライズコンテンツマネジメント (ECM) インフラストラクチャと統合することで、大量の印刷ストリームをキャプチャし、タグ付き PDF に自動的に変換できる。</p>
       </li>
       <li>
        <p>WordPerfect® Office - Corel が提供するワードプロセッシングソフトウェア。タグ付き PDF 文書の作成、マークアップおよび共有に使用できる。</p>
@@ -234,7 +234,7 @@
      <p>
       <a href="http://www.access-for-all.ch/en/pdf-lab/pdf-accessibility-checker-pac.html">PAC
   			- the PDF Accessibility Checker</a>：PAC は、«Access for all» Foundation が開発し配布している、PDF 文書と PDF フォームのアクセシビリティを評価するための無料のツールである。
-  			PAC には、構造化された PDF 文書のプレビューを Web ブラウザーで表示する機能が追加されている。PAC のプレビューでは、PDF 文書に含まれているタグが示され、アクセシブルなエレメントが、支援技術（スクリーンリーダーなど）によって解釈される場合と同様に表される。
+  			PAC には、構造化された PDF 文書のプレビューを Web ブラウザーで表示する機能が追加されている。PAC のプレビューでは、PDF 文書に含まれているタグが示され、アクセシブルなエレメントが、支援技術 (スクリーンリーダーなど) によって解釈される場合と同様に表される。
   			PAC では、検出されたアクセシビリティエラーがリストされたアクセシビリティレポートも提供される。レポート内のリンクをクリックすると、文書内で最も可能性が高いエラー原因が表示される。</p>
      <div>
       <h5>
@@ -249,7 +249,7 @@
        <li>
         <p>
          <a href="http://msdn.microsoft.com/en-us/library/ms696079%28VS.85%29.aspx">inspect32</a>
-          - Microsoft Windows Software Development Kit（SDK）に含まれており、開発者やテスト担当者が UI コンポーネントのアクセシブルプロパティを調べることができる。</p>
+          - Microsoft Windows Software Development Kit (SDK) に含まれており、開発者やテスト担当者が UI コンポーネントのアクセシブルプロパティを調べることができる。</p>
        </li>
        <li>
         <p>
@@ -259,7 +259,7 @@
        <li>
         <p>
          <a href="http://msdn.microsoft.com/en-us/library/ms727247.aspx">UISpy</a>
-          - Microsoft Windows Software Development Kit（SDK）に含まれており、開発者やテスト担当者がアプリケーションのユーザーインターフェイス（UI）エレメントを表示し、操作することができる。</p>
+          - Microsoft Windows Software Development Kit (SDK) に含まれており、開発者やテスト担当者がアプリケーションのユーザーインターフェイス (UI) エレメントを表示し、操作することができる。</p>
        </li>
       </ul>
      </div>
@@ -273,11 +273,11 @@
     <ul>
      <li>
       <p>Adobe Acrobat Pro - Adobe Systems が提供する PDF オーサリングツール、エディターおよびビューアー。Windows プラットフォームの MSAA デバイスと互換性がある。
-      	テキスト読み上げ（Read Out Loud）、ハイコントラストディスプレイ、大型文字ディスプレイのリフロー、自動スクロール、アクセシビリティのフルチェック、アクセシビリティのクイックチェック、TouchUp 読み上げ順序ツール、アクセシビリティセットアップアシスタントなど、多数のアクセシビリティ機能が組み込まれている。</p>
+      	テキスト読み上げ (Read Out Loud)、ハイコントラストディスプレイ、大型文字ディスプレイのリフロー、自動スクロール、アクセシビリティのフルチェック、アクセシビリティのクイックチェック、TouchUp 読み上げ順序ツール、アクセシビリティセットアップアシスタントなど、多数のアクセシビリティ機能が組み込まれている。</p>
      </li>
      <li>
       <p>Adobe Reader – Adobe Systems が無料で配布している PDF ビューアー。Windows プラットフォームの MSAA デバイスと互換性がある。
-	      テキスト読み上げ（Read Out Loud）、ハイコントラストディスプレイ、大型文字ディスプレイのリフロー、自動スクロール、アクセシビリティのクイックチェック、アクセシビリティセットアップアシスタントなど、多数のアクセシビリティ機能が組み込まれている。</p>
+	      テキスト読み上げ (Read Out Loud)、ハイコントラストディスプレイ、大型文字ディスプレイのリフロー、自動スクロール、アクセシビリティのクイックチェック、アクセシビリティセットアップアシスタントなど、多数のアクセシビリティ機能が組み込まれている。</p>
      </li>
      <li>
       <p>Kurzweil 3000™ - Kurzweil Educational Systems® が提供する、読み書きおよび学習のための総合的なソフトウェアソリューション。テキスト読み上げ機能によって PDF ファイルが読み上げられる。</p>
@@ -290,19 +290,19 @@
      <p>Adobe は、PDF ファイルのコンテンツをスクリーンリーダーなどの支援技術で利用できる方法を提供している。</p>
      <ul>
       <li>
-       <p>Microsoft® Windows® オペレーティングシステムでは、Acrobat および Adobe Reader は、PDF コンテンツを Component Object Model（COM）オブジェクトとしてエクスポートする。
+       <p>Microsoft® Windows® オペレーティングシステムでは、Acrobat および Adobe Reader は、PDF コンテンツを Component Object Model (COM) オブジェクトとしてエクスポートする。
        	スクリーンリーダーなどのアクセシビリティアプリケーションは、Acrobat または Adobe Reader とのインターフェイスを次の 2 つの方法でとることができる。</p>
        <ul>
         <li>
-         <p>Acrobat または Adobe Reader でエクスポートされた MSAA オブジェクトを使用して、Microsoft Active Accessibility（MSAA）を通じてアクセスする。</p>
+         <p>Acrobat または Adobe Reader でエクスポートされた MSAA オブジェクトを使用して、Microsoft Active Accessibility (MSAA) を通じてアクセスする。</p>
         </li>
         <li>
-         <p>Document Object Model（DOM）と呼ばれる PDF 文書の内部構造を参照できる、エクスポートされた COM オブジェクトを通じて直接アクセスする。</p>
+         <p>Document Object Model (DOM) と呼ばれる PDF 文書の内部構造を参照できる、エクスポートされた COM オブジェクトを通じて直接アクセスする。</p>
         </li>
        </ul>
       </li>
       <li>
-       <p>UNIX® プラットフォームでは、Adobe Reader は Gnome アクセシビリティアーキテクチャをサポートしている。C ベースのアクセシビリティツールキット（ATK）インターフェイスを利用できる。</p>
+       <p>UNIX® プラットフォームでは、Adobe Reader は Gnome アクセシビリティアーキテクチャをサポートしている。C ベースのアクセシビリティツールキット (ATK) インターフェイスを利用できる。</p>
       </li>
      </ul>
      <p>DOM と MSAA の両モデルは関連しており、開発者はいずれかまたは両方を使用できる。Acrobat では、PDF ファイルウィンドウ内で発生する注目すべきイベントに関する通知が、アクセシビリティクライアントに対して発行される。
@@ -319,7 +319,7 @@
       </li>
       <li>
        <p>Linux®、Solaris™、AIX® および HP-UX バージョンの Adobe Reader では、C ベースの ATK インターフェイスが実装されているため、スクリーンリーダー、スクリーン拡大鏡、オンスクリーンキーボードを使用して、
-       	アクセシブルなアプリケーションについて Accessibility Technology - Service Providers Interface（AT-SPI）レジストリに対するクエリを行うことができる。</p>
+       	アクセシブルなアプリケーションについて Accessibility Technology - Service Providers Interface (AT-SPI) レジストリに対するクエリを行うことができる。</p>
       </li>
       <li>
        <p>DOM が拡張されたことで、カーソル、選択およびフォーカスのサポートが強化され、新しいインターフェイスである IPDDomDocument、ISelectTextおよびIPDDomNodeExt が提供されている。</p>
@@ -357,10 +357,10 @@
        <p>ZoomText 9.1 - Ai Squared が提供するスクリーン拡大鏡およびスクリーンリーダー。Adobe Acrobat および Reader がサポートされている。</p>
        <ul>
         <li>
-         <p>AppReader と DocReader の両方を使用することで PDF 文書の表示が可能（特別な設定は不要）</p>
+         <p>AppReader と DocReader の両方を使用することで PDF 文書の表示が可能 (特別な設定は不要)</p>
         </li>
         <li>
-         <p>すべての Windows オペレーティングシステムで PDF 文書の表示が可能（特別な設定は不要）</p>
+         <p>すべての Windows オペレーティングシステムで PDF 文書の表示が可能 (特別な設定は不要)</p>
         </li>
         <li>
          <p>AppReader および DocReader は Adobe Reader からすぐに起動可能</p>
@@ -369,7 +369,7 @@
          <p>PDF 文書を高い精度でページングの遅延なく表示可能</p>
         </li>
         <li>
-         <p>Internet Explorer で PDF 文書を表示可能（Adobe Reader プラグインを使用）</p>
+         <p>Internet Explorer で PDF 文書を表示可能 (Adobe Reader プラグインを使用)</p>
         </li>
         <li>
          <p>特別な Adobe Reader 設定がなくても表示の最適化が可能</p>
@@ -387,67 +387,67 @@
      <li>
       <p>
        <a href="http://help.adobe.com/en_US/acrobat/X/pro/using/WS58a04a822e3e50102bd615109794195ff-7ce6.w.html">Editing
-  					PDF Tags in Adobe Acrobat</a> （英語）
+  					PDF Tags in Adobe Acrobat</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://help.adobe.com/en_US/acrobat/X/pro/using/WS58a04a822e3e50102bd615109794195ff-7cff.w.html">Editing
-  					PDF Tags with the Touch Up Reading Order Tool</a> （英語）
+  					PDF Tags with the Touch Up Reading Order Tool</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/accessibility.html">Adobe
-  					Accessibility Resource Center</a> （英語）
+  					Accessibility Resource Center</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/accessibility/products/acrobat/training.html">Adobe
-  					Acrobat Accessibility Training Resources</a> （英語）
+  					Acrobat Accessibility Training Resources</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">Accessing
-  					PDF Documents with Assistive Technology</a> （英語）
+  					PDF Documents with Assistive Technology</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/devnet/pdf/pdf_reference.html">PDF
-  					Specification Archives</a> （英語）
+  					Specification Archives</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
-  					1.7 Reference: ISO approved copy of the ISO 32000-1</a> （英語）
+  					1.7 Reference: ISO approved copy of the ISO 32000-1</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/access_v9.pdf">PDF
   					Accessibility API Reference - How AT developers can use Acrobat MSAA
-  					and IPDDom interfaces to provide access to PDF content</a> （英語）
+  					and IPDDom interfaces to provide access to PDF content</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=54564">PDF/UA
-  					(ISO 14289-1:2012)</a> （英語）
+  					(ISO 14289-1:2012)</a> (英語)
       </p>
      </li>
      <li>
       <p>
        <a href="http://webaim.org/techniques/acrobat/">WebAIM
-  				PDF Accessibility</a> （英語）
+  				PDF Accessibility</a> (英語)
       </p>
      </li>
      <li>
       <p>
-       <a href="http://office.microsoft.com/en-us/excel-help/create-accessible-pdfs-HA102478227.aspx">Create accessible PDFs</a> using Microsoft Office 10  （英語）</p>
+       <a href="http://office.microsoft.com/en-us/excel-help/create-accessible-pdfs-HA102478227.aspx">Create accessible PDFs</a> using Microsoft Office 10 (英語)</p>
      </li>
     </ul>
    </div>

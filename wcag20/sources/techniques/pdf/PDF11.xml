@@ -21,7 +21,7 @@
   </ua-issues>
   <description>
     <p>この達成方法の目的は、キーボードおよび支援技術の利用者が認識できるように PDF 文書内のリンクテキストをマークアップする方法を示すことである。つまり、リンクが別の形式で表示されたときに認識可能であるように、リンク情報をプログラム的に利用可能にする。これは通常、PDF のオーサリングツールを使用して行う。</p>
-    <p>PDF 文書内のリンクは、そのサブツリー内のリンクタグおよびオブジェクトで表わされ、リンクオブジェクト参照（リンク注釈）と 1 つまたは複数のテキストオブジェクトで構成される。リンクタグ内のテキストオブジェクトまたはオブジェクトは、リンクの名前を提供するために支援技術で使用される。</p>
+    <p>PDF 文書内のリンクは、そのサブツリー内のリンクタグおよびオブジェクトで表わされ、リンクオブジェクト参照 (リンク注釈) と 1 つまたは複数のテキストオブジェクトで構成される。リンクタグ内のテキストオブジェクトまたはオブジェクトは、リンクの名前を提供するために支援技術で使用される。</p>
     <p>WCAG 達成基準に適合するリンクを提供する最も容易な方法は、PDF に変換する前の、文書をオーサリングする段階でリンクを作成することである。</p>
     <p>ただし、元のオーサリングツールを使用してリンクを作成することができない場合もある。そのような場合は、Adobe Acrobat Pro を使用してリンクを作成することができる。ただし、Adobe Acrobat Pro のリンクダイアログボックスを使用して作成したツールヒントは、スクリーンリーダーからアクセスできないため、そのリンクテキストまたはリンクの文脈で目的を明確にすること。</p>
     <p>いかなる場合でも、次の一般的なテクニックで説明されているように、リンクの目的を明確にする必要がある。</p>
@@ -38,15 +38,15 @@
       <eg-group>
       <head>PDF に変換する前に Microsoft Word 2007 でハイパーリンクを作成する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<p>Microsoft Word でハイパーリンクを作成するには、まずリンク先の項目（Web ページなど）を特定する。次に、以下の作業を行う。</p>
+<p>Microsoft Word でハイパーリンクを作成するには、まずリンク先の項目 (Web ページなど) を特定する。次に、以下の作業を行う。</p>
 <olist><item><p>次のいずれかの作業を行う</p>
-<ulist><item><p>リボン上にある「挿入」を選択し、リンクツールの「ハイパーリンク」を選択する/p&gt;</p></item><item><p>Ctrl + K キーボードショートカットを使用する</p></item></ulist></item><item><p>ハイパーリンクの挿入ダイアログボックスで、リンク先とリンクテキストを追加する</p></item><item><p>タグ付き PDF としてファイルを保存する（「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと）</p></item></olist>
+<ulist><item><p>リボン上にある「挿入」を選択し、リンクツールの「ハイパーリンク」を選択する/p&gt;</p></item><item><p>Ctrl + K キーボードショートカットを使用する</p></item></ulist></item><item><p>ハイパーリンクの挿入ダイアログボックスで、リンク先とリンクテキストを追加する</p></item><item><p>タグ付き PDF としてファイルを保存する (「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと)</p></item></olist>
 </description>
     </eg-group>
     <eg-group>
       <head>PDF に変換する前に OpenOffice.org Writer 2.2 でハイパーリンクを作成する</head>
       <description><p>この事例は OpenOffice.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-<olist><item><p>［挿入］メニューの［ハイパーリンク］を選択する</p></item><item><p>［ハイパーリンク］ダイアログボックスで、「ハイパーリンクの種類」の「ターゲット」フィールドにリンク先の URI を挿入する</p></item><item><p>「詳細設定」の「テキスト」フィールドにリンクテキストを挿入する（このダイアログボックスを表示する前に、文書のテキストからリンクテキストを選択することもできる。選択したテキストが「テキスト」フィールドに挿入される）</p></item><item><p>タグ付き PDF としてファイルを保存する（「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと）</p></item></olist>
+<olist><item><p>［挿入］メニューの［ハイパーリンク］を選択する</p></item><item><p>［ハイパーリンク］ダイアログボックスで、「ハイパーリンクの種類」の「ターゲット」フィールドにリンク先の URI を挿入する</p></item><item><p>「詳細設定」の「テキスト」フィールドにリンクテキストを挿入する (このダイアログボックスを表示する前に、文書のテキストからリンクテキストを選択することもできる。選択したテキストが「テキスト」フィールドに挿入される)</p></item><item><p>タグ付き PDF としてファイルを保存する (「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html">PDF テクノロジーノート</loc>」を参照のこと)</p></item></olist>
 </description>
     </eg-group>
     <eg-group>
@@ -56,7 +56,7 @@
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink1.jpg" height="467" width="424"/><alt>スクリーンショット：ハイパーリンクを作成するためにテキストが選択されている PDF 文書。コンテキストメニューで［リンクの作成］が選択されている。</alt></image></p><p>3. リンクの作成ダイアログボックスの指示に従い、以下に示されているように、リンクの外観を指定する</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink2.jpg" height="406" width="509"/><alt>スクリーンショット：リンクの作成ダイアログボックスが開き、「リンクの外観」のオプションが選択されている PDF 文書。</alt></image></p><p>「次へ」を選択し、URI を指定する。次の画像は、結果として表示されるハイパーリンクとツールヒントを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink3.jpg" height="216" width="460"/><alt>スクリーンショット：リンクの作成ダイアログボックスを使用して作成されたハイパーリンクがあり、マウスオーバーによりツールヒントが表示されている PDF 文書。</alt></image></p>
-<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/links.pdf"><!-- linktype="examples"-->PDF でハイパーリンクを作成したサンプル（PDF ファイル）</loc>がある。</p>
+<p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/links.pdf"><!-- linktype="examples"-->PDF でハイパーリンクを作成したサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -71,7 +71,7 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
 <p>次のコードフラグメントは、アンダーラインの付いた青色で表示されるリンクテキストを使用する、上述の HTML に相当する PDF を示している。次に続く 2 番目のコードフラグメントは、関連付けられた論理構造階層を示している。これは通常、オーサリングツールを使用して行う。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
-/P &lt;&lt;/MCID 0&gt;&gt;                                                % マークされたコンテンツ順序 0（段落）
+/P &lt;&lt;/MCID 0&gt;&gt;                                                % マークされたコンテンツ順序 0 (段落)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     /F1 11.04 Tf                                               % テキストのフォントおよびサイズの設定
@@ -82,7 +82,7 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
    ET                                                          % テキストオブジェクトの終わり
   EMC                                                          % マークされたコンテンツ順序の終わり
  
- /Span &lt;&lt;/MCID 1&gt;&gt;                                             % マークされたコンテンツ順序 1（下線付きのリンクテキスト）
+ /Span &lt;&lt;/MCID 1&gt;&gt;                                             % マークされたコンテンツ順序 1 (下線付きのリンクテキスト)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     1 0 0 1 152.42 709.54 Tm                                   % テキストマトリクスの設定
@@ -95,7 +95,7 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
     f*                                                         % 偶数奇数ルールを使用してパスを塗りつぶす
   EMC                                                          % マークされたコンテンツ順序の終わり
  
- /P &lt;&lt;/MCID 2&gt;&gt;                                                % マークされたコンテンツ順序 2（段落）
+ /P &lt;&lt;/MCID 2&gt;&gt;                                                % マークされたコンテンツ順序 2 (段落)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     1 0 0 1 198.41 709.54 Tm                                   % テキストマトリクスの設定                                             
@@ -177,10 +177,10 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
       <p>各ハイパーリンクについて、リンクが正しくタグ付けされており、リンクテキストが適切に表示されることを確認する。</p>
       <olist>
         <item>
-          <p>PDF 文書をスクリーンリーダーで読み上げると、リンクが正しく読み上げられ、リンクの目的（例えば、リンク先）が説明されている</p>
+          <p>PDF 文書をスクリーンリーダーで読み上げると、リンクが正しく読み上げられ、リンクの目的 (例えば、リンク先) が説明されている</p>
         </item>
         <item>
-          <p>タグツリーを視覚的にスキャンすると、リンクが正しくタグ付けされ、（スクリーン拡大鏡の利用者と、認知障害があるが視力のある利用者向けに）リンクテキストが表示される</p>
+          <p>タグツリーを視覚的にスキャンすると、リンクが正しくタグ付けされ、(スクリーン拡大鏡の利用者と、認知障害があるが視力のある利用者向けに) リンクテキストが表示される</p>
         </item>
         <item>
           <p>/Link エントリ値を表示できるツールを使用して PDF 文書を開き、ハイパーリンクとリンクテキストを表示する</p>

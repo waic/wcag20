@@ -15,7 +15,7 @@
     </ua-issue>
   </ua-issues>
   <description>
-    <p>この達成方法の目的は、利用者が長い文書でしおり（アウトライン辞書のアウトラインエントリ）を使用してコンテンツを見つけられるようにすることである。</p>
+    <p>この達成方法の目的は、利用者が長い文書でしおり (アウトライン辞書のアウトラインエントリ) を使用してコンテンツを見つけられるようにすることである。</p>
     <p>認知障害のある利用者は、多数のページを読み進めるよりも、文書の概要を提供する階層的なアウトラインを好む場合がある。また、これは文書内を移動する方法として一般的なものであり、どのような利用者にとっても役立つものである。</p>
   </description>
    <examples>
@@ -23,12 +23,12 @@
       <head>Microsoft Word 2007 で作成した目次を変換し、Adobe Reader 9 および Acrobat 9 Pro のしおりを作成する</head>
       <description><p>この事例は Microsoft Word と Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>Word 文書の最初に目次を作成する。</p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/word-toc.jpg" height="150" width="363"/><alt>Wordリボンの［参考資料］タブの［目次］ツール</alt></image></p></item><item><p>名前を付けて保存 > PDF（*.pdf） を選択し、次の両方の項目を有効にして Word 文書を PDF に変換する。</p>&#13;
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/word-toc.jpg" height="150" width="363"/><alt>Wordリボンの［参考資料］タブの［目次］ツール</alt></image></p></item><item><p>名前を付けて保存 > PDF (*.pdf) を選択し、次の両方の項目を有効にして Word 文書を PDF に変換する。</p>&#13;
 <ulist><item><p>タグ付き Adobe PDF でアクセシビリティと折り返しを有効にする</p></item><item><p>Word の見出しをしおりに変換</p></item></ulist></item></olist><p>変換された文書の目次エントリは、文書内の見出しにリンクされる。</p>
 <p>さらに、左側のナビゲーションウィンドウに、見出しが PDF のしおりとして表示される。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.jpg" height="249" width="937"/><alt>スクリーンショット：Word文書の見出しから生成された目次としおりを表示しているPDF文書</alt></image></p><p>文書に用語集やインデックスが含まれている場合、これらのセクションの見出しが目次に（またナビゲーションウィンドウのしおりとして）表示される。また、目次は、しおりも付けられるようにするために、見出しによってマークアップされなければならない。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.jpg" height="249" width="937"/><alt>スクリーンショット：Word文書の見出しから生成された目次としおりを表示しているPDF文書</alt></image></p><p>文書に用語集やインデックスが含まれている場合、これらのセクションの見出しが目次に (またナビゲーションウィンドウのしおりとして) 表示される。また、目次は、しおりも付けられるようにするために、見出しによってマークアップされなければならない。</p>
 <p>このマークアップがオーサリングツールによって行われていない場合は、Adobe Acrobat Pro を使用してタグを設定することができる。変換された見出しを変更する方法または新しい見出しを追加する方法については、<specref ref="PDF9"/>を参照のこと。</p>
-<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" ref="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.docx"><!--linktype="examples"-->working example of creating bookmarks with Word 2007</loc>でしおりを作成するサンプル（Wordファイル）がある。</p>
+<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" ref="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.docx"><!--linktype="examples"-->working example of creating bookmarks with Word 2007</loc>でしおりを作成するサンプル (Wordファイル) がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -37,7 +37,7 @@
 <olist><item><p>OpenOffice.org Writer 文書の最初に目次を作成する。</p>
 <ulist><item><p>挿入 > 目次と索引 > 目次と索引 > 目次と索引の挿入</p></item></ulist></item><item><p>ファイル > PDF としてエクスポートを選択し、Options ダイアログボックスでタグ付き PDF を選択して、文書を PDF に変換する。</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/oo-toc.jpg" height="583" width="944"/><alt>スクリーンショット：OpenOffice.org Writerの［目次と索引の挿入］ダイアログ</alt></image></p><p>変換された文書の目次エントリは、文書内の見出しにリンクされ、左側のナビゲーションウィンドウに PDF のしおりとして表示される。OpenOffice.org の目次としおりは、事例 1 と同様に表示される。</p>
-<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.odt"><!--linktype="examples"-->working example of creating bookmarks with OpenOffice Writerでしおりを生成するサンプル（Open Document Textファイル）</loc>がある。</p>
+<p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.odt"><!--linktype="examples"-->working example of creating bookmarks with OpenOffice Writerでしおりを生成するサンプル (Open Document Textファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>
@@ -48,7 +48,7 @@
 <p>次の画像は、しおりオプションメニューを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmark1.jpg" height="521" width="358"/><alt>スクリーンショット：［しおり］のオプションメニュー</alt></image></p><p>次の画像は、しおりを付けるために文書内のリンクを選択するようすを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmark2.jpg" height="369" width="506"/><alt>スクリーンショット：「リンク」を選択して、しおり作成に用いられるタグ付けされた要素</alt></image></p><p>タグ付きしおりは、タイトルのない新規しおりの下にネストされている。新規しおりのコンテキストメニューから「名前を変更」オプションを選択して、次の画像に示すように新規しおりの名前を変更する。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/link-bookmark.jpg" height="309" width="943"/><alt>スクリーンショット：文書中のリンクに対するしおり</alt></image></p><p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.pdf"><!--linktype="examples"-->working example of creating bookmarks with Acrobat Proで作成したしおりのサンプル（PDFファイル）</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/link-bookmark.jpg" height="309" width="943"/><alt>スクリーンショット：文書中のリンクに対するしおり</alt></image></p><p>この事例には、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF2/bookmarks.pdf"><!--linktype="examples"-->working example of creating bookmarks with Acrobat Proで作成したしおりのサンプル (PDFファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>

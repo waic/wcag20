@@ -10,19 +10,19 @@
       <success-criterion idref="ensure-compat-parses" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、支援技術がコンテンツを解析するときに生じるエラーを避けることである。well-formedについては、文書をXMLパーサーを用いてチェックし、バリデーションレポートがwell-formedに関するエラーを含んでいるかどうかで確認できる。すべてのXMLパーサーには、well-formedをチェックし、well-formedに関するエラーが見つかったときは、通常の処理を停止することが要求される（XMLパーサーは、バリデーションをサポートしていなくてもよい）。</p>
+    <p>この達成方法の目的は、支援技術がコンテンツを解析するときに生じるエラーを避けることである。well-formedについては、文書をXMLパーサーを用いてチェックし、バリデーションレポートがwell-formedに関するエラーを含んでいるかどうかで確認できる。すべてのXMLパーサーには、well-formedをチェックし、well-formedに関するエラーが見つかったときは、通常の処理を停止することが要求される (XMLパーサーは、バリデーションをサポートしていなくてもよい)。</p>
   </description>
    <examples>
      <eg-group>
-      <description><p>XMLファイルは、文書タイプ宣言、a xsi:schemaLocation属性あるいは他のタイプのスキーマへのリファレンスを含む。コンテンツ開発者は、オンラインあるいはオフラインのバリデーター、XMLエディタもしくはXMLサポートのあるIDE（下記参考リソースを参照）を用いて、well-formedであることをチェックできる。</p>
+      <description><p>XMLファイルは、文書タイプ宣言、a xsi:schemaLocation属性あるいは他のタイプのスキーマへのリファレンスを含む。コンテンツ開発者は、オンラインあるいはオフラインのバリデーター、XMLエディタもしくはXMLサポートのあるIDE (下記参考リソースを参照) を用いて、well-formedであることをチェックできる。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性又はスキーマがあるのにスキーマ参照のインストラクションのない処理を含まないとき、関連するスキーマがコマンドラインの指示、ユーザダイアログあるいは（構成）コンフィグレーションファイルで指定されている。そして、XMLファイルがスキーマに対してチェックされている。</p>
+      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性又はスキーマがあるのにスキーマ参照のインストラクションのない処理を含まないとき、関連するスキーマがコマンドラインの指示、ユーザダイアログあるいは (構成) コンフィグレーションファイルで指定されている。そして、XMLファイルがスキーマに対してチェックされている。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性あるいはスキーマがあるのにスキーマ参照のインストラクションのない処理を 含まないとき、名前空間がスキーマ文書又は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rddl.org/">RDDL（Resource Directory Description Language ）</loc>を読み出すのに参照されておらず、そしてXMLファイルがスキーマに対してチェックされている。</p>
+      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性あるいはスキーマがあるのにスキーマ参照のインストラクションのない処理を 含まないとき、名前空間がスキーマ文書又は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rddl.org/">RDDL (Resource Directory Description Language)</loc> を読み出すのに参照されておらず、そしてXMLファイルがスキーマに対してチェックされている。</p>
 </description>
     </eg-group>
     <eg-group>

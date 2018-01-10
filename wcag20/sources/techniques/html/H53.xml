@@ -4,7 +4,7 @@
 <technique id="H53"><!--MC to update wiki and review output-->
    <short-name><el>object</el> 要素のボディを使用する</short-name>
    <applicability>
-      <p>メディアを読み込む<el>object</el>要素（HTML及びXHTML）</p>
+      <p>メディアを読み込む<el>object</el>要素 (HTML及びXHTML)</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>

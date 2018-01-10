@@ -33,7 +33,7 @@ function hide()
 	document.getElementById("blink1").style.visibility = "hidden";
 }
 // 点滅効果を出すために「on」と「off」の状態を450ミリ秒ごとに切り替え
-// 4500ミリ秒後に終了（5秒未満）
+// 4500ミリ秒後に終了 (5秒未満)
 for(var i=900; i < 4500; i=i+900)
 {
 	setTimeout("hide()",i);

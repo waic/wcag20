@@ -92,9 +92,9 @@
          <description>
             <p>テキスト入力欄があり、タイムアウトが発生する前に、利用者がデフォルトの時間を延長することを可能にしている。</p>
             <p>文字列"Extend time-out to"は、ネイティブの<el>label</el>要素に含まれており、<code><![CDATA[id="timeout-duration"]]></code>により入力に関連付けられる。このラベルは、ARIAをサポートしないユーザエージェント上においてのみ、for/id関連付けを使用してこの入力に関連付けられる。ARIAをサポートするユーザエージェント上では、for/id関連付けは無視され、入力用のラベルは、HTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc>に従って、<att>aria-labelledby</att>のみによって提供される。</p>
-            <p>テキスト入力上の<att>aria-labelledby</att>属性は、3つの要素を参照する: (1) ネイティブのラベルを含む<el>span</el>、(2) デフォルトテキスト'20'を含むテキスト入力（この入力が、ラベルテキストに関連するfor/idでラベル付けされないことを思い起こすこと）、(3) <el>span</el>に含まれる文字列'minutes'。これらの要素は、テキスト入力に対する完全なラベルを提供するために連結されるべきである。</p>
+            <p>テキスト入力上の<att>aria-labelledby</att>属性は、3つの要素を参照する: (1) ネイティブのラベルを含む<el>span</el>、(2) デフォルトテキスト'20'を含むテキスト入力 (この入力が、ラベルテキストに関連するfor/idでラベル付けされないことを思い起こすこと)、(3) <el>span</el>に含まれる文字列'minutes'。これらの要素は、テキスト入力に対する完全なラベルを提供するために連結されるべきである。</p>
             <note>
-            <p><el>span</el>要素上の<code><![CDATA[tabindex="-1"]]></code>の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ（IE9、IE10）がアクセシビリティツリーに<el>span</el>要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att>による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc>を参照。</p>
+            <p><el>span</el>要素上の<code><![CDATA[tabindex="-1"]]></code>の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ (IE9、IE10) がアクセシビリティツリーに<el>span</el>要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att>による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc>を参照。</p>
             </note>
             <codeblock xml:space="preserve"><![CDATA[<form>
 <p><span id="timeout-label" tabindex="-1"><label for="timeout-duration">Extend time-out to</label></span>
@@ -134,8 +134,8 @@
       <eg-group>
          <head>会議ワークショップ予約テーブル</head>
          <description>
-            <p>2つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック（1又は2）、タイトル、及び隣接するチェックボックスのラベル"Attend"に続くワークショップのスピーカーは、<att>aria-labelledby</att>を介してチェックボックスに対する連結ラベルとして提供される。</p>
-            <p>一部のブラウザ/スクリーンリーダーの組み合わせ（たとえばMozilla FirefoxとNVDA）は、さらに関連するテーブルセルのヘッダーを伝える。</p>
+            <p>2つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック (1又は2)、タイトル、及び隣接するチェックボックスのラベル"Attend"に続くワークショップのスピーカーは、<att>aria-labelledby</att>を介してチェックボックスに対する連結ラベルとして提供される。</p>
+            <p>一部のブラウザ/スクリーンリーダーの組み合わせ (たとえばMozilla FirefoxとNVDA) は、さらに関連するテーブルセルのヘッダーを伝える。</p>
             <codeblock xml:space="preserve"><![CDATA[<h1>Dinosaur Conference workshops timetable Thursday, 14.  & Friday, 15. March 2013</h1>
 <table>
 <caption>Dinosaur Conference workshop booking table</caption>

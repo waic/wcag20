@@ -12,7 +12,7 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、イベントと関連付けられたスクリプト機能を含むコードを伴った、キーボード固有及びマウス固有のイベント双方の使用を明示することである。キーボード固有及びマウス固有のイベントを一緒に用いることにより、さまざまな種類の機器でコンテンツを操作できることを保証することができる。例えば、スクリプトがkeypressを認識したときに、マウスボタンをクリックしたときと同じ動作を行うことができるようにする。このテクニックにより、キーボードによるアクセスだけでなく他の機器によるアクセスの達成基準を満たすことができる。</p>
-    <p>JavaScriptでよく使用されるイベント・ハンドラには、onblur、onchange、onclick、ondblclick、onfocus、onkeydown、onkeypress、onkeyup、onload、onmousedown、onmousemove、onmouseout、onmouseover、onmouseup、onreset、onselect、onsubmit、onunloadが含まれる。いくつかのマウス固有の機能には、論理的に対応するキーボード固有の機能がある（例えば'onmouseover'と'onfocus'のように）。キーボード向けのイベント・ハンドラは、対応するマウス向けの機能とともに提供すべきである。</p>
+    <p>JavaScriptでよく使用されるイベント・ハンドラには、onblur、onchange、onclick、ondblclick、onfocus、onkeydown、onkeypress、onkeyup、onload、onmousedown、onmousemove、onmouseout、onmouseover、onmouseup、onreset、onselect、onsubmit、onunloadが含まれる。いくつかのマウス固有の機能には、論理的に対応するキーボード固有の機能がある (例えば'onmouseover'と'onfocus'のように)。キーボード向けのイベント・ハンドラは、対応するマウス向けの機能とともに提供すべきである。</p>
     <p>次の表は、マウスイベント・ハンドラに対応するキーボードイベント・ハンドラの候補である。</p>
     <table border="1" cellspacing="0">
 <caption>
@@ -57,9 +57,9 @@
 						</tr>
 </tbody>
 </table>
-    <p><sup>1</sup> <code>click</code>は基本的にはマウスのイベント・ハンドラであるが、ほとんどの HTML 及び XHTML 向けのユーザエージェントは、HTML のネイティブコントロール（例: ボタン又はリンク）が有効化された場合、マウス又はキーボードのどちらで有効化されたかにかかわらず、イベントを処理することができる。そのため、もともとフォーカスできる HTML 要素にハンドラを追加するときは、実際にはキーボード用のイベントを補完する必要はない。しかし、下記の事例 2 のように他のイベントにハンドラを追加するときは、必要である。</p>
+    <p><sup>1</sup> <code>click</code>は基本的にはマウスのイベント・ハンドラであるが、ほとんどの HTML 及び XHTML 向けのユーザエージェントは、HTML のネイティブコントロール (例: ボタン又はリンク) が有効化された場合、マウス又はキーボードのどちらで有効化されたかにかかわらず、イベントを処理することができる。そのため、もともとフォーカスできる HTML 要素にハンドラを追加するときは、実際にはキーボード用のイベントを補完する必要はない。しかし、下記の事例 2 のように他のイベントにハンドラを追加するときは、必要である。</p>
     <p><sup>2</sup> <code>keypress</code> イベント・ハンドラは、どのキーに対しても有効であることから、そのイベント・ハンドラ関数では、イベントを処理する前に、Enterキーが押されたかどうかをチェックすべきである。そうでなければ、イベント・ハンドラは利用者が任意のキーを押すたびに実行され、コントロールから抜けるために Tab キーを押すような場合にも実行されるので、通常は望ましくない。</p>
-    <p>（<code>dblclick</code> 及び <code>mousemove</code> のような）いくつかのマウス固有の機能には、対応するキーボード固有の機能がない。つまり、いくつかの機能は機器別に違った実装をしなければならないということである（例えば、実装されているマウス固有の機能と同等の機能を、キーボードから実行するための一連のボタン操作を含むようにする）。</p>
+    <p>(<code>dblclick</code> 及び <code>mousemove</code> のような) いくつかのマウス固有の機能には、対応するキーボード固有の機能がない。つまり、いくつかの機能は機器別に違った実装をしなければならないということである (例えば、実装されているマウス固有の機能と同等の機能を、キーボードから実行するための一連のボタン操作を含むようにする)。</p>
   </description>
    <examples>
       <eg-group>
@@ -77,7 +77,7 @@ onmouseout="swapImageOff('menu')" onblur="swapImageOff('menu')"&gt;
       <code><![CDATA[
 &lt;img onclick="nextPage();" onkeypress="nextPage();" tabindex="0" src="arrow.gif" 
 alt="次のページへ移動"&gt;]]></code>
-      <description><note><p>この例では <el>img</el> 要素に tabindex を用いている。現時点では（文法的に）妥当ではないが、この機能を実装するための古典的なテクニックとして用いられている。このようなカスタム・コントロールでは、コントロールの役割（role）と状態（state）を支援技術に引き渡すために WAI-ARIA も用いるべきである。</p>
+      <description><note><p>この例では <el>img</el> 要素に tabindex を用いている。現時点では (文法的に) 妥当ではないが、この機能を実装するための古典的なテクニックとして用いられている。このようなカスタム・コントロールでは、コントロールの役割 (role) と状態 (state) を支援技術に引き渡すために WAI-ARIA も用いるべきである。</p>
 				</note>
 </description>
     </eg-group>

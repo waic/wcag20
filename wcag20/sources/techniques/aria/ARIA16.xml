@@ -83,7 +83,7 @@
   <option value="2">2</option>
 </select>
 <span id="l2" tabindex="-1">days in advance</span>]]></codeblock>
-            <p>注: <el>label</el>要素を使うことには多くの理由がある。利用者が<el>label</el>要素のテキストをクリックすれば、対応するフォームフィールドがフォーカスを受け取るため、器用さの問題を持つ人に対してクリックターゲットを大きくすることができる。また、<el>label</el>要素は常にアクセシビリティAPIを介して公開される。<el>span</el>が使われるかもしれない（ただしその場合、spanがInternet ExplorerのすべてのバージョンでアクセシビリティAPIを介して公開されるように、spanは<code><![CDATA[tabindex="-1"]]></code>を与えるべきである）。しかし、<el>span</el>では、クリック可能な領域が大きくなるという利点が失われることになるだろう。</p>
+            <p>注: <el>label</el>要素を使うことには多くの理由がある。利用者が<el>label</el>要素のテキストをクリックすれば、対応するフォームフィールドがフォーカスを受け取るため、器用さの問題を持つ人に対してクリックターゲットを大きくすることができる。また、<el>label</el>要素は常にアクセシビリティAPIを介して公開される。<el>span</el>が使われるかもしれない (ただしその場合、spanがInternet ExplorerのすべてのバージョンでアクセシビリティAPIを介して公開されるように、spanは<code><![CDATA[tabindex="-1"]]></code>を与えるべきである)。しかし、<el>span</el>では、クリック可能な領域が大きくなるという利点が失われることになるだろう。</p>
          </description>
       </eg-group>
    </examples>

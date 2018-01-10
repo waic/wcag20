@@ -22,7 +22,7 @@
         <p><code><![CDATA[background-image]]></code>, </p>
       </item>
       <item>
-        <p><code><![CDATA[content]]></code>（<code><![CDATA[:before]]> </code> 又は <code><![CDATA[:after]]></code> 疑似要素と組み合わせて使用）</p>
+        <p><code><![CDATA[content]]></code> (<code><![CDATA[:before]]> </code> 又は <code><![CDATA[:after]]></code> 疑似要素と組み合わせて使用)</p>
       </item>
       <item>
         <p><code><![CDATA[list-style-image]]></code>. </p>

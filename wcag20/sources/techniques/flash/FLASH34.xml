@@ -13,19 +13,19 @@
       <ua-issue use-id="flash.ua-issue.general"/>
    </ua-issues>
    <description>
-      <p>この実装方法の目的は、Flash ムービーがロードされたときに音声が再生されないようにすることである。これは、スクリーンリーダー、スクリーン拡大鏡、スイッチメカニズムなどの支援技術の利用者や支援技術を使用しない利用者（認知障害、学習障害、言語障害を持つ人々）に役立つ。デフォルトでは、音声は自動的に再生される。ただし、JAWS などのスクリーンリーダーが検出された場合は、音声は手動で開始される必要がある。</p>
+      <p>この実装方法の目的は、Flash ムービーがロードされたときに音声が再生されないようにすることである。これは、スクリーンリーダー、スクリーン拡大鏡、スイッチメカニズムなどの支援技術の利用者や支援技術を使用しない利用者 (認知障害、学習障害、言語障害を持つ人々) に役立つ。デフォルトでは、音声は自動的に再生される。ただし、JAWS などのスクリーンリーダーが検出された場合は、音声は手動で開始される必要がある。</p>
       <p>Flash は、スクリーンリーダーを検出するための <prop>flash.accessibility.Accessibility.active</prop> プロパティを提供している。このプロパティが <propval>true</propval> に設定されている場合は、支援技術が実行されていることを Flash Player が検出したことを意味する。このフラグに基づいて、Flash のコンテンツ制作者は別の機能を実行するように選択できる。</p>
       <note>
          <p>Flash Player が、実行されている支援技術を検出し、<prop>Accessibility.active</prop> プロパティを設定するまでには多少時間がかかる。したがって、正確な結果を得るためには、ムービーの最初のフレームですぐにこのプロパティをチェックしてはならない。5 フレーム後、またはタイムイベントを使用してチェックを行うようにする。</p>
          <p>このメカニズムでは検出されないスクリーンリーダーも存在する。一般的に、このプロパティが true に設定されるのは、<abbr expansion="Microsoft Active Accessibility">MSAA</abbr> クライアントが実行されている場合である。</p>
-         <p>注記 3: 他の支援技術ツール（スクリーン拡大鏡など）、または支援技術としては使用されないツールの中にも MSAA を利用するものがあり、その結果として <prop>Accessibility.active</prop> が <propval>true</propval> に設定される場合がある。</p>
+         <p>注記 3: 他の支援技術ツール (スクリーン拡大鏡など)、または支援技術としては使用されないツールの中にも MSAA を利用するものがあり、その結果として <prop>Accessibility.active</prop> が <propval>true</propval> に設定される場合がある。</p>
       </note>
    </description>
    <examples>
       <eg-group>
          <head>SoundHandler クラス</head>
          <description>
-            <p><prop>Accessibility.active</prop> が <propval>false</propval> に設定されている場合のみ自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。この事例では <prop>flash.system.Capabilities.hasAccessibility</prop> プロパティもチェックしていることに注意する。このプロパティはスクリーンリーダーが実行されているかどうかをチェックするものではなく、Flash Player が MSAA （基本的には Windows オペレーティングシステムを意味する）をサポートする環境で実行されているかどうかを示すものである。</p>
+            <p><prop>Accessibility.active</prop> が <propval>false</propval> に設定されている場合のみ自動的に mp3 ファイルの再生を開始する、SoundHandler というクラスが作成される。この事例では <prop>flash.system.Capabilities.hasAccessibility</prop> プロパティもチェックしていることに注意する。このプロパティはスクリーンリーダーが実行されているかどうかをチェックするものではなく、Flash Player が MSAA (基本的には Windows オペレーティングシステムを意味する) をサポートする環境で実行されているかどうかを示すものである。</p>
          </description>
          <code xml:space="preserve"><![CDATA[package wcagSamples {
   import flash.accessibility.Accessibility;
@@ -82,9 +82,9 @@
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.html"><!--
-                    linktype="examples"-->SoundHandler クラスのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->SoundHandler クラスのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH34/screen_reader_detection_to_prevent_autoplay_as3.fla"><!--
-                    linktype="examples"-->SoundHandler クラスのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->SoundHandler クラスのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>

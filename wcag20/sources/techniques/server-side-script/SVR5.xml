@@ -4,7 +4,7 @@
 <technique id="SVR5">
    <short-name>HTTP ヘッダーで主たる自然言語を指定する</short-name>
    <applicability>
-      <p>サーバサイド技術（HTTPヘッダーを設定するサーバサイドのスクリプト言語及びサーバ設定ファイルを含む）</p>
+      <p>サーバサイド技術 (HTTPヘッダーを設定するサーバサイドのスクリプト言語及びサーバ設定ファイルを含む)</p>
    </applicability>
    <applies-to>
       <success-criterion idref="meaning-doc-lang-id" relationship="sufficient"/>
@@ -18,7 +18,7 @@
    <examples>
       <eg-group>
       <head>Javaサーブレット及び JSP によるコンテンツの自然言語設定</head>
-      <description><p>Java サーブレット又は JavaServer Pages (JSP) では、開発者は response.setHeader("Content-Language", lang)を用いることが可能で、"lang" は言語タグを表す（例えば、英語なら "en" ）：</p>
+      <description><p>Java サーブレット又は JavaServer Pages (JSP) では、開発者は response.setHeader("Content-Language", lang)を用いることが可能で、"lang" は言語タグを表す (例えば、英語なら "en")：</p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)

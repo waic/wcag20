@@ -75,7 +75,7 @@ _root.decorative_mc._accProps.silent = true; ]]></code>
                <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
+               <p>Internet Explorer 6 以降 (Flash Player 6 以降を使用)、または Firefox 3 以降 (Flash Player 9 以降を使用) で SWF ファイルを開く。</p>
             </item>
             <item>
                <p>オブジェクトのアクセシビリティ情報を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>

@@ -18,7 +18,7 @@
    </description>
    <examples>
       <eg-group>
-         <head>シンボル（グラフィック、ボタン、ムービークリップ）に説明を適用する</head>
+         <head>シンボル (グラフィック、ボタン、ムービークリップ) に説明を適用する</head>
          <description>
             <p>Flash Professional のオーサリングツールのアクセシビリティパネルを使用すると、コンテンツ制作者は、支援技術にアクセシビリティ情報を提供したり、Flash の個々のオブジェクトや Flash アプリケーション全体に対してアクセシビリティ関連オプションを設定できる。</p>
             <olist>
@@ -117,7 +117,7 @@ chart_mc.accessibilityProperties.description = "10月の売上実績を示す棒
                <p>SWF ファイルを発行する。</p>
             </item>
             <item>
-               <p>Internet Explorer 6 以降（Flash Player 6 以降を使用）、または Firefox 3 以降（Flash Player 9 以降を使用）で SWF ファイルを開く。</p>
+               <p>Internet Explorer 6 以降 (Flash Player 6 以降を使用)、または Firefox 3 以降 (Flash Player 9 以降を使用) で SWF ファイルを開く。</p>
             </item>
             <item>
                <p>オブジェクトの長い説明を表示できる ACTF aDesigner 1.0 などのツールを使用して Flash ムービーを開く。</p>

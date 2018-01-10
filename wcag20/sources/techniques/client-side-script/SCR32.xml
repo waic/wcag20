@@ -77,7 +77,7 @@
                       class="string" value=""/>
                 </p>
                 <p>
-                    <label for="optemail">貴方のメールアドレスを入力してください（任意）</label>
+                    <label for="optemail">貴方のメールアドレスを入力してください (任意)</label>
                     <input type="text" size="20" name="optemail" id="optemail"
                         class="optional email" value=""/>
                 </p>
@@ -87,7 +87,7 @@
                       class="number" value=""/>
                 </p>
                 <p>
-                    <label for="jibberish">合言葉を入力してください（任意）</label>
+                    <label for="jibberish">合言葉を入力してください (任意)</label>
                     <input type="text" size="20" name="jibberish" id="jibberish" value=""/>
                 </p>
 

@@ -28,7 +28,7 @@
     </eg-group>
     <eg-group>
       <description><p>
-クラスを指定した要素の行の高さを1.5（行送り1.5文字）に設定。スタイルシートでクラスの表示を定義。</p>
+クラスを指定した要素の行の高さを1.5 (行送り1.5文字) に設定。スタイルシートでクラスの表示を定義。</p>
 </description>
       <code><![CDATA[p.tall {line-height:150%}]]></code>
       <description>

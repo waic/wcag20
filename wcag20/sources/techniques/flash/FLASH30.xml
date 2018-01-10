@@ -40,9 +40,9 @@ function onClickHandler(e: MouseEvent): void {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/Text_description_for_simpleimage_buttons_as3.html"><!--
-                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/Text_description_for_simpleimage_buttons_as3.fla"><!--
-                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->シンプルな画像ボタンにアクセシブルな名前を設定するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
       <eg-group>
@@ -79,9 +79,9 @@ function updateAccName(obj, newName: String) {
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/text_description_for_image_buttons_as3.html"><!--
-                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのサンプル（英語）</loc>で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH30/text_description_for_image_buttons_as3.fla"><!--
-                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのソース（英語）</loc>をダウンロードすることもできる。</p>
+                    linktype="examples"-->動的な画像ボタンにアクセシブルな名前を設定するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -96,7 +96,7 @@ function updateAccName(obj, newName: String) {
                <p>ボタンのアクションを説明したアクセシブルな名前がボタンに設定されている。</p>
             </item>
             <item>
-               <p>ボタンのアクションが変更された場合（クリックされた場合など）は、それに応じてアクセシブルな名前も変更される。</p>
+               <p>ボタンのアクションが変更された場合 (クリックされた場合など) は、それに応じてアクセシブルな名前も変更される。</p>
             </item>
          </olist>
       </procedure>
