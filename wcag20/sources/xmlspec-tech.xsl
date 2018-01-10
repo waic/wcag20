@@ -700,7 +700,7 @@
 				達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$id"/></xsl:call-template>)</a> 
 			<ul>
 				<li>
-				    <a href="http://waic.jp/docs/WCAG20/quickref/#{$id}">
+				    <a href="https://waic.jp/docs/WCAG20/quickref/#{$id}">
 						クイックリファレンス <xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> (<xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="$id"/></xsl:call-template>)
 					</a>
 				</li>

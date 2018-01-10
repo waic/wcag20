@@ -26,7 +26,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc>には、ドキュメントの区分と小区分へのリンクの階層的なリストである<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://waic.jp/docs/WCAG20/Overview.html#contents">目次</loc>がある。目次の階層構造は区分の構成を反映し、目次の各項目は、利用者をその区分に直接連れて行くリンクである。</p>
+      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc>には、ドキュメントの区分と小区分へのリンクの階層的なリストである<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html#contents">目次</loc>がある。目次の階層構造は区分の構成を反映し、目次の各項目は、利用者をその区分に直接連れて行くリンクである。</p>
 </description>
     </eg-group>
     <eg-group>
