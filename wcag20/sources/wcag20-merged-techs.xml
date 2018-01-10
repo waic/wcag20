@@ -5,7 +5,7 @@
 <spec status="final" w3c-doctype="wgnote" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<header>
 <trdisclaimer>
-<p>【注意】 この文書は、W3C ワーキンググループノート <loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</loc>を、<loc href="http://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</loc> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="http://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
+<p>【注意】 この文書は、W3C ワーキンググループノート <loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</loc>を、<loc href="https://waic.jp/">ウェブアクセシビリティ基盤委員会 (WAIC)</loc> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
 <p>【重要】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </trdisclaimer>
 		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 達成方法集</title>
@@ -19,7 +19,7 @@
 		</pubdate>
 		<publoc>
 			<!-- <loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/</loc> -->
-			<loc href="http://waic.jp/docs/WCAG-TECHS/">http://waic.jp/docs/WCAG-TECHS/</loc>
+			<loc href="https://waic.jp/docs/WCAG-TECHS/">https://waic.jp/docs/WCAG-TECHS/</loc>
 		</publoc>
 		<publocori>
 			<loc href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/</loc>
@@ -77,7 +77,7 @@
 		</authlist>
 		<status>
 			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C technical reports index</loc> で参照可能である。</emph></p>
-			<p>これは、<phrase role="final">ワーキンググループノート</phrase>の WCAG 2.0 達成方法集 である。この達成方法集は、<loc href="http://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
+			<p>これは、<phrase role="final">ワーキンググループノート</phrase>の WCAG 2.0 達成方法集 である。この達成方法集は、<loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group</loc> によって作成されたものである。各達成方法は、<loc href="http://www.waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
 			<p>WCAG 2.0 達成方法集は、ワーキンググループノートとして 2008 年 12 月 11 日に公開されて以来、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新されてきた。この新しいバージョンは、WCAG 2.0 に対して提供されている参考情報を更新している。なお、WCAG 2.0 自体は変更されておらず、参考情報だけが更新されたことに留意していただきたい。主な変更点には、皆さんや翻訳者からの指摘に基づいた加筆修正である。このバージョンにおける変更点には、<loc href="G136" linktype="general">G136</loc>、<loc href="ARIA2" linktype="aria">ARIA2</loc>、<loc href="F68" linktype="failure">F68</loc>などが挙げられる。</p>
 			<p>変更箇所は、<loc href="https://www.w3.org/TR/WCAG20-TECHS/complete-diff">diff-marked version</loc> で強調されている。【訳注: 日本語訳の diff-marked version は用意されていない。】</p>
 

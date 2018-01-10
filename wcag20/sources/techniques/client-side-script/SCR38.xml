@@ -154,11 +154,11 @@ change.innerText = "こんにちは";
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa1">クッキーを使用する</loc></p>
+                       href="https://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa1">クッキーを使用する</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa2">プログレッシブ・エンハンスメントとアンオブトルーシブJavaScript</loc></p>
+                       href="https://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa2">プログレッシブ・エンハンスメントとアンオブトルーシブJavaScript</loc></p>
             </item>
          </ulist>
       </see-also>
