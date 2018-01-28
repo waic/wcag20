@@ -30,7 +30,7 @@
       <procedure>
       <olist>
         <item>
-          <p>3秒間以上の音声を再生するウェブページを読み込む。</p>
+          <p>3 秒間以上の音声を再生するウェブページを読み込む。</p>
         </item>
         <item>
           <p>音声が自動的に再生されない。</p>
@@ -43,7 +43,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>3.を満たしている。</p>
+               <p>3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

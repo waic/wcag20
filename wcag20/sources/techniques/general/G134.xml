@@ -15,18 +15,18 @@
   </description>
    <examples>
       <eg-group>
-      <head>HTMLのバリデーション</head>
-      <description><p>HTMLページに文書型宣言 (<code>!DOCTYPE</code> として記述されることが多い) があり、その文書型宣言で指定されたHTMLのバージョンに対して妥当 (Valid) である。コンテンツ制作者/開発者は、オフライン又はオンラインのバリデータ (下記「参考リソース」を参照) を使用して、このHTMLページの妥当性をチェックできる。</p>
+      <head>HTML のバリデーション</head>
+      <description><p>HTML ページに文書型宣言 (<code>!DOCTYPE</code> として記述されることが多い) があり、その文書型宣言で指定された HTML のバージョンに対して妥当 (Valid) である。コンテンツ制作者/開発者は、オフライン又はオンラインのバリデータ (下記「参考リソース」を参照) を使用して、この HTML ページの妥当性をチェックできる。</p>
 </description>
     </eg-group>
     <eg-group>
-      <head>XMLのバリデーション</head>
-      <description><p>XHTML、SVG、SMIL及びその他のXMLをベースしたドキュメントが、文書型定義 (DTD) 又はその他のタイプのXMLスキーマを参照している。コンテンツ制作者/開発者は、オンライン又はオフラインのバリデータ (エディタに内蔵されている検証ツールを含む) を使用して、このXMLドキュメントの妥当性をチェックできる。</p>
+      <head>XML のバリデーション</head>
+      <description><p>XHTML、SVG、SMIL 及びその他の XML をベースしたドキュメントが、文書型定義 (DTD) 又はその他のタイプの XML スキーマを参照している。コンテンツ制作者/開発者は、オンライン又はオフラインのバリデータ (エディタに内蔵されている検証ツールを含む) を使用して、この XML ドキュメントの妥当性をチェックできる。</p>
 </description>
     </eg-group>
     <eg-group>
-      <head>Antのバッチによるバリデーション</head>
-      <description><p>XMLファイルのバリデーションをバッチで行う際には Apache Antの <code>xmlvalidate</code> タスクを使用することができる。次のApache Antターゲットは、(Antのビルドファイルに相対する) ディレクトリ <code>dev\\Web</code> 内にある拡張子 <code>.xml</code> のファイルをバリデートするシンプルな例である。</p>
+      <head>Ant のバッチによるバリデーション</head>
+      <description><p>XML ファイルのバリデーションをバッチで行う際には Apache Ant の <code>xmlvalidate</code> タスクを使用することができる。次の Apache Ant ターゲットは、(Ant のビルドファイルに相対する) ディレクトリ <code>dev\\Web</code> 内にある拡張子 <code>.xml</code> のファイルをバリデートするシンプルな例である。</p>
 </description>
       <code><![CDATA[
    <target name="validate-xml"> 
@@ -63,7 +63,7 @@
                   checking HTML, CSS and XML.</p>
             </item>
          </ulist>
-         <p>HTML及びXHTMLのバリデーション</p>
+         <p>HTML 及び XHTML のバリデーション</p>
          <ulist>
             <item>
                <p>
@@ -336,7 +336,7 @@
    <related-techniques/>
    <tests>
       <procedure>
-      <p>HTML、SGMLベース及びXMLベースのウェブコンテンツ技術に対して：</p>
+      <p>HTML、SGML ベース及び XML ベースのウェブコンテンツ技術に対して：</p>
       <olist>
         <item>
           <p>それぞれのページ又はドキュメントをバリデーションを行うパーサーで読み込む。</p>
@@ -349,7 +349,7 @@
       <p>用いているウェブコンテンツ技術に対してバリデーションの手順が定められていれば、それに従う。</p>
     </procedure>
       <expected-results>
-         <p>HTML、SGMLベース、及びXMLベースのウェブコンテンツ技術に対して：</p>
+         <p>HTML、SGML ベース、及び XML ベースのウェブコンテンツ技術に対して：</p>
       <p>2. を満たしている。</p>
       </expected-results>
    </tests>

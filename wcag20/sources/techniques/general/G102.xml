@@ -47,7 +47,7 @@
    <examples>
       <eg-group>
       <head>ADA</head>
-      <description><p>略語の中には、複数の意味があり、文脈に依存するものがある。例えば、ADAはある文脈では「American Dental Association」を意味し、別の文脈では「Americans with Disabilities Act」を意味する。文脈に適切な元の語を提供しなければならない。
+      <description><p>略語の中には、複数の意味があり、文脈に依存するものがある。例えば、ADA はある文脈では「American Dental Association」を意味し、別の文脈では「Americans with Disabilities Act」を意味する。文脈に適切な元の語を提供しなければならない。
 </p>
 </description>
     </eg-group>
@@ -58,15 +58,15 @@
     </eg-group>
     <eg-group>
       <head>ABS</head>
-      <description><p>いくつかの言語(英語及びオランダ語を含む)では、頭字語ABS(Antiblockiersystem: アンチロック・ブレーキ)をドイツ語から借用している。元の表記ではなく、語の説明(anti-lock brakes)が提供されている。</p>
+      <description><p>いくつかの言語(英語及びオランダ語を含む)では、頭字語 ABS (Antiblockiersystem: アンチロック・ブレーキ)をドイツ語から借用している。元の表記ではなく、語の説明 (anti-lock brakes) が提供されている。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>元の語のない頭字語</head>
       <description><p>もはや元の語を持たない頭文字語の例
 </p>
-<ulist><item><p>SILは、Summer Institute of Linguisticsを意味していたが、現在はそれ自体が名前である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sil.org/sil/history.htm">SILの歴史</loc>を参照。
-    </p></item><item><p>IMSは、Instructional Management Systemsを意味していたが、現在はそれ自体が名前である。
+<ulist><item><p>SIL は、Summer Institute of Linguistics を意味していたが、現在はそれ自体が名前である。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.sil.org/sil/history.htm">SIL の歴史</loc>を参照。
+    </p></item><item><p>IMS は、Instructional Management Systems を意味していたが、現在はそれ自体が名前である。
     </p></item></ulist>
 <p>
 こういった部類の例では、組織がどのようなものか、又は何をするのかについての短い説明で十分である。
