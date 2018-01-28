@@ -20,8 +20,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>
-この例では、<el>div</el> 要素の幅はスタイルシートでem単位で指定されている。</p>
+      <description><p>この例では、<el>div</el> 要素の幅はスタイルシートで em 単位で指定されている。</p>
 <note><p>
 CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前のバージョンではサポートされていない。</p></note>
 </description>

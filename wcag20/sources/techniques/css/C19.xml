@@ -4,14 +4,14 @@
 <technique id="C19">
    <short-name>CSS でテキストの配置を左寄せ又は右寄せに指定する</short-name>
    <applicability>
-      <p>CSSをサポートする全てのウェブコンテンツ技術</p>
+      <p>CSS をサポートする全てのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法は、CSSの<code><![CDATA[text-align]]></code>プロパティを使って、テキストのブロックを左または右に揃える方法を説明している。</p>
+    <p>この達成方法は、CSS の <code><![CDATA[text-align]]></code> プロパティを使って、テキストのブロックを左または右に揃える方法を説明している。</p>
   </description>
    <examples>
       <eg-group>
