@@ -4,7 +4,7 @@
 <technique id="H30">
    <short-name>a 要素のリンクの目的を説明するリンクテキストを提供する</short-name>
    <applicability>
-      <p>リンク(&lt;a href&gt; 要素)を含むHTML及びXHTMLドキュメント</p>
+      <p>リンク (&lt;a href&gt; 要素)を含む HTML 及び XHTML ドキュメント</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -12,16 +12,14 @@
       <success-criterion idref="navigation-mechanisms-link" relationship="sufficient"/>
    </applies-to>
     <description>
-    <p>この達成方法の目的は、リンク先を説明するテキストを<el>a</el>要素のコンテンツとして提供することにより、リンクの目的を説明することである。
-その説明により、利用者はこのリンクとウェブページ内にある他のリンクとの違いが区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。
-一般的に、遷移先のURIでは、そのリンクの目的を説明したことにはならない。</p>
+    <p>この達成方法の目的は、リンク先を説明するテキストを <el>a</el> 要素のコンテンツとして提供することにより、リンクの目的を説明することである。その説明により、利用者はこのリンクとウェブページ内にある他のリンクとの違いが区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。一般的に、遷移先の URI では、そのリンクの目的を説明したことにはならない。</p>
     <p>画像がリンクの唯一のコンテンツであるとき、画像の代替テキストがそのリンクに固有の機能を説明している。</p>
     <p>リンクのコンテンツがテキスト及び一つ又はそれ以上の画像を含むとき、テキストがリンクの目的を十分に説明しているならば、画像の代替テキストは空にする。(<loc href="H67" linktype="html"/>を参照。) 
 画像がリンクの目的以外にも情報を伝えるときには、画像に適切な代替テキストも付与しなければならない。</p>
   </description>
    <examples>
       <eg-group>
-      <description><p><el>a</el> HTMLにおいて、<el>a</el>要素のテキストコンテンツを用いてリンクの目的を説明する。</p>
+      <description><p>HTML において、<el>a</el> 要素のテキストコンテンツを用いてリンクの目的を説明する。</p>
 </description>
       <code role="html401"><![CDATA[<a href="routes.html">
   ボールダーズクライミングジムでの現状のルート
@@ -36,8 +34,7 @@
     <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
-      <description><p>アンカー (<el>a</el>) 要素が <el>img</el> 要素に加えてリンクの目的を説明するテキストを含むときは、空の<att>alt</att>属性を使用する。
-リンクテキストはページ上で画像の隣りに表示されることに注意する。</p>
+      <description><p>アンカー (<el>a</el>) 要素が <el>img</el> 要素に加えてリンクの目的を説明するテキストを含むときは、空の <att>alt</att> 属性を使用する。リンクテキストはページ上で画像の隣りに表示されることに注意する。</p>
 </description>
       <code role="html401"><![CDATA[<a href="routes.html">
   <img src="topo.gif" alt="" />
@@ -111,7 +108,7 @@
           <p>テキスト又は非テキストコンテンツの代替テキストが <el>a</el> 要素に含まれている。</p>
         </item>
         <item>
-          <p><el>img</el> 要素だけが <el>a</el> 要素のコンテンツである場合、<el>img</el>要素の代替テキストがリンクの目的を説明している。</p>
+          <p><el>img</el> 要素だけが <el>a</el> 要素のコンテンツである場合、<el>img</el> 要素の代替テキストがリンクの目的を説明している。</p>
         </item>
         <item>
           <p><el>a</el> 要素が一つ又はそれ以上の <el>img</el> 要素を含み、<el>img</el> 要素の代替テキストが

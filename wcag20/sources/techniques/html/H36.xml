@@ -10,8 +10,8 @@
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、<att>type</att>属性が「image」である<el>input</el>要素において、<el>input</el>要素の<att>alt</att>属性を機能的なラベルを提供するのに使用することである。このラベルは、画像の説明をするのではなく、ボタンの機能を説明する。もしそのページに、それぞれ異なる結果につながる複数の送信/実行ボタンがあるならば、ラベルは特に重要である。</p>
-    <p><el>input</el>要素は、多くの種類のフォームのコントロールを作成するのに使用される。HTML及びXHTMLのDTDでは、これら全てで<att>alt</att>属性を用いることができるが、本来は画像の送信/実行ボタンだけに使用すべきである。ユーザエージェントでは、他の種類のフォームのコントロールでの<att>alt</att>属性の使用をサポートしていないため、これらのコントロールをラベル付けするために他のメカニズムを用いている。</p>
+    <p>この達成方法の目的は、<att>type</att> 属性が「image」である <el>input</el> 要素において、<el>input</el> 要素の <att>alt</att> 属性を機能的なラベルを提供するのに使用することである。このラベルは、画像の説明をするのではなく、ボタンの機能を説明する。もしそのページに、それぞれ異なる結果につながる複数の送信/実行ボタンがあるならば、ラベルは特に重要である。</p>
+    <p><el>input</el> 要素は、多くの種類のフォームのコントロールを作成するのに使用される。HTML 及び XHTML の DTD では、これら全てで <att>alt</att> 属性を用いることができるが、本来は画像の送信/実行ボタンだけに使用すべきである。ユーザエージェントでは、他の種類のフォームのコントロールでの <att>alt</att> 属性の使用をサポートしていないため、これらのコントロールをラベル付けするために他のメカニズムを用いている。</p>
     <a11ysuprorted rating="good" exnumber="0"/>
   </description>
    <examples>
@@ -34,7 +34,7 @@
       <procedure>
       <olist>
         <item>
-          <p>type 属性の値が「image」であるすべての <el>input</el> 要素に、alt属性がある。</p>
+          <p>type 属性の値が「image」であるすべての <el>input</el> 要素に、alt 属性がある。</p>
         </item>
         <item>
           <p>その alt 属性がボタンの機能を説明している。</p>
@@ -44,7 +44,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1.及び2.を満たしている。</p>
+          <p>1. 及び 2. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>

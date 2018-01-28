@@ -108,14 +108,14 @@ q:after { content: ""; } ]]></code>
           <p>コンテンツにテキストの表現を変えることで伝達できる情報がある。</p>
         </item>
         <item>
-          <p>適切なセマンティックマークアップ (<el>em</el>、<el>strong</el>、<el>cite</el>、<el>blockquote</el>、<el>quote</el>、<el>sub</el>など) が、テキストの変化を通じて情報を伝達するテキストをマークアップに用いられていることを確認する。</p>
+          <p>適切なセマンティックマークアップ (<el>em</el>、<el>strong</el>、<el>cite</el>、<el>blockquote</el>、<el>quote</el>、<el>sub</el> など) が、テキストの変化を通じて情報を伝達するテキストをマークアップに用いられていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2.を満たしている。</p>
+          <p>2. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>

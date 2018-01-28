@@ -4,7 +4,7 @@
 <technique id="H91">
    <short-name>HTML のフォームコントロール及びリンクを使用する</short-name>
    <applicability>
-      <p>HTMLのフォーム・コントロール及びリンク</p>
+      <p>HTML のフォーム・コントロール及びリンク</p>
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
@@ -12,13 +12,13 @@
       <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、インタラクティブなユーザインタフェースを構成する要素のキーボード操作及び支援技術との相互運用性を提供するために、標準的なHTMLのフォーム・コントロール及びリンク要素を用いることである。</p>
-    <p>ユーザエージェントは、HTMLのフォーム・コントロール及びリンクのキーボード操作を提供している。さらに、ユーザエージェントは、フォーム・コントロール及びリンクを、アクセシビリティAPIに結び付けている。支援技術は、アクセシビリティAPIを利用して、役割 (Role)、識別名 (Name)、状態 (State)、値 (Value) といった適切なアクセシビリティ情報を抽出し、それらを利用者に提供している。役割はHTMLの要素によって提供され、名前はその要素に関連付けられているテキストによって提供される。値及び状態が適切な要素は、複合的なメカニズムを通じて、それらの値及び状態も支援技術に提示している。</p>
-    <p>必須の属性を通じてテキストがすでにコントロールと関連付けられている場合もある。たとえば、送信ボタンは、<el>button</el>要素内のテキスト又は画像の「<att>alt</att>」属性を識別名として用いている。フォーム・コントロールの場合は、<el>label</el>要素又は「<att>title</att>」属性が用いられる。次の表は、HTMLのフォーム・コントロール及びリンクの役割、識別名、値、状態がどのように決定されるかを示したものである。</p>
+    <p>この達成方法の目的は、インタラクティブなユーザインタフェースを構成する要素のキーボード操作及び支援技術との相互運用性を提供するために、標準的な HTML のフォーム・コントロール及びリンク要素を用いることである。</p>
+    <p>ユーザエージェントは、HTML のフォーム・コントロール及びリンクのキーボード操作を提供している。さらに、ユーザエージェントは、フォーム・コントロール及びリンクを、アクセシビリティ API に結び付けている。支援技術は、アクセシビリティ API を利用して、役割 (Role)、識別名 (Name)、状態 (State)、値 (Value) といった適切なアクセシビリティ情報を抽出し、それらを利用者に提供している。役割は HTML の要素によって提供され、名前はその要素に関連付けられているテキストによって提供される。値及び状態が適切な要素は、複合的なメカニズムを通じて、それらの値及び状態も支援技術に提示している。</p>
+    <p>必須の属性を通じてテキストがすでにコントロールと関連付けられている場合もある。たとえば、送信ボタンは、<el>button</el> 要素内のテキスト又は画像の「<att>alt</att>」属性を識別名として用いている。フォーム・コントロールの場合は、<el>label</el> 要素又は「<att>title</att>」属性が用いられる。次の表は、HTML のフォーム・コントロール及びリンクの役割、識別名、値、状態がどのように決定されるかを示したものである。</p>
     <table border="1" cellpadding="5" summary="Table describing how the role, name, value and state are determined for HTML links and form controls.">
       <thead>
         <tr>
-          <th>HTML要素</th>
+          <th>HTML 要素</th>
           <th>役割<!--br/--> (Role)</th>
           <th>識別名<!--br/--> (Name)</th>
           <th>値<!--br/--> (Value)</th>
@@ -27,63 +27,63 @@
       </thead>
       <tbody>
         <tr>
-          <td> &lt;a&gt; </td>
+          <td>&lt;a&gt;</td>
           <td>リンク</td>
           <td><code>&lt;a&gt;</code> 要素の <code>title</code> 属性、画像リンクの場合は <code>alt</code> 属性。<!--br/-->テキストと画像の <code>alt</code> 属性を両方が提供されている場合は、両者を結合する。</td>
-          <td><code>href</code>属性</td>
+          <td><code>href</code> 属性</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;button&gt;</td>
+          <td>&lt;button&gt;</td>
           <td>プッシュボタン</td>
           <td><code>&lt;button&gt;</code> 要素内のテキスト又は <code>title</code> 属性</td>
           <td> </td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
           <td> &lt;fieldset&gt; </td>
           <td>グループ化</td>
           <td>フィールドセット要素にある <code>&lt;legend&gt;</code> 要素内のテキスト</td>
           <td> </td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;input type = "button", "submit", or "reset"&gt; </td>
+          <td>&lt;input type = "button", "submit", or "reset"&gt;</td>
           <td>プッシュボタン</td>
           <td><code>value</code> 属性</td>
           <td> </td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;input type = "image"&gt; </td>
+          <td>&lt;input type = "image"&gt;</td>
           <td>プッシュボタン</td>
           <td><code>alt</code> 属性又は <code>title</code> 属性</td>
           <td> </td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;input type = "text"&gt; </td>
+          <td>&lt;input type = "text"&gt;</td>
           <td>編集可能なテキスト</td>
-          <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code>属性</td>
+          <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td><code>value</code> 属性</td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;input type = "password"&gt; </td>
+          <td>&lt;input type = "password"&gt;</td>
           <td>編集可能なテキスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td>値は意図的に隠されている</td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
         <tr>
-          <td> &lt;input type="checkbox"&gt; </td>
+          <td>&lt;input type="checkbox"&gt;</td>
           <td>チェックボックス</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td> </td>
           <td><code>checked</code> 属性</td>
         </tr>
         <tr>
-          <td> &lt;input type="radio"&gt; </td>
+          <td>&lt;input type="radio"&gt;</td>
           <td>ラジオボタン</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td> </td>
@@ -97,11 +97,11 @@
           <td> </td>
         </tr>
         <tr>
-          <td> &lt;textarea&gt; </td>
+          <td>&lt;textarea&gt;</td>
           <td>編集可能なテキスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td><code>&lt;textarea&gt;</code> 要素内のテキスト</td>
-          <td>&#13;</td>
+          <td>&nbsp;</td>
         </tr>
       </tbody>
     </table>
@@ -109,7 +109,7 @@
    <examples>
       <eg-group>
       <head>リンク</head>
-      <description><p>ユーザエージェントは、リンクに移動したり、リンクを選択するメカニズムを提供する。次の各事例では、「リンク」という役割 (Role) が &lt;a href&gt; で与えられている。&lt;a name&gt; は「リンク」という役割を与えない点に注意しよう。値 (Value) に該当するのは、<att>href</att>属性のURIである。</p>
+      <description><p>ユーザエージェントは、リンクに移動したり、リンクを選択するメカニズムを提供する。次の各事例では、「リンク」という役割 (Role) が &lt;a href&gt; で与えられている。&lt;a name&gt; は「リンク」という役割を与えない点に注意しよう。値 (Value) に該当するのは、<att>href</att> 属性の URI である。</p>
 <exsubhead>事例 1a</exsubhead><p>事例 1a では、識別名はリンクの中にあるテキストである。この場合は「サイト例」が該当する。</p>
 </description>
       <code role="xhtml"><![CDATA[<a href="www.example.com">サイト例</a> ]]></code>
@@ -123,7 +123,7 @@
     </eg-group>
     <eg-group>
       <head>ボタン</head>
-      <description><p>HTMLでは、ボタンを生成するのにさまざまな方法があるが、それらは全て「プッシュボタン」という役割 (Role) に位置付けられる。</p>
+      <description><p>HTML では、ボタンを生成するのにさまざまな方法があるが、それらは全て「プッシュボタン」という役割 (Role) に位置付けられる。</p>
 <exsubhead>事例 2a</exsubhead><p>事例 2a では、<el>button</el> 要素内の「保存」というテキストが識別名 (Name) となる。値 (Value) はない。</p>
 </description>
       <code role="xhtml"><![CDATA[<button>保存</button> ]]></code>
@@ -138,13 +138,13 @@
       <description><exsubhead>事例 2d</exsubhead><p>事例 2d では、<att>alt</att> 属性ではなく、<att>title</att> 属性を用いて「保存」という識別名 (Name) を指定している。</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="保存" /> ]]></code>
-      <description><exsubhead>事例 2e</exsubhead><p>事例 2e では、<el>input</el> 要素の <att>alt</att> 属性を用いて「保存」という識別名 (Name) を指定している。<att>title</att> 属性は指定していない。【訳注：コード例と矛盾しているので、WCAGワーキンググループに確認中。】</p>
+      <description><exsubhead>事例 2e</exsubhead><p>事例 2e では、<el>input</el> 要素の <att>alt</att> 属性を用いて「保存」という識別名 (Name) を指定している。<att>title</att> 属性は指定していない。【訳注：コード例と矛盾しているので、WCAG ワーキンググループに確認中。】</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="保存" title="保存" /> ]]></code>
     </eg-group>
     <eg-group>
       <head>入力フィールド</head>
-      <description><exsubhead>事例 3a</exsubhead><p>事例 3a では、入力フィールドが「編集可能テキスト」という役割 (Role)を持っている。<el>label</el>要素の<att>for</att>属性が、<el>input</el>要素の<att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「果物の種類」となる。値 (Value) は、<att>value</att> 属性の「バナナ」となる。</p>
+      <description><exsubhead>事例 3a</exsubhead><p>事例 3a では、入力フィールドが「編集可能テキスト」という役割 (Role)を持っている。<el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「果物の種類」となる。値 (Value) は、<att>value</att> 属性の「バナナ」となる。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="text_1">果物の種類</label>
 <input id="text_1" type="text" value="バナナ"> ]]></code>
@@ -154,7 +154,7 @@
     </eg-group>
     <eg-group>
       <head>チェックボックス</head>
-      <description><p>事例 4は、<el>input</el> 要素の <att>type</att> 属性から「チェックボックス」という役割 (Role) を持っている。<el>label</el> 要素の <att>for</att>属性が <el>input</el> 要素の <att>id</att>属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「チーズ」となる。状態 (State) は <att>checked</att> 属性で「チェックあり」又は「チェックなし」に設定できる。そのコントロールに対する利用者のインタラクションによって、状態 (State) が変更される。</p>
+      <description><p>事例 4 は、<el>input</el> 要素の <att>type</att> 属性から「チェックボックス」という役割 (Role) を持っている。<el>label</el> 要素の <att>for</att> 属性が <el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「チーズ」となる。状態 (State) は <att>checked</att> 属性で「チェックあり」又は「チェックなし」に設定できる。そのコントロールに対する利用者のインタラクションによって、状態 (State) が変更される。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="cb_1">チーズ</label> 
 <input id="cb_1" type="checkbox" checked="checked"> ]]></code>
@@ -169,7 +169,7 @@
     </eg-group>
     <eg-group>
       <head>セレクトメニュー</head>
-      <description><exsubhead>事例 6a</exsubhead><p>事例 6a は、<el>select</el> 要素によって「リストボックス」という役割 (Role) を持っている。識別名 (Name) は「数量」で、<el>label</el> 要素から与えられている。<el>select</el>要素に識別名を付け忘れるのは、よくあるエラーの一つである。値 (Value) は、<att>selected</att> 属性 (XHTMLでは値を "<code>selected</code>" と指定) のある<el>option</el>要素であり、初期値は「2個」ということになる。</p>
+      <description><exsubhead>事例 6a</exsubhead><p>事例 6a は、<el>select</el> 要素によって「リストボックス」という役割 (Role) を持っている。識別名 (Name) は「数量」で、<el>label</el> 要素から与えられている。<el>select</el> 要素に識別名を付け忘れるのは、よくあるエラーの一つである。値 (Value) は、<att>selected</att> 属性 (XHTML では値を "<code>selected</code>" と指定) のある <el>option</el> 要素であり、初期値は「2 個」ということになる。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="s1">数量</label>
 <select id="s1" size="1">
@@ -187,17 +187,17 @@
     </eg-group>
     <eg-group>
       <head>テキストエリア</head>
-      <description><exsubhead>事例 7a</exsubhead><p>事例 7aは、<el>textarea</el>要素の「編集可能なテキスト」という役割 (Role) を持っている。識別名 (Name) は、<el>label</el>要素で指定した「あなたの発言をここに入力」である。値 (Value) は、<el>textarea</el>要素内にある「87年前」である。</p>
+      <description><exsubhead>事例 7a</exsubhead><p>事例 7a は、<el>textarea</el> 要素の「編集可能なテキスト」という役割 (Role) を持っている。識別名 (Name) は、<el>label</el> 要素で指定した「あなたの発言をここに入力」である。値 (Value) は、<el>textarea</el> 要素内にある「87 年前」である。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="ta_1">あなたの発言をここに入力</label>
 <textarea id="ta_1" >87年前</textarea> ]]></code>
-      <description><exsubhead>事例 7b</exsubhead><p>事例 7bは、同じ役割 (Role) を持ち、識別名 (Name) は<el>title</el>属性を用いて指定していて、値 (Value) は空である。</p>
+      <description><exsubhead>事例 7b</exsubhead><p>事例 7b は、同じ役割 (Role) を持ち、識別名 (Name) は <el>title</el> 属性を用いて指定していて、値 (Value) は空である。</p>
 </description>
       <code role="xhtml"><![CDATA[<textarea id="ta_1" title="あなたの発言をここに入力" >87年前</textarea> ]]></code>
     </eg-group>
     <eg-group>
       <head>フォーム・コントロールのグループ化</head>
-      <description><exsubhead>ラジオボタンのフィールドセット</exsubhead><p>事例 8のラジオボタンのフィールドセットには「グループ化」という役割 (Role) がある。識別名 (Name) は<el>legend</el>要素によって与えられている。</p>
+      <description><exsubhead>ラジオボタンのフィールドセット</exsubhead><p>事例 8 のラジオボタンのフィールドセットには「グループ化」という役割 (Role) がある。識別名 (Name) は <el>legend</el> 要素によって与えられている。</p>
 </description>
       <code role="xhtml"><![CDATA[<fieldset>
   <legend>色を選択：</legend> 

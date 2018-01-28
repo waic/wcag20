@@ -4,7 +4,7 @@
 <technique id="H45">
    <short-name>longdesc 属性を用いる</short-name>
    <applicability>
-      <p>短い代替テキストでは説明しきれない画像を含むHTML及びXHTML</p>
+      <p>短い代替テキストでは説明しきれない画像を含む HTML 及び XHTML</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -72,7 +72,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1.から3.を全て満たしている。</p>
+          <p>1. から 3. を全て満たしている。</p>
         </item>
       </ulist>
       </expected-results>
