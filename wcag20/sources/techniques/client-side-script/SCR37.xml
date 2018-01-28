@@ -4,23 +4,23 @@
 <technique id="SCR37">
    <short-name>デバイス非依存な方法でカスタムダイアログを作成する</short-name>
    <applicability>
-      <p>スクリプトで使用されるHTML及びXHTML</p>
+      <p>スクリプトで使用される HTML 及び XHTML</p>
    </applicability>
    <applies-to>
       <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>コンテンツ制作者はしばしば、ブラウザによって提供されるポップアップウインドウを使わずに、独自のダイアログを作成したがる。これは通常、ダイアログのコンテンツを<el>div</el>の中に収めて、その<el>div</el>をコンテンツの上にCSSによる重なり順及び絶対配置を用いて配置するというやり方でおこなわれる。</p>
+    <p>コンテンツ制作者はしばしば、ブラウザによって提供されるポップアップウインドウを使わずに、独自のダイアログを作成したがる。これは通常、ダイアログのコンテンツを <el>div</el> の中に収めて、その <el>div</el> をコンテンツの上に CSS による重なり順及び絶対配置を用いて配置するというやり方でおこなわれる。</p>
     <p>これらのダイアログをアクセシブルにするには、いくつかの簡単なルールに従う必要がある。</p>
     <olist>
       <item>
-        <p>リンクやボタンの<code>onclick</code>イベントからダイアログを起動するスクリプトをトリガーにする。</p>
+        <p>リンクやボタンの <code>onclick</code> イベントからダイアログを起動するスクリプトをトリガーにする。</p>
       </item>
       <item>
-        <p>ダイアログの<code>div</code>をDocument Object Model (DOM) の中、トリガーした要素の直後に配置する。トリガーした要素がフォーカスを保持し、ダイアログのコンテンツをその要素のあとに挿入することで、ダイアログの中のコンテンツがスクリーンリーダーの読み上げ順序で次になり、タブ順序も次になる。それでも、ダイアログは視覚的にページ上のあらゆる場所に絶対配置できる。これは、下の例のようにダイアログをHTMLの中で作成し、CSSで非表示にする方法又は、トリガーした要素の直後にスクリプトで挿入する方法のどちらでも実装できる。</p>
+        <p>ダイアログの <code>div</code> を Document Object Model (DOM) の中、トリガーした要素の直後に配置する。トリガーした要素がフォーカスを保持し、ダイアログのコンテンツをその要素のあとに挿入することで、ダイアログの中のコンテンツがスクリーンリーダーの読み上げ順序で次になり、タブ順序も次になる。それでも、ダイアログは視覚的にページ上のあらゆる場所に絶対配置できる。これは、下の例のようにダイアログを HTML の中で作成し、CSS で非表示にする方法又は、トリガーした要素の直後にスクリプトで挿入する方法のどちらでも実装できる。</p>
       </item>
       <item>
-        <p>ダイアログのdiv内部のHTMLが、その他のコンテンツと同じアクセシビリティガイドラインの要件を満たしていることを保証する。</p>
+        <p>ダイアログの div 内部の HTML が、その他のコンテンツと同じアクセシビリティガイドラインの要件を満たしていることを保証する。</p>
       </item>
     </olist>
     <p>リンクがダイアログを開閉できたり、キーボードのフォーカスが外れるとダイアログが閉じるようにしたりすることはすばらしいが、必ずしも必要なわけではない。</p>
@@ -29,9 +29,9 @@
    <examples>
       <eg-group>
       <head>ダイアログを開くオプションボタン</head>
-      <description><p>この例のHTMLには、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能するdivがある。</p>
-<p>トリガーとなる要素はボタンで、スクリプトはonclickイベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術はDOMの中の変化に気がつくことができる。</p>
-<p>この例では、ダイアログ内の送信及びリセットボタンは単純に<code>div</code>に隠れている。</p>
+      <description><p>この例の HTML には、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能する div がある。</p>
+<p>トリガーとなる要素はボタンで、スクリプトは onclick イベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術は DOM の中の変化に気がつくことができる。</p>
+<p>この例では、ダイアログ内の送信及びリセットボタンは単純に <code>div</code> に隠れている。</p>
 </description>
       <code> role="xhtml1"><![CDATA[...
 <button onclick="TogglePopup(event,true)"
@@ -53,7 +53,7 @@
 
 </div>
 ...]]></code>
-      <description><p><code>div</code>、見出し、及び<el>form</el>要素はCSSでダイアログに見えるようにスタイル付けされている。</p>
+      <description><p><code>div</code>、見出し、及び <el>form</el> 要素は CSS でダイアログに見えるようにスタイル付けされている。</p>
 </description>
       <code role="css"><![CDATA[...
 a { color:blue; }
@@ -68,7 +68,7 @@ div.popover h3 { margin:0; padding:0.1em 0.5em; background-color:navy; color:whi
 #pop0001 div.buttons { text-align:right; }
 #pop0001 div.buttons input { width:6em; }
 ...]]></code>
-      <description><p>スクリプトはポップアップする<code>div</code>の表示を切り替え、表示させたり隠したりする。</p>
+      <description><p>スクリプトはポップアップする <code>div</code> の表示を切り替え、表示させたり隠したりする。</p>
 </description>
       <code role="css"><![CDATA[...
 function TogglePopup(evt,show)
@@ -171,7 +171,7 @@ function ResetForm(elem)
           <p>ページ内のすべての場所から、ダイアログのトリガーとなるもので、ポップアップウインドウでないものを探す。</p>
         </item>
         <item>
-          <p>Tabキーでその場所に移動してEnterキーを押下することで、ダイアログを開くことができる。</p>
+          <p>Tab キーでその場所に移動して Enter キーを押下することで、ダイアログを開くことができる。</p>
         </item>
         <item>
           <p>開いたら、タブ順序でダイアログが次の位置にある。</p>
@@ -180,14 +180,14 @@ function ResetForm(elem)
           <p>ダイアログがボタン又はリンクのクリックイベントによってトリガーされている。</p>
         </item>
         <item>
-          <p>スクリプトによって生成されたDOMを検証できるツールを用いて、DOM内でダイアログが次にある。</p>
+          <p>スクリプトによって生成された DOM を検証できるツールを用いて、DOM 内でダイアログが次にある。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2., 3., 4.及び5.を満たしている。</p>
+               <p>2., 3., 4. 及び 5. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
