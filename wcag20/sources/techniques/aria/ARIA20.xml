@@ -11,15 +11,15 @@
       <success-criterion idref="content-structure-separation-programmatic" relationship="sufficient"/>
    </applies-to>
    <description>
-<p>この達成方法は、ユーザエージェント及び支援技術がプログラム的にページのセクションを識別できるように、そのページのセクションに一般的な<prop>region</prop>ロールを割り当てる方法を示す。<prop>region</prop>ロールは、より容易に発見可能かつナビゲート可能であるように、重要なコンテンツを含むページの区切りを定める。一般的な領域は、セクションが標準の文書ランドマークロールによってマークアップできない場合に使用されるべきである (<loc href="ARIA11" linktype="aria">ARIA11</loc>を参照)。</p>
+<p>この達成方法は、ユーザエージェント及び支援技術がプログラム的にページのセクションを識別できるように、そのページのセクションに一般的な <prop>region</prop> ロールを割り当てる方法を示す。<prop>region</prop> ロールは、より容易に発見可能かつナビゲート可能であるように、重要なコンテンツを含むページの区切りを定める。一般的な領域は、セクションが標準の文書ランドマークロールによってマークアップできない場合に使用されるべきである (<loc href="ARIA11" linktype="aria">ARIA11</loc>を参照)。</p>
 <p>
-領域は一般的なグループ化された要素であり、かつ利用者がどの領域にいるのかを伝えるための手段が必要になるため、領域に名前を付けることは重要である。領域には、<att>aria-labelledby</att>や<att>aria-label</att>、その他の手法を使用して名前を付けることができる。そうすることで、ページ上のコンテンツと情報の関係をより良く公開する助けとなる。過剰に使用した場合、スクリーンリーダーの利用者に対してページを過度に冗長にすることがあるので、<prop>region</prop>のロールは、慎重に使用するべきである。</p>
+領域は一般的なグループ化された要素であり、かつ利用者がどの領域にいるのかを伝えるための手段が必要になるため、領域に名前を付けることは重要である。領域には、<att>aria-labelledby</att> や <att>aria-label</att>、その他の手法を使用して名前を付けることができる。そうすることで、ページ上のコンテンツと情報の関係をより良く公開する助けとなる。過剰に使用した場合、スクリーンリーダーの利用者に対してページを過度に冗長にすることがあるので、<prop>region</prop> のロールは、慎重に使用するべきである。</p>
    </description>
    <examples>
       <eg-group>
          <head>ニュースサイト上の領域</head>
          <description>
-            <p>毎週変更する世論調査を含むニュースサイトのホームページ上のセクションが、<code><![CDATA[role="region"]]></code>でマークアップされている。フォーム上部のh3テキストは、<att>aria-labelledby</att>を使うことで領域の名前として参照されている。</p>
+            <p>毎週変更する世論調査を含むニュースサイトのホームページ上のセクションが、<code><![CDATA[role="region"]]></code> でマークアップされている。フォーム上部の h3 テキストは、<att>aria-labelledby</att> を使うことで領域の名前として参照されている。</p>
          <codeblock role="html5"><![CDATA[
 <div role="region" aria-labelledby="pollhead">
 <h3 id="pollhead">This week's Poll</h3>
@@ -45,7 +45,7 @@
       <eg-group>
          <head>銀行サイト上の領域を識別する</head>
          <description>
-            <p>利用者は、銀行のウェブサイトにログインした後、リンクを展開することで定期預金口座の詳細を確認できるようになっている。詳細は、<prop>region</prop>ロールでマークアップされた範囲の中にある。その領域の見出しは<code><![CDATA[role=heading]]></code>を持ち、その領域に名前を付ける<att>aria-labelledby</att>の中に含まれている。</p>
+            <p>利用者は、銀行のウェブサイトにログインした後、リンクを展開することで定期預金口座の詳細を確認できるようになっている。詳細は、<prop>region</prop> ロールでマークアップされた範囲の中にある。その領域の見出しは <code><![CDATA[role=heading]]></code> を持ち、その領域に名前を付ける <att>aria-labelledby</att> の中に含まれている。</p>
          <codeblock role="html5"><![CDATA[
 <ol>
 	<li><a id="l1" href="#" aria-expanded="false" title="Show details" aria-controls="block1" >John Henry's Account</a><img src="images/panel_expand.gif" alt="" />
@@ -67,7 +67,7 @@
       <eg-group>
          <head>一般的な領域とポートレットを同一視する</head>
          <description>
-            <p>次の例は、気象ポートレットに一般的な"region"ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att>でラベル付けされている。</p>
+            <p>次の例は、気象ポートレットに一般的な "region" ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att> でラベル付けされている。</p>
          </description>
          <code role="html5"><![CDATA[
 <div role="region" aria-label="weather portlet"> 
@@ -93,7 +93,7 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p><code><![CDATA[role="region"]]></code>でマークアップされる各セクションに対して:</p>
+         <p><code><![CDATA[role="region"]]></code>で マークアップされる各セクションに対して:</p>
          <olist>
             <item>
                <p>コンテンツが、独立したランドマークを持つのに十分なほど重要である。</p>
@@ -109,7 +109,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.から3.を満たしている。</p>
+               <p>1. から 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

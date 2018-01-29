@@ -5,7 +5,7 @@
    <short-name>エラーを特定するために、ARIA role=alert 又はライブリージョン (Live Regions) を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc> をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
@@ -58,17 +58,17 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、入力エラーが発生した場合に支援技術 (AT) に通知することである。<att>aria-live</att>属性は、エラーメッセージがライブ領域のコンテナに注入された際に、AT (スクリーンリーダーなど) による通知を可能にする。<att>aria-live</att>領域内部のコンテンツは、テキストが表示されている場所でATがフォーカスする必要なしに、ATによって自動的に読みあげられる。</p>
+      <p>この達成方法の目的は、入力エラーが発生した場合に支援技術 (AT) に通知することである。<att>aria-live</att> 属性は、エラーメッセージがライブ領域のコンテナに注入された際に、AT (スクリーンリーダーなど) による通知を可能にする。<att>aria-live</att> 領域内部のコンテンツは、テキストが表示されている場所で AT がフォーカスする必要なしに、AT によって自動的に読みあげられる。</p>
       <p>ライブ領域のプロパティを直接適用する代わりに使用できる<loc xmlns:xlink="http://www.w3.org/1999/xlink"
               href="http://www.w3.org/WAI/PF/aria-practices/#chobet">特殊ケースのライブ領域のロール</loc>も多数ある。</p>
    </description>
    <examples>
       <eg-group>
-         <head>DOM内にすでに存在するrole=alertをもつコンテナの中にエラーメッセージを注入する</head>
+         <head>DOM 内にすでに存在する role=alert をもつコンテナの中にエラーメッセージを注入する</head>
          <description>
-            <p>次の例は、<code><![CDATA[aria-live=assertive]]></code>を使用しているのと同等の<code><![CDATA[role=alert]]></code>を使用する。</p>
-            <p>例において、ページロード時にDOMに存在する<code><![CDATA[aria-atomic=true]]></code>及び<code><![CDATA[aria-live]]></code>プロパティ又は<code><![CDATA[alert]]></code>ロールをもつ空のエラーメッセージコンテナ要素が存在する。エラーコンテナは、ほとんどのスクリーンリーダーでエラーメッセージが読み上げられるために、ページロード時にDOMに存在しなければならない。<code><![CDATA[aria-atomic=true]]></code>は、複数の無効な投稿をした後にエラーメッセージをiOSのVoiceoverに読み上げさせるために必要である。</p>
-            <p>jQueryは、送信時に入力が空であるかどうかをテストし、そうであれば、ライブ領域コンテナにエラーメッセージを注入するために使用される。新しい送信が試みられるたびに、前のエラーメッセージがコンテナから削除され、新しいエラーメッセージが挿入される。</p>
+            <p>次の例は、<code><![CDATA[aria-live=assertive]]></code> を使用しているのと同等の <code><![CDATA[role=alert]]></code> を使用する。</p>
+            <p>例において、ページロード時に DOM に存在する <code><![CDATA[aria-atomic=true]]></code> 及び <code><![CDATA[aria-live]]></code> プロパティ又は <code><![CDATA[alert]]></code> ロールをもつ空のエラーメッセージコンテナ要素が存在する。エラーコンテナは、ほとんどのスクリーンリーダーでエラーメッセージが読み上げられるために、ページロード時に DOM に存在しなければならない。<code><![CDATA[aria-atomic=true]]></code> は、複数の無効な投稿をした後にエラーメッセージを iOS の Voiceover に読み上げさせるために必要である。</p>
+            <p>jQuery は、送信時に入力が空であるかどうかをテストし、そうであれば、ライブ領域コンテナにエラーメッセージを注入するために使用される。新しい送信が試みられるたびに、前のエラーメッセージがコンテナから削除され、新しいエラーメッセージが挿入される。</p>
             <codeblock xml:space="preserve"><![CDATA[<script src="http://code.jquery.com/jquery.js"></script>
 <script>
 $(document).ready(function(e) {
@@ -108,7 +108,7 @@ $(document).ready(function(e) {
 </form>]]></codeblock>
             <p>実装例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA19/aria-alert-validation.html"><!--
-                    linktype="examples"-->エラーを識別するためにrole=alertを使用する</loc>。</p>
+                    linktype="examples"-->エラーを識別するために role=alert を使用する</loc>。</p>
          </description>
       </eg-group>
    </examples>
@@ -165,7 +165,7 @@ $(document).ready(function(e) {
       <procedure>
          <olist>
             <item>
-               <p><code><![CDATA[role=alert]]></code>又は<code><![CDATA[aria-live=assertive]]></code>属性が指定された空のエラーコンテナが、ページの読み込み時のDOMに存在する。</p>
+               <p><code><![CDATA[role=alert]]></code> 又は <code><![CDATA[aria-live=assertive]]></code> 属性が指定された空のエラーコンテナが、ページの読み込み時の DOM に存在する。</p>
             </item>
             <item>
                <p>ライブ領域のコンテンツの表示又更新を引き起こすエラーをトリガーする。</p>
