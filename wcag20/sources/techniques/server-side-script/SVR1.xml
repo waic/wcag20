@@ -4,19 +4,19 @@
 <technique id="SVR1">
    <short-name>クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</short-name>
    <applicability>
-      <p>サーバーサイド・スクリプト言語、及びリダイレクトためのURL又はURLパターンのあるサーバ環境設定ファイルを含む、サーバーサイドのウェブコンテンツ技術</p>
+      <p>サーバーサイド・スクリプト言語、及びリダイレクトための URL 又は URL パターンのあるサーバ環境設定ファイルを含む、サーバーサイドのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-no-extreme-changes-context"
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、あるページ(利用者によって要求されたページ)が別のページにリダイレクトされたために、2つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかのユーザエージェントは、利用者を指定された秒数の後に別のページにリダイレクトするHTMLの<el>meta</el>要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx番台のステータスコード、及び転送先のURLのLocationヘッダーを持つ適切な HTTPレスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しいURLのリクエストをする。</p>
+    <p>この達成方法の目的は、あるページ (利用者によって要求されたページ) が別のページにリダイレクトされたために、2 つの新しいページが間断なく読みこまれることによって引き起こされる混乱を回避することである。いくつかのユーザエージェントは、利用者を指定された秒数の後に別のページにリダイレクトする HTML の <el>meta</el> 要素の使用をサポートしている。これは、一部の利用者、特にスクリーンリーダーを使用している利用者にとって、ページをアクセシブルではないものにしている。サーバーサイドのウェブコンテンツ技術は、利用者を混乱させないリダイレクトを実装する方法を提供している。サーバーサイド・スクリプト又はサーバ環境設定ファイルで、3xx 番台のステータスコード、及び転送先の URL の Location ヘッダーを持つ適切な HTTP レスポンスをサーバが送るようにできる。ブラウザがこのレスポンスを受けると、ロケーションバーが変わり、ブラウザは新しい URL のリクエストをする。</p>
   </description>
    <examples>
       <eg-group>
       <head>JSP/サーブレット</head>
-      <description><p>Java サーブレット又はJavaServer Pages(JSP)では、開発者は <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> を使用できる。</p>
+      <description><p>Java サーブレット又は JavaServer Pages(JSP) では、開発者は <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> を使用できる。</p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -24,7 +24,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 …
   response.sendRedirect("/newUserLogin.do");
 }]]></code>
-      <description><p>このコードは、302ステータスコード(「Found」)及び新しいURLのLocationヘッダーを含むレスポンスをユーザエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code> で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
+      <description><p>このコードは、302 ステータスコード(「Found」)及び新しい URL の Location ヘッダーを含むレスポンスをユーザエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code>  で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -32,19 +32,19 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 …
   response.sendError(response.SC_MOVED_PERMANENTLY, "/newUserLogin.do");
 }]]></code>
-      <description><p>アプリケーションがセッションに依存するために、アプリケーションがURLのリライトに <code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> を使用するなら、メソッド <code><![CDATA[HttpServletResponse.encodeRedirectURL(String url)]]></code> が <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> の代わりに使用されるべきである。また、<code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> でURLをリライトして、それから <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> にこのURLを渡すことも可能である。</p>
+      <description><p>アプリケーションがセッションに依存するために、アプリケーションが URL のリライトに <code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> を使用するなら、メソッド <code><![CDATA[HttpServletResponse.encodeRedirectURL(String url)]]></code> が <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> の代わりに使用されるべきである。また、<code><![CDATA[HttpServletResponse.encodeURL(String url)]]></code> で URL をリライトして、それから <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> にこの URL を渡すことも可能である。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>ASP</head>
-      <description><p>VBScriptで書かれたActive Server Page(ASP)では、開発者は <code>Response.Redirect</code> を使用できる。</p>
+      <description><p>VBScript で書かれた Active Server Page (ASP) では、開発者は <code>Response.Redirect</code> を使用できる。</p>
 </description>
       <code><![CDATA[
 Response.Redirect "newUserLogin.asp"]]></code>
       <description><p>又は</p>
 </description>
       <code><![CDATA[Response.Redirect("newUserLogin.asp")]]></code>
-      <description><p>以下のコードは、特定のHTTPステータスコードを含む、より完全な例である。</p>
+      <description><p>以下のコードは、特定の HTTP ステータスコードを含む、より完全な例である。</p>
 </description>
       <code><![CDATA[Response.Clear
 Response.Status = 301
@@ -54,7 +54,7 @@ Response.End]]></code>
     </eg-group>
     <eg-group>
       <head>PHP</head>
-      <description><p>PHPでは、開発者は <code><![CDATA[header]]></code> メソッドで生のHTTPヘッダーを送ることができる。以下のコードは、301ステータスコードと新しい場所を送る。ステータスが明示的に設定されないなら、リダイレクトのレスポンスはHTTPステータスコード302を送る。</p>
+      <description><p>PHP では、開発者は <code><![CDATA[header]]></code> メソッドで生の HTTP ヘッダーを送ることができる。以下のコードは、301 ステータスコードと新しい場所を送る。ステータスが明示的に設定されないなら、リダイレクトのレスポンスは HTTP ステータスコード 302 を送る。</p>
 </description>
       <code><![CDATA[
 <?php
@@ -130,10 +130,10 @@ header("Location: http://www.example.com/newUserLogin.php");
           <p>別のウェブページへのリンク又はプログラムによる参照を見つける。</p>
         </item>
         <item>
-          <p>ウェブページ一式におけるURIのリンク又はプログラムによる参照において、参照されたウェブページがクライアントサイド・リダイレクトを引き起こすコード(例えば、meta要素又はスクリプト)を含んでいない。</p>
+          <p>ウェブページ一式における URI のリンク又はプログラムによる参照において、参照されたウェブページがクライアントサイド・リダイレクトを引き起こすコード (例えば、meta 要素又はスクリプト) を含んでいない。</p>
         </item>
         <item>
-          <p>ウェブページ一式におけるURIのリンクやプログラムによる参照において、参照されたURIがリダイレクトしない、又は、一時停止なしのサーバーサイド・リダイレクトをしない。</p>
+          <p>ウェブページ一式における URI のリンクやプログラムによる参照において、参照された URI がリダイレクトしない、又は、一時停止なしのサーバーサイド・リダイレクトをしない。</p>
         </item>
       </olist>
     </procedure>
