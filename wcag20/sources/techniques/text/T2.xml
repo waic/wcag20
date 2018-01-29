@@ -88,7 +88,7 @@ C) 順序付きリスト項目]]></code>
     <expected-results>
       <ulist>
         <item>
-          <p>1.～5.の全てを満たしている。</p>
+          <p>1.～5. の全てを満たしている。</p>
             </item>
          </ulist>
       </expected-results>
