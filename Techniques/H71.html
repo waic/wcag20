@@ -30,7 +30,7 @@
 H71-1
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H71-1.html">アクセシビリティ・サポーテッド（AS）情報：H71-1</a>
     では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h3 class="small-head" id="H71-ex2">事例 2: チェックボックスのグループ</h3><div class="example"><div class="textbody"><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス (<code>input type="checkbox"</code>)には、<code>label</code> がある。すべてのチェックボックスは、<code>fieldset</code> 要素に含められており、<code>legend</code> 要素にはチェックボックスのグループ全体の説明がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;
+  </p></div></div><h3 class="small-head" id="H71-ex2">事例 2: チェックボックスのグループ</h3><div class="example"><div class="textbody"><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス (<code>input type="checkbox"</code>) には、<code>label</code> がある。すべてのチェックボックスは、<code>fieldset</code> 要素に含められており、<code>legend</code> 要素にはチェックボックスのグループ全体の説明がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;
   &lt;legend&gt;次のことに興味があります (全て選択することも可)&lt;/legend&gt;
   &lt;input type="checkbox" id="photo" name="interests" value="ph"&gt;
   &lt;label for="photo"&gt;写真&lt;/label&gt;&lt;br /&gt;
