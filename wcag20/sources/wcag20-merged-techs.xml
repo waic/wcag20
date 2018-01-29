@@ -153,7 +153,7 @@
 		<inform-div1 id="acknowledgements">
 			<head>謝辞</head>
 			<p>この出版物は、初期は契約番号 ED-OSE-10-C-0067、現在は契約番号 HHSP23301500054C のもとで米国教育省・障害者リハビリテーション研究所 (NIDILRR) の政府資金によって一部賄われている。この出版物の内容は、必ずしも米国教育省の見解や政策を反映するものではなく、また商品名、商用製品、組織の言及は米国政府による支持を意味するものではない。</p>
-			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG) への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc>で提供している。</p>
+			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG) への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc> で提供している。</p>
 			<div2 id="ack_participants-active" role="normal">
 				<head>この文書の作成に貢献した WCAG WG の参加者</head>
 				<ulist>
