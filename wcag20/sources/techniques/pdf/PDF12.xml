@@ -138,7 +138,7 @@
 <p>次の画像は、［オブジェクト］パレットを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/lc-objlib.jpg" height="226" width="611"/><alt>スクリーンショット：フォームの作成に使用できるフォームオブジェクトが表示されている、LiveCycle Designer オブジェクトライブラリ</alt></image></p><p>以下の 3 つの画像は、オブジェクトパレットの各タブを示している。1 つ目の画像では、フィールドの種類 (役割) を指定するための「フィールド」タブが開かれている。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/lc-objpal-t.jpg" height="362" width="252"/><alt>スクリーンショット：LiveCycle Designer オブジェクトパレットの［フィールド］タブ</alt></image></p><p>次の画像は、フィールドに適用できるオプションのある［値］タブを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/lc-objpal-v.jpg" height="269" width="242"/><alt>LiveCycle Designer オブジェクトパレットの「値」タブのオプション</alt></image></p><p>3つ目の画像は、フィールドの名前を指定する［連結］タブを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/lc-objpal-v.jpg" height="269" width="242"/><alt>LiveCycle Designer オブジェクトパレットの「値」タブのオプション</alt></image></p><p>3 つ目の画像は、フィールドの名前を指定する［連結］タブを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/lc-objpal-b.jpg" height="352" width="253"/><alt>LiveCycle Designer オブジェクトパレットの［連結］タブ</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF12/form-lc.pdf"><!-- linktype="examples"-->LiveCycle Designer を使用して名前 (name)、役割 (role)、値 (value) を指定したサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>

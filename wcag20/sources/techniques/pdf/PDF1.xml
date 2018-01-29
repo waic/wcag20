@@ -25,7 +25,7 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>ツール &gt;高度な編集 &gt; TouchUp オブジェクトツールを選択する。</p>&#13;
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt1.gif" height="247" width="358"/><alt>スクリーンショット：[高度な編集]メニューにあるTouchUp オブジェクトツール</alt></image></p></item><item><p>画像のコンテキストメニューから［プロパティ］を選択する。</p></item><item><p>TouchUp のプロパティダイアログボックスで［タグ］タブを選択する。</p></item><item><p>［タグ］パネルで、［代替テキスト］テキストボックスに代替テキストを入力する。 </p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt2.gif" height="231" width="556"/><alt>スクリーンショット：TouchUpプロパティのダイアログにある［タグ］タブ</alt></image></p></item></olist><p>この事例のサンプルが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/alt-entry-to-an-image.pdf"><!-- linktype="examples"-->画像に /Alt エントリを追加したサンプル：英語 (PDFファイル)</loc> にある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt2.gif" height="231" width="556"/><alt>スクリーンショット：TouchUpプロパティのダイアログにある［タグ］タブ</alt></image></p></item></olist><p>この事例のサンプルが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/alt-entry-to-an-image.pdf"><!-- linktype="examples"-->画像に /Alt エントリを追加したサンプル：英語 (PDF ファイル)</loc> にある。</p>
 </description>
     </eg-group>
     <eg-group>
