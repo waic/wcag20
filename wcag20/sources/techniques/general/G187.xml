@@ -15,10 +15,10 @@
     <p>一般的にこれが機能するとされているウェブコンテンツ技術：</p>
     <ulist>
       <item>
-        <p>Graphics Interchange Format(<abbr title="Graphics Interchange Format">GIF</abbr>)</p>
+        <p>Graphics Interchange Format (<abbr title="Graphics Interchange Format">GIF</abbr>)</p>
       </item>
       <item>
-        <p>Animated Portable Network Graphics(<abbr title="Animated Portable Network Graphics">APNG</abbr>)</p>
+        <p>Animated Portable Network Graphics (<abbr title="Animated Portable Network Graphics">APNG</abbr>)</p>
       </item>
     </ulist>
     <a11ysuprorted rating="pass" exnumber="0"/>

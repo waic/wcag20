@@ -16,7 +16,7 @@
    <examples>
       <eg-group>
       <head>JSP/サーブレット</head>
-      <description><p>Java サーブレット又は JavaServer Pages(JSP) では、開発者は <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> を使用できる。</p>
+      <description><p>Java サーブレット又は JavaServer Pages (JSP) では、開発者は <code><![CDATA[HttpServletResponse.sendRedirect(String url)]]></code> を使用できる。</p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -24,7 +24,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 …
   response.sendRedirect("/newUserLogin.do");
 }]]></code>
-      <description><p>このコードは、302 ステータスコード(「Found」)及び新しい URL の Location ヘッダーを含むレスポンスをユーザエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code>  で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
+      <description><p>このコードは、302 ステータスコード (「Found」) 及び新しい URL の Location ヘッダーを含むレスポンスをユーザエージェントに送る。また、<code><![CDATA[response.sendError(int code, String message)]]></code>  で、ステータスコードとしてインタフェース javax.servlet.http.HttpServletResponse で定義されている定数の一つを用いて、別のステータスコードに設定することも可能である。 </p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)

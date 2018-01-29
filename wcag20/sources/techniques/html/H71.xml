@@ -41,7 +41,7 @@
     </eg-group>
     <eg-group>
       <head>チェックボックスのグループ</head>
-      <description><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス (<code>input type="checkbox"</code>)には、<el>label</el> がある。すべてのチェックボックスは、<el>fieldset</el> 要素に含められており、<el>legend</el> 要素にはチェックボックスのグループ全体の説明がある。</p>
+      <description><p>あるウェブサイトでの利用者・プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス (<code>input type="checkbox"</code>) には、<el>label</el> がある。すべてのチェックボックスは、<el>fieldset</el> 要素に含められており、<el>legend</el> 要素にはチェックボックスのグループ全体の説明がある。</p>
 </description>
       <code role="html401"><![CDATA[<fieldset>
   <legend>次のことに興味があります (全て選択することも可)</legend>

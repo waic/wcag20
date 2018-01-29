@@ -144,7 +144,7 @@
     </eg-group>
     <eg-group>
       <head>入力フィールド</head>
-      <description><exsubhead>事例 3a</exsubhead><p>事例 3a では、入力フィールドが「編集可能テキスト」という役割 (Role)を持っている。<el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「果物の種類」となる。値 (Value) は、<att>value</att> 属性の「バナナ」となる。</p>
+      <description><exsubhead>事例 3a</exsubhead><p>事例 3a では、入力フィールドが「編集可能テキスト」という役割 (Role) を持っている。<el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の識別名 (Name) は、<el>label</el> 要素で指定した「果物の種類」となる。値 (Value) は、<att>value</att> 属性の「バナナ」となる。</p>
 </description>
       <code role="xhtml"><![CDATA[<label for="text_1">果物の種類</label>
 <input id="text_1" type="text" value="バナナ"> ]]></code>
