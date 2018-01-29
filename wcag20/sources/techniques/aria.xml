@@ -38,7 +38,7 @@
    </header>
    <body><!-- techniques -->
       <div1 id="aria">
-         <head>ARIAの達成方法</head>
+         <head>ARIA の達成方法</head>
          <div2 id="wai-aria_notes">
             <head>WAI-ARIA 技術ノート</head>
             <p>WAI-ARIA は、アクセシビリティを向上させるために、ウェブページやリッチインターネットウィジェットに次のセマンティック情報を追加するオプションをウェブ開発者に提供する。その結果、そのセマンティック情報はブラウザに公開される。</p>
