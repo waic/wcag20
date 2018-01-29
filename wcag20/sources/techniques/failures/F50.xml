@@ -10,11 +10,11 @@
       <success-criterion idref="time-limits-pause" relationship="failure"/>
    </applies-to>
    <description>
-    <p>スクリプトを用いてコンテンツの表示、非表示を定期的に切り換えることで、コンテンツを点滅させることができる。スクリプトが5秒以内に点滅を止めるためのメカニズムを含まない場合は不適合となる。点滅を停止させるための達成方法をどのように修正するかについての情報は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR22.html" linktype="script">SCR22： スクリプトを用いて、点滅を制御し、5秒以内に停止させる</loc>(Scripting) を参照。</p>
+    <p>スクリプトを用いてコンテンツの表示、非表示を定期的に切り換えることで、コンテンツを点滅させることができる。スクリプトが 5 秒以内に点滅を止めるためのメカニズムを含まない場合は不適合となる。点滅を停止させるための達成方法をどのように修正するかについての情報は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR22" linktype="script"/> を参照。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>以下の例では点滅するコンテンツのためにスクリプトが使用されているが、点滅は5秒後に止まるのではなく、無期限に点滅し続ける。</p>
+      <description><p>以下の例では点滅するコンテンツのためにスクリプトが使用されているが、点滅は 5 秒後に止まるのではなく、無期限に点滅し続ける。</p>
 </description>
       <code><![CDATA[
 ...
@@ -50,12 +50,12 @@ show();
       <p>点滅しているそれぞれのインスタンスに対して：</p>
       <olist>
         <item>
-          <p>点滅が5秒以内で止まる。</p>
+          <p>点滅が 5 秒以内で止まる。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
-         <p>1.を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p>
+         <p>1. を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p>
       </expected-results>
    </tests>
 </technique>

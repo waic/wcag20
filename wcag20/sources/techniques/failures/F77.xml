@@ -18,11 +18,11 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>コンテンツ制作者が、オンラインのバリデーション・サービスを使って、すべてのid属性値が一意的であることをチェックしている。</p>
+      <description><p>コンテンツ制作者が、オンラインのバリデーション・サービスを使って、すべての id 属性値が一意的であることをチェックしている。</p>
 </description>
     </eg-group>
     <eg-group role="failure">
-      <description><p>コンテンツ開発者が、オーサリングツールの機能を利用して、id属性値が一意的であることを確認している。</p>
+      <description><p>コンテンツ開発者が、オーサリングツールの機能を利用して、id 属性値が一意的であることを確認している。</p>
 </description>
     </eg-group>
    </examples>
@@ -59,14 +59,14 @@
       <procedure>
       <olist>
         <item>
-          <p>すべてのIDの値がウェブページにおいて一意的である。</p>
+          <p>すべての ID の値がウェブページにおいて一意的である。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>1. を満たしていない場合、この不適合事例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>
