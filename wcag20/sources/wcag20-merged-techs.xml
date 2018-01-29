@@ -111,13 +111,13 @@
 		<div1 id="intro">
 			<head><emph>WCAG 2.0 達成方法集のイントロダクション</emph></head>
 			<p use-id="abstract-general-intro"/>
-			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この<emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ1年に<phrase>2回</phrase>、定期的に更新する文書である。</p>
+			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この <emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ 1 年に <phrase>2 回</phrase>、定期的に更新する文書である。</p>
 			<p><phrase use-id="abstract-techniques-informative"/></p>
 			<note>
 				<p>W3C は、必要とする W3C の十分な達成方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
 				<ulist>
 					<item>
-						<p>WCAG 2 FAQ における<loc href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
+						<p>WCAG 2 FAQ における <loc href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
 					</item>
 					<!--
 							<item>
