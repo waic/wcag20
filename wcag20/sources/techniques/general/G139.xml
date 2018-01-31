@@ -4,7 +4,7 @@
 <technique id="G139">
    <short-name>利用者がエラー箇所に移動できるメカニズムを作成する</short-name>
    <applicability>
-      <p>利用者のデータ入力を受け付け、そのフォーマット、値及び/又は入力の種類に制限があるコンテンツ</p>
+      <p>利用者のデータ入力を受け付け、そのフォーマット、値及び／又は入力の種類に制限があるコンテンツ</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>

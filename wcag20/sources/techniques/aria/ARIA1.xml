@@ -156,7 +156,7 @@ Customize </button></span></p>
          <description>
             <p>この例は、ページ上のボタンにaria-describedbyプロパティを追加するためにスクリプトを使用している。この例は、説明テキストを含む要素のidを保持するためにbuttonIds配列変数を作成する。setDescribedBy()関数は、windowオブジェクトのonloadイベントから呼び出される。</p>
             <p>setDescribedBy()関数は、ボタン要素のすべてをループし、aria-describedbyプロパティを設定するために各ボタン要素上でsetAttribute()を呼び出す。各ボタンのaria-describedbyプロパティは、その説明のテキストを含む要素のidに設定される。</p>
-            <p>WAI-ARIAをサポートするユーザエージェント及び/又は支援技術を使用すれば、ユーザインタフェースコントロールがフォーカスを受け取る際に説明が提供される。</p>
+            <p>WAI-ARIAをサポートするユーザエージェント及び／又は支援技術を使用すれば、ユーザインタフェースコントロールがフォーカスを受け取る際に説明が提供される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<html lang="en-us">
 <head>
