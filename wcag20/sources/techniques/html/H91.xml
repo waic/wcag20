@@ -31,49 +31,49 @@
           <td>リンク</td>
           <td><code>&lt;a&gt;</code> 要素の <code>title</code> 属性、画像リンクの場合は <code>alt</code> 属性。<!--br/-->テキストと画像の <code>alt</code> 属性を両方が提供されている場合は、両者を結合する。</td>
           <td><code>href</code> 属性</td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;button&gt;</td>
           <td>プッシュボタン</td>
           <td><code>&lt;button&gt;</code> 要素内のテキスト又は <code>title</code> 属性</td>
           <td> </td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
-          <td> &lt;fieldset&gt; </td>
+          <td>&lt;fieldset&gt;</td>
           <td>グループ化</td>
           <td>フィールドセット要素にある <code>&lt;legend&gt;</code> 要素内のテキスト</td>
           <td> </td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;input type = "button", "submit", or "reset"&gt;</td>
           <td>プッシュボタン</td>
           <td><code>value</code> 属性</td>
           <td> </td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;input type = "image"&gt;</td>
           <td>プッシュボタン</td>
           <td><code>alt</code> 属性又は <code>title</code> 属性</td>
           <td> </td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;input type = "text"&gt;</td>
           <td>編集可能なテキスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td><code>value</code> 属性</td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;input type = "password"&gt;</td>
           <td>編集可能なテキスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td>値は意図的に隠されている</td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
         <tr>
           <td>&lt;input type="checkbox"&gt;</td>
@@ -90,7 +90,7 @@
           <td><code>checked</code> 属性</td>
         </tr>
         <tr>
-          <td> &lt;select&gt; </td>
+          <td>&lt;select&gt;</td>
           <td>リスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td><code>&lt;option&gt;</code> 要素の <code>selected</code> 属性で「<code>selected</code>」と指定</td>
@@ -101,7 +101,7 @@
           <td>編集可能なテキスト</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
           <td><code>&lt;textarea&gt;</code> 要素内のテキスト</td>
-          <td>&nbsp;</td>
+          <td> </td>
         </tr>
       </tbody>
     </table>
