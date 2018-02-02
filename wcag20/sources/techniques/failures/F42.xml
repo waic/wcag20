@@ -4,7 +4,7 @@
 <technique id="F42">
    <short-name>リンクをエミュレートしている場合の達成基準 1.3.1、達成基準 2.1.1、達成基準 2.1.3、又は達成基準 4.1.2 の失敗例</short-name>
    <applicability>
-      <p>スクリプトを含むHTML及びXHTML。</p>
+      <p>スクリプトを含む HTML 及び XHTML。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic" relationship="failure"/>
@@ -20,7 +20,7 @@
    <examples>
       <eg-group role="failure">
       <head><el>span</el> 要素のスクリプト</head>
-      <description><p>スクリプトによるイベントハンドリングが<code>span</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
+      <description><p>スクリプトによるイベントハンドリングが <code>span</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
       <code role="html401"><![CDATA[
 <span onclick="this.location.href='newpage.html'">
@@ -29,7 +29,7 @@
     </eg-group>
     <eg-group role="failure">
       <head><el>img</el> 要素のスクリプト</head>
-      <description><p>スクリプトによるイベントハンドリングが<code>img</code>要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
+      <description><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
       <code role="html401"><![CDATA[
 <img src="go.gif" 
@@ -140,7 +140,7 @@ function changeLocation(objEvent, strLocation)
       <expected-results>
          <ulist>
             <item>
-               <p>1. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 1.3.1及び 4.1.2を満たしていないことになる。2. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 2.1.1及び 2.1.3を満たしていないことになる。</p>
+               <p>1. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 1.3.1 及び 4.1.2 を満たしていないことになる。2. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 2.1.1 及び 2.1.3 を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>

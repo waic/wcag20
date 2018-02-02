@@ -4,7 +4,7 @@
 <technique id="C23">
    <short-name>メインコンテンツのテキスト及び背景の色を指定せず、バナー、機能及びナビゲーションなどのような補助的なコンテンツのテキスト及び背景の色を CSS で指定する</short-name>
    <applicability>
-      <p>CSSを用いているウェブページ</p>
+      <p>CSS を用いているウェブページ</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-visual-presentation"

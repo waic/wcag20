@@ -11,11 +11,11 @@
                          relationship="failure"/>
    </applies-to>
    <description>
-    <p>認知障害のある利用者の多くは、両端揃え(左右両端を揃えた配置)されたテキストのブロックで重大なトラブルに陥ることがある。単語間のスペースによって、ページ上を流れる「余白 (隙間) の川」ができる。それによって、一部の人々はテキストを読むことが困難になる。この不適合事例は、この混乱させるテキストレイアウトが発生する状況について説明している。この問題を回避する最良の方法は、両端揃え(左右両端を揃えた配置)されたテキストレイアウトにしないことである。</p>
+    <p>認知障害のある利用者の多くは、両端揃え (左右両端を揃えた配置) されたテキストのブロックで重大なトラブルに陥ることがある。単語間のスペースによって、ページ上を流れる「余白 (隙間) の川」ができる。それによって、一部の人々はテキストを読むことが困難になる。この不適合事例は、この混乱させるテキストレイアウトが発生する状況について説明している。この問題を回避する最良の方法は、両端揃え (左右両端を揃えた配置) されたテキストレイアウトにしないことである。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次の不適合事例では、HTMLの<code>align</code>要素が両端揃えのテキストを生成するために用いられている。</p>
+      <description><p>次の不適合事例では、HTML の <code>align</code> 要素が両端揃えのテキストを生成するために用いられている。</p>
 </description>
       <code role="html"><![CDATA[ 
 <p align="justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum sit amet pede. Phasellus 
@@ -27,7 +27,7 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
 </p>]]></code>
     </eg-group>
     <eg-group role="failure">
-      <description><p>この不適合事例では、CSSの<code>text-align</code>属性が両端揃えのテキストを生成するために用いられている。</p>
+      <description><p>この不適合事例では、CSS の <code>text-align</code> 属性が両端揃えのテキストを生成するために用いられている。</p>
 </description>
       <code role="css"><![CDATA[ 
 ...
@@ -53,7 +53,7 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
           <p>一般的なブラウザでページを開く。</p>
         </item>
         <item>
-          <p>コンテンツが両端揃え(左右両端を揃えた配置)されていない。</p>
+          <p>コンテンツが両端揃え (左右両端を揃えた配置) されていない。</p>
         </item>
       </olist>
     </procedure>

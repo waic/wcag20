@@ -5,7 +5,7 @@
    <short-name>エラーを特定するために aria-alertdialog を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc> をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
@@ -26,13 +26,13 @@
       <p>この達成方法の目的は、入力エラーが発生していることを利用者に警告することにある。<code><![CDATA[role="alertdialog"]]></code>を使用することで、通知を作成することができる。この通知は、次のような特徴をもつモーダルであるべきである:</p>
       <ulist>
          <item>
-            <p><att>aria-label</att>又は<att>aria-labelledby</att>属性で、アラートダイアログにアクセシブルな名前を与えている。</p>
+            <p><att>aria-label</att> 又は <att>aria-labelledby</att> 属性で、アラートダイアログにアクセシブルな名前を与えている。</p>
          </item>
          <item>
-            <p><att>aria-describedby</att>で、アラートのテキストへの参照を提供している。</p>
+            <p><att>aria-describedby</att> で、アラートのテキストへの参照を提供している。</p>
          </item>
          <item>
-            <p>そのアラートダイアログは、少なくとも1つのフォーカス可能なコントロールを含んでおり、アラートダイアログが開く際にフォーカスがそのコントロールに移動すべきである。</p>
+            <p>そのアラートダイアログは、少なくとも 1 つのフォーカス可能なコントロールを含んでおり、アラートダイアログが開く際にフォーカスがそのコントロールに移動すべきである。</p>
          </item>
          <item>
             <p>タブ順序は、タブが開いている間アラートダイアログの内部に拘束される。</p>
@@ -41,7 +41,7 @@
             <p>ダイアログが閉じられる場合、可能であれば、フォーカスはダイアログが開く前の位置に戻る。</p>
          </item>
       </ulist>
-      <p>アラートダイアログは、必要とされるまで、支援技術によってアクセスされる方法で存在すべきではないことに注意。これを行う1つの方法は、静的なHTMLに含めない代わりに、エラー状態がトリガーされた時にスクリプトを通してDOMに挿入することである。この挿入は、次のHTMLサンプルに対応する。</p>
+      <p>アラートダイアログは、必要とされるまで、支援技術によってアクセスされる方法で存在すべきではないことに注意。これを行う 1 つの方法は、静的な HTML に含めない代わりに、エラー状態がトリガーされた時にスクリプトを通して DOM に挿入することである。この挿入は、次の HTML サンプルに対応する。</p>
    </description>
    <examples>
       <eg-group>
@@ -80,16 +80,16 @@
                <p>アラートダイアログが表示される原因となるエラーをトリガーする。</p>
             </item>
             <item>
-               <p>アラートダイアログは少なくとも1つのフォーカス可能なコントロールを含み、アラートダイアログが開いた際にフォーカスがそのコントロールに移動する。</p>
+               <p>アラートダイアログは少なくとも 1 つのフォーカス可能なコントロールを含み、アラートダイアログが開いた際にフォーカスがそのコントロールに移動する。</p>
             </item>
             <item>
                <p>タブ順序は、タブが開いている間アラートダイアログ内に拘束され、ダイアログを閉じた際に、可能ならば、フォーカスはダイアログが開く前の位置に戻る。</p>
             </item>
             <item>
-               <p>適用された<code><![CDATA[role="alertdialog"]]></code>をもつ要素を調べる。</p>
+               <p>適用された <code><![CDATA[role="alertdialog"]]></code> をもつ要素を調べる。</p>
             </item>
             <item>
-               <p><att>aria-label</att>又は<att>aria-labelledby</att>属性のいずれかが、適切にアラートダイアログにアクセシブルな名前を与えるために使用されている。</p>
+               <p><att>aria-label</att> 又は <att>aria-labelledby</att> 属性のいずれかが、適切にアラートダイアログにアクセシブルな名前を与えるために使用されている。</p>
             </item>
             <item>
                <p>アラートダイアログのコンテンツが入力エラーを識別している。</p>
@@ -102,7 +102,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>2.、3.、5.及び6.を満たしている。達成基準3.3.3を達成するためには、7も満たしている必要がある。</p>
+               <p>2.、3.、5. 及び 6. を満たしている。達成基準 3.3.3 を達成するためには、7 も満たしている必要がある。</p>
             </item>
          </ulist>
       </expected-results>

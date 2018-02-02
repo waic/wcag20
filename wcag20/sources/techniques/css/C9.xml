@@ -10,9 +10,7 @@
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、単に装飾することだけが目的の画像と、マークアップを追加することなくウェブコンテンツに対して視覚的な整形を行うための画像を追加する方法を示すことである。
-これによって、支援技術がテキストではないコンテンツを無視することが可能になる。
-文字サイズの拡大やハイコントラストの設定を妨げているCSSの背景画像を消すことができるように、一部のユーザエージェントでは、利用者の要求に応じて CSS を無視または無効にすることができる。</p>
+    <p>この達成方法の目的は、単に装飾することだけが目的の画像と、マークアップを追加することなくウェブコンテンツに対して視覚的な整形を行うための画像を追加する方法を示すことである。これによって、支援技術がテキストではないコンテンツを無視することが可能になる。文字サイズの拡大やハイコントラストの設定を妨げている CSS の背景画像を消すことができるように、一部のユーザエージェントでは、利用者の要求に応じて CSS を無視または無効にすることができる。</p>
     <p>背景画像は、以下の CSS プロパティで表示させることができる：</p>
     <ulist>
       <item>
@@ -32,9 +30,8 @@
   </description>
    <examples>
       <eg-group>
-      <head>HTMLページの背景画像</head>
-      <description><p>
-以下のスタイルシートは、ページ全体の背景画像を指定している。</p>
+      <head>HTML ページの背景画像</head>
+      <description><p>以下のスタイルシートは、ページ全体の背景画像を指定している。</p>
 </description>
       <code><![CDATA[…
 <style type="text/css">
@@ -45,18 +42,17 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
 …]]></code>
     </eg-group>
     <eg-group>
-      <head>CSSによるロールオーバーの背景画像</head>
-      <description><p>
-以下のスタイルシートは、利用者がマウスポインタをリンクの上に置いたときの装飾的なロールオーバー効果を出すためにCSSの<code>background</code>プロパティを使用している。</p>
+      <head>CSS によるロールオーバーの背景画像</head>
+      <description><p>以下のスタイルシートは、利用者がマウスポインタをリンクの上に置いたときの装飾的なロールオーバー効果を出すために CSS の <code>background</code> プロパティを使用している。</p>
 </description>
       <code><![CDATA[a:hover { background: #ffe url('/images/hover.gif') repeat; color: #000;
    text-decoration: none;
 }]]></code>
     </eg-group>
     <eg-group>
-      <head>タブなどの要素の角を丸くするために使われるCSSによる背景画像</head>
+      <head>タブなどの要素の角を丸くするために使われる CSS による背景画像</head>
       <description><p>
-以下のスタイルシートでは、要素の角を丸くするために、CSSの<code>background</code>プロパティを使用している。</p>
+以下のスタイルシートでは、要素の角を丸くするために、CSS の <code>background</code> プロパティを使用している。</p>
 </description>
       <code><![CDATA[…
 <style type="text/css">

@@ -35,24 +35,24 @@
   </description>
    <examples>
       <eg-group>
-      <head>例1：最も重要な識別情報を初めに記載するページタイトル</head>
+      <head>最も重要な識別情報を初めに記載するページタイトル</head>
       <description><p>大きな組織のあるグループによって公開されているウェブページがある。ウェブページのタイトルでは、最初に、ページの話題を特定して、次に、そのグループ名及び組織名を示している。</p>
 </description>
       <code role="html401"><![CDATA[<title>求人情報：グループ名：組織名</title>]]></code>
     </eg-group>
     <eg-group>
-      <head>例2：コンテンツの内容が分かるページタイトルの付いた同期したメディアによるプレゼンテーション</head>
-      <description><p>2004年の南アジアで発生した津波に関する同期したメディアのプレゼンテーションには、「2004年の津波」というタイトルがつけられている。</p>
+      <head>コンテンツの内容が分かるページタイトルの付いた同期したメディアによるプレゼンテーション</head>
+      <description><p>2004 年の南アジアで発生した津波に関する同期したメディアのプレゼンテーションには、「2004 年の津波」というタイトルがつけられている。</p>
 </description>
     </eg-group>
     <eg-group>
-      <head>例3：3つの部分から成る、コンテンツの内容が分かるページタイトルが付与されたウェブページ</head>
-      <description><p>ウェブページでは、クローズド・キャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで3つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2つ目はウェブページが属するサブサイト名、そして3つ目はウェブページ自体を特定している (具体例としては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</loc>を参照。)</p>
+      <head>3 つの部分から成る、コンテンツの内容が分かるページタイトルが付与されたウェブページ</head>
+      <description><p>ウェブページでは、クローズド・キャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで 3 つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2 つ目はウェブページが属するサブサイト名、そして 3 つ目はウェブページ自体を特定している (具体例としては、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</loc> を参照。)</p>
 </description>
     </eg-group>
     <eg-group>
-      <head>例4：新聞のウェブページ</head>
-      <description><p>今日の版のみを閲覧できるウェブサイトでは、そのウェブページに「全国のニュース、第一面」というタイトルがつけられている。異なる日の版を閲覧することできるウェブサイトでは、そのページタイトルを「全国のニュース、第一面、2005年10月17日」としている。</p>
+      <head>新聞のウェブページ</head>
+      <description><p>今日の版のみを閲覧できるウェブサイトでは、そのウェブページに「全国のニュース、第一面」というタイトルがつけられている。異なる日の版を閲覧することできるウェブサイトでは、そのページタイトルを「全国のニュース、第一面、2005 年 10 月 17 日」としている。</p>
 </description>
     </eg-group>
    </examples>

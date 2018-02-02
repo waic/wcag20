@@ -26,7 +26,7 @@
          <description>
             <p>この事例では、二つのテキストフィールド (「name」および「zip code」) を含むサンプルフォームが示されている。どちらのフィールドも必須入力である。フォームの「submit」ボタンが押されると、テキストフィールドの値が検証される。テキストフィールドに無効な値が含まれていると、<obj>_accProps</obj> オブジェクトがそのテキストフィールドに対して生成され、<prop>description</prop> プロパティにエラーメッセージが設定される。</p>
             <note>
-               <p>注記： アクセシブルな「説明」(<prop>_accProps.description</prop> プロパティ) を使用する代わりに、エラーテキストをアクセシブルな「名前」(<prop>_accProps.name</prop>) に追加することもできる。これは、_accProps.descriptionよりも広範囲の支援技術でサポートされている。</p>
+               <p>アクセシブルな「説明」(<prop>_accProps.description</prop> プロパティ) を使用する代わりに、エラーテキストをアクセシブルな「名前」(<prop>_accProps.name</prop>) に追加することもできる。これは、_accProps.description よりも広範囲の支援技術でサポートされている。</p>
             </note>
             <p>ActionScript 2.0 のコード</p>
          </description>

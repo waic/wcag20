@@ -4,7 +4,7 @@
 <technique id="H39">
    <short-name>データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する</short-name>
    <applicability>
-      <p>HTML及びXHTMLのデータテーブル</p>
+      <p>HTML 及び XHTML のデータテーブル</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"

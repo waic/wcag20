@@ -51,7 +51,7 @@
                </image>
 							     </p>
             <note>
-               <p>この事例のラジオボタンをアクセシブルにするには、次の2行をムービーのスクリプトに追加する必要がある。<code xml:space="preserve"><![CDATA[import fl.accessibility.RadioButtonAccImpl;
+               <p>この事例のラジオボタンをアクセシブルにするには、次の 2 行をムービーのスクリプトに追加する必要がある。<code xml:space="preserve"><![CDATA[import fl.accessibility.RadioButtonAccImpl;
 RadioButtonAccImpl.enableAccessibility();]]></code>
 								       </p>
             </note>

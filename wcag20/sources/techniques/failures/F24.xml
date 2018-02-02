@@ -20,8 +20,8 @@
   </description>
    <examples>
     <eg-group role="failure">
-      <head>CSSで背景色のみ指定する</head>
-      <description><p>次の例では、背景色はCSSスタイルシートで定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
+      <head>CSS で背景色のみ指定する</head>
+      <description><p>次の例では、背景色は CSS スタイルシートで定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
 </description>
       <code><![CDATA[
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -41,8 +41,8 @@
 </html>]]></code>
     </eg-group>
     <eg-group role="failure">
-      <head>CSSで前景色のみ指定する</head>
-      <description><p>次の例では、前景色はCSSスタイルシートで定義されているが背景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
+      <head>CSS で前景色のみ指定する</head>
+      <description><p>次の例では、前景色は CSS スタイルシートで定義されているが背景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
 </description>
       <code><![CDATA[
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -62,7 +62,7 @@
 </html>]]></code>
     </eg-group>
     <eg-group role="failure">
-      <head>CSSでリンクテキストの色を指定する</head>
+      <head>CSS でリンクテキストの色を指定する</head>
       <description><p>次の例では、リンクテキスト (前景) の色をボディ要素で定義している。しかし背景色は定義していない。よって、この事例は達成基準を満たしていない。</p>
 </description>
       <code><![CDATA[
@@ -86,7 +86,7 @@
     </eg-group>
       <eg-group role="failure">
       <head>HTML の bgcolor 属性で背景色のみ指定する</head>
-      <description><p>次の例では、背景色は<el>body</el>要素で定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていないことになる。</p>
+      <description><p>次の例では、背景色は <el>body</el> 要素で定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていないことになる。</p>
       <p>HTML 4 の時点で <att>bgcolor</att> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p>
 </description>
       <code><![CDATA[
@@ -105,7 +105,7 @@
     <eg-group role="failure">
       <head>HTML の text 属性を持つ前景色のみを指定する</head>
       <description><p>次の例では、前景色は body 要素で定義されているが、背景色は定義されていない。したがって、この例は達成基準を満たしていない。</p>
-      <p>HTML 4の時点で <att>text</att> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p>
+      <p>HTML 4 の時点で <att>text</att> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p>
 </description>
       <code><![CDATA[
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 

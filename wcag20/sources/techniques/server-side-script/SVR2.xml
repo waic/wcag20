@@ -4,18 +4,18 @@
 <technique id="SVR2">
    <short-name>適合しているコンテンツからのみ、適合していないコンテンツにアクセスできるように、.htaccess を使用する</short-name>
    <applicability>
-      <p>.htaccessをサポートしているウェブサーバー (一般的にはApache) 内にあるコンテンツで、コンテンツの適合版が不適合版の代替として提供されているもの</p>
+      <p>.htaccess をサポートしているウェブサーバー (一般的には Apache) 内にあるコンテンツで、コンテンツの適合版が不適合版の代替として提供されているもの</p>
    </applicability>
    <applies-to>
       <conformance-criterion idref="cc1" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAGに適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替版が提供されていれば、そのサイト全体が適合していることになる。適合要件 4は代替版が不適合なコンテンツ又はそのURIからたどることができることを要求している。</p>
-    <p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この達成方法では制作者が不適合のコンテンツにその代替版として提供されるURI、又は不適合のバージョンと代替版双方へのリンクを含むページからしかアクセスできないようにするためにApacheのモジュール「mod_access」を使う方法について説明する。</p>
+    <p>この達成方法の目的は、コンテンツの不適合なバージョンも利用可能な場合に、利用者が常にアクセシブルなバージョンにアクセスできることを保証することである。WCAG に適合していないフォーマットでコンテンツが提供される際でも、アクセシブルではないコンテンツの代替版が提供されていれば、そのサイト全体が適合していることになる。適合要件 4 は代替版が不適合なコンテンツ又はその URI からたどることができることを要求している。</p>
+    <p>不適合のコンテンツの中からアクセシブルなリンクを提供することは常に可能ではないため、この達成方法では制作者が不適合のコンテンツにその代替版として提供される URI、又は不適合のバージョンと代替版双方へのリンクを含むページからしかアクセスできないようにするために Apache のモジュール「mod_access」を使う方法について説明する。</p>
   </description>
    <examples>
       <eg-group>
-      <description><p>次の.htaccessファイルは、「accessible.html」からのリクエストではない限り、「inaccessible.html」から「accessible.html」へのリダイレクトを要求するApacheのmod_redirectモジュールを使用している。</p>
+      <description><p>次の .htaccess ファイルは、「accessible.html」からのリクエストではない限り、「inaccessible.html」から「accessible.html」へのリダイレクトを要求する Apache の mod_redirect モジュールを使用している。</p>
 </description>
       <code role="htaccess"><![CDATA[
 # アクセシブルではないコンテンツへのリクエストがaccessible.html
@@ -34,8 +34,7 @@ SetEnvIf Referer .*(accessible.html)$ let_me_in
 ErrorDocument 403 /example_directory/accessible.html]]></code>
     </eg-group>
     <eg-group>
-      <description><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつはWCAGに宣言しているレベルで適合しておらず、「jna (全くアクセシブルではない：Just Not Accessible)」というファイル拡張子を使用している。これらのファイルは、.htaccessファイルとともに全て「jna」というフォルダに保存されている。この.htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jnaの拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。/p>
-		</p>
+      <description><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつは WCAG に宣言しているレベルで適合しておらず、「jna (全くアクセシブルではない：Just Not Accessible)」というファイル拡張子を使用している。これらのファイルは、.htaccess ファイルとともに全て「jna」というフォルダに保存されている。この .htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jna の拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。</p>
 </description>
       <code role="htaccess"><![CDATA[
 # アクセシブルではないコンテンツへのリクエストが
@@ -89,10 +88,10 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
       <procedure>
       <olist>
         <item>
-          <p>宣言している適合レベルでWCAGに適合していないページで、.htaccessファイルの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
+          <p>宣言している適合レベルで WCAG に適合していないページで、.htaccess ファイルの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
         </item>
         <item>
-          <p>不適合のコンテンツのURIを開く。</p>
+          <p>不適合のコンテンツの URI を開く。</p>
         </item>
         <item><p>結果となるページが次のうちのひとつである：</p>
 						<olist>
@@ -103,7 +102,7 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
     <expected-results>
       <ulist>
         <item>
-          <p>3.a.又は3.b.を満たしている。</p>
+          <p>3.a. 又は 3.b. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

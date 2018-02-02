@@ -34,7 +34,7 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>見出し要素 (<code>th</code>) やテーブルコンテンツの中からプログラム的に見出しを算出させるためにほかの適切なテーブルマークアップ (<code>scope</code>属性、<code>headers</code>及び<code>id</code>あるいはARIA ロール <code>columnheader</code> や <code>rowheader</code>) が使われていないときにこの失敗例は起こる。データセルが見出し情報と組み合わせるときだけはっきりする場合、見出しをプログラム的に算出可能にするのは特別に重要である。スクリーンリーダーの利用者がテーブルコンテンツを縦あるいは横に閲覧する場合、見出しは必要な文脈を提供するために読み上げられる。</p>
+      <p>見出し要素 (<code>th</code>) やテーブルコンテンツの中からプログラム的に見出しを算出させるためにほかの適切なテーブルマークアップ (<code>scope</code> 属性、<code>headers</code> 及び <code>id</code> あるいは ARIA ロール <code>columnheader</code> や <code>rowheader</code>) が使われていないときにこの失敗例は起こる。データセルが見出し情報と組み合わせるときだけはっきりする場合、見出しをプログラム的に算出可能にするのは特別に重要である。スクリーンリーダーの利用者がテーブルコンテンツを縦あるいは横に閲覧する場合、見出しは必要な文脈を提供するために読み上げられる。</p>
    </description>
    <examples>
       <eg-group role="failure">
@@ -103,8 +103,8 @@
             <item>
             	<p>テーブル見出し要素 (<el>th</el>) でマークアップされた見出し</p>
             </item>
-         	<item><p>テーブル見出しが1行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
-			<item><p>テーブル見出しが1行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
+         	<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
+			<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
             <item>
                <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられたヘッダとデータのセル</p>
             </item>
@@ -112,7 +112,7 @@
                <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされたヘッダ</p>
             </item>
             <item>
-               <p>ARIAのロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
+               <p>ARIA のロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
             </item>
          </olist>
       </procedure>

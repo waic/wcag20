@@ -4,7 +4,7 @@
 <technique id="H44">
    <short-name>テキストラベルとフォームコントロールを関連付けるために、label 要素を使用する</short-name>
    <applicability>
-      <p>ラベルを用いているHTML及びXHTMLのフォーム・コントロール</p>
+      <p>ラベルを用いている HTML 及び XHTML のフォーム・コントロール</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -136,7 +136,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1.及び2.を満たしている。達成基準 3.3.2 に関しては、3.も満たしている。</p>
+          <p>1. 及び 2. を満たしている。達成基準 3.3.2 に関しては、3. も満たしている。</p>
         </item>
       </ulist>
       </expected-results>

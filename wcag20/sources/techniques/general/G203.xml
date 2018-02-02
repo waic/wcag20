@@ -18,10 +18,10 @@
    </description>
    <examples>
       <eg-group>
-         <head>株主に語りかけているCEOの映像</head>
+         <head>株主に語りかけている CEO の映像</head>
          <description>
-            <p>CEOがオフィスで株主に語りかけている。この映像の冒頭には、日付の入ったタイトルカットがある。話が始まると、映像の下部に「XYZ社 社長 John Doe」とテキストが出てくる。映像の最後には「制作 Honest TV Productions Ltd.」とタイトルクレジットが出てくる。</p>
-            <p>代替として、映像の下にaria-describedby属性で映像ファイルと関連づけられた段落があり、「6月22日 John Doe XYZ社 社長 オフィスにて撮影。Honest TV Productions Ltd.制作」と書かれている。</p>
+            <p>CEO がオフィスで株主に語りかけている。この映像の冒頭には、日付の入ったタイトルカットがある。話が始まると、映像の下部に「XYZ 社 社長 John Doe」とテキストが出てくる。映像の最後には「制作 Honest TV Productions Ltd.」とタイトルクレジットが出てくる。</p>
+            <p>代替として、映像の下に aria-describedby 属性で映像ファイルと関連づけられた段落があり、「6 月 22 日 John Doe XYZ 社 社長 オフィスにて撮影。Honest TV Productions Ltd. 制作」と書かれている。</p>
          </description>
       </eg-group>
    </examples>

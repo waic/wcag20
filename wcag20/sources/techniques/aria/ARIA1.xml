@@ -21,17 +21,17 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、プログラム的に決定される、ユーザインタフェース要素に関する説明的な情報を提供するために、どのようにWAI-ARIA  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</loc>プロパティを使用するかを示すことにある。<att>aria-describedby</att>プロパティは、ID参照リストの使用を通して1つ以上の要素の説明的情報と結びつけるために使用してもよいものである。ID参照リストは、1つ以上のユニークな要素IDを含む。</p>
-      <p>XHTMLやHTMLとともにWAI-ARIAステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc>を参照のこと。WAI-ARIAステート及びプロパティは他の言語とも互換性がある。詳しくはそれらの言語の説明文書を参照のこと。</p>
+      <p>この達成方法の目的は、プログラム的に決定される、ユーザインタフェース要素に関する説明的な情報を提供するために、どのように WAI-ARIA <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</loc> プロパティを使用するかを示すことにある。<att>aria-describedby</att> プロパティは、ID 参照リストの使用を通して 1 つ以上の要素の説明的情報と結びつけるために使用してもよいものである。ID 参照リストは、1 つ以上のユニークな要素 ID を含む。</p>
+      <p>XHTML や HTML とともに WAI-ARIA ステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc> を参照のこと。WAI-ARIA ステート及びプロパティは他の言語とも互換性がある。詳しくはそれらの言語の説明文書を参照のこと。</p>
       <note>
-         <p>注記: <att>aria-describedby</att>プロパティは、外部リソース上の説明を参照するように設計されていない――これはIDなので、同一DOM文書内の要素を参照しなければならない。</p>
+         <p><att>aria-describedby</att> プロパティは、外部リソース上の説明を参照するように設計されていない――これは ID なので、同一 DOM 文書内の要素を参照しなければならない。</p>
       </note>
    </description>
    <examples>
       <eg-group>
-         <head>「閉じる」ボタンの動作を記述するためにaria-describedbyプロパティを使用する</head>
+         <head>「閉じる」ボタンの動作を記述するために aria-describedby プロパティを使用する</head>
          <description>
-            <p>ダイアログ上の「閉じる」ボタンとして機能するボタンが、文書中の他の場所で説明されている。<att>aria-describedby</att>プロパティは、リンクと説明を関連付けるために使用される。</p>
+            <p>ダイアログ上の「閉じる」ボタンとして機能するボタンが、文書中の他の場所で説明されている。<att>aria-describedby</att> プロパティは、リンクと説明を関連付けるために使用される。</p>
             <codeblock xml:space="preserve"><![CDATA[<button aria-label="Close" aria-describedby="descriptionClose"
     onclick="myDialog.close()">X</button>
 
@@ -47,9 +47,9 @@ return you back to the main page</div>
          </description>
       </eg-group>
       <eg-group>
-         <head>フォームフィールドと指示を関連付けるためにaria-describedbyを使用する</head>
+         <head>フォームフィールドと指示を関連付けるために aria-describedby を使用する</head>
          <description>
-            <p>フォームフィールドに対してフォームラベルを用意するとともに、<att>aria-describedby</att>で指示を関連付けているサンプルフォームフィールド。</p>
+            <p>フォームフィールドに対してフォームラベルを用意するとともに、<att>aria-describedby</att> で指示を関連付けているサンプルフォームフィールド。</p>
             <codeblock xml:space="preserve"><![CDATA[<form>
 <label for="fname">First name</label>
 <input name="" type="text" id="fname" aria-describedby="int2">
@@ -59,7 +59,7 @@ return you back to the main page</div>
          </description>
       </eg-group>
       <eg-group>
-         <head>例3: ボタンに関するより詳細な情報を提供するためにaria-describedbyプロパティを使用する</head>
+         <head>例3: ボタンに関するより詳細な情報を提供するために aria-describedby プロパティを使用する</head>
          <description>
             <codeblock xml:space="preserve"><![CDATA[<p><span id="fontDesc">Select the font faces and sizes to be used on this page</span>
  <button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">Fonts</button>
@@ -74,9 +74,9 @@ return you back to the main page</div>
          </description>
       </eg-group>
       <eg-group>
-         <head>フォームフィールドとツールチップを関連付けるためにaria-describedbyを使用する</head>
+         <head>フォームフィールドとツールチップを関連付けるために aria-describedby を使用する</head>
          <description>
-            <p>次のコードスニペットは、フォーカスが要素に置かれたときに、ツールチップを表示するために、<att>aria-describedby</att>とonfocus="tooltipShow()"関数を使用する方法を示す。</p>
+            <p>次のコードスニペットは、フォーカスが要素に置かれたときに、ツールチップを表示するために、<att>aria-describedby</att> と onfocus="tooltipShow()" 関数を使用する方法を示す。</p>
             <codeblock xml:space="preserve"><![CDATA[<html lang="en-us">
 <head>
    <title>inline: Tooltip Example 1</title>
@@ -112,7 +112,7 @@ return you back to the main page</div>
       <eg-group>
          <head>XHTML</head>
          <description>
-            <p>この例は、XHTMLでコーディングされ、application/xhtml+xmlのMIMEタイプで提供されている。このMIMEタイプは、すべてのユーザエージェントでサポートされているわけではない。aria-describedbyプロパティは、XHTMLマークアップに直接追加され、追加のスクリプトを必要としない。</p>
+            <p>この例は、XHTML でコーディングされ、application/xhtml+xml の MIME タイプで提供されている。このMIME タイプは、すべてのユーザエージェントでサポートされているわけではない。aria-describedby プロパティは、XHTML マークアップに直接追加され、追加のスクリプトを必要としない。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN"
@@ -154,9 +154,9 @@ Customize </button></span></p>
       <eg-group>
          <head>HTML</head>
          <description>
-            <p>この例は、ページ上のボタンにaria-describedbyプロパティを追加するためにスクリプトを使用している。この例は、説明テキストを含む要素のidを保持するためにbuttonIds配列変数を作成する。setDescribedBy()関数は、windowオブジェクトのonloadイベントから呼び出される。</p>
-            <p>setDescribedBy()関数は、ボタン要素のすべてをループし、aria-describedbyプロパティを設定するために各ボタン要素上でsetAttribute()を呼び出す。各ボタンのaria-describedbyプロパティは、その説明のテキストを含む要素のidに設定される。</p>
-            <p>WAI-ARIAをサポートするユーザエージェント及び/又は支援技術を使用すれば、ユーザインタフェースコントロールがフォーカスを受け取る際に説明が提供される。</p>
+            <p>この例は、ページ上のボタンに aria-describedby プロパティを追加するためにスクリプトを使用している。この例は、説明テキストを含む要素の id を保持するために buttonIds 配列変数を作成する。setDescribedBy() 関数は、window オブジェクトの onload イベントから呼び出される。</p>
+            <p>setDescribedBy() 関数は、ボタン要素のすべてをループし、aria-describedby プロパティを設定するために各ボタン要素上で setAttribute() を呼び出す。各ボタンの aria-describedby プロパティは、その説明のテキストを含む要素の id に設定される。</p>
+            <p>WAI-ARIA をサポートするユーザエージェント及び/又は支援技術を使用すれば、ユーザインタフェースコントロールがフォーカスを受け取る際に説明が提供される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<html lang="en-us">
 <head>
@@ -274,17 +274,17 @@ about the button action.
       <procedure>
          <olist>
             <item>
-               <p>一意なIDを経由して1つ以上の要素を参照する<att>aria-describedby</att>属性を持つユーザインタフェースコントロールがあることをチェックする。</p>
+               <p>一意な ID を経由して 1 つ以上の要素を参照する <att>aria-describedby</att> 属性を持つユーザインタフェースコントロールがあることをチェックする。</p>
             </item>
             <item>
-               <p>参照される要素 (1つまたは複数) が、ユーザインタフェースコントロールに関する追加情報を提供することをチェックする。</p>
+               <p>参照される要素 (1 つまたは複数) が、ユーザインタフェースコントロールに関する追加情報を提供することをチェックする。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.及び2.を満たしている。</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

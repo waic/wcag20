@@ -4,7 +4,7 @@
 <technique id="SCR26">
    <short-name>動的なコンテンツを、Document Object Model の、そのトリガーとなる要素の直後に挿入する</short-name>
    <applicability>
-      <p>HTML及びXHTML、スクリプト</p>
+      <p>HTML 及び XHTML、スクリプト</p>
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable"/>
@@ -26,7 +26,7 @@
       <description><p>ShowHide スクリプトは新しいメニューを含む div を生成し、リンクを挿入する。最終行がスクリプトの核心となる。スクリプトのトリガーとなる要素の親を探し、新しい子として生成された div をそれに追加する。これにより、新しい div は DOM 内でリンクの次になる。利用者がタブを押したときには、フォーカスがメニュー内で最初のフォーカス可能な項目となる生成されたリンクに移動する。</p>
 </description>
       <code role="script"><![CDATA[
-ShowHide関数(id,src)
+function ShowHide(id,src)
 {
 	var el = document.getElementById(id);
 	if (!el)

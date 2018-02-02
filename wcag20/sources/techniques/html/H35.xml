@@ -4,7 +4,7 @@
 <technique id="H35">
    <short-name><el>applet</el> 要素にテキストによる代替を提供する</short-name>
    <applicability>
-      <p><el>applet</el>要素が非推奨ではない場合に、Javaアプレットを読み込んでいるHTML及びXHTMLドキュメント</p>
+      <p><el>applet</el> 要素が非推奨ではない場合に、Java アプレットを読み込んでいる HTML 及び XHTML ドキュメント</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -22,7 +22,7 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、アプレットのラベルを提供する<att>alt</att>属性を用いること及び<el>applet</el>要素のボディに代替テキストを提供することによって、アプレットに対する代替テキストを提供することである。この達成方法では、ユーザエージェントごとに、<att>alt</att>属性及び<el>applet</el>要素のボディのサポート状況が異なるため、両方のメカニズムを必要としている。</p>
+    <p>この達成方法の目的は、アプレットのラベルを提供する <att>alt</att> 属性を用いること及び <el>applet</el> 要素のボディに代替テキストを提供することによって、アプレットに対する代替テキストを提供することである。この達成方法では、ユーザエージェントごとに、<att>alt</att> 属性及び <el>applet</el> 要素のボディのサポート状況が異なるため、両方のメカニズムを必要としている。</p>
     <a11ysuprorted rating="pass" exnumber="0"/>
   </description>
    <examples>
@@ -40,20 +40,20 @@
       <procedure>
       <olist>
         <item>
-          <p><el>applet</el>要素のソースコードを見る。</p>
+          <p><el>applet</el> 要素のソースコードを見る。</p>
         </item>
         <item>
-          <p>アプレットに対する代替テキストが<el>applet</el>要素の<att>alt</att>属性にある</p>
+          <p>アプレットに対する代替テキストが <el>applet</el> 要素の <att>alt</att> 属性にある</p>
         </item>
         <item>
-          <p>アプレットに対する代替テキストが<el>applet</el>要素のボディの中にある。</p>
+          <p>アプレットに対する代替テキストが <el>applet</el> 要素のボディの中にある。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2.及び3.を満たしている。</p>
+          <p>2. 及び 3. を満たしている。</p>
         </item>
       </ulist>
      </expected-results>

@@ -5,7 +5,7 @@
    <short-name>複数のテキストノードをつなげて一つのラベルにするために、aria-labelledby を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc> をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -76,14 +76,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p><prop>aria-labelledby</prop>プロパティは、すべての視覚的オブジェクトをラベル付けするために使用できる。
-入力に適用する場合、<prop>aria-labelledby</prop>プロパティは、<code><![CDATA[div contenteditable="true"]]></code>によって構築されるカスタムテキスト入力のような非ネイティブ要素だけでなく、ネイティブの入力に対するラベル付けにも利用することができる。</p>
-      <p><prop>aria-labelledby</prop>の特有の用途のひとつは、意味のあるラベルが複数のラベル文字列から構成される状況における、テキスト入力のためのものである。</p>
-      <p>制作者は、<el>input</el>要素のラベルとして連結されるために、ラベル文字列に一意の<att>id</att>を割り当てる。<att>aria-labelledby</att>属性の値は、参照されたラベル文字列がスクリーンリーダーで読みあげられるべき順序に並べられた、全<att>id</att>のスペース区切りのリストである。サポートするユーザエージェントは、参照されたラベル文字列を連結して、入力欄の1つの連続したラベルとして読みあげる。</p>
-      <p>ラベル文字列の連結は、さまざまな理由で便利である。事例1において、入力欄は完全な一文のコンテキスト内に含まれている。望ましいスクリーンリーダーの出力は、"Extend time-out to [ 20 ] minutes - edit with autocomplete, selected 20"である。テキスト入力の<att>id</att>はaria-labelledbyで参照される<att>id</att>の文字列に含まれているので、入力の値は連結されたラベルの正しい位置に含まれる。</p>
-      <p><att>aria-labelledby</att>の別の応用は、入力欄の隣に視覚的なラベルを提供するためのスペースが存在しない場合、又はネイティブラベルの使用が不必要な冗長性を生む場合である。このとき、<att>aria-labelledby</att>を使用すると、ページ上の可視要素をそのような入力のラベルとして関連付けることができる。この方法は事例2において示されており、テーブルの列及び行の見出しが連結されて、テーブル内部のテキスト入力要素のラベルとなっている。</p>
+      <p><prop>aria-labelledby</prop> プロパティは、すべての視覚的オブジェクトをラベル付けするために使用できる。
+入力に適用する場合、<prop>aria-labelledby</prop> プロパティは、<code><![CDATA[div contenteditable="true"]]></code> によって構築されるカスタムテキスト入力のような非ネイティブ要素だけでなく、ネイティブの入力に対するラベル付けにも利用することができる。</p>
+      <p><prop>aria-labelledby</prop> の特有の用途のひとつは、意味のあるラベルが複数のラベル文字列から構成される状況における、テキスト入力のためのものである。</p>
+      <p>制作者は、<el>input</el> 要素のラベルとして連結されるために、ラベル文字列に一意の <att>id</att> を割り当てる。<att>aria-labelledby</att> 属性の値は、参照されたラベル文字列がスクリーンリーダーで読みあげられるべき順序に並べられた、全 <att>id</att> のスペース区切りのリストである。サポートするユーザエージェントは、参照されたラベル文字列を連結して、入力欄の 1 つの連続したラベルとして読みあげる。</p>
+      <p>ラベル文字列の連結は、さまざまな理由で便利である。事例 1 において、入力欄は完全な一文のコンテキスト内に含まれている。望ましいスクリーンリーダーの出力は、"Extend time-out to [ 20 ] minutes - edit with autocomplete, selected 20" である。テキスト入力の <att>id</att> は aria-labelledby で参照される <att>id</att> の文字列に含まれているので、入力の値は連結されたラベルの正しい位置に含まれる。</p>
+      <p><att>aria-labelledby</att> の別の応用は、入力欄の隣に視覚的なラベルを提供するためのスペースが存在しない場合、又はネイティブラベルの使用が不必要な冗長性を生む場合である。このとき、<att>aria-labelledby</att> を使用すると、ページ上の可視要素をそのような入力のラベルとして関連付けることができる。この方法は事例 2 において示されており、テーブルの列及び行の見出しが連結されて、テーブル内部のテキスト入力要素のラベルとなっている。</p>
       <note>
-         <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">ARIA accessible name and description calculation</loc>は、<att>aria-labelledby</att>で指定された文字列が、プロパティを有する要素のコンテンツに追加されるのではなく、置換するべきと規定している。よって、<att>aria-labelledby</att>プロパティをネイティブラベルに追加する場合、ラベル自体が<att>aria-labelledby</att>の<att>id</att>のシーケンスの一部として参照されていない限り、そのラベル内のテキストコンテンツが置換されるべきである。</p>
+         <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">ARIA accessible name and description calculation</loc> は、<att>aria-labelledby</att> で指定された文字列が、プロパティを有する要素のコンテンツに追加されるのではなく、置換するべきと規定している。よって、<att>aria-labelledby</att> プロパティをネイティブラベルに追加する場合、ラベル自体が <att>aria-labelledby</att> の <att>id</att> のシーケンスの一部として参照されていない限り、そのラベル内のテキストコンテンツが置換されるべきである。</p>
       </note>
    </description>
    <examples>
@@ -91,10 +91,10 @@
          <head>連結されたラベルをもつタイムアウト入力フィールド</head>
          <description>
             <p>テキスト入力欄があり、タイムアウトが発生する前に、利用者がデフォルトの時間を延長することを可能にしている。</p>
-            <p>文字列"Extend time-out to"は、ネイティブの<el>label</el>要素に含まれており、<code><![CDATA[id="timeout-duration"]]></code>により入力に関連付けられる。このラベルは、ARIAをサポートしないユーザエージェント上においてのみ、for/id関連付けを使用してこの入力に関連付けられる。ARIAをサポートするユーザエージェント上では、for/id関連付けは無視され、入力用のラベルは、HTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc>に従って、<att>aria-labelledby</att>のみによって提供される。</p>
-            <p>テキスト入力上の<att>aria-labelledby</att>属性は、3つの要素を参照する: (1) ネイティブのラベルを含む<el>span</el>、(2) デフォルトテキスト'20'を含むテキスト入力 (この入力が、ラベルテキストに関連するfor/idでラベル付けされないことを思い起こすこと)、(3) <el>span</el>に含まれる文字列'minutes'。これらの要素は、テキスト入力に対する完全なラベルを提供するために連結されるべきである。</p>
+            <p>文字列 "Extend time-out to" は、ネイティブの <el>label</el> 要素に含まれており、<code><![CDATA[id="timeout-duration"]]></code> により入力に関連付けられる。このラベルは、ARIA をサポートしないユーザエージェント上においてのみ、for/id 関連付けを使用してこの入力に関連付けられる。ARIA をサポートするユーザエージェント上では、for/id 関連付けは無視され、入力用のラベルは、HTML to Platform Accessibility APIs Implementation Guide における <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc> に従って、<att>aria-labelledby</att> のみによって提供される。</p>
+            <p>テキスト入力上の <att>aria-labelledby</att> 属性は、3 つの要素を参照する: (1) ネイティブのラベルを含む <el>span</el>、(2) デフォルトテキスト'20'を含むテキスト入力 (この入力が、ラベルテキストに関連する for/id でラベル付けされないことを思い起こすこと)、(3) <el>span</el> に含まれる文字列 'minutes'。これらの要素は、テキスト入力に対する完全なラベルを提供するために連結されるべきである。</p>
             <note>
-            <p><el>span</el>要素上の<code><![CDATA[tabindex="-1"]]></code>の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ (IE9、IE10) がアクセシビリティツリーに<el>span</el>要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att>による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc>を参照。</p>
+            <p><el>span</el> 要素上の <code><![CDATA[tabindex="-1"]]></code> の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ (IE9、IE10) がアクセシビリティツリーに <el>span</el> 要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att> による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc> を参照。</p>
             </note>
             <codeblock xml:space="preserve"><![CDATA[<form>
 <p><span id="timeout-label" tabindex="-1"><label for="timeout-duration">Extend time-out to</label></span>
@@ -102,13 +102,13 @@
     aria-labelledby="timeout-label timeout-duration timeout-unit">
 <span id="timeout-unit" tabindex="-1"> minutes</span></p>
 </form>]]></codeblock>
-            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex1.html"><!-- linktype="examples"-->連結されたラベルをもつタイムアウト入力フィールド</loc> は、Marco Zeheによってまとめられた Easy ARIA tip #2:<att>aria-labelledby</att> and <att>aria-describedby</att> から翻案した。</p>
+            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex1.html"><!-- linktype="examples"-->連結されたラベルをもつタイムアウト入力フィールド</loc> は、Marco Zeheによってまとめられた Easy ARIA tip #2: <att>aria-labelledby</att> and <att>aria-describedby</att> から翻案した。</p>
          </description>
       </eg-group>
       <eg-group>
          <head>テキスト入力を含む単純なデータテーブル</head>
          <description>
-            <p>テキスト入力を含む単純なデータテーブルがある。入力ラベルは、それぞれの列及び行のヘッダーを参照する<att>aria-labelledby</att>を通して連結される。</p>
+            <p>テキスト入力を含む単純なデータテーブルがある。入力ラベルは、それぞれの列及び行のヘッダーを参照する <att>aria-labelledby</att> を通して連結される。</p>
             <codeblock xml:space="preserve"><![CDATA[<table>
 	<tr>
 		<td></td>
@@ -128,14 +128,14 @@
 		<td><input type="text" size="20" aria-labelledby="sp div" /></td>
 	</tr>
 </table>]]></codeblock>
-            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex2.html"><!-- linktype="examples"-->テキスト入力をもつ単純なテーブルに対するaria-labelledbyを使用する</loc> は、Jim Thatcherによる例に基づく。</p>
+            <p>実装例 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/ARIA9/ex2.html"><!-- linktype="examples"-->テキスト入力をもつ単純なテーブルに対する aria-labelledby を使用する</loc> は、Jim Thatcher による例に基づく。</p>
          </description>
       </eg-group>
       <eg-group>
          <head>会議ワークショップ予約テーブル</head>
          <description>
-            <p>2つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック (1又は2)、タイトル、及び隣接するチェックボックスのラベル"Attend"に続くワークショップのスピーカーは、<att>aria-labelledby</att>を介してチェックボックスに対する連結ラベルとして提供される。</p>
-            <p>一部のブラウザ/スクリーンリーダーの組み合わせ (たとえばMozilla FirefoxとNVDA) は、さらに関連するテーブルセルのヘッダーを伝える。</p>
+            <p>2 つの同時進行のトラックをもつ会議ワークショップ予約テーブルがあり、利用者が参加したいワークショップを選択することを可能にしている。テーブル内のチェックボックス入力の間をタブ移動するとき、トラック (1 又は 2)、タイトル、及び隣接するチェックボックスのラベル "Attend" に続くワークショップのスピーカーは、<att>aria-labelledby</att> を介してチェックボックスに対する連結ラベルとして提供される。</p>
+            <p>一部のブラウザ/スクリーンリーダーの組み合わせ (たとえば Mozilla Firefox と NVDA) は、さらに関連するテーブルセルのヘッダーを伝える。</p>
             <codeblock xml:space="preserve"><![CDATA[<h1>Dinosaur Conference workshops timetable Thursday, 14.  & Friday, 15. March 2013</h1>
 <table>
 <caption>Dinosaur Conference workshop booking table</caption>
@@ -252,20 +252,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p><att>aria-labelledby</att>を使用する入力に対して:</p>
+         <p><att>aria-labelledby</att> を使用する入力に対して:</p>
          <olist>
             <item>
-               <p><att>aria-labelledby</att>で参照される<att>id</att>が一意であり、かつ組み合わせてラベルを提供するテキストノードの<att>id</att>と一致する</p>
+               <p><att>aria-labelledby</att> で参照される <att>id</att> が一意であり、かつ組み合わせてラベルを提供するテキストノードの <att>id</att> と一致する</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att>によって参照される要素を連結したコンテンツが、ラベル付けされた要素の目的又は機能に対する説明である</p>
+               <p><att>aria-labelledby</att> によって参照される要素を連結したコンテンツが、ラベル付けされた要素の目的又は機能に対する説明である</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.及び2.を満たしている。</p>
+               <p>1. 及び 2. を満たしている。</p>
                <p>これが達成基準に対して十分な達成方法である場合、このテスト手順を失敗しても、この達成方法がうまく実装されず適合性を主張するために使用できないだけであり、達成基準が他の方法で満たされていないことを必ずしも意味するものではない。</p>
             </item>
          </ulist>

@@ -22,7 +22,7 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、link要素を用いて、あるHTMLページがウェブページ一式の中でどのような位置にあるのかを示すメタデータを提供する方法、及び利用者がウェブページ一式の中で特定のコンテンツを発見することを支援する方法について解説することである。rel属性の値が、どのような関係性が定義されているのかを示し、href属性がその関係を持つドキュメントへのリンクを提供する。複数のlink要素を用いることで、複数の関係を示すこともできる。<att>rel</att>属性の値としては、以下のようなものが有用である:</p>
+    <p>この達成方法の目的は、link 要素を用いて、ある HTML ページがウェブページ一式の中でどのような位置にあるのかを示すメタデータを提供する方法、及び利用者がウェブページ一式の中で特定のコンテンツを発見することを支援する方法について解説することである。rel 属性の値が、どのような関係性が定義されているのかを示し、href 属性がその関係を持つドキュメントへのリンクを提供する。複数の link 要素を用いることで、複数の関係を示すこともできる。<att>rel</att> 属性の値としては、以下のようなものが有用である:</p>
     <ulist>
       <item>
         <p>Start：複数のドキュメントの中の最初のドキュメントへのリンク</p>
@@ -43,7 +43,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>オンライン書籍の第2章のウェブページがあり、<el>head</el>要素セクションに次のリンクが含まれている。</p>
+      <description><p>オンライン書籍の第 2 章のウェブページがあり、<el>head</el> 要素セクションに次のリンクが含まれている。</p>
 </description>
       <code role="html401"><![CDATA[<link rel="Contents" href="Contents.html" title="目次"  />
 <link rel="Index" href="Index.html" title="索引" />
@@ -57,35 +57,31 @@
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/TR/REC-html40/struct/links.html#edef-LINK">HTML 4.01
-                    LINK element</loc>
-								       </p>
+                    LINK element</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/TR/REC-html40/types.html#type-links">HTML 4.01 link
-                    types</loc>
-								       </p>
+                    types</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://cdn.mozdev.org/linkToolbar/">Link Toolbar extension for
-                  Firefox</loc>
-								       </p>
+                  Firefox</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/QA/Tips/use-links">Use &lt;link&gt;s in your
-                    document</loc> from W3C's Quality Web Tips </p>
+                    document</loc> from W3C's Quality Web Tips</p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.htmlhelp.com/reference/html40/head/link.html">LINK -
-                    Document Relationship</loc> from Web Design Group </p>
+                    Document Relationship</loc> from Web Design Group</p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</loc>
-								       </p>
+                       href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</loc></p>
             </item>
          </ulist>
       </see-also>
@@ -101,11 +97,11 @@
       <p>一連のまたは集合的なウェブページにおける、あるウェブページについて：</p>
       <olist>
         <item>
-          <p>ナビゲーションに関する全ての<el>link</el>要素が、その文書の<el>head</el>要素セクションに含まれている</p>
+          <p>ナビゲーションに関する全ての <el>link</el> 要素が、その文書の <el>head</el> 要素セクションに含まれている</p>
         </item>
-        <item><p>その文書の<el>head</el>要素セクション内のナビゲーションに関する各<el>link</el>要素に、少なくとも以下が指定されている：</p>
+        <item><p>その文書の <el>head</el> 要素セクション内のナビゲーションに関する各 <el>link</el> 要素に、少なくとも以下が指定されている：</p>
                 
-                        <olist><item><p>リンクタイプを特定するための<att>rel</att>属性</p></item><item><p>該当するリソースの場所を示すための妥当な<att>href</att>属性</p></item></olist></item>
+                        <olist><item><p>リンクタイプを特定するための <att>rel</att> 属性</p></item><item><p>該当するリソースの場所を示すための妥当な <att>href</att> 属性</p></item></olist></item>
       </olist>
     </procedure>
       <expected-results>
