@@ -10,12 +10,12 @@
       <success-criterion idref="text-equiv-all" relationship="failure"/>
    </applies-to>
    <description>
-    <p>これは、代替テキストを提供せずにASCIIアートを使用するという不適合事例について述べている。ASCIIアートは文字列として実装されるが、その意味は、その文字列の視覚的な表現によって形成される絵柄のパターンから来るのであって、テキスト自体から来るのではない。そのため、ASCIIアートは非テキストコンテンツであり、代替テキストが必要となる。代替テキスト又は代替テキストへのリンクは、ASCIIアートと関連付けるために、その近くに置くべきである。</p>
+    <p>これは、代替テキストを提供せずに ASCII アートを使用するという失敗例について述べている。ASCII アートは文字列として実装されるが、その意味は、その文字列の視覚的な表現によって形成される絵柄のパターンから来るのであって、テキスト自体から来るのではない。そのため、ASCII アートは非テキストコンテンツであり、代替テキストが必要となる。代替テキスト又は代替テキストへのリンクは、ASCII アートと関連付けるために、その近くに置くべきである。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <head>代替テキストのないASCIIアートのチャート</head>
-      <description><p>次のASCIIアートのチャートは、代替テキストがないため、達成基準1.1.1を満たしていない。事実、この不適合となる事例を含んでいるため、このウェブページは適合していないページとなっている。ただし、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#F72-related-techs">ASCIIアートの例をスキップする</loc>ことはできる。</p>
+      <head>代替テキストのない ASCII アートのチャート</head>
+      <description><p>次の ASCII アートのチャートは、代替テキストがないため、達成基準 1.1.1 を満たしていない。事実、この不適合となる事例を含んでいるため、このウェブページは適合していないページとなっている。ただし、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#F72-related-techs">ASCII アートの例をスキップする</loc>ことはできる。</p>
 </description>
       <code role="xhtml"><![CDATA[
 <pre>
@@ -40,10 +40,10 @@
       <procedure>
       <olist>
         <item>
-          <p>ASCIIアートのあるページを開く。</p>
+          <p>ASCII アートのあるページを開く。</p>
         </item>
         <item>
-          <p>それぞれのASCIIアートに対して、代替テキストが提供されている。</p>
+          <p>それぞれの ASCII アートに対して、代替テキストが提供されている。</p>
         </item>
       </olist>
     </procedure>

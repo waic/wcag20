@@ -10,8 +10,8 @@
       <success-criterion idref="navigation-mechanisms-title" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、フレームセットの個々のフレームに含まれるものを含む全てのHTML及びXHTMLドキュメントにおいて、<el>head</el>要素のセクション内で<el>title</el>要素を用いてドキュメントの目的を簡単な文言で定義することである。これにより、ページの本文でオリエンテーション情報を探すことなく、利用者はサイト内の自分のいる場所を素早く見つけることができる。</p>
-    <p>ドキュメント内で一度しか現れない(必須の)<el>title</el>要素は、ほとんど全てのHTML及びXHTMLの要素で利用されるかもしれない<att>title</att>属性と異なることに注意する。</p>
+    <p>この達成方法の目的は、フレームセットの個々のフレームに含まれるものを含む全ての HTML 及び XHTML ドキュメントにおいて、<el>head</el> 要素のセクション内で <el>title</el> 要素を用いてドキュメントの目的を簡単な文言で定義することである。これにより、ページの本文でオリエンテーション情報を探すことなく、利用者はサイト内の自分のいる場所を素早く見つけることができる。</p>
+    <p>ドキュメント内で一度しか現れない (必須の) <el>title</el> 要素は、ほとんど全ての HTML 及び XHTML の要素で利用されるかもしれない <att>title</att> 属性と異なることに注意する。</p>
   </description>
    <examples>
       <eg-group>
@@ -49,7 +49,7 @@
      <procedure>
       <olist>
         <item>
-          <p>HTML又はXHTMLドキュメントのソースコードに、<el>head</el> 要素内に空でない<el>title</el>要素がある。</p>
+          <p>HTML 又は XHTML ドキュメントのソースコードに、<el>head</el> 要素内に空でない <el>title</el> 要素がある。</p>
         </item>
         <item>
           <p><el>title</el> 要素がドキュメントを説明している。</p>
@@ -59,7 +59,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1.及び2.を満たしている。</p>
+          <p>1. 及び 2. を満たしている。</p>
         </item>
       </ulist>
       </expected-results>

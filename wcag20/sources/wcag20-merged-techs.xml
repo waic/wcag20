@@ -9,7 +9,7 @@
 <p>【重要】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </trdisclaimer>
 		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 達成方法集</title>
-		<subtitle>WCAG 2.0 の達成方法と不適合事例</subtitle>
+		<subtitle>WCAG 2.0 の達成方法と失敗例</subtitle>
 		<w3c-designation>WCAG20-TECHS</w3c-designation>
 		<w3c-doctype>W3C ワーキンググループノート</w3c-doctype>
 		<pubdate>
@@ -91,12 +91,12 @@
 
 		<abstract>
 			<p id="abstract-general-intro">
-この文書<emph>WCAG 2.0 達成方法集</emph>は、ウェブコンテンツ制作者および評価者向けに <loc href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/> の達成基準を満たすためのガイダンスを提供している。W3C の Web Accessibility Initiative (WAI) が、WCAG 2.0 を補足するために公開している一連の文書の 1 つである。WCAG 2.0 のイントロダクション、補足する技術文書、そして教材については <loc href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
+この文書 <emph>WCAG 2.0 達成方法集</emph>は、ウェブコンテンツ制作者および評価者向けに <loc href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/> の達成基準を満たすためのガイダンスを提供している。W3C の Web Accessibility Initiative (WAI) が、WCAG 2.0 を補足するために公開している一連の文書の 1 つである。WCAG 2.0 のイントロダクション、補足する技術文書、そして教材については <loc href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
 			<p>
 				<phrase id="abstract-techniques-informative">達成方法は、参考情報である。つまり、達成方法は必須要件ではない。WCAG 2.0 への適合の判断は、<loc href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</loc> の達成基準に基づくものであり、達成方法ではない。</phrase>
 				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、WCAG 2.0 解説書の <loc href="understanding-techniques" linktype="understanding">WCAG 達成基準の達成方法を理解する</loc>のセクションを参照のこと。</emph></phrase>
 			</p>
-			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は<loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を利用して、WCAGの達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
+			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を利用して、WCAG の達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
 		</abstract>
 		<langusage>
 			<language id="ja"/>
@@ -111,13 +111,13 @@
 		<div1 id="intro">
 			<head><emph>WCAG 2.0 達成方法集のイントロダクション</emph></head>
 			<p use-id="abstract-general-intro"/>
-			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この<emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ1年に<phrase>2回</phrase>、定期的に更新する文書である。</p>
+			<p>WCAG 2.0 自身は、変更されることのない安定した文書である。この <emph>WCAG 2.0 達成方法集</emph>は、現在のベストプラクティス並びに技術及び手段の変化をより多く取り扱うために、およそ 1 年に <phrase>2 回</phrase>、定期的に更新する文書である。</p>
 			<p><phrase use-id="abstract-techniques-informative"/></p>
 			<note>
 				<p>W3C は、必要とする W3C の十分な達成方法に対して警告する。要求されるべき唯一のものは、WCAG 2.0 の達成基準を満たすことである。より詳しくは、次の文書を参照のこと:</p>
 				<ulist>
 					<item>
-						<p>WCAG 2 FAQ における<loc href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
+						<p>WCAG 2 FAQ における <loc href="https://www.w3.org/WAI/WCAG20/wcag2faq.html#techsnot">What would be the negative consequences of allowing <emph>only</emph> W3C's published techniques to be used for conformance to WCAG 2.0?</loc></p>
 					</item>
 					<!--
 							<item>
@@ -153,7 +153,7 @@
 		<inform-div1 id="acknowledgements">
 			<head>謝辞</head>
 			<p>この出版物は、初期は契約番号 ED-OSE-10-C-0067、現在は契約番号 HHSP23301500054C のもとで米国教育省・障害者リハビリテーション研究所 (NIDILRR) の政府資金によって一部賄われている。この出版物の内容は、必ずしも米国教育省の見解や政策を反映するものではなく、また商品名、商用製品、組織の言及は米国政府による支持を意味するものではない。</p>
-			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG) への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc>で提供している。</p>
+			<p>Web Content Accessibility Guidelines ワーキンググループ (WCAG WG) への参加に関する情報は、<loc href="https://www.w3.org/WAI/GL/">Working Group home page</loc> で提供している。</p>
 			<div2 id="ack_participants-active" role="normal">
 				<head>この文書の作成に貢献した WCAG WG の参加者</head>
 				<ulist>

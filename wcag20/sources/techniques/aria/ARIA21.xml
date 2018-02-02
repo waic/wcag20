@@ -4,28 +4,28 @@
 <technique id="ARIA21">
    <short-name>エラーフィールドを示すために aria-invalid を使用する</short-name>
    <applicability>
-      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>を用いるHTML。</p>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc> を用いる HTML。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
    </applies-to>
    <description>
-<p>この達成方法は、<att>aria-invalid</att>を使用して、検証に失敗しているフィールドを明確に識別する方法を示す。次の場合が最も使用に適している:</p>   
+<p>この達成方法は、<att>aria-invalid</att> を使用して、検証に失敗しているフィールドを明確に識別する方法を示す。次の場合が最も使用に適している:</p>   
  <ulist>
  <item><p>エラーの説明から、失敗したフィールドをプログラムによって識別できない。</p></item>
  <item><p>失敗したフィールドが、一部の利用者に利用できない方法で――たとえば、色に依存しない、ボーダーのような視覚的な手がかりなどの技術によって視覚的にレンダリングされるエラーアイコンの使用によって――識別される。</p></item>
  </ulist>
-<note><p>注: 上記2つの状況の1つは、データフォーマット、データ範囲、又は<prop>required</prop>プロパティを伝えるラベル及び／又は命令とプログラムによって関連付けられているフィールドにも起こりうる。</p></note>
-<p>失敗したフィールドと具体的なエラーの説明をプログラム的に関連付けることが常に望ましい一方で、ページのデザイン又は利用されているフレームワークは、コンテンツ制作者がプログラム的に関連付けるための能力を制約するかもしれない。このような場合、コンテンツ制作者は、検証に失敗したフィールド上でプログラムによって <att>aria-invalid</att> を "true" に設定してもよい。これは主に、目の不自由な利用者によって使用される (スクリーンリーダー/画面拡大のような) 支援技術で解釈可能である。フィールドが "true" に設定された<att>aria-invalid</att>を持つ場合、フィールドがフォーカスを取得する際に、SafariのVoiceOverは "invalid data" とアナウンスし、JAWSとNVDAは "invalid entry" としてエラーを通知する。</p>
-<p>このARIA属性は、プログラムによって設定/オンにされる必要がある。入力の検証が行われる又はフォームが送信される前に、その属性を"true"に設定するべきではない。<att>aria-invalid</att>を "false" に設定することは、フォームコントロールにこの属性を全く指定しないことと同じである。当然ながら、この場合、支援技術は利用者に何も伝えない。</p>
-<p>可視テキストが、失敗したフィールドをプログラムによって識別する及び／又はエラーを補正できる方法を伝えるために使用される場合、<att>aria-invalid</att>を"true"に設定することは、厳格な整合性の観点からは必要とされないが、それでも利用者のために役立つ情報を提供する可能性がある。</p>
+<note><p>上記 2 つの状況の 1 つは、データフォーマット、データ範囲、又は<prop>required</prop> プロパティを伝えるラベル及び／又は命令とプログラムによって関連付けられているフィールドにも起こりうる。</p></note>
+<p>失敗したフィールドと具体的なエラーの説明をプログラム的に関連付けることが常に望ましい一方で、ページのデザイン又は利用されているフレームワークは、コンテンツ制作者がプログラム的に関連付けるための能力を制約するかもしれない。このような場合、コンテンツ制作者は、検証に失敗したフィールド上でプログラムによって <att>aria-invalid</att> を "true" に設定してもよい。これは主に、目の不自由な利用者によって使用される (スクリーンリーダー/画面拡大のような) 支援技術で解釈可能である。フィールドが "true" に設定された <att>aria-invalid</att> を持つ場合、フィールドがフォーカスを取得する際に、Safari の VoiceOver は "invalid data" とアナウンスし、JAWS と NVDA は "invalid entry" としてエラーを通知する。</p>
+<p>この ARIA 属性は、プログラムによって設定/オンにされる必要がある。入力の検証が行われる又はフォームが送信される前に、その属性を "true" に設定するべきではない。<att>aria-invalid</att> を "false" に設定することは、フォームコントロールにこの属性を全く指定しないことと同じである。当然ながら、この場合、支援技術は利用者に何も伝えない。</p>
+<p>可視テキストが、失敗したフィールドをプログラムによって識別する及び／又はエラーを補正できる方法を伝えるために使用される場合、<att>aria-invalid</att> を "true" に設定することは、厳格な整合性の観点からは必要とされないが、それでも利用者のために役立つ情報を提供する可能性がある。</p>
       </description>
    <examples>
       <eg-group>
-         <head>必須フィールドにaria-invalidを使用する</head>
+         <head>必須フィールドに aria-invalid を使用する</head>
          <description>
-            <p>何も入力されていない必須フィールドに<att>aria-invalid</att>属性が指定されている。フォーム上部のメッセージは、フォームの送信がこのせいで失敗したことを伝えている。</p>
-			<p>jQueryコード及びHTMLフォームマークアップの一部は次のとおりである:</p>
+            <p>何も入力されていない必須フィールドに <att>aria-invalid</att> 属性が指定されている。フォーム上部のメッセージは、フォームの送信がこのせいで失敗したことを伝えている。</p>
+			<p>jQuery コード及び HTML フォームマークアップの一部は次のとおりである:</p>
          <codeblock role="html5"><![CDATA[
 <script>
 ...
@@ -74,8 +74,8 @@ label.failed {
       <eg-group>
          <head>データフォーマットのエラーを識別する</head>
          <description>
-            <p><att>Aria-invalid</att>及び<att>aria-describedby</att>が、個人識別番号 (PIN)、電子メールアドレス、又は開始日が期待される形式でない場合に、エラーを示すために一緒に使用されている。エラーメッセージは、<att>aria-describedby</att>を使うことでフィールドに関連付けられており、<att>aria-invalid</att>によって、エラーになっているフィールドをプログラムによって簡単に見つけられるようになっている。</p>
-            <p>以下は、事例1において電子メールアドレスフィールドにレンダリングされるHTMLコードである。(sam@example.comの代わりに) "samexample.com"のような不正な電子メールアドレスが利用者によって入力された場合、HTMLコードは次のようになる:</p>
+            <p><att>Aria-invalid</att> 及び <att>aria-describedby</att> が、個人識別番号 (PIN)、電子メールアドレス、又は開始日が期待される形式でない場合に、エラーを示すために一緒に使用されている。エラーメッセージは、<att>aria-describedby</att> を使うことでフィールドに関連付けられており、<att>aria-invalid</att> によって、エラーになっているフィールドをプログラムによって簡単に見つけられるようになっている。</p>
+            <p>以下は、事例 1 において電子メールアドレスフィールドにレンダリングされる HTML コードである。(sam@example.com の代わりに) "samexample.com" のような不正な電子メールアドレスが利用者によって入力された場合、HTML コードは次のようになる:</p>
          <codeblock role="html5"><![CDATA[
 <div class="control">
 <p><label for="email">Email address: [*]</label> 
@@ -90,7 +90,7 @@ label.failed {
 <span class="errtext" id="err_2">
  Error: Input data missing</span>
 </div>            ]]></codeblock>
-<p>jQueryコード: jQueryは、class属性だけでなくaria-invalid又はaria-describedby属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid及びclass="error"を挿入するコードであるが、プログラム的にコントロールとエラーテキスト"incorrect data"を関連付けないコードである。:</p>
+<p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである。:</p>
          <codeblock role="html5"><![CDATA[
 $(errFld).attr("aria-invalid", "true").attr("class", "error");
 // Suffix error text: 
@@ -138,13 +138,13 @@ span.errtext {
    </related-techniques>
    <tests>
       <procedure>
-         <p>検証の失敗の伝達を<att>aria-invalid</att>に依存する各フォームコントロールに対して:</p>
+         <p>検証の失敗の伝達を <att>aria-invalid</att> に依存する各フォームコントロールに対して:</p>
          <olist>
             <item>
-               <p>検証の失敗が存在しない場合に<att>aria-invalid</att>がtrueに設定されない。</p>
+               <p>検証の失敗が存在しない場合に <att>aria-invalid</att> が true に設定されない。</p>
             </item>
             <item>
-               <p>検証の失敗が存在する場合に<att>aria-invalid</att>がtrueに設定される。</p>
+               <p>検証の失敗が存在する場合に <att>aria-invalid</att> が true に設定される。</p>
             </item>
             <item>
                <p>プログラム的に関連付けられたラベル/プログラム的にフィールドに関連づけられた説明文がエラーを理解するのに十分な情報を提供している。</p>
@@ -154,7 +154,7 @@ span.errtext {
       <expected-results>
          <ulist>
             <item>
-               <p>1.から3.を満たしている。</p>
+               <p>1. から 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

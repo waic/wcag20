@@ -16,14 +16,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#role_definitions">WAI-ARIA Definition of Roles</loc>で定義されたいずれかの非抽象の値を持つ<att>role</att>属性を用いて要素のロールを定義することである。WAI-ARIA仕様は、各ロールについて、他のロールとどのように関係するか、どのようなステート及びプロパティがあるかといった、参考となる説明を提供している。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ロールを公開することで、利用者がウィジェット及びウィジェットと対話する方法を理解できるようになる。</p>
+      <p>この達成方法の目的は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#role_definitions">WAI-ARIA Definition of Roles</loc> で定義されたいずれかの非抽象の値を持つ <att>role</att> 属性を用いて要素のロールを定義することである。WAI-ARIA 仕様は、各ロールについて、他のロールとどのように関係するか、どのようなステート及びプロパティがあるかといった、参考となる説明を提供している。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ロールを公開することで、利用者がウィジェット及びウィジェットと対話する方法を理解できるようになる。</p>
    </description>
    <examples>
       <eg-group>
          <head>単純なツールバー</head>
          <description>
             <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、3つのボタンを含むツールバーのデモがある。<el>div</el>要素は"toolbar"のロールを持ち、<el>img</el>要素は"button"のロールを持つ:</p>
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc> には、3 つのボタンを含むツールバーのデモがある。<el>div</el> 要素は "toolbar" のロールを持ち、<el>img</el> 要素は "button" のロールを持つ:</p>
             <codeblock xml:space="preserve"><![CDATA[
     <div role="toolbar"
       tabindex="0" 
@@ -54,7 +54,7 @@
            title="Help"> 
  </div>  
                         ]]></codeblock>
-            <p>Authoring Practicesのツールバーパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>Authoring Practices のツールバーパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/TR/wai-aria-practices-1.1/#toolbar">ツールバーの実装例</loc>を提供している。</p>
          </description>
       </eg-group>
@@ -62,7 +62,7 @@
          <head>ツリーウィジェット</head>
          <description>
             <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc>には、ツリーウィジェットのデモがある。ツリーとその構造を識別するためのロール"tree"、"treeitem"、"group"に注意。コードを単純化して抜粋したものは以下のとおり:</p>
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc> には、ツリーウィジェットのデモがある。ツリーとその構造を識別するためのロール "tree"、"treeitem"、"group" に注意。コードを単純化して抜粋したものは以下のとおり:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <ul role="tree" tabindex="0">
   <li role="treeitem">Birds</li>
@@ -99,7 +99,7 @@
   </li>
 </ul>
 ]]></codeblock>
-            <p>Authoring Practicesのツリービューパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>Authoring Practices のツリービューパターンは、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/TR/wai-aria-practices-1.1/#TreeView">ツリーの実装例</loc>を提供している。</p>
          </description>
       </eg-group>
@@ -143,10 +143,10 @@
    <related-techniques/>
    <tests>
       <procedure>
-         <p>role属性を使用するユーザインタフェースコンポーネントの場合:</p>
+         <p>role 属性を使用するユーザインタフェースコンポーネントの場合:</p>
          <olist>
             <item>
-               <p>role属性の値が、WAI-ARIA仕様で定義された値に由来する非抽象ロールのいずれかである。</p>
+               <p>role 属性の値が、WAI-ARIA 仕様で定義された値に由来する非抽象ロールのいずれかである。</p>
             </item>
             <item>
                <p>ユーザインタフェースコンポーネントの特性がロールで記述されている。</p>

@@ -14,7 +14,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><ulist><item><p>モナリザの絵には「モナリザ。レオナルド・ダ･ビンチ作」という代替テキスト がある。</p></item><item><p>音声ファイルには「テルミンを演奏している5人の小学生」という代替テキストがある。
+      <description><ulist><item><p>モナリザの絵には「モナリザ。レオナルド・ダ･ビンチ作」という代替テキスト がある。</p></item><item><p>音声ファイルには「テルミンを演奏している 5 人の小学生」という代替テキストがある。
                                     </p></item><item><p>有名なモダンアートの作品には「赤、青、及び黄色。ピエト　モンドリアン作」という表題が付けられている。</p></item></ulist>
 </description>
     </eg-group>
@@ -39,7 +39,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.又は2.を満たしている。</p>
+               <p>1. 又は 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

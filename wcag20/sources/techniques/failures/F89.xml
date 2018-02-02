@@ -17,12 +17,12 @@
     </ua-issue>
   </ua-issues>
   <description>
-    <p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクについて、そしてそのリンクがアクセシブルな名前で特定できないときに起こる失敗例について述べている。リンクのアクセシブルな名前 (name) は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation</loc>によって決定される。</p>
-    <p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適合する。このケースでは、実装方法<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html"/>は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
+    <p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクについて、そしてそのリンクがアクセシブルな名前で特定できないときに起こる失敗例について述べている。リンクのアクセシブルな名前 (name) は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation</loc> によって決定される。</p>
+    <p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適合する。このケースでは、実装方法 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html"/>は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <head>HTML検索結果</head>
+      <head>HTML 検索結果</head>
       <description><p>検索サイトは、試合のサイトへのテキストリンク及びイメージリンクの両方を含んだ検索結果を返す。 検索結果には既にテキストリンクがあるため、画像の <att>alt</att> 属性は空になっている。 しかし、スクリーンリーダーは画像リンクを無視しないで、リンクの目的が説明されていそうなテキストを見つけるための推測に基づいた修復を試みる。 例えば、スクリーンリーダーは「フットボール ドット ジフ フットボール スコアカード」と読み上げるかもしれない。</p>
 </description>
       <code role="xhtml1"><![CDATA[
@@ -69,7 +69,7 @@
           <p>非テキストコンテンツが支援技術により無視される方法、<code>role="presentation"</code> や空の <code>alt</code> 属性で実装されている。</p>
         </item>
         <item>
-          <p><att>aria-label</att> や <att>aria-labelledby</att>のようなほかの方法でアクセシブルな名前 (name) を持たないリンクをチェックする</p>
+          <p><att>aria-label</att> や <att>aria-labelledby</att> のようなほかの方法でアクセシブルな名前 (name) を持たないリンクをチェックする</p>
         </item>
       </olist>
     </procedure>

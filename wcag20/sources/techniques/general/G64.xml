@@ -10,8 +10,8 @@
       <success-criterion idref="navigation-mechanisms-mult-loc" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>これは、達成基準2.4.5の実装に十分なコンテンツを配置するための一連の達成方法の一つである。目次は、同じドキュメントの区分と小区分へのリンクを提供する。ドキュメントにある情報は、通常、階層的に構成され、順々に読まれることを意図している。まさに図書館にある多くの本にそれぞれ目次があるように、ウェブサイトの多くのドキュメントにも目次がある。</p>
-    <p>目次は次の2つの目的に役立つ:</p>
+    <p>これは、達成基準 2.4.5 の実装に十分なコンテンツを配置するための一連の達成方法の一つである。目次は、同じドキュメントの区分と小区分へのリンクを提供する。ドキュメントにある情報は、通常、階層的に構成され、順々に読まれることを意図している。まさに図書館にある多くの本にそれぞれ目次があるように、ウェブサイトの多くのドキュメントにも目次がある。</p>
+    <p>目次は次の 2 つの目的に役立つ:</p>
     <ulist>
       <item>
         <p>ドキュメントの内容と構成の概要を利用者に与える。</p>
@@ -26,12 +26,12 @@
   </description>
    <examples>
       <eg-group>
-      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc>には、ドキュメントの区分と小区分へのリンクの階層的なリストである<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html#contents">目次</loc>がある。目次の階層構造は区分の構成を反映し、目次の各項目は、利用者をその区分に直接連れて行くリンクである。</p>
+      <description><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン 2.0</loc> には、ドキュメントの区分と小区分へのリンクの階層的なリストである<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://waic.jp/docs/WCAG20/Overview.html#contents">目次</loc>がある。目次の階層構造は区分の構成を反映し、目次の各項目は、利用者をその区分に直接連れて行くリンクである。</p>
 </description>
     </eg-group>
     <eg-group>
          <description>
-            <p><loc href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">Accessing PDF Documents with Assistive Technology: A Screen Reader User's Guide</loc>の目次は2ページ目から始まっている。</p>
+            <p><loc href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">Accessing PDF Documents with Assistive Technology: A Screen Reader User's Guide</loc> の目次は 2 ページ目から始まっている。</p>
          </description>
     </eg-group>
    </examples>

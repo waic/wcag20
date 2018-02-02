@@ -18,7 +18,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>コンテンツ制作者はテキストの色も背景も指定していない。CSSも使用していない。その結果、利用者は彼らにとって都合のよい色とコントラストを提供するブラウザの初期設定を利用可能となる。</p>
+      <description><p>コンテンツ制作者はテキストの色も背景も指定していない。CSS も使用していない。その結果、利用者は彼らにとって都合のよい色とコントラストを提供するブラウザの初期設定を利用可能となる。</p>
 </description>
     </eg-group>
    </examples>
@@ -100,7 +100,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>2.と4.を満たしている。</p>
+               <p>2. と 4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

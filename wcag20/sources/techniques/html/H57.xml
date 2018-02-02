@@ -18,11 +18,11 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、<el>html</el>要素に<att>lang</att>属性及び (又は) <att>xml:lang</att>属性を指定することで、文書の初期設定言語を特定することである。</p>
+    <p>この達成方法の目的は、<el>html</el> 要素に <att>lang</att> 属性及び (又は) <att>xml:lang</att> 属性を指定することで、文書の初期設定言語を特定することである。</p>
     <p>次のようなさまざまな理由から、文書の言語を特定することが重要である：</p>
     <ulist>
       <item>
-        <p>点字翻訳ソフトウェアでは、制御符号をアクセント付き文字の代わりにすることや、2級点字の縮約形を誤って生成するのを避けるために制御符号を挿入することができる。</p>
+        <p>点字翻訳ソフトウェアでは、制御符号をアクセント付き文字の代わりにすることや、2 級点字の縮約形を誤って生成するのを避けるために制御符号を挿入することができる。</p>
       </item>
       <item>
         <p>複数の言語をサポートする音声合成装置では、そのページの言語に合った発音と構文を採用し、適用することで、テキストを正しい発音、適切なアクセントで読み上げることができる。</p>
@@ -34,13 +34,13 @@
         <p>言語をマークアップしておくことは、ユーザエージェントが辞書で定義を提供するのにも役立つ。</p>
       </item>
     </ulist>
-    <p>HTML 4.01では、<el>html</el>要素に<el>lang</el>属性を指定する。一方、XHTMLをtext/htmlとして配信する場合には、XHTML仕様の要求に合致しつつ、HTMLとの後方互換性を確保するために、<el>html</el>要素に<att>lang</att>属性と<att>xml:lang</att>属性を指定する。XHTMLをapplication/xhtml+xmlとして配信する場合には、<el>html</el>要素の<att>xml:lang</att>属性のみを指定する。<att>lang</att>属性と<att>xml:lang</att>属性の双方には、同じ値のみが指定できる。</p>
-    <note><p>HTMLは<att>lang</att>属性の利用のみを指示しているが、XHTML 1.0は (経過措置として) 両方の属性を認めており、XHTML 1.1は<att>xml:lang</att>属性のみを認めている。</p>
-     <p><att>lang</att>属性と<att>xml:lang</att>属性で指定できる値については、下記の参考リソースで示されている。言語タグでは、その言語を示すために主言語コードを用い、(ハイフン区切りで示す) 任意の副言語コードは言語の異体を示すのに用いる。たとえば、英語は主言語コードでは「en」で示すが、イギリス英語とアメリカ英語は「en-GB」と「en-US」という形で区別できる。この達成方法では、主言語コードの利用が重要である。副言語コードの利用は任意であるが、ある状況では役に立つかもしれない。</p></note>
+    <p>HTML 4.01 では、<el>html</el> 要素に <el>lang</el> 属性を指定する。一方、XHTML を text/html として配信する場合には、XHTML 仕様の要求に合致しつつ、HTML との後方互換性を確保するために、<el>html</el> 要素に <att>lang</att> 属性と <att>xml:lang</att> 属性を指定する。XHTML を application/xhtml+xml として配信する場合には、<el>html</el> 要素の <att>xml:lang</att> 属性のみを指定する。<att>lang</att> 属性と <att>xml:lang</att> 属性の双方には、同じ値のみが指定できる。</p>
+    <note><p>HTML は <att>lang</att> 属性の利用のみを指示しているが、XHTML 1.0 は (経過措置として) 両方の属性を認めており、XHTML 1.1 は <att>xml:lang</att> 属性のみを認めている。</p>
+     <p><att>lang</att> 属性と <att>xml:lang</att> 属性で指定できる値については、下記の参考リソースで示されている。言語タグでは、その言語を示すために主言語コードを用い、(ハイフン区切りで示す) 任意の副言語コードは言語の異体を示すのに用いる。たとえば、英語は主言語コードでは「en」で示すが、イギリス英語とアメリカ英語は「en-GB」と「en-US」という形で区別できる。この達成方法では、主言語コードの利用が重要である。副言語コードの利用は任意であるが、ある状況では役に立つかもしれない。</p></note>
   </description>
    <examples>
       <eg-group>
-      <description><p>この事例では、HTML文書の内容がフランス語であることを明確にしている。
+      <description><p>この事例では、HTML 文書の内容がフランス語であることを明確にしている。
 </p>
 </description>
       <code role="html401"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -56,7 +56,7 @@
       <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
-      <description><p>この事例では、text/htmlというコンテンツタイプのXHTML 1.0文書の内容がフランス語であることを明確にしている。XHTML仕様の要求に合致しつつ、HTMLとの後方互換性を確保するために、<att>lang</att>属性と<att>xml:lang</att>属性の両方を指定している。</p>
+      <description><p>この事例では、text/html というコンテンツタイプの XHTML 1.0 文書の内容がフランス語であることを明確にしている。XHTML 仕様の要求に合致しつつ、HTML との後方互換性を確保するために、<att>lang</att> 属性と <att>xml:lang</att> 属性の両方を指定している。</p>
 </description>
       <code role="html401"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -72,7 +72,7 @@
       <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
-      <description><p>この事例では、application/xhtml+xmlというコンテンツタイプのXHTML 1.1文書の内容がフランス語であることを明確にしている。<att>xml:lang</att>属性のみを指定している。</p>
+      <description><p>この事例では、application/xhtml+xml というコンテンツタイプの XHTML 1.1 文書の内容がフランス語であることを明確にしている。<att>xml:lang</att> 属性のみを指定している。</p>
 </description>
       <code role="html401"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -94,37 +94,31 @@
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/TR/html401/struct/dirlang.html#h-8.1">HTML 4.01
-                    "lang" attribute</loc>
-								       </p>
+                    "lang" attribute</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
-                    Identification of Languages</loc>
-								       </p>
+                    Identification of Languages</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/dirlang.html#h-8.1.2">Inheritance of language codes</loc>
-								       </p>
+                       href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/dirlang.html#h-8.1.2">Inheritance of language codes</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/International/tutorials/language-decl/">Declaring
-                    Language in XHTML and HTML</loc>
-								       </p>
+                    Language in XHTML and HTML</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
                        href="http://www.w3.org/TR/i18n-html-tech-lang/">Authoring Techniques for
                     XHTML &amp; HTML Internationalization: Specifying the language of content
-                    1.0</loc>
-								       </p>
+                    1.0</loc></p>
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.w3.org/International/articles/language-tags/Overview.en.php">Language tags in HTML and XML</loc>
-								       </p>
+                       href="http://www.w3.org/International/articles/language-tags/Overview.en.php">Language tags in HTML and XML</loc></p>
             </item>
          </ulist>
       </see-also>
@@ -136,13 +130,13 @@
       <procedure>
       <olist>
         <item>
-          <p>文書に<el>html</el>要素がある。</p>
+          <p>文書に <el>html</el> 要素がある。</p>
         </item>
         <item>
-          <p><el>html</el>要素に<att>lang</att>属性及び／又は <att>xml:lang</att>属性が指定してある。</p>
+          <p><el>html</el> 要素に <att>lang</att> 属性及び／又は <att>xml:lang</att> 属性が指定してある。</p>
         </item>
         <item>
-          <p><att>lang</att>属性及び／又は <att>xml:lang</att>属性の値が<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc>又は後継仕様に準拠しており、そのウェブページの主言語を反映している。</p>
+          <p><att>lang</att> 属性及び／又は <att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又は後継仕様に準拠しており、そのウェブページの主言語を反映している。</p>
         </item>
       </olist>
     </procedure>

@@ -20,17 +20,17 @@
    <description>
       <p>この達成方法の目的は、(プレゼンテーションを通して必須であることが示されている) フォームフィールドが、フォームの正常送信のために必須であることを、プログラムによって解釈できる指標として提供することである。</p>
       <p>要素が必須であるという事実は多くの場合、(テキスト又は非テキストのシンボル、又は入力が必須であることを示すテキスト、又は色/スタイルを介して) 視覚的に提示されるが、これは、フィールド名の一部としてプログラムによって解釈することができない。</p>
-      <p>WAI-ARIA <prop>aria-required</prop>プロパティは、送信前に利用者の入力が必須であることを示す。<prop>aria-required</prop>プロパティは、<attval>true</attval>又は<attval>false</attval>の値を持つことができる。たとえば、利用者が住所のフィールドに入力しなければならない場合、<att>aria-required</att>は<attval>true</attval>に設定される。</p>
+      <p>WAI-ARIA <prop>aria-required</prop> プロパティは、送信前に利用者の入力が必須であることを示す。<prop>aria-required</prop> プロパティは、<attval>true</attval> 又は <attval>false</attval> の値を持つことができる。たとえば、利用者が住所のフィールドに入力しなければならない場合、<att>aria-required</att> は <attval>true</attval> に設定される。</p>
       <note>
-         <p><code><![CDATA[aria-required="true"]]></code>の使用は、アスタリスクや他のテキストシンボルがプログラム的にフィールドに関連付けられている場合であっても、一部の支援技術の利用者に対して<prop>required</prop>プロパティによって補強できるので、有益であるかもしれない。</p>
-         <p>多くの場合、要素が必須であるという事実は、(コントロールの後の符号や記号のように) 視覚的に提示される。視覚的なプレゼンテーションに加えて<prop>aria-required</prop>プロパティを使用することは、ユーザエージェントが、この重要な情報をユーザエージェント固有の方法で利用者に伝えることを、はるかに簡単にする。XHTMLやHTMLとともにWAI-ARIAステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting   ARIA in XHTML and HTML 4.01</loc>を参照のこと。なお、WAI-ARIAステート及びプロパティは他の言語とも互換性がある。詳しくはその言語における文書の活用を参照のこと。</p>
+         <p><code><![CDATA[aria-required="true"]]></code> の使用は、アスタリスクや他のテキストシンボルがプログラム的にフィールドに関連付けられている場合であっても、一部の支援技術の利用者に対して <prop>required</prop> プロパティによって補強できるので、有益であるかもしれない。</p>
+         <p>多くの場合、要素が必須であるという事実は、(コントロールの後の符号や記号のように) 視覚的に提示される。視覚的なプレゼンテーションに加えて <prop>aria-required</prop> プロパティを使用することは、ユーザエージェントが、この重要な情報をユーザエージェント固有の方法で利用者に伝えることを、はるかに簡単にする。XHTML や HTML とともに WAI-ARIA ステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc> を参照のこと。なお、WAI-ARIA ステート及びプロパティは他の言語とも互換性がある。詳しくはその言語における文書の活用を参照のこと。</p>
       </note>
    </description>
    <examples>
       <eg-group>
          <head/>
          <description>
-            <p><prop>required</prop>プロパティがlabel要素の後に置かれるアスタリスクによって示されている:</p>
+            <p><prop>required</prop> プロパティが label 要素の後に置かれるアスタリスクによって示されている:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
   <p>Note: [*]denotes mandatory field</p>
@@ -52,7 +52,7 @@
       <eg-group>
          <head/>
          <description>
-            <p><prop>required</prop>プロパティがlabel要素の後に置かれる単語"required"によって示されている:</p>
+            <p><prop>required</prop> プロパティが label 要素の後に置かれる単語 "required" によって示されている:</p>
             <codeblock xml:space="preserve"><![CDATA[<head>
 <form action="#" method="post" id="step1" onsubmit="return errorCheck2()">
   <p>
@@ -89,7 +89,7 @@
          <head/>
          <description>
             <p>
-            必須フィールドは、フィールドの周りの赤いボーダーと<code role="css"><![CDATA[content:before]]></code>を使用するCSSによってレンダリングされる星のアイコンで示される。この例はまた、<code><![CDATA[role=radio]]></code>をもつカスタムラジオボタンを使用するが、spanを実際にラジオボタンのように動作させるためのスクリプトは、この例に含まれていない。CSSプロパティはフォームの下にある。</p>
+            必須フィールドは、フィールドの周りの赤いボーダーと <code role="css"><![CDATA[content:before]]></code> を使用する CSS によってレンダリングされる星のアイコンで示される。この例はまた、<code><![CDATA[role=radio]]></code> をもつカスタムラジオボタンを使用するが、span を実際にラジオボタンのように動作させるためのスクリプトは、この例に含まれていない。CSS プロパティはフォームの下にある。</p>
             <codeblock xml:space="preserve"><![CDATA[
 <form action="#" method="post" id="alerts1">
   <label for="acctnum" data-required="true">Account Number</label>
@@ -104,7 +104,7 @@
  </ul>
 </form>
  ]]></codeblock>
-<p>この例に対する関連するCSSスタイル定義:</p>
+<p>この例に対する関連する CSS スタイル定義:</p>
             <codeblock xml:space="preserve"><![CDATA[
 [aria-required=true] {
   border: red thin solid;
@@ -116,9 +116,9 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>XHTMLにおける必須のテキスト入力フィールド</head>
+         <head>XHTML における必須のテキスト入力フィールド</head>
          <description>
-            <p>次の例は、フォームフィールドが送信されなければならないことを示すために<prop>aria-required</prop>プロパティを使用するXHTML文書を示す。フィールドの必須の性質は、WAI-ARIAをサポートしないユーザエージェントのための予備として、ラベルでも表示される。</p>
+            <p>次の例は、フォームフィールドが送信されなければならないことを示すために <prop>aria-required</prop> プロパティを使用する XHTML 文書を示す。フィールドの必須の性質は、WAI-ARIA をサポートしないユーザエージェントのための予備として、ラベルでも表示される。</p>
          </description>
          <code xml:space="preserve"><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
@@ -148,12 +148,12 @@
 		]]></code>
       </eg-group>
       <eg-group>
-         <head>スクリプト経由で<prop>aria-required</prop>プロパティを追加する</head>
+         <head>スクリプト経由で <prop>aria-required</prop> プロパティを追加する</head>
          <description>
-            <p>この例は、フォーム要素に<prop>aria-required</prop>プロパティを追加するためにスクリプトを使用する。必須プロパティは、<function>setAttribute()</function> APIを使用して割り当てられる。</p>
-            <p>配列変数<var>requiredIds</var>は、必須としてマークされる必要がある要素のIDとともに作成される。<function>setRequired()</function>関数は、<obj>window</obj>オブジェクトの<event>onload</event>イベントから呼び出される。</p>
-            <p><function>setRequired()</function>関数は、提供されたIDのすべてをループし、要素を取得し、setAttribute()関数を使用して<prop>aria-required</prop>プロパティをtrueにする。</p>
-            <p>このページがFirefox 3.0以降及びWAI-ARIAをサポートするスクリーンリーダーを使用してアクセスされる場合、入力フィールドのラベルを読む際にスクリーンリーダーは"required"と伝える。</p>
+            <p>この例は、フォーム要素に <prop>aria-required</prop> プロパティを追加するためにスクリプトを使用する。必須プロパティは、<function>setAttribute()</function> API を使用して割り当てられる。</p>
+            <p>配列変数 <var>requiredIds</var> は、必須としてマークされる必要がある要素の ID とともに作成される。<function>setRequired()</function> 関数は、<obj>window</obj> オブジェクトの <event>onload</event> イベントから呼び出される。</p>
+            <p><function>setRequired()</function> 関数は、提供された ID のすべてをループし、要素を取得し、setAttribute() 関数を使用して <prop>aria-required</prop> プロパティを true にする。</p>
+            <p>このページが Firefox 3.0 以降及び WAI-ARIA をサポートするスクリーンリーダーを使用してアクセスされる場合、入力フィールドのラベルを読む際にスクリーンリーダーは "required" と伝える。</p>
          </description>
          <code xml:space="preserve"><![CDATA[<head>
  <script type="text/javascript">
@@ -226,10 +226,10 @@
          <p>必須であることがプレゼンテーションを経由して示される各コントロールに対して。</p>
          <olist>
 			<item>
-				<p><att>aria-required</att>属性が存在するかどうかをチェックする:</p>
+				<p><att>aria-required</att> 属性が存在するかどうかをチェックする:</p>
 			</item>
             <item>
-               <p><att>aria-required</att>属性値が、そのユーザインタフェースコンポーネントに対する正しいrequiredステートであるかどうかをチェックする。</p>
+               <p><att>aria-required</att> 属性値が、そのユーザインタフェースコンポーネントに対する正しい required ステートであるかどうかをチェックする。</p>
             </item>
          </olist>
       </procedure>

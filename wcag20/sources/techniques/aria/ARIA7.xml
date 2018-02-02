@@ -79,18 +79,18 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p><att>aria-labelledby</att>属性を用いることで、制作者は、ページ上の可視テキスト要素を、フォーカス可能な要素 (フォームコントロール又はリンク) のラベルとして使用できる。たとえば、"read more..."【訳注：続きを読む】のリンクは、リンクの目的を明確にするために、先行するセクションの見出しテキストと関連付けることができるかもしれない (事例1を参照)。</p>
-      <p><att>aria-labelledby</att>の助けを借りてフォーカス可能な要素にテキストを関連付ける場合、ターゲットのテキスト要素は、フォーカス可能な要素の<att>aria-labelledby</att>属性値の中で参照されるIDによって与えられる。</p>
-      <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<att>aria-labelledby</att>属性の値においてIDs (IDREF) の文字列として参照される一意なIDを与えられなければならない。そして、ラベルテキストは<att>aria-labelledby</att>属性の値におけるIDの順序に従って連結されるべきである。</p>
-      <p>リンクに適用する場合、<att>aria-labelledby</att>は、目の見える利用者に対して直ちに明白かもしれないが、スクリーンリーダーの利用者にはあまり明らかではないリンクの目的を識別するために使用できる。</p>
-      <p><att>aria-labelledby</att>の指定された動作は、関連付けられたラベルテキストが (リンクテキストに加えられるのではなく) リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<att>aria-labelledby</att>属性の値を構成するIDsの文字列の中で、リンクのIDも参照されるべきである。</p>
-      <p>名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA specification</loc>及びHTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#a-element">accessible name and description calculation for links</loc>を参照。</p>
+      <p><att>aria-labelledby</att> 属性を用いることで、制作者は、ページ上の可視テキスト要素を、フォーカス可能な要素 (フォームコントロール又はリンク) のラベルとして使用できる。たとえば、"read more..."【訳注：続きを読む】のリンクは、リンクの目的を明確にするために、先行するセクションの見出しテキストと関連付けることができるかもしれない (事例 1 を参照)。</p>
+      <p><att>aria-labelledby</att> の助けを借りてフォーカス可能な要素にテキストを関連付ける場合、ターゲットのテキスト要素は、フォーカス可能な要素の <att>aria-labelledby</att> 属性値の中で参照される ID によって与えられる。</p>
+      <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<att>aria-labelledby</att> 属性の値において IDs (IDREF) の文字列として参照される一意な ID を与えられなければならない。そして、ラベルテキストは <att>aria-labelledby</att> 属性の値における ID の順序に従って連結されるべきである。</p>
+      <p>リンクに適用する場合、<att>aria-labelledby</att> は、目の見える利用者に対して直ちに明白かもしれないが、スクリーンリーダーの利用者にはあまり明らかではないリンクの目的を識別するために使用できる。</p>
+      <p><att>aria-labelledby</att> の指定された動作は、関連付けられたラベルテキストが (リンクテキストに加えられるのではなく) リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<att>aria-labelledby</att> 属性の値を構成する IDs の文字列の中で、リンクの ID も参照されるべきである。</p>
+      <p>名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA specification</loc> 及び HTML to Platform Accessibility APIs Implementation Guide における <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#a-element">accessible name and description calculation for links</loc> を参照。</p>
    </description>
    <examples>
       <eg-group>
          <head>リンクに追加情報を提供する</head>
          <description>
-            <p>この例は、画面に表示されるリンクテキストが、リンクに対するアクセシブルな名前の最初に使用されることを意図している。JAWSやNVDAのようなポピュラーなスクリーンリーダーは、これを "Read more ...Stormshit east coast" のように告知し、リンクだけを閲覧することがあるスクリーンリーダーの利用者にとって有益なリンク一覧にも同じテキストを表示する。</p>
+            <p>この例は、画面に表示されるリンクテキストが、リンクに対するアクセシブルな名前の最初に使用されることを意図している。JAWS や NVDA のようなポピュラーなスクリーンリーダーは、これを "Read more ...Stormshit east coast" のように告知し、リンクだけを閲覧することがあるスクリーンリーダーの利用者にとって有益なリンク一覧にも同じテキストを表示する。</p>
             <codeblock xml:space="preserve"><![CDATA[<h2 id="headline">Storms hit east coast</h2>
 
 <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns.
@@ -102,7 +102,7 @@
          <description>
             <p>制作者は、参照したいコードのセクションを囲むタグを配置することもあるだろう。</p>
             <note>
-            <p><el>span</el>要素上の<code><![CDATA[tabindex="-1"]]></code>の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ (IE9、IE10) がアクセシビリティツリーに<el>span</el>要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att>による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc>を参照。</p>
+            <p><el>span</el> 要素上の <code><![CDATA[tabindex="-1"]]></code> の使用は、スクリプトによってフォーカスをサポートすることを意味するものではない――ここでは、単に一部のブラウザ (IE9、IE10) がアクセシビリティツリーに <el>span</el> 要素を含めることを保証するためのものであり、その結果、<att>aria-labelledby</att> による参照に利用できるようになる。詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://msdn.microsoft.com/en-us/library/ie/gg701963%28v=vs.85%29.aspx#Accessible_HTML_Elements">Accessible HTML Elements</loc> を参照。</p>
             </note>
             <codeblock xml:space="preserve"><![CDATA[<p>Download <span id="report-title" tabindex="-1">2012 Sales Report</span>:
 <a aria-labelledby="report-title pdf" href="#" id="pdf">PDF</a> |
@@ -126,20 +126,20 @@
    <related-techniques/>
    <tests>
       <procedure>
-         <p><att>aria-labelledby</att>属性を持つ各リンクに対して:</p>
+         <p><att>aria-labelledby</att> 属性を持つ各リンクに対して:</p>
          <olist>
             <item>
-               <p><att>aria-labelledby</att>属性の値に含まれる各IDが、リンクの目的の一部として使用されるテキスト要素のIDと一致する。</p>
+               <p><att>aria-labelledby</att> 属性の値に含まれる各 ID が、リンクの目的の一部として使用されるテキスト要素の ID と一致する。</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att>属性に含まれる1つ以上のIDによって参照されるテキストを合成した値が、link要素の目的を適切に説明している。</p>
+               <p><att>aria-labelledby</att> 属性に含まれる 1 つ以上の ID によって参照されるテキストを合成した値が、link 要素の目的を適切に説明している。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.及び2.を満たしている。</p>
+               <p>1. 及び 2. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

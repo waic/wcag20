@@ -35,7 +35,7 @@
    </ua-issues>
    <description>
     <p>この達成方法の目的は、<el>abbr</el> 要素を用いることで、略語に対して元の語又は定義を提供することである</p>
-    <p><el>abbr</el> 要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML4 及び XHTML では、頭文字語や頭字語は <el>acronym</el> 要素を用いてマークアップすることもできる。abbr要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML5 以降では、より一般的な <el>abbr</el> 要素の利用が提案され、<el>acronym</el> 要素は廃止されている。</p>
+    <p><el>abbr</el> 要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML4 及び XHTML では、頭文字語や頭字語は <el>acronym</el> 要素を用いてマークアップすることもできる。abbr 要素は、頭字語や頭文字語を含むあらゆる略語に用いてよい。HTML5 以降では、より一般的な <el>abbr</el> 要素の利用が提案され、<el>acronym</el> 要素は廃止されている。</p>
   </description>
    <examples>
       <eg-group>

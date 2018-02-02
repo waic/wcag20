@@ -4,7 +4,7 @@
 <technique id="H97">
    <short-name>nav 要素を使用して、関連したリンクをグループ化する</short-name>
    <applicability>
-      <p>関係のあるリンクを含むHTML5文書</p>
+      <p>関係のあるリンクを含む HTML5 文書</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic" relationship="sufficient"/>
@@ -28,9 +28,9 @@
             ]]></code>
       </eg-group>
       <eg-group>
-         <head>多くのnav要素</head>
+         <head>多くの nav 要素</head>
          <description>
-            <p>この例は、文書中に1つ以上のnav要素があるときに、ナビゲーション分類を識別するためにaria-label属性とnav要素を使う。</p>
+            <p>この例は、文書中に 1 つ以上の nav 要素があるときに、ナビゲーション分類を識別するために aria-label 属性と nav 要素を使う。</p>
          </description>
          <code role="html5"><![CDATA[
 			<nav aria-label="Site menu">

@@ -4,23 +4,23 @@
 <technique id="SCR32">
    <short-name>クライアントサイドのバリデーションを提供し、DOM を介してエラーテキストを追加する</short-name>
    <applicability>
-      <p>HTML又はXHTMLで使用されるスクリプト。</p>
+      <p>HTML 又は XHTML で使用されるスクリプト。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="minimize-error-identified" relationship="sufficient"/>
       <success-criterion idref="minimize-error-suggestions" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、クライアントサイドでフォームフィールドの検証に失敗したときにエラーメッセージを表示する方法について説明することである。アンカー要素はリスト中でエラーメッセージを表示させる際に使用され、検証が必要なフィールドの上に挿入される。フォーカスをエラーメッセージの場所に移し、利用者の注意を引くために、アンカー要素がエラーメッセージに使用される。アンカー要素の<code>href</code>は、エラーがみつかったフィールドへのページ内リンクを含む。</p>
-    <p>配置されたアプリケーションにおいて、もしJavaScriptが無効になっていれば、クライアントサイドの検証は行われない。そのため、この達成方法はスクリプトが適合性において信頼できる、又はサーバーサイドの検証技術があらゆるエラーを発見し、エラーを含むフィールドの情報とともにページを返すように用いられている場合のみ、十分であるといえる。</p>
+    <p>この達成方法の目的は、クライアントサイドでフォームフィールドの検証に失敗したときにエラーメッセージを表示する方法について説明することである。アンカー要素はリスト中でエラーメッセージを表示させる際に使用され、検証が必要なフィールドの上に挿入される。フォーカスをエラーメッセージの場所に移し、利用者の注意を引くために、アンカー要素がエラーメッセージに使用される。アンカー要素の <code>href</code> は、エラーがみつかったフィールドへのページ内リンクを含む。</p>
+    <p>配置されたアプリケーションにおいて、もし JavaScript が無効になっていれば、クライアントサイドの検証は行われない。そのため、この達成方法はスクリプトが適合性において信頼できる、又はサーバーサイドの検証技術があらゆるエラーを発見し、エラーを含むフィールドの情報とともにページを返すように用いられている場合のみ、十分であるといえる。</p>
     <a11ysuprorted rating="good" exnumber="0"/>
   </description>
    <examples>
       <eg-group>
-      <description><p>この事例は必須のフィールドを検証し、さらに特定の書式が必要なフィールドを検証する。エラーがみつかったとき、スクリプトはエラーメッセージの一覧をDOMに挿入し、フォーカスをそこへ移動する。</p>
+      <description><p>この事例は必須のフィールドを検証し、さらに特定の書式が必要なフィールドを検証する。エラーがみつかったとき、スクリプトはエラーメッセージの一覧を DOM に挿入し、フォーカスをそこへ移動する。</p>
 <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR32/form2.jpg" alt="サンプルの画面イメージ：スクリーンショットは、正しく記入が行われていないいくつかのフィールドのエラーメッセージをあらわしている。エラーメッセージはリンクリストでフォームの先頭近くに現れる。"/>
-<p> <em>HTML及びJavascriptのコード</em> </p>
-<p>これは事例のフォームのHTMLである：</p>
+<p> <em>HTML 及び Javascript のコード</em> </p>
+<p>これは事例のフォームの HTML である：</p>
 </description>
       <code><![CDATA[
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -98,7 +98,7 @@
         </form>
     </body>
 </html>]]></code>
-      <description><p>以下は検証を行ってエラーメッセージを挿入するJavaScriptである：</p>
+      <description><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である：</p>
 </description>
       <code><![CDATA[
 window.onload = initialise;
@@ -378,7 +378,7 @@ function checkOptional(bValid, strValue, arClass)
 
    return bValid;
    }]]></code>
-      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS及びXHTMLで実装されている：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR32/index.php"><!-- linktype="examples"-->フォーム検証の例</loc></p>
+      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS 及び XHTML で実装されている：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR32/index.php"><!-- linktype="examples"-->フォーム検証の例</loc></p>
 </description>
     </eg-group>
    </examples>

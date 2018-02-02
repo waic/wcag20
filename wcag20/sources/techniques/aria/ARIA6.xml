@@ -38,14 +38,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、支援技術によって読み取ることができるオブジェクトのラベルを提供することである。<att>aria-label</att>属性は、ボタンなど、オブジェクトのテキストラベルを提供する。スクリーンリーダーがオブジェクトに遭遇した際、<att>aria-label</att>テキストが読み込まれ、利用者はそのオブジェクトがどのようなものかを知ることができる。</p>
-      <p>制作者は、<att>aria-labelledby</att>が同じオブジェクトに使用される状況では、<att>aria-label</att>が支援技術によって無視される場合があることに注意すべきである。名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA仕様</loc>及びHTML to Platform Accessibility APIs Implementation Guideにおける<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc>を参照。制作者は、<att>aria-label</att>の使用が画像の<att>alt</att>や<att>for</att>属性を用いてフォームフィールドに関係付けられた<el>label</el>などのネイティブな名前付けを全て上書きすることに注意すべきである。</p>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるオブジェクトのラベルを提供することである。<att>aria-label</att> 属性は、ボタンなど、オブジェクトのテキストラベルを提供する。スクリーンリーダーがオブジェクトに遭遇した際、<att>aria-label</att> テキストが読み込まれ、利用者はそのオブジェクトがどのようなものかを知ることができる。</p>
+      <p>制作者は、<att>aria-labelledby</att> が同じオブジェクトに使用される状況では、<att>aria-label</att> が支援技術によって無視される場合があることに注意すべきである。名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA 仕様</loc>及び HTML to Platform Accessibility APIs Implementation Guide における <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation">accessible name and description calculation</loc> を参照。制作者は、<att>aria-label</att> の使用が画像の <att>alt</att> や <att>for</att> 属性を用いてフォームフィールドに関係付けられた <el>label</el> などのネイティブな名前付けを全て上書きすることに注意すべきである。</p>
    </description>
    <examples>
       <eg-group>
          <head>ナビゲーションランドマークを区別する</head>
          <description>
-            <p>次の例は、同じページに同じ種類のランドマークが2個以上存在し、かつページ内にラベルとして参照できる既存のテキストが存在しない場合に、HTML4及びXHTML1.0文書内で2つのナビゲーションランドマークを識別するために<att>aria-label</att>をどのように使用するのかを示している。</p>
+            <p>次の例は、同じページに同じ種類のランドマークが 2 個以上存在し、かつページ内にラベルとして参照できる既存のテキストが存在しない場合に、HTML4 及び XHTML 1.0 文書内で 2 つのナビゲーションランドマークを識別するために <att>aria-label</att> をどのように使用するのかを示している。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="navigation" aria-label="Primary">
 <ul><li>...a list of links here ...</li></ul> </div>
 <div role="navigation" aria-label="Secondary">
@@ -55,7 +55,7 @@
       <eg-group>
          <head>領域のランドマークを識別する</head>
          <description>
-            <p>次の例は、気象ポートレットに一般的な"region"ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att>でラベル付けされている。</p>
+            <p>次の例は、気象ポートレットに一般的な "region" ランドマークがどのように追加されうるのかを示している。ラベルとして参照できる既存のテキストがページ内に存在しないため、<att>aria-label</att> でラベル付けされている。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="region" aria-label="weather portlet"> 
 ...
 </div>]]></codeblock>
@@ -64,7 +64,7 @@
       <eg-group>
          <head>数学のラベルを提供する</head>
          <description>
-            <p>以下はmathロール、適切なラベル、およびMathMLのレンダリングを使用する、MathMLの機能の例である。</p>
+            <p>以下は math ロール、適切なラベル、および MathML レンダリングを使用する、MathML の機能の例である。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="math" aria-label="6 divided by 4 equals 1.5">
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mfrac>
@@ -102,7 +102,7 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p><att>aria-label</att>属性が存在する各要素に対して。</p>
+         <p><att>aria-label</att> 属性が存在する各要素に対して。</p>
          <olist>
             <item>
                <p>テキストの説明が正確にオブジェクトをラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供するかどうかを検査する。</p>
@@ -112,7 +112,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

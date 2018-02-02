@@ -45,7 +45,7 @@
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
-      <head>ある文書を3つのファイル形式で提供する場合</head>
+      <head>ある文書を 3 つのファイル形式で提供する場合</head>
       <code role="xhtml"><![CDATA[<h2>2006-2007年版 年次報告書</h2>
 <p> 
   <a href="annrep0607.html">(HTML)</a>&nbsp;

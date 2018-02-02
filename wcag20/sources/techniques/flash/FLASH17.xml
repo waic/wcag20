@@ -78,7 +78,7 @@
             <p>この事例では、フォーカス可能な HTML 要素を明示的に指定することなく、SWFFocus クラスを使用している。SWFFocus によって、Flash コンテンツの前後に非表示のリンクが動的に挿入される。</p>
             <exsubhead>Flash コンテンツをロードする</exsubhead>
             <p>この事例では、Flash オブジェクトは <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://github.com/swfobject/swfobject">SWFObject's SWFObject による動的なパブリッシュ手法 (英語)</loc> によって追加されている。この手法では、JavaScript (ブラウザによってサポートされる方法)により動的に object タグが生成される。これは推奨される手法ではあるが、この実装方法を使用することは必須ではない。なお、HTML ドキュメント内に object タグがハードコーディングされている場合であっても SWFFocus クラスは動作する。</p>
+                    href="https://github.com/swfobject/swfobject">SWFObject's SWFObject による動的なパブリッシュ手法 (英語)</loc> によって追加されている。この手法では、JavaScript (ブラウザによってサポートされる方法) により動的に object タグが生成される。これは推奨される手法ではあるが、この実装方法を使用することは必須ではない。なお、HTML ドキュメント内に object タグがハードコーディングされている場合であっても SWFFocus クラスは動作する。</p>
             <p>以下のサンプルコードは、SWFObject を使用して動的にコンテンツをロードする方法を示している。</p>
             <exsubhead>事例 1 の HTML および Javascript のサンプルコード</exsubhead>
          </description>
