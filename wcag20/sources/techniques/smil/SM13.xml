@@ -11,11 +11,11 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p>
-    <p>SMIL 1.0 では、2つの映像のために別々の領域を定義できる。2つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p>
+    <p>SMIL 1.0 では、2 つの映像のために別々の領域を定義できる。2 つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p>
   </description>
    <examples>
       <eg-group>
-      <head>QuickTimeプレーヤーでの SMIL 1.0 による手話通訳のサンプル</head>
+      <head>QuickTime プレーヤーでの SMIL 1.0 による手話通訳のサンプル</head>
       <code><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
@@ -43,7 +43,7 @@
 </smil>]]></code>
     </eg-group>
     <eg-group>
-      <head>RealMediaプレーヤーでの SMIL 1.0 手話のサンプル:</head>
+      <head>RealMedia プレーヤーでの SMIL 1.0 手話のサンプル:</head>
       <code><![CDATA[
 <?xml version="1.0" encoding="UTF-8"?>
 <smil xmlns="http://www.w3.org/TR/REC-smil">
@@ -68,7 +68,7 @@
   </body>
 
 </smil>]]></code>
-      <description><p>この事例では、2つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
+      <description><p>この事例では、2 つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
                             </p>
 </description>
     </eg-group>
@@ -123,7 +123,7 @@
     <expected-results>
       <ulist>
         <item>
-          <p>3.を満たしている。</p>
+          <p>3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

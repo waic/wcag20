@@ -5,7 +5,7 @@
    <short-name>リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する</short-name>
    <applicability>
       <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc>をサポートするウェブコンテンツ技術。</p>
+              href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)</loc> をサポートするウェブコンテンツ技術。</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -17,15 +17,15 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、支援技術によって読み取ることができるページの領域に対して名前を提供することである。<att>aria-labelledby</att>属性は、領域又はランドマークとしてマークアップされたページ内のセクションと、そのセクションを分類するページ内のテキストを関連付ける方法を提供する。</p>
+      <p>この達成方法の目的は、支援技術によって読み取ることができるページの領域に対して名前を提供することである。<att>aria-labelledby</att> 属性は、領域又はランドマークとしてマークアップされたページ内のセクションと、そのセクションを分類するページ内のテキストを関連付ける方法を提供する。</p>
       <p>ランドマークロール (又はランドマーク) は、ページのセクションをプログラムで識別できるようにする。</p>
-      <p>ランドマークは、支援技術 (AT) 利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。<att>aria-describedby</att>のように、<att>aria-labelledby</att>は、スペース区切りのリストを使用して、ページの他の領域を指すための複数のIDを受け入れることができる。また、この集合を定義するものはIDに限定されている。</p>
+      <p>ランドマークは、支援技術 (AT) 利用者がページに順応するのを支援し、様々なページのセクションにより簡単にナビゲートするのに役立つ。<att>aria-describedby</att> のように、<att>aria-labelledby</att> は、スペース区切りのリストを使用して、ページの他の領域を指すための複数の ID を受け入れることができる。また、この集合を定義するものは ID に限定されている。</p>
    </description>
    <examples>
       <eg-group>
          <head>ページ上のテキストをもつランドマークを識別する</head>
          <description>
-            <p>以下は、complementaryランドマークに<att>aria-labelledby</att>を使用した一例である。この文書内の見出しがついている領域は、見出しの<att>id</att>値を含む<att>aria-labelledby</att>プロパティによってマークすることができる。</p>
+            <p>以下は、complementary ランドマークに <att>aria-labelledby</att> を使用した一例である。この文書内の見出しがついている領域は、見出しの <att>id</att> 値を含む <att>aria-labelledby</att> プロパティによってマークすることができる。</p>
             <codeblock xml:space="preserve"><![CDATA[<p role="complementary" aria-labelledby="hdr1">
  <h1 id="hdr1">
     Top News Stories
@@ -36,7 +36,7 @@
       <eg-group>
          <head>アプリケーションランドマークの識別</head>
          <description>
-            <p>次のコード断片は、静的な文を含むapplicationランドマークである。タイプapplicationの領域ランドマークがあり、かつ静的な説明テキストが利用可能であるため、applicationランドマークには、そのアプリケーションと静的テキストを関連付けるためのaria-describedbyによる参照を含めている。</p>
+            <p>次のコード断片は、静的な文を含む application ランドマークである。タイプ application の領域ランドマークがあり、かつ静的な説明テキストが利用可能であるため、application ランドマークには、そのアプリケーションと静的テキストを関連付けるための aria-describedby による参照を含めている。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="application" aria-labelledby="p123" aria-describedby="info">
 <h1 id="p123">Calendar<h1>
 <p id="info">
@@ -83,7 +83,7 @@ This calendar shows the game schedule for the Boston Red Sox.
                        href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>を持ち、<code><![CDATA[aria-labelledby]]></code> 属性も存在している各要素を調べる。</p>
             </item>
             <item>
-               <p><code><![CDATA[aria-labelledby]]></code>属性値が、ページ上の要素のidである。</p>
+               <p><code><![CDATA[aria-labelledby]]></code> 属性値が、ページ上の要素の id である。</p>
             </item>
             <item>
                <p>その <code><![CDATA[id]]></code> を持つ要素のテキストが、ページのセクションを正確にラベル付けしている。</p>
@@ -93,7 +93,7 @@ This calendar shows the game schedule for the Boston Red Sox.
       <expected-results>
          <ulist>
             <item>
-               <p>2.及び3.を満たしている。</p>
+               <p>2. 及び 3. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

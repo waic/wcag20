@@ -10,7 +10,7 @@
       <success-criterion idref="ensure-compat-rsv" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この失敗例は、フォームコントロールの名前が支援技術に公開されていない場合に発生する問題を説明する。その結果、一部の利用者はフォームコントロールの目的を特定できなくなる。名前 (name) は、<el>label</el> 要素を含む複数の方法で指定できる。他のオプションには、アクセシビリティ名に使用されるテキストを直接提供するために使用される <att>title</att> 属性および <att>aria-label</att> の使用、又はその名前 (name) を提供しているページ上の他のテキストとの関連を示す <att>aria-labelledby</att> が含まれる。ボタンコントロールには、以下に示すように、別の方法で名前 (name) を割り当てることができるが、特定の状況では<att>label</att>、<att>title</att>、<att>aria-label</att>、または <att>aria-labelledby</att> の使用が必要な場合がある。</p>
+    <p>この失敗例は、フォームコントロールの名前が支援技術に公開されていない場合に発生する問題を説明する。その結果、一部の利用者はフォームコントロールの目的を特定できなくなる。名前 (name) は、<el>label</el> 要素を含む複数の方法で指定できる。他のオプションには、アクセシビリティ名に使用されるテキストを直接提供するために使用される <att>title</att> 属性および <att>aria-label</att> の使用、又はその名前 (name) を提供しているページ上の他のテキストとの関連を示す <att>aria-labelledby</att> が含まれる。ボタンコントロールには、以下に示すように、別の方法で名前 (name) を割り当てることができるが、特定の状況では <att>label</att>、<att>title</att>、<att>aria-label</att>、または <att>aria-labelledby</att> の使用が必要な場合がある。</p>
     <note><p>明示的に関連付けられた <el>label</el> を使用できる要素は次のとおりとなる。</p>
       <ulist>
         <item><p><el>input</el></p></item>
@@ -28,7 +28,7 @@
    <examples>
       <eg-group role="failure">
       <head/>
-      <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code>要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント (支援技術を含む) がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
+      <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code> 要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント (支援技術を含む) がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
  <form>
@@ -103,20 +103,20 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>ウェブページ内のすべての<el>input</el>、<el>textarea</el> 及び <el>select</el>要素 (<attval>hidden</attval>、<attval>submit</attval>、<attval>reset</attval>、又は <attval>button</attval> の input を除く):</p>
+         <p>ウェブページ内のすべての <el>input</el>、<el>textarea</el> 及び <el>select</el> 要素 (<attval>hidden</attval>、<attval>submit</attval>、<attval>reset</attval>、又は <attval>button</attval> の input を除く):</p>
          <olist>
             <item>
                <p>次のいずれかの方法で、各要素にプログラムによる解釈が可能な名前が付いていることを確認する。</p>
                <olist>
-				  <item><p>テキストラベル又はラベルは、<att>aria-labelledby</att> 属性 (<att>aria-labelledby</att> 属性の値として与えられた各idは、テキストラベル要素の <att>id</att> と一致する) を介して、コントロール要素とプログラムにより関連付けられている。</p></item>
-				  <item><p>コントロールは、その <att>aria-label</att>属性の値によってプログラムにより解釈される。</p></item>
+				  <item><p>テキストラベル又はラベルは、<att>aria-labelledby</att> 属性 (<att>aria-labelledby</att> 属性の値として与えられた各 id は、テキストラベル要素の <att>id</att> と一致する) を介して、コントロール要素とプログラムにより関連付けられている。</p></item>
+				  <item><p>コントロールは、その <att>aria-label</att> 属性の値によってプログラムにより解釈される。</p></item>
                   <item>
-                     <p>テキストラベルは、ラベルの <att>for</att> 属性 (<att>for</att> 属性の値として与えられた <att>id</att>は入力要素の <att>id</att>と一致する) を介して、それぞれの入力要素に正しく関連付けられたラベル要素に含む。</p>
+                     <p>テキストラベルは、ラベルの <att>for</att> 属性 (<att>for</att> 属性の値として与えられた <att>id</att> は入力要素の <att>id</att> と一致する) を介して、それぞれの入力要素に正しく関連付けられたラベル要素に含む。</p>
                   </item>
                   <item>
                      <p>コントロールはラベルテキストも含む <el>label</el> 要素内に含まれる。</p>
                   </item>
-				  <item><p>コントロールは <att>type</att> が <attval>image</attval> の <el>input</el>であり、<att>alt</att> 属性はテキストラベルを提供する。</p></item>
+				  <item><p>コントロールは <att>type</att> が <attval>image</attval> の <el>input</el> であり、<att>alt</att> 属性はテキストラベルを提供する。</p></item>
                   <item>
                      <p>コントロールは <att>title</att> 属性の値によってプログラムにより解釈される。</p>
                   </item>

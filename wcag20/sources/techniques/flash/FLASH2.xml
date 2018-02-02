@@ -55,7 +55,7 @@
          <head>ActionScript 2.0 でプログラムによる説明を適用する</head>
          <description>
             <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<obj>_accProps</obj> オブジェクトを使用する必要がある。このオブジェクトは、オブジェクトに対して設定されているアクセシビリティ関連プロパティが含まれているオブジェクトを参照する。以下に、<obj>_accProps</obj> オブジェクトを使用して ActionScript によってオブジェクトの名前と説明を設定する簡単なコード例を示す。</p>
-            <p>10 月の売上実績を示すグラフがあり、「10月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
+            <p>10 月の売上実績を示すグラフがあり、「10 月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
          </description>
          <code xml:space="preserve"><![CDATA[// 'chart_mc' は、ムービーのメインのタイムライン上に置かれたインスタンスである
 _root.chart_mc._accProps = new Object();
@@ -70,7 +70,7 @@ _root.chart_mc._accProps.description = "10月の売上実績を示す棒グラ�
          <head>ActionScript 3.0 でプログラムによる説明を適用する</head>
          <description>
             <p>ActionScript を使用してプログラムによりオブジェクトの等価なテキストを制御するには、<obj>AccessibilityProperties</obj> オブジェクトを使用する必要がある。以下に、<obj>AccessibilityProperties</obj> オブジェクトを使用して ActionScript によってオブジェクトの名前と説明を設定する簡単なコード例を示す。</p>
-            <p>10 月の売上実績を示すグラフがあり、「10月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
+            <p>10 月の売上実績を示すグラフがあり、「10 月の売上実績グラフ」という短い代替テキストが設定されている。長い説明には、以下に示すコードによってより多くの情報を格納する。</p>
          </description>
          <code xml:space="preserve"><![CDATA[// 'chart_mc' は、ムービーのメインのタイムライン上に置かれたインスタンスである
 chart_mc.accessibilityProperties = new AccessibilityProperties();

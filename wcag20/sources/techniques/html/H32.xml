@@ -10,7 +10,7 @@
       <success-criterion idref="consistent-behavior-unpredictable-change" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行するHTTPリクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p>
+    <p>この達成方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行する HTTP リクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p>
   </description>
    <examples>
       <eg-group>
@@ -25,7 +25,7 @@
 </form>  ]]></code>
     </eg-group>
     <eg-group>
-      <description><p>次の事例では、利用者が要求したページを転送する( <att>action</att> 属性により指定された)サーバーサイド・スクリプトを使用している。</p>
+      <description><p>次の事例では、利用者が要求したページを転送する (<att>action</att> 属性により指定された) サーバーサイド・スクリプトを使用している。</p>
 </description>
       <code><![CDATA[<form action="http://www.example.com/cgi/redirect/" method="get"><br /> 
 <p>Navigate the site.</p><br /> 
@@ -63,14 +63,14 @@
           <p>コンテンツ内の全てのフォームを見る。</p>
         </item>
         <item>
-          <p>それぞれのフォームに、送信ボタン(input type="submit"、input type="image" 又は button type="submit")がある。</p>
+          <p>それぞれのフォームに、送信ボタン (input type="submit"、input type="image" 又は button type="submit") がある。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2.を満たしている。 </p>
+          <p>2. を満たしている。 </p>
         </item>
       </ulist>
       </expected-results>

@@ -16,14 +16,14 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、ユーザインタフェースコンポーネントのステート、プロパティ及び値を公開するために<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties">WAI-ARIAステート及びプロパティ</loc>を使用することであり、その結果それらが支援技術によって読み込まれて設定できるようになり、また、支援技術はそれらの値の変更を通知される。WAI-ARIA仕様は、各属性の規範的記述、及びユーザインタフェース要素がサポートするロールを提供する。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ステート及びプロパティ属性を公開することで、利用者がウィジェットを理解でき、そしてウィジェットと対話できるようになる。</p>
+      <p>この達成方法の目的は、ユーザインタフェースコンポーネントのステート、プロパティ及び値を公開するために <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties">WAI-ARIA ステート及びプロパティ</loc>を使用することであり、その結果それらが支援技術によって読み込まれて設定できるようになり、また、支援技術はそれらの値の変更を通知される。WAI-ARIA 仕様は、各属性の規範的記述、及びユーザインタフェース要素がサポートするロールを提供する。リッチインターネットアプリケーションが新しいユーザインタフェースウィジェットを定義する際、ステート及びプロパティ属性を公開することで、利用者がウィジェットを理解でき、そしてウィジェットと対話できるようになる。</p>
    </description>
    <examples>
       <eg-group>
          <head>トグルボタン</head>
          <description>
-            <p><att>button</att>ロールを持つウィジェットが<att>aria-pressed</att>属性を実装する場合、トグルボタンとして動作する。<att>aria-pressed</att>がtrueである場合、ボタンは「押されている」状態になる。<att>aria-pressed</att>がfalseである場合、押されていないことになる。この属性が存在しない場合、ボタンは単純なコマンドボタンとなる。</p>
-            <p>以下のスニペットはOpen Ajax Accessibility Examplesの例38からの引用であり、太字のテキストを選択するトグルボタンに対するWAI-ARIAマークアップを示している:</p>
+            <p><att>button</att> ロールを持つウィジェットが <att>aria-pressed</att> 属性を実装する場合、トグルボタンとして動作する。<att>aria-pressed</att> が true である場合、ボタンは「押されている」状態になる。<att>aria-pressed</att> が false である場合、押されていないことになる。この属性が存在しない場合、ボタンは単純なコマンドボタンとなる。</p>
+            <p>以下のスニペットは Open Ajax Accessibility Examples の例 38 からの引用であり、太字のテキストを選択するトグルボタンに対する WAI-ARIA マークアップを示している:</p>
             <codeblock xml:space="preserve"><![CDATA[
   <li id="bold1"  
     class="toggleButton"
@@ -35,7 +35,7 @@
     <img src="http://www.oaa-accessibility.org/media/examples/images/button-bold.png" alt="bold text" align="middle">
 </li>
 ]]></codeblock>
-            <p>この<el>li</el>要素は、"button"ロールと"aria-pressed"属性を持つ。以下は、この例において "aria-pressed"属性の値を更新するJavascriptの抜粋である:</p>
+            <p>この <el>li</el> 要素は、"button" ロールと "aria-pressed" 属性を持つ。以下は、この例において  "aria-pressed" 属性の値を更新する Javascript の抜粋である:</p>
             <codeblock xml:space="preserve"><![CDATA[                   
                              /**
    * togglePressed() toggles the aria-pressed atribute between true or false
@@ -55,15 +55,15 @@
     }
   }
                             ]]></codeblock>
-            <p>このボタンは、OpenAjaxアライアンスのサイトで、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>このボタンは、OpenAjax アライアンスのサイトで、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="http://www.oaa-accessibility.org/examplep/toolbar1/">working example of Example 38 - Toolbar using inline images for visual state</loc> の実装例の一部として提供されている。</p>
          </description>
       </eg-group>
       <eg-group>
          <head>スライダー</head>
          <description>
-            <p><att>slider</att>ロールをもつウィジェットは、利用者に指定した範囲内から値を選択させる。スライダーは、スライダーの大きさやつまみの位置によって、現在の値、及びとり得る値の範囲を表す。これらのスライダーのプロパティは、属性<att>aria-valuemin</att>、<att>aria-valuemax</att>、及び<att>aria-valuenow</att>で表される。</p>
-            <p>以下のスニペットはOpen Ajax Accessibility Examplesの例32からの引用であり、JavaScriptで作成されたスライダーに対するWAI-ARIAマークアップを示している。Javascriptが属性aria-valuemin、aria-valuemax、及びaria-valuenowを設定することに注意:</p>
+            <p><att>slider</att> ロールをもつウィジェットは、利用者に指定した範囲内から値を選択させる。スライダーは、スライダーの大きさやつまみの位置によって、現在の値、及びとり得る値の範囲を表す。これらのスライダーのプロパティは、属性 <att>aria-valuemin</att>、<att>aria-valuemax</att>、及び <att>aria-valuenow</att> で表される。</p>
+            <p>以下のスニペットは Open Ajax Accessibility Examples の例 32 からの引用であり、JavaScript で作成されたスライダーに対する WAI-ARIA マークアップを示している。Javascript が属性 aria-valuemin、aria-valuemax、及び aria-valuenow を設定することに注意:</p>
             <codeblock xml:space="preserve"><![CDATA[   var handle = '<img id="' + id + '" class="' + (this.vert == true ? 'v':'h') +'sliderHandle" ' +
     'src="http://www.oaa-accessibility.org/media/examples/images/slider_' + (this.vert == true ? 'v':'h') + '.png" ' + 'role="slider" ' +
     'aria-valuemin="' + this.min +
@@ -71,7 +71,7 @@
     '" aria-valuenow="' + (val == undefined ? this.min : val) +
            '" aria-labelledby="' + label +
            '" aria-controls="' + controls + '" tabindex="0"></img>';]]></codeblock>
-            <p>以下はこの例のためのJavascriptの抜粋であり、スライダーのつまみの値が変更された場合に"aria-valuenow"属性値を更新する:</p>
+            <p>以下はこの例のための Javascript の抜粋であり、スライダーのつまみの値が変更された場合に "aria-valuenow" 属性値を更新する:</p>
             <codeblock xml:space="preserve"><![CDATA[ slider.prototype.positionHandle = function($handle, val) {
     ...
    // Set the aria-valuenow position of the handle
@@ -79,7 +79,7 @@
    ...
   }
 ]]></codeblock>
-            <p>このスライダーは、OpenAjaxアライアンスのサイトで、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+            <p>このスライダーは、OpenAjax アライアンスのサイトで、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="http://oaa-accessibility.org/example/32/">working example of Example 32 - Slider</loc> の実装例の一部として提供されている。</p>
          </description>
       </eg-group>
@@ -134,14 +134,14 @@
       <procedure>
          <p>
             <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                 href="http://www.w3.org/TR/wai-aria/roles#roles_categorization">The WAI-ARIA specification, Section 5.3, Categorization of Roles</loc>は、各ロールに対し、必須であったり、継承されたりするステート及びプロパティを定義している。</p>
-         <p>WAI-ARIA role属性を使用するユーザインタフェースコンポーネントの場合:</p>
+                 href="http://www.w3.org/TR/wai-aria/roles#roles_categorization">The WAI-ARIA specification, Section 5.3, Categorization of Roles</loc> は、各ロールに対し、必須であったり、継承されたりするステート及びプロパティを定義している。</p>
+         <p>WAI-ARIA role 属性を使用するユーザインタフェースコンポーネントの場合:</p>
          <olist>
             <item>
                <p>ロールに対して必須とされるステート及びプロパティが存在する。</p>
             </item>
             <item>
-               <p>必須でなく、サポートもされず、継承もされないWAI-ARIAステート又はプロパティが存在しない。</p>
+               <p>必須でなく、サポートもされず、継承もされない WAI-ARIA ステート又はプロパティが存在しない。</p>
             </item>
             <item>
                <p>ユーザインタフェースコンポーネントが状態を変更する際に、ステート及びプロパティの値が現在の状態を反映するように更新されている。</p>

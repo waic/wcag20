@@ -4,7 +4,7 @@
 <technique id="C21">
    <short-name>行送り幅を CSS で指定する</short-name>
    <applicability>
-      <p>CSSをサポートする全てのウェブコンテンツ技術</p>
+      <p>CSS をサポートする全てのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-visual-presentation"
@@ -12,17 +12,14 @@
    </applies-to>
    <description>
     <p>認知障害を持つ人の多くは、行間なしのテキストのブロックの中で各行を目で追っていくことに困難を覚える。
-行の高さが文字サイズの1.5～2倍程度あると、前の行を読み終えて次の行へより簡単に読み進めていけるようになる。</p>
+行の高さが文字サイズの 1.5～2 倍程度あると、前の行を読み終えて次の行へより簡単に読み進めていけるようになる。</p>
   </description>
    <examples>
       <eg-group>
-      <description><p>
-要素の行の高さを1.5に設定。スタイルシートで要素の特性を設定している。</p>
+      <description><p>要素の行の高さを 1.5 に設定。スタイルシートで要素の特性を設定している。</p>
 </description>
       <code><![CDATA[p { line-height: 150%; }]]></code>
-      <description><p>
-コンテンツ側では、その要素はドキュメント全体を通して行の高さが1.5になる。
-</p>
+      <description><p>コンテンツ側では、その要素はドキュメント全体を通して行の高さが 1.5 になる。</p>
 </description>
       <code><![CDATA[<p> Lorem ipsum dolor sit …  </p>]]></code>
     </eg-group>
@@ -55,7 +52,7 @@
           <p>ブラウザでコンテンツを開く。</p>
         </item>
         <item>
-          <p>テキストのブロック内の行送りが1.5～2文字分ある。</p>
+          <p>テキストのブロック内の行送りが 1.5～2 文字分ある。</p>
         </item>
       </olist>
     </procedure>

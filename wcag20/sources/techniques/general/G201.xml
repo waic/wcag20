@@ -10,7 +10,7 @@
       <guideline idref="consistent-behavior" relationship="advisory"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、自動的に新しいウィンドウまたはタブを開く前に利用者に知らせることである。リンクを押下したときに自動的に新しいウィンドウを開くことは、もし事前にそのことを知らせていなければ、視覚的なコンテンツを知覚するのに困難を伴う利用者や認知障害のある利用者が混乱する原因となりうる。事前に知らせることによって、利用者は現在のウィンドウから離れるかどうかを判断することができるようになる。また、利用者が新しいウィンドウを開くことを選んだ場合にも、元のウィンドウに戻りやすくなる。さらに、ブラウザの[戻る]ボタンが使えないことや、直前まで自分がいた場所を見つけるためには元のウィンドウに戻らなければならないことを利用者が理解する手助けにもなる。</p>
+    <p>この達成方法の目的は、自動的に新しいウィンドウまたはタブを開く前に利用者に知らせることである。リンクを押下したときに自動的に新しいウィンドウを開くことは、もし事前にそのことを知らせていなければ、視覚的なコンテンツを知覚するのに困難を伴う利用者や認知障害のある利用者が混乱する原因となりうる。事前に知らせることによって、利用者は現在のウィンドウから離れるかどうかを判断することができるようになる。また、利用者が新しいウィンドウを開くことを選んだ場合にも、元のウィンドウに戻りやすくなる。さらに、ブラウザの [戻る] ボタンが使えないことや、直前まで自分がいた場所を見つけるためには元のウィンドウに戻らなければならないことを利用者が理解する手助けにもなる。</p>
   </description>
    <examples>
       <eg-group>
@@ -22,8 +22,8 @@
               (新しいウィンドウで開く)</a>]]></code>
     </eg-group>
     <eg-group>
-      <head>CSSを用いて、新しいウィンドウが開く前に知らせる</head>
-      <description><p>以下のコードでは、CSSを用いて新しいウィンドウが開く前に知らせている。</p>
+      <head>CSS を用いて、新しいウィンドウが開く前に知らせる</head>
+      <description><p>以下のコードでは、CSS を用いて新しいウィンドウが開く前に知らせている。</p>
 </description>
       <code xml:space="preserve"><![CDATA[
        <html>
@@ -74,7 +74,7 @@
                 </p>
                 </body>
                 </html>]]></code>
-      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSSを用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
+      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSS を用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
 </description>
     </eg-group>
    </examples>

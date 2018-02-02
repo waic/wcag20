@@ -11,7 +11,7 @@
                          relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>多くの認知障害を持つ人々は行間がシングル・スペースに設定されたテキストを読む事が困難である。行の高さを増やすボタンは彼らが内容を読む助けとなる。段落の間が離れている状態を維持するためには、段落間の幅は、行送り幅の少なくとも1.5倍の高さになるように広げられるべきである。</p>
+    <p>多くの認知障害を持つ人々は行間がシングル・スペースに設定されたテキストを読む事が困難である。行の高さを増やすボタンは彼らが内容を読む助けとなる。段落の間が離れている状態を維持するためには、段落間の幅は、行送り幅の少なくとも 1.5 倍の高さになるように広げられるべきである。</p>
     <note><p>
 		この達成方法は、非適合コンテンツに対して、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版のページ</loc>を提供するための、スタイルスイッチの達成方法と組み合わせて用いることができる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>、及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
 	</note>
@@ -54,17 +54,17 @@
           <p>そのボタン又はリンクを起動する。</p>
         </item>
         <item>
-          <p>ボタン又はリンクによって、行間が少なくとも1.5 (150%)に広がる。</p>
+          <p>ボタン又はリンクによって、行間が少なくとも 1.5 (150%) に広がる。</p>
         </item>
         <item>
-          <p>ボタン又はリンクによって、各段落の間隔が行送りの少なくとも1.5倍より広くなる。</p>
+          <p>ボタン又はリンクによって、各段落の間隔が行送りの少なくとも 1.5 倍より広くなる。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.、3. 及び 4.を満たしている</p>
+               <p>1.、3. 及び 4. を満たしている</p>
             </item>
          </ulist>
       </expected-results>

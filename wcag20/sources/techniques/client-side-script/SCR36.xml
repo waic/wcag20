@@ -23,9 +23,9 @@
       <eg-group>
       <head>スクロールするテキストを展開する</head>
       <description><p>大きなテキスト・ブロックがページ中の小さなマーキーの範囲をスクロールする。ボタンにより、利用者はスクロールを止め、テキスト・ブロック全体を表示することができる。</p>
-<note><p>このコード例ではCSSとJavaScriptの両方が利用可能で有効になっている必要がある。</p>
+<note><p>このコード例では CSS と JavaScript の両方が利用可能で有効になっている必要がある。</p>
 				</note>
-<p>CSS部分：</p>
+<p>CSS 部分：</p>
 </description>
       <code role="css"><![CDATA[
 #scrollContainer {
@@ -51,7 +51,7 @@
         position: absolute;
       }
       </a> ]]></code>
-      <description><p>スクリプト及びHTMLコンテンツ：</p>
+      <description><p>スクリプト及び HTML コンテンツ：</p>
 </description>
       <code role="css"><![CDATA[
 <script type="text/javascript">

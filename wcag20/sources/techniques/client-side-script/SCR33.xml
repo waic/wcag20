@@ -15,10 +15,10 @@
   </description>
    <examples>
      <eg-group>
-      <description><p>この例では、CSS及びJavaScriptを用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p>
-<p>この方法では、JavaScript又はCSSがサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p>
-<p>下のコードは、webSemanticによるアクセシブルなスクローラー (2008年7月) の修正版である。</p>
-<p>XHTML部分：</p>
+      <description><p>この例では、CSS 及び JavaScript を用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p>
+<p>この方法では、JavaScript 又は CSS がサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p>
+<p>下のコードは、webSemantic によるアクセシブルなスクローラー (2008 年 7 月) の修正版である。</p>
+<p>XHTML 部分：</p>
 </description>
       <code><![CDATA[...
 <div id="scroller">
@@ -43,7 +43,7 @@ body {font:1em verdana,sans-serif; color:#000; margin:0}
 /* ページ先頭の目印として利用され、かつ幅を制限する */
 #top { width:350px; margin:auto; }
 ...]]></code>
-      <description><p>JavaScript部分：</p>
+      <description><p>JavaScript 部分：</p>
 </description>
       <code><![CDATA[
 var speed=50        // スクロール速度
@@ -202,7 +202,7 @@ addLoadEvent(initScroller)]]></code>
       <expected-results>
          <ulist>
             <item>
-               <p>3.及び6.を満たしている。</p>
+               <p>3. 及び 6. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

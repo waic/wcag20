@@ -10,9 +10,9 @@
       <success-criterion idref="visual-audio-contrast7" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。この達成方法は、4.5:1のコントラストをもたせる達成方法よりも基準が上回るもので、さらに高いレベルのコントラストを提供することでロービジョンの利用者が読みやすくする。</p>
-    <p>もし背景が無地の色 (又は真っ黒、真白) の場合、個々のテキストの文字が背景とのコントラスト比を7:1で保持することによってテキストのコントラスト比を維持することができる。</p>
-    <p>背景または文字が相対輝度において変化する (またはパターン化されている) 場合、たとえ背景全体とのコントラスト比を 7:1で保持していなくとも、文字の周囲の背景、又は陰影によって、文字と背景のコントラスト比を維持することができる。</p>
+    <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。この達成方法は、4.5:1 のコントラストをもたせる達成方法よりも基準が上回るもので、さらに高いレベルのコントラストを提供することでロービジョンの利用者が読みやすくする。</p>
+    <p>もし背景が無地の色 (又は真っ黒、真白) の場合、個々のテキストの文字が背景とのコントラスト比を 7:1 で保持することによってテキストのコントラスト比を維持することができる。</p>
+    <p>背景または文字が相対輝度において変化する (またはパターン化されている) 場合、たとえ背景全体とのコントラスト比を 7:1 で保持していなくとも、文字の周囲の背景、又は陰影によって、文字と背景のコントラスト比を維持することができる。</p>
     <p>背景の相対輝度がページの中で変化する場合は、文字の相対輝度も変化させることによってコントラスト比が維持されることもある。</p>
     <p>もし通常では背景画像又は背景色の相対輝度が十分でない場合は、他の方法として、テキストの周りに後光を付けて必要なコントラスト比をもたせる方法もある。</p>
   </description>
@@ -81,9 +81,9 @@
       <olist>
         <item><p> 以下の公式を用いて、各文字 (すべて同一ではない限り) の相対輝度を測る： </p>
 
-<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の<emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は：</p>
+<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は：</p>
 
-<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合： <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub>は以下のように定義される：</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から2ピクセルの部分の相対輝度の値を使用する。</p>
+<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合： <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される：</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
 
 </note></item>
         <item>
@@ -91,16 +91,16 @@
         </item>
         <item><p> 次の公式を用いて、コントラスト比を算出する。</p>
 <ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
-<ulist><item><p>L1は前景または背景色の明るい方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2は前景または背景色の暗い方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
+<ulist><item><p>L1 は前景または背景色の明るい方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2 は前景または背景色の暗い方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
         <item>
-          <p> コントラスト比が7：1と同じ、又はそれ以上である。【訳注：この計算式を用いているチェックツールで、コントラスト比が7：1以上であることを確認すればよい。】</p>
+          <p> コントラスト比が 7：1 と同じ、又はそれ以上である。【訳注：この計算式を用いているチェックツールで、コントラスト比が 7：1 以上であることを確認すればよい。】</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>4.を満たしている。</p>
+               <p>4. を満たしている。</p>
             </item>
          </ulist>
       </expected-results>

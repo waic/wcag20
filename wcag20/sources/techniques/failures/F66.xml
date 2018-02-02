@@ -10,13 +10,13 @@
       <success-criterion idref="consistent-behavior-consistent-locations" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書では、ウェブページ一式の中にある複数のウェブページ上で繰り返されているナビゲーションメカニズム (達成基準 3.2.3) を含むすべての達成方法における不適合の条件を説明している。メカニズムが、2ページ又はそれ以上のページに異なる順序でリンクの順番を提示する場合に、不適合が起こる。</p>
+    <p>この文書では、ウェブページ一式の中にある複数のウェブページ上で繰り返されているナビゲーションメカニズム (達成基準 3.2.3) を含むすべての達成方法における不適合の条件を説明している。メカニズムが、2 ページ又はそれ以上のページに異なる順序でリンクの順番を提示する場合に、不適合が起こる。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <head>2つの異なるページで相対的に異なる順序で一連のリンクを提示しているXHTMLメニュー</head>
+      <head>2 つの異なるページで相対的に異なる順序で一連のリンクを提示している XHTML メニュー</head>
       <description><p>異なる順序でリンクを提示するナビゲーションメカニズムの例。</p>
-<p><emph role="bold">1ページ目のメニュー</emph></p>
+<p><emph role="bold">1 ページ目のメニュー</emph></p>
 </description>
       <code role="html401"><![CDATA[
     <div id="menu"> 
@@ -25,7 +25,7 @@
     <a href="Germany.htm">ドイツ</a><br />
     <a href="Poland.htm">ポーランド</a> 
 </div>]]></code>
-      <description><p><emph role="bold">2ページ目のメニュー</emph></p>
+      <description><p><emph role="bold">2 ページ目のメニュー</emph></p>
 </description>
       <code role="html401"><![CDATA[
     <div id="menu"> 
@@ -54,7 +54,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1．及び2．を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>1．及び 2．を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
             </item>
          </ulist>
       </expected-results>

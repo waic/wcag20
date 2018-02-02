@@ -10,7 +10,7 @@
       <success-criterion idref="text-equiv-all" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、障害のある利用者がCAPTCHAのタスクを完了できないという事態を減らすことである。異なるモダリティを用いた代替のCAPTCHAを提供することによって、利用者がいずれかのCAPTCHAによりタスクを完了できる可能性が高まる。</p>
+    <p>この達成方法の目的は、障害のある利用者が CAPTCHA のタスクを完了できないという事態を減らすことである。異なるモダリティを用いた代替の CAPTCHA を提供することによって、利用者がいずれかの CAPTCHA によりタスクを完了できる可能性が高まる。</p>
   </description>
    <examples/>
    <related-techniques>
@@ -18,10 +18,10 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページにあるCAPTCHAに対して：</p>
+      <p>ウェブページにある CAPTCHA に対して：</p>
       <olist>
         <item>
-          <p>ウェブページに、同じ目的を果たす、異なるモダリティを用いたCAPTCHAがもう一つ提供されている。</p>
+          <p>ウェブページに、同じ目的を果たす、異なるモダリティを用いた CAPTCHA がもう一つ提供されている。</p>
         </item>
       </olist>
     </procedure>

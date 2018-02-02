@@ -38,19 +38,19 @@
    </header>
    <body><!-- techniques -->
       <div1 id="aria">
-         <head>ARIAの達成方法</head>
+         <head>ARIA の達成方法</head>
          <div2 id="wai-aria_notes">
-            <head>WAI-ARIA技術ノート</head>
-            <p>WAI-ARIAは、アクセシビリティを向上させるために、ウェブページやリッチインターネットウィジェットに次のセマンティック情報を追加するオプションをウェブ開発者に提供する。その結果、そのセマンティック情報はブラウザに公開される。</p>
+            <head>WAI-ARIA 技術ノート</head>
+            <p>WAI-ARIA は、アクセシビリティを向上させるために、ウェブページやリッチインターネットウィジェットに次のセマンティック情報を追加するオプションをウェブ開発者に提供する。その結果、そのセマンティック情報はブラウザに公開される。</p>
             <ulist>
                <item>
-                  <p>"menu"、"treeitem"、"slider"、"progressbar"のような、提示されたウィジェットの種類を記述するためのロール。</p>
+                  <p>"menu"、"treeitem"、"slider"、"progressbar" のような、提示されたウィジェットの種類を記述するためのロール。</p>
                </item>
                <item>
                   <p>見出し、領域、検索領域及びナビゲーション領域のような、ウェブページの構造を記述するためのロール。</p>
                </item>
                <item>
-                  <p>チェックボックスのための"checked"、サブメニューやその他のポップアップを描画するメニューのための"haspopup"、及びツリーノードのための"expanded/collapsed"のような、ステート・ウィジェットを記述するためのプロパティ。</p>
+                  <p>チェックボックスのための "checked"、サブメニューやその他のポップアップを描画するメニューのための"haspopup"、及びツリーノードのための "expanded/collapsed" のような、ステート・ウィジェットを記述するためのプロパティ。</p>
                </item>
                <item>
                   <p>(たとえば株価情報のように) 情報が更新される予定があるページの<loc href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions">ライブ領域</loc>を定義するとともに、更新時の割込みポリシーを定義するためのプロパティ。支援技術は、重要な更新情報がレンダリングされたならすぐに提示してもよい。しかし、付随的な更新情報は、現在のタスクを完了した後のみに提示される。たとえば、スクリーンリーダーは、現在の段落を読み終えた後にのみ付随的な更新情報を利用者に通知する。</p>
@@ -62,37 +62,37 @@
                   <p>リッチインターネットウィジェットにキーボードナビゲーションを提供するための方法。</p>
                </item>
             </ulist>
-            <p>これらの機能とDOM構造によって伝えられる構造情報の組み合わせは、著者が支援技術に相互運用可能な解決策を作り出すことを可能にする。(出典: <loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc>)</p>
+            <p>これらの機能と DOM 構造によって伝えられる構造情報の組み合わせは、著者が支援技術に相互運用可能な解決策を作り出すことを可能にする。(出典: <loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc>)</p>
             <div3 id="wai-aria_ua_support">
-               <head>WAI-ARIAに対するユーザエージェントのサポート</head>
-               <p>WAI-ARIAに対するユーザエージェントのサポートは変化するが、全般的なWAI-ARIAのサポートは改善している。WAI-ARIAをサポートするブラウザは、プラットフォームのアクセシビリティAPIにWAI-ARIAロール及びプロパティを対応づける。</p>
+               <head>WAI-ARIA に対するユーザエージェントのサポート</head>
+               <p>WAI-ARIA に対するユーザエージェントのサポートは変化するが、全般的な WAI-ARIA のサポートは改善している。WAI-ARIA をサポートするブラウザは、プラットフォームのアクセシビリティ API に WAI-ARIA ロール及びプロパティを対応づける。</p>
                <ulist>
                   <item>
-                     <p>Firefox 1.5とFirefox 2.0は部分的にWAI-ARIAをサポートするが、名前空間を使用する必要があり、ライブ領域の使用をサポートしない。</p>
+                     <p>Firefox 1.5 と Firefox 2.0 は部分的に WAI-ARIA をサポートするが、名前空間を使用する必要があり、ライブ領域の使用をサポートしない。</p>
                   </item>
                   <item>
-                     <p>Firefox 3以降はライブ領域を含む、WAI-ARIAに対するより良いサポートを含む。</p>
+                     <p>Firefox 3 以降はライブ領域を含む、WAI-ARIA に対するより良いサポートを含む。</p>
                   </item>
                   <item>
-                     <p>IE8は、部分的にWAI-ARIAをサポートする。</p>
+                     <p>IE8 は、部分的に WAI-ARIA をサポートする。</p>
                   </item>
                   <item>
-                     <p>JAWS 8及びWindow-Eyes 5.5以降は、部分的にWAI-ARIAをサポートする。</p>
+                     <p>JAWS 8 及び Window-Eyes 5.5 以降は、部分的に WAI-ARIA をサポートする。</p>
                   </item>
                   <item>
-                     <p>Jaws 10以降はWAI-ARIAをサポートする。</p>
+                     <p>Jaws 10 以降は WAI-ARIA をサポートする。</p>
                   </item>
                   <item>
-                     <p>Firefoxの音声拡張であるFireVoxはまた、直接のDOMアクセスを経由してWAI-ARIAをサポートする。</p>
+                     <p>Firefox の音声拡張である FireVox はまた、直接の DOM アクセスを経由して WAI-ARIA をサポートする。</p>
                   </item>
                   <item>
-                     <p>NVDAは、部分的にWAI-ARIAをサポートする。</p>
+                     <p>NVDA は、部分的に WAI-ARIA をサポートする。</p>
                   </item>
                </ulist>
             </div3>
             <div3 id="wai-aria_accessibility_support">
-               <head>WAI-ARIAに対するアクセシビリティサポート</head>
-               <p>アクセシビリティ サポーテッドな方法で技術を使用することは、適合性要求のために必要である。詳細は<loc href="accessibility-support-documenting" linktype="understanding">アクセシビリティサポートについて</loc>を読むこと。WCAGワーキンググループは、Accessible Rich Internet Application仕様がW3C勧告の状態に到達する際に、WAI-ARIA達成方法が十分であるかどうかの見直しをする予定である。WAI-ARIAのステータスに関する最新情報については、<loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc>を参照のこと。</p>
+               <head>WAI-ARIA に対するアクセシビリティサポート</head>
+               <p>アクセシビリティ サポーテッドな方法で技術を使用することは、適合性要求のために必要である。詳細は<loc href="accessibility-support-documenting" linktype="understanding">アクセシビリティサポートについて</loc>を読むこと。WCAG ワーキンググループは、Accessible Rich Internet Application 仕様が W3C 勧告の状態に到達する際に、WAI-ARIA 達成方法が十分であるかどうかの見直しをする予定である。WAI-ARIA のステータスに関する最新情報については、<loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc> を参照のこと。</p>
             </div3>
          </div2>
          <xi:include href="aria/ARIA1.xml"/>

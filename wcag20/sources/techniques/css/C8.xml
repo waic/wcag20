@@ -4,7 +4,7 @@
 <technique id="C8">
    <short-name>単語内の文字間隔を制御するために、CSS の letter-spacing を使用する</short-name>
    <applicability>
-      <p>CSSに対応しているウェブコンテンツ技術全て</p>
+      <p>CSS に対応しているウェブコンテンツ技術全て</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-sequence" relationship="cosufficient"/>
@@ -14,22 +14,19 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
-文字間隔の量を調整するには、CSSの<code><![CDATA[letter-spacing]]></code>プロパティを使用する。
+文字間隔の量を調整するには、CSS の <code><![CDATA[letter-spacing]]></code> プロパティを使用する。
 単語の途中に空白文字を入れると意味や発音のされ方が変わってしまうため、間隔の調整はこの方法で行うことが推奨されている。</p>
   </description>
    <examples>
       <eg-group>
       <head>単語内の文字間隔を広くする</head>
-      <description><p>
-以下のCSSは、レベル2の見出しに含まれる各文字に対して1文字分に相当する間隔を加える:</p>
+      <description><p>以下の CSS は、レベル 2 の見出しに含まれる各文字に対して 1 文字分に相当する間隔を加える:</p>
 </description>
       <code role="html401"><![CDATA[h2 {	letter-spacing: 1em; }]]></code>
-      <description><p>
-マークアップは以下の通り: </p>
+      <description><p>マークアップは以下の通り: </p>
 </description>
       <code role="html401"><![CDATA[<h2>博物館</h2> ]]></code>
-      <description><p>
-表示結果は、およそ以下のようになる: </p>
+      <description><p>表示結果は、およそ以下のようになる: </p>
 </description>
       <code role="html401"><![CDATA[博　物　館]]></code>
     </eg-group>

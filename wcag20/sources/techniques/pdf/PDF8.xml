@@ -4,7 +4,7 @@
 <technique id="PDF8">
    <short-name>構造要素の E エントリによって略語の定義を提供する</short-name>
    <applicability>
-     <p>略語または頭字語を含んでいるタグ付きPDF文書</p>
+     <p>略語または頭字語を含んでいるタグ付き PDF 文書</p>
    </applicability>
    <applies-to>
       <success-criterion idref="meaning-located" relationship="sufficient"/>

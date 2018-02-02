@@ -4,7 +4,7 @@
 <technique id="F69">
    <short-name>達成基準 1.4.4 の失敗例 － 視覚的にレンダリングされたテキストを 200% まで拡大すると、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする</short-name>
    <applicability>
-      <p>HTML、XHTML及びCSS</p>
+      <p>HTML、XHTML 及び CSS</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-scale" relationship="failure"/>
@@ -13,7 +13,7 @@
     <p>この文書は、テキストのサイズ変更によって、テキストが切り取られたり、端が欠けたり、又は覆い隠されたりして、利用者がテキストを入手できなくなるという失敗例について述べている。一般的に、この失敗例は、ユーザエージェントのレイアウトエンジンが、HTML 内の新しいフォントサイズについてのレイアウトヒントのすべてには対応できない場合に発生する。これが発生する方法には、下記のようなものがある：</p>
     <ulist>
       <item>
-        <p>囲み要素の <code>overflow</code> プロパティを<code>hidden</code> に設定する</p>
+        <p>囲み要素の <code>overflow</code> プロパティを <code>hidden</code> に設定する</p>
       </item>
       <item>
         <p>コンテンツを絶対配置にして使用する</p>

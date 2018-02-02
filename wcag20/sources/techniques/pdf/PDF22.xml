@@ -33,7 +33,7 @@
 <p>電話番号、郵便番号、日付など、多くのフィールドでは、特定の形式またはパターンに従ってデータを入力する必要がある。</p>
 <olist><item><p>特定の形式を必要とするフォーム・コントロールのコンテキストメニューにアクセスする</p></item><item><p>［プロパティ］を選択する</p></item><item><p>［書式］タブで、「形式カテゴリ」(この場合は「日付」) を選択すると、「日付オプション」が表示される</p></item><item><p>このフォーム・コントロールの書式 (この場合、mm/dd/yyyy) を選択する</p></item><item><p>［一般］タブで、コントロールの名前およびツールチップとして「日付 (mm/dd/yyyy)」を指定する</p></item></olist>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/dateformat.jpg" height="611" width="661"/><alt>スクリーンショット：Adobe Acrobat 9 Pro を使用して入力フィールド形式の必須形式を指定する</alt></image></p><p>認識されている日付形式を利用者が入力すると、その日付形式は指定した形式に自動的に変換される。日付形式または値が認識されない場合、以下の画像に示されているように、エラーアラートが表示され、詳細情報が提示される。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/dateerror.jpg" height="210" width="501"/><alt>スクリーンショット：認識されない形式または値の日付に関するエラーアラート</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/required-fields.pdf"><!-- linktype="examples"-->Acrobat の必須項目フィールドのサンプル (PDFファイル)</loc> がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/dateerror.jpg" height="210" width="501"/><alt>スクリーンショット：認識されない形式または値の日付に関するエラーアラート</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/required-fields.pdf"><!-- linktype="examples"-->Acrobat の必須項目フィールドのサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>
     <eg-group>

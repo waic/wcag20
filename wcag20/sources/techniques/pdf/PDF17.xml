@@ -41,7 +41,7 @@
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos2.jpg" height="487" width="647"/><alt>スクリーンショット：3つのページが選択されたページパネルと、新しいページスタイルが指定されたページ番号付けダイアログボックス開始ページは、正しい値である 1 (デフォルト) に指定されている。&#13;&#10;</alt></image></p><p>同じプロセスに従い、4 ページ目のページ番号をアラビア数字の 1 に変更する。</p>
 <p>以下の画像は、4 ページ目の正しいページ番号を示している。ページ iii がページパネルで選択されており、ページナビゲーションツールバーのテキスト領域に iii が表示されている。さらに、文書内の相対的位置 (3/4) がツールバーの右側に表示されている。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page_nos3.jpg" height="414" width="302"/><alt>スクリーンショット：i、ii、iii、1 という番号が付いたページが示されている Adobe Acrobat Pro のページパネル。ページナビゲーションツールバーでは、3 ページ目に対して iii が表示されている。相対的なページ位置も「(3/4)」として表示されている</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.docx"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF17/page-numbers.pdf"><!-- linktype="examples"-->Word から変換された文書内のページ番号を指定したサンプル (PDF ファイル)</loc>がある。</p>
-<p>より直接的にあるページへの移動を行うには、表示 &gt; ナビゲーションパネル &gt; ページ メニュー項目へのショートカットを用いる方法がある。Windowsにおいては、ショートカットは「Ctrl + Shift + N」、Mac OSでは「Cmd + Shift + N」である。この方法により、特定のページ番号を入力するためのダイアログボックスが表示される。
+<p>より直接的にあるページへの移動を行うには、表示 &gt; ナビゲーションパネル &gt; ページ メニュー項目へのショートカットを用いる方法がある。Windows においては、ショートカットは「Ctrl + Shift + N」、Mac OS では「Cmd + Shift + N」である。この方法により、特定のページ番号を入力するためのダイアログボックスが表示される。
 </p>
 </description>
     </eg-group>

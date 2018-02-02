@@ -3,7 +3,7 @@
   SYSTEM "../xmlspec.dtd">
 <spec xmlns:xi="http://www.w3.org/2001/XInclude" status="final" w3c-doctype="wgnote">
    <header>
-      <title>SMILの達成方法</title>
+      <title> SMIL の達成方法</title>
       <w3c-designation>WCAG20-SMIL-TECHS</w3c-designation>
       <w3c-doctype>W3C Working Group Note</w3c-doctype>
       <pubdate>

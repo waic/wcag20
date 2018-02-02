@@ -12,7 +12,7 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、ソースコード上のコンテンツの順序が、コンテンツの表示結果の順序と同じになるようにすることだ。
-ソースコード上のコンテンツの順序は、コンテンツ制作者によって、CSSによる表示結果とは異なるものにされる場合がある。
+ソースコード上のコンテンツの順序は、コンテンツ制作者によって、CSS による表示結果とは異なるものにされる場合がある。
 それぞれの順序はその状態では意味の分かるものになっているかもしれないが、支援技術の利用者にとっては混乱をもたらす可能性がある。
 そのようなことは、(スクリーンリーダーのように) ソースコードに直接アクセスして内容を読み込んでいる場合や、キーボードで操作している場合などに、コンテンツ制作者による表示指定を利用者が無効にすることによって起こり得る。
 もし、スクリーンリーダーを使ってページの内容をソースの順序で読んでいる全盲の利用者が、ページの内容を表示される順序で読んでいる利用者と一緒に働いていたら、異なる順序の情報に出くわすことで混乱するかもしれない。
@@ -37,11 +37,11 @@
             <item>
                <p>
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar</loc>を使用すると、Microsoft の Internet Explorer でスクリプトによって生成されたDOMのチェックが可能になる。</p>
+                       href="http://www.microsoft.com/en-us/download/details.aspx?id=18359">Microsoft Internet Explorer Developer Toolbar</loc> を使用すると、Microsoft の Internet Explorer でスクリプトによって生成された DOM のチェックが可能になる。</p>
             </item>
             <item>
                <p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://getfirebug.com/">Firebug</loc>を使用すると、Firefox でスクリプトによって生成されたDOMのチェックが可能になる。</p>
+                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://getfirebug.com/">Firebug</loc> を使用すると、Firefox でスクリプトによって生成された DOM のチェックが可能になる。</p>
             </item>
          </ulist>
       </see-also>

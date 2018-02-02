@@ -4,7 +4,7 @@
 <technique id="F80">
    <short-name>達成基準 1.4.4 の失敗例 － 視覚的に描画されたテキストを 200 ％まで拡大するときに、テキストベースのフォームコントロールのサイズが変更されない</short-name>
    <applicability>
-      <p>HTML、XHTML及びCSS</p>
+      <p>HTML、XHTML 及び CSS</p>
    </applicability>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-scale" relationship="failure"/>
@@ -17,7 +17,7 @@
       <eg-group role="failure">
       <head>お問い合わせフォーム</head>
       <description><p>お問い合わせフォームは、いくらかの前置き情報、及び利用者が名、姓、電話番号及び電子メールアドレスを入力するためのフォーム・コントロールがある。見出し、前置きのテキスト及びフォーム・コントロールのラベルは、拡張性のある方法で実装されているが、フォームのコントロール自体は拡張性のある方法では実装されていない。</p>
-<p>XHTMLコンポーネント：</p>
+<p>XHTML コンポーネント：</p>
 </description>
       <code role="xhtml"><![CDATA[
 <h1>お問い合わせ</h1>
@@ -47,7 +47,7 @@ h1 { font-size: 2em; }
           <p>200％までコンテンツのテキストサイズを拡大する。</p>
         </item>
         <item>
-          <p>テキストベースのフォーム・コントロール内のテキストが200％まで拡大したことを確認する。</p>
+          <p>テキストベースのフォーム・コントロール内のテキストが 200％まで拡大したことを確認する。</p>
         </item>
       </olist>
     </procedure>

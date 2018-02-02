@@ -4,29 +4,29 @@
 <technique id="H75">
    <short-name>ウェブページが well-formed であることを確認する</short-name>
    <applicability>
-      <p>すべてのXMLベースのマークアップ言語</p>
+      <p>すべての XML ベースのマークアップ言語</p>
    </applicability>
    <applies-to>
       <success-criterion idref="ensure-compat-parses" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、支援技術がコンテンツを解析するときに生じるエラーを避けることである。well-formedについては、文書をXMLパーサーを用いてチェックし、バリデーションレポートがwell-formedに関するエラーを含んでいるかどうかで確認できる。すべてのXMLパーサーには、well-formedをチェックし、well-formedに関するエラーが見つかったときは、通常の処理を停止することが要求される (XMLパーサーは、バリデーションをサポートしていなくてもよい)。</p>
+    <p>この達成方法の目的は、支援技術がコンテンツを解析するときに生じるエラーを避けることである。well-formed については、文書を XML パーサーを用いてチェックし、バリデーションレポートが well-formed に関するエラーを含んでいるかどうかで確認できる。すべての XML パーサーには、well-formed をチェックし、well-formed に関するエラーが見つかったときは、通常の処理を停止することが要求される (XML パーサーは、バリデーションをサポートしていなくてもよい)。</p>
   </description>
    <examples>
      <eg-group>
-      <description><p>XMLファイルは、文書タイプ宣言、a xsi:schemaLocation属性あるいは他のタイプのスキーマへのリファレンスを含む。コンテンツ開発者は、オンラインあるいはオフラインのバリデーター、XMLエディタもしくはXMLサポートのあるIDE (下記参考リソースを参照) を用いて、well-formedであることをチェックできる。</p>
+      <description><p>XML ファイルは、文書タイプ宣言、xsi:schemaLocation 属性あるいは他のタイプのスキーマへのリファレンスを含む。コンテンツ開発者は、オンラインあるいはオフラインのバリデーター、XML エディタもしくは XML サポートのある IDE (下記参考リソースを参照) を用いて、well-formed であることをチェックできる。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性又はスキーマがあるのにスキーマ参照のインストラクションのない処理を含まないとき、関連するスキーマがコマンドラインの指示、ユーザダイアログあるいは (構成) コンフィグレーションファイルで指定されている。そして、XMLファイルがスキーマに対してチェックされている。</p>
+      <description><p>XML ファイルが文書タイプ宣言、xsi:schemaLocation 属性又はスキーマがあるのにスキーマ参照のインストラクションのない処理を含まないとき、関連するスキーマがコマンドラインの指示、ユーザダイアログあるいは (構成) コンフィグレーションファイルで指定されている。そして、XML ファイルがスキーマに対してチェックされている。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>XMLファイルが文書タイプ宣言、a xsi:schemaLocation属性あるいはスキーマがあるのにスキーマ参照のインストラクションのない処理を 含まないとき、名前空間がスキーマ文書又は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rddl.org/">RDDL (Resource Directory Description Language)</loc> を読み出すのに参照されておらず、そしてXMLファイルがスキーマに対してチェックされている。</p>
+      <description><p>XML ファイルが文書タイプ宣言、xsi:schemaLocation 属性あるいはスキーマがあるのにスキーマ参照のインストラクションのない処理を 含まないとき、名前空間がスキーマ文書又は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rddl.org/">RDDL (Resource Directory Description Language)</loc> を読み出すのに参照されておらず、そして XML ファイルがスキーマに対してチェックされている。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>ウェブサイトが静的な文書ではなく、XMLを動的に生成するとき、コンテンツ開発者は<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmlunit.sourceforge.net/">XMLUnit</loc>や<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmltestsuite.sourceforge.net/">XML Test Suite</loc>あるいは類似のフレームワークを用いて、生成されるXMLコードをチェックできる。</p>
+      <description><p>ウェブサイトが静的な文書ではなく、XML を動的に生成するとき、コンテンツ開発者は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmlunit.sourceforge.net/">XMLUnit</loc> や <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://xmltestsuite.sourceforge.net/">XML Test Suite</loc> あるいは類似のフレームワークを用いて、生成される XML コードをチェックできる。</p>
 </description>
     </eg-group>
    </examples>
@@ -60,15 +60,15 @@
       <procedure>
       <olist>
         <item>
-          <p> 各ファイルをXMLパーサーにロードする。</p>
+          <p>各ファイルを XML パーサーにロードする。</p>
         </item>
         <item>
-          <p> well-formedに関するエラーがないことをチェックする。</p>
+          <p>well-formed に関するエラーがないことをチェックする。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
-         <p>2.を満たしている。</p>
+         <p>2. を満たしている。</p>
       </expected-results>
    </tests>
 </technique>
