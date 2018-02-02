@@ -11,7 +11,7 @@
                          relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書では、エラーの通知以外で、利用者のテキストフィールドへの入力に反応して新しいウィンドウが開く不適合事例について述べている。</p>
+    <p>この文書では、エラーの通知以外で、利用者のテキストフィールドへの入力に反応して新しいウィンドウが開く失敗例について述べている。</p>
   </description>
    <examples>
       <eg-group role="failure">

@@ -41,7 +41,7 @@
    </header>
    <body><!-- techniques -->
       <div1 role="failures" id="failures">
-         <head>よくある不適合事例</head>
+         <head>よくある失敗例</head>
          <xi:include href="failures/F1.xml"/>
          <xi:include href="failures/F2.xml"/>
          <xi:include href="failures/F3.xml"/>
