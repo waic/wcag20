@@ -15,7 +15,7 @@
    <examples>
       <eg-group>
       <head>コントロールを説明するテキストで知らせる</head>
-      <description><p>コントロールを説明する識別名またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p>
+      <description><p>コントロールを説明する名前 (name) またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p>
 </description>
       <code xml:space="preserve"><![CDATA[
        <a href="knitting.html" target="_blank">編み物のすべて 
