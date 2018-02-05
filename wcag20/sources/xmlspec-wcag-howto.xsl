@@ -455,7 +455,7 @@
 	</xsl:template>
       <xsl:template mode="divnum-specref" match="div1"><xsl:apply-templates select="head" mode="text"/></xsl:template>
   <xsl:template mode="divnum-specref" match="div2">
-    達成基準<xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>を理解する</xsl:template>
+    達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="@id"/></xsl:call-template><xsl:text> </xsl:text><xsl:call-template name="sc-handle"><xsl:with-param name="handleid" select="@id"/></xsl:call-template>を理解する</xsl:template>
   <!--BBC suppress anchor names on key terms that are pulled in from guidelines source -->
 	<xsl:template match="gitem">
 		<xsl:apply-templates mode="noid"/>
