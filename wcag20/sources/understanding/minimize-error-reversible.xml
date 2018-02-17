@@ -5,8 +5,7 @@
    <head>3.3.4</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-
-<p>この達成基準の意図は、障害のある利用者が元の状態に戻すことのできないタスクを行った際、ミスをしたことによる重大な結果を未然に防ぐことができるようにすることである。例えば、払い戻し不可の航空券の購入、又は証券取引口座での株購入の注文は、重大な結果につながる金銭的な取引である。利用者が発着日を間違えれば、その利用者は交換できない誤った日付の航空券を購入したことになってしまう。利用者が購入する株式の数を間違えると、意図した数よりも多くの株式を購入したことになってしまう。どちらのミスも、すぐに処理される取引であり、後から変更することはできないものであり、また非常に高価である。同様に、旅行サービスのウェブサイトにある旅行履歴のように、後からアクセスする必要のあるデータベースのデータを無意識に修正又は削除してしまった場合、そのエラーは回復不能なことがある。「利用者が自分で制御可能な」データの変更又は削除を参照する場合、この達成基準の意図は、ファイル又はレコードの削除のようなデータの大量損失を防ぐことである。保存のコマンド又は、ドキュメント、レコード、その他データの単純な作成や編集に対して、確認を必要とすることを意図するものではない。</p>
+<p>この達成基準の意図は、障害のある利用者が元の状態に戻すことのできないタスクを行ったときに、ミスをしたことによる重大な結果を未然に防ぐことができるようにすることである。例えば、払い戻し不可の航空券の購入、又は証券取引口座での株購入の注文は、重大な結果につながる金銭的な取引である。利用者が発着日を間違えれば、その利用者は交換できない誤った日付の航空券を購入したことになってしまう。利用者が購入する株式の数を間違えると、意図した数よりも多くの株式を購入したことになってしまう。どちらのミスも、すぐに処理される取引であり、後から変更することはできないものであり、また非常に高価である。同様に、旅行サービスのウェブサイトにある旅行履歴のように、後からアクセスする必要のあるデータベースのデータを無意識に修正又は削除してしまった場合、そのエラーは回復不能なことがある。「利用者が自分で制御可能な」データの変更又は削除を参照する場合、この達成基準の意図は、ファイル又はレコードの削除のようなデータの大量損失を防ぐことである。保存のコマンド又は、ドキュメント、レコード、もしくはその他データの単純な作成もしくは編集に対して、確認を必要とすることを意図するものではない。</p>
 <p>障害のある利用者は、ミスをしてしまう可能性が高い。読字障害のある利用者は、数字と文字を取り違えてしまうことがあるし、運動障害のある利用者は間違ってキーを押してしまうことがある。元の状態に戻せるようにすることによって、利用者が重大な結果につながる恐れのあるミスを修正できるようになる。また、入力内容を確認して修正できるようにすることで、重大な結果につながることをしてしまう前に、利用者がミスに気づくことができるようになる。</p>
 <p>利用者が自分で制御可能なデータというのは、利用者が意図的行為を通して変更及び/又は削除できる利用者が閲覧可能なデータである。そのようなデータを制御する利用者の例としては、利用者のアカウントの電話番号及び住所を更新する、又はウェブサイトから過去の請求書のレコードを削除することが挙げられる。これは、利用者が直接に表示又は情報交換できないインターネットのログ又は検索エンジンの監視データのようなものを指すものではない。</p>
 
@@ -21,11 +20,9 @@
 <div3 role="examples">
 <head/>
 <ulist>
-	<item><p>
-                <emph>注文内容の確認</emph>
+	<item><p><emph>注文内容の確認</emph>
               </p><p>ある小売店がウェブでオンラインショッピングのサービスを顧客に提供している。注文が送信されると、利用者が注文内容に間違いがないかを確認できるように、注文した商品、各商品の数、送り先の住所、支払方法などの注文情報が表示される。利用者は、注文内容を確認したり、変更したりすることができる。</p></item>
-	<item><p>
-                <emph>株式売買</emph>
+	<item><p><emph>株式売買</emph>
               </p><p>ある金融サービスのウェブサイトで、利用者は株をオンラインで売買できる。利用者が株の売買の注文を送信すると、システムは市場が開いているかどうかを確認する。時間外だった場合は、利用者にその取引が時間外取引になることを知らせて、通常の取引時間外であることに伴うリスクについても伝える。そして、利用者はその注文をキャンセルするか、確認することができる。</p></item>
 </ulist>
 </div3>
@@ -42,32 +39,24 @@
 <head>状況 A: アプリケーションで、購入又は所得税申告の提出のように、法的なトランザクションが発生する場合:</head>
 <olist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G164" linktype="general"/></p></item>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general"/>
-                  </p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general"/>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general"/></p></item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 B: 利用者のアクションによって情報が削除される可能性がある場合:</head>
 <olist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G99" linktype="general"/>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G99" linktype="general"/></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G168" linktype="general"/></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general"/>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G155" linktype="general"/></p></item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 C: ウェブページに試験を実施するアプリケーションがある場合:</head>
 <olist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general"/>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G98" linktype="general"/></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G168" linktype="general"/></p></item>
 </olist>
 </div5>
@@ -76,23 +65,11 @@
 <div4 role="tech-optional">
 <head>Additional Techniques (Advisory) for 3.3.4</head>
 <ulist>
-	<item><p>
-        どのような不可逆のアクションが起きそうになっているかを利用者に知らせる（リンク追加予定）
-    </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script"/>
-                </p></item>
-	<item><p>
-                  <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL35" linktype="silverlight"/>
-                </p></item>
-	<item><p>
-                  エラーを含むフィールドにフォーカスを置く（リンク追加予定）
-                  
-                </p></item>
-	<item><p>
-                  プルダウンメニューの各項目の最初では、同じ用語や同じ文字の組み合わせの使用を避ける（リンク追加予定）
-                  
-                </p></item>
+	<item><p>どのような不可逆のアクションが起きそうになっているかを利用者に知らせる (リンク追加予定)</p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SCR18" linktype="script"/></p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="SL35" linktype="silverlight"/></p></item>
+	<item><p>エラーを含むフィールドにフォーカスを置く (リンク追加予定)</p></item>
+	<item><p>プルダウンメニューの各項目の最初では、同じ用語や同じ文字の組み合わせの使用を避ける (リンク追加予定)</p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G199" linktype="general"/></p></item>
 </ulist>
 </div4>
