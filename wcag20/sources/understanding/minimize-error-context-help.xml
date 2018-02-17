@@ -5,9 +5,8 @@
    <head>3.3.5</head>
    <div3 role="intent">
       <head>Intent of this Success Criterion</head>
-
 <p>この達成基準の意図は、利用者がミスをしないようにすることである。障害のある利用者は、障害のない利用者よりもミスをする可能性が高い。状況に応じたヘルプを提供することによって、利用者は自分が実行していることの手順がわからなくなってしまうことがなく、どう操作すればよいかがわかる。</p>
-<p>状況に応じたヘルプは、ラベルがすべての機能を説明するのに不十分なときにだけ提供すればよい。状況に応じたヘルプが提供されていることを利用者に対してはっきりと示すべきで、利用者が必要とするときにはいつでもヘルプを利用できるようにするべきである。</p>
+<p>状況に応じたヘルプは、ラベルがすべての機能を説明するのに不十分なときにだけ提供すればよい。状況に応じたヘルプが提供されていることを利用者に対してはっきりと示すべきで、利用者が必要とするときにはいつでもヘルプを利用できるようにすることが望ましい。</p>
 <p>コンテンツ制作者は、ヘルプの文章を提供してもよいし、又はユーザエージェントがウェブコンテンツ技術特有のプログラムで判断できる情報に基づいてヘルプの文章を提供してもよい。</p>
 
 <div4 role="benefits">
@@ -22,8 +21,7 @@
 <div3 role="examples">
 <head/>
 <ulist>
-	<item><p>
-                <emph role="bold">オンライン求職</emph>
+	<item><p><emph role="bold">オンライン求職</emph>
               </p><p> はじめての利用者にとっては分かりにくい質問がいくつかある。各質問の横にあるヘルプのリンクが、その質問の説明を提供している。</p></item>
 </ulist>
 </div3>
@@ -39,26 +37,22 @@
 <div5 role="situation">
 <head>状況 A: フォームがテキスト入力を求める場合:</head>
 <olist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G71" linktype="general">Providing a help link on every Web page</loc>
-                  </p></item><!-- BBC Commented out - not completed in time for PR item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G71" linktype="general">Providing a help link on every Web page</loc></p></item>
+    <!-- BBC Commented out - not completed in time for PR item>
                   <p>
                     Using scripts to provide context-sensitive bubble help (future link) 
                   </p>
                 </item-->
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G193" linktype="general">Providing help by an assistant in the Web page</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G194" linktype="general">Providing spell checking and suggestions for text input if applicable to the language </loc></p></item>
-	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G184" linktype="general">Providing text instructions at the beginning of a form or set of fields that describes the necessary input</loc>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G184" linktype="general">Providing text instructions at the beginning of a form or set of fields that describes the necessary input</loc></p></item>
 </olist>
 </div5>
 
 <div5 role="situation">
 <head>状況 B: フォームが所定のデータフォーマットでのテキスト入力を求める場合:</head>
 <olist>
-	<item><p>
-                    <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G89" linktype="general">Providing expected data format and example</loc>
-                  </p></item>
+	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G89" linktype="general">Providing expected data format and example</loc></p></item>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="G184" linktype="general">Providing text instructions at the beginning of a form or set of fields that describes the necessary input </loc></p></item>
 </olist>
 </div5>
@@ -68,9 +62,7 @@
 <head>Additional Techniques (Advisory) for 3.3.4</head>
 <ulist>
 	<item><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H89" linktype="html">Using the title attribute to provide context-sensitive help</loc></p></item>
-	<item><p>
-        文字のバイト数をチェックし、適切なバイト数へと自動変換する（リンク追加予定）
-    </p></item>
+	<item><p>文字のバイト数をチェックし、適切なバイト数へと自動変換する (リンク追加予定)</p></item>
 </ulist>
 </div4>
 
