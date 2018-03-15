@@ -46,10 +46,8 @@
    </related-techniques>
    <tests>
       <procedure>
+        <p><el>img</el>、<el>area</el> 及びタイプ <attval>image</attval> の <el>input</el> を特定する。これらの要素のそれぞれについて:</p>
       <olist>
-        <item>
-          <p><el>img</el>、<el>area</el> 及びタイプ <attval>image</attval> の <el>input</el> を特定する。これらの要素のそれぞれについて:</p>
-        </item>
         <item>
           <p><phrase><att>alt</att> 属性が存在するかどうかを確認する。</phrase></p>
         </item>
