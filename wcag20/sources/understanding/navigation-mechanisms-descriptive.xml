@@ -68,6 +68,10 @@
 <note>
 <p><loc href="content-structure-separation-programmatic" linktype="guideline">達成基準 1.3.1</loc> により、見出し及びラベルは、プログラムによる解釈がされなければならない。</p>
 </note>
+<trnote>
+<p>上記注記で「見出し及びラベルは、プログラムによる解釈がされなければならない。」と記述されているが、これは達成基準 1.3.1 を正確に反映したものではない。よって、この記述は<loc href="content-structure-separation-programmatic" linktype="guideline">達成基準 1.3.1</loc> にあるとおり、「見出し及びラベルは、プログラムで決定できるか又はテキストで利用できなければならない。」と解釈するのが妥当と考えられる。<loc href="https://github.com/w3c/wcag/issues/315">w3c/wcag#315</loc> で改善が提案されているので、あわせて参照されたい。</p>
+<!-- w3c/wcag#315 が fix されたら、この訳註を削除すること。 -->
+</trnote>
 </div4>
 
 <div4 role="tech-optional">
