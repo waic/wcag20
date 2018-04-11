@@ -18,7 +18,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>コンテンツ制作者が、オンラインのバリデーション・サービスを使って、すべての id 属性値が一意的であることをチェックしている。</p>
+      <description><p>コンテンツ制作者が、オンラインのバリデーションサービスを使って、すべての id 属性値が一意的であることをチェックしている。</p>
 </description>
     </eg-group>
     <eg-group role="failure">

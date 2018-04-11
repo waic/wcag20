@@ -11,7 +11,7 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="6">
-      <p>onclickを持つラジオボタンがフォーカスを受け取る時、Internet Explorer 6 は onclickイベントも引き起こす。この動作を防ぐためには他のイベント・ハンドラ (onxxx属性) を追加する。</p>
+      <p>onclickを持つラジオボタンがフォーカスを受け取る時、Internet Explorer 6 は onclickイベントも引き起こす。この動作を防ぐためには他のイベントハンドラ (onxxx属性) を追加する。</p>
     </ua-issue>
    </ua-issues>
    <description>
