@@ -47,7 +47,7 @@
       <description><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p>
 </description>
       <code role="xhtml"><![CDATA[<ul>
-<li><a href="royal_palm_hotel.html">ロイヤル・パーム・ホテル</a>
+<li><a href="royal_palm_hotel.html">ロイヤルパームホテル</a>
   <ul class="horizontal">
     <li><a href="royal_palm_hotel_map.html">地図</a></li>
     <li><a href="royal_palm_hotel_photos.html">写真</a></li>
@@ -56,7 +56,7 @@
     <li><a href="royal_palm_hotel_book.html">予約フォーム</a></li>
   </ul>
 </li>
-<li><a href="hotel_three_rivers.html">ホテル・スリー・リバー</a>
+<li><a href="hotel_three_rivers.html">ホテルスリーリバー</a>
   <ul class="horizontal">
     <li><a href="hotel_three_rivers_map.html">地図</a></li>
     <li><a href="hotel_three_rivers_photos.html">写真</a></li>

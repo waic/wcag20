@@ -4,7 +4,7 @@
 <technique id="H91">
    <short-name>HTML のフォームコントロール及びリンクを使用する</short-name>
    <applicability>
-      <p>HTML のフォーム・コントロール及びリンク</p>
+      <p>HTML のフォームコントロール及びリンク</p>
    </applicability>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="sufficient"/>
@@ -12,9 +12,9 @@
       <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、インタラクティブなユーザインタフェースを構成する要素のキーボード操作及び支援技術との相互運用性を提供するために、標準的な HTML のフォーム・コントロール及びリンク要素を用いることである。</p>
-    <p>ユーザエージェントは、HTML のフォーム・コントロール及びリンクのキーボード操作を提供している。さらに、ユーザエージェントは、フォーム・コントロール及びリンクを、アクセシビリティ API に結び付けている。支援技術は、アクセシビリティ API を利用して、役割 (role)、識別名 (name)、状態 (state)、値 (value) といった適切なアクセシビリティ情報を抽出し、それらを利用者に提供している。役割は HTML の要素によって提供され、名前はその要素に関連付けられているテキストによって提供される。値及び状態が適切な要素は、複合的なメカニズムを通じて、それらの値及び状態も支援技術に提示している。</p>
-    <p>必須の属性を通じてテキストがすでにコントロールと関連付けられている場合もある。たとえば、送信ボタンは、<el>button</el> 要素内のテキスト又は画像の「<att>alt</att>」属性を識別名として用いている。フォーム・コントロールの場合は、<el>label</el> 要素又は「<att>title</att>」属性が用いられる。次の表は、HTML のフォーム・コントロール及びリンクの役割、識別名、値、状態がどのように決定されるかを示したものである。</p>
+    <p>この達成方法の目的は、インタラクティブなユーザインタフェースを構成する要素のキーボード操作及び支援技術との相互運用性を提供するために、標準的な HTML のフォームコントロール及びリンク要素を用いることである。</p>
+    <p>ユーザエージェントは、HTML のフォームコントロール及びリンクのキーボード操作を提供している。さらに、ユーザエージェントは、フォームコントロール及びリンクを、アクセシビリティ API に結び付けている。支援技術は、アクセシビリティ API を利用して、役割 (role)、識別名 (name)、状態 (state)、値 (value) といった適切なアクセシビリティ情報を抽出し、それらを利用者に提供している。役割は HTML の要素によって提供され、名前はその要素に関連付けられているテキストによって提供される。値及び状態が適切な要素は、複合的なメカニズムを通じて、それらの値及び状態も支援技術に提示している。</p>
+    <p>必須の属性を通じてテキストがすでにコントロールと関連付けられている場合もある。たとえば、送信ボタンは、<el>button</el> 要素内のテキスト又は画像の「<att>alt</att>」属性を識別名として用いている。フォームコントロールの場合は、<el>label</el> 要素又は「<att>title</att>」属性が用いられる。次の表は、HTML のフォームコントロール及びリンクの役割、識別名、値、状態がどのように決定されるかを示したものである。</p>
     <table border="1" cellpadding="5" summary="Table describing how the role, name, value and state are determined for HTML links and form controls.">
       <thead>
         <tr>
@@ -196,7 +196,7 @@
       <code role="xhtml"><![CDATA[<textarea id="ta_1" title="あなたの発言をここに入力" >87年前</textarea> ]]></code>
     </eg-group>
     <eg-group>
-      <head>フォーム・コントロールのグループ化</head>
+      <head>フォームコントロールのグループ化</head>
       <description><exsubhead>ラジオボタンのフィールドセット</exsubhead><p>事例 8 のラジオボタンのフィールドセットには「グループ化」という役割 (role) がある。名前 (name) は <el>legend</el> 要素によって与えられている。</p>
 </description>
       <code role="xhtml"><![CDATA[<fieldset>

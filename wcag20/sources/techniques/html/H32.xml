@@ -25,7 +25,7 @@
 </form>  ]]></code>
     </eg-group>
     <eg-group>
-      <description><p>次の事例では、利用者が要求したページを転送する (<att>action</att> 属性により指定された) サーバーサイド・スクリプトを使用している。</p>
+      <description><p>次の事例では、利用者が要求したページを転送する (<att>action</att> 属性により指定された) サーバーサイドスクリプトを使用している。</p>
 </description>
       <code><![CDATA[<form action="http://www.example.com/cgi/redirect/" method="get"><br /> 
 <p>Navigate the site.</p><br /> 

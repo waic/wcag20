@@ -43,7 +43,7 @@
     <eg-group>
       <description><p>この事例では、長い引用文をマークアップするのに <el>blockquote</el> 要素を利用している。<el>blockquote</el> 要素ではパラグラフ分けが必要となる場合もある。また、参考資料を示すのに <el>cite</el> 要素も利用している。</p>
 </description>
-      <code role="html401"><![CDATA[<p>次の文章は、ヘレン・ケラーの<cite>The Story of my Life</cite>からの引用である。</p>
+      <code role="html401"><![CDATA[<p>次の文章は、ヘレン ケラーの<cite>The Story of my Life</cite>からの引用である。</p>
  <blockquote>
   <p>私は先生が来る前日でさえ、四角い硬い生け垣を這うような気分になって、
   そして、嗅覚に導かれて、最初のスミレとユリを見つけました。
@@ -57,7 +57,7 @@
 </description>
       <code role="css"><![CDATA[q:before { content: ""; } 
 q:after { content: ""; } ]]></code>
-      <code role="html401"><![CDATA[<p>ヘレン・ケラーは、"<q>自己憐憫は私たちの最大の的であり、もし屈してしまうなら、 
+      <code role="html401"><![CDATA[<p>ヘレン ケラーは、"<q>自己憐憫は私たちの最大の的であり、もし屈してしまうなら、 
 私たちはこの世で何も良い事を行えない。</q>"と述べている。</p> ]]></code>
       <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>

@@ -12,11 +12,11 @@
    <!-- these ua issues also appear in H44 -->
    <ua-issues>
       <ua-issue name="" version=""><p>HTML 及び XHTML の仕様では、明示的なラベルと黙示的なラベルの両方を認めている。しかし、支援技術の中には、黙示的なラベルを正しく扱えないものがある (例えば、<code><![CDATA[<label>名前 <input type="text" name="firstname"></label>]]></code>)。</p>
-		<ulist><item><p>JAWS 7.10 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、仮想PCカーソルモードとフォームモードの両方で、テキストフィールドの明示的なラベルと黙示的なラベルを読み上げる。フォームモードでは、チェックボックスとラジオボタンの黙示的なラベルを読み上げない。</p></item><item><p>Window-Eyes 5.5 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、明示的にラベル付されたフォーム・フィールドを読み上げる。ブラウズモードでは、黙示的にラベル付されたフォーム・コントロールは読み上げられないが、ブラウズオフモードでコントロールからコントロールへ移動する際には、明示的なラベルは読み上げられる。</p></item></ulist></ua-issue>
+		<ulist><item><p>JAWS 7.10 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、仮想PCカーソルモードとフォームモードの両方で、テキストフィールドの明示的なラベルと黙示的なラベルを読み上げる。フォームモードでは、チェックボックスとラジオボタンの黙示的なラベルを読み上げない。</p></item><item><p>Window-Eyes 5.5 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、明示的にラベル付されたフォームフィールドを読み上げる。ブラウズモードでは、黙示的にラベル付されたフォームコントロールは読み上げられないが、ブラウズオフモードでコントロールからコントロールへ移動する際には、明示的なラベルは読み上げられる。</p></item></ulist></ua-issue>
     <ua-issue name="" version="">
-      <p>ユーザエージェントは、<att>title</att>属性のある<el>input</el>要素上にマウスオーバーすると、ツールチップを表示する。<att>title</att>属性値は支援技術に引き渡され、多くのグラフィカル・ブラウザではツールチップとして表示される。ツールチップはキーボード操作では表示されないため、その情報は画面を見ているキーボード利用者には提供されないと考えたほうがよい。</p>
+      <p>ユーザエージェントは、<att>title</att>属性のある<el>input</el>要素上にマウスオーバーすると、ツールチップを表示する。<att>title</att>属性値は支援技術に引き渡され、多くのグラフィカルブラウザではツールチップとして表示される。ツールチップはキーボード操作では表示されないため、その情報は画面を見ているキーボード利用者には提供されないと考えたほうがよい。</p>
     </ua-issue>
-    <ua-issue name="" version=""><p><el>label</el>要素がない場合、そのフォーム・コントロールがフォーカスを受け取ったときに、JAWS と Window-Eyes は <att>title</att> 属性値を読み上げる。</p>
+    <ua-issue name="" version=""><p><el>label</el>要素がない場合、そのフォームコントロールがフォーカスを受け取ったときに、JAWS と Window-Eyes は <att>title</att> 属性値を読み上げる。</p>
 		<ulist><item><p>JAWS 6.0 以降では、<el>label</el> 要素のラベルと <att>title</att> 属性値が異なる場合には、その両方を読み上げるように設定することが可能である。しかし、この設定があることを知っているゆーざーはほとんどいない。</p></item><item><p>WindowEyes 5.5 では、ホットキーの Insert + E で、フォーカスのあるアイテムの title 属性値を含む追加の情報を提示できる。</p></item></ulist></ua-issue>
     <!-- BBC: This UA issue (below) is not shared with H44 -->
     <ua-issue name="" version="">
@@ -24,7 +24,7 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>この達成方法の目的は、ウェブアプリケーションまたはフォームで特定のフォーム・コントロールが必須項目であることを明確に示すことである。コントロールが必須項目であることを示す記号またはテキストは、<el>label</el> 要素、又は <el>fieldset</el> 要素でグループ化されたコントロールに対する <el>legend</el> 要素を用いて、プログラムが解釈できるようにそのコントロールと関連付ける必要がある。記号が用いられている場合には、事前に利用者にその意味を説明する必要がある。</p>
+    <p>この達成方法の目的は、ウェブアプリケーションまたはフォームで特定のフォームコントロールが必須項目であることを明確に示すことである。コントロールが必須項目であることを示す記号またはテキストは、<el>label</el> 要素、又は <el>fieldset</el> 要素でグループ化されたコントロールに対する <el>legend</el> 要素を用いて、プログラムが解釈できるようにそのコントロールと関連付ける必要がある。記号が用いられている場合には、事前に利用者にその意味を説明する必要がある。</p>
    </description>
    <examples>
       <eg-group>
@@ -55,7 +55,7 @@ HTML:
       <head>画像を用いて必須項目であることを示す</head>
       <description><p>以下のコード例にあるテキストフィールドには、コントロールが必須項目であることを示す画像を含む明示的なラベルがある。画像の意味をフォームの先頭で定義することが重要である。</p>
 </description>
-      <code><![CDATA[<p><img src="req_img.gif" alt="(必須)" /> は、そのフォーム・コントロールが必須項目であることを示しています。</p>
+      <code><![CDATA[<p><img src="req_img.gif" alt="(必須)" /> は、そのフォームコントロールが必須項目であることを示しています。</p>
 <form action="http://www.test.com" method="post">
 <label for="firstname">名前 <img src="req_img.gif" alt="(必須)" />:</label> 
 <input type="text" name="firstname" id="firstname" />
@@ -96,10 +96,10 @@ HTML:
       <procedure>
       <olist>
         <item>
-          <p>必須項目であるフォーム・コントロールに対して、必須項目であることがフォーム・コントロールの <el>label</el> 要素又は <el>legend</el> 要素で示されている。</p>
+          <p>必須項目であるフォームコントロールに対して、必須項目であることがフォームコントロールの <el>label</el> 要素又は <el>legend</el> 要素で示されている。</p>
         </item>
         <item>
-          <p>必須項目であることを示すテキスト以外のものに対して、それを使用しているフォーム・コントロールよりも前にその意味が説明されている。</p>
+          <p>必須項目であることを示すテキスト以外のものに対して、それを使用しているフォームコントロールよりも前にその意味が説明されている。</p>
         </item>
       </olist>
     </procedure>
