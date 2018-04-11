@@ -56,7 +56,7 @@ function launchWindow(objAnchor, objEvent)
     else if (objEvent.which)
       iKeyCode = objEvent.which;
 
-    // キャリッジ・リターン又はスペースではない場合、ユーザエージェントが
+    // キャリッジリターン又はスペースではない場合、ユーザエージェントが
     // アクションの処理を継続するようにtrueを返す
     if (iKeyCode != 13 &amp;&amp; iKeyCode != 32)
       return true;
