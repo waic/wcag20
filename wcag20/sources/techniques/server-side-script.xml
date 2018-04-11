@@ -38,7 +38,7 @@
    </header>
    <body><!-- techniques -->
       <div1 id="server-side-script">
-         <head>サーバサイド・スクリプトの達成方法</head>
+         <head>サーバサイドスクリプトの達成方法</head>
          <xi:include href="server-side-script/SVR1.xml"/>
          <xi:include href="server-side-script/SVR2.xml"/>
          <xi:include href="server-side-script/SVR3.xml"/>
