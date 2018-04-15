@@ -101,7 +101,7 @@ function initialise()
    var objForms = document.getElementsByTagName('form');
    var iCounter;
 
-   // フォームそれぞれにイベントハンドラを追加
+   // フォームそれぞれにイベント・ハンドラを追加
    for (iCounter=0; iCounter&lt;objForms.length; iCounter++)
    {
       objForms[iCounter].onsubmit = function(){return validateForm(this);};
@@ -109,7 +109,7 @@ function initialise()
 }
 
 
-// フォームのイベントハンドラ
+// フォームのイベント・ハンドラ
 function validateForm(objForm)
 {
    var arClass = [];
@@ -131,7 +131,7 @@ function validateForm(objForm)
       strLinkID = objForm.name + 'ErrorID';
    }
 
-   // validationクラスを探索するため、inputフォームコントロールをループする
+   // validationクラスを探索するため、inputフォーム・コントロールをループする
    for (iFieldCounter=0; iFieldCounter&lt;objField.length; iFieldCounter++)
    {
       // フィールドのクラスを取得し、適切なクラスを探す
@@ -256,7 +256,7 @@ function addError(objList, strError, strID, strErrorID)
    var objListItem = document.createElement('li');
    var objAnchor = document.createElement('a');
    
-   // フォームコントロールへの部分識別子
+   // フォーム・コントロールへの部分識別子
    objAnchor.href='#' + strID;
 
    // エラーの見出しに向けたターゲットにする
@@ -267,7 +267,7 @@ function addError(objList, strError, strID, strErrorID)
 
    // エラーメッセージ用のラベルプロンプトを使う
    objAnchor.appendChild(document.createTextNode(strError));
-   // フォームコントロールにフォーカスを当てるために、キーボード及びマウスイベントを追加する
+   // フォーム・コントロールにフォーカスを当てるために、キーボード及びマウスイベントを追加する
    objAnchor.onclick = function(event){return focusFormField(this, event);};
    objAnchor.onkeypress = function(event){return focusFormField(this, event);};
    objListItem.appendChild(objAnchor);
@@ -287,7 +287,7 @@ function focusFormField(objAnchor, objEvent)
       }
    }
 
-   // フォームコントロールにフォーカスを当てる
+   // フォーム・コントロールにフォーカスを当てる
    strFormField = objAnchor.href.match(/[^#]\w*$/);
    objForm = getForm(strFormField);
    objForm[strFormField].focus();
