@@ -63,7 +63,13 @@
       </item>
     </ulist>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>ウェブアプリケーションのヘルプページは、前期中等教育レベルよりも高度ではない言葉づかいで書かれている。</p>
+         </item>
+      </ulist>
+   </examples>
    <tests>
       <procedure>
       <olist>
