@@ -12,7 +12,13 @@
    <description>
     <p>この失敗例では、動きのある又はスクロールするコンテンツを利用者が一時停止したり再開したりすることができない。この場合、ロービジョンの又は認知障害のある利用者のなかには、コンテンツを知覚できないことがある。</p>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>ウェブページにニュースがスクロール表示されていて、そのスクロールを一時停止するメカニズムがない。なかには、スクロールするコンテンツを読むことができない利用者がいる。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G4"/>
    </related-techniques>

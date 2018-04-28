@@ -14,7 +14,13 @@
     <p>このように、ホームページに一つで二つのメカニズムを持たせることができる。一つは各ページへの通常のナビゲーションを提供することであり、もう一つはサイトの事実上のサイトマップにもなることである。</p>
     <p>サイト内の全てのウェブページは、全ての他のページへのリンクを提供し、一連のそれらのリンクは<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="navigation-mechanisms-mult-loc" linktype="guideline">達成基準 3.2.3 (一貫したナビゲーション)</loc>を満たしている。</p>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>コンサルタントのための小規模な商用ウェブサイトは、HOMEページ、コンサルタントにコンタクトを取るための問い合わせページ、コンサルタントの経歴を説明しているページ及びコンサルタントの仕事の事例があるページを提供している。個々のページは、サイト内の全ての他のページにリンクするナビゲーションバーを提供している。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G61"/>
       <relatedtech idref="G63"/>

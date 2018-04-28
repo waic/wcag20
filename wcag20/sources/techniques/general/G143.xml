@@ -13,7 +13,16 @@
     <p>この達成方法の目的は、非テキストコンテンツを特定する代替テキストを介して情報を提供することである。これは、<abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr> のテストが、ぼやけた画像又は音声ファイルで提示されるテキストを入力するよう利用者に求めることがしばしばあるためである。この代替テキストによって、利用者は、CAPTCHA がタスクの完了を要求するもので、またそれがどのようなタスクであるかを理解できるようになる。</p>
     <p>CAPTCHA の代替版がある際には、代替テキストには、その代替版を見つける方法についての説明を含めるべきである。</p>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>CAPTCHAのテストが、ぼやけた画像で表示されたテキストを入力するよう、利用者に求めている。その代替テキストには、「画像に表示された言葉をタイプ入力してください」と書かれている。</p>
+         </item>
+         <item>
+            <p>CAPTCHAのテストが、音声ファイルで再生されるテキストを入力するよう、利用者に求めている。その代替テキストには、「音声で聞こえる文字をタイプ入力してください」と書かれている。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G144"/>
    </related-techniques>

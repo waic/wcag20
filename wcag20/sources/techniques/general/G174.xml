@@ -33,7 +33,16 @@
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css">C29: スタイル・スイッチャーを用いて、適合している代替版を提供する</loc>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
     </note>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>3:1のコントラストの要求を満たしていないヘッドラインを持つページにおいて、全てのテキストとテキストの画像に少なくても4.5:1のコントラストのある新しいバージョンのページへ利用者を導くための、ハイコントラスト（5:1）のリンクがページのトップにある。</p>
+         </item>
+         <item>
+            <p>ページが効果のため陰影のある背景を使っていて、結果として背景とテキストのコントラストは4:1しかない。ページのトップにあるコントロールは「ハイコントラスト」となっていて、それをクリックすると異なるスタイルとなり、7：1のコントラストを達成するように背景色が変わる。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G17"/>
       <relatedtech idref="G18"/>

@@ -16,7 +16,13 @@
 		<p>この達成方法は、表示スタイルを変更して非適合コンテンツに対する<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>となるページを提供する達成方法と併せて用いることができる。詳しくは、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p>
 </note>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>ページの上部に点滅するテキストがあり、登録後にページを送信するよう利用者に警告するメッセージが表示されている。このページの最上部にあるリンクでページを再読み込みすると、点滅するテキストは、見た目が強調されているが点滅しないテキストに置き換えられている。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G4"/>
       <relatedtech idref="G11"/>
