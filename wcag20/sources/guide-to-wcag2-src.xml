@@ -79,33 +79,33 @@ Austin)</affiliation>
 		</authlist>
 
 <status>
-<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C テクニカルレポートインデックス (英語)</loc>で参照可能である。</emph></p>
+<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行の W3C の発行文書、及び、この技術レポートの改訂版は、<loc href="https://www.w3.org/TR/">https://www.w3.org/TR/</loc> にある <loc href="https://www.w3.org/TR/">W3C technical reports index</loc> で参照可能である。</emph></p>
 
-<p>これは、ワーキンググループノートの「WCAG 2.0 解説書」である。<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ (英語)</loc>では、この文書は <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり (ガイダンスを提供している)、規定文書ではない (WCAG 2.0 に適合するための要件を定めていない) ことに留意してほしい。</p>
+<p>これは、ワーキンググループノートの「WCAG 2.0 解説書」である。<loc href="https://www.w3.org/WAI/GL/">Web Content Accessibility Guidelines Working Group </loc>では、この文書は <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>の達成基準を理解するために重要なものであると考えている。この文書のコンテンツは参考情報であり (ガイダンスを提供している)、規定文書ではない (WCAG 2.0 に適合するための要件を定めていない) ことに留意してほしい。</p>
 
 <p>WCAG 2.0 解説書は、ワーキンググループノートとして 2008 年 12 月 11 日に発行され、2010 年 10 月 14 日、2012 年 1 月 3 日、2013 年 9 月 5 日、2014 年 3 月 3 日、2014 年 4 月 8 日、2014 年 9 月 16 日、2015 年 2 月 26 日、2016 年 3 月 17 日に更新された。この新版では、WCAG 2.0 の補足情報を更新している。WCAG 2.0 自体は変更されておらず、参考的な補足情報だけが更新されることに留意してほしい。このバージョンでの唯一の変更点は、<loc href="conformance.html#uc-partial-third-head">第三者によるコンテンツに起因する部分適合表明に関する説明を追加した</loc>ことである。</p>
 
 <!--<phrase role="ext-review">The purpose of this draft is to collect public feedback on proposed changes since the <loc href="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/">Understanding WCAG 2.0 Working Group Note of 14 October 2010</loc>. The Working Group intends to publish an updated Note once feedback from this review has been incorporated. <emph role="bold">The existing Understanding document remains in place as a W3C Note</emph> while this separate draft update is under review and the WCAG Working Group addresses comments.</phrase> Updates include addition of PDF and Silverlight techniques, and clarifications based on input from the public and translators.--> 
 
 
-<p>変更点は <loc href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/complete-diff">diff-marked 版</loc>においてハイライト表示している。</p>
+<p>変更点は <loc href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/complete-diff">diff-marked version</loc> においてハイライト表示している。</p>
 
-<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc> を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives for the public comments list</loc> は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<!--なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。--><loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list discussions</loc> も一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
+<p>ワーキンググループへのコメントは、<loc href="https://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc> を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives for the public comments list</loc> は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<!--なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。--><loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list discussions</loc> も一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
 
-<p>この文書は、W3C の <loc href="http://www.w3.org/WAI/">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="http://www.w3.org/WAI/GL/new-charter-2000.html">WCAG Working Group charter</loc> に記載されている。WCAG ワーキンググループは、<loc href="http://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc> の一つである。</p>
+<p>この文書は、W3C の <loc href="https://www.w3.org/WAI/">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="https://www.w3.org/WAI/GL/charter">WCAG Working Group charter</loc> に記載されている。WCAG ワーキンググループは、<loc href="https://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc> の一つである。</p>
 <p>ワーキンググループノートとしての公開は、W3C 会員によって承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、他の文書によって置き換えられたり、廃止されたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
-<p>この文書は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc> に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc> を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc> を含む特許について実際に知識のある人は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc> に従って、その情報を開示することが求められる。 </p>
-<p>この文書は <loc href="http://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc> によって管理されている。</p>
+<p>この文書は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 W3C Patent Policy</loc> に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する <loc role="disclosures" href="https://www.w3.org/2004/01/pp-impl/35422/status">public list of any patent disclosures</loc> を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</loc> を含む特許について実際に知識のある人は、<loc href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the W3C Patent Policy</loc> に従って、その情報を開示することが求められる。 </p>
+<p>この文書は <loc href="https://www.w3.org/2015/Process-20150901/">1 September 2015 W3C Process Document</loc> によって管理されている。</p>
 </status>
 
 <abstract>
-<p>この文書、「WCAG 2.0 解説書」は、<loc href="https://waic.jp/docs/WCAG20/Overview.html">ウェブコンテンツアクセシビリティガイドライン (WCAG) 2.0</loc> <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツアクセシビリティガイドライン (WCAG) 概要 (英語)</loc>を参照のこと。</p>
+<p>この文書、「WCAG 2.0 解説書」は、<loc href="https://waic.jp/docs/WCAG20/Overview.html">Web Content Accessibility Guidelines (WCAG) 2.0 (日本語訳)</loc> <bibref ref="WCAG20"/> を理解して実践するために不可欠な案内書である。WCAG 2.0 の関連文書群の中の一つだが、この文書のコンテンツはガイダンスを提供する参考文書であり、WCAG 2.0 に適合するための要件を定める規定文書ではない。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="https://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc>を参照のこと。</p>
 
 <p>WCAG 2.0 には、WCAG 2.0 に適合するための達成基準がある。個々の達成基準は、テスト可能な記述内容になっており、特定のウェブコンテンツに適用した際に適合もしくは不適合であると判断できるようになっている。「WCAG 2.0 解説書」が提供するのは、それぞれの達成基準に関する詳細な情報で、達成基準の意図、達成基準の中で用いられている重要な用語、そして、WCAG 2.0 の達成基準が様々な種類の障害のある利用者にどのように役に立つのかが記されている。また、この文書は、様々なウェブコンテンツ技術 (例えば、HTML、CSS、XML) を用いて達成基準を満たしているウェブコンテンツの事例、そして達成基準を満たしていないウェブコンテンツのよくある事例も提供している。</p><p>この文書は、それぞれの達成基準を満たすための特定の達成方法も示している。それぞれの達成方法をどのように実装するかの詳細は、<loc href="https://waic.jp/docs/WCAG-TECHS/Overview.html">WCAG 2.0 達成方法集</loc>で提供されているが、この「WCAG 2.0 解説書」では各達成方法と達成基準との関係に関する情報を提供している。達成方法は、達成基準への対応レベルによって分類されている。「十分な達成方法」とは、(それ単体もしくは他の達成方法との併用により、) ある達成基準を満たすのに<emph>十分である</emph>と考えられる達成方法であり、それ以外は参考達成方法で用いるかどうかは任意である。いくつかの達成方法は、ある特定のウェブコンテンツ技術を用いる場合にはそれが唯一の既知の手法であるかもしれないが、どの達成方法も WCAG 2.0 に適合する上で<emph>必須</emph>というわけではない。「参考達成方法」とは、(テスト可能ではない、あるいは、完全な支援ができないので、) それ自体では達成基準を満たすのに十分ではないが、アクセシビリティをさらに向上させるために、コンテンツ制作者には可能であればそれらを用いることが推奨される。</p>
 
 <p>達成基準を満たす達成方法に加えて、「よくある失敗例」も文書化されている。これらの「よくある失敗例」は WCAG 2.0 への不適合を引き起こすものとして知られている制作方法である。制作者は、WCAG 2.0 の達成基準を満たすためにそれらの方法を避けなければならない。</p>
 
-<p>この文書は、W3C Web Accessibility Initiative (WAI) が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 解説書」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツアクセシビリティガイドライン (WCAG) 概要 (英語)</loc> を参照のこと。</p>
+<p>この文書は、W3C Web Accessibility Initiative (WAI) が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 解説書」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="https://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
 </abstract>
 
 <langusage>
@@ -124,12 +124,12 @@ Austin)</affiliation>
 <div2 role="suppressed" id="introduction">
 <head>Intro</head>
 
-<p>「WCAG 2.0 解説書」は、"WCAG (Web Content Accessibility Guidelines) 2.0" <bibref ref="WCAG20"/>を理解して実践するために不可欠な案内書である。WCAG 2.0 の規定となる定義や要件はすべて WCAG 2.0 自体の文書で読むことができるが、その考え方や条項に馴染みのない方もいるかもしれない。「WCAG 2.0 解説書」は、読者の皆さんがその意図やどのようにガイドラインと達成基準が連携しているのかをよりよく理解できるように、各ガイドライン、及び、各達成基準について、WCAG 2.0 の規定にはならない詳細な解説を提供している。また、それぞれの達成基準を満たすのに十分であることをワーキンググループが確認した達成方法、及び、達成方法の組合せの事例も紹介している。そして、それぞれの達成方法の詳細にもリンクを提供している。</p>
-<p>この文書は、入門書ではなく、ガイドラインとその達成基準に関する詳細な技術解説である。WCAG やその関連技術文書、教育用素材などへのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツアクセシビリティガイドライン (WCAG) 概要 (英語)</loc> を参照のこと。</p>
+<p>「WCAG 2.0 解説書」は、"WCAG (Web Content Accessibility Guidelines) 2.0" <bibref ref="WCAG20"/> を理解して実践するために不可欠な案内書である。WCAG 2.0 の規定となる定義や要件はすべて WCAG 2.0 自体の文書で読むことができるが、その考え方や条項に馴染みのない方もいるかもしれない。「WCAG 2.0 解説書」は、読者の皆さんがその意図やどのようにガイドラインと達成基準が連携しているのかをよりよく理解できるように、各ガイドライン、及び、各達成基準について、WCAG 2.0 の規定にはならない詳細な解説を提供している。また、それぞれの達成基準を満たすのに十分であることをワーキンググループが確認した達成方法、及び、達成方法の組合せの事例も紹介している。そして、それぞれの達成方法の詳細にもリンクを提供している。</p>
+<p>この文書は、入門書ではなく、ガイドラインとその達成基準に関する詳細な技術解説である。WCAG やその関連技術文書、教育用素材などへのイントロダクションは、<loc href="https://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
 
-<p>「WCAG 2.0 解説書」は、ガイドラインごとに構成されている。各ガイドラインには、ガイドライン X.X を理解する という節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。<emph>ガイドライン X.X を理解する</emph>という節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。</p>
+<p>「WCAG 2.0 解説書」は、ガイドラインごとに構成されている。各ガイドラインには、ガイドライン X.X を理解するという節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。<emph>ガイドライン X.X を理解する</emph>という節がある。そのガイドラインの意図が説明されているほか、達成方法の中でも、そのガイドラインには関係あるが特定の達成基準には関係のない達成方法が、そこに列挙されている。</p>
 
-<p><emph>ガイドライン X.X を理解する</emph> という節の後には、そのガイドラインの達成基準ごとに、<emph>達成基準 X.X.X を理解する</emph>という節が続いている。これらの節にはそれぞれ以下の情報が提供されている:</p>
+<p><emph>ガイドライン X.X を理解する</emph>という節の後には、そのガイドラインの達成基準ごとに、<emph>達成基準 X.X.X を理解する</emph>という節が続いている。これらの節にはそれぞれ以下の情報が提供されている:</p>
 
 <ulist>
 	<item><p>WCAG 2.0 に書かれている達成基準</p></item>
@@ -143,8 +143,8 @@ Austin)</affiliation>
 	<item><p>この達成基準における重要な用語 (WCAG 2.0 の用語集から引用)</p></item>
 </ulist>
 
-<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph> という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の <emph>達成基準 X.X.X を理解する</emph> という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="https://www.w3.org/TR/WCAG20-TECHS/">WCAG 2.0 の達成方法 (英語)</loc> で関心のある達成方法を参照のこと。</p>
-<p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Wikipedia にある「障害 (disabilities)」(英語)</loc> を参照のこと。</p>
+<p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph>という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の<emph>達成基準 X.X.X を理解する</emph>という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="https://waic.jp/docs/WCAG-TECHS/Overview.html">WCAG 2.0 達成方法集</loc>で関心のある達成方法を参照のこと。</p>
+<p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Disabilities on Wikipedia</loc> を参照のこと。</p>
 
 <div3 id="fourprincs" role="normal">
 <head>アクセシビリティの 4 つの原則を理解する</head>
@@ -282,7 +282,7 @@ Austin)</affiliation>
 							<p>制作者の視点から: 与えられた基準に対して、十分な達成方法を正しく用い、かつそれが利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしていると確信できる。</p>
 						</item>
 						<item>
-							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツの利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。 (逆は真ではない。ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
+							<p>評価者の視点から: 与えられた達成基準に対して、ウェブコンテンツが、十分な達成方法によって正しく実装され、かつコンテンツの利用者に対して<loc href="conformance.html#uc-accessibility-support-head">アクセシビリティ サポーテッド</loc>ならば、その達成基準を満たしている。(逆は真ではない。ウェブコンテンツがこれらの十分な達成方法で実装されていなくても、以下の<loc href="#ut-understanding-techniques-tests-head">達成方法の検証</loc>で説明しているように、必ずしも達成基準を満たしていないとはいえない。)</p>
 						</item>
 					</ulist>
                <p>以下の<loc href="#ut-understanding-techniques-othertechs-head">その他の達成方法</loc>で説明しているように、W3C の <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>文書にある十分な達成方法以外にも、達成基準を満たす方法はあるだろう。<emph>(上記<loc href="#ut-understanding-techniques-informative-head">達成方法は参考情報である</loc>も参照のこと。)</emph>
@@ -404,10 +404,10 @@ Austin)</affiliation>
 				<div3 id="understanding-techniques-using" role="normal">
 					<head>達成方法集の使用</head>
                <p>
-                  <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="https://waic.jp/docs/WCAG20/quickref/">WCAG 2.0 クイックリファレンス</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
+                  <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>は単体の文書として用いられることを意図していない。代わりに、コンテンツ制作者は、WCAG 達成基準を参照するために <loc href="https://waic.jp/docs/WCAG20/quickref/">How to meet WCAG 2 (クイックリファレンス)</loc>を用い、そこからリンクをたどって WCAG 2.0 解説書の特定の項及び特定の達成方法を参照することが想定している。</p>
 					<div4 id="understanding-techniques-using-alternatives" role="normal">
 						<head>代替版は達成基準を満たしていなければならない</head>
-						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="http://www.w3.org/TR/WCAG20-HTML-TECHS/G73">G73: Providing a long description in another location...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>
+						<p>いくつかの達成基準では、ユーザがコンテンツを得るための代替方法をどのように提供するかについて述べている。例えば、<loc href="https://waic.jp/docs/WCAG-TECHS/G73.html">G73: 非テキストコンテンツのすぐ隣に別の場所へのリンクを置き...</loc> では音声ファイルの代替としてトランスクリプトについて言及している。いくつかの代替はまた WCAG に適合していなければならない。例えばそのトランスクリプト自体は、関連するすべての達成基準を満たしていなければならない。</p>
 					</div4>
 					<div4 id="understanding-techniques-using-examples" role="normal">
 						<head>コード例</head>
