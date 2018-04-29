@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="time-limits-pause" relationship="sufficient"/>
    </applies-to>

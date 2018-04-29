@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="keyboard-operation-keyboard-operable" relationship="cosufficient"/>
       <success-criterion idref="keyboard-operation-all-funcs" relationship="cosufficient"/>

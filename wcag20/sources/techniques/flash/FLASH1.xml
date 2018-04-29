@@ -13,6 +13,7 @@
          </item>
       </ulist>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
    </applies-to>

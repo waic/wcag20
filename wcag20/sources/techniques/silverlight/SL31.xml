@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="silverlight.applicability.general"/>
    </applicability>
+   <trnote-silverlight/>
    <applies-to>
       <success-criterion idref="visual-audio-contrast-text-presentation"
                          relationship="sufficient"/>

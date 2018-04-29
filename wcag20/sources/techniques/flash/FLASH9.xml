@@ -11,6 +11,7 @@
          </item>
       </ulist>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="media-equiv-captions" relationship="sufficient"/>
    </applies-to>

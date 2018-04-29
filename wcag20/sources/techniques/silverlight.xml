@@ -57,6 +57,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
          <head>Silverlightの達成方法</head>
          <div2 id="silverlight_notes">
             <head>Silverlight Technology Notes</head>
+            <trnote-silverlight/>
             <p>Microsoft Silverlight is a development platform for applications.
           To learn more about Silverlight and how Microsoft defines and markets
           the Silverlight technology, see <loc href="http://www.microsoft.com/silverlight/what-is-silverlight/">What

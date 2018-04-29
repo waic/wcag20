@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="meaning-doc-lang-id" relationship="sufficient"/>
       <success-criterion idref="meaning-other-lang-id" relationship="sufficient"/>

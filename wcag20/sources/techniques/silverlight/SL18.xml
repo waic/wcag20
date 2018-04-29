@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="silverlight.applicability.general"/>
    </applicability>
+   <trnote-silverlight/>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
       <success-criterion idref="navigation-mechanisms-refs" relationship="cosufficient"/>
