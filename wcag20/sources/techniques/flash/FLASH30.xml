@@ -6,6 +6,7 @@
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>
+   <trnote-flash/>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
       <success-criterion idref="ensure-compat-rsv" relationship="sufficient"/>

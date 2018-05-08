@@ -7,6 +7,7 @@
    <applicability>
       <p use-id="silverlight.applicability.general"/>
    </applicability>
+   <trnote-silverlight/>
    <applies-to>
       <success-criterion idref="navigation-mechanisms-skip" relationship="sufficient"/>
    </applies-to>

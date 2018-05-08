@@ -13,6 +13,7 @@
          </item>
       </ulist>
    </applicability>
+   <trnote-silverlight/>
    <applies-to>
       <success-criterion idref="media-equiv-audio-desc" relationship="cosufficient"/>
       <success-criterion idref="media-equiv-audio-desc-only" relationship="cosufficient"/>

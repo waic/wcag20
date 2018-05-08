@@ -7,6 +7,7 @@
    <applicability>
       <p use-id="silverlight.applicability.general"/>
    </applicability>
+   <trnote-silverlight/>
    <applies-to>
       <success-criterion idref="meaning-other-lang-id" relationship="sufficient"/>
    </applies-to>

@@ -415,4 +415,17 @@ BBC: This is all called in a previous XSLT, so commented out here. -->
 </xsl:choose>
 </p></div>
 </xsl:template>
+
+<!-- Flash訳註 2021年以降に達成方法集からFLASHが削除されたら削除を検討する -->
+<xsl:template match="trnote-flash" xmlns="http://www.w3.org/1999/xhtml">
+<div class="note"><p><em>訳注:</em> Flash Player は、2020 年末に提供を終了する計画が Adobe 社より発表されている (<a href="https://theblog.adobe.com/adobe-flash-update/">Adobe Blog</a>、<a href="https://forest.watch.impress.co.jp/docs/news/1072487.html">窓の杜</a>)。</p>
+<p>WAIC での Flash に関する翻訳のメンテナンスも積極的に行う予定がないことに留意されたい。</p></div>
+</xsl:template>
+
+<!-- Silverlight訳註 2022年以降に達成方法集からSilverlightが削除されたら削除を検討する -->
+<xsl:template match="trnote-silverlight" xmlns="http://www.w3.org/1999/xhtml">
+<div class="note"><p><em>訳注:</em> Silverlight は、2021 年 11 月にサポートを終了する計画が Microsoft 社より公表されている (<a href="https://support.microsoft.com/ja-jp/lifecycle/search/12905">Microsoft サポート - Silverlight のライフサイクルポリシー</a>)。</p>
+<p>WAIC では、Silverlight に関する達成方法の翻訳を行っていないが、将来もその予定がないことに留意されたい。</p></div>
+</xsl:template>
+
 </xsl:stylesheet>
