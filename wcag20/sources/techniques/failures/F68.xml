@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F68">
-   <short-name>達成基準 4.1.2 の失敗例 － プログラム的に解釈される名前 (name) を持っていないユーザインタフェース コントロール</short-name>
+   <short-name>達成基準 4.1.2 の失敗例 － プログラムによる解釈が可能な名前 (name) を持っていないユーザインタフェース コントロール</short-name>
    <applicability>
       <p>HTML のコントロール</p>
    </applicability>
