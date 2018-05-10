@@ -144,7 +144,7 @@ Austin)</affiliation>
 </ulist>
 
 <p>WCAG 2.0 文書の各ガイドラインからは、この文書の<emph>ガイドライン X.X を理解する</emph>という節に直接リンクしている。同様に、WCAG 2.0 文書の各達成基準からも、この文書の<emph>達成基準 X.X.X を理解する</emph>という節に直接リンクしている。</p><p>個々の達成方法に関する情報については、この文書中にあるリンクから、<loc href="https://waic.jp/docs/WCAG-TECHS/Overview.html">WCAG 2.0 達成方法集</loc>で関心のある達成方法を参照のこと。</p>
-<p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Disabilities on Wikipedia</loc> を参照のこと。</p>
+<p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Disabilities - Wikipedia</loc> を参照のこと。</p>
 
 <div3 id="fourprincs" role="normal">
 <head>アクセシビリティの 4 つの原則を理解する</head>
