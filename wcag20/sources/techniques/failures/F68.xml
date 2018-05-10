@@ -17,9 +17,9 @@
         <item><p><el>textarea</el></p></item>
         <item><p><el>select</el></p></item>
       </ulist>
-      <p>以下の要素については、ラベルを <att>value</att> 属性 (サブミット (送信) およびリセット・ボタン)、 <att>alt</att> 属性 (画像を用いたボタン)、あるいは要素の内容そのもの (<el>button</el>) でそれぞれ指定するため、<el>label</el> 要素を用いない。</p>
+      <p>以下の要素については、ラベルを <att>value</att> 属性 (サブミット (送信) およびリセットボタン)、 <att>alt</att> 属性 (画像を用いたボタン)、あるいは要素の内容そのもの (<el>button</el>) でそれぞれ指定するため、<el>label</el> 要素を用いない。</p>
       <ulist>
-        <item><p>サブミット (送信) 及びリセット・ボタン (<code>input type="submit"</code> 又は <code>input type="reset"</code>)</p></item>
+        <item><p>サブミット (送信) 及びリセットボタン (<code>input type="submit"</code> 又は <code>input type="reset"</code>)</p></item>
         <item><p>画像を用いたボタン (<code>input type="image"</code>)</p></item><item><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></item>
         <item><p>ボタン (<code>button</code> 要素又は <code><![CDATA[<input type="button">]]></code>)</p></item>
       </ulist>

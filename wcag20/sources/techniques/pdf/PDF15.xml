@@ -33,8 +33,8 @@
       <head>Adobe LiveCycle Designer ES 8.2.1 を使用して送信ボタンを追加する</head>
       <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>挿入 &gt; 標準メニューで、「HTTP 送信ボタン」項目を選択する</p></item><item><p>「HTTP 送信ボタン」の［オブジェクト］パネルに、フォーム送信処理の URL を挿入する</p></item></olist>
-<p>次の画像は、フォーム・コントロールの一覧が表示されている標準メニューを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/http.gif" height="257" width="399"/><alt>スクリーンショット：「HTTP 送信ボタン」が選択されている、フォーム・コントロールの一覧が表示されている標準メニュー</alt></image></p><p>次の画像は、URL とボタンの外観に関するその他のフィールドが表示されたオブジェクトパネルを示している。</p>
+<p>次の画像は、フォームコントロールの一覧が表示されている標準メニューを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/http.gif" height="257" width="399"/><alt>スクリーンショット：「HTTP 送信ボタン」が選択されている、フォームコントロールの一覧が表示されている標準メニュー</alt></image></p><p>次の画像は、URL とボタンの外観に関するその他のフィールドが表示されたオブジェクトパネルを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-panel.gif" height="287" width="239"/><alt>スクリーンショット：URL と送信ボタンの外観およびアクションを指定するためのその他のフィールドが表示されている［オブジェクト］パネル</alt></image></p></description>
     </eg-group>
     <eg-group>

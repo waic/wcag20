@@ -158,7 +158,7 @@ change.innerText = "こんにちは";
             </item>
             <item>
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                       href="https://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa2">プログレッシブ・エンハンスメントとアンオブトルーシブ JavaScript</loc></p>
+                       href="https://waic.jp/docs/WCAG-TECHS/C29.html#C29-sa2">プログレッシブエンハンスメントとアンオブトルーシブ JavaScript</loc></p>
             </item>
          </ulist>
       </see-also>

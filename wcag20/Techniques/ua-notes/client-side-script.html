@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
  <head>
-  <title>クライアントサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</title>
+  <title>クライアントサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
  </head>
  <body>
-  <h1>クライアントサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
-  <p>このページは、<a href="/docs/WCAG-TECHS/client-side-script">クライアントサイド・スクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+  <h1>クライアントサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/client-side-script">クライアントサイドスクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
   <ul class="toc">
    <li class="toc">
     <a href="#SCR19">状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</a>
    </li>
    <li class="toc">
-    <a href="#SCR21">ページにコンテンツを追加するために、DOM (ドキュメント・オブジェクト・モデル) を使用する</a>
+    <a href="#SCR21">ページにコンテンツを追加するために、DOM (ドキュメントオブジェクトモデル) を使用する</a>
    </li>
    <li class="toc">
     <a href="#SCR29">静的なHTML要素にキーボード操作可能なアクションを追加する</a>
@@ -33,7 +33,7 @@
   </section>
   <section id="SCR21">
    <h2>
-     <a href="https://waic.jp/docs/WCAG-TECHS/SCR21.html">SCR21</a>: ページにコンテンツを追加するために、DOM (ドキュメント・オブジェクト・モデル) を使用する</h2>
+     <a href="https://waic.jp/docs/WCAG-TECHS/SCR21.html">SCR21</a>: ページにコンテンツを追加するために、DOM (ドキュメントオブジェクトモデル) を使用する</h2>
    <div class="ua-issue">
     <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。 ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、ユーザーがページを読み進めていく際に気がつけるようにする。</p>
    </div>

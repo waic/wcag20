@@ -38,7 +38,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
    </header>
    <body><!-- techniques -->
       <div1 id="client-side-script">
-         <head>クライアントサイド・スクリプトの達成方法</head>
+         <head>クライアントサイドスクリプトの達成方法</head>
          <xi:include href="client-side-script/SCR1.xml"/>
          <xi:include href="client-side-script/SCR2.xml"/>
          <xi:include href="client-side-script/SCR14.xml"/>
