@@ -166,7 +166,9 @@
     </eg-group>
     <eg-group>
       <head>文字間を設定するために CSS の letter-spacing を使用する。</head>
-      <description><p>CSS の <code>letter-spacing</code> プロパティを使って、テキストの 2 行目では、文字をより接近させて表示する。</p>
+      <description>
+<trnote><p>原文では、1 つ目の説明文が 2 つ目のコードの説明、2 つ目の説明文が 1 つ目のコードの説明と「さかさま」になっているが、翻訳では正しい組み合わせに修正している。</p><!-- WGの状況を確認すること --></trnote>
+<p>CSS の <code>letter-spacing</code> プロパティは、2 行目のテキストでより近い文字を表示するために使用される。</p>
 <p>XHTML：</p>
 </description>
       <code><![CDATA[<h1 class="overlap"><span class="upper">本日の</span><br />
@@ -176,7 +178,7 @@
       <code><![CDATA[.overlap { line-height:0.2em;  }
 .upper { text-transform:uppercase; }
 .byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; letter-spacing:-0.1em; }]]></code>
-      <description><p>CSS の <code>letter-spacing</code> プロパティを使って、テキストの 2 行目では、文字をより接近させて表示する。【訳注：おそらく原文が間違っています。WCAG ワーキンググループに確認中です。】</p>
+      <description><p>CSS の <code>letter-spacing</code> プロパティは、見出しでさらに離れた文字を表示するために使用される。</p>
 <p>XHTML の構成：</p>
 </description>
       <code><![CDATA[<h1 class="upper2">ニュース</h1>]]></code>
