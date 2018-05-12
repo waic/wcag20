@@ -10,8 +10,8 @@
       <success-criterion idref="text-equiv-all" relationship="cosufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、非テキストコンテンツを特定する代替テキストを介して情報を提供することである。これは、<abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr> のテストが、ぼやけた画像又は音声ファイルで提示されるテキストを入力するよう利用者に求めることがしばしばあるためである。この代替テキストによって、利用者は、CAPTCHA がタスクの完了を要求するもので、またそれがどのようなタスクであるかを理解できるようになる。</p>
-    <p>CAPTCHA の代替版がある際には、代替テキストには、その代替版を見つける方法についての説明を含めるべきである。</p>
+    <p>この達成方法の目的は、非テキストコンテンツを特定するテキストによる代替を介して情報を提供することである。これは、<abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr> のテストが、ぼやけた画像又は音声ファイルで提示されるテキストを入力するよう利用者に求めることがしばしばあるためである。このテキストによる代替によって、利用者は、CAPTCHA がタスクの完了を要求するもので、またそれがどのようなタスクであるかを理解できるようになる。</p>
+    <p>CAPTCHA の代替版がある際には、テキストによる代替には、その代替版を見つける方法についての説明を含めるべきである。</p>
   </description>
    <examples/>
    <related-techniques>
@@ -24,10 +24,10 @@
           <p>CAPTCHA を取り除く、非表示にする、又は覆い隠す。</p>
         </item>
         <item>
-          <p>CAPTCHA を代替テキストに置き換える。</p>
+          <p>CAPTCHA をテキストによる代替に置き換える。</p>
         </item>
         <item>
-          <p>代替テキストが CAPTCHA の目的を説明している。</p>
+          <p>テキストによる代替が CAPTCHA の目的を説明している。</p>
         </item>
       </olist>
     </procedure>
