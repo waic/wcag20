@@ -24,7 +24,7 @@
          <description>
             <p>この事例では、スクリプトによってアイコンベースのボタンにアクセシブルな名前を設定している。ボタンをクリックするとウェブページが開かれる。</p>
          </description>
-         <code xml:space="preserve"><![CDATA[//画像ボタンの代替テキストを提供する
+         <code xml:space="preserve"><![CDATA[//画像ボタンのテキスト同等物を提供する
 this.check_btn.accessibilityProperties = new AccessibilityProperties();
 this.check_btn.accessibilityProperties.name = "Check page validation";
 
