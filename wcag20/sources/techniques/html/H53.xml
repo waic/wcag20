@@ -29,7 +29,7 @@
     <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
-      <head>代替テキストのある非テキストコンテンツを含んだオブジェクト</head>
+      <head>テキストによる代替のある非テキストコンテンツを含んだオブジェクト</head>
       <code><![CDATA[<object classid="http://www.example.com/animatedlogo.py">
   <img src="staticlogo.gif" alt="会社名" />
 </object>]]></code>
@@ -83,7 +83,7 @@
       <procedure>
       <olist>
         <item>
-          <p><el>object</el> 要素のボディに、そのオブジェクトの代替テキストがある</p>
+          <p><el>object</el> 要素のボディに、そのオブジェクトのテキストによる代替がある</p>
         </item>
       </olist>
     </procedure>
