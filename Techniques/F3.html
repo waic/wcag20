@@ -7,8 +7,7 @@
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
-					</a></li></ul></li></ul><h2 id="F3-description">解説</h2><div class="textbody"><p>CSS の background-image プロパティは、HTML コード内での参照なしに、画像を CSS で文書に含める方法を提供する。CSS の background-image プロパティは装飾のために使用するものであるため、CSS で組み込まれる画像に代替テキストを付けることはできない。 テキストによる代替は、重要な情報を伝える画像を見ることのできない人にとって必須のものである。 したがって、このプロパティを重要な情報を伝える画像を追加するために使用した場合は失敗となる。この失敗は、背景画像が HTML の style 属性で宣言された場合、及び背景画像宣言がクライアントスクリプトで動的に作成された場合 (下の失敗例 3: を参照) にも同様に適用される。</p><div class="note"><p class="prefix"><em>注記: </em>
-背景画像の中に情報を組み込むことは、読みやすくする目的で背景を変えている人や、OS のハイコントラストモードの利用者に対しても問題を引き起こす。これらの利用者は、代替テキストが存在しないことで背景画像に含まれている情報を失うことになる。</p></div></div><h2 class="small-head" id="F3-examples">事例</h2><div class="failure"><h3 class="small-head" id="F3-failex1">
+					</a></li></ul></li></ul><h2 id="F3-description">解説</h2><div class="textbody"><p>CSS の background-image プロパティは、HTML コード内での参照なしに、画像を CSS で文書に含める方法を提供する。CSS の background-image プロパティは装飾のために使用するものであるため、CSS で組み込まれる画像にテキストによる代替を付けることはできない。 テキストによる代替は、重要な情報を伝える画像を見ることのできない人にとって必須のものである。 したがって、このプロパティを重要な情報を伝える画像を追加するために使用した場合は失敗となる。この失敗は、背景画像が HTML の style 属性で宣言された場合、及び背景画像宣言がクライアントスクリプトで動的に作成された場合 (下の失敗例 3: を参照) にも同様に適用される。</p><div class="note"><p class="prefix"><em>注記: </em>背景画像の中に情報を組み込むことは、読みやすくする目的で背景を変えている人や、OS のハイコントラストモードの利用者に対しても問題を引き起こす。これらの利用者は、代替テキストが存在しないことで背景画像に含まれている情報を失うことになる。</p></div></div><h2 class="small-head" id="F3-examples">事例</h2><div class="failure"><h3 class="small-head" id="F3-failex1">
 					失敗例 1: </h3><div class="example"><div class="textbody"><p>
 以下の例では、コンテンツの一部として CSS によってのみ表示させられている画像が含まれている。その画像 (TopRate.png) は 180×200 ピクセルで「基準金利 年 19.3%」というテキストを含んでいる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 CSS内: 
