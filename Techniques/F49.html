@@ -18,7 +18,7 @@
 &lt;tr&gt;
   &lt;td&gt;XYZ gets you to the&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;</code></pre></div><div class="textbody"><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p><ul><li><p>XYZ mountaineering top! </p></li><li><p>XYZ gets you to the</p></li></ul><p>訳注：本来は「XYZ mountaineering  XYZ gets you to the top!」となるべきである</p></div></div></div><div class="failure"><h3 class="small-head" id="F49-failex2">
+&lt;/table&gt;</code></pre></div><div class="textbody"><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p><ul><li><p>XYZ mountaineering top! </p></li><li><p>XYZ gets you to the</p></li></ul></div></div></div><div class="failure"><h3 class="small-head" id="F49-failex2">
 					失敗例 2: 線形化されると意味のある列が分割されてしまうレイアウトテーブル</h3><div class="example"><div class="textbody"><p>ある美術館の展覧会に関するウェブページでは、リンクの長い一覧を含むナビゲーションバーをページ左側に配置している。そのナビゲーションバーの右側には展覧会に展示される絵の一つが置かれている。その絵の右側には、美術館でその絵の横の壁にみられるであろうプラカードのテキストが置かれている。そのテキストの下には、「Description,」という見出しと、その見出しの下にその絵の説明が置かれている。絵、プラカードのテキスト、説明の見出し、そして絵の説明というのが意味のある順序となっている。</p><p>ページ中で各要素を配置するためにレイアウトテーブルが用いられている。ナビゲーションバー中の一連のリンクは、最も左の列の異なるセルに分割されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;table&gt;
 &lt;tr&gt;
