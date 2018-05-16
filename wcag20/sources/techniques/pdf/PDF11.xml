@@ -53,9 +53,9 @@
       <head>Adobe Acrobat 9 Pro でリンクの作成ダイアログボックスを使用してハイパーリンクを作成する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>リンクテキストにするテキストを選択する</p></item><item><p>コンテキストメニューから［リンクの作成］を選択する</p></item></olist>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink1.jpg" height="467" width="424"/><alt>スクリーンショット：ハイパーリンクを作成するためにテキストが選択されている PDF 文書。コンテキストメニューで［リンクの作成］が選択されている。</alt></image></p><p>3. リンクの作成ダイアログボックスの指示に従い、以下に示されているように、リンクの外観を指定する</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink2.jpg" height="406" width="509"/><alt>スクリーンショット：リンクの作成ダイアログボックスが開き、「リンクの外観」のオプションが選択されている PDF 文書。</alt></image></p><p>「次へ」を選択し、URI を指定する。次の画像は、結果として表示されるハイパーリンクとツールヒントを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink3.jpg" height="216" width="460"/><alt>スクリーンショット：リンクの作成ダイアログボックスを使用して作成されたハイパーリンクがあり、マウスオーバーによりツールヒントが表示されている PDF 文書。</alt></image></p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink1.jpg" height="467" width="424"/><alt>スクリーンショット: ハイパーリンクを作成するためにテキストが選択されている PDF 文書。コンテキストメニューで［リンクの作成］が選択されている。</alt></image></p><p>3. リンクの作成ダイアログボックスの指示に従い、以下に示されているように、リンクの外観を指定する</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink2.jpg" height="406" width="509"/><alt>スクリーンショット: リンクの作成ダイアログボックスが開き、「リンクの外観」のオプションが選択されている PDF 文書。</alt></image></p><p>「次へ」を選択し、URI を指定する。次の画像は、結果として表示されるハイパーリンクとツールヒントを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/capelink3.jpg" height="216" width="460"/><alt>スクリーンショット: リンクの作成ダイアログボックスを使用して作成されたハイパーリンクがあり、マウスオーバーによりツールヒントが表示されている PDF 文書。</alt></image></p>
 <p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF11/links.pdf"><!-- linktype="examples"-->PDF でハイパーリンクを作成したサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>

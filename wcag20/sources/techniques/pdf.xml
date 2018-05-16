@@ -160,10 +160,10 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                <div4 id="pdf_notes_acc-sup_files_checking">
                   <head>アクセシビリティのチェックと修復</head>
                   <p>
-                     <loc href="http://www.adobe.com/products/acrobat.html">Adobe Acrobat Pro</loc>：Adobe Acrobat Pro は、PDF ファイルの作成と編集を行うアプリケーションである。このアプリケーションには、タグパネルを通じた構造ルートのアクセス機能、順序パネルを通じて読み上げ順序を直接操作する機能、組み込みのアクセシビリティチェッカー、PDF 文書のアクセシビリティを評価および修復するグラフィック機構である TouchUp 読み上げ順序ツールなど、PDF ファイルのアクセシビリティを評価および修復するための多数のツールが含まれている。</p>
+                     <loc href="http://www.adobe.com/products/acrobat.html">Adobe Acrobat Pro</loc>: Adobe Acrobat Pro は、PDF ファイルの作成と編集を行うアプリケーションである。このアプリケーションには、タグパネルを通じた構造ルートのアクセス機能、順序パネルを通じて読み上げ順序を直接操作する機能、組み込みのアクセシビリティチェッカー、PDF 文書のアクセシビリティを評価および修復するグラフィック機構である TouchUp 読み上げ順序ツールなど、PDF ファイルのアクセシビリティを評価および修復するための多数のツールが含まれている。</p>
                   <p>
                      <loc href="http://www.commonlook.com/CommonLook-PDF">Commonlook™
-  			PDF</loc>： Commonlook PDF は Netcentric Technologies が提供する Adobe Acrobat Pro 用プラグインである。CommonLook PDF は、画像、テーブル、フォームおよびその他の非テキストオブジェクトに対する適切なタグ付けを含め、アクセシビリティに関する最も一般的な問題の特定、報告および修正を支援する。</p>
+  			PDF</loc>: Commonlook PDF は Netcentric Technologies が提供する Adobe Acrobat Pro 用プラグインである。CommonLook PDF は、画像、テーブル、フォームおよびその他の非テキストオブジェクトに対する適切なタグ付けを含め、アクセシビリティに関する最も一般的な問題の特定、報告および修正を支援する。</p>
                   <div5 id="pdf_notes_acc-sup_files_checking_api">
                      <head>API 検査ツール</head>
                      <ulist>
@@ -249,7 +249,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                         <p>MAGic 11 - Freedom Scientific が提供するスクリーン拡大鏡。</p>
                      </item>
                      <item>
-                        <p>NVDA 2011.1 - NonVisual Desktop Access： NV Access が配布するオープンソースのスクリーンリーダー。NVDA では、合成音声と Braille を通じたフィードバックによって、全盲または視覚に障害のある人が Windows オペレーティングシステムや多数のサードパーティアプリケーションにアクセスして操作できる。</p>
+                        <p>NVDA 2011.1 - NonVisual Desktop Access: NV Access が配布するオープンソースのスクリーンリーダー。NVDA では、合成音声と Braille を通じたフィードバックによって、全盲または視覚に障害のある人が Windows オペレーティングシステムや多数のサードパーティアプリケーションにアクセスして操作できる。</p>
                      </item>
                      <item>
                         <p>Supernova Access Suite 12.02 – Dolphin が提供する、拡大表示、音声、Braille サポートを利用できるフルスクリーンのリーダー。PDF のサポートは HAL バージョン 5 から開始されている。</p>
@@ -314,7 +314,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 リファレンス：ISO 32000-1 の ISO 承認コピー (英語)</loc>
+                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 リファレンス: ISO 32000-1 の ISO 承認コピー (英語)</loc>
                      </p>
                   </item>
                   <item>
@@ -335,7 +335,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://webaim.org/techniques/acrobat/">WebAIM： PDF アクセシビリティ (英語)</loc> 
+                        <loc href="http://webaim.org/techniques/acrobat/">WebAIM: PDF アクセシビリティ (英語)</loc> 
                      </p>
                   </item>
                   <item>
