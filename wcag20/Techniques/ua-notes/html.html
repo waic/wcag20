@@ -10,7 +10,7 @@
 <a href="/docs/WCAG-TECHS/html">HTMLとXHTMLの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
   <ul class="toc">
    <li class="toc">
-    <a href="#H24">イメージマップの area 要素に代替テキストを提供する</a>
+    <a href="#H24">イメージマップの area 要素にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
     <a href="#H27">object 要素にテキストおよび非テキストの代替を提供する</a> (訳注： この達成方法は最新の達成方法からは削除されている)
@@ -22,7 +22,7 @@
     <a href="#H33">title 属性を用いて、リンクテキストの文言を補足する</a>
    </li>
    <li class="toc">
-    <a href="#H35">applet 要素に代替テキストを提供する</a>
+    <a href="#H35">applet 要素にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
     <a href="#H44">テキストのラベルとフォームコントロールを関連付けるために、label 要素を使用する</a>
@@ -82,7 +82,7 @@
     <a href="#H85">select 要素内の option 要素をグループ化するために、optgroup 要素を使用する</a>
    </li>
    <li class="toc">
-    <a href="#H86">ASCII アート、顔文字、及びリート語に代替テキストを提供する</a>
+    <a href="#H86">ASCII アート、顔文字、及びリート語にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
     <a href="#H89">コンテキストに応じたヘルプを提供するために、title 属性を使用する</a>
@@ -96,7 +96,7 @@
   </ul>
   <section id="H24">
    <h2>
-    <a href="https://waic.jp/docs/WCAG-TECHS/H24.html">H24</a>: イメージマップの area 要素に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H24.html">H24</a>: イメージマップの area 要素にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <p>HTML 4.01仕様書は、<code>alt</code>属性のテキストを、その要素が通常通り描画されないときに表示されるもの、と説明している。ユーザーエージェントは、画像が表示されないときに<code>alt</code>属性のテキストを表示する。しかし、視覚系ユーザーエージェントは現状、イメージマップのarea要素については、キーボードでアクセスした場合、又は画像そのものが表示されない場合には、<code>alt</code>属性のテキストを表示しない。また、画像の内在寸法が指定されていない場合【訳注−img要素のwidth属性やheight属性で画像のサイズが示されていない場合など】、area要素を切り抜いて表示することもある。さらに、マウスオーバー時に反応して表示される<code>alt</code>属性のテキストは、ユーザーエージェントでのフォントサイズや色の組み合わせの設定通りに表示されない。</p>
     <p><code>title</code>属性は追加情報を提供するものとされている。しかし、ユーザーエージェントにおける現在の実装では、title属性と<code>alt</code>属性のどちらかにはアクセスできるが、両方同時にはアクセスできない。ユーザーエージェントは一般的に、<code>title</code>属性が指定された要素にマウスオーバーしたとき、その<code>title</code>属性のテキストを表示する。              </p>
@@ -187,11 +187,11 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H35">
    <h2>
-    <a href="https://waic.jp/docs/WCAG-TECHS/H35.html">H35</a>: applet 要素に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H35.html">H35</a>: applet 要素にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <ul>
      <li>
-      <p>この実装方法は、支援技術が十分にサポートしていないものである。HTML仕様書は、アプレットに対する代替テキストはその要素が描画できないときに表示される、と説明している。そのため、ユーザーエージェントがJavaアプレットをサポートしていないか、Javaアプレットが読み込み中止に設定されていないかぎり、<code>applet</code>要素のボディにある代替テキストはユーザーに提供されない。</p>
+      <p>この実装方法は、支援技術が十分にサポートしていないものである。HTML仕様書は、アプレットに対するテキストによる代替はその要素が描画できないときに表示される、と説明している。そのため、ユーザーエージェントがJavaアプレットをサポートしていないか、Javaアプレットが読み込み中止に設定されていないかぎり、<code>applet</code>要素のボディにあるテキストによる代替はユーザーに提供されない。</p>
      </li>
      <li>
       <p>Windows用のIE 6と、Windowsで動作するFirefox 1.5とOpera 9とでは、applet要素の代替テキストの扱いが異なる。IEはapplet要素のボディに含まれるテキストを表示するが、<code>alt</code>属性は表示しない。一方、FirefoxとOperaは、<code>alt</code>属性を表示するが、ボディに含まれるテキストは表示しない。</p>
@@ -506,7 +506,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H86">
    <h2>
-    <a href="https://waic.jp/docs/WCAG-TECHS/H86.html">H86</a>: ASCII アート、顔文字、及びリート語に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H86.html">H86</a>: ASCII アート、顔文字、及びリート語にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <ul>
      <li>

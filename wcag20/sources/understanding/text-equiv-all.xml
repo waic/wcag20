@@ -113,7 +113,7 @@
 <head>状況 A: 短い説明が非テキストコンテンツと同じ目的を果たし、かつ同じ情報を提示できる場合:</head>
 <olist>
 <item>
-<p>次に挙げる<emph role="bold"><loc href="#text-equiv-all-situation-a-shorttext">状況 A における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G94" linktype="general">非テキストコンテンツと同じ目的を果たし、同じ情報を提示する短い代替テキストを提供する</loc>:</p>
+<p>次に挙げる<emph role="bold"><loc href="#text-equiv-all-situation-a-shorttext">状況 A における短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G94" linktype="general"/>:</p>
 </item>
 </olist>
 <p id="text-equiv-all-situation-a-shorttext"><emph role="bold">状況 A における短いテキストによる代替の達成方法</emph>:</p>
@@ -138,7 +138,7 @@
 <head>状況 B: 短い説明が非テキストコンテンツと同じ目的を果たせず、かつ同じ情報を提示<emph role="bold">できない</emph>場合 (例: チャート又は図表):</head>
 <olist><item><p>
 次に挙げる
-<emph role="bold"><loc href="#text-equiv-all-situation-b-shorttext">状況 B における短いテキストによる代替の達成方法</loc></emph>のいずれか<emph role="bold">及び</emph>、<emph role="bold"><loc href="#text-equiv-all-situation-b-longtext">状況 B における長いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G95" linktype="general">非テキストコンテンツの簡単な説明を提供する、簡潔な代替テキストを提供する</loc>
+<emph role="bold"><loc href="#text-equiv-all-situation-b-shorttext">状況 B における短いテキストによる代替の達成方法</loc></emph>のいずれか<emph role="bold">及び</emph>、<emph role="bold"><loc href="#text-equiv-all-situation-b-longtext">状況 B における長いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G95" linktype="general"/>
 :</p></item></olist>
 
 <p id="text-equiv-all-situation-b-shorttext"><emph role="bold">状況 B における短いテキストによる代替の達成方法</emph>:</p>
@@ -162,7 +162,7 @@
 <div5 role="situation">
 <head>状況 C: 非テキストコンテンツがコントロールである、又は利用者の入力を受け入れる場合:</head>
 <olist>
-<item><p>次に挙げる<emph role="bold"><loc href="#text-equiv-all-situation-c-controls">状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G82" linktype="general">非テキストコンテンツの目的を特定する代替テキストを提供する</loc>:</p></item>
+<item><p>次に挙げる<emph role="bold"><loc href="#text-equiv-all-situation-c-controls">状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法</loc></emph>のいずれかを用いて、<loc href="G82" linktype="general"/>:</p></item>
 </olist>
 <p id="text-equiv-all-situation-c-controls"><emph role="bold">状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法</emph>:</p>
 <ulist id="text-equiv-all-situation-c-controls-techs">
@@ -209,7 +209,7 @@
 <head>状況 E: 非テキストコンテンツが CAPTCHA である場合:</head>
 <olist>
 <item><p>
-<loc href="G143" linktype="general">代替テキストを提供して、CAPTCHA の目的を説明する</loc>、
+<loc href="G143" linktype="general"/>、
 <emph role="bold">かつ</emph>、
 <loc href="G144" linktype="general">同じ目的を果たす、異なる感覚モダリティを用いたもう一つの CAPTCHA がウェブページにあることを確認する</loc>
 </p></item>

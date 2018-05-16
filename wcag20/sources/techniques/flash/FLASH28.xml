@@ -19,7 +19,7 @@
    </description>
    <examples>
       <eg-group>
-         <head>アクセシビリティパネルを使用して ASCII アートの代替テキストを提供する</head>
+         <head>アクセシビリティパネルを使用して ASCII アートのテキストによる代替を提供する</head>
          <description>
             <p>この事例には、当て字を使用した ASCII アートによる語が含まれている (テキストは「WCAG 2 rulez」を表している)。次の手順で、このテキストのアクセシビリティを確保する。</p>
             <olist>
@@ -30,7 +30,7 @@
                   <p>テキストが配置されたムービークリップインスタンスを選択し、アクセシビリティパネルで次の変更を行う。</p>
                   <ulist>
                      <item>
-                        <p>ASCII アートに対して、当て字を使用していない意味のある代替テキストを追加する (「WCAG 2 RULEZ」など)。</p>
+                        <p>ASCII アートに対して、当て字を使用していない意味のあるテキストによる代替を追加する (「WCAG 2 RULEZ」など)。</p>
                      </item>
                      <item>
                         <p>「子オブジェクトをアクセス可能にする」チェックボックスをオフにし、ASCII 文字がスクリーンリーダーによって読み上げられないようにする。</p>
@@ -45,13 +45,13 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternative.png"
                        height="308"
                        width="695"/>
-                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、ASCIIアートの代替テキストを提供</alt>
+                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、ASCIIアートのテキストによる代替を提供</alt>
                </image>
 							     </p>
          </description>
       </eg-group>
       <eg-group>
-         <head>ActionScript を使用して ASCII アートの代替テキストを提供する</head>
+         <head>ActionScript を使用して ASCII アートのテキストによる代替を提供する</head>
          <description>
             <p>この事例では、Flash Professional のオーサリングツールのアクセシビリティパネルの代わりに ActionScript を使用している。それ以外は事例 1 と同じである。</p>
             <olist>
@@ -74,9 +74,9 @@ myASCII.accessibilityProperties.forceSimple = true;
          <description>
             <p>この実例は、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternatives_as3.html"><!--
-                    linktype="examples"-->ActionScript を使用して ASCII アートの代替テキストを提供するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    linktype="examples"-->ActionScript を使用して ASCII アートのテキストによる代替を提供するのサンプル (英語)</loc> で確認できる。また、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH28/ascii_art_alternatives_as3.html"><!--
-                    linktype="examples"-->ActionScript を使用して ASCII アートの代替テキストを提供するのソース (英語)</loc> をダウンロードすることもできる。</p>
+                    linktype="examples"-->ActionScript を使用して ASCII アートのテキストによる代替を提供するのソース (英語)</loc> をダウンロードすることもできる。</p>
          </description>
       </eg-group>
    </examples>
@@ -93,7 +93,7 @@ myASCII.accessibilityProperties.forceSimple = true;
                <p>グループ化された ASCII 文字、当て字、顔文字に、同じ情報がアクセシビリティの name プロパティによって提供されている。</p>
             </item>
             <item>
-               <p>また、場合によってはスクリーンリーダーを使用して Flash コンテンツの読み上げをテストする。このテストでは、タブ移動の可能な非テキストオブジェクトにタブ移動したときにそのオブジェクトの代替テキストが読み上げられる。または、コンテンツを 1 行ずつ読み上げたときに代替テキストが読み上げられる。</p>
+               <p>また、場合によってはスクリーンリーダーを使用して Flash コンテンツの読み上げをテストする。このテストでは、タブ移動の可能な非テキストオブジェクトにタブ移動したときにそのオブジェクトの等価なテキストが読み上げられる。または、コンテンツを 1 行ずつ読み上げたときに代替テキストが読み上げられる。</p>
             </item>
          </olist>
       </procedure>
