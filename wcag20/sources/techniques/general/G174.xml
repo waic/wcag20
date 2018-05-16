@@ -33,7 +33,16 @@
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
     </note>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>3:1 のコントラスト要件を満たしていない見出しがあるページでは、すべてのテキスト及び画像文字で最低限 4.5：1 のコントラストを持つ新しいバージョンのページに移動させるハイコントラスト (5:1) のリンクがページの上部にある。</p>
+         </item>
+         <item>
+            <p>ページが効果のため陰影のある背景を使っていて、結果として背景とテキストのコントラストは 4:1 しかない。ページのトップにあるコントロールは「ハイコントラスト」となっていて、それをクリックすると異なるスタイルとなり、7:1 のコントラストを達成するように背景色が変わる。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques>
       <relatedtech idref="G17"/>
       <relatedtech idref="G18"/>

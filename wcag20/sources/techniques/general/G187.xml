@@ -23,7 +23,13 @@
     </ulist>
     <a11ysuprorted rating="pass" exnumber="0"/>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>ページに、利用者の注意をひきつけるための点滅するバナーがある。そのバナーは無制限に繰り返すアニメーション GIF である。利用者は Escape キーを押すことによって、ページ上のすべてのアニメーション GIF の動きを止めることができる。</p>
+         </item>
+      </ulist>
+   </examples>
    <tests>
       <procedure>
       <olist>

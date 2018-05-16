@@ -29,7 +29,16 @@
 	この達成方法は、完全にユーザエージェントの機能に依存するため、さまざまなユーザエージェントを用いて検証することは重要である。</p>
     <p>この達成方法では、ズーム機能を用いてもページ上の全ての空間的な関係が保持され、全ての機能が継続して利用可能である必要がある。</p>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>Internet Explorer 7 と Opera 9は、HTML/CSS ページコンテンツを均一に拡大縮小するズーム機能を提供している。</p>
+         </item>
+         <item>
+            <p>利用者がテキストのサイズを変更できるように、Adobe Reader は PDF ページを均一に拡大縮小する拡大鏡機能を提供している。</p>
+         </item>
+      </ulist>
+   </examples>
    <related-techniques/>
    <tests>
       <procedure>
