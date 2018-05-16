@@ -60,10 +60,10 @@
       <description><p>この事例では、定義リストを用いて、対になる関連するアイテムをマークアップしている。対になっているアイテムは、それ自体が論理的に関連したリストである。定義リスト要素の CSS スタイルはブラウザによるサポートが十分ではないため、スタイル目的のためだけに span 要素がマークアップに含められているが、これは必須ではない。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[<dl>
-<dt><span>名前：</span></dt><dd><span>John Doe</span></dd>
-<dt><span>電話番号：</span></dt><dd><span>01-2345678</span></dd>
-<dt><span>FAX：</span></dt><dd><span>02-3456789</span></dd>
-<dt><span>Eメール：</span></dt><dd><span>johndoe@someemail.com</span></dd>
+<dt><span>名前:</span></dt><dd><span>John Doe</span></dd>
+<dt><span>電話番号:</span></dt><dd><span>01-2345678</span></dd>
+<dt><span>FAX:</span></dt><dd><span>02-3456789</span></dd>
+<dt><span>Eメール:</span></dt><dd><span>johndoe@someemail.com</span></dd>
 </dl>]]></codeblock>
       <description><p>以下の CSS スタイルは、対になっているアイテムそれぞれをテーブルのようなレイアウトにして一行に並べるために用いることが可能である。</p>
 </description>

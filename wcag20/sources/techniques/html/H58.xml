@@ -76,20 +76,20 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ドキュメントにおける各要素について：</p>
+      <p>ドキュメントにおける各要素について:</p>
       <olist>
         <item>
           <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.asahi-net.or.jp/~sd5a-ucd/rec-html401j/struct/dirlang.html#h-8.1.2" xlink:type="simple">言語コードの継承 (HTML4.01)</loc> で示されているように、その要素のコンテンツの自然言語が、その要素に継承されている言語と同一である。</p>
         </item>
       </olist>
-      <p>ドキュメントにおける各 <att>lang</att> 属性について：</p>
+      <p>ドキュメントにおける各 <att>lang</att> 属性について:</p>
       <olist>
         <item>
           <p><att>lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
                     Identification of Languages</loc> に適合している。</p>
         </item>
       </olist>
-      <p>ドキュメントにおける各 xml:lang 属性について：</p>
+      <p>ドキュメントにおける各 xml:lang 属性について:</p>
       <olist>
         <item>
           <p><att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the

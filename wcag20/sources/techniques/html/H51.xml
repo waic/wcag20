@@ -84,7 +84,7 @@
         <item>
           <p>表形式の情報がある。</p>
         </item>
-        <item><p>表形式の情報それぞれについて：</p>				
+        <item><p>表形式の情報それぞれについて:</p>				
           <olist><item><p>テーブルを、少なくとも <el>table</el>、<el>tr</el>、<el>th</el>、<el>td</el> 要素を使ってマークアップしている。</p></item></olist></item>
       </olist>
     </procedure>

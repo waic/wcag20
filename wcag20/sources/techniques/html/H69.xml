@@ -46,7 +46,7 @@
       <code role="html401"><![CDATA[<h1>技術関連の定期刊行物の検索</h1>
  <h2>検索</h2>
  <form action="search.php">
-  <p><label for="searchInput">検索トピックスを入力：</label>
+  <p><label for="searchInput">検索トピックスを入力:</label>
   <input type="text" size="30" id="searchInput">
   <input type="submit" value="検索"></p>
  </form>
@@ -130,7 +130,7 @@
                </p>
             </item>
             <item>
-               <p>Firefox では、以下のプラグインがキーボード操作による見出しナビゲーション機能を提供している：</p>
+               <p>Firefox では、以下のプラグインがキーボード操作による見出しナビゲーション機能を提供している:</p>
                <ulist>
                   <item>
                      <p>

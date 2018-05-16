@@ -70,7 +70,7 @@
         <item>
           <p>データテーブルである場合、2 つ以上の行見出し及び／又は列見出しと関連付けられているあらゆるデータセルの <att>headers</att> 属性に、関連付けられている全ての見出しセルの <att>id</att> を指定している。</p>
         </item>
-        <item><p>データテーブルでは、<att>id</att> 属性または <att>headers</att> 属性を指定しているあらゆるセルについて：</p>
+        <item><p>データテーブルでは、<att>id</att> 属性または <att>headers</att> 属性を指定しているあらゆるセルについて:</p>
                 
                         <olist><item><p>データセルの <att>headers</att> 属性で指定した各 <att>id</att> が、見出しセルの <att>id</att> 属性値と一致している。</p></item><item><p>データセルの <att>headers</att> 属性で、そのデータセルと関連付けられた全ての見出しの <att>id</att> 属性値を指定している。</p></item><item><p>全ての <att>id</att> が一意的であり、重複して使用していない (つまり、ページの中で 2 つ以上の要素が同じ <att>id</att> を持つことはできない)。</p></item></olist></item>
       </olist>

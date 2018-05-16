@@ -54,7 +54,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>用語とそれに関する説明の組み合わせについて：</p>
+      <p>用語とそれに関する説明の組み合わせについて:</p>
       <olist>
         <item>
           <p>そのリストが、<el>dl</el> 要素に含まれている。</p>

@@ -36,7 +36,7 @@
       <head>ビデオゲームのダウンロードリスト</head>
       <code><![CDATA[<ul>
   <li>
-    <a href="tomb_raider.htm">トゥームレイダー：レジェンド</a>
+    <a href="tomb_raider.htm">トゥームレイダー: レジェンド</a>
     <a href="tomb_raider_images.htm">画像を見る</a>
     <a href="tomb_raider.mpeg">(デモのダウンロード)</a>
   </li>
@@ -72,7 +72,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>コンテンツの中で、この達成方法を利用するリンクそれぞれに対して：</p>
+      <p>コンテンツの中で、この達成方法を利用するリンクそれぞれに対して:</p>
       <olist>
         <item>
           <p> そのリンクがリスト項目の一部である。</p>
