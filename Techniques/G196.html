@@ -10,7 +10,7 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li></ul><h2 id="G196-description">解説</h2><div class="textbody"><p>この達成方法の目的は、隣り合う非テキストコンテンツのグループを用いて情報又は機能を提示する際に生じる不要な重複を回避することである。</p><p>ウェブページでは、画像のグループを提示して情報を伝えることがある。一緒に提示する、又は特定の組み合わせで提示することにより、こうしたグループは様々なタイプの情報を伝えることができる。例えば、2 つの星の画像のうち 1 つを白黒、もう 1 つをカラーで表示し、利用者評価を表すために使用することができる。また、塗りつぶした 3 つの星に続いて塗りつぶしていない 2 つの星を提示すれば、利用者評価が満点の 5 つ星のうちの 3 つ星であることを示すこともできる。</p><p>この達成方法を用いるには、コンテンツ制作者が、グループ全体と等価の目的を果たすテキストによる代替をそのグループにあるどれか一つのアイテムに関連付けて提供する。そして、グループ内のその他のアイテムは、支援技術が無視できるようにする。こうすることによって、利用者は、より効率的にそのグループの目的を理解して、グループ内の各アイテムにテキストによる代替が提供した際に生じる重複又は混乱を回避することができる。</p></div><h2 class="small-head" id="G196-examples">事例</h2><h3 class="small-head" id="G196-ex1">事例 1: HTML での評価システム</h3><div class="example"><div class="textbody"><p>次の例では、塗りつぶされた星 3 つと塗りつぶされていない星 2 つで評価が示されている。テキストによる代替は、5 つの画像それぞれに提供することもできるが、このコンテンツ制作者は、1 つ目の画像に「5 つ星のうちの 3 つ星」として画像のグループが伝えている評価を提供し、他の画像には空の代替テキストを用いている。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-   &lt;p&gt;評価:
+   &lt;p&gt;評価：
    &lt;img src="star1" alt="5つ星のうちの3つ星"&gt;
    &lt;img src="star1" alt=""&gt;
    &lt;img src="star1" alt=""&gt;
@@ -18,15 +18,15 @@
    &lt;img src="star2" alt=""&gt;
   &lt;/p&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G196-1
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-1.html">アクセシビリティ・サポーテッド（AS）情報: G196-1</a>
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-1.html">アクセシビリティ・サポーテッド（AS）情報：G196-1</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h3 class="small-head" id="G196-ex2">事例 2: XHTML で画像のグループによって作成されたボタン</h3><div class="example"><div class="textbody"><p>この例では、宣言している WCAG への適合レベルを示すために、各ボタンが複数の画像一式を用いている。このアプローチによって、支援技術は「画像 A、画像 A、画像 A」などのように読み上げるのを回避できるようになる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
- &lt;p&gt;適合レベル:&lt;/p&gt;
+ &lt;p&gt;適合レベル：&lt;/p&gt;
  &lt;button name="A"&gt;&lt;img src="a.png" alt="レベル A" /&gt;&lt;/button&gt; &lt;br /&gt;
  &lt;button name="AA"&gt;&lt;img src="a.png" alt="レベル AA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt; &lt;br /&gt;
  &lt;button name="AAA"&gt;&lt;img src="a.png" alt="レベル AAA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G196-2
- に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-2.html">アクセシビリティ・サポーテッド（AS）情報: G196-2</a>
+ に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-2.html">アクセシビリティ・サポーテッド（AS）情報：G196-2</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h2 id="G196-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="G94.html">G94: 非テキストコンテンツに対して、それと同じ目的を果たし、かつ同じ情報を示す、簡潔なテキストによる代替を提供する</a></li><li><a href="H2.html">H2: 同じリソースに対して隣接する画像とテキストリンクを結合する</a></li><li><a href="H67.html">H67: 支援技術が無視すべき画像に対して、img 要素の alt テキストを空にして、title 属性を付与しない</a></li></ul></div><h2 id="G196-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G196-procedure">チェックポイント</h3><ol class="enumar"><li><p>グループ内の一つのアイテムに、そのグループ全体の目的と等価なテキストによる代替がある。</p></li><li><p>グループ内のその他のアイテムは、支援技術が無視できるようにマークされている。 </p></li><li><p>支援技術が無視できるようにマークされたアイテムが、グループ全体に対するテキストによる代替のあるアイテムと隣り合っている。</p></li></ol><h3 class="small-head" id="G196-results">判定基準</h3><ul><li><p>上記全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G195: コンテンツ制作者が提供する視認性に優れたフォーカスインジケータを使用する" href="G195.html"><strong>前: </strong>
         達成方法 G195</a></li><li><a title="G197: 同じ機能を有するコンテンツに対して、一貫したラベル、名前 (name) 及びテキストによる代替を使用する" href="G197.html"><strong>次: </strong>

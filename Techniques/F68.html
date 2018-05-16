@@ -12,10 +12,10 @@
 					</em>以下の要素については、ラベルを <code>value</code> 属性 (サブミット (送信) およびリセットボタン)、 <code>alt</code> 属性 (画像を用いたボタン)、あるいは要素の内容そのもの (<code>button</code>) でそれぞれ指定するため、<code>label</code> 要素を用いない。</p><ul><li><p>サブミット (送信) 及びリセットボタン (<code>input type="submit"</code> 又は <code>input type="reset"</code>)</p></li><li><p>画像を用いたボタン (<code>input type="image"</code>)</p></li><li><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></li><li><p>ボタン (<code>button</code> 要素又は <code>&lt;input type="button"&gt;</code>)</p></li></ul></div></div><h2 class="small-head" id="F68-examples">事例</h2><div class="failure"><h3 class="small-head" id="F68-failex1">
 					失敗例 1: </h3><div class="example"><div class="textbody"><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code> 要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント (支援技術を含む) がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p></div><div class="code"><pre><code>
  &lt;form&gt;
- 姓:
+ 姓：
  &lt;input type="text" name="lastname"&gt;
  &lt;br&gt;
- 名: 
+ 名： 
  &lt;input type="text" name="firstname"&gt;
  &lt;br /&gt;
  私は犬を飼っている &lt;input type="checkbox" name="pet" value="dog"&gt;
