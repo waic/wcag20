@@ -22,7 +22,7 @@
       <eg-group>
       <head>別バージョンへのリンクを提供する</head>
       <description><p>ウェブページに、様々なフォーマットでダウンロードできる書籍のリストがある。このウェブページの代替版では、書籍のフォーマットだけ、又は書籍名とフォーマットのタイプが、リンクテキストとして使われている。</p>
-<p>短いリンクテキストのバージョン：</p>
+<p>短いリンクテキストのバージョン:</p>
 </description>
       <code><![CDATA[
 ...
@@ -30,7 +30,7 @@
   <p><a href="books-full-links.html" >完全なリンクのバージョン</a></p>
 
   <ul>
-  <li>ウェブの歴史： 
+  <li>ウェブの歴史: 
   <a href="history.docx" class="hist">Word形式</a>, 
   <a href="history.pdf" class="hist">PDF形式</a>, 
   <a href="history.html" class="hist">HTML形式</a>
@@ -45,7 +45,7 @@
   <p><a href="books-short-links.html" >短いリンクのバージョン</a></p>
 
   <ul>
-  <li>ウェブの歴史：
+  <li>ウェブの歴史:
   <a href="history.docx" class="hist">ウェブの歴史 (Word形式)</a>, 
   <a href="history.pdf" class="hist">ウェブの歴史 (PDF形式)</a>, 
   <a href="history.html" class="hist">ウェブの歴史 (HTML形式)</a>

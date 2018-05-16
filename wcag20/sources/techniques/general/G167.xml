@@ -19,7 +19,7 @@
       <eg-group>
       <head>検索機能</head>
       <description><p>あるウェブページには、利用者が検索文字列を入力するためのテキストフィールドと、検索を実行するための「検索」とラベル付けされたボタンがある。ボタンはテキストフィールドの直後に配置されているため、このテキストフィールドが検索のための文字列を入力するためのものであることが利用者にとって明らかである。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G167/button-as-label.jpg" alt="画面イメージ：フィールドのラベルを提供するボタンが右側にあるテキストフィールド"/></description>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G167/button-as-label.jpg" alt="画面イメージ: フィールドのラベルを提供するボタンが右側にあるテキストフィールド"/></description>
     </eg-group>
     <eg-group>
       <head>フォームの選択</head>
@@ -35,7 +35,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>この達成方法を用いているテキストフィールドとボタンに対して：</p>
+      <p>この達成方法を用いているテキストフィールドとボタンに対して:</p>
       <olist>
         <item>
           <p>テキストフィールドとボタンが、プログラムで解釈可能な読み上げ順序において、互いに隣接している。</p>

@@ -41,7 +41,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページ内の各リンクに対して：</p>
+      <p>ウェブページ内の各リンクに対して:</p>
       <olist>
         <item>
           <p>そのリンクが関連する情報へのリンクである。</p>
