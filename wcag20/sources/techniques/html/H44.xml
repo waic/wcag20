@@ -15,7 +15,7 @@
    </applies-to>
    <ua-issues><!-- these ua issues also appear in H90 -->
       <ua-issue name="" version=""><p>
-	HTML及びXHTML仕様書では、暗示的なラベルと明示的なラベルの両方を認めている。しかし、支援技術の一部は、暗示的なラベル (たとえば、<code><![CDATA[<label>First name <input type="text" name="firstname"></label>]]></code>) を正確に処理できない。【訳注：なお、暗示的なラベルとは、ラベルとフォームコントロールを単に<el>label</el>要素で囲んだだけのものである。一方、明示的なラベルとは、<el>label</el>要素の<att>for</att>属性に、フォームコントロールの<att>id</att>属性値と同じ値を指定することで、両者を明確に関連付けたものである。】</p>
+	HTML及びXHTML仕様書では、暗示的なラベルと明示的なラベルの両方を認めている。しかし、支援技術の一部は、暗示的なラベル (たとえば、<code><![CDATA[<label>First name <input type="text" name="firstname"></label>]]></code>) を正確に処理できない。</p>
 
                   <ulist><item><p>JAWS 7.10の動作を、Windows XPのInternet Explorer 6.0とFirefox 1.5で検証した。テキストフィールドに付けたラベルは、明示的なラベルでも暗示的なラベルでも、バーチャルPCカーソルとフォーム読み上げモードの両方で読み上げられた。ただし、フォーム読み上げモードでは、チェックボックスとラジオボタンに付けた暗示的なラベルは読み上げられなかった。</p></item><item><p>Window-Eyes 5.5の動作を、Windows XPのInternet Explorer 6.0とFirefox 1.5で検証した。フォームフィールドの明示的なラベルは常に読み上げられたが、ブラウズONモードでは暗示的なラベルは読み上げられなかった。ただし、ブラウズOFFモードでコントロールからコントロールへと移動したときは、暗示的なラベルでも読み上げられた。</p></item></ulist></ua-issue>
     <ua-issue name="" version="">

@@ -37,7 +37,6 @@
 </table>]]></code>
       <description><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p>
 <ulist><item><p>XYZ mountaineering top! </p></item><item><p>XYZ gets you to the</p></item></ulist>
-<p>訳注：本来は「XYZ mountaineering  XYZ gets you to the top!」となるべきである</p>
 </description>
     </eg-group>
     <eg-group role="failure">

@@ -26,8 +26,6 @@
 </description>
       <code role="html401"><![CDATA[<p>The title says "<span lang="he" 
 dir="rtl"><span dir="rtl">פעילות הבינאום, W3C</span></span>" in Hebrew.</p>]]></code>
-      <description><p>【訳注：このコード例には<el>xml:lang</el>属性がありません。XHTML 1.0では、<el>lang</el>属性と<el>xml:lang</el>属性を一緒に指定するのが普通です。WCAGワーキンググループに確認中。】</p>
-</description>
     </eg-group>
    </examples>
    <resources>

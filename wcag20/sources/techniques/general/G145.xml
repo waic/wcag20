@@ -96,7 +96,7 @@
 <ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
 <ulist><item><p>L1 は前景または背景色の明るい方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2 は前景または背景色の暗い方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
         <item>
-          <p> コントラスト比が 3：1 と同じ、又はそれ以上である。【訳注：この計算式を用いているチェックツールで、コントラスト比が 3:1 以上であることを確認すればよい。】</p>
+          <p> コントラスト比が 3：1 と同じ、又はそれ以上である。</p>
         </item>
       </olist>
     </procedure>
