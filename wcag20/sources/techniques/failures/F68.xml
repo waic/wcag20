@@ -32,10 +32,10 @@
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
  <form>
- 姓：
+ 姓:
  <input type="text" name="lastname">
  <br>
- 名： 
+ 名: 
  <input type="text" name="firstname">
  <br />
  私は犬を飼っている <input type="checkbox" name="pet" value="dog">

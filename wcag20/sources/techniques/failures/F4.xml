@@ -11,7 +11,7 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="IE" version="*">
-      <p><code>text-decoration</code> プロパティの<code>blink</code> という値は、Internet Explorerによってサポートされていない。Netscape/Mozillaファミリーのブラウザではサポートされている。その他のブラウザ (例： Safari、Operaなど) では未検証である。</p>
+      <p><code>text-decoration</code> プロパティの<code>blink</code> という値は、Internet Explorerによってサポートされていない。Netscape/Mozillaファミリーのブラウザではサポートされている。その他のブラウザ (例: Safari、Operaなど) では未検証である。</p>
     </ua-issue>
    </ua-issues>
    <description>

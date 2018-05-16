@@ -17,7 +17,7 @@
       <eg-group role="failure">
       <head>お問い合わせフォーム</head>
       <description><p>お問い合わせフォームは、いくらかの前置き情報、及び利用者が名、姓、電話番号及び電子メールアドレスを入力するためのフォームコントロールがある。見出し、前置きのテキスト及びフォームコントロールのラベルは、拡張性のある方法で実装されているが、フォームのコントロール自体は拡張性のある方法では実装されていない。</p>
-<p>XHTML コンポーネント：</p>
+<p>XHTML コンポーネント:</p>
 </description>
       <code role="xhtml"><![CDATA[
 <h1>お問い合わせ</h1>
@@ -27,7 +27,7 @@
  <label for="phone">電話</label><input type="text" name="phone" id="phone" /><br />
  <label for="email">電子メール</label><input type="text" name="email" id="email" /><br />
  <input type="submit" name="Submit" value="送信" id="Submit" />]]></code>
-      <description><p>CSS：</p>
+      <description><p>CSS:</p>
 </description>
       <code role="css"><![CDATA[
 h1 { font-size: 2em; }

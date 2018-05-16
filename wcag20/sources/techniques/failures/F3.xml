@@ -38,7 +38,7 @@ p#bestinterest {
       <head/>
       <description><p>
 ある書籍販売業者は、「新刊」「限定版」「在庫あり」「在庫なし」を示すためのアイコンとして背景画像を使用している。</p>
-<p>CSS内： </p>
+<p>CSS内:</p>
 </description>
       <code><![CDATA[
 ul#booklist li {
@@ -60,7 +60,7 @@ ul#booklist li.instock {
 ul#booklist li.outstock {
   background: transparent url(outstock.png) no-repeat top left; 
 }]]></code>
-      <description><p>上記コードの適用先：</p>
+      <description><p>上記コードの適用先:</p>
 </description>
       <code><![CDATA[
 <ul id="booklist">
