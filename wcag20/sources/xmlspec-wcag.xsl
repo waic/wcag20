@@ -314,7 +314,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:text>訳注 </xsl:text>
-              <xsl:number count="p" format="1"/>：
+              <xsl:number count="p" format="1"/>:
 					</xsl:otherwise>
           </xsl:choose></em>
         </xsl:otherwise>
