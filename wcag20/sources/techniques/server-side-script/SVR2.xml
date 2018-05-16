@@ -34,7 +34,7 @@ SetEnvIf Referer .*(accessible.html)$ let_me_in
 ErrorDocument 403 /example_directory/accessible.html]]></code>
     </eg-group>
     <eg-group>
-      <description><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつは WCAG に宣言しているレベルで適合しておらず、「jna (全くアクセシブルではない：Just Not Accessible)」というファイル拡張子を使用している。これらのファイルは、.htaccess ファイルとともに全て「jna」というフォルダに保存されている。この .htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jna の拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。</p>
+      <description><p>この例では、ドキュメントが複数のフォーマットで利用可能なディレクトリ構造を前提とする。そのフォーマットのうちのひとつは WCAG に宣言しているレベルで適合しておらず、「jna (全くアクセシブルではない: Just Not Accessible)」というファイル拡張子を使用している。これらのファイルは、.htaccess ファイルとともに全て「jna」というフォルダに保存されている。この .htaccess ファイルは、アクセシブルではないバージョンが存在しないページから、.jna の拡張子を持つファイルへの直接リクエストを、全ての利用可能なフォーマットが記載されているインデックスページへとリダイレクトするのを保証している。</p>
 </description>
       <code role="htaccess"><![CDATA[
 # アクセシブルではないコンテンツへのリクエストが
@@ -93,7 +93,7 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
         <item>
           <p>不適合のコンテンツの URI を開く。</p>
         </item>
-        <item><p>結果となるページが次のうちのひとつである：</p>
+        <item><p>結果となるページが次のうちのひとつである:</p>
 						<olist>
 						<item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc></p></item>
 						<item><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
