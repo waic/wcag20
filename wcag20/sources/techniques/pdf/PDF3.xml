@@ -108,7 +108,7 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>事例 5 の読み上げ順序を修正するには、［タグ］パネルで次のいずれかの操作を行う。</p>
 <ulist><item><p><el>H1</el> タグを必須フィールドのテキスト (<el>H2</el> タグ) の前にドラッグ＆ドロップ</p></item><item><p><code>H2</code> タグを切り取り、<code>H1</code> タグの後に貼り付け</p></item></ulist>
-<p>次の画像では、テキストとヘッダの読み上げ順序が正しくなっている。つまり、コンテンツのエレメント <code>H1</code> と <code>H2</code> が、正しい読み上げ順序に従って入れ替えられたことになる。</p>
+<p>次の画像では、テキストとヘッダーの読み上げ順序が正しくなっている。つまり、コンテンツのエレメント <code>H1</code> と <code>H2</code> が、正しい読み上げ順序に従って入れ替えられたことになる。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF3/tab-order.jpg"/><alt>スクリーンショット：Adobe Acrobat Proで修正された読み上げ順序。H1タグとH2タグが入れ替えられて、正しい順序になっている。</alt></image></p></description>
     </eg-group>
    </examples>
