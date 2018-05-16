@@ -19,7 +19,7 @@
    </ua-issues>
    <description>
     <p>この達成方法の目的は、文字サイズが縮小拡大されるのに従って、適切に拡大縮小するように要素のサイズ及びポジションを定めることである。</p>
-    <p>ここに要素のサイズとポジションを決める JavaScript の 4 つプロパティがある：</p>
+    <p>ここに要素のサイズとポジションを決める JavaScript の 4 つプロパティがある:</p>
     <ulist>
       <item>
         <p>
@@ -42,7 +42,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>Javascript の関数：</p>
+      <description><p>Javascript の関数:</p>
 </description>
       <code><![CDATA[
 function calculatePosition(objElement, strOffset)
@@ -60,7 +60,7 @@ function calculatePosition(objElement, strOffset)
 
     return iOffset;
 }]]></code>
-      <description><p>次の事例は、上の関数がオブジェクトを、参照オブジェクトの下、かつ、左から同じ距離に配置するために用いられていることを示している：</p>
+      <description><p>次の事例は、上の関数がオブジェクトを、参照オブジェクトの下、かつ、左から同じ距離に配置するために用いられていることを示している:</p>
 </description>
       <code><![CDATA[
 // Get a reference object

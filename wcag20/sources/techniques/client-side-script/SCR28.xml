@@ -40,7 +40,7 @@
   </ul>
 
 ... ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-navbar.html"><!-- linktype="examples"-->ナビゲーションバーをリンクで切り替える</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-navbar.html"><!-- linktype="examples"-->ナビゲーションバーをリンクで切り替える</loc></p>
 </description>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
@@ -65,7 +65,7 @@
   </div>
 
 ...]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-toc.html"><!-- linktype="examples"-->目次をボタンで切り替える</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-toc.html"><!-- linktype="examples"-->目次をボタンで切り替える</loc></p>
 </description>
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>

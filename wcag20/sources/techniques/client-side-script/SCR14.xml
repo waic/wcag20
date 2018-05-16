@@ -47,7 +47,7 @@ function showQuotes() {
 }
 showQuotes();
 </script>]]></code>
-      <description><p>ページの本文内には、アラートを有効にしたり無効する方法を含める。以下はひとつの例である：</p>
+      <description><p>ページの本文内には、アラートを有効にしたり無効する方法を含める。以下はひとつの例である:</p>
 </description>
       <code><![CDATA[
 <body>
@@ -56,13 +56,13 @@ showQuotes();
 アラートを利用する</button><br />
 <button id="disableBtn" type="button" onclick="modifyAlerts(false);">
 アラートを利用しない</button></p>]]></code>
-      <description><p>このコードを実装したサンプル： <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR14/enablealerts.html"><!-- linktype="examples"-->アラートの実装例</loc></p>
+      <description><p>このコードを実装したサンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR14/enablealerts.html"><!-- linktype="examples"-->アラートの実装例</loc></p>
 </description>
     </eg-group>
    </examples>
    <tests>
       <procedure>
-      <p>JavaScript を使用した緊急ではないアラートをサポートするウェブページにおいて：</p>
+      <p>JavaScript を使用した緊急ではないアラートをサポートするウェブページにおいて:</p>
       <olist>
         <item>
           <p>ウェブページを読み込んだ際、緊急ではないアラートが表示されない。</p>

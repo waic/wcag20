@@ -42,7 +42,7 @@ function doStuff()
  }
 </script>
 <a href="dostuff.htm" onclick="return doStuff();">do stuff</a> ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jslink.html"><!-- linktype="examples"-->JavaScriptを用いてアクションリンクを作成</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jslink.html"><!-- linktype="examples"-->JavaScriptを用いてアクションリンクを作成</loc></p>
 </description>
     </eg-group>
     <eg-group>
@@ -58,7 +58,7 @@ function doStuff()
 <form action="doStuff.aspx" onsubmit="return false;">
  <input type="submit" value="Do Stuff" onclick="doStuff();" />
 </form> ]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jsbutton.html"><!-- linktype="examples"-->JavaScript を用いてアクションボタンを作成</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR35/jsbutton.html"><!-- linktype="examples"-->JavaScript を用いてアクションボタンを作成</loc></p>
 </description>
     </eg-group>
     <eg-group>
@@ -131,9 +131,9 @@ function doStuff()
    </related-techniques>
    <tests>
       <procedure>
-      <p><el>a</el>、<el>button</el>、又は <el>input</el> 要素と関連付けられたすべてのスクリプトのアクション：</p>
+      <p><el>a</el>、<el>button</el>、又は <el>input</el> 要素と関連付けられたすべてのスクリプトのアクション:</p>
       <olist>
-        <item><p>スクリプトをサポートするユーザエージェントで：</p>
+        <item><p>スクリプトをサポートするユーザエージェントで:</p>
 						<ulist><item><p>マウスを用い、コントロールをクリックする。</p></item>
 <item><p>スクリプトのアクションが正しく実行される。</p></item>
 <item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出されない。</p></item>
@@ -141,7 +141,7 @@ function doStuff()
 <item><p>キーボードのフォーカスをコントロールにセットする。</p></item>
 <item><p>Enter キーを押すことで、スクリプトのアクションを呼び出すことができる。</p></item>
 <item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出されない。</p></item></ulist></item>
-        <item><p>スクリプトをサポートしていないユーザエージェントで：</p>
+        <item><p>スクリプトをサポートしていないユーザエージェントで:</p>
 						<ulist><item><p>マウスでコントロールをクリックする。</p></item>
 <item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出される。</p></item>
 <item><p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p></item>
