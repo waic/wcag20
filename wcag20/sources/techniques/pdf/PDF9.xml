@@ -53,7 +53,7 @@
 <p>スタイルを使用して、見出しの書式 (見出し 1、見出し 2、見出し 3 など) を作成する。スタイルが論理的な構成になるようにする (見出し 2 が見出し 1 より後に来るようにするなど)。</p>
 <p>次の手順に従い、PDF としてエクスポートする。</p>
 <olist><item><p>ファイルメニューの「PDF としてエクスポート」を選択する</p></item><item><p>初めて PDF としてエクスポートする場合には、オプションダイアログボックスが表示される</p></item><item><p>「タグ付き PDF」を選択して、［エクスポート］を押下する</p></item></olist>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/openofficecooking.jpg" height="380" width="628"/><alt>スクリーンショット：OpenOffice.org Writer で見出しスタイルを選択し、PDF にエクスポートする。</alt></image></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/openofficecooking.jpg" height="380" width="628"/><alt>スクリーンショット: OpenOffice.org Writer で見出しスタイルを選択し、PDF にエクスポートする。</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>/H<emph>n</emph> エレメントを使用して見出しをマークアップする</head>
@@ -70,7 +70,7 @@ endobj
  ...
 300 0 obj% Structure tree root
   << /Type /StructTreeRoot
-     /K [ 301 0 R                    % 2つの子： 章と
+     /K [ 301 0 R                    % 2つの子: 章と
         304 0 R                      % 段落
         ]
      /RoleMap << /Chap /Sect         % 構造ツリーへのマッピング
@@ -89,7 +89,7 @@ endobj
      /ID (Chap1)                     % エレメント識別子
      /T (Chapter 1)                  % 人間が読み取ることができるタイトル
      /P 300 0 R                      % 親が構造ツリーのルート
-     /K [ 302 0 R                    % 2つの子：セクションヘッダと
+     /K [ 302 0 R                    % 2つの子: セクションヘッダと
           303 0 R                    % 段落
         ]
   >>

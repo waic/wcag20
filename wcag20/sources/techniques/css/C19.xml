@@ -16,7 +16,7 @@
    <examples>
       <eg-group>
       <description><p>
-以下の例では、テキストは左揃えになっている。スタイルシートでクラスを定義する：</p>
+以下の例では、テキストは左揃えになっている。スタイルシートでクラスを定義する:</p>
 </description>
       <code><![CDATA[p.left {text-align: left}]]></code>
       <description><p>

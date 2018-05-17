@@ -10,14 +10,14 @@
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p><el>img</el> 要素を使用するときは、簡潔なテキストによる代替を <att>alt</att> 属性に指定する。注記：この属性の値は「ALT テキスト」ともいう。</p>
+    <p><el>img</el> 要素を使用するときは、簡潔なテキストによる代替を <att>alt</att> 属性に指定する。注記: この属性の値は「ALT テキスト」ともいう。</p>
     <p>画像がコンテンツを理解するために重要な文字を含むとき、代替テキストにはそれらの文字を含めなくてはならない。これにより、代替テキストはページ上で画像と同じ役割を果たすことができる。 代替テキストは、画像自体の視覚的な特徴を説明する必要はないが、画像と同じ意味を伝えなければらないことに注意する。</p>
   </description>
    <examples>
       <eg-group id="img-alt_example">
-      <description><p>ウェブサイト上にある画像は、無料のニュースレターへのリンクである。画像は次のような文字を含んでいる：「無料のニュースレター：無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら」　画像の代替テキストは、画像にある文字と一致している。</p>
+      <description><p>ウェブサイト上にある画像は、無料のニュースレターへのリンクである。画像は次のような文字を含んでいる:「無料のニュースレター: 無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら」　画像の代替テキストは、画像にある文字と一致している。</p>
 </description>
-      <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="無料のニュースレター：
+      <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="無料のニュースレター:
 無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら" />]]></code>
       <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>

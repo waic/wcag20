@@ -42,13 +42,13 @@ for(var i=900; i < 4500; i=i+900)
 -->
 </script>
 ...]]></code>
-      <description><p>このコードの実装サンプル：<loc  xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR22/ex1.html"><!-- linktype="examples"-->点滅をコントロールするために、スクリプトを使用する</loc></p>
+      <description><p>このコードの実装サンプル: <loc  xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR22/ex1.html"><!-- linktype="examples"-->点滅をコントロールするために、スクリプトを使用する</loc></p>
 </description>
     </eg-group>
    </examples>
    <tests>
       <procedure>
-      <p>点滅しているコンテンツのそれぞれのインスタンスに対して：</p>
+      <p>点滅しているコンテンツのそれぞれのインスタンスに対して:</p>
       <olist>
         <item>
           <p>点滅効果が開始される時、5 秒間のタイマーを開始させる。</p>

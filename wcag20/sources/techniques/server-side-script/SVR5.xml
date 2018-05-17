@@ -18,7 +18,7 @@
    <examples>
       <eg-group>
       <head>Java サーブレット及び JSP によるコンテンツの自然言語設定</head>
-      <description><p>Java サーブレット又は JavaServer Pages (JSP) では、開発者は response.setHeader("Content-Language", lang)を用いることが可能で、"lang" は言語タグを表す (例えば、英語なら "en")：</p>
+      <description><p>Java サーブレット又は JavaServer Pages (JSP) では、開発者は response.setHeader("Content-Language", lang)を用いることが可能で、"lang" は言語タグを表す (例えば、英語なら "en"):</p>
 </description>
       <code><![CDATA[…
 public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -32,7 +32,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
     </eg-group>
     <eg-group>
       <head>PHP によるコンテンツの自然言語設定</head>
-      <description><p>PHP では、開発者は header メソッドで生の HTTP ヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している：</p>
+      <description><p>PHP では、開発者は header メソッドで生の HTTP ヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している:</p>
 </description>
       <code><![CDATA[
 &lt;?php  header('Content-language: fr');  …  ?&gt;]]></code>

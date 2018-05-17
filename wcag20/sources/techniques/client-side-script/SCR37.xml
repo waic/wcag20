@@ -119,7 +119,7 @@ function ResetForm(elem)
 	return false;
 }
 ...]]></code>
-  <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR37/default.htm"><!-- linktype="examples"-->ダイアログを開くオプションボタン</loc></p>
+  <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR37/default.htm"><!-- linktype="examples"-->ダイアログを開くオプションボタン</loc></p>
 </description>
     </eg-group>
    </examples>

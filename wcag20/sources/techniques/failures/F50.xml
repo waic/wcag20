@@ -47,7 +47,7 @@ show();
    </related-techniques>
    <tests>
       <procedure>
-      <p>点滅しているそれぞれのインスタンスに対して：</p>
+      <p>点滅しているそれぞれのインスタンスに対して:</p>
       <olist>
         <item>
           <p>点滅が 5 秒以内で止まる。</p>

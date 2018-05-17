@@ -39,7 +39,7 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
       <description><p>
 この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSS が使用されている。</p>
 <p>
-表示されるコンテンツは次の通り：</p>
+表示されるコンテンツは次の通り:</p>
 </description>
       <code role="xhtml"><![CDATA[<ul id="mainnav">
   <li class="page_item">Home</li>
@@ -51,7 +51,7 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
   <li class="page_item"><a href="/links">関連リンク</a></li>
 </ul>]]></code>
       <description><p>
-マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り：</p>
+マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り:</p>
 </description>
       <code role="css"><![CDATA[
 #mainnav a:hover, #mainnav a:active, #mainnav a:focus {
@@ -116,7 +116,7 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
    </resources>
    <tests>
       <procedure>
-      <p>フォーカスを得られる各要素に対して：</p>
+      <p>フォーカスを得られる各要素に対して:</p>
       <olist>
         <item>
           <p>マウスを使って要素の上にカーソルをのせる。</p>

@@ -48,7 +48,7 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH8/groupname.png"
                        height="236"
                        width="584"/>
-                  <alt>画面スクリーンショット：アクセシビリティパネルを用いて、フォームコントロールにグループ名を追加</alt>
+                  <alt>画面スクリーンショット: アクセシビリティパネルを用いて、フォームコントロールにグループ名を追加</alt>
                </image>
 							     </p>
             <note>
@@ -83,7 +83,7 @@ package wcagSamples {
   *  その先頭にグループ名となるテキストを置く。各フォームコントロールに対して、
   *  グループ名のテキストはコントロールのアクセシブルな名前の前に追加される。
   *
-  *  注記：これは概念の実証を目的にしたものであり、完全に機能するクラスではない。
+  *  注記: これは概念の実証を目的にしたものであり、完全に機能するクラスではない。
   *
   *  @langversion 3.0
   *  @playerversion Flash 10
@@ -137,12 +137,12 @@ package wcagSamples {
     * コントロールをFieldsetに追加し、アクセシブルな名前を設定する。 
     * コントロールは配列で表されており、次の値を含んでいる。
     * [0] : コンポーネントのタイプを表す文字列 
-    *   (例： "TextInput", TextArea", Checkbox" または "RadioGroup")
+    *   (例: "TextInput", TextArea", Checkbox" または "RadioGroup")
     * [1] : コントロールを特定するために用いられるラベル
     * [2] : もし [0] が "RadioGroup" だった場合、[2] は個々のラジオボタンに対する 
     *    ラベルの配列を含んでいる必要がある。もし [0] が "CheckBox" だった場合、 
-    *    [1] は空または質問 (例：「喫煙しますか？」) のどちらかで、
-    *    [2] は CheckBox のラベル (例：「はい」) となる。
+    *    [1] は空または質問 (例:「喫煙しますか？」) のどちらかで、
+    *    [2] は CheckBox のラベル (例:「はい」) となる。
     *
     */
     function processItem(item: Array) {

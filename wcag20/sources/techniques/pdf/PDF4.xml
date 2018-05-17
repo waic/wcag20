@@ -25,7 +25,7 @@
 <p>TouchUp 読み上げ順序ツールを使用して、画像を「背景」としてマークすることができる。これにより画像は文書のタグ構造から削除される。</p>
 <olist><item><p>Acrobat Pro でアドバンスト > アクセシビリティ > TouchUp 読み上げ順序を選択し、TouchUp 読み上げ順序ツールを開く。</p></item><item><p>文書内の装飾的な画像を選択する。</p></item><item><p>TouchUp 読み上げ順序ツールで、［背景］ボタンをクリックし、選択した画像をタグ構造から削除する。</p></item></olist>
 <p>下のスクリーンショットはこの事例を示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF4/turo_background.gif" height="501" width="267"/><alt>スクリーンショット：TouchUp 読み上げ順序ツールを使用して、タグツリーから画像を削除</alt></image></p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF4/turo_background.gif" height="501" width="267"/><alt>スクリーンショット: TouchUp 読み上げ順序ツールを使用して、タグツリーから画像を削除</alt></image></p>
 <p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF4/decorative-image.docx"><!-- linktype="examples"-->装飾的な画像作成のサンプル (Word ファイル)</loc> と <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF4/decorative-image.pdf"><!-- linktype="examples"-->装飾的な画像作成のサンプル (PDF ファイル)</loc>がある。</p>
 </description>
     </eg-group>

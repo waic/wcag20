@@ -35,7 +35,7 @@
   <td>XYZ gets you to the</td>
 </tr>
 </table>]]></code>
-      <description><p>このテーブルの読み上げ順序は次のようになってしまうだろう：</p>
+      <description><p>このテーブルの読み上げ順序は次のようになってしまうだろう:</p>
 <ulist><item><p>XYZ mountaineering top! </p></item><item><p>XYZ gets you to the</p></item></ulist>
 </description>
     </eg-group>
@@ -85,7 +85,7 @@
 	<td><a href="#">リンク 20</a></td>
 </tr>
 </table>]]></code>
-      <description><p>この例の読み順は次のようになってしまうだろう：</p>
+      <description><p>この例の読み順は次のようになってしまうだろう:</p>
 <ulist><item><p>リンク 1</p></item><item><p>美術館の絵</p></item><item><p>プラカードのテキスト</p></item><item><p>リンク 2</p></item><item><p>リンク 3</p></item><item><p>リンク 4</p></item><item><p>リンク 5</p></item><item><p>リンク 6</p></item><item><p>リンク 7</p></item><item><p>説明の見出し</p></item><item><p>リンク 8</p></item><item><p>リンク 9</p></item><item><p>リンク 10</p></item><item><p>...</p></item><item><p>リンク 20</p></item></ulist>
 <p>ナビゲーションバーの一連のリンクに絵を説明するコンテンツが割り込んでいるため、スクリーンリーダーは視覚的な順序に対応した意味のある順序でコンテンツを提示することができない。</p>
 </description>

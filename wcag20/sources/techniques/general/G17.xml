@@ -22,7 +22,7 @@
             <p>企業ロゴに合った明るい色の文字を使うことができるように、背景には黒が使用されている。</p>
          </item>
          <item>
-            <p>テキストが大学のキャンパスの写真の上に書かれている。写真には、さまざまな色や明暗があるので、テキストの下のエリアを白っぽくぼやけさせることで、淡い色調になり一番暗い所でも写真の上に書かれている黒いテキストとの 7：1 のコントラスト比を維持するのに十分に明るくなっている。</p>
+            <p>テキストが大学のキャンパスの写真の上に書かれている。写真には、さまざまな色や明暗があるので、テキストの下のエリアを白っぽくぼやけさせることで、淡い色調になり一番暗い所でも写真の上に書かれている黒いテキストとの 7:1 のコントラスト比を維持するのに十分に明るくなっている。</p>
          </item>
       </ulist>
    </examples>
@@ -79,11 +79,11 @@
    <tests>
       <procedure>
       <olist>
-        <item><p> 以下の公式を用いて、各文字 (すべて同一ではない限り) の相対輝度を測る： </p>
+        <item><p>以下の公式を用いて、各文字 (すべて同一ではない限り) の相対輝度を測る:</p>
 
-<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は：</p>
+<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は:</p>
 
-<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合： <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される：</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
+<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される:</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
 
 </note></item>
         <item>
@@ -93,7 +93,7 @@
 <ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
 <ulist><item><p>L1 は前景または背景色の明るい方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2 は前景または背景色の暗い方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
         <item>
-          <p> コントラスト比が 7：1 と同じ、又はそれ以上である。</p>
+          <p> コントラスト比が 7:1 と同じ、又はそれ以上である。</p>
         </item>
       </olist>
     </procedure>

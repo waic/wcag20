@@ -29,7 +29,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>段落の後に 2 行の空白行があり、それに続いて、見出し、1 行の空白行、そして次の段落がある：</p>
+      <description><p>段落の後に 2 行の空白行があり、それに続いて、見出し、1 行の空白行、そして次の段落がある:</p>
 </description>
       <code><![CDATA[
 ...これは第1段落の終わりである。
@@ -44,7 +44,7 @@
    <related-techniques/>
    <tests>
       <procedure>
-      <p>コンテンツにあるそれぞれの見出しに対して：</p>
+      <p>コンテンツにあるそれぞれの見出しに対して:</p>
       <olist>
         <item>
           <p>見出しの前に、2 行の空白行がある。</p>

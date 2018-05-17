@@ -55,7 +55,7 @@ function doKeyPress(url)
       doNav(url);
    }
 }]]></code>
-      <description><p>画像のためのマークアップ：</p>
+      <description><p>画像のためのマークアップ:</p>
 </description>
       <code role="html401"><![CDATA[
 <p>
@@ -101,7 +101,7 @@ function changeLocation(objEvent, strLocation)
 
 	window.location.href = strLocation;
 }]]></code>
-      <description><p><el>div</el> 要素のためのマークアップ：</p>
+      <description><p><el>div</el> 要素のためのマークアップ:</p>
 </description>
       <code role="html401"><![CDATA[
 <div id="linklike">

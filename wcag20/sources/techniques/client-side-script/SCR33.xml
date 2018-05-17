@@ -18,7 +18,7 @@
       <description><p>この例では、CSS 及び JavaScript を用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p>
 <p>この方法では、JavaScript 又は CSS がサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p>
 <p>下のコードは、webSemantic によるアクセシブルなスクローラー (2008 年 7 月) の修正版である。</p>
-<p>XHTML 部分：</p>
+<p>XHTML 部分:</p>
 </description>
       <code><![CDATA[...
 <div id="scroller">
@@ -26,7 +26,7 @@
 サポートされていて有効なときは、停止/スクロールのリンクが提供される。</p>
 </div>
 ...]]></code>
-      <description><p>CSS部分：</p>
+      <description><p>CSS部分:</p>
 </description>
       <code><![CDATA[...
 body {font:1em verdana,sans-serif; color:#000; margin:0}
@@ -43,7 +43,7 @@ body {font:1em verdana,sans-serif; color:#000; margin:0}
 /* ページ先頭の目印として利用され、かつ幅を制限する */
 #top { width:350px; margin:auto; }
 ...]]></code>
-      <description><p>JavaScript 部分：</p>
+      <description><p>JavaScript 部分:</p>
 </description>
       <code><![CDATA[
 var speed=50        // スクロール速度
@@ -157,7 +157,7 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(initScroller)]]></code>
-      <description><p>このコードの実装サンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR33/Overview.html"><!-- linktype="examples"-->コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR33/Overview.html"><!-- linktype="examples"-->コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</loc></p>
 </description>
     </eg-group>
    </examples>

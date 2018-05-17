@@ -63,7 +63,7 @@
                  source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/ac_show_tab_order_view.png"
                  height="232"
                  width="214"/>
-            <alt>画面スクリーンショット：タブ順序を視覚化</alt>
+            <alt>画面スクリーンショット: タブ順序を視覚化</alt>
          </image>
 					</p>
       <p>
@@ -72,7 +72,7 @@
                  source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH15/setting_tabindex_in_accessibility_panel.png"
                  height="319"
                  width="281"/>
-            <alt>画面スクリーンショット：アクセシビリティパネルでタブインデックス値を設定</alt>
+            <alt>画面スクリーンショット: アクセシビリティパネルでタブインデックス値を設定</alt>
          </image>
 					</p>
       <note>

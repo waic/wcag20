@@ -31,7 +31,7 @@
     <p>ラベルまたはコントロールをクリックするとコントロールがアクティブなるため、コントロールのクリック可能な領域を大きくすることは、この達成方法の更なるメリットである。これは運動制御が不十分な利用者に役立つ。</p>
     <p><el>input</el> 要素の <att>type="checkbox"</att> と <att>type="radio"</att> では、<el>label</el> 要素をその後に配置することに注意する。</p>
     <note><p>
-	明示的なラベルを利用する要素は次の通りである：</p>
+	明示的なラベルを利用する要素は次の通りである:</p>
      <ulist>
         <item><p><code>input type="text"</code></p></item>
         <item><p><code>input type="checkbox"</code></p></item>
@@ -108,7 +108,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページ内の <att>type="text"</att>、<att>type="file"</att>、<att>type="password"</att> を指定した <el>input</el> 要素、<el>textarea</el> 要素、<el>select</el> 要素全てについて：</p>
+      <p>ウェブページ内の <att>type="text"</att>、<att>type="file"</att>、<att>type="password"</att> を指定した <el>input</el> 要素、<el>textarea</el> 要素、<el>select</el> 要素全てについて:</p>
       <olist>
         <item>
           <p><el>input</el> 要素、<el>textarea</el> 要素及び <el>select</el> 要素の前に、そのコントロールの目的が特定できる <el>label</el> 要素がある。</p>
@@ -120,7 +120,7 @@
           <p><el>label</el> 要素のラベルが視覚的に認識できる状態である。</p>
         </item>
       </olist>
-      <p>ウェブページ内の <att>type="checkbox"</att> 及び <att>type="radio"</att> を指定した <el>input</el> 要素全てについて：</p>
+      <p>ウェブページ内の <att>type="checkbox"</att> 及び <att>type="radio"</att> を指定した <el>input</el> 要素全てについて:</p>
       <olist>
         <item>
           <p><el>input</el> 要素の後に、そのコントロールの目的が特定できる <el>label</el> 要素があるか確認する。</p>

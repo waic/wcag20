@@ -28,12 +28,12 @@
       <eg-group>
       <description><p>この事例では、英語の文章の間にあるアラビア語のフレーズを示している。感嘆符はアラビア語のフレーズの一部であり、その左側にあるべきである。それはアラビア文字とラテン文字の間であり、段落全体の方向が <abbr expansion="left-to-right">LTR</abbr> (左から右) であるため、双方向性のアルゴリズムはアラビア語のフレーズの右側に感嘆符を置いている。</p>
 <p>The title is "<phrase xml:lang="ar">مفتاح معايير الويب!</phrase>" in Arabic.</p>
-<p>視覚的に並び替えられた ASCII バージョン (右から左へのテキストは大文字、左から右は小文字)：</p>
+<p>視覚的に並び替えられた ASCII バージョン (右から左へのテキストは大文字、左から右は小文字):</p>
 <p>the title is "HCTIWS SDRADNATS BEW!" in arabic.</p>
 <p>表示されたテキスト (以下を参照) を見るとき、感嘆符の直後に Unicode の right-to-left mark を
 挿入することによって、感嘆符を正しい位置に置くことになる。right-to-left mark を挿入するために、エスケープ文字又は (不可視の) 制御文字を使用することができる。</p>
 <p>The title is "<phrase xml:lang="ar">مفتاح معايير الويب!‏</phrase>" in Arabic.</p>
-<p>視覚的に並び替えられた ASCII バージョン：</p>
+<p>視覚的に並び替えられた ASCII バージョン:</p>
 <p>the title is "!HCTIWS SDRADNATS BEW" in arabic.</p>
 </description>
     </eg-group>

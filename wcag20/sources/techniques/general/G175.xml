@@ -18,8 +18,8 @@
    <examples>
       <eg-group>
       <description><p>利用者がテキストフィールドに 16 進数の値を入力できる。又は、"Pick" (選択) のリンクで隣接したフィールドに対する色選択ツールを開く。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/colorpicker.jpg" alt="スクリーンショット：16 進数の値が入力された複数のテキストフィールドで前景色と背景色を設定するカラーコントロールを表示している。それぞれのフィールドにはラベルとテキストフィールドの中間に配置されたカラーピッカーを開くリンクがある。"/><p>色を選択するために色選択ツールを開く。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/opencolorpicker.jpg" alt="スクリーンショット：カラーピッカーのある色選択ツールが前景色を選択するために開いており、利用者は 216 色の中から選べるようになっている。"/><p>PHP、Javascript、CSS 及び XHTML を使って実装した、この達成方法の実装例がある：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/index.php"><!-- linktype="examples"-->カラーピッカーの例</loc></p>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/colorpicker.jpg" alt="スクリーンショット: 16 進数の値が入力された複数のテキストフィールドで前景色と背景色を設定するカラーコントロールを表示している。それぞれのフィールドにはラベルとテキストフィールドの中間に配置されたカラーピッカーを開くリンクがある。"/><p>色を選択するために色選択ツールを開く。</p>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/opencolorpicker.jpg" alt="スクリーンショット: カラーピッカーのある色選択ツールが前景色を選択するために開いており、利用者は 216 色の中から選べるようになっている。"/><p>PHP、Javascript、CSS 及び XHTML を使って実装した、この達成方法の実装例がある: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G175/index.php"><!-- linktype="examples"-->カラーピッカーの例</loc></p>
 </description>
     </eg-group>
    </examples>

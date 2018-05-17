@@ -27,7 +27,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページにある CAPTCHA に対して：</p>
+      <p>ウェブページにある CAPTCHA に対して:</p>
       <olist>
         <item>
           <p>ウェブページに、同じ目的を果たす、異なるモダリティを用いた CAPTCHA がもう一つ提供されている。</p>

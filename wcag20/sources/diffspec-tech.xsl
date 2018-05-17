@@ -395,10 +395,10 @@ BBC: This is all called in a previous XSLT, so commented out here. -->
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p>
 <p>2014 年 6 月版の<xsl:choose>
   <xsl:when test="$subid != 0">
-    <a href="https://waic.jp/docs/as/info/201406/{$id}-{$subid}.html">アクセシビリティ・サポーテッド（AS）情報：<xsl:value-of select="$id"/>-<xsl:value-of select="$subid"/></a>
+    <a href="https://waic.jp/docs/as/info/201406/{$id}-{$subid}.html">アクセシビリティ・サポーテッド（AS）情報: <xsl:value-of select="$id"/>-<xsl:value-of select="$subid"/></a>
   </xsl:when>
   <xsl:otherwise>
-    <a href="https://waic.jp/docs/as/info/201406/{$id}.html">アクセシビリティ・サポーテッド（AS）情報：<xsl:value-of select="$id"/></a> 
+    <a href="https://waic.jp/docs/as/info/201406/{$id}.html">アクセシビリティ・サポーテッド（AS）情報: <xsl:value-of select="$id"/></a> 
   </xsl:otherwise>
 </xsl:choose>
 

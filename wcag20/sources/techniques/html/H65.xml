@@ -33,7 +33,7 @@
       <head>検索対象を絞り込むプルダウンメニュー</head>
       <description><p>検索フォームで検索対象を絞り込むプルダウンメニューを用いている。そのプルダウンメニューは、検索語を入力するテキストフィールドのすぐそばにある。テキストフィールドとプルダウンメニューの関係は、見た目のデザインを目で見ることができる利用者には明白であり、ラベルを置くスペースはない。そこで、<el>select</el> 要素を特定するのに <att>title</att> 属性を利用している。<att>title</att> 属性はスクリーンリーダーによって読み上げられたり、画面拡大ソフトを使っている利用者にはツールチップとして表示されたりする。</p>
 </description>
-      <code role="html401"><![CDATA[<label for="searchTerm">検索語：</label>
+      <code role="html401"><![CDATA[<label for="searchTerm">検索語:</label>
 <input id="searchTerm" type="text" size="30" value="" name="searchTerm">
 <select title="検索対象" id="scope">
 …

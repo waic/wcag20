@@ -55,7 +55,7 @@
     <eg-group>
       <description><p>この事例では、ASCII アートの前にその絵の説明を付け、ASCII アートをスキップするリンクがある。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#H86-ex3">ASCII アートの事例をスキップして事例 3 へ</loc></p>
 </description>
-      <code><![CDATA[さし絵：蝶のASCIIアート
+      <code><![CDATA[さし絵: 蝶のASCIIアート
  <a href="#skipbutterfly">ASCIIアートをスキップ</a>
                                  
                                                                 LLLLLLLLLLL

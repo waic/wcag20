@@ -99,8 +99,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>コンテンツの略語それぞれについて：
-							</p>
+      <p>コンテンツの略語それぞれについて:</p>
       <olist>
         <item>
           <p>略語に元の語が無い場合は、説明を提供されている。</p>

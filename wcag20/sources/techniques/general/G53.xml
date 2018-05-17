@@ -12,14 +12,14 @@
    <ua-issues>
       <ua-issue name="JAWS" version="5.0+"><p>JAWS 5.0及び以降のバージョンには、次のキーストロークがある。</p>
             
-                  <ulist><item><p>alt + 左矢印キー：前の文を読む</p></item><item><p>alt + 右矢印キー：次の文を読む</p></item><item><p>alt + 数字キー 5：現在の文を読む</p></item><item><p>Ctrl + 数字キー 5：現在のパラグラフを読む</p></item></ulist></ua-issue>
+                  <ulist><item><p>alt + 左矢印キー: 前の文を読む</p></item><item><p>alt + 右矢印キー: 次の文を読む</p></item><item><p>alt + 数字キー 5: 現在の文を読む</p></item><item><p>Ctrl + 数字キー 5: 現在のパラグラフを読む</p></item></ulist></ua-issue>
     <ua-issue name="WinEyes" version="5.5"><p>Window-Eyes 5.5には、現在の文及びパラグラフを読むためのホットキーがある。</p>
             
                   <p>Window-Eyesでインターネットを見るには、ブラウズモードにしなければならない。現在の文及びパラグラフのホットキーはバージョン6.1のブラウズモードでは動作しない。</p>
             
                   <p>周囲にあるリンクの文脈の読み上げに関する工場出荷時の初期設定は、次の通りである。</p>
             
-                  <p>デスクトップマシンの設定：</p>
+                  <p>デスクトップマシンの設定:</p>
             
                   <ulist><item><p>文字 = CTRL - 数字キー - 左矢印キー</p></item><item><p>単語 = CTRL - 数字キー - 右矢印キー</p></item><item><p>ライン = CTRL - 数字キー - CENTER</p></item><item><p>文 = ブラウズモードでは使用不可</p></item><item><p>(次の文への移動コマンドはデスクトップモードのデフォルトで定義されていないが、次の行への移動は下矢印キーである。)</p></item><item><p>次のパラグラフ = P</p></item><item><p>前のパラグラフ = Shift P</p></item><item><p>現在のパラグラフ = ブラウズモードでは使用不可</p></item></ulist><p>ラップトップ</p>
             
@@ -65,7 +65,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して：</p>
+      <p>コンテンツの中で、この達成方法を用いているリンクそれぞれに対して:</p>
       <olist>
         <item>
           <p>そのリンクが文の一部である。</p>

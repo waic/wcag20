@@ -12,7 +12,7 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
-      <p>ユーザエージェントの一部では、link要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML：英語</loc>を参照。</p>
+      <p>ユーザエージェントの一部では、link要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</loc>を参照。</p>
     </ua-issue>
    </ua-issues>
    <description>
@@ -53,7 +53,7 @@
    <related-techniques/>
    <tests>
       <procedure>
-      <p>用語集の役割を果たしている、単語と定義のあらゆる組み合わせについて：</p>
+      <p>用語集の役割を果たしている、単語と定義のあらゆる組み合わせについて:</p>
       <olist>
         <item>
           <p>用語集で定義した語句や略語が含まれたウェブページの <el>head</el> 要素セクションに、<el>link</el> 要素が含まれている。</p>
@@ -72,7 +72,7 @@
           <p>上記全てを満たしている。</p>
         </item>
       </ulist>
-      <p>注記：WCAG で用いている略語の定義は、「単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。」である。</p>
+      <p>注記: WCAG で用いている略語の定義は、「単語、語句、又は名称の短縮形で、その略語が言語の一部になっていないもの。」である。</p>
       </expected-results>
    </tests>
 </technique>

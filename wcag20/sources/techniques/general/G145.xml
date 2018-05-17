@@ -10,11 +10,11 @@
       <success-criterion idref="visual-audio-contrast-contrast" relationship="sufficient"/>
    </applies-to>
    <description>
-      <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。この達成方法は、18pt (太字ではない：日本語の場合は 22pt) 以上と 14pt (太字：日本語の場合は 18pt) 以上のテキストに対しては、少なくとも 3:1 以上のコントラスト比を要求している。</p>
+      <p>この達成方法の目的は、利用者が背景の上にあるテキストを読めるようにすることである。この達成方法は、18pt (太字ではない: 日本語の場合は 22pt) 以上と 14pt (太字: 日本語の場合は 18pt) 以上のテキストに対しては、少なくとも 3:1 以上のコントラスト比を要求している。</p>
       <note>
         <p>この達成基準を評価する際、フォントサイズのポイント数は、ユーザエージェントから得られるか、あるいはユーザエージェントが行うフォントメトリクスによって計算されるであろう。ポイントのサイズは、CSS の pt を定義する <loc ref="https://www.w3.org/TR/css3-values/#absolute-lengths">CSS3 Values</loc> に基づく。ポイントと CSS のピクセルとの比率は 1pt = 1.333px であるため、14pt と 18pt はそれぞれおよそ 18.5px と 24px に等しい。</p>
       </note>
-      <p>もし背景が無地の色 (または真っ黒、真っ白) の場合、各テキストの文字と背景との間に 3：1 のコントラスト比を持たせることで、大きなサイズのテキストのコントラスト比を維持することができる。</p>
+      <p>もし背景が無地の色 (または真っ黒、真っ白) の場合、各テキストの文字と背景との間に 3:1 のコントラスト比を持たせることで、大きなサイズのテキストのコントラスト比を維持することができる。</p>
       <p>背景または文字が相対輝度において変化する (またはパターン化されている) 場合、たとえ背景全体とのコントラスト比を 3:1 で保持していなくとも、文字の周囲の背景又は陰影によって、文字と背景のコントラスト比を維持することができる。</p>
       <p>コントラスト比は、背景の相対輝度がページをまたがって変化する時に、文字の相対輝度も変化させることによって維持されることもある。</p>
       <p>もし、背景画像または背景色が標準的に相対輝度で十分に違いがない場合は、他の方法として必要なコントラスト比を提供したテキストの周りに後光を提供する方法もある。</p>
@@ -23,7 +23,7 @@
       <ulist>
          <item>
             <p>黒い背景を選ぶことによって、企業ロゴに合った明るい色の文字を使うことができる。</p>
-            <p>大きなサイズのテキストが大学のキャンパスの写真の上に書かれている。幅広いさまざまな色や暗さが写真に現れているため、テキストの下のエリアに白いもやをかけ、写真を強くかすませることで、一番暗い所でも写真の上に書かれている黒いテキストとの 3：1 のコントラスト比を維持するのに十分な明るさとしている。</p>
+            <p>大きなサイズのテキストが大学のキャンパスの写真の上に書かれている。幅広いさまざまな色や暗さが写真に現れているため、テキストの下のエリアに白いもやをかけ、写真を強くかすませることで、一番暗い所でも写真の上に書かれている黒いテキストとの 3:1 のコントラスト比を維持するのに十分な明るさとしている。</p>
          </item>
       </ulist>
    </examples>
@@ -85,9 +85,9 @@
    <tests>
       <procedure>
       <olist>
-        <item><p> 以下の公式を用いて、各文字 (すべて同一ではない限り) の相対輝度を測る： </p>
-<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は：</p>
-<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合： <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合：<emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合：<emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される：</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
+        <item><p> 以下の公式を用いて、各文字 (すべて同一ではない限り) の相対輝度を測る:</p>
+<ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は:</p>
+<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される:</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
 </note></item>
         <item>
           <p>同じ公式を用いて、文字のすぐ隣の背景のピクセルの相対輝度を測る。</p>
@@ -96,7 +96,7 @@
 <ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
 <ulist><item><p>L1 は前景または背景色の明るい方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2 は前景または背景色の暗い方の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
         <item>
-          <p> コントラスト比が 3：1 と同じ、又はそれ以上である。</p>
+          <p> コントラスト比が 3:1 と同じ、又はそれ以上である。</p>
         </item>
       </olist>
     </procedure>

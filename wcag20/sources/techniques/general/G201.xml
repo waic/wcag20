@@ -74,7 +74,7 @@
                 </p>
                 </body>
                 </html>]]></code>
-      <description><p>参考：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSS を用いて、新しいウィンドウが開く前に知らせるサンプル：英語</loc></p>
+      <description><p>参考: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSS を用いて、新しいウィンドウが開く前に知らせるサンプル: 英語</loc></p>
 </description>
     </eg-group>
    </examples>
@@ -85,7 +85,7 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して：</p>
+      <p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して:</p>
       <olist>
         <item>
           <p>このリンクは新しいウィンドウを開くことが支援技術 (音声ブラウザ/スクリーンリーダー) によって読み上げられる。</p>
