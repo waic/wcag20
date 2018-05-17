@@ -34,7 +34,7 @@ In &lt;body&gt; section:
 &lt;div id="mainbody"&gt;
   &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
   &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>main.css内：
+&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>main.css内:
 
 body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
 
@@ -55,7 +55,7 @@ body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
 }
 
 
-defaultColors.css内：
+defaultColors.css内:
 
 body, p { 
     color:#000000; 
@@ -68,7 +68,7 @@ h1, h2, h3 {
 }
 
 
-altColors1.css内：
+altColors1.css内:
 
 body, h1, h2, h3, p, a { 
     color:#000066; 
@@ -76,7 +76,7 @@ body, h1, h2, h3, p, a {
 }
 
 
-altColors2.css内：
+altColors2.css内:
 
 body, h1, h2, h3, p, a { 
     color:#FFFF33; 
@@ -84,7 +84,7 @@ body, h1, h2, h3, p, a {
 }
 
 
-altColors3.css内：
+altColors3.css内:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
@@ -92,7 +92,7 @@ body, h1, h2, h3, p, a {
 }
 
 
-altColors4.css内：
+altColors4.css内:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
@@ -165,7 +165,7 @@ body, h1, h2, h3, p, a {
   {
     if (els[i].className.indexOf("hghlt") == 0) { els[i].className = hghltColor; }
   }
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>PHPの冒頭において：
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>PHPの冒頭において:
 
 &lt;?php
 $thestyle = $_GET['set'];
@@ -180,12 +180,12 @@ else
 ?&gt;
 
 
-&lt;head&gt;〜&lt;/head&gt;内：
+&lt;head&gt;〜&lt;/head&gt;内:
 
    &lt;link rel="stylesheet" type="text/css" media="screen" href="&lt;?php echo($thestyle);?&gt;.css" &gt;
 
 
-&lt;body&gt;〜&lt;/body&gt;内：
+&lt;body&gt;〜&lt;/body&gt;内:
 
 &lt;?php
 if ($thestyle == "style1") {
@@ -199,15 +199,15 @@ else {
 &lt;div id="mainbody"&gt;
   &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
   &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋)：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>style1.css内：
+&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>style1.css内:
 
   body, p { color:#000000; background-color:#FFFFFF; }
   h1, h2, h3 {color:#990000; background-color:#FFFFFF; }
 
 
-style2.css内：
+style2.css内:
 
-  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している：</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
  %&gt;&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -362,7 +362,7 @@ style2.css内：
                </p></li><li><p>
                   <a href="http://ruby-doc.com/docs/ProgrammingRuby/">Programming Ruby</a>
                </p></li></ul><p>コンテンツ制作者はクッキーをサポートしているかどうかのテストを行い、もしサポートされていなければ別のコントロールを提供することが推奨される。この別のコントロールには、「この設定をすべてのページに適用する」のような設定の有効化に関する情報が含まれるべきである。メッセージや別のコントロールの設定に応じて利用者に向けて表示されるページは、クッキーの動作環境とそれ以外の環境で利用できるオプションについての情報を提供する。
-利用者がクッキーを有効にできない状況において、もし利用者がサイトの閲覧を継続することを選択した場合、それはどうなることを意味するのかということについての説明を含める。そしてクッキーをサポートしている場合と同様の結果を得るにはユーザエージェントをどう設定すればよいかということについての情報を提供する。</p><p>例：「このブラウザはクッキーを受け付ける設定になっていません。このサイトでは、サイト内の全ページに渡って、あなたの変更した設定を適用するためにはクッキーが有効になっている必要があります。お使いの環境においてクッキーを有効にする方法については　<a href="https://support.google.com/accounts/answer/61416?rd=1">How to Enable Cookies</a>　を参照してください。ただし、これを実行するためには、お使いのコンピュータにおける管理者の権限が必要となる場合がありますので注意してください。クッキーが利用できない場合、あなたの設定はこのサイト内の他のページも含めて保存されません。弊社では、この機能をコンピュータの性能に関わらず提供できるよう努力しておりますが、それが実現できるまでの間でも、各ページにおいて設定を変更することは可能です。」</p><h3 class="small-head" id="C29-sa2">プログレッシブエンハンスメントとアンオブトルーシブ JavaScript</h3><p>HTML または XHTML ページにおける JavaScript 実装のための現在のベストプラクティスは、構造及び表現からコンテンツの動作を分離させた形で使用することだ。「プログレッシブエンハンスメント」と「アンオブトルーシブ JavaScript」という言葉は、ページの機能を向上させ、さらに良いものにするだけでなく、JavaScript がサポートされていない場合でもコンテンツが機能し続けられるようにうまく作られているスクリプトを指す用語としてよく使用されている。</p><p>より詳しく知るための推奨される情報:</p><ul><li><p>
+利用者がクッキーを有効にできない状況において、もし利用者がサイトの閲覧を継続することを選択した場合、それはどうなることを意味するのかということについての説明を含める。そしてクッキーをサポートしている場合と同様の結果を得るにはユーザエージェントをどう設定すればよいかということについての情報を提供する。</p><p>例:「このブラウザはクッキーを受け付ける設定になっていません。このサイトでは、サイト内の全ページに渡って、あなたの変更した設定を適用するためにはクッキーが有効になっている必要があります。お使いの環境においてクッキーを有効にする方法については　<a href="https://support.google.com/accounts/answer/61416?rd=1">How to Enable Cookies</a>　を参照してください。ただし、これを実行するためには、お使いのコンピュータにおける管理者の権限が必要となる場合がありますので注意してください。クッキーが利用できない場合、あなたの設定はこのサイト内の他のページも含めて保存されません。弊社では、この機能をコンピュータの性能に関わらず提供できるよう努力しておりますが、それが実現できるまでの間でも、各ページにおいて設定を変更することは可能です。」</p><h3 class="small-head" id="C29-sa2">プログレッシブエンハンスメントとアンオブトルーシブ JavaScript</h3><p>HTML または XHTML ページにおける JavaScript 実装のための現在のベストプラクティスは、構造及び表現からコンテンツの動作を分離させた形で使用することだ。「プログレッシブエンハンスメント」と「アンオブトルーシブ JavaScript」という言葉は、ページの機能を向上させ、さらに良いものにするだけでなく、JavaScript がサポートされていない場合でもコンテンツが機能し続けられるようにうまく作られているスクリプトを指す用語としてよく使用されている。</p><p>より詳しく知るための推奨される情報:</p><ul><li><p>
             <a href="http://alistapart.com/article/behavioralseparation">Behavioral Separation</a>
           </p></li><li><p>
             <a href="https://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Wikipedia: Unobtrusive JavaScript</a>

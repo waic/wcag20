@@ -14,12 +14,12 @@
 						クイックリファレンス 2.2.2 (一時停止、停止、非表示)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
-					</a></li></ul></li></ul><h2 id="SCR33-description">解説</h2><div class="textbody"><p>この達成方法の目的は、スクロールするコンテンツがスクリプトで作成されている場合に、利用者にそのスクロールを停止する手段を提供することである。スクロールするコンテンツは、ロービジョンや認知障害の利用者にとって読みにくかったり、全く読めなかったりする。また、動くものは、一部の人々にとって、ウェブページのほかの部分に集中することへの妨げとなる。</p></div><h2 class="small-head" id="SCR33-examples">事例</h2><h3 class="small-head" id="SCR33-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例では、CSS 及び JavaScript を用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p><p>この方法では、JavaScript 又は CSS がサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p><p>下のコードは、webSemantic によるアクセシブルなスクローラー (2008 年 7 月) の修正版である。</p><p>XHTML 部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+					</a></li></ul></li></ul><h2 id="SCR33-description">解説</h2><div class="textbody"><p>この達成方法の目的は、スクロールするコンテンツがスクリプトで作成されている場合に、利用者にそのスクロールを停止する手段を提供することである。スクロールするコンテンツは、ロービジョンや認知障害の利用者にとって読みにくかったり、全く読めなかったりする。また、動くものは、一部の人々にとって、ウェブページのほかの部分に集中することへの妨げとなる。</p></div><h2 class="small-head" id="SCR33-examples">事例</h2><h3 class="small-head" id="SCR33-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この例では、CSS 及び JavaScript を用いて、いくつかのテキストを視覚的にスクロールさせている。スクロールの移動を停止するためのリンクが含まれている。</p><p>この方法では、JavaScript 又は CSS がサポートされていないか有効になっていないときは、すべてのテキストを表示し、リンクを省略する。</p><p>下のコードは、webSemantic によるアクセシブルなスクローラー (2008 年 7 月) の修正版である。</p><p>XHTML 部分:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 &lt;div id="scroller"&gt;
 &lt;p id="tag"&gt;このテキストはスクロールし、JavaScript及びCSSが
 サポートされていて有効なときは、停止/スクロールのリンクが提供される。&lt;/p&gt;
 &lt;/div&gt;
-...</code></pre></div><div class="textbody"><p>CSS部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+...</code></pre></div><div class="textbody"><p>CSS部分:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 body {font:1em verdana,sans-serif; color:#000; margin:0}
 
 /* position:relative及びoverflow:hiddenは必須 */
@@ -33,7 +33,7 @@ body {font:1em verdana,sans-serif; color:#000; margin:0}
 
 /* ページ先頭の目印として利用され、かつ幅を制限する */
 #top { width:350px; margin:auto; }
-...</code></pre></div><div class="textbody"><p>JavaScript 部分：</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+...</code></pre></div><div class="textbody"><p>JavaScript 部分:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 var speed=50        // スクロール速度
 var step=3          // 動きのスムーズ度合い
 var StartActionText= "Scroll"  // 開始させるリンクのテキスト
@@ -144,7 +144,7 @@ function addLoadEvent(func) {
   }
 }
 
-addLoadEvent(initScroller)</code></pre></div><div class="textbody"><p>このコードの実装サンプル：<a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR33/Overview.html">コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</a></p></div></div><h2 id="SCR33-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+addLoadEvent(initScroller)</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR33/Overview.html">コンテンツのスクロールにスクリプトを用い、停止する仕組みを提供しているサンプル</a></p></div></div><h2 id="SCR33-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.websemantics.co.uk/tutorials/accessible_scroller/">webSemantics Accessible Scroller</a>
                </p></li></ul></div><h2 id="SCR33-related-techs">関連する達成方法</h2><div class="textbody"><ul><li><a href="G4.html">G4: コンテンツを一時停止させて、一時停止させたところから再開できるようにする</a></li></ul></div><h2 id="SCR33-tests">検証</h2><div class="textbody"><h3 class="small-head" id="SCR33-procedure">チェックポイント</h3><ol class="enumar"><li><p>スクロールするコンテンツを停止する仕組みが提供されている。</p></li><li><p>停止する仕組みを用いて、コンテンツのスクロールが停止する。</p></li><li><p>スクロールが停止し、自動的に再起動しない。</p></li><li><p>停止中のコンテンツを再起動できる仕組みが提供されている。</p></li><li><p>提供されている再起動の仕組みを用いて、コンテンツのスクロールを再起動する。</p></li><li><p>停止していた位置からスクロールが再開される。</p></li></ol><h3 class="small-head" id="SCR33-results">判定基準</h3><ul><li><p>3. 及び 6. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="SCR32: クライアントサイドのバリデーションを提供し、DOM を介してエラーテキストを追加する" href="SCR32.html"><strong>前: </strong>
         達成方法 SCR32</a></li><li><a title="SCR34: テキストサイズに応じて拡大縮小するように、サイズ及びポジションを定める" href="SCR34.html"><strong>次: </strong>
