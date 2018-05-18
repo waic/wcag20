@@ -18,9 +18,9 @@
    <examples>
       <eg-group>
       <description><p>この事例は必須のフィールドを検証し、さらに特定の書式が必要なフィールドを検証する。エラーがみつかったとき、スクリプトはエラーメッセージの一覧を DOM に挿入し、フォーカスをそこへ移動する。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR32/form2.jpg" alt="サンプルの画面イメージ：スクリーンショットは、正しく記入が行われていないいくつかのフィールドのエラーメッセージをあらわしている。エラーメッセージはリンクリストでフォームの先頭近くに現れる。"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR32/form2.jpg" alt="サンプルの画面イメージ: スクリーンショットは、正しく記入が行われていないいくつかのフィールドのエラーメッセージをあらわしている。エラーメッセージはリンクリストでフォームの先頭近くに現れる。"/>
 <p> <em>HTML 及び Javascript のコード</em> </p>
-<p>これは事例のフォームの HTML である：</p>
+<p>これは事例のフォームの HTML である:</p>
 </description>
       <code><![CDATA[
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -98,7 +98,7 @@
         </form>
     </body>
 </html>]]></code>
-      <description><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である：</p>
+      <description><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である:</p>
 </description>
       <code><![CDATA[
 window.onload = initialise;
@@ -378,7 +378,7 @@ function checkOptional(bValid, strValue, arClass)
 
    return bValid;
    }]]></code>
-      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS 及び XHTML で実装されている：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR32/index.php"><!-- linktype="examples"-->フォーム検証の例</loc></p>
+      <description><p>このコードの実装サンプルは、PHP、JavaScript、CSS 及び XHTML で実装されている: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR32/index.php"><!-- linktype="examples"-->フォーム検証の例</loc></p>
 </description>
     </eg-group>
    </examples>

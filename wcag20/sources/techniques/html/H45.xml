@@ -28,7 +28,7 @@
          <head>longdesc 属性を用いて同じページに含まれた長い説明文を参照する。</head>
          <code><![CDATA[<img longdesc="thispage.html#desc" alt="購読者数の折れ線グラフ" src="http://www.company/images/graph.png">
 <div id="desc">
-<h3>長い説明文： 購読者数の折れ線グラフ</h3>
+<h3>長い説明文: 購読者数の折れ線グラフ</h3>
 <!-- すべてのグラフ説明文 -->
 <p>長い説明文の終点.</p>
 <div>]]></code>

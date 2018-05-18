@@ -15,14 +15,14 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>マークアップ：</p>
+      <description><p>マークアップ:</p>
 <p>スクリプトはドキュメントの <code>head</code> 要素内に組み込まれており、リンクにはスクリプトのフックとなる <code>id</code> 属性がある。</p>
 </description>
       <code><![CDATA[
 <script type="text/javascript" src="popup.js"></script>
 …
 <a href="help.html" id="newwin">ヘルプを表示</a>]]></code>
-      <description><p>スクリプト：</p>
+      <description><p>スクリプト:</p>
 </description>
       <code><![CDATA[
 // ブラウザによるイベント登録のサポートは不十分だが
@@ -95,7 +95,7 @@ function launchWindow(objAnchor, objEvent)
         <item>
           <p>ドキュメントにあるリンクを起動して、新しいウィンドウが開くかどうかをチェックする。</p>
         </item>
-        <item><p>新しいウィンドウを開くリンクが、次の全てをスクリプトを用いて実装されている：</p>
+        <item><p>新しいウィンドウを開くリンクが、次の全てをスクリプトを用いて実装されている:</p>
 				<olist><item><p>リンクが新しいウィンドウを開くことを明示している</p></item><item><p>デバイス非依存のイベントハンドラを用いている</p></item><item><p>新しいウィンドウを開けない場合には、ブラウザが同じウィンドウにリンク先のコンテンツを開くようにしている</p></item></olist></item>
       </olist>
     </procedure>

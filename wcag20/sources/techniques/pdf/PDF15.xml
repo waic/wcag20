@@ -27,15 +27,15 @@
 <ulist><item><p>「トリガを選択」で「マウスアップ」を選択する (Mouse Up イベントは、キーボードでアクセス可能である。また、Mouse Up イベントでは、Mouse Enter イベントなどが発生しても、ボタンで予想外にコンテキストが変更されない)</p></item><item><p>「アクションを選択」で「フォームを送信」を選択する</p></item><item><p>［追加］を押下する</p></item></ulist></item><item><p>［追加］ダイアログボックスで、サーバー上のデータを収集したり、電子メールの添付ファイルとしてフォームデータを収集したりするための URL を入力する</p></item></olist>
 <p>次の画像は、ボタンのプロパティダイアログボックスの［オプション］タブを示している。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button2.jpg" height="481" width="562"/><alt>レイアウトおよびラベルボタンのプロパティが表示されている、［ボタンのプロパティ］ダイアログボックスの［オプション］タブ</alt></image></p><p>次の画像は、ボタンのプロパティダイアログボックスの「アクション」タブを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button.jpg" height="570" width="560"/><alt>スクリーンショット：「アクションを選択」オプションが指定されている、［ボタンのプロパティ］ダイアログボックスの［アクション］タブ</alt></image></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button.jpg" height="570" width="560"/><alt>スクリーンショット:「アクションを選択」オプションが指定されている、［ボタンのプロパティ］ダイアログボックスの［アクション］タブ</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>Adobe LiveCycle Designer ES 8.2.1 を使用して送信ボタンを追加する</head>
       <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>挿入 &gt; 標準メニューで、「HTTP 送信ボタン」項目を選択する</p></item><item><p>「HTTP 送信ボタン」の［オブジェクト］パネルに、フォーム送信処理の URL を挿入する</p></item></olist>
 <p>次の画像は、フォームコントロールの一覧が表示されている標準メニューを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/http.gif" height="257" width="399"/><alt>スクリーンショット：「HTTP 送信ボタン」が選択されている、フォームコントロールの一覧が表示されている標準メニュー</alt></image></p><p>次の画像は、URL とボタンの外観に関するその他のフィールドが表示されたオブジェクトパネルを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-panel.gif" height="287" width="239"/><alt>スクリーンショット：URL と送信ボタンの外観およびアクションを指定するためのその他のフィールドが表示されている［オブジェクト］パネル</alt></image></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/http.gif" height="257" width="399"/><alt>スクリーンショット:「HTTP 送信ボタン」が選択されている、フォームコントロールの一覧が表示されている標準メニュー</alt></image></p><p>次の画像は、URL とボタンの外観に関するその他のフィールドが表示されたオブジェクトパネルを示している。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-panel.gif" height="287" width="239"/><alt>スクリーンショット: URL と送信ボタンの外観およびアクションを指定するためのその他のフィールドが表示されている［オブジェクト］パネル</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>JavaScript を使用して PDF 文書内の送信ボタンにスクリプトアクションを追加する</head>
@@ -50,7 +50,7 @@ this.submitForm({
   cSubmitAs: "FDF" // デフォルト、ここでは不要
 });]]></codeblock>
       <description><p>次の画像は、このプロセスを示している。</p>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button1.jpg" height="552" width="587"/><alt>スクリーンショット：送信ボタンの［ボタンのプロパティ］ダイアログボックス</alt></image></p><p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button3.jpg" height="443" width="518"/><alt>スクリーンショット：［ボタンのプロパティ］ダイアログボックスの［アクション］タブに追加された JavaScript</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button-js.pdf"><!-- linktype="examples"-->スクリプトアクションを送信ボタンに追加したサンプル</loc>がある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button1.jpg" height="552" width="587"/><alt>スクリーンショット: 送信ボタンの［ボタンのプロパティ］ダイアログボックス</alt></image></p><p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button3.jpg" height="443" width="518"/><alt>スクリーンショット:［ボタンのプロパティ］ダイアログボックスの［アクション］タブに追加された JavaScript</alt></image></p><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button-js.pdf"><!-- linktype="examples"-->スクリプトアクションを送信ボタンに追加したサンプル</loc>がある。</p>
 </description>
     </eg-group>
    </examples>

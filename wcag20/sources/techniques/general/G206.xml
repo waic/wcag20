@@ -16,7 +16,7 @@
       <p>例えば、スプレッドシートで横スクロールを必要とするが、個々の列内で横スクロールが必要ないような場合は許容される (すなわち、他の列を見るためだけにスクロールが必要で、個々の列の左端や右端を表示するのにスクロールを必要としないような場合)。</p>
       <note>
          <p>この達成方法は、適合していないなコンテンツに代わって<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef"
- linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替え技術と組み合わせて使うこともできる。詳細は、<loc href="C29" linktype="techniques">C29： 適合している代替版を提供するために、スタイルスイッチャーを使用する</loc> 及び <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+ linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替え技術と組み合わせて使うこともできる。詳細は、<loc href="C29" linktype="techniques">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</loc> 及び <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                  href="conformance"
                  locn-note="uc-conforming-alt-versions-head"
                  linktype="understanding">適合している代替版を理解する</loc> を参照のこと。</p>

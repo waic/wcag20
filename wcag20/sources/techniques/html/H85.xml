@@ -56,7 +56,7 @@
       <description><p>次の事例は、複数選択式リストで <el>optrgroup</el> 要素をどのように用いるかを示している。</p>
 </description>
       <code><![CDATA[<form action="http://example.com/prog/someprog" method="post">
-    <label for="related_techniques"><strong>関連する達成方法：</strong></label>
+    <label for="related_techniques"><strong>関連する達成方法:</strong></label>
     <select name="related_techniques" id="related_techniques" multiple="multiple" size="10">
   <optgroup label="General Techniques">
     <option value="G1">G1: Adding a link at the top of each page ... </option>

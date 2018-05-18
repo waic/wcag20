@@ -54,7 +54,7 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_graphic.png"
                        height="181"
                        width="274"/>
-                  <alt>画面スクリーンショット 1：Flashのオーサリングステージにグラフィックを追加</alt>
+                  <alt>画面スクリーンショット 1: Flashのオーサリングステージにグラフィックを追加</alt>
                </image>
 							     </p>
             <p>
@@ -63,7 +63,7 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_invisible.png"
                        height="297"
                        width="429"/>
-                  <alt>画面スクリーンショット 2：プロパティパネルの「アルファ」スライダの値を 0 に変更して、ボタンを非表示に</alt>
+                  <alt>画面スクリーンショット 2: プロパティパネルの「アルファ」スライダの値を 0 に変更して、ボタンを非表示に</alt>
                </image>
 							     </p>
             <p>
@@ -72,7 +72,7 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH6/flash_hotspot_accessibleName.png"
                        height="303"
                        width="384"/>
-                  <alt>画面スクリーンショット 3：アクセシビリティパネルを用いて、ボタンの名前を設定</alt>
+                  <alt>画面スクリーンショット 3: アクセシビリティパネルを用いて、ボタンの名前を設定</alt>
                </image>
 							     </p>
          </description>

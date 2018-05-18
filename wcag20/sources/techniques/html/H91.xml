@@ -200,7 +200,7 @@
       <description><exsubhead>ラジオボタンのフィールドセット</exsubhead><p>事例 8 のラジオボタンのフィールドセットには「グループ化」という役割 (role) がある。名前 (name) は <el>legend</el> 要素によって与えられている。</p>
 </description>
       <code role="xhtml"><![CDATA[<fieldset>
-  <legend>色を選択：</legend> 
+  <legend>色を選択:</legend> 
      <input id="red" type="radio" name="color" value="red" /><label for="red">赤</label><br /> 
      <input id="blue" type="radio" name="color" value="blue" /><label for="blue">青</label><br /> 
      <input id="green" type="radio" name="color" value="green" /><label for="green">緑</label> 

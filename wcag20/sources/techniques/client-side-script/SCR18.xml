@@ -20,7 +20,7 @@
       <description><p>以下のスクリプトは、有効な日付がフォームのコントロールに入力されたかをチェックする。</p>
 </description>
       <code><![CDATA[
-<label for="date">日付：</label>
+<label for="date">日付:</label>
 <input type="text" name="date" id="date" 
 onchange="if(isNaN(Date.parse(this.value))) 
 alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" />]]></code>
@@ -80,7 +80,7 @@ function validate() {
    </related-techniques>
    <tests>
       <procedure>
-      <p>特定の入力を必要とするフォームのフィールドに対して：</p>
+      <p>特定の入力を必要とするフォームのフィールドに対して:</p>
       <olist>
         <item>
           <p>無効なデータを入力する。</p>

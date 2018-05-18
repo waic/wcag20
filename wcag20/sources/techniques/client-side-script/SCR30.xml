@@ -76,13 +76,13 @@ function toggle() {
 <p><a href="#" onclick="doExpand();">リンクを展開する</a></p>
 
 <ul>
-<li>Webの歴史：
+<li>Webの歴史:
 <a href="history.docx" class="hist">Word</a>, 
 <a href="history.pdf" class="hist">PDF</a>, 
 <a href="history.html" class="hist">HTML</a>
 </li>
 
-<li>Cooking for Nerds：
+<li>Cooking for Nerds:
 <a href="history.docx" class="cook">Word</a>, 
 <a href="history.pdf" class="cook">PDF</a>, 
 <a href="history.html" class="cook">HTML</a>

@@ -20,7 +20,7 @@
       <description><p>次の例では、塗りつぶされた星 3 つと塗りつぶされていない星 2 つで評価が示されている。テキストによる代替は、5 つの画像それぞれに提供することもできるが、このコンテンツ制作者は、1 つ目の画像に「5 つ星のうちの 3 つ星」として画像のグループが伝えている評価を提供し、他の画像には空の代替テキストを用いている。 </p>
 </description>
       <code role="html401"><![CDATA[
-   <p>評価：
+   <p>評価:
    <img src="star1" alt="5つ星のうちの3つ星">
    <img src="star1" alt="">
    <img src="star1" alt="">
@@ -34,7 +34,7 @@
       <description><p>この例では、宣言している WCAG への適合レベルを示すために、各ボタンが複数の画像一式を用いている。このアプローチによって、支援技術は「画像 A、画像 A、画像 A」などのように読み上げるのを回避できるようになる。</p>
 </description>
       <code role="xhtml1"><![CDATA[
- <p>適合レベル：</p>
+ <p>適合レベル:</p>
  <button name="A"><img src="a.png" alt="レベル A" /></button> <br />
  <button name="AA"><img src="a.png" alt="レベル AA" /><img src="a.png" alt="" /></button> <br />
  <button name="AAA"><img src="a.png" alt="レベル AAA" /><img src="a.png" alt="" /><img src="a.png" alt="" /></button>]]></code>

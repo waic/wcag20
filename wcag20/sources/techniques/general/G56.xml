@@ -10,7 +10,7 @@
       <success-criterion idref="visual-audio-contrast-noaudio" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、聴覚に問題を持つ利用者が主音声を理解しづらくならないように、コンテンツ制作者が音声に背景音を入れられるようにすることである。前景にある主音声を背景音より 20 デジベル大きくすることで、その主音声は背景音よりも 4 倍大きいことになる。デシベル (dB) に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels：英語</loc>を参照のこと。</p>
+    <p>この達成方法の目的は、聴覚に問題を持つ利用者が主音声を理解しづらくならないように、コンテンツ制作者が音声に背景音を入れられるようにすることである。前景にある主音声を背景音より 20 デジベル大きくすることで、その主音声は背景音よりも 4 倍大きいことになる。デシベル (dB) に関する情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://trace.wisc.edu/docs/2004-About-dB/index.htm">About Decibels</loc> を参照のこと。</p>
   </description>
    <examples>
       <eg-group>
@@ -22,22 +22,22 @@
       <head>ナレーターの音声と背景音楽との十分な音声コントラスト</head>
       <description><p>この事例では、ナレーターの音声と背景音楽があり、主音声は背景音楽よりもちょうど 20 デシベル大きい。主音声 (前景) は -17.52 デシベル (二乗平均平方根)、音楽 (背景) は -37.52 デシベルで録音しているため、前景は背景よりも 20 デシベル大きいことになる。
 								</p>
-<exsubhead>音声サンプル</exsubhead><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Good-contrast.mp3"><!-- linktype="examples"-->音声サンプル：前景音声が背景音楽よりも 20 デシベル大きい (mp3 形式)</loc></p>
-<p>音声サンプル (十分なコントラスト) のトランスクリプト：</p>
+<exsubhead>音声サンプル</exsubhead><p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Good-contrast.mp3"><!-- linktype="examples"-->音声サンプル: 前景音声が背景音楽よりも 20 デシベル大きい (mp3 形式)</loc></p>
+<p>音声サンプル (十分なコントラスト) のトランスクリプト:</p>
 <p>"Usually the foreground refers to a voice that is speaking and should be understood. My speaking voice right now is 20 decibels above the background which is the music. This is an example of how it should be done.."</p>
 <trnote><p>音声が英語なので、和訳していない。</p></trnote>
 <exsubhead>音声サンプルを視覚的に示したもの</exsubhead><p>音声サンプルを、音声エディタ上のファイルのスナップショットという形で、以下に視覚的に示してある。前景音声と背景音楽を含んだセクションは強調表示にしてある。背景音楽のみのセクションに比べて、波形がはるかに大きい。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Audio_3.jpg" alt="スクリーンショット：音声エディタを用いて、十分なコントラストのある音声を視覚的に示したもの"/></description>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Audio_3.jpg" alt="スクリーンショット: 音声エディタを用いて、十分なコントラストのある音声を視覚的に示したもの"/></description>
     </eg-group>
     <eg-group role="failure">
       <head>ナレーターの音声と背景音楽との不十分な音声コントラスト</head>
       <description><exsubhead>不適合となる音声サンプル</exsubhead><p>この事例では、ナレーターの音声と背景音楽があり、主音声は背景音楽よりも 20 デシベル以上は大きくない。主音声 (前景) は -18 デシベル、音楽 (背景) は -16 デシベルで録音しているため、前景は背景よりも 2 デシベルしか大きくない。</p>
-<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Bad-contrast.mp3"><!-- linktype="examples"-->音声サンプル：前景音声と背景音楽の差が 20 デシベル未満である (mp3 形式)</loc></p>
-<p>音声サンプル (不十分なコントラスト) のトランスクリプト：</p>
+<p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Bad-contrast.mp3"><!-- linktype="examples"-->音声サンプル: 前景音声と背景音楽の差が 20 デシベル未満である (mp3 形式)</loc></p>
+<p>音声サンプル (不十分なコントラスト) のトランスクリプト:</p>
 <p>"This is an example of a voice that is not loud enough against the background. The voice which is the foreground is only about 2 decibels above the background. Therefore is difficult to understand for a person who is hard of hearing. It is hard to discern one word from the next. This is an example of what not to do."</p>
 <trnote><p>音声が英語なので、和訳していない。</p></trnote>
 <exsubhead>不適合の音声サンプルを視覚的に示したもの</exsubhead><p>強調表示にしたセクションは、前景音声と背景音楽を含んだ部分である。背景音楽しかないセクションと波形がほぼ同じ大きさであり、前景音声に比べて背景音楽が大きすぎるということである。</p>
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Audio_4.jpg" alt="スクリーンショット：音声エディタを用いて、コントラストが十分ではない音声を視覚的に示したもの"/></description>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G56/Audio_4.jpg" alt="スクリーンショット: 音声エディタを用いて、コントラストが十分ではない音声を視覚的に示したもの"/></description>
     </eg-group>
    </examples>
    <resources>

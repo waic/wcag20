@@ -4,7 +4,7 @@
 <technique id="F70">
    <short-name>達成基準 4.1.1 の失敗例 － 開始タグ及び終了タグ、又は属性のマークアップを誤って使用している</short-name>
    <applicability>
-      <p>マークアップ言語：HTML、XHTML、及び他の SGML 又は XML ベースのウェブコンテンツ技術</p>
+      <p>マークアップ言語: HTML、XHTML、及び他の SGML 又は XML ベースのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="ensure-compat-parses" relationship="failure"/>

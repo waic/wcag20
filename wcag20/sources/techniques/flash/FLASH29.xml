@@ -92,7 +92,7 @@ CheckBoxAccImpl.enableAccessibility();]]></code>
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH29/component_inspector_label.png"
                        height="349"
                        width="513"/>
-                  <alt>画面スクリーンショット：コンポーネントインスペクタパネルで、コンポーネントのラベルを設定</alt>
+                  <alt>画面スクリーンショット: コンポーネントインスペクタパネルで、コンポーネントのラベルを設定</alt>
                </image>
 							     </p>
          </description>

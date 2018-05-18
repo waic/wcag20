@@ -31,7 +31,7 @@
 </script>
   …
 <form name="mirror_form" id="mirror_form" action="" method="get">
-       <p>ミラーダウンロードサイトを選択して下さい：</p> 
+       <p>ミラーダウンロードサイトを選択して下さい:</p> 
        <p> 
        <input type="radio" onclick="goToMirror(this);" name="mirror" 
        id="mirror_belnet" value="belnet.be" /> 

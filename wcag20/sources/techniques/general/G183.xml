@@ -22,7 +22,7 @@
    <examples>
       <eg-group>
       <head>黒い文字列に 3:1 のコントラスト、及び白地に 4.5:1 のコントラストを提供する色</head>
-      <description><p>この事例のサンプル：<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G183/link-contrast.html"><!-- linktype="examples"-->周囲のテキストと 3:1 のコントラスト比を持つリンク</loc>
+      <description><p>この事例のサンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G183/link-contrast.html"><!-- linktype="examples"-->周囲のテキストと 3:1 のコントラスト比を持つリンク</loc>
                      </p>
 </description>
     </eg-group>

@@ -24,16 +24,16 @@
       <head>Adobe Acrobat 9 Pro の TouchUp オブジェクトツールを使用して、画像に /Alt エントリを追加する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>ツール &gt;高度な編集 &gt; TouchUp オブジェクトツールを選択する。</p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt1.gif" height="247" width="358"/><alt>スクリーンショット：[高度な編集]メニューにあるTouchUp オブジェクトツール</alt></image></p></item><item><p>画像のコンテキストメニューから［プロパティ］を選択する。</p></item><item><p>TouchUp のプロパティダイアログボックスで［タグ］タブを選択する。</p></item><item><p>［タグ］パネルで、［代替テキスト］テキストボックスにテキストによる代替を入力する。 </p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt2.gif" height="231" width="556"/><alt>スクリーンショット：TouchUpプロパティのダイアログにある［タグ］タブ</alt></image></p></item></olist><p>この事例のサンプルが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/alt-entry-to-an-image.pdf"><!-- linktype="examples"-->画像に /Alt エントリを追加したサンプル：英語 (PDF ファイル)</loc> にある。</p>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt1.gif" height="247" width="358"/><alt>スクリーンショット: [高度な編集]メニューにあるTouchUp オブジェクトツール</alt></image></p></item><item><p>画像のコンテキストメニューから［プロパティ］を選択する。</p></item><item><p>TouchUp のプロパティダイアログボックスで［タグ］タブを選択する。</p></item><item><p>［タグ］パネルで、［代替テキスト］テキストボックスにテキストによる代替を入力する。 </p>&#13;
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt2.gif" height="231" width="556"/><alt>スクリーンショット: TouchUpプロパティのダイアログにある［タグ］タブ</alt></image></p></item></olist><p>この事例のサンプルが、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/alt-entry-to-an-image.pdf"><!-- linktype="examples"-->画像に /Alt エントリを追加したサンプル: 英語 (PDF ファイル)</loc> にある。</p>
 </description>
     </eg-group>
     <eg-group>
       <head>Adobe Acrobat 9 Pro の TouchUp 読み上げ順序ツールを使用して、画像に /Alt エントリを追加する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>ツール &gt; 高度な編集 &gt; TouchUp 読み上げ順序ツールを選択する。</p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt3.gif" height="227" width="358"/><alt>スクリーンショット：高度な編集メニューにあるTouchUp読み上げ順序ツール</alt></image></p></item><item><p>TouchUp 読み上げ順序ダイアログボックスが表示される。</p></item><item><p>画像を右クリックし、［代替テキストを編集］を選択する。</p></item><item><p>代替テキストダイアログボックスが表示される。</p></item><item><p>［代替テキスト］テキストボックスにテキストによる代替を入力する。</p>&#13;
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt4.gif" height="222" width="467"/><alt>スクリーンショット：［代替テキスト］テキストボックス</alt></image></p></item></olist></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt3.gif" height="227" width="358"/><alt>スクリーンショット: 高度な編集メニューにあるTouchUp読み上げ順序ツール</alt></image></p></item><item><p>TouchUp 読み上げ順序ダイアログボックスが表示される。</p></item><item><p>画像を右クリックし、［代替テキストを編集］を選択する。</p></item><item><p>代替テキストダイアログボックスが表示される。</p></item><item><p>［代替テキスト］テキストボックスにテキストによる代替を入力する。</p>&#13;
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/textalt4.gif" height="222" width="467"/><alt>スクリーンショット:［代替テキスト］テキストボックス</alt></image></p></item></olist></description>
     </eg-group>
     <eg-group>
       <head>Microsoft Word を使用して生成した PDF 文書内の画像に /Alt エントリを追加する</head>
@@ -44,7 +44,7 @@
       <head>OpenOffice.org Writer 2.2 を使用して生成した PDF 文書内の画像に /Alt エントリを追加する</head>
       <description><p>この事例は Open Office.org Writer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <olist><item><p>画像のコンテキストメニューから［図］を選択する。</p></item><item><p>［オプション］タブを選択する。</p></item><item><p>［代替 (テキストのみ)］テキストボックスに代替テキストを入力し、［OK］をクリックする。</p></item></olist>
-<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/ooalt.jpg" height="439" width="556"/><alt>スクリーンショット：［図］ダイアログの［オプション］タブ</alt></image></p></description>
+<p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/ooalt.jpg" height="439" width="556"/><alt>スクリーンショット:［図］ダイアログの［オプション］タブ</alt></image></p></description>
     </eg-group>
     <eg-group>
       <head>/Alt エントリを使用して PDF 文書内の画像にテキストによる代替を追加する</head>
@@ -102,7 +102,7 @@
    <tests>
       <procedure>
       <olist>
-        <item><p>次のいずれかの方法で、等価テキストを必要とする画像に /Alt エントリがタグで囲まれていることを確認する：</p>
+        <item><p>次のいずれかの方法で、等価テキストを必要とする画像に /Alt エントリがタグで囲まれていることを確認する:</p>
 <ulist><item><p>PDF 文書をスクリーンリーダーで読み上げ、非テキストオブジェクトにタブ移動するときに代替テキストが読み上げられる (タブ移動が可能な場合)。または、コンテンツが 1 行単位で読み上げられるときにテキストによる代替が読み上げられる。</p></item><item><p>PDF エディターを使用して、画像ごとに代替テキストが表示させる。</p></item><item><p>/Alt エントリの値を表示できるツール (aDesigner など) を使用して PDF 文書を開き、GUI サマリを表示して、画像のテキストによる代替を読む。</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、必要なテキスト同等物が画像に適用されていることを確認する。</p></item></ulist></item>
       </olist>
     </procedure>

@@ -45,7 +45,7 @@
                  source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/adjacentbtns.jpg"
                  height="221"
                  width="411"/>
-            <alt>画面スクリーンショット：プロパティパネルでインスタンス名を 'flashLink1' とした結合ボタン</alt>
+            <alt>画面スクリーンショット: プロパティパネルでインスタンス名を 'flashLink1' とした結合ボタン</alt>
          </image>
 					</p>
       <eg-group>
@@ -58,7 +58,7 @@
                        source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH5/findoutmore.jpg"
                        height="152"
                        width="530"/>
-                  <alt>画面スクリーンショット：結合ボタンの「名前」を記述したアクセシビリティパネル</alt>
+                  <alt>画面スクリーンショット: 結合ボタンの「名前」を記述したアクセシビリティパネル</alt>
                </image>
 							     </p>
          </description>

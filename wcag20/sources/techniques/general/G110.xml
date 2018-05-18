@@ -15,7 +15,7 @@
   </description>
    <examples>
       <eg-group>
-      <head>HTML： meta 要素の refresh で、URI を指定し、タイムアウトを指定しない方法</head>
+      <head>HTML: meta 要素の refresh で、URI を指定し、タイムアウトを指定しない方法</head>
       <description><p>
 									HTML 4.x と XHTML 1.x では、mata 要素を用いることでクライアントサイドのリダイレクトが実装できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H76" linktype="html"/> を参照のこと。
 									
