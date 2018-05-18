@@ -40,7 +40,7 @@
       <eg-group role="failure">
          <head>見出しが適切にマークアップされていない</head>
          <description>
-            <p>このテーブルは見出しとして <code>th</code> (あるいはほかの適切なヘッダマークアップ) を使っていない。かわりに、すべてのセルに <code>td</code> 要素が使われている。セルからセルへ移動するのに、スクリーンリーダーは見出しセルに関連付けられたコンテンツの読み上げにしばしば失敗する。</p>
+            <p>このテーブルは見出しとして <code>th</code> (あるいはほかの適切な見出しマークアップ) を使っていない。かわりに、すべてのセルに <code>td</code> 要素が使われている。セルからセルへ移動するのに、スクリーンリーダーは見出しセルに関連付けられたコンテンツの読み上げにしばしば失敗する。</p>
             <p>Example Code:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <table>
@@ -106,10 +106,10 @@
          	<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
 			<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
             <item>
-               <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられたヘッダとデータのセル</p>
+               <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられた見出しとデータのセル</p>
             </item>
             <item>
-               <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされたヘッダ</p>
+               <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされたヘッダー</p>
             </item>
             <item>
                <p>ARIA のロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
