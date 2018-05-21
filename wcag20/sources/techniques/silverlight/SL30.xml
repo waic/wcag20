@@ -88,8 +88,8 @@
  </Button>
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ButtonNontextTextCompositionTestPage.html"
-                    linktype="examples">working example of Button Nontext Text Composition</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL30/ButtonNontextTextCompositionTestPage.html">
+                    <!--linktype="examples"-->working example of Button Nontext Text Composition</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

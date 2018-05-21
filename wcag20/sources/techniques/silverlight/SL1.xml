@@ -131,8 +131,8 @@
             media.Play();
         }]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="AlternativeAudioChannelTestPage.html"
-                    linktype="examples">working example of Alternative Audio Channel</loc>. If using the test file, the test contains test audio tones rather than actual audio description, but the pitch of the tones is indicative of which of the channels is selected and played. </p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL1/AlternativeAudioChannelTestPage.html">
+                    <!--linktype="examples"-->working example of Alternative Audio Channel</loc>. If using the test file, the test contains test audio tones rather than actual audio description, but the pitch of the tones is indicative of which of the channels is selected and played. </p>
          </description>
       </eg-group>
    </examples>

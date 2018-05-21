@@ -153,8 +153,8 @@
        }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="SimpleNumericUpDownTestPage.html"
-                    linktype="examples">working example of Simple Numeric UpDown control</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL6/SimpleNumericUpDownTestPage.html">
+                    <!--linktype="examples"-->working example of Simple Numeric UpDown control</loc>.</p>
          </description>
       </eg-group>
    </examples>

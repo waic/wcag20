@@ -65,8 +65,8 @@
        }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ProgrammaticFocusTestPage.html"
-                    linktype="examples">working example of Programmatic Focus</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL25/ProgrammaticFocusTestPage.html">
+                    <!--linktype="examples"-->working example of Programmatic Focus</loc>.</p>
          </description>
       </eg-group>
    </examples>

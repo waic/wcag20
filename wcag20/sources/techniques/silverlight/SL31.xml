@@ -199,8 +199,8 @@ then is this? Are the green fields gone? What do they here?
        }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="DocumentStructureTestPage.html"
-                    linktype="examples">working example of Document Structure</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL31/DocumentStructureTestPage.html">
+                    <!--linktype="examples"-->working example of Document Structure</loc>.</p>
          </description>
       </eg-group>
    </examples>

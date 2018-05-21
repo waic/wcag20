@@ -245,8 +245,8 @@
             <codeblock xml:space="preserve"><![CDATA[<local:KeysNumericUpDown Width="100" Height="45"/>
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="SimpleNumericUpDownTestPage.html"
-                    linktype="examples">working example of Numeric Up / Down control</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL14/SimpleNumericUpDownTestPage.html">
+                    <!--linktype="examples"-->working example of Numeric Up / Down control</loc>.</p>
          </description>
       </eg-group>
    </examples>

@@ -49,8 +49,8 @@
 							]]></codeblock>
             <p>
                <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="incorrectassociation"
-                    linktype="examples">Failure example of table incorrectly associating headers attributes in table content (td) to table headers (th)</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F90/incorrectassociation">
+                    <!--linktype="examples"-->Failure example of table incorrectly associating headers attributes in table content (td) to table headers (th)</loc>.</p>
          </description>
       </eg-group>
    </examples>

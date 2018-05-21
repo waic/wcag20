@@ -127,8 +127,8 @@
                </image> 
             </p>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="SimplePeerForwardingTestPage.html"
-                    linktype="examples">working example of Simple Peer Forwarding</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL20/SimplePeerForwardingTestPage.html">
+                    <!--linktype="examples"-->working example of Simple Peer Forwarding</loc>.</p>
          </description>
       </eg-group>
    </examples>

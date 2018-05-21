@@ -58,8 +58,8 @@
    </StackPanel>
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="LabelsTestPage.html"
-                    linktype="examples">working example of Labels</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL26/LabelsTestPage.html">
+                    <!--linktype="examples"-->working example of Labels</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

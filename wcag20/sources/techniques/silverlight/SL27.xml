@@ -284,8 +284,8 @@ private void button1_Click(object sender, RoutedEventArgs e)
 }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="LangPropertiesTestPage.html"
-                    linktype="examples">working example of Language Properties</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL27/LangPropertiesTestPage.html">
+                    <!--linktype="examples"-->working example of Language Properties</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

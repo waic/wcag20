@@ -252,8 +252,8 @@
        }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="FocusVisualCustomControlTestPage.html"
-                    linktype="examples">working example of Visual Focus Indicator</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL7/FocusVisualCustomControlTestPage.html">
+                    <!--linktype="examples"-->working example of Visual Focus Indicator</loc>.</p>
          </description>
       </eg-group>
    </examples>

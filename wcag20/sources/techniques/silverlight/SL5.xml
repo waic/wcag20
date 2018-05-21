@@ -163,8 +163,8 @@ xmlns:local="clr-namespace:ImageEquivalent">
 }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ImageEquivalentTestPage.html"
-                    linktype="examples">working example of Focusable Image</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL5/ImageEquivalentTestPage.html">
+                    <!--linktype="examples"-->working example of Focusable Image</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

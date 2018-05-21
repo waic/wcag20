@@ -137,8 +137,8 @@
    }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="BrowserZoomTestPage.html"
-                    linktype="examples">working example of Browser Zoom</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL22/BrowserZoomTestPage.html">
+                    <!--linktype="examples"-->working example of Browser Zoom</loc>.</p>
          </description>
       </eg-group>
    </examples>

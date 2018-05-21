@@ -227,8 +227,8 @@
                </image> 
             </p>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="HighContrastTestPage.html"
-                    linktype="examples">working example of High Contrast</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL13/HighContrastTestPage.html">
+                    <!--linktype="examples"-->working example of High Contrast</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

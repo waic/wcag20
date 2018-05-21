@@ -272,8 +272,8 @@
                </image> 
             </p>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="AccessibleValidationTestPage.html"
-                    linktype="examples">working example of Accessible Validation</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL35/AccessibleValidationTestPage.html">
+                    <!--linktype="examples"-->working example of Accessible Validation</loc>.</p>
             <section>
                <head> Validation style for Label controls </head>
                <p>The default validation style for the Invalid state of <obj>Label</obj> does

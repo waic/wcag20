@@ -170,8 +170,8 @@ door, and one file cabinet against the same wall as the door.”/>
                </item>
             </ulist>
             <p>These examples are shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="AutomationPropertiesHelpTextTestPage.html"
-                    linktype="examples">working example of Automation Properties Help Text</loc> and <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL19/AutomationPropertiesHelpTextTestPage.html">
+                    <!--linktype="examples"-->working example of Automation Properties Help Text</loc> and <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="/WAI/WCAG20/Techniques/working-examples/SL8/HelpTextAndToolTipTestPage.html">working example of HelpText and ToolTip</loc>.</p>
          </description>
       </eg-group>
