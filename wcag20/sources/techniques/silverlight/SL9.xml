@@ -218,8 +218,8 @@
     }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="BuiltInKeyEquivalenceTestPage.html"
-                    linktype="examples">working example of built-in keyboard equivalents</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL9/BuiltInKeyEquivalenceTestPage.html">
+                    <!--linktype="examples"-->working example of built-in keyboard equivalents</loc>.</p>
          </description>
       </eg-group>
       <eg-group>

@@ -156,8 +156,8 @@ private void Undo_Click(object sender, RoutedEventArgs e)
                </image> 
             </p>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="StyleSwitcherFontSizeTestPage.html"
-                    linktype="examples">working example of Style Switcher Font Size</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL23/StyleSwitcherFontSizeTestPage.html">
+                    <!--linktype="examples"-->working example of Style Switcher Font Size</loc>.</p>
          </description>
       </eg-group>
       <eg-group>
@@ -202,8 +202,8 @@ private void Undo_Click(object sender, RoutedEventArgs e)
 ]]></codeblock>
             <p>
                 This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="ByAnimationFontSizeTestPage.html"
-                    linktype="examples">working example of By Animation Font Size</loc>.
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL23/ByAnimationFontSizeTestPage.html">
+                    <!--linktype="examples"-->working example of By Animation Font Size</loc>.
               </p>
          </description>
       </eg-group>

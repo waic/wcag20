@@ -128,8 +128,8 @@
  }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="MediaElementControlsTestPage.html"
-                    linktype="examples">working example of Media Element Controls</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL3/MediaElementControlsTestPage.html">
+                    <!--linktype="examples"-->working example of Media Element Controls</loc>.</p>
          </description>
       </eg-group>
    </examples>

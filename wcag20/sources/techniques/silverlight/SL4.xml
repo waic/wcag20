@@ -177,8 +177,8 @@
    }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="SilverFishTestPage.html"
-                    linktype="examples">working example of SilverFish</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL4/SilverFishTestPage.html">
+                    <!--linktype="examples"-->working example of SilverFish</loc>.</p>
          </description>
       </eg-group>
    </examples>

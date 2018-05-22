@@ -83,8 +83,8 @@
 							]]></codeblock>
             <p>
                <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="td-not-th.html"
-                    linktype="examples">View example 1 (opens in same browser window)</loc>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/F91/td-not-th.html">
+                    <!--linktype="examples"-->View example 1 (opens in same browser window)</loc>
 							     </p>
          </description>
       </eg-group>

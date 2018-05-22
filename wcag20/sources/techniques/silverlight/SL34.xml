@@ -143,8 +143,8 @@
    </StackPanel>
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="TabSequenceTestPage.html"
-                    linktype="examples">working example of Tab Sequence</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL34/TabSequenceTestPage.html">
+                    <!--linktype="examples"-->working example of Tab Sequence</loc>.</p>
          </description>
       </eg-group>
       <eg-group>
@@ -196,8 +196,8 @@
  </UserControl>
  ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="TabSequence_TabIndexTestPage.html"
-                    linktype="examples">working example of Tab Sequence TabIndex</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL34/TabSequence_TabIndexTestPage.html">
+                    <!--linktype="examples"-->working example of Tab Sequence TabIndex</loc>.</p>
          </description>
       </eg-group>
       <eg-group>
@@ -253,8 +253,8 @@
        }
        ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="TabSequence_EnabledTestPage.html"
-                    linktype="examples">working example of Tab Sequence Enabled</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL34/TabSequence_EnabledTestPage.html">
+                    <!--linktype="examples"-->working example of Tab Sequence Enabled</loc>.</p>
          </description>
       </eg-group>
    </examples>

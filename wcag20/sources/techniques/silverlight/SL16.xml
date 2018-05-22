@@ -93,8 +93,8 @@ private void OnMarkerReached(object sender, TimelineMarkerRoutedEventArgs e)
 }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="MediaTimelineMarkersTestPage.html"
-                    linktype="examples">working example of Media Timeline Markers</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL16/MediaTimelineMarkersTestPage.html">
+                    <!--linktype="examples"-->working example of Media Timeline Markers</loc>.</p>
          </description>
       </eg-group>
    </examples>

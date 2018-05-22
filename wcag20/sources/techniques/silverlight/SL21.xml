@@ -97,8 +97,8 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
        }
 ]]></codeblock>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="StopAnimationTestPage.html"
-                    linktype="examples">working example of Stop Text Animation</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL21/StopAnimationTestPage.html">
+                    <!--linktype="examples"-->working example of Stop Text Animation</loc>.</p>
          </description>
       </eg-group>
    </examples>

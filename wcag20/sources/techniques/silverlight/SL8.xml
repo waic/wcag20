@@ -231,8 +231,8 @@ door, and one file cabinet against the same wall as the door.”/>
                </image> 
             </p>
             <p>This example is shown in operation in the <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="HelpTextAndToolTipTestPage.html"
-                    linktype="examples">working example of HelpText and Tooltip</loc>.</p>
+                    href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SL8/HelpTextAndToolTipTestPage.html">
+                    <!--linktype="examples"-->working example of HelpText and Tooltip</loc>.</p>
          </description>
       </eg-group>
    </examples>
