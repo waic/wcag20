@@ -25,7 +25,7 @@
     </eg-group>
     <eg-group>
       <head>関係するテキストとコンテナにパーセンテージと em 単位を用いてサイズを指定する</head>
-      <description><p>テキストとコンテナの両方に関係する単位を使うことは、テキストに切り捨てすることなく適応させるようにコンテナを拡張することができる。この画像はインターネットエクスプローラーにおける”標準”サイズの文字である。灰色のボックスは div のコンテナである。</p>
+      <description><p>テキストとコンテナの両方に関係する単位を使うことは、テキストに切り捨てすることなく適応させるようにコンテナを拡張することができる。この画像はインターネットエクスプローラーにおける“標準”サイズの文字である。灰色のボックスは div のコンテナである。</p>
 <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G179/normal.jpg" alt="スクリーンショット: 標準の文字サイズ"/><p>この画像は Internet Explorer の“最大”の文字サイズを用いて同じテキストとコンテナを示している。灰色のボックスはより大きなテキストを囲むために拡張している。</p>
 <graphic xmlns:xlink="http://www.w3.org/1999/xlink" source="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G179/scaled.jpg" alt="スクリーンショット: 最大の文字サイズ"/></description>
       <code><![CDATA[<style type="text/css">
