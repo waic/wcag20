@@ -47,27 +47,15 @@
       <description><p>次のコード例では、 <el>label</el> 要素は存在するが、対応するインプットコントロールとプログラム的に関連付けられていないため、支援技術によって正しく判定されない可能性がある。</p>
 </description>
       <codeblock role="html5" xml:space="preserve"><![CDATA[
-<form action="..." method="post">
-<p>
-<label>
-   姓
-   <input type="text" name="lastname">
-</label>
-<label>
-   名
-   <input type="text" name="firstname">
-</label>
-</p>
-</form>]]></codeblock>
-      <codeblock role="html5" xml:space="preserve"><![CDATA[
 <form action="..." method="post"> 
 <p> 
-<label>姓</label> 
-<input type="text" name="lastname"> 
-<label>名 </label>
+<label>First Name</label>
 <input type="text" name="firstname"> 
+<label>Last Name</label> 
+<input type="text" name="lastname"> 
 </p> 
-</form>]]></codeblock>
+</form>
+]]></codeblock>
     </eg-group>
     <eg-group role="failure">
       <head/>
