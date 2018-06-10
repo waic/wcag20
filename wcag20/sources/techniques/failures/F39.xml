@@ -24,7 +24,11 @@
       </eg-group>
    </examples>
    <resources/>
-   <related-techniques/>
+   <related-techniques>
+      <relatedtech idref="H37"/>
+      <relatedtech idref="C9"/>
+      <relatedtech idref="F38"/>
+   </related-techniques>
    <tests>
       <procedure>
          <olist>
