@@ -519,7 +519,7 @@ document.body.appendChild(newP);
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li></ul><h3 id="F39-description">解説</h3><div class="textbody"><p>この達成方法は、支援技術によって無視されることが望ましい画像に対する失敗条件について述べている。画像のテキストによる代替は、画像の意味を伝えることが望ましい。ページ内に意味のないコンテンツの一部である装飾、スペーシング又は他の目的で画像が使用される場合、画像は意味を持たず、支援技術では無視することが望ましい。</p><p>空のテキストによる代替 (<code>alt=""</code>) を提供すると、支援技術によって画像が無視され、この達成基準の失敗を回避できるだろう。</p></div><h3 class="small-head" id="F39-examples">事例</h3><div class="failure"><h4 class="small-head" id="F39-failex1">
 					    失敗例 1: alt 属性を持たない装飾画像</h4><div class="example"><div class="textbody"><p>コンテンツ間に空白領域を作成するために、それ自体は意味を持たない画像が使用されている。その画像の代替テキストの値は"spacer"である。テキストによる代替が同等の目的を果たさないため、この画像は達成基準に適合しない。その画像は無視されることを意図されているが、代替テキスト"spacer"はスクリーンリーダーによって読み上げられ、いくつかの代替カラースキームでは表示される。</p><div class="code"><pre><code>&lt;div&gt;Tree type: &lt;img src="spacer.gif" width="100" height="1" alt="spacer"/&gt;Cedrus deodara&lt;/div&gt;
-</code></pre></div></div></div></div><h3 id="F39-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F39-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H37">H37: img 要素の alt 属性を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C9">C9:  装飾目的の画像を付加するために、CSS を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/F38">F38: 達成基準 1.1.1 の失敗例 － 支援技術が装飾的な画像を無視できる方法で、HTML でその画像をマークアップしていない</a></li></ul></div><h3 id="F39-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F39-procedure">チェックポイント</h4><ol class="enumar"><li><p>装飾、スペーシング、又はページ内の意味のあるコンテンツに含まれない他の目的に使用される img 要素を特定する</p></li><li><p>これらの要素に対する alt の値が空である。</p></li></ol><h4 class="small-head" id="F39-results">判定基準</h4><ul><li><p>2. を満たさない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F40" id="F40"> </a>F40: 達成基準 2.2.1 及び 達成基準 2.2.4 の失敗例 － 制限時間付きの meta 要素リダイレクトを使用している</h2><div class="applicability"><h3 id="F40-applicability">適用 (対象)</h3><div class="textbody"><p>すべてのページ</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-required-behaviors">
+</code></pre></div></div></div></div><h3 id="F39-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F39-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F39-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F39-procedure">チェックポイント</h4><ol class="enumar"><li><p>装飾、スペーシング、又はページ内の意味のあるコンテンツに含まれない他の目的に使用される img 要素を特定する</p></li><li><p>これらの要素に対する alt の値が空である。</p></li></ol><h4 class="small-head" id="F39-results">判定基準</h4><ul><li><p>2. を満たさない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F40" id="F40"> </a>F40: 達成基準 2.2.1 及び 達成基準 2.2.4 の失敗例 － 制限時間付きの meta 要素リダイレクトを使用している</h2><div class="applicability"><h3 id="F40-applicability">適用 (対象)</h3><div class="textbody"><p>すべてのページ</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-required-behaviors">
 				達成基準 2.2.1 (タイミング調整可能)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-required-behaviors">
 						クイックリファレンス 2.2.1 (タイミング調整可能)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html">
@@ -963,8 +963,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
   &lt;span  onclick="toggleCheckbox('chkbox')"&gt; 
   &lt;img src="unchecked.gif"  id="chkbox" alt=""&gt; 署名を含む
   &lt;/span&gt; 
-  &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F59-failex2">
-					    失敗例 2</h4><div class="example"><div class="textbody"><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p></div><div class="code"><pre><code>
+  &lt;/p&gt;</code></pre></div><div class="textbody"><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p></div><div class="code"><pre><code>
   var CHECKED = "check.gif"; 
   var UNCHECKED = "unchecked.gif"; 
   function toggleCheckbox(imgId) { 
@@ -1036,7 +1035,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
                   <a href="http://www.w3.org/TR/html-aapi/#accessible-name-and-description-calculation"> HTML to Platform Accessibility APIs Implementation Guide: Accessible Name and Description Calculation</a>
                </p></li><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation"> Accessible Rich Internet Applications (WAI-ARIA) 1.0, Section 5.2.7.3. Text Alternative Computation</a>
-               </p></li></ul></div><h3 id="F65-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H67">H67: 支援技術が無視すべき画像に対して、img 要素の alt テキストを空にして、title 属性を付与しない</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H37">H37: img 要素の alt 属性を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA10">ARIA10: 非テキストコンテンツに対してテキストによる代替を提供するために aria-labelledby を使用する</a></li></ul></div><h3 id="F65-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F65-procedure">チェックポイント</h4><p><code>img</code>、<code>area</code> 及びタイプ "image" の <code>input</code> を特定する。これらの要素のそれぞれについて:</p><ol class="enumar"><li><p><span><code>alt</code> 属性が存在するかどうかを確認する。</span></p></li><li><p>
+               </p></li></ul></div><h3 id="F65-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H67">H67: 支援技術が無視すべき画像に対して、img 要素の alt テキストを空にして、title 属性を付与しない</a></li></ul></div><h3 id="F65-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F65-procedure">チェックポイント</h4><p><code>img</code>、<code>area</code> 及びタイプ "image" の <code>input</code> を特定する。これらの要素のそれぞれについて:</p><ol class="enumar"><li><p><span><code>alt</code> 属性が存在するかどうかを確認する。</span></p></li><li><p>
                   <span><code>aria-labelledby</code> 属性が存在するかどうかを確認し、かつページ内の 1 つ以上の id 要素を参照し、かつ <code>aria-labelledby</code> が<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#accessibility-supporteddef">アクセシビリティ サポーテッド</a>かどうかを確認する。</span>
 		       </p></li><li><p>
                   <span><code>aria-label</code> 属性が存在するかどうかを確認し、かつ <code>aria-label</code> が<a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#accessibility-supporteddef">アクセシビリティ サポーテッド</a>かどうかを確認する。</span>
@@ -1090,26 +1089,15 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
  私は猫を飼っている &lt;input type="checkbox" name="pet" value="cat"&gt;
 &lt;/form&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex2">
 					    失敗例 2: </h4><div class="example"><div class="textbody"><p>次のコード例では、 <code>label</code> 要素は存在するが、対応するインプットコントロールとプログラム的に関連付けられていないため、支援技術によって正しく判定されない可能性がある。</p></div><div class="code"><pre><code>
-&lt;form action="..." method="post"&gt;
-&lt;p&gt;
-&lt;label&gt;
-   姓
-   &lt;input type="text" name="lastname"&gt;
-&lt;/label&gt;
-&lt;label&gt;
-   名
-   &lt;input type="text" name="firstname"&gt;
-&lt;/label&gt;
-&lt;/p&gt;
-&lt;/form&gt;</code></pre></div><div class="code"><pre><code>
 &lt;form action="..." method="post"&gt; 
 &lt;p&gt; 
-&lt;label&gt;姓&lt;/label&gt; 
-&lt;input type="text" name="lastname"&gt; 
-&lt;label&gt;名 &lt;/label&gt;
+&lt;label&gt;First Name&lt;/label&gt;
 &lt;input type="text" name="firstname"&gt; 
+&lt;label&gt;Last Name&lt;/label&gt; 
+&lt;input type="text" name="lastname"&gt; 
 &lt;/p&gt; 
-&lt;/form&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex3">
+&lt;/form&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex3">
 					    失敗例 3: </h4><div class="example"><div class="textbody"><p>次のコード例の検索テキストボックスには、プログラムによる解釈が可能な名前がない。名前 (name) は、上記の方法のいずれかで提供することができる。</p></div><div class="code"><pre><code>
 &lt;input type="text" value="検索文字列を入力"&gt;&lt;input type="submit" type="submit" value="検索"&gt;</code></pre></div></div></div><h3 id="F68-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/roles#namecalculation">WAI-ARIA Accessible Name Calulation</a>
@@ -1202,7 +1190,7 @@ p a:hover {text-decoration: underline; color: red;}
 &lt;p&gt;もし&lt;a href="rain_in_spain.htm"&gt;スペインでの雨&lt;/a&gt;に
 関する情報を見つけたいならば、多くのリソースがある。&lt;/p&gt;
 
-&lt;/body&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>視覚的な手掛かりが、(上の例のように) マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p></div></div></div></div><h3 id="F73-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G182">G182: 文字色の違いが情報を伝えるために使用される場合に、利用可能な追加の視覚的な手がかりを確保する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G183">G183: もっぱら色が特定するために用いられる、リンク又はコントロールに対するフォーカスに、周囲のテキストと 3:1 以上のコントラスト比を使用して、追加の視覚的な手がかりを確保する</a></li></ul></div><h3 id="F73-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F73-procedure">チェックポイント</h4><ol class="enumar"><li><p>ウェブページにある文章中又は段落内 (あるいは、リンクではないテキストと区別しづらいその他のエリア) のテキストにあるリンクそれぞれに、下線が付いているか、又は色 (色相) に依存することなく視覚的にリンクとして区別できる (太字、イタリックなど)。</p></li></ol><h4 class="small-head" id="F73-results">判定基準</h4><ul><li><p>1. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F74" id="F74"> </a>F74: 達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する同期したメディアによる代替を、代替としてラベル付けしていない</h2><div class="applicability"><h3 id="F74-applicability">適用 (対象)</h3><div class="textbody"><p>テキストに対する代替である同期したメディアを提供しているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
+&lt;/body&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>視覚的な手掛かりが、(上の例のように) マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p></div></div></div></div><h3 id="F73-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F73-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F73-procedure">チェックポイント</h4><ol class="enumar"><li><p>ウェブページにある文章中又は段落内 (あるいは、リンクではないテキストと区別しづらいその他のエリア) のテキストにあるリンクそれぞれに、下線が付いているか、又は色 (色相) に依存することなく視覚的にリンクとして区別できる (太字、イタリックなど)。</p></li></ol><h4 class="small-head" id="F73-results">判定基準</h4><ul><li><p>1. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F74" id="F74"> </a>F74: 達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する同期したメディアによる代替を、代替としてラベル付けしていない</h2><div class="applicability"><h3 id="F74-applicability">適用 (対象)</h3><div class="textbody"><p>テキストに対する代替である同期したメディアを提供しているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#media-equiv-captions">
 						クイックリファレンス 1.2.2 (キャプション (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-captions.html">
