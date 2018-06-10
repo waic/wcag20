@@ -148,12 +148,12 @@
 </description>
       <codeblock xml:space="preserve"><![CDATA[
 1 0 obj
-  &lt;&lt; /FT /Btn     % 役割
+  << /FT /Btn     % 役割
      /TU Retiree  % 名前
      /V /Yes      % 値
      /AS /Yes
-     /AP &lt;&lt; /N &lt;&lt; /Yes 2 0 R /Off 3 0 R&gt;&gt;
-  &gt;&gt;
+     /AP << /N << /Yes 2 0 R /Off 3 0 R>>
+  >>
 endobj]]></codeblock>
     </eg-group>
    </examples>

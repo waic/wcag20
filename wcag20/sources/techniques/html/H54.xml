@@ -16,11 +16,12 @@
       <eg-group>
       <description><p>次のコードは、<el>dfn</el> 要素の使用例である。</p>
 </description>
-      <code role="html401"><![CDATA[<p>ウェブコンテンツアクセシビリティガイドラインは、非テキストコンテンツに
-対するテキストによる代替を要求している。&lt;dfn&gt;非テキストコンテンツ&lt;/dfn&gt;とは、
-プログラムで解釈可能な一連の文字列ではないコンテンツや、人間の言葉として
-表現されない一連のものであり、ASCIIアート (文字を使った図柄)、顔文字、
-リート語 (文字の代用)、テキストの代わりとなる画像が含まれる。</p>]]></code>
+      <code role="html401"><![CDATA[<p>The Web Content Accessibility Guidelines require that non-text content
+has a text alternative. <dfn>Non-text content</dfn> is content that is not a sequence
+of characters that can be programmatically determined or where the sequence is
+not expressing something in human language; this includes ASCII Art (which is a
+pattern of characters), emoticons, leetspeak (which is character substitution), and
+images representing text .</p>]]></code>
     </eg-group>
    </examples>
    <resources>

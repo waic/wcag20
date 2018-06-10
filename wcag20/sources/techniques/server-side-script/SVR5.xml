@@ -34,8 +34,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
       <head>PHP によるコンテンツの自然言語設定</head>
       <description><p>PHP では、開発者は header メソッドで生の HTTP ヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している:</p>
 </description>
-      <code><![CDATA[
-&lt;?php  header('Content-language: fr');  …  ?&gt;]]></code>
+      <code><![CDATA[<?php  header('Content-language: fr');  …  ?>  ]]></code>
     </eg-group>
    </examples>
    <resources>

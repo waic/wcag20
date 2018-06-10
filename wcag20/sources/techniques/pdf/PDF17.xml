@@ -52,19 +52,18 @@
 <p><em>事例:</em> i, ii, iii, iv, 1, 2, 3, A-8, A-9, …  </p>
 <p>この番号付けスキームでは、三つのページラベル辞書 (小文字のローマ字、アラビア語、接頭語が付いた番号) が必要になる。 </p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-1 0 obj
-    &lt;&lt; /Type /Catalog
-       /PageLabels &lt;&lt; /Nums [ 0 &lt;&lt; /S /r &gt;&gt;  % 小文字のローマ数字
-                              4 &lt;&lt; /S /D &gt;&gt;  % アラビア数字
-                              7 &lt;&lt; /S /D     % アラビア数字と...
+      <codeblock xml:space="preserve"><![CDATA[1 0 obj
+    << /Type /Catalog
+       /PageLabels << /Nums [ 0 << /S /r >>  % 小文字のローマ数字
+                              4 << /S /D >>  % アラビア数字
+                              7 << /S /D     % アラビア数字と...
                       /P (A-)                % 接頭語 "A-"...
                       /St 8                  % ページ 8 から開始
-                                &gt;&gt;
+                                >>
                             ]
-                    &gt;&gt;
+                    >>
        …
-   &gt;&gt;
+   >>
   endobj]]></codeblock>
       <description><p>ページラベルは次のように指定される。</p>
 <ulist><item><p><code>/S</code>は、ページ番号の番号付けスタイルを指定する。</p>
