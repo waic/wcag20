@@ -170,7 +170,8 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
   response.setHeader("Content-Language", "en");
   PrintWriter out = response.getWriter();
 …
-}</code></pre></div></div><h4 class="small-head" id="SVR5-ex2">事例 2: PHP によるコンテンツの自然言語設定</h4><div class="example"><div class="textbody"><p>PHP では、開発者は header メソッドで生の HTTP ヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?php  header('Content-language: fr');  …  ?&gt;  </code></pre></div></div><h3 id="SVR5-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><p>
+}</code></pre></div></div><h4 class="small-head" id="SVR5-ex2">事例 2: PHP によるコンテンツの自然言語設定</h4><div class="example"><div class="textbody"><p>PHP では、開発者は header メソッドで生の HTTP ヘッダーを送ることができる。次の例では、自然言語をフランス語に設定している:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&amp;lt;?php  header('Content-language: fr');  …  ?&amp;gt;</code></pre></div></div><h3 id="SVR5-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><p>
             <a href="http://www.w3.org/International/questions/qa-http-and-lang">W3C Internationalization FAQ: HTTP and meta for language information</a>
 						   </p><p>
             <a href="http://www.w3.org/TR/2014/NOTE-i18n-html-tech-lang-20140603/#metadata">Declaring metadata about the language(s) of the intended audience</a> in Authoring HTML: Language declarations - W3C Working Group Note 3 June 2014. </p><p>
