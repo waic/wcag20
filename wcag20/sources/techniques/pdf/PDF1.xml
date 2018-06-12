@@ -38,7 +38,54 @@
     <eg-group>
       <head>Microsoft Word を使用して生成した PDF 文書内の画像に /Alt エントリを追加する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
-</description>
+
+<section id="PDF1_word_2003">
+               <head> Word 2000-2003 </head>
+               <olist>
+                  <item>
+                     <p>画像を右クリックし、［図の書式設定］を選択する。</p>
+                  </item>
+                  <item>
+                     <p>［Web］タブを選択する。</p>
+                  </item>
+                  <item>
+                     <p>表示されるテキストボックスに代替テキストを入力し、［OK］を押下する。</p>
+                  </item>
+               </olist>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/word2003alt.gif"
+                          height="291"
+                          width="416"/>
+                     <alt>スクリーンショット：図の書式設定ダイアログの［Web］タブ</alt>
+                  </image> 
+               </p>
+            </section>
+            <section id="PDF1_word_2007">
+               <head> Word 2007 </head>
+               <olist>
+                  <item>
+                     <p>画像を右クリックし、［サイズ］を選択する。</p>
+                  </item>
+                  <item>
+                     <p>［代替テキスト］タブを選択する。</p>
+                  </item>
+                  <item>
+                     <p> 表示されるテキストボックスに代替テキストを入力し、［OK］を押下する。</p>
+                  </item>
+               </olist>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF1/word2007alt.gif"
+                          height="272"
+                          width="362"/>
+                     <alt>［サイズ］ダイアログの［代替テキスト］タブ</alt>
+                  </image> 
+               </p>
+            </section>
+        </description>
     </eg-group>
     <eg-group>
       <head>OpenOffice.org Writer 2.2 を使用して生成した PDF 文書内の画像に /Alt エントリを追加する</head>
