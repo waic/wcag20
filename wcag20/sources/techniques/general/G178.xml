@@ -19,7 +19,22 @@
     <note><p>この達成方法は、非適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替えの達成方法との組み合わせで用いることができる。更なる情報は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head"  linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
                </note>
   </description>
-   <examples/>
+   <examples>
+      <ulist>
+         <item>
+            <p>新聞記事のページ上部に 2 つのボタンがある。「文字サイズを大きくする」ボタンは上矢印と大文字「T」、「文字サイズを小さくする」ボタンは下矢印と小文字「T」がある。それぞれのボタンには <att>alt</att> テキストがある。</p>
+         </item>
+         <item>
+            <p>サイトは、異なる文字サイズの複数のスタイルシートを持つ。ブラウザがこの機能を提供する場合、利用者はスタイルシートのいずれかを選択できる。各ページには、各ページには現在適用されているスタイルシートを適切な代替スタイルシートに変更するリンク「文字サイズを大きくする」と「文字サイズを小さくする」も含まれている。</p>
+         </item>
+         <item>
+            <p>サイトは、すべてのウェブページで「文字サイズを変更」というテキストの後に「上へ」および「下へ」のテキストリンクを含んでいる。リンクは、それに応じて text-size プロパティの値を変更する Javascript をトリガーする。</p>
+         </item>
+         <item>
+            <p>サイトは、「文字サイズを変更する」と表示されているすべてのページにリンクが含まれている。結果のページには、利用可能なサイズを表すオプションを含む一連のリンクが含まれている。リンクは、「最小フォントサイズ」、「小さいフォントサイズ」、「デフォルトフォントサイズ」、「大きいフォントサイズ」などが表示されている。</p>
+         </item>
+      </ulist>
+   </examples>
    <tests>
       <procedure>
       <olist>
