@@ -34,7 +34,7 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>見出し要素 (<code>th</code>) やテーブルコンテンツの中からプログラム的に見出しを算出させるためにほかの適切なテーブルマークアップ (<code>scope</code> 属性、<code>headers</code> 及び <code>id</code> あるいは ARIA ロール <code>columnheader</code> や <code>rowheader</code>) が使われていないときにこの失敗例は起こる。データセルが見出し情報と組み合わせるときだけはっきりする場合、見出しをプログラム的に算出可能にするのは特別に重要である。スクリーンリーダーの利用者がテーブルコンテンツを縦あるいは横に閲覧する場合、見出しは必要な文脈を提供するために読み上げられる。</p>
+      <p>この失敗例は、データテーブルが、テーブルコンテンツの内側からプログラムによる解釈が可能な見出しを作成するために、見出し要素 (<code>th</code>) 又はほかの適切なテーブルマークアップ (<code>scope</code>) 属性、<code>headers</code> 及び <code>id</code> 又は ARIA ロール <code>columnheader</code> / <code>rowheader</code>) を使用しないときに起こる。データセルがヘッダー情報とともにのみ明瞭である場合、ヘッダーをプログラムによる解釈が可能にすることは、特に重要である。スクリーンリーダーの利用者がテーブルコンテンツを水平又は垂直にナビゲートする場合、データセル内の情報に必要な文脈を提供するために変更された見出しを読み上げることができる。</p>
    </description>
    <examples>
       <eg-group role="failure">
@@ -115,6 +115,7 @@
                <p>ARIA のロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
             </item>
          </olist>
+          <trnote><p>2 と 3 は全く同一の内容であるが、原文ママである。</p></trnote>
       </procedure>
       <expected-results>
          <ulist>
