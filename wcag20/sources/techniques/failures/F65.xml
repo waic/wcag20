@@ -42,6 +42,8 @@
    </resources>
    <related-techniques>
       <relatedtech idref="H67"/>
+      <relatedtech idref="H37"/>
+      <relatedtech idref="ARIA10"/>
       <!-- Using aria-labelledby to provide a text alternative for non-text content-->
    </related-techniques>
    <tests>

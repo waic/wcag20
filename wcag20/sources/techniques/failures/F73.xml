@@ -50,7 +50,10 @@ p a:hover {text-decoration: underline; color: red;}
 </description>
     </eg-group>
    </examples>
-   <related-techniques/>
+   <related-techniques>
+      <relatedtech idref="G182"/>
+      <relatedtech idref="G183"/>
+   </related-techniques>
    <tests>
       <procedure>
       <olist>
