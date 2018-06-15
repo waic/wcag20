@@ -963,8 +963,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
   &lt;span  onclick="toggleCheckbox('chkbox')"&gt; 
   &lt;img src="unchecked.gif"  id="chkbox" alt=""&gt; 署名を含む
   &lt;/span&gt; 
-  &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F59-failex2">
-					    失敗例 2</h4><div class="example"><div class="textbody"><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p></div><div class="code"><pre><code>
+  &lt;/p&gt;</code></pre></div><div class="textbody"><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p></div><div class="code"><pre><code>
   var CHECKED = "check.gif"; 
   var UNCHECKED = "unchecked.gif"; 
   function toggleCheckbox(imgId) { 
@@ -1090,26 +1089,15 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
  私は猫を飼っている &lt;input type="checkbox" name="pet" value="cat"&gt;
 &lt;/form&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex2">
 					    失敗例 2: </h4><div class="example"><div class="textbody"><p>次のコード例では、 <code>label</code> 要素は存在するが、対応するインプットコントロールとプログラム的に関連付けられていないため、支援技術によって正しく判定されない可能性がある。</p></div><div class="code"><pre><code>
-&lt;form action="..." method="post"&gt;
-&lt;p&gt;
-&lt;label&gt;
-   姓
-   &lt;input type="text" name="lastname"&gt;
-&lt;/label&gt;
-&lt;label&gt;
-   名
-   &lt;input type="text" name="firstname"&gt;
-&lt;/label&gt;
-&lt;/p&gt;
-&lt;/form&gt;</code></pre></div><div class="code"><pre><code>
 &lt;form action="..." method="post"&gt; 
 &lt;p&gt; 
-&lt;label&gt;姓&lt;/label&gt; 
-&lt;input type="text" name="lastname"&gt; 
-&lt;label&gt;名 &lt;/label&gt;
+&lt;label&gt;First Name&lt;/label&gt;
 &lt;input type="text" name="firstname"&gt; 
+&lt;label&gt;Last Name&lt;/label&gt; 
+&lt;input type="text" name="lastname"&gt; 
 &lt;/p&gt; 
-&lt;/form&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex3">
+&lt;/form&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex3">
 					    失敗例 3: </h4><div class="example"><div class="textbody"><p>次のコード例の検索テキストボックスには、プログラムによる解釈が可能な名前がない。名前 (name) は、上記の方法のいずれかで提供することができる。</p></div><div class="code"><pre><code>
 &lt;input type="text" value="検索文字列を入力"&gt;&lt;input type="submit" type="submit" value="検索"&gt;</code></pre></div></div></div><h3 id="F68-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/roles#namecalculation">WAI-ARIA Accessible Name Calulation</a>
