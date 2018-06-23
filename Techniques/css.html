@@ -205,7 +205,25 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
  …
  &lt;/div&gt;
 &lt;/div&gt;
-…</code></pre></div></div><h3 id="C9-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> The <a href="https://www.w3.org/TR/CSS2/colors.html#propdef-background">background property in the CSS 2 specification</a> 
+…</code></pre></div></div><h4 class="small-head" id="C9-ex4">事例 4: 見出しの見た目を良くするために使用される画像置換</h4><div class="example"><div class="textbody"><p>
+以下の例では、見出し要素の内容であるテキストを置き換えるために装飾目的の画像が使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;style type="text/css"&gt;
+h3#about {
+width: 480px;
+height: 34px;
+position: relative;
+}
+
+h3#about span {
+background: url(about.gif) no-repeat;
+position: absolute;
+width: 100%;
+height: 100%;
+}
+&lt;/style&gt;
+...
+
+&lt;h3 id="about" title="About example.com"&gt; &lt;span&gt;&lt;/span&gt;example.com について&lt;/h3&gt;</code></pre></div></div><h3 id="C9-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> The <a href="https://www.w3.org/TR/CSS2/colors.html#propdef-background">background property in the CSS 2 specification</a> 
                </p></li><li><p><a href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-background">HTML 4.01 specification</a> には、<code>body</code> 要素の <code>background</code> 属性は非推奨であると記述されている。</p></li></ul></div><h3 id="C9-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/C30">C30: テキストを画像文字に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/F3">F3: 達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を付加するために、CSS を使用している</a></li></ul></div><h3 id="C9-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C9-procedure">チェックポイント</h4><ol class="enumar"><li><p>装飾目的の画像がある。</p></li><li><p>それらが CSS で表示させられている。</p></li></ol><h4 class="small-head" id="C9-results">判定基準</h4><ul><li><p>1. に該当する場合に、2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C12" id="C12"> </a>C12: フォントサイズにパーセントを使用する</h2><div class="applicability"><h3 id="C12-applicability">適用 (対象)</h3><div class="textbody"><p>CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-scale">
 				達成基準 1.4.4 (テキストのサイズ変更)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast-scale">
 						クイックリファレンス 1.4.4 (テキストのサイズ変更)
