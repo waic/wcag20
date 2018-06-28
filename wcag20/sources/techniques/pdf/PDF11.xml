@@ -65,13 +65,12 @@
 <p>タグ付き PDF の /Link エレメントは、PDF の論理構造を使用してコンテンツ項目とリンク注釈の間の関連付けを確立し、HTML ハイパーテキストリンクに相当する機能を提供する。</p>
 <p>HTML の場合、次の事例はハイパーテキストリンクを含むテキストを生成する。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt; inside.]]></codeblock>
+      <codeblock xml:space="preserve"><![CDATA[Here is some text <a href="http://www.w3.org/WAI/"> with a link </a> inside.
+]]></codeblock>
       <description><p>PDF の場合、最初にページが表現され、オブジェクトアクションが発生する領域にリンク注釈が配置される必要がある。</p>
 <p>次のコードフラグメントは、アンダーラインの付いた青色で表示されるリンクテキストを使用する、上述の HTML に相当する PDF を示している。次に続く 2 番目のコードフラグメントは、関連付けられた論理構造階層を示している。これは通常、オーサリングツールを使用して行う。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-/P &lt;&lt;/MCID 0&gt;&gt;                                                % マークされたコンテンツ順序 0 (段落)
+      <codeblock xml:space="preserve"><![CDATA[ /P <</MCID 0>>                                                % マークされたコンテンツ順序 0 (段落)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     /F1 11.04 Tf                                               % テキストのフォントおよびサイズの設定
@@ -82,7 +81,7 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
    ET                                                          % テキストオブジェクトの終わり
   EMC                                                          % マークされたコンテンツ順序の終わり
  
- /Span &lt;&lt;/MCID 1&gt;&gt;                                             % マークされたコンテンツ順序 1 (下線付きのリンクテキスト)
+ /Span <</MCID 1>>                                             % マークされたコンテンツ順序 1 (下線付きのリンクテキスト)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     1 0 0 1 152.42 709.54 Tm                                   % テキストマトリクスの設定
@@ -95,7 +94,7 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
     f*                                                         % 偶数奇数ルールを使用してパスを塗りつぶす
   EMC                                                          % マークされたコンテンツ順序の終わり
  
- /P &lt;&lt;/MCID 2&gt;&gt;                                                % マークされたコンテンツ順序 2 (段落)
+ /P <</MCID 2>>                                                % マークされたコンテンツ順序 2 (段落)
   BDC                                                          % マークされたコンテンツ順序の始まり
    BT                                                          % テキストオブジェクトの始まり
     1 0 0 1 198.41 709.54 Tm                                   % テキストマトリクスの設定                                             
@@ -114,38 +113,37 @@ Here is some text &lt;a href="http://www.w3.org/WAI/"&gt; with a link &lt;/a&gt;
   EMC                                                          % マークされたコンテンツ順序の終わり]]></codeblock>
       <description><p>次のコードフラグメントは、コンテンツ項目とリンク注釈の間の関連付けを確立する論理構造からの抜粋である。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-11 0 obj                                              % オブジェクト ID 11、生成 0、obj キーワード
-  &lt;&lt;/K[1                                               % 構造ツリールートの直接の子
-   &lt;&lt;
+      <codeblock xml:space="preserve"><![CDATA[ 11 0 obj                                              % オブジェクト ID 11、生成 0、obj キーワード
+  <</K[1                                               % 構造ツリールートの直接の子
+   <<
     /Obj 26 0 R                                        % 26 への参照
     /Type/OBJR                                         % このオブジェクトは間接的なオブジェクト参照を表す
-   &gt;&gt;]
+   >>]
     /P 12 0 R
     /Pg 17 0 R
     /S/Link
-  &gt;&gt;
+  >>
  endobj
  
  26 0 obj                                              % オブジェクト 11 内の OBJR によって参照されるオブジェクト ID 26
-  &lt;&lt;/A 31 0 R
+  <</A 31 0 R
    /BS
-   &lt;&lt;/S/S
+   <</S/S
      /Type/Border
      /W 0
-   &gt;&gt;
+   >>
    /Border[0 0 0]                                      % 色なし境界線
    /H/I
    /Rect[150.128 694.558 200.551 720.0]                % リンク注釈がアクティブな対象領域を定義する境界
    /StructParent 1
    /Type/Annot                                         % 構造エレメントは注釈
    /Subtype/Link
-  &gt;&gt;                                                   % リンク注釈                                                 
+  >>                                                           % リンク注釈                                                 
  endobj     
  31 0 obj                                              % オブジェクト 31、生成 0、obj
-  &lt;&lt;/S/URI                                             % オブジェクトタイプは URI アクション
+  <</S/URI                                             % オブジェクトタイプは URI アクション
     /URI(http://www.w3.org/WAI)                        % 解決する URI
-  &gt;&gt;   
+  >>   
  endobj]]></codeblock>
     </eg-group>
    </examples>

@@ -93,8 +93,7 @@
       <head>インタラクティブなフォームコントロールにツールヒントを追加する</head>
       <description><p>次のコードフラグメントは、TU エントリを使用してフォームフィールドにツールヒント (またはプログラムで関連付けられたテキストラベル) を追加する方法を示している。これは通常、オーサリングツールを使用して行う。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-&lt;&lt; /AP -dict-                                                   
+      <codeblock xml:space="preserve"><![CDATA[<< /AP -dict-                                                   
    /DA /Helv  0 Tf 0 g
    /DR -dict-
    /F 0x4
@@ -107,11 +106,11 @@
    /TU Date you are available: use MM/DD/YYYY format % 簡単な説明として機能する TU ツールヒントの値
    /Type Annot
    /V Pat Jones
-&gt;&gt;
+>>
 ...
-&lt;Start Stream&gt;
+<Start Stream>
  BT
-  /P &lt;&lt;/MCID 0 &gt;&gt;BDC
+  /P <</MCID 0 >>BDC
   /CS0 cs 0  scn 
   /TT0 1 Tf
     -0.001 Tc 0.003 Tw 11.04 0 0 11.04 72 709.56 Tm
@@ -121,18 +120,19 @@
   -0.004 Tc 0.004 Tw 0.217 0 Td
   [(\()-5(R)-4(e)5(q)-1(u)-1(i)-3(r)-3(e)-6(d)-1(\))]TJ
  EMC
-  /P &lt;&lt;/MCID 1 &gt;&gt;BDC
+  /P <</MCID 1 >>BDC
   0 Tc 0 Tw 4.283 0 Td
   [( )-2( )]TJ
    EMC
-   /ArtifactSpan &lt;&lt;/MCID 2 &gt;&gt;BDC
+   /ArtifactSpan <</MCID 2 >>BDC
    0.002 Tc -0.002 Tw 0.456 0 Td
   [(__)11(___)11(___)11(___)11(___)11(_)11(____)11(___)11(___)11(__)]TJ
   0 Tc 0 Tw 13.391 0 Td
   ( )Tj
   EMC
  ET
-&lt;End Stream&gt;]]></codeblock>
+<End Stream>
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>

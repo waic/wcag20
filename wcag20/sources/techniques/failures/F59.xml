@@ -24,8 +24,6 @@
   <img src="unchecked.gif"  id="chkbox" alt=""> 署名を含む
   </span> 
   </p>]]></codeblock>
-    </eg-group>
-    <eg-group role="failure">
       <description><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[

@@ -18,52 +18,47 @@
    <examples>
       <eg-group>
       <description><p>美術館の展示に関するウェブページに、リンクのリストを含んだナビゲーションバーがある。また、そのページには、展示品のうちのある一つの絵の画像、表題、及び詳しい説明がある。ナビゲーションバーのリンクは意味のある順序となっていて、表題、画像、及び説明のテキストもまた意味のある順序となっている。これらの要素をページに配置するのには、CSS が用いられている。</p>
-</description>
-      <code role="html401"><![CDATA[
-マークアップ:
-
-<h1>美術館のページ</h1>
-<ul id="nav">
-	<li><a href="#">リンク 1</a></li>
-
-	...
-	<li><a href="#">リンク 10</a></li>
-</ul>
-<div id="description">
-<h2>モナリザ</h2>
-<p>
-
-<img src="img.png" alt="モナリザ">
-</p>
-<p>...絵の詳しい説明...</p>
-</div>
-
-CSS:
-
-ul#nav
-{
-	float: left;
-	width: 9em;
-	list-style-type: none;
-	margin: 0;
-	padding: 0.5em;
-	color: #fff;
-	background-color: #063;
-}
-
-ul#nav a
-{
-	display: block;
-	width: 100%;
-	text-decoration: none;
-	color: #fff;
-	background-color: #063;
-}
-
-div#description
-{
-	margin-left: 11em;
-} ]]></code>
+            <p>マークアップ:</p>
+         </description>
+         <code role="html401"><![CDATA[
+  <h1>My Museum Page</h1>
+  <ul id="nav">
+    <li><a href="#">Link 1</a></li>
+    ...
+    <li><a href="#">Link 10</a></li>
+  </ul>
+  <div id="description">
+    <h2>Mona Lisa</h2>
+    <p>
+    <img src="img.png" alt="Mona Lisa">
+    </p>
+    <p>...detailed description of the picture...</p>
+  </div>
+          ]]></code>
+          <description>
+            <p>CSS:</p>
+          </description> 
+          <code role="css"><![CDATA[
+  ul#nav {
+    float: left;
+    width: 9em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+    color: #fff;
+    background-color: #063;
+  }
+  ul#nav a {
+   display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #063;
+  }
+  div#description {
+    margin-left: 11em;
+  }
+        ]]></code>
     </eg-group>
    </examples>
    <resources/>
