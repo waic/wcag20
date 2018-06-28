@@ -39,13 +39,144 @@
       <eg-group>
       <head>Adobe Acrobat 9 Pro を使用して、PDF 文書内のタグ付き見出しを追加または変更する</head>
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
+<section>
+               <head>Touchup 読み上げ順序ツールを使用する</head>
+               <p>PDF 文書に見出しを追加する方法の 1 つとして、Touchup 読み上げ順序ツールを使用できる。</p>
+               <olist>
+                  <item>
+                     <p>Adobe Acrobat Pro で PDF 文書を開く</p>
+                  </item>
+                  <item>
+                     <p>アドバンスト &gt; アクセシビリティ &gt; TouchUp 読み上げ順序を選択する</p>
+                  </item>
+                  <item>
+                     <p>TouchUp 読み上げ順序パネルの［順序パネルを表示］ボタンをクリックする。</p>
+                  </item>
+                  <item>
+                     <p>［順序］パネルでタグが表示される</p>
+                  </item>
+               </olist>
+               <p>次の画像は、Adobe Acrobat Pro で開いた PDF 文書を示している。タグパネルが開き、H1 タグとして「Cooking techniques」、H2 タグとして「Cooking with oil」という見出しテキストが表示されている。「Cooking with butter」というテキストは H2 タグとすべきであるが、H2 タグにはなっていない。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking-headings1.gif"
+                          height="326"
+                          width="539"/>
+                     <alt>スクリーンショット：Adobe Acrobat で開いた PDF 文書。［タグ］パネルには、タグツリー内の見出しが表示されている。H2 としてタグ付けされるべきテキストが、誤って段落としてタグ付けされている。</alt>
+                  </image> 
+               </p>
+               <p>H2 見出しに修正するには、次のように TouchUp 読み上げ順序パネルを使用する。</p>
+               <olist>
+                  <item>
+                     <p>選択ボックスを左クリックして、タグ付けするコンテンツにドラッグする</p>
+                  </item>
+                  <item>
+                     <p>TouchUp 読み上げ順序パネルから「見出し 2」タグを選択する</p>
+                  </item>
+               </olist>
+               <p>次の画像は、Adobe Acrobat Pro で開いた PDF 文書を示している。TouchUp 読み上げ順序パネルが表示されている。「Cooking with butter」テキストの近くに選択ボックスが表示され、パネルの「見出し 2」が選択されている。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking-headings2.gif"
+                          height="607"
+                          width="585"/>
+                     <alt>スクリーンショット：Adobe Acrobat で開いた PDF 文書。TouchUp 読み上げ順序パネルが表示されている。見出しテキストが選択され、パネルの「見出し 2」が選択されている。</alt>
+                  </image> 
+               </p>
+               <p>最後に、TouchUp 読み上げ順序パネルの［順序パネルを表示］ボタンを押下する。</p>
+               <p>次の画像は、Adobe Acrobat Pro で開いた PDF 文書を示している。タグパネルが表示され、H2 としてタグ付けされた「Cooking with butter」というテキストが表示されている。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking-headings3.gif"
+                          height="352"
+                          width="520"/>
+                     <alt>スクリーンショット：Adobe Acrobat で開いた PDF 文書。TouchUp 読み上げ順序パネルに正しくタグ付けされた見出しが表示されている。</alt>
+                  </image> 
+               </p>
+            </section>
+            <section>
+               <head>［順序］パネルと［タグ］パネルを使用する</head>
+               <p>次の手順に従い、見出しを追加または変更することもできる。</p>
+               <olist>
+                  <item>
+                     <p>［順序］パネルを表示する</p>
+                  </item>
+                  <item>
+                     <p>変更または追加する見出しのテキストのコンテキストメニューを開く</p>
+                  </item>
+                  <item>
+                     <p>テキストに対する正しい見出しタグを選択する</p>
+                  </item>
+               </olist>
+               <p>次のスクリーンショットは、「Cooking with butter」というテキストの順序パネルとコンテキストメニューを示している。コンテキストメニューから「見出し 2 としてタグ付け」が選択されている。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking-headings4.gif"
+                          height="637"
+                          width="649"/>
+                     <alt>スクリーンショット：Adobe Acrobat で開いた PDF 文書。順序パネルとコンテキストメニューに、見出し2 に変更するテキストが示されている。</alt>
+                  </image> 
+               </p>
+               <p>次のスクリーンショットに示すように、タグパネルを開いて、正しい見出しが適用されていることを確認できる。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking-headings5.gif"
+                          height="319"
+                          width="480"/>
+                     <alt> PDF document opened in Adobe Acrobat. The Tags panel confirms the correct heading tags.</alt>
+                  </image> 
+               </p>
+               <p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking.docx">
+                       <!--linktype="examples"-->タグ付き見出しを追加するサンプル (Word ファイル)</loc> と<loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                       href="http://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF9/cooking.pdf">
+                       <!--linktype="examples"-->タグ付き見出しを追加するサンプル (PDF ファイル)</loc> がある。</p>
+            </section>
 </description>
     </eg-group>
     <eg-group>
       <head>PDF 変換時に正しいタグ付き見出しのある Microsoft Word 文書を作成する</head>
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>スタイルを使用して、見出しの書式 (見出し 1、見出し 2、見出し 3 など) を作成する。スタイルが論理的な構成になるようにする (見出し 2 が見出し 1 より後に来るようにするなど)。</p>
-</description>
+            <section>
+               <head>In Microsoft Word 2003 </head>
+               <ulist>
+                  <item>
+                     <p>書式 &gt; スタイルと書式メニューを選択し、［スタイルと書式］ウィンドウを表示する</p>
+                  </item>
+                  <item>
+                     <p>［スタイルと書式］パネルに用意されている見出し 1～6 のスタイルを使用する</p>
+                  </item>
+               </ulist>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org//WAI/WCAG20/Techniques/working-examples/PDF9/word2003.gif"
+                          height="288"
+                          width="500"/>
+                     <alt>スクリーンショット：Word 2003での見出しの書式の選択</alt>
+                  </image> 
+               </p>
+            </section>
+            <section>
+               <head>In Microsoft Word 2007/2010 </head>
+               <p>Word 2007/2010 で［ホーム］リボンを選択し、スタイルのグループから適切な見出し (見出し 1～6) を選択する。</p>
+               <p>
+                  <image>
+                     <img xmlns:xlink="http://www.w3.org/1999/xlink"
+                          source="https://www.w3.org//WAI/WCAG20/Techniques/working-examples/PDF9/word2007.gif"
+                          height="109"
+                          width="500"/>
+                     <alt>Word 2007/2010での見出しの書式の選択</alt>
+                  </image> 
+               </p>
+            </section>
+        </description>
     </eg-group>
     <eg-group>
       <head>OpenOffice.org Writer 2.2 で PDF 変換時に正しいタグ付き見出しがある文書を作成する</head>

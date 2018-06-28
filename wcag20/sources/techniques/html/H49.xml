@@ -33,6 +33,9 @@
     <p>大部分のユーザエージェントは、セマンティックなマークアップによって特定されたテキストを、ほかとは別の見た目にする。支援技術の中には、セマンティックなマークアップを適切に用いることで、コンテンツの特性を決定するためのメカニズムを提供するものもある。</p>
   </description>
    <examples>
+      <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
+              href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H49/semantictext.html">
+              <!--linktype="examples"-->セマンティックなテキストのレンダリング例</loc>を参照。</p>
       <eg-group>
       <description><p>この事例では、テキストの強調に <el>em</el> 要素と <el>strong</el> 要素を利用する方法を示している。<el>em</el> 要素と <el>strong</el> 要素は、構造的な強調を示すのに用意されているものであり、さまざまな形式で描画されうる (フォントスタイルの変更、読み上げ時の抑揚の変更など)。</p>
 </description>
