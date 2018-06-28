@@ -1,6 +1,6 @@
 # WCAG 2.0 本体、解説書および達成方法集
 
-[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0](http://waic.jp/docs/WCAG20/Overview.html) 、[WCAG 2.0 解説書](http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) および [WCAG 2.0 達成方法集](http://waic.jp/docs/WCAG-TECHS/Overview.html) のレポジトリです。
+[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](https://waic.jp/committee/wg4/) が管理する、[WCAG 2.0](https://waic.jp/docs/WCAG20/Overview.html) 、[WCAG 2.0 解説書](https://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) および [WCAG 2.0 達成方法集](https://waic.jp/docs/WCAG-TECHS/Overview.html) のレポジトリです。
 
 GitHub 上でビルドされたファイルはそれぞれ
 
@@ -56,7 +56,7 @@ XML のファイル名は URL に対応します。
 
 Pull Request は、ブランチ `master` にお願いします。XML なので難易度が高い (このファイルは手を抜いているので、XSLT については一切解説していません) という場合は、issue を立ててもらっても構いません。どちらの方法でも歓迎します。
 `master` に push されれば、Travis CI により `gh_pages` に出力されるようになっています。
-メールで込み入った質問等をしたい場合は、[WAIC のお問い合わせページ](http://waic.jp/contact/)にお願いします。
+メールで込み入った質問等をしたい場合は、[WAIC のお問い合わせページ](https://waic.jp/contact/)にお願いします。
 
 ### ブランチの運用（参考情報）
 
@@ -67,4 +67,3 @@ Pull Request は、ブランチ `master` にお願いします。XML なので�
 - 作業中は適宜ブランチを push する
 - 作業が終わったところでプルリクエストを出す
 - 作業内容に問題ないことが確認出来たら `master` にマージする
-
