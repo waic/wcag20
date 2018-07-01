@@ -55,7 +55,7 @@ function clickHandler(e) {
          <p>Flash ムービーに前後の文脈に依存したラベルが含まれている場合、利用者がラベルに前後の文脈を加味しなくてもすむように、ラベルを拡張するためのトグルコントロールが提供されている。</p>
       </procedure>
       <expected-results>
-         <p>上記チェックポイントを満たしている。</p>
+         <p>上記手順を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
