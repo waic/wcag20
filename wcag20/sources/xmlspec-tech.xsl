@@ -180,9 +180,9 @@
 				<xsl:text>-results</xsl:text>
 			</xsl:variable>
 			<xsl:choose>
-      <xsl:when test="$slices=1"><h3 class="small-head" id="{$id}">判定基準</h3></xsl:when>
-	<xsl:when test="$bytech=1"><h4 class="small-head" id="{$id}">判定基準</h4></xsl:when>
-      <xsl:otherwise><h5 class="small-head" id="{$id}">判定基準</h5></xsl:otherwise></xsl:choose>
+      <xsl:when test="$slices=1"><h3 class="small-head" id="{$id}">期待される結果</h3></xsl:when>
+	<xsl:when test="$bytech=1"><h4 class="small-head" id="{$id}">期待される結果</h4></xsl:when>
+      <xsl:otherwise><h5 class="small-head" id="{$id}">期待される結果</h5></xsl:otherwise></xsl:choose>
 					<xsl:apply-templates/>
 	</xsl:template>	
 	
@@ -450,7 +450,7 @@
 			      <xsl:apply-templates/>
 			    	<!-- MC: Need a much better way to test technique type -->
 			    	<xsl:if test="not(ancestor::div1[@id = 'failures'])">
-			    		<p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや判定基準を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p>
+			    		<p>この達成方法が「十分な達成方法」の一つである場合、このチェックポイントや期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p>
 			    	</xsl:if>
 			    </xsl:when>
 			    <xsl:otherwise><p>この達成方法に利用可能な検証はない。</p></xsl:otherwise>
