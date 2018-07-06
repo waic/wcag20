@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G100">
-   <short-name>非テキストコンテンツの一般に認められた名前又は説明的な名前となる簡潔なテキストによる代替を提供する</short-name>
+   <short-name>非テキストコンテンツの一般に認められた名前 (name) 又は説明的な名前となる簡潔なテキストによる代替を提供する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>
