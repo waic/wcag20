@@ -1236,23 +1236,22 @@
       <!-- BBC: Suppress output of these links in diff-marked version -->
       <!--xsl:if test="$show.diff.markup = 1"-->
     <p>
-      <xsl:text>この文書は、規定ではないフォーマットでも提供されており、</xsl:text>
-<a href="http://www.w3.org/WAI/WCAG20/versions/guidelines/" hreflang="en">Alternate Versions of Web Content Accessibility Guidelines 2.0</a> より入手できる。
+      <xsl:text>この文書は、次の規定ではないフォーマットでも入手できる:</xsl:text>
     </p>
-    <!--ul>
+    <ul>
       <xsl:for-each select="loc">
         <li>
           <xsl:apply-templates select="."/>
-          <xsl:if test="position() &gt; 1">
+          <!--xsl:if test="position() &gt; 1">
             <xsl:if test="last() &gt; 2">
               <xsl:text>,</xsl:text>
             </xsl:if>
             <xsl:text> </xsl:text>
             <xsl:if test="position() = last() - 1">and </xsl:if>
-          </xsl:if>
+          </xsl:if-->
         </li>
       </xsl:for-each>
-    </ul-->
+    </ul>
           <!--/xsl:if-->
   </xsl:template>
   <xsl:template match="p" mode="label">
