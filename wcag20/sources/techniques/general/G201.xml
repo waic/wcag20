@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G201">
-   <short-name>新しいウィンドウを開くときには利用者へ事前に知らせる</short-name>
+   <short-name>新しいウィンドウを開くときに、利用者へ事前に知らせる</short-name>
    <applicability>
       <p>新しいウィンドウを開くウェブページ</p>
    </applicability>
