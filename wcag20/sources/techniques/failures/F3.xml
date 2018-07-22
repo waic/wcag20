@@ -27,7 +27,7 @@ p#bestinterest {
   padding-left: 200px;
   background: transparent url(/images/TopRate.png) no-repeat top left;
 }]]></code>
-      <description><p>上記コードの適用先:</p>
+      <description><p>これは次の抜粋コードで使用される:</p>
 </description>
       <code><![CDATA[
 <p id="bestinterest">
@@ -60,7 +60,7 @@ ul#booklist li.instock {
 ul#booklist li.outstock {
   background: transparent url(outstock.png) no-repeat top left; 
 }]]></code>
-      <description><p>上記コードの適用先:</p>
+      <description><p>これは次の抜粋コードで使用される:</p>
 </description>
       <code><![CDATA[
 <ul id="booklist">

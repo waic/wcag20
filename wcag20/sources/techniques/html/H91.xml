@@ -138,7 +138,7 @@
       <description><exsubhead>事例 2d</exsubhead><p>事例 2d では、<att>alt</att> 属性ではなく、<att>title</att> 属性を用いて「保存」という名前 (name) を指定している。</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="保存" /> ]]></code>
-      <description><exsubhead>事例 2e</exsubhead><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p>
+      <description><exsubhead>事例 c</exsubhead><p>事例 2e は、コンテンツ制作者が input 要素の 'alt' 属性と 'title' 属性の両方を指定した場合、ユーザエージェントが名前をどのように決定するかを明確にしている。この場合、ユーザエージェントは 'alt' 属性（"保存"）を使用し、'title' 属性を無視する。</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="保存" title="保存" /> ]]></code>
     </eg-group>

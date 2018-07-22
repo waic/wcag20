@@ -52,7 +52,7 @@
       <eg-group>
       <head>異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</head>
       <description><p>この例では、文字色と背景色を変更するリンクを JavaScript で提供する。そのリンクは、利用者の環境で JavaScript がサポートされており、かつ有効な場合にのみ挿入されるようにすべきである。これは、そのリンク自身を挿入するためにスクリプトを使う (つまり JavaScript がサポートされており、かつ有効な場合にのみリンクが表示される) ことで実現できる。</p>
-<p>以下のコードは、JavaScript に依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するための JavaScript である。</p>
+<p>以下のコードは、JavaScript に依存した色を変更するリンク並びに、ウェブページのコンテンツの一部、関連するスタイルシート規則、及び色を変更するリンクが選択されたときに使われるスタイルシートを変更する JavaScript を示している。</p>
 <p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
 <p>XHTML (抜粋):</p>
 </description>
@@ -242,8 +242,8 @@ body, h1, h2, h3, p, a {
 </description>
     </eg-group>
     <eg-group>
-      <head>異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</head>
-      <description><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
+      <head>異なる外部スタイルシートファイルを適用するために PHP の $_GET を使う</head>
+      <description><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを割り当てるために PHP の $_GET を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
 <p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p>
 <p>PHP と XHTML (抜粋): </p>
 </description>
@@ -293,7 +293,7 @@ else {
 style2.css内:
 
   body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }]]></code>
-      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php"><!-- linktype="examples"-->異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</loc></p>
+      <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php"><!-- linktype="examples"-->異なる外部スタイルシートファイルを適用するために PHP の $_GET を使う</loc></p>
 </description>
     </eg-group>
     <eg-group>
