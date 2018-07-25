@@ -7,9 +7,9 @@
       <p>HTML 及び XHTML、スクリプト</p>
    </applicability>
    <applies-to>
-      <success-criterion idref="keyboard-operation-keyboard-operable"/>
+      <!--success-criterion idref="keyboard-operation-keyboard-operable"/-->
       <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
-      <success-criterion idref="navigation-mechanisms-focus-visible"/>
+      <!--success-criterion idref="navigation-mechanisms-focus-visible"/-->
    </applies-to>
    <description>
     <p>この達成方法の目的は、Document Object Model (DOM) に挿入されたユーザインタフェースの要素をタブ順序及びスクリーンリーダーの読み上げ順序がユーザエージェント標準のふるまいによって正しく設定されるような方法で配置することである。この達成方法は、メニューやダイアログのように隠れているものと表示されているもの、全てのユーザインタフェース要素に利用することができる。</p>
