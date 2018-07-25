@@ -113,7 +113,7 @@ function bldRosterGrid(dg: DataGrid) {
          <p>Flash ムービーにデータグリッドコンポーネントが含まれている場合、対応するアクセシブルな説明プロパティを使用して、要約テキストが追加されている。</p>
       </procedure>
       <expected-results>
-         <p>上記チェックポイントを満たしている。</p>
+         <p>上記手順を満たしている。</p>
       </expected-results>
    </tests>
    <admin>
