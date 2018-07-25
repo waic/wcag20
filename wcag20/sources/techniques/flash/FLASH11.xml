@@ -105,7 +105,7 @@ function hideLongDesc() {
       <expected-results>
          <ulist>
             <item>
-               <p>上記のチェックポイントを満たしている。</p>
+               <p>上記の手順を満たしている。</p>
             </item>
          </ulist>
       </expected-results>
