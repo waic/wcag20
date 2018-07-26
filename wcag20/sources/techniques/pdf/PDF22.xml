@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF22">
-   <short-name>PDF フォームにおいて、利用者の入力が求められる形式または値の範囲外となった場合、そのことを明示する</short-name>
+   <short-name>PDF フォームにおいて、利用者の入力が必須形式又は値の範囲外となった場合に、そのことを明示する</short-name>
    <applicability>
      <p id="pdf.applicability.general">タグ付き PDF 文書</p>
    </applicability>
