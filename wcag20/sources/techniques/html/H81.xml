@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H81">
-   <short-name>入れ子になったリストで親のリスト項目とを組み合わせるリンクテキストを用いて、入れ子になったリストでリンクの目的を特定する</short-name>
+   <short-name>リストが入れ子になっている状況で、親のリスト項目と結合したリンクテキストを用いて、入れ子になったリストの中でリンクの目的を特定する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>
