@@ -60,7 +60,7 @@ onmouseout="swapImageOff('menu')" onblur="swapImageOff('menu')">
 </a>]]></code>
     </eg-group>
     <eg-group>
-      <description><p>この事例では、マウスとキーボードの両方を用いて機能を実行できる画像のカスタムコントロールを紹介している。マウスイベントの <code>onclick</code> は、対応するキーボードイベントの <code>onkeypress</code> によって補完されている。<code>tabindex</code> 属性は、キーボードを用いて Tab キーで移動した際に、画像の上で停止させるためのものである。この事例では <code>nextPage()</code> 関数が、キーボードのキー押下が Enter キーであるかどうかをチェックしていることに注目してほしい。もしチェックしなければ、画像にフォーカスがあるときには、どのキーが押下されても常に反応してしまうため望ましくない。</p>
+      <description><p>この事例では、マウスとキーボードの両方を用いて機能を実行できる画像のカスタムコントロールを紹介している。マウスイベントの <code>onclick</code> は、対応するキーボードイベントの <code>onkeypress</code> によって補完されている。<code>tabindex</code> 属性は、キーボードを用いて Tab キーで移動した際に、画像の上で停止させるためのものである。この事例では <code>nextPage()</code> 関数が、押されたキーボードのキーがEnterであることを確認すべきであり、そうでない場合は、画像がフォーカスを持つ間にすべてのキーボード動作に応答するが、これは期待される動作ではないことに注意する。</p>
 </description>
       <code><![CDATA[
 <img onclick="nextPage();" onkeypress="nextPage();" tabindex="0" src="arrow.gif" 
