@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C30">
-   <short-name>テキストを画像文字に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する</short-name>
+   <short-name>テキストを文字画像に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する</short-name>
    <applicability>
       <p>CSS をサポートするすべてのウェブコンテンツ技術</p>
    </applicability>
