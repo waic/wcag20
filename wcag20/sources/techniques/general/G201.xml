@@ -17,18 +17,18 @@
       <head>コントロールを説明するテキストで知らせる</head>
       <description><p>コントロールを説明する名前 (name) またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p>
 </description>
-      <code xml:space="preserve"><![CDATA[
-       <a href="knitting.html" target="_blank">編み物のすべて 
-              (新しいウィンドウで開く)</a>]]></code>
-    </eg-group>
+         <code xml:space="preserve"><![CDATA[
+              <a href="knitting.html" target="_blank">All about Knitting 
+                (opens in new window)</a>
+            ]]></code>
     <eg-group>
       <head>CSS を用いて、新しいウィンドウが開く前に知らせる</head>
       <description><p>以下のコードでは、CSS を用いて新しいウィンドウが開く前に知らせている。</p>
 </description>
-      <code xml:space="preserve"><![CDATA[
-       <html>
+         <code xml:space="preserve"><![CDATA[
+              <html>
                 <head>
-                <title>ポップアップによる警告</title>
+                <title>Pop-Up Warning</title>
                 <style type="text/css">
                 body {
                 margin-left:2em;
@@ -67,13 +67,15 @@
                 </style>
                 </head>
                 <body>
-                <h1>ポップアップによる警告</h1>
-                <p> これは <a class="info" href="popup_advisory_technique.html"
-                 target="_blank"><strong>外部へのリンク</strong>
-                 <span>新しいウィンドウで開く</span></a>の事例です。
+                <h1>Pop-Up Warning</h1>
+                <p> This is an example of an <a class="info"
+                href="popup_advisory_technique.html" target="_blank">
+                <strong>External link</strong><span>Opens a new
+                window</span></a>
                 </p>
                 </body>
-                </html>]]></code>
+                </html>
+            ]]></code>
       <description><p>参考: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html"><!-- linktype="examples"-->CSS を用いて、新しいウィンドウが開く前に知らせるサンプル: 英語</loc></p>
 </description>
     </eg-group>

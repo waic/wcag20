@@ -18,10 +18,12 @@
       <eg-group>
       <description><p>災害対策を示す HTML ページで、以下のような見出しが使われている:</p>
 </description>
-      <code role="html401"><![CDATA[
-  <h1>災害対策</h1>
-  <h2>洪水対策</h2>
-  <h2>火災対策</h2>]]></code>
+         <code role="html401"><![CDATA[
+              <h1>Disaster preparation</h1>
+                <h2>Flood preparation</h2>
+                <h2>Fire preparation</h2>
+            ]]></code>
+         <description>
       <description><p>レベル 2 の見出しは、先頭に内容を識別できる情報が配置されていることに注意されたい。 (すなわち、「対策 : 洪水」、「対策: 火災」などとはなっていない。)</p>
 </description>
     </eg-group>

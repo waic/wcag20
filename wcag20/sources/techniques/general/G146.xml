@@ -29,56 +29,53 @@
       <head>HTML と CSS での単純なリキッドレイアウト</head>
       <description><p>以下は、リキッドレイアウトの実現に HTML と CSS を利用した、かなり単純な事例である。3 つの列はテキストサイズが変わるのと同じようにサイズ調整される。もし全ての列を足した幅が、3 つの列で利用できる幅の合計を超えてしまった場合、最後の列は前の列の横に置かれるのではなく、下に送られる。列に含まれるテキストの中で最も長い単語が列の幅におさまっている限り、フォントサイズを大きくすることができ、ブラウザの横スクロールバーへの影響はない。この事例では列の幅指定にパーセントを利用しており、「float」プロパティを利用して列をフロート領域として定義している。</p>
 </description>
-      <code><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>単純なリキッドレイアウトの例</title>
-<style type="text/css">
-
-.column
-	{
-	border-left: 1px solid green;
-	padding-left:1%;
-	float: left;
-	width: 32%;
-	}
-#footer
-	{
-	border-top: 1px solid green;
-	clear: both;
-	}
-</style>
-
-</head>
-<body>
-   <h1>WCAGの例</h1>
-   <h2>3つの列に含まれるテキスト</h2>
-      <div title="1列目" class="column">
-        <h3>Block 1</h3>
-        <p> この達成方法の目的は、表示領域幅の広狭に順応するレイアウト手法を
-            用いることで、横スクロールバーが挿入されることなしに、コンテンツ
-            を表示できるようにすることである。
-        </p>
-      </div>
-
-      <div title="2列目" class="column">
-        <h3>Block 2</h3>
-        <p> これはとても簡単な例であり、テキストサイズの変化に順応するページ
-            レイアウトである。
-        </p>
-      </div>
-
-      <div title="3列目" class="column">
-      <h3>Block 3</h3>
-        <p> より複雑なページレイアウトに関する達成方法については、以下の参考
-            リソースを参照のこと。
-        </p>
-      </div>
-
-      <p id="footer">Footer text</p>
-</body>
-</html>]]></code>
+               <code><![CDATA[
+              <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+                <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <title>Example of Basic Liquid Layout</title>
+                <style type="text/css">
+                .column
+                {
+                border-left: 1px solid green;
+                padding-left:1%;
+                float: left;
+                width: 32%;
+                }
+                #footer
+                {
+                border-top: 1px solid green;
+                clear: both;
+                }
+                </style>
+                </head>
+                <body>
+                <h1>WCAG Example</h1>
+                <h2>Text in Three Columns</h2>
+                <div title="column one" class="column">
+                <h3>Block 1</h3>
+                <p> The objective of this technique is to be able to present content 
+                without introducing horizontal scroll bars by using layout 
+                techniques that adapt to the available horizontal space.
+                </p>
+                </div>
+                <div title="column two" class="column">
+                <h3>Block 2</h3>
+                <p> This is a very simple example of a page layout that adapts as the
+                text size changes.
+                </p>
+                </div>
+                <div title="column three" class="column">
+                <h3>Block 3</h3>
+                <p> For techniques that support more complex page layouts, see the
+                Resources listed below.
+                </p>
+                </div>
+                <p id="footer">Footer text</p>
+                </body>
+                </html>
+            ]]></code>
     </eg-group>
    </examples>
    <resources>

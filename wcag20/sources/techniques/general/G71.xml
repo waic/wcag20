@@ -16,12 +16,13 @@
       <eg-group>
       <description><p>下記の達成方法の例は、ヘルプ情報へのリンクを含んだラベル要素を示している。ラベル要素内にヘルプ情報へのリンクを置く事で、スクリーンリーダーの利用者が入力フォームのコントロールを利用する際にヘルプのリンクにアクセスすることが可能になる。</p>
 </description>
-      <code><![CDATA[
-      <form action="test.html">
-	<label for="test">テストコントロール
-	<a href="help.html" target="_blank">ヘルプ</a></label>
-	<input type="text" name="test" id="test" />
-</form>]]></code>
+         <code><![CDATA[
+              <form action="test.html">
+                <label for="test">Test control
+                <a href="help.html" target="_blank">Help</a></label>
+                <input type="text" name="test" id="test" />
+                </form>
+            ]]></code>
     </eg-group>
    </examples>
    <related-techniques>

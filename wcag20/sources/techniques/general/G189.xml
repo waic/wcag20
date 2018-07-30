@@ -24,34 +24,34 @@
       <description><p>ウェブページに、様々なフォーマットでダウンロードできる書籍のリストがある。このウェブページの代替版では、書籍のフォーマットだけ、又は書籍名とフォーマットのタイプが、リンクテキストとして使われている。</p>
 <p>短いリンクテキストのバージョン:</p>
 </description>
-      <code><![CDATA[
-...
-<h1>書籍のダウンロード</h1>
-  <p><a href="books-full-links.html" >完全なリンクのバージョン</a></p>
-
-  <ul>
-  <li>ウェブの歴史: 
-  <a href="history.docx" class="hist">Word形式</a>, 
-  <a href="history.pdf" class="hist">PDF形式</a>, 
-  <a href="history.html" class="hist">HTML形式</a>
-  </li>
-  ...
-  </ul>]]></code>
-      <description><p>完全なリンクテキストを用いたバージョン</p>
+         <code><![CDATA[
+              ...
+                <h1>Books for download</h1>
+                <p><a href="books-full-links.html" >Full link Version</a></p>
+                <ul>
+                <li>The History of the Web: 
+                <a href="history.docx" class="hist">Word</a>, 
+                <a href="history.pdf" class="hist">PDF</a>, 
+                <a href="history.html" class="hist">HTML</a>
+                </li>
+                ...
+                </ul>
+            ]]></code>
+      <description><p>完全なリンクテキストを用いたバージョン:</p>
 </description>
-      <code><![CDATA[
-...
-<h1>書籍のダウンロード</h1>
-  <p><a href="books-short-links.html" >短いリンクのバージョン</a></p>
-
-  <ul>
-  <li>ウェブの歴史:
-  <a href="history.docx" class="hist">ウェブの歴史 (Word形式)</a>, 
-  <a href="history.pdf" class="hist">ウェブの歴史 (PDF形式)</a>, 
-  <a href="history.html" class="hist">ウェブの歴史 (HTML形式)</a>
-  </li>
-  ...
-  </ul>]]></code>
+         <code><![CDATA[
+              ...
+                <h1>Books for download</h1>
+                <p><a href="books-short-links.html" >Short link Version</a></p>
+                <ul>
+                <li>The History of the Web: 
+                <a href="history.docx" class="hist">The History of the Web(Word)</a>, 
+                <a href="history.pdf" class="hist">The History of the Web(PDF)>/a>, 
+                <a href="history.html" class="hist">The History of the Web(HTML)</a>
+                </li>
+                ...
+                </ul>
+            ]]></code>
     </eg-group>
    </examples>
    <related-techniques>
