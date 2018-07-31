@@ -21,6 +21,7 @@
               <a href="knitting.html" target="_blank">All about Knitting 
                 (opens in new window)</a>
             ]]></code>
+      </eg-group>
     <eg-group>
       <head>CSS を用いて、新しいウィンドウが開く前に知らせる</head>
       <description><p>以下のコードでは、CSS を用いて新しいウィンドウが開く前に知らせている。</p>

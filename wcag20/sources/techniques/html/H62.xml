@@ -28,14 +28,14 @@
       <head>頭文字語の読みかたを提供するルビのマークアップ</head>
       <description><p>この事例では、Web Content Accessibility Guidelines という複数の単語の 1 文字目をとって作った頭文字語 (頭字語) の読み方を提供するために、ルビを用いている。WCAG という文字がルビベース (<el>rb</el> 要素) であり、読み方をルビテキスト (<el>rt</el> 要素) として示す。ルビのカッコを指定する <el>rp</el> 要素は、ルビをサポートしていないユーザエージェントに対して、<el>rt</el> 要素で囲まれたテキストが読み方を提供していることを示すために用いられる。ベーステキストの直後にカッコ付きで読み方を描画する (ルビをサポートしているユーザエージェントでは、カッコは表示されない)。</p>
 </description>
-      <code role="html401"><![CDATA[<p>われわれがこのガイドラインについて話し合うときは、
+         <code role="html401"><![CDATA[<p>When we talk about these guidelines, we often just call them
   <ruby>
     <rb>WCAG</rb>
     <rp>(</rp>
-    <rt>Wuh-KAG</rt>
+      <rt>Wuh-KAG</rt>
     <rp>)</rp>
-  </ruby>
-と呼ぶ。</p> ]]></code>
+  </ruby>.
+</p>]]></code>
     </eg-group>
     <eg-group>
       <head>日本語のルビ注釈</head>

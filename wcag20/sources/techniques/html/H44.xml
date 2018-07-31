@@ -55,34 +55,33 @@
       <head>テキスト入力フィールド</head>
       <description><p>この事例では、テキスト入力フィールドに「お名前」という明示的なラベルが付けてある。<el>label</el> 要素の <att>for</att> 属性値は、<el>input</el> 要素の <att>id</att> 属性値と一致している。</p>
 </description>
-      <code role="html401"><![CDATA[<label for="firstname">お名前:</label>
-<input type="text" name="firstname" id="firstname" /> ]]></code>
+         <code role="html401"><![CDATA[<label for="firstname">First name:</label> 
+<input type="text" name="firstname" id="firstname" />]]></code>
     </eg-group>
     <eg-group>
       <head>チェックボックス</head>
-      <code role="html401"><![CDATA[<input type="checkbox" id="markuplang" name="computerskills" checked="checked">
-<label for="markuplang">HTML</label> ]]></code>
+         <code role="html401"><![CDATA[<input type="checkbox" id="markuplang" name="computerskills" checked="checked">
+<label for="markuplang">HTML</label>]]></code>
     </eg-group>
     <eg-group>
       <head>ラジオボタンのグループ</head>
       <description><p>関連するラジオボタンの小さなグループについて、簡単な説明が付けてあり、さらに個々の要素にラベルが付けてある。</p>
 <note>ラジオボタンの数が多く、それらの関連付けや操作説明を必要とする場合は、<specref ref="H71"/>の方法を考慮すべきである。</note>
 </description>
-      <code role="html401"><![CDATA[<h1>ドーナツ</h1>
-
-<p>お好きなドーナツを選び、「ドーナツを購入」ボタンを押してください。</p>
-
+         <code role="html401"><![CDATA[ <h1>Donut Selection</h1>
+<p>Choose the type of donut(s) you would like then select 
+   the "purchase donuts" button.</p>
 <form action="http://example.com/donut" method="post">
 <p>
   <input type="radio" name="flavor" id="choc" value="chocolate" />
-    <label for="choc">チョコレート</label><br/>
+    <label for="choc">Chocolate</label><br/>
   <input type="radio" name="flavor" id="cream" value="cream"/>
-    <label for="cream">クリーム入り</label><br/>
+    <label for="cream">Cream Filled</label><br/>
   <input type="radio" name="flavor" id="honey" value="honey"/>
-    <label for="honey">ハニーがけ</label><br/>
-  <input type="submit" value="ドーナツを購入"/>
+    <label for="honey">Honey Glazed</label><br/>
+  <input type="submit" value="Purchase Donuts"/>
 </p>
-</form> ]]></code>
+</form>]]></code>
     </eg-group>
    </examples>
    <resources>

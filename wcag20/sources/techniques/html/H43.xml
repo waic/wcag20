@@ -19,19 +19,19 @@
    <examples>
       <eg-group>
       <head>行見出しが複数あるテーブル</head>
-      <code role="html401"><![CDATA[<table>
+         <code role="html401"><![CDATA[<table>
    <tr>
-     <th rowspan="2" id="h">予習</th>
-     <th colspan="3" id="e">試験</th>
-     <th colspan="3" id="p">課題</th>
+     <th rowspan="2" id="h">Homework</th>
+     <th colspan="3" id="e">Exams</th>
+     <th colspan="3" id="p">Projects</th>
    </tr>
    <tr>
      <th id="e1" headers="e">1</th>
      <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">最終</th>
+     <th id="ef" headers="e">Final</th>
      <th id="p1" headers="p">1</th>
      <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">最終</th>
+     <th id="pf" headers="p">Final</th>
    </tr>
    <tr>
     <td headers="h">15%</td>
@@ -42,7 +42,7 @@
     <td headers="p p2">10%</td>
     <td headers="p pf">15%</td>
    </tr>
-  </table> ]]></code>
+  </table>]]></code>
     </eg-group>
    </examples>
    <resources>

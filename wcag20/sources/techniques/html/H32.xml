@@ -16,13 +16,16 @@
       <eg-group>
       <description><p>これは送信ボタンを持つフォームの基本的な事例である。</p>
 </description>
-      <code><![CDATA[<form action="http://www.example.com/cgi/subscribe/" method="post"><br /> 
-<p>メールリングリストに登録したい場合は、あなたの
-メールアドレスを入力してください。</p><br /> 
-<label for="address">eメールアドレスを入力してください。:</label>
-<input type="text" id="address" name="address" /> 
-<input type="submit" value="登録" /><br /> 
-</form>  ]]></code>
+         <code><![CDATA[ <form action="http://www.example.com/cgi/redirect/" method="get"><br /> 
+    <p>Navigate the site.</p><br /> 
+    <select name="dest"><br /> 
+      <option value="/index.html">Home</option/><br /> 
+      <option value="/blog/index.html">My blog</option/><br /> 
+      <option value="/tutorials/index.html">Tutorials</option/><br /> 
+      <option value="/search.html">Search</option/><br /> 
+    </select><br /> 
+  <input type="submit" value="Go to Page" /><br /> 
+  </form> ]]></code>
     </eg-group>
     <eg-group>
       <description><p>次の事例では、利用者が要求したページを転送する (<att>action</att> 属性により指定された) サーバーサイドスクリプトを使用している。</p>

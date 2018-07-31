@@ -17,8 +17,8 @@
       <eg-group id="img-alt_example">
       <description><p>ウェブサイト上にある画像は、無料のニュースレターへのリンクである。画像は次のような文字を含んでいる:「無料のニュースレター: 無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら」　画像の代替テキストは、画像にある文字と一致している。</p>
 </description>
-      <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="無料のニュースレター:
-無料のレシピ、ニュースなどを入手しよう！　詳しくはこちら" />]]></code>
+         <code role="xhtml10"><![CDATA[<img src="newsletter.gif" alt="Free newsletter. 
+   Get free recipes, news, and more. Learn more." />]]></code>
       <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>

@@ -42,9 +42,9 @@
             <p>地図検索アプリケーションはラベル"住所:"で構成されるフォームと、入力ボックスと、"地図検索"という値の実行ボタンを提供する。インプットボックスは利用者が入力するアドレス書式の例を <att>title</att> 属性に持つ。</p>
          </description>
          <code><![CDATA[
-<label for="searchAddress">住所: </label>
+<label for="searchAddress">Address: </label>
 <input id="searchAddress" type="text" size="30" value="" name="searchAddress" 
- title="ドレスの例: 101 Collins St, Melbourne, Australia" />
+ title="Address example: 101 Collins St, Melbourne, Australia" />
              ]]></code>
       </eg-group>
       <eg-group>
@@ -52,8 +52,9 @@
             <p>利用者が請求書をオンラインで支払うことを可能にするフォームでは、利用者は自分の口座番号を入力する必要がある。ラベル「口座番号」がついたインプットボックスは、口座番号の特定に関する情報を提供する　<att>title</att> 属性を持つ。</p>
          </description>
          <code><![CDATA[
-<label for="accNum1">口座番号: </label>
-<input id="accNum1" type="text" size="10" value="" title="口座番号は、請求書の右上隅に表示されます。" />
+<label for="accNum1">Account number: </label>
+<input id="accNum1" type="text" size="10" value="" title="Your account number 
+ can be found in the top right-hand corner of your bill." />
              ]]></code>
       </eg-group>
    </examples>

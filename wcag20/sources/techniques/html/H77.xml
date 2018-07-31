@@ -17,45 +17,45 @@
   </description>
    <examples>
       <eg-group>
-      <code><![CDATA[<ul>
+         <code><![CDATA[<ul>
   <li>
-    昨年のビデオレポートをご覧下さい。
-    <a href="festival.htm">全米民族音楽祭</a>
+    Check out the video report for last year's 
+    <a href="festival.htm">National Folk Festival</a>.
   </li>
   <li>
-    <a href="listen.htm">楽器の説明を聞く</a>
+    <a href="listen.htm">Listen to the instruments</a>
   </li>
   <li>
-    ギター職人、ジョージ ゴールドマンの話はこちら。
-    <a href="mkguitars.htm">ギター作りについて</a>
+    Guitar Man: George Golden talks about 
+    <a href="mkguitars.htm">making guitars</a>.
   </li>
 </ul>]]></code>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>ビデオゲームのダウンロードリスト</head>
-      <code><![CDATA[<ul>
+         <code><![CDATA[<ul>
   <li>
-    <a href="tomb_raider.htm">トゥームレイダー: レジェンド</a>
-    <a href="tomb_raider_images.htm">画像を見る</a>
-    <a href="tomb_raider.mpeg">(デモのダウンロード)</a>
+    <a href="tomb_raider.htm">Tomb Raider: Legend</a>
+    <a href="tomb_raider_images.htm">See Images</a>
+    <a href="tomb_raider.mpeg">(Download Demo)</a>
   </li>
   <li>
     <a href="fear_extraction.htm">F.E.A.R. Extraction Point</a>
-    <a href="fear_extraction_images.htm">画像を見る</a>
-    <a href="fear_extraction.mpeg">(デモのダウンロード)</a>
+    <a href="fear_extraction_images.htm">See Images</a>
+    <a href="fear_extraction.mpeg">(Download Demo)</a>
   </li>
   <li>
-    <a href="call_of_duty.htm">コール オブ デューティ2</a>
-    <a href="call_of_duty_images.htm">画像を見る</a>
-    <a href="call_of_duty.mpeg">(デモのダウンロード)</a>
+    <a href="call_of_duty.htm">Call of Duty 2</a>
+    <a href="call_of_duty_images.htm">See Images</a>
+    <a href="call_of_duty.mpeg">(Download Demo)</a>
   </li>
   <li>
-    <a href="Warhammer 40K.htm">ウォーハンマー40,000</a>
-    <a href="warhammer_40k_images.htm">画像を見る</a>
-    <a href="Warhammer_40k.mpeg">(デモのダウンロード)</a>
+    <a href="Warhammer 40K.htm">Warhammer 40K</a>
+    <a href="warhammer_40k_images.htm">See Images</a>
+    <a href="Warhammer_40k.mpeg">(Download Demo)</a>
   </li>
-</ul>]]></code>
+</ul>   ]]></code>
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>

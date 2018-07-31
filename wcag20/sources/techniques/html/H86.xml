@@ -45,18 +45,19 @@
       <eg-group>
       <description><p>以下では、イコール記号に数字の 8、ハイフン、数字の 0 をつなげて「恐怖」を表現する顔文字に対する、3 通りの代替の指定方法を示している。</p>
 </description>
-      <code>=8-0 (恐怖)
-
-&lt;abbr title="恐怖"&gt;=8-0&lt;/abbr&gt;
-
-&lt;img src="fright.gif" alt="恐怖"/&gt;</code>
+         <code><![CDATA[
+=8-0 (fright)
+<abbr title="fright">=8-0</abbr>
+<img src="fright.gif" alt="fright"/>
+             ]]></code>
       <a11ysuprorted rating="bad" exnumber="1"/>
     </eg-group>
     <eg-group>
       <description><p>この事例では、ASCII アートの前にその絵の説明を付け、ASCII アートをスキップするリンクがある。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="#H86-ex3">ASCII アートの事例をスキップして事例 3 へ</loc></p>
 </description>
-      <code><![CDATA[さし絵: 蝶のASCIIアート
- <a href="#skipbutterfly">ASCIIアートをスキップ</a>
+         <code><![CDATA[
+ Figure 1: ASCII art picture of a butterfly. 
+ <a href="#skipbutterfly">Skip ASCII image</a>
                                  
                                                                 LLLLLLLLLLL
                                                             __LLLLLLLLLLLLLL

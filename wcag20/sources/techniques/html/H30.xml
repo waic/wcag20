@@ -20,38 +20,38 @@
       <eg-group>
       <description><p>HTML において、<el>a</el> 要素のテキストコンテンツを用いてリンクの目的を説明する。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="routes.html">
-  ボールダーズクライミングジムでの現状のルート
+         <code role="html401"><![CDATA[<a href="routes.html">
+  Current routes at Boulders Climbing Gym
 </a>]]></code>
     </eg-group>
     <eg-group>
       <description><p>画像のリンクの目的を説明するために、<el>img</el> 要素に <att>alt</att> 属性を使用する。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="routes.html">
-   <img src="topo.gif" alt="ボールダーズクライミングジムでの現状のルート" />
-</a>]]></code>
+         <code role="html401"><![CDATA[<a href="routes.html">
+   <img src="topo.gif" alt="Current routes at Boulders Climbing Gym" /> 
+</a> ]]></code>
     <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
       <description><p>アンカー (<el>a</el>) 要素が <el>img</el> 要素に加えてリンクの目的を説明するテキストを含むときは、空の <att>alt</att> 属性を使用する。リンクテキストはページ上で画像の隣りに表示されることに注意する。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="routes.html">
+         <code role="html401"><![CDATA[<a href="routes.html">
   <img src="topo.gif" alt="" />
-  ボールダーズクライミングジムでの現状のルート
+  Current routes at Boulders Climbing Gym
 </a>]]></code>
     </eg-group>
     <eg-group>
       <description><p>サイトでは、製品の詳細ページの「フィードバック」リンクをクリックすることで、利用者がログインしたときに製品に関するフィードバックを提供することができる。他の利用者又は製品メーカーは、フィードバックに応答することができる。フィードバックのリンクは、利用者のフィードバックへの応答が利用可能な場合に、「フィードバック」テキストの前にアイコンを表示する。ヘルプ情報は、このアイコンを二重引用符を含む吹き出しとして説明し、アイコン自体を例として示している。 ヘルプテキストにおけるアイコンのテキストによる代替は、「応答受信アイコン」である。複数のモダリティを使用してこのアイコンを識別できるように、製品の詳細ページ (応答が利用可能な場合) で同じテキストによる代替が使用される。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="prod_123_feedback.htm">Feedback 
-<img src="response.gif" width="15" height="15" alt="レスポンス受信アイコン" /></a>]]></code>
+         <code role="html401"><![CDATA[<a href="prod_123_feedback.htm">Feedback 
+         <img src="response.gif" width="15" height="15" alt="Response received icon" /></a>]]></code>
     </eg-group>
     <eg-group>
       <description><p>リンクはテキスト及びアイコンを含み、アイコンはリンク先についての追加情報を提供している。</p>
 </description>
-      <code role="html401"><![CDATA[<a href="WMFP.pdf">
-ウッドエンドミュージックフェスティバルのプログラム
-<img src="pdficon.gif" alt="PDFファイル"/>
+         <code role="html401"><![CDATA[<a href="WMFP.pdf">
+Woodend Music Festival Program
+<img src="pdficon.gif" alt="PDF format"/>
 </a>]]></code>
     <a11ysuprorted rating="pass" exnumber="5"/>
     </eg-group>
@@ -63,8 +63,8 @@
             </note>
          </description>
          <code><![CDATA[<p>
-<a href=”2009mycorp_report.pdf”>MyCorp 2009 年次レポート (pdf)</a><br />
-<a href=”2009mycorp_budget.xls”>MyCorp 2009 年次予算 (Excel)</a>
+<a href=”2009mycorp_report.pdf”>MyCorp 2009 Annual Report (pdf)</a><br />
+<a href=”2009mycorp_budget.xls”>MyCorp 2009 Annual Budget (Excel)</a>
 </p>]]></code>
       </eg-group>
       <eg-group>
@@ -73,9 +73,9 @@
          </description>
          <code role="html5"><![CDATA[<article>
 <a href="news.html">
-<h3>議会で続く予算討議</h3>
-<p class="subhead"><img class="alertimg" src="alerticon.png" alt="ニュース速報" height="30" width="30">議会の議員は、来年の予算をめぐる3つの挑戦的な問題について、激しい議論を続けた。</p>
-<p>もっと読む</p>
+<h3>Budget Debate Continues in Parliament</h3>
+<p class="subhead"><img class="alertimg" src="alerticon.png" alt="Breaking News" height="30" width="30">Members of Parliament continued vigorous debate on three challenging issues surrounding the upcoming year's budget.</p>
+<p>Read more</p>
 </a>
 </article>]]></code>
             <p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H30/link-wraps-block.html">ブロックレベル要素をリンクで囲む実例</loc>を示す。
