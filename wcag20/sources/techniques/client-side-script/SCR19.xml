@@ -34,17 +34,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
   <head> 
     <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /> 
-    <title>動的なセレクトメニュー</title> 
+    <title>Dynamic Select Statements</title> 
 
 <script type="text/javascript">
  //<![CDATA[ 
  // 国の選択項目のリストに現れるのと同じ順の選択可能な国の配列 
  var countryLists = new Array(4) 
- countryLists["empty"] = ["国を選択してください"]; 
- countryLists["North America"] = ["カナダ", "アメリカ合衆国", "メキシコ"]; 
- countryLists["South America"] = ["ブラジル", "アルゼンチン", "チリ", "エクアドル"]; 
- countryLists["Asia"] = ["ロシア", "中国", "日本"]; 
- countryLists["Europe"]= ["イギリス", "フランス", "スペイン", "ドイツ"]; 
+ countryLists["empty"] = ["Select a Country"]; 
+ countryLists["North America"] = ["Canada", "United States", "Mexico"]; 
+ countryLists["South America"] = ["Brazil", "Argentina", "Chile", "Ecuador"]; 
+ countryLists["Asia"] = ["Russia", "China", "Japan"]; 
+ countryLists["Europe"]= ["Britain", "France", "Spain", "Germany"]; 
  /* CountryChange() はselect要素のonchangeイベントから呼び出される。 
  * param selectObj - onchangeイベントで生成されるselectオブジェクト。
  */ 
@@ -81,24 +81,20 @@
 </script>
 </head>
 <body>
-  <noscript>このページはJavaScriptが有効で、関数が正しく動作可能である必要があります。</noscript>
-
-  <h1>動的なセレクトメニュー</h1>
-  <label for="continent">大陸を選択</label>
+  <noscript>This page requires JavaScript be available and enabled to function properly</noscript>
+  <h1>Dynamic Select Statements</h1>
+  <label for="continent">Select Continent</label>
   <select id="continent" onchange="countryChange(this);">
-    <option value="empty">大陸を選択してください</option>
-
-    <option value="North America">北米</option>
-    <option value="South America">南米</option>
-    <option value="Asia">アジア</option>
-    <option value="Europe">ヨーロッパ</option>
-
+    <option value="empty">Select a Continent</option>
+    <option value="North America">North America</option>
+    <option value="South America">South America</option>
+    <option value="Asia">Asia</option>
+    <option value="Europe">Europe</option>
   </select>
   <br/>
-  <label for="country">国を選択</label>
+  <label for="country">Select a country</label>
   <select id="country">
-    <option value="0">国を選択してください</option>
-
+    <option value="0">Select a country</option>
   </select>
 </body>
  </html>]]></code>

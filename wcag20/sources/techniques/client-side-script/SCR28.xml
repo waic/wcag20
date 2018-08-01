@@ -30,13 +30,13 @@
 
 ...
 
-  <a href="#" onclick="toggle("navbar")">ナビゲーションバー切り替え</a>
-
-  <ul> id="navbar">
-  <li><a href="http://target1.html">リンク 1</a></li>
-  <li><a href="http://target2.html">リンク 2</a></li>
-  <li><a href="http://target3.html">リンク 3</a></li>
-  <li><a href="http://target4.html">リンク 4</a></li>
+  <a href="#" onclick="toggle('navbar')">Toggle Navigation Bar</a>
+  
+  <ul id="navbar">
+  <li><a href="http://target1.html">Link 1</a></li>
+  <li><a href="http://target2.html">Link 2</a></li>
+  <li><a href="http://target3.html">Link 3</a></li>
+  <li><a href="http://target4.html">Link 4</a></li>
   </ul>
 
 ... ]]></code>
@@ -59,7 +59,7 @@
 
   ...
 
-  <button onclick="return toggle('toc');">目次切り替え</button>
+  <button onclick="return toggle('toc');">Toggle Table of Contents</button>
   <div id="toc">
     ...
   </div>

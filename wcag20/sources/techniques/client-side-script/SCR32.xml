@@ -22,82 +22,82 @@
 <p> <em>HTML 及び Javascript のコード</em> </p>
 <p>これは事例のフォームの HTML である:</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="ja">
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>    
-        <title>フォームの検証</title>
+        <title>Form Validation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href="css/validate.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="scripts/validate.js"/>
     </head>
     <body>
 
-        <h1>フォームの検証</h1>
+        <h1>Form Validation</h1>
 
-        <p>以下のフォームは、もしスクリプトが利用可能であれば送信前に検証されるが、
-		そうでなければサーバー上で検証される。任意と書かれた以外のすべての
-		フィールドは必須である。送信時にエラーがみつかった場合、フォームはキャンセルされて
-		エラー一覧がフォームの先頭に表示される。</p>
+        <p>The following form is validated before being submitted if scripting is available,
+            otherwise the form is validated on the server. All fields are required, except those
+            marked optional. If errors are found in the submission, the form is cancelled and 
+            a list of errors is displayed at the top of the form.</p>
 
-        <p> 下に貴方の情報を入力してください。 </p>
+        <p> Please enter your details below. </p>
 
-        <h2>フォームの検証</h2>
+        <h2>Validating Form</h2>
 
         <form id="personalform" method="post" action="index.php">
             <div class="validationerrors"/>
             <fieldset>
-                <legend>個人情報詳細</legend>
+                <legend>Personal Details</legend>
                 <p>
-                    <label for="forename">名前を入力してください</label>
+                    <label for="forename">Please enter your forename</label>
                     <input type="text" size="20" name="forename" id="forename" class="string"
                         value=""/>
                 </p>
                 <p>
-                    <label for="age">年齢を入力してください</label>
+                    <label for="age">Please enter your age</label>
                     <input type="text" size="20" name="age" id="age" class="number" value=""/>
                 </p>
                 <p>
-                    <label for="email">電子メールアドレスを入力してください</label>
+                    <label for="email">Please enter your email address</label>
                     <input type="text" size="20" name="email" id="email" class="email" value=""/>
                 </p>
             </fieldset>
             <p>
-                <input type="submit" name="signup" value="登録"/>
+                <input type="submit" name="signup" value="Sign up"/>
             </p>
         </form>
-        <h2>2番目のフォーム</h2>
+        <h2>Second Form</h2>
         <form id="secondform" method="post" action="index.php#focuspoint">
             <div class="validationerrors"/>
             <fieldset>
-                <legend>2番目のフォームの詳細</legend>
+                <legend>Second Form Details</legend>
                 <p>
-                    <label for="suggestion">提案内容を入力</label>
+                    <label for="suggestion">Enter a suggestion</label>
                     <input type="text" size="20" name="suggestion" id="suggestion" 
                       class="string" value=""/>
                 </p>
                 <p>
-                    <label for="optemail">貴方のメールアドレスを入力してください (任意)</label>
+                    <label for="optemail">Please enter your email address (optional)</label>
                     <input type="text" size="20" name="optemail" id="optemail"
                         class="optional email" value=""/>
                 </p>
                 <p>
-                    <label for="rating">この提案を評価してください</label>
+                    <label for="rating">Please rate this suggestion</label>
                     <input type="text" size="20" name="rating" id="rating" 
                       class="number" value=""/>
                 </p>
                 <p>
-                    <label for="jibberish">合言葉を入力してください (任意)</label>
+                    <label for="jibberish">Enter some jibberish (optional)</label>
                     <input type="text" size="20" name="jibberish" id="jibberish" value=""/>
                 </p>
 
             </fieldset>
             <p>
-                <input type="submit" name="submit" value="提案の追加"/>
+                <input type="submit" name="submit" value="Add Suggestion"/>
             </p>
         </form>
     </body>
-</html>]]></code>
+</html>                      ]]></code>
       <description><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である:</p>
 </description>
       <code><![CDATA[
@@ -215,17 +215,17 @@ function validateForm(objForm)
 
       if (iErrors == 1)
       {
-         objAnchor.appendChild(document.createTextNode('送信した中にエラーが1つあります'));
+         objAnchor.appendChild(document.createTextNode('1 Error in Submission'));
       }
       else
       {
-         objAnchor.appendChild(document.createTextNode('送信した中にエラーが' + iErrors + '個あります'));
+         objAnchor.appendChild(document.createTextNode(iErrors + ' Errors in Submission'));
       }
       objAnchor.href = '#' + strLinkID;
       objAnchor.className = 'submissionerror';
 
       objTitle.appendChild(objAnchor);
-      objParagraph.appendChild(document.createTextNode('以下をご確認ください'));
+      objParagraph.appendChild(document.createTextNode('Please review the following'));
 
       objNew.className = 'validationerrors';
 

@@ -20,12 +20,13 @@
       <eg-group>
       <description><p>この例では、JavaScript を用いて直接リンクのテキストに文脈上の情報を追加する。link クラスはどのテキストを追加するかを決定する。「リンクを展開する」リンクが選択されたとき、ページ内のそれぞれのリンクにテキストを追加すべきかがテストされる。</p>
 </description>
-      <code><![CDATA[...
+         <code><![CDATA[
+...
 <script type="text/javascript">
 var expanded = false;
 var linkContext = {
-	"hist":" 版　Webの歴史",
-	"cook":" 版 Cooking for Nerds"
+	"hist":" version of The History of the Web",
+	"cook":" version of Cooking for Nerds"
 };
 
 function doExpand() {
@@ -42,7 +43,7 @@ function doExpand() {
 	objUpdate = document.getElementById('expand');
 	if (objUpdate)
 	{
-		objUpdate.childNodes[0].nodeValue = "リンクをたたむ";
+		objUpdate.childNodes[0].nodeValue = "Collapse links";
 	}
 	expanded = true;
 }
@@ -61,7 +62,7 @@ function doCollapse() {
 	}
 	if (objUpdate)
 	{
-		objUpdate.childNodes[0].nodeValue = "リンクを展開する";
+		objUpdate.childNodes[0].nodeValue = "Expand links";
 	}
 	expanded = false;
 }
@@ -72,24 +73,17 @@ function toggle() {
 }
 </script>
 
-<h1>本のダウンロード</h1>
-<p><a href="#" onclick="doExpand();">リンクを展開する</a></p>
+...
 
+<h1>Books for download</h1>
+<p><button id="expand" onclick="toggle();">Expand Links</button></p>
 <ul>
-<li>Webの歴史:
-<a href="history.docx" class="hist">Word</a>, 
-<a href="history.pdf" class="hist">PDF</a>, 
-<a href="history.html" class="hist">HTML</a>
-</li>
+	<li>The History of the Web: <a href="history.docx" class="hist">Word</a>, <a href="history.pdf" class="hist">PDF</a>, <a href="history.html" class="hist">HTML</a> </li>
 
-<li>Cooking for Nerds:
-<a href="history.docx" class="cook">Word</a>, 
-<a href="history.pdf" class="cook">PDF</a>, 
-<a href="history.html" class="cook">HTML</a>
-</li>
+	<li>Cooking for Nerds: <a href="history.docx" class="cook">Word</a>, <a href="history.pdf" class="cook">PDF</a>, <a href="history.html" class="cook">HTML</a> </li>
 </ul>
-
-...]]></code>
+...
+]]></code>
          <description>
             <p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR30/expand-links"><!--

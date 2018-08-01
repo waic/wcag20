@@ -53,8 +53,7 @@
       </a> ]]></code>
       <description><p>スクリプト及び HTML コンテンツ:</p>
 </description>
-      <code role="css"><![CDATA[
-<script type="text/javascript">
+         <code role="css"><![CDATA[<script type="text/javascript">
 
       var tid;
       function init() {
@@ -79,20 +78,21 @@
         if (scr.className == 'scrolling') {
           scr.className = 'notscrolling';
           clearInterval(tid);
-           document.getElementById('scrollButton').value="格納";
+           document.getElementById('scrollButton').value="Shrink";
         } else {
           scr.className = 'scrolling';
           initScrolling();
-          document.getElementById('scrollButton').value="展開";
+          document.getElementById('scrollButton').value="Expand";
         }
       }
-  <input type="button" id="scrollButton" value="展開" onclick="toggle()" />
+  <input type="button" id="scrollButton" value="Expand" onclick="toggle()" />
   <div id="scrollContainer" class="scrolling">
     <div id="scrollingText" class="on">
-    .... スクロールするテキスト ...
+    .... Text to be scrolled ...
     </div>
   </div>
-... ]]></code>
+...
+]]></code>
       <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR36/scrolltext.html"><!-- linktype="examples"-->スクロールするテキストを展開</loc></p>
 </description>
     </eg-group>
