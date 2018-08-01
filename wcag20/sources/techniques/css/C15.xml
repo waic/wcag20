@@ -41,14 +41,15 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
 <p>
 表示されるコンテンツは次の通り:</p>
 </description>
-      <code role="xhtml"><![CDATA[<ul id="mainnav">
+         <code role="xhtml"><![CDATA[
+<ul id="mainnav">
   <li class="page_item">Home</li>
-  <li class="page_item"><a href="/services">サービス</a></li>
-  <li class="page_item"><a href="/projects">プロジェクト</a></li>
-  <li class="page_item"><a href="/demos">デモ</a></li>
-  <li class="page_item"><a href="/about-us">会社概要</a></li>
-  <li class="page_item"><a href="/contact-us">問合せ先</a></li>
-  <li class="page_item"><a href="/links">関連リンク</a></li>
+  <li class="page_item"><a href="/services">Services</a></li>
+  <li class="page_item"><a href="/projects">Projects</a></li>
+  <li class="page_item"><a href="/demos">Demos</a></li>
+  <li class="page_item"><a href="/about-us">About us</a></li>
+  <li class="page_item"><a href="/contact-us">Contact us</a></li>
+  <li class="page_item"><a href="/links">Links</a></li>
 </ul>]]></code>
       <description><p>
 マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り:</p>
@@ -65,30 +66,33 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
       <description><p>
 この事例では、背景色を変更することによって、フォーカスを受け取ったときに入力フィールドのスタイルを変更するために :focus 疑似クラスが使用されている。</p>
 </description>
-      <code role="xhtml"><![CDATA[
+         <code role="xhtml"><![CDATA[
 <html>
   <head>
     <style type="text/css">
       input.text:focus {
-        background-color: #7FFF00; color: #000;
+        background-color: #7FFF00; 
+        color: #000;
       }
       input[type=checkbox]:focus + label, input[type=radio]:focus + label {
-        background-color: #FF6: color: #000; 
+        background-color: #FF6; 
+        color: #000; 
       }
     </style>
   </head>
   <body>
     <form method="post" action="form.php">
-      <p><label for="fname">名前: </label>
+      <p><label for="fname">Name: </label>
         <input class="text" type="text" name="fname" id="fname" />
       </p>
       <p>
-        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">男性</label><br />
-        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">女性</label>
+        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">Male</label><br />
+        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">Female</label>
       <p>
     </form>
   </body>
-</html>]]></code>
+</html>
+            ]]></code>
          <description>
             <p>このコードの使用例: <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                     href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">

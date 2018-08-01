@@ -30,13 +30,14 @@
       <head>CSS でのパーセントによるフォントサイズ指定</head>
       <description><p>この事例では、どのような場合でも、<el>strong</el> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、<el>strong</el> 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p>
 </description>
-      <code><![CDATA[strong {font-size: 120%}
+         <code><![CDATA[
+strong {font-size: 120%}
 
 ...
 
-<h1><strong>利用者</strong>がテキストサイズをコントロールできるようにする</h1>
-<p>利用者だけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
-彼がテキストサイズを設定できるようにするのが<strong>とても</strong>重要である。   
+<h1>Letting the <strong>user</strong> control text size</h1>
+<p>Since only the user can know what size text works for him, 
+it is <strong>very</strong> important to let him configure the text size.  
 …]]></code>
     </eg-group>
    </examples>

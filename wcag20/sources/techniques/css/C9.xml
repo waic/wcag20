@@ -54,29 +54,29 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
       <description><p>
 以下のスタイルシートでは、要素の角を丸くするために、CSS の <code>background</code> プロパティを使用している。</p>
 </description>
-      <code><![CDATA[…
-<style type="text/css">
- div#theComments { width:600px; }
- div.aComment { background: url('images/middle.gif') repeat-y left top; 
- margin:0 0 30px 0; }
- div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
- margin:0; padding:8px 16px; }
- div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
- margin:0; padding-top:30px; }
-</style>
+         <code><![CDATA[…
+  <style type="text/css">
+    div#theComments { width:600px; }
+    div.aComment { background: url('images/middle.gif') repeat-y left top; 
+    margin:0 0 30px 0; }
+    div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
+    margin:0; padding:8px 16px; }
+    div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
+    margin:0; padding-top:30px; }
+  </style>
 </head>
 <body>
-<div id="theComments">
- <div class="aComment">
-  <blockquote>
-   <p>やあ、ジョン。俺はこの達成方法がマジで気に入ったんで、自分のサイトでも使おうと思ってるんだ！</p>
-  </blockquote>
-  <div class="submitter">
-   <p class="cite"><a href="http://example.com/">名無しさん</a> from エルボニア</p>
-  </div>
- </div>
- <div class="aComment">
- …
+  <div id="theComments">
+    <div class="aComment">
+      <blockquote>
+        <p>Hi John, I really like this technique and I'm gonna use it on my own Website!</p>
+      </blockquote>
+      <div class="submitter">
+        <cite><a href="http://example.com/">anonymous coward</a> from Elbonia</cite>
+      </div>
+    </div>
+    <div class="aComment">
+…
  </div>
 </div>
 …]]></code>
