@@ -9,13 +9,16 @@
 						クイックリファレンス 3.2.2 (入力時)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">
 						達成基準 3.2.2 (入力時)を理解する
-					</a></li></ul></li></ul><h2 id="H32-description">解説</h2><div class="textbody"><p>この達成方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行する HTTP リクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p></div><h2 class="small-head" id="H32-examples">事例</h2><h3 class="small-head" id="H32-ex1">事例 1</h3><div class="example"><div class="textbody"><p>これは送信ボタンを持つフォームの基本的な事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://www.example.com/cgi/subscribe/" method="post"&gt;&lt;br /&gt; 
-&lt;p&gt;メールリングリストに登録したい場合は、あなたの
-メールアドレスを入力してください。&lt;/p&gt;&lt;br /&gt; 
-&lt;label for="address"&gt;eメールアドレスを入力してください。:&lt;/label&gt;
-&lt;input type="text" id="address" name="address" /&gt; 
-&lt;input type="submit" value="登録" /&gt;&lt;br /&gt; 
-&lt;/form&gt;  </code></pre></div></div><h3 class="small-head" id="H32-ex2">事例 2</h3><div class="example"><div class="textbody"><p>次の事例では、利用者が要求したページを転送する (<code>action</code> 属性により指定された) サーバーサイドスクリプトを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
+					</a></li></ul></li></ul><h2 id="H32-description">解説</h2><div class="textbody"><p>この達成方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行する HTTP リクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p></div><h2 class="small-head" id="H32-examples">事例</h2><h3 class="small-head" id="H32-ex1">事例 1</h3><div class="example"><div class="textbody"><p>これは送信ボタンを持つフォームの基本的な事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
+    &lt;p&gt;Navigate the site.&lt;/p&gt;&lt;br /&gt; 
+    &lt;select name="dest"&gt;&lt;br /&gt; 
+      &lt;option value="/index.html"&gt;Home&lt;/option/&gt;&lt;br /&gt; 
+      &lt;option value="/blog/index.html"&gt;My blog&lt;/option/&gt;&lt;br /&gt; 
+      &lt;option value="/tutorials/index.html"&gt;Tutorials&lt;/option/&gt;&lt;br /&gt; 
+      &lt;option value="/search.html"&gt;Search&lt;/option/&gt;&lt;br /&gt; 
+    &lt;/select&gt;&lt;br /&gt; 
+  &lt;input type="submit" value="Go to Page" /&gt;&lt;br /&gt; 
+  &lt;/form&gt; </code></pre></div></div><h3 class="small-head" id="H32-ex2">事例 2</h3><div class="example"><div class="textbody"><p>次の事例では、利用者が要求したページを転送する (<code>action</code> 属性により指定された) サーバーサイドスクリプトを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
 &lt;p&gt;Navigate the site.&lt;/p&gt;&lt;br /&gt; 
 &lt;select name="dest"&gt;&lt;br /&gt; 
 &lt;option value="/index.html"&gt;Home&lt;/option/&gt;&lt;br /&gt; 

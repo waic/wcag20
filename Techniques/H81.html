@@ -10,14 +10,14 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.46.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/html.html#H81">H81 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="H81-description">解説</h2><div class="textbody"><p>この達成方法の目的は、入れ子になったリストに含まれるリスト項目によって与えられる文脈から、リストの中のリンクの目的を特定することである。このリスト項目によって、リンクテキストだけでは不明瞭なリンクに文脈が与えられることになる。その説明によって、利用者がそのリンクと、そのウェブページ内にある他のリンクとを区別できるようになり、そのリンク先へ移動するかどうかを判断しやすくなる。</p><p>現在の支援技術には、親のリスト項目によって与えられる文脈的な情報を照会するコマンドがないため、この達成方法を用いても、利用者はリスト項目ひとつひとつに移動する必要がある。そのため、この達成方法は、非常に長く又は深く入れ子になったリストには適していないことがある。</p><div class="note"><p class="prefix"><em>注記: </em>可能なかぎり、文脈による補足を必要とせずにリンクの目的が特定できるリンクテキストを提供すべきである。</p></div></div><h2 class="small-head" id="H81-examples">事例</h2><h3 class="small-head" id="H81-ex1">事例 1: ある文書を 3 つのファイル形式で提供する場合</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
-&lt;li&gt;2005-2006年版 年次報告書
+&lt;li&gt;Annual Report 2005-2006
   &lt;ul&gt; 
   &lt;li&gt;&lt;a href="annrep0506.html"&gt;(HTML)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="annrep0506.pdf"&gt;(PDF)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="annrep0506.rtf"&gt;(RTF)&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;2006-2007年版 年次報告書
+&lt;li&gt;Annual Report 2006-2007
   &lt;ul&gt; 
   &lt;li&gt;&lt;a href="annrep0607.html"&gt;(HTML)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="annrep0607.pdf"&gt;(PDF)&lt;/a&gt;&lt;/li&gt;
@@ -29,22 +29,22 @@ H81-1
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H81-1.html">アクセシビリティ・サポーテッド（AS）情報: H81-1</a>
     では、「達成不可能」と評価されている。WAIC はウェブ制作者がこの達成方法を使用することを推奨しない。
   </p></div></div><h3 class="small-head" id="H81-ex2">事例 2: 複数のホテルに関する情報のブロック</h3><div class="example"><div class="textbody"><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul&gt;
-&lt;li&gt;&lt;a href="royal_palm_hotel.html"&gt;ロイヤルパームホテル&lt;/a&gt;
+&lt;li&gt;&lt;a href="royal_palm_hotel.html"&gt;Royal Palm Hotel&lt;/a&gt;
   &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;地図&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;写真&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html"&gt;案内&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;お客様レビュー&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;予約フォーム&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hroyal_palm_hotel_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="royal_palm_hotel_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="hotel_three_rivers.html"&gt;ホテルスリーリバー&lt;/a&gt;
+&lt;li&gt;&lt;a href="hotel_three_rivers.html"&gt;Hotel Three Rivers&lt;/a&gt;
   &lt;ul class="horizontal"&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;地図&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;写真&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;案内&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;お客様レビュー&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;予約フォーム&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_map.html"&gt;Map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_photos.html"&gt;Photos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_directions.html"&gt;Directions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_reviews.html"&gt;Guest reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="hotel_three_rivers_book.html"&gt;Book now&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt; </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 

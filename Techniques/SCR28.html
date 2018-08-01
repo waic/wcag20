@@ -21,13 +21,13 @@
 
 ...
 
-  &lt;a href="#" onclick="toggle("navbar")"&gt;ナビゲーションバー切り替え&lt;/a&gt;
-
-  &lt;ul&gt; id="navbar"&gt;
-  &lt;li&gt;&lt;a href="http://target1.html"&gt;リンク 1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://target2.html"&gt;リンク 2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://target3.html"&gt;リンク 3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://target4.html"&gt;リンク 4&lt;/a&gt;&lt;/li&gt;
+  &lt;a href="#" onclick="toggle('navbar')"&gt;Toggle Navigation Bar&lt;/a&gt;
+  
+  &lt;ul id="navbar"&gt;
+  &lt;li&gt;&lt;a href="http://target1.html"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target2.html"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target3.html"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://target4.html"&gt;Link 4&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
 ... </code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR28/toggle-navbar.html">ナビゲーションバーをリンクで切り替える</a></p></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
@@ -46,7 +46,7 @@ SCR28-1
 
   ...
 
-  &lt;button onclick="return toggle('toc');"&gt;目次切り替え&lt;/button&gt;
+  &lt;button onclick="return toggle('toc');"&gt;Toggle Table of Contents&lt;/button&gt;
   &lt;div id="toc"&gt;
     ...
   &lt;/div&gt;

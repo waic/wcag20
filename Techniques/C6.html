@@ -25,18 +25,20 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
 					</a></li></ul></li></ul><h2 id="C6-description">解説</h2><div class="textbody"><p>この達成方法の目的は、スタイルシートが適用されなくても意味の伝わる表現がなされるようにした上で、スタイルシートを使って見栄えをさらに良くする方法を示すことである。CSS2 の配置関連のプロパティを使用すれば、コンテンツを利用者のビューポート内の任意の位置に配置することができる。構造を示す要素を使っていれば、スタイルが適用されていない際でもコンテンツの意味は正しく伝えられる。</p></div><h2 class="small-head" id="C6-examples">事例</h2><h3 class="small-head" id="C6-ex1">事例 1</h3><div class="example"><div class="textbody"><p>
-この事例では、コンテンツに対して構造 (定義リスト) を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <code>dd</code> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p><p>表示させるコンテンツは以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div class="box"&gt;
+この事例では、コンテンツに対して構造 (定義リスト) を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <code>dd</code> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p><p>表示させるコンテンツは以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;div class="box"&gt;
   &lt;dl&gt;
-    &lt;dt class="menu1"&gt;製品&lt;/dt&gt;
-    &lt;dd class="item1"&gt;電話&lt;/dd&gt;
-    &lt;dd class="item2"&gt;コンピューター&lt;/dd&gt;
-    &lt;dd class="item3"&gt;ポータブル　MP3　プレイヤー&lt;/dd&gt;
-    &lt;dt class="menu2"&gt;所在地&lt;/dt&gt;
-    &lt;dd class="item4"&gt;アイダホ&lt;/dd&gt;
-    &lt;dd class="item5"&gt;ウィスコンシン&lt;/dd&gt;
+    &lt;dt class="menu1"&gt;Products&lt;/dt&gt;
+    &lt;dd class="item1"&gt;Telephones&lt;/dd&gt;
+    &lt;dd class="item2"&gt;Computers&lt;/dd&gt;
+    &lt;dd class="item3"&gt;Portable MP3 Players&lt;/dd&gt;
+    &lt;dt class="menu2"&gt;Locations&lt;/dt&gt;
+    &lt;dd class="item4"&gt;Idaho&lt;/dd&gt;
+    &lt;dd class="item5"&gt;Wisconsin&lt;/dd&gt;
     &lt;/dt&gt;
   &lt;/dl&gt;
- &lt;/div&gt; </code></pre></div><div class="textbody"><p>上記要素の配置及び表示指定をする CSS は以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;/div&gt;
+</code></pre></div><div class="textbody"><p>上記要素の配置及び表示指定をする CSS は以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 .item1 {
    left: 0;
    margin: 0;

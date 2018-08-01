@@ -21,32 +21,32 @@
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li></ul><h2 id="H30-description">解説</h2><div class="textbody"><p>この達成方法の目的は、リンク先を説明するテキストを <code>a</code> 要素のコンテンツとして提供することにより、リンクの目的を説明することである。その説明により、利用者はこのリンクとウェブページ内にある他のリンクとの違いが区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。一般的に、遷移先の URI では、そのリンクの目的を説明したことにはならない。</p><p>画像がリンクの唯一のコンテンツであるとき、画像のテキストによる代替がそのリンクに固有の機能を説明している。</p><p>リンクのコンテンツがテキスト及び一つ以上の画像を含むとき、テキストがリンクの目的を十分に説明している場合、画像は空のテキストによる代替であってもよい。(<a href="https://waic.jp/docs/WCAG-TECHS/H67" class="tech-ref">H67: 支援技術が無視すべき画像に対して、img 要素の alt テキストを空にして、title 属性を付与しない</a>  (HTML)
 			を参照。) 画像がリンクの目的以外にも情報を伝えるときには、画像に適切な代替テキストも付与しなければならない。</p></div><h2 class="small-head" id="H30-examples">事例</h2><h3 class="small-head" id="H30-ex1">事例 1</h3><div class="example"><div class="textbody"><p>HTML において、<code>a</code> 要素のテキストコンテンツを用いてリンクの目的を説明する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="routes.html"&gt;
-  ボールダーズクライミングジムでの現状のルート
+  Current routes at Boulders Climbing Gym
 &lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex2">事例 2</h3><div class="example"><div class="textbody"><p>画像のリンクの目的を説明するために、<code>img</code> 要素に <code>alt</code> 属性を使用する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="routes.html"&gt;
-   &lt;img src="topo.gif" alt="ボールダーズクライミングジムでの現状のルート" /&gt;
-&lt;/a&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+   &lt;img src="topo.gif" alt="Current routes at Boulders Climbing Gym" /&gt; 
+&lt;/a&gt; </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 H30-2
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H30-2.html">アクセシビリティ・サポーテッド（AS）情報: H30-2</a>
     では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
   </p></div></div><h3 class="small-head" id="H30-ex3">事例 3</h3><div class="example"><div class="textbody"><p>アンカー (<code>a</code>) 要素が <code>img</code> 要素に加えてリンクの目的を説明するテキストを含むときは、空の <code>alt</code> 属性を使用する。リンクテキストはページ上で画像の隣りに表示されることに注意する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="routes.html"&gt;
   &lt;img src="topo.gif" alt="" /&gt;
-  ボールダーズクライミングジムでの現状のルート
-&lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex4">事例 4</h3><div class="example"><div class="textbody"><p>サイトでは、製品の詳細ページの「フィードバック」リンクをクリックすることで、利用者がログインしたときに製品に関するフィードバックを提供することができる。他の利用者又は製品メーカーは、フィードバックに応答することができる。フィードバックのリンクは、利用者のフィードバックへの応答が利用可能な場合に、「フィードバック」テキストの前にアイコンを表示する。ヘルプ情報は、このアイコンを二重引用符を含む吹き出しとして説明し、アイコン自体を例として示している。 ヘルプテキストにおけるアイコンのテキストによる代替は、「応答受信アイコン」である。複数のモダリティを使用してこのアイコンを識別できるように、製品の詳細ページ (応答が利用可能な場合) で同じテキストによる代替が使用される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="prod_123_feedback.htm"&gt;Feedback 
-&lt;img src="response.gif" width="15" height="15" alt="レスポンス受信アイコン" /&gt;&lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex5">事例 5</h3><div class="example"><div class="textbody"><p>リンクはテキスト及びアイコンを含み、アイコンはリンク先についての追加情報を提供している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="WMFP.pdf"&gt;
-ウッドエンドミュージックフェスティバルのプログラム
-&lt;img src="pdficon.gif" alt="PDFファイル"/&gt;
+  Current routes at Boulders Climbing Gym
+&lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex4">事例 4</h3><div class="example"><div class="textbody"><p>サイトでは、製品の詳細ページの「Feedback」リンクをクリックすることで、利用者がログインしたときに製品に関するフィードバックを提供することができる。他の利用者又は製品メーカーは、フィードバックに応答することができる。フィードバックのリンクは、利用者のフィードバックへの応答が利用可能な場合に、「Feedback」テキストの前にアイコンを表示する。ヘルプ情報は、このアイコンを二重引用符を含む吹き出しとして説明し、アイコン自体を例として示している。 ヘルプテキストにおけるアイコンのテキストによる代替は、「応答受信アイコン」である。複数のモダリティを使用してこのアイコンを識別できるように、製品の詳細ページ (応答が利用可能な場合) で同じテキストによる代替が使用される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="prod_123_feedback.htm"&gt;Feedback 
+         &lt;img src="response.gif" width="15" height="15" alt="Response received icon" /&gt;&lt;/a&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex5">事例 5</h3><div class="example"><div class="textbody"><p>リンクはテキスト及びアイコンを含み、アイコンはリンク先についての追加情報を提供している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="WMFP.pdf"&gt;
+Woodend Music Festival Program
+&lt;img src="pdficon.gif" alt="PDF format"/&gt;
 &lt;/a&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 H30-5
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H30-5.html">アクセシビリティ・サポーテッド（AS）情報: H30-5</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h3 class="small-head" id="H30-ex6">事例 6</h3><div class="example"><div class="textbody"><p>MyCorp 社の年次レポートは企業のウェブサイト上から PDF ファイルとして入手でき、年次企業予算は Excel ファイルとして入手できる。</p><div class="note"><p class="prefix"><em>注記: </em>多くの利用者は、ファイルを開く際に新しいアプリケーションが開く場合は、あらかじめファイルの種類を知りたいので、このような追加情報を含めるのはしばしば便利であると考えられる。 ただし、この達成基準を満たすには必須ではない。</p></div></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;
-&lt;a href=”2009mycorp_report.pdf”&gt;MyCorp 2009 年次レポート (pdf)&lt;/a&gt;&lt;br /&gt;
-&lt;a href=”2009mycorp_budget.xls”&gt;MyCorp 2009 年次予算 (Excel)&lt;/a&gt;
+&lt;a href=”2009mycorp_report.pdf”&gt;MyCorp 2009 Annual Report (pdf)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=”2009mycorp_budget.xls”&gt;MyCorp 2009 Annual Budget (Excel)&lt;/a&gt;
 &lt;/p&gt;</code></pre></div></div><h3 class="small-head" id="H30-ex7">事例 7</h3><div class="example"><div class="textbody"><p>HTML5 においてブロックレベル要素をリンクで囲む。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;article&gt;
 &lt;a href="news.html"&gt;
-&lt;h3&gt;議会で続く予算討議&lt;/h3&gt;
-&lt;p class="subhead"&gt;&lt;img class="alertimg" src="alerticon.png" alt="ニュース速報" height="30" width="30"&gt;議会の議員は、来年の予算をめぐる3つの挑戦的な問題について、激しい議論を続けた。&lt;/p&gt;
-&lt;p&gt;もっと読む&lt;/p&gt;
+&lt;h3&gt;Budget Debate Continues in Parliament&lt;/h3&gt;
+&lt;p class="subhead"&gt;&lt;img class="alertimg" src="alerticon.png" alt="Breaking News" height="30" width="30"&gt;Members of Parliament continued vigorous debate on three challenging issues surrounding the upcoming year's budget.&lt;/p&gt;
+&lt;p&gt;Read more&lt;/p&gt;
 &lt;/a&gt;
 &lt;/article&gt;</code></pre></div><p><a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H30/link-wraps-block.html">ブロックレベル要素をリンクで囲む実例</a>を示す。
             </p></div><h2 id="H30-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.8">HTML 4.01 - how to specify alt text</a>

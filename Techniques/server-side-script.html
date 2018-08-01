@@ -88,15 +88,16 @@ ErrorDocument 403 http://example.com/documents/index.html</code></pre></div></di
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 	&lt;head&gt;
-    		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-    		&lt;title&gt;適合しているコンテンツ&lt;/title&gt;
+    		&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+    		&lt;title&gt;Conforming Content&lt;/title&gt;
     	&lt;/head&gt;
 	&lt;body&gt;
-		&lt;h1&gt;これは適合しているページです。&lt;/h1&gt;
-		&lt;p&gt;ここから、&lt;a href="non-conforming.php"&gt;不適合なページ&lt;/a&gt;へと移動する
-		ことができます。&lt;/p&gt;
+		&lt;h1&gt;This is a conforming page&lt;/h1&gt;
+		&lt;p&gt;From here, you can visit the &lt;a href="non-conforming.php"&gt;non-conforming 
+		page&lt;/a&gt;. &lt;/p&gt;
 	&lt;/body&gt;
-&lt;/html&gt;</code></pre></div><div class="textbody"><p>non-conforming.php:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;/html&gt;
+    				</code></pre></div><div class="textbody"><p>non-conforming.php:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;?php 
 // リクエストが「conforming.php」という文字列を含むファイルから来た場合、ページをレンダリングする。
 	if(stristr($_SERVER['HTTP_REFERER'], "conforming.php")) {
@@ -107,11 +108,12 @@ ErrorDocument 403 http://example.com/documents/index.html</code></pre></div></di
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 	&lt;head&gt;
 		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-		&lt;title&gt;不適合コンテンツ&lt;/title&gt;
+		&lt;title&gt;Non-Conforming Content&lt;/title&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
-		&lt;h1&gt;これは不適合なページです。&lt;/h1&gt;
-		&lt;p&gt; &lt;?php echo $_SERVER['HTTP_REFERER']; ?&gt;から来たので、このページにあるコンテンツを見ることができます。
+		&lt;h1&gt;This is a non-conforming page&lt;/h1&gt;
+		&lt;p&gt;Because you came from &lt;?php echo $_SERVER['HTTP_REFERER']; ?&gt;, you are 
+			able to view the content on this page. &lt;/p&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
 &lt;?php
@@ -122,21 +124,20 @@ header("Location: conforming.php");
 }
 ?&gt;</code></pre></div><div class="textbody"><p>実装例として <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SVR3/non-conforming.php">Conforming content</a> が利用できる。</p></div></div><h3 id="SVR3-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G136">G136: 不適合なウェブページの先頭に、適合している代替版を指すリンクを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G190">G190: 適合している代替版へのリンクを、不適合のオブジェクトに隣接して、又は関連付けて提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SVR2">SVR2: 適合しているコンテンツからのみ、適合していないコンテンツにアクセスできるように、.htaccess を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SVR4">SVR4: 適合している代替版の表示に関する設定を利用者が行えるようにする</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C29">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</a></li></ul></div><h3 id="SVR3-tests">検証</h3><div class="textbody"><h4 class="small-head" id="SVR3-procedure">手順</h4><p>不適合コンテンツに対して、WCAG に適合している代替版が提供されている場合:</p><ol class="enumar"><li><p>宣言している適合レベルで WCAG に適合していないページで、HTTP リファラの使用によってアクセシブルな代替版が提供されているものを特定する。</p></li><li><p>不適合のコンテンツの URI を開く。</p></li><li><p>開いたページが次のうちの一つである:</p><ol class="enumla"><li><p>不適合のコンテンツの<a href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替版</a></p></li><li><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></li></ol></li></ol><h4 class="small-head" id="SVR3-results">期待される結果</h4><ul><li><p>3.a. 又は 3.b. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="SVR4" id="SVR4"> </a>SVR4: 適合している代替版の表示に関する設定を利用者が行えるようにする</h2><div class="applicability"><h3 id="SVR4-applicability">適用 (対象)</h3><div class="textbody"><p>設定を保存するためにサーバサイドのスクリプトを用いて生成されたコンテンツ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#cc1">
 					適合要件 1 (適合レベル)
-				</a></li></ul><h3 id="SVR4-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ウェブページの適合している代替版の設定を利用者が選択できるメカニズムを提供することである。</p><p>利用者が適合している代替版を見ることができるような設定を提供するにはいくつかの方法が可能である。一般的な方法としては、ウェブサーバがページを修正する、又は利用者を代替版にリダイレクトするのに使うセッション又は永続的なクッキーを設定するサーバサイドのプロセスのトリガーとなるリンクを提供する方法がある。他の方法には、利用者がウェブページ又はサービスにアクセスする際にサインインするシステムへのログイン情報の一部として利用者ごとの選択肢を提供する方法がある。</p><p>不適合なページで提供されるメカニズムは、代替版を必要とする利用者が、それを探して利用するためにアクセシブルである必要がある。そのメカニズム自体は宣言しているアクセシビリティレベルに適合しているべきである。</p></div><h3 class="small-head" id="SVR4-examples">事例</h3><h4 class="small-head" id="SVR4-ex1">事例 1: 利用者設定を保存するためにセッション又は永続的なクッキーを設定する</h4><div class="example"><div class="textbody"><p>あるウェブサイトは、サイト内のページには「設定」ページへのリンクを提供している。このページには、サイトの代替版を見るためのオプションがある。好みによってページのさまざまな見方があるかもしれないし、利用者はサイトの完全な代替版を見たいかもしれない。その設定はサイト上で動画が含まれる部分ではキャプションを表示するものかもしれない。また、主となるサイトが、代替版からしかわからないアクセシビリティ適合についての問題を含んでいるために提供されているのかもしれない。</p><p>あるウェブページの制作者はクッキーを使って設定を扱うことがある。それは、PHP のようなサーバサイドのスクリプトを用いて扱われるかもしれない。</p><p>設定のページは例えば次のように提供される:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+				</a></li></ul><h3 id="SVR4-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ウェブページの適合している代替版の設定を利用者が選択できるメカニズムを提供することである。</p><p>利用者が適合している代替版を見ることができるような設定を提供するにはいくつかの方法が可能である。一般的な方法としては、ウェブサーバがページを修正する、又は利用者を代替版にリダイレクトするのに使うセッション又は永続的なクッキーを設定するサーバサイドのプロセスのトリガーとなるリンクを提供する方法がある。他の方法には、利用者がウェブページ又はサービスにアクセスする際にサインインするシステムへのログイン情報の一部として利用者ごとの選択肢を提供する方法がある。</p><p>不適合なページで提供されるメカニズムは、代替版を必要とする利用者が、それを探して利用するためにアクセシブルである必要がある。そのメカニズム自体は宣言しているアクセシビリティレベルに適合しているべきである。</p></div><h3 class="small-head" id="SVR4-examples">事例</h3><h4 class="small-head" id="SVR4-ex1">事例 1: 利用者設定を保存するためにセッション又は永続的なクッキーを設定する</h4><div class="example"><div class="textbody"><p>あるウェブサイトは、サイト内のページには「設定」ページへのリンクを提供している。このページには、サイトの代替版を見るためのオプションがある。好みによってページのさまざまな見方があるかもしれないし、利用者はサイトの完全な代替版を見たいかもしれない。その設定はサイト上で動画が含まれる部分ではキャプションを表示するものかもしれない。また、主となるサイトが、代替版からしかわからないアクセシビリティ適合についての問題を含んでいるために提供されているのかもしれない。</p><p>あるウェブページの制作者はクッキーを使って設定を扱うことがある。それは、PHP のようなサーバサイドのスクリプトを用いて扱われるかもしれない。</p><p>設定のページは例えば次のように提供される:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
   &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
       &lt;head&gt;
-      &lt;title&gt;サイト設定&lt;/title&gt;
+      &lt;title&gt;Site Preferences&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-      &lt;h1&gt;サイト設定&lt;/h1&gt;
+      &lt;h1&gt;Site Preferences&lt;/h1&gt;
       &lt;form id="form1" name="site_prefs" method="post" action="pref.php"&gt;
           &lt;fieldset&gt;
-              &lt;legend&gt;どのバージョンのサイトを見たいですか？&lt;/legend&gt;
+              &lt;legend&gt;Which version of the site do you want to view?&lt;/legend&gt;
               &lt;input type="radio" name="site_pref" id="site_pref_reg" value="reg" /&gt;
-              &lt;label for="site_pref_reg"&gt;サイトの主バージョン&lt;/label&gt;
+              &lt;label for="site_pref_reg"&gt;Main version of site&lt;/label&gt;
               &lt;input type="radio" name="site_pref" id="site_pref_axx" value="axx" /&gt;
-              &lt;label for="site_pref_axx"&gt;アクセシビリティ適合バージョン&lt;/label&gt;
+              &lt;label for="site_pref_axx"&gt;Accessibility-conforming version&lt;/label&gt;
           &lt;/fieldset&gt; 
       &lt;/form&gt;
   &lt;/body&gt;

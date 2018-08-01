@@ -20,80 +20,80 @@ SCR32
     では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
   </p></div></div><h2 class="small-head" id="SCR32-examples">事例</h2><h3 class="small-head" id="SCR32-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この事例は必須のフィールドを検証し、さらに特定の書式が必要なフィールドを検証する。エラーがみつかったとき、スクリプトはエラーメッセージの一覧を DOM に挿入し、フォーカスをそこへ移動する。</p><img src="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/SCR32/form2.jpg" class="eximg" alt="サンプルの画面イメージ: スクリーンショットは、正しく記入が行われていないいくつかのフィールドのエラーメッセージをあらわしている。エラーメッセージはリンクリストでフォームの先頭近くに現れる。"/><p> <em>HTML 及び Javascript のコード</em> </p><p>これは事例のフォームの HTML である:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
-&lt;html lang="ja"&gt;
+&lt;html&gt;
     &lt;head&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;    
-        &lt;title&gt;フォームの検証&lt;/title&gt;
+        &lt;title&gt;Form Validation&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
         &lt;link href="css/validate.css" rel="stylesheet" type="text/css"/&gt;
         &lt;script type="text/javascript" src="scripts/validate.js"/&gt;
     &lt;/head&gt;
     &lt;body&gt;
 
-        &lt;h1&gt;フォームの検証&lt;/h1&gt;
+        &lt;h1&gt;Form Validation&lt;/h1&gt;
 
-        &lt;p&gt;以下のフォームは、もしスクリプトが利用可能であれば送信前に検証されるが、
-		そうでなければサーバー上で検証される。任意と書かれた以外のすべての
-		フィールドは必須である。送信時にエラーがみつかった場合、フォームはキャンセルされて
-		エラー一覧がフォームの先頭に表示される。&lt;/p&gt;
+        &lt;p&gt;The following form is validated before being submitted if scripting is available,
+            otherwise the form is validated on the server. All fields are required, except those
+            marked optional. If errors are found in the submission, the form is cancelled and 
+            a list of errors is displayed at the top of the form.&lt;/p&gt;
 
-        &lt;p&gt; 下に貴方の情報を入力してください。 &lt;/p&gt;
+        &lt;p&gt; Please enter your details below. &lt;/p&gt;
 
-        &lt;h2&gt;フォームの検証&lt;/h2&gt;
+        &lt;h2&gt;Validating Form&lt;/h2&gt;
 
         &lt;form id="personalform" method="post" action="index.php"&gt;
             &lt;div class="validationerrors"/&gt;
             &lt;fieldset&gt;
-                &lt;legend&gt;個人情報詳細&lt;/legend&gt;
+                &lt;legend&gt;Personal Details&lt;/legend&gt;
                 &lt;p&gt;
-                    &lt;label for="forename"&gt;名前を入力してください&lt;/label&gt;
+                    &lt;label for="forename"&gt;Please enter your forename&lt;/label&gt;
                     &lt;input type="text" size="20" name="forename" id="forename" class="string"
                         value=""/&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
-                    &lt;label for="age"&gt;年齢を入力してください&lt;/label&gt;
+                    &lt;label for="age"&gt;Please enter your age&lt;/label&gt;
                     &lt;input type="text" size="20" name="age" id="age" class="number" value=""/&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
-                    &lt;label for="email"&gt;電子メールアドレスを入力してください&lt;/label&gt;
+                    &lt;label for="email"&gt;Please enter your email address&lt;/label&gt;
                     &lt;input type="text" size="20" name="email" id="email" class="email" value=""/&gt;
                 &lt;/p&gt;
             &lt;/fieldset&gt;
             &lt;p&gt;
-                &lt;input type="submit" name="signup" value="登録"/&gt;
+                &lt;input type="submit" name="signup" value="Sign up"/&gt;
             &lt;/p&gt;
         &lt;/form&gt;
-        &lt;h2&gt;2番目のフォーム&lt;/h2&gt;
+        &lt;h2&gt;Second Form&lt;/h2&gt;
         &lt;form id="secondform" method="post" action="index.php#focuspoint"&gt;
             &lt;div class="validationerrors"/&gt;
             &lt;fieldset&gt;
-                &lt;legend&gt;2番目のフォームの詳細&lt;/legend&gt;
+                &lt;legend&gt;Second Form Details&lt;/legend&gt;
                 &lt;p&gt;
-                    &lt;label for="suggestion"&gt;提案内容を入力&lt;/label&gt;
+                    &lt;label for="suggestion"&gt;Enter a suggestion&lt;/label&gt;
                     &lt;input type="text" size="20" name="suggestion" id="suggestion" 
                       class="string" value=""/&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
-                    &lt;label for="optemail"&gt;貴方のメールアドレスを入力してください (任意)&lt;/label&gt;
+                    &lt;label for="optemail"&gt;Please enter your email address (optional)&lt;/label&gt;
                     &lt;input type="text" size="20" name="optemail" id="optemail"
                         class="optional email" value=""/&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
-                    &lt;label for="rating"&gt;この提案を評価してください&lt;/label&gt;
+                    &lt;label for="rating"&gt;Please rate this suggestion&lt;/label&gt;
                     &lt;input type="text" size="20" name="rating" id="rating" 
                       class="number" value=""/&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
-                    &lt;label for="jibberish"&gt;合言葉を入力してください (任意)&lt;/label&gt;
+                    &lt;label for="jibberish"&gt;Enter some jibberish (optional)&lt;/label&gt;
                     &lt;input type="text" size="20" name="jibberish" id="jibberish" value=""/&gt;
                 &lt;/p&gt;
 
             &lt;/fieldset&gt;
             &lt;p&gt;
-                &lt;input type="submit" name="submit" value="提案の追加"/&gt;
+                &lt;input type="submit" name="submit" value="Add Suggestion"/&gt;
             &lt;/p&gt;
         &lt;/form&gt;
     &lt;/body&gt;
-&lt;/html&gt;</code></pre></div><div class="textbody"><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;/html&gt;                      </code></pre></div><div class="textbody"><p>以下は検証を行ってエラーメッセージを挿入する JavaScript である:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 window.onload = initialise;
 
 function initialise()
@@ -208,17 +208,17 @@ function validateForm(objForm)
 
       if (iErrors == 1)
       {
-         objAnchor.appendChild(document.createTextNode('送信した中にエラーが1つあります'));
+         objAnchor.appendChild(document.createTextNode('1 Error in Submission'));
       }
       else
       {
-         objAnchor.appendChild(document.createTextNode('送信した中にエラーが' + iErrors + '個あります'));
+         objAnchor.appendChild(document.createTextNode(iErrors + ' Errors in Submission'));
       }
       objAnchor.href = '#' + strLinkID;
       objAnchor.className = 'submissionerror';
 
       objTitle.appendChild(objAnchor);
-      objParagraph.appendChild(document.createTextNode('以下をご確認ください'));
+      objParagraph.appendChild(document.createTextNode('Please review the following'));
 
       objNew.className = 'validationerrors';
 

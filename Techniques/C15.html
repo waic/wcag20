@@ -17,14 +17,15 @@
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua3.8.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/css.html#C15">C15 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="C15-description">解説</h2><div class="textbody"><p>この達成方法の目的は、インタラクティブな要素がフォーカスされたとき、又は利用者がポインティングデバイスを使ってカーソルを上にのせたときに、スタイルシートを使って視覚的なフィードバックを返すようにすることで視覚表現がどれだけ強調されるのかを示すことである。
 フォーカスされた要素又はカーソルが上にのせられた要素をハイライトすることで、その要素がインタラクティブであること、又はインタラクティブな要素の範囲内であるなどの情報を提供することができる。</p><p>複数のモードに対して視覚的なフィードバックを返すことが可能な場合もある。通常、それは要素の上にカーソルをのせるためにマウスを使ったり、又は要素にタブで移動するためのキーボードを使ったりする場合である。</p></div><h2 class="small-head" id="C15-examples">事例</h2><h3 class="small-head" id="C15-ex1">事例 1: リンク要素</h3><div class="example"><div class="textbody"><p>
 この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSS が使用されている。</p><p>
-表示されるコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul id="mainnav"&gt;
+表示されるコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;ul id="mainnav"&gt;
   &lt;li class="page_item"&gt;Home&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/services"&gt;サービス&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/projects"&gt;プロジェクト&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/demos"&gt;デモ&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/about-us"&gt;会社概要&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/contact-us"&gt;問合せ先&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/links"&gt;関連リンク&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/demos"&gt;Demos&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/about-us"&gt;About us&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/contact-us"&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/links"&gt;Links&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre></div><div class="textbody"><p>
 マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 #mainnav a:hover, #mainnav a:active, #mainnav a:focus {
@@ -40,25 +41,28 @@ C15-1
   &lt;head&gt;
     &lt;style type="text/css"&gt;
       input.text:focus {
-        background-color: #7FFF00; color: #000;
+        background-color: #7FFF00; 
+        color: #000;
       }
       input[type=checkbox]:focus + label, input[type=radio]:focus + label {
-        background-color: #FF6: color: #000; 
+        background-color: #FF6; 
+        color: #000; 
       }
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;form method="post" action="form.php"&gt;
-      &lt;p&gt;&lt;label for="fname"&gt;名前: &lt;/label&gt;
+      &lt;p&gt;&lt;label for="fname"&gt;Name: &lt;/label&gt;
         &lt;input class="text" type="text" name="fname" id="fname" /&gt;
       &lt;/p&gt;
       &lt;p&gt;
-        &lt;input type="radio" name="sex" value="male" id="sm" /&gt; &lt;label for="sm"&gt;男性&lt;/label&gt;&lt;br /&gt;
-        &lt;input type="radio" name="sex" value="female" id="sf" /&gt; &lt;label for="sf"&gt;女性&lt;/label&gt;
+        &lt;input type="radio" name="sex" value="male" id="sm" /&gt; &lt;label for="sm"&gt;Male&lt;/label&gt;&lt;br /&gt;
+        &lt;input type="radio" name="sex" value="female" id="sf" /&gt; &lt;label for="sf"&gt;Female&lt;/label&gt;
       &lt;p&gt;
     &lt;/form&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre></div><div class="textbody"><p>このコードの使用例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
+&lt;/html&gt;
+            </code></pre></div><div class="textbody"><p>このコードの使用例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
                     フォーカスを受け取る要素を強調表示する例</a>。</p></div></div><h2 id="C15-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</a>
 								       </p></li><li><p> 

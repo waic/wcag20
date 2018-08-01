@@ -17,7 +17,7 @@
 					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.19.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/html.html#H46">H46 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="H46-description">解説</h2><div class="textbody"><p>この達成方法の目的は、<code>embed</code> 要素の代替コンテンツとして <code>noembed</code> を提供することである。<code>noembed</code> 要素は <code>embed</code> 要素がサポートされていない場合のみレンダリングされる。ページのどこにでも配置できるが、<code>embed</code> 要素の子要素として組み込む方が良い。これによりテキストによる代替が <code>embed</code> 要素に関連付けられてことが支援技術にも明らかになる。</p></div><h2 class="small-head" id="H46-examples">事例</h2><h3 class="small-head" id="H46-ex1">事例 1: noembed 要素が embed 要素の内側にある</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;embed src="../movies/history_of_rome.mov"
   height="60" width="144" autostart="false"&gt;
   &lt;noembed&gt;
-    &lt;a href="../transcripts/transcript_history_rome.htm"&gt;"ローマの歴史"のコピー&lt;/a&gt;
+    &lt;a href="../transcripts/transcript_history_rome.htm"&gt;Transcript of "The history of Rome"&lt;/a&gt;
   &lt;/noembed&gt;
 &lt;/embed&gt;</code></pre></div></div><h3 class="small-head" id="H46-ex2">事例 2: noembed 要素が embed 要素のそばにある</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;embed src="moviename.swf" width="100" height="80"
   pluginspage="http://example.com/shockwave/download/" /&gt;

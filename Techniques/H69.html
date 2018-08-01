@@ -18,47 +18,47 @@
 H69
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H69.html">アクセシビリティ・サポーテッド（AS）情報: H69</a>
     では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h2 class="small-head" id="H69-examples">事例</h2><h3 class="small-head" id="H69-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この事例では、各セクションの見出しを <code>h2</code> 要素でマークアップすることによって、検索ページ内の複数のセクションを構成している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;技術関連の定期刊行物の検索&lt;/h1&gt;
- &lt;h2&gt;検索&lt;/h2&gt;
+  </p></div></div><h2 class="small-head" id="H69-examples">事例</h2><h3 class="small-head" id="H69-ex1">事例 1</h3><div class="example"><div class="textbody"><p>この事例では、各セクションの見出しを <code>h2</code> 要素でマークアップすることによって、検索ページ内の複数のセクションを構成している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;Search Technical Periodicals&lt;/h1&gt;
+ &lt;h2&gt;Search&lt;/h2&gt;
  &lt;form action="search.php"&gt;
-  &lt;p&gt;&lt;label for="searchInput"&gt;検索トピックスを入力:&lt;/label&gt;
+  &lt;p&gt;&lt;label for="searchInput"&gt;Enter search topic: &lt;/label&gt;
   &lt;input type="text" size="30" id="searchInput"&gt;
-  &lt;input type="submit" value="検索"&gt;&lt;/p&gt;
+  &lt;input type="submit" value="Go"&gt;&lt;/p&gt;
  &lt;/form&gt;
- &lt;h2&gt;検索可能な定期刊行物&lt;/h2&gt;
+ &lt;h2&gt;Available Periodicals&lt;/h2&gt;
  &lt;div class="jlinks"&gt;
-  &lt;a href="pcoder.com"&gt;プロフェッショナルコーダー&lt;/a&gt; |
-  &lt;a href="algo.com"&gt;アルゴリズム&lt;/a&gt; |
-  &lt;a href="jse.com"&gt;ソフトウェア工学ジャーナル&lt;/a&gt;
+  &lt;a href="pcoder.com"&gt;Professional Coder&lt;/a&gt; |
+  &lt;a href="algo.com"&gt;Algorithms&lt;/a&gt; |
+  &lt;a href="jse.com"&gt;Journal of Software Engineering&lt;/a&gt;
  &lt;/div&gt;
- &lt;h2&gt;検索結果&lt;/h2&gt;
- ……このセクションに検索結果を表示……</code></pre></div></div><h3 class="small-head" id="H69-ex2">事例 2: コンテンツ全体の構成を示している見出し</h3><div class="example"><div class="textbody"><p>この事例では、ナビゲーションとメインコンテンツを知覚できるように、見出しマークアップを利用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;!-- ロゴ、バナー画像、検索フォームなど  --&gt;
-  &lt;h2&gt;ナビゲーション&lt;/h2&gt;
+ &lt;h2&gt;Search Results&lt;/h2&gt;
+ ... search results are returned in this section ...   </code></pre></div></div><h3 class="small-head" id="H69-ex2">事例 2: コンテンツ全体の構成を示している見出し</h3><div class="example"><div class="textbody"><p>この事例では、ナビゲーションとメインコンテンツを知覚できるように、見出しマークアップを利用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;!-- ロゴ、バナー画像、検索フォームなど  --&gt;
+  &lt;h2&gt;Navigation&lt;/h2&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href="about.htm"&gt;会社概要&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="contact.htm"&gt;お問い合わせ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="about.htm"&gt;About us&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="contact.htm"&gt;Contact us&lt;/a&gt;&lt;/li&gt;
        ...
     &lt;/ul&gt;
-  &lt;h2&gt;見出しに関する全て&lt;/h2&gt;
-   &lt;!-- メインコンテンツを構成するテキスト、画像、その他のもの…… --&gt;</code></pre></div></div><h3 class="small-head" id="H69-ex3">事例 3: メインコンテンツ部分にあるコンテンツの構成を示している見出し</h3><div class="example"><div class="textbody"><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;h2&gt;All about headings&lt;/h2&gt;
+   &lt;!-- メインコンテンツを構成するテキスト、画像、その他のもの…… --&gt;</code></pre></div></div><h3 class="small-head" id="H69-ex3">事例 3: メインコンテンツ部分にあるコンテンツの構成を示している見出し</h3><div class="example"><div class="textbody"><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
   &lt;head&gt;
-    &lt;title&gt;調理手法&lt;/title&gt;  
+    &lt;title&gt;Cooking techniques&lt;/title&gt;  
   &lt;/head&gt;   
   &lt;body&gt;     
-    &lt;h1&gt;調理手法&lt;/h1&gt;     
+    &lt;h1&gt;Cooking techniques&lt;/h1&gt;     
     &lt;p&gt;       
-      ……ここにテキストが入ります……     
+      ... some text here ...     
     &lt;/p&gt;           
-    &lt;h2&gt;油を使った調理&lt;/h2&gt; 
+    &lt;h2&gt;Cooking with oil&lt;/h2&gt; 
     &lt;p&gt; 
-        ……このセクションのテキスト……     
+        ... text of the section ...     
     &lt;/p&gt;           
-    &lt;h2&gt;バターを使った調理&lt;/h2&gt;       
+    &lt;h2&gt;Cooking with butter&lt;/h2&gt;       
     &lt;p&gt;
-        ……このセクションのテキスト……     
+        ... text of the section ...     
     &lt;/p&gt;   
   &lt;/body&gt; 
-&lt;/html&gt;</code></pre></div></div><h2 id="H69-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html401/struct/global.html#h-7.5.5">HTML 4.01
+&lt;/html&gt;    </code></pre></div></div><h2 id="H69-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p><a href="http://www.w3.org/TR/html401/struct/global.html#h-7.5.5">HTML 4.01
                     H1-H6 elements</a></p></li><li><p><a href="http://meyerweb.com/eric/thoughts/2004/07/21/pick-a-heading/">Pick a
                     Heading</a> Eric Meyer</p></li><li><p>
                   <a href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</a>

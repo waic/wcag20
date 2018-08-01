@@ -10,38 +10,42 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">
 						達成基準 1.3.3 (感覚的な特徴)を理解する
 					</a></li></ul></li></ul><h2 id="G96-description">解説</h2><div class="textbody"><p>この達成方法の目的は、ウェブページ内のアイテムがコンテンツの中で、形や大きさや音又は位置だけでなく、知覚に依存しない言い回しによっても言及されるようにすることである。例えば、アイテムについて言及する文では、アイテムのラベル又はその機能についてもあわせて説明する。</p></div><h2 class="small-head" id="G96-examples">事例</h2><h3 class="small-head" id="G96-ex1">事例 1</h3><div class="example"><div class="textbody"><p>フォームには、入力内容を送信して一連の過程の次の手順に進むために円形のボタンがある。そのボタンにはテキストで「次へ」とラベルが付けられている。説明には、「フォームを送信するには、<em>次へ</em>と記された円形のボタンを押して下さい」と示されている。これは、そのボタンを特定するための形とテキスト情報の両方を含んでいる。</p></div></div><h3 class="small-head" id="G96-ex2">事例 2</h3><div class="example"><div class="textbody"><p>オンライントレーニングを提供するウェブページの説明には、「希望のオンラインコースへ進むには、右側の『クラス一覧』という見出しがついたリンクのリストを使用して下さい。」と書いてある。この説明は、適切なリンクのリストを見つけること補助するために位置と同様にテキストの手がかりを提供している。
-		</p></div></div><h3 class="small-head" id="G96-ex3">事例 3</h3><div class="example"><div class="textbody"><p>以下のレイアウトではボタンを右下隅に配置して位置によってそれを示している。テキストラベルの指示は、位置が意味をなさない線形化バージョンにアクセスする利用者にも、どのボタンを使用するかを明確にしている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td colspan="2"&gt;右下の「前へ戻る」ボタンを押して下さい。&lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        印刷&lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        中止&lt;/span&gt;
-      &lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        OK&lt;/span&gt;
-      &lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        前へ戻る&lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre></div></div><h2 id="G96-resources">参考リソース</h2><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h2 id="G96-related-techs">関連する達成方法</h2><div class="textbody"><p>(今のところ、なし。)</p></div><h2 id="G96-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G96-procedure">手順</h3><p>ウェブページ内において、オブジェクトの形、大きさ、又は位置を使って説明しているすべての言及箇所を探し出す。そのような各アイテムにおいて:</p><ol class="enumar"><li><p>その言及箇所には、形や大きさ、又は相対的な位置についての情報がない場合でもアイテムを見つけて、特定するための追加情報が含まれている。</p></li></ol><h3 class="small-head" id="G96-results">期待される結果</h3><ul><li><p>1.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G95: 非テキストコンテンツの簡単な説明を提供する、簡潔なテキストによる代替を提供する" href="G95.html"><strong>前: </strong>
+		</p></div></div><h3 class="small-head" id="G96-ex3">事例 3</h3><div class="example"><div class="textbody"><p>以下のレイアウトではボタンを右下隅に配置して位置によってそれを示している。テキストラベルの指示は、位置が意味をなさない線形化バージョンにアクセスする利用者にも、どのボタンを使用するかを明確にしている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;table&gt;
+                &lt;tbody&gt;
+                &lt;tr&gt;
+                &lt;td colspan="2"&gt;Push the lower right [Preview] button.&lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Print&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Cancel&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                OK&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Preview&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;/table&gt;
+              
+              
+            </code></pre></div></div><h2 id="G96-resources">参考リソース</h2><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h2 id="G96-related-techs">関連する達成方法</h2><div class="textbody"><p>(今のところ、なし。)</p></div><h2 id="G96-tests">検証</h2><div class="textbody"><h3 class="small-head" id="G96-procedure">手順</h3><p>ウェブページ内において、オブジェクトの形、大きさ、又は位置を使って説明しているすべての言及箇所を探し出す。そのような各アイテムにおいて:</p><ol class="enumar"><li><p>その言及箇所には、形や大きさ、又は相対的な位置についての情報がない場合でもアイテムを見つけて、特定するための追加情報が含まれている。</p></li></ol><h3 class="small-head" id="G96-results">期待される結果</h3><ul><li><p>1.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div><!-- BOTTOM NAVIGATION BAR --><ul id="navigationbottom"><li><strong><a href="#top">このページの先頭へ</a></strong></li><li><strong><a href="Overview.html#contents" title="Table of Contents">目次</a></strong></li><li><strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">イントロダクション</abbr></a></strong></li><li><a title="G95: 非テキストコンテンツの簡単な説明を提供する、簡潔なテキストによる代替を提供する" href="G95.html"><strong>前: </strong>
         達成方法 G95</a></li><li><a title="G97: 略語の初出時、その直前又は直後に元の語を提供する" href="G97.html"><strong>次: </strong>
         達成方法 G97</a></li></ul><div class="footer"><p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 達成方法集: WCAG 2.0 の達成方法と失敗例</a> (<a href="https://www.w3.org/TR/WCAG20-TECHS/G96.html">この文書の最新版 (英語)</a> を参照してください) の一部です。文書全体を<a href="complete.html">単一 HTML ファイルにしたもの</a>もご利用いただけます。この文書と、Web Content Accessibility Guidelines (WCAG) 2.0 に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> をご覧ください。パブリックコメントを送るには、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</a> に従ってください。</p><p class="copyright"><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p><p>【注意】 この文書は、W3C ワーキンググループノート <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</a>を<a href="https://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://waic.jp/contact/">翻訳に関するお問い合わせ</a>からご連絡ください。</p><p>【重要】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p></div></body></html>

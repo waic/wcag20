@@ -25,18 +25,20 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
 					</a></li></ul></li></ul><h3 id="C6-description">解説</h3><div class="textbody"><p>この達成方法の目的は、スタイルシートが適用されなくても意味の伝わる表現がなされるようにした上で、スタイルシートを使って見栄えをさらに良くする方法を示すことである。CSS2 の配置関連のプロパティを使用すれば、コンテンツを利用者のビューポート内の任意の位置に配置することができる。構造を示す要素を使っていれば、スタイルが適用されていない際でもコンテンツの意味は正しく伝えられる。</p></div><h3 class="small-head" id="C6-examples">事例</h3><h4 class="small-head" id="C6-ex1">事例 1</h4><div class="example"><div class="textbody"><p>
-この事例では、コンテンツに対して構造 (定義リスト) を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <code>dd</code> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p><p>表示させるコンテンツは以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div class="box"&gt;
+この事例では、コンテンツに対して構造 (定義リスト) を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <code>dd</code> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p><p>表示させるコンテンツは以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;div class="box"&gt;
   &lt;dl&gt;
-    &lt;dt class="menu1"&gt;製品&lt;/dt&gt;
-    &lt;dd class="item1"&gt;電話&lt;/dd&gt;
-    &lt;dd class="item2"&gt;コンピューター&lt;/dd&gt;
-    &lt;dd class="item3"&gt;ポータブル　MP3　プレイヤー&lt;/dd&gt;
-    &lt;dt class="menu2"&gt;所在地&lt;/dt&gt;
-    &lt;dd class="item4"&gt;アイダホ&lt;/dd&gt;
-    &lt;dd class="item5"&gt;ウィスコンシン&lt;/dd&gt;
+    &lt;dt class="menu1"&gt;Products&lt;/dt&gt;
+    &lt;dd class="item1"&gt;Telephones&lt;/dd&gt;
+    &lt;dd class="item2"&gt;Computers&lt;/dd&gt;
+    &lt;dd class="item3"&gt;Portable MP3 Players&lt;/dd&gt;
+    &lt;dt class="menu2"&gt;Locations&lt;/dt&gt;
+    &lt;dd class="item4"&gt;Idaho&lt;/dd&gt;
+    &lt;dd class="item5"&gt;Wisconsin&lt;/dd&gt;
     &lt;/dt&gt;
   &lt;/dl&gt;
- &lt;/div&gt; </code></pre></div><div class="textbody"><p>上記要素の配置及び表示指定をする CSS は以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;/div&gt;
+</code></pre></div><div class="textbody"><p>上記要素の配置及び表示指定をする CSS は以下の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 .item1 {
    left: 0;
    margin: 0;
@@ -106,44 +108,48 @@
 					</em>
 リンクテキストを非表示にするこの達成方法は、スクリーンリーダーの利用者や企業のウェブコンテンツ制作者の一部によって支持されている。一部のウェブサイトにおいては効果があることも立証されている。しかし、結果的に説明が冗長になることがある上に、熟練したスクリーンリーダーの利用者にはその冗長な説明の読み上げを制御することを要求することもありうるため、スクリーンリーダーの利用者やアクセシビリティの専門家の中には、一般的な達成方法としてはこれを推奨していない人もいる。WCAG ワーキンググループとしては、同じコンテンツが非表示にしたテキストで繰り返されていないのであれば、この達成方法は有用だと考えている。</p><p class="prefix"><em>注記 2:
 					</em>
-この達成方法は、適合していないコンテンツ向けの <a href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替版</a>のページで解説されているスタイルスイッチングを行う達成方法との組み合わせで使用することも可能である。詳しい情報については、<a href="#C29"><em>C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</em></a>及び<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替版を理解する</a>を参照のこと。</p></div></div><h3 class="small-head" id="C7-examples">事例</h3><h4 class="small-head" id="C7-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例は、各記事の概要のあとに「全文」というリンクのあるニュースサイトを示している。非表示にされたリンクテキストが、何の「全文」であるのかを説明している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+この達成方法は、適合していないコンテンツ向けの <a href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替版</a>のページで解説されているスタイルスイッチングを行う達成方法との組み合わせで使用することも可能である。詳しい情報については、<a href="#C29"><em>C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</em></a>及び<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替版を理解する</a>を参照のこと。</p></div></div><h3 class="small-head" id="C7-examples">事例</h3><h4 class="small-head" id="C7-ex1">事例 1</h4><div class="example"><div class="textbody"><p>この事例は、各記事の概要のあとに「全文」というリンクのあるニュースサイトを示している。非表示にされたリンクテキストが、何の「全文」であるのかを説明している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; 
 &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
 &lt;head&gt;
 &lt;meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /&gt; 
 &lt;link href="access.css" rel="stylesheet" type="text/css" /&gt;
-&lt;title&gt;非表示のテキストリンク｜WCAG 2.0 達成方法集
+&lt;title&gt;Hidden Link Text&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt; 
-&lt;p&gt;ワシントンは経済成長の刺激策を発表した。
-  &lt;a href="#"&gt; &lt;span&gt;ワシントンによる経済成長の刺激策の &lt;/span&gt;
-  全文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Washington has announced plans to stimulate economic growth.
+  &lt;a href="#"&gt; &lt;span&gt;Washington stimulates economic growth &lt;/span&gt;
+  Full Story&lt;/a&gt;&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div><h4 class="small-head" id="C7-ex2">事例 2</h4><div class="example"><div class="textbody"><p>この事例では、異なるフォーマットの電子ブックが用意されている場合について説明している。「HTML」「PDF」といったリンクのテキストの前に本の題名が付加されている。非表示にされたリンクテキストでは、何のHTMLファイルであるのか、何のPDFファイルであるのかを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;/html&gt;
+</code></pre></div></div><h4 class="small-head" id="C7-ex2">事例 2</h4><div class="example"><div class="textbody"><p>この事例では、異なるフォーマットの電子ブックが用意されている場合について説明している。「HTML」「PDF」といったリンクのテキストの前に本の題名が付加されている。非表示にされたリンクテキストでは、何のHTMLファイルであるのか、何のPDFファイルであるのかを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; 
 &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
 &lt;head&gt;
 &lt;meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /&gt; 
 &lt;link href="access.css" rel="stylesheet" type="text/css" /&gt;
-&lt;title&gt;非表示のテキストリンク&lt;/title&gt;
+&lt;title&gt;Hidden Link Text &lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;dl&gt;
-&lt;dt&gt;くまのプーさん &lt;/dt&gt;
+&lt;dt&gt;Winnie the Pooh &lt;/dt&gt;
    &lt;dd&gt;&lt;a href="winnie_the_pooh.html"&gt;
-      &lt;span&gt;くまのプーさん &lt;/span&gt;HTML版&lt;/a&gt;&lt;/dd&gt;
+      &lt;span&gt;Winnie the Pooh &lt;/span&gt;HTML&lt;/a&gt;&lt;/dd&gt;
    &lt;dd&gt;&lt;a href="winnie_the_pooh.pdf"&gt;
-         &lt;span&gt;くまのプーさん &lt;/span&gt;PDF版&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;戦争と平和&lt;/dt&gt;
+         &lt;span&gt;Winnie the Pooh &lt;/span&gt;PDF&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;War and Peace&lt;/dt&gt;
     &lt;dd&gt;&lt;a href="war_and_peace.html"&gt;
-      &lt;span&gt;戦争と平和 &lt;/span&gt;HTML版&lt;/a&gt;&lt;/dd&gt; 
+      &lt;span&gt;War and Peace &lt;/span&gt;HTML&lt;/a&gt;&lt;/dd&gt; 
     &lt;dd&gt;&lt;a href="war_and_peace.pdf"&gt;
-      &lt;span&gt;W戦争と平和 &lt;/span&gt;PDF版&lt;/a&gt;&lt;/dd&gt;
+      &lt;span&gt;War and Peace &lt;/span&gt;PDF&lt;/a&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div><h3 id="C7-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+&lt;/html&gt;
+</code></pre></div></div><h3 id="C7-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers">Hidden barriers - out of sight</a>
                </p></li><li><p>
                   <a href="http://webaim.org/techniques/css/invisiblecontent/">CSS in Action: Invisible Content Just for Screen Reader Users</a>
@@ -164,7 +170,11 @@
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
 					</a></li></ul></li></ul><h3 id="C8-description">解説</h3><div class="textbody"><p>この達成方法の目的は、意味の伝わるテキストの流れを維持しながら、スタイルシートによって表示上の文字間隔を調整する方法を示すことである。
 文字間隔の量を調整するには、CSS の <code>letter-spacing</code> プロパティを使用する。
-単語の途中に空白文字を入れると意味や発音のされ方が変わってしまうため、間隔の調整はこの方法で行うことが推奨されている。</p></div><h3 class="small-head" id="C8-examples">事例</h3><h4 class="small-head" id="C8-ex1">事例 1: 単語内の文字間隔を広くする</h4><div class="example"><div class="textbody"><p>以下の CSS は、レベル 2 の見出しに含まれる各文字に対して 1 文字分に相当する間隔を加える:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>h2 {	letter-spacing: 1em; }</code></pre></div><div class="textbody"><p>マークアップは以下の通り: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h2&gt;博物館&lt;/h2&gt; </code></pre></div><div class="textbody"><p>表示結果は、およそ以下のようになる: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>博　物　館</code></pre></div></div><h3 id="C8-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+単語の途中に空白文字を入れると意味や発音のされ方が変わってしまうため、間隔の調整はこの方法で行うことが推奨されている。</p></div><h3 class="small-head" id="C8-examples">事例</h3><h4 class="small-head" id="C8-ex1">事例 1: 単語内の文字間隔を広くする</h4><div class="example"><div class="textbody"><p>以下の CSS は、レベル 2 の見出しに含まれる各文字に対して 1 文字分に相当する間隔を加える:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>h2 {	letter-spacing: 1em; }</code></pre></div><div class="textbody"><p>マークアップは以下の通り: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h2&gt;Museum&lt;/h2&gt;
+</code></pre></div><div class="textbody"><p>表示結果は、およそ以下のようになる: </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+M u s e u m
+</code></pre></div></div><h3 id="C8-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="https://www.w3.org/TR/CSS2/text.html#spacing-props">CSS 2: Letter and word spacing</a> 
                </p></li></ul></div><h3 id="C8-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/F1">F1: 達成基準 1.3.2 の失敗例 － CSS で情報を配置することにより、コンテンツの意味を変えている</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/F32">F32: 達成基準 1.3.2 の失敗例 － 単語内の間隔を制御するために、空白文字を使用している</a></li></ul></div><h3 id="C8-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C8-procedure">手順</h4><p>文字間隔が標準ではない状態で表示されている各単語に対して: </p><ol class="enumar"><li><p>文字間隔を調整する手段として CSS の<code> letter-spacing</code> プロパティが用いられている。</p></li></ol><h4 class="small-head" id="C8-results">期待される結果</h4><ul><li><p>1. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C9" id="C9"> </a>C9:  装飾目的の画像を付加するために、CSS を使用する</h2><div class="applicability"><h3 id="C9-applicability">適用 (対象)</h3><div class="textbody"><p>画像を表示させるために CSS が利用可能なウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
@@ -181,28 +191,28 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
    text-decoration: none;
 }</code></pre></div></div><h4 class="small-head" id="C9-ex3">事例 3: タブなどの要素の角を丸くするために使われる CSS による背景画像</h4><div class="example"><div class="textbody"><p>
 以下のスタイルシートでは、要素の角を丸くするために、CSS の <code>background</code> プロパティを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>…
-&lt;style type="text/css"&gt;
- div#theComments { width:600px; }
- div.aComment { background: url('images/middle.gif') repeat-y left top; 
- margin:0 0 30px 0; }
- div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
- margin:0; padding:8px 16px; }
- div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
- margin:0; padding-top:30px; }
-&lt;/style&gt;
+  &lt;style type="text/css"&gt;
+    div#theComments { width:600px; }
+    div.aComment { background: url('images/middle.gif') repeat-y left top; 
+    margin:0 0 30px 0; }
+    div.aComment blockquote { background: url('images/top.gif') no-repeat left top; 
+    margin:0; padding:8px 16px; }
+    div.aComment div.submitter { background:#fff url('images/bottom.gif') no-repeat left top; 
+    margin:0; padding-top:30px; }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;div id="theComments"&gt;
- &lt;div class="aComment"&gt;
-  &lt;blockquote&gt;
-   &lt;p&gt;やあ、ジョン。俺はこの達成方法がマジで気に入ったんで、自分のサイトでも使おうと思ってるんだ！&lt;/p&gt;
-  &lt;/blockquote&gt;
-  &lt;div class="submitter"&gt;
-   &lt;p class="cite"&gt;&lt;a href="http://example.com/"&gt;名無しさん&lt;/a&gt; from エルボニア&lt;/p&gt;
-  &lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="aComment"&gt;
- …
+  &lt;div id="theComments"&gt;
+    &lt;div class="aComment"&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;Hi John, I really like this technique and I'm gonna use it on my own Website!&lt;/p&gt;
+      &lt;/blockquote&gt;
+      &lt;div class="submitter"&gt;
+        &lt;cite&gt;&lt;a href="http://example.com/"&gt;anonymous coward&lt;/a&gt; from Elbonia&lt;/cite&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="aComment"&gt;
+…
  &lt;/div&gt;
 &lt;/div&gt;
 …</code></pre></div></div><h3 id="C9-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> The <a href="https://www.w3.org/TR/CSS2/colors.html#propdef-background">background property in the CSS 2 specification</a> 
@@ -226,13 +236,14 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
 						クイックリファレンス 1.4.9 (文字画像 (例外なし) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.5.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C12">C12 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C12-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、比率にもとづく単位でテキストのフォントサイズを指定することである。<code>body</code> 要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C12-examples">事例</h3><h4 class="small-head" id="C12-ex1">事例 1: CSS でのパーセントによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、<code>strong</code> 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: 120%}
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.5.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C12">C12 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C12-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、比率にもとづく単位でテキストのフォントサイズを指定することである。<code>body</code> 要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C12-examples">事例</h3><h4 class="small-head" id="C12-ex1">事例 1: CSS でのパーセントによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、<code>strong</code> 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+strong {font-size: 120%}
 
 ...
 
-&lt;h1&gt;&lt;strong&gt;利用者&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
-&lt;p&gt;利用者だけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
-彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+&lt;h1&gt;Letting the &lt;strong&gt;user&lt;/strong&gt; control text size&lt;/h1&gt;
+&lt;p&gt;Since only the user can know what size text works for him, 
+it is &lt;strong&gt;very&lt;/strong&gt; important to let him configure the text size.  
 …</code></pre></div></div><h3 id="C12-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
                </p></li><li><p> 
@@ -257,13 +268,14 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
 						クイックリファレンス 1.4.9 (文字画像 (例外なし) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C13">C13 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C13-description">解説</h3><div class="textbody"><p>この達成方法の目的は、設定したい相対的なフォントサイズを表現するキーワードでフォントサイズを指定することである。これらの値は、継承されたフォントサイズに応じて、ユーザエージェントが適切なフォントサイズを適用する手がかりを与えるものである。</p></div><h3 class="small-head" id="C13-examples">事例</h3><h4 class="small-head" id="C13-ex1">事例 1: CSS でのキーワードによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような設定であっても、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: larger}
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.6.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C13">C13 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C13-description">解説</h3><div class="textbody"><p>この達成方法の目的は、設定したい相対的なフォントサイズを表現するキーワードでフォントサイズを指定することである。これらの値は、継承されたフォントサイズに応じて、ユーザエージェントが適切なフォントサイズを適用する手がかりを与えるものである。</p></div><h3 class="small-head" id="C13-examples">事例</h3><h4 class="small-head" id="C13-ex1">事例 1: CSS でのキーワードによるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような設定であっても、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように、「larger」というフォントサイズが指定してある。親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示されるだろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+strong {font-size: larger}
 
 ...
 
-&lt;h1&gt;&lt;strong&gt;利用者&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
-&lt;p&gt;利用者だけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
-彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+&lt;h1&gt;Letting the &lt;strong&gt;user&lt;/strong&gt; control text size&lt;/h1&gt;
+&lt;p&gt;Since only the user can know what size text works for him, 
+it is &lt;strong&gt;very&lt;/strong&gt; important to let him configure the text size.  
 …</code></pre></div></div><h3 id="C13-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
                </p></li><li><p> 
@@ -288,13 +300,14 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
 						クイックリファレンス 1.4.9 (文字画像 (例外なし) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.7.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C14">C14 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C14-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、<code>em</code> 単位でテキストのフォントサイズを指定することである。em はフォントのプロパティなので、フォントサイズの変更に応じてサイズが変わる。<code>body</code> 要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C14-examples">事例</h3><h4 class="small-head" id="C14-ex1">事例 1: CSS での em によるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong {font-size: 1.6em}
+					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.7.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C14">C14 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C14-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントがコンテンツを効果的に大きく表示したり小さく表示できるように、<code>em</code> 単位でテキストのフォントサイズを指定することである。em はフォントのプロパティなので、フォントサイズの変更に応じてサイズが変わる。<code>body</code> 要素に対してフォントサイズを指定した場合、より個別的なセレクタで上書きされない限り、他の全ての要素に値が継承される。</p></div><h3 class="small-head" id="C14-examples">事例</h3><h4 class="small-head" id="C14-ex1">事例 1: CSS での em によるフォントサイズ指定</h4><div class="example"><div class="textbody"><p>この事例では、どのような場合でも、<code>strong</code> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+strong {font-size: 1.6em}
 
 ...
 
-&lt;h1&gt;&lt;strong&gt;利用者&lt;/strong&gt;がテキストサイズをコントロールできるようにする&lt;/h1&gt;
-&lt;p&gt;利用者だけが、テキストをどのぐらいのサイズにすれば彼にとって有意義かを知りうるのだから、
-彼がテキストサイズを設定できるようにするのが&lt;strong&gt;とても&lt;/strong&gt;重要である。   
+&lt;h1&gt;Letting the &lt;strong&gt;user&lt;/strong&gt; control text size&lt;/h1&gt;
+&lt;p&gt;Since only the user can know what size text works for him, 
+it is &lt;strong&gt;very&lt;/strong&gt; important to let him configure the text size.  &lt;/p&gt;
 …</code></pre></div></div><h3 id="C14-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/fonts.html">Cascading Style Sheets, Level 2 (CSS2), Fonts</a> 
                </p></li><li><p> 
@@ -312,14 +325,15 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.8.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/css.html#C15">C15 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="C15-description">解説</h3><div class="textbody"><p>この達成方法の目的は、インタラクティブな要素がフォーカスされたとき、又は利用者がポインティングデバイスを使ってカーソルを上にのせたときに、スタイルシートを使って視覚的なフィードバックを返すようにすることで視覚表現がどれだけ強調されるのかを示すことである。
 フォーカスされた要素又はカーソルが上にのせられた要素をハイライトすることで、その要素がインタラクティブであること、又はインタラクティブな要素の範囲内であるなどの情報を提供することができる。</p><p>複数のモードに対して視覚的なフィードバックを返すことが可能な場合もある。通常、それは要素の上にカーソルをのせるためにマウスを使ったり、又は要素にタブで移動するためのキーボードを使ったりする場合である。</p></div><h3 class="small-head" id="C15-examples">事例</h3><h4 class="small-head" id="C15-ex1">事例 1: リンク要素</h4><div class="example"><div class="textbody"><p>
 この事例では、マウスやキーボードによってフォーカスされたことを示すスタイルが、リンク部分の要素に適用される。リンク部分の要素がフォーカスを受け取ったときに背景色を適用するために、CSS が使用されている。</p><p>
-表示されるコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;ul id="mainnav"&gt;
+表示されるコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;ul id="mainnav"&gt;
   &lt;li class="page_item"&gt;Home&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/services"&gt;サービス&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/projects"&gt;プロジェクト&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/demos"&gt;デモ&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/about-us"&gt;会社概要&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/contact-us"&gt;問合せ先&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="page_item"&gt;&lt;a href="/links"&gt;関連リンク&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/demos"&gt;Demos&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/about-us"&gt;About us&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/contact-us"&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page_item"&gt;&lt;a href="/links"&gt;Links&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre></div><div class="textbody"><p>
 マウス又はキーボードでフォーカスを受け取ったときに、上記要素の背景色を変更するCSSは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 #mainnav a:hover, #mainnav a:active, #mainnav a:focus {
@@ -335,25 +349,28 @@ C15-1
   &lt;head&gt;
     &lt;style type="text/css"&gt;
       input.text:focus {
-        background-color: #7FFF00; color: #000;
+        background-color: #7FFF00; 
+        color: #000;
       }
       input[type=checkbox]:focus + label, input[type=radio]:focus + label {
-        background-color: #FF6: color: #000; 
+        background-color: #FF6; 
+        color: #000; 
       }
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;form method="post" action="form.php"&gt;
-      &lt;p&gt;&lt;label for="fname"&gt;名前: &lt;/label&gt;
+      &lt;p&gt;&lt;label for="fname"&gt;Name: &lt;/label&gt;
         &lt;input class="text" type="text" name="fname" id="fname" /&gt;
       &lt;/p&gt;
       &lt;p&gt;
-        &lt;input type="radio" name="sex" value="male" id="sm" /&gt; &lt;label for="sm"&gt;男性&lt;/label&gt;&lt;br /&gt;
-        &lt;input type="radio" name="sex" value="female" id="sf" /&gt; &lt;label for="sf"&gt;女性&lt;/label&gt;
+        &lt;input type="radio" name="sex" value="male" id="sm" /&gt; &lt;label for="sm"&gt;Male&lt;/label&gt;&lt;br /&gt;
+        &lt;input type="radio" name="sex" value="female" id="sf" /&gt; &lt;label for="sf"&gt;Female&lt;/label&gt;
       &lt;p&gt;
     &lt;/form&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre></div><div class="textbody"><p>このコードの使用例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
+&lt;/html&gt;
+            </code></pre></div><div class="textbody"><p>このコードの使用例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C15/focus-pseudo-class.html">
                     フォーカスを受け取る要素を強調表示する例</a>。</p></div></div><h3 id="C15-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/selector.html#dynamic-pseudo-classes">CSS 2: 5.11.3 The dynamic pseudo-classes: :hover, :active, and :focus</a>
 								       </p></li><li><p> 
@@ -363,13 +380,13 @@ C15-1
 						クイックリファレンス 1.4.4 (テキストのサイズ変更)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">
 						達成基準 1.4.4 (テキストのサイズ変更)を理解する
-					</a></li></ul></li></ul><h3 id="C17-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントによってテキストサイズが変更されたとき、テキストベースのフォームコントロールのサイズ変更を確かにすることである。これは、利用者によって必要とされるサイズでテキストが表示されるため、利用者がテキストを登録し、そして何を入力ボックスに登録したかを読むことができるであろう。</p><p>テキストベースのフォームコントロールは、ボタンと同様に入力ボックス (テキスト及びテキストエリア) を含んでいる。</p></div><h3 class="small-head" id="C17-examples">事例</h3><h4 class="small-head" id="C17-ex1">事例 1: コンタクトフォーム</h4><div class="example"><div class="textbody"><p>お問い合わせフォームには、いくつかの初歩的な情報があり、利用者が自分の姓と名、電話番号、電子メールアドレスを入力するフォームコントロールがある。見出し、初歩的なテキスト及びフォームコントロールのラベルは、スケーラブルな方法で実装されているが、フォームのコントロール自体はスケーラブルな方法では実装されていない。</p><p>XHTML コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;お問い合わせ&lt;/h1&gt;
-&lt;p&gt;あなたの個人情報をご記入いただければ、できるだけ早くご連絡いたします。なお、すべての入力項目が必須項目となっております。&lt;/p&gt;
-&lt;label for="fname"&gt;名&lt;/label&gt;&lt;input type="text" name="fname" id="fname" /&gt;&lt;br /&gt;
-&lt;label for="lname"&gt;姓&lt;/label&gt;&lt;input type="text" name="lname" id="lname" /&gt;&lt;br /&gt;
-&lt;label for="phone"&gt;電話番号&lt;/label&gt;&lt;input type="text" name="phone" id="phone" /&gt;&lt;br /&gt;
-&lt;label for="email"&gt;メール&lt;/label&gt;&lt;input type="text" name="email" id="email" /&gt;&lt;br /&gt;
-&lt;input type="submit" name="Submit" value="送信" id="Submit" /&gt;</code></pre></div><div class="textbody"><p>CSS コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>h1 { font-size: 2em; }
+					</a></li></ul></li></ul><h3 id="C17-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ユーザエージェントによってテキストサイズが変更されたとき、テキストベースのフォームコントロールのサイズ変更を確かにすることである。これは、利用者によって必要とされるサイズでテキストが表示されるため、利用者がテキストを登録し、そして何を入力ボックスに登録したかを読むことができるであろう。</p><p>テキストベースのフォームコントロールは、ボタンと同様に入力ボックス (テキスト及びテキストエリア) を含んでいる。</p></div><h3 class="small-head" id="C17-examples">事例</h3><h4 class="small-head" id="C17-ex1">事例 1: コンタクトフォーム</h4><div class="example"><div class="textbody"><p>お問い合わせフォームには、いくつかの初歩的な情報があり、利用者が自分の姓と名、電話番号、電子メールアドレスを入力するフォームコントロールがある。見出し、初歩的なテキスト及びフォームコントロールのラベルは、スケーラブルな方法で実装されているが、フォームのコントロール自体はスケーラブルな方法では実装されていない。</p><p>XHTML コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;Contact Us&lt;/h1&gt;
+&lt;p&gt;Please provide us with your details and we will contact you as soon as we can. Note that all of the form fields are required.&lt;/p&gt;
+&lt;label for="fname"&gt;First Name&lt;/label&gt;&lt;input type="text" name="fname" id="fname" /&gt;&lt;br /&gt;
+&lt;label for="lname"&gt;Last Name&lt;/label&gt;&lt;input type="text" name="lname" id="lname" /&gt;&lt;br /&gt;
+&lt;label for="phone"&gt;Telephone&lt;/label&gt;&lt;input type="text" name="phone" id="phone" /&gt;&lt;br /&gt;
+&lt;label for="email"&gt;Email&lt;/label&gt;&lt;input type="text" name="email" id="email" /&gt;&lt;br /&gt;
+&lt;input type="submit" name="Submit" value="Submit" id="Submit" /&gt;</code></pre></div><div class="textbody"><p>CSS コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>h1 { font-size: 2em; }
             p, label, input { font-size: 1em; }</code></pre></div><div class="textbody"><p>このコードの使用例: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C17/input-resize.html">CSS によって入力のサイズを変更する例</a>。</p></div></div><h4 class="small-head" id="C17-ex2">事例 2: ラジオボタン</h4><div class="example"><div class="textbody"><p>この事例は、テキストサイズ機能のある IE で動作する。しかしながら、Firefox 2.0 では拡大されない。</p><p>XHTML コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;input type="radio" name="r1" value="r1" id="r1" class="geomsize" /&gt;
 &lt;input type="checkbox" name="c1" id="c1" value="c1" class="geomsize" /&gt;</code></pre></div><div class="textbody"><p>CSS コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.geomsize {
 width: 1.2em;
@@ -386,8 +403,8 @@ height: 1.2em;}</code></pre></div><div class="textbody"><p>このコードの使
             
             ...
             
-              &lt;table summary="ウェブ開発カテゴリの本のタイトルと著者、出版日"&gt;
-                &lt;caption&gt;「ウェブ開発」カテゴリーの本&lt;/caption&gt;
+              &lt;table summary="Titles, authors and publication dates of books in Web development category"&gt;
+                &lt;caption&gt;Books in the category 'Web development'&lt;/caption&gt;
                 &lt;thead&gt;
                   &lt;tr&gt;
                     &lt;th&gt;Title&lt;/th&gt;
@@ -397,9 +414,9 @@ height: 1.2em;}</code></pre></div><div class="textbody"><p>このコードの使
                 &lt;/thead&gt;
                 &lt;tbody&gt;
                   &lt;tr&gt;
-                    &lt;td&gt;ウェブ標準について真剣に考える方法&lt;/td&gt;
+                    &lt;td&gt;How to Think Straight About Web Standards&lt;/td&gt;
                     &lt;td&gt;Andrew Stanovich&lt;/td&gt;
-                    &lt;td&gt;2007年4月1日&lt;/td&gt;
+                    &lt;td&gt;1 April 2007&lt;/td&gt;
                   &lt;/tr&gt;
                 &lt;/tbody&gt;
               &lt;/table&gt;
@@ -489,16 +506,41 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
 						クイックリファレンス 1.4.9 (文字画像 (例外なし) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html">
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
-					</a></li></ul></li></ul><h3 id="C22-description">解説</h3><div class="textbody"><p>この達成方法の目的は、CSS を使ってテキストの視覚的な表現を制御する方法を実践することである。これにより利用者が要求を満たすたように、ユーザエージェントを通してテキストの視覚的な特徴を変更できるようになる。テキストの特徴にはサイズ、色、書体、相対配置などの外観を含んでいる。</p><p>CSS は主に表現からドキュメント構造を分離することによってアクセシビリティに有益さを与える。スタイルシートは、マークアップの外部から字間、文字配列、ページにおけるオブジェクトの配置、音声やスピーチのアウトプット、フォントなどの正確な制御ができるように設計されている。マークアップからスタイルを分離することにより、コンテンツ制作者はコンテンツの中でマークアップを単純化し、整理することができ、同時によりアクセシブルにすることができる。</p><p>画像内にあるテキストはいくつかのアクセシビリティ上の問題があり、以下のことができない:</p><ul><li><p>ブラウザの設定に応じて大きさを調整する</p></li><li><p>ブラウザの設定、又は利用者定義のスタイルシートのルールによって指定された色で表示する</p></li><li><p>ハイコントラストといった、オペレーティングシステムの設定を反映させる</p></li></ul><p>適切な視覚的表現を作り出すためには、これらの要素のテキスト部分には、テキストを使い、セマンティックマークアップとスタイルシートの組み合わせを用いるとよい。このことが効果的に作用するために、利用者のシステム上で利用できると思われるフォントを選び、定義された最初のフォントを持たない利用者のために代替フォントを定義する。最新のマシンとユーザエージェントはしばしばすべてのテキストにスムーズもしくはアンチエイリアスをかけている。そのため見出しやボタンは画像化された文字に頼ることなくこれらのシステム上できれいに表示される。</p><p>次の CSS のプロパティは、テキストのスタイルを指定し、画像化された文字を使う必要性を回避するのに有効である:</p><ul><li><p><code>font-family</code> プロパティをを使って、文字の外観を等幅フォントで表示する。</p></li><li><p><code>text-align</code> プロパティをを使って、表示域の右側にテキストを表示する。</p></li><li><p><code>font-size</code> プロパティをを使って、テキストをより大きいサイズで表示する。</p></li><li><p><code>font-style</code> プロパティを使って、テキストをイタリック体で表示する。</p></li><li><p><code>font-weight</code> プロパティを使って、テキストの文字をどのくらい太く又は細く表示すべきか設定する。</p></li><li><p><code>color</code> プロパティを使って、テキストやテキストコンテナに色を表示する。</p></li><li><p><code>line-height</code> プロパティを使って、テキストのブロックに対してラインの高さを指定する。</p></li><li><p><code>text-transform</code> プロパティを使って、テキストの文字 (大文字小文字の区別) を制御する。</p></li><li><p><code>letter-spacing</code> プロパティを使って、テキストの文字間隔を制御する。</p></li><li><p><code>background-image</code> プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p></li><li><p><code>first-line</code> の擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p></li><li><p><code>first-letter</code> の擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p></li><li><p><code>:before</code> と <code>:after</code> の擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p></li></ul></div><h3 class="small-head" id="C22-examples">事例</h3><h4 class="small-head" id="C22-ex1">事例 1: フォントファミリーを制御するために CSS の font-family を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;Javascriptで文字列を変換して大文字にする方法は&lt;code&gt;toUpperCase()&lt;/code&gt;である。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>code { font-family:"Courier New", Courier, monospace }</code></pre></div></div><h4 class="small-head" id="C22-ex2">事例 2: テキストの配置 (配列) を制御するために CSS の text-align を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="right"&gt;このテキストは表示域の右側にあるべきである。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.right { text-align: right; }</code></pre></div></div><h4 class="small-head" id="C22-ex3">事例 3: テキストのサイズを制御するために CSS の font-size を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年&lt;strong class="largersize"&gt;3月&lt;/strong&gt;9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong.largersize { font-size: 1.5em; }</code></pre></div></div><h4 class="small-head" id="C22-ex4">事例 4: テキストの色を制御するために CSS の color を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年&lt;em class="highlight"&gt;3月&lt;/em&gt;9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight{ color: red; }</code></pre></div></div><h4 class="small-head" id="C22-ex5">事例 5: イタリック体のテキストにするために CSS の font-style を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;この記事は &lt;a href="http://www.example.com" class="featuredsite"&gt;内分泌学のブログ&lt;/a&gt;で入手可能である。&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.featuredsite{ font-style:italic; }</code></pre></div></div><h4 class="small-head" id="C22-ex6">事例 6: テキストの太さを制御するために CSS の font-weight を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;この取引は &lt;span class="highlight"&gt;今&lt;/span&gt;利用可能です！&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight { font-weight:bold; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex7">事例 7: テキストの大文字小文字の区別を制御するために CSS の text-transform を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;2008年 &lt;span class="caps"&gt;3月&lt;/span&gt; 9日&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.caps { text-transform:uppercase; }</code></pre></div></div><h4 class="small-head" id="C22-ex8">事例 8: テキストの行間を制御するために CSS の line-height を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>line-height</code> プロパティを使って、段落の行間をフォントの高さの 2 倍に表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;人とその人の運命についての考察はいつも&lt;br /&gt;  
-全ての技術的な試みの最重要な関心を形成する。 &lt;br /&gt;
-あなたの図式と方程式においてそれを忘れてはいけない。 &lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p { line-height:2em; }</code></pre></div><div class="textbody"><p>CSS の <code>line-height</code> プロパティを使って、テキストの行間をフォントの高さより少なく表示させる。テキストの 2 行目は、テキストの 1 行目の後に配置されて、あたかも 1 行目の一部だがやや下がっているように見える。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;本日の&lt;/span&gt;&lt;br /&gt;
-&lt;span class="byline"&gt;ニュース&lt;/span&gt;&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
+					</a></li></ul></li></ul><h3 id="C22-description">解説</h3><div class="textbody"><p>この達成方法の目的は、CSS を使ってテキストの視覚的な表現を制御する方法を実践することである。これにより利用者が要求を満たすたように、ユーザエージェントを通してテキストの視覚的な特徴を変更できるようになる。テキストの特徴にはサイズ、色、書体、相対配置などの外観を含んでいる。</p><p>CSS は主に表現からドキュメント構造を分離することによってアクセシビリティに有益さを与える。スタイルシートは、マークアップの外部から字間、文字配列、ページにおけるオブジェクトの配置、音声やスピーチのアウトプット、フォントなどの正確な制御ができるように設計されている。マークアップからスタイルを分離することにより、コンテンツ制作者はコンテンツの中でマークアップを単純化し、整理することができ、同時によりアクセシブルにすることができる。</p><p>画像内にあるテキストはいくつかのアクセシビリティ上の問題があり、以下のことができない:</p><ul><li><p>ブラウザの設定に応じて大きさを調整する</p></li><li><p>ブラウザの設定、又は利用者定義のスタイルシートのルールによって指定された色で表示する</p></li><li><p>ハイコントラストといった、オペレーティングシステムの設定を反映させる</p></li></ul><p>適切な視覚的表現を作り出すためには、これらの要素のテキスト部分には、テキストを使い、セマンティックマークアップとスタイルシートの組み合わせを用いるとよい。このことが効果的に作用するために、利用者のシステム上で利用できると思われるフォントを選び、定義された最初のフォントを持たない利用者のために代替フォントを定義する。最新のマシンとユーザエージェントはしばしばすべてのテキストにスムーズもしくはアンチエイリアスをかけている。そのため見出しやボタンは画像化された文字に頼ることなくこれらのシステム上できれいに表示される。</p><p>次の CSS のプロパティは、テキストのスタイルを指定し、画像化された文字を使う必要性を回避するのに有効である:</p><ul><li><p><code>font-family</code> プロパティをを使って、文字の外観を等幅フォントで表示する。</p></li><li><p><code>text-align</code> プロパティをを使って、表示域の右側にテキストを表示する。</p></li><li><p><code>font-size</code> プロパティをを使って、テキストをより大きいサイズで表示する。</p></li><li><p><code>font-style</code> プロパティを使って、テキストをイタリック体で表示する。</p></li><li><p><code>font-weight</code> プロパティを使って、テキストの文字をどのくらい太く又は細く表示すべきか設定する。</p></li><li><p><code>color</code> プロパティを使って、テキストやテキストコンテナに色を表示する。</p></li><li><p><code>line-height</code> プロパティを使って、テキストのブロックに対してラインの高さを指定する。</p></li><li><p><code>text-transform</code> プロパティを使って、テキストの文字 (大文字小文字の区別) を制御する。</p></li><li><p><code>letter-spacing</code> プロパティを使って、テキストの文字間隔を制御する。</p></li><li><p><code>background-image</code> プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p></li><li><p><code>first-line</code> の擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p></li><li><p><code>first-letter</code> の擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p></li><li><p><code>:before</code> と <code>:after</code> の擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p></li></ul></div><h3 class="small-head" id="C22-examples">事例</h3><h4 class="small-head" id="C22-ex1">事例 1: フォントファミリーを制御するために CSS の font-family を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;The Javascript method to convert a string to uppercase is &lt;code&gt;toUpperCase()&lt;/code&gt;.&lt;/p&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>code { font-family:"Courier New", Courier, monospace }</code></pre></div></div><h4 class="small-head" id="C22-ex2">事例 2: テキストの配置 (配列) を制御するために CSS の text-align を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p class="right"&gt;This text should be to the right of the viewport.&lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.right { text-align: right; }</code></pre></div></div><h4 class="small-head" id="C22-ex3">事例 3: テキストのサイズを制御するために CSS の font-size を使用する。</h4><div class="example"><div class="textbody"><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;09 &lt;strong class="largersize"&gt;March&lt;/strong&gt; 2008&lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>strong.largersize { font-size: 1.5em; }</code></pre></div></div><h4 class="small-head" id="C22-ex4">事例 4: テキストの色を制御するために CSS の color を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;09 &lt;em class="highlight"&gt;March&lt;/em&gt; 2008&lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight{ color: red; }</code></pre></div></div><h4 class="small-head" id="C22-ex5">事例 5: イタリック体のテキストにするために CSS の font-style を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;The article is available in the &lt;a href="http://www.example.com" class="featuredsite"&gt;Endocrinology 
+Blog&lt;/a&gt;.&lt;/p&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.featuredsite{ font-style:italic; }</code></pre></div></div><h4 class="small-head" id="C22-ex6">事例 6: テキストの太さを制御するために CSS の font-weight を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;This deal is available &lt;span class="highlight"&gt;now!&lt;/span&gt;&lt;/p&gt; 
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.highlight { font-weight:bold; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex7">事例 7: テキストの大文字小文字の区別を制御するために CSS の text-transform を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></div><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;09 &lt;span class="caps"&gt;March&lt;/span&gt; 2008&lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.caps { text-transform:uppercase; }</code></pre></div></div><h4 class="small-head" id="C22-ex8">事例 8: テキストの行間を制御するために CSS の line-height を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>line-height</code> プロパティを使って、段落の行間をフォントの高さの 2 倍に表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;Concern for man and his fate must always form the&lt;br /&gt;  
+chief interest of all technical endeavors. &lt;br /&gt;
+Never forget this in the  midst of your diagrams and equations. &lt;/p&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p { line-height:2em; }</code></pre></div><div class="textbody"><p>CSS の <code>line-height</code> プロパティを使って、テキストの行間をフォントの高さより少なく表示させる。テキストの 2 行目は、テキストの 1 行目の後に配置されて、あたかも 1 行目の一部だがやや下がっているように見える。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;News&lt;/span&gt;&lt;br /&gt;
+&lt;span class="byline"&gt;today&lt;/span&gt;&lt;/h1&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
 .upper { text-transform:uppercase; }
-.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; }</code></pre></div></div><h4 class="small-head" id="C22-ex9">事例 9: 文字間を設定するために CSS の letter-spacing を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>訳注: </em>原文では、1 つ目の説明文が 2 つ目のコードの説明、2 つ目の説明文が 1 つ目のコードの説明と「さかさま」になっているが、翻訳では正しい組み合わせに修正している。</p></div><p>CSS の <code>letter-spacing</code> プロパティは、2 行目のテキストでより近い文字を表示するために使用される。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;本日の&lt;/span&gt;&lt;br /&gt;
-&lt;span class="byline"&gt;ニュース&lt;/span&gt;&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
+.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; }</code></pre></div></div><h4 class="small-head" id="C22-ex9">事例 9: 文字間を設定するために CSS の letter-spacing を使用する。</h4><div class="example"><div class="textbody"><div class="note"><p class="prefix"><em>訳注: </em>原文では、1 つ目の説明文が 2 つ目のコードの説明、2 つ目の説明文が 1 つ目のコードの説明と「さかさま」になっているが、翻訳では正しい組み合わせに修正している。</p></div><p>CSS の <code>letter-spacing</code> プロパティは、2 行目のテキストでより近い文字を表示するために使用される。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h1 class="overlap"&gt;&lt;span class="upper"&gt;News&lt;/span&gt;&lt;br /&gt;
+&lt;span class="byline"&gt;today&lt;/span&gt;&lt;/h1&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.overlap { line-height:0.2em;  }
 .upper { text-transform:uppercase; }
-.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; letter-spacing:-0.1em; }</code></pre></div><div class="textbody"><p>CSS の <code>letter-spacing</code> プロパティは、見出しでさらに離れた文字を表示するために使用される。</p><p>XHTML の構成:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1 class="upper2"&gt;ニュース&lt;/h1&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.upper2 { text-transform:uppercase; letter-spacing:1em; }</code></pre></div></div><h4 class="small-head" id="C22-ex10">事例 10: テキストと画像をレイヤー化するために CSS の background-image を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>font-style</code> プロパティを使って、バナーのテキスト要素を表示させ、<code>background-image</code> プロパティを使って、テキストの後ろの画像を表示させる。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;div id="banner"&gt;&lt;span id="bannerstyle1"&gt;地域の審議会へ&lt;/span&gt; 
-&lt;span id="bannerstyle2"&gt;ようこそ&lt;/span&gt;&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+.byline { color:red; font-style:italic; font-weight:bold; padding-left:3em; letter-spacing:-0.1em; }</code></pre></div><div class="textbody"><p>CSS の <code>letter-spacing</code> プロパティは、見出しでさらに離れた文字を表示するために使用される。</p><p>XHTML の構成:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h1 class="upper2"&gt;News&lt;/h1&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.upper2 { text-transform:uppercase; letter-spacing:1em; }</code></pre></div></div><h4 class="small-head" id="C22-ex10">事例 10: テキストと画像をレイヤー化するために CSS の background-image を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>font-style</code> プロパティを使って、バナーのテキスト要素を表示させ、<code>background-image</code> プロパティを使って、テキストの後ろの画像を表示させる。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;div id="banner"&gt;&lt;span id="bannerstyle1"&gt;Welcome&lt;/span&gt; 
+&lt;span id="bannerstyle2"&gt;to your local city council&lt;/span&gt;&lt;/div&gt;
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 #banner { 
   color:white; 
   background-image:url(banner-bg.gif); 
@@ -518,8 +560,12 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
   font-weight:bold; 
   letter-spacing:-0.1em;
   font-size:1.5em; 
-}</code></pre></div></div><h4 class="small-head" id="C22-ex11">事例 11: テキストの最初の行の表現を制御するために CSS の first-line を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>:first-line</code> 擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="startline"&gt;むかしむかし...&lt;br /&gt;
-...遠い地で, 遠くへ...  &lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startline:first-line { font-size:2em; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex12">事例 12: テキストの最初の文字の表現を制御するために CSS の first-letter を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>:first-letter</code> 擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p class="startletter"&gt;むかしむかし...&lt;/p&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startletter:first-letter { font-size:2em; color:#990000; vertical-align:middle; }</code></pre></div></div><h3 id="C22-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+}</code></pre></div></div><h4 class="small-head" id="C22-ex11">事例 11: テキストの最初の行の表現を制御するために CSS の first-line を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>:first-line</code> 擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p class="startline"&gt;Once upon a time...&lt;br /&gt;
+...in a land far, far away...  &lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startline:first-line { font-size:2em; color:#990000; }</code></pre></div></div><h4 class="small-head" id="C22-ex12">事例 12: テキストの最初の文字の表現を制御するために CSS の first-letter を使用する。</h4><div class="example"><div class="textbody"><p>CSS の <code>:first-letter</code> 擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p><p>XHTML:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p class="startletter"&gt;Once upon a time...&lt;/p&gt;  
+</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>.startletter:first-letter { font-size:2em; color:#990000; vertical-align:middle; }</code></pre></div></div><h3 id="C22-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/CSS21/">CSS2.1 Specification</a>
                </p></li><li><p>
                   <a href="http://www.w3.org/Style/CSS/learning">Learning CSS</a>
@@ -569,35 +615,35 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
 
 #nav_list { font-size: 100%; }</code></pre></div></div><h4 class="small-head" id="C28-ex2">事例 2: テキストベースのフォームのコントロールに em 単位を使う</h4><div class="example"><div class="textbody"><p>この事例では、テキストを含む、又は利用者によるテキスト入力を受け付ける <code>input</code> 要素に「form1」というクラス名を指定している。フォントサイズを<code>パーセント</code>単位で、これらの要素の幅を <code>em</code> 単位で定義するために CSS の規則が用いられている。これによって、フォームコントロール内のテキストは、部分的に欠けて見えなくなってしまうことなく文字サイズの変更に合わせてリサイズされるようになる (フォームコントロールの幅自身も文字サイズに合わせてリサイズされるようになるため)。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.form1 { font-size: 100%; width: 15em; }</code></pre></div></div><h4 class="small-head" id="C28-ex3">事例 3: ドロップダウンボックスに em 単位を使う</h4><div class="example"><div class="textbody"><p>この事例では、<code>select</code> 要素に「pick」というクラス名を指定している。フォンサイズを<code>パーセント</code>単位で、幅を <code>em</code> 単位で定義するために CSS の規則が使用されている。これによって、フォームコントロール内のテキストは、部分的に欠けて見えなくなってしまうことなく文字サイズの変更に合わせてリサイズされるようになる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>select.pick { font-size: 100%; width: 10em; }</code></pre></div></div><h4 class="small-head" id="C28-ex4">事例 4: テキストベースではないフォームのコントロールに em 単位を使う</h4><div class="example"><div class="textbody"><p>この事例では、チェックボックス又はラジオボタンの <code>input</code> 要素に「choose」というクラス名を指定している。これらの要素の幅と高さを <code>em</code> 単位で定義するために CSS の規則が使用されている。これによって、フォームコントロールは、文字サイズの変更に合わせてリサイズされるようになる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>input.choose { width: 1.2em; height: 1.2em; }</code></pre></div></div><h3 id="C28-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/C12">C12: フォントサイズにパーセントを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C14">C14: フォントサイズに em 単位を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C17">C17: テキストを含むフォーム要素を拡大縮小する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C20">C20: ブラウザがサイズ変更されるときに、行が平均で 80 字以下になるようなカラムの幅を設定するために、相対長さを使用する</a></li></ul></div><h3 id="C28-tests">検証</h3><div class="textbody"><h4 class="small-head" id="C28-procedure">手順</h4><ol class="enumar"><li><p>テキストを含む、又はテキストの入力を受け付けるコンテナを特定する。</p></li><li><p>そのコンテナの幅及び又は高さは <code>em</code> 単位で指定されている。</p></li></ol><h4 class="small-head" id="C28-results">期待される結果</h4><ul><li><p>2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="C29" id="C29"> </a>C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</h2><div class="applicability"><h3 id="C29-applicability">適用 (対象)</h3><div class="textbody"><p>クライアントサイド又はサーバーサイドのスクリプトとともに使用される CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#cc1">
 					適合要件 1 (適合レベル)
-				</a></li></ul><h3 id="C29-description">解説</h3><div class="textbody"><p>ウェブページのデフォルトの表示が部分的に達成基準を満たさない場合、「適合要件」の条項 (適合要件 1) にある「代替版」を用意することで必要条件を満たすことができる。いくつかの必要条件を満たすことが目的なら、ページ全体をそのレベルに適合するような表示に変更できるスタイルスイッチャーをページ上のリンク又はコントロールによって呼び出すようにすれば、コンテンツ制作者は同じ情報の複数バージョンを作らなくても済む。</p><p>この達成方法の目的は、ウェブページの適合している代替版を提供するために、スクリプトと組み合わせて CSS を使う方法を示すことである。この達成方法では、コンテンツの表示を制御するために使用されている CSS を変更するコントロールを提供することで、コンテンツ制作者はコンテンツの代替表示を提供する。ウェブページ内で提供されるコントロールは、そのレベルで要求される達成基準を満たすことができるような表示方法を利用者が選択及び変更することを可能にする。これによって、以下のような状況において、利用者が異なる表示方法を選択できるようになる:</p><ul><li><p>パソコンの知識や権限がないことが原因で、利用者はブラウザや OS の設定を調整できないかもしれない</p></li><li><p>テキストが、ブラウザや OS の設定では対処できない方法で提供されている (テキストが画像の中に書き込まれているなど)</p></li><li><p>コンテンツのデフォルトの表示では、一部の利用者に対して十分なコントラストがない</p></li></ul><p>この達成方法で達成させるには、以下の 3 項目を満たしていなければならない。</p><ol class="enumar"><li><p>オリジナルのページのリンクまたはコントロールは、それ自身が達成基準を満たしていなければならない。たとえば、もしスタイルスイッチャーがフォントサイズを大きくするために提供されているのに、そのコントロールが小さいフォントで書かれていたら、利用者はそのコントロールを作動させて代わりの表示方法で見ることができないかもしれない。</p></li><li><p>新しいページは、オリジナルのページと同じすべての情報と機能を含んでいなければならない。</p></li><li><p>新しいページは、希望する適合レベルのすべての達成基準に適合しなければならない。たとえば、ひとつの要求は満たすが、それを使うと別の要求に適合しなくなってしまうような代替スタイルシートは使用できない。</p></li></ol><p>スタイルスイッチャーを使う場合は、以下の課題と制限について検討することが重要である:</p><ul><li><p>利用者が行うことのできる変更の数や形式は、ウェブページのコンテンツ制作者によって制御される範囲に限定される。できる限り多くの利用者のニーズに対応できるようにするために、バラエティ豊かな表示と設定項目が提供されるべきである。しかしながら、コンテンツ制作者は、利用者に多くのオプションを提供することに起因する、利用者にとっての設定可能な項目と複雑さの相互作用について熟考することも重要である。</p></li><li><p>あるページから別のページに移動しても利用者の設定を保持しておくには、利用者の機器にクッキーで保存したり (詳細はリソースのセクションを参照)、ウェブサーバーに保存されるプロファイルにクエリー文字列として渡して格納するなどの方法で実現できる場合がある。</p></li><li><p>スタイルスイッチャーを実装するための技術的手法は、利用者の環境においていくつかの技術が利用可能であることを前提としている (たとえば、多くのクライアントサイドソリューションは、JavaScript と CSS の両方が利用可能であることを必要とする)。これらのウェブコンテンツ技術が適合のために当てにできる場合を除き、クライアントサイドのサポートとウェブコンテンツ技術の利用可能性が保証されない場合には、コンテンツ制作者はサーバーサイドのウェブコンテンツ技術を使うことを検討すべきである。その代案としては、これらのウェブコンテンツ技術のサポートを適合のために当てにできない場合に、使用されているいくつかのウェブコンテンツ技術が有効でなくてもコンテンツが確実に適切な表現に変換されるような達成方法を使うことが、より良いページにするための効果的な方法となる。</p></li></ul></div><h3 class="small-head" id="C29-examples">事例</h3><h4 class="small-head" id="C29-ex1">事例 1: 異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</h4><div class="example"><div class="textbody"><p>この例では、文字色と背景色を変更するリンクを JavaScript で提供する。そのリンクは、利用者の環境で JavaScript がサポートされており、かつ有効な場合にのみ挿入されるようにすべきである。これは、そのリンク自身を挿入するためにスクリプトを使う (つまり JavaScript がサポートされており、かつ有効な場合にのみリンクが表示される) ことで実現できる。</p><p>以下のコードは、JavaScript に依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するための JavaScript である。</p><p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>XHTML (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>In &lt;head&gt; section:
-&lt;head&gt;〜&lt;/head&gt;内:
+				</a></li></ul><h3 id="C29-description">解説</h3><div class="textbody"><p>ウェブページのデフォルトの表示が部分的に達成基準を満たさない場合、「適合要件」の条項 (適合要件 1) にある「代替版」を用意することで必要条件を満たすことができる。いくつかの必要条件を満たすことが目的なら、ページ全体をそのレベルに適合するような表示に変更できるスタイルスイッチャーをページ上のリンク又はコントロールによって呼び出すようにすれば、コンテンツ制作者は同じ情報の複数バージョンを作らなくても済む。</p><p>この達成方法の目的は、ウェブページの適合している代替版を提供するために、スクリプトと組み合わせて CSS を使う方法を示すことである。この達成方法では、コンテンツの表示を制御するために使用されている CSS を変更するコントロールを提供することで、コンテンツ制作者はコンテンツの代替表示を提供する。ウェブページ内で提供されるコントロールは、そのレベルで要求される達成基準を満たすことができるような表示方法を利用者が選択及び変更することを可能にする。これによって、以下のような状況において、利用者が異なる表示方法を選択できるようになる:</p><ul><li><p>パソコンの知識や権限がないことが原因で、利用者はブラウザや OS の設定を調整できないかもしれない</p></li><li><p>テキストが、ブラウザや OS の設定では対処できない方法で提供されている (テキストが画像の中に書き込まれているなど)</p></li><li><p>コンテンツのデフォルトの表示では、一部の利用者に対して十分なコントラストがない</p></li></ul><p>この達成方法で達成させるには、以下の 3 項目を満たしていなければならない。</p><ol class="enumar"><li><p>オリジナルのページのリンクまたはコントロールは、それ自身が達成基準を満たしていなければならない。たとえば、もしスタイルスイッチャーがフォントサイズを大きくするために提供されているのに、そのコントロールが小さいフォントで書かれていたら、利用者はそのコントロールを作動させて代わりの表示方法で見ることができないかもしれない。</p></li><li><p>新しいページは、オリジナルのページと同じすべての情報と機能を含んでいなければならない。</p></li><li><p>新しいページは、希望する適合レベルのすべての達成基準に適合しなければならない。たとえば、ひとつの要求は満たすが、それを使うと別の要求に適合しなくなってしまうような代替スタイルシートは使用できない。</p></li></ol><p>スタイルスイッチャーを使う場合は、以下の課題と制限について検討することが重要である:</p><ul><li><p>利用者が行うことのできる変更の数や形式は、ウェブページのコンテンツ制作者によって制御される範囲に限定される。できる限り多くの利用者のニーズに対応できるようにするために、バラエティ豊かな表示と設定項目が提供されるべきである。しかしながら、コンテンツ制作者は、利用者に多くのオプションを提供することに起因する、利用者にとっての設定可能な項目と複雑さの相互作用について熟考することも重要である。</p></li><li><p>あるページから別のページに移動しても利用者の設定を保持しておくには、利用者の機器にクッキーで保存したり (詳細はリソースのセクションを参照)、ウェブサーバーに保存されるプロファイルにクエリー文字列として渡して格納するなどの方法で実現できる場合がある。</p></li><li><p>スタイルスイッチャーを実装するための技術的手法は、利用者の環境においていくつかの技術が利用可能であることを前提としている (たとえば、多くのクライアントサイドソリューションは、JavaScript と CSS の両方が利用可能であることを必要とする)。これらのウェブコンテンツ技術が適合のために当てにできる場合を除き、クライアントサイドのサポートとウェブコンテンツ技術の利用可能性が保証されない場合には、コンテンツ制作者はサーバーサイドのウェブコンテンツ技術を使うことを検討すべきである。その代案としては、これらのウェブコンテンツ技術のサポートを適合のために当てにできない場合に、使用されているいくつかのウェブコンテンツ技術が有効でなくてもコンテンツが確実に適切な表現に変換されるような達成方法を使うことが、より良いページにするための効果的な方法となる。</p></li></ul></div><h3 class="small-head" id="C29-examples">事例</h3><h4 class="small-head" id="C29-ex1">事例 1: 異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</h4><div class="example"><div class="textbody"><p>この例では、文字色と背景色を変更するリンクを JavaScript で提供する。そのリンクは、利用者の環境で JavaScript がサポートされており、かつ有効な場合にのみ挿入されるようにすべきである。これは、そのリンク自身を挿入するためにスクリプトを使う (つまり JavaScript がサポートされており、かつ有効な場合にのみリンクが表示される) ことで実現できる。</p><p>以下のコードは、JavaScript に依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するための JavaScript である。</p><p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>XHTML (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In &lt;head&gt; section:
 
   &lt;link href="main.css" rel="stylesheet" type="text/css" /&gt;
   &lt;link id="currentCSS" href="defaultColors.css" rel="stylesheet" type="text/css" /&gt;
 
 In &lt;body&gt; section:
-&lt;body&gt;〜&lt;/body&gt;内:
 
 &lt;div id="colorswitch"&gt;
 &lt;p&gt;Change colors:&lt;/p&gt;
-&lt;p&gt;色の変更:&lt;/p&gt;
   &lt;ul class="inline"&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors1.css');return false;" 
-      id="altColors1"&gt;文字:紺 背景:白&lt;/a&gt;&lt;/li&gt;
+      id="altColors1"&gt;dark blue on white&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors2.css');return false;" 
-      id="altColors2"&gt;文字:黄 背景:黒&lt;/a&gt;&lt;/li&gt;
+      id="altColors2"&gt;yellow on black&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors3.css');return false;" 
-      id="altColors3"&gt;文字:黒 背景:黄&lt;/a&gt;&lt;/li&gt;
+      id="altColors3"&gt;black on pale yellow&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors4.css');return false;" 
-      id="altColors4"&gt;文字:黒 背景:白&lt;/a&gt;&lt;/li&gt;
+      id="altColors4"&gt;black on white&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('defaultColors.css');return false;" 
-      id="default"&gt;デフォルトに戻す&lt;/a&gt;&lt;/li&gt;
+      id="default"&gt;Reset to default&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id="mainbody"&gt;
-  &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
-  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>main.css内:
+  &lt;h1&gt;Conference report&lt;/h1&gt;
+  &lt;p&gt;Last week's conference presented an impressive line-up of speakers...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In main.css:
 
 body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
 
@@ -617,8 +663,7 @@ body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
     font-weight:bold;
 }
 
-
-defaultColors.css内:
+In defaultColors.css:
 
 body, p { 
     color:#000000; 
@@ -630,79 +675,78 @@ h1, h2, h3 {
         background-color:#FFFFFF;
 }
 
-
-altColors1.css内:
+In altColors1.css:
 
 body, h1, h2, h3, p, a { 
     color:#000066; 
     background-color:#FFFFFF; 
 }
 
-
-altColors2.css内:
+In altColors2.css:
 
 body, h1, h2, h3, p, a { 
     color:#FFFF33; 
        background-color:#000000; 
 }
 
-
-altColors3.css内:
+In altColors3.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFF99; 
 }
 
-
-altColors4.css内:
+In altColors4.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFFFF; 
-}</code></pre></div><div class="textbody"><p>JavaScript (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColors (newCSS)
+}
+  </code></pre></div><div class="textbody"><p>JavaScript (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColors (newCSS)
 {
   document.getElementById('currentCSS').href = newCSS; 
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex1/index.html">異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</a></p></div></div><h4 class="small-head" id="C29-ex2">事例 2: CSS プロパティを変更するためにクライアントサイドの JavaScript を使用する</h4><div class="example"><div class="textbody"><p>この例はコンテンツの一部分を単純に変更するもので、複雑なサイトやページに対してはあまり実用的なものではないかもしれない。この例では、特定のコンテンツを強調表示するための背景として (あらかじめ用意された選択肢から) 利用者が選択した色を反映させるために、クラス名を変更する目的でクライアントサイドの JavaScript を使用している。</p><div class="note"><p class="prefix"><em>注記: </em>以下のコードには、達成方法を理解しやすくする目的で、XHTML コード内から JavaScript を呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScript を組み込むためのその時点でのベストプラクティスを採用することが推奨される (アンオブトルーシブ JavaScript とプログレッシブエンハンスメントについての詳細はリソースを参照)。</p></div><p>XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;製品の比較&lt;/h1&gt;
-&lt;p&gt;比較のためにあなたが選択した製品は以下のとおりです。 
-各製品の相違点は強調表示され、イタリック体で表示されています。&lt;/p&gt;
-&lt;p class="inlinePara"&gt;強調表示の色を変更: &lt;/p&gt;
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex1/index.html">異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</a></p></div></div><h4 class="small-head" id="C29-ex2">事例 2: CSS プロパティを変更するためにクライアントサイドの JavaScript を使用する</h4><div class="example"><div class="textbody"><p>この例はコンテンツの一部分を単純に変更するもので、複雑なサイトやページに対してはあまり実用的なものではないかもしれない。この例では、特定のコンテンツを強調表示するための背景として (あらかじめ用意された選択肢から) 利用者が選択した色を反映させるために、クラス名を変更する目的でクライアントサイドの JavaScript を使用している。</p><div class="note"><p class="prefix"><em>注記: </em>以下のコードには、達成方法を理解しやすくする目的で、XHTML コード内から JavaScript を呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScript を組み込むためのその時点でのベストプラクティスを採用することが推奨される (アンオブトルーシブ JavaScript とプログレッシブエンハンスメントについての詳細はリソースを参照)。</p></div><p>XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h1&gt;Product comparison&lt;/h1&gt;
+&lt;p&gt;The products you selected to compare are listed below. 
+Any differences between the products are highlighted and italicized.&lt;/p&gt;
+&lt;p class="inlinePara"&gt;Change hightlight color: &lt;/p&gt;
 &lt;ul class="inline"&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightYellow');return false;" 
-    class="hghltLightYellow"&gt;薄い黄色&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightYellow"&gt;light yellow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightYellow');return false;" 
-    class="hghltBrightYellow"&gt;濃い黄色&lt;/a&gt;&lt;/li&gt;
+    class="hghltBrightYellow"&gt;bright yellow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightBlue');return false;" 
-    class="hghltLightBlue"&gt;水色&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightBlue"&gt;light blue&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightBlue');return false;" 
-    class="hghltBrightBlue"&gt;青&lt;/a&gt;&lt;/li&gt;
+    class="hghltBrightBlue"&gt;bright blue&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightRed');return false;" 
-    class="hghltLightRed"&gt;ピンク&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightRed"&gt;light red&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltDrkRed');return false;" 
-    class="hghltDrkRed"&gt;茶色&lt;/a&gt;&lt;/li&gt;
+    class="hghltDrkRed"&gt;dark red&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table width="400" border="1"&gt;
   &lt;tr&gt;
     &lt;td&gt; &lt;/td&gt;
-    &lt;th scope="col"&gt;製品1&lt;/th&gt;
-    &lt;th scope="col"&gt;製品2&lt;/th&gt;
+    &lt;th scope="col"&gt;Product 1&lt;/th&gt;
+    &lt;th scope="col"&gt;Product 2&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目1&lt;/th&gt;
-    &lt;td&gt;あり&lt;/td&gt;
-    &lt;td&gt;あり&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 1&lt;/th&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目2&lt;/th&gt;
-    &lt;td class="hghltLightYellow"&gt;あり&lt;/td&gt;
-    &lt;td class="hghltLightYellow"&gt;なし&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 2&lt;/th&gt;
+    &lt;td class="hghltLightYellow"&gt;Yes&lt;/td&gt;
+    &lt;td class="hghltLightYellow"&gt;No&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目3&lt;/th&gt;
-    &lt;td&gt;対応&lt;/td&gt;
-    &lt;td&gt;対応&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 3&lt;/th&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>body { color:#000000; background-color:#FFFFFF; }
+&lt;/table&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>body { color:#000000; background-color:#FFFFFF; }
 
 .hghltLightYellow { color: #000000; background-color: #FFFF99; font-style:oblique; }
 .hghltBrightYellow { color: #000000; background-color: #FFFF00; font-style:oblique; }
@@ -728,7 +772,8 @@ body, h1, h2, h3, p, a {
   {
     if (els[i].className.indexOf("hghlt") == 0) { els[i].className = hghltColor; }
   }
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h4 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h4><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>PHPの冒頭において:
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h4 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h4><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+At the beginning of the PHP page:
 
 &lt;?php
 $thestyle = $_GET['set'];
@@ -743,41 +788,44 @@ else
 ?&gt;
 
 
-&lt;head&gt;〜&lt;/head&gt;内:
+In the &lt;head&gt; section:
 
    &lt;link rel="stylesheet" type="text/css" media="screen" href="&lt;?php echo($thestyle);?&gt;.css" &gt;
 
 
-&lt;body&gt;〜&lt;/body&gt;内:
+In &lt;body&gt; section:
 
 &lt;?php
 if ($thestyle == "style1") {
-	echo "&lt;a href=\"index.php?set=style1\"&gt;スタイルシート2に変更&lt;/a&gt;";
+	echo "&lt;a href=\"index.php?set=style1\"&gt;Switch to Style Sheet Two&lt;/a&gt;";
 	}
 else {
-	echo "&lt;a href=\"index.php?set=style2\"&gt;スタイルシート1に変更&lt;/a&gt;";
+	echo "&lt;a href=\"index.php?set=style2\"&gt;Switch to Style Sheet One&lt;/a&gt;";
 	}
 ?&gt;
 
 &lt;div id="mainbody"&gt;
-  &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
-  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>style1.css内:
+  &lt;h1&gt;Conference report&lt;/h1&gt;
+  &lt;p&gt;Last week's conference presented an impressive line-up of speakers...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In style1.css:
 
   body, p { color:#000000; background-color:#FFFFFF; }
   h1, h2, h3 {color:#990000; background-color:#FFFFFF; }
 
+In style2.css:
 
-style2.css内:
-
-  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h4 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h4><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }
+</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h4 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h4><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
  %&gt;&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
  &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
  &lt;head&gt;
    &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type" /&gt;
-   &lt;title&gt;スタイルを変更する&lt;/title&gt;
+   &lt;title&gt;Change Style&lt;/title&gt;
    &lt;%
      String fStyle = "";
      String styleName = "style";
@@ -785,7 +833,7 @@ style2.css内:
      Cookie[] cookies = request.getCookies();
  
      // get style from post request parameters
-     if (request.getMethod().equals("POST") &amp;amp;&amp;amp; request.getParameter("styleSelect") != null) {
+     if (request.getMethod().equals("POST") &amp;&amp; request.getParameter("styleSelect") != null) {
        fStyle = request.getParameter("styleSelect");
        // code that validates user input (security) not shown
        
@@ -816,17 +864,18 @@ style2.css内:
  &lt;/head&gt;
  &lt;body id="home"&gt;
    &lt;form action="_styleSwitch.jsp" method="post" id="styleswitchform" name="styleswitchform"&gt;
-     &lt;p&gt;&lt;label for="styleSelect"&gt;スタイルを選択: &lt;/label&gt;
+     &lt;p&gt;&lt;label for="styleSelect"&gt;Select style: &lt;/label&gt;
        &lt;select id="styleSelect" name="styleSelect"&gt;
-         &lt;option value="default"&gt;デフォルト (緑)&lt;/option&gt;
-         &lt;option value="wonb"&gt;黒背景に白い文字&lt;/option&gt;
-         &lt;option value="bonw"&gt;白背景に黒い文字&lt;/option&gt;
+         &lt;option value="default"&gt;Default (shades of green)&lt;/option&gt;
+         &lt;option value="wonb"&gt;White on black&lt;/option&gt;
+         &lt;option value="bonw"&gt;Black on white&lt;/option&gt;
        &lt;/select&gt;
-       &lt;input type="submit" value="スタイルを変更" /&gt;
+       &lt;input type="submit" value="Change Style" /&gt;
      &lt;/p&gt;
    &lt;/form&gt;
  &lt;/body&gt;
- &lt;/html&gt;</code></pre></div><div class="textbody"><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
+ &lt;/html&gt;
+ </code></pre></div><div class="textbody"><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
  &lt;%!
    /**
     * Get the links (link elements) to the CSS files based on cookies, ...
@@ -945,10 +994,11 @@ style2.css内:
 						達成基準 1.4.9 (文字画像 (例外なし) )を理解する
 					</a></li></ul></li></ul><h3 id="C30-description">解説</h3><div class="textbody"><p>この達成方法の目的は、利用者が彼らの好みに従ってコンテンツを見ることができるような方法で構造化された HTML テキストを画像化されたテキストに置き換えるための CSS の用い方を実践することである。この達成方法を用いるには、コンテンツ制作者はページの構造をマークアップするためにセマンティックな要素を用いる HTML ページを作ることから始める。次にコンテンツ制作者はページに対して 2 またはそれ以上のスタイルシートを作成する。1 つめのスタイルシートは HTML テキストをテキストとして表現し、2 つめはいくつかの HTML テキストをテキストの画像に置き換えるために CSS の機能を用いている。最後に、server-side 又は client-side scripting の使用を通して、コンテンツ制作者は利用者が利用するビューを切り替えることができるコントロールを提供する。</p><p>この達成方法は、画像化されたテキストを含まない表現が利用可能であり、かつ、利用者が代替表現に切り替えることができるユーザインタフェースコントロールが関連する達成基準を満たす限り、達成基準 1.4.5 又は 1.4.9 を満たすために用いることができる。可能であれば、コンテンツ制作者はデフォルトの表現として画像化されたテキストを含まない表現を配信すべきである。更に、切り替えのためのコントロールはページの先頭近くに配置されるべきである。</p><p>「画像の置き換え」の達成方法は、さまざまなユーザエージェント、構成、及び支援技術の課題との互換性 (詳細は「参照リソース」を参照) に取り組むために多様なものが開発されてきた。コンテンツ制作者がテキストの置き換えのために用いる数々のアプローチがある一方、その達成方法がスクリプト、CSS、画像 (又はそれらの組み合わせ) をオフにした場合に正確に動作するかどうか、支援技術との互換性を考慮することは重要である。すべての場合において動作する単一の解決法を見出すことは難しいので、この達成方法は、利用者が画像置き換えの達成方法を含んでいない表現へ切り替えることのできるコントロールを用いることを推奨している。</p><div class="note"><p class="prefix"><em>注記: </em>この達成方法は、非適合コンテンツのための<a href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合している代替版</a>のページを提示するために、スタイル切り替えの達成方法との組み合わせで用いることができる。更なる情報として <a href="#C29"><em>C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</em></a>と<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替版を理解する</a>を参照。</p></div></div><h3 class="small-head" id="C30-examples">事例</h3><h4 class="small-head" id="C30-ex1">事例 1</h4><div class="example"><div class="textbody"><p>デザインスタジオのサイトは、利用者が彼らのウェブページの 2 種類の表現を見ることができるようにスタイルの切り替えを用いている。デフォルトのバージョンでは、見出しのテキストが画像化されたテキストで置き換えられている。ページ上のコントロールによって利用者はテキストで見出しを表現したバージョンへ切り替えることができる。</p><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 &lt;div id="Header"&gt; 
-  &lt;h1&gt;&lt;span&gt;パッファーフィッシュデザインスタジオ&lt;/span&gt;&lt;/h1&gt; 
-  &lt;h2&gt;&lt;span&gt;驚くべき独自性とデザインソリューション&lt;/span&gt;&lt;/h2&gt; 
+  &lt;h1&gt;&lt;span&gt;Pufferfish Design Studio&lt;/span&gt;&lt;/h1&gt; 
+  &lt;h2&gt;&lt;span&gt;Surprising Identity and Design Solutions&lt;/span&gt;&lt;/h2&gt; 
   &lt;/div&gt; 
-...</code></pre></div><div class="textbody"><p>画像化されたテキストを含んだ表現のための CSS を以下に記す。見出し要素のコンテンツを画面の外に配置して非表示にするためにポジショニングを使用することで、テキストはスクリーンリーダー利用者が利用可能な状態に保持されていることに注意。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+...
+</code></pre></div><div class="textbody"><p>画像化されたテキストを含んだ表現のための CSS を以下に記す。見出し要素のコンテンツを画面の外に配置して非表示にするためにポジショニングを使用することで、テキストはスクリーンリーダー利用者が利用可能な状態に保持されていることに注意。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 #Header h1 {
 	background-image: url(pufferfish-logo.png);
 	height: 195px;

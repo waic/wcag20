@@ -269,25 +269,23 @@ G53
 						クイックリファレンス 1.2.8 (メディアに対する代替 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-text-doc.html">
 						達成基準 1.2.8 (メディアに対する代替 (収録済) )を理解する
-					</a></li></ul></li></ul><h3 id="G58-description">解説</h3><div class="textbody"><p>この達成方法によって、キャプションと音声解説が照合されたドキュメントへのリンクが提供できる。照合ドキュメントは同じウェブページ内の別の場所、又は別の URI に存在するかもしれない。照合ドキュメントへのリンクは非テキストコンテンツに隣接する。そのリンクは同期したメディアコンテンツの直前、又は直後に配置される。照合ドキュメントが同一のウェブページに異なるコンテンツとして存在する場合、「文章の終わり」と最後に記述し、利用者がいつそれを読むのを終え、元の場所に戻るかを知らせることができる。もし、「戻る」ボタンによって利用者が移動してきた元の場所に戻れない場合は非テキストコンテンツの場所へ戻るリンクが提供される。</p></div><h3 class="small-head" id="G58-examples">事例</h3><h4 class="small-head" id="G58-ex1">事例 1: HTML ドキュメント内の MOV ドキュメント</h4><div class="example"><div class="textbody"><p>「Olympic_Sports.htm」という名のページ内のコード</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a name="Olympic_Wrestling"&gt;&lt;/a&gt;
-&lt;p&gt;&lt;a href="http://www.example.com/movies/olympic_wrestling.mov"&gt;オリンピックレスリング動画&lt;/a&gt;, 
-&lt;a href="http://www.example.com/transcripts/olympic_wrestling_transcript.htm&gt;オリンピックレスリングの照合されたトランスクリプト
-&lt;/a&gt;&lt;/p&gt;</code></pre></div></div><h4 class="small-head" id="G58-ex2">事例 2: HTML ドキュメント内の .MOV ドキュメントへ戻る</h4><div class="example"><div class="textbody"><p>olympic_wrestling_transcript.htm のページ内のコード</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;スポーツアナウンサー １: これは、イングランドのウィルジョンソンと
-アルゼンチンのセオドルデリンゴの今夜の最高の戦いです。&lt;/p&gt;
-
-&lt;p&gt;情景: スタンド内に500人の観衆が詰め掛けたスタジアムの中央に
-マットが設置されています。&lt;/p&gt;
-
-&lt;p&gt; ...更なる発話 ...&lt;p&gt;
-
-&lt;p&gt; ...更なる情景...&lt;/p&gt;
-
-&lt;p&gt; ...その他...&lt;/p&gt;
-
-&lt;p&gt;スポーツアナウンサー  ２: 今夜はこれで最後となります。
-ウィルジョンソンが新たなゴールドメダリストになったこの場所から、
-今夜もお付き合い頂きありがとうございました。 
-&lt;a href="../movies/Olympic_Sports.htm#Olympic_Wrestling&gt;動画ページへ戻る&lt;/a&gt; &lt;/p&gt;</code></pre></div></div><h3 id="G58-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G58-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G69">G69: 時間依存メディアに対する代替コンテンツを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G159">G159: 映像のみの時間依存メディアに対する代替コンテンツを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H46">H46: embed 要素と一緒に noembed 要素を用いる</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H53">H53: object 要素のボディを使用する</a></li></ul></div><h3 id="G58-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G58-procedure">手順</h4><ol class="enumar"><li><p>リンクが非テキストコンテンツの直前又は、直後にある。</p></li><li><p>そのリンクがこの同期したメディアの照合ドキュメントへ直接遷移する有効なリンクである。</p></li><li><p>その同期したメディアコンテンツの元の場所へ利用者が戻るためのリンク又は、復帰機能が利用可能である。</p></li></ol><h4 class="small-head" id="G58-results">期待される結果</h4><ul><li><p>１.から３.の全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G59" id="G59"> </a>G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</h2><div class="applicability"><h3 id="G59-applicability">適用 (対象)</h3><div class="textbody"><p>インタラクティブな要素を含み、インタラクティブな要素のデフォルトのタブ移動順序を定義している、全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
+					</a></li></ul></li></ul><h3 id="G58-description">解説</h3><div class="textbody"><p>この達成方法によって、キャプションと音声解説が照合されたドキュメントへのリンクが提供できる。照合ドキュメントは同じウェブページ内の別の場所、又は別の URI に存在するかもしれない。照合ドキュメントへのリンクは非テキストコンテンツに隣接する。そのリンクは同期したメディアコンテンツの直前、又は直後に配置される。照合ドキュメントが同一のウェブページに異なるコンテンツとして存在する場合、「文章の終わり」と最後に記述し、利用者がいつそれを読むのを終え、元の場所に戻るかを知らせることができる。もし、「戻る」ボタンによって利用者が移動してきた元の場所に戻れない場合は非テキストコンテンツの場所へ戻るリンクが提供される。</p></div><h3 class="small-head" id="G58-examples">事例</h3><h4 class="small-head" id="G58-ex1">事例 1: HTML ドキュメント内の MOV ドキュメント</h4><div class="example"><div class="textbody"><p>「Olympic_Sports.htm」という名のページ内のコード</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+  &lt;a name="Olympic_Wrestling"&gt;&lt;/a&gt;
+  &lt;p&gt;&lt;a href="http://www.example.com/movies/olympic_wrestling.mov"&gt;Olympic Wrestling movie&lt;/a&gt;, 
+  &lt;a href="http://www.example.com/transcripts/olympic_wrestling_transcript.htm"&gt;Olympic 
+  Wrestling collated Transcript&lt;/a&gt;&lt;/p&gt;
+            </code></pre></div></div><h4 class="small-head" id="G58-ex2">事例 2: HTML ドキュメント内の .MOV ドキュメントへ戻る</h4><div class="example"><div class="textbody"><p>olympic_wrestling_transcript.htm のページ内のコード</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+  &lt;p&gt;Sports announcer 1: This is a great battle tonight between England's "Will Johnson" and 
+  "Theodore Derringo" from Argentina&lt;/p&gt;
+  &lt;p&gt;Scenery: There is a mat set out in the middle of the stadium with 500 people in the 
+  stands...&lt;/p&gt;
+  &lt;p&gt; ...more dialogue...&lt;p&gt;
+  &lt;p&gt; ...more scenery...&lt;/p&gt;
+  &lt;p&gt; ...etc...&lt;/p&gt;
+  &lt;p&gt;Sports announcer 2: And that is all for tonight, thank you for joining us tonight where 
+  Will Johnson is the new Gold Medalist. 
+  &lt;a href="../movies/Olympic_Sports.htm#Olympic_Wrestling&gt;Return to Movie page&lt;/a&gt; &lt;/p&gt;
+            </code></pre></div></div><h3 id="G58-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G58-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G69">G69: 時間依存メディアに対する代替コンテンツを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G159">G159: 映像のみの時間依存メディアに対する代替コンテンツを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H46">H46: embed 要素と一緒に noembed 要素を用いる</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H53">H53: object 要素のボディを使用する</a></li></ul></div><h3 id="G58-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G58-procedure">手順</h4><ol class="enumar"><li><p>リンクが非テキストコンテンツの直前又は、直後にある。</p></li><li><p>そのリンクがこの同期したメディアの照合ドキュメントへ直接遷移する有効なリンクである。</p></li><li><p>その同期したメディアコンテンツの元の場所へ利用者が戻るためのリンク又は、復帰機能が利用可能である。</p></li></ol><h4 class="small-head" id="G58-results">期待される結果</h4><ul><li><p>１.から３.の全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G59" id="G59"> </a>G59: コンテンツ内の順番及び関係に従った順序で、インタラクティブな要素を配置する</h2><div class="applicability"><h3 id="G59-applicability">適用 (対象)</h3><div class="textbody"><p>インタラクティブな要素を含み、インタラクティブな要素のデフォルトのタブ移動順序を定義している、全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
 				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-focus-order">
 						クイックリファレンス 2.4.3 (フォーカス順序)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">
@@ -386,11 +384,12 @@ G53
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-context-help.html">
 						達成基準 3.3.5 (ヘルプ)を理解する
 					</a></li></ul></li></ul><h3 id="G71-description">解説</h3><div class="textbody"><p>この達成方法の目的は、各ウェブページに少なくとも１つのヘルプ情報へのリンクを用意して、利用者がフォームにデータを入力する際に、状況依存のヘルプを提供することである。リンクは、そのウェブページのための情報があるヘルプページへ遷移する。もう一つの方法は、インタラクティブなコントロールのひとつひとつにヘルプページへのリンクを提供する。このリンクを当該コントロールのすぐ前か後に配置することで、そのコントロールで問題があった場合、利用者が簡単にそのリンクまでタブで移動することができる。そのヘルプ情報をブラウザの新しいウィンドウで表示することで、それまでにフォームに入力されたデータは失われずに済む。注記: リンクがヘルプ情報を提供する唯一の手段ではない。</p></div><h3 class="small-head" id="G71-examples">事例</h3><h4 class="small-head" id="G71-ex1">事例 1</h4><div class="example"><div class="textbody"><p>下記の達成方法の例は、ヘルプ情報へのリンクを含んだラベル要素を示している。ラベル要素内にヘルプ情報へのリンクを置く事で、スクリーンリーダーの利用者が入力フォームのコントロールを利用する際にヘルプのリンクにアクセスすることが可能になる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-      &lt;form action="test.html"&gt;
-	&lt;label for="test"&gt;テストコントロール
-	&lt;a href="help.html" target="_blank"&gt;ヘルプ&lt;/a&gt;&lt;/label&gt;
-	&lt;input type="text" name="test" id="test" /&gt;
-&lt;/form&gt;</code></pre></div></div><h3 id="G71-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G184">G184: フォーム又はテキストフィールド一式の先頭に、必須の入力を記述するテキストの説明を提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G193">G193: ウェブページでアシスタントによるヘルプを提供する</a></li></ul></div><h3 id="G71-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G71-procedure">手順</h4><ol class="enumar"><li><p>フォームが含まれるウェブページを特定する。</p></li><li><p>そのページ内に、このウェブページ又は、その他のリソース内に含まれる、フォームの全ての項目を入力するためのヘルプ情報へのリンクが一つ以上提供されている。</p></li><li><p>インタラクティブなコントロールのすぐ前、又は後ろに、そのコントロールのためのヘルプ情報へのリンクがある。
+              &lt;form action="test.html"&gt;
+                &lt;label for="test"&gt;Test control
+                &lt;a href="help.html" target="_blank"&gt;Help&lt;/a&gt;&lt;/label&gt;
+                &lt;input type="text" name="test" id="test" /&gt;
+                &lt;/form&gt;
+            </code></pre></div></div><h3 id="G71-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G184">G184: フォーム又はテキストフィールド一式の先頭に、必須の入力を記述するテキストの説明を提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G193">G193: ウェブページでアシスタントによるヘルプを提供する</a></li></ul></div><h3 id="G71-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G71-procedure">手順</h4><ol class="enumar"><li><p>フォームが含まれるウェブページを特定する。</p></li><li><p>そのページ内に、このウェブページ又は、その他のリソース内に含まれる、フォームの全ての項目を入力するためのヘルプ情報へのリンクが一つ以上提供されている。</p></li><li><p>インタラクティブなコントロールのすぐ前、又は後ろに、そのコントロールのためのヘルプ情報へのリンクがある。
 		</p></li></ol><h4 class="small-head" id="G71-results">期待される結果</h4><ul><li><p>2. 又は 3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G73" id="G73"> </a>G73: 非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する</h2><div class="applicability"><h3 id="G73-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
@@ -416,7 +415,9 @@ G53
 						クイックリファレンス 3.2.5 (要求による変化)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html">
 						達成基準 3.2.5 (要求による変化)を理解する
-					</a></li></ul></li></ul><h3 id="G76-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ページの自動的な再読み込みによって状況が変化し、利用者が混乱したり位置が分からなくなったりすることを避けるために、コンテンツの更新やそのタイミングを利用者がコントロールできるようにすることである。自動更新によって何が起こるのかが明らかになっていないと、スクリーンリーダーの利用者が混乱してしまう恐れがある。ページ上で利用者の現在位置を示すスクリーンリーダーの「バーチャルカーソル」は、ページが再読み込みされるとページの最上部に移動してしまう。また、画面拡大ソフトウェアの利用者や読字障害のある利用者も、ページの自動的な再読み込みによって現在位置が分からなくなってしまう恐れがある。</p><p>コンテンツの中には、頻繁に新たなデータや情報に更新するものがある。また、開発者は、コンテンツがサーバに自分自身の新しいコピーを要求するコードを挿入し、自動更新を強いることがある。そのような更新やその頻度は、常に利用者のコントロール下にあるわけではない。コンテンツ制作者は、自動更新の仕組みを埋め込むのではなく、利用者が必要な場合にコンテンツを更新できるメカニズムを提供すべきである。</p></div><h3 class="small-head" id="G76-examples">事例</h3><h4 class="small-head" id="G76-ex1">事例 1</h4><div class="example"><div class="textbody"><p>HTML では、利用者がコンテンツを更新するボタン又はリンクを、開発者が提供できる。例えば、次のコード例のように、ページ上で http://www.example.com/news.jsp にニュース項目があると示すことである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="news.jsp"&gt;このページを更新する&lt;/a&gt;</code></pre></div></div><h4 class="small-head" id="G76-ex2">事例 2</h4><div class="example"><div class="textbody"><p>E メールのウェブインタフェース (ウェブメール) では、自動更新ではなく、新しいメールを確認するボタン又はリンクを、開発者が提供できる。</p></div></div><h3 id="G76-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G76-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G75">G75: コンテンツの更新を延期するメカニズムを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR14">SCR14: 不可欠ではないアラートの表示を任意にするために、スクリプトを使用する</a></li></ul></div><h3 id="G76-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G76-procedure">手順</h4><ol class="enumar"><li><p>コンテンツを更新するメカニズムを見つける (もしそのようなメカニズムが存在しているならば)。</p></li><li><p>メカニズムそれぞれについて、利用者が更新を要求できるようになっている。</p></li><li><p>メカニズムによって自動更新が実行されうる。</p></li></ol><h4 class="small-head" id="G76-results">期待される結果</h4><ul><li><p>2. を満たしていて、3. に該当しない。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G78" id="G78"> </a>G78: 音声解説を含んだ、利用者が選択可能な副音声トラックを提供する</h2><div class="applicability"><h3 id="G78-applicability">適用 (対象)</h3><div class="textbody"><p>音声トラック及び視覚的なコンテンツのあるウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
+					</a></li></ul></li></ul><h3 id="G76-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ページの自動的な再読み込みによって状況が変化し、利用者が混乱したり位置が分からなくなったりすることを避けるために、コンテンツの更新やそのタイミングを利用者がコントロールできるようにすることである。自動更新によって何が起こるのかが明らかになっていないと、スクリーンリーダーの利用者が混乱してしまう恐れがある。ページ上で利用者の現在位置を示すスクリーンリーダーの「バーチャルカーソル」は、ページが再読み込みされるとページの最上部に移動してしまう。また、画面拡大ソフトウェアの利用者や読字障害のある利用者も、ページの自動的な再読み込みによって現在位置が分からなくなってしまう恐れがある。</p><p>コンテンツの中には、頻繁に新たなデータや情報に更新するものがある。また、開発者は、コンテンツがサーバに自分自身の新しいコピーを要求するコードを挿入し、自動更新を強いることがある。そのような更新やその頻度は、常に利用者のコントロール下にあるわけではない。コンテンツ制作者は、自動更新の仕組みを埋め込むのではなく、利用者が必要な場合にコンテンツを更新できるメカニズムを提供すべきである。</p></div><h3 class="small-head" id="G76-examples">事例</h3><h4 class="small-head" id="G76-ex1">事例 1</h4><div class="example"><div class="textbody"><p>HTML では、利用者がコンテンツを更新するボタン又はリンクを、開発者が提供できる。例えば、次のコード例のように、ページ上で http://www.example.com/news.jsp にニュース項目があると示すことである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;a href="news.jsp"&gt;Update this page&lt;/a&gt;
+            </code></pre></div></div><h4 class="small-head" id="G76-ex2">事例 2</h4><div class="example"><div class="textbody"><p>E メールのウェブインタフェース (ウェブメール) では、自動更新ではなく、新しいメールを確認するボタン又はリンクを、開発者が提供できる。</p></div></div><h3 id="G76-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G76-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G75">G75: コンテンツの更新を延期するメカニズムを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR14">SCR14: 不可欠ではないアラートの表示を任意にするために、スクリプトを使用する</a></li></ul></div><h3 id="G76-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G76-procedure">手順</h4><ol class="enumar"><li><p>コンテンツを更新するメカニズムを見つける (もしそのようなメカニズムが存在しているならば)。</p></li><li><p>メカニズムそれぞれについて、利用者が更新を要求できるようになっている。</p></li><li><p>メカニズムによって自動更新が実行されうる。</p></li></ol><h4 class="small-head" id="G76-results">期待される結果</h4><ul><li><p>2. を満たしていて、3. に該当しない。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G78" id="G78"> </a>G78: 音声解説を含んだ、利用者が選択可能な副音声トラックを提供する</h2><div class="applicability"><h3 id="G78-applicability">適用 (対象)</h3><div class="textbody"><p>音声トラック及び視覚的なコンテンツのあるウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#media-equiv-audio-desc">
 				達成基準 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#media-equiv-audio-desc">
 						クイックリファレンス 1.2.3 (音声解説、又はメディアに対する代替 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">
@@ -541,7 +542,9 @@ G53
 						クイックリファレンス 2.4.2 (ページタイトル)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">
 						達成基準 2.4.2 (ページタイトル)を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-title">達成基準 2.4.2</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">達成基準 2.4.2 を理解する</a>を参照すること。</p></div></li></ul><h3 id="G88-description">解説</h3><div class="textbody"><p>この達成方法の目的は、各ウェブページにコンテンツの内容が分かるページタイトルをつけることである。コンテンツの内容が分かるページタイトルがあると、利用者は目的のコンテンツを見つけたり、サイト内で現在位置を確認したり、コンテンツを見てまわったりすることができる。コンテンツの内容が分かるページタイトルによって、利用者は、どのようなウェブページを利用してるのかを容易に特定することができ、その上、別のウェブページに移動したときもすぐにそのことが分かる。また、タイトルにより、利用者は、コンテンツを読んだり、又は解釈したりしなくてもウェブページを特定することができる。また、正確で内容が分かるページタイトルが、サイトマップ又は検索結果のリストにあれば、利用者は必要とするコンテンツをより速く特定することができる。そして、コンテンツの内容が分かるページタイトルがリンクテキストに用いられていれば、利用者は興味のあるコンテンツに、より正確にたどり着くことができる。</p><p>各ウェブページのタイトルは次の要件を満たすべきである:</p><ul><li><p>そのウェブページの主題を特定している。</p></li><li><p>例えば、スクリーンリーダーで読み上げている場合、又はサイトマップや検索結果一覧にある場合など、前後の文脈がなくても意味がわかるようになっている。</p></li><li><p>簡潔である。</p></li></ul><p>次のようなページタイトルはさらに有益である。</p><ul><li><p>どのサイト又は他のどのリソースに属しているかを特定している。</p></li><li><p>ウェブページが属するサイト又はその他のリソースの中において、他に同じものがない。</p></li></ul></div><h3 class="small-head" id="G88-examples">事例</h3><h4 class="small-head" id="G88-ex1">事例 1: 最も重要な識別情報を初めに記載するページタイトル</h4><div class="example"><div class="textbody"><p>大きな組織のあるグループによって公開されているウェブページがある。ウェブページのタイトルでは、最初に、ページの話題を特定して、次に、そのグループ名及び組織名を示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;title&gt;求人情報: グループ名: 組織名&lt;/title&gt;</code></pre></div></div><h4 class="small-head" id="G88-ex2">事例 2: コンテンツの内容が分かるページタイトルの付いた同期したメディアによるプレゼンテーション</h4><div class="example"><div class="textbody"><p>2004 年の南アジアで発生した津波に関する同期したメディアのプレゼンテーションには、「2004 年の津波」というタイトルがつけられている。</p></div></div><h4 class="small-head" id="G88-ex3">事例 3: 3 つの部分から成る、コンテンツの内容が分かるページタイトルが付与されたウェブページ</h4><div class="example"><div class="textbody"><p>ウェブページでは、クローズドキャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで 3 つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2 つ目はウェブページが属するサブサイト名、そして 3 つ目はウェブページ自体を特定している (具体例としては、<a href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</a> を参照。)</p></div></div><h4 class="small-head" id="G88-ex4">事例 4: 新聞のウェブページ</h4><div class="example"><div class="textbody"><p>今日の版のみを閲覧できるウェブサイトでは、そのウェブページに「全国のニュース、第一面」というタイトルがつけられている。異なる日の版を閲覧することできるウェブサイトでは、そのページタイトルを「全国のニュース、第一面、2005 年 10 月 17 日」としている。</p></div></div><h3 id="G88-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G88-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H25">H25: title 要素を用いて、ページタイトルを提供する</a></li></ul></div><h3 id="G88-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G88-procedure">手順</h4><ol class="enumar"><li><p>ウェブページにページタイトルがある。</p></li><li><p>そのページタイトルが、ウェブページのコンテンツに関連している。</p></li><li><p>そのページタイトルによって、ウェブページを特定できる。</p></li></ol><h4 class="small-head" id="G88-results">期待される結果</h4><ul><li><p>上記全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G89" id="G89"> </a>G89: 期待されるデータ書式及び入力例を提供する</h2><div class="applicability"><h3 id="G89-applicability">適用 (対象)</h3><div class="textbody"><p>利用者から情報を集め、利用者が入力できる書式に制約のあるページ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
+					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-title">達成基準 2.4.2</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">達成基準 2.4.2 を理解する</a>を参照すること。</p></div></li></ul><h3 id="G88-description">解説</h3><div class="textbody"><p>この達成方法の目的は、各ウェブページにコンテンツの内容が分かるページタイトルをつけることである。コンテンツの内容が分かるページタイトルがあると、利用者は目的のコンテンツを見つけたり、サイト内で現在位置を確認したり、コンテンツを見てまわったりすることができる。コンテンツの内容が分かるページタイトルによって、利用者は、どのようなウェブページを利用してるのかを容易に特定することができ、その上、別のウェブページに移動したときもすぐにそのことが分かる。また、タイトルにより、利用者は、コンテンツを読んだり、又は解釈したりしなくてもウェブページを特定することができる。また、正確で内容が分かるページタイトルが、サイトマップ又は検索結果のリストにあれば、利用者は必要とするコンテンツをより速く特定することができる。そして、コンテンツの内容が分かるページタイトルがリンクテキストに用いられていれば、利用者は興味のあるコンテンツに、より正確にたどり着くことができる。</p><p>各ウェブページのタイトルは次の要件を満たすべきである:</p><ul><li><p>そのウェブページの主題を特定している。</p></li><li><p>例えば、スクリーンリーダーで読み上げている場合、又はサイトマップや検索結果一覧にある場合など、前後の文脈がなくても意味がわかるようになっている。</p></li><li><p>簡潔である。</p></li></ul><p>次のようなページタイトルはさらに有益である。</p><ul><li><p>どのサイト又は他のどのリソースに属しているかを特定している。</p></li><li><p>ウェブページが属するサイト又はその他のリソースの中において、他に同じものがない。</p></li></ul></div><h3 class="small-head" id="G88-examples">事例</h3><h4 class="small-head" id="G88-ex1">事例 1: 最も重要な識別情報を初めに記載するページタイトル</h4><div class="example"><div class="textbody"><p>大きな組織のあるグループによって公開されているウェブページがある。ウェブページのタイトルでは、最初に、ページの話題を特定して、次に、そのグループ名及び組織名を示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;title&gt;Working with us: The Small Group: The Big Organization&lt;/title&gt;
+            </code></pre></div></div><h4 class="small-head" id="G88-ex2">事例 2: コンテンツの内容が分かるページタイトルの付いた同期したメディアによるプレゼンテーション</h4><div class="example"><div class="textbody"><p>2004 年の南アジアで発生した津波に関する同期したメディアのプレゼンテーションには、「2004 年の津波」というタイトルがつけられている。</p></div></div><h4 class="small-head" id="G88-ex3">事例 3: 3 つの部分から成る、コンテンツの内容が分かるページタイトルが付与されたウェブページ</h4><div class="example"><div class="textbody"><p>ウェブページでは、クローズドキャプションを作成するためのガイドラインと提案を提供している。 そのウェブページは、大きいサイトの中の「サブサイト」である。ページタイトルはダッシュで 3 つの部分に分けて示されている。ページタイトルの最初の部分は組織名、2 つ目はウェブページが属するサブサイト名、そして 3 つ目はウェブページ自体を特定している (具体例としては、<a href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">WGBH – Media Access Group – Captioning FAQ</a> を参照。)</p></div></div><h4 class="small-head" id="G88-ex4">事例 4: 新聞のウェブページ</h4><div class="example"><div class="textbody"><p>今日の版のみを閲覧できるウェブサイトでは、そのウェブページに「全国のニュース、第一面」というタイトルがつけられている。異なる日の版を閲覧することできるウェブサイトでは、そのページタイトルを「全国のニュース、第一面、2005 年 10 月 17 日」としている。</p></div></div><h3 id="G88-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G88-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H25">H25: title 要素を用いて、ページタイトルを提供する</a></li></ul></div><h3 id="G88-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G88-procedure">手順</h4><ol class="enumar"><li><p>ウェブページにページタイトルがある。</p></li><li><p>そのページタイトルが、ウェブページのコンテンツに関連している。</p></li><li><p>そのページタイトルによって、ウェブページを特定できる。</p></li></ol><h4 class="small-head" id="G88-results">期待される結果</h4><ul><li><p>上記全てを満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G89" id="G89"> </a>G89: 期待されるデータ書式及び入力例を提供する</h2><div class="applicability"><h3 id="G89-applicability">適用 (対象)</h3><div class="textbody"><p>利用者から情報を集め、利用者が入力できる書式に制約のあるページ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#minimize-error-cues">
 						クイックリファレンス 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-cues.html">
@@ -551,8 +554,10 @@ G53
 						クイックリファレンス 3.3.5 (ヘルプ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-context-help.html">
 						達成基準 3.3.5 (ヘルプ)を理解する
-					</a></li></ul></li></ul><h3 id="G89-description">解説</h3><div class="textbody"><p>この達成方法の目的は、利用者が入力しなければならないデータ書式の制約を通知することによって、利用者が入力エラーを回避しやすくすることである。これは、書式の特徴を記述するか、入力データに求められる書式の例を提供することによって対処できる。</p><div class="note"><p class="prefix"><em>注記: </em>日付や時刻のように、様々な記述方法があるデータ書式については、利用者にとって最も入力しやすい書式を選択できるオプションを提供するとよい。</p></div></div><h3 class="small-head" id="G89-examples">事例</h3><h4 class="small-head" id="G89-ex1">事例 1</h4><div class="example"><div class="textbody"><p>日付を入力する HTML のフォームコントロールでは、<code>label</code> 要素内において、入力する日付はアメリカ合衆国の多くの利用者が想定する月-日-年の書式ではなく、日-月-年の書式でなければならないことを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="date"&gt;日付 (dd-mm-yyyy)&lt;/label&gt;
-&lt;input type="text" name="date" id="date" /&gt;</code></pre></div></div><h3 id="G89-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G184">G184: フォーム又はテキストフィールド一式の先頭に、必須の入力を記述するテキストの説明を提供する</a></li></ul></div><h3 id="G89-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G89-procedure">手順</h4><ol class="enumar"><li><p>所定の書式でしか利用者の入力データを受け付けないフォームコントロールを特定する。</p></li><li><p>1.で特定した各フォームコントロールが、求めている書式情報を提供している。</p></li></ol><h4 class="small-head" id="G89-results">期待される結果</h4><ul><li><p>2.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G90" id="G90"> </a>G90: キーボードがトリガーとなるイベントハンドラを提供する</h2><div class="applicability"><h3 id="G90-applicability">適用 (対象)</h3><div class="textbody"><p>コンテンツに機能性を含んでいるウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
+					</a></li></ul></li></ul><h3 id="G89-description">解説</h3><div class="textbody"><p>この達成方法の目的は、利用者が入力しなければならないデータ書式の制約を通知することによって、利用者が入力エラーを回避しやすくすることである。これは、書式の特徴を記述するか、入力データに求められる書式の例を提供することによって対処できる。</p><div class="note"><p class="prefix"><em>注記: </em>日付や時刻のように、様々な記述方法があるデータ書式については、利用者にとって最も入力しやすい書式を選択できるオプションを提供するとよい。</p></div></div><h3 class="small-head" id="G89-examples">事例</h3><h4 class="small-head" id="G89-ex1">事例 1</h4><div class="example"><div class="textbody"><p>日付を入力する HTML のフォームコントロールでは、<code>label</code> 要素内において、入力する日付はアメリカ合衆国の多くの利用者が想定する月-日-年の書式ではなく、日-月-年の書式でなければならないことを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;label for="date"&gt;Date (dd-mm-yyyy)&lt;/label&gt;
+                &lt;input type="text" name="date" id="date" /&gt;
+            </code></pre></div></div><h3 id="G89-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G184">G184: フォーム又はテキストフィールド一式の先頭に、必須の入力を記述するテキストの説明を提供する</a></li></ul></div><h3 id="G89-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G89-procedure">手順</h4><ol class="enumar"><li><p>所定の書式でしか利用者の入力データを受け付けないフォームコントロールを特定する。</p></li><li><p>1.で特定した各フォームコントロールが、求めている書式情報を提供している。</p></li></ol><h4 class="small-head" id="G89-results">期待される結果</h4><ul><li><p>2.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G90" id="G90"> </a>G90: キーボードがトリガーとなるイベントハンドラを提供する</h2><div class="applicability"><h3 id="G90-applicability">適用 (対象)</h3><div class="textbody"><p>コンテンツに機能性を含んでいるウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#keyboard-operation-keyboard-operable">
 						クイックリファレンス 2.1.1 (キーボード)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">
@@ -576,9 +581,11 @@ G53
 						クイックリファレンス 2.4.9 (リンクの目的 (リンクのみ) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
-					</a></li></ul></li></ul><h3 id="G91-description">解説</h3><div class="textbody"><p>この達成方法の目的は、リンクの目的をリンクテキストで説明することである。その説明により、利用者はこのリンクとウェブページ内にある他のリンクへのリンクとの違いを区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。一般的に、遷移先の URI ではそのリンクの目的を説明したことにならない。</p></div><h3 class="small-head" id="G91-examples">事例</h3><h4 class="small-head" id="G91-ex1">事例 1: HTML において、a 要素のテキストコンテンツを用いてリンクの目的を説明する。</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="routes.html"&gt;
-  ボルダーズ クライミング ジムの現在のルート
-&lt;/a&gt;</code></pre></div></div><h3 id="G91-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G91-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li></ul></div><h3 id="G91-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G91-procedure">手順</h4><p>この達成方法を用いるコンテンツ内の各リンクに対して:</p><ol class="enumar"><li><p>リンクテキストがそのリンクの目的を説明している。</p></li></ol><h4 class="small-head" id="G91-results">期待される結果</h4><ul><li><p>1. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G92" id="G92"> </a>G92: 非テキストコンテンツに対して、それと同じ目的を果たし、かつ同じ情報を示す長い説明を提供する</h2><div class="applicability"><h3 id="G92-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+					</a></li></ul></li></ul><h3 id="G91-description">解説</h3><div class="textbody"><p>この達成方法の目的は、リンクの目的をリンクテキストで説明することである。その説明により、利用者はこのリンクとウェブページ内にある他のリンクへのリンクとの違いを区別でき、利用者がリンクをたどるかどうかを決定するのを助ける。一般的に、遷移先の URI ではそのリンクの目的を説明したことにならない。</p></div><h3 class="small-head" id="G91-examples">事例</h3><h4 class="small-head" id="G91-ex1">事例 1: HTML において、a 要素のテキストコンテンツを用いてリンクの目的を説明する。</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;a href="routes.html"&gt;
+                Current routes at Boulders Climbing Gym
+                &lt;/a&gt;
+            </code></pre></div></div><h3 id="G91-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G91-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li></ul></div><h3 id="G91-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G91-procedure">手順</h4><p>この達成方法を用いるコンテンツ内の各リンクに対して:</p><ol class="enumar"><li><p>リンクテキストがそのリンクの目的を説明している。</p></li></ol><h4 class="small-head" id="G91-results">期待される結果</h4><ul><li><p>1. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G92" id="G92"> </a>G92: 非テキストコンテンツに対して、それと同じ目的を果たし、かつ同じ情報を示す長い説明を提供する</h2><div class="applicability"><h3 id="G92-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
@@ -609,39 +616,43 @@ G53
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">
 						達成基準 1.3.3 (感覚的な特徴)を理解する
 					</a></li></ul></li></ul><h3 id="G96-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ウェブページ内のアイテムがコンテンツの中で、形や大きさや音又は位置だけでなく、知覚に依存しない言い回しによっても言及されるようにすることである。例えば、アイテムについて言及する文では、アイテムのラベル又はその機能についてもあわせて説明する。</p></div><h3 class="small-head" id="G96-examples">事例</h3><h4 class="small-head" id="G96-ex1">事例 1</h4><div class="example"><div class="textbody"><p>フォームには、入力内容を送信して一連の過程の次の手順に進むために円形のボタンがある。そのボタンにはテキストで「次へ」とラベルが付けられている。説明には、「フォームを送信するには、<em>次へ</em>と記された円形のボタンを押して下さい」と示されている。これは、そのボタンを特定するための形とテキスト情報の両方を含んでいる。</p></div></div><h4 class="small-head" id="G96-ex2">事例 2</h4><div class="example"><div class="textbody"><p>オンライントレーニングを提供するウェブページの説明には、「希望のオンラインコースへ進むには、右側の『クラス一覧』という見出しがついたリンクのリストを使用して下さい。」と書いてある。この説明は、適切なリンクのリストを見つけること補助するために位置と同様にテキストの手がかりを提供している。
-		</p></div></div><h4 class="small-head" id="G96-ex3">事例 3</h4><div class="example"><div class="textbody"><p>以下のレイアウトではボタンを右下隅に配置して位置によってそれを示している。テキストラベルの指示は、位置が意味をなさない線形化バージョンにアクセスする利用者にも、どのボタンを使用するかを明確にしている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td colspan="2"&gt;右下の「前へ戻る」ボタンを押して下さい。&lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        印刷&lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        中止&lt;/span&gt;
-      &lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        OK&lt;/span&gt;
-      &lt;/td&gt;
-      &lt;td&gt;
-        &lt;span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
-        前へ戻る&lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre></div></div><h3 id="G96-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G96-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="G96-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G96-procedure">手順</h4><p>ウェブページ内において、オブジェクトの形、大きさ、又は位置を使って説明しているすべての言及箇所を探し出す。そのような各アイテムにおいて:</p><ol class="enumar"><li><p>その言及箇所には、形や大きさ、又は相対的な位置についての情報がない場合でもアイテムを見つけて、特定するための追加情報が含まれている。</p></li></ol><h4 class="small-head" id="G96-results">期待される結果</h4><ul><li><p>1.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G97" id="G97"> </a>G97: 略語の初出時、その直前又は直後に元の語を提供する</h2><div class="applicability"><h3 id="G97-applicability">適用 (対象)</h3><div class="textbody"><p>テキストを提供する全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#meaning-located">
+		</p></div></div><h4 class="small-head" id="G96-ex3">事例 3</h4><div class="example"><div class="textbody"><p>以下のレイアウトではボタンを右下隅に配置して位置によってそれを示している。テキストラベルの指示は、位置が意味をなさない線形化バージョンにアクセスする利用者にも、どのボタンを使用するかを明確にしている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;table&gt;
+                &lt;tbody&gt;
+                &lt;tr&gt;
+                &lt;td colspan="2"&gt;Push the lower right [Preview] button.&lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Print&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Cancel&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                OK&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;"&gt;
+                Preview&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;/table&gt;
+              
+              
+            </code></pre></div></div><h3 id="G96-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G96-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="G96-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G96-procedure">手順</h4><p>ウェブページ内において、オブジェクトの形、大きさ、又は位置を使って説明しているすべての言及箇所を探し出す。そのような各アイテムにおいて:</p><ol class="enumar"><li><p>その言及箇所には、形や大きさ、又は相対的な位置についての情報がない場合でもアイテムを見つけて、特定するための追加情報が含まれている。</p></li></ol><h4 class="small-head" id="G96-results">期待される結果</h4><ul><li><p>1.を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G97" id="G97"> </a>G97: 略語の初出時、その直前又は直後に元の語を提供する</h2><div class="applicability"><h3 id="G97-applicability">適用 (対象)</h3><div class="textbody"><p>テキストを提供する全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#meaning-located">
 				達成基準 3.1.4 (略語)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#meaning-located">
 						クイックリファレンス 3.1.4 (略語)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/meaning-located.html">
@@ -742,49 +753,53 @@ G53
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h3 id="G115-description">解説</h3><div class="textbody"><p>この達成方法の目的は、適切なセマンティックな要素を用いてウェブコンテンツの構造をマークアップすることである。つまり、要素を、視覚的な見えかたではなく、その意味に基づいて用いることである。</p><p>適切なセマンティックな要素を用いることで、ユーザエージェントが構造を利用できるようになる。この中には、コンテンツの意味を理解する際に、異なる構成要素が持っている役割 (role) を明示することも含まれる。段落、見出し、強調されたテキスト、テーブルなどのコンテンツの構成要素の性質は、このようにして示すことができる。場合によっては、見出しと小見出し、テーブルとセルといった複数の構成要素間の関係も示されるべきである。そうすることで、ユーザエージェントは、たとえば、異なる種類の構造に対しては異なる視覚表現にしたり、聴覚表現では、異なる声又は声の高さを用いたりして、利用者に構造を知覚させることができるようになる。</p><p>例えば、HTML においては、<code>em</code>、<code>abbr</code> 及び <code>cite</code> といった語句レベルの要素は、それぞれ、強調させるため、略語及び引用であることを示すためにテキストをマークすることで、文の中でセマンティックな情報を付加する。 数学における構造と表現の重要な区別を保つために設計されたマークアップ言語である MathML には、数学的な概念を表すために用いられる複雑な記号のための特別な「表現」のマークアップも、数学的な概念自体のための「コンテンツ」 (セマンティック) マークアップも含まれている。</p></div><h3 class="small-head" id="G115-examples">事例</h3><h4 class="small-head" id="G115-ex1">事例 1</h4><div class="example"><div class="textbody"><p>段落には別のページへのハイパーリンクがある。ハイパーリンクは <code>a</code> 要素を用いてマークアップされている。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p&gt;我々の新しいツールをご自身で試したいですか？
-&lt;a href="downlod.html"&gt;ダウンロードコーナー&lt;/a&gt;で無料の体験版が入手できます。&lt;/p&gt;
-      </code></pre></div></div><h4 class="small-head" id="G115-ex2">事例 2</h4><div class="example"><div class="textbody"><p>結婚の歴史についてのページには、ジェーン オースティンの小説「高慢と偏見」からの引用が事例として用いられている。本への参照は、<code>cite</code> 要素を用いてマークアップされ、引用部分自体は <code>blockquote</code> 要素を用いてマークアップされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p&gt;&lt;cite&gt;高慢と偏見&lt;/cite&gt;という小説の第1章にあるように、
-結婚は独身男性にとって必然的な段階と考えられていた:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;多くの財産を持った独身男性は妻を必要としているということは、
-広く認められた普遍的な真実である。&lt;/p&gt;
-&lt;p&gt;しかしながら、彼が初めて隣人となったばかりのころは、
-このような男性の気持ちやものの見方はほとんど知られてはいなかったが、
-この真実は周囲の家々の人の心に定着し、彼は隣人たちの娘の誰か
-の正当な所有物であると考えられるようになる。&lt;/p&gt;
-&lt;/blockquote&gt;
-      </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+              &lt;p&gt;Do you want to try our new tool yourself? A free 
+                demonstration version is available in our 
+                &lt;a href="download.html"&gt;download section&lt;/a&gt;&lt;/p&gt;
+            </code></pre></div></div><h4 class="small-head" id="G115-ex2">事例 2</h4><div class="example"><div class="textbody"><p>結婚の歴史についてのページには、ジェーン オースティンの小説「Pride and Prejudice」からの引用が事例として用いられている。本への参照は、<code>cite</code> 要素を用いてマークアップされ、引用部分自体は <code>blockquote</code> 要素を用いてマークアップされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;p&gt;Marriage was considered a logical step for a bachelor, 
+                as can be seen in the first chapter of the novel 
+                &lt;cite&gt;Pride and Prejudice&lt;/cite&gt;:&lt;/p&gt;
+                &lt;blockquote&gt;
+                &lt;p&gt;It is a truth universally acknowledged, that a single man in
+                possession of a good fortune, must be in want of a wife.&lt;/p&gt;
+                &lt;p&gt;However little known the feelings or views of such a man may
+                be on his first entering a neighbourhood, this truth is so well
+                fixed in the minds of the surrounding families, that he is considered
+                the rightful property of some one or other of their daughters.&lt;/p&gt;
+                &lt;/blockquote&gt;
+            </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G115-2
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G115-2.html">アクセシビリティ・サポーテッド（AS）情報: G115-2</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h4 class="small-head" id="G115-ex3">事例 3</h4><div class="example"><div class="textbody"><p>車の取扱説明書にエンジンのかけ方の説明がある。説明書きには、ギアがニュートラルになっていることを確かめるようにとの警告がある。筆者は、その警告は非常に重要で強調されるべきであると考えていたため、警告は <code>strong</code> 要素を用いてマークアップされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;h1&gt;エンジンの始動法&lt;/h1&gt;
-&lt;p&gt;エンジンをかける前に&lt;strong&gt;ギアがニュートラルになっていることを確認する&lt;/strong&gt;。
-次にキーを点火の位置まで回す。
-エンジンは始動する。&lt;/p&gt;
+              &lt;h1&gt;How to start the engine&lt;/h1&gt;
+                &lt;p&gt;Before starting the engine, &lt;strong&gt;make sure the gear 
+                is in neutral&lt;/strong&gt;. Next, turn the key in the ignition. 
+                The engine should start.&lt;/p&gt;
             </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G115-3
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G115-3.html">アクセシビリティ・サポーテッド（AS）情報: G115-3</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h4 class="small-head" id="G115-ex4">事例 4</h4><div class="example"><div class="textbody"><p>この事例では、テキストを強調するために <code>em</code> 及び <code>strong</code> 要素をどのように用いたらよいかを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p&gt;彼女が&lt;em&gt;本当に&lt;/em&gt; 言おうとしていたのは、
-「良いのではない、&lt;strong&gt;すばらしい&lt;/strong&gt;のだ!」&lt;/p&gt;
+              &lt;p&gt;What she &lt;em&gt;really&lt;/em&gt; meant to say was, 
+                "This is not ok, it is &lt;strong&gt;excellent&lt;/strong&gt;!"&lt;/p&gt;
             </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G115-4
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G115-4.html">アクセシビリティ・サポーテッド（AS）情報: G115-4</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h4 class="small-head" id="G115-ex5">事例 5: 強調及び背景色を用いて重要な情報を視覚的かつセマンティックに特定する。</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;style type="text/css"&gt;
-.vocab {
-background-color:cyan;
-font-style:normal;
-}
-&lt;/style&gt;
-.......
-&lt;p&gt;新出単語は強調され、背景色が空色になっている&lt;/p&gt;
-&lt;p&gt;その芝居への&lt;em class="vocab"&gt;痛烈な&lt;/em&gt;批評はやや行きすぎのようであった。 &lt;/p&gt;
+              &lt;style type="text/css"&gt;
+                .vocab {
+                background-color:cyan;
+                font-style:normal;
+                }
+                &lt;/style&gt;
+                ...
+                &lt;p&gt;New vocabulary words are emphasized and highlighted 
+                with a cyan background&lt;/p&gt;
+                &lt;p&gt;The &lt;em class="vocab"&gt;scathing&lt;/em&gt; review of the play 
+                seemed a bit too harsh... &lt;/p&gt;
             </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G115-5
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G115-5.html">アクセシビリティ・サポーテッド（AS）情報: G115-5</a>
@@ -917,9 +932,10 @@ G115-5
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">
 						達成基準 2.4.6 (見出し及びラベル)を理解する
 					</a></li></ul></li></ul><h3 id="G130-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ウェブコンテンツ内の見出しがコンテンツの内容を表すようなものにすることである。コンテンツの内容が分かるような見出しやタイトル (「<a href="G88.html">G88: ウェブページに対して、コンテンツの内容が分かるページタイトルを提供する</a>」参照) を用いることで、利用者に対してコンテンツの概要と構成を提示することができる。内容を表す見出しをつけることで、そのセクション (節) のウェブページ中の位置づけと、他のセクションとの関係を明確にすることができる。</p><p>内容を表す見出しがあれば、利用者は目的のコンテンツを見つけることや、ウェブページ内のどの部分を読んでいるのかを知ることが容易になる。</p><p>コンテンツ制作者は、最も重要な情報を各見出しの先頭に配置することを検討すると良いだろう。これによって、利用者は斜め読みをして必要な情報を見つけることが容易になる。特に、見出しから見出しへのナビゲーションが可能なブラウザや支援技術を用いている場合には有効である。</p></div><h3 class="small-head" id="G130-examples">事例</h3><h4 class="small-head" id="G130-ex1">事例 1</h4><div class="example"><div class="textbody"><p>災害対策を示す HTML ページで、以下のような見出しが使われている:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-  &lt;h1&gt;災害対策&lt;/h1&gt;
-  &lt;h2&gt;洪水対策&lt;/h2&gt;
-  &lt;h2&gt;火災対策&lt;/h2&gt;</code></pre></div><div class="textbody"><p>レベル 2 の見出しは、先頭に内容を識別できる情報が配置されていることに注意されたい。 (すなわち、「対策 : 洪水」、「対策: 火災」などとはなっていない。)</p></div></div><h4 class="small-head" id="G130-ex2">事例 2</h4><div class="example"><div class="textbody"><p>ある町について書かれた短い記事がある。この記事は、町の起こり、拡大、そして現状に関する詳しい説明を含んでいる。ウェブページのタイトルは「私たちの町の歴史」である。最初のセクションのタイトルは「我が町の始まり」で、2 番目のセクションのタイトルは「我が町の拡大」である。3 番目のセクションのタイトルは「今日の我が町」で、このセクションには、「町の人々」、「町の組織」、「町の施設」というサブセクションがある。</p></div></div><h3 id="G130-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G130-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G130-procedure">手順</h4><ol class="enumar"><li><p>ウェブページに見出しがある。</p></li><li><p>各見出しが、ウェブページ中の対応するセクションを表す内容になっている。</p></li></ol><h4 class="small-head" id="G130-results">期待される結果</h4><ul><li><p>2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G131" id="G131"> </a>G131: 説明的なラベルを提供する</h2><div class="applicability"><h3 id="G131-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-descriptive">
+              &lt;h1&gt;Disaster preparation&lt;/h1&gt;
+                &lt;h2&gt;Flood preparation&lt;/h2&gt;
+                &lt;h2&gt;Fire preparation&lt;/h2&gt;
+            </code></pre></div><div class="textbody"><p>レベル 2 の見出しは、先頭に内容を識別できる情報が配置されていることに注意されたい。 (すなわち、「対策 : 洪水」、「対策: 火災」などとはなっていない。)</p></div></div><h4 class="small-head" id="G130-ex2">事例 2</h4><div class="example"><div class="textbody"><p>ある町について書かれた短い記事がある。この記事は、町の起こり、拡大、そして現状に関する詳しい説明を含んでいる。ウェブページのタイトルは「私たちの町の歴史」である。最初のセクションのタイトルは「我が町の始まり」で、2 番目のセクションのタイトルは「我が町の拡大」である。3 番目のセクションのタイトルは「今日の我が町」で、このセクションには、「町の人々」、「町の組織」、「町の施設」というサブセクションがある。</p></div></div><h3 id="G130-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="G130-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G130-procedure">手順</h4><ol class="enumar"><li><p>ウェブページに見出しがある。</p></li><li><p>各見出しが、ウェブページ中の対応するセクションを表す内容になっている。</p></li></ol><h4 class="small-head" id="G130-results">期待される結果</h4><ul><li><p>2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G131" id="G131"> </a>G131: 説明的なラベルを提供する</h2><div class="applicability"><h3 id="G131-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-descriptive">
 				達成基準 2.4.6 (見出し及びラベル)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-descriptive">
 						クイックリファレンス 2.4.6 (見出し及びラベル)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">
@@ -1150,22 +1166,23 @@ G138
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html">
 						達成基準 2.4.10 (セクション見出し)を理解する
 					</a></li></ul></li></ul><h3 id="G141-description">解説</h3><div class="textbody"><p>この達成方法の目的は、それぞれのセクションにそれを識別できる見出しがついているようにすることである。達成基準 1.3.1 では見出しがプログラムで解釈可能な方法でマークアップされていることを要求している。</p><p>HTML においては、これは見出し要素 (h1, h2, h3, h4, h5, h6) によって実現されうる。これによりユーザエージェントは自動的にセクションの見出しを識別できる。他のウェブコンテンツ技術では、また異なる方法で見出しを識別する。ページ内の移動と文書の全体的構造の理解を助けるには、コンテンツ制作者は見出しを適切に入れ子に<span>するべきである</span> (たとえば h1 には h2 が続き、h2 には h2 か h3 が続き、h3 には h3 または h4 が続き……といったように)。</p></div><h3 class="small-head" id="G141-examples">事例</h3><h4 class="small-head" id="G141-ex1">事例 1: HTML のページを構造化するために用いられた見出し</h4><div class="example"><div class="textbody"><p>ある調理法を紹介するページでは、h1 要素により全体とタイトルを示し、h2 要素で大項目としてサラダ油による調理とバターによる調理を示し、h3 要素で油による調理の詳細なサブセクションを示している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-&lt;head&gt;
-&lt;title&gt;調理法&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;調理法&lt;/h1&gt;
-... ここにはテキストが入る ...
-&lt;h2&gt;サラダ油による調理&lt;/h2&gt;
-... セクションのテキストが入る ...
-&lt;h3&gt;ソテー&lt;/h3&gt;
-....
-&lt;h3&gt;油揚げ&lt;/h3&gt;
-&lt;h2&gt;バターによる調理&lt;/h2&gt;
-... セクションのテキストが入る ...
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div><h3 id="G141-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+              &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+                &lt;head&gt;
+                &lt;title&gt;Cooking techniques&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;Cooking techniques&lt;/h1&gt;
+                ... some text here ...
+                &lt;h2&gt;Cooking with oil&lt;/h2&gt;
+                ... text of the section ...
+                &lt;h3&gt;Sautéeing&lt;/h3&gt;
+                ...
+                &lt;h3&gt;Deep frying&lt;/h3&gt;
+                &lt;h2&gt;Cooking with butter&lt;/h2&gt;
+                ... text of the section ...
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code></pre></div></div><h3 id="G141-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</a>
                </p></li><li><p>
                   <a href="http://accessibility.psu.edu/headingshtml/">Heading Tags</a>
@@ -1216,56 +1233,53 @@ G138
 						クイックリファレンス 1.4.8 (視覚的提示)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">
 						達成基準 1.4.8 (視覚的提示)を理解する
-					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">達成基準 1.4.8</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">達成基準 1.4.8 を理解する</a>を参照すること。</p></div></li></ul><h3 id="G146-description">解説</h3><div class="textbody"><p>この達成方法の目的は、利用可能な水平方向のスペースに適合するレイアウト技術を使用することで水平方向のスクロールバーを導入することなくコンテンツの提示を可能にすることである。リキッドレイアウトは、テキストのサイズを変更するとともに、画面上にその領域を表示するために必要なリフローを行うようなレイアウト領域を定義する。したがって、厳格なレイアウトは異なるが、要素と読み上げ順序の関係は同じままである。これは、さまざまなデバイスやフォントサイズの好みの異なる利用者に適したデザインを作成するための効果的な方法である。</p><p>リキッドレイアウトの基本原則は次のとおりである。</p><ol class="enumar"><li><p>レイアウト領域を、テキストに応じてサイズが変わるユニットを利用して定義する。つまり、テキストの拡大縮小と同じように、レイアウト領域が広まったり狭まったりする。</p></li><li><p>レイアウト領域を、フロートボックスを隣り合わせで横に並べたように配置する。つまり、パラグラフの中の各単語とほぼ同じような方法で、必要に応じて行送りされる。</p></li></ol><p>複雑なリキッドレイアウトの実現には、入れ子にしたレイアウト領域、つまり大きな領域の中に部分ごとの複数の領域を入れ込む方法を利用する場合がある。単純なリキッドレイアウトであっても、テキストサイズの違いに関わらず見た目のよさを損なわないようにデザインを工夫する必要があるとはいえ、十分に計画したリキッドレイアウトは最も効果的なページデザインとなるだろう。</p></div><h3 class="small-head" id="G146-examples">事例</h3><h4 class="small-head" id="G146-ex1">事例 1: HTML と CSS での単純なリキッドレイアウト</h4><div class="example"><div class="textbody"><p>以下は、リキッドレイアウトの実現に HTML と CSS を利用した、かなり単純な事例である。3 つの列はテキストサイズが変わるのと同じようにサイズ調整される。もし全ての列を足した幅が、3 つの列で利用できる幅の合計を超えてしまった場合、最後の列は前の列の横に置かれるのではなく、下に送られる。列に含まれるテキストの中で最も長い単語が列の幅におさまっている限り、フォントサイズを大きくすることができ、ブラウザの横スクロールバーへの影響はない。この事例では列の幅指定にパーセントを利用しており、「float」プロパティを利用して列をフロート領域として定義している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-&lt;head&gt;
-&lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /&gt;
-&lt;title&gt;単純なリキッドレイアウトの例&lt;/title&gt;
-&lt;style type="text/css"&gt;
-
-.column
-	{
-	border-left: 1px solid green;
-	padding-left:1%;
-	float: left;
-	width: 32%;
-	}
-#footer
-	{
-	border-top: 1px solid green;
-	clear: both;
-	}
-&lt;/style&gt;
-
-&lt;/head&gt;
-&lt;body&gt;
-   &lt;h1&gt;WCAGの例&lt;/h1&gt;
-   &lt;h2&gt;3つの列に含まれるテキスト&lt;/h2&gt;
-      &lt;div title="1列目" class="column"&gt;
-        &lt;h3&gt;Block 1&lt;/h3&gt;
-        &lt;p&gt; この達成方法の目的は、表示領域幅の広狭に順応するレイアウト手法を
-            用いることで、横スクロールバーが挿入されることなしに、コンテンツ
-            を表示できるようにすることである。
-        &lt;/p&gt;
-      &lt;/div&gt;
-
-      &lt;div title="2列目" class="column"&gt;
-        &lt;h3&gt;Block 2&lt;/h3&gt;
-        &lt;p&gt; これはとても簡単な例であり、テキストサイズの変化に順応するページ
-            レイアウトである。
-        &lt;/p&gt;
-      &lt;/div&gt;
-
-      &lt;div title="3列目" class="column"&gt;
-      &lt;h3&gt;Block 3&lt;/h3&gt;
-        &lt;p&gt; より複雑なページレイアウトに関する達成方法については、以下の参考
-            リソースを参照のこと。
-        &lt;/p&gt;
-      &lt;/div&gt;
-
-      &lt;p id="footer"&gt;Footer text&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div><h3 id="G146-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+					</a></li></ul><div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">達成基準 1.4.8</a> に適合する他の達成方法と組み合わせなければならない。詳細については、 <a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html">達成基準 1.4.8 を理解する</a>を参照すること。</p></div></li></ul><h3 id="G146-description">解説</h3><div class="textbody"><p>この達成方法の目的は、利用可能な水平方向のスペースに適合するレイアウト技術を使用することで水平方向のスクロールバーを導入することなくコンテンツの提示を可能にすることである。リキッドレイアウトは、テキストのサイズを変更するとともに、画面上にその領域を表示するために必要なリフローを行うようなレイアウト領域を定義する。したがって、厳格なレイアウトは異なるが、要素と読み上げ順序の関係は同じままである。これは、さまざまなデバイスやフォントサイズの好みの異なる利用者に適したデザインを作成するための効果的な方法である。</p><p>リキッドレイアウトの基本原則は次のとおりである。</p><ol class="enumar"><li><p>レイアウト領域を、テキストに応じてサイズが変わるユニットを利用して定義する。つまり、テキストの拡大縮小と同じように、レイアウト領域が広まったり狭まったりする。</p></li><li><p>レイアウト領域を、フロートボックスを隣り合わせで横に並べたように配置する。つまり、パラグラフの中の各単語とほぼ同じような方法で、必要に応じて行送りされる。</p></li></ol><p>複雑なリキッドレイアウトの実現には、入れ子にしたレイアウト領域、つまり大きな領域の中に部分ごとの複数の領域を入れ込む方法を利用する場合がある。単純なリキッドレイアウトであっても、テキストサイズの違いに関わらず見た目のよさを損なわないようにデザインを工夫する必要があるとはいえ、十分に計画したリキッドレイアウトは最も効果的なページデザインとなるだろう。</p></div><h3 class="small-head" id="G146-examples">事例</h3><h4 class="small-head" id="G146-ex1">事例 1: HTML と CSS での単純なリキッドレイアウト</h4><div class="example"><div class="textbody"><p>以下は、リキッドレイアウトの実現に HTML と CSS を利用した、かなり単純な事例である。3 つの列はテキストサイズが変わるのと同じようにサイズ調整される。もし全ての列を足した幅が、3 つの列で利用できる幅の合計を超えてしまった場合、最後の列は前の列の横に置かれるのではなく、下に送られる。列に含まれるテキストの中で最も長い単語が列の幅におさまっている限り、フォントサイズを大きくすることができ、ブラウザの横スクロールバーへの影響はない。この事例では列の幅指定にパーセントを利用しており、「float」プロパティを利用して列をフロート領域として定義している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+                &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+                &lt;head&gt;
+                &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /&gt;
+                &lt;title&gt;Example of Basic Liquid Layout&lt;/title&gt;
+                &lt;style type="text/css"&gt;
+                .column
+                {
+                border-left: 1px solid green;
+                padding-left:1%;
+                float: left;
+                width: 32%;
+                }
+                #footer
+                {
+                border-top: 1px solid green;
+                clear: both;
+                }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;WCAG Example&lt;/h1&gt;
+                &lt;h2&gt;Text in Three Columns&lt;/h2&gt;
+                &lt;div title="column one" class="column"&gt;
+                &lt;h3&gt;Block 1&lt;/h3&gt;
+                &lt;p&gt; The objective of this technique is to be able to present content 
+                without introducing horizontal scroll bars by using layout 
+                techniques that adapt to the available horizontal space.
+                &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div title="column two" class="column"&gt;
+                &lt;h3&gt;Block 2&lt;/h3&gt;
+                &lt;p&gt; This is a very simple example of a page layout that adapts as the
+                text size changes.
+                &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div title="column three" class="column"&gt;
+                &lt;h3&gt;Block 3&lt;/h3&gt;
+                &lt;p&gt; For techniques that support more complex page layouts, see the
+                Resources listed below.
+                &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p id="footer"&gt;Footer text&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre></div></div><h3 id="G146-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                 	<a href="http://www.webreference.com/authoring/style/sheets/css_mastery2/index.html">CSS Mastery: Fixed-Width, Liquid, and Elastic Layouts and Faux Columns</a>
                 </p></li><li><p>
                   <a href="http://cssliquid.com/">Liquid Designs</a>
@@ -1485,11 +1499,11 @@ G138
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">
 						達成基準 1.2.1 (音声のみ及び映像のみ (収録済) )を理解する
 					</a></li></ul></li></ul><h3 id="G166-description">解説</h3><div class="textbody"><p>映像しか含まないコンテンツは、全盲の利用者及びロービジョンの利用者にとってはアクセシブルではない。そのため、これらの利用者が音声による代替コンテンツを利用できることが重要である。その一つの方法として、映像に含まれている情報を説明する音声トラックを提供する方法がある。この音声は、例えば MP3 のように、インターネット上で一般的に使われている音声フォーマットである必要がある。</p></div><h3 class="small-head" id="G166-examples">事例</h3><h4 class="small-head" id="G166-ex1">事例 1</h4><div class="example"><div class="textbody"><p>ウェブページに、宇宙船の火星着陸シーンの映像しか含まないプレゼンテーションへのリンクがある。そして、この映像へのリンクは、宇宙船の写真である。この映像を説明する音声ファイルへのリンクが、映像の近くにある。これは、次の HTML コード例のようになるだろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;a href="../video/marslanding.mp4"&gt;&lt;img src="../images/spaceship.jpg" 
-   alt="火星着陸 (映像のみ)" width="193" height="255"/&gt;&lt;/a&gt;
-&lt;br /&gt;
-&lt;a href="Mars_landing_audio.mp3"&gt;映像「火星着陸」の音声解説&lt;/a&gt;
-</code></pre></div></div><h3 id="G166-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G159">G159: 映像のみの時間依存メディアに対する代替コンテンツを提供する</a></li></ul></div><h3 id="G166-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G166-procedure">手順</h4><p>映像しか含まないウェブページに対して:</p><ol class="enumar"><li><p>映像しか含まないコンテンツの直前又は直後に、映像のコンテンツを説明する代替の音声コンテンツへのリンクがある。</p></li></ol><h4 class="small-head" id="G166-results">期待される結果</h4><ul><li><p>1. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G167" id="G167"> </a>G167: テキストフィールドの目的をラベル付けするために隣接するボタンを用いる</h2><div class="applicability"><h3 id="G167-applicability">適用 (対象)</h3><div class="textbody"><p>フォームをサポートするウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
+              &lt;a href="../video/marslanding.mp4"&gt;&lt;img src="../images/spaceship.jpg" 
+                alt="Mars landing, video-only" width="193" height="255"/&gt;&lt;/a&gt;
+                &lt;br /&gt;
+                &lt;a href="Mars_landing_audio.mp3"&gt;Audio description of "Mars Landing"&lt;/a&gt;
+            </code></pre></div></div><h3 id="G166-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G159">G159: 映像のみの時間依存メディアに対する代替コンテンツを提供する</a></li></ul></div><h3 id="G166-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G166-procedure">手順</h4><p>映像しか含まないウェブページに対して:</p><ol class="enumar"><li><p>映像しか含まないコンテンツの直前又は直後に、映像のコンテンツを説明する代替の音声コンテンツへのリンクがある。</p></li></ol><h4 class="small-head" id="G166-results">期待される結果</h4><ul><li><p>1. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G167" id="G167"> </a>G167: テキストフィールドの目的をラベル付けするために隣接するボタンを用いる</h2><div class="applicability"><h3 id="G167-applicability">適用 (対象)</h3><div class="textbody"><p>フォームをサポートするウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#minimize-error-cues">
 				達成基準 3.3.2 (ラベル又は説明)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#minimize-error-cues">
 						クイックリファレンス 3.3.2 (ラベル又は説明)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-cues.html">
@@ -1697,30 +1711,30 @@ G187
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li></ul><h3 id="G189-description">解説</h3><div class="textbody"><p>この達成方法の目的は、ウェブページの先頭近くに、そのウェブページの適合している代替版へ利用者を誘導するコントロールを提供することである。その代替版では、各リンクのリンクテキストだけで前後の文脈を見なくてもリンクの目的がわかるようになっている。</p><p>利用者の中には、リンクの文脈を見なくても、リンクの目的がわかるのでリンクテキストにその文脈も含んだリンクを好む利用者がいる。一方で、文脈の情報を各リンクに含めることでリンクテキストが冗長になるため、サイトの使い勝手が悪くなると感じる利用者もいる。WCAG ワーキンググループに支援技術の利用者から寄せられたフィードバックでも、どちらを好むかは意見が分かれている。この達成方法を用いることにより、利用者は、自分にとって最適なアプローチを選べるようになる。長くなる可能性があっても完全なリンクテキストを必要とする又はそれを好む利用者は、代替版を使用することができる。</p><p>代替版に変換するコントロールがリンクである場合、そのコントロールの目的が、常にリンクテキストだけでわかるようにしておかなければならない。</p><p>この達成方法は、現在のページ表示に対する代替版を提供する。この環境設定をクッキー又はサーバーサイドのユーザプロフィールに保存して、利用者が一度選択すれば、その後はサイトを訪れるごとに選択しなくても、自動的に利用者の好むバージョンが表示されるようにすることもでき、そうするのが望ましい場合もある。</p><div class="note"><p class="prefix"><em>注記: </em>この達成方法は、表示スタイルを変更して非適合コンテンツに対する<a href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef" class="gl-ref">適合した代替版</a>となるページを提供する達成方法と併せて使うことができる。詳しくは、<a href="https://waic.jp/docs/WCAG-TECHS/C29" class="tech-ref">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</a>  (CSS)
 			及び<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conforming-alt-versions-head" class="understanding-ref">適合している代替版</a>を参照のこと。</p></div></div><h3 class="small-head" id="G189-examples">事例</h3><h4 class="small-head" id="G189-ex1">事例 1: 別バージョンへのリンクを提供する</h4><div class="example"><div class="textbody"><p>ウェブページに、様々なフォーマットでダウンロードできる書籍のリストがある。このウェブページの代替版では、書籍のフォーマットだけ、又は書籍名とフォーマットのタイプが、リンクテキストとして使われている。</p><p>短いリンクテキストのバージョン:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-...
-&lt;h1&gt;書籍のダウンロード&lt;/h1&gt;
-  &lt;p&gt;&lt;a href="books-full-links.html" &gt;完全なリンクのバージョン&lt;/a&gt;&lt;/p&gt;
-
-  &lt;ul&gt;
-  &lt;li&gt;ウェブの歴史: 
-  &lt;a href="history.docx" class="hist"&gt;Word形式&lt;/a&gt;, 
-  &lt;a href="history.pdf" class="hist"&gt;PDF形式&lt;/a&gt;, 
-  &lt;a href="history.html" class="hist"&gt;HTML形式&lt;/a&gt;
-  &lt;/li&gt;
-  ...
-  &lt;/ul&gt;</code></pre></div><div class="textbody"><p>完全なリンクテキストを用いたバージョン</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-...
-&lt;h1&gt;書籍のダウンロード&lt;/h1&gt;
-  &lt;p&gt;&lt;a href="books-short-links.html" &gt;短いリンクのバージョン&lt;/a&gt;&lt;/p&gt;
-
-  &lt;ul&gt;
-  &lt;li&gt;ウェブの歴史:
-  &lt;a href="history.docx" class="hist"&gt;ウェブの歴史 (Word形式)&lt;/a&gt;, 
-  &lt;a href="history.pdf" class="hist"&gt;ウェブの歴史 (PDF形式)&lt;/a&gt;, 
-  &lt;a href="history.html" class="hist"&gt;ウェブの歴史 (HTML形式)&lt;/a&gt;
-  &lt;/li&gt;
-  ...
-  &lt;/ul&gt;</code></pre></div></div><h3 id="G189-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G91">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H24">H24: イメージマップの area 要素にテキストによる代替を提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C7">C7: リンクテキストの一部を非表示にするために、CSS を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR30">SCR30: リンクテキストを変更するために、スクリプトを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G136">G136: 不適合なウェブページの先頭に、適合している代替版を指すリンクを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C29">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</a></li></ul></div><h3 id="G189-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G189-procedure">手順</h4><ol class="enumar"><li><p>ウェブページの先頭近くに、リンクテキストを変換するコントロールがある。</p></li><li><p>コントロールを起動する。</p></li><li><p>変換されたウェブページでは、全てのリンクのリンクテキストがその目的を説明している。</p></li></ol><h4 class="small-head" id="G189-results">期待される結果</h4><ul><li><p>1. 及び 3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G190" id="G190"> </a>G190: 適合している代替版へのリンクを、不適合のオブジェクトに隣接して、又は関連付けて提供する</h2><div class="applicability"><h3 id="G190-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術。</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#cc1">
+              ...
+                &lt;h1&gt;Books for download&lt;/h1&gt;
+                &lt;p&gt;&lt;a href="books-full-links.html" &gt;Full link Version&lt;/a&gt;&lt;/p&gt;
+                &lt;ul&gt;
+                &lt;li&gt;The History of the Web: 
+                &lt;a href="history.docx" class="hist"&gt;Word&lt;/a&gt;, 
+                &lt;a href="history.pdf" class="hist"&gt;PDF&lt;/a&gt;, 
+                &lt;a href="history.html" class="hist"&gt;HTML&lt;/a&gt;
+                &lt;/li&gt;
+                ...
+                &lt;/ul&gt;
+            </code></pre></div><div class="textbody"><p>完全なリンクテキストを用いたバージョン:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              ...
+                &lt;h1&gt;Books for download&lt;/h1&gt;
+                &lt;p&gt;&lt;a href="books-short-links.html" &gt;Short link Version&lt;/a&gt;&lt;/p&gt;
+                &lt;ul&gt;
+                &lt;li&gt;The History of the Web: 
+                &lt;a href="history.docx" class="hist"&gt;The History of the Web(Word)&lt;/a&gt;, 
+                &lt;a href="history.pdf" class="hist"&gt;The History of the Web(PDF)&gt;/a&gt;, 
+                &lt;a href="history.html" class="hist"&gt;The History of the Web(HTML)&lt;/a&gt;
+                &lt;/li&gt;
+                ...
+                &lt;/ul&gt;
+            </code></pre></div></div><h3 id="G189-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G91">G91: リンクの目的を説明したリンクテキストを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H30">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H24">H24: イメージマップの area 要素にテキストによる代替を提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C7">C7: リンクテキストの一部を非表示にするために、CSS を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR30">SCR30: リンクテキストを変更するために、スクリプトを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G136">G136: 不適合なウェブページの先頭に、適合している代替版を指すリンクを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/C29">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</a></li></ul></div><h3 id="G189-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G189-procedure">手順</h4><ol class="enumar"><li><p>ウェブページの先頭近くに、リンクテキストを変換するコントロールがある。</p></li><li><p>コントロールを起動する。</p></li><li><p>変換されたウェブページでは、全てのリンクのリンクテキストがその目的を説明している。</p></li></ol><h4 class="small-head" id="G189-results">期待される結果</h4><ul><li><p>1. 及び 3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G190" id="G190"> </a>G190: 適合している代替版へのリンクを、不適合のオブジェクトに隣接して、又は関連付けて提供する</h2><div class="applicability"><h3 id="G190-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術。</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#cc1">
 					適合要件 1 (適合レベル)
 				</a></li></ul><h3 id="G190-description">解説</h3><div class="textbody"><p>ページにあるすべてのオブジェクトが適合しているのがより望ましいが、それが可能ではない状況もある。オブジェクト又はコンテンツのセクションが特定の障害のある利用者を想定していると、一方でそういった同じ属性が他の利用者にとってアクセシブルではなくなるという状況がありえる。また、ウェブページ上に適合しているオブジェクトを持たない他の理由も考えられる。オブジェクトが適合していない際には、適合している代替版へのリンクが線形化した読み上げ順序の中で適合していないオブジェクトに隣接している、又は適合していないコンテンツと関連付けられている。適合している代替版は、適合していないバージョンと同じ情報を伝達している。</p></div><h3 class="small-head" id="G190-examples">事例</h3><h4 class="small-head" id="G190-ex1">事例 1: 音楽の芸術的な品位を阻害する音声解説のあるラップ音楽映像</h4><div class="example"><div class="textbody"><p>「ヒップホップキッド」という名前のラップ音楽の映像には背景音がある。音声解説を歌の合い間に挿入することは、アーティストが伝えようとしているギターとドラムの最高潮の演奏を妨げるであろう。そのウェブページ上では、映像オブジェクトのすぐ次に「"ヒップホップキッド"の音声解説バージョン」というリンクがあり、映像の中で視覚的に何が起きているかという音声解説を含んでいるバージョンが提供されている。</p></div></div><h4 class="small-head" id="G190-ex2">事例 2: 歴史文書の画像</h4><div class="example"><div class="textbody"><p>独立宣言についてのウェブページに、文書の画像がある。テキストと背景の間のコントラストは不十分であり、手書きの文書は読むことが困難である。利用者をその文書の HTML バージョンへ誘導するリンクがある。</p></div></div><h4 class="small-head" id="G190-ex3">事例 3: アクセシビリティ サポーテッドではないアニメーション</h4><div class="example"><div class="textbody"><p>アクセシビリティ サポーテッドではないウェブコンテンツ技術を使用して制作されたインタラクティブなアニメーションがウェブページ上で表示されている。アニメーションの適合している代替版へのリンクは、適合していないコンテンツに隣接している。</p></div></div><h3 id="G190-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G136">G136: 不適合なウェブページの先頭に、適合している代替版を指すリンクを提供する</a></li></ul></div><h3 id="G190-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G190-procedure">手順</h4><p>ページ内の適合していないオブジェクトそれぞれに対して:</p><ol class="enumar"><li><p>ウェブページ上に適合していないオブジェクトがある。</p></li><li><p>線形化した読み上げ順序の中で適合していないオブジェクトの直後に、オブジェクトの適合しているバージョンへのリンクがある。</p></li><li><p>そのリンク先に適合しているバージョンがある。</p></li></ol><h4 class="small-head" id="G190-results">期待される結果</h4><ul><li><p>2. 及び 3. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G191" id="G191"> </a>G191: 点滅するコンテンツのないページを再読み込みするリンク、ボタン、又はその他のメカニズムを提供する</h2><div class="applicability"><h3 id="G191-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-pause">
@@ -1756,21 +1770,23 @@ G187
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
 						達成基準 1.1.1 (非テキストコンテンツ)を理解する
 					</a></li></ul></li></ul><h3 id="G196-description">解説</h3><div class="textbody"><p>この達成方法の目的は、隣り合う非テキストコンテンツのグループを用いて情報又は機能を提示する際に生じる不要な重複を回避することである。</p><p>ウェブページでは、画像のグループを提示して情報を伝えることがある。一緒に提示する、又は特定の組み合わせで提示することにより、こうしたグループは様々なタイプの情報を伝えることができる。例えば、2 つの星の画像のうち 1 つを白黒、もう 1 つをカラーで表示し、利用者評価を表すために使用することができる。また、塗りつぶした 3 つの星に続いて塗りつぶしていない 2 つの星を提示すれば、利用者評価が満点の 5 つ星のうちの 3 つ星であることを示すこともできる。</p><p>この達成方法を用いるには、コンテンツ制作者が、グループ全体と等価の目的を果たすテキストによる代替をそのグループにあるどれか一つのアイテムに関連付けて提供する。そして、グループ内のその他のアイテムは、支援技術が無視できるようにする。こうすることによって、利用者は、より効率的にそのグループの目的を理解して、グループ内の各アイテムにテキストによる代替が提供した際に生じる重複又は混乱を回避することができる。</p></div><h3 class="small-head" id="G196-examples">事例</h3><h4 class="small-head" id="G196-ex1">事例 1: HTML での評価システム</h4><div class="example"><div class="textbody"><p>次の例では、塗りつぶされた星 3 つと塗りつぶされていない星 2 つで評価が示されている。テキストによる代替は、5 つの画像それぞれに提供することもできるが、このコンテンツ制作者は、1 つ目の画像に「5 つ星のうちの 3 つ星」として画像のグループが伝えている評価を提供し、他の画像には空の代替テキストを用いている。 </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-   &lt;p&gt;評価:
-   &lt;img src="star1" alt="5つ星のうちの3つ星"&gt;
-   &lt;img src="star1" alt=""&gt;
-   &lt;img src="star1" alt=""&gt;
-   &lt;img src="star2" alt=""&gt;
-   &lt;img src="star2" alt=""&gt;
-  &lt;/p&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+              &lt;p&gt;Rating: 
+                &lt;img src="star1" alt="3 out of 5 stars"&gt;
+                &lt;img src="star1" alt=""&gt;
+                &lt;img src="star1" alt=""&gt;
+                &lt;img src="star2" alt=""&gt;
+                &lt;img src="star2" alt=""&gt;
+                &lt;/p&gt;
+            </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G196-1
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-1.html">アクセシビリティ・サポーテッド（AS）情報: G196-1</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
   </p></div></div><h4 class="small-head" id="G196-ex2">事例 2: XHTML で画像のグループによって作成されたボタン</h4><div class="example"><div class="textbody"><p>この例では、宣言している WCAG への適合レベルを示すために、各ボタンが複数の画像一式を用いている。このアプローチによって、支援技術は「画像 A、画像 A、画像 A」などのように読み上げるのを回避できるようになる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
- &lt;p&gt;適合レベル:&lt;/p&gt;
- &lt;button name="A"&gt;&lt;img src="a.png" alt="レベル A" /&gt;&lt;/button&gt; &lt;br /&gt;
- &lt;button name="AA"&gt;&lt;img src="a.png" alt="レベル AA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt; &lt;br /&gt;
- &lt;button name="AAA"&gt;&lt;img src="a.png" alt="レベル AAA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+              &lt;p&gt;Conformance Level:&lt;/p&gt;
+                &lt;button name="A"&gt;&lt;img src="a.png" alt="A" /&gt;&lt;/button&gt; &lt;br /&gt;
+                &lt;button name="AA"&gt;&lt;img src="a.png" alt="AA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt; &lt;br /&gt;
+                &lt;button name="AAA"&gt;&lt;img src="a.png" alt="AAA" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;img src="a.png" alt="" /&gt;&lt;/button&gt;
+            </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 G196-2
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/G196-2.html">アクセシビリティ・サポーテッド（AS）情報: G196-2</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
@@ -1813,11 +1829,12 @@ G196-2
             </p></div><h3 id="G200-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H83">H83: 利用者の要求に応じて新しいウィンドウを開くために target 属性を使用して、そのことをリンクテキストで明示する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR24">SCR24: 利用者の要求に応じて新しいウィンドウを開くために、プログレッシブエンハンスメントを使用する</a></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G201" id="G201"> </a>G201: 新しいウィンドウを開くときに、利用者へ事前に知らせる</h2><div class="applicability"><h3 id="G201-applicability">適用 (対象)</h3><div class="textbody"><p>新しいウィンドウを開くウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior.html">
 					ガイドライン 3.2  (予測可能)を理解する
 				</a></li></ul><h3 id="G201-description">解説</h3><div class="textbody"><p>この達成方法の目的は、自動的に新しいウィンドウまたはタブを開く前に利用者に知らせることである。リンクを動作させたときに自動的に新しいウィンドウを開くことは、もし事前にそのことを知らせていなければ、視覚的なコンテンツを知覚するのに困難を伴う利用者や認知障害のある利用者が混乱する原因となりうる。事前に知らせることによって、利用者は現在のウィンドウから離れるかどうかを判断することができるようになる。また、利用者が新しいウィンドウを開くことを選んだ場合にも、元のウィンドウに戻りやすくなる。さらに、ブラウザの [戻る] ボタンが使えないことや、直前まで自分がいた場所を見つけるためには元のウィンドウに戻らなければならないことを利用者が理解する手助けにもなる。</p></div><h3 class="small-head" id="G201-examples">事例</h3><h4 class="small-head" id="G201-ex1">事例 1: コントロールを説明するテキストで知らせる</h4><div class="example"><div class="textbody"><p>コントロールを説明する名前 (name) またはラベルを用いて、新しいウィンドウで開くことを知らせることができる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-       &lt;a href="knitting.html" target="_blank"&gt;編み物のすべて 
-              (新しいウィンドウで開く)&lt;/a&gt;</code></pre></div></div><h4 class="small-head" id="G201-ex2">事例 2: CSS を用いて、新しいウィンドウが開く前に知らせる</h4><div class="example"><div class="textbody"><p>以下のコードでは、CSS を用いて新しいウィンドウが開く前に知らせている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-       &lt;html&gt;
+              &lt;a href="knitting.html" target="_blank"&gt;All about Knitting 
+                (opens in new window)&lt;/a&gt;
+            </code></pre></div></div><h4 class="small-head" id="G201-ex2">事例 2: CSS を用いて、新しいウィンドウが開く前に知らせる</h4><div class="example"><div class="textbody"><p>以下のコードでは、CSS を用いて新しいウィンドウが開く前に知らせている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+              &lt;html&gt;
                 &lt;head&gt;
-                &lt;title&gt;ポップアップによる警告&lt;/title&gt;
+                &lt;title&gt;Pop-Up Warning&lt;/title&gt;
                 &lt;style type="text/css"&gt;
                 body {
                 margin-left:2em;
@@ -1856,13 +1873,15 @@ G196-2
                 &lt;/style&gt;
                 &lt;/head&gt;
                 &lt;body&gt;
-                &lt;h1&gt;ポップアップによる警告&lt;/h1&gt;
-                &lt;p&gt; これは &lt;a class="info" href="popup_advisory_technique.html"
-                 target="_blank"&gt;&lt;strong&gt;外部へのリンク&lt;/strong&gt;
-                 &lt;span&gt;新しいウィンドウで開く&lt;/span&gt;&lt;/a&gt;の事例です。
+                &lt;h1&gt;Pop-Up Warning&lt;/h1&gt;
+                &lt;p&gt; This is an example of an &lt;a class="info"
+                href="popup_advisory_technique.html" target="_blank"&gt;
+                &lt;strong&gt;External link&lt;/strong&gt;&lt;span&gt;Opens a new
+                window&lt;/span&gt;&lt;/a&gt;
                 &lt;/p&gt;
                 &lt;/body&gt;
-                &lt;/html&gt;</code></pre></div><div class="textbody"><p>参考: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html">CSS を用いて、新しいウィンドウが開く前に知らせるサンプル: 英語</a></p></div></div><h3 id="G201-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H83">H83: 利用者の要求に応じて新しいウィンドウを開くために target 属性を使用して、そのことをリンクテキストで明示する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR24">SCR24: 利用者の要求に応じて新しいウィンドウを開くために、プログレッシブエンハンスメントを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G200">G200: 必要なときにのみリンク先を新しいウィンドウ及びタブで開く</a></li></ul></div><h3 id="G201-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G201-procedure">手順</h4><p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して:</p><ol class="enumar"><li><p>このリンクは新しいウィンドウを開くことが支援技術 (音声ブラウザ/スクリーンリーダー) によって読み上げられる。</p></li><li><p>このリンクは新しいウィンドウを開くことが視覚的に示されている。</p></li></ol><h4 class="small-head" id="G201-results">期待される結果</h4><ul><li><p>1. および 2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G202" id="G202"> </a>G202: すべての機能に対してキーボード制御を確保する</h2><div class="applicability"><h3 id="G202-applicability">適用 (対象)</h3><div class="textbody"><p>インタフェース操作をサポートするウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
+                &lt;/html&gt;
+            </code></pre></div><div class="textbody"><p>参考: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html">CSS を用いて、新しいウィンドウが開く前に知らせるサンプル: 英語</a></p></div></div><h3 id="G201-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H83">H83: 利用者の要求に応じて新しいウィンドウを開くために target 属性を使用して、そのことをリンクテキストで明示する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR24">SCR24: 利用者の要求に応じて新しいウィンドウを開くために、プログレッシブエンハンスメントを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G200">G200: 必要なときにのみリンク先を新しいウィンドウ及びタブで開く</a></li></ul></div><h3 id="G201-tests">検証</h3><div class="textbody"><h4 class="small-head" id="G201-procedure">手順</h4><p>利用者の要求による状況の変化が生じた際に新しいウィンドウまたはタブで開くリンクに対して:</p><ol class="enumar"><li><p>このリンクは新しいウィンドウを開くことが支援技術 (音声ブラウザ/スクリーンリーダー) によって読み上げられる。</p></li><li><p>このリンクは新しいウィンドウを開くことが視覚的に示されている。</p></li></ol><h4 class="small-head" id="G201-results">期待される結果</h4><ul><li><p>1. および 2. を満たしている。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="G202" id="G202"> </a>G202: すべての機能に対してキーボード制御を確保する</h2><div class="applicability"><h3 id="G202-applicability">適用 (対象)</h3><div class="textbody"><p>インタフェース操作をサポートするウェブコンテンツ技術すべて</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#keyboard-operation-keyboard-operable">
 						クイックリファレンス 2.1.1 (キーボード)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">
@@ -1894,7 +1913,7 @@ G196-2
 						クイックリファレンス 1.4.1 (色の使用)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">
 						達成基準 1.4.1 (色の使用)を理解する
-					</a></li></ul></li></ul><h3 id="G205-description">解説</h3><div class="textbody"><p>この達成方法の目的は、情報を伝えるために、色と、テキスト又は文字による手がかりを併用することである。ほとんどの利用者は色の差を用いた情報を素早く認識できる。色を識別できない利用者は、視覚的又は聴覚的にテキストによる手がかりを認識する。点字ディスプレイや、他の触覚インタフェースを使っている人々は触ることでテキストによる手がかりを見つけられる。</p><p>テキストによる手がかりは、フォームコントロールの、プログラムで解釈可能な名前の一部に含まれていなければならない。</p></div><h3 class="small-head" id="G205-examples">事例</h3><h4 class="small-head" id="G205-ex1">事例 1: HTML フォームの必須項目</h4><div class="example"><div class="textbody"><p>オンラインフォームで「必須項目は赤で示され、(必須) とマーク付けされている。」と指示されている。「(必須)」という手がかりが <code>label</code> 要素の中に含まれる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="lastname" class="required"&gt;名前 (必須): &lt;/label&gt;
+					</a></li></ul></li></ul><h3 id="G205-description">解説</h3><div class="textbody"><p>この達成方法の目的は、情報を伝えるために、色と、テキスト又は文字による手がかりを併用することである。ほとんどの利用者は色の差を用いた情報を素早く認識できる。色を識別できない利用者は、視覚的又は聴覚的にテキストによる手がかりを認識する。点字ディスプレイや、他の触覚インタフェースを使っている人々は触ることでテキストによる手がかりを見つけられる。</p><p>テキストによる手がかりは、フォームコントロールの、プログラムで解釈可能な名前の一部に含まれていなければならない。</p></div><h3 class="small-head" id="G205-examples">事例</h3><h4 class="small-head" id="G205-ex1">事例 1: HTML フォームの必須項目</h4><div class="example"><div class="textbody"><p>オンラインフォームで「必須項目は赤で示され、(必須) とマーク付けされている。」と指示されている。「(必須)」という手がかりが <code>label</code> 要素の中に含まれる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="lastname" class="required"&gt;Last name (required): &lt;/label&gt;
 &lt;input id="lastname" type="text" size="25" value=""/&gt;
 &lt;style type="text/css"&gt;
   .required {

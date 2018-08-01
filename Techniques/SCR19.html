@@ -21,17 +21,17 @@
 &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt; 
   &lt;head&gt; 
     &lt;meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /&gt; 
-    &lt;title&gt;動的なセレクトメニュー&lt;/title&gt; 
+    &lt;title&gt;Dynamic Select Statements&lt;/title&gt; 
 
 &lt;script type="text/javascript"&gt;
  //&lt;![CDATA[ 
  // 国の選択項目のリストに現れるのと同じ順の選択可能な国の配列 
  var countryLists = new Array(4) 
- countryLists["empty"] = ["国を選択してください"]; 
- countryLists["North America"] = ["カナダ", "アメリカ合衆国", "メキシコ"]; 
- countryLists["South America"] = ["ブラジル", "アルゼンチン", "チリ", "エクアドル"]; 
- countryLists["Asia"] = ["ロシア", "中国", "日本"]; 
- countryLists["Europe"]= ["イギリス", "フランス", "スペイン", "ドイツ"]; 
+ countryLists["empty"] = ["Select a Country"]; 
+ countryLists["North America"] = ["Canada", "United States", "Mexico"]; 
+ countryLists["South America"] = ["Brazil", "Argentina", "Chile", "Ecuador"]; 
+ countryLists["Asia"] = ["Russia", "China", "Japan"]; 
+ countryLists["Europe"]= ["Britain", "France", "Spain", "Germany"]; 
  /* CountryChange() はselect要素のonchangeイベントから呼び出される。 
  * param selectObj - onchangeイベントで生成されるselectオブジェクト。
  */ 
@@ -68,24 +68,20 @@
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;noscript&gt;このページはJavaScriptが有効で、関数が正しく動作可能である必要があります。&lt;/noscript&gt;
-
-  &lt;h1&gt;動的なセレクトメニュー&lt;/h1&gt;
-  &lt;label for="continent"&gt;大陸を選択&lt;/label&gt;
+  &lt;noscript&gt;This page requires JavaScript be available and enabled to function properly&lt;/noscript&gt;
+  &lt;h1&gt;Dynamic Select Statements&lt;/h1&gt;
+  &lt;label for="continent"&gt;Select Continent&lt;/label&gt;
   &lt;select id="continent" onchange="countryChange(this);"&gt;
-    &lt;option value="empty"&gt;大陸を選択してください&lt;/option&gt;
-
-    &lt;option value="North America"&gt;北米&lt;/option&gt;
-    &lt;option value="South America"&gt;南米&lt;/option&gt;
-    &lt;option value="Asia"&gt;アジア&lt;/option&gt;
-    &lt;option value="Europe"&gt;ヨーロッパ&lt;/option&gt;
-
+    &lt;option value="empty"&gt;Select a Continent&lt;/option&gt;
+    &lt;option value="North America"&gt;North America&lt;/option&gt;
+    &lt;option value="South America"&gt;South America&lt;/option&gt;
+    &lt;option value="Asia"&gt;Asia&lt;/option&gt;
+    &lt;option value="Europe"&gt;Europe&lt;/option&gt;
   &lt;/select&gt;
   &lt;br/&gt;
-  &lt;label for="country"&gt;国を選択&lt;/label&gt;
+  &lt;label for="country"&gt;Select a country&lt;/label&gt;
   &lt;select id="country"&gt;
-    &lt;option value="0"&gt;国を選択してください&lt;/option&gt;
-
+    &lt;option value="0"&gt;Select a country&lt;/option&gt;
   &lt;/select&gt;
 &lt;/body&gt;
  &lt;/html&gt;</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR19/dynselect.html">動的なセレクトメニュー</a>

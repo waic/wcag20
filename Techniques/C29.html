@@ -6,35 +6,35 @@
         達成方法 C28</a></li><li><a title="C30: テキストを文字画像に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する" href="C30.html"><strong>次: </strong>
         達成方法 C30</a></li></ul><div class="navtoc"><p>このページのコンテンツ:</p><ul id="navbar"><li><a href="#C29-disclaimer">達成方法に関する重要な情報</a></li><li><a href="#C29-applicability">適用 (対象)</a></li><li><a href="#C29-description">解説</a></li><li><a href="#C29-examples">事例</a></li><li><a href="#C29-resources">参考リソース</a></li><li><a href="#C29-related-techs">関連する達成方法</a></li><li><a href="#C29-tests">検証</a></li></ul></div><div class="skiptarget"><a id="maincontent">-</a></div> <h1><a name="C29" id="C29"> </a>C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</h1><div id="C29-disclaimer"><h2>達成方法に関する重要な情報</h2><p>これらの達成方法 (参考) の使用法及び、それらが WCAG 2.0 達成基準 (規定) とどのように関係するかに関する重要な情報については、<a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html">WCAG 達成基準の達成方法を理解する</a>を参照のこと。適用 (対象) セクションは、その達成方法の範囲について説明しており、特定の技術に関する達成方法があるからといって、WCAG 2.0 を満たすコンテンツを作成する際に、常にその技術が使用可能であるわけではない。</p></div><div class="applicability"><h2 id="C29-applicability">適用 (対象)</h2><div class="textbody"><p>クライアントサイド又はサーバーサイドのスクリプトとともに使用される CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#cc1">
 					適合要件 1 (適合レベル)
-				</a></li></ul><h2 id="C29-description">解説</h2><div class="textbody"><p>ウェブページのデフォルトの表示が部分的に達成基準を満たさない場合、「適合要件」の条項 (適合要件 1) にある「代替版」を用意することで必要条件を満たすことができる。いくつかの必要条件を満たすことが目的なら、ページ全体をそのレベルに適合するような表示に変更できるスタイルスイッチャーをページ上のリンク又はコントロールによって呼び出すようにすれば、コンテンツ制作者は同じ情報の複数バージョンを作らなくても済む。</p><p>この達成方法の目的は、ウェブページの適合している代替版を提供するために、スクリプトと組み合わせて CSS を使う方法を示すことである。この達成方法では、コンテンツの表示を制御するために使用されている CSS を変更するコントロールを提供することで、コンテンツ制作者はコンテンツの代替表示を提供する。ウェブページ内で提供されるコントロールは、そのレベルで要求される達成基準を満たすことができるような表示方法を利用者が選択及び変更することを可能にする。これによって、以下のような状況において、利用者が異なる表示方法を選択できるようになる:</p><ul><li><p>パソコンの知識や権限がないことが原因で、利用者はブラウザや OS の設定を調整できないかもしれない</p></li><li><p>テキストが、ブラウザや OS の設定では対処できない方法で提供されている (テキストが画像の中に書き込まれているなど)</p></li><li><p>コンテンツのデフォルトの表示では、一部の利用者に対して十分なコントラストがない</p></li></ul><p>この達成方法で達成させるには、以下の 3 項目を満たしていなければならない。</p><ol class="enumar"><li><p>オリジナルのページのリンクまたはコントロールは、それ自身が達成基準を満たしていなければならない。たとえば、もしスタイルスイッチャーがフォントサイズを大きくするために提供されているのに、そのコントロールが小さいフォントで書かれていたら、利用者はそのコントロールを作動させて代わりの表示方法で見ることができないかもしれない。</p></li><li><p>新しいページは、オリジナルのページと同じすべての情報と機能を含んでいなければならない。</p></li><li><p>新しいページは、希望する適合レベルのすべての達成基準に適合しなければならない。たとえば、ひとつの要求は満たすが、それを使うと別の要求に適合しなくなってしまうような代替スタイルシートは使用できない。</p></li></ol><p>スタイルスイッチャーを使う場合は、以下の課題と制限について検討することが重要である:</p><ul><li><p>利用者が行うことのできる変更の数や形式は、ウェブページのコンテンツ制作者によって制御される範囲に限定される。できる限り多くの利用者のニーズに対応できるようにするために、バラエティ豊かな表示と設定項目が提供されるべきである。しかしながら、コンテンツ制作者は、利用者に多くのオプションを提供することに起因する、利用者にとっての設定可能な項目と複雑さの相互作用について熟考することも重要である。</p></li><li><p>あるページから別のページに移動しても利用者の設定を保持しておくには、利用者の機器にクッキーで保存したり (詳細はリソースのセクションを参照)、ウェブサーバーに保存されるプロファイルにクエリー文字列として渡して格納するなどの方法で実現できる場合がある。</p></li><li><p>スタイルスイッチャーを実装するための技術的手法は、利用者の環境においていくつかの技術が利用可能であることを前提としている (たとえば、多くのクライアントサイドソリューションは、JavaScript と CSS の両方が利用可能であることを必要とする)。これらのウェブコンテンツ技術が適合のために当てにできる場合を除き、クライアントサイドのサポートとウェブコンテンツ技術の利用可能性が保証されない場合には、コンテンツ制作者はサーバーサイドのウェブコンテンツ技術を使うことを検討すべきである。その代案としては、これらのウェブコンテンツ技術のサポートを適合のために当てにできない場合に、使用されているいくつかのウェブコンテンツ技術が有効でなくてもコンテンツが確実に適切な表現に変換されるような達成方法を使うことが、より良いページにするための効果的な方法となる。</p></li></ul></div><h2 class="small-head" id="C29-examples">事例</h2><h3 class="small-head" id="C29-ex1">事例 1: 異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</h3><div class="example"><div class="textbody"><p>この例では、文字色と背景色を変更するリンクを JavaScript で提供する。そのリンクは、利用者の環境で JavaScript がサポートされており、かつ有効な場合にのみ挿入されるようにすべきである。これは、そのリンク自身を挿入するためにスクリプトを使う (つまり JavaScript がサポートされており、かつ有効な場合にのみリンクが表示される) ことで実現できる。</p><p>以下のコードは、JavaScript に依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するための JavaScript である。</p><p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>XHTML (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>In &lt;head&gt; section:
-&lt;head&gt;〜&lt;/head&gt;内:
+				</a></li></ul><h2 id="C29-description">解説</h2><div class="textbody"><p>ウェブページのデフォルトの表示が部分的に達成基準を満たさない場合、「適合要件」の条項 (適合要件 1) にある「代替版」を用意することで必要条件を満たすことができる。いくつかの必要条件を満たすことが目的なら、ページ全体をそのレベルに適合するような表示に変更できるスタイルスイッチャーをページ上のリンク又はコントロールによって呼び出すようにすれば、コンテンツ制作者は同じ情報の複数バージョンを作らなくても済む。</p><p>この達成方法の目的は、ウェブページの適合している代替版を提供するために、スクリプトと組み合わせて CSS を使う方法を示すことである。この達成方法では、コンテンツの表示を制御するために使用されている CSS を変更するコントロールを提供することで、コンテンツ制作者はコンテンツの代替表示を提供する。ウェブページ内で提供されるコントロールは、そのレベルで要求される達成基準を満たすことができるような表示方法を利用者が選択及び変更することを可能にする。これによって、以下のような状況において、利用者が異なる表示方法を選択できるようになる:</p><ul><li><p>パソコンの知識や権限がないことが原因で、利用者はブラウザや OS の設定を調整できないかもしれない</p></li><li><p>テキストが、ブラウザや OS の設定では対処できない方法で提供されている (テキストが画像の中に書き込まれているなど)</p></li><li><p>コンテンツのデフォルトの表示では、一部の利用者に対して十分なコントラストがない</p></li></ul><p>この達成方法で達成させるには、以下の 3 項目を満たしていなければならない。</p><ol class="enumar"><li><p>オリジナルのページのリンクまたはコントロールは、それ自身が達成基準を満たしていなければならない。たとえば、もしスタイルスイッチャーがフォントサイズを大きくするために提供されているのに、そのコントロールが小さいフォントで書かれていたら、利用者はそのコントロールを作動させて代わりの表示方法で見ることができないかもしれない。</p></li><li><p>新しいページは、オリジナルのページと同じすべての情報と機能を含んでいなければならない。</p></li><li><p>新しいページは、希望する適合レベルのすべての達成基準に適合しなければならない。たとえば、ひとつの要求は満たすが、それを使うと別の要求に適合しなくなってしまうような代替スタイルシートは使用できない。</p></li></ol><p>スタイルスイッチャーを使う場合は、以下の課題と制限について検討することが重要である:</p><ul><li><p>利用者が行うことのできる変更の数や形式は、ウェブページのコンテンツ制作者によって制御される範囲に限定される。できる限り多くの利用者のニーズに対応できるようにするために、バラエティ豊かな表示と設定項目が提供されるべきである。しかしながら、コンテンツ制作者は、利用者に多くのオプションを提供することに起因する、利用者にとっての設定可能な項目と複雑さの相互作用について熟考することも重要である。</p></li><li><p>あるページから別のページに移動しても利用者の設定を保持しておくには、利用者の機器にクッキーで保存したり (詳細はリソースのセクションを参照)、ウェブサーバーに保存されるプロファイルにクエリー文字列として渡して格納するなどの方法で実現できる場合がある。</p></li><li><p>スタイルスイッチャーを実装するための技術的手法は、利用者の環境においていくつかの技術が利用可能であることを前提としている (たとえば、多くのクライアントサイドソリューションは、JavaScript と CSS の両方が利用可能であることを必要とする)。これらのウェブコンテンツ技術が適合のために当てにできる場合を除き、クライアントサイドのサポートとウェブコンテンツ技術の利用可能性が保証されない場合には、コンテンツ制作者はサーバーサイドのウェブコンテンツ技術を使うことを検討すべきである。その代案としては、これらのウェブコンテンツ技術のサポートを適合のために当てにできない場合に、使用されているいくつかのウェブコンテンツ技術が有効でなくてもコンテンツが確実に適切な表現に変換されるような達成方法を使うことが、より良いページにするための効果的な方法となる。</p></li></ul></div><h2 class="small-head" id="C29-examples">事例</h2><h3 class="small-head" id="C29-ex1">事例 1: 異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</h3><div class="example"><div class="textbody"><p>この例では、文字色と背景色を変更するリンクを JavaScript で提供する。そのリンクは、利用者の環境で JavaScript がサポートされており、かつ有効な場合にのみ挿入されるようにすべきである。これは、そのリンク自身を挿入するためにスクリプトを使う (つまり JavaScript がサポートされており、かつ有効な場合にのみリンクが表示される) ことで実現できる。</p><p>以下のコードは、JavaScript に依存した色を変更するリンクとウェブページのコンテンツの一部、及びそこに適用されるスタイルシート、そして色を変更するリンクが選択された時に使われるスタイルシートを変更するための JavaScript である。</p><p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>XHTML (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In &lt;head&gt; section:
 
   &lt;link href="main.css" rel="stylesheet" type="text/css" /&gt;
   &lt;link id="currentCSS" href="defaultColors.css" rel="stylesheet" type="text/css" /&gt;
 
 In &lt;body&gt; section:
-&lt;body&gt;〜&lt;/body&gt;内:
 
 &lt;div id="colorswitch"&gt;
 &lt;p&gt;Change colors:&lt;/p&gt;
-&lt;p&gt;色の変更:&lt;/p&gt;
   &lt;ul class="inline"&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors1.css');return false;" 
-      id="altColors1"&gt;文字:紺 背景:白&lt;/a&gt;&lt;/li&gt;
+      id="altColors1"&gt;dark blue on white&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors2.css');return false;" 
-      id="altColors2"&gt;文字:黄 背景:黒&lt;/a&gt;&lt;/li&gt;
+      id="altColors2"&gt;yellow on black&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors3.css');return false;" 
-      id="altColors3"&gt;文字:黒 背景:黄&lt;/a&gt;&lt;/li&gt;
+      id="altColors3"&gt;black on pale yellow&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('altColors4.css');return false;" 
-      id="altColors4"&gt;文字:黒 背景:白&lt;/a&gt;&lt;/li&gt;
+      id="altColors4"&gt;black on white&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#" onClick="javascript:changeColors('defaultColors.css');return false;" 
-      id="default"&gt;デフォルトに戻す&lt;/a&gt;&lt;/li&gt;
+      id="default"&gt;Reset to default&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id="mainbody"&gt;
-  &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
-  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>main.css内:
+  &lt;h1&gt;Conference report&lt;/h1&gt;
+  &lt;p&gt;Last week's conference presented an impressive line-up of speakers...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In main.css:
 
 body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
 
@@ -54,8 +54,7 @@ body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
     font-weight:bold;
 }
 
-
-defaultColors.css内:
+In defaultColors.css:
 
 body, p { 
     color:#000000; 
@@ -67,79 +66,78 @@ h1, h2, h3 {
         background-color:#FFFFFF;
 }
 
-
-altColors1.css内:
+In altColors1.css:
 
 body, h1, h2, h3, p, a { 
     color:#000066; 
     background-color:#FFFFFF; 
 }
 
-
-altColors2.css内:
+In altColors2.css:
 
 body, h1, h2, h3, p, a { 
     color:#FFFF33; 
        background-color:#000000; 
 }
 
-
-altColors3.css内:
+In altColors3.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFF99; 
 }
 
-
-altColors4.css内:
+In altColors4.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFFFF; 
-}</code></pre></div><div class="textbody"><p>JavaScript (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColors (newCSS)
+}
+  </code></pre></div><div class="textbody"><p>JavaScript (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>function changeColors (newCSS)
 {
   document.getElementById('currentCSS').href = newCSS; 
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex1/index.html">異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</a></p></div></div><h3 class="small-head" id="C29-ex2">事例 2: CSS プロパティを変更するためにクライアントサイドの JavaScript を使用する</h3><div class="example"><div class="textbody"><p>この例はコンテンツの一部分を単純に変更するもので、複雑なサイトやページに対してはあまり実用的なものではないかもしれない。この例では、特定のコンテンツを強調表示するための背景として (あらかじめ用意された選択肢から) 利用者が選択した色を反映させるために、クラス名を変更する目的でクライアントサイドの JavaScript を使用している。</p><div class="note"><p class="prefix"><em>注記: </em>以下のコードには、達成方法を理解しやすくする目的で、XHTML コード内から JavaScript を呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScript を組み込むためのその時点でのベストプラクティスを採用することが推奨される (アンオブトルーシブ JavaScript とプログレッシブエンハンスメントについての詳細はリソースを参照)。</p></div><p>XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h1&gt;製品の比較&lt;/h1&gt;
-&lt;p&gt;比較のためにあなたが選択した製品は以下のとおりです。 
-各製品の相違点は強調表示され、イタリック体で表示されています。&lt;/p&gt;
-&lt;p class="inlinePara"&gt;強調表示の色を変更: &lt;/p&gt;
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex1/index.html">異なる外部スタイルシートファイルを適用するために JavaScript のコントロールを使う</a></p></div></div><h3 class="small-head" id="C29-ex2">事例 2: CSS プロパティを変更するためにクライアントサイドの JavaScript を使用する</h3><div class="example"><div class="textbody"><p>この例はコンテンツの一部分を単純に変更するもので、複雑なサイトやページに対してはあまり実用的なものではないかもしれない。この例では、特定のコンテンツを強調表示するための背景として (あらかじめ用意された選択肢から) 利用者が選択した色を反映させるために、クラス名を変更する目的でクライアントサイドの JavaScript を使用している。</p><div class="note"><p class="prefix"><em>注記: </em>以下のコードには、達成方法を理解しやすくする目的で、XHTML コード内から JavaScript を呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScript を組み込むためのその時点でのベストプラクティスを採用することが推奨される (アンオブトルーシブ JavaScript とプログレッシブエンハンスメントについての詳細はリソースを参照)。</p></div><p>XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;h1&gt;Product comparison&lt;/h1&gt;
+&lt;p&gt;The products you selected to compare are listed below. 
+Any differences between the products are highlighted and italicized.&lt;/p&gt;
+&lt;p class="inlinePara"&gt;Change hightlight color: &lt;/p&gt;
 &lt;ul class="inline"&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightYellow');return false;" 
-    class="hghltLightYellow"&gt;薄い黄色&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightYellow"&gt;light yellow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightYellow');return false;" 
-    class="hghltBrightYellow"&gt;濃い黄色&lt;/a&gt;&lt;/li&gt;
+    class="hghltBrightYellow"&gt;bright yellow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightBlue');return false;" 
-    class="hghltLightBlue"&gt;水色&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightBlue"&gt;light blue&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltBrightBlue');return false;" 
-    class="hghltBrightBlue"&gt;青&lt;/a&gt;&lt;/li&gt;
+    class="hghltBrightBlue"&gt;bright blue&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltLightRed');return false;" 
-    class="hghltLightRed"&gt;ピンク&lt;/a&gt;&lt;/li&gt;
+    class="hghltLightRed"&gt;light red&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" onClick="changeColor('hghltDrkRed');return false;" 
-    class="hghltDrkRed"&gt;茶色&lt;/a&gt;&lt;/li&gt;
+    class="hghltDrkRed"&gt;dark red&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table width="400" border="1"&gt;
   &lt;tr&gt;
     &lt;td&gt; &lt;/td&gt;
-    &lt;th scope="col"&gt;製品1&lt;/th&gt;
-    &lt;th scope="col"&gt;製品2&lt;/th&gt;
+    &lt;th scope="col"&gt;Product 1&lt;/th&gt;
+    &lt;th scope="col"&gt;Product 2&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目1&lt;/th&gt;
-    &lt;td&gt;あり&lt;/td&gt;
-    &lt;td&gt;あり&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 1&lt;/th&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目2&lt;/th&gt;
-    &lt;td class="hghltLightYellow"&gt;あり&lt;/td&gt;
-    &lt;td class="hghltLightYellow"&gt;なし&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 2&lt;/th&gt;
+    &lt;td class="hghltLightYellow"&gt;Yes&lt;/td&gt;
+    &lt;td class="hghltLightYellow"&gt;No&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th scope="row"&gt;比較項目3&lt;/th&gt;
-    &lt;td&gt;対応&lt;/td&gt;
-    &lt;td&gt;対応&lt;/td&gt;
+    &lt;th scope="row"&gt;Aspect 3&lt;/th&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
+    &lt;td&gt;Yes&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>body { color:#000000; background-color:#FFFFFF; }
+&lt;/table&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>body { color:#000000; background-color:#FFFFFF; }
 
 .hghltLightYellow { color: #000000; background-color: #FFFF99; font-style:oblique; }
 .hghltBrightYellow { color: #000000; background-color: #FFFF00; font-style:oblique; }
@@ -165,7 +163,8 @@ body, h1, h2, h3, p, a {
   {
     if (els[i].className.indexOf("hghlt") == 0) { els[i].className = hghltColor; }
   }
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>PHPの冒頭において:
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+At the beginning of the PHP page:
 
 &lt;?php
 $thestyle = $_GET['set'];
@@ -180,41 +179,44 @@ else
 ?&gt;
 
 
-&lt;head&gt;〜&lt;/head&gt;内:
+In the &lt;head&gt; section:
 
    &lt;link rel="stylesheet" type="text/css" media="screen" href="&lt;?php echo($thestyle);?&gt;.css" &gt;
 
 
-&lt;body&gt;〜&lt;/body&gt;内:
+In &lt;body&gt; section:
 
 &lt;?php
 if ($thestyle == "style1") {
-	echo "&lt;a href=\"index.php?set=style1\"&gt;スタイルシート2に変更&lt;/a&gt;";
+	echo "&lt;a href=\"index.php?set=style1\"&gt;Switch to Style Sheet Two&lt;/a&gt;";
 	}
 else {
-	echo "&lt;a href=\"index.php?set=style2\"&gt;スタイルシート1に変更&lt;/a&gt;";
+	echo "&lt;a href=\"index.php?set=style2\"&gt;Switch to Style Sheet One&lt;/a&gt;";
 	}
 ?&gt;
 
 &lt;div id="mainbody"&gt;
-  &lt;h1&gt;カンファレンスレポート&lt;/h1&gt;
-  &lt;p&gt;先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...&lt;/p&gt;
-&lt;/div&gt;</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>style1.css内:
+  &lt;h1&gt;Conference report&lt;/h1&gt;
+  &lt;p&gt;Last week's conference presented an impressive line-up of speakers...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><div class="textbody"><p>CSS (抜粋):</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+In style1.css:
 
   body, p { color:#000000; background-color:#FFFFFF; }
   h1, h2, h3 {color:#990000; background-color:#FFFFFF; }
 
+In style2.css:
 
-style2.css内:
-
-  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }
+</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+ &lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
  %&gt;&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
  &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;
  &lt;head&gt;
    &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type" /&gt;
-   &lt;title&gt;スタイルを変更する&lt;/title&gt;
+   &lt;title&gt;Change Style&lt;/title&gt;
    &lt;%
      String fStyle = "";
      String styleName = "style";
@@ -222,7 +224,7 @@ style2.css内:
      Cookie[] cookies = request.getCookies();
  
      // get style from post request parameters
-     if (request.getMethod().equals("POST") &amp;amp;&amp;amp; request.getParameter("styleSelect") != null) {
+     if (request.getMethod().equals("POST") &amp;&amp; request.getParameter("styleSelect") != null) {
        fStyle = request.getParameter("styleSelect");
        // code that validates user input (security) not shown
        
@@ -253,17 +255,18 @@ style2.css内:
  &lt;/head&gt;
  &lt;body id="home"&gt;
    &lt;form action="_styleSwitch.jsp" method="post" id="styleswitchform" name="styleswitchform"&gt;
-     &lt;p&gt;&lt;label for="styleSelect"&gt;スタイルを選択: &lt;/label&gt;
+     &lt;p&gt;&lt;label for="styleSelect"&gt;Select style: &lt;/label&gt;
        &lt;select id="styleSelect" name="styleSelect"&gt;
-         &lt;option value="default"&gt;デフォルト (緑)&lt;/option&gt;
-         &lt;option value="wonb"&gt;黒背景に白い文字&lt;/option&gt;
-         &lt;option value="bonw"&gt;白背景に黒い文字&lt;/option&gt;
+         &lt;option value="default"&gt;Default (shades of green)&lt;/option&gt;
+         &lt;option value="wonb"&gt;White on black&lt;/option&gt;
+         &lt;option value="bonw"&gt;Black on white&lt;/option&gt;
        &lt;/select&gt;
-       &lt;input type="submit" value="スタイルを変更" /&gt;
+       &lt;input type="submit" value="Change Style" /&gt;
      &lt;/p&gt;
    &lt;/form&gt;
  &lt;/body&gt;
- &lt;/html&gt;</code></pre></div><div class="textbody"><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
+ &lt;/html&gt;
+ </code></pre></div><div class="textbody"><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%&gt;
  &lt;%!
    /**
     * Get the links (link elements) to the CSS files based on cookies, ...

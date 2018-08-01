@@ -24,27 +24,28 @@
 						クイックリファレンス 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/ensure-compat-rsv.html">
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
-					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.33.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/html.html#H65">H65 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="H65-description">解説</h2><div class="textbody"><p>この達成方法の目的は、ラベルを付けるのが視覚デザイン上そぐわない場合 (たとえば、ラベルとなりうるテキストが画面上にない場合) や、ラベルを表示することで混乱を引き起こしてしまう場合に、<code>title</code> 属性を利用してフォームコントロールにラベルを付けることである。それによって、ユーザエージェントや支援技術が、<code>title</code> 属性を読み上げることができる。</p></div><h2 class="small-head" id="H65-examples">事例</h2><h3 class="small-head" id="H65-ex1">事例 1: 検索対象を絞り込むプルダウンメニュー</h3><div class="example"><div class="textbody"><p>検索フォームで検索対象を絞り込むプルダウンメニューを用いている。そのプルダウンメニューは、検索語を入力するテキストフィールドのすぐそばにある。テキストフィールドとプルダウンメニューの関係は、見た目のデザインを目で見ることができる利用者には明白であり、ラベルを置くスペースはない。そこで、<code>select</code> 要素を特定するのに <code>title</code> 属性を利用している。<code>title</code> 属性はスクリーンリーダーによって読み上げられたり、画面拡大ソフトを使っている利用者にはツールチップとして表示されたりする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="searchTerm"&gt;検索語:&lt;/label&gt;
+					</a></li></ul></li></ul><div class="ua-issues"><h2 class="small-head" id="ua2.33.1">ユーザエージェント及び支援技術によるサポート</h2><p><a href="./ua-notes/html.html#H65">H65 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h2 id="H65-description">解説</h2><div class="textbody"><p>この達成方法の目的は、ラベルを付けるのが視覚デザイン上そぐわない場合 (たとえば、ラベルとなりうるテキストが画面上にない場合) や、ラベルを表示することで混乱を引き起こしてしまう場合に、<code>title</code> 属性を利用してフォームコントロールにラベルを付けることである。それによって、ユーザエージェントや支援技術が、<code>title</code> 属性を読み上げることができる。</p></div><h2 class="small-head" id="H65-examples">事例</h2><h3 class="small-head" id="H65-ex1">事例 1: 検索対象を絞り込むプルダウンメニュー</h3><div class="example"><div class="textbody"><p>検索フォームで検索対象を絞り込むプルダウンメニューを用いている。そのプルダウンメニューは、検索語を入力するテキストフィールドのすぐそばにある。テキストフィールドとプルダウンメニューの関係は、見た目のデザインを目で見ることができる利用者には明白であり、ラベルを置くスペースはない。そこで、<code>select</code> 要素を特定するのに <code>title</code> 属性を利用している。<code>title</code> 属性はスクリーンリーダーによって読み上げられたり、画面拡大ソフトを使っている利用者にはツールチップとして表示されたりする。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="searchTerm"&gt;Search for:&lt;/label&gt;
 &lt;input id="searchTerm" type="text" size="30" value="" name="searchTerm"&gt;
-&lt;select title="検索対象" id="scope"&gt;
+&lt;select title="Search in" id="scope"&gt;
 …
-&lt;/select&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+&lt;/select&gt; </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 H65-1
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H65-1.html">アクセシビリティ・サポーテッド（AS）情報: H65-1</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
-  </p></div></div><h3 class="small-head" id="H65-ex2">事例 2: 電話番号の入力フィールド</h3><div class="example"><div class="textbody"><p>ウェブページの中に、アメリカでの電話番号を入力するコントロールがあり、市外局番、市内局番、下 4 桁の 3 つのフィールドで構成されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;&lt;legend&gt;電話番号&lt;/legend&gt;
-&lt;input id="areaCode" name="areaCode" title="市外局番" 
+  </p></div></div><h3 class="small-head" id="H65-ex2">事例 2: 電話番号の入力フィールド</h3><div class="example"><div class="textbody"><p>ウェブページの中に、アメリカでの電話番号を入力するコントロールがあり、市外局番、市内局番、下 4 桁の 3 つのフィールドで構成されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;fieldset&gt;&lt;legend&gt;Phone number&lt;/legend&gt;
+&lt;input id="areaCode" name="areaCode" title="Area Code" 
 type="text" size="3" value="" &gt;
-&lt;input id="exchange" name="exchange" title="電話番号の上3桁" 
+&lt;input id="exchange" name="exchange" title="First three digits of phone number" 
 type="text" size="3" value="" &gt;
-&lt;input id="lastDigits" name="lastDigits" title="電話番号の下4桁" 
+&lt;input id="lastDigits" name="lastDigits" title="Last four digits of phone number" 
 type="text" size="4" value="" &gt;
-&lt;/fieldset&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+&lt;/fieldset&gt; </code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 H65-2
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H65-2.html">アクセシビリティ・サポーテッド（AS）情報: H65-2</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
-  </p></div></div><h3 class="small-head" id="H65-ex3">事例 3: 検索機能</h3><div class="example"><div class="textbody"><p>ウェブページに、利用者が検索語を入力できるテキストフィールドと、検索を実行するための「検索」というラベルが付いたボタンがある。フォームコントロールを特定するの <code>title</code> 属性を利用し、ボタンはテキストフィールドの直後に置いてあるので、テキストフィールドに検索語を入力すべきことは利用者にとって明白である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;input type="text" title="ここに検索語を入力"/&gt; 
-&lt;input type="submit" value="検索"/&gt;</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
+  </p></div></div><h3 class="small-head" id="H65-ex3">事例 3: 検索機能</h3><div class="example"><div class="textbody"><p>ウェブページに、利用者が検索語を入力できるテキストフィールドと、検索を実行するための「検索」というラベルが付いたボタンがある。フォームコントロールを特定するの <code>title</code> 属性を利用し、ボタンはテキストフィールドの直後に置いてあるので、テキストフィールドに検索語を入力すべきことは利用者にとって明白である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;input type="text" title="Type search term here"/&gt; &lt;input type="submit" value="Search"/&gt;
+</code></pre></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では 
 H65-3
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H65-3.html">アクセシビリティ・サポーテッド（AS）情報: H65-3</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。

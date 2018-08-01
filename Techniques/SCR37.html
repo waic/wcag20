@@ -13,26 +13,25 @@
 SCR37
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/SCR37.html">アクセシビリティ・サポーテッド（AS）情報: SCR37</a>
     では、「要注意」と評価されている。WAIC はウェブ制作者にこの達成方法が一部の環境では動作しないことに注意を促すものである。
-  </p></div></div><h2 class="small-head" id="SCR37-examples">事例</h2><h3 class="small-head" id="SCR37-ex1">事例 1: ダイアログを開くオプションボタン</h3><div class="example"><div class="textbody"><p>この例の HTML には、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能する div がある。</p><p>トリガーとなる要素はボタンで、スクリプトは onclick イベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術は DOM の中の変化に気がつくことができる。</p><p>この例では、ダイアログ内の送信及びリセットボタンは単純に <code>div</code> に隠れている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> role="xhtml1"&gt;...
+  </p></div></div><h2 class="small-head" id="SCR37-examples">事例</h2><h3 class="small-head" id="SCR37-ex1">事例 1: ダイアログを開くオプションボタン</h3><div class="example"><div class="textbody"><p>この例の HTML には、トリガーとなる要素、この場合はボタンとダイアログのフレームとして機能する div がある。</p><p>トリガーとなる要素はボタンで、スクリプトは onclick イベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術は DOM の中の変化に気がつくことができる。</p><p>この例では、ダイアログ内の送信及びリセットボタンは単純に <code>div</code> に隠れている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 &lt;button onclick="TogglePopup(event,true)"
-	name="pop0001"&gt;オプション&lt;/button&gt;
-
+	name="pop0001"&gt;Options&lt;/button&gt;
 &lt;div class="popover" id="pop0001"&gt;
-  &lt;h3&gt;並べ替えの情報を編集&lt;/h3&gt;
+  &lt;h3&gt;Edit Sort Information&lt;/h3&gt;
   &lt;form action="default.htm" onsubmit="this.parentNode.style.display='none'; return false;" onreset="this.parentNode.style.display='none'; return false;"&gt;
     &lt;fieldset&gt;
-      &lt;legend&gt;並び順&lt;/legend&gt; 
-      &lt;input type="radio" name="order" id="order_alpha" /&gt;&lt;label for="order_alpha"&gt;アルファベット順&lt;/label&gt;
-      &lt;input type="radio" name="order" id="order_default" checked="true" /&gt;&lt;label for="order_default"&amp;amp;gt既定&lt;/label&gt;
+      &lt;legend&gt;Sort Order&lt;/legend&gt; 
+      &lt;input type="radio" name="order" id="order_alpha" /&gt;&lt;label for="order_alpha"&gt;Alphabetical&lt;/label&gt;
+      &lt;input type="radio" name="order" id="order_default" checked="true" /&gt;&lt;label for="order_default"&gt;Default&lt;/label&gt;
     &lt;/fieldset&gt;
 &lt;div class="buttons"&gt;
   &lt;input type="submit" value="OK" /&gt;
-  &lt;input type="reset" value="キャンセル" /&gt;
+  &lt;input type="reset" value="Cancel" /&gt;
 &lt;/div&gt;
 &lt;/form&gt;
-
 &lt;/div&gt;
-...</code></pre></div><div class="textbody"><p><code>div</code>、見出し、及び <code>form</code> 要素は CSS でダイアログに見えるようにスタイル付けされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
+...
+</code></pre></div><div class="textbody"><p><code>div</code>、見出し、及び <code>form</code> 要素は CSS でダイアログに見えるようにスタイル付けされている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>...
 a { color:blue; }
 a.clickPopup img { border:none; width:0; }
 
