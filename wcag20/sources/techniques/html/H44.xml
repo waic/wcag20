@@ -53,7 +53,7 @@
    <examples>
       <eg-group>
       <head>テキスト入力フィールド</head>
-      <description><p>この事例では、テキスト入力フィールドに「お名前」という明示的なラベルが付けてある。<el>label</el> 要素の <att>for</att> 属性値は、<el>input</el> 要素の <att>id</att> 属性値と一致している。</p>
+      <description><p>この事例では、テキスト入力フィールドに「First name:」という明示的なラベルが付けてある。<el>label</el> 要素の <att>for</att> 属性値は、<el>input</el> 要素の <att>id</att> 属性値と一致している。</p>
 </description>
          <code role="html401"><![CDATA[<label for="firstname">First name:</label> 
 <input type="text" name="firstname" id="firstname" />]]></code>
