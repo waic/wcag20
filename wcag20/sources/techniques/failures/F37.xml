@@ -22,7 +22,7 @@
       <eg-group role="failure">
       <description><p>下記の例では、送信ボタンを使うのではなく、ラジオボタンが選択されたときにフォームが処理されるため、達成基準を満たしていない。</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[  
 <script type="text/JavaScript"> 
   function goToMirror(theInput) {
    var mirrorSite = "http://download." + theInput.value + "/"; 
@@ -31,7 +31,7 @@
 </script>
   …
 <form name="mirror_form" id="mirror_form" action="" method="get">
-       <p>ミラーダウンロードサイトを選択して下さい:</p> 
+       <p>Please select a mirror download site:</p> 
        <p> 
        <input type="radio" onclick="goToMirror(this);" name="mirror" 
        id="mirror_belnet" value="belnet.be" /> 

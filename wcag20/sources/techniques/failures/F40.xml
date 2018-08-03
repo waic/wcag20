@@ -18,21 +18,23 @@
       <eg-group role="failure">
       <description><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、不適合である。</p>
 </description>
-      <code><![CDATA[
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+         <code><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
    <head>     
-      <title>使用禁止！</title>     
+      <title>Do not use this!</title>     
       <meta http-equiv="refresh"
       content="5; url=http://www.example.com/newpage" />   
    </head>   
    <body>     
       <p>       
-         ブラウザがリフレッシュをサポートしている場合、5秒後に
-         <a href="http://www.example.com/newpage">新しいサイト</a>        
-         に移動します。サポートしていない場合には、リンクを選択してください。     
+         If your browser supports Refresh, you'll be       
+         transported to our        
+         <a href="http://www.example.com/newpage">new site</a>        
+         in 5 seconds, otherwise, select the link manually.     
       </p>   
    </body> 
-</html>]]></code>
+</html>
+]]></code>
     </eg-group>
    </examples>
    <resources>
