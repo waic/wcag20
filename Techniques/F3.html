@@ -14,9 +14,9 @@ CSS内:
 p#bestinterest {
   padding-left: 200px;
   background: transparent url(/images/TopRate.png) no-repeat top left;
-}</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+}</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> 
 &lt;p id="bestinterest"&gt;
-  これ以上の金利を発見できましたか？
+  Where else would you find a better interest rate?
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F3-failex2">
 					失敗例 2: </h3><div class="example"><div class="textbody"><p>
 ある書籍販売業者は、「新刊」「限定版」「在庫あり」「在庫なし」を示すためのアイコンとして背景画像を使用している。</p><p>CSS内:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -40,14 +40,14 @@ ul#booklist li.outstock {
   background: transparent url(outstock.png) no-repeat top left; 
 }</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;ul id="booklist"&gt;
-  &lt;li class="new"&gt;ある書籍&lt;/li&gt;
-  &lt;li class="instock"&gt;他の書籍&lt;/li&gt;
-  &lt;li class="limited"&gt;オススメできない書籍&lt;/li&gt;
+  &lt;li class="new"&gt;Some book&lt;/li&gt;
+  &lt;li class="instock"&gt;Some other book&lt;/li&gt;
+  &lt;li class="limited"&gt;A book we desperately want to get rid of&lt;/li&gt;
   ...
-  &lt;li class="outstock"&gt;あなたの本当に欲しい書籍&lt;/li&gt;
+  &lt;li class="outstock"&gt;A book you actually want &lt;/li&gt;
 &lt;/ul&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F3-failex3">
 					失敗例 3: </h3><div class="example"><div class="textbody"><p>失敗例 1 のコードで使用されている、同じ背景画像が HTML style 属性で宣言されている。</p><div class="code"><pre><code>&lt;p id="bestinterest" style="background: transparent url(/images/TopRate.png) no-repeat top left;" &gt;
-これ以上の金利を発見できましたか?
+Where else would you find a better interest rate?
 &lt;p&gt;</code></pre></div><p>次のコードでは、背景画像の宣言がクライアントスクリプト内で作成されている。</p><div class="code"><pre><code>&lt;script type="text/javascript"&gt;
 var newP = document.createElement('p');
 var newPText = document.createTextNode('Where else would you find a better interest rate?');

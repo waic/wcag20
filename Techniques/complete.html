@@ -16602,15 +16602,15 @@ if (event.value !="") {
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">
 						達成基準 1.3.2 (意味のある順序)を理解する
 					</a></li></ul></li></ul><h4 id="F1-description">解説</h4><div class="textbody"><p>これは、コンテンツの視覚的なレイアウトを変更するのに構造的なマークアップではなく CSS が用いられていて、かつ、レイアウトの変更によってコンテンツの意味が変わってしまっているという失敗例について述べている。CSS2 の position プロパティを用いると、利用者のビューポート上のどんな位置にでもコンテンツを表示させることができる。その場合、個々のアイテムが画面上に表示される順序は、ソース文書内に登場する順序とは異なる可能性がある。しかし、支援技術は、コンテンツを正しい順序でレンダリングするために、ソースコードでの順序又はプログラムが解釈する順序を用いている。そのため、CSS によってコンテンツの順序を指定する際には、それによってプログラムで解釈される音声読み上げ順序とは異なる意味になってしまうのであれば、CSS を用いてコンテンツの視覚的な位置を指定しないようにすることが重要である。</p></div><h4 class="small-head" id="F1-examples">事例</h4><div class="failure"><h5 class="small-head" id="F1-failex1">
-					失敗例 1</h5><div class="example"><div class="textbody"><p>次の例では、段組みのレイアウトを作成するために CSS が不適切に用いられている。また、テキストは、ブラウザの画面ではマークアップの順序とは異なる順序で視覚的に表示される。</p><p>この例では、配置される各オブジェクトに対してクラスが定義されている。スタイルシートが適用されると、テキストは 2 つの段組みで表示される。まず、「menu1」クラスの要素 (製品) と「menu2」の要素 (所在地) は、カラムの見出しとして表示される。そして、「電話機」「コンピューター」「ポータブル MP3 プレイヤー」は、製品の下に表示され、「アイダホ」と「ウィスコンシン」は、所在地の下に表示される (アイダホとウィスコンシンの順序は、ソースコードの順序とは異なっている)。</p><p>適切な構造要素が使われていないため、スタイルシートが適用されない状況では、全てのテキストがソースの順序に則って 1 列に提示され、「製品　所在地　電話機　コンピューター　ポータブル MP3 プレイヤー　ウィスコンシン　アイダホ」となってしまう。</p><p>HTML のコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-     &lt;div class="box"&gt;      
-     &lt;span class="menu1"&gt;製品&lt;/span&gt;       
-     &lt;span class="menu2"&gt;所在地&lt;/span&gt;       
-     &lt;span class="item1"&gt;電話機&lt;/span&gt;       
-     &lt;span class="item2"&gt;コンピューター&lt;/span&gt;       
-     &lt;span class="item3"&gt;ポータブルMP3プレイヤー&lt;/span&gt;       
-     &lt;span class="item5"&gt;ウィスコンシン&lt;/span&gt;       
-     &lt;span class="item4"&gt;アイダホ&lt;/span&gt;
+					失敗例 1</h5><div class="example"><div class="textbody"><p>次の例では、段組みのレイアウトを作成するために CSS が不適切に用いられている。また、テキストは、ブラウザの画面ではマークアップの順序とは異なる順序で視覚的に表示される。</p><p>この例では、配置される各オブジェクトに対してクラスが定義されている。スタイルシートが適用されると、テキストは 2 つの段組みで表示される。まず、「menu1」クラスの要素 (Products) と「menu2」の要素 (Locations) は、カラムの見出しとして表示される。そして、「Telephones」「Computers」「Portable MP3 Players」は、Products の下に表示され、「Idaho」と「Wisconsin」は、Locations の下に表示される (Idaho と Wisconsin の順序は、ソースコードの順序とは異なっている)。</p><p>適切な構造要素が使われていないため、スタイルシートが適用されない状況では、全てのテキストがソースの順序に則って 1 列に提示され、「Products Locations Telephones Computers Portable MP3 Players Wisconsin Idaho」となってしまう。</p><p>HTML のコンテンツは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;div class="box"&gt;      
+     &lt;span class="menu1"&gt;Products&lt;/span&gt;       
+     &lt;span class="menu2"&gt;Locations&lt;/span&gt;       
+     &lt;span class="item1"&gt;Telephones&lt;/span&gt;       
+     &lt;span class="item2"&gt;Computers&lt;/span&gt;       
+     &lt;span class="item3"&gt;Portable MP3 Players&lt;/span&gt;       
+     &lt;span class="item5"&gt;Wisconsin&lt;/span&gt;       
+     &lt;span class="item4"&gt;Idaho&lt;/span&gt;
 &lt;/div&gt;</code></pre></div><div class="textbody"><p>上記コンテンツに対するスタイルは次の通り:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 .menu1 { 
      position: absolute; 
@@ -16680,23 +16680,26 @@ if (event.value !="") {
  }
  &lt;/style&gt;
 
- &lt;p class="heading1"&gt;はじめに&lt;/p&gt;
- &lt;p&gt;この章では、この製品の詳しい使い方について
+ &lt;p class="heading1"&gt;Introduction&lt;/p&gt;
+ &lt;p&gt;This introduction provides detailed information about how to use this 
  ........
  &lt;/p&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この事例で用いるべき適切な手法は、HTML の <code>h1</code> 要素を対象にした CSS を用いて見た目を制御する方法である。</p></div></div></div></div><div class="failure"><h5 class="small-head" id="F2-failex2">
-					失敗例 2: 画像化されたテキストが見出しとして用いられている際、その画像が見出しタグでマークアップされていない場合</h5><div class="example"><div class="textbody"><p>Chapter1.gif は、20 ピクセルの Garamond フォントで表示した「Chapter 1」という文字列を画像化したものである。この場合、少なくともこの画像を見出し要素に入れる必要があるため、不適合である。よりよい手法は、このテキストを見出し要素でマークアップし、この要素に対する CSS を用いて見た目を指定する方法である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-      &lt;img src="Chapter1.gif" alt="Chapter 1"&gt;
+					失敗例 2: 画像化されたテキストが見出しとして用いられている際、その画像が見出しタグでマークアップされていない場合</h5><div class="example"><div class="textbody"><p>Chapter1.gif は、20 ピクセルの Garamond フォントで表示した「Chapter One」という文字列を画像化したものである。この場合、少なくともこの画像を見出し要素に入れる必要があるため、不適合である。よりよい手法は、このテキストを見出し要素でマークアップし、この要素に対する CSS を用いて見た目を指定する方法である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;img src="Chapter1.gif" alt="Chapter One"&gt;
  
-&lt;p&gt;むかしむかし、ウェブの国で.....
+&lt;p&gt;Once upon a time in the land of the Web.....
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F2-failex3">
 					失敗例 3: 単語やフレーズを強調するために CSS を用いて見た目を制御しているが、その強調のセマンティックを表すマークアップが行われていない場合</h5><div class="example"><div class="textbody"><p>以下の例では、CSS の <code>font-weight</code> プロパティを用いて太字に変更している部分の持つ情報について、セマンティックを表すマークアップがされておらず、また明示的なテキスト情報も提供されていないため不適合となる。</p><p>以下が CSS で太字の書体を指定するためのクラスである:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 .yell {
   font-weight:bold;
   text-transform: uppercase;
-}</code></pre></div><div class="textbody"><p>そして以下が対応する HTML である:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;
-「&lt;span class="yell"&gt;だめよ&lt;/span&gt;、食事の前はだめだって言ったでしょ！」
-ティミーが母親に 4 回アイスクリームをねだった時、彼女は苛立ってそう答えた。
- &lt;/p&gt;</code></pre></div></div></div><h4 id="F2-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F2-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H42">H42: 見出しを特定するために、h1 要素～ h6 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H49">H49:  強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G115">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G117">G117: テキストの提示のバリエーションによって伝えている情報を伝達するために、テキストを使用する</a></li></ul></div><h4 id="F2-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F2-procedure">手順</h5><ol class="enumar"><li><p>画像化されたテキストについて:</p><ol class="enumla"><li><p>画像化されたテキストが、ドキュメントの持つ構造的な情報を表すために使用されている。</p></li><li><p>適切なセマンティック構造 (例: HTML の見出し) を用いて画像化されたテキストの情報が表されている。</p></li></ol></li><li><p>(何らかの構造的な) 情報を表すために見た目が変更されているテキストについて:</p><ol class="enumla"><li><p>構造的な情報を表現するために、見た目が変更されているテキストがある。</p></li><li><p>見た目に加えて、適切なセマンティック構造によってテキストが表されている。</p></li></ol></li></ol><h5 class="small-head" id="F2-results">期待される結果</h5><ul><li><p>1. の a. に該当する場合は、1. の b. を満たしている。</p></li><li><p>2. の a. に該当する場合は、2. の b. を満たしている。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F3" id="F3"> </a>F3: 達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を付加するために、CSS を使用している</h3><div class="applicability"><h4 id="F3-applicability">適用 (対象)</h4><div class="textbody"><p>CSS に対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+}</code></pre></div><div class="textbody"><p>そして以下が対応する HTML である:</p></div><div class="code"><pre><code>
+&lt;p&gt;
+ "I said, &lt;span class="yell"&gt;no&lt;/span&gt;, not before dinner!", 
+ was the exasperated response when Timmy asked his mother for the 
+ fourth time for an ice cream cone. 
+ &lt;/p&gt;
+</code></pre></div></div></div><h4 id="F2-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F2-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H42">H42: 見出しを特定するために、h1 要素～ h6 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H49">H49:  強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G115">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G117">G117: テキストの提示のバリエーションによって伝えている情報を伝達するために、テキストを使用する</a></li></ul></div><h4 id="F2-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F2-procedure">手順</h5><ol class="enumar"><li><p>画像化されたテキストについて:</p><ol class="enumla"><li><p>画像化されたテキストが、ドキュメントの持つ構造的な情報を表すために使用されている。</p></li><li><p>適切なセマンティック構造 (例: HTML の見出し) を用いて画像化されたテキストの情報が表されている。</p></li></ol></li><li><p>(何らかの構造的な) 情報を表すために見た目が変更されているテキストについて:</p><ol class="enumla"><li><p>構造的な情報を表現するために、見た目が変更されているテキストがある。</p></li><li><p>見た目に加えて、適切なセマンティック構造によってテキストが表されている。</p></li></ol></li></ol><h5 class="small-head" id="F2-results">期待される結果</h5><ul><li><p>1. の a. に該当する場合は、1. の b. を満たしている。</p></li><li><p>2. の a. に該当する場合は、2. の b. を満たしている。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F3" id="F3"> </a>F3: 達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を付加するために、CSS を使用している</h3><div class="applicability"><h4 id="F3-applicability">適用 (対象)</h4><div class="textbody"><p>CSS に対応しているウェブコンテンツ技術全て</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
@@ -16708,9 +16711,9 @@ CSS内:
 p#bestinterest {
   padding-left: 200px;
   background: transparent url(/images/TopRate.png) no-repeat top left;
-}</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+}</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> 
 &lt;p id="bestinterest"&gt;
-  これ以上の金利を発見できましたか？
+  Where else would you find a better interest rate?
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F3-failex2">
 					失敗例 2: </h5><div class="example"><div class="textbody"><p>
 ある書籍販売業者は、「新刊」「限定版」「在庫あり」「在庫なし」を示すためのアイコンとして背景画像を使用している。</p><p>CSS内:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
@@ -16734,14 +16737,14 @@ ul#booklist li.outstock {
   background: transparent url(outstock.png) no-repeat top left; 
 }</code></pre></div><div class="textbody"><p>上記コードの適用先:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;ul id="booklist"&gt;
-  &lt;li class="new"&gt;ある書籍&lt;/li&gt;
-  &lt;li class="instock"&gt;他の書籍&lt;/li&gt;
-  &lt;li class="limited"&gt;オススメできない書籍&lt;/li&gt;
+  &lt;li class="new"&gt;Some book&lt;/li&gt;
+  &lt;li class="instock"&gt;Some other book&lt;/li&gt;
+  &lt;li class="limited"&gt;A book we desperately want to get rid of&lt;/li&gt;
   ...
-  &lt;li class="outstock"&gt;あなたの本当に欲しい書籍&lt;/li&gt;
+  &lt;li class="outstock"&gt;A book you actually want &lt;/li&gt;
 &lt;/ul&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F3-failex3">
 					失敗例 3: </h5><div class="example"><div class="textbody"><p>失敗例 1 のコードで使用されている、同じ背景画像が HTML style 属性で宣言されている。</p><div class="code"><pre><code>&lt;p id="bestinterest" style="background: transparent url(/images/TopRate.png) no-repeat top left;" &gt;
-これ以上の金利を発見できましたか?
+Where else would you find a better interest rate?
 &lt;p&gt;</code></pre></div><p>次のコードでは、背景画像の宣言がクライアントスクリプト内で作成されている。</p><div class="code"><pre><code>&lt;script type="text/javascript"&gt;
 var newP = document.createElement('p');
 var newPText = document.createTextNode('Where else would you find a better interest rate?');
@@ -16754,7 +16757,9 @@ document.body.appendChild(newP);
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua12.4.1">ユーザエージェント及び支援技術によるサポート</h4><p><a href="./ua-notes/failures.html#F4">F4 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h4 id="F4-description">解説</h4><div class="textbody"><p>CSS では、<code>text-decoration</code> プロパティに <code>blink</code> という値を定義している。これを用いると、このプロパティを持つ要素のあらゆるテキストが、あらかじめ設定された間隔で点滅する。これは、利用者が中断することはできず、またユーザエージェントの環境設定によって無効にすることもできない。つまり、ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が 3 秒より長く続く可能性があることから、<code>text-decoration:blink</code> を用いているコンテンツは達成基準を満たしていないことになる。</p></div><h4 class="small-head" id="F4-examples">事例</h4><div class="failure"><h5 class="small-head" id="F4-failex1">
-					失敗例 1</h5><div class="example"><div class="textbody"><p>製品リストのページで、セール価格に注意を引くため、その要素を <code>text-decoration:blink</code> でスタイル指定している。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;良品&lt;span style="text-decoration:blink"&gt;セール!たったの44,995ドル!&lt;/span&gt;&lt;/p&gt;</code></pre></div></div></div><h4 id="F4-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+					失敗例 1</h5><div class="example"><div class="textbody"><p>製品リストのページで、セール価格に注意を引くため、その要素を <code>text-decoration:blink</code> でスタイル指定している。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;p&gt;My Great Product &lt;span style="text-decoration:blink"&gt;Sale! $44,995!&lt;/span&gt;&lt;/p&gt;
+</code></pre></div></div></div><h4 id="F4-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/CSS2/text.html#propdef-text-decoration">CSS 2 text-decoration property</a> 
                </p></li></ul></div><h4 id="F4-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR22">SCR22: 点滅を制御し、5 秒以内に停止させるために、スクリプトを使用する</a></li></ul></div><h4 id="F4-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F4-procedure">手順</h5><ol class="enumar"><li><p>インラインでのスタイル指定、ドキュメント内のスタイルシート及びドキュメント外部のスタイルシートに、"blink"  の値を持つ <code>text-decoration</code> プロパティがある。</p></li><li><p>プロパティを用いている場合、このプロパティが定義されているセレクタによって特定される ID、クラス又は要素がドキュメント内で用いられている。</p></li></ol><h5 class="small-head" id="F4-results">期待される結果</h5><ul><li><p>1. 及び 2. が該当すれば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F7" id="F7"> </a>F7: 達成基準 2.2.2 の失敗例 － 5 秒よりも長く点滅するコンテンツを一時停止するメカニズムなしでコンテンツを点滅している、Java 又は Flash などのオブジェクト又はアプレット</h3><div class="applicability"><h4 id="F7-applicability">適用 (対象)</h4><div class="textbody"><p>オブジェクト、アプレット又はプラグインにおいて、点滅するコンテンツをサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-pause">
@@ -16866,78 +16871,74 @@ document.body.appendChild(newP);
 						達成基準 1.4.8 (視覚的提示)を理解する
 					</a></li></ul></li></ul><h4 id="F24-description">解説</h4><div class="textbody"><p>失明、認知障害、言語又は学習障害のある利用者は、多くの場合特定の前景色と背景色の組み合わせを好む。弱視の利用者は黒の背景に白い文字のウェブページの方がより見やすく、そしてそれぞれのユーザエージェントをこのコントラストに設定していることがある。多くのユーザエージェントでは、制作者が指定したすべてのスタイルを上書きせずに、好みの前景色または背景色に関する設定を利用者が選択できるようになっている。これにより、利用者は好ましい色の組み合わせの中でコンテンツ制作者によって色が指定されていないページを閲覧することが可能になる。</p><p>コンテンツ制作者が前景と背景の両方の色を指定しない限り、コンテンツ制作者は、コントラストの要求を満足したコントラストになっていることを保証できない。たとえば、コンテンツ制作者がテキストを灰色に指定していたら、それはユーザエージェントの設定より優先され、(ユーザエージェントによって利用者に設定された) 明るい灰色の背景に (コンテンツ制作者に指定された) 灰色のテキストというページが描画される。この原則は逆も成り立つ。もしコンテンツ制作者が背景を白にしていたら、コンテンツ制作者に指定された白い背景は、利用者のユーザエージェントの設定によって表現されている好みのテキストの色に似ているかもしれない。そのため、利用者にとって使用できないページに描写されてしまう。コンテンツ制作者は利用者がどのようにして好みの設定にしているかを予測できないため、コンテンツ制作者が前景色を指定していたら十分なコントラストを持つ背景色も指定すべきであり、逆もまた同様である。</p><p>前景色と背景色の両方を同じ CSS 規則上で定義する必要はない。CSS の色のプロパティは、先祖要素から引き継がれるので、前景色と背景色の両方が直接的に、又はその色が要素に対して適用される継承を通して定義されるのであればそれで十分である。</p><div class="note"><p class="prefix"><em>注記: </em>実践するにあたっては、テキストの全ての状態を含めることが重要である。例えば、テキスト、リンクテキスト、訪問済みリンクテキスト、マウスフォーカスがあたったとき及びキーボードフォーカスがあたったときのリンクテキストなど。</p></div></div><h4 class="small-head" id="F24-examples">事例</h4><div class="failure"><h5 class="small-head" id="F24-failex1">
 					失敗例 1: CSS で背景色のみ指定する</h5><div class="example"><div class="textbody"><p>次の例では、背景色は CSS スタイルシートで定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;html&gt;
 &lt;head&gt;
- &lt;title&gt;キャンバス背景の設定&lt;/title&gt;
+ &lt;title&gt;Setting the canvas background&lt;/title&gt;
     &lt;style type="text/css"&gt;
-
        body {background-color:white}
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p&gt;背景は白です。&lt;/p&gt;
+    &lt;p&gt;My background is white.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F24-failex2">
 					失敗例 2: CSS で前景色のみ指定する</h5><div class="example"><div class="textbody"><p>次の例では、前景色は CSS スタイルシートで定義されているが背景色は定義されていない。よって、この事例は達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;html&gt;
 &lt;head&gt;
- &lt;title&gt;キャンバス背景 (←前景の間違い？) の設定&lt;/title&gt;
+ &lt;title&gt;Setting the canvas background&lt;/title&gt;
     &lt;style type="text/css"&gt;
        body {color:white}
     &lt;/style&gt;
   &lt;/head&gt;
-
   &lt;body&gt;
-    &lt;p&gt;前景は白です。&lt;/p&gt;
+    &lt;p&gt;My foreground is white.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F24-failex3">
 					失敗例 3: CSS でリンクテキストの色を指定する</h5><div class="example"><div class="textbody"><p>次の例では、リンクテキスト (前景) の色をボディ要素で定義している。しかし背景色は定義していない。よって、この事例は達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
     "http://www.w3.org/TR/html4/strict.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;html&gt;
 &lt;head&gt;
- &lt;title&gt;人口動態の研究&lt;/TITLE&gt;
+ &lt;title&gt;A study of population dynamics&lt;/TITLE&gt;
  &lt;style type="text/css"&gt;
   a:link { color: red }
   a:visited { color: maroon }
   a:active { color: fuchsia }
  &lt;/style&gt;
-
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;... ドキュメント本文 ... &lt;a href="foo.htm"&gt;Foo&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;... document body... &lt;a href="foo.htm"&gt;Foo&lt;/a&gt;&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F24-failex4">
-					失敗例 4: HTML の bgcolor 属性で背景色のみ指定する</h5><div class="example"><div class="textbody"><p>次の例では、背景色は <code>body</code> 要素で定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていないことになる。</p><p>HTML 4 の時点で <code>bgcolor</code> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 4: HTML の bgcolor 属性で背景色のみ指定する</h5><div class="example"><div class="textbody"><p>次の例では、背景色は <code>body</code> 要素で定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていないことになる。</p><p>HTML 4 の時点で <code>bgcolor</code> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>   
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
   &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
       &lt;html&gt;
           &lt;head&gt;
-              &lt;title&gt;人口動態に関する研究&lt;/title&gt;
+              &lt;title&gt;A study of population dynamics&lt;/title&gt;
           &lt;/head&gt;
           &lt;body bgcolor="white"&gt;
-              &lt;p&gt; ... ドキュメント本文 ...&lt;/p&gt;
+              &lt;p&gt; ... document body...&lt;/p&gt;
           &lt;/body&gt;
   &lt;/html&gt;</code></pre></div></div></div><div class="failure"><h5 class="small-head" id="F24-failex5">
 					失敗例 5: HTML の text 属性を持つ前景色のみを指定する</h5><div class="example"><div class="textbody"><p>次の例では、前景色は body 要素で定義されているが、背景色は定義されていない。したがって、この例は達成基準を満たしていない。</p><p>HTML 4 の時点で <code>text</code> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
 &lt;html&gt;
 &lt;head&gt;
- &lt;title&gt;人口動態に関する研究&lt;/title&gt;
-
+ &lt;title&gt;A study of population dynamics&lt;/title&gt;
 &lt;/head&gt;
-&lt;body color="white"&gt;
-  &lt;p&gt;... ドキュメント本文 ...&lt;/p&gt;
+&lt;body text="white"&gt;
+  &lt;p&gt;... document body...&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre></div></div></div><h4 id="F24-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/CSS2/cascade.html#inheritance">Assigning property values, Cascading, and Inheritance</a>
@@ -17013,18 +17014,22 @@ document.body.appendChild(newP);
 						達成基準 1.3.2 (意味のある順序)を理解する
 					</a></li></ul></li></ul><h4 id="F33-description">解説</h4><div class="textbody"><p>この達成方法の目的は、スペース、タブ、改行又はキャリッジリターン (CR) のような空白文字を用いてテキストコンテンツのデータ列を整形しようとすると、構造を正しく示すことができなくなる失敗例について述べることである。支援技術は、現在用いている自然言語の音声読み上げ順序でコンテンツを解釈するため、空白文字を用いて複数の段組を作ると、自然な音声読み上げ順序では意味を成さなくなることがある。このように、空白文字を用いてデータ列を整形すると、支援技術の利用者が理解できるように情報が提示されない。</p><p>複数の段組みを表現するために、プレーンテキストを用いるべきではない。他のレイアウトでデータを提示できるようにコンテンツを修正する必要がある。代替手段として、複数段にわたるデータを表現するときは、構造を示す要素のあるウェブコンテンツ技術を用いるとよい。</p></div><h4 class="small-head" id="F33-examples">事例</h4><div class="failure"><h5 class="small-head" id="F33-failex1">
 					失敗例 1</h5><div class="example"><div class="textbody"><p>次の事例では、2 段組フォーマットにするために、空白文字列を用いているが、正しい使い方ではない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-ウェブコンテンツ  アクセシビリティ　　　　　運動制限、発話困難、及びその他の障
-ガイドライン 2.0 (WCAG2.0)は、ウェ　　　　　害を含む様々な障害のある利用者にと
-ブコンテンツをよりアクセシブルにす　　　　　って使うことができることを意味する。
-るためのポイントや推奨事項を幅広く　　　　　このガイドラインに従うことによって、
-カバーしている。この文書には原則、　　　　　ウェブコンテンツは高齢者を含む大多
-ガイドライン、達成基準、利用者のメ　　　　　数の利用者にとっても、よりアクセシ
-リット、そして事例が含まれており、　　　　　ブルなものになる。また、利用者が、
-ウェブベースの情報およびアプリケー　　　　　多様な支援技術を含む実にさまざまな
-ションをアクセシブルにするための要　　　　　デバイスを用いて、ウェブコンテンツ
-件を定義して説明している。「アクセ　　　　　にアクセスすることができるようにも
-シブル」とは、全盲及びロービジョン、　　　　なる。 
-ろう及び難聴、学習困難、認知障害、</code></pre></div><div class="textbody"><p>スクリーンリーダーで読上げると、このテーブルは次のように読まれる:</p><ul><li><p>ウェブコンテンツアクセシビリティ運動制限、発話困難、及びその他の障</p></li><li><p>ガイドライン 2.0 (WCAG2.0) は、ウェ害を含む様々な障害のある利用者にと</p></li><li><p>ブコンテンツをよりアクセシブルにすって使うことができることを意味する。</p></li><li><p>るためのポイントや推奨事項を幅広くこのガイドラインに従うことによって、</p></li><li><p>(以下省略)</p></li></ul><p>一度削除したテキストを復活させたり、固定サイズのフォントが可変サイズに変更したり、何行かに及ぶテキストをそのページに収まらないくらい文字サイズを大きく変えたりしたときは、先ほど説明したのと同じように、見た目上、間違って解釈されるという問題が起こりうる。</p></div></div></div><h4 id="F33-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F33-related-techs">関連する達成方法</h4><div class="textbody"><p>(今のところ、なし。)</p></div><h4 id="F33-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F33-procedure">手順</h5><ol class="enumar"><li><p>データや情報の文書が、多段組で示されている。</p></li><li><p>段組みが空白文字列を用いて情報を配置して作られている。</p></li></ol><h5 class="small-head" id="F33-results">期待される結果</h5><ul><li><p>2. を満たしている場合、この失敗基準が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F34" id="F34"> </a>F34: 達成基準 1.3.1 及び 達成基準 1.3.2 の失敗例 － プレーンテキストのコンテンツでテーブルの書式を整えるために、空白文字を使用している</h3><div class="applicability"><h4 id="F34-applicability">適用 (対象)</h4><div class="textbody"><p>全てのウェブコンテンツ技術。</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
+Web Content Accessibility Guidelines      including blindness and low vision, 
+2.0 (WCAG 2.0) covers a wide range of     deafness and hearing loss, learning 
+issues and recommendations for making     difficulties, cognitive limitations, limited 
+Web content more accessible. This         movement, speech difficulties, and 
+document contains principles,             others. Following these guidelines will 
+guidelines, Success Criteria, benefits,   also make your Web content more 
+and examples that define and explain      accessible to the vast majority of users, 
+the requirements for making Web-based     including older users. It will also enable
+information and applications accessible.  people to access Web content using 
+"Accessible" means usable to a wide       many different devices - including a 
+range of people with disabilities,        wide variety of assistive technologies.
+</code></pre></div><div class="textbody"><p>スクリーンリーダーで読上げると、このテーブルは次のように読まれる:</p><ul><li><p>Web Content Accessibility Guidelines including blindness and
+                                        low vision,</p></li><li><p>2.0 (WCAG 2.0) covers a wide range of deafness and hearing
+                                        loss, learning</p></li><li><p>issues and recommendations for making difficulties, cognitive
+                                        limitations, limited</p></li><li><p>Web content more accessible. This movement, speech
+                                        difficulties, and</p></li><li><p>(以下省略)</p></li></ul><p>一度削除したテキストを復活させたり、固定サイズのフォントが可変サイズに変更したり、何行かに及ぶテキストをそのページに収まらないくらい文字サイズを大きく変えたりしたときは、先ほど説明したのと同じように、見た目上、間違って解釈されるという問題が起こりうる。</p></div></div></div><h4 id="F33-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F33-related-techs">関連する達成方法</h4><div class="textbody"><p>(今のところ、なし。)</p></div><h4 id="F33-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F33-procedure">手順</h5><ol class="enumar"><li><p>データや情報の文書が、多段組で示されている。</p></li><li><p>段組みが空白文字列を用いて情報を配置して作られている。</p></li></ol><h5 class="small-head" id="F33-results">期待される結果</h5><ul><li><p>2. を満たしている場合、この失敗基準が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F34" id="F34"> </a>F34: 達成基準 1.3.1 及び 達成基準 1.3.2 の失敗例 － プレーンテキストのコンテンツでテーブルの書式を整えるために、空白文字を使用している</h3><div class="applicability"><h4 id="F34-applicability">適用 (対象)</h4><div class="textbody"><p>全てのウェブコンテンツ技術。</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#content-structure-separation-programmatic">
 						クイックリファレンス 1.3.1 (情報及び関係性)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
@@ -17036,18 +17041,17 @@ document.body.appendChild(newP);
 						達成基準 1.3.2 (意味のある順序)を理解する
 					</a></li></ul></li></ul><h4 id="F34-description">解説</h4><div class="textbody"><p>この達成方法の目的は、テキストコンテンツ内でスペース、タブ、改行又はキャリッジリターン (CR) といった空白文字を使用してテーブルを整形すると、適切に構造を示すことができない失敗例について述べることである。 テーブルがこのような方法で作成されると、セルを見出しセルとして示すことができなくなり、見出しのセルとデータのセルを関連付けできなくなる。又はテーブルの中のセルへ直接誘導することができなくなる。</p><p>さらに、支援技術は現在の自然言語の音声読み上げ順序でコンテンツを解釈していく。視覚的なテーブルにおいて、データをレイアウトするために空白を使用すると、ドキュメントのソースの情報を自然な音声読み上げ順序で提供できなくなってしまう。このように、支援技術の利用者に対して情報が論理的な音声読み上げ順序で提示されなくなる。</p><p>プレーンテキストはテーブルのような複雑な情報を表示するのには適していない。なぜなら、テーブルの構造は知覚できないからである。テーブルの情報は見た目の書式を整える方法によって表形式の情報の関係を表現するよりは、別のウェブコンテンツ技術を使用するか又は直線的に読上げられるように提示する (プレーンテキストでテーブルの情報を表現するを参照)。</p></div><h4 class="small-head" id="F34-examples">事例</h4><div class="failure"><h5 class="small-head" id="F34-failex1">
 					失敗例 1</h5><div class="example"><div class="textbody"><p>次の事例では、空白を不適切に使ってメニューを見かけ上のテーブル形式にしている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-メニュー
-　　　　　朝食　　　　　　　　昼食　　　　　　　ディナー
-
-月曜　　　目玉焼き2つ 　　　　トマトスープ　　　ガーデンサラダ
-　　　　　ベーコン　　　　　　ハンバーガー　　　フライドチキン
-　　　　　トースト　　　　　　オニオンリング　　緑豆
-　　　　　オートミール　　　　マッシュポテト
-
-火曜　　　ホットケーキ　　　　野菜スープ　　　　シーザーサラダ
-　　　　　ソーセージ　　　　　ホットドッグ　　　ミートボールスパゲティ
-　　　　　オレンジジュース　　ポテトサラダ　　　イタリアンブレッド
-　　　　　　　　　　　　　　　ブラウニー　　　　アイスクリーム</code></pre></div><div class="textbody"><p>この表は、スクリーンリーダでは次のように解釈され、読上げられる。</p><ul><li><p>メニュー</p></li><li><p>朝食　昼食　ディナー</p></li><li><p>月曜　目玉焼き 2 つ　トマトスープ　ガーデンサラダ</p></li><li><p>ベーコン　ハンバーガー　フライドチキン</p></li><li><p>トースト　オニオンリング　緑豆</p></li><li><p>オートミール　クッキー　マッシュポテト</p></li></ul><p>このテーブルには、支援技術がこのメニューをテーブルとして特定するための構造がないため、この音声読み上げ順序では意味が伝わらない。テキストが折り返す、又は固定フォントから可変フォントに変更になる、又はページ内で行が収まらないほど文字サイズを拡大するといった場合、視覚表現で同様の問題が発生すると考えられる。</p></div></div></div><h4 id="F34-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F34-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li></ul></div><h4 id="F34-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F34-procedure">手順</h5><ol class="enumar"><li><p>見かけ上のテーブルがドキュメントにある。</p></li><li><p>空白文字を使ってデータをテーブル形式にレイアウトしてテーブルが作られている。</p></li></ol><h5 class="small-head" id="F34-results">期待される結果</h5><ul><li><p>2. を満たしていれば、この不適合基準が適用され、コンテンツはこれらの達成基準を満たさない。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F36" id="F36"> </a>F36: 達成基準 3.2.2 の失敗例 － フォームの最後のフィールドに値を与えたときに、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</h3><div class="applicability"><h4 id="F36-applicability">適用 (対象)</h4><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#consistent-behavior-unpredictable-change">
+Menu
+         Breakfast        Lunch           Dinner
+Monday   2 fried eggs    tomato soup     garden salad
+         bacon           hamburger       Fried Chicken
+         toast           onion rings     green beans
+                         Oatmeal cookie  mashed potatoes
+Tuesday   Pancakes       vegetable soup  Caesar salad
+          sausage        hot dogs        Spaghetti with meatballs
+          orange juice   potato salad    Italian bread
+                         brownie         ice cream
+</code></pre></div><div class="textbody"><p>この表は、スクリーンリーダでは次のように解釈され、読上げられる。</p><ul><li><p>Menu</p></li><li><p>Breakfast Lunch Dinner</p></li><li><p>Monday 2 fried eggs tomato soup garden salad</p></li><li><p>bacon hamburger Fried Chicken</p></li><li><p>toast onion rings green beans</p></li><li><p>Oatmeal cookie mashed potatoes</p></li></ul><p>このテーブルには、支援技術がこのメニューをテーブルとして特定するための構造がないため、この音声読み上げ順序では意味が伝わらない。テキストが折り返す、又は固定フォントから可変フォントに変更になる、又はページ内で行が収まらないほど文字サイズを拡大するといった場合、視覚表現で同様の問題が発生すると考えられる。</p></div></div></div><h4 id="F34-resources">参考リソース</h4><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h4 id="F34-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li></ul></div><h4 id="F34-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F34-procedure">手順</h5><ol class="enumar"><li><p>見かけ上のテーブルがドキュメントにある。</p></li><li><p>空白文字を使ってデータをテーブル形式にレイアウトしてテーブルが作られている。</p></li></ol><h5 class="small-head" id="F34-results">期待される結果</h5><ul><li><p>2. を満たしていれば、この不適合基準が適用され、コンテンツはこれらの達成基準を満たさない。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F36" id="F36"> </a>F36: 達成基準 3.2.2 の失敗例 － フォームの最後のフィールドに値を与えたときに、自動的にフォームを送信し、事前の予告なしに新しいコンテンツを提示している</h3><div class="applicability"><h4 id="F36-applicability">適用 (対象)</h4><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#consistent-behavior-unpredictable-change">
 				達成基準 3.2.2 (入力時)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#consistent-behavior-unpredictable-change">
 						クイックリファレンス 3.2.2 (入力時)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">
@@ -17075,7 +17079,7 @@ document.body.appendChild(newP);
 						達成基準 3.2.2 (入力時)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua12.27.1">ユーザエージェント及び支援技術によるサポート</h4><p><a href="./ua-notes/failures.html#F37">F37 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h4 id="F37-description">解説</h4><div class="textbody"><p>この文書では、ラジオボタン、チェックボックス、またはセレクトリスト内の項目の選択を変更すると、新しいウィンドウが開く失敗例について解説する。要素が選択されたとき、コンテキストの変更 (フォームの送信、新しいページを開く、新しいウィンドウ) を引き起こす <code>input</code> 要素を生成するために、スクリプトを使用することができる。
   開発者は代わりに送信ボタンを使用する (<a href="https://waic.jp/docs/WCAG-TECHS/G80" class="tech-ref">G80: 状況の変化を開始する送信ボタンを提供する</a>を参照)、又はそこで起こる動作を明確に示す必要がある。</p></div><h4 class="small-head" id="F37-examples">事例</h4><div class="failure"><h5 class="small-head" id="F37-failex1">
-					失敗例 1</h5><div class="example"><div class="textbody"><p>下記の例では、送信ボタンを使うのではなく、ラジオボタンが選択されたときにフォームが処理されるため、達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 1</h5><div class="example"><div class="textbody"><p>下記の例では、送信ボタンを使うのではなく、ラジオボタンが選択されたときにフォームが処理されるため、達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>  
 &lt;script type="text/JavaScript"&gt; 
   function goToMirror(theInput) {
    var mirrorSite = "http://download." + theInput.value + "/"; 
@@ -17084,7 +17088,7 @@ document.body.appendChild(newP);
 &lt;/script&gt;
   …
 &lt;form name="mirror_form" id="mirror_form" action="" method="get"&gt;
-       &lt;p&gt;ミラーダウンロードサイトを選択して下さい:&lt;/p&gt; 
+       &lt;p&gt;Please select a mirror download site:&lt;/p&gt; 
        &lt;p&gt; 
        &lt;input type="radio" onclick="goToMirror(this);" name="mirror" 
        id="mirror_belnet" value="belnet.be" /&gt; 
@@ -17124,20 +17128,22 @@ document.body.appendChild(newP);
 					</a></li></ul></li></ul><h4 id="F40-description">解説</h4><div class="textbody"><p><code>meta</code> <code>http-equiv</code> の {time-out}; url=... はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p><p>タイムアウトが 0 に設定されている場合には、<code>meta</code> 要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<a href="https://waic.jp/docs/WCAG-TECHS/SVR1" class="tech-ref">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</a> (SERVER)
 			を参照のこと。</p></div><h4 class="small-head" id="F40-examples">事例</h4><div class="failure"><h5 class="small-head" id="F40-failex1">
 					失敗例 1</h5><div class="example"><div class="textbody"><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、不適合である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="ja"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
    &lt;head&gt;     
-      &lt;title&gt;使用禁止！&lt;/title&gt;     
+      &lt;title&gt;Do not use this!&lt;/title&gt;     
       &lt;meta http-equiv="refresh"
       content="5; url=http://www.example.com/newpage" /&gt;   
    &lt;/head&gt;   
    &lt;body&gt;     
       &lt;p&gt;       
-         ブラウザがリフレッシュをサポートしている場合、5秒後に
-         &lt;a href="http://www.example.com/newpage"&gt;新しいサイト&lt;/a&gt;        
-         に移動します。サポートしていない場合には、リンクを選択してください。     
+         If your browser supports Refresh, you'll be       
+         transported to our        
+         &lt;a href="http://www.example.com/newpage"&gt;new site&lt;/a&gt;        
+         in 5 seconds, otherwise, select the link manually.     
       &lt;/p&gt;   
    &lt;/body&gt; 
-&lt;/html&gt;</code></pre></div></div></div><h4 id="F40-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+&lt;/html&gt;
+</code></pre></div></div></div><h4 id="F40-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4">HTML 4.01 META element</a> 
                </p></li></ul></div><h4 id="F40-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SVR1">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H76">H76: クライアントサイドで瞬間的にリダイレクトするために、meta 要素の refresh を使用する</a></li></ul></div><h4 id="F40-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F40-procedure">手順</h5><ol class="enumar"><li><p>ページを表示させる。</p></li><li><p>一定の時間が経過しても、ページがリダイレクトされない。</p></li></ol><h5 class="small-head" id="F40-results">期待される結果</h5><ol class="enumar"><li><p>2. を満たしていれば、この失敗例が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ol></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F41" id="F41"> </a>F41: 達成基準 2.2.1、達成基準 2.2.4、及び 達成基準 3.2.5 の失敗例 － ページを再読み込みするために、meta 要素リフレッシュを使用している</h3><div class="applicability"><h4 id="F41-applicability">適用 (対象)</h4><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-required-behaviors">
 				達成基準 2.2.1 (タイミング調整可能)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-required-behaviors">
@@ -17156,15 +17162,16 @@ document.body.appendChild(newP);
 						達成基準 3.2.5 (要求による変化)を理解する
 					</a></li></ul></li></ul><h4 id="F41-description">解説</h4><div class="textbody"><p>リフレッシュの <code>meta</code> <code>http-equiv</code> は、定期的にページを更新したり、利用者を別のページにリダイレクトしたりするためにしばしば用いられる。もし時間間隔が短すぎ、かつ自動リフレッシュを無効にする方法がない場合、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p></div><h4 class="small-head" id="F41-examples">事例</h4><div class="failure"><h5 class="small-head" id="F41-failex1">
 					失敗例 1</h5><div class="example"><div class="textbody"><p>この非推奨例では、利用者ページが一定間隔で変化する。コンテンツ制作者はこの手法を「プッシュ」テクノロジーのシミュレートに用いるべきではない。制作者は、利用者がページを読むのにどれくらいの時間を必要とするかを予期することはできない。早すぎるリフレッシュは利用者を混乱させることになる。コンテンツ制作者は周期的なリフレッシュを避け、利用者自身にいつ最新の情報がほしいかを選択させるべきである。(<code>content</code> 属性内の数字はリフレッシュまでの秒数である。)</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="ja"&gt;   
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
   &lt;head&gt;     
-    &lt;title&gt;WCAG 2.0のためのHTMLの達成方法&lt;/title&gt;     
+    &lt;title&gt;HTML Techniques for WCAG 2.0&lt;/title&gt;     
     &lt;meta http-equiv="refresh" content="60" /&gt;   
   &lt;/head&gt;   
   &lt;body&gt;
     ...     
   &lt;/body&gt; 
-&lt;/html&gt;</code></pre></div></div></div><h4 id="F41-related-techs">関連する達成方法</h4><div class="textbody"><p>(今のところ、なし。)</p></div><h4 id="F41-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F41-procedure">手順</h5><ol class="enumar"><li><p>ドキュメント内の <code>meta</code> 要素を探す。</p></li><li><p>各 <code>meta</code> 要素について、<code>http-equiv</code> 属性の値に"refresh" (大文字小文字を区別しない) が含まれており、かつ <code>content</code> 属性が 0 より大きいの数値 (秒を表す) で、"; url =" (大文字小文字を区別しない) ではないことを確認する。</p></li><li><p>リフレッシュを無効にするメカニズムがあるかどうかを確認する。</p></li></ol><h5 class="small-head" id="F41-results">期待される結果</h5><ul><li><p>2. を満たし、かつ 3. を満たしていない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F42" id="F42"> </a>F42: 達成基準 1.3.1、達成基準 2.1.1、達成基準 2.1.3、又は達成基準 4.1.2 の失敗例 － リンクをエミュレートしている</h3><div class="applicability"><h4 id="F42-applicability">適用 (対象)</h4><div class="textbody"><p>スクリプトを含む HTML 及び XHTML。</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
+&lt;/html&gt;
+</code></pre></div></div></div><h4 id="F41-related-techs">関連する達成方法</h4><div class="textbody"><p>(今のところ、なし。)</p></div><h4 id="F41-tests">検証</h4><div class="textbody"><h5 class="small-head" id="F41-procedure">手順</h5><ol class="enumar"><li><p>ドキュメント内の <code>meta</code> 要素を探す。</p></li><li><p>各 <code>meta</code> 要素について、<code>http-equiv</code> 属性の値に"refresh" (大文字小文字を区別しない) が含まれており、かつ <code>content</code> 属性が 0 より大きいの数値 (秒を表す) で、"; url =" (大文字小文字を区別しない) ではないことを確認する。</p></li><li><p>リフレッシュを無効にするメカニズムがあるかどうかを確認する。</p></li></ol><h5 class="small-head" id="F41-results">期待される結果</h5><ul><li><p>2. を満たし、かつ 3. を満たしていない場合、この失敗条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="F42" id="F42"> </a>F42: 達成基準 1.3.1、達成基準 2.1.1、達成基準 2.1.3、又は達成基準 4.1.2 の失敗例 － リンクをエミュレートしている</h3><div class="applicability"><h4 id="F42-applicability">適用 (対象)</h4><div class="textbody"><p>スクリプトを含む HTML 及び XHTML。</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#content-structure-separation-programmatic">
 						クイックリファレンス 1.3.1 (情報及び関係性)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
