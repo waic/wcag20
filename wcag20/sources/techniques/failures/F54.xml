@@ -17,7 +17,7 @@
       <eg-group role="failure">
       <description><p>次に示すのは、マウスでのクリックに反応して他のページに移動する画像の例である。これは、キーボードを用いて次のページに移動できないため不適合である。
       <code><![CDATA[
-<p><img onmousedown="nextPage();" src="nextarrow.gif" alt="次のページへ移動"></p>]]></code></p>
+<p><img onmousedown="nextPage();" src="nextarrow.gif" alt="Go to next page"></p>]]></code></p>
 </description>
     </eg-group>
    </examples>

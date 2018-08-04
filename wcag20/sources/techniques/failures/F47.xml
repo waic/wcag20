@@ -21,7 +21,7 @@
       <eg-group role="failure">
       <description><p>製品リストのページで、セール価格に注意を引くため、<code>blink</code> 要素を用いている。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p>
 </description>
-      <code><![CDATA[<p>わが社の素晴らしい製品 <blink>セール! 44,995ドル！</blink></p>]]></code>
+      <code><![CDATA[<p>My Great Product <blink>Sale! $44,995!</blink></p>]]></code>
     </eg-group>
    </examples>
    <resources>

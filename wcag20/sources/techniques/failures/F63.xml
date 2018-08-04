@@ -29,29 +29,30 @@
       <head>隣接する段落のリンク</head>
       <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-<p>ある英国のビジネスマンが200万マイルの
-マイレージを獲得していて、世界初の消費者向け
-宇宙旅行の旅に出ようと計画している。</p>
+            <codeblock xml:space="preserve"><![CDATA[
+<p>A British businessman has racked up 2 million flyer miles and plans to 
+travel on the world's first commercial tourism flights to space.</p>
 
-<p><a href="ff.html">続きを読む...</a></p>]]></codeblock>
+<p><a href="ff.html">Read More...</a></p>
+]]></codeblock>
     </eg-group>
     <eg-group role="failure">
       <head>レイアウトテーブル内の隣接セルのリンク</head>
       <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[
-   <table>
+            <codeblock xml:space="preserve"><![CDATA[
+ <table>
    <tr> 
-       <td>ブラウザで音楽を聴く</td>
+       <td>Play music from your browser</td>
    </tr>
    <tr>
        <td>
        <a href="http://www.example.com/download.htm">
-       <img src="download.jpg" width="165" height="32" alt="今すぐダウンロード"></a>
+       <img src="download.jpg" width="165" height="32" alt="Download now"></a>
        </td>
    </tr>
- </table>]]></codeblock>
+ </table>
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>
