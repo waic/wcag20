@@ -27,7 +27,7 @@
    <examples>
       <eg-group role="failure">
       <head>隣接する段落のリンク</head>
-      <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
+      <description><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「Read More...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p>
 </description>
             <codeblock xml:space="preserve"><![CDATA[
 <p>A British businessman has racked up 2 million flyer miles and plans to 
