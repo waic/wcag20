@@ -16,10 +16,11 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 	response.setHeader("Refresh", "10; URL=TargetPage.html");
 	out.println("&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
 	 \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;");
-	out.println("&lt;html&gt;&lt;head&gt;&lt;title&gt;リダイレクト&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");
-	out.println("&lt;p&gt;このページは10秒後にリダイレクトします。&lt;/p&gt;");
+	out.println("&lt;html&gt;&lt;head&gt;&lt;title&gt;Redirect&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");
+	out.println("&lt;p&gt;This page will redirect you in 10 seconds.&lt;/p&gt;");
 	out.println("&lt;/body&gt;&lt;/html&gt;");
-  }</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F58-failex2">
+  }
+</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F58-failex2">
 					失敗例 2</h3><div class="example"><div class="textbody"><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、不適合である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
  &lt;% @Language = "VBScript" %&gt;
  &lt;% option explicit 

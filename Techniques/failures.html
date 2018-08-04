@@ -601,13 +601,15 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><h3 id="F42-description">解説</h3><div class="textbody"><p>この失敗は、JavaScript のイベントハンドラが、リンクをエミュレートするために要素に付加されている場合に発生する。この方法で作成されたリンクは、キーボードでタブ移動することができず、他のコントロール及び／又はリンクのようにキーボードでフォーカスを受け取れない。スクリプトのイベントがリンクをエミュレートするために使用される場合、支援技術を含むユーザエージェントは、コンテンツ内のリンクをリンクとして識別できないかもしれない。インタラクティブなコントロールとして認識されてもリンクとして認識されないかもしれない。そのような要素は、ユーザエージェントや支援技術によって生成されたリンクリストには現れない。</p><p><div class="note">支援技術がリンクコントロールとして不明な要素を識別するために、ARIA <code>role</code> 属性を使用することは可能である。しかし、ARIA の最善の対応策としては、<a href="http://www.w3.org/TR/aria-in-html/#first-rule-of-aria-use">可能な限りネイティブな要素を使用すること</a>が求められ、不明な要素をリンクとして識別するために <code>role</code> 属性を使用することは推奨しない。</div></p><p><code>a</code> と <code>area</code> 要素は、リンクをマークアップするためのものである。</p></div><h3 class="small-head" id="F42-examples">事例</h3><div class="failure"><h4 class="small-head" id="F42-failex1">
 					    失敗例 1: span 要素のスクリプト</h4><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが <code>span</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;span onclick="this.location.href='newpage.html'"&gt;
-    偽のリンク
-&lt;/span&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F42-failex2">
+&lt;span onclick="location.href='newpage.html'"&gt;
+    Fake link
+&lt;/span&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F42-failex2">
 					    失敗例 2: img 要素のスクリプト</h4><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;img src="go.gif" 
-   alt="新しいページへ移動" 
-   onclick="this.location.href='newpage.html'"&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F42-failex3">
+   &lt;img src="go.gif" 
+   alt="go to the new page" 
+   onclick="location.href='newpage.html'"&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F42-failex3">
 					    失敗例 3: キーボードサポートがある img 要素のスクリプト</h4><div class="example"><div class="textbody"><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、リンクとして機能する。この例では、リンク機能がマウス又はユーザエージェントが要素をタブ移動可能な範囲に含まれる場合には Enter キーで機能する。それでもなお、この要素はリンクとしては認識されない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 function doNav(url)
 {
@@ -626,7 +628,7 @@ function doKeyPress(url)
 &lt;p&gt;
 	&lt;img src="bargain.jpg"
 		tabindex="0" 
-		alt="バーゲンを見る"
+		alt="View Bargains"
 		onclick="doNav('viewbargains.html');"
 		onkeypress="doKeyPress('viewbargains.html');"
 	&gt;
@@ -662,7 +664,7 @@ function changeLocation(objEvent, strLocation)
 	window.location.href = strLocation;
 }</code></pre></div><div class="textbody"><p><code>div</code> 要素のためのマークアップ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;div id="linklike"&gt;
-アンケートの結果を見る。
+View the results of the survey.
 &lt;/div&gt;</code></pre></div></div></div><h3 id="F42-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) Version 1.0</a>
                </p></li></ul></div><h3 id="F42-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G115">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/F59">F59: 達成基準 4.1.2 の失敗例 － コントロールに役割 (role) を提供せずに、HTML の div 要素又は span 要素をユーザインタフェースコントロールにするために、スクリプトを用いている</a></li></ul></div><h3 id="F42-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F42-procedure">手順</h4><p>要素がリンクをエミュレートするために JavaScript のイベントハンドラを使用したリンクとして提示されるすべての要素について:</p><ol class="enumar"><li><p>プログラムによって解釈された要素のロールがリンクかどうかを確認する。</p></li><li><p>エミュレートされたリンクについて、キーボード操作で有効にできるかどうかを確認する。</p></li></ol><h4 class="small-head" id="F42-results">期待される結果</h4><ul><li><p>1. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 1.3.1 及び 4.1.2 を満たしていないことになる。2. が満たされない場合、この失敗条件が適用され、コンテンツは達成基準 2.1.1 及び 2.1.3 を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F43" id="F43"> </a>F43: 達成基準 1.3.1 の失敗例 － コンテンツにおける関係を表さない方法で、構造的なマークアップを使用している</h2><div class="applicability"><h3 id="F43-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
@@ -672,45 +674,50 @@ function changeLocation(objEvent, strLocation)
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h3 id="F43-description">解説</h3><div class="textbody"><p>この失敗例では、プレゼンテーション上の効果を実現するために用いられている構造的マークアップが、コンテンツ上には存在しない関係を示している場合に発生する失敗について解説する。この不適合は、コンテンツ上の構造的関係を頼りにナビゲーションを行ったり、コンテンツの一部と他の部分の関係を理解している利用者の混乱を招く。なお、<code>&lt;th&gt;</code> 要素や <code>&lt;caption&gt;</code> 要素など、不適切な構造的マークアップが含まれていない限り、HTML テーブルをレイアウトに使用することはこの失敗例には当たらない。</p><div class="note"><p class="prefix"><em>注記: </em>要素のセマンティックな意味は一般的に支援技術に受け渡されているが、WAI-ARIA presentation role は、要素のネイティブなセマンティクスを隠してアクセシビリティ API にマップされないようにするために使用できる。要素の <code>role</code> を presentation に設定すると、その要素のセマンティクスを利用者から隠すことでこの失敗を避けられるかもしれない。</p></div></div><h3 class="small-head" id="F43-examples">事例</h3><div class="failure"><h4 class="small-head" id="F43-failex1">
 					    失敗例 1: 視覚的効果の実現のみのために用いられている見出し</h4><div class="example"><div class="textbody"><p>この例では、太字の大きな文字で連絡先住所を表示するために見出しが用いられている。しかし、この連絡先住所がページ中の新しい章や節の開始を示しているわけではないので、見出しとしてマークアップするのは不適切である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p&gt;詳細に興味をお持ちでしたら、以下までご連絡ください。&lt;/p&gt; 
+&lt;p&gt;Interested in learning more? Write to us at&lt;/p&gt; 
 &lt;h4&gt;3333 Third Avenue, Suite 300 · New York City&lt;/h4&gt;
 
-&lt;p&gt;完全な情報を一切無料でお送りします。&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex2">
+&lt;p&gt;And we'll send you the complete informational packet absolutely Free!&lt;/p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex2">
 					    失敗例 2: プレゼンテーション上の効果を目的とした見出し要素の使用</h4><div class="example"><div class="textbody"><p>この例では、見出し要素が文書構造を表すため、そして視覚的な効果を実現するための二つの異なる目的で用いられている。<code>h1</code> 及び <code>h2</code> 要素はそれぞれ、文書全体の始まりと概要を示す目的で適切に使用されている一方で、タイトルと概要の間にある <code>h3</code> 及び <code>h4</code> 要素は、作者の名前と日付を表示するためのフォントを制御する目的で使用されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;h1&gt;ウェブページにおける見出し要素の利用に関する研究&lt;/h1&gt;
+&lt;h1&gt;Study on the Use of Heading  Elements in Web Pages&lt;/h1&gt;
 &lt;h3&gt;Joe Jones and Mary Smith&lt;h3&gt;
-&lt;h4&gt;2006年3月14日&lt;/h4&gt;
-&lt;h2&gt;概要&lt;/h2&gt;
-&lt;p&gt;研究は2006年初頭に行われ ...
-&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex3">
+&lt;h4&gt;March 14, 2006&lt;/h4&gt;
+&lt;h2&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;A study was conducted in early 2006 ...
+&lt;/p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex3">
 					    失敗例 3: 追加の字下げを目的とした blockquote 要素の使用</h4><div class="example"><div class="textbody"><p>以下の例では、視覚的な表示を行うブラウザにおいてテキストを目立たせる目的で、引用文ではないテキストに対して <code>blockquote</code> 要素が使用されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p&gt;同社のウェブサイトに関する詳細な検討の結果、タスクフォースは
-以下の問題がサイト全体に多く見られることを指摘した。&lt;/p&gt;
+&lt;p&gt;After extensive study of the company Web site, the task force 
+identified the following common problem.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;視覚的効果を目的としたマークアップの利用により、ページが
-スクリーンリーダーの利用者にとって分かりづらいものになっている。&lt;/p&gt;
+&lt;p&gt;The use of markup for presentational effects made Web 
+pages confusing to screen reader users.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;委員会では、これによってもたらされる問題の具体例を以下に
-示している。&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex4">
+&lt;p&gt;The committee lists particular examples of the problems 
+introduced by this practice below.&lt;/p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F43-failex4">
 					    失敗例 4: テキストの枠線を表示する目的で fieldset 要素と legend 要素を使用する</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;fieldset&gt;
-&lt;legend&gt;バーゲンコーナー&lt;/legend&gt;
-&lt;p&gt;今購入すると20パーセント割引&lt;/p&gt;
-&lt;/fieldset&gt;</code></pre></div></div></div><h3 id="F43-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F43-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/F46">F46: 達成基準 1.3.1 の失敗例 － レイアウトテーブルで、th 要素、caption 要素、又は空ではない summary 属性を使用している</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G115">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H42">H42: 見出しを特定するために、h1 要素～ h6 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H73">H73: データテーブルの概要を提供するために、table 要素の summary 属性を使用する</a></li></ul></div><h3 id="F43-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F43-procedure">手順</h4><ol class="enumar"><li><p>要素のセマンティックな意味が支援技術に受け渡され、かつ要素の内容に対して適切であることを確認する。</p></li></ol><h4 class="small-head" id="F43-results">期待される結果</h4><ul><li><p>1. が満たされない場合、この失敗条件が適用される。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F44" id="F44"> </a>F44: 達成基準 2.4.3 の失敗例 － 意味及び操作性を保持しないタブ順序を作成するために、tabindex 属性を使用している</h2><div class="applicability"><h3 id="F44-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
+&lt;legend&gt;Bargain Corner&lt;/legend&gt;
+&lt;p&gt;Buy today, and save 20%&lt;/p&gt;
+&lt;/fieldset&gt;
+</code></pre></div></div></div><h3 id="F43-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F43-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/F46">F46: 達成基準 1.3.1 の失敗例 － レイアウトテーブルで、th 要素、caption 要素、又は空ではない summary 属性を使用している</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G115">G115: 構造をマークアップするために、セマンティックな要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H42">H42: 見出しを特定するために、h1 要素～ h6 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H73">H73: データテーブルの概要を提供するために、table 要素の summary 属性を使用する</a></li></ul></div><h3 id="F43-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F43-procedure">手順</h4><ol class="enumar"><li><p>要素のセマンティックな意味が支援技術に受け渡され、かつ要素の内容に対して適切であることを確認する。</p></li></ol><h4 class="small-head" id="F43-results">期待される結果</h4><ul><li><p>1. が満たされない場合、この失敗条件が適用される。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F44" id="F44"> </a>F44: 達成基準 2.4.3 の失敗例 － 意味及び操作性を保持しないタブ順序を作成するために、tabindex 属性を使用している</h2><div class="applicability"><h3 id="F44-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
 				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-focus-order">
 						クイックリファレンス 2.4.3 (フォーカス順序)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">
 						達成基準 2.4.3 (フォーカス順序)を理解する
 					</a></li></ul></li></ul><h3 id="F44-description">解説</h3><div class="textbody"><p>この文書は、タブ順序がコンテンツの論理的な関係性及び順序に従っていない失敗例について述べている。</p><p>リンク及びフォーム要素のようなフォーカス可能な要素には、<code>tabindex</code> 属性がある。要素は、<code>tabindex</code> 属性の値が小さいものから大きいものへという順序でフォーカスを受け取る。<code>tabindex</code> 属性の値が、コンテンツ内での関係性及び順序とは異なる順序で割り当てられていると、もはやタブ順序はコンテンツの関係性及び順序に従っていないことになる。</p><p>この失敗例の最も一般的な原因の 1 つは、<code>tabindex</code> が使用されているページを編集するときに発生する。コンテンツが編集されても、<code>tabindex</code> 属性がコンテンツの変更を反映するように更新されない場合、タブの順序とコンテンツの順序が一致しなくなり易い。</p></div><h3 class="small-head" id="F44-examples">事例</h3><div class="failure"><h4 class="small-head" id="F44-failex1">
 					    失敗例 1</h4><div class="example"><div class="textbody"><p>次の事例は、代替のタブ順序を指定するために tabindex を誤って用いている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-  &lt;ol&gt;
-   &lt;li&gt;&lt;a href="main.html" tabindex="1"&gt;ホーム&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="chapter1.html" tabindex="4"&gt;第1章&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="chapter2.html" tabindex="3"&gt;第2章&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="chapter3.html" tabindex="2"&gt;第3章&lt;/a&gt;&lt;/li&gt;
-  &lt;/ol&gt;</code></pre></div><div class="textbody"><p>このリストを Tab キーを用いてナビゲートする場合、リストは、ホーム、第 3 章、第 2 章、第 1 章、という順序でナビゲートされ、コンテンツにおける順序通りではなくなってしまう。</p></div></div></div><div class="failure"><h4 class="small-head" id="F44-failex2">
+&lt;ol&gt;
+   &lt;li&gt;&lt;a href="main.html" tabindex="1"&gt;Homepage&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="chapter1.html" tabindex="4"&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="chapter2.html" tabindex="3"&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="chapter3.html" tabindex="2"&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></div><div class="textbody"><p>このリストを Tab キーを用いてナビゲートする場合、リストは、Homepage、Chapter 3、Chapter 2、Chapter 1、という順序でナビゲートされ、コンテンツにおける順序通りではなくなってしまう。</p></div></div></div><div class="failure"><h4 class="small-head" id="F44-failex2">
 					    失敗例 2</h4><div class="example"><div class="textbody"><p>すべてのテキストフィールドに対して <code>tabindex</code> 属性を提供することによって、ウェブページでのタブ順序が明確に設定されていた。後に、そのページには新しいテキストフィールドがページの中央付近に追加されたが、コンテンツ制作者はその新しいテキストフィールドに <code>tabindex</code> 属性を付加し忘れてしまった。結果として、新しいテキストフィールドのタブ順序がそのページの最後になってしまっている。</p></div></div></div><h3 id="F44-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>HTML 4.01 <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">Tabbing navigation</a> 
                </p></li></ul></div><h3 id="F44-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H4">H4: リンク、フォームコントロール、及びオブジェクトを通して、論理的なタブ順序を作成する</a></li></ul></div><h3 id="F44-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F44-procedure">手順</h4><ol class="enumar"><li><p><code>tabindex</code> 属性を用いている場合、<code>tabindex</code> 属性によって指定されているタブ順序がコンテンツの関係性に従っている。</p></li></ol><h4 class="small-head" id="F44-results">期待される結果</h4><ul><li><p>1. を満たしていない場合、この失敗基準が適用され、そのコンテンツは達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F46" id="F46"> </a>F46: 達成基準 1.3.1 の失敗例 － レイアウトテーブルで、<code>th</code> 要素、<code>caption</code> 要素、又は空ではない <code>summary</code> 属性を使用している</h2><div class="applicability"><h3 id="F46-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-programmatic">
 				達成基準 1.3.1 (情報及び関係性)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#content-structure-separation-programmatic">
@@ -719,25 +726,26 @@ function changeLocation(objEvent, strLocation)
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h3 id="F46-description">解説</h3><div class="textbody"><p>この達成方法の目的は、レイアウトにのみ使用されるテーブルに <code>th</code> 要素、<code>summary</code> 属性、又は <code>caption</code> 要素が含まれる場合に発生する失敗について記述することである。これは、構造化 (又はセマンティック) マークアップをプレゼンテーションにのみ使用するため、失敗例である。HTML 及び XHTML の <code>table</code> 要素の目的は、データを提示することである。</p><p>レイアウトテーブルの中で用いられることは少ないが、以下の構造的なマークアップもレイアウトテーブル内で用いられると達成基準 1.3.1 に不適合となる:</p><ul><li><p><code>headers</code> 属性</p></li><li><p><code>scope</code> 属性</p></li></ul><p>支援技術は、HTML 及び XHTML のテーブルに含まれる構造的な情報を用いて、利用者に対してデータを論理的な形で伝えるようになっている。<code>th</code> 要素は、行や列の見出しを表すために用いられる。スクリーンリーダーを利用している場合、表の中を移動しながら読む時、移動した先のセルの行や列の見出しを読み上げるために <code>th</code> 要素の内容が利用される。<code>summary</code> 属性は、その表の目的や機能についてのテキストによる説明を提供するために用いられ、利用者はスクリーンリーダーを用いてこの情報を得ることができる。<code>caption</code> 要素は表の一部であり、その表を特定する役割を持つ。</p><p>WCAG 2.0 ではレイアウトテーブルの使用を禁じてはいないが、HTML で定義されているテーブル関聨の要素が持つセマンティックを保持し、プレゼンテーションとコンテンツを分離して記述するコーディングスタイルを遵守するためにも、CSS によるレイアウトを行うことが推奨される。テーブルレイアウトを行う際には、<code>th</code> 要素を用いてはならない。この場合、この表はデータを示しているわけではないから、どのセルも行や列の見出しとしてマークアップする必要はない。同様に、レイアウトテーブルを実現するだけのために用いられている表について、追加の説明を提供する必要はない。<code>summary</code> 属性は使用するべきではなく、また <code>summary</code> 属性を使って、たとえば「レイアウトテーブル」のような説明を追加するべきではない。このような情報が記述された場合、スクリーンリーダーを使ってコンテンツを利用している利用者に有用な情報が提供されないだけでなく、ナビゲーションの邪魔になる。レイアウトテーブルに値が空の <code>summary</code> 属性を指定することは許容されるが、推奨されない。</p></div><h3 class="small-head" id="F46-examples">事例</h3><div class="failure"><h4 class="small-head" id="F46-failex1">
 					    失敗例 1</h4><div class="example"><div class="textbody"><p>以下は、テーブルを使ってコンテンツを 3 段組にする単純な例である。左側にナビゲーションバー、中央にメインのコンテンツ、右側に追加のサイドバーが配置されている。ページの上部にはページのタイトルが表示されている。この例では、ページのタイトルを <code>&lt;th&gt;</code> を使ってマークアップし、この表がレイアウトテーブルであることを示す <code>summary</code> 属性が指定されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;table summary="レイアウトテーブルです。"&gt;
+ &lt;table summary="layout table"&gt;
  &lt;tr&gt;
-   &lt;th colspan="3"&gt;ページのタイトル&lt;/th&gt;
+   &lt;th colspan=3&gt;Page Title&lt;/th&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
-   &lt;td&gt;&lt;div&gt;ナビゲーションコンテンツ&lt;/div&gt;&lt;/td&gt;
-   &lt;td&gt;&lt;div&gt;メインコンテンツ&lt;/div&gt;&lt;/td&gt;
-   &lt;td&gt;&lt;div&gt;右側のサイドバーコンテンツ&lt;/div&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;div&gt;navigation content&lt;/div&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;div&gt;main content&lt;/div&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;div&gt;right sidebar content&lt;/div&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
-   &lt;td colspan="3"&gt;フッター&lt;/td&gt;
+   &lt;td colspan=3&gt;footer&lt;/td&gt;
  &lt;/tr&gt;
- &lt;/table&gt;</code></pre></div></div></div><h3 id="F46-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F46-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H73">H73: データテーブルの概要を提供するために、table 要素の summary 属性を使用する</a></li></ul></div><h3 id="F46-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F46-procedure">手順</h4><ol class="enumar"><li><p>HTML 又は XHTML のソースコードに、<code>table</code> 要素があることを確認する。</p></li><li><p>そのコンテンツ中で、視覚的レイアウトのみの目的でテーブルが用いられている場合</p><ol class="enumla"><li><p>その <code>table</code> 要素には、<code>th</code> 要素が含まれていない。</p></li><li><p>その <code>table</code> 要素に対して、値が空ではない <code>summary</code> 属性が指定されていない。</p></li><li><p>その <code>table</code> 要素には <code>caption</code> 要素が含まれていない。</p></li></ol></li></ol><h4 class="small-head" id="F46-results">期待される結果</h4><ul><li><p>2. のいずれかを満たしていない場合、不適合条件が適用され、そのコンテンツは達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F47" id="F47"> </a>F47: 達成基準 2.2.2 の失敗例 － blink 要素を使用している</h2><div class="applicability"><h3 id="F47-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
+ &lt;/table&gt;
+</code></pre></div></div></div><h3 id="F46-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F46-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H39">H39: データテーブルのキャプションとデータテーブルを関連付けるために、caption 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H73">H73: データテーブルの概要を提供するために、table 要素の summary 属性を使用する</a></li></ul></div><h3 id="F46-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F46-procedure">手順</h4><ol class="enumar"><li><p>HTML 又は XHTML のソースコードに、<code>table</code> 要素があることを確認する。</p></li><li><p>そのコンテンツ中で、視覚的レイアウトのみの目的でテーブルが用いられている場合</p><ol class="enumla"><li><p>その <code>table</code> 要素には、<code>th</code> 要素が含まれていない。</p></li><li><p>その <code>table</code> 要素に対して、値が空ではない <code>summary</code> 属性が指定されていない。</p></li><li><p>その <code>table</code> 要素には <code>caption</code> 要素が含まれていない。</p></li></ol></li></ol><h4 class="small-head" id="F46-results">期待される結果</h4><ul><li><p>2. のいずれかを満たしていない場合、不適合条件が適用され、そのコンテンツは達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F47" id="F47"> </a>F47: 達成基準 2.2.2 の失敗例 － blink 要素を使用している</h2><div class="applicability"><h3 id="F47-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-pause">
 						クイックリファレンス 2.2.2 (一時停止、停止、非表示)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-pause.html">
 						達成基準 2.2.2 (一時停止、停止、非表示)を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.36.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/failures.html#F47">F47 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="F47-description">解説</h3><div class="textbody"><p><code>blink</code> 要素は正式な HTML 又は XHTML の仕様の一部ではないが、多くのユーザエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が 3 秒より長く続く可能性があることから、<code>blink</code> を用いているコンテンツは達成基準を満たしていないことになる。</p></div><h3 class="small-head" id="F47-examples">事例</h3><div class="failure"><h4 class="small-head" id="F47-failex1">
-					    失敗例 1</h4><div class="example"><div class="textbody"><p>製品リストのページで、セール価格に注意を引くため、<code>blink</code> 要素を用いている。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;わが社の素晴らしい製品 &lt;blink&gt;セール! 44,995ドル！&lt;/blink&gt;&lt;/p&gt;</code></pre></div></div></div><h3 id="F47-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+					    失敗例 1</h4><div class="example"><div class="textbody"><p>製品リストのページで、セール価格に注意を引くため、<code>blink</code> 要素を用いている。利用者が点滅をコントロールできないため、このウェブページは達成基準を満たしていない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;p&gt;My Great Product &lt;blink&gt;Sale! $44,995!&lt;/blink&gt;&lt;/p&gt;</code></pre></div></div></div><h3 id="F47-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink">Mozilla Developer Network: &lt;blink&gt;</a> 
                </p></li><li><p> 
                   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">Mozilla Developer Network: text-decoration</a> 
@@ -748,35 +756,36 @@ function changeLocation(objEvent, strLocation)
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h3 id="F48-description">解説</h3><div class="textbody"><p>この文書は、表形式の情報をマークアップするために HTML の <code>pre</code> 要素を使用することによる失敗例について述べている。<code>pre</code> 要素は、テキストの視覚的なフォーマットだけを保持するためのものである。<code>pre</code> 要素を用いて表形式の情報をマークアップすれば、利用者が画面を見ることができない場合、又はその視覚的な表現が大きく変わってしまった場合には、表のデータセルと見出しセルとの間で視覚的にほのめかされている論理的な関係性は失われてしまう。</p><p>その代わりに、HTML には表形式のデータを提示するために用いる <code>table</code> 要素がある。支援技術は、利用者にデータを論理的な方法で提示するために、HTML のテーブルの構造を用いている。<code>pre</code> 要素を使用した際には、支援技術はその構造に関する情報を得ることができない。</p></div><h3 class="small-head" id="F48-examples">事例</h3><div class="failure"><h4 class="small-head" id="F48-failex1">
 					    失敗例 1: 列の間をタブ区切りで整形したスケジュール</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;pre&gt;
- 	月曜日		火曜日	水曜日		木曜日		金曜日
+ &lt;pre&gt;
+ 	Monday	Tuesday	Wednesday	Thursday	Friday
  8:00-
- 9:00	サムと会う				
+ 9:00	Meet with Sam				
  9:00-
- 10:00				Dr.ウィリアム	再びサムと	サンアントニオに出発
- &lt;/pre&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F48-failex2">
+ 10:00			Dr. Williams	Sam again	Leave for San Antonio
+ &lt;/pre&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F48-failex2">
 					    失敗例 2: フォーマット済みのテキストを用いて表示した選挙結果</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;pre&gt;
-   サーキット COURT JUDGE 支部 3
-                                                  　ラ
-                                                   　イ
-                                          Ｍ Ｒ エ    ト
-                                           ア .  ル    
-                                     マ ラ   リ   バ    
-                                      イ ン   ー   ー    
-                                       ク グ        ト     イ
-                                        　 　        　     ン
+ &lt;pre&gt;
+   CIRCUIT COURT JUDGE BRANCH 3
+                                                  W
+                                                   R
+                                          M R E     I
+                                           A . L     T
+                                     M L    R   B     E
+                                      I A    Y   E     -
+                                       K N        R     I
+                                        E G        T     N
                                        -----   -----   -----
-0001 アルビオンタウン WDS 1-2            22      99       0
-0002 ベリータウン WDS 1-2                52     178       0
-0003 ブラックアースタウン                16      49       0
-0004 ブルーミンググローブタウン WDS 1-3  44     125       0
-0005 ブルータウン MOUNDS                 33     117       0
-0006 ブリストルタウン WDS 1-3            139    639       1
-0007 バークタウウン WDS 1-4              80     300       0
-0008 クリスティーナタウン WDS 1-2        22      50       0
-
- &lt;/pre&gt;</code></pre></div></div></div><h3 id="F48-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F48-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li></ul></div><h3 id="F48-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F48-procedure">手順</h4><ol class="enumar"><li><p><code>pre</code> 要素が使われている。</p></li><li><p><code>pre</code> 要素が使われている部分について、それが表形式の情報である。</p></li></ol><h4 class="small-head" id="F48-results">期待される結果</h4><ul><li><p>2. を満たしている場合、この失敗基準が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F49" id="F49"> </a>F49: 達成基準 1.3.2 の失敗例 － リニアライズしたときに、意味を成さない HTML のレイアウトテーブルを使用している</h2><div class="applicability"><h3 id="F49-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-sequence">
+0001 TOWN OF ALBION WDS 1-2               22      99       0
+0002 TOWN OF BERRY WDS 1-2                52     178       0
+0003 TOWN OF BLACK EARTH                  16      49       0
+0004 TOWN OF BLOOMING GROVE WDS 1-3       44     125       0
+0005 TOWN OF BLUE MOUNDS                  33     117       0
+0006 TOWN OF BRISTOL WDS 1-3             139     639       1
+0007 TOWN OF BURKE WDS 1-4                80     300       0
+0008 TOWN OF CHRISTIANA WDS 1-2           22      50       0
+ &lt;/pre&gt;
+</code></pre></div></div></div><h3 id="F48-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F48-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H51">H51: 表形式の情報を提示するために、テーブルのマークアップを使用する</a></li></ul></div><h3 id="F48-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F48-procedure">手順</h4><ol class="enumar"><li><p><code>pre</code> 要素が使われている。</p></li><li><p><code>pre</code> 要素が使われている部分について、それが表形式の情報である。</p></li></ol><h4 class="small-head" id="F48-results">期待される結果</h4><ul><li><p>2. を満たしている場合、この失敗基準が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F49" id="F49"> </a>F49: 達成基準 1.3.2 の失敗例 － リニアライズしたときに、意味を成さない HTML のレイアウトテーブルを使用している</h2><div class="applicability"><h3 id="F49-applicability">適用 (対象)</h3><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#content-structure-separation-sequence">
 				達成基準 1.3.2 (意味のある順序)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#content-structure-separation-sequence">
 						クイックリファレンス 1.3.2 (意味のある順序)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html">
@@ -796,44 +805,45 @@ function changeLocation(objEvent, strLocation)
 					    失敗例 2: 線形化されると意味のある列が分割されてしまうレイアウトテーブル</h4><div class="example"><div class="textbody"><p>ある美術館の展覧会に関するウェブページでは、リンクの長い一覧を含むナビゲーションバーをページ左側に配置している。そのナビゲーションバーの右側には展覧会に展示される絵の一つが置かれている。その絵の右側には、美術館でその絵の横の壁にみられるであろうプラカードのテキストが置かれている。そのテキストの下には、「Description,」という見出しと、その見出しの下にその絵の説明が置かれている。絵、プラカードのテキスト、説明の見出し、そして絵の説明というのが意味のある順序となっている。</p><p>ページ中で各要素を配置するためにレイアウトテーブルが用いられている。ナビゲーションバー中の一連のリンクは、最も左の列の異なるセルに分割されている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;table&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 1&lt;/a&gt;&lt;/td&gt;
-	&lt;td rowspan="20"&gt;&lt;img src="img.png" alt="美術館の絵"&gt;&lt;/td&gt;
-	&lt;td rowspan="6"&gt;&lt;img src="placard.png" alt="プラカードのテキスト"&gt;&lt;/td&gt; 
+	&lt;td&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/td&gt;
+	&lt;td rowspan="20"&gt;&lt;img src="img.png" alt="Museum Picture"&gt;&lt;/td&gt;
+	&lt;td rowspan="6"&gt;&lt;img src="placard.png" alt="Placard text"&gt;&lt;/td&gt; 
 &lt;/tr&gt; 
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 2&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 3&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 4&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 4&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 5&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 5&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 6&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 6&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 7&lt;/a&gt;&lt;/td&gt;
-	&lt;td rowspan="2"&gt;&lt;h2&gt;説明の見出し&lt;/h2&gt;&lt;/td&gt; 
+	&lt;td&gt;&lt;a href="#"&gt;Link 7&lt;/a&gt;&lt;/td&gt;
+	&lt;td rowspan="2"&gt;&lt;h2&gt;Image Heading&lt;/h2&gt;&lt;/td&gt; 
 &lt;/tr&gt; 
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 8&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 8&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 9&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 9&lt;/a&gt;&lt;/td&gt;
 	&lt;td rowspan="12"&gt;Description of the image&lt;/td&gt; 
 &lt;/tr&gt; 
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 10&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 10&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
  ...
 &lt;tr&gt;
-	&lt;td&gt;&lt;a href="#"&gt;リンク 20&lt;/a&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;a href="#"&gt;Link 20&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;</code></pre></div><div class="textbody"><p>この例の読み順は次のようになってしまうだろう:</p><ul><li><p>リンク 1</p></li><li><p>美術館の絵</p></li><li><p>プラカードのテキスト</p></li><li><p>リンク 2</p></li><li><p>リンク 3</p></li><li><p>リンク 4</p></li><li><p>リンク 5</p></li><li><p>リンク 6</p></li><li><p>リンク 7</p></li><li><p>説明の見出し</p></li><li><p>リンク 8</p></li><li><p>リンク 9</p></li><li><p>リンク 10</p></li><li><p>...</p></li><li><p>リンク 20</p></li></ul><p>ナビゲーションバーの一連のリンクに絵を説明するコンテンツが割り込んでいるため、スクリーンリーダーは視覚的な順序に対応した意味のある順序でコンテンツを提示することができない。</p></div></div></div><h3 id="F49-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F49-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/C6">C6: 構造を示すマークアップに基づいてコンテンツを配置する</a></li></ul></div><h3 id="F49-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F49-procedure">手順</h4><ol class="enumar"><li><p>以下のいずれかの方法によってコンテンツを線形化する:</p><ul><li><p>コンテンツをソースコード中の順序で表示する</p></li><li><p>コンテンツを囲むテーブルのマークアップを除去する</p></li></ul></li><li><p>線形化した読み上げ順序が、表現によって伝えられている意味のある順序と合致する</p></li></ol><h4 class="small-head" id="F49-results">期待される結果</h4><ul><li><p>2. を満たしていない場合、この不適合条件が適用され、達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F50" id="F50"> </a>F50: 達成基準 2.2.2 の失敗例 － 5 秒以内に点滅を停止するメカニズムなしに、点滅効果を引き起こすスクリプト</h2><div class="applicability"><h3 id="F50-applicability">適用 (対象)</h3><div class="textbody"><p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
+&lt;/table&gt;
+</code></pre></div><div class="textbody"><p>この例の読み順は次のようになってしまうだろう:</p><ul><li><p>Link 1</p></li><li><p>Image</p></li><li><p>Placard Text</p></li><li><p>Link 2</p></li><li><p>Link 3</p></li><li><p>Link 4</p></li><li><p>Link 5</p></li><li><p>Link 6</p></li><li><p>Link 7</p></li><li><p>Image Heading</p></li><li><p>Link 8</p></li><li><p>Link 9</p></li><li><p>Link 10</p></li><li><p>...</p></li><li><p>Link 20</p></li></ul><p>ナビゲーションバーの一連のリンクに絵を説明するコンテンツが割り込んでいるため、スクリーンリーダーは視覚的な順序に対応した意味のある順序でコンテンツを提示することができない。</p></div></div></div><h3 id="F49-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F49-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/C6">C6: 構造を示すマークアップに基づいてコンテンツを配置する</a></li></ul></div><h3 id="F49-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F49-procedure">手順</h4><ol class="enumar"><li><p>以下のいずれかの方法によってコンテンツを線形化する:</p><ul><li><p>コンテンツをソースコード中の順序で表示する</p></li><li><p>コンテンツを囲むテーブルのマークアップを除去する</p></li></ul></li><li><p>線形化した読み上げ順序が、表現によって伝えられている意味のある順序と合致する</p></li></ol><h4 class="small-head" id="F49-results">期待される結果</h4><ul><li><p>2. を満たしていない場合、この不適合条件が適用され、達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F50" id="F50"> </a>F50: 達成基準 2.2.2 の失敗例 － 5 秒以内に点滅を停止するメカニズムなしに、点滅効果を引き起こすスクリプト</h2><div class="applicability"><h3 id="F50-applicability">適用 (対象)</h3><div class="textbody"><p>スクリプトで制御されたコンテンツの点滅をサポートするウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-pause">
 				達成基準 2.2.2 (一時停止、停止、非表示)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-pause">
 						クイックリファレンス 2.2.2 (一時停止、停止、非表示)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-pause.html">
@@ -863,7 +873,7 @@ show();
 //--&gt;
 &lt;/script&gt;
 ...
-&lt;span id="blink1"&gt;このコンテンツは点滅します。&lt;/span&gt;</code></pre></div></div></div><h3 id="F50-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR22">SCR22: 点滅を制御し、5 秒以内に停止させるために、スクリプトを使用する</a></li></ul></div><h3 id="F50-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F50-procedure">手順</h4><p>点滅しているそれぞれのインスタンスに対して:</p><ol class="enumar"><li><p>点滅が 5 秒以内で止まる。</p></li></ol><h4 class="small-head" id="F50-results">期待される結果</h4><p>1. を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F52" id="F52"> </a>F52: 達成基準 3.2.1 の失敗例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている</h2><div class="applicability"><h3 id="F52-applicability">適用 (対象)</h3><div class="textbody"><p>新しいウィンドウを開くために使用されるスクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#consistent-behavior-receive-focus">
+&lt;span id="blink1"&gt;This content will blink&lt;/span&gt;</code></pre></div></div></div><h3 id="F50-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR22">SCR22: 点滅を制御し、5 秒以内に停止させるために、スクリプトを使用する</a></li></ul></div><h3 id="F50-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F50-procedure">手順</h4><p>点滅しているそれぞれのインスタンスに対して:</p><ol class="enumar"><li><p>点滅が 5 秒以内で止まる。</p></li></ol><h4 class="small-head" id="F50-results">期待される結果</h4><p>1. を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F52" id="F52"> </a>F52: 達成基準 3.2.1 の失敗例 － 新しいページを読み込むのと同時に、新しいウィンドウを開いている</h2><div class="applicability"><h3 id="F52-applicability">適用 (対象)</h3><div class="textbody"><p>新しいウィンドウを開くために使用されるスクリプト</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#consistent-behavior-receive-focus">
 				達成基準 3.2.1 (フォーカス時)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#consistent-behavior-receive-focus">
 						クイックリファレンス 3.2.1 (フォーカス時)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html">
@@ -903,7 +913,7 @@ window.open('noscript.html', '_blank', 'height=200,width=150');
 					</a></li></ul></li></ul><h3 id="F54-description">解説</h3><div class="textbody"><p>ポインティングデバイスに特有のイベントハンドラだけがコンテンツ上の機能を呼び出すメカニズムであるとき、(マウスのような、目と手による連携が必要な機器を利用できない) 全盲の利用者をはじめとした、代替キーボード又はキーボードエミュレーターとして動作する入力機器を用いなければならない利用者は、コンテンツの機能にアクセスできない。</p></div><h3 class="small-head" id="F54-examples">事例</h3><div class="failure"><h4 class="small-head" id="F54-failex1">
 					    失敗例 1</h4><div class="example"><div class="textbody"><p>次に示すのは、マウスでのクリックに反応して他のページに移動する画像の例である。これは、キーボードを用いて次のページに移動できないため不適合である。
       <code>
-&lt;p&gt;&lt;img onmousedown="nextPage();" src="nextarrow.gif" alt="次のページへ移動"&gt;&lt;/p&gt;</code></p></div></div></div><h3 id="F54-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p></div><h3 id="F54-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR20">SCR20: キーボードとその他のデバイス固有の機能を両方とも使用する</a></li></ul></div><h3 id="F54-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F54-procedure">手順</h4><ol class="enumar"><li><p>ポインティングデバイスに特有のイベントハンドラだけが、スクリプトの機能を呼び出す唯一の方法である。</p></li></ol><h4 class="small-head" id="F54-results">期待される結果</h4><ul><li><p>1. を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F55" id="F55"> </a>F55: 達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の失敗例 － フォーカスを受け取ったときに、フォーカスを取り除くために、スクリプトを使用している</h2><div class="applicability"><h3 id="F55-applicability">適用 (対象)</h3><div class="textbody"><p>スクリプトをサポートしているすべてのコンテンツに適用</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
+&lt;p&gt;&lt;img onmousedown="nextPage();" src="nextarrow.gif" alt="Go to next page"&gt;&lt;/p&gt;</code></p></div></div></div><h3 id="F54-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p></div><h3 id="F54-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/SCR20">SCR20: キーボードとその他のデバイス固有の機能を両方とも使用する</a></li></ul></div><h3 id="F54-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F54-procedure">手順</h4><ol class="enumar"><li><p>ポインティングデバイスに特有のイベントハンドラだけが、スクリプトの機能を呼び出す唯一の方法である。</p></li></ol><h4 class="small-head" id="F54-results">期待される結果</h4><ul><li><p>1. を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F55" id="F55"> </a>F55: 達成基準 2.1.1、達成基準 2.4.7 及び 達成基準 3.2.1 の失敗例 － フォーカスを受け取ったときに、フォーカスを取り除くために、スクリプトを使用している</h2><div class="applicability"><h3 id="F55-applicability">適用 (対象)</h3><div class="textbody"><p>スクリプトをサポートしているすべてのコンテンツに適用</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#keyboard-operation-keyboard-operable">
 				達成基準 2.1.1 (キーボード)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#keyboard-operation-keyboard-operable">
 						クイックリファレンス 2.1.1 (キーボード)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html">
@@ -926,7 +936,7 @@ window.open('noscript.html', '_blank', 'height=200,width=150');
 					</a></li></ul></li></ul><h3 id="F55-description">解説</h3><div class="textbody"><p>通常はキーボードでアクセスした場合フォーカスを受け取るコンテンツが、スクリプトによってフォーカスを失うことがある。これは、デザイナーがシステムのフォーカスインジケータを見えなくしようとするときに時々起きる。しかしながら、システムのフォーカスインジケータは、キーボード利用者のアクセシビリティにおける重要な一部分である。また、これを実行することによってフォーカスが完全に取り除かれると、コンテンツにはマウスのようなポインティングデバイスでしかアクセスできなくなる。</p></div><h3 class="small-head" id="F55-examples">事例</h3><div class="failure"><h4 class="small-head" id="F55-failex1">
 					    失敗例 1</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;input type="submit" onFocus="this.blur();"&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F55-failex2">
 					    失敗例 2</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a onFocus="this.blur()" href="Page.html"&gt;&lt;img src="myImage.gif"&gt;&lt;/a&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F55-failex3">
-					    失敗例 3</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="link.html" onfocus="if(this.blur)this.blur();"&gt;リンクの文言&lt;/a&gt;</code></pre></div></div></div><h3 id="F55-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F55-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F55-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F55-procedure">手順</h4><ol class="enumar"><li><p>キーボードを使用して、すべてのインタラクティブな要素にキーボードでアクセスできる。</p></li><li><p>それぞれの要素がフォーカスされたとき、利用者がフォーカスを移動するまでそこに残っている。</p></li></ol><h4 class="small-head" id="F55-results">期待される結果</h4><ul><li><p>2. を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F58" id="F58"> </a>F58: 達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトするために、サーバサイドの手法を使用している</h2><div class="applicability"><h3 id="F58-applicability">適用 (対象)</h3><div class="textbody"><ul><li><p>サーバサイドのスクリプト言語全て</p></li><li><p>制限時間に関する達成基準の例外に当てはまらないコンテンツ</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-required-behaviors">
+					    失敗例 3</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="link.html" onfocus="if(this.blur)this.blur();"&gt;Link Phrase&lt;/a&gt;</code></pre></div></div></div><h3 id="F55-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F55-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F55-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F55-procedure">手順</h4><ol class="enumar"><li><p>キーボードを使用して、すべてのインタラクティブな要素にキーボードでアクセスできる。</p></li><li><p>それぞれの要素がフォーカスされたとき、利用者がフォーカスを移動するまでそこに残っている。</p></li></ol><h4 class="small-head" id="F55-results">期待される結果</h4><ul><li><p>2. を満たしていない場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F58" id="F58"> </a>F58: 達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトするために、サーバサイドの手法を使用している</h2><div class="applicability"><h3 id="F58-applicability">適用 (対象)</h3><div class="textbody"><ul><li><p>サーバサイドのスクリプト言語全て</p></li><li><p>制限時間に関する達成基準の例外に当てはまらないコンテンツ</p></li></ul></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#time-limits-required-behaviors">
 				達成基準 2.2.1 (タイミング調整可能)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#time-limits-required-behaviors">
 						クイックリファレンス 2.2.1 (タイミング調整可能)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html">
@@ -940,10 +950,11 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 	response.setHeader("Refresh", "10; URL=TargetPage.html");
 	out.println("&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
 	 \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;");
-	out.println("&lt;html&gt;&lt;head&gt;&lt;title&gt;リダイレクト&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");
-	out.println("&lt;p&gt;このページは10秒後にリダイレクトします。&lt;/p&gt;");
+	out.println("&lt;html&gt;&lt;head&gt;&lt;title&gt;Redirect&lt;/title&gt;&lt;/head&gt;&lt;body&gt;");
+	out.println("&lt;p&gt;This page will redirect you in 10 seconds.&lt;/p&gt;");
 	out.println("&lt;/body&gt;&lt;/html&gt;");
-  }</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F58-failex2">
+  }
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F58-failex2">
 					    失敗例 2</h4><div class="example"><div class="textbody"><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、不適合である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
  &lt;% @Language = "VBScript" %&gt;
  &lt;% option explicit 
@@ -968,7 +979,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 					    失敗例 1</h4><div class="example"><div class="textbody"><p>span 及び画像を使用したチェックボックスを生成するため、下記の事例は不適合となる。</p></div><div class="code"><pre><code>
   &lt;p&gt; 
   &lt;span  onclick="toggleCheckbox('chkbox')"&gt; 
-  &lt;img src="unchecked.gif"  id="chkbox" alt=""&gt; 署名を含む
+  &lt;img src="unchecked.gif"  id="chkbox" alt=""&gt; Include Signature
   &lt;/span&gt; 
   &lt;/p&gt;</code></pre></div><div class="textbody"><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p></div><div class="code"><pre><code>
   var CHECKED = "check.gif"; 
@@ -1010,24 +1021,25 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html">
 						達成基準 2.4.4 (リンクの目的 (コンテキスト内) )を理解する
 					</a></li></ul></li></ul><h3 id="F63-description">解説</h3><div class="textbody"><p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合:</p><ul><li><p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p></li><li><p>前の見出しの場合</p></li><li><p><code>aria-label</code> や <code>aria-labelledby</code> などの適切な ARIA プロパティを介する場合</p></li></ul><p>利用者はリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p></div><h3 class="small-head" id="F63-examples">事例</h3><div class="failure"><h4 class="small-head" id="F63-failex1">
-					    失敗例 1: 隣接する段落のリンク</h4><div class="example"><div class="textbody"><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「続きを読む...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p></div><div class="code"><pre><code>
-&lt;p&gt;ある英国のビジネスマンが200万マイルの
-マイレージを獲得していて、世界初の消費者向け
-宇宙旅行の旅に出ようと計画している。&lt;/p&gt;
+					    失敗例 1: 隣接する段落のリンク</h4><div class="example"><div class="textbody"><p>あるニュースサービスでは記事の冒頭のいくつかの文を一つの段落に入れている。その次の段落には「Read More...」というリンクが置かれている。そのリンクは導入文と同じ段落にないので、利用者はそのリンクが何についての続きを読むのかを容易に見つけることができない。</p></div><div class="code"><pre><code>
+&lt;p&gt;A British businessman has racked up 2 million flyer miles and plans to 
+travel on the world's first commercial tourism flights to space.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="ff.html"&gt;続きを読む...&lt;/a&gt;&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F63-failex2">
+&lt;p&gt;&lt;a href="ff.html"&gt;Read More...&lt;/a&gt;&lt;/p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F63-failex2">
 					    失敗例 2: レイアウトテーブル内の隣接セルのリンク</h4><div class="example"><div class="textbody"><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p></div><div class="code"><pre><code>
-   &lt;table&gt;
+ &lt;table&gt;
    &lt;tr&gt; 
-       &lt;td&gt;ブラウザで音楽を聴く&lt;/td&gt;
+       &lt;td&gt;Play music from your browser&lt;/td&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
        &lt;td&gt;
        &lt;a href="http://www.example.com/download.htm"&gt;
-       &lt;img src="download.jpg" width="165" height="32" alt="今すぐダウンロード"&gt;&lt;/a&gt;
+       &lt;img src="download.jpg" width="165" height="32" alt="Download now"&gt;&lt;/a&gt;
        &lt;/td&gt;
    &lt;/tr&gt;
- &lt;/table&gt;</code></pre></div></div></div><h3 id="F63-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+ &lt;/table&gt;
+</code></pre></div></div></div><h3 id="F63-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a>
                </p></li><li><p>
                   <a href="http://www.w3.org/TR/wai-aria-practices/">WAI-ARIA 1.0 Authoring Practices</a>
@@ -1055,18 +1067,20 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 						達成基準 3.2.3 (一貫したナビゲーション)を理解する
 					</a></li></ul></li></ul><h3 id="F66-description">解説</h3><div class="textbody"><p>この文書では、ウェブページ一式の中にある複数のウェブページ上で繰り返されているナビゲーションメカニズム (達成基準 3.2.3) を含むすべての達成方法における不適合の条件を説明している。メカニズムが、2 ページ又はそれ以上のページに異なる順序でリンクの順番を提示する場合に、不適合が起こる。</p></div><h3 class="small-head" id="F66-examples">事例</h3><div class="failure"><h4 class="small-head" id="F66-failex1">
 					    失敗例 1: 2 つの異なるページで相対的に異なる順序で一連のリンクを提示している XHTML メニュー</h4><div class="example"><div class="textbody"><p>異なる順序でリンクを提示するナビゲーションメカニズムの例。</p><p><strong>1 ページ目のメニュー</strong></p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;div id="menu"&gt; 
-    &lt;a href="Brazil.htm"&gt;ブラジル&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Canada.htm"&gt;カナダ&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Germany.htm"&gt;ドイツ&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Poland.htm"&gt;ポーランド&lt;/a&gt; 
-&lt;/div&gt;</code></pre></div><div class="textbody"><p><strong>2 ページ目のメニュー</strong></p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;div id="menu"&gt; 
-    &lt;a href="Canada.htm"&gt;カナダ&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Brazil.htm"&gt;ブラジル&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Germany.htm"&gt;ドイツ&lt;/a&gt;&lt;br /&gt;
-    &lt;a href="Poland.htm"&gt;ポーランド&lt;/a&gt; 
-&lt;/div&gt;</code></pre></div></div></div><h3 id="F66-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F66-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F66-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F66-procedure">手順</h4><ol class="enumar"><li><p>ナビゲーションメカニズムが複数のウェブページ上で使用されている。</p></li><li><p>各ページのナビゲーションメカニズムのデフォルトのプレゼンテーションで、リンクリストが各ウェブページ上で相対的に同一の順番になっている。</p></li></ol><div class="note"><p class="prefix"><em>注記: </em>「相対的に同一の順番」は、あるページではリンク項目間に二次的なナビゲーション項目があるかもしれないことを意味する。これらが存在しても、この検証の結果に影響を及ぼすことはない。</p></div><h4 class="small-head" id="F66-results">期待される結果</h4><ul><li><p>1．及び 2．を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F67" id="F67"> </a>F67: 達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</h2><div class="applicability"><h3 id="F67-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+&lt;div id="menu"&gt; 
+    &lt;a href="Brazil.htm"&gt;Brazil&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Canada.htm"&gt;Canada&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Germany.htm"&gt;Germany&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Poland.htm"&gt;Poland&lt;/a&gt; 
+&lt;/div&gt;
+</code></pre></div><div class="textbody"><p><strong>2 ページ目のメニュー</strong></p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;div id="menu"&gt; 
+    &lt;a href="Canada.htm"&gt;Canada&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Brazil.htm"&gt;Brazil&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Germany.htm"&gt;Germany&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="Poland.htm"&gt;Poland&lt;/a&gt; 
+&lt;/div&gt;
+</code></pre></div></div></div><h3 id="F66-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F66-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F66-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F66-procedure">手順</h4><ol class="enumar"><li><p>ナビゲーションメカニズムが複数のウェブページ上で使用されている。</p></li><li><p>各ページのナビゲーションメカニズムのデフォルトのプレゼンテーションで、リンクリストが各ウェブページ上で相対的に同一の順番になっている。</p></li></ol><div class="note"><p class="prefix"><em>注記: </em>「相対的に同一の順番」は、あるページではリンク項目間に二次的なナビゲーション項目があるかもしれないことを意味する。これらが存在しても、この検証の結果に影響を及ぼすことはない。</p></div><h4 class="small-head" id="F66-results">期待される結果</h4><ul><li><p>1．及び 2．を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F67" id="F67"> </a>F67: 達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している</h2><div class="applicability"><h3 id="F67-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
@@ -1085,16 +1099,17 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 					</em>明示的に関連付けられた <code>label</code> を使用できる要素は次のとおりとなる。</p><ul><li><p><code>input</code></p></li><li><p><code>textarea</code></p></li><li><p><code>select</code></p></li></ul><p class="prefix"><em>注記 2:
 					</em>以下の要素については、ラベルを <code>value</code> 属性 (サブミット (送信) およびリセットボタン)、 <code>alt</code> 属性 (画像を用いたボタン)、あるいは要素の内容そのもの (<code>button</code>) でそれぞれ指定するため、<code>label</code> 要素を用いない。</p><ul><li><p>サブミット (送信) 及びリセットボタン (<code>input type="submit"</code> 又は <code>input type="reset"</code>)</p></li><li><p>画像を用いたボタン (<code>input type="image"</code>)</p></li><li><p>隠し入力フィールド (<code>input type="hidden"</code>)</p></li><li><p>ボタン (<code>button</code> 要素又は <code>&lt;input type="button"&gt;</code>)</p></li></ul></div></div><h3 class="small-head" id="F68-examples">事例</h3><div class="failure"><h4 class="small-head" id="F68-failex1">
 					    失敗例 1: </h4><div class="example"><div class="textbody"><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code> 要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント (支援技術を含む) がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p></div><div class="code"><pre><code>
- &lt;form&gt;
- 姓:
+&lt;form&gt;
+ First name: 
+ &lt;input type="text" name="firstname"&gt;
+ &lt;br&gt;
+ Last name: 
  &lt;input type="text" name="lastname"&gt;
  &lt;br&gt;
- 名: 
- &lt;input type="text" name="firstname"&gt;
- &lt;br /&gt;
- 私は犬を飼っている &lt;input type="checkbox" name="pet" value="dog"&gt;
- 私は猫を飼っている &lt;input type="checkbox" name="pet" value="cat"&gt;
-&lt;/form&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex2">
+ I have a dog &lt;input type="checkbox" name="pet" value="dog"&gt;
+ I have a cat &lt;input type="checkbox" name="pet" value="cat"&gt;
+&lt;/form&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex2">
 					    失敗例 2: </h4><div class="example"><div class="textbody"><p>次のコード例では、 <code>label</code> 要素は存在するが、対応するインプットコントロールとプログラム的に関連付けられていないため、支援技術によって正しく判定されない可能性がある。</p></div><div class="code"><pre><code>
 &lt;form action="..." method="post"&gt; 
 &lt;p&gt; 
@@ -1106,7 +1121,8 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 &lt;/form&gt;
 </code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F68-failex3">
 					    失敗例 3: </h4><div class="example"><div class="textbody"><p>次のコード例の検索テキストボックスには、プログラムによる解釈が可能な名前がない。名前 (name) は、上記の方法のいずれかで提供することができる。</p></div><div class="code"><pre><code>
-&lt;input type="text" value="検索文字列を入力"&gt;&lt;input type="submit" type="submit" value="検索"&gt;</code></pre></div></div></div><h3 id="F68-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+&lt;input type="text" value="Type your search here"&gt;&lt;input type="submit" type="submit" value="Search"&gt;
+</code></pre></div></div></div><h3 id="F68-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/wai-aria/roles#namecalculation">WAI-ARIA Accessible Name Calulation</a>
                </p></li></ul></div><h3 id="F68-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/H44">H44: テキストラベルとフォームコントロールを関連付けるために、label 要素を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H65">H65: label 要素を使用できない場合に、フォームコントロールを特定するために、title 属性を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G167">G167: テキストフィールドの目的をラベル付けするために隣接するボタンを用いる</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA6">ARIA6: オブジェクトのラベルを提供するために aria-label を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA9">ARIA9: 複数のテキストノードをつなげて一つのラベルにするために、aria-labelledby を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA16">ARIA16: ユーザインターフェース コントロールの名前 (name) を提供するために、aria-labelledby を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/ARIA14">ARIA14: 可視ラベルが使用できない場所で不可視ラベルを提供するために、aria-label を使用する</a></li></ul></div><h3 id="F68-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F68-procedure">手順</h4><p>ウェブページ内のすべての <code>input</code>、<code>textarea</code> 及び <code>select</code> 要素 ("hidden"、"submit"、"reset"、又は "button" の input を除く):</p><ol class="enumar"><li><p>次のいずれかの方法で、各要素にプログラムによる解釈が可能な名前が付いていることを確認する。</p><ol class="enumla"><li><p>テキストラベル又はラベルは、<code>aria-labelledby</code> 属性 (<code>aria-labelledby</code> 属性の値として与えられた各 id は、テキストラベル要素の <code>id</code> と一致する) を介して、コントロール要素とプログラムにより関連付けられている。</p></li><li><p>コントロールは、その <code>aria-label</code> 属性の値によってプログラムにより解釈される。</p></li><li><p>テキストラベルは、ラベルの <code>for</code> 属性 (<code>for</code> 属性の値として与えられた <code>id</code> は入力要素の <code>id</code> と一致する) を介して、それぞれの入力要素に正しく関連付けられたラベル要素に含む。</p></li><li><p>コントロールはラベルテキストも含む <code>label</code> 要素内に含まれる。</p></li><li><p>コントロールは <code>type</code> が "image" の <code>input</code> であり、<code>alt</code> 属性はテキストラベルを提供する。</p></li><li><p>コントロールは <code>title</code> 属性の値によってプログラムにより解釈される。</p></li></ol></li></ol><h4 class="small-head" id="F68-results">期待される結果</h4><ul><li><p>1. のすべてのオプションが偽である場合、この失敗条件が適用され、コンテンツは達成基準に合格しない。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F69" id="F69"> </a>F69: 達成基準 1.4.4 の失敗例 － 視覚的にレンダリングされたテキストを 200% まで拡大するときに、テキスト、画像又はコントロールが、切り取られたり、端が欠けたり、又は覆い隠されたりする</h2><div class="applicability"><h3 id="F69-applicability">適用 (対象)</h3><div class="textbody"><p>HTML、XHTML 及び CSS</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-scale">
 				達成基準 1.4.4 (テキストのサイズ変更)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast-scale">
@@ -1130,18 +1146,24 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 						達成基準 4.1.1 (構文解析)を理解する
 					</a></li></ul></li></ul><h3 id="F70-description">解説</h3><div class="textbody"><p>この失敗例の目的は、要素タグにおいて、支援技術が満足できるページのモデルを生成できない原因となるマークアップの誤りの例を特定することである。 ユーザエージェントは、エラーから復旧するために、異なる推測に基づいた方法をそれぞれ実装している。結果として、ユーザエージェント間で一貫性のないページのプレゼンテーションとなっている。</p><p>(これは完全なりストではないが) この不適合の条件を生じさせる開始及び終了タグの一般的な問題:</p><ul><li><p>開始の  &lt;  及び終了の &gt;  の括弧が足りない開始及び終了タグ。</p></li><li><p>終了タグであることを示す最初の / が足りない終了タグ。</p></li><li><p>開始の引用符はあるが、終了の引用符がない属性値。 属性値は、引用符で完全にくくられているか、又はあるマークアップ言語では、引用符でくくられていないかのどちらかである。</p></li><li><p>属性間の空白の欠如。</p></li><li><p>値に空白のある引用符でくくられていない属性値。</p></li><li><p>空の要素の構文が使用できない要素のための終了の要素タグを提供しない場合。</p></li></ul></div><h3 class="small-head" id="F70-examples">事例</h3><div class="failure"><h4 class="small-head" id="F70-failex1">
 					    失敗例 1: XHTML の山形括弧が足りない</h4><div class="example"><div class="textbody"><p>開始タグに山形括弧がなく、タグの意図する境界が不明瞭であるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;p これはパラグラフです&lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex2">
+&lt;p This is a paragraph&lt;/p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex2">
 					    失敗例 2: XHTML の終了タグのスラッシュが足りない</h4><div class="example"><div class="textbody"><p>終了タグにスラッシュがなく、事実上、別の開始タグのように見えるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;p&gt;これはパラグラフです&lt;p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex3">
+&lt;p&gt;This is a paragraph&lt;p&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex3">
 					    失敗例 3: 均衡が取れていない属性の引用符づけ</h4><div class="example"><div class="textbody"><p>属性値に終了の引用符がないことで、属性値の対の境界が不明確となるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;input title="氏名 type="text"&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex4">
+&lt;input title="name type="text"&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex4">
 					    失敗例 4: 属性間の空白の欠如</h4><div class="example"><div class="textbody"><p>属性間に空白がないことで、属性値の対の境界が不明確となるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;input title="氏名"type="text"&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex5">
+&lt;input title="name"type="text"&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex5">
 					    失敗例 5: 空白スペースを含む値を持つ引用符がついていない属性</h4><div class="example"><div class="textbody"><p>属性値に引用符がつけられておらず、値に空白が含まれていることで、属性値の対の境界が不明確となるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;input title=ここに氏名を入力する type=text&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex6">
+&lt;input title=Enter name here type=text&gt;
+</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F70-failex6">
 					    失敗例 6: XHTML の終了タグが足りない</h4><div class="example"><div class="textbody"><p>第 1 パラグラフの終了タグがないことで、第 2 パラグラフが第 1 パラグラフの子なのか兄弟なのかが不明確になるため、下記のコードは不適合となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-    &lt;p&gt;これはパラグラフです
-&lt;p&gt;これは別のパラグラフです&lt;/p&gt;</code></pre></div></div></div><h3 id="F70-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F70-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F70-procedure">手順</h4><ol class="enumar"><li><p>ページのソースコードがマークアップ言語で実装されている。</p></li><li><p>開始タグ、終了タグ又は属性で不正な形式になっているものがある。</p></li></ol><h4 class="small-head" id="F70-results">期待される結果</h4><ul><li><p>2.を満たしているならば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F71" id="F71"> </a>F71: 達成基準 1.1.1 の失敗例 － テキストを表すために、テキストによる代替を提供せずに、テキストのようなものを使用している</h2><div class="applicability"><h3 id="F71-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
+&lt;p&gt;This is a paragraph
+&lt;p&gt;This is another paragraph&lt;/p&gt;
+</code></pre></div></div></div><h3 id="F70-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F70-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F70-procedure">手順</h4><ol class="enumar"><li><p>ページのソースコードがマークアップ言語で実装されている。</p></li><li><p>開始タグ、終了タグ又は属性で不正な形式になっているものがある。</p></li></ol><h4 class="small-head" id="F70-results">期待される結果</h4><ul><li><p>2.を満たしているならば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F71" id="F71"> </a>F71: 達成基準 1.1.1 の失敗例 － テキストを表すために、テキストによる代替を提供せずに、テキストのようなものを使用している</h2><div class="applicability"><h3 id="F71-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#text-equiv-all">
 				達成基準 1.1.1 (非テキストコンテンツ)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#text-equiv-all">
 						クイックリファレンス 1.1.1 (非テキストコンテンツ)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html">
@@ -1170,7 +1192,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
  20 |                                           |
  10 |    @                       @  @  @  @     |
       0  5 10 15 20 25 30 35 40 45 50 55 60 65 70
-      閃光頻度 (Hz)
+     Flash frequency (Hz)
 &lt;/pre&gt;</code></pre></div></div></div><h3 id="F72-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F72-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F72-procedure">手順</h4><ol class="enumar"><li><p>ASCII アートのあるページを開く。</p></li><li><p>それぞれの ASCII アートに対して、テキストによる代替が提供されている。</p></li></ol><h4 class="small-head" id="F72-results">期待される結果</h4><ul><li><p>2. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F73" id="F73"> </a>F73: 達成基準 1.4.1 の失敗例 － 色覚なしで視覚的にはっきりと分からないリンクを作成する</h2><div class="applicability"><h3 id="F73-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-without-color">
 				達成基準 1.4.1 (色の使用)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#visual-audio-contrast-without-color">
 						クイックリファレンス 1.4.1 (色の使用)
@@ -1194,8 +1216,7 @@ p a:hover {text-decoration: underline; color: red;}
 
 &lt;body&gt;
 
-&lt;p&gt;もし&lt;a href="rain_in_spain.htm"&gt;スペインでの雨&lt;/a&gt;に
-関する情報を見つけたいならば、多くのリソースがある。&lt;/p&gt;
+&lt;p&gt;To find out more about the &lt;a href="rain_in_spain.htm"&gt;rain in spain&lt;/a&gt;there are many resources.&lt;/p&gt;
 
 &lt;/body&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>視覚的な手掛かりが、(上の例のように) マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p></div></div></div></div><h3 id="F73-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G182">G182: 文字色の違いが情報を伝えるために使用される場合に、利用可能な追加の視覚的な手がかりを確保する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/G183">G183: 色が単独でリンク又はコントロールを特定する場所で、周囲のテキストと一緒に 3:1 のコントラスト比を使用し、そのリンク又はコントロールのフォーカスに追加の視覚的な手がかりを提供する</a></li></ul></div><h3 id="F73-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F73-procedure">手順</h4><ol class="enumar"><li><p>ウェブページにある文章中又は段落内 (あるいは、リンクではないテキストと区別しづらいその他のエリア) のテキストにあるリンクそれぞれに、下線が付いているか、又は色 (色相) に依存することなく視覚的にリンクとして区別できる (太字、イタリックなど)。</p></li></ol><h4 class="small-head" id="F73-results">期待される結果</h4><ul><li><p>1. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F74" id="F74"> </a>F74: 達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する同期したメディアによる代替を、代替としてラベル付けしていない</h2><div class="applicability"><h3 id="F74-applicability">適用 (対象)</h3><div class="textbody"><p>テキストに対する代替である同期したメディアを提供しているウェブページ</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#media-equiv-captions">
 				達成基準 1.2.2 (キャプション (収録済) )</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#media-equiv-captions">
@@ -1247,14 +1268,13 @@ p a:hover {text-decoration: underline; color: red;}
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">
 						達成基準 1.4.4 (テキストのサイズ変更)を理解する
 					</a></li></ul></li></ul><h3 id="F80-description">解説</h3><div class="textbody"><p>この不適合の条件の目的は、テキストのサイズ変更が、それに応じてテキストベースのフォームコントロールを拡大しない時に発生する問題を説明するものである。テキストは利用者が要求するテキストサイズで表示されないので、利用者がテキストの入力及び入力したものを読むのに苦労するかもしれないことを意味している。</p><p>テキストベースのフォームコントロールは、ボタンと同様に入力ボックス (テキスト及びテキストエリア) を含んでいる。</p></div><h3 class="small-head" id="F80-examples">事例</h3><div class="failure"><h4 class="small-head" id="F80-failex1">
-					    失敗例 1: お問い合わせフォーム</h4><div class="example"><div class="textbody"><p>お問い合わせフォームは、いくらかの前置き情報、及び利用者が名、姓、電話番号及び電子メールアドレスを入力するためのフォームコントロールがある。見出し、前置きのテキスト及びフォームコントロールのラベルは、拡張性のある方法で実装されているが、フォームのコントロール自体は拡張性のある方法では実装されていない。</p><p>XHTML コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;h1&gt;お問い合わせ&lt;/h1&gt;
- &lt;p&gt;あなたの個人情報をご記入いただければ、できるだけ早くご連絡いたします。なお、すべての入力項目が必須項目となっております。&lt;/p&gt;
- &lt;label for="fname"&gt;名&lt;/label&gt;&lt;input type="text" name="fname" id="fname" /&gt;&lt;br /&gt;
- &lt;label for="lname"&gt;姓&lt;/label&gt;&lt;input type="text" name="lname" id="lname" /&gt;&lt;br /&gt;
- &lt;label for="phone"&gt;電話&lt;/label&gt;&lt;input type="text" name="phone" id="phone" /&gt;&lt;br /&gt;
- &lt;label for="email"&gt;電子メール&lt;/label&gt;&lt;input type="text" name="email" id="email" /&gt;&lt;br /&gt;
- &lt;input type="submit" name="Submit" value="送信" id="Submit" /&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					    失敗例 1: お問い合わせフォーム</h4><div class="example"><div class="textbody"><p>お問い合わせフォームは、いくらかの前置き情報、及び利用者が名、姓、電話番号及び電子メールアドレスを入力するためのフォームコントロールがある。見出し、前置きのテキスト及びフォームコントロールのラベルは、拡張性のある方法で実装されているが、フォームのコントロール自体は拡張性のある方法では実装されていない。</p><p>XHTML コンポーネント:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;h1&gt;Contact Us&lt;/h1&gt;
+ &lt;p&gt;Please provide us with your details and we will contact you as soon as we can. Note that all of the form fields are required.&lt;/p&gt;
+ &lt;label for="fname"&gt;First Name&lt;/label&gt;&lt;input type="text" name="fname" id="fname" /&gt;&lt;br /&gt;
+ &lt;label for="lname"&gt;Last Name&lt;/label&gt;&lt;input type="text" name="lname" id="lname" /&gt;&lt;br /&gt;
+ &lt;label for="phone"&gt;Telephone&lt;/label&gt;&lt;input type="text" name="phone" id="phone" /&gt;&lt;br /&gt;
+ &lt;label for="email"&gt;Email&lt;/label&gt;&lt;input type="text" name="email" id="email" /&gt;&lt;br /&gt;
+ &lt;input type="submit" name="Submit" value="Submit" id="Submit" /&gt;</code></pre></div><div class="textbody"><p>CSS:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 h1 { font-size: 2em; }
  p, label { font-size: 1em; }
  input {font-size: 12pt}</code></pre></div></div></div><h3 id="F80-resources">参考リソース</h3><div class="textbody"><p>この達成方法に関する参考リソースはない。</p></div><h3 id="F80-related-techs">関連する達成方法</h3><div class="textbody"><p>(今のところ、なし。)</p></div><h3 id="F80-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F80-procedure">手順</h4><ol class="enumar"><li><p>利用者が入力したテキストを受け取るテキストベースのフォームコントロールにテキストを入力する。</p></li><li><p>200％までコンテンツのテキストサイズを拡大する。</p></li><li><p>テキストベースのフォームコントロール内のテキストが 200％まで拡大したことを確認する。</p></li></ol><h4 class="small-head" id="F80-results">期待される結果</h4><ul><li><p>3．を満たしていなければ、不適合の条件が適用され、コンテンツはこれらの達成基準に不適合となる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F81" id="F81"> </a>F81: 達成基準 1.4.1 の失敗例 － 色の違いだけで、必須又はエラーフィールドを特定している</h2><div class="applicability"><h3 id="F81-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-without-color">
@@ -1286,10 +1306,10 @@ h1 { font-size: 2em; }
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html">
 						達成基準 2.4.9 (リンクの目的 (リンクのみ) )を理解する
 					</a></li></ul></li></ul><h3 id="F84-description">解説</h3><div class="textbody"><p>この失敗例は、「ここをクリック」又は「続きを読む」などのアンカー要素として使用されるリンクがあり、そのリンクは、目的を理解するために周囲のテキストを必要とし、かつリンクテキストを拡張するためのボタンなど目的地を自身で明確にするメカニズムがないという、よくある状況を説明する。</p><p>スクリーンリーダーを使用する全盲の利用者は、ページ内にあるリンクの一覧を表示したダイアログボックスを呼び出すことがある。彼らは、行き先を決定するためにこのリンクの一覧を使用する。しかし、その一覧の中の多くのリンクが、「ここをクリック」又は「続きを読む」とだけしか読上げられないのであれば、主要なナビゲーション方式であるこの機能をスクリーンリーダーで使用することができなくなる。このような理由から、リンクテキストのみでリンク先を知ることができる方法を一つも提供していないと、達成基準 2.4.9 の失敗例となるのである。こうした状況は、リンクを Tab キーで移動する利用者にも当てはまる。ウェブページ内を Tab キーで移動しているとき、「ここをクリック」、「ここをクリック」、「ここをクリック」としか聞こえてこなかったとしたら、利用者は困惑してしまうだろう。</p></div><h3 class="small-head" id="F84-examples">事例</h3><div class="failure"><h4 class="small-head" id="F84-failex1">
-					    失敗例 1</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>ロッキー山脈の詳細な情報は &lt;a href="file110.htm"&gt;ここをクリック&lt;/a&gt; 。</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F84-failex2">
-					    失敗例 2</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h2&gt;ニュースヘッドライン&lt;/h2&gt;
-中東和平会議は、実りの多い対話をもたらした。
-&lt;a href="r4300.htm"&gt;続きを読む&lt;/a&gt;</code></pre></div></div></div><h3 id="F84-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F84-procedure">手順</h4><ol class="enumar"><li><p>ページにある個々のリンクを検証する。</p></li><li><p>リンクの目的が、周囲のテキストと組み合わせれば定まるがリンクテキストからだけでは定まらない、「ここをクリック」又は「続きを読む」といったリンク先の分からないリンクテキストがある。</p></li><li><p>ページ内にあるリンク先の分からないリンク全てを、リンク先の分かるリンクテキストに変えるメカニズムがページ内にある。</p></li></ol><h4 class="small-head" id="F84-results">期待される結果</h4><ul><li><p>2.に該当し、3.を満たしていないのならば、この不適合の条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F85" id="F85"> </a>F85: 達成基準 2.4.3 の失敗例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを使用している</h2><div class="applicability"><h3 id="F85-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
+					    失敗例 1</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;a href="file110.htm"&gt;Click here&lt;/a&gt; for more information on the Rocky Mountains.</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F84-failex2">
+					    失敗例 2</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;h2&gt;News headlines&lt;/h2&gt;
+The middle east peace meetings have yielded fruitful dialogue. 
+&lt;a href="r4300.htm"&gt;read more&lt;/a&gt;</code></pre></div></div></div><h3 id="F84-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F84-procedure">手順</h4><ol class="enumar"><li><p>ページにある個々のリンクを検証する。</p></li><li><p>リンクの目的が、周囲のテキストと組み合わせれば定まるがリンクテキストからだけでは定まらない、「ここをクリック」又は「続きを読む」といったリンク先の分からないリンクテキストがある。</p></li><li><p>ページ内にあるリンク先の分からないリンク全てを、リンク先の分かるリンクテキストに変えるメカニズムがページ内にある。</p></li></ol><h4 class="small-head" id="F84-results">期待される結果</h4><ul><li><p>2.に該当し、3.を満たしていないのならば、この不適合の条件が適用され、コンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F85" id="F85"> </a>F85: 達成基準 2.4.3 の失敗例 － 連続するナビゲーション順序において、トリガーとなるコントロールに隣接していないダイアログ又はメニューを使用している</h2><div class="applicability"><h3 id="F85-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-focus-order">
 				達成基準 2.4.3 (フォーカス順序)</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-focus-order">
 						クイックリファレンス 2.4.3 (フォーカス順序)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">
@@ -1327,18 +1347,17 @@ p.mary:before { content: "Mary: " }
 
 q:before { content: open-quote }
 q:after  { content: close-quote }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;p class="jim"&gt;
- &lt;q&gt;彼は間に合うかな？&lt;/q&gt;
+ &lt;q&gt;Do you think he's going to make it?&lt;/q&gt;
 &lt;/p&gt;
 &lt;p class="mary"&gt;
- &lt;q&gt;無理そうよね。&lt;/q&gt;
+ &lt;q&gt;It's not looking good.&lt;/q&gt;
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h4 class="small-head" id="F87-failex2">
 					    失敗例 2</h4><div class="example"><div class="textbody"><p>この例では、<code>:before</code> を用いて、意見と事実の違いを区別している。</p><p>CSS は、次のようになっている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>p.fact:before { content: "Fact: "; font-weight: bold; }
- p.opinion:before { content: "Opinion: "; font-weight: bold; }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;p class="fact"&gt;
- 事件発生時、被告人はその犯罪現場にいた。 
+ p.opinion:before { content: "Opinion: "; font-weight: bold; }</code></pre></div><div class="textbody"><p>これが、次のように使われている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;p class="fact"&gt;
+ The defendant was at the scene of the crime when it occurred. 
 &lt;/p&gt;
 &lt;p class="opinion"&gt;
- 被告人がその罪を犯した。 
+ The defendant committed the crime. 
 &lt;/p&gt;</code></pre></div></div></div><h3 id="F87-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://www.w3.org/TR/CSS21/generate.html">CSS 2.1: Generated content, automatic numbering, and lists</a>
                </p></li></ul></div><h3 id="F87-related-techs">関連する達成方法</h3><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/F3">F3: 達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を付加するために、CSS を使用している</a></li></ul></div><h3 id="F87-tests">検証</h3><div class="textbody"><h4 class="small-head" id="F87-procedure">手順</h4><ol class="enumar"><li><p><code>:before</code> や <code>:after</code> の疑似要素及び <code>content</code> プロパティを用いて挿入されている全てのコンテンツを探し出す。</p></li><li><p>コンテンツは、装飾を目的にしたものである。</p></li><li><p>挿入されたコンテンツが装飾を目的にしたものではない場合、その情報が支援技術に対して提供されており、CSS をオフにした際にも入手可能である。</p></li></ol><h4 class="small-head" id="F87-results">期待される結果</h4><ul><li><p>2. 又は 3. を満たしていなければ、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p></li></ul></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h2><a name="F88" id="F88"> </a>F88: 達成基準 1.4.8 の失敗例 － 両端揃え (左右両方のマージンを揃える) のテキストを使用している</h2><div class="applicability"><h3 id="F88-applicability">適用 (対象)</h3><div class="textbody"><p>全てのウェブコンテンツ技術</p></div></div><p class="referenced">これは、次の達成基準に関連する失敗例である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#visual-audio-contrast-visual-presentation">
@@ -1383,12 +1402,11 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h3 class="small-head" id="ua1.71.1">ユーザエージェント及び支援技術によるサポート</h3><p><a href="./ua-notes/failures.html#F89">F89 に関するユーザエージェントサポートノート</a>を参照のこと。</p></div><h3 id="F89-description">解説</h3><div class="textbody"><p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクについて、そしてそのリンクがアクセシブルな名前で特定できないときに起こる失敗例について述べている。リンクのアクセシブルな名前 (name) は <a href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation</a> によって決定される。</p><p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適合する。このケースでは、実装方法 <a href="https://waic.jp/docs/WCAG-TECHS/H2" class="tech-ref">H2: 同じリソースに対して隣接する画像とテキストリンクを結合する</a>  (HTML)
 			は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p></div><h3 class="small-head" id="F89-examples">事例</h3><div class="failure"><h4 class="small-head" id="F89-failex1">
-					    失敗例 1: HTML 検索結果</h4><div class="example"><div class="textbody"><p>検索サイトは、試合のサイトへのテキストリンク及びイメージリンクの両方を含んだ検索結果を返す。 検索結果には既にテキストリンクがあるため、画像の <code>alt</code> 属性は空になっている。 しかし、スクリーンリーダーは画像リンクを無視しないで、リンクの目的が説明されていそうなテキストを見つけるための推測に基づいた修復を試みる。 例えば、スクリーンリーダーは「フットボール ドット ジフ フットボール スコアカード」と読み上げるかもしれない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
-&lt;a href="scores.html"&gt;
+					    失敗例 1: HTML 検索結果</h4><div class="example"><div class="textbody"><p>検索サイトは、試合のサイトへのテキストリンク及びイメージリンクの両方を含んだ検索結果を返す。 検索結果には既にテキストリンクがあるため、画像の <code>alt</code> 属性は空になっている。 しかし、スクリーンリーダーは画像リンクを無視しないで、リンクの目的が説明されていそうなテキストを見つけるための推測に基づいた修復を試みる。 例えば、スクリーンリーダーは「フットボール ドット ジフ フットボール スコアカード」と読み上げるかもしれない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;a href="scores.html"&gt;
    &lt;img src="football.gif" alt="" /&gt;
  &lt;/a&gt;
  &lt;a href="scores.html"&gt;
-   フットボールのスコアボード
+   Football Scoreboard
  &lt;/a&gt;
 }</code></pre></div></div></div><h3 id="F89-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
                   <a href="http://webaim.org/techniques/alttext/">Appropriate Use of Alternative Text, Functional Images</a>
@@ -1401,29 +1419,29 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h3 id="F90-description">解説</h3><div class="textbody"><p>コンテンツ制作者にとってデータセルと見出しセルを明示的に関連付けるひとつの方法は <code>id</code> 属性及び <code>headers</code> 属性を使用することである。これによりコンテンツ制作者は複数の見出しセルに特定のデータセルを関連付けられる。これは複数の見出しをレベルをもつ複雑なデータテーブルの場合に必要になる。</p><p>データセルと関連する見出しセルの関係がプログラム的に正しく設定されていない場合、<code>id</code> 属性と <code>headers</code> 属性の関連付けが間違っているために失敗例となる。例えば、テーブルのコードをコピーしたりコードのアップデートを忘れたときにおこる。</p></div><h3 class="small-head" id="F90-examples">事例</h3><p><a href="https://waic.jp/docs/WCAG-TECHS/H43" class="tech-ref">H43: データテーブルのデータセルを見出しセルと関連付けるために、id 属性及び headers 属性を使用する</a>  (HTML)
 			 の例 1 のような複雑なデータテーブルが存在することによる。</p><div class="failure"><h4 class="small-head" id="F90-failex1">
-					    失敗例 1: ネストされた見出しと正しく関連付けられていないテーブルコンテンツ</h4><div class="example"><div class="textbody"><p>この例では、ネストされた見出しが使われているが、コンテンツのセルは <code>id</code> 属性及び <code>headers</code> 属性によって正しく関連付けられていない。全セルは「練習」(id="e") のようなトップレベル見出しを参照する - これは「プロジェクト」見出しを参照すべき最後の 3 つのセルにとって正しくない。また、第 2 レベルの列見出しの参照はコンテンツ (1, 2, ファイナル) が繰り返されるようなこちらの例と違いはなくても、誤って取り違えられる。</p><p>Example Code:</p><div class="code"><pre><code>
+					    失敗例 1: ネストされた見出しと正しく関連付けられていないテーブルコンテンツ</h4><div class="example"><div class="textbody"><p>この例では、ネストされた見出しが使われているが、コンテンツのセルは <code>id</code> 属性及び <code>headers</code> 属性によって正しく関連付けられていない。全セルは「Exams」(id="e") のようなトップレベル見出しを参照する - これは「Projects」見出しを参照すべき最後の 3 つのセルにとって正しくない。また、第 2 レベルの列見出しの参照はコンテンツ (1, 2, Final) が繰り返されるようなこちらの例と違いはなくても、誤って取り違えられる。</p><p>Example Code:</p><div class="code"><pre><code>
 &lt;table&gt;
    &lt;tr&gt;
-     &lt;th rowspan="2" id="h"&gt;宿題&lt;/th&gt;
-     &lt;th colspan="3" id="e"&gt;練習&lt;/th&gt;
-     &lt;th colspan="3" id="p"&gt;プロジェクト&lt;/th&gt;
+     &lt;th rowspan="2" id="h"&gt;Homework&lt;/th&gt;
+     &lt;th colspan="3" id="e"&gt;Exams&lt;/th&gt;
+     &lt;th colspan="3" id="p"&gt;Projects&lt;/th&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
      &lt;th id="e1" headers="e"&gt;1&lt;/th&gt;
      &lt;th id="e2" headers="e"&gt;2&lt;/th&gt;
-     &lt;th id="ef" headers="e"&gt;最終&lt;/th&gt;
+     &lt;th id="ef" headers="e"&gt;Final&lt;/th&gt;
      &lt;th id="p1" headers="p"&gt;1&lt;/th&gt;
      &lt;th id="p2" headers="p"&gt;2&lt;/th&gt;
-     &lt;th id="pf" headers="p"&gt;最終&lt;/th&gt;
+     &lt;th id="pf" headers="p"&gt;Final&lt;/th&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
      &lt;td headers="h"&gt;15%&lt;/td&gt;       
-     &lt;td headers="e p1"&gt;15%&lt;/td&gt;  // 「e e1」とすべき
-     &lt;td headers="e p2"&gt;15%&lt;/td&gt;  // 「e e2」とすべき
-     &lt;td headers="e pf"&gt;20%&lt;/td&gt;  // 「e ef」とすべき
-     &lt;td headers="e e1"&gt;10%&lt;/td&gt;  // 「p p1」とすべき
-     &lt;td headers="e e2"&gt;10%&lt;/td&gt;  // 「p p2」とすべき
-     &lt;td headers="e ef"&gt;15%&lt;/td&gt;  // 「p pf」とすべき
+     &lt;td headers="e p1"&gt;15%&lt;/td&gt;  // should be "e e1"
+     &lt;td headers="e p2"&gt;15%&lt;/td&gt;  // should be "e e2"
+     &lt;td headers="e pf"&gt;20%&lt;/td&gt;  // should be "e ef"
+     &lt;td headers="e e1"&gt;10%&lt;/td&gt;  // should be "p p1"
+     &lt;td headers="e e2"&gt;10%&lt;/td&gt;  // should be "p p2"
+     &lt;td headers="e ef"&gt;15%&lt;/td&gt;  // should be "p pf"
    &lt;/tr&gt;
 &lt;/table&gt;
 							</code></pre></div><p>
@@ -1438,35 +1456,35 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
 &lt;table&gt;
    
    &lt;tr&gt;
-      &lt;td&gt;氏名&lt;/td&gt;
-      &lt;td&gt;年齢&lt;/td&gt;
-      &lt;td&gt;身長 (cm)&lt;/td&gt;
-      &lt;td&gt;体重 (kg)&lt;/td&gt;
+      &lt;td&gt;Name&lt;/td&gt;
+      &lt;td&gt;Age&lt;/td&gt;
+      &lt;td&gt;Height (cm)&lt;/td&gt;
+      &lt;td&gt;Weight (kg)&lt;/td&gt;
    &lt;/tr&gt;   
    
    &lt;tr&gt;
-      &lt;td&gt;リンダ&lt;/td&gt;
+      &lt;td&gt;Linda&lt;/td&gt;
       &lt;td&gt;33&lt;/td&gt;
       &lt;td&gt;169&lt;/td&gt;
       &lt;td&gt;59&lt;/td&gt;
    &lt;/tr&gt;   
    
    &lt;tr&gt;
-      &lt;td&gt;ジャック&lt;/td&gt;
+      &lt;td&gt;Jack&lt;/td&gt;
       &lt;td&gt;37&lt;/td&gt;
       &lt;td&gt;184&lt;/td&gt;
       &lt;td&gt;74&lt;/td&gt;
    &lt;/tr&gt;    
    
    &lt;tr&gt;
-      &lt;td&gt;キラ&lt;/td&gt;
+      &lt;td&gt;Kira&lt;/td&gt;
       &lt;td&gt;8&lt;/td&gt;
       &lt;td&gt;120&lt;/td&gt;
       &lt;td&gt;21&lt;/td&gt;
    &lt;/tr&gt;   
    
    &lt;tr&gt;
-      &lt;td&gt;ダニエル&lt;/td&gt;
+      &lt;td&gt;Daniel&lt;/td&gt;
       &lt;td&gt;3&lt;/td&gt;
       &lt;td&gt;79&lt;/td&gt;
       &lt;td&gt;14&lt;/td&gt;
@@ -1484,18 +1502,18 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
 </p></div><h3 class="small-head" id="F92-examples">事例</h3><div class="failure"><h4 class="small-head" id="F92-failex1">
 					    失敗例 1: </h4><div class="example"><div class="textbody"><p>この例では、表のデータは <code>role=presentation</code> でマークアップされている。そのようなレイアウトテーブルのデザインのマークアップに関わらず、データテーブルはセマンティックな情報を維持する必要がありそれゆえ <code>role=presentation</code> でマークアップされるべきではない。</p><p>例:</p><div class="code"><pre><code>
 &lt;table role="presentation"&gt;
-   &lt;caption&gt;フルーツとその色&lt;/caption&gt;
+   &lt;caption&gt;Fruits and their colors&lt;/caption&gt;
    &lt;tr&gt;
-     &lt;th&gt;名称&lt;/th&gt;
-     &lt;th&gt;色&lt;/th&gt;
+     &lt;th&gt;Name&lt;/th&gt;
+     &lt;th&gt;Color&lt;/th&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
-    &lt;td scope="row"&gt;バナナ&lt;/td&gt;
-    &lt;td&gt;黄色&lt;/td&gt;
+    &lt;td scope="row"&gt;banana&lt;/td&gt;
+    &lt;td&gt;yellow&lt;/td&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
-    &lt;td scope="row"&gt;オレンジ&lt;/td&gt;
-    &lt;td&gt;オレンジ&lt;/td&gt;
+    &lt;td scope="row"&gt;orange&lt;/td&gt;
+    &lt;td&gt;orange&lt;/td&gt;
    &lt;/tr&gt;
   &lt;/table&gt;
                             </code></pre></div></div></div></div><h3 id="F92-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
