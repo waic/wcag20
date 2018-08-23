@@ -16,16 +16,16 @@
   </description>
    <examples>
       <eg-group>
-      <code><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">    
+         <code><![CDATA[ <html xmlns="http://www.w3.org/1999/xhtml">    
   <head>      
-    <title>チューダー</title>      
+    <title>The Tudors</title>      
     <meta http-equiv="refresh" content="0;URL='http://thetudors.example.com/'" />    
   </head>    
   <body> 
-    <p>このページは、<a href="http://thetudors.example.com/">theTudors.example.com</a>
-      に移動しました。</p> 
+    <p>This page has moved to a <a href="http://thetudors.example.com/">
+      theTudors.example.com</a>.</p> 
   </body>  
-</html> ]]></code>
+</html>     ]]></code>
     </eg-group>
    </examples>
    <resources>

@@ -22,19 +22,21 @@
       <head><el>span</el> 要素のスクリプト</head>
       <description><p>スクリプトによるイベントハンドリングが <code>span</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
-      <code role="html401"><![CDATA[
-<span onclick="this.location.href='newpage.html'">
-    偽のリンク
-</span>]]></code>
+         <code role="html401"><![CDATA[
+<span onclick="location.href='newpage.html'">
+    Fake link
+</span>
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head><el>img</el> 要素のスクリプト</head>
       <description><p>スクリプトによるイベントハンドリングが <code>img</code> 要素に追加されているので、それがマウスでクリックされた場合はリンクとして機能する。支援技術はこの要素をリンクとして認識しない。</p>
 </description>
-      <code role="html401"><![CDATA[
-<img src="go.gif" 
-   alt="新しいページへ移動" 
-   onclick="this.location.href='newpage.html'">]]></code>
+         <code role="html401"><![CDATA[
+   <img src="go.gif" 
+   alt="go to the new page" 
+   onclick="location.href='newpage.html'">
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head>キーボードサポートがある <el>img</el> 要素のスクリプト</head>
@@ -61,7 +63,7 @@ function doKeyPress(url)
 <p>
 	<img src="bargain.jpg"
 		tabindex="0" 
-		alt="バーゲンを見る"
+		alt="View Bargains"
 		onclick="doNav('viewbargains.html');"
 		onkeypress="doKeyPress('viewbargains.html');"
 	>
@@ -105,7 +107,7 @@ function changeLocation(objEvent, strLocation)
 </description>
       <code role="html401"><![CDATA[
 <div id="linklike">
-アンケートの結果を見る。
+View the results of the survey.
 </div>]]></code>
     </eg-group>
    </examples>

@@ -19,34 +19,32 @@
       <head>カレンダー</head>
       <description><p>あるウェブページでは、利用者が任意の年の任意の月を選ぶと、その月のカレンダーが表示される。利用者が月と年を指定した後に「表示」ボタンを押すことでカレンダーが表示される。この例では、クライアントサイドスクリプティングでアクションを実装している。</p>
 </description>
-      <code><![CDATA[<label for="month">月:</label>
+         <code><![CDATA[
+<label for="month">Month:</label>
 <select name="month" id="month">
-  <option value="1">1月</option>
-
-  <option value="2"> 2月</option>
+  <option value="1">January</option>
+  <option value="2"> February</option>
   ...
-  <option value="12">12月</option>
+  <option value="12">December</option>
 </select> 
-<label for="year">年:</label>
-
+<label for="year">Year:</label>
 <input type="text" name="year" id="year">
-<input type="button" value="Show" onclick = "..."> ]]></code>
+<input type="button" value="Show" onclick = "...">]]></code>
     </eg-group>
     <eg-group>
       <head>アクションを選ぶ</head>
       <description><p><el>select</el> 要素は実行可能なアクションのリストを含んでいる。利用者が「実行」というボタンを押すまで、アクションは実行されない。</p>
 </description>
-      <code><![CDATA[<form action="http://somesite.com/action" method="post">
-  <label for="action">選択肢:</label>
+         <code><![CDATA[
+<form action="http://somesite.com/action" method="post">
+  <label for="action">Options:</label>
   <select name="action" id="action">
-    <option value="help">ヘルプ</option>
-
-    <option value="reset">リセット</option>
-    <option value="submit">送信</option>
+    <option value="help">Help</option>
+    <option value="reset">Reset</option>
+    <option value="submit">Submit</option>
   </select> 
-  <button type="submit" name="submit" value="submit">実行 </button>
-
-</form> ]]></code>
+  <button type="submit" name="submit" value="submit">Do It </button>
+</form>              ]]></code>
     </eg-group>
    </examples>
    <resources>

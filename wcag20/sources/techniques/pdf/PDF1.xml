@@ -98,7 +98,7 @@
       <description><p>山と月と木々の画像の場合、/Alt プロパティは次のように使用される (通常、オーサリングツールを使用して行う)。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
-/Figure <</Alt (山と月と木々のスケッチ) >>]]></codeblock>
+/Figure <</Alt (Sketch of Mountains with moon rising over trees) >>]]></codeblock>
       <description><p>この画像は別の名前のタグで表示される場合がある。別の名前が使用されるのは、タグ名が英語以外の言語で記述されているか、特定のツールで何らかの理由で別の名前が使用されているためである。そのような状況では、PDF 文書の StructTreeRoot にある RoleMap に、PDF 文書で使用される標準的な構造タイプを持つ画像で使用されるタグの名前 (この場合は Figure) を明示的に割り当てるエントリが含まれていなければならない。RoleMap に Shape タグと Figure タグのエントリマッピングだけが含まれる場合、ロールマップ情報は次のように表示される。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
@@ -106,7 +106,7 @@
       <description><p>この場合、/Alt エントリは次のように使用することもできる。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
-/Shape <</Alt (夏のクレーター湖。青空、雲と景色が湖面にきれいに映っている。) >>]]></codeblock>
+/Shape <</Alt (Crater Lake in the summer, with the blue sky, clouds and crater walls perfectly reflected in the lake) >>]]></codeblock>
       <description><p>プロパティリストの /Alt エントリは、他のエントリと組み合わせることができる。</p>
 </description>
     </eg-group>

@@ -46,35 +46,35 @@
 <table>
    
    <tr>
-      <td>氏名</td>
-      <td>年齢</td>
-      <td>身長 (cm)</td>
-      <td>体重 (kg)</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Height (cm)</td>
+      <td>Weight (kg)</td>
    </tr>   
    
    <tr>
-      <td>リンダ</td>
+      <td>Linda</td>
       <td>33</td>
       <td>169</td>
       <td>59</td>
    </tr>   
    
    <tr>
-      <td>ジャック</td>
+      <td>Jack</td>
       <td>37</td>
       <td>184</td>
       <td>74</td>
    </tr>    
    
    <tr>
-      <td>キラ</td>
+      <td>Kira</td>
       <td>8</td>
       <td>120</td>
       <td>21</td>
    </tr>   
    
    <tr>
-      <td>ダニエル</td>
+      <td>Daniel</td>
       <td>3</td>
       <td>79</td>
       <td>14</td>

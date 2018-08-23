@@ -21,7 +21,7 @@
       <codeblock xml:space="preserve"><![CDATA[
   <p> 
   <span  onclick="toggleCheckbox('chkbox')"> 
-  <img src="unchecked.gif"  id="chkbox" alt=""> 署名を含む
+  <img src="unchecked.gif"  id="chkbox" alt=""> Include Signature
   </span> 
   </p>]]></codeblock>
       <description><p>これは、マウスで <code>span</code> をクリックする時に、画像のソースを変更するスクリプトコードである。</p>

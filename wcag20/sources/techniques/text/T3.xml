@@ -31,13 +31,15 @@
       <eg-group>
       <description><p>段落の後に 2 行の空白行があり、それに続いて、見出し、1 行の空白行、そして次の段落がある:</p>
 </description>
-      <code><![CDATA[
-...これは第1段落の終わりである。
+         <code><![CDATA[
+						
+...this is the end of paragraph 1.
 
 
-見出しのテキスト
+The Text of the Heading
 
-これは第2段落の始まりである。]]></code>
+This is the beginning of paragraph 2.
+]]></code>
     </eg-group>
    </examples>
    <resources/>

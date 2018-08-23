@@ -28,9 +28,9 @@
    <examples>
       <eg-group>
       <head>三目並べゲームのアプレット</head>
-      <code><![CDATA[<applet code="tictactoe.class" width="250" height="250" alt="三目並べゲーム">
-   三目並べゲーム
-</applet> ]]></code>
+         <code><![CDATA[<applet code="tictactoe.class" width="250" height="250" alt="tic-tac-toe game">
+   tic-tac-toe game
+</applet>  ]]></code>
     </eg-group>
    </examples>
    <related-techniques>

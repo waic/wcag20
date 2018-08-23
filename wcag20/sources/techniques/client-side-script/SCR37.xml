@@ -33,26 +33,25 @@
 <p>トリガーとなる要素はボタンで、スクリプトは onclick イベントのトリガーである。これは適切なイベントをオペレーティングシステムに送るので、支援技術は DOM の中の変化に気がつくことができる。</p>
 <p>この例では、ダイアログ内の送信及びリセットボタンは単純に <code>div</code> に隠れている。</p>
 </description>
-      <code> role="xhtml1"><![CDATA[...
+         <code role="xhtml1"><![CDATA[...
 <button onclick="TogglePopup(event,true)"
-	name="pop0001">オプション</button>
-
+	name="pop0001">Options</button>
 <div class="popover" id="pop0001">
-  <h3>並べ替えの情報を編集</h3>
+  <h3>Edit Sort Information</h3>
   <form action="default.htm" onsubmit="this.parentNode.style.display='none'; return false;" onreset="this.parentNode.style.display='none'; return false;">
     <fieldset>
-      <legend>並び順</legend> 
-      <input type="radio" name="order" id="order_alpha" /><label for="order_alpha">アルファベット順</label>
-      <input type="radio" name="order" id="order_default" checked="true" /><label for="order_default"&amp;gt既定</label>
+      <legend>Sort Order</legend> 
+      <input type="radio" name="order" id="order_alpha" /><label for="order_alpha">Alphabetical</label>
+      <input type="radio" name="order" id="order_default" checked="true" /><label for="order_default">Default</label>
     </fieldset>
 <div class="buttons">
   <input type="submit" value="OK" />
-  <input type="reset" value="キャンセル" />
+  <input type="reset" value="Cancel" />
 </div>
 </form>
-
 </div>
-...]]></code>
+...
+]]></code>
       <description><p><code>div</code>、見出し、及び <el>form</el> 要素は CSS でダイアログに見えるようにスタイル付けされている。</p>
 </description>
       <code role="css"><![CDATA[...

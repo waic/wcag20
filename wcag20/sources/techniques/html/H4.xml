@@ -18,37 +18,39 @@
       <eg-group>
       <description><p>系図の検索フォームで結婚記録を検索する。検索フォームには花嫁及び花婿用のいくつかの入力フィールドがある。フォームは、データテーブルを用いてマークアップされ、1 列目に花婿、2 列目に花嫁のフィールドがある。コンテンツの順番は行ごとであるが、コンテンツ制作者はフォームを列ごとにナビゲートする方がより論理的であると感じている。この方法では、全ての花婿の条件は花嫁の条件へ移る前に記入できる。入力フィールドの <att>tabindex</att> 属性は、列ごとにナビゲートするタブ順番を指定するのに使用される。</p>
 </description>
-      <code role="html401"><![CDATA[<form action="#" method="post">
- <table summary="1列目に花婿の検索条件、2列目に花嫁の検索条件がある">
-  <caption>結婚記録の検索</caption>
-  <tr>
-   <th>検索基準</th>
-   <th>花婿</th>
-   <th>花嫁</th>
-  </tr>
-  <tr>
-   <th>名</th>
-   <td><input type="text" size="30" value="" name="groomfirst" 
-        title="花婿の名" tabindex="1"></td>
-   <td><input type="text" size="30" value="" name="bridefirst" 
-        title="花嫁の名" tabindex="4"></td>
-  </tr>
-  <tr>
-   <th>姓</th>
-   <td><input type="text" size="30" value="" name="groomlast" 
-        title="花婿の姓" tabindex="2"></td>
-   <td><input type="text" size="30" value="" name="bridelast" 
-        title="花嫁の姓" tabindex="5"></td>
-  </tr>
-  <tr>
-   <th>出生地</th>
-   <td><input type="text" size="30" value="" name="groombirth" 
-        title="花婿の出生地" tabindex="3"></td>
-   <td><input type="text" size="30" value="" name="bridebirth" 
-        title="花嫁の出生地" tabindex="6"></td>
-  </tr>
- </table>
-</form>]]></code>
+         <code role="html401"><![CDATA[<form action="#" method="post">
+ <table summary="the first column contains the search criteria 
+  of the groom, the second column the search criteria of 
+  of the bride">
+ <caption>Search for marriage records</caption>
+ <tr>
+   <th>Search criteria</th>
+   <th>Groom</th>
+   <th>Bride</th>
+ </tr>
+ <tr>
+  <th>First name</th>
+  <td><input type="text" size="30" value="" name="groomfirst" 
+      title="First name of the groom" tabindex="1"></td>
+  <td><input type="text" size="30" value="" name="bridefirst" 
+       title="First name of the bride" tabindex="4"></td>
+ </tr>
+ <tr>
+  <th>Last name</th>
+  <td><input type="text" size="30" value="" name="groomlast" 
+      title="Last name of the groom" tabindex="2"></td>
+  <td><input type="text" size="30" value="" name="bridelast" 
+      title="Last name of the bride" tabindex="5"></td>
+ </tr>
+ <tr>
+  <th>Place of birth</th>
+  <td><input type="text" size="30" value="" name="groombirth" 
+      title="Place of birth of the groom" tabindex="3"></td>
+  <td><input type="text" size="30" value="" name="bridebirth" 
+      title="Place of birth of the bride" tabindex="6"></td>
+ </tr>
+</table>
+</form>      ]]></code>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
@@ -60,12 +62,13 @@
       <description><p><att>tabindex</att> 値は、連続した番号である必要はなく、特定の値で始まる必要もない。値は一意的である必要もない。同じ <att>tabindex</att> 値を持つ要素は、その文字の出現順にナビゲートされる。</p>
 </description>
       <description><p>タブ順番がコンテンツ順番に従っているコンテンツのセクションにおいて、個々の要素に異なる <att>tabindex</att> 値を指定するよりも、全ての要素に同じ値を与えることでエラーを起こりにくくすることが可能である。それらの要素を再配列する、又は新しい要素を加える、及び論理的なタブ順番を設定することは容易である。</p></description>
-      <code role="html401"><![CDATA[ <a href="xxx" tabindex = "1">リストの1番目のリンク</a>
- <a href="xxx" tabindex = "1">リストの2番目のリンク</a>
- <a href="xxx" tabindex = "1">初めにリストが作られて大分たってから追加されたリンク</a>
- <a href="xxx" tabindex = "1">リストの3番目のリンク</a>
- ...
- <a href="xxx" tabindex = "1">リストの20番目のリンク</a> ]]></code>
+         <code role="html401"><![CDATA[ <a href="xxx" tabindex = "1">First link in list</a>
+<a href="xxx" tabindex = "1">Second link in list</a>
+<a href="xxx" tabindex = "1">Link that was added long 
+  after the original list was created</a>
+<a href="xxx" tabindex = "1">Third link in list</a>
+  ...
+<a href="xxx" tabindex = "1">Twentieth link in list</a>      ]]></code>
       </eg-group>
    </examples>
    <resources>

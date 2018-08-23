@@ -40,22 +40,23 @@
    <examples>
       <eg-group>
       <head><el>abbr</el> 要素を用いて略語の元の語を示す</head>
-      <code role="html401"><![CDATA[<p>普通、砂糖は 5 <abbr title="pound">lb.<abbr> の袋入りで売られている。</p>
-<p><abbr title="World Wide Web">WWW</abbr> へようこそ！</p> ]]></code>
+         <code role="html401"><![CDATA[<p>Sugar is commonly sold in 5 <abbr title="pound">lb.</abbr> bags.</p>
+<p>Welcome to the <abbr title="World Wide Web">WWW</abbr>!</p>              ]]></code>
     </eg-group>
     <eg-group>
       <head><el>abbr</el> 要素を用いて略語の定義を示す</head>
-      <code role="html401"><![CDATA[<p>タシニ <abbr title="及びその他">et al.</abbr> <abbr title="対">v.</abbr>
-ニューヨークタイムズ紙 <abbr title="及びその他">et al.</abbr> は、全米著述業組合
-による象徴的な訴訟事件であり……</p> ]]></code>
+         <code role="html401"><![CDATA[<p>Tasini <abbr title="and others">et al.</abbr> <abbr title="versus">v.</abbr>
+The New York Times <abbr title="and others">et al.</abbr> is the landmark lawsuit 
+brought by members of the National Writers Union against ......</p>  ]]></code>
     </eg-group>
     <eg-group>
       <head><el>abbr</el> 要素を用いて頭字語の元の語を示す</head>
-      <code role="html401"><![CDATA[<p><abbr title="Keep It Simple Stupid">KISS</abbr>の使用が…の間で広まってきた。</p> ]]></code>
+         <code role="html401"><![CDATA[ <p>The use of <abbr title="Keep It Simple Stupid">KISS</abbr> became popular in ...</p>        
+            ]]></code>
     </eg-group>
     <eg-group>
       <head><el>abbr</el> 要素を用いて頭文字語の元の語を示す</head>
-      <code role="html401"><![CDATA[<p><abbr title="World Wide Web">WWW</abbr></p> ]]></code>
+         <code role="html401"><![CDATA[ <p><abbr title="World Wide Web">WWW</abbr></p>]]></code>
     </eg-group>
    </examples>
    <resources>

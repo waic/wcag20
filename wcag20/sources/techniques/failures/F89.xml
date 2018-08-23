@@ -25,12 +25,11 @@
       <head>HTML 検索結果</head>
       <description><p>検索サイトは、試合のサイトへのテキストリンク及びイメージリンクの両方を含んだ検索結果を返す。 検索結果には既にテキストリンクがあるため、画像の <att>alt</att> 属性は空になっている。 しかし、スクリーンリーダーは画像リンクを無視しないで、リンクの目的が説明されていそうなテキストを見つけるための推測に基づいた修復を試みる。 例えば、スクリーンリーダーは「フットボール ドット ジフ フットボール スコアカード」と読み上げるかもしれない。</p>
 </description>
-      <code role="xhtml1"><![CDATA[
-<a href="scores.html">
+         <code role="xhtml1"><![CDATA[ <a href="scores.html">
    <img src="football.gif" alt="" />
  </a>
  <a href="scores.html">
-   フットボールのスコアボード
+   Football Scoreboard
  </a>
 }]]></code>
     </eg-group>

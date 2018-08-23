@@ -21,9 +21,9 @@
          </description>
          <code role="html5"><![CDATA[
 				 <nav>
-				    <a href="../webaccessibility.html">ウェブアクセシビリティ</a>
-				    <a href="../docaccessibility.html">ドキュメントアクセシビリティ</a>
-					<a href="../mobileaccessibility.html">モバイルアクセシビリティ</a>
+				    <a href="../webaccessibility.html">Web Accessibility</a>
+				    <a href="../docaccessibility.html">Document Accessibility</a>
+					<a href="../mobileaccessibility.html">Mobile Accessibility</a>
 				 </nav>
             ]]></code>
       </eg-group>
@@ -35,13 +35,13 @@
          <code role="html5"><![CDATA[
 			<nav aria-label="Site menu">
 			  <ul>
-				  <li>...ここにサイトナビゲーションのリンク一覧 ...</li>
+				  <li>...a list of links site navigation link here ...</li>
 			  </ul>
 			</nav>
 			...
 			<article>
 			  <nav aria-label="Related links">
-				...ここに関連するリンク一覧 ...
+				...a list of related links here ...
 			  </nav>
 			</article>          ]]></code>
       </eg-group>
@@ -52,15 +52,14 @@
          </description>
          <code role="html5"><![CDATA[
 			<nav aria-label="primary">
-				<a href="home.html">ホーム</a>
-				<a href="about-us.html">私たちについて</a>
-				<a href="products.html">商品</a>
+				<a href="home.html">Home</a>
+				<a href="about-us.html">About Us</a>
+				<a href="products.html">Products</a>
 			</nav>
-
 			<nav aria-label="secondary">
-				<a href="adverts.html">広告主</a>
-				<a href="related.html">関連するリンク</a>
-				<a href="subsidiaries.html">補足</a>
+				<a href="adverts.html">Our Advertisers</a>
+				<a href="related.html">Related Links</a>
+				<a href="subsidiaries.html">Subsidiaries</a>
 			</nav>            ]]></code>
       </eg-group>
    </examples>

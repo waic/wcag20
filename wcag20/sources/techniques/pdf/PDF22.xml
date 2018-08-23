@@ -48,18 +48,18 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <p>次の JavaScript コードは、フォームフィールド (この場合は日付フィールド) を検証するために使用されるスクリプトを示している。このスクリプトをフォームフィールドに追加するには、事例 1 に示されているように、［テキストフィールドのプロパティ］ダイアログボックスを開き、［検証］タブの「編集」を選択する。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/jscript.jpg" height="462" width="506"/><alt>スクリーンショット: JavaScript 検証コードを指定するために［検証］タブが開かれている、［テキストフィールドのプロパティ］ダイアログボックス</alt></image></p></description>
-      <codeblock xml:space="preserve"><![CDATA[
-// 日付マスク書式 MM/DD/YYYY 用の JavaScript コード
+            <codeblock xml:space="preserve"><![CDATA[// 日付マスク書式 MM/DD/YYYY 用の JavaScript コード
 var re = /^[mdy0-9]{2}\/[mdy0-9]{2}\/[mdy0-9]{4}$/
 //Allow blank space in field
 if (event.value !="") {
   if (re.test(event.value) == false) {
     app.alert ({
-       cTitle: "誤った書式",
-       cMsg: "mm/dd/yyyy の書式で日付を入力してください。"
+       cTitle: "Incorrect Format",
+       cMsg: "Please enter date using mm/dd/yyyy format"
     });
   }
-}]]></codeblock>
+}
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>

@@ -112,13 +112,16 @@
       <description><p>ユーザエージェントは、リンクに移動したり、リンクを選択するメカニズムを提供する。次の各事例では、「リンク」という役割 (role) が &lt;a href&gt; で与えられている。&lt;a name&gt; は「リンク」という役割を与えない点に注意しよう。値 (value) に該当するのは、<att>href</att> 属性の URI である。</p>
 <exsubhead>事例 1a</exsubhead><p>事例 1a では、名前 (name) はリンクの中にあるテキストである。この場合は「サイト例」が該当する。</p>
 </description>
-      <code role="xhtml"><![CDATA[<a href="www.example.com">サイト例</a> ]]></code>
+         <code role="xhtml"><![CDATA[<a href="www.example.com">Example Site</a>
+                    ]]></code>
       <description><exsubhead>事例 1b</exsubhead><p>リンクの中にある画像に関する事例 1b では、画像の <att>alt</att> 属性が名前 (name) を提供している。例えば、Microsoft Inspect Objects などのように API を閲覧するツールには、<att>alt</att> 属性を可視化できないものもあるが、支援技術では抽出できる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="例"></a> ]]></code>
+               <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"></a>
+                    ]]></code>
       <description><exsubhead>事例 1c</exsubhead><p>事例 1c では、画像の代替テキストとリンクテキストをが組み合わせるときにいくつかの支援技術では空白文字を自動的に挿入しない。テキストが空白文字抜きで組み合わないようにするときは、画像と隣接した単語の間に空白を入れるのが最も安全であり、それらの単語が合流しない。</p>
 </description>
-      <code role="xhtml"><![CDATA[<a href="www.example.com">テキスト<img src="example_logo.gif" alt="例"></a> ]]></code>
+         <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"> Text</a>
+]]></code>
       <a11ysuprorted rating="pass" exnumber="1c"/>
     </eg-group>
     <eg-group>
@@ -126,85 +129,99 @@
       <description><p>HTML では、ボタンを生成するのにさまざまな方法があるが、それらは全て「プッシュボタン」という役割 (role) に位置付けられる。</p>
 <exsubhead>事例 2a</exsubhead><p>事例 2a では、<el>button</el> 要素内の「保存」というテキストが名前 (name) となる。値 (value) はない。</p>
 </description>
-      <code role="xhtml"><![CDATA[<button>保存</button> ]]></code>
+         <code role="xhtml"><![CDATA[<button>Save</button>
+                    ]]></code>
       <description><exsubhead>事例 2b</exsubhead><p>事例 2b では、<code>value</code> 属性を用いて「保存」「送信」「リセット」という名前 (name) を指定している。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input type="button" value="保存" /> 
-<input type="submit" value="送信" />  
-<input type="reset" value="リセット" /> ]]></code>
+         <code role="xhtml"><![CDATA[<input type="button" value="Save" /> 
+<input type="submit" value="Submit" />  
+<input type="reset" value="Reset" />   
+                    ]]></code>
       <description><exsubhead>事例 2c</exsubhead><p>事例 2c では、<att>alt</att> 属性を用いて「保存」という名前 (name) を指定している。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="保存" /> ]]></code>
+         <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="save" /> 
+                    ]]></code>
       <description><exsubhead>事例 2d</exsubhead><p>事例 2d では、<att>alt</att> 属性ではなく、<att>title</att> 属性を用いて「保存」という名前 (name) を指定している。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="保存" /> ]]></code>
+         <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="save" />
+                    ]]></code>
       <description><exsubhead>事例 2e</exsubhead><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="保存" title="保存" /> ]]></code>
+      <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="save" title="save the file" />
+]]></code>
     </eg-group>
     <eg-group>
       <head>入力フィールド</head>
       <description><exsubhead>事例 3a</exsubhead><p>事例 3a では、入力フィールドが「編集可能テキスト」という役割 (role) を持っている。<el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の名前 (name) は、<el>label</el> 要素で指定した「果物の種類」となる。値 (value) は、<att>value</att> 属性の「バナナ」となる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<label for="text_1">果物の種類</label>
-<input id="text_1" type="text" value="バナナ"> ]]></code>
+         <code role="xhtml"><![CDATA[<label for="text_1">Type of fruit</label>
+<input id="text_1" type="text" value="bananas">
+]]></code>
       <description><exsubhead>事例 3b</exsubhead><p>事例 3b では、入力フィールドが事例 3a と同じ役割 (role) を持つが、<phrase>値 (value) がなく、</phrase>名前 (name) を <att>title</att> 属性で指定している点が異なる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input id="text_1" type="text" title="果物の種類">]]></code>
+         <code role="xhtml"><![CDATA[<input id="text_1" type="text" title="Type of fruit">
+]]></code>
     </eg-group>
     <eg-group>
       <head>チェックボックス</head>
       <description><p>事例 4 は、<el>input</el> 要素の <att>type</att> 属性から「チェックボックス」という役割 (role) を持っている。<el>label</el> 要素の <att>for</att> 属性が <el>input</el> 要素の <att>id</att> 属性を参照することで、<el>label</el> 要素を <el>input</el> 要素と関連付けている。<el>input</el> 要素の名前 (name) は、<el>label</el> 要素で指定した「チーズ」となる。状態 (state) は <att>checked</att> 属性で「チェックあり」又は「チェックなし」に設定できる。そのコントロールに対する利用者のインタラクションによって、状態 (state) が変更される。</p>
 </description>
-      <code role="xhtml"><![CDATA[<label for="cb_1">チーズ</label> 
-<input id="cb_1" type="checkbox" checked="checked"> ]]></code>
+         <code role="xhtml"><![CDATA[<label for="cb_1">Cheese</label> 
+<input id="cb_1" type="checkbox" checked="checked">
+                    ]]></code>
     </eg-group>
     <eg-group>
       <head>ラジオボタン</head>
       <description><p>事例 5 は、<el>input</el> 要素の <att>type</att> 属性から「ラジオボタン」という役割 (role) を持っている。<el>input</el> 要素の名前 (name) は、<el>label</el> 要素から与えられる。状態 (state) は、<att>checked</att> 属性によって「チェックあり」又は「チェックなし」に設定できる。状態 (state) は、利用者が変更できる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<input type="radio" name="color" id="r1" checked="checked"/><label for="r1">赤</label>
-<input type="radio" name="color" id="r2" /><label for="r2">青</label>
-<input type="radio" name="color" id="r3" /><label for="r3">緑</label> ]]></code>
+         <code role="xhtml"><![CDATA[<input type="radio" name="color" id="r1" checked="checked"/><label for="r1">Red</label>
+<input type="radio" name="color" id="r2" /><label for="r2">Blue</label>
+<input type="radio" name="color" id="r3" /><label for="r3">Green</label>
+                    ]]></code>
     </eg-group>
     <eg-group>
       <head>セレクトメニュー</head>
       <description><exsubhead>事例 6a</exsubhead><p>事例 6a は、<el>select</el> 要素によって「リストボックス」という役割 (role) を持っている。名前 (name) は「数量」で、<el>label</el> 要素から与えられている。<el>select</el> 要素に名前 (name) を付け忘れるのは、よくあるエラーの一つである。値 (value) は、<att>selected</att> 属性 (XHTML では値を "<code>selected</code>" と指定) のある <el>option</el> 要素であり、初期値は「2 個」ということになる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<label for="s1">数量</label>
+         <code role="xhtml"><![CDATA[<label for="s1">Numbers</label>
 <select id="s1" size="1">
- <option>1個</option>
- <option selected="selected">2個</option>
- <option>3個</option>
-</select> ]]></code>
+ <option>One</option>
+ <option selected="selected">Two</option>
+ <option>Three</option>
+</select>
+                    ]]></code>
       <description><exsubhead>事例 6b</exsubhead><p>事例 6b では、事例 6a の <el>select</el> 要素と同じ名前 (name)、役割 (role)、値 (value) であるが、名前 (name) を <att>title</att> 属性で指定している点が異なる。この方法は、ラベルを視覚的に表示しないほうがよい場合に用いることができる。</p>
 </description>
-      <code role="xhtml"><![CDATA[<select id="s1" title="数量" size="1">
- <option>1個</option>
- <option selected="selected">2個</option>
- <option>3個</option>
-</select> ]]></code>
+         <code role="xhtml"><![CDATA[<select id="s1" title="Numbers" size="1">
+ <option>One</option>
+ <option selected="selected">Two</option>
+ <option>Three</option>
+</select>
+                    ]]></code>
     </eg-group>
     <eg-group>
       <head>テキストエリア</head>
       <description><exsubhead>事例 7a</exsubhead><p>事例 7a は、<el>textarea</el> 要素の「編集可能なテキスト」という役割 (role) を持っている。名前 (name) は、<el>label</el> 要素で指定した「あなたの発言をここに入力」である。値 (value) は、<el>textarea</el> 要素内にある「87 年前」である。</p>
 </description>
-      <code role="xhtml"><![CDATA[<label for="ta_1">あなたの発言をここに入力</label>
-<textarea id="ta_1" >87年前</textarea> ]]></code>
+         <code role="xhtml"><![CDATA[<label for="ta_1">Type your speech here</label>
+<textarea id="ta_1" >Four score and seven years ago</textarea>
+                    ]]></code>
       <description><exsubhead>事例 7b</exsubhead><p>事例 7b は、同じ役割 (role) を持ち、名前 (name) は <el>title</el> 属性を用いて指定していて、値 (value) は空である。</p>
 </description>
-      <code role="xhtml"><![CDATA[<textarea id="ta_1" title="あなたの発言をここに入力" >87年前</textarea> ]]></code>
+         <code role="xhtml"><![CDATA[<textarea id="ta_1" title="Type your speech here" >Four score and seven years ago</textarea>
+                    ]]></code>
     </eg-group>
     <eg-group>
       <head>フォームコントロールのグループ化</head>
       <description><exsubhead>ラジオボタンのフィールドセット</exsubhead><p>事例 8 のラジオボタンのフィールドセットには「グループ化」という役割 (role) がある。名前 (name) は <el>legend</el> 要素によって与えられている。</p>
 </description>
-      <code role="xhtml"><![CDATA[<fieldset>
-  <legend>色を選択:</legend> 
-     <input id="red" type="radio" name="color" value="red" /><label for="red">赤</label><br /> 
-     <input id="blue" type="radio" name="color" value="blue" /><label for="blue">青</label><br /> 
-     <input id="green" type="radio" name="color" value="green" /><label for="green">緑</label> 
-</fieldset> ]]></code>
+         <code role="xhtml"><![CDATA[<fieldset>
+  <legend>Choose a Color:</legend> 
+     <input id="red" type="radio" name="color" value="red" /><label for="red">Red</label><br /> 
+     <input id="blue" type="radio" name="color" value="blue" /><label for="blue">Blue</label><br /> 
+     <input id="green" type="radio" name="color" value="green" /><label for="green">Green</label> 
+</fieldset>
+                    ]]></code>
     </eg-group>
    </examples>
    <resources>

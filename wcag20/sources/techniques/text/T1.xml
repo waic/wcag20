@@ -36,11 +36,19 @@
       <eg-group>
       <description><p>2 つの段落。それぞれが 1 行の空白行で始まり、1 行の空白行で終わっている。</p>
 </description>
-      <code><![CDATA[
-これが、この段落の最初の文章である。段落は、長いこともあれば短いこともある。
+         <code><![CDATA[
+						
+This is the first sentence in this
+paragraph. Paragraphs may be long
+or short.
    
-    この段落では、最初の行がインデントされている。インデントされた文章とインデントされていない文章の両方が許可される。
-段落の行内の空白スペースは、段落の定義では無視されている。完全に空白の行だけが意味を持つ。]]></code>
+    In this paragraph the first line is
+indented. Indented and non-indented
+sentences are allowed. White space within
+the paragraph lines is ignored in
+defining paragraphs. Only completely blank
+lines are significant.
+]]></code>
     </eg-group>
    </examples>
    <resources/>

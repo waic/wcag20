@@ -30,17 +30,18 @@
       <head/>
       <description><p>以下の例では、視覚的には分かる形でフォームのコントロールに対応するラベルが提示されているが、<code>label</code> 要素を用いてラベルとコントロールの対応が示されていない。この例の場合、ユーザエージェント (支援技術を含む) がどのラベルとどのコントロールが対応しているのかを判断できない可能性があるため不適合となる。</p>
 </description>
-      <codeblock role="html5" xml:space="preserve"><![CDATA[
- <form>
- 姓:
+            <codeblock role="html5" xml:space="preserve"><![CDATA[
+<form>
+ First name: 
+ <input type="text" name="firstname">
+ <br>
+ Last name: 
  <input type="text" name="lastname">
  <br>
- 名: 
- <input type="text" name="firstname">
- <br />
- 私は犬を飼っている <input type="checkbox" name="pet" value="dog">
- 私は猫を飼っている <input type="checkbox" name="pet" value="cat">
-</form>]]></codeblock>
+ I have a dog <input type="checkbox" name="pet" value="dog">
+ I have a cat <input type="checkbox" name="pet" value="cat">
+</form>
+]]></codeblock>
     </eg-group>
     <eg-group role="failure">
       <head/>
@@ -61,8 +62,9 @@
       <head/>
       <description><p>次のコード例の検索テキストボックスには、プログラムによる解釈が可能な名前がない。名前 (name) は、上記の方法のいずれかで提供することができる。</p>
 </description>
-      <codeblock role="html5" xml:space="preserve"><![CDATA[
-<input type="text" value="検索文字列を入力"><input type="submit" type="submit" value="検索">]]></codeblock>
+            <codeblock role="html5" xml:space="preserve"><![CDATA[
+<input type="text" value="Type your search here"><input type="submit" type="submit" value="Search">
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>

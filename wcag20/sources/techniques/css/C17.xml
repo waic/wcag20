@@ -21,13 +21,13 @@
             <p>お問い合わせフォームには、いくつかの初歩的な情報があり、利用者が自分の姓と名、電話番号、電子メールアドレスを入力するフォームコントロールがある。見出し、初歩的なテキスト及びフォームコントロールのラベルは、スケーラブルな方法で実装されているが、フォームのコントロール自体はスケーラブルな方法では実装されていない。</p>
             <p>XHTML コンポーネント:</p>
          </description>
-         <code role="xhtml"><![CDATA[<h1>お問い合わせ</h1>
-<p>あなたの個人情報をご記入いただければ、できるだけ早くご連絡いたします。なお、すべての入力項目が必須項目となっております。</p>
-<label for="fname">名</label><input type="text" name="fname" id="fname" /><br />
-<label for="lname">姓</label><input type="text" name="lname" id="lname" /><br />
-<label for="phone">電話番号</label><input type="text" name="phone" id="phone" /><br />
-<label for="email">メール</label><input type="text" name="email" id="email" /><br />
-<input type="submit" name="Submit" value="送信" id="Submit" />]]></code>
+         <code role="xhtml"><![CDATA[<h1>Contact Us</h1>
+<p>Please provide us with your details and we will contact you as soon as we can. Note that all of the form fields are required.</p>
+<label for="fname">First Name</label><input type="text" name="fname" id="fname" /><br />
+<label for="lname">Last Name</label><input type="text" name="lname" id="lname" /><br />
+<label for="phone">Telephone</label><input type="text" name="phone" id="phone" /><br />
+<label for="email">Email</label><input type="text" name="email" id="email" /><br />
+<input type="submit" name="Submit" value="Submit" id="Submit" />]]></code>
          <description>
             <p>CSS コンポーネント:</p>
          </description>

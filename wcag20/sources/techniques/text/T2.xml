@@ -25,41 +25,49 @@
    <examples>
       <eg-group>
       <head>順不同リスト</head>
-      <code><![CDATA[
-- 順不同のリスト項目
+         <code><![CDATA[
+						
+- unordered list item
  
-- 順不同のリスト項目
+- unordered list item
  
-- 順不同のリスト項目]]></code>
+- unordered list item
+]]></code>
     </eg-group>
     <eg-group>
       <head>数字の順序付きリスト</head>
-      <code><![CDATA[
-1. 順序付きリスト項目
+         <code><![CDATA[
+						
+1. Ordered list item
  
-2. 順序付きリスト項目
+2. Ordered list item
  
-3. 順序付きリスト項目]]></code>
+3. Ordered list item
+]]></code>
     </eg-group>
     <eg-group>
       <head>ローマ数字の順序付きリスト</head>
-      <code><![CDATA[
-i.   順序付きリスト項目
+         <code><![CDATA[
+						
+i.   Ordered list item
  
-ii.  順序付きリスト項目
+ii.  Ordered list item
  
-iii. 順序付きリスト項目
+iii. Ordered list item
  
-iv.  順序付きリスト項目]]></code>
+iv.  Ordered list item
+]]></code>
     </eg-group>
     <eg-group>
       <head>アルファベットの順序付きリスト</head>
-      <code><![CDATA[
-A) 順序付きリスト項目
+         <code><![CDATA[
+						
+A) Ordered list item
  
-B) 順序付きリスト項目
+B) Ordered list item
  
-C) 順序付きリスト項目]]></code>
+C) Ordered list item
+]]></code>
     </eg-group>
    </examples>
    <resources/>
