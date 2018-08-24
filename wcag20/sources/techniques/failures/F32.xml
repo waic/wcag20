@@ -16,7 +16,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>単語の途中に空白を挿入することによる不適合</head>
+      <head>単語の途中に空白を挿入することによる失敗例</head>
       <description><p>この事例では、見出しとして文字をまばらに配置するために単語の途中にスペースを置いている。スクリーンリーダーは、"Welcome" という単語としてではなく、文字を一つずつばらばらに読み上げてしまうだろう。</p>
 </description>
       <code role="html401"><![CDATA[
@@ -70,7 +70,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている場合、この不適合条件が適用され、達成基準に不適合となる。</p>
+               <p>手順 1. が真である場合、この失敗例の条件は適用され、コンテンツは達成基準に失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

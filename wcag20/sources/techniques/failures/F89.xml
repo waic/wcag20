@@ -18,7 +18,7 @@
   </ua-issues>
   <description>
     <p>この文書は、画像のような非テキストコンテンツのみで提供されているリンクについて、そしてそのリンクがアクセシブルな名前で特定できないときに起こる失敗例について述べている。リンクのアクセシブルな名前 (name) は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation</loc> によって決定される。</p>
-    <p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適合する。このケースでは、実装方法 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html"/>は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
+    <p>これはテキスト及び画像が同じリンク先に別々にリンクしている場合にも適用される。このケースでは、実装方法 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H2" linktype="html"/>は別々のリンク及び望ましくない冗長性を減少させるのに推奨される方法である。</p>
   </description>
    <examples>
       <eg-group role="failure">

@@ -15,7 +15,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次に示すのは、マウスでのクリックに反応して他のページに移動する画像の例である。これは、キーボードを用いて次のページに移動できないため不適合である。
+      <description><p>次に示すのは、マウスでのクリックに反応して他のページに移動する画像の例である。これは、キーボードを用いて次のページに移動できないため失敗例である。
       <code><![CDATA[
 <p><img onmousedown="nextPage();" src="nextarrow.gif" alt="次のページへ移動"></p>]]></code></p>
 </description>
@@ -38,7 +38,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>いずれかが見つかった場合、この失敗例の条件は適用され、コンテンツは達成基準に失敗となる。</p>
             </item>
          </ulist>
          <!--<p>Test n.n will fail the test (<code>onMouseDown</code> is used and  keyboard-specific event handler is not used)</p>

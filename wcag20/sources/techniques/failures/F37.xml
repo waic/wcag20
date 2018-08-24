@@ -66,7 +66,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>3. を満たしていない場合、この不適合条件が適用され、コンテンツは達成基準に不適合となる。</p>
+         <p>手順 3. が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準に失敗となる。</p>
       </expected-results>
    </tests>
 </technique>
