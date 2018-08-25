@@ -17,8 +17,7 @@ before_script:
 - git config --global user.email "bakera@star.email.ne.jp"
 - git config --global user.name "MINAZUKI, Bakera"
 script:
-#- ant -f wcag20/build.xml -lib /usr/share/java/Saxon-HE.jar gh-pages
-- ant -f wcag20/build.xml gh-pages
+- ant -f wcag20/build.xml -lib /usr/share/java/Saxon-HE.jar gh-pages
 after_success:
 - cd ../..
 - mkdir gh-pages
