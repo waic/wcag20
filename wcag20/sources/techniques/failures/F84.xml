@@ -15,12 +15,12 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <code><![CDATA[ロッキー山脈の詳細な情報は <a href="file110.htm">ここをクリック</a> 。]]></code>
+        <code><![CDATA[<a href="file110.htm">Click here</a> for more information on the Rocky Mountains.]]></code>
     </eg-group>
-    <eg-group role="failure">
-      <code><![CDATA[<h2>ニュースヘッドライン</h2>
-中東和平会議は、実りの多い対話をもたらした。
-<a href="r4300.htm">続きを読む</a>]]></code>
+      <eg-group role="failure">
+         <code><![CDATA[<h2>News headlines</h2>
+The middle east peace meetings have yielded fruitful dialogue. 
+<a href="r4300.htm">read more</a>]]></code>
     </eg-group>
    </examples>
    <tests>

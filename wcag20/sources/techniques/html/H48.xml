@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H48">
-   <short-name>リンクのリスト又はグループに、ol 要素、ul 要素、dl 要素を用いる</short-name>
+   <short-name>リスト又はリンクのグループに、ol 要素、ul 要素、dl 要素を用いる</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>
@@ -27,9 +27,9 @@
       <head>連続するステップを示すリスト</head>
       <description><p>この事例では、プロセスの連続するステップを示すために順序リスト (<el>ol</el> 要素) を利用している。</p>
 </description>
-      <code role="html401"><![CDATA[<ol>
-  <li>卵と牛乳をボールの中で混ぜる。</li>
-  <li>塩とコショウを加える。</li>
+         <code role="html401"><![CDATA[ <ol>
+  <li>Mix eggs and milk in a bowl.</li>
+  <li>Add salt and pepper.</li>
 </ol>]]></code>
       <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
@@ -37,10 +37,10 @@
       <head>材料のリスト</head>
       <description><p>この事例では、お店で購入する品目を順不同リスト (<el>ul</el> 要素) で示している。</p>
 </description>
-      <code role="html401"><![CDATA[<ul>
-  <li>牛乳</li>
-  <li>卵</li>
-  <li>バター</li>
+         <code role="html401"><![CDATA[<ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Butter</li>
 </ul>]]></code>
       <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
@@ -48,23 +48,24 @@
       <head>言葉とその定義</head>
       <description><p>この事例では、用語とそれを明確にする定義をまとめるのに定義リスト (<el>dl</el> 要素) を利用している。</p>
 </description>
-      <code role="html401"><![CDATA[><dl>
-  <dt>点滅</dt>
-  <dd>1 秒当たり 0.5 回から 3 回、ついたり消えたりすること
+         <code role="html401"><![CDATA[<dl>
+  <dt>blink</dt>
+  <dd>turn on and off between .5 and 3 times per second
   </dd>
-</dl>]]></code>
+</dl> ]]></code>
       <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
     <eg-group>
       <head>定義リストを用いた連絡先情報</head>
       <description><p>この事例では、定義リストを用いて、対になる関連するアイテムをマークアップしている。対になっているアイテムは、それ自体が論理的に関連したリストである。定義リスト要素の CSS スタイルはブラウザによるサポートが十分ではないため、スタイル目的のためだけに span 要素がマークアップに含められているが、これは必須ではない。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[<dl>
-<dt><span>名前:</span></dt><dd><span>John Doe</span></dd>
-<dt><span>電話番号:</span></dt><dd><span>01-2345678</span></dd>
-<dt><span>FAX:</span></dt><dd><span>02-3456789</span></dd>
-<dt><span>Eメール:</span></dt><dd><span>johndoe@someemail.com</span></dd>
-</dl>]]></codeblock>
+            <codeblock xml:space="preserve"><![CDATA[<dl>
+<dt><span>name:</span></dt><dd><span>John Doe</span></dd>
+<dt><span>tel:</span></dt><dd><span>01-2345678</span></dd>
+<dt><span>fax:</span></dt><dd><span>02-3456789</span></dd>
+<dt><span>email:</span></dt><dd><span>johndoe@someemail.com</span></dd>
+</dl>
+]]></codeblock>
       <description><p>以下の CSS スタイルは、対になっているアイテムそれぞれをテーブルのようなレイアウトにして一行に並べるために用いることが可能である。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[dt, dd{float: left;margin: 0;padding: 0;}
@@ -79,13 +80,13 @@ dd span{display: inline-block; margin-right: 5px;} ]]></codeblock>
       <head>リストを用いてリンクをグループ化する</head>
       <description><p>この事例では、リンクが <el>ul</el> 要素と <el>li</el> 要素を用いてグループ化されている。</p>
 </description>
-      <code role="html401"><![CDATA[<a name="categories" id="categories"></a><h2>製品カテゴリ</h2>
+         <code role="html401"><![CDATA[<a name="categories" id="categories"></a><h2>Product Categories</h2>
 <ul class="navigation">
-    <li><a href="kitchen.html">キッチン</a></li>
-    <li><a href="bedbath.html">ベッド&amp;amp; Bath</a></li>
-    <li><a href="dining.html">ダイニング</a></li>
-    <li><a href="lighting.html">照明</a></li>
-    <li><a href="storage.html">収納</a><li>
+    <li><a href="kitchen.html">Kitchen</a></li>
+    <li><a href="bedbath.html">Bed &amp; Bath</a></li>
+    <li><a href="dining.html">Fine Dining</a></li>
+    <li><a href="lighting.html">Lighting</a></li>
+    <li><a href="storage.html">Storage</a><li>
 </ul> ]]></code>
       <description><p>リスト要素のスタイルを指定するのに CSS を使用することが可能で、この達成方法はさまざまなビジュアルデザインで用いることができる。</p>
 <p>この CSS では、リストのビュレットとインデントする左側の余白を削除して、各リスト要素を水平に並べている。</p>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F9">
-   <short-name>達成基準 3.2.5 の失敗例 － 利用者がフォーカスをフォーム要素から除去するときに状況を変化させる</short-name>
+   <short-name>達成基準 3.2.5 の失敗例 － 利用者がフォーカスをフォーム要素から移動するときにコンテキストを変化させる</short-name>
    <applicability>
       <p>全般</p>
    </applicability>
@@ -11,7 +11,7 @@
                          relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書では、次の要素にフォーカスを移動させることのように、フォーカスをフォーム要素から移動させた場合に状況の変化を引き起こす失敗例について述べている。</p>
+    <p>この文書では、次の要素にフォーカスを移動させることのように、フォーカスをフォーム要素から移動させた場合にコンテキストの変化を引き起こす失敗例について述べている。</p>
   </description>
    <examples>
       <eg-group role="failure">

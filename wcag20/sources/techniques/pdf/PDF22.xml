@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="PDF22">
-   <short-name>PDF フォームにおいて、利用者の入力が求められる形式または値の範囲外となった場合、そのことを明示する</short-name>
+   <short-name>PDF フォームにおいて、利用者の入力が必須形式又は値の範囲外となった場合に、そのことを明示する</short-name>
    <applicability>
      <p id="pdf.applicability.general">タグ付き PDF 文書</p>
    </applicability>
@@ -39,7 +39,7 @@
     <eg-group>
       <head>Adobe LiveCycle Designer ES 8.2.1 を使用して入力フィールド形式の検証を提供する</head>
       <description><p>この事例は Adobe LiveCycle Designer の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
-<olist><item><p>必須形式のあるフォームコントロールを選択する</p></item><item><p>［オブジェクト］パレットで、［検証パターン］ボタンを押下する</p></item><item><p>これは日付フィールドなので、パターン - 日付フィールドダイアログボックスが表示される。利用者が入力する必要のあるパターンまたは書式を選択する。［OK］をクリックする</p>&#13;
+<olist><item><p>必須形式のあるフォームコントロールを選択する</p></item><item><p>［オブジェクト］パレットで、［検証パターン］ボタンをクリックする</p></item><item><p>これは日付フィールドなので、パターン - 日付フィールドダイアログボックスが表示される。利用者が入力する必要のあるパターンまたは書式を選択する。［OK］をクリックする</p>&#13;
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/form-validation.jpg" height="510" width="903"/><alt>スクリーンショット: LiveCycle を使用して、パターン検証を必要とするフォームフィールドを指定する</alt></image></p></item><item><p>［オブジェクト］パレットで、「検証パターンのメッセージ」ボックスを使用して警告メッセージを入力する。必要なパターンが含まれていることを確認する。このメッセージは、利用者が無効な日付書式を使用してフォームを発行しようとしたときに表示される</p></item></olist><p>この事例のサンプルとして、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/required-fields-lc.pdf"><!-- linktype="examples"-->LiveCycle Designer の必須フィールドのサンプル (PDF ファイル)</loc> がある。</p>
 </description>
     </eg-group>
@@ -48,18 +48,18 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。 他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。 </p>
 <p>次の JavaScript コードは、フォームフィールド (この場合は日付フィールド) を検証するために使用されるスクリプトを示している。このスクリプトをフォームフィールドに追加するには、事例 1 に示されているように、［テキストフィールドのプロパティ］ダイアログボックスを開き、［検証］タブの「編集」を選択する。</p>
 <p><image><img class="eximg" source="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF22/jscript.jpg" height="462" width="506"/><alt>スクリーンショット: JavaScript 検証コードを指定するために［検証］タブが開かれている、［テキストフィールドのプロパティ］ダイアログボックス</alt></image></p></description>
-      <codeblock xml:space="preserve"><![CDATA[
-// 日付マスク書式 MM/DD/YYYY 用の JavaScript コード
+            <codeblock xml:space="preserve"><![CDATA[// 日付マスク書式 MM/DD/YYYY 用の JavaScript コード
 var re = /^[mdy0-9]{2}\/[mdy0-9]{2}\/[mdy0-9]{4}$/
 //Allow blank space in field
 if (event.value !="") {
   if (re.test(event.value) == false) {
     app.alert ({
-       cTitle: "誤った書式",
-       cMsg: "mm/dd/yyyy の書式で日付を入力してください。"
+       cTitle: "Incorrect Format",
+       cMsg: "Please enter date using mm/dd/yyyy format"
     });
   }
-}]]></codeblock>
+}
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>

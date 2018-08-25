@@ -18,22 +18,24 @@
       <description><p>異なる順序でリンクを提示するナビゲーションメカニズムの例。</p>
 <p><emph role="bold">1 ページ目のメニュー</emph></p>
 </description>
-      <code role="html401"><![CDATA[
-    <div id="menu"> 
-    <a href="Brazil.htm">ブラジル</a><br />
-    <a href="Canada.htm">カナダ</a><br />
-    <a href="Germany.htm">ドイツ</a><br />
-    <a href="Poland.htm">ポーランド</a> 
-</div>]]></code>
+         <code role="html401"><![CDATA[
+<div id="menu"> 
+    <a href="Brazil.htm">Brazil</a><br />
+    <a href="Canada.htm">Canada</a><br />
+    <a href="Germany.htm">Germany</a><br />
+    <a href="Poland.htm">Poland</a> 
+</div>
+]]></code>
       <description><p><emph role="bold">2 ページ目のメニュー</emph></p>
 </description>
-      <code role="html401"><![CDATA[
-    <div id="menu"> 
-    <a href="Canada.htm">カナダ</a><br />
-    <a href="Brazil.htm">ブラジル</a><br />
-    <a href="Germany.htm">ドイツ</a><br />
-    <a href="Poland.htm">ポーランド</a> 
-</div>]]></code>
+         <code role="html401"><![CDATA[
+<div id="menu"> 
+    <a href="Canada.htm">Canada</a><br />
+    <a href="Brazil.htm">Brazil</a><br />
+    <a href="Germany.htm">Germany</a><br />
+    <a href="Poland.htm">Poland</a> 
+</div>
+]]></code>
     </eg-group>
    </examples>
    <resources/>

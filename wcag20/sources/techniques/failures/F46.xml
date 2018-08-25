@@ -28,20 +28,21 @@
       <eg-group role="failure">
       <description><p>以下は、テーブルを使ってコンテンツを 3 段組にする単純な例である。左側にナビゲーションバー、中央にメインのコンテンツ、右側に追加のサイドバーが配置されている。ページの上部にはページのタイトルが表示されている。この例では、ページのタイトルを <code><![CDATA[<th>]]></code> を使ってマークアップし、この表がレイアウトテーブルであることを示す <code>summary</code> 属性が指定されている。</p>
 </description>
-      <code role="html401"><![CDATA[
-<table summary="レイアウトテーブルです。">
+         <code role="html401"><![CDATA[
+ <table summary="layout table">
  <tr>
-   <th colspan="3">ページのタイトル</th>
+   <th colspan=3>Page Title</th>
  </tr>
  <tr>
-   <td><div>ナビゲーションコンテンツ</div></td>
-   <td><div>メインコンテンツ</div></td>
-   <td><div>右側のサイドバーコンテンツ</div></td>
+   <td><div>navigation content</div></td>
+   <td><div>main content</div></td>
+   <td><div>right sidebar content</div></td>
  </tr>
  <tr>
-   <td colspan="3">フッター</td>
+   <td colspan=3>footer</td>
  </tr>
- </table>]]></code>
+ </table>
+]]></code>
     </eg-group>
    </examples>
    <resources/>

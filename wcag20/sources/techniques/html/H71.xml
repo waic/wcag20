@@ -24,52 +24,52 @@
       <head>選択式のテスト</head>
       <description><p>この事例では、1 つの質問に対して 5 つの解答の中からどれかを選べるテスト項目を示している。解答はそれぞれラジオボタン (<code>input type="radio"</code>) で提示されており、<el>fieldset</el> 要素に含めてある。テストの質問内容は <el>legend</el> 要素でタグ付けしてある。</p>
 </description>
-      <code role="html401"><![CDATA[<fieldset>
-  <legend>戯曲<cite>ハムレット</cite>を書いたのは</legend>
+         <code role="html401"><![CDATA[<fieldset>
+  <legend>The play <cite>Hamlet</cite> was written by:</legend>
   <input type="radio" id="shakesp" name="hamlet" checked="checked" value="a">
-  <label for="shakesp">ウィリアム シェークスピア</label><br />
+  <label for="shakesp">William Shakespeare</label><br />
   <input type="radio" id="kipling" name="hamlet" value="b">
-  <label for="kipling">ラドヤード キップリング</label><br />
+  <label for="kipling">Rudyard Kipling</label><br />
   <input type="radio" id="gbshaw" name="hamlet" value="c">
-  <label for="gbshaw">ジョージ バーナード ショー</label><br />
+  <label for="gbshaw">George Bernard Shaw</label><br />
   <input type="radio" id="hem" name="hamlet" value="d">
-  <label for="hem">アーネスト ヘミングウェイ</label><br />
+  <label for="hem">Ernest Hemingway</label><br />
   <input type="radio" id="dickens" name="hamlet" value="e">
-  <label for="dickens">チャールズ ディケンズ</label>
-</fieldset>]]></code>
+  <label for="dickens">Charles Dickens</label>
+</fieldset>   ]]></code>
       <a11ysuprorted rating="good" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>チェックボックスのグループ</head>
       <description><p>あるウェブサイトでの利用者プロフィールのページで、利用者が複数のチェックボックスを選んで自分の興味を示せるようになっている。各チェックボックス (<code>input type="checkbox"</code>) には、<el>label</el> がある。すべてのチェックボックスは、<el>fieldset</el> 要素に含められており、<el>legend</el> 要素にはチェックボックスのグループ全体の説明がある。</p>
 </description>
-      <code role="html401"><![CDATA[<fieldset>
-  <legend>次のことに興味があります (全て選択することも可)</legend>
+         <code role="html401"><![CDATA[<fieldset>
+  <legend>I am interested in the following (check all that apply):</legend>
   <input type="checkbox" id="photo" name="interests" value="ph">
-  <label for="photo">写真</label><br />
+  <label for="photo">Photography</label><br />
   <input type="checkbox" id="watercol" name="interests" checked="checked" value="wa">
-  <label for="watercol">水彩画</label><br />
+  <label for="watercol">Watercolor</label><br />
   <input type="checkbox" id="acrylic" name="interests" checked="checked" value="ac">
-  <label for="acrylic">アクリル画</label>
+  <label for="acrylic">Acrylic</label>
   …
-</fieldset>]]></code>
+</fieldset>    ]]></code>
       <a11ysuprorted rating="good" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>同じ名前を付けたフィールドとして送信されるラジオボタン</head>
       <description><p>この事例では、1 人の哲学者を選ぶように利用者に求めている。各ラジオボタンが関連している (同じフィールドとして送信される) ことを示すために「<att>name</att>」属性で同じ値を指定し、見た目としてもグループ化すべき点に注意しよう。また、「<att>name</att>」属性は同じ値であっても、「<att>id</att>」属性はそれぞれ一意的な値でなければならない点にも注意しよう。</p>
 </description>
-      <code><![CDATA[<form action="http://example.com/vote" method="post">
+         <code><![CDATA[<form action="http://example.com/vote" method="post">
   <fieldset>
-    <legend>あなたが好きな哲学者</legend>
+    <legend>Your preferred philosopher</legend>
     <input type="radio" name="philosopher" id="philosopher_socrates" value="socrates"/>
-    <label for="philosopher_socrates">ソクラテス</label>
+    <label for="philosopher_socrates">Socrates</label>
     <input type="radio" name="philosopher" id="philosopher_plato" value="plato"/>
-    <label for="philosopher_plato">プラトン</label>
+    <label for="philosopher_plato">Plato</label>
     <input type="radio" name="philosopher" id="philosopher_aristotle" value="aristotle"/>
-    <label for="philosopher_aristotle">アリストテレス</label>
+    <label for="philosopher_aristotle">Aristotle</label>
   </fieldset>
-  </form>]]></code>
+  </form> ]]></code>
       <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
 </description>
       <a11ysuprorted rating="good" exnumber="3"/>
@@ -78,24 +78,24 @@
       <head>論理的に関連付けたコントロール</head>
       <description><p>この事例では、居住地と郵送先のフィールドを別々に <el>fieldset</el> 要素でグループ化し、<el>legend</el> 要素で異なる内容を指定している。</p>
 </description>
-      <code role="html401"><![CDATA[<form action="http://example.com/adduser" method="post">
+         <code role="html401"><![CDATA[<form action="http://example.com/adduser" method="post">
    <fieldset>
-     <legend>居住地</legend>
-     <label for="raddress">住所: </label>
+     <legend>Residential Address</legend>
+     <label for="raddress">Address: </label>
      <input type="text" id="raddress" name="raddress" />
-     <label for="rzip">郵便番号: </label>
+     <label for="rzip">Postal/Zip Code: </label>
      <input type="text" id="rzip" name="rzip" />
-     ……居住地の入力内容が続く……
+     ...more residential address information...
    </fieldset>
    <fieldset>
-     <legend>郵送先</legend>
-     <label for="paddress">住所: </label>
+     <legend>Postal Address</legend>
+     <label for="paddress">Address: </label>
      <input type="text" id="paddress" name="paddress" />
-     <label for="pzip">郵便番号: </label>
+     <label for="pzip">Postal/Zip Code: </label>
      <input type="text" id="pzip" name="pzip" />
-     ……郵送先の入力内容が続く……
+     ...more postal address information...
    </fieldset>
-</form> ]]></code>
+</form>]]></code>
       <a11ysuprorted rating="good" exnumber="4"/>
     </eg-group>
    </examples>

@@ -25,10 +25,14 @@
       <code role="html401"><![CDATA[h2 {	letter-spacing: 1em; }]]></code>
       <description><p>マークアップは以下の通り: </p>
 </description>
-      <code role="html401"><![CDATA[<h2>博物館</h2> ]]></code>
+               <code role="html401"><![CDATA[
+<h2>Museum</h2>
+]]></code>
       <description><p>表示結果は、およそ以下のようになる: </p>
 </description>
-      <code role="html401"><![CDATA[博　物　館]]></code>
+      <code role="html401"><![CDATA[
+M u s e u m
+]]></code>
     </eg-group>
    </examples>
    <resources>

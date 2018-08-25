@@ -26,39 +26,43 @@
     <eg-group>
       <description><p>以下のレイアウトではボタンを右下隅に配置して位置によってそれを示している。テキストラベルの指示は、位置が意味をなさない線形化バージョンにアクセスする利用者にも、どのボタンを使用するかを明確にしている。</p>
 </description>
-      <code><![CDATA[<table>
-  <tbody>
-    <tr>
-      <td colspan="2">右下の「前へ戻る」ボタンを押して下さい。</td>
-      <td>
-        <span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;">
-        印刷</span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;">
-        中止</span>
-      </td>
-      <td>
-        <span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;">
-        OK</span>
-      </td>
-      <td>
-        <span style="background: ButtonFace; color: ButtonText; border: 
-        medium outset ButtonShadow; 
-        width: 5em; display: block; font-weight: bold; text-align: center;">
-        前へ戻る</span>
-      </td>
-    </tr>
-  </tbody>
-</table>]]></code>
+         <code><![CDATA[
+              <table>
+                <tbody>
+                <tr>
+                <td colspan="2">Push the lower right [Preview] button.</td>
+                <td>
+                <span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;">
+                Print</span>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;">
+                Cancel</span>
+                </td>
+                <td>
+                <span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;">
+                OK</span>
+                </td>
+                <td>
+                <span style="background: ButtonFace; color: ButtonText; border: 
+                medium outset ButtonShadow; 
+                width: 5em; display: block; font-weight: bold; text-align: center;">
+                Preview</span>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+              ]]><!--BBC: Add a working example here? --><![CDATA[
+              
+            ]]></code>
     </eg-group>
    </examples>
    <resources/>

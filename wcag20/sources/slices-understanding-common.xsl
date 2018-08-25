@@ -105,7 +105,7 @@
   				<title>
   					<xsl:if test="@id!='conformance'">ガイドライン<xsl:text> </xsl:text>
   					</xsl:if>
-  					<xsl:apply-templates select="head" mode="text"/> を理解する | WCAG 2.0解説書
+  					<xsl:apply-templates select="head" mode="text"/> <xsl:if test="@id!='conformance'">を理解する</xsl:if> | WCAG 2.0解説書
   				</title>
   				<xsl:call-template name="canonical-link"/>
   				<xsl:call-template name="css"/>

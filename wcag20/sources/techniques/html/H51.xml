@@ -24,30 +24,30 @@
       <description><p>この事例では、簡単なデータテーブルに <el>table</el> 要素を利用している。1 行目は曜日、1 列目は時間である。これらのセルは <el>th</el> 要素でマークアップしてあり、列見出しが曜日、行見出しが時間という役割になっている。</p>
 <p>スクリーンリーダーは、利用者がテーブルを読み進めるとき、対応する見出し情報の変化を読み上げる。それゆえ、スクリーンリーダーの利用者が同じ行を左右に動くときは、(もしあれば) 予定に対応する曜日 (列見出し) の読み上げを、同じ列を上下に移動するときは、対応する時間の読み上げを聞くであろう。</p>
 </description>
-      <code role="html401"><![CDATA[<table>
+         <code role="html401"><![CDATA[ <table>
   <tr>
     <td> </td>
-    <th>月</th>
-    <th>火</th>
-    <th>水</th>
-    <th>木</th>
-    <th>金</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
   </tr>
   <tr>
-    <th>8:00から9:00</th>
-    <td>サムと会う</td>
+    <th>8:00-9:00</th>
+    <td>Meet with Sam</td>
     <td> </td>
     <td> </td>
     <td> </td>
     <td> </td>
   </tr>
   <tr>
-    <th>9:00から10:00</th>
+    <th>9:00-10:00</th>
     <td> </td>
     <td> </td>
-    <td>ウィリアムズ先生</td>
-    <td>サムとまた会う</td>
-    <td>サンアントニオから出発</td>
+    <td>Doctor Williams</td>
+    <td>Sam again</td>
+    <td>Leave for San Antonio</td>
   </tr>
 </table> ]]></code>
     </eg-group>

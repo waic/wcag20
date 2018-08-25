@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H65">
-   <short-name>label 要素を使用することができないとき、フォームコントロールを特定するために、title 属性を使用する</short-name>
+   <short-name>label 要素を使用できない場合に、フォームコントロールを特定するために、title 属性を使用する</short-name>
    <applicability>
       <p><att>value</att> 属性、<att>alt</att> 属性、または要素内容で特定できない HTML 及び XHTML のフォームコントロール</p>
    </applicability>
@@ -33,33 +33,34 @@
       <head>検索対象を絞り込むプルダウンメニュー</head>
       <description><p>検索フォームで検索対象を絞り込むプルダウンメニューを用いている。そのプルダウンメニューは、検索語を入力するテキストフィールドのすぐそばにある。テキストフィールドとプルダウンメニューの関係は、見た目のデザインを目で見ることができる利用者には明白であり、ラベルを置くスペースはない。そこで、<el>select</el> 要素を特定するのに <att>title</att> 属性を利用している。<att>title</att> 属性はスクリーンリーダーによって読み上げられたり、画面拡大ソフトを使っている利用者にはツールチップとして表示されたりする。</p>
 </description>
-      <code role="html401"><![CDATA[<label for="searchTerm">検索語:</label>
+         <code role="html401"><![CDATA[<label for="searchTerm">Search for:</label>
 <input id="searchTerm" type="text" size="30" value="" name="searchTerm">
-<select title="検索対象" id="scope">
+<select title="Search in" id="scope">
 …
-</select>]]></code>
+</select> ]]></code>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head>電話番号の入力フィールド</head>
       <description><p>ウェブページの中に、アメリカでの電話番号を入力するコントロールがあり、市外局番、市内局番、下 4 桁の 3 つのフィールドで構成されている。</p>
 </description>
-      <code role="html401"><![CDATA[<fieldset><legend>電話番号</legend>
-<input id="areaCode" name="areaCode" title="市外局番" 
+         <code role="html401"><![CDATA[<fieldset><legend>Phone number</legend>
+<input id="areaCode" name="areaCode" title="Area Code" 
 type="text" size="3" value="" >
-<input id="exchange" name="exchange" title="電話番号の上3桁" 
+<input id="exchange" name="exchange" title="First three digits of phone number" 
 type="text" size="3" value="" >
-<input id="lastDigits" name="lastDigits" title="電話番号の下4桁" 
+<input id="lastDigits" name="lastDigits" title="Last four digits of phone number" 
 type="text" size="4" value="" >
-</fieldset>]]></code>
+</fieldset> ]]></code>
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>検索機能</head>
       <description><p>ウェブページに、利用者が検索語を入力できるテキストフィールドと、検索を実行するための「検索」というラベルが付いたボタンがある。フォームコントロールを特定するの <att>title</att> 属性を利用し、ボタンはテキストフィールドの直後に置いてあるので、テキストフィールドに検索語を入力すべきことは利用者にとって明白である。</p>
 </description>
-      <code role="html401"><![CDATA[<input type="text" title="ここに検索語を入力"/> 
-<input type="submit" value="検索"/>]]></code>
+         <code role="html401"><![CDATA[
+<input type="text" title="Type search term here"/> <input type="submit" value="Search"/>
+]]></code>
       <a11ysuprorted rating="pass" exnumber="3"/>
     </eg-group>
       <eg-group>

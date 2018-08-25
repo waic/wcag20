@@ -39,7 +39,7 @@ var gCounter = -1;  // カウンタを保存するグローバル変数
 // quotes変数は名言のリストで初期化される
 var quotes = new Array("quote 1", "quote 2", "quote 3", "quote 4", "quote 5");
 function showQuotes() {
-   if (++gCounter &amp;gt;= quotes.length) {★「&amp;gt;」は「>」ではないでしょうか？★
+   if (++gCounter &amp;gt;= quotes.length) { //★「&amp;gt;」は「>」ではないでしょうか？★
      gCounter = 0;
    }
    doAlert(quotes[gCounter]);
@@ -49,13 +49,15 @@ showQuotes();
 </script>]]></code>
       <description><p>ページの本文内には、アラートを有効にしたり無効する方法を含める。以下はひとつの例である:</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[
 <body>
-<p>アラートボックスを使用した名言の表示を有効にするには、以下のボタンを押してください。<br />
+<p>Press the button below to enable the display of famous quotes 
+using an alert box<br />
 <button id="enableBtn" type="button" onclick="modifyAlerts(true);">
-アラートを利用する</button><br />
+Turn Alerts On</button><br />
 <button id="disableBtn" type="button" onclick="modifyAlerts(false);">
-アラートを利用しない</button></p>]]></code>
+Turn Alerts Off</button></p>
+]]></code>
       <description><p>このコードを実装したサンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR14/enablealerts.html"><!-- linktype="examples"-->アラートの実装例</loc></p>
 </description>
     </eg-group>

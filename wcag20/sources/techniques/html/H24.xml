@@ -32,14 +32,15 @@
       <eg-group>
       <description><p>この事例では、イメージマップ上の各領域の目的を示したテキストを提供するのに、<el>area</el> 要素の <att>alt</att> 属性を利用している。</p>
 </description>
-      <code><![CDATA[<img src="welcome.gif" usemap="#map1" 
-    alt="図書館の各エリア。詳細を見るには、各エリアを選択してください。" /> 
+         <code role="html401"><![CDATA[<img src="welcome.gif" usemap="#map1" 
+    alt="Areas in the library. Select an area for
+more information on that area." /> 
 <map id="map1" name="map1">
   <area shape="rect" coords="0,0,30,30"
-    href="reference.html" alt="資料室" />
+    href="reference.html" alt="Reference" />
   <area shape="rect" coords="34,34,100,100"
-    href="media.html" alt="視聴覚室" />
-</map>]]></code>
+    href="media.html" alt="Audio visual lab" />
+</map>   ]]></code>
     </eg-group>
    </examples>
    <resources>

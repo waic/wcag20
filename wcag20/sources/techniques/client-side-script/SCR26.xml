@@ -7,9 +7,9 @@
       <p>HTML 及び XHTML、スクリプト</p>
    </applicability>
    <applies-to>
-      <success-criterion idref="keyboard-operation-keyboard-operable"/>
+      <!--success-criterion idref="keyboard-operation-keyboard-operable"/-->
       <success-criterion idref="navigation-mechanisms-focus-order" relationship="sufficient"/>
-      <success-criterion idref="navigation-mechanisms-focus-visible"/>
+      <!--success-criterion idref="navigation-mechanisms-focus-visible"/-->
    </applies-to>
    <description>
     <p>この達成方法の目的は、Document Object Model (DOM) に挿入されたユーザインタフェースの要素をタブ順序及びスクリーンリーダーの読み上げ順序がユーザエージェント標準のふるまいによって正しく設定されるような方法で配置することである。この達成方法は、メニューやダイアログのように隠れているものと表示されているもの、全てのユーザインタフェース要素に利用することができる。</p>
@@ -21,8 +21,7 @@
       <eg-group>
       <description><p>この例では、リンクがクリックされた際にメニューを生成し、そのリンクの後に挿入する。リンクの onclick イベントは新しいメニューのための ID をパラメータとして渡す ShowHide スクリプトを呼び出すために使用される。</p>
 </description>
-      <code role="xhtml"><![CDATA[
-<a href="#" onclick="ShowHide('foo',this)">切り替え</a>]]></code>
+      <code role="xhtml"><![CDATA[<a href="#" onclick="ShowHide('foo',this)">Toggle</a>]]></code>
       <description><p>ShowHide スクリプトは新しいメニューを含む div を生成し、リンクを挿入する。最終行がスクリプトの核心となる。スクリプトのトリガーとなる要素の親を探し、新しい子として生成された div をそれに追加する。これにより、新しい div は DOM 内でリンクの次になる。利用者がタブを押したときには、フォーカスがメニュー内で最初のフォーカス可能な項目となる生成されたリンクに移動する。</p>
 </description>
       <code role="script"><![CDATA[

@@ -22,17 +22,17 @@
       <eg-group>
       <description><p>アイコンとテキストが同じ <el>a</el> 要素の中にある。(HTML4 又は HTML5)</p>
       </description>
-      <code role="html5"><![CDATA[ <a href="products.html">
+         <code role="html5"><![CDATA[ <a href="products.html">
    <img src="icon.gif" alt="">
-   製品のページ
+   Products page
  </a>      ]]></code>
       </eg-group>
       <eg-group>
       <description><p>リンクにアイコンとテキストがあり、サイトのヘルプでそのアイコンの説明をしている。<el>img</el> には、サイトのヘルプで使われている名前であるテキストによる代替があり、ホームページのアイコンをクリックすることが説明されている。(HTML4 又は HTML5)</p>
 </description>
-      <code role="html5"><![CDATA[<a href="home.html">
-  <img src="house.gif" alt="HOMEページのアイコン">
-  HOMEページへ戻る
+         <code role="html5"><![CDATA[<a href="home.html">
+  <img src="house.gif" alt="home page icon">
+  Go to the home page
 </a>     ]]></code>
     <a11ysuprorted rating="pass" exnumber="2"/>
       </eg-group>

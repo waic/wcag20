@@ -19,7 +19,7 @@
          <description>
             <p>オンラインフォームで「必須項目は赤で示され、(必須) とマーク付けされている。」と指示されている。「(必須)」という手がかりが <code><![CDATA[label]]></code> 要素の中に含まれる。</p>
          </description>
-         <code role="html401"><![CDATA[<label for="lastname" class="required">名前 (必須): </label>
+         <code role="html401"><![CDATA[<label for="lastname" class="required">Last name (required): </label>
 <input id="lastname" type="text" size="25" value=""/>
 <style type="text/css">
   .required {

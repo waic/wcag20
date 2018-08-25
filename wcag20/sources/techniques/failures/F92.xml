@@ -22,18 +22,18 @@
             <p>例:</p>
             <codeblock xml:space="preserve"><![CDATA[
 <table role="presentation">
-   <caption>フルーツとその色</caption>
+   <caption>Fruits and their colors</caption>
    <tr>
-     <th>名称</th>
-     <th>色</th>
+     <th>Name</th>
+     <th>Color</th>
    </tr>
    <tr>
-    <td scope="row">バナナ</td>
-    <td>黄色</td>
+    <td scope="row">banana</td>
+    <td>yellow</td>
    </tr>
    <tr>
-    <td scope="row">オレンジ</td>
-    <td>オレンジ</td>
+    <td scope="row">orange</td>
+    <td>orange</td>
    </tr>
   </table>
                             ]]></codeblock>

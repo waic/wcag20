@@ -21,21 +21,20 @@
 <p>あるウェブページの制作者はクッキーを使って設定を扱うことがある。それは、PHP のようなサーバサイドのスクリプトを用いて扱われるかもしれない。</p>
 <p>設定のページは例えば次のように提供される:</p>
 </description>
-      <code><![CDATA[
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+         <code><![CDATA[ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
-      <title>サイト設定</title>
+      <title>Site Preferences</title>
   </head>
   <body>
-      <h1>サイト設定</h1>
+      <h1>Site Preferences</h1>
       <form id="form1" name="site_prefs" method="post" action="pref.php">
           <fieldset>
-              <legend>どのバージョンのサイトを見たいですか？</legend>
+              <legend>Which version of the site do you want to view?</legend>
               <input type="radio" name="site_pref" id="site_pref_reg" value="reg" />
-              <label for="site_pref_reg">サイトの主バージョン</label>
+              <label for="site_pref_reg">Main version of site</label>
               <input type="radio" name="site_pref" id="site_pref_axx" value="axx" />
-              <label for="site_pref_axx">アクセシビリティ適合バージョン</label>
+              <label for="site_pref_axx">Accessibility-conforming version</label>
           </fieldset> 
       </form>
   </body>

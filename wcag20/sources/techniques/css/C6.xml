@@ -22,18 +22,20 @@
 この事例では、コンテンツに対して構造 (定義リスト) を示すマークアップがなされている。そして、コンテンツを段組み形式で表示させるために CSS が使用されている。コンテンツは各クラスの指定でそれぞれの段に絶対配置され、HTML の定義リストを表示する際に <el>dd</el> 要素をインデントするユーザエージェントのデフォルト値を上書きするために、マージンの値を 0 にしている。</p>
 <p>表示させるコンテンツは以下の通り:</p>
 </description>
-      <code role="html401"><![CDATA[<div class="box">
+         <code role="html401"><![CDATA[
+ <div class="box">
   <dl>
-    <dt class="menu1">製品</dt>
-    <dd class="item1">電話</dd>
-    <dd class="item2">コンピューター</dd>
-    <dd class="item3">ポータブル　MP3　プレイヤー</dd>
-    <dt class="menu2">所在地</dt>
-    <dd class="item4">アイダホ</dd>
-    <dd class="item5">ウィスコンシン</dd>
+    <dt class="menu1">Products</dt>
+    <dd class="item1">Telephones</dd>
+    <dd class="item2">Computers</dd>
+    <dd class="item3">Portable MP3 Players</dd>
+    <dt class="menu2">Locations</dt>
+    <dd class="item4">Idaho</dd>
+    <dd class="item5">Wisconsin</dd>
     </dt>
   </dl>
- </div> ]]></code>
+ </div>
+]]></code>
       <description><p>上記要素の配置及び表示指定をする CSS は以下の通り:</p>
 </description>
       <code role="html401"><![CDATA[
