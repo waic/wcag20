@@ -3,7 +3,7 @@ install: ant deps
 addons:
   apt:
     packages:
-    - saxonhe
+    - libsaxonhe-java
 env:
   global:
   - GH_REF: github.com/waic/wcag20.git
