@@ -1,13 +1,16 @@
 language: java
-dist: precise
+jdk:
+  - openjdk7
+#install: ant deps
+sudo: false
+addons:
+  apt:
+    packages:
+    - libsaxonhe-java
 env:
   global:
   - GH_REF: github.com/waic/wcag20.git
   - secure: N5oIYQKfKWTLwsdrVkaBlFVzQS7b1yS38Q65+nBbasu0jHxBe1235/nPSQNrqgxu1CN3GAjJ4mQeDJ6lgMrCcy8T8dVO7LVSxdXLZnNCUlVXaj7kvXYA/hVnK37P3Ujn92Af+loF3RVtqridCary+bG0MnlxsF2S/OBh+ziqpw8=
-install:
-- curl -L http://sourceforge.net/projects/saxon/files/Saxon-HE/9.5/SaxonHE9-5-1-4J.zip/download
-  > SaxonHE9.zip
-- unzip SaxonHE9.zip
 git:
   depth: 3
 branches:
@@ -16,7 +19,7 @@ before_script:
 - git config --global user.email "bakera@star.email.ne.jp"
 - git config --global user.name "MINAZUKI, Bakera"
 script:
-- ant -f wcag20/build.xml -lib saxon9he.jar gh-pages
+- ant -f wcag20/build.xml -lib /usr/share/java/Saxon-HE.jar gh-pages
 after_success:
 - cd ../..
 - mkdir gh-pages
