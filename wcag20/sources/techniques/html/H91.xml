@@ -109,7 +109,7 @@
    <examples>
       <eg-group>
       <head>リンク</head>
-      <description><p>ユーザエージェントは、リンクをナビゲートして選択するメカニズムを提供する。次の各事例では、役割 (role) は、&lt;a href&gt; 由来の「リンク」である。&lt;a name&gt; は「リンク」の役割を提供しないことに注意する。値 (value) は、<att>href</att> 属性の URI である。</p>
+      <description><p>ユーザエージェントは、リンクをナビゲートして選択するメカニズムを提供する。次の各事例では、&lt;a href&gt; により、役割 (role) は "link" となる。&lt;a name&gt; は "link" の役割 (role) を提供しないことに注意する。値 (value) は、<att>href</att> 属性の URI である。</p>
 <exsubhead>事例 1a</exsubhead><p>事例 1a では、名前 (name) はリンクの中にあるテキストである。この場合は「Example Site」が該当する。</p>
 </description>
          <code role="xhtml"><![CDATA[<a href="www.example.com">Example Site</a>
@@ -118,7 +118,7 @@
 </description>
                <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"></a>
                     ]]></code>
-      <description><exsubhead>事例 1c</exsubhead><p>事例 1c 画像の代替テキストとリンクのテキストを連結するときに補助技術によって自動的に空白文字が挿入されることはない。テキストをスペースなしで連結すべきでない場合、画像と隣接する単語との間にスペースを挿入して、単語が混ざらないようにするのが最も安全である。</p>
+      <description><exsubhead>事例 1c</exsubhead><p>事例 1c 画像の代替テキストとリンクのテキストを連結するときに自動的に空白文字を挿入しない補助技術もある。テキストをスペースなしで連結すべきでない場合、画像と隣接する単語との間にスペースを挿入して、単語が混ざらないようにするのが最も安全である。</p>
 </description>
          <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"> Text</a>
 ]]></code>
@@ -145,7 +145,7 @@
 </description>
          <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="save" />
                     ]]></code>
-      <description><exsubhead>事例 2e</exsubhead><p>事例 2e は、コンテンツ制作者が input 要素の 'alt' 属性と 'title' 属性の両方を指定する場合、ユーザエージェントが名前 (name) をどのように決定するかを明確する。この場合、ユーザエージェントは、 'alt' 属性 ("save") を使用して、 'title' 属性を無視する。</p>
+      <description><exsubhead>事例 2e</exsubhead><p>事例 2e は、コンテンツ制作者が input 要素の 'alt' 属性と 'title' 属性の両方を指定する場合、ユーザエージェントが名前 (name) をどのように決定するかを明らかにする。この場合、ユーザエージェントは、 'alt' 属性 ("save") を使用して、 'title' 属性を無視する。</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="save" title="save the file" />
 ]]></code>
