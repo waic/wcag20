@@ -145,7 +145,7 @@
 </description>
          <code role="xhtml"><![CDATA[<input type="image" src="save.gif" title="save" />
                     ]]></code>
-      <description><exsubhead>事例 2e</exsubhead><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p>
+      <description><exsubhead>事例 2e</exsubhead><p>事例 2e は、コンテンツ制作者が input 要素の 'alt' 属性と 'title' 属性の両方を指定する場合、ユーザエージェントが名前 (name) をどのように決定するかを明確する。この場合、ユーザエージェントは、 'alt' 属性 ("save") を使用して、 'title' 属性を無視する。</p>
 </description>
       <code role="xhtml"><![CDATA[<input type="image" src="save.gif" alt="save" title="save the file" />
 ]]></code>
