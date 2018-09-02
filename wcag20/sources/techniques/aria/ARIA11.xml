@@ -59,7 +59,7 @@
             <p>form: フォーム関連要素のコレクションを表す文書の領域であり、その一部は編集可能な、処理するためにサーバーに送信可能な値を表すことができる。</p>
          </item>
          <item>
-            <p>main: 文書における主要コンテンツ。ほとんどの場合において、1 つのページは 1 つのみの role="main" を持つ。</p>
+            <p>main: 文書における主要コンテンツ。ほとんどの場合において、一つのページは一つのみの role="main" を持つ。</p>
          </item>
          <item>
             <p>navigation: 文書内の、又は関連する文書へのナビゲートに適したリンクのコレクション。</p>
@@ -91,7 +91,7 @@
       <eg-group>
          <head>同じ種類の複数のランドマークと aria-labelledby</head>
          <description>
-            <p>次の例は、同じページで 2 つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各インスタンスは <att>aria-labelledby</att> を使用して、指定された一意のラベルを持ってもよい:</p>
+            <p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各インスタンスは <att>aria-labelledby</att> を使用して、指定された一意のラベルを持ってもよい:</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-labelledby="leftnavheading">
 <h2 id="leftnavheading">Institutional Links</h2>
 <ul><li>...a list of links here ...</li> </ul></div>
@@ -103,7 +103,7 @@
       <eg-group>
          <head>同じ種類の複数のランドマークと aria-label</head>
          <description>
-            <p>次の例は、同じページで 2 つ以上の同じ種類のランドマークが存在する状況で、ラベルとして参照できるページでテキストが存在しない場合、ランドマークがどのように HTML4 や XHTML 1.0 文書に追加されうるのかのベストプラクティスを示している。</p>
+            <p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ラベルとして参照できるページでテキストが存在しない場合、ランドマークがどのように HTML4 や XHTML 1.0 文書に追加されうるのかのベストプラクティスを示している。</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-label="Primary">
 <ul><li>...a list of links here ...</li></ul> </div>
 <div id="rightnav" role="navigation" aria-label="Secondary">

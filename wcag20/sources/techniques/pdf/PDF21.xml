@@ -23,7 +23,7 @@
     <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3「リストエレメント」(英語) でリスト構造を定義している (リストエレメント)。PDF 文書のリストの構造タイプを以下に示す。</p>
     <ulist>
       <item>
-        <p> L - リストタグ (1 つ以上の LI タグを含む)</p>
+        <p> L - リストタグ (一つ以上の LI タグを含む)</p>
       </item>
       <item>
         <p> LI - リスト項目タグ。リスト項目タグには、Lbl タグと LBody タグを含めることができる</p>

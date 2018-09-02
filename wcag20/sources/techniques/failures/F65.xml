@@ -55,7 +55,7 @@
         </item>
             <item>
                <p>
-                  <phrase><att>aria-labelledby</att> 属性が存在するかどうかを確認し、かつページ内の 1 つ以上の id 要素を参照し、かつ <att>aria-labelledby</att> が<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#accessibility-supporteddef">アクセシビリティ サポーテッド</loc>かどうかを確認する。</phrase>
+                  <phrase><att>aria-labelledby</att> 属性が存在するかどうかを確認し、かつページ内の一つ以上の id 要素を参照し、かつ <att>aria-labelledby</att> が<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#accessibility-supporteddef">アクセシビリティ サポーテッド</loc>かどうかを確認する。</phrase>
 		       </p>
             </item>
             <item>

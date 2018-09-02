@@ -20,7 +20,7 @@
       <p>この実装方法の目的は、Flash で提供されるフォームコンポーネントに組み込むアクセシブルな名前を設定することである。ラジオボタン、チェックボックス、ボタンなど、コンポーネントによっては自身に固有な <prop>label</prop> プロパティが既に与えられているが、その他のコンポーネントについては、コンテンツ制作者がコンポーネントのアクセシブルな名前となるラベルテキストを指定する必要がある。そのためには、アクセシビリティパネルを使用するか (オーサリング中にステージ上にコンポーネントを配置する場合)、スクリプトを使用する (実行時に動的にコンポーネントを生成する場合)。</p>
       <!-- exsubhead? -->
       <p>ActionScript 2</p>
-      <p>ActionScript 2 では、コンポーネントの <prop>_accProps</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティはオブジェクトでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者がカスタムオブジェクトを作成して <prop>_accProps</prop> プロパティに割り当てる必要がある。場合によっては、1 つのオブジェクトに対し、アクセシブルな名前を指定する <prop>_accProps.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>_accProps</prop> プロパティを変更した場合、コンテンツ制作者は、<function>Accessibility.UpdateProperties()</function> を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>System.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
+      <p>ActionScript 2 では、コンポーネントの <prop>_accProps</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティはオブジェクトでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者がカスタムオブジェクトを作成して <prop>_accProps</prop> プロパティに割り当てる必要がある。場合によっては、一つのオブジェクトに対し、アクセシブルな名前を指定する <prop>_accProps.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>_accProps</prop> プロパティを変更した場合、コンテンツ制作者は、<function>Accessibility.UpdateProperties()</function> を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>System.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
       <p>ActionScript 2 には、以下のアクセシブルなコンポーネントが用意されている。</p>
       <ulist>
          <item>
@@ -59,7 +59,7 @@
       </ulist>
       <!-- exsubhead? -->
       <p>ActionScript 3</p>
-      <p>ActionScript 3 では、コンポーネントの <prop>accessibilityProperties</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティは <obj>flash.accessibility.AccessibilityProperties</obj> のインスタンスでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者が新しい <obj>AccessibilityProperties</obj> インスタンスを作成して <prop>accessibilityProperties</prop> プロパティに割り当てる必要がある。場合によっては、1 つのオブジェクトに対し、アクセシブルな名前を指定する <prop>accessibilityProperties.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>accessibilityProperties</prop> プロパティを変更した場合、コンテンツ制作者は、<function>flash.accessibility.Accessibility.UpdateProperties()</function>を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>flash.system.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
+      <p>ActionScript 3 では、コンポーネントの <prop>accessibilityProperties</prop> プロパティにアクセシブルな名前を設定する必要がある。このプロパティは <obj>flash.accessibility.AccessibilityProperties</obj> のインスタンスでなければならない。プロパティがまだ設定されていない場合は、コンテンツ制作者が新しい <obj>AccessibilityProperties</obj> インスタンスを作成して <prop>accessibilityProperties</prop> プロパティに割り当てる必要がある。場合によっては、一つのオブジェクトに対し、アクセシブルな名前を指定する <prop>accessibilityProperties.name</prop> を含む複数のアクセシビリティ関連プロパティがある。<prop>accessibilityProperties</prop> プロパティを変更した場合、コンテンツ制作者は、<function>flash.accessibility.Accessibility.UpdateProperties()</function>を呼び出してその変更を有効にする必要がある。MSAA に対応していない環境でエラーが発生するのを防ぐため、<function>Accessibility.UpdateProperties()</function> を呼び出す前に <var>flash.system.capabilities.hasAccessibility</var> フラグを確認することを推奨する。</p>
       <p>ActionScript 3 には、以下のアクセシブルなコンポーネントが用意されている。</p>
       <ulist>
          <item>
