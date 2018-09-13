@@ -19,7 +19,7 @@
 						クイックリファレンス 1.2.7 (拡張音声解説 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
-					</a></li></ul></li></ul><h3 id="SM1-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 1.0 にはこれを達成する簡単な方法がないが、連続して順番に再生される複数のファイルに、音声ファイル及び映像ファイルを分割することによって実装できる。この方法によって追加した音声解説は、視聴覚コンテンツが停止している間に再生される。映像ファイルの最後のフレームは、画面に表示されたまま一時停止し、その間に音声ファイルが再生される。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生が自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだ SMIL スクリプト及び含まない SMIL スクリプトの二つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説を SMIL ファイルに追加したり SMIL ファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、二つのバージョンの映像を提供することによって可能となる。つまり、一つは拡張音声解説を含んだバージョン、もう一つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM1-examples">事例</h3><h4 class="small-head" id="SM1-ex1">事例 1: 拡張音声解説のある SMIL 1.0 の映像、メインのメディアを 4 箇所で停止して拡張音声解説を挿入している</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					</a></li></ul></li></ul><h3 id="SM1-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 1.0 にはこれを達成する簡単な方法がないが、連続して順番に再生される複数のファイルに、音声ファイル及び映像ファイルを分割することによって実装できる。この方法によって追加した音声解説は、視聴覚コンテンツが停止している間に再生される。映像ファイルの最後のフレームは、画面に表示されたまま一時停止し、その間に音声ファイルが再生される。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生が自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだ SMIL スクリプト及び含まない SMIL スクリプトの 2 つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説を SMIL ファイルに追加したり SMIL ファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、2 つのバージョンの映像を提供することによって可能となる。つまり、1 つは拡張音声解説を含んだバージョン、もう 1 つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM1-examples">事例</h3><h4 class="small-head" id="SM1-ex1">事例 1: 拡張音声解説のある SMIL 1.0 の映像、メインのメディアを 4 箇所で停止して拡張音声解説を挿入している</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
 xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
@@ -59,7 +59,7 @@ xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
    &lt;/seq&gt;
   &lt;/par&gt;
 &lt;/body&gt;
-&lt;/smil&gt;</code></pre></div><div class="textbody"><p>上記のマークアップは、五つの <code>&lt;par&gt;</code> セグメントに分割されている。各セグメントに <code>&lt;video&gt;</code> と <code>&lt;audio&gt;</code> のタグが一つずつある (ただし、最後の <code>&lt;par&gt;</code> に <code>&lt;audio&gt;</code> がないのは意図的なものである)。拡張音声解説の通常の使い方は、音声解説が提供される間、メインのメディアを一時停止するというものである。SMIL 1.0でこれを実現するには、映像クリップの開始と終了を指定する「<code>clip-begin</code>」と「<code>clip-end</code>」を設定して、その「<code>clip-begin</code>」と「<code>clip-end</code>」で定義されるよりも長い再生時間をクリップに設定する。<code>fill=「freeze」</code>は、拡張音声解説の再生中、映像の最後のフレームを保持する。<code>&lt;audio&gt;</code> タグには「<code>begin</code>」の属性があり、その前の <code>&lt;video&gt;</code> タグで定義された「<code>clip-end</code>」の値と同じ値を持っている。</p><p>「<code>clip-begin</code>」「<code>clip-end</code>」「dur」の値を決めるにあたっては、音声解説が開始及び終了する前の映像部分の時間と、拡張音声解説の全体の長さを調べる必要がある。「<code>clip-begin</code>」と「<code>clip-end</code>」は、それ自体の値を定義するが、「<code>dur</code>」の値は、「<code>clip-begin</code>」と「<code>clip-end</code>」によって定義される拡張音声解説及び映像クリップを合計した長さとなる。最初の <code>&lt;par&gt;</code> では、映像クリップが 0 秒で始まり、5.4 秒で終わる。そして記述の長さは 3.3 秒だ。このため、「<code>dur</code>」の値は、5.4 + 3.3 = 8.7 秒となる。</p></div></div><h3 id="SM1-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+&lt;/smil&gt;</code></pre></div><div class="textbody"><p>上記のマークアップは、5 つの <code>&lt;par&gt;</code> セグメントに分割されている。各セグメントに <code>&lt;video&gt;</code> と <code>&lt;audio&gt;</code> のタグが 1 つずつある (ただし、最後の <code>&lt;par&gt;</code> に <code>&lt;audio&gt;</code> がないのは意図的なものである)。拡張音声解説の通常の使い方は、音声解説が提供される間、メインのメディアを一時停止するというものである。SMIL 1.0でこれを実現するには、映像クリップの開始と終了を指定する「<code>clip-begin</code>」と「<code>clip-end</code>」を設定して、その「<code>clip-begin</code>」と「<code>clip-end</code>」で定義されるよりも長い再生時間をクリップに設定する。<code>fill=「freeze」</code>は、拡張音声解説の再生中、映像の最後のフレームを保持する。<code>&lt;audio&gt;</code> タグには「<code>begin</code>」の属性があり、その前の <code>&lt;video&gt;</code> タグで定義された「<code>clip-end</code>」の値と同じ値を持っている。</p><p>「<code>clip-begin</code>」「<code>clip-end</code>」「dur」の値を決めるにあたっては、音声解説が開始及び終了する前の映像部分の時間と、拡張音声解説の全体の長さを調べる必要がある。「<code>clip-begin</code>」と「<code>clip-end</code>」は、それ自体の値を定義するが、「<code>dur</code>」の値は、「<code>clip-begin</code>」と「<code>clip-end</code>」によって定義される拡張音声解説及び映像クリップを合計した長さとなる。最初の <code>&lt;par&gt;</code> では、映像クリップが 0 秒で始まり、5.4 秒で終わる。そして記述の長さは 3.3 秒だ。このため、「<code>dur</code>」の値は、5.4 + 3.3 = 8.7 秒となる。</p></div></div><h3 id="SM1-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/REC-smil/">Synchronized
                                         Multimedia Integration Language (SMIL) 1.0</a>
 								       </p></li><li><p> 
@@ -86,7 +86,7 @@ xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
 						クイックリファレンス 1.2.7 (拡張音声解説 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">
 						達成基準 1.2.7 (拡張音声解説 (収録済) )を理解する
-					</a></li></ul></li></ul><h3 id="SM2-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 2.0 では、特定の音声ファイルを特定のタイミングで再生するよう指定し、音声ファイルが再生される間は、画面が表示されたまま一時停止できる。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生は自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだ SMIL スクリプト及び含まない SMIL スクリプトの二つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説を SMIL ファイルに追加したり SMIL ファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、二つのバージョンの映像を提供することによって可能となる。つまり、一つは拡張音声解説を含んだバージョン、もう一つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM2-examples">事例</h3><h4 class="small-head" id="SM2-ex1">事例 1: 拡張音声解説のある映像</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					</a></li></ul></li></ul><h3 id="SM2-description">解説</h3><div class="textbody"><p>この達成方法の目的は、会話の合間に入れられるよりも多くの音声解説を、視聴覚素材に付加することである。</p><p>SMIL 2.0 では、特定の音声ファイルを特定のタイミングで再生するよう指定し、音声ファイルが再生される間は、画面が表示されたまま一時停止できる。</p><p>これにより、映像は最初から最後まで再生されるように見えながらも、ところどころで停止して、その間に長めの音声解説が提供される。そして、音声解説が終了すると、映像の再生は自動的に再開する。</p><p>この拡張音声解説のオン／オフを操作するには、スクリプトを使用して、拡張音声解説を含んだ SMIL スクリプト及び含まない SMIL スクリプトの 2 つの間で切り替えることによって実装できる。又は、スクリプトを使用して、拡張音声解説を SMIL ファイルに追加したり SMIL ファイルから削除したりすることもできる。そうすることで、映像クリップは、単純に順序どおり再生されることになる。</p><p>スクリプトが使用できない場合は、2 つのバージョンの映像を提供することによって可能となる。つまり、1 つは拡張音声解説を含んだバージョン、もう 1 つは含まないバージョンを提供するのである。</p></div><h3 class="small-head" id="SM2-examples">事例</h3><h4 class="small-head" id="SM2-ex1">事例 1: 拡張音声解説のある映像</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;smil xmlns="//www.w3.org/2001/SMIL20/Language"&gt; 
 &lt;head&gt; 
 &lt;layout&gt; 
@@ -381,7 +381,7 @@ height="144" width="320"/&gt;
 						クイックリファレンス 1.2.6 (手話 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-sign.html">
 						達成基準 1.2.6 (手話 (収録済) )を理解する
-					</a></li></ul></li></ul><h3 id="SM13-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 1.0 では、二つの映像のために別々の領域を定義できる。二つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM13-examples">事例</h3><h4 class="small-head" id="SM13-ex1">事例 1: QuickTime プレーヤーでの SMIL 1.0 による手話通訳のサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
+					</a></li></ul></li></ul><h3 id="SM13-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 1.0 では、2 つの映像のために別々の領域を定義できる。2 つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM13-examples">事例</h3><h4 class="small-head" id="SM13-ex1">事例 1: QuickTime プレーヤーでの SMIL 1.0 による手話通訳のサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
   xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
@@ -422,7 +422,7 @@ height="144" width="320"/&gt;
       src="salesdemo_si.mov" alt="Sales Demo Sign Language Interpretation"/&gt;
     &lt;/par&gt;
   &lt;/body&gt;
-&lt;/smil&gt;</code></pre></div><div class="textbody"><p>この事例では、二つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
+&lt;/smil&gt;</code></pre></div><div class="textbody"><p>この事例では、2 つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
                             </p></div></div><h3 id="SM13-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</a>
 								       </p></li><li><p> 
@@ -436,7 +436,7 @@ height="144" width="320"/&gt;
 						クイックリファレンス 1.2.6 (手話 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-sign.html">
 						達成基準 1.2.6 (手話 (収録済) )を理解する
-					</a></li></ul></li></ul><h3 id="SM14-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 2.0 では、二つの映像のために別々の領域を定義できる。二つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM14-examples">事例</h3><h4 class="small-head" id="SM14-ex1">事例 1: RealMedia プレーヤーでの SMIL 2.0 手話ビデオのサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					</a></li></ul></li></ul><h3 id="SM14-description">解説</h3><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 2.0 では、2 つの映像のために別々の領域を定義できる。2 つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h3 class="small-head" id="SM14-examples">事例</h3><h4 class="small-head" id="SM14-ex1">事例 1: RealMedia プレーヤーでの SMIL 2.0 手話ビデオのサンプル</h4><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;smil xmlns="http://www.w3.org/2001/SMIL20/Language"&gt;
   &lt;head&gt;
     &lt;layout&gt;
@@ -458,7 +458,7 @@ height="144" width="320"/&gt;
     &lt;/par&gt;
   &lt;/body&gt;
 &lt;/smil&gt;
-</code></pre></div><div class="textbody"><p>この事例では、二つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p></div></div><h3 id="SM14-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
+</code></pre></div><div class="textbody"><p>この事例では、2 つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p></div></div><h3 id="SM14-resources">参考リソース</h3><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/SMIL/">Synchronized Multimedia
                                         Integration Language (SMIL 2.0)</a>
 								       </p></li><li><p> 
