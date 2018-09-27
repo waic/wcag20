@@ -118,7 +118,7 @@
 </description>
                <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"></a>
                     ]]></code>
-      <description><exsubhead>事例 1c</exsubhead><p>事例 1c 画像の代替テキストとリンクのテキストを連結するときに自動的に空白文字を挿入しない支援技術もある。テキストをスペースなしで連結すべきでない場合、画像と隣接する単語との間にスペースを挿入して、単語が混ざらないようにするのが最も安全である。</p>
+      <description><exsubhead>事例 1c</exsubhead><p>事例 1c では、画像の代替テキストとリンクのテキストを連結するときに自動的に空白文字を挿入しない支援技術もある。テキストをスペースなしで連結すべきでない場合、画像と隣接する単語との間にスペースを挿入して、単語が混ざらないようにするのが最も安全である。</p>
 </description>
          <code role="xhtml"><![CDATA[<a href="www.example.com"><img src="example_logo.gif" alt="Example"> Text</a>
 ]]></code>
