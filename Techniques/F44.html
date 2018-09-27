@@ -7,7 +7,7 @@
 						クイックリファレンス 2.4.3 (フォーカス順序)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">
 						達成基準 2.4.3 (フォーカス順序)を理解する
-					</a></li></ul></li></ul><h2 id="F44-description">解説</h2><div class="textbody"><p>この文書は、タブ順序がコンテンツの論理的な関係性及び順序に従っていない失敗例について述べている。</p><p>リンク及びフォーム要素のようなフォーカス可能な要素には、<code>tabindex</code> 属性がある。要素は、<code>tabindex</code> 属性の値が小さいものから大きいものへという順序でフォーカスを受け取る。<code>tabindex</code> 属性の値が、コンテンツ内での関係性及び順序とは異なる順序で割り当てられていると、もはやタブ順序はコンテンツの関係性及び順序に従っていないことになる。</p><p>この失敗例の最も一般的な原因の一つは、<code>tabindex</code> が使用されているページを編集するときに発生する。コンテンツが編集されても、<code>tabindex</code> 属性がコンテンツの変更を反映するように更新されない場合、タブの順序とコンテンツの順序が一致しなくなり易い。</p></div><h2 class="small-head" id="F44-examples">事例</h2><div class="failure"><h3 class="small-head" id="F44-failex1">
+					</a></li></ul></li></ul><h2 id="F44-description">解説</h2><div class="textbody"><p>この文書は、タブ順序がコンテンツの論理的な関係性及び順序に従っていない失敗例について述べている。</p><p>リンク及びフォーム要素のようなフォーカス可能な要素には、<code>tabindex</code> 属性がある。要素は、<code>tabindex</code> 属性の値が小さいものから大きいものへという順序でフォーカスを受け取る。<code>tabindex</code> 属性の値が、コンテンツ内での関係性及び順序とは異なる順序で割り当てられていると、もはやタブ順序はコンテンツの関係性及び順序に従っていないことになる。</p><p>この失敗例の最も一般的な原因の 1 つは、<code>tabindex</code> が使用されているページを編集するときに発生する。コンテンツが編集されても、<code>tabindex</code> 属性がコンテンツの変更を反映するように更新されない場合、タブの順序とコンテンツの順序が一致しなくなり易い。</p></div><h2 class="small-head" id="F44-examples">事例</h2><div class="failure"><h3 class="small-head" id="F44-failex1">
 					失敗例 1</h3><div class="example"><div class="textbody"><p>次の事例は、代替のタブ順序を指定するために tabindex を誤って用いている。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;ol&gt;
    &lt;li&gt;&lt;a href="main.html" tabindex="1"&gt;Homepage&lt;/a&gt;&lt;/li&gt;

@@ -9,7 +9,7 @@
 						クイックリファレンス 1.2.6 (手話 (収録済) )
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-sign.html">
 						達成基準 1.2.6 (手話 (収録済) )を理解する
-					</a></li></ul></li></ul><h2 id="SM13-description">解説</h2><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 1.0 では、二つの映像のために別々の領域を定義できる。二つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h2 class="small-head" id="SM13-examples">事例</h2><h3 class="small-head" id="SM13-ex1">事例 1: QuickTime プレーヤーでの SMIL 1.0 による手話通訳のサンプル</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
+					</a></li></ul></li></ul><h2 id="SM13-description">解説</h2><div class="textbody"><p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p><p>SMIL 1.0 では、2 つの映像のために別々の領域を定義できる。2 つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p></div><h2 class="small-head" id="SM13-examples">事例</h2><h3 class="small-head" id="SM13-ex1">事例 1: QuickTime プレーヤーでの SMIL 1.0 による手話通訳のサンプル</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code> 
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;smil xmlns:qt="http://www.apple.com/quicktime/resources/smilextensions" 
   xmlns="http://www.w3.org/TR/REC-smil" qt:time-slider="true"&gt;
@@ -50,7 +50,7 @@
       src="salesdemo_si.mov" alt="Sales Demo Sign Language Interpretation"/&gt;
     &lt;/par&gt;
   &lt;/body&gt;
-&lt;/smil&gt;</code></pre></div><div class="textbody"><p>この事例では、二つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
+&lt;/smil&gt;</code></pre></div><div class="textbody"><p>この事例では、2 つの <code>&lt;video&gt;</code>タグを含む <code>&lt;par&gt;</code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code>&lt;layout&gt;</code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。
                             </p></div></div><h2 id="SM13-resources">参考リソース</h2><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p> 
                   <a href="http://www.w3.org/TR/REC-smil/">Synchronized Multimedia Integration Language (SMIL) 1.0</a>
 								       </p></li><li><p> 
