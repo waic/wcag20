@@ -17,7 +17,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>次のコード例では、コンテンツを構成するのに 2 つのフレームを用いている。1 つ目のフレームのソースは navigation.html というウェブページであり、ナビゲーションのための HTML が含まれている。このフレームには、ナビゲーションバーであることを特定する <att>title</att> 属性が指定してある。2 つ目のフレームはサイトの主要コンテンツであり、main.html がソースである。<att>title</att> 属性に「主要ニュースコンテンツ」とありその機能を特定している。</p>
+      <description><p>次のコード例では、コンテンツを構成するのに二つのフレームを用いている。一つ目のフレームのソースは navigation.html というウェブページであり、ナビゲーションのための HTML が含まれている。このフレームには、ナビゲーションバーであることを特定する <att>title</att> 属性が指定してある。二つ目のフレームはサイトの主要コンテンツであり、main.html がソースである。<att>title</att> 属性に「主要ニュースコンテンツ」とありその機能を特定している。</p>
 </description>
          <code role="html401"><![CDATA[<frameset cols="20%, *">
   <frame src="navigation.html" name="navbar" title="Navigation Bar" />
