@@ -9,13 +9,13 @@
 						クイックリファレンス 1.3.1 (情報及び関係性)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
-					</a></li></ul></li></ul><h2 id="H97-description">解説</h2><div class="textbody"><p>この達成方法の目的は、HTML5 <code>nav</code> 要素を使ってナビゲーションリンクをグループ化することである。<code>nav</code> 要素は、HTML5 のいくつかの区分される要素の 1 つである。このマークアップを使うと、スクリーンリーダーのような支援技術の利用者が過去に場所を確認してスキップしたリンクを分類するのが容易になる。セマンティックな構造を使うと、カスタムスタイルシートでそれらの関係性を維持しながらリンクのグループの表現を変更できる。<code>nav</code> 要素がページ上で複数回使用されている場合は、<code>aria-label</code> 又は <code>aria-labelledby</code> 属性を使用してナビゲーショングループを区別する。</p><p>リンクのグループ全てを　<code>nav</code> 要素でマークアップする必要は無い。例として、リンクはリストのような他の構造にグループ化されることもあり、またはページの分離されたセクションを表現しない場合 ARIA マークアップを使うこともある。</p></div><h2 class="small-head" id="H97-examples">事例</h2><h3 class="small-head" id="H97-ex1">事例 1: 1 つの nav 要素に囲まれたナビゲーションリンク</h3><div class="example"><div class="textbody"><p>この例は、アクセシビリティカリキュラムにおけるナビゲーションリンクを分類するために <code>nav</code> 要素を使う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					</a></li></ul></li></ul><h2 id="H97-description">解説</h2><div class="textbody"><p>この達成方法の目的は、HTML5 <code>nav</code> 要素を使ってナビゲーションリンクをグループ化することである。<code>nav</code> 要素は、HTML5 のいくつかの区分される要素の一つである。このマークアップを使うと、スクリーンリーダーのような支援技術の利用者が過去に場所を確認してスキップしたリンクを分類するのが容易になる。セマンティックな構造を使うと、カスタムスタイルシートでそれらの関係性を維持しながらリンクのグループの表現を変更できる。<code>nav</code> 要素がページ上で複数回使用されている場合は、<code>aria-label</code> 又は <code>aria-labelledby</code> 属性を使用してナビゲーショングループを区別する。</p><p>リンクのグループ全てを　<code>nav</code> 要素でマークアップする必要は無い。例として、リンクはリストのような他の構造にグループ化されることもあり、またはページの分離されたセクションを表現しない場合 ARIA マークアップを使うこともある。</p></div><h2 class="small-head" id="H97-examples">事例</h2><h3 class="small-head" id="H97-ex1">事例 1: 一つの nav 要素に囲まれたナビゲーションリンク</h3><div class="example"><div class="textbody"><p>この例は、アクセシビリティカリキュラムにおけるナビゲーションリンクを分類するために <code>nav</code> 要素を使う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 				 &lt;nav&gt;
 				    &lt;a href="../webaccessibility.html"&gt;Web Accessibility&lt;/a&gt;
 				    &lt;a href="../docaccessibility.html"&gt;Document Accessibility&lt;/a&gt;
 					&lt;a href="../mobileaccessibility.html"&gt;Mobile Accessibility&lt;/a&gt;
 				 &lt;/nav&gt;
-            </code></pre></div></div><h3 class="small-head" id="H97-ex2">事例 2: 多くの nav 要素</h3><div class="example"><div class="textbody"><p>この例は、文書中に 1 つ以上の nav 要素があるときに、ナビゲーション分類を識別するために aria-label 属性と nav 要素を使う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+            </code></pre></div></div><h3 class="small-head" id="H97-ex2">事例 2: 多くの nav 要素</h3><div class="example"><div class="textbody"><p>この例は、文書中に一つ以上の nav 要素があるときに、ナビゲーション分類を識別するために aria-label 属性と nav 要素を使う。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 			&lt;nav aria-label="Site menu"&gt;
 			  &lt;ul&gt;
 				  &lt;li&gt;...a list of links site navigation link here ...&lt;/li&gt;
@@ -26,7 +26,7 @@
 			  &lt;nav aria-label="Related links"&gt;
 				...a list of related links here ...
 			  &lt;/nav&gt;
-			&lt;/article&gt;          </code></pre></div></div><h3 class="small-head" id="H97-ex3">事例 3: 一般的な多くの nav 要素</h3><div class="example"><div class="textbody"><p>以下の例は、同じページに 2 つ以上のナビゲーションメニューが存在し、ラベルとして参照されうるページ上に既存のテキストが無いという状況での良い事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+			&lt;/article&gt;          </code></pre></div></div><h3 class="small-head" id="H97-ex3">事例 3: 一般的な多くの nav 要素</h3><div class="example"><div class="textbody"><p>以下の例は、同じページに二つ以上のナビゲーションメニューが存在し、ラベルとして参照されうるページ上に既存のテキストが無いという状況での良い事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 			&lt;nav aria-label="primary"&gt;
 				&lt;a href="home.html"&gt;Home&lt;/a&gt;
 				&lt;a href="about-us.html"&gt;About Us&lt;/a&gt;
