@@ -163,7 +163,7 @@ Any differences between the products are highlighted and italicized.&lt;/p&gt;
   {
     if (els[i].className.indexOf("hghlt") == 0) { els[i].className = hghltColor; }
   }
-}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+}</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex2/index.html">CSS プロパティを変更するためにクライアント JavaScript を使う</a></p></div></div><h3 class="small-head" id="C29-ex3">事例 3: 異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</h3><div class="example"><div class="textbody"><p>このシンプルな例では、二つあるうちの一つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p><p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p><p>PHP と XHTML (抜粋): </p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 At the beginning of the PHP page:
 
 &lt;?php
@@ -208,7 +208,7 @@ In style1.css:
 In style2.css:
 
   body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }
-</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では 2 つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+</code></pre></div><div class="textbody"><p>このコードの実装サンプル: <a href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php">異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</a></p></div></div><h3 class="small-head" id="C29-ex4">事例 4: 代替スタイルシートを提供するために JSP を使用する</h3><div class="example"><div class="textbody"><p>以下の例では二つのファイルを使用している:</p><ul><li><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></li><li><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></li></ul><p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、二つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p><p>フォームを含む JSP ページ:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
  &lt;%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
  %&gt;&lt;%@include file="_jsp/styleswitch.jsp"%&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 

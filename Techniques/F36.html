@@ -8,7 +8,7 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">
 						達成基準 3.2.2 (入力時)を理解する
 					</a></li></ul></li></ul><h2 id="F36-description">解説</h2><div class="textbody"><p>利用者がすべてのフィールドに入力し終わるか、最後のフィールドからフォーカスが外れると、自動的に送信されるように設計されたフォームが多くある。この方法には二つの問題がある。まず、障害のある利用者で前後関係の情報を必要としている人が、フォームの記入方法や、他のテキストに移動するためにフィールドからフォーカスをはずしてしまい、意図せずに送信してしまう場合がある。もう一つは、いくつかのフォームの要素において、それぞれの項目の値がキーボードで移動している間に変化してしまい、誤って送信してしまうことである。送信ボタン及び Enter キーによる標準的なフォームのふるまいに依存している方がよい。</p></div><h2 class="small-head" id="F36-examples">事例</h2><div class="failure"><h3 class="small-head" id="F36-failex1">
-					失敗例 1</h3><div class="example"><div class="textbody"><p>この失敗例では、利用者が 3 つのフィールドで構成される電話番号のフォームの最後のフィールドから離れたときにフォームを送信する。フォームは、利用者が編集を終えてフィールドから離れたときに、たとえタブ順序で前に戻ったとしても送信される。開発者はフォームを送信するためにこの達成方法を使用すべきではなく、送信ボタンやフォームのデフォルトのふるまいである、利用者がテキストフィールドで Enter キーを押したときに送信されるようにすべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> 
+					失敗例 1</h3><div class="example"><div class="textbody"><p>この失敗例では、利用者が三つのフィールドで構成される電話番号のフォームの最後のフィールドから離れたときにフォームを送信する。フォームは、利用者が編集を終えてフィールドから離れたときに、たとえタブ順序で前に戻ったとしても送信される。開発者はフォームを送信するためにこの達成方法を使用すべきではなく、送信ボタンやフォームのデフォルトのふるまいである、利用者がテキストフィールドで Enter キーを押したときに送信されるようにすべきである。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> 
 &lt;form method="get" id="form1"&gt;
   &lt;input type="text" name="text1" size="3" maxlength="3"&gt; - 
   &lt;input type="text" name="text2" size="3" maxlength="3"&gt; - 
