@@ -45,7 +45,7 @@
       <p>aria-labelledby の機能はネイティブな HTML の label 要素と似ているように見えるが、いくつか違いがある:</p>
       <ulist>
          <item>
-            <p><att>aria-labelledby</att> は複数のテキスト要素を参照することができる。<el>label</el> が参照できるのは 1 つだけである。</p>
+            <p><att>aria-labelledby</att> は複数のテキスト要素を参照することができる。<el>label</el> が参照できるのは一つだけである。</p>
          </item>
          <item>
             <p><el>label</el> 要素がフォーム要素のみに使用できる一方で、<att>aria-labelledby</att> はさまざまな要素に対して使用できる。</p>

@@ -31,7 +31,7 @@
         <p>テーブル行エレメントの直接の子としての一つまたは複数のテーブルヘッダーエレメント (<code>TH</code>) またはテーブルデータエレメント (<code>TD</code>)</p>
       </item>
       <item>
-        <p>2 つ以上の行または列にまたがるセルは、<code>RowSpan</code> または <code>ColSpan</code> 属性を使用する必要がある</p>
+        <p>二つ以上の行または列にまたがるセルは、<code>RowSpan</code> または <code>ColSpan</code> 属性を使用する必要がある</p>
       </item>
       <item>
         <p>空白のセルを含むテーブルの場合は、空白の <code>TD</code> セルを追加して各行または列のセルの数が同じになるようにする必要がある</p>
