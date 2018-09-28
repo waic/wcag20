@@ -18,6 +18,7 @@
 <ulist><item><p>オーサリングツールの初期設定のページタイトル。例えば、</p>
                   
                            <ulist><item><p>"ここに HTML ドキュメントのタイトルを入れてください"</p></item><item><p>"無題ドキュメント"</p></item><item><p>"タイトルなし"</p></item><item><p>"無題ページ"</p></item><item><p>"新しいページ 1"</p></item></ulist></item><item><p>それぞれの内容を示していないファイル名。例えば、"report.html" 又は "spk12.html" など。</p></item><item><p>空の (又は、意味のない) テキスト</p></item><item><p>埋め草又はプレースホルダーのテキスト</p></item></ulist>
+<trnote><p>埋め草とは、空いたところや、欠けた部分を埋め補うもののこと。フィラー。<a href="https://dictionary.goo.ne.jp/jn/20545/meaning/m0u/%E5%9F%8B%E3%82%81%E8%8D%89/">埋め草（うめくさ）の意味 - goo国語辞書</a>も参照のこと。</p></trnote>
 </description>
     </eg-group>
     <eg-group role="failure">
