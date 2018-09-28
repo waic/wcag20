@@ -19,7 +19,7 @@
    </ua-issues>
    <description>
     <p>この達成方法の目的は、文字サイズが拡大縮小されるのに従って、適切に拡大縮小する方法で要素のサイズ及びポジションを計算することである。</p>
-    <p>ここに要素のサイズとポジションを決める JavaScript の 4 つプロパティがある:</p>
+    <p>ここに要素のサイズとポジションを決める JavaScript の四つのプロパティがある:</p>
     <ulist>
       <item>
         <p>
@@ -38,7 +38,7 @@
                         <code><![CDATA[offsetTop]]></code> (ピクセルでの親要素 (offsetParent) の上からの距離)</p>
       </item>
     </ulist>
-    <p><code>offsetHeight</code> や <code>offsetWidth</code> を用いて高さや幅を定めることは簡単である、しかし、オブジェクトの左とトップの位置を絶対配置の値として定める時、親要素を考える必要がある。下記において、<code>calculatePosition</code> 関数は、要素におけるすべての親ノードの最終的な値が決定するまで繰り返されている。その関数は <code>objElement</code> (当該の要素の名前) とオフセットプロパティ (<code>offsetLeft</code> 又は <code>offsetTop</code> ) の 2 つの引数を取っている。</p>
+    <p><code>offsetHeight</code> や <code>offsetWidth</code> を用いて高さや幅を定めることは簡単である、しかし、オブジェクトの左とトップの位置を絶対配置の値として定める時、親要素を考える必要がある。下記において、<code>calculatePosition</code> 関数は、要素におけるすべての親ノードの最終的な値が決定するまで繰り返されている。その関数は <code>objElement</code> (当該の要素の名前) とオフセットプロパティ (<code>offsetLeft</code> 又は <code>offsetTop</code> ) の二つの引数を取っている。</p>
   </description>
    <examples>
       <eg-group>

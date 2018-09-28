@@ -41,7 +41,7 @@
       <description><p>この事例は Adobe Acrobat Pro の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <section>
                <head>Touchup 読み上げ順序ツールを使用する</head>
-               <p>PDF 文書に見出しを追加する方法の 1 つとして、Touchup 読み上げ順序ツールを使用できる。</p>
+               <p>PDF 文書に見出しを追加する方法の一つとして、Touchup 読み上げ順序ツールを使用できる。</p>
                <olist>
                   <item>
                      <p>Adobe Acrobat Pro で PDF 文書を開く</p>
@@ -201,14 +201,14 @@ endobj
  ...
 300 0 obj% Structure tree root
   << /Type /StructTreeRoot
-     /K [ 301 0 R                    % 2つの子: 章と
+     /K [ 301 0 R                    % 二つの子: 章と
         304 0 R                      % 段落
         ]
      /RoleMap << /Chap /Sect         % 構造ツリーへのマッピング
                  /Head1 /H
                  /Para /P
               >>
-    /ClassMap << /Normal 305 0 R >>  % 1つの属性クラスを含むクラスマップ
+    /ClassMap << /Normal 305 0 R >>  % 一つの属性クラスを含むクラスマップ
     /ParentTree 400 0 R              % 親エレメントの数字ツリー
     /ParentTreeNextKey 2             % 親ツリーで次に使用するキー
     /IDTree 403 0 R                  % エレメント識別子の名前ツリー
@@ -220,7 +220,7 @@ endobj
      /ID (Chap1)                     % エレメント識別子
      /T (Chapter 1)                  % 人間が読み取ることができるタイトル
      /P 300 0 R                      % 親が構造ツリーのルート
-     /K [ 302 0 R                    % 2つの子：セクションヘッダーと
+     /K [ 302 0 R                    % 二つの子：セクションヘッダーと
           303 0 R                    % 段落
         ]
   >>
