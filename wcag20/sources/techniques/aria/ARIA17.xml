@@ -40,7 +40,7 @@
       <eg-group>
          <head>社会保障番号</head>
          <description>
-            <p>9 桁の長さで、3 つのセグメントに分割される社会保障番号フィールドは、<code><![CDATA[role="group"]]></code> を使用してグループ化できる。</p>
+            <p>9 桁の長さで、三つのセグメントに分割される社会保障番号フィールドは、<code><![CDATA[role="group"]]></code> を使用してグループ化できる。</p>
             <codeblock xml:space="preserve"><![CDATA[<div role="group" aria-labelledby="ssn1">
    <span id="ssn1">Social Security#</span> 
    <span style="color: #D90D0D;"> * </span>

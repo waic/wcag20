@@ -132,7 +132,7 @@
                <p><att>aria-labelledby</att> 属性の値に含まれる各 ID が、リンクの目的の一部として使用されるテキスト要素の ID と一致する。</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att> 属性に含まれる 1 つ以上の ID によって参照されるテキストを合成した値が、link 要素の目的を適切に説明している。</p>
+               <p><att>aria-labelledby</att> 属性に含まれる一つ以上の ID によって参照されるテキストを合成した値が、link 要素の目的を適切に説明している。</p>
             </item>
          </olist>
       </procedure>

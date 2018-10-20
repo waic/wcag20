@@ -101,7 +101,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                <p>一般的に、古いツールよりも新しいツールのほうが、優れた機能を提供する。ツールによる PDF のアクセシビリティサポートに関する正式な情報は、そのツールのベンダーから得られる。</p>
                <div4 id="pdf_notes_acc-sup_files_generating">
                   <head>PDF ファイルを生成する</head>
-                  <p>多くのアプリケーションが PDF ファイルを直接生成でき、また一部のアプリケーションは直接インポートすることもできる。画像モデルやインタラクティブな文書交換機能を含む、PDF のすべての機能をアプリケーションで利用できるため、この直接的なアプローチが望ましい方法である。これに対して、PDF を直接生成しないアプリケーションでは、PDF 出力が間接的に行われる。間接的な方法としては、主に次の 2 つがある。</p>
+                  <p>多くのアプリケーションが PDF ファイルを直接生成でき、また一部のアプリケーションは直接インポートすることもできる。画像モデルやインタラクティブな文書交換機能を含む、PDF のすべての機能をアプリケーションで利用できるため、この直接的なアプローチが望ましい方法である。これに対して、PDF を直接生成しないアプリケーションでは、PDF 出力が間接的に行われる。間接的な方法としては、主に次の二つがある。</p>
                   <ulist>
                      <item>
                         <p>Microsoft® Windows® の GDI や Apple Mac OS の QuickDraw などのアプリケーションプログラミングインターフェイス (API) を呼び出すことで、アプリケーションが印刷可能な出力を記述する。プリンタードライバーと呼ばれるソフトウェアコンポーネントがこれらの呼び出しをインターセプトして解釈し、PDF 形式の出力を生成する。</p>
@@ -206,7 +206,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                   <p>Adobe は、PDF ファイルのコンテンツをスクリーンリーダーなどの支援技術で利用できる方法を提供している。</p>
                   <ulist>
                      <item>
-                        <p>Microsoft® Windows® オペレーティングシステムでは、Acrobat および Adobe Reader は、PDF コンテンツを Component Object Model (COM) オブジェクトとしてエクスポートする。スクリーンリーダーなどのアクセシビリティアプリケーションは、Acrobat または Adobe Reader とのインターフェイスを次の 2 つの方法でとることができる。</p>
+                        <p>Microsoft® Windows® オペレーティングシステムでは、Acrobat および Adobe Reader は、PDF コンテンツを Component Object Model (COM) オブジェクトとしてエクスポートする。スクリーンリーダーなどのアクセシビリティアプリケーションは、Acrobat または Adobe Reader とのインターフェイスを次の二つの方法でとることができる。</p>
                         <ulist>
                            <item>
                               <p>Acrobat または Adobe Reader でエクスポートされた MSAA オブジェクトを使用して、Microsoft Active Accessibility (MSAA) を通じてアクセスする。</p>

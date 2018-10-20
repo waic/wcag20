@@ -22,7 +22,7 @@
    <examples>
       <eg-group>
       <head>選択式のテスト</head>
-      <description><p>この事例では、1 つの質問に対して 5 つの解答の中からどれかを選べるテスト項目を示している。解答はそれぞれラジオボタン (<code>input type="radio"</code>) で提示されており、<el>fieldset</el> 要素に含めてある。テストの質問内容は <el>legend</el> 要素でタグ付けしてある。</p>
+      <description><p>この事例では、一つの質問に対して五つの解答の中からどれかを選べるテスト項目を示している。解答はそれぞれラジオボタン (<code>input type="radio"</code>) で提示されており、<el>fieldset</el> 要素に含めてある。テストの質問内容は <el>legend</el> 要素でタグ付けしてある。</p>
 </description>
          <code role="html401"><![CDATA[<fieldset>
   <legend>The play <cite>Hamlet</cite> was written by:</legend>
@@ -70,7 +70,7 @@
     <label for="philosopher_aristotle">Aristotle</label>
   </fieldset>
   </form> ]]></code>
-      <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が1つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
+      <description><note><p>関連するチェックボックスのグループも同じように動作するが、利用者が一つ以上のフィールドを選べる点がラジオボタンとは異なる。</p></note>
 </description>
       <a11ysuprorted rating="good" exnumber="3"/>
     </eg-group>
@@ -125,7 +125,7 @@
        <p>関連するコントロールのグループにおいて、各コントロールの個々のラベルが十分な記述を提供しておらず、追加でグループレベルの記述が必要な場合</p>
       <olist>
         <item>
-          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、1 つの <el>fieldset</el> 要素内に含められている。</p>
+          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、一つの <el>fieldset</el> 要素内に含められている。</p>
         </item>
         <item>
           <p>各 <el>fieldset</el> 要素には、そのグループの説明を含めた <el>legend</el> 要素が指定されている。</p>
