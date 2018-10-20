@@ -15,7 +15,7 @@
    <examples>
       <eg-group role="failure">
       <head>CSS を用いて、フォーカスインジケーターを表示しないようにする</head>
-      <description><p>下記の CSS の事例では、デフォルトのフォーカスインジケーターを除去しているため、視覚的に認識可能なフォーカスインジケーターを提供するという要求に失敗となる。</p>
+      <description><p>下記の CSS の事例では、デフォルトのフォーカスインジケーターを除去しているため、視覚的に認識可能なフォーカスインジケーターを提供するという要求に不合格となる。</p>
 </description>
       <code role="css"><![CDATA[:focus {outline: none}]]></code>
     </eg-group>

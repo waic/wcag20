@@ -68,7 +68,7 @@ window.open('noscript.html', '_blank', 'height=200,width=150');
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2．及び手順 3. が真である場合、この失敗例の条件は適用され、コンテンツは達成基準に失敗となる。</p>
+               <p>手順 2．及び手順 3. が真である場合、この失敗例の条件は適用され、コンテンツは達成基準に不合格となる。</p>
             </item>
          </ulist>
       </expected-results>

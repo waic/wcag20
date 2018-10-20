@@ -16,7 +16,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>span 及び画像を使用したチェックボックスを生成するため、下記の事例は失敗となる。</p>
+      <description><p>span 及び画像を使用したチェックボックスを生成するため、下記の事例は不合格となる。</p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[
   <p> 
@@ -40,7 +40,7 @@
   // チェックをつけるアクションを実装するための追加コード
   } 
   }]]></codeblock>
-      <description><p>このような方法で生成されたチェックボックスは、チェックボックスとして識別する情報がないため、支援技術では機能しない。加えて、この事例はキーボードからも操作できず、ガイドライン 2.1 に失敗となる。</p>
+      <description><p>このような方法で生成されたチェックボックスは、チェックボックスとして識別する情報がないため、支援技術では機能しない。加えて、この事例はキーボードからも操作できず、ガイドライン 2.1 に不合格となる。</p>
 </description>
     </eg-group>
    </examples>
