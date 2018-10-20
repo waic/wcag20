@@ -41,8 +41,7 @@ p a:hover {text-decoration: underline; color: red;}
 
 <body>
 
-<p>もし<a href="rain_in_spain.htm">スペインでの雨</a>に
-関する情報を見つけたいならば、多くのリソースがある。</p>
+<p>To find out more about the <a href="rain_in_spain.htm">rain in spain</a>there are many resources.</p>
 
 </body>]]></code>
       <description><note><p>視覚的な手掛かりが、(上の例のように) マウスオーバーした際のみ提供される場合、それはやはり不適合となる。</p>

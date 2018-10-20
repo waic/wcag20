@@ -39,7 +39,7 @@ show();
 //-->
 </script>
 ...
-<span id="blink1">このコンテンツは点滅します。</span>]]></code>
+<span id="blink1">This content will blink</span>]]></code>
     </eg-group>
    </examples>
    <related-techniques>

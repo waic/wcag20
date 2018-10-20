@@ -23,20 +23,19 @@
       <head>CSS で背景色のみ指定する</head>
       <description><p>次の例では、背景色は CSS スタイルシートで定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
 </description>
-      <code><![CDATA[
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+         <code><![CDATA[
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
- <title>キャンバス背景の設定</title>
+ <title>Setting the canvas background</title>
     <style type="text/css">
-
        body {background-color:white}
     </style>
   </head>
   <body>
-    <p>背景は白です。</p>
+    <p>My background is white.</p>
   </body>
 </html>]]></code>
     </eg-group>
@@ -44,20 +43,19 @@
       <head>CSS で前景色のみ指定する</head>
       <description><p>次の例では、前景色は CSS スタイルシートで定義されているが背景色は定義されていない。よって、この事例は達成基準を満たしていない。</p>
 </description>
-      <code><![CDATA[
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         <code><![CDATA[
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
- <title>キャンバス背景 (←前景の間違い？) の設定</title>
+ <title>Setting the canvas background</title>
     <style type="text/css">
        body {color:white}
     </style>
   </head>
-
   <body>
-    <p>前景は白です。</p>
+    <p>My foreground is white.</p>
   </body>
 </html>]]></code>
     </eg-group>
@@ -65,22 +63,21 @@
       <head>CSS でリンクテキストの色を指定する</head>
       <description><p>次の例では、リンクテキスト (前景) の色をボディ要素で定義している。しかし背景色は定義していない。よって、この事例は達成基準を満たしていない。</p>
 </description>
-      <code><![CDATA[
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+         <code><![CDATA[
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
     "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
- <title>人口動態の研究</TITLE>
+ <title>A study of population dynamics</TITLE>
  <style type="text/css">
   a:link { color: red }
   a:visited { color: maroon }
   a:active { color: fuchsia }
  </style>
-
 </head>
 <body>
-  <p>... ドキュメント本文 ... <a href="foo.htm">Foo</a></p>
+  <p>... document body... <a href="foo.htm">Foo</a></p>
 </body>
 </html>]]></code>
     </eg-group>
@@ -89,16 +86,16 @@
       <description><p>次の例では、背景色は <el>body</el> 要素で定義されているが前景色は定義されていない。よって、この事例は達成基準を満たしていないことになる。</p>
       <p>HTML 4 の時点で <att>bgcolor</att> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[   
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml">
       <html>
           <head>
-              <title>人口動態に関する研究</title>
+              <title>A study of population dynamics</title>
           </head>
           <body bgcolor="white">
-              <p> ... ドキュメント本文 ...</p>
+              <p> ... document body...</p>
           </body>
   </html>]]></code>
     </eg-group>
@@ -107,17 +104,16 @@
       <description><p>次の例では、前景色は body 要素で定義されているが、背景色は定義されていない。したがって、この例は達成基準を満たしていない。</p>
       <p>HTML 4 の時点で <att>text</att> 属性の使用は廃止予定である、しかしこの失敗例は、この使用法がまだ一部のウェブサイトで見られるため含まれていることに注意する。</p>
 </description>
-      <code><![CDATA[
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+         <code><![CDATA[
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
- <title>人口動態に関する研究</title>
-
+ <title>A study of population dynamics</title>
 </head>
-<body color="white">
-  <p>... ドキュメント本文 ...</p>
+<body text="white">
+  <p>... document body...</p>
 </body>
 </html>]]></code>
     </eg-group>

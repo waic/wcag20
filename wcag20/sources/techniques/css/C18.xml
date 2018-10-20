@@ -29,8 +29,8 @@
             
             ...
             
-              <table summary="ウェブ開発カテゴリの本のタイトルと著者、出版日">
-                <caption>「ウェブ開発」カテゴリーの本</caption>
+              <table summary="Titles, authors and publication dates of books in Web development category">
+                <caption>Books in the category 'Web development'</caption>
                 <thead>
                   <tr>
                     <th>Title</th>
@@ -40,9 +40,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>ウェブ標準について真剣に考える方法</td>
+                    <td>How to Think Straight About Web Standards</td>
                     <td>Andrew Stanovich</td>
-                    <td>2007年4月1日</td>
+                    <td>1 April 2007</td>
                   </tr>
                 </tbody>
               </table>

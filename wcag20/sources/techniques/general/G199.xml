@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G199">
-   <short-name>データが問題なく送信されたことを伝えるフィードバックを提供する</short-name>
+   <short-name>データが正常に送信されたときに、フィードバックを提供する</short-name>
    <applicability>
       <p>利用者のデータインプットを受け入れているコンテンツ</p>
    </applicability>

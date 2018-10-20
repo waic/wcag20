@@ -14,7 +14,7 @@
   </description>
    <examples>
       <eg-group>
-      <head>マルチコラムページレイアウト</head>
+      <head>マルチカラムページレイアウト</head>
       <description>
         <p>HTML と CSS はテキストのページのために２つのカラムのレイアウトを作るために使われている。<code>white-space</code> 特性と <code>normal</code> のデフォルト値を使うことで文字を包み込んでいる。文字のサイズが 200 ％になると、文字は再びあふれ、テキストのカラムは長くなる。もしカラムが表示域に対して長すぎると、コンテンツ制作者が <code>overflow:scroll</code>  又は <code>overflow:auto</code> の CSS ルールを指定しているため、ユーザエージェントはスクロールバーを提供し、利用者がビューの中にテキストをスクロールすることができるようにする。</p>
       </description>

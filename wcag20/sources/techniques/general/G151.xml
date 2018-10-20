@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G151">
-   <short-name>原稿に従う場合、準備された声明又は台本のテキストトランスクリプトへのリンクを提供する</short-name>
+   <short-name>台本に従う場合に、準備された声明又は台本のテキストトランスクリプトへのリンクを提供する</short-name>
    <applicability>
       <p>ライブの音声しか含まない情報を提示する全てのウェブコンテンツ技術</p>
    </applicability>

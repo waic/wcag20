@@ -27,7 +27,7 @@
 <altlocs>
 <loc href="complete.html">単一ファイル版</loc>
 	<!--loc href="complete-diff.html">差分を示した単一ファイル版</loc-->
-	<loc href="http://www.w3.org/WAI/WCAG20/versions/understanding/">Understanding WCAG 2.0 のその他のバージョン (英語)</loc>
+	<loc href="https://www.w3.org/WAI/WCAG20/versions/understanding/">Alternate Versions of Understanding WCAG 2.0</loc>
 </altlocs>
 <latestloc>
 	<loc href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/">https://www.w3.org/TR/UNDERSTANDING-WCAG20/</loc>
@@ -147,9 +147,9 @@ Austin)</affiliation>
 <p>様々な障害や支援技術に関する情報については、<loc href="https://en.wikipedia.org/wiki/Disability">Disabilities - Wikipedia</loc> を参照のこと。</p>
 
 <div3 id="fourprincs" role="normal">
-<head>アクセシビリティの 4 つの原則を理解する</head>
+<head>アクセシビリティの四つの原則を理解する</head>
 
-<p>ガイドライン及び達成基準は、誰もがウェブコンテンツにアクセスして利用するために必要な土台となる、次の 4 つの原則を中心に構成されている。ウェブを利用したい誰もが、コンテンツに求めるのは次のことである:</p>
+<p>ガイドライン及び達成基準は、誰もがウェブコンテンツにアクセスして利用するために必要な土台となる、次の四つの原則を中心に構成されている。ウェブを利用したい誰もが、コンテンツに求めるのは次のことである:</p>
 
 <olist>
 	<item><p>知覚可能 － 情報及びユーザインタフェースコンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。</p>
@@ -216,7 +216,7 @@ Austin)</affiliation>
 				<head>WCAG 達成基準のための達成方法を理解する (抑制された)</head>
 				<p>WCAG 2.0 のガイドライン及び達成基準は、動的アプリケーション、モバイル、デジタルテレビなどを含む現在及び将来のウェブ技術に対して広く適用可能となるよう設計されている。これらは安定しており変わることはない。</p>
             <p>WCAG 達成基準を満たすための、制作者や評価者に対する個別のガイダンスはコード例、リソース及びテストを含む達成方法集で提供されている。W3C の <loc href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc> (日本語訳は <loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>) 文書は概ね<phrase>年に 2 回</phrase>、より最新の成功事例及び技術やツールの変化をカバーするよう定期的に更新されている。</p>
-				<p><loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>における 3 つのタイプのガイダンスを以下に説明する:</p>
+				<p><loc href="https://waic.jp/docs/WCAG20/Overview.html">WCAG 2.0 達成方法集</loc>における三つのタイプのガイダンスを以下に説明する:</p>
 				<ulist>
 					<item>
 						<p>十分な達成方法</p>
@@ -289,7 +289,7 @@ Austin)</affiliation>
                </p>
 					<div4 id="understanding-techniques-sufficient-lists-and" role="normal">
 						<head>番号付きリスト、"かつ"</head>
-                  <p>W3C 文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。1 つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければならない。例えば、<loc href="content-structure-separation-programmatic.html#content-structure-separation-programmatic-techniques-head">達成基準 1.3.1 を満たすことのできる達成方法</loc>では "G115: セマンティックな要素を用いて、構造をマークアップする、かつ、H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
+                  <p>W3C 文書にある十分な達成方法は番号付きリストになっており、各リスト項目はその十分な達成方法、あるいは達成方法の組み合わせとなっている。一つの番号付きリスト項目に、"かつ" で連結された複数の達成方法がある場合、達成方法を満たすためにはすべての達成方法を用いなければならない。例えば、<loc href="content-structure-separation-programmatic.html#content-structure-separation-programmatic-techniques-head">達成基準 1.3.1 を満たすことのできる達成方法</loc>では "G115: セマンティックな要素を用いて、構造をマークアップする、かつ、H49: セマンティックなマークアップを用いて、強調又は特別なテキストをマークアップする (HTML)"とある。</p>
                </div4>
 				</div3>
 				<div3 id="understanding-techniques-advisory" role="normal">
@@ -469,7 +469,7 @@ Austin)</affiliation>
 
 <div2 role="normal" id="conformance-referencing-should">
 <head>他の標準規格から WCAG 2.0 を「推奨」要件として参照する場合</head>
-<p>標準規格 (又は、規定における推奨) で、<emph role="bold">推奨</emph>要件の中で WCAG 2.0 を参照する際には、WCAG 2.0 全体を参照するのが望ましい。これは、WCAG 2.0 の 3 つのレベルすべてを考慮すべきだが、どれも必須ではないという意味になる。そのため、推奨要件の中で WCAG 2.0 を参照する際のフォーマットは次のようになる:</p>
+<p>標準規格 (又は、規定における推奨) で、<emph role="bold">推奨</emph>要件の中で WCAG 2.0 を参照する際には、WCAG 2.0 全体を参照するのが望ましい。これは、WCAG 2.0 の三つのレベルすべてを考慮すべきだが、どれも必須ではないという意味になる。そのため、推奨要件の中で WCAG 2.0 を参照する際のフォーマットは次のようになる:</p>
 <p><emph>ウェブコンテンツアクセシビリティガイドライン 2.0、W3C 勧告 2008 年 12 月 11 日 (http://www.w3.org/TR/200X/REC-WCAG20-20081211/)</emph></p>
 </div2>
 

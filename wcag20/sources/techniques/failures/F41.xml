@@ -20,16 +20,17 @@
       <eg-group role="failure">
       <description><p>この非推奨例では、利用者ページが一定間隔で変化する。コンテンツ制作者はこの手法を「プッシュ」テクノロジーのシミュレートに用いるべきではない。制作者は、利用者がページを読むのにどれくらいの時間を必要とするかを予期することはできない。早すぎるリフレッシュは利用者を混乱させることになる。コンテンツ制作者は周期的なリフレッシュを避け、利用者自身にいつ最新の情報がほしいかを選択させるべきである。(<att>content</att> 属性内の数字はリフレッシュまでの秒数である。)</p>
 </description>
-      <code><![CDATA[
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">   
+         <code><![CDATA[
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>     
-    <title>WCAG 2.0のためのHTMLの達成方法</title>     
+    <title>HTML Techniques for WCAG 2.0</title>     
     <meta http-equiv="refresh" content="60" />   
   </head>   
   <body>
     ...     
   </body> 
-</html>]]></code>
+</html>
+]]></code>
     </eg-group>
    </examples>
    <related-techniques />

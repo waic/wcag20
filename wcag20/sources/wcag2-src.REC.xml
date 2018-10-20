@@ -145,7 +145,7 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
         <ulist>
           <item>
             <p>
-              <emph role="bold">原則</emph> - 最上位には、ウェブアクセシビリティの土台となる4つの原則がある: <emph>知覚可能、操作可能、理解可能、及び堅牢 (robust)。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
+              <emph role="bold">原則</emph> - 最上位には、ウェブアクセシビリティの土台となる四つの原則がある: <emph>知覚可能、操作可能、理解可能、及び堅牢 (robust)。</emph>あわせて、<loc href="intro" locn-note="introduction-fourprincs-head" linktype="understanding" hreflang="en">Understanding the Four Principles of Accessibility</loc>も参照。</p>
           </item>
           <item>
             <p>
@@ -153,11 +153,11 @@ section 6 of the W3C Patent Policy</loc>に従ってその情報を開示しな�
           </item>
           <item>
             <p>
-              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.0 を用いることが可能である。様々なユーザ層や状況からくるニーズを満たすために、3つの適合レベルが定義されている: A (最低レベル)、AA、AAA (最高レベル)。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
+              <emph role="bold">達成基準</emph> - 各ガイドラインには、検証可能な達成基準が設けられており、デザイン仕様検討、調達、基準策定、及び契約上の合意などにあたりその要件や適合試験が必要となる際に WCAG 2.0 を用いることが可能である。様々なユーザ層や状況からくるニーズを満たすために、三つの適合レベルが定義されている: A (最低レベル)、AA、AAA (最高レベル)。WCAG のレベルに関する補足情報は、<loc href="conformance" locn-note="uc-levels-head" linktype="understanding" hreflang="en">Understanding Levels of Conformance</loc>を参照。</p>
           </item>
           <item>
             <p>
-              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、2つのカテゴリに分類される: 達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
+              <emph role="bold">十分な達成方法及び参考達成方法</emph> - WCAG 2.0 文書自体にある<emph>ガイドライン</emph>及び<emph>達成基準</emph>それぞれに対して、ワーキンググループは<emph>達成方法</emph>についても広範囲にわたって文書化している。達成方法は参考情報であり、二つのカテゴリに分類される: 達成基準を満たすのに<emph>十分な</emph>達成方法と<emph>参考</emph>達成方法である。参考達成方法は、個々の達成基準の要件を上回るもので、これらの達成方法を用いることで、コンテンツ制作者はガイドラインに対してより良い対処をすることができる。参考達成方法の中には、検証可能な達成基準によってカバーされていないアクセシビリティの問題に対処するものもある。よくある失敗例がある場合は、それも文書化されている。<loc href="intro" locn-note="introduction-layers-techs-head" linktype="understanding" hreflang="en">Sufficient and Advisory Techniques in Understanding WCAG 2.0</loc>も参照。</p>
           </item>
         </ulist>
         <p>このガイダンスのレイヤー (原則、ガイドライン、達成基準、十分な達成方法及び参考達成方法) はすべて、コンテンツをよりアクセシブルにする方法に関するガイダンスを提供するために連携している。コンテンツ制作者は可能な範囲で最も広い利用者のニーズに最大限対処できるように、参考達成方法を含めたすべてのレイヤーを確認して適用することが推奨される。</p>
@@ -198,7 +198,7 @@ WCAG 2.0 関連文書
       <div2 role="front" id="new-terms">
         <head>WCAG 2.0 における重要な用語</head>
         <p>
-WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義する。
+WCAG 2.0 では、WCAG 1.0 とは異なる三つの重要な用語が用いられている。それぞれを以下で簡潔に紹介し、その詳細は用語集で定義する。
         </p>
         <glist>
           <gitem>
@@ -1130,7 +1130,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる3つの重要な用語が用いられ�
               </item>
               <item>
                 <p>
-                  <emph role="bold">そのウェブコンテンツ技術には、アクセシビリティ サポーテッドで、利用者が利用できるユーザエージェントがなければならない。</emph>これは、少なくとも次の4つのうち一つを満たしていることを意味する:</p>
+                  <emph role="bold">そのウェブコンテンツ技術には、アクセシビリティ サポーテッドで、利用者が利用できるユーザエージェントがなければならない。</emph>これは、少なくとも次の四つのうち一つを満たしていることを意味する:</p>
                 <olist>
                   <item>
                     <p>その技術が (HTML や CSS のように)、広く配布されているアクセシビリティ サポーテッドなユーザエージェントに標準でサポートされている。</p>

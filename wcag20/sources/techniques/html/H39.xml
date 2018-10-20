@@ -20,9 +20,9 @@
    <examples>
       <eg-group>
       <head>スケジュールカレンダーの表題</head>
-      <code role="html401"><![CDATA[<table>
-<caption>3月6日の週のスケジュール</caption>
-...</table>]]></code>
+         <code role="html401"><![CDATA[<table>
+<caption>Schedule for the week of March 6</caption>
+...</table> ]]></code>
     </eg-group>
    </examples>
    <resources>

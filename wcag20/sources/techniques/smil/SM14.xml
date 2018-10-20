@@ -11,16 +11,15 @@
    </applies-to>
    <description>
     <p>この達成方法の目的は、耳が聞こえないか、またはそうでなくとも、視聴覚コンテンツにおいて発話を聞くことに問題のある利用者に、コンテンツを閲覧できる方法を提供することである。この達成方法では、発話と重要な音の全てがキャプション領域に表示される手話通訳の映像によって入手できる。</p>
-    <p>SMIL 2.0 では、2 つの映像のために別々の領域を定義できる。2 つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p>
+    <p>SMIL 2.0 では、二つの映像のために別々の領域を定義できる。二つの映像再生が同期していて、画面の一つの領域に本編のビデオを表示し、もう一つの領域に本編に対する手話通訳の映像を表示する。</p>
   </description>
    <examples>
       <eg-group>
       <head>RealMedia プレーヤーでの SMIL 2.0 手話ビデオのサンプル</head>
-      <code><![CDATA[
-<smil xmlns="//www.w3.org/2001/SMIL20/Language">
+         <code><![CDATA[
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
     <layout>
-
       <root-layout backgroundColor="black" height="310" width="330"/>
       <region id="video" backgroundColor="black" top="5" left="5" 
       height="240" width="320"/>
@@ -29,18 +28,18 @@
     </layout>
   </head>
   <body>
-
     <par>
-      <video src="salesdemo.mpg" region="video" title="販売の実演" 
-      alt="販売の実演"/>
+      <video src="salesdemo.mpg" region="video" title="Sales Demo" 
+      alt="Sales Demo"/>
       <video src="salesdemo_signing.mpg" 
       region="signing" systemCaptions="on" 
-      title="手話通訳" 
-      alt="販売の実演の手話通訳"/>
+      title="sign language interpretation" 
+      alt="Sales Demo Sign Language Interpretation"/>
     </par>
   </body>
-</smil>]]></code>
-      <description><p>この事例では、2 つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p>
+</smil>
+]]></code>
+      <description><p>この事例では、二つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p>
 </description>
     </eg-group>
    </examples>

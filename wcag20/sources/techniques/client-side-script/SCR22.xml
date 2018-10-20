@@ -17,7 +17,7 @@
       <description><p>この例では、JavaScript を用いて HTML 及び XHTML コンテンツの点滅を制御する。JavaScript は、コンテンツの表示状態を制御して点滅効果を生みだす。効果の開始を制御し、5 秒以内に停止させる。</p>
 </description>
       <code><![CDATA[...
-<div id="blink1" class="highlight">新商品！</div>
+<div id="blink1" class="highlight">New item!</div>
 <script type="text/javascript">
 <!--
 // 点滅「on」状態

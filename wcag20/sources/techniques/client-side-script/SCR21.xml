@@ -9,7 +9,6 @@
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
                          relationship="sufficient"/>
-      <success-criterion idref="ensure-compat-rsv"/>
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
@@ -72,13 +71,13 @@ function validateNumbers(objForm)
     // 発見したエラーすべてをエラー一覧に追加
     if (!bFirst)
     {
-      strError = '最初の数字には、数値を入力してください。';
+      strError = 'Please provide a numeric value for the first number';
       objList.appendChild(addError(strError, '#num1', objForm, strID));
       strID = '';
     }
     if (!bSecond)
     {
-      strError = '2番目の数字には、数値を入力してください。';
+      strError = 'Please provide a numeric value for the second number';
       objList.appendChild(addError(strError, '#num2', objForm, strID));
       strID = '';
     }
@@ -142,37 +141,35 @@ function focusFormField(objAnchor, objEvent, objForm)
 } ]]></code>
       <description><p>以下は事例のフォーム用 HTML である。</p>
 </description>
-      <code role="html401"><![CDATA[
+         <code role="html401"><![CDATA[
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="ja">
+<html>
 <head>
+	<title>ECMAScript Form Validation</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>ECMAScript フォームの検証</title>
 	<script type="text/javascript" src="validate.js"></script>
 </head>
 <body>
-<h1>フォームの検証</h1>
+<h1>Form Validation</h1>
 <form id="numberform" method="post" action="form.php">
-
 <fieldset>
-<legend>数字のフィールド</legend>
+<legend>Numeric Fields</legend>
 <p>
-<label for="num1">最初の数字を入力</label>
+<label for="num1">Enter first number</label>
 <input type="text" size="20" name="num1" id="num1">
 </p>
 <p>
-
-<label for="num2">2番目の数字を入力</label>
+<label for="num2">Enter second number</label>
 <input type="text" size="20" name="num2" id="num2">
 </p>
 </fieldset>
 <p>
-<input type="submit" name="submit" value="フォームを送信">
+<input type="submit" name="submit" value="Submit Form">
 </p>
 </form>
-
 </body>
-</html> ]]></code>
+</html>
+]]></code>
       <description><p>この例はクライアントサイドスクリプトに限定しているため、サーバーサイドの検証によって補完されるべきである。例では、クライアントサイドスクリプトが利用できるときのエラーメッセージの作成に限定される。</p>
 <p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/SCR21/ex1.html"><!-- linktype="examples"-->フォームの検証</loc> </p>
 </description>

@@ -19,7 +19,9 @@
       <eg-group>
       <description><p>HTML では、利用者がコンテンツを更新するボタン又はリンクを、開発者が提供できる。例えば、次のコード例のように、ページ上で http://www.example.com/news.jsp にニュース項目があると示すことである。</p>
 </description>
-      <code><![CDATA[<a href="news.jsp">このページを更新する</a>]]></code>
+         <code><![CDATA[
+              <a href="news.jsp">Update this page</a>
+            ]]></code>
     </eg-group>
     <eg-group>
       <description><p>E メールのウェブインタフェース (ウェブメール) では、自動更新ではなく、新しいメールを確認するボタン又はリンクを、開発者が提供できる。</p>

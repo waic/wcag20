@@ -29,8 +29,8 @@
         <p>ハイコントラストといった、オペレーティングシステムの設定を反映させる</p>
       </item>
     </ulist>
-    <p>適切な視覚的表現を作り出すためには、これらの要素のテキスト部分には、テキストを使い、セマンティックマークアップとスタイルシートの組み合わせを用いるとよい。このことが効果的に作用するために、利用者のシステム上で利用できると思われるフォントを選び、定義された最初のフォントを持たない利用者のために代替フォントを定義する。最新のマシンとユーザエージェントはしばしばすべてのテキストにスムーズもしくはアンチエイリアスをかけている。そのため見出しやボタンは画像化された文字に頼ることなくこれらのシステム上できれいに表示される。</p>
-    <p>次の CSS のプロパティは、テキストのスタイルを指定し、画像化された文字を使う必要性を回避するのに有効である:</p>
+    <p>適切な視覚的表現を作り出すためには、これらの要素のテキスト部分には、テキストを使い、セマンティックマークアップとスタイルシートの組み合わせを用いるとよい。このことが効果的に作用するために、利用者のシステム上で利用できると思われるフォントを選び、定義された最初のフォントを持たない利用者のために代替フォントを定義する。最新のマシンとユーザエージェントはしばしばすべてのテキストにスムーズもしくはアンチエイリアスをかけている。そのため見出しやボタンは文字画像に頼ることなくこれらのシステム上できれいに表示される。</p>
+    <p>次の CSS のプロパティは、テキストのスタイルを指定し、画像のテキストを使う必要性を回避するのに有効である:</p>
     <ulist>
       <item>
         <p><code><![CDATA[font-family]]></code> プロパティをを使って、文字の外観を等幅フォントで表示する。</p>
@@ -78,7 +78,9 @@
       <head>フォントファミリーを制御するために CSS の font-family を使用する。</head>
       <description><p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>Javascriptで文字列を変換して大文字にする方法は<code>toUpperCase()</code>である。</p>]]></code>
+      <code><![CDATA[
+<p>The Javascript method to convert a string to uppercase is <code>toUpperCase()</code>.</p>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[code { font-family:"Courier New", Courier, monospace }]]></code>
@@ -87,7 +89,9 @@
       <head>テキストの配置 (配列) を制御するために CSS の text-align を使用する。</head>
       <description><p>XHTML:</p>
 </description>
-      <code><![CDATA[<p class="right">このテキストは表示域の右側にあるべきである。</p>]]></code>
+      <code><![CDATA[
+<p class="right">This text should be to the right of the viewport.</p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.right { text-align: right; }]]></code>
@@ -96,7 +100,9 @@
       <head>テキストのサイズを制御するために CSS の font-size を使用する。</head>
       <description><p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>2008年<strong class="largersize">3月</strong>9日</p>]]></code>
+      <code><![CDATA[
+<p>09 <strong class="largersize">March</strong> 2008</p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[strong.largersize { font-size: 1.5em; }]]></code>
@@ -107,7 +113,9 @@
                      </note>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>2008年<em class="highlight">3月</em>9日</p>]]></code>
+      <code><![CDATA[
+<p>09 <em class="highlight">March</em> 2008</p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.highlight{ color: red; }]]></code>
@@ -117,7 +125,10 @@
       <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>この記事は <a href="http://www.example.com" class="featuredsite">内分泌学のブログ</a>で入手可能である。</p>]]></code>
+      <code><![CDATA[
+<p>The article is available in the <a href="http://www.example.com" class="featuredsite">Endocrinology 
+Blog</a>.</p>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.featuredsite{ font-style:italic; }]]></code>
@@ -127,7 +138,9 @@
       <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>この取引は <span class="highlight">今</span>利用可能です！</p>]]></code>
+      <code><![CDATA[
+<p>This deal is available <span class="highlight">now!</span></p> 
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.highlight { font-weight:bold; color:#990000; }]]></code>
@@ -137,7 +150,9 @@
       <description><note><p>この例で用いているスタイルは、情報や構造又は関係性を伝えるためのものではない。</p></note>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>2008年 <span class="caps">3月</span> 9日</p>]]></code>
+      <code><![CDATA[
+<p>09 <span class="caps">March</span> 2008</p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.caps { text-transform:uppercase; }]]></code>
@@ -147,17 +162,21 @@
       <description><p>CSS の <code>line-height</code> プロパティを使って、段落の行間をフォントの高さの 2 倍に表示する。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p>人とその人の運命についての考察はいつも<br />  
-全ての技術的な試みの最重要な関心を形成する。 <br />
-あなたの図式と方程式においてそれを忘れてはいけない。 </p>]]></code>
+<code><![CDATA[
+<p>Concern for man and his fate must always form the<br />  
+chief interest of all technical endeavors. <br />
+Never forget this in the  midst of your diagrams and equations. </p>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[p { line-height:2em; }]]></code>
       <description><p>CSS の <code>line-height</code> プロパティを使って、テキストの行間をフォントの高さより少なく表示させる。テキストの 2 行目は、テキストの 1 行目の後に配置されて、あたかも 1 行目の一部だがやや下がっているように見える。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<h1 class="overlap"><span class="upper">本日の</span><br />
-<span class="byline">ニュース</span></h1>]]></code>
+<code><![CDATA[
+<h1 class="overlap"><span class="upper">News</span><br />
+<span class="byline">today</span></h1>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.overlap { line-height:0.2em;  }
@@ -167,12 +186,14 @@
     <eg-group>
       <head>文字間を設定するために CSS の letter-spacing を使用する。</head>
       <description>
-<trnote><p>原文では、1 つ目の説明文が 2 つ目のコードの説明、2 つ目の説明文が 1 つ目のコードの説明と「さかさま」になっているが、翻訳では正しい組み合わせに修正している。</p><!-- WGの状況を確認すること --></trnote>
+<trnote><p>原文では、一つ目の説明文が二つ目のコードの説明、二つ目の説明文が一つ目のコードの説明と「さかさま」になっているが、翻訳では正しい組み合わせに修正している。</p><!-- WGの状況を確認すること --></trnote>
 <p>CSS の <code>letter-spacing</code> プロパティは、2 行目のテキストでより近い文字を表示するために使用される。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<h1 class="overlap"><span class="upper">本日の</span><br />
-<span class="byline">ニュース</span></h1>]]></code>
+<code><![CDATA[
+<h1 class="overlap"><span class="upper">News</span><br />
+<span class="byline">today</span></h1>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.overlap { line-height:0.2em;  }
@@ -181,7 +202,9 @@
       <description><p>CSS の <code>letter-spacing</code> プロパティは、見出しでさらに離れた文字を表示するために使用される。</p>
 <p>XHTML の構成:</p>
 </description>
-      <code><![CDATA[<h1 class="upper2">ニュース</h1>]]></code>
+      <code><![CDATA[
+<h1 class="upper2">News</h1>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.upper2 { text-transform:uppercase; letter-spacing:1em; }]]></code>
@@ -191,8 +214,10 @@
       <description><p>CSS の <code>font-style</code> プロパティを使って、バナーのテキスト要素を表示させ、<code>background-image</code> プロパティを使って、テキストの後ろの画像を表示させる。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<div id="banner"><span id="bannerstyle1">地域の審議会へ</span> 
-<span id="bannerstyle2">ようこそ</span></div>]]></code>
+         <code><![CDATA[
+<div id="banner"><span id="bannerstyle1">Welcome</span> 
+<span id="bannerstyle2">to your local city council</span></div>
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[
@@ -222,8 +247,10 @@
       <description><p>CSS の <code>:first-line</code> 擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p class="startline">むかしむかし...<br />
-...遠い地で, 遠くへ...  </p>]]></code>
+         <code><![CDATA[
+<p class="startline">Once upon a time...<br />
+...in a land far, far away...  </p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.startline:first-line { font-size:2em; color:#990000; }]]></code>
@@ -233,7 +260,9 @@
       <description><p>CSS の <code>:first-letter</code> 擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p>
 <p>XHTML:</p>
 </description>
-      <code><![CDATA[<p class="startletter">むかしむかし...</p>]]></code>
+         <code><![CDATA[
+<p class="startletter">Once upon a time...</p>  
+]]></code>
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[.startletter:first-letter { font-size:2em; color:#990000; vertical-align:middle; }]]></code>

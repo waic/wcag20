@@ -41,18 +41,17 @@
       <eg-group>
       <description><p>民族音楽祭のウェブページの告知文。</p>
 </description>
-      <code><![CDATA[<h3>最終15組</h3>
-<p>間もなくあなたの近くの町に行きます……。
-全米民族音楽祭にラインナップしている最終15組です。
-<a href="final15.html">［続きを読む］</a>
+         <code><![CDATA[<h3>The final 15</h3>
+<p>Coming soon to a town near you...the final 15 in the 
+National Folk Festival lineup.
+<a href="final15.html">[Read more...]</a>
 </p>
-
-<h3>民族音楽のアーティストが賞を受ける</h3>
-<p>来たる全米民族音楽祭の出演者が、
-全米芸術基金の国家遺産フェローシップを受賞します。
- <a href="nheritage.html">［続きを読む］</a>
+<h3>Folk artists get awards</h3>
+<p>Performers from the upcoming National Folk Festival receive 
+ National Heritage Fellowships. 
+ <a href="nheritage.html">[Read more...]</a>
 </p>
-… ]]></code>
+…   ]]></code>
     </eg-group>
    </examples>
    <resources/>

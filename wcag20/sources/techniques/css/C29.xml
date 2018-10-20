@@ -56,38 +56,38 @@
 <p>この例は、現在のページの表示だけに適用される。実稼働環境では、利用者がそのサイトで一度選択すれば済むように、その設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
 <p>XHTML (抜粋):</p>
 </description>
-      <code><![CDATA[In <head> section:
-<head>〜</head>内:
+         <code><![CDATA[
+In <head> section:
 
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link id="currentCSS" href="defaultColors.css" rel="stylesheet" type="text/css" />
 
 In <body> section:
-<body>〜</body>内:
 
 <div id="colorswitch">
 <p>Change colors:</p>
-<p>色の変更:</p>
   <ul class="inline">
     <li><a href="#" onClick="javascript:changeColors('altColors1.css');return false;" 
-      id="altColors1">文字:紺 背景:白</a></li>
+      id="altColors1">dark blue on white</a></li>
     <li><a href="#" onClick="javascript:changeColors('altColors2.css');return false;" 
-      id="altColors2">文字:黄 背景:黒</a></li>
+      id="altColors2">yellow on black</a></li>
     <li><a href="#" onClick="javascript:changeColors('altColors3.css');return false;" 
-      id="altColors3">文字:黒 背景:黄</a></li>
+      id="altColors3">black on pale yellow</a></li>
     <li><a href="#" onClick="javascript:changeColors('altColors4.css');return false;" 
-      id="altColors4">文字:黒 背景:白</a></li>
+      id="altColors4">black on white</a></li>
     <li><a href="#" onClick="javascript:changeColors('defaultColors.css');return false;" 
-      id="default">デフォルトに戻す</a></li>
+      id="default">Reset to default</a></li>
   </ul>
 </div>
 <div id="mainbody">
-  <h1>カンファレンスレポート</h1>
-  <p>先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...</p>
-</div>]]></code>
+  <h1>Conference report</h1>
+  <p>Last week's conference presented an impressive line-up of speakers...</p>
+</div>
+]]></code>
       <description><p>CSS (抜粋):</p>
 </description>
-      <code><![CDATA[main.css内:
+         <code><![CDATA[
+In main.css:
 
 body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
 
@@ -107,8 +107,7 @@ body{ font-family: Geneva, Arial, Helvetica, sans-serif; margin: 2em; }
     font-weight:bold;
 }
 
-
-defaultColors.css内:
+In defaultColors.css:
 
 body, p { 
     color:#000000; 
@@ -120,37 +119,34 @@ h1, h2, h3 {
         background-color:#FFFFFF;
 }
 
-
-altColors1.css内:
+In altColors1.css:
 
 body, h1, h2, h3, p, a { 
     color:#000066; 
     background-color:#FFFFFF; 
 }
 
-
-altColors2.css内:
+In altColors2.css:
 
 body, h1, h2, h3, p, a { 
     color:#FFFF33; 
        background-color:#000000; 
 }
 
-
-altColors3.css内:
+In altColors3.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFF99; 
 }
 
-
-altColors4.css内:
+In altColors4.css:
 
 body, h1, h2, h3, p, a { 
     color:#000000; 
     background-color:#FFFFFF; 
-}]]></code>
+}
+  ]]></code>
       <description><p>JavaScript (抜粋):</p>
 </description>
       <code><![CDATA[function changeColors (newCSS)
@@ -166,46 +162,48 @@ body, h1, h2, h3, p, a {
 <note><p>以下のコードには、達成方法を理解しやすくする目的で、XHTML コード内から JavaScript を呼び出す部分が含まれている。しかし、コンテンツ制作者は、JavaScript を組み込むためのその時点でのベストプラクティスを採用することが推奨される (アンオブトルーシブ JavaScript とプログレッシブエンハンスメントについての詳細はリソースを参照)。</p></note>
 <p>XHTML (抜粋): </p>
 </description>
-      <code><![CDATA[<h1>製品の比較</h1>
-<p>比較のためにあなたが選択した製品は以下のとおりです。 
-各製品の相違点は強調表示され、イタリック体で表示されています。</p>
-<p class="inlinePara">強調表示の色を変更: </p>
+         <code><![CDATA[
+<h1>Product comparison</h1>
+<p>The products you selected to compare are listed below. 
+Any differences between the products are highlighted and italicized.</p>
+<p class="inlinePara">Change hightlight color: </p>
 <ul class="inline">
   <li><a href="#" onClick="changeColor('hghltLightYellow');return false;" 
-    class="hghltLightYellow">薄い黄色</a></li>
+    class="hghltLightYellow">light yellow</a></li>
   <li><a href="#" onClick="changeColor('hghltBrightYellow');return false;" 
-    class="hghltBrightYellow">濃い黄色</a></li>
+    class="hghltBrightYellow">bright yellow</a></li>
   <li><a href="#" onClick="changeColor('hghltLightBlue');return false;" 
-    class="hghltLightBlue">水色</a></li>
+    class="hghltLightBlue">light blue</a></li>
   <li><a href="#" onClick="changeColor('hghltBrightBlue');return false;" 
-    class="hghltBrightBlue">青</a></li>
+    class="hghltBrightBlue">bright blue</a></li>
   <li><a href="#" onClick="changeColor('hghltLightRed');return false;" 
-    class="hghltLightRed">ピンク</a></li>
+    class="hghltLightRed">light red</a></li>
   <li><a href="#" onClick="changeColor('hghltDrkRed');return false;" 
-    class="hghltDrkRed">茶色</a></li>
+    class="hghltDrkRed">dark red</a></li>
 </ul>
 <table width="400" border="1">
   <tr>
     <td> </td>
-    <th scope="col">製品1</th>
-    <th scope="col">製品2</th>
+    <th scope="col">Product 1</th>
+    <th scope="col">Product 2</th>
   </tr>
   <tr>
-    <th scope="row">比較項目1</th>
-    <td>あり</td>
-    <td>あり</td>
+    <th scope="row">Aspect 1</th>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
   <tr>
-    <th scope="row">比較項目2</th>
-    <td class="hghltLightYellow">あり</td>
-    <td class="hghltLightYellow">なし</td>
+    <th scope="row">Aspect 2</th>
+    <td class="hghltLightYellow">Yes</td>
+    <td class="hghltLightYellow">No</td>
   </tr>
   <tr>
-    <th scope="row">比較項目3</th>
-    <td>対応</td>
-    <td>対応</td>
+    <th scope="row">Aspect 3</th>
+    <td>Yes</td>
+    <td>Yes</td>
   </tr>
-</table>]]></code>
+</table>
+]]></code>
       <description><p>CSS (抜粋): </p>
 </description>
       <code><![CDATA[body { color:#000000; background-color:#FFFFFF; }
@@ -243,11 +241,12 @@ body, h1, h2, h3, p, a {
     </eg-group>
     <eg-group>
       <head>異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</head>
-      <description><p>このシンプルな例では、2 つあるうちの 1 つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
+      <description><p>このシンプルな例では、二つあるうちの一つの外部スタイルシートを適用するために PHP の「$_GET」を使用している。同様のことは、PHP の様々な機能を使って実現できる。この例では、現在のページの表示だけに適用される。実際の制作においては、利用者がそのサイトにおいて一度選択すれば済むように、設定をクッキーまたはサーバーサイドのユーザプロファイルに保存することが望ましい。</p>
 <p>以下のコードは PHP であるが、同様のアプローチは様々なサーバーサイドのウェブコンテンツ技術によって可能である。</p>
 <p>PHP と XHTML (抜粋): </p>
 </description>
-      <code><![CDATA[PHPの冒頭において:
+         <code><![CDATA[
+At the beginning of the PHP page:
 
 <?php
 $thestyle = $_GET['set'];
@@ -262,57 +261,60 @@ else
 ?>
 
 
-<head>〜</head>内:
+In the <head> section:
 
    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo($thestyle);?>.css" >
 
 
-<body>〜</body>内:
+In <body> section:
 
 <?php
 if ($thestyle == "style1") {
-	echo "<a href=\"index.php?set=style1\">スタイルシート2に変更</a>";
+	echo "<a href=\"index.php?set=style1\">Switch to Style Sheet Two</a>";
 	}
 else {
-	echo "<a href=\"index.php?set=style2\">スタイルシート1に変更</a>";
+	echo "<a href=\"index.php?set=style2\">Switch to Style Sheet One</a>";
 	}
 ?>
 
 <div id="mainbody">
-  <h1>カンファレンスレポート</h1>
-  <p>先週のカンファレンスは、そうそうたる顔ぶれのスピーカーにより...</p>
-</div>]]></code>
+  <h1>Conference report</h1>
+  <p>Last week's conference presented an impressive line-up of speakers...</p>
+</div>
+]]></code>
       <description><p>CSS (抜粋):</p>
 </description>
-      <code><![CDATA[style1.css内:
+         <code><![CDATA[
+In style1.css:
 
   body, p { color:#000000; background-color:#FFFFFF; }
   h1, h2, h3 {color:#990000; background-color:#FFFFFF; }
 
+In style2.css:
 
-style2.css内:
-
-  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }]]></code>
+  body, h1, h2, h3, p, a { color:#FFFF00; background-color:#000000; }
+]]></code>
       <description><p>このコードの実装サンプル: <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/C29/ex3/index.php"><!-- linktype="examples"-->異なる外部スタイルシートファイルを適用するために PHP の「$_GET」を使う</loc></p>
 </description>
     </eg-group>
     <eg-group>
       <head>代替スタイルシートを提供するために JSP を使用する</head>
-      <description><p>以下の例では 2 つのファイルを使用している:</p>
+      <description><p>以下の例では二つのファイルを使用している:</p>
 <ulist>
 <item><p>フォームを含む Java Server Page (JSP) 及びフォームの処理コード</p></item>
 <item><p>上記ページ及び同様のスタイルを使用する他のページで使用される関数を含むインクルードファイル</p></item></ulist>
-<p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、2 つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p>
+<p>サーバーサイドのコードは、利用者が選択したスタイルシートのための通常の link 要素及び他のスタイル用の「alternate stylesheet」のついた link 要素を出力する。そのコードは、二つめの例にあるように、クライアントサイドのコードのフォールバックとして使用することもできる。</p>
 <p>フォームを含む JSP ページ:</p>
 </description>
-      <code><![CDATA[<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+         <code><![CDATA[
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
  %><%@include file="_jsp/styleswitch.jsp"%><?xml version="1.0" encoding="UTF-8"?>
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
  <head>
    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-   <title>スタイルを変更する</title>
+   <title>Change Style</title>
    <%
      String fStyle = "";
      String styleName = "style";
@@ -320,7 +322,7 @@ style2.css内:
      Cookie[] cookies = request.getCookies();
  
      // get style from post request parameters
-     if (request.getMethod().equals("POST") &amp;&amp; request.getParameter("styleSelect") != null) {
+     if (request.getMethod().equals("POST") && request.getParameter("styleSelect") != null) {
        fStyle = request.getParameter("styleSelect");
        // code that validates user input (security) not shown
        
@@ -351,17 +353,18 @@ style2.css内:
  </head>
  <body id="home">
    <form action="_styleSwitch.jsp" method="post" id="styleswitchform" name="styleswitchform">
-     <p><label for="styleSelect">スタイルを選択: </label>
+     <p><label for="styleSelect">Select style: </label>
        <select id="styleSelect" name="styleSelect">
-         <option value="default">デフォルト (緑)</option>
-         <option value="wonb">黒背景に白い文字</option>
-         <option value="bonw">白背景に黒い文字</option>
+         <option value="default">Default (shades of green)</option>
+         <option value="wonb">White on black</option>
+         <option value="bonw">Black on white</option>
        </select>
-       <input type="submit" value="スタイルを変更" />
+       <input type="submit" value="Change Style" />
      </p>
    </form>
  </body>
- </html>]]></code>
+ </html>
+ ]]></code>
       <description><p>上記ファイルにインクルードされる「styleswitcher.jsp」ファイル:</p>
 </description>
       <code><![CDATA[<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>

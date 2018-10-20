@@ -22,15 +22,15 @@
       <head><att>summary</att> 属性はあるが、<el>caption</el> 要素はないデータテーブル</head>
       <description><p>この事例は、バスの時刻表を表している。<att>summary</att> 属性には、運行系統と目的地、時刻表の利用方法が記述されている。</p>
 </description>
-      <code role="html401"><![CDATA[<table summary="7系統、市街地行きの時刻表です。朝4時に運行開始、
-深夜に終了します。経由地は先頭の行に示してあります。
-出発地や目的地に最も近い経由地を見つけ、その列を下のほうに読み進めて、
-バスの出発時刻を見つけてください。">
+         <code role="html401"><![CDATA[<table summary="Schedule for Route 7 going downtown. Service begins 
+at 4:00 AM and ends at midnight. Intersections are listed in the top row. 
+Find the intersection closest to your starting point or destination, then read 
+down that column to find out what time the bus leaves that intersection.">
   <tr>
-    <th scope="col">一番街</th>
-    <th scope="col">六番街</th>
-    <th scope="col">十五番街</th>
-    <th scope="col">十五番街モリソン通り</th>
+    <th scope="col">State & First</th>
+    <th scope="col">State & Sixth</th>
+    <th scope="col">State & Fifteenth</th>
+    <th scope="col">Fifteenth & Morrison</th>
   </tr>
   <tr>
     <td>4:00</td>
@@ -39,20 +39,21 @@
     <td>4:19</td>
   </tr>
   …
-</table> ]]></code>
+</table>  ]]></code>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
       <head><att>summary</att> 属性と <el>caption</el> 要素の両方があるデータテーブル</head>
       <description><p>この事例では、<att>summary</att> 属性と <el>caption</el> 要素の両方を用いている。<el>caption</el> 要素ではバスの運行系統を特定している。<att>summary</att> 属性には、全盲の利用者が時刻表の利用方法を理解するのに役立つ内容を記述している。スクリーンリーダーは、まず <el>caption</el> 要素を、続いて <att>summary</att> 属性を読み上げる。</p>
 </description>
-      <code role="html401"><![CDATA[<table summary="経由地は1行目に示してあります。
-出発地や目的地に最も近い経由地を見つけ、その列を下のほうに読み進めて、
-バスの出発時刻を見つけてください。
-朝4時に運行開始、深夜に終了します。">
-  <caption>7系統、市街地行き (平日)</caption>
+         <code role="html401"><![CDATA[<table summary="Intersections are listed in row 1. 
+Find the intersection closest to your starting point 
+or destination, then read down that column to find 
+out what time the bus leaves that intersection.  
+Service begins at 4:00 AM and ends at midnight.">
+  <caption>Route 7 Downtown (Weekdays)</caption>
 …
-</table> ]]></code>
+</table>]]></code>
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
    </examples>

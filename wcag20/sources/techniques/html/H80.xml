@@ -25,40 +25,39 @@
       <head>複数のホテルに関する情報のブロック</head>
       <description><p>各ホテルの情報は、ホテル名、概要、地図、写真、案内、お客様レビュー、そして予約フォームへのリンクで構成されている。</p>
 </description>
-      <code role="xhtml"><![CDATA[<h2><a href="royal_palm_hotel.html">ロイヤルパームホテル</a></h2>
+         <code role="xhtml"><![CDATA[<h2><a href="royal_palm_hotel.html">Royal Palm Hotel</a></h2>
   <ul class="horizontal">
-    <li><a href="royal_palm_hotel_map.html">地図</a></li>
-    <li><a href="royal_palm_hotel_photos.html">写真</a></li>
-    <li><a href="hroyal_palm_hotel_directions.html">案内</a></li>
-    <li><a href="royal_palm_hotel_reviews.html">お客様レビュー</a></li>
-    <li><a href="royal_palm_hotel_book.html">予約フォーム</a></li>
+    <li><a href="royal_palm_hotel_map.html">Map</a></li>
+    <li><a href="royal_palm_hotel_photos.html">Photos</a></li>
+    <li><a href="hroyal_palm_hotel_directions.html">Directions</a></li>
+    <li><a href="royal_palm_hotel_reviews.html">Guest reviews</a></li>
+    <li><a href="royal_palm_hotel_book.html">Book now</a></li>
   </ul>
-
-<h2><a href="hotel_three_rivers.html">ホテルスリーリバー</a></h2>
+<h2><a href="hotel_three_rivers.html">Hotel Three Rivers</a></h2>
   <ul class="horizontal">
-    <li><a href="hotel_three_rivers_map.html">地図</a></li>
-    <li><a href="hotel_three_rivers_photos.html">写真</a></li>
-    <li><a href="hotel_three_rivers_directions.html">案内</a></li>
-    <li><a href="hotel_three_rivers_reviews.html">お客様レビュー</a></li>
-    <li><a href="hotel_three_rivers_book.html">予約フォーム</a></li>
-  </ul> ]]></code>
+    <li><a href="hotel_three_rivers_map.html">Map</a></li>
+    <li><a href="hotel_three_rivers_photos.html">Photos</a></li>
+    <li><a href="hotel_three_rivers_directions.html">Directions</a></li>
+    <li><a href="hotel_three_rivers_reviews.html">Guest reviews</a></li>
+    <li><a href="hotel_three_rivers_book.html">Book now</a></li>
+  </ul>     ]]></code>
       <a11ysuprorted rating="pass" exnumber="1"/>
     </eg-group>
     <eg-group>
-      <head>ある文書を 3 つのファイル形式で提供する場合</head>
-      <code role="xhtml"><![CDATA[<h2>2006-2007年版 年次報告書</h2>
+      <head>ある文書を 三つのファイル形式で提供する場合</head>
+         <code role="xhtml"><![CDATA[<h2>Annual Report 2006-2007</h2>
 <p> 
   <a href="annrep0607.html">(HTML)</a>&nbsp;
   <a href="annrep0607.pdf">(PDF)</a>&nbsp;
   <a href="annrep0607.rtf">(RTF)</a>
-</p> ]]></code>
+</p>       ]]></code>
       <a11ysuprorted rating="pass" exnumber="2"/>
     </eg-group>
     <eg-group>
       <head>新聞社のウェブサイト</head>
-      <code role="xhtml"><![CDATA[<h2><a href="Stockmarket_05052007.htm>株式市場が急騰、強含みに</a></h2>
-<p>今週は金への投資が2％上昇し、株式市場にとっては華々しい週になった。
-<a href="Stockmarket_05052007.htm>全文を読む</a></p> ]]></code>
+         <code role="xhtml"><![CDATA[<h2><a href="Stockmarket_05052007.htm>Stock market soars as bullishness prevails</a></h2>
+<p>this week was a stellar week for the stock market as investing in gold rose 2%. 
+<a href="Stockmarket_05052007.htm>More here</a></p>     ]]></code>
     </eg-group>
       <a11ysuprorted rating="pass" exnumber="3"/>
    </examples>

@@ -20,23 +20,24 @@
       <head>HTML のページを構造化するために用いられた見出し</head>
       <description><p>ある調理法を紹介するページでは、h1 要素により全体とタイトルを示し、h2 要素で大項目としてサラダ油による調理とバターによる調理を示し、h3 要素で油による調理の詳細なサブセクションを示している。</p>
 </description>
-      <code role="html401"><![CDATA[
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>調理法</title>
-</head>
-<body>
-<h1>調理法</h1>
-... ここにはテキストが入る ...
-<h2>サラダ油による調理</h2>
-... セクションのテキストが入る ...
-<h3>ソテー</h3>
-....
-<h3>油揚げ</h3>
-<h2>バターによる調理</h2>
-... セクションのテキストが入る ...
-</body>
-</html>]]></code>
+         <code role="html401"><![CDATA[
+              <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                <title>Cooking techniques</title>
+                </head>
+                <body>
+                <h1>Cooking techniques</h1>
+                ... some text here ...
+                <h2>Cooking with oil</h2>
+                ... text of the section ...
+                <h3>Sautéeing</h3>
+                ...
+                <h3>Deep frying</h3>
+                <h2>Cooking with butter</h2>
+                ... text of the section ...
+                </body>
+              </html>
+            ]]></code>
     </eg-group>
    </examples>
    <resources>

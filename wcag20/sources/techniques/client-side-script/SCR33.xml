@@ -22,8 +22,8 @@
 </description>
       <code><![CDATA[...
 <div id="scroller">
-<p id="tag">このテキストはスクロールし、JavaScript及びCSSが
-サポートされていて有効なときは、停止/スクロールのリンクが提供される。</p>
+<p id="tag">This text will scroll and a Pause/Scroll link will be present 
+when Javascript and CSS are supported and active.</p>
 </div>
 ...]]></code>
       <description><p>CSS部分:</p>

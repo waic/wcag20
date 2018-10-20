@@ -23,49 +23,53 @@
       <eg-group>
       <description><p>この事例は、各記事の概要のあとに「全文」というリンクのあるニュースサイトを示している。非表示にされたリンクテキストが、何の「全文」であるのかを説明している。</p>
 </description>
-      <code role="html401"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <code role="html401"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /> 
 <link href="access.css" rel="stylesheet" type="text/css" />
-<title>非表示のテキストリンク｜WCAG 2.0 達成方法集
+<title>Hidden Link Text</title>
 </head>
 <body> 
-<p>ワシントンは経済成長の刺激策を発表した。
-  <a href="#"> <span>ワシントンによる経済成長の刺激策の </span>
-  全文</a></p>
+<p>Washington has announced plans to stimulate economic growth.
+  <a href="#"> <span>Washington stimulates economic growth </span>
+  Full Story</a></p>
 </body>
-</html>]]></code>
+</html>
+]]></code>
     </eg-group>
     <eg-group>
       <description><p>この事例では、異なるフォーマットの電子ブックが用意されている場合について説明している。「HTML」「PDF」といったリンクのテキストの前に本の題名が付加されている。非表示にされたリンクテキストでは、何のHTMLファイルであるのか、何のPDFファイルであるのかを示している。</p>
 </description>
-      <code role="html401"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <code role="html401"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" /> 
 <link href="access.css" rel="stylesheet" type="text/css" />
-<title>非表示のテキストリンク</title>
+<title>Hidden Link Text </title>
 </head>
 <body>
 <dl>
-<dt>くまのプーさん </dt>
+<dt>Winnie the Pooh </dt>
    <dd><a href="winnie_the_pooh.html">
-      <span>くまのプーさん </span>HTML版</a></dd>
+      <span>Winnie the Pooh </span>HTML</a></dd>
    <dd><a href="winnie_the_pooh.pdf">
-         <span>くまのプーさん </span>PDF版</a></dd>
-<dt>戦争と平和</dt>
+         <span>Winnie the Pooh </span>PDF</a></dd>
+<dt>War and Peace</dt>
     <dd><a href="war_and_peace.html">
-      <span>戦争と平和 </span>HTML版</a></dd> 
+      <span>War and Peace </span>HTML</a></dd> 
     <dd><a href="war_and_peace.pdf">
-      <span>W戦争と平和 </span>PDF版</a></dd>
+      <span>War and Peace </span>PDF</a></dd>
 </dl>
 </body>
-</html>]]></code>
+</html>
+]]></code>
     </eg-group>
    </examples>
    <resources>
