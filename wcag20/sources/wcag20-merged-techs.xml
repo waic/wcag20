@@ -27,9 +27,9 @@
 		<altlocs>
 			<loc href="complete.html">単一ファイル版</loc>
 <!-- diff版はいったんナシ
-			<loc href="complete-diff.html">Single file diff-marked version showing revisions since 17 March 2015</loc>
-			<loc href="/WAI/WCAG20/versions/techniques/">Alternate Versions of Techniques for WCAG 2.0</loc>
--->
+			<loc href="complete-diff.html">Single file diff-marked version showing revisions since 17 March 2015</loc> -->
+			<loc href="https://www.w3.org/WAI/WCAG20/versions/techniques/">Alternate Versions of Techniques for WCAG 2.0</loc>
+
 		</altlocs>
 		<latestloc>
 			<loc href="https://www.w3.org/TR/WCAG20-TECHS/">https://www.w3.org/TR/WCAG20-TECHS/</loc>

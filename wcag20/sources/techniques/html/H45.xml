@@ -22,15 +22,15 @@
    <examples>
       <eg-group>
 <head>longdesc 属性を用いて別のリソースに含まれた長い説明文を参照する。</head>
-      <code><![CDATA[<p><img src="chart.gif" alt="複雑な図" longdesc="chartdesc.html"/></p> ]]></code>
+      <code><![CDATA[<p><img src="chart.gif" alt="a complex chart" longdesc="chartdesc.html"/></p>]]></code>
     </eg-group>
       <eg-group>
          <head>longdesc 属性を用いて同じページに含まれた長い説明文を参照する。</head>
-         <code><![CDATA[<img longdesc="thispage.html#desc" alt="購読者数の折れ線グラフ" src="http://www.company/images/graph.png">
+         <code><![CDATA[<img longdesc="thispage.html#desc" alt="Line graph of the number of subscribers" src="http://www.company/images/graph.png">
 <div id="desc">
-<h3>長い説明文: 購読者数の折れ線グラフ</h3>
+<h3>Long Description: Line graph of the number of subscribers</h3>
 <!-- すべてのグラフ説明文 -->
-<p>長い説明文の終点.</p>
+<p>Long description ends.</p>
 <div>]]></code>
       </eg-group>
    </examples>

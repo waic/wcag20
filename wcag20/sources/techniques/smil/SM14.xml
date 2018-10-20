@@ -16,11 +16,10 @@
    <examples>
       <eg-group>
       <head>RealMedia プレーヤーでの SMIL 2.0 手話ビデオのサンプル</head>
-      <code><![CDATA[
-<smil xmlns="//www.w3.org/2001/SMIL20/Language">
+         <code><![CDATA[
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
   <head>
     <layout>
-
       <root-layout backgroundColor="black" height="310" width="330"/>
       <region id="video" backgroundColor="black" top="5" left="5" 
       height="240" width="320"/>
@@ -29,17 +28,17 @@
     </layout>
   </head>
   <body>
-
     <par>
-      <video src="salesdemo.mpg" region="video" title="販売の実演" 
-      alt="販売の実演"/>
+      <video src="salesdemo.mpg" region="video" title="Sales Demo" 
+      alt="Sales Demo"/>
       <video src="salesdemo_signing.mpg" 
       region="signing" systemCaptions="on" 
-      title="手話通訳" 
-      alt="販売の実演の手話通訳"/>
+      title="sign language interpretation" 
+      alt="Sales Demo Sign Language Interpretation"/>
     </par>
   </body>
-</smil>]]></code>
+</smil>
+]]></code>
       <description><p>この事例では、2 つの <code><![CDATA[<video>]]></code>タグを含む <code><![CDATA[<par>]]></code>セグメントを示している。system-captions 属性は、利用者のプレーヤーの字幕設定が、字幕を表示する選択になっているとき、手話の映像が表示されるべきであることを示す。<code><![CDATA[<layout>]]></code>セクションは、本編の映像と手話通訳の映像に割り当てる領域を定義している。</p>
 </description>
     </eg-group>

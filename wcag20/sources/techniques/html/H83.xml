@@ -17,7 +17,7 @@
       <eg-group>
       <description><p>次の事例では、新しいウィンドウが開くことが示されたリンクで、<att>target</att> 属性が用いられている。</p>
 </description>
-      <code role="HTML4"><![CDATA[<a href="help.html" target="_blank">ヘルプをご覧ください (新しいウィンドウが開きます)</a> ]]></code>
+      <code role="HTML4"><![CDATA[<a href="help.html" target="_blank">Show Help (opens new window)</a>]]></code>
     </eg-group>
    </examples>
    <resources>

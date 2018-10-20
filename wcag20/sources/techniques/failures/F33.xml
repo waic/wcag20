@@ -19,24 +19,37 @@
       <eg-group role="failure">
       <description><p>次の事例では、2 段組フォーマットにするために、空白文字列を用いているが、正しい使い方ではない。</p>
 </description>
-      <code role="html401"><![CDATA[
-ウェブコンテンツ  アクセシビリティ　　　　　運動制限、発話困難、及びその他の障
-ガイドライン 2.0 (WCAG2.0)は、ウェ　　　　　害を含む様々な障害のある利用者にと
-ブコンテンツをよりアクセシブルにす　　　　　って使うことができることを意味する。
-るためのポイントや推奨事項を幅広く　　　　　このガイドラインに従うことによって、
-カバーしている。この文書には原則、　　　　　ウェブコンテンツは高齢者を含む大多
-ガイドライン、達成基準、利用者のメ　　　　　数の利用者にとっても、よりアクセシ
-リット、そして事例が含まれており、　　　　　ブルなものになる。また、利用者が、
-ウェブベースの情報およびアプリケー　　　　　多様な支援技術を含む実にさまざまな
-ションをアクセシブルにするための要　　　　　デバイスを用いて、ウェブコンテンツ
-件を定義して説明している。「アクセ　　　　　にアクセスすることができるようにも
-シブル」とは、全盲及びロービジョン、　　　　なる。 
-ろう及び難聴、学習困難、認知障害、]]></code>
+         <code role="html401"><![CDATA[
+Web Content Accessibility Guidelines      including blindness and low vision, 
+2.0 (WCAG 2.0) covers a wide range of     deafness and hearing loss, learning 
+issues and recommendations for making     difficulties, cognitive limitations, limited 
+Web content more accessible. This         movement, speech difficulties, and 
+document contains principles,             others. Following these guidelines will 
+guidelines, Success Criteria, benefits,   also make your Web content more 
+and examples that define and explain      accessible to the vast majority of users, 
+the requirements for making Web-based     including older users. It will also enable
+information and applications accessible.  people to access Web content using 
+"Accessible" means usable to a wide       many different devices - including a 
+range of people with disabilities,        wide variety of assistive technologies.
+]]></code>
       <description><p>スクリーンリーダーで読上げると、このテーブルは次のように読まれる:</p>
-<ulist><item><p>ウェブコンテンツアクセシビリティ運動制限、発話困難、及びその他の障</p></item>
-<item><p>ガイドライン 2.0 (WCAG2.0) は、ウェ害を含む様々な障害のある利用者にと</p></item>
-<item><p>ブコンテンツをよりアクセシブルにすって使うことができることを意味する。</p></item>
-<item><p>るためのポイントや推奨事項を幅広くこのガイドラインに従うことによって、</p></item>
+<ulist>
+               <item>
+                  <p>Web Content Accessibility Guidelines including blindness and
+                                        low vision,</p>
+               </item>
+               <item>
+                  <p>2.0 (WCAG 2.0) covers a wide range of deafness and hearing
+                                        loss, learning</p>
+               </item>
+               <item>
+                  <p>issues and recommendations for making difficulties, cognitive
+                                        limitations, limited</p>
+               </item>
+               <item>
+                  <p>Web content more accessible. This movement, speech
+                                        difficulties, and</p>
+               </item>
 <item><p>(以下省略)</p></item></ulist>
 <p>一度削除したテキストを復活させたり、固定サイズのフォントが可変サイズに変更したり、何行かに及ぶテキストをそのページに収まらないくらい文字サイズを大きく変えたりしたときは、先ほど説明したのと同じように、見た目上、間違って解釈されるという問題が起こりうる。</p>
 </description>

@@ -43,59 +43,59 @@
     <eg-group>
       <description><p>この事例では、各セクションの見出しを <el>h2</el> 要素でマークアップすることによって、検索ページ内の複数のセクションを構成している。</p>
 </description>
-      <code role="html401"><![CDATA[<h1>技術関連の定期刊行物の検索</h1>
- <h2>検索</h2>
+         <code role="html401"><![CDATA[<h1>Search Technical Periodicals</h1>
+ <h2>Search</h2>
  <form action="search.php">
-  <p><label for="searchInput">検索トピックスを入力:</label>
+  <p><label for="searchInput">Enter search topic: </label>
   <input type="text" size="30" id="searchInput">
-  <input type="submit" value="検索"></p>
+  <input type="submit" value="Go"></p>
  </form>
- <h2>検索可能な定期刊行物</h2>
+ <h2>Available Periodicals</h2>
  <div class="jlinks">
-  <a href="pcoder.com">プロフェッショナルコーダー</a> |
-  <a href="algo.com">アルゴリズム</a> |
-  <a href="jse.com">ソフトウェア工学ジャーナル</a>
+  <a href="pcoder.com">Professional Coder</a> |
+  <a href="algo.com">Algorithms</a> |
+  <a href="jse.com">Journal of Software Engineering</a>
  </div>
- <h2>検索結果</h2>
- ……このセクションに検索結果を表示……]]></code>
+ <h2>Search Results</h2>
+ ... search results are returned in this section ...   ]]></code>
     </eg-group>
     <eg-group>
       <head>コンテンツ全体の構成を示している見出し</head>
       <description><p>この事例では、ナビゲーションとメインコンテンツを知覚できるように、見出しマークアップを利用している。</p>
 </description>
       <code role="html401"><![CDATA[<!-- ロゴ、バナー画像、検索フォームなど  -->
-  <h2>ナビゲーション</h2>
+  <h2>Navigation</h2>
     <ul>
-      <li><a href="about.htm">会社概要</a></li>
-      <li><a href="contact.htm">お問い合わせ</a></li>
+      <li><a href="about.htm">About us</a></li>
+      <li><a href="contact.htm">Contact us</a></li>
        ...
     </ul>
-  <h2>見出しに関する全て</h2>
+  <h2>All about headings</h2>
    <!-- メインコンテンツを構成するテキスト、画像、その他のもの…… -->]]></code>
     </eg-group>
     <eg-group>
       <head>メインコンテンツ部分にあるコンテンツの構成を示している見出し</head>
       <description><p>HTML 4.01 及び XHTML 1.x において、見出し要素はセクションの先頭をマークするだけであることに注意すること。見出し要素をセクションコンテンツに明示的に関連付けるためのマークアップが存在しないため、次の見出し要素が出現するまで、見出しは後に続くすべてのコンテンツに適用されると見なされる。</p>
 </description>
-      <code role="html401"><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
+         <code role="html401"><![CDATA[ <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>調理手法</title>  
+    <title>Cooking techniques</title>  
   </head>   
   <body>     
-    <h1>調理手法</h1>     
+    <h1>Cooking techniques</h1>     
     <p>       
-      ……ここにテキストが入ります……     
+      ... some text here ...     
     </p>           
-    <h2>油を使った調理</h2> 
+    <h2>Cooking with oil</h2> 
     <p> 
-        ……このセクションのテキスト……     
+        ... text of the section ...     
     </p>           
-    <h2>バターを使った調理</h2>       
+    <h2>Cooking with butter</h2>       
     <p>
-        ……このセクションのテキスト……     
+        ... text of the section ...     
     </p>   
   </body> 
-</html>]]></code>
+</html>    ]]></code>
     </eg-group>
    </examples>
    <resources>

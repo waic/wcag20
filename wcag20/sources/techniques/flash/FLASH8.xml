@@ -252,7 +252,7 @@ addChild(myFieldSet);
       <expected-results>
          <ulist>
             <item>
-               <p>上記チェックポイントのいずれかを満たしている。</p>
+               <p>上記手順のいずれかを満たしている。</p>
             </item>
          </ulist>
       </expected-results>

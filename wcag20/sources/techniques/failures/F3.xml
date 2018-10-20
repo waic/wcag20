@@ -29,9 +29,9 @@ p#bestinterest {
 }]]></code>
       <description><p>これは次の抜粋コードで使用される:</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[ 
 <p id="bestinterest">
-  これ以上の金利を発見できましたか？
+  Where else would you find a better interest rate?
 </p>]]></code>
     </eg-group>
     <eg-group role="failure">
@@ -62,13 +62,13 @@ ul#booklist li.outstock {
 }]]></code>
       <description><p>これは次の抜粋コードで使用される:</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[
 <ul id="booklist">
-  <li class="new">ある書籍</li>
-  <li class="instock">他の書籍</li>
-  <li class="limited">オススメできない書籍</li>
+  <li class="new">Some book</li>
+  <li class="instock">Some other book</li>
+  <li class="limited">A book we desperately want to get rid of</li>
   ...
-  <li class="outstock">あなたの本当に欲しい書籍</li>
+  <li class="outstock">A book you actually want </li>
 </ul>]]></code>
     </eg-group>
       <eg-group role="failure">
@@ -76,7 +76,7 @@ ul#booklist li.outstock {
          <description>
             <p>失敗例 1 のコードで使用されている、同じ背景画像が HTML style 属性で宣言されている。</p>
             <codeblock xml:space="preserve"><![CDATA[<p id="bestinterest" style="background: transparent url(/images/TopRate.png) no-repeat top left;" >
-これ以上の金利を発見できましたか?
+Where else would you find a better interest rate?
 <p>]]></codeblock>
             <p>次のコードでは、背景画像の宣言がクライアントスクリプト内で作成されている。</p>
             <codeblock xml:space="preserve"><![CDATA[<script type="text/javascript">

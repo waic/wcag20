@@ -18,10 +18,9 @@
       <eg-group>
       <description><p><att>alt</att> 属性がある <att>input</att> 要素</p>
 </description>
-      <code><![CDATA[<form action="http://example.com/prog/text-read" method="post">
-
-  <input type="image" name="submit" src="button.gif" alt="送信／実行" />
-</form> ]]></code>
+         <code><![CDATA[<form action="http://example.com/prog/text-read" method="post">
+  <input type="image" name="submit" src="button.gif" alt="Submit" />
+</form>    ]]></code>
     </eg-group>
    </examples>
    <resources>

@@ -29,7 +29,7 @@
       <eg-group role="failure">
       <description><p>次の事例は、時間によるサーバサイドのリダイレクトが Java サーブレット又は JavaServer Pages (JSP) により実装されているため、失敗例である。</p>
 </description>
-      <code><![CDATA[
+         <code><![CDATA[
 public void doGet (HttpServletRequest request, HttpServletResponse response)
       throws IOException, ServletException {
         response.setContentType("text/html");
@@ -37,10 +37,11 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 	response.setHeader("Refresh", "10; URL=TargetPage.html");
 	out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
 	 \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">");
-	out.println("<html><head><title>リダイレクト</title></head><body>");
-	out.println("<p>このページは10秒後にリダイレクトします。</p>");
+	out.println("<html><head><title>Redirect</title></head><body>");
+	out.println("<p>This page will redirect you in 10 seconds.</p>");
 	out.println("</body></html>");
-  }]]></code>
+  }
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <description><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、失敗例である。</p>

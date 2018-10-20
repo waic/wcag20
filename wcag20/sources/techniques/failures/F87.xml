@@ -31,11 +31,11 @@ q:before { content: open-quote }
 q:after  { content: close-quote }]]></code>
       <description><p>これが、次のように使われている。</p>
 </description>
-      <code role="html401"><![CDATA[ <p class="jim">
- <q>彼は間に合うかな？</q>
+         <code role="html401"><![CDATA[ <p class="jim">
+ <q>Do you think he's going to make it?</q>
 </p>
 <p class="mary">
- <q>無理そうよね。</q>
+ <q>It's not looking good.</q>
 </p>]]></code>
     </eg-group>
     <eg-group role="failure">
@@ -46,12 +46,11 @@ q:after  { content: close-quote }]]></code>
  p.opinion:before { content: "Opinion: "; font-weight: bold; }</code>
       <description><p>これが、次のように使われている。</p>
 </description>
-      <code role="html401"><![CDATA[
-<p class="fact">
- 事件発生時、被告人はその犯罪現場にいた。 
+         <code role="html401"><![CDATA[ <p class="fact">
+ The defendant was at the scene of the crime when it occurred. 
 </p>
 <p class="opinion">
- 被告人がその罪を犯した。 
+ The defendant committed the crime. 
 </p>]]></code>
     </eg-group>
    </examples>

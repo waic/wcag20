@@ -19,11 +19,13 @@
       <head>イベントハンドラで単一のコントロールをチェックする</head>
       <description><p>以下のスクリプトは、有効な日付がフォームのコントロールに入力されたかをチェックする。</p>
 </description>
-      <code><![CDATA[
-<label for="date">日付:</label>
+         <code><![CDATA[
+<label for="date">Date:</label>
 <input type="text" name="date" id="date" 
 onchange="if(isNaN(Date.parse(this.value))) 
-alert('alert('このコントロールは日付が正しくありません。値を再び入力してください。');" />]]></code>
+alert('This control is not a valid date. 
+Please re-enter the value.');" />
+]]></code>
     </eg-group>
    	<eg-group>
    		<head>利用者がフォームを送信したときに複数のコントロールをチェックする</head>
@@ -42,12 +44,12 @@ function validate() {
 	//validate name
 	var pattern = /^[a-zA-Z\s]+$/;
 	var el = document.getElementById("name");
-	if (!pattern.test(el.value))  msg += "名前は文字及びスペースのみ含むことができます。";
+	if (!pattern.test(el.value))  msg += "Name can only have letters and spaces. ";
 	
 	// validate number
 	var pattern = /^[\d\-+\.\s]+$/;
 	var el = document.getElementById("tel");
-	if (!pattern.test(el.value))  msg += "電話番号は数字及びセパレーターのみ含むことができます。";
+	if (!pattern.test(el.value))  msg += "Telephone number can only have digits and separators. ";
 	
 	if (msg != "") {
 		alert(msg);
@@ -59,11 +61,11 @@ function validate() {
    			<codeblock><![CDATA[
 <form action="multiple-controls.html" onsubmit="return validate()">
 	<p>
-		<label for="name">名前: </label>
+		<label for="name">Name: </label>
 		<input type="text" name="name" id="name" />
 	</p>
 	<p>
-		<label for="tel">電話番号: </label>
+		<label for="tel">Telephone number: </label>
 		<input type="text" name="tel" id="tel" />				
 	</p>
 	<p>

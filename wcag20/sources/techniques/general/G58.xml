@@ -18,31 +18,29 @@
       <head>HTML ドキュメント内の MOV ドキュメント</head>
       <description><p>「Olympic_Sports.htm」という名のページ内のコード</p>
 </description>
-      <code><![CDATA[<a name="Olympic_Wrestling"></a>
-<p><a href="http://www.example.com/movies/olympic_wrestling.mov">オリンピックレスリング動画</a>, 
-<a href="http://www.example.com/transcripts/olympic_wrestling_transcript.htm>オリンピックレスリングの照合されたトランスクリプト
-</a></p>]]></code>
+         <code><![CDATA[
+  <a name="Olympic_Wrestling"></a>
+  <p><a href="http://www.example.com/movies/olympic_wrestling.mov">Olympic Wrestling movie</a>, 
+  <a href="http://www.example.com/transcripts/olympic_wrestling_transcript.htm">Olympic 
+  Wrestling collated Transcript</a></p>
+            ]]></code>
     </eg-group>
     <eg-group>
       <head>HTML ドキュメント内の .MOV ドキュメントへ戻る</head>
       <description><p>olympic_wrestling_transcript.htm のページ内のコード</p>
 </description>
-      <code><![CDATA[<p>スポーツアナウンサー １: これは、イングランドのウィルジョンソンと
-アルゼンチンのセオドルデリンゴの今夜の最高の戦いです。</p>
-
-<p>情景: スタンド内に500人の観衆が詰め掛けたスタジアムの中央に
-マットが設置されています。</p>
-
-<p> ...更なる発話 ...<p>
-
-<p> ...更なる情景...</p>
-
-<p> ...その他...</p>
-
-<p>スポーツアナウンサー  ２: 今夜はこれで最後となります。
-ウィルジョンソンが新たなゴールドメダリストになったこの場所から、
-今夜もお付き合い頂きありがとうございました。 
-<a href="../movies/Olympic_Sports.htm#Olympic_Wrestling>動画ページへ戻る</a> </p>]]></code>
+         <code><![CDATA[
+  <p>Sports announcer 1: This is a great battle tonight between England's "Will Johnson" and 
+  "Theodore Derringo" from Argentina</p>
+  <p>Scenery: There is a mat set out in the middle of the stadium with 500 people in the 
+  stands...</p>
+  <p> ...more dialogue...<p>
+  <p> ...more scenery...</p>
+  <p> ...etc...</p>
+  <p>Sports announcer 2: And that is all for tonight, thank you for joining us tonight where 
+  Will Johnson is the new Gold Medalist. 
+  <a href="../movies/Olympic_Sports.htm#Olympic_Wrestling>Return to Movie page</a> </p>
+            ]]></code>
     </eg-group>
    </examples>
    <resources/>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="C30">
-   <short-name>テキストを画像文字に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する</short-name>
+   <short-name>テキストを文字画像に置き換えるために CSS を利用し、切り替えのためのユーザインタフェースコントロールを提供する</short-name>
    <applicability>
       <p>CSS をサポートするすべてのウェブコンテンツ技術</p>
    </applicability>
@@ -23,12 +23,13 @@
       <description><p>デザインスタジオのサイトは、利用者が彼らのウェブページの 2 種類の表現を見ることができるようにスタイルの切り替えを用いている。デフォルトのバージョンでは、見出しのテキストが画像化されたテキストで置き換えられている。ページ上のコントロールによって利用者はテキストで見出しを表現したバージョンへ切り替えることができる。</p>
 <p>CSS:</p>
 </description>
-      <code><![CDATA[...
+         <code><![CDATA[...
 <div id="Header"> 
-  <h1><span>パッファーフィッシュデザインスタジオ</span></h1> 
-  <h2><span>驚くべき独自性とデザインソリューション</span></h2> 
+  <h1><span>Pufferfish Design Studio</span></h1> 
+  <h2><span>Surprising Identity and Design Solutions</span></h2> 
   </div> 
-...]]></code>
+...
+]]></code>
       <description><p>画像化されたテキストを含んだ表現のための CSS を以下に記す。見出し要素のコンテンツを画面の外に配置して非表示にするためにポジショニングを使用することで、テキストはスクリーンリーダー利用者が利用可能な状態に保持されていることに注意。</p>
 </description>
       <code><![CDATA[...

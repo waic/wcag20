@@ -53,10 +53,10 @@
    <examples>
       <eg-group>
       <head>リンクの目的を明らかにする</head>
-      <code role="html401"><![CDATA[<a href="http://example.com/WORLD/africa/kenya.elephants.ap/index.html" 
-title="象の避難の失敗について続きを読む">
-巨大な荷物のせいで、避難はさんざんな結果に
-</a> ]]></code>
+         <code role="html401"><![CDATA[<a href="http://example.com/WORLD/africa/kenya.elephants.ap/index.html" 
+   title="Read more about failed elephant evacuation">
+   Evacuation Crumbles Under Jumbo load
+</a>]]></code>
     </eg-group>
    </examples>
    <resources>

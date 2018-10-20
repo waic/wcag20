@@ -31,7 +31,7 @@
 
 ...
 
-<a href="example.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">ここにフォーカスを置く</a>
+<a href="example.html" onfocus="toggleFocus(this)" onblur="toggleFocus(this)">focus me</a>
 ...]]></code>
     </eg-group>
    </examples>

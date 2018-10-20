@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="G144">
-   <short-name>ウェブページが異なる様式を用いて同じ目的を果たす、もう一つの CAPTCHA を含むことを確認する</short-name>
+   <short-name>異なるモダリティを用いて同じ目的を果たす、もう一つの CAPTCHA がウェブページに含まれていることを確認する</short-name>
    <applicability>
       <p>全てのウェブコンテンツ技術</p>
    </applicability>

@@ -55,7 +55,7 @@
       <head>アウトライン階層によってしおりを作成する</head>
       <description><p>次のコードフラグメントは、しおりの作成に使用するアウトライン階層の一部を示している。これは通常、オーサリングツールを使用して行う。</p>
 </description>
-      <codeblock xml:space="preserve"><![CDATA[121 0 obj
+            <codeblock xml:space="preserve"><![CDATA[121 0 obj
  << /Type /Outlines
     /First 22 0 R
     /Last 29 0 R
@@ -63,7 +63,7 @@
  >>
 endobj
 22 0 obj
- << /Title (障害者によるユーザビリティテストにゲリラ戦術を適用する)
+ << /Title (Applying Guerrilla Tactics to Usability Testing by People with Disabilities)
     /Parent 21 0 R
     /Next 29 0 R
     /First 25 0 R
@@ -73,12 +73,13 @@ endobj
  >>
 endobj
 25 0 obj
- << /Title (はじめに)
+ << /Title (Getting started)
     /Parent 22 0 R
     /Next 26 0 R
     /Dest [3 0 R /XYZ null 701 null]
  >>
-endobj]]></codeblock>
+endobj
+]]></codeblock>
     </eg-group>
    </examples>
    <resources>

@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH34">
-   <short-name>支援技術が検出された場合は、自動的に再生される音声をオフにする</short-name>
+   <short-name>支援技術が検出された場合に、自動的に再生される音声をオフにする</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

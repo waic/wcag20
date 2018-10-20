@@ -22,10 +22,10 @@
       <code><![CDATA[
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "<url>http://www.w3.org/TR/html4/loose.dtd">http://www.w3.org/TR/html4/loose.dtd</title>">
-<html lang="ja">
+<html lang="en">
 <head>
 
-<title>株式相場市況</title>
+<title>Stock Market Quotes</title>
 <script type="text/javascript">
 <!--
 function timeControl() {
@@ -37,8 +37,8 @@ function userCheck() {
 	var id=setTimeout('pageReload()', 20000);
 	// 利用者が「OK」を選択した場合、タイマーがリセットされる
 	// それ以外の場合、サーバーによりページが再読み込みされる
-	if (confirm("このページは20秒後に再読み込みされるように設定されています。
-	それ以上の時間が必要ですか？"))
+	if (confirm("This page is set to refresh in 20 seconds. 
+	Would you like more time?"))
 	{
 	clearTimeout(id);
 	timeControl();
@@ -52,9 +52,8 @@ timeControl();
 </script>
 </head>
 <body>
-<h1>株式相場市況</h1>
-
-...その他のコンテンツ...
+<h1>Stock Market Quotes</h1>
+...etc...
 </body>
 </html>]]></code>
     </eg-group>

@@ -17,39 +17,40 @@
    <examples>
       <eg-group role="failure">
       <head>列の間をタブ区切りで整形したスケジュール</head>
-      <code role="html401"><![CDATA[
-<pre>
- 	月曜日		火曜日	水曜日		木曜日		金曜日
+         <code role="html401"><![CDATA[
+ <pre>
+ 	Monday	Tuesday	Wednesday	Thursday	Friday
  8:00-
- 9:00	サムと会う				
+ 9:00	Meet with Sam				
  9:00-
- 10:00				Dr.ウィリアム	再びサムと	サンアントニオに出発
- </pre>]]></code>
+ 10:00			Dr. Williams	Sam again	Leave for San Antonio
+ </pre>
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head>フォーマット済みのテキストを用いて表示した選挙結果</head>
-      <code role="html401"><![CDATA[
-<pre>
-   サーキット COURT JUDGE 支部 3
-                                                  　ラ
-                                                   　イ
-                                          Ｍ Ｒ エ    ト
-                                           ア .  ル    
-                                     マ ラ   リ   バ    
-                                      イ ン   ー   ー    
-                                       ク グ        ト     イ
-                                        　 　        　     ン
+         <code role="html401"><![CDATA[
+ <pre>
+   CIRCUIT COURT JUDGE BRANCH 3
+                                                  W
+                                                   R
+                                          M R E     I
+                                           A . L     T
+                                     M L    R   B     E
+                                      I A    Y   E     -
+                                       K N        R     I
+                                        E G        T     N
                                        -----   -----   -----
-0001 アルビオンタウン WDS 1-2            22      99       0
-0002 ベリータウン WDS 1-2                52     178       0
-0003 ブラックアースタウン                16      49       0
-0004 ブルーミンググローブタウン WDS 1-3  44     125       0
-0005 ブルータウン MOUNDS                 33     117       0
-0006 ブリストルタウン WDS 1-3            139    639       1
-0007 バークタウウン WDS 1-4              80     300       0
-0008 クリスティーナタウン WDS 1-2        22      50       0
-
- </pre>]]></code>
+0001 TOWN OF ALBION WDS 1-2               22      99       0
+0002 TOWN OF BERRY WDS 1-2                52     178       0
+0003 TOWN OF BLACK EARTH                  16      49       0
+0004 TOWN OF BLOOMING GROVE WDS 1-3       44     125       0
+0005 TOWN OF BLUE MOUNDS                  33     117       0
+0006 TOWN OF BRISTOL WDS 1-3             139     639       1
+0007 TOWN OF BURKE WDS 1-4                80     300       0
+0008 TOWN OF CHRISTIANA WDS 1-2           22      50       0
+ </pre>
+]]></code>
     </eg-group>
    </examples>
    <resources/>

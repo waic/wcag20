@@ -48,27 +48,23 @@
 <note><p>以下のコード例は、ウェブページの特定のセクションに対して用いるべき見出しレベルを規定するものではないことに留意することが重要である。レイアウトする際には、各カラムの最初に見出しを同じ見出しレベル (例えば、h1) で提示したり、またはコード例にあるようにメインコンテンツに関してその重要度を反映した見出しレベルで提示したりすることが可能である。</p>
 </note>
 </description>
-      <code role="html401"><![CDATA[<head>
- <title>今日の株式市場</title>
+         <code role="html401"><![CDATA[<head>
+ <title>Stock Market Up Today</title>
  </head>
-
  <body>
-
  <!-- left nav -->
  <div class="left-nav">
- <h2>サイトナビゲーション</h2>
+ <h2>Site Navigation</h2>
  <!-- content here -->
  </div>
-
  <!-- main contents -->
  <div class="main">
- <h1>今日の株式市場</h1>
+ <h1>Stock Market up today</h1>
  <!-- article text here -->
  </div>
-
  <!-- right panel -->
  <div class="left-nav">
- <h2>関連リンク</h2>
+ <h2>Related links</h2>
  <!-- content here -->
  </div>
  </body>]]></code>

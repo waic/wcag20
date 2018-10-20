@@ -21,7 +21,7 @@
       <code><![CDATA[
 <script type="text/javascript" src="popup.js"></script>
 …
-<a href="help.html" id="newwin">ヘルプを表示</a>]]></code>
+<a href="help.html" id="newwin">Show Help</a]]></code>
       <description><p>スクリプト:</p>
 </description>
       <code><![CDATA[
@@ -35,7 +35,7 @@ function addHandlers()
 
   if (objAnchor)
   {
-    objAnchor.firstChild.data = objAnchor.firstChild.data + ' (新しいウィンドウで開く)';
+    objAnchor.firstChild.data = objAnchor.firstChild.data + ' (opens in a new window)';
     objAnchor.onclick = function(event){return launchWindow(this, event);}
     // UAAG ではユーザエージェントにデバイス非依存な方法でイベントを処理することを
     // 要求しているが、そうしないブラウザが多いのでキーボードイベントを追加する

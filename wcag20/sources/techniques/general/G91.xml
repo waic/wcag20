@@ -15,10 +15,12 @@
   </description>
    <examples>
       <eg-group>
-      <head>HTML において、a 要素のテキストコンテンツを用いてリンクの目的を説明する。</head>
-      <code role="html401"><![CDATA[<a href="routes.html">
-  ボルダーズ クライミング ジムの現在のルート
-</a>]]></code>
+      <head>HTML において、<code>a</code> 要素のテキストコンテンツを用いてリンクの目的を説明する。</head>
+         <code role="html401"><![CDATA[
+              <a href="routes.html">
+                Current routes at Boulders Climbing Gym
+                </a>
+            ]]></code>
     </eg-group>
    </examples>
    <resources/>

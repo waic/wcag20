@@ -21,47 +21,51 @@
       <head>視覚的効果の実現のみのために用いられている見出し</head>
       <description><p>この例では、太字の大きな文字で連絡先住所を表示するために見出しが用いられている。しかし、この連絡先住所がページ中の新しい章や節の開始を示しているわけではないので、見出しとしてマークアップするのは不適切である。</p>
 </description>
-      <code role="html401"><![CDATA[
-<p>詳細に興味をお持ちでしたら、以下までご連絡ください。</p> 
+         <code role="html401"><![CDATA[
+<p>Interested in learning more? Write to us at</p> 
 <h4>3333 Third Avenue, Suite 300 · New York City</h4>
 
-<p>完全な情報を一切無料でお送りします。</p>]]></code>
+<p>And we'll send you the complete informational packet absolutely Free!</p>
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head>プレゼンテーション上の効果を目的とした見出し要素の使用</head>
       <description><p>この例では、見出し要素が文書構造を表すため、そして視覚的な効果を実現するための二つの異なる目的で用いられている。<code>h1</code> 及び <code>h2</code> 要素はそれぞれ、文書全体の始まりと概要を示す目的で適切に使用されている一方で、タイトルと概要の間にある <code>h3</code> 及び <code>h4</code> 要素は、作者の名前と日付を表示するためのフォントを制御する目的で使用されている。</p>
 </description>
-      <code role="html401"><![CDATA[
-<h1>ウェブページにおける見出し要素の利用に関する研究</h1>
+         <code role="html401"><![CDATA[
+<h1>Study on the Use of Heading  Elements in Web Pages</h1>
 <h3>Joe Jones and Mary Smith<h3>
-<h4>2006年3月14日</h4>
-<h2>概要</h2>
-<p>研究は2006年初頭に行われ ...
-</p>]]></code>
+<h4>March 14, 2006</h4>
+<h2>Abstract</h2>
+<p>A study was conducted in early 2006 ...
+</p>
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head>追加の字下げを目的とした <code>blockquote</code> 要素の使用</head>
       <description><p>以下の例では、視覚的な表示を行うブラウザにおいてテキストを目立たせる目的で、引用文ではないテキストに対して <code>blockquote</code> 要素が使用されている。</p>
 </description>
-      <code role="html401"><![CDATA[
-<p>同社のウェブサイトに関する詳細な検討の結果、タスクフォースは
-以下の問題がサイト全体に多く見られることを指摘した。</p>
+         <code role="html401"><![CDATA[
+<p>After extensive study of the company Web site, the task force 
+identified the following common problem.</p>
 
 <blockquote>
-<p>視覚的効果を目的としたマークアップの利用により、ページが
-スクリーンリーダーの利用者にとって分かりづらいものになっている。</p>
+<p>The use of markup for presentational effects made Web 
+pages confusing to screen reader users.</p>
 </blockquote>
 
-<p>委員会では、これによってもたらされる問題の具体例を以下に
-示している。</p>]]></code>
+<p>The committee lists particular examples of the problems 
+introduced by this practice below.</p>
+]]></code>
     </eg-group>
     <eg-group role="failure">
       <head>テキストの枠線を表示する目的で <code>fieldset</code> 要素と <code>legend</code> 要素を使用する</head>
-      <code role="html401"><![CDATA[
+         <code role="html401"><![CDATA[
 <fieldset>
-<legend>バーゲンコーナー</legend>
-<p>今購入すると20パーセント割引</p>
-</fieldset>]]></code>
+<legend>Bargain Corner</legend>
+<p>Buy today, and save 20%</p>
+</fieldset>
+]]></code>
     </eg-group>
    </examples>
    <resources/>

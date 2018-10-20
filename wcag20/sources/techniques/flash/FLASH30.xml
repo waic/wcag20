@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="FLASH30">
-   <short-name>画像ボタンにアクセシブルな名前を指定する</short-name>
+   <short-name>画像ボタンにアクセシブルな名前 (accessible name) を指定する</short-name>
    <applicability>
       <p use-id="flash.applicability.general"/>
    </applicability>

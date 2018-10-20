@@ -18,23 +18,28 @@
       <eg-group>
       <description><p>海事用語の記述リストを、航海に関するウェブサイトで利用している。</p>
 </description>
-      <code role="html401"><![CDATA[<dl title="海事用語">
-  <dt>ノット</dt>
+         <code role="html401"><![CDATA[<dl title="Nautical terms">
+  <dt>Knot</dt>
   <dd>
-    <p><em>ノット</em>は、1時間当たり1海里の速度単位である
-    (1時間当たり1.15マイルまたは1.852キロメートル)。</p>
+    <p>A <em>knot</em> is a unit of speed equaling 1 
+      nautical mile per hour (1.15 miles per hour or 1.852 
+      kilometers per hour).</p>
   </dd>
-  <dt>左舷</dt>
+  <dt>Port</dt>
   <dd>
-    <p><em>左舷</em>は、人間が船首 (船の最前部) から見たときの、
-    船体の左側を表す海事用語である (ボートや船に使用される)。</p>
+    <p><em>Port</em> is the nautical term (used on 
+      boats and ships) that refers to the left side
+      of a ship, as perceived by a person facing towards 
+      the bow (the front of the vessel).</p>
   </dd>
-  <dt>右舷</dt>
+  <dt>Starboard</dt>
   <dd>
-    <p><em>右舷</em>は、人間が船首 (船の最前部) から見たときの、
-    船体の右側を表す海事用語である (ボートや船に使用される)。</p>
+    <p><em>Starboard</em> is the nautical term (used 
+      on boats and ships) that refers to the right 
+      side of a vessel, as perceived by a person 
+      facing towards the bow (the front of the vessel).</p>
   </dd>
-</dl> ]]></code>
+</dl>        ]]></code>
     </eg-group>
    </examples>
    <resources>
