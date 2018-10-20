@@ -8,7 +8,7 @@
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
 					</a></li></ul></li></ul><h2 id="F2-description">解説</h2><div class="textbody"><p>この文書では、テキストの見た目の変化が、適切なセマンティックマークアップを用いずに意味を伝える場合に発生する失敗例について説明する。この失敗例は、適切なセマンティックマークアップで囲まれていない文字画像にも適用される。</p></div><h2 class="small-head" id="F2-examples">事例</h2><div class="failure"><h3 class="small-head" id="F2-failex1">
-					失敗例 1: CSS を用いて p 要素を見出しのような見た目にする</h3><div class="example"><div class="textbody"><p>コンテンツ制作者が、見出しの作成にあたって HTML の見出し要素のデフォルトとは異なる見た目にする目的で、p 要素に対して CSS を適用して見出しのような見た目を実現し、これを見出しとして扱っている場合。このような場合においては、適切なマークアップがされていないために支援技術がこれを見出しとして認識できない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 1: CSS を用いて p 要素を見出しのような見た目にする</h3><div class="example"><div class="textbody"><p>コンテンツ制作者は見出しを作成しようとしたが、デフォルトの HTML 見出しの見た目を望まなかった。よって見出しのように見えるように P 要素をスタイル付けするために CSS を使用し、これを見出しと呼んだ。しかし、適切な HTML 見出し要素を使用しそこなった。したがって、支援技術はそれを見出しとして見分けることができない。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;style type="text/css"&gt;
  .heading1{
         font-family: Times, serif;
@@ -21,12 +21,12 @@
  &lt;p&gt;This introduction provides detailed information about how to use this 
  ........
  &lt;/p&gt;</code></pre></div><div class="textbody"><div class="note"><p class="prefix"><em>注記: </em>この事例で用いるべき適切な手法は、HTML の <code>h1</code> 要素を対象にした CSS を用いて見た目を制御する方法である。</p></div></div></div></div><div class="failure"><h3 class="small-head" id="F2-failex2">
-					失敗例 2: 見出しとして用いられる文字画像で、その画像が見出しタグでマークアップされていない</h3><div class="example"><div class="textbody"><p>Chapter1.gif は、20 ピクセルの Garamond フォントで表示した「Chapter One」という文字列の画像である。この場合、少なくともこの画像を見出し要素に入れる必要があるため、不適合である。よりよい手法は、このテキストを見出し要素でマークアップし、この要素に対する CSS を用いて見た目を指定する方法である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 2: 見出しとして用いられる文字画像で、その画像が見出しタグでマークアップされていない</h3><div class="example"><div class="textbody"><p>Chapter1.gif は、20 ピクセルの Garamond フォントで表示した「Chapter One」という文字列の画像である。この場合、少なくともこの画像を見出し要素に入れる必要があるため、失敗例である。よりよい手法は、このテキストを見出し要素でマークアップし、この要素に対する CSS を用いて見た目を指定する方法である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;img src="Chapter1.gif" alt="Chapter One"&gt;
  
 &lt;p&gt;Once upon a time in the land of the Web.....
 &lt;/p&gt;</code></pre></div></div></div><div class="failure"><h3 class="small-head" id="F2-failex3">
-					失敗例 3: 単語やフレーズを強調するために CSS を用いて見た目を制御しているが、その強調のセマンティックを表すマークアップが行われていない場合</h3><div class="example"><div class="textbody"><p>以下の例では、CSS の <code>font-weight</code> プロパティを用いて太字に変更している部分の持つ情報について、セマンティックを表すマークアップがされておらず、また明示的なテキスト情報も提供されていないため不適合となる。</p><p>以下が CSS で太字の書体を指定するためのクラスである:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 3: 単語やフレーズを強調するために CSS を用いて見た目を制御しているが、その強調のセマンティックを表すマークアップが行われていない場合</h3><div class="example"><div class="textbody"><p>以下の例では、CSS の <code>font-weight</code> プロパティを用いて太字に変更している部分の持つ情報について、セマンティックマークアップがされておらず、また明示的なテキスト情報も提供されていないため不合格となる。</p><p>以下が CSS で太字の書体を指定するためのクラスである:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 .yell {
   font-weight:bold;
   text-transform: uppercase;
