@@ -30,7 +30,7 @@
       <eg-group>
          <head>div 要素に JavaScript によるアクションを追加する</head>
          <description>
-            <p>ページにある <code><![CDATA[div]]></code> 要素には一意の <code><![CDATA[id]]></code> 属性及び値が 0 の <code><![CDATA[tabindex]]></code> 属性が付与されている。スクリプトはドキュメントオブジェクトモデル (DOM) を利用し、id によって <code><![CDATA[div]]></code> 要素を見つけ <code><![CDATA[onclick]]></code> ハンドラ及び <code><![CDATA[onkeyup]]></code> ハンドラを追加する。<code><![CDATA[onkeyup]]></code> ハンドラはエンターキーが押下された際、アクションを実行する。<code><![CDATA[div]]></code> 要素を見つけて変更するには、<code><![CDATA[div]]></code> 要素が DOM の中に読み込まれた状態でなければならないことに注意する。これは、通常、<code><![CDATA[body]]></code> 要素の <code><![CDATA[onload]]></code> イベントでスクリプトを呼び出すことで達成される。イベントハンドラを追加するスクリプトはユーザエージェントが JavaScript をサポートし、かつ有効にしている場合にのみ実行される。</p>
+            <p>ページにある <code><![CDATA[div]]></code> 要素には一意の <code><![CDATA[id]]></code> 属性及び値が 0 の <code><![CDATA[tabindex]]></code> 属性が付与されている。スクリプトはドキュメントオブジェクトモデル (DOM) を利用し、id によって <code><![CDATA[div]]></code> 要素を見つけ <code><![CDATA[onclick]]></code> ハンドラ及び <code><![CDATA[onkeyup]]></code> ハンドラを追加する。<code><![CDATA[onkeyup]]></code> ハンドラは Enter キーが押下された際、アクションを実行する。<code><![CDATA[div]]></code> 要素を見つけて変更するには、<code><![CDATA[div]]></code> 要素が DOM の中に読み込まれた状態でなければならないことに注意する。これは、通常、<code><![CDATA[body]]></code> 要素の <code><![CDATA[onload]]></code> イベントでスクリプトを呼び出すことで達成される。イベントハンドラを追加するスクリプトはユーザエージェントが JavaScript をサポートし、かつ有効にしている場合にのみ実行される。</p>
          </description>
          <code><![CDATA[
 ...
@@ -42,7 +42,7 @@
    // リンクのhref属性が実行されないよう、関数からfalseを返す
    return false;
  }
- // これはエンターキーが押された際にアクションが実行される関数である。
+ // これは Enter キーが押された際にアクションが実行される関数である。
  function doSomethingOnEnter(event) {
    var key = 0;
    // window.event 又はイベントオブジェクトが使用されているかに応じて押されたキーを判定する。
@@ -51,7 +51,7 @@
    } else if (event) {
      key = event.keyCode;
    }
-   // エンターキーが押されたか？
+   // Enter キーが押されたか？
    if (key == 13) {
      return doSomething(event);
    } 
