@@ -14,7 +14,7 @@
 						達成基準 2.2.4 (割り込み)を理解する
 					</a></li></ul></li></ul><h2 id="F40-description">解説</h2><div class="textbody"><p><code>meta</code> <code>http-equiv</code> の {time-out}; url=... はしばしば、自動的に利用者をリダイレクトする目的で使用される。これが時間をおいて発生した場合、予期しない状況の変化によって利用者の邪魔をする可能性がある。</p><p>タイムアウトが 0 に設定されている場合には、<code>meta</code> 要素をリダイレクトのために利用することが容認される。なぜなら、リダイレクトが即時に行われるので、状況の変化として知覚できないからである。しかしながら、これを実行するためにはサーバーサイドの達成方法を用いることが望ましい。<a href="https://waic.jp/docs/WCAG-TECHS/SVR1" class="tech-ref">SVR1: クライアントサイドではなく、サーバサイドで自動リダイレクトを実装する</a> (SERVER)
 			を参照のこと。</p></div><h2 class="small-head" id="F40-examples">事例</h2><div class="failure"><h3 class="small-head" id="F40-failex1">
-					失敗例 1</h3><div class="example"><div class="textbody"><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、不適合である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+					失敗例 1</h3><div class="example"><div class="textbody"><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、失敗となる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
    &lt;head&gt;     
       &lt;title&gt;Do not use this!&lt;/title&gt;     
