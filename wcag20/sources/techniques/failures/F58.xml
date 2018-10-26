@@ -99,7 +99,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
       <expected-results>
          <ulist>
             <item>
-               <p>そのようなリダイレクトがみつかった場合、この失敗例の条件は適用され、コンテンツは達成基準に不合格となる。</p>
+               <p>そのようなリダイレクトがみつかった場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

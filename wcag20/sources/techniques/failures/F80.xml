@@ -53,7 +53,7 @@ h1 { font-size: 2em; }
       <expected-results>
          <ulist>
             <item>
-               <p>3．が偽である場合、失敗例の条件は適用され、コンテンツはこれらの達成基準に不合格となる。</p>
+               <p>3．が偽である場合、失敗例の条件は適用され、コンテンツはこれらの達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

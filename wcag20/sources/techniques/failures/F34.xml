@@ -75,7 +75,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2. が真である場合、この失敗例の条件は適用され、コンテンツはこれらの達成基準に不合格となる。</p>
+               <p>手順 2. が真である場合、この失敗例の条件は適用され、コンテンツはこれらの達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

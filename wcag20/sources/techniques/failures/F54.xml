@@ -38,7 +38,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>いずれかが見つかった場合、この失敗例の条件は適用され、コンテンツは達成基準に不合格となる。</p>
+               <p>いずれかが見つかった場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
          <!--<p>Test n.n will fail the test (<code>onMouseDown</code> is used and  keyboard-specific event handler is not used)</p>

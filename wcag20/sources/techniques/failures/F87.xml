@@ -86,7 +86,7 @@ q:after  { content: close-quote }]]></code>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 又は 3. が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準に不合格となる。</p>
+               <p>2. 又は 3. が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>
