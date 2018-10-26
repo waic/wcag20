@@ -23,7 +23,7 @@
   </description>
    <examples>
       <eg-group>
-      <head>ある文書を 3 つのファイル形式で提供する場合</head>
+      <head>ある文書を三つのファイル形式で提供する場合</head>
          <code role="xhtml"><![CDATA[<ul>
 <li>Annual Report 2005-2006
   <ul> 

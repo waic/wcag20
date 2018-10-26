@@ -23,7 +23,7 @@
   </description>
    <examples>
       <eg-group>
-      <description><p>この事例には、2 つの select 要素がある。最初の select 要素でアイテムが選択されたとき、二つめの select 要素の選択肢が適切に更新される。最初の select 要素には、大陸のリストがある。そして、二つめの select 要素には、選択された大陸に位置する国々の一部のリストがある。onchange イベントは、大陸の選択に連動している。大陸の選択が変わると、国の選択肢は、ドキュメントオブジェクトモデル (DOM) を通して JavaScript を用いて変更される。必要であるすべてのデータ、国と大陸のリスト、はウェブページの中に含まれている。</p>
+      <description><p>この事例には、二つの select 要素がある。最初の select 要素でアイテムが選択されたとき、二つめの select 要素の選択肢が適切に更新される。最初の select 要素には、大陸のリストがある。そして、二つめの select 要素には、選択された大陸に位置する国々の一部のリストがある。onchange イベントは、大陸の選択に連動している。大陸の選択が変わると、国の選択肢は、ドキュメントオブジェクトモデル (DOM) を通して JavaScript を用いて変更される。必要であるすべてのデータ、国と大陸のリスト、はウェブページの中に含まれている。</p>
 <p>以下のコードの概要:</p>
 <ulist><item><p>トリガーとなる select 要素の大陸ごとの国々のリストを含む countryLists 配列</p></item><item><p>大陸の select 要素の onchange イベントによって呼ばれる countryChange() 関数</p></item><item><p>ウェブページの本文の select 要素を作成する XHTML コード</p></item></ulist>
 </description>

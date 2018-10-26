@@ -16,7 +16,7 @@
    <examples>
       <eg-group role="failure">
        <head/>
-      <description><p>順番に従って、フォームのフィールドに入力している。3 つめのフィールドから 4 つめのフィールドに移動するとき、フォームが送信されてしまった。</p>
+      <description><p>順番に従って、フォームのフィールドに入力している。三つめのフィールドから四つめのフィールドに移動するとき、フォームが送信されてしまった。</p>
 </description>
     </eg-group>
    </examples>

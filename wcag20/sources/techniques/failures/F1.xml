@@ -15,7 +15,7 @@
    <examples>
       <eg-group role="failure">
       <description><p>次の例では、段組みのレイアウトを作成するために CSS が不適切に用いられている。また、テキストは、ブラウザの画面ではマークアップの順序とは異なる順序で視覚的に表示される。</p>
-<p>この例では、配置される各オブジェクトに対してクラスが定義されている。スタイルシートが適用されると、テキストは 2 つの段組みで表示される。まず、「menu1」クラスの要素 (Products) と「menu2」の要素 (Locations) は、カラムの見出しとして表示される。そして、「Telephones」「Computers」「Portable MP3 Players」は、Products の下に表示され、「Idaho」と「Wisconsin」は、Locations の下に表示される (Idaho と Wisconsin の順序は、ソースコードの順序とは異なっている)。</p>
+<p>この例では、配置される各オブジェクトに対してクラスが定義されている。スタイルシートが適用されると、テキストは二つの段組みで表示される。まず、「menu1」クラスの要素 (Products) と「menu2」の要素 (Locations) は、カラムの見出しとして表示される。そして、「Telephones」「Computers」「Portable MP3 Players」は、Products の下に表示され、「Idaho」と「Wisconsin」は、Locations の下に表示される (Idaho と Wisconsin の順序は、ソースコードの順序とは異なっている)。</p>
 <p>適切な構造要素が使われていないため、スタイルシートが適用されない状況では、全てのテキストがソースの順序に則って 1 列に提示され、「Products Locations Telephones Computers Portable MP3 Players Wisconsin Idaho」となってしまう。</p>
 <p>HTML のコンテンツは次の通り:</p>
 </description>

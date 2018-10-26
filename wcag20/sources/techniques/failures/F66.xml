@@ -14,7 +14,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <head>2 つの異なるページで相対的に異なる順序で一連のリンクを提示している XHTML メニュー</head>
+      <head>二つの異なるページで相対的に異なる順序で一連のリンクを提示している XHTML メニュー</head>
       <description><p>異なる順序でリンクを提示するナビゲーションメカニズムの例。</p>
 <p><emph role="bold">1 ページ目のメニュー</emph></p>
 </description>

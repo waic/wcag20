@@ -28,7 +28,7 @@
     </eg-group>
     <eg-group>
       <head>PHP で Http リファラを使う</head>
-      <description><p>次の例は、この達成方法が PHP でどのように使われるかを説明している。conforming.php と non-conforming.php という不適合なコンテンツへのアクセスが適合しているコンテンツからのみとなるようにするために連携する 2 つのファイルを含む。</p>
+      <description><p>次の例は、この達成方法が PHP でどのように使われるかを説明している。conforming.php と non-conforming.php という不適合なコンテンツへのアクセスが適合しているコンテンツからのみとなるようにするために連携する二つのファイルを含む。</p>
 <p>conforming.php:</p>
 </description>
          <code role="php"><![CDATA[

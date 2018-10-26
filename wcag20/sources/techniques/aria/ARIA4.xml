@@ -23,7 +23,7 @@
          <head>単純なツールバー</head>
          <description>
             <p><loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc> には、3 つのボタンを含むツールバーのデモがある。<el>div</el> 要素は "toolbar" のロールを持ち、<el>img</el> 要素は "button" のロールを持つ:</p>
+                    href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices</loc> には、三つのボタンを含むツールバーのデモがある。<el>div</el> 要素は "toolbar" のロールを持ち、<el>img</el> 要素は "button" のロールを持つ:</p>
             <codeblock xml:space="preserve"><![CDATA[
     <div role="toolbar"
       tabindex="0" 
