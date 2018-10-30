@@ -24,6 +24,10 @@
    <description>
     <p>この達成方法の目的は、アプレットのラベルを提供する <att>alt</att> 属性を用いること及び <el>applet</el> 要素のボディにテキストによる代替を提供することによって、アプレットに対するテキストによる代替を提供することである。この達成方法では、ユーザエージェントごとに、<att>alt</att> 属性及び <el>applet</el> 要素のボディのサポート状況が異なるため、両方のメカニズムを必要としている。</p>
     <a11ysuprorted rating="pass" exnumber="0"/>
+    <trnote>
+      <p><code>applet</code> 要素は、多くのモダンブラウザーでは廃止された機能であり、仕様上も現在は廃止されている。詳細については、<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/applet">MDN の該当ページ</a>を参照されたい。また、Oracle 社の <a href="https://www.oracle.com/technetwork/jp/java/eol-135779-ja.html">Oracle Java SE サポート・ロードマップ</a>によれば、Java Plugin のサポートは 2019 年 3 月までと告知されている。したがってWAIC は、Java アプレットの使用を推奨しない。</p>
+      
+    </trnote>
   </description>
    <examples>
       <eg-group>
