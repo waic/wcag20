@@ -67,7 +67,9 @@ q:after  { content: close-quote }]]></code>
                </p>
             </item>
          </ulist>
-
+       <trnote>
+         <p><a href="https://www.w3.org/TR/selectors-3/#gen-content">Selectors Level 3 §7.4. The ::before and ::after pseudo-elements</a> も参照のこと。この仕様の記述が、「CSS 2.1: Generated content, automatic numbering, and lists」に取って代わることに注意されたい。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
