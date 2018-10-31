@@ -121,6 +121,9 @@
                </p>
             </item>
          </ulist>
+         <trnote>
+           <p>「WAI-ARIA Primer, Provision of the keyboard or input focus」が挙げられているが、<a href="https://www.w3.org/TR/wai-aria-primer/">WAI-ARIA 1.0 Primer</a> は作成が破棄されている。代わりに、<a href="https://www.w3.org/TR/2018/NOTE-wai-aria-practices-1.1-20180726/#keyboard">WAI-ARIA Authoring Practices 1.1 §5. Developing a Keyboard Interface</a> を参照できる。</p>
+         </trnote>
       </see-also>
    </resources>
    <related-techniques>
