@@ -121,6 +121,9 @@
                </p>
             </item>
          </ulist>
+         <trnote>
+           <p>MSDN のページ「Internet Explorer, HTML and DHTML Reference, tabIndex Property」が MDN にリダイレクトされているが、これは MSDN の文書が MDN に統合されたためである。このリダイレクト処理の詳細については、<a href="https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/">Microsoft Edge Dev Blog</a> 及び<a href="https://news.mynavi.jp/article/20171019-a070/">マイナビニュース</a>を参照されたい。</p>
+         </trnote>
       </see-also>
    </resources>
    <related-techniques>
