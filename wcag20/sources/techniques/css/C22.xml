@@ -33,13 +33,13 @@
     <p>次の CSS のプロパティは、テキストのスタイルを指定し、画像のテキストを使う必要性を回避するのに有効である:</p>
     <ulist>
       <item>
-        <p><code><![CDATA[font-family]]></code> プロパティをを使って、文字の外観を等幅フォントで表示する。</p>
+        <p><code><![CDATA[font-family]]></code> プロパティを使って、文字の外観を等幅フォントで表示する。</p>
       </item>
       <item>
-        <p><code><![CDATA[text-align]]></code> プロパティをを使って、表示域の右側にテキストを表示する。</p>
+        <p><code><![CDATA[text-align]]></code> プロパティを使って、表示域の右側にテキストを表示する。</p>
       </item>
       <item>
-        <p><code><![CDATA[font-size]]></code> プロパティをを使って、テキストをより大きいサイズで表示する。</p>
+        <p><code><![CDATA[font-size]]></code> プロパティを使って、テキストをより大きいサイズで表示する。</p>
       </item>
       <item>
         <p><code><![CDATA[font-style]]></code> プロパティを使って、テキストをイタリック体で表示する。</p>
