@@ -712,7 +712,7 @@
 			</ul>
 			<!-- This if tests for techniques with a relationship that is cosufficient, which indicates that it must be used along with another technique -->
 			<xsl:if test="@relationship='cosufficient'">
-				<div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="{$gl-src//publoc/loc[@href]}#{$id}">達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template></a> に適合する他の達成方法と組み合わせなければならない。詳細については、<xsl:text> </xsl:text><a href="{$guide-src//publoc/loc[@href]}{$filename}{fragment}">達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> を理解する</a>を参照すること。</p></div>
+				<div class="note"><p class="prefix"><em>注記:</em> この達成方法は、<a href="{$gl-src//publoc/loc[@href]}#{$id}">達成基準<xsl:text> </xsl:text><xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template></a> を満たす他の達成方法と組み合わせなければならない。詳細については、<xsl:text> </xsl:text><a href="{$guide-src//publoc/loc[@href]}{$filename}{fragment}">達成基準 <xsl:call-template name="sc-number"><xsl:with-param name="id" select="$id"/></xsl:call-template> を理解する</a>を参照すること。</p></div>
 			</xsl:if>
 		</li>
 		
