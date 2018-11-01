@@ -38,13 +38,13 @@
       <procedure>
       <olist>
         <item><p>ウェブページをロードする。</p></item>
-        <item><p>自動的に再生される全ての音が 3 秒又はそれより早く停止される。</p></item>
+        <item><p>自動的に再生される全ての音が 3 秒以下で停止することを確認する。</p></item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

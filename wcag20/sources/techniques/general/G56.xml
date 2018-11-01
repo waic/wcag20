@@ -63,26 +63,26 @@
       <procedure>
       <olist>
         <item>
-          <p>前景音声が流れている間で、背景音声が大きい部分を特定する。</p>
+          <p>前景音声が流れている間で、背景コンテンツの大きな値の位置を見つける。</p>
         </item>
         <item>
-          <p>デシベル (A 特性) 音圧レベルの値を計測する。</p>
+          <p>dB(A) SPL で音量を計測する。</p>
         </item>
         <item>
-          <p>前景音声のデシベル (A 特性) 音圧レベルの値を計測する。</p>
+          <p>dB(A) SPL で前景音声の音量を計測する。</p>
         </item>
         <item>
-          <p>前景音声の値から背景音声の値を引き算する。</p>
+          <p>値を引き算する。</p>
         </item>
         <item>
-          <p>差が 20 デシベル以上ある。</p>
+          <p>差が 20 デシベル以上であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>5. を満たしている。</p>
+               <p>5. が真である。</p>
             </item>
          </ulist>
       </expected-results>

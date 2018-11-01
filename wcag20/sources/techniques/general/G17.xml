@@ -83,24 +83,24 @@
 
 <ulist><item><p>色の相対輝度 L = 0.2126 * <emph role="bold">R</emph> + 0.7152 * <emph role="bold">G</emph> + 0.0722 * <emph role="bold">B</emph> と定義されている。この場合の <emph role="bold">R</emph>, <emph role="bold">G</emph> 及び <emph role="bold">B</emph> は:</p>
 
-<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される:</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字では文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
+<ulist><item><p>R<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">R</emph> = R<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">R</emph> = ((R<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>G<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">G</emph> = G<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">G</emph> = ((G<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item><item><p>B<sub>sRGB</sub> &lt;= 0.03928 の場合: <emph role="bold">B</emph> = B<sub>sRGB</sub>/12.92、それ以外の場合: <emph role="bold">B</emph> = ((B<sub>sRGB</sub>+0.055)/1.055) ^ 2.4</p></item></ulist><note><p>また、R<sub>sRGB</sub>, G<sub>sRGB</sub>, 及び B<sub>sRGB</sub> は以下のように定義される:</p></note><ulist><item><p>R<sub>sRGB</sub> = R<sub>8bit</sub>/255</p></item><item><p>G<sub>sRGB</sub> = G<sub>8bit</sub>/255</p></item><item><p>B<sub>sRGB</sub> = B<sub>8bit</sub>/255</p></item></ulist><note><p>"^"記号は指数演算子である。</p></note></item></ulist><note><p>エイリアス文字の場合は、文字の端から 2 ピクセルの部分の相対輝度の値を使用する。</p>
 
 </note></item>
         <item>
-          <p> 同じ公式を用いて、文字のすぐ隣の背景のピクセルの相対輝度を測る。 </p>
+          <p>同じ公式を用いて、文字のすぐ隣の背景のピクセルの相対輝度を測る。</p>
         </item>
-        <item><p> 次の公式を用いて、コントラスト比を算出する。</p>
-<ulist><item><p>(L1 + 0.05) / (L2 + 0.05)</p>
-<ulist><item><p>L1 は前景または背景色の明るい方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。及び、 </p></item><item><p>L2 は前景または背景色の暗い方の<loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">相対輝度</loc>である。 </p></item></ulist></item></ulist></item>
+        <item><p>次の公式を用いて、コントラスト比を算出する。</p>
+<ulist><item><p>(L1 + 0.05) / (L2 + 0.05) ここで、</p>
+<ulist><item><p>L1 は前景又は背景色の明るい方の<loc href="https://waic.jp/docs/WCAG20/Overview.html#relativeluminancedef">相対輝度</loc>である。及び、</p></item><item><p>L2 は前景又は背景色の暗い方の<loc href="https://waic.jp/docs/WCAG20/Overview.html#relativeluminancedef">相対輝度</loc>である。</p></item></ulist></item></ulist></item>
         <item>
-          <p> コントラスト比が 7:1 と同じ、又はそれ以上である。</p>
+          <p>コントラスト比が 7:1 以上であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>4. を満たしている。</p>
+               <p>4. が真である。</p>
             </item>
          </ulist>
       </expected-results>

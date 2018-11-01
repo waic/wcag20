@@ -47,14 +47,14 @@
       <procedure>
       <olist>
         <item>
-          <p>制限時間付きのインタラクションがある (クライアントサイド及び／又はサーバーサイド)。</p>
+          <p>制限時間付きのインタラクションがあるかどうかを判断する (クライアントサイド及び／又はサーバーサイド)。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしていない。</p>
+               <p>1. が偽である。</p>
             </item>
          </ulist>
       </expected-results>

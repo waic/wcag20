@@ -33,14 +33,14 @@
           <p>コンテンツの中から全てのフォームを見つけ出す。 </p>
         </item>
         <item>
-          <p>それぞれのフォームに送信ボタンがある。</p>
+          <p>それぞれのフォームに送信ボタンがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている。</p>
+               <p>2.が真である。</p>
             </item>
          </ulist>
       </expected-results>

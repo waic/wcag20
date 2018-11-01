@@ -52,14 +52,14 @@
       <p>情報を伝えるのに色の違いが用いられている各項目に対して:</p>
       <olist>
         <item>
-          <p>伝えられている情報が、テキストでも示されている。</p>
+          <p>伝えられている情報がテキストでも利用可能であり、そのテキストが条件付きコンテンツでないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.が真である。</p>
             </item>
          </ulist>
       </expected-results>

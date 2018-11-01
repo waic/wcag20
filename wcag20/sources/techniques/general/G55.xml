@@ -61,20 +61,20 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>定義すべき単語、句、又は略語それぞれについて:</p>
+      <p>定義される各単語、句、又は略語について:</p>
       <olist>
         <item>
-          <p>少なくともそのアイテムが初めて現れた箇所がリンクである。</p>
+          <p>少なくともそのアイテムが最初のインスタンスがリンクであることを確認する。</p>
         </item>
         <item>
-          <p>リンクがそのアイテムの定義にリンクしている。</p>
+          <p>各リンクがそのアイテムの定義にナビゲートすることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.及び 2.を満たしている。</p>
+               <p>1.及び 2.が真である。</p>
             </item>
          </ulist>
       </expected-results>

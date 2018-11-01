@@ -50,17 +50,17 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>コンテンツが一般閃光閾値及び／又は赤色閃光閾値に違反していない。</p>
+      <p>コンテンツが一般閃光閾値及び／又は赤色閃光閾値に違反していないかどうかを確認する。</p>
       <olist>
         <item>
-          <p>ツールを使って、一般閃光閾値や赤色閃光閾値を超えていないことを確認する。</p>
+          <p>ツールを使って、一般閃光閾値も赤色閃光閾値も超えていないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>
