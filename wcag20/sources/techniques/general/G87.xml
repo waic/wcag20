@@ -111,14 +111,14 @@
           <p>同期したメディアのコンテンツを見る。</p>
         </item>
         <item>
-          <p>(発話内容及び音の伝えている情報全ての) キャプションが表示されている。</p>
+          <p>(発話内容及び音の伝えている情報全ての) キャプションが表示されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3. を満たしている。</p>
+               <p>3. が真である。</p>
             </item>
          </ulist>
       </expected-results>

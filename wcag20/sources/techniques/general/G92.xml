@@ -55,14 +55,14 @@
           <p>長い説明を表示する。</p>
         </item>
         <item>
-          <p>長い説明が非テキストコンテンツによって伝えられた情報と同じ情報を伝えている。</p>
+          <p>長い説明が非テキストコンテンツによって伝えられた情報と同じ情報を伝えていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3.を満たしている。</p>
+               <p>3.が真である。</p>
             </item>
          </ulist>
       </expected-results>

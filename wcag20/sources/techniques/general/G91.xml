@@ -32,14 +32,14 @@
       <p>この達成方法を用いるコンテンツ内の各リンクに対して:</p>
       <olist>
         <item>
-          <p>リンクテキストがそのリンクの目的を説明している。</p>
+          <p>リンクテキストがそのリンクの目的を説明していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>上記が真である。</p>
             </item>
          </ulist>
       </expected-results>

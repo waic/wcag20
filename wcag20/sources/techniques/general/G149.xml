@@ -42,14 +42,14 @@
           <p>そのコントロールにフォーカスを設定する。</p>
         </item>
         <item>
-          <p>何らかの方法でユーザエージェントがコントロールをハイライトしている。</p>
+          <p>何らかの方法でユーザエージェントがコントロールをハイライトしているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

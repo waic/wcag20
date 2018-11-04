@@ -47,14 +47,14 @@
       <procedure>
          <olist>
             <item>
-               <p>非テキストコンテンツの簡潔な説明を提供している簡単なテキストによる代替がある。</p>
+               <p>非テキストコンテンツの簡潔な説明を提供している簡単なテキストによる代替があることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.が真である。</p>
             </item>
          </ulist>
       </expected-results>

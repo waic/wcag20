@@ -57,17 +57,17 @@
       <procedure>
       <olist>
         <item>
-          <p>ドキュメントのコードを調べる。</p>
+          <p>ドキュメントのエンコーディングを調べる。</p>
         </item>
         <item>
-          <p>構造的な情報と機能性が明白に提供され、表象的な情報から論理的に分離されている。</p>
+          <p>構造情報と機能が明示的に提供され、表象的な情報から論理的に分離されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

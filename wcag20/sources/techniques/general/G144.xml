@@ -27,17 +27,17 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページにある CAPTCHA に対して:</p>
+      <p>ウェブページにある各 CAPTCHA に対して:</p>
       <olist>
         <item>
-          <p>ウェブページに、同じ目的を果たす、異なるモダリティを用いた CAPTCHA がもう一つ提供されている。</p>
+          <p>ウェブページに、同じ目的を果たす、異なるモダリティを用いたもう一つの CAPTCHA が含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>

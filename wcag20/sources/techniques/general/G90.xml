@@ -37,14 +37,14 @@
       <procedure>
       <olist>
         <item>
-          <p>すべての機能がキーボードだけを使ってアクセスできる。</p>
+          <p>すべての機能がキーボードだけを使ってアクセスできることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.が真である。</p>
             </item>
          </ulist>
       </expected-results>

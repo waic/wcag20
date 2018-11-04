@@ -37,23 +37,23 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>コンテンツ中のインタフェースコンポーネントに対して:</p>
+      <p>コンテンツ中の各インタフェースコンポーネントに対して:</p>
       <olist>
         <item>
           <p>インタフェースコンポーネントの目的を特定する。</p>
         </item>
         <item>
-          <p>ラベルが提供されている。</p>
+          <p>必要なラベルが存在することを確認する。</p>
         </item>
         <item>
-          <p>ラベルはコンポーネントの目的を明確に示している。</p>
+          <p>各ラベルがコンポーネントの目的を明確に示していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. 及び 3. が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -30,21 +30,20 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>読みを必要とする単語それぞれに:
-							</p>
+      <p>読みを必要とする単語それぞれに:</p>
       <olist>
         <item>
           <p>ウェブページのなかで、その単語の最初の使用箇所を探す。</p>
         </item>
         <item>
-          <p>最初の使用箇所の直後にその単語の読みがある。</p>
+          <p>最初の使用箇所の直後にその単語の読みがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている。</p>
+               <p>2.が真である。</p>
             </item>
          </ulist>
       </expected-results>

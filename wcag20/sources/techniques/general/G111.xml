@@ -36,17 +36,17 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページ上にある情報を伝達するために色の違いを用いている画像に対して:</p>
+      <p>情報を伝達するために色の違いを用いているウェブページ内の各画像に対して:</p>
       <olist>
         <item>
-          <p>色を用いて伝達されている情報の全てに、色に依存しないパターンも併用している。</p>
+          <p>色を用いて伝達されている情報の全てに、色に依存しないパターンも併用している伝達されることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.が真である。</p>
             </item>
          </ulist>
       </expected-results>

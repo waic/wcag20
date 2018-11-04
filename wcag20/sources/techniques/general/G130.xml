@@ -36,17 +36,17 @@
       <procedure>
       <olist>
         <item>
-          <p>ウェブページに見出しがある。</p>
+          <p>ウェブページに見出しが含まれているかどうかを判断する。</p>
         </item>
         <item>
-          <p>各見出しが、ウェブページ中の対応するセクションを表す内容になっている。</p>
+          <p>各見出しがコンテンツのセクションを特定することを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

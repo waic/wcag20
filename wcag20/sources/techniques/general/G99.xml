@@ -30,14 +30,14 @@
           <p>コンテンツを削除して、復元してみる。</p>
         </item>
         <item>
-          <p>削除された情報が復元されている。</p>
+          <p>削除された情報が復元できるかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3. を満たしている。</p>
+               <p>3. が真である。</p>
             </item>
          </ulist>
       </expected-results>
