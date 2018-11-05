@@ -40,14 +40,14 @@ Lorem ipsum dolor sit amet, ...
           <p>一般的なブラウザでページを開く。</p>
         </item>
         <item>
-          <p>コンテンツが均等割り付け (左と右マージンの両方に揃える) になっていない。</p>
+          <p>コンテンツが均等割り付け (左と右マージンの両方に揃える) になっていないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている。</p>
+               <p>2.が真である。</p>
             </item>
          </ulist>
       </expected-results>

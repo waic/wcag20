@@ -32,17 +32,17 @@
           <p>両端揃えのページを開く。</p>
         </item>
         <item>
-          <p>両端揃えを解除する機能がある。</p>
+          <p>両端揃えを解除する機能があることを確認する。</p>
         </item>
         <item>
-          <p>その機能により、両端揃えが解除できる。 </p>
+          <p>その機能により、両端揃えが解除することを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. 及び 3. が真である。</p>
             </item>
          </ulist>
       </expected-results>
