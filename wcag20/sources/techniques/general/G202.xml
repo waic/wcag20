@@ -38,17 +38,17 @@
       <procedure>
       <olist>
         <item>
-          <p>ウェブコンテンツの機能すべてを特定する。</p>
+          <p>ウェブコンテンツの全ての機能を特定する。</p>
         </item>
         <item>
-          <p>キーボードのみ、またはキーボードインタフェースのみで全ての機能にアクセスが可能である。</p>
+          <p>キーボードのみ、又はキーボードインタフェースのみで全ての機能にアクセスが可能であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -42,7 +42,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>上記全てを満たしている。</p>
+               <p>上記全てが真である。</p>
             </item>
          </ulist>
       </expected-results>

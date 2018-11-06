@@ -68,20 +68,20 @@
           <p>テキストにおいて、情報を伝えるために色だけが使われているすべての箇所を見つける。</p>
         </item>
         <item>
-          <p>テキストの色の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="relativeluminancedef" linktype="glossary">相対輝度</loc>が、周囲のテキストの相対輝度と少なくとも 3:1 のコントラスト比の違いがある。</p>
+          <p>テキストの色の<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="relativeluminancedef" linktype="glossary">相対輝度</loc>が、周囲のテキストの相対輝度と少なくとも 3:1 のコントラスト比の違いがあることを確認する。</p>
         </item>
         <item>
-          <p>リンクにカーソルを合わせる (マウスオーバーする) と視覚的に強調 (アンダーラインやフォントの変更など) される。</p>
+          <p>リンクへのポインティング (マウスオーバー) が、視覚的に強調 (アンダーラインやフォントの変更など) を引き起こすことを確認する。</p>
         </item>
         <item>
-          <p>キーボードフォーカスをリンクに合わせると視覚的に強調 (アンダーラインやフォントの変更など) される。 </p>
+          <p>キーボードフォーカスをリンクに移動すると、視覚的に強調 (アンダーラインやフォントの変更など) を引き起こすことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.、3.、及び 4. を満たしている。</p>
+               <p>2.、3.、及び 4. が真である。</p>
             </item>
          </ulist>
       </expected-results>

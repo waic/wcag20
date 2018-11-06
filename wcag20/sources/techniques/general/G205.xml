@@ -37,14 +37,14 @@
          <p>色の差で情報を表示しているコンテンツの場合:</p>
          <olist>
             <item>
-               <p>同じ情報がテキスト又は文字による手がかりでも認識できる。</p>
+               <p>同じ情報がテキスト又は文字による手がかりを通して利用可能であることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>

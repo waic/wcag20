@@ -34,17 +34,17 @@
       <procedure>
       <olist>
         <item>
-          <p>ウェブページにアシスタント機能がある。</p>
+          <p>ウェブページにアシスタント機能があることを確認する。</p>
         </item>
         <item>
-          <p>アシスタントはそのページの内容の理解を手助けする情報を提供している。</p>
+          <p>アシスタントはそのページの内容の理解を手助けする情報を提供していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記の全てを満たしている。</p>
+               <p>上記の全てが真である。</p>
             </item>
          </ulist>
       </expected-results>
