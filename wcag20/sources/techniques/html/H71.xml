@@ -125,17 +125,17 @@
        <p>関連するコントロールのグループにおいて、各コントロールの個々のラベルが十分な記述を提供しておらず、追加でグループレベルの記述が必要な場合</p>
       <olist>
         <item>
-          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、一つの <el>fieldset</el> 要素内に含められている。</p>
+          <p>論理的に関連している <el>input</el> 要素又は <el>select</el> 要素のグループが、<el>fieldset</el> 要素内に含まれていることを確認する。</p>
         </item>
         <item>
-          <p>各 <el>fieldset</el> 要素には、そのグループの説明を含めた <el>legend</el> 要素が指定されている。</p>
+          <p>各 <el>fieldset</el> 要素には、そのグループの説明を含む <el>legend</el> 要素が指定されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

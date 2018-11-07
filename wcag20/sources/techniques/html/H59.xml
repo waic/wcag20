@@ -97,17 +97,17 @@
       <p>一連のまたは集合的なウェブページにおける、あるウェブページについて:</p>
       <olist>
         <item>
-          <p>ナビゲーションに関する全ての <el>link</el> 要素が、その文書の <el>head</el> 要素セクションに含まれている</p>
+          <p>ナビゲーションに関する全ての <el>link</el> 要素が、その文書の <el>head</el> 要素セクションに含まれている。</p>
         </item>
-        <item><p>その文書の <el>head</el> 要素セクション内のナビゲーションに関する各 <el>link</el> 要素に、少なくとも以下が指定されている:</p>
+        <item><p>その文書の <el>head</el> 要素セクション内のナビゲーションに関する各 <el>link</el> 要素に、少なくとも以下が指定されていることを確認する:</p>
                 
-                        <olist><item><p>リンクタイプを特定するための <att>rel</att> 属性</p></item><item><p>該当するリソースの場所を示すための妥当な <att>href</att> 属性</p></item></olist></item>
+                        <olist><item><p>リンクタイプを特定するための <att>rel</att> 属性</p></item><item><p>適切なリソースをもつけるための妥当な <att>href</att> 属性</p></item></olist></item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

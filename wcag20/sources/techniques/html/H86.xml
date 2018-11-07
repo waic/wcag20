@@ -121,17 +121,17 @@ LLLLLLLLLLLLLLLL_  __L       _L  LLLLLLLL      LLL_ LLLLLLLLLLLLLLLLLLLLL
           <p>そのページを一般的なブラウザで開く。</p>
         </item>
         <item>
-          <p>ASCII アート、顔文字、及び／又はリート語がコンテンツに含まれている。</p>
+          <p>ASCII アート、顔文字、及び／又はリート語がコンテンツに含まれていることを確認する。</p>
         </item>
         <item>
-          <p>全ての ASCII アート、顔文字、及び／又はリート語のすぐ前か後に、テキストによる代替がある。</p>
+          <p>全ての ASCII アート、顔文字、及び／又はリート語の直前又は直後に、テキストによる代替があることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>3. を満たしている。</p>
+          <p>3. が真である。</p>
         </item>
       </ulist>
       </expected-results>

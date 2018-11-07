@@ -50,14 +50,14 @@
       <procedure>
       <olist>
         <item>
-          <p>同一の要素で 2 回以上使われている属性がない。</p>
+          <p>同一の要素で 2 回以上使われている属性がないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. を満たしている。</p>
+          <p>1. が真である。</p>
         </item>
       </ulist>
       </expected-results>

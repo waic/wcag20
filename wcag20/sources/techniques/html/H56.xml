@@ -53,17 +53,17 @@ dir="rtl"><span dir="rtl">פעילות הבינאום, W3C</span></span>" in Heb
           <p>文書内のテキストの表記方向を調べる。</p>
         </item>
         <item>
-          <p>テキストの表記方向が右から左であれば、先祖要素に <att>dir</att> 属性が指定され、値に「<att>rtl</att>」が指定されている。</p>
+          <p>テキストの表記方向が右から左である場合、属性の値が "<att>rtl</att>" である、<att>dir</att> 属性を持つ先祖要素を確認する。</p>
         </item>
         <item>
-          <p>テキストの表記方向が左から右であれば、先祖要素に <att>dir</att> 属性が指定されていない、又は先祖要素に <att>dir</att> 属性が指定され、値に「<code>ltr</code>」が指定されている。</p>
+          <p>テキストの表記方向が左から右である場合、<att>dir</att> 属性を持つ先祖要素がない、又は属性の値が "<code>ltr</code>" である、<att>dir</att> 属性を持つ先祖要素がないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. と 3. を満たしている。</p>
+          <p>全てのテキストに対して 2. 及び 3. が真である。</p>
         </item>
       </ulist>
       </expected-results>

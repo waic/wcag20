@@ -84,17 +84,17 @@
      <procedure>
       <olist>
         <item>
-          <p>HTML 又は XHTML のソースコードにある <el>frame</el> 要素と <el>iframe</el> 要素のそれぞれに、<att>title</att> 属性が指定されている。</p>
+          <p>HTML 又は XHTML のソースコードにある <el>frame</el> 要素及び <el>iframe</el> 要素のそれぞれに、<att>title</att> 属性が存在するかどうかを確認する。</p>
         </item>
         <item>
-          <p><att>title</att> 属性の値として、そのフレームを特定できるテキストがある。</p>
+          <p><att>title</att> 属性の値として、そのフレームを特定できるテキストがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. が真である。</p>
         </item>
       </ulist>
       </expected-results>

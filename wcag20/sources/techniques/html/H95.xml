@@ -77,17 +77,17 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>ビデオを再生するための各 video 要素において:</p>
+         <p>動画を再生するために用いられる各 video 要素において:</p>
          <olist>
             <item>
-               <p>ビデオが言語に応じた <att>kind</att> キャプションの <el>track</el> 要素を含むことを確認する。</p>
+               <p>動画の言語で <att>kind</att> キャプションの <el>track</el> 要素を含むことを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記 1. を満たしている。</p>
+               <p>上記 1. が真である。</p>
             </item>
          </ulist>
       </expected-results>

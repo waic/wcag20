@@ -253,14 +253,14 @@
           <p>HTML のソースコードを調べる。</p>
         </item>
         <item>
-          <p>リンク及びフォーム要素に対して、上記の表で示されているように、名前 (name)、値 (value)、状態 (state) が指定されている。</p>
+          <p>リンク及びフォーム要素に対して、上記の表で示されているように、名前 (name)、値 (value)、状態 (state) が指定されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記 2. を満たしている。</p>
+          <p>上記 2. が真である。</p>
         </item>
       </ulist>
       </expected-results>

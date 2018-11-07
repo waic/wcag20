@@ -88,17 +88,17 @@
           <p>そのリンクが含まれる <el>ul</el> 要素又は <el>ol</el> 要素を見つける。</p>
         </item>
         <item>
-          <p>そのリスト要素 (<el>ul</el> 要素又は <el>ol</el> 要素) が、<el>li</el> 要素の子孫要素である。</p>
+          <p>そのリスト要素 (<el>ul</el> 、<el>ol</el>) が、<el>li</el> 要素の子孫要素であることを確認する。</p>
         </item>
         <item>
-          <p>そのリンクテキストと親のリスト項目を組み合わせると、リンクの目的が説明されている。</p>
+          <p>その li 要素のテキストとリンクテキストを組み合わせると、リンクの目的が説明されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
      <expected-results>
       <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

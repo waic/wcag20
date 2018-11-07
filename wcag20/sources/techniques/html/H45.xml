@@ -58,13 +58,13 @@
       <procedure>
       <olist>
         <item>
-          <p><att>longdesc</att> 属性を指定した <el>img</el> 要素がある。</p>
+          <p><att>longdesc</att> 属性を指定した <el>img</el> 要素があることを確認する。</p>
         </item>
         <item>
-          <p><att>longdesc</att> 属性の値が、存在するリソースの有効な URI である。</p>
+          <p><att>longdesc</att> 属性の値が、存在するリソースの有効な URI であることを確認する。</p>
         </item>
         <item>
-          <p>URI で指定されたコンテンツには、関連付けられたオリジナルの非テキストコンテンツの詳しい説明が含まれている。</p>
+          <p>その URI で指定されたコンテンツには、関連付けられたオリジナルの非テキストコンテンツの詳しい説明が含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
@@ -72,7 +72,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1. から 3. を全て満たしている。</p>
+          <p>1. から 3. の全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

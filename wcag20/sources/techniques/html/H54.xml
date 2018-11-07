@@ -46,14 +46,14 @@ images representing text .</p>]]></code>
           <p>テキストの中で、インラインで定義されている単語、つまり単語の近くの文章に定義が出現するものを全て特定する。</p>
         </item>
         <item>
-          <p>インラインで定義されているそれぞれの単語が、<el>dfn</el> 要素に含まれている。</p>
+          <p>インラインで定義されているそれぞれの単語が、<el>dfn</el> 要素に含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. を満たしている。</p>
+          <p>2. が真である。</p>
         </item>
       </ulist>
       </expected-results>

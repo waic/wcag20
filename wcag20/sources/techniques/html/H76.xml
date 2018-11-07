@@ -49,12 +49,12 @@
           <p>ドキュメント内の <el>meta</el> 要素を全て見つける。</p>
         </item>
         <item>
-          <p>各 <el>meta</el> 要素について、値が「refresh」(大文字と小文字の区別なし) の <att>http-equiv</att> 属性、及び <att>content</att> 属性で 0 より大きい数字、その後に続いて <code>;'URL=anyURL'</code> (anyURL は、現在のページから切替わる URI を表す) という値が含まれている。</p>
+          <p>各 <el>meta</el> 要素について、値が "<code>refresh</code>" (大文字と小文字の区別なし) の <att>http-equiv</att> 属性、及び <att>content</att> 属性で 0 より大きい数字、その後に続いて <code>;'URL=anyURL'</code> (anyURL は、現在のページから置き換えるべき URI を表す) という値が含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
-         <p>2. を満たしていない。</p>
+         <p>2. が偽である。</p>
       </expected-results>
    </tests>
 </technique>

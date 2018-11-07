@@ -130,20 +130,20 @@
       <procedure>
       <olist>
         <item>
-          <p>文書に <el>html</el> 要素がある。</p>
+          <p>文書の <el>html</el> 要素を調べる。</p>
         </item>
         <item>
-          <p><el>html</el> 要素に <att>lang</att> 属性及び／又は <att>xml:lang</att> 属性が指定してある。</p>
+          <p><el>html</el> 要素に <att>lang</att> 属性及び／又は <att>xml:lang</att> 属性があることを確認する。</p>
         </item>
         <item>
-          <p><att>lang</att> 属性及び／又は <att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又は後継仕様に準拠しており、そのウェブページの主言語を反映している。</p>
+          <p><att>lang</att> 属性及び／又は <att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又はその後継仕様に準拠しており、そのウェブページの主言語を反映していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

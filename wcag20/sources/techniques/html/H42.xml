@@ -119,7 +119,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. が真である。</p>
         </item>
       </ulist>
       </expected-results>

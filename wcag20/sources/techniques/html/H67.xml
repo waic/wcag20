@@ -28,10 +28,10 @@
   <related-techniques/>
    <tests>
       <procedure>
-      <p>無視されるべき各画像に対して、</p>
+      <p>無視すべき各画像に対して、</p>
       <olist>
         <item>
-          <p><att>title</att> 属性がない又は空である。</p>
+          <p><att>title</att> 属性がない又は空のいずれかであることを確認する。</p>
         </item>
         <item>
           <p><att>alt</att> 属性が存在し、空であることを確認する。</p>
@@ -41,7 +41,7 @@
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. が真である。</p>
         </item>
       </ulist>
       </expected-results>

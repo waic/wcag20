@@ -84,14 +84,14 @@
       <procedure>
       <olist>
         <item>
-          <p><el>object</el> 要素のボディに、そのオブジェクトのテキストによる代替がある</p>
+          <p><el>object</el> 要素のボディに、そのオブジェクトのテキストによる代替があることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. を満たしている</p>
+          <p>1. が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -61,14 +61,14 @@
           <p><el>a</el> 要素に含まれるすべての <el>img</el> 要素の <att>alt</att> 属性値が空に設定されていることを確認する。</p>
         </item>
         <item>
-          <p><el>a</el> 要素に空の <att>alt</att> 属性値またはリンクテキストを補足し画像を説明する値を持つ <el>img</el> 要素が含まれていることを確認する</p>
+          <p><el>a</el> 要素に空の <att>alt</att> 属性値又はリンクテキストを補足し画像を説明する値のいずれかを持つ <el>img</el> 要素が含まれていることを確認する</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
       <ulist>
         <item>
-          <p>上記の全てを満たしている。</p>
+          <p>上記の全てが真である。</p>
         </item>
       </ulist>
     </expected-results>

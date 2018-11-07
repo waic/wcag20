@@ -101,20 +101,20 @@
       <p>各データテーブルについて:</p>
       <olist>
         <item>
-          <p><el>th</el> 要素全てに、<att>scope</att> 属性が指定されている。</p>
+          <p><el>th</el> 要素全てに、<att>scope</att> 属性があることを確認する。</p>
         </item>
         <item>
-          <p>他の要素の見出しとしての役割を果たす全ての <el>td</el> 要素に、<att>scope</att> 属性が指定されている。</p>
+          <p>他の要素の見出しとしての役割を果たす全ての <el>td</el> 要素に、<att>scope</att> 属性があることを確認する。</p>
         </item>
         <item>
-          <p>全ての <att>scope</att> 属性に、値として <code>row</code>、<code>col</code>、<code>rowgroup</code>、<code>colgroup</code> が指定されている。</p>
+          <p>全ての <att>scope</att> 属性に、値として <code>row</code>、<code>col</code>、<code>rowgroup</code>、又は <code>colgroup</code> があることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

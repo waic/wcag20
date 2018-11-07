@@ -110,18 +110,17 @@ Woodend Music Festival Program
           <p><el>img</el> 要素だけが <el>a</el> 要素のコンテンツである場合、<el>img</el> 要素のテキストによる代替がリンクの目的を説明している。</p>
         </item>
         <item>
-          <p><el>a</el> 要素が一つ又はそれ以上の <el>img</el> 要素を含み、<el>img</el> 要素のテキストによる代替が
-空の場合、リンクのテキストがリンクの目的を説明している。</p>
+          <p><el>a</el> 要素が一つ以上の <el>img</el> 要素を含み、かつ <el>img</el> 要素のテキストによる代替が空の場合、リンクのテキストがリンクの目的を説明していることを確認する。</p>
         </item>
         <item>
-          <p><el>a</el> 要素がテキストのみを含んでいる場合、テキストがリンクの目的を説明している。</p>
+          <p><el>a</el> 要素がテキストのみを含んでいる場合、そのテキストがリンクの目的を説明していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記のすべてを満たしている。</p>
+          <p>上記の全てが真である。</p>
         </item>
       </ulist>
       </expected-results>

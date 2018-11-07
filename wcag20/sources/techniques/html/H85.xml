@@ -124,17 +124,17 @@
       <procedure>
       <olist>
         <item>
-          <p>セレクトメニューに含まれる選択肢について、関連する選択肢としてグループ化すべきものがある。</p>
+          <p>選択リストに含まれる選択肢について、関連する選択肢のグループがあるかどうかを確認する。</p>
         </item>
         <item>
-          <p>関連する選択肢のグループが、<el>optgroup</el> 要素でグループ化してある。</p>
+          <p>関連する選択肢のグループがある場合、<el>optgroup</el> 要素でグループ化すべきである。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2.を満たしている。</p>
+          <p>2.が真である。</p>
         </item>
       </ulist>
       </expected-results>
