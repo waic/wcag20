@@ -38,6 +38,9 @@
               <!--linktype="examples"-->セマンティックなテキストのレンダリング例</loc>を参照。</p>
       <eg-group>
       <description><p>この事例では、テキストの強調に <el>em</el> 要素と <el>strong</el> 要素を利用する方法を示している。<el>em</el> 要素と <el>strong</el> 要素は、構造的な強調を示すのに用意されているものであり、さまざまな形式で描画されうる (フォントスタイルの変更、読み上げ時の抑揚の変更など)。</p>
+        <trnote>
+          <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cem%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、古い HTML では <code>strong</code> 要素を単により強い強調としていたが、現在の HTML では <code>strong</code> を重要性を表すものと定義している。従って、強調のために <code>strong</code> 要素を用いるのは適切ではない。</p>
+        </trnote>
 </description>
          <code role="html401"><![CDATA[ ...What she <em>really</em> meant to say was, &quot;This is not ok, 
  it is <strong>excellent</strong>&quot;!... ]]></code>
