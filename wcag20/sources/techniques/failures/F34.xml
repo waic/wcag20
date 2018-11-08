@@ -65,10 +65,10 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
       <procedure>
       <olist>
         <item>
-          <p>見かけ上のテーブルがドキュメントにある。</p>
+          <p>視覚的に整形されたテーブルのドキュメントを調べる。</p>
         </item>
         <item>
-          <p>空白文字を使ってデータをテーブル形式にレイアウトしてテーブルが作られている。</p>
+          <p>テーブルのデータをレイアウトするために空白文字を使ってテーブルが作られているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
