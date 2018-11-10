@@ -173,14 +173,14 @@ change.innerText = "Hello";
                <p>拡張されたウェブページが「適合している代替版」へのリンクを含んでいる。</p>
             </item>
             <item>
-               <p>代替バージョンが、オリジナルページの<loc href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>であり、かつ要求された適合レベルで WCAG 2.0 に適合している。</p>
+               <p>代替版が、オリジナルページの<!--loc href="conforming-alternate-versiondef" linktype="glossary"--><loc href="https://waic.jp/docs/WCAG20/Overview.html#conforming-alternate-versiondef">適合している代替版</loc>であり、かつ要求された適合レベルで WCAG 2.0 に適合していることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

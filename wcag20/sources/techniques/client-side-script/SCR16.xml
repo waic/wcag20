@@ -63,20 +63,20 @@ timeControl();
    </related-techniques>
    <tests>
       <procedure>
-      <p>スクリプトによって時間制限を制御しているウェブページにおいて:</p>
+      <p>スクリプトによって時間制限を制御されているウェブページにおいて:</p>
       <olist>
         <item>
           <p>ページを読み込み、制限時間より 20 秒少ないタイマーを開始する。</p>
         </item>
         <item>
-          <p>タイマーが切れるとき、差し迫った時間制限を警告する確認ダイアログが表示されることを確認する。</p>
+          <p>タイマーが切れるとき、間近に迫った時間制限を警告する確認ダイアログが表示されることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>
