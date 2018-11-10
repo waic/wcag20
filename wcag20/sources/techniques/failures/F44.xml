@@ -52,7 +52,7 @@
       <procedure>
       <olist>
         <item>
-          <p><code>tabindex</code> 属性を用いている場合、<code>tabindex</code> 属性によって指定されているタブ順序がコンテンツの関係性に従っている。</p>
+          <p><code>tabindex</code> 属性を用いている場合、<code>tabindex</code> 属性によって指定されているタブ順序がコンテンツの関係性に従っているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>

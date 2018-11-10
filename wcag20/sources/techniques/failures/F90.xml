@@ -63,14 +63,14 @@
       <procedure>
          <olist>
             <item>
-               <p>データセルが <code>id</code> 属性と <code>header</code> 属性によって見出しセルと関連付けられたテーブルのために、プログラム的な関連付けが正しいかどうか確認する</p>
+               <p>データセルが <code>id</code> 属性及び <code>header</code> 属性によって見出しセルと関連付けられたテーブルの場合、プログラム的な関連付けが正しいことを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>チェック #1 が偽の場合、この失敗条件は適用され、コンテンツは達成基準を満たさない。</p>
+               <p>1. が偽である場合、この失敗条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

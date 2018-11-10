@@ -66,7 +66,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>もし確認 #2 が真なら、失敗例に当たり、コンテンツは達成基準を満たしていない。</p>
+               <p>2. が真である場合、の失敗条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

@@ -98,21 +98,21 @@
    </related-techniques>
    <tests>
       <procedure>
-         <p>全てのデータテーブルにとって、テーブル見出しが正しくプログラム的に設定されているかどうかを次の仕組みのどれか一つを使って確認する:</p>
+         <p>全てのデータテーブルについて、次のいずれかのメカニズムを用いて、テーブル見出しが正しくプログラムによる解釈できるかどうかを確認する:</p>
          <olist>
             <item>
             	<p>テーブル見出し要素 (<el>th</el>) でマークアップされた見出し</p>
             </item>
-         	<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
-			<item><p>テーブル見出しが 1 行以上あるいは 1 列以上あるテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
+         	<item><p>テーブル見出しが 1 行より多い又は 1 列より多いテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
+			<item><p>テーブル見出しが 1 行より多い又は 1 列より多いテーブルの <el>th</el> における <att>scope</att> 属性</p></item>
             <item>
-               <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられた見出しとデータのセル</p>
+               <p><att>headers</att> 属性と <att>id</att> 属性を用いて関連付けられた見出し及びデータのセル</p>
             </item>
             <item>
-               <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされたヘッダー</p>
+               <p><att>scope</att> 属性を持つ <el>td</el> 要素としてマークアップされた見出し</p>
             </item>
             <item>
-               <p>ARIA のロールの <att>rowheader</att> 属性あるいは <att>columnheader</att> 属性でマークアップされた見出し</p>
+               <p>ARIA ロールの <att>rowheader</att> 属性又は <att>columnheader</att> 属性でマークアップされた見出し</p>
             </item>
          </olist>
           <trnote><p>2 と 3 は全く同一の内容であるが、原文ママである。</p></trnote>
@@ -120,7 +120,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>もし全部が偽なら、これは失敗例に当たり、コンテンツは達成基準を満たさない。</p>
+               <p>上記のすべてが偽である場合、この失敗条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

@@ -50,12 +50,12 @@ show();
       <p>点滅しているそれぞれのインスタンスに対して:</p>
       <olist>
         <item>
-          <p>点滅が 5 秒以内で止まる。</p>
+          <p>点滅が 5 秒以内で止まるかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
-         <p>1. を満たしていない場合、コンテンツは達成基準を満たしていないことになる。</p>
+         <p>1. が偽である場合、コンテンツは達成基準の失敗となる。</p>
       </expected-results>
    </tests>
 </technique>
