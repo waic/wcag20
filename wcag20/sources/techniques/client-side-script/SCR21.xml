@@ -205,6 +205,9 @@ function focusFormField(objAnchor, objEvent, objForm)
           <p>(ソースコードを検証して、) 新しいコンテンツが document.write()、innerHTML、outerHTML、innerText 又は outerText を用いて作成されていない。</p>
         </item>
       </olist>
+      <trnote>
+        <p><a href="#SCR21-description">解説</a>の訳注で示した <code>document.write()</code>、<code>innerHTML</code> に加えて、<code>outerHTML</code> は 2018 年現在、<a href="https://w3c.github.io/DOM-Parsing/#dfn-outerhtml">DOM Parsing and Serialization</a> 仕様で定義されており、<code>innerText</code> は <a href="https://www.w3.org/TR/html52/dom.html#the-innertext-idl-attribute">HTML 5.2§3.2.6. The innerText IDL attribute</a> で定義されている。したがって、手順 1 に示されるものに関しては、<code>outerText</code> のみが非標準である。<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/outerText">HTMLElement.outerText - Web APIs | MDN</a> も参照のこと。</p>
+      </trnote>
     </procedure>
       <expected-results>
          <ulist>
