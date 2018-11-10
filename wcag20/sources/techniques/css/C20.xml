@@ -92,17 +92,17 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
       <procedure>
       <olist>
         <item>
-          <p>カラム幅が、相対的な単位で定義されている。</p>
+          <p>カラム幅が、相対的な単位で定義されているかどうかの検査をする。</p>
         </item>
         <item>
-          <p>行の長さが、ブラウザのウィンドウをリサイズしても 80 字 (日本語は 40 字) 以下を維持している。</p>
+          <p>行の長さが、ブラウザのウィンドウをリサイズしても 80 字 (日本語は 40 字) 以下を維持していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -53,17 +53,17 @@ M u s e u m
    </related-techniques>
    <tests>
       <procedure>
-      <p>文字間隔が標準ではない状態で表示されている各単語に対して: </p>
+      <p>文字間に標準以外の間隔があるように見える各単語に対して: </p>
       <olist>
         <item>
-          <p>文字間隔を調整する手段として CSS の<code> <![CDATA[letter-spacing]]></code> プロパティが用いられている。</p>
+          <p>間隔を制御するために CSS <code><![CDATA[letter-spacing]]></code> プロパティが用いられたかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. を満たしている。</p>
+          <p>1. が真である。</p>
         </item>
       </ulist>
       </expected-results>

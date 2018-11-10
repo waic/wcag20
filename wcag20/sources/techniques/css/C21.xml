@@ -52,14 +52,14 @@
           <p>ブラウザでコンテンツを開く。</p>
         </item>
         <item>
-          <p>テキストのブロック内の行送りが 1.5～2 文字分ある。</p>
+          <p>テキストのブロック内の行送りが 1.5 と 2 の間であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている。</p>
+               <p>2.が真である。</p>
             </item>
          </ulist>
       </expected-results>
