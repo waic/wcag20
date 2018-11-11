@@ -174,14 +174,14 @@
                <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>をもつ各要素を検査する。</p>
             </item>
             <item>
-               <p>ランドマークロール属性が、そのロールに対応するページのセクションに適用されている (すなわち、"navigation"ロールはナビゲーションセクションで適用され、"main" ロールはメインコンテンツが始まる場所に適用される)。</p>
+               <p>ランドマークロール属性が、そのロールに対応するページのセクションに適用されている (すなわち、"navigation"ロールはナビゲーションセクションで適用され、"main" ロールはメインコンテンツが始まる場所に適用される) かどうかを検査する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

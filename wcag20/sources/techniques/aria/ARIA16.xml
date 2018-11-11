@@ -119,17 +119,17 @@
          <p><att>aria-labelledby</att> 属性が存在する場合に各ユーザインタフェースコントロール要素に対して:</p>
          <olist>
             <item>
-               <p><att>aria-labelledby</att> 属性の値は、ある要素の <att>id</att>、又はウェブページ上の複数 <att>id</att> のスペース区切りのリストである。</p>
+               <p><att>aria-labelledby</att> 属性の値は、ある要素の <att>id</att>、又はウェブページ上の複数 <att>id</att> のスペース区切りのリストであることを確認する。</p>
             </item>
             <item>
-               <p>参照される要素又は複数要素のテキストが正確にユーザインタフェースコントロールにラベル付けする。</p>
+               <p>参照される要素又は複数要素のテキストが正確にユーザインタフェースコントロールにラベル付けすることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

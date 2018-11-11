@@ -255,17 +255,17 @@
          <p><att>aria-labelledby</att> を使用する入力に対して:</p>
          <olist>
             <item>
-               <p><att>aria-labelledby</att> で参照される <att>id</att> が一意であり、かつ組み合わせてラベルを提供するテキストノードの <att>id</att> と一致する</p>
+               <p><att>aria-labelledby</att> で参照される <att>id</att> が一意であり、かつ組み合わせてラベルを提供するテキストノードの <att>id</att> と一致することを確認する</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att> によって参照される要素を連結したコンテンツが、ラベル付けされた要素の目的又は機能に対する説明である</p>
+               <p><att>aria-labelledby</att> によって参照される要素を連結したコンテンツが、ラベル付けされた要素の目的又は機能に対する説明であることを確認する</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
                <p>これが達成基準に対して十分な達成方法である場合、このテスト手順を失敗しても、この達成方法がうまく実装されず適合性を主張するために使用できないだけであり、達成基準が他の方法で満たされていないことを必ずしも意味するものではない。</p>
             </item>
          </ulist>

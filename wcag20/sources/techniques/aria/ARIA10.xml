@@ -79,17 +79,17 @@
                <p><att>aria-labelledby</att> 属性が存在してかつ要素が <att>alt</att> 属性をサポートしない場合に各要素を検査する。</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att> 属性値がウェブページ上の要素の id である。</p>
+               <p><att>aria-labelledby</att> 属性値がウェブページ上の要素の id であることを確認する。</p>
             </item>
             <item>
-               <p><att>aria-labelledby</att> 属性によって特定される要素のテキストが、正確に要素をラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供する。</p>
+               <p><att>aria-labelledby</att> 属性によって特定される要素のテキストが、正確に要素をラベル付けする、又はその目的の説明を提供する、又は同等の情報を提供することを判断する</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. 及び 3. が真である。</p>
             </item>
          </ulist>
       </expected-results>

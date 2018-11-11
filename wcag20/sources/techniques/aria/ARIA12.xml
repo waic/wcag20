@@ -90,17 +90,17 @@
                <p>属性 role="heading" をもつ各要素を調べる。</p>
             </item>
             <item>
-               <p>要素の内容が見出しとして適切である。</p>
+               <p>要素の内容が見出しとして適切であるかどうかを判断する。</p>
             </item>
             <item>
-               <p>要素が <att>aria-level</att> 属性を持つ場合、値が適切な階層レベルである。</p>
+               <p>要素が <att>aria-level</att> 属性を持つ場合、値が適切な階層レベルであるかどうかを判断する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. 及び 3. が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -141,20 +141,20 @@ span.errtext {
          <p>検証の失敗の伝達を <att>aria-invalid</att> に依存する各フォームコントロールに対して:</p>
          <olist>
             <item>
-               <p>検証の失敗が存在しない場合に <att>aria-invalid</att> が true に設定されない。</p>
+               <p>検証の失敗が存在しない場合に <att>aria-invalid</att> が true に設定されないことを確認する。</p>
             </item>
             <item>
-               <p>検証の失敗が存在する場合に <att>aria-invalid</att> が true に設定される。</p>
+               <p>検証の失敗が存在する場合に <att>aria-invalid</att> が true に設定されることを確認する。</p>
             </item>
             <item>
-               <p>プログラム的に関連付けられたラベル/プログラム的にフィールドに関連づけられた説明文がエラーを理解するのに十分な情報を提供している。</p>
+               <p>プログラム的に関連付けられたラベル/プログラム的にフィールドに関連づけられた説明文がエラーを理解するのに十分な情報を提供していることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. から 3. を満たしている。</p>
+               <p>1. から 3. が真である。</p>
             </item>
          </ulist>
       </expected-results>

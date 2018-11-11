@@ -226,17 +226,17 @@
          <p>必須であることがプレゼンテーションを経由して示される各コントロールに対して。</p>
          <olist>
 			<item>
-				<p><att>aria-required</att> 属性が存在するかどうかをチェックする:</p>
+				<p><att>aria-required</att> 属性が存在するかどうかを確認する:</p>
 			</item>
             <item>
-               <p><att>aria-required</att> 属性値が、そのユーザインタフェースコンポーネントに対する正しい required ステートであるかどうかをチェックする。</p>
+               <p><att>aria-required</att> 属性値が、そのユーザインタフェースコンポーネントに対する正しい required ステートであるかどうかを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

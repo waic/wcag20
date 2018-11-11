@@ -236,14 +236,14 @@
          <p><att>aria-label</att> を使用する要素に対して:</p>
          <olist>
             <item>
-               <p>利用者の入力が要求される場所で <att>aria-label</att> 属性の値が適切に要素の目的を説明している</p>
+               <p>利用者の入力が要求される場所で <att>aria-label</att> 属性の値が適切に要素の目的を説明していることを確認する</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>
