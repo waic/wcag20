@@ -126,14 +126,14 @@
           <p>音声解説のあるファイルを再生する。</p>
         </item>
         <item>
-          <p>音声解説が再生される。</p>
+          <p>音声解説が再生されるかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>3. を満たしている。</p>
+          <p>3. が真である。</p>
             </item>
          </ulist>
       </expected-results>
