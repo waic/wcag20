@@ -67,17 +67,17 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
       <procedure>
       <olist>
         <item>
-          <p>Live HTTP Header ビューアを用いて、"Content-Language" ヘッダーの値を確認する。</p>
+          <p>Live HTTP Header ビューアを用いて、"Content-Language" ヘッダーの値を調べる。</p>
         </item>
         <item>
-          <p>その値がウェブページの主たる自然言語と合致している。</p>
+          <p>その値がウェブページの主たる自然言語と一致していることを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>2. を満たしている。</p>
+          <p>2. が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -90,20 +90,20 @@ header("Location: conforming.php");
       <p>不適合コンテンツに対して、WCAG に適合している代替版が提供されている場合:</p>
       <olist>
         <item>
-          <p>宣言している適合レベルで WCAG に適合していないページで、HTTP リファラの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
+          <p>HTTP リファラに基づいてアクセシブルな代替版が提供されている場合、宣言している適合レベルで WCAG に適合していないページを特定する。</p>
         </item>
         <item>
           <p>不適合のコンテンツの URI を開く。</p>
         </item>
         <item><p>開いたページが次のうちの一つである:</p>
 					<olist><item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc></p></item>
-          <item><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+          <item><p>適合している代替版と不適合のコンテンツの両方へのリンクを含むページ</p></item></olist></item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>3.a. 又は 3.b. を満たしている。</p>
+          <p>3.a. 又は 3.b. が真である。</p>
             </item>
          </ulist>
       </expected-results>
