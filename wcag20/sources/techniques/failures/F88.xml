@@ -60,7 +60,7 @@ justo. Nulla facilisi. Phasellus nulla lacus, tempor quis, tincidunt ac, rutrum 
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしていないならは、この不適合の条件が適用され、コンテンツは達成基準 1.4.8 を満たすことができない。</p>
+               <p>手順 2. が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準 1.4.8 を満たすことができない。</p>
             </item>
          </ulist>
       </expected-results>

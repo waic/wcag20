@@ -113,7 +113,7 @@
       <eg-group>
          <head>検索フォーム</head>
          <description>
-            <p>次の例は、"search" ランドマークをもつ検索フォームを示す。search ロールは一般的に、フォームフィールドや、検索フォームを囲む div に適用する。</p>
+            <p>次の例は、"search" ランドマークをもつ検索フォームを示す。search ロールは一般に、フォームフィールド又は、検索フォームを囲む div に置かれる。</p>
             <codeblock xml:space="preserve"><![CDATA[<form role="search">
 <label for="s6">search</label><input id="s6" type="text" size="20">
 ...

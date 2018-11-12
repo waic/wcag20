@@ -40,7 +40,7 @@ The middle east peace meetings have yielded fruitful dialogue.
       <expected-results>
          <ulist>
             <item>
-               <p>2.に該当し、3.を満たしていないのならば、この不適合の条件が適用され、コンテンツは達成基準を満たしていないことになる。</p>
+               <p>手順 2.が真でありかつ、3.が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

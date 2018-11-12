@@ -16,7 +16,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、不適合である。</p>
+      <description><p>以下のページは 5 秒後に http://www.example.com/newpage という URI へリダイレクトされるため、失敗となる。</p>
 </description>
          <code><![CDATA[
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">

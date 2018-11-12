@@ -83,6 +83,9 @@ objAlign.style.top = calculatePosition(objReference, 'offsetTop') + objReference
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>「MSDN: Fix the Box Instead of Thinking Outside It」はリソースがリダイレクトされているが適切に処理されていない。代わりに、MDN の <a href="https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetHeight">HTMLElement.offsetHeight</a>、<a href="https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetWidth">HTMLElement.offsetWidth</a>、<a href="https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetLeft">HTMLElement.offsetLeft</a>、<a href="https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetTop">HTMLElement.offsetTop</a> をそれぞれ参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
