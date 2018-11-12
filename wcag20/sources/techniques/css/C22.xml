@@ -63,13 +63,13 @@
         <p><code><![CDATA[background-image]]></code> プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[first-line]]></code> の擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p>
+        <p><code><![CDATA[first-line]]></code> 擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[:first-letter]]></code> の擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p>
+        <p><code><![CDATA[:first-letter]]></code> 擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[:before]]></code> と <code><![CDATA[:after]]></code> の擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p>
+        <p><code><![CDATA[:before]]></code> と <code><![CDATA[:after]]></code> 擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p>
       </item>
     </ulist>
     <trnote>
