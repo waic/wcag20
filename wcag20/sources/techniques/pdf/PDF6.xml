@@ -131,13 +131,13 @@ endobj ]]></codeblock>
       <procedure>
       <olist>
         <item><p>各テーブルで、次のいずれかを確認する。</p>
-<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、テーブルヘッダーおよびデータセル間の論理的関係を維持する方法で表の情報が読み上げられる</p></item><item><p>PDF エディターを使用し、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> タグが正しい読み上げ順序でテーブルツリー内の階層に配置されていることを確認する</p></item><item><p>テーブルエレメントを表示できるツールを使用して PDF 文書を開き、テーブル構造を表示して、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> 構造が含まれていることを確認する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、テーブル構造に適切な <code>TR</code>、<code>TH</code> および <code>TD</code> 構造が含まれ、正しい読み上げ順序と階層になっていることを確認する</p></item></ulist></item>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、テーブルヘッダーおよびデータセル間の論理的関係を維持する方法で表の情報が読み上げられる。</p></item><item><p>PDF エディターを使用し、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> タグが正しい読み上げ順序でテーブルツリー内の階層に配置されていることを確認する。</p></item><item><p>テーブルエレメントを表示できるツールを使用して PDF 文書を開き、テーブル構造を表示して、適切な <code>TR</code>、<code>TH</code> および <code>TD</code> 構造が含まれていることを確認する。</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、テーブル構造に適切な <code>TR</code>、<code>TH</code> および <code>TD</code> 構造が含まれ、正しい読み上げ順序と階層になっていることを確認する。</p></item></ulist></item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>1. を満たしている。</p>
+          <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>

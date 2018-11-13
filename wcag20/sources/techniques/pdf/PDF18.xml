@@ -76,13 +76,13 @@ endobj]]></codeblock>
       <procedure>
       <olist>
         <item><p>次のいずれかを適用することにより、文書のタイトルが正しく指定されていて、ユーザエージェントのタイトルバーに表示されることを確認する。</p>
-<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、文書のタイトルが正しく読み上げられる</p></item><item><p>PDF エディターを使用して、文書のタイトルが指定されていること、また「初期表示」タブを選択し、タイトルが表示されることを確認する</p></item><item><p>文書カタログ内の /Title エントリ値を表示できるツールを使用して PDF 文書を開き、/Title エントリおよび /DisplayDocTitle フラグ設定を表示する</p></item></ulist></item>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、文書のタイトルが正しく読み上げられる。</p></item><item><p>PDF エディターを使用して、文書のタイトルが指定されていること、また「初期表示」タブを選択し、タイトルが表示されることを確認する。</p></item><item><p>文書カタログ内の /Title エントリ値を表示できるツールを使用して PDF 文書を開き、/Title エントリおよび /DisplayDocTitle フラグ設定を表示する。</p></item></ulist></item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>1. を満たしている。</p>
+          <p>1. が真である。</p>
             </item>
          </ulist>
       </expected-results>
