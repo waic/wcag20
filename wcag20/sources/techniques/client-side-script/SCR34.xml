@@ -13,7 +13,7 @@
    </applies-to>
    <ua-issues>
       <ua-issue name="" version="">
-      <p>サイズ及びポジションを定めることは複雑であり、異なるブラウザは異なる結果をだすことになる。これはCSSスタイリングでpadding、 margins及びwidthを一つのオブジェクトに対して組み合わせて使用したとき、又はオフセット値及び単純な値、例えばoffsetWidthとwidthを組合せて使用したときに起こりうる。これらのうちのいくつかはズームに対して異なる動きをする。
+      <p>サイズ及びポジションを定めることは複雑であり、異なるブラウザは異なる結果をだすことになる。これはCSSスタイリングでpadding、 margins及びwidthを一つのオブジェクトに対して組み合わせて使用したとき、又はオフセット値及び単純な値、例えばoffsetWidthとwidthを組み合わせて使用したときに起こりうる。これらのうちのいくつかはズームに対して異なる動きをする。
                   Internet Explorer 6及びそれ以降のバージョンと、IEのそれより前のバージョンとの違いについての説明は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://msdn.microsoft.com/en-us/library/bb250395(VS.85).aspx#cssenhancements_topic3">MSDN: Fix the Box Instead of Thinking Outside It (英語)</loc> を参照すること。</p>
     </ua-issue>
    </ua-issues>
