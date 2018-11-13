@@ -10,7 +10,7 @@
       <success-criterion idref="ensure-compat-parses" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>マークアップ言語がその仕様に完全に準拠していれば、4.1.1 のすべての要件が満たされる。つまり、仕様に完全に準拠することは、WCAG 2.0 に適合するために必要ではないが、成功事例であり、達成基準 4.1.1 に適合することになる。</p>
+    <p>マークアップ言語がその仕様に完全に準拠していれば、4.1.1 のすべての要件が満たされる。つまり、仕様に完全に準拠することは、WCAG 2.0 に適合するために必要ではないが、成功事例であり、達成基準 4.1.1 を満たすことになる。</p>
   </description>
    <examples>
       <ulist>

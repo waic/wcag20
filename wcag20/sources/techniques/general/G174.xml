@@ -29,7 +29,7 @@
     </olist>
     <p>この達成方法は、ページの代替版のテキスト (又はテキストの画像) に背景と 4.5:1 のコントラストがある、及び大きいサイズのテキスト (又は大きなテキストの画像) に背景と 3:1 のコントラストがあることによって達成基準 1.4.3 を満たすために用いることができる。もしページの代替版に 7:1 のコントラストのあるテキスト (テキストの画像) と 4.5:1 のコントラストのある大きいサイズのテキスト (又は大きなテキストの画像) があるならば、それは達成基準 1.4.3 と 1.4.6 の両方を満たしている。</p>
     <note>
-      <p>この達成方法は、非適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="guideline">適合している代替版</loc>である現在のページにスタイルを切り替える達成方法と組み合わせることで用いることができる。詳しくは、
+      <p>この達成方法は、不適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="guideline">適合している代替版</loc>である現在のページにスタイルを切り替える達成方法と組み合わせることで用いることができる。詳しくは、
 <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
     </note>
   </description>

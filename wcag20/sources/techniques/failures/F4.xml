@@ -16,6 +16,9 @@
    </ua-issues>
    <description>
     <p>CSS では、<code>text-decoration</code> プロパティに <code>blink</code> という値を定義している。これを用いると、このプロパティを持つ要素のあらゆるテキストが、あらかじめ設定された間隔で点滅する。これは、利用者が中断することはできず、またユーザエージェントの環境設定によって無効にすることもできない。つまり、ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が 3 秒より長く続く可能性があることから、<code>text-decoration:blink</code> を用いているコンテンツは達成基準を満たしていないことになる。</p>
+    <trnote>
+      <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-decoration#Browser_compatibility">MDN の text-decoration</a> に示されているとおり、モダンブラウザでは <code>text-decoration: blink</code> を設定したとしても、実際に点滅することはない。</p>
+    </trnote>
   </description>
    <examples>
       <eg-group role="failure">
@@ -55,7 +58,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. が該当すれば、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>手順 1. 及び 手順 2. が真である場合、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

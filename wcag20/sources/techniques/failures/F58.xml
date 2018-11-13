@@ -27,7 +27,7 @@
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが Java サーブレット又は JavaServer Pages (JSP) により実装されているため、不適合である。</p>
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが Java サーブレット又は JavaServer Pages (JSP) により実装されているため、失敗例である。</p>
 </description>
          <code><![CDATA[
 public void doGet (HttpServletRequest request, HttpServletResponse response)
@@ -44,7 +44,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 ]]></code>
     </eg-group>
     <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、不適合である。</p>
+      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、失敗例である。</p>
 </description>
       <code><![CDATA[
  <% @Language = "VBScript" %>
@@ -99,7 +99,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
       <expected-results>
          <ulist>
             <item>
-               <p>そのようなリダイレクトがみつかった場合、この不適合の条件が適用され、そのコンテンツは達成基準を満たしていないことになる。</p>
+               <p>そのようなリダイレクトがみつかった場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>
