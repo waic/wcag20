@@ -60,6 +60,9 @@
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>「WAI-ARIA 1.0 Authoring Practices」は、「WAI-ARIA Authoring Practices 1.1」の誤りである。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
