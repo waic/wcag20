@@ -12,7 +12,7 @@
    <description>
     <p>この達成方法の目的は、HTML の双方向性アルゴリズムが望ましくない結果を生じるとき時に、それを無効にするために Unicode 制御文字の right-to-left mark と left-to-right mark を用いることである。たとえば、スペース又は句読点のようなニュートラルな文字が異なる方向性のテキストの間に置かれている時に必要となることがある。この達成方法で用いられているコンセプトは、W3C 文書の「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/International/articles/inline-bidi-markup/">What you need to know about the bidi algorithm and inline markup</loc>」に書かれている。</p>
     <trnote>
-      <p>上記の「What you need to know about the bidi algorithm and inline markup」は、「Inline markup and bidirectional text in HTML」とタイトルが変更されている。この文書によれば、Unicode の right-to-left mark (RLM) 又は left-to-right mark (LRM) よりも、<code>dir</code> 属性による書字方向の制御が勧められている。<loc href="H56" linktype="html"/>も参照のこと。</p>
+      <p>上記の「What you need to know about the bidi algorithm and inline markup」は、「Inline markup and bidirectional text in HTML」とタイトルが変更されている。また、<a href="https://www.w3.org/International/questions/qa-bidi-controls">Unicode controls vs. markup for bidi support</a> によれば、Unicode の right-to-left mark (RLM) 又は left-to-right mark (LRM) よりも、<code>dir</code> 属性による書字方向の制御が勧められている。<loc href="H56" linktype="html"/>も参照のこと。</p>
     </trnote>
     <p>Unicode 制御文字の right-to-left mark 及び left-to-right mark は、以下に示すように、
 そのまま、又は文字符号か数字符号の参照によって挿入することが可能である。</p>
