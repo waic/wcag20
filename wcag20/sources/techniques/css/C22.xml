@@ -33,13 +33,13 @@
     <p>次の CSS のプロパティは、テキストのスタイルを指定し、画像のテキストを使う必要性を回避するのに有効である:</p>
     <ulist>
       <item>
-        <p><code><![CDATA[font-family]]></code> プロパティをを使って、文字の外観を等幅フォントで表示する。</p>
+        <p><code><![CDATA[font-family]]></code> プロパティを使って、文字の外観を等幅フォントで表示する。</p>
       </item>
       <item>
-        <p><code><![CDATA[text-align]]></code> プロパティをを使って、表示域の右側にテキストを表示する。</p>
+        <p><code><![CDATA[text-align]]></code> プロパティを使って、表示域の右側にテキストを表示する。</p>
       </item>
       <item>
-        <p><code><![CDATA[font-size]]></code> プロパティをを使って、テキストをより大きいサイズで表示する。</p>
+        <p><code><![CDATA[font-size]]></code> プロパティを使って、テキストをより大きいサイズで表示する。</p>
       </item>
       <item>
         <p><code><![CDATA[font-style]]></code> プロパティを使って、テキストをイタリック体で表示する。</p>
@@ -63,15 +63,19 @@
         <p><code><![CDATA[background-image]]></code> プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[first-line]]></code> の擬似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p>
+        <p><code><![CDATA[first-line]]></code> 疑似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[first-letter]]></code> の擬似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p>
+        <p><code><![CDATA[:first-letter]]></code> 疑似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[:before]]></code> と <code><![CDATA[:after]]></code> の擬似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p>
+        <p><code><![CDATA[:before]]></code> と <code><![CDATA[:after]]></code> 疑似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p>
       </item>
     </ulist>
+    <trnote>
+      <p><code>first-line</code> 疑似クラス、<code>:first-letter</code> 疑似クラス、<code>:before</code> 疑似クラス、<code>:after</code> 疑似クラスが挙げられているが、これらは全て疑似要素であり、原文の誤りである。</p>
+      <p><a href="https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-elements"> MDN の疑似要素 (Pseudo-elements)</a> に示されているように、例えば <code>:after</code> 疑似要素について、コロンを 1 個のみ用いるのは古い、互換性のための構文である。コロンを 2 個置くのが現在の正式な構文であることに注意されたい。</p>
+    </trnote>
   </description>
    <examples>
       <eg-group>
@@ -244,7 +248,7 @@ Never forget this in the  midst of your diagrams and equations. </p>
     </eg-group>
     <eg-group>
       <head>テキストの最初の行の表現を制御するために CSS の first-line を使用する。</head>
-      <description><p>CSS の <code>:first-line</code> 擬似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p>
+      <description><p>CSS の <code>:first-line</code> 疑似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p>
 <p>XHTML:</p>
 </description>
          <code><![CDATA[
@@ -257,7 +261,7 @@ Never forget this in the  midst of your diagrams and equations. </p>
     </eg-group>
     <eg-group>
       <head>テキストの最初の文字の表現を制御するために CSS の first-letter を使用する。</head>
-      <description><p>CSS の <code>:first-letter</code> 擬似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p>
+      <description><p>CSS の <code>:first-letter</code> 疑似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p>
 <p>XHTML:</p>
 </description>
          <code><![CDATA[
