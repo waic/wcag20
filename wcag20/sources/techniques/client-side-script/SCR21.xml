@@ -21,7 +21,7 @@
   </note>
   <trnote>
     <p><a href="https://www.w3.org/TR/html52/webappapis.html#documentwrite">HTML 5.2§7.4.3. document.write()</a> の Warning でも述べられているように、たとえ HTML (MIME タイプ text/html) であっても <code>document.write()</code> の使用は勧められていない。</p>
-    <p><code>innerHTML</code> は 2018 年現在、<a href="https://w3c.github.io/DOM-Parsing/#dfn-innerhtml">DOM Parsing and Serialization</a> 仕様で定義されている。したがって、本文で述べられている DOM の仕様ではないというのは今日では当てはまらない。</p>
+    <p><code>innerHTML</code> は 2018 年現在、<a href="https://w3c.github.io/DOM-Parsing/#dfn-innerhtml">DOM Parsing and Serialization</a> 仕様で定義されている。</p>
   </trnote>
       <a11ysuprorted rating="good" exnumber="0"/>
   </description>
