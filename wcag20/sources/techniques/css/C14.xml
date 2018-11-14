@@ -33,7 +33,7 @@
       <head>CSS での em によるフォントサイズ指定</head>
       <description><p>この事例では、どのような場合でも、<el>strong</el> 要素のテキストが周りのテキストよりも常に大きく表示されるように指定してある。そのため、親要素である見出しやパラグラフにフォントサイズが指定されていても、strong 要素でマークアップされた強調語は、周りのテキストよりも大きく表示される。</p>
       <trnote>
-        <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cem%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、古い HTML では <code>strong</code> 要素を単により強い強調としていたが、現在の HTML では <code>strong</code> を重要性を表すものと定義している。従って、強調のために <code>strong</code> 要素を用いるのは適切ではない。</p>
+        <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cem%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、古い HTML では <code>strong</code> 要素を単により強い強調としていたが、現在の HTML では <code>strong</code> を重要性を表すものと定義している。</p>
       </trnote>
 </description>
          <code><![CDATA[

@@ -107,7 +107,7 @@
 </description>
       <code><![CDATA[strong.largersize { font-size: 1.5em; }]]></code>
 <trnote>
-<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong">MDN の strong 要素</a>で示されているように、現在の HTML では <code>strong</code> を重要性を表すものと定義している。従って、文字を大きくする目的のために <code>strong</code> 要素を用いるのは適切ではない。</p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong">MDN の strong 要素</a>で示されているように、現在の HTML では <code>strong</code> を重要性を表すものと定義している。</p>
 </trnote>
     </eg-group>
     <eg-group>
