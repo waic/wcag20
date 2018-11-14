@@ -58,7 +58,7 @@
     <eg-group>
       <description><p>この事例では、短い引用文のマークアップに <el>q</el> 要素を利用している。<el>q</el> 要素を引用符で囲んであるのは、ユーザエージェントの多くがいまだにこの要素をサポートせず、適切に表示しないからである (前述「ユーザエージェント及び支援技術によるサポート」を参照)。引用符の自動生成を抑制するための CSS 規則は、コンテンツ制作者によって提供される引用符に加えて自動的に引用符を生成しないようにして、二重に引用符で囲まれた内容となるのを防ぐために、<el>q</el> 要素をサポートするユーザエージェントに対して提供される。将来、<el>q</el> 要素が広くサポートされるようになれば、引用符を付けたり、ブラウザの引用符生成を避けたりする必要はなくなるだろう。</p>
 <trnote>
-<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/q">MDN の <code>q</code> 要素</a>で示されているように、今日のモダンなブラウザーでは、<code>q</code> 要素の周りに自動的に引用符を追加する。そのため、この事例のコード例は必ずしも適切なものではないと考えられる。</p>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/q">MDN の <code>q</code> 要素</a>で示されているように、今日のモダンなブラウザでは、<code>q</code> 要素の周りに自動的に引用符を追加する。</p>
 </trnote>
 </description>
          <code role="css"><![CDATA[q:before { content: ""; } 
