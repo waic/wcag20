@@ -45,7 +45,7 @@
               </p></item>
 </ulist>
 <trnote>
-<p>上記の HTTP/1.1 は RFC 2616 を参照しているが、現在は RFC 7231 で更新、定義されている。<a href="https://tools.ietf.org/html/rfc7231#section-6.4">RFC 7231§6.4. Redirection 3xx</a> も参照のこと。</p>
+<p>上記の HTTP/1.1 は RFC 2616 を参照しているが、現在の HTTP ステータスコードは RFC 7231 で更新、定義されている。<a href="https://tools.ietf.org/html/rfc7231#section-6.4">RFC 7231§6.4. Redirection 3xx</a> も参照のこと。</p>
 </trnote>
 </div3>
 
