@@ -82,6 +82,10 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
                                     with Netscape Navigator 1.1. </p>
               </item-->
          </ulist>
+         <trnote>
+           <p>HTTP/1.0 は Informational な RFC であることに注意する。</p>
+           <p>上記の HTTP/1.1 は RFC 2616 を参照しているが、現在は <a href="https://tools.ietf.org/html/rfc7231">RFC 7231</a> で更新・定義されている。</p>
+         </trnote>
       </see-also>
    </resources>
    <related-techniques>
