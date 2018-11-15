@@ -31,7 +31,7 @@
     </eg-group>
     <eg-group>
       <head>/Artifact タグまたはプロパティリストを使用して、画像を PDF 文書内のアーティファクトとしてマークする</head>
-      <description><p>PDF 仕様を使用すると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>の節 14.8.2.2「実際のコンテンツとアーティファクト」(英語) に定義されているように、画像を「アーティファクト」としてマークすることができる。アーティファクトは、/Artifact タグと共に、マークされたコンテンツ順序に含められることで実際のコンテンツと明示的に区別される。</p>
+      <description><p>PDF 仕様を使用すると、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>の節 14.8.2.2 (Real Content and Artifacts) に定義されているように、画像を「アーティファクト」としてマークすることができる。アーティファクトは、/Artifact タグと共に、マークされたコンテンツ順序に含められることで実際のコンテンツと明示的に区別される。</p>
 <p>/Artifact </p>
 </description>
       <codeblock xml:space="preserve"><![CDATA[BMC  ...  EMC]]></codeblock>

@@ -20,7 +20,7 @@
     <p>この達成方法の目的は、支援技術で PDF コンテンツ内のフォームコントロールに関する情報を収集し、そのフォームコントロールと対話することである。</p>
     <p>PDF フォームコントロールの種類は、テキスト入力フィールド、チェックボックス、ラジオボタン、コンボボックス、リストボックスおよびボタンである。</p>
     <p>名前、役割、状態および値情報をすべてのフォームコンポーネントに提供することにより、障害のある人が使用するスクリーンリーダー、画面拡大ソフトウェア、音声認識ソフトウェアなどの支援技術との互換を可能にする。</p>
-    <p>PDF 仕様は、以下の表に示されているように、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>」の節 12.7.4「フィールドの種類」(英語) でフォームコントロールに対して名前、役割および値が設定される方法を定義する。コメント列では、対応する情報を Adobe Acrobat Pro で表示する方法について説明する。</p>
+    <p>PDF 仕様は、以下の表に示されているように、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc>」の節 12.7.4 (Field Types) でフォームコントロールに対して名前、役割および値が設定される方法を定義する。コメント列では、対応する情報を Adobe Acrobat Pro で表示する方法について説明する。</p>
     <table border="1">
       <tbody>
 <tr>
