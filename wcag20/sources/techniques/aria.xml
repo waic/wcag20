@@ -89,6 +89,9 @@
                      <p>NVDA は、部分的に WAI-ARIA をサポートする。</p>
                   </item>
                </ulist>
+              <trnote>
+               <p>「FireVox」は 2018 年現在、最新の Firefox と互換性がないためにインストールできない。</p>
+              </trnote>
             </div3>
             <div3 id="wai-aria_accessibility_support">
                <head>WAI-ARIA に対するアクセシビリティサポート</head>
