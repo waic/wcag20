@@ -63,6 +63,9 @@ it is <strong>very</strong> important to let him configure the text size.  </p>
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>フォントに関する CSS の仕様は、<a href="https://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a> を参照のこと。この仕様が、CSS 2 のフォントに関する記述に取って代わることに注意されたい。<a href="https://www.w3.org/TR/css-2018/">CSS Snapshot 2018</a> も参照のこと。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

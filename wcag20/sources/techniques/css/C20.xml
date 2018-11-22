@@ -86,6 +86,9 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>CSS2 の「Box Model」は、<a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a> で再定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <tests>

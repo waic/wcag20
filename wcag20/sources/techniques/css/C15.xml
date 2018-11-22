@@ -116,6 +116,9 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>セレクターに関する仕様は、<a href="https://www.w3.org/TR/selectors-3/">Selectors Level 3</a> を参照のこと。この仕様が、CSS 2 のセレクターに関する記述に取って代わることに注意されたい。<a href="https://www.w3.org/TR/css-2018/">CSS Snapshot 2018</a> も参照のこと。</p>
+        </trnote>
       </see-also>
    </resources>
    <tests>
