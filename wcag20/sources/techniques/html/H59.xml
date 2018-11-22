@@ -84,6 +84,9 @@
                        href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</loc></p>
             </item>
          </ulist>
+       <trnote>
+          <p>「Link Toolbar extension」は 2018 年現在、最新の Firefox と互換性がないためにインストールできない。</p>
+       </trnote>
       </see-also>
    </resources>
    <related-techniques>

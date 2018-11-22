@@ -89,6 +89,9 @@
 	<item><p><loc href="http://www.vischeck.com/daltonize/runDaltonize.php">Tool to convert images based on color loss so that contrast is restored as luminance contrast when there was only color contrast (that was lost due to color deficiency)</loc></p></item>
 	<item><p><loc href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">List of color contrast tools</loc></p></item>
 </ulist>
+<trnote>
+  <p>「Colour Contrast Analyser」は 2018 年現在、<a href="https://addons.mozilla.org/ja/firefox/">Firefox Add-ons</a> から入手できない状態にある。</p>
+</trnote>
 </div3>
 
 <div3 role="techniques">

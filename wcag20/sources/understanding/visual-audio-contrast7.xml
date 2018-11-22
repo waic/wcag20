@@ -82,6 +82,9 @@
 	<item><p><loc href="http://www.dyslexic.com/fonts">Typefaces for Dyslexia</loc></p></item>
 	<item><p><loc href="http://www.dyslexia.com/library/webdesign.htm">Web Design for Dyslexia</loc></p></item>
 </ulist>
+<trnote>
+  <p>「Colour Contrast Analyser」は 2018 年現在、<a href="https://addons.mozilla.org/ja/firefox/">Firefox Add-ons</a> から入手できない状態にある。</p>
+</trnote>
 </div3>
 
 <div3 role="techniques">
