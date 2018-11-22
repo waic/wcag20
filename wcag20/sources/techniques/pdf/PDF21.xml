@@ -20,7 +20,7 @@
     <p>マークアップを使用して項目を視覚的にリストであるかのように書式設定したときに、リストの関係性が示されない場合は、情報間の移動が難しくなることがある。このような視覚的な書式設定の簡単な例としては、改行を使用したリスト項目の分割がある。</p>
     <p>一部の支援技術では、利用者はリスト間または項目間を移動できる。リストがリストタグで正しく書式設定されていない場合、利用者はリストコンテンツを理解するのが難しくなる。</p>
     <p>PDF コンテンツ内にリストを作成する最も簡単な方法は、オーサリングツール (Microsoft Word や OpenOffice.org Writer など) のリストマークアップを使用して正しく書式設定することである。ただし、ソースファイルやオーサリングツールを利用できない場合は、Adobe Acrobat Pro の TouchUp 読み上げ順序ツールおよびタグパネルを使用できる。</p>
-    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3「リストエレメント」(英語) でリスト構造を定義している (リストエレメント)。PDF 文書のリストの構造タイプを以下に示す。</p>
+    <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 仕様</loc>は、節 14.8.4.3.3 (List Elements) でリスト構造を定義している (リストエレメント)。PDF 文書のリストの構造タイプを以下に示す。</p>
     <ulist>
       <item>
         <p> L - リストタグ (一つ以上の LI タグを含む)</p>

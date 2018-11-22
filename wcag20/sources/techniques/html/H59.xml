@@ -17,7 +17,7 @@
           <p>link要素について、ユーザエージェントと支援技術のサポートが一貫していない。</p>
         </item>
         <item><p>ユーザエージェントの一部は、link要素で指定されている情報を表示する追加的なナビゲーションバーを提供する。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。</p>
-            <p><el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="//www.subotnik.net/html/link">(X)HTMLにおける「link」要素 (英語)</loc>を参照。</p></item>
+            <p><el>link</el>要素のブラウザサポートに関する詳しい情報は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="//www.subotnik.net/html/link">(X)HTMLにおける「link」要素</loc>を参照。</p></item>
       </ulist>
     </ua-issue>
    </ua-issues>

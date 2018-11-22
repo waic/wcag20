@@ -70,7 +70,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                   <p>PDF の論理構造機能 (PDF 1.3 で導入) は、文書のコンテンツに関する構造情報を PDF ファイルに組み込むための機構を提供する。このような情報の例としては、章、見出し、段落、セクションなどの文書の編成や、図、表、脚注などの特殊エレメント情報がある。論理構造機能は拡張可能であり、どのような構造情報を組み込んで、それをどのように表示するかは、PDF ファイルを作成するアプリケーションが選択できる。一方で、PDF 利用者は作成側の構造上の仕組みを知らなくてもファイル内を移動できる。</p>
                   <p>PDF の論理構造の基本的な機能は、HTML、SGML、XML などの標準的な文書マークアップ言語と共通している。文書の論理構造は、辞書オブジェクトとしての構造エレメントの階層として表される。他のマークアップ言語の構造エレメントと同様に、PDF の構造エレメントにはコンテンツと属性を持たせることができる。PDF では、HTML、SGML および XML でのテキストの役割を、レンダリングされた文書コンテンツが担っている。</p>
                   <p>PDF 文書の論理構造は、視覚的に認識できるコンテンツとは別個に保存され、相互にポインタで結ばれている。このように分けられているため、論理エレメントの順序と階層構造を、文書のページ上のグラフィックオブジェクトの順序と位置から完全に独立して扱うことができる。</p>
-                  <p>文書の論理構造は、構造階層または構造ツリーと呼ばれる、オブジェクトの階層によって記述される。この階層のルートにあるのが、構造ツリールートと呼ばれる辞書オブジェクトであり、文書カタログの StructTreeRoot エントリによって指定することができる。<loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc> の節 14.7.2 (「構造階層」(英語)) を参照すると、表 322 に構造ツリールート辞書内のエントリが示されている。K エントリは、構造エレメントである、構造ツリールートの直接の子を指定する。</p>
+                  <p>文書の論理構造は、構造階層または構造ツリーと呼ばれる、オブジェクトの階層によって記述される。この階層のルートにあるのが、構造ツリールートと呼ばれる辞書オブジェクトであり、文書カタログの StructTreeRoot エントリによって指定することができる。<loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 (ISO 32000-1)</loc> の節 14.7.2 ("Structure Hierarchy") を参照すると、表 322 に構造ツリールート辞書内のエントリが示されている。K エントリは、構造エレメントである、構造ツリールートの直接の子を指定する。</p>
                </div4>
                <div4 id="pdf_notes_acc-sup_tagged">
                   <head>タグ付き PDF</head>
@@ -294,52 +294,62 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                <ulist>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/accessibility.html">Adobe アクセシビリティリソースセンター</loc>
+                        <loc href="http://www.adobe.com/accessibility.html">Adobe
+  					Accessibility Resource Center</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/accessibility/products/acrobat/training.html">Adobe Acrobat アクセシビリティトレーニングリソース (英語)</loc>
+                        <loc href="http://www.adobe.com/accessibility/products/acrobat/training.html">Adobe
+  					Acrobat Accessibility Training Resources</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">支援技術を使って PDF 文書にアクセスする (英語)</loc>
+                        <loc href="http://www.adobe.com/content/dam/Adobe/en/accessibility/pdfs/accessing-pdf-sr.pdf">Accessing
+  					PDF Documents with Assistive Technology </loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/devnet/pdf/pdf_reference.html">PDF 仕様アーカイブ (英語)</loc>
+                        <loc href="http://www.adobe.com/devnet/pdf/pdf_reference.html">PDF
+  					Specification Archives</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF 1.7 リファレンス: ISO 32000-1 の ISO 承認コピー (英語)</loc>
+                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf">PDF
+  					1.7 Reference: ISO approved copy of the ISO 32000-1</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/access_v9.pdf">PDF アクセシビリティ API リファレンス - AT 開発者が Acrobat MSAA および IPDDom インターフェイスを使用して PDF コンテンツへのアクセスを可能にする方法 (英語)</loc>
+                        <loc href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/access_v9.pdf">PDF
+  					Accessibility API Reference - How AT developers can use Acrobat MSAA
+  					and IPDDom interfaces to provide access to PDF content</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
                         <loc href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=54564">PDF/UA
-  					(ISO 14289-1:2012)</loc>
+  					(ISO 14289-1:2012)</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://www.pdfa.org/publication/the-matterhorn-protocol-1/">PDF/UA Conformance Testing Model: The Matterhorn Protocol</loc>
+                        <loc href="http://www.pdfa.org/publication/the-matterhorn-protocol-1/">PDF/UA
+  					Conformance Testing Model: The Matterhorn Protocol</loc> 
                      </p>
                   </item>
                   <item>
                      <p>
-                        <loc href="http://webaim.org/techniques/acrobat/">WebAIM: PDF アクセシビリティ (英語)</loc> 
+                        <loc href="http://webaim.org/techniques/acrobat/">WebAIM
+  				PDF Accessibility</loc> 
                      </p>
                   </item>
                   <item>
-                     <p>Microsoft Office 10 を使用した<loc href="http://office.microsoft.com/en-us/excel-help/create-accessible-pdfs-HA102478227.aspx">アクセシブルな PDF の作成 (英語)</loc></p>
+                     <p>
+                        <loc href="http://office.microsoft.com/en-us/excel-help/create-accessible-pdfs-HA102478227.aspx">Create accessible PDFs</loc> Microsoft Office 10 を使用</p>
                   </item>
                </ulist>
             </div3>

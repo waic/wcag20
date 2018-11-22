@@ -110,7 +110,7 @@ Web Accessibility Initiative (WAI) to support WCAG 2.0.</p>
                <p>Flash player は、映像を表示するのに用いられることが多く、あらゆる言語のクローズドキャプションやサブタイトルを提供することのできるテキストトラックがある。また、音声ガイドを提供できるように複数の音声トラックも用意されている。さらに、視聴覚コンテンツに手話通訳の提供を可能にする映像トラックも複数ある。</p>
                <p>現時点では、Flash Player は Windows OS によるハイコントラストモードやテキストのサイズ変更をサポートしていない。しかし、Flash コンテンツ制作者は、Flash によるカスケーディングスタイルシート (CSS) のサポート、その他の標準搭載スタイルのサポート、あるいは Flash の画面フィルタ機能を利用することによって、Flash ベースのインタフェースを大きめのテキストで閲覧可能な代替ビュー、代替フォント、あるいは代替ハイコントラストカラースキームなどを提供することが可能である。</p>
                <p>支援技術向けの Flash によるアクセシビリティのサポートは、Windows OS 上で、Internet Explorer 6 以降 (Flash Player 6 以降) または Mozilla Firefox 3 以降 (Flash Player 9 以降) を使用した場合に限られている。</p>
-               <p>Flash Player に関する詳細な情報は、Adobe サイトで提供されている <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash Player FAQ (英語)</loc> を参照のこと。</p>
+               <p>Flash Player に関する詳細な情報は、Adobe サイトで提供されている <loc href="http://www.adobe.com/products/flashplayer/faq.html">Flash Player FAQ</loc> を参照のこと。</p>
             </div3>
             <div3 id="flash_conformance_considerations">
                <head>WCAG 2.0 適合に向けた特記事項</head>
