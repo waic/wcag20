@@ -14,6 +14,9 @@
    <description>
     <p>この達成方法の目的は、それぞれのセクションにそれを識別できる見出しがついているようにすることである。<!--loc xmlns:xlink="content-structure-separation-programmatic" linktype="guideline"-->達成基準 1.3.1<!--/loc--><!--原文ではリンクされてないので一応合わせた--> では見出しがプログラムで解釈可能な方法でマークアップされていることを要求している。</p>
     <p>HTML においては、これは見出し要素 (h1, h2, h3, h4, h5, h6) によって実現されうる。これによりユーザエージェントは自動的にセクションの見出しを識別できる。他のウェブコンテンツ技術では、また異なる方法で見出しを識別する。ページ内の移動と文書の全体的構造の理解を助けるには、コンテンツ制作者は見出しを適切に入れ子に<phrase>するべきである</phrase> (たとえば h1 には h2 が続き、h2 には h2 か h3 が続き、h3 には h3 または h4 が続き……といったように)。</p>
+    <trnote>
+      <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Heading_Elements#Accessibility_concerns" rel="nofollow">MDN の &lt;h1&gt;–&lt;h6&gt;: HTML の見出し要素 - アクセシビリティへの配慮</a>で言及されているように、見出しレベルを飛ばしてページを作成する (例えば、<code>h1</code> 要素の次に <code>h3</code> 要素を置く) と、スクリーンリーダーの利用者がそのページの見出しをナビゲートするときに、ページには存在しない <code>h2</code> 要素を誤って飛ばしてしまったのではないかと誤解する恐れがあることに注意する。</p>
+    </trnote>
   </description>
    <examples>
       <eg-group>
