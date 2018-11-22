@@ -39,6 +39,9 @@
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>「text-decoration property」は、<a href="https://www.w3.org/TR/css-text-decor-3/#text-decoration-property">CSS Text Decoration Module Level 3§2.4. Text Decoration Shorthand: the text-decoration property</a> で再定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
