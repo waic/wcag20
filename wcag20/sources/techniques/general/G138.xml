@@ -20,6 +20,9 @@
       <eg-group>
       <head>:必須のフォーム項目に対して、色と強調を用いる</head>
       <description><p>HTML のフォームにいくつかの必須項目がある。必須項目のラベルは赤で表示されている。加えて、各ラベルのテキストは強い強調を示すために <el>strong</el> 要素でマークアップされている。フォーム入力の説明文には、「すべての必須項目は赤で表示されており、強調されている」とあり、事例が添えられている。</p>
+      <trnote>
+        <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cem%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、古い HTML では <code>strong</code> 要素を単により強い強調としていたが、現在の HTML では <code>strong</code> を重要性を表すものと定義している。</p>
+      </trnote>
 </description>
     </eg-group>
    </examples>

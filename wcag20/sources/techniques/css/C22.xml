@@ -110,6 +110,9 @@
       <description><p>CSS:</p>
 </description>
       <code><![CDATA[strong.largersize { font-size: 1.5em; }]]></code>
+<trnote>
+<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong">MDN の strong 要素</a>で示されているように、現在の HTML では <code>strong</code> を重要性を表すものと定義している。</p>
+</trnote>
     </eg-group>
     <eg-group>
       <head>テキストの色を制御するために CSS の color を使用する。</head>

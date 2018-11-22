@@ -58,6 +58,9 @@
     </eg-group>
     <eg-group>
       <description><p>この事例では、テキストを強調するために <el>em</el> 及び <el>strong</el> 要素をどのように用いたらよいかを示している。</p>
+      <trnote>
+        <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cem%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、古い HTML では <code>strong</code> 要素を単により強い強調としていたが、現在の HTML では <code>strong</code> 要素を重要性を表すものと定義している。</p>
+      </trnote>
 </description>
          <code role="html401"><![CDATA[
               <p>What she <em>really</em> meant to say was, 
