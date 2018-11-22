@@ -12,7 +12,7 @@
    <description>
     <p>プラグインによってレンダリングされるコンテンツ又はアプレットに含まれているコンテンツが点滅している際、ユーザエージェントがその点滅を一時停止させることができない場合がある。プラグイン、アプレット又はコンテンツ自体がその点滅を一時停止させるメカニズムを提供していない場合、利用者が点滅しているコンテンツを読み取れない、又は点滅によって気が散ってしまってそのページにある他のコンテンツを読むことができなくなる恐れがある。</p>
     <trnote>
-      <p>Flash Player は、2020 年末に提供を終了する計画が Adobe 社より発表されている (<a href="https://theblog.adobe.com/adobe-flash-update/">Adobe Blog</a>、<a href="https://forest.watch.impress.co.jp/docs/news/1072487.html">窓の杜</a>)。</p>
+      <p>NPAPI と呼ばれるプラグインは、ほとんどのブラウザでサポートが終息している。<a href="https://support.mozilla.org/ja/kb/npapi-plugins">Java、Silverlight、Adobe Acrobat および他のプラグインが動作しなくなりました | Firefox ヘルプ</a> も参照されたい。</p>
       <p>Oracle 社の <a href="https://www.oracle.com/technetwork/jp/java/eol-135779-ja.html">Oracle Java SE サポート・ロードマップ</a>によれば、Java Plugin のサポートは 2019 年 3 月までと告知されている。</p>
     </trnote>
   </description>
