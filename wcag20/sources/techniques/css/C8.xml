@@ -45,6 +45,9 @@ M u s e u m
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>「CSS 2: Letter and word spacing」は、<a href="https://www.w3.org/TR/css-text-3/#spacing">CSS Text Module Level 3§8. Spacing</a> で再定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
