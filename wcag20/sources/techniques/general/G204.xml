@@ -31,6 +31,9 @@
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>CSS2 の「CSS Box Model」は、<a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a> で再定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

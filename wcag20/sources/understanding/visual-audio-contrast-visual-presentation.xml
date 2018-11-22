@@ -66,6 +66,9 @@
 	<item><p><loc href="http://accessites.org/site/2006/11/designing-for-dyslexics-part-3-of-3">Design for Dyslexics</loc></p></item>
 	<item><p><loc href="http://www.dyslexia.com/library/webdesign.htm">Web Design for Dyslexia</loc></p></item>
 </ulist>
+<trnote>
+<p>CSS2 の「Box Model」は、<a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a> で再定義されている。</p>
+</trnote>
 </div3>
 
 <div3 role="techniques">
