@@ -28,7 +28,7 @@
    <description>
     <p>この達成方法の目的は、ラベルを付けるのが視覚デザイン上そぐわない場合 (たとえば、ラベルとなりうるテキストが画面上にない場合) や、ラベルを表示することで混乱を引き起こしてしまう場合に、<att>title</att> 属性を利用してフォームコントロールにラベルを付けることである。それによって、ユーザエージェントや支援技術が、<att>title</att> 属性を読み上げることができる。</p>
   <trnote>
-    <p><a href="https://www.w3.org/TR/html52/dom.html#the-title-attribute">HTML 5.2§3.2.5.1. The title attribute</a> の Warning で述べられているように、多くのユーザエージェントではアクセシブルな形でグローバル属性としてのこの属性を公開しないので、<code>title</code> 属性に依存することを勧めていない。</p>
+    <p><a href="https://www.w3.org/TR/html52/dom.html#the-title-attribute">HTML 5.2§3.2.5.1. The title attribute</a> の Warning で述べられているように、多くのユーザエージェントではアクセシブルな形でこの属性を公開しないので、<code>title</code> 属性に依存することを勧めていない。</p>
   </trnote>
   </description>
    <examples>
