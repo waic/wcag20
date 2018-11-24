@@ -49,7 +49,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 4. を満たしている。</p>
+               <p>1. 及び 4. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -62,7 +62,7 @@ This is the beginning of paragraph 2.
     <expected-results>
       <ulist>
         <item>
-          <p>上記の全てが真である。</p>
+          <p>上記の全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

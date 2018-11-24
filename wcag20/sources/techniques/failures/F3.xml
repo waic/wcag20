@@ -110,7 +110,7 @@ document.body.appendChild(newP);
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2 と 手順 3 が両方とも偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>手順 2 と 手順 3 の結果が両方とも偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

@@ -108,7 +108,7 @@ if(isset($site_pref)) {
     <expected-results>
       <ulist>
         <item>
-          <p>2. 及び 3. が真である。</p>
+          <p>2. 及び 3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

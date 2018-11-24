@@ -350,7 +350,7 @@
     </procedure>
       <expected-results>
          <p>HTML、SGML ベース、及び XML ベースのウェブコンテンツ技術に対して:</p>
-      <p>2. が真である。</p>
+      <p>2. の結果が真である。</p>
       </expected-results>
    </tests>
 </technique>

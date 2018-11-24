@@ -54,7 +54,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>2. が偽である。</p>
+         <p>2. の結果が偽である。</p>
       </expected-results>
    </tests>
 </technique>

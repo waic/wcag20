@@ -55,7 +55,7 @@ show();
       </olist>
     </procedure>
       <expected-results>
-         <p>1. が偽である場合、コンテンツは達成基準の失敗となる。</p>
+         <p>1. の結果が偽である場合、コンテンツは達成基準の失敗となる。</p>
       </expected-results>
    </tests>
 </technique>

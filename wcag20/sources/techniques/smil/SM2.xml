@@ -90,7 +90,7 @@ height="144" width="320"/>
     <expected-results>
       <ulist>
         <item>
-          <p>2. が真である。</p>
+          <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

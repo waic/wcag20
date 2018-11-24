@@ -91,7 +91,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1.が真であり、4.又は 5.のいずれかが真である。</p>
+               <p>1.の結果が真であり、4.又は 5.のいずれかの結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

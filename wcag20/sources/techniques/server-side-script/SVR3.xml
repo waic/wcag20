@@ -103,7 +103,7 @@ header("Location: conforming.php");
     <expected-results>
       <ulist>
         <item>
-          <p>3.a. 又は 3.b. が真である。</p>
+          <p>3.a. 又は 3.b. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -81,7 +81,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>2. 及び 3. が偽である場合、失敗条件が適用される。</p>
+         <p>2. 及び 3. の結果が偽である場合、失敗条件が適用される。</p>
       </expected-results>
    </tests>
 </technique>

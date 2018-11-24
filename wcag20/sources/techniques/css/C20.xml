@@ -102,7 +102,7 @@ CSS プロパティの <code>max-width</code> は、Internet Explorer 6 以前�
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. が真である。</p>
+               <p>1. 及び 2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

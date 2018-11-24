@@ -82,7 +82,7 @@ more information on that area." />
       <expected-results>
        <ulist>
         <item>
-          <p>上記全てが真である。</p>
+          <p>上記全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

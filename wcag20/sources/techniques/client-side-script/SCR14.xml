@@ -80,7 +80,7 @@ Turn Alerts Off</button></p>
       <expected-results>
          <ulist>
             <item>
-               <p>JavaScript の alert を使用して緊急ではない中断をサポートするウェブページでは、上記の 1.、2 及び 3 が真である。</p>
+               <p>JavaScript の alert を使用して緊急ではない中断をサポートするウェブページでは、上記の 1.、2 及び 3 の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

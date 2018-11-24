@@ -202,7 +202,7 @@ addLoadEvent(initScroller)]]></code>
       <expected-results>
          <ulist>
             <item>
-               <p>3. 及び 6. が真である。</p>
+               <p>3. 及び 6. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

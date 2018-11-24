@@ -39,7 +39,7 @@
       <expected-results>
          <olist>
             <item>
-               <p>全てが真である。</p>
+               <p>全ての結果が真である。</p>
             </item>
          </olist>
       </expected-results>

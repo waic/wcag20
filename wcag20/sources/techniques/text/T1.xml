@@ -71,7 +71,7 @@ lines are significant.
     <expected-results>
       <ulist>
         <item>
-          <p>それぞれの段落について、上記の全てが真である。</p>
+          <p>それぞれの段落について、上記の全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

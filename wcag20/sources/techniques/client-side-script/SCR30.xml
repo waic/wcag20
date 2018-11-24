@@ -119,7 +119,7 @@ function toggle() {
       <expected-results>
          <ulist>
             <item>
-               <p>1.、2. 及び 5. が真である</p>
+               <p>1.、2. 及び 5. の結果が真である</p>
             </item>
          </ulist>
       </expected-results>

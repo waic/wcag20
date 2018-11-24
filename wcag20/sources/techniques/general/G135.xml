@@ -40,7 +40,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>各インターフェースコンポーネントについて、3. が真である。</p>
+               <p>各インターフェースコンポーネントについて、3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

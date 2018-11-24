@@ -102,7 +102,7 @@
          <ulist>
         <item><p>パンくずリストを使用している一連のすべてのウェブページについて:</p>
                 
-                        <ulist><item><p>2.、3.、及び 6.が真である。</p></item><item><p>その上で、4.又は 5.のいずれかが真である。</p></item></ulist></item>
+                        <ulist><item><p>2.、3.、及び 6.の結果が真である。</p></item><item><p>その上で、4.又は 5.のいずれかが真である。</p></item></ulist></item>
       </ulist>
       </expected-results>
    </tests>

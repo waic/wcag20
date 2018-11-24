@@ -63,7 +63,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. と 2. の両方が真である。</p>
+               <p>1. と 2. の両方の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

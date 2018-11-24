@@ -61,7 +61,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>2. 及び 3. が真である。</p>
+         <p>2. 及び 3. の結果が真である。</p>
       </expected-results>
    </tests>
 </technique>

@@ -154,7 +154,7 @@ span.errtext {
       <expected-results>
          <ulist>
             <item>
-               <p>1. から 3. が真である。</p>
+               <p>1. から 3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

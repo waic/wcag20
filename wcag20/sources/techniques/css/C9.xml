@@ -115,7 +115,7 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
       <expected-results>
        <ulist>
         <item>
-          <p>1. が真である場合に、2. が真である。</p>
+          <p>1. の結果が真である場合に、2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

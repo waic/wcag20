@@ -45,7 +45,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>2. が偽、又は 3. が真である。</p>
+         <p>2. の結果が偽、又は 3. の結果が真である。</p>
       </expected-results>
    </tests>
 </technique>

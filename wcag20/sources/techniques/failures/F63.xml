@@ -92,7 +92,7 @@ travel on the world's first commercial tourism flights to space.</p>
       <expected-results>
          <ulist>
             <item>
-               <p>1 及び 2 が偽である場合、このコンテンツは達成基準の失敗となる。</p>
+               <p>1 及び 2 の結果が偽である場合、このコンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

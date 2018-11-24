@@ -63,7 +63,7 @@ dir="rtl"><span dir="rtl">פעילות הבינאום, W3C</span></span>" in Heb
       <expected-results>
          <ulist>
         <item>
-          <p>全てのテキストに対して 2. 及び 3. が真である。</p>
+          <p>全てのテキストに対して 2. 及び 3. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

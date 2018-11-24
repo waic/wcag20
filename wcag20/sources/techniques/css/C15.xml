@@ -145,7 +145,7 @@ Windows版のFirefox 2.0とOpera 9.02、SeaMonkey 1.1は、フォームのラベ
       <expected-results>
          <ulist>
             <item>
-               <p>上記、2, 5 及び 6 が真である。</p>
+               <p>上記、2, 5 及び 6 の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

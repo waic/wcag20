@@ -71,7 +71,7 @@ range of people with disabilities,        wide variety of assistive technologies
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2. が真である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>手順 2. の結果が真である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

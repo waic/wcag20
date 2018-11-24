@@ -65,7 +65,7 @@
       </olist>
     </procedure>
       <expected-results>
-         <p>上記の四つ全てが真である。</p>
+         <p>上記の四つ全ての結果が真である。</p>
       </expected-results>
    </tests>
 </technique>

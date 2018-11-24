@@ -416,7 +416,7 @@ function checkOptional(bValid, strValue, arClass)
       <expected-results>
          <ulist>
             <item>
-               <p>2.、3.、4. 及び 5. の全てが真である。</p>
+               <p>2.、3.、4. 及び 5. の全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

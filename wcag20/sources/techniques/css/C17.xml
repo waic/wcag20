@@ -77,7 +77,7 @@ height: 1.2em;}]]></code>
       <expected-results>
          <ulist>
             <item>
-               <p>3. が真である。</p>
+               <p>3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

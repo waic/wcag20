@@ -61,7 +61,7 @@ for(var i=900; i < 4500; i=i+900)
       <expected-results>
          <ulist>
             <item>
-               <p>点滅しているコンテンツのそれぞれのインスタンスに対して、2. が真である。</p>
+               <p>点滅しているコンテンツのそれぞれのインスタンスに対して、2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

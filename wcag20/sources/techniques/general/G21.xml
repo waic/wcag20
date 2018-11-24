@@ -62,8 +62,8 @@
       <expected-results>
          <ulist>
             <item>
-               <p>2.が偽である。</p>
-                 <trnote><p>「2. 又は 3. のいずれかが真である」となるのが正しいと思われる。</p><!-- WGへの報告状況を再確認する --></trnote>
+               <p>2.の結果が偽である。</p>
+                 <trnote><p>「2. 又は 3. のいずれかの結果が真である」となるのが正しいと思われる。</p><!-- WGへの報告状況を再確認する --></trnote>
             </item>
          </ulist>
       </expected-results>

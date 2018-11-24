@@ -102,7 +102,7 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
     <expected-results>
       <ulist>
         <item>
-          <p>3.a. 又は 3.b. が真である。</p>
+          <p>3.a. 又は 3.b. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

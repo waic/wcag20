@@ -87,7 +87,7 @@ introduced by this practice below.</p>
       <expected-results>
          <ulist>
             <item>
-               <p>1. が偽である場合、この失敗条件が適用される。</p>
+               <p>1. の結果が偽である場合、この失敗条件が適用される。</p>
             </item>
          </ulist>
       </expected-results>

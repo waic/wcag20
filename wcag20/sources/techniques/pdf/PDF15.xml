@@ -101,7 +101,7 @@ this.submitForm({
     <expected-results>
       <ulist>
         <item>
-          <p>フォームが含まれている各ページにおいて、1. が真である。</p>
+          <p>フォームが含まれている各ページにおいて、1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

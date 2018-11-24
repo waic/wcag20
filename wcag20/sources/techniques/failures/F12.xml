@@ -39,7 +39,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>手順 3.が偽である場合、サイトは達成基準の失敗となる。</p>
+               <p>手順 3.の結果が偽である場合、サイトは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

@@ -53,7 +53,7 @@ images representing text .</p>]]></code>
       <expected-results>
          <ulist>
         <item>
-          <p>2. が真である。</p>
+          <p>2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

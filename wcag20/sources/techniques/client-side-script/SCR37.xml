@@ -186,7 +186,7 @@ function ResetForm(elem)
       <expected-results>
          <ulist>
             <item>
-               <p>2.、3.、4. 及び 5. が真である。</p>
+               <p>2.、3.、4. 及び 5. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

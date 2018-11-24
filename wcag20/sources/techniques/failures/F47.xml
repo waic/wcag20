@@ -51,7 +51,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. が真である場合、そのコンテンツは達成基準の失敗となる。</p>
+               <p>1. の結果が真である場合、そのコンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

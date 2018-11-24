@@ -67,7 +67,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>１.から 3.が全てを真である。</p>
+               <p>１.から 3.の結果全てが真である。</p>
             </item>
          </ulist>
       </expected-results>

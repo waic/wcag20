@@ -123,7 +123,7 @@ ul#swapper ul.menu li a { text-decoration:none; color:black; padding:0 0.1em;
       <expected-results>
          <ulist>
             <item>
-               <p>2.～5. が真である。</p>
+               <p>2.～5. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>
