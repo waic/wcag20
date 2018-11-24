@@ -268,7 +268,7 @@
 
 <div5 role="sufficient" id="altvertechs">
 <head>ウェブページの適合している代替版を提供する適合要件を満たすことができる達成方法</head>
-<p>次の番号付き項目はいずれも、WCAG ワーキンググループが適合している代替版を提供するのに十分であると考えた達成方法又は達成方法の組合せである。</p>
+<p>次の番号付き項目はいずれも、WCAG ワーキンググループが適合している代替版を提供するのに十分であると考えた達成方法又は達成方法の組み合わせである。</p>
 <olist>
 	<item><p><loc href="G136" linktype="general"/></p></item>
 	<item><p><loc href="G190" linktype="general"/></p></item>

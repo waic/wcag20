@@ -25,6 +25,10 @@
          <p><code><![CDATA[aria-required="true"]]></code> の使用は、アスタリスクや他のテキストシンボルがプログラム的にフィールドに関連付けられている場合であっても、一部の支援技術の利用者に対して <prop>required</prop> プロパティによって補強できるので、有益であるかもしれない。</p>
          <p>多くの場合、要素が必須であるという事実は、(コントロールの後の符号や記号のように) 視覚的に提示される。視覚的なプレゼンテーションに加えて <prop>aria-required</prop> プロパティを使用することは、ユーザエージェントが、この重要な情報をユーザエージェント固有の方法で利用者に伝えることを、はるかに簡単にする。XHTML や HTML とともに WAI-ARIA ステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc> を参照のこと。なお、WAI-ARIA ステート及びプロパティは他の言語とも互換性がある。詳しくはその言語における文書の活用を参照のこと。</p>
       </note>
+      <trnote>
+        <p>注記 2 にあるリンク「Supporting ARIA in XHTML and HTML 4.01」は <a href="https://www.w3.org/TR/wai-aria-primer/">WAI-ARIA 1.0 Primer</a> を参照しているが、この文書は作成が破棄されている。代わりに、<a href="https://www.w3.org/TR/wai-aria-1.1/#html_dtd">WAI-ARIA 1.1 §A.6 HTML 4.01 plus WAI-ARIA DTD</a> を参照できる。</p>
+<p>XHTML 及び HTML 4.01 は廃止された勧告であることに注意されたい。</p>
+      </trnote>
    </description>
    <examples>
       <eg-group>

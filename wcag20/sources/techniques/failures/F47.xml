@@ -16,6 +16,9 @@
    </ua-issues>
    <description>
     <p><code>blink</code> 要素は正式な HTML 又は XHTML の仕様の一部ではないが、多くのユーザエージェントによりサポートされている。要素内のあらゆるテキストが予め決定された周期で点滅する。これは、利用者が中断することはできず、また環境設定によって無効にすることもできない。ウェブページが表示されている限り、点滅は続くことになる。そのため、点滅が 3 秒より長く続く可能性があることから、<code>blink</code> を用いているコンテンツは達成基準を満たしていないことになる。</p>
+    <trnote>
+      <p><a href="https://html.spec.whatwg.org/multipage/obsolete.html#blink">HTML Standard の Non-conforming features</a> に示されているとおり、<code>blink</code> 要素は廃止されている。モダンブラウザでは <code>blink</code> 要素を記述しても、実際に点滅することはない。<a href="#F47-resources">参考リソース</a>も参照されたい。</p>
+    </trnote>
   </description>
    <examples>
       <eg-group role="failure">

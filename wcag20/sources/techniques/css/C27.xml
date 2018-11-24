@@ -44,6 +44,12 @@
                   <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://getfirebug.com/">Firebug</loc> を使用すると、Firefox でスクリプトによって生成された DOM のチェックが可能になる。</p>
             </item>
          </ulist>
+       <trnote>
+         <p>「Microsoft Internet Explorer Developer Toolbar」はページが削除されているが、代わりに開発者ツールを使用できる。詳細については、<a href="https://msdn.microsoft.com/ja-jp/library/dd565628%28v=vs.85%29.aspx">Internet Explorer 開発者ツールを理解する</a>を参照のこと。</p>
+         <p>Firefox のアドオン「Firebug」は開発が終了している。代わりに開発ツールを使用できる。<a href="https://developer.mozilla.org/ja/docs/Tools">開発ツール | MDN</a> も参照のこと。</p>
+         <p>Google Chrome の場合、類似のツールが利用できる。詳細については、<a href="https://developers.google.com/web/tools/chrome-devtools/?hl=ja">Chrome DevTools  |  Tools for Web Developers  |  Google Developers</a> を参照のこと。</p>
+         <p>Edge の場合も、類似のツールが利用できる。詳細については、<a href="https://docs.microsoft.com/ja-jp/microsoft-edge/devtools-guide">Microsoft Edge Developer Tools - Microsoft Edge Development | Microsoft Docs</a> を参照のこと。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
