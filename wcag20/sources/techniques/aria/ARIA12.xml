@@ -28,7 +28,7 @@
    </ua-issues>
    <description>
       <p>この達成方法の目的は、支援技術 (AT) に見出しとしてひとまとまりのコンテンツを識別するための手段を提供することである。要素に <code><![CDATA[role="heading"]]></code> を適用することで、(スクリーンリーダーなどの) 支援技術に、あたかもそれが見出しであったかのように扱わせることができる。</p>
-      <p>ページ上に複数の見出しがあり、かつ見出し階層が視覚的なプレゼンテーションを通して定義される場合、見出しの階層レベルを示すために <att>aria-level</att> 属性が使用されるべきである。</p>
+      <p>ページ上に複数の見出しがあり、かつ見出し階層が視覚的な提示を通して定義される場合、見出しの階層レベルを示すために <att>aria-level</att> 属性が使用されるべきである。</p>
       <p>可能な場合、ネイティブな見出しマークアップを直接使用すること。たとえば、<code><![CDATA[<div role="heading" aria-level="1">]]></code> を使用するのではなく、<el>h1</el> を使用するのが好ましい。しかし、見出しマークアップの代わりに heading ロールを使用することが必要な場合がある。たとえば、スクリプトが既存の要素の階層構造に依存しているレガシーサイトを改装する場合などである。</p>
       <p><prop>heading</prop> ロールとネスティングレベルの用途については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/WAI/PF/aria-practices/#kbd_layout_nesting">WAI-ARIA 1.0 Authoring Practices</loc> で説明されている。</p>
       <trnote>
