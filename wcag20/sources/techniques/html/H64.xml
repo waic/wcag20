@@ -78,6 +78,9 @@
                     "Implementing Frame Titles"</loc></p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記に関して、frame 要素は <a href="https://www.w3.org/TR/html52/obsolete.html#frames">HTML 5.2§11.3.3. Frames</a> で廃止された機能として定義されており、iframe 要素は <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#elementdef-iframe">HTML 5.2§4.7.6. The iframe element</a> を代わりに参照することができる。</p>
+        </trnote>
       </see-also>
    </resources>
    <tests>

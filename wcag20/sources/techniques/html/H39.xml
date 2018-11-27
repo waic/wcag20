@@ -34,6 +34,9 @@
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/tabular-data.html#the-caption-element">HTML 5.2§4.9.2. The caption element</a>を代わりに参照することができる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

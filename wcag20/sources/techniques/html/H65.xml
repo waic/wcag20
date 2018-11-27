@@ -88,6 +88,9 @@ type="text" size="4" value="" >
                        href="http://usability.com.au/2008/09/accessible-forms-using-wcag-2-0/">Accessible Forms using WCAG 2.0</loc></p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/dom.html#the-title-attribute">HTML 5.2§3.2.5.1. The title attribute</a> を代わりに参照することができる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

@@ -5,6 +5,9 @@
    <short-name>構造をマークアップするために、セマンティックな要素を使用する</short-name>
    <applicability>
       <p>HTML 4.01 及び XHTML 1.x を含むマークアップ言語</p>
+      <trnote>
+        <p>HTML 4.01 及び XHTML 1.x は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -120,6 +123,9 @@
                 </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#textlevel-semantics">HTML 5.2: 4.5. Text-level semantics</a> を代わりに参照することができる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

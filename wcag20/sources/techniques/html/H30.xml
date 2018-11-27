@@ -80,6 +80,9 @@ Woodend Music Festival Program
 </article>]]></code>
             <p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H30/link-wraps-block.html">ブロックレベル要素をリンクで囲む実例</loc>を示す。
             </p>
+        <trnote>
+          <p>HTML5 ではブロックレベル要素は定義されていない。<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Block-level_elements">ブロックレベル要素 - HTML: HyperText Markup Language | MDN</a> も参照のこと。</p>
+        </trnote>
       </eg-group> 
    </examples>
    <resources>
@@ -90,6 +93,9 @@ Woodend Music Festival Program
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。<a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text">HTML 5.1§4.7.5.1. Requirements for providing text to act as an alternative for images</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

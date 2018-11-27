@@ -5,6 +5,9 @@
    <short-name>利用者の要求に応じて新しいウィンドウを開くために、プログレッシブエンハンスメントを使用する</short-name>
    <applicability>
       <p>HTML 4.01 及び XHTML 1.0 </p>
+      <trnote>
+        <p>HTML4 及び XHTML 1.0 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-no-extreme-changes-context"

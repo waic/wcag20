@@ -47,6 +47,9 @@
                        href="http://www.jimthatcher.com/webcourse4.htm">Accessible Navigation</loc></p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記に関して、frame 要素及び frameset 要素は <a href="https://www.w3.org/TR/html52/obsolete.html#frames">HTML 5.2§11.3.3. Frames</a> で廃止された機能として定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>

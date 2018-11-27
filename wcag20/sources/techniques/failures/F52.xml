@@ -20,6 +20,9 @@
       <eg-group role="failure">
       <head/>
       <description><p>下記の事例は、ページがロードされた時に新しいウィンドウを開くために HTML 4.01 で一般的に使用される。</p>
+      <trnote>
+        <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
 </description>
       <code><![CDATA[
 window.onload = showAdvertisement;
