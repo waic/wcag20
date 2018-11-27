@@ -5,6 +5,9 @@
    <short-name>達成基準 4.1.1 の失敗例 － ID 型の値が重複している</short-name>
    <applicability>
       <p>HTML5 及び、HTML4 と SVG を含むあらゆる XML ベースのマークアップ言語</p>
+      <trnote>
+        <p>HTML 4 (HTML 4.01) は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="ensure-compat-parses" relationship="failure"/>
