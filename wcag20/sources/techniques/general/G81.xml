@@ -26,31 +26,22 @@
       <see-also>
          <ulist>
             <item>
-               <p>Guidelines for the Production of Signing Books</p>
+               <p>手話を作成するための指針</p>
                <ulist>
                   <item>
                      <p>
                         <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/deliver/d31/deliv_31_part3-2.html#3.2.2.6">"Sign Language presentation"</loc>
-                      gives a
-                      broad overview of issues to consider when filming
-                      sign language interpreters. Includes discussion of
-                      signing both written and spoken originals.</p>
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/deliver/d31/deliv_31_part3-2.html#3.2.2.6">"Sign Language presentation"</loc> では、手話通訳者を撮影する際の留意点の概要を知ることができる。元の素材が書き言葉の場合と話し言葉の場合の両方についての議論も含まれている。</p>
                   </item>
                   <item>
-                     <p>Techniques for filming are discussed in
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">chapter 12, “Filming the Signer(s)"</loc>.</p>
+                     <p>撮影のテクニックについては <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm">chapter 12, “Filming the Signer(s)"</loc> で考察されている。</p>
                   </item>
                   <item>
-                     <p>Useful information about how to display the sign
-                      language interpreter in relation to the original
-                      synchronized media content is provided in
-                      <loc xmlns:xlink="http://www.w3.org/1999/xlink"
-                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide13.htm">Chapter 13, "Editing"</loc>.</p>
+                     <p>オリジナルの同期したメディアコンテンツに関連して手話通訳を表示させる方法についての有益な情報は <loc xmlns:xlink="http://www.w3.org/1999/xlink"
+                             href="http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide13.htm">Chapter 13, "Editing"</loc> で提供されている。</p>
                      <note>
-                        <p>These techniques may need to be adapted for
-                        Web-based presentation.</p>
+                        <p>これらの達成方法はウェブベースの提示にも適用される必要がある。</p>
                      </note>
                   </item>
                </ulist>
