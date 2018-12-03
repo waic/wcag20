@@ -41,8 +41,8 @@
 <div4>
 <head>計算式に関する注記</head>
 <p>RGB 値の非線形から線形への変換は、IEC/4WD 61966-2-1 <bibref ref="IEC-4WD"/> 及び "A Standard Default Color Space for the Internet - sRGB" <bibref ref="sRGB"/> に基づいている。</p>
-<p>コントラストの計算式 (L1/L2) は、<a href="appendixE.html#ISO-9241-3">[ISO-9241-3]</a> 及び <a href="appendixE.html#ANSI-HFES-100-1988">[ANSI-HFES-100-1988]</a> 規格に基づいている。</p>
-<p>ANSI/HFS 100-1988 規格では、L1 及び L2 の計算を含むために、周辺光からの寄与を必要とする。用いている 0.05 という値は、<a href="appendixE.html#IEC-4WD">[IEC-4WD]</a> の Typical Viewing Flare 及び M. Stokes et al の論文 <a href="appendixE.html#sRGB">[sRGB]</a> に基づいている。</p>
+<p>コントラストの計算式 (L1/L2) は、<bibref ref="ISO-9241-3"/> 及び <bibref ref="ANSI-HFES-100-1988"/> 規格に基づいている。</p>
+<p>ANSI/HFS 100-1988 規格では、L1 及び L2 の計算を含むために、周辺光からの寄与を必要とする。用いている 0.05 という値は、<bibref ref="IEC-4WD"/> の Typical Viewing Flare 及び M. Stokes et al の論文 <bibref ref="sRGB"/> に基づいている。</p>
 <p>この達成基準及びその定義では、ウェブコンテンツが光そのものを放たないという事実を反映するために、「輝度」ではなく、「コントラスト比」及び「相対輝度」という用語を用いている。コントラスト比は、コンテンツが表示されたときに生じる相対輝度の評価基準 (尺度) を与える (比率なので無次元である)。</p>
 
 <note>
