@@ -10,7 +10,7 @@
       <success-criterion idref="navigation-mechanisms-refs" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムで解釈可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合:</p>
+    <p>この文書は、リンクの目的を理解するために必要な文脈が、プログラムによる解釈が可能なリンクの文脈ではないコンテンツの中に置かれているという失敗例について解説する。リンクの文脈が次のいずれかの方法で提供されていない場合:</p>
       <ulist>
          <item>
             <p>リンクとして同じ文章、段落、リストの項目、またはテーブルのセルの場合</p>
@@ -22,7 +22,7 @@
             <p><att>aria-label</att> や <att>aria-labelledby</att> などの適切な ARIA プロパティを介する場合</p>
          </item>
       </ulist>
-    <p>利用者はリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムで解釈可能なリンクの文脈ではなく、この失敗例に該当する。</p>
+    <p>利用者はリンクがどこにあるのかを簡単に知ることができない。文脈を探るために利用者がリンクの場所を離れなければならないなら、その文脈はプログラムによる解釈が可能なリンクの文脈ではなく、この失敗例に該当する。</p>
   </description>
    <examples>
       <eg-group role="failure">
@@ -38,7 +38,7 @@ travel on the world's first commercial tourism flights to space.</p>
     </eg-group>
     <eg-group role="failure">
       <head>レイアウトテーブル内の隣接セルのリンク</head>
-      <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムで解釈可能なリンクの文脈ではない。</p>
+      <description><p>あるオーディオサイトではプレーヤーがダウンロードできるリンクを提供している。何がダウンロードされるのかについての情報はレイアウトテーブル内の前の行に置かれており、これはプログラムによる解釈が可能なリンクの文脈ではない。</p>
 </description>
             <codeblock xml:space="preserve"><![CDATA[
  <table>
@@ -88,7 +88,7 @@ travel on the world's first commercial tourism flights to space.</p>
                <p>文脈が同じ文章、段落、リスト項目、テーブルのセル、関連するテーブルのヘッダー、または前の見出しに含まれているかどうかを確認する。</p>
             </item>
             <item>
-               <p>たとえば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分な文脈を提供するなど、リンクの文脈をプログラムで決定できるかどうかを確認する。</p>
+               <p>たとえば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分な文脈を提供するなど、リンクの文脈をプログラムによる解釈が可能かどうかを確認する。</p>
             </item>
          </olist>
       </procedure>
