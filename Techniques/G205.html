@@ -9,7 +9,7 @@
 						クイックリファレンス 1.4.1 (色の使用)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">
 						達成基準 1.4.1 (色の使用)を理解する
-					</a></li></ul></li></ul><h2 id="G205-description">解説</h2><div class="textbody"><p>この達成方法の目的は、情報を伝えるために、色と、テキスト又は文字による手がかりを併用することである。ほとんどの利用者は色の差を用いた情報を素早く認識できる。色を識別できない利用者は、視覚的又は聴覚的にテキストによる手がかりを認識する。点字ディスプレイや、他の触覚インタフェースを使っている人々は触ることでテキストによる手がかりを見つけられる。</p><p>テキストによる手がかりは、フォームコントロールの、プログラムによる解釈が可能な名前の一部に含まれていなければならない。</p></div><h2 class="small-head" id="G205-examples">事例</h2><h3 class="small-head" id="G205-ex1">事例 1: HTML フォームの必須項目</h3><div class="example"><div class="textbody"><p>オンラインフォームで「必須項目は赤で示され、(必須) とマーク付けされている。」と指示されている。「(必須)」という手がかりが <code>label</code> 要素の中に含まれる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="lastname" class="required"&gt;Last name (required): &lt;/label&gt;
+					</a></li></ul></li></ul><h2 id="G205-description">解説</h2><div class="textbody"><p>この達成方法の目的は、情報を伝えるために、色と、テキスト又は文字による手がかりを併用することである。ほとんどの利用者は色の差を用いた情報を素早く認識できる。色を識別できない利用者は、視覚的又は聴覚的にテキストによる手がかりを認識する。点字ディスプレイや、他の触覚インタフェースを使っている人々は触ることでテキストによる手がかりを見つけられる。</p><p>テキストによる手がかりは、フォームコントロールの、プログラムで解釈可能な名前の一部に含まれていなければならない。</p></div><h2 class="small-head" id="G205-examples">事例</h2><h3 class="small-head" id="G205-ex1">事例 1: HTML フォームの必須項目</h3><div class="example"><div class="textbody"><p>オンラインフォームで「必須項目は赤で示され、(必須) とマーク付けされている。」と指示されている。「(必須)」という手がかりが <code>label</code> 要素の中に含まれる。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;label for="lastname" class="required"&gt;Last name (required): &lt;/label&gt;
 &lt;input id="lastname" type="text" size="25" value=""/&gt;
 &lt;style type="text/css"&gt;
   .required {
