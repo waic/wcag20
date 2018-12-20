@@ -16,7 +16,7 @@
     <p>この達成方法を実装するために、コンテンツ制作者は利用者がページ上のすべてのテキストの文字サイズをデフォルト文字サイズの少なくとも 200％の大きさに徐々に増加又は減少させるコントロールを提供する。</p>
     <p>これはリンクやボタンまたはリンク画像によって達成可能であり、そしてそれらコントロールは可能な限り簡単に見つけられるべきである。(ページ内で目立つ場所にある、大きなテキスト、ハイコントラストで表現されているなど。)</p>
     <p>この達成方法は、レガシーコードの場合のように、拡大縮小可能なフォントを用いることができない状況でも同様に用いることができる。</p>
-    <note><p>この達成方法は、不適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替えの達成方法との組み合わせで用いることができる。更なる情報は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head"  linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
+    <note><p>この達成方法は、不適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替えの達成方法との組み合わせで用いることができる。更なる情報は <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head"  linktype="understanding-jp">適合している代替版を理解する</loc>を参照。</p>
                </note>
   </description>
    <examples>

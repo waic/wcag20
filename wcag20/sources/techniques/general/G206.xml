@@ -19,7 +19,7 @@
  linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替え技術と組み合わせて使うこともできる。詳細は、<loc href="C29" linktype="techniques">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</loc> 及び <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                  href="conformance"
                  locn-note="uc-conforming-alt-versions-head"
-                 linktype="understanding">適合している代替版を理解する</loc> を参照のこと。</p>
+                 linktype="understanding-jp">適合している代替版を理解する</loc> を参照のこと。</p>
       </note>
    </description>
    <examples>

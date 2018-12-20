@@ -1144,6 +1144,13 @@
           <xsl:apply-templates/>
         </a>
       </xsl:when>
+      <xsl:when test="@linktype='understanding-jp'">
+		<xsl:variable name="filename"><xsl:apply-templates select="$guide-src//*[@id = current()/@href]" mode="slice-understanding-filename"/></xsl:variable>
+		<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
+        <a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/{$filename}{$fragment}" class="understanding-ref">
+          <xsl:apply-templates/>
+        </a>
+      </xsl:when>
       <xsl:when test="@linktype='techniques'">
       	<xsl:variable name="filename"><xsl:apply-templates select="$techs-src//*[@id = current()/@href]" mode="slice-techniques-filename"/></xsl:variable>
       	<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
