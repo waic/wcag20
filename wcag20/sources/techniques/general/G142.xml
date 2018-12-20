@@ -38,6 +38,9 @@
             <p>利用者がテキストのサイズを変更できるように、Adobe Reader は PDF ページを均一に拡大縮小する拡大鏡機能を提供している。</p>
          </item>
       </ulist>
+    <trnote>
+      <p>ブラウザのズーム機能については、上記のブラウザだけでなく、ほとんどのモダンブラウザで提供されている。</p>
+    </trnote>
    </examples>
    <related-techniques/>
    <tests>
