@@ -23,6 +23,9 @@
    </ua-issues>
    <description id="noembed_desc">
       <p>この達成方法の目的は、<el>embed</el> 要素の代替コンテンツとして <el>noembed</el> を提供することである。<el>noembed</el> 要素は <el>embed</el> 要素がサポートされていない場合のみレンダリングされる。ページのどこにでも配置できるが、<el>embed</el> 要素の子要素として組み込む方が良い。これによりテキストによる代替が <el>embed</el> 要素に関連付けられてことが支援技術にも明らかになる。</p>
+     <trnote>
+       <p><code>noembed</code> 要素は、以前の HTML のバージョンで標準として定義されておらず、HTML5 で改めて廃止された要素として定義された。<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/noembed">MDN の noembed 要素</a> によれば、新規のサイトではこの要素を使用せず、代わりに <code>object</code> 要素の内容として記述するように勧められている。<loc href="H53" linktype="html"/> も参照のこと。</p>
+     </trnote>
    </description>
    <examples>
       <eg-group>
