@@ -118,6 +118,9 @@ function doStuff()
                </p>
             </item>
          </ulist>
+        <trnote>
+          <p>DOM 仕様は現在、WHATWG で策定されている。<a href="https://dom.spec.whatwg.org/">DOM Standard</a> も参照のこと。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
