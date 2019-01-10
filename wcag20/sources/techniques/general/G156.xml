@@ -38,6 +38,9 @@
             <p>HTML と CSS を用いてデザインしているウェブページがある。さまざまなブラウザでどのように色を設定するかを説明したページへのリンクを設置している。</p>
          </item>
       </ulist>
+    <trnote>
+      <p>Firefox 及び Chrome では、例えば Stylus という拡張機能を追加することで、ユーザスタイルシートにより好みの前景色と背景色を指定できる。</p>
+    </trnote>
    </examples>
    <resources/>
    <tests>
