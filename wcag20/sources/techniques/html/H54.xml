@@ -35,7 +35,7 @@ images representing text .</p>]]></code>
             </item>
          </ulist>
         <trnote>
-          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-dfn-element">HTML 5.2§4.5.8. The dfn element</a> を代わりに参照することができる。</p>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-dfn-element">HTML 5.2§4.5.8. The dfn element</a> を代わりに参照できる。</p>
         </trnote>
       </see-also>
    </resources>

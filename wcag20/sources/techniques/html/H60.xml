@@ -49,7 +49,7 @@
             </item>
          </ulist>
        <trnote>
-          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記はそれぞれ、<a href="https://www.w3.org/TR/html52/document-metadata.html#the-link-element">HTML 5.2§4.2.4. The link element</a>、<a href="https://www.w3.org/TR/html52/links.html#sec-link-types">HTML 5.2§4.8.6. Link types</a> を代わりに参照することができる。</p>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記はそれぞれ、<a href="https://www.w3.org/TR/html52/document-metadata.html#the-link-element">HTML 5.2§4.2.4. The link element</a>、<a href="https://www.w3.org/TR/html52/links.html#sec-link-types">HTML 5.2§4.8.6. Link types</a> を代わりに参照できる。</p>
        </trnote>
       </see-also>
    </resources>
