@@ -63,7 +63,7 @@
           <p>各ファイルを XML パーサーにロードする。</p>
         </item>
         <item>
-          <p>well-formed エラーがないことを確認する。</p>
+          <p>well-formedness エラーがないことを確認する。</p>
         </item>
       </olist>
     </procedure>

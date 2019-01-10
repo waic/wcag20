@@ -41,7 +41,7 @@
           <p>ドキュメント内の <code>meta</code> 要素を探す。</p>
         </item>
         <item>
-          <p>各 <code>meta</code> 要素について、<code>http-equiv</code> 属性の値に　"refresh" (大文字小文字を区別しない) が含まれており、かつ <code>content</code> 属性が 0 以上の数値 (秒を表す) で、"; url =" (大文字小文字を区別しない) を含むかどうかを確認する。</p>
+          <p>各 <code>meta</code> 要素について、<code>http-equiv</code> 属性の値に　"refresh" (大文字小文字を区別しない) が含まれており、かつ <code>content</code> 属性の数値 (秒を表す) が 0 以上で、"; url =" (大文字小文字を区別しない) を含まないかどうかを確認する。</p>
         </item>
         <item>
           <p>リフレッシュを無効にするメカニズムがあるかどうかを確認する。</p>
