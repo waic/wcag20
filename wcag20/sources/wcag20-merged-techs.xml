@@ -94,7 +94,7 @@
 この文書 <emph>WCAG 2.0 達成方法集</emph>は、ウェブコンテンツ制作者および評価者向けに <loc href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/> の達成基準を満たすためのガイダンスを提供している。W3C の Web Accessibility Initiative (WAI) が、WCAG 2.0 を補足するために公開している一連の文書の一つである。WCAG 2.0 のイントロダクション、補足する技術文書、そして教材については <loc href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG) Overview</loc> を参照のこと。</p>
 			<p>
 				<phrase id="abstract-techniques-informative">達成方法は、参考情報である。つまり、達成方法は必須要件ではない。WCAG 2.0 への適合の判断は、<loc href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</loc> の達成基準に基づくものであり、達成方法ではない。</phrase>
-				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、WCAG 2.0 解説書の <loc href="understanding-techniques" linktype="understanding">WCAG 達成基準の達成方法を理解する</loc>のセクションを参照のこと。</emph></phrase>
+				<phrase id="abstract-techniques-understanding"><emph role="bold">達成方法に関する重要な情報については、WCAG 2.0 解説書の <loc href="understanding-techniques" linktype="understanding-jp">WCAG 達成基準の達成方法を理解する</loc>のセクションを参照のこと。</emph></phrase>
 			</p>
 			<p id="abstract-not-standalone"><emph>WCAG 2.0 達成方法集</emph>は、独立した文書として利用されることを意図したものではない。コンテンツ制作者が通常は <loc href="https://waic.jp/docs/WCAG20/quickref/">How to meet WCAG 2 (クイックリファレンス)</loc>を利用して、WCAG の達成基準を読み、そこから WCAG 2.0 解説書にある具体的なトピックや具体的な達成方法へのリンクを辿ることを想定している。</p>
 		</abstract>

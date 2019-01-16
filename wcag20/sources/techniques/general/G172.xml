@@ -13,7 +13,7 @@
    <description>
     <p>この達成方法の目的は、両端揃えをしていないバージョンのページを提供することである。</p>
     <p>コンテンツ制作者は、レイアウトの目的でテキストを両端揃えにしたいと思う場合があるかもしれない。この場合、テキストの両端揃えを解除する機能を提供すればよい。そのためのコントロールは、探し出しやすく、アクセスしやすいように、ページの先頭の近くにおくとよい。</p>
-    <note><p>この達成方法は、適合していないコンテンツに対して<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを提示するために、スタイルを切り替える達成方法と組み合わせて用いられる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/> 及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
+    <note><p>この達成方法は、適合していないコンテンツに対して<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページを提示するために、スタイルを切り替える達成方法と組み合わせて用いられる。詳細は、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/> 及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding-jp">適合している代替版を理解する</loc>を参照。</p>
 	</note>
   </description>
    <examples>

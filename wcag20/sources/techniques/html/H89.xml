@@ -35,6 +35,9 @@
       <note>
          <p>現在のユーザエージェントおよび支援技術は <att>title</att> 属性に含まれた情報を利用者に常には提供しない。<att>title</att> 属性が広範囲にサポートされるまではこの達成方法を単独で利用することは避けるべきである。</p>
       </note>
+    <trnote>
+      <p>上記の注記同様、<a href="https://www.w3.org/TR/html52/dom.html#the-title-attribute">HTML 5.2§3.2.5.1. The title attribute</a> の Warning で述べられているように、多くのユーザエージェントではアクセシブルな形でこの属性を公開しないので、<code>title</code> 属性に依存することを勧めていない。</p>
+    </trnote>
    </description>
    <examples>
       <eg-group>

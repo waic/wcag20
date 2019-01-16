@@ -5,6 +5,9 @@
    <short-name><el>applet</el> 要素にテキストによる代替を提供する</short-name>
    <applicability>
       <p><el>applet</el> 要素が非推奨ではない場合に、Java アプレットを読み込んでいる HTML 及び XHTML ドキュメント</p>
+    <trnote>
+      <p><code>applet</code> 要素は、仕様では廃止された要素であり、さらに多くのモダンブラウザでは廃止された機能でもある。詳細については、<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/applet">MDN の applet 要素</a>を参照されたい。また、Oracle 社の <a href="https://www.oracle.com/technetwork/jp/java/eol-135779-ja.html">Oracle Java SE サポート・ロードマップ</a>によれば、Java Plugin のサポートは 2019 年 3 月までと告知されていることに注意されたい。</p>
+    </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>

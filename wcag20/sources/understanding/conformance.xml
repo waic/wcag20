@@ -39,7 +39,7 @@
 <p>あるページ上の情報への補足情報が他のページで提供されることがある。HTML の <code>longdesc</code> 属性がその一例である。<code>longdesc</code> 属性を用いると、その画像のあるページから利用者が移動できる別のページで画像の長い説明文を提供することができる。この注記では、そのような別ページのコンテンツも元のページの一部であると考えて、単一のウェブページであるとみなされる複数のウェブページによって適合要件 2 が満たされるということを明確にしている。また、代替を同一ページ上で提供することも可能である。例としては、ユーザインタフェースのコントロールと等価なものを作成することが挙げられる。</p>
 
 <note>
-<p>適合要件 5 により、たとえページの一部分でアクセシビリティ サポーテッドではないウェブコンテンツ技術を用いていたとしても、それがページの残りの部分の利用を妨げず、すべての情報及び機能がそのページ又はそのページから移動できる別ページのどこかで提供されている限り、ページ全体が適合できる。</p><p>適合していないコンテンツを含めることが可能である。「<loc href="conformance" locn-note="uc-conf-req5-head" linktype="understanding">適合要件 5 を理解する</loc>」を参照のこと。</p>
+<p>適合要件 5 により、たとえページの一部分でアクセシビリティ サポーテッドではないウェブコンテンツ技術を用いていたとしても、それがページの残りの部分の利用を妨げず、すべての情報及び機能がそのページ又はそのページから移動できる別ページのどこかで提供されている限り、ページ全体が適合できる。</p><p>適合していないコンテンツを含めることが可能である。「<loc href="conformance" locn-note="uc-conf-req5-head" linktype="understanding-jp">適合要件 5 を理解する</loc>」を参照のこと。</p>
 </note>
 </div4>
 
@@ -52,7 +52,7 @@
 <div4 id="conf-req4">
 <head>適合要件 4 を理解する</head>
 <p role="ccextsrc" id="cc4"/>
-<p>この適合要件は、後述の<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding">アクセシビリティサポートを理解する</loc>で説明されている。</p>
+<p>この適合要件は、後述の<loc href="conformance" locn-note="uc-accessibility-support-head" linktype="understanding-jp">アクセシビリティサポートを理解する</loc>で説明されている。</p>
 </div4>
 
 <div4 id="conf-req5">
