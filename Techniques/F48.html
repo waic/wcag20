@@ -7,7 +7,7 @@
 						クイックリファレンス 1.3.1 (情報及び関係性)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html">
 						達成基準 1.3.1 (情報及び関係性)を理解する
-					</a></li></ul></li></ul><h2 id="F48-description">解説</h2><div class="textbody"><p>この文書は、表形式の情報をマークアップするために HTML の <code>pre</code> 要素を使用することによって引き起こされる失敗例について説明する。<code>pre</code> 要素は、視覚的なフォーマットだけを保持する。<code>pre</code> 要素を使用して表形式の情報をマークアップすると、利用者ユーザーが画面を見ることができない場合、又は視覚的表現が大きく変化した場合、表のセルとヘッダーとの間で視覚的に暗に示される論理的な関係性が失われる。</p><p>その代わりに、HTML には表形式のデータを提示するために用いる <code>table</code> 要素がある。支援技術は、利用者にデータを論理的な方法で提示するために、HTML のテーブルの構造を用いている。<code>pre</code> 要素を使用した際には、支援技術はその構造に関する情報を得ることができない。</p></div><h2 class="small-head" id="F48-examples">事例</h2><div class="failure"><h3 class="small-head" id="F48-failex1">
+					</a></li></ul></li></ul><h2 id="F48-description">解説</h2><div class="textbody"><p>この文書は、表形式の情報をマークアップするために HTML の <code>pre</code> 要素を使用することによる失敗例について述べている。<code>pre</code> 要素は、テキストの視覚的なフォーマットだけを保持するためのものである。<code>pre</code> 要素を用いて表形式の情報をマークアップすれば、利用者が画面を見ることができない場合、又はその視覚的な表現が大きく変わってしまった場合には、表のデータセルと見出しセルとの間で視覚的にほのめかされている論理的な関係性は失われてしまう。</p><p>その代わりに、HTML には表形式のデータを提示するために用いる <code>table</code> 要素がある。支援技術は、利用者にデータを論理的な方法で提示するために、HTML のテーブルの構造を用いている。<code>pre</code> 要素を使用した際には、支援技術はその構造に関する情報を得ることができない。</p></div><h2 class="small-head" id="F48-examples">事例</h2><div class="failure"><h3 class="small-head" id="F48-failex1">
 					失敗例 1: 列の間をタブ区切りで整形したスケジュール</h3><div class="example"><div class="code"><p><strong>コード例:</strong></p><pre><code>
  &lt;pre&gt;
  	Monday	Tuesday	Wednesday	Thursday	Friday
