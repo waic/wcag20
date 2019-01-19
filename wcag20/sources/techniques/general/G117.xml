@@ -17,7 +17,7 @@
       <eg-group>
       <head>新しいコンテンツをボールドの文字とテキストで示す</head>
       <description>
-            <p>以下の例はアクセシビリティ標準のリストである。WCAG 2.0 は新しいため、ボールドで表示されている。提示のみで情報が提供されることを避けるため、「(new)」という単語も後ろにつけている。</p>
+            <p>以下の例はアクセシビリティ標準のリストである。WCAG 2.0 は新しいため、ボールドで表示されている。単に提示で情報を伝えるのを避けるため、「(new)」という単語も後ろにつけている。</p>
         <trnote>
           <p><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/strong#%3Cb%3E_vs._%3Cstrong%3E">MDN の strong 要素</a>で示されているように、単に字を太くする目的であれば、<code>b</code> 要素を使用するのが適切である。</p>
         </trnote>
