@@ -68,7 +68,7 @@
           <p>非テキストコンテンツが、<code>role="presentation"</code> 又は <code>alt=""</code>を用いるなど、支援技術により無視される方法で実装されているかどうかを確認する。</p>
         </item>
         <item>
-          <p>そのリンクに、<att>aria-label</att> 又は <att>aria-labelledby</att> のような他の方法でアクセシブルな名前 (name) がないことを確認する。</p>
+          <p>そのリンクに、<att>aria-label</att> 又は <att>aria-labelledby</att> のような他の方法でアクセシブルな名前 (name) が提供されていないことを確認する。</p>
         </item>
       </olist>
     </procedure>
