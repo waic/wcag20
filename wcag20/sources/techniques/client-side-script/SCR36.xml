@@ -103,9 +103,5 @@
       <relatedtech idref="SCR33"/>
       <relatedtech idref="SCR22"/>
    </related-techniques>
-   <tests>
-   <procedure>
-      <p>この達成方法についての検証項目はない。</p>
-   </procedure>
-   </tests>
+   <tests/>
 </technique>

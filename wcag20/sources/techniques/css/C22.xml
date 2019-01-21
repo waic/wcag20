@@ -15,8 +15,8 @@
       <success-criterion idref="visual-audio-contrast-text-images" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、CSS を使ってテキストの視覚的な表現を制御する方法を実践することである。これにより利用者が要求を満たすたように、ユーザエージェントを通してテキストの視覚的な特徴を変更できるようになる。テキストの特徴にはサイズ、色、書体、相対配置などの外観を含んでいる。</p>
-    <p>CSS は主に表現からドキュメント構造を分離することによってアクセシビリティに有益さを与える。スタイルシートは、マークアップの外部から字間、文字配列、ページにおけるオブジェクトの配置、音声やスピーチのアウトプット、フォントなどの正確な制御ができるように設計されている。マークアップからスタイルを分離することにより、コンテンツ制作者はコンテンツの中でマークアップを単純化し、整理することができ、同時によりアクセシブルにすることができる。</p>
+    <p>この達成方法の目的は、CSS を使ってテキストの視覚的な提示を制御する方法を実践することである。これにより利用者が要求を満たすたように、ユーザエージェントを通してテキストの視覚的な特徴を変更できるようになる。テキストの特徴にはサイズ、色、書体、相対配置などの外観を含んでいる。</p>
+    <p>CSS は主に提示からドキュメント構造を分離することによってアクセシビリティに有益さを与える。スタイルシートは、マークアップの外部から字間、文字配列、ページにおけるオブジェクトの配置、音声やスピーチのアウトプット、フォントなどの正確な制御ができるように設計されている。マークアップからスタイルを分離することにより、コンテンツ制作者はコンテンツの中でマークアップを単純化し、整理することができ、同時によりアクセシブルにすることができる。</p>
     <p>画像内にあるテキストはいくつかのアクセシビリティ上の問題があり、以下のことができない:</p>
     <ulist>
       <item>
@@ -63,10 +63,10 @@
         <p><code><![CDATA[background-image]]></code> プロパティを使って、非テキストの背景上にテキストを表示させることができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[first-line]]></code> 疑似クラスを使って、テキストのブロックにおける最初の行の表現を修正することができる。</p>
+        <p><code><![CDATA[first-line]]></code> 疑似クラスを使って、テキストのブロックにおける最初の行の提示を修正することができる。</p>
       </item>
       <item>
-        <p><code><![CDATA[:first-letter]]></code> 疑似クラスを使って、テキストのブロックにおける最初の文字の表現を修正することができる。</p>
+        <p><code><![CDATA[:first-letter]]></code> 疑似クラスを使って、テキストのブロックにおける最初の文字の提示を修正することができる。</p>
       </item>
       <item>
         <p><code><![CDATA[:before]]></code> と <code><![CDATA[:after]]></code> 疑似クラスを使って、テキストのブロックの前後に装飾的な非テキストコンテンツを挿入することができる。</p>
@@ -250,7 +250,7 @@ Never forget this in the  midst of your diagrams and equations. </p>
 }]]></code>
     </eg-group>
     <eg-group>
-      <head>テキストの最初の行の表現を制御するために CSS の first-line を使用する。</head>
+      <head>テキストの最初の行の提示を制御するために CSS の first-line を使用する。</head>
       <description><p>CSS の <code>:first-line</code> 疑似クラスを使って、最初の行をより大きなサイズで赤色に表示する。</p>
 <p>XHTML:</p>
 </description>
@@ -263,7 +263,7 @@ Never forget this in the  midst of your diagrams and equations. </p>
       <code><![CDATA[.startline:first-line { font-size:2em; color:#990000; }]]></code>
     </eg-group>
     <eg-group>
-      <head>テキストの最初の文字の表現を制御するために CSS の first-letter を使用する。</head>
+      <head>テキストの最初の文字の提示を制御するために CSS の first-letter を使用する。</head>
       <description><p>CSS の <code>:first-letter</code> 疑似クラスを使って、最初の文字をより大きなサイズで赤く、縦位置を中央揃えにして表示する。</p>
 <p>XHTML:</p>
 </description>
@@ -311,14 +311,14 @@ Never forget this in the  midst of your diagrams and equations. </p>
       <procedure>
       <olist>
         <item>
-          <p>CSS のプロパティを用いてテキストの視覚的な表現を制御している。</p>
+          <p>CSS のプロパティを用いてテキストの視覚的提示を制御しているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

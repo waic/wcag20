@@ -44,14 +44,14 @@
       <p>ウェブページ内の各リンクに対して:</p>
       <olist>
         <item>
-          <p>そのリンクが関連する情報へのリンクである。</p>
+          <p>そのリンクが関連する情報へのリンクへつながっていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

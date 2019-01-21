@@ -5,6 +5,9 @@
    <short-name>利用者の要求に応じて新しいウィンドウを開くために target 属性を使用して、そのことをリンクテキストで明示する</short-name>
    <applicability>
       <p>HTML5、HTML 4.01 Transitional 及び XHTML 1.0 Transitional</p>
+      <trnote>
+        <p>HTML4 及び XHTML 1.0 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="consistent-behavior-no-extreme-changes-context"
@@ -39,17 +42,17 @@
           <p>新しいウィンドウが開くかどうか確認するために、ドキュメント内の各リンクを起動させる。</p>
         </item>
         <item>
-          <p>新しいウィンドウを開くリンクに <att>target</att> 属性が指定されている。</p>
+          <p>新しいウィンドウを開くリンクに <att>target</att> 属性が指定されていることを確認する。</p>
         </item>
         <item>
-          <p>リンクテキストには、新しいウィンドウが開くことを示す情報が含まれている。</p>
+          <p>リンクテキストには、新しいウィンドウが開くことを示す情報が含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. 及び 3. を満たしている。</p>
+          <p>2. 及び 3. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -88,14 +88,14 @@ function validate() {
           <p>無効なデータを入力する。</p>
         </item>
         <item>
-          <p>エラーを説明している警告が提供されている。</p>
+          <p>エラーを説明している警告が提供されているかどうかを判断する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている</p>
+               <p>2. の結果が真である</p>
             </item>
          </ulist>
       </expected-results>

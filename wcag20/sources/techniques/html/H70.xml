@@ -47,6 +47,9 @@
                        href="http://www.jimthatcher.com/webcourse4.htm">Accessible Navigation</loc></p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記に関して、frame 要素及び frameset 要素は <a href="https://www.w3.org/TR/html52/obsolete.html#frames">HTML 5.2§11.3.3. Frames</a> で廃止された機能として定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -54,10 +57,10 @@
    </related-techniques>
    <tests>
     <procedure>
-      <p>そのウェブページで、フレームを用いてコンテンツを構成している場合:</p>
+      <p>ウェブページが、フレームを用いてコンテンツを構成している場合:</p>
       <olist>
         <item>
-          <p>繰り返されているコンテンツのブロックそれぞれを、別々のフレームにまとめていることを確認する。</p>
+          <p>繰り返されているコンテンツのブロックそれぞれを、別々のフレームにまとめているかどうかを確認する。</p>
         </item>
         <item>
           <p>繰り返されているコンテンツのフレームそれぞれが、各ページのフレームセット内で同じ場所に出現することを確認する。</p>
@@ -67,7 +70,7 @@
       <expected-results>
        <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>
