@@ -278,17 +278,17 @@ about the button action.
       <procedure>
          <olist>
             <item>
-               <p>一意な ID を経由して一つ以上の要素を参照する <att>aria-describedby</att> 属性を持つユーザインタフェースコントロールがあることをチェックする。</p>
+               <p>一意な ID を経由して一つ以上の要素を参照する <att>aria-describedby</att> 属性を持つユーザインタフェースコントロールがあることを確認する。</p>
             </item>
             <item>
-               <p>参照される要素 (一つまたは複数) が、ユーザインタフェースコントロールに関する追加情報を提供することをチェックする。</p>
+               <p>参照される要素 (一つ又は複数) が、ユーザインタフェースコントロールに関する追加情報を提供することを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

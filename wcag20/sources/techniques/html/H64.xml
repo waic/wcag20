@@ -78,23 +78,26 @@
                     "Implementing Frame Titles"</loc></p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記に関して、frame 要素は <a href="https://www.w3.org/TR/html52/obsolete.html#frames">HTML 5.2§11.3.3. Frames</a> で廃止された機能として定義されており、iframe 要素は <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#elementdef-iframe">HTML 5.2§4.7.6. The iframe element</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <tests>
      <procedure>
       <olist>
         <item>
-          <p>HTML 又は XHTML のソースコードにある <el>frame</el> 要素と <el>iframe</el> 要素のそれぞれに、<att>title</att> 属性が指定されている。</p>
+          <p>HTML 又は XHTML のソースコードにある <el>frame</el> 要素及び <el>iframe</el> 要素のそれぞれに、<att>title</att> 属性が存在するかどうかを確認する。</p>
         </item>
         <item>
-          <p><att>title</att> 属性の値として、そのフレームを特定できるテキストがある。</p>
+          <p><att>title</att> 属性の値として、そのフレームを特定できるテキストがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -96,14 +96,14 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
       <procedure>
       <olist>
         <item>
-          <p>ウェブページが描画された際、利用者の行動を伴わず、一定時間後に自動的に他のページへリダイレクトされる。</p>
+          <p>ウェブページがレンダリングされたとき、利用者が何もしなくても、一定時間後に自動的に他のページへリダイレクトするかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>そのようなリダイレクトがみつかった場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>そのようなリダイレクトが見つかった場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

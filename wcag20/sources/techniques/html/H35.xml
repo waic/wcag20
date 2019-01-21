@@ -5,6 +5,9 @@
    <short-name><el>applet</el> 要素にテキストによる代替を提供する</short-name>
    <applicability>
       <p><el>applet</el> 要素が非推奨ではない場合に、Java アプレットを読み込んでいる HTML 及び XHTML ドキュメント</p>
+    <trnote>
+      <p><code>applet</code> 要素は、仕様では廃止された要素であり、さらに多くのモダンブラウザでは廃止された機能でもある。詳細については、<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/applet">MDN の applet 要素</a>を参照されたい。また、Oracle 社の <a href="https://www.oracle.com/technetwork/jp/java/eol-135779-ja.html">Oracle Java SE サポート・ロードマップ</a>によれば、Java Plugin のサポートは 2019 年 3 月までと告知されていることに注意されたい。</p>
+    </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="text-equiv-all" relationship="sufficient"/>
@@ -40,20 +43,20 @@
       <procedure>
       <olist>
         <item>
-          <p><el>applet</el> 要素のソースコードを見る。</p>
+          <p><el>applet</el> 要素のソースコードを見る</p>
         </item>
         <item>
-          <p>アプレットに対するテキストによる代替が <el>applet</el> 要素の <att>alt</att> 属性にある</p>
+          <p>アプレットに対するテキストによる代替が <el>applet</el> 要素の <att>alt</att> 属性にあることを確認する</p>
         </item>
         <item>
-          <p>アプレットに対するテキストによる代替が <el>applet</el> 要素のボディの中にある。</p>
+          <p>アプレットに対するテキストによる代替が <el>applet</el> 要素のボディの中にあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. 及び 3. を満たしている。</p>
+          <p>2. 及び 3. の結果が真である。</p>
         </item>
       </ulist>
      </expected-results>

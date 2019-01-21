@@ -30,7 +30,7 @@
     <p>この達成方法は、ページの代替版のテキスト (又はテキストの画像) に背景と 4.5:1 のコントラストがある、及び大きいサイズのテキスト (又は大きなテキストの画像) に背景と 3:1 のコントラストがあることによって達成基準 1.4.3 を満たすために用いることができる。もしページの代替版に 7:1 のコントラストのあるテキスト (テキストの画像) と 4.5:1 のコントラストのある大きいサイズのテキスト (又は大きなテキストの画像) があるならば、それは達成基準 1.4.3 と 1.4.6 の両方を満たしている。</p>
     <note>
       <p>この達成方法は、不適合コンテンツのための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="guideline">適合している代替版</loc>である現在のページにスタイルを切り替える達成方法と組み合わせることで用いることができる。詳しくは、
-<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照。</p>
+<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="C29" linktype="css"/>と<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding-jp">適合している代替版を理解する</loc>を参照。</p>
     </note>
   </description>
    <examples>
@@ -53,20 +53,20 @@
       <procedure>
       <olist>
         <item>
-          <p>オリジナルページ上に代替版へのアクセスを提供するリンクやコントロールがある。</p>
+          <p>オリジナルページ上に代替版へのアクセスを提供するリンク又はコントロールがあることを確認する。</p>
         </item>
         <item>
-          <p>オリジナルページのリンクやコントロールが、該当する適合レベルの全ての達成基準に適合している。</p>
+          <p>オリジナルページのリンク又はコントロールが、テストされている適合レベルの全ての達成基準に適合していることを確認する。</p>
         </item>
         <item>
-          <p>代替版のページが、コントラスト及び該当する適合レベルの他の全ての達成基準を満たしている。</p>
+          <p>代替版が、テストされている適合レベルのコントラスト及び他の全ての達成基準を満たしていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記の全てを満たしている。</p>
+               <p>上記の全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

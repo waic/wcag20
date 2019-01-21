@@ -63,12 +63,12 @@
           <p>各ファイルを XML パーサーにロードする。</p>
         </item>
         <item>
-          <p>well-formed に関するエラーがないことをチェックする。</p>
+          <p>well-formedness エラーがないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
-         <p>2. を満たしている。</p>
+         <p>2. の結果が真である。</p>
       </expected-results>
    </tests>
 </technique>

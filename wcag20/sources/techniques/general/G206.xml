@@ -19,7 +19,7 @@
  linktype="glossary">適合している代替版</loc>のページを表示させるためのスタイル切り替え技術と組み合わせて使うこともできる。詳細は、<loc href="C29" linktype="techniques">C29: 適合している代替版を提供するために、スタイルスイッチャーを使用する</loc> 及び <loc xmlns:xlink="http://www.w3.org/1999/xlink"
                  href="conformance"
                  locn-note="uc-conforming-alt-versions-head"
-                 linktype="understanding">適合している代替版を理解する</loc> を参照のこと。</p>
+                 linktype="understanding-jp">適合している代替版を理解する</loc> を参照のこと。</p>
       </note>
    </description>
    <examples>
@@ -41,10 +41,10 @@
       <procedure>
          <olist>
             <item>
-               <p>最大ウィンドウ幅で横スクロールが必要なコンテンツを開く。</p>
+               <p>フルスクリーンのウィンドウで横スクロールが必要なコンテンツを開く。</p>
             </item>
             <item>
-               <p>1 行のテキストを読むために横スクロールが不要になるように切り替えられるオプションがコンテンツに含まれている。</p>
+               <p>1 行のテキストを読むために横スクロールが不要になるように切り替えられるオプションがコンテンツに含まれていることを確認する。</p>
             </item>
             <item>
                <p>そのオプションを有効にする。</p>
@@ -57,7 +57,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 4. を満たしている。</p>
+               <p>2. 及び 4. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

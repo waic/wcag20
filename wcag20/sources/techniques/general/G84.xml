@@ -28,17 +28,17 @@
       <procedure>
       <olist>
         <item>
-          <p>フォーム項目に無効なデータを入力する。</p>
+          <p>フォームフィールドに無効なデータを入力する。</p>
         </item>
         <item>
-          <p>エラーに関する情報がテキストで提供される。</p>
+          <p>問題点に関して情報がテキストで提供されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -85,17 +85,17 @@ travel on the world's first commercial tourism flights to space.</p>
          <p>リンクの目的を理解するために、追加が必要なリンクの文脈を探す。各リンクについて:</p>
          <olist>
             <item>
-               <p>文脈が同じ文章、段落、リスト項目、テーブルのセル、関連するテーブルのヘッダー、または前の見出しに含まれているかどうかを確認する。</p>
+               <p>コンテキストが同じ文章、段落、リスト項目、テーブルのセル、関連するテーブルのヘッダー、または前の見出しに含まれているかどうかを確認する。</p>
             </item>
             <item>
-               <p>たとえば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分な文脈を提供するなど、リンクの文脈をプログラムによる解釈が可能かどうかを確認する。</p>
+               <p>例えば、リンク上で <att>aria-label</att>、<att>aria-labelledby</att>、<att>aria-describedby</att> などの WAI-ARIA プロパティを使用して、十分なコンテキストを提供するなど、リンクのコンテキストをプログラムによる解釈が可能かどうかを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1 及び 2 が偽である場合、このコンテンツは達成基準に合格しない。</p>
+               <p>1 及び 2 の結果が偽である場合、このコンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

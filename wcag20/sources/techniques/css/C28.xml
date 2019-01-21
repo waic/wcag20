@@ -62,14 +62,14 @@ Firefox及びIE6より後のバージョンのIEでは、ハイコントラス�
           <p>テキストを含む、又はテキストの入力を受け付けるコンテナを特定する。</p>
         </item>
         <item>
-          <p>そのコンテナの幅及び又は高さは <code>em</code> 単位で指定されている。</p>
+          <p>そのコンテナの幅及び／又は高さが <code>em</code> 単位で指定されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

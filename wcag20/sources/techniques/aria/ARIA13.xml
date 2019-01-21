@@ -83,17 +83,17 @@ This calendar shows the game schedule for the Boston Red Sox.
                        href="http://www.w3.org/TR/wai-aria/roles#landmark_roles">ランドマークロール</loc>を持ち、<code><![CDATA[aria-labelledby]]></code> 属性も存在している各要素を調べる。</p>
             </item>
             <item>
-               <p><code><![CDATA[aria-labelledby]]></code> 属性値が、ページ上の要素の id である。</p>
+               <p><code><![CDATA[aria-labelledby]]></code> 属性値が、ページ上の要素の id であることを確認する。</p>
             </item>
             <item>
-               <p>その <code><![CDATA[id]]></code> を持つ要素のテキストが、ページのセクションを正確にラベル付けしている。</p>
+               <p>その <code><![CDATA[id]]></code> を持つ要素のテキストが、ページのセクションを正確にラベル付けしていることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. 及び 3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

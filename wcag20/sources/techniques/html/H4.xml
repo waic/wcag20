@@ -89,17 +89,17 @@
       <procedure>
        <olist>
         <item>
-          <p><att>tabindex</att> が使われている。</p>
+          <p><att>tabindex</att> が使われているかどうかを確認する。</p>
         </item>
         <item>
-          <p><att>tabindex</att> が使われているならば、<att>tabindex</att> 属性により指定されたタブ順番がコンテンツの関係に従っている。</p>
+          <p><att>tabindex</att> が使われている場合、<att>tabindex</att> 属性により指定されたタブ順番がコンテンツの関係に従っていることを確認する。</p>
         </item>
        </olist>
       </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>2. を満たしている。</p>
+          <p>2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

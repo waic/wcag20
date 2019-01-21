@@ -34,6 +34,9 @@ images representing text .</p>]]></code>
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-dfn-element">HTML 5.2§4.5.8. The dfn element</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -46,14 +49,14 @@ images representing text .</p>]]></code>
           <p>テキストの中で、インラインで定義されている単語、つまり単語の近くの文章に定義が出現するものを全て特定する。</p>
         </item>
         <item>
-          <p>インラインで定義されているそれぞれの単語が、<el>dfn</el> 要素に含まれている。</p>
+          <p>インラインで定義されているそれぞれの単語が、<el>dfn</el> 要素に含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. を満たしている。</p>
+          <p>2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

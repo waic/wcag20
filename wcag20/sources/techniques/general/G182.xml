@@ -16,7 +16,7 @@
       <note>
          <p>この達成方法が達成基準 1.4.1 の視覚的な必須要件を満たしている時、色によって伝えられる情報は、達成基準 1.3.1 も満たすようプログラムで利用可能でなければならない。<loc xmlns:xlink="http://www.w3.org/1999/xlink"
                  href="content-structure-separation-programmatic"
-                 linktype="understanding">How to Meet 1.3.1</loc> を参照のこと。</p>
+                 linktype="understanding-jp">How to Meet 1.3.1</loc> を参照のこと。</p>
       </note>
   </description>
    <examples>
@@ -44,17 +44,17 @@
       <procedure>
       <olist>
         <item>
-          <p>テキストの色を用いて情報を伝えている箇所を探す。</p>
+          <p>テキストの色を用いて情報を伝えている全ての箇所を探す。</p>
         </item>
         <item>
-          <p>色を用いて情報を伝えているテキストは、スタイルも変えているか、又はその周囲にあるその他のテキストと視覚的に区別がつくフォントを用いている。</p>
+          <p>色を用いて情報を伝えているテキストは、スタイルも変えているか、又はその周囲にあるその他のテキストと視覚的に区別がつくフォントを用いていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2.を満たしている。</p>
+               <p>2.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

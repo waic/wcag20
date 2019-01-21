@@ -41,14 +41,14 @@
       <procedure>
       <olist>
         <item>
-          <p>テキストが、左揃え又は右揃えになっている。</p>
+          <p>テキストが、左揃え又は右揃えのいずれかになっていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

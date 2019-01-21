@@ -36,14 +36,14 @@
           <p>CAPTCHA をテキストによる代替に置き換える。</p>
         </item>
         <item>
-          <p>テキストによる代替が CAPTCHA の目的を説明している。</p>
+          <p>テキストによる代替が CAPTCHA の目的を説明していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3. を満たしている。</p>
+               <p>3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

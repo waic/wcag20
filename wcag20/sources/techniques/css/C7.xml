@@ -17,7 +17,7 @@
 リンクテキストを非表示にするこの達成方法は、スクリーンリーダーの利用者や企業のウェブコンテンツ制作者の一部によって支持されている。一部のウェブサイトにおいては効果があることも立証されている。しかし、結果的に説明が冗長になることがある上に、熟練したスクリーンリーダーの利用者にはその冗長な説明の読み上げを制御することを要求することもありうるため、スクリーンリーダーの利用者やアクセシビリティの専門家の中には、一般的な達成方法としてはこれを推奨していない人もいる。WCAG ワーキンググループとしては、同じコンテンツが非表示にしたテキストで繰り返されていないのであれば、この達成方法は有用だと考えている。</p>
 
 <p>
-この達成方法は、適合していないコンテンツ向けの <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページで解説されているスタイルスイッチングを行う達成方法との組み合わせで使用することも可能である。詳しい情報については、<specref ref="C29"/>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding">適合している代替版を理解する</loc>を参照のこと。</p></note>
+この達成方法は、適合していないコンテンツ向けの <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>のページで解説されているスタイルスイッチングを行う達成方法との組み合わせで使用することも可能である。詳しい情報については、<specref ref="C29"/>及び<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conformance" locn-note="uc-conforming-alt-versions-head" linktype="understanding-jp">適合している代替版を理解する</loc>を参照のこと。</p></note>
   </description>
    <examples>
       <eg-group>
@@ -100,20 +100,20 @@
       <p>この達成方法を使用している各 <el>a</el> 要素に対して:</p>
       <olist>
         <item>
-          <p>説明を付加するテキストを提供する要素のスタイルが、1 ピクセル四方の中に収められ、かつ「overflow: hidden;」の状態で表示領域の外側に配置されるように定義されている。</p>
+          <p>説明を付加するテキストを提供する要素のスタイルが、1 ピクセル四方の中に収められ、かつ「overflow: hidden;」の状態で表示領域の外側に配置されるように定義されていることを確認する。</p>
         </item>
         <item>
-          <p>そのスタイルが定義されている要素が <el>a</el> 要素の中に含まれている。</p>
+          <p>そのスタイルが定義されている要素が <el>a</el> 要素の中に含まれていることを確認する。</p>
         </item>
         <item>
-          <p><el>a</el> 要素の中のコンテンツを組み合わせると、何へのリンクであるかの説明になっている。</p>
+          <p><el>a</el> 要素の中のコンテンツを組み合わせると、何へのリンクであるかの説明になっていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記すべてを満たしている。</p>
+          <p>上記全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

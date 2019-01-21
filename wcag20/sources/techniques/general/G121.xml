@@ -43,20 +43,20 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>発音情報を提供すべき単語の全てについて:</p>
+      <p>発音情報を必要とする単語の全てについて:</p>
       <olist>
         <item>
-          <p>少なくともその単語の最初の出現箇所がリンクになっている</p>
+          <p>少なくともその項目の最初のインスタンスがリンクであることを確認する。</p>
         </item>
         <item>
-          <p>そのようなすべてのリンクが単語の発音に関する情報にリンクしている。</p>
+          <p>各リンクが項目の発音に関する情報にナビゲートすることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記全てを満たしている。</p>
+               <p>上記全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

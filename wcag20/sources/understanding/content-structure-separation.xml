@@ -10,7 +10,7 @@
 <p>このガイドラインに属する達成基準はすべて、他のモダリティで提示できるようにするために、提示で埋め込まれている様々な種類の情報も利用可能にすることを保証するよう努めるものである。</p><!-- レビューコメントに基づき、encoded→embeddedに読み替えて訳出 https://github.com/waic/wcag20/pull/219#discussion_r195698602 -->
 <ulist>
 	<item><p><termdef id="structuredefinline" term="構造">ウェブページの各部分が互いに関してどのように組織されるか、及びウェブページの集合がどのように組織されるか。</termdef></p></item>
-	<item><p><termdef id="presentationdefinline" term="表現">利用者が知覚できる形式でのコンテンツのレンダリング。</termdef></p></item>
+	<item><p><termdef id="presentationdefinline" term="提示">利用者が知覚できる形式でのコンテンツのレンダリング。</termdef></p></item>
 </ulist>
 </div2>
 

@@ -105,13 +105,13 @@ Acrobat® 9 Pro Accessibility Guide: Creating Accessible PDF from Microsoft®	Wo
       <procedure>
       <olist>
         <item><p>次のいずれかにより、文書のデフォルト言語が正しく指定されていることを確認する。</p>
-<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、正しい自然言語でテキストが読み上げられる</p></item><item><p>PDF エディタを使用して、言語がデフォルト文書言語に設定されていることを確認する</p></item><item><p>文書カタログ内の /Lang エントリ値を表示できるツールを使用して PDF 文書を開き、言語設定を表示する</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、言語がデフォルト言語に設定されていることを確認する</p></item></ulist></item>
+<ulist><item><p>PDF 文書をスクリーンリーダーで読み上げると、正しい自然言語でテキストが読み上げられる。</p></item><item><p>PDF エディタを使用して、言語がデフォルト文書言語に設定されていることを確認する。</p></item><item><p>文書カタログ内の /Lang エントリ値を表示できるツールを使用して PDF 文書を開き、言語設定を表示する。</p></item><item><p>アクセシビリティ API を通じて文書を表示するツールを使用して、言語がデフォルト言語に設定されていることを確認する。</p></item></ulist></item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>1. を満たしている。</p>
+          <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

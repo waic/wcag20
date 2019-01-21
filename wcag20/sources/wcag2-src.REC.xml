@@ -429,7 +429,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる三つの重要な用語が用いら�
                 </item>
                 <item>
                   <p>
-                    <emph role="bold">必要不可欠:</emph> テキストの特定の表現が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
+                    <emph role="bold">必要不可欠:</emph> テキストの特定の提示が、伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である。</p>
                 </item>
               </ulist>
               <note>
@@ -497,7 +497,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる三つの重要な用語が用いら�
             </div5>
             <div5 role="sc" id="visual-audio-contrast-text-images">
               <head>文字画像 (例外なし) </head>
-              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">純粋な装飾</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の表現が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である場合に用いられている。</p>
+              <p role="v"><termref def="images-of-textdef">文字画像</termref>は、<termref def="puredecdef">純粋な装飾</termref>に用いられているか、<termref def="textdef">テキスト</termref>の特定の提示が伝えようとする情報にとって<termref def="essentialdef">必要不可欠</termref>である場合に用いられている。</p>
               <note>
                 <p>ロゴタイプ (ロゴ又はブランド名の一部である文字) は必要不可欠なものであると考えられる。</p>
               </note>
@@ -1448,7 +1448,7 @@ WCAG 2.0 では、WCAG 1.0 とは異なる三つの重要な用語が用いら�
         <gitem id="extended-addef">
           <label>拡張音声解説 (extended audio description)</label>
           <def>
-            <p><termref def="videodef">映像</termref>を一時停止することで追加の説明を付加するための時間を確保し、視聴覚プレゼンテーションに付加した音声解説。</p>
+            <p><termref def="videodef">映像</termref>を一時停止することで追加の説明を付加するための時間を確保し、視聴覚提示に付加した音声解説。</p>
             <note>
               <p>この達成方法は、追加の<termref def="audiodescdef">音声解説</termref>がないと<termref def="videodef">映像</termref>の意味が損なわれてしまい、かつ会話やナレーションの合間が短すぎる場合だけに用いられる。</p>
             </note>

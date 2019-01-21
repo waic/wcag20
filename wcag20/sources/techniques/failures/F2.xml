@@ -2,9 +2,9 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F2">
-   <short-name>達成基準 1.3.1 の失敗例 － 情報を伝えるために、適切なマークアップ又はテキストを用いずに、テキストの見栄えの変化を使用している</short-name>
+   <short-name>達成基準 1.3.1 の失敗例 － 情報を伝えるために、適切なマークアップ又はテキストを用いずに、テキストの提示の変化を使用している</short-name>
    <applicability>
-      <p>画像又は表現のマークアップをサポートする全てのウェブコンテンツ技術</p>
+      <p>画像又は提示のマークアップをサポートする全てのウェブコンテンツ技術</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -76,20 +76,20 @@
    <tests>
       <procedure>
       <olist>
-        <item><p>文字画像について:</p>
-			<olist><item><p>すべての文字画像が、ドキュメントの構造情報を伝えるために使用されているかどうかを確認する。</p></item>
+        <item><p>文字画像の場合:</p>
+			<olist><item><p>全ての文字画像が、ドキュメントの構造情報を伝えるために使用されているかどうかを確認する。</p></item>
                   <item><p>適切なセマンティック構造 (例: HTML の見出し) が情報を伝えるためにテキストとともに使用されていることを確認する。</p></item></olist></item>
-        <item><p>(何らかの構造的な) 情報を表すために見た目が変更されているテキストについて:</p>
-			<olist><item><p>構造的な情報を表現するために、見た目が変更されているテキストがある。</p></item><item><p>見た目に加えて、適切なセマンティック構造によってテキストが表されている。</p></item></olist></item>
+        <item><p>(何らかの構造的な) 情報を表すために見た目が変更されているテキストの場合:</p>
+			<olist><item><p>構造的な情報を表現するために、見た目が変更されているテキストがある。</p></item><item><p>見た目に加えて、適切なセマンティック構造によってテキストが表されていることを確認する。</p></item></olist></item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. の a. に該当する場合は、1. の b. を満たしている。</p>
+          <p>1. の a. の結果が真である場合は、1. の b. の結果が真である。</p>
         </item>
         <item>
-          <p>2. の a. に該当する場合は、2. の b. を満たしている。</p>
+          <p>2. の a. の結果が真である場合は、2. の b. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>
