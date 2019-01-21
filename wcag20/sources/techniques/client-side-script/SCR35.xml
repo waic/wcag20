@@ -119,6 +119,7 @@ function doStuff()
             </item>
          </ulist>
         <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記はそれぞれ、<a href="https://www.w3.org/TR/html52/semantics-scripting.html#semantics-scripting">HTML 5.2§4.12. Scripting</a>、<a href="https://www.w3.org/TR/html52/sec-forms.html#sec-forms">HTML 5.2§4.10. Forms</a>、<a href="https://www.w3.org/TR/html52/links.html#links">HTML 5.2§4.8. Links</a>を代わりに参照できる。</p>
           <p>DOM 仕様は現在、WHATWG で策定されている。<a href="https://dom.spec.whatwg.org/">DOM Standard</a> も参照のこと。</p>
         </trnote>
       </see-also>

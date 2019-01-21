@@ -5,6 +5,9 @@
    <short-name>ruby 要素を使用する</short-name>
    <applicability>
       <p>XHTML 1.1 及び HTML5</p>
+      <trnote>
+        <p>XHTML 1.1 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>

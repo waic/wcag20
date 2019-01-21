@@ -20,6 +20,9 @@
 									HTML 4.x と XHTML 1.x では、mata 要素を用いることでクライアントサイドのリダイレクトが実装できる。<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="H76" linktype="html"/> を参照のこと。
 									
                             </p>
+        <trnote>
+          <p>HTML 4.x 及び XHTML 1.x は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+        </trnote>
 </description>
     </eg-group>
    </examples>

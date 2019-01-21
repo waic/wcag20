@@ -100,6 +100,7 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
          </ulist>
         <trnote>
           <p>「background property」は、<a href="https://www.w3.org/TR/css-backgrounds-3/#the-background">CSS Backgrounds and Borders Module Level 3§3.10. Backgrounds Shorthand: the background property</a> で再定義されている。この仕様は W3C 勧告ではないが、<a href="https://www.w3.org/TR/css-2018/">CSS Snapshot 2018</a> によれば、今日の CSS を構成する仕様として位置づけられている。</p>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。HTML5 において、body 要素の background 属性は、は <a href="https://www.w3.org/TR/html52/obsolete.html#element-attrdef-body-background">HTML 5.2§11.2. Non-conforming features</a> で不適合な機能として定義されている。</p>
         </trnote>
       </see-also>
    </resources>
