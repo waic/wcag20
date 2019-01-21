@@ -37,6 +37,9 @@
     </eg-group>
    </examples>
    <resources>
+    <trnote>
+      <p>以下に示される参考リソースは、W3C HTML5 勧告以前に作成されたものが多数であり、その多くは HTML5 への対応がなされていないと考えられる。そのため、WAIC では翻訳を行っていない。</p>
+    </trnote>
       <see-also>
          <ulist>
             <item>
