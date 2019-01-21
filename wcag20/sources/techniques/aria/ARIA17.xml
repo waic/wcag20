@@ -111,17 +111,17 @@
          <p>各コントロールに対する個別のラベルが十分な説明を提供せず、かつ追加のグループレベルの説明が必要とされる場合、関連するコントロールグループに対して:</p>
          <olist>
             <item>
-               <p>論理的に関連する input 又は select 要素のグループが role=group をもつ要素内に含まれている。</p>
+               <p>論理的に関連する input 又は select 要素のグループが role=group をもつ要素内に含まれていることを確認する。</p>
             </item>
             <item>
-               <p>このグループが <att>aria-label</att> 又は <att>aria-labelledby</att> を使用して定義されるアクセシブルな名前を持つことをチェックする。</p>
+               <p>このグループが <att>aria-label</att> 又は <att>aria-labelledby</att> を使用して定義されるアクセシブルな名前を持つことを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

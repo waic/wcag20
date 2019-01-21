@@ -33,17 +33,17 @@
       <procedure>
       <olist>
         <item>
-          <p>type 属性の値が「image」であるすべての <el>input</el> 要素に、alt 属性がある。</p>
+          <p>type 属性の値が "image" であるすべての <el>input</el> 要素に、<att>alt</att> 属性があることを確認する。</p>
         </item>
         <item>
-          <p>その alt 属性がボタンの機能を説明している。</p>
+          <p>その <att>alt</att> 属性がボタンの機能を説明していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

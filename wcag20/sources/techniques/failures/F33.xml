@@ -61,17 +61,17 @@ range of people with disabilities,        wide variety of assistive technologies
       <procedure>
       <olist>
         <item>
-          <p>データや情報の文書が、多段組で示されている。</p>
+          <p>データ又は情報の文書が、多段組で示されている。</p>
         </item>
         <item>
-          <p>段組みが空白文字列を用いて情報を配置して作られている。</p>
+          <p>段組みが空白文字列を用いて情報を配置して作られているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2. が真である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>手順 2. の結果が真である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

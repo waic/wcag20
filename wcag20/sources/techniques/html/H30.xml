@@ -80,6 +80,9 @@ Woodend Music Festival Program
 </article>]]></code>
             <p><loc href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/H30/link-wraps-block.html">ブロックレベル要素をリンクで囲む実例</loc>を示す。
             </p>
+        <trnote>
+          <p>HTML5 ではブロックレベル要素は定義されていない。<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Block-level_elements">ブロックレベル要素 - HTML: HyperText Markup Language | MDN</a> も参照のこと。</p>
+        </trnote>
       </eg-group> 
    </examples>
    <resources>
@@ -90,6 +93,9 @@ Woodend Music Festival Program
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。<a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text">HTML 5.1§4.7.5.1. Requirements for providing text to act as an alternative for images</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -110,18 +116,17 @@ Woodend Music Festival Program
           <p><el>img</el> 要素だけが <el>a</el> 要素のコンテンツである場合、<el>img</el> 要素のテキストによる代替がリンクの目的を説明している。</p>
         </item>
         <item>
-          <p><el>a</el> 要素が一つ又はそれ以上の <el>img</el> 要素を含み、<el>img</el> 要素のテキストによる代替が
-空の場合、リンクのテキストがリンクの目的を説明している。</p>
+          <p><el>a</el> 要素が一つ以上の <el>img</el> 要素を含み、かつ <el>img</el> 要素のテキストによる代替が空の場合、リンクのテキストがリンクの目的を説明していることを確認する。</p>
         </item>
         <item>
-          <p><el>a</el> 要素がテキストのみを含んでいる場合、テキストがリンクの目的を説明している。</p>
+          <p><el>a</el> 要素がテキストのみを含んでいる場合、そのテキストがリンクの目的を説明していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記のすべてを満たしている。</p>
+          <p>上記の全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

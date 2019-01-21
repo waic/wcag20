@@ -32,17 +32,17 @@
           <p>宣言した適合レベルで WCAG に適合していないページを特定する。</p>
         </item>
         <item>
-          <p>そのページには、適合している代替版へのリンクがある。</p>
+          <p>そのページには、そのページの適合している代替版へのリンクが含まれているかどうかを確認する。</p>
         </item>
         <item>
-          <p>代替版が、オリジナルページの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>であり、かつ要求された適合レベルで WCAG 2.0 に適合している。</p>
+          <p>代替版が、オリジナルページの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc>であり、かつ要求された適合レベルで WCAG 2.0 に適合しているかどうかを判断する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 及び 3. を満たしている。</p>
+               <p>2. と 3. の両方の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -5,6 +5,9 @@
    <short-name>ruby 要素を使用する</short-name>
    <applicability>
       <p>XHTML 1.1 及び HTML5</p>
+      <trnote>
+        <p>XHTML 1.1 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="meaning-pronunciation" relationship="sufficient"/>
@@ -97,20 +100,20 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>読みかたを提供するルビ注釈をつけた、連続するテキストについて:</p>
+      <p>読みかたを提供するためにルビ注釈が使用されている、連続するテキストについて:</p>
       <olist>
         <item>
-          <p><el>rb</el> 要素で定義した連続するテキストに、<el>rt</el> 要素で読みかたが指定してある。</p>
+          <p><el>rb</el> 要素で定義した連続するテキストに、<el>rt</el> 要素で読みかたが指定してあることを確認する。</p>
         </item>
         <item>
-          <p>単純ルビマークアップを用いている場合、<el>rp</el> 要素を指定して、ルビをサポートしていないユーザエージェントに対して、<el>rt</el> 要素に囲まれたテキストが読み方を提供していることを示している。</p>
+          <p>単純ルビマークアップを用いている場合、<el>rp</el> 要素があることを確認し、ルビ注釈をサポートしていないユーザエージェントに対して、<el>rt</el> 要素に囲まれたテキストが読み方を提供している。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

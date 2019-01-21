@@ -47,20 +47,20 @@
       <procedure>
       <olist>
         <item>
-          <p>ユーザエージェントでコンテンツを表示させる。</p>
+          <p>ユーザエージェントでコンテンツを表示する。</p>
         </item>
         <item>
           <p>そのコンテンツを 200% にズームする。</p>
         </item>
         <item>
-          <p>全てのコンテンツと機能が利用可能である。</p>
+          <p>全てのコンテンツ及び機能が利用可能かどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3.を満たしている。</p>
+               <p>3.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -37,20 +37,20 @@
       <procedure>
          <olist>
             <item>
-               <p>エラーがないようにフォームに入力する。</p>
+               <p>エラーがないようにフォームフィールドに入力する。</p>
             </item>
             <item>
                <p>フォームを送信する。</p>
             </item>
             <item>
-               <p>正常に送信できたことが、フィードバックメッセージとして表示されている。</p>
+               <p>正常に送信できたことが、画面上にフィードバックメッセージとして確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3. を満たしている。</p>
+               <p>3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

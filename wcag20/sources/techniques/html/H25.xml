@@ -38,6 +38,9 @@
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/document-metadata.html#the-title-element">HTML 5.2§4.2.2. The title element</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -48,17 +51,17 @@
      <procedure>
       <olist>
         <item>
-          <p>HTML 又は XHTML ドキュメントのソースコードに、<el>head</el> 要素内に空でない <el>title</el> 要素がある。</p>
+          <p>HTML 又は XHTML ドキュメントのソースコードを調べ、<el>head</el> 要素内に空でない <el>title</el> 要素があることを確認する。</p>
         </item>
         <item>
-          <p><el>title</el> 要素がドキュメントを説明している。</p>
+          <p><el>title</el> 要素がドキュメントを説明していることを確認する。</p>
         </item>
       </olist>
     </procedure> 
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

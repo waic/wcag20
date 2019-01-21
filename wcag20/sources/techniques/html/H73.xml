@@ -66,6 +66,9 @@ Service begins at 4:00 AM and ends at midnight.">
 								       </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/obsolete.html#element-attrdef-table-summary">HTML 5.2§11.2. Non-conforming features</a> で不適合な機能として定義されている。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -77,15 +80,15 @@ Service begins at 4:00 AM and ends at midnight.">
       <procedure>
        <p>各データテーブルにおいて:</p>
       <olist>
-        <item><p><att>summary</att> 属性がある場合、その <att>summary</att> 属性がテーブルの構造を記述しているか、または、テーブルの使い方を説明していることを確認する。</p></item>
-        <item><p>データテーブルに <att>summary</att> 属性と <el>caption</el>  要素の両方が存在している場合、<att>summary</att> 属性の内容が単に <el>caption</el> 要素の繰り返しになっていないことを確認する。</p>
+        <item><p><att>summary</att> 属性がある場合、その <att>summary</att> 属性がテーブルの構造を記述しているか、又は、テーブルの使い方を説明していることを確認する。</p></item>
+        <item><p>データテーブルに <att>summary</att> 属性と <el>caption</el> 要素の両方が存在している場合、<att>summary</att> 属性の内容が単に <el>caption</el> 要素の繰り返しになっていないことを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>#1 と #2 を満たしている。。</p>
+          <p>1 及び 2 の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

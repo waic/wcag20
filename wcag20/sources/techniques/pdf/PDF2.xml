@@ -107,17 +107,17 @@ endobj
       <procedure>
       <olist>
         <item>
-          <p>しおりパネルにしおりが表示されている。</p>
+          <p>しおりパネルにしおりが表示されていることを確認する。</p>
         </item>
         <item>
-          <p>しおりが文書内の正しいセクションにリンクされている。</p>
+          <p>しおりが文書内の正しいセクションにリンクされていることを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>1. および 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -5,6 +5,9 @@
    <short-name>構造をマークアップするために、セマンティックな要素を使用する</short-name>
    <applicability>
       <p>HTML 4.01 及び XHTML 1.x を含むマークアップ言語</p>
+      <trnote>
+        <p>HTML 4.01 及び XHTML 1.x は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      </trnote>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -120,6 +123,9 @@
                 </p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/textlevel-semantics.html#textlevel-semantics">HTML 5.2: 4.5. Text-level semantics</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -135,17 +141,17 @@
       <procedure>
       <olist>
         <item>
-          <p>セマンティックな機能を有するコンテンツがある。</p>
+          <p>セマンティックな機能を有するコンテンツの部分があるかどうかを確認する。</p>
         </item>
         <item>
-          <p>セマンティックな機能がある部分に対応するセマンティックなマークアップがウェブコンテンツ技術に存在する場合、コンテンツがそのセマンティックなマークアップを用いてマークアップされている。</p>
+          <p>セマンティックな機能がある部分について、対応するセマンティックなマークアップがウェブコンテンツ技術に存在する場合、コンテンツがそのセマンティックなマークアップを用いてマークアップされていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2 を満たしている。</p>
+               <p>2 の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

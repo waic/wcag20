@@ -24,7 +24,14 @@
     <note>
       <p>HTML では <att>lang</att> 属性のみを使用できる。XHTML 1.0 では移行措置として両方の属性を使用できる。XHTML 1.1 では xml:lang 属性のみを使用できる。</p>
     </note>
+    <trnote>
+      <p>HTML 4.01、XHTML 1.0 及び XHTML 1.1 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+      <p>現在の HTML においては、text/html として提供される場合は <code>lang</code> 属性を、application/xhtml+xml として提供される場合は <code>xml:lang</code> 属性をそれぞれ用いればよい。両方の属性を同時に用いてもよいが、その場合は属性値を同じ値にする必要がある。<a href="https://www.w3.org/TR/html52/dom.html#the-lang-and-xmllang-attributes">HTML 5.2§3.2.5.2. The lang and xml:lang attributes</a> も参考のこと。</p>
+    </trnote>
     <p><att>lang</att> 及び <att>xml:lang</att> 属性に指定できる値については、以下に示す参考リソースに示されている。言語タグは、言語を表すプライマリーコードと、その言語が使用される地域や記述に用いる文字コードなどを表すサブコードから成っている。サブコードの指定は任意で、指定する場合にはプライマリーコードに続けてハイフンを記述し、その後に記述する。たとえば、プライマリーコード「en」は英語を示し、「en-gb」と「en-us」はそれぞれイギリス英語とアメリカ英語を示す。この達成方法において、プライマリーコードの使用は重要である。サブコードの使用は任意だが、状況によっては有用なものになり得る。</p>
+    <trnote>
+      <p>上記の「プライマリーコード」及び「サブコード」は古い HTML に基づいた説明である。現在の HTML に基づいた言語タグの組み立て方については、<a href="#H58-resources">参考リソース</a>にある「Language tags in HTML and XML」を参照のこと。</p>
+    </trnote>
     <a11ysuprorted rating="good" exnumber="0"/>
   </description>
    <examples>
@@ -79,28 +86,26 @@
       <p>ドキュメントにおける各要素について:</p>
       <olist>
         <item>
-          <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.asahi-net.or.jp/~sd5a-ucd/rec-html401j/struct/dirlang.html#h-8.1.2" xlink:type="simple">言語コードの継承 (HTML4.01)</loc> で示されているように、その要素のコンテンツの自然言語が、その要素に継承されている言語と同一である。</p>
+          <p>要素のコンテンツの自然言語が、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/dirlang.html#h-8.1.2" xlink:type="simple">HTML 4.01, Inheritance of language codes</loc> で指定されているように、要素に継承されている言語と同一であることを確認する</p>
         </item>
       </olist>
       <p>ドキュメントにおける各 <att>lang</att> 属性について:</p>
       <olist>
         <item>
-          <p><att>lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
-                    Identification of Languages</loc> に適合している。</p>
+          <p><att>lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又はその後継に適合していることを確認する</p>
         </item>
       </olist>
-      <p>ドキュメントにおける各 xml:lang 属性について:</p>
+      <p>ドキュメントにおける各 <att>xml:lang</att> 属性について:</p>
       <olist>
         <item>
-          <p><att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
-                    Identification of Languages</loc> に適合している。</p>
+          <p><att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又はその後継に適合していることを確認する</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>上記の全てを満たしている。</p>
+          <p>上記の全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -46,6 +46,9 @@
          <head>ナビゲーションランドマークを区別する</head>
          <description>
             <p>次の例は、同じページに同じ種類のランドマークが 2 個以上存在し、かつページ内にラベルとして参照できる既存のテキストが存在しない場合に、HTML4 及び XHTML 1.0 文書内で二つのナビゲーションランドマークを識別するために <att>aria-label</att> をどのように使用するのかを示している。</p>
+            <trnote>
+              <p>HTML4 及び XHTML 1.0 は Superseded Recommendation としてマークされ、廃止された仕様である。</p>
+            </trnote>
             <codeblock xml:space="preserve"><![CDATA[<div role="navigation" aria-label="Primary">
 <ul><li>...a list of links here ...</li></ul> </div>
 <div role="navigation" aria-label="Secondary">
@@ -112,7 +115,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

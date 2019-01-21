@@ -59,16 +59,16 @@
         </item>
         <item><p>そのコンテンツ中で、視覚的レイアウトのみの目的でテーブルが用いられている場合</p>
 			<olist>
-            <item><p>その <el>table</el> 要素には、<el>th</el> 要素が含まれていない。</p></item>
-            <item><p>その <el>table</el> 要素に対して、値が空ではない <att>summary</att> 属性が指定されていない。</p></item>
-            <item><p>その <el>table</el> 要素には <el>caption</el> 要素が含まれていない。</p></item></olist>
+            <item><p>その <el>table</el> 要素には、<el>th</el> 要素が含まれていないことを確認する。</p></item>
+            <item><p>その <el>table</el> 要素が、値が空ではない <att>summary</att> 属性を含んでいないことを確認する。</p></item>
+            <item><p>その <el>table</el> 要素が <el>caption</el> 要素を含んでいないことを確認する。</p></item></olist>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記のすべてが偽である場合、失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>上記の結果のいずれかが偽である場合、失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

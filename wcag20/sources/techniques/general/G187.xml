@@ -40,14 +40,14 @@
           <p>ブラウザのアニメーションを止めるコマンドを実行する。(通常は、Esc キー)</p>
         </item>
         <item>
-          <p>点滅が止まっている。</p>
+          <p>点滅が止まっているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>3.を満たしている。</p>
+               <p>3.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>
