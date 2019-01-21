@@ -53,14 +53,14 @@
           <p>その要約の読みやすさを評価する。</p>
         </item>
         <item>
-          <p>その要約が前期中等教育レベルを超えた読解力を必要としていない。</p>
+          <p>その要約が前期中等教育レベルを超えた読解力を必要としていない こ。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -67,20 +67,20 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
       <procedure>
       <olist>
         <item>
-          <p>Live HTTP Header ビューアを用いて、"Content-Language" ヘッダーの値を確認する。</p>
+          <p>Live HTTP Header ビューアを用いて、"Content-Language" ヘッダーの値を調べる。</p>
 <trnote>
 <p>「Live HTTP Header」が正確に何を指すのか不明であるが、代わりに各種ブラウザの開発ツールで確かめることができる。<a href="https://developers.google.com/web/tools/chrome-devtools/network-performance/resource-loading?hl=ja">リソース読み込み時間の測定  |  Tools for Web Developers  |  Google Developers</a>、<a href="https://developer.mozilla.org/ja/docs/Tools/Network_Monitor">ネットワークモニター - 開発ツール | MDN</a>、<a href="https://docs.microsoft.com/ja-jp/microsoft-edge/devtools-guide/network">Microsoft Edge DevTools - Network - Microsoft Edge Development | Microsoft Docs</a> がそれぞれ参考になる。</p>
 </trnote>
         </item>
         <item>
-          <p>その値がウェブページの主たる自然言語と合致している。</p>
+          <p>その値がウェブページの主たる自然言語と一致していることを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>2. を満たしている。</p>
+          <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

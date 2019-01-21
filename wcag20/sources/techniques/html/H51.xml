@@ -82,16 +82,16 @@
       <procedure>
       <olist>
         <item>
-          <p>表形式の情報がある。</p>
+          <p>表形式の情報があることを確認する。</p>
         </item>
         <item><p>表形式の情報それぞれについて:</p>				
-          <olist><item><p>テーブルを、少なくとも <el>table</el>、<el>tr</el>、<el>th</el>、<el>td</el> 要素を使ってマークアップしている。</p></item></olist></item>
+          <olist><item><p>少なくとも <el>table</el>、<el>tr</el>、<el>th</el>、及び <el>td</el> 要素をもつテーブルマークアップが使用されていることを確認する。</p></item></olist></item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -111,17 +111,17 @@ body { background: #ffe url('/images/home-bg.jpg') repeat; }
       <procedure>
       <olist>
         <item>
-          <p>装飾目的の画像がある。</p>
+          <p>装飾目的の画像の存在を確認する。</p>
         </item>
         <item>
-          <p>それらが CSS で表示させられている。</p>
+          <p>それらが CSS に含まれていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>1. に該当する場合に、2. を満たしている。</p>
+          <p>1. の結果が真である場合に、2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

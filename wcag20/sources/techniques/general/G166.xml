@@ -29,17 +29,17 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>映像しか含まないウェブページに対して:</p>
+      <p>映像しか含まないコンテンツがあるウェブページに対して:</p>
       <olist>
         <item>
-          <p>映像しか含まないコンテンツの直前又は直後に、映像のコンテンツを説明する代替の音声コンテンツへのリンクがある。</p>
+          <p>映像しか含まないコンテンツの直前又は直後に、映像のコンテンツを説明する音声代替へのリンクがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

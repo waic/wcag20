@@ -65,17 +65,17 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
       <procedure>
       <olist>
         <item>
-          <p>見かけ上のテーブルがドキュメントにある。</p>
+          <p>視覚的に整形されたテーブルのドキュメントを調べる。</p>
         </item>
         <item>
-          <p>空白文字を使ってデータをテーブル形式にレイアウトしてテーブルが作られている。</p>
+          <p>テーブルのデータをレイアウトするために空白文字を使ってテーブルが作られているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>手順 2. が真である場合、この失敗例の条件は適用され、コンテンツはこれらの達成基準の失敗となる。</p>
+               <p>手順 2. の結果が真である場合、この失敗例の条件は適用され、コンテンツはこれらの達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

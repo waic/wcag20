@@ -311,14 +311,14 @@ Never forget this in the  midst of your diagrams and equations. </p>
       <procedure>
       <olist>
         <item>
-          <p>CSS のプロパティを用いてテキストの視覚的な表現を制御している。</p>
+          <p>CSS のプロパティを用いてテキストの視覚的な表現を制御しているかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

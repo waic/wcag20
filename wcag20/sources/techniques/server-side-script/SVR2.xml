@@ -88,21 +88,21 @@ ErrorDocument 403 http://example.com/documents/index.html]]></code>
       <procedure>
       <olist>
         <item>
-          <p>宣言している適合レベルで WCAG に適合していないページで、.htaccess ファイルの使用によってアクセシブルな代替版が提供されているものを特定する。</p>
+          <p>.htaccess ファイルの使用に基づいてアクセシブルな代替が提供されるところで、宣言している適合レベルで WCAG に適合していないページを特定する。</p>
         </item>
         <item>
           <p>不適合のコンテンツの URI を開く。</p>
         </item>
-        <item><p>結果となるページが次のうちのひとつである:</p>
+        <item><p>結果となるページが次のうちのいずれかであることを確認する:</p>
 						<olist>
 						<item><p>不適合のコンテンツの<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="conforming-alternate-versiondef" linktype="glossary">適合している代替版</loc></p></item>
-						<item><p>適合している代替版と不適合のコンテンツ双方へのリンクを含むページ</p></item></olist></item>
+						<item><p>適合している代替版と不適合のコンテンツの両方へのリンクを含むページ</p></item></olist></item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>3.a. 又は 3.b. を満たしている。</p>
+          <p>3.a. 又は 3.b. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

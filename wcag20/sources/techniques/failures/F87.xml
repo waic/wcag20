@@ -79,20 +79,20 @@ q:after  { content: close-quote }]]></code>
       <procedure>
       <olist>
         <item>
-          <p><code><![CDATA[:before]]></code> や <code><![CDATA[:after]]></code> の疑似要素及び <code><![CDATA[content]]></code> プロパティを用いて挿入されている全てのコンテンツを探し出す。</p>
+          <p><code><![CDATA[:before]]></code> 及び <code><![CDATA[:after]]></code> 疑似要素並びに <code><![CDATA[content]]></code> プロパティを用いて挿入されている全てのコンテンツを探し出す。</p>
         </item>
         <item>
-          <p>コンテンツは、装飾を目的にしたものである。</p>
+          <p>コンテンツが、装飾を目的にしたものであることを確認する。</p>
         </item>
         <item>
-          <p>挿入されたコンテンツが装飾を目的にしたものではない場合、その情報が支援技術に対して提供されており、CSS をオフにした際にも入手可能である。</p>
+          <p>挿入されたコンテンツが装飾を目的にしたものではない場合、その情報が支援技術に対して提供されており、CSS をオフにした際にも入手可能であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. 又は 3. が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
+               <p>2. 又は 3. の結果が偽である場合、この失敗例の条件は適用され、コンテンツは達成基準の失敗となる。</p>
             </item>
          </ulist>
       </expected-results>

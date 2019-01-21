@@ -86,14 +86,14 @@ brought by members of the National Writers Union against ......</p>  ]]></code>
      <procedure>
       <olist>
         <item>
-          <p>略語それぞれに、<el>abbr</el> 要素で元の語や定義を指定している。</p>
+          <p>略語それぞれに、<el>abbr</el> 要素で元の語や定義を指定していることを確認する。</p>
         </item>
       </olist>
      </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1.を満たしている。</p>
+          <p>1.の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

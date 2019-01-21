@@ -72,17 +72,17 @@ more information on that area." />
       <p>イメージマップ上の各 <el>area</el> 要素について:</p>
       <olist>
         <item>
-          <p>その <el>area</el> 要素に <att>alt</att> 属性を指定している。</p>
+          <p>その <el>area</el> 要素に <att>alt</att> 属性があることを確認する。</p>
         </item>
         <item>
-          <p><att>alt</att> 属性で指定したテキストによる代替が、<el>area</el> 要素で定義したイメージマップ上の領域と同じ目的を果たしている。</p>
+          <p><att>alt</att> 属性で指定したテキストによる代替が、イメージマップの <el>area</el> 要素で参照されるイメージマップ画像の一部と同じ目的を果たしていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>上記全てを満たしている。</p>
+          <p>上記全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

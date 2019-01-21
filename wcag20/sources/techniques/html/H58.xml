@@ -79,28 +79,26 @@
       <p>ドキュメントにおける各要素について:</p>
       <olist>
         <item>
-          <p><loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.asahi-net.or.jp/~sd5a-ucd/rec-html401j/struct/dirlang.html#h-8.1.2" xlink:type="simple">言語コードの継承 (HTML4.01)</loc> で示されているように、その要素のコンテンツの自然言語が、その要素に継承されている言語と同一である。</p>
+          <p>要素のコンテンツの自然言語が、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/1999/REC-html401-19991224/struct/dirlang.html#h-8.1.2" xlink:type="simple">HTML 4.01, Inheritance of language codes</loc> で指定されているように、要素に継承されている言語と同一であることを確認する</p>
         </item>
       </olist>
       <p>ドキュメントにおける各 <att>lang</att> 属性について:</p>
       <olist>
         <item>
-          <p><att>lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
-                    Identification of Languages</loc> に適合している。</p>
+          <p><att>lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又はその後継に適合していることを確認する</p>
         </item>
       </olist>
-      <p>ドキュメントにおける各 xml:lang 属性について:</p>
+      <p>ドキュメントにおける各 <att>xml:lang</att> 属性について:</p>
       <olist>
         <item>
-          <p><att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the
-                    Identification of Languages</loc> に適合している。</p>
+          <p><att>xml:lang</att> 属性の値が <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</loc> 又はその後継に適合していることを確認する</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
        <ulist>
         <item>
-          <p>上記の全てを満たしている。</p>
+          <p>上記の全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

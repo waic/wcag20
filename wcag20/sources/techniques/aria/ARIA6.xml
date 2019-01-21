@@ -112,7 +112,7 @@
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

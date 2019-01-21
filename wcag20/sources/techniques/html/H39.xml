@@ -49,14 +49,14 @@
                <p>テーブルに <el>caption</el> 要素が含まれていることを確認する。</p>
             </item>
             <item>
-               <p><el>caption</el> 要素の内容がテーブルを識別しているかどうかを確認する。</p>
+               <p><el>caption</el> 要素の内容がテーブルを識別していることを確認する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 2. を満たしている。</p>
+               <p>1. 及び 2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

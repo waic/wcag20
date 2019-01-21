@@ -48,17 +48,17 @@
      <procedure>
       <olist>
         <item>
-          <p>HTML 又は XHTML ドキュメントのソースコードに、<el>head</el> 要素内に空でない <el>title</el> 要素がある。</p>
+          <p>HTML 又は XHTML ドキュメントのソースコードを調べ、<el>head</el> 要素内に空でない <el>title</el> 要素があることを確認する。</p>
         </item>
         <item>
-          <p><el>title</el> 要素がドキュメントを説明している。</p>
+          <p><el>title</el> 要素がドキュメントを説明していることを確認する。</p>
         </item>
       </olist>
     </procedure> 
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。</p>
+          <p>1. 及び 2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

@@ -86,17 +86,17 @@ Jean-Guy Millome, and represents ...</p>]]></codeblock>
                <p><att>aria-describedby</att> 属性が存在する各画像要素を調べる。</p>
             </item>
             <item>
-               <p>その <att>aria-describedby</att> 属性が、その説明として用いられるテキストを含む要素の <att>id</att> を介して、要素とテキストの説明とをプログラム的に関連付けている。</p>
+               <p>その <att>aria-describedby</att> 属性が、その説明として用いられるテキストを含む要素の <att>id</att> を介して、要素とテキストの説明とをプログラム的に関連付けているかどうかを調べる。</p>
             </item>
             <item>
-               <p>結合された同等のテキスト及び関連付けられたテキストの説明が、オブジェクトに同等の目的を正確に説明する又は提供している。</p>
+               <p>結合された同等のテキスト及び関連付けられたテキストの説明が、オブジェクトに同等の目的を正確に説明する又は提供していることを調べる。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.、2. 及び 3. を満たしている</p>
+               <p>1.、2. 及び 3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

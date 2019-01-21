@@ -101,20 +101,20 @@ type="text" size="4" value="" >
       <procedure>
       <olist>
         <item>
-          <p><el>label</el> 要素によって関連付けられていないフォームコントロールを特定する。</p>
+          <p><el>label</el> 要素に関連付けられていない各フォームコントロールを特定する。</p>
         </item>
         <item>
-          <p>そのコントロールに <att>title</att> 属性が指定されている。</p>
+          <p>そのコントロールに <att>title</att> 属性が指定されていることを確認する。</p>
         </item>
         <item>
-          <p><att>title</att> 属性によってそのコントロールの目的を特定している。</p>
+          <p><att>title</att> 属性がそのコントロールの目的を特定していることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>上記全てを満たしている</p>
+          <p>上記全ての結果が真である。</p>
         </item>
       </ulist>
       </expected-results>
