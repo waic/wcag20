@@ -79,14 +79,14 @@
       <p>一般的でない、又は限定された用途で用いられる個々の単語又は語句に対して:</p>
       <olist>
         <item>
-          <p>単語又は語句に対して定義が提供されている。</p>
+          <p>単語又は語句に対して定義が提供されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1.を満たしている。</p>
+               <p>1.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

@@ -70,17 +70,17 @@
       <procedure>
       <olist>
         <item>
-          <p>ページの内容がセクションに分けられている。</p>
+          <p>セクションで構成されたコンテンツのあるページを調べる。</p>
         </item>
         <item>
-          <p>それぞれのセクションに見出しがある。</p>
+          <p>それぞれのセクションに見出しがあることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

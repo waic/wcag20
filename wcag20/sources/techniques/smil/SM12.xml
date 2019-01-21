@@ -130,20 +130,20 @@
       <procedure>
       <olist>
         <item>
-          <p>プレーヤーにキャプションの設定がある場合には、キャプションの表示を選択する。</p>
+          <p>プレーヤーにキャプションの設定がある場合には、キャプションの表示を有効にする。</p>
         </item>
         <item>
           <p>キャプションのあるファイルを再生する。</p>
         </item>
         <item>
-          <p>キャプションが表示される。</p>
+          <p>キャプションが表示されることを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>3.を満たしている。</p>
+          <p>3.の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

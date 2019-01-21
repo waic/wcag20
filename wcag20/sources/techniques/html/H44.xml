@@ -98,6 +98,9 @@
 		</p>
             </item>
          </ulist>
+        <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記は、<a href="https://www.w3.org/TR/html52/sec-forms.html#the-label-element">HTML 5.2§4.10.4. The label element</a> を代わりに参照できる。</p>
+        </trnote>
       </see-also>
    </resources>
    <related-techniques>
@@ -107,35 +110,35 @@
    </related-techniques>
    <tests>
       <procedure>
-      <p>ウェブページ内の <att>type="text"</att>、<att>type="file"</att>、<att>type="password"</att> を指定した <el>input</el> 要素、<el>textarea</el> 要素、<el>select</el> 要素全てについて:</p>
+      <p>ウェブページ内の <att>type="text"</att>、<att>type="file"</att>、又は <att>type="password"</att> を指定した <el>input</el> 要素、<el>textarea</el> 要素、及び <el>select</el> 要素全てについて:</p>
       <olist>
         <item>
-          <p><el>input</el> 要素、<el>textarea</el> 要素及び <el>select</el> 要素の前に、そのコントロールの目的が特定できる <el>label</el> 要素がある。</p>
+          <p><el>input</el> 要素、<el>textarea</el> 要素又は <el>select</el> 要素の前に、そのコントロールの目的を特定できる <el>label</el> 要素があることを確認する。</p>
         </item>
         <item>
-          <p><el>label</el> 要素の <att>for</att> 属性値が、<el>input</el> 要素、<el>textarea</el> 要素及び <el>select</el> 要素の <el>id</el> と一致している。</p>
+          <p><el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素、<el>textarea</el> 要素又は <el>select</el> 要素の <el>id</el> と一致している。</p>
         </item>
         <item>
-          <p><el>label</el> 要素のラベルが視覚的に認識できる状態である。</p>
+          <p><el>label</el> 要素のラベルが表示されていることを確認する。</p>
         </item>
       </olist>
       <p>ウェブページ内の <att>type="checkbox"</att> 及び <att>type="radio"</att> を指定した <el>input</el> 要素全てについて:</p>
       <olist>
         <item>
-          <p><el>input</el> 要素の後に、そのコントロールの目的が特定できる <el>label</el> 要素があるか確認する。</p>
+          <p><el>input</el> 要素の後に、そのコントロールの目的を特定する <el>label</el> 要素があることを確認する。</p>
         </item>
         <item>
-          <p><el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性と一致している。</p>
+          <p><el>label</el> 要素の <att>for</att> 属性が、<el>input</el> 要素の <att>id</att> 属性と一致していることを確認する。</p>
         </item>
         <item>
-          <p><el>label</el> 要素のラベルが視覚的に認識できる状態である。</p>
+          <p><el>label</el> 要素のラベルが表示されていることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>1. 及び 2. を満たしている。達成基準 3.3.2 に関しては、3. も満たしている。</p>
+          <p>1. 及び 2. の結果が真である。達成基準 3.3.2 に関しては、3. の結果も真である。</p>
         </item>
       </ulist>
       </expected-results>

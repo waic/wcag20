@@ -33,17 +33,17 @@
       <procedure>
       <olist>
         <item>
-          <p>文字サイズが 200％に拡大する。</p>
+          <p>テキストサイズを 200％に拡大する。</p>
         </item>
         <item>
-          <p>すべてのコンテンツと機能が閲覧及び使用可能である。</p>
+          <p>全てのコンテンツ及び機能が利用可能であるかどうかを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>2. を満たしている。</p>
+               <p>2. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

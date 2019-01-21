@@ -168,20 +168,20 @@ $(document).ready(function(e) {
       <procedure>
          <olist>
             <item>
-               <p><code><![CDATA[role=alert]]></code> 又は <code><![CDATA[aria-live=assertive]]></code> 属性が指定された空のエラーコンテナが、ページの読み込み時の DOM に存在する。</p>
+               <p><code><![CDATA[role=alert]]></code> 又は <code><![CDATA[aria-live=assertive]]></code> 属性が指定された空のエラーコンテナが、ページの読み込み時の DOM に存在することを判断する。</p>
             </item>
             <item>
                <p>ライブ領域のコンテンツの表示又更新を引き起こすエラーをトリガーする。</p>
             </item>
             <item>
-               <p>エラーメッセージが既に存在するエラーコンテナに挿入されたことをチェックする。</p>
+               <p>エラーメッセージが既に存在するエラーコンテナに挿入されたことを判断する。</p>
             </item>
          </olist>
       </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. 及び 3. を満たしている。</p>
+               <p>1. 及び 3. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

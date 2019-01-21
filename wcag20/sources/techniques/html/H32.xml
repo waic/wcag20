@@ -63,17 +63,17 @@
       <procedure>
       <olist>
         <item>
-          <p>コンテンツ内の全てのフォームを見る。</p>
+          <p>コンテンツ内の全てのフォームを見つける。</p>
         </item>
         <item>
-          <p>それぞれのフォームに、送信ボタン (input type="submit"、input type="image" 又は button type="submit") がある。</p>
+          <p>それぞれのフォームに、送信ボタン (input type="submit"、input type="image" 又は button type="submit") があることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
         <item>
-          <p>2. を満たしている。 </p>
+          <p>2. の結果が真である。</p>
         </item>
       </ulist>
       </expected-results>

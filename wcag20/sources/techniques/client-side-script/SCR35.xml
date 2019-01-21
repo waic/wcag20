@@ -119,6 +119,7 @@ function doStuff()
             </item>
          </ulist>
         <trnote>
+          <p>HTML 4.01 は Superseded Recommendation としてマークされ、廃止された仕様である。上記はそれぞれ、<a href="https://www.w3.org/TR/html52/semantics-scripting.html#semantics-scripting">HTML 5.2§4.12. Scripting</a>、<a href="https://www.w3.org/TR/html52/sec-forms.html#sec-forms">HTML 5.2§4.10. Forms</a>、<a href="https://www.w3.org/TR/html52/links.html#links">HTML 5.2§4.8. Links</a>を代わりに参照できる。</p>
           <p>DOM 仕様は現在、WHATWG で策定されている。<a href="https://dom.spec.whatwg.org/">DOM Standard</a> も参照のこと。</p>
         </trnote>
       </see-also>
@@ -134,28 +135,28 @@ function doStuff()
    </related-techniques>
    <tests>
       <procedure>
-      <p><el>a</el>、<el>button</el>、又は <el>input</el> 要素と関連付けられたすべてのスクリプトのアクション:</p>
+      <p><el>a</el>、<el>button</el>、又は <el>input</el> 要素と関連付けられたすべてのスクリプトのアクションについて:</p>
       <olist>
         <item><p>スクリプトをサポートするユーザエージェントで:</p>
 						<ulist><item><p>マウスを用い、コントロールをクリックする。</p></item>
-<item><p>スクリプトのアクションが正しく実行される。</p></item>
-<item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出されない。</p></item>
-<item><p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p></item>
-<item><p>キーボードのフォーカスをコントロールにセットする。</p></item>
-<item><p>Enter キーを押すことで、スクリプトのアクションを呼び出すことができる。</p></item>
-<item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出されない。</p></item></ulist></item>
+<item><p>スクリプトのアクションが適切に実行されることを確認する。</p></item>
+<item><p>コントロールがアンカー要素である場合、アンカー要素の <att>href</att> 属性の URI が呼び出されないことを確認する。</p></item>
+<item><p>キーボードでコントロールに移動して、フォーカスを与えることが可能であることを確認する。</p></item>
+<item><p>キーボードのフォーカスをコントロールに設定する。</p></item>
+<item><p>Enter キーを押すことで、スクリプトのアクションを呼び出すことを確認する。</p></item>
+<item><p>コントロールがアンカー要素である場合、アンカー要素の <att>href</att> 属性の URI が呼び出されないことを確認する。</p></item></ulist></item>
         <item><p>スクリプトをサポートしていないユーザエージェントで:</p>
 						<ulist><item><p>マウスでコントロールをクリックする。</p></item>
-<item><p>もしコントロールがアンカー要素なら、アンカー要素の <att>href</att> 属性の URI が呼び出される。</p></item>
-<item><p>キーボードでコントロールに移動したり、フォーカスを与えたりできる。</p></item>
-<item><p>キーボードのフォーカスをコントロールにセットする。</p></item>
-<item><p>もしコントロールがアンカー要素なら、Enter キーを押すことでアンカー要素の <att>href</att> 属性の URI が呼び出される。</p></item></ulist></item>
+<item><p>コントロールがアンカー要素である場合、アンカー要素の <att>href</att> 属性の URI が呼び出されることを確認する。</p></item>
+<item><p>キーボードでコントロールに移動して、フォーカスを与えることが可能であることを確認する。</p></item>
+<item><p>キーボードのフォーカスをコントロールに設定する。</p></item>
+<item><p>コントロールがアンカー要素である場合、Enter キーを押すことでアンカー要素の <att>href</att> 属性の URI が呼び出されることを確認する。</p></item></ulist></item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>上記の手順全てを満たしている。</p>
+               <p>上記の手順全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

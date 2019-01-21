@@ -49,20 +49,20 @@ This is the beginning of paragraph 2.
       <p>コンテンツにあるそれぞれの見出しに対して:</p>
       <olist>
         <item>
-          <p>見出しの前に、2 行の空白行がある。</p>
+          <p>見出しの前に、2 行の空白行があることを確認する。</p>
         </item>
         <item>
-          <p>見出しの後に、1 行の空白行がある。</p>
+          <p>見出しの後に、1 行の空白行があることを確認する。</p>
         </item>
         <item>
-          <p>見出しに空白行が含まれていない。</p>
+          <p>見出しに空白行が含まれていないことを確認する。</p>
         </item>
       </olist>
     </procedure>
     <expected-results>
       <ulist>
         <item>
-          <p>1.～3. の全てを満たしている。</p>
+          <p>上記の全ての結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

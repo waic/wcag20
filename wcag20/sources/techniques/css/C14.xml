@@ -76,14 +76,14 @@ it is <strong>very</strong> important to let him configure the text size.  </p>
       <procedure>
       <olist>
         <item>
-          <p>フォントサイズを指定している CSS プロパティの値が <code><![CDATA[em]]></code> 単位である。</p>
+          <p>フォントサイズを定義する CSS プロパティの値が <code><![CDATA[em]]></code> 単位である。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. を満たしている。</p>
+               <p>1. の結果が真である。</p>
             </item>
          </ulist>
       </expected-results>

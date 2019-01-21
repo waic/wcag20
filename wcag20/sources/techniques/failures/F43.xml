@@ -80,14 +80,14 @@ introduced by this practice below.</p>
       <procedure>
       <olist>
         <item>
-          <p>要素のセマンティックな意味が支援技術に受け渡され、かつ要素の内容に対して適切であることを確認する。</p>
+          <p>要素のセマンティックな意味が支援技術に公開され、かつ要素のコンテンツに対して適切であることを確認する。</p>
         </item>
       </olist>
     </procedure>
       <expected-results>
          <ulist>
             <item>
-               <p>1. が満たされない場合、この失敗条件が適用される。</p>
+               <p>1. の結果が偽である場合、この失敗条件が適用される。</p>
             </item>
          </ulist>
       </expected-results>
