@@ -21,7 +21,7 @@
       </ua-issue>
    </ua-issues>
    <description>
-      <p>この達成方法の目的は、プログラム的に決定される、ユーザインタフェース要素に関する説明的な情報を提供するために、どのように WAI-ARIA <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</loc> プロパティを使用するかを示すことにある。<att>aria-describedby</att> プロパティは、ID 参照リストの使用を通して一つ以上の要素の説明的情報と結びつけるために使用してもよいものである。ID 参照リストは、一つ以上のユニークな要素 ID を含む。</p>
+      <p>この達成方法の目的は、プログラムによる解釈がされる、ユーザインタフェース要素に関する説明的な情報を提供するために、どのように WAI-ARIA <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby">aria-describedby</loc> プロパティを使用するかを示すことにある。<att>aria-describedby</att> プロパティは、ID 参照リストの使用を通して一つ以上の要素の説明的情報と結びつけるために使用してもよいものである。ID 参照リストは、一つ以上のユニークな要素 ID を含む。</p>
       <p>XHTML や HTML とともに WAI-ARIA ステート及びプロパティを提供する方法については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria-primer/#ariahtml">Supporting ARIA in XHTML and HTML 4.01</loc> を参照のこと。WAI-ARIA ステート及びプロパティは他の言語とも互換性がある。詳しくはそれらの言語の説明文書を参照のこと。</p>
       <note>
          <p><att>aria-describedby</att> プロパティは、外部リソース上の説明を参照するように設計されていない――これは ID なので、同一 DOM 文書内の要素を参照しなければならない。</p>

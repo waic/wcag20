@@ -85,7 +85,7 @@
 		<item><p><loc href="H33" linktype="html"/></p></item>
 		<item><p><loc href="C7" linktype="css"/></p></item></ulist>
 	</item>
-	<item><p>次に挙げる達成方法の一つを用いて、プログラムで判断されるリンクのコンテキストと一緒にリンクの目的を特定する:</p><ulist>
+	<item><p>次に挙げる達成方法の一つを用いて、プログラムによる解釈されるリンクのコンテキストと一緒にリンクの目的を特定する:</p><ulist>
 		<item><p><loc href="ARIA7" linktype="aria"/></p></item>
 		<item><p><loc href="ARIA8" linktype="aria"/></p></item>
 		<item><p><loc href="H77" linktype="html"/></p></item>
