@@ -10,7 +10,7 @@
       <success-criterion idref="consistent-behavior-unpredictable-change" relationship="sufficient"/>
    </applies-to>
    <description>
-    <p>この達成方法の目的は、利用者が状況の変化を明示的に要求できるメカニズムを提供することである。送信ボタンの本来の使用法は、フォームに入力されたデータを実行する HTTP リクエストを生成することである。それは、状況の変化を起こすために使われる適切なコントロールである。</p>
+    <p>この達成方法の目的は、利用者がコンテキストの変化を明示的に要求できるメカニズムを提供することである。送信ボタンの使用目的は、フォームに入力されたデータを送信する HTTP リクエストを生成することである。そのため、コンテキストの変化を起こすために使われる適切なコントロールである。</p>
   </description>
    <examples>
       <eg-group>
