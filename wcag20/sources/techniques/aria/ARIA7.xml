@@ -83,7 +83,7 @@
       <p><att>aria-labelledby</att> の助けを借りてフォーカス可能な要素にテキストを関連付ける場合、ターゲットのテキスト要素は、フォーカス可能な要素の <att>aria-labelledby</att> 属性値の中で参照される ID によって与えられる。</p>
       <p>フォーカス可能な要素のラベルとして、ページ上の複数のテキスト要素を使用することも可能である。使用されるそれぞれのテキスト要素は、<att>aria-labelledby</att> 属性の値において IDs (IDREF) の文字列として参照される一意な ID を与えられなければならない。そして、ラベルテキストは <att>aria-labelledby</att> 属性の値における ID の順序に従って連結されるべきである。</p>
       <p>リンクに適用する場合、<att>aria-labelledby</att> は、目の見える利用者に対して直ちに明白かもしれないが、スクリーンリーダーの利用者にはあまり明らかではないリンクの目的を識別するために使用できる。</p>
-      <p><att>aria-labelledby</att> の指定された動作は、関連付けられたラベルテキストが (リンクテキストに加えられるのではなく) リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<att>aria-labelledby</att> 属性の値を構成する IDs の文字列の中で、リンクの ID も参照されるべきである。</p>
+      <p><att>aria-labelledby</att> の仕様上の動作は、関連付けられたラベルテキストが (リンクテキストに加えられるのではなく) リンクテキストの代わりに告知されるものである。リンクテキスト自身がラベルテキストに含まれるべきである場合、<att>aria-labelledby</att> 属性の値を構成する IDs の文字列の中で、リンクの ID も参照されるべきである。</p>
       <p>名前付けの序列の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">ARIA specification</loc> 及び HTML to Platform Accessibility APIs Implementation Guide における <loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/html-aapi/#a-element">accessible name and description calculation for links</loc> を参照。</p>
    </description>
    <examples>
