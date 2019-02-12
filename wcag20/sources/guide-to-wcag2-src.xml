@@ -88,8 +88,8 @@ Austin)</affiliation>
 <!--<phrase role="ext-review">The purpose of this draft is to collect public feedback on proposed changes since the <loc href="http://www.w3.org/TR/2010/NOTE-UNDERSTANDING-WCAG20-20101014/">Understanding WCAG 2.0 Working Group Note of 14 October 2010</loc>. The Working Group intends to publish an updated Note once feedback from this review has been incorporated. <emph role="bold">The existing Understanding document remains in place as a W3C Note</emph> while this separate draft update is under review and the WCAG Working Group addresses comments.</phrase> Updates include addition of PDF and Silverlight techniques, and clarifications based on input from the public and translators.--> 
 
 
-<p>変更点は <loc href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/complete-diff">diff-marked version</loc> においてハイライト表示している。</p>
-
+<p>変更点は <loc href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/complete-diff">diff-marked version</loc> で強調表示している。</p>
+<trnote><p>日本語訳の diff-marked version は提供していない。</p></trnote>
 <p>ワーキンググループへのコメントは、<loc href="https://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents</loc> を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc> 宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives for the public comments list</loc> は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。<!--なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。--><loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list discussions</loc> も一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
 
 <p>この文書は、W3C の <loc href="https://www.w3.org/WAI/">Web Accessibility Initiative</loc> (WAI) の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="https://www.w3.org/WAI/GL/charter">WCAG Working Group charter</loc> に記載されている。WCAG ワーキンググループは、<loc href="https://www.w3.org/WAI/Technical/Activity">WAI Technical Activity</loc> の一つである。</p>
