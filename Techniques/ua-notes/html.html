@@ -3,29 +3,31 @@
  <head>
   <title>HTMLとXHTMLの達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="warning.css">
  </head>
  <body>
   <h1>HTMLとXHTMLの達成方法のためのユーザーエージェントサポートノート</h1>
   <p>このページは、
 <a href="/docs/WCAG-TECHS/html">HTMLとXHTMLの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+<div> <input id="annoying-warning" type="checkbox" title="注を非表示にする"> <label for="annoying-warning">（非表示）</label> <div class="annoying-warning"> <p><strong>訳注：</strong> ユーザーエージェントサポートノートは記載内容が古く、また WCAG 2.0 の後続仕様である WCAG 2.1 の関連文書 <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> から削除されている。そのため、WAIC ではこのページを現在メンテナンスしていない。</div>
   <ul class="toc">
    <li class="toc">
-    <a href="#H24">イメージマップの area 要素に代替テキストを提供する</a>
+    <a href="#H24">イメージマップの area 要素にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
-    <a href="#H27">object 要素にテキストおよび非テキストの代替を提供する</a> (訳注： この達成方法は最新の達成方法からは削除されている)
+    <a href="#H27">object 要素にテキストおよび非テキストの代替を提供する</a> (訳注: この達成方法は最新の達成方法からは削除されている)
    </li>
    <li class="toc">
-    <a href="#H28">abbr要素およびacronym要素を用いて、略語の定義を提供する</a> （訳注： この達成方法は、最新の達成方法では「abbr要素を用いて、略語の定義を提供する」とされている）
+    <a href="#H28">abbr要素およびacronym要素を用いて、略語の定義を提供する</a> (訳注: この達成方法は、最新の達成方法では「abbr要素を用いて、略語の定義を提供する」とされている)
    </li>
    <li class="toc">
     <a href="#H33">title 属性を用いて、リンクテキストの文言を補足する</a>
    </li>
    <li class="toc">
-    <a href="#H35">applet 要素に代替テキストを提供する</a>
+    <a href="#H35">applet 要素にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
-    <a href="#H44">テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する</a>
+    <a href="#H44">テキストのラベルとフォームコントロールを関連付けるために、label 要素を使用する</a>
    </li>
    <li class="toc">
     <a href="#H45">longdesc 属性を用いる</a>
@@ -64,7 +66,7 @@
     <a href="#H64">frame 要素及び iframe 要素の title 属性を使用する</a>
    </li>
    <li class="toc">
-    <a href="#H65">label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する</a>
+    <a href="#H65">label 要素を使用することができないとき、フォームコントロールを特定するために、title 属性を使用する</a>
    </li>
    <li class="toc">
     <a href="#H69">コンテンツの各セクションの開始位置に見出し要素を提供する</a>
@@ -82,21 +84,21 @@
     <a href="#H85">select 要素内の option 要素をグループ化するために、optgroup 要素を使用する</a>
    </li>
    <li class="toc">
-    <a href="#H86">ASCII アート、顔文字、及びリート語に代替テキストを提供する</a>
+    <a href="#H86">ASCII アート、顔文字、及びリート語にテキストによる代替を提供する</a>
    </li>
    <li class="toc">
     <a href="#H89">コンテキストに応じたヘルプを提供するために、title 属性を使用する</a>
    </li>
    <li class="toc">
-    <a href="#H90">必須項目のフォーム・コントロールを特定するために、label 要素又は legend 要素を使用する</a>
+    <a href="#H90">必須項目のフォームコントロールを特定するために、label 要素又は legend 要素を使用する</a>
    </li>
    <li class="toc">
-    <a href="#H91">HTML のフォーム・コントロール及びリンクを使用する</a>
+    <a href="#H91">HTML のフォームコントロール及びリンクを使用する</a>
    </li>
   </ul>
   <section id="H24">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H24.html">H24</a>: イメージマップの area 要素に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H24.html">H24</a>: イメージマップの area 要素にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <p>HTML 4.01仕様書は、<code>alt</code>属性のテキストを、その要素が通常通り描画されないときに表示されるもの、と説明している。ユーザーエージェントは、画像が表示されないときに<code>alt</code>属性のテキストを表示する。しかし、視覚系ユーザーエージェントは現状、イメージマップのarea要素については、キーボードでアクセスした場合、又は画像そのものが表示されない場合には、<code>alt</code>属性のテキストを表示しない。また、画像の内在寸法が指定されていない場合【訳注−img要素のwidth属性やheight属性で画像のサイズが示されていない場合など】、area要素を切り抜いて表示することもある。さらに、マウスオーバー時に反応して表示される<code>alt</code>属性のテキストは、ユーザーエージェントでのフォントサイズや色の組み合わせの設定通りに表示されない。</p>
     <p><code>title</code>属性は追加情報を提供するものとされている。しかし、ユーザーエージェントにおける現在の実装では、title属性と<code>alt</code>属性のどちらかにはアクセスできるが、両方同時にはアクセスできない。ユーザーエージェントは一般的に、<code>title</code>属性が指定された要素にマウスオーバーしたとき、その<code>title</code>属性のテキストを表示する。              </p>
@@ -104,7 +106,7 @@
     <ul>
      <li>
       <p>Ensuring the area element 
-area要素の<code>alt</code>属性値が、画像が読み込まれていても読み込まれていなくても、フォーカス（キーボードによるフォーカスを含む）を受けたときに表示されるようにすること。または、</p>
+area要素の<code>alt</code>属性値が、画像が読み込まれていても読み込まれていなくても、フォーカス (キーボードによるフォーカスを含む) を受けたときに表示されるようにすること。または、</p>
      </li>
      <li>
       <p>area要素と同じ目的を果たせる代わりのメカニズムが、ウェブページに存在すること。</p>
@@ -114,22 +116,22 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H27">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H27.html">H27</a>: object 要素にテキストおよび非テキストの代替を提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H27.html">H27</a>: object 要素にテキストおよび非テキストの代替を提供する</h2>
    <div class="ua-issue">
     <p>This technique is not supported well by assistive technologies and cross-browser support is irregular.</p>
-    <p>(訳注： この達成方法は最新の達成方法からは削除されている)</p>
+    <p>(訳注: この達成方法は最新の達成方法からは削除されている)</p>
    </div>
   </section>
   <section id="H28">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H28.html">H28</a>: abbr要素およびacronym要素を用いて、略語の定義を提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H28.html">H28</a>: abbr要素およびacronym要素を用いて、略語の定義を提供する</h2>
    <div class="ua-issue">
     <ul>
      <li>
       <p>略語や頭字語の読み上げについて、支援技術のサポートレベルは異なる。しばしば特有のカスタマイゼーション設定に依存している。</p>
      </li>
      <li>
-      <p>この達成方法は<code>abbr</code>もしくは<code>acronym</code>要素の<code>title</code>属性がアクセシビリティサポーテッドである場合のみ十分である。<code>title</code>属性がアクセシビリティ・サポーテッドとなるためには、全てのキーボード利用者が（音声読み上げソフトウェアを利用しているかどうかに関わらず）<code>title</code>属性の内容を利用できなければならない。</p>
+      <p>この達成方法は<code>abbr</code>もしくは<code>acronym</code>要素の<code>title</code>属性がアクセシビリティサポーテッドである場合のみ十分である。<code>title</code>属性がアクセシビリティ サポーテッドとなるためには、全てのキーボード利用者が (音声読み上げソフトウェアを利用しているかどうかに関わらず) <code>title</code>属性の内容を利用できなければならない。</p>
      </li>
      <li>
       <p>JAWS 6.2以降とWindow-Eyes 5.0以降は、abbr要素とacronym要素をサポートしている。これらの要素が現れるたびに、title属性を読み上げるように設定できるが、初期設定ではオフであり、利用者が設定をオンにすることも稀である。</p>
@@ -144,12 +146,12 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>特定のユーザーエージェントや支援技術では、<code>abbr</code>要素と<code>acronym</code>要素が利用者に対して同じ方法で表現される。</p>
      </li>
     </ul>
-    <p>（訳注： この達成方法は、最新の達成方法では「abbr要素を用いて、略語の定義を提供する」とされている）</p>
+    <p>(訳注: この達成方法は、最新の達成方法では「abbr要素を用いて、略語の定義を提供する」とされている)</p>
    </div>
   </section>
   <section id="H33">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H33.html">H33</a>: title 属性を用いて、リンクテキストの文言を補足する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H33.html">H33</a>: title 属性を用いて、リンクテキストの文言を補足する</h2>
    <div class="ua-issue">
     <ul>
      <li>
@@ -159,7 +161,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>グラフィカルなユーザーエージェントの一部は、<code>title</code>属性が指定されたa要素の上にマウスオーバーしたときに、ツールチップを表示する。しかし、現在のユーザーエージェントは、キーボードによる<code>title</code>属性の内容へのアクセス方法を提供していない。</p>
      </li>
      <li>
-      <p>一般的なユーザーエージェントの一部では、短い時間（およそ5秒）でツールチップが消えてしまう。このことが、マウスは利用できても細かな操作ができない利用者が<code>title</code>属性の内容にアクセスする難しさや、ツールチップを読むのに時間を要する利用者の困惑につながっている。</p>
+      <p>一般的なユーザーエージェントの一部では、短い時間 (およそ5秒) でツールチップが消えてしまう。このことが、マウスは利用できても細かな操作ができない利用者が<code>title</code>属性の内容にアクセスする難しさや、ツールチップを読むのに時間を要する利用者の困惑につながっている。</p>
      </li>
      <li>
       <p>現在のグラフィカルなユーザーエージェントは、<code>title</code>属性の内容表現をコントロールするメカニズムを提供していない。利用者は、ツールチップのテキストのサイズを変更したり、前景色と背景色をコントロールしたりできない。また、ツールチップの配置を利用者がコントロールできないことも問題である。画面拡大ソフトウェアの利用者の一部は、画面領域内にツールチップが全て表示されず、<code>title</code>属性の内容を意味がわかるほど得られないことにつながっているからである。</p>
@@ -168,7 +170,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>ユーザーエージェントの一部では、コンテキストメニューによって補足情報にアクセスできる。たとえばMozilla/Firefoxでは、Pに続けてShift＋F10とキーを押すと、他の補足情報とともに<code>title</code>属性の内容が表示される。</p>
      </li>
      <li>
-      <p>HTML 4.01仕様書は、<code>alt</code>属性のテキストを、ある要素が通常通り描画されないときに表示されるもの、と説明している。そのため、視覚系ユーザーエージェントでは、画像が表示されないときに<code>alt</code>属性のテキストを表示する。一方、<code>title</code>属性は追加情報を提供するものとされる。ユーザーエージェントは一般的に、<code>title</code>属性が指定された要素にマウスオーバーしたときに、その<code>title</code>属性のテキストを表示する。Internet Explorerは、<code>title</code>属性のテキストが指定されていなければ、マウスオーバー時に<code>alt</code>属性のテキストを表示する。一方、FirefoxやOperaは、<code>title</code>属性のテキストのみをマウスオーバー時に表示し、<code>alt</code>属性のテキストは表示しない。したがって、<code>alt</code>属性のテキストをマウスオーバー時に表示したければ、同じテキストを<code>title</code>属性にも指定しておくべきである。【訳注：本段落最後の一文は、<code>alt</code>属性の誤用を助長する恐れがあるので、WCAG　WGに削除を提案している。】</p>
+      <p>HTML 4.01仕様書は、<code>alt</code>属性のテキストを、ある要素が通常通り描画されないときに表示されるもの、と説明している。そのため、視覚系ユーザーエージェントでは、画像が表示されないときに<code>alt</code>属性のテキストを表示する。一方、<code>title</code>属性は追加情報を提供するものとされる。ユーザーエージェントは一般的に、<code>title</code>属性が指定された要素にマウスオーバーしたときに、その<code>title</code>属性のテキストを表示する。Internet Explorerは、<code>title</code>属性のテキストが指定されていなければ、マウスオーバー時に<code>alt</code>属性のテキストを表示する。一方、FirefoxやOperaは、<code>title</code>属性のテキストのみをマウスオーバー時に表示し、<code>alt</code>属性のテキストは表示しない。したがって、<code>alt</code>属性のテキストをマウスオーバー時に表示したければ、同じテキストを<code>title</code>属性にも指定しておくべきである。【訳注: 本段落最後の一文は、<code>alt</code>属性の誤用を助長する恐れがあるので、WCAG　WGに削除を提案している。】</p>
      </li>
      <li>
       <p>支援技術ごとにtitle属性の音声読み上げサポートが異なる。一部の支援技術には、利用者がtitle属性によって提供される情報にアクセスする機能が含まれていない。</p>
@@ -177,21 +179,21 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>JAWS 7.0以降では、設定によってtitle属性値を読み上げることができる。この設定は、一時的な変更も固定的な変更も可能である。</p>
      </li>
      <li>
-      <p>Window-Eyes 5.5以降には、（title属性を含む）フォーカスを受けた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
+      <p>Window-Eyes 5.5以降には、(title属性を含む) フォーカスを受けた項目の追加情報を読み上げるホットキー (ins+E) がある。</p>
      </li>
      <li>
-      <p>この実装方法は、<code>title</code>属性がアクセシビリティサポーテッドである場合のみ達成基準を満たすことができる。<code>title</code>属性がアクセシビリティサポーテッドであるためには、全てのキーボードの利用者が（音声読み上げソフトウェアを利用しているかどうかに関わらず）この属性の内容を利用できる必要がある。</p>
+      <p>この実装方法は、<code>title</code>属性がアクセシビリティサポーテッドである場合のみ達成基準を満たすことができる。<code>title</code>属性がアクセシビリティサポーテッドであるためには、全てのキーボードの利用者が (音声読み上げソフトウェアを利用しているかどうかに関わらず) この属性の内容を利用できる必要がある。</p>
      </li>
     </ul>
    </div>
   </section>
   <section id="H35">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H35.html">H35</a>: applet 要素に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H35.html">H35</a>: applet 要素にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <ul>
      <li>
-      <p>この実装方法は、支援技術が十分にサポートしていないものである。HTML仕様書は、アプレットに対する代替テキストはその要素が描画できないときに表示される、と説明している。そのため、ユーザーエージェントがJavaアプレットをサポートしていないか、Javaアプレットが読み込み中止に設定されていないかぎり、<code>applet</code>要素のボディにある代替テキストはユーザーに提供されない。</p>
+      <p>この実装方法は、支援技術が十分にサポートしていないものである。HTML仕様書は、アプレットに対するテキストによる代替はその要素が描画できないときに表示される、と説明している。そのため、ユーザーエージェントがJavaアプレットをサポートしていないか、Javaアプレットが読み込み中止に設定されていないかぎり、<code>applet</code>要素のボディにあるテキストによる代替はユーザーに提供されない。</p>
      </li>
      <li>
       <p>Windows用のIE 6と、Windowsで動作するFirefox 1.5とOpera 9とでは、applet要素の代替テキストの扱いが異なる。IEはapplet要素のボディに含まれるテキストを表示するが、<code>alt</code>属性は表示しない。一方、FirefoxとOperaは、<code>alt</code>属性を表示するが、ボディに含まれるテキストは表示しない。</p>
@@ -201,9 +203,9 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H44">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H44.html">H44</a>: テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H44.html">H44</a>: テキストのラベルとフォームコントロールを関連付けるために、label 要素を使用する</h2>
    <div class="ua-issue">
-    <p>HTML及びXHTML仕様書では、暗示的なラベルと明示的なラベルの両方を認めている。しかし、支援技術の一部は、暗示的なラベル（たとえば、<label>First name <input type="text" name="firstname"></label>）を正確に処理できない。【訳注：なお、暗示的なラベルとは、ラベルとフォーム・コントロールを単にlabel要素で囲んだだけのものである。一方、明示的なラベルとは、label要素のfor属性に、フォーム・コントロールのid属性値と同じ値を指定することで、両者を明確に関連付けたものである。】</p>
+    <p>HTML及びXHTML仕様書では、暗示的なラベルと明示的なラベルの両方を認めている。しかし、支援技術の一部は、暗示的なラベル (たとえば、<label>First name <input type="text" name="firstname"></label>) を正確に処理できない。【訳注: なお、暗示的なラベルとは、ラベルとフォームコントロールを単にlabel要素で囲んだだけのものである。一方、明示的なラベルとは、label要素のfor属性に、フォームコントロールのid属性値と同じ値を指定することで、両者を明確に関連付けたものである。】</p>
     <ul>
      <li>
       <p>JAWS 7.10の動作を、Windows XPのInternet Explorer 6.0とFirefox 1.5で検証した。テキストフィールドに付けたラベルは、明示的なラベルでも暗示的なラベルでも、バーチャルPCカーソルとフォーム読み上げモードの両方で読み上げられた。ただし、フォーム読み上げモードでは、チェックボックスとラジオボタンに付けた暗示的なラベルは読み上げられなかった。</p>
@@ -217,27 +219,27 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
     <p>ユーザーエージェントは、<code>title</code>属性が指定してある<code>input</code>要素にマウスオーバーしたときに、ツールチップを表示するようである。支援技術はtitle属性を抽出し、多くのグラフィカルブラウザはtitle属性をツールチップで表示する。ただし、キーボード操作ではツールチップを開けないため、視力はあるがマウスではなくキーボードを使っている利用者は、現状ではツールチップの情報を利用できない恐れがある。</p>
    </div>
    <div class="ua-issue">
-    <p>JAWSとWindow-Eyesでは、フォーム・コントロールがフォーカスを受けたとき、もし<code>label</code>要素が指定されていなければ、<code>title</code>属性を読み上げる。</p>
+    <p>JAWSとWindow-Eyesでは、フォームコントロールがフォーカスを受けたとき、もし<code>label</code>要素が指定されていなければ、<code>title</code>属性を読み上げる。</p>
     <ul>
      <li>
       <p>JAWS 6.0以降では、<code>label</code>要素と<code>title</code>属性が異なるとき、その両方を読み上げるように設定できる。しかし、この設定方法に気づいているユーザーは非常に少ない。</p>
      </li>
      <li>
-      <p>Window-Eyes 5.5には、（title属性を含む）フォーカスされた項目の追加情報を読み上げるホットキー（ins+E）がある。</p>
+      <p>Window-Eyes 5.5には、(title属性を含む) フォーカスされた項目の追加情報を読み上げるホットキー (ins+E) がある。</p>
      </li>
     </ul>
    </div>
   </section>
   <section id="H45">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H45.html">H45</a>: longdesc 属性を用いる</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H45.html">H45</a>: longdesc 属性を用いる</h2>
    <div class="ua-issue">
     <p><code>longdesc</code>に対するユーザーエージェントのサポートはさまざまだが、全体的なサポートは向上している。 JAWS、NVDA、Window-Eyesなどのスクリーンリーダーは<code>longdesc</code>をサポートしているが、Voiceover 4.0、Orca 2.32.0、および拡大鏡 Zoomtext 10.0はまだ<code>longdesc</code>属性をサポートしていない。 Internet Explorer、Firefox、Opera、Chromeなどのブラウザはすべて<code>longdesc</code>をサポートしている。</p>
    </div>
   </section>
   <section id="H46">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H46.html">H46</a>: embed 要素と一緒に noembed 要素を用いる</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H46.html">H46</a>: embed 要素と一緒に noembed 要素を用いる</h2>
    <div class="ua-issue">
     <div class="note">
      <p class="prefix">
@@ -248,14 +250,14 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H48">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H48.html">H48</a>: リストに、ol 要素、ul 要素、dl 要素を用いる</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H48.html">H48</a>: リストに、ol 要素、ul 要素、dl 要素を用いる</h2>
    <div class="ua-issue">
     <p>番号やビュレットの形式を指定する<code>type</code>属性について、支援技術のサポートが一貫していない。</p>
    </div>
   </section>
   <section id="H49">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H49.html">H49</a>: 強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H49.html">H49</a>: 強調又は特別なテキストをマークアップするために、セマンティックなマークアップを使用する</h2>
    <div class="ua-issue">
     <ul>
      <li>
@@ -270,21 +272,21 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>JAWSは、blockquote及びciteをサポートしている。Window-Eyesは、<code>blockquote</code>、<code>q</code>及び<code>cite</code>をサポートしている。</p>
      </li>
      <li>
-      <p>Firefox 1.0以降、Opera 7.54以降、Mozilla 1.7.3以降（以上、Windows版）は、<code>q</code>要素の前後に自動的に引用符を生成するが、Windows用Internet Explorer 6は生成しない。</p>
+      <p>Firefox 1.0以降、Opera 7.54以降、Mozilla 1.7.3以降 (以上、Windows版) は、<code>q</code>要素の前後に自動的に引用符を生成するが、Windows用Internet Explorer 6は生成しない。</p>
      </li>
     </ul>
    </div>
   </section>
   <section id="H53">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H53.html">H53</a>: object 要素のボディを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H53.html">H53</a>: object 要素のボディを使用する</h2>
    <div class="ua-issue">
     <p>この実装方法は、支援技術が十分にサポートしておらず、ブラウザによるサポートも一定していない。</p>
    </div>
   </section>
   <section id="H57">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H57.html">H57</a>: html 要素の lang 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H57.html">H57</a>: html 要素の lang 属性を使用する</h2>
    <div class="ua-issue">
     <p>lang属性の値として、地域、筆記体、異体などを示すために、主言語コードの後にハイフン区切りで副言語コードを加えると、一部のスクリーンリーダーの古いバージョンでは、言語の切り替え時にエラーになることがある。</p>
    </div>
@@ -294,17 +296,17 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H58">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H58.html">H58</a>: 自然言語の変更を指定するために、lang 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H58.html">H58</a>: 自然言語の変更を指定するために、lang 属性を使用する</h2>
    <div class="ua-issue">
-    <p>古いバージョンのスクリーンリーダーの中には、言語を表す属性の指定にあたって、その言語が話されている地域、その言語を記述するために用いられている文字コードなどを表すために、言語コードに続けて記述されることがあるサブ・コードが指定されていると、エラーが発生するものがある。</p>
+    <p>古いバージョンのスクリーンリーダーの中には、言語を表す属性の指定にあたって、その言語が話されている地域、その言語を記述するために用いられている文字コードなどを表すために、言語コードに続けて記述されることがあるサブコードが指定されていると、エラーが発生するものがある。</p>
    </div>
    <div class="ua-issue">
-    <p>JAWS 8.0の場合、lang属性の指定に基づいて読み上げに使用する言語を切り替えるように設定することができる。 ただし、JAWSは主要な言語のみに対応しており、lang属性のプライマリー・コードに示されている言語を用いる。また、言語が用いられている地域を示すサブ・コードが続けて指定されている場合、プライマリー・コードで指定されている言語のデフォルトとして設定されている方式を用いるようになっている。</p>
+    <p>JAWS 8.0の場合、lang属性の指定に基づいて読み上げに使用する言語を切り替えるように設定することができる。 ただし、JAWSは主要な言語のみに対応しており、lang属性のプライマリーコードに示されている言語を用いる。また、言語が用いられている地域を示すサブコードが続けて指定されている場合、プライマリーコードで指定されている言語のデフォルトとして設定されている方式を用いるようになっている。</p>
    </div>
   </section>
   <section id="H59">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H59.html">H59</a>: link 要素及びナビゲーションツールを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H59.html">H59</a>: link 要素及びナビゲーションツールを使用する</h2>
    <div class="ua-issue">
     <ul>
      <li>
@@ -312,57 +314,57 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
      </li>
      <li>
       <p>ユーザーエージェントの一部は、link要素で指定されている情報を表示する追加的なナビゲーションバーを提供する。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。</p>
-      <p><code>link</code>要素のブラウザサポートに関する詳しい情報は、<a href="//www.subotnik.net/html/link">(X)HTMLにおける「link」要素（英語）</a>を参照。</p>
+      <p><code>link</code>要素のブラウザサポートに関する詳しい情報は、<a href="//www.subotnik.net/html/link">(X)HTMLにおける「link」要素 (英語)</a>を参照。</p>
      </li>
     </ul>
    </div>
   </section>
   <section id="H60">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H60.html">H60</a>: 用語集にリンクするために、link 要素を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H60.html">H60</a>: 用語集にリンクするために、link 要素を使用する</h2>
    <div class="ua-issue">
-    <p>ユーザーエージェントの一部では、<code>link</code>要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<code>link</code>要素のブラウザサポートに関する詳しい情報は、<a href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML：英語</a>を参照。</p>
+    <p>ユーザーエージェントの一部では、<code>link</code>要素で指定された情報を表示するナビゲーションバーが追加できる。MozillaとOperaの現在のバージョンがこの機能を提供する。IE 6.0とFirefox 1.5はこの機能を提供しないが、拡張機能やアドオンを通して利用できることがある。<code>link</code>要素のブラウザサポートに関する詳しい情報は、<a href="http://www.subotnik.net/html/link">The 'link'-Element in (X)HTML</a>を参照。</p>
    </div>
   </section>
   <section id="H62">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H62.html">H62</a>: ruby 要素を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H62.html">H62</a>: ruby 要素を使用する</h2>
    <div class="ua-issue">
     <p>XHTML 1.1をサポートしていないユーザーエージェントのために、ルビのマークアップには、代替メカニズムとしての<a href="http://www.w3.org/TR/1998/WD-ruby-19981221/#a2-4"><code>rp</code>要素</a>を含める。ルビのマークアップはXHTML 1.1のみで定義されているにもかかわらず、IE 5.0以降は、<code>ruby</code>、<code>rt</code>、<code>rp</code>要素をHTML 4.01やXHTML 1.0で用いた場合もサポートする。</p>
    </div>
   </section>
   <section id="H63">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H63.html">H63</a>: データテーブルの見出しセルとデータセルを関連付けるために、scope 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H63.html">H63</a>: データテーブルの見出しセルとデータセルを関連付けるために、scope 属性を使用する</h2>
    <div class="ua-issue">
     <p>JAWSの最新版では、<code>scope</code>属性の<code>row</code>と<code>col</code>という値をほとんどサポートしているが、まだいくつかの問題がある。Window-Eyesは<code>scope</code>属性のサポートが一貫していない。これらのスクリーンリーダーの日本語版も同じである。JAWSのバージョン5以前、Window-Eyesの古いバージョンでは<code>scope</code>属性のサポートが一貫していない。</p>
-    <p>現時点で、見出しが1行目や1列目にないテーブルについて、さまざまな支援技術で一貫したサポートを確保したい場合は、<a href="http://waic.jp/docs/WCAG-TECHS/H43.html">
+    <p>現時点で、見出しが1行目や1列目にないテーブルについて、さまざまな支援技術で一貫したサポートを確保したい場合は、<a href="https://waic.jp/docs/WCAG-TECHS/H43.html">
 <em>H43: データテーブルのデータセルを見出しセルと関連付けるために、id 属性及び headers 属性を使用する</em>
 </a>にある複雑なテーブルに関する実装方法を採用してもよい。一方、見出しが1行目や1列目にある単純なテーブルについては、<code>th</code>要素と<code>td</code>要素の利用を推奨する。</p>
    </div>
   </section>
   <section id="H64">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H64.html">H64</a>: frame 要素及び iframe 要素の title 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H64.html">H64</a>: frame 要素及び iframe 要素の title 属性を使用する</h2>
    <div class="ua-issue"><code>frame</code>要素と<code>iframe</code>要素での<code>longdesc</code>属性の使用は、支援技術によって十分にサポートされていない。代替として、この達成方法で述べられている<code>title</code>属性の利用を推奨する。</p>
    </div>
   </section>
   <section id="H65">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H65.html">H65</a>: label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H65.html">H65</a>: label 要素を使用することができないとき、フォームコントロールを特定するために、title 属性を使用する</h2>
    <div class="ua-issue">
     <ul>
      <li>
       <p>ユーザーエージェントは、<code>title</code>要素が指定してある<code>input</code>要素にマウスオーバーしたときに、ツールチップを表示するだろう。</p>
      </li>
      <li>
-      <p>JAWSとWindow-Eyesでは、フォーム・コントロールがフォーカスを受けとったとき、<code>label</code>要素が指定されていなければ、<code>title</code>属性の内容を読み上げる。</p>
+      <p>JAWSとWindow-Eyesでは、フォームコントロールがフォーカスを受けとったとき、<code>label</code>要素が指定されていなければ、<code>title</code>属性の内容を読み上げる。</p>
       <ul>
        <li>
         <p>JAWS 6.0以降では、<code>label</code>要素と<code>title</code>属性に異なる内容が指定されている場合、両方を読み上げるように設定できる。しかし、この設定方法を知っているユーザーは非常に少ない。</p>
        </li>
        <li>
-        <p>Window-Eyes 5.5には、フォーカスを受けとったアイテムの追加情報（title属性を含む）を読み上げるホットキー（insert＋E）がある。</p>
+        <p>Window-Eyes 5.5には、フォーカスを受けとったアイテムの追加情報 (title属性を含む) を読み上げるホットキー (insert＋E) がある。</p>
        </li>
       </ul>
      </li>
@@ -371,7 +373,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H69">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H69.html">H69</a>: コンテンツの各セクションの開始位置に見出し要素を提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H69.html">H69</a>: コンテンツの各セクションの開始位置に見出し要素を提供する</h2>
    <div class="ua-issue">
     <p>ほとんどのスクリーンリーダーは、見出し要素を用いたナビゲーション機能を提供しており、見出しレベルに関する情報も提供している。また、Operaは、見出し要素ごとに移動できるメカニズムを提供している。他のユーザーエージェントでも、追加的なプラグインが見出し要素を用いたナビゲーション機能をサポートしている。プラグインに関しては、「参考リソース」のセクションを参照のこと。</p>
     <div class="revnote">
@@ -384,21 +386,21 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H78">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H78.html">H78</a>: リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H78.html">H78</a>: リンクテキストとそれが含まれているパラグラフとを組み合わせて、リンクの目的を特定する</h2>
    <div class="ua-issue">
     <p>JAWS 5.0以降は、次のキーストロークを実装している。</p>
     <ul>
      <li>
-      <p>Alt+左矢印：前の文を読む</p>
+      <p>Alt+左矢印: 前の文を読む</p>
      </li>
      <li>
-      <p>Alt+右矢印：次の文を読む</p>
+      <p>Alt+右矢印: 次の文を読む</p>
      </li>
      <li>
-      <p>Alt+テンキーの5：現在の文を読む</p>
+      <p>Alt+テンキーの5: 現在の文を読む</p>
      </li>
      <li>
-      <p>Ctrl+テンキーの5：現在のパラグラフを読む</p>
+      <p>Ctrl+テンキーの5: 現在のパラグラフを読む</p>
      </li>
     </ul>
    </div>
@@ -415,88 +417,88 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
     <p>デスクトップマシンの設定</p>
     <ul>
      <li>
-      <p>文字：Ctrl+テンキーの左矢印</p>
+      <p>文字: Ctrl+テンキーの左矢印</p>
      </li>
      <li>
-      <p>単語：Ctrl+テンキーの右矢印</p>
+      <p>単語: Ctrl+テンキーの右矢印</p>
      </li>
      <li>
-      <p>行：Ctrl+テンキーのCENTER</p>
+      <p>行: Ctrl+テンキーのCENTER</p>
      </li>
      <li>
-      <p>文：「ブラウズモード」では使用不可</p>
+      <p>文:「ブラウズモード」では使用不可</p>
      </li>
      <li>
-      <p>（「次の文」のコマンドは、デスクトップモードの初期設定では定義されていないが、次の行を読むには下矢印を押す）</p>
+      <p>(「次の文」のコマンドは、デスクトップモードの初期設定では定義されていないが、次の行を読むには下矢印を押す)</p>
      </li>
      <li>
-      <p>次のパラグラフ：P</p>
+      <p>次のパラグラフ: P</p>
      </li>
      <li>
-      <p>前のパラグラフ：Shift+P</p>
+      <p>前のパラグラフ: Shift+P</p>
      </li>
      <li>
-      <p>現在のパラグラフ：「ブラウズモード」では使用不可</p>
+      <p>現在のパラグラフ:「ブラウズモード」では使用不可</p>
      </li>
     </ul>
     <p>ラップトップ</p>
     <ul>
      <li>
-      <p>文字：Alt+Shift+&lt; </p>
+      <p>文字: Alt+Shift+&lt;</p>
      </li>
      <li>
-      <p>前の単語：Alt+Shift+J</p>
+      <p>前の単語: Alt+Shift+J</p>
      </li>
      <li>
-      <p>単語：Alt+Shift+K</p>
+      <p>単語: Alt+Shift+K</p>
      </li>
      <li>
-      <p>次の単語：Alt+Shift+L</p>
+      <p>次の単語: Alt+Shift+L</p>
      </li>
      <li>
-      <p>次の文：Alt+Shift+7</p>
+      <p>次の文: Alt+Shift+7</p>
      </li>
      <li>
-      <p>文：「ブラウズモード」では使用不可</p>
+      <p>文:「ブラウズモード」では使用不可</p>
      </li>
      <li>
-      <p>次の文：「ブラウズモード」では使用不可</p>
+      <p>次の文:「ブラウズモード」では使用不可</p>
      </li>
      <li>
-      <p>パラグラフ：ラップトップマシンの初期設定では定義されていない</p>
+      <p>パラグラフ: ラップトップマシンの初期設定では定義されていない</p>
      </li>
      <li>
-      <p>次の行：Alt+Shift+U</p>
+      <p>次の行: Alt+Shift+U</p>
      </li>
      <li>
-      <p>行：Alt+Shift+I</p>
+      <p>行: Alt+Shift+I</p>
      </li>
      <li>
-      <p>次の行：Alt+Shift+O</p>
+      <p>次の行: Alt+Shift+O</p>
      </li>
     </ul>
    </div>
    <div class="ua-issue">
-    <p><a href="http://www.firevox.clcworld.net/">Fire Vox</a>の「親要素の読み上げ」というコマンド（Ctrl+Shift+U）は、フォーカス位置の変更なしに動作する。Fire Vox（英語）は、Firefox 1.0以降のために設計されたフリーのスクリーンリーダーであり、Windows、Macintosh、Linux用のFirefoxでサポートされている。</p>
+    <p><a href="http://www.firevox.clcworld.net/">Fire Vox</a>の「親要素の読み上げ」というコマンド (Ctrl+Shift+U) は、フォーカス位置の変更なしに動作する。Fire Vox (英語) は、Firefox 1.0以降のために設計されたフリーのスクリーンリーダーであり、Windows、Macintosh、Linux用のFirefoxでサポートされている。</p>
    </div>
   </section>
   <section id="H80">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H80.html">H80</a>: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H80.html">H80</a>: リンクテキストとその直前にある見出し要素とを組み合わせて、リンクの目的を特定する</h2>
    <div class="ua-issue">
     <p>JAWSでこの実装方法を利用するためのコマンドは、「JAWSキー+T」である。</p>
    </div>
   </section>
   <section id="H81">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H81.html">H81</a>: 入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H81.html">H81</a>: 入れ子になったリスト項目にあるリンクテキストとその親のリスト項目とを組み合わせて、リンクの目的を特定する</h2>
    <div class="ua-issue">
     <p>文脈に関する情報をプログラムが解釈できるようにリンクと関連付けたとしても、支援技術にはそのリンクからフォーカスを移動させずに親要素であるリスト項目を読み上げるコマンドがない。</p>
    </div>
   </section>
   <section id="H85">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H85.html">H85</a>: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H85.html">H85</a>: select 要素内の option 要素をグループ化するために、optgroup 要素を使用する</h2>
    <div class="ua-issue">
     <p><code>optgroup</code>要素はスクリーンリーダーに広くサポートされているわけではない。</p>
    </div>
@@ -506,14 +508,14 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H86">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H86.html">H86</a>: ASCII アート、顔文字、及びリート語に代替テキストを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H86.html">H86</a>: ASCII アート、顔文字、及びリート語にテキストによる代替を提供する</h2>
    <div class="ua-issue">
     <ul>
      <li>
       <p>title属性の読み上げについて、支援技術のサポートレベルは異なる。支援技術の一部は、ユーザーがtitle属性を通じて与えられる情報にアクセスする機能を実装していない。</p>
      </li>
      <li>
-      <p><code>title</code>属性がアクセシビリティ・サポーテッドである場合のみ、<code>title</code>属性を用いてこの実装方法で実装することは十分効果的である。この属性がアクセシビリティ・サポーテッドとなるためには、全てのキーボードユーザーが（音声読み上げソフトウェアを利用しているかどうかに関わらず）<code>title</code>属性の内容を利用できなけらばならない。</p>
+      <p><code>title</code>属性がアクセシビリティ サポーテッドである場合のみ、<code>title</code>属性を用いてこの実装方法で実装することは十分効果的である。この属性がアクセシビリティ サポーテッドとなるためには、全てのキーボードユーザーが (音声読み上げソフトウェアを利用しているかどうかに関わらず) <code>title</code>属性の内容を利用できなけらばならない。</p>
      </li>
      <li>
       <p>JAWS 6.2以降とWindow-Eyes 5.0以降は、abbr要素とacronym要素をサポートしている。これらの要素があれば、title属性をすべて読み上げるように設定できるが、初期設定ではオフであり、ユーザーが設定をオンにすることも稀である。
@@ -534,7 +536,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H89">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H89.html">H89</a>: コンテキストに応じたヘルプを提供するために、title 属性を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H89.html">H89</a>: コンテキストに応じたヘルプを提供するために、title 属性を使用する</h2>
    <div class="ua-issue">
     <ul>
      <li>
@@ -544,7 +546,7 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
       <p>グラフィカルなユーザーエージェントの一部は、<code>title</code>属性が指定されたフォームの上にマウスオーバーしたときに、ツールチップを表示する。しかし、現在のユーザーエージェントは、キーボードによる<code>title</code>属性の内容へのアクセス方法を提供していない。</p>
      </li>
      <li>
-      <p>一般的なユーザーエージェントの一部では、短い時間（およそ5秒）でツールチップが消えてしまう。このことが、マウスは利用できても細かな操作ができない利用者がtitle属性の内容にアクセスする難しさや、ツールチップを読むのに時間を要する利用者の困惑につながっている。</p>
+      <p>一般的なユーザーエージェントの一部では、短い時間 (およそ5秒) でツールチップが消えてしまう。このことが、マウスは利用できても細かな操作ができない利用者がtitle属性の内容にアクセスする難しさや、ツールチップを読むのに時間を要する利用者の困惑につながっている。</p>
      </li>
      <li>
       <p>現在の多くのユーザエージェントにおいて、title属性コンテンツの表示を再調整したり、背景色を調整したり、再配置したり、制御したりすることは、大部分の利用者が困難である。</p>
@@ -557,23 +559,23 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
   </section>
   <section id="H90">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H90.html">H90</a>: 必須項目のフォーム・コントロールを特定するために、label 要素又は legend 要素を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H90.html">H90</a>: 必須項目のフォームコントロールを特定するために、label 要素又は legend 要素を使用する</h2>
    <div class="ua-issue">
-    <p>HTML 及び XHTML の仕様では、明示的なラベルと黙示的なラベルの両方を認めている。しかし、支援技術の中には、黙示的なラベルを正しく扱えないものがある（例えば、<code>&lt;label&gt;名前 &lt;input type="text" name="firstname"&gt;&lt;/label&gt;</code>)。</p>
+    <p>HTML 及び XHTML の仕様では、明示的なラベルと黙示的なラベルの両方を認めている。しかし、支援技術の中には、黙示的なラベルを正しく扱えないものがある (例えば、<code>&lt;label&gt;名前 &lt;input type="text" name="firstname"&gt;&lt;/label&gt;</code>)。</p>
     <ul>
      <li>
       <p>JAWS 7.10 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、仮想PCカーソルモードとフォームモードの両方で、テキストフィールドの明示的なラベルと黙示的なラベルを読み上げる。フォームモードでは、チェックボックスとラジオボタンの黙示的なラベルを読み上げない。</p>
      </li>
      <li>
-      <p>Window-Eyes 5.5 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、明示的にラベル付されたフォーム・フィールドを読み上げる。ブラウズモードでは、黙示的にラベル付されたフォーム・コントロールは読み上げられないが、ブラウズオフモードでコントロールからコントロールへ移動する際には、明示的なラベルは読み上げられる。</p>
+      <p>Window-Eyes 5.5 を Windows XP で Internet Explorer 6.0 と Firefox 1.5 で検証したところ、明示的にラベル付されたフォームフィールドを読み上げる。ブラウズモードでは、黙示的にラベル付されたフォームコントロールは読み上げられないが、ブラウズオフモードでコントロールからコントロールへ移動する際には、明示的なラベルは読み上げられる。</p>
      </li>
     </ul>
    </div>
    <div class="ua-issue">
-    <p>ユーザーエージェントは、title属性のあるinput要素上にマウスオーバーすると、ツールチップを表示する。title属性値は支援技術に引き渡され、多くのグラフィカル・ブラウザではツールチップとして表示される。ツールチップはキーボード操作では表示されないため、その情報は画面を見ているキーボードユーザーには提供されないと考えたほうがよい。</p>
+    <p>ユーザーエージェントは、title属性のあるinput要素上にマウスオーバーすると、ツールチップを表示する。title属性値は支援技術に引き渡され、多くのグラフィカルブラウザではツールチップとして表示される。ツールチップはキーボード操作では表示されないため、その情報は画面を見ているキーボードユーザーには提供されないと考えたほうがよい。</p>
    </div>
    <div class="ua-issue">
-    <p><code>label</code>要素がない場合、そのフォーム・コントロールがフォーカスを受け取ったときに、JAWS と Window-Eyes は <code>title</code> 属性値を読み上げる。</p>
+    <p><code>label</code>要素がない場合、そのフォームコントロールがフォーカスを受け取ったときに、JAWS と Window-Eyes は <code>title</code> 属性値を読み上げる。</p>
     <ul>
      <li>
       <p>JAWS 6.0 以降では、<code>label</code> 要素のラベルと <code>title</code> 属性値が異なる場合には、その両方を読み上げるように設定することが可能である。しかし、この設定があることを知っているユーザーはほとんどいない。</p>
@@ -584,12 +586,12 @@ area要素の<code>alt</code>属性値が、画像が読み込まれていても
     </ul>
    </div>
    <div class="ua-issue">
-    <p>ユーザーエージェントの中には、デフォルトではフォームのラベルにあるアスタリスク文字を読み上げないものがある（具体的には、Window-Eyes）。Window-Eyesのユーザーは、この設定を変更することができるが、多くのユーザーはその設定変更を行っていないと思われる。</p>
+    <p>ユーザーエージェントの中には、デフォルトではフォームのラベルにあるアスタリスク文字を読み上げないものがある (具体的には、Window-Eyes)。Window-Eyesのユーザーは、この設定を変更することができるが、多くのユーザーはその設定変更を行っていないと思われる。</p>
    </div>
   </section>
   <section id="H91">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/H91.html">H91</a>: HTML のフォーム・コントロール及びリンクを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/H91.html">H91</a>: HTML のフォームコントロール及びリンクを使用する</h2>
    <div class="ua-issue">
     <p>JAWSは画像の代替テキストと隣接したテキストの間に空白を挿入しない。</p>
    </div>

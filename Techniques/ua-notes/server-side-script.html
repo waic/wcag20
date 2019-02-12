@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
  <head>
-  <title>サーバサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</title>
+  <title>サーバサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="warning.css">
  </head>
  <body>
-  <h1>サーバサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
-  <p>このページは、<a href="/docs/WCAG-TECHS/server-side-script">サーバサイド・スクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+  <h1>サーバサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/server-side-script">サーバサイドスクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+<div> <input id="annoying-warning" type="checkbox" title="注を非表示にする"> <label for="annoying-warning">（非表示）</label> <div class="annoying-warning"> <p><strong>訳注：</strong> ユーザーエージェントサポートノートは記載内容が古く、また WCAG 2.0 の後続仕様である WCAG 2.1 の関連文書 <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> から削除されている。そのため、WAIC ではこのページを現在メンテナンスしていない。</div>
   <ul class="toc">
    <li class="toc">
     <a href="#SVR3">適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、HTTP リファラを使用する</a>
@@ -14,9 +16,9 @@
   </ul>
   <section id="SVR3">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SVR3.html">SVR3</a>: 適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、HTTP リファラを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/SVR3.html">SVR3</a>: 適合しているコンテンツからしか適合していないコンテンツにアクセスできないように、HTTP リファラを使用する</h2>
    <div class="ua-issue">
-    <p>一部のユーザーエージェントでHTTPリファラヘッダをサポートしていなかったり、送信しないように設定されていたり、又はプロキシやファイアウォールにより取り除かれたりすることがあるため、一部のユーザーはこの達成方法で実装されている場合には不適合なコンテンツへのアクセスができなくなる可能性がある。</p>
+    <p>一部のユーザーエージェントでHTTPリファラヘッダーをサポートしていなかったり、送信しないように設定されていたり、又はプロキシやファイアウォールにより取り除かれたりすることがあるため、一部のユーザーはこの達成方法で実装されている場合には不適合なコンテンツへのアクセスができなくなる可能性がある。</p>
    </div>
   </section>
  </body>

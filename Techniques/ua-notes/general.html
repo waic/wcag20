@@ -3,10 +3,12 @@
  <head>
   <title>一般的な達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="warning.css">
  </head>
  <body>
   <h1>一般的な達成方法のためのユーザーエージェントサポートノート</h1>
   <p>このページは、<a href="/docs/WCAG-TECHS/general">一般的な達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+<div> <input id="annoying-warning" type="checkbox" title="注を非表示にする"> <label for="annoying-warning">（非表示）</label> <div class="annoying-warning"> <p><strong>訳注：</strong> ユーザーエージェントサポートノートは記載内容が古く、また WCAG 2.0 の後続仕様である WCAG 2.1 の関連文書 <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> から削除されている。そのため、WAIC ではこのページを現在メンテナンスしていない。</div>
   <ul class="toc">
    <li class="toc">
     <a href="#G53">リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</a>
@@ -23,21 +25,21 @@
   </ul>
   <section id="G53">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/G53.html">G53</a>: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/G53.html">G53</a>: リンクテキストとそれが含まれている文章中のテキストとを組み合わせて、リンクの目的を特定する</h2>
    <div class="ua-issue">
     <p>JAWS 5.0及び以降のバージョンには、次のキーストロークがある。</p>
     <ul>
      <li>
-      <p>alt + 左矢印キー：前の文を読む</p>
+      <p>alt + 左矢印キー: 前の文を読む</p>
      </li>
      <li>
-      <p>alt + 右矢印キー：次の文を読む</p>
+      <p>alt + 右矢印キー: 次の文を読む</p>
      </li>
      <li>
-      <p>alt + 数字キー 5：現在の文を読む</p>
+      <p>alt + 数字キー 5: 現在の文を読む</p>
      </li>
      <li>
-      <p>Ctrl + 数字キー 5：現在のパラグラフを読む</p>
+      <p>Ctrl + 数字キー 5: 現在のパラグラフを読む</p>
      </li>
     </ul>
    </div>
@@ -45,7 +47,7 @@
     <p>Window-Eyes 5.5には、現在の文及びパラグラフを読むためのホットキーがある。</p>
     <p>Window-Eyesでインターネットを見るには、ブラウズモードにしなければならない。現在の文及びパラグラフのホットキーはバージョン6.1のブラウズモードでは動作しない。</p>
     <p>周囲にあるリンクの文脈の読み上げに関する工場出荷時の初期設定は、次の通りである。</p>
-    <p>デスクトップマシンの設定：</p>
+    <p>デスクトップマシンの設定:</p>
     <ul>
      <li>
       <p>文字 = CTRL - 数字キー - 左矢印キー</p>
@@ -112,14 +114,14 @@
   </section>
   <section id="G78">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/G78.html">G78</a>: 音声解説を含んだ、利用者が選択可能な副音声トラックを提供する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/G78.html">G78</a>: 音声解説を含んだ、利用者が選択可能な副音声トラックを提供する</h2>
    <div class="ua-issue">
     <p>利用者がセカンダリオーディオチャンネルを選択できるためのサポートとメカニズムは、プラットフォームやメディアプレーヤー間で一貫していない。 プラットフォームやメディアプレーヤーレベルでの設定に頼れない可能性があり、達成方法がアクセシビリティ サポーテッドであることを制作者が確認して適合宣言するには、これを有効にするオプションをコンテンツ内でテクノロジに依存して提供する必要があるかもしれない。</p>
    </div>
   </section>
   <section id="G142">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/G142.html">G142</a>: ズーム機能をサポートする一般に入手可能なユーザエージェントのあるウェブコンテンツ技術を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/G142.html">G142</a>: ズーム機能をサポートする一般に入手可能なユーザエージェントのあるウェブコンテンツ技術を使用する</h2>
    <div class="ua-issue">
     <p>Internet Exploler 7.0 のズーム機能は、絶対配置が用いられ、ページを縮小した際、常に均一に縮小するとは限らない。IE 7.0 は、%、em、又は規定の名前で指定されたフォントセットに対してのズーム機能とテキストサイズ変更機能に対応している。</p>
    </div>
@@ -135,7 +137,7 @@
   </section>
   <section id="G156">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/G156.html">G156</a>: 一般に入手可能なユーザエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/G156.html">G156</a>: 一般に入手可能なユーザエージェントで、テキストのブロックの前景及び背景を変更できるウェブコンテンツ技術を使用する</h2>
    <div class="ua-issue">
     <p>IE、Firefox の全てのバージョン、Mozilla、Opera のバージョン 6 以降を含む大部分のブラウザでは、利用者が色設定を変更することによって、コンテンツ制作者の CSS と HTML のカラースキームを上書きできる。</p>
    </div>

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
  <head>
-  <title>クライアントサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</title>
+  <title>クライアントサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="warning.css">
  </head>
  <body>
-  <h1>クライアントサイド・スクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
-  <p>このページは、<a href="/docs/WCAG-TECHS/client-side-script">クライアントサイド・スクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+  <h1>クライアントサイドスクリプトの達成方法のためのユーザーエージェントサポートノート</h1>
+  <p>このページは、<a href="/docs/WCAG-TECHS/client-side-script">クライアントサイドスクリプトの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+<div> <input id="annoying-warning" type="checkbox" title="注を非表示にする"> <label for="annoying-warning">（非表示）</label> <div class="annoying-warning"> <p><strong>訳注：</strong> ユーザーエージェントサポートノートは記載内容が古く、また WCAG 2.0 の後続仕様である WCAG 2.1 の関連文書 <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> から削除されている。そのため、WAIC ではこのページを現在メンテナンスしていない。</div>
   <ul class="toc">
    <li class="toc">
     <a href="#SCR19">状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</a>
    </li>
    <li class="toc">
-    <a href="#SCR21">ページにコンテンツを追加するために、DOM（ドキュメント・オブジェクト・モデル）を使用する</a>
+    <a href="#SCR21">ページにコンテンツを追加するために、DOM (ドキュメントオブジェクトモデル) を使用する</a>
    </li>
    <li class="toc">
     <a href="#SCR29">静的なHTML要素にキーボード操作可能なアクションを追加する</a>
@@ -26,21 +28,21 @@
   </ul>
   <section id="SCR19">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SCR19.html">SCR19</a>: 状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/SCR19.html">SCR19</a>: 状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する</h2>
    <div class="ua-issue">
     <p>この達成方法はWindows XP上で、Firefox1.5とIE6の両方で、JAWS 7.0とWindowEyes 5.5を使用して検証されている。ブラウザでJavaScriptを有効にしなければならないことに注意する。</p>    
    </div>
   </section>
   <section id="SCR21">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SCR21.html">SCR21</a>: ページにコンテンツを追加するために、DOM（ドキュメント・オブジェクト・モデル）を使用する</h2>
+     <a href="https://waic.jp/docs/WCAG-TECHS/SCR21.html">SCR21</a>: ページにコンテンツを追加するために、DOM (ドキュメントオブジェクトモデル) を使用する</h2>
    <div class="ua-issue">
     <p>この例は、Windows XP上のIE 6とFirefox 1.5.0.1において、JAWS 7とWindow-Eyes 5.5の両方で正常にテストされた。 ページ内に新しいコンテンツが追加されたとき、スクリーンリーダーはそれを自動的に読み上げないことに注意しなければならない。新しいコンテンツを確実に読み上げさせるには、新しい要素にフォーカスを与えるか、又は現在位置よりもあとに追加して、ユーザーがページを読み進めていく際に気がつけるようにする。</p>
    </div>
   </section>
   <section id="SCR29">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SCR29.html">SCR29</a>: 静的なHTML要素にキーボード操作可能なアクションを追加する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/SCR29.html">SCR29</a>: 静的なHTML要素にキーボード操作可能なアクションを追加する</h2>
    <div class="ua-issue">
     <p>
      <a href="http://www.w3.org/TR/html4/interact/forms.html#adef-tabindex">HTML 4.01</a>はtabindex属性を 
@@ -56,14 +58,14 @@
   </section>
   <section id="SCR31">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SCR31.html">SCR31</a>: フォーカスのある要素の背景色又はボーダーを変更するために、スクリプトを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/SCR31.html">SCR31</a>: フォーカスのある要素の背景色又はボーダーを変更するために、スクリプトを使用する</h2>
    <div class="ua-issue">
     <p>この達成方法は<code>:focus</code>疑似クラスをサポートしていないがスクリプトをサポートしている、マイクロソフトのInternet Explorerを含むユーザエージェント上で用いることができる。</p>
    </div>
   </section>
   <section id="SCR34">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/SCR34.html">SCR34</a>: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/SCR34.html">SCR34</a>: テキストサイズに応じて拡大するように、サイズ及びポジションを定める</h2>
    <div class="ua-issue">
     <p>サイズ及びポジションを定めることは複雑であり、異なるブラウザは異なる結果をだすことになる。これはCSSスタイリングでpadding、 margins及びwidthを一つのオブジェクトに対して組み合わせて使用したとき、又はオフセット値及び単純な値、例えばoffsetWidthとwidthを組合せて使用したときに起こりうる。 これらのうちのいくつかはズームに対して異なる動きをする。
     Internet Explorer 6及びそれ以降のバージョンと、IEのそれより前のバージョンとの違いについての説明は、

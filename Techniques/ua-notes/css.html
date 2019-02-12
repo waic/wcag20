@@ -3,10 +3,12 @@
  <head>
   <title>CSSの達成方法のためのユーザーエージェントサポートノート</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="warning.css">
  </head>
  <body>
   <h1>CSSの達成方法のためのユーザーエージェントサポートノート</h1>
   <p>このページは、<a href="/docs/WCAG-TECHS/css">CSSの達成方法</a>のためのユーザーエージェントサポートノートを記載する。</p>
+<div> <input id="annoying-warning" type="checkbox" title="注を非表示にする"> <label for="annoying-warning">（非表示）</label> <div class="annoying-warning"> <p><strong>訳注：</strong> ユーザーエージェントサポートノートは記載内容が古く、また WCAG 2.0 の後続仕様である WCAG 2.1 の関連文書 <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a> から削除されている。そのため、WAIC ではこのページを現在メンテナンスしていない。</div>
   <ul class="toc">
    <li class="toc">
     <a href="#C12">フォントサイズにパーセントを使用する</a>
@@ -35,10 +37,10 @@
   </ul>
   <section id="C12">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C12.html">C12</a>: フォントサイズにパーセントを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C12.html">C12</a>: フォントサイズにパーセントを使用する</h2>
    <div class="ua-issue">
-    <p>フォントサイズがポイント（pt）やピクセル（px）といった絶対単位（あるいは事実上の絶対単位）で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
-    	（訳注：厳密には、ピクセル（px）は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。）</p>
+    <p>フォントサイズがポイント (pt) やピクセル (px) といった絶対単位 (あるいは事実上の絶対単位) で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
+    	(訳注: 厳密には、ピクセル (px) は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。)</p>
    </div>
    <div class="ua-issue">
     <p>Windowsで、コントロールパネルの「ユーザー補助のオプション」から画面を「ハイコントラストモード」に設定した場合、IE6では、最も外側のウィンドウに対してCSSでテキストサイズのパーセンテージを変更したかのように、ページテキストを大きく表示してしまう。
@@ -47,32 +49,32 @@
   </section>
   <section id="C13">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C13.html">C13</a>: フォントサイズにキーワードを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C13.html">C13</a>: フォントサイズにキーワードを使用する</h2>
    <div class="ua-issue">
-    <p>フォントサイズがポイント（pt）やピクセル（px）といった絶対単位（あるいは事実上の絶対単位）で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
-    	（訳注：厳密には、ピクセル（px）は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。）</p>
+    <p>フォントサイズがポイント (pt) やピクセル (px) といった絶対単位 (あるいは事実上の絶対単位) で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
+    	(訳注: 厳密には、ピクセル (px) は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。)</p>
    </div>
   </section>
   <section id="C14">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C14.html">C14</a>: フォントサイズに em 単位を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C14.html">C14</a>: フォントサイズに em 単位を使用する</h2>
    <div class="ua-issue">
     <p>em単位を用いてフォントサイズを指定している場合、パーセントやキーワードを用いたときよりも、Internet Explorer 6でテキストが大きく拡大される。したがって、文字のサイズを最大にすると、テキストが200%以上の大きさで表示され、見切れの問題が発生するかもしれない。</p>
    </div>
    <div class="ua-issue">
-    <p>フォントサイズがポイント（pt）やピクセル（px）といった絶対単位（あるいは事実上の絶対単位）で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
-    	（訳注：厳密には、ピクセル（px）は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。）</p>
+    <p>フォントサイズがポイント (pt) やピクセル (px) といった絶対単位 (あるいは事実上の絶対単位) で指定されている場合、Internet Explorer 7以前では、メニューコマンドの「文字のサイズ」でテキストのサイズ変更ができない。
+    	(訳注: 厳密には、ピクセル (px) は「絶対単位」ではなく「相対単位」だが、ブラウザやデバイスの扱いとしては「事実上の絶対単位」となっている。)</p>
    </div>
    <div class="ua-issue">
-    <p>Internet Explorer 7は、CSSがstyle要素で指定され、ある要素がキーオフされた場合、テキストサイズを変更する。<code>style</code>属性によるインラインスタイルが用いられた場合、このテキストサイズ変更はサポートされない。 （訳注：原文の意味がやや不明確なため、WCAGワーキンググループに確認中）</p>
+    <p>Internet Explorer 7は、CSSがstyle要素で指定され、ある要素がキーオフされた場合、テキストサイズを変更する。<code>style</code>属性によるインラインスタイルが用いられた場合、このテキストサイズ変更はサポートされない。 (訳注: 原文の意味がやや不明確なため、WCAGワーキンググループに確認中)</p>
    </div>
   </section>
   <section id="C15">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C15.html">C15</a>: ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSSを使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C15.html">C15</a>: ユーザインタフェースコンポーネントがフォーカスを受けとったときの表示を変更するために、CSSを使用する</h2>
    <div class="ua-issue">
     <p>Windows版のInternet Explorer 6.0とそれ以前のバージョンでは、ハイパーリンクの要素を除いてダイナミック疑似クラスをサポートしていない。
-    Internet Explorer 7 は、ハイパーリンクの要素を除いて :focus スタイルをサポートしていない。Internet Explorerの (X)HTML のリンク（a要素）において :focus と同じ効果を出すには、CSSの :active 疑似クラスを追加すればよい。</p>
+    Internet Explorer 7 は、ハイパーリンクの要素を除いて :focus スタイルをサポートしていない。Internet Explorerの (X)HTML のリンク (a要素) において :focus と同じ効果を出すには、CSSの :active 疑似クラスを追加すればよい。</p>
    </div>
    <div class="ua-issue">
     <p>Windows版のFirefox 1.5とFirefox 2.0、SeaMonkey 1.1は、1行の入力フィールド、複数行の入力フィールド、ラジオボタン、チェックボックス、select要素、送信／リセットボタン及びbutton要素においてダイナミック疑似クラスをサポートしている。
@@ -87,22 +89,22 @@
   </section>
   <section id="C18">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C18.html">C18</a>: レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C18.html">C18</a>: レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する</h2>
    <div class="ua-issue">
     <p>Microsoft Windowsプラットフォームの、Internet Explorer 5、Internet Explorer 5.5、Internet Explorer 6.0やInternet Explorer 7の「互換モード」は、W3CのCSS仕様から逸脱したボックスモデルが使用される。
-    	これらのブラウザのバージョンは、右左パディングと左右のボーダーは、要素の合計幅を増やさないため、そのような要素内部のコンテンツのスペースは狭くなる。（この動作は「ボックスモデルのバグ」と呼ばれる）。
+    	これらのブラウザのバージョンは、右左パディングと左右のボーダーは、要素の合計幅を増やさないため、そのような要素内部のコンテンツのスペースは狭くなる。 (この動作は「ボックスモデルのバグ」と呼ばれる)。
     	Mac OSのInternet Explorer 5.5、WindowsのInternet Explorer 6と7の「標準準拠モード」は、W3CのCSS仕様で定義されたボックスモデルが使用される。</p>
    </div>
   </section>
   <section id="C23">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C23.html">C23</a>: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色を CSS で指定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C23.html">C23</a>: メインコンテンツのテキスト及び背景の色を指定せず、バナー、特集記事及びナビゲーションなどのようにメインではないコンテンツのテキスト及び背景の色を CSS で指定する</h2>
    <div class="ua-issue">
     <p>ほとんどのブラウザでは、ウェブページのCSS及びHTMLによる配色を、利用者が設定画面で上書きして変更できるようになっている。 これに関しては、すべてのバージョンのInternet ExplorerとFirefox、Mozilla、Netscape、バージョン6以降のOperaが対応している。</p>
    </div>
    <div class="ua-issue">
-    <p>Firefox及びNetscapeで元々指定されている色が上書きされた場合、ほとんどのJavaScriptのポップアップ・ボックスとドロップダウン・メニューは使用できない状態になる。 
-    	ポップアップ・ボックスは背景が透過して、ページ上のテキストの上にボックスのテキストが重なり、ドロップダウン・メニューは透過するかダークグレーの背景となる。</p>
+    <p>Firefox及びNetscapeで元々指定されている色が上書きされた場合、ほとんどのJavaScriptのポップアップボックスとドロップダウンメニューは使用できない状態になる。 
+    	ポップアップボックスは背景が透過して、ページ上のテキストの上にボックスのテキストが重なり、ドロップダウンメニューは透過するかダークグレーの背景となる。</p>
    </div>
    <div class="ua-issue">
     <p>Internet Explorer 6 は、システム設定で同じ色が選択されない限り背景色を上書きしない。</p>
@@ -113,12 +115,12 @@
   </section>
   <section id="C25">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C25.html">C25</a>: CSS で、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C25.html">C25</a>: CSS で、テキスト及び背景の色は指定せずに、ウェブページの各領域の範囲を明確にするためのボーダーやレイアウトを指定する</h2>
    <div class="ua-issue">
     <p>ほとんどのブラウザでは、ウェブコンテンツ制作者のCSS及びHTMLによる配色を、利用者が設定画面で上書きして変更できるようになっている。これは、IE、バージョン6以降のすべてのバージョンのFirefox、Mozilla、Operaを含める。</p>
    </div>
    <div class="ua-issue">
-    <p>Firefox及びNetscapeで元々指定されている色が上書きされた場合、ほとんどのJavaScriptのポップアップ・ボックスとドロップダウン・メニューは使用できない状態になる。 ポップアップ・ボックスは背景が透過して、ページ上のテキストの上にボックスのテキストが重なり、ドロップダウン・メニューは透過するかダークグレーの背景となる。</p>
+    <p>Firefox及びNetscapeで元々指定されている色が上書きされた場合、ほとんどのJavaScriptのポップアップボックスとドロップダウンメニューは使用できない状態になる。 ポップアップボックスは背景が透過して、ページ上のテキストの上にボックスのテキストが重なり、ドロップダウンメニューは透過するかダークグレーの背景となる。</p>
    </div>
    <div class="ua-issue">
     <p>IE 6は、システム設定で同じ色が選択されない限り、ブラウザの背景色を上書きしない。</p>
@@ -129,9 +131,9 @@
   </section>
   <section id="C28">
    <h2>
-    <a href="http://waic.jp/docs/WCAG-TECHS/C28.html">C28</a>: em 単位を用いて、テキストコンテナのサイズを指定する</h2>
+    <a href="https://waic.jp/docs/WCAG-TECHS/C28.html">C28</a>: em 単位を用いて、テキストコンテナのサイズを指定する</h2>
    <div class="ua-issue">
-    <p>Windows版のInternet Explorer 6のハイコントラスト・モードでは、入れ子になったテーブル内の % 指定されたフォントを極端に大きく表示してしまう。 Firefox及びIE6より後のバージョンのIEでは、ハイコントラスト・モードでもフォントの大きさは変化せず、この問題は発生しない。</p>
+    <p>Windows版のInternet Explorer 6のハイコントラストモードでは、入れ子になったテーブル内の % 指定されたフォントを極端に大きく表示してしまう。 Firefox及びIE6より後のバージョンのIEでは、ハイコントラストモードでもフォントの大きさは変化せず、この問題は発生しない。</p>
    </div>
   </section>
  </body>
