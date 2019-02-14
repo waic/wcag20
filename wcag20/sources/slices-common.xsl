@@ -289,6 +289,7 @@
 							<xsl:with-param name="next" select="$next"/>
 						</xsl:call-template>
                      <script src="https://www.w3.org/scripts/TR/2016/fixup.js"><xsl:text> </xsl:text></script>
+                     <script src="https://waic.jp/docs/js/translation-contact.js"><xsl:text> </xsl:text></script>
 					</body>
 				</html>
 			</xsl:with-param>
