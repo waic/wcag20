@@ -76,6 +76,13 @@
           <td> </td>
         </tr>
         <tr>
+          <td>&lt;input type="file"&gt;</td>
+          <td>編集可能なテキスト</td>
+          <td>そのコントロールに関連付けられた &lt;label&gt; 要素又は 'title' 属性</td>
+          <td>'value' 属性</td>
+          <td> </td>
+        </tr>
+        <tr>
           <td>&lt;input type="checkbox"&gt;</td>
           <td>チェックボックス</td>
           <td>そのコントロールに関連付けられた <code>&lt;label&gt;</code> 要素又は <code>title</code> 属性</td>
