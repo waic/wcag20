@@ -90,7 +90,7 @@ label.failed {
 <span class="errtext" id="err_2">
  Error: Input data missing</span>
 </div>            ]]></codeblock>
-<p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである。:</p>
+<p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである:</p>
          <codeblock role="html5"><![CDATA[
 $(errFld).attr("aria-invalid", "true").attr("class", "error");
 // Suffix error text: 
