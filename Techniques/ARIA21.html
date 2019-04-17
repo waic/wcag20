@@ -61,7 +61,7 @@ label.failed {
 &lt;input type="text" name="email" id="email" class="error" aria-invalid="true" aria-describedBy="err_2" /&gt;&lt;/p&gt;
 &lt;span class="errtext" id="err_2"&gt;
  Error: Input data missing&lt;/span&gt;
-&lt;/div&gt;            </code></pre></div><p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである:</p><div class="code"><pre><code>
+&lt;/div&gt;            </code></pre></div><p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである。:</p><div class="code"><pre><code>
 $(errFld).attr("aria-invalid", "true").attr("class", "error");
 // Suffix error text: 
 $(errFld).parent().append('&lt;span class="errtext"&gt;Error: Incorrect data&lt;/span&gt;');

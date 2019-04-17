@@ -2156,7 +2156,13 @@ H30-5
 						クイックリファレンス 3.2.2 (入力時)
 					</a></li><li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">
 						達成基準 3.2.2 (入力時)を理解する
-					</a></li></ul></li></ul><h4 id="H32-description">解説</h4><div class="textbody"><p>この達成方法の目的は、利用者がコンテキストの変化を明示的に要求できるメカニズムを提供することである。送信ボタンの使用目的は、フォームに入力されたデータを送信する HTTP リクエストを生成することであるため、コンテキストの変化を起こすために使うものとして適切なコントロールである。</p></div><h4 class="small-head" id="H32-examples">事例</h4><h5 class="small-head" id="H32-ex1">事例 1</h5><div class="example"><div class="textbody"><p>これは送信ボタンを持つフォームの基本的な事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
+					</a></li></ul></li></ul><h4 id="H32-description">解説</h4><div class="textbody"><p>この達成方法の目的は、利用者がコンテキストの変化を明示的に要求できるメカニズムを提供することである。送信ボタンの使用目的は、フォームに入力されたデータを送信する HTTP リクエストを生成することであるため、コンテキストの変化を起こすために使うものとして適切なコントロールである。</p></div><h4 class="small-head" id="H32-examples">事例</h4><h5 class="small-head" id="H32-ex1">事例 1</h5><div class="example"><div class="textbody"><p>これは送信ボタンを持つフォームの基本的な事例である。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;form action="http://www.example.com/cgi/subscribe/" method="post"&gt;&lt;br /&gt; 
+ &lt;p&gt;Enter your e-mail address to subscribe to our mailing list.&lt;/p&gt;&lt;br /&gt; 
+ &lt;label for="address"&gt;Enter email address:&lt;/label&gt;&lt;input type="text" 
+ id="address" name="address" /&gt; 
+ &lt;input type="submit" value="Subscribe" /&gt;&lt;br /&gt; 
+&lt;/form&gt;</code></pre></div></div><h5 class="small-head" id="H32-ex2">事例 2</h5><div class="example"><div class="textbody"><p>次の事例では、利用者が要求したページを転送する (<code>action</code> 属性により指定された) サーバーサイドスクリプトを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
     &lt;p&gt;Navigate the site.&lt;/p&gt;&lt;br /&gt; 
     &lt;select name="dest"&gt;&lt;br /&gt; 
       &lt;option value="/index.html"&gt;Home&lt;/option/&gt;&lt;br /&gt; 
@@ -2165,16 +2171,7 @@ H30-5
       &lt;option value="/search.html"&gt;Search&lt;/option/&gt;&lt;br /&gt; 
     &lt;/select&gt;&lt;br /&gt; 
   &lt;input type="submit" value="Go to Page" /&gt;&lt;br /&gt; 
-  &lt;/form&gt; </code></pre></div></div><h5 class="small-head" id="H32-ex2">事例 2</h5><div class="example"><div class="textbody"><p>次の事例では、利用者が要求したページを転送する (<code>action</code> 属性により指定された) サーバーサイドスクリプトを使用している。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>&lt;form action="http://www.example.com/cgi/redirect/" method="get"&gt;&lt;br /&gt; 
-&lt;p&gt;Navigate the site.&lt;/p&gt;&lt;br /&gt; 
-&lt;select name="dest"&gt;&lt;br /&gt; 
-&lt;option value="/index.html"&gt;Home&lt;/option/&gt;&lt;br /&gt; 
-&lt;option value="/blog/index.html"&gt;My blog&lt;/option/&gt;&lt;br /&gt; 
-&lt;option value="/tutorials/index.html"&gt;Tutorials&lt;/option/&gt;&lt;br /&gt; 
-&lt;option value="/search.html"&gt;Search&lt;/option/&gt;&lt;br /&gt; 
-&lt;/select&gt;&lt;br /&gt; 
-&lt;input type="submit" value="Go" /&gt;&lt;br /&gt; 
-&lt;/form&gt;  </code></pre></div></div><h4 id="H32-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
+  &lt;/form&gt; </code></pre></div></div><h4 id="H32-resources">参考リソース</h4><div class="textbody"><p>この参考リソースは、あくまでも情報提供のみが目的であり、推薦などを意味するものではない。</p><ul><li><p>
 									         <a href="http://www.cs.tut.fi/~jkorpela/forms/navmenu.html">Navigational
                     pulldown menus in HTML</a> by Jukka Korpela discusses a few techniques that                  work or do not work. </p></li></ul></div><h4 id="H32-related-techs">関連する達成方法</h4><div class="textbody"><ul><li><a href="https://waic.jp/docs/WCAG-TECHS/G80">G80: コンテキストの変化を開始する送信ボタンを提供する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H36">H36: 送信ボタンとして用いる画像の alt 属性を使用する</a></li><li><a href="https://waic.jp/docs/WCAG-TECHS/H84">H84: アクションを実行するために、select 要素とともにボタンを使用する</a></li></ul></div><h4 id="H32-tests">検証</h4><div class="textbody"><h5 class="small-head" id="H32-procedure">手順</h5><ol class="enumar"><li><p>コンテンツ内の全てのフォームを見つける。</p></li><li><p>それぞれのフォームに、送信ボタン (input type="submit"、input type="image" 又は button type="submit") があることを確認する。</p></li></ol><h5 class="small-head" id="H32-results">期待される結果</h5><ul><li><p>2. の結果が真である。</p></li></ul><p>この達成方法が「十分な達成方法」の一つである場合、この手順や期待される結果を満たしていなければ、それはこの達成方法が正しく用いられていないことを意味するが、必ずしも達成基準を満たしていないことにはならない。場合によっては、別の達成方法によってその達成基準が満たされていることもありうる。</p></div></div><div class="technique"><hr class="divider" title="Beginning of new technique"/><h3><a name="H33" id="H33"> </a>H33: title 属性を用いて、リンクテキストを補足する</h3><div class="applicability"><h4 id="H33-applicability">適用 (対象)</h4><div class="textbody"><p>HTML 及び XHTML</p></div></div><p class="referenced">これは、次の達成基準に関連する達成方法である:</p><ul><li><a href="https://waic.jp/docs/WCAG20/Overview.html#navigation-mechanisms-refs">
 				達成基準 2.4.4 (リンクの目的 (コンテキスト内) )</a><ul><li><a href="https://waic.jp/docs/WCAG20/quickref/#navigation-mechanisms-refs">
@@ -7264,7 +7261,7 @@ return you back to the main page&lt;/div&gt;
 &lt;input name="" type="text" id="fname" aria-describedby="int2"&gt;
 &lt;p id="int2"&gt;A bit of instructions for this field linked with aria-describedby. &lt;/p&gt;
 &lt;/form&gt;
-</code></pre></div></div></div><h5 class="small-head" id="ARIA1-ex3">事例 3: ボタンに関するより詳細な情報を提供するために aria-describedby プロパティを使用する</h5><div class="example"><div class="textbody"><div class="code"><pre><code>&lt;p&gt;&lt;span id="fontDesc"&gt;Select the font faces and sizes to be used on this page&lt;/span&gt;
+</code></pre></div></div></div><h5 class="small-head" id="ARIA1-ex3">事例 3: 例3: ボタンに関するより詳細な情報を提供するために aria-describedby プロパティを使用する</h5><div class="example"><div class="textbody"><div class="code"><pre><code>&lt;p&gt;&lt;span id="fontDesc"&gt;Select the font faces and sizes to be used on this page&lt;/span&gt;
  &lt;button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc"&gt;Fonts&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;span id="colorDesc"&gt;Select the colors to be used on this page&lt;/span&gt;
@@ -8013,7 +8010,7 @@ Jean-Guy Millome, and represents ...&lt;/p&gt;</code></pre></div></div></div><h4
 						達成基準 4.1.2 (名前 (name) ・役割 (role) 及び値 (value) )を理解する
 					</a></li></ul></li></ul><div class="ua-issues"><h4 class="small-head" id="ua8.15.1">ユーザエージェント及び支援技術によるサポート</h4><p><a href="./ua-notes/aria.html#ARIA16">ARIA16 に関するユーザエージェントサポートノート</a>を参照のこと。<a href="#wai-aria_notes">WAI-ARIA 技術ノート</a>も参照。</p></div><h4 id="ARIA16-description">解説</h4><div class="textbody"><p>この達成方法の目的は、支援技術によって読み取ることができるユーザインタフェースコントロールの名前を提供することである。WAI-ARIA は、<code>aria-labelledby</code> プロパティを使用して、セクション、描画、フォーム要素、画像などとテキストを関連付けるための方法を提供する。この達成方法では、<code>aria-labelledby</code> 属性を使用して、フォームフィールドなどのユーザインタフェースコントロールと、それをラベル付けするページ上のテキストとを関連付ける。</p><p><code>aria-describedby</code> のように、<code>aria-labelledby</code> は、スペース区切りのリストを使用して、ページの他の要素を指すように複数の ID を受け入れることができる。この機能は、目の見える利用者がコントロールを識別するために周囲のコンテキストからの情報を使用する状況において、<code>aria-labelledby</code> を特に有用にする。<a href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</a>でも、名前がページ上の他の複数のテキスト要素から構成される場合の事例を紹介している。</p><p>aria-labelledby の機能はネイティブな HTML の label 要素と似ているように見えるが、いくつか違いがある:</p><ul><li><p><code>aria-labelledby</code> は複数のテキスト要素を参照することができる。<code>label</code> が参照できるのは一つだけである。</p></li><li><p><code>label</code> 要素がフォーム要素のみに使用できる一方で、<code>aria-labelledby</code> はさまざまな要素に対して使用できる。</p></li><li><p><code>label</code> をクリックすると、関連付けられたフォームフィールドをフォーカスする。これは <code>aria-labelledby</code> では起こらない。この動作が必要な場合、<code>label</code> を使用するか、スクリプトを使用してこの機能を実装する。</p></li></ul><p>2013 年 12 月の時点で、特に古いブラウザや支援技術で、<code>label</code> のほうが <code>aria-labelledby</code> よりもより良くサポートされていることに注意すること。</p></div><h4 class="small-head" id="ARIA16-examples">事例</h4><h5 class="small-head" id="ARIA16-ex1">事例 1: 単純なテキストフィールドをラベル付けする</h5><div class="example"><div class="textbody"><p>以下は、ラベル専用のテキストがないものの、正確にコントロールをラベル付けするためにページ上の他のテキストが使用できる状況で、<code>aria-labelledby</code> を使用して単純なテキストフィールドにラベルを提供している例である。</p><div class="code"><pre><code>&lt;input name="searchtxt" type="text" aria-labelledby="searchbtn"&gt;
 &lt;input name="searchbtn" id="searchbtn" type="submit" value="Search"&gt;</code></pre></div></div></div><h5 class="small-head" id="ARIA16-ex2">事例 2: スライダーをラベル付けする</h5><div class="example"><div class="textbody"><p>以下は、スライダーコントロールにラベルを提供するために <code>aria-labelledby</code> を使用している例である。このケースでは、ラベルテキストが、より長い隣接するテキスト文字列の中から選択される。この例は、単にラベル付けの関係を示すために簡略化されていることに注意すること。カスタムコントロールを実装するコンテンツ制作者は、コントロールが他の達成基準を満たしていることも確認する必要がある。</p><div class="code"><pre><code>&lt;p&gt;Please select the &lt;span id="mysldr-lbl"&gt;number of days for your trip&lt;/span&gt;&lt;/p&gt;
-&lt;div id="mysldr" role="slider" aria-labelledby="mysldr-lbl"&gt;&lt;/div&gt;</code></pre></div></div></div><h5 class="small-head" id="ARIA16-ex3">事例 3: 複数のソースからのラベル</h5><div class="example"><div class="textbody"><p>以下は、<code>label</code> 要素を使用した複数の参照を伴う <code>aria-labelledby</code> の例である。<code>aria-labelledby</code> をもつラベルに複数のソースを連結する方法の詳細については、<a href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</a>を参照すること。</p><div class="code"><pre><code>&lt;label id="l1" for="f3"&gt;Notify me&lt;/label&gt;
+&lt;div id="mysldr" role="slider" aria-labelledby="mysldr-lbl"&gt;&lt;/div&gt;</code></pre></div></div></div><h5 class="small-head" id="ARIA16-ex3">事例 3: 例3: 複数のソースからのラベル</h5><div class="example"><div class="textbody"><p>以下は、<code>label</code> 要素を使用した複数の参照を伴う <code>aria-labelledby</code> の例である。<code>aria-labelledby</code> をもつラベルに複数のソースを連結する方法の詳細については、<a href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</a>を参照すること。</p><div class="code"><pre><code>&lt;label id="l1" for="f3"&gt;Notify me&lt;/label&gt;
 &lt;select name="amt" id="f3" aria-labelledby="l1 f3 l2"&gt;
   &lt;option value="1"&gt;1&lt;/option&gt;
   &lt;option value="2"&gt;2&lt;/option&gt;
@@ -8238,7 +8235,7 @@ label.failed {
 &lt;input type="text" name="email" id="email" class="error" aria-invalid="true" aria-describedBy="err_2" /&gt;&lt;/p&gt;
 &lt;span class="errtext" id="err_2"&gt;
  Error: Input data missing&lt;/span&gt;
-&lt;/div&gt;            </code></pre></div><p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである:</p><div class="code"><pre><code>
+&lt;/div&gt;            </code></pre></div><p>jQuery コード: jQuery は、class 属性だけでなく aria-invalid 又は aria-describedby 属性をも追加し、かつエラーテキストを追加するために使用される。これは、aria-invalid 及び class="error" を挿入するコードであるが、プログラム的にコントロールとエラーテキスト "incorrect data" を関連付けないコードである。:</p><div class="code"><pre><code>
 $(errFld).attr("aria-invalid", "true").attr("class", "error");
 // Suffix error text: 
 $(errFld).parent().append('&lt;span class="errtext"&gt;Error: Incorrect data&lt;/span&gt;');
