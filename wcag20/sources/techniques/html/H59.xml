@@ -105,7 +105,7 @@
         </item>
         <item><p>その文書の <el>head</el> 要素セクション内のナビゲーションに関する各 <el>link</el> 要素に、少なくとも以下が指定されていることを確認する:</p>
                 
-                        <olist><item><p>リンクタイプを特定するための <att>rel</att> 属性</p></item><item><p>適切なリソースをもつけるための妥当な <att>href</att> 属性</p></item></olist></item>
+                        <olist><item><p>リンクタイプを特定するための <att>rel</att> 属性</p></item><item><p>適切なリソースを見つけるための妥当な <att>href</att> 属性</p></item></olist></item>
       </olist>
     </procedure>
       <expected-results>
