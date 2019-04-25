@@ -74,7 +74,7 @@
          </description>
       </eg-group>
       <eg-group>
-         <head>例3: 複数のソースからのラベル</head>
+         <head>複数のソースからのラベル</head>
          <description>
             <p>以下は、<el>label</el> 要素を使用した複数の参照を伴う <att>aria-labelledby</att> の例である。<att>aria-labelledby</att> をもつラベルに複数のソースを連結する方法の詳細については、<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="ARIA9">複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する</loc>を参照すること。</p>
             <codeblock xml:space="preserve"><![CDATA[<label id="l1" for="f3">Notify me</label>
