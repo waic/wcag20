@@ -63,7 +63,7 @@ return you back to the main page</div>
          </description>
       </eg-group>
       <eg-group>
-         <head>例3: ボタンに関するより詳細な情報を提供するために aria-describedby プロパティを使用する</head>
+         <head>ボタンに関するより詳細な情報を提供するために aria-describedby プロパティを使用する</head>
          <description>
             <codeblock xml:space="preserve"><![CDATA[<p><span id="fontDesc">Select the font faces and sizes to be used on this page</span>
  <button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">Fonts</button>
