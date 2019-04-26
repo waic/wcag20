@@ -52,6 +52,7 @@ HTML:
 <label for="firstname">First name <abbr class="req" title="required">*</abbr>:</label> 
 <input type="text" name="firstname" id="firstname" />
 ]]></code>
+    </eg-group>
     <eg-group>
       <head>画像を用いて必須項目であることを示す</head>
       <description><p>以下のコード例にあるテキストフィールドには、コントロールが必須項目であることを示す画像を含む明示的なラベルがある。画像の意味をフォームの先頭で定義することが重要である。</p>
