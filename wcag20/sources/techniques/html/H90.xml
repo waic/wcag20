@@ -31,8 +31,10 @@
       <head>テキストを用いて必須項目であることを示す</head>
       <description><p>以下のコード例にあるテキストフィールドには、明示的なラベル「名前 (必須)」がある。<el>label</el> 要素の <att>for</att> 属性値が、<el>input</el> 要素の <att>id</att> 属性値と合致していて、<el>label</el> 要素でマークアップされたテキストによってそのコントロールが必須項目であることを示している。</p>
 </description>
-      <code><![CDATA[<label for="firstname">名前 (必須):</label> 
-<input type="text" name="firstname" id="firstname" /> ]]></code>
+         <code><![CDATA[
+<label for="firstname">First name (required):</label> 
+<input type="text" name="firstname" id="firstname" />
+]]></code>
       <description><note><p>英語では、必須項目の "required" を略して "req." とするコンテンツ制作者もいるが、この略語は分かりにくいという報告がある。</p>
 </note>
 </description>
@@ -41,40 +43,44 @@
       <head>アスタリスクを用いて必須項目であることを示す</head>
       <description><p>以下のコード例にあるテキストフィールドには、必須項目であることを示すアスタリスクを含んだ明示的なラベルがある。アスタリスクの意味をフォームの先頭で定義することが重要である。このコード例では、アスタリスクは <el>abbr</el> 要素内にあって、アスタリスク文字にスタイルを指定できるようになっている。この CSS は、アスタリスク文字は視覚に障害のある利用者にとっては見えづらいため、デフォルトのアスタリスク文字よりもサイズを大きくしている。</p>
 </description>
-      <code><![CDATA[CSS:
+         <code><![CDATA[
+CSS:
 .req {font-size: 150%} 
-
 HTML:
-
-<p> 必須項目には、アスタリスク (<abbr class="req" title="必須">*</abbr>)が付いています。</p>
+<p> Required fields are marked with an asterisk (<abbr class="req" title="required">*</abbr>).</p>
 <form action="http://www.test.com" method="post">
-<label for="firstname">名前 <abbr class="req" title="必須">*</abbr>:</label> 
-<input type="text" name="firstname" id="firstname" /> ]]></code>
+<label for="firstname">First name <abbr class="req" title="required">*</abbr>:</label> 
+<input type="text" name="firstname" id="firstname" />
+]]></code>
     </eg-group>
     <eg-group>
       <head>画像を用いて必須項目であることを示す</head>
       <description><p>以下のコード例にあるテキストフィールドには、コントロールが必須項目であることを示す画像を含む明示的なラベルがある。画像の意味をフォームの先頭で定義することが重要である。</p>
 </description>
-      <code><![CDATA[<p><img src="req_img.gif" alt="(必須)" /> は、そのフォームコントロールが必須項目であることを示しています。</p>
+         <code><![CDATA[
+<p><img src="req_img.gif" alt="Required Control" /> indicates that the form control is required</p>
 <form action="http://www.test.com" method="post">
-<label for="firstname">名前 <img src="req_img.gif" alt="(必須)" />:</label> 
+<label for="firstname">First name <img src="req_img.gif" alt="Required Control" />:</label> 
 <input type="text" name="firstname" id="firstname" />
-... ]]></code>
+...
+]]></code>
     </eg-group>
     <eg-group>
       <head>ラジオボタンまたはチェックボックスのグループが必須項目であることを示す</head>
       <description><p>ラジオボタン及びチェックボックスは、個々のラジオボタンやチェックボックスではなく、そのグループ全体で一つの必須項目となるため、他のインタラクティブなコントロールとは異なった扱われかたをする。事例 1〜3 で使用された方法は、ラジオボタン及びチェックボックスに適用されるが、必須状態の表示は、<el>label</el> 要素ではなく <el>legend</el> 要素に配置すべきである。</p>
 </description>
-      <code><![CDATA[<fieldset>
-<legend>私が関心のあるもの (必須):</legend>
+         <code><![CDATA[
+<fieldset>
+<legend>I am interested in the following (Required):</legend>
 <input type="checkbox" id="photo" name="interests" value="ph">
-<label for="photo">写真</label></br>
+<label for="photo">Photography</label></br>
 <input type="checkbox" id="watercol" name="interests" checked="checked" value="wa">
-<label for="watercol">水彩画</label></br>
+<label for="watercol">Watercolor</label></br>
 <input type="checkbox" id="acrylic" name="interests" checked="checked" value="ac">
-<label for="acrylic">アクリル画</label>
+<label for="acrylic">Acrylic</label>
 …
-</fieldset> ]]></code>
+</fieldset>
+]]></code>
     </eg-group>
    </examples>
    <resources>
