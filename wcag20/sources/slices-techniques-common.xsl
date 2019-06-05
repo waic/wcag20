@@ -710,6 +710,7 @@
 <p>【注意】 この文書は、W3C ワーキンググループノート <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/">Techniques for WCAG 2.0 の 2016 年 10 月 7 日時点での最新版</a>を<a href="https://waic.jp/committee/wg4/">ウェブアクセシビリティ基盤委員会 (WAIC)</a> が翻訳して公開しているものです。この文書の正式版は、W3C のサイトにある英語版です。正確な内容については、W3C が公開している原文 (英語) をご確認ください。この翻訳文書はあくまで参考情報であり、翻訳上の誤りが含まれていることがあります。翻訳上の誤りを見つけられた場合は、<a href="https://waic.jp/contact/" id="file-issue">翻訳に関するお問い合わせ</a>からご連絡ください。</p>
 <p>【重要】 達成方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文 (英語) にリンクしています。</p>
 </div>
+<script src="https://waic.jp/docs/js/translation-contact.js"><xsl:text> </xsl:text></script>
 </xsl:template>
   
 	<xsl:template name="footer-latest-version-ref">
