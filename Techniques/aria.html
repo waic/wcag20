@@ -674,7 +674,7 @@ about the button action.
 &lt;div id="nav" role="navigation"&gt;...a list of links here ... &lt;/div&gt;
 &lt;div id="content" role="main"&gt; ... Ottawa is the capital of Canada ...&lt;/div&gt;
 &lt;div id="rightsideadvert" role="complementary"&gt;....an advertisement here...&lt;/div&gt;
-&lt;div id="footer" role="contentinfo"&gt;(c)The Freedom Company, 123 Freedom Way, Helpville, USA&lt;/div&gt;</code></pre></div></div></div><h4 class="small-head" id="ARIA11-ex2">事例 2: 同じ種類の複数のランドマークと aria-labelledby</h4><div class="example"><div class="textbody"><p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各箇所は <code>aria-labelledby</code> を使用して、指定された一意のラベルを持ってもよい:</p><div class="code"><pre><code>&lt;div id="leftnav" role="navigaton" aria-labelledby="leftnavheading"&gt;
+&lt;div id="footer" role="contentinfo"&gt;(c)The Freedom Company, 123 Freedom Way, Helpville, USA&lt;/div&gt;</code></pre></div></div></div><h4 class="small-head" id="ARIA11-ex2">事例 2: 同じ種類の複数のランドマークと aria-labelledby</h4><div class="example"><div class="textbody"><p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各インスタンスは <code>aria-labelledby</code> を使用して、指定された一意のラベルを持ってもよい:</p><div class="code"><pre><code>&lt;div id="leftnav" role="navigaton" aria-labelledby="leftnavheading"&gt;
 &lt;h2 id="leftnavheading"&gt;Institutional Links&lt;/h2&gt;
 &lt;ul&gt;&lt;li&gt;...a list of links here ...&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;
 &lt;div id="rightnav" role="navigation" aria-labelledby="rightnavheading"&gt;
