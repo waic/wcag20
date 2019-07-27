@@ -2,7 +2,7 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="H54">
-   <short-name>単語の定義実体を特定するために、<el>dfn</el> 要素を使用する</short-name>
+   <short-name>単語の定義箇所を特定するために、<el>dfn</el> 要素を使用する</short-name>
    <applicability>
       <p>HTML 及び XHTML</p>
    </applicability>

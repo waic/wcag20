@@ -97,7 +97,7 @@
       <eg-group>
          <head>同じ種類の複数のランドマークと aria-labelledby</head>
          <description>
-            <p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各インスタンスは <att>aria-labelledby</att> を使用して、指定された一意のラベルを持ってもよい:</p>
+            <p>次の例は、同じページで二つ以上の同じ種類のランドマークが存在する状況で、ランドマークがどのように HTML4 や XHTML1.0 文書に追加されうるのかのベストプラクティスを示している。たとえば、navigation ロールがウェブページ上で複数回使用される場合、各箇所は <att>aria-labelledby</att> を使用して、指定された一意のラベルを持ってもよい:</p>
             <codeblock xml:space="preserve"><![CDATA[<div id="leftnav" role="navigaton" aria-labelledby="leftnavheading">
 <h2 id="leftnavheading">Institutional Links</h2>
 <ul><li>...a list of links here ...</li> </ul></div>
