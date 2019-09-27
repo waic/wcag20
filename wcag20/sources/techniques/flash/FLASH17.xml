@@ -71,7 +71,7 @@
               href="https://www.w3.org/WAI/WCAG20/Techniques/working-examples/FLASH17/keyboard_trap_fix_custom_as3.zip"><!--
               linktype="examples"-->Flash オブジェクトをキーボードで操作可能にして、キーボードトラップを回避する」のソース (英語)</loc> をダウンロードすることもできる。ソースの zip ファイルには SWFFocus クラスが含まれている。</p>
       <note>
-         <p>このサンプルをウェブサーバからではなく、ローカルドライブから実行するには、Flash Player のセキュリティ設定にローカルディレクトリを追加する必要がある。</p>
+         <p>このサンプルをウェブサーバーからではなく、ローカルドライブから実行するには、Flash Player のセキュリティ設定にローカルディレクトリを追加する必要がある。</p>
       </note>
       <eg-group>
          <head>自動生成されるリンクを使用する</head>
