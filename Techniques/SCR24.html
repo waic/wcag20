@@ -12,7 +12,7 @@
 					</a></li></ul></li></ul><h2 id="SCR24-description">解説</h2><div class="textbody"><p>この達成方法の目的は、利用者が要求していない新しいウィンドウの出現によって引き起こされうる混乱を回避することである。突然新しいウィンドウが開くと、利用者は混乱したり、そのことに気づかなかったりする。文書型が <code>target</code> 属性を認めていない場合 (HTML 4.01 Strict や XHTML 1.0 Strict には存在しない)、又はコンテンツ制作者が <code>target</code> 属性の使用を好まない場合には、ECMAScript を用いて新しいウィンドウを開くことができる。以下にある事例は、スクリプトを用いて新しいウィンドウを開く方法を示している。その事例では、リンク (<code>a</code> 要素) にイベントハンドラを追加して、利用者にリンク先のコンテンツが新しいウィンドウで開くことを事前に知らせている。</p></div><h2 class="small-head" id="SCR24-examples">事例</h2><h3 class="small-head" id="SCR24-ex1">事例 1</h3><div class="example"><div class="textbody"><p>マークアップ:</p><p>スクリプトはドキュメントの <code>head</code> 要素内に組み込まれており、リンクにはスクリプトのフックとなる <code>id</code> 属性がある。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 &lt;script type="text/javascript" src="popup.js"&gt;&lt;/script&gt;
 …
-&lt;a href="help.html" id="newwin"&gt;Show Help&lt;/a</code></pre></div><div class="textbody"><p>スクリプト:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
+&lt;a href="help.html" id="newwin"&gt;Show Help&lt;/a&gt;</code></pre></div><div class="textbody"><p>スクリプト:</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code>
 // ブラウザによるイベント登録のサポートは不十分だが
 // 従来のイベントモデルを用いる
 window.onload = addHandlers;
