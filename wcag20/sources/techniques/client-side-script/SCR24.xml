@@ -24,7 +24,7 @@
       <code><![CDATA[
 <script type="text/javascript" src="popup.js"></script>
 …
-<a href="help.html" id="newwin">Show Help</a]]></code>
+<a href="help.html" id="newwin">Show Help</a>]]></code>
       <description><p>スクリプト:</p>
 </description>
       <code><![CDATA[
