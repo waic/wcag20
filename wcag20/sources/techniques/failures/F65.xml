@@ -10,7 +10,7 @@
       <success-criterion idref="text-equiv-all" relationship="failure"/>
    </applies-to>
    <description>
-    <p>この文章では、画像のテキストによる代替の失敗条件を示す。画像の代替を提供するテキストがない場合、支援技術は画像を識別することも、その目的を利用者に伝えることもできない。 <att>alt</att> 属性は画像の代替テキストを提供するための好ましい実装方法であり続ける。アクセシビリティ サポーテッドである限り、適切な WAI-ARIA 属性を使用して代替テキストを提供することができる。アクセシビリティ サポートの詳細については、 <loc xmlns:xlink="http://www.w3.org/1999/xlink"  href="http://www.w3.org/WAI/GL/2014/WD-UNDERSTANDING-WCAG20-20140107/appendixB.html">アクセシビリティ サポートを文書化する</loc>を参照する。アクセシブル リッチ インターネット アプリケーション (WAI-ARIA) 1.0 仕様書は、要素の HTML および WAI-ARIA 属性からテキストによる代替を計算するための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">代替テキスト計算</loc>について説明している。</p>
+    <p>この文章では、画像のテキストによる代替の失敗条件を示す。画像の代替を提供するテキストがない場合、支援技術は画像を識別することも、その目的を利用者に伝えることもできない。 <att>alt</att> 属性は画像の代替テキストを提供するための好ましい実装方法であり続ける。アクセシビリティ サポーテッドである限り、適切な WAI-ARIA 属性を使用して代替テキストを提供することができる。アクセシビリティ サポートの詳細については、 <loc xmlns:xlink="http://www.w3.org/1999/xlink"  href="appendixB.html">アクセシビリティ サポートを文書化する</loc>を参照する。アクセシブル リッチ インターネット アプリケーション (WAI-ARIA) 1.0 仕様書は、要素の HTML および WAI-ARIA 属性からテキストによる代替を計算するための<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">代替テキスト計算</loc>について説明している。</p>
     <p>いくつかの支援技術は、画像のファイル名を読み取ることにより、欠落しているテキストによる代替を補うことを試みる。しかし、多くの理由からファイル名に単純に頼るのは不十分である。例えば、ファイル名は説明的ではない場合があり (例 images/nav01.gif)、技術仕様には説明的なファイル名は必須ではない。そして多くの支援技術は HTML 属性を介して提供されるテキストによる代替がない場合はファイル名を読み取らない。</p>
   </description>
    <examples>
