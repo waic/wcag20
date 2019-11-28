@@ -2,11 +2,11 @@
 <!DOCTYPE technique
   SYSTEM "../../xmlspec.dtd">
 <technique id="F58">
-   <short-name>達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトするために、サーバサイドの手法を使用している</short-name>
+   <short-name>達成基準 2.2.1 の失敗例 － タイムアウト後にページを自動的にリダイレクトするために、サーバーサイドの手法を使用している</short-name>
    <applicability>
       <ulist>
       <item>
-        <p>サーバサイドのスクリプト言語全て</p>
+        <p>サーバーサイドのスクリプト言語全て</p>
       </item>
       <item>
         <p>制限時間に関する達成基準の例外に当てはまらないコンテンツ</p>
@@ -22,12 +22,12 @@
     </ua-issue>
    </ua-issues>
    <description>
-    <p>開発者は、サーバサイドのスクリプト言語を使って、標準ではない HTTP ヘッダー「Refresh」を、タイムアウト (単位：秒) 及び指定されたタイムアウト時間後にリダイレクトする URI とともに指定することができる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
+    <p>開発者は、サーバーサイドのスクリプト言語を使って、標準ではない HTTP ヘッダー「Refresh」を、タイムアウト (単位：秒) 及び指定されたタイムアウト時間後にリダイレクトする URI とともに指定することができる。もし時間間隔が短すぎると、全盲の人はスクリーンリーダーでページを読み終わらないうちに、予期せずページが更新されてしまい、スクリーンリーダーがページの先頭から読み上げてしまう。目の見える利用者も、予期しないリフレッシュによって混乱させられる。</p>
     <p>HTTP ヘッダーは、<code>Refresh: {秒で表された時間}; url={新しい場所の URI}</code>のように設定する。URI を省略することも可能で、周期的にページを更新し続けることになる。これも同様の問題を引き起こす。この場合に設定される HTTP ヘッダーは <code>Refresh: {秒で表された時間}</code> となる。</p>
   </description>
    <examples>
       <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが Java サーブレット又は JavaServer Pages (JSP) により実装されているため、失敗例である。</p>
+      <description><p>次の事例は、時間によるサーバーサイドのリダイレクトが Java サーブレット又は JavaServer Pages (JSP) により実装されているため、失敗例である。</p>
 </description>
          <code><![CDATA[
 public void doGet (HttpServletRequest request, HttpServletResponse response)
@@ -44,7 +44,7 @@ public void doGet (HttpServletRequest request, HttpServletResponse response)
 ]]></code>
     </eg-group>
     <eg-group role="failure">
-      <description><p>次の事例は、時間によるサーバサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、失敗例である。</p>
+      <description><p>次の事例は、時間によるサーバーサイドのリダイレクトが VBScript を伴った Active Server Pages (ASP) により実装されているため、失敗例である。</p>
 </description>
       <code><![CDATA[
  <% @Language = "VBScript" %>
