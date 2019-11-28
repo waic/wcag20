@@ -94,8 +94,8 @@
               </trnote>
             </div3>
             <div3 id="wai-aria_accessibility_support">
-               <head>WAI-ARIA に対するアクセシビリティサポート</head>
-               <p>アクセシビリティ サポーテッドな方法で技術を使用することは、適合性要求のために必要である。詳細は<loc href="accessibility-support-documenting" linktype="understanding-jp">アクセシビリティサポートについて</loc>を読むこと。WCAG ワーキンググループは、Accessible Rich Internet Application 仕様が W3C 勧告の状態に到達する際に、WAI-ARIA 達成方法が十分であるかどうかの見直しをする予定である。WAI-ARIA のステータスに関する最新情報については、<loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc> を参照のこと。</p>
+               <head>WAI-ARIA に対するアクセシビリティ サポート</head>
+               <p>アクセシビリティ サポーテッドな方法で技術を使用することは、適合性要求のために必要である。詳細は<loc href="accessibility-support-documenting" linktype="understanding-jp">アクセシビリティ サポートについて</loc>を読むこと。WCAG ワーキンググループは、Accessible Rich Internet Application 仕様が W3C 勧告の状態に到達する際に、WAI-ARIA 達成方法が十分であるかどうかの見直しをする予定である。WAI-ARIA のステータスに関する最新情報については、<loc href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</loc> を参照のこと。</p>
             </div3>
          </div2>
          <xi:include href="aria/ARIA1.xml"/>
