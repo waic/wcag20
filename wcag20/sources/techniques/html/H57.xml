@@ -42,6 +42,7 @@
       <p>上記の「主言語コード」及び「副言語コード」は古い HTML に基づいた説明である。現在の HTML に基づいた言語タグの組み立て方については、<a href="#H57-resources">参考リソース</a>にある「Language tags in HTML and XML」を参照のこと。</p>
       <p>現在の HTML においては、text/html として提供される場合は <code>lang</code> 属性を、application/xhtml+xml として提供される場合は <code>xml:lang</code> 属性をそれぞれ用いればよい。両方の属性を同時に用いてもよいが、その場合は属性値を同じ値にする必要がある。<a href="https://www.w3.org/TR/html52/dom.html#the-lang-and-xmllang-attributes">HTML 5.2§3.2.5.2. The lang and xml:lang attributes</a> も参考のこと。</p>
     </trnote>
+    <as202003/>
   </description>
    <examples>
       <eg-group>

@@ -49,6 +49,7 @@
         <item><p>隠しフィールド (<code>input type="hidden"</code>)</p></item>
         <item><p>スクリプトボタン (<code>button</code> 要素又は <code>input type="button"</code>)</p></item>
       </ulist></note>
+    <as202003/>
   </description>
    <examples>
       <eg-group>
