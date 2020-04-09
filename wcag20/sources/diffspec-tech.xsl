@@ -378,7 +378,7 @@ BBC: This is all called in a previous XSLT, so commented out here. -->
 	<xsl:value-of select="key('ids', @def)/label"/>
 </xsl:template>
 
-<!-- AS情報 -->
+<!-- AS情報 (2014年6月版) -->
 <xsl:template match="a11ysuprorted">
 <xsl:variable name="rate" select="@rating"/>
 <xsl:variable name="id" select="ancestor::technique/@id"/>
@@ -414,6 +414,13 @@ BBC: This is all called in a previous XSLT, so commented out here. -->
   </xsl:when>
 </xsl:choose>
 </p></div>
+</xsl:template>
+
+<!-- AS情報 (2020年3月版) -->
+<xsl:template match="as202003">
+<xsl:variable name="id" select="ancestor::technique/@id"/>
+<div class="note"><p class="prefix"><em>訳注:</em> WAIC では <xsl:value-of select="$id"/> に関する<a href="https://waic.jp/docs/as/">アクセシビリティ サポーテッド（AS）情報</a>を提供している。</p>
+<p>2020 年 3 月版の <a href="https://waic.jp/docs/as/info/202003/techs/{$id}.html">アクセシビリティ サポーテッド（AS）情報: <xsl:value-of select="$id"/></a> も参照されたい。</p></div>
 </xsl:template>
 
 <!-- Flash訳註 2021年以降に達成方法集からFLASHが削除されたら削除を検討する -->
