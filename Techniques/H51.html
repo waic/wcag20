@@ -13,7 +13,7 @@
 H51
  に関する<a href="https://waic.jp/docs/as/">アクセシビリティ・サポーテッド（AS）情報</a>を提供している。</p><p>2014 年 6 月版の<a href="https://waic.jp/docs/as/info/201406/H51.html">アクセシビリティ・サポーテッド（AS）情報: H51</a>
     では、「達成可能」と評価されている。WAIC はこの達成方法が検証した環境で広く動作すると判断している。
-  </p></div></div><h2 class="small-head" id="H51-examples">事例</h2><h3 class="small-head" id="H51-ex1">事例 1: 列見出しと行見出しが付いた簡単なデータテーブルとしてマークアップしたスケジュール表</h3><div class="example"><div class="textbody"><p>この事例では、簡単なデータテーブルに <code>table</code> 要素を利用している。1 行目は曜日、1 列目は時間である。これらのセルは <code>th</code> 要素でマークアップしてあり、列見出しが曜日、行見出しが時間という役割になっている。</p><p>スクリーンリーダーは、利用者がテーブルを読み進めるとき、対応する見出し情報の変化を読み上げる。それゆえ、スクリーンリーダーの利用者が同じ行を左右に動くときは、(もしあれば) 予定に対応する曜日 (列見出し) の読み上げを、同じ列を上下に移動するときは、対応する時間の読み上げを聞くであろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;table&gt;
+  </p></div><div xmlns="" class="note"><p class="prefix"><em>訳注:</em> WAIC では H51 に関する<a href="https://waic.jp/docs/as/">アクセシビリティ サポーテッド（AS）情報</a>を提供している。</p><p>2020 年 3 月版の <a href="https://waic.jp/docs/as/info/202003/techs/H51.html">アクセシビリティ サポーテッド（AS）情報: H51</a> も参照されたい。</p></div></div><h2 class="small-head" id="H51-examples">事例</h2><h3 class="small-head" id="H51-ex1">事例 1: 列見出しと行見出しが付いた簡単なデータテーブルとしてマークアップしたスケジュール表</h3><div class="example"><div class="textbody"><p>この事例では、簡単なデータテーブルに <code>table</code> 要素を利用している。1 行目は曜日、1 列目は時間である。これらのセルは <code>th</code> 要素でマークアップしてあり、列見出しが曜日、行見出しが時間という役割になっている。</p><p>スクリーンリーダーは、利用者がテーブルを読み進めるとき、対応する見出し情報の変化を読み上げる。それゆえ、スクリーンリーダーの利用者が同じ行を左右に動くときは、(もしあれば) 予定に対応する曜日 (列見出し) の読み上げを、同じ列を上下に移動するときは、対応する時間の読み上げを聞くであろう。</p></div><div class="code"><p><strong>コード例:</strong></p><pre><code> &lt;table&gt;
   &lt;tr&gt;
     &lt;td&gt; &lt;/td&gt;
     &lt;th&gt;Monday&lt;/th&gt;
