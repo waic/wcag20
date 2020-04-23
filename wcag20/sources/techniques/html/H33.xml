@@ -52,6 +52,7 @@
   <trnote>
     <p><a href="https://www.w3.org/TR/html52/dom.html#the-title-attribute">HTML 5.2§3.2.5.1. The title attribute</a> の Warning で述べられているように、多くのユーザエージェントではアクセシブルな形でこの属性を公開しないので、<code>title</code> 属性に依存することを勧めていない。</p>
   </trnote>
+    <as202003/>
   </description>
    <examples>
       <eg-group>
