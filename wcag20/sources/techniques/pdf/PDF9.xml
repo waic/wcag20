@@ -4,7 +4,7 @@
 <technique id="PDF9">
    <short-name>PDF 文書内のコンテンツを見出しタグでマークアップすることによって見出しを作成する</short-name>
    <applicability>
-      <p>Tagged PDF documents with headings</p>
+      <p>見出しのあるタグ付き PDF 文書</p>
    </applicability>
    <applies-to>
       <success-criterion idref="content-structure-separation-programmatic"
@@ -144,7 +144,7 @@
       <description><p>この事例は Microsoft Word の場合を示している。同様の機能を実行するソフトウェアツールは他にも存在する。他のソフトウェアツールのリストについては、「<loc xmlns:xlink="http://www.w3.org/1999/xlink" href="pdf_notes.html#pdf_notes_acc-sup_files_applications">アクセシビリティがサポートされている PDF オーサリングツール</loc>」を参照のこと。</p>
 <p>スタイルを使用して、見出しの書式 (見出し 1、見出し 2、見出し 3 など) を作成する。スタイルが論理的な構成になるようにする (見出し 2 が見出し 1 より後に来るようにするなど)。</p>
             <section>
-               <head>In Microsoft Word 2003 </head>
+               <head>Microsoft Word 2003</head>
                <ulist>
                   <item>
                      <p>書式 &gt; スタイルと書式メニューを選択し、［スタイルと書式］ウィンドウを表示する</p>
@@ -164,7 +164,7 @@
                </p>
             </section>
             <section>
-               <head>In Microsoft Word 2007/2010 </head>
+               <head>Microsoft Word 2007/2010</head>
                <p>Word 2007/2010 で［ホーム］リボンを選択し、スタイルのグループから適切な見出し (見出し 1～6) を選択する。</p>
                <p>
                   <image>

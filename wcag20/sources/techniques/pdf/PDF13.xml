@@ -4,7 +4,7 @@
 <technique id="PDF13">
    <short-name>PDF 文書内のリンクに対して /Alt エントリを使用して置換テキストを提供する</short-name>
    <applicability>
-     <p>Tagged リンクを含む PDF 文書. </p>
+     <p>リンクを含む PDF 文書</p>
    </applicability>
    <applies-to>
       <success-criterion idref="navigation-mechanisms-refs" relationship="cosufficient"/>
