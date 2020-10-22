@@ -18,33 +18,33 @@
       <eg-group>
       <description><p>開発者が、ハイパーリンクを作成する方法を見つけるために、オーサリングツールのメーカーのウェブサイトの中を探している。検索結果を使って、オーサリングツールを使用してハイパーリンクを作成するための詳しい説明があるウェブページへ行く。そのページには、以下のようなリンクでできたパンくずリストがある:</p>
 </description>
-      <code><![CDATA[ホーム :: デベロッパーセンター :: 手引き]]></code>
+      <code><![CDATA[Home :: Developer Center :: How To Center]]></code>
       <description><p>この例では、パンくずリストには現在のウェブページのタイトルである「ハイパーリンクを作成する方法」が含まれていない。その情報はウェブページのタイトルとして入手できる。</p>
 </description>
     </eg-group>
     <eg-group>
-      <description><p>写真家の作品集のウェブサイトはいろいろなギャラリーに分かれていて、各ギャラリーはさらに分類ごとに分割されている。サイトの中でジェンツーペンギンの写真を含むウェブページに移動する利用者は、ウェブページの冒頭で以下のようなパンくずリストを見る:</p>
+      <description><p>写真家の作品集のウェブサイトはいろいろなギャラリーに分かれていて、各ギャラリーはさらに分類ごとに分割されている。サイトの中で Gentoo Penguin の写真を含むウェブページに移動する利用者は、ウェブページの冒頭で以下のようなパンくずリストを見る:</p>
 </description>
-      <code><![CDATA[ホーム / ギャラリー / 南極大陸 / ペンギン / ジェンツーペンギン]]></code>
-      <description><p>「ジェンツーペンギン」を除くすべての項目がリンクとして実装されている。現在位置 (ジェンツーペンギン) はパンくずリストに含まれているが、リンクとしては実装されていない。</p>
+      <code><![CDATA[Home / Galleries / Antarctica / Penguins / Gentoo Penguin]]></code>
+      <description><p>"Gentoo Penguin" を除くすべての項目がリンクとして実装されている。現在位置 (Gentoo Penguin) はパンくずリストに含まれているが、リンクとしては実装されていない。</p>
 </description>
     </eg-group>
       <eg-group>
         <description>
           <p>e コマースサイトの情報設計が、一般から特定の製品区分に徐々に分類されている。</p>
-          <p>現在位置: Acme Company → 電化製品 → コンピューター → ノートパソコン</p>
-          <p>パンくずリストが「現在位置」で始まり、現在利用者がいるページで終わる。リストに入っている項目は、「現在位置」及び「ノートパソコン」を除いて、クリック又はタップ可能なリンクである。この例は、右向き矢印 (→) を区切り位置として使用している。</p>
+          <p>You are here: Acme Company → Electronics → Computers → Laptops</p>
+          <p>パンくずリストが "You are here" で始まり、現在利用者がいるページで終わる。リストに入っている項目は、"You are here" 及び "Laptops" を除いて、クリック又はタップ可能なリンクである。この例は、右向き矢印 (→) を区切り位置として使用している。</p>
           <p>この例では、<el>h2</el> 要素、<att>aria-label</att> 属性を指定した <el>nav</el> 要素、非順序のリストがセマンティクスを提供するために使われている。このマークアップは、CSS によるスタイル指定によって水平のパンくずリストとして表示されるだろう。</p>
           <p>この例に対する HTML</p>
         </description>
         <code role="html5"><![CDATA[ 
           <nav aria-label="Breadcrumbs"> 
-            <h2>現在位置:</h2> 
+            <h2>You are here:</h2> 
             <ul>
               <li><a href="/">Acme Company</a> &#8594;</li> 
-              <li><a href="/electronics/">電化製品</a> &#8594;</li>
-              <li><a href="/electronics/computers/">コンピューター</a> &#8594;</li>
-              <li>ノートパソコン</li>
+              <li><a href="/electronics/">Electronics</a> &#8594;</li>
+              <li><a href="/electronics/computers/">Computers</a> &#8594;</li>
+              <li>Laptops</li>
             </ul> 
           </nav>
       ]]></code>
@@ -71,7 +71,7 @@
          </ulist>
       </see-also>
       <trnote>
-        <p>「Bread crumb navigation」への正確なリンクは、<a href="https://www.w3.org/TR/html5/common-idioms-without-dedicated-elements.html#bread-crumb-navigation">HTML5.2 4.13.2. Bread crumb navigation</a> となる。また、<a href="https://developers.google.com/search/docs/data-types/breadcrumb">パンくずリスト  |  検索  |  Google Developers</a> 及び <a href="https://www.bing.com/webmaster/help/markup-breadcrumbs-72419f3f">Markup: Breadcrumbs - Bing Webmaster Tools</a> もあわせて参考になる。</p>
+        <p><a href="https://developers.google.com/search/docs/data-types/breadcrumb">パンくずリスト  |  検索  |  Google Developers</a> 及び <a href="https://www.bing.com/webmaster/help/markup-breadcrumbs-72419f3f">Markup: Breadcrumbs - Bing Webmaster Tools</a> もあわせて参考になる。</p>
       </trnote>
    </resources>
    <related-techniques>
